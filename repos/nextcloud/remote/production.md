@@ -1,7 +1,7 @@
 ## `nextcloud:production`
 
 ```console
-$ docker pull nextcloud@sha256:3c8040278bdc991cbc025278eaffc4978a9c2fd4ac34e95b10f646dcadb7c3fb
+$ docker pull nextcloud@sha256:c99b62ae722aa98c01c749dc0efc10296a0184383c5f902bb095684f3c0c2e8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -203,14 +203,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:production` - linux; arm variant v5
 
 ```console
-$ docker pull nextcloud@sha256:3aa251c9050e3890641481f4643b6196a4fcf9f4d5919e4d1af15d011b359682
+$ docker pull nextcloud@sha256:f82c681e9c1a60b037c400066e44d2740b4b1cd600555a747baefaf200492352
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **376.4 MB (376390923 bytes)**  
+-	Total Size: **389.0 MB (389029539 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3c001e4f233d84d1fb9ea5a5af0fd1ef7928d81fa5424ec2aa1ddb4a6fb5a07e`
+-	Image ID: `sha256:ceabb46805606cc878a5c0f5f56b3ffce2913eca64fee73a253535e12e066010`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -287,19 +287,23 @@ RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get upda
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=128M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
 # Fri, 15 Sep 2023 00:34:03 GMT
 VOLUME [/var/www/html]
-# Fri, 15 Sep 2023 00:34:03 GMT
-RUN a2enmod headers rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPInternalProxy 10.0.0.0/8 ;     echo RemoteIPInternalProxy 172.16.0.0/12 ;     echo RemoteIPInternalProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Fri, 15 Sep 2023 00:39:33 GMT
-ENV NEXTCLOUD_VERSION=27.0.2
-# Fri, 15 Sep 2023 00:40:41 GMT
-RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-27.0.2.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-27.0.2.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Fri, 15 Sep 2023 00:40:42 GMT
+# Mon, 18 Sep 2023 23:49:47 GMT
+RUN a2enmod headers rewrite remoteip ;     {      echo 'RemoteIPHeader X-Real-IP';      echo 'RemoteIPInternalProxy 10.0.0.0/8';      echo 'RemoteIPInternalProxy 172.16.0.0/12';      echo 'RemoteIPInternalProxy 192.168.0.0/16';     } > /etc/apache2/conf-available/remoteip.conf;     a2enconf remoteip
+# Mon, 18 Sep 2023 23:49:47 GMT
+ENV APACHE_BODY_LIMIT=1073741824
+# Mon, 18 Sep 2023 23:49:48 GMT
+RUN {      echo 'LimitRequestBody ${APACHE_BODY_LIMIT}';     } > /etc/apache2/conf-available/apache-limits.conf;     a2enconf apache-limits
+# Mon, 18 Sep 2023 23:51:10 GMT
+ENV NEXTCLOUD_VERSION=27.1.0
+# Mon, 18 Sep 2023 23:52:23 GMT
+RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-27.1.0.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-27.1.0.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
+# Mon, 18 Sep 2023 23:52:28 GMT
 COPY multi:460d0253b10a0268ebfb8482b4fa36d0d335e8207e35802a68bf2d6134195fbb in / 
-# Fri, 15 Sep 2023 00:40:43 GMT
+# Mon, 18 Sep 2023 23:52:29 GMT
 COPY multi:bed047b97a268e53d9af8fc32cf3b9fc25306fd16316e9a09031943c00c6b402 in /usr/src/nextcloud/config/ 
-# Fri, 15 Sep 2023 00:40:43 GMT
+# Mon, 18 Sep 2023 23:52:29 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 15 Sep 2023 00:40:43 GMT
+# Mon, 18 Sep 2023 23:52:29 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -368,34 +372,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 15 Sep 2023 00:44:24 GMT  
 		Size: 764.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a25cc1fcfb3666f96efe71b4079178cffd3b1277b803d9b3cef17ee2d7f168f2`  
-		Last Modified: Fri, 15 Sep 2023 00:44:24 GMT  
-		Size: 576.0 B  
+	-	`sha256:376c95211d6d46b522e6f79baa7b8d01c4bb0f7eb3b005f496e83514cb386df3`  
+		Last Modified: Mon, 18 Sep 2023 23:55:16 GMT  
+		Size: 582.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bc2271651e9ee9a023cd332c949d343ccaaab0c8d97a7ec409f4a5257d605f3`  
-		Last Modified: Fri, 15 Sep 2023 00:46:24 GMT  
-		Size: 185.3 MB (185301776 bytes)  
+	-	`sha256:427b62752cee772f59b6a2f111935e581dad39815c46fb13e1db565571b117b1`  
+		Last Modified: Mon, 18 Sep 2023 23:55:17 GMT  
+		Size: 408.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9327cd39a82e19ae4be399e4bcd17b5ab0b1a6673a5ec0b667bb69eea0cae75e`  
-		Last Modified: Fri, 15 Sep 2023 00:45:57 GMT  
-		Size: 3.6 KB (3609 bytes)  
+	-	`sha256:31ae9bd1cde2a57cae8a1871d838a3b28b289f0ad217d875a21f20e659875ead`  
+		Last Modified: Mon, 18 Sep 2023 23:56:38 GMT  
+		Size: 197.9 MB (197939983 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36e1f8d1ca8fa9ae9f9052d4f59ddd9899b8546ca754d00e566257db05c98410`  
-		Last Modified: Fri, 15 Sep 2023 00:45:57 GMT  
-		Size: 2.3 KB (2287 bytes)  
+	-	`sha256:06841ae00feb062706fe18d9bb40661bea1d0139a985e47c765a7e3d4282f536`  
+		Last Modified: Mon, 18 Sep 2023 23:56:09 GMT  
+		Size: 3.6 KB (3608 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e95e9cdabfdee168e568b4557a833d38487d2f7d8db0cf0929d0eb339f901ce0`  
+		Last Modified: Mon, 18 Sep 2023 23:56:09 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:production` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:8c9dbdd7d80ddd3d4d1b6b56c6dd7cdcc336294bc28b888228a5de35834d4616
+$ docker pull nextcloud@sha256:1702e8a1842a746702539c537b5eaff7dfa04fb52c9625251df53095fe0cedfb
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **364.8 MB (364837412 bytes)**  
+-	Total Size: **377.5 MB (377475946 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4db9a41943e885a4c61ee345eb56b7bddb115c77f619cfcf29888c9ac0948b05`
+-	Image ID: `sha256:deb4e108127c920f78cb89645e9aa3b543f96a42272ac8d6daf9986c8ba27085`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -472,19 +480,23 @@ RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get upda
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=128M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
 # Fri, 15 Sep 2023 00:54:28 GMT
 VOLUME [/var/www/html]
-# Fri, 15 Sep 2023 00:54:29 GMT
-RUN a2enmod headers rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPInternalProxy 10.0.0.0/8 ;     echo RemoteIPInternalProxy 172.16.0.0/12 ;     echo RemoteIPInternalProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Fri, 15 Sep 2023 01:02:49 GMT
-ENV NEXTCLOUD_VERSION=27.0.2
-# Fri, 15 Sep 2023 01:03:51 GMT
-RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-27.0.2.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-27.0.2.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Fri, 15 Sep 2023 01:03:54 GMT
+# Tue, 19 Sep 2023 00:14:31 GMT
+RUN a2enmod headers rewrite remoteip ;     {      echo 'RemoteIPHeader X-Real-IP';      echo 'RemoteIPInternalProxy 10.0.0.0/8';      echo 'RemoteIPInternalProxy 172.16.0.0/12';      echo 'RemoteIPInternalProxy 192.168.0.0/16';     } > /etc/apache2/conf-available/remoteip.conf;     a2enconf remoteip
+# Tue, 19 Sep 2023 00:14:32 GMT
+ENV APACHE_BODY_LIMIT=1073741824
+# Tue, 19 Sep 2023 00:14:32 GMT
+RUN {      echo 'LimitRequestBody ${APACHE_BODY_LIMIT}';     } > /etc/apache2/conf-available/apache-limits.conf;     a2enconf apache-limits
+# Tue, 19 Sep 2023 00:15:57 GMT
+ENV NEXTCLOUD_VERSION=27.1.0
+# Tue, 19 Sep 2023 00:17:05 GMT
+RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-27.1.0.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-27.1.0.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
+# Tue, 19 Sep 2023 00:17:09 GMT
 COPY multi:460d0253b10a0268ebfb8482b4fa36d0d335e8207e35802a68bf2d6134195fbb in / 
-# Fri, 15 Sep 2023 01:03:55 GMT
+# Tue, 19 Sep 2023 00:17:10 GMT
 COPY multi:bed047b97a268e53d9af8fc32cf3b9fc25306fd16316e9a09031943c00c6b402 in /usr/src/nextcloud/config/ 
-# Fri, 15 Sep 2023 01:03:55 GMT
+# Tue, 19 Sep 2023 00:17:10 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 15 Sep 2023 01:03:55 GMT
+# Tue, 19 Sep 2023 00:17:10 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -553,34 +565,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 15 Sep 2023 01:09:27 GMT  
 		Size: 765.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb4f2f021e56f66abfda4deb24659e2f5d4d2766c7a7a9e2b57f9ed5f44b9be4`  
-		Last Modified: Fri, 15 Sep 2023 01:09:27 GMT  
-		Size: 578.0 B  
+	-	`sha256:18850e7da40b454c9aad7633b4f4dc1847eb57c9c219001bbfdcf9d9c8222aa1`  
+		Last Modified: Tue, 19 Sep 2023 00:21:34 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf6b601b8b3b99ae0185d8006ac0b46a63e6b0dbfb9f192f334c0915841e9447`  
-		Last Modified: Fri, 15 Sep 2023 01:12:30 GMT  
-		Size: 185.3 MB (185301742 bytes)  
+	-	`sha256:0403b4f40fe187fbfda16bf1526604f70dd10b795e8bd1da1af7145595a1c135`  
+		Last Modified: Tue, 19 Sep 2023 00:21:34 GMT  
+		Size: 408.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80a59ce6527292265a5fd76158387c88e42163a81a3d8d322ebb034de47885c1`  
-		Last Modified: Fri, 15 Sep 2023 01:11:59 GMT  
-		Size: 3.6 KB (3609 bytes)  
+	-	`sha256:1ebd55e54c1fdb2fac7bcf914c142d6e37069f2554b5d1334bcfc417d5c76ad1`  
+		Last Modified: Tue, 19 Sep 2023 00:22:56 GMT  
+		Size: 197.9 MB (197939866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38dddd51f92636052bf3e4b7c17a6d34a8280a7f86d3ec473b6065ae37ded942`  
-		Last Modified: Fri, 15 Sep 2023 01:11:59 GMT  
-		Size: 2.3 KB (2286 bytes)  
+	-	`sha256:85b635a03af1b9d8cef1ecaaf7cdca1c1c4212f451be9ec754d1dfabde741401`  
+		Last Modified: Tue, 19 Sep 2023 00:22:27 GMT  
+		Size: 3.6 KB (3608 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:878db742048f14aa61c73fdd9922c35c292651c14c5792b86076e78e5ce18008`  
+		Last Modified: Tue, 19 Sep 2023 00:22:27 GMT  
+		Size: 2.3 KB (2287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:production` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:374843e47971a7be8d84b0e44e33d4743fd430b73e1859258f8535f0e2090874
+$ docker pull nextcloud@sha256:c7a4503102dfb7130f921fd32a3351f3223bd46039869a4abfbc2f4b92f8f20c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **398.2 MB (398204071 bytes)**  
+-	Total Size: **410.8 MB (410842480 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32bd42344692c73ba3af4f255de35841a95515b2b6769178194c1d639e8b3b97`
+-	Image ID: `sha256:7cf27260e3529ea5f3897a2a611517a3208f4646279543b2e10c3f28db170644`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -657,19 +673,23 @@ RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get upda
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=128M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
 # Fri, 15 Sep 2023 01:14:58 GMT
 VOLUME [/var/www/html]
-# Fri, 15 Sep 2023 01:14:59 GMT
-RUN a2enmod headers rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPInternalProxy 10.0.0.0/8 ;     echo RemoteIPInternalProxy 172.16.0.0/12 ;     echo RemoteIPInternalProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Fri, 15 Sep 2023 01:23:49 GMT
-ENV NEXTCLOUD_VERSION=27.0.2
-# Fri, 15 Sep 2023 01:24:41 GMT
-RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-27.0.2.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-27.0.2.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Fri, 15 Sep 2023 01:24:46 GMT
+# Mon, 18 Sep 2023 23:42:00 GMT
+RUN a2enmod headers rewrite remoteip ;     {      echo 'RemoteIPHeader X-Real-IP';      echo 'RemoteIPInternalProxy 10.0.0.0/8';      echo 'RemoteIPInternalProxy 172.16.0.0/12';      echo 'RemoteIPInternalProxy 192.168.0.0/16';     } > /etc/apache2/conf-available/remoteip.conf;     a2enconf remoteip
+# Mon, 18 Sep 2023 23:42:00 GMT
+ENV APACHE_BODY_LIMIT=1073741824
+# Mon, 18 Sep 2023 23:42:01 GMT
+RUN {      echo 'LimitRequestBody ${APACHE_BODY_LIMIT}';     } > /etc/apache2/conf-available/apache-limits.conf;     a2enconf apache-limits
+# Mon, 18 Sep 2023 23:43:11 GMT
+ENV NEXTCLOUD_VERSION=27.1.0
+# Mon, 18 Sep 2023 23:44:06 GMT
+RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-27.1.0.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-27.1.0.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
+# Mon, 18 Sep 2023 23:44:11 GMT
 COPY multi:460d0253b10a0268ebfb8482b4fa36d0d335e8207e35802a68bf2d6134195fbb in / 
-# Fri, 15 Sep 2023 01:24:46 GMT
+# Mon, 18 Sep 2023 23:44:11 GMT
 COPY multi:bed047b97a268e53d9af8fc32cf3b9fc25306fd16316e9a09031943c00c6b402 in /usr/src/nextcloud/config/ 
-# Fri, 15 Sep 2023 01:24:46 GMT
+# Mon, 18 Sep 2023 23:44:12 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 15 Sep 2023 01:24:46 GMT
+# Mon, 18 Sep 2023 23:44:12 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -738,34 +758,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 15 Sep 2023 01:29:22 GMT  
 		Size: 764.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdcbc713bd6af19b8aa59e7d679c4a52c4a607a26cabb8bc9b898ea7957d3698`  
-		Last Modified: Fri, 15 Sep 2023 01:29:22 GMT  
-		Size: 577.0 B  
+	-	`sha256:72202a36759d4eeaa2d4e79a6aca5d466da156125136df9f3962a81def0abd4b`  
+		Last Modified: Mon, 18 Sep 2023 23:47:42 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af895743c4dda2e1d7803b8cc90d82003fce3fa871d077dd78dfea47629b8c12`  
-		Last Modified: Fri, 15 Sep 2023 01:31:18 GMT  
-		Size: 185.3 MB (185303718 bytes)  
+	-	`sha256:733fe3af876a4ffd0d68eb3fae5e760c237445533edac5b3cc43bd106cff0641`  
+		Last Modified: Mon, 18 Sep 2023 23:47:42 GMT  
+		Size: 401.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38a2dbbd2011d43afe60ad926ba4bd331a10201c7e78ba079475c1e1d0e64812`  
-		Last Modified: Fri, 15 Sep 2023 01:31:01 GMT  
-		Size: 3.6 KB (3609 bytes)  
+	-	`sha256:3d7e0c9783c815144b0ed076e198622008d1399a5c41cb326154f8269af8f635`  
+		Last Modified: Mon, 18 Sep 2023 23:48:42 GMT  
+		Size: 197.9 MB (197941721 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21809ac736adb5c4cfbc72bb6550f3d760d420ed555f99d13805d59c91699b9a`  
-		Last Modified: Fri, 15 Sep 2023 01:31:01 GMT  
-		Size: 2.3 KB (2284 bytes)  
+	-	`sha256:6f86d59371829198edaaddc86b14731905b3ca389fa81b5898c59309d3259ce0`  
+		Last Modified: Mon, 18 Sep 2023 23:48:22 GMT  
+		Size: 3.6 KB (3608 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f4eb487a22e336eb0fed4c249de07f5baef24b5325db3e49496b9a39db887d8f`  
+		Last Modified: Mon, 18 Sep 2023 23:48:22 GMT  
+		Size: 2.3 KB (2287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:production` - linux; 386
 
 ```console
-$ docker pull nextcloud@sha256:21ea6f188bfc896b2614ea4ab4a843eaf99ac7bc75431be069ab8223190363ca
+$ docker pull nextcloud@sha256:ac72f7e07a88a72abd941c1d1c54522501a5af2ab0f9f18861afd395246928cb
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **405.5 MB (405453414 bytes)**  
+-	Total Size: **418.1 MB (418092163 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:18bfa7ed8171408aa904f7bcaf576dbf22f35baa6e51e3a373e0eaf8500dd097`
+-	Image ID: `sha256:f583c86920e5ea1b6ec7f3f7c36227c7e36e6eb134e8d7eded3900dfb875e770`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -842,19 +866,23 @@ RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get upda
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=128M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
 # Fri, 15 Sep 2023 01:05:50 GMT
 VOLUME [/var/www/html]
-# Fri, 15 Sep 2023 01:05:51 GMT
-RUN a2enmod headers rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPInternalProxy 10.0.0.0/8 ;     echo RemoteIPInternalProxy 172.16.0.0/12 ;     echo RemoteIPInternalProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Fri, 15 Sep 2023 01:16:31 GMT
-ENV NEXTCLOUD_VERSION=27.0.2
-# Fri, 15 Sep 2023 01:17:37 GMT
-RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-27.0.2.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-27.0.2.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Fri, 15 Sep 2023 01:17:41 GMT
+# Mon, 18 Sep 2023 23:42:19 GMT
+RUN a2enmod headers rewrite remoteip ;     {      echo 'RemoteIPHeader X-Real-IP';      echo 'RemoteIPInternalProxy 10.0.0.0/8';      echo 'RemoteIPInternalProxy 172.16.0.0/12';      echo 'RemoteIPInternalProxy 192.168.0.0/16';     } > /etc/apache2/conf-available/remoteip.conf;     a2enconf remoteip
+# Mon, 18 Sep 2023 23:42:19 GMT
+ENV APACHE_BODY_LIMIT=1073741824
+# Mon, 18 Sep 2023 23:42:19 GMT
+RUN {      echo 'LimitRequestBody ${APACHE_BODY_LIMIT}';     } > /etc/apache2/conf-available/apache-limits.conf;     a2enconf apache-limits
+# Mon, 18 Sep 2023 23:43:45 GMT
+ENV NEXTCLOUD_VERSION=27.1.0
+# Mon, 18 Sep 2023 23:44:56 GMT
+RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-27.1.0.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-27.1.0.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
+# Mon, 18 Sep 2023 23:45:00 GMT
 COPY multi:460d0253b10a0268ebfb8482b4fa36d0d335e8207e35802a68bf2d6134195fbb in / 
-# Fri, 15 Sep 2023 01:17:41 GMT
+# Mon, 18 Sep 2023 23:45:00 GMT
 COPY multi:bed047b97a268e53d9af8fc32cf3b9fc25306fd16316e9a09031943c00c6b402 in /usr/src/nextcloud/config/ 
-# Fri, 15 Sep 2023 01:17:41 GMT
+# Mon, 18 Sep 2023 23:45:00 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 15 Sep 2023 01:17:41 GMT
+# Mon, 18 Sep 2023 23:45:00 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -923,21 +951,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 15 Sep 2023 01:24:16 GMT  
 		Size: 759.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9a94e8aa76d655786a5e7ca7cfe0adec9d97c99f4b4e15f3b4197187ae647c9`  
-		Last Modified: Fri, 15 Sep 2023 01:24:16 GMT  
-		Size: 575.0 B  
+	-	`sha256:8bdb883f3531035d737f545d7b12b182b1f02e407cb11d49cfff6c362048ef4c`  
+		Last Modified: Mon, 18 Sep 2023 23:49:21 GMT  
+		Size: 579.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f47ff3aaa3df6aef15c0b6f8a789de41a598c38ac6f2da2c45a795ec9ee38d56`  
-		Last Modified: Fri, 15 Sep 2023 01:28:08 GMT  
-		Size: 185.3 MB (185303054 bytes)  
+	-	`sha256:41ea30a27733e60fb1d4c195ec9cd3d3dd4f52b62d7e48e5476065ec607370ab`  
+		Last Modified: Mon, 18 Sep 2023 23:49:21 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84e40eb5eddcc196c27e7dbef7eb88193d5db2336ccfa913184cc56c7bd15d72`  
-		Last Modified: Fri, 15 Sep 2023 01:27:22 GMT  
+	-	`sha256:301de0f4127411ee6e3e5f38ad25861513238c18ef05f4ea81bdf6fbcbb6aa9e`  
+		Last Modified: Mon, 18 Sep 2023 23:50:56 GMT  
+		Size: 197.9 MB (197941396 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a2523282c3cc796a9c61ed30bdc93917438960858b45ed85dca1ac7f27e80cfa`  
+		Last Modified: Mon, 18 Sep 2023 23:50:18 GMT  
 		Size: 3.6 KB (3608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10d9e073ffcc7228d66e50cecde1b8bd9a40f259b2297106ac05718d2aa442c2`  
-		Last Modified: Fri, 15 Sep 2023 01:27:22 GMT  
-		Size: 2.3 KB (2284 bytes)  
+	-	`sha256:c417f0bd7577e7b17dd0d6c052116afad7df117fe04872c05441ba9b48474950`  
+		Last Modified: Mon, 18 Sep 2023 23:50:18 GMT  
+		Size: 2.3 KB (2285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:production` - linux; mips64le
@@ -1313,14 +1345,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:production` - linux; s390x
 
 ```console
-$ docker pull nextcloud@sha256:7353c1e243c47bf40f16c5bf24ced090672c2c4fb82578b2dff85d64147181a5
+$ docker pull nextcloud@sha256:a99f6c9f6e3374c891288a5a599f1fbb18ac741842aef7ccaf09e778b107499d
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **375.9 MB (375927265 bytes)**  
+-	Total Size: **388.6 MB (388566259 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:915e56817a7a57375669a68717e3a32ce5b15e02786136f871f74942ec366626`
+-	Image ID: `sha256:614b6f13039156e4bdbd6766e49fc7125710206e0149af4bcdd661c8704dca46`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1397,19 +1429,23 @@ RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get upda
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=128M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
 # Fri, 15 Sep 2023 01:22:35 GMT
 VOLUME [/var/www/html]
-# Fri, 15 Sep 2023 01:22:35 GMT
-RUN a2enmod headers rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPInternalProxy 10.0.0.0/8 ;     echo RemoteIPInternalProxy 172.16.0.0/12 ;     echo RemoteIPInternalProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Fri, 15 Sep 2023 01:30:04 GMT
-ENV NEXTCLOUD_VERSION=27.0.2
-# Fri, 15 Sep 2023 01:30:48 GMT
-RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-27.0.2.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-27.0.2.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Fri, 15 Sep 2023 01:31:03 GMT
+# Mon, 18 Sep 2023 23:44:15 GMT
+RUN a2enmod headers rewrite remoteip ;     {      echo 'RemoteIPHeader X-Real-IP';      echo 'RemoteIPInternalProxy 10.0.0.0/8';      echo 'RemoteIPInternalProxy 172.16.0.0/12';      echo 'RemoteIPInternalProxy 192.168.0.0/16';     } > /etc/apache2/conf-available/remoteip.conf;     a2enconf remoteip
+# Mon, 18 Sep 2023 23:44:16 GMT
+ENV APACHE_BODY_LIMIT=1073741824
+# Mon, 18 Sep 2023 23:44:16 GMT
+RUN {      echo 'LimitRequestBody ${APACHE_BODY_LIMIT}';     } > /etc/apache2/conf-available/apache-limits.conf;     a2enconf apache-limits
+# Mon, 18 Sep 2023 23:45:25 GMT
+ENV NEXTCLOUD_VERSION=27.1.0
+# Mon, 18 Sep 2023 23:46:12 GMT
+RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-27.1.0.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-27.1.0.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
+# Mon, 18 Sep 2023 23:46:23 GMT
 COPY multi:460d0253b10a0268ebfb8482b4fa36d0d335e8207e35802a68bf2d6134195fbb in / 
-# Fri, 15 Sep 2023 01:31:03 GMT
+# Mon, 18 Sep 2023 23:46:23 GMT
 COPY multi:bed047b97a268e53d9af8fc32cf3b9fc25306fd16316e9a09031943c00c6b402 in /usr/src/nextcloud/config/ 
-# Fri, 15 Sep 2023 01:31:03 GMT
+# Mon, 18 Sep 2023 23:46:23 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 15 Sep 2023 01:31:04 GMT
+# Mon, 18 Sep 2023 23:46:24 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1478,19 +1514,23 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 15 Sep 2023 01:35:50 GMT  
 		Size: 762.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23fb2f4c6c8bf2fb10804edf4cd862bbe1a00f46998246f2e72f0a12de9350eb`  
-		Last Modified: Fri, 15 Sep 2023 01:35:50 GMT  
-		Size: 573.0 B  
+	-	`sha256:88d17e6af7e8fce853b16f7d46549b6a7a0b23ba14dbc85ce8b5c5212e13885b`  
+		Last Modified: Mon, 18 Sep 2023 23:49:46 GMT  
+		Size: 574.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b52c9bf92d1a3fa9c9aa5d650bcd3c286c1ef7867f6232f77fe2a483433153f`  
-		Last Modified: Fri, 15 Sep 2023 01:37:40 GMT  
-		Size: 185.3 MB (185301081 bytes)  
+	-	`sha256:d27d9f05bc8f9566c3bb6b5575e82978f86132f50d1db8454c738404ea404ee2`  
+		Last Modified: Mon, 18 Sep 2023 23:49:46 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1a73a18f466586e91cc6370efbde48bb9879de71b3eb9e85548d98cf4521ceb`  
-		Last Modified: Fri, 15 Sep 2023 01:37:21 GMT  
+	-	`sha256:6b8faccbe0064b1015ba807c3ae0f1d4e3ffa1486a88c539b07b24278b005d19`  
+		Last Modified: Mon, 18 Sep 2023 23:50:46 GMT  
+		Size: 197.9 MB (197939674 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:56c6727fd8c16161314bb616c2a4b503af317f927151eb57bbebf45b26622abb`  
+		Last Modified: Mon, 18 Sep 2023 23:50:24 GMT  
 		Size: 3.6 KB (3609 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7e8c87b0c39d67e4ae39a0285f276c49c9607beb0ed66248dded9a134795f51`  
-		Last Modified: Fri, 15 Sep 2023 01:37:21 GMT  
-		Size: 2.3 KB (2287 bytes)  
+	-	`sha256:3cddebb7344bd59b9706f3eb0ce40d1fe1a750d371e3ea0665aee15258f34443`  
+		Last Modified: Mon, 18 Sep 2023 23:50:24 GMT  
+		Size: 2.3 KB (2285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
