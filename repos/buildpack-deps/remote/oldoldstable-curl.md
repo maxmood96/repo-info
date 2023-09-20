@@ -1,7 +1,7 @@
 ## `buildpack-deps:oldoldstable-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:96482fc664cc93c4200fb38bc65eb54064c0f2c1c2adec282677511c60487d00
+$ docker pull buildpack-deps@sha256:3f343b6761ce190f2d59f23fba9acc375d4f4f91ef87b279a514c2458beca9c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -46,33 +46,33 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 ### `buildpack-deps:oldoldstable-curl` - linux; arm variant v7
 
 ```console
-$ docker pull buildpack-deps@sha256:9d3666a56a52d9bfc5bec032f72926721990f842082d784c9b76e3567b403e4e
+$ docker pull buildpack-deps@sha256:3839230de395db93305cf13e354b9086aaff2a93a79d2c8bc527b08a31186cd2
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.2 MB (62177989 bytes)**  
+-	Total Size: **62.2 MB (62179604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0eefe026c34ec614b777f3133eb2299e885a329265d9f0d2562312fd64f4216`
+-	Image ID: `sha256:bc2684ccae25cc8df7de9b8a2ac92a34653a9a40f4bd7a2201f6e30f90c555aa`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 07 Sep 2023 00:58:19 GMT
-ADD file:7ec242a3962c31a67f54c602b7f422709b35916aa381a646dc41202360549761 in / 
-# Thu, 07 Sep 2023 00:58:21 GMT
+# Wed, 20 Sep 2023 04:57:44 GMT
+ADD file:61a164f3dead6329acddcce40680f06b7b0f27e5620a1afd975e186153e42077 in / 
+# Wed, 20 Sep 2023 04:57:44 GMT
 CMD ["bash"]
-# Thu, 07 Sep 2023 01:37:24 GMT
+# Wed, 20 Sep 2023 15:28:24 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:719d9383401f642312dab568888c86aa5069040b61dbe32fb40d5a7bc5fd5c02`  
-		Last Modified: Thu, 07 Sep 2023 01:03:31 GMT  
-		Size: 46.0 MB (45966117 bytes)  
+	-	`sha256:6e2ab1511f035b8d0208496939ad6f66778c120d1c102125b629bdb138ce4a14`  
+		Last Modified: Wed, 20 Sep 2023 05:02:14 GMT  
+		Size: 46.0 MB (45966225 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e2da04a998e4694d1b45ec9b56798040834751f733528e18fb5bffc24059f83`  
-		Last Modified: Thu, 07 Sep 2023 01:47:14 GMT  
-		Size: 16.2 MB (16211872 bytes)  
+	-	`sha256:0b42b2c67c3bd9bb3552fc4424f51e962669da3a9daf4294ea3a82867faa9ead`  
+		Last Modified: Wed, 20 Sep 2023 15:37:25 GMT  
+		Size: 16.2 MB (16213379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:oldoldstable-curl` - linux; arm64 variant v8
