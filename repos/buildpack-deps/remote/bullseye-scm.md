@@ -1,7 +1,7 @@
 ## `buildpack-deps:bullseye-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:601230e7ec03834956de3162f882d3783c57c764bcd939557a9d24fa3f97dc1c
+$ docker pull buildpack-deps@sha256:c8834e20cfe81ca792dff9d075f62736e1b2f8bf8ff7ca3aaaec220d864a3997
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -208,39 +208,39 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercuri
 ### `buildpack-deps:bullseye-scm` - linux; mips64le
 
 ```console
-$ docker pull buildpack-deps@sha256:ca35892ddedf46b960acab7bd2bab1a83b0d8b73ccd3ff02e4ad036f45c456a9
+$ docker pull buildpack-deps@sha256:cace3737754b57e7acd610b8db1777204850b79c2afb7a1685f3bed11d3889fb
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.1 MB (122098681 bytes)**  
+-	Total Size: **122.1 MB (122098601 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:46da7ea5bc3242363d0629d73be7dd1ff27301ff80d1ab0e4d59ceac06062aa3`
+-	Image ID: `sha256:29cca89b873263cd6b051194babc14a5970afb00b2c9cc0c6374ea2c8586b159`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 07 Sep 2023 01:09:47 GMT
-ADD file:fdd438b39f1dce564715691d2a092378f02bc722e29cb80216efcbaf71cff0b8 in / 
-# Thu, 07 Sep 2023 01:09:53 GMT
+# Wed, 20 Sep 2023 03:10:35 GMT
+ADD file:bf259f6a910dbc8dc738b19ecb6ee305bd4c4542ed155da31ec4169aafd244ff in / 
+# Wed, 20 Sep 2023 03:10:40 GMT
 CMD ["bash"]
-# Thu, 07 Sep 2023 03:52:37 GMT
+# Wed, 20 Sep 2023 21:53:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 07 Sep 2023 03:54:17 GMT
+# Wed, 20 Sep 2023 21:55:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:0d1f1f4ccb1e0da4313c3ebcd521e7fa8073526c6f64ca7214ed31ae9bd0788e`  
-		Last Modified: Thu, 07 Sep 2023 01:21:00 GMT  
-		Size: 53.3 MB (53271469 bytes)  
+	-	`sha256:0c3ff68a43fe24d06c5623f35f7584c7f4260e244cb03f0be25b1b638b3b2f12`  
+		Last Modified: Wed, 20 Sep 2023 03:21:44 GMT  
+		Size: 53.3 MB (53271571 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b80fcec80ebe264db68a3623aea9c7b0061e84f5d1badc96d9af8660a8643cb`  
-		Last Modified: Thu, 07 Sep 2023 04:23:17 GMT  
-		Size: 15.5 MB (15520537 bytes)  
+	-	`sha256:2a5697015f5ab9ec0f1015233f9b7db31aeab37a53be5980438956f17f323bcf`  
+		Last Modified: Wed, 20 Sep 2023 22:23:58 GMT  
+		Size: 15.5 MB (15520488 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18e60242b89f56e84024b48424b36403c5ed51b10293ee206a3058817baef6e4`  
-		Last Modified: Thu, 07 Sep 2023 04:24:04 GMT  
-		Size: 53.3 MB (53306675 bytes)  
+	-	`sha256:902172eeced877afc9ac8166efa3aa8e216a40cc08607df275d2edff23a4dc33`  
+		Last Modified: Wed, 20 Sep 2023 22:24:44 GMT  
+		Size: 53.3 MB (53306542 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:bullseye-scm` - linux; ppc64le
