@@ -1,17 +1,18 @@
 ## `debian:trixie-20230919-slim`
 
 ```console
-$ docker pull debian@sha256:295b03cbab99bb9733d98c4deb549d699eaa37acd8acfe13c2163b8bd90a2963
+$ docker pull debian@sha256:d2ec058235926ebdd8aa5b08446667d96e1fd256329b8fc7ea4d9f26c7350d32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 7
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; mips64le
+	-	linux; ppc64le
 	-	linux; s390x
 
 ### `debian:trixie-20230919-slim` - linux; amd64
@@ -168,6 +169,32 @@ CMD ["bash"]
 	-	`sha256:7825ad23558b2768069dc29960a420886a056aefce2e0acb0f2dada604537601`  
 		Last Modified: Wed, 20 Sep 2023 03:28:37 GMT  
 		Size: 29.2 MB (29161277 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `debian:trixie-20230919-slim` - linux; ppc64le
+
+```console
+$ docker pull debian@sha256:499ba46d035750c73888973643e18913217932324b45f9d00c3b7cfe37ad292b
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **33.3 MB (33260757 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c23393eab1607f42523527bbbfd0e395ccc2320b9eebeb2200c5d16bbe2cdc1c`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 20 Sep 2023 08:47:52 GMT
+ADD file:0cd1b2386b2f8118b1d506fb60229989a2bc609a5c5e3d34cd20b75946fe1dd3 in / 
+# Wed, 20 Sep 2023 08:47:53 GMT
+CMD ["bash"]
+```
+
+-	Layers:
+	-	`sha256:8709c846cdb3717e0dcef2ea78c5db1221eaee8e3808679897089c216e2ea050`  
+		Last Modified: Wed, 20 Sep 2023 08:54:29 GMT  
+		Size: 33.3 MB (33260757 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:trixie-20230919-slim` - linux; s390x
