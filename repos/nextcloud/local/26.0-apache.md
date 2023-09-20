@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e2b3dc24b093afcb7a7c2e24535627ae3d966369f260c9b357da01638f3ca31b`
-- Created: `2023-09-15T01:07:05.257104076Z`
+- Image ID: `sha256:d6ec80118a1a1a8ad892da7c41c1181d70d8aef7806cd128db96a5b9ccce415b`
+- Created: `2023-09-19T00:23:43.939667216Z`
 - Virtual Size: ~ 1.13 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -25,6 +25,7 @@
   - `PHP_SHA256=561dc4acd5386e47f25be76f2c8df6ae854756469159248313bcf276e282fbb3`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
+  - `APACHE_BODY_LIMIT=1073741824`
   - `NEXTCLOUD_VERSION=26.0.6`
 
 ## `dpkg` (`.deb`-based packages)
