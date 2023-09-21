@@ -4021,14 +4021,9 @@ Licenses: (parsed from: `/usr/share/doc/libraw19/copyright`)
 - `LGPL-2.1`
 - `dcraw`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libraw=0.19.5-1ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.19.5-1ubuntu1.2.dsc' libraw_0.19.5-1ubuntu1.2.dsc 2299 SHA512:ccad9f1c313f4cfaa20bc4ec80c13c319dac376628c5a25f1918026765d997e3dcd21381a019d052622fb256e8d84e5505dddf2dd8d65b0a5b99e647859d6f2b
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.19.5.orig.tar.gz' libraw_0.19.5.orig.tar.gz 557094 SHA512:7b1ad9e20d12c9e706712d36cdc5bc703679bcfaba66ab6c0d21a64928fc73eba18f6ad8337d2a84395e0acd53f76cc9268f997592ef52edf291e2e6c8144d6e
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw_0.19.5-1ubuntu1.2.debian.tar.xz' libraw_0.19.5-1ubuntu1.2.debian.tar.xz 24992 SHA512:4407c069d83f8372c19fb8aec4550d296492a1ee27642cdfdf5e3395ce5c291e237b3a05f760ccd65b291caca58e97235b9b2aec9b141130e768ecd16d8b29c9
-```
 
 ### `dpkg` source package: `librsvg=2.48.9-1ubuntu0.20.04.4`
 
