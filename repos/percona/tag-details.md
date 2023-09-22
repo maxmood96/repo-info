@@ -39,7 +39,7 @@
 ## `percona:5`
 
 ```console
-$ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c37503044432c904b482
+$ docker pull percona@sha256:0f19995a44c099c14a1f11cbed69b3b28711259b45af9b5c117db4d217af2453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -49,82 +49,82 @@ $ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c375030
 ### `percona:5` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:a73b5048c98576f126077b4ac202a16caf66abebe08b330615e46eac6f3990e9
+$ docker pull percona@sha256:346034384e271a4c441ae53e00924fb21d8ec2519ca4ca7fabd04157c9878f05
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **422.7 MB (422738287 bytes)**  
+-	Total Size: **424.4 MB (424449091 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fef9ed4d199cd1798ea6627a94cc29fc7580824bf0cf5e39f9132dcee8b5dc50`
+-	Image ID: `sha256:101d3076abbeb4f9927c1ef5dff3b0daf9715e5e01fded829a5157c356da6524`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Sat, 16 Sep 2023 02:40:43 GMT
-ADD file:b086fe56323a44d446277e97c9f63e00d66130dd7fbdae2f3b730542be66287d in / 
-# Sat, 16 Sep 2023 02:40:44 GMT
+# Thu, 21 Sep 2023 23:23:50 GMT
+ADD file:f1400f7c015d009a734ef72b857aca20fa0b646827d6d6c0fbd1ec44314f40f1 in / 
+# Thu, 21 Sep 2023 23:23:51 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Sep 2023 03:19:28 GMT
+# Thu, 21 Sep 2023 23:45:52 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Sat, 16 Sep 2023 03:19:29 GMT
+# Thu, 21 Sep 2023 23:45:53 GMT
 RUN set -ex;     groupdel ssh_keys;     userdel systemd-coredump;     groupadd -g 999 mysql;     useradd -u 999 -r -g 999 -s /sbin/nologin         -c "Default Application User" mysql
-# Sat, 16 Sep 2023 03:20:04 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 99DB70FAE1D7CE227FB6488205B555B38483C65D;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY;     dnf -y module disable mysql
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV PS_VERSION=5.7.39-42.1
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV OS_VER=el8
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV FULL_PERCONA_VERSION=5.7.39-42.1.el8
-# Sat, 16 Sep 2023 03:20:44 GMT
+# Thu, 21 Sep 2023 23:47:08 GMT
 RUN set -ex;     rpm -e --nodeps tzdata;     dnf config-manager --enable ol8_u4_security_validation;     dnf -y install         tzdata         jemalloc         which         cracklib-dicts         policycoreutils;         dnf -y install         Percona-Server-server-57-${FULL_PERCONA_VERSION}         Percona-Server-devel-57-${FULL_PERCONA_VERSION}         Percona-Server-tokudb-57-${FULL_PERCONA_VERSION}         Percona-Server-rocksdb-57-${FULL_PERCONA_VERSION};     dnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /var/lib/mysql
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 RUN set -ex;     /usr/bin/install -m 0775 -o mysql -g root -d /var/lib/mysql /var/run/mysqld /docker-entrypoint-initdb.d; 	find /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log|user)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log|user)/#&/'; 	printf '[mysqld]\nskip-host-cache\nskip-name-resolve\n' > /etc/my.cnf.d/docker.cnf; 	/usr/bin/install -m 0664 -o mysql -g root /dev/null /etc/sysconfig/mysql; 	echo "LD_PRELOAD=/usr/lib64/libjemalloc.so.1" >> /etc/sysconfig/mysql; 	echo "THP_SETTING=never" >> /etc/sysconfig/mysql; 	ln -s /etc/my.cnf.d /etc/mysql; 	chown -R mysql:root /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d; 	chmod -R ug+rwX /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 VOLUME [/var/lib/mysql /var/log/mysql]
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 COPY file:905f699d79b77ffbf7039a84326c28f490b5fbb94dacddae8e03ff2d2ee34360 in /docker-entrypoint.sh 
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 USER mysql
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 EXPOSE 3306
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:a593ca9036ed77a51fca10362e5bf79d470b50f344e2db99a940ae4406c7a06d`  
-		Last Modified: Sat, 16 Sep 2023 02:42:14 GMT  
-		Size: 88.9 MB (88919239 bytes)  
+	-	`sha256:f757f4fc3d201c5d7b9b19e3dbf0ddd78af45972be1834845cecc8fe6a2a5c27`  
+		Last Modified: Thu, 21 Sep 2023 23:25:04 GMT  
+		Size: 89.0 MB (88977617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f444e97db0bf5d50f5015a158a00bd5e453060943342f50cd305119e04ecc3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 1.2 KB (1169 bytes)  
+	-	`sha256:32e3ef28944bbdd6c846a994cd50850e3014c70ac2ad99c711ec463e19d1fcf9`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f512ea8d3aec4fe796c01a42c138a1865db0af5bbb181535f7b815db30908aa8`  
-		Last Modified: Sat, 16 Sep 2023 03:27:23 GMT  
-		Size: 196.3 MB (196271669 bytes)  
+	-	`sha256:870c60b0c87f562734829269126aa0bb52386d8095ecf72e3380b022ac66aa19`  
+		Last Modified: Thu, 21 Sep 2023 23:52:31 GMT  
+		Size: 197.9 MB (197926337 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5017199f5cf25acfe2e4bf52f8ad3b297c2299ab04b85ddd2f2390bb12d13bb3`  
-		Last Modified: Sat, 16 Sep 2023 03:27:21 GMT  
-		Size: 137.5 MB (137541712 bytes)  
+	-	`sha256:6fa1942d9715497a4d5c8144d9b7e9c0af02aa5123a4caa064575eaa5dd2d378`  
+		Last Modified: Thu, 21 Sep 2023 23:52:38 GMT  
+		Size: 137.5 MB (137539471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b594fad71442b6e1ab26f111cacaec4f79a1b00589d5a9e795a0b797e8b36a82`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
+	-	`sha256:bb3f9825f1b35780a1c129b51997860b996fd55e098b3c08766d7521ee9abf82`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
 		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06b7a9503470801e82fdbfdd3b7346e4301ac0e879acd895b1281b7e039ffa3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 3.1 KB (3062 bytes)  
+	-	`sha256:5420b26b3a232402873e8da59f18462de8107cba201ec16b1a3b84a0af302c59`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 3.1 KB (3063 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `percona:5-centos`
 
 ```console
-$ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c37503044432c904b482
+$ docker pull percona@sha256:0f19995a44c099c14a1f11cbed69b3b28711259b45af9b5c117db4d217af2453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -134,76 +134,76 @@ $ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c375030
 ### `percona:5-centos` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:a73b5048c98576f126077b4ac202a16caf66abebe08b330615e46eac6f3990e9
+$ docker pull percona@sha256:346034384e271a4c441ae53e00924fb21d8ec2519ca4ca7fabd04157c9878f05
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **422.7 MB (422738287 bytes)**  
+-	Total Size: **424.4 MB (424449091 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fef9ed4d199cd1798ea6627a94cc29fc7580824bf0cf5e39f9132dcee8b5dc50`
+-	Image ID: `sha256:101d3076abbeb4f9927c1ef5dff3b0daf9715e5e01fded829a5157c356da6524`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Sat, 16 Sep 2023 02:40:43 GMT
-ADD file:b086fe56323a44d446277e97c9f63e00d66130dd7fbdae2f3b730542be66287d in / 
-# Sat, 16 Sep 2023 02:40:44 GMT
+# Thu, 21 Sep 2023 23:23:50 GMT
+ADD file:f1400f7c015d009a734ef72b857aca20fa0b646827d6d6c0fbd1ec44314f40f1 in / 
+# Thu, 21 Sep 2023 23:23:51 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Sep 2023 03:19:28 GMT
+# Thu, 21 Sep 2023 23:45:52 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Sat, 16 Sep 2023 03:19:29 GMT
+# Thu, 21 Sep 2023 23:45:53 GMT
 RUN set -ex;     groupdel ssh_keys;     userdel systemd-coredump;     groupadd -g 999 mysql;     useradd -u 999 -r -g 999 -s /sbin/nologin         -c "Default Application User" mysql
-# Sat, 16 Sep 2023 03:20:04 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 99DB70FAE1D7CE227FB6488205B555B38483C65D;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY;     dnf -y module disable mysql
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV PS_VERSION=5.7.39-42.1
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV OS_VER=el8
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV FULL_PERCONA_VERSION=5.7.39-42.1.el8
-# Sat, 16 Sep 2023 03:20:44 GMT
+# Thu, 21 Sep 2023 23:47:08 GMT
 RUN set -ex;     rpm -e --nodeps tzdata;     dnf config-manager --enable ol8_u4_security_validation;     dnf -y install         tzdata         jemalloc         which         cracklib-dicts         policycoreutils;         dnf -y install         Percona-Server-server-57-${FULL_PERCONA_VERSION}         Percona-Server-devel-57-${FULL_PERCONA_VERSION}         Percona-Server-tokudb-57-${FULL_PERCONA_VERSION}         Percona-Server-rocksdb-57-${FULL_PERCONA_VERSION};     dnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /var/lib/mysql
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 RUN set -ex;     /usr/bin/install -m 0775 -o mysql -g root -d /var/lib/mysql /var/run/mysqld /docker-entrypoint-initdb.d; 	find /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log|user)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log|user)/#&/'; 	printf '[mysqld]\nskip-host-cache\nskip-name-resolve\n' > /etc/my.cnf.d/docker.cnf; 	/usr/bin/install -m 0664 -o mysql -g root /dev/null /etc/sysconfig/mysql; 	echo "LD_PRELOAD=/usr/lib64/libjemalloc.so.1" >> /etc/sysconfig/mysql; 	echo "THP_SETTING=never" >> /etc/sysconfig/mysql; 	ln -s /etc/my.cnf.d /etc/mysql; 	chown -R mysql:root /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d; 	chmod -R ug+rwX /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 VOLUME [/var/lib/mysql /var/log/mysql]
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 COPY file:905f699d79b77ffbf7039a84326c28f490b5fbb94dacddae8e03ff2d2ee34360 in /docker-entrypoint.sh 
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 USER mysql
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 EXPOSE 3306
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:a593ca9036ed77a51fca10362e5bf79d470b50f344e2db99a940ae4406c7a06d`  
-		Last Modified: Sat, 16 Sep 2023 02:42:14 GMT  
-		Size: 88.9 MB (88919239 bytes)  
+	-	`sha256:f757f4fc3d201c5d7b9b19e3dbf0ddd78af45972be1834845cecc8fe6a2a5c27`  
+		Last Modified: Thu, 21 Sep 2023 23:25:04 GMT  
+		Size: 89.0 MB (88977617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f444e97db0bf5d50f5015a158a00bd5e453060943342f50cd305119e04ecc3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 1.2 KB (1169 bytes)  
+	-	`sha256:32e3ef28944bbdd6c846a994cd50850e3014c70ac2ad99c711ec463e19d1fcf9`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f512ea8d3aec4fe796c01a42c138a1865db0af5bbb181535f7b815db30908aa8`  
-		Last Modified: Sat, 16 Sep 2023 03:27:23 GMT  
-		Size: 196.3 MB (196271669 bytes)  
+	-	`sha256:870c60b0c87f562734829269126aa0bb52386d8095ecf72e3380b022ac66aa19`  
+		Last Modified: Thu, 21 Sep 2023 23:52:31 GMT  
+		Size: 197.9 MB (197926337 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5017199f5cf25acfe2e4bf52f8ad3b297c2299ab04b85ddd2f2390bb12d13bb3`  
-		Last Modified: Sat, 16 Sep 2023 03:27:21 GMT  
-		Size: 137.5 MB (137541712 bytes)  
+	-	`sha256:6fa1942d9715497a4d5c8144d9b7e9c0af02aa5123a4caa064575eaa5dd2d378`  
+		Last Modified: Thu, 21 Sep 2023 23:52:38 GMT  
+		Size: 137.5 MB (137539471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b594fad71442b6e1ab26f111cacaec4f79a1b00589d5a9e795a0b797e8b36a82`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
+	-	`sha256:bb3f9825f1b35780a1c129b51997860b996fd55e098b3c08766d7521ee9abf82`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
 		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06b7a9503470801e82fdbfdd3b7346e4301ac0e879acd895b1281b7e039ffa3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 3.1 KB (3062 bytes)  
+	-	`sha256:5420b26b3a232402873e8da59f18462de8107cba201ec16b1a3b84a0af302c59`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 3.1 KB (3063 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `percona:5.6`
@@ -565,7 +565,7 @@ CMD ["mysqld"]
 ## `percona:5.7`
 
 ```console
-$ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c37503044432c904b482
+$ docker pull percona@sha256:0f19995a44c099c14a1f11cbed69b3b28711259b45af9b5c117db4d217af2453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -575,82 +575,82 @@ $ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c375030
 ### `percona:5.7` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:a73b5048c98576f126077b4ac202a16caf66abebe08b330615e46eac6f3990e9
+$ docker pull percona@sha256:346034384e271a4c441ae53e00924fb21d8ec2519ca4ca7fabd04157c9878f05
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **422.7 MB (422738287 bytes)**  
+-	Total Size: **424.4 MB (424449091 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fef9ed4d199cd1798ea6627a94cc29fc7580824bf0cf5e39f9132dcee8b5dc50`
+-	Image ID: `sha256:101d3076abbeb4f9927c1ef5dff3b0daf9715e5e01fded829a5157c356da6524`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Sat, 16 Sep 2023 02:40:43 GMT
-ADD file:b086fe56323a44d446277e97c9f63e00d66130dd7fbdae2f3b730542be66287d in / 
-# Sat, 16 Sep 2023 02:40:44 GMT
+# Thu, 21 Sep 2023 23:23:50 GMT
+ADD file:f1400f7c015d009a734ef72b857aca20fa0b646827d6d6c0fbd1ec44314f40f1 in / 
+# Thu, 21 Sep 2023 23:23:51 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Sep 2023 03:19:28 GMT
+# Thu, 21 Sep 2023 23:45:52 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Sat, 16 Sep 2023 03:19:29 GMT
+# Thu, 21 Sep 2023 23:45:53 GMT
 RUN set -ex;     groupdel ssh_keys;     userdel systemd-coredump;     groupadd -g 999 mysql;     useradd -u 999 -r -g 999 -s /sbin/nologin         -c "Default Application User" mysql
-# Sat, 16 Sep 2023 03:20:04 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 99DB70FAE1D7CE227FB6488205B555B38483C65D;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY;     dnf -y module disable mysql
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV PS_VERSION=5.7.39-42.1
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV OS_VER=el8
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV FULL_PERCONA_VERSION=5.7.39-42.1.el8
-# Sat, 16 Sep 2023 03:20:44 GMT
+# Thu, 21 Sep 2023 23:47:08 GMT
 RUN set -ex;     rpm -e --nodeps tzdata;     dnf config-manager --enable ol8_u4_security_validation;     dnf -y install         tzdata         jemalloc         which         cracklib-dicts         policycoreutils;         dnf -y install         Percona-Server-server-57-${FULL_PERCONA_VERSION}         Percona-Server-devel-57-${FULL_PERCONA_VERSION}         Percona-Server-tokudb-57-${FULL_PERCONA_VERSION}         Percona-Server-rocksdb-57-${FULL_PERCONA_VERSION};     dnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /var/lib/mysql
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 RUN set -ex;     /usr/bin/install -m 0775 -o mysql -g root -d /var/lib/mysql /var/run/mysqld /docker-entrypoint-initdb.d; 	find /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log|user)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log|user)/#&/'; 	printf '[mysqld]\nskip-host-cache\nskip-name-resolve\n' > /etc/my.cnf.d/docker.cnf; 	/usr/bin/install -m 0664 -o mysql -g root /dev/null /etc/sysconfig/mysql; 	echo "LD_PRELOAD=/usr/lib64/libjemalloc.so.1" >> /etc/sysconfig/mysql; 	echo "THP_SETTING=never" >> /etc/sysconfig/mysql; 	ln -s /etc/my.cnf.d /etc/mysql; 	chown -R mysql:root /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d; 	chmod -R ug+rwX /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 VOLUME [/var/lib/mysql /var/log/mysql]
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 COPY file:905f699d79b77ffbf7039a84326c28f490b5fbb94dacddae8e03ff2d2ee34360 in /docker-entrypoint.sh 
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 USER mysql
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 EXPOSE 3306
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:a593ca9036ed77a51fca10362e5bf79d470b50f344e2db99a940ae4406c7a06d`  
-		Last Modified: Sat, 16 Sep 2023 02:42:14 GMT  
-		Size: 88.9 MB (88919239 bytes)  
+	-	`sha256:f757f4fc3d201c5d7b9b19e3dbf0ddd78af45972be1834845cecc8fe6a2a5c27`  
+		Last Modified: Thu, 21 Sep 2023 23:25:04 GMT  
+		Size: 89.0 MB (88977617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f444e97db0bf5d50f5015a158a00bd5e453060943342f50cd305119e04ecc3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 1.2 KB (1169 bytes)  
+	-	`sha256:32e3ef28944bbdd6c846a994cd50850e3014c70ac2ad99c711ec463e19d1fcf9`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f512ea8d3aec4fe796c01a42c138a1865db0af5bbb181535f7b815db30908aa8`  
-		Last Modified: Sat, 16 Sep 2023 03:27:23 GMT  
-		Size: 196.3 MB (196271669 bytes)  
+	-	`sha256:870c60b0c87f562734829269126aa0bb52386d8095ecf72e3380b022ac66aa19`  
+		Last Modified: Thu, 21 Sep 2023 23:52:31 GMT  
+		Size: 197.9 MB (197926337 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5017199f5cf25acfe2e4bf52f8ad3b297c2299ab04b85ddd2f2390bb12d13bb3`  
-		Last Modified: Sat, 16 Sep 2023 03:27:21 GMT  
-		Size: 137.5 MB (137541712 bytes)  
+	-	`sha256:6fa1942d9715497a4d5c8144d9b7e9c0af02aa5123a4caa064575eaa5dd2d378`  
+		Last Modified: Thu, 21 Sep 2023 23:52:38 GMT  
+		Size: 137.5 MB (137539471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b594fad71442b6e1ab26f111cacaec4f79a1b00589d5a9e795a0b797e8b36a82`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
+	-	`sha256:bb3f9825f1b35780a1c129b51997860b996fd55e098b3c08766d7521ee9abf82`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
 		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06b7a9503470801e82fdbfdd3b7346e4301ac0e879acd895b1281b7e039ffa3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 3.1 KB (3062 bytes)  
+	-	`sha256:5420b26b3a232402873e8da59f18462de8107cba201ec16b1a3b84a0af302c59`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 3.1 KB (3063 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `percona:5.7-centos`
 
 ```console
-$ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c37503044432c904b482
+$ docker pull percona@sha256:0f19995a44c099c14a1f11cbed69b3b28711259b45af9b5c117db4d217af2453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -660,82 +660,82 @@ $ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c375030
 ### `percona:5.7-centos` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:a73b5048c98576f126077b4ac202a16caf66abebe08b330615e46eac6f3990e9
+$ docker pull percona@sha256:346034384e271a4c441ae53e00924fb21d8ec2519ca4ca7fabd04157c9878f05
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **422.7 MB (422738287 bytes)**  
+-	Total Size: **424.4 MB (424449091 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fef9ed4d199cd1798ea6627a94cc29fc7580824bf0cf5e39f9132dcee8b5dc50`
+-	Image ID: `sha256:101d3076abbeb4f9927c1ef5dff3b0daf9715e5e01fded829a5157c356da6524`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Sat, 16 Sep 2023 02:40:43 GMT
-ADD file:b086fe56323a44d446277e97c9f63e00d66130dd7fbdae2f3b730542be66287d in / 
-# Sat, 16 Sep 2023 02:40:44 GMT
+# Thu, 21 Sep 2023 23:23:50 GMT
+ADD file:f1400f7c015d009a734ef72b857aca20fa0b646827d6d6c0fbd1ec44314f40f1 in / 
+# Thu, 21 Sep 2023 23:23:51 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Sep 2023 03:19:28 GMT
+# Thu, 21 Sep 2023 23:45:52 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Sat, 16 Sep 2023 03:19:29 GMT
+# Thu, 21 Sep 2023 23:45:53 GMT
 RUN set -ex;     groupdel ssh_keys;     userdel systemd-coredump;     groupadd -g 999 mysql;     useradd -u 999 -r -g 999 -s /sbin/nologin         -c "Default Application User" mysql
-# Sat, 16 Sep 2023 03:20:04 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 99DB70FAE1D7CE227FB6488205B555B38483C65D;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY;     dnf -y module disable mysql
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV PS_VERSION=5.7.39-42.1
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV OS_VER=el8
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV FULL_PERCONA_VERSION=5.7.39-42.1.el8
-# Sat, 16 Sep 2023 03:20:44 GMT
+# Thu, 21 Sep 2023 23:47:08 GMT
 RUN set -ex;     rpm -e --nodeps tzdata;     dnf config-manager --enable ol8_u4_security_validation;     dnf -y install         tzdata         jemalloc         which         cracklib-dicts         policycoreutils;         dnf -y install         Percona-Server-server-57-${FULL_PERCONA_VERSION}         Percona-Server-devel-57-${FULL_PERCONA_VERSION}         Percona-Server-tokudb-57-${FULL_PERCONA_VERSION}         Percona-Server-rocksdb-57-${FULL_PERCONA_VERSION};     dnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /var/lib/mysql
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 RUN set -ex;     /usr/bin/install -m 0775 -o mysql -g root -d /var/lib/mysql /var/run/mysqld /docker-entrypoint-initdb.d; 	find /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log|user)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log|user)/#&/'; 	printf '[mysqld]\nskip-host-cache\nskip-name-resolve\n' > /etc/my.cnf.d/docker.cnf; 	/usr/bin/install -m 0664 -o mysql -g root /dev/null /etc/sysconfig/mysql; 	echo "LD_PRELOAD=/usr/lib64/libjemalloc.so.1" >> /etc/sysconfig/mysql; 	echo "THP_SETTING=never" >> /etc/sysconfig/mysql; 	ln -s /etc/my.cnf.d /etc/mysql; 	chown -R mysql:root /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d; 	chmod -R ug+rwX /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 VOLUME [/var/lib/mysql /var/log/mysql]
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 COPY file:905f699d79b77ffbf7039a84326c28f490b5fbb94dacddae8e03ff2d2ee34360 in /docker-entrypoint.sh 
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 USER mysql
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 EXPOSE 3306
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:a593ca9036ed77a51fca10362e5bf79d470b50f344e2db99a940ae4406c7a06d`  
-		Last Modified: Sat, 16 Sep 2023 02:42:14 GMT  
-		Size: 88.9 MB (88919239 bytes)  
+	-	`sha256:f757f4fc3d201c5d7b9b19e3dbf0ddd78af45972be1834845cecc8fe6a2a5c27`  
+		Last Modified: Thu, 21 Sep 2023 23:25:04 GMT  
+		Size: 89.0 MB (88977617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f444e97db0bf5d50f5015a158a00bd5e453060943342f50cd305119e04ecc3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 1.2 KB (1169 bytes)  
+	-	`sha256:32e3ef28944bbdd6c846a994cd50850e3014c70ac2ad99c711ec463e19d1fcf9`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f512ea8d3aec4fe796c01a42c138a1865db0af5bbb181535f7b815db30908aa8`  
-		Last Modified: Sat, 16 Sep 2023 03:27:23 GMT  
-		Size: 196.3 MB (196271669 bytes)  
+	-	`sha256:870c60b0c87f562734829269126aa0bb52386d8095ecf72e3380b022ac66aa19`  
+		Last Modified: Thu, 21 Sep 2023 23:52:31 GMT  
+		Size: 197.9 MB (197926337 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5017199f5cf25acfe2e4bf52f8ad3b297c2299ab04b85ddd2f2390bb12d13bb3`  
-		Last Modified: Sat, 16 Sep 2023 03:27:21 GMT  
-		Size: 137.5 MB (137541712 bytes)  
+	-	`sha256:6fa1942d9715497a4d5c8144d9b7e9c0af02aa5123a4caa064575eaa5dd2d378`  
+		Last Modified: Thu, 21 Sep 2023 23:52:38 GMT  
+		Size: 137.5 MB (137539471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b594fad71442b6e1ab26f111cacaec4f79a1b00589d5a9e795a0b797e8b36a82`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
+	-	`sha256:bb3f9825f1b35780a1c129b51997860b996fd55e098b3c08766d7521ee9abf82`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
 		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06b7a9503470801e82fdbfdd3b7346e4301ac0e879acd895b1281b7e039ffa3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 3.1 KB (3062 bytes)  
+	-	`sha256:5420b26b3a232402873e8da59f18462de8107cba201ec16b1a3b84a0af302c59`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 3.1 KB (3063 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `percona:5.7.39`
 
 ```console
-$ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c37503044432c904b482
+$ docker pull percona@sha256:0f19995a44c099c14a1f11cbed69b3b28711259b45af9b5c117db4d217af2453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -745,82 +745,82 @@ $ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c375030
 ### `percona:5.7.39` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:a73b5048c98576f126077b4ac202a16caf66abebe08b330615e46eac6f3990e9
+$ docker pull percona@sha256:346034384e271a4c441ae53e00924fb21d8ec2519ca4ca7fabd04157c9878f05
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **422.7 MB (422738287 bytes)**  
+-	Total Size: **424.4 MB (424449091 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fef9ed4d199cd1798ea6627a94cc29fc7580824bf0cf5e39f9132dcee8b5dc50`
+-	Image ID: `sha256:101d3076abbeb4f9927c1ef5dff3b0daf9715e5e01fded829a5157c356da6524`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Sat, 16 Sep 2023 02:40:43 GMT
-ADD file:b086fe56323a44d446277e97c9f63e00d66130dd7fbdae2f3b730542be66287d in / 
-# Sat, 16 Sep 2023 02:40:44 GMT
+# Thu, 21 Sep 2023 23:23:50 GMT
+ADD file:f1400f7c015d009a734ef72b857aca20fa0b646827d6d6c0fbd1ec44314f40f1 in / 
+# Thu, 21 Sep 2023 23:23:51 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Sep 2023 03:19:28 GMT
+# Thu, 21 Sep 2023 23:45:52 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Sat, 16 Sep 2023 03:19:29 GMT
+# Thu, 21 Sep 2023 23:45:53 GMT
 RUN set -ex;     groupdel ssh_keys;     userdel systemd-coredump;     groupadd -g 999 mysql;     useradd -u 999 -r -g 999 -s /sbin/nologin         -c "Default Application User" mysql
-# Sat, 16 Sep 2023 03:20:04 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 99DB70FAE1D7CE227FB6488205B555B38483C65D;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY;     dnf -y module disable mysql
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV PS_VERSION=5.7.39-42.1
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV OS_VER=el8
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV FULL_PERCONA_VERSION=5.7.39-42.1.el8
-# Sat, 16 Sep 2023 03:20:44 GMT
+# Thu, 21 Sep 2023 23:47:08 GMT
 RUN set -ex;     rpm -e --nodeps tzdata;     dnf config-manager --enable ol8_u4_security_validation;     dnf -y install         tzdata         jemalloc         which         cracklib-dicts         policycoreutils;         dnf -y install         Percona-Server-server-57-${FULL_PERCONA_VERSION}         Percona-Server-devel-57-${FULL_PERCONA_VERSION}         Percona-Server-tokudb-57-${FULL_PERCONA_VERSION}         Percona-Server-rocksdb-57-${FULL_PERCONA_VERSION};     dnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /var/lib/mysql
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 RUN set -ex;     /usr/bin/install -m 0775 -o mysql -g root -d /var/lib/mysql /var/run/mysqld /docker-entrypoint-initdb.d; 	find /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log|user)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log|user)/#&/'; 	printf '[mysqld]\nskip-host-cache\nskip-name-resolve\n' > /etc/my.cnf.d/docker.cnf; 	/usr/bin/install -m 0664 -o mysql -g root /dev/null /etc/sysconfig/mysql; 	echo "LD_PRELOAD=/usr/lib64/libjemalloc.so.1" >> /etc/sysconfig/mysql; 	echo "THP_SETTING=never" >> /etc/sysconfig/mysql; 	ln -s /etc/my.cnf.d /etc/mysql; 	chown -R mysql:root /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d; 	chmod -R ug+rwX /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 VOLUME [/var/lib/mysql /var/log/mysql]
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 COPY file:905f699d79b77ffbf7039a84326c28f490b5fbb94dacddae8e03ff2d2ee34360 in /docker-entrypoint.sh 
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 USER mysql
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 EXPOSE 3306
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:a593ca9036ed77a51fca10362e5bf79d470b50f344e2db99a940ae4406c7a06d`  
-		Last Modified: Sat, 16 Sep 2023 02:42:14 GMT  
-		Size: 88.9 MB (88919239 bytes)  
+	-	`sha256:f757f4fc3d201c5d7b9b19e3dbf0ddd78af45972be1834845cecc8fe6a2a5c27`  
+		Last Modified: Thu, 21 Sep 2023 23:25:04 GMT  
+		Size: 89.0 MB (88977617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f444e97db0bf5d50f5015a158a00bd5e453060943342f50cd305119e04ecc3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 1.2 KB (1169 bytes)  
+	-	`sha256:32e3ef28944bbdd6c846a994cd50850e3014c70ac2ad99c711ec463e19d1fcf9`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f512ea8d3aec4fe796c01a42c138a1865db0af5bbb181535f7b815db30908aa8`  
-		Last Modified: Sat, 16 Sep 2023 03:27:23 GMT  
-		Size: 196.3 MB (196271669 bytes)  
+	-	`sha256:870c60b0c87f562734829269126aa0bb52386d8095ecf72e3380b022ac66aa19`  
+		Last Modified: Thu, 21 Sep 2023 23:52:31 GMT  
+		Size: 197.9 MB (197926337 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5017199f5cf25acfe2e4bf52f8ad3b297c2299ab04b85ddd2f2390bb12d13bb3`  
-		Last Modified: Sat, 16 Sep 2023 03:27:21 GMT  
-		Size: 137.5 MB (137541712 bytes)  
+	-	`sha256:6fa1942d9715497a4d5c8144d9b7e9c0af02aa5123a4caa064575eaa5dd2d378`  
+		Last Modified: Thu, 21 Sep 2023 23:52:38 GMT  
+		Size: 137.5 MB (137539471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b594fad71442b6e1ab26f111cacaec4f79a1b00589d5a9e795a0b797e8b36a82`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
+	-	`sha256:bb3f9825f1b35780a1c129b51997860b996fd55e098b3c08766d7521ee9abf82`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
 		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06b7a9503470801e82fdbfdd3b7346e4301ac0e879acd895b1281b7e039ffa3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 3.1 KB (3062 bytes)  
+	-	`sha256:5420b26b3a232402873e8da59f18462de8107cba201ec16b1a3b84a0af302c59`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 3.1 KB (3063 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `percona:5.7.39-centos`
 
 ```console
-$ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c37503044432c904b482
+$ docker pull percona@sha256:0f19995a44c099c14a1f11cbed69b3b28711259b45af9b5c117db4d217af2453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -830,76 +830,76 @@ $ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c375030
 ### `percona:5.7.39-centos` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:a73b5048c98576f126077b4ac202a16caf66abebe08b330615e46eac6f3990e9
+$ docker pull percona@sha256:346034384e271a4c441ae53e00924fb21d8ec2519ca4ca7fabd04157c9878f05
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **422.7 MB (422738287 bytes)**  
+-	Total Size: **424.4 MB (424449091 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fef9ed4d199cd1798ea6627a94cc29fc7580824bf0cf5e39f9132dcee8b5dc50`
+-	Image ID: `sha256:101d3076abbeb4f9927c1ef5dff3b0daf9715e5e01fded829a5157c356da6524`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Sat, 16 Sep 2023 02:40:43 GMT
-ADD file:b086fe56323a44d446277e97c9f63e00d66130dd7fbdae2f3b730542be66287d in / 
-# Sat, 16 Sep 2023 02:40:44 GMT
+# Thu, 21 Sep 2023 23:23:50 GMT
+ADD file:f1400f7c015d009a734ef72b857aca20fa0b646827d6d6c0fbd1ec44314f40f1 in / 
+# Thu, 21 Sep 2023 23:23:51 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Sep 2023 03:19:28 GMT
+# Thu, 21 Sep 2023 23:45:52 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Sat, 16 Sep 2023 03:19:29 GMT
+# Thu, 21 Sep 2023 23:45:53 GMT
 RUN set -ex;     groupdel ssh_keys;     userdel systemd-coredump;     groupadd -g 999 mysql;     useradd -u 999 -r -g 999 -s /sbin/nologin         -c "Default Application User" mysql
-# Sat, 16 Sep 2023 03:20:04 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 99DB70FAE1D7CE227FB6488205B555B38483C65D;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY;     dnf -y module disable mysql
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV PS_VERSION=5.7.39-42.1
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV OS_VER=el8
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV FULL_PERCONA_VERSION=5.7.39-42.1.el8
-# Sat, 16 Sep 2023 03:20:44 GMT
+# Thu, 21 Sep 2023 23:47:08 GMT
 RUN set -ex;     rpm -e --nodeps tzdata;     dnf config-manager --enable ol8_u4_security_validation;     dnf -y install         tzdata         jemalloc         which         cracklib-dicts         policycoreutils;         dnf -y install         Percona-Server-server-57-${FULL_PERCONA_VERSION}         Percona-Server-devel-57-${FULL_PERCONA_VERSION}         Percona-Server-tokudb-57-${FULL_PERCONA_VERSION}         Percona-Server-rocksdb-57-${FULL_PERCONA_VERSION};     dnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /var/lib/mysql
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 RUN set -ex;     /usr/bin/install -m 0775 -o mysql -g root -d /var/lib/mysql /var/run/mysqld /docker-entrypoint-initdb.d; 	find /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log|user)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log|user)/#&/'; 	printf '[mysqld]\nskip-host-cache\nskip-name-resolve\n' > /etc/my.cnf.d/docker.cnf; 	/usr/bin/install -m 0664 -o mysql -g root /dev/null /etc/sysconfig/mysql; 	echo "LD_PRELOAD=/usr/lib64/libjemalloc.so.1" >> /etc/sysconfig/mysql; 	echo "THP_SETTING=never" >> /etc/sysconfig/mysql; 	ln -s /etc/my.cnf.d /etc/mysql; 	chown -R mysql:root /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d; 	chmod -R ug+rwX /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 VOLUME [/var/lib/mysql /var/log/mysql]
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 COPY file:905f699d79b77ffbf7039a84326c28f490b5fbb94dacddae8e03ff2d2ee34360 in /docker-entrypoint.sh 
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 USER mysql
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 EXPOSE 3306
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:a593ca9036ed77a51fca10362e5bf79d470b50f344e2db99a940ae4406c7a06d`  
-		Last Modified: Sat, 16 Sep 2023 02:42:14 GMT  
-		Size: 88.9 MB (88919239 bytes)  
+	-	`sha256:f757f4fc3d201c5d7b9b19e3dbf0ddd78af45972be1834845cecc8fe6a2a5c27`  
+		Last Modified: Thu, 21 Sep 2023 23:25:04 GMT  
+		Size: 89.0 MB (88977617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f444e97db0bf5d50f5015a158a00bd5e453060943342f50cd305119e04ecc3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 1.2 KB (1169 bytes)  
+	-	`sha256:32e3ef28944bbdd6c846a994cd50850e3014c70ac2ad99c711ec463e19d1fcf9`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f512ea8d3aec4fe796c01a42c138a1865db0af5bbb181535f7b815db30908aa8`  
-		Last Modified: Sat, 16 Sep 2023 03:27:23 GMT  
-		Size: 196.3 MB (196271669 bytes)  
+	-	`sha256:870c60b0c87f562734829269126aa0bb52386d8095ecf72e3380b022ac66aa19`  
+		Last Modified: Thu, 21 Sep 2023 23:52:31 GMT  
+		Size: 197.9 MB (197926337 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5017199f5cf25acfe2e4bf52f8ad3b297c2299ab04b85ddd2f2390bb12d13bb3`  
-		Last Modified: Sat, 16 Sep 2023 03:27:21 GMT  
-		Size: 137.5 MB (137541712 bytes)  
+	-	`sha256:6fa1942d9715497a4d5c8144d9b7e9c0af02aa5123a4caa064575eaa5dd2d378`  
+		Last Modified: Thu, 21 Sep 2023 23:52:38 GMT  
+		Size: 137.5 MB (137539471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b594fad71442b6e1ab26f111cacaec4f79a1b00589d5a9e795a0b797e8b36a82`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
+	-	`sha256:bb3f9825f1b35780a1c129b51997860b996fd55e098b3c08766d7521ee9abf82`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
 		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06b7a9503470801e82fdbfdd3b7346e4301ac0e879acd895b1281b7e039ffa3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 3.1 KB (3062 bytes)  
+	-	`sha256:5420b26b3a232402873e8da59f18462de8107cba201ec16b1a3b84a0af302c59`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 3.1 KB (3063 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `percona:8`
@@ -1451,7 +1451,7 @@ CMD ["mysqld"]
 ## `percona:centos`
 
 ```console
-$ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c37503044432c904b482
+$ docker pull percona@sha256:0f19995a44c099c14a1f11cbed69b3b28711259b45af9b5c117db4d217af2453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1461,82 +1461,82 @@ $ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c375030
 ### `percona:centos` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:a73b5048c98576f126077b4ac202a16caf66abebe08b330615e46eac6f3990e9
+$ docker pull percona@sha256:346034384e271a4c441ae53e00924fb21d8ec2519ca4ca7fabd04157c9878f05
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **422.7 MB (422738287 bytes)**  
+-	Total Size: **424.4 MB (424449091 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fef9ed4d199cd1798ea6627a94cc29fc7580824bf0cf5e39f9132dcee8b5dc50`
+-	Image ID: `sha256:101d3076abbeb4f9927c1ef5dff3b0daf9715e5e01fded829a5157c356da6524`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Sat, 16 Sep 2023 02:40:43 GMT
-ADD file:b086fe56323a44d446277e97c9f63e00d66130dd7fbdae2f3b730542be66287d in / 
-# Sat, 16 Sep 2023 02:40:44 GMT
+# Thu, 21 Sep 2023 23:23:50 GMT
+ADD file:f1400f7c015d009a734ef72b857aca20fa0b646827d6d6c0fbd1ec44314f40f1 in / 
+# Thu, 21 Sep 2023 23:23:51 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Sep 2023 03:19:28 GMT
+# Thu, 21 Sep 2023 23:45:52 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Sat, 16 Sep 2023 03:19:29 GMT
+# Thu, 21 Sep 2023 23:45:53 GMT
 RUN set -ex;     groupdel ssh_keys;     userdel systemd-coredump;     groupadd -g 999 mysql;     useradd -u 999 -r -g 999 -s /sbin/nologin         -c "Default Application User" mysql
-# Sat, 16 Sep 2023 03:20:04 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 99DB70FAE1D7CE227FB6488205B555B38483C65D;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY;     dnf -y module disable mysql
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV PS_VERSION=5.7.39-42.1
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV OS_VER=el8
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV FULL_PERCONA_VERSION=5.7.39-42.1.el8
-# Sat, 16 Sep 2023 03:20:44 GMT
+# Thu, 21 Sep 2023 23:47:08 GMT
 RUN set -ex;     rpm -e --nodeps tzdata;     dnf config-manager --enable ol8_u4_security_validation;     dnf -y install         tzdata         jemalloc         which         cracklib-dicts         policycoreutils;         dnf -y install         Percona-Server-server-57-${FULL_PERCONA_VERSION}         Percona-Server-devel-57-${FULL_PERCONA_VERSION}         Percona-Server-tokudb-57-${FULL_PERCONA_VERSION}         Percona-Server-rocksdb-57-${FULL_PERCONA_VERSION};     dnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /var/lib/mysql
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 RUN set -ex;     /usr/bin/install -m 0775 -o mysql -g root -d /var/lib/mysql /var/run/mysqld /docker-entrypoint-initdb.d; 	find /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log|user)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log|user)/#&/'; 	printf '[mysqld]\nskip-host-cache\nskip-name-resolve\n' > /etc/my.cnf.d/docker.cnf; 	/usr/bin/install -m 0664 -o mysql -g root /dev/null /etc/sysconfig/mysql; 	echo "LD_PRELOAD=/usr/lib64/libjemalloc.so.1" >> /etc/sysconfig/mysql; 	echo "THP_SETTING=never" >> /etc/sysconfig/mysql; 	ln -s /etc/my.cnf.d /etc/mysql; 	chown -R mysql:root /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d; 	chmod -R ug+rwX /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 VOLUME [/var/lib/mysql /var/log/mysql]
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 COPY file:905f699d79b77ffbf7039a84326c28f490b5fbb94dacddae8e03ff2d2ee34360 in /docker-entrypoint.sh 
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 USER mysql
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 EXPOSE 3306
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:a593ca9036ed77a51fca10362e5bf79d470b50f344e2db99a940ae4406c7a06d`  
-		Last Modified: Sat, 16 Sep 2023 02:42:14 GMT  
-		Size: 88.9 MB (88919239 bytes)  
+	-	`sha256:f757f4fc3d201c5d7b9b19e3dbf0ddd78af45972be1834845cecc8fe6a2a5c27`  
+		Last Modified: Thu, 21 Sep 2023 23:25:04 GMT  
+		Size: 89.0 MB (88977617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f444e97db0bf5d50f5015a158a00bd5e453060943342f50cd305119e04ecc3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 1.2 KB (1169 bytes)  
+	-	`sha256:32e3ef28944bbdd6c846a994cd50850e3014c70ac2ad99c711ec463e19d1fcf9`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f512ea8d3aec4fe796c01a42c138a1865db0af5bbb181535f7b815db30908aa8`  
-		Last Modified: Sat, 16 Sep 2023 03:27:23 GMT  
-		Size: 196.3 MB (196271669 bytes)  
+	-	`sha256:870c60b0c87f562734829269126aa0bb52386d8095ecf72e3380b022ac66aa19`  
+		Last Modified: Thu, 21 Sep 2023 23:52:31 GMT  
+		Size: 197.9 MB (197926337 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5017199f5cf25acfe2e4bf52f8ad3b297c2299ab04b85ddd2f2390bb12d13bb3`  
-		Last Modified: Sat, 16 Sep 2023 03:27:21 GMT  
-		Size: 137.5 MB (137541712 bytes)  
+	-	`sha256:6fa1942d9715497a4d5c8144d9b7e9c0af02aa5123a4caa064575eaa5dd2d378`  
+		Last Modified: Thu, 21 Sep 2023 23:52:38 GMT  
+		Size: 137.5 MB (137539471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b594fad71442b6e1ab26f111cacaec4f79a1b00589d5a9e795a0b797e8b36a82`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
+	-	`sha256:bb3f9825f1b35780a1c129b51997860b996fd55e098b3c08766d7521ee9abf82`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
 		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06b7a9503470801e82fdbfdd3b7346e4301ac0e879acd895b1281b7e039ffa3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 3.1 KB (3062 bytes)  
+	-	`sha256:5420b26b3a232402873e8da59f18462de8107cba201ec16b1a3b84a0af302c59`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 3.1 KB (3063 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `percona:ps-5`
 
 ```console
-$ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c37503044432c904b482
+$ docker pull percona@sha256:0f19995a44c099c14a1f11cbed69b3b28711259b45af9b5c117db4d217af2453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1546,76 +1546,76 @@ $ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c375030
 ### `percona:ps-5` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:a73b5048c98576f126077b4ac202a16caf66abebe08b330615e46eac6f3990e9
+$ docker pull percona@sha256:346034384e271a4c441ae53e00924fb21d8ec2519ca4ca7fabd04157c9878f05
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **422.7 MB (422738287 bytes)**  
+-	Total Size: **424.4 MB (424449091 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fef9ed4d199cd1798ea6627a94cc29fc7580824bf0cf5e39f9132dcee8b5dc50`
+-	Image ID: `sha256:101d3076abbeb4f9927c1ef5dff3b0daf9715e5e01fded829a5157c356da6524`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Sat, 16 Sep 2023 02:40:43 GMT
-ADD file:b086fe56323a44d446277e97c9f63e00d66130dd7fbdae2f3b730542be66287d in / 
-# Sat, 16 Sep 2023 02:40:44 GMT
+# Thu, 21 Sep 2023 23:23:50 GMT
+ADD file:f1400f7c015d009a734ef72b857aca20fa0b646827d6d6c0fbd1ec44314f40f1 in / 
+# Thu, 21 Sep 2023 23:23:51 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Sep 2023 03:19:28 GMT
+# Thu, 21 Sep 2023 23:45:52 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Sat, 16 Sep 2023 03:19:29 GMT
+# Thu, 21 Sep 2023 23:45:53 GMT
 RUN set -ex;     groupdel ssh_keys;     userdel systemd-coredump;     groupadd -g 999 mysql;     useradd -u 999 -r -g 999 -s /sbin/nologin         -c "Default Application User" mysql
-# Sat, 16 Sep 2023 03:20:04 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 99DB70FAE1D7CE227FB6488205B555B38483C65D;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY;     dnf -y module disable mysql
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV PS_VERSION=5.7.39-42.1
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV OS_VER=el8
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV FULL_PERCONA_VERSION=5.7.39-42.1.el8
-# Sat, 16 Sep 2023 03:20:44 GMT
+# Thu, 21 Sep 2023 23:47:08 GMT
 RUN set -ex;     rpm -e --nodeps tzdata;     dnf config-manager --enable ol8_u4_security_validation;     dnf -y install         tzdata         jemalloc         which         cracklib-dicts         policycoreutils;         dnf -y install         Percona-Server-server-57-${FULL_PERCONA_VERSION}         Percona-Server-devel-57-${FULL_PERCONA_VERSION}         Percona-Server-tokudb-57-${FULL_PERCONA_VERSION}         Percona-Server-rocksdb-57-${FULL_PERCONA_VERSION};     dnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /var/lib/mysql
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 RUN set -ex;     /usr/bin/install -m 0775 -o mysql -g root -d /var/lib/mysql /var/run/mysqld /docker-entrypoint-initdb.d; 	find /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log|user)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log|user)/#&/'; 	printf '[mysqld]\nskip-host-cache\nskip-name-resolve\n' > /etc/my.cnf.d/docker.cnf; 	/usr/bin/install -m 0664 -o mysql -g root /dev/null /etc/sysconfig/mysql; 	echo "LD_PRELOAD=/usr/lib64/libjemalloc.so.1" >> /etc/sysconfig/mysql; 	echo "THP_SETTING=never" >> /etc/sysconfig/mysql; 	ln -s /etc/my.cnf.d /etc/mysql; 	chown -R mysql:root /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d; 	chmod -R ug+rwX /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 VOLUME [/var/lib/mysql /var/log/mysql]
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 COPY file:905f699d79b77ffbf7039a84326c28f490b5fbb94dacddae8e03ff2d2ee34360 in /docker-entrypoint.sh 
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 USER mysql
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 EXPOSE 3306
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:a593ca9036ed77a51fca10362e5bf79d470b50f344e2db99a940ae4406c7a06d`  
-		Last Modified: Sat, 16 Sep 2023 02:42:14 GMT  
-		Size: 88.9 MB (88919239 bytes)  
+	-	`sha256:f757f4fc3d201c5d7b9b19e3dbf0ddd78af45972be1834845cecc8fe6a2a5c27`  
+		Last Modified: Thu, 21 Sep 2023 23:25:04 GMT  
+		Size: 89.0 MB (88977617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f444e97db0bf5d50f5015a158a00bd5e453060943342f50cd305119e04ecc3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 1.2 KB (1169 bytes)  
+	-	`sha256:32e3ef28944bbdd6c846a994cd50850e3014c70ac2ad99c711ec463e19d1fcf9`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f512ea8d3aec4fe796c01a42c138a1865db0af5bbb181535f7b815db30908aa8`  
-		Last Modified: Sat, 16 Sep 2023 03:27:23 GMT  
-		Size: 196.3 MB (196271669 bytes)  
+	-	`sha256:870c60b0c87f562734829269126aa0bb52386d8095ecf72e3380b022ac66aa19`  
+		Last Modified: Thu, 21 Sep 2023 23:52:31 GMT  
+		Size: 197.9 MB (197926337 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5017199f5cf25acfe2e4bf52f8ad3b297c2299ab04b85ddd2f2390bb12d13bb3`  
-		Last Modified: Sat, 16 Sep 2023 03:27:21 GMT  
-		Size: 137.5 MB (137541712 bytes)  
+	-	`sha256:6fa1942d9715497a4d5c8144d9b7e9c0af02aa5123a4caa064575eaa5dd2d378`  
+		Last Modified: Thu, 21 Sep 2023 23:52:38 GMT  
+		Size: 137.5 MB (137539471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b594fad71442b6e1ab26f111cacaec4f79a1b00589d5a9e795a0b797e8b36a82`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
+	-	`sha256:bb3f9825f1b35780a1c129b51997860b996fd55e098b3c08766d7521ee9abf82`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
 		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06b7a9503470801e82fdbfdd3b7346e4301ac0e879acd895b1281b7e039ffa3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 3.1 KB (3062 bytes)  
+	-	`sha256:5420b26b3a232402873e8da59f18462de8107cba201ec16b1a3b84a0af302c59`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 3.1 KB (3063 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `percona:ps-5.6`
@@ -1799,7 +1799,7 @@ CMD ["mysqld"]
 ## `percona:ps-5.7`
 
 ```console
-$ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c37503044432c904b482
+$ docker pull percona@sha256:0f19995a44c099c14a1f11cbed69b3b28711259b45af9b5c117db4d217af2453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1809,82 +1809,82 @@ $ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c375030
 ### `percona:ps-5.7` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:a73b5048c98576f126077b4ac202a16caf66abebe08b330615e46eac6f3990e9
+$ docker pull percona@sha256:346034384e271a4c441ae53e00924fb21d8ec2519ca4ca7fabd04157c9878f05
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **422.7 MB (422738287 bytes)**  
+-	Total Size: **424.4 MB (424449091 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fef9ed4d199cd1798ea6627a94cc29fc7580824bf0cf5e39f9132dcee8b5dc50`
+-	Image ID: `sha256:101d3076abbeb4f9927c1ef5dff3b0daf9715e5e01fded829a5157c356da6524`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Sat, 16 Sep 2023 02:40:43 GMT
-ADD file:b086fe56323a44d446277e97c9f63e00d66130dd7fbdae2f3b730542be66287d in / 
-# Sat, 16 Sep 2023 02:40:44 GMT
+# Thu, 21 Sep 2023 23:23:50 GMT
+ADD file:f1400f7c015d009a734ef72b857aca20fa0b646827d6d6c0fbd1ec44314f40f1 in / 
+# Thu, 21 Sep 2023 23:23:51 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Sep 2023 03:19:28 GMT
+# Thu, 21 Sep 2023 23:45:52 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Sat, 16 Sep 2023 03:19:29 GMT
+# Thu, 21 Sep 2023 23:45:53 GMT
 RUN set -ex;     groupdel ssh_keys;     userdel systemd-coredump;     groupadd -g 999 mysql;     useradd -u 999 -r -g 999 -s /sbin/nologin         -c "Default Application User" mysql
-# Sat, 16 Sep 2023 03:20:04 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 99DB70FAE1D7CE227FB6488205B555B38483C65D;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY;     dnf -y module disable mysql
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV PS_VERSION=5.7.39-42.1
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV OS_VER=el8
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV FULL_PERCONA_VERSION=5.7.39-42.1.el8
-# Sat, 16 Sep 2023 03:20:44 GMT
+# Thu, 21 Sep 2023 23:47:08 GMT
 RUN set -ex;     rpm -e --nodeps tzdata;     dnf config-manager --enable ol8_u4_security_validation;     dnf -y install         tzdata         jemalloc         which         cracklib-dicts         policycoreutils;         dnf -y install         Percona-Server-server-57-${FULL_PERCONA_VERSION}         Percona-Server-devel-57-${FULL_PERCONA_VERSION}         Percona-Server-tokudb-57-${FULL_PERCONA_VERSION}         Percona-Server-rocksdb-57-${FULL_PERCONA_VERSION};     dnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /var/lib/mysql
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 RUN set -ex;     /usr/bin/install -m 0775 -o mysql -g root -d /var/lib/mysql /var/run/mysqld /docker-entrypoint-initdb.d; 	find /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log|user)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log|user)/#&/'; 	printf '[mysqld]\nskip-host-cache\nskip-name-resolve\n' > /etc/my.cnf.d/docker.cnf; 	/usr/bin/install -m 0664 -o mysql -g root /dev/null /etc/sysconfig/mysql; 	echo "LD_PRELOAD=/usr/lib64/libjemalloc.so.1" >> /etc/sysconfig/mysql; 	echo "THP_SETTING=never" >> /etc/sysconfig/mysql; 	ln -s /etc/my.cnf.d /etc/mysql; 	chown -R mysql:root /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d; 	chmod -R ug+rwX /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 VOLUME [/var/lib/mysql /var/log/mysql]
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 COPY file:905f699d79b77ffbf7039a84326c28f490b5fbb94dacddae8e03ff2d2ee34360 in /docker-entrypoint.sh 
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 USER mysql
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 EXPOSE 3306
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:a593ca9036ed77a51fca10362e5bf79d470b50f344e2db99a940ae4406c7a06d`  
-		Last Modified: Sat, 16 Sep 2023 02:42:14 GMT  
-		Size: 88.9 MB (88919239 bytes)  
+	-	`sha256:f757f4fc3d201c5d7b9b19e3dbf0ddd78af45972be1834845cecc8fe6a2a5c27`  
+		Last Modified: Thu, 21 Sep 2023 23:25:04 GMT  
+		Size: 89.0 MB (88977617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f444e97db0bf5d50f5015a158a00bd5e453060943342f50cd305119e04ecc3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 1.2 KB (1169 bytes)  
+	-	`sha256:32e3ef28944bbdd6c846a994cd50850e3014c70ac2ad99c711ec463e19d1fcf9`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f512ea8d3aec4fe796c01a42c138a1865db0af5bbb181535f7b815db30908aa8`  
-		Last Modified: Sat, 16 Sep 2023 03:27:23 GMT  
-		Size: 196.3 MB (196271669 bytes)  
+	-	`sha256:870c60b0c87f562734829269126aa0bb52386d8095ecf72e3380b022ac66aa19`  
+		Last Modified: Thu, 21 Sep 2023 23:52:31 GMT  
+		Size: 197.9 MB (197926337 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5017199f5cf25acfe2e4bf52f8ad3b297c2299ab04b85ddd2f2390bb12d13bb3`  
-		Last Modified: Sat, 16 Sep 2023 03:27:21 GMT  
-		Size: 137.5 MB (137541712 bytes)  
+	-	`sha256:6fa1942d9715497a4d5c8144d9b7e9c0af02aa5123a4caa064575eaa5dd2d378`  
+		Last Modified: Thu, 21 Sep 2023 23:52:38 GMT  
+		Size: 137.5 MB (137539471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b594fad71442b6e1ab26f111cacaec4f79a1b00589d5a9e795a0b797e8b36a82`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
+	-	`sha256:bb3f9825f1b35780a1c129b51997860b996fd55e098b3c08766d7521ee9abf82`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
 		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06b7a9503470801e82fdbfdd3b7346e4301ac0e879acd895b1281b7e039ffa3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 3.1 KB (3062 bytes)  
+	-	`sha256:5420b26b3a232402873e8da59f18462de8107cba201ec16b1a3b84a0af302c59`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 3.1 KB (3063 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `percona:ps-5.7.39`
 
 ```console
-$ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c37503044432c904b482
+$ docker pull percona@sha256:0f19995a44c099c14a1f11cbed69b3b28711259b45af9b5c117db4d217af2453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1894,76 +1894,76 @@ $ docker pull percona@sha256:c6cec5f9c14edc620a6b12fbba50a3a8dffa21fc7724c375030
 ### `percona:ps-5.7.39` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:a73b5048c98576f126077b4ac202a16caf66abebe08b330615e46eac6f3990e9
+$ docker pull percona@sha256:346034384e271a4c441ae53e00924fb21d8ec2519ca4ca7fabd04157c9878f05
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **422.7 MB (422738287 bytes)**  
+-	Total Size: **424.4 MB (424449091 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fef9ed4d199cd1798ea6627a94cc29fc7580824bf0cf5e39f9132dcee8b5dc50`
+-	Image ID: `sha256:101d3076abbeb4f9927c1ef5dff3b0daf9715e5e01fded829a5157c356da6524`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Sat, 16 Sep 2023 02:40:43 GMT
-ADD file:b086fe56323a44d446277e97c9f63e00d66130dd7fbdae2f3b730542be66287d in / 
-# Sat, 16 Sep 2023 02:40:44 GMT
+# Thu, 21 Sep 2023 23:23:50 GMT
+ADD file:f1400f7c015d009a734ef72b857aca20fa0b646827d6d6c0fbd1ec44314f40f1 in / 
+# Thu, 21 Sep 2023 23:23:51 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Sep 2023 03:19:28 GMT
+# Thu, 21 Sep 2023 23:45:52 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Sat, 16 Sep 2023 03:19:29 GMT
+# Thu, 21 Sep 2023 23:45:53 GMT
 RUN set -ex;     groupdel ssh_keys;     userdel systemd-coredump;     groupadd -g 999 mysql;     useradd -u 999 -r -g 999 -s /sbin/nologin         -c "Default Application User" mysql
-# Sat, 16 Sep 2023 03:20:04 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 99DB70FAE1D7CE227FB6488205B555B38483C65D;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY;     dnf -y module disable mysql
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV PS_VERSION=5.7.39-42.1
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV OS_VER=el8
-# Sat, 16 Sep 2023 03:20:05 GMT
+# Thu, 21 Sep 2023 23:46:30 GMT
 ENV FULL_PERCONA_VERSION=5.7.39-42.1.el8
-# Sat, 16 Sep 2023 03:20:44 GMT
+# Thu, 21 Sep 2023 23:47:08 GMT
 RUN set -ex;     rpm -e --nodeps tzdata;     dnf config-manager --enable ol8_u4_security_validation;     dnf -y install         tzdata         jemalloc         which         cracklib-dicts         policycoreutils;         dnf -y install         Percona-Server-server-57-${FULL_PERCONA_VERSION}         Percona-Server-devel-57-${FULL_PERCONA_VERSION}         Percona-Server-tokudb-57-${FULL_PERCONA_VERSION}         Percona-Server-rocksdb-57-${FULL_PERCONA_VERSION};     dnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /var/lib/mysql
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 RUN set -ex;     /usr/bin/install -m 0775 -o mysql -g root -d /var/lib/mysql /var/run/mysqld /docker-entrypoint-initdb.d; 	find /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log|user)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log|user)/#&/'; 	printf '[mysqld]\nskip-host-cache\nskip-name-resolve\n' > /etc/my.cnf.d/docker.cnf; 	/usr/bin/install -m 0664 -o mysql -g root /dev/null /etc/sysconfig/mysql; 	echo "LD_PRELOAD=/usr/lib64/libjemalloc.so.1" >> /etc/sysconfig/mysql; 	echo "THP_SETTING=never" >> /etc/sysconfig/mysql; 	ln -s /etc/my.cnf.d /etc/mysql; 	chown -R mysql:root /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d; 	chmod -R ug+rwX /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 VOLUME [/var/lib/mysql /var/log/mysql]
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 COPY file:905f699d79b77ffbf7039a84326c28f490b5fbb94dacddae8e03ff2d2ee34360 in /docker-entrypoint.sh 
-# Sat, 16 Sep 2023 03:20:45 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 USER mysql
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 EXPOSE 3306
-# Sat, 16 Sep 2023 03:20:46 GMT
+# Thu, 21 Sep 2023 23:47:10 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:a593ca9036ed77a51fca10362e5bf79d470b50f344e2db99a940ae4406c7a06d`  
-		Last Modified: Sat, 16 Sep 2023 02:42:14 GMT  
-		Size: 88.9 MB (88919239 bytes)  
+	-	`sha256:f757f4fc3d201c5d7b9b19e3dbf0ddd78af45972be1834845cecc8fe6a2a5c27`  
+		Last Modified: Thu, 21 Sep 2023 23:25:04 GMT  
+		Size: 89.0 MB (88977617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f444e97db0bf5d50f5015a158a00bd5e453060943342f50cd305119e04ecc3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 1.2 KB (1169 bytes)  
+	-	`sha256:32e3ef28944bbdd6c846a994cd50850e3014c70ac2ad99c711ec463e19d1fcf9`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f512ea8d3aec4fe796c01a42c138a1865db0af5bbb181535f7b815db30908aa8`  
-		Last Modified: Sat, 16 Sep 2023 03:27:23 GMT  
-		Size: 196.3 MB (196271669 bytes)  
+	-	`sha256:870c60b0c87f562734829269126aa0bb52386d8095ecf72e3380b022ac66aa19`  
+		Last Modified: Thu, 21 Sep 2023 23:52:31 GMT  
+		Size: 197.9 MB (197926337 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5017199f5cf25acfe2e4bf52f8ad3b297c2299ab04b85ddd2f2390bb12d13bb3`  
-		Last Modified: Sat, 16 Sep 2023 03:27:21 GMT  
-		Size: 137.5 MB (137541712 bytes)  
+	-	`sha256:6fa1942d9715497a4d5c8144d9b7e9c0af02aa5123a4caa064575eaa5dd2d378`  
+		Last Modified: Thu, 21 Sep 2023 23:52:38 GMT  
+		Size: 137.5 MB (137539471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b594fad71442b6e1ab26f111cacaec4f79a1b00589d5a9e795a0b797e8b36a82`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
+	-	`sha256:bb3f9825f1b35780a1c129b51997860b996fd55e098b3c08766d7521ee9abf82`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
 		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06b7a9503470801e82fdbfdd3b7346e4301ac0e879acd895b1281b7e039ffa3f`  
-		Last Modified: Sat, 16 Sep 2023 03:27:03 GMT  
-		Size: 3.1 KB (3062 bytes)  
+	-	`sha256:5420b26b3a232402873e8da59f18462de8107cba201ec16b1a3b84a0af302c59`  
+		Last Modified: Thu, 21 Sep 2023 23:52:20 GMT  
+		Size: 3.1 KB (3063 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `percona:ps-8`
@@ -2242,7 +2242,7 @@ CMD ["mysqld"]
 ## `percona:psmdb-4.2`
 
 ```console
-$ docker pull percona@sha256:23abd672819951926cc88313b72ffb55e38216b9a33a8f28d4535acab28dee82
+$ docker pull percona@sha256:414fba4f2cb6393e6732288c7e996d6528acb4de8852b7e74be571bce8acc1d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2252,106 +2252,106 @@ $ docker pull percona@sha256:23abd672819951926cc88313b72ffb55e38216b9a33a8f28d45
 ### `percona:psmdb-4.2` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:7945b80af0a2c7469457dad587627d88457dc09605580a3660c8b9f636424500
+$ docker pull percona@sha256:c9df0a237c305485f633d662a5ce1041b4b09dcfc679f19617feddb857fdbaf1
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **219.0 MB (219041553 bytes)**  
+-	Total Size: **219.1 MB (219114361 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0a7612184008c7ab6b31a6a43b6fe944ad67fc1e0bc16e15f9c376232ea60fb`
+-	Image ID: `sha256:565f9b7c885acc4fbf3a5b0fcbc839fef15d4a057fb52551a876381314c91fac`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Sat, 16 Sep 2023 02:40:43 GMT
-ADD file:b086fe56323a44d446277e97c9f63e00d66130dd7fbdae2f3b730542be66287d in / 
-# Sat, 16 Sep 2023 02:40:44 GMT
+# Thu, 21 Sep 2023 23:23:50 GMT
+ADD file:f1400f7c015d009a734ef72b857aca20fa0b646827d6d6c0fbd1ec44314f40f1 in / 
+# Thu, 21 Sep 2023 23:23:51 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Sep 2023 03:19:28 GMT
+# Thu, 21 Sep 2023 23:45:52 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Sat, 16 Sep 2023 03:24:25 GMT
+# Thu, 21 Sep 2023 23:50:48 GMT
 ENV PSMDB_VERSION=4.2.24-24
-# Sat, 16 Sep 2023 03:24:25 GMT
+# Thu, 21 Sep 2023 23:50:48 GMT
 ENV OS_VER=el8
-# Sat, 16 Sep 2023 03:24:25 GMT
+# Thu, 21 Sep 2023 23:50:48 GMT
 ENV FULL_PERCONA_VERSION=4.2.24-24.el8
-# Sat, 16 Sep 2023 03:24:25 GMT
+# Thu, 21 Sep 2023 23:50:48 GMT
 ENV K8S_TOOLS_VERSION=0.5.0
-# Sat, 16 Sep 2023 03:24:25 GMT
+# Thu, 21 Sep 2023 23:50:49 GMT
 ENV PSMDB_REPO=release
-# Sat, 16 Sep 2023 03:24:28 GMT
+# Thu, 21 Sep 2023 23:50:51 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 99DB70FAE1D7CE227FB6488205B555B38483C65D 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     gpg --batch --export --armor 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1 > ${GNUPGHOME}/RPM-GPG-KEY-EPEL-8;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona ${GNUPGHOME}/RPM-GPG-KEY-centosofficial ${GNUPGHOME}/RPM-GPG-KEY-EPEL-8;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY
-# Sat, 16 Sep 2023 03:25:16 GMT
+# Thu, 21 Sep 2023 23:51:40 GMT
 RUN set -ex;     percona-release enable psmdb-42 ${PSMDB_REPO};     dnf config-manager --enable ol8_u4_security_validation;     dnf -y install         percona-server-mongodb-mongos-${FULL_PERCONA_VERSION}         percona-server-mongodb-shell-${FULL_PERCONA_VERSION}         percona-server-mongodb-tools-${FULL_PERCONA_VERSION}         jq         procps-ng         oniguruma         tar         cyrus-sasl-gssapi         policycoreutils;             curl -Lf -o /tmp/Percona-Server-MongoDB-server.rpm http://repo.percona.com/psmdb-42/yum/${PSMDB_REPO}/8/RPMS/x86_64/percona-server-mongodb-server-${FULL_PERCONA_VERSION}.x86_64.rpm;     rpmkeys --checksig /tmp/Percona-Server-MongoDB-server.rpm;     rpm -iv /tmp/Percona-Server-MongoDB-server.rpm --nodeps;     rm -rf /tmp/Percona-Server-MongoDB-server.rpm;     dnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /data/db && mkdir -p /data/db;     chown -R 1001:0 /data/db
-# Sat, 16 Sep 2023 03:25:17 GMT
+# Thu, 21 Sep 2023 23:51:41 GMT
 RUN useradd -u 1001 -r -g 0 -m -s /sbin/nologin             -c "Default Application User" mongodb;     chmod g+rwx /var/log/mongo;     chown :0 /var/log/mongo
-# Sat, 16 Sep 2023 03:25:17 GMT
+# Thu, 21 Sep 2023 23:51:41 GMT
 COPY file:b7c621ae843e72f20dd7ef20e8c42b89234688ceed5018592c3e5bfa61048aad in /licenses/LICENSE.Dockerfile 
-# Sat, 16 Sep 2023 03:25:18 GMT
+# Thu, 21 Sep 2023 23:51:42 GMT
 RUN cp /usr/share/doc/percona-server-mongodb-server/LICENSE-Community.txt /licenses/LICENSE.Percona-Server-for-MongoDB
-# Sat, 16 Sep 2023 03:25:18 GMT
+# Thu, 21 Sep 2023 23:51:42 GMT
 ENV GOSU_VERSION=1.11
-# Sat, 16 Sep 2023 03:25:21 GMT
+# Thu, 21 Sep 2023 23:51:45 GMT
 RUN set -eux;     curl -Lf -o /usr/bin/gosu https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64;     curl -Lf -o /usr/bin/gosu.asc https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64.asc;         export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4;     gpg --batch --verify /usr/bin/gosu.asc /usr/bin/gosu;     rm -rf "$GNUPGHOME" /usr/bin/gosu.asc;         chmod +x /usr/bin/gosu;     curl -f -o /licenses/LICENSE.gosu https://raw.githubusercontent.com/tianon/gosu/${GOSU_VERSION}/LICENSE
-# Sat, 16 Sep 2023 03:25:23 GMT
+# Thu, 21 Sep 2023 23:51:47 GMT
 RUN set -ex;     curl -fSL https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/k8s-mongodb-initiator -o /usr/local/bin/k8s-mongodb-initiator;     curl -fSL  https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/mongodb-healthcheck -o /usr/local/bin/mongodb-healthcheck;     curl -fSL  https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/SHA256SUMS -o /tmp/SHA256SUMS;     curl -fSL https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js -o /js-yaml.js;     echo "$(grep 'k8s-mongodb-initiator' /tmp/SHA256SUMS | awk '{print $1}')" /usr/local/bin/k8s-mongodb-initiator | sha256sum -c -;     echo "$(grep 'mongodb-healthcheck' /tmp/SHA256SUMS   | awk '{print $1}')" /usr/local/bin/mongodb-healthcheck   | sha256sum -c -;     echo "45dc3dd03dc07a06705a2c2989b8c7f709013f04bd5386e3279d4e447f07ebd7  /js-yaml.js" | sha256sum -c -;     rm -f /tmp/SHA256SUMS;     chmod 0755 /usr/local/bin/k8s-mongodb-initiator /usr/local/bin/mongodb-healthcheck
-# Sat, 16 Sep 2023 03:25:23 GMT
+# Thu, 21 Sep 2023 23:51:47 GMT
 VOLUME [/data/db]
-# Sat, 16 Sep 2023 03:25:23 GMT
+# Thu, 21 Sep 2023 23:51:48 GMT
 COPY file:f695d42c4add7cde05638253f593b5a3f599ec240da8e578b8c6049c6e1672a9 in /entrypoint.sh 
-# Sat, 16 Sep 2023 03:25:23 GMT
+# Thu, 21 Sep 2023 23:51:48 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 16 Sep 2023 03:25:23 GMT
+# Thu, 21 Sep 2023 23:51:48 GMT
 EXPOSE 27017
-# Sat, 16 Sep 2023 03:25:23 GMT
+# Thu, 21 Sep 2023 23:51:48 GMT
 USER 1001
-# Sat, 16 Sep 2023 03:25:24 GMT
+# Thu, 21 Sep 2023 23:51:48 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:a593ca9036ed77a51fca10362e5bf79d470b50f344e2db99a940ae4406c7a06d`  
-		Last Modified: Sat, 16 Sep 2023 02:42:14 GMT  
-		Size: 88.9 MB (88919239 bytes)  
+	-	`sha256:f757f4fc3d201c5d7b9b19e3dbf0ddd78af45972be1834845cecc8fe6a2a5c27`  
+		Last Modified: Thu, 21 Sep 2023 23:25:04 GMT  
+		Size: 89.0 MB (88977617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:164f7a68b7030bc124d9cf34d07c76d54ec1e79572e31be3295e182a2e21c6d8`  
-		Last Modified: Sat, 16 Sep 2023 03:29:36 GMT  
-		Size: 3.8 MB (3787089 bytes)  
+	-	`sha256:807209c0683a4d5f3ba520355288f8af21bb206567626fddbe3059fbc831d20e`  
+		Last Modified: Thu, 21 Sep 2023 23:54:40 GMT  
+		Size: 3.8 MB (3793090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa491dd6268e0b275a5a4fcf806e2dc7223b0e14fd3acc0934b505750da44f01`  
-		Last Modified: Sat, 16 Sep 2023 03:29:49 GMT  
-		Size: 117.2 MB (117248300 bytes)  
+	-	`sha256:117f0a6ae3bd8753285a3ef752362337683573121676111e290af279bde42f87`  
+		Last Modified: Thu, 21 Sep 2023 23:54:54 GMT  
+		Size: 117.3 MB (117256737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e22a62adb6db81041318c87098dbeacedd0f94a5e386156a837ee8b447869d2`  
-		Last Modified: Sat, 16 Sep 2023 03:29:34 GMT  
-		Size: 1.7 KB (1678 bytes)  
+	-	`sha256:36192c58d3c3806843c72df51f68099517e15c520214296cc7de63e9f7bfc4af`  
+		Last Modified: Thu, 21 Sep 2023 23:54:39 GMT  
+		Size: 1.7 KB (1673 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aee62e609fee604f1c59eacedc4931822640150fe98cc28cb3fac909d072b0c5`  
-		Last Modified: Sat, 16 Sep 2023 03:29:32 GMT  
-		Size: 4.1 KB (4103 bytes)  
+	-	`sha256:3318d86d153c93a4441f8af8699a623000a53a88915643f08b0b33138098872f`  
+		Last Modified: Thu, 21 Sep 2023 23:54:38 GMT  
+		Size: 4.1 KB (4102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14fdbc03b279777b2c0b114065624c47425321bc690f66299718abd1411c62fb`  
-		Last Modified: Sat, 16 Sep 2023 03:29:32 GMT  
+	-	`sha256:cffdc9576a6a3c0442de100c2d3ca0249d2bde5ca1377a770df88c7629831939`  
+		Last Modified: Thu, 21 Sep 2023 23:54:38 GMT  
 		Size: 10.6 KB (10578 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fbc65965ba646c52e9491c7f1596407af88f353a61f5f24c817915c18fcde045`  
-		Last Modified: Sat, 16 Sep 2023 03:29:34 GMT  
-		Size: 914.5 KB (914549 bytes)  
+	-	`sha256:848f329f2e34276a857f96e6b22fcb83da4102a89508544dec9dfd3d7be73ec2`  
+		Last Modified: Thu, 21 Sep 2023 23:54:38 GMT  
+		Size: 914.6 KB (914552 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f40cca8a55dad9ae9da7a03390bf5f4237ab2e2c6865f3c960f626819021c7f`  
-		Last Modified: Sat, 16 Sep 2023 03:29:34 GMT  
-		Size: 8.2 MB (8151461 bytes)  
+	-	`sha256:e8d89db9d8185c68da5475ecb944a2001ff62d7cb6ad3c5d69b97d1ae2dd0477`  
+		Last Modified: Thu, 21 Sep 2023 23:54:40 GMT  
+		Size: 8.2 MB (8151455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5966d0fa83dea102b0f55fd20f6b988f830c5ea4837ca6697106dcb76144cef`  
-		Last Modified: Sat, 16 Sep 2023 03:29:33 GMT  
-		Size: 4.6 KB (4556 bytes)  
+	-	`sha256:148f378ef29898a3a3b6ff7eec618a4957efe5ada1d448ea6cc18a40f075b7f2`  
+		Last Modified: Thu, 21 Sep 2023 23:54:38 GMT  
+		Size: 4.6 KB (4557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `percona:psmdb-4.2.24`
 
 ```console
-$ docker pull percona@sha256:23abd672819951926cc88313b72ffb55e38216b9a33a8f28d4535acab28dee82
+$ docker pull percona@sha256:414fba4f2cb6393e6732288c7e996d6528acb4de8852b7e74be571bce8acc1d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2361,106 +2361,106 @@ $ docker pull percona@sha256:23abd672819951926cc88313b72ffb55e38216b9a33a8f28d45
 ### `percona:psmdb-4.2.24` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:7945b80af0a2c7469457dad587627d88457dc09605580a3660c8b9f636424500
+$ docker pull percona@sha256:c9df0a237c305485f633d662a5ce1041b4b09dcfc679f19617feddb857fdbaf1
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **219.0 MB (219041553 bytes)**  
+-	Total Size: **219.1 MB (219114361 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0a7612184008c7ab6b31a6a43b6fe944ad67fc1e0bc16e15f9c376232ea60fb`
+-	Image ID: `sha256:565f9b7c885acc4fbf3a5b0fcbc839fef15d4a057fb52551a876381314c91fac`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Sat, 16 Sep 2023 02:40:43 GMT
-ADD file:b086fe56323a44d446277e97c9f63e00d66130dd7fbdae2f3b730542be66287d in / 
-# Sat, 16 Sep 2023 02:40:44 GMT
+# Thu, 21 Sep 2023 23:23:50 GMT
+ADD file:f1400f7c015d009a734ef72b857aca20fa0b646827d6d6c0fbd1ec44314f40f1 in / 
+# Thu, 21 Sep 2023 23:23:51 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Sep 2023 03:19:28 GMT
+# Thu, 21 Sep 2023 23:45:52 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Sat, 16 Sep 2023 03:24:25 GMT
+# Thu, 21 Sep 2023 23:50:48 GMT
 ENV PSMDB_VERSION=4.2.24-24
-# Sat, 16 Sep 2023 03:24:25 GMT
+# Thu, 21 Sep 2023 23:50:48 GMT
 ENV OS_VER=el8
-# Sat, 16 Sep 2023 03:24:25 GMT
+# Thu, 21 Sep 2023 23:50:48 GMT
 ENV FULL_PERCONA_VERSION=4.2.24-24.el8
-# Sat, 16 Sep 2023 03:24:25 GMT
+# Thu, 21 Sep 2023 23:50:48 GMT
 ENV K8S_TOOLS_VERSION=0.5.0
-# Sat, 16 Sep 2023 03:24:25 GMT
+# Thu, 21 Sep 2023 23:50:49 GMT
 ENV PSMDB_REPO=release
-# Sat, 16 Sep 2023 03:24:28 GMT
+# Thu, 21 Sep 2023 23:50:51 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 99DB70FAE1D7CE227FB6488205B555B38483C65D 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     gpg --batch --export --armor 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1 > ${GNUPGHOME}/RPM-GPG-KEY-EPEL-8;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona ${GNUPGHOME}/RPM-GPG-KEY-centosofficial ${GNUPGHOME}/RPM-GPG-KEY-EPEL-8;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY
-# Sat, 16 Sep 2023 03:25:16 GMT
+# Thu, 21 Sep 2023 23:51:40 GMT
 RUN set -ex;     percona-release enable psmdb-42 ${PSMDB_REPO};     dnf config-manager --enable ol8_u4_security_validation;     dnf -y install         percona-server-mongodb-mongos-${FULL_PERCONA_VERSION}         percona-server-mongodb-shell-${FULL_PERCONA_VERSION}         percona-server-mongodb-tools-${FULL_PERCONA_VERSION}         jq         procps-ng         oniguruma         tar         cyrus-sasl-gssapi         policycoreutils;             curl -Lf -o /tmp/Percona-Server-MongoDB-server.rpm http://repo.percona.com/psmdb-42/yum/${PSMDB_REPO}/8/RPMS/x86_64/percona-server-mongodb-server-${FULL_PERCONA_VERSION}.x86_64.rpm;     rpmkeys --checksig /tmp/Percona-Server-MongoDB-server.rpm;     rpm -iv /tmp/Percona-Server-MongoDB-server.rpm --nodeps;     rm -rf /tmp/Percona-Server-MongoDB-server.rpm;     dnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /data/db && mkdir -p /data/db;     chown -R 1001:0 /data/db
-# Sat, 16 Sep 2023 03:25:17 GMT
+# Thu, 21 Sep 2023 23:51:41 GMT
 RUN useradd -u 1001 -r -g 0 -m -s /sbin/nologin             -c "Default Application User" mongodb;     chmod g+rwx /var/log/mongo;     chown :0 /var/log/mongo
-# Sat, 16 Sep 2023 03:25:17 GMT
+# Thu, 21 Sep 2023 23:51:41 GMT
 COPY file:b7c621ae843e72f20dd7ef20e8c42b89234688ceed5018592c3e5bfa61048aad in /licenses/LICENSE.Dockerfile 
-# Sat, 16 Sep 2023 03:25:18 GMT
+# Thu, 21 Sep 2023 23:51:42 GMT
 RUN cp /usr/share/doc/percona-server-mongodb-server/LICENSE-Community.txt /licenses/LICENSE.Percona-Server-for-MongoDB
-# Sat, 16 Sep 2023 03:25:18 GMT
+# Thu, 21 Sep 2023 23:51:42 GMT
 ENV GOSU_VERSION=1.11
-# Sat, 16 Sep 2023 03:25:21 GMT
+# Thu, 21 Sep 2023 23:51:45 GMT
 RUN set -eux;     curl -Lf -o /usr/bin/gosu https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64;     curl -Lf -o /usr/bin/gosu.asc https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64.asc;         export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4;     gpg --batch --verify /usr/bin/gosu.asc /usr/bin/gosu;     rm -rf "$GNUPGHOME" /usr/bin/gosu.asc;         chmod +x /usr/bin/gosu;     curl -f -o /licenses/LICENSE.gosu https://raw.githubusercontent.com/tianon/gosu/${GOSU_VERSION}/LICENSE
-# Sat, 16 Sep 2023 03:25:23 GMT
+# Thu, 21 Sep 2023 23:51:47 GMT
 RUN set -ex;     curl -fSL https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/k8s-mongodb-initiator -o /usr/local/bin/k8s-mongodb-initiator;     curl -fSL  https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/mongodb-healthcheck -o /usr/local/bin/mongodb-healthcheck;     curl -fSL  https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/SHA256SUMS -o /tmp/SHA256SUMS;     curl -fSL https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js -o /js-yaml.js;     echo "$(grep 'k8s-mongodb-initiator' /tmp/SHA256SUMS | awk '{print $1}')" /usr/local/bin/k8s-mongodb-initiator | sha256sum -c -;     echo "$(grep 'mongodb-healthcheck' /tmp/SHA256SUMS   | awk '{print $1}')" /usr/local/bin/mongodb-healthcheck   | sha256sum -c -;     echo "45dc3dd03dc07a06705a2c2989b8c7f709013f04bd5386e3279d4e447f07ebd7  /js-yaml.js" | sha256sum -c -;     rm -f /tmp/SHA256SUMS;     chmod 0755 /usr/local/bin/k8s-mongodb-initiator /usr/local/bin/mongodb-healthcheck
-# Sat, 16 Sep 2023 03:25:23 GMT
+# Thu, 21 Sep 2023 23:51:47 GMT
 VOLUME [/data/db]
-# Sat, 16 Sep 2023 03:25:23 GMT
+# Thu, 21 Sep 2023 23:51:48 GMT
 COPY file:f695d42c4add7cde05638253f593b5a3f599ec240da8e578b8c6049c6e1672a9 in /entrypoint.sh 
-# Sat, 16 Sep 2023 03:25:23 GMT
+# Thu, 21 Sep 2023 23:51:48 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 16 Sep 2023 03:25:23 GMT
+# Thu, 21 Sep 2023 23:51:48 GMT
 EXPOSE 27017
-# Sat, 16 Sep 2023 03:25:23 GMT
+# Thu, 21 Sep 2023 23:51:48 GMT
 USER 1001
-# Sat, 16 Sep 2023 03:25:24 GMT
+# Thu, 21 Sep 2023 23:51:48 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:a593ca9036ed77a51fca10362e5bf79d470b50f344e2db99a940ae4406c7a06d`  
-		Last Modified: Sat, 16 Sep 2023 02:42:14 GMT  
-		Size: 88.9 MB (88919239 bytes)  
+	-	`sha256:f757f4fc3d201c5d7b9b19e3dbf0ddd78af45972be1834845cecc8fe6a2a5c27`  
+		Last Modified: Thu, 21 Sep 2023 23:25:04 GMT  
+		Size: 89.0 MB (88977617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:164f7a68b7030bc124d9cf34d07c76d54ec1e79572e31be3295e182a2e21c6d8`  
-		Last Modified: Sat, 16 Sep 2023 03:29:36 GMT  
-		Size: 3.8 MB (3787089 bytes)  
+	-	`sha256:807209c0683a4d5f3ba520355288f8af21bb206567626fddbe3059fbc831d20e`  
+		Last Modified: Thu, 21 Sep 2023 23:54:40 GMT  
+		Size: 3.8 MB (3793090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa491dd6268e0b275a5a4fcf806e2dc7223b0e14fd3acc0934b505750da44f01`  
-		Last Modified: Sat, 16 Sep 2023 03:29:49 GMT  
-		Size: 117.2 MB (117248300 bytes)  
+	-	`sha256:117f0a6ae3bd8753285a3ef752362337683573121676111e290af279bde42f87`  
+		Last Modified: Thu, 21 Sep 2023 23:54:54 GMT  
+		Size: 117.3 MB (117256737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e22a62adb6db81041318c87098dbeacedd0f94a5e386156a837ee8b447869d2`  
-		Last Modified: Sat, 16 Sep 2023 03:29:34 GMT  
-		Size: 1.7 KB (1678 bytes)  
+	-	`sha256:36192c58d3c3806843c72df51f68099517e15c520214296cc7de63e9f7bfc4af`  
+		Last Modified: Thu, 21 Sep 2023 23:54:39 GMT  
+		Size: 1.7 KB (1673 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aee62e609fee604f1c59eacedc4931822640150fe98cc28cb3fac909d072b0c5`  
-		Last Modified: Sat, 16 Sep 2023 03:29:32 GMT  
-		Size: 4.1 KB (4103 bytes)  
+	-	`sha256:3318d86d153c93a4441f8af8699a623000a53a88915643f08b0b33138098872f`  
+		Last Modified: Thu, 21 Sep 2023 23:54:38 GMT  
+		Size: 4.1 KB (4102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14fdbc03b279777b2c0b114065624c47425321bc690f66299718abd1411c62fb`  
-		Last Modified: Sat, 16 Sep 2023 03:29:32 GMT  
+	-	`sha256:cffdc9576a6a3c0442de100c2d3ca0249d2bde5ca1377a770df88c7629831939`  
+		Last Modified: Thu, 21 Sep 2023 23:54:38 GMT  
 		Size: 10.6 KB (10578 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fbc65965ba646c52e9491c7f1596407af88f353a61f5f24c817915c18fcde045`  
-		Last Modified: Sat, 16 Sep 2023 03:29:34 GMT  
-		Size: 914.5 KB (914549 bytes)  
+	-	`sha256:848f329f2e34276a857f96e6b22fcb83da4102a89508544dec9dfd3d7be73ec2`  
+		Last Modified: Thu, 21 Sep 2023 23:54:38 GMT  
+		Size: 914.6 KB (914552 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f40cca8a55dad9ae9da7a03390bf5f4237ab2e2c6865f3c960f626819021c7f`  
-		Last Modified: Sat, 16 Sep 2023 03:29:34 GMT  
-		Size: 8.2 MB (8151461 bytes)  
+	-	`sha256:e8d89db9d8185c68da5475ecb944a2001ff62d7cb6ad3c5d69b97d1ae2dd0477`  
+		Last Modified: Thu, 21 Sep 2023 23:54:40 GMT  
+		Size: 8.2 MB (8151455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5966d0fa83dea102b0f55fd20f6b988f830c5ea4837ca6697106dcb76144cef`  
-		Last Modified: Sat, 16 Sep 2023 03:29:33 GMT  
-		Size: 4.6 KB (4556 bytes)  
+	-	`sha256:148f378ef29898a3a3b6ff7eec618a4957efe5ada1d448ea6cc18a40f075b7f2`  
+		Last Modified: Thu, 21 Sep 2023 23:54:38 GMT  
+		Size: 4.6 KB (4557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `percona:psmdb-4.4`
 
 ```console
-$ docker pull percona@sha256:c1d21c2f4497ec62f77a284d5fee49e7c03bc0ecd598a1306a04ba45342889e9
+$ docker pull percona@sha256:787386afd5396393b71de21d05146bb999be90b2d562972f451232c9c5458451
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2470,112 +2470,112 @@ $ docker pull percona@sha256:c1d21c2f4497ec62f77a284d5fee49e7c03bc0ecd598a1306a0
 ### `percona:psmdb-4.4` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:1bcf9ad1246413083ef89c2982e1c9dd4dd25bb88dfc3862b339032ce6fef012
+$ docker pull percona@sha256:04bd621ade908e3cd454ac84eaf4ccac00dc655604240f3bb791b9a8bf0408f5
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.6 MB (237567526 bytes)**  
+-	Total Size: **237.6 MB (237643918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffd830a53b347b0eb40ecc8828a564514d3e27b9fa150eb185ceb72293a8ed4d`
+-	Image ID: `sha256:e4988479b39ddc77ad9984dc4c1d5bac4e1cd1df76c08b99ed440e8fbe1ea8ed`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Sat, 16 Sep 2023 02:40:43 GMT
-ADD file:b086fe56323a44d446277e97c9f63e00d66130dd7fbdae2f3b730542be66287d in / 
-# Sat, 16 Sep 2023 02:40:44 GMT
+# Thu, 21 Sep 2023 23:23:50 GMT
+ADD file:f1400f7c015d009a734ef72b857aca20fa0b646827d6d6c0fbd1ec44314f40f1 in / 
+# Thu, 21 Sep 2023 23:23:51 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Sep 2023 03:19:28 GMT
+# Thu, 21 Sep 2023 23:45:52 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Sat, 16 Sep 2023 03:20:57 GMT
+# Thu, 21 Sep 2023 23:47:21 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 99DB70FAE1D7CE227FB6488205B555B38483C65D 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     gpg --batch --export --armor 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1 > ${GNUPGHOME}/RPM-GPG-KEY-EPEL-8;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona ${GNUPGHOME}/RPM-GPG-KEY-centosofficial ${GNUPGHOME}/RPM-GPG-KEY-EPEL-8;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY
-# Sat, 16 Sep 2023 03:23:14 GMT
+# Thu, 21 Sep 2023 23:49:38 GMT
 ENV PSMDB_VERSION=4.4.22-21
-# Sat, 16 Sep 2023 03:23:15 GMT
+# Thu, 21 Sep 2023 23:49:38 GMT
 ENV OS_VER=el8
-# Sat, 16 Sep 2023 03:23:15 GMT
+# Thu, 21 Sep 2023 23:49:38 GMT
 ENV FULL_PERCONA_VERSION=4.4.22-21.el8
-# Sat, 16 Sep 2023 03:23:15 GMT
+# Thu, 21 Sep 2023 23:49:38 GMT
 ENV K8S_TOOLS_VERSION=0.5.0
-# Sat, 16 Sep 2023 03:23:15 GMT
+# Thu, 21 Sep 2023 23:49:38 GMT
 ENV PSMDB_REPO=release
-# Sat, 16 Sep 2023 03:24:06 GMT
+# Thu, 21 Sep 2023 23:50:29 GMT
 RUN set -ex;     percona-release enable psmdb-44 ${PSMDB_REPO};     dnf config-manager --enable ol8_u4_security_validation;     dnf -y install         percona-server-mongodb-mongos-${FULL_PERCONA_VERSION}         percona-server-mongodb-shell-${FULL_PERCONA_VERSION}         percona-server-mongodb-tools-${FULL_PERCONA_VERSION}         procps-ng         jq         tar         oniguruma         cyrus-sasl-gssapi         policycoreutils;             curl -Lf -o /tmp/Percona-Server-MongoDB-server.rpm http://repo.percona.com/psmdb-44/yum/${PSMDB_REPO}/8/RPMS/x86_64/percona-server-mongodb-server-${FULL_PERCONA_VERSION}.x86_64.rpm;     rpmkeys --checksig /tmp/Percona-Server-MongoDB-server.rpm;     rpm -iv /tmp/Percona-Server-MongoDB-server.rpm --nodeps;     rm -rf /tmp/Percona-Server-MongoDB-server.rpm;     dnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /data/db && mkdir -p /data/db;     chown -R 1001:0 /data/db
-# Sat, 16 Sep 2023 03:24:07 GMT
+# Thu, 21 Sep 2023 23:50:30 GMT
 RUN useradd -u 1001 -r -g 0 -m -s /sbin/nologin             -c "Default Application User" mongodb;     chmod g+rwx /var/log/mongo;     chown :0 /var/log/mongo
-# Sat, 16 Sep 2023 03:24:07 GMT
+# Thu, 21 Sep 2023 23:50:30 GMT
 COPY file:b7c621ae843e72f20dd7ef20e8c42b89234688ceed5018592c3e5bfa61048aad in /licenses/LICENSE.Dockerfile 
-# Sat, 16 Sep 2023 03:24:08 GMT
+# Thu, 21 Sep 2023 23:50:31 GMT
 RUN cp /usr/share/doc/percona-server-mongodb-server/LICENSE-Community.txt /licenses/LICENSE.Percona-Server-for-MongoDB
-# Sat, 16 Sep 2023 03:24:08 GMT
+# Thu, 21 Sep 2023 23:50:31 GMT
 ENV GOSU_VERSION=1.11
-# Sat, 16 Sep 2023 03:24:10 GMT
+# Thu, 21 Sep 2023 23:50:33 GMT
 RUN set -eux;     curl -Lf -o /usr/bin/gosu https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64;     curl -Lf -o /usr/bin/gosu.asc https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64.asc;         export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4;     gpg --batch --verify /usr/bin/gosu.asc /usr/bin/gosu;     rm -rf "$GNUPGHOME" /usr/bin/gosu.asc;         chmod +x /usr/bin/gosu;     curl -f -o /licenses/LICENSE.gosu https://raw.githubusercontent.com/tianon/gosu/${GOSU_VERSION}/LICENSE
-# Sat, 16 Sep 2023 03:24:12 GMT
+# Thu, 21 Sep 2023 23:50:35 GMT
 RUN set -ex;     curl -fSL https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/k8s-mongodb-initiator -o /usr/local/bin/k8s-mongodb-initiator;     curl -fSL  https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/mongodb-healthcheck -o /usr/local/bin/mongodb-healthcheck;     curl -fSL  https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/SHA256SUMS -o /tmp/SHA256SUMS;     echo "$(grep 'k8s-mongodb-initiator' /tmp/SHA256SUMS | awk '{print $1}')" /usr/local/bin/k8s-mongodb-initiator | sha256sum -c -;     echo "$(grep 'mongodb-healthcheck' /tmp/SHA256SUMS   | awk '{print $1}')" /usr/local/bin/mongodb-healthcheck   | sha256sum -c -;     rm -f /tmp/SHA256SUMS;         chmod 0755 /usr/local/bin/k8s-mongodb-initiator /usr/local/bin/mongodb-healthcheck
-# Sat, 16 Sep 2023 03:24:12 GMT
+# Thu, 21 Sep 2023 23:50:35 GMT
 VOLUME [/data/db]
-# Sat, 16 Sep 2023 03:24:13 GMT
+# Thu, 21 Sep 2023 23:50:36 GMT
 RUN set -ex;     curl -fSL https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js -o /js-yaml.js;     echo "45dc3dd03dc07a06705a2c2989b8c7f709013f04bd5386e3279d4e447f07ebd7  /js-yaml.js" | sha256sum -c -
-# Sat, 16 Sep 2023 03:24:13 GMT
+# Thu, 21 Sep 2023 23:50:36 GMT
 COPY file:2e691e8e3c29008da8a3c85bbe67de1e1e3fbb73ae7ec22473431d5a771341bf in /entrypoint.sh 
-# Sat, 16 Sep 2023 03:24:13 GMT
+# Thu, 21 Sep 2023 23:50:36 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 16 Sep 2023 03:24:13 GMT
+# Thu, 21 Sep 2023 23:50:36 GMT
 EXPOSE 27017
-# Sat, 16 Sep 2023 03:24:13 GMT
+# Thu, 21 Sep 2023 23:50:36 GMT
 USER 1001
-# Sat, 16 Sep 2023 03:24:13 GMT
+# Thu, 21 Sep 2023 23:50:36 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:a593ca9036ed77a51fca10362e5bf79d470b50f344e2db99a940ae4406c7a06d`  
-		Last Modified: Sat, 16 Sep 2023 02:42:14 GMT  
-		Size: 88.9 MB (88919239 bytes)  
+	-	`sha256:f757f4fc3d201c5d7b9b19e3dbf0ddd78af45972be1834845cecc8fe6a2a5c27`  
+		Last Modified: Thu, 21 Sep 2023 23:25:04 GMT  
+		Size: 89.0 MB (88977617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e05e3d36be41c8199349fc1fbf86a3bbc59e02a85af0a54a344e3be2526541d3`  
-		Last Modified: Sat, 16 Sep 2023 03:28:02 GMT  
-		Size: 3.8 MB (3787089 bytes)  
+	-	`sha256:6d4003a78974f8ca57a809c807ac3f02353b39f1aa83d1277ed078d6aa349848`  
+		Last Modified: Thu, 21 Sep 2023 23:53:09 GMT  
+		Size: 3.8 MB (3793031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d7e54ff162db57c7d144feb0389c3530d109205efec0388e9e9603987a4114e5`  
-		Last Modified: Sat, 16 Sep 2023 03:29:21 GMT  
-		Size: 135.8 MB (135774644 bytes)  
+	-	`sha256:5351c230a61fbf13d310589889e84bed99621d948cb582fe5b1b4e624b5e8840`  
+		Last Modified: Thu, 21 Sep 2023 23:54:28 GMT  
+		Size: 135.8 MB (135786712 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:786e05d09e9a80aa0579350a6bcdce8f577cdf3346f2ef91300445da278c14ab`  
-		Last Modified: Sat, 16 Sep 2023 03:29:02 GMT  
-		Size: 1.7 KB (1675 bytes)  
+	-	`sha256:78b53d0e8addad3c8c59a46ec4361eef3da6172814cdfb96c00c31a822b19548`  
+		Last Modified: Thu, 21 Sep 2023 23:54:10 GMT  
+		Size: 1.7 KB (1671 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b344a316644c660de39209499f7b9b81630b9cdc57adf3e12e30191ca84d1614`  
-		Last Modified: Sat, 16 Sep 2023 03:29:02 GMT  
+	-	`sha256:e3fc2508062741e16d8e9a4aaf761c12530fadfea638684dcff7eb425797ef38`  
+		Last Modified: Thu, 21 Sep 2023 23:54:10 GMT  
 		Size: 4.1 KB (4103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:646ac6209edb2c87239c2a843c162afe141cd5f92e79117dd9257b7141701b66`  
-		Last Modified: Sat, 16 Sep 2023 03:29:01 GMT  
-		Size: 10.6 KB (10578 bytes)  
+	-	`sha256:f38ce48d8f598efbeb60afd624f556458d3d1f47e05e799eb52b0ff406307d26`  
+		Last Modified: Thu, 21 Sep 2023 23:54:08 GMT  
+		Size: 10.6 KB (10579 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4959b31cd07fffcd1df50e0f737c260fd31a486286ac1309d19eb451cd378c1c`  
-		Last Modified: Sat, 16 Sep 2023 03:29:02 GMT  
-		Size: 914.5 KB (914550 bytes)  
+	-	`sha256:a89221d1b69a8e86ff46207dcafea51248d867f6567b7f5a87b32c25b8bf0dfb`  
+		Last Modified: Thu, 21 Sep 2023 23:54:08 GMT  
+		Size: 914.6 KB (914551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63dc0fb6c1ded9be533e4ecc8efff05c51a811b1cc845068bc350fd47505f3e3`  
-		Last Modified: Sat, 16 Sep 2023 03:29:02 GMT  
-		Size: 8.1 MB (8137885 bytes)  
+	-	`sha256:d61c580064a7b01717619497996882edc03f79376be6c827d056204f09ded6a6`  
+		Last Modified: Thu, 21 Sep 2023 23:54:09 GMT  
+		Size: 8.1 MB (8137892 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78d95bedb436b5533dbcf9477eec10a8baccb941e82c4eba3e6dbadf8c7a580a`  
-		Last Modified: Sat, 16 Sep 2023 03:29:00 GMT  
-		Size: 13.2 KB (13205 bytes)  
+	-	`sha256:80997276925aa978ed11583a7b268ff50ac143cdec278ec75f45e0502345aaa5`  
+		Last Modified: Thu, 21 Sep 2023 23:54:08 GMT  
+		Size: 13.2 KB (13204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed0cf6fa3ad13b2d92feb6417ab0e0beb7c49e436b46f6c1067b78731705ae12`  
-		Last Modified: Sat, 16 Sep 2023 03:29:01 GMT  
+	-	`sha256:872e665dfa85a94b1918333eda47bba579581c3b471733a7b184eab908ff8d4f`  
+		Last Modified: Thu, 21 Sep 2023 23:54:08 GMT  
 		Size: 4.6 KB (4558 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `percona:psmdb-4.4.22`
 
 ```console
-$ docker pull percona@sha256:c1d21c2f4497ec62f77a284d5fee49e7c03bc0ecd598a1306a04ba45342889e9
+$ docker pull percona@sha256:787386afd5396393b71de21d05146bb999be90b2d562972f451232c9c5458451
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2585,112 +2585,112 @@ $ docker pull percona@sha256:c1d21c2f4497ec62f77a284d5fee49e7c03bc0ecd598a1306a0
 ### `percona:psmdb-4.4.22` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:1bcf9ad1246413083ef89c2982e1c9dd4dd25bb88dfc3862b339032ce6fef012
+$ docker pull percona@sha256:04bd621ade908e3cd454ac84eaf4ccac00dc655604240f3bb791b9a8bf0408f5
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.6 MB (237567526 bytes)**  
+-	Total Size: **237.6 MB (237643918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffd830a53b347b0eb40ecc8828a564514d3e27b9fa150eb185ceb72293a8ed4d`
+-	Image ID: `sha256:e4988479b39ddc77ad9984dc4c1d5bac4e1cd1df76c08b99ed440e8fbe1ea8ed`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Sat, 16 Sep 2023 02:40:43 GMT
-ADD file:b086fe56323a44d446277e97c9f63e00d66130dd7fbdae2f3b730542be66287d in / 
-# Sat, 16 Sep 2023 02:40:44 GMT
+# Thu, 21 Sep 2023 23:23:50 GMT
+ADD file:f1400f7c015d009a734ef72b857aca20fa0b646827d6d6c0fbd1ec44314f40f1 in / 
+# Thu, 21 Sep 2023 23:23:51 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Sep 2023 03:19:28 GMT
+# Thu, 21 Sep 2023 23:45:52 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Sat, 16 Sep 2023 03:20:57 GMT
+# Thu, 21 Sep 2023 23:47:21 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 99DB70FAE1D7CE227FB6488205B555B38483C65D 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     gpg --batch --export --armor 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1 > ${GNUPGHOME}/RPM-GPG-KEY-EPEL-8;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona ${GNUPGHOME}/RPM-GPG-KEY-centosofficial ${GNUPGHOME}/RPM-GPG-KEY-EPEL-8;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY
-# Sat, 16 Sep 2023 03:23:14 GMT
+# Thu, 21 Sep 2023 23:49:38 GMT
 ENV PSMDB_VERSION=4.4.22-21
-# Sat, 16 Sep 2023 03:23:15 GMT
+# Thu, 21 Sep 2023 23:49:38 GMT
 ENV OS_VER=el8
-# Sat, 16 Sep 2023 03:23:15 GMT
+# Thu, 21 Sep 2023 23:49:38 GMT
 ENV FULL_PERCONA_VERSION=4.4.22-21.el8
-# Sat, 16 Sep 2023 03:23:15 GMT
+# Thu, 21 Sep 2023 23:49:38 GMT
 ENV K8S_TOOLS_VERSION=0.5.0
-# Sat, 16 Sep 2023 03:23:15 GMT
+# Thu, 21 Sep 2023 23:49:38 GMT
 ENV PSMDB_REPO=release
-# Sat, 16 Sep 2023 03:24:06 GMT
+# Thu, 21 Sep 2023 23:50:29 GMT
 RUN set -ex;     percona-release enable psmdb-44 ${PSMDB_REPO};     dnf config-manager --enable ol8_u4_security_validation;     dnf -y install         percona-server-mongodb-mongos-${FULL_PERCONA_VERSION}         percona-server-mongodb-shell-${FULL_PERCONA_VERSION}         percona-server-mongodb-tools-${FULL_PERCONA_VERSION}         procps-ng         jq         tar         oniguruma         cyrus-sasl-gssapi         policycoreutils;             curl -Lf -o /tmp/Percona-Server-MongoDB-server.rpm http://repo.percona.com/psmdb-44/yum/${PSMDB_REPO}/8/RPMS/x86_64/percona-server-mongodb-server-${FULL_PERCONA_VERSION}.x86_64.rpm;     rpmkeys --checksig /tmp/Percona-Server-MongoDB-server.rpm;     rpm -iv /tmp/Percona-Server-MongoDB-server.rpm --nodeps;     rm -rf /tmp/Percona-Server-MongoDB-server.rpm;     dnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /data/db && mkdir -p /data/db;     chown -R 1001:0 /data/db
-# Sat, 16 Sep 2023 03:24:07 GMT
+# Thu, 21 Sep 2023 23:50:30 GMT
 RUN useradd -u 1001 -r -g 0 -m -s /sbin/nologin             -c "Default Application User" mongodb;     chmod g+rwx /var/log/mongo;     chown :0 /var/log/mongo
-# Sat, 16 Sep 2023 03:24:07 GMT
+# Thu, 21 Sep 2023 23:50:30 GMT
 COPY file:b7c621ae843e72f20dd7ef20e8c42b89234688ceed5018592c3e5bfa61048aad in /licenses/LICENSE.Dockerfile 
-# Sat, 16 Sep 2023 03:24:08 GMT
+# Thu, 21 Sep 2023 23:50:31 GMT
 RUN cp /usr/share/doc/percona-server-mongodb-server/LICENSE-Community.txt /licenses/LICENSE.Percona-Server-for-MongoDB
-# Sat, 16 Sep 2023 03:24:08 GMT
+# Thu, 21 Sep 2023 23:50:31 GMT
 ENV GOSU_VERSION=1.11
-# Sat, 16 Sep 2023 03:24:10 GMT
+# Thu, 21 Sep 2023 23:50:33 GMT
 RUN set -eux;     curl -Lf -o /usr/bin/gosu https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64;     curl -Lf -o /usr/bin/gosu.asc https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64.asc;         export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4;     gpg --batch --verify /usr/bin/gosu.asc /usr/bin/gosu;     rm -rf "$GNUPGHOME" /usr/bin/gosu.asc;         chmod +x /usr/bin/gosu;     curl -f -o /licenses/LICENSE.gosu https://raw.githubusercontent.com/tianon/gosu/${GOSU_VERSION}/LICENSE
-# Sat, 16 Sep 2023 03:24:12 GMT
+# Thu, 21 Sep 2023 23:50:35 GMT
 RUN set -ex;     curl -fSL https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/k8s-mongodb-initiator -o /usr/local/bin/k8s-mongodb-initiator;     curl -fSL  https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/mongodb-healthcheck -o /usr/local/bin/mongodb-healthcheck;     curl -fSL  https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/SHA256SUMS -o /tmp/SHA256SUMS;     echo "$(grep 'k8s-mongodb-initiator' /tmp/SHA256SUMS | awk '{print $1}')" /usr/local/bin/k8s-mongodb-initiator | sha256sum -c -;     echo "$(grep 'mongodb-healthcheck' /tmp/SHA256SUMS   | awk '{print $1}')" /usr/local/bin/mongodb-healthcheck   | sha256sum -c -;     rm -f /tmp/SHA256SUMS;         chmod 0755 /usr/local/bin/k8s-mongodb-initiator /usr/local/bin/mongodb-healthcheck
-# Sat, 16 Sep 2023 03:24:12 GMT
+# Thu, 21 Sep 2023 23:50:35 GMT
 VOLUME [/data/db]
-# Sat, 16 Sep 2023 03:24:13 GMT
+# Thu, 21 Sep 2023 23:50:36 GMT
 RUN set -ex;     curl -fSL https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js -o /js-yaml.js;     echo "45dc3dd03dc07a06705a2c2989b8c7f709013f04bd5386e3279d4e447f07ebd7  /js-yaml.js" | sha256sum -c -
-# Sat, 16 Sep 2023 03:24:13 GMT
+# Thu, 21 Sep 2023 23:50:36 GMT
 COPY file:2e691e8e3c29008da8a3c85bbe67de1e1e3fbb73ae7ec22473431d5a771341bf in /entrypoint.sh 
-# Sat, 16 Sep 2023 03:24:13 GMT
+# Thu, 21 Sep 2023 23:50:36 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 16 Sep 2023 03:24:13 GMT
+# Thu, 21 Sep 2023 23:50:36 GMT
 EXPOSE 27017
-# Sat, 16 Sep 2023 03:24:13 GMT
+# Thu, 21 Sep 2023 23:50:36 GMT
 USER 1001
-# Sat, 16 Sep 2023 03:24:13 GMT
+# Thu, 21 Sep 2023 23:50:36 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:a593ca9036ed77a51fca10362e5bf79d470b50f344e2db99a940ae4406c7a06d`  
-		Last Modified: Sat, 16 Sep 2023 02:42:14 GMT  
-		Size: 88.9 MB (88919239 bytes)  
+	-	`sha256:f757f4fc3d201c5d7b9b19e3dbf0ddd78af45972be1834845cecc8fe6a2a5c27`  
+		Last Modified: Thu, 21 Sep 2023 23:25:04 GMT  
+		Size: 89.0 MB (88977617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e05e3d36be41c8199349fc1fbf86a3bbc59e02a85af0a54a344e3be2526541d3`  
-		Last Modified: Sat, 16 Sep 2023 03:28:02 GMT  
-		Size: 3.8 MB (3787089 bytes)  
+	-	`sha256:6d4003a78974f8ca57a809c807ac3f02353b39f1aa83d1277ed078d6aa349848`  
+		Last Modified: Thu, 21 Sep 2023 23:53:09 GMT  
+		Size: 3.8 MB (3793031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d7e54ff162db57c7d144feb0389c3530d109205efec0388e9e9603987a4114e5`  
-		Last Modified: Sat, 16 Sep 2023 03:29:21 GMT  
-		Size: 135.8 MB (135774644 bytes)  
+	-	`sha256:5351c230a61fbf13d310589889e84bed99621d948cb582fe5b1b4e624b5e8840`  
+		Last Modified: Thu, 21 Sep 2023 23:54:28 GMT  
+		Size: 135.8 MB (135786712 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:786e05d09e9a80aa0579350a6bcdce8f577cdf3346f2ef91300445da278c14ab`  
-		Last Modified: Sat, 16 Sep 2023 03:29:02 GMT  
-		Size: 1.7 KB (1675 bytes)  
+	-	`sha256:78b53d0e8addad3c8c59a46ec4361eef3da6172814cdfb96c00c31a822b19548`  
+		Last Modified: Thu, 21 Sep 2023 23:54:10 GMT  
+		Size: 1.7 KB (1671 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b344a316644c660de39209499f7b9b81630b9cdc57adf3e12e30191ca84d1614`  
-		Last Modified: Sat, 16 Sep 2023 03:29:02 GMT  
+	-	`sha256:e3fc2508062741e16d8e9a4aaf761c12530fadfea638684dcff7eb425797ef38`  
+		Last Modified: Thu, 21 Sep 2023 23:54:10 GMT  
 		Size: 4.1 KB (4103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:646ac6209edb2c87239c2a843c162afe141cd5f92e79117dd9257b7141701b66`  
-		Last Modified: Sat, 16 Sep 2023 03:29:01 GMT  
-		Size: 10.6 KB (10578 bytes)  
+	-	`sha256:f38ce48d8f598efbeb60afd624f556458d3d1f47e05e799eb52b0ff406307d26`  
+		Last Modified: Thu, 21 Sep 2023 23:54:08 GMT  
+		Size: 10.6 KB (10579 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4959b31cd07fffcd1df50e0f737c260fd31a486286ac1309d19eb451cd378c1c`  
-		Last Modified: Sat, 16 Sep 2023 03:29:02 GMT  
-		Size: 914.5 KB (914550 bytes)  
+	-	`sha256:a89221d1b69a8e86ff46207dcafea51248d867f6567b7f5a87b32c25b8bf0dfb`  
+		Last Modified: Thu, 21 Sep 2023 23:54:08 GMT  
+		Size: 914.6 KB (914551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63dc0fb6c1ded9be533e4ecc8efff05c51a811b1cc845068bc350fd47505f3e3`  
-		Last Modified: Sat, 16 Sep 2023 03:29:02 GMT  
-		Size: 8.1 MB (8137885 bytes)  
+	-	`sha256:d61c580064a7b01717619497996882edc03f79376be6c827d056204f09ded6a6`  
+		Last Modified: Thu, 21 Sep 2023 23:54:09 GMT  
+		Size: 8.1 MB (8137892 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78d95bedb436b5533dbcf9477eec10a8baccb941e82c4eba3e6dbadf8c7a580a`  
-		Last Modified: Sat, 16 Sep 2023 03:29:00 GMT  
-		Size: 13.2 KB (13205 bytes)  
+	-	`sha256:80997276925aa978ed11583a7b268ff50ac143cdec278ec75f45e0502345aaa5`  
+		Last Modified: Thu, 21 Sep 2023 23:54:08 GMT  
+		Size: 13.2 KB (13204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed0cf6fa3ad13b2d92feb6417ab0e0beb7c49e436b46f6c1067b78731705ae12`  
-		Last Modified: Sat, 16 Sep 2023 03:29:01 GMT  
+	-	`sha256:872e665dfa85a94b1918333eda47bba579581c3b471733a7b184eab908ff8d4f`  
+		Last Modified: Thu, 21 Sep 2023 23:54:08 GMT  
 		Size: 4.6 KB (4558 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `percona:psmdb-5.0`
 
 ```console
-$ docker pull percona@sha256:c4b4be632649a35476b3e34e510424fcfcedca19a094fc3ad679ae91425d519c
+$ docker pull percona@sha256:80faad07173c012639ad488cc39a898c46d475471628230cdba6734676f6544a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2700,112 +2700,112 @@ $ docker pull percona@sha256:c4b4be632649a35476b3e34e510424fcfcedca19a094fc3ad67
 ### `percona:psmdb-5.0` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:dfabd9b9e0153636145e8f264b6e813c2983b3a7da13e30fda0b290498eede46
+$ docker pull percona@sha256:45e90b9b33ede988dda0545791eaf540ccaf578bf90bfa571ec575fae87015d0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **250.2 MB (250190246 bytes)**  
+-	Total Size: **250.2 MB (250248787 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0db2202d3cd2e31e87fc46e378d2e70ba77f2767bd55407c46211ee146865762`
+-	Image ID: `sha256:cc412e71421c75f0eb54b188104d5de541b9f6f7ab5a4a5df1940cc620d47b65`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Sat, 16 Sep 2023 02:40:43 GMT
-ADD file:b086fe56323a44d446277e97c9f63e00d66130dd7fbdae2f3b730542be66287d in / 
-# Sat, 16 Sep 2023 02:40:44 GMT
+# Thu, 21 Sep 2023 23:23:50 GMT
+ADD file:f1400f7c015d009a734ef72b857aca20fa0b646827d6d6c0fbd1ec44314f40f1 in / 
+# Thu, 21 Sep 2023 23:23:51 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Sep 2023 03:19:28 GMT
+# Thu, 21 Sep 2023 23:45:52 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Sat, 16 Sep 2023 03:20:57 GMT
+# Thu, 21 Sep 2023 23:47:21 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 99DB70FAE1D7CE227FB6488205B555B38483C65D 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     gpg --batch --export --armor 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1 > ${GNUPGHOME}/RPM-GPG-KEY-EPEL-8;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona ${GNUPGHOME}/RPM-GPG-KEY-centosofficial ${GNUPGHOME}/RPM-GPG-KEY-EPEL-8;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY
-# Sat, 16 Sep 2023 03:22:04 GMT
+# Thu, 21 Sep 2023 23:48:28 GMT
 ENV PSMDB_VERSION=5.0.18-15
-# Sat, 16 Sep 2023 03:22:05 GMT
+# Thu, 21 Sep 2023 23:48:28 GMT
 ENV OS_VER=el8
-# Sat, 16 Sep 2023 03:22:05 GMT
+# Thu, 21 Sep 2023 23:48:28 GMT
 ENV FULL_PERCONA_VERSION=5.0.18-15.el8
-# Sat, 16 Sep 2023 03:22:05 GMT
+# Thu, 21 Sep 2023 23:48:28 GMT
 ENV K8S_TOOLS_VERSION=0.5.0
-# Sat, 16 Sep 2023 03:22:05 GMT
+# Thu, 21 Sep 2023 23:48:29 GMT
 ENV PSMDB_REPO=release
-# Sat, 16 Sep 2023 03:22:56 GMT
+# Thu, 21 Sep 2023 23:49:20 GMT
 RUN set -ex;     percona-release enable psmdb-50 ${PSMDB_REPO};     dnf config-manager --enable ol8_u4_security_validation;     dnf -y install         percona-server-mongodb-mongos-${FULL_PERCONA_VERSION}         percona-server-mongodb-shell-${FULL_PERCONA_VERSION}         percona-server-mongodb-tools-${FULL_PERCONA_VERSION}         procps-ng         jq         tar         oniguruma         cyrus-sasl-gssapi         policycoreutils;             curl -Lf -o /tmp/Percona-Server-MongoDB-server.rpm http://repo.percona.com/psmdb-50/yum/${PSMDB_REPO}/8/RPMS/x86_64/percona-server-mongodb-server-${FULL_PERCONA_VERSION}.x86_64.rpm;     rpmkeys --checksig /tmp/Percona-Server-MongoDB-server.rpm;     rpm -iv /tmp/Percona-Server-MongoDB-server.rpm --nodeps;     rm -rf /tmp/Percona-Server-MongoDB-server.rpm;     dnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /data/db && mkdir -p /data/db;     chown -R 1001:0 /data/db
-# Sat, 16 Sep 2023 03:22:58 GMT
+# Thu, 21 Sep 2023 23:49:21 GMT
 RUN useradd -u 1001 -r -g 0 -m -s /sbin/nologin             -c "Default Application User" mongodb;     chmod g+rwx /var/log/mongo;     chown :0 /var/log/mongo
-# Sat, 16 Sep 2023 03:22:58 GMT
+# Thu, 21 Sep 2023 23:49:21 GMT
 COPY file:b7c621ae843e72f20dd7ef20e8c42b89234688ceed5018592c3e5bfa61048aad in /licenses/LICENSE.Dockerfile 
-# Sat, 16 Sep 2023 03:22:58 GMT
+# Thu, 21 Sep 2023 23:49:22 GMT
 RUN cp /usr/share/doc/percona-server-mongodb-server/LICENSE-Community.txt /licenses/LICENSE.Percona-Server-for-MongoDB
-# Sat, 16 Sep 2023 03:22:58 GMT
+# Thu, 21 Sep 2023 23:49:22 GMT
 ENV GOSU_VERSION=1.11
-# Sat, 16 Sep 2023 03:23:01 GMT
+# Thu, 21 Sep 2023 23:49:25 GMT
 RUN set -eux;     curl -Lf -o /usr/bin/gosu https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64;     curl -Lf -o /usr/bin/gosu.asc https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64.asc;         export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4;     gpg --batch --verify /usr/bin/gosu.asc /usr/bin/gosu;     rm -rf "$GNUPGHOME" /usr/bin/gosu.asc;         chmod +x /usr/bin/gosu;     curl -f -o /licenses/LICENSE.gosu https://raw.githubusercontent.com/tianon/gosu/${GOSU_VERSION}/LICENSE
-# Sat, 16 Sep 2023 03:23:03 GMT
+# Thu, 21 Sep 2023 23:49:27 GMT
 RUN set -ex;     curl -fSL https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/k8s-mongodb-initiator -o /usr/local/bin/k8s-mongodb-initiator;     curl -fSL  https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/mongodb-healthcheck -o /usr/local/bin/mongodb-healthcheck;     curl -fSL  https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/SHA256SUMS -o /tmp/SHA256SUMS;     echo "$(grep 'k8s-mongodb-initiator' /tmp/SHA256SUMS | awk '{print $1}')" /usr/local/bin/k8s-mongodb-initiator | sha256sum -c -;     echo "$(grep 'mongodb-healthcheck' /tmp/SHA256SUMS   | awk '{print $1}')" /usr/local/bin/mongodb-healthcheck   | sha256sum -c -;     rm -f /tmp/SHA256SUMS;         chmod 0755 /usr/local/bin/k8s-mongodb-initiator /usr/local/bin/mongodb-healthcheck
-# Sat, 16 Sep 2023 03:23:03 GMT
+# Thu, 21 Sep 2023 23:49:27 GMT
 VOLUME [/data/db]
-# Sat, 16 Sep 2023 03:23:04 GMT
+# Thu, 21 Sep 2023 23:49:28 GMT
 RUN set -ex;     curl -fSL https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js -o /js-yaml.js;     echo "45dc3dd03dc07a06705a2c2989b8c7f709013f04bd5386e3279d4e447f07ebd7  /js-yaml.js" | sha256sum -c -
-# Sat, 16 Sep 2023 03:23:04 GMT
+# Thu, 21 Sep 2023 23:49:28 GMT
 COPY file:e6e9d8018241e8459aecdafe395233cbfaee0351829ed9f41c721972a859a6d6 in /entrypoint.sh 
-# Sat, 16 Sep 2023 03:23:04 GMT
+# Thu, 21 Sep 2023 23:49:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 16 Sep 2023 03:23:04 GMT
+# Thu, 21 Sep 2023 23:49:28 GMT
 EXPOSE 27017
-# Sat, 16 Sep 2023 03:23:04 GMT
+# Thu, 21 Sep 2023 23:49:28 GMT
 USER 1001
-# Sat, 16 Sep 2023 03:23:04 GMT
+# Thu, 21 Sep 2023 23:49:28 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:a593ca9036ed77a51fca10362e5bf79d470b50f344e2db99a940ae4406c7a06d`  
-		Last Modified: Sat, 16 Sep 2023 02:42:14 GMT  
-		Size: 88.9 MB (88919239 bytes)  
+	-	`sha256:f757f4fc3d201c5d7b9b19e3dbf0ddd78af45972be1834845cecc8fe6a2a5c27`  
+		Last Modified: Thu, 21 Sep 2023 23:25:04 GMT  
+		Size: 89.0 MB (88977617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e05e3d36be41c8199349fc1fbf86a3bbc59e02a85af0a54a344e3be2526541d3`  
-		Last Modified: Sat, 16 Sep 2023 03:28:02 GMT  
-		Size: 3.8 MB (3787089 bytes)  
+	-	`sha256:6d4003a78974f8ca57a809c807ac3f02353b39f1aa83d1277ed078d6aa349848`  
+		Last Modified: Thu, 21 Sep 2023 23:53:09 GMT  
+		Size: 3.8 MB (3793031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff70f2e66b57cd0fda23607ce78aac917d21d9ccf02db59bbc3083ac13dc8ded`  
-		Last Modified: Sat, 16 Sep 2023 03:28:51 GMT  
-		Size: 148.4 MB (148397360 bytes)  
+	-	`sha256:71463b6949c581a6489b97e1680e0743bb91e96a019d1f684fc9592691aa91f4`  
+		Last Modified: Thu, 21 Sep 2023 23:53:59 GMT  
+		Size: 148.4 MB (148391578 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35e221e65c1b87a74ec925de090de38d953e057f2228e68c677696b390ff79d6`  
-		Last Modified: Sat, 16 Sep 2023 03:28:32 GMT  
-		Size: 1.7 KB (1676 bytes)  
+	-	`sha256:1af179e9cadd6f75d656a8f600e75d1b6c0ac1fad33b58ca2e146e2ffea58be0`  
+		Last Modified: Thu, 21 Sep 2023 23:53:40 GMT  
+		Size: 1.7 KB (1677 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39c35f372f2a40219aa75920000dba5c283f7a8ea7851717d2472cc334a13391`  
-		Last Modified: Sat, 16 Sep 2023 03:28:32 GMT  
+	-	`sha256:16a34a8d4cf13f577f7604c95316720fd79ba0cac1370f92f353876ad971fd23`  
+		Last Modified: Thu, 21 Sep 2023 23:53:40 GMT  
 		Size: 4.1 KB (4103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a493c1a2444558b040b64a0d4e47c30b3175ad5410408a6e2695f3ff8f26eaf`  
-		Last Modified: Sat, 16 Sep 2023 03:28:30 GMT  
-		Size: 10.6 KB (10578 bytes)  
+	-	`sha256:3b07395f870b73b1e38dccb5b747c679aeadc369ff2f13682f2bc3b460616cb5`  
+		Last Modified: Thu, 21 Sep 2023 23:53:39 GMT  
+		Size: 10.6 KB (10579 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:990611eec7b00eff3536f2a6e6d4f312d6dac59dcc5777bd59882e723dce9540`  
-		Last Modified: Sat, 16 Sep 2023 03:28:31 GMT  
+	-	`sha256:132af750d0b57cc1a5b8eea9e1c1166934b402582732603d9663bcd6a7844804`  
+		Last Modified: Thu, 21 Sep 2023 23:53:39 GMT  
 		Size: 914.5 KB (914550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b10f0cbe2260d255154812730941b13cebc1e2ff07c61195d2e33ca76edf67dc`  
-		Last Modified: Sat, 16 Sep 2023 03:28:33 GMT  
-		Size: 8.1 MB (8137888 bytes)  
+	-	`sha256:33bd77209473907a86e1dc98bb2aff7aa697a59a780528c306c8f08cbe1df3dc`  
+		Last Modified: Thu, 21 Sep 2023 23:53:40 GMT  
+		Size: 8.1 MB (8137889 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93b63594111c753e86af94d423428ba1a87e420ff2a9e10428d5d9a717f07fd1`  
-		Last Modified: Sat, 16 Sep 2023 03:28:30 GMT  
+	-	`sha256:a463d116ab9c12cdbd4f0fd45203f155e4d8a0e413df54d0e655a8a282df4c03`  
+		Last Modified: Thu, 21 Sep 2023 23:53:39 GMT  
 		Size: 13.2 KB (13204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d46e9cfe9b3455df82eb3154b89667832270d12d681ca705a5fb07528aa5c3b4`  
-		Last Modified: Sat, 16 Sep 2023 03:28:30 GMT  
+	-	`sha256:17bbe05006ea5e8c363a56378a9a253110c210475f7bd091239db7b23c21e0f1`  
+		Last Modified: Thu, 21 Sep 2023 23:53:39 GMT  
 		Size: 4.6 KB (4559 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `percona:psmdb-5.0.18`
 
 ```console
-$ docker pull percona@sha256:c4b4be632649a35476b3e34e510424fcfcedca19a094fc3ad679ae91425d519c
+$ docker pull percona@sha256:80faad07173c012639ad488cc39a898c46d475471628230cdba6734676f6544a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2815,112 +2815,112 @@ $ docker pull percona@sha256:c4b4be632649a35476b3e34e510424fcfcedca19a094fc3ad67
 ### `percona:psmdb-5.0.18` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:dfabd9b9e0153636145e8f264b6e813c2983b3a7da13e30fda0b290498eede46
+$ docker pull percona@sha256:45e90b9b33ede988dda0545791eaf540ccaf578bf90bfa571ec575fae87015d0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **250.2 MB (250190246 bytes)**  
+-	Total Size: **250.2 MB (250248787 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0db2202d3cd2e31e87fc46e378d2e70ba77f2767bd55407c46211ee146865762`
+-	Image ID: `sha256:cc412e71421c75f0eb54b188104d5de541b9f6f7ab5a4a5df1940cc620d47b65`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Sat, 16 Sep 2023 02:40:43 GMT
-ADD file:b086fe56323a44d446277e97c9f63e00d66130dd7fbdae2f3b730542be66287d in / 
-# Sat, 16 Sep 2023 02:40:44 GMT
+# Thu, 21 Sep 2023 23:23:50 GMT
+ADD file:f1400f7c015d009a734ef72b857aca20fa0b646827d6d6c0fbd1ec44314f40f1 in / 
+# Thu, 21 Sep 2023 23:23:51 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Sep 2023 03:19:28 GMT
+# Thu, 21 Sep 2023 23:45:52 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Sat, 16 Sep 2023 03:20:57 GMT
+# Thu, 21 Sep 2023 23:47:21 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 99DB70FAE1D7CE227FB6488205B555B38483C65D 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     gpg --batch --export --armor 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1 > ${GNUPGHOME}/RPM-GPG-KEY-EPEL-8;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona ${GNUPGHOME}/RPM-GPG-KEY-centosofficial ${GNUPGHOME}/RPM-GPG-KEY-EPEL-8;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY
-# Sat, 16 Sep 2023 03:22:04 GMT
+# Thu, 21 Sep 2023 23:48:28 GMT
 ENV PSMDB_VERSION=5.0.18-15
-# Sat, 16 Sep 2023 03:22:05 GMT
+# Thu, 21 Sep 2023 23:48:28 GMT
 ENV OS_VER=el8
-# Sat, 16 Sep 2023 03:22:05 GMT
+# Thu, 21 Sep 2023 23:48:28 GMT
 ENV FULL_PERCONA_VERSION=5.0.18-15.el8
-# Sat, 16 Sep 2023 03:22:05 GMT
+# Thu, 21 Sep 2023 23:48:28 GMT
 ENV K8S_TOOLS_VERSION=0.5.0
-# Sat, 16 Sep 2023 03:22:05 GMT
+# Thu, 21 Sep 2023 23:48:29 GMT
 ENV PSMDB_REPO=release
-# Sat, 16 Sep 2023 03:22:56 GMT
+# Thu, 21 Sep 2023 23:49:20 GMT
 RUN set -ex;     percona-release enable psmdb-50 ${PSMDB_REPO};     dnf config-manager --enable ol8_u4_security_validation;     dnf -y install         percona-server-mongodb-mongos-${FULL_PERCONA_VERSION}         percona-server-mongodb-shell-${FULL_PERCONA_VERSION}         percona-server-mongodb-tools-${FULL_PERCONA_VERSION}         procps-ng         jq         tar         oniguruma         cyrus-sasl-gssapi         policycoreutils;             curl -Lf -o /tmp/Percona-Server-MongoDB-server.rpm http://repo.percona.com/psmdb-50/yum/${PSMDB_REPO}/8/RPMS/x86_64/percona-server-mongodb-server-${FULL_PERCONA_VERSION}.x86_64.rpm;     rpmkeys --checksig /tmp/Percona-Server-MongoDB-server.rpm;     rpm -iv /tmp/Percona-Server-MongoDB-server.rpm --nodeps;     rm -rf /tmp/Percona-Server-MongoDB-server.rpm;     dnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /data/db && mkdir -p /data/db;     chown -R 1001:0 /data/db
-# Sat, 16 Sep 2023 03:22:58 GMT
+# Thu, 21 Sep 2023 23:49:21 GMT
 RUN useradd -u 1001 -r -g 0 -m -s /sbin/nologin             -c "Default Application User" mongodb;     chmod g+rwx /var/log/mongo;     chown :0 /var/log/mongo
-# Sat, 16 Sep 2023 03:22:58 GMT
+# Thu, 21 Sep 2023 23:49:21 GMT
 COPY file:b7c621ae843e72f20dd7ef20e8c42b89234688ceed5018592c3e5bfa61048aad in /licenses/LICENSE.Dockerfile 
-# Sat, 16 Sep 2023 03:22:58 GMT
+# Thu, 21 Sep 2023 23:49:22 GMT
 RUN cp /usr/share/doc/percona-server-mongodb-server/LICENSE-Community.txt /licenses/LICENSE.Percona-Server-for-MongoDB
-# Sat, 16 Sep 2023 03:22:58 GMT
+# Thu, 21 Sep 2023 23:49:22 GMT
 ENV GOSU_VERSION=1.11
-# Sat, 16 Sep 2023 03:23:01 GMT
+# Thu, 21 Sep 2023 23:49:25 GMT
 RUN set -eux;     curl -Lf -o /usr/bin/gosu https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64;     curl -Lf -o /usr/bin/gosu.asc https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64.asc;         export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4;     gpg --batch --verify /usr/bin/gosu.asc /usr/bin/gosu;     rm -rf "$GNUPGHOME" /usr/bin/gosu.asc;         chmod +x /usr/bin/gosu;     curl -f -o /licenses/LICENSE.gosu https://raw.githubusercontent.com/tianon/gosu/${GOSU_VERSION}/LICENSE
-# Sat, 16 Sep 2023 03:23:03 GMT
+# Thu, 21 Sep 2023 23:49:27 GMT
 RUN set -ex;     curl -fSL https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/k8s-mongodb-initiator -o /usr/local/bin/k8s-mongodb-initiator;     curl -fSL  https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/mongodb-healthcheck -o /usr/local/bin/mongodb-healthcheck;     curl -fSL  https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/SHA256SUMS -o /tmp/SHA256SUMS;     echo "$(grep 'k8s-mongodb-initiator' /tmp/SHA256SUMS | awk '{print $1}')" /usr/local/bin/k8s-mongodb-initiator | sha256sum -c -;     echo "$(grep 'mongodb-healthcheck' /tmp/SHA256SUMS   | awk '{print $1}')" /usr/local/bin/mongodb-healthcheck   | sha256sum -c -;     rm -f /tmp/SHA256SUMS;         chmod 0755 /usr/local/bin/k8s-mongodb-initiator /usr/local/bin/mongodb-healthcheck
-# Sat, 16 Sep 2023 03:23:03 GMT
+# Thu, 21 Sep 2023 23:49:27 GMT
 VOLUME [/data/db]
-# Sat, 16 Sep 2023 03:23:04 GMT
+# Thu, 21 Sep 2023 23:49:28 GMT
 RUN set -ex;     curl -fSL https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js -o /js-yaml.js;     echo "45dc3dd03dc07a06705a2c2989b8c7f709013f04bd5386e3279d4e447f07ebd7  /js-yaml.js" | sha256sum -c -
-# Sat, 16 Sep 2023 03:23:04 GMT
+# Thu, 21 Sep 2023 23:49:28 GMT
 COPY file:e6e9d8018241e8459aecdafe395233cbfaee0351829ed9f41c721972a859a6d6 in /entrypoint.sh 
-# Sat, 16 Sep 2023 03:23:04 GMT
+# Thu, 21 Sep 2023 23:49:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 16 Sep 2023 03:23:04 GMT
+# Thu, 21 Sep 2023 23:49:28 GMT
 EXPOSE 27017
-# Sat, 16 Sep 2023 03:23:04 GMT
+# Thu, 21 Sep 2023 23:49:28 GMT
 USER 1001
-# Sat, 16 Sep 2023 03:23:04 GMT
+# Thu, 21 Sep 2023 23:49:28 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:a593ca9036ed77a51fca10362e5bf79d470b50f344e2db99a940ae4406c7a06d`  
-		Last Modified: Sat, 16 Sep 2023 02:42:14 GMT  
-		Size: 88.9 MB (88919239 bytes)  
+	-	`sha256:f757f4fc3d201c5d7b9b19e3dbf0ddd78af45972be1834845cecc8fe6a2a5c27`  
+		Last Modified: Thu, 21 Sep 2023 23:25:04 GMT  
+		Size: 89.0 MB (88977617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e05e3d36be41c8199349fc1fbf86a3bbc59e02a85af0a54a344e3be2526541d3`  
-		Last Modified: Sat, 16 Sep 2023 03:28:02 GMT  
-		Size: 3.8 MB (3787089 bytes)  
+	-	`sha256:6d4003a78974f8ca57a809c807ac3f02353b39f1aa83d1277ed078d6aa349848`  
+		Last Modified: Thu, 21 Sep 2023 23:53:09 GMT  
+		Size: 3.8 MB (3793031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff70f2e66b57cd0fda23607ce78aac917d21d9ccf02db59bbc3083ac13dc8ded`  
-		Last Modified: Sat, 16 Sep 2023 03:28:51 GMT  
-		Size: 148.4 MB (148397360 bytes)  
+	-	`sha256:71463b6949c581a6489b97e1680e0743bb91e96a019d1f684fc9592691aa91f4`  
+		Last Modified: Thu, 21 Sep 2023 23:53:59 GMT  
+		Size: 148.4 MB (148391578 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35e221e65c1b87a74ec925de090de38d953e057f2228e68c677696b390ff79d6`  
-		Last Modified: Sat, 16 Sep 2023 03:28:32 GMT  
-		Size: 1.7 KB (1676 bytes)  
+	-	`sha256:1af179e9cadd6f75d656a8f600e75d1b6c0ac1fad33b58ca2e146e2ffea58be0`  
+		Last Modified: Thu, 21 Sep 2023 23:53:40 GMT  
+		Size: 1.7 KB (1677 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39c35f372f2a40219aa75920000dba5c283f7a8ea7851717d2472cc334a13391`  
-		Last Modified: Sat, 16 Sep 2023 03:28:32 GMT  
+	-	`sha256:16a34a8d4cf13f577f7604c95316720fd79ba0cac1370f92f353876ad971fd23`  
+		Last Modified: Thu, 21 Sep 2023 23:53:40 GMT  
 		Size: 4.1 KB (4103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a493c1a2444558b040b64a0d4e47c30b3175ad5410408a6e2695f3ff8f26eaf`  
-		Last Modified: Sat, 16 Sep 2023 03:28:30 GMT  
-		Size: 10.6 KB (10578 bytes)  
+	-	`sha256:3b07395f870b73b1e38dccb5b747c679aeadc369ff2f13682f2bc3b460616cb5`  
+		Last Modified: Thu, 21 Sep 2023 23:53:39 GMT  
+		Size: 10.6 KB (10579 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:990611eec7b00eff3536f2a6e6d4f312d6dac59dcc5777bd59882e723dce9540`  
-		Last Modified: Sat, 16 Sep 2023 03:28:31 GMT  
+	-	`sha256:132af750d0b57cc1a5b8eea9e1c1166934b402582732603d9663bcd6a7844804`  
+		Last Modified: Thu, 21 Sep 2023 23:53:39 GMT  
 		Size: 914.5 KB (914550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b10f0cbe2260d255154812730941b13cebc1e2ff07c61195d2e33ca76edf67dc`  
-		Last Modified: Sat, 16 Sep 2023 03:28:33 GMT  
-		Size: 8.1 MB (8137888 bytes)  
+	-	`sha256:33bd77209473907a86e1dc98bb2aff7aa697a59a780528c306c8f08cbe1df3dc`  
+		Last Modified: Thu, 21 Sep 2023 23:53:40 GMT  
+		Size: 8.1 MB (8137889 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93b63594111c753e86af94d423428ba1a87e420ff2a9e10428d5d9a717f07fd1`  
-		Last Modified: Sat, 16 Sep 2023 03:28:30 GMT  
+	-	`sha256:a463d116ab9c12cdbd4f0fd45203f155e4d8a0e413df54d0e655a8a282df4c03`  
+		Last Modified: Thu, 21 Sep 2023 23:53:39 GMT  
 		Size: 13.2 KB (13204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d46e9cfe9b3455df82eb3154b89667832270d12d681ca705a5fb07528aa5c3b4`  
-		Last Modified: Sat, 16 Sep 2023 03:28:30 GMT  
+	-	`sha256:17bbe05006ea5e8c363a56378a9a253110c210475f7bd091239db7b23c21e0f1`  
+		Last Modified: Thu, 21 Sep 2023 23:53:39 GMT  
 		Size: 4.6 KB (4559 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `percona:psmdb-6.0`
 
 ```console
-$ docker pull percona@sha256:ded7b39fba731d32a7ab789b698ebbaac684344ad492c186ca079eba6581621d
+$ docker pull percona@sha256:779f56f0241198c94d7b33b155fc4f4b35b674ac1f1a29bab7e35d4f90f24d11
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2930,112 +2930,112 @@ $ docker pull percona@sha256:ded7b39fba731d32a7ab789b698ebbaac684344ad492c186ca0
 ### `percona:psmdb-6.0` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:41d8d8b0d3181637b5dd493b660980570f32df6d254e202eb16d3793823a4cbf
+$ docker pull percona@sha256:9460ec2fe947374e7ab883bdbe67080b362092d2defec271cd1e78f655258c46
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **273.6 MB (273606863 bytes)**  
+-	Total Size: **273.7 MB (273673805 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1beee0ffb717a17048ce1f17eedc2ec80d713f43b3ee9c39dbe9c6d5d5e94f31`
+-	Image ID: `sha256:c2b584ad11c9f9a60bff571d585fc7e98496c04edb4f9ce09297aa87edcd7914`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Sat, 16 Sep 2023 02:40:43 GMT
-ADD file:b086fe56323a44d446277e97c9f63e00d66130dd7fbdae2f3b730542be66287d in / 
-# Sat, 16 Sep 2023 02:40:44 GMT
+# Thu, 21 Sep 2023 23:23:50 GMT
+ADD file:f1400f7c015d009a734ef72b857aca20fa0b646827d6d6c0fbd1ec44314f40f1 in / 
+# Thu, 21 Sep 2023 23:23:51 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Sep 2023 03:19:28 GMT
+# Thu, 21 Sep 2023 23:45:52 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Sat, 16 Sep 2023 03:20:57 GMT
+# Thu, 21 Sep 2023 23:47:21 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 99DB70FAE1D7CE227FB6488205B555B38483C65D 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     gpg --batch --export --armor 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1 > ${GNUPGHOME}/RPM-GPG-KEY-EPEL-8;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona ${GNUPGHOME}/RPM-GPG-KEY-centosofficial ${GNUPGHOME}/RPM-GPG-KEY-EPEL-8;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY
-# Sat, 16 Sep 2023 03:20:57 GMT
+# Thu, 21 Sep 2023 23:47:21 GMT
 ENV PSMDB_VERSION=6.0.6-5
-# Sat, 16 Sep 2023 03:20:57 GMT
+# Thu, 21 Sep 2023 23:47:21 GMT
 ENV OS_VER=el8
-# Sat, 16 Sep 2023 03:20:57 GMT
+# Thu, 21 Sep 2023 23:47:21 GMT
 ENV FULL_PERCONA_VERSION=6.0.6-5.el8
-# Sat, 16 Sep 2023 03:20:57 GMT
+# Thu, 21 Sep 2023 23:47:21 GMT
 ENV K8S_TOOLS_VERSION=0.5.0
-# Sat, 16 Sep 2023 03:20:57 GMT
+# Thu, 21 Sep 2023 23:47:21 GMT
 ENV PSMDB_REPO=release
-# Sat, 16 Sep 2023 03:21:53 GMT
+# Thu, 21 Sep 2023 23:48:16 GMT
 RUN set -ex;     percona-release enable psmdb-60 ${PSMDB_REPO};     dnf config-manager --enable ol8_u4_security_validation;     dnf -y install         percona-server-mongodb-mongos-${FULL_PERCONA_VERSION}         percona-server-mongodb-tools-${FULL_PERCONA_VERSION}         percona-mongodb-mongosh         procps-ng         jq         tar         oniguruma         cyrus-sasl-gssapi         policycoreutils;             curl -Lf -o /tmp/Percona-Server-MongoDB-server.rpm http://repo.percona.com/psmdb-60/yum/${PSMDB_REPO}/8/RPMS/x86_64/percona-server-mongodb-server-${FULL_PERCONA_VERSION}.x86_64.rpm;     rpmkeys --checksig /tmp/Percona-Server-MongoDB-server.rpm;     rpm -iv /tmp/Percona-Server-MongoDB-server.rpm --nodeps;     rm -rf /tmp/Percona-Server-MongoDB-server.rpm;     dnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /data/db && mkdir -p /data/db;     chown -R 1001:0 /data/db
-# Sat, 16 Sep 2023 03:21:54 GMT
+# Thu, 21 Sep 2023 23:48:17 GMT
 RUN useradd -u 1001 -r -g 0 -m -s /sbin/nologin             -c "Default Application User" mongodb;     chmod g+rwx /var/log/mongo;     chown :0 /var/log/mongo
-# Sat, 16 Sep 2023 03:21:54 GMT
+# Thu, 21 Sep 2023 23:48:17 GMT
 COPY file:b7c621ae843e72f20dd7ef20e8c42b89234688ceed5018592c3e5bfa61048aad in /licenses/LICENSE.Dockerfile 
-# Sat, 16 Sep 2023 03:21:55 GMT
+# Thu, 21 Sep 2023 23:48:18 GMT
 RUN cp /usr/share/doc/percona-server-mongodb-server/LICENSE-Community.txt /licenses/LICENSE.Percona-Server-for-MongoDB
-# Sat, 16 Sep 2023 03:21:55 GMT
+# Thu, 21 Sep 2023 23:48:18 GMT
 ENV GOSU_VERSION=1.11
-# Sat, 16 Sep 2023 03:21:58 GMT
+# Thu, 21 Sep 2023 23:48:21 GMT
 RUN set -eux;     curl -Lf -o /usr/bin/gosu https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64;     curl -Lf -o /usr/bin/gosu.asc https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64.asc;         export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4;     gpg --batch --verify /usr/bin/gosu.asc /usr/bin/gosu;     rm -rf "$GNUPGHOME" /usr/bin/gosu.asc;         chmod +x /usr/bin/gosu;     curl -f -o /licenses/LICENSE.gosu https://raw.githubusercontent.com/tianon/gosu/${GOSU_VERSION}/LICENSE
-# Sat, 16 Sep 2023 03:22:00 GMT
+# Thu, 21 Sep 2023 23:48:23 GMT
 RUN set -ex;     curl -fSL https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/k8s-mongodb-initiator -o /usr/local/bin/k8s-mongodb-initiator;     curl -fSL  https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/mongodb-healthcheck -o /usr/local/bin/mongodb-healthcheck;     curl -fSL  https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/SHA256SUMS -o /tmp/SHA256SUMS;     echo "$(grep 'k8s-mongodb-initiator' /tmp/SHA256SUMS | awk '{print $1}')" /usr/local/bin/k8s-mongodb-initiator | sha256sum -c -;     echo "$(grep 'mongodb-healthcheck' /tmp/SHA256SUMS   | awk '{print $1}')" /usr/local/bin/mongodb-healthcheck   | sha256sum -c -;     rm -f /tmp/SHA256SUMS;         chmod 0755 /usr/local/bin/k8s-mongodb-initiator /usr/local/bin/mongodb-healthcheck
-# Sat, 16 Sep 2023 03:22:00 GMT
+# Thu, 21 Sep 2023 23:48:23 GMT
 VOLUME [/data/db]
-# Sat, 16 Sep 2023 03:22:01 GMT
+# Thu, 21 Sep 2023 23:48:24 GMT
 RUN set -ex;     curl -fSL https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js -o /js-yaml.js;     echo "45dc3dd03dc07a06705a2c2989b8c7f709013f04bd5386e3279d4e447f07ebd7  /js-yaml.js" | sha256sum -c -
-# Sat, 16 Sep 2023 03:22:01 GMT
+# Thu, 21 Sep 2023 23:48:24 GMT
 COPY file:7ab35f422fd362616b84e1dc71329cc9be05b7f834182c48bf98ceb92ee28956 in /entrypoint.sh 
-# Sat, 16 Sep 2023 03:22:01 GMT
+# Thu, 21 Sep 2023 23:48:24 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 16 Sep 2023 03:22:01 GMT
+# Thu, 21 Sep 2023 23:48:24 GMT
 EXPOSE 27017
-# Sat, 16 Sep 2023 03:22:01 GMT
+# Thu, 21 Sep 2023 23:48:24 GMT
 USER 1001
-# Sat, 16 Sep 2023 03:22:01 GMT
+# Thu, 21 Sep 2023 23:48:24 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:a593ca9036ed77a51fca10362e5bf79d470b50f344e2db99a940ae4406c7a06d`  
-		Last Modified: Sat, 16 Sep 2023 02:42:14 GMT  
-		Size: 88.9 MB (88919239 bytes)  
+	-	`sha256:f757f4fc3d201c5d7b9b19e3dbf0ddd78af45972be1834845cecc8fe6a2a5c27`  
+		Last Modified: Thu, 21 Sep 2023 23:25:04 GMT  
+		Size: 89.0 MB (88977617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e05e3d36be41c8199349fc1fbf86a3bbc59e02a85af0a54a344e3be2526541d3`  
-		Last Modified: Sat, 16 Sep 2023 03:28:02 GMT  
-		Size: 3.8 MB (3787089 bytes)  
+	-	`sha256:6d4003a78974f8ca57a809c807ac3f02353b39f1aa83d1277ed078d6aa349848`  
+		Last Modified: Thu, 21 Sep 2023 23:53:09 GMT  
+		Size: 3.8 MB (3793031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6797beff72ae7d4fb4042b0fbfa43229b899e9e2d03fe23f2c33c158ef4e3009`  
-		Last Modified: Sat, 16 Sep 2023 03:28:20 GMT  
-		Size: 171.8 MB (171813971 bytes)  
+	-	`sha256:67271601d1c396dcf71537ae7316bdee4c08e09fedebe34f880e986a480e41da`  
+		Last Modified: Thu, 21 Sep 2023 23:53:30 GMT  
+		Size: 171.8 MB (171816582 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8207b8bc10dbfe3dac16324aeaba242a3cf036c263bac1407a56cce0fd3cea7`  
-		Last Modified: Sat, 16 Sep 2023 03:27:58 GMT  
-		Size: 1.7 KB (1677 bytes)  
+	-	`sha256:293cf6bb069f99067905e9f6d1150ceb395b2a447dc567c857751706f35491d3`  
+		Last Modified: Thu, 21 Sep 2023 23:53:08 GMT  
+		Size: 1.7 KB (1678 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd461e079adf112c435382b24f3769a4e88bd43d411a092d5a5ff0b17d711426`  
-		Last Modified: Sat, 16 Sep 2023 03:27:59 GMT  
+	-	`sha256:5f6c49cbab4f13fe105e036b8ce3ab8d83fc87a847392b4075dbf8445273d4e7`  
+		Last Modified: Thu, 21 Sep 2023 23:53:08 GMT  
 		Size: 4.1 KB (4103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:606fca07bd5ba781da4820182065ffbe912bb07ec46f198af2d05b54142b6322`  
-		Last Modified: Sat, 16 Sep 2023 03:27:56 GMT  
-		Size: 10.6 KB (10579 bytes)  
+	-	`sha256:274d5759a381f0f45b82b807ed10bb647da9f14e8b67e5c12f1e7c276e2e64d5`  
+		Last Modified: Thu, 21 Sep 2023 23:53:06 GMT  
+		Size: 10.6 KB (10578 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49ed15729968bb75f0f6c602164192d3cfa61d331a1fb772c6dddec8e9dd7e0d`  
-		Last Modified: Sat, 16 Sep 2023 03:27:58 GMT  
-		Size: 914.5 KB (914546 bytes)  
+	-	`sha256:7a652f6040de3dae363e74292f548d1d7b5a88cad15ba012bf784172bc80efd9`  
+		Last Modified: Thu, 21 Sep 2023 23:53:06 GMT  
+		Size: 914.6 KB (914552 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9d8477fb148d790ed4faad835bad6bdfc63f96f71abdcda7233fec85a4dc8ec`  
-		Last Modified: Sat, 16 Sep 2023 03:27:58 GMT  
-		Size: 8.1 MB (8137889 bytes)  
+	-	`sha256:c97801fb186cc19ca4713c31fb527aea26bf936db8ae7e48d46e756acf317117`  
+		Last Modified: Thu, 21 Sep 2023 23:53:08 GMT  
+		Size: 8.1 MB (8137894 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e42a2ba3f90f7b01d71c4346365d6fc4ab229d0d1e131ffc45f47290d79d14d8`  
-		Last Modified: Sat, 16 Sep 2023 03:27:56 GMT  
+	-	`sha256:9cd665f6678bd4339b212f640456ea60a552e474c16389151eb3b1e8086cd752`  
+		Last Modified: Thu, 21 Sep 2023 23:53:06 GMT  
 		Size: 13.2 KB (13204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a4c139e1d69ec80bed495fe387d648484d98948fbb6117458956fa55df3c2e9`  
-		Last Modified: Sat, 16 Sep 2023 03:27:56 GMT  
+	-	`sha256:ef4680872eddcccabc78ab23a921cfac3575d779bc85b30b8115a648e6156df0`  
+		Last Modified: Thu, 21 Sep 2023 23:53:06 GMT  
 		Size: 4.6 KB (4566 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `percona:psmdb-6.0.6`
 
 ```console
-$ docker pull percona@sha256:ded7b39fba731d32a7ab789b698ebbaac684344ad492c186ca079eba6581621d
+$ docker pull percona@sha256:779f56f0241198c94d7b33b155fc4f4b35b674ac1f1a29bab7e35d4f90f24d11
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3045,104 +3045,104 @@ $ docker pull percona@sha256:ded7b39fba731d32a7ab789b698ebbaac684344ad492c186ca0
 ### `percona:psmdb-6.0.6` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:41d8d8b0d3181637b5dd493b660980570f32df6d254e202eb16d3793823a4cbf
+$ docker pull percona@sha256:9460ec2fe947374e7ab883bdbe67080b362092d2defec271cd1e78f655258c46
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **273.6 MB (273606863 bytes)**  
+-	Total Size: **273.7 MB (273673805 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1beee0ffb717a17048ce1f17eedc2ec80d713f43b3ee9c39dbe9c6d5d5e94f31`
+-	Image ID: `sha256:c2b584ad11c9f9a60bff571d585fc7e98496c04edb4f9ce09297aa87edcd7914`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Sat, 16 Sep 2023 02:40:43 GMT
-ADD file:b086fe56323a44d446277e97c9f63e00d66130dd7fbdae2f3b730542be66287d in / 
-# Sat, 16 Sep 2023 02:40:44 GMT
+# Thu, 21 Sep 2023 23:23:50 GMT
+ADD file:f1400f7c015d009a734ef72b857aca20fa0b646827d6d6c0fbd1ec44314f40f1 in / 
+# Thu, 21 Sep 2023 23:23:51 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Sep 2023 03:19:28 GMT
+# Thu, 21 Sep 2023 23:45:52 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Sat, 16 Sep 2023 03:20:57 GMT
+# Thu, 21 Sep 2023 23:47:21 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 99DB70FAE1D7CE227FB6488205B555B38483C65D 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     gpg --batch --export --armor 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1 > ${GNUPGHOME}/RPM-GPG-KEY-EPEL-8;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona ${GNUPGHOME}/RPM-GPG-KEY-centosofficial ${GNUPGHOME}/RPM-GPG-KEY-EPEL-8;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY
-# Sat, 16 Sep 2023 03:20:57 GMT
+# Thu, 21 Sep 2023 23:47:21 GMT
 ENV PSMDB_VERSION=6.0.6-5
-# Sat, 16 Sep 2023 03:20:57 GMT
+# Thu, 21 Sep 2023 23:47:21 GMT
 ENV OS_VER=el8
-# Sat, 16 Sep 2023 03:20:57 GMT
+# Thu, 21 Sep 2023 23:47:21 GMT
 ENV FULL_PERCONA_VERSION=6.0.6-5.el8
-# Sat, 16 Sep 2023 03:20:57 GMT
+# Thu, 21 Sep 2023 23:47:21 GMT
 ENV K8S_TOOLS_VERSION=0.5.0
-# Sat, 16 Sep 2023 03:20:57 GMT
+# Thu, 21 Sep 2023 23:47:21 GMT
 ENV PSMDB_REPO=release
-# Sat, 16 Sep 2023 03:21:53 GMT
+# Thu, 21 Sep 2023 23:48:16 GMT
 RUN set -ex;     percona-release enable psmdb-60 ${PSMDB_REPO};     dnf config-manager --enable ol8_u4_security_validation;     dnf -y install         percona-server-mongodb-mongos-${FULL_PERCONA_VERSION}         percona-server-mongodb-tools-${FULL_PERCONA_VERSION}         percona-mongodb-mongosh         procps-ng         jq         tar         oniguruma         cyrus-sasl-gssapi         policycoreutils;             curl -Lf -o /tmp/Percona-Server-MongoDB-server.rpm http://repo.percona.com/psmdb-60/yum/${PSMDB_REPO}/8/RPMS/x86_64/percona-server-mongodb-server-${FULL_PERCONA_VERSION}.x86_64.rpm;     rpmkeys --checksig /tmp/Percona-Server-MongoDB-server.rpm;     rpm -iv /tmp/Percona-Server-MongoDB-server.rpm --nodeps;     rm -rf /tmp/Percona-Server-MongoDB-server.rpm;     dnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /data/db && mkdir -p /data/db;     chown -R 1001:0 /data/db
-# Sat, 16 Sep 2023 03:21:54 GMT
+# Thu, 21 Sep 2023 23:48:17 GMT
 RUN useradd -u 1001 -r -g 0 -m -s /sbin/nologin             -c "Default Application User" mongodb;     chmod g+rwx /var/log/mongo;     chown :0 /var/log/mongo
-# Sat, 16 Sep 2023 03:21:54 GMT
+# Thu, 21 Sep 2023 23:48:17 GMT
 COPY file:b7c621ae843e72f20dd7ef20e8c42b89234688ceed5018592c3e5bfa61048aad in /licenses/LICENSE.Dockerfile 
-# Sat, 16 Sep 2023 03:21:55 GMT
+# Thu, 21 Sep 2023 23:48:18 GMT
 RUN cp /usr/share/doc/percona-server-mongodb-server/LICENSE-Community.txt /licenses/LICENSE.Percona-Server-for-MongoDB
-# Sat, 16 Sep 2023 03:21:55 GMT
+# Thu, 21 Sep 2023 23:48:18 GMT
 ENV GOSU_VERSION=1.11
-# Sat, 16 Sep 2023 03:21:58 GMT
+# Thu, 21 Sep 2023 23:48:21 GMT
 RUN set -eux;     curl -Lf -o /usr/bin/gosu https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64;     curl -Lf -o /usr/bin/gosu.asc https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64.asc;         export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4;     gpg --batch --verify /usr/bin/gosu.asc /usr/bin/gosu;     rm -rf "$GNUPGHOME" /usr/bin/gosu.asc;         chmod +x /usr/bin/gosu;     curl -f -o /licenses/LICENSE.gosu https://raw.githubusercontent.com/tianon/gosu/${GOSU_VERSION}/LICENSE
-# Sat, 16 Sep 2023 03:22:00 GMT
+# Thu, 21 Sep 2023 23:48:23 GMT
 RUN set -ex;     curl -fSL https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/k8s-mongodb-initiator -o /usr/local/bin/k8s-mongodb-initiator;     curl -fSL  https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/mongodb-healthcheck -o /usr/local/bin/mongodb-healthcheck;     curl -fSL  https://github.com/percona/mongodb-orchestration-tools/releases/download/${K8S_TOOLS_VERSION}/SHA256SUMS -o /tmp/SHA256SUMS;     echo "$(grep 'k8s-mongodb-initiator' /tmp/SHA256SUMS | awk '{print $1}')" /usr/local/bin/k8s-mongodb-initiator | sha256sum -c -;     echo "$(grep 'mongodb-healthcheck' /tmp/SHA256SUMS   | awk '{print $1}')" /usr/local/bin/mongodb-healthcheck   | sha256sum -c -;     rm -f /tmp/SHA256SUMS;         chmod 0755 /usr/local/bin/k8s-mongodb-initiator /usr/local/bin/mongodb-healthcheck
-# Sat, 16 Sep 2023 03:22:00 GMT
+# Thu, 21 Sep 2023 23:48:23 GMT
 VOLUME [/data/db]
-# Sat, 16 Sep 2023 03:22:01 GMT
+# Thu, 21 Sep 2023 23:48:24 GMT
 RUN set -ex;     curl -fSL https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js -o /js-yaml.js;     echo "45dc3dd03dc07a06705a2c2989b8c7f709013f04bd5386e3279d4e447f07ebd7  /js-yaml.js" | sha256sum -c -
-# Sat, 16 Sep 2023 03:22:01 GMT
+# Thu, 21 Sep 2023 23:48:24 GMT
 COPY file:7ab35f422fd362616b84e1dc71329cc9be05b7f834182c48bf98ceb92ee28956 in /entrypoint.sh 
-# Sat, 16 Sep 2023 03:22:01 GMT
+# Thu, 21 Sep 2023 23:48:24 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 16 Sep 2023 03:22:01 GMT
+# Thu, 21 Sep 2023 23:48:24 GMT
 EXPOSE 27017
-# Sat, 16 Sep 2023 03:22:01 GMT
+# Thu, 21 Sep 2023 23:48:24 GMT
 USER 1001
-# Sat, 16 Sep 2023 03:22:01 GMT
+# Thu, 21 Sep 2023 23:48:24 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:a593ca9036ed77a51fca10362e5bf79d470b50f344e2db99a940ae4406c7a06d`  
-		Last Modified: Sat, 16 Sep 2023 02:42:14 GMT  
-		Size: 88.9 MB (88919239 bytes)  
+	-	`sha256:f757f4fc3d201c5d7b9b19e3dbf0ddd78af45972be1834845cecc8fe6a2a5c27`  
+		Last Modified: Thu, 21 Sep 2023 23:25:04 GMT  
+		Size: 89.0 MB (88977617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e05e3d36be41c8199349fc1fbf86a3bbc59e02a85af0a54a344e3be2526541d3`  
-		Last Modified: Sat, 16 Sep 2023 03:28:02 GMT  
-		Size: 3.8 MB (3787089 bytes)  
+	-	`sha256:6d4003a78974f8ca57a809c807ac3f02353b39f1aa83d1277ed078d6aa349848`  
+		Last Modified: Thu, 21 Sep 2023 23:53:09 GMT  
+		Size: 3.8 MB (3793031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6797beff72ae7d4fb4042b0fbfa43229b899e9e2d03fe23f2c33c158ef4e3009`  
-		Last Modified: Sat, 16 Sep 2023 03:28:20 GMT  
-		Size: 171.8 MB (171813971 bytes)  
+	-	`sha256:67271601d1c396dcf71537ae7316bdee4c08e09fedebe34f880e986a480e41da`  
+		Last Modified: Thu, 21 Sep 2023 23:53:30 GMT  
+		Size: 171.8 MB (171816582 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8207b8bc10dbfe3dac16324aeaba242a3cf036c263bac1407a56cce0fd3cea7`  
-		Last Modified: Sat, 16 Sep 2023 03:27:58 GMT  
-		Size: 1.7 KB (1677 bytes)  
+	-	`sha256:293cf6bb069f99067905e9f6d1150ceb395b2a447dc567c857751706f35491d3`  
+		Last Modified: Thu, 21 Sep 2023 23:53:08 GMT  
+		Size: 1.7 KB (1678 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd461e079adf112c435382b24f3769a4e88bd43d411a092d5a5ff0b17d711426`  
-		Last Modified: Sat, 16 Sep 2023 03:27:59 GMT  
+	-	`sha256:5f6c49cbab4f13fe105e036b8ce3ab8d83fc87a847392b4075dbf8445273d4e7`  
+		Last Modified: Thu, 21 Sep 2023 23:53:08 GMT  
 		Size: 4.1 KB (4103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:606fca07bd5ba781da4820182065ffbe912bb07ec46f198af2d05b54142b6322`  
-		Last Modified: Sat, 16 Sep 2023 03:27:56 GMT  
-		Size: 10.6 KB (10579 bytes)  
+	-	`sha256:274d5759a381f0f45b82b807ed10bb647da9f14e8b67e5c12f1e7c276e2e64d5`  
+		Last Modified: Thu, 21 Sep 2023 23:53:06 GMT  
+		Size: 10.6 KB (10578 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49ed15729968bb75f0f6c602164192d3cfa61d331a1fb772c6dddec8e9dd7e0d`  
-		Last Modified: Sat, 16 Sep 2023 03:27:58 GMT  
-		Size: 914.5 KB (914546 bytes)  
+	-	`sha256:7a652f6040de3dae363e74292f548d1d7b5a88cad15ba012bf784172bc80efd9`  
+		Last Modified: Thu, 21 Sep 2023 23:53:06 GMT  
+		Size: 914.6 KB (914552 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9d8477fb148d790ed4faad835bad6bdfc63f96f71abdcda7233fec85a4dc8ec`  
-		Last Modified: Sat, 16 Sep 2023 03:27:58 GMT  
-		Size: 8.1 MB (8137889 bytes)  
+	-	`sha256:c97801fb186cc19ca4713c31fb527aea26bf936db8ae7e48d46e756acf317117`  
+		Last Modified: Thu, 21 Sep 2023 23:53:08 GMT  
+		Size: 8.1 MB (8137894 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e42a2ba3f90f7b01d71c4346365d6fc4ab229d0d1e131ffc45f47290d79d14d8`  
-		Last Modified: Sat, 16 Sep 2023 03:27:56 GMT  
+	-	`sha256:9cd665f6678bd4339b212f640456ea60a552e474c16389151eb3b1e8086cd752`  
+		Last Modified: Thu, 21 Sep 2023 23:53:06 GMT  
 		Size: 13.2 KB (13204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a4c139e1d69ec80bed495fe387d648484d98948fbb6117458956fa55df3c2e9`  
-		Last Modified: Sat, 16 Sep 2023 03:27:56 GMT  
+	-	`sha256:ef4680872eddcccabc78ab23a921cfac3575d779bc85b30b8115a648e6156df0`  
+		Last Modified: Thu, 21 Sep 2023 23:53:06 GMT  
 		Size: 4.6 KB (4566 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
