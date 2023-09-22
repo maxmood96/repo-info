@@ -113,6 +113,41 @@
 -	[`amazoncorretto:20.0.2-alpine3.16`](#amazoncorretto2002-alpine316)
 -	[`amazoncorretto:20.0.2-alpine3.17`](#amazoncorretto2002-alpine317)
 -	[`amazoncorretto:20.0.2-alpine3.18`](#amazoncorretto2002-alpine318)
+-	[`amazoncorretto:21`](#amazoncorretto21)
+-	[`amazoncorretto:21-al2-full`](#amazoncorretto21-al2-full)
+-	[`amazoncorretto:21-al2-generic`](#amazoncorretto21-al2-generic)
+-	[`amazoncorretto:21-al2-generic-jdk`](#amazoncorretto21-al2-generic-jdk)
+-	[`amazoncorretto:21-al2-jdk`](#amazoncorretto21-al2-jdk)
+-	[`amazoncorretto:21-al2023`](#amazoncorretto21-al2023)
+-	[`amazoncorretto:21-al2023-headful`](#amazoncorretto21-al2023-headful)
+-	[`amazoncorretto:21-al2023-headless`](#amazoncorretto21-al2023-headless)
+-	[`amazoncorretto:21-al2023-jdk`](#amazoncorretto21-al2023-jdk)
+-	[`amazoncorretto:21-alpine`](#amazoncorretto21-alpine)
+-	[`amazoncorretto:21-alpine-full`](#amazoncorretto21-alpine-full)
+-	[`amazoncorretto:21-alpine-jdk`](#amazoncorretto21-alpine-jdk)
+-	[`amazoncorretto:21-alpine3.15`](#amazoncorretto21-alpine315)
+-	[`amazoncorretto:21-alpine3.15-full`](#amazoncorretto21-alpine315-full)
+-	[`amazoncorretto:21-alpine3.15-jdk`](#amazoncorretto21-alpine315-jdk)
+-	[`amazoncorretto:21-alpine3.16`](#amazoncorretto21-alpine316)
+-	[`amazoncorretto:21-alpine3.16-full`](#amazoncorretto21-alpine316-full)
+-	[`amazoncorretto:21-alpine3.16-jdk`](#amazoncorretto21-alpine316-jdk)
+-	[`amazoncorretto:21-alpine3.17`](#amazoncorretto21-alpine317)
+-	[`amazoncorretto:21-alpine3.17-full`](#amazoncorretto21-alpine317-full)
+-	[`amazoncorretto:21-alpine3.17-jdk`](#amazoncorretto21-alpine317-jdk)
+-	[`amazoncorretto:21-alpine3.18`](#amazoncorretto21-alpine318)
+-	[`amazoncorretto:21-alpine3.18-full`](#amazoncorretto21-alpine318-full)
+-	[`amazoncorretto:21-alpine3.18-jdk`](#amazoncorretto21-alpine318-jdk)
+-	[`amazoncorretto:21.0.0`](#amazoncorretto2100)
+-	[`amazoncorretto:21.0.0-al2`](#amazoncorretto2100-al2)
+-	[`amazoncorretto:21.0.0-al2-generic`](#amazoncorretto2100-al2-generic)
+-	[`amazoncorretto:21.0.0-al2023`](#amazoncorretto2100-al2023)
+-	[`amazoncorretto:21.0.0-al2023-headful`](#amazoncorretto2100-al2023-headful)
+-	[`amazoncorretto:21.0.0-al2023-headless`](#amazoncorretto2100-al2023-headless)
+-	[`amazoncorretto:21.0.0-alpine`](#amazoncorretto2100-alpine)
+-	[`amazoncorretto:21.0.0-alpine3.15`](#amazoncorretto2100-alpine315)
+-	[`amazoncorretto:21.0.0-alpine3.16`](#amazoncorretto2100-alpine316)
+-	[`amazoncorretto:21.0.0-alpine3.17`](#amazoncorretto2100-alpine317)
+-	[`amazoncorretto:21.0.0-alpine3.18`](#amazoncorretto2100-alpine318)
 -	[`amazoncorretto:8`](#amazoncorretto8)
 -	[`amazoncorretto:8-al2-full`](#amazoncorretto8-al2-full)
 -	[`amazoncorretto:8-al2-generic`](#amazoncorretto8-al2-generic)
@@ -10308,6 +10343,146 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 		Last Modified: Fri, 08 Sep 2023 22:01:36 GMT  
 		Size: 152.7 MB (152662813 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `amazoncorretto:21`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-al2-full`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-al2-generic`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-al2-generic-jdk`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-al2-jdk`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-al2023`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-al2023-headful`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-al2023-headless`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-al2023-jdk`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-alpine`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-alpine-full`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-alpine-jdk`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-alpine3.15`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-alpine3.15-full`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-alpine3.15-jdk`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-alpine3.16`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-alpine3.16-full`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-alpine3.16-jdk`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-alpine3.17`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-alpine3.17-full`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-alpine3.17-jdk`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-alpine3.18`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-alpine3.18-full`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-alpine3.18-jdk`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21.0.0`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21.0.0-al2`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21.0.0-al2-generic`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21.0.0-al2023`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21.0.0-al2023-headful`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21.0.0-al2023-headless`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21.0.0-alpine`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21.0.0-alpine3.15`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21.0.0-alpine3.16`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21.0.0-alpine3.17`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21.0.0-alpine3.18`
+
+**does not exist** (yet?)
 
 ## `amazoncorretto:8`
 
