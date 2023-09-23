@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:647e1cb46a17d37cc8fc079d7d1a1fb419d727a781525c727fc517b015e3f497`
-- Created: `2023-09-07T05:10:01.667761135Z`
+- Image ID: `sha256:b41808b06e1d231adbd9cd5a2ad5c3ea83acfaa60de8208f970a4269e6c32e26`
+- Created: `2023-09-20T20:40:47.595644272Z`
 - Virtual Size: ~ 1.06 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -3524,14 +3524,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libunistring/1.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libunistring/1.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libwebp=1.2.4-0.2`
+### `dpkg` source package: `libwebp=1.2.4-0.2+deb12u1`
 
 Binary Packages:
 
-- `libwebp-dev:amd64=1.2.4-0.2`
-- `libwebp7:amd64=1.2.4-0.2`
-- `libwebpdemux2:amd64=1.2.4-0.2`
-- `libwebpmux3:amd64=1.2.4-0.2`
+- `libwebp-dev:amd64=1.2.4-0.2+deb12u1`
+- `libwebp7:amd64=1.2.4-0.2+deb12u1`
+- `libwebpdemux2:amd64=1.2.4-0.2+deb12u1`
+- `libwebpmux3:amd64=1.2.4-0.2+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libwebp-dev/copyright`, `/usr/share/doc/libwebp7/copyright`, `/usr/share/doc/libwebpdemux2/copyright`, `/usr/share/doc/libwebpmux3/copyright`)
 
@@ -3540,18 +3540,18 @@ Licenses: (parsed from: `/usr/share/doc/libwebp-dev/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libwebp=1.2.4-0.2
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_1.2.4-0.2.dsc' libwebp_1.2.4-0.2.dsc 2531 SHA256:a5138070f42170f20c6b6daabc56716c5f7c3973a904ac37978cfe19f3d7e1df
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_1.2.4.orig.tar.gz' libwebp_1.2.4.orig.tar.gz 4141376 SHA256:7bf5a8a28cc69bcfa8cb214f2c3095703c6b73ac5fba4d5480c205331d9494df
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_1.2.4.orig.tar.gz.asc' libwebp_1.2.4.orig.tar.gz.asc 833 SHA256:4c546cf7f757a70d8803ab850e69d28e7ce06e66dbee003fd3ede7346543851a
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_1.2.4-0.2.debian.tar.xz' libwebp_1.2.4-0.2.debian.tar.xz 8064 SHA256:e8bd944079de9d9e00fe210e28c987f60d96f8210f089fe4d56ef43f4570c933
+$ apt-get source -qq --print-uris libwebp=1.2.4-0.2+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/libw/libwebp/libwebp_1.2.4-0.2%2bdeb12u1.dsc' libwebp_1.2.4-0.2+deb12u1.dsc 2411 SHA256:d9ed0b59e2010f255c28d0869fd15b31f9b08aed757bfc91862d43aa9ec1aa99
+'http://deb.debian.org/debian-security/pool/updates/main/libw/libwebp/libwebp_1.2.4.orig.tar.gz' libwebp_1.2.4.orig.tar.gz 4141376 SHA256:7bf5a8a28cc69bcfa8cb214f2c3095703c6b73ac5fba4d5480c205331d9494df
+'http://deb.debian.org/debian-security/pool/updates/main/libw/libwebp/libwebp_1.2.4.orig.tar.gz.asc' libwebp_1.2.4.orig.tar.gz.asc 833 SHA256:4c546cf7f757a70d8803ab850e69d28e7ce06e66dbee003fd3ede7346543851a
+'http://deb.debian.org/debian-security/pool/updates/main/libw/libwebp/libwebp_1.2.4-0.2%2bdeb12u1.debian.tar.xz' libwebp_1.2.4-0.2+deb12u1.debian.tar.xz 12028 SHA256:69cdba4dfe2e1b34d55fa80c1b29c31cacd40dd183812d6bcca7e508a2f7afcd
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libwebp/1.2.4-0.2/ (for browsing the source)
-- https://sources.debian.net/src/libwebp/1.2.4-0.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libwebp/1.2.4-0.2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libwebp/1.2.4-0.2+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/libwebp/1.2.4-0.2+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libwebp/1.2.4-0.2+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libwmf=0.2.12-5.1`
 
@@ -3938,11 +3938,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.38-4`
+### `dpkg` source package: `linux=6.1.52-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.38-4`
+- `linux-libc-dev:amd64=6.1.52-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3957,17 +3957,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.38-4
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.38-4.dsc' linux_6.1.38-4.dsc 290924 SHA256:bb0be431ea69ca59d62d1c789fa8f77a664e10c31ef076410db05bfa19e8ca16
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.38.orig.tar.xz' linux_6.1.38.orig.tar.xz 137332648 SHA256:89ec2ca3af4376d3ac4adc900920238c76c671f89785746a1b2a498851e47d19
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.38-4.debian.tar.xz' linux_6.1.38-4.debian.tar.xz 1518476 SHA256:c311bb83274027a185544926950f4b873c258e36947061606e3caf8f7d0b8832
+$ apt-get source -qq --print-uris linux=6.1.52-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.52-1.dsc' linux_6.1.52-1.dsc 290924 SHA256:6bb55226c5fb3d8c94dcaeb7e218f6b411c2cdb44d83217f8b807f6e3fc5619f
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.52.orig.tar.xz' linux_6.1.52.orig.tar.xz 137409052 SHA256:9bc63c931294b87b6f656d39875c6471c5b06fec780eb06403ac70771bd3cb2b
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.52-1.debian.tar.xz' linux_6.1.52-1.debian.tar.xz 1511016 SHA256:3f5a348786852c86b07afb845eebfdc745d802b103573b8836d7af249cd4d856
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.38-4/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.38-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.38-4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.52-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.52-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.52-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
