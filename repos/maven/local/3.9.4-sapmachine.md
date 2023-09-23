@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:23cfc820e5e0e62c790e1f1f1cb218811abbf8cc857af1023ed5b1764c54df57`
+- Image ID: `sha256:7cb75782c562391c4898d413e116e959cca671d642e9c06f16938be4ef4cc28f`
 - Created: `2023-08-18T15:26:34Z`
 - Virtual Size: ~ 500.74 Mb  
   (total size of all layers on-disk)
@@ -2028,11 +2028,11 @@ $ apt-get source -qq --print-uris rtmpdump=2.4+20151223.gitfa8646d.1-2build4
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rtmpdump/rtmpdump_2.4%2b20151223.gitfa8646d.1-2build4.debian.tar.xz' rtmpdump_2.4+20151223.gitfa8646d.1-2build4.debian.tar.xz 8376 SHA512:b01ac33a7251e3c0fad21897d31710766136027b656cb29903cf8f695893648631037a96fa18aa40eae7ad363394344aad4f2fae152622618b88f22133c03578
 ```
 
-### `dpkg` source package: `sapmachine-17-jdk=17.0.8`
+### `dpkg` source package: `sapmachine-17-jdk=17.0.8.1`
 
 Binary Packages:
 
-- `sapmachine-17-jdk=17.0.8`
+- `sapmachine-17-jdk=17.0.8.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.

@@ -1,10 +1,10 @@
-# `maven:3.9.4-amazoncorretto-17`
+# `maven:3.9.4-amazoncorretto-21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:aa46fb6465f75a1d8317fdeb718bb1283a60290d2ed080b03e9967db9ecb6a10`
-- Created: `2023-08-18T15:26:34Z`
-- Virtual Size: ~ 837.30 Mb  
+- Image ID: `sha256:d2ce199e70ea86dbd20fa0dfb45dacd9a559e0da4174d56afaae7d0149f13a0f`
+- Created: `2023-09-22T09:11:50Z`
+- Virtual Size: ~ 1.04 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto`
+  - `JAVA_HOME=/usr/lib/jvm/java-21-amazon-corretto`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 
@@ -404,7 +404,7 @@ $ dnf --quiet download --source --url info-5.1-5.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/eb72ea01ca029aaf7a15e5b987f6bee895bae6c7ef9f3bd009d8a3181c6e78c8/../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `java-17-amazon-corretto-devel-17.0.8.8-1.x86_64`
+### `rpm` package: `java-21-amazon-corretto-devel-21.0.0.35-1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
@@ -630,15 +630,15 @@ $ dnf --quiet download --source --url libnghttp2-1.41.0-1.amzn2.0.1
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/eb72ea01ca029aaf7a15e5b987f6bee895bae6c7ef9f3bd009d8a3181c6e78c8/../../../../../blobstore/adc7d65a5276647e32680c280d821b9068ca023f4d423bb23c17a491a650fe1b/nghttp2-1.41.0-1.amzn2.0.1.src.rpm
 ```
 
-### `rpm` package: `libpng-1.5.13-8.amzn2.0.3.x86_64`
+### `rpm` package: `libpng-1.5.13-8.amzn2.0.5.x86_64`
 
 Licenses (from `rpm --query`): zlib
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libpng-1.5.13-8.amzn2.0.3
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/eb72ea01ca029aaf7a15e5b987f6bee895bae6c7ef9f3bd009d8a3181c6e78c8/../../../../../blobstore/3645c9d34ff4d9f3902507aaaeaf43248350b205c2440c1149ddf456db8ad3fd/libpng-1.5.13-8.amzn2.0.3.src.rpm
+$ dnf --quiet download --source --url libpng-1.5.13-8.amzn2.0.5
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/eb72ea01ca029aaf7a15e5b987f6bee895bae6c7ef9f3bd009d8a3181c6e78c8/../../../../../blobstore/47467e24ba5e44cea7252546421ae9c0efe3287136a6c04be179ff755294ed10/libpng-1.5.13-8.amzn2.0.5.src.rpm
 ```
 
 ### `rpm` package: `libselinux-2.5-12.amzn2.0.2.x86_64`
