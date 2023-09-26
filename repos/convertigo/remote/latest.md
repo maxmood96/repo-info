@@ -1,7 +1,7 @@
 ## `convertigo:latest`
 
 ```console
-$ docker pull convertigo@sha256:e88c880e091b121fc532514c2b220a9cc60073d0c2e01e6d857bcc2a9617a852
+$ docker pull convertigo@sha256:df4b7322db43d79fdcd31ef97612e24f856fe7bf5b9fd3fd323126e16a95006a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -188,14 +188,14 @@ CMD ["convertigo"]
 ### `convertigo:latest` - linux; arm variant v7
 
 ```console
-$ docker pull convertigo@sha256:9561bf290315962a499f9ddc96244d302cc53bae4fca0bd560b36852363d5804
+$ docker pull convertigo@sha256:65ccb8f7101e37aa68fb12dbebfc7c0a1d98378b9d1954852eb0a19c34e428c2
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.1 MB (298130438 bytes)**  
+-	Total Size: **298.2 MB (298215290 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70925ce5ad9207bd1eec4a20faa692faf02f20118cdd69abc69d0c33ad3c0b05`
+-	Image ID: `sha256:a0df6845105e927c8df8cc196483822f32e20583dba75d4b0c71437e3fd46479`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
@@ -278,27 +278,27 @@ RUN apt-get update -y   && apt-get install -y --no-install-recommends     ca-cer
 RUN useradd -s /bin/false -m convertigo     && mkdir -p /workspace     && chown -R convertigo:convertigo /workspace     && chmod -R 777 /workspace     && echo "convertigo ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/convertigo     && chmod 0440 /etc/sudoers.d/convertigo
 # Thu, 31 Aug 2023 21:19:03 GMT
 RUN sed -i.bak         -e '/protocol="AJP/d'         -e '/JasperListener/d'         -e 's/port="8080"/port="28080" maxThreads="64000" relaxedQueryChars="{}[]|"/'         -e 's,</Host>,  <Valve className="org.apache.catalina.valves.RemoteIpValve" />\n        <Valve className="org.apache.catalina.valves.ErrorReportValve"  errorCode.404="webapps/convertigo/404.html" errorCode.0="webapps/convertigo/error.html" showReport="false" showServerInfo="false" />\n      </Host>,'         -e 's,</Service>,<!--SSL<Connector port="28443" protocol="org.apache.coyote.http11.Http11AprProtocol" SSLEnabled="true" maxThreads="64000" relaxedQueryChars="{}[]|">\n      <UpgradeProtocol className="org.apache.coyote.http2.Http2Protocol" />\n      <SSLHostConfig>\n        <Certificate certificateKeyFile="/certs/key.pem"\n                     certificateFile="/certs/cert.pem"\n                     certificateChainFile="/certs/chain.pem"\n                     type="RSA" />\n      </SSLHostConfig>\n    </Connector>SSL-->\n  </Service>,'         conf/server.xml     && sed -i.bak         -e 's,<Context>,<Context sessionCookiePath="/">,'         -e 's,</Context>,<Manager pathname="" /><CookieProcessor sameSiteCookies="unset" /></Context>,'         conf/context.xml     && rm -rf webapps/* bin/*.bat conf/server.xml.bak /tmp/*     && mkdir webapps/ROOT     && chown -R convertigo:convertigo conf temp work logs     && chmod -w conf/*     && chmod 777 conf/context.xml conf/server.xml
-# Thu, 31 Aug 2023 21:19:03 GMT
-ENV CONVERTIGO_VERSION=8.2.2
-# Thu, 31 Aug 2023 21:19:03 GMT
-ENV CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.2.2/convertigo-8.2.2.war
-# Thu, 31 Aug 2023 21:19:03 GMT
+# Tue, 26 Sep 2023 22:57:20 GMT
+ENV CONVERTIGO_VERSION=8.2.3
+# Tue, 26 Sep 2023 22:57:20 GMT
+ENV CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.2.3/convertigo-8.2.3.war
+# Tue, 26 Sep 2023 22:57:20 GMT
 ENV CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F
-# Thu, 31 Aug 2023 21:19:10 GMT
+# Tue, 26 Sep 2023 22:57:28 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && ( gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$CONVERTIGO_GPG_KEYS"     || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$CONVERTIGO_GPG_KEYS" )     && curl -fSL -o /tmp/convertigo.war $CONVERTIGO_WAR_URL     && curl -fSL -o /tmp/convertigo.war.asc $CONVERTIGO_WAR_URL.asc     && gpg --batch --verify /tmp/convertigo.war.asc /tmp/convertigo.war     && mkdir -p webapps/ROOT webapps/convertigo     && mkdir /certs && chmod 777 /certs     && (cd webapps/convertigo         && unzip -q /tmp/convertigo.war         && (chmod -f a+x WEB-INF/xvnc/* || true)         && (test "$(dpkg --print-architecture)" != "i386" && rm -rf WEB-INF/xulrunner WEB-INF/xvnc WEB-INF/lib/swt_* || true)         && chmod 777 WEB-INF/web.xml WEB-INF/lib WEB-INF/classes         && rm -rf /tmp/*)
-# Thu, 31 Aug 2023 21:19:10 GMT
+# Tue, 26 Sep 2023 22:57:28 GMT
 COPY file:a8c73db31af1c6589d48a2342d8673de69087696e5f19812fc67f887368ccae8 in webapps/ROOT/index.html 
-# Thu, 31 Aug 2023 21:19:10 GMT
-COPY file:efb1554bc41c54ba23859400ee8f932412d0980b3c4056d04da7b1c42febe494 in / 
-# Thu, 31 Aug 2023 21:19:10 GMT
+# Tue, 26 Sep 2023 22:57:28 GMT
+COPY file:f9f666c95ba08499a7e3e81d2fbe010226895813dbaabe692cf6db96a33c02ad in / 
+# Tue, 26 Sep 2023 22:57:28 GMT
 WORKDIR /workspace
-# Thu, 31 Aug 2023 21:19:10 GMT
+# Tue, 26 Sep 2023 22:57:28 GMT
 VOLUME [/workspace]
-# Thu, 31 Aug 2023 21:19:11 GMT
+# Tue, 26 Sep 2023 22:57:29 GMT
 EXPOSE 28080
-# Thu, 31 Aug 2023 21:19:11 GMT
+# Tue, 26 Sep 2023 22:57:29 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Thu, 31 Aug 2023 21:19:11 GMT
+# Tue, 26 Sep 2023 22:57:29 GMT
 CMD ["convertigo"]
 ```
 
@@ -347,17 +347,17 @@ CMD ["convertigo"]
 		Last Modified: Thu, 31 Aug 2023 21:19:20 GMT  
 		Size: 27.9 KB (27937 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01051f6409bdded52273d7f6e18b5248207873ea0cbca062cf9a6bd1d7401edc`  
-		Last Modified: Thu, 31 Aug 2023 21:19:27 GMT  
-		Size: 94.1 MB (94066168 bytes)  
+	-	`sha256:cd3c1ab38cf86e8e12c355001acf1df8bb0671d3b4cf54de9f63149f4cb8a5d8`  
+		Last Modified: Tue, 26 Sep 2023 22:57:45 GMT  
+		Size: 94.2 MB (94150940 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22dd07d1786a08c4a74c57af33cd4b0c75dd93c94fbac388a4ac989504d0eb8c`  
-		Last Modified: Thu, 31 Aug 2023 21:19:20 GMT  
-		Size: 450.0 B  
+	-	`sha256:7fee4cf127b710dc916901ea2c28134a11d12f01f8e7c1b27f19bcf0e98ef6a9`  
+		Last Modified: Tue, 26 Sep 2023 22:57:38 GMT  
+		Size: 449.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9325ff14474d23faaa2565108d1eb47373248bab16faaa518a1b507dc95b2171`  
-		Last Modified: Thu, 31 Aug 2023 21:19:20 GMT  
-		Size: 2.2 KB (2241 bytes)  
+	-	`sha256:6e4fc0251cf009a617374c9322de220853901d0f851edab0a0b56986a04f3c1f`  
+		Last Modified: Tue, 26 Sep 2023 22:57:38 GMT  
+		Size: 2.3 KB (2322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `convertigo:latest` - linux; arm64 variant v8
