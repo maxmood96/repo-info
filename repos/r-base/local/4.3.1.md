@@ -323,10 +323,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cairo=1.17.8-3
-'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.17.8-3.dsc' cairo_1.17.8-3.dsc 2772 SHA256:e93e68eefd7a6c4b345011a0314da65ffc4a0951dc368581d4bc9253bd8a1023
-'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.17.8.orig.tar.xz' cairo_1.17.8.orig.tar.xz 33392240 SHA256:5b10c8892d1b58d70d3f0ba5b47863a061262fa56b9dc7944161f8c8b783bc64
-'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.17.8-3.debian.tar.xz' cairo_1.17.8-3.debian.tar.xz 31432 SHA256:1503022a563b2ada94164cbd4667da3faed04e88c8bce5ced6178e1223fd6c3e
+'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.17.8-3.dsc' cairo_1.17.8-3.dsc 2772 SHA256:e93e68eefd7a6c4b345011a0314da65ffc4a0951dc368581d4bc9253bd8a1023
+'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.17.8.orig.tar.xz' cairo_1.17.8.orig.tar.xz 33392240 SHA256:5b10c8892d1b58d70d3f0ba5b47863a061262fa56b9dc7944161f8c8b783bc64
+'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.17.8-3.debian.tar.xz' cairo_1.17.8-3.debian.tar.xz 31432 SHA256:1503022a563b2ada94164cbd4667da3faed04e88c8bce5ced6178e1223fd6c3e
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/cairo/1.17.8-3/ (for browsing the source)
+- https://sources.debian.net/src/cairo/1.17.8-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cairo/1.17.8-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.270`
 
@@ -2126,21 +2132,13 @@ Licenses: (parsed from: `/usr/share/doc/libwebp7/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwebp=1.2.4-0.3
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_1.2.4-0.3.dsc' libwebp_1.2.4-0.3.dsc 2379 SHA256:822a6258c3d41b875a60e709c46cf739c55047b4b6d0e1541c5432a4fe445ec8
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_1.2.4.orig.tar.gz' libwebp_1.2.4.orig.tar.gz 4141376 SHA256:7bf5a8a28cc69bcfa8cb214f2c3095703c6b73ac5fba4d5480c205331d9494df
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_1.2.4.orig.tar.gz.asc' libwebp_1.2.4.orig.tar.gz.asc 833 SHA256:4c546cf7f757a70d8803ab850e69d28e7ce06e66dbee003fd3ede7346543851a
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_1.2.4-0.3.debian.tar.xz' libwebp_1.2.4-0.3.debian.tar.xz 12004 SHA256:e2196110d735d4020feefa38ca28abc6e87a3998c0ce9645dbc8745ac64dc20d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libwebp/1.2.4-0.3/
 
-- https://sources.debian.net/src/libwebp/1.2.4-0.3/ (for browsing the source)
-- https://sources.debian.net/src/libwebp/1.2.4-0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libwebp/1.2.4-0.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libx11=2:1.8.6-1`
 
