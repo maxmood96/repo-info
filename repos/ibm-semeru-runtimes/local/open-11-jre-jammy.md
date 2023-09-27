@@ -1,9 +1,9 @@
-# `ibm-semeru-runtimes:open-11.0.20_8-jre-jammy`
+# `ibm-semeru-runtimes:open-11.0.20.1_1-jre-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3f28dd4f1fe69688dd471b9ee2f6fe97747b41b0893c49d7ac2d4ded6d85bf72`
-- Created: `2023-09-02T00:48:35.662510472Z`
+- Image ID: `sha256:e43f56e5b79dead543b74311499c92a62d0e79e517de8a7b4629dee6cf83eea0`
+- Created: `2023-09-27T00:28:57.150649151Z`
 - Virtual Size: ~ 273.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.20+8_openj9-0.40.0`
+  - `JAVA_VERSION=jdk-11.0.20.1+1_openj9-0.40.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
 - Labels:
