@@ -133,19 +133,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.7.3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.3.dsc' apt_2.7.3.dsc 2945 SHA256:6927412c35484426113eebfa6cca50c54180d877c5daa899703e8029dfe1b9b6
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.3.tar.xz' apt_2.7.3.tar.xz 2343000 SHA256:9ad2eb2c4f25ce3535d9a5d8056e1fe932d6dbb58c2647cd5fc8df8c9f8def53
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.7.3/
 
-- https://sources.debian.net/src/apt/2.7.3/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.7.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.7.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.1-4`
 
@@ -555,20 +549,13 @@ Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/shar
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cairo=1.17.8-3
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.17.8-3.dsc' cairo_1.17.8-3.dsc 2772 SHA256:e93e68eefd7a6c4b345011a0314da65ffc4a0951dc368581d4bc9253bd8a1023
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.17.8.orig.tar.xz' cairo_1.17.8.orig.tar.xz 33392240 SHA256:5b10c8892d1b58d70d3f0ba5b47863a061262fa56b9dc7944161f8c8b783bc64
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.17.8-3.debian.tar.xz' cairo_1.17.8-3.debian.tar.xz 31432 SHA256:1503022a563b2ada94164cbd4667da3faed04e88c8bce5ced6178e1223fd6c3e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cairo/1.17.8-3/
 
-- https://sources.debian.net/src/cairo/1.17.8-3/ (for browsing the source)
-- https://sources.debian.net/src/cairo/1.17.8-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cairo/1.17.8-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.270`
 
@@ -4199,20 +4186,13 @@ Licenses: (parsed from: `/usr/share/doc/libmpfr6/copyright`)
 - `GFDL-1.2`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mpfr4=4.2.0-1
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_4.2.0-1.dsc' mpfr4_4.2.0-1.dsc 1959 SHA256:bfd38815d4d79f9ea3f14d94f61a075a0914ecbe4ef9666b7f6597340a60c250
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_4.2.0.orig.tar.xz' mpfr4_4.2.0.orig.tar.xz 1477532 SHA256:06a378df13501248c1b2db5aa977a2c8126ae849a9d9b7be2546fb4a9c26d993
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_4.2.0-1.debian.tar.xz' mpfr4_4.2.0-1.debian.tar.xz 12488 SHA256:05faf305be60659d8db47e1925fa4062be8fb89e5fcd70fb0e5444554b1625a8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mpfr4/4.2.0-1/
 
-- https://sources.debian.net/src/mpfr4/4.2.0-1/ (for browsing the source)
-- https://sources.debian.net/src/mpfr4/4.2.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mpfr4/4.2.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mysql-defaults=1.1.0`
 

@@ -413,14 +413,13 @@ Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/shar
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cairo=1.17.8-2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.17.8-2.dsc' cairo_1.17.8-2.dsc 2772 SHA512:fbea7120afa088e3813fcd32de21d39ee2a0739933a088d082dc55037f9e7a9fa240c15d74eb577c8758d02affa0cae2a2baabd14874ffc78c8e602917b27a63
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.17.8.orig.tar.xz' cairo_1.17.8.orig.tar.xz 33392240 SHA512:62f0eaaebc46be5f0de7cb49df055eeadcc02706095a9d641eceac563d48344c2234940ce90d84a610c5003e536d9dcd318a1649578fd9cd5ab5f0db5b75bd8f
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.17.8-2.debian.tar.xz' cairo_1.17.8-2.debian.tar.xz 31620 SHA512:61bbccdb8153b78d3071e72b79db9448f5da3aed03d30a172d3ceaaa38aa5b24dedc818ce65186b16f9c69e268026b4043c0813920aa194b7d600e57f646690c
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cairo/1.17.8-2/
+
 
 ### `dpkg` source package: `cdebconf=0.270ubuntu1`
 
