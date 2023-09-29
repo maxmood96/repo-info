@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9f6f0494ccfcfb0ec3ac6ed893751fc1549c3a55645e428fb1edeb379a0ec266`
-- Created: `2023-08-23T22:33:18.564981028Z`
+- Image ID: `sha256:7cbe4cd7b2655bedf1fc116c3ace7962f3f8ca5e617c6e8a8ee1ad8c5abdb506`
+- Created: `2023-09-27T01:13:37.729116403Z`
 - Virtual Size: ~ 341.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.8+7_openj9-0.40.0`
+  - `JAVA_VERSION=jdk-17.0.8.1+1_openj9-0.40.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
   - `TOMEE_VER=8.0.15`
