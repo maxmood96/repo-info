@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3fd1e121d01b50aa2d517075df829d156021f647a6a23d1746dbf48104c0a184`
+- Image ID: `sha256:275ca39765518e909275d125a1ddeeb7734bf10577465edd3fffb80ead33ab20`
 - Created: `2023-08-18T15:26:34Z`
-- Virtual Size: ~ 243.48 Mb  
+- Virtual Size: ~ 243.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -194,16 +194,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.2.1-r0 description:
+curl-8.3.0-r0 description:
 URL retrival utility and library
 
-curl-8.2.1-r0 webpage:
+curl-8.3.0-r0 webpage:
 https://curl.se/
 
-curl-8.2.1-r0 installed size:
-236 KiB
+curl-8.3.0-r0 installed size:
+248 KiB
 
-curl-8.2.1-r0 license:
+curl-8.3.0-r0 license:
 curl
 
 ```
@@ -347,16 +347,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.2-r0 description:
+libcrypto3-3.1.3-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.2-r0 webpage:
+libcrypto3-3.1.3-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.2-r0 installed size:
+libcrypto3-3.1.3-r0 installed size:
 4468 KiB
 
-libcrypto3-3.1.2-r0 license:
+libcrypto3-3.1.3-r0 license:
 Apache-2.0
 
 ```
@@ -364,16 +364,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.2.1-r0 description:
+libcurl-8.3.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.2.1-r0 webpage:
+libcurl-8.3.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.2.1-r0 installed size:
-552 KiB
+libcurl-8.3.0-r0 installed size:
+584 KiB
 
-libcurl-8.2.1-r0 license:
+libcurl-8.3.0-r0 license:
 curl
 
 ```
@@ -500,16 +500,16 @@ Libpng
 ### `apk` package: `libproc2`
 
 ```console
-libproc2-4.0.3-r1 description:
+libproc2-4.0.4-r0 description:
 Library for monitoring system and processes
 
-libproc2-4.0.3-r1 webpage:
+libproc2-4.0.4-r0 webpage:
 https://gitlab.com/procps-ng/procps
 
-libproc2-4.0.3-r1 installed size:
+libproc2-4.0.4-r0 installed size:
 152 KiB
 
-libproc2-4.0.3-r1 license:
+libproc2-4.0.4-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -534,16 +534,16 @@ ISC AND ( BSD-3-Clause OR MIT )
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.2-r0 description:
+libssl3-3.1.3-r0 description:
 SSL shared libraries
 
-libssl3-3.1.2-r0 webpage:
+libssl3-3.1.3-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.2-r0 installed size:
+libssl3-3.1.3-r0 installed size:
 552 KiB
 
-libssl3-3.1.2-r0 license:
+libssl3-3.1.3-r0 license:
 Apache-2.0
 
 ```
@@ -738,16 +738,16 @@ BSD-3-Clause
 ### `apk` package: `procps-ng`
 
 ```console
-procps-ng-4.0.3-r1 description:
+procps-ng-4.0.4-r0 description:
 Utilities for monitoring your system and processes on your system
 
-procps-ng-4.0.3-r1 webpage:
+procps-ng-4.0.4-r0 webpage:
 https://gitlab.com/procps-ng/procps
 
-procps-ng-4.0.3-r1 installed size:
+procps-ng-4.0.4-r0 installed size:
 580 KiB
 
-procps-ng-4.0.3-r1 license:
+procps-ng-4.0.4-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
