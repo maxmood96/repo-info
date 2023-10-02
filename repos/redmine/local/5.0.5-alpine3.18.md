@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:464068787dc7ac48977bf545649168bf0efe547e01f0d8e2f8d8dd7f88b48f8c`
-- Created: `2023-08-09T10:11:53.033856886Z`
-- Virtual Size: ~ 463.96 Mb  
+- Image ID: `sha256:9524d08f4b020991a3014836056c80e94100be6333bac8213b3cee9f55932c78`
+- Created: `2023-09-29T05:39:58.04793182Z`
+- Virtual Size: ~ 464.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -353,16 +353,16 @@ LGPL-2.1-or-later OR MPL-1.1
 ### `apk` package: `cups-libs`
 
 ```console
-cups-libs-2.4.6-r0 description:
+cups-libs-2.4.7-r0 description:
 CUPS libraries
 
-cups-libs-2.4.6-r0 webpage:
+cups-libs-2.4.7-r0 webpage:
 https://github.com/OpenPrinting/cups/
 
-cups-libs-2.4.6-r0 installed size:
+cups-libs-2.4.7-r0 installed size:
 576 KiB
 
-cups-libs-2.4.6-r0 license:
+cups-libs-2.4.7-r0 license:
 Apache-2.0
 
 ```
@@ -795,16 +795,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.2-r0 description:
+libcrypto3-3.1.3-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.2-r0 webpage:
+libcrypto3-3.1.3-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.2-r0 installed size:
+libcrypto3-3.1.3-r0 installed size:
 4468 KiB
 
-libcrypto3-3.1.2-r0 license:
+libcrypto3-3.1.3-r0 license:
 Apache-2.0
 
 ```
@@ -812,16 +812,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.2.1-r0 description:
+libcurl-8.3.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.2.1-r0 webpage:
+libcurl-8.3.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.2.1-r0 installed size:
-552 KiB
+libcurl-8.3.0-r0 installed size:
+584 KiB
 
-libcurl-8.2.1-r0 license:
+libcurl-8.3.0-r0 license:
 curl
 
 ```
@@ -1169,16 +1169,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-15.3-r0 description:
+libpq-15.4-r0 description:
 PostgreSQL client library
 
-libpq-15.3-r0 webpage:
+libpq-15.4-r0 webpage:
 https://www.postgresql.org/
 
-libpq-15.3-r0 installed size:
+libpq-15.4-r0 installed size:
 320 KiB
 
-libpq-15.3-r0 license:
+libpq-15.4-r0 license:
 PostgreSQL
 
 ```
@@ -1186,16 +1186,16 @@ PostgreSQL
 ### `apk` package: `libproc2`
 
 ```console
-libproc2-4.0.3-r1 description:
+libproc2-4.0.4-r0 description:
 Library for monitoring system and processes
 
-libproc2-4.0.3-r1 webpage:
+libproc2-4.0.4-r0 webpage:
 https://gitlab.com/procps-ng/procps
 
-libproc2-4.0.3-r1 installed size:
+libproc2-4.0.4-r0 installed size:
 152 KiB
 
-libproc2-4.0.3-r1 license:
+libproc2-4.0.4-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -1254,16 +1254,16 @@ custom
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.2-r0 description:
+libssl3-3.1.3-r0 description:
 SSL shared libraries
 
-libssl3-3.1.2-r0 webpage:
+libssl3-3.1.3-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.2-r0 installed size:
+libssl3-3.1.3-r0 installed size:
 552 KiB
 
-libssl3-3.1.2-r0 license:
+libssl3-3.1.3-r0 license:
 Apache-2.0
 
 ```
@@ -1339,16 +1339,16 @@ BSD-3-Clause
 ### `apk` package: `libwebp`
 
 ```console
-libwebp-1.3.1-r0 description:
+libwebp-1.3.2-r0 description:
 Libraries for working with WebP images
 
-libwebp-1.3.1-r0 webpage:
+libwebp-1.3.2-r0 webpage:
 https://developers.google.com/speed/webp
 
-libwebp-1.3.1-r0 installed size:
+libwebp-1.3.2-r0 installed size:
 596 KiB
 
-libwebp-1.3.1-r0 license:
+libwebp-1.3.2-r0 license:
 BSD-3-Clause
 
 ```
@@ -1832,16 +1832,16 @@ ISC
 ### `apk` package: `procps-ng`
 
 ```console
-procps-ng-4.0.3-r1 description:
+procps-ng-4.0.4-r0 description:
 Utilities for monitoring your system and processes on your system
 
-procps-ng-4.0.3-r1 webpage:
+procps-ng-4.0.4-r0 webpage:
 https://gitlab.com/procps-ng/procps
 
-procps-ng-4.0.3-r1 installed size:
+procps-ng-4.0.4-r0 installed size:
 580 KiB
 
-procps-ng-4.0.3-r1 license:
+procps-ng-4.0.4-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -2070,16 +2070,16 @@ MIT
 ### `apk` package: `python3`
 
 ```console
-python3-3.11.4-r0 description:
+python3-3.11.5-r0 description:
 High-level scripting language
 
-python3-3.11.4-r0 webpage:
+python3-3.11.5-r0 webpage:
 https://www.python.org/
 
-python3-3.11.4-r0 installed size:
+python3-3.11.5-r0 installed size:
 24 MiB
 
-python3-3.11.4-r0 license:
+python3-3.11.5-r0 license:
 PSF-2.0
 
 ```
@@ -2087,16 +2087,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.11.4-r0 description:
+python3-pyc-3.11.5-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.11.4-r0 webpage:
+python3-pyc-3.11.5-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.11.4-r0 installed size:
+python3-pyc-3.11.5-r0 installed size:
 4096 B
 
-python3-pyc-3.11.4-r0 license:
+python3-pyc-3.11.5-r0 license:
 PSF-2.0
 
 ```
@@ -2104,16 +2104,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.11.4-r0 description:
+python3-pycache-pyc0-3.11.5-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.11.4-r0 webpage:
+python3-pycache-pyc0-3.11.5-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.11.4-r0 installed size:
+python3-pycache-pyc0-3.11.5-r0 installed size:
 13 MiB
 
-python3-pycache-pyc0-3.11.4-r0 license:
+python3-pycache-pyc0-3.11.5-r0 license:
 PSF-2.0
 
 ```
