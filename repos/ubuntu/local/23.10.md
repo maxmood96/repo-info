@@ -498,15 +498,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.38-1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38-1ubuntu4.dsc' glibc_2.38-1ubuntu4.dsc 9310 SHA512:8d67ed43f83ee47299d73e3eb472ce24d28c16b8e9ce04b2358f02b4e3b167126d804bb3e9a6d8452af56a1a784f172bfd12db07a05d8628a4854fd33ceb0f4b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38.orig.tar.xz' glibc_2.38.orig.tar.xz 18913712 SHA512:a6dd5e42dcd63d58e2820c783522c8c895890b6e8c8e6c83b025553de0cc77cdf227e7044e431ead98c89c68a9ce4dd63509b47e647775fb2075f011849c1900
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38.orig.tar.xz.asc' glibc_2.38.orig.tar.xz.asc 833 SHA512:32248467450f4530f8e84c03ea78d8293946e1b1def853eff9fb2cb51106e66cc3b024a254f3c2fabd2634f8192bd14e7df00c317f4230860d702c4d9ec7a01e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38-1ubuntu4.debian.tar.xz' glibc_2.38-1ubuntu4.debian.tar.xz 445004 SHA512:9d1aa0b7eb694a20c760010f620d1a1243983eab5485e95b323a3e953b998b497aaf79385322537d87287888068860e908053d9611bdbad1fd576e20c3205193
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu4`
 
