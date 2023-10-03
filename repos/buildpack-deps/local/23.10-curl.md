@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b709ebd2d56ad6b5bab1049d0842645e6f85ddf5960c005df816942b7475a65`
-- Created: `2023-09-16T02:19:10.065087954Z`
-- Virtual Size: ~ 106.24 Mb  
+- Image ID: `sha256:90765c24b416ae58d6e2266669124bc5049859b2fb076aa733c15a8e524e6e89`
+- Created: `2023-10-03T05:02:24.43532223Z`
+- Virtual Size: ~ 106.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -588,13 +588,13 @@ $ apt-get source -qq --print-uris findutils=4.9.0-5
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.9.0-5.debian.tar.xz' findutils_4.9.0-5.debian.tar.xz 32744 SHA512:64b5df8347a4d698787dae61c0adac845b0dc66450736931e04c5ad072756a5e5191c8e4995e4fa5a568caf0f851518eb3c8358991a4e5749c3f2306b5446380
 ```
 
-### `dpkg` source package: `gcc-13=13.2.0-3ubuntu1`
+### `dpkg` source package: `gcc-13=13.2.0-4ubuntu3`
 
 Binary Packages:
 
-- `gcc-13-base:amd64=13.2.0-3ubuntu1`
-- `libgcc-s1:amd64=13.2.0-3ubuntu1`
-- `libstdc++6:amd64=13.2.0-3ubuntu1`
+- `gcc-13-base:amd64=13.2.0-4ubuntu3`
+- `libgcc-s1:amd64=13.2.0-4ubuntu3`
+- `libstdc++6:amd64=13.2.0-4ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-13-base/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -605,9 +605,14 @@ Licenses: (parsed from: `/usr/share/doc/gcc-13-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gcc-13=13.2.0-4ubuntu3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.2.0-4ubuntu3.dsc' gcc-13_13.2.0-4ubuntu3.dsc 27652 SHA512:161ebdcff6af93dac86b5591e9ff35abfee8b2cad1c881c09e289c7cb6ed22c9a0c71a315061bc2e90eb992367d1e04a620a3eb386c75c6741dbd53efb2bdb15
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.2.0.orig.tar.gz' gcc-13_13.2.0.orig.tar.gz 92596024 SHA512:cf149aff3cbee36bf23987e91016fa3f93dbcba8c88319876e6aa3cacd1dacea27d06ea7c4da6394a56d7d9d4f14ac928ead7d25502f0cc6db558f7f5cd99dff
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.2.0-4ubuntu3.debian.tar.xz' gcc-13_13.2.0-4ubuntu3.debian.tar.xz 1581144 SHA512:7ea0e627632deafe26cf219e4288fb9e1a6b9a7df4c8d2177fce9111b021d5d580ceff5cdcaf11adccb3bb4c72d3aac289417b67365ef771b8a2de4b43301dc9
+```
 
 ### `dpkg` source package: `glibc=2.38-1ubuntu4`
 
@@ -622,15 +627,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.38-1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38-1ubuntu4.dsc' glibc_2.38-1ubuntu4.dsc 9310 SHA512:8d67ed43f83ee47299d73e3eb472ce24d28c16b8e9ce04b2358f02b4e3b167126d804bb3e9a6d8452af56a1a784f172bfd12db07a05d8628a4854fd33ceb0f4b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38.orig.tar.xz' glibc_2.38.orig.tar.xz 18913712 SHA512:a6dd5e42dcd63d58e2820c783522c8c895890b6e8c8e6c83b025553de0cc77cdf227e7044e431ead98c89c68a9ce4dd63509b47e647775fb2075f011849c1900
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38.orig.tar.xz.asc' glibc_2.38.orig.tar.xz.asc 833 SHA512:32248467450f4530f8e84c03ea78d8293946e1b1def853eff9fb2cb51106e66cc3b024a254f3c2fabd2634f8192bd14e7df00c317f4230860d702c4d9ec7a01e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38-1ubuntu4.debian.tar.xz' glibc_2.38-1ubuntu4.debian.tar.xz 445004 SHA512:9d1aa0b7eb694a20c760010f620d1a1243983eab5485e95b323a3e953b998b497aaf79385322537d87287888068860e908053d9611bdbad1fd576e20c3205193
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu4`
 
@@ -1617,11 +1616,11 @@ $ apt-get source -qq --print-uris pcre2=10.42-4
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.42-4.diff.gz' pcre2_10.42-4.diff.gz 8111 SHA512:d13593a4e46d686238e766b253886eed102d8728a943f2f55d1459311d6e9715be46dd4fc2353d7375100d0200c9c0037521b5072f7ea30826c19af2d48f93e3
 ```
 
-### `dpkg` source package: `perl=5.36.0-7ubuntu1`
+### `dpkg` source package: `perl=5.36.0-9ubuntu1`
 
 Binary Packages:
 
-- `perl-base=5.36.0-7ubuntu1`
+- `perl-base=5.36.0-9ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1653,9 +1652,15 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.36.0-9ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.36.0-9ubuntu1.dsc' perl_5.36.0-9ubuntu1.dsc 3026 SHA512:d4ddd92d2291be5f8ed08833a7baedcf7d3af81d3053700dd621c6107c37022c32ebfe10b2e09b444f387bce75cd35042c2428ac617c77b45feb46c3140c39f5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.36.0.orig-regen-configure.tar.xz' perl_5.36.0.orig-regen-configure.tar.xz 417784 SHA512:4d16685f569a5b1dea79d607b6d62718111c32efaf5547bb9e1528bd755acf0c8fc74a1cc1f4d68fcb10aef9da7d8fea17a5cc10dabce6efa4721ab45ab03a65
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.36.0.orig.tar.xz' perl_5.36.0.orig.tar.xz 13051500 SHA512:6dd6ac2a77566c173c5ab9c238cf555f2c3e592e89abb5600bc23ce1cbd0c349e0233f6417cbbf1f6d0aefc6a734ba491285af0d3dc68a605b658b65c89f1dab
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.36.0-9ubuntu1.debian.tar.xz' perl_5.36.0-9ubuntu1.debian.tar.xz 170808 SHA512:e2ea25d29a46e5cb5ee15bd43f0310ffd652c684f705603a34d8821d48f21956cd14dc46067dbffd7ec6228520ed36b1ec731989e696796b28d19e573a83cfa2
+```
 
 ### `dpkg` source package: `pinentry=1.2.1-1ubuntu1`
 
@@ -1868,12 +1873,12 @@ $ apt-get source -qq --print-uris sqlite3=3.42.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.42.0-1.debian.tar.xz' sqlite3_3.42.0-1.debian.tar.xz 29996 SHA512:9602cfe54dd78ac1d4005c551215a536e933bb1dcbfc0897bec0fb503d95ddafeb002c991b1a1cd2b642e49e490d1ef311ca97dcb9e3001727353e23b9d69fbc
 ```
 
-### `dpkg` source package: `systemd=253.5-1ubuntu5`
+### `dpkg` source package: `systemd=253.5-1ubuntu6`
 
 Binary Packages:
 
-- `libsystemd0:amd64=253.5-1ubuntu5`
-- `libudev1:amd64=253.5-1ubuntu5`
+- `libsystemd0:amd64=253.5-1ubuntu6`
+- `libudev1:amd64=253.5-1ubuntu6`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1886,9 +1891,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=253.5-1ubuntu6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_253.5-1ubuntu6.dsc' systemd_253.5-1ubuntu6.dsc 6902 SHA512:6ea1c67c71a4b3418c3c39c3ecb04aa2f2c2e86017a4d5947761691f729ef5a1308a1ae9938b73b93d5c1510d6bc6d2f907ebfe9e47d4e18184f264392a9d8a8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_253.5.orig.tar.gz' systemd_253.5.orig.tar.gz 12015672 SHA512:39709b485cd9287e26ac8e973fa1692b280bec3b96e1da6667e4a4f2ac2228aa072b22802720a254698d32c82f5306d7feb32229e4b6d54cc0e2b1e2caa4cc2e
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_253.5-1ubuntu6.debian.tar.xz' systemd_253.5-1ubuntu6.debian.tar.xz 220184 SHA512:5a693c2f365c6f35d6169b5eb3da701b90f207c9d7390309df5765a00196b41187766ce5964773f0c3b852779ef9365b724bcbf8cc57ca5b555aa5540bb8e299
+```
 
 ### `dpkg` source package: `sysvinit=3.07-1ubuntu1`
 
