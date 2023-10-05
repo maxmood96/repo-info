@@ -1,10 +1,10 @@
-# `mongo:4.4.24-focal`
+# `mongo:4.4.25-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a701426e0e6101a07c40e729ffe471527d9fd43135139bce3fbd6205148172d8`
-- Created: `2023-08-23T23:39:48.505904438Z`
-- Virtual Size: ~ 432.25 Mb  
+- Image ID: `sha256:ac99c760fcb8cc9207da176104ef1400d546f853ebd8e6a50298f99c94fe6299`
+- Created: `2023-10-03T01:26:10.133182018Z`
+- Virtual Size: ~ 431.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=4.4`
-  - `MONGO_VERSION=4.4.24`
+  - `MONGO_VERSION=4.4.25`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -529,14 +529,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.9.dsc' glibc_2.31-0ubuntu9.9.dsc 9548 SHA512:f1c38086da34549484f4a42bfc806bd5ad24998514751e85e7814d8a9531ace07e79f67b1e28e4c90c9822fa0c50d9358b25439a394b070bf3b2e40cc095da44
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.9.debian.tar.xz' glibc_2.31-0ubuntu9.9.debian.tar.xz 875580 SHA512:7b2b6eaaa2c1fb0e62bc662dcd4f5c30aec5e199fe69561efe8d29156a4fe5be4cb15323e3f74072cf34e182fe8112d9d895aab8535e4622729554c7f039195f
-```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4ubuntu0.1`
 
@@ -1284,16 +1279,16 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=4.4.24`
+### `dpkg` source package: `mongodb-org=4.4.25`
 
 Binary Packages:
 
-- `mongodb-org=4.4.24`
-- `mongodb-org-database-tools-extra=4.4.24`
-- `mongodb-org-mongos=4.4.24`
-- `mongodb-org-server=4.4.24`
-- `mongodb-org-shell=4.4.24`
-- `mongodb-org-tools=4.4.24`
+- `mongodb-org=4.4.25`
+- `mongodb-org-database-tools-extra=4.4.25`
+- `mongodb-org-mongos=4.4.25`
+- `mongodb-org-server=4.4.25`
+- `mongodb-org-shell=4.4.25`
+- `mongodb-org-tools=4.4.25`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
