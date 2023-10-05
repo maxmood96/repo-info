@@ -1,10 +1,10 @@
-# `mediawiki:1.39.4-fpm-alpine`
+# `mediawiki:1.39.5-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a66c8cbf60378ab1e7e690ab2458fb8e733cec3b1403c1aa52bd43435feaf861`
-- Created: `2023-09-30T06:26:35.216842862Z`
-- Virtual Size: ~ 514.13 Mb  
+- Image ID: `sha256:ba41e4abbe0d49790255e9ac5cbdb0dec15278b696fd496aa35decae84af9d04`
+- Created: `2023-10-04T21:27:03.659994654Z`
+- Virtual Size: ~ 518.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -22,7 +22,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.24.tar.xz.asc`
   - `PHP_SHA256=ee61f6232bb29bd2e785daf325d2177f2272bf80d086c295a724594e710bce3d`
   - `MEDIAWIKI_MAJOR_VERSION=1.39`
-  - `MEDIAWIKI_VERSION=1.39.4`
+  - `MEDIAWIKI_VERSION=1.39.5`
 
 ## `apk` (`.apk`-based packages)
 

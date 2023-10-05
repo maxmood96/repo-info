@@ -1,10 +1,10 @@
-# `mediawiki:1.35.11-fpm`
+# `mediawiki:1.35.13-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6f769f9d97029953e2b2b2922f93ea5e1f07960b2fdce8fe2937dd05b7a7e158`
-- Created: `2023-09-21T08:09:45.363078687Z`
-- Virtual Size: ~ 778.19 Mb  
+- Image ID: `sha256:fbb920b0b73bba487c414449bd32c0b60d366bcb6bafba5fe759370015d966f3`
+- Created: `2023-10-04T21:27:49.06281369Z`
+- Virtual Size: ~ 782.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -22,7 +22,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.30.tar.xz.asc`
   - `PHP_SHA256=216ab305737a5d392107112d618a755dc5df42058226f1670e9db90e77d777d9`
   - `MEDIAWIKI_MAJOR_VERSION=1.35`
-  - `MEDIAWIKI_VERSION=1.35.11`
+  - `MEDIAWIKI_VERSION=1.35.13`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2805,21 +2805,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libx11=2:1.7.2-1+deb11u1
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libx11/libx11_1.7.2-1%2bdeb11u1.dsc' libx11_1.7.2-1+deb11u1.dsc 2726 SHA256:ec0dcab068d361357957338097b8e5afea57d864c85485db57d74fefd133812d
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libx11/libx11_1.7.2.orig.tar.gz' libx11_1.7.2.orig.tar.gz 3181228 SHA256:2c26ccd08f43a6214de89110554fbe97c71692eeb7e7d4829f3004ae6fafd2c0
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libx11/libx11_1.7.2.orig.tar.gz.asc' libx11_1.7.2.orig.tar.gz.asc 833 SHA256:509d0ed983ff3aed0dbfb070dabfce82b5787e626f2fd0bfb2a5887918fcd967
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libx11/libx11_1.7.2-1%2bdeb11u1.diff.gz' libx11_1.7.2-1+deb11u1.diff.gz 77935 SHA256:e1991b48759c51f7bfb765d582311d8ac2ef4b5d6aa951fec1608982e1d8cdcd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libx11/2:1.7.2-1+deb11u1/
 
-- https://sources.debian.net/src/libx11/2:1.7.2-1+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/libx11/2:1.7.2-1+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libx11/2:1.7.2-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxau=1:1.0.9-1`
 
