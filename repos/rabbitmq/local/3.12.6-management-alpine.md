@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d8c282a2debbcd19d1030c151357367f2abcd98f2f931c0ace86939d9d21d18c`
+- Image ID: `sha256:f760e71e7ce8835b958741cce0c3f170b4601b113cc17f5e938afd8ea9e3254f`
 - Created: `2023-06-02T21:59:28Z`
-- Virtual Size: ~ 174.49 Mb  
+- Virtual Size: ~ 174.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -486,16 +486,16 @@ MIT
 ### `apk` package: `python3`
 
 ```console
-python3-3.11.5-r0 description:
+python3-3.11.6-r0 description:
 High-level scripting language
 
-python3-3.11.5-r0 webpage:
+python3-3.11.6-r0 webpage:
 https://www.python.org/
 
-python3-3.11.5-r0 installed size:
+python3-3.11.6-r0 installed size:
 24 MiB
 
-python3-3.11.5-r0 license:
+python3-3.11.6-r0 license:
 PSF-2.0
 
 ```
@@ -503,16 +503,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.11.5-r0 description:
+python3-pyc-3.11.6-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.11.5-r0 webpage:
+python3-pyc-3.11.6-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.11.5-r0 installed size:
+python3-pyc-3.11.6-r0 installed size:
 4096 B
 
-python3-pyc-3.11.5-r0 license:
+python3-pyc-3.11.6-r0 license:
 PSF-2.0
 
 ```
@@ -520,16 +520,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.11.5-r0 description:
+python3-pycache-pyc0-3.11.6-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.11.5-r0 webpage:
+python3-pycache-pyc0-3.11.6-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.11.5-r0 installed size:
+python3-pycache-pyc0-3.11.6-r0 installed size:
 13 MiB
 
-python3-pycache-pyc0-3.11.5-r0 license:
+python3-pycache-pyc0-3.11.6-r0 license:
 PSF-2.0
 
 ```
