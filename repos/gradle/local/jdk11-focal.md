@@ -1,10 +1,10 @@
-# `gradle:8.3.0-jdk11-focal`
+# `gradle:8.4.0-jdk11-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9987071256f6f8964fedb44f9c1b73889115bf1b3edb8946615b8e52e5247cbd`
-- Created: `2023-08-31T23:50:21.509165123Z`
-- Virtual Size: ~ 733.15 Mb  
+- Image ID: `sha256:4e4eb13a769b63d8a7a70a1b68a86db31f8f608cfd8e2ed883fa63d2cd4c86da`
+- Created: `2023-10-06T01:11:04.626521363Z`
+- Virtual Size: ~ 733.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.20.1+1`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.3`
+  - `GRADLE_VERSION=8.4`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`
