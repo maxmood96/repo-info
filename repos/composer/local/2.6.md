@@ -1,10 +1,10 @@
-# `composer:2.6.4`
+# `composer:2.6.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:76774141f803633c15a4524c6858639c4d38e219c33f7ea8d7e0dbbe5704ba50`
-- Created: `2023-09-29T13:59:18Z`
-- Virtual Size: ~ 184.03 Mb  
+- Image ID: `sha256:157c7027d9455d0c91dd014c89f6dd9a7397bfb85edd1380ef5e61554225a1f5`
+- Created: `2023-10-06T09:28:33Z`
+- Virtual Size: ~ 221.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=29af82e4f7509831490552918aad502697453f0869a579ee1b80b08f9112c5b8`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=2.6.4`
+  - `COMPOSER_VERSION=2.6.5`
 
 ## `apk` (`.apk`-based packages)
 
@@ -795,16 +795,16 @@ BSD-2-Clause
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.4-r1 description:
+musl-1.2.4-r2 description:
 the musl c library (libc) implementation
 
-musl-1.2.4-r1 webpage:
+musl-1.2.4-r2 webpage:
 https://musl.libc.org/
 
-musl-1.2.4-r1 installed size:
+musl-1.2.4-r2 installed size:
 620 KiB
 
-musl-1.2.4-r1 license:
+musl-1.2.4-r2 license:
 MIT
 
 ```
@@ -812,16 +812,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.4-r1 description:
+musl-utils-1.2.4-r2 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.4-r1 webpage:
+musl-utils-1.2.4-r2 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.4-r1 installed size:
+musl-utils-1.2.4-r2 installed size:
 132 KiB
 
-musl-utils-1.2.4-r1 license:
+musl-utils-1.2.4-r2 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -999,16 +999,16 @@ MIT
 ### `apk` package: `python3`
 
 ```console
-python3-3.11.5-r0 description:
+python3-3.11.6-r0 description:
 High-level scripting language
 
-python3-3.11.5-r0 webpage:
+python3-3.11.6-r0 webpage:
 https://www.python.org/
 
-python3-3.11.5-r0 installed size:
+python3-3.11.6-r0 installed size:
 24 MiB
 
-python3-3.11.5-r0 license:
+python3-3.11.6-r0 license:
 PSF-2.0
 
 ```
@@ -1016,16 +1016,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.11.5-r0 description:
+python3-pyc-3.11.6-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.11.5-r0 webpage:
+python3-pyc-3.11.6-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.11.5-r0 installed size:
+python3-pyc-3.11.6-r0 installed size:
 4096 B
 
-python3-pyc-3.11.5-r0 license:
+python3-pyc-3.11.6-r0 license:
 PSF-2.0
 
 ```
@@ -1033,16 +1033,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.11.5-r0 description:
+python3-pycache-pyc0-3.11.6-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.11.5-r0 webpage:
+python3-pycache-pyc0-3.11.6-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.11.5-r0 installed size:
+python3-pycache-pyc0-3.11.6-r0 installed size:
 13 MiB
 
-python3-pycache-pyc0-3.11.5-r0 license:
+python3-pycache-pyc0-3.11.6-r0 license:
 PSF-2.0
 
 ```
