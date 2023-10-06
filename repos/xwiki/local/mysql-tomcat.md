@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9d10e8d4cbe0c247bc8faf96e73e66b82a6aad37c6c5de4d503e078cb24ada0d`
-- Created: `2023-09-25T22:32:40.57011727Z`
+- Image ID: `sha256:2767c84cfbed1ed858ea7ca0b22b50da0b93b8d8b0b4da108ecd147b5495634d`
+- Created: `2023-10-03T11:46:10.34766696Z`
 - Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -445,11 +445,11 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.debian.tar.xz' coreutils_8.32-4.1ubuntu1.debian.tar.xz 41096 SHA512:74adfa2f2a85af8d7024ad6d13942e915217dcb10e29caa9c314e0a15da6ec019e7aa52ac5351c35ccea1bace7a05c6dc7569b7b0487c8fcd46b3ba42d66d89d
 ```
 
-### `dpkg` source package: `cups=2.4.1op1-1ubuntu4.4`
+### `dpkg` source package: `cups=2.4.1op1-1ubuntu4.7`
 
 Binary Packages:
 
-- `libcups2:amd64=2.4.1op1-1ubuntu4.4`
+- `libcups2:amd64=2.4.1op1-1ubuntu4.7`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -460,9 +460,14 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `FSFUL`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cups=2.4.1op1-1ubuntu4.7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.7.dsc' cups_2.4.1op1-1ubuntu4.7.dsc 3135 SHA512:e45b8d6691f42d3946540edd28747edccc4409aeec0e759cf777bd4c3207715dc32efef5b62b7eec4c75d4c84f1883596d1709d4bba265f51bdfa8b688dd5b6e
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1.orig.tar.gz' cups_2.4.1op1.orig.tar.gz 8113914 SHA512:74e83728fcc3baf709176442b26711250fd4d4ede1e81e35b02a5607711067e28cd5a05d5bc3337953f6b2236c5a429b13f3a7f1218a08a2d3c30a8c9b0d96fd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.7.debian.tar.xz' cups_2.4.1op1-1ubuntu4.7.debian.tar.xz 357988 SHA512:be0569e54882c139044c4679e4ecaeabafa91e379a274f0ab39305cdd1223b5db97b9d96f8744dcb161f2a3ea59644f21d860d92d8c92c79b4d25b1f8d6c79ac
+```
 
 ### `dpkg` source package: `curl=7.81.0-1ubuntu1.13`
 
@@ -910,13 +915,13 @@ $ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.2.debian.tar.xz' glib2.0_2.72.4-0ubuntu2.2.debian.tar.xz 128540 SHA512:d1f23d47687f1d5689a44d0c43a70d4a35d7a719dc3fa6b0ac516f0b1e4e07ee9be37dcf3671e51387c241b1abc7034f9959ef8ca85c249bcc9a541e93c88cc0
 ```
 
-### `dpkg` source package: `glibc=2.35-0ubuntu3.1`
+### `dpkg` source package: `glibc=2.35-0ubuntu3.3`
 
 Binary Packages:
 
-- `libc-bin=2.35-0ubuntu3.1`
-- `libc6:amd64=2.35-0ubuntu3.1`
-- `locales=2.35-0ubuntu3.1`
+- `libc-bin=2.35-0ubuntu3.3`
+- `libc6:amd64=2.35-0ubuntu3.3`
+- `locales=2.35-0ubuntu3.3`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
@@ -2460,19 +2465,24 @@ $ apt-get source -qq --print-uris libvisio=0.1.7-1build5
 'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvisio/libvisio_0.1.7-1build5.debian.tar.xz' libvisio_0.1.7-1build5.debian.tar.xz 8356 SHA512:90bd1f37d34ce228d80e760535cabb167bf36c6c80588d09ce004af522eb8f7e1e9760da3c40ade6c8487ffb191e4f7bade94022441b8861f205430321d20d85
 ```
 
-### `dpkg` source package: `libwebp=1.2.2-2ubuntu0.22.04.1`
+### `dpkg` source package: `libwebp=1.2.2-2ubuntu0.22.04.2`
 
 Binary Packages:
 
-- `libwebp7:amd64=1.2.2-2ubuntu0.22.04.1`
+- `libwebp7:amd64=1.2.2-2ubuntu0.22.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libwebp7/copyright`)
 
 - `Apache-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libwebp=1.2.2-2ubuntu0.22.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.2.2-2ubuntu0.22.04.2.dsc' libwebp_1.2.2-2ubuntu0.22.04.2.dsc 2186 SHA512:b81aa127277d4927b79d4ea5c8b63369f0b63e4944cc70bd98b277a1ae890169d91f4a0f30502830975bd2e34faa7a861b82d61f19ef660be1b7cf1d86010668
+'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.2.2.orig.tar.gz' libwebp_1.2.2.orig.tar.gz 4117468 SHA512:0dd0a721352b513a218d55383bcd0cc45b786df8089f70f87257b5dcc0c4e2f1798e20f1ca98b8fe51710abb667f9c4c14f20f980a11c484c8832f0dc66e3bff
+'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.2.2-2ubuntu0.22.04.2.debian.tar.xz' libwebp_1.2.2-2ubuntu0.22.04.2.debian.tar.xz 10468 SHA512:3c524505239652dbd3252aaaeee9161b0bb4c2ad146849341e87370760554de17d748d9b6f03c5e35db2d3f3dfedcf5e62b165502d207d2a114bda907483a830
+```
 
 ### `dpkg` source package: `libwpd=0.10.3-2build1`
 
@@ -2547,15 +2557,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libx11=2:1.7.5-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5-1ubuntu0.2.dsc' libx11_1.7.5-1ubuntu0.2.dsc 2654 SHA512:8e39fbaeb78d1aea852053255b8b1bdb1261fcd37461c8738b7de5a263aeb5c45d3294e3a23929374f6b12b16fbe1d682b1f19a41757e6896b8d81dbc5484006
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5.orig.tar.gz' libx11_1.7.5.orig.tar.gz 3170022 SHA512:90474f5f95c3498a02100aeeb6b5ad7ae9076bc40a70cdd828bd881adac0bf278002186142f2760e5504cf82120f4869798831e0e2332ecbc6903e8f7c9114ab
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5.orig.tar.gz.asc' libx11_1.7.5.orig.tar.gz.asc 358 SHA512:75139b9f7b2f19aed3d3a66ea8b883480db2fa56d713bb0160ea8a0faba208da4c241768f9f2703f723f13906438eda3117f489d7d5d17fbe1cbb75b13c9935d
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5-1ubuntu0.2.diff.gz' libx11_1.7.5-1ubuntu0.2.diff.gz 95625 SHA512:7531825daa8fe9779499603ec4fdfe989e9377de068af274dbcb1aeeadc8f6adf32d5167fe986a866283437783ef0e4f92e39a38dffc2408e4ad670454d14356
-```
 
 ### `dpkg` source package: `libxau=1:1.0.9-1build5`
 
@@ -3671,12 +3675,12 @@ $ apt-get source -qq --print-uris suitesparse=1:5.10.1+dfsg-4build1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/suitesparse/suitesparse_5.10.1%2bdfsg-4build1.debian.tar.xz' suitesparse_5.10.1+dfsg-4build1.debian.tar.xz 23168 SHA512:56f5c555ebc8faed35998582edd66ea1068b5846cf488d0ebefd16f0b43eeeebf1878990e5000aca2635f5aca33dcda996e6b69eefe27dc5b2a92c8c8b090e72
 ```
 
-### `dpkg` source package: `systemd=249.11-0ubuntu3.9`
+### `dpkg` source package: `systemd=249.11-0ubuntu3.10`
 
 Binary Packages:
 
-- `libsystemd0:amd64=249.11-0ubuntu3.9`
-- `libudev1:amd64=249.11-0ubuntu3.9`
+- `libsystemd0:amd64=249.11-0ubuntu3.10`
+- `libudev1:amd64=249.11-0ubuntu3.10`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -3689,9 +3693,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.10
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.10.dsc' systemd_249.11-0ubuntu3.10.dsc 5932 SHA512:227ae1cdbfb9c3ec2f243eae96025d4452ac818e3a7774003141ab922821c55308c34aef5eddabc475f5276de9fd5f3db24c2cab18952eb53df8232157fe9a51
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.10.debian.tar.xz' systemd_249.11-0ubuntu3.10.debian.tar.xz 251360 SHA512:951aaf5b6187bc29a46e2bedb1395249b74fc6601c1cbb3a6e839f48d564a7ab5e45ff72bede2384075e6a1c4847202bb2acdf246829cd46118be9a9f686e6e3
+```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
