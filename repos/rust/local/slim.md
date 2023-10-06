@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:76468a10e55ff96020e853aed5c1d4e789f8e68288aef59adf5e8866f19e610e`
-- Created: `2023-09-20T07:02:29.065879637Z`
-- Virtual Size: ~ 851.89 Mb  
+- Image ID: `sha256:c03bd4c2cb6d57e789e7fa8692c96f19ceb1d7a1c5e0f85b758aad5fc116c53d`
+- Created: `2023-10-06T01:34:45.55572999Z`
+- Virtual Size: ~ 859.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.72.1`
+  - `RUST_VERSION=1.73.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -750,14 +750,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-defaults/1.203/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-defaults/1.203/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.36-9+deb12u1`
+### `dpkg` source package: `glibc=2.36-9+deb12u3`
 
 Binary Packages:
 
-- `libc-bin=2.36-9+deb12u1`
-- `libc-dev-bin=2.36-9+deb12u1`
-- `libc6:amd64=2.36-9+deb12u1`
-- `libc6-dev:amd64=2.36-9+deb12u1`
+- `libc-bin=2.36-9+deb12u3`
+- `libc-dev-bin=2.36-9+deb12u3`
+- `libc6:amd64=2.36-9+deb12u3`
+- `libc6-dev:amd64=2.36-9+deb12u3`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
@@ -767,17 +767,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.36-9+deb12u1
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36-9%2bdeb12u1.dsc' glibc_2.36-9+deb12u1.dsc 9761 SHA256:03836129b0adc6e3aba725e59f9c5fb220c152c1366a7ecbe6eeb7bd0b67df1e
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36.orig.tar.xz' glibc_2.36.orig.tar.xz 19363988 SHA256:a543c02070d46ccaf866957efd13f10c924daa74c86a90a0254db09a92a708ee
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36-9%2bdeb12u1.debian.tar.xz' glibc_2.36-9+deb12u1.debian.tar.xz 847736 SHA256:8986cea1e8592d804d21f21162b4cfabb782164098b156d9422f962cef79b1be
+$ apt-get source -qq --print-uris glibc=2.36-9+deb12u3
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u3.dsc' glibc_2.36-9+deb12u3.dsc 9761 SHA256:286c10802114f59c18b7f15b661d416d0448a0bfe0abc5ef1db3695c7eb9a63c
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36.orig.tar.xz' glibc_2.36.orig.tar.xz 19363988 SHA256:a543c02070d46ccaf866957efd13f10c924daa74c86a90a0254db09a92a708ee
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u3.debian.tar.xz' glibc_2.36-9+deb12u3.debian.tar.xz 860160 SHA256:eb8d781c1b41bfa5ef578b59acc842532cadf4039c04b807f1c161d2224cc480
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.36-9+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.36-9+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.36-9+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.36-9+deb12u3/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.36-9+deb12u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.36-9+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg1-1.1`
 
