@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:387630f2f5975f00e6c1de1a2050ffce77d55a99fa889dcc4a45263710ace5fd`
-- Created: `2023-08-09T11:14:41.885713632Z`
-- Virtual Size: ~ 356.80 Mb  
+- Image ID: `sha256:9ce1201f82f51c3ac09a71f8b946b71a76de6a3abbcb2d29ce2f589b77c1e8ce`
+- Created: `2023-10-06T02:22:24.656631151Z`
+- Virtual Size: ~ 362.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -664,16 +664,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1v-r0 description:
+libcrypto1.1-1.1.1w-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1v-r0 webpage:
+libcrypto1.1-1.1.1w-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1v-r0 installed size:
+libcrypto1.1-1.1.1w-r0 installed size:
 2708 KiB
 
-libcrypto1.1-1.1.1v-r0 license:
+libcrypto1.1-1.1.1w-r0 license:
 OpenSSL
 
 ```
@@ -987,16 +987,16 @@ ISC
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1v-r0 description:
+libssl1.1-1.1.1w-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1v-r0 webpage:
+libssl1.1-1.1.1w-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1v-r0 installed size:
+libssl1.1-1.1.1w-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1v-r0 license:
+libssl1.1-1.1.1w-r0 license:
 OpenSSL
 
 ```
@@ -1055,16 +1055,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libwebp`
 
 ```console
-libwebp-1.2.3-r1 description:
+libwebp-1.2.3-r2 description:
 Libraries for working with WebP images
 
-libwebp-1.2.3-r1 webpage:
+libwebp-1.2.3-r2 webpage:
 https://developers.google.com/speed/webp
 
-libwebp-1.2.3-r1 installed size:
+libwebp-1.2.3-r2 installed size:
 584 KiB
 
-libwebp-1.2.3-r1 license:
+libwebp-1.2.3-r2 license:
 BSD-3-Clause
 
 ```
@@ -1412,16 +1412,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1v-r0 description:
+openssl-1.1.1w-r0 description:
 toolkit for transport layer security (TLS) - version 1.1
 
-openssl-1.1.1v-r0 webpage:
+openssl-1.1.1w-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1v-r0 installed size:
+openssl-1.1.1w-r0 installed size:
 660 KiB
 
-openssl-1.1.1v-r0 license:
+openssl-1.1.1w-r0 license:
 OpenSSL
 
 ```
