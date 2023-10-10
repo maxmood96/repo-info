@@ -944,21 +944,13 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.10.2-2
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.10.2-2.dsc' libgcrypt20_1.10.2-2.dsc 2806 SHA256:98f0e92e279815de7d194ad4613e09ce273a9f885b0623fb96a7c2dd054fb55c
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.10.2.orig.tar.bz2' libgcrypt20_1.10.2.orig.tar.bz2 3795164 SHA256:3b9c02a004b68c256add99701de00b383accccf37177e0d6c58289664cce0c03
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.10.2.orig.tar.bz2.asc' libgcrypt20_1.10.2.orig.tar.bz2.asc 228 SHA256:3b5b729d3969b3e828acc483709a686678cecaf20e8559eb525da905c7aa2bcb
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.10.2-2.debian.tar.xz' libgcrypt20_1.10.2-2.debian.tar.xz 35928 SHA256:af27c09663eec29c4c517db892a8b74096fadde77ac4986496bac8e390dd8f6c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libgcrypt20/1.10.2-2/
 
-- https://sources.debian.net/src/libgcrypt20/1.10.2-2/ (for browsing the source)
-- https://sources.debian.net/src/libgcrypt20/1.10.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgcrypt20/1.10.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.47-2`
 
@@ -1273,20 +1265,13 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 - `GPL-2`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-1
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-1.dsc' libzstd_1.5.5+dfsg2-1.dsc 2324 SHA256:503b2677c4d316fd409731949de064369d27a3addb858c2ca962ef65f91ed546
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2.orig.tar.xz' libzstd_1.5.5+dfsg2.orig.tar.xz 1784164 SHA256:d7cf3c10d416fd999cb8fcf7685d9268ba7bec8eb78121fc2d0d916fa393d22b
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-1.debian.tar.xz' libzstd_1.5.5+dfsg2-1.debian.tar.xz 21144 SHA256:1c5070fa2228e1ae1cca4798e2388a58bb4160c14714d518baa9ef595e80f864
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libzstd/1.5.5+dfsg2-1/
 
-- https://sources.debian.net/src/libzstd/1.5.5+dfsg2-1/ (for browsing the source)
-- https://sources.debian.net/src/libzstd/1.5.5+dfsg2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libzstd/1.5.5+dfsg2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 

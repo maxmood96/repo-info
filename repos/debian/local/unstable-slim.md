@@ -630,20 +630,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.37-10
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.37-10.dsc' glibc_2.37-10.dsc 8963 SHA256:2afcd949468ab5324a327f91e244a61713b1a1c5f7be64396129158993b36342
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.37.orig.tar.xz' glibc_2.37.orig.tar.xz 19503016 SHA256:d05f010158c16cef110fa1ab560c31477249ee2105360101858a5146aa6fe7d0
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.37-10.debian.tar.xz' glibc_2.37-10.debian.tar.xz 409524 SHA256:be5905e8120f0e1bad2a5111ed42240d4c990f69cb1a15d60870922dfa2b40b9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.37-10/
 
-- https://sources.debian.net/src/glibc/2.37-10/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.37-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.37-10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2`
 
@@ -957,21 +950,13 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.10.2-2
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.10.2-2.dsc' libgcrypt20_1.10.2-2.dsc 2806 SHA256:98f0e92e279815de7d194ad4613e09ce273a9f885b0623fb96a7c2dd054fb55c
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.10.2.orig.tar.bz2' libgcrypt20_1.10.2.orig.tar.bz2 3795164 SHA256:3b9c02a004b68c256add99701de00b383accccf37177e0d6c58289664cce0c03
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.10.2.orig.tar.bz2.asc' libgcrypt20_1.10.2.orig.tar.bz2.asc 228 SHA256:3b5b729d3969b3e828acc483709a686678cecaf20e8559eb525da905c7aa2bcb
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.10.2-2.debian.tar.xz' libgcrypt20_1.10.2-2.debian.tar.xz 35928 SHA256:af27c09663eec29c4c517db892a8b74096fadde77ac4986496bac8e390dd8f6c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libgcrypt20/1.10.2-2/
 
-- https://sources.debian.net/src/libgcrypt20/1.10.2-2/ (for browsing the source)
-- https://sources.debian.net/src/libgcrypt20/1.10.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgcrypt20/1.10.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.47-2`
 
@@ -1675,20 +1660,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.08-1
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08-1.dsc' sysvinit_3.08-1.dsc 2359 SHA256:916ab717e343396685a9643f19680c8b2f17e82aec4732141a67dec935c5ecc4
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08.orig.tar.gz' sysvinit_3.08.orig.tar.gz 513674 SHA256:325e42ae4ae5ae3e4d989e0604aeb5e4eae5f3ee21e401db3c79000718f8c836
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08-1.debian.tar.xz' sysvinit_3.08-1.debian.tar.xz 136848 SHA256:1ba64a28529b733500a96f1781c9fc8d177f47c5194c6aae18a242234a1c13de
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.08-1/
 
-- https://sources.debian.net/src/sysvinit/3.08-1/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.08-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.08-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.34+dfsg-1.2`
 
