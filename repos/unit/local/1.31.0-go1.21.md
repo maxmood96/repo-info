@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1890164ead88fd5f12d41fe5d79d608b54578b391984c22d20c196028467f184`
-- Created: `2023-10-05T21:45:48.975349123Z`
-- Virtual Size: ~ 796.16 Mb  
+- Image ID: `sha256:f0fba295b6f441f9cc6a84818fd1d58b0c3a5345fc0684fd72ab87fac731bc9f`
+- Created: `2023-10-10T19:45:59.663097244Z`
+- Virtual Size: ~ 804.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
 - Command: `["unitd","--no-daemon","--control","unix:/var/run/control.unit.sock"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.21.2`
+  - `GOLANG_VERSION=1.21.3`
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
 - Labels:
@@ -437,11 +437,33 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `curl=7.74.0-1.3+deb11u7`
 - `libcurl3-gnutls:amd64=7.74.0-1.3+deb11u7`
-- `libcurl4:amd64=7.74.0-1.3+deb11u7`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+- `other`
+- `public-domain`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u7/
+
+
+### `dpkg` source package: `curl=7.74.0-1.3+deb11u9`
+
+Binary Packages:
+
+- `curl=7.74.0-1.3+deb11u9`
+- `libcurl4:amd64=7.74.0-1.3+deb11u9`
+
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -453,17 +475,17 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.74.0-1.3+deb11u7
-'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0-1.3%2bdeb11u7.dsc' curl_7.74.0-1.3+deb11u7.dsc 2699 SHA256:8452753a20b1ad92c4c76deac3a883c1709a7b534edce864304ed9bb41aed976
-'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0.orig.tar.gz' curl_7.74.0.orig.tar.gz 4043409 SHA256:e56b3921eeb7a2951959c02db0912b5fcd5fdba5aca071da819e1accf338bbd7
-'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0-1.3%2bdeb11u7.debian.tar.xz' curl_7.74.0-1.3+deb11u7.debian.tar.xz 61052 SHA256:a601b1b524206ae3e3bdb1f3bb9f3576bc1cb1706acf3495ed546d41ccb8d866
+$ apt-get source -qq --print-uris curl=7.74.0-1.3+deb11u9
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.74.0-1.3%2bdeb11u9.dsc' curl_7.74.0-1.3+deb11u9.dsc 2699 SHA256:5adccef6b898b2a0aee402c6cb0aef72f8e287030f05ab5ff9ab3c625f6c5727
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.74.0.orig.tar.gz' curl_7.74.0.orig.tar.gz 4043409 SHA256:e56b3921eeb7a2951959c02db0912b5fcd5fdba5aca071da819e1accf338bbd7
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.74.0-1.3%2bdeb11u9.debian.tar.xz' curl_7.74.0-1.3+deb11u9.debian.tar.xz 70488 SHA256:4df4cf11aaefbec5280257bfe551ae78ddec0706a7ca41bb65614c28ef0c86d2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u7/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u7/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u9/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2.1+deb11u1`
 
@@ -654,9 +676,8 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `dpkg=1.20.12`
-- `libdpkg-perl=1.20.12`
 
-Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/libdpkg-perl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
 - `BSD-2-clause`
 - `GPL-2`
@@ -671,6 +692,34 @@ The source package *may* still be available for download from:
 
 - http://snapshot.debian.org/package/dpkg/1.20.12/
 
+
+### `dpkg` source package: `dpkg=1.20.13`
+
+Binary Packages:
+
+- `libdpkg-perl=1.20.13`
+
+Licenses: (parsed from: `/usr/share/doc/libdpkg-perl/copyright`)
+
+- `BSD-2-clause`
+- `GPL-2`
+- `GPL-2+`
+- `public-domain-md5`
+- `public-domain-s-s-d`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris dpkg=1.20.13
+'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.20.13.dsc' dpkg_1.20.13.dsc 2124 SHA256:fa618098428084fc5411f809bbc33922e126e4fefadfa525bfa6a1b0d09c863f
+'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.20.13.tar.xz' dpkg_1.20.13.tar.xz 5009848 SHA256:d2aa90535d750b20d1f40827344d74bb552ee5d40d3c24603496fd438f15424d
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/dpkg/1.20.13/ (for browsing the source)
+- https://sources.debian.net/src/dpkg/1.20.13/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dpkg/1.20.13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.46.2-2`
 
@@ -2505,7 +2554,6 @@ The source package *may* still be available for download from:
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1n-0+deb11u5`
 - `openssl=1.1.1n-0+deb11u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -2527,6 +2575,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssl/1.1.1n-0+deb11u5/ (for browsing the source)
 - https://sources.debian.net/src/openssl/1.1.1n-0+deb11u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssl/1.1.1n-0+deb11u5/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `openssl=1.1.1w-0+deb11u1`
+
+Binary Packages:
+
+- `libssl1.1:amd64=1.1.1w-0+deb11u1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1w-0+deb11u1
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1w-0%2bdeb11u1.dsc' openssl_1.1.1w-0+deb11u1.dsc 2652 SHA256:afbce4ea965ee02879ded4aec01030b2bd195014200e96c389e05f7e57c5bcbe
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1w.orig.tar.gz' openssl_1.1.1w.orig.tar.gz 9893384 SHA256:cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1w.orig.tar.gz.asc' openssl_1.1.1w.orig.tar.gz.asc 833 SHA256:5e5c3694cda755231c0438ac3c96af00d7510abd7b916d79c51bb979567040db
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1w-0%2bdeb11u1.debian.tar.xz' openssl_1.1.1w-0+deb11u1.debian.tar.xz 84088 SHA256:022636c62f183b6157b1a1c65a1365690b6e3db5b0db38a5258ec8f097a05998
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.22-1`
 
