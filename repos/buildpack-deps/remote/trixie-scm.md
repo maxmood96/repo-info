@@ -1,7 +1,7 @@
 ## `buildpack-deps:trixie-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:63edc0d6665d011ced0b5bc031b57fe7a5504e3af0125df465d470ae4ea145f1
+$ docker pull buildpack-deps@sha256:8caa7841649fbc59aefa0df887d70d5c19c453b4496aada220ed1cda3febc6ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -132,39 +132,39 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercuri
 ### `buildpack-deps:trixie-scm` - linux; arm64 variant v8
 
 ```console
-$ docker pull buildpack-deps@sha256:62cdd36e486fbfba31d2a255c213764972eb26e99f08194f4b844c196f51f9ed
+$ docker pull buildpack-deps@sha256:5d9bcecf36028c9169e4f22dcfb0789845cf6523bd944dd55eab22dd5d4ba9aa
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.1 MB (134112117 bytes)**  
+-	Total Size: **135.0 MB (135021557 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1690bd93425160bc1ebb8c7c2d8cb0487c2e9f140265b491a348e86040ad69ac`
+-	Image ID: `sha256:82b7c1249c50f4b3449269dc5abe7ee5c404db73aead5b7fe4b25aff61f441f6`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 20 Sep 2023 02:45:58 GMT
-ADD file:dc9be3a1e3e1904a1eb81053b568b583a58307e861fc56fb1b7ce9349d2faa18 in / 
-# Wed, 20 Sep 2023 02:45:59 GMT
+# Wed, 11 Oct 2023 18:26:37 GMT
+ADD file:ae967b7faba93d8a00f97f28b4d720835a90a27fe53b2f278072893f4cdaa8e7 in / 
+# Wed, 11 Oct 2023 18:26:38 GMT
 CMD ["bash"]
-# Wed, 20 Sep 2023 09:30:02 GMT
+# Wed, 11 Oct 2023 19:51:34 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 20 Sep 2023 09:30:17 GMT
+# Wed, 11 Oct 2023 19:51:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:4d433462e04ded836d58eebb0fee68803768bcf3c9f92338a2cdda77bf7bef8d`  
-		Last Modified: Wed, 20 Sep 2023 02:51:30 GMT  
-		Size: 49.4 MB (49404499 bytes)  
+	-	`sha256:ddf19dd473b427de200cf2b123540cd1dce2dcb51aeeb4a1359b7f954dc951ba`  
+		Last Modified: Wed, 11 Oct 2023 18:32:45 GMT  
+		Size: 49.5 MB (49505530 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6f21fb48a05deec994e76626b5ba27bca3dceb8c7026037ba821d1ea929fbf5`  
-		Last Modified: Wed, 20 Sep 2023 09:35:50 GMT  
-		Size: 20.1 MB (20054013 bytes)  
+	-	`sha256:3234e169293a5a7c5d4630e4d414fffc649556678901730a692ba3b43cd5e618`  
+		Last Modified: Wed, 11 Oct 2023 19:57:45 GMT  
+		Size: 20.1 MB (20110046 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afb2f4db47f9fa43103b397742352887aade94ad72694c0f3eb40923c90c10f5`  
-		Last Modified: Wed, 20 Sep 2023 09:36:05 GMT  
-		Size: 64.7 MB (64653605 bytes)  
+	-	`sha256:b71bac299e7b4e42a2756046d77fc625e1dc632615808cd1ec6bbcc2d48bf4f5`  
+		Last Modified: Wed, 11 Oct 2023 19:58:01 GMT  
+		Size: 65.4 MB (65405981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:trixie-scm` - linux; 386
