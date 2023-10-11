@@ -1,18 +1,46 @@
 ## `debian:unstable-20231009-slim`
 
 ```console
-$ docker pull debian@sha256:3c078636cbf0d8ad9341850ac7648607942b27cd1d723ba93bfb7eccf823ef0b
+$ docker pull debian@sha256:b9541dde063c7558e43a013c22a984313eb673f87c84832d4098a551bfc238c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 7
+-	Platforms: 9
+	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; mips64le
 	-	linux; ppc64le
 	-	linux; riscv64
 	-	linux; s390x
+
+### `debian:unstable-20231009-slim` - linux; amd64
+
+```console
+$ docker pull debian@sha256:9bad28b0901cc8e896c71b044f18ba273be772de483a882cd4aeda7327c4a9f3
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **29.4 MB (29365344 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7802ef957b186665eddc462d5c2505ee481017b5d6606ea820017e7bcf8987f6`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 11 Oct 2023 18:38:00 GMT
+ADD file:2c89fc780b5ff1e534dda47af3b88c5e4269d89e8baf387c7ed8662541fba3a4 in / 
+# Wed, 11 Oct 2023 18:38:00 GMT
+CMD ["bash"]
+```
+
+-	Layers:
+	-	`sha256:46fa912a325daf1e623206319e2726e3eca75403cb5b6641d0eb8da2bae6f341`  
+		Last Modified: Wed, 11 Oct 2023 18:45:05 GMT  
+		Size: 29.4 MB (29365344 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:unstable-20231009-slim` - linux; arm variant v5
 
@@ -64,6 +92,32 @@ CMD ["bash"]
 	-	`sha256:03a09d7007bf44c2bd05e859c4c325f077e180d103e54ec292f779739cea603b`  
 		Last Modified: Wed, 11 Oct 2023 17:51:45 GMT  
 		Size: 24.8 MB (24820920 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `debian:unstable-20231009-slim` - linux; arm64 variant v8
+
+```console
+$ docker pull debian@sha256:34b5206a0d3ff48c0f8e8cd1f0bfc5778070fa4da0262f32823faa56bf2a9bcc
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **29.4 MB (29371618 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7f460ed29c94bfd19765d88ae178866c00b0a16efa144d0befd3dc4c7b950ee2`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 11 Oct 2023 18:26:59 GMT
+ADD file:d529673e7d72dda2967511236066d74aa06bef8a824ff68b0ec50abe6ac19de3 in / 
+# Wed, 11 Oct 2023 18:26:59 GMT
+CMD ["bash"]
+```
+
+-	Layers:
+	-	`sha256:d403f6c1fc76b6226418492ed59296efa5faa8d61e310bb85f238941ccbd9389`  
+		Last Modified: Wed, 11 Oct 2023 18:33:30 GMT  
+		Size: 29.4 MB (29371618 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:unstable-20231009-slim` - linux; 386
