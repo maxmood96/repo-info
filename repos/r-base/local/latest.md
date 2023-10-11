@@ -427,15 +427,13 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.2.1-2
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.2.1-2.dsc' curl_8.2.1-2.dsc 3044 SHA256:ca420fccc2cdfa4ad2d655596c48b0b2498ed2b226f46679ff1b16033ddf6508
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.2.1.orig.tar.gz' curl_8.2.1.orig.tar.gz 4394020 SHA256:f98bdb06c0f52bdd19e63c4a77b5eb19b243bcbbd0f5b002b9f3cba7295a3a42
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.2.1.orig.tar.gz.asc' curl_8.2.1.orig.tar.gz.asc 488 SHA256:b3d8b2576891427ca038a83581372ebc18f648952f6693db5cb3a89f5bf7f4d3
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.2.1-2.debian.tar.xz' curl_8.2.1-2.debian.tar.xz 46048 SHA256:635ebaed33928d05e2a5fd58ad011764c194451482c601301fc7b5f614314633
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/curl/8.2.1-2/
+
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-3`
 
@@ -1434,20 +1432,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-lattice/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lattice=0.21-8-2
-'http://deb.debian.org/debian/pool/main/l/lattice/lattice_0.21-8-2.dsc' lattice_0.21-8-2.dsc 1838 SHA256:5c91fea06d31e1215bbb8ab715e4b0d63e8026354e77636b956d269ef40fbbfc
-'http://deb.debian.org/debian/pool/main/l/lattice/lattice_0.21-8.orig.tar.gz' lattice_0.21-8.orig.tar.gz 589330 SHA256:8ad3d6974262e6cab6cc8fec38aa279b5b2f2524adf6f3eab56f68302b60c329
-'http://deb.debian.org/debian/pool/main/l/lattice/lattice_0.21-8-2.debian.tar.xz' lattice_0.21-8-2.debian.tar.xz 5352 SHA256:d01eeff7d0d63f649df658d3d09a0ad06c06644e427377ba29082233ddbb26f3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lattice/0.21-8-2/
 
-- https://sources.debian.net/src/lattice/0.21-8-2/ (for browsing the source)
-- https://sources.debian.net/src/lattice/0.21-8-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lattice/0.21-8-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lerc=4.0.0+ds-3`
 
@@ -1650,15 +1641,13 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.10.2-2
-'http://http.debian.net/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.10.2-2.dsc' libgcrypt20_1.10.2-2.dsc 2806 SHA256:98f0e92e279815de7d194ad4613e09ce273a9f885b0623fb96a7c2dd054fb55c
-'http://http.debian.net/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.10.2.orig.tar.bz2' libgcrypt20_1.10.2.orig.tar.bz2 3795164 SHA256:3b9c02a004b68c256add99701de00b383accccf37177e0d6c58289664cce0c03
-'http://http.debian.net/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.10.2.orig.tar.bz2.asc' libgcrypt20_1.10.2.orig.tar.bz2.asc 228 SHA256:3b5b729d3969b3e828acc483709a686678cecaf20e8559eb525da905c7aa2bcb
-'http://http.debian.net/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.10.2-2.debian.tar.xz' libgcrypt20_1.10.2-2.debian.tar.xz 35928 SHA256:af27c09663eec29c4c517db892a8b74096fadde77ac4986496bac8e390dd8f6c
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libgcrypt20/1.10.2-2/
+
 
 ### `dpkg` source package: `libgpg-error=1.47-2`
 
@@ -1857,10 +1846,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libpng1.6=1.6.40-1
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.40-1.dsc' libpng1.6_1.6.40-1.dsc 2241 SHA256:3aaf5611229dca02ae9310f9ed9959fceee30fc34c5c81f6a5ce4e5a596365c1
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.40.orig.tar.gz' libpng1.6_1.6.40.orig.tar.gz 1520834 SHA256:62d25af25e636454b005c93cae51ddcd5383c40fa14aa3dae8f6576feb5692c2
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.40-1.debian.tar.xz' libpng1.6_1.6.40-1.debian.tar.xz 31092 SHA256:32b46be59d22e4f6b3f02b19265eeac2a1d67fa4076b0df3994ec62209475bc3
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.40-1.dsc' libpng1.6_1.6.40-1.dsc 2241 SHA256:3aaf5611229dca02ae9310f9ed9959fceee30fc34c5c81f6a5ce4e5a596365c1
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.40.orig.tar.gz' libpng1.6_1.6.40.orig.tar.gz 1520834 SHA256:62d25af25e636454b005c93cae51ddcd5383c40fa14aa3dae8f6576feb5692c2
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.40-1.debian.tar.xz' libpng1.6_1.6.40-1.debian.tar.xz 31092 SHA256:32b46be59d22e4f6b3f02b19265eeac2a1d67fa4076b0df3994ec62209475bc3
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libpng1.6/1.6.40-1/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.40-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.40-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1`
 
@@ -2144,21 +2139,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libx11=2:1.8.6-1
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.8.6-1.dsc' libx11_1.8.6-1.dsc 2509 SHA256:12d0bad855f51aa4ee6286f1c88acf6395fe6ea94b5416f79c664631bf5b83a8
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.8.6.orig.tar.gz' libx11_1.8.6.orig.tar.gz 3193457 SHA256:5ff0d26c94d82ebb94a944b9f1f55cd01b9713fd461fe93f62f3527ce14ad94e
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.8.6.orig.tar.gz.asc' libx11_1.8.6.orig.tar.gz.asc 801 SHA256:20b9fb0b6d80411dee9b6c3e2b5821ba0f26e59d1ac4c3e715e9d93679895126
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.8.6-1.diff.gz' libx11_1.8.6-1.diff.gz 73485 SHA256:7ddc8c5f32c4292fd7f525a75301d77d3010467639ce9f217416dc9031da97a5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libx11/2:1.8.6-1/
 
-- https://sources.debian.net/src/libx11/2:1.8.6-1/ (for browsing the source)
-- https://sources.debian.net/src/libx11/2:1.8.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libx11/2:1.8.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxau=1:1.0.9-1`
 
@@ -2350,14 +2337,13 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 - `GPL-2`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-1
-'http://http.debian.net/debian/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-1.dsc' libzstd_1.5.5+dfsg2-1.dsc 2324 SHA256:503b2677c4d316fd409731949de064369d27a3addb858c2ca962ef65f91ed546
-'http://http.debian.net/debian/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2.orig.tar.xz' libzstd_1.5.5+dfsg2.orig.tar.xz 1784164 SHA256:d7cf3c10d416fd999cb8fcf7685d9268ba7bec8eb78121fc2d0d916fa393d22b
-'http://http.debian.net/debian/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-1.debian.tar.xz' libzstd_1.5.5+dfsg2-1.debian.tar.xz 21144 SHA256:1c5070fa2228e1ae1cca4798e2388a58bb4160c14714d518baa9ef595e80f864
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libzstd/1.5.5+dfsg2-1/
+
 
 ### `dpkg` source package: `linux=6.4.13-1`
 
@@ -2706,15 +2692,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.10-1
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_3.0.10-1.dsc' openssl_3.0.10-1.dsc 2461 SHA256:c264f03731d2b2258c6875494a8a8980306758244808d22758b1d8c4ffcb7c2e
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_3.0.10.orig.tar.gz' openssl_3.0.10.orig.tar.gz 15194904 SHA256:1761d4f5b13a1028b9b6f3d4b8e17feb0cedc9370f6afe61d7193d2cdce83323
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_3.0.10.orig.tar.gz.asc' openssl_3.0.10.orig.tar.gz.asc 833 SHA256:f6f2e5f62e74a7f87d37e0d1de70b3612b01a9afcfdc00bc05fde82611f26e3d
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_3.0.10-1.debian.tar.xz' openssl_3.0.10-1.debian.tar.xz 69012 SHA256:38ee9bd198c5f49fa4315cfb3884fe0fb78818d9caed2f9c7a428889cfd4a825
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/openssl/3.0.10-1/
+
 
 ### `dpkg` source package: `p11-kit=0.25.0-4`
 
