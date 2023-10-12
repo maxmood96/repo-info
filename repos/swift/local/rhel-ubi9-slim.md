@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:52100276cf7bb4099dc414a784a45438a5d61be58ac4e8e5ced2aaf69bb28508`
-- Created: `2023-09-20T03:37:44.905459782Z`
-- Virtual Size: ~ 328.45 Mb  
+- Image ID: `sha256:4702b1f92a5927255bdf89b0e6a17dacac37cd54d8dc7baacdd38e0d1059e6b3`
+- Created: `2023-10-10T23:59:17.601202453Z`
+- Virtual Size: ~ 328.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2023-09-05T09:00:57`
+  - `build-date=2023-10-05T14:03:48`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,9 +30,9 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=755`
+  - `release=755.1696514207`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.2-755`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.2-755.1696514207`
   - `vcs-ref=6b5892a11894993e819f9a93ee1d7aaa80dc3a17`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -244,19 +244,19 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-2.34-60.el9.x86_64`
+### `rpm` package: `glibc-2.34-60.el9_2.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-common-2.34-60.el9.x86_64`
+### `rpm` package: `glibc-common-2.34-60.el9_2.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-minimal-langpack-2.34-60.el9.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-60.el9_2.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
@@ -778,7 +778,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-3.9.16-1.el9_2.1.x86_64`
+### `rpm` package: `python3-3.9.16-1.el9_2.2.x86_64`
 
 Licenses (from `rpm --query`): Python
 
@@ -892,7 +892,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-libs-3.9.16-1.el9_2.1.x86_64`
+### `rpm` package: `python3-libs-3.9.16-1.el9_2.2.x86_64`
 
 Licenses (from `rpm --query`): Python
 

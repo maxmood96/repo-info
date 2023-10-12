@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9e2a309c3f1a34d16e4b4057ed4d98312db22b148b2f608b6625a8aac0f6f107`
-- Created: `2023-09-20T03:37:09.403811758Z`
+- Image ID: `sha256:68b2ff02e6a48ca18af7e413e6f5338abe326ef5bf0cacae10e8d5153d1b9b29`
+- Created: `2023-10-10T23:58:39.214160531Z`
 - Virtual Size: ~ 2.45 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2023-09-05T09:00:57`
+  - `build-date=2023-10-05T14:03:48`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,9 +30,9 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=755`
+  - `release=755.1696514207`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.2-755`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.2-755.1696514207`
   - `vcs-ref=6b5892a11894993e819f9a93ee1d7aaa80dc3a17`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -310,31 +310,31 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-2.34-60.el9.x86_64`
+### `rpm` package: `glibc-2.34-60.el9_2.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-common-2.34-60.el9.x86_64`
+### `rpm` package: `glibc-common-2.34-60.el9_2.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-devel-2.34-60.el9.x86_64`
+### `rpm` package: `glibc-devel-2.34-60.el9_2.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-headers-2.34-60.el9.x86_64`
+### `rpm` package: `glibc-headers-2.34-60.el9_2.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-minimal-langpack-2.34-60.el9.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-60.el9_2.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
@@ -1378,7 +1378,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-3.9.16-1.el9_2.1.x86_64`
+### `rpm` package: `python3-3.9.16-1.el9_2.2.x86_64`
 
 Licenses (from `rpm --query`): Python
 
@@ -1414,7 +1414,7 @@ Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-devel-3.9.16-1.el9_2.1.x86_64`
+### `rpm` package: `python3-devel-3.9.16-1.el9_2.2.x86_64`
 
 Licenses (from `rpm --query`): Python
 
@@ -1498,7 +1498,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-libs-3.9.16-1.el9_2.1.x86_64`
+### `rpm` package: `python3-libs-3.9.16-1.el9_2.2.x86_64`
 
 Licenses (from `rpm --query`): Python
 
