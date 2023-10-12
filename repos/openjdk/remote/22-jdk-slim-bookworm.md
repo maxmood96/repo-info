@@ -1,7 +1,7 @@
 ## `openjdk:22-jdk-slim-bookworm`
 
 ```console
-$ docker pull openjdk@sha256:8ca84cf6401758dd535f81ffcc3f37ec907d5ff56e21464d375f4ed98d4ab394
+$ docker pull openjdk@sha256:2ab7e4266055a845101029748747bc36718d4e2e0bcf63d24a0c0c989999eca5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -60,47 +60,47 @@ CMD ["jshell"]
 ### `openjdk:22-jdk-slim-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull openjdk@sha256:d4d30c40105beaeef2fe104a860f7802cbdd7c8728791fd0da5313929b648cf2
+$ docker pull openjdk@sha256:f50d6216925b451d3db65ebcaf214fa1b81ba3c6f9df698e77b78eada1bd8b57
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **236.7 MB (236739517 bytes)**  
+-	Total Size: **236.8 MB (236771224 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fd30617383b36e000a80b69bdec47e19ccc22676cced330d1f5d18536480c5ad`
+-	Image ID: `sha256:d93e729d0d22f8e4caded9ccd52548af814c09ff166a3b58ec85e979221c2659`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Wed, 20 Sep 2023 02:44:13 GMT
-ADD file:ec1a6e0aedd76c8fdc8544775f8b553f58950e9435f5cfe919f39374e222cfbb in / 
-# Wed, 20 Sep 2023 02:44:14 GMT
+# Wed, 11 Oct 2023 18:24:51 GMT
+ADD file:5c81bfc00a28feb4079c0daa743f829a6a5bbc1a9d40a890cb49e420539a7f15 in / 
+# Wed, 11 Oct 2023 18:24:51 GMT
 CMD ["bash"]
-# Wed, 20 Sep 2023 17:57:26 GMT
+# Wed, 11 Oct 2023 22:50:08 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 20 Sep 2023 17:57:26 GMT
+# Wed, 11 Oct 2023 22:50:08 GMT
 ENV JAVA_HOME=/usr/local/openjdk-22
-# Wed, 20 Sep 2023 17:57:26 GMT
+# Wed, 11 Oct 2023 22:50:09 GMT
 ENV PATH=/usr/local/openjdk-22/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 20 Sep 2023 17:57:26 GMT
+# Wed, 11 Oct 2023 22:50:09 GMT
 ENV LANG=C.UTF-8
-# Fri, 06 Oct 2023 20:23:37 GMT
+# Wed, 11 Oct 2023 22:50:09 GMT
 ENV JAVA_VERSION=22-ea+18
-# Fri, 06 Oct 2023 20:23:51 GMT
+# Wed, 11 Oct 2023 22:50:22 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk22/18/GPL/openjdk-22-ea+18_linux-x64_bin.tar.gz'; 			downloadSha256='07830a4cc21745464a68057e8c441e98d4cd673cd02348e9791d9eafe9f3d0df'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk22/18/GPL/openjdk-22-ea+18_linux-aarch64_bin.tar.gz'; 			downloadSha256='03432a54970a3005c521d34b44a2438ac28f8fe150bf686e28cea6ea9b2a002e'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Fri, 06 Oct 2023 20:23:53 GMT
+# Wed, 11 Oct 2023 22:50:24 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:e886f0f47ef56fcadb6ecaf2116056bbdb273e0afe07ed034498b198d386c04e`  
-		Last Modified: Wed, 20 Sep 2023 02:47:36 GMT  
-		Size: 29.2 MB (29157221 bytes)  
+	-	`sha256:1bc163a14ea6a886d1d0f9a9be878b1ffd08a9311e15861137ccd85bb87190f9`  
+		Last Modified: Wed, 11 Oct 2023 18:28:28 GMT  
+		Size: 29.2 MB (29179284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c190c8d653feddc1553f480657f5813ecd07f1979c94ef5b5afa2b7c9c278ca4`  
-		Last Modified: Wed, 20 Sep 2023 18:00:57 GMT  
-		Size: 3.8 MB (3817580 bytes)  
+	-	`sha256:4a1addc1e1c2c75c85302c72986bed4391fe81acea06679d6de790ea18001eb6`  
+		Last Modified: Wed, 11 Oct 2023 22:52:19 GMT  
+		Size: 3.8 MB (3825526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:740257b11c72f00182c0d5b6de6c019f9da4fa24528bd0d12b7ce198f99d7c40`  
-		Last Modified: Fri, 06 Oct 2023 20:27:01 GMT  
-		Size: 203.8 MB (203764716 bytes)  
+	-	`sha256:9091fc1b3d45a7c0347a78df868154b582671bbc328251117c0036efe01f654a`  
+		Last Modified: Wed, 11 Oct 2023 22:52:32 GMT  
+		Size: 203.8 MB (203766414 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
