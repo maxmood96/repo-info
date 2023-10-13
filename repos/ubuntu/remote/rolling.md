@@ -1,7 +1,7 @@
 ## `ubuntu:rolling`
 
 ```console
-$ docker pull ubuntu@sha256:f1090cfa89ab321a6d670e79652f61593502591f2fc7452fb0b7c6da575729c4
+$ docker pull ubuntu@sha256:0fb34c7833dd5068f98180c802000187ca9a0c5fa8960b6c50d4965c34bb1e43
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -49,35 +49,35 @@ CMD ["/bin/bash"]
 ### `ubuntu:rolling` - linux; arm variant v7
 
 ```console
-$ docker pull ubuntu@sha256:1e9568cacc4bd0a59a44d8e68ae8fc5f4287c132d455492881f7a1106b722beb
+$ docker pull ubuntu@sha256:2a465a4c4831c57977b6646e481f504061294f1bf1ae1b99fb5d93c67b8a471a
 ```
 
 -	Docker Version: 20.10.21
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.6 MB (24627247 bytes)**  
+-	Total Size: **25.2 MB (25201383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e46f21739314ec025a0ce92c7a657ddb65785a29870d74435a08554207fb3688`
+-	Image ID: `sha256:bc753c284b47a7a5ff3ec2e926551ba95dc6c9072415649cb13a9cdff503dc04`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 16 Aug 2023 04:16:11 GMT
+# Wed, 11 Oct 2023 18:02:33 GMT
 ARG RELEASE
-# Wed, 16 Aug 2023 04:16:11 GMT
+# Wed, 11 Oct 2023 18:02:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 16 Aug 2023 04:16:11 GMT
+# Wed, 11 Oct 2023 18:02:34 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 16 Aug 2023 04:16:11 GMT
-LABEL org.opencontainers.image.version=23.04
-# Wed, 16 Aug 2023 04:16:16 GMT
-ADD file:1f1c9502544acdbb6a7450226ced78cfe982a6305f2aea77ab7d1f73b50fc7f0 in / 
-# Wed, 16 Aug 2023 04:16:16 GMT
+# Wed, 11 Oct 2023 18:02:34 GMT
+LABEL org.opencontainers.image.version=23.10
+# Wed, 11 Oct 2023 18:02:39 GMT
+ADD file:1be1311acbd557f7769fb5c1913ef56305431e7547f96c20ac36284fdd926223 in / 
+# Wed, 11 Oct 2023 18:02:39 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:e05ef4abc6c76087042349392d272a7eeb590834dc45d1247295302c212fda9d`  
-		Last Modified: Wed, 16 Aug 2023 04:34:45 GMT  
-		Size: 24.6 MB (24627247 bytes)  
+	-	`sha256:8761b0d436cd2e1ff47496b7cc353cf0b49347ffc92b070c31a5cf5431041614`  
+		Last Modified: Wed, 11 Oct 2023 18:18:00 GMT  
+		Size: 25.2 MB (25201383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:rolling` - linux; arm64 variant v8
