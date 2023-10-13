@@ -1,7 +1,7 @@
 ## `redis:6-bookworm`
 
 ```console
-$ docker pull redis@sha256:ba546734b5c2ea3da0d394d94b4ddde7cf0e7cd61d732218f5685e9d987124a7
+$ docker pull redis@sha256:8ad7b2233287c9de3173f61443ee0525d079edfc877630d6fb7d058bcba0d3cf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -626,19 +626,19 @@ $ docker pull redis@sha256:49e0d3b152ec7b243561e66ac3e3d5faea2b555df94632ec324cc
 ### `redis:6-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:6744576ddd7bc6ac085e93f1f1db1cac1ce2fd7bf2bc4483a2fcf0fff9225d20
+$ docker pull redis@sha256:f03a4c8512611b83ddab392b3fc7e9786df17870ab0381e0a50e9953770478fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **58.3 MB (58319706 bytes)**  
+-	Total Size: **51.7 MB (51711370 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92577b814b3090404d54f5d60c03664e04321d014e4ace66c1c275a2c8567ccb`
+-	Image ID: `sha256:7fea12261bd5316234c3a2d8f17491aea630cef78f9f71dc3314fbefe3e657c9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 10 Jul 2023 15:03:13 GMT
-ADD file:9a37b479e68a0d18babbef8dd04d09a0e6844a0080876d14144a34bfd9d0897a in / 
+ADD file:53c83bdd58e7c4003ae769596cc2f8e6b72c0bbb854dbe7f006a39f273848b1b in / 
 # Mon, 10 Jul 2023 15:03:13 GMT
 CMD ["bash"]
 # Mon, 10 Jul 2023 15:03:13 GMT
@@ -672,56 +672,56 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:696a66e961f2033dcf69b003ad7faf28ed2248da58efa1c08a9d496739a8eeeb`  
-		Last Modified: Wed, 20 Sep 2023 08:49:51 GMT  
-		Size: 33.1 MB (33119461 bytes)  
+	-	`sha256:54813908ce8a5d8a81f2db88ad0366eb5266484c7c402e5e93ef26e764f7a0e2`  
+		Last Modified: Wed, 11 Oct 2023 17:49:58 GMT  
+		Size: 33.1 MB (33141653 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7a5e143415842a5f669709af637faa5a01610f07493b4465e9dd6acf35e33fb`  
-		Last Modified: Tue, 03 Oct 2023 23:02:37 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:b53d7e0e4fb7b2a61ea74da3b57dc72a6cbacfa4d18a70798a92d49852954388`  
+		Last Modified: Fri, 13 Oct 2023 05:01:55 GMT  
+		Size: 1.1 KB (1101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5a8c07cdef0780ba543dc1c5271114516e2654b4927b012c80217e3654d4d1c`  
-		Last Modified: Tue, 03 Oct 2023 23:02:38 GMT  
-		Size: 1.4 MB (1358927 bytes)  
+	-	`sha256:ba7600c41a0214228558bfb83d937f602db349f891beaffe6127fa0f1f309b5a`  
+		Last Modified: Fri, 13 Oct 2023 05:01:56 GMT  
+		Size: 1.4 MB (1362694 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47b4e0f11d86188488b291e51aebedfb290816df33a904e528677dcab5ac63f7`  
-		Last Modified: Tue, 03 Oct 2023 23:10:58 GMT  
-		Size: 23.8 MB (23839516 bytes)  
+	-	`sha256:f35e552584e0c20c90eeb7e8762a88ba4ca1f29c4450d7835f475da57dedbef1`  
+		Last Modified: Fri, 13 Oct 2023 05:08:47 GMT  
+		Size: 17.2 MB (17205220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a01b31e2f6a1c7f3dda172c041f10055828d5f8aa4a6c5ffcb7edb44e6da8ff2`  
-		Last Modified: Tue, 03 Oct 2023 23:10:55 GMT  
+	-	`sha256:6728f72dfcf926ffbc8fb65210e3835dc9fa44a73966942b103267f141bf3a8b`  
+		Last Modified: Fri, 13 Oct 2023 05:08:46 GMT  
 		Size: 96.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47556463a78ecb0ab5e05768ebaaf2a68d3851b543dad5113b092281095573f4`  
-		Last Modified: Tue, 03 Oct 2023 23:10:56 GMT  
-		Size: 571.0 B  
+	-	`sha256:b34bf123debb35564003f88bfe9fbf499e1aef80ca8d2e253b5f71c7ad1b1991`  
+		Last Modified: Fri, 13 Oct 2023 05:08:46 GMT  
+		Size: 574.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:6-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:1b954c2b2bd8c32308e33a0ee65c1381d3d8b4fd18edb7434416dec6041707a0
+$ docker pull redis@sha256:f350829170db283b1455642da77c971a6c4d42c38ae3ed63049819a05828e59a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2897267 bytes)**  
+-	Total Size: **2.9 MB (2899140 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0363b7fb4f5e60c1eab0c0036d883c2ae99e9963ade9f34364db93c59543c494`
+-	Image ID: `sha256:be08b6438abcbfd4e17f2f5f2086706423532b26ab04032402465c11f3e0b003`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:014bf1615fa84b810eb6ce3db0cc6466442993c1a14ec55b8a78c6d9e2d3f009`  
-		Last Modified: Tue, 03 Oct 2023 23:10:55 GMT  
-		Size: 2.9 MB (2868528 bytes)  
+	-	`sha256:90e0c6f057e758510f877d5dae23c4e577b33b7ccff4b9cc9a896047c5aac296`  
+		Last Modified: Fri, 13 Oct 2023 05:08:46 GMT  
+		Size: 2.9 MB (2870401 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:748cb61c63d3537d01c5a66a6b77c097e2b72323e69c253b0591408ee72f2eb9`  
-		Last Modified: Tue, 03 Oct 2023 23:10:55 GMT  
+	-	`sha256:29d835d7ea9ff701254e212cfa6b002e1b9c3a85861099fe27ce4063b2830125`  
+		Last Modified: Fri, 13 Oct 2023 05:08:46 GMT  
 		Size: 28.7 KB (28739 bytes)  
 		MIME: application/vnd.in-toto+json
 
