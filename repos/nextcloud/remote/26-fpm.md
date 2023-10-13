@@ -1,7 +1,7 @@
 ## `nextcloud:26-fpm`
 
 ```console
-$ docker pull nextcloud@sha256:b4847aa291a798838e64fcdd4774218403af0595d8670f66402f2c85a2fd7713
+$ docker pull nextcloud@sha256:e43bab7519af14447dc99ec05da7ee3aa6eb9456a84ddb0e2f1800e7b6bb61bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -803,158 +803,158 @@ CMD ["php-fpm"]
 ### `nextcloud:26-fpm` - linux; mips64le
 
 ```console
-$ docker pull nextcloud@sha256:34ec1ac2706476c02632948b06c61219cd626fa77343ec1852dfc6a18871b8c3
+$ docker pull nextcloud@sha256:6453bf7d1ae79044aa478ea802936e7bba030a134a76dba15acdd4250891478c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **363.5 MB (363450297 bytes)**  
+-	Total Size: **363.3 MB (363284251 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96f1f025f9e31ce2190751a8d4205cdfe5ec31bb6d07a123aa413ba1b6b77fa7`
+-	Image ID: `sha256:3bd0a2e4a5fb41989bf08422f4c732a4c6264c02160813a119b244b3247cfb20`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Wed, 20 Sep 2023 03:10:01 GMT
-ADD file:850547a08e38ebc5a3659df86e70039a8d9828ae26ae485b077c98a959248dcb in / 
-# Wed, 20 Sep 2023 03:10:05 GMT
+# Wed, 11 Oct 2023 17:49:32 GMT
+ADD file:2abda0a72972a417d4f7f530ca8fa1ee7e85e25d4015fd4e70acf903cfd96d3d in / 
+# Wed, 11 Oct 2023 17:49:36 GMT
 CMD ["bash"]
-# Wed, 20 Sep 2023 10:07:11 GMT
+# Thu, 12 Oct 2023 11:52:21 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php
-# Wed, 20 Sep 2023 10:07:13 GMT
+# Thu, 12 Oct 2023 11:52:24 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Wed, 20 Sep 2023 10:09:02 GMT
+# Thu, 12 Oct 2023 11:54:08 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 20 Sep 2023 10:09:06 GMT
+# Thu, 12 Oct 2023 11:54:12 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Wed, 20 Sep 2023 10:09:11 GMT
+# Thu, 12 Oct 2023 11:54:17 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html
-# Wed, 20 Sep 2023 10:09:15 GMT
+# Thu, 12 Oct 2023 11:54:21 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 20 Sep 2023 10:09:18 GMT
+# Thu, 12 Oct 2023 11:54:24 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 20 Sep 2023 10:09:21 GMT
+# Thu, 12 Oct 2023 11:54:27 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Wed, 20 Sep 2023 12:17:35 GMT
+# Thu, 12 Oct 2023 14:02:43 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Sat, 30 Sep 2023 03:54:25 GMT
+# Thu, 12 Oct 2023 14:02:47 GMT
 ENV PHP_VERSION=8.2.11
-# Sat, 30 Sep 2023 03:54:28 GMT
+# Thu, 12 Oct 2023 14:02:50 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.2.11.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.11.tar.xz.asc
-# Sat, 30 Sep 2023 03:54:32 GMT
+# Thu, 12 Oct 2023 14:02:53 GMT
 ENV PHP_SHA256=29af82e4f7509831490552918aad502697453f0869a579ee1b80b08f9112c5b8
-# Sat, 30 Sep 2023 03:55:25 GMT
+# Thu, 12 Oct 2023 14:03:48 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Sat, 30 Sep 2023 03:55:27 GMT
+# Thu, 12 Oct 2023 14:03:51 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Sat, 30 Sep 2023 04:41:19 GMT
+# Thu, 12 Oct 2023 14:50:06 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Sat, 30 Sep 2023 04:41:22 GMT
+# Thu, 12 Oct 2023 14:50:10 GMT
 COPY multi:869bde9dbeae74886a05c9e2107b3e3b4877116db8c6d9adbaff2719f9fb5262 in /usr/local/bin/ 
-# Sat, 30 Sep 2023 04:41:29 GMT
+# Thu, 12 Oct 2023 14:50:16 GMT
 RUN docker-php-ext-enable sodium
-# Sat, 30 Sep 2023 04:41:32 GMT
+# Thu, 12 Oct 2023 14:50:19 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 30 Sep 2023 04:41:36 GMT
+# Thu, 12 Oct 2023 14:50:23 GMT
 WORKDIR /var/www/html
-# Sat, 30 Sep 2023 04:41:42 GMT
+# Thu, 12 Oct 2023 14:50:28 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini"
-# Sat, 30 Sep 2023 04:41:45 GMT
+# Thu, 12 Oct 2023 14:50:32 GMT
 STOPSIGNAL SIGQUIT
-# Sat, 30 Sep 2023 04:41:49 GMT
+# Thu, 12 Oct 2023 14:50:35 GMT
 EXPOSE 9000
-# Sat, 30 Sep 2023 04:41:52 GMT
+# Thu, 12 Oct 2023 14:50:38 GMT
 CMD ["php-fpm"]
-# Sat, 30 Sep 2023 10:03:05 GMT
+# Fri, 13 Oct 2023 08:32:48 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         busybox-static         bzip2         libldap-common         libmagickcore-6.q16-6-extra         rsync     ;     rm -rf /var/lib/apt/lists/*;         mkdir -p /var/spool/cron/crontabs;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data
-# Sat, 30 Sep 2023 10:03:08 GMT
+# Fri, 13 Oct 2023 08:32:51 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Sat, 30 Sep 2023 10:03:11 GMT
+# Fri, 13 Oct 2023 08:32:55 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Wed, 04 Oct 2023 23:31:46 GMT
+# Fri, 13 Oct 2023 08:44:14 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libgmp-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmagickwand-dev         libmcrypt-dev         libmemcached-dev         libpng-dev         libpq-dev         libwebp-dev         libxml2-dev         libzip-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         gd         gmp         intl         ldap         opcache         pcntl         pdo_mysql         pdo_pgsql         sysvsem         zip     ;         pecl install APCu-5.1.22;     pecl install imagick-3.7.0;     pecl install memcached-3.2.0;     pecl install redis-6.0.1;         docker-php-ext-enable         apcu         imagick         memcached         redis     ;     rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'         | sort -u         | xargs -r dpkg-query --search         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
-# Wed, 04 Oct 2023 23:31:52 GMT
+# Fri, 13 Oct 2023 08:44:21 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=128M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
-# Wed, 04 Oct 2023 23:31:56 GMT
+# Fri, 13 Oct 2023 08:44:25 GMT
 VOLUME [/var/www/html]
-# Wed, 04 Oct 2023 23:32:00 GMT
+# Fri, 13 Oct 2023 08:44:29 GMT
 ENV NEXTCLOUD_VERSION=26.0.7
-# Wed, 04 Oct 2023 23:35:00 GMT
+# Fri, 13 Oct 2023 08:47:23 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-26.0.7.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-26.0.7.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Wed, 04 Oct 2023 23:35:14 GMT
+# Fri, 13 Oct 2023 08:47:35 GMT
 COPY multi:460d0253b10a0268ebfb8482b4fa36d0d335e8207e35802a68bf2d6134195fbb in / 
-# Wed, 04 Oct 2023 23:35:23 GMT
+# Fri, 13 Oct 2023 08:47:45 GMT
 COPY multi:1aa0c68034f207c7e2fb6f047fda45b55878afe2781ef10723107e35ee22547e in /usr/src/nextcloud/config/ 
-# Wed, 04 Oct 2023 23:35:32 GMT
+# Fri, 13 Oct 2023 08:47:54 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 04 Oct 2023 23:35:41 GMT
+# Fri, 13 Oct 2023 08:48:02 GMT
 CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:0f581c6294fe7421dfee024e2c7dddd73ef3fbd7ff23b05bc3c1bf9f50885e85`  
-		Last Modified: Wed, 20 Sep 2023 03:20:59 GMT  
-		Size: 29.1 MB (29121674 bytes)  
+	-	`sha256:f11870ec99d788b4b160d9f3f4c0a79904290083d8930b26e5d13579226e07f0`  
+		Last Modified: Wed, 11 Oct 2023 18:00:43 GMT  
+		Size: 29.1 MB (29142026 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13be0169bbca45d04b6865d960fa18b85165b8512d8b6586743bc395e961aae5`  
-		Last Modified: Wed, 20 Sep 2023 21:18:54 GMT  
+	-	`sha256:2fa3cb5552d8848983ea3b00539f47b5eff146a622e4ebd05a9d188040287a7a`  
+		Last Modified: Thu, 12 Oct 2023 19:01:39 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f78fa1c50adc35b8a5d3ed371ce4ecc5fdd6ddd827aac2af4c9f5dcc0295f4f4`  
-		Last Modified: Wed, 20 Sep 2023 21:19:51 GMT  
-		Size: 80.7 MB (80671000 bytes)  
+	-	`sha256:fe0e7f2730c8e3e2cdc1f01765d9ecf6d1ee43dc49c50b96ba421ef20e1c1e9d`  
+		Last Modified: Thu, 12 Oct 2023 19:02:35 GMT  
+		Size: 80.5 MB (80479552 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65a2620da2ab8ff2c4c00daed91ea144d334623c7de2d739f7e905cee010fa21`  
-		Last Modified: Wed, 20 Sep 2023 21:18:54 GMT  
+	-	`sha256:4a6c90aa7ef8a5681337d64498c02e9049f04429a247557312602ae8b0d20b4c`  
+		Last Modified: Thu, 12 Oct 2023 19:01:39 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93069a9a81f243d055a2b4c3e27b04bdef52bb0318467c862686c605e71a9bd6`  
-		Last Modified: Sat, 30 Sep 2023 07:59:59 GMT  
-		Size: 12.2 MB (12153111 bytes)  
+	-	`sha256:0944966fcef988c4c989621f59dd4b9e9f494f5d0fb2371f4f2af7f66cdf7ad9`  
+		Last Modified: Thu, 12 Oct 2023 19:07:13 GMT  
+		Size: 12.2 MB (12153236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:562ef06b366e9ddbe12c41860d97594be14100dae8aaf0c5b08c7be6f854c8d4`  
-		Last Modified: Sat, 30 Sep 2023 07:59:56 GMT  
-		Size: 494.0 B  
+	-	`sha256:6ee130c5de7aded7c7caf8d739e2f0cdb2f0f03efc1f3c689f6ec3c8d802dd14`  
+		Last Modified: Thu, 12 Oct 2023 19:07:10 GMT  
+		Size: 490.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e56004966f75e7340644f84384141f0af8489247e6f815284f8c015fe690196b`  
-		Last Modified: Sat, 30 Sep 2023 08:02:24 GMT  
-		Size: 26.7 MB (26694176 bytes)  
+	-	`sha256:a220ac41a5ffe18961f78c387a28b3c403ccf341fc50d2f338f785987f89346a`  
+		Last Modified: Thu, 12 Oct 2023 19:09:17 GMT  
+		Size: 26.7 MB (26694236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1920d0614c545f20f0f2a66833ada2bd48075977ae7e3e3e11b5592dbc3a467a`  
-		Last Modified: Sat, 30 Sep 2023 08:02:08 GMT  
+	-	`sha256:1c857ff9efd6f8f6d52786a02d78a21540f8c86e3202941367ad23036a26aa16`  
+		Last Modified: Thu, 12 Oct 2023 19:09:01 GMT  
 		Size: 2.5 KB (2451 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9dd736727452c0e144d5bf1814cff293573f3c9f3d96da98e538d574b7d95b7`  
-		Last Modified: Sat, 30 Sep 2023 08:02:08 GMT  
-		Size: 248.0 B  
+	-	`sha256:c64e9a3d7a2cd1fae66b5194ae1305989a8b1ca1f8fc433d002fba60f94f175f`  
+		Last Modified: Thu, 12 Oct 2023 19:09:01 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca2744e3d76df1236ff92e0040fea5569581b7497aac689fd870e98cd3c78ea4`  
-		Last Modified: Sat, 30 Sep 2023 08:02:08 GMT  
-		Size: 9.2 KB (9188 bytes)  
+	-	`sha256:15ec6c96ae396ad172816ca42d341e9e4e0a78a0de8efbd92a1d2c439845bb69`  
+		Last Modified: Thu, 12 Oct 2023 19:09:01 GMT  
+		Size: 9.2 KB (9187 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b290316f844d6a666690dd7b29357c1895a38b90d1efe741e6290c819675568`  
-		Last Modified: Sat, 30 Sep 2023 10:33:34 GMT  
-		Size: 19.9 MB (19922166 bytes)  
+	-	`sha256:d0a718fd8fdef90b0a9cc0e55f6cb0ae79159350c17cd3de2f8cf2d54bb984a7`  
+		Last Modified: Fri, 13 Oct 2023 09:03:59 GMT  
+		Size: 19.9 MB (19926474 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e1cdeff7f9ac6df696873e6433f6eca347aa19fd8ff855e0dfae0624d7464bd`  
-		Last Modified: Wed, 04 Oct 2023 23:52:57 GMT  
-		Size: 20.6 MB (20611528 bytes)  
+	-	`sha256:f56e3b5a260da8ee16e6b5592da0736f0e42635fff13bff2a8b2278f861d7181`  
+		Last Modified: Fri, 13 Oct 2023 09:04:03 GMT  
+		Size: 20.6 MB (20611826 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c5cb38daf2cc17827e77913beea2936895d988a4a67dab6d98713e406473a1e`  
-		Last Modified: Wed, 04 Oct 2023 23:52:19 GMT  
-		Size: 713.0 B  
+	-	`sha256:a9268ca171f3153d1238b085cf52ce9c504e76953ffe5920c1f55e9b6b32e5de`  
+		Last Modified: Fri, 13 Oct 2023 09:03:41 GMT  
+		Size: 714.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8585bac4cd7d94c8029eedee6ee85de7e059728247f97e6f150c56e1b5a840a0`  
-		Last Modified: Wed, 04 Oct 2023 23:54:32 GMT  
-		Size: 174.3 MB (174257265 bytes)  
+	-	`sha256:4ad45efef8ce9369268c494cd36fa299ea9b5df072024a182f9c7bcd4344e11b`  
+		Last Modified: Fri, 13 Oct 2023 09:05:32 GMT  
+		Size: 174.3 MB (174257526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce468dc122a8258a63a7ab32f826cd911c4a950001682966b48a90229324949e`  
-		Last Modified: Wed, 04 Oct 2023 23:52:19 GMT  
-		Size: 3.6 KB (3609 bytes)  
+	-	`sha256:5ffcf1c2fa1081fbebb22d2737b33616c57b5fd694a462bb6dd43c97fe608d65`  
+		Last Modified: Fri, 13 Oct 2023 09:03:41 GMT  
+		Size: 3.6 KB (3608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74243fe19d1b33d6b3a2cff780d51d6b930e172e03f7abc83cdad25020432a26`  
-		Last Modified: Wed, 04 Oct 2023 23:52:19 GMT  
-		Size: 2.2 KB (2224 bytes)  
+	-	`sha256:092b4db3ca8282f91921fb7622bb97761f41a1dfa2edab3a51d5a18d9898d4d8`  
+		Last Modified: Fri, 13 Oct 2023 09:03:41 GMT  
+		Size: 2.2 KB (2228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:26-fpm` - linux; ppc64le
