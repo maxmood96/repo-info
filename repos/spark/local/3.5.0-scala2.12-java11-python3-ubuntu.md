@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:828da84ed02a1a5dfb272b057b37ebc2477d0deba4a4ebbc778097f17e9828d6`
-- Created: `2023-09-14T21:29:41.745786231Z`
-- Virtual Size: ~ 981.49 Mb  
+- Image ID: `sha256:41a033621387a222e1ff80f5e9c14cf84e82db62b054f24bee804549c625a510`
+- Created: `2023-10-13T14:01:35.378851021Z`
+- Virtual Size: ~ 981.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/entrypoint.sh"]`
@@ -187,12 +187,12 @@ $ apt-get source -qq --print-uris bash=5.0-6ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0-6ubuntu1.2.debian.tar.xz' bash_5.0-6ubuntu1.2.debian.tar.xz 75200 SHA512:50de22a6cd140fcb95eca9172e9927a4eeddd90bfbd23072d5e209db1675f331716dfd54ef3281caa7020e3fa1aef9ca7caafc6a8d3067741b1ae41f7dff7724
 ```
 
-### `dpkg` source package: `bind9=1:9.16.1-0ubuntu2.15`
+### `dpkg` source package: `bind9=1:9.16.1-0ubuntu2.16`
 
 Binary Packages:
 
-- `bind9-host=1:9.16.1-0ubuntu2.15`
-- `bind9-libs:amd64=1:9.16.1-0ubuntu2.15`
+- `bind9-host=1:9.16.1-0ubuntu2.16`
+- `bind9-libs:amd64=1:9.16.1-0ubuntu2.16`
 
 Licenses: (parsed from: `/usr/share/doc/bind9-host/copyright`, `/usr/share/doc/bind9-libs/copyright`)
 
@@ -201,9 +201,14 @@ Licenses: (parsed from: `/usr/share/doc/bind9-host/copyright`, `/usr/share/doc/b
 - `ISC`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris bind9=1:9.16.1-0ubuntu2.16
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.16.1-0ubuntu2.16.dsc' bind9_9.16.1-0ubuntu2.16.dsc 2740 SHA512:f2f58145340a90288581e3a41e317d67c101f576b661e8685c0323a791324b9968df2ac4f9edc2375d63568e109f0f941f215c9a4ba11af1ef0b6abbdfc54fda
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.16.1.orig.tar.xz' bind9_9.16.1.orig.tar.xz 4541768 SHA512:9a1e8987f312b09a16c2ee0fd1d1eb8e4951b8dbcf3c0d51a1a1fb179a261028239ab2bebc3e559592cc766de57a26ba37b27621a0c5e1711d36c2416f0a0c26
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.16.1-0ubuntu2.16.debian.tar.xz' bind9_9.16.1-0ubuntu2.16.debian.tar.xz 87596 SHA512:7de4d2c0fb0bba15e619270fcbc8bc8d6ddeb013f64c160e4406bd79a0ea8cccb0e7e050aa535a3450e1f8c0548170e4d944c05c1e4cde118d59be47b49190cb
+```
 
 ### `dpkg` source package: `binutils=2.34-6ubuntu1.6`
 
@@ -346,12 +351,12 @@ $ apt-get source -qq --print-uris coreutils=8.30-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.30-3ubuntu2.debian.tar.xz' coreutils_8.30-3ubuntu2.debian.tar.xz 39636 SHA256:98204ef9d94e5c567880cd0245fdb7940eaf7592d6c6830c300ad117628b351f
 ```
 
-### `dpkg` source package: `curl=7.68.0-1ubuntu2.19`
+### `dpkg` source package: `curl=7.68.0-1ubuntu2.20`
 
 Binary Packages:
 
-- `curl=7.68.0-1ubuntu2.19`
-- `libcurl4:amd64=7.68.0-1ubuntu2.19`
+- `curl=7.68.0-1ubuntu2.20`
+- `libcurl4:amd64=7.68.0-1ubuntu2.20`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -365,10 +370,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.19
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.19.dsc' curl_7.68.0-1ubuntu2.19.dsc 2737 SHA512:86dfd3a26b645e5ce9d2a8d58a7e5f1fd4b7aa5944c85ffba8f9e3e36e93028a18e8d6b4bdf5f95809407df593c63e86a954488d2ab4c744cb2f02c2c4f8b9bf
+$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.20
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.20.dsc' curl_7.68.0-1ubuntu2.20.dsc 2737 SHA512:fc602637e036ba63548581b1950c055cc5fdb0b950848baac342fe117715a6021e7ecb00db10c9e44d777feba7c911c48b80f27880be8d9252250857414f614b
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.19.debian.tar.xz' curl_7.68.0-1ubuntu2.19.debian.tar.xz 68292 SHA512:268714df9abeaebc38df547dd7b0dfee02c605b7fa8a8054818d9f5c608135a70e0d0e3492c1cf504d138bbddd457421486bf1b2e00464f206bb7172c4bc74bf
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.20.debian.tar.xz' curl_7.68.0-1ubuntu2.20.debian.tar.xz 69464 SHA512:63c11b6186ed3dded8f90bcdac432ce4a79de6dc6364eb29d7fa88ad367961be3a9f34035b30e7ba2c1d3d7d7a80d765ffdbe9466e03512bd73339b3023e009e
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
@@ -815,24 +820,29 @@ $ apt-get source -qq --print-uris gdbm=1.18.1-5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.18.1-5.debian.tar.xz' gdbm_1.18.1-5.debian.tar.xz 16348 SHA256:3c1a0e05b40a97ee51ce77c736c72c37738ba31b2720111d3bc99175a2c3a3ed
 ```
 
-### `dpkg` source package: `glibc=2.31-0ubuntu9.9`
+### `dpkg` source package: `glibc=2.31-0ubuntu9.12`
 
 Binary Packages:
 
-- `libc-bin=2.31-0ubuntu9.9`
-- `libc-dev-bin=2.31-0ubuntu9.9`
-- `libc6:amd64=2.31-0ubuntu9.9`
-- `libc6-dev:amd64=2.31-0ubuntu9.9`
-- `locales=2.31-0ubuntu9.9`
+- `libc-bin=2.31-0ubuntu9.12`
+- `libc-dev-bin=2.31-0ubuntu9.12`
+- `libc6:amd64=2.31-0ubuntu9.12`
+- `libc6-dev:amd64=2.31-0ubuntu9.12`
+- `locales=2.31-0ubuntu9.12`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.12
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.12.dsc' glibc_2.31-0ubuntu9.12.dsc 9378 SHA512:2055d7f2d479789f44629fc4f9f938e3bcfdc035b6ca49ee5238aa0de18e4db3da1197591951838514565c1c1bad825273026bc6eb146394f646039d13c787a9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.12.debian.tar.xz' glibc_2.31-0ubuntu9.12.debian.tar.xz 879820 SHA512:94fe56d6feb9507ad0d6d81080a064729e259aa92130e0cb08567a61ec2615b11899959f909396a54df0a1e67e29f03ee9e10c2fad406ee9f3333e7269758a32
+```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4ubuntu0.1`
 
@@ -1769,19 +1779,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4%2bdfsg-3ubuntu0.1.debian.tar.xz' libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz 17300 SHA512:0484891be5603d00bd57b799c708b9395fccbaa8c6c44f535377f6fa2c7ac22c01c8a3c1b45e1c1f3c30f19dc74d510626bf82067fcbfb53c39f1bcc2249affe
 ```
 
-### `dpkg` source package: `linux=5.4.0-162.179`
+### `dpkg` source package: `linux=5.4.0-164.181`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.4.0-162.179`
+- `linux-libc-dev:amd64=5.4.0-164.181`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.4.0-164.181
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-164.181.dsc' linux_5.4.0-164.181.dsc 7425 SHA512:8be2ea8a8fff850383e71cc3488edc87b684ffe5f82e6c5f5d84a04101a1d96f147306a36621068dc30a4d9deb37fc7cf6d2f2550fd272d01df0904674056795
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-164.181.diff.gz' linux_5.4.0-164.181.diff.gz 11092104 SHA512:039206382d8e617289d53dea99f42c863037851fd676fac702cd0c6b65685e4c16a1642259ff30269b41801506d87faa3464341292e1571a3a8b80610a5d5389
+```
 
 ### `dpkg` source package: `lmdb=0.9.24-1`
 
