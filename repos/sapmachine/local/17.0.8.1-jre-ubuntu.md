@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:789f3061401c3845aa9466e71ba319a5e3eac244c07a5695c15385a575e06a7e`
-- Created: `2023-10-03T05:39:30.303509183Z`
+- Image ID: `sha256:6fa0fcd05edfaac6d7238526cf51c4710d34f2b1961a7582a7e433aaee360552`
+- Created: `2023-10-13T08:35:10.620193826Z`
 - Virtual Size: ~ 232.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -569,12 +569,12 @@ $ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.debian.tar.xz 575908 SHA512:d1bf37d9af699430d3b107d0966194b20aef22654337efdb99971b270609785020dd1f04ce6a0f3f3eb0dbad704b46e9d9e5dfa6a497e98c78a867f5bc290038
 ```
 
-### `dpkg` source package: `glibc=2.35-0ubuntu3.3`
+### `dpkg` source package: `glibc=2.35-0ubuntu3.4`
 
 Binary Packages:
 
-- `libc-bin=2.35-0ubuntu3.3`
-- `libc6:amd64=2.35-0ubuntu3.3`
+- `libc-bin=2.35-0ubuntu3.4`
+- `libc6:amd64=2.35-0ubuntu3.4`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -582,9 +582,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.4.dsc' glibc_2.35-0ubuntu3.4.dsc 8884 SHA512:13788156756c01fe08b0567514a91ec7f928651b9fa350bc252618f90e560b1e3eaec917fcf2350ba88e20614c7a088e22cf2cf0e52424a8f0f4da3e5701eab2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.4.debian.tar.xz' glibc_2.35-0ubuntu3.4.debian.tar.xz 907840 SHA512:14f1c25988492ffcffa5c2010d99ca5698412b0cea852d4c2eca26daf5b8d5401cf7cc9e2648e6f81938a07e9311ba6f805a96057cfeedd8f7a6b0f587e6b5f8
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -1211,20 +1217,26 @@ $ apt-get source -qq --print-uris libunistring=1.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunistring/libunistring_1.0-1.debian.tar.xz' libunistring_1.0-1.debian.tar.xz 42004 SHA512:f9208e7ab38cc742bb46dc1a871ddb03847b99b6169e20e8d8660dd9cdf22bffb27f9b329dcbd025ad9b26aee5a2aab01337f36d8ab3020d2e752f9c2d4368ce
 ```
 
-### `dpkg` source package: `libx11=2:1.7.5-1ubuntu0.2`
+### `dpkg` source package: `libx11=2:1.7.5-1ubuntu0.3`
 
 Binary Packages:
 
-- `libx11-6:amd64=2:1.7.5-1ubuntu0.2`
-- `libx11-data=2:1.7.5-1ubuntu0.2`
+- `libx11-6:amd64=2:1.7.5-1ubuntu0.3`
+- `libx11-data=2:1.7.5-1ubuntu0.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libx11=2:1.7.5-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5-1ubuntu0.3.dsc' libx11_1.7.5-1ubuntu0.3.dsc 2654 SHA512:97c9c7e8096cdb264d45a08f0333025ded9b74296689809d687de62b60b5d5ef7d2dc8b592b8155dbe12aa18129f97a12b978234b52ba2ed553568d207c62fce
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5.orig.tar.gz' libx11_1.7.5.orig.tar.gz 3170022 SHA512:90474f5f95c3498a02100aeeb6b5ad7ae9076bc40a70cdd828bd881adac0bf278002186142f2760e5504cf82120f4869798831e0e2332ecbc6903e8f7c9114ab
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5.orig.tar.gz.asc' libx11_1.7.5.orig.tar.gz.asc 358 SHA512:75139b9f7b2f19aed3d3a66ea8b883480db2fa56d713bb0160ea8a0faba208da4c241768f9f2703f723f13906438eda3117f489d7d5d17fbe1cbb75b13c9935d
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5-1ubuntu0.3.diff.gz' libx11_1.7.5-1ubuntu0.3.diff.gz 98716 SHA512:54531c960c2252c99e2f32f0d051eb1e764f181aaa68fc20a053384f70b14f32872e9ca05ed45affd2e97ea2821cdd8c3e3ebacf8c81c3088386a7d95214f64b
+```
 
 ### `dpkg` source package: `libxau=1:1.0.9-1build5`
 
