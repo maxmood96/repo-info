@@ -38,6 +38,14 @@
 -	[`haskell:9.6.3-buster`](#haskell963-buster)
 -	[`haskell:9.6.3-slim`](#haskell963-slim)
 -	[`haskell:9.6.3-slim-buster`](#haskell963-slim-buster)
+-	[`haskell:9.8`](#haskell98)
+-	[`haskell:9.8-buster`](#haskell98-buster)
+-	[`haskell:9.8-slim`](#haskell98-slim)
+-	[`haskell:9.8-slim-buster`](#haskell98-slim-buster)
+-	[`haskell:9.8.1`](#haskell981)
+-	[`haskell:9.8.1-buster`](#haskell981-buster)
+-	[`haskell:9.8.1-slim`](#haskell981-slim)
+-	[`haskell:9.8.1-slim-buster`](#haskell981-slim-buster)
 -	[`haskell:buster`](#haskellbuster)
 -	[`haskell:latest`](#haskelllatest)
 -	[`haskell:slim`](#haskellslim)
@@ -6342,6 +6350,38 @@ CMD ["ghci"]
 		Last Modified: Wed, 11 Oct 2023 23:10:33 GMT  
 		Size: 290.1 MB (290072424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `haskell:9.8`
+
+**does not exist** (yet?)
+
+## `haskell:9.8-buster`
+
+**does not exist** (yet?)
+
+## `haskell:9.8-slim`
+
+**does not exist** (yet?)
+
+## `haskell:9.8-slim-buster`
+
+**does not exist** (yet?)
+
+## `haskell:9.8.1`
+
+**does not exist** (yet?)
+
+## `haskell:9.8.1-buster`
+
+**does not exist** (yet?)
+
+## `haskell:9.8.1-slim`
+
+**does not exist** (yet?)
+
+## `haskell:9.8.1-slim-buster`
+
+**does not exist** (yet?)
 
 ## `haskell:buster`
 
