@@ -20,6 +20,10 @@
 -	[`solr:9.3-slim`](#solr93-slim)
 -	[`solr:9.3.0`](#solr930)
 -	[`solr:9.3.0-slim`](#solr930-slim)
+-	[`solr:9.4`](#solr94)
+-	[`solr:9.4-slim`](#solr94-slim)
+-	[`solr:9.4.0`](#solr940)
+-	[`solr:9.4.0-slim`](#solr940-slim)
 -	[`solr:latest`](#solrlatest)
 -	[`solr:slim`](#solrslim)
 
@@ -13024,6 +13028,22 @@ CMD ["solr-foreground"]
 		Last Modified: Fri, 13 Oct 2023 11:32:54 GMT  
 		Size: 1.8 MB (1775736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `solr:9.4`
+
+**does not exist** (yet?)
+
+## `solr:9.4-slim`
+
+**does not exist** (yet?)
+
+## `solr:9.4.0`
+
+**does not exist** (yet?)
+
+## `solr:9.4.0-slim`
+
+**does not exist** (yet?)
 
 ## `solr:latest`
 
