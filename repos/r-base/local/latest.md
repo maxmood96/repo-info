@@ -196,20 +196,13 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.41-5
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.41-5.dsc' binutils_2.41-5.dsc 12164 SHA256:78602bda95612e2157875c214c1c859fe609bf8d7dfa647a6bbe2e711484d262
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.41.orig.tar.xz' binutils_2.41.orig.tar.xz 26902888 SHA256:f87777e6b11c92081692fa6a5239271961eab8354c91ca52f916b9e875cf79dc
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.41-5.debian.tar.xz' binutils_2.41-5.debian.tar.xz 187124 SHA256:26d51d4c14e3f1dc35afacd2fbf91798967c8eb94e6a929158e3de4504c1a05e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/binutils/2.41-5/
 
-- https://sources.debian.net/src/binutils/2.41-5/ (for browsing the source)
-- https://sources.debian.net/src/binutils/2.41-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/binutils/2.41-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `boot=1.3-28.1-1`
 
@@ -1859,20 +1852,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.40-1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.40-1.dsc' libpng1.6_1.6.40-1.dsc 2241 SHA256:3aaf5611229dca02ae9310f9ed9959fceee30fc34c5c81f6a5ce4e5a596365c1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.40.orig.tar.gz' libpng1.6_1.6.40.orig.tar.gz 1520834 SHA256:62d25af25e636454b005c93cae51ddcd5383c40fa14aa3dae8f6576feb5692c2
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.40-1.debian.tar.xz' libpng1.6_1.6.40-1.debian.tar.xz 31092 SHA256:32b46be59d22e4f6b3f02b19265eeac2a1d67fa4076b0df3994ec62209475bc3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpng1.6/1.6.40-1/
 
-- https://sources.debian.net/src/libpng1.6/1.6.40-1/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.40-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.40-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1`
 
@@ -2608,14 +2594,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.56.0-1
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.56.0-1.dsc' nghttp2_1.56.0-1.dsc 2534 SHA256:0897d043c72ea0c1cde9bfbb3089fd13a4cc52b6a81df52f6c2d62ca3ace1435
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.56.0.orig.tar.gz' nghttp2_1.56.0.orig.tar.gz 1055454 SHA256:63dd705b524eec3c843b8e4e24914600a30c2804a113e8e5baeeb9695d09590a
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.56.0-1.debian.tar.xz' nghttp2_1.56.0-1.debian.tar.xz 11724 SHA256:54f0e6d02624ae677e5447d85822ac79df8894e17fa047c611ca95b5f1f64d28
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/nghttp2/1.56.0-1/
+
 
 ### `dpkg` source package: `nlme=3.1.163-1`
 
@@ -2747,11 +2732,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris p11-kit=0.25.0-4
-'http://http.debian.net/debian/pool/main/p/p11-kit/p11-kit_0.25.0-4.dsc' p11-kit_0.25.0-4.dsc 2501 SHA256:9dad05f58a3044ae8bc34833e1ade1be3977cb724a30980a66eb67405801cc1c
-'http://http.debian.net/debian/pool/main/p/p11-kit/p11-kit_0.25.0.orig.tar.xz' p11-kit_0.25.0.orig.tar.xz 958940 SHA256:d55583bcdde83d86579cabe3a8f7f2638675fef01d23cace733ff748fc354706
-'http://http.debian.net/debian/pool/main/p/p11-kit/p11-kit_0.25.0.orig.tar.xz.asc' p11-kit_0.25.0.orig.tar.xz.asc 228 SHA256:ee893a62a368fb807abc678a29279b1c04808ab626b68d5d7085b8b4ab4174c9
-'http://http.debian.net/debian/pool/main/p/p11-kit/p11-kit_0.25.0-4.debian.tar.xz' p11-kit_0.25.0-4.debian.tar.xz 25880 SHA256:9cd4e6d187a4852ec0d5e167be2b9240192c4f91da5b8a5991013d8de7f27286
+'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.0-4.dsc' p11-kit_0.25.0-4.dsc 2501 SHA256:9dad05f58a3044ae8bc34833e1ade1be3977cb724a30980a66eb67405801cc1c
+'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.0.orig.tar.xz' p11-kit_0.25.0.orig.tar.xz 958940 SHA256:d55583bcdde83d86579cabe3a8f7f2638675fef01d23cace733ff748fc354706
+'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.0.orig.tar.xz.asc' p11-kit_0.25.0.orig.tar.xz.asc 228 SHA256:ee893a62a368fb807abc678a29279b1c04808ab626b68d5d7085b8b4ab4174c9
+'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.0-4.debian.tar.xz' p11-kit_0.25.0-4.debian.tar.xz 25880 SHA256:9cd4e6d187a4852ec0d5e167be2b9240192c4f91da5b8a5991013d8de7f27286
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/p11-kit/0.25.0-4/ (for browsing the source)
+- https://sources.debian.net/src/p11-kit/0.25.0-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/p11-kit/0.25.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.5.2-7`
 
@@ -3280,10 +3271,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-2
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-2.dsc' shadow_4.13+dfsg1-2.dsc 2447 SHA256:cac949c2071dc8955c3fff22e4a113a700b9f68a01b7583b64cfae55c2b2e678
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1.orig.tar.xz' shadow_4.13+dfsg1.orig.tar.xz 1811752 SHA256:a8bb3a2aceff1cbe39d0f50687dcc1d7e7be0516a9d954d8e2eedb93f5906207
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-2.debian.tar.xz' shadow_4.13+dfsg1-2.debian.tar.xz 82300 SHA256:0f59c95526a4dc89c70b2fee357f05617d4572c6e94537d21019eed7a22471c6
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-2.dsc' shadow_4.13+dfsg1-2.dsc 2447 SHA256:cac949c2071dc8955c3fff22e4a113a700b9f68a01b7583b64cfae55c2b2e678
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1.orig.tar.xz' shadow_4.13+dfsg1.orig.tar.xz 1811752 SHA256:a8bb3a2aceff1cbe39d0f50687dcc1d7e7be0516a9d954d8e2eedb93f5906207
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-2.debian.tar.xz' shadow_4.13+dfsg1-2.debian.tar.xz 82300 SHA256:0f59c95526a4dc89c70b2fee357f05617d4572c6e94537d21019eed7a22471c6
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/shadow/1:4.13+dfsg1-2/ (for browsing the source)
+- https://sources.debian.net/src/shadow/1:4.13+dfsg1-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `survival=3.5-7-1`
 
@@ -3347,20 +3344,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.08-1
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08-1.dsc' sysvinit_3.08-1.dsc 2359 SHA256:916ab717e343396685a9643f19680c8b2f17e82aec4732141a67dec935c5ecc4
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08.orig.tar.gz' sysvinit_3.08.orig.tar.gz 513674 SHA256:325e42ae4ae5ae3e4d989e0604aeb5e4eae5f3ee21e401db3c79000718f8c836
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08-1.debian.tar.xz' sysvinit_3.08-1.debian.tar.xz 136848 SHA256:1ba64a28529b733500a96f1781c9fc8d177f47c5194c6aae18a242234a1c13de
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.08-1/
 
-- https://sources.debian.net/src/sysvinit/3.08-1/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.08-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.08-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.34+dfsg-1.2`
 
