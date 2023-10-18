@@ -1,10 +1,10 @@
-# `solr:9.3.0`
+# `solr:9.4.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:45f14b5b249b3c93b5b2e9cb93a02e179deac89b2bd37d89842e75c931d00013`
-- Created: `2023-10-13T10:05:50.259939385Z`
-- Virtual Size: ~ 590.50 Mb  
+- Image ID: `sha256:65aa78f108c9ce4ca85f815659f46462dfe22949e0cb3fa1d03ac3b5753a44ce`
+- Created: `2023-10-17T01:40:31.763424327Z`
+- Virtual Size: ~ 592.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -26,6 +26,7 @@
   - `SOLR_LOGS_DIR=/var/solr/logs`
   - `LOG4J_PROPS=/var/solr/log4j2.xml`
   - `SOLR_JETTY_HOST=0.0.0.0`
+  - `SOLR_ZK_EMBEDDED_HOST=0.0.0.0`
 - Labels:
   - `org.opencontainers.image.authors=The Apache Solr Project`
   - `org.opencontainers.image.description=Apache Solr is the popular, blazing-fast, open source search platform built on Apache Lucene.`
@@ -35,7 +36,7 @@
   - `org.opencontainers.image.source=https://github.com/apache/solr`
   - `org.opencontainers.image.title=Apache Solr`
   - `org.opencontainers.image.url=https://solr.apache.org`
-  - `org.opencontainers.image.version=9.3.0`
+  - `org.opencontainers.image.version=9.4.0`
 
 ## `dpkg` (`.deb`-based packages)
 
