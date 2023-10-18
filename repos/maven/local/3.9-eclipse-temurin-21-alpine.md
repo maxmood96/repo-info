@@ -1,10 +1,10 @@
-# `maven:3.9.4-eclipse-temurin-20-alpine`
+# `maven:3.9.4-eclipse-temurin-21-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8dd91a3cda728d860719e4b4cf155feffaf7b0cfe7f8f49d59a2c73512739af3`
-- Created: `2023-08-18T15:26:34Z`
-- Virtual Size: ~ 337.29 Mb  
+- Image ID: `sha256:e9f4aa03ea5e23931da82ae3e1df6720e3b8cd526962c8af97fc4d62ca4f38bb`
+- Created: `2023-10-13T18:45:01Z`
+- Virtual Size: ~ 346.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-20.0.2+9`
+  - `JAVA_VERSION=jdk-21+35`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 
@@ -194,16 +194,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.3.0-r0 description:
+curl-8.4.0-r0 description:
 URL retrival utility and library
 
-curl-8.3.0-r0 webpage:
+curl-8.4.0-r0 webpage:
 https://curl.se/
 
-curl-8.3.0-r0 installed size:
+curl-8.4.0-r0 installed size:
 248 KiB
 
-curl-8.3.0-r0 license:
+curl-8.4.0-r0 license:
 curl
 
 ```
@@ -364,16 +364,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.3.0-r0 description:
+libcurl-8.4.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.3.0-r0 webpage:
+libcurl-8.4.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.3.0-r0 installed size:
+libcurl-8.4.0-r0 installed size:
 584 KiB
 
-libcurl-8.3.0-r0 license:
+libcurl-8.4.0-r0 license:
 curl
 
 ```
@@ -687,16 +687,16 @@ X11
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.55.1-r0 description:
+nghttp2-libs-1.57.0-r0 description:
 Experimental HTTP/2 client, server and proxy (libraries)
 
-nghttp2-libs-1.55.1-r0 webpage:
+nghttp2-libs-1.57.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.55.1-r0 installed size:
+nghttp2-libs-1.57.0-r0 installed size:
 152 KiB
 
-nghttp2-libs-1.55.1-r0 license:
+nghttp2-libs-1.57.0-r0 license:
 MIT
 
 ```
