@@ -1,18 +1,18 @@
-# `memcached:1.6.21-alpine`
+# `memcached:1.6.22-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d3e0c0ff5c009f0e410e2fc6d29099b24315b4246c64cebae8068e86c22ba8a9`
-- Created: `2023-06-16T06:54:11Z`
-- Virtual Size: ~ 9.71 Mb  
+- Image ID: `sha256:9af260b72ed832be334280006ffd1906f4823ca4019316da4fcfdd1cf8686e26`
+- Created: `2023-10-16T06:54:12Z`
+- Virtual Size: ~ 10.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["memcached"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `MEMCACHED_VERSION=1.6.21`
-  - `MEMCACHED_SHA1=6d899680b4ba4b76b6c92120143cf87630ee984a`
+  - `MEMCACHED_VERSION=1.6.22`
+  - `MEMCACHED_SHA1=7a691f390d59616dbebfc9e2e4942d499c39a338`
 
 ## `apk` (`.apk`-based packages)
 
@@ -240,16 +240,16 @@ Apache-2.0
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.4-r1 description:
+musl-1.2.4-r2 description:
 the musl c library (libc) implementation
 
-musl-1.2.4-r1 webpage:
+musl-1.2.4-r2 webpage:
 https://musl.libc.org/
 
-musl-1.2.4-r1 installed size:
+musl-1.2.4-r2 installed size:
 620 KiB
 
-musl-1.2.4-r1 license:
+musl-1.2.4-r2 license:
 MIT
 
 ```
