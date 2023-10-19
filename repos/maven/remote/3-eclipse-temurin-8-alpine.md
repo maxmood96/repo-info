@@ -1,7 +1,7 @@
 ## `maven:3-eclipse-temurin-8-alpine`
 
 ```console
-$ docker pull maven@sha256:8dbd793bfc1a52470add2dfc821bf1e77ef0fdc4ae0113eb7df6aacf28d5fb21
+$ docker pull maven@sha256:93200769f9ecdb8715443fa834ba8b176044c7c17213682a73c9be5ed55ecc33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,13 +11,13 @@ $ docker pull maven@sha256:8dbd793bfc1a52470add2dfc821bf1e77ef0fdc4ae0113eb7df6a
 ### `maven:3-eclipse-temurin-8-alpine` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:b416a20af00bce4a75db7ca2658b8204deb662b0c5db7930b807491697a0b733
+$ docker pull maven@sha256:bba999157ab0042bc3f373172e89eb1b6623623e4f3b027c1f3b9618fe9cff81
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **125.4 MB (125421036 bytes)**  
+-	Total Size: **125.4 MB (125444142 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:99c9a6bd95e919a40de5e0e32d320ea696995e2537516c5d5dfc0e3d0640fc63`
+-	Image ID: `sha256:4138d2c41f94276981bb0d6c28bcaa2bb500c0a7011b97010a8afe484f87feac`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -44,27 +44,27 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
 # Thu, 19 Oct 2023 02:50:24 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 18 Aug 2023 15:26:34 GMT
+# Thu, 19 Oct 2023 09:04:18 GMT
 RUN apk add --no-cache bash procps curl tar # buildkit
-# Fri, 18 Aug 2023 15:26:34 GMT
+# Thu, 19 Oct 2023 09:04:18 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Fri, 18 Aug 2023 15:26:34 GMT
+# Thu, 19 Oct 2023 09:04:18 GMT
 COPY /usr/share/maven /usr/share/maven # buildkit
-# Fri, 18 Aug 2023 15:26:34 GMT
+# Thu, 19 Oct 2023 09:04:18 GMT
 COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Fri, 18 Aug 2023 15:26:34 GMT
+# Thu, 19 Oct 2023 09:04:18 GMT
 COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
-# Fri, 18 Aug 2023 15:26:34 GMT
+# Thu, 19 Oct 2023 09:04:18 GMT
 RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Fri, 18 Aug 2023 15:26:34 GMT
-ARG MAVEN_VERSION=3.9.4
-# Fri, 18 Aug 2023 15:26:34 GMT
+# Thu, 19 Oct 2023 09:04:18 GMT
+ARG MAVEN_VERSION=3.9.5
+# Thu, 19 Oct 2023 09:04:18 GMT
 ARG USER_HOME_DIR=/root
-# Fri, 18 Aug 2023 15:26:34 GMT
+# Thu, 19 Oct 2023 09:04:18 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Fri, 18 Aug 2023 15:26:34 GMT
+# Thu, 19 Oct 2023 09:04:18 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Fri, 18 Aug 2023 15:26:34 GMT
+# Thu, 19 Oct 2023 09:04:18 GMT
 CMD ["mvn"]
 ```
 
@@ -93,19 +93,19 @@ CMD ["mvn"]
 		Last Modified: Thu, 19 Oct 2023 08:00:05 GMT  
 		Size: 1.8 MB (1845403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ebfd23a457a7bac171a9c8cfd9fecd2a15db9001046ba87e88b8f89abb97f1b`  
-		Last Modified: Thu, 19 Oct 2023 08:00:09 GMT  
-		Size: 9.4 MB (9406420 bytes)  
+	-	`sha256:bd3aab65649284a298c8609e61687c78361cbd354ea3f5bc4ff14769c80ebf4d`  
+		Last Modified: Thu, 19 Oct 2023 19:31:01 GMT  
+		Size: 9.4 MB (9429531 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b2c98fdda83b4a3f4a5a5465ef99d5ea35ea6478148fc42a58b629df6684038`  
-		Last Modified: Thu, 19 Oct 2023 08:00:04 GMT  
-		Size: 861.0 B  
+	-	`sha256:2c36e5dd7c5232a23bc2cd39ca2e2ec67a08e0b704b5ab768e57ec790d21ac49`  
+		Last Modified: Thu, 19 Oct 2023 19:31:00 GMT  
+		Size: 859.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f0f5a44970a38c8c818a05683afacdaf8e0a43de857f757ac15d1022478ce7e`  
-		Last Modified: Thu, 19 Oct 2023 08:00:04 GMT  
-		Size: 357.0 B  
+	-	`sha256:2281e81767480c2b1744977916d43b394888f011703482bb19cfc5201b0ebcf6`  
+		Last Modified: Thu, 19 Oct 2023 19:31:00 GMT  
+		Size: 353.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f381f56f38ebe589b37c5780e8cacd5ff45f81902e7996771dabf4557054633`  
-		Last Modified: Thu, 19 Oct 2023 08:00:05 GMT  
-		Size: 164.0 B  
+	-	`sha256:e5e079d577e8f3810aa1c91dcd32a7afdb477daaa8a057a6b0b25b00b84ad0d4`  
+		Last Modified: Thu, 19 Oct 2023 19:31:00 GMT  
+		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
