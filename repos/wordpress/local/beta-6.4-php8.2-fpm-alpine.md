@@ -1,10 +1,10 @@
-# `wordpress:beta-6.4-beta3-php8.2-fpm-alpine`
+# `wordpress:beta-6.4-RC1-php8.2-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6ef4ada71653538423952a358fb409b692fa4f569459f0d9bc52ac70c8644d19`
-- Created: `2023-10-11T01:07:43.520288105Z`
-- Virtual Size: ~ 311.23 Mb  
+- Image ID: `sha256:14a556cf2446e538c4fdcdafda773226e1f021f67d72bb5c9af1d7874917d019`
+- Created: `2023-10-19T06:48:41.478818178Z`
+- Virtual Size: ~ 311.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1302,16 +1302,16 @@ BSD-3-Clause
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.4-r1 description:
+musl-1.2.4-r2 description:
 the musl c library (libc) implementation
 
-musl-1.2.4-r1 webpage:
+musl-1.2.4-r2 webpage:
 https://musl.libc.org/
 
-musl-1.2.4-r1 installed size:
+musl-1.2.4-r2 installed size:
 620 KiB
 
-musl-1.2.4-r1 license:
+musl-1.2.4-r2 license:
 MIT
 
 ```

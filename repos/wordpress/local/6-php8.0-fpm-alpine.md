@@ -1,10 +1,10 @@
-# `wordpress:6.3.1-fpm-alpine`
+# `wordpress:6.3.2-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c2ad88eeaedf8065878b904831ddf15acd896f8ac56acc50ba96bc3a9893a7d2`
-- Created: `2023-08-29T22:20:35.179121183Z`
-- Virtual Size: ~ 305.89 Mb  
+- Image ID: `sha256:7b75afb717fee18a9b54cac7c85fe10aaa6b4eb8a7afbb2e69fea5b4d792cf96`
+- Created: `2023-10-19T06:41:29.140940731Z`
+- Virtual Size: ~ 306.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1013,16 +1013,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libwebp`
 
 ```console
-libwebp-1.2.3-r1 description:
+libwebp-1.2.3-r2 description:
 Libraries for working with WebP images
 
-libwebp-1.2.3-r1 webpage:
+libwebp-1.2.3-r2 webpage:
 https://developers.google.com/speed/webp
 
-libwebp-1.2.3-r1 installed size:
+libwebp-1.2.3-r2 installed size:
 584 KiB
 
-libwebp-1.2.3-r1 license:
+libwebp-1.2.3-r2 license:
 BSD-3-Clause
 
 ```
