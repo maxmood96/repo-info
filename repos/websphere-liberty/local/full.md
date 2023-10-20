@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b8d6a16d2d17ff808832f5169af5e30d5e921f7aab9da6369ef38b577ba74f91`
-- Created: `2023-10-13T14:27:48.461211708Z`
-- Virtual Size: ~ 799.45 Mb  
+- Image ID: `sha256:251025afd4d7b42a354f05c903304a89cc093e3f31c67132e681916b1ec28cd8`
+- Created: `2023-10-19T01:51:53.915710063Z`
+- Virtual Size: ~ 799.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
@@ -19,19 +19,19 @@
   - `OPENJ9_SCC=true`
   - `RANDFILE=/tmp/.rnd`
 - Labels:
-  - `BuildLabel=cl230920230904-1158`
+  - `BuildLabel=cl231020231002-1201`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=23.0.0.9`
+  - `ProductVersion=23.0.0.10`
   - `org.opencontainers.image.authors=Leo Christy Jesuraj, Thomas Watson, Wendy Raschke, Michal Broz`
   - `org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with IBM Semeru Runtime Open Edition OpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://ibm.biz/wl-app-image-template`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
   - `org.opencontainers.image.ref.name=ubuntu`
-  - `org.opencontainers.image.revision=cl230920230904-1158`
+  - `org.opencontainers.image.revision=cl231020231002-1201`
   - `org.opencontainers.image.title=IBM WebSphere Liberty`
   - `org.opencontainers.image.url=https://github.com/WASdev/ci.docker`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=23.0.0.9`
+  - `org.opencontainers.image.version=23.0.0.10`
 
 ## `dpkg` (`.deb`-based packages)
 
