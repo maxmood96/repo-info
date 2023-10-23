@@ -1,10 +1,10 @@
-# `swift:5.9.0-centos7`
+# `swift:5.9.1-centos7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9538029273140c89a610710252883351544da620806a69f28601373bf37a59ab`
-- Created: `2023-09-20T03:35:26.634559437Z`
-- Virtual Size: ~ 3.53 Gb  
+- Image ID: `sha256:c9a38525fb7b99781b5b6d1e2e2ccf811333a7e36d5a7f671d8eb0ccdcf8e7e4`
+- Created: `2023-10-19T19:44:40.804949374Z`
+- Virtual Size: ~ 3.55 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561`
   - `SWIFT_PLATFORM=centos7`
-  - `SWIFT_BRANCH=swift-5.9-release`
-  - `SWIFT_VERSION=swift-5.9-RELEASE`
+  - `SWIFT_BRANCH=swift-5.9.1-release`
+  - `SWIFT_VERSION=swift-5.9.1-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -1066,15 +1066,15 @@ $ dnf --quiet download --source --url json-c-0.11-4.el7_0
 http://vault.centos.org/centos/7/os/Source/SPackages/json-c-0.11-4.el7_0.src.rpm
 ```
 
-### `rpm` package: `kernel-debug-devel-3.10.0-1160.95.1.el7.x86_64`
+### `rpm` package: `kernel-debug-devel-3.10.0-1160.99.1.el7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url kernel-debug-devel-3.10.0-1160.95.1.el7
-http://vault.centos.org/centos/7/updates/Source/SPackages/kernel-3.10.0-1160.95.1.el7.src.rpm
+$ dnf --quiet download --source --url kernel-debug-devel-3.10.0-1160.99.1.el7
+http://vault.centos.org/centos/7/updates/Source/SPackages/kernel-3.10.0-1160.99.1.el7.src.rpm
 ```
 
 ### `rpm` package: `kernel-headers-3.10.0-1160.76.1.el7.x86_64`
