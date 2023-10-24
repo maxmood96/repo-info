@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:62ea84e3ecd0403a2b642b2241e9c8dba8b230162f22561e12c9265d504f2422`
-- Created: `2023-09-29T03:17:46.385802574Z`
-- Virtual Size: ~ 174.70 Mb  
+- Image ID: `sha256:f56d8c5d0a44126c71f4dfba44c1c2af14a64c30e90ae75ebc17098166a5c706`
+- Created: `2023-10-21T03:10:02.159413252Z`
+- Virtual Size: ~ 177.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["raku"]`
@@ -204,16 +204,16 @@ Apache-2.0
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.4-r1 description:
+musl-1.2.4-r2 description:
 the musl c library (libc) implementation
 
-musl-1.2.4-r1 webpage:
+musl-1.2.4-r2 webpage:
 https://musl.libc.org/
 
-musl-1.2.4-r1 installed size:
+musl-1.2.4-r2 installed size:
 620 KiB
 
-musl-1.2.4-r1 license:
+musl-1.2.4-r2 license:
 MIT
 
 ```
