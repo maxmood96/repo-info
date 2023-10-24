@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6dae3976ee053bb83177d82f6d05d91d669423bab48a9db94805e0b7808065c5`
-- Created: `2023-08-09T02:16:04.742143271Z`
-- Virtual Size: ~ 41.11 Mb  
+- Image ID: `sha256:e6295d4bbc4559ee7ed2e93830f4228a08af4114d7914db140a026f84e69adbb`
+- Created: `2023-10-21T02:43:33.104884536Z`
+- Virtual Size: ~ 45.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -192,16 +192,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.2.1-r0 description:
+curl-8.4.0-r0 description:
 URL retrival utility and library
 
-curl-8.2.1-r0 webpage:
+curl-8.4.0-r0 webpage:
 https://curl.se/
 
-curl-8.2.1-r0 installed size:
-268 KiB
+curl-8.4.0-r0 installed size:
+280 KiB
 
-curl-8.2.1-r0 license:
+curl-8.4.0-r0 license:
 curl
 
 ```
@@ -328,16 +328,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.10-r0 description:
+libcrypto3-3.0.11-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.0.10-r0 webpage:
+libcrypto3-3.0.11-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.10-r0 installed size:
-4116 KiB
+libcrypto3-3.0.11-r0 installed size:
+4120 KiB
 
-libcrypto3-3.0.10-r0 license:
+libcrypto3-3.0.11-r0 license:
 Apache-2.0
 
 ```
@@ -345,16 +345,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.2.1-r0 description:
+libcurl-8.4.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.2.1-r0 webpage:
+libcurl-8.4.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.2.1-r0 installed size:
-576 KiB
+libcurl-8.4.0-r0 installed size:
+608 KiB
 
-libcurl-8.2.1-r0 license:
+libcurl-8.4.0-r0 license:
 curl
 
 ```
@@ -566,16 +566,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.10-r0 description:
+libssl3-3.0.11-r0 description:
 SSL shared libraries
 
-libssl3-3.0.10-r0 webpage:
+libssl3-3.0.11-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.10-r0 installed size:
+libssl3-3.0.11-r0 installed size:
 608 KiB
 
-libssl3-3.0.10-r0 license:
+libssl3-3.0.11-r0 license:
 Apache-2.0
 
 ```
@@ -600,16 +600,16 @@ BSD-3-Clause
 ### `apk` package: `libwebp`
 
 ```console
-libwebp-1.2.4-r2 description:
+libwebp-1.2.4-r3 description:
 Libraries for working with WebP images
 
-libwebp-1.2.4-r2 webpage:
+libwebp-1.2.4-r3 webpage:
 https://developers.google.com/speed/webp
 
-libwebp-1.2.4-r2 installed size:
+libwebp-1.2.4-r3 installed size:
 584 KiB
 
-libwebp-1.2.4-r2 license:
+libwebp-1.2.4-r3 license:
 BSD-3-Clause
 
 ```
@@ -838,16 +838,16 @@ MIT
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.51.0-r1 description:
+nghttp2-libs-1.51.0-r2 description:
 Experimental HTTP/2 client, server and proxy (libraries)
 
-nghttp2-libs-1.51.0-r1 webpage:
+nghttp2-libs-1.51.0-r2 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.51.0-r1 installed size:
-172 KiB
+nghttp2-libs-1.51.0-r2 installed size:
+176 KiB
 
-nghttp2-libs-1.51.0-r1 license:
+nghttp2-libs-1.51.0-r2 license:
 MIT
 
 ```
