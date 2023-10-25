@@ -140,19 +140,13 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.6.1
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.1.dsc' base-passwd_3.6.1.dsc 1740 SHA256:b4e5fcdba73369657b241743033e8e7a65c26da43285503c652fa1436ce75d1f
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.1.tar.xz' base-passwd_3.6.1.tar.xz 56072 SHA256:6ff369be59d586ba63c0c5fcb00f75f9953fe49db88bc6c6428f2c92866f79af
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-passwd/3.6.1/
 
-- https://sources.debian.net/src/base-passwd/3.6.1/ (for browsing the source)
-- https://sources.debian.net/src/base-passwd/3.6.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-passwd/3.6.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bash=5.2.15-2`
 
@@ -433,15 +427,13 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.3.0-2
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.3.0-2.dsc' curl_8.3.0-2.dsc 3044 SHA256:f64536a6fa948e37e5bc2bc7ffb38fe9aabebc3121b9fd227322684e53aa7012
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.3.0.orig.tar.gz' curl_8.3.0.orig.tar.gz 4404620 SHA256:d3a19aeea301085a56c32bc0f7d924a818a7893af253e41505d1e26d7db8e95a
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.3.0.orig.tar.gz.asc' curl_8.3.0.orig.tar.gz.asc 488 SHA256:3612f9b0f6cb45a0cbf8a5c7f2f018297920e4f9e26a6e3a61d1f452f9ebda42
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.3.0-2.debian.tar.xz' curl_8.3.0-2.debian.tar.xz 46940 SHA256:511cb15e226f23d81aa58fb745d37758101512fb6e135ea372599dcf2dd72042
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/curl/8.3.0-2/
+
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-3`
 
@@ -1257,15 +1249,13 @@ Licenses: (parsed from: `/usr/share/doc/icu-devtools/copyright`, `/usr/share/doc
 - `GPL-3`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris icu=72.1-3
-'http://http.debian.net/debian/pool/main/i/icu/icu_72.1-3.dsc' icu_72.1-3.dsc 2252 SHA256:fdb557502398e70fe74502f5c2e5ec436b7c7f267420fba7ceaca7ce501dbf6e
-'http://http.debian.net/debian/pool/main/i/icu/icu_72.1.orig.tar.gz' icu_72.1.orig.tar.gz 26303933 SHA256:a2d2d38217092a7ed56635e34467f92f976b370e20182ad325edea6681a71d68
-'http://http.debian.net/debian/pool/main/i/icu/icu_72.1.orig.tar.gz.asc' icu_72.1.orig.tar.gz.asc 659 SHA256:87b6ff610d587292cec0444fa8cbbfb12994cb89bade40578f5ba6470de245c7
-'http://http.debian.net/debian/pool/main/i/icu/icu_72.1-3.debian.tar.xz' icu_72.1-3.debian.tar.xz 62172 SHA256:e7b9edb525c7c94043577920dc5f1cc63c18e362a07b44d3e3ec39e89f174bb6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/icu/72.1-3/
+
 
 ### `dpkg` source package: `init-system-helpers=1.65.2`
 
@@ -2769,10 +2759,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pam=1.5.2-7
-'http://http.debian.net/debian/pool/main/p/pam/pam_1.5.2-7.dsc' pam_1.5.2-7.dsc 1998 SHA256:7df51d293e96b103ad515b730f9b0422fb8dd0b0d3173979ff03ae688b3beaeb
-'http://http.debian.net/debian/pool/main/p/pam/pam_1.5.2.orig.tar.xz' pam_1.5.2.orig.tar.xz 988784 SHA256:e4ec7131a91da44512574268f493c6d8ca105c87091691b8e9b56ca685d4f94d
-'http://http.debian.net/debian/pool/main/p/pam/pam_1.5.2-7.debian.tar.xz' pam_1.5.2-7.debian.tar.xz 123000 SHA256:e8432e78c764abeaa313dbe69eedc98d4a407b0b66ffc622e3766d4acd995db2
+'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2-7.dsc' pam_1.5.2-7.dsc 1998 SHA256:7df51d293e96b103ad515b730f9b0422fb8dd0b0d3173979ff03ae688b3beaeb
+'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2.orig.tar.xz' pam_1.5.2.orig.tar.xz 988784 SHA256:e4ec7131a91da44512574268f493c6d8ca105c87091691b8e9b56ca685d4f94d
+'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2-7.debian.tar.xz' pam_1.5.2-7.debian.tar.xz 123000 SHA256:e8432e78c764abeaa313dbe69eedc98d4a407b0b66ffc622e3766d4acd995db2
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/pam/1.5.2-7/ (for browsing the source)
+- https://sources.debian.net/src/pam/1.5.2-7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pam/1.5.2-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pango1.0=1.51.0+ds-2`
 
@@ -3142,20 +3138,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-rpart/copyright`)
 - `GPL-2`
 - `GPL-2+ | license included below`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rpart=4.1.19-1
-'http://deb.debian.org/debian/pool/main/r/rpart/rpart_4.1.19-1.dsc' rpart_4.1.19-1.dsc 1843 SHA256:03c01b26658418329eb1c894902da1fb2a601c1e1d22f7ba110e995bb3cd5216
-'http://deb.debian.org/debian/pool/main/r/rpart/rpart_4.1.19.orig.tar.gz' rpart_4.1.19.orig.tar.gz 859025 SHA256:fe723ed0b5583fae8b40e6fecc29b357229cb11f2339b02a4e4f812926249565
-'http://deb.debian.org/debian/pool/main/r/rpart/rpart_4.1.19-1.debian.tar.xz' rpart_4.1.19-1.debian.tar.xz 4388 SHA256:3bea7d8cd1f2652d3d3966f23c61369c391dac8b2ab229700937c028b505c74a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rpart/4.1.19-1/
 
-- https://sources.debian.net/src/rpart/4.1.19-1/ (for browsing the source)
-- https://sources.debian.net/src/rpart/4.1.19-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rpart/4.1.19-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpcsvc-proto=1.4.3-1`
 
