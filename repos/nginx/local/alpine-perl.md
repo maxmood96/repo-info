@@ -1,19 +1,19 @@
-# `nginx:1.25.2-alpine-perl`
+# `nginx:1.25.3-alpine-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:70452b81cadb8cae22d87e45675923bfa02793d1282b4aca47ea1a1abbfc08fe`
-- Created: `2023-10-21T02:43:24.221389398Z`
-- Virtual Size: ~ 78.10 Mb  
+- Image ID: `sha256:12551befe5911689f48fefdb2bb14f1752651cc89c14f6fdf688b9bbbeaf313f`
+- Created: `2023-10-25T01:22:33.713740279Z`
+- Virtual Size: ~ 83.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.25.2`
+  - `NGINX_VERSION=1.25.3`
   - `PKG_RELEASE=1`
-  - `NJS_VERSION=0.8.0`
+  - `NJS_VERSION=0.8.2`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
 
@@ -328,16 +328,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.3-r0 description:
+libcrypto3-3.1.4-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.3-r0 webpage:
+libcrypto3-3.1.4-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.3-r0 installed size:
-4468 KiB
+libcrypto3-3.1.4-r0 installed size:
+4472 KiB
 
-libcrypto3-3.1.3-r0 license:
+libcrypto3-3.1.4-r0 license:
 Apache-2.0
 
 ```
@@ -600,16 +600,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.3-r0 description:
+libssl3-3.1.4-r0 description:
 SSL shared libraries
 
-libssl3-3.1.3-r0 webpage:
+libssl3-3.1.4-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.3-r0 installed size:
+libssl3-3.1.4-r0 installed size:
 552 KiB
 
-libssl3-3.1.3-r0 license:
+libssl3-3.1.4-r0 license:
 Apache-2.0
 
 ```
@@ -889,16 +889,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.25.2-r1 description:
+nginx-1.25.3-r1 description:
 High performance web server
 
-nginx-1.25.2-r1 webpage:
+nginx-1.25.3-r1 webpage:
 https://nginx.org/
 
-nginx-1.25.2-r1 installed size:
-2708 KiB
+nginx-1.25.3-r1 installed size:
+2712 KiB
 
-nginx-1.25.2-r1 license:
+nginx-1.25.3-r1 license:
 2-clause BSD-like license
 
 ```
@@ -906,16 +906,16 @@ nginx-1.25.2-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.25.2-r1 description:
+nginx-module-geoip-1.25.3-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.25.2-r1 webpage:
+nginx-module-geoip-1.25.3-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.25.2-r1 installed size:
+nginx-module-geoip-1.25.3-r1 installed size:
 100 KiB
 
-nginx-module-geoip-1.25.2-r1 license:
+nginx-module-geoip-1.25.3-r1 license:
 2-clause BSD-like license
 
 ```
@@ -923,16 +923,16 @@ nginx-module-geoip-1.25.2-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.25.2-r1 description:
+nginx-module-image-filter-1.25.3-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.25.2-r1 webpage:
+nginx-module-image-filter-1.25.3-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.25.2-r1 installed size:
+nginx-module-image-filter-1.25.3-r1 installed size:
 88 KiB
 
-nginx-module-image-filter-1.25.2-r1 license:
+nginx-module-image-filter-1.25.3-r1 license:
 2-clause BSD-like license
 
 ```
@@ -940,16 +940,16 @@ nginx-module-image-filter-1.25.2-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.25.2.0.8.0-r1 description:
+nginx-module-njs-1.25.3.0.8.2-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.25.2.0.8.0-r1 webpage:
+nginx-module-njs-1.25.3.0.8.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.25.2.0.8.0-r1 installed size:
-3980 KiB
+nginx-module-njs-1.25.3.0.8.2-r1 installed size:
+4012 KiB
 
-nginx-module-njs-1.25.2.0.8.0-r1 license:
+nginx-module-njs-1.25.3.0.8.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -957,16 +957,16 @@ nginx-module-njs-1.25.2.0.8.0-r1 license:
 ### `apk` package: `nginx-module-perl`
 
 ```console
-nginx-module-perl-1.25.2-r1 description:
+nginx-module-perl-1.25.3-r1 description:
 nginx Perl dynamic module
 
-nginx-module-perl-1.25.2-r1 webpage:
+nginx-module-perl-1.25.3-r1 webpage:
 https://nginx.org/
 
-nginx-module-perl-1.25.2-r1 installed size:
+nginx-module-perl-1.25.3-r1 installed size:
 156 KiB
 
-nginx-module-perl-1.25.2-r1 license:
+nginx-module-perl-1.25.3-r1 license:
 2-clause BSD-like license
 
 ```
@@ -974,16 +974,16 @@ nginx-module-perl-1.25.2-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.25.2-r1 description:
+nginx-module-xslt-1.25.3-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.25.2-r1 webpage:
+nginx-module-xslt-1.25.3-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.25.2-r1 installed size:
+nginx-module-xslt-1.25.3-r1 installed size:
 84 KiB
 
-nginx-module-xslt-1.25.2-r1 license:
+nginx-module-xslt-1.25.3-r1 license:
 2-clause BSD-like license
 
 ```
