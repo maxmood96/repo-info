@@ -1,17 +1,17 @@
-# `node:18-bullseye-slim`
+# `node:20-bullseye-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7c98319e09124f47d081ad8618551bbe153f117c7cfe636908ad1854e2e233e3`
-- Created: `2023-10-18T17:30:10.324198989Z`
-- Virtual Size: ~ 248.45 Mb  
+- Image ID: `sha256:8975312ecf813c378cf41c5a858e5d6e4807ebb03efc81fd193bbe61795cf002`
+- Created: `2023-10-25T18:29:02.064576497Z`
+- Virtual Size: ~ 252.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=18.18.2`
+  - `NODE_VERSION=20.9.0`
   - `YARN_VERSION=1.22.19`
 
 ## `dpkg` (`.deb`-based packages)
