@@ -610,11 +610,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris diffutils=1:3.8-4
-'http://http.debian.net/debian/pool/main/d/diffutils/diffutils_3.8-4.dsc' diffutils_3.8-4.dsc 1705 SHA256:783af1a151c2a0f42a8a427693cc4bb16037c0d17282d28672d906f2eab424b8
-'http://http.debian.net/debian/pool/main/d/diffutils/diffutils_3.8.orig.tar.xz' diffutils_3.8.orig.tar.xz 1585120 SHA256:a6bdd7d1b31266d11c4f4de6c1b748d4607ab0231af5188fc2533d0ae2438fec
-'http://http.debian.net/debian/pool/main/d/diffutils/diffutils_3.8.orig.tar.xz.asc' diffutils_3.8.orig.tar.xz.asc 833 SHA256:500f423d0ffa8d28966d916ed5fc6b79fb160a20ed5cb74eeb1c94a30c340311
-'http://http.debian.net/debian/pool/main/d/diffutils/diffutils_3.8-4.debian.tar.xz' diffutils_3.8-4.debian.tar.xz 14428 SHA256:36abe3a3174c32c3646ca6bad212169a322409086c4a98f967bb9ad58f11c8d4
+'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.8-4.dsc' diffutils_3.8-4.dsc 1705 SHA256:783af1a151c2a0f42a8a427693cc4bb16037c0d17282d28672d906f2eab424b8
+'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.8.orig.tar.xz' diffutils_3.8.orig.tar.xz 1585120 SHA256:a6bdd7d1b31266d11c4f4de6c1b748d4607ab0231af5188fc2533d0ae2438fec
+'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.8.orig.tar.xz.asc' diffutils_3.8.orig.tar.xz.asc 833 SHA256:500f423d0ffa8d28966d916ed5fc6b79fb160a20ed5cb74eeb1c94a30c340311
+'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.8-4.debian.tar.xz' diffutils_3.8-4.debian.tar.xz 14428 SHA256:36abe3a3174c32c3646ca6bad212169a322409086c4a98f967bb9ad58f11c8d4
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/diffutils/1:3.8-4/ (for browsing the source)
+- https://sources.debian.net/src/diffutils/1:3.8-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/diffutils/1:3.8-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dpkg=1.22.0`
 
@@ -1392,15 +1398,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.20.1-4
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.20.1-4.dsc' krb5_1.20.1-4.dsc 3248 SHA256:21dd89f7b1a9b70ebbc48b7d2708640ff632477fca549dae3ceef8a5b4c258ec
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.20.1-4.debian.tar.xz' krb5_1.20.1-4.debian.tar.xz 104400 SHA256:2b96f8e13204ecd91f956f7c78552cd0319f01bc2944df2c2bdcaa99bab2bbec
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/krb5/1.20.1-4/
+
 
 ### `dpkg` source package: `lapack=3.11.0-2`
 
@@ -2755,20 +2759,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.2-7
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2-7.dsc' pam_1.5.2-7.dsc 1998 SHA256:7df51d293e96b103ad515b730f9b0422fb8dd0b0d3173979ff03ae688b3beaeb
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2.orig.tar.xz' pam_1.5.2.orig.tar.xz 988784 SHA256:e4ec7131a91da44512574268f493c6d8ca105c87091691b8e9b56ca685d4f94d
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2-7.debian.tar.xz' pam_1.5.2-7.debian.tar.xz 123000 SHA256:e8432e78c764abeaa313dbe69eedc98d4a407b0b66ffc622e3766d4acd995db2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pam/1.5.2-7/
 
-- https://sources.debian.net/src/pam/1.5.2-7/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.5.2-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.5.2-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pango1.0=1.51.0+ds-2`
 
@@ -3514,9 +3511,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris usrmerge=37
-'http://http.debian.net/debian/pool/main/u/usrmerge/usrmerge_37.dsc' usrmerge_37.dsc 981 SHA256:a285d4aac1fca5dfbca44cad7b39cbfa883af229106f09742d9f5bca61cd3b50
-'http://http.debian.net/debian/pool/main/u/usrmerge/usrmerge_37.tar.xz' usrmerge_37.tar.xz 15112 SHA256:0de88e6bb765c78bbe6cf6b771ef9f6cab92b72bf95d7910c5d473bfbc7955c7
+'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_37.dsc' usrmerge_37.dsc 981 SHA256:a285d4aac1fca5dfbca44cad7b39cbfa883af229106f09742d9f5bca61cd3b50
+'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_37.tar.xz' usrmerge_37.tar.xz 15112 SHA256:0de88e6bb765c78bbe6cf6b771ef9f6cab92b72bf95d7910c5d473bfbc7955c7
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/usrmerge/37/ (for browsing the source)
+- https://sources.debian.net/src/usrmerge/37/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/usrmerge/37/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.39.2-2`
 
