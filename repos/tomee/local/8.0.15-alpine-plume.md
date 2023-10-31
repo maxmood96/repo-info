@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e3bb2a9b80ee09880d35e2af37f865853888541e5370aac9c8ba51bc881813ec`
-- Created: `2023-10-19T08:06:32.557170548Z`
-- Virtual Size: ~ 268.13 Mb  
+- Image ID: `sha256:556e0e29f6c8f056e8527a678832f460fbce4422c40c2e7e37659bd29f95d538`
+- Created: `2023-10-31T02:18:06.52808912Z`
+- Virtual Size: ~ 279.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.8.1+1`
+  - `JAVA_VERSION=jdk-17.0.9+9`
   - `TOMEE_VER=8.0.15`
   - `TOMEE_BUILD=plume`
 
@@ -103,6 +103,23 @@ bash-5.2.15-r5 installed size:
 
 bash-5.2.15-r5 license:
 GPL-3.0-or-later
+
+```
+
+### `apk` package: `binutils`
+
+```console
+binutils-2.40-r7 description:
+Tools necessary to build programs
+
+binutils-2.40-r7 webpage:
+https://www.gnu.org/software/binutils/
+
+binutils-2.40-r7 installed size:
+8020 KiB
+
+binutils-2.40-r7 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 
 ```
 
@@ -565,6 +582,23 @@ MIT
 
 ```
 
+### `apk` package: `libgcc`
+
+```console
+libgcc-12.2.1_git20220924-r10 description:
+GNU C compiler runtime libraries
+
+libgcc-12.2.1_git20220924-r10 webpage:
+https://gcc.gnu.org
+
+libgcc-12.2.1_git20220924-r10 installed size:
+132 KiB
+
+libgcc-12.2.1_git20220924-r10 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
+
+```
+
 ### `apk` package: `libgcrypt`
 
 ```console
@@ -749,6 +783,23 @@ libssl3-3.1.3-r0 installed size:
 
 libssl3-3.1.3-r0 license:
 Apache-2.0
+
+```
+
+### `apk` package: `libstdc++`
+
+```console
+libstdc++-12.2.1_git20220924-r10 description:
+GNU C++ standard runtime library
+
+libstdc++-12.2.1_git20220924-r10 webpage:
+https://gcc.gnu.org
+
+libstdc++-12.2.1_git20220924-r10 installed size:
+2356 KiB
+
+libstdc++-12.2.1_git20220924-r10 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -1089,5 +1140,22 @@ zlib-1.2.13-r1 installed size:
 
 zlib-1.2.13-r1 license:
 Zlib
+
+```
+
+### `apk` package: `zstd-libs`
+
+```console
+zstd-libs-1.5.5-r4 description:
+Zstandard - Fast real-time compression algorithm (libraries)
+
+zstd-libs-1.5.5-r4 webpage:
+https://www.zstd.net/
+
+zstd-libs-1.5.5-r4 installed size:
+736 KiB
+
+zstd-libs-1.5.5-r4 license:
+BSD-3-Clause GPL-2.0-or-later
 
 ```
