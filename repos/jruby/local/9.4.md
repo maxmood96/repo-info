@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9c006897cd75e9fe6ae9e1473856d30044f3f4e6d93922490950e04194c0c585`
-- Created: `2023-10-19T01:24:33.577938831Z`
-- Virtual Size: ~ 304.10 Mb  
+- Image ID: `sha256:b9dde8fb103c86c6bc271648cf04976c72c8e187d8bf3a262e4e8d34178e7ee5`
+- Created: `2023-11-02T19:21:49.553104482Z`
+- Virtual Size: ~ 304.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,9 +15,9 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u382-b05`
-  - `JRUBY_VERSION=9.4.4.0`
-  - `JRUBY_SHA256=6ab12670afd8e5c8ac9305fabe42055795c5ddf9f8e8f1a1e60e260f2d724cc0`
+  - `JAVA_VERSION=jdk8u392-b08`
+  - `JRUBY_VERSION=9.4.5.0`
+  - `JRUBY_SHA256=a40f78c4641ccc86752e16b2da247fd6bc9fbcf9a4864cf1be36f7ff7b35684c`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -1239,19 +1239,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4%2bdfsg-3ubuntu0.1.debian.tar.xz' libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz 17300 SHA512:0484891be5603d00bd57b799c708b9395fccbaa8c6c44f535377f6fa2c7ac22c01c8a3c1b45e1c1f3c30f19dc74d510626bf82067fcbfb53c39f1bcc2249affe
 ```
 
-### `dpkg` source package: `linux=5.4.0-164.181`
+### `dpkg` source package: `linux=5.4.0-166.183`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.4.0-164.181`
+- `linux-libc-dev:amd64=5.4.0-166.183`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.4.0-166.183
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-166.183.dsc' linux_5.4.0-166.183.dsc 7425 SHA512:fe3b1b9e5a0444cfc0b5498bba3770eca3132dc783c2bfa3ef848eba4a8fa4b864cdd845cff0ca116469f5b45265cbcbd32a50a377f8a63c1b2b531cf3a94fbb
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-166.183.diff.gz' linux_5.4.0-166.183.diff.gz 11129386 SHA512:d371644f49d246d16e31701b21f08b5e1a66a92e0412b2defc1e71e5bef2d7de80188cdac9bc1d1e31f8e8317d07d095637c53c28753145fe7aa4e02537bc9a4
+```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 
@@ -1431,20 +1436,25 @@ $ apt-get source -qq --print-uris openldap=2.4.49+dfsg-2ubuntu1.9
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49%2bdfsg-2ubuntu1.9.debian.tar.xz' openldap_2.4.49+dfsg-2ubuntu1.9.debian.tar.xz 189676 SHA512:bf7e4ff9f710404704526a912932d7445fab4c6ce30a099dd890adc78b8afe740ac773596cb4fe409d495406e5bd103d186bd0b2993265cdafd3eb9a71d6a3b5
 ```
 
-### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.19`
+### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.20`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1f-1ubuntu2.19`
-- `openssl=1.1.1f-1ubuntu2.19`
+- `libssl1.1:amd64=1.1.1f-1ubuntu2.20`
+- `openssl=1.1.1f-1ubuntu2.20`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.20
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.20.dsc' openssl_1.1.1f-1ubuntu2.20.dsc 2336 SHA512:4d6d4ef8ba486935854e3849dbafec4997ca2b6ab668fcea67ac9ccceb5fff2cb667aae4db22893063a922a1298fe145a6957897d6c5db3c3e6b968edf262bbe
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.20.debian.tar.xz' openssl_1.1.1f-1ubuntu2.20.debian.tar.xz 233100 SHA512:5cc654ad0cf95661b9f9a15a2dc53d92fcbf989d636d3491682d791f1e83a092c8f8827ac188ed92287943ff7065f53d6d8b8c365700188f38eb4bb626a7e879
+```
 
 ### `dpkg` source package: `p11-kit=0.23.20-1ubuntu0.1`
 
