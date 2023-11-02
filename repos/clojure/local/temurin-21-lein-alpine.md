@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cd705c8142a040fc1ec6c97ba6de563e9dc2a77051f70692969f58bf31c9d675`
-- Created: `2023-10-19T07:09:32.407911283Z`
-- Virtual Size: ~ 349.17 Mb  
+- Image ID: `sha256:d40207b3fa2b71e4e939fa6d28a3b3c4b6629fb1065072358e761efcca274819`
+- Created: `2023-10-31T01:00:00.83852145Z`
+- Virtual Size: ~ 365.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21+35`
+  - `JAVA_VERSION=jdk-21.0.1+12`
   - `LEIN_VERSION=2.10.0`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
@@ -104,6 +104,23 @@ bash-5.2.15-r5 installed size:
 
 bash-5.2.15-r5 license:
 GPL-3.0-or-later
+
+```
+
+### `apk` package: `binutils`
+
+```console
+binutils-2.40-r7 description:
+Tools necessary to build programs
+
+binutils-2.40-r7 webpage:
+https://www.gnu.org/software/binutils/
+
+binutils-2.40-r7 installed size:
+8020 KiB
+
+binutils-2.40-r7 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 
 ```
 
@@ -314,16 +331,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.3-r0 description:
+libcrypto3-3.1.4-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.3-r0 webpage:
+libcrypto3-3.1.4-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.3-r0 installed size:
-4468 KiB
+libcrypto3-3.1.4-r0 installed size:
+4472 KiB
 
-libcrypto3-3.1.3-r0 license:
+libcrypto3-3.1.4-r0 license:
 Apache-2.0
 
 ```
@@ -376,6 +393,23 @@ libfontenc-1.1.7-r2 installed size:
 
 libfontenc-1.1.7-r2 license:
 MIT
+
+```
+
+### `apk` package: `libgcc`
+
+```console
+libgcc-12.2.1_git20220924-r10 description:
+GNU C compiler runtime libraries
+
+libgcc-12.2.1_git20220924-r10 webpage:
+https://gcc.gnu.org
+
+libgcc-12.2.1_git20220924-r10 installed size:
+132 KiB
+
+libgcc-12.2.1_git20220924-r10 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -450,17 +484,34 @@ ISC AND ( BSD-3-Clause OR MIT )
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.3-r0 description:
+libssl3-3.1.4-r0 description:
 SSL shared libraries
 
-libssl3-3.1.3-r0 webpage:
+libssl3-3.1.4-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.3-r0 installed size:
+libssl3-3.1.4-r0 installed size:
 552 KiB
 
-libssl3-3.1.3-r0 license:
+libssl3-3.1.4-r0 license:
 Apache-2.0
+
+```
+
+### `apk` package: `libstdc++`
+
+```console
+libstdc++-12.2.1_git20220924-r10 description:
+GNU C++ standard runtime library
+
+libstdc++-12.2.1_git20220924-r10 webpage:
+https://gcc.gnu.org
+
+libstdc++-12.2.1_git20220924-r10 installed size:
+2356 KiB
+
+libstdc++-12.2.1_git20220924-r10 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -699,5 +750,22 @@ zlib-1.2.13-r1 installed size:
 
 zlib-1.2.13-r1 license:
 Zlib
+
+```
+
+### `apk` package: `zstd-libs`
+
+```console
+zstd-libs-1.5.5-r4 description:
+Zstandard - Fast real-time compression algorithm (libraries)
+
+zstd-libs-1.5.5-r4 webpage:
+https://www.zstd.net/
+
+zstd-libs-1.5.5-r4 installed size:
+736 KiB
+
+zstd-libs-1.5.5-r4 license:
+BSD-3-Clause GPL-2.0-or-later
 
 ```
