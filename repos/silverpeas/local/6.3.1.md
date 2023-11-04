@@ -5506,14 +5506,9 @@ Licenses: (parsed from: `/usr/share/doc/libsndfile1/copyright`)
 - `gsm`
 - `sun`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsndfile=1.0.28-7ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.28-7ubuntu0.1.dsc' libsndfile_1.0.28-7ubuntu0.1.dsc 2007 SHA512:390b4e7ffd668889f454aa1787202740a01f538812a55eae274fcf729069bd0ae6a35dc87a9d5ae4452b935a8b54d026cca7baf651c2506bb37871e113ceab58
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.28.orig.tar.gz' libsndfile_1.0.28.orig.tar.gz 1202833 SHA512:890731a6b8173f714155ce05eaf6d991b31632c8ab207fbae860968861a107552df26fcf85602df2e7f65502c7256c1b41735e1122485a3a07ddb580aa83b57f
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.28-7ubuntu0.1.debian.tar.xz' libsndfile_1.0.28-7ubuntu0.1.debian.tar.xz 17248 SHA512:490c8360f04d8af7f3ddc7db6a943399fd614cb395fa581810292a785e468d19f3f0734d82a08d8715f0bb3fc0fdb79cb566175769b1159e6c7bfe411039235c
-```
 
 ### `dpkg` source package: `libsodium=1.0.18-1`
 
