@@ -609,21 +609,13 @@ Licenses: (parsed from: `/usr/share/doc/diffutils/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris diffutils=1:3.8-4
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.8-4.dsc' diffutils_3.8-4.dsc 1705 SHA256:783af1a151c2a0f42a8a427693cc4bb16037c0d17282d28672d906f2eab424b8
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.8.orig.tar.xz' diffutils_3.8.orig.tar.xz 1585120 SHA256:a6bdd7d1b31266d11c4f4de6c1b748d4607ab0231af5188fc2533d0ae2438fec
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.8.orig.tar.xz.asc' diffutils_3.8.orig.tar.xz.asc 833 SHA256:500f423d0ffa8d28966d916ed5fc6b79fb160a20ed5cb74eeb1c94a30c340311
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.8-4.debian.tar.xz' diffutils_3.8-4.debian.tar.xz 14428 SHA256:36abe3a3174c32c3646ca6bad212169a322409086c4a98f967bb9ad58f11c8d4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/diffutils/1:3.8-4/
 
-- https://sources.debian.net/src/diffutils/1:3.8-4/ (for browsing the source)
-- https://sources.debian.net/src/diffutils/1:3.8-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/diffutils/1:3.8-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dpkg=1.22.0`
 
@@ -1899,15 +1891,13 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.5.4-1
-'http://http.debian.net/debian/pool/main/libs/libseccomp/libseccomp_2.5.4-1.dsc' libseccomp_2.5.4-1.dsc 2676 SHA256:2986473126cb5f3e358fed40ec1482816e1068dbdfe938bf9f80c50afcf32b80
-'http://http.debian.net/debian/pool/main/libs/libseccomp/libseccomp_2.5.4.orig.tar.gz' libseccomp_2.5.4.orig.tar.gz 637228 SHA256:d82902400405cf0068574ef3dc1fe5f5926207543ba1ae6f8e7a1576351dcbdb
-'http://http.debian.net/debian/pool/main/libs/libseccomp/libseccomp_2.5.4.orig.tar.gz.asc' libseccomp_2.5.4.orig.tar.gz.asc 833 SHA256:af37e70eb422e6f983c1f135a3abb342c3b787716520b71bd774e4906003807f
-'http://http.debian.net/debian/pool/main/libs/libseccomp/libseccomp_2.5.4-1.debian.tar.xz' libseccomp_2.5.4-1.debian.tar.xz 16264 SHA256:fd7abe7b26a08ca514457fd13302d348d59401616ce3f6809ce15f54e6ebe77d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libseccomp/2.5.4-1/
+
 
 ### `dpkg` source package: `libselinux=3.5-1`
 
@@ -3522,19 +3512,13 @@ Licenses: (parsed from: `/usr/share/doc/usr-is-merged/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris usrmerge=37
-'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_37.dsc' usrmerge_37.dsc 981 SHA256:a285d4aac1fca5dfbca44cad7b39cbfa883af229106f09742d9f5bca61cd3b50
-'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_37.tar.xz' usrmerge_37.tar.xz 15112 SHA256:0de88e6bb765c78bbe6cf6b771ef9f6cab92b72bf95d7910c5d473bfbc7955c7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/usrmerge/37/
 
-- https://sources.debian.net/src/usrmerge/37/ (for browsing the source)
-- https://sources.debian.net/src/usrmerge/37/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/usrmerge/37/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.39.2-4`
 
@@ -3567,14 +3551,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.39.2-4
-'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.39.2-4.dsc' util-linux_2.39.2-4.dsc 4601 SHA256:4bd1afe0b473173b83f948aebc5ceb340c1b4d364639287ad487b5f6cf68baf8
-'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.39.2.orig.tar.xz' util-linux_2.39.2.orig.tar.xz 8362220 SHA256:87abdfaa8e490f8be6dde976f7c80b9b5ff9f301e1b67e3899e1f05a59a1531f
-'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.39.2-4.debian.tar.xz' util-linux_2.39.2-4.debian.tar.xz 98924 SHA256:e92cdd5267cf900bb765570ff4767f841d8bc442c082b21931040efa2efb4e39
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/util-linux/2.39.2-4/
+
 
 ### `dpkg` source package: `vim=2:9.0.1894-1`
 
