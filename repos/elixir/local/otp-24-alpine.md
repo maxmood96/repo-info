@@ -1,9 +1,9 @@
-# `elixir:1.15.6-otp-24-alpine`
+# `elixir:1.15.7-otp-24-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5d799f01d3ac18066d4bcea2951f4c5d30c1acdf0690c9c71c7e0344ad5477fe`
-- Created: `2023-10-21T06:57:52.721762479Z`
+- Image ID: `sha256:3c7f6f6a17dd5c20e27714b15ac48ae2449861ee2afbcb73738ba99b7bbf37f1`
+- Created: `2023-11-04T00:39:43.095420422Z`
 - Virtual Size: ~ 89.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `OTP_VERSION=24.3.4.13`
   - `REBAR3_VERSION=3.20.0`
-  - `ELIXIR_VERSION=v1.15.6`
+  - `ELIXIR_VERSION=v1.15.7`
   - `LANG=C.UTF-8`
 - Labels:
   - `org.opencontainers.image.version=24.3.4.13`
