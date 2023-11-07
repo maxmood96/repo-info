@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c7fb57790594be184489f0f1f962414b0058347b88358a5290e89f83fc7bb52a`
+- Image ID: `sha256:59c3950136e75adbe7b6b1384786b74186896f848981d561be6fbf9ea0fea6ff`
 - Created: `2023-10-16T00:14:53Z`
 - Virtual Size: ~ 129.67 Mb  
   (total size of all layers on-disk)
@@ -1695,12 +1695,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.8.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.8.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.0.11-1~deb12u1`
+### `dpkg` source package: `openssl=3.0.11-1~deb12u2`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.11-1~deb12u1`
-- `openssl=3.0.11-1~deb12u1`
+- `libssl3:amd64=3.0.11-1~deb12u2`
+- `openssl=3.0.11-1~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -1712,18 +1712,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.11-1~deb12u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.11-1%7edeb12u1.dsc' openssl_3.0.11-1~deb12u1.dsc 2501 SHA256:340c638c661a1f28eb24120f2b7468619f9aa22bd70c7251ad627c738621e563
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.11.orig.tar.gz' openssl_3.0.11.orig.tar.gz 15198318 SHA256:b3425d3bb4a2218d0697eb41f7fc0cdede016ed19ca49d168b78e8d947887f55
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.11.orig.tar.gz.asc' openssl_3.0.11.orig.tar.gz.asc 833 SHA256:4d8d8d2717a42340af8e94beae3e004b77efc86b19f338411b69a848d06eb609
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.11-1%7edeb12u1.debian.tar.xz' openssl_3.0.11-1~deb12u1.debian.tar.xz 69072 SHA256:8e2645d24bc1d56ae6b75a3aabaf5831f66ebe8ea81d05bcd33302a07be3baf4
+$ apt-get source -qq --print-uris openssl=3.0.11-1~deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.11-1%7edeb12u2.dsc' openssl_3.0.11-1~deb12u2.dsc 2501 SHA256:26a1cd96a646902886842aa3d62e08eed806c07a686d360ad8bbd4e18f7ae7f3
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.11.orig.tar.gz' openssl_3.0.11.orig.tar.gz 15198318 SHA256:b3425d3bb4a2218d0697eb41f7fc0cdede016ed19ca49d168b78e8d947887f55
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.11.orig.tar.gz.asc' openssl_3.0.11.orig.tar.gz.asc 833 SHA256:4d8d8d2717a42340af8e94beae3e004b77efc86b19f338411b69a848d06eb609
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.11-1%7edeb12u2.debian.tar.xz' openssl_3.0.11-1~deb12u2.debian.tar.xz 71648 SHA256:284e6a4c787351e5b9171f57c32c3daf6106566b5100694b9a96bc20a2e04fe8
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.0.11-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.11-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.11-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.0.11-1~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.11-1~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.11-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
