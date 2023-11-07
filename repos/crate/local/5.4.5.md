@@ -1,9 +1,9 @@
-# `crate:5.4.4`
+# `crate:5.4.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:dee6d23d686d4799ef0b30414b515f051b477a0ace6db062d8651b53f008fd05`
-- Created: `2023-10-17T01:20:01.511682738Z`
+- Image ID: `sha256:d0d8e540332488e8db46bcb48d4eeb656ac680fdf7c3d5f6dd678151ed84a1a4`
+- Created: `2023-11-06T23:26:00.953263368Z`
 - Virtual Size: ~ 606.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,13 +14,13 @@
   - `CRATE_HEAP_SIZE=512M`
 - Labels:
   - `maintainer=Crate.io <office@crate.io>`
-  - `org.opencontainers.image.created=2023-10-13T08:53:58.719371`
+  - `org.opencontainers.image.created=2023-10-26T14:14:55.560128`
   - `org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time.`
   - `org.opencontainers.image.source=https://github.com/crate/docker-crate`
   - `org.opencontainers.image.title=crate`
   - `org.opencontainers.image.url=https://crate.io/products/cratedb/`
   - `org.opencontainers.image.vendor=Crate.io`
-  - `org.opencontainers.image.version=5.4.4`
+  - `org.opencontainers.image.version=5.4.5`
 
 ## `rpm` (`.rpm`-based packages)
 
