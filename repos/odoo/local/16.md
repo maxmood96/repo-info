@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a6566b405046872be3fdc6deb1c554ab0a4b10c21415953356d8e3c455d70f71`
-- Created: `2023-11-01T12:02:48.132995682Z`
-- Virtual Size: ~ 1.69 Gb  
+- Image ID: `sha256:74e4063887fdfe4a2ffda6523576bbcd058e1040f9a000d336d84f9d7e0c77d4`
+- Created: `2023-11-08T00:41:46.338321828Z`
+- Virtual Size: ~ 1.70 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -8056,11 +8056,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/npth/1.6-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/npth/1.6-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `odoo=16.0.20230925`
+### `dpkg` source package: `odoo=16.0.20231106`
 
 Binary Packages:
 
-- `odoo=16.0.20230925`
+- `odoo=16.0.20231106`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -10448,11 +10448,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/wheel/0.34.2-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/wheel/0.34.2-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `wkhtmltox=1:0.12.5-1.buster`
+### `dpkg` source package: `wkhtmltox=1:0.12.6.1-3.bullseye`
 
 Binary Packages:
 
-- `wkhtmltox=1:0.12.5-1.buster`
+- `wkhtmltox=1:0.12.6.1-3.bullseye`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
