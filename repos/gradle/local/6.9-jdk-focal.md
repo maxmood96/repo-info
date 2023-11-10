@@ -2074,14 +2074,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 - `Expat`
 - `PSF-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-urllib3=1.25.8-2ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.25.8-2ubuntu0.2.dsc' python-urllib3_1.25.8-2ubuntu0.2.dsc 2332 SHA512:fb198ea630217463097abc85806f144d8ddb28ff2ed9877b24a7ea98cdece3dd33af76171386218e22a6dbef645acddc14be002ec6ce82f88a28baaf066f4bef
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.25.8.orig.tar.gz' python-urllib3_1.25.8.orig.tar.gz 261077 SHA512:6e380d98d9a8b06534abfab4eb67b685a8311a091e31adcefe2b0ffc61d2b728229df067790b20358f2646e9054a546450c3351e4aa618f31d85573ea50ceaa2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.25.8-2ubuntu0.2.debian.tar.xz' python-urllib3_1.25.8-2ubuntu0.2.debian.tar.xz 13436 SHA512:5d21e9a8744f1fc6472d537bd14c90fd75d83a1c9a1b5013623fc7e296b8a855aa141175095fa5f9a89f3abb5ab28cad77d907543a74a4a062c5a4d112c506db
-```
 
 ### `dpkg` source package: `python2.7=2.7.18-1~20.04.3`
 
