@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3664b3f70bdb52d5bc3ba5a39de442ed8cc755707823857589433df3b9644ee9`
-- Created: `2023-11-07T00:23:18.714787112Z`
-- Virtual Size: ~ 1.18 Gb  
+- Image ID: `sha256:94773b15f76f046590c692bbc09756500a3cff7753f1ff9968382dbbe4cd1dab`
+- Created: `2023-11-09T20:25:01.04683823Z`
+- Virtual Size: ~ 1.19 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.21+9`
+  - `JAVA_VERSION=jdk-17.0.9+9`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -23,9 +23,9 @@
   - `TOMCAT_MAJOR=9`
   - `TOMCAT_VERSION=9.0.82`
   - `TOMCAT_SHA512=2b13f11f4e0d0b9aee667c256c6ea5d2853b067e8b7e8293f117da050d3833fda8aa9d9ad278bd12fb7fbf0825108c7d0384509f44c05f9bad73eb099cfaa128`
-  - `XWIKI_VERSION=14.10.18`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.10.18`
-  - `XWIKI_DOWNLOAD_SHA256=66209b2e457b1b14b177f1f4918be37c2ae65c6655d16b314db6c52cc37003ff`
+  - `XWIKI_VERSION=14.10.19`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.10.19`
+  - `XWIKI_DOWNLOAD_SHA256=14b88314f9af3c122e3329d13ad2a8a473a774fa1bc8b5b96d08bbf36e56c453`
   - `MYSQL_JDBC_VERSION=8.2.0`
   - `MYSQL_JDBC_SHA256=06f14fbd664d0e382347489e66495ca27ab7e6c2e1d9969a496931736197465f`
   - `MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/8.2.0`
@@ -265,6 +265,32 @@ $ apt-get source -qq --print-uris bash=5.1-6ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.dsc' bash_5.1-6ubuntu1.dsc 2426 SHA512:9c808b5b8a281e01c5a4a503eca84fca8b21a2153dc4e7abbedda21346ae4005c806ffe7afd689b7ff66af8d431b9b4bebf2f1324745c01ed5f3ee219a515a88
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1.orig.tar.xz' bash_5.1.orig.tar.xz 5802740 SHA512:95d3acc542231cb893e1347c7d9dd66687f68cd347a0e9e126fde2d14e68c5b5530d1a5866eafa781e88aa013fcf72b4ad56d2e484c2ac7a69bd90bb149a9b86
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.debian.tar.xz' bash_5.1-6ubuntu1.debian.tar.xz 99652 SHA512:da77655882d0977656b75c750589307c54c7d5dd28b1cfc357d4a474ebf26399a91cfa19c4ba381e0a59a8f115f8381d432e82f2e659cb9bcbebf3fa0cd77bc1
+```
+
+### `dpkg` source package: `binutils=2.38-4ubuntu2.3`
+
+Binary Packages:
+
+- `binutils=2.38-4ubuntu2.3`
+- `binutils-common:amd64=2.38-4ubuntu2.3`
+- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.3`
+- `libbinutils:amd64=2.38-4ubuntu2.3`
+- `libctf-nobfd0:amd64=2.38-4ubuntu2.3`
+- `libctf0:amd64=2.38-4ubuntu2.3`
+
+Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
+
+- `GFDL`
+- `GPL`
+- `LGPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris binutils=2.38-4ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.3.dsc' binutils_2.38-4ubuntu2.3.dsc 8886 SHA512:1905b4fa0a2aa3797d1b201647aae26b3223d57213fb31baadbe247e88ecfbcd85c70611b79656147f465bd1781927d37be839439e8b473f89ab67af13a3868c
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA512:8bf0b0d193c9c010e0518ee2b2e5a830898af206510992483b427477ed178396cd210235e85fd7bd99a96fc6d5eedbeccbd48317a10f752b7336ada8b2bb826d
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.3.debian.tar.xz' binutils_2.38-4ubuntu2.3.debian.tar.xz 295236 SHA512:166dca02762ff3d196eb41d6bbeed9655390291c44464e425a4db5082cc5c29bafa51c47f7e010d89a699614101f3e27784a4f4dea3c0848b6c177be8c266e84
 ```
 
 ### `dpkg` source package: `boost1.74=1.74.0-14ubuntu3`
