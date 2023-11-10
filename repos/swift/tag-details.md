@@ -118,6 +118,7 @@
 -	[`swift:5.9-rhel-ubi9`](#swift59-rhel-ubi9)
 -	[`swift:5.9-rhel-ubi9-slim`](#swift59-rhel-ubi9-slim)
 -	[`swift:5.9-slim`](#swift59-slim)
+-	[`swift:5.9-windowsservercore-ltsc2022`](#swift59-windowsservercore-ltsc2022)
 -	[`swift:5.9.1`](#swift591)
 -	[`swift:5.9.1-amazonlinux2`](#swift591-amazonlinux2)
 -	[`swift:5.9.1-amazonlinux2-slim`](#swift591-amazonlinux2-slim)
@@ -130,6 +131,7 @@
 -	[`swift:5.9.1-rhel-ubi9`](#swift591-rhel-ubi9)
 -	[`swift:5.9.1-rhel-ubi9-slim`](#swift591-rhel-ubi9-slim)
 -	[`swift:5.9.1-slim`](#swift591-slim)
+-	[`swift:5.9.1-windowsservercore-ltsc2022`](#swift591-windowsservercore-ltsc2022)
 -	[`swift:amazonlinux2`](#swiftamazonlinux2)
 -	[`swift:amazonlinux2-slim`](#swiftamazonlinux2-slim)
 -	[`swift:centos7`](#swiftcentos7)
@@ -142,6 +144,7 @@
 -	[`swift:rhel-ubi9`](#swiftrhel-ubi9)
 -	[`swift:rhel-ubi9-slim`](#swiftrhel-ubi9-slim)
 -	[`swift:slim`](#swiftslim)
+-	[`swift:windowsservercore-ltsc2022`](#swiftwindowsservercore-ltsc2022)
 
 ## `swift:5.2-amazonlinux2`
 
@@ -11987,6 +11990,15 @@ RUN set -e;     ARCH_NAME="$(dpkg --print-architecture)";     url=;     case "${
 		Size: 40.1 MB (40136165 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `swift:5.9-windowsservercore-ltsc2022`
+
+```console
+$ docker pull swift@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `swift:5.9.1`
 
 ```console
@@ -13641,6 +13653,15 @@ RUN set -e;     ARCH_NAME="$(dpkg --print-architecture)";     url=;     case "${
 		Size: 40.1 MB (40136165 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `swift:5.9.1-windowsservercore-ltsc2022`
+
+```console
+$ docker pull swift@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `swift:amazonlinux2`
 
 ```console
@@ -15294,3 +15315,12 @@ RUN set -e;     ARCH_NAME="$(dpkg --print-architecture)";     url=;     case "${
 		Last Modified: Thu, 19 Oct 2023 20:18:44 GMT  
 		Size: 40.1 MB (40136165 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `swift:windowsservercore-ltsc2022`
+
+```console
+$ docker pull swift@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
