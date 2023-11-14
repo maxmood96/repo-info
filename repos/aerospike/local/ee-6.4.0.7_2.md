@@ -1,16 +1,25 @@
-# `aerospike:ee-6.4.0.6`
+# `aerospike:ee-6.4.0.7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:da776ccb0af8d454b641a82027ce5eaba226aecf7e65299b3e97628569dde928`
-- Created: `2023-11-01T02:55:29.724085768Z`
-- Virtual Size: ~ 221.01 Mb  
+- Image ID: `sha256:efec02a0cabc9c5ccb961ef8d31ed73ec5ebb08a8bf94caeadd4a1bd0444e565`
+- Created: `2023-11-13T23:19:38.926141868Z`
+- Virtual Size: ~ 221.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/bin/as-tini-static","-r","SIGUSR1","-t","SIGTERM","--","/entrypoint.sh"]`
 - Command: `["asd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+- Labels:
+  - `org.opencontainers.image.base.name=docker.io/library/debian:bookworm-slim`
+  - `org.opencontainers.image.description=Aerospike is a real-time database with predictable performance at petabyte scale with microsecond latency over billions of transactions.`
+  - `org.opencontainers.image.documentation=https://hub.docker.com/_/aerospike`
+  - `org.opencontainers.image.source=https://github.com/aerospike/aerospike-server.docker`
+  - `org.opencontainers.image.title=Aerospike Enterprise Server`
+  - `org.opencontainers.image.url=https://github.com/aerospike/aerospike-server.docker`
+  - `org.opencontainers.image.vendor=Aerospike`
+  - `org.opencontainers.image.version=6.4.0.7`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -68,11 +77,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.134/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.134/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `aerospike-server-enterprise=6.4.0.6-1`
+### `dpkg` source package: `aerospike-server-enterprise=6.4.0.7-1`
 
 Binary Packages:
 
-- `aerospike-server-enterprise=6.4.0.6-1`
+- `aerospike-server-enterprise=6.4.0.7-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
