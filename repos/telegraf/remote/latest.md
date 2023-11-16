@@ -1,7 +1,7 @@
 ## `telegraf:latest`
 
 ```console
-$ docker pull telegraf@sha256:add4411e0da509d1096d88f6bc29eba817e16b081c092f143b466823fdf8e375
+$ docker pull telegraf@sha256:dabae96ac5415b9e7a8a0b6308982e43ba651c4c5ab4434baa65f38ce09f1296
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull telegraf@sha256:add4411e0da509d1096d88f6bc29eba817e16b081c092f143b
 ### `telegraf:latest` - linux; amd64
 
 ```console
-$ docker pull telegraf@sha256:732c880d39e733838222cc0a4056878b9b2860710c87c66594416991bf5679d6
+$ docker pull telegraf@sha256:bd842af6baa31b90cf8890a22a4f191e59658fdbe3ca55283e39e800bdb47e63
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **149.9 MB (149860397 bytes)**  
+-	Total Size: **149.9 MB (149867936 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cfb6e4bf16eea9a87e4b02e5678975c5a7000eafedb06e528a10c6188b718d31`
+-	Image ID: `sha256:24ff75561f721a1f0489a4b4919748228e699f5d478a894cf1e4b21b41c8d9aa`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
@@ -35,17 +35,17 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends iputils-ping snmp procps lm-sensors libcap2-bin &&     rm -rf /var/lib/apt/lists/*
 # Wed, 01 Nov 2023 18:14:23 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done
-# Tue, 14 Nov 2023 02:24:53 GMT
-ENV TELEGRAF_VERSION=1.28.4
-# Tue, 14 Nov 2023 02:24:58 GMT
+# Thu, 16 Nov 2023 02:43:43 GMT
+ENV TELEGRAF_VERSION=1.28.5
+# Thu, 16 Nov 2023 02:43:47 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     rm -f telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb*
-# Tue, 14 Nov 2023 02:24:58 GMT
+# Thu, 16 Nov 2023 02:43:48 GMT
 EXPOSE 8092/udp 8094 8125/udp
-# Tue, 14 Nov 2023 02:24:58 GMT
+# Thu, 16 Nov 2023 02:43:48 GMT
 COPY file:689e73cc90c23fa6e27f7d087886e186b6baf02bb95756b42136644d4f83a893 in /entrypoint.sh 
-# Tue, 14 Nov 2023 02:24:58 GMT
+# Thu, 16 Nov 2023 02:43:48 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 14 Nov 2023 02:24:58 GMT
+# Thu, 16 Nov 2023 02:43:48 GMT
 CMD ["telegraf"]
 ```
 
@@ -66,13 +66,13 @@ CMD ["telegraf"]
 		Last Modified: Wed, 01 Nov 2023 18:15:17 GMT  
 		Size: 1.8 KB (1802 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86eeeaf99c279818aeeb2a3f4f0a1488bfe8a3cd63be65471e90c42524f6a637`  
-		Last Modified: Tue, 14 Nov 2023 02:25:41 GMT  
-		Size: 57.1 MB (57081460 bytes)  
+	-	`sha256:0e5df87cbe58e2f321baefcefa53328afc16f2a3624f32639d6a5d2e92e6edfb`  
+		Last Modified: Thu, 16 Nov 2023 02:44:25 GMT  
+		Size: 57.1 MB (57088996 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d328e4bfc747dca5adf41bc4b477bb991d720713605133c124bd60e8ba144d0e`  
-		Last Modified: Tue, 14 Nov 2023 02:25:32 GMT  
-		Size: 342.0 B  
+	-	`sha256:38a9e7f2d627f724d801ee6f4db15a7bf79b50751908fd91baf419be07ce569d`  
+		Last Modified: Thu, 16 Nov 2023 02:44:16 GMT  
+		Size: 345.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `telegraf:latest` - linux; arm variant v7
