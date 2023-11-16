@@ -1,10 +1,10 @@
-# `postgres:16.0-alpine3.17`
+# `postgres:16.1-alpine3.17`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b2fcc3b94477f7ec2fe5812da825cea841b25db9c35c4f4582a9d4c66975c588`
-- Created: `2023-10-04T14:54:45Z`
-- Virtual Size: ~ 250.02 Mb  
+- Image ID: `sha256:30677302eb7a39a057d0133ed47cd33656af3f6a1822f4bc6fffe3dc96cb1af1`
+- Created: `2023-11-09T20:04:26Z`
+- Virtual Size: ~ 250.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=16`
-  - `PG_VERSION=16.0`
-  - `PG_SHA256=df9e823eb22330444e1d48e52cc65135a652a6fdb3ce325e3f08549339f51b99`
+  - `PG_VERSION=16.1`
+  - `PG_SHA256=ce3c4d85d19b0121fe0d3f8ef1fa601f71989e86f8a66f7dc3ad546dd5564fec`
   - `DOCKER_PG_LLVM_DEPS=llvm15-dev 		clang15`
   - `PGDATA=/var/lib/postgresql/data`
 
@@ -295,16 +295,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.11-r0 description:
+libcrypto3-3.0.12-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.0.11-r0 webpage:
+libcrypto3-3.0.12-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.11-r0 installed size:
+libcrypto3-3.0.12-r0 installed size:
 4120 KiB
 
-libcrypto3-3.0.11-r0 license:
+libcrypto3-3.0.12-r0 license:
 Apache-2.0
 
 ```
@@ -431,16 +431,16 @@ custom
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.11-r0 description:
+libssl3-3.0.12-r0 description:
 SSL shared libraries
 
-libssl3-3.0.11-r0 webpage:
+libssl3-3.0.12-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.11-r0 installed size:
+libssl3-3.0.12-r0 installed size:
 608 KiB
 
-libssl3-3.0.11-r0 license:
+libssl3-3.0.12-r0 license:
 Apache-2.0
 
 ```
