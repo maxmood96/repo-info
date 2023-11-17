@@ -1,10 +1,10 @@
-# `openjdk:22-ea-22-jdk-oraclelinux7`
+# `openjdk:22-ea-24-jdk-oraclelinux7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e6aa452413c8ad72326db407ff6fdc1a2c50e84efee7a83e46169e53dd3138fb`
-- Created: `2023-11-04T00:55:50.725176015Z`
-- Virtual Size: ~ 531.68 Mb  
+- Image ID: `sha256:9cd45864d71cf182e004f08152b1bc7fa73e8e1941aa810e5a22ede7cb7cdd7b`
+- Created: `2023-11-17T04:29:19.997979784Z`
+- Virtual Size: ~ 527.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-22/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-22`
   - `LANG=en_US.UTF-8`
-  - `JAVA_VERSION=22-ea+22`
+  - `JAVA_VERSION=22-ea+24`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -974,15 +974,15 @@ $ dnf --quiet download --source --url pyliblzma-0.5.3-11.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/pyliblzma-0.5.3-11.el7.src.rpm
 ```
 
-### `rpm` package: `python-2.7.5-93.0.1.el7_9.x86_64`
+### `rpm` package: `python-2.7.5-94.0.1.el7_9.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-2.7.5-93.0.1.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/python-2.7.5-93.0.1.el7_9.src.rpm
+$ dnf --quiet download --source --url python-2.7.5-94.0.1.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/python-2.7.5-94.0.1.el7_9.src.rpm
 ```
 
 ### `rpm` package: `python-chardet-2.2.1-3.el7.noarch`
@@ -1018,15 +1018,15 @@ $ dnf --quiet download --source --url python-kitchen-1.1.1-5.el7.noarch
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/python-kitchen-1.1.1-5.el7.src.rpm
 ```
 
-### `rpm` package: `python-libs-2.7.5-93.0.1.el7_9.x86_64`
+### `rpm` package: `python-libs-2.7.5-94.0.1.el7_9.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-libs-2.7.5-93.0.1.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/python-2.7.5-93.0.1.el7_9.src.rpm
+$ dnf --quiet download --source --url python-libs-2.7.5-94.0.1.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/python-2.7.5-94.0.1.el7_9.src.rpm
 ```
 
 ### `rpm` package: `python-pycurl-7.19.0-19.el7.x86_64`
