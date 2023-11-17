@@ -344,20 +344,13 @@ Licenses: (parsed from: `/usr/share/doc/libdb5.3/copyright`)
 - `X11`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28+dfsg2-2
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-2.dsc' db5.3_5.3.28+dfsg2-2.dsc 2183 SHA256:763a77002e906ab9c0db8ba81cef1639818b45285c4109d5622ba5d5daf11f44
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2.orig.tar.xz' db5.3_5.3.28+dfsg2.orig.tar.xz 21287688 SHA256:ad41b507415dec8316e828b2230242af2251d2c86eefa3c7aa9ef47c5239ef33
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-2.debian.tar.xz' db5.3_5.3.28+dfsg2-2.debian.tar.xz 33560 SHA256:1292292f486d6529815d199291428f3fc770025ab562c4d1d370b8d3df74fa3d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg2-2/
 
-- https://sources.debian.net/src/db5.3/5.3.28+dfsg2-2/ (for browsing the source)
-- https://sources.debian.net/src/db5.3/5.3.28+dfsg2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.82`
 
@@ -1331,21 +1324,13 @@ Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 - `GPL-2.0-only`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mawk=1.3.4.20230808-1
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20230808-1.dsc' mawk_1.3.4.20230808-1.dsc 2180 SHA256:f9536c5a23ed26b4e139493a1c2f2f0ecf9bb232b4906b3d048c2f95af0cd6c4
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20230808.orig.tar.gz' mawk_1.3.4.20230808.orig.tar.gz 410937 SHA256:88f55a632e2736ff5c5f69944abc151734d89d8298d5005921180f39ab7ba6d0
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20230808.orig.tar.gz.asc' mawk_1.3.4.20230808.orig.tar.gz.asc 729 SHA256:3212bb1153100c1f8b516546ce4be9177a9fafe83de03f6179efaab6b0484328
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20230808-1.debian.tar.xz' mawk_1.3.4.20230808-1.debian.tar.xz 15508 SHA256:173b5525a763c0c1fa41c596c31605157d2c87e8fcb0e69efdc29b0810fa4510
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mawk/1.3.4.20230808-1/
 
-- https://sources.debian.net/src/mawk/1.3.4.20230808-1/ (for browsing the source)
-- https://sources.debian.net/src/mawk/1.3.4.20230808-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mawk/1.3.4.20230808-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.4+20231016-1`
 
