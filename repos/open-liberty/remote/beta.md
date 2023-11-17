@@ -1,7 +1,7 @@
 ## `open-liberty:beta`
 
 ```console
-$ docker pull open-liberty@sha256:eb3cafe43b2b73c0681ac3f45aea066a6e43907576d341f037453baf09dedb36
+$ docker pull open-liberty@sha256:653afe1847aa18d3e0f9c1dce2816212a875b28550c9a9a7b2de0f3e0cb08c0d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,14 +14,14 @@ $ docker pull open-liberty@sha256:eb3cafe43b2b73c0681ac3f45aea066a6e43907576d341
 ### `open-liberty:beta` - linux; amd64
 
 ```console
-$ docker pull open-liberty@sha256:328c986ae89533df8b6841d4a30180cb357a82229ee6893b170af7e0027f371e
+$ docker pull open-liberty@sha256:2a1ef5a2000145f912b3e277dd3cd6ea40aa6cfc3985ae7c946d7cd746c2d09a
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **437.0 MB (436979227 bytes)**  
+-	Total Size: **437.5 MB (437549132 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10069cc9ee18f1e1ae7404df662337d6d99e6a9d7b80fbbe6b77e9cdcc51d16d`
+-	Image ID: `sha256:09253e6924a0ffb0ed6bdd008e002305f1d569b2a034649ff4f7c5278a189814`
 -	Entrypoint: `["\/opt\/ol\/helpers\/runtime\/docker-server.sh"]`
 -	Default Command: `["\/opt\/ol\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -54,52 +54,52 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache 
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
 # Fri, 13 Oct 2023 15:45:09 GMT
 USER root
-# Thu, 19 Oct 2023 01:29:28 GMT
-ARG LIBERTY_VERSION=23.0.0.11-beta
-# Thu, 19 Oct 2023 01:29:28 GMT
-ARG LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789
-# Thu, 19 Oct 2023 01:29:29 GMT
-ARG LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip
-# Thu, 19 Oct 2023 01:29:29 GMT
-ARG LIBERTY_BUILD_LABEL=cl231020231002-1201
-# Thu, 19 Oct 2023 01:29:29 GMT
+# Fri, 17 Nov 2023 01:31:15 GMT
+ARG LIBERTY_VERSION=23.0.0.12-beta
+# Fri, 17 Nov 2023 01:31:15 GMT
+ARG LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8
+# Fri, 17 Nov 2023 01:31:15 GMT
+ARG LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip
+# Fri, 17 Nov 2023 01:31:15 GMT
+ARG LIBERTY_BUILD_LABEL=cl231120231030-1102
+# Fri, 17 Nov 2023 01:31:15 GMT
 ARG OPENJ9_SCC=true
-# Thu, 19 Oct 2023 01:29:29 GMT
+# Fri, 17 Nov 2023 01:31:15 GMT
 ARG VERBOSE=false
-# Thu, 19 Oct 2023 01:29:29 GMT
-LABEL org.opencontainers.image.authors=Leo Christy Jesuraj, Melissa Lee, Thomas Watson, Michal Broz, Wendy Raschke org.opencontainers.image.vendor=Open Liberty org.opencontainers.image.url=https://openliberty.io/ org.opencontainers.image.source=https://github.com/OpenLiberty/ci.docker org.opencontainers.image.revision=cl231020231002-1201 org.opencontainers.image.description=This image contains the Open Liberty beta runtime with IBM Semeru Runtime Open Edition OpenJDK 8 with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/OpenLiberty/ci.docker#building-an-application-image org.opencontainers.image.title=Open Liberty Beta org.opencontainers.image.version=23.0.0.11-beta
-# Thu, 19 Oct 2023 01:29:29 GMT
+# Fri, 17 Nov 2023 01:31:15 GMT
+LABEL org.opencontainers.image.authors=Leo Christy Jesuraj, Melissa Lee, Thomas Watson, Michal Broz, Wendy Raschke org.opencontainers.image.vendor=Open Liberty org.opencontainers.image.url=https://openliberty.io/ org.opencontainers.image.source=https://github.com/OpenLiberty/ci.docker org.opencontainers.image.revision=cl231120231030-1102 org.opencontainers.image.description=This image contains the Open Liberty beta runtime with IBM Semeru Runtime Open Edition OpenJDK 8 with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/OpenLiberty/ci.docker#building-an-application-image org.opencontainers.image.title=Open Liberty Beta org.opencontainers.image.version=23.0.0.12-beta
+# Fri, 17 Nov 2023 01:31:15 GMT
 COPY file:b2d50545eedb1d5c43e3914a49059b907fd99eab5d731eb6d4ff519f47d88408 in /opt/ol/NOTICES 
-# Thu, 19 Oct 2023 01:29:29 GMT
-COPY dir:a97cef5aeadecef42d1180b96aebb9baf067c656383fc2bf1773e8e0dbba1656 in /opt/ol/helpers 
-# Thu, 19 Oct 2023 01:29:29 GMT
+# Fri, 17 Nov 2023 01:31:15 GMT
+COPY dir:3a03be0df9fe59a90276be087434855a86a8818483ded6f49c3c57610fb6842d in /opt/ol/helpers 
+# Fri, 17 Nov 2023 01:31:16 GMT
 COPY dir:1cf5cc2663c6235241a5228340a9c566587fe27b3e434a313debbf75dacd7a4b in /opt/ol/fixes/ 
-# Thu, 19 Oct 2023 01:29:30 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta OPENJ9_SCC=true VERBOSE=false
+# Fri, 17 Nov 2023 01:31:17 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta OPENJ9_SCC=true VERBOSE=false
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_aarch64';          DUMB_INIT_SHA256=b7d648f97154a99c539b63c55979cd29f005f88430fb383007fe3458340b795e;          ;;        amd64|x86_64)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_x86_64';          DUMB_INIT_SHA256=e874b55f3279ca41415d290c512a7ba9d08f98041b28ae7c2acb19a545f1c4df;          ;;        ppc64el|ppc64le)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_ppc64le';          DUMB_INIT_SHA256=3d15e80e29f0f4fa1fc686b00613a2220bc37e83a35283d4b4cca1fbd0a5609f;          ;;        s390x)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_s390x';          DUMB_INIT_SHA256=47e4601b152fc6dcb1891e66c30ecc62a2939fd7ffd1515a7c30f281cfec53b7;          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /usr/bin/dumb-init ${DUMB_INIT_URL};     echo "${DUMB_INIT_SHA256} */usr/bin/dumb-init" | sha256sum -c -;     chmod +x /usr/bin/dumb-init;
-# Thu, 19 Oct 2023 01:29:50 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta OPENJ9_SCC=true VERBOSE=false
+# Fri, 17 Nov 2023 01:31:45 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta OPENJ9_SCC=true VERBOSE=false
 RUN apt-get update     && apt-get install -y --no-install-recommends unzip openssl wget     && wget -q $LIBERTY_DOWNLOAD_URL -U UA-Open-Liberty-Docker -O /tmp/wlp.zip     && echo "$LIBERTY_SHA  /tmp/wlp.zip" > /tmp/wlp.zip.sha1     && sha1sum -c /tmp/wlp.zip.sha1     && unzip -q /tmp/wlp.zip -d /opt/ol     && rm /tmp/wlp.zip     && rm /tmp/wlp.zip.sha1     && mkdir -p /licenses     && cp /opt/ol/wlp/LICENSE /licenses/     && apt-get remove -y unzip     && apt-get remove -y wget     && rm -rf /var/lib/apt/lists/*     && useradd -u 1001 -r -g 0 -s /usr/sbin/nologin default     && chown -R 1001:0 /opt/ol/wlp     && chmod -R g+rw /opt/ol/wlp
-# Thu, 19 Oct 2023 01:29:51 GMT
+# Fri, 17 Nov 2023 01:31:46 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ol/wlp/bin:/opt/ol/helpers/build LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ol/wlp/output WLP_SKIP_MAXPERMSIZE=true OPENJ9_SCC=true
-# Thu, 19 Oct 2023 01:29:52 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta VERBOSE=false
+# Fri, 17 Nov 2023 01:31:47 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta VERBOSE=false
 RUN /opt/ol/wlp/bin/server create --template=javaee8     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea     && rm -rf /opt/ol/wlp/usr/servers/defaultServer/server.env
-# Thu, 19 Oct 2023 01:29:52 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta VERBOSE=false
+# Fri, 17 Nov 2023 01:31:47 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta VERBOSE=false
 RUN mkdir /logs     && mkdir -p /opt/ol/wlp/usr/shared/resources/lib.index.cache     && ln -s /opt/ol/wlp/usr/shared/resources/lib.index.cache /lib.index.cache     && mkdir -p $WLP_OUTPUT_DIR/defaultServer     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ol/wlp/usr/servers/defaultServer /config     && mkdir -p /config/configDropins/defaults     && mkdir -p /config/configDropins/overrides     && mkdir -p /config/dropins     && mkdir -p /config/apps     && ln -s /opt/ol/wlp /liberty     && ln -s /opt/ol/fixes /fixes     && chown -R 1001:0 /config     && chmod -R g+rw /config     && chown -R 1001:0 /logs     && chmod -R g+rw /logs     && chown -R 1001:0 /opt/ol/wlp/usr     && chmod -R g+rw /opt/ol/wlp/usr     && chown -R 1001:0 /opt/ol/wlp/output     && chmod -R g+rw /opt/ol/wlp/output     && chown -R 1001:0 /opt/ol/helpers     && chmod -R g+rw /opt/ol/helpers     && chown -R 1001:0 /opt/ol/fixes     && chmod -R g+rwx /opt/ol/fixes     && mkdir /etc/wlp     && chown -R 1001:0 /etc/wlp     && chmod -R g+rw /etc/wlp     && echo "<server description=\"Default Server\"><httpEndpoint id=\"defaultHttpEndpoint\" host=\"*\" /></server>" > /config/configDropins/defaults/open-default-port.xml
-# Thu, 19 Oct 2023 01:30:20 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta VERBOSE=false
+# Fri, 17 Nov 2023 01:32:15 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta VERBOSE=false
 RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /output/messaging /output/resources/security /logs/* $WLP_OUTPUT_DIR/.classCache     && chown -R 1001:0 /opt/ol/wlp/output     && chmod -R g+rwx /opt/ol/wlp/output
-# Thu, 19 Oct 2023 01:30:21 GMT
+# Fri, 17 Nov 2023 01:32:15 GMT
 ENV RANDFILE=/tmp/.rnd OPENJ9_JAVA_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal -Dosgi.checkConfiguration=false
-# Thu, 19 Oct 2023 01:30:21 GMT
+# Fri, 17 Nov 2023 01:32:15 GMT
 USER 1001
-# Thu, 19 Oct 2023 01:30:21 GMT
+# Fri, 17 Nov 2023 01:32:15 GMT
 EXPOSE 9080 9443
-# Thu, 19 Oct 2023 01:30:21 GMT
+# Fri, 17 Nov 2023 01:32:15 GMT
 ENTRYPOINT ["/opt/ol/helpers/runtime/docker-server.sh"]
-# Thu, 19 Oct 2023 01:30:21 GMT
+# Fri, 17 Nov 2023 01:32:15 GMT
 CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ```
 
@@ -120,50 +120,50 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Last Modified: Fri, 13 Oct 2023 08:13:32 GMT  
 		Size: 4.2 MB (4186059 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20de5eec437589cfcdb0597332e2977a851dbb0b84ee9ba674b8b1c678ef2aa9`  
-		Last Modified: Thu, 19 Oct 2023 01:37:38 GMT  
-		Size: 1.1 KB (1075 bytes)  
+	-	`sha256:dac327014668426b9c97e2c5b4d9c0be02b8a75d10fe735cb17b4366e57e0e8f`  
+		Last Modified: Fri, 17 Nov 2023 01:41:11 GMT  
+		Size: 1.1 KB (1073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e4986cb12abdacd9c4eb685169a5bb4319fb18146c346868cc75349e9b67850`  
-		Last Modified: Thu, 19 Oct 2023 01:37:38 GMT  
-		Size: 9.4 KB (9434 bytes)  
+	-	`sha256:a5a2620e603e2482bc75b5a31d9fde2cfbe99094a79d27f6133fca6ea7721426`  
+		Last Modified: Fri, 17 Nov 2023 01:41:11 GMT  
+		Size: 9.6 KB (9584 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43bf5fac75af61c6d2e71984900bdc04e8a261cb6afc16c274a71b246002aed9`  
-		Last Modified: Thu, 19 Oct 2023 01:37:38 GMT  
-		Size: 264.0 B  
+	-	`sha256:740e4f05166ae20447629f684a72fa95663162f1122891742843a9e019a3cc52`  
+		Last Modified: Fri, 17 Nov 2023 01:41:11 GMT  
+		Size: 265.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0627e8e9000d9440df744596f09c84bfdb6224e6849707d2345a2a25ec4ba2c`  
-		Last Modified: Thu, 19 Oct 2023 01:37:36 GMT  
+	-	`sha256:a724a4a29c664b9b6ad556b2771b802b85d33c0946b93edc0ff4649719c1cae8`  
+		Last Modified: Fri, 17 Nov 2023 01:41:09 GMT  
 		Size: 31.7 KB (31747 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:73702cb06076fa8c3aa963d86d8f9f4307d58e5564b503233e84e2907bc3ec2f`  
-		Last Modified: Thu, 19 Oct 2023 01:37:51 GMT  
-		Size: 327.3 MB (327300047 bytes)  
+	-	`sha256:a3b89bdea4fa6ce4ef67a0e387f277666681afaf758719c7bf05bda8b3c94c36`  
+		Last Modified: Fri, 17 Nov 2023 01:41:24 GMT  
+		Size: 327.8 MB (327845731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39611a6657739a6326ca31619b88c5077ef9346dffa2a5c2fb29a554689224d7`  
-		Last Modified: Thu, 19 Oct 2023 01:37:36 GMT  
-		Size: 1.2 KB (1193 bytes)  
+	-	`sha256:bc03c9b3513a18a4aca595969b7bf86378422abfaaf095b21ee5374d6a4aa991`  
+		Last Modified: Fri, 17 Nov 2023 01:41:09 GMT  
+		Size: 1.2 KB (1190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de622d4cc80a6c783842db270ae5d846376e6f5091b2dc4baddfc1e1b74f10b4`  
-		Last Modified: Thu, 19 Oct 2023 01:37:36 GMT  
-		Size: 10.9 KB (10895 bytes)  
+	-	`sha256:18317061c90f2782f0b0fbe7a903b685e4d8be4e053622e6d54b2b2d4f7df07e`  
+		Last Modified: Fri, 17 Nov 2023 01:41:09 GMT  
+		Size: 11.0 KB (11036 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82e62a17aeec7e9708d02a827c1e4349d2b2002b5e8c126672e696c7b43ef71e`  
-		Last Modified: Thu, 19 Oct 2023 01:37:38 GMT  
-		Size: 12.5 MB (12517706 bytes)  
+	-	`sha256:77e7d751ba7ea171b449415840988b7bdf41c9f64c440a2ebdea31a55d1eaab5`  
+		Last Modified: Fri, 17 Nov 2023 01:41:11 GMT  
+		Size: 12.5 MB (12541640 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `open-liberty:beta` - linux; arm64 variant v8
 
 ```console
-$ docker pull open-liberty@sha256:a8a6e7c0a51a4f10550e737166190ead63a93aae7505921edccbb924362ac64e
+$ docker pull open-liberty@sha256:48f0580e35c44f4238b15fe2f0adae39fc8efae7969dfa2c61494b40a7c91a3f
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **432.4 MB (432412604 bytes)**  
+-	Total Size: **433.1 MB (433112100 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a8d68178ce25341be6b8fe5832caa43d18f6dbac7eb5cb2c99f693de3f22f7f`
+-	Image ID: `sha256:f8dcea13a2d21f09b92945a90cb881ccb1618bc74d0ee6631d0d8c50934f887c`
 -	Entrypoint: `["\/opt\/ol\/helpers\/runtime\/docker-server.sh"]`
 -	Default Command: `["\/opt\/ol\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -196,52 +196,52 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache 
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
 # Fri, 13 Oct 2023 12:51:14 GMT
 USER root
-# Thu, 19 Oct 2023 02:05:47 GMT
-ARG LIBERTY_VERSION=23.0.0.11-beta
-# Thu, 19 Oct 2023 02:05:47 GMT
-ARG LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789
-# Thu, 19 Oct 2023 02:05:47 GMT
-ARG LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip
-# Thu, 19 Oct 2023 02:05:47 GMT
-ARG LIBERTY_BUILD_LABEL=cl231020231002-1201
-# Thu, 19 Oct 2023 02:05:47 GMT
+# Fri, 17 Nov 2023 01:42:04 GMT
+ARG LIBERTY_VERSION=23.0.0.12-beta
+# Fri, 17 Nov 2023 01:42:04 GMT
+ARG LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8
+# Fri, 17 Nov 2023 01:42:04 GMT
+ARG LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip
+# Fri, 17 Nov 2023 01:42:04 GMT
+ARG LIBERTY_BUILD_LABEL=cl231120231030-1102
+# Fri, 17 Nov 2023 01:42:04 GMT
 ARG OPENJ9_SCC=true
-# Thu, 19 Oct 2023 02:05:47 GMT
+# Fri, 17 Nov 2023 01:42:04 GMT
 ARG VERBOSE=false
-# Thu, 19 Oct 2023 02:05:47 GMT
-LABEL org.opencontainers.image.authors=Leo Christy Jesuraj, Melissa Lee, Thomas Watson, Michal Broz, Wendy Raschke org.opencontainers.image.vendor=Open Liberty org.opencontainers.image.url=https://openliberty.io/ org.opencontainers.image.source=https://github.com/OpenLiberty/ci.docker org.opencontainers.image.revision=cl231020231002-1201 org.opencontainers.image.description=This image contains the Open Liberty beta runtime with IBM Semeru Runtime Open Edition OpenJDK 8 with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/OpenLiberty/ci.docker#building-an-application-image org.opencontainers.image.title=Open Liberty Beta org.opencontainers.image.version=23.0.0.11-beta
-# Thu, 19 Oct 2023 02:05:47 GMT
+# Fri, 17 Nov 2023 01:42:04 GMT
+LABEL org.opencontainers.image.authors=Leo Christy Jesuraj, Melissa Lee, Thomas Watson, Michal Broz, Wendy Raschke org.opencontainers.image.vendor=Open Liberty org.opencontainers.image.url=https://openliberty.io/ org.opencontainers.image.source=https://github.com/OpenLiberty/ci.docker org.opencontainers.image.revision=cl231120231030-1102 org.opencontainers.image.description=This image contains the Open Liberty beta runtime with IBM Semeru Runtime Open Edition OpenJDK 8 with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/OpenLiberty/ci.docker#building-an-application-image org.opencontainers.image.title=Open Liberty Beta org.opencontainers.image.version=23.0.0.12-beta
+# Fri, 17 Nov 2023 01:42:05 GMT
 COPY file:b2d50545eedb1d5c43e3914a49059b907fd99eab5d731eb6d4ff519f47d88408 in /opt/ol/NOTICES 
-# Thu, 19 Oct 2023 02:05:48 GMT
-COPY dir:a97cef5aeadecef42d1180b96aebb9baf067c656383fc2bf1773e8e0dbba1656 in /opt/ol/helpers 
-# Thu, 19 Oct 2023 02:05:48 GMT
+# Fri, 17 Nov 2023 01:42:05 GMT
+COPY dir:3a03be0df9fe59a90276be087434855a86a8818483ded6f49c3c57610fb6842d in /opt/ol/helpers 
+# Fri, 17 Nov 2023 01:42:05 GMT
 COPY dir:1cf5cc2663c6235241a5228340a9c566587fe27b3e434a313debbf75dacd7a4b in /opt/ol/fixes/ 
-# Thu, 19 Oct 2023 02:05:49 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta OPENJ9_SCC=true VERBOSE=false
+# Fri, 17 Nov 2023 01:42:06 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta OPENJ9_SCC=true VERBOSE=false
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_aarch64';          DUMB_INIT_SHA256=b7d648f97154a99c539b63c55979cd29f005f88430fb383007fe3458340b795e;          ;;        amd64|x86_64)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_x86_64';          DUMB_INIT_SHA256=e874b55f3279ca41415d290c512a7ba9d08f98041b28ae7c2acb19a545f1c4df;          ;;        ppc64el|ppc64le)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_ppc64le';          DUMB_INIT_SHA256=3d15e80e29f0f4fa1fc686b00613a2220bc37e83a35283d4b4cca1fbd0a5609f;          ;;        s390x)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_s390x';          DUMB_INIT_SHA256=47e4601b152fc6dcb1891e66c30ecc62a2939fd7ffd1515a7c30f281cfec53b7;          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /usr/bin/dumb-init ${DUMB_INIT_URL};     echo "${DUMB_INIT_SHA256} */usr/bin/dumb-init" | sha256sum -c -;     chmod +x /usr/bin/dumb-init;
-# Thu, 19 Oct 2023 02:06:13 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta OPENJ9_SCC=true VERBOSE=false
+# Fri, 17 Nov 2023 01:42:28 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta OPENJ9_SCC=true VERBOSE=false
 RUN apt-get update     && apt-get install -y --no-install-recommends unzip openssl wget     && wget -q $LIBERTY_DOWNLOAD_URL -U UA-Open-Liberty-Docker -O /tmp/wlp.zip     && echo "$LIBERTY_SHA  /tmp/wlp.zip" > /tmp/wlp.zip.sha1     && sha1sum -c /tmp/wlp.zip.sha1     && unzip -q /tmp/wlp.zip -d /opt/ol     && rm /tmp/wlp.zip     && rm /tmp/wlp.zip.sha1     && mkdir -p /licenses     && cp /opt/ol/wlp/LICENSE /licenses/     && apt-get remove -y unzip     && apt-get remove -y wget     && rm -rf /var/lib/apt/lists/*     && useradd -u 1001 -r -g 0 -s /usr/sbin/nologin default     && chown -R 1001:0 /opt/ol/wlp     && chmod -R g+rw /opt/ol/wlp
-# Thu, 19 Oct 2023 02:06:15 GMT
+# Fri, 17 Nov 2023 01:42:30 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ol/wlp/bin:/opt/ol/helpers/build LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ol/wlp/output WLP_SKIP_MAXPERMSIZE=true OPENJ9_SCC=true
-# Thu, 19 Oct 2023 02:06:16 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta VERBOSE=false
+# Fri, 17 Nov 2023 01:42:31 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta VERBOSE=false
 RUN /opt/ol/wlp/bin/server create --template=javaee8     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea     && rm -rf /opt/ol/wlp/usr/servers/defaultServer/server.env
-# Thu, 19 Oct 2023 02:06:17 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta VERBOSE=false
+# Fri, 17 Nov 2023 01:42:32 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta VERBOSE=false
 RUN mkdir /logs     && mkdir -p /opt/ol/wlp/usr/shared/resources/lib.index.cache     && ln -s /opt/ol/wlp/usr/shared/resources/lib.index.cache /lib.index.cache     && mkdir -p $WLP_OUTPUT_DIR/defaultServer     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ol/wlp/usr/servers/defaultServer /config     && mkdir -p /config/configDropins/defaults     && mkdir -p /config/configDropins/overrides     && mkdir -p /config/dropins     && mkdir -p /config/apps     && ln -s /opt/ol/wlp /liberty     && ln -s /opt/ol/fixes /fixes     && chown -R 1001:0 /config     && chmod -R g+rw /config     && chown -R 1001:0 /logs     && chmod -R g+rw /logs     && chown -R 1001:0 /opt/ol/wlp/usr     && chmod -R g+rw /opt/ol/wlp/usr     && chown -R 1001:0 /opt/ol/wlp/output     && chmod -R g+rw /opt/ol/wlp/output     && chown -R 1001:0 /opt/ol/helpers     && chmod -R g+rw /opt/ol/helpers     && chown -R 1001:0 /opt/ol/fixes     && chmod -R g+rwx /opt/ol/fixes     && mkdir /etc/wlp     && chown -R 1001:0 /etc/wlp     && chmod -R g+rw /etc/wlp     && echo "<server description=\"Default Server\"><httpEndpoint id=\"defaultHttpEndpoint\" host=\"*\" /></server>" > /config/configDropins/defaults/open-default-port.xml
-# Thu, 19 Oct 2023 02:06:43 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta VERBOSE=false
+# Fri, 17 Nov 2023 01:42:57 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta VERBOSE=false
 RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /output/messaging /output/resources/security /logs/* $WLP_OUTPUT_DIR/.classCache     && chown -R 1001:0 /opt/ol/wlp/output     && chmod -R g+rwx /opt/ol/wlp/output
-# Thu, 19 Oct 2023 02:06:43 GMT
+# Fri, 17 Nov 2023 01:42:57 GMT
 ENV RANDFILE=/tmp/.rnd OPENJ9_JAVA_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal -Dosgi.checkConfiguration=false
-# Thu, 19 Oct 2023 02:06:43 GMT
+# Fri, 17 Nov 2023 01:42:57 GMT
 USER 1001
-# Thu, 19 Oct 2023 02:06:44 GMT
+# Fri, 17 Nov 2023 01:42:58 GMT
 EXPOSE 9080 9443
-# Thu, 19 Oct 2023 02:06:44 GMT
+# Fri, 17 Nov 2023 01:42:58 GMT
 ENTRYPOINT ["/opt/ol/helpers/runtime/docker-server.sh"]
-# Thu, 19 Oct 2023 02:06:44 GMT
+# Fri, 17 Nov 2023 01:42:58 GMT
 CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ```
 
@@ -262,50 +262,50 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Last Modified: Fri, 13 Oct 2023 04:19:38 GMT  
 		Size: 4.1 MB (4056962 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8469deed50c1c9bf3602b05fb0a6154b9c2e8b7df7fb67c738c97473a0891fc`  
-		Last Modified: Thu, 19 Oct 2023 02:12:42 GMT  
-		Size: 1.1 KB (1073 bytes)  
+	-	`sha256:e9776ad4b915a3b50f7d79d1dc22ac58fe560c412bafec95aec51c61ffcb4995`  
+		Last Modified: Fri, 17 Nov 2023 01:50:35 GMT  
+		Size: 1.1 KB (1074 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3ce522e1a32989399974dfdb85dc64cfa2143ff6168c27a2f7a8b9cd5b06c9b`  
-		Last Modified: Thu, 19 Oct 2023 02:12:42 GMT  
-		Size: 9.4 KB (9437 bytes)  
+	-	`sha256:440e2853e96528aef950d49b9adcbb1bf7ca129ff1a7f6f0fcae23fa6a044b97`  
+		Last Modified: Fri, 17 Nov 2023 01:50:35 GMT  
+		Size: 9.6 KB (9579 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6e715b9dc00ede38ba11b8b2aa0b25a8970eb4478dc2941b8384c716d6850d3`  
-		Last Modified: Thu, 19 Oct 2023 02:12:42 GMT  
-		Size: 266.0 B  
+	-	`sha256:c4066be7b5582127d4f8e79214b991f5b9c9ac3ce204dff618fded96bcec4d94`  
+		Last Modified: Fri, 17 Nov 2023 01:50:35 GMT  
+		Size: 264.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c0437989cc12e9f60a67cc03cc57985dac1e8c0e6ecd7f39d57acc08dc01669`  
-		Last Modified: Thu, 19 Oct 2023 02:12:40 GMT  
-		Size: 42.3 KB (42321 bytes)  
+	-	`sha256:9e72690180592539cde63b17106776032a3b6f90deb8df16502f7f3df8e74320`  
+		Last Modified: Fri, 17 Nov 2023 01:50:33 GMT  
+		Size: 42.3 KB (42320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a0597b3ae21b5e65b2ac2d4f14ea82dcb7b077e77437c2569f1c10ab1ba47dd6`  
-		Last Modified: Thu, 19 Oct 2023 02:12:55 GMT  
-		Size: 327.3 MB (327301635 bytes)  
+	-	`sha256:aeb58080599c6bc68b3e8429734cff2702f4fbbf9b6f72cd8eea8bb833816fed`  
+		Last Modified: Fri, 17 Nov 2023 01:50:45 GMT  
+		Size: 327.8 MB (327823664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:feb0def7b385691a4764a44462ded2827d2a1abe5e7f818cca1442a111a64ef4`  
-		Last Modified: Thu, 19 Oct 2023 02:12:40 GMT  
-		Size: 1.2 KB (1191 bytes)  
+	-	`sha256:6b6a8579798594d1b82d7b6c88af7c0df27a8570d997873c1e2c3035565a1469`  
+		Last Modified: Fri, 17 Nov 2023 01:50:33 GMT  
+		Size: 1.2 KB (1187 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c388b1880bb4b54d3ced28252ae976974a022f9ad45e89e9bf442d216e3ab7be`  
-		Last Modified: Thu, 19 Oct 2023 02:12:40 GMT  
-		Size: 10.9 KB (10899 bytes)  
+	-	`sha256:00061d978575461d32461de8a17e1bc3a4c471607bb1424c37a1789627522b52`  
+		Last Modified: Fri, 17 Nov 2023 01:50:33 GMT  
+		Size: 11.1 KB (11051 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:784dffa5969d5c4e1c798336f9ea938fc1aebebb7b4e239c25c4cc30c9e9934e`  
-		Last Modified: Thu, 19 Oct 2023 02:12:41 GMT  
-		Size: 12.0 MB (11994669 bytes)  
+	-	`sha256:3a8bfcbe582017e7198773af02c21f035ac6aeb474edd0b98671fc1455b64621`  
+		Last Modified: Fri, 17 Nov 2023 01:50:35 GMT  
+		Size: 12.2 MB (12171848 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `open-liberty:beta` - linux; ppc64le
 
 ```console
-$ docker pull open-liberty@sha256:2100876ea49851931ca2cc98c5d2fa369a3d6a7d79fe6a6a8d6a90fd02468226
+$ docker pull open-liberty@sha256:8f40323a213837bfd8958097e0e81126f1f35d2244bf23ac8d041b6cefdd4b37
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **441.4 MB (441368745 bytes)**  
+-	Total Size: **442.0 MB (442017476 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b06f18a77c773bbfdf8a2c25775cb186684fa22883d6ba8d56f565693a092d43`
+-	Image ID: `sha256:3dd6b89fe88181b5c4eac19bb3eaff37bd7b6102326a78de286bb9c52d350a91`
 -	Entrypoint: `["\/opt\/ol\/helpers\/runtime\/docker-server.sh"]`
 -	Default Command: `["\/opt\/ol\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -338,52 +338,52 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache 
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
 # Fri, 13 Oct 2023 08:58:01 GMT
 USER root
-# Thu, 19 Oct 2023 01:18:04 GMT
-ARG LIBERTY_VERSION=23.0.0.11-beta
-# Thu, 19 Oct 2023 01:18:04 GMT
-ARG LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789
-# Thu, 19 Oct 2023 01:18:04 GMT
-ARG LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip
-# Thu, 19 Oct 2023 01:18:05 GMT
-ARG LIBERTY_BUILD_LABEL=cl231020231002-1201
-# Thu, 19 Oct 2023 01:18:05 GMT
+# Fri, 17 Nov 2023 01:25:57 GMT
+ARG LIBERTY_VERSION=23.0.0.12-beta
+# Fri, 17 Nov 2023 01:25:57 GMT
+ARG LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8
+# Fri, 17 Nov 2023 01:25:58 GMT
+ARG LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip
+# Fri, 17 Nov 2023 01:25:58 GMT
+ARG LIBERTY_BUILD_LABEL=cl231120231030-1102
+# Fri, 17 Nov 2023 01:25:58 GMT
 ARG OPENJ9_SCC=true
-# Thu, 19 Oct 2023 01:18:06 GMT
+# Fri, 17 Nov 2023 01:25:59 GMT
 ARG VERBOSE=false
-# Thu, 19 Oct 2023 01:18:06 GMT
-LABEL org.opencontainers.image.authors=Leo Christy Jesuraj, Melissa Lee, Thomas Watson, Michal Broz, Wendy Raschke org.opencontainers.image.vendor=Open Liberty org.opencontainers.image.url=https://openliberty.io/ org.opencontainers.image.source=https://github.com/OpenLiberty/ci.docker org.opencontainers.image.revision=cl231020231002-1201 org.opencontainers.image.description=This image contains the Open Liberty beta runtime with IBM Semeru Runtime Open Edition OpenJDK 8 with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/OpenLiberty/ci.docker#building-an-application-image org.opencontainers.image.title=Open Liberty Beta org.opencontainers.image.version=23.0.0.11-beta
-# Thu, 19 Oct 2023 01:18:06 GMT
+# Fri, 17 Nov 2023 01:25:59 GMT
+LABEL org.opencontainers.image.authors=Leo Christy Jesuraj, Melissa Lee, Thomas Watson, Michal Broz, Wendy Raschke org.opencontainers.image.vendor=Open Liberty org.opencontainers.image.url=https://openliberty.io/ org.opencontainers.image.source=https://github.com/OpenLiberty/ci.docker org.opencontainers.image.revision=cl231120231030-1102 org.opencontainers.image.description=This image contains the Open Liberty beta runtime with IBM Semeru Runtime Open Edition OpenJDK 8 with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/OpenLiberty/ci.docker#building-an-application-image org.opencontainers.image.title=Open Liberty Beta org.opencontainers.image.version=23.0.0.12-beta
+# Fri, 17 Nov 2023 01:25:59 GMT
 COPY file:b2d50545eedb1d5c43e3914a49059b907fd99eab5d731eb6d4ff519f47d88408 in /opt/ol/NOTICES 
-# Thu, 19 Oct 2023 01:18:06 GMT
-COPY dir:a97cef5aeadecef42d1180b96aebb9baf067c656383fc2bf1773e8e0dbba1656 in /opt/ol/helpers 
-# Thu, 19 Oct 2023 01:18:07 GMT
+# Fri, 17 Nov 2023 01:26:00 GMT
+COPY dir:3a03be0df9fe59a90276be087434855a86a8818483ded6f49c3c57610fb6842d in /opt/ol/helpers 
+# Fri, 17 Nov 2023 01:26:00 GMT
 COPY dir:1cf5cc2663c6235241a5228340a9c566587fe27b3e434a313debbf75dacd7a4b in /opt/ol/fixes/ 
-# Thu, 19 Oct 2023 01:18:09 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta OPENJ9_SCC=true VERBOSE=false
+# Fri, 17 Nov 2023 01:26:02 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta OPENJ9_SCC=true VERBOSE=false
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_aarch64';          DUMB_INIT_SHA256=b7d648f97154a99c539b63c55979cd29f005f88430fb383007fe3458340b795e;          ;;        amd64|x86_64)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_x86_64';          DUMB_INIT_SHA256=e874b55f3279ca41415d290c512a7ba9d08f98041b28ae7c2acb19a545f1c4df;          ;;        ppc64el|ppc64le)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_ppc64le';          DUMB_INIT_SHA256=3d15e80e29f0f4fa1fc686b00613a2220bc37e83a35283d4b4cca1fbd0a5609f;          ;;        s390x)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_s390x';          DUMB_INIT_SHA256=47e4601b152fc6dcb1891e66c30ecc62a2939fd7ffd1515a7c30f281cfec53b7;          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /usr/bin/dumb-init ${DUMB_INIT_URL};     echo "${DUMB_INIT_SHA256} */usr/bin/dumb-init" | sha256sum -c -;     chmod +x /usr/bin/dumb-init;
-# Thu, 19 Oct 2023 01:18:49 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta OPENJ9_SCC=true VERBOSE=false
+# Fri, 17 Nov 2023 01:26:44 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta OPENJ9_SCC=true VERBOSE=false
 RUN apt-get update     && apt-get install -y --no-install-recommends unzip openssl wget     && wget -q $LIBERTY_DOWNLOAD_URL -U UA-Open-Liberty-Docker -O /tmp/wlp.zip     && echo "$LIBERTY_SHA  /tmp/wlp.zip" > /tmp/wlp.zip.sha1     && sha1sum -c /tmp/wlp.zip.sha1     && unzip -q /tmp/wlp.zip -d /opt/ol     && rm /tmp/wlp.zip     && rm /tmp/wlp.zip.sha1     && mkdir -p /licenses     && cp /opt/ol/wlp/LICENSE /licenses/     && apt-get remove -y unzip     && apt-get remove -y wget     && rm -rf /var/lib/apt/lists/*     && useradd -u 1001 -r -g 0 -s /usr/sbin/nologin default     && chown -R 1001:0 /opt/ol/wlp     && chmod -R g+rw /opt/ol/wlp
-# Thu, 19 Oct 2023 01:18:54 GMT
+# Fri, 17 Nov 2023 01:26:53 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ol/wlp/bin:/opt/ol/helpers/build LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ol/wlp/output WLP_SKIP_MAXPERMSIZE=true OPENJ9_SCC=true
-# Thu, 19 Oct 2023 01:18:56 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta VERBOSE=false
+# Fri, 17 Nov 2023 01:27:00 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta VERBOSE=false
 RUN /opt/ol/wlp/bin/server create --template=javaee8     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea     && rm -rf /opt/ol/wlp/usr/servers/defaultServer/server.env
-# Thu, 19 Oct 2023 01:18:59 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta VERBOSE=false
+# Fri, 17 Nov 2023 01:27:03 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta VERBOSE=false
 RUN mkdir /logs     && mkdir -p /opt/ol/wlp/usr/shared/resources/lib.index.cache     && ln -s /opt/ol/wlp/usr/shared/resources/lib.index.cache /lib.index.cache     && mkdir -p $WLP_OUTPUT_DIR/defaultServer     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ol/wlp/usr/servers/defaultServer /config     && mkdir -p /config/configDropins/defaults     && mkdir -p /config/configDropins/overrides     && mkdir -p /config/dropins     && mkdir -p /config/apps     && ln -s /opt/ol/wlp /liberty     && ln -s /opt/ol/fixes /fixes     && chown -R 1001:0 /config     && chmod -R g+rw /config     && chown -R 1001:0 /logs     && chmod -R g+rw /logs     && chown -R 1001:0 /opt/ol/wlp/usr     && chmod -R g+rw /opt/ol/wlp/usr     && chown -R 1001:0 /opt/ol/wlp/output     && chmod -R g+rw /opt/ol/wlp/output     && chown -R 1001:0 /opt/ol/helpers     && chmod -R g+rw /opt/ol/helpers     && chown -R 1001:0 /opt/ol/fixes     && chmod -R g+rwx /opt/ol/fixes     && mkdir /etc/wlp     && chown -R 1001:0 /etc/wlp     && chmod -R g+rw /etc/wlp     && echo "<server description=\"Default Server\"><httpEndpoint id=\"defaultHttpEndpoint\" host=\"*\" /></server>" > /config/configDropins/defaults/open-default-port.xml
-# Thu, 19 Oct 2023 01:19:34 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta VERBOSE=false
+# Fri, 17 Nov 2023 01:27:46 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta VERBOSE=false
 RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /output/messaging /output/resources/security /logs/* $WLP_OUTPUT_DIR/.classCache     && chown -R 1001:0 /opt/ol/wlp/output     && chmod -R g+rwx /opt/ol/wlp/output
-# Thu, 19 Oct 2023 01:19:35 GMT
+# Fri, 17 Nov 2023 01:27:49 GMT
 ENV RANDFILE=/tmp/.rnd OPENJ9_JAVA_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal -Dosgi.checkConfiguration=false
-# Thu, 19 Oct 2023 01:19:35 GMT
+# Fri, 17 Nov 2023 01:27:50 GMT
 USER 1001
-# Thu, 19 Oct 2023 01:19:35 GMT
+# Fri, 17 Nov 2023 01:27:52 GMT
 EXPOSE 9080 9443
-# Thu, 19 Oct 2023 01:19:35 GMT
+# Fri, 17 Nov 2023 01:27:54 GMT
 ENTRYPOINT ["/opt/ol/helpers/runtime/docker-server.sh"]
-# Thu, 19 Oct 2023 01:19:36 GMT
+# Fri, 17 Nov 2023 01:27:56 GMT
 CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ```
 
@@ -404,50 +404,50 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Last Modified: Fri, 13 Oct 2023 07:54:04 GMT  
 		Size: 3.5 MB (3482022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:834c07f3f281821689e9ba44f9915710b4006e440e25059a53979467df351721`  
-		Last Modified: Thu, 19 Oct 2023 01:30:27 GMT  
-		Size: 1.1 KB (1077 bytes)  
+	-	`sha256:4a61eb4b6d3cb671894ac07b2d763bb3a4715c111d599759f668f2ca9fd61b41`  
+		Last Modified: Fri, 17 Nov 2023 01:44:41 GMT  
+		Size: 1.1 KB (1076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff2ac0e4e3468da33833a61602300bb3672f238b4a95f4a13f6db111a85fb250`  
-		Last Modified: Thu, 19 Oct 2023 01:30:27 GMT  
-		Size: 9.4 KB (9440 bytes)  
+	-	`sha256:47a0eaad5b9552e1c2d0bcd3bbfa909e959fd0e94a501660d550a1794aecafa4`  
+		Last Modified: Fri, 17 Nov 2023 01:44:40 GMT  
+		Size: 9.6 KB (9580 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aada6e34ef0230d776f8da867832bb85fa1298c6750d4d3050155e7fc3a370a0`  
-		Last Modified: Thu, 19 Oct 2023 01:30:27 GMT  
+	-	`sha256:c41134d52603a33a4b80db40dbe3b4508c2a70cd7fe633abc4559e5e5dbc7559`  
+		Last Modified: Fri, 17 Nov 2023 01:44:40 GMT  
 		Size: 267.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b062adf12da8ce1f8680896810874138ec3ab1a18265c83d20fa531d297e2ed9`  
-		Last Modified: Thu, 19 Oct 2023 01:30:25 GMT  
-		Size: 36.5 KB (36498 bytes)  
+	-	`sha256:463173b99d4e3f67bfd7f552452f21afd77a81386bae4f856fd7e769f818d043`  
+		Last Modified: Fri, 17 Nov 2023 01:44:38 GMT  
+		Size: 36.5 KB (36499 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cabb1fd6ecb9a5531fefc7c4688c4d5bb65ce5feef047b83b9a490eca838e65`  
-		Last Modified: Thu, 19 Oct 2023 01:30:42 GMT  
-		Size: 327.3 MB (327300852 bytes)  
+	-	`sha256:b2f6fe167e298e6611bb65ded1fb9bacad61567345fe56f2aeed195a6f0ca138`  
+		Last Modified: Fri, 17 Nov 2023 01:45:02 GMT  
+		Size: 327.9 MB (327871534 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:873ea205f46d765f229f3f5a244ac379976801cdfe288c76553bc9f7bb8ab554`  
-		Last Modified: Thu, 19 Oct 2023 01:30:25 GMT  
-		Size: 1.2 KB (1191 bytes)  
+	-	`sha256:9a56409ae104fbc768dcb39774c4751cc7dfa44eb6e88788a765bff1648d9253`  
+		Last Modified: Fri, 17 Nov 2023 01:44:38 GMT  
+		Size: 1.2 KB (1189 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8c56af39d291123711dd90ea7b9cb106ae0a7bfb0b0d5b4bd20dc01624af7ee`  
-		Last Modified: Thu, 19 Oct 2023 01:30:24 GMT  
-		Size: 10.9 KB (10913 bytes)  
+	-	`sha256:06b63d377bd59745079248b0cd1c1dd4569ae62d89363c500bee910b2eb64b8d`  
+		Last Modified: Fri, 17 Nov 2023 01:44:38 GMT  
+		Size: 11.1 KB (11061 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27beae8dbc72702fb02eaedd62229a0618e6455862637c88183a9231a5906da1`  
-		Last Modified: Thu, 19 Oct 2023 01:30:27 GMT  
-		Size: 11.1 MB (11145753 bytes)  
+	-	`sha256:e657eff8f98c4e10fe895bfa136497f54da40e3b6c31f12b3235d377f8640cc7`  
+		Last Modified: Fri, 17 Nov 2023 01:44:40 GMT  
+		Size: 11.2 MB (11223516 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `open-liberty:beta` - linux; s390x
 
 ```console
-$ docker pull open-liberty@sha256:3ba77f41516d36df36e2b1a206236c36ec436836cb9cc11fe60971f44e82fa70
+$ docker pull open-liberty@sha256:cf1b0279cb426137a9b96c438fce1c8c7165521bb4f12c9b1aadea96d8179bf8
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **435.4 MB (435350998 bytes)**  
+-	Total Size: **436.0 MB (435992235 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a8ead5ea0ceaef0baad1c26f99be90b55265a4c27f4e33e9ea1da0e0444d782`
+-	Image ID: `sha256:c80b92270d8934b6fbec34f9e35e1aef69deb9e0c7100f8f7cb69f811099cda0`
 -	Entrypoint: `["\/opt\/ol\/helpers\/runtime\/docker-server.sh"]`
 -	Default Command: `["\/opt\/ol\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -480,52 +480,52 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache 
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
 # Fri, 13 Oct 2023 13:15:20 GMT
 USER root
-# Thu, 19 Oct 2023 01:38:19 GMT
-ARG LIBERTY_VERSION=23.0.0.11-beta
-# Thu, 19 Oct 2023 01:38:19 GMT
-ARG LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789
-# Thu, 19 Oct 2023 01:38:19 GMT
-ARG LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip
-# Thu, 19 Oct 2023 01:38:19 GMT
-ARG LIBERTY_BUILD_LABEL=cl231020231002-1201
-# Thu, 19 Oct 2023 01:38:19 GMT
+# Fri, 17 Nov 2023 01:43:04 GMT
+ARG LIBERTY_VERSION=23.0.0.12-beta
+# Fri, 17 Nov 2023 01:43:04 GMT
+ARG LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8
+# Fri, 17 Nov 2023 01:43:04 GMT
+ARG LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip
+# Fri, 17 Nov 2023 01:43:04 GMT
+ARG LIBERTY_BUILD_LABEL=cl231120231030-1102
+# Fri, 17 Nov 2023 01:43:04 GMT
 ARG OPENJ9_SCC=true
-# Thu, 19 Oct 2023 01:38:19 GMT
+# Fri, 17 Nov 2023 01:43:05 GMT
 ARG VERBOSE=false
-# Thu, 19 Oct 2023 01:38:19 GMT
-LABEL org.opencontainers.image.authors=Leo Christy Jesuraj, Melissa Lee, Thomas Watson, Michal Broz, Wendy Raschke org.opencontainers.image.vendor=Open Liberty org.opencontainers.image.url=https://openliberty.io/ org.opencontainers.image.source=https://github.com/OpenLiberty/ci.docker org.opencontainers.image.revision=cl231020231002-1201 org.opencontainers.image.description=This image contains the Open Liberty beta runtime with IBM Semeru Runtime Open Edition OpenJDK 8 with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/OpenLiberty/ci.docker#building-an-application-image org.opencontainers.image.title=Open Liberty Beta org.opencontainers.image.version=23.0.0.11-beta
-# Thu, 19 Oct 2023 01:38:20 GMT
+# Fri, 17 Nov 2023 01:43:05 GMT
+LABEL org.opencontainers.image.authors=Leo Christy Jesuraj, Melissa Lee, Thomas Watson, Michal Broz, Wendy Raschke org.opencontainers.image.vendor=Open Liberty org.opencontainers.image.url=https://openliberty.io/ org.opencontainers.image.source=https://github.com/OpenLiberty/ci.docker org.opencontainers.image.revision=cl231120231030-1102 org.opencontainers.image.description=This image contains the Open Liberty beta runtime with IBM Semeru Runtime Open Edition OpenJDK 8 with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/OpenLiberty/ci.docker#building-an-application-image org.opencontainers.image.title=Open Liberty Beta org.opencontainers.image.version=23.0.0.12-beta
+# Fri, 17 Nov 2023 01:43:05 GMT
 COPY file:b2d50545eedb1d5c43e3914a49059b907fd99eab5d731eb6d4ff519f47d88408 in /opt/ol/NOTICES 
-# Thu, 19 Oct 2023 01:38:20 GMT
-COPY dir:a97cef5aeadecef42d1180b96aebb9baf067c656383fc2bf1773e8e0dbba1656 in /opt/ol/helpers 
-# Thu, 19 Oct 2023 01:38:20 GMT
+# Fri, 17 Nov 2023 01:43:05 GMT
+COPY dir:3a03be0df9fe59a90276be087434855a86a8818483ded6f49c3c57610fb6842d in /opt/ol/helpers 
+# Fri, 17 Nov 2023 01:43:05 GMT
 COPY dir:1cf5cc2663c6235241a5228340a9c566587fe27b3e434a313debbf75dacd7a4b in /opt/ol/fixes/ 
-# Thu, 19 Oct 2023 01:38:21 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta OPENJ9_SCC=true VERBOSE=false
+# Fri, 17 Nov 2023 01:43:06 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta OPENJ9_SCC=true VERBOSE=false
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_aarch64';          DUMB_INIT_SHA256=b7d648f97154a99c539b63c55979cd29f005f88430fb383007fe3458340b795e;          ;;        amd64|x86_64)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_x86_64';          DUMB_INIT_SHA256=e874b55f3279ca41415d290c512a7ba9d08f98041b28ae7c2acb19a545f1c4df;          ;;        ppc64el|ppc64le)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_ppc64le';          DUMB_INIT_SHA256=3d15e80e29f0f4fa1fc686b00613a2220bc37e83a35283d4b4cca1fbd0a5609f;          ;;        s390x)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_s390x';          DUMB_INIT_SHA256=47e4601b152fc6dcb1891e66c30ecc62a2939fd7ffd1515a7c30f281cfec53b7;          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /usr/bin/dumb-init ${DUMB_INIT_URL};     echo "${DUMB_INIT_SHA256} */usr/bin/dumb-init" | sha256sum -c -;     chmod +x /usr/bin/dumb-init;
-# Thu, 19 Oct 2023 01:38:45 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta OPENJ9_SCC=true VERBOSE=false
+# Fri, 17 Nov 2023 01:43:35 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta OPENJ9_SCC=true VERBOSE=false
 RUN apt-get update     && apt-get install -y --no-install-recommends unzip openssl wget     && wget -q $LIBERTY_DOWNLOAD_URL -U UA-Open-Liberty-Docker -O /tmp/wlp.zip     && echo "$LIBERTY_SHA  /tmp/wlp.zip" > /tmp/wlp.zip.sha1     && sha1sum -c /tmp/wlp.zip.sha1     && unzip -q /tmp/wlp.zip -d /opt/ol     && rm /tmp/wlp.zip     && rm /tmp/wlp.zip.sha1     && mkdir -p /licenses     && cp /opt/ol/wlp/LICENSE /licenses/     && apt-get remove -y unzip     && apt-get remove -y wget     && rm -rf /var/lib/apt/lists/*     && useradd -u 1001 -r -g 0 -s /usr/sbin/nologin default     && chown -R 1001:0 /opt/ol/wlp     && chmod -R g+rw /opt/ol/wlp
-# Thu, 19 Oct 2023 01:38:52 GMT
+# Fri, 17 Nov 2023 01:43:42 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ol/wlp/bin:/opt/ol/helpers/build LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ol/wlp/output WLP_SKIP_MAXPERMSIZE=true OPENJ9_SCC=true
-# Thu, 19 Oct 2023 01:38:52 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta VERBOSE=false
+# Fri, 17 Nov 2023 01:43:44 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta VERBOSE=false
 RUN /opt/ol/wlp/bin/server create --template=javaee8     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea     && rm -rf /opt/ol/wlp/usr/servers/defaultServer/server.env
-# Thu, 19 Oct 2023 01:38:53 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta VERBOSE=false
+# Fri, 17 Nov 2023 01:43:44 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta VERBOSE=false
 RUN mkdir /logs     && mkdir -p /opt/ol/wlp/usr/shared/resources/lib.index.cache     && ln -s /opt/ol/wlp/usr/shared/resources/lib.index.cache /lib.index.cache     && mkdir -p $WLP_OUTPUT_DIR/defaultServer     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ol/wlp/usr/servers/defaultServer /config     && mkdir -p /config/configDropins/defaults     && mkdir -p /config/configDropins/overrides     && mkdir -p /config/dropins     && mkdir -p /config/apps     && ln -s /opt/ol/wlp /liberty     && ln -s /opt/ol/fixes /fixes     && chown -R 1001:0 /config     && chmod -R g+rw /config     && chown -R 1001:0 /logs     && chmod -R g+rw /logs     && chown -R 1001:0 /opt/ol/wlp/usr     && chmod -R g+rw /opt/ol/wlp/usr     && chown -R 1001:0 /opt/ol/wlp/output     && chmod -R g+rw /opt/ol/wlp/output     && chown -R 1001:0 /opt/ol/helpers     && chmod -R g+rw /opt/ol/helpers     && chown -R 1001:0 /opt/ol/fixes     && chmod -R g+rwx /opt/ol/fixes     && mkdir /etc/wlp     && chown -R 1001:0 /etc/wlp     && chmod -R g+rw /etc/wlp     && echo "<server description=\"Default Server\"><httpEndpoint id=\"defaultHttpEndpoint\" host=\"*\" /></server>" > /config/configDropins/defaults/open-default-port.xml
-# Thu, 19 Oct 2023 01:39:18 GMT
-# ARGS: LIBERTY_BUILD_LABEL=cl231020231002-1201 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.11-beta/openliberty-runtime-23.0.0.11-beta.zip LIBERTY_SHA=bd71a72513de8f9f2ed0658305ab38ecfdaa5789 LIBERTY_VERSION=23.0.0.11-beta VERBOSE=false
+# Fri, 17 Nov 2023 01:44:10 GMT
+# ARGS: LIBERTY_BUILD_LABEL=cl231120231030-1102 LIBERTY_DOWNLOAD_URL=https://repo1.maven.org/maven2/io/openliberty/beta/openliberty-runtime/23.0.0.12-beta/openliberty-runtime-23.0.0.12-beta.zip LIBERTY_SHA=126f29786fcf8d59a2935586ac350becba8067b8 LIBERTY_VERSION=23.0.0.12-beta VERBOSE=false
 RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /output/messaging /output/resources/security /logs/* $WLP_OUTPUT_DIR/.classCache     && chown -R 1001:0 /opt/ol/wlp/output     && chmod -R g+rwx /opt/ol/wlp/output
-# Thu, 19 Oct 2023 01:39:19 GMT
+# Fri, 17 Nov 2023 01:44:11 GMT
 ENV RANDFILE=/tmp/.rnd OPENJ9_JAVA_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal -Dosgi.checkConfiguration=false
-# Thu, 19 Oct 2023 01:39:19 GMT
+# Fri, 17 Nov 2023 01:44:11 GMT
 USER 1001
-# Thu, 19 Oct 2023 01:39:19 GMT
+# Fri, 17 Nov 2023 01:44:11 GMT
 EXPOSE 9080 9443
-# Thu, 19 Oct 2023 01:39:19 GMT
+# Fri, 17 Nov 2023 01:44:11 GMT
 ENTRYPOINT ["/opt/ol/helpers/runtime/docker-server.sh"]
-# Thu, 19 Oct 2023 01:39:19 GMT
+# Fri, 17 Nov 2023 01:44:11 GMT
 CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 ```
 
@@ -546,35 +546,35 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Last Modified: Fri, 13 Oct 2023 10:46:50 GMT  
 		Size: 4.3 MB (4340642 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4227c05e0de62bc4cb9d4c88bba456708beb54607a88e61a015b21b91677ae01`  
-		Last Modified: Thu, 19 Oct 2023 01:48:34 GMT  
-		Size: 1.1 KB (1076 bytes)  
+	-	`sha256:f1a3d534926aa04d23befaa02d1756a7de0c69f6190a18268dd5da375130fa15`  
+		Last Modified: Fri, 17 Nov 2023 01:55:33 GMT  
+		Size: 1.1 KB (1078 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f2b203afba5a5069a0f042efc9064c0392a436a96a2aa97e8c43730f0561ff2`  
-		Last Modified: Thu, 19 Oct 2023 01:48:34 GMT  
-		Size: 9.4 KB (9441 bytes)  
+	-	`sha256:a256f655126f03a2206e8a1941b0b61a721cba8b15fdc4439a154f95203b8668`  
+		Last Modified: Fri, 17 Nov 2023 01:55:33 GMT  
+		Size: 9.6 KB (9585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58a4b21eda4db50a9b71bf33611fb0cc2f8974aa652657440668941b42429f03`  
-		Last Modified: Thu, 19 Oct 2023 01:48:34 GMT  
-		Size: 269.0 B  
+	-	`sha256:bb98dfa3df963ae82064e2cc7f7ffad50bb9d008ab3b10f900651fdcc232ef52`  
+		Last Modified: Fri, 17 Nov 2023 01:55:33 GMT  
+		Size: 265.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38f2179da10ff838079a16f7b71ecc1b2d8cc5fe2be6574942c3b868c1f76251`  
-		Last Modified: Thu, 19 Oct 2023 01:48:32 GMT  
-		Size: 33.1 KB (33112 bytes)  
+	-	`sha256:2491b6bf1558b2f2736b4096a2bb2613db7d4731dc413968e74899b29e9124c3`  
+		Last Modified: Fri, 17 Nov 2023 01:55:32 GMT  
+		Size: 33.1 KB (33114 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9e5199608e2bda2b28e3d235202a1d445772136b907cd2bd44efafc9ff73c56`  
-		Last Modified: Thu, 19 Oct 2023 01:48:46 GMT  
-		Size: 327.3 MB (327300440 bytes)  
+	-	`sha256:1674dddb0abde0e4977ac96f29853bc40abcd521ef48cf48b8254ba807137af6`  
+		Last Modified: Fri, 17 Nov 2023 01:55:45 GMT  
+		Size: 327.8 MB (327847442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3abfacff01704787abff78f004f48911b89d60f0b5dafa0fce4bf113402c42b`  
-		Last Modified: Thu, 19 Oct 2023 01:48:32 GMT  
-		Size: 1.2 KB (1192 bytes)  
+	-	`sha256:1f0e098f05a8a2d3123cfe9411702a5c8da5246cdd2b5a861d1f3048c35b1515`  
+		Last Modified: Fri, 17 Nov 2023 01:55:31 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12cfc268ed499c31192c620babd2650796127a261fb69326cc6884262ee9775e`  
-		Last Modified: Thu, 19 Oct 2023 01:48:32 GMT  
-		Size: 10.9 KB (10903 bytes)  
+	-	`sha256:34fd7ce0aab635912ad9a01ffb0f577b3847c9b990b9ae322455f142db722c5c`  
+		Last Modified: Fri, 17 Nov 2023 01:55:31 GMT  
+		Size: 11.0 KB (11041 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d0dd924b154df0ff51f4108768c18edfdba890214727f683d455ebba6036690`  
-		Last Modified: Thu, 19 Oct 2023 01:48:34 GMT  
-		Size: 12.6 MB (12585462 bytes)  
+	-	`sha256:7580fa128ac0b3809e02268eaf8df17e6b28e8b1f629d5e02eb87215f4ca4bb7`  
+		Last Modified: Fri, 17 Nov 2023 01:55:33 GMT  
+		Size: 12.7 MB (12679412 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
