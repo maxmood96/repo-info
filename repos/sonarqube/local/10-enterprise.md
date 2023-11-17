@@ -1,10 +1,10 @@
-# `sonarqube:10.2.1-enterprise`
+# `sonarqube:10.3.0-enterprise`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ba31bac2edf92d85d27d26adafb3bb358745245977b5881f3a983f1e0ec9d9db`
-- Created: `2023-11-13T20:36:04.430052733Z`
-- Virtual Size: ~ 835.64 Mb  
+- Image ID: `sha256:6268f2527737bac28e19f28ba8a3a2951234e656a514fe3e91455102616e05b4`
+- Created: `2023-11-14T23:31:48.523470232Z`
+- Virtual Size: ~ 851.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/sonarqube/docker/entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `JAVA_VERSION=jdk-17.0.9+9`
   - `DOCKER_RUNNING=true`
   - `SONARQUBE_HOME=/opt/sonarqube`
-  - `SONAR_VERSION=10.2.1.78527`
+  - `SONAR_VERSION=10.3.0.82913`
   - `SQ_DATA_DIR=/opt/sonarqube/data`
   - `SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions`
   - `SQ_LOGS_DIR=/opt/sonarqube/logs`
@@ -82,13 +82,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.4.10
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.10.dsc' apt_2.4.10.dsc 2801 SHA512:5c28184020dbb9b8ff959120768c0c2616acd5923fa6be8a87c1025345e3e2beb982a6256849061e043c9a74522c40937e3c7477115ce8dbc79f715bf6f3ea17
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.10.tar.xz' apt_2.4.10.tar.xz 2318732 SHA512:1b9c12a44c205013c2d56af163c219a5c945f7a4c15373a2a07ec5d2d4130ef3bbd964f6986e22b55016b5481897356b968da9fdf84e538f8d81d7bcd70bd11d
-```
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
 
