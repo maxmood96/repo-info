@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:59d9b01076ffd3d11cf5e371bf88370c4f76a566c2e94595b314b20c81f9a52f`
-- Created: `2023-10-21T00:07:14.626952455Z`
-- Virtual Size: ~ 505.01 Mb  
+- Image ID: `sha256:31c43c693d9afe4aa049b170295377926a8b61aa65049cd8305216666420455b`
+- Created: `2023-11-15T00:30:09.609314853Z`
+- Virtual Size: ~ 505.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["arangod"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `ARANGO_VERSION=3.11.4`
+  - `ARANGO_VERSION=3.11.5`
   - `GLIBCXX_FORCE_NEW=1`
 
 ## `apk` (`.apk`-based packages)
@@ -342,16 +342,16 @@ MIT BSD GPL2+
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.47.0-r1 description:
+nghttp2-libs-1.47.0-r2 description:
 Experimental HTTP/2 client, server and proxy (libraries)
 
-nghttp2-libs-1.47.0-r1 webpage:
+nghttp2-libs-1.47.0-r2 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.47.0-r1 installed size:
-156 KiB
+nghttp2-libs-1.47.0-r2 installed size:
+160 KiB
 
-nghttp2-libs-1.47.0-r1 license:
+nghttp2-libs-1.47.0-r2 license:
 MIT
 
 ```
