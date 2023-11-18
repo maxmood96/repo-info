@@ -78,13 +78,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.0.9
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.9.dsc' apt_2.0.9.dsc 2835 SHA512:8e2981ae368e3cc07d6b4cd32fe347b8193b6d1844c1c273e389c168df2cc79a28236757a3bd4512872b983bd0d6c1f58cab14ad2eaf4af561ec0fe25ba43058
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.9.tar.xz' apt_2.0.9.tar.xz 2176408 SHA512:183a42c5811a311b26aedac904f10d41b192a8272655872d428f9f93b382db96e44a874c750ebaac4137900b9ac58b7392e79cf025b64375ee490bf0194af473
-```
 
 ### `dpkg` source package: `attr=1:2.4.48-5`
 
@@ -2446,14 +2442,9 @@ Licenses: (parsed from: `/usr/share/doc/python-pip-whl/copyright`, `/usr/share/d
 - `Expat`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-pip=20.0.2-5ubuntu1.9
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-pip/python-pip_20.0.2-5ubuntu1.9.dsc' python-pip_20.0.2-5ubuntu1.9.dsc 3124 SHA512:d82cf67d3db51c5a76505c520f596dce1bccbe05125cb654d6434a10674ec6578e13779e28e85515190bd8e167ebedad0e34ded46e94c1737d111164d3f892ce
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-pip/python-pip_20.0.2.orig.tar.gz' python-pip_20.0.2.orig.tar.gz 1433827 SHA512:72f9c4b8a5a3c5f8074bc2b671a118942f161fb145c38077ded8a18f07537eb674c679fdcf7c3f3f0aeee11d66fe34eaa157f53f1f689fce3e12567e5339ac89
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-pip/python-pip_20.0.2-5ubuntu1.9.debian.tar.xz' python-pip_20.0.2-5ubuntu1.9.debian.tar.xz 21896 SHA512:58c965e39f418f1695ae705898aa2ab562fb4d6e170b9986c240de6784e15c118f737d1b66bd9109aaf33f67510981bb42828159ecc77e270709a172af4d5e54
-```
 
 ### `dpkg` source package: `python3-defaults=3.8.2-0ubuntu2`
 
