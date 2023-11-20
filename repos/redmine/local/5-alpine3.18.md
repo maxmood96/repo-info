@@ -1,10 +1,10 @@
-# `redmine:5.0.6-alpine`
+# `redmine:5.1.0-alpine3.18`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5a73a821fb6de3626e22d4cbd893ed36a3d4b44316149aaab81edb2817a5176a`
-- Created: `2023-09-30T08:26:15Z`
-- Virtual Size: ~ 465.02 Mb  
+- Image ID: `sha256:084897e845cf79efa1801f9b135f84f62162ef100524a46454b3713cf6e4f344`
+- Created: `2023-11-18T01:31:21Z`
+- Virtual Size: ~ 509.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -20,9 +20,9 @@
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=5.0.6`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.0.6.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=488fe08f37a8eb1011415922a8ea743b7f38d8a7a5f8822950a34a375dcf08ee`
+  - `REDMINE_VERSION=5.1.0`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.0.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=a94d6ecde5a100a6271503fef154818212dac01cf5e45e37e2beb4059365ba93`
   - `BUNDLE_FORCE_RUBY_PLATFORM=1`
 
 ## `apk` (`.apk`-based packages)
@@ -506,16 +506,16 @@ LGPL-2.1-or-later
 ### `apk` package: `ghostscript`
 
 ```console
-ghostscript-10.01.2-r0 description:
+ghostscript-10.02.0-r0 description:
 An interpreter for the PostScript language and for PDF
 
-ghostscript-10.01.2-r0 webpage:
+ghostscript-10.02.0-r0 webpage:
 https://ghostscript.com/
 
-ghostscript-10.01.2-r0 installed size:
-68 MiB
+ghostscript-10.02.0-r0 installed size:
+67 MiB
 
-ghostscript-10.01.2-r0 license:
+ghostscript-10.02.0-r0 license:
 AGPL-3.0-or-later
 
 ```
@@ -659,16 +659,16 @@ MIT
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.1.13-r0 description:
+imagemagick-7.1.1.13-r1 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.1.13-r0 webpage:
+imagemagick-7.1.1.13-r1 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.1.13-r0 installed size:
-4600 KiB
+imagemagick-7.1.1.13-r1 installed size:
+4604 KiB
 
-imagemagick-7.1.1.13-r0 license:
+imagemagick-7.1.1.13-r1 license:
 ImageMagick
 
 ```
@@ -676,16 +676,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.1.13-r0 description:
+imagemagick-libs-7.1.1.13-r1 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.1.13-r0 webpage:
+imagemagick-libs-7.1.1.13-r1 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.1.13-r0 installed size:
+imagemagick-libs-7.1.1.13-r1 installed size:
 3248 KiB
 
-imagemagick-libs-7.1.1.13-r0 license:
+imagemagick-libs-7.1.1.13-r1 license:
 ImageMagick
 
 ```
@@ -795,16 +795,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.3-r0 description:
+libcrypto3-3.1.4-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.1.3-r0 webpage:
+libcrypto3-3.1.4-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.3-r0 installed size:
-4468 KiB
+libcrypto3-3.1.4-r1 installed size:
+4472 KiB
 
-libcrypto3-3.1.3-r0 license:
+libcrypto3-3.1.4-r1 license:
 Apache-2.0
 
 ```
@@ -1169,16 +1169,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-15.4-r0 description:
+libpq-15.5-r0 description:
 PostgreSQL client library
 
-libpq-15.4-r0 webpage:
+libpq-15.5-r0 webpage:
 https://www.postgresql.org/
 
-libpq-15.4-r0 installed size:
+libpq-15.5-r0 installed size:
 320 KiB
 
-libpq-15.4-r0 license:
+libpq-15.5-r0 license:
 PostgreSQL
 
 ```
@@ -1254,16 +1254,16 @@ custom
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.3-r0 description:
+libssl3-3.1.4-r1 description:
 SSL shared libraries
 
-libssl3-3.1.3-r0 webpage:
+libssl3-3.1.4-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.3-r0 installed size:
+libssl3-3.1.4-r1 installed size:
 552 KiB
 
-libssl3-3.1.3-r0 license:
+libssl3-3.1.4-r1 license:
 Apache-2.0
 
 ```
@@ -1356,16 +1356,16 @@ BSD-3-Clause
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.8.4-r4 description:
+libx11-1.8.7-r0 description:
 X11 client-side library
 
-libx11-1.8.4-r4 webpage:
+libx11-1.8.7-r0 webpage:
 https://xorg.freedesktop.org/
 
-libx11-1.8.4-r4 installed size:
-3152 KiB
+libx11-1.8.7-r0 installed size:
+3092 KiB
 
-libx11-1.8.4-r4 license:
+libx11-1.8.7-r0 license:
 X11
 
 ```

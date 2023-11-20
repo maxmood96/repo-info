@@ -1,10 +1,10 @@
-# `redmine:5.0.6`
+# `redmine:5.1.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b58b5e70eeda530309da45f253ab69a3daf093935deab2f3bbaa101eb60e03dc`
-- Created: `2023-09-30T08:26:15Z`
-- Virtual Size: ~ 665.65 Mb  
+- Image ID: `sha256:bfc07886b83e8d3afa4f8cace22971d88d4310766208f748bfcf2a9b630cf6da`
+- Created: `2023-11-18T01:31:21Z`
+- Virtual Size: ~ 672.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -20,9 +20,9 @@
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=5.0.6`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.0.6.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=488fe08f37a8eb1011415922a8ea743b7f38d8a7a5f8822950a34a375dcf08ee`
+  - `REDMINE_VERSION=5.1.0`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.0.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=a94d6ecde5a100a6271503fef154818212dac01cf5e45e37e2beb4059365ba93`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4035,11 +4035,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/poppler-data/0.4.12-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/poppler-data/0.4.12-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-15=15.3-0+deb12u1`
+### `dpkg` source package: `postgresql-15=15.5-0+deb12u1`
 
 Binary Packages:
 
-- `libpq5:amd64=15.3-0+deb12u1`
+- `libpq5:amd64=15.5-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -4059,17 +4059,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-15=15.3-0+deb12u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.3-0%2bdeb12u1.dsc' postgresql-15_15.3-0+deb12u1.dsc 3919 SHA256:d57bfa81859ffb3156a6bf9c626830e9b732726a17448ff44c1696370933965e
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.3.orig.tar.bz2' postgresql-15_15.3.orig.tar.bz2 22819107 SHA256:ffc7d4891f00ffbf5c3f4eab7fbbced8460b8c0ee63c5a5167133b9e6599d932
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.3-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.3-0+deb12u1.debian.tar.xz 23600 SHA256:a3d5dc516cccc5a32a68a5779ae885e159ed19cb38ebca4c235c0f33befd37ed
+$ apt-get source -qq --print-uris postgresql-15=15.5-0+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.5-0%2bdeb12u1.dsc' postgresql-15_15.5-0+deb12u1.dsc 3919 SHA256:0375551ce7ba7e8f5242e59cb20b944adcc6826f78422f2a436be6e99725e666
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.5.orig.tar.bz2' postgresql-15_15.5.orig.tar.bz2 23091780 SHA256:8f53aa95d78eb8e82536ea46b68187793b42bba3b4f65aa342f540b23c9b10a6
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.5-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.5-0+deb12u1.debian.tar.xz 25052 SHA256:0cfb11525046064ad795faab3b68e4b450f2fda314ae3fa6555a7178b4674dfb
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-15/15.3-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-15/15.3-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-15/15.3-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-15/15.5-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-15/15.5-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-15/15.5-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.2-3`
 
