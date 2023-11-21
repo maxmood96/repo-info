@@ -1,7 +1,7 @@
 ## `debian:oldoldstable-backports`
 
 ```console
-$ docker pull debian@sha256:47d61c3e3f6c3ee424ebb24dd4ed64d91f8d1d6f9cacb1587b5b05f6d0ce49a7
+$ docker pull debian@sha256:718f362577f413d33cf3d25e34b71a71b009d7d323135f270ff4659f4efb568d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -78,33 +78,33 @@ RUN echo 'deb http://deb.debian.org/debian oldoldstable-backports main' > /etc/a
 ### `debian:oldoldstable-backports` - linux; arm64 variant v8
 
 ```console
-$ docker pull debian@sha256:7cfc6ffccdb0b1035f209ccd43df5bddddb6572ef76ab0add3e8ba7c7a149706
+$ docker pull debian@sha256:5cf86b4540423ca769d5980f16964ec4082db82088dc4d70463c2ba5da9958b2
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.3 MB (49291319 bytes)**  
+-	Total Size: **49.3 MB (49291365 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6435d18ad66707d003e6c2207a40453ae0e8bcbbbb9fc1e241d05090f1f0f6fa`
+-	Image ID: `sha256:60669c6b7d788fb7852c58b0a6adb5cbf0a4db8080b708100577aa2bcf5604a8`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 01 Nov 2023 00:40:16 GMT
-ADD file:067322df328f58025784b9686a4644e51c8f916021db33c8d3c1ca825d08a7ba in / 
-# Wed, 01 Nov 2023 00:40:17 GMT
+# Tue, 21 Nov 2023 06:27:41 GMT
+ADD file:364316cc8652a355ab4fefa71b24592bc98d699a652a28afe21661129fd21f13 in / 
+# Tue, 21 Nov 2023 06:27:42 GMT
 CMD ["bash"]
-# Wed, 01 Nov 2023 00:40:19 GMT
+# Tue, 21 Nov 2023 06:27:44 GMT
 RUN echo 'deb http://deb.debian.org/debian oldoldstable-backports main' > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:8b24c39ded2c8ab2a51da2d9f95c90b25bc2f243c3967c3abb056d2ab71f1f8b`  
-		Last Modified: Wed, 01 Nov 2023 00:44:43 GMT  
-		Size: 49.3 MB (49291089 bytes)  
+	-	`sha256:e0245ae6c5766a6cfacf793077439ce09c0bb3eafd1af926871de9ef74045fa1`  
+		Last Modified: Tue, 21 Nov 2023 06:32:02 GMT  
+		Size: 49.3 MB (49291140 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9297f107a08a0a3122e166ad996c5f258afbeb11e37e9cae95ce84dff8d4489c`  
-		Last Modified: Wed, 01 Nov 2023 00:44:51 GMT  
-		Size: 230.0 B  
+	-	`sha256:763b87ffbad2fc34258e76650e9a375c83136241778f2a77a15f99f84a34bad8`  
+		Last Modified: Tue, 21 Nov 2023 06:32:11 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:oldoldstable-backports` - linux; 386
