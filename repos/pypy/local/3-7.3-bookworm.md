@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:626b274fc2163009fd51712337e7d60a27ac18bd3a45b3677d15bab8ae9efc09`
-- Created: `2023-11-01T02:57:20.163593862Z`
+- Image ID: `sha256:e305e6e73e91c18674c4806897aaaeab734a9f4e26aece5db16416f4055fb092`
+- Created: `2023-11-21T19:34:12.461373564Z`
 - Virtual Size: ~ 1.06 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -4945,12 +4945,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkgconf/1.8.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkgconf/1.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-15=15.3-0+deb12u1`
+### `dpkg` source package: `postgresql-15=15.5-0+deb12u1`
 
 Binary Packages:
 
-- `libpq-dev=15.3-0+deb12u1`
-- `libpq5:amd64=15.3-0+deb12u1`
+- `libpq-dev=15.5-0+deb12u1`
+- `libpq5:amd64=15.5-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -4970,17 +4970,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-15=15.3-0+deb12u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.3-0%2bdeb12u1.dsc' postgresql-15_15.3-0+deb12u1.dsc 3919 SHA256:d57bfa81859ffb3156a6bf9c626830e9b732726a17448ff44c1696370933965e
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.3.orig.tar.bz2' postgresql-15_15.3.orig.tar.bz2 22819107 SHA256:ffc7d4891f00ffbf5c3f4eab7fbbced8460b8c0ee63c5a5167133b9e6599d932
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.3-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.3-0+deb12u1.debian.tar.xz 23600 SHA256:a3d5dc516cccc5a32a68a5779ae885e159ed19cb38ebca4c235c0f33befd37ed
+$ apt-get source -qq --print-uris postgresql-15=15.5-0+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.5-0%2bdeb12u1.dsc' postgresql-15_15.5-0+deb12u1.dsc 3919 SHA256:0375551ce7ba7e8f5242e59cb20b944adcc6826f78422f2a436be6e99725e666
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.5.orig.tar.bz2' postgresql-15_15.5.orig.tar.bz2 23091780 SHA256:8f53aa95d78eb8e82536ea46b68187793b42bba3b4f65aa342f540b23c9b10a6
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.5-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.5-0+deb12u1.debian.tar.xz 25052 SHA256:0cfb11525046064ad795faab3b68e4b450f2fda314ae3fa6555a7178b4674dfb
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-15/15.3-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-15/15.3-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-15/15.3-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-15/15.5-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-15/15.5-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-15/15.5-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.2-3`
 
