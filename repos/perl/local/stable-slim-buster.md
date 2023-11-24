@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:476af7de5ee82b55ea17c031eef5c74dc04ba0580aa21ff16b2c0d36e2a433b2`
-- Created: `2023-11-01T08:13:10.156404405Z`
+- Image ID: `sha256:52e9340b0e5c3773e847d6ec68e096b67c4283bc4c55d2cf3023cb4dc5d21532`
+- Created: `2023-11-21T06:31:38.443746033Z`
 - Virtual Size: ~ 170.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -704,20 +704,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.6.7-4+deb10u10
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7-4%2bdeb10u10.dsc' gnutls28_3.6.7-4+deb10u10.dsc 3265 SHA256:12f471baebedb368b8ea0c85cfecdf16b4c2bb5b0ed191587fce28424d6ff46e
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz' gnutls28_3.6.7.orig.tar.xz 8153728 SHA256:5b3409ad5aaf239808730d1ee12fdcd148c0be00262c7edf157af655a8a188e2
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7-4%2bdeb10u10.debian.tar.xz' gnutls28_3.6.7-4+deb10u10.debian.tar.xz 102420 SHA256:7f2bfec4727b90b7d81267098f997bf847494c0c9ff2906606398a40a730ec7f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.6.7-4+deb10u10/
 
-- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u10/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.6.7-4+deb10u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.3-1`
 
