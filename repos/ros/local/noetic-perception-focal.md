@@ -2295,15 +2295,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.6.13-2ubuntu1.8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.8.dsc' gnutls28_3.6.13-2ubuntu1.8.dsc 3594 SHA512:a3cf3874a3d3215bcd101890ba812bd54c58e0b1068dcc3eb5be29b2453c2f1061a32ef1b4b71390ce9f3e891036f069504d426b22470ab80297bc1352080254
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz' gnutls28_3.6.13.orig.tar.xz 5958956 SHA512:23581952cb72c9a34f378c002bb62413d5a1243b74b48ad8dc49eaea4020d33c550f8dc1dd374cf7fbfa4187b0ca1c5698c8a0430398268a8b8a863f8633305c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz.asc' gnutls28_3.6.13.orig.tar.xz.asc 667 SHA512:b343a8ace6a5c81c0c44b2cb65d8e83dfe5963c9bab04d9131fa8fd03cdf0c6f990d720af8767084e01bf5f7a7dbd0f048aefe68c3b6f1dc1ea1899d567a72f7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.8.debian.tar.xz' gnutls28_3.6.13-2ubuntu1.8.debian.tar.xz 74332 SHA512:266fdcf67a9b4240cfd4063389d8517fb4928ec8a5bb500ebcf92e90868fa483eec901e4eee89cda7baaa873f3894d866bbdd860c28e178659eedeced8498e09
-```
 
 ### `dpkg` source package: `googletest=1.10.0-2`
 
@@ -6088,14 +6082,9 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.40.0-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0-1ubuntu0.1.dsc' nghttp2_1.40.0-1ubuntu0.1.dsc 2508 SHA512:ebbcbfe36d77e277e814b7512f24825f79042a5287c0df2076095ba7d981614a894aee0e331b368fccdff7d3585b19be73ce2ca55350d533f5cb3b2d5724a11c
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0.orig.tar.bz2' nghttp2_1.40.0.orig.tar.bz2 1937537 SHA512:bc3f6dd8ccc3c6891b61206eeb2a74019b2559b4d75409e022c1a9ad0745d50cf8db7ca8e076993ab04a17f87455dc38159bf085bd844366dac82506e44656a0
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0-1ubuntu0.1.debian.tar.xz' nghttp2_1.40.0-1ubuntu0.1.debian.tar.xz 16096 SHA512:5c8a3df35432bc98ef0346f6ee4fb4272d5d252829c5b0d3083d5e5180a9fb1cd94b06e88adc30e61bc2f7335ce2a120c2d0e971a968d7055b142f4e424f7663
-```
 
 ### `dpkg` source package: `nose=1.3.7-5`
 
@@ -6999,14 +6988,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/d
 - `Apache-2.0`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=0.86.1-0ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1-0ubuntu1.3.dsc' poppler_0.86.1-0ubuntu1.3.dsc 3361 SHA512:2fea34906391aab5291f86fbdd77aff394a97ea93067bdeb857d5fd2a91dae2c28dbd3eeda7a7b090e5be6426f1fc260879ddbc73fbbfd1ebf1604f25821f822
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1.orig.tar.xz' poppler_0.86.1.orig.tar.xz 1593856 SHA512:435fc1e7f3e8123e0adde9aa60c0d7dc17db367cde8908932abfef913cee6f27efeb1c4f2d6f316019a69a87f1fa5251be4216d0a81a681a24f24a70ac571670
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1-0ubuntu1.3.debian.tar.xz' poppler_0.86.1-0ubuntu1.3.debian.tar.xz 37400 SHA512:66c81010f7d83cb9a221b6a46cada5f7834969a13fc26a4e707c2fab35e12e05f4408c7b563fbbc07491d07f07304e2be4717dc899e5628dfc1e55a1e0841aec
-```
 
 ### `dpkg` source package: `postgresql-12=12.16-0ubuntu0.20.04.1`
 
@@ -10578,14 +10562,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.1.0+git191117-2ubuntu0.20.04.10
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0%2bgit191117-2ubuntu0.20.04.10.dsc' tiff_4.1.0+git191117-2ubuntu0.20.04.10.dsc 2255 SHA512:91cfa7a9a6f962cdf26b92f0360bf7222da2dda964db2a247a9fe22fc1d28427bbd1a5e775038c501a2dbb390cb0b66dd03a8b0f91963d2fd6aba482742ae2b2
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0%2bgit191117.orig.tar.xz' tiff_4.1.0+git191117.orig.tar.xz 1533524 SHA512:25b4bc4522fc2e7f3ca6857b87acd4481d8643566b1120c755020afc8b48949238ee2078bc43dd3ba7407eaa4e36b1b712d7056f101ddaf60f94dab8607870b8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0%2bgit191117-2ubuntu0.20.04.10.debian.tar.xz' tiff_4.1.0+git191117-2ubuntu0.20.04.10.debian.tar.xz 44440 SHA512:501553027e1afc2f835050e328ea7efc6de964c73764e8efd139456252aec2714a6443d7de064a608d27662f839a276040727bc8d9a678d9f8ceca26cac43647
-```
 
 ### `dpkg` source package: `tinyxml2=7.0.0+dfsg-1build1`
 
