@@ -1,10 +1,10 @@
-# `geonetwork:4.4.0`
+# `geonetwork:4.4.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:16d1f6a667e865e4a6e6a6d849440ab667ac460b733473cabeee9edb61afba44`
-- Created: `2023-10-31T05:46:41.844604526Z`
-- Virtual Size: ~ 836.55 Mb  
+- Image ID: `sha256:e0b3360be9b00bef490f2b6d61a3f65284c694fb3019918dd2483e2ab66fe8f5`
+- Created: `2023-11-23T10:27:53.556860431Z`
+- Virtual Size: ~ 778.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/geonetwork-entrypoint.sh"]`
@@ -27,8 +27,8 @@
   - `GN_CONFIG_PROPERTIES=-Dgeonetwork.dir=/catalogue-data         -Dgeonetwork.formatter.dir=/catalogue-data/data/formatter         -Dgeonetwork.schema.dir=/opt/geonetwork/WEB-INF/data/config/schema_plugins         -Dgeonetwork.indexConfig.dir=/opt/geonetwork/WEB-INF/data/config/index`
   - `JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true         -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC`
   - `GN_FILE=geonetwork.war`
-  - `GN_VERSION=4.4.0`
-  - `GN_DOWNLOAD_MD5=36638cfd380942801ff2038792ee54a9`
+  - `GN_VERSION=4.4.1`
+  - `GN_DOWNLOAD_MD5=ff40fb2033e67b83f22246d52d04092e`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`
@@ -722,15 +722,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.6.13-2ubuntu1.8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.8.dsc' gnutls28_3.6.13-2ubuntu1.8.dsc 3594 SHA512:a3cf3874a3d3215bcd101890ba812bd54c58e0b1068dcc3eb5be29b2453c2f1061a32ef1b4b71390ce9f3e891036f069504d426b22470ab80297bc1352080254
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz' gnutls28_3.6.13.orig.tar.xz 5958956 SHA512:23581952cb72c9a34f378c002bb62413d5a1243b74b48ad8dc49eaea4020d33c550f8dc1dd374cf7fbfa4187b0ca1c5698c8a0430398268a8b8a863f8633305c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz.asc' gnutls28_3.6.13.orig.tar.xz.asc 667 SHA512:b343a8ace6a5c81c0c44b2cb65d8e83dfe5963c9bab04d9131fa8fd03cdf0c6f990d720af8767084e01bf5f7a7dbd0f048aefe68c3b6f1dc1ea1899d567a72f7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.8.debian.tar.xz' gnutls28_3.6.13-2ubuntu1.8.debian.tar.xz 74332 SHA512:266fdcf67a9b4240cfd4063389d8517fb4928ec8a5bb500ebcf92e90868fa483eec901e4eee89cda7baaa873f3894d866bbdd860c28e178659eedeced8498e09
-```
 
 ### `dpkg` source package: `grep=3.4-1`
 
@@ -1364,14 +1358,9 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.40.0-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0-1ubuntu0.1.dsc' nghttp2_1.40.0-1ubuntu0.1.dsc 2508 SHA512:ebbcbfe36d77e277e814b7512f24825f79042a5287c0df2076095ba7d981614a894aee0e331b368fccdff7d3585b19be73ce2ca55350d533f5cb3b2d5724a11c
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0.orig.tar.bz2' nghttp2_1.40.0.orig.tar.bz2 1937537 SHA512:bc3f6dd8ccc3c6891b61206eeb2a74019b2559b4d75409e022c1a9ad0745d50cf8db7ca8e076993ab04a17f87455dc38159bf085bd844366dac82506e44656a0
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0-1ubuntu0.1.debian.tar.xz' nghttp2_1.40.0-1ubuntu0.1.debian.tar.xz 16096 SHA512:5c8a3df35432bc98ef0346f6ee4fb4272d5d252829c5b0d3083d5e5180a9fb1cd94b06e88adc30e61bc2f7335ce2a120c2d0e971a968d7055b142f4e424f7663
-```
 
 ### `dpkg` source package: `openldap=2.4.49+dfsg-2ubuntu1.9`
 
