@@ -246,20 +246,13 @@ Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris brotli=1.1.0-1
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0-1.dsc' brotli_1.1.0-1.dsc 2286 SHA256:d6bb9389d123e1dcc9f53dc15261e2f1f75ca4681a56bf56561166437f57e199
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0.orig.tar.gz' brotli_1.1.0.orig.tar.gz 512036 SHA256:10973f4b4199eafa1d5735ef661ddb2ec2f97319ee9fd1824d4aabe08cff5265
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0-1.debian.tar.xz' brotli_1.1.0-1.debian.tar.xz 5452 SHA256:ea3617d67101810188ab6981f7d2f94c69dc6abddebb08269e4816286fc8a86f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/brotli/1.1.0-1/
 
-- https://sources.debian.net/src/brotli/1.1.0-1/ (for browsing the source)
-- https://sources.debian.net/src/brotli/1.1.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/brotli/1.1.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.8-5`
 
@@ -1717,21 +1710,13 @@ Licenses: (parsed from: `/usr/share/doc/libncursesw6/copyright`, `/usr/share/doc
 - `MIT/X11`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.4+20231118-1
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20231118-1.dsc' ncurses_6.4+20231118-1.dsc 3807 SHA256:8fc269024ff18cdbf11af8203d1919d35ee23e533e3fcf5da1fbdf4a2fa0887d
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20231118.orig.tar.gz' ncurses_6.4+20231118.orig.tar.gz 3671735 SHA256:a8b11a396e61820b6cd3f26beb9ca4bf03749cc28f5936a10e03e4b41bbd188b
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20231118.orig.tar.gz.asc' ncurses_6.4+20231118.orig.tar.gz.asc 729 SHA256:4fb083d68a3b06fe5a52d60dc5ef0d4da68ced4667b8911e011966c915fb3123
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20231118-1.debian.tar.xz' ncurses_6.4+20231118-1.debian.tar.xz 48680 SHA256:9cf78f62258096eaf0d5beda65ff1ceffec47050bf431f541d05d5f29c792543
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ncurses/6.4+20231118-1/
 
-- https://sources.debian.net/src/ncurses/6.4+20231118-1/ (for browsing the source)
-- https://sources.debian.net/src/ncurses/6.4+20231118-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ncurses/6.4+20231118-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `netbase=6.4`
 

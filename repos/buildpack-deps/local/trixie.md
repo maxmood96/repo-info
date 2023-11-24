@@ -1062,20 +1062,13 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.189-4
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.189-4.dsc' elfutils_0.189-4.dsc 3248 SHA256:3f36e60b3db1f762b281d47d040ad8129d35af2bc9e068a5af3b2932961772a6
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.189.orig.tar.bz2' elfutils_0.189.orig.tar.bz2 9143169 SHA256:39bd8f1a338e2b7cd4abc3ff11a0eddc6e690f69578a57478d8179b4148708c8
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.189-4.debian.tar.xz' elfutils_0.189-4.debian.tar.xz 43208 SHA256:e545329395098cfb316db3a6e65915c5b1d9cc52500925713a15997c0c897b1f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/elfutils/0.189-4/
 
-- https://sources.debian.net/src/elfutils/0.189-4/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.189-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.189-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.5.0-2`
 
@@ -2528,20 +2521,13 @@ Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 - `other-1`
 - `public-domain-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libde265=1.0.12-2
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.12-2.dsc' libde265_1.0.12-2.dsc 2066 SHA256:ec13351cd86b01638efef4116cebde3f49f30c09a2530a326ec853357f7320bf
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.12.orig.tar.gz' libde265_1.0.12.orig.tar.gz 846345 SHA256:62185ea2182e68cf68bba20cc6eb4c287407b509cf0a827d7ddb75614db77b5c
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.12-2.debian.tar.xz' libde265_1.0.12-2.debian.tar.xz 136316 SHA256:d01336e0306ff3065fdc13b6b4f68ba43c2f37a57e81b96ed0fc646136842713
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libde265/1.0.12-2/
 
-- https://sources.debian.net/src/libde265/1.0.12-2/ (for browsing the source)
-- https://sources.debian.net/src/libde265/1.0.12-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libde265/1.0.12-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdeflate=1.18-1`
 
