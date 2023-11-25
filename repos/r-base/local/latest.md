@@ -1681,15 +1681,13 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `LGPL-2.1+`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.47-2
-'http://http.debian.net/debian/pool/main/libg/libgpg-error/libgpg-error_1.47-2.dsc' libgpg-error_1.47-2.dsc 2896 SHA256:ea1c7a0f4a74d8c3bbd53d97c5a7ce867ab9f9e4728a38ff6bbc525777141896
-'http://http.debian.net/debian/pool/main/libg/libgpg-error/libgpg-error_1.47.orig.tar.bz2' libgpg-error_1.47.orig.tar.bz2 1020862 SHA256:9e3c670966b96ecc746c28c2c419541e3bcb787d1a73930f5e5f5e1bcbbb9bdb
-'http://http.debian.net/debian/pool/main/libg/libgpg-error/libgpg-error_1.47.orig.tar.bz2.asc' libgpg-error_1.47.orig.tar.bz2.asc 228 SHA256:6ab547bf020761e1df80b08335773a91c345ff2c1344f15b1f7d195293ab21a5
-'http://http.debian.net/debian/pool/main/libg/libgpg-error/libgpg-error_1.47-2.debian.tar.xz' libgpg-error_1.47-2.debian.tar.xz 18540 SHA256:7aa61ff9ad47b96f557926fb308962a4de0d83b834e7df8575daa71530b82cc1
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libgpg-error/1.47-2/
+
 
 ### `dpkg` source package: `libice=2:1.0.10-1`
 
@@ -3121,20 +3119,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-matrix/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rmatrix=1.6-1.1-1
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.6-1.1-1.dsc' rmatrix_1.6-1.1-1.dsc 1874 SHA256:1518f1207408310720e08eac2b07a43e8779c1f00711263be2790bf50666104c
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.6-1.1.orig.tar.gz' rmatrix_1.6-1.1.orig.tar.gz 2065748 SHA256:331eb1f1fe9441d4224d8551072443596001b50e8c15618f59cb938b46ee8cc2
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.6-1.1-1.debian.tar.xz' rmatrix_1.6-1.1-1.debian.tar.xz 5888 SHA256:007ff819558c44d1f62a4776e5025c6d2579926973388a422ff8c89c96e590b3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rmatrix/1.6-1.1-1/
 
-- https://sources.debian.net/src/rmatrix/1.6-1.1-1/ (for browsing the source)
-- https://sources.debian.net/src/rmatrix/1.6-1.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rmatrix/1.6-1.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpart=4.1.21-1`
 
@@ -3610,20 +3601,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:9.0.1894-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.0.1894-1.dsc' vim_9.0.1894-1.dsc 3035 SHA256:1fa84c9bff32ef9ef7dc4a86c6fbbed15b9a4fbfd07425fdd4ba2b219f8363b1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.0.1894.orig.tar.xz' vim_9.0.1894.orig.tar.xz 11314248 SHA256:85d93eda736c968afaf5d3b65f909fa65a087392f4c0a761c5e87f64a7c3f543
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.0.1894-1.debian.tar.xz' vim_9.0.1894-1.debian.tar.xz 186904 SHA256:eb4c05aaf17e09360a972823e79962952094f08eac9e74fa0ed35044b0be6a99
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/vim/2:9.0.1894-1/
 
-- https://sources.debian.net/src/vim/2:9.0.1894-1/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:9.0.1894-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:9.0.1894-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21.4-1`
 
