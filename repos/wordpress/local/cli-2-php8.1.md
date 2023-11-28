@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6e407f358390578682ca396be0bd3e97e4fc6a67cec328d2a29ffffce52b66ff`
-- Created: `2023-10-28T06:28:50.664881516Z`
-- Virtual Size: ~ 211.05 Mb  
+- Image ID: `sha256:e304607d651bcd016acf27d31c283f8df5f44bd977b932effb5fec824bba847e`
+- Created: `2023-11-28T02:04:33.641728641Z`
+- Virtual Size: ~ 210.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.25`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.25.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.25.tar.xz.asc`
-  - `PHP_SHA256=66fdba064aa119b1463a7969571d42f4642690275d8605ab5149bcc5107e2484`
+  - `PHP_VERSION=8.1.26`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.26.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.26.tar.xz.asc`
+  - `PHP_SHA256=17f87133596449327451ad4b8d9911bfaea59ff5109f3a6f2bb679f967a8ea0f`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.9.0`
   - `WORDPRESS_CLI_SHA512=39fa365300ab45840e30cc344595bbd175c3558a4499679edd9f9e3a00a846e94179c29c80de3242f1c405f3623605605748d188d9bb98450d9377388f60f113`
@@ -319,16 +319,16 @@ ICU
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.1.13-r0 description:
+imagemagick-libs-7.1.1.13-r1 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.1.13-r0 webpage:
+imagemagick-libs-7.1.1.13-r1 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.1.13-r0 installed size:
+imagemagick-libs-7.1.1.13-r1 installed size:
 3248 KiB
 
-imagemagick-libs-7.1.1.13-r0 license:
+imagemagick-libs-7.1.1.13-r1 license:
 ImageMagick
 
 ```
@@ -438,16 +438,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r0 description:
+libcrypto3-3.1.4-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r0 webpage:
+libcrypto3-3.1.4-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r0 installed size:
+libcrypto3-3.1.4-r1 installed size:
 4472 KiB
 
-libcrypto3-3.1.4-r0 license:
+libcrypto3-3.1.4-r1 license:
 Apache-2.0
 
 ```
@@ -642,16 +642,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r0 description:
+libssl3-3.1.4-r1 description:
 SSL shared libraries
 
-libssl3-3.1.4-r0 webpage:
+libssl3-3.1.4-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r0 installed size:
+libssl3-3.1.4-r1 installed size:
 552 KiB
 
-libssl3-3.1.4-r0 license:
+libssl3-3.1.4-r1 license:
 Apache-2.0
 
 ```
@@ -710,16 +710,16 @@ BSD-3-Clause
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.8.4-r4 description:
+libx11-1.8.7-r0 description:
 X11 client-side library
 
-libx11-1.8.4-r4 webpage:
+libx11-1.8.7-r0 webpage:
 https://xorg.freedesktop.org/
 
-libx11-1.8.4-r4 installed size:
-3152 KiB
+libx11-1.8.7-r0 installed size:
+3092 KiB
 
-libx11-1.8.4-r4 license:
+libx11-1.8.7-r0 license:
 X11
 
 ```
@@ -795,16 +795,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.11.4-r0 description:
+libxml2-2.11.6-r0 description:
 XML parsing library, version 2
 
-libxml2-2.11.4-r0 webpage:
+libxml2-2.11.6-r0 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.11.4-r0 installed size:
+libxml2-2.11.6-r0 installed size:
 1108 KiB
 
-libxml2-2.11.4-r0 license:
+libxml2-2.11.6-r0 license:
 MIT
 
 ```
@@ -965,16 +965,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r0 description:
+openssl-3.1.4-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r0 webpage:
+openssl-3.1.4-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r0 installed size:
+openssl-3.1.4-r1 installed size:
 752 KiB
 
-openssl-3.1.4-r0 license:
+openssl-3.1.4-r1 license:
 Apache-2.0
 
 ```
@@ -982,16 +982,16 @@ Apache-2.0
 ### `apk` package: `perl`
 
 ```console
-perl-5.36.1-r2 description:
+perl-5.36.2-r0 description:
 Larry Wall's Practical Extraction and Report Language
 
-perl-5.36.1-r2 webpage:
+perl-5.36.2-r0 webpage:
 https://www.perl.org/
 
-perl-5.36.1-r2 installed size:
+perl-5.36.2-r0 installed size:
 38 MiB
 
-perl-5.36.1-r2 license:
+perl-5.36.2-r0 license:
 Artistic-Perl OR GPL-1.0-or-later
 
 ```

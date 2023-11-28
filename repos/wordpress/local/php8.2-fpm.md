@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a1fa2f2ac9e13be7b962d55246e0d765579ee06f39776df316ea17947281c1bb`
-- Created: `2023-11-22T03:59:20.7366897Z`
-- Virtual Size: ~ 731.09 Mb  
+- Image ID: `sha256:ec6541c7d8c36342c664d35f87e38631d38861286b2ef2caabb547521cd5d163`
+- Created: `2023-11-28T02:02:16.679186486Z`
+- Virtual Size: ~ 731.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.12`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.12.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.12.tar.xz.asc`
-  - `PHP_SHA256=e1526e400bce9f9f9f774603cfac6b72b5e8f89fa66971ebc3cc4e5964083132`
+  - `PHP_VERSION=8.2.13`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.13.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.13.tar.xz.asc`
+  - `PHP_SHA256=2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4397,11 +4397,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.34+dfsg-1.2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.34+dfsg-1.2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tiff=4.5.0-6`
+### `dpkg` source package: `tiff=4.5.0-6+deb12u1`
 
 Binary Packages:
 
-- `libtiff6:amd64=4.5.0-6`
+- `libtiff6:amd64=4.5.0-6+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 
@@ -4410,17 +4410,17 @@ Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff=4.5.0-6
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.5.0-6.dsc' tiff_4.5.0-6.dsc 2255 SHA256:6e9ac40cabd8574d2e394d15a65143b9e7185f929863df2c1db50c27a5c3266b
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.5.0.orig.tar.bz2' tiff_4.5.0.orig.tar.bz2 2050377 SHA256:638f43d7dea33948d5dee7f39572fc0194d9cc3c74195de9dd26a4388a1f880a
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.5.0-6.debian.tar.xz' tiff_4.5.0-6.debian.tar.xz 26880 SHA256:f26d2adaa6eb6b6636a4b7e59ccb3e8be563ae649e7be0f9f81cf5fd9aadae7a
+$ apt-get source -qq --print-uris tiff=4.5.0-6+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.5.0-6%2bdeb12u1.dsc' tiff_4.5.0-6+deb12u1.dsc 1942 SHA256:3c184ea95bdd959f2a8d9da7a0cc7e73b5afb3f906ff086b05c9e4f953a4ded1
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.5.0.orig.tar.bz2' tiff_4.5.0.orig.tar.bz2 2050377 SHA256:638f43d7dea33948d5dee7f39572fc0194d9cc3c74195de9dd26a4388a1f880a
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.5.0-6%2bdeb12u1.debian.tar.xz' tiff_4.5.0-6+deb12u1.debian.tar.xz 28012 SHA256:d70ba897e15f135b7ed8cbc823490ca522c91ceff5e6a4c4274fc348219dcde0
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tiff/4.5.0-6/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.5.0-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.5.0-6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tiff/4.5.0-6+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.5.0-6+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.5.0-6+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2023c-5`
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:22fcdb1a26697f2ee2fb2a972e423074fcc0f93e741445c2e128ac75e693c6d7`
-- Created: `2023-11-15T04:27:37.311319918Z`
-- Virtual Size: ~ 313.82 Mb  
+- Image ID: `sha256:6b477eb2c99fd71c1fecc0bcdd39b93c01a9508053548c10c7bd5f57d933966e`
+- Created: `2023-11-28T02:03:24.877289223Z`
+- Virtual Size: ~ 313.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.12`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.12.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.12.tar.xz.asc`
-  - `PHP_SHA256=e1526e400bce9f9f9f774603cfac6b72b5e8f89fa66971ebc3cc4e5964083132`
+  - `PHP_VERSION=8.2.13`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.13.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.13.tar.xz.asc`
+  - `PHP_SHA256=2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b`
 
 ## `apk` (`.apk`-based packages)
 
@@ -401,16 +401,16 @@ LGPL-2.1-or-later
 ### `apk` package: `ghostscript`
 
 ```console
-ghostscript-10.01.2-r0 description:
+ghostscript-10.02.0-r0 description:
 An interpreter for the PostScript language and for PDF
 
-ghostscript-10.01.2-r0 webpage:
+ghostscript-10.02.0-r0 webpage:
 https://ghostscript.com/
 
-ghostscript-10.01.2-r0 installed size:
-68 MiB
+ghostscript-10.02.0-r0 installed size:
+67 MiB
 
-ghostscript-10.01.2-r0 license:
+ghostscript-10.02.0-r0 license:
 AGPL-3.0-or-later
 
 ```
@@ -554,16 +554,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.1.13-r0 description:
+imagemagick-7.1.1.13-r1 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.1.13-r0 webpage:
+imagemagick-7.1.1.13-r1 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.1.13-r0 installed size:
-4600 KiB
+imagemagick-7.1.1.13-r1 installed size:
+4604 KiB
 
-imagemagick-7.1.1.13-r0 license:
+imagemagick-7.1.1.13-r1 license:
 ImageMagick
 
 ```
@@ -571,16 +571,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.1.13-r0 description:
+imagemagick-libs-7.1.1.13-r1 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.1.13-r0 webpage:
+imagemagick-libs-7.1.1.13-r1 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.1.13-r0 installed size:
+imagemagick-libs-7.1.1.13-r1 installed size:
 3248 KiB
 
-imagemagick-libs-7.1.1.13-r0 license:
+imagemagick-libs-7.1.1.13-r1 license:
 ImageMagick
 
 ```
@@ -707,16 +707,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r0 description:
+libcrypto3-3.1.4-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r0 webpage:
+libcrypto3-3.1.4-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r0 installed size:
+libcrypto3-3.1.4-r1 installed size:
 4472 KiB
 
-libcrypto3-3.1.4-r0 license:
+libcrypto3-3.1.4-r1 license:
 Apache-2.0
 
 ```
@@ -1064,16 +1064,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r0 description:
+libssl3-3.1.4-r1 description:
 SSL shared libraries
 
-libssl3-3.1.4-r0 webpage:
+libssl3-3.1.4-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r0 installed size:
+libssl3-3.1.4-r1 installed size:
 552 KiB
 
-libssl3-3.1.4-r0 license:
+libssl3-3.1.4-r1 license:
 Apache-2.0
 
 ```
@@ -1149,16 +1149,16 @@ BSD-3-Clause
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.8.4-r4 description:
+libx11-1.8.7-r0 description:
 X11 client-side library
 
-libx11-1.8.4-r4 webpage:
+libx11-1.8.7-r0 webpage:
 https://xorg.freedesktop.org/
 
-libx11-1.8.4-r4 installed size:
-3152 KiB
+libx11-1.8.7-r0 installed size:
+3092 KiB
 
-libx11-1.8.4-r4 license:
+libx11-1.8.7-r0 license:
 X11
 
 ```
@@ -1251,16 +1251,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.11.4-r0 description:
+libxml2-2.11.6-r0 description:
 XML parsing library, version 2
 
-libxml2-2.11.4-r0 webpage:
+libxml2-2.11.6-r0 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.11.4-r0 installed size:
+libxml2-2.11.6-r0 installed size:
 1108 KiB
 
-libxml2-2.11.4-r0 license:
+libxml2-2.11.6-r0 license:
 MIT
 
 ```
@@ -1421,16 +1421,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r0 description:
+openssl-3.1.4-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r0 webpage:
+openssl-3.1.4-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r0 installed size:
+openssl-3.1.4-r1 installed size:
 752 KiB
 
-openssl-3.1.4-r0 license:
+openssl-3.1.4-r1 license:
 Apache-2.0
 
 ```
