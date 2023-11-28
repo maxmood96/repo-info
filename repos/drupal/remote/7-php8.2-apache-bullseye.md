@@ -1,7 +1,7 @@
 ## `drupal:7-php8.2-apache-bullseye`
 
 ```console
-$ docker pull drupal@sha256:bdbaa94e2851f2456f547540ad8b24e4f6481be8b25fc13b120dbd36d200a4dd
+$ docker pull drupal@sha256:9005b20ee3640a11a480f937e194ffdf3e47a4fcba3e948d480297352ebade46
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,13 +26,13 @@ $ docker pull drupal@sha256:bdbaa94e2851f2456f547540ad8b24e4f6481be8b25fc13b120d
 ### `drupal:7-php8.2-apache-bullseye` - linux; amd64
 
 ```console
-$ docker pull drupal@sha256:deb2c09f80bc96f61629abe852d04ab54e4e91e9087696bd16d2bb039677da41
+$ docker pull drupal@sha256:e8fc8cffa954e5d2af9cbe205d71ff8277720072850f26c7926d7367f604dc31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.4 MB (171416147 bytes)**  
+-	Total Size: **171.4 MB (171439939 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a27bfe4e2cb2eb342b22e7f48a0a1e07603ff7522530eb3ffb24cdc095d9e37`
+-	Image ID: `sha256:3177bed40e5c7e179b289c0738858b9ed7f9b19b206ce81788bd24ba9f76c597`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -70,11 +70,11 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Wed, 14 Jun 2023 17:25:34 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
 # Wed, 14 Jun 2023 17:25:34 GMT
-ENV PHP_VERSION=8.2.12
+ENV PHP_VERSION=8.2.13
 # Wed, 14 Jun 2023 17:25:34 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.2.12.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.12.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.2.13.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.13.tar.xz.asc
 # Wed, 14 Jun 2023 17:25:34 GMT
-ENV PHP_SHA256=e1526e400bce9f9f9f774603cfac6b72b5e8f89fa66971ebc3cc4e5964083132
+ENV PHP_SHA256=2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b
 # Wed, 14 Jun 2023 17:25:34 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 # Wed, 14 Jun 2023 17:25:34 GMT
@@ -138,65 +138,65 @@ RUN set -eux; 	curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_
 		Last Modified: Tue, 21 Nov 2023 16:38:12 GMT  
 		Size: 512.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25d1d844fe770cd15aa38b78c5c6fa220ad7aad06f40ec949bb980e520a11195`  
-		Last Modified: Tue, 21 Nov 2023 16:43:58 GMT  
-		Size: 12.4 MB (12391424 bytes)  
+	-	`sha256:2f85d561aa9197bbadb121af9a51f086162929c45d547641796d5be1bfd3c1e0`  
+		Last Modified: Tue, 28 Nov 2023 00:17:09 GMT  
+		Size: 12.4 MB (12411041 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8805b0a6791343016c696327cbf39e2844d1fce4525a14a38054ebd41a5a6e10`  
-		Last Modified: Tue, 21 Nov 2023 16:43:55 GMT  
-		Size: 492.0 B  
+	-	`sha256:580acb5610497626bc03f44ade2246aba56579d5ab841fcde5baae39325a109b`  
+		Last Modified: Tue, 28 Nov 2023 00:17:06 GMT  
+		Size: 493.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37b5548cb2d8340c143f75a27f5467706db83e9b88b647512a932efbbcfe1430`  
-		Last Modified: Tue, 21 Nov 2023 16:43:57 GMT  
-		Size: 11.4 MB (11368415 bytes)  
+	-	`sha256:6541bc508bc11ce0875bb23eb4f4156bbb37b9b2851045eee171a3d874671579`  
+		Last Modified: Tue, 28 Nov 2023 00:17:08 GMT  
+		Size: 11.4 MB (11372523 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6faac4d9dfade3ca2c9a2953872addefc83af5cbf0ccc8ce70ece75c2005e5eb`  
-		Last Modified: Tue, 21 Nov 2023 16:43:56 GMT  
-		Size: 2.5 KB (2457 bytes)  
+	-	`sha256:c5ad09e4b1bddf40449a6999364d28c337497f31524b81dd000dd3eaad7d5650`  
+		Last Modified: Tue, 28 Nov 2023 00:17:06 GMT  
+		Size: 2.5 KB (2455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67a93742d8e112b497e5cfae21fcfd5b861cb78420db481fbf72cb779fa21812`  
-		Last Modified: Tue, 21 Nov 2023 16:43:56 GMT  
-		Size: 248.0 B  
+	-	`sha256:0beb343c63a64708ad21af6afd27ffc518fc9d0b2cfe5ce2409a5111fc8f1792`  
+		Last Modified: Tue, 28 Nov 2023 00:17:06 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ab6a6db8c10395b4ec1b93f8b4c1afb3505b6c0b99f17936d2919bd6902c3b0`  
-		Last Modified: Tue, 21 Nov 2023 16:43:55 GMT  
-		Size: 895.0 B  
+	-	`sha256:33e3cad7b896ee7f155d69f16a4e4db617eeff332d0f903657bfc6d12012e98e`  
+		Last Modified: Tue, 28 Nov 2023 00:17:06 GMT  
+		Size: 892.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3b5bf64ef1174c31282f4892f3ef7540fdd59e7c9c739f2271efb1e122a2abe`  
-		Last Modified: Tue, 21 Nov 2023 23:12:12 GMT  
-		Size: 1.9 MB (1927843 bytes)  
+	-	`sha256:8696883eb30e94ceacd8c3cbe4fdde5ac2f7f15416a4300a2aba6ccaea0ccf3a`  
+		Last Modified: Tue, 28 Nov 2023 01:16:42 GMT  
+		Size: 1.9 MB (1927910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f835a0dda72dc7719353d7739efe1bded27840bb93084a4b8b289d64308ec0e`  
-		Last Modified: Tue, 21 Nov 2023 23:12:13 GMT  
+	-	`sha256:a7a78f63b287c3b0115e20e519feb2dab424fb3a55964bd5030b12971e3ff486`  
+		Last Modified: Tue, 28 Nov 2023 01:16:42 GMT  
 		Size: 315.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2157fa574de99606aa954e3dc275409a78cebfde5b3acf05baad21eddf4c510d`  
-		Last Modified: Tue, 21 Nov 2023 23:12:13 GMT  
-		Size: 3.4 MB (3410216 bytes)  
+	-	`sha256:ce6a09a19dc092f620b855a9d21606c1bb49679b68f1d58f11e12ecaf08560ef`  
+		Last Modified: Tue, 28 Nov 2023 01:16:42 GMT  
+		Size: 3.4 MB (3410221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:7-php8.2-apache-bullseye` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:d80615990c2cad01101875aa01631210d32e41cb232ec53ec39e2e25fa20a265
+$ docker pull drupal@sha256:c74c806824a1b4849662edc22237daeb157cb7736d388bdb881ee1637142c81b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5944993 bytes)**  
+-	Total Size: **5.9 MB (5944994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:554ee81e6bf748ab274e28fe8ced22aa5740cefdeddb631d5e22d97e8c5db1b2`
+-	Image ID: `sha256:8b4018dd6c3d41310af71869940aee3c76bbb298a61114765bb1335b1eed0bde`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:807431e1da06fce31de1365fe128654b651d065498678feb3972776cd9f201a7`  
-		Last Modified: Tue, 21 Nov 2023 23:12:12 GMT  
+	-	`sha256:5ec1f257c6eb44809c290ab55015f899691d731b689eab67930c9cc42f5de952`  
+		Last Modified: Tue, 28 Nov 2023 01:16:42 GMT  
 		Size: 5.9 MB (5918505 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fe389161a664d19d7be603ce13b9ed22b24ea4c89aa29708c2d92f3a39e8508c`  
-		Last Modified: Tue, 21 Nov 2023 23:12:11 GMT  
-		Size: 26.5 KB (26488 bytes)  
+	-	`sha256:6090c0094c6cd8d44d267a6b31b2da9780f60427d7952e118917848e3313312b`  
+		Last Modified: Tue, 28 Nov 2023 01:16:42 GMT  
+		Size: 26.5 KB (26489 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:7-php8.2-apache-bullseye` - linux; arm variant v5
@@ -374,13 +374,13 @@ $ docker pull drupal@sha256:52b50b76c593747fa07cb7dc3f676c767247263bc450a767bd7d
 ### `drupal:7-php8.2-apache-bullseye` - linux; arm variant v7
 
 ```console
-$ docker pull drupal@sha256:f258a240ae64d2c38270726b18bb4812cbf527b0e0a854baf90a4f6589b23b43
+$ docker pull drupal@sha256:1d469920b7deb3dbd2e12646e31f56e52017f9416eddb326390bebbd6f41f68c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **140.9 MB (140861985 bytes)**  
+-	Total Size: **140.9 MB (140884498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a976f160ed8a0b6673e83e0469c0e0504fdd1be55d25f139c7ae55e63cede65b`
+-	Image ID: `sha256:49f9d798c2f7cb703713eec4bb4bd3f494cb367ad1112c095ecfb268b4481aa6`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -418,11 +418,11 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Wed, 14 Jun 2023 17:25:34 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
 # Wed, 14 Jun 2023 17:25:34 GMT
-ENV PHP_VERSION=8.2.12
+ENV PHP_VERSION=8.2.13
 # Wed, 14 Jun 2023 17:25:34 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.2.12.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.12.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.2.13.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.13.tar.xz.asc
 # Wed, 14 Jun 2023 17:25:34 GMT
-ENV PHP_SHA256=e1526e400bce9f9f9f774603cfac6b72b5e8f89fa66971ebc3cc4e5964083132
+ENV PHP_SHA256=2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b
 # Wed, 14 Jun 2023 17:25:34 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 # Wed, 14 Jun 2023 17:25:34 GMT
@@ -486,77 +486,77 @@ RUN set -eux; 	curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_
 		Last Modified: Tue, 21 Nov 2023 10:52:53 GMT  
 		Size: 511.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60d1af4eb57eb96b0390e1ec4ad76be887e419b36f5f87c7c976beb8a6d9ec79`  
-		Last Modified: Tue, 21 Nov 2023 10:58:57 GMT  
-		Size: 12.4 MB (12389924 bytes)  
+	-	`sha256:a2e6c78b75094571cbf11bcaee5200c2c8dd8ff66d75cf5bf23f400596281058`  
+		Last Modified: Mon, 27 Nov 2023 23:54:32 GMT  
+		Size: 12.4 MB (12409403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1b276b6bc9211326bbc71541edcc3d626fabaf5a5a2dc3ed4c6e1d279dab417`  
-		Last Modified: Tue, 21 Nov 2023 10:58:54 GMT  
-		Size: 492.0 B  
+	-	`sha256:877be8b605c987645eb995781066b54e300de9180166690d77f83f4197b067ec`  
+		Last Modified: Mon, 27 Nov 2023 23:54:29 GMT  
+		Size: 494.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76abf22d427df20b2b5a6e5b044dcbc97949e9db835f69ef1eb08a5f9b4e1857`  
-		Last Modified: Tue, 21 Nov 2023 10:58:57 GMT  
-		Size: 9.8 MB (9826986 bytes)  
+	-	`sha256:73507191905c3a40b82233600c4a36e05c6263857981cd3e19095c4b672cc1d5`  
+		Last Modified: Mon, 27 Nov 2023 23:54:31 GMT  
+		Size: 9.8 MB (9830069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a57f775bf5ef91fc24137175d374d06707e30334aea36c93f46ba998361837e`  
-		Last Modified: Tue, 21 Nov 2023 10:58:54 GMT  
-		Size: 2.5 KB (2456 bytes)  
+	-	`sha256:a7f3c09b2cb4f61ffaba3bd13618ef53858ea6f95b7b5646f2606c32f560b8a9`  
+		Last Modified: Mon, 27 Nov 2023 23:54:28 GMT  
+		Size: 2.5 KB (2459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a0d1e8944bc2171e50acaaf35f1f7c8ed281381460ca4db9b4d223bf7741b51`  
-		Last Modified: Tue, 21 Nov 2023 10:58:54 GMT  
-		Size: 246.0 B  
+	-	`sha256:e4728a55698f9d76acb5f5a17385379efa4fbddbdf312fbe69542618d53e295e`  
+		Last Modified: Mon, 27 Nov 2023 23:54:28 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60681dbb8bc3eea2c22e64ed0a1de80771a513428f6d6b974470d1921b2f2dee`  
-		Last Modified: Tue, 21 Nov 2023 10:58:54 GMT  
+	-	`sha256:cd403750efdbf6c3a23e735998fbcca0e9042da214310472b02a9266ed2bb844`  
+		Last Modified: Mon, 27 Nov 2023 23:54:29 GMT  
 		Size: 893.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b20b40e1bab3f587ac602bfa61fbd8933a24da673e4a901c7ccdbca8e502934`  
-		Last Modified: Wed, 22 Nov 2023 00:03:52 GMT  
-		Size: 1.3 MB (1309262 bytes)  
+	-	`sha256:80939a6ad4b97187ef5c2ff1ae5cb1f85c2f00093ea6cca752c39f12bde67eab`  
+		Last Modified: Tue, 28 Nov 2023 03:32:25 GMT  
+		Size: 1.3 MB (1309198 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e40a9bb61fa2b6acfe77c98d97818401c0d49f9c37db8af49582dc964145c516`  
-		Last Modified: Wed, 22 Nov 2023 00:03:52 GMT  
-		Size: 314.0 B  
+	-	`sha256:b6915b3f44a5431320102abcbdffabeb64e6bedc89147b04fe7efb7536c2da96`  
+		Last Modified: Tue, 28 Nov 2023 03:32:26 GMT  
+		Size: 316.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32ce92699dd9c305b7b440b2b2297ba45dcc50aa7989d7d8e4cd7140b052276e`  
-		Last Modified: Wed, 22 Nov 2023 00:40:21 GMT  
-		Size: 3.4 MB (3410208 bytes)  
+	-	`sha256:e03095ce360641a373a302a27410ffa47c4b0622109aef6710ce53a8a81d35d7`  
+		Last Modified: Tue, 28 Nov 2023 04:03:20 GMT  
+		Size: 3.4 MB (3410215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:7-php8.2-apache-bullseye` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:5117d958b86d335f729987359f1080b39523dab6b2832b23cbe811111a4cbf0c
+$ docker pull drupal@sha256:40c72af87efb927b948b860ebb722e9b260101a9df99c0fbeb0c32573c148d3b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 MB (5777413 bytes)**  
+-	Total Size: **5.8 MB (5777414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:362b464fa9ad173666aafc7d3c484ca74e85084d33af547028a5077015c1bb49`
+-	Image ID: `sha256:9cd248a880efe04e08e0602e33fd2941a0fea5b0e237aa8e090fd0056078e6a1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3d493e8f3961c49bac0d73b30bcd8d295b35799ee9471062ad6f53a399d95656`  
-		Last Modified: Wed, 22 Nov 2023 00:40:21 GMT  
+	-	`sha256:367f469cc6ab299665a9a4efc593101b87d33ff71fb650ac9db77b8979d32f07`  
+		Last Modified: Tue, 28 Nov 2023 04:03:20 GMT  
 		Size: 5.8 MB (5752957 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d660c33fa1024580df9d1f6d6c7515911d03e60155b7b08230c2aae6fa9e2fcd`  
-		Last Modified: Wed, 22 Nov 2023 00:40:20 GMT  
-		Size: 24.5 KB (24456 bytes)  
+	-	`sha256:2ae3853caaa99d2a28be95501ec71ed21547dce2b7161df6afb5e1e5196f9a2e`  
+		Last Modified: Tue, 28 Nov 2023 04:03:20 GMT  
+		Size: 24.5 KB (24457 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:7-php8.2-apache-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull drupal@sha256:07e19e81c29babc5ea880a1de9c7f9af676601387b23d0214b6c61a4df001df7
+$ docker pull drupal@sha256:3c08538e0c4fe66083ff5d05a950b139e76edf0ff4db8cd6222a5a7e7f3fb0cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.6 MB (165628039 bytes)**  
+-	Total Size: **165.7 MB (165652196 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c41e15dffd2b83717d2fe9c21980be818e937a0f1aa4b432e9f8361608f2c018`
+-	Image ID: `sha256:c0ec773359b90c3cad995e895cf690e205eb104f2e84d48bdea9d814eacbfd78`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -594,11 +594,11 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Wed, 14 Jun 2023 17:25:34 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
 # Wed, 14 Jun 2023 17:25:34 GMT
-ENV PHP_VERSION=8.2.12
+ENV PHP_VERSION=8.2.13
 # Wed, 14 Jun 2023 17:25:34 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.2.12.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.12.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.2.13.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.13.tar.xz.asc
 # Wed, 14 Jun 2023 17:25:34 GMT
-ENV PHP_SHA256=e1526e400bce9f9f9f774603cfac6b72b5e8f89fa66971ebc3cc4e5964083132
+ENV PHP_SHA256=2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b
 # Wed, 14 Jun 2023 17:25:34 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 # Wed, 14 Jun 2023 17:25:34 GMT
@@ -662,77 +662,77 @@ RUN set -eux; 	curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_
 		Last Modified: Tue, 21 Nov 2023 16:37:03 GMT  
 		Size: 512.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0dc605b210c6d580b1ee420d7772dadf45e6c04ce642aca359658380d10b3980`  
-		Last Modified: Tue, 21 Nov 2023 16:42:56 GMT  
-		Size: 12.4 MB (12390650 bytes)  
+	-	`sha256:a2abea504db8e8597bc0be384f7e46fd0ba559f3997c49c13cd35fd040cd3b05`  
+		Last Modified: Mon, 27 Nov 2023 23:42:30 GMT  
+		Size: 12.4 MB (12410243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea5038d6082c05bdc73058ba1cc72f7b93dc247de2351171db3781d008eb1261`  
-		Last Modified: Tue, 21 Nov 2023 16:42:53 GMT  
-		Size: 493.0 B  
+	-	`sha256:2032ca2a19cb1010c150ddaac76bd5f01c090477d8db1b1b2a5f7b025571210e`  
+		Last Modified: Mon, 27 Nov 2023 23:42:28 GMT  
+		Size: 494.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01c3b4d21986a673ee60efa6d5002db3c5b66932ba892c91c354ddd4a07dc17d`  
-		Last Modified: Tue, 21 Nov 2023 16:42:55 GMT  
-		Size: 11.5 MB (11453420 bytes)  
+	-	`sha256:8294363a98cbd81796323c91249e3d43cbc3f501b15fe14c30950ab1957e9fd8`  
+		Last Modified: Mon, 27 Nov 2023 23:42:29 GMT  
+		Size: 11.5 MB (11457713 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dbefe2b3f2b4bd93ec09554c0827243c1a283c5ef7d0ccb54cbcb372610d2ca9`  
-		Last Modified: Tue, 21 Nov 2023 16:42:53 GMT  
-		Size: 2.5 KB (2459 bytes)  
+	-	`sha256:756239945bdfbe13305c60145c7cb9f2976b30ce8da3f49babe9f4a5d1cfd85e`  
+		Last Modified: Mon, 27 Nov 2023 23:42:27 GMT  
+		Size: 2.5 KB (2458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1938a97d578cc7127e7b7cfe4db148938a8a83d3e20c0df736272757d902d9e0`  
-		Last Modified: Tue, 21 Nov 2023 16:42:53 GMT  
-		Size: 245.0 B  
+	-	`sha256:b6bfdee94b8fcef074207e4661d9d5bf8f3bd254aaeaf329a5807e039adaeb60`  
+		Last Modified: Mon, 27 Nov 2023 23:42:28 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f9f984e48706334341c4d7637d3ec38b4abf6d7e5a5ebe5fe334ef1aad78ea9`  
-		Last Modified: Tue, 21 Nov 2023 16:42:53 GMT  
+	-	`sha256:b2b5a710f9c1cf1b64ebfc2524766703e5d5926de2572f35613a96d2fad944d2`  
+		Last Modified: Mon, 27 Nov 2023 23:42:27 GMT  
 		Size: 895.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93366d8c9388498de52ee9bf6822017e9a0b38cc4334ac134c679300db1ce64f`  
-		Last Modified: Wed, 22 Nov 2023 05:38:42 GMT  
-		Size: 2.2 MB (2192579 bytes)  
+	-	`sha256:25295d9b11f4251b4e081730942f7f003f88ed1aa2c81f173311f05b14a8e57d`  
+		Last Modified: Tue, 28 Nov 2023 03:51:34 GMT  
+		Size: 2.2 MB (2192845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24e1e12b11a7a9cc58572d41bc3e632cb8c70890a61cd9924507455193924c50`  
-		Last Modified: Wed, 22 Nov 2023 05:38:42 GMT  
-		Size: 314.0 B  
+	-	`sha256:23280202046aa08b944548d9fac31d5b173ab05043190428b902b14ed1a08d8b`  
+		Last Modified: Tue, 28 Nov 2023 03:51:34 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e9989a742af4e48128e8780c9b5ce9ecf63d946df16b52e0d5ccbede50e0cd6`  
-		Last Modified: Wed, 22 Nov 2023 06:20:04 GMT  
-		Size: 3.4 MB (3410216 bytes)  
+	-	`sha256:5a98fae13b9b0302b05c7a2d8793533385774e7c7c258b9cab4f7e2bb76375d5`  
+		Last Modified: Tue, 28 Nov 2023 04:20:54 GMT  
+		Size: 3.4 MB (3410221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:7-php8.2-apache-bullseye` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:aa241049311953242897b875f92b330f656d224aa0daf54668152e2ab1f983a9
+$ docker pull drupal@sha256:5be04546db20925ea25607ce2f5833f0d269e0bec348ce3511b3de1e33bcb5dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.9 MB (5945576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a82fed8f953a21e80073536f14454b8759c5f9ed3e19a8bc5af40c5186285e9b`
+-	Image ID: `sha256:d44a10aae5105090b8eb528ac2932170385e043a26d08e1398b7fc2e98ca8240`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:67dd25aa82c1749bbd181a691d4638642598e55205b2c615e960e9e6cd2d0262`  
-		Last Modified: Wed, 22 Nov 2023 06:20:04 GMT  
+	-	`sha256:abb2c8e0b1abb90e6e5674f4cf6b854846a7a8d8b94473eeb5713658e6490589`  
+		Last Modified: Tue, 28 Nov 2023 04:20:53 GMT  
 		Size: 5.9 MB (5921189 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4ed81ad62e3f26b5e5286b6d9f79a93585d307420217252c9d3d79daf0ca85ea`  
-		Last Modified: Wed, 22 Nov 2023 06:20:03 GMT  
+	-	`sha256:16d5b1f7bfc3273123bac97370754c50277e585643d391d4bd3c1692e8d8e5cf`  
+		Last Modified: Tue, 28 Nov 2023 04:20:53 GMT  
 		Size: 24.4 KB (24387 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:7-php8.2-apache-bullseye` - linux; 386
 
 ```console
-$ docker pull drupal@sha256:0229fde9d5b9a9319783c647ee256838451cb095b9d36822748ce1f71e07aa5a
+$ docker pull drupal@sha256:457e7136ff51f241b9942f8817b49d024a3995b180cb37fb5e4f2971a487f28d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.3 MB (174287813 bytes)**  
+-	Total Size: **174.3 MB (174310600 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efb254b230eada6412dccd80878cb954d10ebc55270087f85a418694dff4a481`
+-	Image ID: `sha256:47896f9e8b2445a1ac66574bf73808e032b7454f19992f03e7ca2e39db5ea74b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -770,11 +770,11 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Wed, 14 Jun 2023 17:25:34 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
 # Wed, 14 Jun 2023 17:25:34 GMT
-ENV PHP_VERSION=8.2.12
+ENV PHP_VERSION=8.2.13
 # Wed, 14 Jun 2023 17:25:34 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.2.12.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.12.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.2.13.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.13.tar.xz.asc
 # Wed, 14 Jun 2023 17:25:34 GMT
-ENV PHP_SHA256=e1526e400bce9f9f9f774603cfac6b72b5e8f89fa66971ebc3cc4e5964083132
+ENV PHP_SHA256=2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b
 # Wed, 14 Jun 2023 17:25:34 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 # Wed, 14 Jun 2023 17:25:34 GMT
@@ -838,60 +838,60 @@ RUN set -eux; 	curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_
 		Last Modified: Tue, 21 Nov 2023 14:14:24 GMT  
 		Size: 513.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:700dda920ca2930117217061415b868c1eea1a663040f235aa96cd249e4e3098`  
-		Last Modified: Tue, 21 Nov 2023 14:20:50 GMT  
-		Size: 12.4 MB (12390730 bytes)  
+	-	`sha256:2805884d537e8a91b1b391194694aa3d58fe82fa405c5838905d7e7b5437b386`  
+		Last Modified: Tue, 28 Nov 2023 01:39:52 GMT  
+		Size: 12.4 MB (12410310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c7e7b88fd267e90b560a1195ad05c3edd62530a087c4f4dd34580d45d5fc99ef`  
-		Last Modified: Tue, 21 Nov 2023 14:20:47 GMT  
+	-	`sha256:9f306881ef060e69acd150f9e6c3ad1f6ccbc15aa42c5e166e717b2667af60d9`  
+		Last Modified: Tue, 28 Nov 2023 01:39:48 GMT  
 		Size: 493.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ed960d00b3187fb4534d6589702c54d38994c07074ec138396472b74276cac7`  
-		Last Modified: Tue, 21 Nov 2023 14:20:50 GMT  
-		Size: 11.6 MB (11614391 bytes)  
+	-	`sha256:c18a07fe6c95e4d8a7f021fd2edcb98b6db2578fed72f33aa9192bd4bb7d7854`  
+		Last Modified: Tue, 28 Nov 2023 01:39:52 GMT  
+		Size: 11.6 MB (11617049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3609a889ddbdfc11a8b2bf49e50a3d3c1f28f64b389cedfb9fd3e7841d350404`  
-		Last Modified: Tue, 21 Nov 2023 14:20:47 GMT  
-		Size: 2.5 KB (2457 bytes)  
+	-	`sha256:adfd625a31081aeba6278de92a5a7146ed73b3c634d15e1cc6ef21391269d132`  
+		Last Modified: Tue, 28 Nov 2023 01:39:48 GMT  
+		Size: 2.5 KB (2458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45fc7e05c3f7e6a68a20b53ede4b46753eff455d523c5700405267e14b86e0c1`  
-		Last Modified: Tue, 21 Nov 2023 14:20:47 GMT  
-		Size: 243.0 B  
+	-	`sha256:660b4c2912cda48ed37dbf1bfa84916089fd0b46993c234f6d98990425222429`  
+		Last Modified: Tue, 28 Nov 2023 01:39:48 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:073b1a66e0787d39f58591e101f776e8282b47887654c8835be376c84a3abefe`  
-		Last Modified: Tue, 21 Nov 2023 14:20:47 GMT  
-		Size: 894.0 B  
+	-	`sha256:f6d071d272fadf6ab6e610024166c2af46a66b433c8379bd2bed8a11fea0209b`  
+		Last Modified: Tue, 28 Nov 2023 01:39:48 GMT  
+		Size: 897.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50671976449b2ad4a84e7d302af982ff32b9e25ac635ebee019cd901a48f584c`  
-		Last Modified: Tue, 21 Nov 2023 19:37:56 GMT  
-		Size: 2.0 MB (1994211 bytes)  
+	-	`sha256:e8f0446f9db5ed5bb8d19f7ecad97e18eae3119fa14088728070cfcd1c5d7488`  
+		Last Modified: Tue, 28 Nov 2023 03:23:57 GMT  
+		Size: 2.0 MB (1994747 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f37ce0e73c4ce0eda046bba126a984a5b484ad410504426c9dd29af0dba7143a`  
-		Last Modified: Tue, 21 Nov 2023 19:37:56 GMT  
-		Size: 309.0 B  
+	-	`sha256:a450c8511f31a90b05f4a7e988648134cc5538e3c9cdc033fa220e7be3743b7e`  
+		Last Modified: Tue, 28 Nov 2023 03:23:56 GMT  
+		Size: 316.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcb55c651ef5edd23a311b59be6d84ce114cf8f17176b41415f9e9d445f85f2c`  
-		Last Modified: Tue, 21 Nov 2023 19:37:56 GMT  
-		Size: 3.4 MB (3410217 bytes)  
+	-	`sha256:8440a8f5b092545e055f121469d5692f25ade773293bcf79cf258e15fe2c5bbc`  
+		Last Modified: Tue, 28 Nov 2023 03:23:57 GMT  
+		Size: 3.4 MB (3410215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:7-php8.2-apache-bullseye` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:cd81144f20e58a72bee19b5974ff0c16653076784242fb57994c8f0ee79646f0
+$ docker pull drupal@sha256:36d55e18c1bd1507050980847d20d7ddb6cbd8ab0be4c37f1346c7d685ca2848
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **26.3 KB (26251 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d07a092681594bcfea6351e9a33f17e4c4d9276607b9acf0d8978d03aa47cdb1`
+-	Image ID: `sha256:9cff610df6ea28f9d4a5fe70c6fbbef145327ef8bacc98bb8f366c375b4b41e1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5cff24b224c34daddf3a8823f056caf96096f684ca15004916c9d02358ef18bc`  
-		Last Modified: Tue, 21 Nov 2023 19:37:56 GMT  
+	-	`sha256:2f1451dead3210369c6adf453edb423592c9d83d4821cf39b1e3510135bf3c29`  
+		Last Modified: Tue, 28 Nov 2023 03:23:56 GMT  
 		Size: 26.3 KB (26251 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1070,13 +1070,13 @@ $ docker pull drupal@sha256:6fe4f477f87db89a4defdba89d502eabd2facbaa288fc359dd1a
 ### `drupal:7-php8.2-apache-bullseye` - linux; ppc64le
 
 ```console
-$ docker pull drupal@sha256:bbbfaab6a6bee682dd5597f7b0a5ddb7a6f2bb99ef3f88a4b70cddda0eef402d
+$ docker pull drupal@sha256:9af0cf3cd69879e753459d0c07a8584872967947ddb44bffba99fa40dad2178c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.8 MB (171842547 bytes)**  
+-	Total Size: **171.9 MB (171869395 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11d1ad5963ecd7c69443550a75010677e8808dcb62f1c192dc3f7ea83070780c`
+-	Image ID: `sha256:3ea2eae21f91e487784d9b86a001f75b478712c95cc818ed8dc36fd1a9949ef1`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1114,11 +1114,11 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Wed, 14 Jun 2023 17:25:34 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
 # Wed, 14 Jun 2023 17:25:34 GMT
-ENV PHP_VERSION=8.2.12
+ENV PHP_VERSION=8.2.13
 # Wed, 14 Jun 2023 17:25:34 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.2.12.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.12.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.2.13.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.13.tar.xz.asc
 # Wed, 14 Jun 2023 17:25:34 GMT
-ENV PHP_SHA256=e1526e400bce9f9f9f774603cfac6b72b5e8f89fa66971ebc3cc4e5964083132
+ENV PHP_SHA256=2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b
 # Wed, 14 Jun 2023 17:25:34 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 # Wed, 14 Jun 2023 17:25:34 GMT
@@ -1182,77 +1182,77 @@ RUN set -eux; 	curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_
 		Last Modified: Tue, 21 Nov 2023 15:20:01 GMT  
 		Size: 516.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:670c94d947f9cf72ef0bee18a97116fd5b81d42ed6e5ddfe596e240e523baf5f`  
-		Last Modified: Tue, 21 Nov 2023 15:26:28 GMT  
-		Size: 12.4 MB (12391223 bytes)  
+	-	`sha256:0c1b467e46033abc7915e2cc9044ec1299de0c5d67e27d37e59ba4716b57a85c`  
+		Last Modified: Mon, 27 Nov 2023 23:55:05 GMT  
+		Size: 12.4 MB (12410912 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0753e8040d0ddcb2263628828139000bfa80dacfec0a58d66a55940b39ed664a`  
-		Last Modified: Tue, 21 Nov 2023 15:26:24 GMT  
-		Size: 493.0 B  
+	-	`sha256:a0ac380608593c714a376c8dec54b470390ca8b8940fd0130e5822269e419909`  
+		Last Modified: Mon, 27 Nov 2023 23:55:01 GMT  
+		Size: 494.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95726e05054c79576a52c1991360fe9cd3bafd8419a93232c60fe56b20758fde`  
-		Last Modified: Tue, 21 Nov 2023 15:26:27 GMT  
-		Size: 11.8 MB (11830557 bytes)  
+	-	`sha256:8960d4a16cb0f59c6c92c1d5225918353afa8d56481717c3bda8782a74a63471`  
+		Last Modified: Mon, 27 Nov 2023 23:55:04 GMT  
+		Size: 11.8 MB (11837563 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34933bf62394e73f25e45c28f35f66e29991470ecac9b55ef929b030c902e7ff`  
-		Last Modified: Tue, 21 Nov 2023 15:26:24 GMT  
-		Size: 2.5 KB (2459 bytes)  
+	-	`sha256:4d83cdff82b6ccb9a97dc08b84f630612e17168817ca0b794a84a09d5ee00c12`  
+		Last Modified: Mon, 27 Nov 2023 23:55:01 GMT  
+		Size: 2.5 KB (2461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dbc4048a8a28a5093b5e5cf96c13d8746e6f9ea24a6daa46213496f6dda49c31`  
-		Last Modified: Tue, 21 Nov 2023 15:26:24 GMT  
-		Size: 244.0 B  
+	-	`sha256:5598bb64f1c8f218b0a86445decee290af65a51e582f7c84ebfa5adf9a415bd5`  
+		Last Modified: Mon, 27 Nov 2023 23:55:01 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190ff35bb9bf2f2b36eaf0f68c3c72ea8f715e104ace6f5b7f018c5b3db1fa8d`  
-		Last Modified: Tue, 21 Nov 2023 15:26:24 GMT  
-		Size: 895.0 B  
+	-	`sha256:1dd933819b0ddf423b2aadf08554b0daf2c2a767ed91575a00d6757b08c5c645`  
+		Last Modified: Mon, 27 Nov 2023 23:55:01 GMT  
+		Size: 896.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51dc83cdaf996156fbe1d888a815b2ebb71f299f3e1305c77c60a33dbafaef0c`  
-		Last Modified: Wed, 22 Nov 2023 01:59:20 GMT  
-		Size: 1.8 MB (1794143 bytes)  
+	-	`sha256:0f43b639fb77862307eaa5d3ac2c463dd2af3e98e94fa6c2460cc6ddf28d092b`  
+		Last Modified: Tue, 28 Nov 2023 04:31:44 GMT  
+		Size: 1.8 MB (1794282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73581b277d0da9c35cadac9921eecb6bd8fe8157917174cc01e380d1801b7b60`  
-		Last Modified: Wed, 22 Nov 2023 01:59:21 GMT  
-		Size: 312.0 B  
+	-	`sha256:ff15759e68d3f5bfa890c594df1850adb7ec866b6ed3e906e28361fcc22638f6`  
+		Last Modified: Tue, 28 Nov 2023 04:31:44 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f68c3026cc2436313c9282cfc2a5ca545d22fc83202c7d2fa03742d264e47cf8`  
-		Last Modified: Wed, 22 Nov 2023 02:28:58 GMT  
-		Size: 3.4 MB (3410215 bytes)  
+	-	`sha256:d05761fc16d25e25f497d3e1f241bd482637becb4ec1000e6b66d3b310cb9832`  
+		Last Modified: Tue, 28 Nov 2023 04:31:45 GMT  
+		Size: 3.4 MB (3410222 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:7-php8.2-apache-bullseye` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:eda95ba9695adcaab1a447dbc15207a3db5ed790907ee8bba8854969c382d1b1
+$ docker pull drupal@sha256:3f35ffca653e968bd7bcc8b65f5a35514b29a9267db129e2f232b38210a5d5c0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5914781 bytes)**  
+-	Total Size: **5.9 MB (5916889 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:41d9a82fe6a82badb674761e843ec23d9223688f0f11aa26c2b50fbc7150da5a`
+-	Image ID: `sha256:8e8d96fbe3f070c7cddeb36e13f4f274a82760f3927d584422ffae346973fe85`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b932f29da01b206f72f1d14093503e71d489566746b8925ec22af53a4adb89bc`  
-		Last Modified: Wed, 22 Nov 2023 02:28:58 GMT  
+	-	`sha256:ee542e77ad6963ea59d1fdd91ff9cac6f68e877f0fccdfdeabaec401771abc62`  
+		Last Modified: Tue, 28 Nov 2023 04:31:43 GMT  
 		Size: 5.9 MB (5890370 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7408ceec5cc13888572b5d4f915309d9d95eeb88d8bc2b9db6f0a74419359c4f`  
-		Last Modified: Wed, 22 Nov 2023 02:28:58 GMT  
-		Size: 24.4 KB (24411 bytes)  
+	-	`sha256:a104d43942b9bf08c2a09d615fd3d3ef72682b5ee96d0f7a014c120a1f12d495`  
+		Last Modified: Tue, 28 Nov 2023 04:31:42 GMT  
+		Size: 26.5 KB (26519 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:7-php8.2-apache-bullseye` - linux; s390x
 
 ```console
-$ docker pull drupal@sha256:6656ba5bda8ee88961cf5834b85efe6f2182ff7b7ad306b953d28a158ddd8513
+$ docker pull drupal@sha256:b8ec98453e4896ca7a26334597f6741e6559a61b6327a5f3a1814e9c50f61996
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.2 MB (148189311 bytes)**  
+-	Total Size: **148.2 MB (148210789 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98439f4775f9d11b3020a2f3a260f8c0aa494991fd671f27e97449df2e99698f`
+-	Image ID: `sha256:f4994d54e8b6d6833d8b112c0f15ff39297bbf005426aad2538d177f1ce8b145`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1290,11 +1290,11 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Wed, 14 Jun 2023 17:25:34 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
 # Wed, 14 Jun 2023 17:25:34 GMT
-ENV PHP_VERSION=8.2.12
+ENV PHP_VERSION=8.2.13
 # Wed, 14 Jun 2023 17:25:34 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.2.12.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.12.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.2.13.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.13.tar.xz.asc
 # Wed, 14 Jun 2023 17:25:34 GMT
-ENV PHP_SHA256=e1526e400bce9f9f9f774603cfac6b72b5e8f89fa66971ebc3cc4e5964083132
+ENV PHP_SHA256=2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b
 # Wed, 14 Jun 2023 17:25:34 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 # Wed, 14 Jun 2023 17:25:34 GMT
@@ -1358,63 +1358,63 @@ RUN set -eux; 	curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_
 		Last Modified: Tue, 21 Nov 2023 12:27:31 GMT  
 		Size: 510.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bec6d616f83a8965ebacd78e40ec4ddfc93606b8411079084866002b9d415672`  
-		Last Modified: Tue, 21 Nov 2023 12:31:36 GMT  
-		Size: 12.4 MB (12390304 bytes)  
+	-	`sha256:228fe58008a0c3c744edea7613d7e77a9a7630876035c2f706d995ba2cedc603`  
+		Last Modified: Mon, 27 Nov 2023 23:30:30 GMT  
+		Size: 12.4 MB (12409828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89e3424fc0f9e560763341ac212d14220b9a8eb841c727623d9760716f80f534`  
-		Last Modified: Tue, 21 Nov 2023 12:31:34 GMT  
-		Size: 491.0 B  
+	-	`sha256:c8c54eb319e7a448538a6096a05bf7f80f407dca7a997e82a94a18ac08f33bc2`  
+		Last Modified: Mon, 27 Nov 2023 23:30:28 GMT  
+		Size: 494.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c81906ea734b42d0ba02e8f4c5683eb43f47304be3b57f6e9e47c90750358215`  
-		Last Modified: Tue, 21 Nov 2023 12:31:36 GMT  
-		Size: 10.5 MB (10488386 bytes)  
+	-	`sha256:53c19d0799c528d0233522c8d691841361efdf0e1832ccb89a78777179bc8aab`  
+		Last Modified: Mon, 27 Nov 2023 23:30:30 GMT  
+		Size: 10.5 MB (10490388 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6be8ba581835385244e9d143220f51c65d1ad0384dfabf04a8d04c67ecaf412`  
-		Last Modified: Tue, 21 Nov 2023 12:31:34 GMT  
-		Size: 2.5 KB (2456 bytes)  
+	-	`sha256:166b29965873ebab84211928167bb3960e0927ba682d59a8a0b43eb7b8fd3092`  
+		Last Modified: Mon, 27 Nov 2023 23:30:28 GMT  
+		Size: 2.5 KB (2459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77c5dd7168f3d3406bc3f7a2f1888ca67f4c8fe390ea8812b21998a8d82387ce`  
-		Last Modified: Tue, 21 Nov 2023 12:31:34 GMT  
-		Size: 245.0 B  
+	-	`sha256:66370c902ee2c86073bf4bd0679264f4ac69af47a4d85293498544701251bc94`  
+		Last Modified: Mon, 27 Nov 2023 23:30:28 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6eb57db247f929b3341d253f6e2a40fc7589d4e0d441d4bb1989907a7c288e23`  
-		Last Modified: Tue, 21 Nov 2023 12:31:34 GMT  
-		Size: 893.0 B  
+	-	`sha256:76133ffb1907d8b37531c1fac3b85df6000b89ece27bfb6ce53e829e9b5ae69d`  
+		Last Modified: Mon, 27 Nov 2023 23:30:28 GMT  
+		Size: 895.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c877354a7d4f56edf692fa032383f816da3b508e7e0164270b2283d630b92a6`  
-		Last Modified: Tue, 21 Nov 2023 20:31:12 GMT  
-		Size: 1.5 MB (1522234 bytes)  
+	-	`sha256:4cba24d178373c535aafac241b938c4c578ce64b82e6cb8c1cc670f91f5ab8a5`  
+		Last Modified: Tue, 28 Nov 2023 01:50:45 GMT  
+		Size: 1.5 MB (1522168 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a518cd4d5c7744bcd8d54f65948df2f94bbebeb030fa8c93653ed7efa930865f`  
-		Last Modified: Tue, 21 Nov 2023 20:31:12 GMT  
-		Size: 313.0 B  
+	-	`sha256:b5160c737d647d989f35c6ff79ddf1e4e566dcdca4be6830764b202a01d22226`  
+		Last Modified: Tue, 28 Nov 2023 01:50:46 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:715f2d0f77b239e13067ecacb925169574f848b8f9fcfd1492d51c278680dcaa`  
-		Last Modified: Tue, 21 Nov 2023 20:55:10 GMT  
-		Size: 3.4 MB (3410215 bytes)  
+	-	`sha256:d846257d24e8a1cb5e5c259a867b2ad7a77472b2b297984d215e818be5607085`  
+		Last Modified: Tue, 28 Nov 2023 02:28:23 GMT  
+		Size: 3.4 MB (3410221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:7-php8.2-apache-bullseye` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:dd409350eb6dd94388c37c91af98b593f834b2cdb65a8dd3316aa028998cf822
+$ docker pull drupal@sha256:fa6d27f6c0a50511088bbfd11002264ae09d04000156de63e4505a78e6484059
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.8 MB (5795009 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b67be98a447d669bab99f62a4256556449aa9d5a879519e2f7538c78059df42`
+-	Image ID: `sha256:b3bd90883ae1f99db57dfd21aa182ca8cd66f943bde0ab3733f8369cdd360204`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d85ae7c6af118e496fdf686b4bed8677f6f16a1f30ec298676f920eaf1d5eee1`  
-		Last Modified: Tue, 21 Nov 2023 20:55:10 GMT  
+	-	`sha256:46ca7b8a0f99a6b501603f24d7a6dddac98e1a04cc0e9238f328640a2793800a`  
+		Last Modified: Tue, 28 Nov 2023 02:28:23 GMT  
 		Size: 5.8 MB (5770628 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:83cb8d845cdade8341afbf8afdaa91025df6669ac422aa2ed07f56861b7f0a6b`  
-		Last Modified: Tue, 21 Nov 2023 20:55:09 GMT  
+	-	`sha256:18f34c296a69b5f7189b9440e8ac27101bd6901c6840e1ce6e393dc90e3cc314`  
+		Last Modified: Tue, 28 Nov 2023 02:28:23 GMT  
 		Size: 24.4 KB (24381 bytes)  
 		MIME: application/vnd.in-toto+json
