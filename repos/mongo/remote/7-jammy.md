@@ -1,7 +1,7 @@
 ## `mongo:7-jammy`
 
 ```console
-$ docker pull mongo@sha256:a260bb0b2acbff46b984eafb7e801452e93b257bf308dc7175382301a15c3015
+$ docker pull mongo@sha256:3badb3f6c63707647ed499e4603d7539f00fe321cb5e40979637ee00030f869d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull mongo@sha256:a260bb0b2acbff46b984eafb7e801452e93b257bf308dc7175382
 ### `mongo:7-jammy` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:238b1636bdd7820c752b91bec8a669f92568eb313ad89a1fc4a92903c1b40489
+$ docker pull mongo@sha256:8af4b380a9c3852c051b1d7ac95465751c05cf01bf760cd77302bb1eaae80075
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **261.1 MB (261077393 bytes)**  
+-	Total Size: **261.1 MB (261137012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:021b676f1558d3c0000ae5bc21b1193f2de7fe3b16919b97cff760d9373ade82`
+-	Image ID: `sha256:dbfa3f5bb5157c1581cbf9fe814b4de2eb7b971d7e2166f197b68131d6d8a4dc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -60,21 +60,21 @@ ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 ENV MONGO_MAJOR=7.0
 # Fri, 13 Oct 2023 04:46:22 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 15 Nov 2023 05:20:47 GMT
-ENV MONGO_VERSION=7.0.3
-# Wed, 15 Nov 2023 05:21:13 GMT
+# Wed, 29 Nov 2023 01:39:12 GMT
+ENV MONGO_VERSION=7.0.4
+# Wed, 29 Nov 2023 01:39:38 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 15 Nov 2023 05:21:15 GMT
+# Wed, 29 Nov 2023 01:39:38 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 15 Nov 2023 05:21:15 GMT
+# Wed, 29 Nov 2023 01:39:39 GMT
 ENV HOME=/data/db
-# Wed, 15 Nov 2023 05:21:15 GMT
+# Wed, 29 Nov 2023 01:39:39 GMT
 COPY file:8fc8efb4e3db886ece2de8764459b4ab3e639e636ed08b2e828441229b4f8571 in /usr/local/bin/ 
-# Wed, 15 Nov 2023 05:21:15 GMT
+# Wed, 29 Nov 2023 01:39:39 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 15 Nov 2023 05:21:15 GMT
+# Wed, 29 Nov 2023 01:39:39 GMT
 EXPOSE 27017
-# Wed, 15 Nov 2023 05:21:15 GMT
+# Wed, 29 Nov 2023 01:39:39 GMT
 CMD ["mongod"]
 ```
 
@@ -107,13 +107,13 @@ CMD ["mongod"]
 		Last Modified: Fri, 13 Oct 2023 04:49:39 GMT  
 		Size: 264.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74c3fb6d33e0d3552c64f0369b43a5459d9afa45d57adaec11a919809a0c6ee1`  
-		Last Modified: Wed, 15 Nov 2023 05:24:51 GMT  
-		Size: 224.3 MB (224326213 bytes)  
+	-	`sha256:470e2750512f37cac02aac0b8c6346700c9000d66c849c17f63067be7ff9651b`  
+		Last Modified: Wed, 29 Nov 2023 01:42:10 GMT  
+		Size: 224.4 MB (224385836 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:adfd395e3ac5ef9e7ad6e42d7e4d603531282c6f1afc3cff39ba5d182560aefd`  
-		Last Modified: Wed, 15 Nov 2023 05:24:25 GMT  
-		Size: 5.0 KB (5002 bytes)  
+	-	`sha256:debd7eab1f4f4f0574e3ebc0bb5c5517b8cbca5ec93383a28a17e3aad1b2e0bc`  
+		Last Modified: Wed, 29 Nov 2023 01:41:41 GMT  
+		Size: 5.0 KB (4998 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:7-jammy` - linux; arm64 variant v8
