@@ -1,7 +1,7 @@
 ## `gradle:8-jdk17-focal`
 
 ```console
-$ docker pull gradle@sha256:4db3d18a6456cd595b03a6cf4e7505a34709a8ae3006fabe5bf04a00b9d8f6ed
+$ docker pull gradle@sha256:711ac839b94e63adf7959bfab50bd0647489fa7c9e34c8deb4ca8c42e2b496cc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -128,14 +128,14 @@ USER root
 ### `gradle:8-jdk17-focal` - linux; arm variant v7
 
 ```console
-$ docker pull gradle@sha256:4e611a665f55cd46399577c4b984d286c9ffc2a2a83910b0d5f8e3aa394c6e43
+$ docker pull gradle@sha256:7bd914d3ccd3f650847c1e844e5d4526d809c2cef56a874478f0028cee77b2c0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **378.0 MB (377959637 bytes)**  
+-	Total Size: **379.5 MB (379494620 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:668896863c81854cf48811823199d8a7ec066c6175ebca3c3c92b2434c3a8fd2`
+-	Image ID: `sha256:b7b9e52a26aed02c5ca4918e67ffd09ca5b268fc70b78aacd3b7d3c34efe6a06`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
@@ -184,19 +184,19 @@ VOLUME [/home/gradle/.gradle]
 WORKDIR /home/gradle
 # Tue, 31 Oct 2023 00:10:55 GMT
 RUN set -o errexit -o nounset     && apt-get update     && apt-get install --yes --no-install-recommends         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm --recursive --force /var/lib/apt/lists/*         && echo "Testing VCSes"     && which bzr     && which git     && which git-lfs     && which hg     && which svn
-# Tue, 31 Oct 2023 00:10:56 GMT
-ENV GRADLE_VERSION=8.4
-# Tue, 31 Oct 2023 00:10:56 GMT
-ARG GRADLE_DOWNLOAD_SHA256=3e1af3ae886920c3ac87f7a91f816c0c7c436f276a6eefdb3da152100fef72ae
-# Tue, 31 Oct 2023 00:11:01 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=3e1af3ae886920c3ac87f7a91f816c0c7c436f276a6eefdb3da152100fef72ae
+# Wed, 29 Nov 2023 22:58:11 GMT
+ENV GRADLE_VERSION=8.5
+# Wed, 29 Nov 2023 22:58:11 GMT
+ARG GRADLE_DOWNLOAD_SHA256=9d926787066a081739e8200858338b4a69e837c3a821a33aca9db09dd4a41026
+# Wed, 29 Nov 2023 22:58:16 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=9d926787066a081739e8200858338b4a69e837c3a821a33aca9db09dd4a41026
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking Gradle download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle
-# Tue, 31 Oct 2023 00:11:02 GMT
+# Wed, 29 Nov 2023 22:58:17 GMT
 USER gradle
-# Tue, 31 Oct 2023 00:11:03 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=3e1af3ae886920c3ac87f7a91f816c0c7c436f276a6eefdb3da152100fef72ae
+# Wed, 29 Nov 2023 22:58:18 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=9d926787066a081739e8200858338b4a69e837c3a821a33aca9db09dd4a41026
 RUN set -o errexit -o nounset     && echo "Testing Gradle installation"     && gradle --version
-# Tue, 31 Oct 2023 00:11:03 GMT
+# Wed, 29 Nov 2023 22:58:18 GMT
 USER root
 ```
 
@@ -229,13 +229,13 @@ USER root
 		Last Modified: Tue, 31 Oct 2023 00:16:10 GMT  
 		Size: 60.1 MB (60097724 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae17e3b6bf19dea722f586cda6766cfe136fb23c5d8db11fbc7871fee49a8b4b`  
-		Last Modified: Tue, 31 Oct 2023 00:16:08 GMT  
-		Size: 131.0 MB (131009739 bytes)  
+	-	`sha256:c18231d53ed0ef4e43993119e9268b18438bb0501a0e92063228e3b29d753e7b`  
+		Last Modified: Wed, 29 Nov 2023 23:02:46 GMT  
+		Size: 132.5 MB (132544721 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44270e9a74eb140707a24aabfc448d242a83e1e0c03cf7452047bbff51ff6bd6`  
-		Last Modified: Tue, 31 Oct 2023 00:15:56 GMT  
-		Size: 170.0 B  
+	-	`sha256:7715a30c526dc3ec3c1dd383d6446e2570ba5bb3e93bb04c19ab6b60cdb1792f`  
+		Last Modified: Wed, 29 Nov 2023 23:02:38 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:8-jdk17-focal` - linux; arm64 variant v8
@@ -354,14 +354,14 @@ USER root
 ### `gradle:8-jdk17-focal` - linux; ppc64le
 
 ```console
-$ docker pull gradle@sha256:8272050565cbd3411d56c7d9e438255c0aef4c39a9eec43b1f43cc59f0cf466e
+$ docker pull gradle@sha256:63148bce598fe9f74a1dda3e97964387a985b2e25f5283a5b88bc1c47c6d7132
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **405.5 MB (405475392 bytes)**  
+-	Total Size: **407.0 MB (407010346 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aac9bb773f2a941b9ca07f35164866d3f1fed0cb8eaeb9b1e1f0c8112bf662cb`
+-	Image ID: `sha256:21703a4d1802f0a885178df63b39e6dadec759edff2e8bd15bee1e376e99e789`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
@@ -410,19 +410,19 @@ VOLUME [/home/gradle/.gradle]
 WORKDIR /home/gradle
 # Tue, 31 Oct 2023 00:47:23 GMT
 RUN set -o errexit -o nounset     && apt-get update     && apt-get install --yes --no-install-recommends         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm --recursive --force /var/lib/apt/lists/*         && echo "Testing VCSes"     && which bzr     && which git     && which git-lfs     && which hg     && which svn
-# Tue, 31 Oct 2023 00:47:26 GMT
-ENV GRADLE_VERSION=8.4
-# Tue, 31 Oct 2023 00:47:26 GMT
-ARG GRADLE_DOWNLOAD_SHA256=3e1af3ae886920c3ac87f7a91f816c0c7c436f276a6eefdb3da152100fef72ae
-# Tue, 31 Oct 2023 00:47:33 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=3e1af3ae886920c3ac87f7a91f816c0c7c436f276a6eefdb3da152100fef72ae
+# Wed, 29 Nov 2023 23:25:52 GMT
+ENV GRADLE_VERSION=8.5
+# Wed, 29 Nov 2023 23:25:52 GMT
+ARG GRADLE_DOWNLOAD_SHA256=9d926787066a081739e8200858338b4a69e837c3a821a33aca9db09dd4a41026
+# Wed, 29 Nov 2023 23:25:59 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=9d926787066a081739e8200858338b4a69e837c3a821a33aca9db09dd4a41026
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking Gradle download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle
-# Tue, 31 Oct 2023 00:47:34 GMT
+# Wed, 29 Nov 2023 23:26:01 GMT
 USER gradle
-# Tue, 31 Oct 2023 00:47:36 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=3e1af3ae886920c3ac87f7a91f816c0c7c436f276a6eefdb3da152100fef72ae
+# Wed, 29 Nov 2023 23:26:03 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=9d926787066a081739e8200858338b4a69e837c3a821a33aca9db09dd4a41026
 RUN set -o errexit -o nounset     && echo "Testing Gradle installation"     && gradle --version
-# Tue, 31 Oct 2023 00:47:36 GMT
+# Wed, 29 Nov 2023 23:26:03 GMT
 USER root
 ```
 
@@ -455,13 +455,13 @@ USER root
 		Last Modified: Tue, 31 Oct 2023 00:53:11 GMT  
 		Size: 73.8 MB (73839642 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:faaeffca4fa49ef6de55ae4dfe84ae1a6dc85cbe8be11606f522f9d9e66c9fc8`  
-		Last Modified: Tue, 31 Oct 2023 00:53:03 GMT  
-		Size: 131.0 MB (131009727 bytes)  
+	-	`sha256:a677030ad137814abca0e861f7663edca08dd353b5979fa3d8ff8dae0ef5172b`  
+		Last Modified: Wed, 29 Nov 2023 23:30:40 GMT  
+		Size: 132.5 MB (132544683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4f401d81723d825687a5ba851fc303b7c4e6214225da49972bf448883b43db8`  
-		Last Modified: Tue, 31 Oct 2023 00:52:55 GMT  
-		Size: 172.0 B  
+	-	`sha256:0c172bcb32cf72959a8cf1be67fb79d69132286047e16286625c455b211d68c6`  
+		Last Modified: Wed, 29 Nov 2023 23:30:32 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:8-jdk17-focal` - linux; s390x
