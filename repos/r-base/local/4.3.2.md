@@ -62,9 +62,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=2.7.6
-'http://http.debian.net/debian/pool/main/a/apt/apt_2.7.6.dsc' apt_2.7.6.dsc 2945 SHA256:bdc573f2113e70fb648a819437d36b14427d492695460811f74214f174caf7fe
-'http://http.debian.net/debian/pool/main/a/apt/apt_2.7.6.tar.xz' apt_2.7.6.tar.xz 2345736 SHA256:8683f54eff0bf54e51e025b348bd0774d0fd437799616f48512956cf15c05f67
+'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.6.dsc' apt_2.7.6.dsc 2945 SHA256:bdc573f2113e70fb648a819437d36b14427d492695460811f74214f174caf7fe
+'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.6.tar.xz' apt_2.7.6.tar.xz 2345736 SHA256:8683f54eff0bf54e51e025b348bd0774d0fd437799616f48512956cf15c05f67
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/apt/2.7.6/ (for browsing the source)
+- https://sources.debian.net/src/apt/2.7.6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/2.7.6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.1-4`
 
@@ -172,10 +178,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bash=5.2.15-2
-'http://http.debian.net/debian/pool/main/b/bash/bash_5.2.15-2.dsc' bash_5.2.15-2.dsc 2317 SHA256:f51753e946af43eb58549c81e03b35a47af9fe6c6364179ccd4ef862b7c3b2d3
-'http://http.debian.net/debian/pool/main/b/bash/bash_5.2.15.orig.tar.gz' bash_5.2.15.orig.tar.gz 9997221 SHA256:7a315bc0e9d90713159e4390ec1096a41e4f33cd8cc3d1a749a8e5ad56600f51
-'http://http.debian.net/debian/pool/main/b/bash/bash_5.2.15-2.debian.tar.xz' bash_5.2.15-2.debian.tar.xz 97380 SHA256:998f8ea5b754a734ae7d8306e149c43d713ddfcf49623a036004b729237dbcca
+'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.15-2.dsc' bash_5.2.15-2.dsc 2317 SHA256:f51753e946af43eb58549c81e03b35a47af9fe6c6364179ccd4ef862b7c3b2d3
+'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.15.orig.tar.gz' bash_5.2.15.orig.tar.gz 9997221 SHA256:7a315bc0e9d90713159e4390ec1096a41e4f33cd8cc3d1a749a8e5ad56600f51
+'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.15-2.debian.tar.xz' bash_5.2.15-2.debian.tar.xz 97380 SHA256:998f8ea5b754a734ae7d8306e149c43d713ddfcf49623a036004b729237dbcca
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/bash/5.2.15-2/ (for browsing the source)
+- https://sources.debian.net/src/bash/5.2.15-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/bash/5.2.15-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `binutils=2.41-6`
 
@@ -234,14 +246,13 @@ Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris brotli=1.0.9-2
-'http://http.debian.net/debian/pool/main/b/brotli/brotli_1.0.9-2.dsc' brotli_1.0.9-2.dsc 2261 SHA256:8c4c86748ec9770e08b60233d658593650444b04a452dc5b607ed5b5537b683e
-'http://http.debian.net/debian/pool/main/b/brotli/brotli_1.0.9.orig.tar.gz' brotli_1.0.9.orig.tar.gz 486984 SHA256:f9e8d81d0405ba66d181529af42a3354f838c939095ff99930da6aa9cdf6fe46
-'http://http.debian.net/debian/pool/main/b/brotli/brotli_1.0.9-2.debian.tar.xz' brotli_1.0.9-2.debian.tar.xz 5552 SHA256:ab81b1db852c8d01e0fa5b0b650bb486f32a232b35336828423af50af6fecca0
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/brotli/1.0.9-2/
+
 
 ### `dpkg` source package: `build-essential=12.10`
 
@@ -2544,15 +2555,13 @@ Licenses: (parsed from: `/usr/share/doc/libncurses-dev/copyright`, `/usr/share/d
 - `MIT/X11`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.4+20231016-1
-'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.4%2b20231016-1.dsc' ncurses_6.4+20231016-1.dsc 3807 SHA256:d8f896d72cbc71450664cde520bc444a91f5526bb8b24a5abadde403f87e1331
-'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.4%2b20231016.orig.tar.gz' ncurses_6.4+20231016.orig.tar.gz 3666201 SHA256:07c48ace643c96d444dece3f3a221dace65d3a91f6374651b815cc66b88829e8
-'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.4%2b20231016.orig.tar.gz.asc' ncurses_6.4+20231016.orig.tar.gz.asc 729 SHA256:50955e77e6e3553812de25b9494e411a71b8abaad7345e1b9f49fb64ba3ee9de
-'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.4%2b20231016-1.debian.tar.xz' ncurses_6.4+20231016-1.debian.tar.xz 48800 SHA256:5faa024afc6c1c298b445b96c6af13eebdfba207873229f11804acc5158cbd04
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/ncurses/6.4+20231016-1/
+
 
 ### `dpkg` source package: `nettle=3.9.1-2`
 
@@ -2643,14 +2652,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenblas0-pthread/copyright`)
 - `BSD-3-clause`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openblas=0.3.24+ds-1
-'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.24%2bds-1.dsc' openblas_0.3.24+ds-1.dsc 4563 SHA256:5da5bdd711a1f613abdbff238cec5e3a43b029978f7b33ef6db96f53dadbdbc7
-'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.24%2bds.orig.tar.xz' openblas_0.3.24+ds.orig.tar.xz 1948940 SHA256:87879ced40f846df73774329cfee18d30ae8f8fd2bb7a67d71d0a11fb474c844
-'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.24%2bds-1.debian.tar.xz' openblas_0.3.24+ds-1.debian.tar.xz 24820 SHA256:3f5fcee3804edfabeac22d78172ef271ad01d10cd2969f0a0874c31de461c357
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/openblas/0.3.24+ds-1/
+
 
 ### `dpkg` source package: `openldap=2.5.13+dfsg-5`
 
@@ -3465,11 +3473,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tzdata=2023c-10
-'http://http.debian.net/debian/pool/main/t/tzdata/tzdata_2023c-10.dsc' tzdata_2023c-10.dsc 2259 SHA256:534f36efe6ec80a8dafb2a779a88d8c2f033befb794cbb168747269a0095f388
-'http://http.debian.net/debian/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz' tzdata_2023c.orig.tar.gz 443902 SHA256:3f510b5d1b4ae9bb38e485aa302a776b317fb3637bdb6404c4adf7b6cadd965c
-'http://http.debian.net/debian/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz.asc' tzdata_2023c.orig.tar.gz.asc 833 SHA256:d5ec7b6ceddc46aa137c0ef85fa5c87445509d7997c067ee0fd2e2a23f833557
-'http://http.debian.net/debian/pool/main/t/tzdata/tzdata_2023c-10.debian.tar.xz' tzdata_2023c-10.debian.tar.xz 121516 SHA256:5e82cd0a328f665b95c5456a024164f255b12b460c5b1c6f10702cba155f75f7
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2023c-10.dsc' tzdata_2023c-10.dsc 2259 SHA256:534f36efe6ec80a8dafb2a779a88d8c2f033befb794cbb168747269a0095f388
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz' tzdata_2023c.orig.tar.gz 443902 SHA256:3f510b5d1b4ae9bb38e485aa302a776b317fb3637bdb6404c4adf7b6cadd965c
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz.asc' tzdata_2023c.orig.tar.gz.asc 833 SHA256:d5ec7b6ceddc46aa137c0ef85fa5c87445509d7997c067ee0fd2e2a23f833557
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2023c-10.debian.tar.xz' tzdata_2023c-10.debian.tar.xz 121516 SHA256:5e82cd0a328f665b95c5456a024164f255b12b460c5b1c6f10702cba155f75f7
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/tzdata/2023c-10/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2023c-10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2023c-10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0043+nmu1`
 
