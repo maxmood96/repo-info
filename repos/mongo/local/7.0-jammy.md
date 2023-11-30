@@ -1,10 +1,10 @@
-# `mongo:7.0.3-jammy`
+# `mongo:7.0.4-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:021b676f1558d3c0000ae5bc21b1193f2de7fe3b16919b97cff760d9373ade82`
-- Created: `2023-11-15T05:21:15.780154009Z`
-- Virtual Size: ~ 757.12 Mb  
+- Image ID: `sha256:dbfa3f5bb5157c1581cbf9fe814b4de2eb7b971d7e2166f197b68131d6d8a4dc`
+- Created: `2023-11-29T01:39:39.398327809Z`
+- Virtual Size: ~ 757.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=7.0`
-  - `MONGO_VERSION=7.0.3`
+  - `MONGO_VERSION=7.0.4`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -1337,11 +1337,11 @@ $ apt-get source -qq --print-uris mawk=1.3.4.20200120-3
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20200120-3.debian.tar.xz' mawk_1.3.4.20200120-3.debian.tar.xz 7520 SHA512:bc4f5401de313108595ba91b17f44b5c67d7650b5557eef8a6c63c75e2ccee5dfd8900576d7e81f0ab1ac2e570f64fa75f38f56f6d4535437c803029216501af
 ```
 
-### `dpkg` source package: `mongodb-database-tools=100.9.1`
+### `dpkg` source package: `mongodb-database-tools=100.9.3`
 
 Binary Packages:
 
-- `mongodb-database-tools=100.9.1`
+- `mongodb-database-tools=100.9.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1351,11 +1351,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-mongosh=2.0.2`
+### `dpkg` source package: `mongodb-mongosh=2.1.0`
 
 Binary Packages:
 
-- `mongodb-mongosh=2.0.2`
+- `mongodb-mongosh=2.1.0`
 
 Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 
@@ -1366,17 +1366,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=7.0.3`
+### `dpkg` source package: `mongodb-org=7.0.4`
 
 Binary Packages:
 
-- `mongodb-org=7.0.3`
-- `mongodb-org-database=7.0.3`
-- `mongodb-org-database-tools-extra=7.0.3`
-- `mongodb-org-mongos=7.0.3`
-- `mongodb-org-server=7.0.3`
-- `mongodb-org-shell=7.0.3`
-- `mongodb-org-tools=7.0.3`
+- `mongodb-org=7.0.4`
+- `mongodb-org-database=7.0.4`
+- `mongodb-org-database-tools-extra=7.0.4`
+- `mongodb-org-mongos=7.0.4`
+- `mongodb-org-server=7.0.4`
+- `mongodb-org-shell=7.0.4`
+- `mongodb-org-tools=7.0.4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1443,11 +1443,11 @@ $ apt-get source -qq --print-uris nettle=3.7.3-1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.7.3-1build2.debian.tar.xz' nettle_3.7.3-1build2.debian.tar.xz 22100 SHA512:c1935d35e9f04798273053ab92c7405ec225a5d72ba6c2869b0f2bf54b459ac428e113bc149796e91834a8b56082f8bbfbb906a6cd6787142b8932bd1dd83cec
 ```
 
-### `dpkg` source package: `nghttp2=1.43.0-1build3`
+### `dpkg` source package: `nghttp2=1.43.0-1ubuntu0.1`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.43.0-1build3`
+- `libnghttp2-14:amd64=1.43.0-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -1462,10 +1462,10 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nghttp2=1.43.0-1build3
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1build3.dsc' nghttp2_1.43.0-1build3.dsc 2655 SHA512:9bc6ee4bf6949d480cf6782eb6d0f27159d0c74a64e3fbbb3173f2053777591fd43951776714e9a0dd5ca633c5cf3e195688ab970a2a6a97ccb47eba44bb18f7
+$ apt-get source -qq --print-uris nghttp2=1.43.0-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.1.dsc' nghttp2_1.43.0-1ubuntu0.1.dsc 2638 SHA512:a2b2662cd6976dc6d8c7398ccbf59150893ca34a0c06dc3c4e3aff7297dabebd0142c9db031406b30374425fe782870d8ad032907dbd5f983ff15f7e0d8ee83c
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0.orig.tar.bz2' nghttp2_1.43.0.orig.tar.bz2 4521786 SHA512:f2e6665ad6c73f0a1a8c7b34ca821a905868d41dafca913e6a054eb5afb534a85ae91618c1a4b098e43f350ca3703fd1ece7848f0a771e8393a3eb0581ceaf59
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1build3.debian.tar.xz' nghttp2_1.43.0-1build3.debian.tar.xz 16528 SHA512:a3c7be43142e4976a395052ff4eba22e4f610c31659eed2b03987c58d0b0ae83335f0593ceeea0f05f5d7db8f56c3c3b3651bd92fae3a8353b95595179926bd1
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.1.debian.tar.xz' nghttp2_1.43.0-1ubuntu0.1.debian.tar.xz 22312 SHA512:df80f395e566bd3aefb77425446aaa12f5e65dfbd3239eb68219afa6863e96ee79cdb0fc8cd8a6b7ba72a3483963158b3b80fd5a61bbce5efc2fb59573deb7fd
 ```
 
 ### `dpkg` source package: `npth=1.6-3build2`
@@ -1669,15 +1669,9 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.2.dsc' perl_5.34.0-3ubuntu1.2.dsc 2680 SHA512:131b69ef0a8a3135a801330858876af2de664d8565491f09246c362258f786d8720c815a95cb7333567ff8d7f911f822b0e3b3045b99008de0625981f5cf15e4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig-regen-configure.tar.xz' perl_5.34.0.orig-regen-configure.tar.xz 415412 SHA512:2581152e0747105314c4fa4167f1f97d286436b996341b9b75e4099ba18f15eb0d2b42888622fbe9b5499d3fe304bc8aa9ad207a945f590135beccfb68ea28b0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig.tar.xz' perl_5.34.0.orig.tar.xz 12881416 SHA512:691b4b31eacec357191fba777612b4e3eae59e946a22998a50766697c0d61db1d42a9b3bc1e41abf0d1ca1893e4a7c06d7bf3290480cf03d7f79befd7a8a3267
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.2.debian.tar.xz' perl_5.34.0-3ubuntu1.2.debian.tar.xz 192372 SHA512:bbe3da1c08d92640bb3877babc77ca0a012614acba47cb9bff1e4bd3d439f571848a655789ac157944e90b5b0df1c2a3b78c41480e2e796ea0c7b14647edcf5b
-```
 
 ### `dpkg` source package: `pinentry=1.1.1-1build2`
 

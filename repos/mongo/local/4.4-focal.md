@@ -1,10 +1,10 @@
-# `mongo:4.4.25-focal`
+# `mongo:4.4.26-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e772806c1f735046c1d1ed84d30d35ee376da5ef5dbf2cc1038be3f06e2a7111`
-- Created: `2023-10-13T04:49:14.095951238Z`
-- Virtual Size: ~ 431.98 Mb  
+- Image ID: `sha256:cb6194a8ba745ce101936c8d6bbcc37f86c48bb03b7c4640010a989b7698121b`
+- Created: `2023-11-29T01:41:15.037105089Z`
+- Virtual Size: ~ 434.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=4.4`
-  - `MONGO_VERSION=4.4.25`
+  - `MONGO_VERSION=4.4.26`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -778,23 +778,28 @@ $ apt-get source -qq --print-uris keyutils=1.6-6ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6-6ubuntu1.1.debian.tar.xz' keyutils_1.6-6ubuntu1.1.debian.tar.xz 14556 SHA512:300ed4c9626de95616a7c799f14d4f8bf7dc0b765d1751d3c9d60f86b7c60801bfbb97bf26c5d0ab39e5e41d5f3021ca870748f9555433b0e6c4ba261f475c3b
 ```
 
-### `dpkg` source package: `krb5=1.17-6ubuntu4.3`
+### `dpkg` source package: `krb5=1.17-6ubuntu4.4`
 
 Binary Packages:
 
-- `krb5-locales=1.17-6ubuntu4.3`
-- `libgssapi-krb5-2:amd64=1.17-6ubuntu4.3`
-- `libk5crypto3:amd64=1.17-6ubuntu4.3`
-- `libkrb5-3:amd64=1.17-6ubuntu4.3`
-- `libkrb5support0:amd64=1.17-6ubuntu4.3`
+- `krb5-locales=1.17-6ubuntu4.4`
+- `libgssapi-krb5-2:amd64=1.17-6ubuntu4.4`
+- `libk5crypto3:amd64=1.17-6ubuntu4.4`
+- `libkrb5-3:amd64=1.17-6ubuntu4.4`
+- `libkrb5support0:amd64=1.17-6ubuntu4.4`
 
 Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris krb5=1.17-6ubuntu4.4
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.4.dsc' krb5_1.17-6ubuntu4.4.dsc 3341 SHA512:3025110b3e95a604b617ac56d74ce082949dc11a65db3cd3b369b0a71cf7df6292040a239dd2e366a560aafc159254253377df10dc8ff181e4d46b6a4855c195
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA512:7462a578b936bd17f155a362dbb5d388e157a80a096549028be6c55400b11361c7f8a28e424fd5674801873651df4e694d536cae66728b7ae5e840e532358c52
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.4.debian.tar.xz' krb5_1.17-6ubuntu4.4.debian.tar.xz 148892 SHA512:0a54e9708aeeca0cddbdf71c3f5238399e03720d205462d1a633b85932a4e7b66a31230b906e6af2b4042608a6b1c25d80e7a56769ac4179d2931562d2d06488
+```
 
 ### `dpkg` source package: `libassuan=2.5.3-7ubuntu2`
 
@@ -1255,11 +1260,11 @@ $ apt-get source -qq --print-uris mawk=1.3.4.20200120-2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20200120-2.debian.tar.xz' mawk_1.3.4.20200120-2.debian.tar.xz 7504 SHA256:b772ed2f016b0286980c46cbc1f1f4ae62887ef2aa3dff6ef10cae638f923f26
 ```
 
-### `dpkg` source package: `mongodb-database-tools=100.8.0`
+### `dpkg` source package: `mongodb-database-tools=100.9.3`
 
 Binary Packages:
 
-- `mongodb-database-tools=100.8.0`
+- `mongodb-database-tools=100.9.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1269,16 +1274,16 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=4.4.25`
+### `dpkg` source package: `mongodb-org=4.4.26`
 
 Binary Packages:
 
-- `mongodb-org=4.4.25`
-- `mongodb-org-database-tools-extra=4.4.25`
-- `mongodb-org-mongos=4.4.25`
-- `mongodb-org-server=4.4.25`
-- `mongodb-org-shell=4.4.25`
-- `mongodb-org-tools=4.4.25`
+- `mongodb-org=4.4.26`
+- `mongodb-org-database-tools-extra=4.4.26`
+- `mongodb-org-mongos=4.4.26`
+- `mongodb-org-server=4.4.26`
+- `mongodb-org-shell=4.4.26`
+- `mongodb-org-tools=4.4.26`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1342,11 +1347,11 @@ $ apt-get source -qq --print-uris nettle=3.5.1+really3.5.1-2ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.5.1%2breally3.5.1-2ubuntu0.2.debian.tar.xz' nettle_3.5.1+really3.5.1-2ubuntu0.2.debian.tar.xz 27228 SHA512:389c303e679b6b6714f824f22bc8675c1ea4bdab0108b69e9514613109573d01592e3f80bf9a144866a159a9a09fa0f3218d62b9f6978bdfe5e95a18bcfe3a88
 ```
 
-### `dpkg` source package: `nghttp2=1.40.0-1ubuntu0.1`
+### `dpkg` source package: `nghttp2=1.40.0-1ubuntu0.2`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.40.0-1ubuntu0.1`
+- `libnghttp2-14:amd64=1.40.0-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -1358,9 +1363,14 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nghttp2=1.40.0-1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0-1ubuntu0.2.dsc' nghttp2_1.40.0-1ubuntu0.2.dsc 2638 SHA512:16436ee7a8ab43139ae6b8fccd4a9ac32865e6bd648975387a979283673cfc1b69231eeedde27baf39abb05df2b027382505180e4923e4f9ac74ca828455930e
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0.orig.tar.bz2' nghttp2_1.40.0.orig.tar.bz2 1937537 SHA512:bc3f6dd8ccc3c6891b61206eeb2a74019b2559b4d75409e022c1a9ad0745d50cf8db7ca8e076993ab04a17f87455dc38159bf085bd844366dac82506e44656a0
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0-1ubuntu0.2.debian.tar.xz' nghttp2_1.40.0-1ubuntu0.2.debian.tar.xz 21060 SHA512:9ffb12f3e1e997c7824b3eb994d3789b69332d8f288f72ec0d09b705422373454844653d3aa79b29844a6e4c41890f0716112b63e3f6cce2c1f81adea35782f5
+```
 
 ### `dpkg` source package: `npth=1.6-1`
 
@@ -1558,15 +1568,9 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.30.0-9ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.30.0-9ubuntu0.4.dsc' perl_5.30.0-9ubuntu0.4.dsc 2666 SHA512:19cbf56e1988dfea3282a03cb081e046c7478fb46567981a1c9bbe52e6347b9fe422566b45cc8eab1fee63a79aa094eb45cd67580c70fc2715d28c6a7ef54cba
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.30.0.orig-regen-configure.tar.gz' perl_5.30.0.orig-regen-configure.tar.gz 833235 SHA512:ab977887b53249a2423708aa38ecbb8bdbfdb7ba533a795eaa20bac427b2eb326756b076ca11088036550a4db24418903c0565d168fe9641e18077a76d04274a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.30.0.orig.tar.xz' perl_5.30.0.orig.tar.xz 12419868 SHA512:68a295eccd64debd9d6a10f0d5577f872a19ad8c2d702798f6b0f45b8c3af6ab3230768056e2131e9e2e2506d1035b27cfd627c845e32263fe448649c4b98ae9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.30.0-9ubuntu0.4.debian.tar.xz' perl_5.30.0-9ubuntu0.4.debian.tar.xz 170724 SHA512:5c18b9750e8573b95efa9970b9fa73333530568ea5b565ffc0e7440b16313bcd7f564dcc47e1dc8c9cfc362fe1b941d2645b89a4a82d1df950b5dc81e6168a8e
-```
 
 ### `dpkg` source package: `pinentry=1.1.0-3build1`
 
