@@ -1,7 +1,7 @@
 ## `postgres:12-alpine`
 
 ```console
-$ docker pull postgres@sha256:4599f620d3d79e781ec294b2675b68b33a1bfb3827672106a0abd92231e0c1b9
+$ docker pull postgres@sha256:88077d4ff5e67742593a1982341b9c030cd1c3a435b8ea0098347b33703f80a6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23,20 +23,20 @@ $ docker pull postgres@sha256:4599f620d3d79e781ec294b2675b68b33a1bfb3827672106a0
 ### `postgres:12-alpine` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:43eae74ebce812327d2afce330bb87f988e64621e296cd2838b849b902064332
+$ docker pull postgres@sha256:0f09d37b9601b00387055857f0b3b9e6419b268294d58c09571114b7dcf9f95b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **93.0 MB (93011643 bytes)**  
+-	Total Size: **90.5 MB (90535944 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62992b192af038f1fc69cfb894d10f8e7195b078ab4edbf31d01815f862d50a1`
+-	Image ID: `sha256:bd3f8389ec56e3f303b00b87fd3bfb3efda014b682639067b0b9219e6b965ebf`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Thu, 28 Sep 2023 21:19:27 GMT
-ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / 
-# Thu, 28 Sep 2023 21:19:27 GMT
+# Thu, 09 Nov 2023 19:16:09 GMT
+ADD file:fc714080c3bcbbce7ac746a10d7b4355ffa36293a8d435d62cd5359ea8eb8364 in / 
+# Thu, 09 Nov 2023 19:16:09 GMT
 CMD ["/bin/sh"]
 # Thu, 09 Nov 2023 19:16:09 GMT
 RUN set -eux; 	addgroup -g 70 -S postgres; 	adduser -u 70 -S -D -G postgres -H -h /var/lib/postgresql -s /bin/sh postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql # buildkit
@@ -77,61 +77,61 @@ CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:96526aa774ef0126ad0fe9e9a95764c5fc37f409ab9e97021e7b4775d82bf6fa`  
-		Last Modified: Thu, 28 Sep 2023 21:22:06 GMT  
-		Size: 3.4 MB (3401967 bytes)  
+	-	`sha256:c926b61bad3b94ae7351bafd0c184c159ebf0643b085f7ef1d47ecdc7316833c`  
+		Last Modified: Thu, 30 Nov 2023 23:23:28 GMT  
+		Size: 3.4 MB (3402422 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8015a556f5cc164f8c6217953c8ad56ee490540cafc390518f2304a3d0944ec`  
-		Last Modified: Tue, 14 Nov 2023 01:24:42 GMT  
-		Size: 1.3 KB (1264 bytes)  
+	-	`sha256:826c0ef9718545fa69ac26f271e9f86c9b014673dcab62348963253b05e759f2`  
+		Last Modified: Fri, 01 Dec 2023 00:14:39 GMT  
+		Size: 1.3 KB (1260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8f4551f0c1500582136259e488a02e3f36c665589d1720893db8692e5fec51d`  
-		Last Modified: Tue, 14 Nov 2023 01:24:42 GMT  
-		Size: 116.0 B  
+	-	`sha256:ca5f0638945c5b70195a153719380c23d7f5e2811664a885b51a966a2e588491`  
+		Last Modified: Fri, 01 Dec 2023 00:14:39 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:288c6ea92f9f6c2cc4958d92903d0963ad43965f3f32f6f3c2b486dee6a16817`  
-		Last Modified: Tue, 14 Nov 2023 01:24:46 GMT  
-		Size: 89.6 MB (89594529 bytes)  
+	-	`sha256:0bf83f17dd639cf9b12a89db6bd4fb627135399e4dc76b4c53d5378326d7dcba`  
+		Last Modified: Fri, 01 Dec 2023 00:14:42 GMT  
+		Size: 87.1 MB (87118384 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce01af26a7d938e7fd455562612932b54c583d1c32ce7b8f46da61fd3b7f58d6`  
-		Last Modified: Tue, 14 Nov 2023 01:24:42 GMT  
-		Size: 8.7 KB (8685 bytes)  
+	-	`sha256:85f9991116413f0fd9400a7fc58c192cebfbf46ed8f145ae8802857f4377bbcc`  
+		Last Modified: Fri, 01 Dec 2023 00:14:39 GMT  
+		Size: 8.7 KB (8684 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:533a62d4266f74505ccecf3ab44059cfb4db33b40f6dd240db630f8f95756b89`  
-		Last Modified: Tue, 14 Nov 2023 01:24:43 GMT  
-		Size: 129.0 B  
+	-	`sha256:bade5106a8a873baf1d457f396aeb25ce98844f926b5aa9dd3f6e14a1bc79eb8`  
+		Last Modified: Fri, 01 Dec 2023 00:14:40 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:870ede93b1b7f9df51f161f409451a0cce21a00e16590a4255ad0658acb5dbf6`  
-		Last Modified: Tue, 14 Nov 2023 01:24:43 GMT  
+	-	`sha256:5f994c4ac63efb3feca950de9fbd599456d772ad295d45ec62b8e60c8eaab61f`  
+		Last Modified: Fri, 01 Dec 2023 00:14:40 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a907bae459f8e2456827573ad6fbd5d1f0cd3c1747ef3cf81f37957cd5358f3`  
-		Last Modified: Tue, 14 Nov 2023 01:24:44 GMT  
-		Size: 4.8 KB (4784 bytes)  
+	-	`sha256:b9a93f38c74b6f37f766f4be89d3888d65ef5206bfe997fbcbd2fe0c40d794f6`  
+		Last Modified: Fri, 01 Dec 2023 00:14:41 GMT  
+		Size: 4.8 KB (4783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `postgres:12-alpine` - unknown; unknown
 
 ```console
-$ docker pull postgres@sha256:3c48563a9318e834f7ca801398c149f76bc621c85881360d5e879c3fb8cf28fe
+$ docker pull postgres@sha256:6ebcbb61051c7920cd1d1ea1dc19323536dde24232a8a939b9c0af6e742f800d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **841.9 KB (841857 bytes)**  
+-	Total Size: **841.0 KB (840989 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef52d140f1f3c969cbabfeda3cba91aa6231b214f6a8d914a89d0d0d6de271f0`
+-	Image ID: `sha256:939b848bb6743002970a81262893584e773544dd7572ca27707b884c53dd6cea`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f68ecfdd4cecc17356dbdb11fe2dccfcb4937d027692c9b96607ad67e3196a8e`  
-		Last Modified: Tue, 14 Nov 2023 01:24:43 GMT  
-		Size: 806.1 KB (806140 bytes)  
+	-	`sha256:653dcc5f69a20c90f67d27a4972dbea127650a658d31079c464270811254592b`  
+		Last Modified: Fri, 01 Dec 2023 00:14:40 GMT  
+		Size: 805.3 KB (805273 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5e34cda033e920cd5c92553dfa25e603caf1d388d693543335259702b0bdf3c5`  
-		Last Modified: Tue, 14 Nov 2023 01:24:43 GMT  
-		Size: 35.7 KB (35717 bytes)  
+	-	`sha256:e229da7b0c7a331af7acc7ff47b38f134401c23dff84c65d7615288f8f32bb5c`  
+		Last Modified: Fri, 01 Dec 2023 00:14:39 GMT  
+		Size: 35.7 KB (35716 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `postgres:12-alpine` - linux; arm variant v6
