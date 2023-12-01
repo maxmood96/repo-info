@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:811df42e90cef3f10862271f165ff0747201b345ed9e5e5e25efdef97ea4f8bb`
-- Created: `2023-10-21T02:43:39.492940192Z`
-- Virtual Size: ~ 81.37 Mb  
+- Image ID: `sha256:58ca1ed8b5958960ab30ec8486de84820c03bb462570a74e6d3489ec1ffeb24c`
+- Created: `2023-12-01T07:02:59.395070924Z`
+- Virtual Size: ~ 76.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -328,16 +328,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.11-r0 description:
+libcrypto3-3.0.12-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.0.11-r0 webpage:
+libcrypto3-3.0.12-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.11-r0 installed size:
+libcrypto3-3.0.12-r1 installed size:
 4120 KiB
 
-libcrypto3-3.0.11-r0 license:
+libcrypto3-3.0.12-r1 license:
 Apache-2.0
 
 ```
@@ -566,16 +566,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.11-r0 description:
+libssl3-3.0.12-r1 description:
 SSL shared libraries
 
-libssl3-3.0.11-r0 webpage:
+libssl3-3.0.12-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.11-r0 installed size:
+libssl3-3.0.12-r1 installed size:
 608 KiB
 
-libssl3-3.0.11-r0 license:
+libssl3-3.0.12-r1 license:
 Apache-2.0
 
 ```
@@ -617,16 +617,16 @@ BSD-3-Clause
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.8.4-r1 description:
+libx11-1.8.7-r0 description:
 X11 client-side library
 
-libx11-1.8.4-r1 webpage:
+libx11-1.8.7-r0 webpage:
 http://xorg.freedesktop.org/
 
-libx11-1.8.4-r1 installed size:
-3172 KiB
+libx11-1.8.7-r0 installed size:
+3112 KiB
 
-libx11-1.8.4-r1 license:
+libx11-1.8.7-r0 license:
 custom:XFREE86
 
 ```
@@ -974,16 +974,16 @@ BSD-3-Clause
 ### `apk` package: `perl`
 
 ```console
-perl-5.36.0-r2 description:
+perl-5.36.2-r0 description:
 Larry Wall's Practical Extraction and Report Language
 
-perl-5.36.0-r2 webpage:
+perl-5.36.2-r0 webpage:
 https://www.perl.org/
 
-perl-5.36.0-r2 installed size:
-37 MiB
+perl-5.36.2-r0 installed size:
+38 MiB
 
-perl-5.36.0-r2 license:
+perl-5.36.2-r0 license:
 Artistic-Perl OR GPL-1.0-or-later
 
 ```

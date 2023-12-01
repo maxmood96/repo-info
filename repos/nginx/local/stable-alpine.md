@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e6295d4bbc4559ee7ed2e93830f4228a08af4114d7914db140a026f84e69adbb`
-- Created: `2023-10-21T02:43:33.104884536Z`
-- Virtual Size: ~ 45.91 Mb  
+- Image ID: `sha256:bbb1abad84c039801cc6140102d0a481000131699380dec7b332264072e8be07`
+- Created: `2023-12-01T07:02:53.228932431Z`
+- Virtual Size: ~ 41.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -328,16 +328,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.11-r0 description:
+libcrypto3-3.0.12-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.0.11-r0 webpage:
+libcrypto3-3.0.12-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.11-r0 installed size:
+libcrypto3-3.0.12-r1 installed size:
 4120 KiB
 
-libcrypto3-3.0.11-r0 license:
+libcrypto3-3.0.12-r1 license:
 Apache-2.0
 
 ```
@@ -566,16 +566,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.11-r0 description:
+libssl3-3.0.12-r1 description:
 SSL shared libraries
 
-libssl3-3.0.11-r0 webpage:
+libssl3-3.0.12-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.11-r0 installed size:
+libssl3-3.0.12-r1 installed size:
 608 KiB
 
-libssl3-3.0.11-r0 license:
+libssl3-3.0.12-r1 license:
 Apache-2.0
 
 ```
@@ -617,16 +617,16 @@ BSD-3-Clause
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.8.4-r1 description:
+libx11-1.8.7-r0 description:
 X11 client-side library
 
-libx11-1.8.4-r1 webpage:
+libx11-1.8.7-r0 webpage:
 http://xorg.freedesktop.org/
 
-libx11-1.8.4-r1 installed size:
-3172 KiB
+libx11-1.8.7-r0 installed size:
+3112 KiB
 
-libx11-1.8.4-r1 license:
+libx11-1.8.7-r0 license:
 custom:XFREE86
 
 ```
