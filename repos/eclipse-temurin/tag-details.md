@@ -730,7 +730,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:11-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:0f42a9544bb88d43ce43e6668cf52423951099e14761d35779d0175414f0dd06
+$ docker pull eclipse-temurin@sha256:a13fd5efc8a1be0e2040805915702d5d697c56b420f7c93e06fab60272cdea3a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -740,64 +740,64 @@ $ docker pull eclipse-temurin@sha256:0f42a9544bb88d43ce43e6668cf52423951099e1476
 ### `eclipse-temurin:11-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:fd3753e16935cf54faebd41b5e0167c7385d47fe8f5c983c051fe04e0748c895
+$ docker pull eclipse-temurin@sha256:692e5b40f537790221c06ea3414195a1c1ec700022e1da028f5bf101e7b7c577
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.2 MB (153164076 bytes)**  
+-	Total Size: **153.2 MB (153164513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7b582f04be5a8e22a60e8fbaf2e99f641a8f180761c63177d79cac2206fe54f`
+-	Image ID: `sha256:9fe2c7fcde00b3dd2da0e43328047855ce03b95ee7f53f1eefe56a87fc9a2c96`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Thu, 28 Sep 2023 21:19:27 GMT
-ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / 
-# Thu, 28 Sep 2023 21:19:27 GMT
+# Thu, 30 Nov 2023 23:22:52 GMT
+ADD file:fc714080c3bcbbce7ac746a10d7b4355ffa36293a8d435d62cd5359ea8eb8364 in / 
+# Thu, 30 Nov 2023 23:22:52 GMT
 CMD ["/bin/sh"]
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 30 Oct 2023 23:22:37 GMT
+# Fri, 01 Dec 2023 07:11:20 GMT
 RUN set -eux;     apk add --no-cache         bash         fontconfig ttf-dejavu         java-cacerts         libretls zlib         musl-locales musl-locales-lang         tzdata     ;     rm -rf /var/cache/apk/*
-# Mon, 30 Oct 2023 23:22:38 GMT
+# Fri, 01 Dec 2023 07:11:56 GMT
 ENV JAVA_VERSION=jdk-11.0.21+9
-# Mon, 30 Oct 2023 23:22:46 GMT
+# Fri, 01 Dec 2023 07:12:05 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='d5e2235d3707526f7c9ba3f0dc194e60d5dec33eceff2a2dcf9d874464cc0e9e';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.21%2B9/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Mon, 30 Oct 2023 23:22:48 GMT
+# Fri, 01 Dec 2023 07:12:07 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Mon, 30 Oct 2023 23:22:48 GMT
+# Fri, 01 Dec 2023 07:12:07 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Mon, 30 Oct 2023 23:22:48 GMT
+# Fri, 01 Dec 2023 07:12:07 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 30 Oct 2023 23:22:49 GMT
+# Fri, 01 Dec 2023 07:12:08 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:96526aa774ef0126ad0fe9e9a95764c5fc37f409ab9e97021e7b4775d82bf6fa`  
-		Last Modified: Thu, 28 Sep 2023 21:22:06 GMT  
-		Size: 3.4 MB (3401967 bytes)  
+	-	`sha256:c926b61bad3b94ae7351bafd0c184c159ebf0643b085f7ef1d47ecdc7316833c`  
+		Last Modified: Thu, 30 Nov 2023 23:23:28 GMT  
+		Size: 3.4 MB (3402422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b02a3a37ba0a441c23edb967d901e4af5b508796b983fbb71e14ad89db9a9999`  
-		Last Modified: Mon, 30 Oct 2023 23:32:06 GMT  
-		Size: 9.3 MB (9276545 bytes)  
+	-	`sha256:46ce2a3866efc31d675066df134952e4237faaf14332528051e5efca30a21a4a`  
+		Last Modified: Fri, 01 Dec 2023 07:14:41 GMT  
+		Size: 9.3 MB (9276515 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a12e67e82faf020e769d46cccfc7f1620ccb86e04b4576b070512194641eb854`  
-		Last Modified: Mon, 30 Oct 2023 23:32:15 GMT  
-		Size: 140.5 MB (140484655 bytes)  
+	-	`sha256:629c7d34e934cd201a8e75a722510b7ee2941ad0e9fa3f00aad45123b459e506`  
+		Last Modified: Fri, 01 Dec 2023 07:15:27 GMT  
+		Size: 140.5 MB (140484666 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43caa4ccd4f85f364bbf72014cc960dc6fb6703350eceaee77976cf6313c8a55`  
-		Last Modified: Mon, 30 Oct 2023 23:32:04 GMT  
+	-	`sha256:af32732554e58223c82fef201a71a8024d58729978033c9b6c7c8f21f0dbe8c4`  
+		Last Modified: Fri, 01 Dec 2023 07:15:17 GMT  
 		Size: 176.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8800858de447fac23faff681df1122b67d784efb0ee850d3d9551bcb5e9b19f8`  
-		Last Modified: Mon, 30 Oct 2023 23:32:04 GMT  
-		Size: 733.0 B  
+	-	`sha256:03ff009245964d87749ff002f164205f495cf779e600805d759bcbb573dfb22f`  
+		Last Modified: Fri, 01 Dec 2023 07:15:17 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eclipse-temurin:11-centos7`
@@ -2241,7 +2241,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:11-jdk-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:0f42a9544bb88d43ce43e6668cf52423951099e14761d35779d0175414f0dd06
+$ docker pull eclipse-temurin@sha256:a13fd5efc8a1be0e2040805915702d5d697c56b420f7c93e06fab60272cdea3a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2251,64 +2251,64 @@ $ docker pull eclipse-temurin@sha256:0f42a9544bb88d43ce43e6668cf52423951099e1476
 ### `eclipse-temurin:11-jdk-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:fd3753e16935cf54faebd41b5e0167c7385d47fe8f5c983c051fe04e0748c895
+$ docker pull eclipse-temurin@sha256:692e5b40f537790221c06ea3414195a1c1ec700022e1da028f5bf101e7b7c577
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.2 MB (153164076 bytes)**  
+-	Total Size: **153.2 MB (153164513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7b582f04be5a8e22a60e8fbaf2e99f641a8f180761c63177d79cac2206fe54f`
+-	Image ID: `sha256:9fe2c7fcde00b3dd2da0e43328047855ce03b95ee7f53f1eefe56a87fc9a2c96`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Thu, 28 Sep 2023 21:19:27 GMT
-ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / 
-# Thu, 28 Sep 2023 21:19:27 GMT
+# Thu, 30 Nov 2023 23:22:52 GMT
+ADD file:fc714080c3bcbbce7ac746a10d7b4355ffa36293a8d435d62cd5359ea8eb8364 in / 
+# Thu, 30 Nov 2023 23:22:52 GMT
 CMD ["/bin/sh"]
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 30 Oct 2023 23:22:37 GMT
+# Fri, 01 Dec 2023 07:11:20 GMT
 RUN set -eux;     apk add --no-cache         bash         fontconfig ttf-dejavu         java-cacerts         libretls zlib         musl-locales musl-locales-lang         tzdata     ;     rm -rf /var/cache/apk/*
-# Mon, 30 Oct 2023 23:22:38 GMT
+# Fri, 01 Dec 2023 07:11:56 GMT
 ENV JAVA_VERSION=jdk-11.0.21+9
-# Mon, 30 Oct 2023 23:22:46 GMT
+# Fri, 01 Dec 2023 07:12:05 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='d5e2235d3707526f7c9ba3f0dc194e60d5dec33eceff2a2dcf9d874464cc0e9e';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.21%2B9/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Mon, 30 Oct 2023 23:22:48 GMT
+# Fri, 01 Dec 2023 07:12:07 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Mon, 30 Oct 2023 23:22:48 GMT
+# Fri, 01 Dec 2023 07:12:07 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Mon, 30 Oct 2023 23:22:48 GMT
+# Fri, 01 Dec 2023 07:12:07 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 30 Oct 2023 23:22:49 GMT
+# Fri, 01 Dec 2023 07:12:08 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:96526aa774ef0126ad0fe9e9a95764c5fc37f409ab9e97021e7b4775d82bf6fa`  
-		Last Modified: Thu, 28 Sep 2023 21:22:06 GMT  
-		Size: 3.4 MB (3401967 bytes)  
+	-	`sha256:c926b61bad3b94ae7351bafd0c184c159ebf0643b085f7ef1d47ecdc7316833c`  
+		Last Modified: Thu, 30 Nov 2023 23:23:28 GMT  
+		Size: 3.4 MB (3402422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b02a3a37ba0a441c23edb967d901e4af5b508796b983fbb71e14ad89db9a9999`  
-		Last Modified: Mon, 30 Oct 2023 23:32:06 GMT  
-		Size: 9.3 MB (9276545 bytes)  
+	-	`sha256:46ce2a3866efc31d675066df134952e4237faaf14332528051e5efca30a21a4a`  
+		Last Modified: Fri, 01 Dec 2023 07:14:41 GMT  
+		Size: 9.3 MB (9276515 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a12e67e82faf020e769d46cccfc7f1620ccb86e04b4576b070512194641eb854`  
-		Last Modified: Mon, 30 Oct 2023 23:32:15 GMT  
-		Size: 140.5 MB (140484655 bytes)  
+	-	`sha256:629c7d34e934cd201a8e75a722510b7ee2941ad0e9fa3f00aad45123b459e506`  
+		Last Modified: Fri, 01 Dec 2023 07:15:27 GMT  
+		Size: 140.5 MB (140484666 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43caa4ccd4f85f364bbf72014cc960dc6fb6703350eceaee77976cf6313c8a55`  
-		Last Modified: Mon, 30 Oct 2023 23:32:04 GMT  
+	-	`sha256:af32732554e58223c82fef201a71a8024d58729978033c9b6c7c8f21f0dbe8c4`  
+		Last Modified: Fri, 01 Dec 2023 07:15:17 GMT  
 		Size: 176.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8800858de447fac23faff681df1122b67d784efb0ee850d3d9551bcb5e9b19f8`  
-		Last Modified: Mon, 30 Oct 2023 23:32:04 GMT  
-		Size: 733.0 B  
+	-	`sha256:03ff009245964d87749ff002f164205f495cf779e600805d759bcbb573dfb22f`  
+		Last Modified: Fri, 01 Dec 2023 07:15:17 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eclipse-temurin:11-jdk-centos7`
@@ -4772,7 +4772,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 ## `eclipse-temurin:11-jre-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:c033de8d3135b954d230eed6b9bd14dc3dbf32550e448705222f1c907ceebe08
+$ docker pull eclipse-temurin@sha256:1cc1ad1955d30f45362175ae99414a2fc632383cefd2d626f823ec6d56523ec3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4782,61 +4782,61 @@ $ docker pull eclipse-temurin@sha256:c033de8d3135b954d230eed6b9bd14dc3dbf32550e4
 ### `eclipse-temurin:11-jre-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:1017b1b26f9b92921a93a730fa33327d83cdfa0cc2f7fa486b1348ad4eda755c
+$ docker pull eclipse-temurin@sha256:f0b030c2fcc7e5a5f790ad7a3ab1c26b5225ad67a9ef169ae2ef7d8d8117a24e
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.1 MB (56139807 bytes)**  
+-	Total Size: **56.1 MB (56140197 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:756a23157ae2efc2f9ce7158fdf0423d4933ce37231648060d797482d8ecd5e6`
+-	Image ID: `sha256:5348b07c1702d084639b26118fb84f2ee942284a4a5df999d13733bacfc65d1b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
-# Thu, 28 Sep 2023 21:19:27 GMT
-ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / 
-# Thu, 28 Sep 2023 21:19:27 GMT
+# Thu, 30 Nov 2023 23:22:52 GMT
+ADD file:fc714080c3bcbbce7ac746a10d7b4355ffa36293a8d435d62cd5359ea8eb8364 in / 
+# Thu, 30 Nov 2023 23:22:52 GMT
 CMD ["/bin/sh"]
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 30 Oct 2023 23:22:37 GMT
+# Fri, 01 Dec 2023 07:11:20 GMT
 RUN set -eux;     apk add --no-cache         bash         fontconfig ttf-dejavu         java-cacerts         libretls zlib         musl-locales musl-locales-lang         tzdata     ;     rm -rf /var/cache/apk/*
-# Mon, 30 Oct 2023 23:22:38 GMT
+# Fri, 01 Dec 2023 07:11:56 GMT
 ENV JAVA_VERSION=jdk-11.0.21+9
-# Mon, 30 Oct 2023 23:25:54 GMT
+# Fri, 01 Dec 2023 07:12:23 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='6a3d1759bdf91433411d37ca2ad1505a7f214c1401797834e9884165c2457368';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.21%2B9/OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Mon, 30 Oct 2023 23:25:55 GMT
+# Fri, 01 Dec 2023 07:12:24 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete."
-# Mon, 30 Oct 2023 23:25:55 GMT
+# Fri, 01 Dec 2023 07:12:24 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Mon, 30 Oct 2023 23:25:55 GMT
+# Fri, 01 Dec 2023 07:12:24 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:96526aa774ef0126ad0fe9e9a95764c5fc37f409ab9e97021e7b4775d82bf6fa`  
-		Last Modified: Thu, 28 Sep 2023 21:22:06 GMT  
-		Size: 3.4 MB (3401967 bytes)  
+	-	`sha256:c926b61bad3b94ae7351bafd0c184c159ebf0643b085f7ef1d47ecdc7316833c`  
+		Last Modified: Thu, 30 Nov 2023 23:23:28 GMT  
+		Size: 3.4 MB (3402422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b02a3a37ba0a441c23edb967d901e4af5b508796b983fbb71e14ad89db9a9999`  
-		Last Modified: Mon, 30 Oct 2023 23:32:06 GMT  
-		Size: 9.3 MB (9276545 bytes)  
+	-	`sha256:46ce2a3866efc31d675066df134952e4237faaf14332528051e5efca30a21a4a`  
+		Last Modified: Fri, 01 Dec 2023 07:14:41 GMT  
+		Size: 9.3 MB (9276515 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da1b283e9fa8bd4932199464288a09f82093d9bc8d5cc94d181c8a3a024b05f5`  
-		Last Modified: Mon, 30 Oct 2023 23:34:05 GMT  
-		Size: 43.5 MB (43460402 bytes)  
+	-	`sha256:697f379a044ca90f8bb226a30d63143556894f17f1f712db02dfd722d2197262`  
+		Last Modified: Fri, 01 Dec 2023 07:15:47 GMT  
+		Size: 43.5 MB (43460367 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42014f33abc494484a801383d6e89ee651f59b355d5936518beb281c2876906a`  
-		Last Modified: Mon, 30 Oct 2023 23:33:59 GMT  
-		Size: 160.0 B  
+	-	`sha256:90a7c79bb3e25dfb538643f08ec72134f715116ede71a64ccf9032a6bcb2d22f`  
+		Last Modified: Fri, 01 Dec 2023 07:15:42 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8aae414bcd53f5630bea0fada79f4517a1dcc80cd7fd1601955fe81fd6d48c1e`  
-		Last Modified: Mon, 30 Oct 2023 23:33:59 GMT  
-		Size: 733.0 B  
+	-	`sha256:ccfd3b7886029886b45e28ce2bd96fd3f1ae4a927ad5fbd5283b2fa9e57a7c40`  
+		Last Modified: Fri, 01 Dec 2023 07:15:41 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eclipse-temurin:11-jre-centos7`
@@ -8275,7 +8275,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:11.0.21_9-jdk-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:0f42a9544bb88d43ce43e6668cf52423951099e14761d35779d0175414f0dd06
+$ docker pull eclipse-temurin@sha256:a13fd5efc8a1be0e2040805915702d5d697c56b420f7c93e06fab60272cdea3a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8285,64 +8285,64 @@ $ docker pull eclipse-temurin@sha256:0f42a9544bb88d43ce43e6668cf52423951099e1476
 ### `eclipse-temurin:11.0.21_9-jdk-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:fd3753e16935cf54faebd41b5e0167c7385d47fe8f5c983c051fe04e0748c895
+$ docker pull eclipse-temurin@sha256:692e5b40f537790221c06ea3414195a1c1ec700022e1da028f5bf101e7b7c577
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.2 MB (153164076 bytes)**  
+-	Total Size: **153.2 MB (153164513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7b582f04be5a8e22a60e8fbaf2e99f641a8f180761c63177d79cac2206fe54f`
+-	Image ID: `sha256:9fe2c7fcde00b3dd2da0e43328047855ce03b95ee7f53f1eefe56a87fc9a2c96`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Thu, 28 Sep 2023 21:19:27 GMT
-ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / 
-# Thu, 28 Sep 2023 21:19:27 GMT
+# Thu, 30 Nov 2023 23:22:52 GMT
+ADD file:fc714080c3bcbbce7ac746a10d7b4355ffa36293a8d435d62cd5359ea8eb8364 in / 
+# Thu, 30 Nov 2023 23:22:52 GMT
 CMD ["/bin/sh"]
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 30 Oct 2023 23:22:37 GMT
+# Fri, 01 Dec 2023 07:11:20 GMT
 RUN set -eux;     apk add --no-cache         bash         fontconfig ttf-dejavu         java-cacerts         libretls zlib         musl-locales musl-locales-lang         tzdata     ;     rm -rf /var/cache/apk/*
-# Mon, 30 Oct 2023 23:22:38 GMT
+# Fri, 01 Dec 2023 07:11:56 GMT
 ENV JAVA_VERSION=jdk-11.0.21+9
-# Mon, 30 Oct 2023 23:22:46 GMT
+# Fri, 01 Dec 2023 07:12:05 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='d5e2235d3707526f7c9ba3f0dc194e60d5dec33eceff2a2dcf9d874464cc0e9e';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.21%2B9/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Mon, 30 Oct 2023 23:22:48 GMT
+# Fri, 01 Dec 2023 07:12:07 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Mon, 30 Oct 2023 23:22:48 GMT
+# Fri, 01 Dec 2023 07:12:07 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Mon, 30 Oct 2023 23:22:48 GMT
+# Fri, 01 Dec 2023 07:12:07 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 30 Oct 2023 23:22:49 GMT
+# Fri, 01 Dec 2023 07:12:08 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:96526aa774ef0126ad0fe9e9a95764c5fc37f409ab9e97021e7b4775d82bf6fa`  
-		Last Modified: Thu, 28 Sep 2023 21:22:06 GMT  
-		Size: 3.4 MB (3401967 bytes)  
+	-	`sha256:c926b61bad3b94ae7351bafd0c184c159ebf0643b085f7ef1d47ecdc7316833c`  
+		Last Modified: Thu, 30 Nov 2023 23:23:28 GMT  
+		Size: 3.4 MB (3402422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b02a3a37ba0a441c23edb967d901e4af5b508796b983fbb71e14ad89db9a9999`  
-		Last Modified: Mon, 30 Oct 2023 23:32:06 GMT  
-		Size: 9.3 MB (9276545 bytes)  
+	-	`sha256:46ce2a3866efc31d675066df134952e4237faaf14332528051e5efca30a21a4a`  
+		Last Modified: Fri, 01 Dec 2023 07:14:41 GMT  
+		Size: 9.3 MB (9276515 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a12e67e82faf020e769d46cccfc7f1620ccb86e04b4576b070512194641eb854`  
-		Last Modified: Mon, 30 Oct 2023 23:32:15 GMT  
-		Size: 140.5 MB (140484655 bytes)  
+	-	`sha256:629c7d34e934cd201a8e75a722510b7ee2941ad0e9fa3f00aad45123b459e506`  
+		Last Modified: Fri, 01 Dec 2023 07:15:27 GMT  
+		Size: 140.5 MB (140484666 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43caa4ccd4f85f364bbf72014cc960dc6fb6703350eceaee77976cf6313c8a55`  
-		Last Modified: Mon, 30 Oct 2023 23:32:04 GMT  
+	-	`sha256:af32732554e58223c82fef201a71a8024d58729978033c9b6c7c8f21f0dbe8c4`  
+		Last Modified: Fri, 01 Dec 2023 07:15:17 GMT  
 		Size: 176.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8800858de447fac23faff681df1122b67d784efb0ee850d3d9551bcb5e9b19f8`  
-		Last Modified: Mon, 30 Oct 2023 23:32:04 GMT  
-		Size: 733.0 B  
+	-	`sha256:03ff009245964d87749ff002f164205f495cf779e600805d759bcbb573dfb22f`  
+		Last Modified: Fri, 01 Dec 2023 07:15:17 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eclipse-temurin:11.0.21_9-jdk-centos7`
@@ -10806,7 +10806,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 ## `eclipse-temurin:11.0.21_9-jre-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:c033de8d3135b954d230eed6b9bd14dc3dbf32550e448705222f1c907ceebe08
+$ docker pull eclipse-temurin@sha256:1cc1ad1955d30f45362175ae99414a2fc632383cefd2d626f823ec6d56523ec3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10816,61 +10816,61 @@ $ docker pull eclipse-temurin@sha256:c033de8d3135b954d230eed6b9bd14dc3dbf32550e4
 ### `eclipse-temurin:11.0.21_9-jre-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:1017b1b26f9b92921a93a730fa33327d83cdfa0cc2f7fa486b1348ad4eda755c
+$ docker pull eclipse-temurin@sha256:f0b030c2fcc7e5a5f790ad7a3ab1c26b5225ad67a9ef169ae2ef7d8d8117a24e
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.1 MB (56139807 bytes)**  
+-	Total Size: **56.1 MB (56140197 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:756a23157ae2efc2f9ce7158fdf0423d4933ce37231648060d797482d8ecd5e6`
+-	Image ID: `sha256:5348b07c1702d084639b26118fb84f2ee942284a4a5df999d13733bacfc65d1b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
-# Thu, 28 Sep 2023 21:19:27 GMT
-ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / 
-# Thu, 28 Sep 2023 21:19:27 GMT
+# Thu, 30 Nov 2023 23:22:52 GMT
+ADD file:fc714080c3bcbbce7ac746a10d7b4355ffa36293a8d435d62cd5359ea8eb8364 in / 
+# Thu, 30 Nov 2023 23:22:52 GMT
 CMD ["/bin/sh"]
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 30 Oct 2023 23:22:37 GMT
+# Fri, 01 Dec 2023 07:11:20 GMT
 RUN set -eux;     apk add --no-cache         bash         fontconfig ttf-dejavu         java-cacerts         libretls zlib         musl-locales musl-locales-lang         tzdata     ;     rm -rf /var/cache/apk/*
-# Mon, 30 Oct 2023 23:22:38 GMT
+# Fri, 01 Dec 2023 07:11:56 GMT
 ENV JAVA_VERSION=jdk-11.0.21+9
-# Mon, 30 Oct 2023 23:25:54 GMT
+# Fri, 01 Dec 2023 07:12:23 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='6a3d1759bdf91433411d37ca2ad1505a7f214c1401797834e9884165c2457368';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.21%2B9/OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Mon, 30 Oct 2023 23:25:55 GMT
+# Fri, 01 Dec 2023 07:12:24 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete."
-# Mon, 30 Oct 2023 23:25:55 GMT
+# Fri, 01 Dec 2023 07:12:24 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Mon, 30 Oct 2023 23:25:55 GMT
+# Fri, 01 Dec 2023 07:12:24 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:96526aa774ef0126ad0fe9e9a95764c5fc37f409ab9e97021e7b4775d82bf6fa`  
-		Last Modified: Thu, 28 Sep 2023 21:22:06 GMT  
-		Size: 3.4 MB (3401967 bytes)  
+	-	`sha256:c926b61bad3b94ae7351bafd0c184c159ebf0643b085f7ef1d47ecdc7316833c`  
+		Last Modified: Thu, 30 Nov 2023 23:23:28 GMT  
+		Size: 3.4 MB (3402422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b02a3a37ba0a441c23edb967d901e4af5b508796b983fbb71e14ad89db9a9999`  
-		Last Modified: Mon, 30 Oct 2023 23:32:06 GMT  
-		Size: 9.3 MB (9276545 bytes)  
+	-	`sha256:46ce2a3866efc31d675066df134952e4237faaf14332528051e5efca30a21a4a`  
+		Last Modified: Fri, 01 Dec 2023 07:14:41 GMT  
+		Size: 9.3 MB (9276515 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da1b283e9fa8bd4932199464288a09f82093d9bc8d5cc94d181c8a3a024b05f5`  
-		Last Modified: Mon, 30 Oct 2023 23:34:05 GMT  
-		Size: 43.5 MB (43460402 bytes)  
+	-	`sha256:697f379a044ca90f8bb226a30d63143556894f17f1f712db02dfd722d2197262`  
+		Last Modified: Fri, 01 Dec 2023 07:15:47 GMT  
+		Size: 43.5 MB (43460367 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42014f33abc494484a801383d6e89ee651f59b355d5936518beb281c2876906a`  
-		Last Modified: Mon, 30 Oct 2023 23:33:59 GMT  
-		Size: 160.0 B  
+	-	`sha256:90a7c79bb3e25dfb538643f08ec72134f715116ede71a64ccf9032a6bcb2d22f`  
+		Last Modified: Fri, 01 Dec 2023 07:15:42 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8aae414bcd53f5630bea0fada79f4517a1dcc80cd7fd1601955fe81fd6d48c1e`  
-		Last Modified: Mon, 30 Oct 2023 23:33:59 GMT  
-		Size: 733.0 B  
+	-	`sha256:ccfd3b7886029886b45e28ce2bd96fd3f1ae4a927ad5fbd5283b2fa9e57a7c40`  
+		Last Modified: Fri, 01 Dec 2023 07:15:41 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eclipse-temurin:11.0.21_9-jre-centos7`
@@ -13262,7 +13262,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:17-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:0f65d052cba399992199061c48ad3456d2ef33214a02c983d14fccb52b79b26c
+$ docker pull eclipse-temurin@sha256:31fd8cc4cef24cc3b25e5b9f9f86a09f4c27815220c4a8a2bb9b6bf869ff0726
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13272,63 +13272,63 @@ $ docker pull eclipse-temurin@sha256:0f65d052cba399992199061c48ad3456d2ef33214a0
 ### `eclipse-temurin:17-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:595dfc1148baa2a6d632cfa7ec5c793191290957551be4a46dde6d6e6c31d9c1
+$ docker pull eclipse-temurin@sha256:24643c2dd329ef482ecd042b59cbfb7fe13716342e22674a0abd763559c8a1dd
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.7 MB (160655076 bytes)**  
+-	Total Size: **160.7 MB (160655588 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c40d82bf2cad0e8b9e60f0cd423d7b2503180c4e86726c8ecd57df3f5cfd675`
+-	Image ID: `sha256:60b102f57f99ee12190394019d4da827afd5bf6a182aa520f192993effbc4cf0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Thu, 28 Sep 2023 21:19:27 GMT
-ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / 
-# Thu, 28 Sep 2023 21:19:27 GMT
+# Thu, 30 Nov 2023 23:22:52 GMT
+ADD file:fc714080c3bcbbce7ac746a10d7b4355ffa36293a8d435d62cd5359ea8eb8364 in / 
+# Thu, 30 Nov 2023 23:22:52 GMT
 CMD ["/bin/sh"]
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 30 Oct 2023 23:26:31 GMT
+# Fri, 01 Dec 2023 07:12:38 GMT
 RUN set -eux;     apk add --no-cache         bash         fontconfig ttf-dejavu         java-cacerts         libretls zlib         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Mon, 30 Oct 2023 23:26:31 GMT
+# Fri, 01 Dec 2023 07:12:38 GMT
 ENV JAVA_VERSION=jdk-17.0.9+9
-# Mon, 30 Oct 2023 23:26:39 GMT
+# Fri, 01 Dec 2023 07:12:47 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='c2a571a56e5bd3f30956b17b048880078c7801ed9e8754af6d1e38b9176059a9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.9%2B9/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.9_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Mon, 30 Oct 2023 23:26:42 GMT
+# Fri, 01 Dec 2023 07:12:50 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Mon, 30 Oct 2023 23:26:42 GMT
+# Fri, 01 Dec 2023 07:12:50 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Mon, 30 Oct 2023 23:26:42 GMT
+# Fri, 01 Dec 2023 07:12:50 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 30 Oct 2023 23:26:42 GMT
+# Fri, 01 Dec 2023 07:12:50 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:96526aa774ef0126ad0fe9e9a95764c5fc37f409ab9e97021e7b4775d82bf6fa`  
-		Last Modified: Thu, 28 Sep 2023 21:22:06 GMT  
-		Size: 3.4 MB (3401967 bytes)  
+	-	`sha256:c926b61bad3b94ae7351bafd0c184c159ebf0643b085f7ef1d47ecdc7316833c`  
+		Last Modified: Thu, 30 Nov 2023 23:23:28 GMT  
+		Size: 3.4 MB (3402422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3c4df72d74e9b84f1215596adc1b562a87b2c2bd9249ba1433455079b00218`  
-		Last Modified: Mon, 30 Oct 2023 23:35:19 GMT  
-		Size: 13.1 MB (13141022 bytes)  
+	-	`sha256:e5820a814e8c90e2b86457ad1da29a79516ae242489d7bf67ea216d150c1efdc`  
+		Last Modified: Fri, 01 Dec 2023 07:15:58 GMT  
+		Size: 13.1 MB (13141060 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d7937dfaa0fb6ed551351b36347ca4eb7da6b03baa8d9d2991f0bd28df58b863`  
-		Last Modified: Mon, 30 Oct 2023 23:35:28 GMT  
-		Size: 144.1 MB (144111175 bytes)  
+	-	`sha256:ec533064323b9596a959f12635ca06c4ee0965ca1b44257c3e65fca566a63512`  
+		Last Modified: Fri, 01 Dec 2023 07:16:08 GMT  
+		Size: 144.1 MB (144111197 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ec44800a653716150002cf7731ab02425d333379727abe1a4bdfd0ebf6d66c8`  
-		Last Modified: Mon, 30 Oct 2023 23:35:17 GMT  
-		Size: 178.0 B  
+	-	`sha256:bb67c9837c6a071b2db6278557e6372b3cd1049dbf05b46970ebcd3462a542a2`  
+		Last Modified: Fri, 01 Dec 2023 07:15:57 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb5fcbc2e814b463720991d75d84f18f6d5b50993c1e8bff08d97c4d59be6f14`  
-		Last Modified: Mon, 30 Oct 2023 23:35:17 GMT  
+	-	`sha256:64f3195d8bdd8ee99ecf37259027c679b512a94c32c26bc7e461556da58f8d99`  
+		Last Modified: Fri, 01 Dec 2023 07:15:57 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -14773,7 +14773,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:17-jdk-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:0f65d052cba399992199061c48ad3456d2ef33214a02c983d14fccb52b79b26c
+$ docker pull eclipse-temurin@sha256:31fd8cc4cef24cc3b25e5b9f9f86a09f4c27815220c4a8a2bb9b6bf869ff0726
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14783,63 +14783,63 @@ $ docker pull eclipse-temurin@sha256:0f65d052cba399992199061c48ad3456d2ef33214a0
 ### `eclipse-temurin:17-jdk-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:595dfc1148baa2a6d632cfa7ec5c793191290957551be4a46dde6d6e6c31d9c1
+$ docker pull eclipse-temurin@sha256:24643c2dd329ef482ecd042b59cbfb7fe13716342e22674a0abd763559c8a1dd
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.7 MB (160655076 bytes)**  
+-	Total Size: **160.7 MB (160655588 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c40d82bf2cad0e8b9e60f0cd423d7b2503180c4e86726c8ecd57df3f5cfd675`
+-	Image ID: `sha256:60b102f57f99ee12190394019d4da827afd5bf6a182aa520f192993effbc4cf0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Thu, 28 Sep 2023 21:19:27 GMT
-ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / 
-# Thu, 28 Sep 2023 21:19:27 GMT
+# Thu, 30 Nov 2023 23:22:52 GMT
+ADD file:fc714080c3bcbbce7ac746a10d7b4355ffa36293a8d435d62cd5359ea8eb8364 in / 
+# Thu, 30 Nov 2023 23:22:52 GMT
 CMD ["/bin/sh"]
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 30 Oct 2023 23:26:31 GMT
+# Fri, 01 Dec 2023 07:12:38 GMT
 RUN set -eux;     apk add --no-cache         bash         fontconfig ttf-dejavu         java-cacerts         libretls zlib         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Mon, 30 Oct 2023 23:26:31 GMT
+# Fri, 01 Dec 2023 07:12:38 GMT
 ENV JAVA_VERSION=jdk-17.0.9+9
-# Mon, 30 Oct 2023 23:26:39 GMT
+# Fri, 01 Dec 2023 07:12:47 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='c2a571a56e5bd3f30956b17b048880078c7801ed9e8754af6d1e38b9176059a9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.9%2B9/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.9_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Mon, 30 Oct 2023 23:26:42 GMT
+# Fri, 01 Dec 2023 07:12:50 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Mon, 30 Oct 2023 23:26:42 GMT
+# Fri, 01 Dec 2023 07:12:50 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Mon, 30 Oct 2023 23:26:42 GMT
+# Fri, 01 Dec 2023 07:12:50 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 30 Oct 2023 23:26:42 GMT
+# Fri, 01 Dec 2023 07:12:50 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:96526aa774ef0126ad0fe9e9a95764c5fc37f409ab9e97021e7b4775d82bf6fa`  
-		Last Modified: Thu, 28 Sep 2023 21:22:06 GMT  
-		Size: 3.4 MB (3401967 bytes)  
+	-	`sha256:c926b61bad3b94ae7351bafd0c184c159ebf0643b085f7ef1d47ecdc7316833c`  
+		Last Modified: Thu, 30 Nov 2023 23:23:28 GMT  
+		Size: 3.4 MB (3402422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3c4df72d74e9b84f1215596adc1b562a87b2c2bd9249ba1433455079b00218`  
-		Last Modified: Mon, 30 Oct 2023 23:35:19 GMT  
-		Size: 13.1 MB (13141022 bytes)  
+	-	`sha256:e5820a814e8c90e2b86457ad1da29a79516ae242489d7bf67ea216d150c1efdc`  
+		Last Modified: Fri, 01 Dec 2023 07:15:58 GMT  
+		Size: 13.1 MB (13141060 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d7937dfaa0fb6ed551351b36347ca4eb7da6b03baa8d9d2991f0bd28df58b863`  
-		Last Modified: Mon, 30 Oct 2023 23:35:28 GMT  
-		Size: 144.1 MB (144111175 bytes)  
+	-	`sha256:ec533064323b9596a959f12635ca06c4ee0965ca1b44257c3e65fca566a63512`  
+		Last Modified: Fri, 01 Dec 2023 07:16:08 GMT  
+		Size: 144.1 MB (144111197 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ec44800a653716150002cf7731ab02425d333379727abe1a4bdfd0ebf6d66c8`  
-		Last Modified: Mon, 30 Oct 2023 23:35:17 GMT  
-		Size: 178.0 B  
+	-	`sha256:bb67c9837c6a071b2db6278557e6372b3cd1049dbf05b46970ebcd3462a542a2`  
+		Last Modified: Fri, 01 Dec 2023 07:15:57 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb5fcbc2e814b463720991d75d84f18f6d5b50993c1e8bff08d97c4d59be6f14`  
-		Last Modified: Mon, 30 Oct 2023 23:35:17 GMT  
+	-	`sha256:64f3195d8bdd8ee99ecf37259027c679b512a94c32c26bc7e461556da58f8d99`  
+		Last Modified: Fri, 01 Dec 2023 07:15:57 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -17304,7 +17304,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 ## `eclipse-temurin:17-jre-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:984703da8353d0a33eb04944b56665e84c6271e5d4f8a679e73cb5bd2b846301
+$ docker pull eclipse-temurin@sha256:aa5fc621cc5eebbf90b815973e95ca800cfcab671fdd7918a3a5c9c770bb804a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17314,61 +17314,61 @@ $ docker pull eclipse-temurin@sha256:984703da8353d0a33eb04944b56665e84c6271e5d4f
 ### `eclipse-temurin:17-jre-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:cba04f7101096852719a1530feffbb04a232765a8180b083f6182bafc6b3e1d3
+$ docker pull eclipse-temurin@sha256:635ec1b177ac2a587324ed5eda2b9dec197876e16d10c35a4ef9595d76c2c891
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.4 MB (63398514 bytes)**  
+-	Total Size: **63.4 MB (63399049 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d5a7235045b27a97d729cfdbecc30a9ef2b654a36199106c3e1fb26a564b8ea`
+-	Image ID: `sha256:f2ecb4cac3665f7bcda654cc99a2f29bff28ce0e0bf7fdb5b5593bd22a8168cf`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
-# Thu, 28 Sep 2023 21:19:27 GMT
-ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / 
-# Thu, 28 Sep 2023 21:19:27 GMT
+# Thu, 30 Nov 2023 23:22:52 GMT
+ADD file:fc714080c3bcbbce7ac746a10d7b4355ffa36293a8d435d62cd5359ea8eb8364 in / 
+# Thu, 30 Nov 2023 23:22:52 GMT
 CMD ["/bin/sh"]
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 30 Oct 2023 23:26:31 GMT
+# Fri, 01 Dec 2023 07:12:38 GMT
 RUN set -eux;     apk add --no-cache         bash         fontconfig ttf-dejavu         java-cacerts         libretls zlib         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Mon, 30 Oct 2023 23:26:31 GMT
+# Fri, 01 Dec 2023 07:12:38 GMT
 ENV JAVA_VERSION=jdk-17.0.9+9
-# Mon, 30 Oct 2023 23:29:01 GMT
+# Fri, 01 Dec 2023 07:13:06 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='70e5d108f51ae7c7b2435d063652df058723e303a18b4f72f17f75c5320052d3';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.9%2B9/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.9_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Mon, 30 Oct 2023 23:29:02 GMT
+# Fri, 01 Dec 2023 07:13:07 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete."
-# Mon, 30 Oct 2023 23:29:02 GMT
+# Fri, 01 Dec 2023 07:13:07 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Mon, 30 Oct 2023 23:29:02 GMT
+# Fri, 01 Dec 2023 07:13:07 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:96526aa774ef0126ad0fe9e9a95764c5fc37f409ab9e97021e7b4775d82bf6fa`  
-		Last Modified: Thu, 28 Sep 2023 21:22:06 GMT  
-		Size: 3.4 MB (3401967 bytes)  
+	-	`sha256:c926b61bad3b94ae7351bafd0c184c159ebf0643b085f7ef1d47ecdc7316833c`  
+		Last Modified: Thu, 30 Nov 2023 23:23:28 GMT  
+		Size: 3.4 MB (3402422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3c4df72d74e9b84f1215596adc1b562a87b2c2bd9249ba1433455079b00218`  
-		Last Modified: Mon, 30 Oct 2023 23:35:19 GMT  
-		Size: 13.1 MB (13141022 bytes)  
+	-	`sha256:e5820a814e8c90e2b86457ad1da29a79516ae242489d7bf67ea216d150c1efdc`  
+		Last Modified: Fri, 01 Dec 2023 07:15:58 GMT  
+		Size: 13.1 MB (13141060 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e50545f74853b08e46de79fa9fd930e933e5f42b830475459f2d49d2eede1fe`  
-		Last Modified: Mon, 30 Oct 2023 23:37:20 GMT  
-		Size: 46.9 MB (46854633 bytes)  
+	-	`sha256:7b4bda58fd3fe4303d5faeb7934e9d66e104f5c10e87abbe6a56aa9e8ac13d87`  
+		Last Modified: Fri, 01 Dec 2023 07:16:29 GMT  
+		Size: 46.9 MB (46854673 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93bee30a4e26167afdbec0760dcf442c666906f0383b8506c1115c3432e55c30`  
-		Last Modified: Mon, 30 Oct 2023 23:37:14 GMT  
+	-	`sha256:2e8eef6580a1394f3c28fa090377e1c16c5936d0b48f51d43d10ad47721121ba`  
+		Last Modified: Fri, 01 Dec 2023 07:16:22 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a14d30cdf30f15457bf4df3b7d11fb0e15941339fc60431f5c96fd2863882e3`  
-		Last Modified: Mon, 30 Oct 2023 23:37:14 GMT  
-		Size: 732.0 B  
+	-	`sha256:a2f4070fc47887c906b01a0a16db321cfb19225e43ff16dfdeab76065122be16`  
+		Last Modified: Fri, 01 Dec 2023 07:16:22 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eclipse-temurin:17-jre-centos7`
@@ -20807,7 +20807,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:17.0.9_9-jdk-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:0f65d052cba399992199061c48ad3456d2ef33214a02c983d14fccb52b79b26c
+$ docker pull eclipse-temurin@sha256:31fd8cc4cef24cc3b25e5b9f9f86a09f4c27815220c4a8a2bb9b6bf869ff0726
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -20817,63 +20817,63 @@ $ docker pull eclipse-temurin@sha256:0f65d052cba399992199061c48ad3456d2ef33214a0
 ### `eclipse-temurin:17.0.9_9-jdk-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:595dfc1148baa2a6d632cfa7ec5c793191290957551be4a46dde6d6e6c31d9c1
+$ docker pull eclipse-temurin@sha256:24643c2dd329ef482ecd042b59cbfb7fe13716342e22674a0abd763559c8a1dd
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.7 MB (160655076 bytes)**  
+-	Total Size: **160.7 MB (160655588 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c40d82bf2cad0e8b9e60f0cd423d7b2503180c4e86726c8ecd57df3f5cfd675`
+-	Image ID: `sha256:60b102f57f99ee12190394019d4da827afd5bf6a182aa520f192993effbc4cf0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Thu, 28 Sep 2023 21:19:27 GMT
-ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / 
-# Thu, 28 Sep 2023 21:19:27 GMT
+# Thu, 30 Nov 2023 23:22:52 GMT
+ADD file:fc714080c3bcbbce7ac746a10d7b4355ffa36293a8d435d62cd5359ea8eb8364 in / 
+# Thu, 30 Nov 2023 23:22:52 GMT
 CMD ["/bin/sh"]
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 30 Oct 2023 23:26:31 GMT
+# Fri, 01 Dec 2023 07:12:38 GMT
 RUN set -eux;     apk add --no-cache         bash         fontconfig ttf-dejavu         java-cacerts         libretls zlib         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Mon, 30 Oct 2023 23:26:31 GMT
+# Fri, 01 Dec 2023 07:12:38 GMT
 ENV JAVA_VERSION=jdk-17.0.9+9
-# Mon, 30 Oct 2023 23:26:39 GMT
+# Fri, 01 Dec 2023 07:12:47 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='c2a571a56e5bd3f30956b17b048880078c7801ed9e8754af6d1e38b9176059a9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.9%2B9/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.9_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Mon, 30 Oct 2023 23:26:42 GMT
+# Fri, 01 Dec 2023 07:12:50 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Mon, 30 Oct 2023 23:26:42 GMT
+# Fri, 01 Dec 2023 07:12:50 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Mon, 30 Oct 2023 23:26:42 GMT
+# Fri, 01 Dec 2023 07:12:50 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 30 Oct 2023 23:26:42 GMT
+# Fri, 01 Dec 2023 07:12:50 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:96526aa774ef0126ad0fe9e9a95764c5fc37f409ab9e97021e7b4775d82bf6fa`  
-		Last Modified: Thu, 28 Sep 2023 21:22:06 GMT  
-		Size: 3.4 MB (3401967 bytes)  
+	-	`sha256:c926b61bad3b94ae7351bafd0c184c159ebf0643b085f7ef1d47ecdc7316833c`  
+		Last Modified: Thu, 30 Nov 2023 23:23:28 GMT  
+		Size: 3.4 MB (3402422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3c4df72d74e9b84f1215596adc1b562a87b2c2bd9249ba1433455079b00218`  
-		Last Modified: Mon, 30 Oct 2023 23:35:19 GMT  
-		Size: 13.1 MB (13141022 bytes)  
+	-	`sha256:e5820a814e8c90e2b86457ad1da29a79516ae242489d7bf67ea216d150c1efdc`  
+		Last Modified: Fri, 01 Dec 2023 07:15:58 GMT  
+		Size: 13.1 MB (13141060 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d7937dfaa0fb6ed551351b36347ca4eb7da6b03baa8d9d2991f0bd28df58b863`  
-		Last Modified: Mon, 30 Oct 2023 23:35:28 GMT  
-		Size: 144.1 MB (144111175 bytes)  
+	-	`sha256:ec533064323b9596a959f12635ca06c4ee0965ca1b44257c3e65fca566a63512`  
+		Last Modified: Fri, 01 Dec 2023 07:16:08 GMT  
+		Size: 144.1 MB (144111197 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ec44800a653716150002cf7731ab02425d333379727abe1a4bdfd0ebf6d66c8`  
-		Last Modified: Mon, 30 Oct 2023 23:35:17 GMT  
-		Size: 178.0 B  
+	-	`sha256:bb67c9837c6a071b2db6278557e6372b3cd1049dbf05b46970ebcd3462a542a2`  
+		Last Modified: Fri, 01 Dec 2023 07:15:57 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb5fcbc2e814b463720991d75d84f18f6d5b50993c1e8bff08d97c4d59be6f14`  
-		Last Modified: Mon, 30 Oct 2023 23:35:17 GMT  
+	-	`sha256:64f3195d8bdd8ee99ecf37259027c679b512a94c32c26bc7e461556da58f8d99`  
+		Last Modified: Fri, 01 Dec 2023 07:15:57 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -23338,7 +23338,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 ## `eclipse-temurin:17.0.9_9-jre-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:984703da8353d0a33eb04944b56665e84c6271e5d4f8a679e73cb5bd2b846301
+$ docker pull eclipse-temurin@sha256:aa5fc621cc5eebbf90b815973e95ca800cfcab671fdd7918a3a5c9c770bb804a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23348,61 +23348,61 @@ $ docker pull eclipse-temurin@sha256:984703da8353d0a33eb04944b56665e84c6271e5d4f
 ### `eclipse-temurin:17.0.9_9-jre-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:cba04f7101096852719a1530feffbb04a232765a8180b083f6182bafc6b3e1d3
+$ docker pull eclipse-temurin@sha256:635ec1b177ac2a587324ed5eda2b9dec197876e16d10c35a4ef9595d76c2c891
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.4 MB (63398514 bytes)**  
+-	Total Size: **63.4 MB (63399049 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d5a7235045b27a97d729cfdbecc30a9ef2b654a36199106c3e1fb26a564b8ea`
+-	Image ID: `sha256:f2ecb4cac3665f7bcda654cc99a2f29bff28ce0e0bf7fdb5b5593bd22a8168cf`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
-# Thu, 28 Sep 2023 21:19:27 GMT
-ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / 
-# Thu, 28 Sep 2023 21:19:27 GMT
+# Thu, 30 Nov 2023 23:22:52 GMT
+ADD file:fc714080c3bcbbce7ac746a10d7b4355ffa36293a8d435d62cd5359ea8eb8364 in / 
+# Thu, 30 Nov 2023 23:22:52 GMT
 CMD ["/bin/sh"]
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 30 Oct 2023 23:26:31 GMT
+# Fri, 01 Dec 2023 07:12:38 GMT
 RUN set -eux;     apk add --no-cache         bash         fontconfig ttf-dejavu         java-cacerts         libretls zlib         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Mon, 30 Oct 2023 23:26:31 GMT
+# Fri, 01 Dec 2023 07:12:38 GMT
 ENV JAVA_VERSION=jdk-17.0.9+9
-# Mon, 30 Oct 2023 23:29:01 GMT
+# Fri, 01 Dec 2023 07:13:06 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='70e5d108f51ae7c7b2435d063652df058723e303a18b4f72f17f75c5320052d3';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.9%2B9/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.9_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Mon, 30 Oct 2023 23:29:02 GMT
+# Fri, 01 Dec 2023 07:13:07 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete."
-# Mon, 30 Oct 2023 23:29:02 GMT
+# Fri, 01 Dec 2023 07:13:07 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Mon, 30 Oct 2023 23:29:02 GMT
+# Fri, 01 Dec 2023 07:13:07 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:96526aa774ef0126ad0fe9e9a95764c5fc37f409ab9e97021e7b4775d82bf6fa`  
-		Last Modified: Thu, 28 Sep 2023 21:22:06 GMT  
-		Size: 3.4 MB (3401967 bytes)  
+	-	`sha256:c926b61bad3b94ae7351bafd0c184c159ebf0643b085f7ef1d47ecdc7316833c`  
+		Last Modified: Thu, 30 Nov 2023 23:23:28 GMT  
+		Size: 3.4 MB (3402422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3c4df72d74e9b84f1215596adc1b562a87b2c2bd9249ba1433455079b00218`  
-		Last Modified: Mon, 30 Oct 2023 23:35:19 GMT  
-		Size: 13.1 MB (13141022 bytes)  
+	-	`sha256:e5820a814e8c90e2b86457ad1da29a79516ae242489d7bf67ea216d150c1efdc`  
+		Last Modified: Fri, 01 Dec 2023 07:15:58 GMT  
+		Size: 13.1 MB (13141060 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e50545f74853b08e46de79fa9fd930e933e5f42b830475459f2d49d2eede1fe`  
-		Last Modified: Mon, 30 Oct 2023 23:37:20 GMT  
-		Size: 46.9 MB (46854633 bytes)  
+	-	`sha256:7b4bda58fd3fe4303d5faeb7934e9d66e104f5c10e87abbe6a56aa9e8ac13d87`  
+		Last Modified: Fri, 01 Dec 2023 07:16:29 GMT  
+		Size: 46.9 MB (46854673 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93bee30a4e26167afdbec0760dcf442c666906f0383b8506c1115c3432e55c30`  
-		Last Modified: Mon, 30 Oct 2023 23:37:14 GMT  
+	-	`sha256:2e8eef6580a1394f3c28fa090377e1c16c5936d0b48f51d43d10ad47721121ba`  
+		Last Modified: Fri, 01 Dec 2023 07:16:22 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a14d30cdf30f15457bf4df3b7d11fb0e15941339fc60431f5c96fd2863882e3`  
-		Last Modified: Mon, 30 Oct 2023 23:37:14 GMT  
-		Size: 732.0 B  
+	-	`sha256:a2f4070fc47887c906b01a0a16db321cfb19225e43ff16dfdeab76065122be16`  
+		Last Modified: Fri, 01 Dec 2023 07:16:22 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eclipse-temurin:17.0.9_9-jre-centos7`
@@ -25650,7 +25650,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:21-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:5ec20e4957ebf16ca44f7ff982654882d526c029def0289fc2a1be08a12e0b6d
+$ docker pull eclipse-temurin@sha256:075f8207cbfecf7e509e2d93e2ffc36c097b52a8109a9bfd40326fa12bd5c438
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -25661,64 +25661,64 @@ $ docker pull eclipse-temurin@sha256:5ec20e4957ebf16ca44f7ff982654882d526c029def
 ### `eclipse-temurin:21-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:76163bd4f26586627c4257472f7115d7e9b1d9e05cca2b33b36b7d358316c366
+$ docker pull eclipse-temurin@sha256:7e1c2f37fffae18238a4bb018080a0a46d23bfe646d0e1eaacb35a4fdf383a2d
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.2 MB (174208885 bytes)**  
+-	Total Size: **174.2 MB (174209390 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74024acf447190e0b1cc02c972ed6546b992ee2884842a64b2b99702f5586c3b`
+-	Image ID: `sha256:c9017e7c8441517b002e05be8e72b0032d6d55e108e720c8ac6a5255d5611baa`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Thu, 28 Sep 2023 21:19:27 GMT
-ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / 
-# Thu, 28 Sep 2023 21:19:27 GMT
+# Thu, 30 Nov 2023 23:22:52 GMT
+ADD file:fc714080c3bcbbce7ac746a10d7b4355ffa36293a8d435d62cd5359ea8eb8364 in / 
+# Thu, 30 Nov 2023 23:22:52 GMT
 CMD ["/bin/sh"]
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 30 Oct 2023 23:26:31 GMT
+# Fri, 01 Dec 2023 07:12:38 GMT
 RUN set -eux;     apk add --no-cache         bash         fontconfig ttf-dejavu         java-cacerts         libretls zlib         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Mon, 30 Oct 2023 23:29:38 GMT
+# Fri, 01 Dec 2023 07:13:19 GMT
 ENV JAVA_VERSION=jdk-21.0.1+12
-# Mon, 30 Oct 2023 23:29:47 GMT
+# Fri, 01 Dec 2023 07:13:28 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64|arm64)          ESUM='77006c0a753808c2a6662007906eb6eb230f2fb6eb9d201a39cc46113e68f82c';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%2B12/OpenJDK21U-jdk_aarch64_alpine-linux_hotspot_21.0.1_12.tar.gz';          ;;        amd64|x86_64)          ESUM='422f23f5109056cacb9227247bebf8532e2dc3c9d505e71637ba610569d6b3ff';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%2B12/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.1_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Mon, 30 Oct 2023 23:29:49 GMT
+# Fri, 01 Dec 2023 07:13:30 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Mon, 30 Oct 2023 23:29:49 GMT
+# Fri, 01 Dec 2023 07:13:30 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Mon, 30 Oct 2023 23:29:49 GMT
+# Fri, 01 Dec 2023 07:13:31 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 30 Oct 2023 23:29:49 GMT
+# Fri, 01 Dec 2023 07:13:31 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:96526aa774ef0126ad0fe9e9a95764c5fc37f409ab9e97021e7b4775d82bf6fa`  
-		Last Modified: Thu, 28 Sep 2023 21:22:06 GMT  
-		Size: 3.4 MB (3401967 bytes)  
+	-	`sha256:c926b61bad3b94ae7351bafd0c184c159ebf0643b085f7ef1d47ecdc7316833c`  
+		Last Modified: Thu, 30 Nov 2023 23:23:28 GMT  
+		Size: 3.4 MB (3402422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3c4df72d74e9b84f1215596adc1b562a87b2c2bd9249ba1433455079b00218`  
-		Last Modified: Mon, 30 Oct 2023 23:35:19 GMT  
-		Size: 13.1 MB (13141022 bytes)  
+	-	`sha256:e5820a814e8c90e2b86457ad1da29a79516ae242489d7bf67ea216d150c1efdc`  
+		Last Modified: Fri, 01 Dec 2023 07:15:58 GMT  
+		Size: 13.1 MB (13141060 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:557d0e6d84070f1613c688db633bc297fea0a029d3a22d4fe738533f232c1d43`  
-		Last Modified: Mon, 30 Oct 2023 23:38:41 GMT  
-		Size: 157.7 MB (157664989 bytes)  
+	-	`sha256:fd0a188ff282b81403d8a726aacd5d985ef4761a8a8f5c876dea381e7a9337a2`  
+		Last Modified: Fri, 01 Dec 2023 07:16:52 GMT  
+		Size: 157.7 MB (157664998 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b015da0bc5f29d7e54638ef2c9b6621d293e70c697f7a84d606b0c468ad4bbb9`  
-		Last Modified: Mon, 30 Oct 2023 23:38:29 GMT  
-		Size: 174.0 B  
+	-	`sha256:1103e3032e0ab2751fa60d490107a4b908c287ed9264496a5285c5127ba8a8b1`  
+		Last Modified: Fri, 01 Dec 2023 07:16:39 GMT  
+		Size: 176.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ae9403a54ca68efac5723aeaa16e4f4fb7045e4d0fa413ee823194acd675092`  
-		Last Modified: Mon, 30 Oct 2023 23:38:29 GMT  
-		Size: 733.0 B  
+	-	`sha256:dab03e20f0bc9420a8ab17a6aa1f2cad9ff28b9394902fedb9e44ef361a7edca`  
+		Last Modified: Fri, 01 Dec 2023 07:16:39 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:21-alpine` - linux; arm64 variant v8
@@ -26361,7 +26361,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:21-jdk-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:5ec20e4957ebf16ca44f7ff982654882d526c029def0289fc2a1be08a12e0b6d
+$ docker pull eclipse-temurin@sha256:075f8207cbfecf7e509e2d93e2ffc36c097b52a8109a9bfd40326fa12bd5c438
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -26372,64 +26372,64 @@ $ docker pull eclipse-temurin@sha256:5ec20e4957ebf16ca44f7ff982654882d526c029def
 ### `eclipse-temurin:21-jdk-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:76163bd4f26586627c4257472f7115d7e9b1d9e05cca2b33b36b7d358316c366
+$ docker pull eclipse-temurin@sha256:7e1c2f37fffae18238a4bb018080a0a46d23bfe646d0e1eaacb35a4fdf383a2d
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.2 MB (174208885 bytes)**  
+-	Total Size: **174.2 MB (174209390 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74024acf447190e0b1cc02c972ed6546b992ee2884842a64b2b99702f5586c3b`
+-	Image ID: `sha256:c9017e7c8441517b002e05be8e72b0032d6d55e108e720c8ac6a5255d5611baa`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Thu, 28 Sep 2023 21:19:27 GMT
-ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / 
-# Thu, 28 Sep 2023 21:19:27 GMT
+# Thu, 30 Nov 2023 23:22:52 GMT
+ADD file:fc714080c3bcbbce7ac746a10d7b4355ffa36293a8d435d62cd5359ea8eb8364 in / 
+# Thu, 30 Nov 2023 23:22:52 GMT
 CMD ["/bin/sh"]
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 30 Oct 2023 23:26:31 GMT
+# Fri, 01 Dec 2023 07:12:38 GMT
 RUN set -eux;     apk add --no-cache         bash         fontconfig ttf-dejavu         java-cacerts         libretls zlib         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Mon, 30 Oct 2023 23:29:38 GMT
+# Fri, 01 Dec 2023 07:13:19 GMT
 ENV JAVA_VERSION=jdk-21.0.1+12
-# Mon, 30 Oct 2023 23:29:47 GMT
+# Fri, 01 Dec 2023 07:13:28 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64|arm64)          ESUM='77006c0a753808c2a6662007906eb6eb230f2fb6eb9d201a39cc46113e68f82c';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%2B12/OpenJDK21U-jdk_aarch64_alpine-linux_hotspot_21.0.1_12.tar.gz';          ;;        amd64|x86_64)          ESUM='422f23f5109056cacb9227247bebf8532e2dc3c9d505e71637ba610569d6b3ff';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%2B12/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.1_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Mon, 30 Oct 2023 23:29:49 GMT
+# Fri, 01 Dec 2023 07:13:30 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Mon, 30 Oct 2023 23:29:49 GMT
+# Fri, 01 Dec 2023 07:13:30 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Mon, 30 Oct 2023 23:29:49 GMT
+# Fri, 01 Dec 2023 07:13:31 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 30 Oct 2023 23:29:49 GMT
+# Fri, 01 Dec 2023 07:13:31 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:96526aa774ef0126ad0fe9e9a95764c5fc37f409ab9e97021e7b4775d82bf6fa`  
-		Last Modified: Thu, 28 Sep 2023 21:22:06 GMT  
-		Size: 3.4 MB (3401967 bytes)  
+	-	`sha256:c926b61bad3b94ae7351bafd0c184c159ebf0643b085f7ef1d47ecdc7316833c`  
+		Last Modified: Thu, 30 Nov 2023 23:23:28 GMT  
+		Size: 3.4 MB (3402422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3c4df72d74e9b84f1215596adc1b562a87b2c2bd9249ba1433455079b00218`  
-		Last Modified: Mon, 30 Oct 2023 23:35:19 GMT  
-		Size: 13.1 MB (13141022 bytes)  
+	-	`sha256:e5820a814e8c90e2b86457ad1da29a79516ae242489d7bf67ea216d150c1efdc`  
+		Last Modified: Fri, 01 Dec 2023 07:15:58 GMT  
+		Size: 13.1 MB (13141060 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:557d0e6d84070f1613c688db633bc297fea0a029d3a22d4fe738533f232c1d43`  
-		Last Modified: Mon, 30 Oct 2023 23:38:41 GMT  
-		Size: 157.7 MB (157664989 bytes)  
+	-	`sha256:fd0a188ff282b81403d8a726aacd5d985ef4761a8a8f5c876dea381e7a9337a2`  
+		Last Modified: Fri, 01 Dec 2023 07:16:52 GMT  
+		Size: 157.7 MB (157664998 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b015da0bc5f29d7e54638ef2c9b6621d293e70c697f7a84d606b0c468ad4bbb9`  
-		Last Modified: Mon, 30 Oct 2023 23:38:29 GMT  
-		Size: 174.0 B  
+	-	`sha256:1103e3032e0ab2751fa60d490107a4b908c287ed9264496a5285c5127ba8a8b1`  
+		Last Modified: Fri, 01 Dec 2023 07:16:39 GMT  
+		Size: 176.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ae9403a54ca68efac5723aeaa16e4f4fb7045e4d0fa413ee823194acd675092`  
-		Last Modified: Mon, 30 Oct 2023 23:38:29 GMT  
-		Size: 733.0 B  
+	-	`sha256:dab03e20f0bc9420a8ab17a6aa1f2cad9ff28b9394902fedb9e44ef361a7edca`  
+		Last Modified: Fri, 01 Dec 2023 07:16:39 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:21-jdk-alpine` - linux; arm64 variant v8
@@ -27994,7 +27994,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 ## `eclipse-temurin:21-jre-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:a923c8333eb31c298de268a41448090a37e89ca9ba26e0121127a394de7fcac2
+$ docker pull eclipse-temurin@sha256:9a21ac97b76e52f4b58d5d6c7fdd459cd600cce8724a31fc0a2b4346b35bced2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -28005,61 +28005,61 @@ $ docker pull eclipse-temurin@sha256:a923c8333eb31c298de268a41448090a37e89ca9ba2
 ### `eclipse-temurin:21-jre-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:6b990458235e07c018abfc2d21f6f284789e3f97cf542402ad226b3724d8ea7b
+$ docker pull eclipse-temurin@sha256:98963ed09c4fd82e128c6cc9e64d71798239b824164276626d79b8f9e666ac0e
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.7 MB (69651770 bytes)**  
+-	Total Size: **69.7 MB (69652231 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:645c1bf95327b6da1f574c3215f04ab8f47b92bdfb228593ad92e2fdec309f78`
+-	Image ID: `sha256:b4914e3ddb9fa05c8af3baf74fbaef1144b3a122bb31e75a4d0cccf10c8b5a87`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
-# Thu, 28 Sep 2023 21:19:27 GMT
-ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / 
-# Thu, 28 Sep 2023 21:19:27 GMT
+# Thu, 30 Nov 2023 23:22:52 GMT
+ADD file:fc714080c3bcbbce7ac746a10d7b4355ffa36293a8d435d62cd5359ea8eb8364 in / 
+# Thu, 30 Nov 2023 23:22:52 GMT
 CMD ["/bin/sh"]
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 30 Oct 2023 23:26:31 GMT
+# Fri, 01 Dec 2023 07:12:38 GMT
 RUN set -eux;     apk add --no-cache         bash         fontconfig ttf-dejavu         java-cacerts         libretls zlib         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Mon, 30 Oct 2023 23:29:38 GMT
+# Fri, 01 Dec 2023 07:13:19 GMT
 ENV JAVA_VERSION=jdk-21.0.1+12
-# Mon, 30 Oct 2023 23:30:26 GMT
+# Fri, 01 Dec 2023 07:13:43 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64|arm64)          ESUM='2898ea1ddf6f70f09b09cf99d928f6d4c862f78f81104f5dce3e44a832b8444a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%2B12/OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.1_12.tar.gz';          ;;        amd64|x86_64)          ESUM='a8fcc43927664ba191c9a77d1013f1f32fec1acc22fe6f0c29d687221f2cc95d';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%2B12/OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.1_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Mon, 30 Oct 2023 23:30:27 GMT
+# Fri, 01 Dec 2023 07:13:43 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete."
-# Mon, 30 Oct 2023 23:30:27 GMT
+# Fri, 01 Dec 2023 07:13:44 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Mon, 30 Oct 2023 23:30:27 GMT
+# Fri, 01 Dec 2023 07:13:44 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:96526aa774ef0126ad0fe9e9a95764c5fc37f409ab9e97021e7b4775d82bf6fa`  
-		Last Modified: Thu, 28 Sep 2023 21:22:06 GMT  
-		Size: 3.4 MB (3401967 bytes)  
+	-	`sha256:c926b61bad3b94ae7351bafd0c184c159ebf0643b085f7ef1d47ecdc7316833c`  
+		Last Modified: Thu, 30 Nov 2023 23:23:28 GMT  
+		Size: 3.4 MB (3402422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3c4df72d74e9b84f1215596adc1b562a87b2c2bd9249ba1433455079b00218`  
-		Last Modified: Mon, 30 Oct 2023 23:35:19 GMT  
-		Size: 13.1 MB (13141022 bytes)  
+	-	`sha256:e5820a814e8c90e2b86457ad1da29a79516ae242489d7bf67ea216d150c1efdc`  
+		Last Modified: Fri, 01 Dec 2023 07:15:58 GMT  
+		Size: 13.1 MB (13141060 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e53c664d1ad8d93ebe74f0c8ce9e83c1af21e4ffc62d673684686c8389bc861`  
-		Last Modified: Mon, 30 Oct 2023 23:39:47 GMT  
-		Size: 53.1 MB (53107888 bytes)  
+	-	`sha256:7eb0e0966f8cc835f3d3a483b71a14d7d77316b572590eb5939f666628f4a6eb`  
+		Last Modified: Fri, 01 Dec 2023 07:17:12 GMT  
+		Size: 53.1 MB (53107853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a5648fe788e03429688be53b769e2e1655f9a5742c41f292de712717111cba9`  
-		Last Modified: Mon, 30 Oct 2023 23:39:40 GMT  
-		Size: 160.0 B  
+	-	`sha256:c432e8ceb055226cee91abbb52b686f14a2844a21e0581121ea7d326eb0e4793`  
+		Last Modified: Fri, 01 Dec 2023 07:17:05 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06d2969233a3c78bcc756a87424372bc2b3ebc6c97ef1a7f1e63c42cfe7d51b`  
-		Last Modified: Mon, 30 Oct 2023 23:39:40 GMT  
-		Size: 733.0 B  
+	-	`sha256:80f9f010fdd74178cb5351c8cd057c6887939fa59c631e03ede532a24ce09a2a`  
+		Last Modified: Fri, 01 Dec 2023 07:17:05 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:21-jre-alpine` - linux; arm64 variant v8
@@ -30519,7 +30519,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:21.0.1_12-jdk-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:5ec20e4957ebf16ca44f7ff982654882d526c029def0289fc2a1be08a12e0b6d
+$ docker pull eclipse-temurin@sha256:075f8207cbfecf7e509e2d93e2ffc36c097b52a8109a9bfd40326fa12bd5c438
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -30530,64 +30530,64 @@ $ docker pull eclipse-temurin@sha256:5ec20e4957ebf16ca44f7ff982654882d526c029def
 ### `eclipse-temurin:21.0.1_12-jdk-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:76163bd4f26586627c4257472f7115d7e9b1d9e05cca2b33b36b7d358316c366
+$ docker pull eclipse-temurin@sha256:7e1c2f37fffae18238a4bb018080a0a46d23bfe646d0e1eaacb35a4fdf383a2d
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.2 MB (174208885 bytes)**  
+-	Total Size: **174.2 MB (174209390 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74024acf447190e0b1cc02c972ed6546b992ee2884842a64b2b99702f5586c3b`
+-	Image ID: `sha256:c9017e7c8441517b002e05be8e72b0032d6d55e108e720c8ac6a5255d5611baa`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Thu, 28 Sep 2023 21:19:27 GMT
-ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / 
-# Thu, 28 Sep 2023 21:19:27 GMT
+# Thu, 30 Nov 2023 23:22:52 GMT
+ADD file:fc714080c3bcbbce7ac746a10d7b4355ffa36293a8d435d62cd5359ea8eb8364 in / 
+# Thu, 30 Nov 2023 23:22:52 GMT
 CMD ["/bin/sh"]
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 30 Oct 2023 23:26:31 GMT
+# Fri, 01 Dec 2023 07:12:38 GMT
 RUN set -eux;     apk add --no-cache         bash         fontconfig ttf-dejavu         java-cacerts         libretls zlib         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Mon, 30 Oct 2023 23:29:38 GMT
+# Fri, 01 Dec 2023 07:13:19 GMT
 ENV JAVA_VERSION=jdk-21.0.1+12
-# Mon, 30 Oct 2023 23:29:47 GMT
+# Fri, 01 Dec 2023 07:13:28 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64|arm64)          ESUM='77006c0a753808c2a6662007906eb6eb230f2fb6eb9d201a39cc46113e68f82c';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%2B12/OpenJDK21U-jdk_aarch64_alpine-linux_hotspot_21.0.1_12.tar.gz';          ;;        amd64|x86_64)          ESUM='422f23f5109056cacb9227247bebf8532e2dc3c9d505e71637ba610569d6b3ff';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%2B12/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.1_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Mon, 30 Oct 2023 23:29:49 GMT
+# Fri, 01 Dec 2023 07:13:30 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Mon, 30 Oct 2023 23:29:49 GMT
+# Fri, 01 Dec 2023 07:13:30 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Mon, 30 Oct 2023 23:29:49 GMT
+# Fri, 01 Dec 2023 07:13:31 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 30 Oct 2023 23:29:49 GMT
+# Fri, 01 Dec 2023 07:13:31 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:96526aa774ef0126ad0fe9e9a95764c5fc37f409ab9e97021e7b4775d82bf6fa`  
-		Last Modified: Thu, 28 Sep 2023 21:22:06 GMT  
-		Size: 3.4 MB (3401967 bytes)  
+	-	`sha256:c926b61bad3b94ae7351bafd0c184c159ebf0643b085f7ef1d47ecdc7316833c`  
+		Last Modified: Thu, 30 Nov 2023 23:23:28 GMT  
+		Size: 3.4 MB (3402422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3c4df72d74e9b84f1215596adc1b562a87b2c2bd9249ba1433455079b00218`  
-		Last Modified: Mon, 30 Oct 2023 23:35:19 GMT  
-		Size: 13.1 MB (13141022 bytes)  
+	-	`sha256:e5820a814e8c90e2b86457ad1da29a79516ae242489d7bf67ea216d150c1efdc`  
+		Last Modified: Fri, 01 Dec 2023 07:15:58 GMT  
+		Size: 13.1 MB (13141060 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:557d0e6d84070f1613c688db633bc297fea0a029d3a22d4fe738533f232c1d43`  
-		Last Modified: Mon, 30 Oct 2023 23:38:41 GMT  
-		Size: 157.7 MB (157664989 bytes)  
+	-	`sha256:fd0a188ff282b81403d8a726aacd5d985ef4761a8a8f5c876dea381e7a9337a2`  
+		Last Modified: Fri, 01 Dec 2023 07:16:52 GMT  
+		Size: 157.7 MB (157664998 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b015da0bc5f29d7e54638ef2c9b6621d293e70c697f7a84d606b0c468ad4bbb9`  
-		Last Modified: Mon, 30 Oct 2023 23:38:29 GMT  
-		Size: 174.0 B  
+	-	`sha256:1103e3032e0ab2751fa60d490107a4b908c287ed9264496a5285c5127ba8a8b1`  
+		Last Modified: Fri, 01 Dec 2023 07:16:39 GMT  
+		Size: 176.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ae9403a54ca68efac5723aeaa16e4f4fb7045e4d0fa413ee823194acd675092`  
-		Last Modified: Mon, 30 Oct 2023 23:38:29 GMT  
-		Size: 733.0 B  
+	-	`sha256:dab03e20f0bc9420a8ab17a6aa1f2cad9ff28b9394902fedb9e44ef361a7edca`  
+		Last Modified: Fri, 01 Dec 2023 07:16:39 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:21.0.1_12-jdk-alpine` - linux; arm64 variant v8
@@ -32152,7 +32152,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 ## `eclipse-temurin:21.0.1_12-jre-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:a923c8333eb31c298de268a41448090a37e89ca9ba26e0121127a394de7fcac2
+$ docker pull eclipse-temurin@sha256:9a21ac97b76e52f4b58d5d6c7fdd459cd600cce8724a31fc0a2b4346b35bced2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -32163,61 +32163,61 @@ $ docker pull eclipse-temurin@sha256:a923c8333eb31c298de268a41448090a37e89ca9ba2
 ### `eclipse-temurin:21.0.1_12-jre-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:6b990458235e07c018abfc2d21f6f284789e3f97cf542402ad226b3724d8ea7b
+$ docker pull eclipse-temurin@sha256:98963ed09c4fd82e128c6cc9e64d71798239b824164276626d79b8f9e666ac0e
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.7 MB (69651770 bytes)**  
+-	Total Size: **69.7 MB (69652231 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:645c1bf95327b6da1f574c3215f04ab8f47b92bdfb228593ad92e2fdec309f78`
+-	Image ID: `sha256:b4914e3ddb9fa05c8af3baf74fbaef1144b3a122bb31e75a4d0cccf10c8b5a87`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
-# Thu, 28 Sep 2023 21:19:27 GMT
-ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / 
-# Thu, 28 Sep 2023 21:19:27 GMT
+# Thu, 30 Nov 2023 23:22:52 GMT
+ADD file:fc714080c3bcbbce7ac746a10d7b4355ffa36293a8d435d62cd5359ea8eb8364 in / 
+# Thu, 30 Nov 2023 23:22:52 GMT
 CMD ["/bin/sh"]
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 19 Oct 2023 02:50:15 GMT
+# Fri, 01 Dec 2023 07:11:18 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 30 Oct 2023 23:26:31 GMT
+# Fri, 01 Dec 2023 07:12:38 GMT
 RUN set -eux;     apk add --no-cache         bash         fontconfig ttf-dejavu         java-cacerts         libretls zlib         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Mon, 30 Oct 2023 23:29:38 GMT
+# Fri, 01 Dec 2023 07:13:19 GMT
 ENV JAVA_VERSION=jdk-21.0.1+12
-# Mon, 30 Oct 2023 23:30:26 GMT
+# Fri, 01 Dec 2023 07:13:43 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64|arm64)          ESUM='2898ea1ddf6f70f09b09cf99d928f6d4c862f78f81104f5dce3e44a832b8444a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%2B12/OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.1_12.tar.gz';          ;;        amd64|x86_64)          ESUM='a8fcc43927664ba191c9a77d1013f1f32fec1acc22fe6f0c29d687221f2cc95d';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%2B12/OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.1_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Mon, 30 Oct 2023 23:30:27 GMT
+# Fri, 01 Dec 2023 07:13:43 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete."
-# Mon, 30 Oct 2023 23:30:27 GMT
+# Fri, 01 Dec 2023 07:13:44 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Mon, 30 Oct 2023 23:30:27 GMT
+# Fri, 01 Dec 2023 07:13:44 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:96526aa774ef0126ad0fe9e9a95764c5fc37f409ab9e97021e7b4775d82bf6fa`  
-		Last Modified: Thu, 28 Sep 2023 21:22:06 GMT  
-		Size: 3.4 MB (3401967 bytes)  
+	-	`sha256:c926b61bad3b94ae7351bafd0c184c159ebf0643b085f7ef1d47ecdc7316833c`  
+		Last Modified: Thu, 30 Nov 2023 23:23:28 GMT  
+		Size: 3.4 MB (3402422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3c4df72d74e9b84f1215596adc1b562a87b2c2bd9249ba1433455079b00218`  
-		Last Modified: Mon, 30 Oct 2023 23:35:19 GMT  
-		Size: 13.1 MB (13141022 bytes)  
+	-	`sha256:e5820a814e8c90e2b86457ad1da29a79516ae242489d7bf67ea216d150c1efdc`  
+		Last Modified: Fri, 01 Dec 2023 07:15:58 GMT  
+		Size: 13.1 MB (13141060 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e53c664d1ad8d93ebe74f0c8ce9e83c1af21e4ffc62d673684686c8389bc861`  
-		Last Modified: Mon, 30 Oct 2023 23:39:47 GMT  
-		Size: 53.1 MB (53107888 bytes)  
+	-	`sha256:7eb0e0966f8cc835f3d3a483b71a14d7d77316b572590eb5939f666628f4a6eb`  
+		Last Modified: Fri, 01 Dec 2023 07:17:12 GMT  
+		Size: 53.1 MB (53107853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a5648fe788e03429688be53b769e2e1655f9a5742c41f292de712717111cba9`  
-		Last Modified: Mon, 30 Oct 2023 23:39:40 GMT  
-		Size: 160.0 B  
+	-	`sha256:c432e8ceb055226cee91abbb52b686f14a2844a21e0581121ea7d326eb0e4793`  
+		Last Modified: Fri, 01 Dec 2023 07:17:05 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06d2969233a3c78bcc756a87424372bc2b3ebc6c97ef1a7f1e63c42cfe7d51b`  
-		Last Modified: Mon, 30 Oct 2023 23:39:40 GMT  
-		Size: 733.0 B  
+	-	`sha256:80f9f010fdd74178cb5351c8cd057c6887939fa59c631e03ede532a24ce09a2a`  
+		Last Modified: Fri, 01 Dec 2023 07:17:05 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:21.0.1_12-jre-alpine` - linux; arm64 variant v8
