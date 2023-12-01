@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9d504c320aadfc62f53460a49acdb819dd89cd28c3f94cf0fefdfe52fe2cdf4f`
-- Created: `2023-10-21T03:51:14.595006611Z`
-- Virtual Size: ~ 146.83 Mb  
+- Image ID: `sha256:01fb310ed190dae7579746e9d81457877b88a39ee433204ea090299bd92290a8`
+- Created: `2023-12-01T06:08:18.447335993Z`
+- Virtual Size: ~ 142.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -902,16 +902,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.11-r0 description:
+libcrypto3-3.0.12-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.0.11-r0 webpage:
+libcrypto3-3.0.12-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.11-r0 installed size:
+libcrypto3-3.0.12-r1 installed size:
 4120 KiB
 
-libcrypto3-3.0.11-r0 license:
+libcrypto3-3.0.12-r1 license:
 Apache-2.0
 
 ```
@@ -987,16 +987,16 @@ custom
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.11-r0 description:
+libssl3-3.0.12-r1 description:
 SSL shared libraries
 
-libssl3-3.0.11-r0 webpage:
+libssl3-3.0.12-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.11-r0 installed size:
+libssl3-3.0.12-r1 installed size:
 608 KiB
 
-libssl3-3.0.11-r0 license:
+libssl3-3.0.12-r1 license:
 Apache-2.0
 
 ```
@@ -1106,16 +1106,16 @@ MIT
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.0.11-r0 description:
+openssl-3.0.12-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.0.11-r0 webpage:
+openssl-3.0.12-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.0.11-r0 installed size:
+openssl-3.0.12-r1 installed size:
 872 KiB
 
-openssl-3.0.11-r0 license:
+openssl-3.0.12-r1 license:
 Apache-2.0
 
 ```
@@ -1157,16 +1157,16 @@ GPL-2.0-or-later
 ### `apk` package: `runtime-dependencies`
 
 ```console
-runtime-dependencies-20231021.034731 description:
+runtime-dependencies-20231201.060435 description:
 virtual meta package
 
-runtime-dependencies-20231021.034731 webpage:
+runtime-dependencies-20231201.060435 webpage:
 
 
-runtime-dependencies-20231021.034731 installed size:
+runtime-dependencies-20231201.060435 installed size:
 0 B
 
-runtime-dependencies-20231021.034731 license:
+runtime-dependencies-20231201.060435 license:
 
 
 ```

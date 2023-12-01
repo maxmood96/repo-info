@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7e6c3e007e0d00356b65128946c917bd8ed311d88d77e0f4d8e79aba1ad48f5d`
-- Created: `2023-10-21T03:51:31.490587281Z`
-- Virtual Size: ~ 479.51 Mb  
+- Image ID: `sha256:e0c7638026d75882178dce1ed596b1ce1c589d894b6616e1881505e2cbf03ca7`
+- Created: `2023-12-01T06:08:36.42444384Z`
+- Virtual Size: ~ 474.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -1157,16 +1157,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.11-r0 description:
+libcrypto3-3.0.12-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.0.11-r0 webpage:
+libcrypto3-3.0.12-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.11-r0 installed size:
+libcrypto3-3.0.12-r1 installed size:
 4120 KiB
 
-libcrypto3-3.0.11-r0 license:
+libcrypto3-3.0.12-r1 license:
 Apache-2.0
 
 ```
@@ -1293,16 +1293,16 @@ custom
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.11-r0 description:
+libssl3-3.0.12-r1 description:
 SSL shared libraries
 
-libssl3-3.0.11-r0 webpage:
+libssl3-3.0.12-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.11-r0 installed size:
+libssl3-3.0.12-r1 installed size:
 608 KiB
 
-libssl3-3.0.11-r0 license:
+libssl3-3.0.12-r1 license:
 Apache-2.0
 
 ```
@@ -1548,16 +1548,16 @@ MIT
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.0.11-r0 description:
+openssl-3.0.12-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.0.11-r0 webpage:
+openssl-3.0.12-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.0.11-r0 installed size:
+openssl-3.0.12-r1 installed size:
 872 KiB
 
-openssl-3.0.11-r0 license:
+openssl-3.0.12-r1 license:
 Apache-2.0
 
 ```
@@ -1565,16 +1565,16 @@ Apache-2.0
 ### `apk` package: `openssl-dev`
 
 ```console
-openssl-dev-3.0.11-r0 description:
+openssl-dev-3.0.12-r1 description:
 Toolkit for Transport Layer Security (TLS) (development files)
 
-openssl-dev-3.0.11-r0 webpage:
+openssl-dev-3.0.12-r1 webpage:
 https://www.openssl.org/
 
-openssl-dev-3.0.11-r0 installed size:
+openssl-dev-3.0.12-r1 installed size:
 2228 KiB
 
-openssl-dev-3.0.11-r0 license:
+openssl-dev-3.0.12-r1 license:
 Apache-2.0
 
 ```
@@ -1599,16 +1599,16 @@ GPL-3.0-or-later
 ### `apk` package: `perl`
 
 ```console
-perl-5.36.0-r2 description:
+perl-5.36.2-r0 description:
 Larry Wall's Practical Extraction and Report Language
 
-perl-5.36.0-r2 webpage:
+perl-5.36.2-r0 webpage:
 https://www.perl.org/
 
-perl-5.36.0-r2 installed size:
-37 MiB
+perl-5.36.2-r0 installed size:
+38 MiB
 
-perl-5.36.0-r2 license:
+perl-5.36.2-r0 license:
 Artistic-Perl OR GPL-1.0-or-later
 
 ```
@@ -1684,16 +1684,16 @@ rhash-libs-1.4.3-r1 license:
 ### `apk` package: `runtime-dependencies`
 
 ```console
-runtime-dependencies-20231021.034731 description:
+runtime-dependencies-20231201.060435 description:
 virtual meta package
 
-runtime-dependencies-20231021.034731 webpage:
+runtime-dependencies-20231201.060435 webpage:
 
 
-runtime-dependencies-20231021.034731 installed size:
+runtime-dependencies-20231201.060435 installed size:
 0 B
 
-runtime-dependencies-20231021.034731 license:
+runtime-dependencies-20231201.060435 license:
 
 
 ```
