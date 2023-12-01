@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:14c147f042c3e3d47f78ed13a682ea9a6a254879055643cdc73026aeedaec7db`
-- Created: `2023-10-31T05:25:38.619504898Z`
-- Virtual Size: ~ 501.98 Mb  
+- Image ID: `sha256:1cd0fe189fdf6396bfee2fef7fef40cff08413b71d7b575e45fcadf51e1926b8`
+- Created: `2023-12-01T09:55:18.792608223Z`
+- Virtual Size: ~ 501.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -160,16 +160,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.36.1-r2 description:
+busybox-1.36.1-r5 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.36.1-r2 webpage:
+busybox-1.36.1-r5 webpage:
 https://busybox.net/
 
-busybox-1.36.1-r2 installed size:
+busybox-1.36.1-r5 installed size:
 924 KiB
 
-busybox-1.36.1-r2 license:
+busybox-1.36.1-r5 license:
 GPL-2.0-only
 
 ```
@@ -177,16 +177,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.36.1-r2 description:
+busybox-binsh-1.36.1-r5 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.36.1-r2 webpage:
+busybox-binsh-1.36.1-r5 webpage:
 https://busybox.net/
 
-busybox-binsh-1.36.1-r2 installed size:
+busybox-binsh-1.36.1-r5 installed size:
 8192 B
 
-busybox-binsh-1.36.1-r2 license:
+busybox-binsh-1.36.1-r5 license:
 GPL-2.0-only
 
 ```
@@ -330,16 +330,16 @@ GPL-2.0-only
 ### `apk` package: `git-lfs`
 
 ```console
-git-lfs-3.3.0-r5 description:
+git-lfs-3.3.0-r6 description:
 Git extension for versioning large files
 
-git-lfs-3.3.0-r5 webpage:
+git-lfs-3.3.0-r6 webpage:
 https://git-lfs.github.io/
 
-git-lfs-3.3.0-r5 installed size:
+git-lfs-3.3.0-r6 installed size:
 11 MiB
 
-git-lfs-3.3.0-r5 license:
+git-lfs-3.3.0-r6 license:
 MIT
 
 ```
@@ -398,16 +398,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.3-r0 description:
+libcrypto3-3.1.4-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.1.3-r0 webpage:
+libcrypto3-3.1.4-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.3-r0 installed size:
-4468 KiB
+libcrypto3-3.1.4-r1 installed size:
+4472 KiB
 
-libcrypto3-3.1.3-r0 license:
+libcrypto3-3.1.4-r1 license:
 Apache-2.0
 
 ```
@@ -619,16 +619,16 @@ custom
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.3-r0 description:
+libssl3-3.1.4-r1 description:
 SSL shared libraries
 
-libssl3-3.1.3-r0 webpage:
+libssl3-3.1.4-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.3-r0 installed size:
+libssl3-3.1.4-r1 installed size:
 552 KiB
 
-libssl3-3.1.3-r0 license:
+libssl3-3.1.4-r1 license:
 Apache-2.0
 
 ```
@@ -789,16 +789,16 @@ BSD-2-Clause
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.4-r1 description:
+musl-1.2.4-r2 description:
 the musl c library (libc) implementation
 
-musl-1.2.4-r1 webpage:
+musl-1.2.4-r2 webpage:
 https://musl.libc.org/
 
-musl-1.2.4-r1 installed size:
+musl-1.2.4-r2 installed size:
 620 KiB
 
-musl-1.2.4-r1 license:
+musl-1.2.4-r2 license:
 MIT
 
 ```
@@ -840,16 +840,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.4-r1 description:
+musl-utils-1.2.4-r2 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.4-r1 webpage:
+musl-utils-1.2.4-r2 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.4-r1 installed size:
+musl-utils-1.2.4-r2 installed size:
 132 KiB
 
-musl-utils-1.2.4-r1 license:
+musl-utils-1.2.4-r2 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -1078,16 +1078,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.36.1-r2 description:
+ssl_client-1.36.1-r5 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.36.1-r2 webpage:
+ssl_client-1.36.1-r5 webpage:
 https://busybox.net/
 
-ssl_client-1.36.1-r2 installed size:
+ssl_client-1.36.1-r5 installed size:
 28 KiB
 
-ssl_client-1.36.1-r2 license:
+ssl_client-1.36.1-r5 license:
 GPL-2.0-only
 
 ```
