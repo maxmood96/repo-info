@@ -1,7 +1,7 @@
 ## `sapmachine:11-ubuntu-jammy`
 
 ```console
-$ docker pull sapmachine@sha256:15bd1671e5a4c328ed5ce6c3ed45dce5747e3a6d4e4d1cb9bd31bec2ddb85dd2
+$ docker pull sapmachine@sha256:6b12d87dd38d3e79acec8e52d332efd65d736fc47d0d7f262956b895e9def7f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,45 +13,45 @@ $ docker pull sapmachine@sha256:15bd1671e5a4c328ed5ce6c3ed45dce5747e3a6d4e4d1cb9
 ### `sapmachine:11-ubuntu-jammy` - linux; amd64
 
 ```console
-$ docker pull sapmachine@sha256:4d3a3e5d90f57cd2245bb1c7a0b3fa05b2c28345865191f00c5debaa48ac72f3
+$ docker pull sapmachine@sha256:f0c2d3efa1842a6f6eb0d47375551827a978943916f38c4d035ad5efb8743eb6
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.8 MB (230817325 bytes)**  
+-	Total Size: **230.8 MB (230824800 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4312d63c729b013911a570b81d556efda67c3110a3d4b3c81abec4f9f4c4ad19`
+-	Image ID: `sha256:bd09fa892da2b9e49fd8c794694a95c05118dad41e4783812f4999ab55abdbfc`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Thu, 05 Oct 2023 07:33:30 GMT
+# Fri, 01 Dec 2023 07:49:48 GMT
 ARG RELEASE
-# Thu, 05 Oct 2023 07:33:30 GMT
+# Fri, 01 Dec 2023 07:49:48 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 05 Oct 2023 07:33:30 GMT
+# Fri, 01 Dec 2023 07:49:48 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 05 Oct 2023 07:33:30 GMT
+# Fri, 01 Dec 2023 07:49:48 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 05 Oct 2023 07:33:32 GMT
-ADD file:63d5ab3ef0aab308c0e71cb67292c5467f60deafa9b0418cbb220affcd078444 in / 
-# Thu, 05 Oct 2023 07:33:32 GMT
+# Fri, 01 Dec 2023 07:49:50 GMT
+ADD file:36d444e2cede3abe58191dcf28890b874c0908f5259bf7e8855338555701c4c5 in / 
+# Fri, 01 Dec 2023 07:49:50 GMT
 CMD ["/bin/bash"]
-# Thu, 19 Oct 2023 21:22:56 GMT
+# Sat, 02 Dec 2023 03:03:03 GMT
 RUN apt-get update     && apt-get -y --no-install-recommends install ca-certificates gnupg     && export GNUPGHOME="$(mktemp -d)"     && gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/sapmachine.gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys CACB9FE09150307D1D22D82962754C3B3ABCFE23     && chmod 644 /etc/apt/trusted.gpg.d/sapmachine.gpg     && echo "deb http://dist.sapmachine.io/debian/$(dpkg --print-architecture)/ ./" > /etc/apt/sources.list.d/sapmachine.list     && apt-get update     && apt-get -y --no-install-recommends install sapmachine-11-jdk=11.0.21     && apt-get remove -y --purge --autoremove ca-certificates gnupg     && rm -rf "$GNUPGHOME" /var/lib/apt/lists/*
-# Thu, 19 Oct 2023 21:22:57 GMT
+# Sat, 02 Dec 2023 03:03:04 GMT
 ENV JAVA_HOME=/usr/lib/jvm/sapmachine-11
-# Thu, 19 Oct 2023 21:22:57 GMT
+# Sat, 02 Dec 2023 03:03:04 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:43f89b94cd7df92a2f7e565b8fb1b7f502eff2cd225508cbd7ea2d36a9a3a601`  
-		Last Modified: Thu, 05 Oct 2023 08:42:10 GMT  
-		Size: 30.4 MB (30439111 bytes)  
+	-	`sha256:cbe3537751ce03ea42788c2fbe2d5d336180dc2e20472c8cdba8b3224191d101`  
+		Last Modified: Wed, 29 Nov 2023 19:24:54 GMT  
+		Size: 30.4 MB (30446322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:150fcfdc62e01f7eff3f2150eec6e365bd0b2e0049488e97c4eab3d196c06ed9`  
-		Last Modified: Thu, 19 Oct 2023 21:30:37 GMT  
-		Size: 200.4 MB (200378214 bytes)  
+	-	`sha256:540202a905fa29d3d0c18686fcd97e63091e459f9fc500c656c7d998c71dc955`  
+		Last Modified: Sat, 02 Dec 2023 03:10:07 GMT  
+		Size: 200.4 MB (200378478 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `sapmachine:11-ubuntu-jammy` - linux; arm64 variant v8
