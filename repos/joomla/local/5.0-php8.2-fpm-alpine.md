@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:81f452f38b827ec2815a681bd68373d1f8fdba3221665f123f756ca286842855`
-- Created: `2023-11-29T01:30:07.080350198Z`
-- Virtual Size: ~ 324.16 Mb  
+- Image ID: `sha256:3fef2de4bb409d142018be2d7fb61b331bd6f980979dc1ad50ddb688cad475b2`
+- Created: `2023-12-01T08:09:07.651282472Z`
+- Virtual Size: ~ 317.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -185,16 +185,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.36.1-r2 description:
+busybox-1.36.1-r5 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.36.1-r2 webpage:
+busybox-1.36.1-r5 webpage:
 https://busybox.net/
 
-busybox-1.36.1-r2 installed size:
+busybox-1.36.1-r5 installed size:
 924 KiB
 
-busybox-1.36.1-r2 license:
+busybox-1.36.1-r5 license:
 GPL-2.0-only
 
 ```
@@ -202,16 +202,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.36.1-r2 description:
+busybox-binsh-1.36.1-r5 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.36.1-r2 webpage:
+busybox-binsh-1.36.1-r5 webpage:
 https://busybox.net/
 
-busybox-binsh-1.36.1-r2 installed size:
+busybox-binsh-1.36.1-r5 installed size:
 8192 B
 
-busybox-binsh-1.36.1-r2 license:
+busybox-binsh-1.36.1-r5 license:
 GPL-2.0-only
 
 ```
@@ -1409,16 +1409,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.4-r1 description:
+musl-utils-1.2.4-r2 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.4-r1 webpage:
+musl-utils-1.2.4-r2 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.4-r1 installed size:
+musl-utils-1.2.4-r2 installed size:
 132 KiB
 
-musl-utils-1.2.4-r1 license:
+musl-utils-1.2.4-r2 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -1681,16 +1681,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.36.1-r2 description:
+ssl_client-1.36.1-r5 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.36.1-r2 webpage:
+ssl_client-1.36.1-r5 webpage:
 https://busybox.net/
 
-ssl_client-1.36.1-r2 installed size:
+ssl_client-1.36.1-r5 installed size:
 28 KiB
 
-ssl_client-1.36.1-r2 license:
+ssl_client-1.36.1-r5 license:
 GPL-2.0-only
 
 ```
