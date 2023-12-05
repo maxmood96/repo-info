@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:194961637a94c49e7e4e866077db62535a28131f8eee30f289a32b51974dc899`
-- Created: `2023-10-13T09:27:18.302101117Z`
+- Image ID: `sha256:037b6d758152039293f5d18633f43e3ad58848dafcfc03774a60763735b209d0`
+- Created: `2023-12-02T05:55:31.31617745Z`
 - Virtual Size: ~ 3.06 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -160,11 +160,11 @@ $ apt-get source -qq --print-uris aom=3.3.0-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/a/aom/aom_3.3.0-1.debian.tar.xz' aom_3.3.0-1.debian.tar.xz 12196 SHA512:9d9ce835899a614fc049cb67bc6c946ac2d52ce3fbb39561771bba1bcf3d03c8c1eb1ff4814a2d5de14d6007c3554696a9703d74de0410da2b5b97e5b22954ba
 ```
 
-### `dpkg` source package: `apparmor=3.0.4-2ubuntu2.2`
+### `dpkg` source package: `apparmor=3.0.4-2ubuntu2.3`
 
 Binary Packages:
 
-- `libapparmor1:amd64=3.0.4-2ubuntu2.2`
+- `libapparmor1:amd64=3.0.4-2ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 
@@ -174,25 +174,35 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apparmor=3.0.4-2ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.3.dsc' apparmor_3.0.4-2ubuntu2.3.dsc 2927 SHA512:21a9f85a851b7acf376c33dc2908d5360d4159d2021f181d51dfba5e3fe2ca7d50af4caf0a86c57da3b7ce78be967b6235177bc3b881e75683697190774a880e
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz' apparmor_3.0.4.orig.tar.gz 7796852 SHA512:1edd800771f46fab9bc5274842e64482b7fd4a5ba4de9855d621baf1d08c8236bfa7752dd9ab3dee095f8e0798129241a9aebf68ed1c994ae5597086a4a1a8ca
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz.asc' apparmor_3.0.4.orig.tar.gz.asc 870 SHA512:870d3037562ae003e642adcd244b74191e9108cebd18e6a925959e595b5a375e2dbfda686349e4cc980981cdd38239a099d3e32f1e824b4a9b477584c8d311a9
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.3.debian.tar.xz' apparmor_3.0.4-2ubuntu2.3.debian.tar.xz 120536 SHA512:e29f11cfa7e9433a467d1712e4f751286973a375fbaf040985f95c3c1c2fd32d2a820eb9f7418828df59bb77475699e0d2832f5d6b9b9016cb4ab11424bd8967
+```
 
-### `dpkg` source package: `apt=2.4.10`
+### `dpkg` source package: `apt=2.4.11`
 
 Binary Packages:
 
-- `apt=2.4.10`
-- `libapt-pkg6.0:amd64=2.4.10`
+- `apt=2.4.11`
+- `libapt-pkg6.0:amd64=2.4.11`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=2.4.11
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.11.dsc' apt_2.4.11.dsc 2801 SHA512:c47ed96f9f4abed3b7acbe78872c1621334ae3e7e45bee08cee5db266553e2dfe21312d49b4c66ce7330a664e13f227d285995b5963a5498c0c4f9f930b757ff
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.11.tar.xz' apt_2.4.11.tar.xz 2323076 SHA512:4eb92111cd897cafd8c37e79e97d8f7fbfbc32c614ad377cb6a5685a57c2144bb9b12a646abedc55444f9b5e203e8007818c7a407d7e86ff106568150ba3a248
+```
 
 ### `dpkg` source package: `argon2=0~20171227-0.3`
 
@@ -445,13 +455,13 @@ $ apt-get source -qq --print-uris autotools-dev=20220109.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/autotools-dev/autotools-dev_20220109.1.tar.xz' autotools-dev_20220109.1.tar.xz 87340 SHA512:5427cc6897685355018db547ec39fd6bcc0ecbd73ba25869fb841f3503c1753af9a323d963a2b3150ef40ff07486f39377acdec878b2c054c1fa51de9afe01bb
 ```
 
-### `dpkg` source package: `avahi=0.8-5ubuntu5.1`
+### `dpkg` source package: `avahi=0.8-5ubuntu5.2`
 
 Binary Packages:
 
-- `libavahi-client3:amd64=0.8-5ubuntu5.1`
-- `libavahi-common-data:amd64=0.8-5ubuntu5.1`
-- `libavahi-common3:amd64=0.8-5ubuntu5.1`
+- `libavahi-client3:amd64=0.8-5ubuntu5.2`
+- `libavahi-common-data:amd64=0.8-5ubuntu5.2`
+- `libavahi-common3:amd64=0.8-5ubuntu5.2`
 
 Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share/doc/libavahi-common-data/copyright`, `/usr/share/doc/libavahi-common3/copyright`)
 
@@ -459,9 +469,14 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris avahi=0.8-5ubuntu5.2
+'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-5ubuntu5.2.dsc' avahi_0.8-5ubuntu5.2.dsc 3756 SHA512:f0bb10a4442b9d37cdfd5bb2ec2cd5d40d8a94e5219b6c132de61800b8337f2a08d89bdc393b7e790a4afb5de08f262190f04c578903a090197fb5ce06281e53
+'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8.orig.tar.gz' avahi_0.8.orig.tar.gz 1591458 SHA512:c6ba76feb6e92f70289f94b3bf12e5f5c66c11628ce0aeb3cadfb72c13a5d1a9bd56d71bdf3072627a76cd103b9b056d9131aa49ffe11fa334c24ab3b596c7de
+'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-5ubuntu5.2.debian.tar.xz' avahi_0.8-5ubuntu5.2.debian.tar.xz 45172 SHA512:7953ba54ebe1c44a501825ce2b19112850b7c0854a229633ebe3d89bfb3d9bfbbabe5030d5a22f24d65d70af5fdab52d3153f803ec321853368a36e3347cc9f0
+```
 
 ### `dpkg` source package: `base-files=12ubuntu4.4`
 
@@ -1464,19 +1479,23 @@ $ apt-get source -qq --print-uris distlib=0.3.4-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/d/distlib/distlib_0.3.4-1.debian.tar.xz' distlib_0.3.4-1.debian.tar.xz 6296 SHA512:8c6d132d712b26ec79bbbaee349901456e14fc5a921e0da4dc32d98595384ce05ba78cae9450b5289cc35ea60fcd21991a6a98cb3571a7dbd8d79aae57f6f27a
 ```
 
-### `dpkg` source package: `distro-info-data=0.52ubuntu0.4`
+### `dpkg` source package: `distro-info-data=0.52ubuntu0.5`
 
 Binary Packages:
 
-- `distro-info-data=0.52ubuntu0.4`
+- `distro-info-data=0.52ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris distro-info-data=0.52ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.52ubuntu0.5.dsc' distro-info-data_0.52ubuntu0.5.dsc 1793 SHA512:a9ef3a9d5a30bdf7e28ff02ec4e4ebc403145ba778a28f22dec4ae04a9bf5b8ce912c13a25ddcd2f9055bb4a2cef2b8b1346408920ed4a7ad58de361eabbc21d
+'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.52ubuntu0.5.tar.xz' distro-info-data_0.52ubuntu0.5.tar.xz 9684 SHA512:aa770c781ba4858125a848bd40687d3017fd897ee4b1559f9c9c20290f519c06dffdaf4f6de23f9b1ad59a365e722fb249af3ce41e5636e0bdef94bbfb9bedd4
+```
 
 ### `dpkg` source package: `double-conversion=3.1.7-4`
 
@@ -2397,11 +2416,11 @@ $ apt-get source -qq --print-uris gnupg2=2.2.27-3ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.1.debian.tar.xz' gnupg2_2.2.27-3ubuntu2.1.debian.tar.xz 66676 SHA512:6f8aea12b515ef1b8558ac925bb84ae6f1743739c0edfc64e02952479d4a1271f8f6ee8fc23461164116f3f8396376009ed1ea609c55a59e4936f7d02b1f828a
 ```
 
-### `dpkg` source package: `gnutls28=3.7.3-4ubuntu1.2`
+### `dpkg` source package: `gnutls28=3.7.3-4ubuntu1.3`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.7.3-4ubuntu1.2`
+- `libgnutls30:amd64=3.7.3-4ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -2419,9 +2438,15 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls28=3.7.3-4ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.3.dsc' gnutls28_3.7.3-4ubuntu1.3.dsc 3572 SHA512:7c1ba5548662544f4e165fc6f1203e256ebdc54a305747e3ae0ee4b607036276ef9bc76a3d7279c52c815396f835c5b63a3e7b32a5e650239b60d3ad8aa60070
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz' gnutls28_3.7.3.orig.tar.xz 6119292 SHA512:3ace744affe23e284342658d6d2d2de49dd50065489cbc8be18fc7d38187253e5268ca54027ce5cd517056c249ac039a7481e4548cec04325de37ae85617d077
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz.asc' gnutls28_3.7.3.orig.tar.xz.asc 833 SHA512:cd0d30298377deddf20a835863b71e3f119588061f659906ad2684004758943179531508b1c77c730e930e2131148095e60ad9be365353cce772472d5f5345df
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.3.debian.tar.xz' gnutls28_3.7.3-4ubuntu1.3.debian.tar.xz 77476 SHA512:106d83934c67478db78c92c23a463e5954e0e64b2c0b938f6ec000e50df58080da1e09fbd909e28fe962572b8ff0b3461d4cb7eb15a5e442f44017ee1e060589
+```
 
 ### `dpkg` source package: `googletest=1.11.0-3`
 
@@ -3102,22 +3127,27 @@ $ apt-get source -qq --print-uris kmod=29-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_29-1ubuntu1.debian.tar.xz' kmod_29-1ubuntu1.debian.tar.xz 13544 SHA512:c5f867e01479a75ee7da2400f39aa8bead6a745b59f98241db834edc2730ac2316bfb165ec42638cfcb855e7a424f35a0bb7947868ef2f3affb36d56465a3c70
 ```
 
-### `dpkg` source package: `krb5=1.19.2-2ubuntu0.2`
+### `dpkg` source package: `krb5=1.19.2-2ubuntu0.3`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.19.2-2ubuntu0.2`
-- `libk5crypto3:amd64=1.19.2-2ubuntu0.2`
-- `libkrb5-3:amd64=1.19.2-2ubuntu0.2`
-- `libkrb5support0:amd64=1.19.2-2ubuntu0.2`
+- `libgssapi-krb5-2:amd64=1.19.2-2ubuntu0.3`
+- `libk5crypto3:amd64=1.19.2-2ubuntu0.3`
+- `libkrb5-3:amd64=1.19.2-2ubuntu0.3`
+- `libkrb5support0:amd64=1.19.2-2ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris krb5=1.19.2-2ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.3.dsc' krb5_1.19.2-2ubuntu0.3.dsc 3356 SHA512:924ae89c4c515c01416856d0ef4f3ff50e6258bfb922ec7d2d7b9c1af5d07af092ba07ae5f74a48859e2a0bcb507e572dd55c3ba5221ec37e264bfa7f9c4f800
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2.orig.tar.gz' krb5_1.19.2.orig.tar.gz 8741053 SHA512:b90d6ed0e1e8a87eb5cb2c36d88b823a6a6caabf85e5d419adb8a930f7eea09a5f8491464e7e454cca7ba88be09d19415962fe0036ad2e31fc584f9fc0bbd470
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.3.debian.tar.xz' krb5_1.19.2-2ubuntu0.3.debian.tar.xz 108848 SHA512:368d8da9d03856e93341fe25483e3108f12b661dc00176ec0c42c40a73bf55f62f1f97724b1e811b9f15e2cf4aa6b43fde44d5b00ef9c2729fef1ed717538d3f
+```
 
 ### `dpkg` source package: `lame=3.100-3build2`
 
@@ -5754,19 +5784,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-86.96`
+### `dpkg` source package: `linux=5.15.0-89.99`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-86.96`
+- `linux-libc-dev:amd64=5.15.0-89.99`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.15.0-89.99
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-89.99.dsc' linux_5.15.0-89.99.dsc 7377 SHA512:05b93bc57dfccc99984d5ddf1770b006a94c9fea608ca816b0a7bf91cdeb6243bf9ba3f8541eaede76cddb4f3ff95bc86c45258f32611693a45e033d395bf221
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-89.99.diff.gz' linux_5.15.0-89.99.diff.gz 11096204 SHA512:a319de41f404d9893fdda4ffe8cfa178eb73c3ecf16375ec5b6131a7eec29bd42ee651b0d9d9371e590df1409d1af16c8f42f47f4ef9a5a655e357690ba82d25
+```
 
 ### `dpkg` source package: `llvm-toolchain-14=1:14.0.0-1ubuntu1.1`
 
@@ -6286,12 +6321,12 @@ $ apt-get source -qq --print-uris mtdev=1.1.6-1build4
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mtdev/mtdev_1.1.6-1build4.debian.tar.xz' mtdev_1.1.6-1build4.debian.tar.xz 6288 SHA512:7b8ff1c9cf8e8277df0c8c1291e27b7454d1b87c80e56745cc61fa74e3e50981a644e606b2922849ab2a9311b476300b2ff6f51df38157896cede2784ea1dd48
 ```
 
-### `dpkg` source package: `mysql-8.0=8.0.34-0ubuntu0.22.04.1`
+### `dpkg` source package: `mysql-8.0=8.0.35-0ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=8.0.34-0ubuntu0.22.04.1`
-- `libmysqlclient21:amd64=8.0.34-0ubuntu0.22.04.1`
+- `libmysqlclient-dev=8.0.35-0ubuntu0.22.04.1`
+- `libmysqlclient21:amd64=8.0.35-0ubuntu0.22.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient21/copyright`)
 
@@ -6308,9 +6343,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-8.0=8.0.35-0ubuntu0.22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.35-0ubuntu0.22.04.1.dsc' mysql-8.0_8.0.35-0ubuntu0.22.04.1.dsc 3568 SHA512:d9d7c49016800aab2728cd9a5c7a80f6a6f54624049da1206d57e7a4d6f93c77f601be6894549a4eca76b0f87e735a8da90ce35557b9425bca2af8d9c81197e7
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.35.orig.tar.gz' mysql-8.0_8.0.35.orig.tar.gz 438111810 SHA512:2936f7a84aa5f96633b239d1dba3613462d88f3a2ea493a7d05aa9a9b590e9e36a30857f44fcdb11360242375d6106e80cd1b32e0c6cb14502c1518ad1a720b2
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.35-0ubuntu0.22.04.1.debian.tar.xz' mysql-8.0_8.0.35-0ubuntu0.22.04.1.debian.tar.xz 164688 SHA512:078a3f3e020f6653430bc66fa68dc8bb115108d6f77aff354aa8581219cf88f0f54ebace827cbc1cab76f84fa0c7ab84001805350a7e4f9f40fe75460540258e
+```
 
 ### `dpkg` source package: `mysql-defaults=1.0.8`
 
@@ -6462,11 +6502,11 @@ $ apt-get source -qq --print-uris nettle=3.7.3-1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.7.3-1build2.debian.tar.xz' nettle_3.7.3-1build2.debian.tar.xz 22100 SHA512:c1935d35e9f04798273053ab92c7405ec225a5d72ba6c2869b0f2bf54b459ac428e113bc149796e91834a8b56082f8bbfbb906a6cd6787142b8932bd1dd83cec
 ```
 
-### `dpkg` source package: `nghttp2=1.43.0-1build3`
+### `dpkg` source package: `nghttp2=1.43.0-1ubuntu0.1`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.43.0-1build3`
+- `libnghttp2-14:amd64=1.43.0-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -6481,10 +6521,10 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nghttp2=1.43.0-1build3
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1build3.dsc' nghttp2_1.43.0-1build3.dsc 2655 SHA512:9bc6ee4bf6949d480cf6782eb6d0f27159d0c74a64e3fbbb3173f2053777591fd43951776714e9a0dd5ca633c5cf3e195688ab970a2a6a97ccb47eba44bb18f7
+$ apt-get source -qq --print-uris nghttp2=1.43.0-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.1.dsc' nghttp2_1.43.0-1ubuntu0.1.dsc 2638 SHA512:a2b2662cd6976dc6d8c7398ccbf59150893ca34a0c06dc3c4e3aff7297dabebd0142c9db031406b30374425fe782870d8ad032907dbd5f983ff15f7e0d8ee83c
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0.orig.tar.bz2' nghttp2_1.43.0.orig.tar.bz2 4521786 SHA512:f2e6665ad6c73f0a1a8c7b34ca821a905868d41dafca913e6a054eb5afb534a85ae91618c1a4b098e43f350ca3703fd1ece7848f0a771e8393a3eb0581ceaf59
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1build3.debian.tar.xz' nghttp2_1.43.0-1build3.debian.tar.xz 16528 SHA512:a3c7be43142e4976a395052ff4eba22e4f610c31659eed2b03987c58d0b0ae83335f0593ceeea0f05f5d7db8f56c3c3b3651bd92fae3a8353b95595179926bd1
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.1.debian.tar.xz' nghttp2_1.43.0-1ubuntu0.1.debian.tar.xz 22312 SHA512:df80f395e566bd3aefb77425446aaa12f5e65dfbd3239eb68219afa6863e96ee79cdb0fc8cd8a6b7ba72a3483963158b3b80fd5a61bbce5efc2fb59573deb7fd
 ```
 
 ### `dpkg` source package: `node-jquery=3.6.0+dfsg+~3.5.13-1`
@@ -6826,14 +6866,14 @@ $ apt-get source -qq --print-uris openexr=2.5.7-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_2.5.7-1.debian.tar.xz' openexr_2.5.7-1.debian.tar.xz 22096 SHA512:eefee3067bc874cd21ecb138ccdf2a0f0bd77faa01626b537e002ce6d2d906b48221e78a8bd33d60874c603b54a1aaf1e987b4e4d3b82df5a67ab9e881c1f5dc
 ```
 
-### `dpkg` source package: `openjdk-lts=11.0.20.1+1-0ubuntu1~22.04`
+### `dpkg` source package: `openjdk-lts=11.0.21+9-0ubuntu1~22.04`
 
 Binary Packages:
 
-- `openjdk-11-jdk:amd64=11.0.20.1+1-0ubuntu1~22.04`
-- `openjdk-11-jdk-headless:amd64=11.0.20.1+1-0ubuntu1~22.04`
-- `openjdk-11-jre:amd64=11.0.20.1+1-0ubuntu1~22.04`
-- `openjdk-11-jre-headless:amd64=11.0.20.1+1-0ubuntu1~22.04`
+- `openjdk-11-jdk:amd64=11.0.21+9-0ubuntu1~22.04`
+- `openjdk-11-jdk-headless:amd64=11.0.21+9-0ubuntu1~22.04`
+- `openjdk-11-jre:amd64=11.0.21+9-0ubuntu1~22.04`
+- `openjdk-11-jre-headless:amd64=11.0.21+9-0ubuntu1~22.04`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/doc/openjdk-11-jdk-headless/copyright`, `/usr/share/doc/openjdk-11-jre/copyright`, `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 
@@ -6845,9 +6885,14 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL-2-1`
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openjdk-lts=11.0.21+9-0ubuntu1~22.04
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.21%2b9-0ubuntu1%7e22.04.dsc' openjdk-lts_11.0.21+9-0ubuntu1~22.04.dsc 4665 SHA512:535c59b88e7bb5d36628f87202a41b9088dada9d3dbf6290885c8532695706555724ccbcefbb28b7341fb9133aa64e45af77334d23e2a2dd410957a1406ad0bd
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.21%2b9.orig.tar.xz' openjdk-lts_11.0.21+9.orig.tar.xz 68896980 SHA512:16af41f693214996ccf2f8e2794e3bd372c7cb422dff2861d615496a6d0ecea30462afba70207c208ed8647dd39f8d13fac7ebdbbabaa740ad81a0e505578358
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.21%2b9-0ubuntu1%7e22.04.debian.tar.xz' openjdk-lts_11.0.21+9-0ubuntu1~22.04.debian.tar.xz 162884 SHA512:640760aa3b7880595ce1eb9e6776407c92067aae64a1fc4bc74f17c50c777e1461049e289709ffae9354251d2e03d71ac06b103daa8aae20bfed787c55af502e
+```
 
 ### `dpkg` source package: `openjpeg2=2.4.0-6`
 
@@ -6996,13 +7041,13 @@ $ apt-get source -qq --print-uris openssh=1:8.9p1-3ubuntu0.4
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.4.debian.tar.xz' openssh_8.9p1-3ubuntu0.4.debian.tar.xz 192396 SHA512:d42c3fcf40d5811a68054ed7ce99fdabe955645137cf7b7528c8f45b6c3d6c0278c82b2b0855428393b74ef7be2fa93e65a221e18d3dba9a5bf3bcd349a48959
 ```
 
-### `dpkg` source package: `openssl=3.0.2-0ubuntu1.10`
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.12`
 
 Binary Packages:
 
-- `libssl-dev:amd64=3.0.2-0ubuntu1.10`
-- `libssl3:amd64=3.0.2-0ubuntu1.10`
-- `openssl=3.0.2-0ubuntu1.10`
+- `libssl-dev:amd64=3.0.2-0ubuntu1.12`
+- `libssl3:amd64=3.0.2-0ubuntu1.12`
+- `openssl=3.0.2-0ubuntu1.12`
 
 Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -7011,9 +7056,15 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.12
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.12.dsc' openssl_3.0.2-0ubuntu1.12.dsc 2730 SHA512:2e433ebed19b390d52494526934d72152400bdc13ce2d958c03495dd13349812c2161887b5b0a4f0046aa5cd93661dcad8cdb83a388af134fb891eab981ce127
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.12.debian.tar.xz' openssl_3.0.2-0ubuntu1.12.debian.tar.xz 206100 SHA512:2cdbd3c0c91200def2b1b49af64cda5bbb977a6ea5739a42e21f0970d1e97711ca866c574eed502bf4c1be38f64a3be679a67ae5d4589c84f532c73a1d8e6925
+```
 
 ### `dpkg` source package: `opus=1.3.1-0.1build2`
 
@@ -7300,14 +7351,14 @@ $ apt-get source -qq --print-uris pcsc-lite=1.9.5-3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcsc-lite/pcsc-lite_1.9.5-3ubuntu1.debian.tar.xz' pcsc-lite_1.9.5-3ubuntu1.debian.tar.xz 19320 SHA512:faa39ebcf5e06bebf76eac1a80e979f071623868a455f76b61ec56a0f10fca456d95f1d7d688cbfa8ca333d5197f865ad0b3f092e2a6c54327abc28c3b5a7a41
 ```
 
-### `dpkg` source package: `perl=5.34.0-3ubuntu1.2`
+### `dpkg` source package: `perl=5.34.0-3ubuntu1.3`
 
 Binary Packages:
 
-- `libperl5.34:amd64=5.34.0-3ubuntu1.2`
-- `perl=5.34.0-3ubuntu1.2`
-- `perl-base=5.34.0-3ubuntu1.2`
-- `perl-modules-5.34=5.34.0-3ubuntu1.2`
+- `libperl5.34:amd64=5.34.0-3ubuntu1.3`
+- `perl=5.34.0-3ubuntu1.3`
+- `perl-base=5.34.0-3ubuntu1.3`
+- `perl-modules-5.34=5.34.0-3ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.34/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.34/copyright`)
 
@@ -7339,9 +7390,15 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.34/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.3.dsc' perl_5.34.0-3ubuntu1.3.dsc 2976 SHA512:789ad2abeb08f1ce1e29734ff6b017ec310edf415efe1728654ff1b904ea623d03d4d46afe5cb9ea98302e241ae6fe0ecaaa6e0aae66550bdf93e35ea02c9f31
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig-regen-configure.tar.xz' perl_5.34.0.orig-regen-configure.tar.xz 415412 SHA512:2581152e0747105314c4fa4167f1f97d286436b996341b9b75e4099ba18f15eb0d2b42888622fbe9b5499d3fe304bc8aa9ad207a945f590135beccfb68ea28b0
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig.tar.xz' perl_5.34.0.orig.tar.xz 12881416 SHA512:691b4b31eacec357191fba777612b4e3eae59e946a22998a50766697c0d61db1d42a9b3bc1e41abf0d1ca1893e4a7c06d7bf3290480cf03d7f79befd7a8a3267
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.3.debian.tar.xz' perl_5.34.0-3ubuntu1.3.debian.tar.xz 194972 SHA512:2e59cdae22e90953cd91fd2c3f1c5b30ed92afc3b696d577719a8919d475fe52152fa2c7090d9a5f889e0816e847124e9457e0cd0dba206551303bd82297cad1
+```
 
 ### `dpkg` source package: `pinentry=1.1.1-1build2`
 
@@ -7427,13 +7484,13 @@ $ apt-get source -qq --print-uris pmix=4.1.2-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/pmix/pmix_4.1.2-2ubuntu1.debian.tar.xz' pmix_4.1.2-2ubuntu1.debian.tar.xz 10560 SHA512:05562618af9b84894a3c8254eb0927275ddb3d09df3821c2d2b7b62fd7b405e46e008f95b067612540154f196a9ec1f2aa5aed73a43e2b283a2335a98ec4714b
 ```
 
-### `dpkg` source package: `poppler=22.02.0-2ubuntu0.2`
+### `dpkg` source package: `poppler=22.02.0-2ubuntu0.3`
 
 Binary Packages:
 
-- `libpoppler-dev:amd64=22.02.0-2ubuntu0.2`
-- `libpoppler-private-dev:amd64=22.02.0-2ubuntu0.2`
-- `libpoppler118:amd64=22.02.0-2ubuntu0.2`
+- `libpoppler-dev:amd64=22.02.0-2ubuntu0.3`
+- `libpoppler-private-dev:amd64=22.02.0-2ubuntu0.3`
+- `libpoppler118:amd64=22.02.0-2ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/doc/libpoppler-private-dev/copyright`, `/usr/share/doc/libpoppler118/copyright`)
 
@@ -7441,9 +7498,14 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/d
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.3.dsc' poppler_22.02.0-2ubuntu0.3.dsc 3230 SHA512:78fcf2ace95c4b8707f61b2349a4d713574ed7ec20914730f7d57f996c29db8f948e838cce18cc0ec08cf904b18b2fb3e20face50234e2d35c441021832b0a1b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.3.debian.tar.xz' poppler_22.02.0-2ubuntu0.3.debian.tar.xz 41588 SHA512:8e2bf94939f6a74db240f3fe2cc6788c6943c09eed69b9d53d0541937b0cca9e123e07942b60a9771edfd571d4f2630469a1297d338eceb88a1e9e6739dd9e6f
+```
 
 ### `dpkg` source package: `popt=1.18-3build1`
 
@@ -7500,12 +7562,12 @@ $ apt-get source -qq --print-uris postgresql-14=14.9-0ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.9-0ubuntu0.22.04.1.debian.tar.xz' postgresql-14_14.9-0ubuntu0.22.04.1.debian.tar.xz 25548 SHA512:ce81ba235569235d1ed144bc22b5c87ff5b219dec8937da81a1453eef7c4d554bee1de932729583b34246f5f8f3ecce8058331fc616328491ff0a45c021f1bb4
 ```
 
-### `dpkg` source package: `procps=2:3.3.17-6ubuntu2`
+### `dpkg` source package: `procps=2:3.3.17-6ubuntu2.1`
 
 Binary Packages:
 
-- `libprocps8:amd64=2:3.3.17-6ubuntu2`
-- `procps=2:3.3.17-6ubuntu2`
+- `libprocps8:amd64=2:3.3.17-6ubuntu2.1`
+- `procps=2:3.3.17-6ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -7519,10 +7581,10 @@ Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris procps=2:3.3.17-6ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.dsc' procps_3.3.17-6ubuntu2.dsc 2237 SHA512:0692d993d91644b7e2f4414cad81282c43dd5144e2f650d3e680a4ba62bb3545860c23f8ad3c99d05bf2ceea31e3f8772a4b0b9f79ea56c76fd1f49f3982ba61
+$ apt-get source -qq --print-uris procps=2:3.3.17-6ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.1.dsc' procps_3.3.17-6ubuntu2.1.dsc 2111 SHA512:585933efef8d8e93b4187c65b678d146960480386ac3172097c790723ffadbf1d5347e05cc6de2682adcb96dd5b45ec1f98a3e00cff33ad2b30f729939896aca
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17.orig.tar.xz' procps_3.3.17.orig.tar.xz 1008428 SHA512:59e9a5013430fd9da508c4655d58375dc32e025bb502bb28fb9a92a48e4f2838b3355e92b4648f7384b2050064d17079bf4595d889822ebb5030006bc154a1a7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.debian.tar.xz' procps_3.3.17-6ubuntu2.debian.tar.xz 34228 SHA512:68ba4678fde89a5f7fce8b04e5ea0b24f9addc7c15b949b01f908cb9a179d68eb8313fc108a99f260d3cb5dff9fd5c9d33f678d3d8bfdd0cba02bcdd9b0bd3c5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.1.debian.tar.xz' procps_3.3.17-6ubuntu2.1.debian.tar.xz 35488 SHA512:720a52d14be82aecd59e2456fbb19574c99cc5281660a36994ef4aa619c14bbec43fd30b5e949446e5db6b6bebf8003a5f173298fe8bf56ac949d61ad0225a79
 ```
 
 ### `dpkg` source package: `proj=8.2.1-1`
@@ -8235,19 +8297,24 @@ $ apt-get source -qq --print-uris python3-colcon-common-extensions=0.3.0-1
 'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-common-extensions/python3-colcon-common-extensions_0.3.0.orig.tar.gz' python3-colcon-common-extensions_0.3.0.orig.tar.gz 1695 SHA512:4f20c8706c2eef956e351f1f1281a4afa1e2c13a9b4ac80d5c1a8b2b51585d9e33c29bc8b8822d53b888a0f2c431d36b98c1d64efaa0a409d7b76c146c0f0ece
 ```
 
-### `dpkg` source package: `python3-colcon-core=0.15.0-1`
+### `dpkg` source package: `python3-colcon-core=0.15.1-1`
 
 Binary Packages:
 
-- `python3-colcon-core=0.15.0-1`
+- `python3-colcon-core=0.15.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3-colcon-core=0.15.1-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-core/python3-colcon-core_0.15.1-1.debian.tar.xz' python3-colcon-core_0.15.1-1.debian.tar.xz 1652 SHA512:a34bcf0b9b107ad0051e412b21cfa887c237d0e7fcb4534a5c2f3167ab02ed79d0b74bb28f6d389428e9d30b5924a1bf85890772b57615f6c0f9cf94eb8ac75f
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-core/python3-colcon-core_0.15.1-1.dsc' python3-colcon-core_0.15.1-1.dsc 959 SHA512:8165bf4cc582b3f33abcab38a6bab7ffc7c5c3361c4eecc0840ca24ec50d1bd0892a2b0ddb071226a9acc758bca53ed782dd3cb64c73ab016d5b1b0a696cf307
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-core/python3-colcon-core_0.15.1.orig.tar.gz' python3-colcon-core_0.15.1.orig.tar.gz 119567 SHA512:f3449434942c8243fa63d4c7849a788251b872ce6ab9745c70b527e0e28e5fb29f5874138d40f7a65edac43e011c6ba2507c8ce3387e67840a6583d8af524829
+```
 
 ### `dpkg` source package: `python3-colcon-defaults=0.2.8-1`
 
@@ -8709,17 +8776,17 @@ $ apt-get source -qq --print-uris python3-vcstool=0.3.0-1
 'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-vcstool/python3-vcstool_0.3.0.orig.tar.gz' python3-vcstool_0.3.0.orig.tar.gz 35587 SHA512:4272b2562448c89a64a2e746c2b0ed682daf7fdc361c18d4d0a8cced525acf3fa919b8c4b12f013e243cdece77aca0de08c88d9b89071e736fe98ce2c3108632
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.2`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.3`
 
 Binary Packages:
 
-- `libpython3.10:amd64=3.10.12-1~22.04.2`
-- `libpython3.10-dev:amd64=3.10.12-1~22.04.2`
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.2`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.2`
-- `python3.10=3.10.12-1~22.04.2`
-- `python3.10-dev=3.10.12-1~22.04.2`
-- `python3.10-minimal=3.10.12-1~22.04.2`
+- `libpython3.10:amd64=3.10.12-1~22.04.3`
+- `libpython3.10-dev:amd64=3.10.12-1~22.04.3`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.3`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.3`
+- `python3.10=3.10.12-1~22.04.3`
+- `python3.10-dev=3.10.12-1~22.04.3`
+- `python3.10-minimal=3.10.12-1~22.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/doc/libpython3.10-dev/copyright`, `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-dev/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -8741,9 +8808,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.3.dsc' python3.10_3.10.12-1~22.04.3.dsc 3715 SHA512:15a6ba4e2315bc61bf08c81b7eb70ac1a26a967c6929648bd641f8451eff994b4ead860e4e6c7d2b1fc944615100c58f670c04a1624e17ff3b05e5605fe5ffaf
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.3.debian.tar.xz' python3.10_3.10.12-1~22.04.3.debian.tar.xz 221980 SHA512:7a7d89449ba4f5e55fad05a856d40e790e868e07873cc6287b1a215aec7081c17d19b1d58b64e771cb42810c93f5210a1f426a0d5cc24687b5d135fdfb084c72
+```
 
 ### `dpkg` source package: `pyyaml=5.4.1-1ubuntu1`
 
@@ -9148,11 +9220,11 @@ $ apt-get source -qq --print-uris rhash=1.4.2-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rhash/rhash_1.4.2-1ubuntu1.debian.tar.xz' rhash_1.4.2-1ubuntu1.debian.tar.xz 10332 SHA512:4d6bfaf2230a60ed0b1f7dab538d4e90bf40fcd35b1056e6ba386ae8d92225337fbf0c9ee4e04d8b3bcb51b702d24a4405cb1f461ca5a879943b7c772f1bc13d
 ```
 
-### `dpkg` source package: `ros-iron-action-msgs=1.6.0-2jammy.20230908.163730`
+### `dpkg` source package: `ros-iron-action-msgs=1.6.0-2jammy.20231117.081551`
 
 Binary Packages:
 
-- `ros-iron-action-msgs=1.6.0-2jammy.20230908.163730`
+- `ros-iron-action-msgs=1.6.0-2jammy.20231117.081551`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-action-msgs/copyright`)
 
@@ -9162,11 +9234,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-action-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-actionlib-msgs=5.0.0-2jammy.20230908.173058`
+### `dpkg` source package: `ros-iron-actionlib-msgs=5.0.0-2jammy.20231117.082959`
 
 Binary Packages:
 
-- `ros-iron-actionlib-msgs=5.0.0-2jammy.20230908.173058`
+- `ros-iron-actionlib-msgs=5.0.0-2jammy.20231117.082959`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-actionlib-msgs/copyright`)
 
@@ -9794,11 +9866,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-angles/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-builtin-interfaces=1.6.0-2jammy.20230908.163130`
+### `dpkg` source package: `ros-iron-builtin-interfaces=1.6.0-2jammy.20231117.080947`
 
 Binary Packages:
 
-- `ros-iron-builtin-interfaces=1.6.0-2jammy.20230908.163130`
+- `ros-iron-builtin-interfaces=1.6.0-2jammy.20231117.080947`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-builtin-interfaces/copyright`)
 
@@ -9808,11 +9880,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-builtin-interfaces/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-camera-calibration-parsers=4.2.2-1jammy.20230908.175228`
+### `dpkg` source package: `ros-iron-camera-calibration-parsers=4.2.2-1jammy.20231117.103652`
 
 Binary Packages:
 
-- `ros-iron-camera-calibration-parsers=4.2.2-1jammy.20230908.175228`
+- `ros-iron-camera-calibration-parsers=4.2.2-1jammy.20231117.103652`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-camera-calibration-parsers/copyright`)
 
@@ -9822,11 +9894,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-camera-calibration-parsers/copy
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-camera-calibration=3.0.1-3jammy.20230908.180638`
+### `dpkg` source package: `ros-iron-camera-calibration=3.0.1-3jammy.20231117.105838`
 
 Binary Packages:
 
-- `ros-iron-camera-calibration=3.0.1-3jammy.20230908.180638`
+- `ros-iron-camera-calibration=3.0.1-3jammy.20231117.105838`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-camera-calibration/copyright`)
 
@@ -9836,11 +9908,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-camera-calibration/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-camera-info-manager=4.2.2-1jammy.20230908.175506`
+### `dpkg` source package: `ros-iron-camera-info-manager=4.2.2-1jammy.20231117.105553`
 
 Binary Packages:
 
-- `ros-iron-camera-info-manager=4.2.2-1jammy.20230908.175506`
+- `ros-iron-camera-info-manager=4.2.2-1jammy.20231117.105553`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-camera-info-manager/copyright`)
 
@@ -9850,11 +9922,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-camera-info-manager/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-class-loader=2.5.0-4jammy.20230908.161844`
+### `dpkg` source package: `ros-iron-class-loader=2.5.0-4jammy.20231117.074953`
 
 Binary Packages:
 
-- `ros-iron-class-loader=2.5.0-4jammy.20230908.161844`
+- `ros-iron-class-loader=2.5.0-4jammy.20231117.074953`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-class-loader/copyright`)
 
@@ -9864,11 +9936,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-class-loader/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-common-interfaces=5.0.0-2jammy.20230908.184043`
+### `dpkg` source package: `ros-iron-common-interfaces=5.0.0-2jammy.20231117.091107`
 
 Binary Packages:
 
-- `ros-iron-common-interfaces=5.0.0-2jammy.20230908.184043`
+- `ros-iron-common-interfaces=5.0.0-2jammy.20231117.091107`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-common-interfaces/copyright`)
 
@@ -9878,11 +9950,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-common-interfaces/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-composition-interfaces=1.6.0-2jammy.20230908.164829`
+### `dpkg` source package: `ros-iron-composition-interfaces=1.6.0-2jammy.20231117.082747`
 
 Binary Packages:
 
-- `ros-iron-composition-interfaces=1.6.0-2jammy.20230908.164829`
+- `ros-iron-composition-interfaces=1.6.0-2jammy.20231117.082747`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-composition-interfaces/copyright`)
 
@@ -9892,11 +9964,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-composition-interfaces/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-compressed-depth-image-transport=3.1.0-1jammy.20230908.191702`
+### `dpkg` source package: `ros-iron-compressed-depth-image-transport=3.1.0-1jammy.20231117.112549`
 
 Binary Packages:
 
-- `ros-iron-compressed-depth-image-transport=3.1.0-1jammy.20230908.191702`
+- `ros-iron-compressed-depth-image-transport=3.1.0-1jammy.20231117.112549`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9906,11 +9978,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-compressed-image-transport=3.1.0-1jammy.20230908.193502`
+### `dpkg` source package: `ros-iron-compressed-image-transport=3.1.0-1jammy.20231117.112554`
 
 Binary Packages:
 
-- `ros-iron-compressed-image-transport=3.1.0-1jammy.20230908.193502`
+- `ros-iron-compressed-image-transport=3.1.0-1jammy.20231117.112554`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9935,11 +10007,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-console-bridge-vendor/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-cv-bridge=3.4.0-3jammy.20230908.175234`
+### `dpkg` source package: `ros-iron-cv-bridge=3.4.0-3jammy.20231117.103700`
 
 Binary Packages:
 
-- `ros-iron-cv-bridge=3.4.0-3jammy.20230908.175234`
+- `ros-iron-cv-bridge=3.4.0-3jammy.20231117.103700`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-cv-bridge/copyright`)
 
@@ -9950,11 +10022,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-cv-bridge/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-depth-image-proc=3.0.1-3jammy.20230908.180601`
+### `dpkg` source package: `ros-iron-depth-image-proc=3.0.1-3jammy.20231117.110915`
 
 Binary Packages:
 
-- `ros-iron-depth-image-proc=3.0.1-3jammy.20230908.180601`
+- `ros-iron-depth-image-proc=3.0.1-3jammy.20231117.110915`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-depth-image-proc/copyright`)
 
@@ -9964,11 +10036,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-depth-image-proc/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-diagnostic-msgs=5.0.0-2jammy.20230908.183833`
+### `dpkg` source package: `ros-iron-diagnostic-msgs=5.0.0-2jammy.20231117.085910`
 
 Binary Packages:
 
-- `ros-iron-diagnostic-msgs=5.0.0-2jammy.20230908.183833`
+- `ros-iron-diagnostic-msgs=5.0.0-2jammy.20231117.085910`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-diagnostic-msgs/copyright`)
 
@@ -10020,11 +10092,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-fastcdr/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-fastrtps-cmake-module=3.0.1-1jammy.20230908.160543`
+### `dpkg` source package: `ros-iron-fastrtps-cmake-module=3.0.2-1jammy.20231117.074626`
 
 Binary Packages:
 
-- `ros-iron-fastrtps-cmake-module=3.0.1-1jammy.20230908.160543`
+- `ros-iron-fastrtps-cmake-module=3.0.2-1jammy.20231117.074626`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-fastrtps-cmake-module/copyright`)
 
@@ -10048,11 +10120,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-fastrtps/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-filters=2.1.0-5jammy.20230908.174336`
+### `dpkg` source package: `ros-iron-filters=2.1.0-5jammy.20231117.105056`
 
 Binary Packages:
 
-- `ros-iron-filters=2.1.0-5jammy.20230908.174336`
+- `ros-iron-filters=2.1.0-5jammy.20231117.105056`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-filters/copyright`)
 
@@ -10077,11 +10149,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-foonathan-memory-vendor/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-geometry-msgs=5.0.0-2jammy.20230908.173451`
+### `dpkg` source package: `ros-iron-geometry-msgs=5.0.0-2jammy.20231117.085345`
 
 Binary Packages:
 
-- `ros-iron-geometry-msgs=5.0.0-2jammy.20230908.173451`
+- `ros-iron-geometry-msgs=5.0.0-2jammy.20231117.085345`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-geometry-msgs/copyright`)
 
@@ -10091,11 +10163,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-geometry-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-geometry2=0.31.5-1jammy.20230908.184102`
+### `dpkg` source package: `ros-iron-geometry2=0.31.5-1jammy.20231117.111948`
 
 Binary Packages:
 
-- `ros-iron-geometry2=0.31.5-1jammy.20230908.184102`
+- `ros-iron-geometry2=0.31.5-1jammy.20231117.111948`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-geometry2/copyright`)
 
@@ -10133,11 +10205,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-gtest-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-image-common=4.2.2-1jammy.20230908.175906`
+### `dpkg` source package: `ros-iron-image-common=4.2.2-1jammy.20231117.112513`
 
 Binary Packages:
 
-- `ros-iron-image-common=4.2.2-1jammy.20230908.175906`
+- `ros-iron-image-common=4.2.2-1jammy.20231117.112513`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-image-common/copyright`)
 
@@ -10147,11 +10219,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-image-common/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-image-geometry=3.4.0-3jammy.20230908.180316`
+### `dpkg` source package: `ros-iron-image-geometry=3.4.0-3jammy.20231117.092427`
 
 Binary Packages:
 
-- `ros-iron-image-geometry=3.4.0-3jammy.20230908.180316`
+- `ros-iron-image-geometry=3.4.0-3jammy.20231117.092427`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-image-geometry/copyright`)
 
@@ -10162,11 +10234,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-image-geometry/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-image-pipeline=3.0.1-3jammy.20230908.181833`
+### `dpkg` source package: `ros-iron-image-pipeline=3.0.1-3jammy.20231117.114600`
 
 Binary Packages:
 
-- `ros-iron-image-pipeline=3.0.1-3jammy.20230908.181833`
+- `ros-iron-image-pipeline=3.0.1-3jammy.20231117.114600`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-image-pipeline/copyright`)
 
@@ -10176,11 +10248,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-image-pipeline/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-image-proc=3.0.1-3jammy.20230908.180603`
+### `dpkg` source package: `ros-iron-image-proc=3.0.1-3jammy.20231117.110030`
 
 Binary Packages:
 
-- `ros-iron-image-proc=3.0.1-3jammy.20230908.180603`
+- `ros-iron-image-proc=3.0.1-3jammy.20231117.110030`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-image-proc/copyright`)
 
@@ -10190,11 +10262,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-image-proc/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-image-publisher=3.0.1-3jammy.20230908.175906`
+### `dpkg` source package: `ros-iron-image-publisher=3.0.1-3jammy.20231117.110339`
 
 Binary Packages:
 
-- `ros-iron-image-publisher=3.0.1-3jammy.20230908.175906`
+- `ros-iron-image-publisher=3.0.1-3jammy.20231117.110339`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-image-publisher/copyright`)
 
@@ -10204,11 +10276,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-image-publisher/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-image-rotate=3.0.1-3jammy.20230908.180033`
+### `dpkg` source package: `ros-iron-image-rotate=3.0.1-3jammy.20231117.110927`
 
 Binary Packages:
 
-- `ros-iron-image-rotate=3.0.1-3jammy.20230908.180033`
+- `ros-iron-image-rotate=3.0.1-3jammy.20231117.110927`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-image-rotate/copyright`)
 
@@ -10218,11 +10290,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-image-rotate/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-image-transport-plugins=3.1.0-1jammy.20230908.194115`
+### `dpkg` source package: `ros-iron-image-transport-plugins=3.1.0-1jammy.20231117.114631`
 
 Binary Packages:
 
-- `ros-iron-image-transport-plugins=3.1.0-1jammy.20230908.194115`
+- `ros-iron-image-transport-plugins=3.1.0-1jammy.20231117.114631`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -10232,11 +10304,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-image-transport=4.2.2-1jammy.20230908.175351`
+### `dpkg` source package: `ros-iron-image-transport=4.2.2-1jammy.20231117.105618`
 
 Binary Packages:
 
-- `ros-iron-image-transport=4.2.2-1jammy.20230908.175351`
+- `ros-iron-image-transport=4.2.2-1jammy.20231117.105618`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-image-transport/copyright`)
 
@@ -10246,11 +10318,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-image-transport/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-image-view=3.0.1-3jammy.20230908.180446`
+### `dpkg` source package: `ros-iron-image-view=3.0.1-3jammy.20231117.110651`
 
 Binary Packages:
 
-- `ros-iron-image-view=3.0.1-3jammy.20230908.180446`
+- `ros-iron-image-view=3.0.1-3jammy.20231117.110651`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-image-view/copyright`)
 
@@ -10260,11 +10332,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-image-view/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-kdl-parser=2.9.0-3jammy.20230908.162528`
+### `dpkg` source package: `ros-iron-kdl-parser=2.9.0-3jammy.20231117.075449`
 
 Binary Packages:
 
-- `ros-iron-kdl-parser=2.9.0-3jammy.20230908.162528`
+- `ros-iron-kdl-parser=2.9.0-3jammy.20231117.075449`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-kdl-parser/copyright`)
 
@@ -10288,11 +10360,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-keyboard-handler/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-laser-filters=2.0.7-1jammy.20230908.184210`
+### `dpkg` source package: `ros-iron-laser-filters=2.0.7-1jammy.20231117.110101`
 
 Binary Packages:
 
-- `ros-iron-laser-filters=2.0.7-1jammy.20230908.184210`
+- `ros-iron-laser-filters=2.0.7-1jammy.20231117.110101`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-laser-filters/copyright`)
 
@@ -10302,11 +10374,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-laser-filters/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-laser-geometry=2.5.0-3jammy.20230908.183957`
+### `dpkg` source package: `ros-iron-laser-geometry=2.5.0-3jammy.20231117.103425`
 
 Binary Packages:
 
-- `ros-iron-laser-geometry=2.5.0-3jammy.20230908.183957`
+- `ros-iron-laser-geometry=2.5.0-3jammy.20231117.103425`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-laser-geometry/copyright`)
 
@@ -10316,11 +10388,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-laser-geometry/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-launch-ros=0.24.0-2jammy.20230908.173252`
+### `dpkg` source package: `ros-iron-launch-ros=0.24.0-2jammy.20231117.093103`
 
 Binary Packages:
 
-- `ros-iron-launch-ros=0.24.0-2jammy.20230908.173252`
+- `ros-iron-launch-ros=0.24.0-2jammy.20231117.093103`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-launch-ros/copyright`)
 
@@ -10345,11 +10417,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-launch-testing-ament-cmake/copy
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-launch-testing-ros=0.24.0-2jammy.20230908.173503`
+### `dpkg` source package: `ros-iron-launch-testing-ros=0.24.0-2jammy.20231117.093323`
 
 Binary Packages:
 
-- `ros-iron-launch-testing-ros=0.24.0-2jammy.20230908.173503`
+- `ros-iron-launch-testing-ros=0.24.0-2jammy.20231117.093323`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-launch-testing-ros/copyright`)
 
@@ -10415,11 +10487,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-launch/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-libstatistics-collector=1.5.1-2jammy.20230908.172445`
+### `dpkg` source package: `ros-iron-libstatistics-collector=1.5.2-1jammy.20231117.092003`
 
 Binary Packages:
 
-- `ros-iron-libstatistics-collector=1.5.1-2jammy.20230908.172445`
+- `ros-iron-libstatistics-collector=1.5.2-1jammy.20231117.092003`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-libstatistics-collector/copyright`)
 
@@ -10429,11 +10501,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-libstatistics-collector/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-libyaml-vendor=1.5.0-3jammy.20230908.161900`
+### `dpkg` source package: `ros-iron-libyaml-vendor=1.5.0-3jammy.20231117.074947`
 
 Binary Packages:
 
-- `ros-iron-libyaml-vendor=1.5.0-3jammy.20230908.161900`
+- `ros-iron-libyaml-vendor=1.5.0-3jammy.20231117.074947`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-libyaml-vendor/copyright`)
 
@@ -10444,11 +10516,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-libyaml-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-lifecycle-msgs=1.6.0-2jammy.20230908.164320`
+### `dpkg` source package: `ros-iron-lifecycle-msgs=1.6.0-2jammy.20231117.082750`
 
 Binary Packages:
 
-- `ros-iron-lifecycle-msgs=1.6.0-2jammy.20230908.164320`
+- `ros-iron-lifecycle-msgs=1.6.0-2jammy.20231117.082750`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-lifecycle-msgs/copyright`)
 
@@ -10458,11 +10530,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-lifecycle-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-mcap-vendor=0.22.3-1jammy.20230911.051502`
+### `dpkg` source package: `ros-iron-mcap-vendor=0.22.5-1jammy.20231118.014400`
 
 Binary Packages:
 
-- `ros-iron-mcap-vendor=0.22.3-1jammy.20230911.051502`
+- `ros-iron-mcap-vendor=0.22.5-1jammy.20231118.014400`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-mcap-vendor/copyright`)
 
@@ -10472,11 +10544,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-mcap-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-message-filters=4.7.0-3jammy.20230908.175212`
+### `dpkg` source package: `ros-iron-message-filters=4.7.0-3jammy.20231117.105437`
 
 Binary Packages:
 
-- `ros-iron-message-filters=4.7.0-3jammy.20230908.175212`
+- `ros-iron-message-filters=4.7.0-3jammy.20231117.105437`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-message-filters/copyright`)
 
@@ -10486,11 +10558,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-message-filters/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-nav-msgs=5.0.0-2jammy.20230908.174405`
+### `dpkg` source package: `ros-iron-nav-msgs=5.0.0-2jammy.20231117.085914`
 
 Binary Packages:
 
-- `ros-iron-nav-msgs=5.0.0-2jammy.20230908.174405`
+- `ros-iron-nav-msgs=5.0.0-2jammy.20231117.085914`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-nav-msgs/copyright`)
 
@@ -10529,11 +10601,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-osrf-pycommon/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-pcl-conversions=2.4.0-5jammy.20230908.181838`
+### `dpkg` source package: `ros-iron-pcl-conversions=2.4.0-5jammy.20231117.105708`
 
 Binary Packages:
 
-- `ros-iron-pcl-conversions=2.4.0-5jammy.20230908.181838`
+- `ros-iron-pcl-conversions=2.4.0-5jammy.20231117.105708`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-pcl-conversions/copyright`)
 
@@ -10543,11 +10615,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-pcl-conversions/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-pcl-msgs=1.0.0-8jammy.20230908.180220`
+### `dpkg` source package: `ros-iron-pcl-msgs=1.0.0-8jammy.20231117.090801`
 
 Binary Packages:
 
-- `ros-iron-pcl-msgs=1.0.0-8jammy.20230908.180220`
+- `ros-iron-pcl-msgs=1.0.0-8jammy.20231117.090801`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-pcl-msgs/copyright`)
 
@@ -10557,11 +10629,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-pcl-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-pcl-ros=2.4.0-5jammy.20230908.182512`
+### `dpkg` source package: `ros-iron-pcl-ros=2.4.0-5jammy.20231117.112204`
 
 Binary Packages:
 
-- `ros-iron-pcl-ros=2.4.0-5jammy.20230908.182512`
+- `ros-iron-pcl-ros=2.4.0-5jammy.20231117.112204`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-pcl-ros/copyright`)
 
@@ -10571,11 +10643,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-pcl-ros/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-perception-pcl=2.4.0-5jammy.20230908.191749`
+### `dpkg` source package: `ros-iron-perception-pcl=2.4.0-5jammy.20231117.113553`
 
 Binary Packages:
 
-- `ros-iron-perception-pcl=2.4.0-5jammy.20230908.191749`
+- `ros-iron-perception-pcl=2.4.0-5jammy.20231117.113553`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-perception-pcl/copyright`)
 
@@ -10585,11 +10657,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-perception-pcl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-perception=0.10.0-3jammy.20230911.053957`
+### `dpkg` source package: `ros-iron-perception=0.10.0-3jammy.20231118.021110`
 
 Binary Packages:
 
-- `ros-iron-perception=0.10.0-3jammy.20230911.053957`
+- `ros-iron-perception=0.10.0-3jammy.20231118.021110`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-perception/copyright`)
 
@@ -10599,11 +10671,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-perception/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-pluginlib=5.2.2-3jammy.20230908.162112`
+### `dpkg` source package: `ros-iron-pluginlib=5.2.2-3jammy.20231117.075138`
 
 Binary Packages:
 
-- `ros-iron-pluginlib=5.2.2-3jammy.20230908.162112`
+- `ros-iron-pluginlib=5.2.2-3jammy.20231117.075138`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-pluginlib/copyright`)
 
@@ -10642,11 +10714,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-python-cmake-module/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rcl-action=6.0.3-1jammy.20230908.172421`
+### `dpkg` source package: `ros-iron-rcl-action=6.0.4-1jammy.20231117.092021`
 
 Binary Packages:
 
-- `ros-iron-rcl-action=6.0.3-1jammy.20230908.172421`
+- `ros-iron-rcl-action=6.0.4-1jammy.20231117.092021`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rcl-action/copyright`)
 
@@ -10656,11 +10728,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rcl-action/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rcl-interfaces=1.6.0-2jammy.20230908.164413`
+### `dpkg` source package: `ros-iron-rcl-interfaces=1.6.0-2jammy.20231117.082128`
 
 Binary Packages:
 
-- `ros-iron-rcl-interfaces=1.6.0-2jammy.20230908.164413`
+- `ros-iron-rcl-interfaces=1.6.0-2jammy.20231117.082128`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rcl-interfaces/copyright`)
 
@@ -10670,11 +10742,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rcl-interfaces/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rcl-lifecycle=6.0.3-1jammy.20230908.172426`
+### `dpkg` source package: `ros-iron-rcl-lifecycle=6.0.4-1jammy.20231117.092025`
 
 Binary Packages:
 
-- `ros-iron-rcl-lifecycle=6.0.3-1jammy.20230908.172426`
+- `ros-iron-rcl-lifecycle=6.0.4-1jammy.20231117.092025`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rcl-lifecycle/copyright`)
 
@@ -10684,11 +10756,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rcl-lifecycle/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rcl-logging-interface=2.5.1-2jammy.20230908.161836`
+### `dpkg` source package: `ros-iron-rcl-logging-interface=2.5.1-2jammy.20231117.074947`
 
 Binary Packages:
 
-- `ros-iron-rcl-logging-interface=2.5.1-2jammy.20230908.161836`
+- `ros-iron-rcl-logging-interface=2.5.1-2jammy.20231117.074947`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rcl-logging-interface/copyright`)
 
@@ -10698,11 +10770,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rcl-logging-interface/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rcl-logging-spdlog=2.5.1-2jammy.20230908.162009`
+### `dpkg` source package: `ros-iron-rcl-logging-spdlog=2.5.1-2jammy.20231117.075137`
 
 Binary Packages:
 
-- `ros-iron-rcl-logging-spdlog=2.5.1-2jammy.20230908.162009`
+- `ros-iron-rcl-logging-spdlog=2.5.1-2jammy.20231117.075137`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rcl-logging-spdlog/copyright`)
 
@@ -10712,11 +10784,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rcl-logging-spdlog/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rcl-yaml-param-parser=6.0.3-1jammy.20230908.162409`
+### `dpkg` source package: `ros-iron-rcl-yaml-param-parser=6.0.4-1jammy.20231117.075643`
 
 Binary Packages:
 
-- `ros-iron-rcl-yaml-param-parser=6.0.3-1jammy.20230908.162409`
+- `ros-iron-rcl-yaml-param-parser=6.0.4-1jammy.20231117.075643`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rcl-yaml-param-parser/copyright`)
 
@@ -10726,11 +10798,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rcl-yaml-param-parser/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rcl=6.0.3-1jammy.20230908.172146`
+### `dpkg` source package: `ros-iron-rcl=6.0.4-1jammy.20231117.091639`
 
 Binary Packages:
 
-- `ros-iron-rcl=6.0.3-1jammy.20230908.172146`
+- `ros-iron-rcl=6.0.4-1jammy.20231117.091639`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rcl/copyright`)
 
@@ -10740,11 +10812,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rcl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rclcpp-action=21.0.3-1jammy.20230908.173514`
+### `dpkg` source package: `ros-iron-rclcpp-action=21.0.4-1jammy.20231117.103518`
 
 Binary Packages:
 
-- `ros-iron-rclcpp-action=21.0.3-1jammy.20230908.173514`
+- `ros-iron-rclcpp-action=21.0.4-1jammy.20231117.103518`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rclcpp-action/copyright`)
 
@@ -10754,11 +10826,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rclcpp-action/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rclcpp-components=21.0.3-1jammy.20230908.173522`
+### `dpkg` source package: `ros-iron-rclcpp-components=21.0.4-1jammy.20231117.103552`
 
 Binary Packages:
 
-- `ros-iron-rclcpp-components=21.0.3-1jammy.20230908.173522`
+- `ros-iron-rclcpp-components=21.0.4-1jammy.20231117.103552`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rclcpp-components/copyright`)
 
@@ -10768,11 +10840,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rclcpp-components/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rclcpp-lifecycle=21.0.3-1jammy.20230908.173519`
+### `dpkg` source package: `ros-iron-rclcpp-lifecycle=21.0.4-1jammy.20231117.105118`
 
 Binary Packages:
 
-- `ros-iron-rclcpp-lifecycle=21.0.3-1jammy.20230908.173519`
+- `ros-iron-rclcpp-lifecycle=21.0.4-1jammy.20231117.105118`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rclcpp-lifecycle/copyright`)
 
@@ -10782,11 +10854,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rclcpp-lifecycle/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rclcpp=21.0.3-1jammy.20230908.172700`
+### `dpkg` source package: `ros-iron-rclcpp=21.0.4-1jammy.20231117.102448`
 
 Binary Packages:
 
-- `ros-iron-rclcpp=21.0.3-1jammy.20230908.172700`
+- `ros-iron-rclcpp=21.0.4-1jammy.20231117.102448`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rclcpp/copyright`)
 
@@ -10796,11 +10868,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rclcpp/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rclpy=4.1.3-1jammy.20230908.172649`
+### `dpkg` source package: `ros-iron-rclpy=4.1.4-1jammy.20231117.092234`
 
 Binary Packages:
 
-- `ros-iron-rclpy=4.1.3-1jammy.20230908.172649`
+- `ros-iron-rclpy=4.1.4-1jammy.20231117.092234`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rclpy/copyright`)
 
@@ -10810,11 +10882,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rclpy/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rcpputils=2.6.1-3jammy.20230908.161612`
+### `dpkg` source package: `ros-iron-rcpputils=2.6.2-1jammy.20231117.074919`
 
 Binary Packages:
 
-- `ros-iron-rcpputils=2.6.1-3jammy.20230908.161612`
+- `ros-iron-rcpputils=2.6.2-1jammy.20231117.074919`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rcpputils/copyright`)
 
@@ -10825,11 +10897,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rcpputils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rcutils=6.2.1-2jammy.20230908.161231`
+### `dpkg` source package: `ros-iron-rcutils=6.2.2-2jammy.20231117.074634`
 
 Binary Packages:
 
-- `ros-iron-rcutils=6.2.1-2jammy.20230908.161231`
+- `ros-iron-rcutils=6.2.2-2jammy.20231117.074634`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rcutils/copyright`)
 
@@ -10839,11 +10911,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rcutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rmw-dds-common=2.0.1-2jammy.20230908.164304`
+### `dpkg` source package: `ros-iron-rmw-dds-common=2.0.1-2jammy.20231117.082120`
 
 Binary Packages:
 
-- `ros-iron-rmw-dds-common=2.0.1-2jammy.20230908.164304`
+- `ros-iron-rmw-dds-common=2.0.1-2jammy.20231117.082120`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rmw-dds-common/copyright`)
 
@@ -10853,11 +10925,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rmw-dds-common/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rmw-fastrtps-cpp=7.1.1-2jammy.20230908.165835`
+### `dpkg` source package: `ros-iron-rmw-fastrtps-cpp=7.1.2-1jammy.20231117.083222`
 
 Binary Packages:
 
-- `ros-iron-rmw-fastrtps-cpp=7.1.1-2jammy.20230908.165835`
+- `ros-iron-rmw-fastrtps-cpp=7.1.2-1jammy.20231117.083222`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rmw-fastrtps-cpp/copyright`)
 
@@ -10867,11 +10939,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rmw-fastrtps-cpp/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rmw-fastrtps-shared-cpp=7.1.1-2jammy.20230908.165115`
+### `dpkg` source package: `ros-iron-rmw-fastrtps-shared-cpp=7.1.2-1jammy.20231117.082350`
 
 Binary Packages:
 
-- `ros-iron-rmw-fastrtps-shared-cpp=7.1.1-2jammy.20230908.165115`
+- `ros-iron-rmw-fastrtps-shared-cpp=7.1.2-1jammy.20231117.082350`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rmw-fastrtps-shared-cpp/copyright`)
 
@@ -10895,11 +10967,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rmw-implementation-cmake/copyri
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rmw-implementation=2.12.0-2jammy.20230908.171943`
+### `dpkg` source package: `ros-iron-rmw-implementation=2.12.0-2jammy.20231117.091329`
 
 Binary Packages:
 
-- `ros-iron-rmw-implementation=2.12.0-2jammy.20230908.171943`
+- `ros-iron-rmw-implementation=2.12.0-2jammy.20231117.091329`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rmw-implementation/copyright`)
 
@@ -10909,11 +10981,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rmw-implementation/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rmw=7.1.0-2jammy.20230908.162120`
+### `dpkg` source package: `ros-iron-rmw=7.1.0-2jammy.20231117.075443`
 
 Binary Packages:
 
-- `ros-iron-rmw=7.1.0-2jammy.20230908.162120`
+- `ros-iron-rmw=7.1.0-2jammy.20231117.075443`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rmw/copyright`)
 
@@ -10923,11 +10995,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rmw/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-robot-state-publisher=3.2.0-2jammy.20230908.175828`
+### `dpkg` source package: `ros-iron-robot-state-publisher=3.2.0-2jammy.20231117.110211`
 
 Binary Packages:
 
-- `ros-iron-robot-state-publisher=3.2.0-2jammy.20230908.175828`
+- `ros-iron-robot-state-publisher=3.2.0-2jammy.20231117.110211`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-robot-state-publisher/copyright`)
 
@@ -10937,11 +11009,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-robot-state-publisher/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-ros-base=0.10.0-3jammy.20230911.053836`
+### `dpkg` source package: `ros-iron-ros-base=0.10.0-3jammy.20231118.021010`
 
 Binary Packages:
 
-- `ros-iron-ros-base=0.10.0-3jammy.20230911.053836`
+- `ros-iron-ros-base=0.10.0-3jammy.20231118.021010`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-ros-base/copyright`)
 
@@ -10951,11 +11023,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-ros-base/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-ros-core=0.10.0-3jammy.20230908.184113`
+### `dpkg` source package: `ros-iron-ros-core=0.10.0-3jammy.20231117.112216`
 
 Binary Packages:
 
-- `ros-iron-ros-core=0.10.0-3jammy.20230908.184113`
+- `ros-iron-ros-core=0.10.0-3jammy.20231117.112216`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-ros-core/copyright`)
 
@@ -10993,11 +11065,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-ros-workspace/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-ros2action=0.25.3-1jammy.20230908.173535`
+### `dpkg` source package: `ros-iron-ros2action=0.25.4-1jammy.20231117.093431`
 
 Binary Packages:
 
-- `ros-iron-ros2action=0.25.3-1jammy.20230908.173535`
+- `ros-iron-ros2action=0.25.4-1jammy.20231117.093431`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2action/copyright`)
 
@@ -11007,11 +11079,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2action/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-ros2bag=0.22.3-1jammy.20230911.053625`
+### `dpkg` source package: `ros-iron-ros2bag=0.22.5-1jammy.20231118.020724`
 
 Binary Packages:
 
-- `ros-iron-ros2bag=0.22.3-1jammy.20230911.053625`
+- `ros-iron-ros2bag=0.22.5-1jammy.20231118.020724`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2bag/copyright`)
 
@@ -11021,11 +11093,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2bag/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-ros2cli-common-extensions=0.2.2-3jammy.20230908.174732`
+### `dpkg` source package: `ros-iron-ros2cli-common-extensions=0.2.2-3jammy.20231117.112141`
 
 Binary Packages:
 
-- `ros-iron-ros2cli-common-extensions=0.2.2-3jammy.20230908.174732`
+- `ros-iron-ros2cli-common-extensions=0.2.2-3jammy.20231117.112141`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2cli-common-extensions/copyright`)
 
@@ -11035,11 +11107,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2cli-common-extensions/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-ros2cli=0.25.3-1jammy.20230908.173202`
+### `dpkg` source package: `ros-iron-ros2cli=0.25.4-1jammy.20231117.092731`
 
 Binary Packages:
 
-- `ros-iron-ros2cli=0.25.3-1jammy.20230908.173202`
+- `ros-iron-ros2cli=0.25.4-1jammy.20231117.092731`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2cli/copyright`)
 
@@ -11049,11 +11121,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2cli/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-ros2component=0.25.3-1jammy.20230908.173810`
+### `dpkg` source package: `ros-iron-ros2component=0.25.4-1jammy.20231117.103901`
 
 Binary Packages:
 
-- `ros-iron-ros2component=0.25.3-1jammy.20230908.173810`
+- `ros-iron-ros2component=0.25.4-1jammy.20231117.103901`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2component/copyright`)
 
@@ -11063,11 +11135,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2component/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-ros2doctor=0.25.3-1jammy.20230908.173548`
+### `dpkg` source package: `ros-iron-ros2doctor=0.25.4-1jammy.20231117.093431`
 
 Binary Packages:
 
-- `ros-iron-ros2doctor=0.25.3-1jammy.20230908.173548`
+- `ros-iron-ros2doctor=0.25.4-1jammy.20231117.093431`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2doctor/copyright`)
 
@@ -11077,11 +11149,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2doctor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-ros2interface=0.25.3-1jammy.20230908.173558`
+### `dpkg` source package: `ros-iron-ros2interface=0.25.4-1jammy.20231117.093422`
 
 Binary Packages:
 
-- `ros-iron-ros2interface=0.25.3-1jammy.20230908.173558`
+- `ros-iron-ros2interface=0.25.4-1jammy.20231117.093422`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2interface/copyright`)
 
@@ -11091,11 +11163,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2interface/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-ros2launch=0.24.0-2jammy.20230908.174106`
+### `dpkg` source package: `ros-iron-ros2launch=0.24.0-2jammy.20231117.093541`
 
 Binary Packages:
 
-- `ros-iron-ros2launch=0.24.0-2jammy.20230908.174106`
+- `ros-iron-ros2launch=0.24.0-2jammy.20231117.093541`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2launch/copyright`)
 
@@ -11105,11 +11177,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2launch/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-ros2lifecycle=0.25.3-1jammy.20230908.173950`
+### `dpkg` source package: `ros-iron-ros2lifecycle=0.25.4-1jammy.20231117.105613`
 
 Binary Packages:
 
-- `ros-iron-ros2lifecycle=0.25.3-1jammy.20230908.173950`
+- `ros-iron-ros2lifecycle=0.25.4-1jammy.20231117.105613`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2lifecycle/copyright`)
 
@@ -11119,11 +11191,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2lifecycle/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-ros2multicast=0.25.3-1jammy.20230908.173234`
+### `dpkg` source package: `ros-iron-ros2multicast=0.25.4-1jammy.20231117.092851`
 
 Binary Packages:
 
-- `ros-iron-ros2multicast=0.25.3-1jammy.20230908.173234`
+- `ros-iron-ros2multicast=0.25.4-1jammy.20231117.092851`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2multicast/copyright`)
 
@@ -11133,11 +11205,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2multicast/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-ros2node=0.25.3-1jammy.20230908.173608`
+### `dpkg` source package: `ros-iron-ros2node=0.25.4-1jammy.20231117.093354`
 
 Binary Packages:
 
-- `ros-iron-ros2node=0.25.3-1jammy.20230908.173608`
+- `ros-iron-ros2node=0.25.4-1jammy.20231117.093354`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2node/copyright`)
 
@@ -11147,11 +11219,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2node/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-ros2param=0.25.3-1jammy.20230908.173700`
+### `dpkg` source package: `ros-iron-ros2param=0.25.4-1jammy.20231117.093426`
 
 Binary Packages:
 
-- `ros-iron-ros2param=0.25.3-1jammy.20230908.173700`
+- `ros-iron-ros2param=0.25.4-1jammy.20231117.093426`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2param/copyright`)
 
@@ -11161,11 +11233,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2param/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-ros2pkg=0.25.3-1jammy.20230908.173611`
+### `dpkg` source package: `ros-iron-ros2pkg=0.25.4-1jammy.20231117.093421`
 
 Binary Packages:
 
-- `ros-iron-ros2pkg=0.25.3-1jammy.20230908.173611`
+- `ros-iron-ros2pkg=0.25.4-1jammy.20231117.093421`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2pkg/copyright`)
 
@@ -11175,11 +11247,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2pkg/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-ros2run=0.25.3-1jammy.20230908.173655`
+### `dpkg` source package: `ros-iron-ros2run=0.25.4-1jammy.20231117.093457`
 
 Binary Packages:
 
-- `ros-iron-ros2run=0.25.3-1jammy.20230908.173655`
+- `ros-iron-ros2run=0.25.4-1jammy.20231117.093457`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2run/copyright`)
 
@@ -11189,11 +11261,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2run/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-ros2service=0.25.3-1jammy.20230908.173619`
+### `dpkg` source package: `ros-iron-ros2service=0.25.4-1jammy.20231117.093352`
 
 Binary Packages:
 
-- `ros-iron-ros2service=0.25.3-1jammy.20230908.173619`
+- `ros-iron-ros2service=0.25.4-1jammy.20231117.093352`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2service/copyright`)
 
@@ -11203,11 +11275,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2service/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-ros2topic=0.25.3-1jammy.20230908.173740`
+### `dpkg` source package: `ros-iron-ros2topic=0.25.4-1jammy.20231117.093418`
 
 Binary Packages:
 
-- `ros-iron-ros2topic=0.25.3-1jammy.20230908.173740`
+- `ros-iron-ros2topic=0.25.4-1jammy.20231117.093418`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2topic/copyright`)
 
@@ -11218,11 +11290,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-ros2topic/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosbag2-compression-zstd=0.22.3-1jammy.20230911.052536`
+### `dpkg` source package: `ros-iron-rosbag2-compression-zstd=0.22.5-1jammy.20231118.015521`
 
 Binary Packages:
 
-- `ros-iron-rosbag2-compression-zstd=0.22.3-1jammy.20230911.052536`
+- `ros-iron-rosbag2-compression-zstd=0.22.5-1jammy.20231118.015521`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-compression-zstd/copyright`)
 
@@ -11232,11 +11304,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-compression-zstd/copyri
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosbag2-compression=0.22.3-1jammy.20230911.052331`
+### `dpkg` source package: `ros-iron-rosbag2-compression=0.22.5-1jammy.20231118.015324`
 
 Binary Packages:
 
-- `ros-iron-rosbag2-compression=0.22.3-1jammy.20230911.052331`
+- `ros-iron-rosbag2-compression=0.22.5-1jammy.20231118.015324`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-compression/copyright`)
 
@@ -11246,11 +11318,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-compression/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosbag2-cpp=0.22.3-1jammy.20230911.052208`
+### `dpkg` source package: `ros-iron-rosbag2-cpp=0.22.5-1jammy.20231118.015150`
 
 Binary Packages:
 
-- `ros-iron-rosbag2-cpp=0.22.3-1jammy.20230911.052208`
+- `ros-iron-rosbag2-cpp=0.22.5-1jammy.20231118.015150`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-cpp/copyright`)
 
@@ -11260,11 +11332,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-cpp/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosbag2-interfaces=0.22.3-1jammy.20230911.051240`
+### `dpkg` source package: `ros-iron-rosbag2-interfaces=0.22.5-1jammy.20231118.014121`
 
 Binary Packages:
 
-- `ros-iron-rosbag2-interfaces=0.22.3-1jammy.20230911.051240`
+- `ros-iron-rosbag2-interfaces=0.22.5-1jammy.20231118.014121`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-interfaces/copyright`)
 
@@ -11274,11 +11346,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-interfaces/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosbag2-py=0.22.3-1jammy.20230911.053401`
+### `dpkg` source package: `ros-iron-rosbag2-py=0.22.5-1jammy.20231118.020343`
 
 Binary Packages:
 
-- `ros-iron-rosbag2-py=0.22.3-1jammy.20230911.053401`
+- `ros-iron-rosbag2-py=0.22.5-1jammy.20231118.020343`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-py/copyright`)
 
@@ -11288,11 +11360,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosbag2-storage-default-plugins=0.22.3-1jammy.20230911.051910`
+### `dpkg` source package: `ros-iron-rosbag2-storage-default-plugins=0.22.5-1jammy.20231118.014728`
 
 Binary Packages:
 
-- `ros-iron-rosbag2-storage-default-plugins=0.22.3-1jammy.20230911.051910`
+- `ros-iron-rosbag2-storage-default-plugins=0.22.5-1jammy.20231118.014728`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-storage-default-plugins/copyright`)
 
@@ -11302,11 +11374,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-storage-default-plugins
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosbag2-storage-mcap=0.22.3-1jammy.20230911.051639`
+### `dpkg` source package: `ros-iron-rosbag2-storage-mcap=0.22.5-1jammy.20231118.014444`
 
 Binary Packages:
 
-- `ros-iron-rosbag2-storage-mcap=0.22.3-1jammy.20230911.051639`
+- `ros-iron-rosbag2-storage-mcap=0.22.5-1jammy.20231118.014444`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-storage-mcap/copyright`)
 
@@ -11316,11 +11388,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-storage-mcap/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosbag2-storage-sqlite3=0.22.3-1jammy.20230911.051736`
+### `dpkg` source package: `ros-iron-rosbag2-storage-sqlite3=0.22.5-1jammy.20231118.014638`
 
 Binary Packages:
 
-- `ros-iron-rosbag2-storage-sqlite3=0.22.3-1jammy.20230911.051736`
+- `ros-iron-rosbag2-storage-sqlite3=0.22.5-1jammy.20231118.014638`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-storage-sqlite3/copyright`)
 
@@ -11330,11 +11402,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-storage-sqlite3/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosbag2-storage=0.22.3-1jammy.20230911.051435`
+### `dpkg` source package: `ros-iron-rosbag2-storage=0.22.5-1jammy.20231118.014308`
 
 Binary Packages:
 
-- `ros-iron-rosbag2-storage=0.22.3-1jammy.20230911.051435`
+- `ros-iron-rosbag2-storage=0.22.5-1jammy.20231118.014308`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-storage/copyright`)
 
@@ -11344,11 +11416,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-storage/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosbag2-transport=0.22.3-1jammy.20230911.052717`
+### `dpkg` source package: `ros-iron-rosbag2-transport=0.22.5-1jammy.20231118.015658`
 
 Binary Packages:
 
-- `ros-iron-rosbag2-transport=0.22.3-1jammy.20230911.052717`
+- `ros-iron-rosbag2-transport=0.22.5-1jammy.20231118.015658`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-transport/copyright`)
 
@@ -11358,11 +11430,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2-transport/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosbag2=0.22.3-1jammy.20230911.053809`
+### `dpkg` source package: `ros-iron-rosbag2=0.22.5-1jammy.20231118.020941`
 
 Binary Packages:
 
-- `ros-iron-rosbag2=0.22.3-1jammy.20230911.053809`
+- `ros-iron-rosbag2=0.22.5-1jammy.20231118.020941`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2/copyright`)
 
@@ -11372,11 +11444,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosbag2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosgraph-msgs=1.6.0-2jammy.20230908.164920`
+### `dpkg` source package: `ros-iron-rosgraph-msgs=1.6.0-2jammy.20231117.082603`
 
 Binary Packages:
 
-- `ros-iron-rosgraph-msgs=1.6.0-2jammy.20230908.164920`
+- `ros-iron-rosgraph-msgs=1.6.0-2jammy.20231117.082603`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosgraph-msgs/copyright`)
 
@@ -11428,11 +11500,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-cmake/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosidl-core-generators=0.1.1-3jammy.20230908.163049`
+### `dpkg` source package: `ros-iron-rosidl-core-generators=0.1.1-3jammy.20231117.080725`
 
 Binary Packages:
 
-- `ros-iron-rosidl-core-generators=0.1.1-3jammy.20230908.163049`
+- `ros-iron-rosidl-core-generators=0.1.1-3jammy.20231117.080725`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-core-generators/copyright`)
 
@@ -11442,11 +11514,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-core-generators/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosidl-core-runtime=0.1.1-3jammy.20230908.163049`
+### `dpkg` source package: `ros-iron-rosidl-core-runtime=0.1.1-3jammy.20231117.080515`
 
 Binary Packages:
 
-- `ros-iron-rosidl-core-runtime=0.1.1-3jammy.20230908.163049`
+- `ros-iron-rosidl-core-runtime=0.1.1-3jammy.20231117.080515`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-core-runtime/copyright`)
 
@@ -11456,11 +11528,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-core-runtime/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosidl-default-generators=1.5.0-3jammy.20230908.164026`
+### `dpkg` source package: `ros-iron-rosidl-default-generators=1.5.0-3jammy.20231117.081849`
 
 Binary Packages:
 
-- `ros-iron-rosidl-default-generators=1.5.0-3jammy.20230908.164026`
+- `ros-iron-rosidl-default-generators=1.5.0-3jammy.20231117.081849`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-default-generators/copyright`)
 
@@ -11470,11 +11542,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-default-generators/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosidl-default-runtime=1.5.0-3jammy.20230908.164027`
+### `dpkg` source package: `ros-iron-rosidl-default-runtime=1.5.0-3jammy.20231117.082048`
 
 Binary Packages:
 
-- `ros-iron-rosidl-default-runtime=1.5.0-3jammy.20230908.164027`
+- `ros-iron-rosidl-default-runtime=1.5.0-3jammy.20231117.082048`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-default-runtime/copyright`)
 
@@ -11484,11 +11556,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-default-runtime/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosidl-dynamic-typesupport-fastrtps=0.0.2-2jammy.20230908.162712`
+### `dpkg` source package: `ros-iron-rosidl-dynamic-typesupport-fastrtps=0.0.2-2jammy.20231117.075423`
 
 Binary Packages:
 
-- `ros-iron-rosidl-dynamic-typesupport-fastrtps=0.0.2-2jammy.20230908.162712`
+- `ros-iron-rosidl-dynamic-typesupport-fastrtps=0.0.2-2jammy.20231117.075423`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-dynamic-typesupport-fastrtps/copyright`)
 
@@ -11498,11 +11570,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-dynamic-typesupport-fast
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosidl-dynamic-typesupport=0.0.4-1jammy.20230908.161818`
+### `dpkg` source package: `ros-iron-rosidl-dynamic-typesupport=0.0.5-1jammy.20231117.075135`
 
 Binary Packages:
 
-- `ros-iron-rosidl-dynamic-typesupport=0.0.4-1jammy.20230908.161818`
+- `ros-iron-rosidl-dynamic-typesupport=0.0.5-1jammy.20231117.075135`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-dynamic-typesupport/copyright`)
 
@@ -11512,11 +11584,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-dynamic-typesupport/copy
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosidl-generator-c=4.0.1-1jammy.20230908.161524`
+### `dpkg` source package: `ros-iron-rosidl-generator-c=4.0.1-1jammy.20231117.074756`
 
 Binary Packages:
 
-- `ros-iron-rosidl-generator-c=4.0.1-1jammy.20230908.161524`
+- `ros-iron-rosidl-generator-c=4.0.1-1jammy.20231117.074756`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-generator-c/copyright`)
 
@@ -11526,11 +11598,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-generator-c/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosidl-generator-cpp=4.0.1-1jammy.20230908.161836`
+### `dpkg` source package: `ros-iron-rosidl-generator-cpp=4.0.1-1jammy.20231117.075137`
 
 Binary Packages:
 
-- `ros-iron-rosidl-generator-cpp=4.0.1-1jammy.20230908.161836`
+- `ros-iron-rosidl-generator-cpp=4.0.1-1jammy.20231117.075137`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-generator-cpp/copyright`)
 
@@ -11540,11 +11612,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-generator-cpp/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosidl-generator-py=0.18.0-2jammy.20230908.162714`
+### `dpkg` source package: `ros-iron-rosidl-generator-py=0.18.0-2jammy.20231117.080244`
 
 Binary Packages:
 
-- `ros-iron-rosidl-generator-py=0.18.0-2jammy.20230908.162714`
+- `ros-iron-rosidl-generator-py=0.18.0-2jammy.20231117.080244`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-generator-py/copyright`)
 
@@ -11596,11 +11668,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-pycommon/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosidl-runtime-c=4.0.1-1jammy.20230908.161527`
+### `dpkg` source package: `ros-iron-rosidl-runtime-c=4.0.1-1jammy.20231117.074755`
 
 Binary Packages:
 
-- `ros-iron-rosidl-runtime-c=4.0.1-1jammy.20230908.161527`
+- `ros-iron-rosidl-runtime-c=4.0.1-1jammy.20231117.074755`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-runtime-c/copyright`)
 
@@ -11610,11 +11682,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-runtime-c/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosidl-runtime-cpp=4.0.1-1jammy.20230908.161740`
+### `dpkg` source package: `ros-iron-rosidl-runtime-cpp=4.0.1-1jammy.20231117.074926`
 
 Binary Packages:
 
-- `ros-iron-rosidl-runtime-cpp=4.0.1-1jammy.20230908.161740`
+- `ros-iron-rosidl-runtime-cpp=4.0.1-1jammy.20231117.074926`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-runtime-cpp/copyright`)
 
@@ -11624,11 +11696,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-runtime-cpp/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosidl-runtime-py=0.12.0-2jammy.20230908.172322`
+### `dpkg` source package: `ros-iron-rosidl-runtime-py=0.12.0-2jammy.20231117.091453`
 
 Binary Packages:
 
-- `ros-iron-rosidl-runtime-py=0.12.0-2jammy.20230908.172322`
+- `ros-iron-rosidl-runtime-py=0.12.0-2jammy.20231117.091453`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-runtime-py/copyright`)
 
@@ -11638,11 +11710,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-runtime-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosidl-typesupport-c=3.0.1-1jammy.20230908.162142`
+### `dpkg` source package: `ros-iron-rosidl-typesupport-c=3.0.1-1jammy.20231117.075140`
 
 Binary Packages:
 
-- `ros-iron-rosidl-typesupport-c=3.0.1-1jammy.20230908.162142`
+- `ros-iron-rosidl-typesupport-c=3.0.1-1jammy.20231117.075140`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-typesupport-c/copyright`)
 
@@ -11652,11 +11724,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-typesupport-c/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosidl-typesupport-cpp=3.0.1-1jammy.20230908.162319`
+### `dpkg` source package: `ros-iron-rosidl-typesupport-cpp=3.0.1-1jammy.20231117.075441`
 
 Binary Packages:
 
-- `ros-iron-rosidl-typesupport-cpp=3.0.1-1jammy.20230908.162319`
+- `ros-iron-rosidl-typesupport-cpp=3.0.1-1jammy.20231117.075441`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-typesupport-cpp/copyright`)
 
@@ -11666,11 +11738,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-typesupport-cpp/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosidl-typesupport-fastrtps-c=3.0.1-1jammy.20230908.162548`
+### `dpkg` source package: `ros-iron-rosidl-typesupport-fastrtps-c=3.0.2-1jammy.20231117.075903`
 
 Binary Packages:
 
-- `ros-iron-rosidl-typesupport-fastrtps-c=3.0.1-1jammy.20230908.162548`
+- `ros-iron-rosidl-typesupport-fastrtps-c=3.0.2-1jammy.20231117.075903`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-typesupport-fastrtps-c/copyright`)
 
@@ -11680,11 +11752,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-typesupport-fastrtps-c/c
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosidl-typesupport-fastrtps-cpp=3.0.1-1jammy.20230908.162358`
+### `dpkg` source package: `ros-iron-rosidl-typesupport-fastrtps-cpp=3.0.2-1jammy.20231117.075623`
 
 Binary Packages:
 
-- `ros-iron-rosidl-typesupport-fastrtps-cpp=3.0.1-1jammy.20230908.162358`
+- `ros-iron-rosidl-typesupport-fastrtps-cpp=3.0.2-1jammy.20231117.075623`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-typesupport-fastrtps-cpp/copyright`)
 
@@ -11708,11 +11780,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-typesupport-interface/co
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosidl-typesupport-introspection-c=4.0.1-1jammy.20230908.161846`
+### `dpkg` source package: `ros-iron-rosidl-typesupport-introspection-c=4.0.1-1jammy.20231117.075025`
 
 Binary Packages:
 
-- `ros-iron-rosidl-typesupport-introspection-c=4.0.1-1jammy.20230908.161846`
+- `ros-iron-rosidl-typesupport-introspection-c=4.0.1-1jammy.20231117.075025`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-typesupport-introspection-c/copyright`)
 
@@ -11722,11 +11794,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-typesupport-introspectio
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-rosidl-typesupport-introspection-cpp=4.0.1-1jammy.20230908.162118`
+### `dpkg` source package: `ros-iron-rosidl-typesupport-introspection-cpp=4.0.1-1jammy.20231117.075201`
 
 Binary Packages:
 
-- `ros-iron-rosidl-typesupport-introspection-cpp=4.0.1-1jammy.20230908.162118`
+- `ros-iron-rosidl-typesupport-introspection-cpp=4.0.1-1jammy.20231117.075201`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-rosidl-typesupport-introspection-cpp/copyright`)
 
@@ -11750,11 +11822,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-rpyutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-sensor-msgs-py=5.0.0-2jammy.20230908.183901`
+### `dpkg` source package: `ros-iron-sensor-msgs-py=5.0.0-2jammy.20231117.091441`
 
 Binary Packages:
 
-- `ros-iron-sensor-msgs-py=5.0.0-2jammy.20230908.183901`
+- `ros-iron-sensor-msgs-py=5.0.0-2jammy.20231117.091441`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-sensor-msgs-py/copyright`)
 
@@ -11764,11 +11836,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-sensor-msgs-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-sensor-msgs=5.0.0-2jammy.20230908.174504`
+### `dpkg` source package: `ros-iron-sensor-msgs=5.0.0-2jammy.20231117.090008`
 
 Binary Packages:
 
-- `ros-iron-sensor-msgs=5.0.0-2jammy.20230908.174504`
+- `ros-iron-sensor-msgs=5.0.0-2jammy.20231117.090008`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-sensor-msgs/copyright`)
 
@@ -11778,11 +11850,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-sensor-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-service-msgs=1.6.0-2jammy.20230908.163319`
+### `dpkg` source package: `ros-iron-service-msgs=1.6.0-2jammy.20231117.081406`
 
 Binary Packages:
 
-- `ros-iron-service-msgs=1.6.0-2jammy.20230908.163319`
+- `ros-iron-service-msgs=1.6.0-2jammy.20231117.081406`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-service-msgs/copyright`)
 
@@ -11792,11 +11864,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-service-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-shape-msgs=5.0.0-2jammy.20230908.174512`
+### `dpkg` source package: `ros-iron-shape-msgs=5.0.0-2jammy.20231117.090306`
 
 Binary Packages:
 
-- `ros-iron-shape-msgs=5.0.0-2jammy.20230908.174512`
+- `ros-iron-shape-msgs=5.0.0-2jammy.20231117.090306`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-shape-msgs/copyright`)
 
@@ -11806,11 +11878,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-shape-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-shared-queues-vendor=0.22.3-1jammy.20230911.051316`
+### `dpkg` source package: `ros-iron-shared-queues-vendor=0.22.5-1jammy.20231118.014148`
 
 Binary Packages:
 
-- `ros-iron-shared-queues-vendor=0.22.3-1jammy.20230911.051316`
+- `ros-iron-shared-queues-vendor=0.22.5-1jammy.20231118.014148`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-shared-queues-vendor/copyright`)
 
@@ -11835,11 +11907,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-spdlog-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-sqlite3-vendor=0.22.3-1jammy.20230911.051310`
+### `dpkg` source package: `ros-iron-sqlite3-vendor=0.22.5-1jammy.20231118.014010`
 
 Binary Packages:
 
-- `ros-iron-sqlite3-vendor=0.22.3-1jammy.20230911.051310`
+- `ros-iron-sqlite3-vendor=0.22.5-1jammy.20231118.014010`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-sqlite3-vendor/copyright`)
 
@@ -11849,11 +11921,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-sqlite3-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-sros2-cmake=0.11.3-1jammy.20230908.174729`
+### `dpkg` source package: `ros-iron-sros2-cmake=0.11.3-1jammy.20231117.094507`
 
 Binary Packages:
 
-- `ros-iron-sros2-cmake=0.11.3-1jammy.20230908.174729`
+- `ros-iron-sros2-cmake=0.11.3-1jammy.20231117.094507`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-sros2-cmake/copyright`)
 
@@ -11863,11 +11935,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-sros2-cmake/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-sros2=0.11.3-1jammy.20230908.174502`
+### `dpkg` source package: `ros-iron-sros2=0.11.3-1jammy.20231117.094206`
 
 Binary Packages:
 
-- `ros-iron-sros2=0.11.3-1jammy.20230908.174502`
+- `ros-iron-sros2=0.11.3-1jammy.20231117.094206`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-sros2/copyright`)
 
@@ -11877,11 +11949,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-sros2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-statistics-msgs=1.6.0-2jammy.20230908.164932`
+### `dpkg` source package: `ros-iron-statistics-msgs=1.6.0-2jammy.20231117.082606`
 
 Binary Packages:
 
-- `ros-iron-statistics-msgs=1.6.0-2jammy.20230908.164932`
+- `ros-iron-statistics-msgs=1.6.0-2jammy.20231117.082606`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-statistics-msgs/copyright`)
 
@@ -11891,11 +11963,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-statistics-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-std-msgs=5.0.0-2jammy.20230908.164939`
+### `dpkg` source package: `ros-iron-std-msgs=5.0.0-2jammy.20231117.082608`
 
 Binary Packages:
 
-- `ros-iron-std-msgs=5.0.0-2jammy.20230908.164939`
+- `ros-iron-std-msgs=5.0.0-2jammy.20231117.082608`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-std-msgs/copyright`)
 
@@ -11905,11 +11977,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-std-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-std-srvs=5.0.0-2jammy.20230908.164942`
+### `dpkg` source package: `ros-iron-std-srvs=5.0.0-2jammy.20231117.085634`
 
 Binary Packages:
 
-- `ros-iron-std-srvs=5.0.0-2jammy.20230908.164942`
+- `ros-iron-std-srvs=5.0.0-2jammy.20231117.085634`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-std-srvs/copyright`)
 
@@ -11919,11 +11991,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-std-srvs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-stereo-image-proc=3.0.1-3jammy.20230908.181210`
+### `dpkg` source package: `ros-iron-stereo-image-proc=3.0.1-3jammy.20231117.110856`
 
 Binary Packages:
 
-- `ros-iron-stereo-image-proc=3.0.1-3jammy.20230908.181210`
+- `ros-iron-stereo-image-proc=3.0.1-3jammy.20231117.110856`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-stereo-image-proc/copyright`)
 
@@ -11933,11 +12005,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-stereo-image-proc/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-stereo-msgs=5.0.0-2jammy.20230908.180229`
+### `dpkg` source package: `ros-iron-stereo-msgs=5.0.0-2jammy.20231117.090819`
 
 Binary Packages:
 
-- `ros-iron-stereo-msgs=5.0.0-2jammy.20230908.180229`
+- `ros-iron-stereo-msgs=5.0.0-2jammy.20231117.090819`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-stereo-msgs/copyright`)
 
@@ -11947,11 +12019,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-stereo-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-tf2-bullet=0.31.5-1jammy.20230908.175803`
+### `dpkg` source package: `ros-iron-tf2-bullet=0.31.5-1jammy.20231117.110706`
 
 Binary Packages:
 
-- `ros-iron-tf2-bullet=0.31.5-1jammy.20230908.175803`
+- `ros-iron-tf2-bullet=0.31.5-1jammy.20231117.110706`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-bullet/copyright`)
 
@@ -11961,11 +12033,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-bullet/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-tf2-eigen-kdl=0.31.5-1jammy.20230908.175034`
+### `dpkg` source package: `ros-iron-tf2-eigen-kdl=0.31.5-1jammy.20231117.092624`
 
 Binary Packages:
 
-- `ros-iron-tf2-eigen-kdl=0.31.5-1jammy.20230908.175034`
+- `ros-iron-tf2-eigen-kdl=0.31.5-1jammy.20231117.092624`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-eigen-kdl/copyright`)
 
@@ -11975,11 +12047,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-eigen-kdl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-tf2-eigen=0.31.5-1jammy.20230908.175758`
+### `dpkg` source package: `ros-iron-tf2-eigen=0.31.5-1jammy.20231117.110718`
 
 Binary Packages:
 
-- `ros-iron-tf2-eigen=0.31.5-1jammy.20230908.175758`
+- `ros-iron-tf2-eigen=0.31.5-1jammy.20231117.110718`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-eigen/copyright`)
 
@@ -11989,11 +12061,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-eigen/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-tf2-geometry-msgs=0.31.5-1jammy.20230908.175807`
+### `dpkg` source package: `ros-iron-tf2-geometry-msgs=0.31.5-1jammy.20231117.110731`
 
 Binary Packages:
 
-- `ros-iron-tf2-geometry-msgs=0.31.5-1jammy.20230908.175807`
+- `ros-iron-tf2-geometry-msgs=0.31.5-1jammy.20231117.110731`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-geometry-msgs/copyright`)
 
@@ -12003,11 +12075,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-geometry-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-tf2-kdl=0.31.5-1jammy.20230908.175810`
+### `dpkg` source package: `ros-iron-tf2-kdl=0.31.5-1jammy.20231117.110212`
 
 Binary Packages:
 
-- `ros-iron-tf2-kdl=0.31.5-1jammy.20230908.175810`
+- `ros-iron-tf2-kdl=0.31.5-1jammy.20231117.110212`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-kdl/copyright`)
 
@@ -12017,11 +12089,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-kdl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-tf2-msgs=0.31.5-1jammy.20230908.174530`
+### `dpkg` source package: `ros-iron-tf2-msgs=0.31.5-1jammy.20231117.090010`
 
 Binary Packages:
 
-- `ros-iron-tf2-msgs=0.31.5-1jammy.20230908.174530`
+- `ros-iron-tf2-msgs=0.31.5-1jammy.20231117.090010`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-msgs/copyright`)
 
@@ -12031,11 +12103,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-tf2-py=0.31.5-1jammy.20230908.175039`
+### `dpkg` source package: `ros-iron-tf2-py=0.31.5-1jammy.20231117.092800`
 
 Binary Packages:
 
-- `ros-iron-tf2-py=0.31.5-1jammy.20230908.175039`
+- `ros-iron-tf2-py=0.31.5-1jammy.20231117.092800`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-py/copyright`)
 
@@ -12045,11 +12117,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-tf2-ros-py=0.31.5-1jammy.20230908.175247`
+### `dpkg` source package: `ros-iron-tf2-ros-py=0.31.5-1jammy.20231117.092953`
 
 Binary Packages:
 
-- `ros-iron-tf2-ros-py=0.31.5-1jammy.20230908.175247`
+- `ros-iron-tf2-ros-py=0.31.5-1jammy.20231117.092953`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-ros-py/copyright`)
 
@@ -12059,11 +12131,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-ros-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-tf2-ros=0.31.5-1jammy.20230908.175352`
+### `dpkg` source package: `ros-iron-tf2-ros=0.31.5-1jammy.20231117.105622`
 
 Binary Packages:
 
-- `ros-iron-tf2-ros=0.31.5-1jammy.20230908.175352`
+- `ros-iron-tf2-ros=0.31.5-1jammy.20231117.105622`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-ros/copyright`)
 
@@ -12073,11 +12145,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-ros/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-tf2-sensor-msgs=0.31.5-1jammy.20230908.183930`
+### `dpkg` source package: `ros-iron-tf2-sensor-msgs=0.31.5-1jammy.20231117.110401`
 
 Binary Packages:
 
-- `ros-iron-tf2-sensor-msgs=0.31.5-1jammy.20230908.183930`
+- `ros-iron-tf2-sensor-msgs=0.31.5-1jammy.20231117.110401`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-sensor-msgs/copyright`)
 
@@ -12087,11 +12159,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-sensor-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-tf2-tools=0.31.5-1jammy.20230908.175322`
+### `dpkg` source package: `ros-iron-tf2-tools=0.31.5-1jammy.20231117.093424`
 
 Binary Packages:
 
-- `ros-iron-tf2-tools=0.31.5-1jammy.20230908.175322`
+- `ros-iron-tf2-tools=0.31.5-1jammy.20231117.093424`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-tools/copyright`)
 
@@ -12101,11 +12173,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2-tools/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-tf2=0.31.5-1jammy.20230908.174843`
+### `dpkg` source package: `ros-iron-tf2=0.31.5-1jammy.20231117.092410`
 
 Binary Packages:
 
-- `ros-iron-tf2=0.31.5-1jammy.20230908.174843`
+- `ros-iron-tf2=0.31.5-1jammy.20231117.092410`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2/copyright`)
 
@@ -12115,11 +12187,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-tf2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-theora-image-transport=3.1.0-1jammy.20230908.180041`
+### `dpkg` source package: `ros-iron-theora-image-transport=3.1.0-1jammy.20231117.110033`
 
 Binary Packages:
 
-- `ros-iron-theora-image-transport=3.1.0-1jammy.20230908.180041`
+- `ros-iron-theora-image-transport=3.1.0-1jammy.20231117.110033`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -12185,11 +12257,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-tracetools/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-trajectory-msgs=5.0.0-2jammy.20230908.174539`
+### `dpkg` source package: `ros-iron-trajectory-msgs=5.0.0-2jammy.20231117.090022`
 
 Binary Packages:
 
-- `ros-iron-trajectory-msgs=5.0.0-2jammy.20230908.174539`
+- `ros-iron-trajectory-msgs=5.0.0-2jammy.20231117.090022`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-trajectory-msgs/copyright`)
 
@@ -12199,11 +12271,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-trajectory-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-type-description-interfaces=1.6.0-2jammy.20230908.163731`
+### `dpkg` source package: `ros-iron-type-description-interfaces=1.6.0-2jammy.20231117.081925`
 
 Binary Packages:
 
-- `ros-iron-type-description-interfaces=1.6.0-2jammy.20230908.163731`
+- `ros-iron-type-description-interfaces=1.6.0-2jammy.20231117.081925`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-type-description-interfaces/copyright`)
 
@@ -12228,11 +12300,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-uncrustify-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-unique-identifier-msgs=2.3.2-3jammy.20230908.163133`
+### `dpkg` source package: `ros-iron-unique-identifier-msgs=2.3.2-3jammy.20231117.081119`
 
 Binary Packages:
 
-- `ros-iron-unique-identifier-msgs=2.3.2-3jammy.20230908.163133`
+- `ros-iron-unique-identifier-msgs=2.3.2-3jammy.20231117.081119`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-unique-identifier-msgs/copyright`)
 
@@ -12256,11 +12328,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-urdf-parser-plugin/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-urdf=2.8.2-3jammy.20230908.162253`
+### `dpkg` source package: `ros-iron-urdf=2.8.2-3jammy.20231117.075320`
 
 Binary Packages:
 
-- `ros-iron-urdf=2.8.2-3jammy.20230908.162253`
+- `ros-iron-urdf=2.8.2-3jammy.20231117.075320`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-urdf/copyright`)
 
@@ -12298,11 +12370,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-urdfdom/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-vision-opencv=3.4.0-3jammy.20230908.191628`
+### `dpkg` source package: `ros-iron-vision-opencv=3.4.0-3jammy.20231117.104921`
 
 Binary Packages:
 
-- `ros-iron-vision-opencv=3.4.0-3jammy.20230908.191628`
+- `ros-iron-vision-opencv=3.4.0-3jammy.20231117.104921`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-vision-opencv/copyright`)
 
@@ -12313,11 +12385,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-vision-opencv/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-visualization-msgs=5.0.0-2jammy.20230908.180229`
+### `dpkg` source package: `ros-iron-visualization-msgs=5.0.0-2jammy.20231117.090546`
 
 Binary Packages:
 
-- `ros-iron-visualization-msgs=5.0.0-2jammy.20230908.180229`
+- `ros-iron-visualization-msgs=5.0.0-2jammy.20231117.090546`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-visualization-msgs/copyright`)
 
@@ -12342,11 +12414,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-iron-yaml-cpp-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-iron-zstd-vendor=0.22.3-1jammy.20230911.051309`
+### `dpkg` source package: `ros-iron-zstd-vendor=0.22.5-1jammy.20231118.014132`
 
 Binary Packages:
 
-- `ros-iron-zstd-vendor=0.22.3-1jammy.20230911.051309`
+- `ros-iron-zstd-vendor=0.22.5-1jammy.20231118.014132`
 
 Licenses: (parsed from: `/usr/share/doc/ros-iron-zstd-vendor/copyright`)
 
@@ -12813,15 +12885,15 @@ $ apt-get source -qq --print-uris superlu=5.3.0+dfsg1-2
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/superlu/superlu_5.3.0%2bdfsg1-2.debian.tar.xz' superlu_5.3.0+dfsg1-2.debian.tar.xz 6688 SHA512:004eead02371f6513b0f0d878a6456e8c99461d14f61cd322c41669ef2cdd1bb59d7f3680e7bb9b3718824c84c1684aabb411c6aa7066f61d9c24106c6152772
 ```
 
-### `dpkg` source package: `systemd=249.11-0ubuntu3.10`
+### `dpkg` source package: `systemd=249.11-0ubuntu3.11`
 
 Binary Packages:
 
-- `libpam-systemd:amd64=249.11-0ubuntu3.10`
-- `libsystemd0:amd64=249.11-0ubuntu3.10`
-- `libudev1:amd64=249.11-0ubuntu3.10`
-- `systemd=249.11-0ubuntu3.10`
-- `systemd-sysv=249.11-0ubuntu3.10`
+- `libpam-systemd:amd64=249.11-0ubuntu3.11`
+- `libsystemd0:amd64=249.11-0ubuntu3.11`
+- `libudev1:amd64=249.11-0ubuntu3.11`
+- `systemd=249.11-0ubuntu3.11`
+- `systemd-sysv=249.11-0ubuntu3.11`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -12834,9 +12906,14 @@ Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/d
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.11
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.11.dsc' systemd_249.11-0ubuntu3.11.dsc 5932 SHA512:ea0c4eb76d8cfabf7744cdd8219a9ec7830d5a5c163bff7e07cf9668df62f5fecd4c9bf63bdf73b10c318c389c20e8ef079ed67ad0047a94c4e00ed4709d5c7b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.11.debian.tar.xz' systemd_249.11-0ubuntu3.11.debian.tar.xz 251744 SHA512:86cb4ad3ba3869c88cc7ce1e6c40f5dcd593ebdec61e2eeae9a42ebd4bbda5b3da84c2d9551c924ae54244e00049f9e975e36b5e8d0fc0c8a795558f338b0889
+```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
@@ -12959,21 +13036,27 @@ $ apt-get source -qq --print-uris tesseract=4.1.1-2.1build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/t/tesseract/tesseract_4.1.1-2.1build1.debian.tar.xz' tesseract_4.1.1-2.1build1.debian.tar.xz 53972 SHA512:a08d12d2166ffa1ddc0c8319c2095e9447f83eb170c6edd06957d44d995dff5fb669559707aaa100fa12450bc1ff3169893e3df0ad833bb474781ece0a60a12b
 ```
 
-### `dpkg` source package: `tiff=4.3.0-6ubuntu0.6`
+### `dpkg` source package: `tiff=4.3.0-6ubuntu0.7`
 
 Binary Packages:
 
-- `libtiff-dev:amd64=4.3.0-6ubuntu0.6`
-- `libtiff5:amd64=4.3.0-6ubuntu0.6`
-- `libtiffxx5:amd64=4.3.0-6ubuntu0.6`
+- `libtiff-dev:amd64=4.3.0-6ubuntu0.7`
+- `libtiff5:amd64=4.3.0-6ubuntu0.7`
+- `libtiffxx5:amd64=4.3.0-6ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/libtiffxx5/copyright`)
 
 - `Hylafax`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.3.0-6ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.7.dsc' tiff_4.3.0-6ubuntu0.7.dsc 2573 SHA512:97b3f09abb1ba0720546159af3a9dde1926e6b988e0bd05742da65e0134f0e9641668fdfa3db1bf19c4916ed51a3f540b79e67602d75ef7278b44550cdd2bd61
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz' tiff_4.3.0.orig.tar.gz 2808254 SHA512:e04a4a6c542e58a174c1e9516af3908acf1d3d3e1096648c5514f4963f73e7af27387a76b0fbabe43cf867a18874088f963796a7cd6e45deb998692e3e235493
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz.asc' tiff_4.3.0.orig.tar.gz.asc 488 SHA512:115a4c5714b52d0fbea800c494d83c8a96b70b2c9ce84a8df03205d9afc517faa17963f5f9508c013d7d3e2be6675b84b594a771a829406473234c4bd85e469e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.7.debian.tar.xz' tiff_4.3.0-6ubuntu0.7.debian.tar.xz 46852 SHA512:dd997306dda648e35e2ca741144a57a34ef124fb42984f4102b69eefd15d56bc758cae4c44760973e300e27e567f3598d6de7cfebc54c5792b43f0b31a663f9e
+```
 
 ### `dpkg` source package: `tinyxml2=9.0.0+dfsg-3`
 
