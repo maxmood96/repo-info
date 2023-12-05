@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7e66d0cb9f60a874478ad26849182d918227a3b2ef41790645fd4addc3f7c3cb`
-- Created: `2023-11-22T04:50:37.772678685Z`
-- Virtual Size: ~ 250.13 Mb  
+- Image ID: `sha256:304b8dc4935bfd8b59a97afa97981d5b7e093709910045b688c95e179ce0a853`
+- Created: `2023-12-01T20:36:12.064386306Z`
+- Virtual Size: ~ 248.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,8 +16,8 @@
   - `PYTHON_VERSION=3.11.6`
   - `PYTHON_PIP_VERSION=23.2.1`
   - `PYTHON_SETUPTOOLS_VERSION=65.5.1`
-  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/c6add47b0abf67511cdfb4734771cbab403af062/public/get-pip.py`
-  - `PYTHON_GET_PIP_SHA256=22b849a10f86f5ddf7ce148ca2a31214504ee6c83ef626840fde6e5dcd809d11`
+  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/4cfa4081d27285bda1220a62a5ebf5b4bd749cdb/public/get-pip.py`
+  - `PYTHON_GET_PIP_SHA256=9cc01665956d22b3bf057ae8287b035827bfd895da235bcea200ab3b811790b6`
   - `SATOSA_VERSION=8.2.0`
 
 ## `dpkg` (`.deb`-based packages)
