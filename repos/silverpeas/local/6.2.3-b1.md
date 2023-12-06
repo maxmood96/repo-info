@@ -856,14 +856,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.20
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.20.dsc' curl_7.68.0-1ubuntu2.20.dsc 2737 SHA512:fc602637e036ba63548581b1950c055cc5fdb0b950848baac342fe117715a6021e7ecb00db10c9e44d777feba7c911c48b80f27880be8d9252250857414f614b
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.20.debian.tar.xz' curl_7.68.0-1ubuntu2.20.debian.tar.xz 69464 SHA512:63c11b6186ed3dded8f90bcdac432ce4a79de6dc6364eb29d7fa88ad367961be3a9f34035b30e7ba2c1d3d7d7a80d765ffdbe9466e03512bd73339b3023e009e
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
 
@@ -8023,14 +8018,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-12=12.16-0ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.16-0ubuntu0.20.04.1.dsc' postgresql-12_12.16-0ubuntu0.20.04.1.dsc 3767 SHA512:57da46b86074d84d9d42a672da20c1d205a032054feba440ea400f3f286f18c365dcdf53b1b7d849d561718a1cdffe81b2cf9a92d4674d998705a49f788fde11
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.16.orig.tar.bz2' postgresql-12_12.16.orig.tar.bz2 21140532 SHA512:37c1e5c87e6e3437b9f3de1219a8df2085b1dfb6f687980dd0e9c8691f2caac34ac58a6c119fe69a61888b80a9cbce89ebc9dbb345d6d141a8e4ea9b1b37fa89
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.16-0ubuntu0.20.04.1.debian.tar.xz' postgresql-12_12.16-0ubuntu0.20.04.1.debian.tar.xz 27640 SHA512:ee8c6663ba68c3d4641385ae6d0b853847ae807e808c0d31dc8d2c6854292de696bb4a75fdf1835728e18bbf330e7ff558f6c5861c67c1f3f0eb04f26b71f0d1
-```
 
 ### `dpkg` source package: `procps=2:3.3.16-1ubuntu2.4`
 
