@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:08fed1ebc1d2f0de7acfa325032fd074dd7af1f81059e170a90d288f99af3730`
-- Created: `2023-11-22T05:08:07.589778078Z`
+- Image ID: `sha256:807162be1689ca629442205eae59f7281c70efc176f98347b11b72904b6b46a7`
+- Created: `2023-12-05T20:51:39.797152532Z`
 - Virtual Size: ~ 798.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["unitd","--no-daemon","--control","unix:/var/run/control.unit.sock"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.20.11`
+  - `GOLANG_VERSION=1.20.12`
   - `GOPATH=/go`
 - Labels:
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
