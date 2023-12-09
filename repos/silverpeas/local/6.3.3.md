@@ -1,9 +1,9 @@
-# `silverpeas:6.3.2`
+# `silverpeas:6.3.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c1799ad33ee7415aa483fab6576592803080cc7fba6619de2828655b93c41bdd`
-- Created: `2023-12-02T06:45:39.139906636Z`
+- Image ID: `sha256:7af9ff3b47c8af3fd9d9dea50619f760a34fbd9dc26b96fd7660fd11c43e2933`
+- Created: `2023-12-06T19:47:01.771384957Z`
 - Virtual Size: ~ 3.14 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,16 +17,16 @@
   - `JAVA_HOME=/docker-java-home`
   - `SILVERPEAS_HOME=/opt/silverpeas`
   - `JBOSS_HOME=/opt/wildfly`
-  - `SILVERPEAS_VERSION=6.3.2`
+  - `SILVERPEAS_VERSION=6.3.3`
   - `WILDFLY_VERSION=26.1.1`
 - Labels:
   - `build=1`
-  - `description=Image to install and to run Silverpeas 6.3.2`
-  - `name=Silverpeas 6.3.2`
+  - `description=Image to install and to run Silverpeas 6.3.3`
+  - `name=Silverpeas 6.3.3`
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`
   - `vendor=Silverpeas`
-  - `version=6.3.2`
+  - `version=6.3.3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1994,14 +1994,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.12
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.12.dsc' glibc_2.31-0ubuntu9.12.dsc 9378 SHA512:2055d7f2d479789f44629fc4f9f938e3bcfdc035b6ca49ee5238aa0de18e4db3da1197591951838514565c1c1bad825273026bc6eb146394f646039d13c787a9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.12.debian.tar.xz' glibc_2.31-0ubuntu9.12.debian.tar.xz 879820 SHA512:94fe56d6feb9507ad0d6d81080a064729e259aa92130e0cb08567a61ec2615b11899959f909396a54df0a1e67e29f03ee9e10c2fad406ee9f3333e7269758a32
-```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4ubuntu0.1`
 
