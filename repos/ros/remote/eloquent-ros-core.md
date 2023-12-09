@@ -1,7 +1,7 @@
 ## `ros:eloquent-ros-core`
 
 ```console
-$ docker pull ros@sha256:c541ce67c931b746efb69caff8860ad63d2a89103d161ae52fd44282be36ff4c
+$ docker pull ros@sha256:0c7012b6f30c9d41440e80afa98a7d17e0dcacc11b3fc8eac5e049dea47a4b8f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,260 +13,242 @@ $ docker pull ros@sha256:c541ce67c931b746efb69caff8860ad63d2a89103d161ae52fd4428
 ### `ros:eloquent-ros-core` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:32f8c2818938401b76846223fb1b9fe3c8d78afd1cae9c588c604247a278dfaa
+$ docker pull ros@sha256:e6f402cce868e7cdbeec05953752f01bdcd77326021cd250686db49ab35eaf61
 ```
 
--	Docker Version: 19.03.12
+-	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **215.5 MB (215470465 bytes)**  
+-	Total Size: **215.6 MB (215638048 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07b6884dc7fba57df9320b9486124d36ec218350754ebabbfc690c288004cdca`
+-	Image ID: `sha256:0ee3dbdbc46c64f066ef59a710951d89702ab2e60f27cbe43a348325ec499ec8`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 19 May 2021 19:44:30 GMT
-ADD file:e05689b5b0d51a2316f8a87b1a9d6cbf90d98b19a424dbb924ee3d0b1cc17bfc in / 
-# Wed, 19 May 2021 19:44:31 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 19 May 2021 19:44:32 GMT
-RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 19 May 2021 19:44:33 GMT
-RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 19 May 2021 19:44:33 GMT
+# Tue, 30 May 2023 09:32:07 GMT
+ARG RELEASE
+# Tue, 30 May 2023 09:32:07 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Tue, 30 May 2023 09:32:07 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Tue, 30 May 2023 09:32:07 GMT
+LABEL org.opencontainers.image.version=18.04
+# Tue, 30 May 2023 09:32:09 GMT
+ADD file:3c74e7e08cbf9a87694ce6fa541af617599680fa54d9e48556fc0fbc120b4a83 in / 
+# Tue, 30 May 2023 09:32:09 GMT
 CMD ["/bin/bash"]
-# Wed, 19 May 2021 20:35:57 GMT
+# Sat, 09 Dec 2023 02:55:05 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/*
-# Wed, 19 May 2021 21:49:28 GMT
+# Sat, 09 Dec 2023 02:55:27 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Wed, 02 Jun 2021 19:17:57 GMT
-RUN echo "deb http://snapshots.ros.org/eloquent/final/ubuntu bionic main" > /etc/apt/sources.list.d/ros2-snapshots.list
-# Wed, 02 Jun 2021 19:17:58 GMT
+# Sat, 09 Dec 2023 02:55:28 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 4B63CF8FDE49746E98FA01DDAD19BAB3CBF125EA
-# Wed, 02 Jun 2021 19:17:58 GMT
+# Sat, 09 Dec 2023 03:48:45 GMT
+RUN echo "deb http://snapshots.ros.org/eloquent/final/ubuntu bionic main" > /etc/apt/sources.list.d/ros2-snapshots.list
+# Sat, 09 Dec 2023 03:48:45 GMT
 ENV LANG=C.UTF-8
-# Wed, 02 Jun 2021 19:17:59 GMT
+# Sat, 09 Dec 2023 03:48:45 GMT
 ENV LC_ALL=C.UTF-8
-# Wed, 02 Jun 2021 19:17:59 GMT
+# Sat, 09 Dec 2023 03:48:46 GMT
 ENV ROS_DISTRO=eloquent
-# Wed, 02 Jun 2021 19:18:57 GMT
+# Sat, 09 Dec 2023 03:49:43 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-eloquent-ros-core=0.8.5-1*     && rm -rf /var/lib/apt/lists/*
-# Wed, 02 Jun 2021 19:19:00 GMT
+# Sat, 09 Dec 2023 03:49:45 GMT
 COPY file:57f71198b74c2c1967889acdfddb85d428137580d18be4211971fc7381557b6c in / 
-# Wed, 02 Jun 2021 19:19:00 GMT
+# Sat, 09 Dec 2023 03:49:45 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 02 Jun 2021 19:19:00 GMT
+# Sat, 09 Dec 2023 03:49:46 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:4bbfd2c87b7524455f144a03bf387c88b6d4200e5e0df9139a9d5e79110f89ca`  
-		Last Modified: Thu, 13 May 2021 14:54:04 GMT  
-		Size: 26.7 MB (26696304 bytes)  
+	-	`sha256:41af1b5f0f51947706ae712999cf098bef968a7799e7cb4bb2268829e62a6ab3`  
+		Last Modified: Fri, 02 Jun 2023 00:09:06 GMT  
+		Size: 26.7 MB (26717357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2e110be24e168b42c1a2ddbc4a476a217b73cccdba69cdcb212b812a88f5726`  
-		Last Modified: Wed, 19 May 2021 19:45:43 GMT  
-		Size: 857.0 B  
+	-	`sha256:e384ee9769243a721793f2bfc136371fa17319fb6c6b6477a2e03a17d545616c`  
+		Last Modified: Sat, 09 Dec 2023 04:36:31 GMT  
+		Size: 818.9 KB (818932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:889a7173dcfeb409f9d88054a97ab2445f5a799a823f719a5573365ee3662b6f`  
-		Last Modified: Wed, 19 May 2021 19:45:43 GMT  
-		Size: 189.0 B  
+	-	`sha256:fc85c6d8f29e7702b5251b205f55245dc5eb2973909564ad084046a1f6c9324a`  
+		Last Modified: Sat, 09 Dec 2023 04:36:29 GMT  
+		Size: 4.9 MB (4878334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1270d8e5a641a61675efd742287bbc693c243ab17fd4886a7550878d186f2565`  
-		Last Modified: Wed, 19 May 2021 22:11:29 GMT  
-		Size: 841.4 KB (841350 bytes)  
+	-	`sha256:9964396126f3f0fdee6bb57ba39280b6966c6879a933be850490cea1c00bc65f`  
+		Last Modified: Sat, 09 Dec 2023 04:36:28 GMT  
+		Size: 2.4 KB (2411 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b8ca49cb51a84fa2a9f93d1c7107f0d2aef6eba8e6373200924e7ed48f92b25`  
-		Last Modified: Wed, 19 May 2021 22:11:28 GMT  
-		Size: 4.9 MB (4872908 bytes)  
+	-	`sha256:acde76eba4d4e8498aad6d875227f7c9099d9aeda9dddd94a20809595b92e947`  
+		Last Modified: Sat, 09 Dec 2023 04:48:06 GMT  
+		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:336714b60dc9b27656c3a60d7f24c23fd2b1e03264e99d168a1606cc786332c9`  
-		Last Modified: Wed, 02 Jun 2021 19:46:34 GMT  
-		Size: 235.0 B  
+	-	`sha256:0c37c08ac634e6d38933df0c02ee3cb5667ae6a9821a9bd52009fe3caefecb39`  
+		Last Modified: Sat, 09 Dec 2023 04:48:38 GMT  
+		Size: 183.2 MB (183220587 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9789106acd9b00c46d38c3a1b2f7dbeee0b802aebf9a0ea3867eb0e93cb1791a`  
-		Last Modified: Wed, 02 Jun 2021 19:46:34 GMT  
-		Size: 2.0 KB (1982 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fbdd8b3bf4219b991f4e78558798ad61edb87c8e1779c56ef9c719ad19bfc375`  
-		Last Modified: Wed, 02 Jun 2021 19:47:07 GMT  
-		Size: 183.1 MB (183056446 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6652219766535a78a159fa1810d8ebb6e6ba431eaa6eeaa57393d3e42a9baf6`  
-		Last Modified: Wed, 02 Jun 2021 19:46:34 GMT  
-		Size: 194.0 B  
+	-	`sha256:36c633bda9b91acd880ec76f0b0b123de783a543408c34f6b8ec48d3b5f946cf`  
+		Last Modified: Sat, 09 Dec 2023 04:48:06 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:eloquent-ros-core` - linux; arm variant v7
 
 ```console
-$ docker pull ros@sha256:06b0e958844abf02b8835568955eb76a684f705c11a911d9ed5d82090f7944ec
+$ docker pull ros@sha256:6e519861fd1905dbc285bf5e0a4cc1eafcd71332cf2bc01061b12a698b391eda
 ```
 
--	Docker Version: 19.03.12
+-	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **183.9 MB (183870974 bytes)**  
+-	Total Size: **184.0 MB (184009670 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d04887670770e7c04e24d37a8cff23147b36259fdcb2d4b5ba26b24af8f4ed22`
+-	Image ID: `sha256:35cd9b4beaa312d4912e09586ec02c86a3aaa7332b22b0892cf78e1dfd962cb7`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 26 May 2021 17:00:25 GMT
-ADD file:c990710d70105be91eebcea7dfdf28e2212d37ea9279eb2dfd0071e9ed2fd4f1 in / 
-# Wed, 26 May 2021 17:00:25 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 26 May 2021 17:00:26 GMT
-RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 26 May 2021 17:00:27 GMT
-RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 26 May 2021 17:00:27 GMT
+# Tue, 30 May 2023 09:52:11 GMT
+ARG RELEASE
+# Tue, 30 May 2023 09:52:12 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Tue, 30 May 2023 09:52:12 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Tue, 30 May 2023 09:52:12 GMT
+LABEL org.opencontainers.image.version=18.04
+# Tue, 30 May 2023 09:52:20 GMT
+ADD file:d570ab6bd7d664cc6547b6ae228cf825333d9d841969911c7d62afe3ed440803 in / 
+# Tue, 30 May 2023 09:52:21 GMT
 CMD ["/bin/bash"]
-# Wed, 26 May 2021 23:58:53 GMT
+# Sat, 09 Dec 2023 02:56:41 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/*
-# Wed, 26 May 2021 23:59:05 GMT
+# Sat, 09 Dec 2023 02:57:07 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Wed, 02 Jun 2021 19:56:02 GMT
-RUN echo "deb http://snapshots.ros.org/eloquent/final/ubuntu bionic main" > /etc/apt/sources.list.d/ros2-snapshots.list
-# Wed, 02 Jun 2021 19:56:03 GMT
+# Sat, 09 Dec 2023 02:57:08 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 4B63CF8FDE49746E98FA01DDAD19BAB3CBF125EA
-# Wed, 02 Jun 2021 19:56:04 GMT
+# Sat, 09 Dec 2023 03:25:43 GMT
+RUN echo "deb http://snapshots.ros.org/eloquent/final/ubuntu bionic main" > /etc/apt/sources.list.d/ros2-snapshots.list
+# Sat, 09 Dec 2023 03:25:43 GMT
 ENV LANG=C.UTF-8
-# Wed, 02 Jun 2021 19:56:04 GMT
+# Sat, 09 Dec 2023 03:25:43 GMT
 ENV LC_ALL=C.UTF-8
-# Wed, 02 Jun 2021 19:56:04 GMT
+# Sat, 09 Dec 2023 03:25:43 GMT
 ENV ROS_DISTRO=eloquent
-# Wed, 02 Jun 2021 19:57:17 GMT
+# Sat, 09 Dec 2023 03:28:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-eloquent-ros-core=0.8.5-1*     && rm -rf /var/lib/apt/lists/*
-# Wed, 02 Jun 2021 19:57:19 GMT
+# Sat, 09 Dec 2023 03:28:03 GMT
 COPY file:57f71198b74c2c1967889acdfddb85d428137580d18be4211971fc7381557b6c in / 
-# Wed, 02 Jun 2021 19:57:20 GMT
+# Sat, 09 Dec 2023 03:28:03 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 02 Jun 2021 19:57:20 GMT
+# Sat, 09 Dec 2023 03:28:03 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:c61ae1d5a3957b8a0838e053004a2ddf56e395d58ee3b63baa7b1c865a6383b9`  
-		Last Modified: Wed, 19 May 2021 20:23:59 GMT  
-		Size: 22.3 MB (22292007 bytes)  
+	-	`sha256:76bc0c6b06fc92c1f911be6147b55b6430301b80e4062178329c4fa8a0f79f51`  
+		Last Modified: Thu, 01 Jun 2023 23:54:31 GMT  
+		Size: 22.3 MB (22312178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efaa8fe9a238b7a58ef37a164ef3a580b7e27445d98012b50395eedd92bad76e`  
-		Last Modified: Wed, 26 May 2021 17:03:05 GMT  
-		Size: 848.0 B  
+	-	`sha256:13e61f2f0ecdbc00c1478913acffbebaebcb6c199462717018cc5c71eed71d93`  
+		Last Modified: Sat, 09 Dec 2023 03:39:09 GMT  
+		Size: 820.3 KB (820323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f07c60aae22667580605aaf11e146d4ccd94df1bb94c42d91954727cd3515f9a`  
-		Last Modified: Wed, 26 May 2021 17:03:05 GMT  
-		Size: 188.0 B  
+	-	`sha256:13552f8532802decc8d718ee39a8826c22eb2f08a55ec54be8349c2ec390066d`  
+		Last Modified: Sat, 09 Dec 2023 03:39:07 GMT  
+		Size: 4.1 MB (4090743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d935c6c5648a195e1f983ccaccfaf15bc4a8a7d76fbc25ca9d74a088cf1eca58`  
-		Last Modified: Thu, 27 May 2021 00:25:19 GMT  
-		Size: 841.2 KB (841165 bytes)  
+	-	`sha256:73031d8d6723d2c344f35a55a3313e78b28caf1442735033da25f0e991699c8b`  
+		Last Modified: Sat, 09 Dec 2023 03:39:06 GMT  
+		Size: 2.4 KB (2411 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ced11f60bd4cd445ffd162c5741258552033e478ee07a70c27a6bcbe9617084`  
-		Last Modified: Thu, 27 May 2021 00:25:18 GMT  
-		Size: 4.1 MB (4085572 bytes)  
+	-	`sha256:57c793c7f3a118ae9e4d4f53d0d093faf1a193e9dfcac1baa25b75fff7bb3b7c`  
+		Last Modified: Sat, 09 Dec 2023 03:44:15 GMT  
+		Size: 234.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:726417b7cadcacd4b4a707cbb72d5c74d0d846a971e0f9a98149a0873ef5b9ad`  
-		Last Modified: Wed, 02 Jun 2021 20:10:47 GMT  
-		Size: 233.0 B  
+	-	`sha256:8f28e9b8e963c120ae7664d793862196ab199b8a4c3fe049ea8303de3171c1fe`  
+		Last Modified: Sat, 09 Dec 2023 03:44:46 GMT  
+		Size: 156.8 MB (156783586 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e39a0556c8650c0c0d4d759e951b4f0effba5655d5a0f3b4fb63f15ac45a386b`  
-		Last Modified: Wed, 02 Jun 2021 20:10:47 GMT  
-		Size: 2.0 KB (1981 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eced7a362477ba180305b04e06694d0871ea3172b62c84c7d3998e34e3ffefdf`  
-		Last Modified: Wed, 02 Jun 2021 20:11:20 GMT  
-		Size: 156.6 MB (156648786 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1523438a4fb85ab986991cf9bf1a040e9216fd877c737b6ee248e5eac9132140`  
-		Last Modified: Wed, 02 Jun 2021 20:10:48 GMT  
-		Size: 194.0 B  
+	-	`sha256:814cc6e54cdd4a8a81f9cd0db77aa1dba3eb85dab1f2358922cf657297c3c6f5`  
+		Last Modified: Sat, 09 Dec 2023 03:44:15 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:eloquent-ros-core` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:5005f86b9e4ce49ee4d1eae2f71c7d38ac9e1eb686670bdd140942bad1b3300c
+$ docker pull ros@sha256:40d746edf499ddb8deef2b96354d9b8079758339860b58a23bf98f6cf25b3178
 ```
 
--	Docker Version: 19.03.12
+-	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **197.5 MB (197450561 bytes)**  
+-	Total Size: **197.6 MB (197631207 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:533ca8e6c42aa605674aad66129a995645d31eec8290b2b7f10b275192e6a6ad`
+-	Image ID: `sha256:84ddf993195e15ce1773ed407913c6940002beebeca2348c3d3162f5bf502479`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 27 May 2021 12:29:48 GMT
-ADD file:813209ca97a54f1f092727aea57fe5652a037b9c167df8bfccd9262415f8553f in / 
-# Thu, 27 May 2021 12:29:49 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 27 May 2021 12:29:50 GMT
-RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 27 May 2021 12:29:51 GMT
-RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 27 May 2021 12:29:51 GMT
+# Tue, 30 May 2023 09:39:04 GMT
+ARG RELEASE
+# Tue, 30 May 2023 09:39:04 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Tue, 30 May 2023 09:39:04 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Tue, 30 May 2023 09:39:04 GMT
+LABEL org.opencontainers.image.version=18.04
+# Tue, 30 May 2023 09:39:09 GMT
+ADD file:f56078e320535ad36864a2a30efa5b760ae65dd324cea9d75f01388b17e1183c in / 
+# Tue, 30 May 2023 09:39:10 GMT
 CMD ["/bin/bash"]
-# Thu, 27 May 2021 15:00:26 GMT
+# Sat, 09 Dec 2023 02:23:38 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/*
-# Thu, 27 May 2021 15:00:34 GMT
+# Sat, 09 Dec 2023 02:24:02 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Wed, 02 Jun 2021 19:37:47 GMT
-RUN echo "deb http://snapshots.ros.org/eloquent/final/ubuntu bionic main" > /etc/apt/sources.list.d/ros2-snapshots.list
-# Wed, 02 Jun 2021 19:37:48 GMT
+# Sat, 09 Dec 2023 02:24:03 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 4B63CF8FDE49746E98FA01DDAD19BAB3CBF125EA
-# Wed, 02 Jun 2021 19:37:49 GMT
+# Sat, 09 Dec 2023 03:16:14 GMT
+RUN echo "deb http://snapshots.ros.org/eloquent/final/ubuntu bionic main" > /etc/apt/sources.list.d/ros2-snapshots.list
+# Sat, 09 Dec 2023 03:16:14 GMT
 ENV LANG=C.UTF-8
-# Wed, 02 Jun 2021 19:37:49 GMT
+# Sat, 09 Dec 2023 03:16:14 GMT
 ENV LC_ALL=C.UTF-8
-# Wed, 02 Jun 2021 19:37:49 GMT
+# Sat, 09 Dec 2023 03:16:14 GMT
 ENV ROS_DISTRO=eloquent
-# Wed, 02 Jun 2021 19:38:54 GMT
+# Sat, 09 Dec 2023 03:17:10 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-eloquent-ros-core=0.8.5-1*     && rm -rf /var/lib/apt/lists/*
-# Wed, 02 Jun 2021 19:38:56 GMT
+# Sat, 09 Dec 2023 03:17:14 GMT
 COPY file:57f71198b74c2c1967889acdfddb85d428137580d18be4211971fc7381557b6c in / 
-# Wed, 02 Jun 2021 19:38:56 GMT
+# Sat, 09 Dec 2023 03:17:15 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 02 Jun 2021 19:38:56 GMT
+# Sat, 09 Dec 2023 03:17:15 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:ed6dc9c66f7cc607969a6f995c83956f1e614ec5dd42205a2ea544f8f6260a34`  
-		Last Modified: Thu, 13 May 2021 00:25:09 GMT  
-		Size: 23.7 MB (23703340 bytes)  
+	-	`sha256:7f8ef08e85adb2e0a8e170480033b585598619a5675768da9972914138e520de`  
+		Last Modified: Thu, 01 Jun 2023 23:17:46 GMT  
+		Size: 23.7 MB (23740900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15c11899c85b166cc1ed1af82b5f8bda57b93fa119405e47bb96f45bbbd93533`  
-		Last Modified: Thu, 27 May 2021 12:31:40 GMT  
-		Size: 852.0 B  
+	-	`sha256:92311637e9983a187857b246a6417188e5a1de48e9d03e831eb2cb63a811cf67`  
+		Last Modified: Sat, 09 Dec 2023 03:53:39 GMT  
+		Size: 819.0 KB (818985 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86ebe93eb4a196c3d45c24bb95176c57287e87aed340cf757e873a861aed2540`  
-		Last Modified: Thu, 27 May 2021 12:31:40 GMT  
-		Size: 189.0 B  
+	-	`sha256:73b4394df3604b47aaa3d36d1ad63c563ac4d8b172081757c048ee6bf10cdd08`  
+		Last Modified: Sat, 09 Dec 2023 03:53:38 GMT  
+		Size: 4.5 MB (4461631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08eeaf0795f6290aed063a0d31cab40ae300288b047319cd191b6c5bf022708b`  
-		Last Modified: Thu, 27 May 2021 15:37:10 GMT  
-		Size: 841.1 KB (841051 bytes)  
+	-	`sha256:5d1d3a8f1076e5ddb09c78ae7493c813f46853e1e63d7cfe42ba1c50cf6bcf28`  
+		Last Modified: Sat, 09 Dec 2023 03:53:37 GMT  
+		Size: 2.4 KB (2409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf24e37722677126cf2a0c68e27027956c567d50126c057af5115deb3feafc69`  
-		Last Modified: Thu, 27 May 2021 15:37:08 GMT  
-		Size: 4.5 MB (4453523 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:979daa6da8554dc6a997578a596a138a78fce85df6ef4c01c672d2a8520dfb4d`  
-		Last Modified: Wed, 02 Jun 2021 20:03:23 GMT  
+	-	`sha256:8a151493b6c9d8425d7a9e6a9993ba4d731ad95e12a87256be858d78684d1286`  
+		Last Modified: Sat, 09 Dec 2023 04:04:12 GMT  
 		Size: 234.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f14422412d4a87c04c3fbb444ab19d9f8ca634e7d83c19e29e822703d54c3871`  
-		Last Modified: Wed, 02 Jun 2021 20:03:23 GMT  
-		Size: 2.0 KB (1981 bytes)  
+	-	`sha256:275752ffee34d72b25cef8a220d83716491d1d0bd45b8c1aa4fae36ba907a345`  
+		Last Modified: Sat, 09 Dec 2023 04:04:39 GMT  
+		Size: 168.6 MB (168606855 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b2e772ba1e2c3c1445b914f92f64d0a3e12b06be7841c7cafe930793fd9e862`  
-		Last Modified: Wed, 02 Jun 2021 20:03:57 GMT  
-		Size: 168.4 MB (168449197 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aeea7ca3a9a85c9370b3e6ecc82e3ddafcf60e056a4a79735880a32bd6c71eb8`  
-		Last Modified: Wed, 02 Jun 2021 20:03:23 GMT  
-		Size: 194.0 B  
+	-	`sha256:2b9479152d19f2aa17356df5322c932e234af902cfd11b793012f23329c8c79c`  
+		Last Modified: Sat, 09 Dec 2023 04:04:12 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
