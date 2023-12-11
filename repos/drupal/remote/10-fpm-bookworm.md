@@ -1,7 +1,7 @@
 ## `drupal:10-fpm-bookworm`
 
 ```console
-$ docker pull drupal@sha256:7d5485b4668b18e51ce666dade2497fc1f3c93c5608713f8332132464103da2a
+$ docker pull drupal@sha256:706d28e9195bec8c6be67c6b32a4a8d8e250e40ba115b0521e7927889506810e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,13 +22,13 @@ $ docker pull drupal@sha256:7d5485b4668b18e51ce666dade2497fc1f3c93c5608713f83321
 ### `drupal:10-fpm-bookworm` - linux; amd64
 
 ```console
-$ docker pull drupal@sha256:f2f67b6fed7800d371e410627e1c6adc78883ec7cb97bb22fa7091b0e8cdbaad
+$ docker pull drupal@sha256:d5043db45f5d3901ba6e6829817d814e5b8cd0fada72c1ca228ea6fe4e5a546c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **194.9 MB (194942862 bytes)**  
+-	Total Size: **194.9 MB (194943449 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb2e380a081702ba6c4e5b74500cfb5fa130ef04beaff1fbba0007c1b01df164`
+-	Image ID: `sha256:d450468f4e799c73ce457c10e916b51bab4082c87cd8ee0755a56b960d6a817f`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -140,49 +140,49 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Tue, 28 Nov 2023 00:16:12 GMT  
 		Size: 9.2 KB (9184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8ce96b63cb784fa65a5f07b0a298e52607975ec3cc66f874ea7d40ae9210ff7`  
-		Last Modified: Thu, 07 Dec 2023 22:13:31 GMT  
-		Size: 2.0 MB (1973827 bytes)  
+	-	`sha256:e9ed7babf8dc5f480cb77b9f7b61f8fb08f168fffd109cc9b1477a045dff85e4`  
+		Last Modified: Mon, 11 Dec 2023 19:13:45 GMT  
+		Size: 2.0 MB (1973888 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9877ed9339dfc41198f0c00a4281afeae3c9e550ef0932f686edc18b3ef34feb`  
-		Last Modified: Thu, 07 Dec 2023 22:13:31 GMT  
+	-	`sha256:c9514bc43010aafec377d6334c7dee837ac480847e9fbae2981ac6787fe65ec0`  
+		Last Modified: Mon, 11 Dec 2023 19:13:45 GMT  
 		Size: 317.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b41ba994b389a59563c95dcbe61bbe00c5e68c3164de31ca6eee9f0e04a085a`  
-		Last Modified: Thu, 07 Dec 2023 22:13:31 GMT  
-		Size: 705.0 KB (705010 bytes)  
+	-	`sha256:b8e85b2d9440684cec93d08596b5b95e570d30da5ef1e80ff2c34efa2737b4d7`  
+		Last Modified: Mon, 11 Dec 2023 19:13:45 GMT  
+		Size: 705.2 KB (705211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96165f4308f1a6169c881db35db90bb1cffc9f9678b14c39905d1db44073f014`  
-		Last Modified: Thu, 07 Dec 2023 22:13:31 GMT  
-		Size: 113.0 B  
+	-	`sha256:32c2bef281038d4bdf9412b19ac7b33b4780e96534f458b6d8fd641a5ff974ff`  
+		Last Modified: Mon, 11 Dec 2023 19:13:41 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df1eee335e23f0bed93ab20b6c6196b8d63808322bb561520cf621b04b434322`  
-		Last Modified: Thu, 07 Dec 2023 22:13:32 GMT  
-		Size: 18.6 MB (18555432 bytes)  
+	-	`sha256:634cd8a2bb5ab56eb0edbeb35f2af46320799c7c8808fbde3c2c3e4aa352ff7d`  
+		Last Modified: Mon, 11 Dec 2023 19:13:46 GMT  
+		Size: 18.6 MB (18555755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:10-fpm-bookworm` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:ab5f984ff56590b69c328d3982ff563849746441d36d9dcdcdae32ffc77fecc7
+$ docker pull drupal@sha256:5df71e7a719ba23826fec8a9570ec8be1de214f77d65ced402150cd646ee450a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5509306 bytes)**  
+-	Total Size: **5.5 MB (5509311 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7975841273f6900d1f30a223e609672eaf02b93f9f8c0f01f01549184120f129`
+-	Image ID: `sha256:2c7d89c31c810c64255ed121807c14f0963610fc7cce9349e5317bbfe68442ab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:31d0cf65f3b6c2cf94eec0cbb30e083688ad55c1a07e30936f4535fffbc7dabe`  
-		Last Modified: Thu, 07 Dec 2023 22:13:31 GMT  
+	-	`sha256:b9efe7d5e66198af4dd7cf2352e652546aed170fa5a269998362b538fdbde293`  
+		Last Modified: Mon, 11 Dec 2023 19:13:45 GMT  
 		Size: 5.5 MB (5469840 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3f77ae8f3862bed15178c1d23011084d2977f53d657919d904aee02148b523cc`  
-		Last Modified: Thu, 07 Dec 2023 22:13:31 GMT  
-		Size: 39.5 KB (39466 bytes)  
+	-	`sha256:ba9bce4e2986745d51bac9d60ccaba976a27f5ef2c83a95a7b681649d1091ec7`  
+		Last Modified: Mon, 11 Dec 2023 19:13:44 GMT  
+		Size: 39.5 KB (39471 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:10-fpm-bookworm` - linux; arm variant v7
@@ -682,13 +682,13 @@ $ docker pull drupal@sha256:a7267f5b97ff31b75ffd7fb3c32b5d8cf45e9f8d4dd5ae9f5def
 ### `drupal:10-fpm-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull drupal@sha256:5609adda813bc0943e4461d706c6a500eb429800c1645a1cf99041d3016b07fb
+$ docker pull drupal@sha256:391ecc3768169a896493dc3df633f22c14507a9813124418c70bb3f79635a504
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **198.8 MB (198828835 bytes)**  
+-	Total Size: **198.8 MB (198829375 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48b9efd6b6b982efc2d568833d2b884e5e991ca3672f31345983a46f5773e40b`
+-	Image ID: `sha256:7c4d368823d8fecfc2f6312b928a3d8fd70d84de41a7ac6f8167cd250b005e07`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -808,53 +808,53 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Tue, 05 Dec 2023 02:30:10 GMT  
 		Size: 316.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:129328672864322cbc55ad155a391f33f78b65f118541a0d00a5a02aa757e793`  
-		Last Modified: Tue, 05 Dec 2023 02:30:11 GMT  
-		Size: 705.0 KB (705010 bytes)  
+	-	`sha256:31f8b2abeb28e7a327ebc13b6e1f85e70ed00266d0642af720ef631959664958`  
+		Last Modified: Mon, 11 Dec 2023 19:48:24 GMT  
+		Size: 705.2 KB (705211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57acbf75d5a7225d83c7a5e5fe45dd83ee894da4f38542a6b6f6108623f96df6`  
-		Last Modified: Tue, 05 Dec 2023 02:30:10 GMT  
-		Size: 115.0 B  
+	-	`sha256:ac6a5b7ee2e86cf213188c4f36067ee66815b8ed163876b7bc83d6ac17591f62`  
+		Last Modified: Mon, 11 Dec 2023 19:48:24 GMT  
+		Size: 113.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fba409788bfff69a5b48d59ca1de5d0e7b672859093ebade39500fd419a9ec5`  
-		Last Modified: Thu, 07 Dec 2023 22:32:53 GMT  
-		Size: 18.6 MB (18555324 bytes)  
+	-	`sha256:e45617f0de7b364a64421a4b4aceeed6ec1fb20e90b144abbe8d159d1587c4c4`  
+		Last Modified: Mon, 11 Dec 2023 19:55:39 GMT  
+		Size: 18.6 MB (18555665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:10-fpm-bookworm` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:cb98ecfa408dff0855586f23751ccf8af7e95d5f1a74f6b9fe1467f38565856f
+$ docker pull drupal@sha256:755d3db4d6daec3ea01d5f5acdd582fb96e02e99780b3bf04bd8ac8c25c282e4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5486832 bytes)**  
+-	Total Size: **5.5 MB (5486834 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2816c8bf7c76f3d395164ab47795f22551bae323b5a080833fae61cb64a48db`
+-	Image ID: `sha256:4ec6476d0ed8cf25c25345d6022a0bc60c5f57e5d51e01f7618df3b33b83fd73`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:659c36b0701f2ee2e6566fc4ed4a974b39f35c0552b74b77bcdb478b780318e3`  
-		Last Modified: Thu, 07 Dec 2023 22:32:52 GMT  
+	-	`sha256:54b31bcbb6bd6bb90ca8a755807ef032ea427760bb90699a4ba12a1a6625f38b`  
+		Last Modified: Mon, 11 Dec 2023 19:55:38 GMT  
 		Size: 5.5 MB (5451143 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:90c7c6ae01eea6d694c773d7ed767a3259f1dc045e41c11f1390f90188b0a56c`  
-		Last Modified: Thu, 07 Dec 2023 22:32:51 GMT  
-		Size: 35.7 KB (35689 bytes)  
+	-	`sha256:cfc4a840a3dd82a2265b98b4abf14963f26b37432d6e3e25dede16195a4b447b`  
+		Last Modified: Mon, 11 Dec 2023 19:55:38 GMT  
+		Size: 35.7 KB (35691 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:10-fpm-bookworm` - linux; s390x
 
 ```console
-$ docker pull drupal@sha256:ca8a7a4815a9dc5d08eeb95a51d8f1b927bc3fcdac5340eca89bbe9b77c193d1
+$ docker pull drupal@sha256:a10d47846a74797d98769af510887123c22dd90fbb971d06c325472e2e54dcc4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.3 MB (168260886 bytes)**  
+-	Total Size: **168.3 MB (168260798 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:45898ca62ecf1fe2fed106e6cc48846cada5a26c972b64356d1df843a35bb7bc`
+-	Image ID: `sha256:80762391b4044bfa20fe6b6d97b09d8b061ef6df7e21a2f6c68768cd5604687e`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -974,39 +974,39 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Tue, 05 Dec 2023 02:33:32 GMT  
 		Size: 316.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1757e3c166186dc28084cd3b0767ecb1c51c29468b1bb26e19d24ceef20f26c4`  
-		Last Modified: Tue, 05 Dec 2023 02:33:32 GMT  
-		Size: 705.0 KB (705010 bytes)  
+	-	`sha256:fbf60411928b93123c2507962042f99eb7ea1197b049c6219d6e49c72922ed3d`  
+		Last Modified: Mon, 11 Dec 2023 20:16:13 GMT  
+		Size: 705.2 KB (705214 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a6ea1c149a22b6439e19a081a7905341d25b935e454d33055bd58aefe1c004a1`  
-		Last Modified: Tue, 05 Dec 2023 02:33:32 GMT  
-		Size: 114.0 B  
+	-	`sha256:64dfe20c6e563eb9f93991f57b8f09ff417672fe7122b0fdd7dc91290af18807`  
+		Last Modified: Mon, 11 Dec 2023 20:16:13 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96f7117e80e557cb42d4aa9d9f7813d484bebe400138148d71221e44576c07ea`  
-		Last Modified: Thu, 07 Dec 2023 22:15:57 GMT  
-		Size: 18.6 MB (18555482 bytes)  
+	-	`sha256:cd60f61a5be090a65753b738314a3b41e7b23297091ab452548d009b568e409c`  
+		Last Modified: Mon, 11 Dec 2023 20:21:44 GMT  
+		Size: 18.6 MB (18555189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:10-fpm-bookworm` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:583c45465c4a66ccd064a60670d4c4b6ea1925764c8abd9eab6266ee1ddc604b
+$ docker pull drupal@sha256:a2b6011a721343215d5d5aba63c2c73c5fc559702061ce5402bc60d66aecc6c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5366924 bytes)**  
+-	Total Size: **5.4 MB (5366925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6de10f61701d9bd65a87ddf1d84537b3ec798a2f39d0cfaf780b32899ec6ed7e`
+-	Image ID: `sha256:c04502a8bfa91f3679eb91a9c3c402f24f6ea52bee500251b4c3f26e1000e27c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0cf76b82e435e9c476a0cb135a38dbe5208c8b988232da2bb270cd52a228438e`  
-		Last Modified: Thu, 07 Dec 2023 22:15:57 GMT  
+	-	`sha256:b5b3ff68b00652e3a6005704d6fa958abc716813d40b9a696faea0f034acb29e`  
+		Last Modified: Mon, 11 Dec 2023 20:21:42 GMT  
 		Size: 5.3 MB (5331358 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a42edf664e37ef46eee479828a3c395253762231035769bc23cc2be8952d0d03`  
-		Last Modified: Thu, 07 Dec 2023 22:15:57 GMT  
-		Size: 35.6 KB (35566 bytes)  
+	-	`sha256:d7cb224df003b22f8c9efa3324eedee2caa1f54398ab8f857fec4abac9a6ebdc`  
+		Last Modified: Mon, 11 Dec 2023 20:21:42 GMT  
+		Size: 35.6 KB (35567 bytes)  
 		MIME: application/vnd.in-toto+json
