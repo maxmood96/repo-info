@@ -524,14 +524,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.12
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.12.dsc' glibc_2.31-0ubuntu9.12.dsc 9378 SHA512:2055d7f2d479789f44629fc4f9f938e3bcfdc035b6ca49ee5238aa0de18e4db3da1197591951838514565c1c1bad825273026bc6eb146394f646039d13c787a9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.12.debian.tar.xz' glibc_2.31-0ubuntu9.12.debian.tar.xz 879820 SHA512:94fe56d6feb9507ad0d6d81080a064729e259aa92130e0cb08567a61ec2615b11899959f909396a54df0a1e67e29f03ee9e10c2fad406ee9f3333e7269758a32
-```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4ubuntu0.1`
 
@@ -1656,14 +1651,9 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.30+dfsg-7ubuntu0.20.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.3.dsc' tar_1.30+dfsg-7ubuntu0.20.04.3.dsc 2120 SHA512:add6306bd1e8467d91f57fd5a8ee9b6e98ac3aab90fbb5a66b87c0c72c6319f168e8d48ac0ef62fc6dd0bfebc1929f77b339990f1dce20508f5f037a3fbeb999
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg.orig.tar.xz' tar_1.30+dfsg.orig.tar.xz 1883220 SHA512:f9b3843bd4da03f58d6f88de70ecb36b8ac29312714fd2120ff00f17c99e6d77cc82a8f9de348f4c2bdba9a6cc8e8c6c78039b6c14cdee15d68f2517000c36f2
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.3.debian.tar.xz' tar_1.30+dfsg-7ubuntu0.20.04.3.debian.tar.xz 23940 SHA512:c554d5f405ba5f7d5ddd84d0753bcf9bc3ef944f4cb12ae5371d2a51c461ddf0768ef25b11aefd4d9f77f7e6c354b8afc9788e93dc0c34fd914e8604a24a747b
-```
 
 ### `dpkg` source package: `tzdata=2023c-0ubuntu0.20.04.2`
 
