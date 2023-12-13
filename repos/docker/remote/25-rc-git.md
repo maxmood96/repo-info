@@ -1,14 +1,15 @@
 ## `docker:25-rc-git`
 
 ```console
-$ docker pull docker@sha256:c11cb7c04efe3721294ea75c2e29a92310c7d37f7f13e536b58aacadd75483af
+$ docker pull docker@sha256:14dd4f58cf5550fd8d494df3d24de28b8d6d03dd6f80513d93a1c826a2d9d057
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 7
+-	Platforms: 8
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
+	-	unknown; unknown
 	-	linux; arm variant v7
 	-	unknown; unknown
 	-	linux; arm64 variant v8
@@ -17,13 +18,13 @@ $ docker pull docker@sha256:c11cb7c04efe3721294ea75c2e29a92310c7d37f7f13e536b58a
 ### `docker:25-rc-git` - linux; amd64
 
 ```console
-$ docker pull docker@sha256:1cc63d077075b6fca150d58e6a4db7ca9c7221cfdfe11492d9bb82e48093c683
+$ docker pull docker@sha256:1e6660393004179a6be33d0eef5c99d9f962cfefc781a54d298bb014a4ee3f55
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **125.1 MB (125149912 bytes)**  
+-	Total Size: **124.9 MB (124928847 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f9b962ea0ac568c2e6557a5c5a45ae07df7f538f315a74d48f7b6a6047e64f6`
+-	Image ID: `sha256:f487bb13478e2b1d48c5a54902bae26e246a61b6a712b99664b7cd3ca3c7b975`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 
 ```dockerfile
@@ -36,9 +37,9 @@ RUN apk add --no-cache 		ca-certificates 		openssh-client # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
-ENV DOCKER_VERSION=25.0.0-beta.1
+ENV DOCKER_VERSION=25.0.0-beta.2
 # Mon, 13 Nov 2023 22:06:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-25.0.0-beta.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-25.0.0-beta.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-25.0.0-beta.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-25.0.0-beta.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-25.0.0-beta.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-25.0.0-beta.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-25.0.0-beta.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-25.0.0-beta.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
 ENV DOCKER_BUILDX_VERSION=0.12.0
 # Mon, 13 Nov 2023 22:06:12 GMT
@@ -64,7 +65,7 @@ RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		
 # Mon, 13 Nov 2023 22:06:12 GMT
 RUN set -eux; 	addgroup -S dockremap; 	adduser -S -G dockremap dockremap; 	echo 'dockremap:165536:65536' >> /etc/subuid; 	echo 'dockremap:165536:65536' >> /etc/subgid # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-25.0.0-beta.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-25.0.0-beta.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-25.0.0-beta.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-25.0.0-beta.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		--exclude 'docker/docker' 	; 	rm docker.tgz; 		dockerd --version; 	containerd --version; 	ctr --version; 	runc --version # buildkit
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-25.0.0-beta.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-25.0.0-beta.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-25.0.0-beta.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-25.0.0-beta.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		--exclude 'docker/docker' 	; 	rm docker.tgz; 		dockerd --version; 	containerd --version; 	ctr --version; 	runc --version # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
 ENV DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e
 # Mon, 13 Nov 2023 22:06:12 GMT
@@ -88,97 +89,97 @@ RUN apk add --no-cache git # buildkit
 		Last Modified: Thu, 30 Nov 2023 23:23:28 GMT  
 		Size: 3.4 MB (3402422 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e800fcde722b6440bc910e7cd975dc683bec9ee486590ebee2c15ada7261452`  
-		Last Modified: Fri, 01 Dec 2023 00:10:40 GMT  
-		Size: 2.0 MB (2014295 bytes)  
+	-	`sha256:3a4823d20c120d2f1658d164f8c3016c28be9f959c31c06e2eb4ec6b905cfadd`  
+		Last Modified: Wed, 13 Dec 2023 00:49:34 GMT  
+		Size: 2.0 MB (2014288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e53a0bc94727cf3076969b24cde06063b6603ae043bc8f44c23dcfcc384bdf6f`  
-		Last Modified: Fri, 01 Dec 2023 00:10:41 GMT  
-		Size: 16.9 MB (16890677 bytes)  
+	-	`sha256:f3d4655980096e41fcca4075f7fe147a46c1c10443025a8ec42e332ce86287dc`  
+		Last Modified: Wed, 13 Dec 2023 00:49:34 GMT  
+		Size: 16.9 MB (16879767 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d261604f5b65b71c18d4906e03861275886fa334cdc75c1134669e5f40e83ccc`  
-		Last Modified: Fri, 01 Dec 2023 00:10:41 GMT  
-		Size: 17.2 MB (17195306 bytes)  
+	-	`sha256:b82c931e8eff7bb3364ff95035fc559bf6678ae699de14f17d74dcf38206d725`  
+		Last Modified: Wed, 13 Dec 2023 00:49:34 GMT  
+		Size: 17.2 MB (17195293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:410eab12c67f92700680ce08f86bb1bafb64e15fc2a6e835c7cb0fa64ced24eb`  
-		Last Modified: Fri, 01 Dec 2023 00:10:42 GMT  
-		Size: 17.9 MB (17852071 bytes)  
+	-	`sha256:e2e59ec295362a40622809fba9dbc565160c0f91116457b780e50ad1d42ba635`  
+		Last Modified: Wed, 13 Dec 2023 00:49:34 GMT  
+		Size: 17.9 MB (17852058 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b4651667180a0b553f2615f5fc7f2dc842b66fbf7231540b2260f001c16ec900`  
-		Last Modified: Fri, 01 Dec 2023 00:10:42 GMT  
-		Size: 542.0 B  
+	-	`sha256:228b86ec12aa959c023bcca94ed2eb2c98fa0af43c156a2ecade80b5087d28d2`  
+		Last Modified: Wed, 13 Dec 2023 00:49:35 GMT  
+		Size: 541.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84ca2f2dd8b9a70c7f4bf82664d7c9990b67f477c19c0579eb686105cf77d7ac`  
-		Last Modified: Fri, 01 Dec 2023 00:10:42 GMT  
-		Size: 1.0 KB (1017 bytes)  
+	-	`sha256:3c422a5b024ba2956bda95aec4209a81e245713f69a957e6e5625ab5dd586cd4`  
+		Last Modified: Wed, 13 Dec 2023 00:49:35 GMT  
+		Size: 1.0 KB (1016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:94c8b600ba6a8f4ba832451905f95a54ee8118edf51c36c620e7710d1793a692`  
-		Last Modified: Fri, 01 Dec 2023 00:10:42 GMT  
+	-	`sha256:26f74daa819276a44f3bbc4d5089ae4b8dc7c6c3d9ea90a00b9a5abef46a162f`  
+		Last Modified: Wed, 13 Dec 2023 00:49:35 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73f84f7a0e37d68bb62b261ecdccf6570204544f344f75322d49bf58f8ecc527`  
-		Last Modified: Fri, 01 Dec 2023 01:11:41 GMT  
-		Size: 7.1 MB (7080282 bytes)  
+	-	`sha256:88f9048934c24150c9e949c53488dc76694470138c6c4bb64efd7d141e593953`  
+		Last Modified: Wed, 13 Dec 2023 05:51:44 GMT  
+		Size: 7.1 MB (7083724 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4336b09548e5a3005eeea67d1c894fdc0d914d1e4a025f15df03bc73084eb83c`  
-		Last Modified: Fri, 01 Dec 2023 01:11:41 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:f945677c9a07aba8e452a1cecbb50b81af589336524240fed6a957e97f274aa8`  
+		Last Modified: Wed, 13 Dec 2023 05:51:44 GMT  
+		Size: 1.3 KB (1296 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70f25b6b4d196222d89ce173712d36cfe2ed5d6355626125bba3031ee91dc13f`  
-		Last Modified: Fri, 01 Dec 2023 01:11:41 GMT  
-		Size: 55.8 MB (55764212 bytes)  
+	-	`sha256:a9fc571bd11696b7a227216e3010c95f3a6ccc7228775926342645e596411fa7`  
+		Last Modified: Wed, 13 Dec 2023 05:51:46 GMT  
+		Size: 55.5 MB (55546293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ebb483dccef6eba6c3901a1bd5bc7659339ae0ab9218a270e8821d1ce4141c1`  
-		Last Modified: Fri, 01 Dec 2023 01:11:41 GMT  
-		Size: 1.5 KB (1513 bytes)  
+	-	`sha256:d7548fa5e4e5f56690126d1549f4ec592bec8a420f9e3e60addee7180806af9e`  
+		Last Modified: Wed, 13 Dec 2023 05:51:45 GMT  
+		Size: 1.5 KB (1514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a6a86d4161a926e166bfcb3e5d8011152d266fe09e9df6875c255676db951a81`  
-		Last Modified: Fri, 01 Dec 2023 01:11:41 GMT  
+	-	`sha256:d17542bb52f411ade84fc5b02d5b6048ab9dab867b9ee9e8880281303d02c95f`  
+		Last Modified: Wed, 13 Dec 2023 05:51:45 GMT  
 		Size: 2.8 KB (2791 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eee52ce3d03a5c90aedb0e72707891e8e9f75064c5e606761dfd2b7a6018591d`  
-		Last Modified: Fri, 01 Dec 2023 02:11:13 GMT  
-		Size: 4.9 MB (4943341 bytes)  
+	-	`sha256:1a0d42aee3e92993ff653d616a4c6253a7fa01ab92d1d6eee078d2d2e0aa16e0`  
+		Last Modified: Wed, 13 Dec 2023 09:49:49 GMT  
+		Size: 4.9 MB (4947696 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:25-rc-git` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:f2bb842a496f7c8968465577f31e8310a765e7a7402aa117680433b7ce24c52d
+$ docker pull docker@sha256:1693b27ae209bae6c11903de85f926489c7e1361cab33d503a6aa795e146e745
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **728.8 KB (728771 bytes)**  
+-	Total Size: **735.0 KB (735026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9876d9b3d2c25ee2fcac014d94eff02b1084e0fa1bef722767564fb497fefda6`
+-	Image ID: `sha256:600051f29a099d77edb8f4ae9a10a00cd95cf985ea3c6fad8d9e7fa1c52e5967`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a456eaf1f788c9c25a5d012809143070fa386ca3f7a7ee2af7c51e986be49257`  
-		Last Modified: Fri, 01 Dec 2023 02:11:12 GMT  
-		Size: 716.1 KB (716108 bytes)  
+	-	`sha256:3d776c746146a9841e6d6ebeedae495e8db69e1a0ee9f8d6e4736decc14bd824`  
+		Last Modified: Wed, 13 Dec 2023 09:49:48 GMT  
+		Size: 722.4 KB (722363 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9b243887513eb2fffa3c801aaedc7550aeb5752c0ea7e6bd9bca62547f871edf`  
-		Last Modified: Fri, 01 Dec 2023 02:11:12 GMT  
+	-	`sha256:ec70d94ee14ea7b51d05bb9f50379b5fcf575979b694c9d4f0f8532bc8d6efb4`  
+		Last Modified: Wed, 13 Dec 2023 09:49:48 GMT  
 		Size: 12.7 KB (12663 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:25-rc-git` - linux; arm variant v6
 
 ```console
-$ docker pull docker@sha256:96b514742c2bfd52e1a1f4ea6a37125261a2c60d3c212bd12e615fa6fd139d6d
+$ docker pull docker@sha256:2d644a7ee026383fe917bb70b66d0dca0669a3448f1dc69c1daa76139e1f4a8b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.7 MB (117712688 bytes)**  
+-	Total Size: **117.5 MB (117502710 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1aeb219d73834566b68d031a047f610986afdccc30bf670765ab801c6390778a`
+-	Image ID: `sha256:6b8ac4a92a2f4210ea3186354bec210967219197e38af13c2e70dd5362bb3e70`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 
 ```dockerfile
@@ -191,9 +192,9 @@ RUN apk add --no-cache 		ca-certificates 		openssh-client # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
-ENV DOCKER_VERSION=25.0.0-beta.1
+ENV DOCKER_VERSION=25.0.0-beta.2
 # Mon, 13 Nov 2023 22:06:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-25.0.0-beta.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-25.0.0-beta.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-25.0.0-beta.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-25.0.0-beta.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-25.0.0-beta.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-25.0.0-beta.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-25.0.0-beta.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-25.0.0-beta.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
 ENV DOCKER_BUILDX_VERSION=0.12.0
 # Mon, 13 Nov 2023 22:06:12 GMT
@@ -219,7 +220,7 @@ RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		
 # Mon, 13 Nov 2023 22:06:12 GMT
 RUN set -eux; 	addgroup -S dockremap; 	adduser -S -G dockremap dockremap; 	echo 'dockremap:165536:65536' >> /etc/subuid; 	echo 'dockremap:165536:65536' >> /etc/subgid # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-25.0.0-beta.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-25.0.0-beta.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-25.0.0-beta.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-25.0.0-beta.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		--exclude 'docker/docker' 	; 	rm docker.tgz; 		dockerd --version; 	containerd --version; 	ctr --version; 	runc --version # buildkit
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-25.0.0-beta.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-25.0.0-beta.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-25.0.0-beta.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-25.0.0-beta.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		--exclude 'docker/docker' 	; 	rm docker.tgz; 		dockerd --version; 	containerd --version; 	ctr --version; 	runc --version # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
 ENV DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e
 # Mon, 13 Nov 2023 22:06:12 GMT
@@ -242,74 +243,94 @@ RUN apk add --no-cache git # buildkit
 	-	`sha256:85ae953f9e6740471d4e1440b27721679dc7a511e112eb73df467a4cde26e421`  
 		Last Modified: Thu, 30 Nov 2023 22:49:40 GMT  
 		Size: 3.1 MB (3146870 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fcbe62a68d12d326a6216794589666f3880a1b7f916f47a323045227af69af0`  
-		Last Modified: Fri, 01 Dec 2023 11:44:39 GMT  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9cc5cb2b8386bf3bb424102d896d6f0313f2ab7225106e5aecd19f50d2f8bf0e`  
+		Last Modified: Wed, 13 Dec 2023 00:51:54 GMT  
 		Size: 2.1 MB (2088618 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a22f22222458c3464e3fed01d85502fca59d061f28d43b44dc015e398d3010dc`  
-		Last Modified: Fri, 01 Dec 2023 11:44:40 GMT  
-		Size: 15.3 MB (15274898 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4164564bff0273ff1d1e1e81f936c90002cbdef8ff8e962c977f6d84255152db`  
-		Last Modified: Fri, 01 Dec 2023 11:44:40 GMT  
-		Size: 16.1 MB (16099973 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:77b2941e4b3a7cad42f442fa390f6bd274f4eb2040e326c5c7ce9c0308e0959f`  
-		Last Modified: Fri, 01 Dec 2023 11:44:40 GMT  
-		Size: 16.9 MB (16867511 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09cb1847d6aa40d93b86a95c398d59657c2583f82d7ca86a5cf7c41826c066ad`  
-		Last Modified: Fri, 01 Dec 2023 11:44:36 GMT  
-		Size: 546.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9094ed30fbdd2c34b8df7597a59fa4336d3e87d4a26502d4313988e2bccf327b`  
-		Last Modified: Fri, 01 Dec 2023 11:44:36 GMT  
-		Size: 1.0 KB (1019 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a758b1f233735cd8e6aa0f4008ed4da3278d786ea8a475b56f836b949d22963`  
-		Last Modified: Fri, 01 Dec 2023 11:44:36 GMT  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:37f81f15a033f121529760e352ba1f2a7f07ecc8c8a6008ff91191aace598240`  
+		Last Modified: Wed, 13 Dec 2023 00:51:55 GMT  
+		Size: 15.3 MB (15263642 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d7ec985335dd8f42b4c5860bf3fd48a7b8b22702dd0b3ba94fa09ed2afdf15f5`  
+		Last Modified: Wed, 13 Dec 2023 00:51:55 GMT  
+		Size: 16.1 MB (16099977 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:211f1e555b9703bfcfc395f5396e5d61921f2e8b0755d0ddeb65ee183971dd54`  
+		Last Modified: Wed, 13 Dec 2023 00:51:55 GMT  
+		Size: 16.9 MB (16867510 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:cf3c6e746f03c0971626d0f1652e26e87088575b0363813221b0758bc962e9ee`  
+		Last Modified: Wed, 13 Dec 2023 00:51:55 GMT  
+		Size: 542.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ccf45dc41c825611a51a16e5fd4cac2343359b75b5edd030974570ca0ac3a0fa`  
+		Last Modified: Wed, 13 Dec 2023 00:51:56 GMT  
+		Size: 1.0 KB (1016 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c3aff6e38e83c75a70149414525faed3c6ecf3efafafe81dab9afc578bd64d18`  
+		Last Modified: Wed, 13 Dec 2023 00:51:57 GMT  
 		Size: 116.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87676a1d45001c44981a8e46ede1005fc3c23420cfa0c9e47467f735007224dd`  
-		Last Modified: Fri, 01 Dec 2023 13:24:58 GMT  
-		Size: 7.2 MB (7173663 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1e4f9e5daac1156eac0d1ed3bb110d4fd2d26a1cb285c59921fab3b93849bfb`  
-		Last Modified: Fri, 01 Dec 2023 13:24:56 GMT  
-		Size: 1.3 KB (1295 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47c712ea6c171dc8de34091def571838949646c05ef5986f9a6163f2a7ea7dec`  
-		Last Modified: Fri, 01 Dec 2023 13:25:05 GMT  
-		Size: 52.1 MB (52113247 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a30a89b8b9ff812c53eee159d884698d309be1b1fbc61314263fe5dfeb8ce450`  
-		Last Modified: Fri, 01 Dec 2023 13:24:56 GMT  
-		Size: 1.5 KB (1514 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f12e9dbba87a0f85dfe162aba9be0fded44e17934e24fd7dac4168e0ca4ea613`  
-		Last Modified: Fri, 01 Dec 2023 13:24:56 GMT  
-		Size: 2.8 KB (2796 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5307738fba240e10fa4b3e9cca47fde304ba9866eb07be3cde4f4c4b2c1732d3`  
-		Last Modified: Fri, 01 Dec 2023 14:20:14 GMT  
-		Size: 4.9 MB (4940590 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a3e1f3b925e75fbc6c0a6a59a25b72c559c3c850e43a45a3081b431b0a44a2b5`  
+		Last Modified: Wed, 13 Dec 2023 05:55:55 GMT  
+		Size: 7.2 MB (7176803 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0d8e65ee36ce545682be12399f9f2b40a578b291fc3743166cc49a0df9364de8`  
+		Last Modified: Wed, 13 Dec 2023 05:55:55 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:643805ad20b343a6cc78c247053b306bf81ca313fa113d09b0aa27564da6e8ee`  
+		Last Modified: Wed, 13 Dec 2023 05:55:57 GMT  
+		Size: 51.9 MB (51910187 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4bfeff547d0fe7a73c8ba8b1b880d620a0fd640dd41094199735a90275e4be`  
+		Last Modified: Wed, 13 Dec 2023 05:55:55 GMT  
+		Size: 1.5 KB (1513 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e605d8b38fb710f1e08ae5c04b45c90d75e66f4e5fc861e5fa266458ed5a129b`  
+		Last Modified: Wed, 13 Dec 2023 05:55:56 GMT  
+		Size: 2.8 KB (2790 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8dffa8e4db014273ce312700423ebed114a66e4bdf55c833f49bf2ed2ea56635`  
+		Last Modified: Wed, 13 Dec 2023 09:52:38 GMT  
+		Size: 4.9 MB (4941798 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `docker:25-rc-git` - unknown; unknown
+
+```console
+$ docker pull docker@sha256:376f114ca33171b90a63cac490475e4a2f8b160b76c3b6a5f6fc0e3e242a2ed0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **12.5 KB (12534 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4fdd416789ce81b957ae7a8f0924f2a0b8739de3afb424a6f654dd4b60bf7385`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:b0a963a2bac953ac5cdd14b0cba6a151d3d416182bf1823d13073f08761ade3c`  
+		Last Modified: Wed, 13 Dec 2023 09:52:37 GMT  
+		Size: 12.5 KB (12534 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ### `docker:25-rc-git` - linux; arm variant v7
 
 ```console
-$ docker pull docker@sha256:217f6e209e94f7d5f9c14d4ba0fbd06ddf1e223e730c8d77898fa8c978cdbfde
+$ docker pull docker@sha256:ce5898dd5e9aa19fdf5ba41e8e673462e5b35c964f143c493fc5c621eb9488fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **116.1 MB (116065630 bytes)**  
+-	Total Size: **115.9 MB (115860359 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:524727e8d8b969d2d9d9768e088fe4ab69da53781ac7995cf86380a739b8af27`
+-	Image ID: `sha256:21264262af9b40f07f65ea1f136d2eabd3fb9569b160c3577e44bf428f78ba6f`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 
 ```dockerfile
@@ -322,9 +343,9 @@ RUN apk add --no-cache 		ca-certificates 		openssh-client # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
-ENV DOCKER_VERSION=25.0.0-beta.1
+ENV DOCKER_VERSION=25.0.0-beta.2
 # Mon, 13 Nov 2023 22:06:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-25.0.0-beta.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-25.0.0-beta.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-25.0.0-beta.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-25.0.0-beta.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-25.0.0-beta.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-25.0.0-beta.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-25.0.0-beta.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-25.0.0-beta.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
 ENV DOCKER_BUILDX_VERSION=0.12.0
 # Mon, 13 Nov 2023 22:06:12 GMT
@@ -350,7 +371,7 @@ RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		
 # Mon, 13 Nov 2023 22:06:12 GMT
 RUN set -eux; 	addgroup -S dockremap; 	adduser -S -G dockremap dockremap; 	echo 'dockremap:165536:65536' >> /etc/subuid; 	echo 'dockremap:165536:65536' >> /etc/subgid # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-25.0.0-beta.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-25.0.0-beta.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-25.0.0-beta.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-25.0.0-beta.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		--exclude 'docker/docker' 	; 	rm docker.tgz; 		dockerd --version; 	containerd --version; 	ctr --version; 	runc --version # buildkit
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-25.0.0-beta.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-25.0.0-beta.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-25.0.0-beta.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-25.0.0-beta.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		--exclude 'docker/docker' 	; 	rm docker.tgz; 		dockerd --version; 	containerd --version; 	ctr --version; 	runc --version # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
 ENV DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e
 # Mon, 13 Nov 2023 22:06:12 GMT
@@ -374,97 +395,97 @@ RUN apk add --no-cache git # buildkit
 		Last Modified: Thu, 30 Nov 2023 22:49:56 GMT  
 		Size: 2.9 MB (2901006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f95efc36d5bd6e6f6cacfcd0475b060ca3cf0b73388d577a29cf0e1260082d17`  
-		Last Modified: Fri, 01 Dec 2023 10:04:32 GMT  
-		Size: 1.9 MB (1875249 bytes)  
+	-	`sha256:d053984f208a6f69a4fbf723a971c44f16d5931c8bd41dc9d0e29e4b8d2abcc9`  
+		Last Modified: Wed, 13 Dec 2023 02:29:50 GMT  
+		Size: 1.9 MB (1875250 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64eb4c226d2ca8f721d5c290cdccebfd2ef6288e8f7131c18d985890c9ca109d`  
-		Last Modified: Fri, 01 Dec 2023 10:04:33 GMT  
-		Size: 15.3 MB (15269612 bytes)  
+	-	`sha256:46120a0e1ad7526f12771a7c3a75c8d2ad06f1b7bb4eecd225605141fc2ecf7f`  
+		Last Modified: Wed, 13 Dec 2023 02:29:51 GMT  
+		Size: 15.3 MB (15261181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70d7ea31035368e81084d65946b1d719343b1df42728324f704de10e40885fd3`  
-		Last Modified: Fri, 01 Dec 2023 10:04:33 GMT  
-		Size: 16.1 MB (16084090 bytes)  
+	-	`sha256:a17928b22412d89919a2de22c2e4381fa7afda45e107e70551d62334fc4dc83f`  
+		Last Modified: Wed, 13 Dec 2023 02:29:51 GMT  
+		Size: 16.1 MB (16084093 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edafbacaf153673c1cb5b9e47c9377ca33178b1c99363b6470c0cc9f1c126f7c`  
-		Last Modified: Fri, 01 Dec 2023 10:04:34 GMT  
-		Size: 16.9 MB (16852961 bytes)  
+	-	`sha256:1c9633c0bf67299b06e5d557ea834a6261036ca40c385dcaef1c5154d5b66e5b`  
+		Last Modified: Wed, 13 Dec 2023 02:29:51 GMT  
+		Size: 16.9 MB (16852940 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24261082fd8d37f0a7b3f6d7a6aedeae1f4b27af42b163951aee449d7a9c6d80`  
-		Last Modified: Fri, 01 Dec 2023 10:04:33 GMT  
-		Size: 547.0 B  
+	-	`sha256:822316cca679335303b937e9cf0dd3705bfc2b1ad0c3cc160cd22e0fa3741f7d`  
+		Last Modified: Wed, 13 Dec 2023 02:29:51 GMT  
+		Size: 539.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7424a667b3c987af54b2c9762d8566ceb51717fd91308a6b8e2ff3f0e732e1f1`  
-		Last Modified: Fri, 01 Dec 2023 10:04:34 GMT  
-		Size: 1.0 KB (1022 bytes)  
+	-	`sha256:cd281e172e6d9d6cec34ada031ad2ec894a2ca657c00c2374cd9be229134be5a`  
+		Last Modified: Wed, 13 Dec 2023 02:29:52 GMT  
+		Size: 1.0 KB (1012 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30fd3dfab6efc6681b2f2c0ab579edf4699a222ab2f7caf927b15aba68dceff0`  
-		Last Modified: Fri, 01 Dec 2023 10:04:34 GMT  
+	-	`sha256:5aec6613fd50adf87d550d29e6fc5018682053bd7215c22ec09e66f3d097cbf7`  
+		Last Modified: Wed, 13 Dec 2023 02:29:52 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6f9a84de65e35972264729cf7b3ffe4dc19d0fcadcda5f5c2a5eae0fdbee631`  
-		Last Modified: Fri, 01 Dec 2023 11:56:54 GMT  
-		Size: 6.5 MB (6469751 bytes)  
+	-	`sha256:3fad7dabe7af9787bd4b010a1585c73c66fba37a813b2c56c1037d755312298c`  
+		Last Modified: Wed, 13 Dec 2023 06:04:49 GMT  
+		Size: 6.5 MB (6472781 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d71badbc4d0b89d41805f7dcd13041981854e9f9224b6eabf9e4cc5ac48709b`  
-		Last Modified: Fri, 01 Dec 2023 11:56:54 GMT  
-		Size: 1.3 KB (1291 bytes)  
+	-	`sha256:9e592e0cb1b223e4b3a317aed054a69ac63b1ac731f1695cb45c662725140f6c`  
+		Last Modified: Wed, 13 Dec 2023 06:04:48 GMT  
+		Size: 1.3 KB (1296 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:beadc5727012fa1705be252ab7dfb493c1153c4148da063ebe60a537c7e140d4`  
-		Last Modified: Fri, 01 Dec 2023 11:56:57 GMT  
-		Size: 52.1 MB (52113283 bytes)  
+	-	`sha256:975201513010cb1c5d6cb0836effa1f3d35f73165153ba95f79f8965fbfd59a3`  
+		Last Modified: Wed, 13 Dec 2023 06:04:51 GMT  
+		Size: 51.9 MB (51910236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe0d6342d723b65124ec6c2d8998c95444fc4f2254a295b6048b98a3387606a4`  
-		Last Modified: Fri, 01 Dec 2023 11:56:54 GMT  
-		Size: 1.5 KB (1511 bytes)  
+	-	`sha256:101f02b0e96cb699329786015a31db685cf0fce17550fdd132f89594f230b875`  
+		Last Modified: Wed, 13 Dec 2023 06:04:48 GMT  
+		Size: 1.5 KB (1514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e35bade4422c3b5a5ace89ce856adf000a37491b0908e341b76066090861183`  
-		Last Modified: Fri, 01 Dec 2023 11:56:55 GMT  
-		Size: 2.8 KB (2789 bytes)  
+	-	`sha256:155c7b70c6ffbc40bd3ad48a7628e66bbbf8686effd91427e3051ce20521a053`  
+		Last Modified: Wed, 13 Dec 2023 06:04:49 GMT  
+		Size: 2.8 KB (2791 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ac80c068f43f32e6ffac5711260f0cd14cba63f2b8c85660cf1eed69115a86b`  
-		Last Modified: Fri, 01 Dec 2023 13:31:45 GMT  
-		Size: 4.5 MB (4492370 bytes)  
+	-	`sha256:6a052ba638bec3e276f355abd0f340dbc0c7dc3557eef8b7dbaa8bcf593689eb`  
+		Last Modified: Wed, 13 Dec 2023 09:58:31 GMT  
+		Size: 4.5 MB (4495572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:25-rc-git` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:58649a262a26d27fcee5a23273d753b74eb0e7d2c822b688ccc3dfcd32536d80
+$ docker pull docker@sha256:2924bfcf61a622bb8e9dd3cb103e6321832e75a6b009348f7a33378832021475
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **731.4 KB (731358 bytes)**  
+-	Total Size: **737.6 KB (737616 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbc8f8c9bc7f3bd894213c2461999360a8fab061cce2e1c1f65d350d7ff921f3`
+-	Image ID: `sha256:5e99a64b68743bdd8515770d11ddc5774030e1881a268b6fadb00b579b09057a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:89f9b91ee01eb05a8167486529f2ff21c750ec528451d54aaca47b403d61aedc`  
-		Last Modified: Fri, 01 Dec 2023 13:31:44 GMT  
-		Size: 718.6 KB (718612 bytes)  
+	-	`sha256:c98e119a4454e31be8bef5361aec3d65b8c44e31eece5056837360db6dee5700`  
+		Last Modified: Wed, 13 Dec 2023 09:58:30 GMT  
+		Size: 724.9 KB (724867 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1563d0072b6ca26fadbe61697f0de32dff372820354f5518726575d199febf42`  
-		Last Modified: Fri, 01 Dec 2023 13:31:44 GMT  
-		Size: 12.7 KB (12746 bytes)  
+	-	`sha256:0f98b993775dfb0a215384021e9957618f932aa70f568811fdb0e46f1211476c`  
+		Last Modified: Wed, 13 Dec 2023 09:58:29 GMT  
+		Size: 12.7 KB (12749 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:25-rc-git` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:c3b7a30cb803dde0fac2b523251b7ef96a055aa0e24fd3d532925fb19855564b
+$ docker pull docker@sha256:948194d473d05a8a460f01f81cf72cdb12afb16216b5b147db1920d8e770f569
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **116.9 MB (116918563 bytes)**  
+-	Total Size: **116.8 MB (116790577 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10b625dedd2f58061666799595a49745262365492ec9118957cfe16609263722`
+-	Image ID: `sha256:7a1803c17947b4feb24c252acc3a683463ddd61d3c87fe9e37cb686a6190e674`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 
 ```dockerfile
@@ -477,9 +498,9 @@ RUN apk add --no-cache 		ca-certificates 		openssh-client # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
-ENV DOCKER_VERSION=25.0.0-beta.1
+ENV DOCKER_VERSION=25.0.0-beta.2
 # Mon, 13 Nov 2023 22:06:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-25.0.0-beta.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-25.0.0-beta.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-25.0.0-beta.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-25.0.0-beta.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-25.0.0-beta.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-25.0.0-beta.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-25.0.0-beta.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-25.0.0-beta.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
 ENV DOCKER_BUILDX_VERSION=0.12.0
 # Mon, 13 Nov 2023 22:06:12 GMT
@@ -505,7 +526,7 @@ RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		
 # Mon, 13 Nov 2023 22:06:12 GMT
 RUN set -eux; 	addgroup -S dockremap; 	adduser -S -G dockremap dockremap; 	echo 'dockremap:165536:65536' >> /etc/subuid; 	echo 'dockremap:165536:65536' >> /etc/subgid # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-25.0.0-beta.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-25.0.0-beta.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-25.0.0-beta.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-25.0.0-beta.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		--exclude 'docker/docker' 	; 	rm docker.tgz; 		dockerd --version; 	containerd --version; 	ctr --version; 	runc --version # buildkit
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-25.0.0-beta.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-25.0.0-beta.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-25.0.0-beta.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-25.0.0-beta.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		--exclude 'docker/docker' 	; 	rm docker.tgz; 		dockerd --version; 	containerd --version; 	ctr --version; 	runc --version # buildkit
 # Mon, 13 Nov 2023 22:06:12 GMT
 ENV DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e
 # Mon, 13 Nov 2023 22:06:12 GMT
@@ -529,83 +550,83 @@ RUN apk add --no-cache git # buildkit
 		Last Modified: Thu, 30 Nov 2023 23:11:32 GMT  
 		Size: 3.3 MB (3333033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26858e57ca6ca6c73ea7609b8f22c6a8f69a2e37b3e4147e8b5e125aeb518205`  
-		Last Modified: Fri, 01 Dec 2023 11:42:31 GMT  
-		Size: 2.0 MB (2024551 bytes)  
+	-	`sha256:6f34bfa1504ce7e2d8b894097d2570cc4740496235ea69363a5ef829254cad47`  
+		Last Modified: Wed, 13 Dec 2023 04:34:56 GMT  
+		Size: 2.0 MB (2024568 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:384180d09aea44462fb423a4021068a3f446a931925cd366fad476ffa2bcfefe`  
-		Last Modified: Fri, 01 Dec 2023 11:42:32 GMT  
-		Size: 15.9 MB (15893487 bytes)  
+	-	`sha256:b6213e2c2584e4cbd8b741f968870167ba92510384b985fb3aeeafb8aed08e10`  
+		Last Modified: Wed, 13 Dec 2023 04:34:57 GMT  
+		Size: 15.9 MB (15895326 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4827e5cd4f81d47eb4dbd0799e67948615352bc480463ef7a2d4687a2d27aa4`  
-		Last Modified: Fri, 01 Dec 2023 11:42:32 GMT  
-		Size: 15.6 MB (15640608 bytes)  
+	-	`sha256:91f5a77cd34a9a119ff31f008ac5f33580a3332d54304e9af198bff951887a2c`  
+		Last Modified: Wed, 13 Dec 2023 04:34:57 GMT  
+		Size: 15.6 MB (15640596 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48ac403a66fbaa550bf4064ec1253f4fd8eb679ced15be7b6ff7be9d334c75b3`  
-		Last Modified: Fri, 01 Dec 2023 11:42:33 GMT  
-		Size: 16.3 MB (16302308 bytes)  
+	-	`sha256:2e4372cf38b09aafc5d302d28ce48e06b404cf13e1a4954280e947186baaf77e`  
+		Last Modified: Wed, 13 Dec 2023 04:34:57 GMT  
+		Size: 16.3 MB (16302309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c05eb3967a63d61b71ae71f139fc1f409709545dda50899e278ae8d25a35dca3`  
-		Last Modified: Fri, 01 Dec 2023 11:42:32 GMT  
-		Size: 547.0 B  
+	-	`sha256:37d0cdbe692c8bc7ae869b6b3ec0d5e3972c88907521b7af489e5df4aecbea84`  
+		Last Modified: Wed, 13 Dec 2023 04:34:58 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4aa9b80b76fd67c3e67dc6cb741daa3cb9eb9566843cf01ff8c6b428c0c462d`  
-		Last Modified: Fri, 01 Dec 2023 11:42:33 GMT  
-		Size: 1.0 KB (1022 bytes)  
+	-	`sha256:2b2e36855e856e93adc63c7daadf1b813f2672d2283c55be1f405afd4d380209`  
+		Last Modified: Wed, 13 Dec 2023 04:34:58 GMT  
+		Size: 1.0 KB (1015 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63b43aa86ed57146c4ee2b964a46fc067c330fb671d37d56bf384cb5dcfc85e5`  
-		Last Modified: Fri, 01 Dec 2023 11:42:33 GMT  
+	-	`sha256:0e4aa3933a7691c8f9a319802cdd4d05304af4e0b823629e0cd8f5e1da8076e7`  
+		Last Modified: Wed, 13 Dec 2023 04:34:58 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba6d8c506ebac2e26252859576f1779c91dbc042f229fa57015073caf26135f7`  
-		Last Modified: Fri, 01 Dec 2023 14:31:21 GMT  
-		Size: 7.3 MB (7291389 bytes)  
+	-	`sha256:d49a3fc6c7c842633af7745967f76bad0b2fe5538bf0c84e53620216fd882ab7`  
+		Last Modified: Wed, 13 Dec 2023 06:13:01 GMT  
+		Size: 7.3 MB (7293922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4a32b541a2d0beab8e26965f345fa8de74c125d6222fe94f2a62840b3446046`  
-		Last Modified: Fri, 01 Dec 2023 14:31:20 GMT  
-		Size: 1.3 KB (1296 bytes)  
+	-	`sha256:27bb4c62f054f25e5c110e04b8324bc3833737d9cf7d8479f31a0c94b8ce3075`  
+		Last Modified: Wed, 13 Dec 2023 06:13:00 GMT  
+		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c183a0239ca81c05ada427d2e3ea6c6482ca40c4ab5fea745bef93398e99eb49`  
-		Last Modified: Fri, 01 Dec 2023 14:31:23 GMT  
-		Size: 51.4 MB (51388576 bytes)  
+	-	`sha256:2904ee00fe498cabd7774c6f0b8306a7ddccb92c2f9845c882b849059ef679e8`  
+		Last Modified: Wed, 13 Dec 2023 06:13:02 GMT  
+		Size: 51.3 MB (51254980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ffac7166f8fc2f32b031d6c3c234c04f960b6d61d17310759c4d2c10a6ea481`  
-		Last Modified: Fri, 01 Dec 2023 14:31:20 GMT  
-		Size: 1.5 KB (1513 bytes)  
+	-	`sha256:c4ee851f06d53aea1e13295be5dc3510f35f8fa500053bc50c4ab478890491f6`  
+		Last Modified: Wed, 13 Dec 2023 06:13:01 GMT  
+		Size: 1.5 KB (1512 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b4f148edf887db25eb42ee3a349aa08deb73405e32dc10e5cbffa0b6b66431a2`  
-		Last Modified: Fri, 01 Dec 2023 14:31:21 GMT  
-		Size: 2.8 KB (2793 bytes)  
+	-	`sha256:60fba8893e4970009bee83019210b024505cff4667a3a42c146bc6d2e0eff8da`  
+		Last Modified: Wed, 13 Dec 2023 06:13:01 GMT  
+		Size: 2.8 KB (2788 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfad7a281baefd0d5199bc7b2315ae5430b1495e95b647b1301001a9f40a4aa5`  
-		Last Modified: Fri, 01 Dec 2023 15:29:09 GMT  
-		Size: 5.0 MB (5037292 bytes)  
+	-	`sha256:181e7afd862e375f8209aa1a2fe160a3b29da4bdee005c0b17b266c0a0d70373`  
+		Last Modified: Wed, 13 Dec 2023 10:01:30 GMT  
+		Size: 5.0 MB (5038543 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:25-rc-git` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:d99a5688c447d39a36fbb12fa2a1b525aebcbdc6a943dedf8b554fa0965b77e0
+$ docker pull docker@sha256:4735fa65cede2eaab7ef321134add194ddc1ca923203a7e36a22590b07af9465
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **726.6 KB (726613 bytes)**  
+-	Total Size: **732.9 KB (732868 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b75a1bcb82f268101ccd15081f6f2a89a4cf35940fdec16af5744304875097ee`
+-	Image ID: `sha256:28872de565917a0dda7abe0831035a21074d221aa5529f257b78abca54f10e61`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:19c7673365afbe7bc0d92342b3e127d1aac9f25251153fe881e47532b51518bf`  
-		Last Modified: Fri, 01 Dec 2023 15:29:09 GMT  
-		Size: 716.1 KB (716117 bytes)  
+	-	`sha256:ef802809e1a34a903a345c098a556b669faae7bf51c4baa40ac630d278b39bdc`  
+		Last Modified: Wed, 13 Dec 2023 10:01:28 GMT  
+		Size: 722.4 KB (722372 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7ea60178f795844f663d701c38c3fb2bd118f598b12f3a82451c02147dc8450f`  
-		Last Modified: Fri, 01 Dec 2023 15:29:08 GMT  
+	-	`sha256:152c7a2be221d086ffbcd6eba9efe36b9b41874bbd346365f836995915472770`  
+		Last Modified: Wed, 13 Dec 2023 10:01:29 GMT  
 		Size: 10.5 KB (10496 bytes)  
 		MIME: application/vnd.in-toto+json
