@@ -1,7 +1,7 @@
 ## `tomcat:8-jre17-temurin-focal`
 
 ```console
-$ docker pull tomcat@sha256:16b8751bed348303fc1607cf5e08ff693a2ddbd3a224b66d01477439774d9ddb
+$ docker pull tomcat@sha256:d66394a2b26028c7082970bd26cf59244935cb6588d79139552dfb4852a0ce54
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15,14 +15,14 @@ $ docker pull tomcat@sha256:16b8751bed348303fc1607cf5e08ff693a2ddbd3a224b66d0147
 ### `tomcat:8-jre17-temurin-focal` - linux; amd64
 
 ```console
-$ docker pull tomcat@sha256:86adceb4cb1ef56d76434e2e231bdc4860d8cf18fe2027bb701d9b6f1e78ff84
+$ docker pull tomcat@sha256:b2a5d249cce3abab176a78e815363370d182a6a654a0001f415e5d290d05202e
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **108.3 MB (108288508 bytes)**  
+-	Total Size: **108.4 MB (108360284 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d00e020744019e5436b92bf795c003455e9eae07f84d4c157c0a1c894cf2c6c`
+-	Image ID: `sha256:a82363eaa68f3b70ea35c6a47a2bdc060113e6062ebec4071db0d39e7b70edb7`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -72,21 +72,21 @@ ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
 ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 5C3C5F3E314C866292F359A8F3AD5C94A67F707E 765908099ACF92702C7D949BFA0C35EA8AA299F1 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
 # Sat, 02 Dec 2023 08:30:04 GMT
 ENV TOMCAT_MAJOR=8
-# Sat, 02 Dec 2023 08:30:04 GMT
-ENV TOMCAT_VERSION=8.5.96
-# Sat, 02 Dec 2023 08:30:04 GMT
-ENV TOMCAT_SHA512=dc80b2649f2ad7f8baa6c925ef1d0bad71e27f5557dc46e313f45b8044dba05791a60062117d5257c28955f8405eded70e451ee2e0d9671c8aecd21977e0bec9
-# Sat, 02 Dec 2023 08:30:04 GMT
-COPY dir:110f8541e7b7220608389d6fa989c691d32b85ce656ae0cbd20783bdeabb7371 in /usr/local/tomcat 
-# Sat, 02 Dec 2023 08:30:09 GMT
+# Wed, 13 Dec 2023 02:14:06 GMT
+ENV TOMCAT_VERSION=8.5.97
+# Wed, 13 Dec 2023 02:14:06 GMT
+ENV TOMCAT_SHA512=344ea91c95677fdc243bc58a1f8ab745117a80c0a458ae2e26ebc4f968e06c4bfffaf9a4aae52de3d72b945b05b6e03b7cfae98596c222cbe7d394d52363da86
+# Wed, 13 Dec 2023 02:14:06 GMT
+COPY dir:264e7638ead43d8c65ae4427e1e7ffb427dca52a0bb64cf99dde53cc15d6bae9 in /usr/local/tomcat 
+# Wed, 13 Dec 2023 02:14:11 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
-# Sat, 02 Dec 2023 08:30:10 GMT
+# Wed, 13 Dec 2023 02:14:12 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Sat, 02 Dec 2023 08:30:10 GMT
+# Wed, 13 Dec 2023 02:14:12 GMT
 EXPOSE 8080
-# Sat, 02 Dec 2023 08:30:10 GMT
+# Wed, 13 Dec 2023 02:14:13 GMT
 ENTRYPOINT []
-# Sat, 02 Dec 2023 08:30:11 GMT
+# Wed, 13 Dec 2023 02:14:13 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -115,17 +115,17 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Sat, 02 Dec 2023 08:41:33 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8abffb6f7263ad2bafc2d2ad8115882f3f612c9d7ec8c15f746f2a5ecb11862a`  
-		Last Modified: Sat, 02 Dec 2023 08:46:10 GMT  
-		Size: 11.4 MB (11438969 bytes)  
+	-	`sha256:691881cdb1943c0285fedc605a6117bb967ac1757073cf24df57678283c9dbd2`  
+		Last Modified: Wed, 13 Dec 2023 02:36:09 GMT  
+		Size: 11.5 MB (11510725 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7025fa1115c2a25825d6dee09cb523fa00ce5847fbe19e75607f52de65193e7f`  
-		Last Modified: Sat, 02 Dec 2023 08:46:09 GMT  
-		Size: 452.9 KB (452906 bytes)  
+	-	`sha256:1e7d710fd3a619e1d9e30eed56e6f6811792bbbca0a9ea3815e8fca21645dfc3`  
+		Last Modified: Wed, 13 Dec 2023 02:36:08 GMT  
+		Size: 452.9 KB (452925 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:930c522a0f67ba3c116f881327f76a3215d3d6927143cd85f9199580f9e447a3`  
-		Last Modified: Sat, 02 Dec 2023 08:46:09 GMT  
-		Size: 130.0 B  
+	-	`sha256:c217ec49be852e9ccb0581f5e1b089d1b5d4b72deee4a627751140b15c04ea2a`  
+		Last Modified: Wed, 13 Dec 2023 02:36:08 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `tomcat:8-jre17-temurin-focal` - linux; arm variant v7
@@ -247,14 +247,14 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:8-jre17-temurin-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull tomcat@sha256:83f9346c48a178451da4bba21a5b4aa61e4a9851cb00d0e925bbd5f485438cbe
+$ docker pull tomcat@sha256:f87a256fd20eecd27e0cd1f4524cd94cc3fc14952edfff922f05644f0331b47b
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **107.1 MB (107115676 bytes)**  
+-	Total Size: **107.2 MB (107186004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aff483bb6b5608a7fd8970c3311d2f88553fc3484835430d771e8a3b774a48c6`
+-	Image ID: `sha256:1d13a88e16500025ae1c393a55304121f6ecdd9ce27521e4ddde3bdd0c093d74`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -304,21 +304,21 @@ ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
 ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 5C3C5F3E314C866292F359A8F3AD5C94A67F707E 765908099ACF92702C7D949BFA0C35EA8AA299F1 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
 # Sat, 02 Dec 2023 10:36:22 GMT
 ENV TOMCAT_MAJOR=8
-# Sat, 02 Dec 2023 10:36:22 GMT
-ENV TOMCAT_VERSION=8.5.96
-# Sat, 02 Dec 2023 10:36:22 GMT
-ENV TOMCAT_SHA512=dc80b2649f2ad7f8baa6c925ef1d0bad71e27f5557dc46e313f45b8044dba05791a60062117d5257c28955f8405eded70e451ee2e0d9671c8aecd21977e0bec9
-# Sat, 02 Dec 2023 10:36:22 GMT
-COPY dir:4d980c2576928f1e2a31cf96c7702f2b83c82c80a22915baeb29a54f4fae8b03 in /usr/local/tomcat 
-# Sat, 02 Dec 2023 10:36:25 GMT
+# Wed, 13 Dec 2023 02:04:52 GMT
+ENV TOMCAT_VERSION=8.5.97
+# Wed, 13 Dec 2023 02:04:53 GMT
+ENV TOMCAT_SHA512=344ea91c95677fdc243bc58a1f8ab745117a80c0a458ae2e26ebc4f968e06c4bfffaf9a4aae52de3d72b945b05b6e03b7cfae98596c222cbe7d394d52363da86
+# Wed, 13 Dec 2023 02:04:53 GMT
+COPY dir:05d6e18812de92b91cf486554f4f056b2ef918d0625ec2655cec8bf194c89439 in /usr/local/tomcat 
+# Wed, 13 Dec 2023 02:04:56 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
-# Sat, 02 Dec 2023 10:36:26 GMT
+# Wed, 13 Dec 2023 02:04:57 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Sat, 02 Dec 2023 10:36:26 GMT
+# Wed, 13 Dec 2023 02:04:57 GMT
 EXPOSE 8080
-# Sat, 02 Dec 2023 10:36:26 GMT
+# Wed, 13 Dec 2023 02:04:58 GMT
 ENTRYPOINT []
-# Sat, 02 Dec 2023 10:36:27 GMT
+# Wed, 13 Dec 2023 02:04:58 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -347,30 +347,30 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Sat, 02 Dec 2023 10:46:43 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f913bdecdc0b3a941c45916f2a9aa122371ad03ce4e6331b3af2ed3fb8bbc72`  
-		Last Modified: Sat, 02 Dec 2023 10:51:09 GMT  
-		Size: 11.5 MB (11456255 bytes)  
+	-	`sha256:a039aa9b2f058ccf167db6c4eacdf92a7d25f8e234538000c285b236dd87816d`  
+		Last Modified: Wed, 13 Dec 2023 02:25:58 GMT  
+		Size: 11.5 MB (11526590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37f80e7d84c077603fe9400dbb7b248a96bf4c257aac5bc6796c48bbcfc2463f`  
-		Last Modified: Sat, 02 Dec 2023 10:51:08 GMT  
-		Size: 451.8 KB (451846 bytes)  
+	-	`sha256:6ffea58358f64b9728ae9e7df9e8d211ad51e05fae324714793d12b4ca2160da`  
+		Last Modified: Wed, 13 Dec 2023 02:25:57 GMT  
+		Size: 451.8 KB (451840 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d84b652615c6d1b02c170e4f6432541c4706c58d1d3f1323e0b218a50d40cb1`  
-		Last Modified: Sat, 02 Dec 2023 10:51:08 GMT  
-		Size: 130.0 B  
+	-	`sha256:7f7680cff9fa08a8c75a035c221bc90fe30445c5e6e4667daa9b31e5ca746f7b`  
+		Last Modified: Wed, 13 Dec 2023 02:25:57 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `tomcat:8-jre17-temurin-focal` - linux; ppc64le
 
 ```console
-$ docker pull tomcat@sha256:a210e0bfa895248a9faf1cc89a1f4960e9512346e49ed4662c08dbd4074c6a66
+$ docker pull tomcat@sha256:618a67cfaa984943623a385cbee54fa7a43d2782d0d9292833e71d9c4cf0a640
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **115.0 MB (114980855 bytes)**  
+-	Total Size: **115.1 MB (115052632 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3095083c7f9faf325aee1df3490b6c2dece615f32bd3376f21c00a1324e7d453`
+-	Image ID: `sha256:fe8e0c19e97e0b54dc3b295a3dfd2c4537fa36f835e100a8b90ed497220a6df4`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -420,21 +420,21 @@ ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
 ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 5C3C5F3E314C866292F359A8F3AD5C94A67F707E 765908099ACF92702C7D949BFA0C35EA8AA299F1 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
 # Sat, 02 Dec 2023 10:36:38 GMT
 ENV TOMCAT_MAJOR=8
-# Sat, 02 Dec 2023 10:36:39 GMT
-ENV TOMCAT_VERSION=8.5.96
-# Sat, 02 Dec 2023 10:36:39 GMT
-ENV TOMCAT_SHA512=dc80b2649f2ad7f8baa6c925ef1d0bad71e27f5557dc46e313f45b8044dba05791a60062117d5257c28955f8405eded70e451ee2e0d9671c8aecd21977e0bec9
-# Sat, 02 Dec 2023 10:36:40 GMT
-COPY dir:1b92d967c3c400fc5856c0d847aaf078cc72f3d506c246b4ad81eb0263888a9d in /usr/local/tomcat 
-# Sat, 02 Dec 2023 10:36:47 GMT
+# Wed, 13 Dec 2023 02:44:43 GMT
+ENV TOMCAT_VERSION=8.5.97
+# Wed, 13 Dec 2023 02:44:43 GMT
+ENV TOMCAT_SHA512=344ea91c95677fdc243bc58a1f8ab745117a80c0a458ae2e26ebc4f968e06c4bfffaf9a4aae52de3d72b945b05b6e03b7cfae98596c222cbe7d394d52363da86
+# Wed, 13 Dec 2023 02:44:44 GMT
+COPY dir:825b7ddf21aa954b5c95e90a3b5ad4a4e7474ca15507c608f4b3c37e60f119c3 in /usr/local/tomcat 
+# Wed, 13 Dec 2023 02:44:51 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
-# Sat, 02 Dec 2023 10:36:50 GMT
+# Wed, 13 Dec 2023 02:44:56 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Sat, 02 Dec 2023 10:36:51 GMT
+# Wed, 13 Dec 2023 02:44:57 GMT
 EXPOSE 8080
-# Sat, 02 Dec 2023 10:36:51 GMT
+# Wed, 13 Dec 2023 02:44:57 GMT
 ENTRYPOINT []
-# Sat, 02 Dec 2023 10:36:52 GMT
+# Wed, 13 Dec 2023 02:44:57 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -463,17 +463,17 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Sat, 02 Dec 2023 10:52:45 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8de8e7b8acc44af0625521e79d002c14ea65f05ceac34891076fd52e1644248`  
-		Last Modified: Sat, 02 Dec 2023 10:57:33 GMT  
-		Size: 11.5 MB (11478623 bytes)  
+	-	`sha256:8ae71ee532108be4b9b6b658341cfbdd2e4f6f55456b7c3a710753461a5a49bf`  
+		Last Modified: Wed, 13 Dec 2023 03:09:31 GMT  
+		Size: 11.6 MB (11550364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03b30e1c0fea1a809d19855e972416f112020a56ed403abb727a9ad94cd8e40d`  
-		Last Modified: Sat, 02 Dec 2023 10:57:32 GMT  
-		Size: 477.9 KB (477903 bytes)  
+	-	`sha256:61025fe5d19f10c28057c5ef93caf1682c3f8d1fb5ed4b1d9211078f1466bc15`  
+		Last Modified: Wed, 13 Dec 2023 03:09:30 GMT  
+		Size: 477.9 KB (477940 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccbed11c164020e47591cb4c376b617e1ff7593fccd9ab2be9cee5434f7a7878`  
-		Last Modified: Sat, 02 Dec 2023 10:57:32 GMT  
-		Size: 131.0 B  
+	-	`sha256:c8cee82f211ea878132493edfefea8b270c76db7731fab3afe8c9ee52c1a93b4`  
+		Last Modified: Wed, 13 Dec 2023 03:09:30 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `tomcat:8-jre17-temurin-focal` - linux; s390x
