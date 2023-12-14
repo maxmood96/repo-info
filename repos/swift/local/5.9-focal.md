@@ -1,9 +1,9 @@
-# `swift:5.9.1-focal`
+# `swift:5.9.2-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7b303eaf51f44da623ac2c323a249974c37b9329f60258891ecf065d28a7efaa`
-- Created: `2023-12-02T03:21:26.292737197Z`
+- Image ID: `sha256:7fdc241aadd210f43348821f2f0dd0f7041f4073042b170b64a5aa409836de64`
+- Created: `2023-12-12T00:26:42.724453668Z`
 - Virtual Size: ~ 2.38 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561`
   - `SWIFT_PLATFORM=ubuntu20.04`
-  - `SWIFT_BRANCH=swift-5.9.1-release`
-  - `SWIFT_VERSION=swift-5.9.1-RELEASE`
+  - `SWIFT_BRANCH=swift-5.9.2-release`
+  - `SWIFT_VERSION=swift-5.9.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -202,14 +202,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.34-6ubuntu1.6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.6.dsc' binutils_2.34-6ubuntu1.6.dsc 8829 SHA512:ede7b4a1eb205a14599a2e61b3793d4e982f6481c9a5dd326bb1a2f6954bef8c1a523180e3d5b0f39235c2fda5b3c133e3a86c16db0edb282c3131ee7c54d092
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34.orig.tar.xz' binutils_2.34.orig.tar.xz 21637796 SHA512:2c7976939dcf5e8c5b7374cccd39bfe803b1bec73c6abfa0eb17c24e1942574c6bdb874c66a092a82adc443182eacd8a5a8001c19a76101f0c7ba40c27de0bbd
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.6.debian.tar.xz' binutils_2.34-6ubuntu1.6.debian.tar.xz 163364 SHA512:cbfd5bfd9c1e795de037a65fcedf4f9cc2b5d81df1d72d7c930fd09b0784070607577707db6b129027cdc8f8382800e9eb470bb16147e705c7376ea40eab5dcb
-```
 
 ### `dpkg` source package: `brotli=1.0.7-6ubuntu0.1`
 
@@ -313,10 +308,8 @@ $ apt-get source -qq --print-uris coreutils=8.30-3ubuntu2
 Binary Packages:
 
 - `libcurl3-gnutls:amd64=7.68.0-1ubuntu2.20`
-- `libcurl4:amd64=7.68.0-1ubuntu2.20`
-- `libcurl4-openssl-dev:amd64=7.68.0-1ubuntu2.20`
 
-Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -328,6 +321,31 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `curl=7.68.0-1ubuntu2.21`
+
+Binary Packages:
+
+- `libcurl4:amd64=7.68.0-1ubuntu2.21`
+- `libcurl4-openssl-dev:amd64=7.68.0-1ubuntu2.21`
+
+Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+- `other`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.21
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.21.dsc' curl_7.68.0-1ubuntu2.21.dsc 2737 SHA512:6637e374c7078dd9535a898ac4eed18088543d73152d631f65c6068bd5682fc2aaf5de7173a95d778c2ac44d1cf2e99860f4576c84a006af82de36707aac7673
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.21.debian.tar.xz' curl_7.68.0-1ubuntu2.21.debian.tar.xz 69924 SHA512:c2e15589ce3f296ebe4d42f3baa4c03237ad7b8d5d7fd2a3f0e1e2a6e3a41a8cb046c21bcbab8820e8cab0cd70a6eba5bb0ed8678158f9c1003c60f5293e3c06
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
 
@@ -1701,14 +1719,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-167.184
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-167.184.dsc' linux_5.4.0-167.184.dsc 7067 SHA512:fd14b9b944b141f6608ae92457e2d077c4f4b59c3ee7b3ff2434cd415fb6f1f64166173b88a1a91e9be8cbb88e78b1622a712b30768e0b7ef3e4e81401c1019c
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-167.184.diff.gz' linux_5.4.0-167.184.diff.gz 11130240 SHA512:187d3ad3215964b5b7e139defc2c4ed6916925029728f25cd4bafa97b8770b3ee9108eab909e8f0dd2104b313472e316fdf4804c666929237c03ca4e260db849
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 

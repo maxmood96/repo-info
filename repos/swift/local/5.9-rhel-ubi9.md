@@ -1,10 +1,10 @@
-# `swift:5.9.1-rhel-ubi9`
+# `swift:5.9.2-rhel-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b77d062106a6e7bfbe7bff096c1c84bfb00828b85469dc460dcc2d259e9e47dd`
-- Created: `2023-11-17T04:18:47.681992588Z`
-- Virtual Size: ~ 2.46 Gb  
+- Image ID: `sha256:763a7a7646ea412ffab9e021ee738e8e03dbf5da304312ec22027a00329a1eb3`
+- Created: `2023-12-14T01:58:32.224847512Z`
+- Virtual Size: ~ 2.47 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -13,12 +13,12 @@
   - `container=oci`
   - `SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561`
   - `SWIFT_PLATFORM=ubi9`
-  - `SWIFT_BRANCH=swift-5.9.1-release`
-  - `SWIFT_VERSION=swift-5.9.1-RELEASE`
+  - `SWIFT_BRANCH=swift-5.9.2-release`
+  - `SWIFT_VERSION=swift-5.9.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2023-11-09T16:40:44`
+  - `build-date=2023-12-07T04:10:37`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,9 +30,9 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=1361.1699548029`
+  - `release=1476`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.3-1361.1699548029`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.3-1476`
   - `vcs-ref=eb726081eeafc660c182aae53074ec6631cb473e`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -94,7 +94,7 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `cmake-filesystem-3.20.2-8.el9.x86_64`
+### `rpm` package: `cmake-filesystem-3.20.2-9.el9_3.x86_64`
 
 Licenses (from `rpm --query`): BSD and MIT and zlib
 
@@ -424,7 +424,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `kernel-headers-5.14.0-362.8.1.el9_3.x86_64`
+### `rpm` package: `kernel-headers-5.14.0-362.13.1.el9_3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2 and Redistributable, no modification permitted
 
@@ -820,13 +820,13 @@ Licenses (from `rpm --query`): LGPLv2+ and BSD and Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libxml2-2.9.13-4.el9.x86_64`
+### `rpm` package: `libxml2-2.9.13-5.el9_3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libxml2-devel-2.9.13-4.el9.x86_64`
+### `rpm` package: `libxml2-devel-2.9.13-5.el9_3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 

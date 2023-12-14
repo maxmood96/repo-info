@@ -1,10 +1,10 @@
-# `swift:5.9.1-slim`
+# `swift:5.9.2-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cf60a828e5725be557a1f0ab5fe2c52c8daa24dab5cbf64db5f9342ee2d4051d`
-- Created: `2023-12-02T03:18:38.731193394Z`
-- Virtual Size: ~ 248.85 Mb  
+- Image ID: `sha256:2b8525e465aa92c7973be7690d69ae9c4c9142716412d078229165fe890bdbf3`
+- Created: `2023-12-12T00:23:58.627951894Z`
+- Virtual Size: ~ 249.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561`
   - `SWIFT_PLATFORM=ubuntu22.04`
-  - `SWIFT_BRANCH=swift-5.9.1-release`
-  - `SWIFT_VERSION=swift-5.9.1-RELEASE`
+  - `SWIFT_BRANCH=swift-5.9.2-release`
+  - `SWIFT_VERSION=swift-5.9.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -282,11 +282,11 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.debian.tar.xz' coreutils_8.32-4.1ubuntu1.debian.tar.xz 41096 SHA512:74adfa2f2a85af8d7024ad6d13942e915217dcb10e29caa9c314e0a15da6ec019e7aa52ac5351c35ccea1bace7a05c6dc7569b7b0487c8fcd46b3ba42d66d89d
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.14`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.15`
 
 Binary Packages:
 
-- `libcurl4:amd64=7.81.0-1ubuntu1.14`
+- `libcurl4:amd64=7.81.0-1ubuntu1.15`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 
@@ -297,9 +297,15 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.15
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.15.dsc' curl_7.81.0-1ubuntu1.15.dsc 3143 SHA512:be0a3975bb53980499beeed1d2bb1e5dc8b77553a9b7ad9843137ad6ae68d54608af09cd489893c9309d6569a4b6cccd1319486b85a65baac67352957cbf0349
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.15.debian.tar.xz' curl_7.81.0-1ubuntu1.15.debian.tar.xz 73324 SHA512:9573260499a29c6b181d2f67ff7b203a8d024d990cb9d4702dbbb09496ffd3db03bfc27fcabd624d121061114c176d4d982a506dccf27f3643bb4e046fab6c43
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 

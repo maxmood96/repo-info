@@ -1,10 +1,10 @@
-# `swift:5.9.1-rhel-ubi9-slim`
+# `swift:5.9.2-rhel-ubi9-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a89380e864314da35932cd802f79f368f26c8917ad65e0895641d0a82489e95f`
-- Created: `2023-11-17T04:19:30.291926348Z`
-- Virtual Size: ~ 339.67 Mb  
+- Image ID: `sha256:06adfdb73e279a4a10faab5133b1008cac3b347fa14ff038ba0afcd7b1576fc5`
+- Created: `2023-12-14T01:59:46.319225418Z`
+- Virtual Size: ~ 339.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -13,12 +13,12 @@
   - `container=oci`
   - `SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561`
   - `SWIFT_PLATFORM=ubi9`
-  - `SWIFT_BRANCH=swift-5.9.1-release`
-  - `SWIFT_VERSION=swift-5.9.1-RELEASE`
+  - `SWIFT_BRANCH=swift-5.9.2-release`
+  - `SWIFT_VERSION=swift-5.9.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2023-11-09T16:40:44`
+  - `build-date=2023-12-07T04:10:37`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,9 +30,9 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=1361.1699548029`
+  - `release=1476`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.3-1361.1699548029`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.3-1476`
   - `vcs-ref=eb726081eeafc660c182aae53074ec6631cb473e`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -658,7 +658,7 @@ Licenses (from `rpm --query`): LGPLv2+ and BSD and Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libxml2-2.9.13-4.el9.x86_64`
+### `rpm` package: `libxml2-2.9.13-5.el9_3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
