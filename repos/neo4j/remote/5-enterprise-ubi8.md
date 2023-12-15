@@ -1,7 +1,7 @@
 ## `neo4j:5-enterprise-ubi8`
 
 ```console
-$ docker pull neo4j@sha256:91269a51c26ee2486bd09089cf0e5e1a163c7359643e5fc5f3f1151b6db4c1b4
+$ docker pull neo4j@sha256:ba865fd02ea01d24998a2951abfcea5046c35b9ab3d6891cc0b66d0c80d65d56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -124,14 +124,14 @@ CMD ["neo4j"]
 ### `neo4j:5-enterprise-ubi8` - linux; arm64 variant v8
 
 ```console
-$ docker pull neo4j@sha256:0f9d04d7cb71add4d5820c8ccddbcc556c4c45ded930cbe3dd956af21e4adff4
+$ docker pull neo4j@sha256:131ee2c8e2034705fdcb90abd05e88900a4f5efdea66ed4d62f3b132773aab5c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **617.6 MB (617583986 bytes)**  
+-	Total Size: **574.9 MB (574918918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c39570dfdae5b4f7917d0cfc539110c239212d3c94740f26b57783521259b14`
+-	Image ID: `sha256:d9698568f5adf580f2f476bc3ac3980e58d6ae295c18f598f2f901a216054cad`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
@@ -182,32 +182,30 @@ RUN rm -f '/etc/yum.repos.d/repo-3b08a.repo' '/etc/yum.repos.d/repo-4c95e.repo'
 RUN rm -f /tmp/tls-ca-bundle.pem
 # Wed, 01 Nov 2023 03:27:01 GMT
 RUN mv -fZ /tmp/ubi.repo /etc/yum.repos.d/ubi.repo || :
-# Fri, 17 Nov 2023 03:24:07 GMT
-ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 02 Dec 2023 11:53:31 GMT
-COPY dir:b97789a1c2e6d715436236e063679209ed5b51287e172faadc90d7cbd7bc1135 in /opt/java/openjdk 
-# Sat, 02 Dec 2023 11:54:42 GMT
-RUN set -eux;     arch="$(uname -m)";     case "${arch}" in         'x86_64')             tiniurl="https://github.com/krallin/tini/releases/download/v0.19.0/tini";             tinisha="93dcc18adc78c65a028a84799ecf8ad40c936fdfc5f2a57b1acda5a8117fa82c";             ;;         'aarch64')             tiniurl="https://github.com/krallin/tini/releases/download/v0.19.0/tini-arm64";             tinisha="07952557df20bfd2a95f9bef198b445e006171969499a1d361bd9e6f8e5e0e81";             ;;         *) echo >&2 "Neo4j does not currently have a docker image for architecture $arch"; exit 1 ;;     esac;     microdnf install -y dnf;     dnf install -y         findutils         gcc         git         gzip         hostname         jq         make         procps         shadow-utils         tar         wget         which;     wget -q ${tiniurl} -O /usr/bin/tini;     wget -q ${tiniurl}.asc -O tini.asc;     echo "${tinisha}"  /usr/bin/tini | sha256sum -c --strict --quiet;     chmod a+x /usr/bin/tini;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys         595E85A6B1B4779EA4DAAEC70B588DFF0527A9B7         B42F6819007F00F88E364FD4036A9C25BF357DD4;     gpg --batch --verify tini.asc /usr/bin/tini;     git clone https://github.com/ncopa/su-exec.git;     cd su-exec;     git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af;     echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c;     echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c;     make;     mv /su-exec/su-exec /usr/bin/su-exec;     gpgconf --kill all;     rm -rf "$GNUPGHOME" tini.asc /su-exec;     dnf remove -y gcc git make;     dnf autoremove;     dnf clean all
-# Sat, 02 Dec 2023 11:54:52 GMT
-ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=63e73f347697cab2b2e13b434c71e0116e87d4e11227dba878eb288300f47e7c NEO4J_TARBALL=neo4j-enterprise-5.14.0-unix.tar.gz NEO4J_EDITION=enterprise NEO4J_HOME=/var/lib/neo4j
-# Sat, 02 Dec 2023 11:54:52 GMT
-ARG NEO4J_URI=https://dist.neo4j.org/neo4j-enterprise-5.14.0-unix.tar.gz
-# Sat, 02 Dec 2023 11:54:53 GMT
+# Fri, 15 Dec 2023 19:54:50 GMT
+ENV JAVA_HOME=/usr
+# Fri, 15 Dec 2023 19:56:44 GMT
+RUN set -eux;     arch="$(uname -m)";     case "${arch}" in         'x86_64')             tiniurl="https://github.com/krallin/tini/releases/download/v0.19.0/tini";             tinisha="93dcc18adc78c65a028a84799ecf8ad40c936fdfc5f2a57b1acda5a8117fa82c";             ;;         'aarch64')             tiniurl="https://github.com/krallin/tini/releases/download/v0.19.0/tini-arm64";             tinisha="07952557df20bfd2a95f9bef198b445e006171969499a1d361bd9e6f8e5e0e81";             ;;         *) echo >&2 "Neo4j does not currently have a docker image for architecture $arch"; exit 1 ;;     esac;     microdnf install -y dnf;     dnf install -y         findutils         gcc         git         gzip         hostname         java-17         jq         make         procps         shadow-utils         tar         wget         which;     wget -q ${tiniurl} -O /usr/bin/tini;     wget -q ${tiniurl}.asc -O tini.asc;     echo "${tinisha}"  /usr/bin/tini | sha256sum -c --strict --quiet;     chmod a+x /usr/bin/tini;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys         595E85A6B1B4779EA4DAAEC70B588DFF0527A9B7         B42F6819007F00F88E364FD4036A9C25BF357DD4;     gpg --batch --verify tini.asc /usr/bin/tini;     git clone https://github.com/ncopa/su-exec.git;     cd su-exec;     git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af;     echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c;     echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c;     make;     mv /su-exec/su-exec /usr/bin/su-exec;     gpgconf --kill all;     rm -rf "$GNUPGHOME" tini.asc /su-exec;     dnf remove -y gcc git make;     dnf autoremove;     dnf clean all
+# Fri, 15 Dec 2023 19:56:58 GMT
+ENV PATH=/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=7571340603eca6b15923ba213f90d6460e9622657db955488207c0437fb414fb NEO4J_TARBALL=neo4j-enterprise-5.15.0-unix.tar.gz NEO4J_EDITION=enterprise NEO4J_HOME=/var/lib/neo4j
+# Fri, 15 Dec 2023 19:56:58 GMT
+ARG NEO4J_URI=https://dist.neo4j.org/neo4j-enterprise-5.15.0-unix.tar.gz
+# Fri, 15 Dec 2023 19:56:58 GMT
 COPY multi:8fee13a85b98996afa1dd437b17591f4356f4c453ab9a107827f32427bb071da in /startup/ 
-# Sat, 02 Dec 2023 11:55:03 GMT
-# ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-enterprise-5.14.0-unix.tar.gz
+# Fri, 15 Dec 2023 19:57:08 GMT
+# ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-enterprise-5.15.0-unix.tar.gz
 RUN set -eux;     groupadd --gid 7474 --system neo4j && useradd --uid 7474 --system --no-create-home --home "${NEO4J_HOME}" --gid neo4j neo4j;     curl --fail --silent --show-error --location --remote-name ${NEO4J_URI};     echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -c --strict --quiet;     tar --extract --file ${NEO4J_TARBALL} --directory /var/lib;     mv /var/lib/neo4j-* "${NEO4J_HOME}";     rm ${NEO4J_TARBALL};     mv "${NEO4J_HOME}"/data /data;     mv "${NEO4J_HOME}"/logs /logs;     chown -R neo4j:neo4j /data;     chmod -R 777 /data;     chown -R neo4j:neo4j /logs;     chmod -R 777 /logs;     chown -R neo4j:neo4j "${NEO4J_HOME}";     chmod -R 777 "${NEO4J_HOME}";     ln -s /data "${NEO4J_HOME}"/data;     ln -s /logs "${NEO4J_HOME}"/logs;     mv /startup/neo4j-admin-report.sh "${NEO4J_HOME}"/bin/neo4j-admin-report
-# Sat, 02 Dec 2023 11:55:05 GMT
-ENV PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 02 Dec 2023 11:55:05 GMT
+# Fri, 15 Dec 2023 19:57:11 GMT
+ENV PATH=/var/lib/neo4j/bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 15 Dec 2023 19:57:11 GMT
 WORKDIR /var/lib/neo4j
-# Sat, 02 Dec 2023 11:55:05 GMT
+# Fri, 15 Dec 2023 19:57:11 GMT
 VOLUME [/data /logs]
-# Sat, 02 Dec 2023 11:55:06 GMT
+# Fri, 15 Dec 2023 19:57:11 GMT
 EXPOSE 7473 7474 7687
-# Sat, 02 Dec 2023 11:55:06 GMT
+# Fri, 15 Dec 2023 19:57:11 GMT
 ENTRYPOINT ["tini" "-g" "--" "/startup/docker-entrypoint.sh"]
-# Sat, 02 Dec 2023 11:55:06 GMT
+# Fri, 15 Dec 2023 19:57:11 GMT
 CMD ["neo4j"]
 ```
 
@@ -216,19 +214,15 @@ CMD ["neo4j"]
 		Last Modified: Wed, 15 Nov 2023 19:35:11 GMT  
 		Size: 37.7 MB (37682884 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2338422759110e396479a24b32b86b06c7b4ad29582af7114bafdd2cde0c5d34`  
-		Last Modified: Sat, 02 Dec 2023 11:57:57 GMT  
-		Size: 143.7 MB (143681710 bytes)  
+	-	`sha256:bf521cc5c8f1be6b54de00852644988a52cd4537fa3ef91f686317332ebdc910`  
+		Last Modified: Fri, 15 Dec 2023 19:59:10 GMT  
+		Size: 150.7 MB (150720739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7fb7bb051ee22eee6afc4a90f1c12f60bad7f626e5ac58b4cfcd9978f3c91f8`  
-		Last Modified: Sat, 02 Dec 2023 11:57:53 GMT  
-		Size: 50.8 MB (50815189 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95d9603c7215730e42abcb840cd121dbc96bb3e19886e574ecbe6e25da9cf14c`  
-		Last Modified: Sat, 02 Dec 2023 11:58:17 GMT  
+	-	`sha256:74c1a7f1532d7afed323187195c037c824035dbff9315c4be0b555f83888d77e`  
+		Last Modified: Fri, 15 Dec 2023 19:59:30 GMT  
 		Size: 9.5 KB (9486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10caef53fa3de6fcb2e8bb138a14b448f4fd394a6aea47ac676d323511a8d81f`  
-		Last Modified: Sat, 02 Dec 2023 11:58:29 GMT  
-		Size: 385.4 MB (385394717 bytes)  
+	-	`sha256:b13f87ea7b807edecd8a1c6bbf219d7b5b05cf40dbf0517a131b4dc73cecee53`  
+		Last Modified: Fri, 15 Dec 2023 19:59:43 GMT  
+		Size: 386.5 MB (386505809 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
