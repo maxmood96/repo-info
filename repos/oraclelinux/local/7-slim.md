@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:506c06ed74d45c93067f9cf6b4089f995a4e3c2a6a11848260648822b467e560`
-- Created: `2023-11-14T18:20:58.800255705Z`
-- Virtual Size: ~ 138.20 Mb  
+- Image ID: `sha256:c92ab05e2a9aaa1acd79e36333be69ad2c2afa3d963db8a6b69b659aabf088db`
+- Created: `2023-12-14T23:21:45.205663935Z`
+- Virtual Size: ~ 138.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -101,15 +101,15 @@ $ dnf --quiet download --source --url cpio-2.11-28.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/cpio-2.11-28.el7.src.rpm
 ```
 
-### `rpm` package: `curl-7.29.0-59.0.3.el7_9.1.x86_64`
+### `rpm` package: `curl-7.29.0-59.0.3.el7_9.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url curl-7.29.0-59.0.3.el7_9.1
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/curl-7.29.0-59.0.3.el7_9.1.src.rpm
+$ dnf --quiet download --source --url curl-7.29.0-59.0.3.el7_9.2
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/curl-7.29.0-59.0.3.el7_9.2.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.26-24.0.1.el7_9.x86_64`
@@ -366,15 +366,15 @@ $ dnf --quiet download --source --url libattr-2.4.46-13.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/attr-2.4.46-13.el7.src.rpm
 ```
 
-### `rpm` package: `libblkid-2.23.2-65.0.3.el7_9.1.x86_64`
+### `rpm` package: `libblkid-2.23.2-65.0.4.el7_9.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libblkid-2.23.2-65.0.3.el7_9.1
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/util-linux-2.23.2-65.0.3.el7_9.1.src.rpm
+$ dnf --quiet download --source --url libblkid-2.23.2-65.0.4.el7_9.1
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/util-linux-2.23.2-65.0.4.el7_9.1.src.rpm
 ```
 
 ### `rpm` package: `libcap-2.22-11.el7.x86_64`
@@ -410,15 +410,15 @@ $ dnf --quiet download --source --url libcom_err-1.42.9-19.0.1.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/e2fsprogs-1.42.9-19.0.1.el7.src.rpm
 ```
 
-### `rpm` package: `libcurl-7.29.0-59.0.3.el7_9.1.x86_64`
+### `rpm` package: `libcurl-7.29.0-59.0.3.el7_9.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcurl-7.29.0-59.0.3.el7_9.1
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/curl-7.29.0-59.0.3.el7_9.1.src.rpm
+$ dnf --quiet download --source --url libcurl-7.29.0-59.0.3.el7_9.2
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/curl-7.29.0-59.0.3.el7_9.2.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.21-25.el7.x86_64`
@@ -498,15 +498,15 @@ $ dnf --quiet download --source --url libidn-1.28-4.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/libidn-1.28-4.el7.src.rpm
 ```
 
-### `rpm` package: `libmount-2.23.2-65.0.3.el7_9.1.x86_64`
+### `rpm` package: `libmount-2.23.2-65.0.4.el7_9.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libmount-2.23.2-65.0.3.el7_9.1
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/util-linux-2.23.2-65.0.3.el7_9.1.src.rpm
+$ dnf --quiet download --source --url libmount-2.23.2-65.0.4.el7_9.1
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/util-linux-2.23.2-65.0.4.el7_9.1.src.rpm
 ```
 
 ### `rpm` package: `libselinux-2.5-15.el7.x86_64`
@@ -575,15 +575,15 @@ $ dnf --quiet download --source --url libtasn1-4.10-1.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/libtasn1-4.10-1.el7.src.rpm
 ```
 
-### `rpm` package: `libuuid-2.23.2-65.0.3.el7_9.1.x86_64`
+### `rpm` package: `libuuid-2.23.2-65.0.4.el7_9.1.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libuuid-2.23.2-65.0.3.el7_9.1
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/util-linux-2.23.2-65.0.3.el7_9.1.src.rpm
+$ dnf --quiet download --source --url libuuid-2.23.2-65.0.4.el7_9.1
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/util-linux-2.23.2-65.0.4.el7_9.1.src.rpm
 ```
 
 ### `rpm` package: `libverto-0.2.5-4.el7.x86_64`
