@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6dcd2d1a243ffba55351c50ebc0f8013498369d94968ea084aafb3e2cd4c41aa`
-- Created: `2023-11-30T23:43:55.835326265Z`
+- Image ID: `sha256:0688904e9bf82657517697a54616b7a920fb7aded34c1c028dd18b095cc4c19f`
+- Created: `2023-12-12T21:32:21.37407891Z`
 - Virtual Size: ~ 78.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -197,16 +197,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.4.0-r0 description:
+curl-8.5.0-r0 description:
 URL retrival utility and library
 
-curl-8.4.0-r0 webpage:
+curl-8.5.0-r0 webpage:
 https://curl.se/
 
-curl-8.4.0-r0 installed size:
+curl-8.5.0-r0 installed size:
 248 KiB
 
-curl-8.4.0-r0 license:
+curl-8.5.0-r0 license:
 curl
 
 ```
@@ -282,16 +282,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.4.0-r0 description:
+libcurl-8.5.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.4.0-r0 webpage:
+libcurl-8.5.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.4.0-r0 installed size:
+libcurl-8.5.0-r0 installed size:
 584 KiB
 
-libcurl-8.4.0-r0 license:
+libcurl-8.5.0-r0 license:
 curl
 
 ```
