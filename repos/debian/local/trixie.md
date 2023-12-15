@@ -112,20 +112,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:3.1.1-1
-'http://deb.debian.org/debian/pool/main/a/audit/audit_3.1.1-1.dsc' audit_3.1.1-1.dsc 2402 SHA256:61ae8d226039ab2c4c241266c699d22a80a5a85db94dd030cff44ca7a8729bd5
-'http://deb.debian.org/debian/pool/main/a/audit/audit_3.1.1.orig.tar.gz' audit_3.1.1.orig.tar.gz 1218111 SHA256:46e46b37623cce09e6ee134e78d668afc34f4e1c870c853ef12e4193078cfe87
-'http://deb.debian.org/debian/pool/main/a/audit/audit_3.1.1-1.debian.tar.xz' audit_3.1.1-1.debian.tar.xz 18944 SHA256:b16ea47b6562a2530ec48e752ef6f31cd72b5dcdeec49b8720911584a54769cb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/audit/1:3.1.1-1/
 
-- https://sources.debian.net/src/audit/1:3.1.1-1/ (for browsing the source)
-- https://sources.debian.net/src/audit/1:3.1.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/audit/1:3.1.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-files=13`
 
