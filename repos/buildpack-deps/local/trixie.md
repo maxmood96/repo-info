@@ -189,20 +189,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:3.1.1-1
-'http://deb.debian.org/debian/pool/main/a/audit/audit_3.1.1-1.dsc' audit_3.1.1-1.dsc 2402 SHA256:61ae8d226039ab2c4c241266c699d22a80a5a85db94dd030cff44ca7a8729bd5
-'http://deb.debian.org/debian/pool/main/a/audit/audit_3.1.1.orig.tar.gz' audit_3.1.1.orig.tar.gz 1218111 SHA256:46e46b37623cce09e6ee134e78d668afc34f4e1c870c853ef12e4193078cfe87
-'http://deb.debian.org/debian/pool/main/a/audit/audit_3.1.1-1.debian.tar.xz' audit_3.1.1-1.debian.tar.xz 18944 SHA256:b16ea47b6562a2530ec48e752ef6f31cd72b5dcdeec49b8720911584a54769cb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/audit/1:3.1.1-1/
 
-- https://sources.debian.net/src/audit/1:3.1.1-1/ (for browsing the source)
-- https://sources.debian.net/src/audit/1:3.1.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/audit/1:3.1.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `autoconf=2.71-3`
 
@@ -1516,21 +1509,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.78.1-4
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.78.1-4.dsc' glib2.0_2.78.1-4.dsc 3648 SHA256:83726c95a55e9c623b63bdee774a514b6493b1c889356ae0af01eb8056c7bbbb
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.78.1.orig-unicode-data.tar.xz' glib2.0_2.78.1.orig-unicode-data.tar.xz 267604 SHA256:f10f77c45e96ccd4866dad2cb79a314b57180a05929a612dfe86d89e471406b5
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.78.1.orig.tar.xz' glib2.0_2.78.1.orig.tar.xz 5320740 SHA256:915bc3d0f8507d650ead3832e2f8fb670fce59aac4d7754a7dab6f1e6fed78b2
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.78.1-4.debian.tar.xz' glib2.0_2.78.1-4.debian.tar.xz 126452 SHA256:b819f71aa9014dce4026cc32ed3921dccbb937a1aa6309793b86d9426854479c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.78.1-4/
 
-- https://sources.debian.net/src/glib2.0/2.78.1-4/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.78.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.78.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.37-12`
 
@@ -2867,21 +2852,13 @@ Licenses: (parsed from: `/usr/share/doc/libksba8/copyright`)
 - `GPL-3`
 - `LGPL-2.1-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libksba=1.6.4-2
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.4-2.dsc' libksba_1.6.4-2.dsc 2482 SHA256:0fa874c62277bc3183824ab4abfddf37ebd2bc59c3595a8f2fb8d8313fba606f
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.4.orig.tar.bz2' libksba_1.6.4.orig.tar.bz2 668445 SHA256:bbb43f032b9164d86c781ffe42213a83bf4f2fee91455edfa4654521b8b03b6b
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.4.orig.tar.bz2.asc' libksba_1.6.4.orig.tar.bz2.asc 228 SHA256:f6e892a76842f81955f369f628386f5657cdcf4cc3b1b7d911d1168d773e7d87
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.4-2.debian.tar.xz' libksba_1.6.4-2.debian.tar.xz 14652 SHA256:45fed2acfff4735fdb5404e8597f9d129e3ef5500bf656f2c113097d64755493
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libksba/1.6.4-2/
 
-- https://sources.debian.net/src/libksba/1.6.4-2/ (for browsing the source)
-- https://sources.debian.net/src/libksba/1.6.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libksba/1.6.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `liblqr=0.4.2-2.1`
 
@@ -4054,21 +4031,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:10.11.5-3
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.5-3.dsc' mariadb_10.11.5-3.dsc 5305 SHA256:b6db1a61d0fbc5d64bbf07e2e8fac2d615f8566539ae036b8e1c679519b2373d
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.5.orig.tar.gz' mariadb_10.11.5.orig.tar.gz 96193384 SHA256:5be50c6aed5c37db35afc70c0678cf18860f1e78a228fd84e6d7a49583fdf411
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.5.orig.tar.gz.asc' mariadb_10.11.5.orig.tar.gz.asc 833 SHA256:2ba7eea6cc775f7ee67fd06a05f195e5bcc32df88b2b6771b5b32cbdd32b7ca0
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.5-3.debian.tar.xz' mariadb_10.11.5-3.debian.tar.xz 276652 SHA256:9b8d4ce8cf7338ac4122d20d61dd0b443af2a9515acb6fb7f60538b0c42be5da
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb/1:10.11.5-3/
 
-- https://sources.debian.net/src/mariadb/1:10.11.5-3/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:10.11.5-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:10.11.5-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20231102-1`
 
@@ -4378,20 +4347,13 @@ Licenses: (parsed from: `/usr/share/doc/python3-numpy/copyright`)
 - `Public-Domain`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris numpy=1:1.24.2-1
-'http://deb.debian.org/debian/pool/main/n/numpy/numpy_1.24.2-1.dsc' numpy_1.24.2-1.dsc 2462 SHA256:33f8acc8cb64f72787b965e8713dd9dbb4f1dd0d54018fbdcbe99c55aff2541b
-'http://deb.debian.org/debian/pool/main/n/numpy/numpy_1.24.2.orig.tar.xz' numpy_1.24.2.orig.tar.xz 8239412 SHA256:a7c88b0cf7c7c5ea03a76593ce4065af3beb8f50c25db6a7ee72369b2c936c65
-'http://deb.debian.org/debian/pool/main/n/numpy/numpy_1.24.2-1.debian.tar.xz' numpy_1.24.2-1.debian.tar.xz 31632 SHA256:f87ec8c98f283b2d04eef73db7fdffd5c90c35db778dd0ddec04a0aaa15d14ed
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/numpy/1:1.24.2-1/
 
-- https://sources.debian.net/src/numpy/1:1.24.2-1/ (for browsing the source)
-- https://sources.debian.net/src/numpy/1:1.24.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/numpy/1:1.24.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openexr=3.1.5-5.1`
 
