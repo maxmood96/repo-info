@@ -4,26 +4,38 @@
 
 -	[`mysql:5`](#mysql5)
 -	[`mysql:5-oracle`](#mysql5-oracle)
+-	[`mysql:5-oraclelinux7`](#mysql5-oraclelinux7)
 -	[`mysql:5.7`](#mysql57)
 -	[`mysql:5.7-oracle`](#mysql57-oracle)
+-	[`mysql:5.7-oraclelinux7`](#mysql57-oraclelinux7)
 -	[`mysql:5.7.44`](#mysql5744)
 -	[`mysql:5.7.44-oracle`](#mysql5744-oracle)
+-	[`mysql:5.7.44-oraclelinux7`](#mysql5744-oraclelinux7)
 -	[`mysql:8`](#mysql8)
 -	[`mysql:8-oracle`](#mysql8-oracle)
+-	[`mysql:8-oraclelinux8`](#mysql8-oraclelinux8)
 -	[`mysql:8.0`](#mysql80)
+-	[`mysql:8.0-bullseye`](#mysql80-bullseye)
 -	[`mysql:8.0-debian`](#mysql80-debian)
 -	[`mysql:8.0-oracle`](#mysql80-oracle)
+-	[`mysql:8.0-oraclelinux8`](#mysql80-oraclelinux8)
 -	[`mysql:8.0.35`](#mysql8035)
+-	[`mysql:8.0.35-bullseye`](#mysql8035-bullseye)
 -	[`mysql:8.0.35-debian`](#mysql8035-debian)
 -	[`mysql:8.0.35-oracle`](#mysql8035-oracle)
+-	[`mysql:8.0.35-oraclelinux8`](#mysql8035-oraclelinux8)
 -	[`mysql:8.2`](#mysql82)
 -	[`mysql:8.2-oracle`](#mysql82-oracle)
+-	[`mysql:8.2-oraclelinux8`](#mysql82-oraclelinux8)
 -	[`mysql:8.2.0`](#mysql820)
 -	[`mysql:8.2.0-oracle`](#mysql820-oracle)
+-	[`mysql:8.2.0-oraclelinux8`](#mysql820-oraclelinux8)
 -	[`mysql:innovation`](#mysqlinnovation)
 -	[`mysql:innovation-oracle`](#mysqlinnovation-oracle)
+-	[`mysql:innovation-oraclelinux8`](#mysqlinnovation-oraclelinux8)
 -	[`mysql:latest`](#mysqllatest)
 -	[`mysql:oracle`](#mysqloracle)
+-	[`mysql:oraclelinux8`](#mysqloraclelinux8)
 
 ## `mysql:5`
 
@@ -299,6 +311,10 @@ $ docker pull mysql@sha256:b46f7aa9c680644d4233655e3ef5ab3aa1e96ca118000501ab2f1
 		Size: 36.2 KB (36168 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `mysql:5-oraclelinux7`
+
+**does not exist** (yet?)
+
 ## `mysql:5.7`
 
 ```console
@@ -573,6 +589,10 @@ $ docker pull mysql@sha256:b46f7aa9c680644d4233655e3ef5ab3aa1e96ca118000501ab2f1
 		Size: 36.2 KB (36168 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `mysql:5.7-oraclelinux7`
+
+**does not exist** (yet?)
+
 ## `mysql:5.7.44`
 
 ```console
@@ -846,6 +866,10 @@ $ docker pull mysql@sha256:b46f7aa9c680644d4233655e3ef5ab3aa1e96ca118000501ab2f1
 		Last Modified: Thu, 14 Dec 2023 23:51:46 GMT  
 		Size: 36.2 KB (36168 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `mysql:5.7.44-oraclelinux7`
+
+**does not exist** (yet?)
 
 ## `mysql:8`
 
@@ -1353,6 +1377,10 @@ $ docker pull mysql@sha256:c98f729aaaf45c1bd27de95baa1548e137b2f7bed0fd54d4d3c61
 		Size: 33.3 KB (33343 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `mysql:8-oraclelinux8`
+
+**does not exist** (yet?)
+
 ## `mysql:8.0`
 
 ```console
@@ -1617,6 +1645,10 @@ $ docker pull mysql@sha256:93dd96ed5c4dfaad500931c8bd5fef986d4713062b42d2c18bbf1
 		Last Modified: Thu, 14 Dec 2023 20:16:54 GMT  
 		Size: 33.8 KB (33753 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `mysql:8.0-bullseye`
+
+**does not exist** (yet?)
 
 ## `mysql:8.0-debian`
 
@@ -2024,6 +2056,10 @@ $ docker pull mysql@sha256:93dd96ed5c4dfaad500931c8bd5fef986d4713062b42d2c18bbf1
 		Size: 33.8 KB (33753 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `mysql:8.0-oraclelinux8`
+
+**does not exist** (yet?)
+
 ## `mysql:8.0.35`
 
 ```console
@@ -2288,6 +2324,10 @@ $ docker pull mysql@sha256:93dd96ed5c4dfaad500931c8bd5fef986d4713062b42d2c18bbf1
 		Last Modified: Thu, 14 Dec 2023 20:16:54 GMT  
 		Size: 33.8 KB (33753 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `mysql:8.0.35-bullseye`
+
+**does not exist** (yet?)
 
 ## `mysql:8.0.35-debian`
 
@@ -2694,6 +2734,10 @@ $ docker pull mysql@sha256:93dd96ed5c4dfaad500931c8bd5fef986d4713062b42d2c18bbf1
 		Last Modified: Thu, 14 Dec 2023 20:16:54 GMT  
 		Size: 33.8 KB (33753 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `mysql:8.0.35-oraclelinux8`
+
+**does not exist** (yet?)
 
 ## `mysql:8.2`
 
@@ -3201,6 +3245,10 @@ $ docker pull mysql@sha256:c98f729aaaf45c1bd27de95baa1548e137b2f7bed0fd54d4d3c61
 		Size: 33.3 KB (33343 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `mysql:8.2-oraclelinux8`
+
+**does not exist** (yet?)
+
 ## `mysql:8.2.0`
 
 ```console
@@ -3706,6 +3754,10 @@ $ docker pull mysql@sha256:c98f729aaaf45c1bd27de95baa1548e137b2f7bed0fd54d4d3c61
 		Last Modified: Thu, 14 Dec 2023 20:15:05 GMT  
 		Size: 33.3 KB (33343 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `mysql:8.2.0-oraclelinux8`
+
+**does not exist** (yet?)
 
 ## `mysql:innovation`
 
@@ -4213,6 +4265,10 @@ $ docker pull mysql@sha256:c98f729aaaf45c1bd27de95baa1548e137b2f7bed0fd54d4d3c61
 		Size: 33.3 KB (33343 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `mysql:innovation-oraclelinux8`
+
+**does not exist** (yet?)
+
 ## `mysql:latest`
 
 ```console
@@ -4718,3 +4774,7 @@ $ docker pull mysql@sha256:c98f729aaaf45c1bd27de95baa1548e137b2f7bed0fd54d4d3c61
 		Last Modified: Thu, 14 Dec 2023 20:15:05 GMT  
 		Size: 33.3 KB (33343 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `mysql:oraclelinux8`
+
+**does not exist** (yet?)
