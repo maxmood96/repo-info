@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a6ca7b52a41549f13f7de6aeac4ab6ffebd41585fbf2273f00fd6e82bb721949`
-- Created: `2023-11-21T13:23:10.154145666Z`
-- Virtual Size: ~ 168.33 Mb  
+- Image ID: `sha256:e499c02ff073eab9c792e71c456c07489a4bf4ee86c6db754bbd16304858d064`
+- Created: `2023-10-19T11:31:14Z`
+- Virtual Size: ~ 174.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
@@ -1835,11 +1835,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.55-1`
+### `dpkg` source package: `linux=6.1.66-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.55-1`
+- `linux-libc-dev:amd64=6.1.66-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1854,17 +1854,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.55-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.55-1.dsc' linux_6.1.55-1.dsc 290924 SHA256:8760260a25cc7b736da66f077d7c7f54bd69d47c831e56a140c6ebc90ef1de36
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.55.orig.tar.xz' linux_6.1.55.orig.tar.xz 137442320 SHA256:ee357e99de203942c839202449e023d131d516af32734e06501d4814eda1ce47
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.55-1.debian.tar.xz' linux_6.1.55-1.debian.tar.xz 1576156 SHA256:b9b6cd90ec51d67547c3f73b8a92b44ed7ab96cc9986aafdea2803e645ce717b
+$ apt-get source -qq --print-uris linux=6.1.66-1
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.66-1.dsc' linux_6.1.66-1.dsc 290924 SHA256:769e7dae9fe82bc29b55eb606fda6b0cc6221294a2ba3d7e7fcc78de84683f61
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.66.orig.tar.xz' linux_6.1.66.orig.tar.xz 137491816 SHA256:71edfafca7cd8eaae26a8d29c1091bd39cfc2d196de38570b159c94f0d3e1ad5
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.66-1.debian.tar.xz' linux_6.1.66-1.debian.tar.xz 1580256 SHA256:907af29ab9ff38594df378ba5c60619110389b92ba2a09a21adc0382f76e0240
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.55-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.55-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.55-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.66-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.66-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.66-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lua5.2=5.2.4-3`
 
@@ -2013,11 +2013,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.8.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.8.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nghttp2=1.52.0-1`
+### `dpkg` source package: `nghttp2=1.52.0-1+deb12u1`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.52.0-1`
+- `libnghttp2-14:amd64=1.52.0-1+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -2031,7 +2031,7 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nghttp2=1.52.0-1
+$ apt-get source -qq --print-uris nghttp2=1.52.0-1+deb12u1
 'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.52.0-1%2bdeb12u1.dsc' nghttp2_1.52.0-1+deb12u1.dsc 2541 SHA256:5f2e625f4df5c63e64a0b6806e085c994e38462d099bca0d214c7712f55e3133
 'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.52.0.orig.tar.gz' nghttp2_1.52.0.orig.tar.gz 1064232 SHA256:6b71561a9950b4a90fa36aa3160763f1437f3730d7a12434e416aa3f4ab145e0
 'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.52.0-1%2bdeb12u1.debian.tar.xz' nghttp2_1.52.0-1+deb12u1.debian.tar.xz 17412 SHA256:9c3c66fe7d570a2de3c9b746db8ef55d4d1ee2251912e7c94299976b555ca006
@@ -2039,9 +2039,9 @@ $ apt-get source -qq --print-uris nghttp2=1.52.0-1
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/nghttp2/1.52.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.52.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.52.0-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/nghttp2/1.52.0-1+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/nghttp2/1.52.0-1+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nghttp2/1.52.0-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.5.13+dfsg-5`
 
@@ -2247,11 +2247,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre3/2:8.39-15/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre3/2:8.39-15/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.36.0-7`
+### `dpkg` source package: `perl=5.36.0-7+deb12u1`
 
 Binary Packages:
 
-- `perl-base=5.36.0-7`
+- `perl-base=5.36.0-7+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -2286,7 +2286,7 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.36.0-7
+$ apt-get source -qq --print-uris perl=5.36.0-7+deb12u1
 'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0-7%2bdeb12u1.dsc' perl_5.36.0-7+deb12u1.dsc 2918 SHA256:26ddac979ddb41229abc97b19fc2e97cdd840fe1a315e8f829ae1aeb0a1d05c5
 'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0.orig-regen-configure.tar.xz' perl_5.36.0.orig-regen-configure.tar.xz 417784 SHA256:10ac353bc5a933403afe60ed1817e7a456f99bdbcaf80c1cdb0eb3a08ea56d4e
 'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0.orig.tar.xz' perl_5.36.0.orig.tar.xz 13051500 SHA256:0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0
@@ -2295,9 +2295,9 @@ $ apt-get source -qq --print-uris perl=5.36.0-7
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/perl/5.36.0-7/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.36.0-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.36.0-7/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/perl/5.36.0-7+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.36.0-7+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.36.0-7+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpcsvc-proto=1.4.3-1`
 
