@@ -1,7 +1,7 @@
 ## `ibmjava:sfj`
 
 ```console
-$ docker pull ibmjava@sha256:2ba4cddf19b4f169b5a2950c1230d1f1864d2b863a27f07d1eb78b78fe8c751f
+$ docker pull ibmjava@sha256:15ccae960b215b34e11c5b1d190d1dd0b86a30498c382ca3b2e938a297fae03e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -65,53 +65,53 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ### `ibmjava:sfj` - linux; ppc64le
 
 ```console
-$ docker pull ibmjava@sha256:626a5a402a9fae42f138ee190d415c4e07b706787916b49e56564bce1e8e0c99
+$ docker pull ibmjava@sha256:32bee9c666fea26ec3137e8334e1d6a27706b9ae68698ab0120a545f804c21e5
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **106.9 MB (106897055 bytes)**  
+-	Total Size: **106.9 MB (106867229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d4d2b2a2e89fba91a592bb6986d09dee70124d5cb9057497b0eb5ae8022fe164`
+-	Image ID: `sha256:606427288a11a5ecfecf31b5bf3e4a4c1a76872f93dd523cb03bf3c931f50cba`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 05 Oct 2023 07:34:18 GMT
+# Tue, 12 Dec 2023 11:43:51 GMT
 ARG RELEASE
-# Thu, 05 Oct 2023 07:34:19 GMT
+# Tue, 12 Dec 2023 11:43:51 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 05 Oct 2023 07:34:19 GMT
+# Tue, 12 Dec 2023 11:43:52 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 05 Oct 2023 07:34:19 GMT
+# Tue, 12 Dec 2023 11:43:52 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 05 Oct 2023 07:34:22 GMT
-ADD file:595ff761b2778bdc6bb59cbe8ce51c4a247e0f279ccd59a17b5be6cdeac0b4d2 in / 
-# Thu, 05 Oct 2023 07:34:22 GMT
+# Tue, 12 Dec 2023 11:43:55 GMT
+ADD file:bda128b553d54e39b55daceea1f0ad351c73f83835bbf65d10e5af879ce6fee7 in / 
+# Tue, 12 Dec 2023 11:43:56 GMT
 CMD ["/bin/bash"]
-# Fri, 13 Oct 2023 08:13:00 GMT
+# Sat, 16 Dec 2023 10:49:09 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 13 Oct 2023 08:13:25 GMT
+# Sat, 16 Dec 2023 10:49:19 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Nov 2023 19:16:45 GMT
+# Sat, 16 Dec 2023 10:49:20 GMT
 ENV JAVA_VERSION=8.0.8.15
-# Fri, 17 Nov 2023 19:18:10 GMT
+# Sat, 16 Dec 2023 10:51:34 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='e29101d0d3ccb9c91989fe87f557595f4feea873b56cbb40780ed3cc14bc57d1';          YML_FILE='8.0/sfj/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='2374333392f57392aa2c6f688f3ba24004b8c12f3a7008a2a18ba9162e091a29';          YML_FILE='8.0/sfj/linux/ppc64le/index.yml';          ;;        s390)          ESUM='f6009d492ac5f8dd5a51f6a6717ac36b47b26fbec53d931ad651b2078c4a23b8';          YML_FILE='8.0/sfj/linux/s390/index.yml';          ;;        s390x)          ESUM='7f7f2891f14b662369b4a2edb55da09b5d37a7099ed193bb765e2cba8c7d8e9a';          YML_FILE='8.0/sfj/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
-# Fri, 17 Nov 2023 19:18:11 GMT
+# Sat, 16 Dec 2023 10:51:36 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:589c4cce1daa100afadbdbeda96025d02f85c117e0e60b70801af41b4e618668`  
-		Last Modified: Fri, 13 Oct 2023 06:13:20 GMT  
-		Size: 35.7 MB (35682793 bytes)  
+	-	`sha256:7775720178c79208fc0d1b977c06891ef7230f39bc02e948d233c49f8a202fcf`  
+		Last Modified: Sat, 16 Dec 2023 10:35:18 GMT  
+		Size: 35.7 MB (35655287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:904b226304be2a431a19eec30131080b3479f2caad182fbba54f9e23036ee614`  
-		Last Modified: Fri, 13 Oct 2023 08:17:57 GMT  
-		Size: 1.6 MB (1576632 bytes)  
+	-	`sha256:ce051561ba542b8e87f9cc22dc4264c6265f500e2da514d39e82a46b518e4b7e`  
+		Last Modified: Sat, 16 Dec 2023 10:53:35 GMT  
+		Size: 1.6 MB (1574292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5cda39740f128def454a5cb0dfb1c5d4ce16c312f51fceb29f4987a7dff8e6fc`  
-		Last Modified: Fri, 17 Nov 2023 19:19:43 GMT  
-		Size: 69.6 MB (69637630 bytes)  
+	-	`sha256:84b32c95d36b5285e46e5cdce09bbdda44dc340be52401929c63432116fa3ccb`  
+		Last Modified: Sat, 16 Dec 2023 10:54:05 GMT  
+		Size: 69.6 MB (69637650 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ibmjava:sfj` - linux; s390x
