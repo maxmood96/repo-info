@@ -1,7 +1,7 @@
 ## `neurodebian:jammy-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:5457784e334391207ab677b0cf3f53627e22d0c485ab2d86f57ecd632743394d
+$ docker pull neurodebian@sha256:81749d6f6e02ebab02d467e80d7d88ea6cbed6cf29cda5eaf10a7993bd9ba84d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,65 +12,65 @@ $ docker pull neurodebian@sha256:5457784e334391207ab677b0cf3f53627e22d0c485ab2d8
 ### `neurodebian:jammy-non-free` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:a3455e90a5aa9d5c9998bc3a37be7cf5369b718af7ee7c9b564ecbed22548b20
+$ docker pull neurodebian@sha256:2fd21ffe831d7da905d87e689e4d459dc3332f35325b84286eb27a4cf5f6c4ee
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.5 MB (34468016 bytes)**  
+-	Total Size: **34.5 MB (34468022 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f63065acf8814167b9cd4ff77b0929032c0b56e4e3d7d8ef6b439ffd7b2e0595`
+-	Image ID: `sha256:7d00d2ab78b0f1e54b1bdbe7fc8679418d930d3e1bbab0588963c3bfa5e2e1be`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 01 Dec 2023 07:49:48 GMT
+# Tue, 12 Dec 2023 11:38:57 GMT
 ARG RELEASE
-# Fri, 01 Dec 2023 07:49:48 GMT
+# Tue, 12 Dec 2023 11:38:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 01 Dec 2023 07:49:48 GMT
+# Tue, 12 Dec 2023 11:38:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 01 Dec 2023 07:49:48 GMT
+# Tue, 12 Dec 2023 11:38:57 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 01 Dec 2023 07:49:50 GMT
-ADD file:36d444e2cede3abe58191dcf28890b874c0908f5259bf7e8855338555701c4c5 in / 
-# Fri, 01 Dec 2023 07:49:50 GMT
+# Tue, 12 Dec 2023 11:38:59 GMT
+ADD file:2b3b5254f38a790d40e31cb26155609f7fc99ef7bc99eae1e0d67fa9ae605f77 in / 
+# Tue, 12 Dec 2023 11:38:59 GMT
 CMD ["/bin/bash"]
-# Sat, 02 Dec 2023 04:56:02 GMT
+# Sat, 16 Dec 2023 11:31:06 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 02 Dec 2023 04:56:03 GMT
+# Sat, 16 Dec 2023 11:31:08 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver keyserver.ubuntu.com --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Sat, 02 Dec 2023 04:56:04 GMT
+# Sat, 16 Dec 2023 11:31:08 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian jammy main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel jammy main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Sat, 02 Dec 2023 04:56:08 GMT
+# Sat, 16 Dec 2023 11:31:13 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 02 Dec 2023 04:56:13 GMT
+# Sat, 16 Dec 2023 11:31:17 GMT
 RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.d/debian.sources || srcs=/etc/apt/sources.list; sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list; grep -q 'deb .* multiverse$' $srcs || sed -i -e 's,universe *$,universe multiverse,g' $srcs
 ```
 
 -	Layers:
-	-	`sha256:cbe3537751ce03ea42788c2fbe2d5d336180dc2e20472c8cdba8b3224191d101`  
-		Last Modified: Wed, 29 Nov 2023 19:24:54 GMT  
-		Size: 30.4 MB (30446322 bytes)  
+	-	`sha256:3dd181f9be599de628e1bc6d868d517125e07f968824bcf7b7ed8d28ad1026b1`  
+		Last Modified: Tue, 12 Dec 2023 12:46:19 GMT  
+		Size: 30.4 MB (30446577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23a30d7c4f2f7ae3b60a7caa29fb28eb731832e53550feae0e84ce4ab9fbd94d`  
-		Last Modified: Sat, 02 Dec 2023 04:57:12 GMT  
-		Size: 3.8 MB (3766451 bytes)  
+	-	`sha256:b62d44c808e32e3a77cd43373f0a8470fdb06d639ba026de364a97150318d33e`  
+		Last Modified: Sat, 16 Dec 2023 11:32:13 GMT  
+		Size: 3.8 MB (3766320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:501a13fc39e384ff1ceef2ca9ca046d534771c4f49b9ae8ca5afc762eff8ec7f`  
-		Last Modified: Sat, 02 Dec 2023 04:57:11 GMT  
-		Size: 1.8 KB (1764 bytes)  
+	-	`sha256:ef772247763c5df1ee7d344d2f5d647e5f66c098b6331e8091e2d15b0061605f`  
+		Last Modified: Sat, 16 Dec 2023 11:32:12 GMT  
+		Size: 1.8 KB (1767 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c5a174f5ea95939af68bc6f041d05270e19cd8400de87b6f2243e5de35b3a5a`  
-		Last Modified: Sat, 02 Dec 2023 04:57:11 GMT  
-		Size: 248.0 B  
+	-	`sha256:f6d35d7275d528ee79ed8369114469886a50b319ee8c3f716790ab260e219bbb`  
+		Last Modified: Sat, 16 Dec 2023 11:32:12 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad59c640f51d228707b3507fb6a645889853061bc8fe27f81fe2c1fe84036a69`  
-		Last Modified: Sat, 02 Dec 2023 04:57:11 GMT  
-		Size: 253.0 KB (252972 bytes)  
+	-	`sha256:0e4272c56b744309cef303df1ac073c04ce1c74bd45d3797b2325a65636469a8`  
+		Last Modified: Sat, 16 Dec 2023 11:32:13 GMT  
+		Size: 252.9 KB (252855 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d75961e0ac2e09559c05d3e3c3dd469c2c492cdf4b3118ab0700754bc2e71b5d`  
-		Last Modified: Sat, 02 Dec 2023 04:57:19 GMT  
-		Size: 259.0 B  
+	-	`sha256:5b030e3d725500e3908775fbc82436b7e595c244fe95c9a9073fce868a116579`  
+		Last Modified: Sat, 16 Dec 2023 11:32:21 GMT  
+		Size: 257.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `neurodebian:jammy-non-free` - linux; arm64 variant v8
