@@ -1,10 +1,10 @@
-# `neo4j:5.14.0-enterprise-bullseye`
+# `neo4j:5.15.0-enterprise-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5fb77f13c1c06a5573ca6b76f9b0b6dac1b8ca75780013a9db8e8dec26f911f6`
-- Created: `2023-12-02T07:37:19.576356243Z`
-- Virtual Size: ~ 777.94 Mb  
+- Image ID: `sha256:533b7917b12940a260b211c3e2b66303590ce9f520455806ab14857334a2db57`
+- Created: `2023-12-16T14:08:15.222876329Z`
+- Virtual Size: ~ 778.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `NEO4J_SHA256=63e73f347697cab2b2e13b434c71e0116e87d4e11227dba878eb288300f47e7c`
-  - `NEO4J_TARBALL=neo4j-enterprise-5.14.0-unix.tar.gz`
+  - `NEO4J_SHA256=7571340603eca6b15923ba213f90d6460e9622657db955488207c0437fb414fb`
+  - `NEO4J_TARBALL=neo4j-enterprise-5.15.0-unix.tar.gz`
   - `NEO4J_EDITION=enterprise`
   - `NEO4J_HOME=/var/lib/neo4j`
 
