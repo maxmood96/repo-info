@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4e86c119132ecb0dacd90d42961c948b7bb14535f3faa45a7206595d1c4f80dd`
-- Created: `2023-12-08T20:43:34.442207136Z`
+- Image ID: `sha256:29220a79cacc7f2e4a59d9f60eef8bf84df39f34338351b6ef73963c973671d3`
+- Created: `2023-12-16T09:33:54.508255886Z`
 - Virtual Size: ~ 1.78 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -437,12 +437,12 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.debian.tar.xz' coreutils_8.32-4.1ubuntu1.debian.tar.xz 41096 SHA512:74adfa2f2a85af8d7024ad6d13942e915217dcb10e29caa9c314e0a15da6ec019e7aa52ac5351c35ccea1bace7a05c6dc7569b7b0487c8fcd46b3ba42d66d89d
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.14`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.15`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.14`
-- `libcurl4:amd64=7.81.0-1ubuntu1.14`
+- `curl=7.81.0-1ubuntu1.15`
+- `libcurl4:amd64=7.81.0-1ubuntu1.15`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -453,9 +453,15 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.15
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.15.dsc' curl_7.81.0-1ubuntu1.15.dsc 3143 SHA512:be0a3975bb53980499beeed1d2bb1e5dc8b77553a9b7ad9843137ad6ae68d54608af09cd489893c9309d6569a4b6cccd1319486b85a65baac67352957cbf0349
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.15.debian.tar.xz' curl_7.81.0-1ubuntu1.15.debian.tar.xz 73324 SHA512:9573260499a29c6b181d2f67ff7b203a8d024d990cb9d4702dbbb09496ffd3db03bfc27fcabd624d121061114c176d4d982a506dccf27f3643bb4e046fab6c43
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -1044,12 +1050,12 @@ $ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.2.debian.tar.xz' glib2.0_2.72.4-0ubuntu2.2.debian.tar.xz 128540 SHA512:d1f23d47687f1d5689a44d0c43a70d4a35d7a719dc3fa6b0ac516f0b1e4e07ee9be37dcf3671e51387c241b1abc7034f9959ef8ca85c249bcc9a541e93c88cc0
 ```
 
-### `dpkg` source package: `glibc=2.35-0ubuntu3.4`
+### `dpkg` source package: `glibc=2.35-0ubuntu3.5`
 
 Binary Packages:
 
-- `libc-bin=2.35-0ubuntu3.4`
-- `libc6:amd64=2.35-0ubuntu3.4`
+- `libc-bin=2.35-0ubuntu3.5`
+- `libc6:amd64=2.35-0ubuntu3.5`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -1057,9 +1063,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.5.dsc' glibc_2.35-0ubuntu3.5.dsc 8588 SHA512:da416c99f32b05639339c2c86c6aefdd8f7513add5cd215cc35648e3e29563b6ee75888fd932f565ecc4c766fe4c9d35fd0d54d52652a6aa47940ae994f1b126
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.5.debian.tar.xz' glibc_2.35-0ubuntu3.5.debian.tar.xz 927248 SHA512:915755fad61da4595db5fa9076ef68a8e7d930fbab2b7c733624c1c9b1e5905508c12e73e64aff4718c9d8c6d40aacb8a9425def810861ae96df11c714131f95
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -5694,11 +5706,11 @@ $ apt-get source -qq --print-uris npth=1.6-3build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3build2.debian.tar.xz' npth_1.6-3build2.debian.tar.xz 10904 SHA512:426ab3ab9e27b3701d67cde0a4c4040aa9ccac22a0266321824487fe80a118ccd6860b6fa0fb5ca3c46dfa3c20053889fbb51a2e74618065b3aff059a0216c4c
 ```
 
-### `dpkg` source package: `odoo=17.0.20231208`
+### `dpkg` source package: `odoo=17.0.20231215`
 
 Binary Packages:
 
-- `odoo=17.0.20231208`
+- `odoo=17.0.20231215`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -6366,11 +6378,11 @@ $ apt-get source -qq --print-uris python-cffi=1.15.0-1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cffi/python-cffi_1.15.0-1build2.debian.tar.xz' python-cffi_1.15.0-1build2.debian.tar.xz 7228 SHA512:3b41fb0bc166cb1c278f7961c6959078012dee521ffe3c73f77a2f52c0c0a5e3114a2cdbd3e724cd8a5a88266bf527358b821ce7994bb5485659abb5d767406f
 ```
 
-### `dpkg` source package: `python-cryptography=3.4.8-1ubuntu2`
+### `dpkg` source package: `python-cryptography=3.4.8-1ubuntu2.1`
 
 Binary Packages:
 
-- `python3-cryptography=3.4.8-1ubuntu2`
+- `python3-cryptography=3.4.8-1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/python3-cryptography/copyright`)
 
@@ -6381,10 +6393,10 @@ Licenses: (parsed from: `/usr/share/doc/python3-cryptography/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python-cryptography=3.4.8-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_3.4.8-1ubuntu2.dsc' python-cryptography_3.4.8-1ubuntu2.dsc 3116 SHA512:6fc2d1841ea17aa1c92576e05f5826d909da862f367be3d3a98740a2344e55f856c3ed6095edc4d448228bb9dff0255fa6c2bae38139ed6829f055835e927c2e
+$ apt-get source -qq --print-uris python-cryptography=3.4.8-1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_3.4.8-1ubuntu2.1.dsc' python-cryptography_3.4.8-1ubuntu2.1.dsc 3124 SHA512:77a328dcdca80f16555049ee4ea8a7f2e9e9372cfbd7da7540c7e02da57e079f784d9d44556f30ed490689e9daa62c137fe11bed5faee6b6b77b84896f52fa69
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_3.4.8.orig.tar.gz' python-cryptography_3.4.8.orig.tar.gz 546907 SHA512:b0d64a573b488af3e453fc1885bbafb65f8a2260e81cf64830f981589afca0bd7be052a5f5b8ed83dd78d9638da37c680f3705cbf2d47d5b28fb5a5454f1cea5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_3.4.8-1ubuntu2.debian.tar.xz' python-cryptography_3.4.8-1ubuntu2.debian.tar.xz 23456 SHA512:a384682fe4b9d95ad9285e0a8981e85f8d8da9bcc3571ca38600379aa0daaef65fceaebc8ca49d87567c3e104deae4043ca8dce0094f2eb238af9a24bf53dc8f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_3.4.8-1ubuntu2.1.debian.tar.xz' python-cryptography_3.4.8-1ubuntu2.1.debian.tar.xz 24596 SHA512:c6400ede14c6c3cc020648d6105b0cc8152c7e1edbf366c65cebfba96698b14db6262d1e739eca8b56514cc1e033011d69d477968d1152d4b93281d9bcdc07d9
 ```
 
 ### `dpkg` source package: `python-dateutil=2.8.1-6`
@@ -7503,20 +7515,25 @@ $ apt-get source -qq --print-uris sysvinit=3.01-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_3.01-1ubuntu1.debian.tar.xz' sysvinit_3.01-1ubuntu1.debian.tar.xz 131304 SHA512:4c835855b58742480284b17959d54b8ac734466fc87321ddf021b61bb3e38b58aab6d07a7f27f09c0b109b4e442c0dce4d797feccce2884f5b401e13abf73554
 ```
 
-### `dpkg` source package: `tar=1.34+dfsg-1ubuntu0.1.22.04.1`
+### `dpkg` source package: `tar=1.34+dfsg-1ubuntu0.1.22.04.2`
 
 Binary Packages:
 
-- `tar=1.34+dfsg-1ubuntu0.1.22.04.1`
+- `tar=1.34+dfsg-1ubuntu0.1.22.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tar=1.34+dfsg-1ubuntu0.1.22.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.04.2.dsc' tar_1.34+dfsg-1ubuntu0.1.22.04.2.dsc 1829 SHA512:e716a22f84cf0ebc0250a4ebb5d7c1fb5f055470a376c20d37a9378e85535aba8d547b6fe64df17bdedd5130d47647613dd5f2083f93cae934961b1b5ba37077
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg.orig.tar.xz' tar_1.34+dfsg.orig.tar.xz 1981736 SHA512:ec5553c53c4a5f523f872a8095f699c17bf41400fbe2f0f8b45291ccbaf9ac51dea8445c81bd95697f8853c95dcad3250071d23dbbcab857a428ee92e647bde9
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.04.2.debian.tar.xz' tar_1.34+dfsg-1ubuntu0.1.22.04.2.debian.tar.xz 20544 SHA512:9840407a1364154c831665c3f1739c80a84806567fe5ad27ee3ac70f4c18e27d7f2f9e0557b6e2a634ab39449a8fc95b96f1813f5c203df8ece5226a6afe8c7c
+```
 
 ### `dpkg` source package: `tiff=4.3.0-6ubuntu0.7`
 
