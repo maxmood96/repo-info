@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1ff4c47ea1b3607e22cd87c1ea17602119b24f3238697f97363d787282d8ec1b`
+- Image ID: `sha256:a294fbf6d706e197281f5aaf01c4145fc04f968bed288f4efb0b26f4525a58f5`
 - Created: `2023-12-06T20:31:30Z`
 - Virtual Size: ~ 742.44 Mb  
   (total size of all layers on-disk)
@@ -1434,14 +1434,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.23-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.23-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ghostscript=10.0.0~dfsg-11+deb12u2`
+### `dpkg` source package: `ghostscript=10.0.0~dfsg-11+deb12u3`
 
 Binary Packages:
 
-- `ghostscript=10.0.0~dfsg-11+deb12u2`
-- `libgs-common=10.0.0~dfsg-11+deb12u2`
-- `libgs10:amd64=10.0.0~dfsg-11+deb12u2`
-- `libgs10-common=10.0.0~dfsg-11+deb12u2`
+- `ghostscript=10.0.0~dfsg-11+deb12u3`
+- `libgs-common=10.0.0~dfsg-11+deb12u3`
+- `libgs10:amd64=10.0.0~dfsg-11+deb12u3`
+- `libgs10-common=10.0.0~dfsg-11+deb12u3`
 
 Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/libgs-common/copyright`, `/usr/share/doc/libgs10/copyright`, `/usr/share/doc/libgs10-common/copyright`)
 
@@ -1478,17 +1478,17 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ghostscript=10.0.0~dfsg-11+deb12u2
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u2.dsc' ghostscript_10.0.0~dfsg-11+deb12u2.dsc 3019 SHA256:8a42d9e7c037612cd0079f5a3727a8f6bae9c797354046273d8d38b7aedee323
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg.orig.tar.xz' ghostscript_10.0.0~dfsg.orig.tar.xz 26688456 SHA256:67a288151fd88f0d44e165429c48cc85d69b3e4d3765c95e60839a094bfb8df3
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u2.debian.tar.xz' ghostscript_10.0.0~dfsg-11+deb12u2.debian.tar.xz 87996 SHA256:9e84aaa85d25dd525e70724554f68b37011e68c85c2e54119beb414dcce70bf5
+$ apt-get source -qq --print-uris ghostscript=10.0.0~dfsg-11+deb12u3
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u3.dsc' ghostscript_10.0.0~dfsg-11+deb12u3.dsc 3019 SHA256:6da9e8abb548615fe5f7e25c73a065e7dd6bf7a3ad0dd14233ec88b633736dbc
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg.orig.tar.xz' ghostscript_10.0.0~dfsg.orig.tar.xz 26688456 SHA256:67a288151fd88f0d44e165429c48cc85d69b3e4d3765c95e60839a094bfb8df3
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u3.debian.tar.xz' ghostscript_10.0.0~dfsg-11+deb12u3.debian.tar.xz 88540 SHA256:f320ac1c9fbe78d7251c7c727000afdd93f8b91d27b90151e34fee2539014eec
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ghostscript/10.0.0~dfsg-11+deb12u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u3/ (for browsing the source)
+- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ghostscript/10.0.0~dfsg-11+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.74.6-2`
 
