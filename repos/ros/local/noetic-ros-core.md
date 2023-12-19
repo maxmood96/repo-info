@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7fda30041ea1ff3db7e8ab36323c4ad7cce4267f04e24f4256f3e8ac576b1dab`
-- Created: `2023-12-09T03:15:39.845137441Z`
-- Virtual Size: ~ 787.43 Mb  
+- Image ID: `sha256:12e86a2e87f5ee62ba3387862b4bf453b2c08bf22ea33af6e127be70e416ba88`
+- Created: `2023-12-16T09:38:09.141420644Z`
+- Virtual Size: ~ 774.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -870,30 +870,16 @@ $ apt-get source -qq --print-uris glib2.0=2.64.6-1~ubuntu20.04.6
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.6-1%7eubuntu20.04.6.debian.tar.xz' glib2.0_2.64.6-1~ubuntu20.04.6.debian.tar.xz 131188 SHA512:fedbc326b4d0d1eba16f4db8dcccbed8e257f9f7d07e8efac687cf61aa19d014cd06d286abf4a220ee02c2346a766f00173cc4d8b7c20a81e452b5d7d9d5118d
 ```
 
-### `dpkg` source package: `glibc=2.31-0ubuntu9.12`
-
-Binary Packages:
-
-- `libc-bin=2.31-0ubuntu9.12`
-
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
-
-- `GPL-2`
-- `LGPL-2.1`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.14`
 
 Binary Packages:
 
+- `libc-bin=2.31-0ubuntu9.14`
 - `libc-dev-bin=2.31-0ubuntu9.14`
 - `libc6:amd64=2.31-0ubuntu9.14`
 - `libc6-dev:amd64=2.31-0ubuntu9.14`
 
-Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -4179,20 +4165,25 @@ $ apt-get source -qq --print-uris sysvinit=2.96-2.1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.96-2.1ubuntu1.debian.tar.xz' sysvinit_2.96-2.1ubuntu1.debian.tar.xz 128840 SHA256:528041e261c90a957d9794bddb07217c89484d9c76a0279da508baec9684c4e6
 ```
 
-### `dpkg` source package: `tar=1.30+dfsg-7ubuntu0.20.04.3`
+### `dpkg` source package: `tar=1.30+dfsg-7ubuntu0.20.04.4`
 
 Binary Packages:
 
-- `tar=1.30+dfsg-7ubuntu0.20.04.3`
+- `tar=1.30+dfsg-7ubuntu0.20.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tar=1.30+dfsg-7ubuntu0.20.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.4.dsc' tar_1.30+dfsg-7ubuntu0.20.04.4.dsc 1812 SHA512:a771e996dad6c7b2d75336bae73a0c9e52f030a7474bdebe519a9c072819530541ff3200046ddc5277b0204e1eac056ff3679062c182cb28404bdac73da768fa
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg.orig.tar.xz' tar_1.30+dfsg.orig.tar.xz 1883220 SHA512:f9b3843bd4da03f58d6f88de70ecb36b8ac29312714fd2120ff00f17c99e6d77cc82a8f9de348f4c2bdba9a6cc8e8c6c78039b6c14cdee15d68f2517000c36f2
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.4.debian.tar.xz' tar_1.30+dfsg-7ubuntu0.20.04.4.debian.tar.xz 24572 SHA512:942a7fb6e2edb7e50b26b1588219d0a99caf17ff1dfa1748449c3fa84ab8cf3e3e94bafb8334cc3b8397562d6a3ecd57bc0df2ddb2b90644a361fa63426d2982
+```
 
 ### `dpkg` source package: `tinyxml2=7.0.0+dfsg-1build1`
 

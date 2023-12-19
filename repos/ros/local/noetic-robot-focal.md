@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ee7c31f1c94a163ba78e7bd898908d4c8ba416b85244bd23f4fd24f06314ab00`
-- Created: `2023-12-09T03:20:02.44032907Z`
-- Virtual Size: ~ 1.27 Gb  
+- Image ID: `sha256:4b2e0ef7eb7bc61c979bdcd559d8b847bb3f611d14b4c65a38997f4a83dafe21`
+- Created: `2023-12-16T09:40:44.669674579Z`
+- Virtual Size: ~ 1.26 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -323,16 +323,16 @@ $ apt-get source -qq --print-uris bash=5.0-6ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0-6ubuntu1.2.debian.tar.xz' bash_5.0-6ubuntu1.2.debian.tar.xz 75200 SHA512:50de22a6cd140fcb95eca9172e9927a4eeddd90bfbd23072d5e209db1675f331716dfd54ef3281caa7020e3fa1aef9ca7caafc6a8d3067741b1ae41f7dff7724
 ```
 
-### `dpkg` source package: `binutils=2.34-6ubuntu1.6`
+### `dpkg` source package: `binutils=2.34-6ubuntu1.7`
 
 Binary Packages:
 
-- `binutils=2.34-6ubuntu1.6`
-- `binutils-common:amd64=2.34-6ubuntu1.6`
-- `binutils-x86-64-linux-gnu=2.34-6ubuntu1.6`
-- `libbinutils:amd64=2.34-6ubuntu1.6`
-- `libctf-nobfd0:amd64=2.34-6ubuntu1.6`
-- `libctf0:amd64=2.34-6ubuntu1.6`
+- `binutils=2.34-6ubuntu1.7`
+- `binutils-common:amd64=2.34-6ubuntu1.7`
+- `binutils-x86-64-linux-gnu=2.34-6ubuntu1.7`
+- `libbinutils:amd64=2.34-6ubuntu1.7`
+- `libctf-nobfd0:amd64=2.34-6ubuntu1.7`
+- `libctf0:amd64=2.34-6ubuntu1.7`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
 
@@ -340,9 +340,14 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris binutils=2.34-6ubuntu1.7
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.7.dsc' binutils_2.34-6ubuntu1.7.dsc 8521 SHA512:d0fead488cee11212744e91c175d32373b46084157bb261f21ea24c33aa43d3210128f949a960ee1c1d85593085c6739980da25c5cf77ec325303abd41c28d0e
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34.orig.tar.xz' binutils_2.34.orig.tar.xz 21637796 SHA512:2c7976939dcf5e8c5b7374cccd39bfe803b1bec73c6abfa0eb17c24e1942574c6bdb874c66a092a82adc443182eacd8a5a8001c19a76101f0c7ba40c27de0bbd
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.7.debian.tar.xz' binutils_2.34-6ubuntu1.7.debian.tar.xz 165000 SHA512:0b3b0a508d1c9089ea021ff4274d8e674066e210b19c5fca1e43716fc6bd997b6cdf4fbdf42d6f57b80f084f79a2f9ef48d0a28ba7da54b6317b76c80bef9d9c
+```
 
 ### `dpkg` source package: `boost-defaults=1.71.0.0ubuntu2`
 
@@ -1277,30 +1282,16 @@ $ apt-get source -qq --print-uris glib2.0=2.64.6-1~ubuntu20.04.6
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.6-1%7eubuntu20.04.6.debian.tar.xz' glib2.0_2.64.6-1~ubuntu20.04.6.debian.tar.xz 131188 SHA512:fedbc326b4d0d1eba16f4db8dcccbed8e257f9f7d07e8efac687cf61aa19d014cd06d286abf4a220ee02c2346a766f00173cc4d8b7c20a81e452b5d7d9d5118d
 ```
 
-### `dpkg` source package: `glibc=2.31-0ubuntu9.12`
-
-Binary Packages:
-
-- `libc-bin=2.31-0ubuntu9.12`
-
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
-
-- `GPL-2`
-- `LGPL-2.1`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.14`
 
 Binary Packages:
 
+- `libc-bin=2.31-0ubuntu9.14`
 - `libc-dev-bin=2.31-0ubuntu9.14`
 - `libc6:amd64=2.31-0ubuntu9.14`
 - `libc6-dev:amd64=2.31-0ubuntu9.14`
 
-Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -6507,20 +6498,25 @@ $ apt-get source -qq --print-uris sysvinit=2.96-2.1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.96-2.1ubuntu1.debian.tar.xz' sysvinit_2.96-2.1ubuntu1.debian.tar.xz 128840 SHA256:528041e261c90a957d9794bddb07217c89484d9c76a0279da508baec9684c4e6
 ```
 
-### `dpkg` source package: `tar=1.30+dfsg-7ubuntu0.20.04.3`
+### `dpkg` source package: `tar=1.30+dfsg-7ubuntu0.20.04.4`
 
 Binary Packages:
 
-- `tar=1.30+dfsg-7ubuntu0.20.04.3`
+- `tar=1.30+dfsg-7ubuntu0.20.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tar=1.30+dfsg-7ubuntu0.20.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.4.dsc' tar_1.30+dfsg-7ubuntu0.20.04.4.dsc 1812 SHA512:a771e996dad6c7b2d75336bae73a0c9e52f030a7474bdebe519a9c072819530541ff3200046ddc5277b0204e1eac056ff3679062c182cb28404bdac73da768fa
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg.orig.tar.xz' tar_1.30+dfsg.orig.tar.xz 1883220 SHA512:f9b3843bd4da03f58d6f88de70ecb36b8ac29312714fd2120ff00f17c99e6d77cc82a8f9de348f4c2bdba9a6cc8e8c6c78039b6c14cdee15d68f2517000c36f2
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.4.debian.tar.xz' tar_1.30+dfsg-7ubuntu0.20.04.4.debian.tar.xz 24572 SHA512:942a7fb6e2edb7e50b26b1588219d0a99caf17ff1dfa1748449c3fa84ab8cf3e3e94bafb8334cc3b8397562d6a3ecd57bc0df2ddb2b90644a361fa63426d2982
+```
 
 ### `dpkg` source package: `tiff=4.1.0+git191117-2ubuntu0.20.04.11`
 

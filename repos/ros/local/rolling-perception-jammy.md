@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:145023181108edf31685158af15ae7b402e1577ffa8cf999f0db9191938f1e56`
-- Created: `2023-12-09T04:23:24.172804704Z`
-- Virtual Size: ~ 3.08 Gb  
+- Image ID: `sha256:0718394ecbcd8ce13296e31b6308cf467656cdd700dee924fec354b7d5f5f5cc`
+- Created: `2023-12-16T10:04:31.681092905Z`
+- Virtual Size: ~ 3.06 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -534,16 +534,16 @@ $ apt-get source -qq --print-uris bash=5.1-6ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.debian.tar.xz' bash_5.1-6ubuntu1.debian.tar.xz 99652 SHA512:da77655882d0977656b75c750589307c54c7d5dd28b1cfc357d4a474ebf26399a91cfa19c4ba381e0a59a8f115f8381d432e82f2e659cb9bcbebf3fa0cd77bc1
 ```
 
-### `dpkg` source package: `binutils=2.38-4ubuntu2.3`
+### `dpkg` source package: `binutils=2.38-4ubuntu2.4`
 
 Binary Packages:
 
-- `binutils=2.38-4ubuntu2.3`
-- `binutils-common:amd64=2.38-4ubuntu2.3`
-- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.3`
-- `libbinutils:amd64=2.38-4ubuntu2.3`
-- `libctf-nobfd0:amd64=2.38-4ubuntu2.3`
-- `libctf0:amd64=2.38-4ubuntu2.3`
+- `binutils=2.38-4ubuntu2.4`
+- `binutils-common:amd64=2.38-4ubuntu2.4`
+- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.4`
+- `libbinutils:amd64=2.38-4ubuntu2.4`
+- `libctf-nobfd0:amd64=2.38-4ubuntu2.4`
+- `libctf0:amd64=2.38-4ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
 
@@ -551,9 +551,14 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris binutils=2.38-4ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.4.dsc' binutils_2.38-4ubuntu2.4.dsc 8553 SHA512:b72f845ebf6f7c16b8829a750ee9b4c6324bb3ff1b502b82a9af0e3fdde79260a51b4ddd062c5a1a6c4495a9c0c531723184f597fb385e7ef80962cf27f19190
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA512:8bf0b0d193c9c010e0518ee2b2e5a830898af206510992483b427477ed178396cd210235e85fd7bd99a96fc6d5eedbeccbd48317a10f752b7336ada8b2bb826d
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.4.debian.tar.xz' binutils_2.38-4ubuntu2.4.debian.tar.xz 295788 SHA512:413bc2a0b707da7cf716f174103e40cc9832cfa8585029fe05fc87e41aadc5bfcd348f02d3d4581dfcd20131bf4812f26c5d03484dd9f18992d5e12351cc4f83
+```
 
 ### `dpkg` source package: `boost-defaults=1.74.0.3ubuntu7`
 
@@ -1118,11 +1123,11 @@ $ apt-get source -qq --print-uris cppcheck=2.7-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/cppcheck/cppcheck_2.7-1.debian.tar.xz' cppcheck_2.7-1.debian.tar.xz 11868 SHA512:302c38afba279b636be1cdc7ce2a13612fe71a9e56a2e50cf6fa86d6596de17fa0d8132752c98a3e894ea47271f6a92817433c8d432bd6486bd0a77aecbdfa2d
 ```
 
-### `dpkg` source package: `cryptsetup=2:2.4.3-1ubuntu1.1`
+### `dpkg` source package: `cryptsetup=2:2.4.3-1ubuntu1.2`
 
 Binary Packages:
 
-- `libcryptsetup12:amd64=2:2.4.3-1ubuntu1.1`
+- `libcryptsetup12:amd64=2:2.4.3-1ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/libcryptsetup12/copyright`)
 
@@ -1137,9 +1142,14 @@ Licenses: (parsed from: `/usr/share/doc/libcryptsetup12/copyright`)
 - `LGPL-2.1+ with OpenSSL exception`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cryptsetup=2:2.4.3-1ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.4.3-1ubuntu1.2.dsc' cryptsetup_2.4.3-1ubuntu1.2.dsc 3185 SHA512:e987bdb56425df45cd62e11e781bc2eb66ddf49c34f3aaecd7a240ebf351eb137806ab9f45b6cb5621483402f46f20626010b05874b34bdeab77f9f017b59682
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.4.3.orig.tar.gz' cryptsetup_2.4.3.orig.tar.gz 11434956 SHA512:346893db2d0857953470c614e5808c514edd58f0c7c3fb127ce389128a69ca3821ec53d63e19131616a3598b9a373652da74fbf93de2a2662e6c9001fb486f65
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.4.3-1ubuntu1.2.debian.tar.xz' cryptsetup_2.4.3-1ubuntu1.2.debian.tar.xz 142616 SHA512:e465388c68b8d3b8058e1a8c7ae66b878be3e75ec1ff020a0501a0cead878ef1cce058b22438f33f5fcd76843e13fc84439a3f5cb0f7adf525cab760cfe48e46
+```
 
 ### `dpkg` source package: `cups=2.4.1op1-1ubuntu4.7`
 
@@ -2413,31 +2423,16 @@ $ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.2.debian.tar.xz' glib2.0_2.72.4-0ubuntu2.2.debian.tar.xz 128540 SHA512:d1f23d47687f1d5689a44d0c43a70d4a35d7a719dc3fa6b0ac516f0b1e4e07ee9be37dcf3671e51387c241b1abc7034f9959ef8ca85c249bcc9a541e93c88cc0
 ```
 
-### `dpkg` source package: `glibc=2.35-0ubuntu3.4`
-
-Binary Packages:
-
-- `libc-bin=2.35-0ubuntu3.4`
-
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
-
-- `GFDL-1.3`
-- `GPL-2`
-- `LGPL-2.1`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.5`
 
 Binary Packages:
 
+- `libc-bin=2.35-0ubuntu3.5`
 - `libc-dev-bin=2.35-0ubuntu3.5`
 - `libc6:amd64=2.35-0ubuntu3.5`
 - `libc6-dev:amd64=2.35-0ubuntu3.5`
 
-Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
 - `GFDL-1.3`
 - `GPL-2`
@@ -13035,20 +13030,25 @@ $ apt-get source -qq --print-uris sysvinit=3.01-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_3.01-1ubuntu1.debian.tar.xz' sysvinit_3.01-1ubuntu1.debian.tar.xz 131304 SHA512:4c835855b58742480284b17959d54b8ac734466fc87321ddf021b61bb3e38b58aab6d07a7f27f09c0b109b4e442c0dce4d797feccce2884f5b401e13abf73554
 ```
 
-### `dpkg` source package: `tar=1.34+dfsg-1ubuntu0.1.22.04.1`
+### `dpkg` source package: `tar=1.34+dfsg-1ubuntu0.1.22.04.2`
 
 Binary Packages:
 
-- `tar=1.34+dfsg-1ubuntu0.1.22.04.1`
+- `tar=1.34+dfsg-1ubuntu0.1.22.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tar=1.34+dfsg-1ubuntu0.1.22.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.04.2.dsc' tar_1.34+dfsg-1ubuntu0.1.22.04.2.dsc 1829 SHA512:e716a22f84cf0ebc0250a4ebb5d7c1fb5f055470a376c20d37a9378e85535aba8d547b6fe64df17bdedd5130d47647613dd5f2083f93cae934961b1b5ba37077
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg.orig.tar.xz' tar_1.34+dfsg.orig.tar.xz 1981736 SHA512:ec5553c53c4a5f523f872a8095f699c17bf41400fbe2f0f8b45291ccbaf9ac51dea8445c81bd95697f8853c95dcad3250071d23dbbcab857a428ee92e647bde9
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.04.2.debian.tar.xz' tar_1.34+dfsg-1ubuntu0.1.22.04.2.debian.tar.xz 20544 SHA512:9840407a1364154c831665c3f1739c80a84806567fe5ad27ee3ac70f4c18e27d7f2f9e0557b6e2a634ab39449a8fc95b96f1813f5c203df8ece5226a6afe8c7c
+```
 
 ### `dpkg` source package: `tbb=2020.3-1ubuntu3`
 
