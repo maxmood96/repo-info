@@ -1,7 +1,7 @@
 ## `python:slim-bookworm`
 
 ```console
-$ docker pull python@sha256:41487afa4d11d89b3ec37fdfb652ceb2f2db0c19b2259a24b052e5805bc22197
+$ docker pull python@sha256:226853d245ff33de12d1c63a5198cf28d49efb52c8d9afe3651ecae674af585a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -277,19 +277,19 @@ CMD ["python3"]
 ### `python:slim-bookworm` - linux; 386
 
 ```console
-$ docker pull python@sha256:d45aef2c0a87f7e340ad841cbd984f0a22001528aef07100033861fcce646c95
+$ docker pull python@sha256:4bd665c289dea23d5f48b2e967a004e5086735beef0251924628e8db3657691c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.8 MB (48843350 bytes)**  
+-	Total Size: **48.8 MB (48815413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2d185e5b6aff27e6726691a00e450dd6310ceb0116c9fae581bd27b6bf93b51`
+-	Image ID: `sha256:e93b3d1a795e72fa9e4bf56b919dd171fcd48f608a502af76be8c7249d540c33`
 -	Default Command: `["python3"]`
 
 ```dockerfile
-# Tue, 21 Nov 2023 04:39:53 GMT
-ADD file:930e1b9d85b6927c4d3046f7c75de2f3bfc6ec29100c314d0ab2b780ea30e962 in / 
-# Tue, 21 Nov 2023 04:39:53 GMT
+# Tue, 19 Dec 2023 01:39:07 GMT
+ADD file:6f4083d57ea9644b5a827e67b0725087a15aa428272ec223ab968bf8b4623e42 in / 
+# Tue, 19 Dec 2023 01:39:07 GMT
 CMD ["bash"]
 # Fri, 08 Dec 2023 04:49:21 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -318,25 +318,25 @@ CMD ["python3"]
 ```
 
 -	Layers:
-	-	`sha256:c0734eabce8885d8904dbd11b77aa97c2d2b04bc8e2af9e89d47c4bda590dd8e`  
-		Last Modified: Tue, 21 Nov 2023 04:44:34 GMT  
-		Size: 30.2 MB (30164109 bytes)  
+	-	`sha256:8d4aad22fb6a12b8cc7a78d338dfb9bc2bd6d621517b374e446f2915833ea883`  
+		Last Modified: Tue, 19 Dec 2023 01:43:45 GMT  
+		Size: 30.1 MB (30143863 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8102c4750038de6474e21ba207b80bb8be15dbf37f6ef9e462b18c751496cd59`  
-		Last Modified: Wed, 22 Nov 2023 00:58:35 GMT  
-		Size: 3.5 MB (3505438 bytes)  
+	-	`sha256:060842d8471df6b1d7b6679ee7822d1ee69b6796ba62f2b10569646f78bd485f`  
+		Last Modified: Tue, 19 Dec 2023 09:29:40 GMT  
+		Size: 3.5 MB (3503019 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca67c69f2ae5c2dc77de4a93b73d5a7de474086cbe9bc3d0ca7e08ec10a744fc`  
-		Last Modified: Sat, 09 Dec 2023 04:28:36 GMT  
-		Size: 12.2 MB (12213176 bytes)  
+	-	`sha256:370763ac4b739e6e1e4c3cc50825b4608b9d4d80d6aa2d8137d00c4982eb25eb`  
+		Last Modified: Tue, 19 Dec 2023 09:30:43 GMT  
+		Size: 12.2 MB (12209498 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c80a3a0b701f27e08e43acf7c7d8782e8389557ca4d1319b6ff6ed2aca109bdd`  
-		Last Modified: Sat, 09 Dec 2023 04:28:33 GMT  
+	-	`sha256:4039e4f51436b85df5da48e118fe2068fc0b50dbcd6e9508f6d8e35348e60c18`  
+		Last Modified: Tue, 19 Dec 2023 09:30:40 GMT  
 		Size: 245.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7f62ac47546c64a1c4c88ac824a0c3de7c65e65c72c5f8aa6ec50c8043b9413`  
-		Last Modified: Sat, 09 Dec 2023 04:28:34 GMT  
-		Size: 3.0 MB (2960382 bytes)  
+	-	`sha256:d78c26c41a625d4ca805179177f4509d0f1100503c19e46d7895ab07a197803c`  
+		Last Modified: Tue, 19 Dec 2023 09:30:41 GMT  
+		Size: 3.0 MB (2958788 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:slim-bookworm` - linux; ppc64le
