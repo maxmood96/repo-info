@@ -1,7 +1,7 @@
 ## `openjdk:22-jdk-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:19416f503f74d23f778b50990c99c37386f0f5637865991a0be019df6a60cd5f
+$ docker pull openjdk@sha256:caa61932917965554d78fad2c55d86ffad3838526c6b243168a61efe8736670e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -97,23 +97,23 @@ $ docker pull openjdk@sha256:85219c33893aa719fc80fa95d6e54b6a6fff48f869898aa1467
 ### `openjdk:22-jdk-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull openjdk@sha256:b500e3b4a1208640fb50a6e19cbd4dd6c2e8213ff0f6d25119f97e653f3a2b43
+$ docker pull openjdk@sha256:38e9dd5cef45acdbbdc8f8ee473619250a402a681e3440d2d0187412870de82f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **340.6 MB (340575122 bytes)**  
+-	Total Size: **340.6 MB (340575330 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cb79cdba7aaa925c5d3cc9b96606bbf0ae28378ba230c9879c90a323665169e`
+-	Image ID: `sha256:ea3b91b45b610d92e8cbea0957dae8ad96fd68152fe83d93cf8df8ec9a924679`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Tue, 21 Nov 2023 06:27:13 GMT
-ADD file:614987b9855939825ad2383e7bacbf14ea208d74906982bba3a67126702c8371 in / 
-# Tue, 21 Nov 2023 06:27:13 GMT
+# Fri, 15 Dec 2023 19:48:12 GMT
+ADD file:06ba7e39a2f8e1a7bcbb929fa9d1e6fb1f8bdcf5096dc903576af8f7014e353b in / 
+# Fri, 15 Dec 2023 19:48:12 GMT
 CMD ["bash"]
-# Tue, 21 Nov 2023 07:58:54 GMT
+# Fri, 15 Dec 2023 19:48:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 21 Nov 2023 07:59:08 GMT
+# Fri, 15 Dec 2023 19:48:12 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 15 Dec 2023 19:48:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				binutils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/* # buildkit
@@ -132,47 +132,47 @@ CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:bbf382c14c7b19b81c612f639e09e6a7b04eccd4481d0abac48b8ace9faae3b3`  
-		Last Modified: Tue, 21 Nov 2023 06:30:47 GMT  
-		Size: 53.7 MB (53707872 bytes)  
+	-	`sha256:396a672fee8bade1a7c9f228d919717447f110f39046d8b5ed21ad45ae13ab61`  
+		Last Modified: Tue, 19 Dec 2023 01:44:57 GMT  
+		Size: 53.7 MB (53708091 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1e860a4a6ca9e583881322c2e78baef1911e4d61bc607563e8ad9891e2d91f9`  
-		Last Modified: Tue, 21 Nov 2023 08:07:01 GMT  
-		Size: 15.8 MB (15750113 bytes)  
+	-	`sha256:010797996cc86cf2cf7495aebc22e5be7d18a10bde1e11562dbe5283c226c0e9`  
+		Last Modified: Tue, 19 Dec 2023 11:43:17 GMT  
+		Size: 15.8 MB (15750308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1a9d2006a8ea812285a7be34dfc82465b2a592d6217f4d385d373c298de4642`  
-		Last Modified: Tue, 21 Nov 2023 08:07:16 GMT  
-		Size: 54.7 MB (54700129 bytes)  
+	-	`sha256:70092c2a6b382a0cc0bd2adeb187b94d74c8bcf2ceb6f33bb8e4e4e9c6561141`  
+		Last Modified: Tue, 19 Dec 2023 11:43:31 GMT  
+		Size: 54.7 MB (54699871 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ebc85cb84d79c3e3594b521045571bbae857e3a968aea20d3f8da0ccc3b21b10`  
-		Last Modified: Fri, 15 Dec 2023 23:24:25 GMT  
-		Size: 15.5 MB (15527435 bytes)  
+	-	`sha256:c1785a2fc73cfe822cc337a8e52fcdac12a62b315d671510d5ed3cbc4a9e6d32`  
+		Last Modified: Wed, 20 Dec 2023 10:23:15 GMT  
+		Size: 15.5 MB (15527512 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6c656b7ec27e160a2cb2b62d0ac136fef9c27ad26ddbd254cd2ee1d9c815c54`  
-		Last Modified: Sat, 16 Dec 2023 19:18:13 GMT  
-		Size: 200.9 MB (200889573 bytes)  
+	-	`sha256:91bd2210e2def3fc107a48ed977d1f54fcda33143228bae574ed20f21f0743dd`  
+		Last Modified: Wed, 20 Dec 2023 10:27:38 GMT  
+		Size: 200.9 MB (200889548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `openjdk:22-jdk-bullseye` - unknown; unknown
 
 ```console
-$ docker pull openjdk@sha256:47f6fae1574265b860f2ebf0d9b5d5cdd1db9c6965b7c1b357836d951b12943e
+$ docker pull openjdk@sha256:79883fd03b25d017e9d099300ebeac01e829a758ba89c05170f9d6500d4fead2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.1 MB (7062124 bytes)**  
+-	Total Size: **7.1 MB (7062156 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9951c49c68f784fe1c489004210dfe945a85669237e97ec94a8db7dc299fc2c`
+-	Image ID: `sha256:a5be9bada6176e937b1c7a62bdd73abe5c1312e05d498a144e0180bb4cbaa61f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:55c4389b0e8375789b39cf69167177bb5ed00f5c4048d553142e1badee5c75f4`  
-		Last Modified: Sat, 16 Dec 2023 19:18:07 GMT  
-		Size: 7.0 MB (7043700 bytes)  
+	-	`sha256:ba0924952c17f78cf62b30b0b34d8390f379a435c2690ab9aea49d1785be52be`  
+		Last Modified: Wed, 20 Dec 2023 10:27:32 GMT  
+		Size: 7.0 MB (7043732 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:260fc31d3d86e64a7e57801eeb95ed4644c1eedee614939a873c0a65c56388b7`  
-		Last Modified: Sat, 16 Dec 2023 19:18:07 GMT  
+	-	`sha256:944d2664e63862e06fa4a80570a97146d4b23ab2c7cf7380d6a44dd0b1c1b1cf`  
+		Last Modified: Wed, 20 Dec 2023 10:27:32 GMT  
 		Size: 18.4 KB (18424 bytes)  
 		MIME: application/vnd.in-toto+json
