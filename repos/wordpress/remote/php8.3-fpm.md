@@ -1,7 +1,7 @@
 ## `wordpress:php8.3-fpm`
 
 ```console
-$ docker pull wordpress@sha256:9e3383667d75ca58bf083cc5ced957f9af10afbec88ec6a9c5fcdbfa1fee0b1c
+$ docker pull wordpress@sha256:5c8eaf490ba18c69b284f5013e9fa03ac6f1511eecfdde0a3a00f84f1b26eacb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -560,48 +560,48 @@ $ docker pull wordpress@sha256:d5d44139963df2bdd33b8ada71aa13a0652f7566aa2409e86
 ### `wordpress:php8.3-fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull wordpress@sha256:8c8199fbecf84db64f6423456395fb491ef1d33c0b485e21fcc1cfc8f8fba0c8
+$ docker pull wordpress@sha256:af01850b43d2e02ffa4a2c6c972c627d62bd4d7ed5d0df0b70603f5ff4b42cb4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **246.0 MB (245972033 bytes)**  
+-	Total Size: **245.9 MB (245939567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9b8506a281dd103060140168a64a132594a9812a660e9cfd449dc8157a3375b`
+-	Image ID: `sha256:c27f7458dbb8336747cea7224dce3380c171a4fc27273b5d995f070a09e3f28b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Tue, 21 Nov 2023 06:27:06 GMT
-ADD file:869c7d0747a17c53715581a2e862992eb8516c7f45f167821dfa80966a4870d1 in / 
-# Tue, 21 Nov 2023 06:27:06 GMT
+# Wed, 06 Dec 2023 20:31:30 GMT
+ADD file:262fd7bf0bc26e5d2a229fba52626e22b8a93beac29733acfc60e716c26e689d in / 
+# Wed, 06 Dec 2023 20:31:30 GMT
 CMD ["bash"]
-# Tue, 21 Nov 2023 14:00:07 GMT
+# Wed, 06 Dec 2023 20:31:30 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php
-# Tue, 21 Nov 2023 14:00:08 GMT
+# Wed, 06 Dec 2023 20:31:30 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 21 Nov 2023 14:00:23 GMT
+# Wed, 06 Dec 2023 20:31:30 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 21 Nov 2023 14:00:24 GMT
+# Wed, 06 Dec 2023 20:31:30 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 21 Nov 2023 14:00:25 GMT
+# Wed, 06 Dec 2023 20:31:30 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html
-# Tue, 21 Nov 2023 14:00:25 GMT
+# Wed, 06 Dec 2023 20:31:30 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 21 Nov 2023 14:00:25 GMT
+# Wed, 06 Dec 2023 20:31:30 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 21 Nov 2023 14:00:25 GMT
+# Wed, 06 Dec 2023 20:31:30 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 21 Nov 2023 14:00:25 GMT
+# Wed, 06 Dec 2023 20:31:30 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Mon, 27 Nov 2023 20:50:53 GMT
+# Wed, 06 Dec 2023 20:31:30 GMT
 ENV PHP_VERSION=8.3.0
-# Mon, 27 Nov 2023 20:50:54 GMT
+# Wed, 06 Dec 2023 20:31:30 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.0.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.0.tar.xz.asc
-# Mon, 27 Nov 2023 20:50:54 GMT
+# Wed, 06 Dec 2023 20:31:30 GMT
 ENV PHP_SHA256=1db84fec57125aa93638b51bb2b15103e12ac196e2f960f0d124275b2687ea54
-# Mon, 27 Nov 2023 20:51:05 GMT
+# Wed, 06 Dec 2023 20:31:30 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Mon, 27 Nov 2023 20:51:05 GMT
+# Wed, 06 Dec 2023 20:31:30 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
 # Wed, 06 Dec 2023 20:31:30 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
@@ -644,96 +644,96 @@ CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:2c6d21737d8318aa15c4cc838475029a5efc36c0429e3d8da80d97d0b96d9aaf`  
-		Last Modified: Tue, 21 Nov 2023 06:30:30 GMT  
-		Size: 29.2 MB (29179277 bytes)  
+	-	`sha256:24e221e92a36ab5b0075dd156b4f2ff095532a9b0927946cf6070bb1bea208b8`  
+		Last Modified: Tue, 19 Dec 2023 01:44:38 GMT  
+		Size: 29.2 MB (29157269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92f459fbdcda04d1eefe3ddbdd0fced7d3e294226fdd1f422f0605cbdc13cede`  
-		Last Modified: Tue, 21 Nov 2023 16:35:12 GMT  
+	-	`sha256:a3e96785d20e673831d412d2f9b010766cf6cc304754506c9f319a0c310648a0`  
+		Last Modified: Tue, 19 Dec 2023 06:09:15 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f47c20ea5e2ac0c311dad37ac3196272e470d76b89225c64210f1e8e0cffd87f`  
-		Last Modified: Tue, 21 Nov 2023 16:35:23 GMT  
-		Size: 98.1 MB (98131989 bytes)  
+	-	`sha256:938e1c871e0583217541b555fdb548e900c71ae825a7b19ce7a08b9263ad1e06`  
+		Last Modified: Tue, 19 Dec 2023 06:09:26 GMT  
+		Size: 98.1 MB (98126940 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1dc98159c6c08d2ac4a93193df61324117e3d5aeae8bce8f7d8cb3a4569616b3`  
-		Last Modified: Tue, 21 Nov 2023 16:35:12 GMT  
-		Size: 271.0 B  
+	-	`sha256:c628ed3e4c42b1a141608f9c9e2b48f01921e2ad6dc5ae8821b194a014a954c6`  
+		Last Modified: Tue, 19 Dec 2023 06:09:15 GMT  
+		Size: 273.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c58f9b317b86c37655938f80396e0ccef05e57f8398162e0daa84861ff4d209d`  
-		Last Modified: Mon, 27 Nov 2023 23:35:09 GMT  
-		Size: 12.7 MB (12746699 bytes)  
+	-	`sha256:1f352ee2fff18f7045497270c9580d7a4a58b98cc0fc57249337f7652d563fa5`  
+		Last Modified: Tue, 19 Dec 2023 06:11:53 GMT  
+		Size: 12.7 MB (12745118 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a90e6b079301241bc88a1b1dc22d8da754eb210083dd04970b55e20052b8574a`  
-		Last Modified: Mon, 27 Nov 2023 23:35:08 GMT  
-		Size: 492.0 B  
+	-	`sha256:20975fc77d18cbb6ba94e8cf81c4127a87cbd6600243747b6206f2b107a3ba90`  
+		Last Modified: Tue, 19 Dec 2023 06:11:52 GMT  
+		Size: 489.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b98589a332d062beb79d91fe9f32a23838713ecfcebb99d1a1429ef0785c69e4`  
-		Last Modified: Sat, 16 Dec 2023 05:59:22 GMT  
-		Size: 28.0 MB (27987462 bytes)  
+	-	`sha256:52fcdaff592b02435e5fb4aabb0e0a6f6349c5e0b74ad772125598f0b6dd9ff0`  
+		Last Modified: Tue, 19 Dec 2023 06:13:02 GMT  
+		Size: 28.0 MB (27986034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c6762a7738de6266b242089ec42cc661564236e2a5ec8880a841025d69284ce`  
-		Last Modified: Sat, 16 Dec 2023 05:59:19 GMT  
-		Size: 2.5 KB (2452 bytes)  
+	-	`sha256:00b1d022666f9d909fa72160598ec81a1c483a14a155e32111d88fde696775ed`  
+		Last Modified: Tue, 19 Dec 2023 06:12:59 GMT  
+		Size: 2.5 KB (2451 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bc723c156ffa3b6db393f7b5d69a138cc094078047af11d5d94920a46e9c149`  
-		Last Modified: Sat, 16 Dec 2023 05:59:19 GMT  
-		Size: 246.0 B  
+	-	`sha256:d5c92b353e8cbcba7f1558055b19065ef7ae4e40db81e8bee3e12515e361889a`  
+		Last Modified: Tue, 19 Dec 2023 06:12:59 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eca3a8df6203b48f59a1eda8448625f1a94711ec3b1364b030929d585ee4b1d2`  
-		Last Modified: Sat, 16 Dec 2023 05:59:19 GMT  
+	-	`sha256:129521d9621c3e7cf51746daa8fe7de91c80d2abf51898586422417e349ffaea`  
+		Last Modified: Tue, 19 Dec 2023 06:12:58 GMT  
 		Size: 9.2 KB (9182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d45d8299e6d37c8505e0897ebe5a3cec56e6435e7743665a7bfc048f04c98d3`  
-		Last Modified: Sat, 16 Dec 2023 23:13:38 GMT  
-		Size: 26.3 MB (26290348 bytes)  
+	-	`sha256:cf528a3bb3975c770441c4779ce204e20f8800910583089efa852a62f5fd2dc9`  
+		Last Modified: Wed, 20 Dec 2023 12:11:34 GMT  
+		Size: 26.3 MB (26287950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0dfe3ffa4598cd1d5f4b2e01a4220eb6da5f5e8dc7fd97d1e12c7bef1c7d2192`  
-		Last Modified: Sat, 16 Dec 2023 23:13:38 GMT  
-		Size: 27.3 MB (27312753 bytes)  
+	-	`sha256:df526e49125b8b443742c47b6d0c81c5f67045283aa39278f048b111e5fe6318`  
+		Last Modified: Wed, 20 Dec 2023 12:11:34 GMT  
+		Size: 27.3 MB (27312764 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e07e7aa389f99fdc859569666dd294cf8344bcf79856f0c5590e9b59915f853d`  
-		Last Modified: Sat, 16 Dec 2023 23:13:37 GMT  
-		Size: 362.0 B  
+	-	`sha256:fafae6fabf1f551c8ce5d97ec65362045b8b4e8477d7d7df9cb145c77fe9d554`  
+		Last Modified: Wed, 20 Dec 2023 12:11:33 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da209c0bff688a4da84b3dbd44853237e3617a2d5c51109e8da00cab01924add`  
-		Last Modified: Sat, 16 Dec 2023 23:13:37 GMT  
-		Size: 394.0 B  
+	-	`sha256:e294f2ea4dc94a17bb82292bbfcb40ba1e48608923269238f960d0a120154e5b`  
+		Last Modified: Wed, 20 Dec 2023 12:11:33 GMT  
+		Size: 395.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f6af71dca6867eedb158884b5066de74d4c3bac342aa386368c19e3cf4589887`  
-		Last Modified: Sat, 16 Dec 2023 23:13:39 GMT  
-		Size: 24.3 MB (24305793 bytes)  
+	-	`sha256:14dd0088fb8e980363daf6576717b5be6225d13dd88e1a9cdffb3dbc5cc86647`  
+		Last Modified: Wed, 20 Dec 2023 12:11:35 GMT  
+		Size: 24.3 MB (24305781 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7386afe3a9d34e1b9a2a8d5e4385d797ea350f69766cb073d197b27c13516096`  
-		Last Modified: Sat, 16 Dec 2023 23:13:38 GMT  
-		Size: 2.4 KB (2354 bytes)  
+	-	`sha256:8cb575df9ce8636f53d9b839c1b2f6b063c331a42abe2e6eb5c4cee27aaab448`  
+		Last Modified: Wed, 20 Dec 2023 12:11:34 GMT  
+		Size: 2.4 KB (2351 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:56cc8ea25310dad5a48e49c053304ae8735df894fead4665edf43e8580662179`  
-		Last Modified: Sat, 16 Dec 2023 23:13:39 GMT  
+	-	`sha256:5be97ff086c2edeaff347833378f88e629c9998aa2654d92830c4545db3efae6`  
+		Last Modified: Wed, 20 Dec 2023 12:11:35 GMT  
 		Size: 1.7 KB (1734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `wordpress:php8.3-fpm` - unknown; unknown
 
 ```console
-$ docker pull wordpress@sha256:a4a61efed28c2e7c4f109d75e4688edcd561120f45975ab24e3b910cba2a3aed
+$ docker pull wordpress@sha256:8fbd75e59c0419c5ee29e7429109ca3851d9f7fe6fb6875876701870fcf560cc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.5 MB (7470936 bytes)**  
+-	Total Size: **7.5 MB (7471080 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06f5d4cfe90d014456aecce4f39af61dd07d1521bd65518774d6142674cf6b7a`
+-	Image ID: `sha256:618d6e1ac19f9ba386b946b4509e74997b44ee7074ec582f3b56dd41211286ac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0fe2c0cc60d2d9ea729907c7196e68a7d7f4c0c919b9a9bdb302bc659e3f33eb`  
-		Last Modified: Sat, 16 Dec 2023 23:13:37 GMT  
-		Size: 7.4 MB (7426036 bytes)  
+	-	`sha256:19cc894560aa1d79223552a8ca813750d2ba26d137d3b0949ae1dc4a6956563c`  
+		Last Modified: Wed, 20 Dec 2023 12:11:33 GMT  
+		Size: 7.4 MB (7426180 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:944b659152368efa7fb578ca5419bf6a4cf00c0897a517db3225fe6932d21cd1`  
-		Last Modified: Sat, 16 Dec 2023 23:13:36 GMT  
+	-	`sha256:78e14f236d544cad08475aef9a80b9d155f81aa1a2df0dd80a9ff9d39456ba3f`  
+		Last Modified: Wed, 20 Dec 2023 12:11:32 GMT  
 		Size: 44.9 KB (44900 bytes)  
 		MIME: application/vnd.in-toto+json
 
