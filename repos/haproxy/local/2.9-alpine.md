@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:01703f7fe5b7ed0287aef044a89e3f20f07888ac2b41af3ecabb9df51fc7e2b8`
-- Created: `2023-12-15T18:13:27Z`
-- Virtual Size: ~ 25.23 Mb  
+- Image ID: `sha256:b6644dc142605dc8cf480a19f76df4d40217e106537bff5ceca3b43342e16d06`
+- Created: `2023-12-21T07:56:45Z`
+- Virtual Size: ~ 25.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -119,6 +119,23 @@ GPL-2.0-only
 
 ```
 
+### `apk` package: `ca-certificates`
+
+```console
+ca-certificates-20230506-r0 description:
+Common CA certificates PEM files from Mozilla
+
+ca-certificates-20230506-r0 webpage:
+https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
+
+ca-certificates-20230506-r0 installed size:
+688 KiB
+
+ca-certificates-20230506-r0 license:
+MPL-2.0 AND MIT
+
+```
+
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
@@ -187,19 +204,19 @@ Apache-2.0
 
 ```
 
-### `apk` package: `lua5.3-libs`
+### `apk` package: `lua5.4-libs`
 
 ```console
-lua5.3-libs-5.3.6-r6 description:
+lua5.4-libs-5.4.6-r1 description:
 Lua dynamic library runtime
 
-lua5.3-libs-5.3.6-r6 webpage:
+lua5.4-libs-5.4.6-r1 webpage:
 https://www.lua.org/
 
-lua5.3-libs-5.3.6-r6 installed size:
-208 KiB
+lua5.4-libs-5.4.6-r1 installed size:
+236 KiB
 
-lua5.3-libs-5.3.6-r6 license:
+lua5.4-libs-5.4.6-r1 license:
 MIT
 
 ```

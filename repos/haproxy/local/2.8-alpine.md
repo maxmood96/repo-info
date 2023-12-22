@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:13d3171e5db3532293b2ded1a75f955b44a3efcccc19b90827b8c1e1eebe085b`
-- Created: `2023-12-09T15:23:20Z`
-- Virtual Size: ~ 24.61 Mb  
+- Image ID: `sha256:f80a44070fa3fe2971ad55c52ec1a18d8398d93f00e4fa4e7f95d4e62c8e1cb8`
+- Created: `2023-12-21T07:56:45Z`
+- Virtual Size: ~ 25.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -116,6 +116,23 @@ busybox-binsh-1.36.1-r15 installed size:
 
 busybox-binsh-1.36.1-r15 license:
 GPL-2.0-only
+
+```
+
+### `apk` package: `ca-certificates`
+
+```console
+ca-certificates-20230506-r0 description:
+Common CA certificates PEM files from Mozilla
+
+ca-certificates-20230506-r0 webpage:
+https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
+
+ca-certificates-20230506-r0 installed size:
+688 KiB
+
+ca-certificates-20230506-r0 license:
+MPL-2.0 AND MIT
 
 ```
 
