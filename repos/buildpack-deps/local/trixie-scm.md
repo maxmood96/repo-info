@@ -697,19 +697,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.22.1
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.1.dsc' dpkg_1.22.1.dsc 3041 SHA256:cf386e2b809b470e3a06fde62928e1603967203a9db464d3622b13f3b15d4142
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.1.tar.xz' dpkg_1.22.1.tar.xz 5584944 SHA256:5a4824e9869494e501953c7466ab1960a7fa23d9b0b911b8a6f113094e0226cf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dpkg/1.22.1/
 
-- https://sources.debian.net/src/dpkg/1.22.1/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.22.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.22.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.47.0-2`
 
@@ -2110,21 +2104,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=6.5.3-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.5.3-1.dsc' mercurial_6.5.3-1.dsc 2806 SHA256:cc0a63ef67375e4868cfcef83659384220f601ac53ed947e1fd3defdf79843d7
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.5.3.orig.tar.gz' mercurial_6.5.3.orig.tar.gz 8235306 SHA256:2cdc81fade129cf56b128417527f190ba72fd776567394ce54eed764e667e7d5
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.5.3.orig.tar.gz.asc' mercurial_6.5.3.orig.tar.gz.asc 659 SHA256:6c5baf4f73e11b855cf3a0f1badc2d750d23a9ba7d7e1c9cfbb6449babc50d8e
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.5.3-1.debian.tar.xz' mercurial_6.5.3-1.debian.tar.xz 69264 SHA256:ad0bfb76db1aaf5ec0cef9219165300d9bfab740f07accfe62728f3db18ffd95
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/6.5.3-1/
 
-- https://sources.debian.net/src/mercurial/6.5.3-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/6.5.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/6.5.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.4+20231209-1`
 
@@ -2986,20 +2972,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.08-3
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08-3.dsc' sysvinit_3.08-3.dsc 2359 SHA256:d2a262316ce2a141b46f21c4cbaa0a9308fd8de47fb1a61eba8ea17eca52006e
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08.orig.tar.gz' sysvinit_3.08.orig.tar.gz 513674 SHA256:325e42ae4ae5ae3e4d989e0604aeb5e4eae5f3ee21e401db3c79000718f8c836
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08-3.debian.tar.xz' sysvinit_3.08-3.debian.tar.xz 137976 SHA256:56d9e48a636ddb13f0bdba837692020f39501605b378142416a7848725075d28
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.08-3/
 
-- https://sources.debian.net/src/sysvinit/3.08-3/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.08-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.08-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.34+dfsg-1.2`
 

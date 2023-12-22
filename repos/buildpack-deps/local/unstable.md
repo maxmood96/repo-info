@@ -4626,21 +4626,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.5p1-2
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.5p1-2.dsc' openssh_9.5p1-2.dsc 3334 SHA256:88241cd09d4f734153e747f37d6b1c771e128427d7a30af5c5ee7b00baf7a864
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.5p1.orig.tar.gz' openssh_9.5p1.orig.tar.gz 1843001 SHA256:f026e7b79ba7fb540f75182af96dc8a8f1db395f922bbc9f6ca603672686086b
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.5p1.orig.tar.gz.asc' openssh_9.5p1.orig.tar.gz.asc 833 SHA256:88d3935af9dc82fcb34f5c7c7f226e6b750c0859452b691166be0d626d471d31
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.5p1-2.debian.tar.xz' openssh_9.5p1-2.debian.tar.xz 185912 SHA256:3eb368a5795fa7b0b28acc567aa6aeeff565466eff9178434cd3692a7699525a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:9.5p1-2/
 
-- https://sources.debian.net/src/openssh/1:9.5p1-2/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:9.5p1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:9.5p1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.1.4-2`
 
@@ -4694,21 +4686,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `customFSFUL`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.25.3-3
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.3-3.dsc' p11-kit_0.25.3-3.dsc 2538 SHA256:e2e41ddc478f041c6d38a6fc236eaa74eaf79c1764911642ec91564ad7dc9954
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.3.orig.tar.xz' p11-kit_0.25.3.orig.tar.xz 991528 SHA256:d8ddce1bb7e898986f9d250ccae7c09ce14d82f1009046d202a0eb1b428b2adc
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.3.orig.tar.xz.asc' p11-kit_0.25.3.orig.tar.xz.asc 228 SHA256:91fb1fd7690b953eb32bf9ca52ae1b2466457539ac849468f1d236673b354860
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.3-3.debian.tar.xz' p11-kit_0.25.3-3.debian.tar.xz 24460 SHA256:98966bdf9fbb5f75d90ea2dacb72679be4efbda4f1765bc0c4bcbf8dea15d97d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.25.3-3/
 
-- https://sources.debian.net/src/p11-kit/0.25.3-3/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.25.3-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.25.3-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.5.2-9.1`
 
@@ -5632,20 +5616,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.34+dfsg-1.3
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.34%2bdfsg-1.3.dsc' tar_1.34+dfsg-1.3.dsc 2153 SHA256:08b826edb87483523f434edbad7f550debfbf6869be5f44c73c36959e6990c71
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.34%2bdfsg.orig.tar.xz' tar_1.34+dfsg.orig.tar.xz 1981736 SHA256:7d57029540cb928394defb3b377b3531237c947e795b51aa8acac0c5ba0e4844
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.34%2bdfsg-1.3.debian.tar.xz' tar_1.34+dfsg-1.3.debian.tar.xz 21096 SHA256:acc730204e3d1a690ce80e8df208bf7b74a41ba13a2138aa056b78f1e6e38716
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tar/1.34+dfsg-1.3/
 
-- https://sources.debian.net/src/tar/1.34+dfsg-1.3/ (for browsing the source)
-- https://sources.debian.net/src/tar/1.34+dfsg-1.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tar/1.34+dfsg-1.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tiff=4.5.1+git230720-3`
 
