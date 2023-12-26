@@ -1873,21 +1873,13 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 - `permissive-nowarranty`
 - `probably-PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.4.5-0.1
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.5-0.1.dsc' xz-utils_5.4.5-0.1.dsc 2451 SHA256:a36c69a0ffb0cc96aa57bfb0e4c8af2d9c32457b508adb374c494a5f3be8514d
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.5.orig.tar.xz' xz-utils_5.4.5.orig.tar.xz 1680520 SHA256:da9dec6c12cf2ecf269c31ab65b5de18e8e52b96f35d5bcd08c12b43e6878803
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.5.orig.tar.xz.asc' xz-utils_5.4.5.orig.tar.xz.asc 833 SHA256:1fbf414df852daab603ad43a57348e4e5fc20c95ce10be16c433ee7c5e1da69b
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.5-0.1.debian.tar.xz' xz-utils_5.4.5-0.1.debian.tar.xz 26744 SHA256:0c540e623d1cbb6a17cce50f2e2966438cae64de4aa50eec91adfd953838eead
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/xz-utils/5.4.5-0.1/
 
-- https://sources.debian.net/src/xz-utils/5.4.5-0.1/ (for browsing the source)
-- https://sources.debian.net/src/xz-utils/5.4.5-0.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xz-utils/5.4.5-0.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.2.13.dfsg-3`
 
