@@ -4254,39 +4254,84 @@ CMD ["pypy"]
 
 ## `pypy:2-7.3.14`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2-7.3.14-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2-7.3.14-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2-7.3.14-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2-7.3.14-slim-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2-7.3.14-slim-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2-7.3.14-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2-7.3.14-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2-7.3.14-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2-bookworm`
 
@@ -9753,39 +9798,84 @@ CMD ["pypy"]
 
 ## `pypy:2.7-7.3.14`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2.7-7.3.14-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2.7-7.3.14-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2.7-7.3.14-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2.7-7.3.14-slim-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2.7-7.3.14-slim-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2.7-7.3.14-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2.7-7.3.14-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2.7-7.3.14-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2.7-bookworm`
 
@@ -15168,39 +15258,84 @@ CMD ["pypy"]
 
 ## `pypy:3-7.3.14`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3-7.3.14-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3-7.3.14-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3-7.3.14-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3-7.3.14-slim-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3-7.3.14-slim-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3-7.3.14-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3-7.3.14-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3-7.3.14-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3-bookworm`
 
@@ -20559,39 +20694,84 @@ CMD ["pypy"]
 
 ## `pypy:3.10-7.3.14`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.10-7.3.14-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.10-7.3.14-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.10-7.3.14-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.10-7.3.14-slim-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.10-7.3.14-slim-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.10-7.3.14-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.10-7.3.14-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.10-7.3.14-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.10-bookworm`
 
@@ -25950,39 +26130,84 @@ CMD ["pypy"]
 
 ## `pypy:3.9-7.3.14`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.9-7.3.14-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.9-7.3.14-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.9-7.3.14-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.9-7.3.14-slim-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.9-7.3.14-slim-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.9-7.3.14-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.9-7.3.14-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.9-7.3.14-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.9-bookworm`
 
