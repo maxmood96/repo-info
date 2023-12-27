@@ -85,15 +85,13 @@ Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris attr=1:2.5.1-4
-'http://http.debian.net/debian/pool/main/a/attr/attr_2.5.1-4.dsc' attr_2.5.1-4.dsc 2477 SHA256:0e1486bff1649602cb5cbb6224dbb641436dc8cd28d5c336ad85d650e07d23dd
-'http://http.debian.net/debian/pool/main/a/attr/attr_2.5.1.orig.tar.xz' attr_2.5.1.orig.tar.xz 318188 SHA256:db448a626f9313a1a970d636767316a8da32aede70518b8050fa0de7947adc32
-'http://http.debian.net/debian/pool/main/a/attr/attr_2.5.1.orig.tar.xz.asc' attr_2.5.1.orig.tar.xz.asc 833 SHA256:67bc632e754efbadba846d0b40138b3fc3e306c3b909a9ba868c6dba1e2689d0
-'http://http.debian.net/debian/pool/main/a/attr/attr_2.5.1-4.debian.tar.xz' attr_2.5.1-4.debian.tar.xz 32152 SHA256:aea02a3c980a82804a5a333bf02e9e2737a8c5808671625595511290863d6791
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/attr/1:2.5.1-4/
+
 
 ### `dpkg` source package: `audit=1:3.1.2-1`
 
@@ -551,9 +549,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris debconf=1.5.82
-'http://http.debian.net/debian/pool/main/d/debconf/debconf_1.5.82.dsc' debconf_1.5.82.dsc 2035 SHA256:ed6e8cc6e073344a25ab932602b3b814f25cfa1a7bfd69e464f9bad65f250dea
-'http://http.debian.net/debian/pool/main/d/debconf/debconf_1.5.82.tar.xz' debconf_1.5.82.tar.xz 571540 SHA256:2d0550c4e2fb98d12055b245907978b28ee2d2b07b62e46be7523384d2ce985e
+'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.82.dsc' debconf_1.5.82.dsc 2035 SHA256:ed6e8cc6e073344a25ab932602b3b814f25cfa1a7bfd69e464f9bad65f250dea
+'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.82.tar.xz' debconf_1.5.82.tar.xz 571540 SHA256:2d0550c4e2fb98d12055b245907978b28ee2d2b07b62e46be7523384d2ce985e
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/debconf/1.5.82/ (for browsing the source)
+- https://sources.debian.net/src/debconf/1.5.82/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/debconf/1.5.82/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2023.4`
 
@@ -1139,14 +1143,13 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `custom-sil-open-font-license`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.14-1
-'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.14-1.dsc' graphite2_1.3.14-1.dsc 2608 SHA256:3a622b8aa7d693d6d60d3cd29b49a7d9d7873ea6089cb52ce7a223261e605152
-'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.14.orig.tar.gz' graphite2_1.3.14.orig.tar.gz 6629829 SHA256:7a3b342c5681921ce2e0c2496509d30b5b078399d5a7bd2358f95166d57d91df
-'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.14-1.debian.tar.xz' graphite2_1.3.14-1.debian.tar.xz 12068 SHA256:94d584e6c748fa7e2f851c3bb39cb2cdb437b4f91d1d636f3d842357724cd9bd
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/graphite2/1.3.14-1/
+
 
 ### `dpkg` source package: `grep=3.11-3`
 
@@ -1557,10 +1560,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libcap-ng=0.8.3-3
-'http://http.debian.net/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.3-3.dsc' libcap-ng_0.8.3-3.dsc 1644 SHA256:fb95248570a9525dc705b02ba972f482e7c276dc5886356a228fbd3f02ae4931
-'http://http.debian.net/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.3.orig.tar.gz' libcap-ng_0.8.3.orig.tar.gz 455383 SHA256:bed6f6848e22bb2f83b5f764b2aef0ed393054e803a8e3a8711cb2a39e6b492d
-'http://http.debian.net/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.3-3.debian.tar.xz' libcap-ng_0.8.3-3.debian.tar.xz 10464 SHA256:47e2f032307279eae0f2febafb2079101f7c213beac630d167f7766c2a0a0346
+'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.3-3.dsc' libcap-ng_0.8.3-3.dsc 1644 SHA256:fb95248570a9525dc705b02ba972f482e7c276dc5886356a228fbd3f02ae4931
+'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.3.orig.tar.gz' libcap-ng_0.8.3.orig.tar.gz 455383 SHA256:bed6f6848e22bb2f83b5f764b2aef0ed393054e803a8e3a8711cb2a39e6b492d
+'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.3-3.debian.tar.xz' libcap-ng_0.8.3-3.debian.tar.xz 10464 SHA256:47e2f032307279eae0f2febafb2079101f7c213beac630d167f7766c2a0a0346
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libcap-ng/0.8.3-3/ (for browsing the source)
+- https://sources.debian.net/src/libcap-ng/0.8.3-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libcap-ng/0.8.3-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap2=1:2.66-4`
 
@@ -2403,20 +2412,13 @@ Licenses: (parsed from: `/usr/share/doc/littler/copyright`, `/usr/share/doc/r-cr
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris littler=0.3.18-2
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.18-2.dsc' littler_0.3.18-2.dsc 1874 SHA256:2f8f377a8aa19a966e6119aa825b29dbaf9cac6dc51b701a2b5eb48633156263
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.18.orig.tar.gz' littler_0.3.18.orig.tar.gz 119686 SHA256:18bf469e5fddb3e854d02e42c30d29eda679f68ad6cfb42fc91ffaf18451e6d2
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.18-2.debian.tar.xz' littler_0.3.18-2.debian.tar.xz 7120 SHA256:c188dd4989f18ada498926c76171cd23357bfc01e2726005398c0792dd210532
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/littler/0.3.18-2/
 
-- https://sources.debian.net/src/littler/0.3.18-2/ (for browsing the source)
-- https://sources.debian.net/src/littler/0.3.18-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/littler/0.3.18-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
@@ -2492,20 +2494,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-mgcv/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mgcv=1.9-0-1
-'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.9-0-1.dsc' mgcv_1.9-0-1.dsc 1826 SHA256:75b40cf7099ea4c854eaa975a3e8c77129683cb7aa89a40ceb2478692f2ce13e
-'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.9-0.orig.tar.gz' mgcv_1.9-0.orig.tar.gz 1112050 SHA256:b2b10078c1f8b2ce3cadcca405496eedacc8d4632ee4357e17632cae1b043b70
-'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.9-0-1.debian.tar.xz' mgcv_1.9-0-1.debian.tar.xz 5508 SHA256:e99c97ef8b20c21cfda13561d913ac22066819c2278b9c89dbbb8b441eca5811
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mgcv/1.9-0-1/
 
-- https://sources.debian.net/src/mgcv/1.9-0-1/ (for browsing the source)
-- https://sources.debian.net/src/mgcv/1.9-0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mgcv/1.9-0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpclib3=1.3.1-1`
 
@@ -2758,21 +2753,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `customFSFUL`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.25.3-2
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.3-2.dsc' p11-kit_0.25.3-2.dsc 2538 SHA256:5468ff07c34951753426425a3a9136a3bf8e503b96cb0ad24a1439d6983dc0c4
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.3.orig.tar.xz' p11-kit_0.25.3.orig.tar.xz 991528 SHA256:d8ddce1bb7e898986f9d250ccae7c09ce14d82f1009046d202a0eb1b428b2adc
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.3.orig.tar.xz.asc' p11-kit_0.25.3.orig.tar.xz.asc 228 SHA256:91fb1fd7690b953eb32bf9ca52ae1b2466457539ac849468f1d236673b354860
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.3-2.debian.tar.xz' p11-kit_0.25.3-2.debian.tar.xz 25736 SHA256:4d081e7b3d52c33f9cb3f237564287ba1a6ae4cff3be8991985f1dd485014b96
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.25.3-2/
 
-- https://sources.debian.net/src/p11-kit/0.25.3-2/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.25.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.25.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.5.2-9.1`
 
@@ -3781,15 +3768,13 @@ Licenses: (parsed from: `/usr/share/doc/liblzma-dev/copyright`, `/usr/share/doc/
 - `permissive-nowarranty`
 - `probably-PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.4.5-0.1
-'http://http.debian.net/debian/pool/main/x/xz-utils/xz-utils_5.4.5-0.1.dsc' xz-utils_5.4.5-0.1.dsc 2451 SHA256:a36c69a0ffb0cc96aa57bfb0e4c8af2d9c32457b508adb374c494a5f3be8514d
-'http://http.debian.net/debian/pool/main/x/xz-utils/xz-utils_5.4.5.orig.tar.xz' xz-utils_5.4.5.orig.tar.xz 1680520 SHA256:da9dec6c12cf2ecf269c31ab65b5de18e8e52b96f35d5bcd08c12b43e6878803
-'http://http.debian.net/debian/pool/main/x/xz-utils/xz-utils_5.4.5.orig.tar.xz.asc' xz-utils_5.4.5.orig.tar.xz.asc 833 SHA256:1fbf414df852daab603ad43a57348e4e5fc20c95ce10be16c433ee7c5e1da69b
-'http://http.debian.net/debian/pool/main/x/xz-utils/xz-utils_5.4.5-0.1.debian.tar.xz' xz-utils_5.4.5-0.1.debian.tar.xz 26744 SHA256:0c540e623d1cbb6a17cce50f2e2966438cae64de4aa50eec91adfd953838eead
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/xz-utils/5.4.5-0.1/
+
 
 ### `dpkg` source package: `zip=3.0-13`
 
