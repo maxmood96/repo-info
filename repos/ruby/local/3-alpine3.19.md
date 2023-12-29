@@ -1,19 +1,19 @@
-# `ruby:3.2.2-alpine3.19`
+# `ruby:3.3.0-alpine3.19`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e0dcaa7f9ec284987a3e9973628d7c570bb5573c575a64e6ce6f46c1dd7b8a2`
-- Created: `2023-12-09T06:29:58.792816717Z`
-- Virtual Size: ~ 77.64 Mb  
+- Image ID: `sha256:ee4e032a12432007bda1410eb026500da5c33559827e39d27ff7b44ef965e5f4`
+- Created: `2023-12-26T20:16:05.332051161Z`
+- Virtual Size: ~ 80.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_MAJOR=3.2`
-  - `RUBY_VERSION=3.2.2`
-  - `RUBY_DOWNLOAD_SHA256=4b352d0f7ec384e332e3e44cdbfdcd5ff2d594af3c8296b5636c710975149e23`
+  - `RUBY_VERSION=3.3.0`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.0.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=676b65a36e637e90f982b57b059189b3276b9045034dcd186a7e9078847b975b`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -493,23 +493,6 @@ procps-ng-4.0.4-r0 installed size:
 
 procps-ng-4.0.4-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
-
-```
-
-### `apk` package: `readline`
-
-```console
-readline-8.2.1-r2 description:
-GNU readline library
-
-readline-8.2.1-r2 webpage:
-https://tiswww.cwru.edu/php/chet/readline/rltop.html
-
-readline-8.2.1-r2 installed size:
-296 KiB
-
-readline-8.2.1-r2 license:
-GPL-2.0-or-later
 
 ```
 

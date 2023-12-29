@@ -1,19 +1,19 @@
-# `ruby:3.2.2-slim-bookworm`
+# `ruby:3.3.0-slim-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ed4cb1a734542e092736cd40fab0e8b07ecf04e6e8f79a5705b4a4e935e45a77`
-- Created: `2023-12-19T16:26:32.541851087Z`
-- Virtual Size: ~ 180.13 Mb  
+- Image ID: `sha256:36a60a3d44ac71629d3d9046f54bf6db355f0238ca3030e70db55180f7cf39af`
+- Created: `2023-12-26T20:07:10.708532228Z`
+- Virtual Size: ~ 181.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_MAJOR=3.2`
-  - `RUBY_VERSION=3.2.2`
-  - `RUBY_DOWNLOAD_SHA256=4b352d0f7ec384e332e3e44cdbfdcd5ff2d594af3c8296b5636c710975149e23`
+  - `RUBY_VERSION=3.3.0`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.0.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=676b65a36e637e90f982b57b059189b3276b9045034dcd186a7e9078847b975b`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -1619,13 +1619,12 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libncurses6:amd64=6.4-4`
 - `libncursesw6:amd64=6.4-4`
 - `libtinfo6:amd64=6.4-4`
 - `ncurses-base=6.4-4`
 - `ncurses-bin=6.4-4`
 
-Licenses: (parsed from: `/usr/share/doc/libncurses6/copyright`, `/usr/share/doc/libncursesw6/copyright`, `/usr/share/doc/libtinfo6/copyright`, `/usr/share/doc/ncurses-base/copyright`, `/usr/share/doc/ncurses-bin/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libncursesw6/copyright`, `/usr/share/doc/libtinfo6/copyright`, `/usr/share/doc/ncurses-base/copyright`, `/usr/share/doc/ncurses-bin/copyright`)
 
 - `BSD-3-clause`
 - `MIT/X11`
@@ -1898,38 +1897,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/procps/2:4.0.2-3/ (for browsing the source)
 - https://sources.debian.net/src/procps/2:4.0.2-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/procps/2:4.0.2-3/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `readline=8.2-1.3`
-
-Binary Packages:
-
-- `libreadline8:amd64=8.2-1.3`
-- `readline-common=8.2-1.3`
-
-Licenses: (parsed from: `/usr/share/doc/libreadline8/copyright`, `/usr/share/doc/readline-common/copyright`)
-
-- `GFDL`
-- `GFDL-NIV-1.3+`
-- `GPL-2`
-- `GPL-2+`
-- `GPL-3`
-- `GPL-3+`
-- `ISC-no-attribution`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris readline=8.2-1.3
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.2-1.3.dsc' readline_8.2-1.3.dsc 2553 SHA256:05497ea99bef3f14b8d502cbe3f84fe7bbc0bce1c4f139ca32f0fd60dcac977e
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.2.orig.tar.gz' readline_8.2.orig.tar.gz 3043952 SHA256:3feb7171f16a84ee82ca18a36d7b9be109a52c04f492a053331d7d1095007c35
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.2-1.3.debian.tar.xz' readline_8.2-1.3.debian.tar.xz 30016 SHA256:8cd3c02d6c07b4cf57da607de168a9e347ee05c31857f0f6236fe3df4fc207d9
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/readline/8.2-1.3/ (for browsing the source)
-- https://sources.debian.net/src/readline/8.2-1.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/readline/8.2-1.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpcsvc-proto=1.4.3-1`
 

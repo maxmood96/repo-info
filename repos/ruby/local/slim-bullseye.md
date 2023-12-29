@@ -1,19 +1,19 @@
-# `ruby:3.2.2-slim-bullseye`
+# `ruby:3.3.0-slim-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fa4936d425183df779cdad99b2c22669aa38d26b04209d79e1851c53f8ffe46e`
-- Created: `2023-12-19T16:31:43.304401668Z`
-- Virtual Size: ~ 174.74 Mb  
+- Image ID: `sha256:cb3f33d880e3b973e9f237f9bcf5032862abf9da2409f75c5a8cfbf4483a10b3`
+- Created: `2023-12-26T20:12:48.140982916Z`
+- Virtual Size: ~ 176.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_MAJOR=3.2`
-  - `RUBY_VERSION=3.2.2`
-  - `RUBY_DOWNLOAD_SHA256=4b352d0f7ec384e332e3e44cdbfdcd5ff2d594af3c8296b5636c710975149e23`
+  - `RUBY_VERSION=3.3.0`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.0.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=676b65a36e637e90f982b57b059189b3276b9045034dcd186a7e9078847b975b`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -1797,33 +1797,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/procps/2:3.3.17-5/ (for browsing the source)
 - https://sources.debian.net/src/procps/2:3.3.17-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/procps/2:3.3.17-5/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `readline=8.1-1`
-
-Binary Packages:
-
-- `libreadline8:amd64=8.1-1`
-- `readline-common=8.1-1`
-
-Licenses: (parsed from: `/usr/share/doc/libreadline8/copyright`, `/usr/share/doc/readline-common/copyright`)
-
-- `GFDL`
-- `GPL-3`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris readline=8.1-1
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.1-1.dsc' readline_8.1-1.dsc 2418 SHA256:53356fdf2ee122ab75c7b535d292385311f7dea425ccc42143d2b9a2accfc657
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.1.orig.tar.gz' readline_8.1.orig.tar.gz 2993288 SHA256:f8ceb4ee131e3232226a17f51b164afc46cd0b9e6cef344be87c65962cb82b02
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.1-1.debian.tar.xz' readline_8.1-1.debian.tar.xz 29220 SHA256:852267a95aeec23b267c838469fee346e83a29e7a08071178dc87682591cffbf
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/readline/8.1-1/ (for browsing the source)
-- https://sources.debian.net/src/readline/8.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/readline/8.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.7-1`
 
