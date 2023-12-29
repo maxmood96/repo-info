@@ -1,9 +1,9 @@
-# `xwiki:14-mariadb-tomcat`
+# `xwiki:15-mariadb-tomcat`
 
 ## Docker Metadata
 
-- Image ID: `sha256:559eaeb2aaec281380d6748e87d07473f64b1c01ed5fb8287bf602bec58745ae`
-- Created: `2023-12-16T19:46:36.982690409Z`
+- Image ID: `sha256:849ed13a98071d609a8f75ef4cb5b5404855482526ab1b2d30ac65fac80b5b6f`
+- Created: `2023-12-26T20:25:00.408298336Z`
 - Virtual Size: ~ 1.18 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -23,14 +23,14 @@
   - `TOMCAT_MAJOR=9`
   - `TOMCAT_VERSION=9.0.84`
   - `TOMCAT_SHA512=85a42ab5e7e4cb1923888e96a78a0f277a870d06e76147a95457878c124001c9a317eade4ad69c249a460ffe2cbefe894022b84389cdf33038bc456e3699c8e3`
-  - `XWIKI_VERSION=14.10.20`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.10.20`
-  - `XWIKI_DOWNLOAD_SHA256=c418601676d61893ccb9e066b1f2bcce56717b49e5c2456656b6960db6bd6e4c`
-  - `MARIADB_JDBC_VERSION=3.3.0`
-  - `MARIADB_JDBC_SHA256=8262c79463e6b0932f60f55b61ca14087fdcafb117caa87259cd3a64409cd4fa`
-  - `MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.3.0`
-  - `MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.3.0.jar`
-  - `MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.3.0.jar`
+  - `XWIKI_VERSION=15.10.2`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.10.2`
+  - `XWIKI_DOWNLOAD_SHA256=6543563ff9d2b065c9a5e6ba90df824b8062bf7f49a431c79f8257bd93b43814`
+  - `MARIADB_JDBC_VERSION=3.3.2`
+  - `MARIADB_JDBC_SHA256=2a67ef3cc1ca481965a0e7f2d4174d126f3464d02b4055a441261fad8c196769`
+  - `MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.3.2`
+  - `MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.3.2.jar`
+  - `MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.3.2.jar`
 - Labels:
   - `org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki`
