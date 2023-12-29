@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:80a9707c6cbc30b4cb7d3106969b4ae337ac7cdd2887695847ac75f37bc77c5d`
-- Created: `2023-12-19T23:47:35.521743391Z`
-- Virtual Size: ~ 513.33 Mb  
+- Image ID: `sha256:091bfcfdb112bcefe9d5672cb7a3c63fc3e581eea8fa3c5b196cd8e8d8360f07`
+- Created: `2023-12-28T01:48:50.574881808Z`
+- Virtual Size: ~ 514.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.13`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.13.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.13.tar.xz.asc`
-  - `PHP_SHA256=2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b`
+  - `PHP_VERSION=8.2.14`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.14.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.14.tar.xz.asc`
+  - `PHP_SHA256=763ecd39fcf51c3815af6ef6e43fa9aa0d0bd8e5a615009e5f4780c92705f583`
   - `YOURLS_VERSION=1.9.2`
   - `YOURLS_SHA256=62a95ba766d62f3305d75944cbfe12d5a90c08c88fbf2f6e67150d36412b916f`
 - Labels:
@@ -594,12 +594,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/9.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/9.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.88.1-10+deb12u4`
+### `dpkg` source package: `curl=7.88.1-10+deb12u5`
 
 Binary Packages:
 
-- `curl=7.88.1-10+deb12u4`
-- `libcurl4:amd64=7.88.1-10+deb12u4`
+- `curl=7.88.1-10+deb12u5`
+- `libcurl4:amd64=7.88.1-10+deb12u5`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -619,18 +619,18 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.88.1-10+deb12u4
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1-10%2bdeb12u4.dsc' curl_7.88.1-10+deb12u4.dsc 3252 SHA256:9492b55f536f9e0536224b1f3d5ad854f590e8a6dd88b453bf9d2c0051816c6e
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1.orig.tar.gz' curl_7.88.1.orig.tar.gz 4343562 SHA256:cdb38b72e36bc5d33d5b8810f8018ece1baa29a8f215b4495e495ded82bbf3c7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1.orig.tar.gz.asc' curl_7.88.1.orig.tar.gz.asc 488 SHA256:7a5a55d7123149a1b357f298cf895bd0a601e3a2807005ef6c95f3752803485f
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1-10%2bdeb12u4.debian.tar.xz' curl_7.88.1-10+deb12u4.debian.tar.xz 64520 SHA256:54098b4b152358716e8c32e83ef07d9f6165045a9ae11820a38458f4facb710b
+$ apt-get source -qq --print-uris curl=7.88.1-10+deb12u5
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.88.1-10%2bdeb12u5.dsc' curl_7.88.1-10+deb12u5.dsc 3252 SHA256:b9128cbe8251c58ad5d1374af55c716b5946d3a47b3e575810fb0cf38f24cfc0
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.88.1.orig.tar.gz' curl_7.88.1.orig.tar.gz 4343562 SHA256:cdb38b72e36bc5d33d5b8810f8018ece1baa29a8f215b4495e495ded82bbf3c7
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.88.1.orig.tar.gz.asc' curl_7.88.1.orig.tar.gz.asc 488 SHA256:7a5a55d7123149a1b357f298cf895bd0a601e3a2807005ef6c95f3752803485f
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.88.1-10%2bdeb12u5.debian.tar.xz' curl_7.88.1-10+deb12u5.debian.tar.xz 66024 SHA256:688fbc081e03115d360e93267a7e5231b11a01b82c3c7254ea1e9509f2989c93
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.88.1-10+deb12u4/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.88.1-10+deb12u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.88.1-10+deb12u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.88.1-10+deb12u5/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.88.1-10+deb12u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.88.1-10+deb12u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-10`
 
