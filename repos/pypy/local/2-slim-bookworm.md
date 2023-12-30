@@ -1,17 +1,17 @@
-# `pypy:2.7-7.3.13-slim-bookworm`
+# `pypy:2.7-7.3.14-slim-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1734212d1d95e41c9aedb44203f36ec66a70785f50c2d33d19326ce0dddc3531`
-- Created: `2023-12-19T16:00:53.787091669Z`
-- Virtual Size: ~ 204.69 Mb  
+- Image ID: `sha256:34cc85e87394e99832441e69b95c654f26852d6c494dbd381f8c469b32124b5b`
+- Created: `2023-12-28T01:34:12.538431868Z`
+- Virtual Size: ~ 206.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy"]`
 - Environment:
   - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=7.3.13`
+  - `PYPY_VERSION=7.3.14`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d399b2d5218`
 
