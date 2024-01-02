@@ -2228,20 +2228,13 @@ Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 - `other-1`
 - `public-domain-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libde265=1.0.11-0+deb10u5
-'http://deb.debian.org/debian-security/pool/updates/main/libd/libde265/libde265_1.0.11-0%2bdeb10u5.dsc' libde265_1.0.11-0+deb10u5.dsc 2252 SHA256:94c6db0b45458a3372ab1791008c4aa2ded74c6bd9e8edc62de911e69007e0ab
-'http://deb.debian.org/debian-security/pool/updates/main/libd/libde265/libde265_1.0.11.orig.tar.gz' libde265_1.0.11.orig.tar.gz 845996 SHA256:2f8f12cabbdb15e53532b7c1eb964d4e15d444db1be802505e6ac97a25035bab
-'http://deb.debian.org/debian-security/pool/updates/main/libd/libde265/libde265_1.0.11-0%2bdeb10u5.debian.tar.xz' libde265_1.0.11-0+deb10u5.debian.tar.xz 15244 SHA256:546621317f10715c284555bd4cf1b80ef2b17d6225a126dcaa4fecefa3ac3a54
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libde265/1.0.11-0+deb10u5/
 
-- https://sources.debian.net/src/libde265/1.0.11-0+deb10u5/ (for browsing the source)
-- https://sources.debian.net/src/libde265/1.0.11-0+deb10u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libde265/1.0.11-0+deb10u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libedit=3.1-20181209-1`
 
