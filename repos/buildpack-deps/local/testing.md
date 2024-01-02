@@ -822,19 +822,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.82
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.82.dsc' debconf_1.5.82.dsc 2035 SHA256:ed6e8cc6e073344a25ab932602b3b814f25cfa1a7bfd69e464f9bad65f250dea
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.82.tar.xz' debconf_1.5.82.tar.xz 571540 SHA256:2d0550c4e2fb98d12055b245907978b28ee2d2b07b62e46be7523384d2ce985e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.82/
 
-- https://sources.debian.net/src/debconf/1.5.82/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.82/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.82/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2023.4`
 
@@ -1733,21 +1727,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.78.1-5
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.78.1-5.dsc' gobject-introspection_1.78.1-5.dsc 3535 SHA256:1ad9d9be000ad5c70a3c8b4b8340cf57f0c407b38937dd3a7419c24efb38fb6d
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.78.1.orig-glib.tar.xz' gobject-introspection_1.78.1.orig-glib.tar.xz 5327096 SHA256:44eaab8b720877ce303c5540b657b126f12dc94972d9880b52959f43fb537b30
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.78.1.orig.tar.xz' gobject-introspection_1.78.1.orig.tar.xz 1060296 SHA256:bd7babd99af7258e76819e45ba4a6bc399608fe762d83fde3cac033c50841bb4
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.78.1-5.debian.tar.xz' gobject-introspection_1.78.1-5.debian.tar.xz 43960 SHA256:63c578605aa05c812a11ed2c8a0fc070d86f4a3af3b18c4b7db76634f6e66f38
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gobject-introspection/1.78.1-5/
 
-- https://sources.debian.net/src/gobject-introspection/1.78.1-5/ (for browsing the source)
-- https://sources.debian.net/src/gobject-introspection/1.78.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gobject-introspection/1.78.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-1`
 

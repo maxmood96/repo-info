@@ -3687,20 +3687,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcrypt=1:4.4.36-2
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.36-2.dsc' libxcrypt_4.4.36-2.dsc 1563 SHA256:7a1c78fcd9029f5828f22d5697ec02aacaec276c23ab06af82f13e1a77026ea2
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.36.orig.tar.xz' libxcrypt_4.4.36.orig.tar.xz 392732 SHA256:7b7abbc89f13f5194211aa6861ed954e4fa3a210a4cb64f7e13dc8cf413e7f2a
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.36-2.debian.tar.xz' libxcrypt_4.4.36-2.debian.tar.xz 8284 SHA256:c91f86abf83fc71f69fe80d38f92354042436b6eca8a3ef666ffc86e319dd267
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxcrypt/1:4.4.36-2/
 
-- https://sources.debian.net/src/libxcrypt/1:4.4.36-2/ (for browsing the source)
-- https://sources.debian.net/src/libxcrypt/1:4.4.36-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxcrypt/1:4.4.36-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxdmcp=1:1.1.2-3`
 
@@ -5259,21 +5252,13 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 - `X11`
 - `pcre`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sed=4.9-1
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.9-1.dsc' sed_4.9-1.dsc 2077 SHA256:f0670e00c1ad51321e5b741a737e977cdb3b0eef47964b2269535f7820df576a
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.9.orig.tar.xz' sed_4.9.orig.tar.xz 1397092 SHA256:6e226b732e1cd739464ad6862bd1a1aba42d7982922da7a53519631d24975181
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.9.orig.tar.xz.asc' sed_4.9.orig.tar.xz.asc 833 SHA256:9ea64f215b308ae0a80cd958daaac23bb13491d69a472a0195974d107890a8c6
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.9-1.debian.tar.xz' sed_4.9-1.debian.tar.xz 62616 SHA256:24cdd6a3b40909ec374bd87df62364904bbe18fc12ba66111e9f9f617ff7f679
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sed/4.9-1/
 
-- https://sources.debian.net/src/sed/4.9-1/ (for browsing the source)
-- https://sources.debian.net/src/sed/4.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sed/4.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sensible-utils=0.0.20`
 
@@ -5456,21 +5441,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `Unicode`
 - `Utfwidth`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.14.2-5
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.2-5.dsc' subversion_1.14.2-5.dsc 4046 SHA256:440238a21f27f8c77d47a7349930e78efbdbad944211aed3ab5a8b3a238d9283
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.2.orig.tar.gz' subversion_1.14.2.orig.tar.gz 11626792 SHA256:fd826afad03db7a580722839927dc664f3e93398fe88b66905732c8530971353
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.2.orig.tar.gz.asc' subversion_1.14.2.orig.tar.gz.asc 3215 SHA256:da6a0a5ff56f671ad2d1eae708f8d1cc1abf0485b029a163ff8272cba5475861
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.2-5.debian.tar.xz' subversion_1.14.2-5.debian.tar.xz 337732 SHA256:a898a4f010a730860bd592eda28822c55751c1b83303d4cf050f9684cf8692e5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.14.2-5/
 
-- https://sources.debian.net/src/subversion/1.14.2-5/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.14.2-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.14.2-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=255-1`
 
