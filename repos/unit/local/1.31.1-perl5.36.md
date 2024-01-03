@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1908ce2d30ab94485c905802d5a3715491d2ce454fad2743b23b39dfac56a4b8`
+- Image ID: `sha256:1d0d77b211ded51cc7cc1ba55723707ab4048f41f097b171b246235876698687`
 - Created: `2023-10-19T10:47:22Z`
-- Virtual Size: ~ 913.38 Mb  
+- Virtual Size: ~ 915.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -12,7 +12,6 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `maintainer=Peter Martini <PeterCMartini@GMail.com>, Zak B. Elep <zakame@cpan.org>`
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
   - `org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images`
   - `org.opencontainers.image.source=https://github.com/nginx/unit`
@@ -604,12 +603,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `curl=7.74.0-1.3+deb11u10`
 - `libcurl3-gnutls:amd64=7.74.0-1.3+deb11u10`
-- `libcurl4:amd64=7.74.0-1.3+deb11u10`
-- `libcurl4-openssl-dev:amd64=7.74.0-1.3+deb11u10`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -625,6 +621,38 @@ The source package *may* still be available for download from:
 
 - http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u10/
 
+
+### `dpkg` source package: `curl=7.74.0-1.3+deb11u11`
+
+Binary Packages:
+
+- `curl=7.74.0-1.3+deb11u11`
+- `libcurl4:amd64=7.74.0-1.3+deb11u11`
+- `libcurl4-openssl-dev:amd64=7.74.0-1.3+deb11u11`
+
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+- `other`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris curl=7.74.0-1.3+deb11u11
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0-1.3%2bdeb11u11.dsc' curl_7.74.0-1.3+deb11u11.dsc 2703 SHA256:0f294bd38cdfd08c4f3d259c64d1a573226acfc33dcd8a978995e5ac06c3051c
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0.orig.tar.gz' curl_7.74.0.orig.tar.gz 4043409 SHA256:e56b3921eeb7a2951959c02db0912b5fcd5fdba5aca071da819e1accf338bbd7
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0-1.3%2bdeb11u11.debian.tar.xz' curl_7.74.0-1.3+deb11u11.debian.tar.xz 73396 SHA256:78b7ad872075b48afe37d15089e6bb0831a1fdeabc40b1ee2987fc40a8b44290
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u11/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2.1+deb11u1`
 
