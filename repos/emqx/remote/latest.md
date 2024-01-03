@@ -1,7 +1,7 @@
 ## `emqx:latest`
 
 ```console
-$ docker pull emqx@sha256:542a89ddad403cfe705c5a212c59343ee3b13f7e505bf3bf6fb401873afd8d40
+$ docker pull emqx@sha256:b58c03f0e106e1f0e619aa102b3ee51ba09dd60cbf4c109f90290b938c6a48ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull emqx@sha256:542a89ddad403cfe705c5a212c59343ee3b13f7e505bf3bf6fb401
 ### `emqx:latest` - linux; amd64
 
 ```console
-$ docker pull emqx@sha256:3c82206aac1aaacb33b4dfbac7f02448a55e5f3053a585229fd2a027e44e8e96
+$ docker pull emqx@sha256:aff5b3f9ce9862eed9c4557f9c6cc3e798843c93ada17b34ccb86ac39b12e27c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.8 MB (101780864 bytes)**  
+-	Total Size: **118.7 MB (118704673 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2318b222abc2a4ab5841d67867fb414afb31b74c577aeecea5b093627319b141`
+-	Image ID: `sha256:fbcd2554aa5aed45a507d0490f69813101a58a02197c172489d6c44f97975b8b`
 -	Entrypoint: `["\/usr\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["\/opt\/emqx\/bin\/emqx","foreground"]`
 
@@ -28,29 +28,29 @@ $ docker pull emqx@sha256:3c82206aac1aaacb33b4dfbac7f02448a55e5f3053a585229fd2a0
 ADD file:bb44d67b03db8efaeb0c4171474f441d14ff35f328f13add32b289fca062fa2f in / 
 # Tue, 19 Dec 2023 01:20:50 GMT
 CMD ["bash"]
-# Tue, 19 Dec 2023 04:53:13 GMT
-ENV EMQX_VERSION=5.3.2
-# Tue, 19 Dec 2023 04:53:13 GMT
-ENV AMD64_SHA256=d5948d4171f57e77756dd6c9eeb745c39e391e75aad3798fce445f44f5690be0
-# Tue, 19 Dec 2023 04:53:13 GMT
-ENV ARM64_SHA256=82b056bb1c1cd1f16e9d0719150fa8ac19c499d29563738bcd6984b3c395c6ac
-# Tue, 19 Dec 2023 04:53:13 GMT
+# Wed, 03 Jan 2024 19:19:56 GMT
+ENV EMQX_VERSION=5.4.0
+# Wed, 03 Jan 2024 19:19:56 GMT
+ENV AMD64_SHA256=5572dccf3704dbd910f145fe19882fa30fdd9132113d0a28110444d4d5685a3f
+# Wed, 03 Jan 2024 19:19:56 GMT
+ENV ARM64_SHA256=0dbe92966a93054a8dca89762c00b06a44659c7921177feb291a5ddd5340cefc
+# Wed, 03 Jan 2024 19:19:57 GMT
 ENV LC_ALL=C.UTF-8 LANG=C.UTF-8
-# Tue, 19 Dec 2023 04:53:27 GMT
+# Wed, 03 Jan 2024 19:20:13 GMT
 RUN set -eu;     apt-get update;     apt-get install -y --no-install-recommends ca-certificates procps curl;     arch=$(dpkg --print-architecture);     if [ ${arch} = "amd64" ]; then sha256="$AMD64_SHA256"; fi;     if [ ${arch} = "arm64" ]; then sha256="$ARM64_SHA256"; fi;     ID="$(sed -n '/^ID=/p' /etc/os-release | sed -r 's/ID=(.*)/\1/g' | sed 's/\"//g')";     VERSION_ID="$(sed -n '/^VERSION_ID=/p' /etc/os-release | sed -r 's/VERSION_ID=(.*)/\1/g' | sed 's/\"//g')";     pkg="emqx-${EMQX_VERSION}-${ID}${VERSION_ID}-${arch}.tar.gz";     curl -f -O -L https://www.emqx.com/en/downloads/broker/v${EMQX_VERSION}/${pkg};     echo "$sha256 *$pkg" | sha256sum -c;     mkdir /opt/emqx;     tar zxf $pkg -C /opt/emqx;     find /opt/emqx -name 'swagger*.js.map' -exec rm {} +;     groupadd -r -g 1000 emqx;     useradd -r -m -u 1000 -g emqx emqx;     chgrp -Rf emqx /opt/emqx;     chmod -Rf g+w /opt/emqx;     chown -Rf emqx /opt/emqx;     ln -s /opt/emqx/bin/* /usr/local/bin/;     rm -f $pkg;     apt-get purge -y --auto-remove curl;     rm -rf /var/lib/apt/lists/*
-# Tue, 19 Dec 2023 04:53:27 GMT
+# Wed, 03 Jan 2024 19:20:13 GMT
 WORKDIR /opt/emqx
-# Tue, 19 Dec 2023 04:53:27 GMT
+# Wed, 03 Jan 2024 19:20:13 GMT
 USER emqx
-# Tue, 19 Dec 2023 04:53:27 GMT
+# Wed, 03 Jan 2024 19:20:13 GMT
 VOLUME [/opt/emqx/log /opt/emqx/data]
-# Tue, 19 Dec 2023 04:53:28 GMT
-EXPOSE 11883 18083 1883 4370 5369 8083 8084 8883
-# Tue, 19 Dec 2023 04:53:28 GMT
+# Wed, 03 Jan 2024 19:20:14 GMT
+EXPOSE 18083 1883 4370 5369 8083 8084 8883
+# Wed, 03 Jan 2024 19:20:14 GMT
 COPY file:a75ee173244a77553082438ca14f9a3c739eae012d396b2119540782b95f16bb in /usr/bin/ 
-# Tue, 19 Dec 2023 04:53:28 GMT
+# Wed, 03 Jan 2024 19:20:14 GMT
 ENTRYPOINT ["/usr/bin/docker-entrypoint.sh"]
-# Tue, 19 Dec 2023 04:53:28 GMT
+# Wed, 03 Jan 2024 19:20:14 GMT
 CMD ["/opt/emqx/bin/emqx" "foreground"]
 ```
 
@@ -59,26 +59,26 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Last Modified: Tue, 19 Dec 2023 01:25:40 GMT  
 		Size: 31.4 MB (31417873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5c8584f03abcd8dc4f4e74091c8e788a0de343e4e28e45ce61f5c8e7fa8f21f`  
-		Last Modified: Tue, 19 Dec 2023 04:54:37 GMT  
-		Size: 70.4 MB (70362088 bytes)  
+	-	`sha256:01b40ce22fb6882b48b845829080e0fe884a0b6e08ecf4afaac5bc55dc1d4662`  
+		Last Modified: Wed, 03 Jan 2024 19:20:38 GMT  
+		Size: 87.3 MB (87285898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c3ad325587982cabb9a450034ff1c3634132a7dd6fe384135965a76c9761f21`  
-		Last Modified: Tue, 19 Dec 2023 04:54:29 GMT  
-		Size: 903.0 B  
+	-	`sha256:187072439c197ab4d344bdd676c79e88e5712ba8b2c20f3a0aaa2a2ab7a45d11`  
+		Last Modified: Wed, 03 Jan 2024 19:20:28 GMT  
+		Size: 902.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `emqx:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull emqx@sha256:6176aaaee7b4b6e6f3e7211550a35d5325ce1ce46b75abee65b27eba78ba0cea
+$ docker pull emqx@sha256:5ccd09ad8dd1320627283fc479a3b760add3a04d32da2cece1eea1718c541f71
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.1 MB (92080755 bytes)**  
+-	Total Size: **108.5 MB (108466312 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea886e3a913dcd4a0ed731caae05e52a4d36694070bcb4435df7338d0ebd8904`
+-	Image ID: `sha256:e221710e68ca5dc18d8b139ca8c1f2fb9d9da2aa793cd9b35a0fad72c6f914b5`
 -	Entrypoint: `["\/usr\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["\/opt\/emqx\/bin\/emqx","foreground"]`
 
@@ -87,29 +87,29 @@ $ docker pull emqx@sha256:6176aaaee7b4b6e6f3e7211550a35d5325ce1ce46b75abee65b27e
 ADD file:4dd1c5e17a5e57644787f37e8ad290baef6c93f4f112b976f19136480a293713 in / 
 # Tue, 19 Dec 2023 01:41:25 GMT
 CMD ["bash"]
-# Tue, 19 Dec 2023 07:32:36 GMT
-ENV EMQX_VERSION=5.3.2
-# Tue, 19 Dec 2023 07:32:37 GMT
-ENV AMD64_SHA256=d5948d4171f57e77756dd6c9eeb745c39e391e75aad3798fce445f44f5690be0
-# Tue, 19 Dec 2023 07:32:37 GMT
-ENV ARM64_SHA256=82b056bb1c1cd1f16e9d0719150fa8ac19c499d29563738bcd6984b3c395c6ac
-# Tue, 19 Dec 2023 07:32:37 GMT
+# Wed, 03 Jan 2024 19:39:37 GMT
+ENV EMQX_VERSION=5.4.0
+# Wed, 03 Jan 2024 19:39:37 GMT
+ENV AMD64_SHA256=5572dccf3704dbd910f145fe19882fa30fdd9132113d0a28110444d4d5685a3f
+# Wed, 03 Jan 2024 19:39:37 GMT
+ENV ARM64_SHA256=0dbe92966a93054a8dca89762c00b06a44659c7921177feb291a5ddd5340cefc
+# Wed, 03 Jan 2024 19:39:37 GMT
 ENV LC_ALL=C.UTF-8 LANG=C.UTF-8
-# Tue, 19 Dec 2023 07:32:48 GMT
+# Wed, 03 Jan 2024 19:39:50 GMT
 RUN set -eu;     apt-get update;     apt-get install -y --no-install-recommends ca-certificates procps curl;     arch=$(dpkg --print-architecture);     if [ ${arch} = "amd64" ]; then sha256="$AMD64_SHA256"; fi;     if [ ${arch} = "arm64" ]; then sha256="$ARM64_SHA256"; fi;     ID="$(sed -n '/^ID=/p' /etc/os-release | sed -r 's/ID=(.*)/\1/g' | sed 's/\"//g')";     VERSION_ID="$(sed -n '/^VERSION_ID=/p' /etc/os-release | sed -r 's/VERSION_ID=(.*)/\1/g' | sed 's/\"//g')";     pkg="emqx-${EMQX_VERSION}-${ID}${VERSION_ID}-${arch}.tar.gz";     curl -f -O -L https://www.emqx.com/en/downloads/broker/v${EMQX_VERSION}/${pkg};     echo "$sha256 *$pkg" | sha256sum -c;     mkdir /opt/emqx;     tar zxf $pkg -C /opt/emqx;     find /opt/emqx -name 'swagger*.js.map' -exec rm {} +;     groupadd -r -g 1000 emqx;     useradd -r -m -u 1000 -g emqx emqx;     chgrp -Rf emqx /opt/emqx;     chmod -Rf g+w /opt/emqx;     chown -Rf emqx /opt/emqx;     ln -s /opt/emqx/bin/* /usr/local/bin/;     rm -f $pkg;     apt-get purge -y --auto-remove curl;     rm -rf /var/lib/apt/lists/*
-# Tue, 19 Dec 2023 07:32:48 GMT
+# Wed, 03 Jan 2024 19:39:51 GMT
 WORKDIR /opt/emqx
-# Tue, 19 Dec 2023 07:32:48 GMT
+# Wed, 03 Jan 2024 19:39:51 GMT
 USER emqx
-# Tue, 19 Dec 2023 07:32:48 GMT
+# Wed, 03 Jan 2024 19:39:51 GMT
 VOLUME [/opt/emqx/log /opt/emqx/data]
-# Tue, 19 Dec 2023 07:32:48 GMT
-EXPOSE 11883 18083 1883 4370 5369 8083 8084 8883
-# Tue, 19 Dec 2023 07:32:48 GMT
+# Wed, 03 Jan 2024 19:39:51 GMT
+EXPOSE 18083 1883 4370 5369 8083 8084 8883
+# Wed, 03 Jan 2024 19:39:51 GMT
 COPY file:a75ee173244a77553082438ca14f9a3c739eae012d396b2119540782b95f16bb in /usr/bin/ 
-# Tue, 19 Dec 2023 07:32:49 GMT
+# Wed, 03 Jan 2024 19:39:51 GMT
 ENTRYPOINT ["/usr/bin/docker-entrypoint.sh"]
-# Tue, 19 Dec 2023 07:32:49 GMT
+# Wed, 03 Jan 2024 19:39:51 GMT
 CMD ["/opt/emqx/bin/emqx" "foreground"]
 ```
 
@@ -118,11 +118,11 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Last Modified: Tue, 19 Dec 2023 01:45:22 GMT  
 		Size: 30.1 MB (30064052 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87ff49abb8e64c1ed2e11b76890bc5263236543367a5c644aeb798711592690c`  
-		Last Modified: Tue, 19 Dec 2023 07:33:50 GMT  
-		Size: 62.0 MB (62015801 bytes)  
+	-	`sha256:000db8836b7a4dcf705932e61e11e1c8af7870412c338e39e234bce09ccb3a26`  
+		Last Modified: Wed, 03 Jan 2024 19:40:10 GMT  
+		Size: 78.4 MB (78401356 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0a9b506f5feb36dea14e522c2ee7ffa5c379b6f1a670711f86856bad5043709`  
-		Last Modified: Tue, 19 Dec 2023 07:33:43 GMT  
-		Size: 902.0 B  
+	-	`sha256:60f84d1cbfd874e0a6e42d7872df4925361685c19d66d456d85f3b253e6281c6`  
+		Last Modified: Wed, 03 Jan 2024 19:40:03 GMT  
+		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
