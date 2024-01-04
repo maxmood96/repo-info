@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2638057ee44ece0c23aa049c46d91fe6f0e31e2234d90e08ad606a7c1490aec0`
-- Created: `2023-12-05T01:50:24.569392038Z`
+- Image ID: `sha256:0c8d46a63b76ad1eaaf3fb469b002a067e7f91e4d1289aab204f019c1bcd5efe`
+- Created: `2024-01-03T01:32:51.330764015Z`
 - Virtual Size: ~ 188.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20231204`
+  - `build-date=20240102`
   - `name=SL7 Base Image`
   - `vendor=Scientific Linux`
 
@@ -204,15 +204,15 @@ $ dnf --quiet download --source --url cryptsetup-libs-2.0.3-6.el7
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS/vendor/cryptsetup-2.0.3-6.el7.src.rpm
 ```
 
-### `rpm` package: `curl-7.29.0-59.el7_9.1.x86_64`
+### `rpm` package: `curl-7.29.0-59.el7_9.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url curl-7.29.0-59.el7_9.1
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS/vendor/curl-7.29.0-59.el7_9.1.src.rpm
+$ dnf --quiet download --source --url curl-7.29.0-59.el7_9.2
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS/vendor/curl-7.29.0-59.el7_9.2.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.26-24.el7_9.x86_64`
@@ -700,15 +700,15 @@ $ dnf --quiet download --source --url libcom_err-1.42.9-19.el7
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS/vendor/e2fsprogs-1.42.9-19.el7.src.rpm
 ```
 
-### `rpm` package: `libcurl-7.29.0-59.el7_9.1.x86_64`
+### `rpm` package: `libcurl-7.29.0-59.el7_9.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcurl-7.29.0-59.el7_9.1
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS/vendor/curl-7.29.0-59.el7_9.1.src.rpm
+$ dnf --quiet download --source --url libcurl-7.29.0-59.el7_9.2
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS/vendor/curl-7.29.0-59.el7_9.2.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.21-25.el7.x86_64`
