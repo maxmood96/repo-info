@@ -114,13 +114,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu5.dsc' base-files_13ubuntu5.dsc 1613 SHA512:9bde22ef3d1c4a45983d87122fb4691af37224b4ddf20b7f72903abe7f97d556f1e53b3f9f5b0f9cdd2857c23a7c66679565b0595b25519dfa72155b0f18ca6f
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu5.tar.xz' base-files_13ubuntu5.tar.xz 93148 SHA512:ba27dd6efe2b7103923f275041db616d63020d4b23af12356a7bf690f5ba61b019b1296bfbd29a8c485b5ce4cb71e332d519cdb5ae81687691fd99fdb942638e
-```
 
 ### `dpkg` source package: `base-passwd=3.6.3`
 
@@ -1321,15 +1317,13 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 - `X11`
 - `pcre`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sed=4.9-1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9-1.dsc' sed_4.9-1.dsc 2077 SHA512:5c7b4495f8e2e7f93f81d8bd01fc49905b35226d537c87c1ab87b8374a9afd446d7c3ffcc97d007d1b304cc5928b421c1bea3823b77aaa37dda05d08101bd645
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9.orig.tar.xz' sed_4.9.orig.tar.xz 1397092 SHA512:36157a4b4a2430cf421b7bd07f1675d680d9f1616be96cf6ad6ee74a9ec0fe695f8d0b1e1f0b008bbb33cc7fcde5e1c456359bbbc63f8aebdd4fedc3982cf6dc
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9.orig.tar.xz.asc' sed_4.9.orig.tar.xz.asc 833 SHA512:ceb235850184b99017783486e182ade9db38313d20b2b34d23f54d8affe180f7a191139b993e8ec7718ca33eff732f547ca4b3b59aaf865feaae611dfeae5c46
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9-1.debian.tar.xz' sed_4.9-1.debian.tar.xz 62616 SHA512:5f10389226e093abdf014187dd1e097522938051594158265b0f294cea36b45043081f89a40ec8a91f7fb9a9b907699ca02752cbeac2a5b156f0f702e97881c8
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sed/4.9-1/
+
 
 ### `dpkg` source package: `sensible-utils=0.0.20`
 
