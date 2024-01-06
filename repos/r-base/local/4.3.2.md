@@ -588,9 +588,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris debianutils=5.14
-'http://http.debian.net/debian/pool/main/d/debianutils/debianutils_5.14.dsc' debianutils_5.14.dsc 1631 SHA256:328e7aabb75e6bd284ee2a4e7661091a202c16edb8e18e4402f7209b01d965d6
-'http://http.debian.net/debian/pool/main/d/debianutils/debianutils_5.14.tar.xz' debianutils_5.14.tar.xz 79676 SHA256:531a9542b4054bfb4c26a9fd5f1e6489fc728f52785270ddd9434c14a56b1108
+'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.14.dsc' debianutils_5.14.dsc 1631 SHA256:328e7aabb75e6bd284ee2a4e7661091a202c16edb8e18e4402f7209b01d965d6
+'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.14.tar.xz' debianutils_5.14.tar.xz 79676 SHA256:531a9542b4054bfb4c26a9fd5f1e6489fc728f52785270ddd9434c14a56b1108
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/debianutils/5.14/ (for browsing the source)
+- https://sources.debian.net/src/debianutils/5.14/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/debianutils/5.14/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.10-1`
 
@@ -1160,11 +1166,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris grep=3.11-3
-'http://http.debian.net/debian/pool/main/g/grep/grep_3.11-3.dsc' grep_3.11-3.dsc 1618 SHA256:bd3ec403c9ed5199a7c1009082abf254d8bc8909849de306c7960c37409e3c8d
-'http://http.debian.net/debian/pool/main/g/grep/grep_3.11.orig.tar.xz' grep_3.11.orig.tar.xz 1703776 SHA256:1db2aedde89d0dea42b16d9528f894c8d15dae4e190b59aecc78f5a951276eab
-'http://http.debian.net/debian/pool/main/g/grep/grep_3.11.orig.tar.xz.asc' grep_3.11.orig.tar.xz.asc 833 SHA256:89ec23ffd59b68822732dc8204fc89883c3af30a90ae390feb94346d9d09a589
-'http://http.debian.net/debian/pool/main/g/grep/grep_3.11-3.debian.tar.xz' grep_3.11-3.debian.tar.xz 20592 SHA256:92d9ce74a9d546b7e188e9148979f7762b3e6b8534c7367b749e8766fe4ea097
+'http://deb.debian.org/debian/pool/main/g/grep/grep_3.11-3.dsc' grep_3.11-3.dsc 1618 SHA256:bd3ec403c9ed5199a7c1009082abf254d8bc8909849de306c7960c37409e3c8d
+'http://deb.debian.org/debian/pool/main/g/grep/grep_3.11.orig.tar.xz' grep_3.11.orig.tar.xz 1703776 SHA256:1db2aedde89d0dea42b16d9528f894c8d15dae4e190b59aecc78f5a951276eab
+'http://deb.debian.org/debian/pool/main/g/grep/grep_3.11.orig.tar.xz.asc' grep_3.11.orig.tar.xz.asc 833 SHA256:89ec23ffd59b68822732dc8204fc89883c3af30a90ae390feb94346d9d09a589
+'http://deb.debian.org/debian/pool/main/g/grep/grep_3.11-3.debian.tar.xz' grep_3.11-3.debian.tar.xz 20592 SHA256:92d9ce74a9d546b7e188e9148979f7762b3e6b8534c7367b749e8766fe4ea097
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/grep/3.11-3/ (for browsing the source)
+- https://sources.debian.net/src/grep/3.11-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/grep/3.11-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gzip=1.12-1`
 
@@ -1864,10 +1876,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libpng1.6=1.6.40-2
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.40-2.dsc' libpng1.6_1.6.40-2.dsc 2241 SHA256:894dacfee1ea43139751269eec9d94bb74b9a8dd7ea9d8aec0a2b0c81d7e43d0
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.40.orig.tar.gz' libpng1.6_1.6.40.orig.tar.gz 1520834 SHA256:62d25af25e636454b005c93cae51ddcd5383c40fa14aa3dae8f6576feb5692c2
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.40-2.debian.tar.xz' libpng1.6_1.6.40-2.debian.tar.xz 31148 SHA256:542a1c4abae513369b18f4399aa95f653b17739f711d668802c338a989e6c0f6
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.40-2.dsc' libpng1.6_1.6.40-2.dsc 2241 SHA256:894dacfee1ea43139751269eec9d94bb74b9a8dd7ea9d8aec0a2b0c81d7e43d0
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.40.orig.tar.gz' libpng1.6_1.6.40.orig.tar.gz 1520834 SHA256:62d25af25e636454b005c93cae51ddcd5383c40fa14aa3dae8f6576feb5692c2
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.40-2.debian.tar.xz' libpng1.6_1.6.40-2.debian.tar.xz 31148 SHA256:542a1c4abae513369b18f4399aa95f653b17739f711d668802c338a989e6c0f6
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libpng1.6/1.6.40-2/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.40-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.40-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1`
 
@@ -1904,11 +1922,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libseccomp=2.5.4-2
-'http://http.debian.net/debian/pool/main/libs/libseccomp/libseccomp_2.5.4-2.dsc' libseccomp_2.5.4-2.dsc 2708 SHA256:48e3d00b42f561caafddc9149b514234c52f067ea05dd6c6c35c984a5a48c7f4
-'http://http.debian.net/debian/pool/main/libs/libseccomp/libseccomp_2.5.4.orig.tar.gz' libseccomp_2.5.4.orig.tar.gz 637228 SHA256:d82902400405cf0068574ef3dc1fe5f5926207543ba1ae6f8e7a1576351dcbdb
-'http://http.debian.net/debian/pool/main/libs/libseccomp/libseccomp_2.5.4.orig.tar.gz.asc' libseccomp_2.5.4.orig.tar.gz.asc 833 SHA256:af37e70eb422e6f983c1f135a3abb342c3b787716520b71bd774e4906003807f
-'http://http.debian.net/debian/pool/main/libs/libseccomp/libseccomp_2.5.4-2.debian.tar.xz' libseccomp_2.5.4-2.debian.tar.xz 17584 SHA256:0b9d98cdc5c9be32652733c08f11d8b788b229e427aa4b2d31df5fc523d498df
+'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.5.4-2.dsc' libseccomp_2.5.4-2.dsc 2708 SHA256:48e3d00b42f561caafddc9149b514234c52f067ea05dd6c6c35c984a5a48c7f4
+'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.5.4.orig.tar.gz' libseccomp_2.5.4.orig.tar.gz 637228 SHA256:d82902400405cf0068574ef3dc1fe5f5926207543ba1ae6f8e7a1576351dcbdb
+'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.5.4.orig.tar.gz.asc' libseccomp_2.5.4.orig.tar.gz.asc 833 SHA256:af37e70eb422e6f983c1f135a3abb342c3b787716520b71bd774e4906003807f
+'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.5.4-2.debian.tar.xz' libseccomp_2.5.4-2.debian.tar.xz 17584 SHA256:0b9d98cdc5c9be32652733c08f11d8b788b229e427aa4b2d31df5fc523d498df
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libseccomp/2.5.4-2/ (for browsing the source)
+- https://sources.debian.net/src/libseccomp/2.5.4-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libseccomp/2.5.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libselinux=3.5-1`
 
@@ -3230,21 +3254,13 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 - `X11`
 - `pcre`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sed=4.9-1
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.9-1.dsc' sed_4.9-1.dsc 2077 SHA256:f0670e00c1ad51321e5b741a737e977cdb3b0eef47964b2269535f7820df576a
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.9.orig.tar.xz' sed_4.9.orig.tar.xz 1397092 SHA256:6e226b732e1cd739464ad6862bd1a1aba42d7982922da7a53519631d24975181
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.9.orig.tar.xz.asc' sed_4.9.orig.tar.xz.asc 833 SHA256:9ea64f215b308ae0a80cd958daaac23bb13491d69a472a0195974d107890a8c6
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.9-1.debian.tar.xz' sed_4.9-1.debian.tar.xz 62616 SHA256:24cdd6a3b40909ec374bd87df62364904bbe18fc12ba66111e9f9f617ff7f679
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sed/4.9-1/
 
-- https://sources.debian.net/src/sed/4.9-1/ (for browsing the source)
-- https://sources.debian.net/src/sed/4.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sed/4.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sensible-utils=0.0.20`
 
@@ -3581,10 +3597,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris util-linux=2.39.3-2
-'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.39.3-2.dsc' util-linux_2.39.3-2.dsc 4608 SHA256:c185e3063080bfb307ef8760adeefb4dc5b784f8613a4fbca18dc86783798479
-'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.39.3.orig.tar.xz' util-linux_2.39.3.orig.tar.xz 8526168 SHA256:7b6605e48d1a49f43cc4b4cfc59f313d0dd5402fa40b96810bd572e167dfed0f
-'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.39.3-2.debian.tar.xz' util-linux_2.39.3-2.debian.tar.xz 98192 SHA256:dd750fd32ea028a1867dcba9ce2bab4c3fdda54d3e6363568ac92a0767f6a076
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3-2.dsc' util-linux_2.39.3-2.dsc 4608 SHA256:c185e3063080bfb307ef8760adeefb4dc5b784f8613a4fbca18dc86783798479
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3.orig.tar.xz' util-linux_2.39.3.orig.tar.xz 8526168 SHA256:7b6605e48d1a49f43cc4b4cfc59f313d0dd5402fa40b96810bd572e167dfed0f
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3-2.debian.tar.xz' util-linux_2.39.3-2.debian.tar.xz 98192 SHA256:dd750fd32ea028a1867dcba9ce2bab4c3fdda54d3e6363568ac92a0767f6a076
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/util-linux/2.39.3-2/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.39.3-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.39.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `vim=2:9.0.2116-1`
 
@@ -3620,20 +3642,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:9.0.2116-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.0.2116-1.dsc' vim_9.0.2116-1.dsc 3177 SHA256:13a3f80cc7cdf03e65ba8016d3746325ab9013ccdf4860dc816dab9e10e391a1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.0.2116.orig.tar.xz' vim_9.0.2116.orig.tar.xz 11392984 SHA256:b8e4d64b949ec16e37b8fe2df011475a1a6ac1eeb25fc518ae0fb97ce8b6a828
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.0.2116-1.debian.tar.xz' vim_9.0.2116-1.debian.tar.xz 187300 SHA256:566fd27b303da29bf7e621a78697cf443c1862e46054d96e05ffe1ac4ae7ba1d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/vim/2:9.0.2116-1/
 
-- https://sources.debian.net/src/vim/2:9.0.2116-1/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:9.0.2116-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:9.0.2116-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21.4-1`
 
