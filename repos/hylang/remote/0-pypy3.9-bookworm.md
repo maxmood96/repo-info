@@ -1,7 +1,7 @@
 ## `hylang:0-pypy3.9-bookworm`
 
 ```console
-$ docker pull hylang@sha256:eb894cbf87800973135dbd483d800931ccf87d5d5052d1b6eca09e557a3d6966
+$ docker pull hylang@sha256:bb6ff05f0a6a4c220c2b347b6baa3e9c1585176232833fe12952c7c97f16d296
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -198,45 +198,45 @@ $ docker pull hylang@sha256:5e88b7abaabd793dd31ce0364184a2ef7504d094ebbcc3bf559e
 ### `hylang:0-pypy3.9-bookworm` - linux; 386
 
 ```console
-$ docker pull hylang@sha256:e078897ff0474c7e17728451e04de8b82443bd787b66b55c838def438309014e
+$ docker pull hylang@sha256:150ab4fec6a9caaf3efa4b5de755abc5ae998146788f76f5081bf464f9a9f4f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.7 MB (74670812 bytes)**  
+-	Total Size: **74.7 MB (74694601 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee5679a3a648d2571f698b5e7a829dc0d523e55288b575d6d65885910315fa2b`
+-	Image ID: `sha256:e47a7b57f01023dd3a2a6da00ea37a9b623bd51ae31eb2fe60f3fcebbf614202`
 -	Default Command: `["hy"]`
 
 ```dockerfile
-# Tue, 12 Dec 2023 23:44:12 GMT
+# Tue, 19 Dec 2023 01:39:07 GMT
 ADD file:6f4083d57ea9644b5a827e67b0725087a15aa428272ec223ab968bf8b4623e42 in / 
-# Tue, 12 Dec 2023 23:44:12 GMT
+# Tue, 19 Dec 2023 01:39:07 GMT
 CMD ["bash"]
-# Tue, 12 Dec 2023 23:44:12 GMT
+# Mon, 25 Dec 2023 11:23:57 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 12 Dec 2023 23:44:12 GMT
+# Mon, 25 Dec 2023 11:23:57 GMT
 ENV LANG=C.UTF-8
-# Tue, 12 Dec 2023 23:44:12 GMT
+# Mon, 25 Dec 2023 11:23:57 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 12 Dec 2023 23:44:12 GMT
+# Mon, 25 Dec 2023 11:23:57 GMT
 ENV PYPY_VERSION=7.3.14
-# Tue, 12 Dec 2023 23:44:12 GMT
+# Mon, 25 Dec 2023 11:23:57 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.14-linux64.tar.bz2'; 			sha256='febd770a616641ca8419c381c7fb224e515b892551d0db49a1231397ed38859d'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.14-aarch64.tar.bz2'; 			sha256='14b842f32f60ce2d9d130971f9bcbdb6875824a0e78fac36806d267e0982179c'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.14-linux32.tar.bz2'; 			sha256='4ad89a22369a6f2f83a7d8d047e0fc4cf5597f0921fa7afa23499ed05f663503'; 			;; 		's390x') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.14-s390x.tar.bz2'; 			sha256='ba2451e9081db5bc724a05530a7f98817231de83ff6fdf15bad21a4e9b6dfeae'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libexpat1 		libncurses5 		libncursesw6 		libsqlite3-0 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.9; 	if [ -f _gdbm_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libgdbm-dev; 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev liblzma-dev; 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libsqlite3-dev; 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Tue, 12 Dec 2023 23:44:12 GMT
+# Mon, 25 Dec 2023 11:23:57 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py
-# Tue, 12 Dec 2023 23:44:12 GMT
+# Mon, 25 Dec 2023 11:23:57 GMT
 ENV PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d399b2d5218
-# Tue, 12 Dec 2023 23:44:12 GMT
+# Mon, 25 Dec 2023 11:23:57 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum --check --strict -; 		pipVersion="$(pypy3 -c 'import ensurepip; print(ensurepip._PIP_VERSION)')"; 	setuptoolsVersion="$(pypy3 -c 'import ensurepip; print(ensurepip._SETUPTOOLS_VERSION)')"; 		pypy3 get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip == $pipVersion" 		"setuptools == $setuptoolsVersion" 	; 	apt-get purge -y --auto-remove wget; 	pip --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py # buildkit
-# Tue, 12 Dec 2023 23:44:12 GMT
+# Mon, 25 Dec 2023 11:23:57 GMT
 CMD ["pypy3"]
-# Tue, 12 Dec 2023 23:44:12 GMT
-ENV HY_VERSION=0.27.0
-# Tue, 12 Dec 2023 23:44:12 GMT
-ENV HYRULE_VERSION=0.4.0
-# Tue, 12 Dec 2023 23:44:12 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
+ENV HY_VERSION=0.28.0
+# Fri, 05 Jan 2024 23:20:01 GMT
+ENV HYRULE_VERSION=0.5.0
+# Fri, 05 Jan 2024 23:20:01 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Tue, 12 Dec 2023 23:44:12 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 CMD ["hy"]
 ```
 
@@ -257,31 +257,31 @@ CMD ["hy"]
 		Last Modified: Fri, 05 Jan 2024 18:54:30 GMT  
 		Size: 3.3 MB (3306319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92cb670adc098ca6f48374ed5adde719b98b96125bac5648ef433f1bf9ccda5d`  
-		Last Modified: Fri, 05 Jan 2024 19:48:14 GMT  
-		Size: 4.3 MB (4307889 bytes)  
+	-	`sha256:3ab173c3ca716583dbbe0b371fa887f52ed6bc726e213c2a7e85c62a6580c80b`  
+		Last Modified: Fri, 05 Jan 2024 23:56:10 GMT  
+		Size: 4.3 MB (4331678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:0-pypy3.9-bookworm` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:299a4ac2ec59cc10c2cc43ec7ce5c1db87ff2c2c7c5ad0723574413df8890347
+$ docker pull hylang@sha256:b52abef00cc588e009bf2ed91055dd0b5339000f52d36481ceedd19537919d89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.2 MB (3151755 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:355dc9d514ed01d77cc653921e615c6360c8afd8c6a2af4f76fba423313d80d3`
+-	Image ID: `sha256:4d88b288856a2ffa0c5381db1d83e31343a5791d067a41e079d32ca57e212053`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cd20205a43029a18a69355ceef56bf48ad49026490668472cfdc3abc72e0d706`  
-		Last Modified: Fri, 05 Jan 2024 19:48:13 GMT  
+	-	`sha256:22cd03398d7e5ea775a6e5e9bdeb1885661489e3d376f8cc2abd473681273c95`  
+		Last Modified: Fri, 05 Jan 2024 23:56:10 GMT  
 		Size: 3.1 MB (3141963 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:16ae3bc548051f1f48d3b862e501f355a10513d826ef38ca4986de6a72915e6b`  
-		Last Modified: Fri, 05 Jan 2024 19:48:13 GMT  
+	-	`sha256:4055c1cd7b0799d82fcbcf610dff6d075b46db18d8090ae3fb106e23d3a8b11e`  
+		Last Modified: Fri, 05 Jan 2024 23:56:10 GMT  
 		Size: 9.8 KB (9792 bytes)  
 		MIME: application/vnd.in-toto+json
