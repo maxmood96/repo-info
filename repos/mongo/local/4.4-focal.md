@@ -1,10 +1,10 @@
-# `mongo:4.4.26-focal`
+# `mongo:4.4.27-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a04ee971f462a2fd913c99b2fbf37af04b322cb880ee6738d615512747e024b3`
-- Created: `2023-12-19T19:08:50Z`
-- Virtual Size: ~ 433.99 Mb  
+- Image ID: `sha256:e8046bccec90e04107ec55bfaf68c3c21ea5e729bc2dd257443e12d6748ead34`
+- Created: `2024-01-03T23:01:12Z`
+- Virtual Size: ~ 434.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=4.4`
-  - `MONGO_VERSION=4.4.26`
+  - `MONGO_VERSION=4.4.27`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -1284,29 +1284,16 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=4.4.26`
-
-Binary Packages:
-
-- `mongodb-org=4.4.26`
-- `mongodb-org-mongos=4.4.26`
-- `mongodb-org-server=4.4.26`
-- `mongodb-org-shell=4.4.26`
-- `mongodb-org-tools=4.4.26`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `mongodb-org=4.4.27`
 
 Binary Packages:
 
+- `mongodb-org=4.4.27`
 - `mongodb-org-database-tools-extra=4.4.27`
+- `mongodb-org-mongos=4.4.27`
+- `mongodb-org-server=4.4.27`
+- `mongodb-org-shell=4.4.27`
+- `mongodb-org-tools=4.4.27`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1776,11 +1763,11 @@ $ apt-get source -qq --print-uris shadow=1:4.8.1-1ubuntu5.20.04.4
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.4.debian.tar.xz' shadow_4.8.1-1ubuntu5.20.04.4.debian.tar.xz 86684 SHA512:8e70ed00983db7bf2b182812cfa9d8c6151de836bacfdf23fbefea37419a72b6be0e126ad2f085ea46aff25de99e66470206cb91259a09b1f6852cb83ca1fb3f
 ```
 
-### `dpkg` source package: `sqlite3=3.31.1-4ubuntu0.5`
+### `dpkg` source package: `sqlite3=3.31.1-4ubuntu0.6`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.31.1-4ubuntu0.5`
+- `libsqlite3-0:amd64=3.31.1-4ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -1788,9 +1775,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.31.1-4ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.6.dsc' sqlite3_3.31.1-4ubuntu0.6.dsc 2519 SHA512:caa3e8fd9404fccdcedbf61702f7247c4699ef04c5cba205410639bd73de9afebab79ed40b0c5ca4e2302d6bd184441fc3faf02d46d10ab6508ea495c24addf8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig-www.tar.xz' sqlite3_3.31.1.orig-www.tar.xz 5764424 SHA512:a47adacd46c673cfd674cb64fb54b054e69560aed8c8c429773f0eccdcdbce4be538397506eca8e2d169f4b46d0d47442b273e12d82f8c87e1aadf3ade458db6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig.tar.xz' sqlite3_3.31.1.orig.tar.xz 7108036 SHA512:67e1050efe2988fa3d0d7e4a87e147a8114c6ff9b6ca5307a068befb38e861930eaee0135048ff1abb1e6323b507cbc68a0aac3a8fe5f095d6fcea1547a7efaf
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.6.debian.tar.xz' sqlite3_3.31.1-4ubuntu0.6.debian.tar.xz 36192 SHA512:12d6a58cbff3ceacfc5c51824f264993bbd9d50116d76c11a9b8ecc7ce417403174f637d8af34bdfe46e1f2555eca19d5da3c4875fb332b1aa268ca9fb81c238
+```
 
 ### `dpkg` source package: `systemd=245.4-4ubuntu3.22`
 
