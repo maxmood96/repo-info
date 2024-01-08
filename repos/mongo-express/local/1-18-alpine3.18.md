@@ -1,10 +1,10 @@
-# `mongo-express:1.0.0-18-alpine3.18`
+# `mongo-express:1.0.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f1e7d7781219c70f75f5b0cee57422f3a9da4819249606a2c5dec688f8424821`
-- Created: `2023-12-02T01:52:58.870452615Z`
-- Virtual Size: ~ 202.23 Mb  
+- Image ID: `sha256:a7a234790da6db09ec47850c5a9fca2f404aa3166d2d6368d259f6ac60774206`
+- Created: `2024-01-06T01:16:53.955438117Z`
+- Virtual Size: ~ 275.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/sbin/tini","--","/docker-entrypoint.sh"]`
@@ -15,8 +15,8 @@
   - `YARN_VERSION=1.22.19`
   - `ME_CONFIG_MONGODB_URL=mongodb://mongo:27017`
   - `ME_CONFIG_MONGODB_ENABLE_ADMIN=true`
+  - `ME_CONFIG_SITE_SESSIONSECRET=secret`
   - `VCAP_APP_HOST=0.0.0.0`
-  - `MONGO_EXPRESS_VERSION=1.0.0`
 
 ## `apk` (`.apk`-based packages)
 
