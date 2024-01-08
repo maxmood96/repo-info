@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cbdc7727a01249b32f9ddd1e054507b1cdc4baa85e041e592e744d4fd36936f5`
-- Created: `2023-12-14T09:15:20Z`
-- Virtual Size: ~ 160.61 Mb  
+- Image ID: `sha256:d0c81bcbfd2d293f81b4fdf2eb94c0be0fc0fb86a700f84d1e4692ed64a67af0`
+- Created: `2023-12-21T21:41:09Z`
+- Virtual Size: ~ 160.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -293,16 +293,16 @@ X11
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-9.5_p1-r0 description:
+openssh-client-common-9.6_p1-r0 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-9.5_p1-r0 webpage:
+openssh-client-common-9.6_p1-r0 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-9.5_p1-r0 installed size:
-2828 KiB
+openssh-client-common-9.6_p1-r0 installed size:
+2872 KiB
 
-openssh-client-common-9.5_p1-r0 license:
+openssh-client-common-9.6_p1-r0 license:
 SSH-OpenSSH
 
 ```
@@ -310,16 +310,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-9.5_p1-r0 description:
+openssh-client-default-9.6_p1-r0 description:
 OpenBSD's SSH client
 
-openssh-client-default-9.5_p1-r0 webpage:
+openssh-client-default-9.6_p1-r0 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-9.5_p1-r0 installed size:
-908 KiB
+openssh-client-default-9.6_p1-r0 installed size:
+916 KiB
 
-openssh-client-default-9.5_p1-r0 license:
+openssh-client-default-9.6_p1-r0 license:
 SSH-OpenSSH
 
 ```
@@ -327,16 +327,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-9.5_p1-r0 description:
+openssh-keygen-9.6_p1-r0 description:
 ssh helper program for generating keys
 
-openssh-keygen-9.5_p1-r0 webpage:
+openssh-keygen-9.6_p1-r0 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-9.5_p1-r0 installed size:
+openssh-keygen-9.6_p1-r0 installed size:
 556 KiB
 
-openssh-keygen-9.5_p1-r0 license:
+openssh-keygen-9.6_p1-r0 license:
 SSH-OpenSSH
 
 ```

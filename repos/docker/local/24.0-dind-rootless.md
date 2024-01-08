@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8a37e99773dd4f657aa039368e42ca58813c4b0372bd2bc21fafc68392efa42b`
+- Image ID: `sha256:c9c6d10e0275145a0f20c02eee33a6797ac8cdf40bb3c43e72f430bb5c3dd245`
 - Created: `2023-10-26T17:04:13Z`
-- Virtual Size: ~ 386.23 Mb  
+- Virtual Size: ~ 386.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
@@ -395,16 +395,16 @@ GPL-2.0-or-later
 ### `apk` package: `iptables`
 
 ```console
-iptables-1.8.10-r1 description:
+iptables-1.8.10-r3 description:
 Linux kernel firewall, NAT and packet mangling tools
 
-iptables-1.8.10-r1 webpage:
+iptables-1.8.10-r3 webpage:
 https://www.netfilter.org/projects/iptables/index.html
 
-iptables-1.8.10-r1 installed size:
+iptables-1.8.10-r3 installed size:
 2164 KiB
 
-iptables-1.8.10-r1 license:
+iptables-1.8.10-r3 license:
 GPL-2.0-or-later
 
 ```
@@ -412,16 +412,16 @@ GPL-2.0-or-later
 ### `apk` package: `iptables-legacy`
 
 ```console
-iptables-legacy-1.8.10-r1 description:
+iptables-legacy-1.8.10-r3 description:
 Linux kernel firewall, NAT and packet mangling tools (legacy xtables-legacy binaries)
 
-iptables-legacy-1.8.10-r1 webpage:
+iptables-legacy-1.8.10-r3 webpage:
 https://www.netfilter.org/projects/iptables/index.html
 
-iptables-legacy-1.8.10-r1 installed size:
+iptables-legacy-1.8.10-r3 installed size:
 92 KiB
 
-iptables-legacy-1.8.10-r1 license:
+iptables-legacy-1.8.10-r3 license:
 GPL-2.0-or-later
 
 ```
@@ -633,16 +633,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libip4tc`
 
 ```console
-libip4tc-1.8.10-r1 description:
+libip4tc-1.8.10-r3 description:
 Linux kernel firewall, NAT and packet mangling tools (legacy libip4tc library)
 
-libip4tc-1.8.10-r1 webpage:
+libip4tc-1.8.10-r3 webpage:
 https://www.netfilter.org/projects/iptables/index.html
 
-libip4tc-1.8.10-r1 installed size:
+libip4tc-1.8.10-r3 installed size:
 44 KiB
 
-libip4tc-1.8.10-r1 license:
+libip4tc-1.8.10-r3 license:
 GPL-2.0-or-later
 
 ```
@@ -650,16 +650,16 @@ GPL-2.0-or-later
 ### `apk` package: `libip6tc`
 
 ```console
-libip6tc-1.8.10-r1 description:
+libip6tc-1.8.10-r3 description:
 Linux kernel firewall, NAT and packet mangling tools (legacy libip6tc library)
 
-libip6tc-1.8.10-r1 webpage:
+libip6tc-1.8.10-r3 webpage:
 https://www.netfilter.org/projects/iptables/index.html
 
-libip6tc-1.8.10-r1 installed size:
+libip6tc-1.8.10-r3 installed size:
 44 KiB
 
-libip6tc-1.8.10-r1 license:
+libip6tc-1.8.10-r3 license:
 GPL-2.0-or-later
 
 ```
@@ -820,16 +820,16 @@ MIT
 ### `apk` package: `libxtables`
 
 ```console
-libxtables-1.8.10-r1 description:
+libxtables-1.8.10-r3 description:
 Linux kernel firewall, NAT and packet mangling tools (xtables library)
 
-libxtables-1.8.10-r1 webpage:
+libxtables-1.8.10-r3 webpage:
 https://www.netfilter.org/projects/iptables/index.html
 
-libxtables-1.8.10-r1 installed size:
+libxtables-1.8.10-r3 installed size:
 68 KiB
 
-libxtables-1.8.10-r1 license:
+libxtables-1.8.10-r3 license:
 GPL-2.0-or-later
 
 ```
@@ -922,16 +922,16 @@ X11
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-9.5_p1-r0 description:
+openssh-client-common-9.6_p1-r0 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-9.5_p1-r0 webpage:
+openssh-client-common-9.6_p1-r0 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-9.5_p1-r0 installed size:
-2828 KiB
+openssh-client-common-9.6_p1-r0 installed size:
+2872 KiB
 
-openssh-client-common-9.5_p1-r0 license:
+openssh-client-common-9.6_p1-r0 license:
 SSH-OpenSSH
 
 ```
@@ -939,16 +939,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-9.5_p1-r0 description:
+openssh-client-default-9.6_p1-r0 description:
 OpenBSD's SSH client
 
-openssh-client-default-9.5_p1-r0 webpage:
+openssh-client-default-9.6_p1-r0 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-9.5_p1-r0 installed size:
-908 KiB
+openssh-client-default-9.6_p1-r0 installed size:
+916 KiB
 
-openssh-client-default-9.5_p1-r0 license:
+openssh-client-default-9.6_p1-r0 license:
 SSH-OpenSSH
 
 ```
@@ -956,16 +956,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-9.5_p1-r0 description:
+openssh-keygen-9.6_p1-r0 description:
 ssh helper program for generating keys
 
-openssh-keygen-9.5_p1-r0 webpage:
+openssh-keygen-9.6_p1-r0 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-9.5_p1-r0 installed size:
+openssh-keygen-9.6_p1-r0 installed size:
 556 KiB
 
-openssh-keygen-9.5_p1-r0 license:
+openssh-keygen-9.6_p1-r0 license:
 SSH-OpenSSH
 
 ```
