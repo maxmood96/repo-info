@@ -310,13 +310,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.14
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_5.14.dsc' debianutils_5.14.dsc 1631 SHA512:a90531d0200bc05f82f62f081bc146ff856debf9d34b5dac8eae61bb6bd9aa57ea0dfa29b87f40b671e1c13da5a50bb3774efd8fa826e5b34b4e73a130f68a17
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_5.14.tar.xz' debianutils_5.14.tar.xz 79676 SHA512:4a152fec6c363c0ca26339bf8bf3f39ec3c10227bbfe5d2f5974c24a6207fdb6c34644ecfdf0c773d4c778b1a95f91a15697b12b5c0cd9a6d0d8f369373b956f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/debianutils/5.14/
+
 
 ### `dpkg` source package: `diffutils=1:3.10-1`
 
@@ -600,15 +600,13 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris grep=3.11-3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.11-3.dsc' grep_3.11-3.dsc 1618 SHA512:c2ad81ddf8dfe01527552cc3d9bec4f88261b085c4d4d1edb1f4890a52b2b8515098fe781cf587f436a2bf6b902c40d018c1349cbbee37dd6404181b1d1ca620
-'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.11.orig.tar.xz' grep_3.11.orig.tar.xz 1703776 SHA512:f254a1905a08c8173e12fbdd4fd8baed9a200217fba9d7641f0d78e4e002c1f2a621152d67027d9b25f0bb2430898f5233dc70909d8464fd13d7dd9298e65c42
-'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.11.orig.tar.xz.asc' grep_3.11.orig.tar.xz.asc 833 SHA512:487aba063373ca0594c519991f19b2a6a33b3da0d74735c890f3828fd0880e7e6f64495d2c8f9efa5da53d1eb2d446609bab2399a4b89dcb4510a632e31ffb54
-'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.11-3.debian.tar.xz' grep_3.11-3.debian.tar.xz 20592 SHA512:13d6976429c6ee7cc32d94fc50cdfa0370b3544cd3d51cff2704fdd69f3d09443de3f8d95730e2972a6c514ee00e850b068e2bfabd85b8e6da7509114429184b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/grep/3.11-3/
+
 
 ### `dpkg` source package: `gzip=1.12-1ubuntu1`
 
@@ -827,15 +825,13 @@ Licenses: (parsed from: `/usr/share/doc/libmd0/copyright`)
 - `public-domain-md5`
 - `public-domain-sha1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libmd=1.1.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libm/libmd/libmd_1.1.0-1.dsc' libmd_1.1.0-1.dsc 2283 SHA512:0838dfa6755a4e0ce750bc31fa7db32e66000ebfae117b92ad7f1b81b89fbfd1e209ad6bf2d5e19df5ef7b5f4d057c39974f4c475626ea69cc93d05d7fd64ceb
-'http://archive.ubuntu.com/ubuntu/pool/main/libm/libmd/libmd_1.1.0.orig.tar.xz' libmd_1.1.0.orig.tar.xz 271228 SHA512:5d0da3337038e474fae7377bbc646d17214e72dc848a7aadc157f49333ce7b5ac1456e45d13674bd410ea08477c6115fc4282fed6c8e6a0bf63537a418c0df96
-'http://archive.ubuntu.com/ubuntu/pool/main/libm/libmd/libmd_1.1.0.orig.tar.xz.asc' libmd_1.1.0.orig.tar.xz.asc 833 SHA512:b0ff3baa7eedc205ee6f8b844859145fa6922c39e8f62f1e997851a65b2881649b438a37baa5800d140541da6f4dacc9f92a370f945d7461937b8cdedeca1cef
-'http://archive.ubuntu.com/ubuntu/pool/main/libm/libmd/libmd_1.1.0-1.debian.tar.xz' libmd_1.1.0-1.debian.tar.xz 8156 SHA512:d5e657388c32afaa86e1ff86f35f354202065534173eadcc7118afefd1a37fc7f9e97a76f121f20ac7be8c6d53b7eeab242f2f52062e6679e4d470b969fcc581
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libmd/1.1.0-1/
+
 
 ### `dpkg` source package: `libseccomp=2.5.4-1ubuntu3`
 
@@ -1476,13 +1472,9 @@ Licenses: (parsed from: `/usr/share/doc/usrmerge/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris usrmerge=35ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/usrmerge/usrmerge_35ubuntu1.dsc' usrmerge_35ubuntu1.dsc 1717 SHA512:187148b5844858d99506dadb3dc0f18f439df2f01835d1849d07cccfc2819405a0cd722a68ab67e483b4d5fd69e14ce7cf376710ef59edc4ec21610f98dc3c40
-'http://archive.ubuntu.com/ubuntu/pool/main/u/usrmerge/usrmerge_35ubuntu1.tar.xz' usrmerge_35ubuntu1.tar.xz 15240 SHA512:5116c42163a7b972282ca7af66c268f29197a725fc91020bcd2fcd7ba31f150a705749f3fcf7b02b45d778ffff93e4bc93af0db9491dd28f82e7be9793e9fb0d
-```
 
 ### `dpkg` source package: `util-linux=2.39.2-6ubuntu1`
 
