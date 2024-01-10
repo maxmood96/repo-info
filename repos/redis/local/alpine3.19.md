@@ -1,10 +1,10 @@
-# `redis:7.2.3-alpine`
+# `redis:7.2.4-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d2d4688fcebeb127fbc1e00693c3b4165ba8a02bf1e0347dd7d9ba38f6199afe`
-- Created: `2023-12-08T04:19:49Z`
-- Virtual Size: ~ 41.00 Mb  
+- Image ID: `sha256:20658529aaf6112750e3d482b76cc4876527424cfcc8cd59bad44d43e364723c`
+- Created: `2024-01-09T16:09:57Z`
+- Virtual Size: ~ 46.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.17`
-  - `REDIS_VERSION=7.2.3`
-  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.2.3.tar.gz`
-  - `REDIS_DOWNLOAD_SHA=3e2b196d6eb4ddb9e743088bfc2915ccbb42d40f5a8a3edd8cb69c716ec34be7`
+  - `REDIS_VERSION=7.2.4`
+  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.2.4.tar.gz`
+  - `REDIS_DOWNLOAD_SHA=8d104c26a154b29fd67d6568b4f375212212ad41e0c2caa3d66480e78dbd3b59`
 
 ## `apk` (`.apk`-based packages)
 
@@ -157,16 +157,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r2 description:
+libcrypto3-3.1.4-r3 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r2 webpage:
+libcrypto3-3.1.4-r3 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r2 installed size:
+libcrypto3-3.1.4-r3 installed size:
 4500 KiB
 
-libcrypto3-3.1.4-r2 license:
+libcrypto3-3.1.4-r3 license:
 Apache-2.0
 
 ```
@@ -174,16 +174,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r2 description:
+libssl3-3.1.4-r3 description:
 SSL shared libraries
 
-libssl3-3.1.4-r2 webpage:
+libssl3-3.1.4-r3 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r2 installed size:
+libssl3-3.1.4-r3 installed size:
 548 KiB
 
-libssl3-3.1.4-r2 license:
+libssl3-3.1.4-r3 license:
 Apache-2.0
 
 ```
@@ -259,16 +259,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2023c-r1 description:
+tzdata-2023d-r0 description:
 Timezone data
 
-tzdata-2023c-r1 webpage:
+tzdata-2023d-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2023c-r1 installed size:
-3068 KiB
+tzdata-2023d-r0 installed size:
+3076 KiB
 
-tzdata-2023c-r1 license:
+tzdata-2023d-r0 license:
 Public-Domain
 
 ```
