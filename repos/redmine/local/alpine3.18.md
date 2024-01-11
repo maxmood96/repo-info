@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:64d8fc1b9eea208c08743f285eecccd6860ad4300873e39317c77c78efb68885`
+- Image ID: `sha256:4db19f1b00490831419f09b685172061e76f4e5c2c472ef3f1146fd6aefb3ecb`
 - Created: `2023-12-19T17:42:47Z`
-- Virtual Size: ~ 464.46 Mb  
+- Virtual Size: ~ 464.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -829,16 +829,16 @@ curl
 ### `apk` package: `libde265`
 
 ```console
-libde265-1.0.12-r0 description:
+libde265-1.0.15-r0 description:
 Open h.265 video codec implementation
 
-libde265-1.0.12-r0 webpage:
+libde265-1.0.15-r0 webpage:
 https://github.com/strukturag/libde265
 
-libde265-1.0.12-r0 installed size:
+libde265-1.0.15-r0 installed size:
 436 KiB
 
-libde265-1.0.12-r0 license:
+libde265-1.0.15-r0 license:
 LGPL-3.0-or-later
 
 ```
@@ -1696,16 +1696,16 @@ LGPL-2.1-only
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-9.3_p2-r0 description:
+openssh-client-common-9.3_p2-r1 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-9.3_p2-r0 webpage:
+openssh-client-common-9.3_p2-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-9.3_p2-r0 installed size:
+openssh-client-common-9.3_p2-r1 installed size:
 2804 KiB
 
-openssh-client-common-9.3_p2-r0 license:
+openssh-client-common-9.3_p2-r1 license:
 BSD
 
 ```
@@ -1713,16 +1713,16 @@ BSD
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-9.3_p2-r0 description:
+openssh-client-default-9.3_p2-r1 description:
 OpenBSD's SSH client
 
-openssh-client-default-9.3_p2-r0 webpage:
+openssh-client-default-9.3_p2-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-9.3_p2-r0 installed size:
+openssh-client-default-9.3_p2-r1 installed size:
 900 KiB
 
-openssh-client-default-9.3_p2-r0 license:
+openssh-client-default-9.3_p2-r1 license:
 BSD
 
 ```
@@ -1730,16 +1730,16 @@ BSD
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-9.3_p2-r0 description:
+openssh-keygen-9.3_p2-r1 description:
 ssh helper program for generating keys
 
-openssh-keygen-9.3_p2-r0 webpage:
+openssh-keygen-9.3_p2-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-9.3_p2-r0 installed size:
+openssh-keygen-9.3_p2-r1 installed size:
 556 KiB
 
-openssh-keygen-9.3_p2-r0 license:
+openssh-keygen-9.3_p2-r1 license:
 BSD
 
 ```
@@ -2308,16 +2308,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2023c-r1 description:
+tzdata-2023d-r0 description:
 Timezone data
 
-tzdata-2023c-r1 webpage:
+tzdata-2023d-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2023c-r1 installed size:
-3068 KiB
+tzdata-2023d-r0 installed size:
+3076 KiB
 
-tzdata-2023c-r1 license:
+tzdata-2023d-r0 license:
 Public-Domain
 
 ```
