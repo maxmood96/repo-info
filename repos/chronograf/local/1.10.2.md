@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b4bd0c58fb1f8c9a794de2565d53ffae04e1ca8b07e48f94863e5baa3aebd6f6`
-- Created: `2023-12-19T04:48:10.532670826Z`
+- Image ID: `sha256:0d0df62239302e1f6ecb647e8fbb91eda4cc29c02c59ba0006ebcb558742769d`
+- Created: `2024-01-11T04:33:18.834152172Z`
 - Virtual Size: ~ 237.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -387,12 +387,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/9.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/9.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.88.1-10+deb12u4`
+### `dpkg` source package: `curl=7.88.1-10+deb12u5`
 
 Binary Packages:
 
-- `curl=7.88.1-10+deb12u4`
-- `libcurl4:amd64=7.88.1-10+deb12u4`
+- `curl=7.88.1-10+deb12u5`
+- `libcurl4:amd64=7.88.1-10+deb12u5`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -412,18 +412,18 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.88.1-10+deb12u4
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1-10%2bdeb12u4.dsc' curl_7.88.1-10+deb12u4.dsc 3252 SHA256:9492b55f536f9e0536224b1f3d5ad854f590e8a6dd88b453bf9d2c0051816c6e
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1.orig.tar.gz' curl_7.88.1.orig.tar.gz 4343562 SHA256:cdb38b72e36bc5d33d5b8810f8018ece1baa29a8f215b4495e495ded82bbf3c7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1.orig.tar.gz.asc' curl_7.88.1.orig.tar.gz.asc 488 SHA256:7a5a55d7123149a1b357f298cf895bd0a601e3a2807005ef6c95f3752803485f
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1-10%2bdeb12u4.debian.tar.xz' curl_7.88.1-10+deb12u4.debian.tar.xz 64520 SHA256:54098b4b152358716e8c32e83ef07d9f6165045a9ae11820a38458f4facb710b
+$ apt-get source -qq --print-uris curl=7.88.1-10+deb12u5
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.88.1-10%2bdeb12u5.dsc' curl_7.88.1-10+deb12u5.dsc 3252 SHA256:b9128cbe8251c58ad5d1374af55c716b5946d3a47b3e575810fb0cf38f24cfc0
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.88.1.orig.tar.gz' curl_7.88.1.orig.tar.gz 4343562 SHA256:cdb38b72e36bc5d33d5b8810f8018ece1baa29a8f215b4495e495ded82bbf3c7
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.88.1.orig.tar.gz.asc' curl_7.88.1.orig.tar.gz.asc 488 SHA256:7a5a55d7123149a1b357f298cf895bd0a601e3a2807005ef6c95f3752803485f
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.88.1-10%2bdeb12u5.debian.tar.xz' curl_7.88.1-10+deb12u5.debian.tar.xz 66024 SHA256:688fbc081e03115d360e93267a7e5231b11a01b82c3c7254ea1e9509f2989c93
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.88.1-10+deb12u4/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.88.1-10+deb12u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.88.1-10+deb12u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.88.1-10+deb12u5/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.88.1-10+deb12u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.88.1-10+deb12u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-10`
 
