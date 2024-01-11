@@ -1,7 +1,7 @@
 ## `chronograf:latest`
 
 ```console
-$ docker pull chronograf@sha256:1564fb1891f23f9d03a7e24adbc1cf788295c855cf3a0dbf65ac5e8a484bcec3
+$ docker pull chronograf@sha256:8aebe0b589aa6a3afb1682339625f578df24049f773caf48cd0c2bf925629070
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -147,66 +147,66 @@ CMD ["chronograf"]
 ### `chronograf:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull chronograf@sha256:5bd8a314f132697c0738b1448068b4e5ef4b90ec4526dc4250ad1cf1bf40d8ed
+$ docker pull chronograf@sha256:f167ed6d9f2d213b6afec18389431914ab0522a1c0b4e79d19bbc493159fd212
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.6 MB (81601551 bytes)**  
+-	Total Size: **81.6 MB (81602076 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2029fcba43958022c38bd47cf756be831228b0de5808b033f6352a846f37882`
+-	Image ID: `sha256:8ef12e63abbc55ceeb51813ea294c0da05e843041a610806557586d6ab9c59f5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Tue, 19 Dec 2023 01:41:11 GMT
-ADD file:262fd7bf0bc26e5d2a229fba52626e22b8a93beac29733acfc60e716c26e689d in / 
-# Tue, 19 Dec 2023 01:41:11 GMT
+# Thu, 11 Jan 2024 02:40:44 GMT
+ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
+# Thu, 11 Jan 2024 02:40:45 GMT
 CMD ["bash"]
-# Tue, 19 Dec 2023 06:52:12 GMT
+# Thu, 11 Jan 2024 08:31:31 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done
-# Tue, 19 Dec 2023 06:52:12 GMT
+# Thu, 11 Jan 2024 08:31:31 GMT
 ENV CHRONOGRAF_VERSION=1.10.2
-# Tue, 19 Dec 2023 06:52:18 GMT
+# Thu, 11 Jan 2024 08:31:41 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps
-# Tue, 19 Dec 2023 06:52:19 GMT
+# Thu, 11 Jan 2024 08:31:41 GMT
 COPY file:6403df1bf15a98453f66ca6b38ee538c184409065ea1d3c321788dec9eaa5c77 in /usr/share/chronograf/LICENSE 
-# Tue, 19 Dec 2023 06:52:19 GMT
+# Thu, 11 Jan 2024 08:31:41 GMT
 COPY file:6a5854b87d89e3055231dd56f8f199c325f44eeed8faed4cf32833126a5b9cd9 in /usr/share/chronograf/agpl-3.0.md 
-# Tue, 19 Dec 2023 06:52:19 GMT
+# Thu, 11 Jan 2024 08:31:41 GMT
 EXPOSE 8888
-# Tue, 19 Dec 2023 06:52:19 GMT
+# Thu, 11 Jan 2024 08:31:41 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 19 Dec 2023 06:52:19 GMT
+# Thu, 11 Jan 2024 08:31:41 GMT
 COPY file:7ce45912f7e80a04754c20ff31c757dd5de5eb9a5845af3b183b4a5227dd1c1e in /entrypoint.sh 
-# Tue, 19 Dec 2023 06:52:19 GMT
+# Thu, 11 Jan 2024 08:31:42 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 Dec 2023 06:52:19 GMT
+# Thu, 11 Jan 2024 08:31:42 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:24e221e92a36ab5b0075dd156b4f2ff095532a9b0927946cf6070bb1bea208b8`  
-		Last Modified: Tue, 19 Dec 2023 01:44:38 GMT  
-		Size: 29.2 MB (29157269 bytes)  
+	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
+		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
+		Size: 29.2 MB (29157335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25528e50586e703a8d0b96794925dffd49a3c11ed5b28c7900efd2da177a3974`  
-		Last Modified: Tue, 19 Dec 2023 06:53:06 GMT  
-		Size: 7.6 MB (7646993 bytes)  
+	-	`sha256:61c918121983c92c482a788861966d60d836932b1051c9f54fe7e4e99babbcfb`  
+		Last Modified: Thu, 11 Jan 2024 08:32:31 GMT  
+		Size: 7.6 MB (7646999 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84a25f7fddb0c4726b93b4c41f070fa5e979b9c974025e21868cdfbafb8f3ea7`  
-		Last Modified: Tue, 19 Dec 2023 06:53:09 GMT  
-		Size: 44.8 MB (44772890 bytes)  
+	-	`sha256:6453f6050c4d35edc926c59a484a3874e110a11a224c30ebd144747c05c5abc6`  
+		Last Modified: Thu, 11 Jan 2024 08:32:34 GMT  
+		Size: 44.8 MB (44773357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44b645f60a59e0181445966b8f3291ed3823c834e51bdfc1c7ed5e5d9a587272`  
-		Last Modified: Tue, 19 Dec 2023 06:53:05 GMT  
-		Size: 12.2 KB (12250 bytes)  
+	-	`sha256:2c6b1a000c7504138d70b89d49222f884d7d763870ad31e0b16eb14e517e6361`  
+		Last Modified: Thu, 11 Jan 2024 08:32:29 GMT  
+		Size: 12.2 KB (12243 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc4746b4753b6df55eaf2ee32ac0882d4766ac6baa3259568c72ff5566a942a6`  
-		Last Modified: Tue, 19 Dec 2023 06:53:05 GMT  
-		Size: 11.9 KB (11909 bytes)  
+	-	`sha256:dd4c35062919b7cbd2e7defd479af83f5d02d3c6e665cf3fc067003726468de4`  
+		Last Modified: Thu, 11 Jan 2024 08:32:29 GMT  
+		Size: 11.9 KB (11902 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cab7e4479d3d188fc282ce7a406d2e216f222fe1f17ea23c496cbe6730249f78`  
-		Last Modified: Tue, 19 Dec 2023 06:53:04 GMT  
+	-	`sha256:6a20c9497d451df84e38f9690722b292a1066af964f1fadfa1c4470ad988367c`  
+		Last Modified: Thu, 11 Jan 2024 08:32:30 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
