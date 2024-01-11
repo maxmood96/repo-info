@@ -1,4 +1,4 @@
-## `debian:11.8-slim`
+## `debian:bullseye-20240110-slim`
 
 ```console
 $ docker pull debian@sha256:41c3fecb70015fd9c72d6df95573de3f92d5f4f46fdabe8dbd8d2bfb1531594d
@@ -15,7 +15,7 @@ $ docker pull debian@sha256:41c3fecb70015fd9c72d6df95573de3f92d5f4f46fdabe8dbd8d
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `debian:11.8-slim` - linux; amd64
+### `debian:bullseye-20240110-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:a42f02f3404b821018b7cb82bd48b2abf05743ea0a47f2c966f594f4f9f75be7
@@ -41,7 +41,7 @@ CMD ["bash"]
 		Size: 31.4 MB (31417955 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:11.8-slim` - linux; arm variant v5
+### `debian:bullseye-20240110-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:d22b9c55a805cb4aed1cf0148735ad18fab4a9166ae8ca62c10282ea641eed1c
@@ -67,7 +67,7 @@ CMD ["bash"]
 		Size: 28.9 MB (28921224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:11.8-slim` - linux; arm variant v7
+### `debian:bullseye-20240110-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:00b1a6b32c991dfd5e69a636aea4f34fc3bfa51f422489aa217c80fb0988b901
@@ -93,7 +93,7 @@ CMD ["bash"]
 		Size: 26.6 MB (26578974 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:11.8-slim` - linux; arm64 variant v8
+### `debian:bullseye-20240110-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:8f92d10520fb09e748aea858c3e367167567cc5b5a39afdafd855557935f3a3a
@@ -119,7 +119,7 @@ CMD ["bash"]
 		Size: 30.1 MB (30064010 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:11.8-slim` - linux; 386
+### `debian:bullseye-20240110-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:d5449c1eea31cb53eb2e8c934d8aa527c9178540a367dc04cd5780779c0ddb00
@@ -145,7 +145,7 @@ CMD ["bash"]
 		Size: 32.4 MB (32402672 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:11.8-slim` - linux; mips64le
+### `debian:bullseye-20240110-slim` - linux; mips64le
 
 ```console
 $ docker pull debian@sha256:af40e6d8471a8d3826d5731f17f59f43d5cef5e41e9a34554f6373f081946922
@@ -171,7 +171,7 @@ CMD ["bash"]
 		Size: 29.6 MB (29636033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:11.8-slim` - linux; ppc64le
+### `debian:bullseye-20240110-slim` - linux; ppc64le
 
 ```console
 $ docker pull debian@sha256:6687051decf6228396782b03ba39ee04f9a73122db220055060552bb648a538b
@@ -197,7 +197,7 @@ CMD ["bash"]
 		Size: 35.3 MB (35293800 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:11.8-slim` - linux; s390x
+### `debian:bullseye-20240110-slim` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:21534265371ce9e1979865a5d83ec0dbf5ce5aa686b7cc319d0a9ac6793e25c8
