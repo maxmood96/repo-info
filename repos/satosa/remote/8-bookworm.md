@@ -1,7 +1,7 @@
 ## `satosa:8-bookworm`
 
 ```console
-$ docker pull satosa@sha256:58d1a7e6cfc141b78eb99b0d20e235e5e8d04c2cec50af826df15b23de2c057c
+$ docker pull satosa@sha256:54d8cd9c51f6ab0c3247c69280d2bd321c2cb6c29e92ec0c22e52b4f5716cecd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -221,21 +221,21 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 ### `satosa:8-bookworm` - linux; 386
 
 ```console
-$ docker pull satosa@sha256:80fe617c8d30f6dbc936fb9e4ad65caec7b85ef98a2a80012a0b8444c3209e38
+$ docker pull satosa@sha256:2b89d4092c45c838fcdd558ae6c0b7f21996a7906b9ef37230ac1639b52415b0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **297.2 MB (297163913 bytes)**  
+-	Total Size: **357.2 MB (357230575 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:debced533e563df06daaebe86b434edcf44b8d7c42450b5e482e4137668fd4f0`
+-	Image ID: `sha256:0ff07bb877189589357ce6585f7aa19acc83a8347d751f6654751e187a04249f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["gunicorn","-b0.0.0.0:8080","satosa.wsgi:app"]`
 
 ```dockerfile
-# Tue, 19 Dec 2023 01:39:07 GMT
-ADD file:6f4083d57ea9644b5a827e67b0725087a15aa428272ec223ab968bf8b4623e42 in / 
-# Tue, 19 Dec 2023 01:39:07 GMT
+# Thu, 11 Jan 2024 02:38:39 GMT
+ADD file:48689786b7812032adc0d36643501f16ddee15750a8f0f8b614dba58e5037b2b in / 
+# Thu, 11 Jan 2024 02:38:40 GMT
 CMD ["bash"]
 # Fri, 08 Dec 2023 04:49:21 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -261,64 +261,64 @@ ENV PYTHON_GET_PIP_SHA256=9cc01665956d22b3bf057ae8287b035827bfd895da235bcea200ab
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 	; 	rm -f get-pip.py; 		pip --version # buildkit
 # Fri, 08 Dec 2023 04:49:21 GMT
 CMD ["python3"]
-# Fri, 22 Dec 2023 16:38:57 GMT
+# Thu, 11 Jan 2024 19:19:48 GMT
 RUN set -eux; 	groupadd -g 1000 satosa; 	useradd -m -g 1000 -u 1000 satosa; 	apt-get update; 	apt-get install -y --no-install-recommends 		jq 		libxml2-utils 		xmlsec1 	; 	rm -rf /var/lib/apt/lists/*; 	pip install --no-cache-dir 		yq 	;
-# Fri, 22 Dec 2023 16:38:58 GMT
+# Thu, 11 Jan 2024 19:19:49 GMT
 ENV SATOSA_VERSION=8.4.0
-# Fri, 22 Dec 2023 16:44:28 GMT
+# Thu, 11 Jan 2024 19:26:46 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		cargo 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		python3-dev 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 	pip install --no-cache-dir 		satosa==${SATOSA_VERSION} 	; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	mkdir /etc/satosa; 	chown -R satosa:satosa /etc/satosa
-# Fri, 22 Dec 2023 16:44:31 GMT
+# Thu, 11 Jan 2024 19:26:50 GMT
 RUN set -eux; 	python -c 'import urllib.request; urllib.request.urlretrieve("https://github.com/IdentityPython/SATOSA/archive/refs/tags/v'${SATOSA_VERSION%%[a-z]*}'.tar.gz","/tmp/satosa.tgz")'; 	mkdir /usr/share/satosa; 	tar --extract --directory /usr/share/satosa --strip-components=1 --file /tmp/satosa.tgz SATOSA-${SATOSA_VERSION%%[a-z]*}/example/; 	rm /tmp/satosa.tgz
-# Fri, 22 Dec 2023 16:44:31 GMT
+# Thu, 11 Jan 2024 19:26:50 GMT
 WORKDIR /etc/satosa
-# Fri, 22 Dec 2023 16:44:31 GMT
+# Thu, 11 Jan 2024 19:26:50 GMT
 COPY file:c55013587aaf85deb9d4e88a802c99946f6d607afbf641c34429da762c1aa229 in /usr/local/bin/ 
-# Fri, 22 Dec 2023 16:44:31 GMT
+# Thu, 11 Jan 2024 19:26:50 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 22 Dec 2023 16:44:31 GMT
+# Thu, 11 Jan 2024 19:26:50 GMT
 EXPOSE 8080
-# Fri, 22 Dec 2023 16:44:31 GMT
+# Thu, 11 Jan 2024 19:26:51 GMT
 USER satosa:satosa
-# Fri, 22 Dec 2023 16:44:31 GMT
+# Thu, 11 Jan 2024 19:26:51 GMT
 CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 ```
 
 -	Layers:
-	-	`sha256:8d4aad22fb6a12b8cc7a78d338dfb9bc2bd6d621517b374e446f2915833ea883`  
-		Last Modified: Tue, 19 Dec 2023 01:43:45 GMT  
-		Size: 30.1 MB (30143863 bytes)  
+	-	`sha256:de2bfe459016bec412fddc313b793adc6d47c8a4540608a6f3e217998027f073`  
+		Last Modified: Thu, 11 Jan 2024 02:43:20 GMT  
+		Size: 30.1 MB (30143875 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:060842d8471df6b1d7b6679ee7822d1ee69b6796ba62f2b10569646f78bd485f`  
-		Last Modified: Tue, 19 Dec 2023 09:29:40 GMT  
-		Size: 3.5 MB (3503019 bytes)  
+	-	`sha256:a01c2b3d6f8741d83e4797db8a4ac4c2eb19567d2b6c8a6d93ff46ed8b4d671e`  
+		Last Modified: Thu, 11 Jan 2024 14:57:29 GMT  
+		Size: 3.5 MB (3503022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:370763ac4b739e6e1e4c3cc50825b4608b9d4d80d6aa2d8137d00c4982eb25eb`  
-		Last Modified: Tue, 19 Dec 2023 09:30:43 GMT  
-		Size: 12.2 MB (12209498 bytes)  
+	-	`sha256:e72c4260f3a3bf7653c308e691118928c95411e5c38ac952fd2ddc2628ecc1fe`  
+		Last Modified: Thu, 11 Jan 2024 14:58:34 GMT  
+		Size: 12.2 MB (12210005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4039e4f51436b85df5da48e118fe2068fc0b50dbcd6e9508f6d8e35348e60c18`  
-		Last Modified: Tue, 19 Dec 2023 09:30:40 GMT  
-		Size: 245.0 B  
+	-	`sha256:e68ae8c119b0bd541ee1f61feeebe6aacc1049a21057d0770ff64b5e57363a97`  
+		Last Modified: Thu, 11 Jan 2024 14:58:31 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d78c26c41a625d4ca805179177f4509d0f1100503c19e46d7895ab07a197803c`  
-		Last Modified: Tue, 19 Dec 2023 09:30:41 GMT  
-		Size: 3.0 MB (2958788 bytes)  
+	-	`sha256:fb907e60bf66b605443abc7a3849fd0c8f414c62b12287a84e4d97a889815ec5`  
+		Last Modified: Thu, 11 Jan 2024 14:58:32 GMT  
+		Size: 3.0 MB (2958880 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31feec5056e212ccb1ead5cd7bc1e2472169d2c0b280aa3f5549a6dfdeb07e4b`  
-		Last Modified: Fri, 22 Dec 2023 16:52:13 GMT  
-		Size: 24.2 MB (24168433 bytes)  
+	-	`sha256:5552661500c4735137a00410228a88ee95c6f634efe0b5255946e1bb279c9dfc`  
+		Last Modified: Thu, 11 Jan 2024 19:27:25 GMT  
+		Size: 24.2 MB (24171588 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d641b6ecc8101aad9dcc9b01180f4f3cc40f171072df297a59a433cfd49ec17`  
-		Last Modified: Fri, 22 Dec 2023 16:52:29 GMT  
-		Size: 224.2 MB (224167960 bytes)  
+	-	`sha256:01fd341c2975b4f232ad7fc40486fee081eb2329ef20c13141ebdf010dd9c8e7`  
+		Last Modified: Thu, 11 Jan 2024 19:27:46 GMT  
+		Size: 284.2 MB (284230855 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a78e0c4e1cbe72b5cb071fe5ebac109214a4af07b36af4fa69220fae8ba96e36`  
-		Last Modified: Fri, 22 Dec 2023 16:52:07 GMT  
-		Size: 10.0 KB (9964 bytes)  
+	-	`sha256:3d45fd9c79906e6ea81e11df839feb0ab755515cb881041a19f52b4103fc834a`  
+		Last Modified: Thu, 11 Jan 2024 19:27:19 GMT  
+		Size: 10.0 KB (9966 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a61b4c82d06ce1432365fc32e2262728dd59e6a4a6060f52e0f7a03989f8b5ca`  
-		Last Modified: Fri, 22 Dec 2023 16:52:07 GMT  
-		Size: 2.1 KB (2143 bytes)  
+	-	`sha256:4c3bdf62053c14367ecb1798da49edb2502fac647bed51c26bb7fb041328cf62`  
+		Last Modified: Thu, 11 Jan 2024 19:27:19 GMT  
+		Size: 2.1 KB (2142 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `satosa:8-bookworm` - linux; ppc64le
