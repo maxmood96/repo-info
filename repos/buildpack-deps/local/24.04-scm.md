@@ -29,15 +29,13 @@ Licenses: (parsed from: `/usr/share/doc/libacl1/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris acl=2.3.1-3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.1-3.dsc' acl_2.3.1-3.dsc 2508 SHA512:4162efc9071c57eeced2c4faa9b13c8f46dac98d7876db14c7bc37ec526c02f2a2aced5b828f594bfa101d37a594573e865b856a96538a524df66b715082e15c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.1.orig.tar.xz' acl_2.3.1.orig.tar.xz 355676 SHA512:7d02f05d17305f8587ab485395b00c7fdb8e44c1906d0d04b70a43a3020803e8b2b8c707abb6147f794867dfa87bd51769c2d3e11a3db55ecbd2006a6e6231dc
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.1.orig.tar.xz.asc' acl_2.3.1.orig.tar.xz.asc 833 SHA512:be046f3bf1ac7e21d2a07bf6ea87c1fedeed2f9d370d8bf3de1aa0c448de5484b1523697415849b6b7ca23e48e3df5353f6aebe850eb20fc2044d2681c71f298
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.1-3.debian.tar.xz' acl_2.3.1-3.debian.tar.xz 30968 SHA512:a29af03f79bf6cd50852c9538013458b8bdb579c2059df1682120ced75bf8023b32a4f4c2fff8466364d1c97ad4113f84fdfbdc1c991b3f5a7fee2b1db2692d0
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/acl/2.3.1-3/
+
 
 ### `dpkg` source package: `adduser=3.137ubuntu1`
 
@@ -348,15 +346,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.4.0-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.4.0-2ubuntu1.dsc' curl_8.4.0-2ubuntu1.dsc 3159 SHA512:5693a8d8705dd9668e19b2bf9ddbb67230dbb6cb4332a12b19d404735f8d1623acd39abfdb95aac01e289021477de038f9d1fb8f75a5f1125eceb0fd8e82443e
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.4.0.orig.tar.gz' curl_8.4.0.orig.tar.gz 4424232 SHA512:375d241effccde852cfba32aa61be406f6c6e8ef2773b48d57bfa1ff99fdf414dc08bdb6b3a65930e53b28e31246a4bc396c81054ae9c560a3bf58cca0ae78b0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.4.0.orig.tar.gz.asc' curl_8.4.0.orig.tar.gz.asc 488 SHA512:8341c5a8e5e0d0acc965cf80c226ca445fc69b823c4c5ac93a5aca00be44ac586f7a4e1399b707829b8469a2bd0e1a86a79489d28e842355bad6b7ba67f8d4ab
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.4.0-2ubuntu1.debian.tar.xz' curl_8.4.0-2ubuntu1.debian.tar.xz 46484 SHA512:8d107b507a1123c5520ba90a9f582f822be200d04bb9caab1b806cd89d9c812619fb3b47e24ab4da6c1097e51f109e2ff18029af370baf7db970e07abc46173c
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-4`
 
@@ -533,13 +525,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.22.1ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.1ubuntu5.dsc' dpkg_1.22.1ubuntu5.dsc 3148 SHA512:a146e7e35075050c59e291bd8d4cc54196cd215d03c815b43054c32c6127ee7c50005914023be99e8a269a909002a54b4dcd669520fb198872f622645a87f358
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.1ubuntu5.tar.xz' dpkg_1.22.1ubuntu5.tar.xz 5610676 SHA512:88c770a69c7087beae8abfe8f928178055edb855cbe72b870eb6a84fd8e88d9944d0e4688d8987d0c9b8f0bd7631332286a337fd98ff2ffecfc20e371486bcdf
-```
 
 ### `dpkg` source package: `e2fsprogs=1.47.0-2ubuntu1`
 
@@ -1508,14 +1496,13 @@ Licenses: (parsed from: `/usr/share/doc/libtirpc-common/copyright`, `/usr/share/
 - `PERMISSIVE`
 - `__AUTO_PERMISSIVE__`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtirpc=1.3.4+ds-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtirpc/libtirpc_1.3.4%2bds-1.dsc' libtirpc_1.3.4+ds-1.dsc 2129 SHA512:2e21fcf13e32aafbf287c436ccfd9e9c03cbfccf8a13359887ad4f0499f437693fac1ffe15b471a9c0a4a0bb6fed9071c785ee825c86d919b07c68871c21dc4c
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtirpc/libtirpc_1.3.4%2bds.orig.tar.gz' libtirpc_1.3.4+ds.orig.tar.gz 700735 SHA512:125e26247f1ffbf5ce310657515eb84be03b69867e5efbacac6768f406470f9124b66124639daccd9af0c8220a8099cb5dbbe0a370315c61069aa73a5b53815d
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtirpc/libtirpc_1.3.4%2bds-1.debian.tar.xz' libtirpc_1.3.4+ds-1.debian.tar.xz 11436 SHA512:1f386ce39bbba9d76399581329460ec871364e33550b476fcfe71b341b8dbe644d6b0ce6e75c31b26b5393b4299869fd27cbcd68e3d5dbdddceebd68fbb6071e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libtirpc/1.3.4+ds-1/
+
 
 ### `dpkg` source package: `libunistring=1.1-2`
 
