@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:17e7291203f4ceb144558b61d792902b5a7320a780ea0b3f98de0fdfa868e47a`
-- Created: `2023-12-19T02:05:07.666534192Z`
+- Image ID: `sha256:65af9f8b693b3abc32bfb7e46afc47c7b0c8655bebbb9cc0d411c81ca4662667`
+- Created: `2024-01-11T05:59:40.929145016Z`
 - Virtual Size: ~ 787.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -445,12 +445,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.30-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.30-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.64.0-4+deb10u7`
+### `dpkg` source package: `curl=7.64.0-4+deb10u8`
 
 Binary Packages:
 
-- `curl=7.64.0-4+deb10u7`
-- `libcurl4:amd64=7.64.0-4+deb10u7`
+- `curl=7.64.0-4+deb10u8`
+- `libcurl4:amd64=7.64.0-4+deb10u8`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -461,13 +461,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.64.0-4+deb10u8
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0-4%2bdeb10u8.dsc' curl_7.64.0-4+deb10u8.dsc 2694 SHA256:43cb6b77daab8e8861a5c01bf1f44915fa6a94161f15b0ed2403be90e5a80bc2
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0.orig.tar.gz' curl_7.64.0.orig.tar.gz 4032645 SHA256:cb90d2eb74d4e358c1ed1489f8e3af96b50ea4374ad71f143fa4595e998d81b5
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0-4%2bdeb10u8.debian.tar.xz' curl_7.64.0-4+deb10u8.debian.tar.xz 71744 SHA256:b41c8488fac73431610536b19b63d96e29cd12d1b4f51e433ce2ac206a7d5683
+```
 
-- http://snapshot.debian.org/package/curl/7.64.0-4+deb10u7/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.64.0-4+deb10u8/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.64.0-4+deb10u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.64.0-4+deb10u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-1+deb10u2`
 
