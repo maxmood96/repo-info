@@ -1,7 +1,7 @@
 ## `perl:devel-slim-threaded-bookworm`
 
 ```console
-$ docker pull perl@sha256:4a5e88c5ee7f7bf2cbc5352bd554662d220e9aa01872b39e933a74eb4c61e7a5
+$ docker pull perl@sha256:c7825ec2d69b51c640a3ea9b56399a1d9dfb0ec5cdabedd18bd1e08fddf94492
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -371,19 +371,19 @@ $ docker pull perl@sha256:5dc605e8bbdd6c0b6a455f70610413d83b7313a836a6973bda1d14
 ### `perl:devel-slim-threaded-bookworm` - linux; mips64le
 
 ```console
-$ docker pull perl@sha256:e9263a8e1d1e0c3f1942de4fc08ae3655016bffa1f8a9675e323f87a9d6cc719
+$ docker pull perl@sha256:a25d21118e67857ead5ffdff4bc7d3be3add6b0e79ee8fdf3db71fe5474fb24b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.0 MB (56009790 bytes)**  
+-	Total Size: **56.0 MB (56029128 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d60548c2c99df959730dea058455636991f42135e62050ead6a38404dbac49c`
+-	Image ID: `sha256:682c62be135a006e6a371040fa0d3d617b2a00e3e606757c1209a9bc87c73b49`
 -	Default Command: `["perl5.39.6","-de0"]`
 
 ```dockerfile
-# Tue, 19 Dec 2023 02:13:36 GMT
-ADD file:dcd5696ac281b24df52a518e2402c7f7a4caedfcba0d82e195b7c06cd3a38fdd in / 
-# Tue, 19 Dec 2023 02:13:40 GMT
+# Sun, 31 Dec 2023 10:01:19 GMT
+ADD file:61bc6da4a8a8247e6b88cf149051dbb04a6a5e6e1ffc5da16a85d1b4f24be297 in / 
+# Sun, 31 Dec 2023 10:01:19 GMT
 CMD ["bash"]
 # Sun, 31 Dec 2023 10:01:19 GMT
 WORKDIR /usr/src/perl
@@ -396,41 +396,41 @@ CMD ["perl5.39.6" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:12b1322ffb17b8e81ca1c6d9d7118e2fcee0b9d971aa3c90601e6345804a60d1`  
-		Last Modified: Tue, 19 Dec 2023 02:24:36 GMT  
-		Size: 29.1 MB (29121427 bytes)  
+	-	`sha256:4f1541106f1f6cee2d65a870d8d3fbbaef35e04dbcb8abaa9623a9f7137a6ae5`  
+		Last Modified: Thu, 11 Jan 2024 02:22:46 GMT  
+		Size: 29.1 MB (29121397 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b7a73938a18f530616b5206e6bd2c5b2c974da3595b0e7248e1698bf2d6f2a7`  
-		Last Modified: Mon, 01 Jan 2024 22:13:17 GMT  
+	-	`sha256:f0dcd18743c2f4e0070ca9d8d5b7b8ac5f7f8d405be3530d395ba2aaf9a787a8`  
+		Last Modified: Fri, 12 Jan 2024 05:57:01 GMT  
 		Size: 136.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d338ceebc7cc7e5ac10216ec50a1efc7e16fae76017a3e1cea8539699c1e5bb7`  
-		Last Modified: Tue, 02 Jan 2024 09:24:32 GMT  
-		Size: 26.9 MB (26888095 bytes)  
+	-	`sha256:c09a27387f8aaac9b1b98fd31f99c5d8a6a9dcc9d2e01bb3b419a7e02db185ca`  
+		Last Modified: Fri, 12 Jan 2024 17:05:26 GMT  
+		Size: 26.9 MB (26907463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc54a1554400c6f0ecbb5b705136b283e09159a05788b2d2bd91cc7df65c061a`  
-		Last Modified: Tue, 02 Jan 2024 09:24:29 GMT  
+	-	`sha256:ce662af2390ac2c8b3f99abd9e29cc3ce85fb252fdf0403fa1bf0a4f16afa47a`  
+		Last Modified: Fri, 12 Jan 2024 17:05:23 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `perl:devel-slim-threaded-bookworm` - unknown; unknown
 
 ```console
-$ docker pull perl@sha256:68e9a724dc63190c1ea356be22f2c4bd70fd525730881cb54d93b9f23efc2695
+$ docker pull perl@sha256:342e86ca863c88d24493f8d1c182625bbc29b1fcd2c32d01378249d2bcc6df90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.6 KB (16572 bytes)**  
+-	Total Size: **16.6 KB (16573 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c4c42e1c444114bd49bb3b49db9b8ac00848e09eb00e5dd008a5e3a7f638fba`
+-	Image ID: `sha256:276a607262c5b60c421fad60557da74df6563409f4d44479646b5844ece64a71`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ed540915133b8d5ba33bcd90dccf1a138f085baf45d8ee6efd4f6322345c880e`  
-		Last Modified: Tue, 02 Jan 2024 09:24:29 GMT  
-		Size: 16.6 KB (16572 bytes)  
+	-	`sha256:32043f8f41dd1bc0b1e7164650669323ff025f4bab61440059dad0de8ec76457`  
+		Last Modified: Fri, 12 Jan 2024 17:05:23 GMT  
+		Size: 16.6 KB (16573 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `perl:devel-slim-threaded-bookworm` - linux; ppc64le
