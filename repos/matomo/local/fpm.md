@@ -1,10 +1,10 @@
-# `matomo:5.0.0-fpm`
+# `matomo:5.0.1-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f5ec0ddbf5347616723b8ee641d7d2e1c6b5f080cb5b831612c82f05c96ef22e`
-- Created: `2023-12-20T23:44:03.207247732Z`
-- Virtual Size: ~ 572.38 Mb  
+- Image ID: `sha256:38cbfed5d22f7204d18d23386f05d991ae1d1000f5e0f584654d5e54bbc014ea`
+- Created: `2024-01-11T19:11:32.75155081Z`
+- Virtual Size: ~ 572.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,12 +17,12 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.13`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.13.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.13.tar.xz.asc`
-  - `PHP_SHA256=2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b`
+  - `PHP_VERSION=8.2.14`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.14.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.14.tar.xz.asc`
+  - `PHP_SHA256=763ecd39fcf51c3815af6ef6e43fa9aa0d0bd8e5a615009e5f4780c92705f583`
   - `PHP_MEMORY_LIMIT=256M`
-  - `MATOMO_VERSION=5.0.0`
+  - `MATOMO_VERSION=5.0.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -485,12 +485,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/9.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/9.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.88.1-10+deb12u4`
+### `dpkg` source package: `curl=7.88.1-10+deb12u5`
 
 Binary Packages:
 
-- `curl=7.88.1-10+deb12u4`
-- `libcurl4:amd64=7.88.1-10+deb12u4`
+- `curl=7.88.1-10+deb12u5`
+- `libcurl4:amd64=7.88.1-10+deb12u5`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -510,18 +510,18 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.88.1-10+deb12u4
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1-10%2bdeb12u4.dsc' curl_7.88.1-10+deb12u4.dsc 3252 SHA256:9492b55f536f9e0536224b1f3d5ad854f590e8a6dd88b453bf9d2c0051816c6e
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1.orig.tar.gz' curl_7.88.1.orig.tar.gz 4343562 SHA256:cdb38b72e36bc5d33d5b8810f8018ece1baa29a8f215b4495e495ded82bbf3c7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1.orig.tar.gz.asc' curl_7.88.1.orig.tar.gz.asc 488 SHA256:7a5a55d7123149a1b357f298cf895bd0a601e3a2807005ef6c95f3752803485f
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1-10%2bdeb12u4.debian.tar.xz' curl_7.88.1-10+deb12u4.debian.tar.xz 64520 SHA256:54098b4b152358716e8c32e83ef07d9f6165045a9ae11820a38458f4facb710b
+$ apt-get source -qq --print-uris curl=7.88.1-10+deb12u5
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.88.1-10%2bdeb12u5.dsc' curl_7.88.1-10+deb12u5.dsc 3252 SHA256:b9128cbe8251c58ad5d1374af55c716b5946d3a47b3e575810fb0cf38f24cfc0
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.88.1.orig.tar.gz' curl_7.88.1.orig.tar.gz 4343562 SHA256:cdb38b72e36bc5d33d5b8810f8018ece1baa29a8f215b4495e495ded82bbf3c7
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.88.1.orig.tar.gz.asc' curl_7.88.1.orig.tar.gz.asc 488 SHA256:7a5a55d7123149a1b357f298cf895bd0a601e3a2807005ef6c95f3752803485f
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.88.1-10%2bdeb12u5.debian.tar.xz' curl_7.88.1-10+deb12u5.debian.tar.xz 66024 SHA256:688fbc081e03115d360e93267a7e5231b11a01b82c3c7254ea1e9509f2989c93
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.88.1-10+deb12u4/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.88.1-10+deb12u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.88.1-10+deb12u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.88.1-10+deb12u5/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.88.1-10+deb12u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.88.1-10+deb12u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-10`
 
@@ -2162,11 +2162,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.67-1`
+### `dpkg` source package: `linux=6.1.69-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.67-1`
+- `linux-libc-dev:amd64=6.1.69-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2181,17 +2181,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.67-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.67-1.dsc' linux_6.1.67-1.dsc 290924 SHA256:1da84a3bc6950236ff6b22504ba279804bb18d05dc5b03c86ffb29ff1ef4c6e9
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.67.orig.tar.xz' linux_6.1.67.orig.tar.xz 137495096 SHA256:a1307f650d1a9c24e0318c3a92b16f152409195140f52bc75ec38c431433e3ca
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.67-1.debian.tar.xz' linux_6.1.67-1.debian.tar.xz 1580580 SHA256:ddf9925ca2b5fdda7a8372154da7bf80d1cb9ec324b7b39d2f4ed296456b1aad
+$ apt-get source -qq --print-uris linux=6.1.69-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.69-1.dsc' linux_6.1.69-1.dsc 290924 SHA256:eff66c55a2e6a56cf37ff8c06fb830740ba2ff869dc51b98e789acf702487c91
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.69.orig.tar.xz' linux_6.1.69.orig.tar.xz 137507972 SHA256:b0a5f7285bffe9f0b7eca2675fe097fd4aeec1bac6d31b76239ba718d3b4fc02
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.69-1.debian.tar.xz' linux_6.1.69-1.debian.tar.xz 1586832 SHA256:6ccc5bc6a11a5e592b396702c9975b56c7fd7e758322180927e0acf07c884370
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.67-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.67-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.67-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.69-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.69-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.69-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
