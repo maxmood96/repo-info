@@ -1,7 +1,7 @@
 ## `perl:bookworm`
 
 ```console
-$ docker pull perl@sha256:9adddab4baa5ed029794df301997a93486e902c4a283f151eed44946a9415695
+$ docker pull perl@sha256:2f8518c2fab7900b80993a371bb4ff005c18d05c04d0da33741735b795c1c71d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -113,25 +113,25 @@ $ docker pull perl@sha256:6e37eb5246aa1792f7023d2148c045fdb21f58e94d385bfe3c8a06
 ### `perl:bookworm` - linux; arm variant v5
 
 ```console
-$ docker pull perl@sha256:6d682492e470d50c4dd9a0cb2316ca054084264089ecf74911847f5324f68d7d
+$ docker pull perl@sha256:d7c63a5314bb5b5702d1ae43da646fce2fe8c7dd56d4de86360a196f3e98dc3c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **330.9 MB (330886586 bytes)**  
+-	Total Size: **330.9 MB (330912417 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:41695c4284648bff3968a3347e6aedd06a7fe5f9ddbc8fbaef993335ea4cab07`
+-	Image ID: `sha256:16e5ae4bd24ce021c1ad4fb05ac6c9227b11c8b30016d32573793a6add1a8bca`
 -	Default Command: `["perl5.38.2","-de0"]`
 
 ```dockerfile
-# Tue, 19 Dec 2023 01:55:14 GMT
-ADD file:a6a83a649ad34de44e3b18ac2ef474733028a38445b36395b37a47906a17e460 in / 
-# Tue, 19 Dec 2023 01:55:15 GMT
+# Sun, 31 Dec 2023 10:01:19 GMT
+ADD file:a0f6aa0cd43d2f5d230b0fc0ff4408d84c08d1f2bb9c4a0b781f38a9be437f33 in / 
+# Sun, 31 Dec 2023 10:01:19 GMT
 CMD ["bash"]
-# Tue, 19 Dec 2023 05:21:34 GMT
+# Sun, 31 Dec 2023 10:01:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 19 Dec 2023 05:21:59 GMT
+# Sun, 31 Dec 2023 10:01:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 19 Dec 2023 05:23:24 GMT
+# Sun, 31 Dec 2023 10:01:19 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 # Sun, 31 Dec 2023 10:01:19 GMT
 WORKDIR /usr/src/perl
@@ -144,56 +144,56 @@ CMD ["perl5.38.2" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:f3aac8ada11b4cd51c598b397af8986343d5ffa06ce2a7a7c7c80f4ea6f5e522`  
-		Last Modified: Tue, 19 Dec 2023 01:58:07 GMT  
-		Size: 47.3 MB (47319238 bytes)  
+	-	`sha256:4aaad31c96d846308a92a43b3da192033e7d93114975064de59eead39852d764`  
+		Last Modified: Thu, 11 Jan 2024 01:53:38 GMT  
+		Size: 47.3 MB (47319075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0fd25a16876a3944cbd080157b9e23fe47b07ccfaa03a3b8075979027a60208`  
-		Last Modified: Tue, 19 Dec 2023 05:31:23 GMT  
-		Size: 22.7 MB (22724641 bytes)  
+	-	`sha256:0152a384e8878c46118f3126b9adf0d1b37da59b15217012bce436250aca97ad`  
+		Last Modified: Thu, 11 Jan 2024 07:05:51 GMT  
+		Size: 22.7 MB (22724699 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f6dd8a0a191b42cdb49dcb6ca7c111242e7ef4d447f3b729605f30173433bba2`  
-		Last Modified: Tue, 19 Dec 2023 05:31:46 GMT  
-		Size: 61.5 MB (61508870 bytes)  
+	-	`sha256:e8339f95fb05c1bc823b89651b26cbcfdd6869404686d20c6e2598f1a41b6746`  
+		Last Modified: Thu, 11 Jan 2024 07:06:18 GMT  
+		Size: 61.5 MB (61515694 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe5ddaed1389aec60f80faad6640540555cb8a57f3acbc1566f210c60f5773d9`  
-		Last Modified: Tue, 19 Dec 2023 05:32:27 GMT  
-		Size: 184.4 MB (184416924 bytes)  
+	-	`sha256:2b396b7a38e14323fbd2ebcf4ac468a33078f5c8c5a3dc78e52afa3828c7c85a`  
+		Last Modified: Thu, 11 Jan 2024 07:07:05 GMT  
+		Size: 184.4 MB (184416774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9eb572e40cc22058b20b4f79a200e14f80a5200853df4aa2bbf0e0cf3a47c7c4`  
-		Last Modified: Wed, 20 Dec 2023 20:46:02 GMT  
-		Size: 135.0 B  
+	-	`sha256:fbed211b7c053b209705580320b3fcdb6cdc1735f5183365057179fd6c3e9b78`  
+		Last Modified: Fri, 12 Jan 2024 16:20:18 GMT  
+		Size: 136.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:679225b8df0d1d403edefe75856c642d6218daa3968f695df3a9cb860b8508a0`  
-		Last Modified: Mon, 01 Jan 2024 21:15:39 GMT  
-		Size: 14.9 MB (14916645 bytes)  
+	-	`sha256:e29bd3a2a20c95a90e8faf06c27e1dbc33b565233da4eecc0fe57899019e19cb`  
+		Last Modified: Fri, 12 Jan 2024 16:20:19 GMT  
+		Size: 14.9 MB (14935907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da441937472c603b2fec8eedc8e9e6b6c49cf976b635853a30624e68d0c8f05d`  
-		Last Modified: Mon, 01 Jan 2024 21:15:38 GMT  
-		Size: 133.0 B  
+	-	`sha256:343935d353f28f247dfb1cc0d921fa38bbcd6eea9710d4af19861e162e092b15`  
+		Last Modified: Fri, 12 Jan 2024 16:20:18 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `perl:bookworm` - unknown; unknown
 
 ```console
-$ docker pull perl@sha256:713d0746c7e41d2f1ea413dece9942069aa671ba5d7071f5c8aa61d0535de19b
+$ docker pull perl@sha256:3fc1d6d4a00fcdc5c5b8090d40ce5116723f136e4faf926bc8137a369516c57c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **13.2 MB (13245594 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df344a9eede384c985231bd46a8ee1ea403ec14b3881bc9b37e376f370bdc6b6`
+-	Image ID: `sha256:f4728806101064f2112461e089f9de64c7a76d9bbc4f08f6c1974b428048448d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bf3d325c276b56ae566f8d7b29fb219ac3ee55003515d40fc42cf44e6e466743`  
-		Last Modified: Mon, 01 Jan 2024 21:15:39 GMT  
+	-	`sha256:6a6084eb4e80fa24316db9b1c9fc17e55f431823e3cc7020327845630cd80a4f`  
+		Last Modified: Fri, 12 Jan 2024 16:20:18 GMT  
 		Size: 13.2 MB (13228379 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e5a13cb795fdf078965b854717861b7a285d0f17a20355bd39ab75d53bbeccff`  
-		Last Modified: Mon, 01 Jan 2024 21:15:38 GMT  
+	-	`sha256:e4bb8e75bd91b63edeccee7b469cad6cf2cce0faf83640c362d6785d661b8963`  
+		Last Modified: Fri, 12 Jan 2024 16:20:18 GMT  
 		Size: 17.2 KB (17215 bytes)  
 		MIME: application/vnd.in-toto+json
 
