@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:225d090f3731833a1e65633ed6ece19305638f0e0dcc9d0358793d58477d61f3`
+- Image ID: `sha256:beb9b146dc6dc9c38e1acba7a3c48dcff27e3870d579b9007c56d8ef41c156ad`
 - Created: `2023-12-31T10:01:19Z`
-- Virtual Size: ~ 179.81 Mb  
+- Virtual Size: ~ 179.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["perl5.38.2","-de0"]`

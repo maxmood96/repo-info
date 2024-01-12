@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0dd1ad14366d5d43ffe7bb85e51a5291ef70ef90adf634d2856e7e8669e3007d`
+- Image ID: `sha256:8cf60bb2159c386fcb80d3eaff3bd975abf761d9ae4b8287f5c28f826141fc73`
 - Created: `2023-12-31T10:01:19Z`
-- Virtual Size: ~ 895.44 Mb  
+- Virtual Size: ~ 895.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["perl5.38.2","-de0"]`
@@ -590,14 +590,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.32-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.32-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.74.0-1.3+deb11u10`
+### `dpkg` source package: `curl=7.74.0-1.3+deb11u11`
 
 Binary Packages:
 
-- `curl=7.74.0-1.3+deb11u10`
-- `libcurl3-gnutls:amd64=7.74.0-1.3+deb11u10`
-- `libcurl4:amd64=7.74.0-1.3+deb11u10`
-- `libcurl4-openssl-dev:amd64=7.74.0-1.3+deb11u10`
+- `curl=7.74.0-1.3+deb11u11`
+- `libcurl3-gnutls:amd64=7.74.0-1.3+deb11u11`
+- `libcurl4:amd64=7.74.0-1.3+deb11u11`
+- `libcurl4-openssl-dev:amd64=7.74.0-1.3+deb11u11`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -608,13 +608,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.74.0-1.3+deb11u11
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0-1.3%2bdeb11u11.dsc' curl_7.74.0-1.3+deb11u11.dsc 2703 SHA256:0f294bd38cdfd08c4f3d259c64d1a573226acfc33dcd8a978995e5ac06c3051c
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0.orig.tar.gz' curl_7.74.0.orig.tar.gz 4043409 SHA256:e56b3921eeb7a2951959c02db0912b5fcd5fdba5aca071da819e1accf338bbd7
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0-1.3%2bdeb11u11.debian.tar.xz' curl_7.74.0-1.3+deb11u11.debian.tar.xz 73396 SHA256:78b7ad872075b48afe37d15089e6bb0831a1fdeabc40b1ee2987fc40a8b44290
+```
 
-- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u10/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u11/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2.1+deb11u1`
 
@@ -3674,11 +3681,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=5.10.197-1`
+### `dpkg` source package: `linux=5.10.205-2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.10.197-1`
+- `linux-libc-dev:amd64=5.10.205-2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3694,17 +3701,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.10.197-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.197-1.dsc' linux_5.10.197-1.dsc 205879 SHA256:6455699dc3a343e7a5890d50cda7bae8654e3f5c9b1b716384b96617539d3507
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.197.orig.tar.xz' linux_5.10.197.orig.tar.xz 121886228 SHA256:2d90b9575f349427b1403d24fc1b5c8165fa4c5873cce576bbd22ed7c7b13668
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.197-1.debian.tar.xz' linux_5.10.197-1.debian.tar.xz 1645164 SHA256:593a490edc3bb65f5cafc48b6a9d101414058fd9108e5316c8d94d141f080458
+$ apt-get source -qq --print-uris linux=5.10.205-2
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.205-2.dsc' linux_5.10.205-2.dsc 205890 SHA256:bd00156c2f00b7a738f44efd13d5b1ea1c154d638158caffe96a9d976bf952bd
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.205.orig.tar.xz' linux_5.10.205.orig.tar.xz 121904328 SHA256:878658989952ffdc22928faf15dfa6c66ea9a5e49b412e5ba3bc16784ae1f1b6
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.205-2.debian.tar.xz' linux_5.10.205-2.debian.tar.xz 1645184 SHA256:0e39f11ef7f462c0e0637b5a672d58d2f4494d779c50d42b1d3a919e0e575e4c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/5.10.197-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.197-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.197-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/5.10.205-2/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.10.205-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.10.205-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
@@ -4333,11 +4340,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.4.57+dfsg-3+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.4.57+dfsg-3+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssh=1:8.4p1-5+deb11u2`
+### `dpkg` source package: `openssh=1:8.4p1-5+deb11u3`
 
 Binary Packages:
 
-- `openssh-client=1:8.4p1-5+deb11u2`
+- `openssh-client=1:8.4p1-5+deb11u3`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -4353,18 +4360,18 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:8.4p1-5+deb11u2
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_8.4p1-5%2bdeb11u2.dsc' openssh_8.4p1-5+deb11u2.dsc 3393 SHA256:85766be35d9e1d460e8117164a7a7d5f7347de5130718a7065098c8e6fc4e7bd
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_8.4p1.orig.tar.gz' openssh_8.4p1.orig.tar.gz 1742201 SHA256:5a01d22e407eb1c05ba8a8f7c654d388a13e9f226e4ed33bd38748dafa1d2b24
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_8.4p1.orig.tar.gz.asc' openssh_8.4p1.orig.tar.gz.asc 683 SHA256:ccd9dd484651ce4cc926228f6e1b46afaf0c5ab98a866217fa0ef1074370ea2b
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_8.4p1-5%2bdeb11u2.debian.tar.xz' openssh_8.4p1-5+deb11u2.debian.tar.xz 181152 SHA256:72ab9d1e3186a3efbdbb792c9ae08daa4e965a219579482a23d743cfef0180cd
+$ apt-get source -qq --print-uris openssh=1:8.4p1-5+deb11u3
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1-5%2bdeb11u3.dsc' openssh_8.4p1-5+deb11u3.dsc 3270 SHA256:0f800a412ac707c735afd90b5529511c5c1629b6aef342d824b2f66250565459
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1.orig.tar.gz' openssh_8.4p1.orig.tar.gz 1742201 SHA256:5a01d22e407eb1c05ba8a8f7c654d388a13e9f226e4ed33bd38748dafa1d2b24
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1.orig.tar.gz.asc' openssh_8.4p1.orig.tar.gz.asc 683 SHA256:ccd9dd484651ce4cc926228f6e1b46afaf0c5ab98a866217fa0ef1074370ea2b
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1-5%2bdeb11u3.debian.tar.xz' openssh_8.4p1-5+deb11u3.debian.tar.xz 186600 SHA256:f460cc974def7a03753f6d3e5248265aa01deca7e2ba5e29979677487e89cd41
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u2/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:8.4p1-5+deb11u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u3/ (for browsing the source)
+- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssh/1:8.4p1-5+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1w-0+deb11u1`
 
