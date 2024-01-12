@@ -1,7 +1,7 @@
 ## `elixir:otp-24-slim`
 
 ```console
-$ docker pull elixir@sha256:f1413f813bf2555f3da671d2e970eef34326dd388562121c2d015fc5dea1dea4
+$ docker pull elixir@sha256:6a00a294748fcdcbb7d6b326b5c5687438a3960982e6b95a144160177fa7341e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -164,27 +164,27 @@ $ docker pull elixir@sha256:4d61d438727a91b4060f83b625d4e90a8b3614d33a6d5397b294
 ### `elixir:otp-24-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull elixir@sha256:3dd9f7ff6dabb0ac32874e48c788b420edf9090b8cd6bb375ed6102ff988f9f3
+$ docker pull elixir@sha256:41d80ce4b605c2a1c4f5c3930bf5d21394ea8ad87ca3f8bfcadf60915e83dade
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **119.0 MB (119033209 bytes)**  
+-	Total Size: **119.0 MB (119039722 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d6477eac788d9dbf16d77f35ca615b5d8f25975d7be54a000c7642128da643e5`
+-	Image ID: `sha256:bfe5272e6244dd4e7f29886452e52bb9ea0adcd2767ab344d19734e0bf8066d4`
 -	Default Command: `["iex"]`
 
 ```dockerfile
-# Tue, 19 Dec 2023 01:41:17 GMT
-ADD file:06ba7e39a2f8e1a7bcbb929fa9d1e6fb1f8bdcf5096dc903576af8f7014e353b in / 
-# Tue, 19 Dec 2023 01:41:18 GMT
+# Sat, 23 Dec 2023 22:14:59 GMT
+ADD file:8fb65cadfd211811589ee046d0fbd69d1fe11461b0c0c154a7650bf97307b857 in / 
+# Sat, 23 Dec 2023 22:14:59 GMT
 CMD ["bash"]
-# Tue, 19 Dec 2023 02:25:42 GMT
-ENV OTP_VERSION=24.3.4.13 REBAR3_VERSION=3.20.0
-# Tue, 19 Dec 2023 02:25:42 GMT
-LABEL org.opencontainers.image.version=24.3.4.13
-# Tue, 19 Dec 2023 02:28:40 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="c5c26cf77d6336ef85d3ba7b99b68723847c10f4928f4cbed8ef2c664ca96255" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="53ed7f294a8b8fb4d7d75988c69194943831c104d39832a1fa30307b1a8593de" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Tue, 19 Dec 2023 02:28:40 GMT
+# Sat, 23 Dec 2023 22:14:59 GMT
+ENV OTP_VERSION=24.3.4.15 REBAR3_VERSION=3.20.0
+# Sat, 23 Dec 2023 22:14:59 GMT
+LABEL org.opencontainers.image.version=24.3.4.15
+# Sat, 23 Dec 2023 22:14:59 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="2c014720eb2d2da7f195e4c7ced20b6e9eed664b6d65e2083be9e698e63224df" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="53ed7f294a8b8fb4d7d75988c69194943831c104d39832a1fa30307b1a8593de" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
+# Sat, 23 Dec 2023 22:14:59 GMT
 CMD ["erl"]
 # Sat, 23 Dec 2023 22:14:59 GMT
 ENV ELIXIR_VERSION=v1.16.0 LANG=C.UTF-8
@@ -195,40 +195,40 @@ CMD ["iex"]
 ```
 
 -	Layers:
-	-	`sha256:396a672fee8bade1a7c9f228d919717447f110f39046d8b5ed21ad45ae13ab61`  
-		Last Modified: Tue, 19 Dec 2023 01:44:57 GMT  
-		Size: 53.7 MB (53708091 bytes)  
+	-	`sha256:cf83973c4a096cce9f37c421ad6f19cf1ebf7ae4d8ea98dac4913bd2aef08d1c`  
+		Last Modified: Thu, 11 Jan 2024 02:44:25 GMT  
+		Size: 53.7 MB (53707847 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36cf8af68ca3a185aaa089b25a674d51a83da31c52b4e35206eef2e68cab5e8d`  
-		Last Modified: Tue, 19 Dec 2023 02:44:25 GMT  
-		Size: 58.0 MB (58047502 bytes)  
+	-	`sha256:e90d6bf11ad0583e03a51ccfed8e53c987e770314674b48e9405547bccc884d6`  
+		Last Modified: Thu, 11 Jan 2024 22:53:06 GMT  
+		Size: 58.1 MB (58054386 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41910ecbd439a97f7ea120d848dff67d362120e65ebb0fcbe66195ec106f21bc`  
-		Last Modified: Thu, 04 Jan 2024 20:22:27 GMT  
-		Size: 7.3 MB (7277616 bytes)  
+	-	`sha256:e9d69ad422f330458a1dcdeeac085dd0b4fd8748faa46e5e22ad470905b06fe3`  
+		Last Modified: Fri, 12 Jan 2024 01:39:09 GMT  
+		Size: 7.3 MB (7277489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elixir:otp-24-slim` - unknown; unknown
 
 ```console
-$ docker pull elixir@sha256:7d8d166bf37990257229644715b1bd2d72a9a48ac96d5c21dc8d3ebeeda3423f
+$ docker pull elixir@sha256:46233a0fc8a7f1ea679a1d8df672c92dbd3cce7daf85baccb0ad7bac7f278949
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.3 MB (3286064 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccd9e103c4596034230ae61e531e4e764e073a590a40539efdb58c6dd68261c7`
+-	Image ID: `sha256:aee1231c4a5af17d96ee216729b3996880ffe8d8b0d0683dea766cbd51148771`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e5dcfde9128e2bd83ad5cd6832c0415a178b3e01ce48cb933ea5bb10babe2fc7`  
-		Last Modified: Thu, 04 Jan 2024 20:22:26 GMT  
+	-	`sha256:c8365aebbcdb67a1d1f655efd2c4a5af65c4ab4508856a1768c95c0da4236587`  
+		Last Modified: Fri, 12 Jan 2024 01:39:05 GMT  
 		Size: 3.3 MB (3276211 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:25a7a718b1c3210eaf21072c53627015905d0f669f87cf38485a221909ad2016`  
-		Last Modified: Thu, 04 Jan 2024 20:22:25 GMT  
+	-	`sha256:2e214d3171eb4cc631cf64bdc7993538104d8d3363d34d3407348de780c6a140`  
+		Last Modified: Fri, 12 Jan 2024 01:39:04 GMT  
 		Size: 9.9 KB (9853 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -306,27 +306,27 @@ $ docker pull elixir@sha256:513370c75398b9f6805fc67c17b8daa92396353d4ff8821c3409
 ### `elixir:otp-24-slim` - linux; ppc64le
 
 ```console
-$ docker pull elixir@sha256:666bd6e6f7a8d7d9e31e7e09e145a227bdbb50668fe0e8476cca1e4b8997c463
+$ docker pull elixir@sha256:331d729af4a6073a7b7d206dd30426c5cb38089f08d52ee2f764dc06e4daa39b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **124.8 MB (124840534 bytes)**  
+-	Total Size: **124.8 MB (124836746 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:398beeda29807f827577eb6b47b5ba0402b14f2cdb731fa3b956d967fd67baff`
+-	Image ID: `sha256:818f49c47ce17dfdc8e7128b38ff05b311c891d15385d483fc0033fa8efe4847`
 -	Default Command: `["iex"]`
 
 ```dockerfile
-# Tue, 19 Dec 2023 01:22:03 GMT
-ADD file:240a318dbc8a7ec4b3a6af5afec173d3579c94c27738b0f79750242acce5dd2f in / 
-# Tue, 19 Dec 2023 01:22:06 GMT
+# Sat, 23 Dec 2023 22:14:59 GMT
+ADD file:cb900134161e1d051fb57c4a488efa9478959953f2773baa8a90b13198589a81 in / 
+# Sat, 23 Dec 2023 22:14:59 GMT
 CMD ["bash"]
-# Tue, 19 Dec 2023 10:44:31 GMT
-ENV OTP_VERSION=24.3.4.13 REBAR3_VERSION=3.20.0
-# Tue, 19 Dec 2023 10:44:32 GMT
-LABEL org.opencontainers.image.version=24.3.4.13
-# Tue, 19 Dec 2023 10:50:11 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="c5c26cf77d6336ef85d3ba7b99b68723847c10f4928f4cbed8ef2c664ca96255" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="53ed7f294a8b8fb4d7d75988c69194943831c104d39832a1fa30307b1a8593de" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Tue, 19 Dec 2023 10:50:13 GMT
+# Sat, 23 Dec 2023 22:14:59 GMT
+ENV OTP_VERSION=24.3.4.15 REBAR3_VERSION=3.20.0
+# Sat, 23 Dec 2023 22:14:59 GMT
+LABEL org.opencontainers.image.version=24.3.4.15
+# Sat, 23 Dec 2023 22:14:59 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="2c014720eb2d2da7f195e4c7ced20b6e9eed664b6d65e2083be9e698e63224df" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="53ed7f294a8b8fb4d7d75988c69194943831c104d39832a1fa30307b1a8593de" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
+# Sat, 23 Dec 2023 22:14:59 GMT
 CMD ["erl"]
 # Sat, 23 Dec 2023 22:14:59 GMT
 ENV ELIXIR_VERSION=v1.16.0 LANG=C.UTF-8
@@ -337,67 +337,67 @@ CMD ["iex"]
 ```
 
 -	Layers:
-	-	`sha256:bdab4f9926bc1dc6c30480616baa760641ee4feeca1b5215d5c420b718c5a1a3`  
-		Last Modified: Tue, 19 Dec 2023 01:26:44 GMT  
-		Size: 58.9 MB (58929912 bytes)  
+	-	`sha256:1b9340c192fedc0211d4cda28f7a01e9ff3be108c42783e576f4a366c373f30b`  
+		Last Modified: Thu, 11 Jan 2024 02:39:48 GMT  
+		Size: 58.9 MB (58929662 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:961e8ef674ba88829b1fb6974a176f01bd7451232327fbf725e6abce86e03c7a`  
-		Last Modified: Tue, 19 Dec 2023 10:51:43 GMT  
-		Size: 58.6 MB (58632356 bytes)  
+	-	`sha256:7c8c75156900c900e4f074768f41f6b9c8c6dd7897ad630e5b32f8e9fc4f60f7`  
+		Last Modified: Thu, 11 Jan 2024 22:38:04 GMT  
+		Size: 58.6 MB (58628890 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc359f514db6180f68f64d5ec06bb3a01dc46d0851a111d8416375676a15fb1a`  
-		Last Modified: Thu, 04 Jan 2024 20:28:08 GMT  
-		Size: 7.3 MB (7278266 bytes)  
+	-	`sha256:08368502a40526b8456f98336318938938f6a6ad57c1e70a8638ce79474dc781`  
+		Last Modified: Fri, 12 Jan 2024 01:49:33 GMT  
+		Size: 7.3 MB (7278194 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elixir:otp-24-slim` - unknown; unknown
 
 ```console
-$ docker pull elixir@sha256:451c8816d986b5a0e1d2bae4119f622ec56ae79114030d95ef40790d8fb20466
+$ docker pull elixir@sha256:9ee7074f6c41acb7d61f1c9d76d11710f5ad8021dba272691afdb6f5ebeb7da1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.3 MB (3290234 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd259e10409d8746b85917e2a16d6c94bd5ee2ddceccf6661087ee52676bb08e`
+-	Image ID: `sha256:f0d26919c8962fe128dccae1769981e838b1a62082e014b9169e9e9364dfa3ab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7aa85cce177b8896c1f2046bb52498594832cd9847d3c7f24ed193ef69171488`  
-		Last Modified: Thu, 04 Jan 2024 20:28:07 GMT  
+	-	`sha256:a667852348f6017a8edfdcc4379b215b3cf77c139d96edf8032f2601fd328175`  
+		Last Modified: Fri, 12 Jan 2024 01:49:32 GMT  
 		Size: 3.3 MB (3280357 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cc2b44383c643a11a3af7244179c0e71f6c0eed5126b6c579e645589cbb99957`  
-		Last Modified: Thu, 04 Jan 2024 20:28:07 GMT  
+	-	`sha256:53baa0be7089e926fb12591ad10155605d6be9c0b96245eedd6c1528670e9dab`  
+		Last Modified: Fri, 12 Jan 2024 01:49:31 GMT  
 		Size: 9.9 KB (9877 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `elixir:otp-24-slim` - linux; s390x
 
 ```console
-$ docker pull elixir@sha256:a8fd536889617dbb971a3d736d15712c586a08b57556cf8c1e01e5e2c515bd33
+$ docker pull elixir@sha256:fe93737bc9d49fc82af31a5ad3a0e0eef8f1d8a70e7ad2861e32c5fa7fb14e68
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.7 MB (118722932 bytes)**  
+-	Total Size: **118.7 MB (118723585 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:afab83c0ae77be8564ec76d0b6f1ea6835d3b10df4d3990644f4074581c76e7f`
+-	Image ID: `sha256:a3ef8ea6bbf019b264a2a90c2b267007c51452f6e6b280cf726fccfdc22204bc`
 -	Default Command: `["iex"]`
 
 ```dockerfile
-# Tue, 19 Dec 2023 01:42:51 GMT
-ADD file:f3ff7311d9c8e7c83e0b7746d9402fed156fb05bd0c704d49535b4ece7f33177 in / 
-# Tue, 19 Dec 2023 01:42:55 GMT
+# Sat, 23 Dec 2023 22:14:59 GMT
+ADD file:9ddcb5238e539e3b1fd8032aecf5e40f0b8b8162e6d045fcd58520db01e93296 in / 
+# Sat, 23 Dec 2023 22:14:59 GMT
 CMD ["bash"]
-# Tue, 19 Dec 2023 09:04:08 GMT
-ENV OTP_VERSION=24.3.4.13 REBAR3_VERSION=3.20.0
-# Tue, 19 Dec 2023 09:04:09 GMT
-LABEL org.opencontainers.image.version=24.3.4.13
-# Tue, 19 Dec 2023 09:08:08 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="c5c26cf77d6336ef85d3ba7b99b68723847c10f4928f4cbed8ef2c664ca96255" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="53ed7f294a8b8fb4d7d75988c69194943831c104d39832a1fa30307b1a8593de" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Tue, 19 Dec 2023 09:08:11 GMT
+# Sat, 23 Dec 2023 22:14:59 GMT
+ENV OTP_VERSION=24.3.4.15 REBAR3_VERSION=3.20.0
+# Sat, 23 Dec 2023 22:14:59 GMT
+LABEL org.opencontainers.image.version=24.3.4.15
+# Sat, 23 Dec 2023 22:14:59 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="2c014720eb2d2da7f195e4c7ced20b6e9eed664b6d65e2083be9e698e63224df" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.1 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="53ed7f294a8b8fb4d7d75988c69194943831c104d39832a1fa30307b1a8593de" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
+# Sat, 23 Dec 2023 22:14:59 GMT
 CMD ["erl"]
 # Sat, 23 Dec 2023 22:14:59 GMT
 ENV ELIXIR_VERSION=v1.16.0 LANG=C.UTF-8
@@ -408,39 +408,39 @@ CMD ["iex"]
 ```
 
 -	Layers:
-	-	`sha256:a7334865824cce0a21e0af9d1f48eaee160e0ac01a54ca220a9814e8d2059646`  
-		Last Modified: Tue, 19 Dec 2023 01:47:52 GMT  
-		Size: 53.3 MB (53295959 bytes)  
+	-	`sha256:a1442bb0c8abfd050e8bdb2270126c2f24402a8c57a00f8229c40c2a35253665`  
+		Last Modified: Thu, 11 Jan 2024 01:51:04 GMT  
+		Size: 53.3 MB (53296125 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb7ec198ea29e62ba87d0ac1da1204d9fcaabf8b80063194b81c0495feb939cd`  
-		Last Modified: Tue, 19 Dec 2023 09:11:11 GMT  
-		Size: 58.1 MB (58149516 bytes)  
+	-	`sha256:0ab23648e41eee3d9af433627487e7d3153480e9aeedea3307a649d3966bccaf`  
+		Last Modified: Thu, 11 Jan 2024 22:59:11 GMT  
+		Size: 58.2 MB (58150127 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6170fce60fdd7d9d0e22fa06bb3f36a343a872f4770c8a66ee07cf9838241ec6`  
-		Last Modified: Thu, 04 Jan 2024 20:15:35 GMT  
-		Size: 7.3 MB (7277457 bytes)  
+	-	`sha256:2aa0577ede7897760651cd3e67b41cd4935bc68f0dc95322ae390a60cae86bc9`  
+		Last Modified: Fri, 12 Jan 2024 01:08:45 GMT  
+		Size: 7.3 MB (7277333 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elixir:otp-24-slim` - unknown; unknown
 
 ```console
-$ docker pull elixir@sha256:8288a8b2f3fc0131d4aa8067a4e7f8812557e670d04abf51234017e53856219f
+$ docker pull elixir@sha256:db9710fc3958e62996c9818cdf44b520eb8b8ab4eb4f0ce6bdbd646cc28011b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.3 MB (3285837 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8460ac39ad336030788894cf234e9a40514f757c4e9a95f7515827b1dede340a`
+-	Image ID: `sha256:c88d43226c913b67a895cf8382272a7af9ec11d31599dfd47fbce476c6539a9a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:272611e584a7786c96d03166c989d3db2400ef309dd023aff1e369fa0c3d13b3`  
-		Last Modified: Thu, 04 Jan 2024 20:15:35 GMT  
+	-	`sha256:59332e8b1c654d5eb2f8a3a963276a5e875c88f0746aa8af8fc1faefea511e95`  
+		Last Modified: Fri, 12 Jan 2024 01:08:45 GMT  
 		Size: 3.3 MB (3275992 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:09888aae18f9b8c23c387192e0a755af040fb50afcdc50449ce583922b1086da`  
-		Last Modified: Thu, 04 Jan 2024 20:15:35 GMT  
+	-	`sha256:49f798f587b005cc404737ca420ded8acbde518d2ea5d5db452e1ea92f524274`  
+		Last Modified: Fri, 12 Jan 2024 01:08:44 GMT  
 		Size: 9.8 KB (9845 bytes)  
 		MIME: application/vnd.in-toto+json
