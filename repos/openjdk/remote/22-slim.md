@@ -1,7 +1,7 @@
 ## `openjdk:22-slim`
 
 ```console
-$ docker pull openjdk@sha256:c2b383c1588fa190dfa53fbe97d6abe6528373f940ee65b72d5b34a92d6c0ef5
+$ docker pull openjdk@sha256:df4095025f99aed8e30206b706fea645c2e94fcab78950da3c9102093ec2413b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -85,19 +85,19 @@ $ docker pull openjdk@sha256:a484a9f9ae4b52fcd8bad006bc1ea7977f49b7d4eae836c1b49
 ### `openjdk:22-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull openjdk@sha256:40ccf6d43397695924aeba572723ee8797d6cea126769a3f4f2deef813ca2157
+$ docker pull openjdk@sha256:a2c3539b6e8fe57bcfe92437d513a5ed8f424501e1c521950f22790f42c1ccd5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.9 MB (233942617 bytes)**  
+-	Total Size: **233.9 MB (233942742 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:038b0b8700668d6c105c70e6a7cf313430a7e3a4977785b7451a78c1b14884f8`
+-	Image ID: `sha256:4c75329338b0652eb9d5e491cea0ae4ed798c6ad77e5cd802adac489ca310447`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Tue, 19 Dec 2023 01:41:11 GMT
-ADD file:262fd7bf0bc26e5d2a229fba52626e22b8a93beac29733acfc60e716c26e689d in / 
-# Tue, 19 Dec 2023 01:41:11 GMT
+# Sat, 06 Jan 2024 01:48:12 GMT
+ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
+# Sat, 06 Jan 2024 01:48:12 GMT
 CMD ["bash"]
 # Sat, 06 Jan 2024 01:48:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/* # buildkit
@@ -116,39 +116,39 @@ CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:24e221e92a36ab5b0075dd156b4f2ff095532a9b0927946cf6070bb1bea208b8`  
-		Last Modified: Tue, 19 Dec 2023 01:44:38 GMT  
-		Size: 29.2 MB (29157269 bytes)  
+	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
+		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
+		Size: 29.2 MB (29157335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2614bd11b588c96b15909791ce0a1d4f2faa851a036310cc2fe1b2deae203b7`  
-		Last Modified: Wed, 20 Dec 2023 10:22:09 GMT  
-		Size: 3.8 MB (3819909 bytes)  
+	-	`sha256:de02c32dbc1d28978f53ca6d486c22aad0fc165410ea327c587d4a6ac0500e85`  
+		Last Modified: Fri, 12 Jan 2024 09:21:39 GMT  
+		Size: 3.8 MB (3819898 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce8212ec78910395dfd24f1372506dfd695148128296327216f60f02b533d2e5`  
-		Last Modified: Tue, 09 Jan 2024 02:26:36 GMT  
-		Size: 201.0 MB (200965439 bytes)  
+	-	`sha256:dd618e07ea2de751e0e5865fc78c4d7d2108c47ba49c2edc96f4bf245bafe84d`  
+		Last Modified: Fri, 12 Jan 2024 09:26:37 GMT  
+		Size: 201.0 MB (200965509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `openjdk:22-slim` - unknown; unknown
 
 ```console
-$ docker pull openjdk@sha256:1b0c7192b681d290f9e505b1719bdc0d75e6b58d2f5ad98caa5387a4c67a64fe
+$ docker pull openjdk@sha256:a5fbfeb18d28f1ea38de73b55b4c3fb6a0214a503d3745217d0f3147d78efd57
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.1 MB (2055764 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a38b4d8ca994cf484d5e6d834b5e258e439c926fe18a70a87abb540fcc44ec5a`
+-	Image ID: `sha256:1ea56434a01f465f519c10d11c5984e413f6cb40474af0bcd6897e14a4d707ac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:67ae54acf2b57d7dcb9289399bb986eac6d59d93b31ca7341c641f0757a18684`  
-		Last Modified: Tue, 09 Jan 2024 02:26:31 GMT  
+	-	`sha256:2df1f811d8380075345cf91b9257cdb70106ded4ab36eecb71b231f0b041cdcb`  
+		Last Modified: Fri, 12 Jan 2024 09:26:32 GMT  
 		Size: 2.0 MB (2036561 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e71775542c0bf7c49863bd7ae360eb805c761d5e7343c1d9420943ff40cd694f`  
-		Last Modified: Tue, 09 Jan 2024 02:26:31 GMT  
+	-	`sha256:4177dbf1b527563a6740018ff959863dca229300d8f52f70d0636ef99d3a6a1e`  
+		Last Modified: Fri, 12 Jan 2024 09:26:32 GMT  
 		Size: 19.2 KB (19203 bytes)  
 		MIME: application/vnd.in-toto+json
