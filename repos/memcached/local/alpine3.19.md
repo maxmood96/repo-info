@@ -1,19 +1,19 @@
-# `memcached:1.6.22-alpine`
+# `memcached:1.6.23-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3012cf09bdc9226b392bd2af8f268f16f77c6fe65b3f72f558668e15047b8807`
-- Created: `2023-12-09T01:54:10Z`
-- Virtual Size: ~ 9.74 Mb  
+- Image ID: `sha256:fba850e40285109fcdc4c5603f2e081dba5bb683ffbcf0d4ad2e954359ce93e8`
+- Created: `2024-01-10T01:54:10Z`
+- Virtual Size: ~ 14.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["memcached"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `MEMCACHED_VERSION=1.6.22`
-  - `MEMCACHED_URL=https://memcached.org/files/memcached-1.6.22.tar.gz`
-  - `MEMCACHED_SHA1=7a691f390d59616dbebfc9e2e4942d499c39a338`
+  - `MEMCACHED_VERSION=1.6.23`
+  - `MEMCACHED_URL=https://memcached.org/files/memcached-1.6.23.tar.gz`
+  - `MEMCACHED_SHA1=d5490856170453b15a782ad55ffdea188c2eade0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -173,16 +173,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r2 description:
+libcrypto3-3.1.4-r3 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r2 webpage:
+libcrypto3-3.1.4-r3 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r2 installed size:
+libcrypto3-3.1.4-r3 installed size:
 4500 KiB
 
-libcrypto3-3.1.4-r2 license:
+libcrypto3-3.1.4-r3 license:
 Apache-2.0
 
 ```
@@ -224,16 +224,16 @@ custom
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r2 description:
+libssl3-3.1.4-r3 description:
 SSL shared libraries
 
-libssl3-3.1.4-r2 webpage:
+libssl3-3.1.4-r3 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r2 installed size:
+libssl3-3.1.4-r3 installed size:
 548 KiB
 
-libssl3-3.1.4-r2 license:
+libssl3-3.1.4-r3 license:
 Apache-2.0
 
 ```
