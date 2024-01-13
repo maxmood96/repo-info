@@ -1,10 +1,10 @@
-# `tomcat:10.1.17-jre17-temurin-jammy`
+# `tomcat:10.1.18-jre17-temurin-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:33816c0b38274051060e01bc583e71165d26446cf4a1db13c2be6d0fe711a0c4`
-- Created: `2023-12-16T16:07:14.537853826Z`
-- Virtual Size: ~ 287.36 Mb  
+- Image ID: `sha256:c4d0745ae57581d0c6d7a149ee6cd002a5aa3bdaa4d41a02c02ed33e07026611`
+- Created: `2024-01-09T22:33:18.059968503Z`
+- Virtual Size: ~ 287.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,8 +20,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=5C3C5F3E314C866292F359A8F3AD5C94A67F707E A9C5DF4D22E99998D9875A5110C01C5A2F6059E7`
   - `TOMCAT_MAJOR=10`
-  - `TOMCAT_VERSION=10.1.17`
-  - `TOMCAT_SHA512=ff9670f9cd49a604e47edfbcfb5855fe59342048c3278ea8736276b51327adf2d076973f3ad1b8aa7870ef26c28cf7111527be810b445c9927f2a457795f5cb6`
+  - `TOMCAT_VERSION=10.1.18`
+  - `TOMCAT_SHA512=56d1478501bd63945aae08d9f7c1fd37e14761dd9606a3bf5996870256b542b561a354fb89c4693c5695d0f13fa217028115b311d50b4ecec03acc7785006638`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -702,15 +702,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.5.dsc' glibc_2.35-0ubuntu3.5.dsc 8588 SHA512:da416c99f32b05639339c2c86c6aefdd8f7513add5cd215cc35648e3e29563b6ee75888fd932f565ecc4c766fe4c9d35fd0d54d52652a6aa47940ae994f1b126
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.5.debian.tar.xz' glibc_2.35-0ubuntu3.5.debian.tar.xz 927248 SHA512:915755fad61da4595db5fa9076ef68a8e7d930fbab2b7c733624c1c9b1e5905508c12e73e64aff4718c9d8c6d40aacb8a9425def810861ae96df11c714131f95
-```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
