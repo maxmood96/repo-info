@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b9176b56d5f8434c83bfe4ca38d64d1fd86b07a0fd49ffe1208f4b5efa59f9fd`
+- Image ID: `sha256:9b883e54cab2e2b9299cef79058e1b92d196a72ffaa2a85a8e917bf52179137e`
 - Created: `2023-10-03T09:06:10Z`
 - Virtual Size: ~ 248.79 Mb  
   (total size of all layers on-disk)
@@ -1507,11 +1507,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libdatetime-perl/2:1.59-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libdatetime-perl/2:1.59-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libdatetime-timezone-perl=1:2.60-1+2023c`
+### `dpkg` source package: `libdatetime-timezone-perl=1:2.60-1+2023d`
 
 Binary Packages:
 
-- `libdatetime-timezone-perl=1:2.60-1+2023c`
+- `libdatetime-timezone-perl=1:2.60-1+2023d`
 
 Licenses: (parsed from: `/usr/share/doc/libdatetime-timezone-perl/copyright`)
 
@@ -1522,17 +1522,17 @@ Licenses: (parsed from: `/usr/share/doc/libdatetime-timezone-perl/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libdatetime-timezone-perl=1:2.60-1+2023c
-'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_2.60-1%2b2023c.dsc' libdatetime-timezone-perl_2.60-1+2023c.dsc 2911 SHA256:162f328b9b9203dfab102072ad9c37129ef5dc375a8a282ae6d2fa2896521449
+$ apt-get source -qq --print-uris libdatetime-timezone-perl=1:2.60-1+2023d
+'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_2.60-1%2b2023d.dsc' libdatetime-timezone-perl_2.60-1+2023d.dsc 2911 SHA256:2bdba2757f434c0201b51eaef15e205f00eb1f01e8066cce838e875e5e6d68d6
 'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_2.60.orig.tar.gz' libdatetime-timezone-perl_2.60.orig.tar.gz 948447 SHA256:f0460d379323905b579bed44e141237a337dc25dd26b6ab0c60ac2b80629323d
-'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_2.60-1%2b2023c.debian.tar.xz' libdatetime-timezone-perl_2.60-1+2023c.debian.tar.xz 11376 SHA256:4fe1212c648647b3de209a94ff6509661bb70e3475ec44944158cb8a32c88d9c
+'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_2.60-1%2b2023d.debian.tar.xz' libdatetime-timezone-perl_2.60-1+2023d.debian.tar.xz 21164 SHA256:edd3d59e16b32da6894469cb10094383c9e8acf52a9af575dc778abb1d6f565e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libdatetime-timezone-perl/1:2.60-1+2023c/ (for browsing the source)
-- https://sources.debian.net/src/libdatetime-timezone-perl/1:2.60-1+2023c/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdatetime-timezone-perl/1:2.60-1+2023c/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libdatetime-timezone-perl/1:2.60-1+2023d/ (for browsing the source)
+- https://sources.debian.net/src/libdatetime-timezone-perl/1:2.60-1+2023d/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libdatetime-timezone-perl/1:2.60-1+2023d/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdevel-callchecker-perl=0.008-2`
 
@@ -3276,11 +3276,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.67-1`
+### `dpkg` source package: `linux=6.1.69-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.67-1`
+- `linux-libc-dev:amd64=6.1.69-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3295,17 +3295,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.67-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.67-1.dsc' linux_6.1.67-1.dsc 290924 SHA256:1da84a3bc6950236ff6b22504ba279804bb18d05dc5b03c86ffb29ff1ef4c6e9
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.67.orig.tar.xz' linux_6.1.67.orig.tar.xz 137495096 SHA256:a1307f650d1a9c24e0318c3a92b16f152409195140f52bc75ec38c431433e3ca
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.67-1.debian.tar.xz' linux_6.1.67-1.debian.tar.xz 1580580 SHA256:ddf9925ca2b5fdda7a8372154da7bf80d1cb9ec324b7b39d2f4ed296456b1aad
+$ apt-get source -qq --print-uris linux=6.1.69-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.69-1.dsc' linux_6.1.69-1.dsc 290924 SHA256:eff66c55a2e6a56cf37ff8c06fb830740ba2ff869dc51b98e789acf702487c91
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.69.orig.tar.xz' linux_6.1.69.orig.tar.xz 137507972 SHA256:b0a5f7285bffe9f0b7eca2675fe097fd4aeec1bac6d31b76239ba718d3b4fc02
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.69-1.debian.tar.xz' linux_6.1.69-1.debian.tar.xz 1586832 SHA256:6ccc5bc6a11a5e592b396702c9975b56c7fd7e758322180927e0acf07c884370
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.67-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.67-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.67-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.69-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.69-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.69-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
