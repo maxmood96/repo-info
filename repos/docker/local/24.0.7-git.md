@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:94db1fde37b38955b9bc5925945d6a508b8f9457b7a9b1ec2720eb5798c60b0c`
+- Image ID: `sha256:38a0a06871a07ec275e80796ed33b39a0a6073a5f0c3257f44d4a1a2e7f73444`
 - Created: `2023-05-16T17:59:38Z`
-- Virtual Size: ~ 341.46 Mb  
+- Virtual Size: ~ 348.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=24.0.7`
-  - `DOCKER_BUILDX_VERSION=0.12.0`
-  - `DOCKER_COMPOSE_VERSION=2.23.3`
+  - `DOCKER_BUILDX_VERSION=0.12.1`
+  - `DOCKER_COMPOSE_VERSION=2.24.0`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e`
 
@@ -157,16 +157,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.22.1-r0 description:
+c-ares-1.24.0-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.22.1-r0 webpage:
+c-ares-1.24.0-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.22.1-r0 installed size:
-132 KiB
+c-ares-1.24.0-r0 installed size:
+144 KiB
 
-c-ares-1.22.1-r0 license:
+c-ares-1.24.0-r0 license:
 MIT
 
 ```
@@ -463,16 +463,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r2 description:
+libcrypto3-3.1.4-r3 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r2 webpage:
+libcrypto3-3.1.4-r3 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r2 installed size:
+libcrypto3-3.1.4-r3 installed size:
 4500 KiB
 
-libcrypto3-3.1.4-r2 license:
+libcrypto3-3.1.4-r3 license:
 Apache-2.0
 
 ```
@@ -667,16 +667,16 @@ GPL-2.0-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r2 description:
+libssl3-3.1.4-r3 description:
 SSL shared libraries
 
-libssl3-3.1.4-r2 webpage:
+libssl3-3.1.4-r3 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r2 installed size:
+libssl3-3.1.4-r3 installed size:
 548 KiB
 
-libssl3-3.1.4-r2 license:
+libssl3-3.1.4-r3 license:
 Apache-2.0
 
 ```
@@ -939,16 +939,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r2 description:
+openssl-3.1.4-r3 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r2 webpage:
+openssl-3.1.4-r3 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r2 installed size:
+openssl-3.1.4-r3 installed size:
 732 KiB
 
-openssl-3.1.4-r2 license:
+openssl-3.1.4-r3 license:
 Apache-2.0
 
 ```
