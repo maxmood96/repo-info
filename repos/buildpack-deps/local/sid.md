@@ -26,21 +26,13 @@ Licenses: (parsed from: `/usr/share/doc/libacl1/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris acl=2.3.1-4
-'http://deb.debian.org/debian/pool/main/a/acl/acl_2.3.1-4.dsc' acl_2.3.1-4.dsc 2505 SHA256:6dff325eb4309da24e6d6eb1b22faa4e0dc243c0c10a9a45f37a992a7b7f98fa
-'http://deb.debian.org/debian/pool/main/a/acl/acl_2.3.1.orig.tar.xz' acl_2.3.1.orig.tar.xz 355676 SHA256:c0234042e17f11306c23c038b08e5e070edb7be44bef6697fb8734dcff1c66b1
-'http://deb.debian.org/debian/pool/main/a/acl/acl_2.3.1.orig.tar.xz.asc' acl_2.3.1.orig.tar.xz.asc 833 SHA256:54fb8fcd6ae6901f2257e18d503e5e18ad956babf8d80d2ea29f280fc7264662
-'http://deb.debian.org/debian/pool/main/a/acl/acl_2.3.1-4.debian.tar.xz' acl_2.3.1-4.debian.tar.xz 31020 SHA256:6e26692e3edf09a165a6043bf658ca41407f8c97a92e2cbcf11c148dfb804cd4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/acl/2.3.1-4/
 
-- https://sources.debian.net/src/acl/2.3.1-4/ (for browsing the source)
-- https://sources.debian.net/src/acl/2.3.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/acl/2.3.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `adduser=3.137`
 
@@ -1749,21 +1741,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.78.1-6
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.78.1-6.dsc' gobject-introspection_1.78.1-6.dsc 3663 SHA256:389cad263d889731ebd024ddc00008be82af8d76c8563c824ad7eb2f253b194c
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.78.1.orig-glib.tar.xz' gobject-introspection_1.78.1.orig-glib.tar.xz 5327096 SHA256:44eaab8b720877ce303c5540b657b126f12dc94972d9880b52959f43fb537b30
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.78.1.orig.tar.xz' gobject-introspection_1.78.1.orig.tar.xz 1060296 SHA256:bd7babd99af7258e76819e45ba4a6bc399608fe762d83fde3cac033c50841bb4
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.78.1-6.debian.tar.xz' gobject-introspection_1.78.1-6.debian.tar.xz 53244 SHA256:1620e6d6279c70278414d5a27e58499d1aad30b8baf9a3b193456cd69a6ba2eb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gobject-introspection/1.78.1-6/
 
-- https://sources.debian.net/src/gobject-introspection/1.78.1-6/ (for browsing the source)
-- https://sources.debian.net/src/gobject-introspection/1.78.1-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gobject-introspection/1.78.1-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-2`
 
@@ -1937,19 +1921,13 @@ Licenses: (parsed from: `/usr/share/doc/hostname/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris hostname=3.23+nmu1
-'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.23%2bnmu1.dsc' hostname_3.23+nmu1.dsc 1281 SHA256:56f2189eaeee638e86d29a05356e7001632e33b2132a41a4634a9ff839264ea6
-'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.23%2bnmu1.tar.xz' hostname_3.23+nmu1.tar.xz 12876 SHA256:f3fb39f30b00ba7dba2cec013195d7e1bb215f241153208ccd52da3eedfe7a7d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/hostname/3.23+nmu1/
 
-- https://sources.debian.net/src/hostname/3.23+nmu1/ (for browsing the source)
-- https://sources.debian.net/src/hostname/3.23+nmu1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/hostname/3.23+nmu1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `icu=72.1-4`
 
@@ -3186,20 +3164,13 @@ Licenses: (parsed from: `/usr/share/doc/libraw23/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libraw=0.21.1-7
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.21.1-7.dsc' libraw_0.21.1-7.dsc 2339 SHA256:4456052d940f8d1483a7310611245dfd42bdaa0d3208913d565f245b2dbc31e9
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.21.1.orig.tar.gz' libraw_0.21.1.orig.tar.gz 564541 SHA256:b63d7ffa43463f74afcc02f9083048c231349b41cc9255dec0840cf8a67b52e0
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.21.1-7.debian.tar.xz' libraw_0.21.1-7.debian.tar.xz 24252 SHA256:fbfac8b2f9289f2262d207131a140bddde0448456396bddb7679856415477168
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libraw/0.21.1-7/
 
-- https://sources.debian.net/src/libraw/0.21.1-7/ (for browsing the source)
-- https://sources.debian.net/src/libraw/0.21.1-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libraw/0.21.1-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `librsvg=2.54.7+dfsg-2`
 
@@ -4872,21 +4843,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.38/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.38.2-2
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2-2.dsc' perl_5.38.2-2.dsc 2933 SHA256:1b59387ea846e44061e57cd2842d2d1ff365e2098ba8eeed419568ed63bc8d72
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA256:4d1b34cc058f9963cb89785ecc040d57f6d7725cd83329cfa4ef8b27566454d2
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA256:d91115e90b896520e83d4de6b52f8254ef2b70a8d545ffab33200ea9f1cf29e8
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2-2.debian.tar.xz' perl_5.38.2-2.debian.tar.xz 165124 SHA256:f72804e4d8caed21e29248d3b135403cd1687a4358e635c2d29c74d32120b0a6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.38.2-2/
 
-- https://sources.debian.net/src/perl/5.38.2-2/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.38.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.38.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.2.1-3`
 

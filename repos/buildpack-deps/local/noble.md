@@ -2258,14 +2258,9 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 - `LGPL-3+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.17.4-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/universe/libh/libheif/libheif_1.17.4-1ubuntu1.dsc' libheif_1.17.4-1ubuntu1.dsc 3437 SHA512:1705bc44764898c5667f3f5047674756a9f85e2ff038b46c34cbd67d35b95d9d5b1dfc68134955c4a44c2b97b630fd0bf61057d3fe11b987d0b703a0df5df759
-'http://archive.ubuntu.com/ubuntu/pool/universe/libh/libheif/libheif_1.17.4.orig.tar.gz' libheif_1.17.4.orig.tar.gz 1432474 SHA512:c9f1e06b3273260aec69d72be8f1043d7ee1fee3ced5402c3e9e97f8177f41be1a98f348e418f9312e5f151a4d8ca61d61a0879b4d1b1fe64b544c71964da464
-'http://archive.ubuntu.com/ubuntu/pool/universe/libh/libheif/libheif_1.17.4-1ubuntu1.debian.tar.xz' libheif_1.17.4-1ubuntu1.debian.tar.xz 10012 SHA512:4f7f1ce0cd5c5c64e08fb785cf9fe4d03adf5b24b215ede45b4b75373efc28b007964e866b94c0809d75aa9de61b7fa566d52fea7cc77e25702298221b38599f
-```
 
 ### `dpkg` source package: `libice=2:1.0.10-1build2`
 
@@ -2418,14 +2413,13 @@ Licenses: (parsed from: `/usr/share/doc/libmaxminddb-dev/copyright`, `/usr/share
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libmaxminddb=1.8.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libm/libmaxminddb/libmaxminddb_1.8.0-1.dsc' libmaxminddb_1.8.0-1.dsc 2322 SHA512:490830245589d6e0a94bb306c2838b9f05b3f34f6e98855145f5fc7b74b78aba23df16872250051c02559535650ff46ee5aa6e70ce825edfebc648a74bf311d4
-'http://archive.ubuntu.com/ubuntu/pool/main/libm/libmaxminddb/libmaxminddb_1.8.0.orig.tar.gz' libmaxminddb_1.8.0.orig.tar.gz 243661 SHA512:0e0be75e2aa869b7a4173bf6389293e62010410d3cf8b3467e31e5a3ee40d548d04a890a00ee0a115ab82a6eb4ec00ca9e991344da9a18e10c291656766a9e71
-'http://archive.ubuntu.com/ubuntu/pool/main/libm/libmaxminddb/libmaxminddb_1.8.0-1.debian.tar.xz' libmaxminddb_1.8.0-1.debian.tar.xz 12472 SHA512:bd9a3112e0e39330ee805f2e0a7b68010d2c0aab29c68d83cece9dfe3bcb3dac870c3ce6ebf0de5b0fa15d97a49858049089d28bd23a5459685089cf1fabed36
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libmaxminddb/1.8.0-1/
+
 
 ### `dpkg` source package: `libmd=1.1.0-1`
 
