@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:419558005b5f432dbde0de3e3ea83f3097a49580470564a0e5e673922f3dd018`
-- Created: `2023-12-15T20:27:55.830975772Z`
-- Virtual Size: ~ 645.69 Mb  
+- Image ID: `sha256:b25d10559bd3b0b69abd5f5df711610d7494cf7ef6b4f17b1a1d124e6a862619`
+- Created: `2024-01-13T01:43:07.76679089Z`
+- Virtual Size: ~ 645.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `NEO4J_HOME=/var/lib/neo4j`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2023-11-01T03:17:36`
+  - `build-date=2024-01-03T02:09:22`
   - `com.redhat.component=ubi8-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -31,9 +31,9 @@
   - `io.openshift.tags=minimal rhel8`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi8-minimal`
-  - `release=1029`
+  - `release=1108`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 8.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8-minimal/images/8.9-1029`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8-minimal/images/8.9-1108`
   - `vcs-ref=7e7670a8c8c9a3be83beaa2787f3703b404d4a1d`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -437,7 +437,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `gnutls-3.6.16-7.el8.x86_64`
+### `rpm` package: `gnutls-3.6.16-8.el8_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
@@ -725,7 +725,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libcap-2.48-5.el8.x86_64`
+### `rpm` package: `libcap-2.48-6.el8_9.x86_64`
 
 Licenses (from `rpm --query`): BSD or GPLv2
 
@@ -1097,7 +1097,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libxml2-2.9.7-16.el8_8.1.x86_64`
+### `rpm` package: `libxml2-2.9.7-18.el8_9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -1181,31 +1181,31 @@ Licenses (from `rpm --query`): MPLv2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `nss-3.90.0-3.el8_8.x86_64`
+### `rpm` package: `nss-3.90.0-4.el8_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `nss-softokn-3.90.0-3.el8_8.x86_64`
+### `rpm` package: `nss-softokn-3.90.0-4.el8_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `nss-softokn-freebl-3.90.0-3.el8_8.x86_64`
+### `rpm` package: `nss-softokn-freebl-3.90.0-4.el8_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `nss-sysinit-3.90.0-3.el8_8.x86_64`
+### `rpm` package: `nss-sysinit-3.90.0-4.el8_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `nss-util-3.90.0-3.el8_8.x86_64`
+### `rpm` package: `nss-util-3.90.0-4.el8_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
@@ -1223,7 +1223,7 @@ Licenses (from `rpm --query`): OpenLDAP
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-libs-1.1.1k-9.el8_7.x86_64`
+### `rpm` package: `openssl-libs-1.1.1k-12.el8_9.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL and ASL 2.0
 
@@ -1265,7 +1265,7 @@ Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `pixman-0.38.4-2.el8.x86_64`
+### `rpm` package: `pixman-0.38.4-3.el8_9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -1289,7 +1289,7 @@ Licenses (from `rpm --query`): ISC
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `platform-python-3.6.8-56.el8_9.x86_64`
+### `rpm` package: `platform-python-3.6.8-56.el8_9.2.x86_64`
 
 Licenses (from `rpm --query`): Python
 
@@ -1355,7 +1355,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-libs-3.6.8-56.el8_9.x86_64`
+### `rpm` package: `python3-libs-3.6.8-56.el8_9.2.x86_64`
 
 Licenses (from `rpm --query`): Python
 
@@ -1499,7 +1499,7 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `tzdata-java-2023c-1.el8.noarch`
+### `rpm` package: `tzdata-java-2023d-1.el8.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
