@@ -1,7 +1,7 @@
 ## `mongo-express:1-20-alpine3.19`
 
 ```console
-$ docker pull mongo-express@sha256:450347039f27d5878a729aaa3e0dfa5246f97fe746f3308b516098de5613610d
+$ docker pull mongo-express@sha256:65f053960cdc0b512ca9b0ca38ac66ddf79da9e17a55e0bb6f67ee429b87aca7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull mongo-express@sha256:450347039f27d5878a729aaa3e0dfa5246f97fe746f33
 ### `mongo-express:1-20-alpine3.19` - linux; amd64
 
 ```console
-$ docker pull mongo-express@sha256:abaef901bb3b174624ec2dd67a0679ce45fda69c5bfd47c2ffd33af05364a4ed
+$ docker pull mongo-express@sha256:f073fe32e107c98acd895b93b5021b98c22fc5073eae662c5b123b80947415ed
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.8 MB (81764460 bytes)**  
+-	Total Size: **81.8 MB (81764461 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4331491ad4b93b0623c246515c316da45b09c33da2e2a2a2cef7db6a26650ff8`
+-	Image ID: `sha256:87a98c1a3f58478f695597e44f0cdb4f09f8561a93ad6df3181949e73cd19b53`
 -	Entrypoint: `["\/sbin\/tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["mongo-express"]`
 
@@ -53,15 +53,15 @@ ARG MONGO_EXPRESS_VERSION=release/v1.0.2
 # Wed, 10 Jan 2024 22:46:28 GMT
 # ARGS: MONGO_EXPRESS_REPOSITORY=mongo-express/mongo-express MONGO_EXPRESS_VERSION=release/v1.0.2
 RUN set -eux;     apk add --no-cache --virtual .me-fetch-deps git;     git clone --depth 1 --branch "$MONGO_EXPRESS_VERSION" -c advice.detachedHead=false https://github.com/$MONGO_EXPRESS_REPOSITORY.git .;     export DISABLE_V8_COMPILE_CACHE=1;     yarn install;     yarn build;     apk del --no-network .me-fetch-deps;     rm -rf .git* ~/.cache ~/.yarn
-# Wed, 10 Jan 2024 22:46:29 GMT
-ENV ME_CONFIG_MONGODB_URL=mongodb://mongo:27017 ME_CONFIG_MONGODB_ENABLE_ADMIN=true ME_CONFIG_SITE_SESSIONSECRET=secret VCAP_APP_HOST=0.0.0.0
-# Wed, 10 Jan 2024 22:46:29 GMT
+# Tue, 16 Jan 2024 18:33:27 GMT
+ENV ME_CONFIG_MONGODB_URL=mongodb://mongo:27017 ME_CONFIG_MONGODB_ENABLE_ADMIN=true ME_CONFIG_SITE_SESSIONSECRET=secret ME_CONFIG_BASICAUTH=true VCAP_APP_HOST=0.0.0.0
+# Tue, 16 Jan 2024 18:33:27 GMT
 EXPOSE 8081
-# Wed, 10 Jan 2024 22:46:30 GMT
+# Tue, 16 Jan 2024 18:33:27 GMT
 COPY file:1fbcb9f1d4f70587b6312cc26764f8d10153fb54e0c11534a87d1dac7043974d in / 
-# Wed, 10 Jan 2024 22:46:30 GMT
+# Tue, 16 Jan 2024 18:33:27 GMT
 ENTRYPOINT ["/sbin/tini" "--" "/docker-entrypoint.sh"]
-# Wed, 10 Jan 2024 22:46:30 GMT
+# Tue, 16 Jan 2024 18:33:27 GMT
 CMD ["mongo-express"]
 ```
 
@@ -94,22 +94,22 @@ CMD ["mongo-express"]
 		Last Modified: Wed, 10 Jan 2024 22:47:52 GMT  
 		Size: 33.1 MB (33061544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76865480e138ac3da940748e3e0a9f72b00e9a3a46974aa699b044a9c14acf0b`  
-		Last Modified: Wed, 10 Jan 2024 22:47:43 GMT  
-		Size: 851.0 B  
+	-	`sha256:4df36fcf5d731bf74001ef6bbf1938576595ca763950a95dae8ff8293bd8e131`  
+		Last Modified: Tue, 16 Jan 2024 18:33:54 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo-express:1-20-alpine3.19` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo-express@sha256:566037f6ca83365fb86603a97e2a732041bff8b4d6801725872abb7df2444336
+$ docker pull mongo-express@sha256:1d8bdc2c5611867de62b9065ea15a8971ab63b4340a3902e24370f1fa6bbd6d8
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.6 MB (81624062 bytes)**  
+-	Total Size: **81.6 MB (81624064 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d3531b642e429c1b5b46b249070a101376af19e8d9e549d16815e5402b841b39`
+-	Image ID: `sha256:af6e148ac6000b03eecc31b870a3940cbe6f080daf808742b028ccc2c0fac042`
 -	Entrypoint: `["\/sbin\/tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["mongo-express"]`
 
@@ -143,15 +143,15 @@ ARG MONGO_EXPRESS_VERSION=release/v1.0.2
 # Wed, 10 Jan 2024 23:51:57 GMT
 # ARGS: MONGO_EXPRESS_REPOSITORY=mongo-express/mongo-express MONGO_EXPRESS_VERSION=release/v1.0.2
 RUN set -eux;     apk add --no-cache --virtual .me-fetch-deps git;     git clone --depth 1 --branch "$MONGO_EXPRESS_VERSION" -c advice.detachedHead=false https://github.com/$MONGO_EXPRESS_REPOSITORY.git .;     export DISABLE_V8_COMPILE_CACHE=1;     yarn install;     yarn build;     apk del --no-network .me-fetch-deps;     rm -rf .git* ~/.cache ~/.yarn
-# Wed, 10 Jan 2024 23:51:59 GMT
-ENV ME_CONFIG_MONGODB_URL=mongodb://mongo:27017 ME_CONFIG_MONGODB_ENABLE_ADMIN=true ME_CONFIG_SITE_SESSIONSECRET=secret VCAP_APP_HOST=0.0.0.0
-# Wed, 10 Jan 2024 23:51:59 GMT
+# Tue, 16 Jan 2024 18:39:44 GMT
+ENV ME_CONFIG_MONGODB_URL=mongodb://mongo:27017 ME_CONFIG_MONGODB_ENABLE_ADMIN=true ME_CONFIG_SITE_SESSIONSECRET=secret ME_CONFIG_BASICAUTH=true VCAP_APP_HOST=0.0.0.0
+# Tue, 16 Jan 2024 18:39:44 GMT
 EXPOSE 8081
-# Wed, 10 Jan 2024 23:51:59 GMT
+# Tue, 16 Jan 2024 18:39:44 GMT
 COPY file:1fbcb9f1d4f70587b6312cc26764f8d10153fb54e0c11534a87d1dac7043974d in / 
-# Wed, 10 Jan 2024 23:51:59 GMT
+# Tue, 16 Jan 2024 18:39:44 GMT
 ENTRYPOINT ["/sbin/tini" "--" "/docker-entrypoint.sh"]
-# Wed, 10 Jan 2024 23:51:59 GMT
+# Tue, 16 Jan 2024 18:39:44 GMT
 CMD ["mongo-express"]
 ```
 
@@ -184,7 +184,7 @@ CMD ["mongo-express"]
 		Last Modified: Wed, 10 Jan 2024 23:53:02 GMT  
 		Size: 33.1 MB (33061288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69512ad5e559705f748300a216d794b7d29084ad33e5dba91a081d4d0d48cfa6`  
-		Last Modified: Wed, 10 Jan 2024 23:52:56 GMT  
-		Size: 850.0 B  
+	-	`sha256:c5dc3b5f41472b90f22cb37f290027e2e2588f82d5fdbcdc51dc1b9b5ad2a4bc`  
+		Last Modified: Tue, 16 Jan 2024 18:40:08 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
