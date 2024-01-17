@@ -1,7 +1,7 @@
 ## `ubuntu:latest`
 
 ```console
-$ docker pull ubuntu@sha256:a2bbdf79d03f6d4171bbd6ebb4782f6229375951987d3427ec3d9373f9841cd7
+$ docker pull ubuntu@sha256:e6173d4dc55e76b87c4af8db8821b1feae4146dd47341e4d431118c7dd060a74
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -49,35 +49,35 @@ CMD ["/bin/bash"]
 ### `ubuntu:latest` - linux; arm variant v7
 
 ```console
-$ docker pull ubuntu@sha256:c6bd78eb69d21a2266b96a851002324b769483d704df3b73a37f78e6fe767f04
+$ docker pull ubuntu@sha256:4dd8fa9bb6eeba34132bb33052394086888e87d26631673e1f7f4c6a8db12f1e
 ```
 
--	Docker Version: 20.10.21
+-	Docker Version: 24.0.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.6 MB (26635272 bytes)**  
+-	Total Size: **26.6 MB (26634882 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bcb4f0da36a059c0aa61899290aec075393d2865c1edea112ea81ceaa12d53ae`
+-	Image ID: `sha256:ffd401c418ce0f9d3e2320052ae2df8a1a175c296efbce0b4135e53b30eb69b7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 12 Dec 2023 11:41:01 GMT
+# Thu, 11 Jan 2024 17:30:37 GMT
 ARG RELEASE
-# Tue, 12 Dec 2023 11:41:01 GMT
+# Thu, 11 Jan 2024 17:30:37 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 12 Dec 2023 11:41:01 GMT
+# Thu, 11 Jan 2024 17:30:37 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 12 Dec 2023 11:41:01 GMT
+# Thu, 11 Jan 2024 17:30:37 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 12 Dec 2023 11:41:06 GMT
-ADD file:62316c1da591602d5f15e0cda8787ce54cb80cd63ee53391aad6e4ea9cc97f06 in / 
-# Tue, 12 Dec 2023 11:41:06 GMT
+# Thu, 11 Jan 2024 17:30:39 GMT
+ADD file:7c2f93ce47dedf9ba449bf11d41e9930af9fa209725f5772dc09f8c8100b5626 in / 
+# Thu, 11 Jan 2024 17:30:40 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:d33cdf8c116214cd1f23278abc2741878af19658bf65c210a48280807622d871`  
-		Last Modified: Tue, 12 Dec 2023 11:55:37 GMT  
-		Size: 26.6 MB (26635272 bytes)  
+	-	`sha256:781c0280deb7f9bce0fa19ad87a096aa89f97dc84ad63641be966b6c27e33c84`  
+		Last Modified: Thu, 11 Jan 2024 17:49:11 GMT  
+		Size: 26.6 MB (26634882 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:latest` - linux; arm64 variant v8
