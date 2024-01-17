@@ -1,7 +1,7 @@
 ## `buildpack-deps:bookworm-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:979b2b91e4e9ee98d95f1081492642ed7e0cf6e33fa711cbb172e9f2994faec5
+$ docker pull buildpack-deps@sha256:70720de1bbd48ac62a26b9f93d988df059c5573d6d22e7acd580c2aace290c35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18,14 +18,14 @@ $ docker pull buildpack-deps@sha256:979b2b91e4e9ee98d95f1081492642ed7e0cf6e33fa7
 ### `buildpack-deps:bookworm-scm` - linux; amd64
 
 ```console
-$ docker pull buildpack-deps@sha256:e7ac1cc7ac362ae87a22f3e8a2603034e11c0efe7bd5d2cd22ea9ddffbb2a156
+$ docker pull buildpack-deps@sha256:67b9b44545de3968b1b796781781a62ef74aee38cbf43931ea4f96f4d4df181b
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.7 MB (137747697 bytes)**  
+-	Total Size: **137.7 MB (137747876 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62e9129185800c079495c64207446a28031b6673092112cffa572d3bdc19a830`
+-	Image ID: `sha256:96c791e8dc666da5c5782bb3902fdffca1e050dfe576792833a42a062d515a6b`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -35,8 +35,8 @@ ADD file:077a3156bd8271f26498ae6ac3800e68a42b9277581bc81eea31fec1a123dca5 in /
 CMD ["bash"]
 # Thu, 11 Jan 2024 04:35:03 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 11 Jan 2024 04:35:21 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 17 Jan 2024 01:31:34 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -48,22 +48,22 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercuri
 		Last Modified: Thu, 11 Jan 2024 04:44:35 GMT  
 		Size: 24.0 MB (24046494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d55d1cb1ffb0c7e0438b372a96cc0f23a76c21571fa3e7b7b38e3fbc66a8c3a`  
-		Last Modified: Thu, 11 Jan 2024 04:44:54 GMT  
-		Size: 64.1 MB (64139713 bytes)  
+	-	`sha256:30d85599795460b2d9d24c6b87c53ec60555b601705cc83bea31632240500980`  
+		Last Modified: Wed, 17 Jan 2024 02:00:06 GMT  
+		Size: 64.1 MB (64139892 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:bookworm-scm` - linux; arm variant v5
 
 ```console
-$ docker pull buildpack-deps@sha256:14ff48f9757f710245b48185b55bbd50a96a01fbaff98a4e30d10ff370f518e7
+$ docker pull buildpack-deps@sha256:7b773138b29718337d69a4ac70b575d36cf8095c17ef2655a73b73088755bd0c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.6 MB (131559468 bytes)**  
+-	Total Size: **131.6 MB (131559091 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5607461ad9fb79ee0eb6c8150cbfd2fc315c5af37e7b9e5734a5164d3336a737`
+-	Image ID: `sha256:0e9ba222726d9707bc2019f447d412c8c674e5c060c6e4a41cc3745277b1dda5`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -73,8 +73,8 @@ ADD file:a0f6aa0cd43d2f5d230b0fc0ff4408d84c08d1f2bb9c4a0b781f38a9be437f33 in /
 CMD ["bash"]
 # Thu, 11 Jan 2024 06:50:28 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 11 Jan 2024 06:51:09 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 17 Jan 2024 01:48:55 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -86,22 +86,22 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercuri
 		Last Modified: Thu, 11 Jan 2024 07:05:51 GMT  
 		Size: 22.7 MB (22724699 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8339f95fb05c1bc823b89651b26cbcfdd6869404686d20c6e2598f1a41b6746`  
-		Last Modified: Thu, 11 Jan 2024 07:06:18 GMT  
-		Size: 61.5 MB (61515694 bytes)  
+	-	`sha256:ca93e1c73a3e924629183fbef48c0bdfa4c2dee03c4e924e6d5c99a7c4e4df48`  
+		Last Modified: Wed, 17 Jan 2024 02:01:53 GMT  
+		Size: 61.5 MB (61515317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:bookworm-scm` - linux; arm variant v7
 
 ```console
-$ docker pull buildpack-deps@sha256:b4fa06b2d3dcddfee6fbd18c1384a5632a995d6fc6710b8c49514d319b17cc62
+$ docker pull buildpack-deps@sha256:4c070b2cd1f3f41110f548b0708c689ece1c22f6d112980ead289ef310917fab
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.3 MB (126319501 bytes)**  
+-	Total Size: **126.3 MB (126319832 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a00cc223d5afaa89154caa2b0dd1694153eada0eab1bf0f577d1811e8f5b794b`
+-	Image ID: `sha256:9b0b0a6fc14993cc8fd7b568574199bf81bf0768106e67ba2a90082e7cdb8fa7`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -111,8 +111,8 @@ ADD file:781c48325e0a88993e9f749e0cd761de39d671e9a23223797cb25431ac40d39a in /
 CMD ["bash"]
 # Thu, 11 Jan 2024 03:14:57 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 11 Jan 2024 03:15:19 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 17 Jan 2024 01:39:55 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -124,22 +124,22 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercuri
 		Last Modified: Thu, 11 Jan 2024 03:28:50 GMT  
 		Size: 21.9 MB (21949911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c77a5ad50b17b550d0d7c458e20b93871af72456b17094173adc0ee560aa0a7`  
-		Last Modified: Thu, 11 Jan 2024 03:29:16 GMT  
-		Size: 59.2 MB (59212918 bytes)  
+	-	`sha256:4217895349d978f5d5f829a1b9f1d590307ed9bb5c0f7f995e80e9b2b82004f1`  
+		Last Modified: Wed, 17 Jan 2024 02:18:53 GMT  
+		Size: 59.2 MB (59213249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:bookworm-scm` - linux; arm64 variant v8
 
 ```console
-$ docker pull buildpack-deps@sha256:e8b3576c8335446a0740e364acbc238d351d88235e62658923a3b510911cfe61
+$ docker pull buildpack-deps@sha256:34c17cec0c1941858ae2a8310332d170fcb88794513f8bd648ffd5d0b26cfafc
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.2 MB (137165638 bytes)**  
+-	Total Size: **137.2 MB (137165986 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:961b623b654b35b62b16fab5b8b62d629393bff7f30f715654297a2c76bbab70`
+-	Image ID: `sha256:45324c928b2457fcd89c61908396c304de1a4e2740e057db07cc9139dc354e51`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -149,8 +149,8 @@ ADD file:051a18650d326af1d23e30c93370e647e62f94887ce43b22e1808052bce4f2a6 in /
 CMD ["bash"]
 # Thu, 11 Jan 2024 09:25:20 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 11 Jan 2024 09:25:34 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 17 Jan 2024 02:24:07 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -162,22 +162,22 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercuri
 		Last Modified: Thu, 11 Jan 2024 09:34:07 GMT  
 		Size: 23.6 MB (23582592 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:069a35492a4c5b1727f36b1184c413a96ce816d65578adaf3bce2023a1765c0a`  
-		Last Modified: Thu, 11 Jan 2024 09:34:23 GMT  
-		Size: 64.0 MB (63990799 bytes)  
+	-	`sha256:76b4f1810f998c1f1580e2404b2e7fed8e264902d898bbe531443ea9789b7641`  
+		Last Modified: Wed, 17 Jan 2024 02:58:02 GMT  
+		Size: 64.0 MB (63991147 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:bookworm-scm` - linux; 386
 
 ```console
-$ docker pull buildpack-deps@sha256:155e24d5814981f36aa0afc02998344736893f869f1c589a952beb191413175b
+$ docker pull buildpack-deps@sha256:49cd37a2cb1804d4a7aa6bb80a5744d770cadba6d2ae442c4ab9e4d44f54fee5
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.5 MB (141453222 bytes)**  
+-	Total Size: **141.5 MB (141452940 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4df2091e19899e822594fe7dc5eb7eaf79f4ddab747b959f4767a954a43a6a77`
+-	Image ID: `sha256:3ff8fb6c909cb629769d00508c896c638ba768beb67ff732302431fee7e12160`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -187,8 +187,8 @@ ADD file:c7cf48f483b7eba0a82956c5ef1a1c78e84c2b91d0b9cf17fdfde5b756fcba9f in /
 CMD ["bash"]
 # Thu, 11 Jan 2024 04:29:02 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 11 Jan 2024 04:29:28 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 17 Jan 2024 01:38:45 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -200,22 +200,22 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercuri
 		Last Modified: Thu, 11 Jan 2024 04:41:29 GMT  
 		Size: 24.9 MB (24884306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c54028869f774208be77fae1c160385eebefa5743b2d687462a195a10b5ec1b`  
-		Last Modified: Thu, 11 Jan 2024 04:41:57 GMT  
-		Size: 66.0 MB (65986939 bytes)  
+	-	`sha256:4b02d03ac10f8c192e0b06aa689206512609710cce15b14a04e9b07acdfcabed`  
+		Last Modified: Wed, 17 Jan 2024 01:50:18 GMT  
+		Size: 66.0 MB (65986657 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:bookworm-scm` - linux; mips64le
 
 ```console
-$ docker pull buildpack-deps@sha256:61767c17c2e9de211227818d4141ab7af451f7ae4b4de74b1da90a7895caaa5d
+$ docker pull buildpack-deps@sha256:db96d8824a88a1ed45e7565df01fae935e0ee611877cc7134e278dd8255ee815
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.1 MB (136144901 bytes)**  
+-	Total Size: **136.1 MB (136144950 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b3704d9f71ba24e9ae45e06506bea0cbcce7604e6431014e6bc62efafab7dde`
+-	Image ID: `sha256:086c4d562d3cd72365aa8d9a9ac94f613d83ee97c4fc045afc9fdaadf5866c7b`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -225,8 +225,8 @@ ADD file:e632734e8c2b1e7594b8a79fefe3b2790d6e662e647019a7daa2713f4b1aa7be in /
 CMD ["bash"]
 # Thu, 11 Jan 2024 02:48:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 11 Jan 2024 02:50:23 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 17 Jan 2024 02:11:08 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -238,9 +238,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercuri
 		Last Modified: Thu, 11 Jan 2024 03:24:15 GMT  
 		Size: 23.6 MB (23630453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec9fe3d753531dacf4e8585a7a9b9201236938acff15c0cbbcc1dac8d260ba5d`  
-		Last Modified: Thu, 11 Jan 2024 03:25:09 GMT  
-		Size: 63.0 MB (62965807 bytes)  
+	-	`sha256:1db1512d660252aea394ce778a64b88e7f0b13cc6560953b1615531e4e266d3a`  
+		Last Modified: Wed, 17 Jan 2024 02:47:38 GMT  
+		Size: 63.0 MB (62965856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:bookworm-scm` - linux; ppc64le
