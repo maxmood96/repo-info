@@ -38,11 +38,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris acl=2.3.1-4
-'http://http.debian.net/debian/pool/main/a/acl/acl_2.3.1-4.dsc' acl_2.3.1-4.dsc 2505 SHA256:6dff325eb4309da24e6d6eb1b22faa4e0dc243c0c10a9a45f37a992a7b7f98fa
-'http://http.debian.net/debian/pool/main/a/acl/acl_2.3.1.orig.tar.xz' acl_2.3.1.orig.tar.xz 355676 SHA256:c0234042e17f11306c23c038b08e5e070edb7be44bef6697fb8734dcff1c66b1
-'http://http.debian.net/debian/pool/main/a/acl/acl_2.3.1.orig.tar.xz.asc' acl_2.3.1.orig.tar.xz.asc 833 SHA256:54fb8fcd6ae6901f2257e18d503e5e18ad956babf8d80d2ea29f280fc7264662
-'http://http.debian.net/debian/pool/main/a/acl/acl_2.3.1-4.debian.tar.xz' acl_2.3.1-4.debian.tar.xz 31020 SHA256:6e26692e3edf09a165a6043bf658ca41407f8c97a92e2cbcf11c148dfb804cd4
+'http://deb.debian.org/debian/pool/main/a/acl/acl_2.3.1-4.dsc' acl_2.3.1-4.dsc 2505 SHA256:6dff325eb4309da24e6d6eb1b22faa4e0dc243c0c10a9a45f37a992a7b7f98fa
+'http://deb.debian.org/debian/pool/main/a/acl/acl_2.3.1.orig.tar.xz' acl_2.3.1.orig.tar.xz 355676 SHA256:c0234042e17f11306c23c038b08e5e070edb7be44bef6697fb8734dcff1c66b1
+'http://deb.debian.org/debian/pool/main/a/acl/acl_2.3.1.orig.tar.xz.asc' acl_2.3.1.orig.tar.xz.asc 833 SHA256:54fb8fcd6ae6901f2257e18d503e5e18ad956babf8d80d2ea29f280fc7264662
+'http://deb.debian.org/debian/pool/main/a/acl/acl_2.3.1-4.debian.tar.xz' acl_2.3.1-4.debian.tar.xz 31020 SHA256:6e26692e3edf09a165a6043bf658ca41407f8c97a92e2cbcf11c148dfb804cd4
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/acl/2.3.1-4/ (for browsing the source)
+- https://sources.debian.net/src/acl/2.3.1-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/acl/2.3.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=2.7.6`
 
@@ -58,19 +64,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.7.6
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.6.dsc' apt_2.7.6.dsc 2945 SHA256:bdc573f2113e70fb648a819437d36b14427d492695460811f74214f174caf7fe
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.6.tar.xz' apt_2.7.6.tar.xz 2345736 SHA256:8683f54eff0bf54e51e025b348bd0774d0fd437799616f48512956cf15c05f67
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.7.6/
 
-- https://sources.debian.net/src/apt/2.7.6/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.7.6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.7.6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.1-5`
 
@@ -1237,9 +1237,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris hostname=3.23+nmu1
-'http://http.debian.net/debian/pool/main/h/hostname/hostname_3.23%2bnmu1.dsc' hostname_3.23+nmu1.dsc 1281 SHA256:56f2189eaeee638e86d29a05356e7001632e33b2132a41a4634a9ff839264ea6
-'http://http.debian.net/debian/pool/main/h/hostname/hostname_3.23%2bnmu1.tar.xz' hostname_3.23+nmu1.tar.xz 12876 SHA256:f3fb39f30b00ba7dba2cec013195d7e1bb215f241153208ccd52da3eedfe7a7d
+'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.23%2bnmu1.dsc' hostname_3.23+nmu1.dsc 1281 SHA256:56f2189eaeee638e86d29a05356e7001632e33b2132a41a4634a9ff839264ea6
+'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.23%2bnmu1.tar.xz' hostname_3.23+nmu1.tar.xz 12876 SHA256:f3fb39f30b00ba7dba2cec013195d7e1bb215f241153208ccd52da3eedfe7a7d
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/hostname/3.23+nmu1/ (for browsing the source)
+- https://sources.debian.net/src/hostname/3.23+nmu1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/hostname/3.23+nmu1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `icu=72.1-4`
 
@@ -3040,10 +3046,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris r-cran-mass=7.3-60-2
-'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-60-2.dsc' r-cran-mass_7.3-60-2.dsc 1851 SHA256:36dc8753dc9e25da452b19454c08604e185f326b61e04d0fe31991f77475aa66
-'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-60.orig.tar.gz' r-cran-mass_7.3-60.orig.tar.gz 561534 SHA256:b802410feab01464d112b27b3501176eb8e68511d4ba9d052ac4db1f2a72f0c2
-'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-60-2.debian.tar.xz' r-cran-mass_7.3-60-2.debian.tar.xz 6572 SHA256:d018deed32152d686bbd14e273101069570bc3d49a38d9552d4f36877d03412a
+'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-60-2.dsc' r-cran-mass_7.3-60-2.dsc 1851 SHA256:36dc8753dc9e25da452b19454c08604e185f326b61e04d0fe31991f77475aa66
+'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-60.orig.tar.gz' r-cran-mass_7.3-60.orig.tar.gz 561534 SHA256:b802410feab01464d112b27b3501176eb8e68511d4ba9d052ac4db1f2a72f0c2
+'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-60-2.debian.tar.xz' r-cran-mass_7.3-60-2.debian.tar.xz 6572 SHA256:d018deed32152d686bbd14e273101069570bc3d49a38d9552d4f36877d03412a
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/r-cran-mass/7.3-60-2/ (for browsing the source)
+- https://sources.debian.net/src/r-cran-mass/7.3-60-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/r-cran-mass/7.3-60-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-nnet=7.3-19-2`
 
@@ -3369,20 +3381,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.35+dfsg-2
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg-2.dsc' tar_1.35+dfsg-2.dsc 2009 SHA256:a4ea2649554a2086f3e31cb5da1451225849217afd1b9f43f9f22be934260476
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA256:9ae57e981c1e73c0eebc2b26c9b0c4497fe310ef1d516ea430efb5470b71f7a8
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg-2.debian.tar.xz' tar_1.35+dfsg-2.debian.tar.xz 20824 SHA256:1db261298197c910a79134cecda87636d3e17fa42a824378dca7132b9390d447
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tar/1.35+dfsg-2/
 
-- https://sources.debian.net/src/tar/1.35+dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/tar/1.35+dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tar/1.35+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tcl8.6=8.6.13+dfsg-2`
 
@@ -3473,21 +3478,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2023c-11
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2023c-11.dsc' tzdata_2023c-11.dsc 2433 SHA256:6185ed271bac61cb31740320206ec23710c5017532e1d0ef6e3bf3887c16594e
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz' tzdata_2023c.orig.tar.gz 443902 SHA256:3f510b5d1b4ae9bb38e485aa302a776b317fb3637bdb6404c4adf7b6cadd965c
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz.asc' tzdata_2023c.orig.tar.gz.asc 833 SHA256:d5ec7b6ceddc46aa137c0ef85fa5c87445509d7997c067ee0fd2e2a23f833557
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2023c-11.debian.tar.xz' tzdata_2023c-11.debian.tar.xz 122416 SHA256:1cce89e3aea23179d165cde708b82818cb7571b43828e29bb34af51ec4008127
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2023c-11/
 
-- https://sources.debian.net/src/tzdata/2023c-11/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2023c-11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2023c-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0043+nmu1`
 
@@ -3576,20 +3573,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.39.3-2
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3-2.dsc' util-linux_2.39.3-2.dsc 4608 SHA256:c185e3063080bfb307ef8760adeefb4dc5b784f8613a4fbca18dc86783798479
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3.orig.tar.xz' util-linux_2.39.3.orig.tar.xz 8526168 SHA256:7b6605e48d1a49f43cc4b4cfc59f313d0dd5402fa40b96810bd572e167dfed0f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3-2.debian.tar.xz' util-linux_2.39.3-2.debian.tar.xz 98192 SHA256:dd750fd32ea028a1867dcba9ce2bab4c3fdda54d3e6363568ac92a0767f6a076
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.39.3-2/
 
-- https://sources.debian.net/src/util-linux/2.39.3-2/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.39.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.39.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `vim=2:9.1.0-1`
 
