@@ -1,7 +1,7 @@
 ## `hylang:pypy3.9`
 
 ```console
-$ docker pull hylang@sha256:976ba3bd854359626ca5f49a4b38216e641874947aebb21fa0fc2058f7ce6b28
+$ docker pull hylang@sha256:3258f07685af396b6755b00e0279b8eecb6260556ad4bb16f0e421d1fcf15136
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,37 +18,37 @@ $ docker pull hylang@sha256:976ba3bd854359626ca5f49a4b38216e641874947aebb21fa0fc
 ### `hylang:pypy3.9` - linux; amd64
 
 ```console
-$ docker pull hylang@sha256:df412ca7872f31de00865e164b11e6b7280a3940b22bb24168fd6f7e0edd857a
+$ docker pull hylang@sha256:9e07e10b4b31c6c30ef01fed63dae734e653508da37d9ad4dd3e53b62224fd45
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.8 MB (77812311 bytes)**  
+-	Total Size: **77.8 MB (77820322 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d592ad032a66934f3838c519a2f59838632e69d1d3962b2ed3ff05137c08bc0`
+-	Image ID: `sha256:05cc1c8fff257faf36df3ae42363ea0291e7d64f68669c5f8ae7d5cf30ccdff3`
 -	Default Command: `["hy"]`
 
 ```dockerfile
-# Mon, 25 Dec 2023 11:23:57 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Mon, 25 Dec 2023 11:23:57 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 CMD ["bash"]
-# Mon, 25 Dec 2023 11:23:57 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 25 Dec 2023 11:23:57 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 ENV LANG=C.UTF-8
-# Mon, 25 Dec 2023 11:23:57 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 25 Dec 2023 11:23:57 GMT
-ENV PYPY_VERSION=7.3.14
-# Mon, 25 Dec 2023 11:23:57 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.14-linux64.tar.bz2'; 			sha256='febd770a616641ca8419c381c7fb224e515b892551d0db49a1231397ed38859d'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.14-aarch64.tar.bz2'; 			sha256='14b842f32f60ce2d9d130971f9bcbdb6875824a0e78fac36806d267e0982179c'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.14-linux32.tar.bz2'; 			sha256='4ad89a22369a6f2f83a7d8d047e0fc4cf5597f0921fa7afa23499ed05f663503'; 			;; 		's390x') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.14-s390x.tar.bz2'; 			sha256='ba2451e9081db5bc724a05530a7f98817231de83ff6fdf15bad21a4e9b6dfeae'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libexpat1 		libncurses5 		libncursesw6 		libsqlite3-0 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.9; 	if [ -f _gdbm_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libgdbm-dev; 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev liblzma-dev; 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libsqlite3-dev; 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Mon, 25 Dec 2023 11:23:57 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
+ENV PYPY_VERSION=7.3.15
+# Fri, 05 Jan 2024 23:20:01 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.15-linux64.tar.bz2'; 			sha256='f062be307200bde434817e1620cebc13f563d6ab25309442c5f4d0f0d68f0912'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.15-aarch64.tar.bz2'; 			sha256='03e35fcba290454bb0ccf7ee57fb42d1e63108d10d593776a382c0a2fe355de0'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.15-linux32.tar.bz2'; 			sha256='c6209380977066c9e8b96e8258821c70f996004ce1bc8659ae83d4fd5a89ff5c'; 			;; 		's390x') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.15-s390x.tar.bz2'; 			sha256='deeb5e54c36a0fd9cfefd16e63a0d5bed4f4a43e6bbc01c23f0ed8f7f1c0aaf3'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libexpat1 		libncurses5 		libncursesw6 		libsqlite3-0 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.9; 	if [ -f _gdbm_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libgdbm-dev; 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev liblzma-dev; 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libsqlite3-dev; 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
+# Fri, 05 Jan 2024 23:20:01 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py
-# Mon, 25 Dec 2023 11:23:57 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 ENV PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d399b2d5218
-# Mon, 25 Dec 2023 11:23:57 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum --check --strict -; 		pipVersion="$(pypy3 -c 'import ensurepip; print(ensurepip._PIP_VERSION)')"; 	setuptoolsVersion="$(pypy3 -c 'import ensurepip; print(ensurepip._SETUPTOOLS_VERSION)')"; 		pypy3 get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip == $pipVersion" 		"setuptools == $setuptoolsVersion" 	; 	apt-get purge -y --auto-remove wget; 	pip --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py # buildkit
-# Mon, 25 Dec 2023 11:23:57 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 CMD ["pypy3"]
 # Fri, 05 Jan 2024 23:20:01 GMT
 ENV HY_VERSION=0.28.0
@@ -65,44 +65,44 @@ CMD ["hy"]
 		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
 		Size: 29.1 MB (29125921 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:840cfae6382f81d03453b3b81694425575dcb52a52de110ba98ccae1d2beacb0`  
-		Last Modified: Fri, 12 Jan 2024 00:41:29 GMT  
-		Size: 3.5 MB (3490942 bytes)  
+	-	`sha256:e24be3246fb7cea7c247e8a5a742ec32281c4b4e8beb9bc127f037a3da6b229c`  
+		Last Modified: Tue, 16 Jan 2024 23:55:54 GMT  
+		Size: 3.5 MB (3490952 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e06609ffcc99daea0b805b41007b49c0faaeeccdd789b28efa97dde1f6960e`  
-		Last Modified: Fri, 12 Jan 2024 00:41:29 GMT  
-		Size: 37.6 MB (37557149 bytes)  
+	-	`sha256:3684352c1f9463911b70db1c06f5fb2fadfbbc9942a46f40a656853870c23004`  
+		Last Modified: Tue, 16 Jan 2024 23:55:55 GMT  
+		Size: 37.6 MB (37564834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed59d6375871b3b4308a454bace4570739a5f0142d05e1372d5e14c19137a745`  
-		Last Modified: Fri, 12 Jan 2024 00:41:29 GMT  
-		Size: 3.3 MB (3306733 bytes)  
+	-	`sha256:98355f093416566d18e4a328118cdbd45fcb7e17f9fa2330db6ec87adb8b1364`  
+		Last Modified: Tue, 16 Jan 2024 23:55:54 GMT  
+		Size: 3.3 MB (3306647 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c194eb59afd1f05e49160aea8e5fba3055c30906086893563fe76ea848fae94`  
-		Last Modified: Fri, 12 Jan 2024 00:57:23 GMT  
-		Size: 4.3 MB (4331566 bytes)  
+	-	`sha256:bff92ce3748908fec6a2c810ab1c97d251b66f2abc12045de08db1f1ff93b236`  
+		Last Modified: Wed, 17 Jan 2024 00:48:21 GMT  
+		Size: 4.3 MB (4331968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:pypy3.9` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:8fc01cfd61db0c9df71874d47292a39b02cd16b46314c2f07d6205eef91c579a
+$ docker pull hylang@sha256:794879894c9b36173cf1dba06e50e9a81d28ca073ca3421d4a966b8eeee06224
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.2 MB (3157486 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9309e399e607fb71b466235f101cb79a2821f4f14816ffaed063a34c526a8104`
+-	Image ID: `sha256:75af3660cc8450a18857aca807743478e305aa8806f1c97aef36647c4a486ce1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d817aa247fab5aa34fd44008099da854e85b510ab4be306592c19d43ef4806b7`  
-		Last Modified: Fri, 12 Jan 2024 00:57:23 GMT  
+	-	`sha256:26608fd6d9c6a42cd1b1c714069e9448b83421df1804fad836ef5c847f00f7cf`  
+		Last Modified: Wed, 17 Jan 2024 00:48:21 GMT  
 		Size: 3.1 MB (3147642 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c90186972b4426320cf3512846dbee800ecdd00994aa97a77241eb93d5b3b70e`  
-		Last Modified: Fri, 12 Jan 2024 00:57:23 GMT  
+	-	`sha256:70d62752231efc05890ffe8706b3c45e4c8838f7eb8c0b5edd84d11acce9ad4a`  
+		Last Modified: Wed, 17 Jan 2024 00:48:20 GMT  
 		Size: 9.8 KB (9844 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -200,37 +200,37 @@ $ docker pull hylang@sha256:9b662ed9abba6abff207936d3e94eb8b555696f6af88e01efcc4
 ### `hylang:pypy3.9` - linux; 386
 
 ```console
-$ docker pull hylang@sha256:08c50b758e3dc3c221c2885206e58fa6d0222d7d926a7aa112b6b072002adc15
+$ docker pull hylang@sha256:e415003eae7aa617c788f431eec8f2f99e29c10f0c2102d0751a88f868cfcab3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.7 MB (74694665 bytes)**  
+-	Total Size: **74.7 MB (74687904 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:31b3d6bce7304b784e830aa9f8ce6f94feb4a81df23c871ca5c46deae080fb22`
+-	Image ID: `sha256:7140bb75ff24c32d3c17bb108947008cbd2d74c71aa7bdb98a61696b64bd2c47`
 -	Default Command: `["hy"]`
 
 ```dockerfile
-# Mon, 25 Dec 2023 11:23:57 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 ADD file:48689786b7812032adc0d36643501f16ddee15750a8f0f8b614dba58e5037b2b in / 
-# Mon, 25 Dec 2023 11:23:57 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 CMD ["bash"]
-# Mon, 25 Dec 2023 11:23:57 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 25 Dec 2023 11:23:57 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 ENV LANG=C.UTF-8
-# Mon, 25 Dec 2023 11:23:57 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 25 Dec 2023 11:23:57 GMT
-ENV PYPY_VERSION=7.3.14
-# Mon, 25 Dec 2023 11:23:57 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.14-linux64.tar.bz2'; 			sha256='febd770a616641ca8419c381c7fb224e515b892551d0db49a1231397ed38859d'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.14-aarch64.tar.bz2'; 			sha256='14b842f32f60ce2d9d130971f9bcbdb6875824a0e78fac36806d267e0982179c'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.14-linux32.tar.bz2'; 			sha256='4ad89a22369a6f2f83a7d8d047e0fc4cf5597f0921fa7afa23499ed05f663503'; 			;; 		's390x') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.14-s390x.tar.bz2'; 			sha256='ba2451e9081db5bc724a05530a7f98817231de83ff6fdf15bad21a4e9b6dfeae'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libexpat1 		libncurses5 		libncursesw6 		libsqlite3-0 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.9; 	if [ -f _gdbm_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libgdbm-dev; 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev liblzma-dev; 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libsqlite3-dev; 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Mon, 25 Dec 2023 11:23:57 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
+ENV PYPY_VERSION=7.3.15
+# Fri, 05 Jan 2024 23:20:01 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.15-linux64.tar.bz2'; 			sha256='f062be307200bde434817e1620cebc13f563d6ab25309442c5f4d0f0d68f0912'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.15-aarch64.tar.bz2'; 			sha256='03e35fcba290454bb0ccf7ee57fb42d1e63108d10d593776a382c0a2fe355de0'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.15-linux32.tar.bz2'; 			sha256='c6209380977066c9e8b96e8258821c70f996004ce1bc8659ae83d4fd5a89ff5c'; 			;; 		's390x') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.15-s390x.tar.bz2'; 			sha256='deeb5e54c36a0fd9cfefd16e63a0d5bed4f4a43e6bbc01c23f0ed8f7f1c0aaf3'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libexpat1 		libncurses5 		libncursesw6 		libsqlite3-0 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.9; 	if [ -f _gdbm_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libgdbm-dev; 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev liblzma-dev; 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libsqlite3-dev; 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
+# Fri, 05 Jan 2024 23:20:01 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py
-# Mon, 25 Dec 2023 11:23:57 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 ENV PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d399b2d5218
-# Mon, 25 Dec 2023 11:23:57 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum --check --strict -; 		pipVersion="$(pypy3 -c 'import ensurepip; print(ensurepip._PIP_VERSION)')"; 	setuptoolsVersion="$(pypy3 -c 'import ensurepip; print(ensurepip._SETUPTOOLS_VERSION)')"; 		pypy3 get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip == $pipVersion" 		"setuptools == $setuptoolsVersion" 	; 	apt-get purge -y --auto-remove wget; 	pip --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py # buildkit
-# Mon, 25 Dec 2023 11:23:57 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 CMD ["pypy3"]
 # Fri, 05 Jan 2024 23:20:01 GMT
 ENV HY_VERSION=0.28.0
@@ -247,58 +247,58 @@ CMD ["hy"]
 		Last Modified: Thu, 11 Jan 2024 02:43:20 GMT  
 		Size: 30.1 MB (30143875 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb6f14e9a76d5e9130ec85f8731dec60950e55060c9f4f40e3673a54193b91a4`  
-		Last Modified: Fri, 12 Jan 2024 00:41:11 GMT  
-		Size: 3.5 MB (3496062 bytes)  
+	-	`sha256:dc3276ecb69b2ee50cdb1d0c7cccd52a734f75e1b44f77bd42373260ee13b805`  
+		Last Modified: Tue, 16 Jan 2024 23:55:59 GMT  
+		Size: 3.5 MB (3496100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9130005db563cccc64333f6189c79bd961cbbe283ce580cd4863a7e6c8b3ef22`  
-		Last Modified: Fri, 12 Jan 2024 00:41:12 GMT  
-		Size: 33.4 MB (33416604 bytes)  
+	-	`sha256:bbbee07dad871274784de98bdd5510182672ce17ca8bf2d34c8a8afebe358c0a`  
+		Last Modified: Tue, 16 Jan 2024 23:55:59 GMT  
+		Size: 33.4 MB (33409917 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:653b0f61b6cb4426afdaf53f15ebd0a2831668228b512909a7de97796f22313a`  
-		Last Modified: Fri, 12 Jan 2024 00:41:11 GMT  
-		Size: 3.3 MB (3306361 bytes)  
+	-	`sha256:c8599b5c3324744831c4fc2294dd54639be79cfb929916e812d5c8d73ec1e61b`  
+		Last Modified: Tue, 16 Jan 2024 23:55:59 GMT  
+		Size: 3.3 MB (3306267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18e9a834fdde3aaa7e683111528e8bfe496410475fc8d4e75ad7a7a11ec3367e`  
-		Last Modified: Fri, 12 Jan 2024 00:57:39 GMT  
-		Size: 4.3 MB (4331763 bytes)  
+	-	`sha256:63eebca1da8e3cd69896285056ab58a1bc5eeec1bb4736e05545c1ff86d9fcfc`  
+		Last Modified: Wed, 17 Jan 2024 00:48:11 GMT  
+		Size: 4.3 MB (4331745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:pypy3.9` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:e2397b8f52b58aa095d7b45eeb24b17fe43663d78d2127d86083f48f71068c69
+$ docker pull hylang@sha256:be12db0f7a9f8781f1a07bf81dae096b54eb1ece79cf2341f1986760c1e666e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3151755 bytes)**  
+-	Total Size: **3.2 MB (3151754 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1ca00cc70831116cf4918d728375aa8ca1881761adb4f84d0835950d5c33e32`
+-	Image ID: `sha256:b05ce34494234d92b05310498d13a5ef2728b7de446f3e7d6e60379e29b4414d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dc8381d9f44f363c4c1e7c43f0f3f3a46cb43201d6551e4a92fa43b794f9c2ce`  
-		Last Modified: Fri, 12 Jan 2024 00:57:38 GMT  
+	-	`sha256:29651c965c5d0d927e7158c5a59e86dc4bb83ade81eb46e96c2f8ae54db2da7f`  
+		Last Modified: Wed, 17 Jan 2024 00:48:11 GMT  
 		Size: 3.1 MB (3141963 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:dcdefe2bf99e73057b9854bdb758e336cb36d88f159611738a57085e9c6e2fc0`  
-		Last Modified: Fri, 12 Jan 2024 00:57:38 GMT  
-		Size: 9.8 KB (9792 bytes)  
+	-	`sha256:a1176547f3ee9a34ce623766b389e120e32536b75ce06ae5012311113db0fad6`  
+		Last Modified: Wed, 17 Jan 2024 00:48:10 GMT  
+		Size: 9.8 KB (9791 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hylang:pypy3.9` - windows version 10.0.20348.2227; amd64
 
 ```console
-$ docker pull hylang@sha256:aea02f34f689efa165c7be59fca0861f5aef3acb981f16fc080a60412aad6d57
+$ docker pull hylang@sha256:f9f028945747aa97c4a54fe4932c6fd72f702be9dd06aa6f0cc9f42ce12b9a46
 ```
 
 -	Docker Version: 24.0.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.0 GB (1952891340 bytes)**  
+-	Total Size: **2.0 GB (1952908783 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae3ec94d4f02dde4944ad7c43205e5dfe4c7e3d5b1ca43f4c4ab328d88333f03`
+-	Image ID: `sha256:bd18b11e3efdaaa008deda33f1dc68f455298530e759c98f8cab20fdd44ab3d2`
 -	Default Command: `["hy"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -307,31 +307,31 @@ $ docker pull hylang@sha256:aea02f34f689efa165c7be59fca0861f5aef3acb981f16fc080a
 RUN Apply image 10.0.20348.1787
 # Thu, 04 Jan 2024 03:43:51 GMT
 RUN Install update 10.0.20348.2227
-# Thu, 11 Jan 2024 00:06:49 GMT
+# Tue, 16 Jan 2024 23:58:45 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Thu, 11 Jan 2024 00:07:07 GMT
+# Tue, 16 Jan 2024 23:58:53 GMT
 RUN $newPath = ('C:\pypy;C:\pypy\Scripts;{0}' -f $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine); 	Write-Host 'Complete.'
-# Thu, 11 Jan 2024 00:07:22 GMT
+# Tue, 16 Jan 2024 23:59:02 GMT
 RUN $url = 'https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x64.exe'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'vc.exe'; 		$sha256 = 'da66717784c192f1004e856bbcf7b3e13b7bf3ea45932c48e4c9b9a50ca80965'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash vc.exe -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process 		-NoNewWindow 		-Wait 		-FilePath .\vc.exe 		-ArgumentList @( 			'/install', 			'/quiet', 			'/norestart' 		); 		Write-Host 'Removing ...'; 	Remove-Item vc.exe -Force; 		Write-Host 'Complete.'
-# Thu, 11 Jan 2024 00:07:22 GMT
-ENV PYPY_VERSION=7.3.14
-# Thu, 11 Jan 2024 00:07:42 GMT
-RUN $url = 'https://downloads.python.org/pypy/pypy3.9-v7.3.14-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'pypy.zip'; 		$sha256 = '9b3d8496f2a4729fdf20d9f835299902048950baad3a42019b67da75ca5b38b7'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash pypy.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive pypy.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item pypy.zip -Force; 		Write-Host 'Renaming ...'; 	Rename-Item -Path C:\pypy3.9-v7.3.14-win64 -NewName C:\pypy; 		Write-Host 'Verifying install ("pypy --version") ...'; 	pypy --version; 		Write-Host 'Cleanup install ...'; 	Get-ChildItem 		-Path C:\pypy 		-Include @( 'test', 'tests' ) 		-Directory 		-Recurse 		| Remove-Item -Force -Recurse; 	Get-ChildItem 		-Path C:\pypy 		-Include @( '*.pyc', '*.pyo' ) 		-File 		-Recurse 		| Remove-Item -Force; 		Write-Host 'Complete.'
-# Thu, 11 Jan 2024 00:07:43 GMT
+# Tue, 16 Jan 2024 23:59:03 GMT
+ENV PYPY_VERSION=7.3.15
+# Tue, 16 Jan 2024 23:59:21 GMT
+RUN $url = 'https://downloads.python.org/pypy/pypy3.9-v7.3.15-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'pypy.zip'; 		$sha256 = 'a156dad8b58570597eaaabe05663f00f80c60bc11df4a9c46d0953b6c5eb9209'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash pypy.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive pypy.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item pypy.zip -Force; 		Write-Host 'Renaming ...'; 	Rename-Item -Path C:\pypy3.9-v7.3.15-win64 -NewName C:\pypy; 		Write-Host 'Verifying install ("pypy --version") ...'; 	pypy --version; 		Write-Host 'Cleanup install ...'; 	Get-ChildItem 		-Path C:\pypy 		-Include @( 'test', 'tests' ) 		-Directory 		-Recurse 		| Remove-Item -Force -Recurse; 	Get-ChildItem 		-Path C:\pypy 		-Include @( '*.pyc', '*.pyo' ) 		-File 		-Recurse 		| Remove-Item -Force; 		Write-Host 'Complete.'
+# Tue, 16 Jan 2024 23:59:22 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py
-# Thu, 11 Jan 2024 00:07:43 GMT
+# Tue, 16 Jan 2024 23:59:23 GMT
 ENV PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d399b2d5218
-# Thu, 11 Jan 2024 00:08:05 GMT
+# Tue, 16 Jan 2024 23:59:44 GMT
 RUN Write-Host ('Downloading get-pip.py ({0}) ...' -f $env:PYTHON_GET_PIP_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:PYTHON_GET_PIP_URL -OutFile 'get-pip.py'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:PYTHON_GET_PIP_SHA256); 	if ((Get-FileHash 'get-pip.py' -Algorithm sha256).Hash -ne $env:PYTHON_GET_PIP_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		$pipVersion = & pypy -c 'import ensurepip; print(ensurepip._PIP_VERSION)'; 	$setuptoolsVersion = & pypy -c 'import ensurepip; print(ensurepip._SETUPTOOLS_VERSION)'; 		Write-Host ('Installing "pip == {0}", "setuptools == {1}" ...' -f $pipVersion, $setuptoolsVersion); 	pypy get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		('pip == {0}' -f $pipVersion) 		('setuptools == {0}' -f $setuptoolsVersion) 	; 	Remove-Item get-pip.py -Force; 		Write-Host 'Verifying pip install ...'; 	pip --version; 		Write-Host 'Cleanup install ...'; 	Get-ChildItem 		-Path C:\pypy 		-Include @( 'test', 'tests' ) 		-Directory 		-Recurse 		| Remove-Item -Force -Recurse; 	Get-ChildItem 		-Path C:\pypy 		-Include @( '*.pyc', '*.pyo' ) 		-File 		-Recurse 		| Remove-Item -Force; 		Write-Host 'Complete.'
-# Thu, 11 Jan 2024 00:08:06 GMT
+# Tue, 16 Jan 2024 23:59:45 GMT
 CMD ["pypy"]
-# Thu, 11 Jan 2024 00:54:16 GMT
+# Wed, 17 Jan 2024 00:55:15 GMT
 ENV HY_VERSION=0.28.0
-# Thu, 11 Jan 2024 00:54:17 GMT
+# Wed, 17 Jan 2024 00:55:16 GMT
 ENV HYRULE_VERSION=0.5.0
-# Thu, 11 Jan 2024 00:55:14 GMT
+# Wed, 17 Jan 2024 00:56:14 GMT
 RUN pip install --no-cache-dir ('hy == {0}' -f $env:HY_VERSION) ('hyrule == {0}' -f $env:HYRULE_VERSION)
-# Thu, 11 Jan 2024 00:55:15 GMT
+# Wed, 17 Jan 2024 00:56:14 GMT
 CMD ["hy"]
 ```
 
@@ -344,70 +344,70 @@ CMD ["hy"]
 		Last Modified: Tue, 09 Jan 2024 18:44:13 GMT  
 		Size: 511.6 MB (511613854 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b2418a8f38e20ccf4377975ee429703f68aff80aee36e5e2a35637fea890c9b`  
-		Last Modified: Thu, 11 Jan 2024 00:08:10 GMT  
-		Size: 1.3 KB (1321 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05375f7ca23c9991271dc56db1cca80a3fbe5f92fd82c817929b044af8fd4c7f`  
-		Last Modified: Thu, 11 Jan 2024 00:08:10 GMT  
-		Size: 490.9 KB (490941 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afd36de8ae04636550e4ed0435964e419e98c8903935ee794272377209d685a2`  
-		Last Modified: Thu, 11 Jan 2024 00:08:10 GMT  
-		Size: 15.5 MB (15541607 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26b75b7d02557a957e28b912cf93eb18f6abd11445d2c704855b07007e3d9c63`  
-		Last Modified: Thu, 11 Jan 2024 00:08:09 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e187e3bff0ac25f33fc8d3f21005bd4768b7d4f3f055ff4a3f08e383aca7c29e`  
-		Last Modified: Thu, 11 Jan 2024 00:08:12 GMT  
-		Size: 27.6 MB (27567210 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bf5e7e7d91bc79f77ad813aa02e17338f4a47e8aea27089f2fc919d488cccb`  
-		Last Modified: Thu, 11 Jan 2024 00:08:08 GMT  
-		Size: 1.3 KB (1289 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e49617482224c75d149b5662ceba48533b6d095f17352ce3442da779dd66f69c`  
-		Last Modified: Thu, 11 Jan 2024 00:08:08 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f29b3de4f9bc5ddb3c29a36aac180921677cd9934594cdd858d63a5f506e4b`  
-		Last Modified: Thu, 11 Jan 2024 00:08:09 GMT  
-		Size: 3.9 MB (3923145 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b85b0944d9a09c7a5e21e588b5b80ac3424e89360296d0b1decc4a64c73d085f`  
-		Last Modified: Thu, 11 Jan 2024 00:08:08 GMT  
-		Size: 1.3 KB (1312 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdc6bc6d87a0cbeda1b4de0ad94e819c9a7bb40c8074686b3de758f4fbc1e68e`  
-		Last Modified: Thu, 11 Jan 2024 00:55:19 GMT  
-		Size: 1.3 KB (1325 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:741fe691c100993a9e684fcbc1787684f9959f27c173cd3581ffacd40d1b8686`  
-		Last Modified: Thu, 11 Jan 2024 00:55:19 GMT  
-		Size: 1.4 KB (1356 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6e3c336e759c81de08376f35272f3264a198f09c703c9a9da7a212c25283ae8`  
-		Last Modified: Thu, 11 Jan 2024 00:55:20 GMT  
-		Size: 5.1 MB (5145316 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6df3874abbe76a602fa7b91aa2c1004af9829783115f4089e3eac671dbabf06f`  
-		Last Modified: Thu, 11 Jan 2024 00:55:19 GMT  
+	-	`sha256:e00452a1070e759d3ca4a95365e16bb1867c3cdcf57d82a438d5867ee6a847c5`  
+		Last Modified: Tue, 16 Jan 2024 23:59:52 GMT  
 		Size: 1.3 KB (1294 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ce886381b02044e8a1d042bbb847c1c5456f13b1f58f091f417b0a3521639d6a`  
+		Last Modified: Tue, 16 Jan 2024 23:59:52 GMT  
+		Size: 488.1 KB (488058 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5a62a464dabb74f7529295c33fd2895d91f3719881b048029c4ca340979cd2e4`  
+		Last Modified: Tue, 16 Jan 2024 23:59:53 GMT  
+		Size: 15.5 MB (15540472 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d79be8cdb064c3b9b386c999bb6a75b31033dad9ec54609e9bc42a09821f0cc4`  
+		Last Modified: Tue, 16 Jan 2024 23:59:52 GMT  
+		Size: 1.3 KB (1326 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:235ad6a5eee9f35e68492928da0a4ac2fdd61ce56a3f3cbbda1acbf7a5089bfa`  
+		Last Modified: Tue, 16 Jan 2024 23:59:53 GMT  
+		Size: 27.6 MB (27581903 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8667f2296339db4bf0d6500528ba7d6794b89bc789544981a27b5f98a717a41c`  
+		Last Modified: Tue, 16 Jan 2024 23:59:49 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:deda35a3ee78c246c968826f259491972c91005322cf1f1f7b1ab00cbe054790`  
+		Last Modified: Tue, 16 Jan 2024 23:59:49 GMT  
+		Size: 1.3 KB (1322 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:516ebcdae6507a6b5cc2e9d0d57f17e6c23a2c1d61eeb85e971073eba593405c`  
+		Last Modified: Tue, 16 Jan 2024 23:59:50 GMT  
+		Size: 3.9 MB (3927342 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:600601f226b87dc441e6b11a6385c92bfac2645d74bb56e1c67957e91025160f`  
+		Last Modified: Tue, 16 Jan 2024 23:59:49 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:14442a82a872a78b2d64bb01c21d9ffefbd022b247393209871138124fefa8c1`  
+		Last Modified: Wed, 17 Jan 2024 00:56:19 GMT  
+		Size: 1.3 KB (1324 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6aed3a9c9d56bbfc476920e5b8b69b9419c7478166c39a09950f4fbe86d54ab6`  
+		Last Modified: Wed, 17 Jan 2024 00:56:18 GMT  
+		Size: 1.4 KB (1396 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:92f673b0108cad70f1dcedacaa687f8ccb9e119efaea9b83e3a09750f0cf7757`  
+		Last Modified: Wed, 17 Jan 2024 00:56:20 GMT  
+		Size: 5.1 MB (5147824 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:26f3c35c7dc66d540e9442b2d33515158126f41deba9fd1b02414cec22f0cdb4`  
+		Last Modified: Wed, 17 Jan 2024 00:56:19 GMT  
+		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:pypy3.9` - windows version 10.0.17763.5329; amd64
 
 ```console
-$ docker pull hylang@sha256:a6c7364509753804a1e0640224c65967b450bef8bff9536884d109d2796934bb
+$ docker pull hylang@sha256:1c8d36421f2de7c9d1f2def25439dc37457c6929d10b0f6fd70c2b25cbcc31ac
 ```
 
 -	Docker Version: 24.0.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2122336022 bytes)**  
+-	Total Size: **2.1 GB (2122340127 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5591c7f0ccfc792fca7e011969393936ccbbd0cd6c9ca4e609f5b971601b1e68`
+-	Image ID: `sha256:cafa1d85ddbb21efb968f204950eb41f11c4f8c1a4d62517bd0243bf0727652e`
 -	Default Command: `["hy"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -416,31 +416,31 @@ $ docker pull hylang@sha256:a6c7364509753804a1e0640224c65967b450bef8bff9536884d1
 RUN Apply image 10.0.17763.4499
 # Tue, 02 Jan 2024 22:50:56 GMT
 RUN Install update 10.0.17763.5329
-# Thu, 11 Jan 2024 00:07:49 GMT
+# Wed, 17 Jan 2024 00:18:38 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Thu, 11 Jan 2024 00:08:48 GMT
+# Wed, 17 Jan 2024 00:20:29 GMT
 RUN $newPath = ('C:\pypy;C:\pypy\Scripts;{0}' -f $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine); 	Write-Host 'Complete.'
-# Thu, 11 Jan 2024 00:09:18 GMT
+# Wed, 17 Jan 2024 00:21:03 GMT
 RUN $url = 'https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x64.exe'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'vc.exe'; 		$sha256 = 'da66717784c192f1004e856bbcf7b3e13b7bf3ea45932c48e4c9b9a50ca80965'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash vc.exe -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process 		-NoNewWindow 		-Wait 		-FilePath .\vc.exe 		-ArgumentList @( 			'/install', 			'/quiet', 			'/norestart' 		); 		Write-Host 'Removing ...'; 	Remove-Item vc.exe -Force; 		Write-Host 'Complete.'
-# Thu, 11 Jan 2024 00:09:19 GMT
-ENV PYPY_VERSION=7.3.14
-# Thu, 11 Jan 2024 00:09:58 GMT
-RUN $url = 'https://downloads.python.org/pypy/pypy3.9-v7.3.14-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'pypy.zip'; 		$sha256 = '9b3d8496f2a4729fdf20d9f835299902048950baad3a42019b67da75ca5b38b7'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash pypy.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive pypy.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item pypy.zip -Force; 		Write-Host 'Renaming ...'; 	Rename-Item -Path C:\pypy3.9-v7.3.14-win64 -NewName C:\pypy; 		Write-Host 'Verifying install ("pypy --version") ...'; 	pypy --version; 		Write-Host 'Cleanup install ...'; 	Get-ChildItem 		-Path C:\pypy 		-Include @( 'test', 'tests' ) 		-Directory 		-Recurse 		| Remove-Item -Force -Recurse; 	Get-ChildItem 		-Path C:\pypy 		-Include @( '*.pyc', '*.pyo' ) 		-File 		-Recurse 		| Remove-Item -Force; 		Write-Host 'Complete.'
-# Thu, 11 Jan 2024 00:09:58 GMT
+# Wed, 17 Jan 2024 00:21:04 GMT
+ENV PYPY_VERSION=7.3.15
+# Wed, 17 Jan 2024 00:21:44 GMT
+RUN $url = 'https://downloads.python.org/pypy/pypy3.9-v7.3.15-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'pypy.zip'; 		$sha256 = 'a156dad8b58570597eaaabe05663f00f80c60bc11df4a9c46d0953b6c5eb9209'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash pypy.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive pypy.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item pypy.zip -Force; 		Write-Host 'Renaming ...'; 	Rename-Item -Path C:\pypy3.9-v7.3.15-win64 -NewName C:\pypy; 		Write-Host 'Verifying install ("pypy --version") ...'; 	pypy --version; 		Write-Host 'Cleanup install ...'; 	Get-ChildItem 		-Path C:\pypy 		-Include @( 'test', 'tests' ) 		-Directory 		-Recurse 		| Remove-Item -Force -Recurse; 	Get-ChildItem 		-Path C:\pypy 		-Include @( '*.pyc', '*.pyo' ) 		-File 		-Recurse 		| Remove-Item -Force; 		Write-Host 'Complete.'
+# Wed, 17 Jan 2024 00:21:45 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py
-# Thu, 11 Jan 2024 00:09:59 GMT
+# Wed, 17 Jan 2024 00:21:46 GMT
 ENV PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d399b2d5218
-# Thu, 11 Jan 2024 00:10:40 GMT
+# Wed, 17 Jan 2024 00:22:25 GMT
 RUN Write-Host ('Downloading get-pip.py ({0}) ...' -f $env:PYTHON_GET_PIP_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:PYTHON_GET_PIP_URL -OutFile 'get-pip.py'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:PYTHON_GET_PIP_SHA256); 	if ((Get-FileHash 'get-pip.py' -Algorithm sha256).Hash -ne $env:PYTHON_GET_PIP_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		$pipVersion = & pypy -c 'import ensurepip; print(ensurepip._PIP_VERSION)'; 	$setuptoolsVersion = & pypy -c 'import ensurepip; print(ensurepip._SETUPTOOLS_VERSION)'; 		Write-Host ('Installing "pip == {0}", "setuptools == {1}" ...' -f $pipVersion, $setuptoolsVersion); 	pypy get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		('pip == {0}' -f $pipVersion) 		('setuptools == {0}' -f $setuptoolsVersion) 	; 	Remove-Item get-pip.py -Force; 		Write-Host 'Verifying pip install ...'; 	pip --version; 		Write-Host 'Cleanup install ...'; 	Get-ChildItem 		-Path C:\pypy 		-Include @( 'test', 'tests' ) 		-Directory 		-Recurse 		| Remove-Item -Force -Recurse; 	Get-ChildItem 		-Path C:\pypy 		-Include @( '*.pyc', '*.pyo' ) 		-File 		-Recurse 		| Remove-Item -Force; 		Write-Host 'Complete.'
-# Thu, 11 Jan 2024 00:10:40 GMT
+# Wed, 17 Jan 2024 00:22:26 GMT
 CMD ["pypy"]
-# Thu, 11 Jan 2024 00:58:22 GMT
+# Wed, 17 Jan 2024 00:56:21 GMT
 ENV HY_VERSION=0.28.0
-# Thu, 11 Jan 2024 00:58:24 GMT
+# Wed, 17 Jan 2024 00:56:23 GMT
 ENV HYRULE_VERSION=0.5.0
-# Thu, 11 Jan 2024 01:00:08 GMT
+# Wed, 17 Jan 2024 00:57:58 GMT
 RUN pip install --no-cache-dir ('hy == {0}' -f $env:HY_VERSION) ('hyrule == {0}' -f $env:HYRULE_VERSION)
-# Thu, 11 Jan 2024 01:00:09 GMT
+# Wed, 17 Jan 2024 00:57:59 GMT
 CMD ["hy"]
 ```
 
@@ -453,55 +453,55 @@ CMD ["hy"]
 		Last Modified: Tue, 09 Jan 2024 18:22:46 GMT  
 		Size: 419.1 MB (419102156 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dcb1f468b96b38cc7c8012277babc624aa106578df00e7e53c53a9b89234fb97`  
-		Last Modified: Thu, 11 Jan 2024 00:10:45 GMT  
-		Size: 1.4 KB (1401 bytes)  
+	-	`sha256:b0392cf644bf5d4e63b9d2d7fd94df9f0a8a49ce69c277eeee3eee89199a3603`  
+		Last Modified: Wed, 17 Jan 2024 00:22:31 GMT  
+		Size: 1.3 KB (1296 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72621d06a67d00960a930ce183711008f9dd3a7acecd18c4d5ec48430787f564`  
-		Last Modified: Thu, 11 Jan 2024 00:10:45 GMT  
-		Size: 482.3 KB (482339 bytes)  
+	-	`sha256:d72e853e0f55db9c7c0d13571981b2b79197f3884322a3902726da6535967eaf`  
+		Last Modified: Wed, 17 Jan 2024 00:22:30 GMT  
+		Size: 493.6 KB (493619 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37143c11a66fd3a208e97c35aaeb8e2d5767365c430ef1a6e99ac2dd29d36f50`  
-		Last Modified: Thu, 11 Jan 2024 00:10:45 GMT  
-		Size: 15.5 MB (15517075 bytes)  
+	-	`sha256:dd4153db4b7b6edbe0e906c46fa6278aa361cbdd1d7871a559025091a2ab9163`  
+		Last Modified: Wed, 17 Jan 2024 00:22:31 GMT  
+		Size: 15.5 MB (15522902 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad4a220756d904baddaa99ae158e883c69f81d3ce14caeeed1e1420158d1fc53`  
-		Last Modified: Thu, 11 Jan 2024 00:10:44 GMT  
-		Size: 1.4 KB (1364 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f53a6022ba5a6466754981106931e8589b73f549091e8df3625bee089aead6d`  
-		Last Modified: Thu, 11 Jan 2024 00:10:46 GMT  
-		Size: 27.6 MB (27591410 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5820ae487bcf2d75a44b3e48c67efe08539987e56831d42a22e37cf056f01c25`  
-		Last Modified: Thu, 11 Jan 2024 00:10:43 GMT  
-		Size: 1.4 KB (1374 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c4de098e6a69ecdf1c06b4dedd6bd3cc94092924d9729551f8e140c12f0d154`  
-		Last Modified: Thu, 11 Jan 2024 00:10:43 GMT  
-		Size: 1.4 KB (1392 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51abafd5dfdfcf92d452d1edbb2b89f8645a1c72e1f9ff8d3d8a074ffaa0633c`  
-		Last Modified: Thu, 11 Jan 2024 00:10:44 GMT  
-		Size: 3.9 MB (3924956 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97e22e81a5e3a1a22711bcedcefcee5b81887378f3e9f4bc4f7a0ad20a9124d3`  
-		Last Modified: Thu, 11 Jan 2024 00:10:43 GMT  
-		Size: 1.4 KB (1361 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec31cbd903664404714bc7b6b9ebffe619a93dd7f20427981f3719db1d3bf511`  
-		Last Modified: Thu, 11 Jan 2024 01:00:13 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d6ba153bd03f75cfde29d579cba44046d302bbddda3b0a54a395333578f2976`  
-		Last Modified: Thu, 11 Jan 2024 01:00:13 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb80f991103b83aa262f7a876d217daa3672e5df91942a7e3bfb8e72eeba71a3`  
-		Last Modified: Thu, 11 Jan 2024 01:00:14 GMT  
-		Size: 5.1 MB (5086943 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c26c9c09d3a5a46dd4fbe4e8ebc1670989303242096a298a5fd0ce23143beb3d`  
-		Last Modified: Thu, 11 Jan 2024 01:00:14 GMT  
+	-	`sha256:9e393f1bf90954fcc5cf96f4fb93a7cd1043eb72a2bbfc48a207a71146a81c0c`  
+		Last Modified: Wed, 17 Jan 2024 00:22:30 GMT  
 		Size: 1.3 KB (1300 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:87e197778f307375a523c988848f35d122221e4a6a56a999031831b07e8fcb35`  
+		Last Modified: Wed, 17 Jan 2024 00:22:33 GMT  
+		Size: 27.6 MB (27576958 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cc18a5899caf6fbf9bd254b94eb7d22a813accd9dea719cb79d042b9515c2492`  
+		Last Modified: Wed, 17 Jan 2024 00:22:29 GMT  
+		Size: 1.3 KB (1299 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c50bc2cd79bc24841db6d3e00645aadc2f3e525c44064ac9e8e08b07929f8b20`  
+		Last Modified: Wed, 17 Jan 2024 00:22:29 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7c1959bdff94d59a0f731cddba8887d5449433a9cdbd14cdb111d71b83521572`  
+		Last Modified: Wed, 17 Jan 2024 00:22:30 GMT  
+		Size: 3.9 MB (3916896 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0c2425a6940a1592bc6497a101c69be666b495c6ae7966c20b407d703a67bf17`  
+		Last Modified: Wed, 17 Jan 2024 00:22:29 GMT  
+		Size: 1.3 KB (1299 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fd611c331385fd4e121ed33022d28ee079155cbf7ee3b654ce2c023346a88419`  
+		Last Modified: Wed, 17 Jan 2024 00:58:03 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9474e91fe787aace25e1dbbb010009300b996b2fd756153e69a9dda9d385dd38`  
+		Last Modified: Wed, 17 Jan 2024 00:58:03 GMT  
+		Size: 1.3 KB (1334 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:649a5f5a2dfa64abfdc275f26d5e3e1be6248cf20313c94656af0ba44475f873`  
+		Last Modified: Wed, 17 Jan 2024 00:58:04 GMT  
+		Size: 5.1 MB (5096819 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:02d84ea02a1af2d5bcd107d7a905c0f81a21e282496d7381ad61c7b610df0eb1`  
+		Last Modified: Wed, 17 Jan 2024 00:58:03 GMT  
+		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
