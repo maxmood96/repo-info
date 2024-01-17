@@ -1,7 +1,7 @@
 ## `buildpack-deps:focal-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:98b8481400e1735f3bff160994a219d5111582b560f12f01990024b5c83ce3e0
+$ docker pull buildpack-deps@sha256:c65cdd66ec5df45c27e75f7092d2c539478c28c02fb5193dceb781f2d8c79885
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -153,14 +153,14 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzr
 ### `buildpack-deps:focal-scm` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:4c01c302d76283ec69bb5f663be6eacfebecfab55ac8900ac24381c8356f4784
+$ docker pull buildpack-deps@sha256:32f52912d2468ff1b1561a296784bba2c823008202a0cb65a51a30d9c460cbfc
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **115.9 MB (115900021 bytes)**  
+-	Total Size: **115.9 MB (115905520 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6efaea0fdf20b37cf12e6ede5f231fb98a2f8ecfa4ce7d052adaae0fdf5d3b5e`
+-	Image ID: `sha256:aeec4bad9c0ef74b0857c118c623f0438cc3c70a12db72ce767b1ac59946f9c3`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -178,8 +178,8 @@ ADD file:b7dcee8fbada51f19b857a4a8ef334aab211090abf4247194ddfeb1504df7420 in /
 CMD ["/bin/bash"]
 # Sat, 16 Dec 2023 10:20:21 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 16 Dec 2023 10:21:36 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 17 Jan 2024 02:50:29 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -191,22 +191,22 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 		Last Modified: Sat, 16 Dec 2023 10:34:01 GMT  
 		Size: 12.9 MB (12937872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fa67c542474baed45a0213236f852bc5d88639a093406a5b6231182f0058379`  
-		Last Modified: Sat, 16 Dec 2023 10:34:27 GMT  
-		Size: 69.6 MB (69647829 bytes)  
+	-	`sha256:f2a0e7042137bf3732196dc19fbb6a7c9b905816ef3023901ff617af619ac5ae`  
+		Last Modified: Wed, 17 Jan 2024 03:29:28 GMT  
+		Size: 69.7 MB (69653328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:focal-scm` - linux; s390x
 
 ```console
-$ docker pull buildpack-deps@sha256:45bd2d6a723b69f1b5725e152eb9c9408820ee88b83aebfeda2dbc762625a608
+$ docker pull buildpack-deps@sha256:b5b32c164a261e38fa9d305adf04df40817c571ab765a4b3e4328ed558b7d46d
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **98.0 MB (98015749 bytes)**  
+-	Total Size: **98.0 MB (98019343 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:91729fbd0e1d0d3131931af841fafbf382392b3ff7ed33224ccc7121923f8a65`
+-	Image ID: `sha256:4fd73607c8dbadd66373414535a115a5ab123967f9cdaeae7604c9448a60ac1c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -224,8 +224,8 @@ ADD file:acb39119899edf16a81c2953b282eebb13d32feac981d3f40b60bdfc13ad7bb5 in /
 CMD ["/bin/bash"]
 # Sat, 16 Dec 2023 07:33:26 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 16 Dec 2023 07:34:15 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 17 Jan 2024 03:33:04 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -237,7 +237,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 		Last Modified: Sat, 16 Dec 2023 07:41:54 GMT  
 		Size: 10.7 MB (10689243 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4eedb8b7c21d705ae2098924b2fe7951f410607de309a9159dcdea4656aa56f2`  
-		Last Modified: Sat, 16 Dec 2023 07:42:11 GMT  
-		Size: 60.3 MB (60310872 bytes)  
+	-	`sha256:cadfc074a17291b5b7a9cd14299436f0c6be76b046ae38216b67495f2edeb803`  
+		Last Modified: Wed, 17 Jan 2024 04:06:50 GMT  
+		Size: 60.3 MB (60314466 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
