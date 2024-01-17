@@ -1,10 +1,10 @@
-# `ibm-semeru-runtimes:open-20.0.2_9-jre-focal`
+# `ibm-semeru-runtimes:open-21.0.1_12-jdk-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ce6a6392f6977d4a17cee7b0478b9a003aa5ff7530badef4eda0f64c59808dc`
-- Created: `2023-12-16T11:51:01.851989005Z`
-- Virtual Size: ~ 286.56 Mb  
+- Image ID: `sha256:73fc72fb3999e9733c1dcdac3ca423dce6d952520499e2805159905dc5b30101`
+- Created: `2024-01-16T19:51:00.241929013Z`
+- Virtual Size: ~ 510.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-20.0.2+9_openj9-0.40.0`
+  - `JAVA_VERSION=jdk-21.0.1+12_openj9-0.42.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
 - Labels:
@@ -1734,15 +1734,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2023c-0ubuntu0.20.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c-0ubuntu0.20.04.2.dsc' tzdata_2023c-0ubuntu0.20.04.2.dsc 2524 SHA512:4fdb9a829374afd2f0c3b4a2711c9a3369c23f7f8f5b62b4912e3bc11f7669509a83c49f7a37b2afc2b27630bfcb1d3ab8d470afb0b29da6f421b9924907bb66
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz' tzdata_2023c.orig.tar.gz 443902 SHA512:608bd286ebcbd0004cfdc1da183273f08aff61f90c8867661154453d77a05d421e4c46ad6d066a1fe2e87d5c82ec0f1c0224667a3b35f3180a3eb7f6ff84cbf5
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz.asc' tzdata_2023c.orig.tar.gz.asc 833 SHA512:15da6e01a12a0390f736fe5bacf27595c8f7080a4b27eccfae7f244bc38d5839e7d25622e325f874db17f9e723777e9cfe0f460fbd595b66772f1642dd603b6b
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c-0ubuntu0.20.04.2.debian.tar.xz' tzdata_2023c-0ubuntu0.20.04.2.debian.tar.xz 170308 SHA512:cefcdc076e6420e26d06e946b8bdc68361bb55e8e38be54ee3d247a77254d4c0da0b1c804243e3b7adceff90dc0b55a4a8c2324baf1eacaaef298320941f9fe5
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 
