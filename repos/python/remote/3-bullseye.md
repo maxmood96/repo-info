@@ -1,7 +1,7 @@
 ## `python:3-bullseye`
 
 ```console
-$ docker pull python@sha256:44e2f2f5498d9a85f6bbf95f4490fc647537cac82da95966f4d1cb84b6cced08
+$ docker pull python@sha256:4efcdfc1500c21f14ccbd6ee2d1e875af21df30a761f48608c0e321afbb756c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,13 +17,13 @@ $ docker pull python@sha256:44e2f2f5498d9a85f6bbf95f4490fc647537cac82da95966f4d1
 ### `python:3-bullseye` - linux; amd64
 
 ```console
-$ docker pull python@sha256:62926a9b37d0d6cd9c9d874c6c0c38d56fe1efa6a1d2cd322f3440907fbfc06b
+$ docker pull python@sha256:18ce9fd46f4145e6daf3f1c57a52614b56ec54f3bf70b3ae439ca966012886fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **354.4 MB (354392671 bytes)**  
+-	Total Size: **354.4 MB (354393932 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c51740e81035418f6cc9048663ac4979db2590a5e0dcabf6c2c088497c37209f`
+-	Image ID: `sha256:bba515fe91601c8db71e49d2802ce076d2c3a08526c88ce5d902760c40eacb14`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -33,10 +33,10 @@ ADD file:35f7caaedc3b6f725dee87eb8d1f2727c04cb21062b5eb7f59801dafced61993 in /
 CMD ["bash"]
 # Thu, 11 Jan 2024 04:36:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 11 Jan 2024 04:37:01 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 11 Jan 2024 04:37:58 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 17 Jan 2024 01:32:55 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 17 Jan 2024 01:33:52 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
 # Fri, 08 Dec 2023 04:49:21 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Fri, 08 Dec 2023 04:49:21 GMT
@@ -72,29 +72,29 @@ CMD ["python3"]
 		Last Modified: Thu, 11 Jan 2024 04:45:42 GMT  
 		Size: 15.8 MB (15765113 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55c23b7d6528239a16f11d6e650e9a9fdb7039721df42b6ca01777fe34c2b116`  
-		Last Modified: Thu, 11 Jan 2024 04:45:57 GMT  
-		Size: 54.6 MB (54601205 bytes)  
+	-	`sha256:24098c8d74fae9a314e70517566e785db7b39341cbc4bd63adf14c330728677c`  
+		Last Modified: Wed, 17 Jan 2024 02:01:11 GMT  
+		Size: 54.6 MB (54601537 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d92159de95ca6028dff92254cdede6b16274470e653943871542fceec95bdf5`  
-		Last Modified: Thu, 11 Jan 2024 04:46:29 GMT  
-		Size: 196.9 MB (196898008 bytes)  
+	-	`sha256:c6374b4ceb7a33a2609d9577d1f8cb5133e782949ab21f31086c1de775cb6843`  
+		Last Modified: Wed, 17 Jan 2024 02:01:44 GMT  
+		Size: 196.9 MB (196898503 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79f5e0459289f959da8346e70a992348521d98ae848a8d8946fcae677fc23138`  
-		Last Modified: Thu, 11 Jan 2024 11:47:51 GMT  
-		Size: 6.3 MB (6292569 bytes)  
+	-	`sha256:f0057575cfb9dc2bd894fba68c9b4b9df1c22525a953b1b232f7da2cee8b95b5`  
+		Last Modified: Wed, 17 Jan 2024 07:10:42 GMT  
+		Size: 6.3 MB (6292605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4b4e8536719e138b0b03f8060443d85a1a1d20f50cbb7b098b95c9aff207169`  
-		Last Modified: Thu, 11 Jan 2024 11:49:03 GMT  
-		Size: 23.1 MB (23101359 bytes)  
+	-	`sha256:953438e07825ec21656d4bc574834e142106349f336709e4efb941e0ca57c51f`  
+		Last Modified: Wed, 17 Jan 2024 07:11:19 GMT  
+		Size: 23.1 MB (23101774 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:660f5314c0e738421e71819e6bf99fc949e32a1b79166993760f517674f35bb9`  
-		Last Modified: Thu, 11 Jan 2024 11:49:00 GMT  
-		Size: 242.0 B  
+	-	`sha256:c92d00c20b5935ec516a5be3e3d5ad932654306268daf0b7b343fb9890dd66cf`  
+		Last Modified: Wed, 17 Jan 2024 07:11:15 GMT  
+		Size: 245.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0caf02090494dc1fe684db08608cf8b3dd41185aba8ec04e6b8c010040db369`  
-		Last Modified: Thu, 11 Jan 2024 11:49:00 GMT  
-		Size: 2.7 MB (2676452 bytes)  
+	-	`sha256:62a2b7d6387d18378120a340ccf4045063fc0e43d86f627678406b79f3388757`  
+		Last Modified: Wed, 17 Jan 2024 07:11:16 GMT  
+		Size: 2.7 MB (2676432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:3-bullseye` - linux; arm variant v5
@@ -349,13 +349,13 @@ CMD ["python3"]
 ### `python:3-bullseye` - linux; 386
 
 ```console
-$ docker pull python@sha256:efbf7af4a0c521a30e48f0353c7ae1ba85b8c7f9c85d8ee9f26a3272a8551956
+$ docker pull python@sha256:0f9ea30561f4a7b03d1a7f41dfe09078b1e2261f61484f634fc39f4f08d35023
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **359.8 MB (359760967 bytes)**  
+-	Total Size: **359.8 MB (359761529 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:854a429d2e58fd8e6bb0fc892948d25daab38f995812238b6e9fb204bfa29d60`
+-	Image ID: `sha256:2a7a080391b5aafaddb87c6b8b2dda183d84657bb2b301ae9b80694db622772f`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -365,10 +365,10 @@ ADD file:5ec37a8451203256eba8b114f21ff297f9b2e0b420ec7f0c50658a448ffc8f7b in /
 CMD ["bash"]
 # Thu, 11 Jan 2024 04:31:06 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 11 Jan 2024 04:31:31 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 11 Jan 2024 04:33:15 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 17 Jan 2024 01:40:37 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 17 Jan 2024 01:41:50 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
 # Fri, 08 Dec 2023 04:49:21 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Fri, 08 Dec 2023 04:49:21 GMT
@@ -404,29 +404,29 @@ CMD ["python3"]
 		Last Modified: Thu, 11 Jan 2024 04:43:06 GMT  
 		Size: 16.3 MB (16269099 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b09cf67a662b504a2881d65a2e7b39a4b9acc7384a9f90c2583665bde0fde79`  
-		Last Modified: Thu, 11 Jan 2024 04:43:28 GMT  
-		Size: 55.9 MB (55940001 bytes)  
+	-	`sha256:b33bceb83dc9fcc65d74c8e79da8ad46a7b1d7378b402830b29afaf04bd04df1`  
+		Last Modified: Wed, 17 Jan 2024 01:51:38 GMT  
+		Size: 55.9 MB (55939768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af36f551206d5f517da5a527abcaf80125ea57bbb76f0bde20a26a83bd03185d`  
-		Last Modified: Thu, 11 Jan 2024 04:44:16 GMT  
-		Size: 199.8 MB (199824822 bytes)  
+	-	`sha256:a82eb38b7dd14b4951198e5118a540832cdd8e5d77970d1b72b7fa2e5578c545`  
+		Last Modified: Wed, 17 Jan 2024 01:52:24 GMT  
+		Size: 199.8 MB (199825169 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea7e44f0c2987805186a68e43f82f1cd00c8a9e76c24723d63c66e32cb2255ef`  
-		Last Modified: Thu, 11 Jan 2024 14:57:47 GMT  
-		Size: 6.7 MB (6682432 bytes)  
+	-	`sha256:f82b8c583a4edc627e8caa03fd29d41e702ac01e0ee4b9a3b005da8b9e2b4872`  
+		Last Modified: Wed, 17 Jan 2024 06:56:30 GMT  
+		Size: 6.7 MB (6682469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0361da162518f39d439a4b95ad9dcc664551790e3e305a5995ac016f1e0e1cf`  
-		Last Modified: Thu, 11 Jan 2024 14:58:59 GMT  
-		Size: 22.3 MB (22321561 bytes)  
+	-	`sha256:75846a4d26166e20c293893035ac6938658b80180e6f5b8d2f0462b10b49ebde`  
+		Last Modified: Wed, 17 Jan 2024 06:57:08 GMT  
+		Size: 22.3 MB (22321974 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83a633d47025937d8c5504fb0fc07ad1e94cc874434f257e6891338704445b27`  
-		Last Modified: Thu, 11 Jan 2024 14:58:54 GMT  
-		Size: 241.0 B  
+	-	`sha256:2ddabb1e3af78dfc6bc20ea1d9d9cdab53817adabaf9a98e8ea0a19f2a1a215f`  
+		Last Modified: Wed, 17 Jan 2024 06:57:03 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67e03b22eb0aa9c685c8773dde0da531385b2365fe50d9efa8103e813164efc0`  
-		Last Modified: Thu, 11 Jan 2024 14:58:56 GMT  
-		Size: 2.7 MB (2676426 bytes)  
+	-	`sha256:c3a3748ae0e2471ec6181f128bacd0324dfe9674beac42e0a614e0fafb7703bc`  
+		Last Modified: Wed, 17 Jan 2024 06:57:04 GMT  
+		Size: 2.7 MB (2676419 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:3-bullseye` - linux; ppc64le
