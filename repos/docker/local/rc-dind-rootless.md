@@ -1,16 +1,16 @@
-# `docker:25.0.0-rc.2-dind-rootless`
+# `docker:25.0.0-rc.3-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9972609116c8bf5f31ecee07bea789cfa3d530fc83bdf9cb2fc9b413cfed7d4e`
-- Created: `2024-01-13T00:58:33Z`
-- Virtual Size: ~ 398.40 Mb  
+- Image ID: `sha256:c5b1ae0530652547dd21f6be35d519ed3aca3a99c813ef019d3a466818fb6d35`
+- Created: `2024-01-17T22:25:58Z`
+- Virtual Size: ~ 398.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=25.0.0-rc.2`
+  - `DOCKER_VERSION=25.0.0-rc.3`
   - `DOCKER_BUILDX_VERSION=0.12.1`
   - `DOCKER_COMPOSE_VERSION=2.24.0`
   - `DOCKER_TLS_CERTDIR=/certs`
@@ -565,16 +565,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r3 description:
+libcrypto3-3.1.4-r4 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r3 webpage:
+libcrypto3-3.1.4-r4 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r3 installed size:
+libcrypto3-3.1.4-r4 installed size:
 4500 KiB
 
-libcrypto3-3.1.4-r3 license:
+libcrypto3-3.1.4-r4 license:
 Apache-2.0
 
 ```
@@ -735,16 +735,16 @@ GPL-2.0-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r3 description:
+libssl3-3.1.4-r4 description:
 SSL shared libraries
 
-libssl3-3.1.4-r3 webpage:
+libssl3-3.1.4-r4 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r3 installed size:
+libssl3-3.1.4-r4 installed size:
 548 KiB
 
-libssl3-3.1.4-r3 license:
+libssl3-3.1.4-r4 license:
 Apache-2.0
 
 ```
@@ -973,16 +973,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r3 description:
+openssl-3.1.4-r4 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r3 webpage:
+openssl-3.1.4-r4 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r3 installed size:
+openssl-3.1.4-r4 installed size:
 732 KiB
 
-openssl-3.1.4-r3 license:
+openssl-3.1.4-r4 license:
 Apache-2.0
 
 ```
