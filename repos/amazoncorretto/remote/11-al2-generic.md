@@ -1,7 +1,7 @@
 ## `amazoncorretto:11-al2-generic`
 
 ```console
-$ docker pull amazoncorretto@sha256:872d892b8faedb41d07589f7c22400ad11b7ae731ab63e41a116441c2664c986
+$ docker pull amazoncorretto@sha256:d97b22b355de357ca836324c10219d05b67865c459995105cbec835599af659c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull amazoncorretto@sha256:872d892b8faedb41d07589f7c22400ad11b7ae731ab6
 ### `amazoncorretto:11-al2-generic` - linux; amd64
 
 ```console
-$ docker pull amazoncorretto@sha256:11d67eda49137df17a4470073564e9f7b64a10d6a60f72ff263518d47dcae11a
+$ docker pull amazoncorretto@sha256:53f24b3e40ba2dc4446f516cdb3553724609a57ccd3015a3753207b4d29908b7
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **210.6 MB (210600934 bytes)**  
+-	Total Size: **210.6 MB (210593156 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6163ce902c9ba4d104c478711bfab7098e0c7d6085df87da20ca2c62ca16d0fb`
+-	Image ID: `sha256:2a699bc5ef2de0a2aa06440859c83908477d428b07552bf953150d8de3170a66`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -27,14 +27,14 @@ $ docker pull amazoncorretto@sha256:11d67eda49137df17a4470073564e9f7b64a10d6a60f
 COPY dir:b97e45ed3c8a3f1b9f45748b11869cc647c58d36ef808547c8bfc5893d6bcdef in / 
 # Fri, 12 Jan 2024 21:45:53 GMT
 CMD ["/bin/bash"]
-# Fri, 12 Jan 2024 22:17:31 GMT
-ARG version=11.0.21.9-1
-# Fri, 12 Jan 2024 22:17:55 GMT
-# ARGS: version=11.0.21.9-1
+# Wed, 17 Jan 2024 23:42:59 GMT
+ARG version=11.0.22.7-1
+# Wed, 17 Jan 2024 23:43:24 GMT
+# ARGS: version=11.0.22.7-1
 RUN set -eux     && export GNUPGHOME="$(mktemp -d)"     && curl -fL -o corretto.key https://yum.corretto.aws/corretto.key     && gpg --batch --import corretto.key     && gpg --batch --export --armor '6DC3636DAE534049C8B94623A122542AB04F24E3' > corretto.key     && rpm --import corretto.key     && rm -r "$GNUPGHOME" corretto.key     && curl -fL -o /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo     && grep -q '^gpgcheck=1' /etc/yum.repos.d/corretto.repo     && echo "priority=9" >> /etc/yum.repos.d/corretto.repo     && yum install -y java-11-amazon-corretto-devel-$version     && (find /usr/lib/jvm/java-11-amazon-corretto -name src.zip -delete || true)     && yum install -y fontconfig     && yum clean all
-# Fri, 12 Jan 2024 22:17:56 GMT
+# Wed, 17 Jan 2024 23:43:24 GMT
 ENV LANG=C.UTF-8
-# Fri, 12 Jan 2024 22:17:56 GMT
+# Wed, 17 Jan 2024 23:43:24 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 ```
 
@@ -43,22 +43,22 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 		Last Modified: Thu, 11 Jan 2024 06:58:33 GMT  
 		Size: 62.7 MB (62661001 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1fb88a83adf24aa3bf320f79f5d513a8ea3664c3ff9f904cd63321278f57bbd8`  
-		Last Modified: Fri, 12 Jan 2024 22:29:46 GMT  
-		Size: 147.9 MB (147939933 bytes)  
+	-	`sha256:05d10b0a5b8dafbf4ad98c467dfd7b57794d005fc7cbee6c65bb646921a3270f`  
+		Last Modified: Wed, 17 Jan 2024 23:59:55 GMT  
+		Size: 147.9 MB (147932155 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `amazoncorretto:11-al2-generic` - linux; arm64 variant v8
 
 ```console
-$ docker pull amazoncorretto@sha256:dce688da471ba0ae16a4db434dcff911b55fda87a6070f86a1a17078cc430d12
+$ docker pull amazoncorretto@sha256:e4eaa08e4d82ea16bfbbd0458fb5c1943e553bdf59cf4d9e2ab4d50aaa8d2c89
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **209.5 MB (209493017 bytes)**  
+-	Total Size: **209.5 MB (209500822 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:250a40125a2c8dd873edd9193a36ff6a74987e71845ca053af36c2b90b9edf07`
+-	Image ID: `sha256:07cd08540dc7576b9ccddfc404d5393fe43bbe43992f73db377b446483bf51d3`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -66,14 +66,14 @@ $ docker pull amazoncorretto@sha256:dce688da471ba0ae16a4db434dcff911b55fda87a607
 COPY dir:eb2de4474e28d9fde9bbe1ffb630978f47dae30856e760ca73ebb5d0cb75efd7 in / 
 # Fri, 12 Jan 2024 21:49:24 GMT
 CMD ["/bin/bash"]
-# Fri, 12 Jan 2024 22:31:05 GMT
-ARG version=11.0.21.9-1
-# Fri, 12 Jan 2024 22:31:23 GMT
-# ARGS: version=11.0.21.9-1
+# Wed, 17 Jan 2024 23:39:02 GMT
+ARG version=11.0.22.7-1
+# Wed, 17 Jan 2024 23:39:21 GMT
+# ARGS: version=11.0.22.7-1
 RUN set -eux     && export GNUPGHOME="$(mktemp -d)"     && curl -fL -o corretto.key https://yum.corretto.aws/corretto.key     && gpg --batch --import corretto.key     && gpg --batch --export --armor '6DC3636DAE534049C8B94623A122542AB04F24E3' > corretto.key     && rpm --import corretto.key     && rm -r "$GNUPGHOME" corretto.key     && curl -fL -o /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo     && grep -q '^gpgcheck=1' /etc/yum.repos.d/corretto.repo     && echo "priority=9" >> /etc/yum.repos.d/corretto.repo     && yum install -y java-11-amazon-corretto-devel-$version     && (find /usr/lib/jvm/java-11-amazon-corretto -name src.zip -delete || true)     && yum install -y fontconfig     && yum clean all
-# Fri, 12 Jan 2024 22:31:25 GMT
+# Wed, 17 Jan 2024 23:39:23 GMT
 ENV LANG=C.UTF-8
-# Fri, 12 Jan 2024 22:31:25 GMT
+# Wed, 17 Jan 2024 23:39:23 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 ```
 
@@ -82,7 +82,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 		Last Modified: Fri, 12 Jan 2024 19:03:15 GMT  
 		Size: 64.5 MB (64462448 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5002b70eeec43fc3f2d8b5badf3186a1c37fa50b81ba6a1fa19811be65f8c92f`  
-		Last Modified: Fri, 12 Jan 2024 22:40:31 GMT  
-		Size: 145.0 MB (145030569 bytes)  
+	-	`sha256:be79883efec938c430c3ccafcf911d7566e3cd7fa2bea0599b85bc0d5b232600`  
+		Last Modified: Wed, 17 Jan 2024 23:53:06 GMT  
+		Size: 145.0 MB (145038374 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
