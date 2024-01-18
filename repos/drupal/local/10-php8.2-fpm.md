@@ -1,9 +1,9 @@
-# `drupal:10.2.1-php8.2-fpm-bookworm`
+# `drupal:10.2.2-php8.2-fpm-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9f682b272ee4dccc2f3ce5729f19443de1a6fd0080ddd3f693521b340f5cc469`
-- Created: `2024-01-05T10:27:22Z`
+- Image ID: `sha256:d50eff3ba4d3fec8ea2567d004086eeb00d98ac2d9ff227a1c905ce4ee816e8c`
+- Created: `2024-01-17T22:53:51Z`
 - Virtual Size: ~ 585.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.2.14.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.14.tar.xz.asc`
   - `PHP_SHA256=763ecd39fcf51c3815af6ef6e43fa9aa0d0bd8e5a615009e5f4780c92705f583`
-  - `DRUPAL_VERSION=10.2.1`
+  - `DRUPAL_VERSION=10.2.2`
 
 ## `dpkg` (`.deb`-based packages)
 

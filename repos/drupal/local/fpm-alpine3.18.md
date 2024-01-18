@@ -1,10 +1,10 @@
-# `drupal:10.2.1-php8.2-fpm-alpine3.18`
+# `drupal:10.2.2-php8.2-fpm-alpine3.18`
 
 ## Docker Metadata
 
-- Image ID: `sha256:207694c98d7a95d2bd74083e6609dd249de240f27b3f6a40a8a9a0d72247417a`
-- Created: `2024-01-05T10:27:22Z`
-- Virtual Size: ~ 169.48 Mb  
+- Image ID: `sha256:2066f31fe3865d5ae8e330c44f23617bef783b8b8716afa046ca4a48f342faf3`
+- Created: `2024-01-17T22:53:51Z`
+- Virtual Size: ~ 175.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.2.14.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.14.tar.xz.asc`
   - `PHP_SHA256=763ecd39fcf51c3815af6ef6e43fa9aa0d0bd8e5a615009e5f4780c92705f583`
-  - `DRUPAL_VERSION=10.2.1`
+  - `DRUPAL_VERSION=10.2.2`
 
 ## `apk` (`.apk`-based packages)
 
@@ -300,16 +300,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r1 description:
+libcrypto3-3.1.4-r4 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r1 webpage:
+libcrypto3-3.1.4-r4 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r1 installed size:
+libcrypto3-3.1.4-r4 installed size:
 4472 KiB
 
-libcrypto3-3.1.4-r1 license:
+libcrypto3-3.1.4-r4 license:
 Apache-2.0
 
 ```
@@ -453,16 +453,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r1 description:
+libssl3-3.1.4-r4 description:
 SSL shared libraries
 
-libssl3-3.1.4-r1 webpage:
+libssl3-3.1.4-r4 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r1 installed size:
+libssl3-3.1.4-r4 installed size:
 552 KiB
 
-libssl3-3.1.4-r1 license:
+libssl3-3.1.4-r4 license:
 Apache-2.0
 
 ```
@@ -623,16 +623,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r1 description:
+openssl-3.1.4-r4 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r1 webpage:
+openssl-3.1.4-r4 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r1 installed size:
+openssl-3.1.4-r4 installed size:
 752 KiB
 
-openssl-3.1.4-r1 license:
+openssl-3.1.4-r4 license:
 Apache-2.0
 
 ```
