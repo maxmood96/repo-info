@@ -1,7 +1,7 @@
 ## `unit:ruby3`
 
 ```console
-$ docker pull unit@sha256:86c7895f62a7bfd4797524f112f6b466a3aa674744540e3662cfc5a76810cd40
+$ docker pull unit@sha256:0ffb05bc6d0d8f0ffc1f25217a9ad5ef4168c5bef2bf4eca3e127a608fb74245
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -156,13 +156,13 @@ $ docker pull unit@sha256:c721369594f03859202d09385c0d34b65eb3879342e89ae30d6f59
 ### `unit:ruby3` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:6a1ad48d35c548939b6859c6b26d0eae8ab2a3f17387a537cf8673bbdebdb54a
+$ docker pull unit@sha256:31216e19b7cddc913f676bc7dea02e33d8854abde2ae54228e9fffe433e396d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **355.5 MB (355457249 bytes)**  
+-	Total Size: **355.5 MB (355457055 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ceb17e08e8b9b7e4970309791c96ef3673124e345be2f8d53027400b8fdec146`
+-	Image ID: `sha256:5ed443f36d39a26961a4ad8d06644ec61d72a4e41e6856468efeacc5411b43c6`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -174,9 +174,9 @@ CMD ["bash"]
 # Thu, 19 Oct 2023 10:47:22 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
 # Thu, 19 Oct 2023 10:47:22 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 # Thu, 19 Oct 2023 10:47:22 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
 # Thu, 19 Oct 2023 10:47:22 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	{ 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc # buildkit
 # Thu, 19 Oct 2023 10:47:22 GMT
@@ -238,59 +238,59 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Thu, 11 Jan 2024 09:35:03 GMT  
 		Size: 15.8 MB (15750711 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:826044e8ec1545c4af5dfe71ab63bce600198330f150aa968074bb86e78cd154`  
-		Last Modified: Thu, 11 Jan 2024 09:35:17 GMT  
-		Size: 54.7 MB (54699869 bytes)  
+	-	`sha256:646806c0e22a1bfa60edc42bcc6170f0ccd02431e5871b9cec1962c34d610232`  
+		Last Modified: Wed, 17 Jan 2024 02:59:33 GMT  
+		Size: 54.7 MB (54699826 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb605b1d0205817191fda1aebbfb24bc89220d168a2231b4a4b44c0c48e4e627`  
-		Last Modified: Thu, 11 Jan 2024 09:35:43 GMT  
-		Size: 189.8 MB (189834619 bytes)  
+	-	`sha256:1cd94a910a6d687fc7621b3af4657f78c1208a07fa463f30e2ed002dadb7e021`  
+		Last Modified: Wed, 17 Jan 2024 03:00:10 GMT  
+		Size: 189.8 MB (189834377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7b9f76965c452615db5ec7bb18638327993e66208e168db98dbda462ecd566a`  
-		Last Modified: Fri, 12 Jan 2024 17:40:03 GMT  
-		Size: 198.0 B  
+	-	`sha256:b0bf3d2e988601e8f11bc9f971677053020a4526526eabc487c0d9ac4e2ddc5b`  
+		Last Modified: Thu, 18 Jan 2024 08:17:00 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ed0d96a95a5039f24606418c9b0e2e3b7c376fee04d3587a4e40f17f6465b78`  
-		Last Modified: Fri, 12 Jan 2024 18:27:27 GMT  
-		Size: 34.4 MB (34352540 bytes)  
+	-	`sha256:9af622303139338fc78913fc828da20b105e8ca11f65afd504d8fc14d9bebce8`  
+		Last Modified: Thu, 18 Jan 2024 08:21:37 GMT  
+		Size: 34.4 MB (34352608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:beda1abefc6a39c71f2b7eb343e84a9fcdc20409066f9f6f0f6e537759c48db0`  
-		Last Modified: Fri, 12 Jan 2024 18:27:26 GMT  
+	-	`sha256:328f06b6d65be5c2433f8c47e531f0b3544e77a7e99009775eb794e114fbb621`  
+		Last Modified: Thu, 18 Jan 2024 08:21:35 GMT  
 		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a2731ab09d1b1b22d4f7a5da2313d9231063f374e5a53faddd82bbb18e10ee6`  
-		Last Modified: Fri, 12 Jan 2024 21:02:48 GMT  
-		Size: 7.1 MB (7108594 bytes)  
+	-	`sha256:7e9265e111857f69cd35f75565e85afd540140baa367bd63c4b7d8fcc80844ca`  
+		Last Modified: Thu, 18 Jan 2024 11:28:27 GMT  
+		Size: 7.1 MB (7108620 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53da55e81e0b5bb6296d9c21a84546a75c69a8d1f88484e5b6cc57496671bc94`  
-		Last Modified: Fri, 12 Jan 2024 21:02:47 GMT  
-		Size: 1.3 KB (1270 bytes)  
+	-	`sha256:116d355e2ac5c7fc8f310d90a7744521703dc98c17488b656f2417a34c40b0c6`  
+		Last Modified: Thu, 18 Jan 2024 11:28:26 GMT  
+		Size: 1.3 KB (1269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba703b89f8e840ef14ed224815f3618fa9c85d11742b5d285138f99a7ec19788`  
-		Last Modified: Fri, 12 Jan 2024 21:02:47 GMT  
-		Size: 1.5 KB (1457 bytes)  
+	-	`sha256:9aab6e8e3f4a77a4830efadbeca3a57a69da8c52fb16aeeb8aaf412a75cbe9f8`  
+		Last Modified: Thu, 18 Jan 2024 11:28:26 GMT  
+		Size: 1.5 KB (1456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:ruby3` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:0bb1a1c739b2784b9a9a7241b9a09acad5118a77639448848bde8195ca0e79d9
+$ docker pull unit@sha256:d82a9671765cde98c4033d9d2b06269f6f0b92d18615bca6b8df66160994c6ff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **13.1 MB (13074314 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b665d4c551eea59b71b023b677b55579f7cdade6567f6aa51a0bebda5ac5c1ce`
+-	Image ID: `sha256:465fafc54cce97bc8e2f7c54e2fcf3afcc5b1bd6ec7a9556ade3b2c2b3ab4fc8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:84db2d828744c703e9dbee699c32c0a5e036e10e5d85ade31ba7d81b8f4d5a12`  
-		Last Modified: Fri, 12 Jan 2024 21:02:48 GMT  
+	-	`sha256:7206ccf91380f2880ce5ea12f3477f1f0a21a23b6e7e1a8c9fc45a39dcd2a8a2`  
+		Last Modified: Thu, 18 Jan 2024 11:28:27 GMT  
 		Size: 13.0 MB (13048086 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6ebc6538685463a20d28d1dbfff4a2146f54db642845eb182a7a51aaca914bc1`  
-		Last Modified: Fri, 12 Jan 2024 21:02:47 GMT  
+	-	`sha256:1cc0a3e586076618d01dc6a2bec7bf12f1ea5aaee059cc1345a5af016a88cc99`  
+		Last Modified: Thu, 18 Jan 2024 11:28:26 GMT  
 		Size: 26.2 KB (26228 bytes)  
 		MIME: application/vnd.in-toto+json
