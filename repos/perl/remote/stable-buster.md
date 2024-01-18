@@ -1,7 +1,7 @@
 ## `perl:stable-buster`
 
 ```console
-$ docker pull perl@sha256:1e51d7efab58bfb2eb48355a51fc7df4289a82ce7e8e68e2e696dd02209218b1
+$ docker pull perl@sha256:41a5385abdf31bf7b7004a4bae16822717b2ba8a8001d510a6747574949e62d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -105,13 +105,13 @@ $ docker pull perl@sha256:02ecb16a6274901954b691b14b89b6d835910e31aaf55ffcf6003e
 ### `perl:stable-buster` - linux; arm variant v7
 
 ```console
-$ docker pull perl@sha256:80f64de2fe71026841cff7753c76543e2362482bf260ec237b850f26b88cf7ee
+$ docker pull perl@sha256:4968382ae217f78f235f113d173c2e06e790519a3c80ddfe735e3c5e001160e3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **292.5 MB (292504853 bytes)**  
+-	Total Size: **292.5 MB (292505326 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:402c04fe74d9232b0cb0068faf68e53cd6d8b70010a01a7220bdf7e6da8b8760`
+-	Image ID: `sha256:9ffc9af322240276effbba7bbfa229f685dc8e3ec11773a2341acbcdb0361bdf`
 -	Default Command: `["perl5.38.2","-de0"]`
 
 ```dockerfile
@@ -122,9 +122,9 @@ CMD ["bash"]
 # Sun, 31 Dec 2023 10:01:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
 # Sun, 31 Dec 2023 10:01:19 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 # Sun, 31 Dec 2023 10:01:19 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
 # Sun, 31 Dec 2023 10:01:19 GMT
 WORKDIR /usr/src/perl
 # Sun, 31 Dec 2023 10:01:19 GMT
@@ -144,49 +144,49 @@ CMD ["perl5.38.2" "-de0"]
 		Last Modified: Thu, 11 Jan 2024 03:31:37 GMT  
 		Size: 16.2 MB (16216537 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7908e6bb56f5fd563f9fd988126258215be6efb8f65248027684accc2ec7da05`  
-		Last Modified: Thu, 11 Jan 2024 03:32:00 GMT  
-		Size: 47.4 MB (47410050 bytes)  
+	-	`sha256:37ecab3a87b9bbb589eacf06e7b420852148a8209a2ae89e8917a5f9caa095dd`  
+		Last Modified: Wed, 17 Jan 2024 02:21:08 GMT  
+		Size: 47.4 MB (47410898 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8f4252a48a724cf42edd9fc4ee69dc65ed9d90d4f536bbcc302160dd304acec`  
-		Last Modified: Thu, 11 Jan 2024 03:32:44 GMT  
-		Size: 168.1 MB (168134110 bytes)  
+	-	`sha256:a5d3ad8427b3749c32340667d7d1e690ea83702fdec859c8766bebf29db76f4e`  
+		Last Modified: Wed, 17 Jan 2024 02:21:54 GMT  
+		Size: 168.1 MB (168133685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d94346b2272d6b125da94fdfe4265d3c2082c69c9a479f7974c092de4677bba`  
-		Last Modified: Fri, 12 Jan 2024 20:16:00 GMT  
-		Size: 136.0 B  
+	-	`sha256:5f081969a02c64efe19d9933749a81b808efebc0881859f5333d7e8d980b3ca4`  
+		Last Modified: Thu, 18 Jan 2024 05:22:09 GMT  
+		Size: 135.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c5621eaea4759e179db1f15b55134951262d36e20fcfa29327b74dc147e9cd3`  
-		Last Modified: Fri, 12 Jan 2024 20:16:02 GMT  
-		Size: 14.8 MB (14776282 bytes)  
+	-	`sha256:74482a1c04bde129ddc0a52e48cd20bc02907625bada49ef0a20b37495eba018`  
+		Last Modified: Thu, 18 Jan 2024 05:22:10 GMT  
+		Size: 14.8 MB (14776334 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e169408cddbb1383d19d23dad5767e5f818b02d551718cb2898a176dcde9a6c3`  
-		Last Modified: Fri, 12 Jan 2024 20:16:02 GMT  
-		Size: 133.0 B  
+	-	`sha256:4ca81c8c2631575157803724faaf021d63c65a04dd556d0d9203a432f126120f`  
+		Last Modified: Thu, 18 Jan 2024 05:22:10 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `perl:stable-buster` - unknown; unknown
 
 ```console
-$ docker pull perl@sha256:7c5ae9027c247805387db34310959990de2e0ca72e48d7bbabfc239f0890af4b
+$ docker pull perl@sha256:8b21c6a853c59bd07143dec5b6273e1d7a2975208f5f7a231f3b7ed040e322ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.5 MB (13450631 bytes)**  
+-	Total Size: **13.5 MB (13450632 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6cb7f5a608c4e52875b5b284a9061e5ed72fdc02a0c0e7948bb8bfecbaa1484a`
+-	Image ID: `sha256:538f6c482ad06cbb488d310411c8f14a5f8b9a71dd62c1177596968592925b86`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:db9e1d2d63bedc5ca09bff27722b006745313073f72c327e33ee0646575cf84b`  
-		Last Modified: Fri, 12 Jan 2024 20:16:01 GMT  
+	-	`sha256:4a1bbc80b573dad4fbe58d5a6ab58e6d67df533de481e02e1179900590e61bf9`  
+		Last Modified: Thu, 18 Jan 2024 05:22:10 GMT  
 		Size: 13.4 MB (13434286 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e0fbf3ce9792c0a6a7831da8acec6da13dc606cd2bea458597e035686f34592a`  
-		Last Modified: Fri, 12 Jan 2024 20:16:00 GMT  
-		Size: 16.3 KB (16345 bytes)  
+	-	`sha256:5d930812145b1faa435e2a5ecc773b32cbb72fcbebf7e7badf4b59273ec46138`  
+		Last Modified: Thu, 18 Jan 2024 05:22:09 GMT  
+		Size: 16.3 KB (16346 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `perl:stable-buster` - linux; arm64 variant v8
