@@ -1,7 +1,7 @@
 ## `rust:bookworm`
 
 ```console
-$ docker pull rust@sha256:166aa82204eb86894a648a476496b1b299061d2a3ade40e0f85fa3d40ee9a534
+$ docker pull rust@sha256:ac8c4cb82e317512260fbcf54e80039d9083605e3b8ea3b9fd4c39e1472c6215
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -95,13 +95,13 @@ $ docker pull rust@sha256:64e846d9f522cb33fed5648497425d32a474035ffcb8b7fb9e0604
 ### `rust:bookworm` - linux; arm variant v7
 
 ```console
-$ docker pull rust@sha256:8d075c64c1630535d2660bf5017e0218c29c80930a9098e3c3f2647e97b245d6
+$ docker pull rust@sha256:2c72d8ffd4fbb7309a4da3ba118a2eec4244dd955c9c6a8c364933f83402016b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **516.3 MB (516310632 bytes)**  
+-	Total Size: **516.3 MB (516311590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae1d49a7dcbe0871bcd3a72087ef40bd9df2e137e8b0ac04ddcdf37bbb8a2d5e`
+-	Image ID: `sha256:22038fc3f3f41f4954759cec024e10ea3045dcac98298b52eed039fb0ed0c251`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -112,9 +112,9 @@ CMD ["bash"]
 # Wed, 10 Jan 2024 18:59:53 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
 # Wed, 10 Jan 2024 18:59:53 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 # Wed, 10 Jan 2024 18:59:53 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
 # Wed, 10 Jan 2024 18:59:53 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin RUST_VERSION=1.75.0
 # Wed, 10 Jan 2024 18:59:53 GMT
@@ -130,41 +130,41 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 		Last Modified: Thu, 11 Jan 2024 03:28:50 GMT  
 		Size: 21.9 MB (21949911 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c77a5ad50b17b550d0d7c458e20b93871af72456b17094173adc0ee560aa0a7`  
-		Last Modified: Thu, 11 Jan 2024 03:29:16 GMT  
-		Size: 59.2 MB (59212918 bytes)  
+	-	`sha256:4217895349d978f5d5f829a1b9f1d590307ed9bb5c0f7f995e80e9b2b82004f1`  
+		Last Modified: Wed, 17 Jan 2024 02:18:53 GMT  
+		Size: 59.2 MB (59213249 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ecd8868ebea1b4c1af666b37d45a32f1a4e81b375da02dd00a533b29902c7c6`  
-		Last Modified: Thu, 11 Jan 2024 03:30:07 GMT  
-		Size: 175.1 MB (175075336 bytes)  
+	-	`sha256:c99d5ec604741fcefed97e18613277d558287884e80970d63c6c06d3079fea66`  
+		Last Modified: Wed, 17 Jan 2024 02:19:38 GMT  
+		Size: 175.1 MB (175075952 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d6dccb910dc5619867ca5535b8e2fb473499b63610ddd785a2284a8f894f171`  
-		Last Modified: Tue, 16 Jan 2024 19:52:28 GMT  
-		Size: 214.9 MB (214915795 bytes)  
+	-	`sha256:c560b64b7459df1aece7cd5e497e4926a675e15264fea860754f17c6c30ef6cc`  
+		Last Modified: Thu, 18 Jan 2024 13:32:04 GMT  
+		Size: 214.9 MB (214915806 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rust:bookworm` - unknown; unknown
 
 ```console
-$ docker pull rust@sha256:132c87b74560e33dadb0389d0410d45d0a5d5e9b5820743f28abb03ee432fff3
+$ docker pull rust@sha256:044f33a89571f550d38093e448a670dcdb4dab8a3e3ef3552c4e0b0ba713ae53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.2 MB (13246558 bytes)**  
+-	Total Size: **13.2 MB (13246559 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b9146f9d05e5d090471225f1da5fe23c03992a2077a8f0dde21e52296dd5876`
+-	Image ID: `sha256:d5ebfabf19cafc3cb0b61e088f49844f65dc7c4204a933a0aa8387f4a59012ce`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f159240bdfb62235b673261e414171b743bbb38eccbb29fe57b03f3519d4caf7`  
-		Last Modified: Tue, 16 Jan 2024 19:52:23 GMT  
+	-	`sha256:9d221681b56f46a1caec5230458a44b8c5d62862c7828efc5927d8e789cd03ff`  
+		Last Modified: Thu, 18 Jan 2024 13:31:59 GMT  
 		Size: 13.2 MB (13234010 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:625403807c71010d10d62843adfda67539952327d6b0d50f047f93d3cb36e232`  
-		Last Modified: Tue, 16 Jan 2024 19:52:22 GMT  
-		Size: 12.5 KB (12548 bytes)  
+	-	`sha256:967bb4d1dd0698d46995f0005afc48fb355922998c7d157e52b2bdab9dbf1d8e`  
+		Last Modified: Thu, 18 Jan 2024 13:31:58 GMT  
+		Size: 12.5 KB (12549 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rust:bookworm` - linux; arm64 variant v8
