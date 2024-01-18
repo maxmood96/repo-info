@@ -35,6 +35,7 @@
 -	[`maven:3-eclipse-temurin-8-focal`](#maven3-eclipse-temurin-8-focal)
 -	[`maven:3-ibm-semeru-11-focal`](#maven3-ibm-semeru-11-focal)
 -	[`maven:3-ibm-semeru-17-focal`](#maven3-ibm-semeru-17-focal)
+-	[`maven:3-ibm-semeru-21-jammy`](#maven3-ibm-semeru-21-jammy)
 -	[`maven:3-ibmjava`](#maven3-ibmjava)
 -	[`maven:3-ibmjava-8`](#maven3-ibmjava-8)
 -	[`maven:3-sapmachine`](#maven3-sapmachine)
@@ -74,6 +75,7 @@
 -	[`maven:3.9-eclipse-temurin-8-focal`](#maven39-eclipse-temurin-8-focal)
 -	[`maven:3.9-ibm-semeru-11-focal`](#maven39-ibm-semeru-11-focal)
 -	[`maven:3.9-ibm-semeru-17-focal`](#maven39-ibm-semeru-17-focal)
+-	[`maven:3.9-ibm-semeru-21-jammy`](#maven39-ibm-semeru-21-jammy)
 -	[`maven:3.9-ibmjava`](#maven39-ibmjava)
 -	[`maven:3.9-ibmjava-8`](#maven39-ibmjava-8)
 -	[`maven:3.9-sapmachine`](#maven39-sapmachine)
@@ -113,6 +115,7 @@
 -	[`maven:3.9.6-eclipse-temurin-8-focal`](#maven396-eclipse-temurin-8-focal)
 -	[`maven:3.9.6-ibm-semeru-11-focal`](#maven396-ibm-semeru-11-focal)
 -	[`maven:3.9.6-ibm-semeru-17-focal`](#maven396-ibm-semeru-17-focal)
+-	[`maven:3.9.6-ibm-semeru-21-jammy`](#maven396-ibm-semeru-21-jammy)
 -	[`maven:3.9.6-ibmjava`](#maven396-ibmjava)
 -	[`maven:3.9.6-ibmjava-8`](#maven396-ibmjava-8)
 -	[`maven:3.9.6-sapmachine`](#maven396-sapmachine)
@@ -8868,6 +8871,15 @@ CMD ["mvn"]
 		Last Modified: Wed, 17 Jan 2024 02:05:28 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `maven:3-ibm-semeru-21-jammy`
+
+```console
+$ docker pull maven@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `maven:3-ibmjava`
 
@@ -19281,6 +19293,15 @@ CMD ["mvn"]
 		Size: 157.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `maven:3.9-ibm-semeru-21-jammy`
+
+```console
+$ docker pull maven@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `maven:3.9-ibmjava`
 
 ```console
@@ -29692,6 +29713,15 @@ CMD ["mvn"]
 		Last Modified: Wed, 17 Jan 2024 02:05:28 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `maven:3.9.6-ibm-semeru-21-jammy`
+
+```console
+$ docker pull maven@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `maven:3.9.6-ibmjava`
 
