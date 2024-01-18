@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1f3235ff3bb01e1166d11fd713b8f7803eaeb94af7bbfbd4b80b0396df878771`
-- Created: `2024-01-10T22:47:19.293678002Z`
+- Image ID: `sha256:c7971232360c00df0c9656b9707da864e1c363804a7a790c4c27280ee958277c`
+- Created: `2024-01-16T18:33:30.989360291Z`
 - Virtual Size: ~ 280.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,6 +16,7 @@
   - `ME_CONFIG_MONGODB_URL=mongodb://mongo:27017`
   - `ME_CONFIG_MONGODB_ENABLE_ADMIN=true`
   - `ME_CONFIG_SITE_SESSIONSECRET=secret`
+  - `ME_CONFIG_BASICAUTH=true`
   - `VCAP_APP_HOST=0.0.0.0`
 
 ## `apk` (`.apk`-based packages)
