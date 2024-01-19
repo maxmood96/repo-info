@@ -1,7 +1,7 @@
 ## `mongo:4-nanoserver-ltsc2022`
 
 ```console
-$ docker pull mongo@sha256:25697a30c5139f0d77621d59ea91b244d446180fbdd9a17f1dc1018e67313d25
+$ docker pull mongo@sha256:7d08ac756b3417ccfcacde8d0c18d7acfea9367fb0ec27de40e563cd9cfaf03f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,41 +11,41 @@ $ docker pull mongo@sha256:25697a30c5139f0d77621d59ea91b244d446180fbdd9a17f1dc10
 ### `mongo:4-nanoserver-ltsc2022` - windows version 10.0.20348.2227; amd64
 
 ```console
-$ docker pull mongo@sha256:7c4b1462dd2b8cf1b0e896ee8ac11ad6a8dceea3a75a6c335db5769d54e78aee
+$ docker pull mongo@sha256:34be50e29f2f0a4478219feba60b5fc8606c55235d326063720785001bd4fc3d
 ```
 
 -	Docker Version: 24.0.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **366.2 MB (366186689 bytes)**  
+-	Total Size: **365.8 MB (365814984 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b31e0cbd593f184958cc92b1db8a2f445008b0c8cc9a949a6ffeecb5da4f315`
+-	Image ID: `sha256:232ef013578866ed7478e2afd4b8f0e9e08a28317a0b854f69eac5a4fd3eb6c7`
 -	Default Command: `["mongod","--bind_ip_all"]`
 -	`SHELL`: `["cmd","\/S","\/C"]`
 
 ```dockerfile
 # Thu, 04 Jan 2024 03:13:36 GMT
 RUN Apply image 10.0.20348.2227
-# Thu, 11 Jan 2024 00:55:08 GMT
+# Fri, 19 Jan 2024 00:52:06 GMT
 SHELL [cmd /S /C]
-# Thu, 11 Jan 2024 00:55:09 GMT
+# Fri, 19 Jan 2024 00:52:07 GMT
 USER ContainerAdministrator
-# Thu, 11 Jan 2024 00:55:12 GMT
+# Fri, 19 Jan 2024 00:52:41 GMT
 RUN setx /m PATH "C:\mongodb\bin;%PATH%"
-# Thu, 11 Jan 2024 00:55:13 GMT
+# Fri, 19 Jan 2024 00:52:42 GMT
 USER ContainerUser
-# Thu, 11 Jan 2024 00:55:14 GMT
+# Fri, 19 Jan 2024 00:52:46 GMT
 COPY multi:d83167ee7f0a01f519841410f1f031c3bdfa566af08cc1936efaf3b3f20e2b0f in C:\Windows\System32\ 
-# Thu, 11 Jan 2024 00:55:15 GMT
-ENV MONGO_VERSION=4.4.27
-# Thu, 11 Jan 2024 00:55:26 GMT
-COPY dir:9a4451ece440a57e287596f9b8b98884938e76dd62cf67441f8c60aeee0d3e41 in C:\mongodb 
-# Thu, 11 Jan 2024 00:55:36 GMT
+# Fri, 19 Jan 2024 00:52:47 GMT
+ENV MONGO_VERSION=4.4.28
+# Fri, 19 Jan 2024 00:53:01 GMT
+COPY dir:a7c7b908528d01fb9f70c066b06420934555f7d49e4fc1a503daaffbd0c2ab90 in C:\mongodb 
+# Fri, 19 Jan 2024 00:53:11 GMT
 RUN mongo --version && mongod --version
-# Thu, 11 Jan 2024 00:55:37 GMT
+# Fri, 19 Jan 2024 00:53:11 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Thu, 11 Jan 2024 00:55:37 GMT
+# Fri, 19 Jan 2024 00:53:12 GMT
 EXPOSE 27017
-# Thu, 11 Jan 2024 00:55:38 GMT
+# Fri, 19 Jan 2024 00:53:13 GMT
 CMD ["mongod" "--bind_ip_all"]
 ```
 
@@ -54,47 +54,47 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 09 Jan 2024 20:57:18 GMT  
 		Size: 120.8 MB (120769267 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3c09cce440382d3db43120a7d72684069e427a7521ed44e8ed348b6f2947de1`  
-		Last Modified: Thu, 11 Jan 2024 00:55:46 GMT  
-		Size: 1.1 KB (1144 bytes)  
+	-	`sha256:bf96504d64ee3ae316bcc22a118441463e93c384aa50ccf1416a413af0f637a7`  
+		Last Modified: Fri, 19 Jan 2024 00:53:22 GMT  
+		Size: 1.0 KB (1044 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:280b8144948ae0cf4945cdeeb958eafb75d2ed659c9669768857848f6f4b8935`  
-		Last Modified: Thu, 11 Jan 2024 00:55:45 GMT  
-		Size: 1.2 KB (1158 bytes)  
+	-	`sha256:34dd54b8ac5df85df3f2336babd9a987203cb9621a2140e71fb2154279b747d6`  
+		Last Modified: Fri, 19 Jan 2024 00:53:22 GMT  
+		Size: 1.0 KB (1043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:191793692a72809c37f04ec3fd48d981dc598e64c2505167f846dd1724093cf4`  
-		Last Modified: Thu, 11 Jan 2024 00:55:44 GMT  
-		Size: 84.9 KB (84916 bytes)  
+	-	`sha256:0d0a3df37408136af7dc8b564bd37c90864508aa698432c91c696b479964ae7c`  
+		Last Modified: Fri, 19 Jan 2024 00:53:21 GMT  
+		Size: 74.4 KB (74439 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:011de084b2610f78d220738121f5752ab4a344396cea9998e32bde7be378b99f`  
-		Last Modified: Thu, 11 Jan 2024 00:55:44 GMT  
-		Size: 1.0 KB (1038 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66950599842ba98bc21e1cc5efe47ddc35ba64efc8daf5bbbff4727648134fa3`  
-		Last Modified: Thu, 11 Jan 2024 00:55:44 GMT  
-		Size: 263.4 KB (263371 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5bce3527e9e895adffdc0e3108941c014da163e3e7b21e5e197715ac3b535e62`  
-		Last Modified: Thu, 11 Jan 2024 00:55:43 GMT  
-		Size: 1.0 KB (1041 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37ad53d9ccf88fd4501fa368d251d77503d45977324c3ecb463989cdac183def`  
-		Last Modified: Thu, 11 Jan 2024 00:56:06 GMT  
-		Size: 245.0 MB (244979230 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e46e9cec72175db0d1504d36adaa6d4c3763c53b60ea6ae532291927d68d24d`  
-		Last Modified: Thu, 11 Jan 2024 00:55:42 GMT  
-		Size: 82.4 KB (82407 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d5bcad9f5955a04a02d986552a01a4544e2a62438ecb4ded4c7bb8dba1dd6ec`  
-		Last Modified: Thu, 11 Jan 2024 00:55:42 GMT  
+	-	`sha256:80cbb561f888d176c50a6d3832deb1398c1be1a5818be4c422cf8974b409feb4`  
+		Last Modified: Fri, 19 Jan 2024 00:53:19 GMT  
 		Size: 1.0 KB (1040 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca7d00ac660e5bcda1e20e3bf897dff95a4e4bacb526c94bb6a14cbe04ec3ad1`  
-		Last Modified: Thu, 11 Jan 2024 00:55:42 GMT  
+	-	`sha256:c22175acb76cb29cb11e4ffc4342179ccdb98b0372091a1674846dfd0271eae2`  
+		Last Modified: Fri, 19 Jan 2024 00:53:20 GMT  
+		Size: 263.4 KB (263422 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:622853ccf549be909f1d2fae7505b5fc631b58c5066bc8085b4362667f729ac0`  
+		Last Modified: Fri, 19 Jan 2024 00:53:19 GMT  
+		Size: 1.0 KB (1037 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d6dc5167142cf43ae25acdcc60e50ffdd047900ed6e95f8c361087556fa59cf4`  
+		Last Modified: Fri, 19 Jan 2024 00:53:41 GMT  
+		Size: 244.6 MB (244614423 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fc6fe7e875b5f9b23e13f1693589d09737a783961f9c3bb1130d49278ee02edf`  
+		Last Modified: Fri, 19 Jan 2024 00:53:17 GMT  
+		Size: 86.2 KB (86160 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c35c283e5e321ab5033fb54d86ffa4b08dbad55ad644138e5416fb97105f938e`  
+		Last Modified: Fri, 19 Jan 2024 00:53:17 GMT  
+		Size: 1.0 KB (1033 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c4a488a9f6d8f7c459c9b32a27bc941469999195fda03e86beb378138c6c2ccc`  
+		Last Modified: Fri, 19 Jan 2024 00:53:17 GMT  
 		Size: 1.0 KB (1041 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0efa08e335c932b13eec90d0a7ec71f571e9b6676e377511ced7966ab37ca0f9`  
-		Last Modified: Thu, 11 Jan 2024 00:55:42 GMT  
-		Size: 1.0 KB (1036 bytes)  
+	-	`sha256:2237a2bab4041909b54176dc7dfde52a762f971d90aedbdc3ad12bb72004da31`  
+		Last Modified: Fri, 19 Jan 2024 00:53:17 GMT  
+		Size: 1.0 KB (1035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
