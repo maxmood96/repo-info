@@ -1,9 +1,9 @@
-# `haproxy:2.9.2-alpine`
+# `haproxy:2.9.3-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:10a997353a1dd7b118acc0b296fe9b724c16f4c549d121f9fd2bbb56c7679a50`
-- Created: `2024-01-11T18:13:26Z`
+- Image ID: `sha256:98d73f143a8a7746cb8db7e16f9978204e415f0ff71c59f029f07a85884ad1e1`
+- Created: `2024-01-18T18:13:47Z`
 - Virtual Size: ~ 31.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,9 +11,9 @@
 - Command: `["haproxy","-f","/usr/local/etc/haproxy/haproxy.cfg"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `HAPROXY_VERSION=2.9.2`
-  - `HAPROXY_URL=https://www.haproxy.org/download/2.9/src/haproxy-2.9.2.tar.gz`
-  - `HAPROXY_SHA256=851aee830ec28c1791246a9fd4478f643d115a563dd907f6612cc381a952ab3c`
+  - `HAPROXY_VERSION=2.9.3`
+  - `HAPROXY_URL=https://www.haproxy.org/download/2.9/src/haproxy-2.9.3.tar.gz`
+  - `HAPROXY_SHA256=ed517c65abd86945411f6bcb18c7ec657a706931cb781ea283063ba0a75858c0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -173,16 +173,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r3 description:
+libcrypto3-3.1.4-r4 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r3 webpage:
+libcrypto3-3.1.4-r4 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r3 installed size:
+libcrypto3-3.1.4-r4 installed size:
 4500 KiB
 
-libcrypto3-3.1.4-r3 license:
+libcrypto3-3.1.4-r4 license:
 Apache-2.0
 
 ```
@@ -190,16 +190,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r3 description:
+libssl3-3.1.4-r4 description:
 SSL shared libraries
 
-libssl3-3.1.4-r3 webpage:
+libssl3-3.1.4-r4 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r3 installed size:
+libssl3-3.1.4-r4 installed size:
 548 KiB
 
-libssl3-3.1.4-r3 license:
+libssl3-3.1.4-r4 license:
 Apache-2.0
 
 ```
