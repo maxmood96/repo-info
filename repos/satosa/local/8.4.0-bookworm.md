@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:12318cf68bd26de905cc83abc781529a763b29167cd74f541bd241f3e1b7e48c`
-- Created: `2024-01-11T20:13:22.848093568Z`
+- Image ID: `sha256:21f36e7f0a3e94d5856a1831df855f3d7a801e4e8d6bf18b95fdd5aa32742355`
+- Created: `2024-01-19T01:16:22.869795179Z`
 - Virtual Size: ~ 250.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,8 +15,8 @@
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
   - `PYTHON_VERSION=3.12.1`
   - `PYTHON_PIP_VERSION=23.2.1`
-  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/4cfa4081d27285bda1220a62a5ebf5b4bd749cdb/public/get-pip.py`
-  - `PYTHON_GET_PIP_SHA256=9cc01665956d22b3bf057ae8287b035827bfd895da235bcea200ab3b811790b6`
+  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/049c52c665e8c5fd1751f942316e0a5c777d304f/public/get-pip.py`
+  - `PYTHON_GET_PIP_SHA256=7cfd4bdc4d475ea971f1c0710a5953bcc704d171f83c797b9529d9974502fcc6`
   - `SATOSA_VERSION=8.4.0`
 
 ## `dpkg` (`.deb`-based packages)
