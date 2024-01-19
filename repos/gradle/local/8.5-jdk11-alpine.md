@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:29803af3a62eb6cd681fd18211531419f8d3f6370192ec9765412ea96fa5d79b`
-- Created: `2023-12-01T09:53:47.624208501Z`
+- Image ID: `sha256:75c8a1a9f1b4792a0dbc7c976de3c294be69496d4343675e5f2635b2902d197f`
+- Created: `2024-01-18T19:01:41.6606779Z`
 - Virtual Size: ~ 526.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -415,16 +415,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.4.0-r0 description:
+libcurl-8.5.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.4.0-r0 webpage:
+libcurl-8.5.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.4.0-r0 installed size:
+libcurl-8.5.0-r0 installed size:
 584 KiB
 
-libcurl-8.4.0-r0 license:
+libcurl-8.5.0-r0 license:
 curl
 
 ```
@@ -1061,16 +1061,16 @@ Apache-2.0
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.41.2-r2 description:
+sqlite-libs-3.41.2-r3 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.41.2-r2 webpage:
+sqlite-libs-3.41.2-r3 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.41.2-r2 installed size:
+sqlite-libs-3.41.2-r3 installed size:
 976 KiB
 
-sqlite-libs-3.41.2-r2 license:
+sqlite-libs-3.41.2-r3 license:
 blessing
 
 ```
