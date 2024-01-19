@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e0f784cbae162527ec03035280d0a72aa1c17e7eb2d2103648b27af40219ade`
-- Created: `2023-12-16T16:40:29.131018181Z`
-- Virtual Size: ~ 361.93 Mb  
+- Image ID: `sha256:d201a361453d5b0c9e21c395cca07238e4472cb2e68577bb153711b20ffc49f9`
+- Created: `2024-01-16T20:42:05.164456998Z`
+- Virtual Size: ~ 362.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -140,13 +140,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=11ubuntu5.7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu5.7.dsc' base-files_11ubuntu5.7.dsc 1331 SHA512:ddb511efb81fe616e8c80f819ebfc2b357fe433025e1e2a058a61fa9abd4b5896a515096e1f176ceac5c580492a330a67ded699a866f67345a9e709ff5ebf2dd
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu5.7.tar.xz' base-files_11ubuntu5.7.tar.xz 80664 SHA512:5f82672a58475b8e288a718b4fa23d6fc2764b3d0f7043b7723339abfe6023a9d9b8a0879915469aa4f8b85898d79e874eaaeeec020fa8502912d87c1c07023a
-```
 
 ### `dpkg` source package: `base-passwd=3.5.47`
 
@@ -1517,14 +1513,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.3.1-5ubuntu4.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.6.dsc' pam_1.3.1-5ubuntu4.6.dsc 2594 SHA512:d27f42ef4422e8209d52d41189f44fc3225cc86d9e6b038d733f8f75469f8890e84a3fb151d99fd25540744f8a3ac367b22efe23f317041ad992afbc565fba39
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1.orig.tar.xz' pam_1.3.1.orig.tar.xz 912332 SHA512:6bc8e2a5b64686f0a23846221c5228c88418ba485b17c53b3a12f91262b5bb73566d6b6a5daa1f63bbae54310aee918b987e44a72ce809b4e7c668f0fadfe08e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.6.debian.tar.xz' pam_1.3.1-5ubuntu4.6.debian.tar.xz 172292 SHA512:b3872be460ee334e62e907036b58dc855be7a3095c13a0a5de17c70397b35cb0ce5f6627d7330d183acf24f21d4b92a7cb797d18e0dc7e722c534f1934f3047c
-```
 
 ### `dpkg` source package: `pcre2=10.34-7ubuntu0.1`
 
