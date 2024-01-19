@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7e3da1fd7d5dc4e9975002d36007814c5c3077c22612c43346ed3266b6f55ad2`
-- Created: `2023-12-02T04:22:25.295147712Z`
-- Virtual Size: ~ 232.12 Mb  
+- Image ID: `sha256:4a63850e7827c39043becac3e1267d9f8c55bd3a2f90355076755ccb868a1fd9`
+- Created: `2024-01-17T01:50:49.277754148Z`
+- Virtual Size: ~ 233.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -336,13 +336,13 @@ $ apt-get source -qq --print-uris coreutils=9.1-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.1-1ubuntu2.debian.tar.xz' coreutils_9.1-1ubuntu2.debian.tar.xz 38492 SHA512:54c46926e87c50345823d4d8dcf977bd172cc81be821991e5bdd698056ca919293074e23d59502727e0e93a08ff780bb9b53ac997e57894926ae08b079afb736
 ```
 
-### `dpkg` source package: `curl=8.2.1-1ubuntu3.1`
+### `dpkg` source package: `curl=8.2.1-1ubuntu3.2`
 
 Binary Packages:
 
-- `curl=8.2.1-1ubuntu3.1`
-- `libcurl3-gnutls:amd64=8.2.1-1ubuntu3.1`
-- `libcurl4:amd64=8.2.1-1ubuntu3.1`
+- `curl=8.2.1-1ubuntu3.2`
+- `libcurl3-gnutls:amd64=8.2.1-1ubuntu3.2`
+- `libcurl4:amd64=8.2.1-1ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -359,9 +359,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=8.2.1-1ubuntu3.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.2.1-1ubuntu3.2.dsc' curl_8.2.1-1ubuntu3.2.dsc 3094 SHA512:74ccc51a9cb6998676d1cb4b08f2ab2ae31a7e7ecb37125e1ac3c8985b722b4afbaf030041ae94b6f092030635cf90277f63fe1fa74a042d419dd7eb3cbc50b9
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.2.1.orig.tar.gz' curl_8.2.1.orig.tar.gz 4394020 SHA512:d0a906f4dff4c485e6dae930d9a7530147f4c0a0cbb46a83cb9be9d7bd6b9c320386c8be5bcdd3749f2d468b0daf39d06e8c581bab1fa792fd26da409a575cbd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.2.1-1ubuntu3.2.debian.tar.xz' curl_8.2.1-1ubuntu3.2.debian.tar.xz 53856 SHA512:fe456d605b0d2732691638ce564c76e012efb9bd7fe4fa5e8f108c46c6cf3b06cc033f2a2b5714e0990bcff0f774aadfa74e6d87da13a5936fcb8779d6beffcb
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-3`
 
@@ -1851,11 +1856,11 @@ $ apt-get source -qq --print-uris openldap=2.6.6+dfsg-1~exp1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.6%2bdfsg-1%7eexp1ubuntu1.debian.tar.xz' openldap_2.6.6+dfsg-1~exp1ubuntu1.debian.tar.xz 179316 SHA512:d1f351512ab8c23e2c4daa1a0f69e87824cb04cdfb86e9e9abb5646ca38ef04f798d718ceaf71c574274c23d3847cd1d202e31b0d8e978e59a3a5b294b793dd5
 ```
 
-### `dpkg` source package: `openssh=1:9.3p1-1ubuntu3`
+### `dpkg` source package: `openssh=1:9.3p1-1ubuntu3.2`
 
 Binary Packages:
 
-- `openssh-client=1:9.3p1-1ubuntu3`
+- `openssh-client=1:9.3p1-1ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1870,10 +1875,10 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:9.3p1-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.3p1-1ubuntu3.dsc' openssh_9.3p1-1ubuntu3.dsc 3069 SHA512:8c7da1a7940064740d0ece1b9db82b984aad8868faebb64dd5447ae1b7aeecb89b77f97979d4b283ecda5f796fe3640f3ff074bdf359e1b579657ca610fdb626
+$ apt-get source -qq --print-uris openssh=1:9.3p1-1ubuntu3.2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.3p1-1ubuntu3.2.dsc' openssh_9.3p1-1ubuntu3.2.dsc 3077 SHA512:9a1b646c7ba546599d2e5f820ccd9128694bd7872793cc7bb8fefa8ee8febfd846ed8457dd8d2119b58526e82f60d787832e0682b4ebf6b1973142abb3dd5162
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.3p1.orig.tar.gz' openssh_9.3p1.orig.tar.gz 1856839 SHA512:087ff6fe5f6caab4c6c3001d906399e02beffad7277280f11187420c2939fd4befdcb14643862a657ce4cad2f115b82a0a1a2c99df6ee54dcd76b53647637c19
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.3p1-1ubuntu3.debian.tar.xz' openssh_9.3p1-1ubuntu3.debian.tar.xz 192432 SHA512:527f3ebc538593006f8827743b8fe9582703b6bb7ac55644d0c6282a9e14df4887aae71db7574838876238a5e3349aad5280502922aecb4204df1c14c335cf4c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.3p1-1ubuntu3.2.debian.tar.xz' openssh_9.3p1-1ubuntu3.2.debian.tar.xz 197908 SHA512:530a3c5109db4d14e60321bf835c8305a503946f4ee8d200234eb39dfee5481ef57c3a0b0570551c6c31c503367cc1e2ad15115aec0b28bb362336e99b87817c
 ```
 
 ### `dpkg` source package: `openssl=3.0.10-1ubuntu2.1`

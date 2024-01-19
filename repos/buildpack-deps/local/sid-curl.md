@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7dba59a944ff49cfadf7c44689b8530362dcb2f758120c237623de29cd57cee`
-- Created: `2024-01-11T04:40:00.370020443Z`
-- Virtual Size: ~ 172.30 Mb  
+- Image ID: `sha256:927e295d4c468d2fdddf65521f5e9a9fd15a65d3ce71c554fd8ab066d45b097d`
+- Created: `2024-01-17T01:35:51.624033475Z`
+- Virtual Size: ~ 174.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -892,21 +892,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.2-1
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.2-1.dsc' gnutls28_3.8.2-1.dsc 3231 SHA256:765e1d8ba4a3efd28bca17abdc9f4d9f1fce495cee434bf4cfd5c60bdef241b5
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.2.orig.tar.xz' gnutls28_3.8.2.orig.tar.xz 6456540 SHA256:e765e5016ffa9b9dd243e363a0460d577074444ee2491267db2e96c9c2adef77
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.2.orig.tar.xz.asc' gnutls28_3.8.2.orig.tar.xz.asc 996 SHA256:65812528b607e483920b3398ec9a89acad2f14a33df6e814c5ff1e205b029f00
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.2-1.debian.tar.xz' gnutls28_3.8.2-1.debian.tar.xz 76348 SHA256:2202fecffd3038e2932c41d61226c494d737b7b3bf825a4f3b5fedca88589e6a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.2-1/
 
-- https://sources.debian.net/src/gnutls28/3.8.2-1/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.11-4`
 
@@ -1682,14 +1674,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mawk/1.3.4.20231126-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mawk/1.3.4.20231126-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ncurses=6.4+20231209-1`
+### `dpkg` source package: `ncurses=6.4+20240113-1`
 
 Binary Packages:
 
-- `libncursesw6:amd64=6.4+20231209-1`
-- `libtinfo6:amd64=6.4+20231209-1`
-- `ncurses-base=6.4+20231209-1`
-- `ncurses-bin=6.4+20231209-1`
+- `libncursesw6:amd64=6.4+20240113-1`
+- `libtinfo6:amd64=6.4+20240113-1`
+- `ncurses-base=6.4+20240113-1`
+- `ncurses-bin=6.4+20240113-1`
 
 Licenses: (parsed from: `/usr/share/doc/libncursesw6/copyright`, `/usr/share/doc/libtinfo6/copyright`, `/usr/share/doc/ncurses-base/copyright`, `/usr/share/doc/ncurses-bin/copyright`)
 
@@ -1700,18 +1692,18 @@ Licenses: (parsed from: `/usr/share/doc/libncursesw6/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ncurses=6.4+20231209-1
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20231209-1.dsc' ncurses_6.4+20231209-1.dsc 3807 SHA256:5ea1c62c4992cf97d09e14e07e17cfdfc2f0f4bf6df00d772ddc63e6bf44244c
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20231209.orig.tar.gz' ncurses_6.4+20231209.orig.tar.gz 3673169 SHA256:ad9f8b710ae8499941b6c23c1dfb6dc97fe42d4298691700347ef9daae6eea26
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20231209.orig.tar.gz.asc' ncurses_6.4+20231209.orig.tar.gz.asc 729 SHA256:e478e26a77205cd5e2b6b08796813cf6a51cfd6881c2cde51b149bb68ace815e
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20231209-1.debian.tar.xz' ncurses_6.4+20231209-1.debian.tar.xz 48812 SHA256:b753e3b4f0ff3f4547ff028b8ab5c4408a38c4b91f07613630f353e1a5b02af3
+$ apt-get source -qq --print-uris ncurses=6.4+20240113-1
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20240113-1.dsc' ncurses_6.4+20240113-1.dsc 3827 SHA256:87b1133381c084e9a46636b99d97c23369e7a1fbd9c099b74e7c85af9c51657a
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20240113.orig.tar.gz' ncurses_6.4+20240113.orig.tar.gz 3688489 SHA256:37a12a0f8ae2605012c9a164dd286b0cfa02b51b5055836d09eb3d597fc351b1
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20240113.orig.tar.gz.asc' ncurses_6.4+20240113.orig.tar.gz.asc 729 SHA256:b70cfa4f155f61dfa7c085ad1e3f90c73132ad198764d7793a44cd7fdca51f1b
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20240113-1.debian.tar.xz' ncurses_6.4+20240113-1.debian.tar.xz 49152 SHA256:409131a064b802189af98d809ae745c2dc021623db900e6c46f7da1b519d5110
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ncurses/6.4+20231209-1/ (for browsing the source)
-- https://sources.debian.net/src/ncurses/6.4+20231209-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ncurses/6.4+20231209-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ncurses/6.4+20240113-1/ (for browsing the source)
+- https://sources.debian.net/src/ncurses/6.4+20240113-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ncurses/6.4+20240113-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `netbase=6.4`
 

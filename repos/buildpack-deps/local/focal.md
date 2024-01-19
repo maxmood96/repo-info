@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:44bc6d1de5710d03053e857c3a5eacd2b279784a069ecd156b0bd9341560518d`
-- Created: `2023-12-16T11:15:19.723150818Z`
-- Virtual Size: ~ 727.76 Mb  
+- Image ID: `sha256:05ff53dba2ff548bba6d1586e7d8a0010822da590cfd6fd6102d7a683af0e5cd`
+- Created: `2024-01-17T01:42:38.991335746Z`
+- Virtual Size: ~ 728.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -249,13 +249,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=11ubuntu5.7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu5.7.dsc' base-files_11ubuntu5.7.dsc 1331 SHA512:ddb511efb81fe616e8c80f819ebfc2b357fe433025e1e2a058a61fa9abd4b5896a515096e1f176ceac5c580492a330a67ded699a866f67345a9e709ff5ebf2dd
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu5.7.tar.xz' base-files_11ubuntu5.7.tar.xz 80664 SHA512:5f82672a58475b8e288a718b4fa23d6fc2764b3d0f7043b7723339abfe6023a9d9b8a0879915469aa4f8b85898d79e874eaaeeec020fa8502912d87c1c07023a
-```
 
 ### `dpkg` source package: `base-passwd=3.5.47`
 
@@ -295,16 +291,16 @@ $ apt-get source -qq --print-uris bash=5.0-6ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0-6ubuntu1.2.debian.tar.xz' bash_5.0-6ubuntu1.2.debian.tar.xz 75200 SHA512:50de22a6cd140fcb95eca9172e9927a4eeddd90bfbd23072d5e209db1675f331716dfd54ef3281caa7020e3fa1aef9ca7caafc6a8d3067741b1ae41f7dff7724
 ```
 
-### `dpkg` source package: `binutils=2.34-6ubuntu1.7`
+### `dpkg` source package: `binutils=2.34-6ubuntu1.8`
 
 Binary Packages:
 
-- `binutils=2.34-6ubuntu1.7`
-- `binutils-common:amd64=2.34-6ubuntu1.7`
-- `binutils-x86-64-linux-gnu=2.34-6ubuntu1.7`
-- `libbinutils:amd64=2.34-6ubuntu1.7`
-- `libctf-nobfd0:amd64=2.34-6ubuntu1.7`
-- `libctf0:amd64=2.34-6ubuntu1.7`
+- `binutils=2.34-6ubuntu1.8`
+- `binutils-common:amd64=2.34-6ubuntu1.8`
+- `binutils-x86-64-linux-gnu=2.34-6ubuntu1.8`
+- `libbinutils:amd64=2.34-6ubuntu1.8`
+- `libctf-nobfd0:amd64=2.34-6ubuntu1.8`
+- `libctf0:amd64=2.34-6ubuntu1.8`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
 
@@ -312,9 +308,14 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris binutils=2.34-6ubuntu1.8
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.8.dsc' binutils_2.34-6ubuntu1.8.dsc 8521 SHA512:73cc3af442e392b7b070f03417db3dd5f7b0a0aef58ee58abe7dc0fdd6a4aa5f07ed772536ee51c00ee57dfb5c7e302ee402bc2c583ba9977044d86d3d4565fd
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34.orig.tar.xz' binutils_2.34.orig.tar.xz 21637796 SHA512:2c7976939dcf5e8c5b7374cccd39bfe803b1bec73c6abfa0eb17c24e1942574c6bdb874c66a092a82adc443182eacd8a5a8001c19a76101f0c7ba40c27de0bbd
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.8.debian.tar.xz' binutils_2.34-6ubuntu1.8.debian.tar.xz 168440 SHA512:33cf58aeb644bc6c274b6abd19209a957048d16a6c1f37165e256b717e0cdf48f81ff611c952f98bbd186895f6b6d5bb3c3f7459131d4d6d0d64798ec4597547
+```
 
 ### `dpkg` source package: `breezy=3.0.2-4ubuntu2`
 
@@ -3264,11 +3265,11 @@ $ apt-get source -qq --print-uris openldap=2.4.49+dfsg-2ubuntu1.9
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49%2bdfsg-2ubuntu1.9.debian.tar.xz' openldap_2.4.49+dfsg-2ubuntu1.9.debian.tar.xz 189676 SHA512:bf7e4ff9f710404704526a912932d7445fab4c6ce30a099dd890adc78b8afe740ac773596cb4fe409d495406e5bd103d186bd0b2993265cdafd3eb9a71d6a3b5
 ```
 
-### `dpkg` source package: `openssh=1:8.2p1-4ubuntu0.9`
+### `dpkg` source package: `openssh=1:8.2p1-4ubuntu0.11`
 
 Binary Packages:
 
-- `openssh-client=1:8.2p1-4ubuntu0.9`
+- `openssh-client=1:8.2p1-4ubuntu0.11`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -3281,9 +3282,14 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssh=1:8.2p1-4ubuntu0.11
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4ubuntu0.11.dsc' openssh_8.2p1-4ubuntu0.11.dsc 3102 SHA512:47df8c2be2fe7229b5cc614b3cce15f6fa5b4b610aed0706f794ff4c4edf90f42d3be45b2e724f0481678f5fce1fe7b182fde63233b23889e98fbd9eb7da7891
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1.orig.tar.gz' openssh_8.2p1.orig.tar.gz 1701197 SHA512:c4db64e52a3a4c410de9de49f9cb104dd493b10250af3599b92457dd986277b3fd99a6f51cec94892fd1be5bd0369c5757262ea7805f0de464b245c3d34c120a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4ubuntu0.11.debian.tar.xz' openssh_8.2p1-4ubuntu0.11.debian.tar.xz 185080 SHA512:a0adee59b16582e68dd2f2d0d16544077a0ca89b6b2566b5c336026e2c076a0a0a6513dbfe48efb740b08ac6182fd5b52f3837a5899df545448b468e40822d29
+```
 
 ### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.20`
 
@@ -3343,14 +3349,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.3.1-5ubuntu4.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.6.dsc' pam_1.3.1-5ubuntu4.6.dsc 2594 SHA512:d27f42ef4422e8209d52d41189f44fc3225cc86d9e6b038d733f8f75469f8890e84a3fb151d99fd25540744f8a3ac367b22efe23f317041ad992afbc565fba39
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1.orig.tar.xz' pam_1.3.1.orig.tar.xz 912332 SHA512:6bc8e2a5b64686f0a23846221c5228c88418ba485b17c53b3a12f91262b5bb73566d6b6a5daa1f63bbae54310aee918b987e44a72ce809b4e7c668f0fadfe08e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.6.debian.tar.xz' pam_1.3.1-5ubuntu4.6.debian.tar.xz 172292 SHA512:b3872be460ee334e62e907036b58dc855be7a3095c13a0a5de17c70397b35cb0ce5f6627d7330d183acf24f21d4b92a7cb797d18e0dc7e722c534f1934f3047c
-```
 
 ### `dpkg` source package: `pango1.0=1.44.7-2ubuntu4`
 
@@ -3966,12 +3967,12 @@ $ apt-get source -qq --print-uris six=1.14.0-2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/six/six_1.14.0-2.debian.tar.xz' six_1.14.0-2.debian.tar.xz 4368 SHA256:02a80f76758dde7a8b2f42cd05a20db56d956f4678a882f0aba905ee49847050
 ```
 
-### `dpkg` source package: `sqlite3=3.31.1-4ubuntu0.5`
+### `dpkg` source package: `sqlite3=3.31.1-4ubuntu0.6`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.31.1-4ubuntu0.5`
-- `libsqlite3-dev:amd64=3.31.1-4ubuntu0.5`
+- `libsqlite3-0:amd64=3.31.1-4ubuntu0.6`
+- `libsqlite3-dev:amd64=3.31.1-4ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc/libsqlite3-dev/copyright`)
 
@@ -3979,9 +3980,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.31.1-4ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.6.dsc' sqlite3_3.31.1-4ubuntu0.6.dsc 2519 SHA512:caa3e8fd9404fccdcedbf61702f7247c4699ef04c5cba205410639bd73de9afebab79ed40b0c5ca4e2302d6bd184441fc3faf02d46d10ab6508ea495c24addf8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig-www.tar.xz' sqlite3_3.31.1.orig-www.tar.xz 5764424 SHA512:a47adacd46c673cfd674cb64fb54b054e69560aed8c8c429773f0eccdcdbce4be538397506eca8e2d169f4b46d0d47442b273e12d82f8c87e1aadf3ade458db6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig.tar.xz' sqlite3_3.31.1.orig.tar.xz 7108036 SHA512:67e1050efe2988fa3d0d7e4a87e147a8114c6ff9b6ca5307a068befb38e861930eaee0135048ff1abb1e6323b507cbc68a0aac3a8fe5f095d6fcea1547a7efaf
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.6.debian.tar.xz' sqlite3_3.31.1-4ubuntu0.6.debian.tar.xz 36192 SHA512:12d6a58cbff3ceacfc5c51824f264993bbd9d50116d76c11a9b8ecc7ce417403174f637d8af34bdfe46e1f2555eca19d5da3c4875fb332b1aa268ca9fb81c238
+```
 
 ### `dpkg` source package: `subversion=1.13.0-3ubuntu0.2`
 

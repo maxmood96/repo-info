@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:22511557ee0335085870fa236d32414b23f74e17bcc90dea2f56437d43f05672`
-- Created: `2023-12-02T04:14:39.319312455Z`
-- Virtual Size: ~ 239.48 Mb  
+- Image ID: `sha256:8f84377f8bf0034c5336235e063f89cbbedf469e0c0a03357c2f8ca8eba34905`
+- Created: `2024-01-17T01:47:12.129595605Z`
+- Virtual Size: ~ 240.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -336,13 +336,13 @@ $ apt-get source -qq --print-uris coreutils=9.1-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.1-1ubuntu2.debian.tar.xz' coreutils_9.1-1ubuntu2.debian.tar.xz 38492 SHA512:54c46926e87c50345823d4d8dcf977bd172cc81be821991e5bdd698056ca919293074e23d59502727e0e93a08ff780bb9b53ac997e57894926ae08b079afb736
 ```
 
-### `dpkg` source package: `curl=7.88.1-8ubuntu2.3`
+### `dpkg` source package: `curl=7.88.1-8ubuntu2.4`
 
 Binary Packages:
 
-- `curl=7.88.1-8ubuntu2.3`
-- `libcurl3-gnutls:amd64=7.88.1-8ubuntu2.3`
-- `libcurl4:amd64=7.88.1-8ubuntu2.3`
+- `curl=7.88.1-8ubuntu2.4`
+- `libcurl3-gnutls:amd64=7.88.1-8ubuntu2.4`
+- `libcurl4:amd64=7.88.1-8ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -358,9 +358,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.88.1-8ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.88.1-8ubuntu2.4.dsc' curl_7.88.1-8ubuntu2.4.dsc 3044 SHA512:5d5f3cbe4bd57b6cc9def5b25de8dbbeac0285ff8ffe5940361f00ea81a1d31cd48be2021d91a3ecd4c5c95774c7a6f2c71022df980811163cad3e59f4948f69
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.88.1.orig.tar.gz' curl_7.88.1.orig.tar.gz 4343562 SHA512:67701d458548712bbfaa55f2ebefbf87cdbba01b7b1200f608b1c3af67e8dd8e243fa89f256446d217d658a5a1242331d8b0168ab600351e74ee0e2511e79dae
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.88.1-8ubuntu2.4.debian.tar.xz' curl_7.88.1-8ubuntu2.4.debian.tar.xz 58812 SHA512:ac080c79898afc36df0e7559b37817e734a2c0a5db5ff349ee6aebfbde98a4943262fbb16e146e587e3280d46c1723fe2baae7616cec9e515adf0cd8a46a4efc
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-10`
 
@@ -1817,11 +1822,11 @@ $ apt-get source -qq --print-uris openldap=2.6.3+dfsg-1~exp1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.3%2bdfsg-1%7eexp1ubuntu2.debian.tar.xz' openldap_2.6.3+dfsg-1~exp1ubuntu2.debian.tar.xz 179412 SHA512:f305e04594b0153dd68a139736468b1a5eabf94ec39e82a162ce1ff69ec1aa0b7edfce609a6f4cf154a141d7771a85d4b0043aa5e76665281029ee98f74a7f98
 ```
 
-### `dpkg` source package: `openssh=1:9.0p1-1ubuntu8.5`
+### `dpkg` source package: `openssh=1:9.0p1-1ubuntu8.7`
 
 Binary Packages:
 
-- `openssh-client=1:9.0p1-1ubuntu8.5`
+- `openssh-client=1:9.0p1-1ubuntu8.7`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1833,9 +1838,15 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssh=1:9.0p1-1ubuntu8.7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.0p1-1ubuntu8.7.dsc' openssh_9.0p1-1ubuntu8.7.dsc 3356 SHA512:f9236c57c6a72bda2798875584e7736fada640c1959c7ef30b67d8c5584f7acc54e1ff05a7ba3bd194fc4c4ac1c5c30e57e31cc358eb9baef10daef17d019137
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.0p1.orig.tar.gz' openssh_9.0p1.orig.tar.gz 1822183 SHA512:613ae95317e734868c6a60d9cc5af47a889baa3124bbdd2b31bb51dd6b57b136f4cfcb5604cca78a03bd500baab9b9b45eaf77e038b1ed776c86dce0437449a9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.0p1.orig.tar.gz.asc' openssh_9.0p1.orig.tar.gz.asc 833 SHA512:7b1445764058435d2fa8a9c7553643983650d4232036c088e46e44beeb538d32cba88f775b1be9da5f21a01d6caea59b3dc4714507781e9cb946546fa54f169f
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.0p1-1ubuntu8.7.debian.tar.xz' openssh_9.0p1-1ubuntu8.7.debian.tar.xz 189876 SHA512:5639f783ae316eacdb1e8b4c40e927bdc4f9dc72884fcc8219e1c555b03d2d3d37dcbac8a1f12d286c64c6af90bfaa6a4fb57f19b760e9ec1adb1ffef816e945
+```
 
 ### `dpkg` source package: `openssl=3.0.8-1ubuntu1.4`
 
@@ -2050,14 +2061,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.11.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.11.2-1.tar.gz' python3-defaults_3.11.2-1.tar.gz 145949 SHA512:3cfaa9b26321df4b4b2dfd2835d3ebc79e31d2d91039b6146454b2b1ea5ec2d8e362dbaf56c0ed27c37e37aa5ac459fed9ffab83982c335d8b9f5567aaa67d46
 ```
 
-### `dpkg` source package: `python3.11=3.11.4-1~23.04.1`
+### `dpkg` source package: `python3.11=3.11.4-1~23.04.2`
 
 Binary Packages:
 
-- `libpython3.11-minimal:amd64=3.11.4-1~23.04.1`
-- `libpython3.11-stdlib:amd64=3.11.4-1~23.04.1`
-- `python3.11=3.11.4-1~23.04.1`
-- `python3.11-minimal=3.11.4-1~23.04.1`
+- `libpython3.11-minimal:amd64=3.11.4-1~23.04.2`
+- `libpython3.11-stdlib:amd64=3.11.4-1~23.04.2`
+- `python3.11=3.11.4-1~23.04.2`
+- `python3.11-minimal=3.11.4-1~23.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.11-minimal/copyright`, `/usr/share/doc/libpython3.11-stdlib/copyright`, `/usr/share/doc/python3.11/copyright`, `/usr/share/doc/python3.11-minimal/copyright`)
 
@@ -2079,9 +2090,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.11-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.11=3.11.4-1~23.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.11/python3.11_3.11.4-1%7e23.04.2.dsc' python3.11_3.11.4-1~23.04.2.dsc 3643 SHA512:a05375f311f46f93596f0568041c24a451b307f1dee21f918931572d644a2a3987d8a60844bdbef5136c96e5dc84d7c828885677e90d530e1a7cbb19764a5c97
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.11/python3.11_3.11.4.orig.tar.xz' python3.11_3.11.4.orig.tar.xz 19954828 SHA512:7eb14fecbf60824d10c22a9057584c3a142c2866f4af6caa2525c10c8bcb24e6e7afb32a44a0e118df0a2b2543d578c3b422ffd4a5fa317dfe6ea371cc7ee1ee
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.11/python3.11_3.11.4-1%7e23.04.2.debian.tar.xz' python3.11_3.11.4-1~23.04.2.debian.tar.xz 221428 SHA512:4ff998eba8664167e4cb92e7fadb6c876e5d1f1993572266e2fb6e0823c03710cdee1cc2892010a8b229ebd2187b7ae0e2e81ebe96a17adc0c226b8c7d1d7cbf
+```
 
 ### `dpkg` source package: `readline=8.2-1.3`
 

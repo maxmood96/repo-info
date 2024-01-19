@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:47e752895bec72bee797d06eec6d32b01118e8195862f49de9698f6ee6d57906`
-- Created: `2024-01-11T04:40:23.104945408Z`
-- Virtual Size: ~ 362.24 Mb  
+- Image ID: `sha256:ef54c073f944c936c684c7aaaa0ddeff8a859b2118b3291e678081c1adca186a`
+- Created: `2024-01-17T01:36:16.340492759Z`
+- Virtual Size: ~ 364.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1045,21 +1045,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.2-1
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.2-1.dsc' gnutls28_3.8.2-1.dsc 3231 SHA256:765e1d8ba4a3efd28bca17abdc9f4d9f1fce495cee434bf4cfd5c60bdef241b5
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.2.orig.tar.xz' gnutls28_3.8.2.orig.tar.xz 6456540 SHA256:e765e5016ffa9b9dd243e363a0460d577074444ee2491267db2e96c9c2adef77
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.2.orig.tar.xz.asc' gnutls28_3.8.2.orig.tar.xz.asc 996 SHA256:65812528b607e483920b3398ec9a89acad2f14a33df6e814c5ff1e205b029f00
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.2-1.debian.tar.xz' gnutls28_3.8.2-1.debian.tar.xz 76348 SHA256:2202fecffd3038e2932c41d61226c494d737b7b3bf825a4f3b5fedca88589e6a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.2-1/
 
-- https://sources.debian.net/src/gnutls28/3.8.2-1/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.11-4`
 
@@ -2105,14 +2097,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mercurial/6.6.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mercurial/6.6.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ncurses=6.4+20231209-1`
+### `dpkg` source package: `ncurses=6.4+20240113-1`
 
 Binary Packages:
 
-- `libncursesw6:amd64=6.4+20231209-1`
-- `libtinfo6:amd64=6.4+20231209-1`
-- `ncurses-base=6.4+20231209-1`
-- `ncurses-bin=6.4+20231209-1`
+- `libncursesw6:amd64=6.4+20240113-1`
+- `libtinfo6:amd64=6.4+20240113-1`
+- `ncurses-base=6.4+20240113-1`
+- `ncurses-bin=6.4+20240113-1`
 
 Licenses: (parsed from: `/usr/share/doc/libncursesw6/copyright`, `/usr/share/doc/libtinfo6/copyright`, `/usr/share/doc/ncurses-base/copyright`, `/usr/share/doc/ncurses-bin/copyright`)
 
@@ -2123,18 +2115,18 @@ Licenses: (parsed from: `/usr/share/doc/libncursesw6/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ncurses=6.4+20231209-1
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20231209-1.dsc' ncurses_6.4+20231209-1.dsc 3807 SHA256:5ea1c62c4992cf97d09e14e07e17cfdfc2f0f4bf6df00d772ddc63e6bf44244c
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20231209.orig.tar.gz' ncurses_6.4+20231209.orig.tar.gz 3673169 SHA256:ad9f8b710ae8499941b6c23c1dfb6dc97fe42d4298691700347ef9daae6eea26
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20231209.orig.tar.gz.asc' ncurses_6.4+20231209.orig.tar.gz.asc 729 SHA256:e478e26a77205cd5e2b6b08796813cf6a51cfd6881c2cde51b149bb68ace815e
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20231209-1.debian.tar.xz' ncurses_6.4+20231209-1.debian.tar.xz 48812 SHA256:b753e3b4f0ff3f4547ff028b8ab5c4408a38c4b91f07613630f353e1a5b02af3
+$ apt-get source -qq --print-uris ncurses=6.4+20240113-1
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20240113-1.dsc' ncurses_6.4+20240113-1.dsc 3827 SHA256:87b1133381c084e9a46636b99d97c23369e7a1fbd9c099b74e7c85af9c51657a
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20240113.orig.tar.gz' ncurses_6.4+20240113.orig.tar.gz 3688489 SHA256:37a12a0f8ae2605012c9a164dd286b0cfa02b51b5055836d09eb3d597fc351b1
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20240113.orig.tar.gz.asc' ncurses_6.4+20240113.orig.tar.gz.asc 729 SHA256:b70cfa4f155f61dfa7c085ad1e3f90c73132ad198764d7793a44cd7fdca51f1b
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20240113-1.debian.tar.xz' ncurses_6.4+20240113-1.debian.tar.xz 49152 SHA256:409131a064b802189af98d809ae745c2dc021623db900e6c46f7da1b519d5110
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ncurses/6.4+20231209-1/ (for browsing the source)
-- https://sources.debian.net/src/ncurses/6.4+20231209-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ncurses/6.4+20231209-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ncurses/6.4+20240113-1/ (for browsing the source)
+- https://sources.debian.net/src/ncurses/6.4+20240113-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ncurses/6.4+20240113-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `netbase=6.4`
 
@@ -2317,21 +2309,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.6p1-2
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.6p1-2.dsc' openssh_9.6p1-2.dsc 3344 SHA256:e0876a2b7ff250f4d9245365a49333619fc417692bf1da879778c271b5c56a08
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA256:910211c07255a8c5ad654391b40ee59800710dd8119dd5362de09385aa7a777c
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA256:9b1e931cbc811f02e91f7eacd55f8211cc45dade11975462f4b0dcdad29927aa
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.6p1-2.debian.tar.xz' openssh_9.6p1-2.debian.tar.xz 188296 SHA256:733a36ddedd4a7d29d92e735a27d3f3865a5ba40c911361c6a20a99392ee06a3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:9.6p1-2/
 
-- https://sources.debian.net/src/openssh/1:9.6p1-2/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:9.6p1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:9.6p1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.1.4-2`
 
@@ -2467,14 +2451,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre2/10.42-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre2/10.42-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.38.2-2`
+### `dpkg` source package: `perl=5.38.2-3`
 
 Binary Packages:
 
-- `libperl5.38:amd64=5.38.2-2`
-- `perl=5.38.2-2`
-- `perl-base=5.38.2-2`
-- `perl-modules-5.38=5.38.2-2`
+- `libperl5.38:amd64=5.38.2-3`
+- `perl=5.38.2-3`
+- `perl-base=5.38.2-3`
+- `perl-modules-5.38=5.38.2-3`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.38/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.38/copyright`)
 
@@ -2504,13 +2488,21 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.38/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris perl=5.38.2-3
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2-3.dsc' perl_5.38.2-3.dsc 2933 SHA256:f9bcf5b9f37840805afe2ed77ba928e3f2e01e3683160ced93d7643be8c056e7
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA256:4d1b34cc058f9963cb89785ecc040d57f6d7725cd83329cfa4ef8b27566454d2
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA256:d91115e90b896520e83d4de6b52f8254ef2b70a8d545ffab33200ea9f1cf29e8
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2-3.debian.tar.xz' perl_5.38.2-3.debian.tar.xz 165464 SHA256:39652e1185d219f1c8a7d436cf6457ec002ae9e1dfc4ad016b36176c10e5847b
+```
 
-- http://snapshot.debian.org/package/perl/5.38.2-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/perl/5.38.2-3/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.38.2-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.38.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.2.1-3`
 
