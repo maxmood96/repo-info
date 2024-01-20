@@ -34,21 +34,13 @@ Licenses: (parsed from: `/usr/share/doc/libacl1/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris acl=2.3.1-4
-'http://deb.debian.org/debian/pool/main/a/acl/acl_2.3.1-4.dsc' acl_2.3.1-4.dsc 2505 SHA256:6dff325eb4309da24e6d6eb1b22faa4e0dc243c0c10a9a45f37a992a7b7f98fa
-'http://deb.debian.org/debian/pool/main/a/acl/acl_2.3.1.orig.tar.xz' acl_2.3.1.orig.tar.xz 355676 SHA256:c0234042e17f11306c23c038b08e5e070edb7be44bef6697fb8734dcff1c66b1
-'http://deb.debian.org/debian/pool/main/a/acl/acl_2.3.1.orig.tar.xz.asc' acl_2.3.1.orig.tar.xz.asc 833 SHA256:54fb8fcd6ae6901f2257e18d503e5e18ad956babf8d80d2ea29f280fc7264662
-'http://deb.debian.org/debian/pool/main/a/acl/acl_2.3.1-4.debian.tar.xz' acl_2.3.1-4.debian.tar.xz 31020 SHA256:6e26692e3edf09a165a6043bf658ca41407f8c97a92e2cbcf11c148dfb804cd4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/acl/2.3.1-4/
 
-- https://sources.debian.net/src/acl/2.3.1-4/ (for browsing the source)
-- https://sources.debian.net/src/acl/2.3.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/acl/2.3.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=2.7.6`
 
@@ -1103,15 +1095,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.2-1
-'http://http.debian.net/debian/pool/main/g/gnutls28/gnutls28_3.8.2-1.dsc' gnutls28_3.8.2-1.dsc 3231 SHA256:765e1d8ba4a3efd28bca17abdc9f4d9f1fce495cee434bf4cfd5c60bdef241b5
-'http://http.debian.net/debian/pool/main/g/gnutls28/gnutls28_3.8.2.orig.tar.xz' gnutls28_3.8.2.orig.tar.xz 6456540 SHA256:e765e5016ffa9b9dd243e363a0460d577074444ee2491267db2e96c9c2adef77
-'http://http.debian.net/debian/pool/main/g/gnutls28/gnutls28_3.8.2.orig.tar.xz.asc' gnutls28_3.8.2.orig.tar.xz.asc 996 SHA256:65812528b607e483920b3398ec9a89acad2f14a33df6e814c5ff1e205b029f00
-'http://http.debian.net/debian/pool/main/g/gnutls28/gnutls28_3.8.2-1.debian.tar.xz' gnutls28_3.8.2-1.debian.tar.xz 76348 SHA256:2202fecffd3038e2932c41d61226c494d737b7b3bf825a4f3b5fedca88589e6a
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gnutls28/3.8.2-1/
+
 
 ### `dpkg` source package: `graphite2=1.3.14-2`
 
@@ -1233,19 +1223,13 @@ Licenses: (parsed from: `/usr/share/doc/hostname/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris hostname=3.23+nmu1
-'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.23%2bnmu1.dsc' hostname_3.23+nmu1.dsc 1281 SHA256:56f2189eaeee638e86d29a05356e7001632e33b2132a41a4634a9ff839264ea6
-'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.23%2bnmu1.tar.xz' hostname_3.23+nmu1.tar.xz 12876 SHA256:f3fb39f30b00ba7dba2cec013195d7e1bb215f241153208ccd52da3eedfe7a7d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/hostname/3.23+nmu1/
 
-- https://sources.debian.net/src/hostname/3.23+nmu1/ (for browsing the source)
-- https://sources.debian.net/src/hostname/3.23+nmu1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/hostname/3.23+nmu1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `icu=72.1-4`
 
@@ -2815,14 +2799,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.51.0+ds-3
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.51.0%2bds-3.dsc' pango1.0_1.51.0+ds-3.dsc 3469 SHA256:71df7252c894a467f82a0192eb0d8cbb7a965c1459e945fc81b80ea9e03f01a4
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.51.0%2bds.orig.tar.xz' pango1.0_1.51.0+ds.orig.tar.xz 1731104 SHA256:df51bb6819e91fda4f6c8ba8d2bd51e437e6f7daa86419d69a15e33a99002170
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.51.0%2bds-3.debian.tar.xz' pango1.0_1.51.0+ds-3.debian.tar.xz 41176 SHA256:ac6cb54c5b31eb5790ff7b9581ff16da0d3d0d7b621b1153be1a65b750c20229
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pango1.0/1.51.0+ds-3/
+
 
 ### `dpkg` source package: `patch=2.7.6-7`
 
@@ -3042,20 +3025,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-mass/copyright`)
 - `GPL-2`
 - `GPL-2 | GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-cran-mass=7.3-60-2
-'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-60-2.dsc' r-cran-mass_7.3-60-2.dsc 1851 SHA256:36dc8753dc9e25da452b19454c08604e185f326b61e04d0fe31991f77475aa66
-'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-60.orig.tar.gz' r-cran-mass_7.3-60.orig.tar.gz 561534 SHA256:b802410feab01464d112b27b3501176eb8e68511d4ba9d052ac4db1f2a72f0c2
-'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-60-2.debian.tar.xz' r-cran-mass_7.3-60-2.debian.tar.xz 6572 SHA256:d018deed32152d686bbd14e273101069570bc3d49a38d9552d4f36877d03412a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-cran-mass/7.3-60-2/
 
-- https://sources.debian.net/src/r-cran-mass/7.3-60-2/ (for browsing the source)
-- https://sources.debian.net/src/r-cran-mass/7.3-60-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-cran-mass/7.3-60-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-nnet=7.3-19-2`
 
@@ -3136,20 +3112,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-matrix/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rmatrix=1.6-4-1
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.6-4-1.dsc' rmatrix_1.6-4-1.dsc 1860 SHA256:2148e0879abbaabd0c2bc908b16b16cb1d6f3f57ef944b0cbd4f0914f8c1e3a6
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.6-4.orig.tar.gz' rmatrix_1.6-4.orig.tar.gz 2882754 SHA256:70ca7bdaece68d4837da0523d067e1553947c3c81b0b55206223bb647617bb01
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.6-4-1.debian.tar.xz' rmatrix_1.6-4-1.debian.tar.xz 5908 SHA256:00ce32aaeb24bbb4b9007b5c631eaa3d1a955ae96a7cba3e664687ce2ab7632c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rmatrix/1.6-4-1/
 
-- https://sources.debian.net/src/rmatrix/1.6-4-1/ (for browsing the source)
-- https://sources.debian.net/src/rmatrix/1.6-4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rmatrix/1.6-4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpart=4.1.23-1`
 
@@ -3615,20 +3584,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:9.1.0-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.0-1.dsc' vim_9.1.0-1.dsc 2884 SHA256:1e3de7b00c8b44abd4216b61c17f9301368cac71e905e9812be1ce701d49aea1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.0.orig.tar.gz' vim_9.1.0.orig.tar.gz 17601749 SHA256:ddb435f6e386c53799a3025bdc5a3533beac735a0ee596cb27ada97366a1c725
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.0-1.debian.tar.xz' vim_9.1.0-1.debian.tar.xz 187552 SHA256:4619adf99150cf908cb4327ebaf0e06764ffe8f5a5ef016ef692336761a663d8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/vim/2:9.1.0-1/
 
-- https://sources.debian.net/src/vim/2:9.1.0-1/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:9.1.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:9.1.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21.4-1`
 
