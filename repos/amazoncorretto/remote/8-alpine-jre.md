@@ -1,7 +1,7 @@
 ## `amazoncorretto:8-alpine-jre`
 
 ```console
-$ docker pull amazoncorretto@sha256:c1bba2200861424a2217b7c44be483b829d1602d8e9698f1883d2760644d8ed6
+$ docker pull amazoncorretto@sha256:2c750b816edeb27f9faced62031dfd292ba10d4d7a94fd2f3204ffd7c650c5d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull amazoncorretto@sha256:c1bba2200861424a2217b7c44be483b829d1602d8e96
 ### `amazoncorretto:8-alpine-jre` - linux; amd64
 
 ```console
-$ docker pull amazoncorretto@sha256:0294d978fdee7addbe1c6eeb5c9b8e116812d483612f8b8ae32f450a1e522f48
+$ docker pull amazoncorretto@sha256:ca9de755efe82781d3cabf2721dbdd81e889530343832ad25e9abc3413c81728
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.0 MB (45049942 bytes)**  
+-	Total Size: **45.1 MB (45052477 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:830164cfeebd109569f2b4c2dce32998e607ad7ce96917bbf0976b3d658870ca`
+-	Image ID: `sha256:d6f783294ebb5a65b87f68a44409d5a4779ffa410dfc931483c2a7d73908d2ee`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -27,14 +27,14 @@ $ docker pull amazoncorretto@sha256:0294d978fdee7addbe1c6eeb5c9b8e116812d483612f
 ADD file:1f4eb46669b5b6275af19eb7471a6899a61c276aa7d925b8ae99310b14b75b92 in / 
 # Fri, 08 Dec 2023 01:20:49 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Jan 2024 23:42:42 GMT
-ARG version=8.402.06.1
-# Wed, 17 Jan 2024 23:42:56 GMT
-# ARGS: version=8.402.06.1
+# Sat, 20 Jan 2024 03:46:07 GMT
+ARG version=8.402.08.1
+# Sat, 20 Jan 2024 03:46:17 GMT
+# ARGS: version=8.402.08.1
 RUN wget -O /THIRD-PARTY-LICENSES-20200824.tar.gz https://corretto.aws/downloads/resources/licenses/alpine/THIRD-PARTY-LICENSES-20200824.tar.gz &&     echo "82f3e50e71b2aee21321b2b33de372feed5befad6ef2196ddec92311bc09becb  /THIRD-PARTY-LICENSES-20200824.tar.gz" | sha256sum -c - &&     tar x -ovzf THIRD-PARTY-LICENSES-20200824.tar.gz &&     rm -rf THIRD-PARTY-LICENSES-20200824.tar.gz &&     wget -O /etc/apk/keys/amazoncorretto.rsa.pub https://apk.corretto.aws/amazoncorretto.rsa.pub &&     SHA_SUM="6cfdf08be09f32ca298e2d5bd4a359ee2b275765c09b56d514624bf831eafb91" &&     echo "${SHA_SUM}  /etc/apk/keys/amazoncorretto.rsa.pub" | sha256sum -c - &&     echo "https://apk.corretto.aws" >> /etc/apk/repositories &&     apk add --no-cache amazon-corretto-8-jre=$version-r0 &&     rm -rf /usr/lib/jvm/java-8-amazon-corretto/lib/src.zip
-# Wed, 17 Jan 2024 23:42:56 GMT
+# Sat, 20 Jan 2024 03:46:17 GMT
 ENV LANG=C.UTF-8
-# Wed, 17 Jan 2024 23:42:56 GMT
+# Sat, 20 Jan 2024 03:46:18 GMT
 ENV JAVA_HOME=/usr/lib/jvm/default-jvm/jre
 ```
 
@@ -43,22 +43,22 @@ ENV JAVA_HOME=/usr/lib/jvm/default-jvm/jre
 		Last Modified: Fri, 08 Dec 2023 01:21:10 GMT  
 		Size: 3.4 MB (3408480 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea1745dabe43e2c461ecfb1d2ea0ec76a2a3700903d51381f1be71d0d7b03094`  
-		Last Modified: Wed, 17 Jan 2024 23:59:31 GMT  
-		Size: 41.6 MB (41641462 bytes)  
+	-	`sha256:56b4b0f0fa58a927b3d8ba2e3318e7da8c5c955a7f92d6dbc46c143adb41b83f`  
+		Last Modified: Sat, 20 Jan 2024 03:56:36 GMT  
+		Size: 41.6 MB (41643997 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `amazoncorretto:8-alpine-jre` - linux; arm64 variant v8
 
 ```console
-$ docker pull amazoncorretto@sha256:94f4abccadc806aa6fb352f0fb9640fd9b6ff428aebea179e18001c072f1b0dd
+$ docker pull amazoncorretto@sha256:0ef436de602ef8e5e847b469594bcb58c89ed7915105928ed52aa21f0bb05f39
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.6 MB (44639391 bytes)**  
+-	Total Size: **44.6 MB (44644214 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:994dc6f7abbec08443079618250f8b61c8b964235f633e78f845a740bc431525`
+-	Image ID: `sha256:c560f33668c8a1a7a5b0611f0a955b05c5735712b8465413d48f21b765610f24`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -66,14 +66,14 @@ $ docker pull amazoncorretto@sha256:94f4abccadc806aa6fb352f0fb9640fd9b6ff428aebe
 ADD file:8182c73f869a899cf624a59c400acb8226776d15e4d3a0d240a94e65340540d0 in / 
 # Fri, 08 Dec 2023 01:39:30 GMT
 CMD ["/bin/sh"]
-# Wed, 17 Jan 2024 23:38:49 GMT
-ARG version=8.402.06.1
-# Wed, 17 Jan 2024 23:38:59 GMT
-# ARGS: version=8.402.06.1
+# Sat, 20 Jan 2024 03:41:22 GMT
+ARG version=8.402.08.1
+# Sat, 20 Jan 2024 03:41:31 GMT
+# ARGS: version=8.402.08.1
 RUN wget -O /THIRD-PARTY-LICENSES-20200824.tar.gz https://corretto.aws/downloads/resources/licenses/alpine/THIRD-PARTY-LICENSES-20200824.tar.gz &&     echo "82f3e50e71b2aee21321b2b33de372feed5befad6ef2196ddec92311bc09becb  /THIRD-PARTY-LICENSES-20200824.tar.gz" | sha256sum -c - &&     tar x -ovzf THIRD-PARTY-LICENSES-20200824.tar.gz &&     rm -rf THIRD-PARTY-LICENSES-20200824.tar.gz &&     wget -O /etc/apk/keys/amazoncorretto.rsa.pub https://apk.corretto.aws/amazoncorretto.rsa.pub &&     SHA_SUM="6cfdf08be09f32ca298e2d5bd4a359ee2b275765c09b56d514624bf831eafb91" &&     echo "${SHA_SUM}  /etc/apk/keys/amazoncorretto.rsa.pub" | sha256sum -c - &&     echo "https://apk.corretto.aws" >> /etc/apk/repositories &&     apk add --no-cache amazon-corretto-8-jre=$version-r0 &&     rm -rf /usr/lib/jvm/java-8-amazon-corretto/lib/src.zip
-# Wed, 17 Jan 2024 23:39:00 GMT
+# Sat, 20 Jan 2024 03:41:31 GMT
 ENV LANG=C.UTF-8
-# Wed, 17 Jan 2024 23:39:00 GMT
+# Sat, 20 Jan 2024 03:41:31 GMT
 ENV JAVA_HOME=/usr/lib/jvm/default-jvm/jre
 ```
 
@@ -82,7 +82,7 @@ ENV JAVA_HOME=/usr/lib/jvm/default-jvm/jre
 		Last Modified: Fri, 08 Dec 2023 01:39:48 GMT  
 		Size: 3.3 MB (3347794 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56568eab74473e5178695e8bbde8a6f13ff92af1f415fcff7bd44504fa3cd15f`  
-		Last Modified: Wed, 17 Jan 2024 23:52:44 GMT  
-		Size: 41.3 MB (41291597 bytes)  
+	-	`sha256:0b7d6ac38acf89b5ff874179c9c0c2b207681ab2cf24e0ed13aa9e9c4c717854`  
+		Last Modified: Sat, 20 Jan 2024 03:46:34 GMT  
+		Size: 41.3 MB (41296420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
