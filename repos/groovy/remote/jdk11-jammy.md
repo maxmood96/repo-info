@@ -1,7 +1,7 @@
 ## `groovy:jdk11-jammy`
 
 ```console
-$ docker pull groovy@sha256:89b3dcea38b91d12366dfaf1362103bf4247f311b0d0fd9b4e449db4fdd90074
+$ docker pull groovy@sha256:97a15e1dd05d0310be47502997b657c916d3bd54fcfb18ee52a88f128f3ecfbf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -122,14 +122,14 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ### `groovy:jdk11-jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:498a468dc26a67ded4b618d807845800b8cbad594df29d5b34cfbb53d3e6e06d
+$ docker pull groovy@sha256:27acda7011c85d6b28273624fc0d60d5e86634e29d703fa5d13029fc4e48da96
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **211.4 MB (211387091 bytes)**  
+-	Total Size: **211.5 MB (211505335 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:250e9b8c6a7b79a05ef38f7f2fa0269076c47ab78ccf1df2f03b74f5ebf6e553`
+-	Image ID: `sha256:428c946b4f2dc91c1f43763e8224cddbf9cb3806104cb88604bca96646ae8d55`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
@@ -178,13 +178,13 @@ VOLUME [/home/groovy/.groovy/grapes]
 WORKDIR /home/groovy
 # Wed, 17 Jan 2024 12:38:49 GMT
 RUN apt-get update     && echo "Installing build dependencies"     && apt-get install --yes --no-install-recommends         dirmngr         gnupg         unzip         wget     && rm --recursive --force /var/lib/apt/lists/*
-# Wed, 17 Jan 2024 12:38:49 GMT
-ENV GROOVY_VERSION=4.0.15
-# Wed, 17 Jan 2024 12:39:05 GMT
+# Fri, 19 Jan 2024 23:21:51 GMT
+ENV GROOVY_VERSION=4.0.18
+# Fri, 19 Jan 2024 23:22:00 GMT
 RUN set -o errexit -o nounset     && echo "Downloading Groovy"     && wget --no-verbose --output-document=groovy.zip "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip"         && echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server"     && export GNUPGHOME="$(mktemp -d)"     && gpg --batch --no-tty --keyserver keyserver.ubuntu.com --recv-keys         7FAA0F2206DE228F0DB01AD741321490758AAD6F         331224E1D7BE883D16E8A685825C06C827AF6B66         34441E504A937F43EB0DAEF96A65176A0FB1CD0B         9A810E3B766E089FFB27C70F11B595CEDC4AEBB5         81CABC23EECA0790E8989B361FF96E10F0E13706         && echo "Checking download signature"     && wget --no-verbose --output-document=groovy.zip.asc "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc"     && gpg --batch --no-tty --verify groovy.zip.asc groovy.zip     && rm --recursive --force "${GNUPGHOME}"     && rm groovy.zip.asc         && echo "Installing Groovy"     && unzip groovy.zip     && rm groovy.zip     && mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/"     && ln --symbolic "${GROOVY_HOME}/bin/grape" /usr/bin/grape     && ln --symbolic "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy     && ln --symbolic "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc     && ln --symbolic "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole     && ln --symbolic "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc     && ln --symbolic "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh     && ln --symbolic "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy         && echo "Editing startGroovy to include java.xml.bind module"     && sed --in-place 's|startGroovy ( ) {|startGroovy ( ) {\n    JAVA_OPTS="$JAVA_OPTS --add-modules=ALL-SYSTEM"|' "${GROOVY_HOME}/bin/startGroovy"
-# Wed, 17 Jan 2024 12:39:05 GMT
+# Fri, 19 Jan 2024 23:22:01 GMT
 USER 1000:1000
-# Wed, 17 Jan 2024 12:39:08 GMT
+# Fri, 19 Jan 2024 23:22:02 GMT
 RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && groovy --version
 ```
 
@@ -217,12 +217,12 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Last Modified: Wed, 17 Jan 2024 12:43:28 GMT  
 		Size: 3.9 MB (3879416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb413cf0e376bdde686f9293b62ae5043d47ba368e856a59f85c7d55e8c03a32`  
-		Last Modified: Wed, 17 Jan 2024 12:43:30 GMT  
-		Size: 29.7 MB (29684233 bytes)  
+	-	`sha256:dbd2fe3e11a0e2635f44dd2c9db0cb7154386205fb320d68e38f08a0a99b27ce`  
+		Last Modified: Fri, 19 Jan 2024 23:23:05 GMT  
+		Size: 29.8 MB (29802477 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f2b187fb2df06497b8078c9a8458d230f89e242eaac5044cfa7736a9ca5f22c`  
-		Last Modified: Wed, 17 Jan 2024 12:43:27 GMT  
+	-	`sha256:7b9742f753cc17b5e09489e05ca31d93d1e59166ecb4d1f3b631a0d2f39d22c2`  
+		Last Modified: Fri, 19 Jan 2024 23:23:03 GMT  
 		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -443,14 +443,14 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ### `groovy:jdk11-jammy` - linux; s390x
 
 ```console
-$ docker pull groovy@sha256:64101b7a2b102265accb6cd22fff3357b1557da3319e81b373d298984b283c0c
+$ docker pull groovy@sha256:9a79a4405c9e2aeeec9cf84d5002a4874bdc09954e2c93609e4b03108e484632
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.4 MB (200379325 bytes)**  
+-	Total Size: **200.5 MB (200497604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33da98e0e7257eb108d6e2f9b3cc8310dae1931abda8160ba6eacdebf338787f`
+-	Image ID: `sha256:c94a0860dfe2c7ac25c3d38799bb85d8c77da4eb5c7b9363f231c988a5684546`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
@@ -499,13 +499,13 @@ VOLUME [/home/groovy/.groovy/grapes]
 WORKDIR /home/groovy
 # Wed, 17 Jan 2024 15:20:13 GMT
 RUN apt-get update     && echo "Installing build dependencies"     && apt-get install --yes --no-install-recommends         dirmngr         gnupg         unzip         wget     && rm --recursive --force /var/lib/apt/lists/*
-# Wed, 17 Jan 2024 15:20:14 GMT
-ENV GROOVY_VERSION=4.0.15
-# Wed, 17 Jan 2024 15:20:25 GMT
+# Fri, 19 Jan 2024 23:24:47 GMT
+ENV GROOVY_VERSION=4.0.18
+# Fri, 19 Jan 2024 23:24:53 GMT
 RUN set -o errexit -o nounset     && echo "Downloading Groovy"     && wget --no-verbose --output-document=groovy.zip "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip"         && echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server"     && export GNUPGHOME="$(mktemp -d)"     && gpg --batch --no-tty --keyserver keyserver.ubuntu.com --recv-keys         7FAA0F2206DE228F0DB01AD741321490758AAD6F         331224E1D7BE883D16E8A685825C06C827AF6B66         34441E504A937F43EB0DAEF96A65176A0FB1CD0B         9A810E3B766E089FFB27C70F11B595CEDC4AEBB5         81CABC23EECA0790E8989B361FF96E10F0E13706         && echo "Checking download signature"     && wget --no-verbose --output-document=groovy.zip.asc "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc"     && gpg --batch --no-tty --verify groovy.zip.asc groovy.zip     && rm --recursive --force "${GNUPGHOME}"     && rm groovy.zip.asc         && echo "Installing Groovy"     && unzip groovy.zip     && rm groovy.zip     && mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/"     && ln --symbolic "${GROOVY_HOME}/bin/grape" /usr/bin/grape     && ln --symbolic "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy     && ln --symbolic "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc     && ln --symbolic "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole     && ln --symbolic "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc     && ln --symbolic "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh     && ln --symbolic "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy         && echo "Editing startGroovy to include java.xml.bind module"     && sed --in-place 's|startGroovy ( ) {|startGroovy ( ) {\n    JAVA_OPTS="$JAVA_OPTS --add-modules=ALL-SYSTEM"|' "${GROOVY_HOME}/bin/startGroovy"
-# Wed, 17 Jan 2024 15:20:26 GMT
+# Fri, 19 Jan 2024 23:24:54 GMT
 USER 1000:1000
-# Wed, 17 Jan 2024 15:20:26 GMT
+# Fri, 19 Jan 2024 23:24:56 GMT
 RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && groovy --version
 ```
 
@@ -538,11 +538,11 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Last Modified: Wed, 17 Jan 2024 15:24:47 GMT  
 		Size: 3.6 MB (3647316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:940c93d58dfc6fddcf27719547f6d8d27e4e9722df157c3da9f952e2b3f1ee94`  
-		Last Modified: Wed, 17 Jan 2024 15:24:48 GMT  
-		Size: 29.7 MB (29684214 bytes)  
+	-	`sha256:16f97d98af1d5490e86ba053de7b484bed48b028cef0b4573b75f0e5035d2f14`  
+		Last Modified: Fri, 19 Jan 2024 23:27:49 GMT  
+		Size: 29.8 MB (29802490 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd3f59ddb5384e7662ad352e54760e9aec6eab849f4b48419908c8b9cd010683`  
-		Last Modified: Wed, 17 Jan 2024 15:24:47 GMT  
-		Size: 169.0 B  
+	-	`sha256:ed7472a36c2d2cc245f37894e765eb803f3c7216fd5ed7bc93a5b0a1aa5cfccf`  
+		Last Modified: Fri, 19 Jan 2024 23:27:48 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
