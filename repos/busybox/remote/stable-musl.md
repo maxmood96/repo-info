@@ -1,7 +1,7 @@
 ## `busybox:stable-musl`
 
 ```console
-$ docker pull busybox@sha256:630d0615440a82f995e20570e0b6882dc1d4a578cd4c291b1988a5bec77cff4f
+$ docker pull busybox@sha256:bc6e0c5c7fdd36de6af8274b26b60d1a1c5d2cef748bebcba5395227d8525050
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -314,48 +314,48 @@ $ docker pull busybox@sha256:832836469bae4830469c6b70aa0ca4cf84181eb2a11484479ea
 ### `busybox:stable-musl` - linux; s390x
 
 ```console
-$ docker pull busybox@sha256:6a142c004ad7c56d4d1c218ebff5924c2a13a66e8943294204cab4271136f357
+$ docker pull busybox@sha256:e7e0969b47c05409c0fa5c909e006a620f845d5b119869c8346e4f3cb93f8c83
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **940.3 KB (940308 bytes)**  
+-	Total Size: **940.3 KB (940326 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbdcb751a8b264ffc9b8baf9848eaa949abc4e0219799a38168e791bf138efc4`
+-	Image ID: `sha256:774f60d2b6d3daa542d524858ddb90ae71c4b3cc014a0235132a36c51e1d4515`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Tue, 19 Dec 2023 00:56:07 GMT
+# Wed, 17 Jan 2024 21:49:12 GMT
 ADD busybox.tar.xz / # buildkit
-# Tue, 19 Dec 2023 00:56:07 GMT
+# Wed, 17 Jan 2024 21:49:12 GMT
 CMD ["sh"]
 ```
 
 -	Layers:
-	-	`sha256:0a77ceb7199d4ab8d0996e4d71b82e407800397fb9439a22d21ed3a00a35e3f4`  
-		Last Modified: Wed, 20 Dec 2023 21:02:00 GMT  
-		Size: 940.3 KB (940308 bytes)  
+	-	`sha256:48e10ecef46b18109935c897c4fb6ba3b06fea3fc7b54588e2aef37a9ecc7db9`  
+		Last Modified: Sat, 20 Jan 2024 17:54:57 GMT  
+		Size: 940.3 KB (940326 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `busybox:stable-musl` - unknown; unknown
 
 ```console
-$ docker pull busybox@sha256:d9f29b12267a7ff2341b6d2c71bd493403ce05e937c034c96b610dd1f7f822aa
+$ docker pull busybox@sha256:6ac7f239a3bffeaff764ae1948e58f80497ce3fe2d2bdfb42b7c9899ac58270e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.2 KB (8193 bytes)**  
+-	Total Size: **9.2 KB (9153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c2bf7c9ecb04e45b7fec968d0490e8f19f5cdca5e452be9e13be7a81ae736f4`
+-	Image ID: `sha256:d2deb03e82c885a1c5de5b9ffc72f3b12beb43f880ffec52862abecf85ba22e4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a5e27c61fe3922dfdf0af564b9182bafe2412f9f734928416cabc583f00d9424`  
-		Last Modified: Wed, 20 Dec 2023 21:02:00 GMT  
-		Size: 2.3 KB (2324 bytes)  
+	-	`sha256:72517eef4c47c126a39ac1b293ba0bcfcb63a31962064a4a8bc3907115262d23`  
+		Last Modified: Sat, 20 Jan 2024 17:54:57 GMT  
+		Size: 3.3 KB (3282 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:55723113a55d6ff7db2f0e72da5ef8a2f00da9a8bab1d06d52b4ed092285bd87`  
-		Last Modified: Wed, 20 Dec 2023 21:02:00 GMT  
-		Size: 5.9 KB (5869 bytes)  
+	-	`sha256:990936cff923ba93c536c3d8f4ba7db950b54f638d8ca2d0b278ed1e0110f3b9`  
+		Last Modified: Sat, 20 Jan 2024 17:54:57 GMT  
+		Size: 5.9 KB (5871 bytes)  
 		MIME: application/vnd.in-toto+json
