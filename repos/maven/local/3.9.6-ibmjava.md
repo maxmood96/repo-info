@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:36e7b5f1a2e3f911d397023693a4556e4905e02606e8c38a40cd6214a6524b69`
+- Image ID: `sha256:29998692080360da331096ca928c863ce255f326d073b70dc15882ff4424b5f0`
 - Created: `2023-12-11T11:12:11Z`
 - Virtual Size: ~ 347.03 Mb  
   (total size of all layers on-disk)
@@ -138,13 +138,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12ubuntu4.4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.4.dsc' base-files_12ubuntu4.4.dsc 1277 SHA512:b668e9ce4d9709a704e3f0be29d5b8fb8c92c9f9b6a94ce21269c7f6f2e1d8c78e222e4313a56eb92d8f015fce6a258efa2a01bebfbbfd38f39f10f5dc9e3a7c
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.4.tar.xz' base-files_12ubuntu4.4.tar.xz 81824 SHA512:f5fc383dcf8830000a09633f481eae15a29b077407a5fd895948ce03888386092cd42d4c0fd4d6d3eaf7685e06bffc4a083646aa6053b24af813d1f85dffb9a1
-```
 
 ### `dpkg` source package: `base-passwd=3.5.52build1`
 
@@ -541,12 +537,12 @@ $ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.debian.tar.xz 575908 SHA512:d1bf37d9af699430d3b107d0966194b20aef22654337efdb99971b270609785020dd1f04ce6a0f3f3eb0dbad704b46e9d9e5dfa6a497e98c78a867f5bc290038
 ```
 
-### `dpkg` source package: `glibc=2.35-0ubuntu3.5`
+### `dpkg` source package: `glibc=2.35-0ubuntu3.6`
 
 Binary Packages:
 
-- `libc-bin=2.35-0ubuntu3.5`
-- `libc6:amd64=2.35-0ubuntu3.5`
+- `libc-bin=2.35-0ubuntu3.6`
+- `libc6:amd64=2.35-0ubuntu3.6`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -554,9 +550,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.6.dsc' glibc_2.35-0ubuntu3.6.dsc 8588 SHA512:6cd193039258f1791209328157a3287339c841798f1324fdd62ae651af4af3403c76cfd2a124b1e305f0dee31f9898f86900a27ee10792bce3d080eaba430f73
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.6.debian.tar.xz' glibc_2.35-0ubuntu3.6.debian.tar.xz 931608 SHA512:6dfd583e3ae9fc7bb0bc69679c32bfdf6a0b8a943d470b7c4962cf9ed3079fe289d4c4ac026ef61b13167d0229b354bd04df6afe5f5b5f0c090741d519b86792
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -1035,11 +1037,11 @@ $ apt-get source -qq --print-uris libsepol=3.3-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_3.3-1build1.debian.tar.xz' libsepol_3.3-1build1.debian.tar.xz 15068 SHA512:adb210e2dab83baa49cee624dc5ae44e9f2dff6eb4a0a7bee4b958e99871580df159d0ca339feca31d9c4cdd92d0022a841c35d615436278046379eeb766f1f2
 ```
 
-### `dpkg` source package: `libssh=0.9.6-2ubuntu0.22.04.1`
+### `dpkg` source package: `libssh=0.9.6-2ubuntu0.22.04.2`
 
 Binary Packages:
 
-- `libssh-4:amd64=0.9.6-2ubuntu0.22.04.1`
+- `libssh-4:amd64=0.9.6-2ubuntu0.22.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 
@@ -1049,9 +1051,15 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libssh=0.9.6-2ubuntu0.22.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.2.dsc' libssh_0.9.6-2ubuntu0.22.04.2.dsc 2884 SHA512:9fd8dacd8b96dd641136c4d4114dafc161650415da1e0db90e14f35c6f3d406cc8d492d9362188fa865b1722d4a074afc6cfc284552d5a58a2acdd4831178c6b
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz' libssh_0.9.6.orig.tar.xz 1053056 SHA512:4040ec4af937e95be2e41313ef6d4db60b46b8d4dea10c09402398127c1d1ca8843392d207088aeee3c7ef631c6ae7b66861327dcebf78ed3af0723777619fd1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz.asc' libssh_0.9.6.orig.tar.xz.asc 833 SHA512:1b6223efe9e4ce864cd8d97d517f9f0d38c1cd502b5874fdc6a58731038c2830a72ce753f02fc062d9d4d5922107ec9a2e62fe24a704bb5dec0dcfecdb569fe6
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.2.debian.tar.xz' libssh_0.9.6-2ubuntu0.22.04.2.debian.tar.xz 40780 SHA512:393317c66087ba8d363ee160c9cffc044e040d81437ed52f8605ac59fd6b914d49288578a3457a28f4b9e2dfe710737fc783f227dc8f9f511270176fbe09a8c1
+```
 
 ### `dpkg` source package: `libtasn1-6=4.18.0-4build1`
 
@@ -1397,14 +1405,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.4.0-11ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.3.dsc' pam_1.4.0-11ubuntu2.3.dsc 2598 SHA512:a4f21fd18763cf334a87e29e8956714cc13a13680f863b90019c971ac6208f6ddb8dd3d855cd0e405d4c2d6d12fc29ebd9163d60e73ed21843af249e7f3f37f1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA512:26eda95c45598a500bc142da4d1abf93d03b3bbb0f2390fa87c72dcbffa208dbfa115c0b411095c31ee9955e36422ccf3e2df3bd486818fafffef8c4310798c4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.3.debian.tar.xz' pam_1.4.0-11ubuntu2.3.debian.tar.xz 168864 SHA512:fbf4bf710d5e97a9fccb262f9f9f49254add8d105a399b52a1fc3b8028c136f8f9d62358c025720821a7a0f4cabf413784cf4f28e09c524b3345ef5bc982290b
-```
 
 ### `dpkg` source package: `pcre2=10.39-3ubuntu0.1`
 
