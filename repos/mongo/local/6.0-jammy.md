@@ -1,10 +1,10 @@
-# `mongo:6.0.12-jammy`
+# `mongo:6.0.13-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:68283042fe990ea165e81d03a30dfe539fb48a090660cfe7e5b9c4266073dbb0`
-- Created: `2023-12-19T19:08:50Z`
-- Virtual Size: ~ 689.96 Mb  
+- Image ID: `sha256:23e54c8687373e1ead178bc9fede47b4c49ef2ea104be703453710fcd71af9e8`
+- Created: `2024-01-18T17:08:57Z`
+- Virtual Size: ~ 690.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=6.0`
-  - `MONGO_VERSION=6.0.12`
+  - `MONGO_VERSION=6.0.13`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -140,13 +140,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12ubuntu4.4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.4.dsc' base-files_12ubuntu4.4.dsc 1277 SHA512:b668e9ce4d9709a704e3f0be29d5b8fb8c92c9f9b6a94ce21269c7f6f2e1d8c78e222e4313a56eb92d8f015fce6a258efa2a01bebfbbfd38f39f10f5dc9e3a7c
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.4.tar.xz' base-files_12ubuntu4.4.tar.xz 81824 SHA512:f5fc383dcf8830000a09633f481eae15a29b077407a5fd895948ce03888386092cd42d4c0fd4d6d3eaf7685e06bffc4a083646aa6053b24af813d1f85dffb9a1
-```
 
 ### `dpkg` source package: `base-passwd=3.5.52build1`
 
@@ -1381,17 +1377,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=6.0.12`
+### `dpkg` source package: `mongodb-org=6.0.13`
 
 Binary Packages:
 
-- `mongodb-org=6.0.12`
-- `mongodb-org-database=6.0.12`
-- `mongodb-org-database-tools-extra=6.0.12`
-- `mongodb-org-mongos=6.0.12`
-- `mongodb-org-server=6.0.12`
-- `mongodb-org-shell=6.0.12`
-- `mongodb-org-tools=6.0.12`
+- `mongodb-org=6.0.13`
+- `mongodb-org-database=6.0.13`
+- `mongodb-org-database-tools-extra=6.0.13`
+- `mongodb-org-mongos=6.0.13`
+- `mongodb-org-server=6.0.13`
+- `mongodb-org-shell=6.0.13`
+- `mongodb-org-tools=6.0.13`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.

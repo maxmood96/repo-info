@@ -1,10 +1,10 @@
-# `mongo:5.0.23-focal`
+# `mongo:5.0.24-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7ff4a947af2c3a0a965318d60f0c531f76d810d3c02c780084a83f848648f05`
-- Created: `2023-12-19T19:08:50Z`
-- Virtual Size: ~ 698.99 Mb  
+- Image ID: `sha256:80cfe23a003e3b810828a8011ee1ab1486fbdc120e7b288984aa198a3e789ff2`
+- Created: `2024-01-18T17:04:56Z`
+- Virtual Size: ~ 699.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=5.0`
-  - `MONGO_VERSION=5.0.23`
+  - `MONGO_VERSION=5.0.24`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -140,13 +140,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=11ubuntu5.7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu5.7.dsc' base-files_11ubuntu5.7.dsc 1331 SHA512:ddb511efb81fe616e8c80f819ebfc2b357fe433025e1e2a058a61fa9abd4b5896a515096e1f176ceac5c580492a330a67ded699a866f67345a9e709ff5ebf2dd
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu5.7.tar.xz' base-files_11ubuntu5.7.tar.xz 80664 SHA512:5f82672a58475b8e288a718b4fa23d6fc2764b3d0f7043b7723339abfe6023a9d9b8a0879915469aa4f8b85898d79e874eaaeeec020fa8502912d87c1c07023a
-```
 
 ### `dpkg` source package: `base-passwd=3.5.47`
 
@@ -1299,17 +1295,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=5.0.23`
+### `dpkg` source package: `mongodb-org=5.0.24`
 
 Binary Packages:
 
-- `mongodb-org=5.0.23`
-- `mongodb-org-database=5.0.23`
-- `mongodb-org-database-tools-extra=5.0.23`
-- `mongodb-org-mongos=5.0.23`
-- `mongodb-org-server=5.0.23`
-- `mongodb-org-shell=5.0.23`
-- `mongodb-org-tools=5.0.23`
+- `mongodb-org=5.0.24`
+- `mongodb-org-database=5.0.24`
+- `mongodb-org-database-tools-extra=5.0.24`
+- `mongodb-org-mongos=5.0.24`
+- `mongodb-org-server=5.0.24`
+- `mongodb-org-shell=5.0.24`
+- `mongodb-org-tools=5.0.24`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1774,11 +1770,11 @@ $ apt-get source -qq --print-uris shadow=1:4.8.1-1ubuntu5.20.04.4
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.4.debian.tar.xz' shadow_4.8.1-1ubuntu5.20.04.4.debian.tar.xz 86684 SHA512:8e70ed00983db7bf2b182812cfa9d8c6151de836bacfdf23fbefea37419a72b6be0e126ad2f085ea46aff25de99e66470206cb91259a09b1f6852cb83ca1fb3f
 ```
 
-### `dpkg` source package: `sqlite3=3.31.1-4ubuntu0.5`
+### `dpkg` source package: `sqlite3=3.31.1-4ubuntu0.6`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.31.1-4ubuntu0.5`
+- `libsqlite3-0:amd64=3.31.1-4ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -1786,9 +1782,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.31.1-4ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.6.dsc' sqlite3_3.31.1-4ubuntu0.6.dsc 2519 SHA512:caa3e8fd9404fccdcedbf61702f7247c4699ef04c5cba205410639bd73de9afebab79ed40b0c5ca4e2302d6bd184441fc3faf02d46d10ab6508ea495c24addf8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig-www.tar.xz' sqlite3_3.31.1.orig-www.tar.xz 5764424 SHA512:a47adacd46c673cfd674cb64fb54b054e69560aed8c8c429773f0eccdcdbce4be538397506eca8e2d169f4b46d0d47442b273e12d82f8c87e1aadf3ade458db6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig.tar.xz' sqlite3_3.31.1.orig.tar.xz 7108036 SHA512:67e1050efe2988fa3d0d7e4a87e147a8114c6ff9b6ca5307a068befb38e861930eaee0135048ff1abb1e6323b507cbc68a0aac3a8fe5f095d6fcea1547a7efaf
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.6.debian.tar.xz' sqlite3_3.31.1-4ubuntu0.6.debian.tar.xz 36192 SHA512:12d6a58cbff3ceacfc5c51824f264993bbd9d50116d76c11a9b8ecc7ce417403174f637d8af34bdfe46e1f2555eca19d5da3c4875fb332b1aa268ca9fb81c238
+```
 
 ### `dpkg` source package: `systemd=245.4-4ubuntu3.22`
 
@@ -1858,19 +1860,25 @@ $ apt-get source -qq --print-uris tar=1.30+dfsg-7ubuntu0.20.04.4
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.4.debian.tar.xz' tar_1.30+dfsg-7ubuntu0.20.04.4.debian.tar.xz 24572 SHA512:942a7fb6e2edb7e50b26b1588219d0a99caf17ff1dfa1748449c3fa84ab8cf3e3e94bafb8334cc3b8397562d6a3ecd57bc0df2ddb2b90644a361fa63426d2982
 ```
 
-### `dpkg` source package: `tzdata=2023c-0ubuntu0.20.04.2`
+### `dpkg` source package: `tzdata=2023d-0ubuntu0.20.04`
 
 Binary Packages:
 
-- `tzdata=2023c-0ubuntu0.20.04.2`
+- `tzdata=2023d-0ubuntu0.20.04`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2023d-0ubuntu0.20.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d-0ubuntu0.20.04.dsc' tzdata_2023d-0ubuntu0.20.04.dsc 2516 SHA512:455e7f5e6461259c63d1217cc44a4b7468e3ffd3186286c33182f5f930493e75b10bc5d5145a736ae7121a7020acac835053f1af6df4a246a6a2099a9cb96086
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d.orig.tar.gz' tzdata_2023d.orig.tar.gz 449767 SHA512:81832b2d738c28cecbcb3906cc07568c5ae574adc9de35b25d4bf613581c92d471d67213b4261a56f0ec02efcf211b4e298b7e1dc367c972e726b0a2e9498df4
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d.orig.tar.gz.asc' tzdata_2023d.orig.tar.gz.asc 833 SHA512:3266f0ad4e05365fb09d48b9baeb884447cc4c16ecd4f0d2bf5f25b0aabe03b48fca11c19379a45545dc4f41acc68633c624d99d2700f439d9233ecab6d1f184
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d-0ubuntu0.20.04.debian.tar.xz' tzdata_2023d-0ubuntu0.20.04.debian.tar.xz 170484 SHA512:57602f59538b53fe18f56ed526f769a645c5c7298e1e82405266bffe0a782b1cd4297d1fea3a64e55b0d45f051697f99df7aab5cebbf62f8342f5e5dc606b3e2
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 
