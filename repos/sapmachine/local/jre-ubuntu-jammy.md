@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4f75868059e47880f64bd0b8fc6142f4631200614d758bb886531471275672e2`
-- Created: `2024-01-17T08:50:12.5996662Z`
-- Virtual Size: ~ 255.50 Mb  
+- Image ID: `sha256:b2e03bd448b54446cb6473774ebbe5e70e66788ff09b3917207467b93b059a65`
+- Created: `2024-01-18T19:30:55.273249505Z`
+- Virtual Size: ~ 255.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -155,13 +155,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12ubuntu4.4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.4.dsc' base-files_12ubuntu4.4.dsc 1277 SHA512:b668e9ce4d9709a704e3f0be29d5b8fb8c92c9f9b6a94ce21269c7f6f2e1d8c78e222e4313a56eb92d8f015fce6a258efa2a01bebfbbfd38f39f10f5dc9e3a7c
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.4.tar.xz' base-files_12ubuntu4.4.tar.xz 81824 SHA512:f5fc383dcf8830000a09633f481eae15a29b077407a5fd895948ce03888386092cd42d4c0fd4d6d3eaf7685e06bffc4a083646aa6053b24af813d1f85dffb9a1
-```
 
 ### `dpkg` source package: `base-passwd=3.5.52build1`
 
@@ -1747,11 +1743,11 @@ $ apt-get source -qq --print-uris procps=2:3.3.17-6ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.1.debian.tar.xz' procps_3.3.17-6ubuntu2.1.debian.tar.xz 35488 SHA512:720a52d14be82aecd59e2456fbb19574c99cc5281660a36994ef4aa619c14bbec43fd30b5e949446e5db6b6bebf8003a5f173298fe8bf56ac949d61ad0225a79
 ```
 
-### `dpkg` source package: `sapmachine-21-jre=21.0.1`
+### `dpkg` source package: `sapmachine-21-jre=21.0.2`
 
 Binary Packages:
 
-- `sapmachine-21-jre=21.0.1`
+- `sapmachine-21-jre=21.0.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
