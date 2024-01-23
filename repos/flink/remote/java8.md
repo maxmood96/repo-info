@@ -1,7 +1,7 @@
 ## `flink:java8`
 
 ```console
-$ docker pull flink@sha256:8313cf911cb3e22df945cd854be74e6ea3eacf1393f44ea98dba9d3b5f005419
+$ docker pull flink@sha256:686ac607f81ae64fe95c4533b5a302fe115ae0030729428f3a0d999395866c1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,237 +12,237 @@ $ docker pull flink@sha256:8313cf911cb3e22df945cd854be74e6ea3eacf1393f44ea98dba9
 ### `flink:java8` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:8693ca8ac529c5acf9915faad74e182be73069a52503e67cab114c6c78f536eb
+$ docker pull flink@sha256:3ab656b8630de1651fcfe2edea5457478d5398f4393a82cdca9ee7e09a432b70
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **570.0 MB (570023240 bytes)**  
+-	Total Size: **572.2 MB (572167886 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0bf84da0f2b002585054a5341c5d2c445c775e61b41cbe011e293e271dacfb97`
+-	Image ID: `sha256:66ba28d7c2c687716198fa5e1368a33b6ba2e5cadc12e294dc365c81c2cf487b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Tue, 12 Dec 2023 11:38:57 GMT
+# Thu, 11 Jan 2024 17:08:09 GMT
 ARG RELEASE
-# Tue, 12 Dec 2023 11:38:57 GMT
+# Thu, 11 Jan 2024 17:08:09 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 12 Dec 2023 11:38:57 GMT
+# Thu, 11 Jan 2024 17:08:09 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 12 Dec 2023 11:38:57 GMT
+# Thu, 11 Jan 2024 17:08:09 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 12 Dec 2023 11:38:59 GMT
-ADD file:2b3b5254f38a790d40e31cb26155609f7fc99ef7bc99eae1e0d67fa9ae605f77 in / 
-# Tue, 12 Dec 2023 11:38:59 GMT
+# Thu, 11 Jan 2024 17:08:11 GMT
+ADD file:c646150c866c8b5ece67bc79c610718acf858034fa22502b0dba3d38c53fc9a9 in / 
+# Thu, 11 Jan 2024 17:08:11 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Dec 2023 10:16:13 GMT
+# Wed, 17 Jan 2024 07:14:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 16 Dec 2023 10:16:13 GMT
+# Wed, 17 Jan 2024 07:14:20 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 16 Dec 2023 10:16:13 GMT
+# Wed, 17 Jan 2024 07:14:20 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 16 Dec 2023 10:16:29 GMT
+# Wed, 17 Jan 2024 07:14:56 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/*
-# Sat, 16 Dec 2023 10:16:30 GMT
+# Wed, 17 Jan 2024 07:14:56 GMT
 ENV JAVA_VERSION=jdk8u392-b08
-# Sat, 16 Dec 2023 10:16:58 GMT
+# Wed, 17 Jan 2024 07:15:21 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='37b997f12cd572da979283fccafec9ba903041a209605b50fcb46cc34f1a9917';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u392-b08/OpenJDK8U-jre_aarch64_linux_hotspot_8u392b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='91d31027da0d985be3549714389593d9e0da3da5057d87e3831c7c538b9a2a0f';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u392-b08/OpenJDK8U-jre_x64_linux_hotspot_8u392b08.tar.gz';          ;;        armhf|arm)          ESUM='877953bfabcdbcd000c11364d806456ca579a921085de2ca942280ebe168cac2';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u392-b08/OpenJDK8U-jre_arm_linux_hotspot_8u392b08.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='0ecb0aeb54fb9d3c9e1a7ea411490127e8e298d93219fafc4dd6051a5b74671f';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u392-b08/OpenJDK8U-jre_ppc64le_linux_hotspot_8u392b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;
-# Sat, 16 Dec 2023 10:16:59 GMT
+# Wed, 17 Jan 2024 07:15:22 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete."
-# Sat, 16 Dec 2023 10:16:59 GMT
+# Wed, 17 Jan 2024 07:15:22 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Sat, 16 Dec 2023 10:16:59 GMT
+# Wed, 17 Jan 2024 07:15:22 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 16 Dec 2023 14:43:24 GMT
+# Tue, 23 Jan 2024 19:33:03 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Sat, 16 Dec 2023 14:43:24 GMT
+# Tue, 23 Jan 2024 19:33:03 GMT
 ENV GOSU_VERSION=1.11
-# Sat, 16 Dec 2023 14:44:20 GMT
+# Tue, 23 Jan 2024 19:33:11 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Sat, 16 Dec 2023 14:44:20 GMT
-ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.18.0/flink-1.18.0-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.18.0/flink-1.18.0-bin-scala_2.12.tgz.asc GPG_KEY=96AE0E32CBE6E0753CE6DF6CB078D1D3253A8D82 CHECK_GPG=true
-# Sat, 16 Dec 2023 14:44:20 GMT
+# Tue, 23 Jan 2024 19:33:11 GMT
+ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.18.1/flink-1.18.1-bin-scala_2.12.tgz FLINK_ASC_URL=https://downloads.apache.org/flink/flink-1.18.1/flink-1.18.1-bin-scala_2.12.tgz.asc GPG_KEY=96AE0E32CBE6E0753CE6DF6CB078D1D3253A8D82 CHECK_GPG=true
+# Tue, 23 Jan 2024 19:33:11 GMT
 ENV FLINK_HOME=/opt/flink
-# Sat, 16 Dec 2023 14:44:20 GMT
+# Tue, 23 Jan 2024 19:33:11 GMT
 ENV PATH=/opt/flink/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 16 Dec 2023 14:44:21 GMT
+# Tue, 23 Jan 2024 19:33:12 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Sat, 16 Dec 2023 14:44:21 GMT
+# Tue, 23 Jan 2024 19:33:12 GMT
 WORKDIR /opt/flink
-# Sat, 16 Dec 2023 14:45:32 GMT
+# Tue, 23 Jan 2024 19:34:08 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;     sed -i 's/rest.address: localhost/rest.address: 0.0.0.0/g' $FLINK_HOME/conf/flink-conf.yaml;   sed -i 's/rest.bind-address: localhost/rest.bind-address: 0.0.0.0/g' $FLINK_HOME/conf/flink-conf.yaml;   sed -i 's/jobmanager.bind-host: localhost/jobmanager.bind-host: 0.0.0.0/g' $FLINK_HOME/conf/flink-conf.yaml;   sed -i 's/taskmanager.bind-host: localhost/taskmanager.bind-host: 0.0.0.0/g' $FLINK_HOME/conf/flink-conf.yaml;   sed -i '/taskmanager.host: localhost/d' $FLINK_HOME/conf/flink-conf.yaml;
-# Sat, 16 Dec 2023 14:45:33 GMT
+# Tue, 23 Jan 2024 19:34:09 GMT
 COPY file:ab8cf5711c2ee73018994cee7133a7f61b2e5fca388abbb79b5eac61bf7f4fa3 in / 
-# Sat, 16 Dec 2023 14:45:33 GMT
+# Tue, 23 Jan 2024 19:34:10 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 16 Dec 2023 14:45:33 GMT
+# Tue, 23 Jan 2024 19:34:10 GMT
 EXPOSE 6123 8081
-# Sat, 16 Dec 2023 14:45:34 GMT
+# Tue, 23 Jan 2024 19:34:10 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:3dd181f9be599de628e1bc6d868d517125e07f968824bcf7b7ed8d28ad1026b1`  
-		Last Modified: Tue, 12 Dec 2023 12:46:19 GMT  
-		Size: 30.4 MB (30446577 bytes)  
+	-	`sha256:df2fac849a4581b035132d99e203fd83dc65590ea565435a266cb0e14a508838`  
+		Last Modified: Thu, 11 Jan 2024 22:28:44 GMT  
+		Size: 30.4 MB (30447114 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d733e6219d966050b2455fb6cac42788c07045994fb8bce47da65dbc145020e`  
-		Last Modified: Sat, 16 Dec 2023 10:21:22 GMT  
-		Size: 12.9 MB (12902955 bytes)  
+	-	`sha256:34e4f12b52933eaf22480862af2278c73cca667e35d95f7c2fa7d5b1e66cdc58`  
+		Last Modified: Wed, 17 Jan 2024 07:19:01 GMT  
+		Size: 12.9 MB (12906285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a39c728afbd49b07bf217e5321674d86ae6678a8ea7e1520445a0eafa650b001`  
-		Last Modified: Sat, 16 Dec 2023 10:21:57 GMT  
-		Size: 41.9 MB (41858240 bytes)  
+	-	`sha256:1eb202fd260cf6b946be6821bde7699efcb24174c9d6b0d4fcf29ee9a2d9dd86`  
+		Last Modified: Wed, 17 Jan 2024 07:19:28 GMT  
+		Size: 41.9 MB (41858191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16d647b73145ec99cac4f76fe4d32bf9f74405930c9271e89d0a20d6da59acd8`  
-		Last Modified: Sat, 16 Dec 2023 10:21:52 GMT  
-		Size: 159.0 B  
+	-	`sha256:ced85cd837a1e5cd2d0bdcc5cf0b9b5c53aa068ecacff4fe40ce4efbbfb43b58`  
+		Last Modified: Wed, 17 Jan 2024 07:19:24 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a6a16b044492165de67c224b1e821a2aa86190d16a41fe6dd56e4b6504bde26`  
-		Last Modified: Sat, 16 Dec 2023 10:21:52 GMT  
+	-	`sha256:95bfcc3d8b9c5579d67347096a318ec59c1f637f4a02a8319077c4b4cc1ceb1d`  
+		Last Modified: Wed, 17 Jan 2024 07:19:24 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:358d5ce2afc156cb17276c46616a3feb0206940cab625079ccd65765fc219a15`  
-		Last Modified: Sat, 16 Dec 2023 14:49:52 GMT  
-		Size: 4.7 MB (4654454 bytes)  
+	-	`sha256:5aba78a5f5a2ceaf4349191019afab617ece7f974bb49ea0e2bedee8c3f4fbe1`  
+		Last Modified: Tue, 23 Jan 2024 19:43:16 GMT  
+		Size: 4.7 MB (4654830 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ded19bb385e3347449a116ec87b2d15d5cdfb018e1cfb4638530b5184fd8903`  
-		Last Modified: Sat, 16 Dec 2023 14:49:49 GMT  
-		Size: 900.5 KB (900510 bytes)  
+	-	`sha256:84ee97115729d4a795a0c537458b6d77904f2f254c9bf5bf62c1e3aca7b3acba`  
+		Last Modified: Tue, 23 Jan 2024 19:43:14 GMT  
+		Size: 900.5 KB (900509 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:deb0cde59c10b8e7dc29072cf762146e6c30d8582485c4b915cde96df9f21802`  
-		Last Modified: Sat, 16 Dec 2023 14:49:49 GMT  
-		Size: 4.6 KB (4610 bytes)  
+	-	`sha256:166c64817287f3cc4cd47947a519da227b5616644da5e044f61998907cfb5cb0`  
+		Last Modified: Tue, 23 Jan 2024 19:43:13 GMT  
+		Size: 4.6 KB (4614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa729c0865cc1f85b5ec0e142708e417a56dd551429367b52ed49a7fe152610d`  
-		Last Modified: Sat, 16 Dec 2023 14:49:49 GMT  
-		Size: 148.0 B  
+	-	`sha256:555d1154d7748775e8fb6cb47f61fec28d707cb187731420dc1058140b007848`  
+		Last Modified: Tue, 23 Jan 2024 19:43:13 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:433f7336ea3d0f03a885fbb0b0eeffe57c7fd800fbf49d27795495465be56b07`  
-		Last Modified: Sat, 16 Dec 2023 14:50:08 GMT  
-		Size: 479.3 MB (479252743 bytes)  
+	-	`sha256:89b2e09c88650639a4ae1bfee82d913455b0be46d6466a73589b3050b543603f`  
+		Last Modified: Tue, 23 Jan 2024 19:43:36 GMT  
+		Size: 481.4 MB (481393193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfca148c86a00dd489a2a4b341e39b86acc27cd4e91e49241b662170323575c3`  
-		Last Modified: Sat, 16 Dec 2023 14:49:49 GMT  
-		Size: 2.1 KB (2110 bytes)  
+	-	`sha256:39b5e92533949f6ed850c081c9cfe4116be003ef2d22404c0b6b70a21189aed5`  
+		Last Modified: Tue, 23 Jan 2024 19:43:13 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `flink:java8` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:9bbcf2282fd3d34df51e37d5b90fa73751cca7a5cc0b5880a612ff3f7fe205ea
+$ docker pull flink@sha256:01e349992abd8906d985473546b8de25a8fa8d81bfa519f713d7279b92d94e71
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **566.7 MB (566690171 bytes)**  
+-	Total Size: **568.8 MB (568832546 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25cb1a4f574081356e9f3a7f45e11937d0b13b21c89b5ff54c050ea27c049a01`
+-	Image ID: `sha256:2a4281f41209aa7ad4da283e651779f4892756d3014b2522bdb7fa1833baf950`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Tue, 12 Dec 2023 11:41:50 GMT
+# Thu, 11 Jan 2024 17:03:13 GMT
 ARG RELEASE
-# Tue, 12 Dec 2023 11:41:50 GMT
+# Thu, 11 Jan 2024 17:03:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 12 Dec 2023 11:41:50 GMT
+# Thu, 11 Jan 2024 17:03:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 12 Dec 2023 11:41:51 GMT
+# Thu, 11 Jan 2024 17:03:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 12 Dec 2023 11:41:54 GMT
-ADD file:50f947da69b3b6c63695be9c49eee16f7a7dcdecdceb51e5bee1609b845bf483 in / 
-# Tue, 12 Dec 2023 11:41:54 GMT
+# Thu, 11 Jan 2024 17:03:15 GMT
+ADD file:5703a6689620ec495e864cfc12e80f8b2ee9e69b1a7b7365bf80955ba05a53ab in / 
+# Thu, 11 Jan 2024 17:03:15 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Dec 2023 10:02:27 GMT
+# Wed, 17 Jan 2024 06:57:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 16 Dec 2023 10:02:27 GMT
+# Wed, 17 Jan 2024 06:57:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 16 Dec 2023 10:02:28 GMT
+# Wed, 17 Jan 2024 06:57:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 16 Dec 2023 10:02:41 GMT
+# Wed, 17 Jan 2024 06:57:53 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/*
-# Sat, 16 Dec 2023 10:02:42 GMT
+# Wed, 17 Jan 2024 06:57:53 GMT
 ENV JAVA_VERSION=jdk8u392-b08
-# Sat, 16 Dec 2023 10:03:02 GMT
+# Wed, 17 Jan 2024 06:58:11 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='37b997f12cd572da979283fccafec9ba903041a209605b50fcb46cc34f1a9917';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u392-b08/OpenJDK8U-jre_aarch64_linux_hotspot_8u392b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='91d31027da0d985be3549714389593d9e0da3da5057d87e3831c7c538b9a2a0f';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u392-b08/OpenJDK8U-jre_x64_linux_hotspot_8u392b08.tar.gz';          ;;        armhf|arm)          ESUM='877953bfabcdbcd000c11364d806456ca579a921085de2ca942280ebe168cac2';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u392-b08/OpenJDK8U-jre_arm_linux_hotspot_8u392b08.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='0ecb0aeb54fb9d3c9e1a7ea411490127e8e298d93219fafc4dd6051a5b74671f';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u392-b08/OpenJDK8U-jre_ppc64le_linux_hotspot_8u392b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;
-# Sat, 16 Dec 2023 10:03:02 GMT
+# Wed, 17 Jan 2024 06:58:12 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete."
-# Sat, 16 Dec 2023 10:03:03 GMT
+# Wed, 17 Jan 2024 06:58:12 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Sat, 16 Dec 2023 10:03:03 GMT
+# Wed, 17 Jan 2024 06:58:12 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 16 Dec 2023 13:22:20 GMT
+# Tue, 23 Jan 2024 19:50:26 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Sat, 16 Dec 2023 13:22:21 GMT
+# Tue, 23 Jan 2024 19:50:27 GMT
 ENV GOSU_VERSION=1.11
-# Sat, 16 Dec 2023 13:22:48 GMT
+# Tue, 23 Jan 2024 19:51:44 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Sat, 16 Dec 2023 13:22:48 GMT
-ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.18.0/flink-1.18.0-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.18.0/flink-1.18.0-bin-scala_2.12.tgz.asc GPG_KEY=96AE0E32CBE6E0753CE6DF6CB078D1D3253A8D82 CHECK_GPG=true
-# Sat, 16 Dec 2023 13:22:49 GMT
+# Tue, 23 Jan 2024 19:51:44 GMT
+ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.18.1/flink-1.18.1-bin-scala_2.12.tgz FLINK_ASC_URL=https://downloads.apache.org/flink/flink-1.18.1/flink-1.18.1-bin-scala_2.12.tgz.asc GPG_KEY=96AE0E32CBE6E0753CE6DF6CB078D1D3253A8D82 CHECK_GPG=true
+# Tue, 23 Jan 2024 19:51:44 GMT
 ENV FLINK_HOME=/opt/flink
-# Sat, 16 Dec 2023 13:22:49 GMT
+# Tue, 23 Jan 2024 19:51:44 GMT
 ENV PATH=/opt/flink/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 16 Dec 2023 13:22:49 GMT
+# Tue, 23 Jan 2024 19:51:45 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Sat, 16 Dec 2023 13:22:49 GMT
+# Tue, 23 Jan 2024 19:51:45 GMT
 WORKDIR /opt/flink
-# Sat, 16 Dec 2023 13:23:30 GMT
+# Tue, 23 Jan 2024 19:53:19 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;     sed -i 's/rest.address: localhost/rest.address: 0.0.0.0/g' $FLINK_HOME/conf/flink-conf.yaml;   sed -i 's/rest.bind-address: localhost/rest.bind-address: 0.0.0.0/g' $FLINK_HOME/conf/flink-conf.yaml;   sed -i 's/jobmanager.bind-host: localhost/jobmanager.bind-host: 0.0.0.0/g' $FLINK_HOME/conf/flink-conf.yaml;   sed -i 's/taskmanager.bind-host: localhost/taskmanager.bind-host: 0.0.0.0/g' $FLINK_HOME/conf/flink-conf.yaml;   sed -i '/taskmanager.host: localhost/d' $FLINK_HOME/conf/flink-conf.yaml;
-# Sat, 16 Dec 2023 13:23:33 GMT
+# Tue, 23 Jan 2024 19:53:22 GMT
 COPY file:ab8cf5711c2ee73018994cee7133a7f61b2e5fca388abbb79b5eac61bf7f4fa3 in / 
-# Sat, 16 Dec 2023 13:23:33 GMT
+# Tue, 23 Jan 2024 19:53:22 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 16 Dec 2023 13:23:33 GMT
+# Tue, 23 Jan 2024 19:53:22 GMT
 EXPOSE 6123 8081
-# Sat, 16 Dec 2023 13:23:33 GMT
+# Tue, 23 Jan 2024 19:53:22 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:7734efb8b826f955c6a3bb51d7c84cb262d0e600ea3980f5bce69fa7f4f92d24`  
-		Last Modified: Tue, 12 Dec 2023 16:00:15 GMT  
-		Size: 28.4 MB (28400282 bytes)  
+	-	`sha256:bc8daefb9978b7f23cfc73ae68e998e85ee72a68588997321b1697cb0b9926df`  
+		Last Modified: Thu, 11 Jan 2024 22:46:38 GMT  
+		Size: 28.4 MB (28399616 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a17316455fb8ad3b7ddf20c1593a3e1bdc40af9f31aa436d13715d48fe804a53`  
-		Last Modified: Sat, 16 Dec 2023 10:06:32 GMT  
-		Size: 12.8 MB (12845463 bytes)  
+	-	`sha256:7847c91c5f9018c3a6f03ce61a2b202d22d91f08283f1981203f8dbbb742edf7`  
+		Last Modified: Wed, 17 Jan 2024 07:01:02 GMT  
+		Size: 12.8 MB (12849375 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27e4beee6834ad941f237acbeece3c5232fde064032ed580378d47fd0c2cfc5a`  
-		Last Modified: Sat, 16 Dec 2023 10:07:06 GMT  
-		Size: 40.8 MB (40843274 bytes)  
+	-	`sha256:18e04bcea3bae4c5b3400d62e7f2adb35bb590a725c3bf61547985e57dbde60f`  
+		Last Modified: Wed, 17 Jan 2024 07:01:22 GMT  
+		Size: 40.8 MB (40843328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14c163f879b6a5293c5bd2c0bd87d41796f4d6ffe1bc3ab6593de5cb7718d9e1`  
-		Last Modified: Sat, 16 Dec 2023 10:07:01 GMT  
-		Size: 159.0 B  
+	-	`sha256:fdde23d7522eeb98dc99941da2a0b61585bb36ada880e4fb453fd540341de0ce`  
+		Last Modified: Wed, 17 Jan 2024 07:01:18 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9693f7f2e61c39a8402fb5974b82e55487b9d3c787fd740940f0c5934bafb3b2`  
-		Last Modified: Sat, 16 Dec 2023 10:07:01 GMT  
-		Size: 732.0 B  
+	-	`sha256:34f79ead2b65a3e8909608b31312410526074d218456817fecc2bc571a9ab3fe`  
+		Last Modified: Wed, 17 Jan 2024 07:01:18 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8493fe0a2c2a44e3daebe507fbd931a5043d309114382f53f0884edb485f1a5c`  
-		Last Modified: Sat, 16 Dec 2023 13:32:59 GMT  
-		Size: 4.5 MB (4505197 bytes)  
+	-	`sha256:d3e455e8e539beaf9812c986e759a6550c2007ef65f819dbbb049221176ba21c`  
+		Last Modified: Tue, 23 Jan 2024 20:06:37 GMT  
+		Size: 4.5 MB (4503689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60a7a1fecdbdc22ca8bd9688fb49d4a5227f586e3130bf692c9461b68fce03b8`  
-		Last Modified: Sat, 16 Dec 2023 13:32:57 GMT  
-		Size: 835.4 KB (835390 bytes)  
+	-	`sha256:8a38e854b7f97ac46463db9eb81d22fe588b9a4c15a027a501ccb2ec1d16ae65`  
+		Last Modified: Tue, 23 Jan 2024 20:06:34 GMT  
+		Size: 835.4 KB (835393 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17b566fcdc166762fc3bba8c82c58a23b4e132d87c5087926433d577c9c70be1`  
-		Last Modified: Sat, 16 Dec 2023 13:32:56 GMT  
-		Size: 4.7 KB (4651 bytes)  
+	-	`sha256:e266501096f708b72f328197565d456657439a6b42273c0fb61b0e63aa1c5a21`  
+		Last Modified: Tue, 23 Jan 2024 20:06:34 GMT  
+		Size: 4.7 KB (4652 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ea2b1588221dc33f335cfb79b3a7f6405700a2bb7ea2c78b2dcd87d8b29ff53`  
-		Last Modified: Sat, 16 Dec 2023 13:32:56 GMT  
+	-	`sha256:f5e5f89ae377864160ca1710d9e4068d39a5e7d43f6ee5490e6a9de79a2c9a4d`  
+		Last Modified: Tue, 23 Jan 2024 20:06:34 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:329cea9b8da81e61d16d99422ee87199ef49350e5d1b2b2a27195cff955ef754`  
-		Last Modified: Sat, 16 Dec 2023 13:33:13 GMT  
-		Size: 479.3 MB (479252767 bytes)  
+	-	`sha256:238fd47af59c8ecd00fa9f655bf762c89364476cfbf5b0faa7ffa435c2317096`  
+		Last Modified: Tue, 23 Jan 2024 20:06:50 GMT  
+		Size: 481.4 MB (481393345 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f403c9e4f7bc41aee4cb231e88bdf96e8eaa33093d2f47b005269fc5b1a82ff`  
-		Last Modified: Sat, 16 Dec 2023 13:32:56 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:686ed2c477a532ee6ff8c3c8db1ef88b1726020e856f066fc3bbf76f557cc590`  
+		Last Modified: Tue, 23 Jan 2024 20:06:34 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
