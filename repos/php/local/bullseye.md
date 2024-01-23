@@ -1,10 +1,10 @@
-# `php:8.3.1-cli-bullseye`
+# `php:8.3.2-cli-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7847d4ad8fc599450a759f48c0b73a57277ac89797710923396ead957a1dc409`
-- Created: `2024-01-11T07:03:58.253807247Z`
-- Virtual Size: ~ 492.78 Mb  
+- Image ID: `sha256:198b52d6dfe6143d3a9668f12c578afbe050437055db3f499601c602010b5513`
+- Created: `2024-01-19T22:57:14.5655586Z`
+- Virtual Size: ~ 492.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.1`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.1.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.1.tar.xz.asc`
-  - `PHP_SHA256=56445b1771b2ba5b7573453f9e8a9451e2d810b1741a352fa05259733b1e9758`
+  - `PHP_VERSION=8.3.2`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.2.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.2.tar.xz.asc`
+  - `PHP_SHA256=4ffa3e44afc9c590e28dc0d2d31fc61f0139f8b335f11880a121b9f9b9f0634e`
 
 ## `dpkg` (`.deb`-based packages)
 
