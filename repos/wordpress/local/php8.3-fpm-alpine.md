@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6fb22628bd559082da8c0678e388335e60c9d54b9dfa8be9337198816a474a06`
+- Image ID: `sha256:575f5a99d1b51fbb8af7d1d4b4e2ec299b10d1810b6e5cbcbddab738a15f5cbc`
 - Created: `2023-12-06T20:31:30Z`
-- Virtual Size: ~ 257.43 Mb  
+- Virtual Size: ~ 263.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.1`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.1.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.1.tar.xz.asc`
-  - `PHP_SHA256=56445b1771b2ba5b7573453f9e8a9451e2d810b1741a352fa05259733b1e9758`
+  - `PHP_VERSION=8.3.2`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.2.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.2.tar.xz.asc`
+  - `PHP_SHA256=4ffa3e44afc9c590e28dc0d2d31fc61f0139f8b335f11880a121b9f9b9f0634e`
 
 ## `apk` (`.apk`-based packages)
 
@@ -197,16 +197,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.22.1-r0 description:
+c-ares-1.24.0-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.22.1-r0 webpage:
+c-ares-1.24.0-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.22.1-r0 installed size:
-132 KiB
+c-ares-1.24.0-r0 installed size:
+144 KiB
 
-c-ares-1.22.1-r0 license:
+c-ares-1.24.0-r0 license:
 MIT
 
 ```
@@ -401,16 +401,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.1-r0 description:
+gnutls-3.8.3-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.1-r0 webpage:
+gnutls-3.8.3-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.1-r0 installed size:
-1852 KiB
+gnutls-3.8.3-r0 installed size:
+1856 KiB
 
-gnutls-3.8.1-r0 license:
+gnutls-3.8.3-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -452,16 +452,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.1.22-r0 description:
+imagemagick-7.1.1.26-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.1.22-r0 webpage:
+imagemagick-7.1.1.26-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.1.22-r0 installed size:
-4332 KiB
+imagemagick-7.1.1.26-r0 installed size:
+4336 KiB
 
-imagemagick-7.1.1.22-r0 license:
+imagemagick-7.1.1.26-r0 license:
 ImageMagick
 
 ```
@@ -469,16 +469,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.1.22-r0 description:
+imagemagick-jpeg-7.1.1.26-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.1.22-r0 webpage:
+imagemagick-jpeg-7.1.1.26-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.1.22-r0 installed size:
+imagemagick-jpeg-7.1.1.26-r0 installed size:
 84 KiB
 
-imagemagick-jpeg-7.1.1.22-r0 license:
+imagemagick-jpeg-7.1.1.26-r0 license:
 ImageMagick
 
 ```
@@ -486,16 +486,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.1.22-r0 description:
+imagemagick-libs-7.1.1.26-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.1.22-r0 webpage:
+imagemagick-libs-7.1.1.26-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.1.22-r0 installed size:
-4152 KiB
+imagemagick-libs-7.1.1.26-r0 installed size:
+4168 KiB
 
-imagemagick-libs-7.1.1.22-r0 license:
+imagemagick-libs-7.1.1.26-r0 license:
 ImageMagick
 
 ```
@@ -503,16 +503,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.1.22-r0 description:
+imagemagick-pdf-7.1.1.26-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.1.22-r0 webpage:
+imagemagick-pdf-7.1.1.26-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.1.22-r0 installed size:
+imagemagick-pdf-7.1.1.26-r0 installed size:
 156 KiB
 
-imagemagick-pdf-7.1.1.22-r0 license:
+imagemagick-pdf-7.1.1.26-r0 license:
 ImageMagick
 
 ```
@@ -520,16 +520,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.1.22-r0 description:
+imagemagick-tiff-7.1.1.26-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.1.22-r0 webpage:
+imagemagick-tiff-7.1.1.26-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.1.22-r0 installed size:
+imagemagick-tiff-7.1.1.26-r0 installed size:
 144 KiB
 
-imagemagick-tiff-7.1.1.22-r0 license:
+imagemagick-tiff-7.1.1.26-r0 license:
 ImageMagick
 
 ```
@@ -537,16 +537,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.1.22-r0 description:
+imagemagick-webp-7.1.1.26-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.1.22-r0 webpage:
+imagemagick-webp-7.1.1.26-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.1.22-r0 installed size:
+imagemagick-webp-7.1.1.26-r0 installed size:
 56 KiB
 
-imagemagick-webp-7.1.1.22-r0 license:
+imagemagick-webp-7.1.1.26-r0 license:
 ImageMagick
 
 ```
@@ -656,16 +656,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r2 description:
+libcrypto3-3.1.4-r4 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r2 webpage:
+libcrypto3-3.1.4-r4 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r2 installed size:
+libcrypto3-3.1.4-r4 installed size:
 4500 KiB
 
-libcrypto3-3.1.4-r2 license:
+libcrypto3-3.1.4-r4 license:
 Apache-2.0
 
 ```
@@ -911,16 +911,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r2 description:
+libssl3-3.1.4-r4 description:
 SSL shared libraries
 
-libssl3-3.1.4-r2 webpage:
+libssl3-3.1.4-r4 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r2 installed size:
+libssl3-3.1.4-r4 installed size:
 548 KiB
 
-libssl3-3.1.4-r2 license:
+libssl3-3.1.4-r4 license:
 Apache-2.0
 
 ```
@@ -1251,16 +1251,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r2 description:
+openssl-3.1.4-r4 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r2 webpage:
+openssl-3.1.4-r4 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r2 installed size:
+openssl-3.1.4-r4 installed size:
 732 KiB
 
-openssl-3.1.4-r2 license:
+openssl-3.1.4-r4 license:
 Apache-2.0
 
 ```
