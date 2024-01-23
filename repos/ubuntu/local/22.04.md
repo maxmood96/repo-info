@@ -526,15 +526,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.7.3-4ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.3.dsc' gnutls28_3.7.3-4ubuntu1.3.dsc 3572 SHA512:7c1ba5548662544f4e165fc6f1203e256ebdc54a305747e3ae0ee4b607036276ef9bc76a3d7279c52c815396f835c5b63a3e7b32a5e650239b60d3ad8aa60070
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz' gnutls28_3.7.3.orig.tar.xz 6119292 SHA512:3ace744affe23e284342658d6d2d2de49dd50065489cbc8be18fc7d38187253e5268ca54027ce5cd517056c249ac039a7481e4548cec04325de37ae85617d077
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz.asc' gnutls28_3.7.3.orig.tar.xz.asc 833 SHA512:cd0d30298377deddf20a835863b71e3f119588061f659906ad2684004758943179531508b1c77c730e930e2131148095e60ad9be365353cce772472d5f5345df
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.3.debian.tar.xz' gnutls28_3.7.3-4ubuntu1.3.debian.tar.xz 77476 SHA512:106d83934c67478db78c92c23a463e5954e0e64b2c0b938f6ec000e50df58080da1e09fbd909e28fe962572b8ff0b3461d4cb7eb15a5e442f44017ee1e060589
-```
 
 ### `dpkg` source package: `grep=3.7-1build1`
 
@@ -1401,14 +1395,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.11
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.11.dsc' systemd_249.11-0ubuntu3.11.dsc 5932 SHA512:ea0c4eb76d8cfabf7744cdd8219a9ec7830d5a5c163bff7e07cf9668df62f5fecd4c9bf63bdf73b10c318c389c20e8ef079ed67ad0047a94c4e00ed4709d5c7b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.11.debian.tar.xz' systemd_249.11-0ubuntu3.11.debian.tar.xz 251744 SHA512:86cb4ad3ba3869c88cc7ce1e6c40f5dcd593ebdec61e2eeae9a42ebd4bbda5b3da84c2d9551c924ae54244e00049f9e975e36b5e8d0fc0c8a795558f338b0889
-```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
