@@ -1,13 +1,13 @@
-# `perl:5.39.6-threaded-bullseye`
+# `perl:5.39.7-threaded-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f66047228c1fb73156a2edd1d18b3a6f482b1bb4877384eb5d3a704e7b5d15c0`
-- Created: `2023-12-31T10:01:19Z`
-- Virtual Size: ~ 896.54 Mb  
+- Image ID: `sha256:fc42aaa177bbd390189f3a1ea9cb532fda4ade9c52c9f5ae5cd09f7a648317ab`
+- Created: `2024-01-20T20:51:34Z`
+- Virtual Size: ~ 896.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["perl5.39.6","-de0"]`
+- Command: `["perl5.39.7","-de0"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 
