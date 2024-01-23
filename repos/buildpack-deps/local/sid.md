@@ -1861,20 +1861,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 - `UFL-1.0`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=8.0.1-1
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_8.0.1-1.dsc' harfbuzz_8.0.1-1.dsc 2542 SHA256:19ed7817867ceff5a76891a6e93635f6228a38b898d95b57a9437460812b0a1c
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_8.0.1.orig.tar.xz' harfbuzz_8.0.1.orig.tar.xz 18792332 SHA256:c1ce780acd385569f25b9a29603d1d5bc71e6940e55bfdd4f7266fad50e42620
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_8.0.1-1.debian.tar.xz' harfbuzz_8.0.1-1.debian.tar.xz 19644 SHA256:2f1d87b00396e8524a4ec2fb4a55cc776b0703788a18e77dffb098da1c2071c6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/8.0.1-1/
 
-- https://sources.debian.net/src/harfbuzz/8.0.1-1/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/8.0.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/8.0.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hicolor-icon-theme=0.17-2`
 
@@ -5435,21 +5428,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.44.2-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.44.2-1.dsc' sqlite3_3.44.2-1.dsc 2486 SHA256:bf80efca3142bb2058d92100094d309a437ae28d6c99025bb25e86bb8e72c948
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.44.2.orig-www.tar.xz' sqlite3_3.44.2.orig-www.tar.xz 5671432 SHA256:43817a15a2bc058ebe727665537a4888eb29fb64b80b47d409798f077a705cd5
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.44.2.orig.tar.xz' sqlite3_3.44.2.orig.tar.xz 8214772 SHA256:c3862cb539c493a23021ff903415e90e9864b8d007c1b8a6cb708afb95afe7cc
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.44.2-1.debian.tar.xz' sqlite3_3.44.2-1.debian.tar.xz 30200 SHA256:48f4a51869f499704fff768b4d3a9ea2e3b46fca9d2f649100d4d0cbcd453daf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.44.2-1/
 
-- https://sources.debian.net/src/sqlite3/3.44.2-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.44.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.44.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `subversion=1.14.3-1`
 
@@ -5693,19 +5678,13 @@ Licenses: (parsed from: `/usr/share/doc/usr-is-merged/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris usrmerge=38
-'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_38.dsc' usrmerge_38.dsc 981 SHA256:c23401bc61750179515ec2bb12303e42f6f839542c5d413ce5db7192ff1527bc
-'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_38.tar.xz' usrmerge_38.tar.xz 14804 SHA256:bc1a7973777560f5be67763abd9c1c1ff239d423f72e9209ad755f94e921d4e0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/usrmerge/38/
 
-- https://sources.debian.net/src/usrmerge/38/ (for browsing the source)
-- https://sources.debian.net/src/usrmerge/38/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/usrmerge/38/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `utf8proc=2.9.0-1`
 

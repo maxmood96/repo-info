@@ -1677,21 +1677,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.2-1
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.2-1.dsc' gnutls28_3.8.2-1.dsc 3231 SHA256:765e1d8ba4a3efd28bca17abdc9f4d9f1fce495cee434bf4cfd5c60bdef241b5
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.2.orig.tar.xz' gnutls28_3.8.2.orig.tar.xz 6456540 SHA256:e765e5016ffa9b9dd243e363a0460d577074444ee2491267db2e96c9c2adef77
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.2.orig.tar.xz.asc' gnutls28_3.8.2.orig.tar.xz.asc 996 SHA256:65812528b607e483920b3398ec9a89acad2f14a33df6e814c5ff1e205b029f00
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.2-1.debian.tar.xz' gnutls28_3.8.2-1.debian.tar.xz 76348 SHA256:2202fecffd3038e2932c41d61226c494d737b7b3bf825a4f3b5fedca88589e6a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.2-1/
 
-- https://sources.debian.net/src/gnutls28/3.8.2-1/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gobject-introspection=1.78.1-6`
 
@@ -3687,20 +3679,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcrypt=1:4.4.36-2
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.36-2.dsc' libxcrypt_4.4.36-2.dsc 1563 SHA256:7a1c78fcd9029f5828f22d5697ec02aacaec276c23ab06af82f13e1a77026ea2
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.36.orig.tar.xz' libxcrypt_4.4.36.orig.tar.xz 392732 SHA256:7b7abbc89f13f5194211aa6861ed954e4fa3a210a4cb64f7e13dc8cf413e7f2a
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.36-2.debian.tar.xz' libxcrypt_4.4.36-2.debian.tar.xz 8284 SHA256:c91f86abf83fc71f69fe80d38f92354042436b6eca8a3ef666ffc86e319dd267
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxcrypt/1:4.4.36-2/
 
-- https://sources.debian.net/src/libxcrypt/1:4.4.36-2/ (for browsing the source)
-- https://sources.debian.net/src/libxcrypt/1:4.4.36-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxcrypt/1:4.4.36-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxdmcp=1:1.1.2-3`
 
@@ -4562,21 +4547,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.6p1-2
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.6p1-2.dsc' openssh_9.6p1-2.dsc 3344 SHA256:e0876a2b7ff250f4d9245365a49333619fc417692bf1da879778c271b5c56a08
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA256:910211c07255a8c5ad654391b40ee59800710dd8119dd5362de09385aa7a777c
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA256:9b1e931cbc811f02e91f7eacd55f8211cc45dade11975462f4b0dcdad29927aa
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.6p1-2.debian.tar.xz' openssh_9.6p1-2.debian.tar.xz 188296 SHA256:733a36ddedd4a7d29d92e735a27d3f3865a5ba40c911361c6a20a99392ee06a3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:9.6p1-2/
 
-- https://sources.debian.net/src/openssh/1:9.6p1-2/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:9.6p1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:9.6p1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.1.4-2`
 
@@ -4711,20 +4688,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.51.0+ds-3
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.51.0%2bds-3.dsc' pango1.0_1.51.0+ds-3.dsc 3469 SHA256:71df7252c894a467f82a0192eb0d8cbb7a965c1459e945fc81b80ea9e03f01a4
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.51.0%2bds.orig.tar.xz' pango1.0_1.51.0+ds.orig.tar.xz 1731104 SHA256:df51bb6819e91fda4f6c8ba8d2bd51e437e6f7daa86419d69a15e33a99002170
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.51.0%2bds-3.debian.tar.xz' pango1.0_1.51.0+ds-3.debian.tar.xz 41176 SHA256:ac6cb54c5b31eb5790ff7b9581ff16da0d3d0d7b621b1153be1a65b750c20229
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.51.0+ds-3/
 
-- https://sources.debian.net/src/pango1.0/1.51.0+ds-3/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.51.0+ds-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.51.0+ds-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-7`
 

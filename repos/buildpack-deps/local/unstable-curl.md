@@ -2040,21 +2040,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.36.0-10
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0-10.dsc' perl_5.36.0-10.dsc 2923 SHA256:ab00058c9cc6a2fbb1e716f24257eab332422f5f575a0b0e0452db9f14d40975
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0.orig-regen-configure.tar.xz' perl_5.36.0.orig-regen-configure.tar.xz 417784 SHA256:10ac353bc5a933403afe60ed1817e7a456f99bdbcaf80c1cdb0eb3a08ea56d4e
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0.orig.tar.xz' perl_5.36.0.orig.tar.xz 13051500 SHA256:0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0-10.debian.tar.xz' perl_5.36.0-10.debian.tar.xz 172148 SHA256:b14fb2e71fbc6a0310c6f5a4ec2a1fe88de4a6954532d45ae94578d51c56870b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.36.0-10/
 
-- https://sources.debian.net/src/perl/5.36.0-10/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.36.0-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.36.0-10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.2.1-3`
 
@@ -2245,21 +2237,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.44.2-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.44.2-1.dsc' sqlite3_3.44.2-1.dsc 2486 SHA256:bf80efca3142bb2058d92100094d309a437ae28d6c99025bb25e86bb8e72c948
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.44.2.orig-www.tar.xz' sqlite3_3.44.2.orig-www.tar.xz 5671432 SHA256:43817a15a2bc058ebe727665537a4888eb29fb64b80b47d409798f077a705cd5
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.44.2.orig.tar.xz' sqlite3_3.44.2.orig.tar.xz 8214772 SHA256:c3862cb539c493a23021ff903415e90e9864b8d007c1b8a6cb708afb95afe7cc
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.44.2-1.debian.tar.xz' sqlite3_3.44.2-1.debian.tar.xz 30200 SHA256:48f4a51869f499704fff768b4d3a9ea2e3b46fca9d2f649100d4d0cbcd453daf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.44.2-1/
 
-- https://sources.debian.net/src/sqlite3/3.44.2-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.44.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.44.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=255.2-4`
 
@@ -2388,19 +2372,13 @@ Licenses: (parsed from: `/usr/share/doc/usr-is-merged/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris usrmerge=38
-'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_38.dsc' usrmerge_38.dsc 981 SHA256:c23401bc61750179515ec2bb12303e42f6f839542c5d413ce5db7192ff1527bc
-'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_38.tar.xz' usrmerge_38.tar.xz 14804 SHA256:bc1a7973777560f5be67763abd9c1c1ff239d423f72e9209ad755f94e921d4e0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/usrmerge/38/
 
-- https://sources.debian.net/src/usrmerge/38/ (for browsing the source)
-- https://sources.debian.net/src/usrmerge/38/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/usrmerge/38/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.39.3-6`
 
