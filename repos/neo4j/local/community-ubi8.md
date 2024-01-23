@@ -1,10 +1,10 @@
-# `neo4j:5.15.0-community-ubi8`
+# `neo4j:5.16.0-community-ubi8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b25d10559bd3b0b69abd5f5df711610d7494cf7ef6b4f17b1a1d124e6a862619`
-- Created: `2024-01-13T01:43:07.76679089Z`
-- Virtual Size: ~ 645.75 Mb  
+- Image ID: `sha256:2997e2fd0b59f0d3851a3905d3a77b89777a21296f402a9135377f0d2f1515f8`
+- Created: `2024-01-22T19:49:02.027721808Z`
+- Virtual Size: ~ 646.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -13,13 +13,13 @@
   - `PATH=/var/lib/neo4j/bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
   - `JAVA_HOME=/usr`
-  - `NEO4J_SHA256=0090ee5fd8ca5718ced107d5e7a7803919f55b970c3e7acad83bf88292a2361f`
-  - `NEO4J_TARBALL=neo4j-community-5.15.0-unix.tar.gz`
+  - `NEO4J_SHA256=5de9518ceef86d3e87aeb513cb996f6f3f4dce11db5bb1d2308cab327deb9890`
+  - `NEO4J_TARBALL=neo4j-community-5.16.0-unix.tar.gz`
   - `NEO4J_EDITION=community`
   - `NEO4J_HOME=/var/lib/neo4j`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-01-03T02:09:22`
+  - `build-date=2024-01-16T18:44:24`
   - `com.redhat.component=ubi8-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -31,9 +31,9 @@
   - `io.openshift.tags=minimal rhel8`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi8-minimal`
-  - `release=1108`
+  - `release=1108.1705420507`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 8.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8-minimal/images/8.9-1108`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8-minimal/images/8.9-1108.1705420507`
   - `vcs-ref=7e7670a8c8c9a3be83beaa2787f3703b404d4a1d`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -539,13 +539,13 @@ Licenses (from `rpm --query`): JasPer
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `java-17-openjdk-17.0.9.0.9-2.el8.x86_64`
+### `rpm` package: `java-17-openjdk-17.0.10.0.7-2.el8.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `java-17-openjdk-headless-17.0.9.0.9-2.el8.x86_64`
+### `rpm` package: `java-17-openjdk-headless-17.0.10.0.7-2.el8.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA
 
@@ -1289,7 +1289,7 @@ Licenses (from `rpm --query`): ISC
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `platform-python-3.6.8-56.el8_9.2.x86_64`
+### `rpm` package: `platform-python-3.6.8-56.el8_9.3.x86_64`
 
 Licenses (from `rpm --query`): Python
 
@@ -1355,7 +1355,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-libs-3.6.8-56.el8_9.2.x86_64`
+### `rpm` package: `python3-libs-3.6.8-56.el8_9.3.x86_64`
 
 Licenses (from `rpm --query`): Python
 
@@ -1451,7 +1451,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `sqlite-libs-3.26.0-18.el8_8.x86_64`
+### `rpm` package: `sqlite-libs-3.26.0-19.el8_9.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
@@ -1493,7 +1493,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `tzdata-2023c-1.el8.noarch`
+### `rpm` package: `tzdata-2023d-1.el8.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
