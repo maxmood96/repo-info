@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:65f3bcaee57504aa6a83593a3c5878b8535af86dee5208ad3bc1bc941a9ab79c`
-- Created: `2023-12-28T04:08:56.541560884Z`
-- Virtual Size: ~ 748.02 Mb  
+- Image ID: `sha256:8b37ad29ea9f138b7234e58a6e3dbd9f2c056c68b453227d8fbf7c21da2c742c`
+- Created: `2024-01-20T02:48:22.785423728Z`
+- Virtual Size: ~ 754.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.14`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.14.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.14.tar.xz.asc`
-  - `PHP_SHA256=763ecd39fcf51c3815af6ef6e43fa9aa0d0bd8e5a615009e5f4780c92705f583`
+  - `PHP_VERSION=8.2.15`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.15.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.15.tar.xz.asc`
+  - `PHP_SHA256=eca5deac02d77d806838275f8a3024b38b35ac0a5d9853dcc71c6cbe3f1f8765`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `NEXTCLOUD_VERSION=26.0.10`
@@ -472,16 +472,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.0-r2 description:
+gnutls-3.8.3-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.0-r2 webpage:
+gnutls-3.8.3-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.0-r2 installed size:
-1848 KiB
+gnutls-3.8.3-r0 installed size:
+1868 KiB
 
-gnutls-3.8.0-r2 license:
+gnutls-3.8.3-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -710,16 +710,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r1 description:
+libcrypto3-3.1.4-r4 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r1 webpage:
+libcrypto3-3.1.4-r4 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r1 installed size:
+libcrypto3-3.1.4-r4 installed size:
 4472 KiB
 
-libcrypto3-3.1.4-r1 license:
+libcrypto3-3.1.4-r4 license:
 Apache-2.0
 
 ```
@@ -744,16 +744,16 @@ curl
 ### `apk` package: `libde265`
 
 ```console
-libde265-1.0.12-r0 description:
+libde265-1.0.15-r0 description:
 Open h.265 video codec implementation
 
-libde265-1.0.12-r0 webpage:
+libde265-1.0.15-r0 webpage:
 https://github.com/strukturag/libde265
 
-libde265-1.0.12-r0 installed size:
+libde265-1.0.15-r0 installed size:
 436 KiB
 
-libde265-1.0.12-r0 license:
+libde265-1.0.15-r0 license:
 LGPL-3.0-or-later
 
 ```
@@ -1135,16 +1135,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r1 description:
+libssl3-3.1.4-r4 description:
 SSL shared libraries
 
-libssl3-3.1.4-r1 webpage:
+libssl3-3.1.4-r4 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r1 installed size:
+libssl3-3.1.4-r4 installed size:
 552 KiB
 
-libssl3-3.1.4-r1 license:
+libssl3-3.1.4-r4 license:
 Apache-2.0
 
 ```
@@ -1526,16 +1526,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r1 description:
+openssl-3.1.4-r4 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r1 webpage:
+openssl-3.1.4-r4 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r1 installed size:
+openssl-3.1.4-r4 installed size:
 752 KiB
 
-openssl-3.1.4-r1 license:
+openssl-3.1.4-r4 license:
 Apache-2.0
 
 ```
@@ -1713,16 +1713,16 @@ GPL-2.0-or-later
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.41.2-r2 description:
+sqlite-libs-3.41.2-r3 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.41.2-r2 webpage:
+sqlite-libs-3.41.2-r3 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.41.2-r2 installed size:
+sqlite-libs-3.41.2-r3 installed size:
 976 KiB
 
-sqlite-libs-3.41.2-r2 license:
+sqlite-libs-3.41.2-r3 license:
 blessing
 
 ```
