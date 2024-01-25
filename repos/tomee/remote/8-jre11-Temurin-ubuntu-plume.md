@@ -1,7 +1,7 @@
 ## `tomee:8-jre11-Temurin-ubuntu-plume`
 
 ```console
-$ docker pull tomee@sha256:bcb22821f3fb17d02a1564466ce7de6b66019a8f5712d2fa6cf6ddb145cd1959
+$ docker pull tomee@sha256:5ddec2d72a27b6dc4d1d8d927830f812ea5c37f80944de0c1f11f33ee605c051
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull tomee@sha256:bcb22821f3fb17d02a1564466ce7de6b66019a8f5712d2fa6cf6d
 ### `tomee:8-jre11-Temurin-ubuntu-plume` - linux; amd64
 
 ```console
-$ docker pull tomee@sha256:df6010a67143356d406fa1350a16f2bd7d1f0b8cbf843d0ca4e9d663210f1b22
+$ docker pull tomee@sha256:d48eaded7af06bdf310f752d81d9342013a73de080bfa96247ee20f94806496a
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.0 MB (173951985 bytes)**  
+-	Total Size: **174.0 MB (173951918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cff8ea0ef31eae8394782a16b917b62a9422844d6e90a3fcf1f89ca2c282d87`
+-	Image ID: `sha256:af5e353e34a732cc6cbc3bb7b807c1315d2b993170c449cfe85ae61e02991abd`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -50,29 +50,29 @@ ENV JAVA_VERSION=jdk-11.0.22+7
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
 # Wed, 24 Jan 2024 20:34:33 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete."
-# Wed, 24 Jan 2024 20:34:33 GMT
-COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Wed, 24 Jan 2024 20:34:34 GMT
+# Thu, 25 Jan 2024 19:32:22 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Thu, 25 Jan 2024 19:32:22 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 25 Jan 2024 01:30:25 GMT
+# Thu, 25 Jan 2024 21:40:33 GMT
 ENV PATH=/usr/local/tomee/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 01:30:26 GMT
+# Thu, 25 Jan 2024 21:40:33 GMT
 RUN mkdir -p /usr/local/tomee ~/.gnupg
-# Thu, 25 Jan 2024 01:30:26 GMT
+# Thu, 25 Jan 2024 21:40:34 GMT
 WORKDIR /usr/local/tomee
-# Thu, 25 Jan 2024 01:30:32 GMT
+# Thu, 25 Jan 2024 21:40:39 GMT
 RUN apt-get update   && apt-get install -y --no-install-recommends gpg dirmngr gpg-agent   && rm -rf /var/lib/apt/lists/*
-# Thu, 25 Jan 2024 01:30:42 GMT
+# Thu, 25 Jan 2024 21:40:50 GMT
 RUN set -xe;   for key in   9056B710F1E332780DE7AF34CBAEBE39A46C4CA1   F067B8140F5DD80E1D3B5D92318242FE9A0B1183   223D3A74B068ECA354DC385CE126833F9CF64915   DBCCD103B8B24F86FFAAB025C8BB472CD297D428   7A2744A8A9AAF063C23EB7868EBE7DBE8D050EEF   B8B301E6105DF628076BD92C5483E55897ABD9B9   FAA603D58B1BA4EDF65896D0ED340E0E6D545F97   A57DAF81C1B69921F4BA8723A8DE0A4DB863A7C1   82D8419BA697F0E7FB85916EE91287822FDB81B1   B7574789F5018690043E6DD9C212662E12F3E1DD   C23A3F6F595EBD0F960270CC997C8F1A5BE6E4C1   678F2D98F1FD9643811639FB622B8F2D043F71D8   BDD0BBEB753192957EFC5F896A62FC8EF17D8FEF   D11DF12CC2CA4894BDE638B967C1227A2678363C   C92604B0DEC5C62CFF5801E73D4683C24EDC64D1   626C542EDA7C113814B77AF09C04914D63645D20   3948829384B269D333CC5B98358807C52B4B0E23   B83D15E72253ED1104EB4FBBDAB472F0E5B8A431   871638A21A7F2C38066471420306A354336B4F0D   ; do     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done
-# Thu, 25 Jan 2024 01:30:42 GMT
+# Thu, 25 Jan 2024 21:40:50 GMT
 ENV TOMEE_VER=8.0.16
-# Thu, 25 Jan 2024 01:31:04 GMT
+# Thu, 25 Jan 2024 21:41:12 GMT
 ENV TOMEE_BUILD=plume
-# Thu, 25 Jan 2024 01:31:13 GMT
+# Thu, 25 Jan 2024 21:41:21 GMT
 RUN set -x   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.asc -o tomee.tar.gz.asc   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.sha512 -o tomee.tar.gz.sha512   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz -o apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && gpg --batch --verify tomee.tar.gz.asc apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && echo `cat tomee.tar.gz.sha512` | sha512sum -c -   && tar -zxf apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && mv apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}/* /usr/local/tomee   && rm apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && rm -Rf apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}   && rm bin/*.bat   && rm bin/*.exe   && rm bin/*.tar.gz*   && rm tomee.tar.gz.asc   && rm tomee.tar.gz*
-# Thu, 25 Jan 2024 01:31:13 GMT
+# Thu, 25 Jan 2024 21:41:21 GMT
 EXPOSE 8080
-# Thu, 25 Jan 2024 01:31:13 GMT
+# Thu, 25 Jan 2024 21:41:21 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -93,25 +93,25 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Wed, 24 Jan 2024 20:44:38 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdda3617a74d125a49b13645110eca8516984fa5f1be65adee2df78af12e550e`  
-		Last Modified: Wed, 24 Jan 2024 20:44:38 GMT  
-		Size: 716.0 B  
+	-	`sha256:ea92f903cf8c48be066cf2d422ba3739fcbdbc02b14d69313f74aaadc495ae76`  
+		Last Modified: Thu, 25 Jan 2024 19:35:15 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e900e4b262eea65085a009befa2c3ce2c4927eea6d40e71f864c4035e6b5e5e3`  
-		Last Modified: Thu, 25 Jan 2024 01:53:53 GMT  
-		Size: 222.0 B  
+	-	`sha256:808e12d4fe301a30dbe7d7fde717a67f7bbee8c112c7ca226e0ee79ef0958ea1`  
+		Last Modified: Thu, 25 Jan 2024 21:58:46 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d397ecdb8ff8abd8976e7ef68231be39190a607c6024e7bd8638bcd9d99bf90c`  
-		Last Modified: Thu, 25 Jan 2024 01:53:53 GMT  
-		Size: 2.2 MB (2196385 bytes)  
+	-	`sha256:2624911fe8adac3ca7a28038eb1d577ef11354290a96e6aa1708d56831624c50`  
+		Last Modified: Thu, 25 Jan 2024 21:58:47 GMT  
+		Size: 2.2 MB (2196305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40727c9393ed62921a4caa6d8e21a257f355ea2828f91a46a9073aa7bc0e5f7a`  
-		Last Modified: Thu, 25 Jan 2024 01:53:53 GMT  
-		Size: 69.3 KB (69286 bytes)  
+	-	`sha256:fb27aad8ee9a083ba5233fc1aaa5e960d77e31f6a5cd0a1901eacd80c587eeae`  
+		Last Modified: Thu, 25 Jan 2024 21:58:46 GMT  
+		Size: 69.3 KB (69318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a3c7c131a3ee87740419b10b7f681462f94df219931a581a0e517fe8d1f8e3a`  
-		Last Modified: Thu, 25 Jan 2024 01:55:47 GMT  
-		Size: 79.1 MB (79110563 bytes)  
+	-	`sha256:9b25a4a60108f67244e1b5d5870a83aefa8522833ebc21c7ac656764d9914027`  
+		Last Modified: Thu, 25 Jan 2024 22:00:48 GMT  
+		Size: 79.1 MB (79110531 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `tomee:8-jre11-Temurin-ubuntu-plume` - linux; arm64 variant v8
