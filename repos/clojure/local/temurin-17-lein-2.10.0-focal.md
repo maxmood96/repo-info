@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f95f78f3674ccdb72d0b42164ab8e459572a8b68643cc366ae25f87d4cc5ed5b`
-- Created: `2023-12-16T15:37:11.271449406Z`
-- Virtual Size: ~ 429.99 Mb  
+- Image ID: `sha256:81154dde711dbe3d7f47f6e684330bc85e5663f24a564a79fac44ac742982234`
+- Created: `2024-01-24T22:22:40.170710531Z`
+- Virtual Size: ~ 430.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.9+9`
+  - `JAVA_VERSION=jdk-17.0.10+7`
   - `LEIN_VERSION=2.10.0`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
@@ -733,15 +733,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.6.13-2ubuntu1.9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.9.dsc' gnutls28_3.6.13-2ubuntu1.9.dsc 3594 SHA512:c4243ecaef3a417f72e2ab730899311b5d89bcc9adf46e0277131b572b6f72d1ba0c5d305e2d7dacceea0018c4f3049a76b58300f0faea3f617815d3abbd93e0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz' gnutls28_3.6.13.orig.tar.xz 5958956 SHA512:23581952cb72c9a34f378c002bb62413d5a1243b74b48ad8dc49eaea4020d33c550f8dc1dd374cf7fbfa4187b0ca1c5698c8a0430398268a8b8a863f8633305c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz.asc' gnutls28_3.6.13.orig.tar.xz.asc 667 SHA512:b343a8ace6a5c81c0c44b2cb65d8e83dfe5963c9bab04d9131fa8fd03cdf0c6f990d720af8767084e01bf5f7a7dbd0f048aefe68c3b6f1dc1ea1899d567a72f7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.9.debian.tar.xz' gnutls28_3.6.13-2ubuntu1.9.debian.tar.xz 75776 SHA512:2799a5008a1a57166ead6462b9b32966aa67f24c495bc738d8f9ae009e4d318499fc5879b85087c0ae311e66eb730e6f8de002060ec2721ab9467504d1c566db
-```
 
 ### `dpkg` source package: `grep=3.4-1`
 
@@ -1711,14 +1705,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.22
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.22.dsc' systemd_245.4-4ubuntu3.22.dsc 5262 SHA512:3e6cca4e937752928cced4841732e52e047d9064fdec9fb8ed2664568d8a1458ab9f542215be4de049c74a1cd145cd4ac13f51ce9b3ec9580a5047fa1b2b8636
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.22.debian.tar.xz' systemd_245.4-4ubuntu3.22.debian.tar.xz 289380 SHA512:25e2b13f146a56f8623f40ac04b141e03f79a120347128dee639ed836ed0051cdde5336d64d78ef1e360fb9b5ca35576f550d1038abc6cd99f113f28bc5f93d7
-```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 
