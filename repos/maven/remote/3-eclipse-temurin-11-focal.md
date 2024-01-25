@@ -1,7 +1,7 @@
 ## `maven:3-eclipse-temurin-11-focal`
 
 ```console
-$ docker pull maven@sha256:e3e9247991a0da8ebb6c813db8577a42dcced7fb7d01bc424c557a4f63af1270
+$ docker pull maven@sha256:7f8d1c991d1eafa62ea6cd863c500bfd5511f1afa8208baedbe40172a880e33f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -239,13 +239,13 @@ CMD ["mvn"]
 ### `maven:3-eclipse-temurin-11-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:60294b2f406bb5ab2c1ac6991454afe8dd5d647c28e4cd917f6f1a7b10efea48
+$ docker pull maven@sha256:f8f90e51a0ca7954319d3207a9b4765fce840b9850bb97a9ee33ef39f068e023
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.6 MB (223642630 bytes)**  
+-	Total Size: **223.7 MB (223655693 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:746487ec96d7839c7083ce4581be9fb62866eca93c04cbc3544b7fb8c2472f1b`
+-	Image ID: `sha256:49177e3d559e5e95fbbdf6aeca49ee7adb4e0d5a843071f6cd874a455e339115`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -270,17 +270,17 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Sat, 16 Dec 2023 10:02:15 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/*
-# Sat, 16 Dec 2023 10:03:07 GMT
-ENV JAVA_VERSION=jdk-11.0.21+9
-# Sat, 16 Dec 2023 10:03:14 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='8c3146035b99c55ab26a2982f4b9abd2bf600582361cf9c732539f713d271faf';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.21%2B9/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.21_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='60ea98daa09834fdd3162ca91ddc8d92a155ab3121204f6f643176ee0c2d0d5e';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.21%2B9/OpenJDK11U-jdk_x64_linux_hotspot_11.0.21_9.tar.gz';          ;;        armhf|arm)          ESUM='a64b005b84b173e294078fec34660ed3429d8c60726a5fb5c140e13b9e0c79fa';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.21%2B9/OpenJDK11U-jdk_arm_linux_hotspot_11.0.21_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='262ff98d6d88a7c7cc522cb4ec4129491a0eb04f5b17dcca0da57cfcdcf3830d';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.21%2B9/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.21_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='bc67f79fb82c4131d9dcea32649c540a16aa380a9726306b9a67c5ec9690c492';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.21%2B9/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Sat, 16 Dec 2023 10:03:17 GMT
+# Wed, 24 Jan 2024 20:40:56 GMT
+ENV JAVA_VERSION=jdk-11.0.22+7
+# Wed, 24 Jan 2024 20:41:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ca1dc604352e9b3906b8955a700745a0a650ed59947f7f354af597871876a716';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='25cf602cac350ef36067560a4e8042919f3be973d419eac4d839e2e0000b2cc8';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='7d0e71d8aea6bba27dfbb9ad7434066896c3085327e58776ca89d5e262040bc5';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='95a1c215e434c302e43c8039f322b954ee539ca22412cd09b4dd77523aaa861a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='137becfcfa6d288ba8c07ba23bf966c87bedfe7ee5cb3342da833407e13e3cfa';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 24 Jan 2024 20:41:06 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Sat, 16 Dec 2023 10:03:18 GMT
-COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Sat, 16 Dec 2023 10:03:18 GMT
+# Wed, 24 Jan 2024 20:41:06 GMT
+COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
+# Wed, 24 Jan 2024 20:41:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 16 Dec 2023 10:03:18 GMT
+# Wed, 24 Jan 2024 20:41:06 GMT
 CMD ["jshell"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y ca-certificates curl git --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -315,37 +315,37 @@ CMD ["mvn"]
 		Last Modified: Sat, 16 Dec 2023 10:06:15 GMT  
 		Size: 16.8 MB (16769031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ec101cb87055a4e69eafe182ebe52a40006068766dafeab8e31ef1266c3518f`  
-		Last Modified: Sat, 16 Dec 2023 10:07:23 GMT  
-		Size: 142.0 MB (142002495 bytes)  
+	-	`sha256:6fd059dfca2a7416a6c7e031b768048413ad8c580c7da5433519eca71682e995`  
+		Last Modified: Wed, 24 Jan 2024 20:48:29 GMT  
+		Size: 142.0 MB (142015524 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a048afefca11fb4aabac7b1dde622341cead9bdce21242bf3bf1463b46c5b11f`  
-		Last Modified: Sat, 16 Dec 2023 10:07:15 GMT  
+	-	`sha256:477afe6071a9a81748fdcd07700041546aa5051ebe2c5454c474c84e2dc15005`  
+		Last Modified: Wed, 24 Jan 2024 20:48:20 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f9e16c5e6bea52f23eab0bcd632d6f6535213600f0d565a47b5e829bc6e7622`  
-		Last Modified: Sat, 16 Dec 2023 10:07:15 GMT  
-		Size: 734.0 B  
+	-	`sha256:db76f3f67db6aceefb480954aa8b525914470a790fc708290aa6966722f800aa`  
+		Last Modified: Wed, 24 Jan 2024 20:48:20 GMT  
+		Size: 716.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0011517d1b106f228752f404edb3d0eb8b1009bf3f0b8193558c37bedbdca30`  
-		Last Modified: Sat, 16 Dec 2023 15:48:01 GMT  
-		Size: 28.2 MB (28185743 bytes)  
+	-	`sha256:0b2b29808822383e278ac9ca028c4185bb88dd8bb3baaa85e96a74ce008e14b8`  
+		Last Modified: Thu, 25 Jan 2024 01:52:15 GMT  
+		Size: 28.2 MB (28185796 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8f6d037e270ae7c31848e04e5f924f5617d6464d6ac1df43d9fb0f9c0ede6a6`  
-		Last Modified: Sat, 16 Dec 2023 15:47:58 GMT  
-		Size: 9.5 MB (9479936 bytes)  
+	-	`sha256:93bb35a5af02376c3440bfaac79157a67a19f196d04618f8a6b5e4d330d9a920`  
+		Last Modified: Thu, 25 Jan 2024 01:52:12 GMT  
+		Size: 9.5 MB (9479935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a79173810ebd401da27c56f23e3877809f1197a665e9ddad59d625cdb0bd30e`  
-		Last Modified: Sat, 16 Dec 2023 15:47:57 GMT  
-		Size: 859.0 B  
+	-	`sha256:b6ec5b73164b36fb5f53e05cc4258de176ce27fa9effc18e6a24df658f2fd539`  
+		Last Modified: Thu, 25 Jan 2024 01:52:11 GMT  
+		Size: 860.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0989c7fa66a8cfe18fe7096f924eaacdc602c392a63b5d390eed0bdae74a0256`  
-		Last Modified: Sat, 16 Dec 2023 15:47:57 GMT  
-		Size: 359.0 B  
+	-	`sha256:d98b9f23859bba91591c5d52554e6bf64ace0f96f62b760b91501a9e8811382e`  
+		Last Modified: Thu, 25 Jan 2024 01:52:11 GMT  
+		Size: 356.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9d00129e5a5efa7351afd660fa3a48057584ceaef6439648e64d3775f5c10d4`  
-		Last Modified: Sat, 16 Dec 2023 15:47:57 GMT  
-		Size: 154.0 B  
+	-	`sha256:dcfa276475ea16f4f0fc9eb2409cdfce1d3a1c748827226b790f1a74f272067d`  
+		Last Modified: Thu, 25 Jan 2024 01:52:11 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-eclipse-temurin-11-focal` - linux; ppc64le
