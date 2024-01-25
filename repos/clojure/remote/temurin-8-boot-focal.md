@@ -1,7 +1,7 @@
 ## `clojure:temurin-8-boot-focal`
 
 ```console
-$ docker pull clojure@sha256:0ec73245ff2983bac43ab0071faf68108dc41e5f18c890c26545d8c99b574961
+$ docker pull clojure@sha256:dd890ea07521efed877b267611d6a5cef31b10f77361995fb780f1e248dc22aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull clojure@sha256:0ec73245ff2983bac43ab0071faf68108dc41e5f18c890c2654
 ### `clojure:temurin-8-boot-focal` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:265ca3a0cb26fac56bb4be9f6add407e7129ecfe5cf9b225167c51d4ade66f96
+$ docker pull clojure@sha256:1c48a15a31a48939eb074bbec012db26f788861215d3189a0065f8c1a10a278c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.3 MB (208267943 bytes)**  
+-	Total Size: **208.3 MB (208267782 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:319f2447d8533764b80aa8490db6bb3b7fc187e1a2bb624371fe9264f53ef63d`
+-	Image ID: `sha256:64423a434a253c548546df5d257f56e3964927670a36e9a1770663cc84573fb7`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["boot","repl"]`
 
@@ -50,25 +50,25 @@ ENV JAVA_VERSION=jdk8u402-b06
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='241a72d6f0051de30c71e7ade95b34cd85a249c8e5925bcc7a95872bee81fd84';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u402b06.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='fcfd08abe39f18e719e391f2fc37b8ac1053075426d10efac4cbf8969e7aa55e';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u402b06.tar.gz';          ;;        armhf|arm)          ESUM='271f28c7b3592b201b7434292c21d923f520af8ff1c090b6849cb946e34a6bdb';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u402b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='64bc05cdffe827c84000177dca2eb4ff0a8ff0021889bb75abff3639d4f51838';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;
 # Wed, 24 Jan 2024 20:31:23 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete."
-# Wed, 24 Jan 2024 20:31:23 GMT
-COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Wed, 24 Jan 2024 20:31:23 GMT
+# Thu, 25 Jan 2024 19:31:44 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Thu, 25 Jan 2024 19:31:44 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 24 Jan 2024 22:02:05 GMT
+# Thu, 25 Jan 2024 22:15:55 GMT
 ENV BOOT_VERSION=2.8.3
-# Wed, 24 Jan 2024 22:02:05 GMT
+# Thu, 25 Jan 2024 22:15:55 GMT
 ENV BOOT_INSTALL=/usr/local/bin/
-# Wed, 24 Jan 2024 22:02:05 GMT
+# Thu, 25 Jan 2024 22:15:55 GMT
 WORKDIR /tmp
-# Wed, 24 Jan 2024 22:02:16 GMT
+# Thu, 25 Jan 2024 22:16:33 GMT
 RUN apt-get update && apt-get install -y wget && rm -rf /var/lib/apt/lists/* && mkdir -p $BOOT_INSTALL && wget -q https://github.com/boot-clj/boot-bin/releases/download/latest/boot.sh && echo "Comparing installer checksum..." && sha256sum boot.sh && echo "0ccd697f2027e7e1cd3be3d62721057cbc841585740d0aaa9fbb485d7b1f17c3 *boot.sh" | sha256sum -c - && mv boot.sh $BOOT_INSTALL/boot && chmod 0755 $BOOT_INSTALL/boot && apt-get purge -y --auto-remove wget
-# Wed, 24 Jan 2024 22:02:17 GMT
+# Thu, 25 Jan 2024 22:16:33 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Wed, 24 Jan 2024 22:02:17 GMT
+# Thu, 25 Jan 2024 22:16:33 GMT
 ENV BOOT_AS_ROOT=yes
-# Wed, 24 Jan 2024 22:02:38 GMT
+# Thu, 25 Jan 2024 22:16:52 GMT
 RUN boot
-# Wed, 24 Jan 2024 22:02:38 GMT
+# Thu, 25 Jan 2024 22:16:52 GMT
 CMD ["boot" "repl"]
 ```
 
@@ -89,30 +89,30 @@ CMD ["boot" "repl"]
 		Last Modified: Wed, 24 Jan 2024 20:40:05 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccd9645bb7a93d0f13b1e0a58c53fdb45b386b5912f85edff5958edc6347a6ae`  
-		Last Modified: Wed, 24 Jan 2024 20:40:05 GMT  
-		Size: 717.0 B  
+	-	`sha256:a456afd5bd8db6d9456e209a6435ae1d76d1ae586efb50257dd29b8680f96d1e`  
+		Last Modified: Thu, 25 Jan 2024 19:34:12 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b304246e4bfd62ab6cf00ee284961ff10e103731587df94f18a3bc0d1884d912`  
-		Last Modified: Wed, 24 Jan 2024 22:32:47 GMT  
-		Size: 339.1 KB (339128 bytes)  
+	-	`sha256:8e617d736f8b9da2e13e954bfb0caa24810a5607a3a20c7287ac782e570d6602`  
+		Last Modified: Thu, 25 Jan 2024 22:29:43 GMT  
+		Size: 339.1 KB (339118 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:73a457a1579d65bee147bdc15b6040ffafb0e48cf8051f69450ede00cb197259`  
-		Last Modified: Wed, 24 Jan 2024 22:32:50 GMT  
-		Size: 58.8 MB (58820474 bytes)  
+	-	`sha256:4eb7d953513a02bcdf709351a52a67ad5061a3e29a2519423617b2deb42a0957`  
+		Last Modified: Thu, 25 Jan 2024 22:29:46 GMT  
+		Size: 58.8 MB (58820306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:temurin-8-boot-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:d9f98ab0e3c12a1516f4073b844386be2b0e7e5738394e7ed3c004a4be5aea50
+$ docker pull clojure@sha256:dfdb10b2462ef84a6bf6091953df411dd101e1075a80731ede32f4435a5c63f1
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.8 MB (205839434 bytes)**  
+-	Total Size: **205.8 MB (205840012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a481a8a87dfffa328712588da53791ed1031aaeae93bdcebc6b7b1509c6e52da`
+-	Image ID: `sha256:5aa9b5bfa6d3b4f5d738aba3c892c0bd5db4b94e60624da40e3c92380675bfd0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["boot","repl"]`
 
@@ -143,25 +143,25 @@ ENV JAVA_VERSION=jdk8u402-b06
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='241a72d6f0051de30c71e7ade95b34cd85a249c8e5925bcc7a95872bee81fd84';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u402b06.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='fcfd08abe39f18e719e391f2fc37b8ac1053075426d10efac4cbf8969e7aa55e';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u402b06.tar.gz';          ;;        armhf|arm)          ESUM='271f28c7b3592b201b7434292c21d923f520af8ff1c090b6849cb946e34a6bdb';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u402b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='64bc05cdffe827c84000177dca2eb4ff0a8ff0021889bb75abff3639d4f51838';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;
 # Wed, 24 Jan 2024 20:39:40 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete."
-# Wed, 24 Jan 2024 20:39:40 GMT
-COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Wed, 24 Jan 2024 20:39:40 GMT
+# Thu, 25 Jan 2024 19:39:33 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Thu, 25 Jan 2024 19:39:33 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 24 Jan 2024 22:08:37 GMT
+# Thu, 25 Jan 2024 22:02:53 GMT
 ENV BOOT_VERSION=2.8.3
-# Wed, 24 Jan 2024 22:08:37 GMT
+# Thu, 25 Jan 2024 22:02:53 GMT
 ENV BOOT_INSTALL=/usr/local/bin/
-# Wed, 24 Jan 2024 22:08:37 GMT
+# Thu, 25 Jan 2024 22:02:53 GMT
 WORKDIR /tmp
-# Wed, 24 Jan 2024 22:08:49 GMT
+# Thu, 25 Jan 2024 22:03:01 GMT
 RUN apt-get update && apt-get install -y wget && rm -rf /var/lib/apt/lists/* && mkdir -p $BOOT_INSTALL && wget -q https://github.com/boot-clj/boot-bin/releases/download/latest/boot.sh && echo "Comparing installer checksum..." && sha256sum boot.sh && echo "0ccd697f2027e7e1cd3be3d62721057cbc841585740d0aaa9fbb485d7b1f17c3 *boot.sh" | sha256sum -c - && mv boot.sh $BOOT_INSTALL/boot && chmod 0755 $BOOT_INSTALL/boot && apt-get purge -y --auto-remove wget
-# Wed, 24 Jan 2024 22:08:49 GMT
+# Thu, 25 Jan 2024 22:03:01 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Wed, 24 Jan 2024 22:08:49 GMT
+# Thu, 25 Jan 2024 22:03:01 GMT
 ENV BOOT_AS_ROOT=yes
-# Wed, 24 Jan 2024 22:09:06 GMT
+# Thu, 25 Jan 2024 22:03:39 GMT
 RUN boot
-# Wed, 24 Jan 2024 22:09:06 GMT
+# Thu, 25 Jan 2024 22:03:39 GMT
 CMD ["boot" "repl"]
 ```
 
@@ -182,15 +182,15 @@ CMD ["boot" "repl"]
 		Last Modified: Wed, 24 Jan 2024 20:46:11 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65196e4828959df87ac3ffc3f276f8818acb65a48cc8e24bb4e9e9537e196428`  
-		Last Modified: Wed, 24 Jan 2024 20:46:10 GMT  
-		Size: 717.0 B  
+	-	`sha256:19cd9d21d04ab964524a6e9242f30a8f38936d287d57fe2acc77b22e5f05c162`  
+		Last Modified: Thu, 25 Jan 2024 19:41:15 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50589b2fd3d6af0fb8cb8350672e561fbe21016f7a75a12cb7137e560ec18370`  
-		Last Modified: Wed, 24 Jan 2024 22:33:07 GMT  
-		Size: 339.0 KB (339045 bytes)  
+	-	`sha256:f481745ebe5796fc9e242e3d4d4a68794e6c7748351546356329e524c6d2ea83`  
+		Last Modified: Thu, 25 Jan 2024 22:12:25 GMT  
+		Size: 339.0 KB (339028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c3892205a118687c2db5d4bcaff50b25f328c25a39db236174fdb9da4b981ef`  
-		Last Modified: Wed, 24 Jan 2024 22:33:10 GMT  
-		Size: 58.8 MB (58820202 bytes)  
+	-	`sha256:0749247f47a1b89c5faad206fdd1ebddc3815b74893573a038f16aacb0697852`  
+		Last Modified: Thu, 25 Jan 2024 22:12:28 GMT  
+		Size: 58.8 MB (58820780 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

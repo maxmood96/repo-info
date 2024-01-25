@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-lein-2.10.0`
 
 ```console
-$ docker pull clojure@sha256:be8dd009cee5db628387d6a26052b0d871cd6c784f763c9c5639510b76c025ff
+$ docker pull clojure@sha256:473152b194376cb61dee54161e3b038f1833b032ca9d5143542c26fb3ea5d6e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull clojure@sha256:be8dd009cee5db628387d6a26052b0d871cd6c784f763c9c563
 ### `clojure:temurin-11-lein-2.10.0` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:37551396f08727d5d1f4f887338cbb50b61001010cb5c05b535419f6410cb873
+$ docker pull clojure@sha256:5606436cdfbfec3d01187785e47946ea059c105a7b7408dcf7355447f74d14a3
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.0 MB (205015693 bytes)**  
+-	Total Size: **205.0 MB (205015732 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:26d008028c7bf53edd494db9a555265a2d4a7142b3ca0080dfba2a7970e39009`
+-	Image ID: `sha256:8b7d4d38b2c19b978d271fcfdbe6fbe67bb0b4c9773f58b79ba8f634ffb58b06`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["lein","repl"]`
 
@@ -50,27 +50,27 @@ ENV JAVA_VERSION=jdk-11.0.22+7
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ca1dc604352e9b3906b8955a700745a0a650ed59947f7f354af597871876a716';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='25cf602cac350ef36067560a4e8042919f3be973d419eac4d839e2e0000b2cc8';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='7d0e71d8aea6bba27dfbb9ad7434066896c3085327e58776ca89d5e262040bc5';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='95a1c215e434c302e43c8039f322b954ee539ca22412cd09b4dd77523aaa861a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='137becfcfa6d288ba8c07ba23bf966c87bedfe7ee5cb3342da833407e13e3cfa';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
 # Wed, 24 Jan 2024 20:33:46 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Wed, 24 Jan 2024 20:33:46 GMT
-COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Wed, 24 Jan 2024 20:33:46 GMT
+# Thu, 25 Jan 2024 19:32:12 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Thu, 25 Jan 2024 19:32:13 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 24 Jan 2024 20:33:46 GMT
+# Thu, 25 Jan 2024 19:32:13 GMT
 CMD ["jshell"]
-# Wed, 24 Jan 2024 22:14:35 GMT
+# Thu, 25 Jan 2024 22:22:36 GMT
 ENV LEIN_VERSION=2.10.0
-# Wed, 24 Jan 2024 22:14:35 GMT
+# Thu, 25 Jan 2024 22:22:36 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Wed, 24 Jan 2024 22:14:35 GMT
+# Thu, 25 Jan 2024 22:22:36 GMT
 WORKDIR /tmp
-# Wed, 24 Jan 2024 22:14:48 GMT
+# Thu, 25 Jan 2024 22:22:49 GMT
 RUN set -eux; apt-get update && apt-get install -y make gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "b1757ce941e4cbf15cbf649b7b4f413365e612da892d22841ec1728391bb66af *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 6A2D483DB59437EBB97D09B1040193357D0606ED && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget
-# Wed, 24 Jan 2024 22:14:48 GMT
+# Thu, 25 Jan 2024 22:22:49 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Wed, 24 Jan 2024 22:14:48 GMT
+# Thu, 25 Jan 2024 22:22:49 GMT
 ENV LEIN_ROOT=1
-# Wed, 24 Jan 2024 22:14:51 GMT
+# Thu, 25 Jan 2024 22:22:52 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.1"]])' > project.clj   && lein deps && rm project.clj
-# Wed, 24 Jan 2024 22:14:51 GMT
+# Thu, 25 Jan 2024 22:22:52 GMT
 CMD ["lein" "repl"]
 ```
 
@@ -91,30 +91,30 @@ CMD ["lein" "repl"]
 		Last Modified: Wed, 24 Jan 2024 20:43:16 GMT  
 		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53af593f03bcf81f951d9f8ebedb7007e236a505c38012398c9fa0a87230fd81`  
-		Last Modified: Wed, 24 Jan 2024 20:43:16 GMT  
-		Size: 716.0 B  
+	-	`sha256:bb0c36fa009100f1a06827c7626dd35c4a6648a73bf9802fe2a18a1b18c19512`  
+		Last Modified: Thu, 25 Jan 2024 19:35:03 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0c6074e78f1c665da018371ec271990ce7fcb373ffcacf863e003339d611a8d`  
-		Last Modified: Wed, 24 Jan 2024 22:39:25 GMT  
-		Size: 12.0 MB (11973614 bytes)  
+	-	`sha256:d0bbce564ae37bda24abf3c3fed6e1126284fce975fab0d2ab61187d882ce6f4`  
+		Last Modified: Thu, 25 Jan 2024 22:32:20 GMT  
+		Size: 12.0 MB (11973618 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:337687947d46e76687b3edeccf26d228e1212537ba26a316afccf4ff357b845b`  
-		Last Modified: Wed, 24 Jan 2024 22:39:24 GMT  
-		Size: 4.4 MB (4399184 bytes)  
+	-	`sha256:fc83b64501c3d4246abbaaf3dbc473a48a39ead39e93120f8506670ec921bd9d`  
+		Last Modified: Thu, 25 Jan 2024 22:32:19 GMT  
+		Size: 4.4 MB (4399201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:temurin-11-lein-2.10.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:c495a3f571dd7a9083367f56ac6ee8b94a8d73d12484e811516125caa52fe48d
+$ docker pull clojure@sha256:9776302444e33f5ffeee568940c7f2e6f49ec24d14734ddf83a601010def3ad7
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **199.6 MB (199636530 bytes)**  
+-	Total Size: **199.6 MB (199636500 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfaa6b84d50e5a7af8604108ccdb3f066b81f8a39abf26ca26d139177772e3e7`
+-	Image ID: `sha256:7b63243646c27d627074cb2ff9d1b5d4c58b165b8e1ebd9195fb7760af3d9f8e`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["lein","repl"]`
 
@@ -145,27 +145,27 @@ ENV JAVA_VERSION=jdk-11.0.22+7
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ca1dc604352e9b3906b8955a700745a0a650ed59947f7f354af597871876a716';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='25cf602cac350ef36067560a4e8042919f3be973d419eac4d839e2e0000b2cc8';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='7d0e71d8aea6bba27dfbb9ad7434066896c3085327e58776ca89d5e262040bc5';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='95a1c215e434c302e43c8039f322b954ee539ca22412cd09b4dd77523aaa861a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='137becfcfa6d288ba8c07ba23bf966c87bedfe7ee5cb3342da833407e13e3cfa';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
 # Wed, 24 Jan 2024 20:41:19 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Wed, 24 Jan 2024 20:41:19 GMT
-COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Wed, 24 Jan 2024 20:41:19 GMT
+# Thu, 25 Jan 2024 19:39:49 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Thu, 25 Jan 2024 19:39:49 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 24 Jan 2024 20:41:19 GMT
+# Thu, 25 Jan 2024 19:39:49 GMT
 CMD ["jshell"]
-# Wed, 24 Jan 2024 22:18:36 GMT
+# Thu, 25 Jan 2024 22:07:04 GMT
 ENV LEIN_VERSION=2.10.0
-# Wed, 24 Jan 2024 22:18:36 GMT
+# Thu, 25 Jan 2024 22:07:04 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Wed, 24 Jan 2024 22:18:36 GMT
+# Thu, 25 Jan 2024 22:07:04 GMT
 WORKDIR /tmp
-# Wed, 24 Jan 2024 22:18:47 GMT
+# Thu, 25 Jan 2024 22:07:15 GMT
 RUN set -eux; apt-get update && apt-get install -y make gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "b1757ce941e4cbf15cbf649b7b4f413365e612da892d22841ec1728391bb66af *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 6A2D483DB59437EBB97D09B1040193357D0606ED && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget
-# Wed, 24 Jan 2024 22:18:47 GMT
+# Thu, 25 Jan 2024 22:07:15 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Wed, 24 Jan 2024 22:18:47 GMT
+# Thu, 25 Jan 2024 22:07:15 GMT
 ENV LEIN_ROOT=1
-# Wed, 24 Jan 2024 22:18:49 GMT
+# Thu, 25 Jan 2024 22:07:18 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.1"]])' > project.clj   && lein deps && rm project.clj
-# Wed, 24 Jan 2024 22:18:49 GMT
+# Thu, 25 Jan 2024 22:07:18 GMT
 CMD ["lein" "repl"]
 ```
 
@@ -186,15 +186,15 @@ CMD ["lein" "repl"]
 		Last Modified: Wed, 24 Jan 2024 20:48:40 GMT  
 		Size: 174.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64c272bb1c451f75fbe73e897827e2cbc0ee987d4bdccd3b9b74ef18f6ead161`  
-		Last Modified: Wed, 24 Jan 2024 20:48:40 GMT  
-		Size: 716.0 B  
+	-	`sha256:0888583af1c11dcff36ac23df84040f57dea7fd434bd776ae536979bbe0739c5`  
+		Last Modified: Thu, 25 Jan 2024 19:42:05 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d664f644265df5abdbdc33fa05691099724d6dc0718a96515a4db557b231a2a9`  
-		Last Modified: Wed, 24 Jan 2024 22:39:07 GMT  
+	-	`sha256:248ec43bebdd608bae50bda937b16de4d2e7c66c18da9137561be9c32d6191a8`  
+		Last Modified: Thu, 25 Jan 2024 22:14:41 GMT  
 		Size: 12.0 MB (11972464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81f9283f18cd5953005a0cef0cbc8212dc2025c695f37eb30c88c43be8783e4d`  
-		Last Modified: Wed, 24 Jan 2024 22:39:06 GMT  
-		Size: 4.4 MB (4399231 bytes)  
+	-	`sha256:186fa2c1892e05eeb7f20bb4b86b81d7ac3254c5250cd2bf6c0e23b99acdc87f`  
+		Last Modified: Thu, 25 Jan 2024 22:14:40 GMT  
+		Size: 4.4 MB (4399184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
