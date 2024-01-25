@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8c65bff5a68a8d2d70e566c0c0e0fa866fe5f0fbf49d6ae11e7f11246eaf0a8f`
+- Image ID: `sha256:9a5a2b73cfbde479ddcc1abf126296d561fceb28a9675e3e568a7b4f10128cde`
 - Created: `2023-05-16T17:59:38Z`
 - Virtual Size: ~ 348.00 Mb  
   (total size of all layers on-disk)
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=24.0.7`
   - `DOCKER_BUILDX_VERSION=0.12.1`
-  - `DOCKER_COMPOSE_VERSION=2.24.1`
+  - `DOCKER_COMPOSE_VERSION=2.24.3`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e`
 
@@ -157,16 +157,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.24.0-r0 description:
+c-ares-1.24.0-r1 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.24.0-r0 webpage:
+c-ares-1.24.0-r1 webpage:
 https://c-ares.org/
 
-c-ares-1.24.0-r0 installed size:
+c-ares-1.24.0-r1 installed size:
 144 KiB
 
-c-ares-1.24.0-r0 license:
+c-ares-1.24.0-r1 license:
 MIT
 
 ```
