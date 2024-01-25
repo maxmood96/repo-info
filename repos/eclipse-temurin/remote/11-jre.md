@@ -1,7 +1,7 @@
 ## `eclipse-temurin:11-jre`
 
 ```console
-$ docker pull eclipse-temurin@sha256:4883e0eb25f2508d58e1106c0edf7baabd70fe0b06cb476390addd9e98e7ab1c
+$ docker pull eclipse-temurin@sha256:3a22f2ebf849ba4f6323c5360d3f79735a2a7fef5e9b9eb656ee3daaac70a4f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -289,14 +289,14 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ### `eclipse-temurin:11-jre` - linux; s390x
 
 ```console
-$ docker pull eclipse-temurin@sha256:279fc4037d413295e3a356102f95eeecc85619db02b68e34cae33e0c64f0ec25
+$ docker pull eclipse-temurin@sha256:fe6d7c3d37055ace40dc3458aa55d65eefb153dd06cc8190e9aeeb58ebbfc4ab
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.4 MB (82408647 bytes)**  
+-	Total Size: **82.4 MB (82408664 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:672fa9f731c73b5352b8222ccdee26a44cdd07aa182f9bef1e6cbbc22f48277c`
+-	Image ID: `sha256:228a2f8ad75ea1fcef835f218ccf95bc830b2a257e56f696f46bcdf9768d7d87`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
@@ -326,9 +326,9 @@ ENV JAVA_VERSION=jdk-11.0.22+7
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
 # Thu, 25 Jan 2024 17:25:32 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete."
-# Thu, 25 Jan 2024 17:25:32 GMT
-COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Thu, 25 Jan 2024 17:25:32 GMT
+# Thu, 25 Jan 2024 22:20:24 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Thu, 25 Jan 2024 22:20:24 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
@@ -349,9 +349,9 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Last Modified: Thu, 25 Jan 2024 17:44:04 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4576f77c16ea1266a348e9408ecf9838c3f12c52de20d589b84bb6b930569614`  
-		Last Modified: Thu, 25 Jan 2024 17:44:04 GMT  
-		Size: 716.0 B  
+	-	`sha256:eabdffa77c36dcb990bbf3b24d2e20d0702fde36f4016fd150271c6bc738210d`  
+		Last Modified: Thu, 25 Jan 2024 22:37:34 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:11-jre` - windows version 10.0.20348.2227; amd64

@@ -1,7 +1,7 @@
 ## `eclipse-temurin:21-jammy`
 
 ```console
-$ docker pull eclipse-temurin@sha256:2305a3ad3f5a19881b8ffa9719aebbae32b81ee504c51b2c1f69fa5626197f5a
+$ docker pull eclipse-temurin@sha256:feacf32a39822acd503b5ba0cda9944c465ae0c8a50ee71d094d584272927508
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -227,14 +227,14 @@ CMD ["jshell"]
 ### `eclipse-temurin:21-jammy` - linux; s390x
 
 ```console
-$ docker pull eclipse-temurin@sha256:d6f5ad91d3d47fa9e4d18f52ebf0567e92ae11893bc50e84f1abd110f5bd94d5
+$ docker pull eclipse-temurin@sha256:2e5dfa409792165dc45dabe1f49497090c79f693d2f38fcef4a0c4f76fd51350
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **193.3 MB (193338472 bytes)**  
+-	Total Size: **193.3 MB (193338489 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd28029017a3fbbeb41c231dde54a344ca4057d893ba7661f5a61a9ba2dfe8ad`
+-	Image ID: `sha256:c80be6e30ce9110bec0f5de10e4778c5d29951a316872349bd0c52c6aad216b3`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
@@ -265,11 +265,11 @@ ENV JAVA_VERSION=jdk-21.0.2+13
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='3ce6a2b357e2ef45fd6b53d6587aa05bfec7771e7fb982f2c964f6b771b7526a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.2_13.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='454bebb2c9fe48d981341461ffb6bf1017c7b7c6e15c6b0c29b959194ba3aaa5';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_x64_linux_hotspot_21.0.2_13.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='d08de863499d8851811c893e8915828f2cd8eb67ed9e29432a6b4e222d80a12f';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.2_13.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='0d5676c50821e0d0b951bf3ffd717e7a13be2a89d8848a5c13b4aedc6f982c78';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.2_13.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
 # Thu, 25 Jan 2024 17:36:37 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Thu, 25 Jan 2024 17:36:38 GMT
-COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Thu, 25 Jan 2024 17:36:38 GMT
+# Thu, 25 Jan 2024 22:31:25 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Thu, 25 Jan 2024 22:31:25 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 25 Jan 2024 17:36:38 GMT
+# Thu, 25 Jan 2024 22:31:25 GMT
 CMD ["jshell"]
 ```
 
@@ -290,7 +290,7 @@ CMD ["jshell"]
 		Last Modified: Thu, 25 Jan 2024 17:46:01 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:730de2c73c43c0e4b1c1be050bd2bd27403f413425c355cc7f783264fadb2ce7`  
-		Last Modified: Thu, 25 Jan 2024 17:46:01 GMT  
-		Size: 717.0 B  
+	-	`sha256:a3e25be99615d56bd6d7d2036b0a1a2d5fc67fdc37ebec84159663ef61307835`  
+		Last Modified: Thu, 25 Jan 2024 22:38:00 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
