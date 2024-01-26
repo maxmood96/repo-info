@@ -1841,20 +1841,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 - `UFL-1.0`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=8.0.1-1
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_8.0.1-1.dsc' harfbuzz_8.0.1-1.dsc 2542 SHA256:19ed7817867ceff5a76891a6e93635f6228a38b898d95b57a9437460812b0a1c
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_8.0.1.orig.tar.xz' harfbuzz_8.0.1.orig.tar.xz 18792332 SHA256:c1ce780acd385569f25b9a29603d1d5bc71e6940e55bfdd4f7266fad50e42620
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_8.0.1-1.debian.tar.xz' harfbuzz_8.0.1-1.debian.tar.xz 19644 SHA256:2f1d87b00396e8524a4ec2fb4a55cc776b0703788a18e77dffb098da1c2071c6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/8.0.1-1/
 
-- https://sources.debian.net/src/harfbuzz/8.0.1-1/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/8.0.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/8.0.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hicolor-icon-theme=0.17-2`
 
@@ -4067,20 +4060,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:10.11.6-1
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.6-1.dsc' mariadb_10.11.6-1.dsc 5044 SHA256:a7b13321c671f07d368d0e5ef8fc23e02f27966f4cf4fb523dae2ba32df8ddf3
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.6.orig.tar.gz' mariadb_10.11.6.orig.tar.gz 96114521 SHA256:acc6e7fc7b7508848d36cb1cdc983d62f0c7aeb20864f06e3fa1110adb8cf2a9
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.6-1.debian.tar.xz' mariadb_10.11.6-1.debian.tar.xz 276860 SHA256:854f9418d75c4723c3367e514b7ab1fbc88511984a32feb87a13f8a8061333b4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb/1:10.11.6-1/
 
-- https://sources.debian.net/src/mariadb/1:10.11.6-1/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:10.11.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:10.11.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20231126-1`
 
@@ -4978,19 +4964,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.11.4-5
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.11.4-5.dsc' python3-defaults_3.11.4-5.dsc 3001 SHA256:b59a38fa9c9c638e47cdbde5e869d879092ebc09decd32065a2c90ded3574fb8
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.11.4-5.tar.gz' python3-defaults_3.11.4-5.tar.gz 146763 SHA256:170f676b5fdb0c3562aa14ae594f44c01e26e40ddc42ee407add512693cddb25
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.11.4-5/
 
-- https://sources.debian.net/src/python3-defaults/3.11.4-5/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.11.4-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.11.4-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-stdlib-extensions=3.11.5-1`
 
@@ -5645,19 +5625,13 @@ Licenses: (parsed from: `/usr/share/doc/usr-is-merged/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris usrmerge=38
-'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_38.dsc' usrmerge_38.dsc 981 SHA256:c23401bc61750179515ec2bb12303e42f6f839542c5d413ce5db7192ff1527bc
-'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_38.tar.xz' usrmerge_38.tar.xz 14804 SHA256:bc1a7973777560f5be67763abd9c1c1ff239d423f72e9209ad755f94e921d4e0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/usrmerge/38/
 
-- https://sources.debian.net/src/usrmerge/38/ (for browsing the source)
-- https://sources.debian.net/src/usrmerge/38/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/usrmerge/38/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `utf8proc=2.9.0-1`
 

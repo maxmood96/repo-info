@@ -133,15 +133,13 @@ Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris attr=1:2.5.1-5
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.1-5.dsc' attr_2.5.1-5.dsc 2477 SHA512:162e8634bb25271345b905433bc94976dd79a235fec6b9a6837565408138910ec5e967e62c8b70c00a3dfbc117034e849ce7f39ece83017de79304cf469c3f77
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.1.orig.tar.xz' attr_2.5.1.orig.tar.xz 318188 SHA512:9e5555260189bb6ef2440c76700ebb813ff70582eb63d446823874977307d13dfa3a347dfae619f8866943dfa4b24ccf67dadd7e3ea2637239fdb219be5d2932
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.1.orig.tar.xz.asc' attr_2.5.1.orig.tar.xz.asc 833 SHA512:be4f3629ef66bd400bcdeaf8b6b1564dc729472a514d59fb4909a30f3269711dedea16002283e9aabbf83c374e0a3d70bc00f1136da0fed66a8184acdfd7e78f
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.1-5.debian.tar.xz' attr_2.5.1-5.debian.tar.xz 34520 SHA512:ab8b522228a3d870c54347ed763185a923d2b235a70d32d47cace7d89975d7f3d9207fcf3f2ebfe4ab98ae95b834ea7aae676748c7b4e29069c830e910a8bfd1
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/attr/1:2.5.1-5/
+
 
 ### `dpkg` source package: `audit=1:3.1.2-1`
 
@@ -156,14 +154,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:3.1.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-1.dsc' audit_3.1.2-1.dsc 2403 SHA512:debc4623777d664ce4dfdb027eea41e5292036001fa4a19594c023ad01be028c8dfcb02bda6a9c217726a38a655f7ce9e159029a745e7bb9c24bbaf8955b10b4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2.orig.tar.gz' audit_3.1.2.orig.tar.gz 1219860 SHA512:a97003a294ed3671df01e2952688e7d5eef59a35f6891feb53e67c4c7eab9ae8c2d18de41a5b5b20e0ad7156fac93aec05f32f6bc5eea706b42b6f27f676446a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-1.debian.tar.xz' audit_3.1.2-1.debian.tar.xz 18396 SHA512:9de616764f954e4f46adf0c793bb29ee060e47696bfe3e0f7c2fe59af816fc1111d6accccb20094a1424c8ee9c6099fb0e97aa28e04775559e225204502a3965
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/audit/1:3.1.2-1/
+
 
 ### `dpkg` source package: `autoconf=2.71-3`
 
@@ -1379,15 +1376,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.1-4ubuntu6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.1-4ubuntu6.dsc' gnutls28_3.8.1-4ubuntu6.dsc 3338 SHA512:33717f1a9de0cd2848c761efa18e4fdebeb2a26cd2dd795fe8dafcc4db62b282bcbecd515a1d8b8d0e18f6c5d5c611f863c7569b3dd5488681367d7c4840d341
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.1.orig.tar.xz' gnutls28_3.8.1.orig.tar.xz 6447056 SHA512:22e78db86b835843df897d14ad633d8a553c0f9b1389daa0c2f864869c6b9ca889028d434f9552237dc4f1b37c978fbe0cce166e3768e5d4e8850ff69a6fc872
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.1.orig.tar.xz.asc' gnutls28_3.8.1.orig.tar.xz.asc 996 SHA512:ad42a077718a91b82959ee7ed8282b69e73825c70c5c60eb4a1f87aab055dee2ac74a03f489d5f11c2094ec6ac01ea44c0daffb61cb4daae714dcaf5ea89ecd0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.1-4ubuntu6.debian.tar.xz' gnutls28_3.8.1-4ubuntu6.debian.tar.xz 73692 SHA512:64067f9c5a548cb44bc34c2a564531142bd27ce490773d5c9f4161cb4aebd9d290e5cb9a2e1df3ebd12e6b01bc53ec842ffe066447be7461860f49ba4aa178b0
-```
 
 ### `dpkg` source package: `gobject-introspection=1.78.1-6`
 
@@ -1537,14 +1528,9 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 - `UFL-1.0`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=8.0.1-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_8.0.1-1build1.dsc' harfbuzz_8.0.1-1build1.dsc 2866 SHA512:833300e2fbbfaf377bf0ad9185ca6efa039f1a7d3dda1ae3a5f7ea67ce55f6bec652698b01974cce7c026019510db2507ef6f8621363507549b7c690949b54a7
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_8.0.1.orig.tar.xz' harfbuzz_8.0.1.orig.tar.xz 18792332 SHA512:e1292f059b07a5aa2f3fbf345b893209cac895c461b4abf30b8b76bcd03c79dd09f911450293403070e1a0bb08496a7f37693ba5a62a9d423dd6ba55e744444d
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_8.0.1-1build1.debian.tar.xz' harfbuzz_8.0.1-1build1.debian.tar.xz 19680 SHA512:022df661442878452fbcb442a25249fb68f39abd3bd5bd81e5990a8d2f7061bcf915d7fad06d262344ffb1b37aa1970a432891ae0bd8c51aa60c42845c864895
-```
 
 ### `dpkg` source package: `hicolor-icon-theme=0.17-2`
 
@@ -3236,13 +3222,9 @@ Licenses: (parsed from: `/usr/share/doc/lto-disabled-list/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lto-disabled-list=45
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_45.dsc' lto-disabled-list_45.dsc 1435 SHA512:b3a0fad46b14d451661bda39b1bcda7e482ee353cd59b01590c3b55e397a710423c6a0527783b29d0172a5abec98f937ece3889009400fafab570f60b5ff3433
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_45.tar.xz' lto-disabled-list_45.tar.xz 13400 SHA512:bbffe398173a659b8162f60d92c1759974253298655682b0f981fa2c8dad2c20f50adcb078c8a9a008e5ef2c26a4e7d26b3796df7d1e89ff6415c6758e943799
-```
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
@@ -3452,15 +3434,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-8.0=8.0.35-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.35-1ubuntu2.dsc' mysql-8.0_8.0.35-1ubuntu2.dsc 3789 SHA512:2931ec91aade1c2e936166451dff6e1d65c019211391341b2ee0a1db36d328cc46fdcde80c2c0b4c5a3578e25a251c29ad8e9b418464ac3074c5439fa33b1e78
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.35.orig.tar.gz' mysql-8.0_8.0.35.orig.tar.gz 438111810 SHA512:2936f7a84aa5f96633b239d1dba3613462d88f3a2ea493a7d05aa9a9b590e9e36a30857f44fcdb11360242375d6106e80cd1b32e0c6cb14502c1518ad1a720b2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.35.orig.tar.gz.asc' mysql-8.0_8.0.35.orig.tar.gz.asc 833 SHA512:1d97b8046f31b93e19ebd01002008004d817c448e409934c86a28f0319b491acc2c4c2d950a9e4c34e326deb1e3e8b53ce3949947371fcf941e825fa056d380c
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.35-1ubuntu2.debian.tar.xz' mysql-8.0_8.0.35-1ubuntu2.debian.tar.xz 145272 SHA512:e36d160b95ee57544e713037cbddbeb3a011d4386fbb5fae87cc0039c76cc484f039d103e76ba7c5724f485b8053b73e5b78624d7e09c277aca6100960987704
-```
 
 ### `dpkg` source package: `mysql-defaults=1.1.0`
 
@@ -3821,14 +3797,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.2-9.1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.2-9.1ubuntu1.dsc' pam_1.5.2-9.1ubuntu1.dsc 2741 SHA512:d4b7216f82b103713935acee9438bc25da29f3b21619d933e719016aded88a31971271bfdf8d798148a9b6f0768c262b8eb47a454aa17ec6c662530c056b9f95
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.2.orig.tar.xz' pam_1.5.2.orig.tar.xz 988784 SHA512:fa16350c132d3e5fb82b60d991768fb596582639841b8ece645c684705467305ccf1302a0147ec222ab78c01b2c9114c5496dc1ca565d2b56bf315f29a815144
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.2-9.1ubuntu1.debian.tar.xz' pam_1.5.2-9.1ubuntu1.debian.tar.xz 176544 SHA512:91ce7e7d2c575f9e8db5fd7c6903809d4cbec3c276136c7d32622753b22d87f94ed70d34379b671a016003a36ec4a3aa02c18c2578af31c100d3a3380bf11ee7
-```
 
 ### `dpkg` source package: `pango1.0=1.51.0+ds-3`
 
