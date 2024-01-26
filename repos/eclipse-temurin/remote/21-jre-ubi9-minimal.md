@@ -1,7 +1,7 @@
 ## `eclipse-temurin:21-jre-ubi9-minimal`
 
 ```console
-$ docker pull eclipse-temurin@sha256:25e86776a12a74dca5de01cec69c5f3b770438c35db455493875c592af9ffa8a
+$ docker pull eclipse-temurin@sha256:8950207bfb8ef21c83c12ac54ade511ed78b7c027f7347903b72e93da9971c41
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -116,102 +116,102 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ### `eclipse-temurin:21-jre-ubi9-minimal` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:d262133f049b3771d62146a31f0104510cb212724d2590f9f3f7cb61c1f7512e
+$ docker pull eclipse-temurin@sha256:5d6d782a57b06a694feb769b5868f0a243206138d2940df28b902bd6f5c9748a
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **102.1 MB (102061638 bytes)**  
+-	Total Size: **101.3 MB (101337249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e8c3fe589642e081449f01288dd771448e4ee3779e1984a64619eeaa1a1d44d6`
+-	Image ID: `sha256:76e04072df12223858c4f8e67744c94eabb920a70493bd3d7011c00f49258dde`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
-# Thu, 07 Dec 2023 04:19:06 GMT
-ADD file:7ba972e538cfd486a9ead8e6c555a813a0fdd8c971fece26107d633360ca400e in / 
-# Thu, 07 Dec 2023 04:19:08 GMT
+# Wed, 17 Jan 2024 19:18:24 GMT
+ADD file:a7c0bdd56d7a77d1a191f8c8ed79585935e74fd20271d6124981f2cbafd9a3e5 in / 
+# Wed, 17 Jan 2024 19:18:25 GMT
 RUN mv -f /etc/yum.repos.d/ubi.repo /tmp || :
-# Thu, 07 Dec 2023 04:19:08 GMT
+# Wed, 17 Jan 2024 19:18:25 GMT
 ADD file:ecc29a1455ca1b7c82018555e16e2e802135974523df6748e431f8707e759ddd in /tmp/tls-ca-bundle.pem 
-# Thu, 07 Dec 2023 04:19:08 GMT
-ADD multi:8257bc82024891d335e91a6d5e44bb825bdb87abe8bc1d2ee3fcfb9e8cbecea1 in /etc/yum.repos.d/ 
-# Thu, 07 Dec 2023 04:19:08 GMT
+# Wed, 17 Jan 2024 19:18:25 GMT
+ADD multi:655128808f9801300e5f5790b55c073636035214aee6c75e0582afd288da8973 in /etc/yum.repos.d/ 
+# Wed, 17 Jan 2024 19:18:25 GMT
 LABEL maintainer="Red Hat, Inc."
-# Thu, 07 Dec 2023 04:19:08 GMT
+# Wed, 17 Jan 2024 19:18:25 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.3"
-# Thu, 07 Dec 2023 04:19:08 GMT
+# Wed, 17 Jan 2024 19:18:25 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Thu, 07 Dec 2023 04:19:08 GMT
+# Wed, 17 Jan 2024 19:18:25 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Thu, 07 Dec 2023 04:19:08 GMT
+# Wed, 17 Jan 2024 19:18:25 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Thu, 07 Dec 2023 04:19:08 GMT
+# Wed, 17 Jan 2024 19:18:25 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Thu, 07 Dec 2023 04:19:08 GMT
+# Wed, 17 Jan 2024 19:18:25 GMT
 LABEL io.openshift.expose-services=""
-# Thu, 07 Dec 2023 04:19:08 GMT
+# Wed, 17 Jan 2024 19:18:25 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Thu, 07 Dec 2023 04:19:08 GMT
+# Wed, 17 Jan 2024 19:18:25 GMT
 ENV container oci
-# Thu, 07 Dec 2023 04:19:08 GMT
+# Wed, 17 Jan 2024 19:18:25 GMT
 ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 07 Dec 2023 04:19:08 GMT
+# Wed, 17 Jan 2024 19:18:25 GMT
 CMD ["/bin/bash"]
-# Thu, 07 Dec 2023 04:19:09 GMT
+# Wed, 17 Jan 2024 19:18:27 GMT
 RUN rm -rf /var/log/*
-# Thu, 07 Dec 2023 04:19:09 GMT
-LABEL release=1475
-# Thu, 07 Dec 2023 04:19:09 GMT
-ADD file:81f4709f6c901cfae1353cf48b313f40bcb74c28a4a486b53e093a5b3d4a8b47 in /root/buildinfo/content_manifests/ubi9-minimal-container-9.3-1475.json 
-# Thu, 07 Dec 2023 04:19:09 GMT
-ADD file:1ff4ce5b17d000737bdcb251e3ecc8506100fc38c8fdd75265dcf2699f35103c in /root/buildinfo/Dockerfile-ubi9-minimal-9.3-1475 
-# Thu, 07 Dec 2023 04:19:09 GMT
-LABEL "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2023-12-07T04:10:36" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e8510c65a9be4b0635372fd09bee126ce7e08bc7" "io.k8s.description"="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.3-1475"
-# Thu, 07 Dec 2023 04:19:11 GMT
-RUN rm -f '/etc/yum.repos.d/repo-84783.repo' '/etc/yum.repos.d/repo-186d3.repo'
-# Thu, 07 Dec 2023 04:19:12 GMT
+# Wed, 17 Jan 2024 19:18:27 GMT
+LABEL release=1552
+# Wed, 17 Jan 2024 19:18:27 GMT
+ADD file:bfcc8382df280418e841771f63af4ab23c26bfdabccba49320eca21344392059 in /root/buildinfo/content_manifests/ubi9-minimal-container-9.3-1552.json 
+# Wed, 17 Jan 2024 19:18:27 GMT
+ADD file:855fc5d4bbaa177d330e050fbde5d82d06b15af68fb9fcc1051cfdaafc7dcc07 in /root/buildinfo/Dockerfile-ubi9-minimal-9.3-1552 
+# Wed, 17 Jan 2024 19:18:27 GMT
+LABEL "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2024-01-17T19:05:39" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e8510c65a9be4b0635372fd09bee126ce7e08bc7" "io.k8s.description"="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.3-1552"
+# Wed, 17 Jan 2024 19:18:28 GMT
+RUN rm -f '/etc/yum.repos.d/repo-cbf3a.repo' '/etc/yum.repos.d/repo-a4968.repo'
+# Wed, 17 Jan 2024 19:18:30 GMT
 RUN rm -f /tmp/tls-ca-bundle.pem
-# Thu, 07 Dec 2023 04:19:13 GMT
+# Wed, 17 Jan 2024 19:18:32 GMT
 RUN mv -fZ /tmp/ubi.repo /etc/yum.repos.d/ubi.repo || :
-# Thu, 14 Dec 2023 01:51:06 GMT
+# Fri, 26 Jan 2024 02:26:28 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 14 Dec 2023 01:51:06 GMT
+# Fri, 26 Jan 2024 02:26:28 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 14 Dec 2023 01:51:06 GMT
+# Fri, 26 Jan 2024 02:26:28 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jan 2024 20:40:24 GMT
+# Fri, 26 Jan 2024 02:26:40 GMT
 RUN set -eux;     microdnf install -y         gzip         tar         binutils         tzdata         wget         ca-certificates         fontconfig         glibc-langpack-en     ;     microdnf clean all
-# Wed, 24 Jan 2024 20:44:38 GMT
+# Fri, 26 Jan 2024 02:28:03 GMT
 ENV JAVA_VERSION=jdk-21.0.2+13
-# Wed, 24 Jan 2024 20:45:10 GMT
+# Fri, 26 Jan 2024 02:28:24 GMT
 RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='64c78854184c92a4da5cda571c8e357043bfaf03a03434eef58550cc3410d8a4';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.2_13.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='51141204fe01a9f9dd74eab621d5eca7511eac67315c9975dbde5f2625bdca55';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jre_x64_linux_hotspot_21.0.2_13.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='caaf48e50787b80b810dc08ee91bd4ffe0d0696bd14906a92f05bf8c14aabb22';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.2_13.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='ff8191fa5b23a175932e7f4fab10a6e8df61fd71b6529c7d21451c81e82f8d55';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jre_s390x_linux_hotspot_21.0.2_13.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Wed, 24 Jan 2024 20:45:12 GMT
+# Fri, 26 Jan 2024 02:28:25 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete."
-# Wed, 24 Jan 2024 20:45:12 GMT
+# Fri, 26 Jan 2024 02:28:25 GMT
 COPY file:80168d55afbbfdfea820e78ae2e1141fd21095cf26d68a4715fadfae5beb9e0b in /__cacert_entrypoint.sh 
-# Wed, 24 Jan 2024 20:45:12 GMT
+# Fri, 26 Jan 2024 02:28:25 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:f4849aa241c326e575522a63046cad5e53ec51b8e918d232021fc78d31e146fa`  
-		Last Modified: Wed, 13 Dec 2023 17:00:20 GMT  
-		Size: 36.0 MB (36010908 bytes)  
+	-	`sha256:5995d2c3a044ca24b3d19b7e7e55d359fc18627baa8aef944edb65b14383cefc`  
+		Last Modified: Thu, 25 Jan 2024 16:53:01 GMT  
+		Size: 36.0 MB (36049053 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6626cc88fdf97382d2d21503deed9146ccdce0dd6bdafd076d981d7e29b4179`  
-		Last Modified: Wed, 24 Jan 2024 20:47:08 GMT  
-		Size: 12.9 MB (12914665 bytes)  
+	-	`sha256:57606f358ad8d4841542a3025b1feab6d2bb1033c0d6c82d16f908db04722c10`  
+		Last Modified: Fri, 26 Jan 2024 02:29:08 GMT  
+		Size: 12.2 MB (12152132 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e879d4d5043a79bffdc954e68d81618afc9a89750014d054726d314fedf859f0`  
-		Last Modified: Wed, 24 Jan 2024 20:54:45 GMT  
-		Size: 53.1 MB (53135195 bytes)  
+	-	`sha256:2263fbdca76af46cde190fd57cd8186fbd6be3599dc46add673b6bfbb53b608f`  
+		Last Modified: Fri, 26 Jan 2024 02:31:28 GMT  
+		Size: 53.1 MB (53135193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb25830af837858464e9dec1957d6d51d8fd53883e56b0ece78fbe6d945cb502`  
-		Last Modified: Wed, 24 Jan 2024 20:54:39 GMT  
-		Size: 159.0 B  
+	-	`sha256:26c7ccc6a4755b7661d1a4829e6306296034cdb923fd1b94b07616cabff4108c`  
+		Last Modified: Fri, 26 Jan 2024 02:31:22 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d750dc354605632ff82e822531225e89faf60c868b498ee44be3b417a7548ee0`  
-		Last Modified: Wed, 24 Jan 2024 20:54:39 GMT  
+	-	`sha256:1731b8deb4e48c6c935c973c74eccf2c76b11769422ac2c68be6b936b4a8299e`  
+		Last Modified: Fri, 26 Jan 2024 02:31:22 GMT  
 		Size: 711.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
