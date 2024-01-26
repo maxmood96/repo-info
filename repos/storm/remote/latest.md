@@ -1,7 +1,7 @@
 ## `storm:latest`
 
 ```console
-$ docker pull storm@sha256:a4b1cb2fb886031ef41d91b78ce4183668886e5207f1c2eee59f03f36f98db04
+$ docker pull storm@sha256:cee2c8d606ff01d75a19a3cfc0507dd029ae8cf962fa1084e8be99b09db5873b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull storm@sha256:a4b1cb2fb886031ef41d91b78ce4183668886e5207f1c2eee59f0
 ### `storm:latest` - linux; amd64
 
 ```console
-$ docker pull storm@sha256:2bad1340c91c43c4ab8973b800ae998de40391635b8f31ea085dd9089e75cdd3
+$ docker pull storm@sha256:b95d4684db70df415ce0b00129d8692817e0c3172ff9cf9d1a821fcb7bb71f64
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **551.3 MB (551268405 bytes)**  
+-	Total Size: **551.3 MB (551268412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb39dcf4789333887b6e47f2fc66e0a34529ea15b41b5c12d6e6a54773ef0ece`
+-	Image ID: `sha256:768d417097e3e6ff172bb0d460aeb2d0c91472472b201dcbafba73c9aa6ccfc9`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -49,28 +49,28 @@ ENV JAVA_VERSION=jdk-11.0.22+7
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
 # Wed, 24 Jan 2024 20:34:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete."
-# Wed, 24 Jan 2024 20:34:42 GMT
-COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Wed, 24 Jan 2024 20:34:42 GMT
+# Thu, 25 Jan 2024 19:32:25 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Thu, 25 Jan 2024 19:32:25 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 25 Jan 2024 02:51:07 GMT
+# Thu, 25 Jan 2024 23:56:51 GMT
 ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Thu, 25 Jan 2024 02:51:08 GMT
+# Thu, 25 Jan 2024 23:56:51 GMT
 RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Thu, 25 Jan 2024 02:51:17 GMT
+# Thu, 25 Jan 2024 23:57:04 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python3         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Thu, 25 Jan 2024 02:51:18 GMT
+# Thu, 25 Jan 2024 23:57:04 GMT
 ARG DISTRO_NAME=apache-storm-2.6.0
-# Thu, 25 Jan 2024 02:51:54 GMT
+# Thu, 25 Jan 2024 23:57:43 GMT
 # ARGS: DISTRO_NAME=apache-storm-2.6.0
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     importKeys() {       for key in       5167DE337E7370373499FC1DA4A672F11B5050C8       32C8C0BEE3D01AF46B6E24B0AC30BFA8FEF0711F       79B03D059E628478FC9F1D8B152CAD0C46E87B61       51379DA8A7AE5B02674EF15C134716AF768D9B6E       DA903F2CF9BBD42EAECFA9E45EA6FAEF09A4474D       6156BAC0C21A1991CF1B690AB2973D6F4A67943A       B83D15E72253ED1104EB4FBBDAB472F0E5B8A431       ; do         gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys "$key" ||         gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||         gpg --batch --keyserver hkps://pgp.mit.edu --recv-keys "$key" ||         gpg --batch --keyserver hkps://keyserver.pgp.com --recv-keys "$key" ;       done;     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     importKeys;     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
-# Thu, 25 Jan 2024 02:51:55 GMT
+# Thu, 25 Jan 2024 23:57:44 GMT
 WORKDIR /apache-storm-2.6.0
-# Thu, 25 Jan 2024 02:51:55 GMT
+# Thu, 25 Jan 2024 23:57:44 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-2.6.0/bin
-# Thu, 25 Jan 2024 02:51:55 GMT
+# Thu, 25 Jan 2024 23:57:44 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Thu, 25 Jan 2024 02:51:55 GMT
+# Thu, 25 Jan 2024 23:57:44 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -91,24 +91,24 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Wed, 24 Jan 2024 20:44:54 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c8fdc38e76fc72a1fda669200b4767982606e70f774aabf260ea79dfb42457f`  
-		Last Modified: Wed, 24 Jan 2024 20:44:54 GMT  
-		Size: 717.0 B  
+	-	`sha256:e050e12d71719e186b4f45c9165eeb0fc53d401aad37007cb53aa8874f5d67d1`  
+		Last Modified: Thu, 25 Jan 2024 19:35:23 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf29e5d3e7922ce98d00e7b8a66dad24c9c9ea104d5ee9c76cf0a82b3c9a864a`  
-		Last Modified: Thu, 25 Jan 2024 02:52:11 GMT  
+	-	`sha256:d721ca69cbd652564b0f5948e9022b637d309088489226bfcd0dcc2bd6a367e9`  
+		Last Modified: Thu, 25 Jan 2024 23:57:54 GMT  
 		Size: 1.8 KB (1849 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15da872cb2fc158d8fade7515de7d7761c44e884fbadc4b6884ff5df73bba9e6`  
-		Last Modified: Thu, 25 Jan 2024 02:52:13 GMT  
-		Size: 13.7 MB (13650365 bytes)  
+	-	`sha256:f21a7319428594579a04e3ab9d26875486377bf81c03aa9163b50ea7a5f9cd64`  
+		Last Modified: Thu, 25 Jan 2024 23:57:57 GMT  
+		Size: 13.7 MB (13650320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:683f4329c5e58850f89ffd3614f3b63136ad621ad61f7bd53776086f8b409629`  
-		Last Modified: Thu, 25 Jan 2024 02:52:30 GMT  
-		Size: 447.2 MB (447192104 bytes)  
+	-	`sha256:9e036e76b9f5016f74f0ee1cca303811ee1dcfe98c0f542148a755e0fb6f440f`  
+		Last Modified: Thu, 25 Jan 2024 23:58:16 GMT  
+		Size: 447.2 MB (447192140 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84dfd3355353cb2bf796fb809432ccbdbb88d3ba7e2b41f4748ac09332e7e68f`  
-		Last Modified: Thu, 25 Jan 2024 02:52:11 GMT  
+	-	`sha256:dc7fad0bf073d730713c1137c29268d0c37572ba91c7ac178e71ab1d8cd300db`  
+		Last Modified: Thu, 25 Jan 2024 23:57:54 GMT  
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
