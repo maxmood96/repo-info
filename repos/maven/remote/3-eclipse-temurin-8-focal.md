@@ -1,7 +1,7 @@
 ## `maven:3-eclipse-temurin-8-focal`
 
 ```console
-$ docker pull maven@sha256:45d8649804d1ff05ca8f3189d73454ef7a37d741ffa24077d325cd52ad3be867
+$ docker pull maven@sha256:a820ec646765a9303692ac4b9b853c49bafd60836d5d4c52407c4f572181d8c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -234,13 +234,13 @@ CMD ["mvn"]
 ### `maven:3-eclipse-temurin-8-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:d0db38d4a36a1e191675f47f1e8a35f71f6df77c9293cb51d09f3b2d506149c3
+$ docker pull maven@sha256:96c0a8539e94ace6dce40e35a7dfd16730874da5bbb0077ab055496f58ce3c36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.3 MB (184346636 bytes)**  
+-	Total Size: **184.3 MB (184346707 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19b6b1d29617df56ccab03411780337db176f4ae1e3b3ebccd459d1ac099d67e`
+-	Image ID: `sha256:107ce9f4beb73c67ac614ab44507ddfd0bc902009b24ebfee0cd74fc77c41cc3`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -271,9 +271,9 @@ ENV JAVA_VERSION=jdk8u402-b06
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='241a72d6f0051de30c71e7ade95b34cd85a249c8e5925bcc7a95872bee81fd84';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u402b06.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='fcfd08abe39f18e719e391f2fc37b8ac1053075426d10efac4cbf8969e7aa55e';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u402b06.tar.gz';          ;;        armhf|arm)          ESUM='271f28c7b3592b201b7434292c21d923f520af8ff1c090b6849cb946e34a6bdb';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u402b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='64bc05cdffe827c84000177dca2eb4ff0a8ff0021889bb75abff3639d4f51838';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;
 # Wed, 24 Jan 2024 20:39:40 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete."
-# Wed, 24 Jan 2024 20:39:40 GMT
-COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Wed, 24 Jan 2024 20:39:40 GMT
+# Thu, 25 Jan 2024 19:39:33 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Thu, 25 Jan 2024 19:39:33 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y ca-certificates curl git --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -316,28 +316,28 @@ CMD ["mvn"]
 		Last Modified: Wed, 24 Jan 2024 20:46:11 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65196e4828959df87ac3ffc3f276f8818acb65a48cc8e24bb4e9e9537e196428`  
-		Last Modified: Wed, 24 Jan 2024 20:46:10 GMT  
-		Size: 717.0 B  
+	-	`sha256:19cd9d21d04ab964524a6e9242f30a8f38936d287d57fe2acc77b22e5f05c162`  
+		Last Modified: Thu, 25 Jan 2024 19:41:15 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d67d277e2e5ba5855eb2805e375f7091907e0ed6e2ec4ed219abb33c9136c144`  
-		Last Modified: Thu, 25 Jan 2024 01:53:58 GMT  
-		Size: 28.2 MB (28185151 bytes)  
+	-	`sha256:c690ab186bda251435c38a98e4376f147162c5e15b9935b5c5eecd99d98da64d`  
+		Last Modified: Thu, 25 Jan 2024 23:39:47 GMT  
+		Size: 28.2 MB (28185183 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3be0528d0e89682ce5b4aa93e735709c847d9d6065fe729587e9b006ad32defa`  
-		Last Modified: Thu, 25 Jan 2024 01:53:56 GMT  
-		Size: 9.5 MB (9479923 bytes)  
+	-	`sha256:b321df5578b2853ded660dbcd3eb1ed884ce980f579a80dc19d113050589a1b1`  
+		Last Modified: Thu, 25 Jan 2024 23:39:45 GMT  
+		Size: 9.5 MB (9479944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ea51c802433063b359a4337206fb57fd3146ef40c85df8355b7941765ff5167`  
-		Last Modified: Thu, 25 Jan 2024 01:53:55 GMT  
-		Size: 861.0 B  
+	-	`sha256:08f6b42e74b21916645517969653afbe7c8311dc47776a79083916dc3153f026`  
+		Last Modified: Thu, 25 Jan 2024 23:39:44 GMT  
+		Size: 860.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e88a179f22cfcd0dbc129127d77ac22461644603fbc18f7111ad4f49b5ed767a`  
-		Last Modified: Thu, 25 Jan 2024 01:53:55 GMT  
-		Size: 357.0 B  
+	-	`sha256:510e717c10cbaedfc2894023641a1c887a607ece7c02f173832af31916943df5`  
+		Last Modified: Thu, 25 Jan 2024 23:39:44 GMT  
+		Size: 359.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e61ce2d8d333c3c837ad19b05c29c1fdf5e97ce27eed7f045bd96f557b7627e`  
-		Last Modified: Thu, 25 Jan 2024 01:53:55 GMT  
+	-	`sha256:eadea368ce3a32769aca586da47e273cdddf617b0cd9161fb31f910529b7cd08`  
+		Last Modified: Thu, 25 Jan 2024 23:39:44 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
