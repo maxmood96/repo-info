@@ -81,11 +81,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris attr=1:2.5.1-5
-'http://http.debian.net/debian/pool/main/a/attr/attr_2.5.1-5.dsc' attr_2.5.1-5.dsc 2477 SHA256:58b1463ddb29d91fdbd2b25cf671fbbf0e00496543cb38b812b1da818f2686be
-'http://http.debian.net/debian/pool/main/a/attr/attr_2.5.1.orig.tar.xz' attr_2.5.1.orig.tar.xz 318188 SHA256:db448a626f9313a1a970d636767316a8da32aede70518b8050fa0de7947adc32
-'http://http.debian.net/debian/pool/main/a/attr/attr_2.5.1.orig.tar.xz.asc' attr_2.5.1.orig.tar.xz.asc 833 SHA256:67bc632e754efbadba846d0b40138b3fc3e306c3b909a9ba868c6dba1e2689d0
-'http://http.debian.net/debian/pool/main/a/attr/attr_2.5.1-5.debian.tar.xz' attr_2.5.1-5.debian.tar.xz 34520 SHA256:829fdfcbd63d7138f8e0bdf13ce8a803fe6cbcb81426d9de64c257dd04e437ff
+'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.1-5.dsc' attr_2.5.1-5.dsc 2477 SHA256:58b1463ddb29d91fdbd2b25cf671fbbf0e00496543cb38b812b1da818f2686be
+'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.1.orig.tar.xz' attr_2.5.1.orig.tar.xz 318188 SHA256:db448a626f9313a1a970d636767316a8da32aede70518b8050fa0de7947adc32
+'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.1.orig.tar.xz.asc' attr_2.5.1.orig.tar.xz.asc 833 SHA256:67bc632e754efbadba846d0b40138b3fc3e306c3b909a9ba868c6dba1e2689d0
+'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.1-5.debian.tar.xz' attr_2.5.1-5.debian.tar.xz 34520 SHA256:829fdfcbd63d7138f8e0bdf13ce8a803fe6cbcb81426d9de64c257dd04e437ff
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/attr/1:2.5.1-5/ (for browsing the source)
+- https://sources.debian.net/src/attr/1:2.5.1-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/attr/1:2.5.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `audit=1:3.1.2-1`
 
@@ -104,10 +110,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris audit=1:3.1.2-1
-'http://http.debian.net/debian/pool/main/a/audit/audit_3.1.2-1.dsc' audit_3.1.2-1.dsc 2403 SHA256:56d63e81cba954c3222e815ce3c151bf1d07ec47479b6811214f3c90205a4676
-'http://http.debian.net/debian/pool/main/a/audit/audit_3.1.2.orig.tar.gz' audit_3.1.2.orig.tar.gz 1219860 SHA256:c0b1792d1f0a88c6f1828710509cbb987059fc68712c97669ca90eae103d287d
-'http://http.debian.net/debian/pool/main/a/audit/audit_3.1.2-1.debian.tar.xz' audit_3.1.2-1.debian.tar.xz 18396 SHA256:7cbef0dcfb843513d61f9b2e6716eed9ef46c3448def3663ad514e67dea743a9
+'http://deb.debian.org/debian/pool/main/a/audit/audit_3.1.2-1.dsc' audit_3.1.2-1.dsc 2403 SHA256:56d63e81cba954c3222e815ce3c151bf1d07ec47479b6811214f3c90205a4676
+'http://deb.debian.org/debian/pool/main/a/audit/audit_3.1.2.orig.tar.gz' audit_3.1.2.orig.tar.gz 1219860 SHA256:c0b1792d1f0a88c6f1828710509cbb987059fc68712c97669ca90eae103d287d
+'http://deb.debian.org/debian/pool/main/a/audit/audit_3.1.2-1.debian.tar.xz' audit_3.1.2-1.debian.tar.xz 18396 SHA256:7cbef0dcfb843513d61f9b2e6716eed9ef46c3448def3663ad514e67dea743a9
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/audit/1:3.1.2-1/ (for browsing the source)
+- https://sources.debian.net/src/audit/1:3.1.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/audit/1:3.1.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-files=13`
 
@@ -536,9 +548,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris debconf=1.5.83
-'http://http.debian.net/debian/pool/main/d/debconf/debconf_1.5.83.dsc' debconf_1.5.83.dsc 2035 SHA256:07b630b78ed15cceccf022f309b45ded9ea68490424954402bcb110b669bc86d
-'http://http.debian.net/debian/pool/main/d/debconf/debconf_1.5.83.tar.xz' debconf_1.5.83.tar.xz 571476 SHA256:8f894d4649c0b46214e7c098734ba42d0e3b7d83a4db224d01ea9b76dc4e7bc0
+'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.83.dsc' debconf_1.5.83.dsc 2035 SHA256:07b630b78ed15cceccf022f309b45ded9ea68490424954402bcb110b669bc86d
+'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.83.tar.xz' debconf_1.5.83.tar.xz 571476 SHA256:8f894d4649c0b46214e7c098734ba42d0e3b7d83a4db224d01ea9b76dc4e7bc0
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/debconf/1.5.83/ (for browsing the source)
+- https://sources.debian.net/src/debconf/1.5.83/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/debconf/1.5.83/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2023.4`
 
@@ -1204,20 +1222,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 - `UFL-1.0`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=8.0.1-1
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_8.0.1-1.dsc' harfbuzz_8.0.1-1.dsc 2542 SHA256:19ed7817867ceff5a76891a6e93635f6228a38b898d95b57a9437460812b0a1c
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_8.0.1.orig.tar.xz' harfbuzz_8.0.1.orig.tar.xz 18792332 SHA256:c1ce780acd385569f25b9a29603d1d5bc71e6940e55bfdd4f7266fad50e42620
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_8.0.1-1.debian.tar.xz' harfbuzz_8.0.1-1.debian.tar.xz 19644 SHA256:2f1d87b00396e8524a4ec2fb4a55cc776b0703788a18e77dffb098da1c2071c6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/8.0.1-1/
 
-- https://sources.debian.net/src/harfbuzz/8.0.1-1/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/8.0.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/8.0.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.23+nmu1`
 
@@ -1913,11 +1924,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libselinux=3.5-1
-'http://http.debian.net/debian/pool/main/libs/libselinux/libselinux_3.5-1.dsc' libselinux_3.5-1.dsc 2662 SHA256:b73314f88bb9def34b861fddcd0ead37ee13a7e12c94508f3a6436147c4cdf02
-'http://http.debian.net/debian/pool/main/libs/libselinux/libselinux_3.5.orig.tar.gz' libselinux_3.5.orig.tar.gz 211453 SHA256:9a3a3705ac13a2ccca2de6d652b6356fead10f36fb33115c185c5ccdf29eec19
-'http://http.debian.net/debian/pool/main/libs/libselinux/libselinux_3.5.orig.tar.gz.asc' libselinux_3.5.orig.tar.gz.asc 981 SHA256:fd37d441e0c08cabe9ac8f7815f52355bab2011549ec5792424fe18be9e1e015
-'http://http.debian.net/debian/pool/main/libs/libselinux/libselinux_3.5-1.debian.tar.xz' libselinux_3.5-1.debian.tar.xz 35804 SHA256:7e78f55b93bdbc8b991b24ec708e312604a6c39784abcf9cc6b83cd9eae3db0e
+'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.5-1.dsc' libselinux_3.5-1.dsc 2662 SHA256:b73314f88bb9def34b861fddcd0ead37ee13a7e12c94508f3a6436147c4cdf02
+'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.5.orig.tar.gz' libselinux_3.5.orig.tar.gz 211453 SHA256:9a3a3705ac13a2ccca2de6d652b6356fead10f36fb33115c185c5ccdf29eec19
+'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.5.orig.tar.gz.asc' libselinux_3.5.orig.tar.gz.asc 981 SHA256:fd37d441e0c08cabe9ac8f7815f52355bab2011549ec5792424fe18be9e1e015
+'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.5-1.debian.tar.xz' libselinux_3.5-1.debian.tar.xz 35804 SHA256:7e78f55b93bdbc8b991b24ec708e312604a6c39784abcf9cc6b83cd9eae3db0e
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libselinux/3.5-1/ (for browsing the source)
+- https://sources.debian.net/src/libselinux/3.5-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libselinux/3.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsemanage=3.5-1`
 
@@ -2453,11 +2470,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris mawk=1.3.4.20231126-1
-'http://http.debian.net/debian/pool/main/m/mawk/mawk_1.3.4.20231126-1.dsc' mawk_1.3.4.20231126-1.dsc 2180 SHA256:09d117c73898b2106a5c8372148c1c763b21ab180c032a020aa936b91708d6cb
-'http://http.debian.net/debian/pool/main/m/mawk/mawk_1.3.4.20231126.orig.tar.gz' mawk_1.3.4.20231126.orig.tar.gz 413452 SHA256:1ac1e106e2880d9f6579ad993217f4af3b6de9943f90099c8d00668cbecb4367
-'http://http.debian.net/debian/pool/main/m/mawk/mawk_1.3.4.20231126.orig.tar.gz.asc' mawk_1.3.4.20231126.orig.tar.gz.asc 729 SHA256:0eb0aadf9279fdb8f22af7c064506b54e7bb421d6b4428f6f503603ca62ca25d
-'http://http.debian.net/debian/pool/main/m/mawk/mawk_1.3.4.20231126-1.debian.tar.xz' mawk_1.3.4.20231126-1.debian.tar.xz 15544 SHA256:51371bbd2cd9cdda0f55d6d9976a3fdc58eae2ace742407d2233fd452ad6aac1
+'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20231126-1.dsc' mawk_1.3.4.20231126-1.dsc 2180 SHA256:09d117c73898b2106a5c8372148c1c763b21ab180c032a020aa936b91708d6cb
+'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20231126.orig.tar.gz' mawk_1.3.4.20231126.orig.tar.gz 413452 SHA256:1ac1e106e2880d9f6579ad993217f4af3b6de9943f90099c8d00668cbecb4367
+'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20231126.orig.tar.gz.asc' mawk_1.3.4.20231126.orig.tar.gz.asc 729 SHA256:0eb0aadf9279fdb8f22af7c064506b54e7bb421d6b4428f6f503603ca62ca25d
+'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20231126-1.debian.tar.xz' mawk_1.3.4.20231126-1.debian.tar.xz 15544 SHA256:51371bbd2cd9cdda0f55d6d9976a3fdc58eae2ace742407d2233fd452ad6aac1
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/mawk/1.3.4.20231126-1/ (for browsing the source)
+- https://sources.debian.net/src/mawk/1.3.4.20231126-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mawk/1.3.4.20231126-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mgcv=1.9-1-1`
 
@@ -3332,10 +3355,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sysvinit=3.08-5
-'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_3.08-5.dsc' sysvinit_3.08-5.dsc 2359 SHA256:898d47b5b692a5bf2d5b7e25d5464ca3bfa214aaaefad7d1837cd1687168c1d6
-'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_3.08.orig.tar.gz' sysvinit_3.08.orig.tar.gz 513674 SHA256:325e42ae4ae5ae3e4d989e0604aeb5e4eae5f3ee21e401db3c79000718f8c836
-'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_3.08-5.debian.tar.xz' sysvinit_3.08-5.debian.tar.xz 138740 SHA256:6c05dc6a295573ef6b38fc5b50dd89f093b6bd8e727faeaec4a545aa271f30ac
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08-5.dsc' sysvinit_3.08-5.dsc 2359 SHA256:898d47b5b692a5bf2d5b7e25d5464ca3bfa214aaaefad7d1837cd1687168c1d6
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08.orig.tar.gz' sysvinit_3.08.orig.tar.gz 513674 SHA256:325e42ae4ae5ae3e4d989e0604aeb5e4eae5f3ee21e401db3c79000718f8c836
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08-5.debian.tar.xz' sysvinit_3.08-5.debian.tar.xz 138740 SHA256:6c05dc6a295573ef6b38fc5b50dd89f093b6bd8e727faeaec4a545aa271f30ac
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/sysvinit/3.08-5/ (for browsing the source)
+- https://sources.debian.net/src/sysvinit/3.08-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sysvinit/3.08-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-2`
 
@@ -3508,19 +3537,13 @@ Licenses: (parsed from: `/usr/share/doc/usr-is-merged/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris usrmerge=38
-'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_38.dsc' usrmerge_38.dsc 981 SHA256:c23401bc61750179515ec2bb12303e42f6f839542c5d413ce5db7192ff1527bc
-'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_38.tar.xz' usrmerge_38.tar.xz 14804 SHA256:bc1a7973777560f5be67763abd9c1c1ff239d423f72e9209ad755f94e921d4e0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/usrmerge/38/
 
-- https://sources.debian.net/src/usrmerge/38/ (for browsing the source)
-- https://sources.debian.net/src/usrmerge/38/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/usrmerge/38/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.39.3-2`
 
