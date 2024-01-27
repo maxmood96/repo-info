@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fc010f1ef0c80dd6e82f0dcc104705fa16f92a1b1eaeff25202f252dd65550f0`
-- Created: `2024-01-22T22:59:12.591056351Z`
-- Virtual Size: ~ 411.23 Mb  
+- Image ID: `sha256:845c1fe3b0b0252326383533470ac4df3fd88d7273ed69d17d0f039e3403e31f`
+- Created: `2024-01-26T00:02:01.619784371Z`
+- Virtual Size: ~ 417.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.21+9`
+  - `JAVA_VERSION=jdk-11.0.22+7`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -1481,10 +1481,9 @@ $ apt-get source -qq --print-uris openldap=2.5.16+dfsg-0ubuntu0.22.04.1
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.2-0ubuntu1.12`
 - `openssl=3.0.2-0ubuntu1.12`
 
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -1495,10 +1494,33 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.12
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.12.dsc' openssl_3.0.2-0ubuntu1.12.dsc 2730 SHA512:2e433ebed19b390d52494526934d72152400bdc13ce2d958c03495dd13349812c2161887b5b0a4f0046aa5cd93661dcad8cdb83a388af134fb891eab981ce127
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.12.dsc' openssl_3.0.2-0ubuntu1.12.dsc 2730 SHA512:2e433ebed19b390d52494526934d72152400bdc13ce2d958c03495dd13349812c2161887b5b0a4f0046aa5cd93661dcad8cdb83a388af134fb891eab981ce127
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.12.debian.tar.xz' openssl_3.0.2-0ubuntu1.12.debian.tar.xz 206100 SHA512:2cdbd3c0c91200def2b1b49af64cda5bbb977a6ea5739a42e21f0970d1e97711ca866c574eed502bf4c1be38f64a3be679a67ae5d4589c84f532c73a1d8e6925
+```
+
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.13`
+
+Binary Packages:
+
+- `libssl3:amd64=3.0.2-0ubuntu1.13`
+
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
+
+- `Apache-2.0`
+- `Artistic`
+- `GPL-1`
+- `GPL-1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.13
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.13.dsc' openssl_3.0.2-0ubuntu1.13.dsc 2556 SHA512:008b21355745d24d9e9d03050154ee7d5caff8c5a3c14f42c12c11595edb164a29fb9aa2af922a7a11be0c74c392bbd7377dd28c06c73c5920a9994b5858ad78
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.12.debian.tar.xz' openssl_3.0.2-0ubuntu1.12.debian.tar.xz 206100 SHA512:2cdbd3c0c91200def2b1b49af64cda5bbb977a6ea5739a42e21f0970d1e97711ca866c574eed502bf4c1be38f64a3be679a67ae5d4589c84f532c73a1d8e6925
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.13.debian.tar.xz' openssl_3.0.2-0ubuntu1.13.debian.tar.xz 216532 SHA512:47dd40da04c25d4007689b8bf3be1e5520ac15e24a76af131d190f345025ab5301ba9ea47f15200e5209d278261f41cd64053e0a463666d343f26c56322bb2d8
 ```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
