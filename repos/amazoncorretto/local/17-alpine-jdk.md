@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:638e2c195048b9f210194d8586c7e2d7150aa5d1c510ca8e620a7fae6764061d`
-- Created: `2024-01-17T23:51:13.486458326Z`
+- Image ID: `sha256:81dd21d2c942e23fad983f3264e8bde6bd1c9dda4f85caec9a13b7f8b9a6aea8`
+- Created: `2024-01-27T03:22:07.490670173Z`
 - Virtual Size: ~ 289.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -188,16 +188,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r2 description:
+libcrypto3-3.1.4-r5 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r2 webpage:
+libcrypto3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r2 installed size:
+libcrypto3-3.1.4-r5 installed size:
 4500 KiB
 
-libcrypto3-3.1.4-r2 license:
+libcrypto3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -205,16 +205,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r2 description:
+libssl3-3.1.4-r5 description:
 SSL shared libraries
 
-libssl3-3.1.4-r2 webpage:
+libssl3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r2 installed size:
+libssl3-3.1.4-r5 installed size:
 548 KiB
 
-libssl3-3.1.4-r2 license:
+libssl3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -290,16 +290,16 @@ GPL-2.0-only
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3-r2 description:
+zlib-1.3.1-r0 description:
 A compression/decompression Library
 
-zlib-1.3-r2 webpage:
+zlib-1.3.1-r0 webpage:
 https://zlib.net/
 
-zlib-1.3-r2 installed size:
+zlib-1.3.1-r0 installed size:
 108 KiB
 
-zlib-1.3-r2 license:
+zlib-1.3.1-r0 license:
 Zlib
 
 ```
