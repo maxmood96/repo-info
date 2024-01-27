@@ -1,7 +1,7 @@
 ## `joomla:apache`
 
 ```console
-$ docker pull joomla@sha256:e2eabeb87ab5875e99e98cff7339984be1190a55cf330fb3147e8badb6ab4311
+$ docker pull joomla@sha256:f3035098d09704a5799f48da1b8f0cc4f1a49effd5dda017b76a4a3c79f29ae8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18,14 +18,14 @@ $ docker pull joomla@sha256:e2eabeb87ab5875e99e98cff7339984be1190a55cf330fb3147e
 ### `joomla:apache` - linux; amd64
 
 ```console
-$ docker pull joomla@sha256:abfecc53cd74de00bc4408d4ec16178cceddea8836f6efd8b7d02fd8f6df2735
+$ docker pull joomla@sha256:bf0c0d77b15ec86844fd8c05b4d92c77acdc45803a195809d37d3baa4e8b88e0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **232.6 MB (232634800 bytes)**  
+-	Total Size: **260.8 MB (260844296 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8fd7ab4eaebe5916b62c08479b63a384ba09d25db7968f08c240856df69555f`
+-	Image ID: `sha256:fc01b29ebe74e6b9978acc9fb2a732287547dcd77935e80ecc71fc334fedc43f`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -96,29 +96,29 @@ LABEL maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joom
 ENV JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1
 # Thu, 11 Jan 2024 18:43:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ghostscript 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 11 Jan 2024 18:46:27 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libbz2-dev 		libgmp-dev 		libicu-dev 		libfreetype6-dev 		libjpeg-dev 		libldap2-dev 		libmemcached-dev 		libmagickwand-dev 		libpq-dev 		libpng-dev 		libwebp-dev 		libzip-dev 	; 		docker-php-ext-configure gd 		--with-freetype 		--with-jpeg 		--with-webp 	; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		bz2 		bcmath 		exif 		gd 		gmp 		intl 		ldap 		mysqli 		pdo_mysql 		pdo_pgsql 		pgsql 		zip 	; 	pecl install imagick-3.7.0; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 	pecl install APCu-5.1.23; 	pecl install memcached-3.2.0; 	pecl install redis-6.0.2; 		docker-php-ext-enable 		apcu 		memcached 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$extDir"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]
-# Thu, 11 Jan 2024 18:46:28 GMT
-RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Thu, 11 Jan 2024 18:46:28 GMT
+# Fri, 26 Jan 2024 21:54:58 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libbz2-dev 		libgmp-dev 		libicu-dev 		libfreetype6-dev 		libjpeg-dev 		libldap2-dev 		libmemcached-dev 		libmagickwand-dev 		libpq-dev 		libpng-dev 		libwebp-dev 		libzip-dev 	; 		docker-php-ext-configure gd 		--with-freetype 		--with-jpeg 		--with-webp 	; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		bz2 		bcmath 		exif 		gd 		gmp 		intl 		ldap 		mysqli 		pdo_mysql 		pdo_pgsql 		pgsql 		zip 	; 	pecl install imagick-3.7.0; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 	pecl install APCu-5.1.23; 	pecl install memcached-3.2.0; 	pecl install redis-6.0.2; 		docker-php-ext-enable 		apcu 		memcached 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$extDir"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]
+# Fri, 26 Jan 2024 21:54:59 GMT
+RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
+# Fri, 26 Jan 2024 21:55:00 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini
-# Thu, 11 Jan 2024 18:46:29 GMT
-RUN set -eux; 	a2enmod rewrite expires; 		a2enmod remoteip; 	{ 		echo 'RemoteIPHeader X-Forwarded-For'; 		echo 'RemoteIPTrustedProxy 10.0.0.0/8'; 		echo 'RemoteIPTrustedProxy 172.16.0.0/12'; 		echo 'RemoteIPTrustedProxy 192.168.0.0/16'; 		echo 'RemoteIPTrustedProxy 169.254.0.0/16'; 		echo 'RemoteIPTrustedProxy 127.0.0.0/8'; 	} > /etc/apache2/conf-available/remoteip.conf; 	a2enconf remoteip; 	find /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+"[^"]*)%h([^"]*")/\1%a\2/g' '{}' +
-# Thu, 11 Jan 2024 18:46:29 GMT
+# Fri, 26 Jan 2024 21:55:01 GMT
+RUN set -eux; 	a2enmod rewrite expires; 		a2enmod remoteip; 	{ 		echo 'RemoteIPHeader X-Forwarded-For'; 		echo 'RemoteIPInternalProxy 10.0.0.0/8'; 		echo 'RemoteIPInternalProxy 172.16.0.0/12'; 		echo 'RemoteIPInternalProxy 192.168.0.0/16'; 		echo 'RemoteIPInternalProxy 169.254.0.0/16'; 		echo 'RemoteIPInternalProxy 127.0.0.0/8'; 	} > /etc/apache2/conf-available/remoteip.conf; 	a2enconf remoteip; 	find /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+"[^"]*)%h([^"]*")/\1%a\2/g' '{}' +
+# Fri, 26 Jan 2024 21:55:01 GMT
 VOLUME [/var/www/html]
-# Thu, 11 Jan 2024 18:46:29 GMT
+# Fri, 26 Jan 2024 21:55:01 GMT
 ENV JOOMLA_VERSION=4.4.2
-# Thu, 11 Jan 2024 18:46:29 GMT
+# Fri, 26 Jan 2024 21:55:01 GMT
 ENV JOOMLA_SHA512=56a200c95e517a53255c1183b5de63fd136a662296d05ea45e663f58786c21595e6672e9ffe8c7f1f6ab194c3f080bc5d6236d560675e36d3d3cf1064d72c931
-# Thu, 11 Jan 2024 18:46:36 GMT
+# Fri, 26 Jan 2024 21:55:07 GMT
 RUN set -ex; 	curl -o joomla.tar.bz2 -SL https://github.com/joomla/joomla-cms/releases/download/4.4.2/Joomla_4.4.2-Stable-Full_Package.tar.bz2; 	echo "$JOOMLA_SHA512 *joomla.tar.bz2" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar -xf joomla.tar.bz2 -C /usr/src/joomla; 	rm joomla.tar.bz2; 	chown -R www-data:www-data /usr/src/joomla
-# Mon, 22 Jan 2024 22:46:49 GMT
+# Fri, 26 Jan 2024 21:55:08 GMT
 COPY file:6dcb949f1bfc58f87c0887173eb61a91c7f9c1290655683ed002e25b7aeb694a in /entrypoint.sh 
-# Mon, 22 Jan 2024 22:46:49 GMT
+# Fri, 26 Jan 2024 21:55:08 GMT
 COPY file:4365854cfba2f0673f4930c9c90629a51419815bb2048df2d1803bf1a9d79fd6 in /makedb.php 
-# Mon, 22 Jan 2024 22:46:49 GMT
+# Fri, 26 Jan 2024 21:55:08 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Mon, 22 Jan 2024 22:46:49 GMT
+# Fri, 26 Jan 2024 21:55:08 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -179,33 +179,33 @@ CMD ["apache2-foreground"]
 		Last Modified: Thu, 11 Jan 2024 19:04:04 GMT  
 		Size: 26.3 MB (26256782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6d986c03351218927d0933c631979ceb8f253da93a7e3d63eb93cf2da80ae96`  
-		Last Modified: Thu, 11 Jan 2024 19:04:00 GMT  
-		Size: 3.7 MB (3716981 bytes)  
+	-	`sha256:e813cc4f8da37e1e4408dbb194f7ca2fba3c0f094a3b4654d321d62cf24028d8`  
+		Last Modified: Fri, 26 Jan 2024 22:11:07 GMT  
+		Size: 31.9 MB (31926505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f47205e57276be14e058e95aea0932532aced0e1eccb35224f8442878d79c7e`  
-		Last Modified: Thu, 11 Jan 2024 19:04:00 GMT  
-		Size: 374.0 B  
+	-	`sha256:d7f6cd3da07aa2fb0fa957526529497a25cebd1802e69669b27ab9cb2a953998`  
+		Last Modified: Fri, 26 Jan 2024 22:11:02 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cbdca4c5d0dc0fe035bc4eafaea053d3e12bea9ddeb89c6d5bca041ff34e85e6`  
-		Last Modified: Thu, 11 Jan 2024 19:03:58 GMT  
+	-	`sha256:fb30b36960e21840df97c4a538fedf212ea20716fb483d1f607ba27fb29352be`  
+		Last Modified: Fri, 26 Jan 2024 22:11:00 GMT  
 		Size: 391.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cbb94c007afabba612ad40d2c4e94b1cea12e9c1274116b50473c749f184e82d`  
-		Last Modified: Thu, 11 Jan 2024 19:03:58 GMT  
-		Size: 19.2 KB (19168 bytes)  
+	-	`sha256:e25b9ae0c27f0674b6e16198dc9e9eb4cfef4191cc0ff136bc206a3d1625ad9f`  
+		Last Modified: Fri, 26 Jan 2024 22:11:00 GMT  
+		Size: 19.2 KB (19159 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be7533ed0b7e544f532cbf9776cb5a3ffede9470861ff30a616b59b874292e00`  
-		Last Modified: Thu, 11 Jan 2024 19:04:02 GMT  
-		Size: 25.4 MB (25444767 bytes)  
+	-	`sha256:f8b75bf9b9f5b80e04e6b23327033701ffb7e0bd744d423f4299629e2086b948`  
+		Last Modified: Fri, 26 Jan 2024 22:11:11 GMT  
+		Size: 25.4 MB (25444761 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35dca72a65453d1f6f749ac11eeabd49f1c7df679e8fd3c889ec8454751aaa9b`  
-		Last Modified: Mon, 22 Jan 2024 22:49:43 GMT  
+	-	`sha256:5b784f344dab50305de7babc1970798b3c563270d0f32cc44e9ec90e7b3881f0`  
+		Last Modified: Fri, 26 Jan 2024 22:11:00 GMT  
 		Size: 2.7 KB (2737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ce464f920f26b2e33796c38b8f5216a2804c76cd423b0db834c6efd76027fb9`  
-		Last Modified: Mon, 22 Jan 2024 22:49:43 GMT  
-		Size: 1.1 KB (1062 bytes)  
+	-	`sha256:04fe93893f2aa937955ba2f15d064c27d937e6fe51e9c201b3559a3db188c69c`  
+		Last Modified: Fri, 26 Jan 2024 22:11:00 GMT  
+		Size: 1.1 KB (1061 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `joomla:apache` - linux; arm variant v5
