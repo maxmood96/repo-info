@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c73b630f5fd5dc3c4ccad8c1682dbdb6e56b462157925d55ecf8bd2fb278ad1a`
+- Image ID: `sha256:0fc7bbb93f6f5630a245d4d3511f3678f5a3ceb6954fe3ddd587ad9a9b16592f`
 - Created: `2023-12-11T11:12:11Z`
 - Virtual Size: ~ 413.56 Mb  
   (total size of all layers on-disk)
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u392-b08`
+  - `JAVA_VERSION=jdk8u402-b06`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 - Labels:
