@@ -1,7 +1,7 @@
 ## `irssi:alpine3.18`
 
 ```console
-$ docker pull irssi@sha256:6bf0785f2eaa88a929a65ac07c774499cf444cadf902739888baaf0cc79f185d
+$ docker pull irssi@sha256:83b47b95828439a575d35d822ca089a85e5efd9ee2df6734afc01096f04b3489
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -435,18 +435,18 @@ $ docker pull irssi@sha256:d7e896f39991af1e19a5fea9c4353550ddd15bbb4fa05afc17e02
 ### `irssi:alpine3.18` - linux; ppc64le
 
 ```console
-$ docker pull irssi@sha256:9c9e58cecb2a60d8f94969085766c8889efbf766f96f59995d5c7b98d1098ad2
+$ docker pull irssi@sha256:a0a400f2133847c9bbfa653f898fc72042aac4b03cb1371156d8726812131313
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.7 MB (18717052 bytes)**  
+-	Total Size: **18.7 MB (18717231 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47be3724f03dc5882cc67a78b812dd6776c63edffaba6e670d48085ce1472f7a`
+-	Image ID: `sha256:ac0def155df329eeefa5360cf54f1657dc7731e2f631182fce7e96924a4cabb8`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
 # Tue, 03 Oct 2023 09:06:10 GMT
-ADD file:3450a1687b552498a987f87cb844b7f597c7181d7c3d31943d7b3036d5300d5e in / 
+ADD file:9adfbd84cce437533ba2c9cac17cd508a477a1a94523005875b2f04ddac20112 in / 
 # Tue, 03 Oct 2023 09:06:10 GMT
 CMD ["/bin/sh"]
 # Tue, 03 Oct 2023 09:06:10 GMT
@@ -470,21 +470,21 @@ CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:4e13780adf2776477b14ef9c0f4f563f820a2fde166d472218037b979e84d31a`  
-		Last Modified: Thu, 30 Nov 2023 23:20:01 GMT  
-		Size: 3.3 MB (3348322 bytes)  
+	-	`sha256:08384a48688a8dcab52a530af58b9cbe1f870dd11e2ef2d0d645d658bd2ac537`  
+		Last Modified: Sat, 27 Jan 2024 00:28:24 GMT  
+		Size: 3.3 MB (3348487 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d37696a9b7f09eb3052928fc0b0a2bf6b1a9d8a79f15198f00b8f3d7c6f2180e`  
-		Last Modified: Wed, 20 Dec 2023 21:09:16 GMT  
-		Size: 9.7 MB (9736559 bytes)  
+	-	`sha256:fc74fa4ba26fc8c0460833da6460f59a2b7fdb551209793e9177aa8e4f59346c`  
+		Last Modified: Sat, 27 Jan 2024 09:47:30 GMT  
+		Size: 9.7 MB (9736547 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d528e90d2e0d255c01bbbc4d2ead9da704d8bdd46c9941f6e25e61535c53d4e0`  
-		Last Modified: Wed, 20 Dec 2023 21:09:15 GMT  
-		Size: 1.3 KB (1260 bytes)  
+	-	`sha256:596eae301f8ffae57ffc8c11b668ca24b994f12d9935de6216884db8f13188d3`  
+		Last Modified: Sat, 27 Jan 2024 09:47:29 GMT  
+		Size: 1.3 KB (1259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6afb000755ce978e9c79e6e950a600241bef0c449da1370170c9ed808493a309`  
-		Last Modified: Wed, 20 Dec 2023 21:09:16 GMT  
-		Size: 5.6 MB (5630879 bytes)  
+	-	`sha256:e65ab57b806e5436452de1e909990c85bf46bb183048518a40b3e91cceaa914d`  
+		Last Modified: Sat, 27 Jan 2024 09:47:30 GMT  
+		Size: 5.6 MB (5630906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -494,25 +494,25 @@ CMD ["irssi"]
 ### `irssi:alpine3.18` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:dc9c2d5721c50d04edfdd24dff32af69861be9998efaa742fe7a60cbb6910e5a
+$ docker pull irssi@sha256:c822cd405d36a575a6a510133bbc7870de59eabfd7fc4a2bb9485e127fa82363
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **990.8 KB (990779 bytes)**  
+-	Total Size: **990.9 KB (990946 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e21d3be4a225b0dee4f04888c254c8da7545ae5d64238735a130e36cf0b3ca5`
+-	Image ID: `sha256:e00c5eb1975042e0f47315f4ba48ed6fe69fbb8e39eb0c845ac7edf8cea9bc47`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a940fbde6476c7e256b3940a1c2571f77dc47966416e58880da03224a07fc411`  
-		Last Modified: Wed, 20 Dec 2023 21:09:15 GMT  
+	-	`sha256:51daf79105767963a7bfa2160a6d94beb71eecf88329550e2f9150d944fc2a52`  
+		Last Modified: Sat, 27 Jan 2024 09:47:29 GMT  
 		Size: 973.5 KB (973452 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:83574fc30d526c7e54ab92e98efeac06578035a04067c1ff1e80c611f8171a86`  
-		Last Modified: Wed, 20 Dec 2023 21:09:15 GMT  
-		Size: 17.3 KB (17327 bytes)  
+	-	`sha256:6afd3a59a575c01cda08047a63543de5e7a3b3293e87e18e1bb870d4a2df4e74`  
+		Last Modified: Sat, 27 Jan 2024 09:47:29 GMT  
+		Size: 17.5 KB (17494 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:alpine3.18` - linux; s390x
