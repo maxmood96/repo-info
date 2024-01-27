@@ -1,7 +1,7 @@
 ## `elixir:otp-24-alpine`
 
 ```console
-$ docker pull elixir@sha256:95f36507b610df619047fd8563cb8921b31a7a3ecdf37db1f937447ecea8b818
+$ docker pull elixir@sha256:7718cbe86cff2217403740480d252d6527b7968653b3297589a14dd4eec76bc9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -164,19 +164,19 @@ $ docker pull elixir@sha256:e489cef4c430fd76e1c5c4799adb697f23b594f2f8f0a48226e4
 ### `elixir:otp-24-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull elixir@sha256:b98dc7e029d6daf5870c1f8ac9a098e6c4fe48f8aa5be1853574b68e10507aed
+$ docker pull elixir@sha256:12e4edd097f53186fe15da0a1ed397b5c913d841b7edf68084d0232e5e2f7a70
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.3 MB (56272699 bytes)**  
+-	Total Size: **54.4 MB (54368799 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d585ac466262c66c21391c9cfd4891bcfba0845480be276e0ab13b62f25ff9d`
+-	Image ID: `sha256:ccea84e91191023eab7c888e3b84174c0921d159162b85a2b5dcd589111128fe`
 -	Default Command: `["iex"]`
 
 ```dockerfile
-# Thu, 30 Nov 2023 23:11:07 GMT
-ADD file:e5c66967d6570e36da50c9d42dd8f8f55e6c6a65b92c79601ea9e750c076fa2a in / 
-# Thu, 30 Nov 2023 23:11:07 GMT
+# Sat, 23 Dec 2023 22:14:59 GMT
+ADD file:c3b6b575eb741f914ec12bd4df43de0cb044a1f2bae7ff15d176e49b5986d903 in / 
+# Sat, 23 Dec 2023 22:14:59 GMT
 CMD ["/bin/sh"]
 # Sat, 23 Dec 2023 22:14:59 GMT
 ENV OTP_VERSION=24.3.4.15 REBAR3_VERSION=3.20.0
@@ -195,41 +195,41 @@ CMD ["iex"]
 ```
 
 -	Layers:
-	-	`sha256:b8180c93b172865af87a7c0e7e3c8bcb139e0d0c92e19c96467ff2cd4c8919ad`  
-		Last Modified: Thu, 30 Nov 2023 23:11:45 GMT  
-		Size: 3.3 MB (3258348 bytes)  
+	-	`sha256:5385a9a590c3e2872b3ed27554a56fb7ce544c694b41b9b95d70fa86f30b0566`  
+		Last Modified: Fri, 26 Jan 2024 23:45:40 GMT  
+		Size: 3.3 MB (3258283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3048f82d5ce8226ff01355b6a6863da07ec62bd22070d7a6fceb6ba91a331789`  
-		Last Modified: Thu, 11 Jan 2024 22:53:23 GMT  
-		Size: 46.2 MB (46210388 bytes)  
+	-	`sha256:d3e8aa3f0f13c1c7b02934457b54f4a2b9841e62d82f5d48c885638af9db9e49`  
+		Last Modified: Sat, 27 Jan 2024 04:13:32 GMT  
+		Size: 44.3 MB (44306698 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f00531cdb7ad4292937de5deefd2cdabda1f133acea10806118bfdb2551d5e0`  
-		Last Modified: Fri, 12 Jan 2024 01:37:58 GMT  
-		Size: 6.8 MB (6803963 bytes)  
+	-	`sha256:d153ce2667576004ca418af18aa2b5970f1c8fe81675a89e57fcd502d8c01432`  
+		Last Modified: Sat, 27 Jan 2024 19:34:07 GMT  
+		Size: 6.8 MB (6803818 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elixir:otp-24-alpine` - unknown; unknown
 
 ```console
-$ docker pull elixir@sha256:7d3757369990500f5f422207889e9e9db54891b73cbd1d5fb50afa7725a6eede
+$ docker pull elixir@sha256:c8065501b5bbbb94681c31d0d86ed1aab31a57a7b7e4cefd7116b0e0376b702e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **201.1 KB (201067 bytes)**  
+-	Total Size: **201.1 KB (201066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5654ccb5b2f76435f8f12e6a316bd5da3216bcfcdc897d1fdcfff13426f6f1d6`
+-	Image ID: `sha256:58b5abc125a41cc24cce39a86335f3426c81a1a75b3dbb37182a723e25760660`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:84a33e307436c76db567b44f219ddeedf588b266648959408e44f505caa29a37`  
-		Last Modified: Fri, 12 Jan 2024 01:37:58 GMT  
+	-	`sha256:1f828d761ea6575aa904bf09d8e71e257f7a9db0308609763dc72d165e94fbcf`  
+		Last Modified: Sat, 27 Jan 2024 19:34:06 GMT  
 		Size: 191.5 KB (191470 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c6a67d597c708fa79c08032f3f8b8ce9217fa7dc59c48df05613910c752e2d89`  
-		Last Modified: Fri, 12 Jan 2024 01:37:57 GMT  
-		Size: 9.6 KB (9597 bytes)  
+	-	`sha256:ac049d2cab77884f97df6f3e8f91176e66dfcd0064f675baeaf6fdad80b8ca08`  
+		Last Modified: Sat, 27 Jan 2024 19:34:06 GMT  
+		Size: 9.6 KB (9596 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `elixir:otp-24-alpine` - linux; 386
