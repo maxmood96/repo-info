@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1aacde782b476a5e4908d5a21a47ed7ec94226b27d05385f244b9f86ca7f0782`
-- Created: `2024-01-17T17:21:12.618103952Z`
+- Image ID: `sha256:dfe1aefdc676ac0e23865ba90ae406a9d5e2df163dee7f4a2edc086544c75312`
+- Created: `2024-01-25T23:45:18.988630708Z`
 - Virtual Size: ~ 1.01 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.9+9`
+  - `JAVA_VERSION=jdk-17.0.10+7`
   - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz`
   - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz.asc`
   - `GPG_KEY=FC3AE3A7EAA1BAC98770840E7E1ABCC53AAA2216`
@@ -2128,11 +2128,11 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-91.101`
+### `dpkg` source package: `linux=5.15.0-92.102`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-91.101`
+- `linux-libc-dev:amd64=5.15.0-92.102`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2141,10 +2141,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.15.0-91.101
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-91.101.dsc' linux_5.15.0-91.101.dsc 7694 SHA512:2e50c28ba96d5f3c6bdf4b3a2061240ff1d413343d732e4dbc2c7702dd30e1da87294fdf73ad83510ddd131d6674204785c0c4639d2bf6669fe5c9e2dd6be149
+$ apt-get source -qq --print-uris linux=5.15.0-92.102
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-92.102.dsc' linux_5.15.0-92.102.dsc 7381 SHA512:54556645647e55047449d0201c2c987a45c619177ae30b8a53f07fb26c174e8d9e053e8655d00786d8ba6e87fe90ac999c7da7fba989db1418ac16fce9df148f
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-91.101.diff.gz' linux_5.15.0-91.101.diff.gz 11207253 SHA512:dd99ec0c72baa3df8ad3b52e8cf9e9318b51f6358603333b747b832edb0bf95656a8d15b286a1eb4a270b44c35029651fa17c04587c4fd3b3d2ee87b495a440f
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-92.102.diff.gz' linux_5.15.0-92.102.diff.gz 11210242 SHA512:bc650bfc21330bc47f33916d9868f504ac2af000f4c6b9ccc755982105d740acb1f76e00a3ba3d260f6a41aa5a2b09643e773f02c51d25ebd2e7c6c95fd0329c
 ```
 
 ### `dpkg` source package: `lmdb=0.9.24-1build2`
@@ -2629,10 +2629,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.12
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.12.dsc' openssl_3.0.2-0ubuntu1.12.dsc 2730 SHA512:2e433ebed19b390d52494526934d72152400bdc13ce2d958c03495dd13349812c2161887b5b0a4f0046aa5cd93661dcad8cdb83a388af134fb891eab981ce127
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.12.debian.tar.xz' openssl_3.0.2-0ubuntu1.12.debian.tar.xz 206100 SHA512:2cdbd3c0c91200def2b1b49af64cda5bbb977a6ea5739a42e21f0970d1e97711ca866c574eed502bf4c1be38f64a3be679a67ae5d4589c84f532c73a1d8e6925
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.12.dsc' openssl_3.0.2-0ubuntu1.12.dsc 2730 SHA512:2e433ebed19b390d52494526934d72152400bdc13ce2d958c03495dd13349812c2161887b5b0a4f0046aa5cd93661dcad8cdb83a388af134fb891eab981ce127
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.12.debian.tar.xz' openssl_3.0.2-0ubuntu1.12.debian.tar.xz 206100 SHA512:2cdbd3c0c91200def2b1b49af64cda5bbb977a6ea5739a42e21f0970d1e97711ca866c574eed502bf4c1be38f64a3be679a67ae5d4589c84f532c73a1d8e6925
 ```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
@@ -2668,18 +2668,36 @@ $ apt-get source -qq --print-uris p11-kit=0.24.0-6build1
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.4.0-11ubuntu2.3`
-- `libpam-modules-bin=1.4.0-11ubuntu2.3`
 - `libpam-runtime=1.4.0-11ubuntu2.3`
 - `libpam0g:amd64=1.4.0-11ubuntu2.3`
 
-Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
 - `GPL`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `pam=1.4.0-11ubuntu2.4`
+
+Binary Packages:
+
+- `libpam-modules:amd64=1.4.0-11ubuntu2.4`
+- `libpam-modules-bin=1.4.0-11ubuntu2.4`
+
+Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`)
+
+- `GPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris pam=1.4.0-11ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.4.dsc' pam_1.4.0-11ubuntu2.4.dsc 2728 SHA512:6f0a003b6b3032683e02e6441bd2d9bcd4e9d9e36d2909bccda271dfdfc09bc0932f54f910c3fefebef49d31a2d95315b9d2cd31ea9793ce67fcb00052dec8d1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA512:26eda95c45598a500bc142da4d1abf93d03b3bbb0f2390fa87c72dcbffa208dbfa115c0b411095c31ee9955e36422ccf3e2df3bd486818fafffef8c4310798c4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.4.debian.tar.xz' pam_1.4.0-11ubuntu2.4.debian.tar.xz 169452 SHA512:b5e0a07d9bc19ea43e9f209ad4a4971de32cee61784477b90162d81f387070efa877462002a51e0806f7d49bcdd6c9a25cdbcc84716f3d75ed8194c9bce642b0
+```
 
 ### `dpkg` source package: `patch=2.7.6-7build2`
 

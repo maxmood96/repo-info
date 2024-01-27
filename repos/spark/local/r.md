@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:990a9ca4a56b0d494e1ad70f94354c6d93b89dd2fc0134ea4f7192540e060a27`
-- Created: `2023-12-16T15:12:32.827070064Z`
+- Image ID: `sha256:a684ee5c5f834d5cb44785e116866fe28a6ed5bbab17bc7623bc96c9fb669b31`
+- Created: `2024-01-25T23:47:28.534928235Z`
 - Virtual Size: ~ 1.32 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.21+9`
+  - `JAVA_VERSION=jdk-11.0.22+7`
   - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz`
   - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz.asc`
   - `GPG_KEY=FC3AE3A7EAA1BAC98770840E7E1ABCC53AAA2216`
@@ -230,16 +230,16 @@ $ apt-get source -qq --print-uris bind9=1:9.16.1-0ubuntu2.16
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.16.1-0ubuntu2.16.debian.tar.xz' bind9_9.16.1-0ubuntu2.16.debian.tar.xz 87596 SHA512:7de4d2c0fb0bba15e619270fcbc8bc8d6ddeb013f64c160e4406bd79a0ea8cccb0e7e050aa535a3450e1f8c0548170e4d944c05c1e4cde118d59be47b49190cb
 ```
 
-### `dpkg` source package: `binutils=2.34-6ubuntu1.7`
+### `dpkg` source package: `binutils=2.34-6ubuntu1.8`
 
 Binary Packages:
 
-- `binutils=2.34-6ubuntu1.7`
-- `binutils-common:amd64=2.34-6ubuntu1.7`
-- `binutils-x86-64-linux-gnu=2.34-6ubuntu1.7`
-- `libbinutils:amd64=2.34-6ubuntu1.7`
-- `libctf-nobfd0:amd64=2.34-6ubuntu1.7`
-- `libctf0:amd64=2.34-6ubuntu1.7`
+- `binutils=2.34-6ubuntu1.8`
+- `binutils-common:amd64=2.34-6ubuntu1.8`
+- `binutils-x86-64-linux-gnu=2.34-6ubuntu1.8`
+- `libbinutils:amd64=2.34-6ubuntu1.8`
+- `libctf-nobfd0:amd64=2.34-6ubuntu1.8`
+- `libctf0:amd64=2.34-6ubuntu1.8`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
 
@@ -247,9 +247,14 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris binutils=2.34-6ubuntu1.8
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.8.dsc' binutils_2.34-6ubuntu1.8.dsc 8521 SHA512:73cc3af442e392b7b070f03417db3dd5f7b0a0aef58ee58abe7dc0fdd6a4aa5f07ed772536ee51c00ee57dfb5c7e302ee402bc2c583ba9977044d86d3d4565fd
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34.orig.tar.xz' binutils_2.34.orig.tar.xz 21637796 SHA512:2c7976939dcf5e8c5b7374cccd39bfe803b1bec73c6abfa0eb17c24e1942574c6bdb874c66a092a82adc443182eacd8a5a8001c19a76101f0c7ba40c27de0bbd
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.8.debian.tar.xz' binutils_2.34-6ubuntu1.8.debian.tar.xz 168440 SHA512:33cf58aeb644bc6c274b6abd19209a957048d16a6c1f37165e256b717e0cdf48f81ff611c952f98bbd186895f6b6d5bb3c3f7459131d4d6d0d64798ec4597547
+```
 
 ### `dpkg` source package: `boot=1.3-24-2`
 
@@ -3687,11 +3692,11 @@ $ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4%2bdfsg-3ubuntu0.1.debian.tar.xz' libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz 17300 SHA512:0484891be5603d00bd57b799c708b9395fccbaa8c6c44f535377f6fa2c7ac22c01c8a3c1b45e1c1f3c30f19dc74d510626bf82067fcbfb53c39f1bcc2249affe
 ```
 
-### `dpkg` source package: `linux=5.4.0-169.187`
+### `dpkg` source package: `linux=5.4.0-170.188`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.4.0-169.187`
+- `linux-libc-dev:amd64=5.4.0-170.188`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3700,10 +3705,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.4.0-169.187
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-169.187.dsc' linux_5.4.0-169.187.dsc 7425 SHA512:51c16c9e36982c98abcbef7262bf1b3bf4221007dfbc194c7b6fd7d6328227c2d060305eabada48992a76c420f768d59ece69f804b9ae16bc5303dbe249d7516
+$ apt-get source -qq --print-uris linux=5.4.0-170.188
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-170.188.dsc' linux_5.4.0-170.188.dsc 7067 SHA512:781cf2cb2a6e2e78838e2802f5172bef0c48fbdcf83fd187af10f9a28289fd1b410c2f21a381c399b187a6b2d444e3dae49b2f7fd9414ffad2826b4462446788
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-169.187.diff.gz' linux_5.4.0-169.187.diff.gz 11336503 SHA512:898b14e3f2871991a8883915b12be871a33303583f91d81230081afaba48deaf5550af17a8ab5f98e1b0fce78660892670a5019abb1ebc0ac8aa1df0c7210b95
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-170.188.diff.gz' linux_5.4.0-170.188.diff.gz 11339150 SHA512:de033e73abe7da41c76aa4cae3cda85c811ae60e96907ecf233cd5d2ad43d863fc8f6fbecead242a8a3a7868d294a9dd57d2709dc518b74495cf00ff1f8fefe9
 ```
 
 ### `dpkg` source package: `llvm-toolchain-12=1:12.0.0-3ubuntu1~20.04.5`
@@ -4257,18 +4262,36 @@ $ apt-get source -qq --print-uris p11-kit=0.23.20-1ubuntu0.1
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.3.1-5ubuntu4.6`
-- `libpam-modules-bin=1.3.1-5ubuntu4.6`
 - `libpam-runtime=1.3.1-5ubuntu4.6`
 - `libpam0g:amd64=1.3.1-5ubuntu4.6`
 
-Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
 - `GPL`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `pam=1.3.1-5ubuntu4.7`
+
+Binary Packages:
+
+- `libpam-modules:amd64=1.3.1-5ubuntu4.7`
+- `libpam-modules-bin=1.3.1-5ubuntu4.7`
+
+Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`)
+
+- `GPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris pam=1.3.1-5ubuntu4.7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.7.dsc' pam_1.3.1-5ubuntu4.7.dsc 2724 SHA512:8a5b76e1928b1a568358349807188e5f367790531087a1116a10071ac11daaa25aa73ea95cf1d9197c7052fbbf993122ac9f257270b1b70dc98be29d1a989a81
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1.orig.tar.xz' pam_1.3.1.orig.tar.xz 912332 SHA512:6bc8e2a5b64686f0a23846221c5228c88418ba485b17c53b3a12f91262b5bb73566d6b6a5daa1f63bbae54310aee918b987e44a72ce809b4e7c668f0fadfe08e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.7.debian.tar.xz' pam_1.3.1-5ubuntu4.7.debian.tar.xz 172868 SHA512:85b8c3aadb9f2d88a887b7e91f73a533a55ab2a78a0c1999b1928c3e0a3601e5a5249d0b248d7a69734fb22bb9fc270a34370279466f65efc32af2c2425abb23
+```
 
 ### `dpkg` source package: `pango1.0=1.44.7-2ubuntu4`
 

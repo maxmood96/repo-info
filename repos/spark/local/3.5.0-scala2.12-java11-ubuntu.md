@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:55625ddbf4c5f36681876b8f74cfbc0fa7e009b8922b30d5cf0530ea1233f883`
-- Created: `2023-12-16T15:05:06.233628235Z`
-- Virtual Size: ~ 677.97 Mb  
+- Image ID: `sha256:8fc648235f608c938527050519b164844393e49fd0bfaae7011dca1dd7f1092e`
+- Created: `2024-01-25T23:33:16.86098607Z`
+- Virtual Size: ~ 679.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.21+9`
+  - `JAVA_VERSION=jdk-11.0.22+7`
   - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz`
   - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz.asc`
   - `GPG_KEY=FC3AE3A7EAA1BAC98770840E7E1ABCC53AAA2216`
@@ -1784,18 +1784,36 @@ $ apt-get source -qq --print-uris p11-kit=0.23.20-1ubuntu0.1
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.3.1-5ubuntu4.6`
-- `libpam-modules-bin=1.3.1-5ubuntu4.6`
 - `libpam-runtime=1.3.1-5ubuntu4.6`
 - `libpam0g:amd64=1.3.1-5ubuntu4.6`
 
-Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
 - `GPL`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `pam=1.3.1-5ubuntu4.7`
+
+Binary Packages:
+
+- `libpam-modules:amd64=1.3.1-5ubuntu4.7`
+- `libpam-modules-bin=1.3.1-5ubuntu4.7`
+
+Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`)
+
+- `GPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris pam=1.3.1-5ubuntu4.7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.7.dsc' pam_1.3.1-5ubuntu4.7.dsc 2724 SHA512:8a5b76e1928b1a568358349807188e5f367790531087a1116a10071ac11daaa25aa73ea95cf1d9197c7052fbbf993122ac9f257270b1b70dc98be29d1a989a81
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1.orig.tar.xz' pam_1.3.1.orig.tar.xz 912332 SHA512:6bc8e2a5b64686f0a23846221c5228c88418ba485b17c53b3a12f91262b5bb73566d6b6a5daa1f63bbae54310aee918b987e44a72ce809b4e7c668f0fadfe08e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.7.debian.tar.xz' pam_1.3.1-5ubuntu4.7.debian.tar.xz 172868 SHA512:85b8c3aadb9f2d88a887b7e91f73a533a55ab2a78a0c1999b1928c3e0a3601e5a5249d0b248d7a69734fb22bb9fc270a34370279466f65efc32af2c2425abb23
+```
 
 ### `dpkg` source package: `pcre2=10.34-7ubuntu0.1`
 
