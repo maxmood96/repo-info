@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:74dbcefde54ebe439d80f537dd52e35fb68dbf6fa629bba7123640982c2c5c48`
-- Created: `2023-12-01T07:00:33.040821187Z`
+- Image ID: `sha256:3fb5b502e12e38ac633274835a6228068f1b05fe2364e42e1f89230d0ddeb077`
+- Created: `2024-01-27T00:51:15.895168578Z`
 - Virtual Size: ~ 8.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -161,16 +161,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `cjson`
 
 ```console
-cjson-1.7.15-r4 description:
+cjson-1.7.17-r0 description:
 Lighweight JSON parser in C
 
-cjson-1.7.15-r4 webpage:
+cjson-1.7.17-r0 webpage:
 https://github.com/DaveGamble/cJSON
 
-cjson-1.7.15-r4 installed size:
+cjson-1.7.17-r0 installed size:
 44 KiB
 
-cjson-1.7.15-r4 license:
+cjson-1.7.17-r0 license:
 MIT
 
 ```
@@ -195,16 +195,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r1 description:
+libcrypto3-3.1.4-r5 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r1 webpage:
+libcrypto3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r1 installed size:
+libcrypto3-3.1.4-r5 installed size:
 4472 KiB
 
-libcrypto3-3.1.4-r1 license:
+libcrypto3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -212,16 +212,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r1 description:
+libssl3-3.1.4-r5 description:
 SSL shared libraries
 
-libssl3-3.1.4-r1 webpage:
+libssl3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r1 installed size:
+libssl3-3.1.4-r5 installed size:
 552 KiB
 
-libssl3-3.1.4-r1 license:
+libssl3-3.1.4-r5 license:
 Apache-2.0
 
 ```
