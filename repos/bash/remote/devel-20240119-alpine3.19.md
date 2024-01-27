@@ -1,7 +1,7 @@
 ## `bash:devel-20240119-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:71b52da6417770c4f491583bd1e5f578af61d63c1da84e63f6440263cda487c7
+$ docker pull bash@sha256:0d0cb6106605ae49444aed41ec1c9af36fb933842272d9d89628ba5877df5fa0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -230,20 +230,20 @@ $ docker pull bash@sha256:195a6409606950b190dc8d2a4854180b5ff947bf69ce0646a55936
 ### `bash:devel-20240119-alpine3.19` - linux; arm64 variant v8
 
 ```console
-$ docker pull bash@sha256:15eca162c2013f5672734e3eda8e4071bcbe6934980e661a71b63a6ddaaaa5ee
+$ docker pull bash@sha256:ac619ec34fefa12b409eeec231e13733745063a34bc4c1560bee5f4d345c055b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6308738 bytes)**  
+-	Total Size: **6.3 MB (6308699 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3366b97211ffad088d9fa9a15cc47bbfb9585ea6950de5ba0c59c0f60af5601a`
+-	Image ID: `sha256:fe43917ea10aa3ef113f6e776116860f2c6aac86f05b05de84fd7aff659eef7f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 08 Dec 2023 01:39:30 GMT
-ADD file:8182c73f869a899cf624a59c400acb8226776d15e4d3a0d240a94e65340540d0 in / 
-# Fri, 08 Dec 2023 01:39:30 GMT
+# Tue, 23 Jan 2024 05:18:01 GMT
+ADD file:d0764a717d1e9d0aff3fa84779b11bfa0afe4430dcb6b46d965b209167639ba0 in / 
+# Tue, 23 Jan 2024 05:18:01 GMT
 CMD ["/bin/sh"]
 # Tue, 23 Jan 2024 05:18:01 GMT
 ENV _BASH_COMMIT=a4f44b7a11af874556529209fae7e8d261d51293
@@ -260,41 +260,41 @@ CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:c303524923177661067f7eb378c3dd5277088c2676ebd1cd78e68397bb80fdbf`  
-		Last Modified: Fri, 08 Dec 2023 01:39:48 GMT  
-		Size: 3.3 MB (3347794 bytes)  
+	-	`sha256:bca4290a96390d7a6fc6f2f9929370d06f8dfcacba591c76e3d5c5044e7f420c`  
+		Last Modified: Fri, 26 Jan 2024 23:45:19 GMT  
+		Size: 3.3 MB (3347715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5010f3ed4b33eb233329dbfbdd4a07c8cc79cf0081f7df733e69d9d043fe30a9`  
-		Last Modified: Wed, 24 Jan 2024 22:05:37 GMT  
-		Size: 3.0 MB (2960614 bytes)  
+	-	`sha256:81235cdf84035236153765fd79d85d7560ee459fbb280a6f51b21f86b40596de`  
+		Last Modified: Sat, 27 Jan 2024 17:36:24 GMT  
+		Size: 3.0 MB (2960647 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48cfbc0f484a236824f955fb87f56598d55cfe7f575ffa13766dcec11249372b`  
-		Last Modified: Wed, 24 Jan 2024 22:05:36 GMT  
-		Size: 330.0 B  
+	-	`sha256:76581886dfe556da032ea9edf8e7b4f5d74fd24b9e0d2cd826ca37e92a4226fe`  
+		Last Modified: Sat, 27 Jan 2024 17:36:24 GMT  
+		Size: 337.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bash:devel-20240119-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull bash@sha256:349de10f99f72fdc43caefe7079c0666fd78b649e4a347f7f199e44e9cb489cf
+$ docker pull bash@sha256:3ef15b98c099e3ba65822e6214f941023d581bfb9de500d8c53a904e278b2b89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **113.8 KB (113803 bytes)**  
+-	Total Size: **114.0 KB (113975 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3fffc89f23e755e2dfa07d7324d6fc024d4a467d53e3fd3c2d93f6972ec19bcf`
+-	Image ID: `sha256:f8294e7fbf703d9ed108e24ea8ab7e8ab549f4f8a0947cdf97c7d0470bd5953a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:260f6a7fd7ace3ce2d4e588120b631b391895275c51fec801ac9b683ead63112`  
-		Last Modified: Wed, 24 Jan 2024 22:05:36 GMT  
-		Size: 97.7 KB (97743 bytes)  
+	-	`sha256:1495b592eb8a80a24bfe54de9dffd543b79607ec9f767d0a53787251d59e0b79`  
+		Last Modified: Sat, 27 Jan 2024 17:36:24 GMT  
+		Size: 97.7 KB (97749 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4e44d8e039a9765c879188984ef302073a112d5a792a972b213aea9eaf146840`  
-		Last Modified: Wed, 24 Jan 2024 22:05:36 GMT  
-		Size: 16.1 KB (16060 bytes)  
+	-	`sha256:a4410db89412fbc0f816c1312aa0691bae5abdcac56b013a3f8932ed6d1dda2a`  
+		Last Modified: Sat, 27 Jan 2024 17:36:24 GMT  
+		Size: 16.2 KB (16226 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `bash:devel-20240119-alpine3.19` - linux; 386
