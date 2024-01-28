@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f8054e52adc063fee3b8e8498c56be8044894986bd552907d0df9e8e5f165350`
-- Created: `2024-01-24T20:34:15.810543521Z`
-- Virtual Size: ~ 401.08 Mb  
+- Image ID: `sha256:89cfb6de4292cd34ed94df162199c258cc6414f57e7e7b58b4ec1e0895a25d91`
+- Created: `2024-01-26T01:59:18.898297683Z`
+- Virtual Size: ~ 398.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `JAVA_VERSION=jdk-11.0.22+7`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2023-12-07T04:10:36`
+  - `build-date=2024-01-17T19:05:39`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -31,9 +31,9 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
-  - `release=1475`
+  - `release=1552`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.3-1475`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.3-1552`
   - `vcs-ref=e8510c65a9be4b0635372fd09bee126ce7e08bc7`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -485,9 +485,9 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `librhsm-0.0.3-7.el9.x86_64`
+### `rpm` package: `librhsm-0.0.3-7.el9_3.1.x86_64`
 
-Licenses (from `rpm --query`): LGPLv2.1+
+Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
@@ -701,13 +701,13 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rpm-4.16.1.3-25.el9.x86_64`
+### `rpm` package: `rpm-4.16.1.3-27.el9_3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rpm-libs-4.16.1.3-25.el9.x86_64`
+### `rpm` package: `rpm-libs-4.16.1.3-27.el9_3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
@@ -725,7 +725,7 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `sqlite-libs-3.34.1-6.el9_1.x86_64`
+### `rpm` package: `sqlite-libs-3.34.1-7.el9_3.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 

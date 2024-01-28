@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:23ddb67f77c6a322cb62583434431f0087c0f182e365fdab08102a3ed56fbed2`
-- Created: `2024-01-24T20:35:46.660917911Z`
+- Image ID: `sha256:b9b04483c136ae03843973204351c649f8def1ac91510180f2cd6c1cd41e25eb`
+- Created: `2024-01-25T19:32:38.208448097Z`
 - Virtual Size: ~ 407.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1495,10 +1495,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.12
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.12.dsc' openssl_3.0.2-0ubuntu1.12.dsc 2730 SHA512:2e433ebed19b390d52494526934d72152400bdc13ce2d958c03495dd13349812c2161887b5b0a4f0046aa5cd93661dcad8cdb83a388af134fb891eab981ce127
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.12.debian.tar.xz' openssl_3.0.2-0ubuntu1.12.debian.tar.xz 206100 SHA512:2cdbd3c0c91200def2b1b49af64cda5bbb977a6ea5739a42e21f0970d1e97711ca866c574eed502bf4c1be38f64a3be679a67ae5d4589c84f532c73a1d8e6925
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.12.dsc' openssl_3.0.2-0ubuntu1.12.dsc 2730 SHA512:2e433ebed19b390d52494526934d72152400bdc13ce2d958c03495dd13349812c2161887b5b0a4f0046aa5cd93661dcad8cdb83a388af134fb891eab981ce127
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.12.debian.tar.xz' openssl_3.0.2-0ubuntu1.12.debian.tar.xz 206100 SHA512:2cdbd3c0c91200def2b1b49af64cda5bbb977a6ea5739a42e21f0970d1e97711ca866c574eed502bf4c1be38f64a3be679a67ae5d4589c84f532c73a1d8e6925
 ```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
