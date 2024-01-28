@@ -1,10 +1,10 @@
-# `ghost:5.76.1-alpine`
+# `ghost:5.76.2-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5836341583718b29111e90ea8bcadddc3923bc7134848b3c98af99ddb9cb1427`
-- Created: `2024-01-22T09:19:12Z`
-- Virtual Size: ~ 537.13 Mb  
+- Image ID: `sha256:a6b61ce59ac40a6a7f7e34ff884b2169261bd425bf48848b2fb5624a730654d9`
+- Created: `2024-01-24T21:19:12Z`
+- Virtual Size: ~ 537.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `GHOST_CLI_VERSION=1.25.3`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
-  - `GHOST_VERSION=5.76.1`
+  - `GHOST_VERSION=5.76.2`
 
 ## `apk` (`.apk`-based packages)
 
@@ -177,16 +177,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r2 description:
+libcrypto3-3.1.4-r5 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r2 webpage:
+libcrypto3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r2 installed size:
+libcrypto3-3.1.4-r5 installed size:
 4500 KiB
 
-libcrypto3-3.1.4-r2 license:
+libcrypto3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -228,16 +228,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r2 description:
+libssl3-3.1.4-r5 description:
 SSL shared libraries
 
-libssl3-3.1.4-r2 webpage:
+libssl3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r2 installed size:
+libssl3-3.1.4-r5 installed size:
 548 KiB
 
-libssl3-3.1.4-r2 license:
+libssl3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -381,16 +381,16 @@ MIT
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3-r2 description:
+zlib-1.3.1-r0 description:
 A compression/decompression Library
 
-zlib-1.3-r2 webpage:
+zlib-1.3.1-r0 webpage:
 https://zlib.net/
 
-zlib-1.3-r2 installed size:
+zlib-1.3.1-r0 installed size:
 108 KiB
 
-zlib-1.3-r2 license:
+zlib-1.3.1-r0 license:
 Zlib
 
 ```
