@@ -1,7 +1,7 @@
 ## `drupal:php8.3-fpm-bookworm`
 
 ```console
-$ docker pull drupal@sha256:d08982153056c2152b6a5d0e248f810455d4e7a1894ea168900c56c7d35b71df
+$ docker pull drupal@sha256:6bd74c3c89f012d285ce80b16b625a9cf831a96665f7d43baeca20ace8d748e3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -188,7 +188,7 @@ $ docker pull drupal@sha256:864818f5d9c71b1a81af649735ea29f0e29b328991dab921247b
 ### `drupal:php8.3-fpm-bookworm` - linux; arm variant v7
 
 ```console
-$ docker pull drupal@sha256:b97c065529e5b8b07217aaa6a5a2f21256098520e6965b1a7bb557ef17a6e329
+$ docker pull drupal@sha256:47df80e14f3ab1f76e126c79b76faa43a3b36847101b876b33924bc342b6e57c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -330,25 +330,25 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 ### `drupal:php8.3-fpm-bookworm` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:7cbe6db5f079aad763ccc6b988b28b4a007f82a589530c1e9ed21c8d43d8f4a0
+$ docker pull drupal@sha256:490f894227f798ac0b74b33ea62461f8e2a99b30236333a5e9e0e20fd8cfd656
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5345034 bytes)**  
+-	Total Size: **5.3 MB (5343409 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1434330e0b7488362c61c3c8826b80fc0bada3ccb14061f6e31ce085f6b3c22`
+-	Image ID: `sha256:3d849f526ab7886c5feaebe3094a399bd32a2e5a3560ab4529fd2df879c31986`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6ab1d280a80141f8e05685f5a12e7e394d97fd2e02aa6ab6cf28714ddd7e5f00`  
-		Last Modified: Sat, 20 Jan 2024 06:51:40 GMT  
+	-	`sha256:aefec57fe1ce91f55e4e2de28eee0113e76a2121a511926f4260483cff5153e6`  
+		Last Modified: Sat, 27 Jan 2024 20:48:17 GMT  
 		Size: 5.3 MB (5310148 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3b65e235bc37064b28f737a5d50808abbcf1a6c44f2ed172001f2133bfe88dd5`  
-		Last Modified: Sat, 20 Jan 2024 06:51:39 GMT  
-		Size: 34.9 KB (34886 bytes)  
+	-	`sha256:9526ad345ec91193cfe142193d9c67834dac242b0418553cc00842863b555c11`  
+		Last Modified: Sat, 27 Jan 2024 20:48:17 GMT  
+		Size: 33.3 KB (33261 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:php8.3-fpm-bookworm` - linux; arm64 variant v8
@@ -852,7 +852,7 @@ $ docker pull drupal@sha256:003c9e83bd4eea4162a2146f7c075b59fd9e0ff4277f27cd72d5
 ### `drupal:php8.3-fpm-bookworm` - linux; s390x
 
 ```console
-$ docker pull drupal@sha256:b81ffb8f24cf4b2ed53768e2188bd5b026e652cd08794772ff61ede2d17f0d40
+$ docker pull drupal@sha256:e3212a71c2ab7388f1f6912600e48e0d5dbb8d81e8f5ddc6bf8ab2b52c63e73a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -994,23 +994,23 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 ### `drupal:php8.3-fpm-bookworm` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:fafe13e38936b18b4e459fc622db5734383c711c468c1280ed95a077a0cf20ae
+$ docker pull drupal@sha256:758e762ab5f5570ae3255896d1c8c1edf626718ba8022170f62c8067b858e4a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5366821 bytes)**  
+-	Total Size: **5.4 MB (5365197 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76f79e629acf7f028cdf68e0ba74d90c573d583926bd15977cfff9e69a48f916`
+-	Image ID: `sha256:d4ea270c9c0b88b1460276d842cf7a15e3de607738a441f0631d327979ab9cff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d28521546f9f253216d40c5e667bad0060b84d70cece79502297ba2211a9c0d4`  
-		Last Modified: Sat, 20 Jan 2024 19:17:57 GMT  
+	-	`sha256:ce1fd6323fb72226818a0d25402f9b58c14e1136b1d13b63e34187227cbb9e0e`  
+		Last Modified: Sat, 27 Jan 2024 22:20:50 GMT  
 		Size: 5.3 MB (5332079 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:339a3fe67a33f9db3a2b371d546fb25a7f1c5ff0fddf1247201e768f08806030`  
-		Last Modified: Sat, 20 Jan 2024 19:17:57 GMT  
-		Size: 34.7 KB (34742 bytes)  
+	-	`sha256:f276092532b51290407cfafa97f3b985e160e30e98dc5eac192c339ac881947b`  
+		Last Modified: Sat, 27 Jan 2024 22:20:50 GMT  
+		Size: 33.1 KB (33118 bytes)  
 		MIME: application/vnd.in-toto+json
