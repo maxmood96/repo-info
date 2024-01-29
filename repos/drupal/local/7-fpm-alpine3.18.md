@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a303f721fa719da35eea63514aa908735b8e79e668b1c34e59f01d0316616241`
+- Image ID: `sha256:fa65e93ed2f3d502173e179cbd3305f0bf6d0d9f59b6a2cee720629f169c518e`
 - Created: `2024-01-03T18:58:56Z`
 - Virtual Size: ~ 96.20 Mb  
   (total size of all layers on-disk)
@@ -302,16 +302,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r1 description:
+libcrypto3-3.1.4-r5 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r1 webpage:
+libcrypto3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r1 installed size:
+libcrypto3-3.1.4-r5 installed size:
 4472 KiB
 
-libcrypto3-3.1.4-r1 license:
+libcrypto3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -455,16 +455,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r1 description:
+libssl3-3.1.4-r5 description:
 SSL shared libraries
 
-libssl3-3.1.4-r1 webpage:
+libssl3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r1 installed size:
+libssl3-3.1.4-r5 installed size:
 552 KiB
 
-libssl3-3.1.4-r1 license:
+libssl3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -625,16 +625,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r1 description:
+openssl-3.1.4-r5 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r1 webpage:
+openssl-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r1 installed size:
+openssl-3.1.4-r5 installed size:
 752 KiB
 
-openssl-3.1.4-r1 license:
+openssl-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -676,16 +676,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.41.2-r2 description:
+sqlite-libs-3.41.2-r3 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.41.2-r2 webpage:
+sqlite-libs-3.41.2-r3 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.41.2-r2 installed size:
+sqlite-libs-3.41.2-r3 installed size:
 976 KiB
 
-sqlite-libs-3.41.2-r2 license:
+sqlite-libs-3.41.2-r3 license:
 blessing
 
 ```
