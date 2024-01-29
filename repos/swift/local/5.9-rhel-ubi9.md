@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:763a7a7646ea412ffab9e021ee738e8e03dbf5da304312ec22027a00329a1eb3`
-- Created: `2023-12-14T01:58:32.224847512Z`
+- Image ID: `sha256:45dae2865dd6e3ea9c88739e8b53fc139bbb93383a90af971f4ed4492c5cd35c`
+- Created: `2024-01-26T02:07:05.556184328Z`
 - Virtual Size: ~ 2.47 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2023-12-07T04:10:37`
+  - `build-date=2024-01-17T19:05:40`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,9 +30,9 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=1476`
+  - `release=1552`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.3-1476`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.3-1552`
   - `vcs-ref=eb726081eeafc660c182aae53074ec6631cb473e`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -424,7 +424,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `kernel-headers-5.14.0-362.13.1.el9_3.x86_64`
+### `rpm` package: `kernel-headers-5.14.0-362.18.1.el9_3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2 and Redistributable, no modification permitted
 
@@ -700,9 +700,9 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `librhsm-0.0.3-7.el9.x86_64`
+### `rpm` package: `librhsm-0.0.3-7.el9_3.1.x86_64`
 
-Licenses (from `rpm --query`): LGPLv2.1+
+Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
@@ -1390,7 +1390,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-3.9.18-1.el9_3.x86_64`
+### `rpm` package: `python3-3.9.18-1.el9_3.1.x86_64`
 
 Licenses (from `rpm --query`): Python
 
@@ -1426,7 +1426,7 @@ Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-devel-3.9.18-1.el9_3.x86_64`
+### `rpm` package: `python3-devel-3.9.18-1.el9_3.1.x86_64`
 
 Licenses (from `rpm --query`): Python
 
@@ -1504,7 +1504,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-libs-3.9.18-1.el9_3.x86_64`
+### `rpm` package: `python3-libs-3.9.18-1.el9_3.1.x86_64`
 
 Licenses (from `rpm --query`): Python
 
@@ -1534,7 +1534,7 @@ Licenses (from `rpm --query`): ASL 2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-rpm-4.16.1.3-25.el9.x86_64`
+### `rpm` package: `python3-rpm-4.16.1.3-27.el9_3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
@@ -1570,7 +1570,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-urllib3-1.26.5-3.el9.noarch`
+### `rpm` package: `python3-urllib3-1.26.5-3.el9_3.1.noarch`
 
 Licenses (from `rpm --query`): MIT
 
@@ -1594,25 +1594,25 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rpm-4.16.1.3-25.el9.x86_64`
+### `rpm` package: `rpm-4.16.1.3-27.el9_3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rpm-build-libs-4.16.1.3-25.el9.x86_64`
+### `rpm` package: `rpm-build-libs-4.16.1.3-27.el9_3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rpm-libs-4.16.1.3-25.el9.x86_64`
+### `rpm` package: `rpm-libs-4.16.1.3-27.el9_3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rpm-sign-libs-4.16.1.3-25.el9.x86_64`
+### `rpm` package: `rpm-sign-libs-4.16.1.3-27.el9_3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
@@ -1642,19 +1642,19 @@ Licenses (from `rpm --query`): BSD and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `sqlite-3.34.1-6.el9_1.x86_64`
+### `rpm` package: `sqlite-3.34.1-7.el9_3.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `sqlite-devel-3.34.1-6.el9_1.x86_64`
+### `rpm` package: `sqlite-devel-3.34.1-7.el9_3.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `sqlite-libs-3.34.1-6.el9_1.x86_64`
+### `rpm` package: `sqlite-libs-3.34.1-7.el9_3.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
@@ -1708,7 +1708,7 @@ Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `tzdata-2023c-1.el9.noarch`
+### `rpm` package: `tzdata-2023d-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
