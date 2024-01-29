@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b4ae1a6f94419816ad948d94b7811e2a622b4dc134c432bd568e199aa5ec661`
-- Created: `2023-12-28T03:44:30.834746545Z`
-- Virtual Size: ~ 395.51 Mb  
+- Image ID: `sha256:6a9c543567eaaf4fe7e5aff10c1911581e24b12e9cb91a2ad006ecb0b7a13263`
+- Created: `2024-01-27T10:35:59.781514125Z`
+- Virtual Size: ~ 395.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -165,16 +165,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.22.1-r0 description:
+c-ares-1.24.0-r1 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.22.1-r0 webpage:
+c-ares-1.24.0-r1 webpage:
 https://c-ares.org/
 
-c-ares-1.22.1-r0 installed size:
-132 KiB
+c-ares-1.24.0-r1 installed size:
+144 KiB
 
-c-ares-1.22.1-r0 license:
+c-ares-1.24.0-r1 license:
 MIT
 
 ```
@@ -369,16 +369,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.1.22-r0 description:
+imagemagick-7.1.1.26-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.1.22-r0 webpage:
+imagemagick-7.1.1.26-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.1.22-r0 installed size:
-4332 KiB
+imagemagick-7.1.1.26-r0 installed size:
+4336 KiB
 
-imagemagick-7.1.1.22-r0 license:
+imagemagick-7.1.1.26-r0 license:
 ImageMagick
 
 ```
@@ -386,16 +386,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.1.22-r0 description:
+imagemagick-libs-7.1.1.26-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.1.22-r0 webpage:
+imagemagick-libs-7.1.1.26-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.1.22-r0 installed size:
-4152 KiB
+imagemagick-libs-7.1.1.26-r0 installed size:
+4168 KiB
 
-imagemagick-libs-7.1.1.22-r0 license:
+imagemagick-libs-7.1.1.26-r0 license:
 ImageMagick
 
 ```
@@ -488,16 +488,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r2 description:
+libcrypto3-3.1.4-r5 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r2 webpage:
+libcrypto3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r2 installed size:
+libcrypto3-3.1.4-r5 installed size:
 4500 KiB
 
-libcrypto3-3.1.4-r2 license:
+libcrypto3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -709,16 +709,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r2 description:
+libssl3-3.1.4-r5 description:
 SSL shared libraries
 
-libssl3-3.1.4-r2 webpage:
+libssl3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r2 installed size:
+libssl3-3.1.4-r5 installed size:
 548 KiB
 
-libssl3-3.1.4-r2 license:
+libssl3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -964,16 +964,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r2 description:
+openssl-3.1.4-r5 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r2 webpage:
+openssl-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r2 installed size:
+openssl-3.1.4-r5 installed size:
 732 KiB
 
-openssl-3.1.4-r2 license:
+openssl-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -1185,16 +1185,16 @@ GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3-r2 description:
+zlib-1.3.1-r0 description:
 A compression/decompression Library
 
-zlib-1.3-r2 webpage:
+zlib-1.3.1-r0 webpage:
 https://zlib.net/
 
-zlib-1.3-r2 installed size:
+zlib-1.3.1-r0 installed size:
 108 KiB
 
-zlib-1.3-r2 license:
+zlib-1.3.1-r0 license:
 Zlib
 
 ```
