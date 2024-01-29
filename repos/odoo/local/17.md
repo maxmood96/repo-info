@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5a27fdb4c82a344205d6e4de1ccb831ca53d14c716da171642be05f070187c27`
-- Created: `2024-01-17T08:15:05.410390166Z`
+- Image ID: `sha256:7f7807feff361297d5d25d7d9429f6663f56cc6fe220904eadd59ece90f93e91`
+- Created: `2024-01-26T22:15:50.89136657Z`
 - Virtual Size: ~ 1.81 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1433,11 +1433,11 @@ $ apt-get source -qq --print-uris jbigkit=2.1-3.1ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/j/jbigkit/jbigkit_2.1-3.1ubuntu0.22.04.1.debian.tar.xz' jbigkit_2.1-3.1ubuntu0.22.04.1.debian.tar.xz 9912 SHA512:4c473125d8781d2b0192a8af40095e7c6e52225815a8dc7c87fe3bbb50aaeec4295438134be302fa57698d97fccd3f7d2240c74dbc57ef1089cab2ca3fc63475
 ```
 
-### `dpkg` source package: `jinja2=3.0.3-1`
+### `dpkg` source package: `jinja2=3.0.3-1ubuntu0.1`
 
 Binary Packages:
 
-- `python3-jinja2=3.0.3-1`
+- `python3-jinja2=3.0.3-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/python3-jinja2/copyright`)
 
@@ -1446,10 +1446,10 @@ Licenses: (parsed from: `/usr/share/doc/python3-jinja2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris jinja2=3.0.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/j/jinja2/jinja2_3.0.3-1.dsc' jinja2_3.0.3-1.dsc 2141 SHA512:a9beda5d753424ac9a0b9b9e29c083fa78c14c3a58f7d9ce67e02d261a791b1ff673a801c321730bb999bcaeec26ceb3ba3ab332e05b41bd76ee357a3c70bb43
+$ apt-get source -qq --print-uris jinja2=3.0.3-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jinja2/jinja2_3.0.3-1ubuntu0.1.dsc' jinja2_3.0.3-1ubuntu0.1.dsc 2259 SHA512:1788a55205e739c8649b548f935ac1ee9095cb35037ed5d14ee7849833e2723ea5b1dfd6fc525394e8e71999c9405c92240f35b93a7ea9f5390c6c105c437900
 'http://archive.ubuntu.com/ubuntu/pool/main/j/jinja2/jinja2_3.0.3.orig.tar.gz' jinja2_3.0.3.orig.tar.gz 269196 SHA512:51703d396ffe35155ed216922294441e20d44cd1ab69674140146375d4964654cdb32b38945f22916e0de917bbc0cf406cb680c2e569f9225dbe1fe4063be0b0
-'http://archive.ubuntu.com/ubuntu/pool/main/j/jinja2/jinja2_3.0.3-1.debian.tar.xz' jinja2_3.0.3-1.debian.tar.xz 9564 SHA512:eb4ba3ba7c283862672349a972b6ea57dfa410ba08023e87595f111cd99185a27cbe2684bb193787693fe8c5950d51d70921646a6eff14159afcf0e1baa7e2da
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jinja2/jinja2_3.0.3-1ubuntu0.1.debian.tar.xz' jinja2_3.0.3-1ubuntu0.1.debian.tar.xz 10980 SHA512:1f381181b0c3e8f2d4eca4204fe9e98b3faa1687fc4cef7e2e7766af0c15e276a5e34289a49e84953ada39e18f40a66c67249a9e63b6aa4555f54e0db77a99b5
 ```
 
 ### `dpkg` source package: `keyutils=1.6.1-2ubuntu3`
@@ -5690,11 +5690,11 @@ $ apt-get source -qq --print-uris npth=1.6-3build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3build2.debian.tar.xz' npth_1.6-3build2.debian.tar.xz 10904 SHA512:426ab3ab9e27b3701d67cde0a4c4040aa9ccac22a0266321824487fe80a118ccd6860b6fa0fb5ca3c46dfa3c20053889fbb51a2e74618065b3aff059a0216c4c
 ```
 
-### `dpkg` source package: `odoo=17.0.20240115`
+### `dpkg` source package: `odoo=17.0.20240126`
 
 Binary Packages:
 
-- `odoo=17.0.20240115`
+- `odoo=17.0.20240126`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
