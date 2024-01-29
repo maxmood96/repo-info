@@ -1,7 +1,7 @@
 ## `nginx:mainline-alpine3.18-perl`
 
 ```console
-$ docker pull nginx@sha256:b6147a889a3d4a7dab8c0c1e2cac9cdc84bba497f0b00cf2910e5535fc542bae
+$ docker pull nginx@sha256:045157ac0a6f1843cf5f2b918c0a51b015571886a70298c8c9877a2eafdeff3a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -704,19 +704,19 @@ $ docker pull nginx@sha256:4b3b6c3169598dce4f7eca817d69dbede6dec63aea7f2c69ea6a3
 ### `nginx:mainline-alpine3.18-perl` - linux; s390x
 
 ```console
-$ docker pull nginx@sha256:c39c62e7688cd97bb41b539e866be883681ab58d7e839c98e255d53ee6186831
+$ docker pull nginx@sha256:bd54c6aab396c5d26dcf9d0bb392911eeb78b3f91125354d6e182855b9a83fe4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.9 MB (26857168 bytes)**  
+-	Total Size: **26.9 MB (26857637 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b9b9ae724e7f6638af5c7ece0956b856ca4265d7e3729f38ed5a46e7e6acfe3`
+-	Image ID: `sha256:42fdaea0cfc87e6e1baebdb4e5fbb20d87e26521c1b9caa47eab2eef004c5604`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
 # Tue, 24 Oct 2023 22:44:45 GMT
-ADD file:50d6643abf7df167a927decd69d193b980557ff73cca48dce86d57e2ff25ad45 in / 
+ADD file:191985024ed5be9a747edd5501846e6799b10e6ec729cc95d33625e1f5fed04f in / 
 # Tue, 24 Oct 2023 22:44:45 GMT
 CMD ["/bin/sh"]
 # Tue, 24 Oct 2023 22:44:45 GMT
@@ -754,63 +754,63 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 ```
 
 -	Layers:
-	-	`sha256:2ea477e1c0c3db3337ee1d7c659f8c465021a65c036998ed3fa3b667d4b30153`  
-		Last Modified: Thu, 30 Nov 2023 22:42:52 GMT  
-		Size: 3.2 MB (3217454 bytes)  
+	-	`sha256:61301311dfdb7c2627b8937a9c34ae4a82f4e16bb4ab80df35458b56bbbaee8b`  
+		Last Modified: Sat, 27 Jan 2024 00:43:29 GMT  
+		Size: 3.2 MB (3217530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:acc05ff666ac0cb3ffffeae08cf0fe76ad99f95e43b00cc4962f19ce79442dec`  
-		Last Modified: Wed, 20 Dec 2023 21:24:03 GMT  
-		Size: 2.1 MB (2079627 bytes)  
+	-	`sha256:1aeb7e4421fcb524ad020f0e1fcbab055a41781e3d07114976455e16e4dce2bd`  
+		Last Modified: Sun, 28 Jan 2024 09:55:13 GMT  
+		Size: 2.1 MB (2080185 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:918c4dfc3794b340752d3d435e3334281865d8b8325164c4169ec92b4dc46d46`  
-		Last Modified: Wed, 20 Dec 2023 21:24:03 GMT  
-		Size: 629.0 B  
+	-	`sha256:29839274ac256656039a0ebb6e05f880baf82d8c0ebfd4156639527534792d6b`  
+		Last Modified: Sun, 28 Jan 2024 09:55:13 GMT  
+		Size: 628.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:662ce5a9588a5c8af0ab7552f8b79505a4cf5595026ae7dffecf20e4106a06ce`  
-		Last Modified: Wed, 20 Dec 2023 21:24:03 GMT  
+	-	`sha256:49d68948a474911c82d17de748bac687324aaf8fd0ba63f6a75a29041ad54db9`  
+		Last Modified: Sun, 28 Jan 2024 09:55:13 GMT  
 		Size: 956.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:335c75f75fc8edf48cf758a204f3813ef8217b9a82ff05cd7ba87c52ac5d2b36`  
-		Last Modified: Wed, 20 Dec 2023 21:24:03 GMT  
-		Size: 367.0 B  
+	-	`sha256:379bb1edbc47a836778f0cc48f5a860051f4fa472bff8901b9238751ec72c07c`  
+		Last Modified: Sun, 28 Jan 2024 09:55:13 GMT  
+		Size: 366.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d5c77a7f0eb5e1d6908a69766784107214539e66ec6136242f6607114829215`  
-		Last Modified: Wed, 20 Dec 2023 21:24:04 GMT  
+	-	`sha256:0ad936e87121af9156bea80829e92c81fcb39e9e8541a31f328e58a52dcc40dc`  
+		Last Modified: Sun, 28 Jan 2024 09:55:13 GMT  
 		Size: 1.2 KB (1210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b29bb1adb73847917f088c90f81e57a7d4e83a07f397d7a487afa5873b3e955c`  
-		Last Modified: Wed, 20 Dec 2023 21:24:04 GMT  
-		Size: 1.4 KB (1401 bytes)  
+	-	`sha256:92c70a1bdb02e8620de94a26c8cd701b1b592b6ac17986c3227751a46b3f8bc8`  
+		Last Modified: Sun, 28 Jan 2024 09:55:13 GMT  
+		Size: 1.4 KB (1399 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b45cf258d8106921a0ec0c24b2e577a9860cac381723195a42e18816d39e57ea`  
-		Last Modified: Thu, 21 Dec 2023 01:47:13 GMT  
-		Size: 12.0 MB (12017311 bytes)  
+	-	`sha256:2b668459f9d644dd3a53ad21843f9f57b8a88391e7d73e928d7be421237a7058`  
+		Last Modified: Mon, 29 Jan 2024 02:06:50 GMT  
+		Size: 12.0 MB (12017139 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0215df4af20b4b8b477ec4c5a8b46d70f9b445815b34b69974f5fbbf4a2d758`  
-		Last Modified: Thu, 21 Dec 2023 03:01:06 GMT  
-		Size: 9.5 MB (9538213 bytes)  
+	-	`sha256:b8423060db330e6d5bdbc3e0357369ea896d3ff731e06c0220c766d4009f48d7`  
+		Last Modified: Mon, 29 Jan 2024 07:52:13 GMT  
+		Size: 9.5 MB (9538224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nginx:mainline-alpine3.18-perl` - unknown; unknown
 
 ```console
-$ docker pull nginx@sha256:c87f2f008599be70487f862e3e4d7c9e44b019f9af9bf6dad8683be5d210a421
+$ docker pull nginx@sha256:d6cdb37fbf81f592eece6bf756b66185c5d0e34cd8615ae73f3b7e105f04dc67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **1.8 MB (1760776 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:83aa5dd4f95ae057647b14717fcdd1a347855417e79f6fc6126adb6a56e8cdbf`
+-	Image ID: `sha256:a1787129079587868490c255d036627699a3c050d6c43a8ac73e10dec4531c08`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9a33bb40fd17ab79775662f1518990d49de897c7428726dea5739cb5c41bbe42`  
-		Last Modified: Thu, 21 Dec 2023 03:01:05 GMT  
+	-	`sha256:50fa5c3acd9e32043bf8de66b1985e9100831af3e218ac46f16123a6bd6aab5b`  
+		Last Modified: Mon, 29 Jan 2024 07:52:12 GMT  
 		Size: 1.7 MB (1736700 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f8dc9fd29e96e171127ebf1e3934385a0941eade79b89dd5c0c7ea6887d54958`  
-		Last Modified: Thu, 21 Dec 2023 03:01:05 GMT  
+	-	`sha256:952b647c8c84ae0064c88f876b89da34d0d2f1ef8974690a79d71ba16c4baa24`  
+		Last Modified: Mon, 29 Jan 2024 07:52:12 GMT  
 		Size: 24.1 KB (24076 bytes)  
 		MIME: application/vnd.in-toto+json
