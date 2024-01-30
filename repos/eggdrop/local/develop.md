@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c43a30c2649a2e91dcfd939f8d0c20f89f38b9c5ca0237b606bd16b87e1f78ff`
-- Created: `2023-12-01T06:40:54.155683503Z`
+- Image ID: `sha256:7d9d90d91b3bcbb49713c93e257fa11752bc90f1134a59b65053125a319eaae3`
+- Created: `2024-01-27T03:44:45.573511936Z`
 - Virtual Size: ~ 42.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -180,16 +180,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.12-r1 description:
+libcrypto3-3.0.12-r4 description:
 Crypto library from openssl
 
-libcrypto3-3.0.12-r1 webpage:
+libcrypto3-3.0.12-r4 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.12-r1 installed size:
+libcrypto3-3.0.12-r4 installed size:
 4120 KiB
 
-libcrypto3-3.0.12-r1 license:
+libcrypto3-3.0.12-r4 license:
 Apache-2.0
 
 ```
@@ -197,16 +197,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.12-r1 description:
+libssl3-3.0.12-r4 description:
 SSL shared libraries
 
-libssl3-3.0.12-r1 webpage:
+libssl3-3.0.12-r4 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.12-r1 installed size:
+libssl3-3.0.12-r4 installed size:
 608 KiB
 
-libssl3-3.0.12-r1 license:
+libssl3-3.0.12-r4 license:
 Apache-2.0
 
 ```
@@ -282,16 +282,16 @@ MIT
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.0.12-r1 description:
+openssl-3.0.12-r4 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.0.12-r1 webpage:
+openssl-3.0.12-r4 webpage:
 https://www.openssl.org/
 
-openssl-3.0.12-r1 installed size:
+openssl-3.0.12-r4 installed size:
 872 KiB
 
-openssl-3.0.12-r1 license:
+openssl-3.0.12-r4 license:
 Apache-2.0
 
 ```
