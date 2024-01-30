@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a8b7300545af3e6c99031bed7d994c132a41d2a04cfb23f2a42633e703d12f38`
+- Image ID: `sha256:0ae848954956517f8630ff6dccc4a3b8965fd650217d8e6710301e17d7e0bf4e`
 - Created: `2023-10-25T13:03:13Z`
-- Virtual Size: ~ 211.07 Mb  
+- Virtual Size: ~ 211.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -183,16 +183,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.22.1-r0 description:
+c-ares-1.24.0-r1 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.22.1-r0 webpage:
+c-ares-1.24.0-r1 webpage:
 https://c-ares.org/
 
-c-ares-1.22.1-r0 installed size:
-132 KiB
+c-ares-1.24.0-r1 installed size:
+144 KiB
 
-c-ares-1.22.1-r0 license:
+c-ares-1.24.0-r1 license:
 MIT
 
 ```
@@ -353,16 +353,16 @@ ICU
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.1.22-r0 description:
+imagemagick-libs-7.1.1.26-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.1.22-r0 webpage:
+imagemagick-libs-7.1.1.26-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.1.22-r0 installed size:
-4152 KiB
+imagemagick-libs-7.1.1.26-r0 installed size:
+4168 KiB
 
-imagemagick-libs-7.1.1.22-r0 license:
+imagemagick-libs-7.1.1.26-r0 license:
 ImageMagick
 
 ```
@@ -472,16 +472,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r2 description:
+libcrypto3-3.1.4-r5 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r2 webpage:
+libcrypto3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r2 installed size:
+libcrypto3-3.1.4-r5 installed size:
 4500 KiB
 
-libcrypto3-3.1.4-r2 license:
+libcrypto3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -693,16 +693,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r2 description:
+libssl3-3.1.4-r5 description:
 SSL shared libraries
 
-libssl3-3.1.4-r2 webpage:
+libssl3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r2 installed size:
+libssl3-3.1.4-r5 installed size:
 548 KiB
 
-libssl3-3.1.4-r2 license:
+libssl3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -880,16 +880,16 @@ BSD-3-Clause
 ### `apk` package: `mariadb-client`
 
 ```console
-mariadb-client-10.11.5-r3 description:
+mariadb-client-10.11.6-r0 description:
 Client for the MariaDB database
 
-mariadb-client-10.11.5-r3 webpage:
+mariadb-client-10.11.6-r0 webpage:
 https://www.mariadb.org/
 
-mariadb-client-10.11.5-r3 installed size:
+mariadb-client-10.11.6-r0 installed size:
 36 MiB
 
-mariadb-client-10.11.5-r3 license:
+mariadb-client-10.11.6-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -897,16 +897,16 @@ GPL-2.0-or-later
 ### `apk` package: `mariadb-common`
 
 ```console
-mariadb-common-10.11.5-r3 description:
+mariadb-common-10.11.6-r0 description:
 MariaDB common files for both server and client
 
-mariadb-common-10.11.5-r3 webpage:
+mariadb-common-10.11.6-r0 webpage:
 https://www.mariadb.org/
 
-mariadb-common-10.11.5-r3 installed size:
+mariadb-common-10.11.6-r0 installed size:
 2260 KiB
 
-mariadb-common-10.11.5-r3 license:
+mariadb-common-10.11.6-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -948,16 +948,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `mysql-client`
 
 ```console
-mysql-client-10.11.5-r3 description:
+mysql-client-10.11.6-r0 description:
 Dummy package for mysql-client migration
 
-mysql-client-10.11.5-r3 webpage:
+mysql-client-10.11.6-r0 webpage:
 https://www.mariadb.org/
 
-mysql-client-10.11.5-r3 installed size:
+mysql-client-10.11.6-r0 installed size:
 4096 B
 
-mysql-client-10.11.5-r3 license:
+mysql-client-10.11.6-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1016,16 +1016,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r2 description:
+openssl-3.1.4-r5 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r2 webpage:
+openssl-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r2 installed size:
+openssl-3.1.4-r5 installed size:
 732 KiB
 
-openssl-3.1.4-r2 license:
+openssl-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -1169,16 +1169,16 @@ GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3-r2 description:
+zlib-1.3.1-r0 description:
 A compression/decompression Library
 
-zlib-1.3-r2 webpage:
+zlib-1.3.1-r0 webpage:
 https://zlib.net/
 
-zlib-1.3-r2 installed size:
+zlib-1.3.1-r0 installed size:
 108 KiB
 
-zlib-1.3-r2 license:
+zlib-1.3.1-r0 license:
 Zlib
 
 ```
