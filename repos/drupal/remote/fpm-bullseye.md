@@ -1,7 +1,7 @@
 ## `drupal:fpm-bullseye`
 
 ```console
-$ docker pull drupal@sha256:4a1b08f35738e1504c603f6abee3fbe7f3f43f85e3efaf4504abd1413575a5de
+$ docker pull drupal@sha256:6018021ea51b4259e328a38aaddc1a0228916cbba6d375181f6fd4b684c519d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -686,7 +686,7 @@ $ docker pull drupal@sha256:6e16d76257c0b183ec0920a403f072e0c1593a9554fd372ecbf8
 ### `drupal:fpm-bullseye` - linux; ppc64le
 
 ```console
-$ docker pull drupal@sha256:412fc77ea246ad6b34f42a50cad1aaec49f301c3d572968f93a130cda136eb41
+$ docker pull drupal@sha256:3ed7b36e250edd22bdcc29a5f5280cced6dc2964076ef26f966042856eba81dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -828,24 +828,24 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 ### `drupal:fpm-bullseye` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:d9c405822b5a1829bf603a7a58d38c5990f4df517650b0bcdaf10e703cbe425e
+$ docker pull drupal@sha256:aa989bb70c641e728ead550469b7cb044c2e86e63e1e1bb05c8d22dbf5884f3a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.5 MB (5511310 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f38e630f40620f4e497f87f0a984a54739f7f5dd757ed197a823c91dd9d2075a`
+-	Image ID: `sha256:9944a3b6e74789dfa9a714ad8b1d5ebfe5692edc4774029d2aa4a4a071e5dbf1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:260a12b1014c840f9ea273918421ed665c5bc03ab36c90beab60367b8a878527`  
-		Last Modified: Sat, 20 Jan 2024 04:47:24 GMT  
+	-	`sha256:fada449762ceec6458220f491e9daec7adfca4616f06e7dd4ddf6a0ed76214fd`  
+		Last Modified: Sat, 27 Jan 2024 12:13:04 GMT  
 		Size: 5.5 MB (5478097 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:92862cd02a66fe428ccd65a645790df1d0f0247990bf5302ec7641944ca48b80`  
-		Last Modified: Sat, 20 Jan 2024 04:47:24 GMT  
+	-	`sha256:efedf2fb30f324d7e9381a2143bc99a5893273552558721257296f855b3848a8`  
+		Last Modified: Sat, 27 Jan 2024 12:13:04 GMT  
 		Size: 33.2 KB (33213 bytes)  
 		MIME: application/vnd.in-toto+json
 
