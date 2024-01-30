@@ -1533,21 +1533,13 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn2=2.3.4-1
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.4-1.dsc' libidn2_2.3.4-1.dsc 1915 SHA256:b7c1c506ea6691c9481176171490c3fde53ef8e51e1a28fb1d4e19dda61f7d59
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.4.orig.tar.gz' libidn2_2.3.4.orig.tar.gz 2083823 SHA256:93caba72b4e051d1f8d4f5a076ab63c99b77faee019b72b9783b267986dbb45f
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.4.orig.tar.gz.asc' libidn2_2.3.4.orig.tar.gz.asc 228 SHA256:c55c8cd14f398186407808f188ed5325faa01a62d88e79bb700bd8c839f75ceb
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.4-1.debian.tar.xz' libidn2_2.3.4-1.debian.tar.xz 16024 SHA256:a928219502f43e337aa3476098b96a250776d9be0b92255bd701c7fee572df68
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libidn2/2.3.4-1/
 
-- https://sources.debian.net/src/libidn2/2.3.4-1/ (for browsing the source)
-- https://sources.debian.net/src/libidn2/2.3.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libidn2/2.3.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libksba=1.6.5-2`
 
@@ -1998,21 +1990,13 @@ Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 - `GPL-2.0-only`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mawk=1.3.4.20231126-1
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20231126-1.dsc' mawk_1.3.4.20231126-1.dsc 2180 SHA256:09d117c73898b2106a5c8372148c1c763b21ab180c032a020aa936b91708d6cb
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20231126.orig.tar.gz' mawk_1.3.4.20231126.orig.tar.gz 413452 SHA256:1ac1e106e2880d9f6579ad993217f4af3b6de9943f90099c8d00668cbecb4367
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20231126.orig.tar.gz.asc' mawk_1.3.4.20231126.orig.tar.gz.asc 729 SHA256:0eb0aadf9279fdb8f22af7c064506b54e7bb421d6b4428f6f503603ca62ca25d
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20231126-1.debian.tar.xz' mawk_1.3.4.20231126-1.debian.tar.xz 15544 SHA256:51371bbd2cd9cdda0f55d6d9976a3fdc58eae2ace742407d2233fd452ad6aac1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mawk/1.3.4.20231126-1/
 
-- https://sources.debian.net/src/mawk/1.3.4.20231126-1/ (for browsing the source)
-- https://sources.debian.net/src/mawk/1.3.4.20231126-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mawk/1.3.4.20231126-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `media-types=10.1.0`
 
@@ -2521,20 +2505,13 @@ Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:4.0.4-2
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4-2.dsc' procps_4.0.4-2.dsc 2136 SHA256:a7f3565d90babda1d74d1b5768771ddbe94f287ea3753ba7c77633d9393d7a5b
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4.orig.tar.xz' procps_4.0.4.orig.tar.xz 1401540 SHA256:22870d6feb2478adb617ce4f09a787addaf2d260c5a8aa7b17d889a962c5e42e
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4-2.debian.tar.xz' procps_4.0.4-2.debian.tar.xz 30368 SHA256:cebb203a49661f27816333b39460a9cc010ac8e425bcbc8ceae92a8c62b8293b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/procps/2:4.0.4-2/
 
-- https://sources.debian.net/src/procps/2:4.0.4-2/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:4.0.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:4.0.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.11.6-1`
 
@@ -2675,20 +2652,13 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `GPL-2`
 - `GPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=0.31.0-2
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_0.31.0-2.dsc' rust-sequoia-sq_0.31.0-2.dsc 3494 SHA256:3d50c25d5c00545d2c1283bd226dbe4d57635334d56b43325bb714e85ae229cc
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_0.31.0.orig.tar.gz' rust-sequoia-sq_0.31.0.orig.tar.gz 369161 SHA256:38ce1b60431fcda2821cb257f9d124a3046e3b57d84a1a356f9d54d1cff6a6c4
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_0.31.0-2.debian.tar.xz' rust-sequoia-sq_0.31.0-2.debian.tar.xz 4076 SHA256:b21a89bb8e10688bf6cc6ce53ab4105055c8892e9fbcd626f0ee820f10e38785
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sq/0.31.0-2/
 
-- https://sources.debian.net/src/rust-sequoia-sq/0.31.0-2/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sq/0.31.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sq/0.31.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.9-2`
 

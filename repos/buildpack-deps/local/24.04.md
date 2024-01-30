@@ -112,13 +112,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.7.6
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.7.6.dsc' apt_2.7.6.dsc 2945 SHA512:00fe033fbeaa2f7e7133da0f92ea90c0a32ceb44c1c2a2d8d4dc18b4bf51081084c938525c83b00a1ae2c7dd110e271185ce6c0e52f0a0dfa05c828a7e55737d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.7.6.tar.xz' apt_2.7.6.tar.xz 2345736 SHA512:6d3efd270a6f7d5b2f020f7b5d68a6ecdd2e048c0c0545ab954651f89938ca74bf2f5488a6d769fb8268a5381368f384a28ffaaff235a15a9a4d289124e8a772
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/2.7.6/
+
 
 ### `dpkg` source package: `attr=1:2.5.1-5`
 
@@ -326,14 +326,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.41.50.20231227-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.41.50.20231227-1ubuntu1.dsc' binutils_2.41.50.20231227-1ubuntu1.dsc 10145 SHA512:7e65ddfa6f7761663efe2ca78765d06ea730ede3208f563d043cf1097341f7bb023c1f0ab7fd51dfdffeedd951110fd911a64a34c6563ebb7012053ef78fb2d9
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.41.50.20231227.orig.tar.xz' binutils_2.41.50.20231227.orig.tar.xz 23798148 SHA512:94827144fd2944ae0907993fc43471a69a378295ab7536379fd987f79f7017ca468f26a8b8fef88a9e947284a2afc0ec665632a491df3bda7082340e27e90e75
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.41.50.20231227-1ubuntu1.debian.tar.xz' binutils_2.41.50.20231227-1ubuntu1.debian.tar.xz 130308 SHA512:9fa605743aa18969a38d5a21635e3db81059d335010cd405eaaa768395327e6cbfd6f736da12702d8558c6a48813835181bce798b16bf5f983bc0be207477b52
-```
 
 ### `dpkg` source package: `boost1.83=1.83.0-2ubuntu1`
 
@@ -1092,14 +1087,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-13/copyright`, `/usr/share/doc/g++-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-13=13.2.0-9ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.2.0-9ubuntu1.dsc' gcc-13_13.2.0-9ubuntu1.dsc 27690 SHA512:05aff43c50a1b96ecf3f5e373b0b200d157a7ea2d4c2625dec4653877ebdcd39b16bb08b66fcd9efc0e57e083aeb1dd3035525aed084e9d0f8749be5b74aa8d7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.2.0.orig.tar.gz' gcc-13_13.2.0.orig.tar.gz 92596024 SHA512:cf149aff3cbee36bf23987e91016fa3f93dbcba8c88319876e6aa3cacd1dacea27d06ea7c4da6394a56d7d9d4f14ac928ead7d25502f0cc6db558f7f5cd99dff
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.2.0-9ubuntu1.debian.tar.xz' gcc-13_13.2.0-9ubuntu1.debian.tar.xz 1747988 SHA512:9a4555e1e25d7717cb4dc7941fd4af5f288baa12c5cbfff49116e58292dd95f3ae42a8ad36a63426cf1be7ed40359cbd5d274e4381782a7f9d23c4778a73a39e
-```
 
 ### `dpkg` source package: `gcc-defaults=1.209ubuntu1`
 
@@ -1113,13 +1103,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.209ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.209ubuntu1.dsc' gcc-defaults_1.209ubuntu1.dsc 14931 SHA512:8629bdfd395c43535f5d222999bccaf0d79e2d4eb7263752841339dc1f78b58507967e32d565de9ea5638632c0f8ce5afd4b529e45d51d28a730e36b09730503
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.209ubuntu1.tar.xz' gcc-defaults_1.209ubuntu1.tar.xz 48400 SHA512:cb9b43756e70cf5b173acb6fb4ca5cb76385541e5f3fc5a439420a111a3b823357736a59c0ca91add22e4feaabe486e33dd700da0845ca8f670fb2bd4d98f847
-```
 
 ### `dpkg` source package: `gdbm=1.23-5`
 
@@ -1251,15 +1237,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.78.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.78.3-1.dsc' glib2.0_2.78.3-1.dsc 3648 SHA512:2986302a24c0c957065effe133758337ae460b3bae912c989f2b5037e191aa9275c2da851bada2c36a80ffdcf301d112722661b2dbb08897ea13811a6cb577d1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.78.3.orig-unicode-data.tar.xz' glib2.0_2.78.3.orig-unicode-data.tar.xz 266184 SHA512:c818eae7b8df69b69abc2c59870eaad7488e3266afb5055b851fcbdd9dd96d9808787881631a8d840487acb3b40c18691b6c58d3df4735fa6eab41a5aa1295ff
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.78.3.orig.tar.xz' glib2.0_2.78.3.orig.tar.xz 5321388 SHA512:9c1af75fb973d23ce0286d5b7836eea45f9628c148ced5ac10e10abceda05024ae4c57f01439824d3287d986527500b7b959828b630b6e4a3314b5224f4d7246
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.78.3-1.debian.tar.xz' glib2.0_2.78.3-1.debian.tar.xz 119908 SHA512:8a1679448576949d8b30072ed0dadfb6f7ff7055c47d5f6b607454996b15c14e2954b1e5a9d58d0a389e34e0cfea28d55c10be1a3e6fb4954eb2ef7fbac212df
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.78.3-1/
+
 
 ### `dpkg` source package: `glibc=2.38-3ubuntu1`
 
@@ -2227,15 +2211,9 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.10.2-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.10.2-3ubuntu1.dsc' libgcrypt20_1.10.2-3ubuntu1.dsc 2906 SHA512:a77e7d0baa3a658bab8a46e6ced85b82902d7297c5372f973e253664780a49a7c3dd5747d7bf90f8669e947edf81d1dada0c03557836f8e2ee77fd72579b9630
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.10.2.orig.tar.bz2' libgcrypt20_1.10.2.orig.tar.bz2 3795164 SHA512:3a850baddfe8ffe8b3e96dc54af3fbb9e1dab204db1f06b9b90b8fbbfb7fb7276260cd1e61ba4dde5a662a2385385007478834e62e95f785d2e3d32652adb29e
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.10.2.orig.tar.bz2.asc' libgcrypt20_1.10.2.orig.tar.bz2.asc 228 SHA512:151ac009da846f4f97fc5f8d936c90da53a69e0824890b860249add4620480ca00e239b8b886f2e071e81095f120cf67c991ae981ac0fb58d56ea011c26957ab
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.10.2-3ubuntu1.debian.tar.xz' libgcrypt20_1.10.2-3ubuntu1.debian.tar.xz 37508 SHA512:c34fe218a47bdf4fd22b3819473723cdd3b4e75c046c535f2c24e5c6712a5664846f3a15b6438eab08cd3226da6b3963b495e70a12f2ce3ed0cc4bc018c2ba2f
-```
 
 ### `dpkg` source package: `libgpg-error=1.47-3build1`
 
@@ -3321,15 +3299,13 @@ Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 - `GPL-2.0-only`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mawk=1.3.4.20231126-1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20231126-1.dsc' mawk_1.3.4.20231126-1.dsc 2180 SHA512:c8d1068997766c067f6b3a687d6a43ba8aafecba88519d66f5a6bfbd6ec151ccf2fb54aa2e79ff82e92c88d550227332f50415f28fd5227f58ebb21e9cab3b14
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20231126.orig.tar.gz' mawk_1.3.4.20231126.orig.tar.gz 413452 SHA512:faacd473df97fc51cf3ece652e0826b13c26e8de5fa87746dfcc097811a9464a71e5630a8f3b4d243e0c1dc0199751b64d9a1bf34fe5080b646c0e5fff231e0d
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20231126.orig.tar.gz.asc' mawk_1.3.4.20231126.orig.tar.gz.asc 729 SHA512:19a9725f84651f87ecb38350984a60fce52046df45be7c494e615db91f6b76229d3dba20211bca41b90a7370fbba97fcb7bb2fe475ffb880fac7f1116f14333f
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20231126-1.debian.tar.xz' mawk_1.3.4.20231126-1.debian.tar.xz 15544 SHA512:f33b2576e5eed9b446aaaa365a5f3795146b38e6c57046217e7820c27e35c2f556147e273288b52d3fb993f769bf99148f6e1ea4eac86f74a1981599078e6ce1
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mawk/1.3.4.20231126-1/
+
 
 ### `dpkg` source package: `media-types=10.1.0`
 
@@ -3828,14 +3804,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.51.0+ds-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.51.0%2bds-3.dsc' pango1.0_1.51.0+ds-3.dsc 3469 SHA512:c5beadea2796bdd48203fc1a748bc0cb4edd2994b7343f038808f50f2dc291799b0fc515a0e4f5af88292bed06a1381162d93cc7750cd177886ec44350ce9017
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.51.0%2bds.orig.tar.xz' pango1.0_1.51.0+ds.orig.tar.xz 1731104 SHA512:2ed4ec6baf4e21da1f19d4ef43b1e3b1753229022f8e8ae6ac4ef910ab664defba8fd99391255d37f5b0f5b71ec3aee7f1ba15f5a449c04dfb07902fd700a635
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.51.0%2bds-3.debian.tar.xz' pango1.0_1.51.0+ds-3.debian.tar.xz 41176 SHA512:6df56c735ee171ca44bb713d3cdbed7607d0dc4efea37929ee6c144f71f9e94bc4df9d23c3a1e5367acfeeb10227c1f3d0791cfc12e64b23dbb26e02c35078f4
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pango1.0/1.51.0+ds-3/
+
 
 ### `dpkg` source package: `patch=2.7.6-7build2`
 
@@ -4263,14 +4238,13 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `GPL-2`
 - `GPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=0.31.0-2
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-sequoia-sq/rust-sequoia-sq_0.31.0-2.dsc' rust-sequoia-sq_0.31.0-2.dsc 3494 SHA512:f46604694238f00323decbfae2ef5758c66b9bfba9c6f54332d3c37bca3412ceefc32a6d4235ecfb99f1e47ac09ba8e6a5dec13ca362a7c45c6f82492fa25a36
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-sequoia-sq/rust-sequoia-sq_0.31.0.orig.tar.gz' rust-sequoia-sq_0.31.0.orig.tar.gz 369161 SHA512:846ddd47c9df1a79d2ad288105d969ec15008d54566a4c2d5f7a9374501f80849b43d38841d1d29bd7cfc33f53e20cc84cc207d929dee0d43d1f5426e82ecc7d
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-sequoia-sq/rust-sequoia-sq_0.31.0-2.debian.tar.xz' rust-sequoia-sq_0.31.0-2.debian.tar.xz 4076 SHA512:284c1a56d223b1b1bffd4a18314496d0334ab419dde5a6f17163b78ce5e766549b24dc3c92576a49aba5727ce164b379bdd29cc221b5830155c17c7040ccee4b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/rust-sequoia-sq/0.31.0-2/
+
 
 ### `dpkg` source package: `sed=4.9-2`
 
@@ -4417,15 +4391,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.44.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.44.2-1.dsc' sqlite3_3.44.2-1.dsc 2486 SHA512:893a7f753287b73d0edf8cb322ac15f9fcdac68cab7f88af80bf37c7baba459ed5469764f2f8fb0b2047a22282cccbac99abe5f0dc4ac1ae5c850ce529656ae6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.44.2.orig-www.tar.xz' sqlite3_3.44.2.orig-www.tar.xz 5671432 SHA512:9e8528fcfc5fa5311e24b956dd914af59f0f7616e423655e78a03351acf6d5d784b7d473c35aefcbfbcd216bcedbc8e26ce03c33f4ebed62d2f36e1f4ecad8a7
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.44.2.orig.tar.xz' sqlite3_3.44.2.orig.tar.xz 8214772 SHA512:cfb4e82a375e5a53d5484f004d2b5615876e1cad1c7d31ffabb417cc61609137aab674ec47f148f825e45ceaa51cb5bf005de73005535d42f6ed61ad499331d9
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.44.2-1.debian.tar.xz' sqlite3_3.44.2-1.debian.tar.xz 30200 SHA512:56de940549987ba7e0e8c6f9874e772ff4bb4a9b196da3281e13233c1ceb402a4decf33359c19f994d4faa84e2198e61e4bf7c9b611029513265ae7a6f81b733
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sqlite3/3.44.2-1/
+
 
 ### `dpkg` source package: `subversion=1.14.3-1`
 
@@ -4647,13 +4619,9 @@ Licenses: (parsed from: `/usr/share/doc/usrmerge/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris usrmerge=38ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/usrmerge/usrmerge_38ubuntu1.dsc' usrmerge_38ubuntu1.dsc 1717 SHA512:63bf1f4eb1321b440ec43f8152d458ac44d1de21bc6bbeb5a1b5daaeb2852b5e38a7b2c853cd07b7e84b05a48d0eb030579c5b2a8bef96ba2646312a4277068b
-'http://archive.ubuntu.com/ubuntu/pool/main/u/usrmerge/usrmerge_38ubuntu1.tar.xz' usrmerge_38ubuntu1.tar.xz 15688 SHA512:1f34d197a1361dedaa038cb3895eb9a9a9251bfb1839790e20e58727f5a71fe5421f83c3eb940569245d06c6d35c85861ad7a248c25f2df8ac2a3c0ed43f5188
-```
 
 ### `dpkg` source package: `utf8proc=2.9.0-1`
 
