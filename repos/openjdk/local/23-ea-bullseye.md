@@ -1,10 +1,10 @@
-# `openjdk:23-ea-6-jdk-bullseye`
+# `openjdk:23-ea-7-jdk-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8083081878c97b6df741e0239d40b47dd0a35afd148ba6840729b441fabce933`
-- Created: `2024-01-23T20:18:23Z`
-- Virtual Size: ~ 691.68 Mb  
+- Image ID: `sha256:806241a07da584abf740f26f28c4d029f20edeab25252fe1d0e7022f6c793370`
+- Created: `2024-01-26T01:56:28Z`
+- Virtual Size: ~ 691.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-23/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-23`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=23-ea+6`
+  - `JAVA_VERSION=23-ea+7`
 
 ## `dpkg` (`.deb`-based packages)
 
