@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7453a796a10c536496fe535a69199325203d4570fb5af64f9e2ebd750737daf7`
-- Created: `2024-01-25T01:38:51.702813446Z`
-- Virtual Size: ~ 251.30 Mb  
+- Image ID: `sha256:f2154409a887ca6488fc8ab7b275b4709a8aad517f097bc108f6c2cf6f1b46b5`
+- Created: `2024-01-27T09:28:31.92359323Z`
+- Virtual Size: ~ 251.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -313,16 +313,16 @@ LGPL-3.0-or-later OR GPL-2.0-or-later
 ### `apk` package: `gnupg-dirmngr`
 
 ```console
-gnupg-dirmngr-2.4.3-r1 description:
+gnupg-dirmngr-2.4.4-r0 description:
 GNU Privacy Guard 2 - network certificate management service
 
-gnupg-dirmngr-2.4.3-r1 webpage:
+gnupg-dirmngr-2.4.4-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-dirmngr-2.4.3-r1 installed size:
+gnupg-dirmngr-2.4.4-r0 installed size:
 656 KiB
 
-gnupg-dirmngr-2.4.3-r1 license:
+gnupg-dirmngr-2.4.4-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -330,16 +330,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-gpgconf`
 
 ```console
-gnupg-gpgconf-2.4.3-r1 description:
+gnupg-gpgconf-2.4.4-r0 description:
 GNU Privacy Guard 2 - core configuration utilities
 
-gnupg-gpgconf-2.4.3-r1 webpage:
+gnupg-gpgconf-2.4.4-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-gpgconf-2.4.3-r1 installed size:
-248 KiB
+gnupg-gpgconf-2.4.4-r0 installed size:
+260 KiB
 
-gnupg-gpgconf-2.4.3-r1 license:
+gnupg-gpgconf-2.4.4-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -347,16 +347,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-keyboxd`
 
 ```console
-gnupg-keyboxd-2.4.3-r1 description:
+gnupg-keyboxd-2.4.4-r0 description:
 GNU Privacy Guard 2 - keyboxd manager
 
-gnupg-keyboxd-2.4.3-r1 webpage:
+gnupg-keyboxd-2.4.4-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-keyboxd-2.4.3-r1 installed size:
-232 KiB
+gnupg-keyboxd-2.4.4-r0 installed size:
+236 KiB
 
-gnupg-keyboxd-2.4.3-r1 license:
+gnupg-keyboxd-2.4.4-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -381,16 +381,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gpg`
 
 ```console
-gpg-2.4.3-r1 description:
+gpg-2.4.4-r0 description:
 GNU Privacy Guard 2 - public key operations only
 
-gpg-2.4.3-r1 webpage:
+gpg-2.4.4-r0 webpage:
 https://www.gnupg.org/
 
-gpg-2.4.3-r1 installed size:
-932 KiB
+gpg-2.4.4-r0 installed size:
+940 KiB
 
-gpg-2.4.3-r1 license:
+gpg-2.4.4-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -398,16 +398,16 @@ GPL-3.0-or-later
 ### `apk` package: `gpg-agent`
 
 ```console
-gpg-agent-2.4.3-r1 description:
+gpg-agent-2.4.4-r0 description:
 GNU Privacy Guard 2 - cryptographic agent
 
-gpg-agent-2.4.3-r1 webpage:
+gpg-agent-2.4.4-r0 webpage:
 https://www.gnupg.org/
 
-gpg-agent-2.4.3-r1 installed size:
-660 KiB
+gpg-agent-2.4.4-r0 installed size:
+668 KiB
 
-gpg-agent-2.4.3-r1 license:
+gpg-agent-2.4.4-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -466,16 +466,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r2 description:
+libcrypto3-3.1.4-r5 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r2 webpage:
+libcrypto3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r2 installed size:
+libcrypto3-3.1.4-r5 installed size:
 4500 KiB
 
-libcrypto3-3.1.4-r2 license:
+libcrypto3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -704,16 +704,16 @@ custom
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r2 description:
+libssl3-3.1.4-r5 description:
 SSL shared libraries
 
-libssl3-3.1.4-r2 webpage:
+libssl3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r2 installed size:
+libssl3-3.1.4-r5 installed size:
 548 KiB
 
-libssl3-3.1.4-r2 license:
+libssl3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -1027,16 +1027,16 @@ Public-Domain
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3-r2 description:
+zlib-1.3.1-r0 description:
 A compression/decompression Library
 
-zlib-1.3-r2 webpage:
+zlib-1.3.1-r0 webpage:
 https://zlib.net/
 
-zlib-1.3-r2 installed size:
+zlib-1.3.1-r0 installed size:
 108 KiB
 
-zlib-1.3-r2 license:
+zlib-1.3.1-r0 license:
 Zlib
 
 ```
