@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0a9dafac78ccc7a7a179404b0f68ac9b4d98975e695856def6a379714997e54d`
+- Image ID: `sha256:0a9b69a79338a84fc5a161348ac59b4962a6f0f04583c4c651d4ad17a1c38c37`
 - Created: `2023-10-24T22:44:45Z`
 - Virtual Size: ~ 11.91 Mb  
   (total size of all layers on-disk)
@@ -157,16 +157,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r1 description:
+libcrypto3-3.1.4-r5 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r1 webpage:
+libcrypto3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r1 installed size:
+libcrypto3-3.1.4-r5 installed size:
 4472 KiB
 
-libcrypto3-3.1.4-r1 license:
+libcrypto3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -191,16 +191,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r1 description:
+libssl3-3.1.4-r5 description:
 SSL shared libraries
 
-libssl3-3.1.4-r1 webpage:
+libssl3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r1 installed size:
+libssl3-3.1.4-r5 installed size:
 552 KiB
 
-libssl3-3.1.4-r1 license:
+libssl3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -310,16 +310,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2023c-r1 description:
+tzdata-2023d-r0 description:
 Timezone data
 
-tzdata-2023c-r1 webpage:
+tzdata-2023d-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2023c-r1 installed size:
-3068 KiB
+tzdata-2023d-r0 installed size:
+3076 KiB
 
-tzdata-2023c-r1 license:
+tzdata-2023d-r0 license:
 Public-Domain
 
 ```
