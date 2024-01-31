@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d88af981b7af3fd61e7c21a58076f3182082f5e901672f2d08d1485f6cef6cf`
-- Created: `2024-01-26T22:01:00.180408169Z`
-- Virtual Size: ~ 277.44 Mb  
+- Image ID: `sha256:143b20498af0ceb3c6d6b238d7abacec81c511184a8965e6541f33550e185aef`
+- Created: `2024-01-27T10:29:38.673763882Z`
+- Virtual Size: ~ 271.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -202,16 +202,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.24.0-r0 description:
+c-ares-1.24.0-r1 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.24.0-r0 webpage:
+c-ares-1.24.0-r1 webpage:
 https://c-ares.org/
 
-c-ares-1.24.0-r0 installed size:
+c-ares-1.24.0-r1 installed size:
 144 KiB
 
-c-ares-1.24.0-r0 license:
+c-ares-1.24.0-r1 license:
 MIT
 
 ```
@@ -678,16 +678,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r4 description:
+libcrypto3-3.1.4-r5 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r4 webpage:
+libcrypto3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r4 installed size:
+libcrypto3-3.1.4-r5 installed size:
 4500 KiB
 
-libcrypto3-3.1.4-r4 license:
+libcrypto3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -1001,16 +1001,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r4 description:
+libssl3-3.1.4-r5 description:
 SSL shared libraries
 
-libssl3-3.1.4-r4 webpage:
+libssl3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r4 installed size:
+libssl3-3.1.4-r5 installed size:
 548 KiB
 
-libssl3-3.1.4-r4 license:
+libssl3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -1341,16 +1341,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r4 description:
+openssl-3.1.4-r5 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r4 webpage:
+openssl-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r4 installed size:
+openssl-3.1.4-r5 installed size:
 732 KiB
 
-openssl-3.1.4-r4 license:
+openssl-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -1511,16 +1511,16 @@ GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3-r2 description:
+zlib-1.3.1-r0 description:
 A compression/decompression Library
 
-zlib-1.3-r2 webpage:
+zlib-1.3.1-r0 webpage:
 https://zlib.net/
 
-zlib-1.3-r2 installed size:
+zlib-1.3.1-r0 installed size:
 108 KiB
 
-zlib-1.3-r2 license:
+zlib-1.3.1-r0 license:
 Zlib
 
 ```
