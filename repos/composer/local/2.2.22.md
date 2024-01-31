@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f9ba0ab3acf844e127702ee597b6553e16caaffece17f08d3bb90961e7888d93`
+- Image ID: `sha256:41d00bffcfc501f1c1dd4376f47184f4d3f49ffe488c44831ade52355b12ad46`
 - Created: `2023-09-29T13:59:34Z`
-- Virtual Size: ~ 197.83 Mb  
+- Virtual Size: ~ 191.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -234,16 +234,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.24.0-r0 description:
+c-ares-1.24.0-r1 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.24.0-r0 webpage:
+c-ares-1.24.0-r1 webpage:
 https://c-ares.org/
 
-c-ares-1.24.0-r0 installed size:
+c-ares-1.24.0-r1 installed size:
 144 KiB
 
-c-ares-1.24.0-r0 license:
+c-ares-1.24.0-r1 license:
 MIT
 
 ```
@@ -285,16 +285,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `coreutils`
 
 ```console
-coreutils-9.4-r1 description:
+coreutils-9.4-r2 description:
 The basic file, shell and text manipulation utilities
 
-coreutils-9.4-r1 webpage:
+coreutils-9.4-r2 webpage:
 https://www.gnu.org/software/coreutils/
 
-coreutils-9.4-r1 installed size:
+coreutils-9.4-r2 installed size:
 1040 KiB
 
-coreutils-9.4-r1 license:
+coreutils-9.4-r2 license:
 GPL-3.0-or-later
 
 ```
@@ -302,16 +302,16 @@ GPL-3.0-or-later
 ### `apk` package: `coreutils-env`
 
 ```console
-coreutils-env-9.4-r1 description:
+coreutils-env-9.4-r2 description:
 The basic file, shell and text manipulation utilities
 
-coreutils-env-9.4-r1 webpage:
+coreutils-env-9.4-r2 webpage:
 https://www.gnu.org/software/coreutils/
 
-coreutils-env-9.4-r1 installed size:
+coreutils-env-9.4-r2 installed size:
 60 KiB
 
-coreutils-env-9.4-r1 license:
+coreutils-env-9.4-r2 license:
 GPL-3.0-or-later
 
 ```
@@ -319,16 +319,16 @@ GPL-3.0-or-later
 ### `apk` package: `coreutils-fmt`
 
 ```console
-coreutils-fmt-9.4-r1 description:
+coreutils-fmt-9.4-r2 description:
 The basic file, shell and text manipulation utilities
 
-coreutils-fmt-9.4-r1 webpage:
+coreutils-fmt-9.4-r2 webpage:
 https://www.gnu.org/software/coreutils/
 
-coreutils-fmt-9.4-r1 installed size:
+coreutils-fmt-9.4-r2 installed size:
 56 KiB
 
-coreutils-fmt-9.4-r1 license:
+coreutils-fmt-9.4-r2 license:
 GPL-3.0-or-later
 
 ```
@@ -336,16 +336,16 @@ GPL-3.0-or-later
 ### `apk` package: `coreutils-sha512sum`
 
 ```console
-coreutils-sha512sum-9.4-r1 description:
+coreutils-sha512sum-9.4-r2 description:
 The basic file, shell and text manipulation utilities
 
-coreutils-sha512sum-9.4-r1 webpage:
+coreutils-sha512sum-9.4-r2 webpage:
 https://www.gnu.org/software/coreutils/
 
-coreutils-sha512sum-9.4-r1 installed size:
+coreutils-sha512sum-9.4-r2 installed size:
 60 KiB
 
-coreutils-sha512sum-9.4-r1 license:
+coreutils-sha512sum-9.4-r2 license:
 GPL-3.0-or-later
 
 ```
@@ -489,16 +489,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r4 description:
+libcrypto3-3.1.4-r5 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r4 webpage:
+libcrypto3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r4 installed size:
+libcrypto3-3.1.4-r5 installed size:
 4500 KiB
 
-libcrypto3-3.1.4-r4 license:
+libcrypto3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -676,16 +676,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r4 description:
+libssl3-3.1.4-r5 description:
 SSL shared libraries
 
-libssl3-3.1.4-r4 webpage:
+libssl3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r4 installed size:
+libssl3-3.1.4-r5 installed size:
 548 KiB
 
-libssl3-3.1.4-r4 license:
+libssl3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -999,16 +999,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r4 description:
+openssl-3.1.4-r5 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r4 webpage:
+openssl-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r4 installed size:
+openssl-3.1.4-r5 installed size:
 732 KiB
 
-openssl-3.1.4-r4 license:
+openssl-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -1373,16 +1373,16 @@ Info-ZIP
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3-r2 description:
+zlib-1.3.1-r0 description:
 A compression/decompression Library
 
-zlib-1.3-r2 webpage:
+zlib-1.3.1-r0 webpage:
 https://zlib.net/
 
-zlib-1.3-r2 installed size:
+zlib-1.3.1-r0 installed size:
 108 KiB
 
-zlib-1.3-r2 license:
+zlib-1.3.1-r0 license:
 Zlib
 
 ```
