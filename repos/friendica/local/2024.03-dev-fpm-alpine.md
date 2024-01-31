@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bcc62ab5f24e9c10bfb185fa2e038a9971c8cd5332a99c46b6466f9405e17a59`
-- Created: `2023-12-28T02:02:26.64846842Z`
-- Virtual Size: ~ 129.35 Mb  
+- Image ID: `sha256:d0eac6bdb80710d15279b094579e0063b3df8eac7ac90b0a8a18f5131402a503`
+- Created: `2024-01-27T10:14:49.438731516Z`
+- Virtual Size: ~ 129.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -169,16 +169,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.22.1-r0 description:
+c-ares-1.24.0-r1 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.22.1-r0 webpage:
+c-ares-1.24.0-r1 webpage:
 https://c-ares.org/
 
-c-ares-1.22.1-r0 installed size:
-132 KiB
+c-ares-1.24.0-r1 installed size:
+144 KiB
 
-c-ares-1.22.1-r0 license:
+c-ares-1.24.0-r1 license:
 MIT
 
 ```
@@ -339,16 +339,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gnupg`
 
 ```console
-gnupg-2.4.3-r1 description:
+gnupg-2.4.4-r0 description:
 GNU Privacy Guard 2 - meta package for full GnuPG suite
 
-gnupg-2.4.3-r1 webpage:
+gnupg-2.4.4-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-2.4.3-r1 installed size:
+gnupg-2.4.4-r0 installed size:
 4096 B
 
-gnupg-2.4.3-r1 license:
+gnupg-2.4.4-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -356,16 +356,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-dirmngr`
 
 ```console
-gnupg-dirmngr-2.4.3-r1 description:
+gnupg-dirmngr-2.4.4-r0 description:
 GNU Privacy Guard 2 - network certificate management service
 
-gnupg-dirmngr-2.4.3-r1 webpage:
+gnupg-dirmngr-2.4.4-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-dirmngr-2.4.3-r1 installed size:
+gnupg-dirmngr-2.4.4-r0 installed size:
 656 KiB
 
-gnupg-dirmngr-2.4.3-r1 license:
+gnupg-dirmngr-2.4.4-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -373,16 +373,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-gpgconf`
 
 ```console
-gnupg-gpgconf-2.4.3-r1 description:
+gnupg-gpgconf-2.4.4-r0 description:
 GNU Privacy Guard 2 - core configuration utilities
 
-gnupg-gpgconf-2.4.3-r1 webpage:
+gnupg-gpgconf-2.4.4-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-gpgconf-2.4.3-r1 installed size:
-248 KiB
+gnupg-gpgconf-2.4.4-r0 installed size:
+260 KiB
 
-gnupg-gpgconf-2.4.3-r1 license:
+gnupg-gpgconf-2.4.4-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -390,16 +390,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-keyboxd`
 
 ```console
-gnupg-keyboxd-2.4.3-r1 description:
+gnupg-keyboxd-2.4.4-r0 description:
 GNU Privacy Guard 2 - keyboxd manager
 
-gnupg-keyboxd-2.4.3-r1 webpage:
+gnupg-keyboxd-2.4.4-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-keyboxd-2.4.3-r1 installed size:
-232 KiB
+gnupg-keyboxd-2.4.4-r0 installed size:
+236 KiB
 
-gnupg-keyboxd-2.4.3-r1 license:
+gnupg-keyboxd-2.4.4-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -407,16 +407,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-utils`
 
 ```console
-gnupg-utils-2.4.3-r1 description:
+gnupg-utils-2.4.4-r0 description:
 GNU Privacy Guard 2 - utility programs
 
-gnupg-utils-2.4.3-r1 webpage:
+gnupg-utils-2.4.4-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-utils-2.4.3-r1 installed size:
-752 KiB
+gnupg-utils-2.4.4-r0 installed size:
+764 KiB
 
-gnupg-utils-2.4.3-r1 license:
+gnupg-utils-2.4.4-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -424,16 +424,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-wks-client`
 
 ```console
-gnupg-wks-client-2.4.3-r1 description:
+gnupg-wks-client-2.4.4-r0 description:
 GNU Privacy Guard 2 - Web Key Service client
 
-gnupg-wks-client-2.4.3-r1 webpage:
+gnupg-wks-client-2.4.4-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-wks-client-2.4.3-r1 installed size:
-184 KiB
+gnupg-wks-client-2.4.4-r0 installed size:
+188 KiB
 
-gnupg-wks-client-2.4.3-r1 license:
+gnupg-wks-client-2.4.4-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -441,16 +441,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.1-r0 description:
+gnutls-3.8.3-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.1-r0 webpage:
+gnutls-3.8.3-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.1-r0 installed size:
-1852 KiB
+gnutls-3.8.3-r0 installed size:
+1856 KiB
 
-gnutls-3.8.1-r0 license:
+gnutls-3.8.3-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -458,16 +458,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gpg`
 
 ```console
-gpg-2.4.3-r1 description:
+gpg-2.4.4-r0 description:
 GNU Privacy Guard 2 - public key operations only
 
-gpg-2.4.3-r1 webpage:
+gpg-2.4.4-r0 webpage:
 https://www.gnupg.org/
 
-gpg-2.4.3-r1 installed size:
-932 KiB
+gpg-2.4.4-r0 installed size:
+940 KiB
 
-gpg-2.4.3-r1 license:
+gpg-2.4.4-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -475,16 +475,16 @@ GPL-3.0-or-later
 ### `apk` package: `gpg-agent`
 
 ```console
-gpg-agent-2.4.3-r1 description:
+gpg-agent-2.4.4-r0 description:
 GNU Privacy Guard 2 - cryptographic agent
 
-gpg-agent-2.4.3-r1 webpage:
+gpg-agent-2.4.4-r0 webpage:
 https://www.gnupg.org/
 
-gpg-agent-2.4.3-r1 installed size:
-660 KiB
+gpg-agent-2.4.4-r0 installed size:
+668 KiB
 
-gpg-agent-2.4.3-r1 license:
+gpg-agent-2.4.4-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -492,16 +492,16 @@ GPL-3.0-or-later
 ### `apk` package: `gpg-wks-server`
 
 ```console
-gpg-wks-server-2.4.3-r1 description:
+gpg-wks-server-2.4.4-r0 description:
 GNU Privacy Guard 2 - Web Key Service server
 
-gpg-wks-server-2.4.3-r1 webpage:
+gpg-wks-server-2.4.4-r0 webpage:
 https://www.gnupg.org/
 
-gpg-wks-server-2.4.3-r1 installed size:
+gpg-wks-server-2.4.4-r0 installed size:
 164 KiB
 
-gpg-wks-server-2.4.3-r1 license:
+gpg-wks-server-2.4.4-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -509,16 +509,16 @@ GPL-3.0-or-later
 ### `apk` package: `gpgsm`
 
 ```console
-gpgsm-2.4.3-r1 description:
+gpgsm-2.4.4-r0 description:
 GNU Privacy Guard 2 - S/MIME version
 
-gpgsm-2.4.3-r1 webpage:
+gpgsm-2.4.4-r0 webpage:
 https://www.gnupg.org/
 
-gpgsm-2.4.3-r1 installed size:
-484 KiB
+gpgsm-2.4.4-r0 installed size:
+492 KiB
 
-gpgsm-2.4.3-r1 license:
+gpgsm-2.4.4-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -526,16 +526,16 @@ GPL-3.0-or-later
 ### `apk` package: `gpgv`
 
 ```console
-gpgv-2.4.3-r1 description:
+gpgv-2.4.4-r0 description:
 GNU Privacy Guard 2 - signature verification only
 
-gpgv-2.4.3-r1 webpage:
+gpgv-2.4.4-r0 webpage:
 https://www.gnupg.org/
 
-gpgv-2.4.3-r1 installed size:
+gpgv-2.4.4-r0 installed size:
 436 KiB
 
-gpgv-2.4.3-r1 license:
+gpgv-2.4.4-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -543,16 +543,16 @@ GPL-3.0-or-later
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.1.22-r0 description:
+imagemagick-7.1.1.26-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.1.22-r0 webpage:
+imagemagick-7.1.1.26-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.1.22-r0 installed size:
-4332 KiB
+imagemagick-7.1.1.26-r0 installed size:
+4336 KiB
 
-imagemagick-7.1.1.22-r0 license:
+imagemagick-7.1.1.26-r0 license:
 ImageMagick
 
 ```
@@ -560,16 +560,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.1.22-r0 description:
+imagemagick-jpeg-7.1.1.26-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.1.22-r0 webpage:
+imagemagick-jpeg-7.1.1.26-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.1.22-r0 installed size:
+imagemagick-jpeg-7.1.1.26-r0 installed size:
 84 KiB
 
-imagemagick-jpeg-7.1.1.22-r0 license:
+imagemagick-jpeg-7.1.1.26-r0 license:
 ImageMagick
 
 ```
@@ -577,16 +577,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.1.22-r0 description:
+imagemagick-libs-7.1.1.26-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.1.22-r0 webpage:
+imagemagick-libs-7.1.1.26-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.1.22-r0 installed size:
-4152 KiB
+imagemagick-libs-7.1.1.26-r0 installed size:
+4168 KiB
 
-imagemagick-libs-7.1.1.22-r0 license:
+imagemagick-libs-7.1.1.26-r0 license:
 ImageMagick
 
 ```
@@ -594,16 +594,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.1.22-r0 description:
+imagemagick-webp-7.1.1.26-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.1.22-r0 webpage:
+imagemagick-webp-7.1.1.26-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.1.22-r0 installed size:
+imagemagick-webp-7.1.1.26-r0 installed size:
 56 KiB
 
-imagemagick-webp-7.1.1.22-r0 license:
+imagemagick-webp-7.1.1.26-r0 license:
 ImageMagick
 
 ```
@@ -781,16 +781,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r2 description:
+libcrypto3-3.1.4-r5 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r2 webpage:
+libcrypto3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r2 installed size:
+libcrypto3-3.1.4-r5 installed size:
 4500 KiB
 
-libcrypto3-3.1.4-r2 license:
+libcrypto3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -1172,16 +1172,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r2 description:
+libssl3-3.1.4-r5 description:
 SSL shared libraries
 
-libssl3-3.1.4-r2 webpage:
+libssl3-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r2 installed size:
+libssl3-3.1.4-r5 installed size:
 548 KiB
 
-libssl3-3.1.4-r2 license:
+libssl3-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -1614,16 +1614,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r2 description:
+openssl-3.1.4-r5 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r2 webpage:
+openssl-3.1.4-r5 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r2 installed size:
+openssl-3.1.4-r5 installed size:
 732 KiB
 
-openssl-3.1.4-r2 license:
+openssl-3.1.4-r5 license:
 Apache-2.0
 
 ```
@@ -1886,16 +1886,16 @@ GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3-r2 description:
+zlib-1.3.1-r0 description:
 A compression/decompression Library
 
-zlib-1.3-r2 webpage:
+zlib-1.3.1-r0 webpage:
 https://zlib.net/
 
-zlib-1.3-r2 installed size:
+zlib-1.3.1-r0 installed size:
 108 KiB
 
-zlib-1.3-r2 license:
+zlib-1.3.1-r0 license:
 Zlib
 
 ```
