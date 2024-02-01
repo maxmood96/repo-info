@@ -998,7 +998,7 @@ CMD ["mvn"]
 ## `maven:3-amazoncorretto-11-debian`
 
 ```console
-$ docker pull maven@sha256:d7a06b927840cea038e6c3e81c6a335a11b40d76c991e849c7f419c1023f6f27
+$ docker pull maven@sha256:841425e60a509d9eb24196d77677c8ae22d0818af79915e81ce22c60b208beef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1009,20 +1009,20 @@ $ docker pull maven@sha256:d7a06b927840cea038e6c3e81c6a335a11b40d76c991e849c7f41
 ### `maven:3-amazoncorretto-11-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:bf08f6b2d2ca7005d70c4bafc3b0e1348f11b5140cb99882cc68703258e4fcfb
+$ docker pull maven@sha256:e5672e30a4bc2b2db2e59736ee4a75b8767077e30d756ad3447dda9ea3aa7701
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.9 MB (237905923 bytes)**  
+-	Total Size: **237.9 MB (237938206 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a0e918863d6712273753d47b1be9fdc0987da44ce0985b80ae32d2b03e2011b`
+-	Image ID: `sha256:72327a94da4272d7c4e62c7622ce876f3ea39491a9b357668b6395414aba70bc`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -1049,29 +1049,29 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c91f52f81e8754699c71561bf2be2748dee3439a628a3317705eb1db1e6656b0`  
-		Last Modified: Thu, 11 Jan 2024 05:42:14 GMT  
-		Size: 199.3 MB (199298683 bytes)  
+	-	`sha256:dadcd64c7ce1994300a9070b4378d062a8783aa5253b235e35610543b74432c0`  
+		Last Modified: Thu, 01 Feb 2024 01:05:49 GMT  
+		Size: 199.3 MB (199306424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c68edb2f0b7fe36fa51480f70aefa70d54b92a829579eb412a2ee36b87435cf2`  
-		Last Modified: Thu, 11 Jan 2024 05:42:01 GMT  
-		Size: 9.5 MB (9479945 bytes)  
+	-	`sha256:8f34d8a76c9b4e1b339508e90076a1c5e241e26a698353b6369a8300a81fa094`  
+		Last Modified: Thu, 01 Feb 2024 01:05:36 GMT  
+		Size: 9.5 MB (9479942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9bd9f43c3fcd5447f182de5d186f302016ce75c4305111709e5385c2e04ad33`  
-		Last Modified: Thu, 11 Jan 2024 05:42:00 GMT  
-		Size: 851.0 B  
+	-	`sha256:84bd404d83b00d51fdd0af394261cd58d6a3f0459eb95657ac4c919f4e59bdfd`  
+		Last Modified: Thu, 01 Feb 2024 01:05:35 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:556f86933d34466a4615890c6b916fe1a5adae9ee93345d7c50d583d121a9f5d`  
-		Last Modified: Thu, 11 Jan 2024 05:42:00 GMT  
+	-	`sha256:ee1ddf758a784dda694ba94dc7d6f81c5b4dd13e76fe4ffe47474ac14011f930`  
+		Last Modified: Thu, 01 Feb 2024 01:05:35 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d881ecb490b1b44ac2709680e989866abf3a64095ec72c47236ff4275581a493`  
-		Last Modified: Thu, 11 Jan 2024 05:42:00 GMT  
-		Size: 165.0 B  
+	-	`sha256:f1776b408ac1cf1da53d45617471d7c82c31e70fd0bc0c0e49d1433b6178ccca`  
+		Last Modified: Thu, 01 Feb 2024 01:05:35 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-amazoncorretto-11-debian` - linux; arm64 variant v8
@@ -1145,7 +1145,7 @@ CMD ["mvn"]
 ## `maven:3-amazoncorretto-11-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:d7a06b927840cea038e6c3e81c6a335a11b40d76c991e849c7f419c1023f6f27
+$ docker pull maven@sha256:841425e60a509d9eb24196d77677c8ae22d0818af79915e81ce22c60b208beef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1156,20 +1156,20 @@ $ docker pull maven@sha256:d7a06b927840cea038e6c3e81c6a335a11b40d76c991e849c7f41
 ### `maven:3-amazoncorretto-11-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:bf08f6b2d2ca7005d70c4bafc3b0e1348f11b5140cb99882cc68703258e4fcfb
+$ docker pull maven@sha256:e5672e30a4bc2b2db2e59736ee4a75b8767077e30d756ad3447dda9ea3aa7701
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.9 MB (237905923 bytes)**  
+-	Total Size: **237.9 MB (237938206 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a0e918863d6712273753d47b1be9fdc0987da44ce0985b80ae32d2b03e2011b`
+-	Image ID: `sha256:72327a94da4272d7c4e62c7622ce876f3ea39491a9b357668b6395414aba70bc`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -1196,29 +1196,29 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c91f52f81e8754699c71561bf2be2748dee3439a628a3317705eb1db1e6656b0`  
-		Last Modified: Thu, 11 Jan 2024 05:42:14 GMT  
-		Size: 199.3 MB (199298683 bytes)  
+	-	`sha256:dadcd64c7ce1994300a9070b4378d062a8783aa5253b235e35610543b74432c0`  
+		Last Modified: Thu, 01 Feb 2024 01:05:49 GMT  
+		Size: 199.3 MB (199306424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c68edb2f0b7fe36fa51480f70aefa70d54b92a829579eb412a2ee36b87435cf2`  
-		Last Modified: Thu, 11 Jan 2024 05:42:01 GMT  
-		Size: 9.5 MB (9479945 bytes)  
+	-	`sha256:8f34d8a76c9b4e1b339508e90076a1c5e241e26a698353b6369a8300a81fa094`  
+		Last Modified: Thu, 01 Feb 2024 01:05:36 GMT  
+		Size: 9.5 MB (9479942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9bd9f43c3fcd5447f182de5d186f302016ce75c4305111709e5385c2e04ad33`  
-		Last Modified: Thu, 11 Jan 2024 05:42:00 GMT  
-		Size: 851.0 B  
+	-	`sha256:84bd404d83b00d51fdd0af394261cd58d6a3f0459eb95657ac4c919f4e59bdfd`  
+		Last Modified: Thu, 01 Feb 2024 01:05:35 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:556f86933d34466a4615890c6b916fe1a5adae9ee93345d7c50d583d121a9f5d`  
-		Last Modified: Thu, 11 Jan 2024 05:42:00 GMT  
+	-	`sha256:ee1ddf758a784dda694ba94dc7d6f81c5b4dd13e76fe4ffe47474ac14011f930`  
+		Last Modified: Thu, 01 Feb 2024 01:05:35 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d881ecb490b1b44ac2709680e989866abf3a64095ec72c47236ff4275581a493`  
-		Last Modified: Thu, 11 Jan 2024 05:42:00 GMT  
-		Size: 165.0 B  
+	-	`sha256:f1776b408ac1cf1da53d45617471d7c82c31e70fd0bc0c0e49d1433b6178ccca`  
+		Last Modified: Thu, 01 Feb 2024 01:05:35 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-amazoncorretto-11-debian-bookworm` - linux; arm64 variant v8
@@ -1642,7 +1642,7 @@ CMD ["mvn"]
 ## `maven:3-amazoncorretto-17-debian`
 
 ```console
-$ docker pull maven@sha256:9c6d8ef0eb1844237aa07d138ccdad499aacb54ce352b085370938f97d8b026a
+$ docker pull maven@sha256:a7be1829e7185e1227247a0510f3afa05d4733dfaf8b433f9582b02f8734b899
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1653,20 +1653,20 @@ $ docker pull maven@sha256:9c6d8ef0eb1844237aa07d138ccdad499aacb54ce352b08537093
 ### `maven:3-amazoncorretto-17-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:11eb64d94108dbff2a2e5c85fcf395ba238367cc8bd4f5d658e6ec257b02a9e4
+$ docker pull maven@sha256:1524232f900e41b63a02518aefd613776ebbf8c194e8242a855ebcf4eb3ea45f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **236.4 MB (236369316 bytes)**  
+-	Total Size: **236.4 MB (236430682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d0646721bd0068b8a45a5c51e9044d28b6b02d0f68dcbcd3b0f1ee9c54c2c6c9`
+-	Image ID: `sha256:7a977eef67b19c48b029dd318acad1377703b1d4a83fc69c9b9419fa708b7a90`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -1693,29 +1693,29 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b54ffb78f6eb2ce02fd16ab56dc6aa3607345c32c7eee7ea17180a8da7cb9b1b`  
-		Last Modified: Thu, 11 Jan 2024 05:42:46 GMT  
-		Size: 197.8 MB (197762073 bytes)  
+	-	`sha256:88332ac8920b0613d68f0e1580424176d5d0ba8b19b179684587191632fb6b1c`  
+		Last Modified: Thu, 01 Feb 2024 01:06:26 GMT  
+		Size: 197.8 MB (197798899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47b64a1278a4899891d5823f1c02e0711bf6dc9e6a37d5d180e94a99fe9d6ccc`  
-		Last Modified: Thu, 11 Jan 2024 05:42:33 GMT  
-		Size: 9.5 MB (9479948 bytes)  
+	-	`sha256:df68f8306bd067cc113d3570612f62f0da3e7002398e169521d6df3f735babc5`  
+		Last Modified: Thu, 01 Feb 2024 01:06:12 GMT  
+		Size: 9.5 MB (9479943 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d4361e3302e9aace6de7b4d83c4251e67dad5578ce115d271dbdf77f5322b87`  
-		Last Modified: Thu, 11 Jan 2024 05:42:32 GMT  
+	-	`sha256:dd5e486f329d789281aedfc3d4dfbd7780c868263f3ce3ca65ad918e3cacba70`  
+		Last Modified: Thu, 01 Feb 2024 01:06:11 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d18870d25909ce62908ef1cb4c63d66129846a4daad9e1df3cab6dbb7a648e06`  
-		Last Modified: Thu, 11 Jan 2024 05:42:32 GMT  
+	-	`sha256:d7289134c5a5dd7bfc85180639bbf75cd96213856e287e039ea4d373ef203475`  
+		Last Modified: Thu, 01 Feb 2024 01:06:11 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d96c80f24e24b51d1b223a589e530a425f882eb33bda6a8528e8ed84223c18e2`  
-		Last Modified: Thu, 11 Jan 2024 05:42:32 GMT  
-		Size: 164.0 B  
+	-	`sha256:50067052e686279bc1fd6d1c75a3ab2ce47a8db02c486aca238907fc6db8759c`  
+		Last Modified: Thu, 01 Feb 2024 01:06:10 GMT  
+		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-amazoncorretto-17-debian` - linux; arm64 variant v8
@@ -1789,7 +1789,7 @@ CMD ["mvn"]
 ## `maven:3-amazoncorretto-17-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:9c6d8ef0eb1844237aa07d138ccdad499aacb54ce352b085370938f97d8b026a
+$ docker pull maven@sha256:a7be1829e7185e1227247a0510f3afa05d4733dfaf8b433f9582b02f8734b899
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1800,20 +1800,20 @@ $ docker pull maven@sha256:9c6d8ef0eb1844237aa07d138ccdad499aacb54ce352b08537093
 ### `maven:3-amazoncorretto-17-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:11eb64d94108dbff2a2e5c85fcf395ba238367cc8bd4f5d658e6ec257b02a9e4
+$ docker pull maven@sha256:1524232f900e41b63a02518aefd613776ebbf8c194e8242a855ebcf4eb3ea45f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **236.4 MB (236369316 bytes)**  
+-	Total Size: **236.4 MB (236430682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d0646721bd0068b8a45a5c51e9044d28b6b02d0f68dcbcd3b0f1ee9c54c2c6c9`
+-	Image ID: `sha256:7a977eef67b19c48b029dd318acad1377703b1d4a83fc69c9b9419fa708b7a90`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -1840,29 +1840,29 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b54ffb78f6eb2ce02fd16ab56dc6aa3607345c32c7eee7ea17180a8da7cb9b1b`  
-		Last Modified: Thu, 11 Jan 2024 05:42:46 GMT  
-		Size: 197.8 MB (197762073 bytes)  
+	-	`sha256:88332ac8920b0613d68f0e1580424176d5d0ba8b19b179684587191632fb6b1c`  
+		Last Modified: Thu, 01 Feb 2024 01:06:26 GMT  
+		Size: 197.8 MB (197798899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47b64a1278a4899891d5823f1c02e0711bf6dc9e6a37d5d180e94a99fe9d6ccc`  
-		Last Modified: Thu, 11 Jan 2024 05:42:33 GMT  
-		Size: 9.5 MB (9479948 bytes)  
+	-	`sha256:df68f8306bd067cc113d3570612f62f0da3e7002398e169521d6df3f735babc5`  
+		Last Modified: Thu, 01 Feb 2024 01:06:12 GMT  
+		Size: 9.5 MB (9479943 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d4361e3302e9aace6de7b4d83c4251e67dad5578ce115d271dbdf77f5322b87`  
-		Last Modified: Thu, 11 Jan 2024 05:42:32 GMT  
+	-	`sha256:dd5e486f329d789281aedfc3d4dfbd7780c868263f3ce3ca65ad918e3cacba70`  
+		Last Modified: Thu, 01 Feb 2024 01:06:11 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d18870d25909ce62908ef1cb4c63d66129846a4daad9e1df3cab6dbb7a648e06`  
-		Last Modified: Thu, 11 Jan 2024 05:42:32 GMT  
+	-	`sha256:d7289134c5a5dd7bfc85180639bbf75cd96213856e287e039ea4d373ef203475`  
+		Last Modified: Thu, 01 Feb 2024 01:06:11 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d96c80f24e24b51d1b223a589e530a425f882eb33bda6a8528e8ed84223c18e2`  
-		Last Modified: Thu, 11 Jan 2024 05:42:32 GMT  
-		Size: 164.0 B  
+	-	`sha256:50067052e686279bc1fd6d1c75a3ab2ce47a8db02c486aca238907fc6db8759c`  
+		Last Modified: Thu, 01 Feb 2024 01:06:10 GMT  
+		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-amazoncorretto-17-debian-bookworm` - linux; arm64 variant v8
@@ -2286,7 +2286,7 @@ CMD ["mvn"]
 ## `maven:3-amazoncorretto-21-debian`
 
 ```console
-$ docker pull maven@sha256:451456fb1611e6e8f60d15cebc99045182eff5bc53644a6a6fbf35e0d093a7e7
+$ docker pull maven@sha256:1955e479ba3de23d0ff81d254c7242b53065cfc7190b569891aed5e1b5c85504
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2297,20 +2297,20 @@ $ docker pull maven@sha256:451456fb1611e6e8f60d15cebc99045182eff5bc53644a6a6fbf3
 ### `maven:3-amazoncorretto-21-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:35b0ec225ec95394e088648969d07991e2a2e8005b6113cf8f633d807c97207a
+$ docker pull maven@sha256:d16b58c97faa953416e714ef9a5b887d6c10780cf299712302ed47d7557fa61e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.0 MB (251958368 bytes)**  
+-	Total Size: **252.2 MB (252209530 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d3b69de646ea01a8a4bee93741fae64f20222f02de4a06a63c13b0991393435`
+-	Image ID: `sha256:9af995a5daa9bca28dab403bceaaf6caf7e988ee12b08efe5be08aae32547413`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -2337,28 +2337,28 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:452658320a09cafa0ae9b2b84cab557ed515cd5d385ee555287e8de4e0f8f9ec`  
-		Last Modified: Thu, 11 Jan 2024 05:43:20 GMT  
-		Size: 213.4 MB (213351137 bytes)  
+	-	`sha256:24f3c9a400333343f78fd7ca6589de3d7edafd07aab43ea2b10b5be771a8c9ff`  
+		Last Modified: Thu, 01 Feb 2024 01:07:02 GMT  
+		Size: 213.6 MB (213577744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d806d12e35c8d2476f31468166dcf3d118841c3f9e913b2046bd726caa760f21`  
-		Last Modified: Thu, 11 Jan 2024 05:43:06 GMT  
-		Size: 9.5 MB (9479933 bytes)  
+	-	`sha256:82058ce8b6cdeda0f67ac06072761c7f962abb6006087bd48d7d287cf7aa9f0d`  
+		Last Modified: Thu, 01 Feb 2024 01:06:46 GMT  
+		Size: 9.5 MB (9479943 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0341876d44dd85dfef3aab940f87c45a1c11bde76893e676cb44b20fb880826`  
-		Last Modified: Thu, 11 Jan 2024 05:43:05 GMT  
-		Size: 853.0 B  
+	-	`sha256:6b149f2082d626762a2834e6eb736314e529340ccf2290525ae9790dc222cc04`  
+		Last Modified: Thu, 01 Feb 2024 01:06:45 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fd8def76149c7ba2cd28be76f377a85243b40638bc3f49e1bdf9e205a2bd907`  
-		Last Modified: Thu, 11 Jan 2024 05:43:05 GMT  
+	-	`sha256:bf22b5b79f3faddbd6c7585cd08f0fa98a53100e4063daeb916f32d0de2b4a7e`  
+		Last Modified: Thu, 01 Feb 2024 01:06:45 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a81a2c45d44e13618fc24e71761b8479ede07468e48053fef1694aa9efb85d1c`  
-		Last Modified: Thu, 11 Jan 2024 05:43:05 GMT  
+	-	`sha256:2104fbc6fe8ac1b066b4d9ad12c15d357eb30bffc0025c36e33d0141a8694d6b`  
+		Last Modified: Thu, 01 Feb 2024 01:06:45 GMT  
 		Size: 166.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2433,7 +2433,7 @@ CMD ["mvn"]
 ## `maven:3-amazoncorretto-21-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:451456fb1611e6e8f60d15cebc99045182eff5bc53644a6a6fbf35e0d093a7e7
+$ docker pull maven@sha256:1955e479ba3de23d0ff81d254c7242b53065cfc7190b569891aed5e1b5c85504
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2444,20 +2444,20 @@ $ docker pull maven@sha256:451456fb1611e6e8f60d15cebc99045182eff5bc53644a6a6fbf3
 ### `maven:3-amazoncorretto-21-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:35b0ec225ec95394e088648969d07991e2a2e8005b6113cf8f633d807c97207a
+$ docker pull maven@sha256:d16b58c97faa953416e714ef9a5b887d6c10780cf299712302ed47d7557fa61e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.0 MB (251958368 bytes)**  
+-	Total Size: **252.2 MB (252209530 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d3b69de646ea01a8a4bee93741fae64f20222f02de4a06a63c13b0991393435`
+-	Image ID: `sha256:9af995a5daa9bca28dab403bceaaf6caf7e988ee12b08efe5be08aae32547413`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -2484,28 +2484,28 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:452658320a09cafa0ae9b2b84cab557ed515cd5d385ee555287e8de4e0f8f9ec`  
-		Last Modified: Thu, 11 Jan 2024 05:43:20 GMT  
-		Size: 213.4 MB (213351137 bytes)  
+	-	`sha256:24f3c9a400333343f78fd7ca6589de3d7edafd07aab43ea2b10b5be771a8c9ff`  
+		Last Modified: Thu, 01 Feb 2024 01:07:02 GMT  
+		Size: 213.6 MB (213577744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d806d12e35c8d2476f31468166dcf3d118841c3f9e913b2046bd726caa760f21`  
-		Last Modified: Thu, 11 Jan 2024 05:43:06 GMT  
-		Size: 9.5 MB (9479933 bytes)  
+	-	`sha256:82058ce8b6cdeda0f67ac06072761c7f962abb6006087bd48d7d287cf7aa9f0d`  
+		Last Modified: Thu, 01 Feb 2024 01:06:46 GMT  
+		Size: 9.5 MB (9479943 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0341876d44dd85dfef3aab940f87c45a1c11bde76893e676cb44b20fb880826`  
-		Last Modified: Thu, 11 Jan 2024 05:43:05 GMT  
-		Size: 853.0 B  
+	-	`sha256:6b149f2082d626762a2834e6eb736314e529340ccf2290525ae9790dc222cc04`  
+		Last Modified: Thu, 01 Feb 2024 01:06:45 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fd8def76149c7ba2cd28be76f377a85243b40638bc3f49e1bdf9e205a2bd907`  
-		Last Modified: Thu, 11 Jan 2024 05:43:05 GMT  
+	-	`sha256:bf22b5b79f3faddbd6c7585cd08f0fa98a53100e4063daeb916f32d0de2b4a7e`  
+		Last Modified: Thu, 01 Feb 2024 01:06:45 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a81a2c45d44e13618fc24e71761b8479ede07468e48053fef1694aa9efb85d1c`  
-		Last Modified: Thu, 11 Jan 2024 05:43:05 GMT  
+	-	`sha256:2104fbc6fe8ac1b066b4d9ad12c15d357eb30bffc0025c36e33d0141a8694d6b`  
+		Last Modified: Thu, 01 Feb 2024 01:06:45 GMT  
 		Size: 166.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2926,7 +2926,7 @@ CMD ["mvn"]
 ## `maven:3-amazoncorretto-8-debian`
 
 ```console
-$ docker pull maven@sha256:b66f6496a3446c2122b4497395ad7915b3e98074ee2ff76ca47a0262c4cdf83f
+$ docker pull maven@sha256:eac9f5ac55ae09d528d5a08f51909ab887375e838b7885f76b5456cba5dd7350
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2937,20 +2937,20 @@ $ docker pull maven@sha256:b66f6496a3446c2122b4497395ad7915b3e98074ee2ff76ca47a0
 ### `maven:3-amazoncorretto-8-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:aab2db59604c31251397359d09af5acadd978d91012141868d056ccf9150be8d
+$ docker pull maven@sha256:4aa47853ce61c650c0625d81b773119279a39380cb5d94f81e70710043226110
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.5 MB (160548319 bytes)**  
+-	Total Size: **160.6 MB (160573705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5baed65e66206a5f08f175da3046c3ae115c8f2e6b995d6934aeb2917014e49a`
+-	Image ID: `sha256:5e7eb727bb98421887202c25e972afb606379e598618b958d112a933af271971`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -2977,28 +2977,28 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03edbb31ad8158f678c28701b4ac61e6f64e0e41051b5b59a18706d92c6c2bf3`  
-		Last Modified: Thu, 11 Jan 2024 05:43:48 GMT  
-		Size: 121.9 MB (121941075 bytes)  
+	-	`sha256:d7faf0324c620b507578dab0c6f15fddff7b56f3bfa5e69990f89dba4a0bf5c7`  
+		Last Modified: Thu, 01 Feb 2024 01:07:31 GMT  
+		Size: 121.9 MB (121941921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fcb74b20a634243854afd95725cd286307b08f5e02768fa09275055f328a514`  
-		Last Modified: Thu, 11 Jan 2024 05:43:40 GMT  
-		Size: 9.5 MB (9479948 bytes)  
+	-	`sha256:8b1edeb27aee9418beff3fc95c1fea53ed3381f8b4e44193b5888df5efec4bbc`  
+		Last Modified: Thu, 01 Feb 2024 01:07:23 GMT  
+		Size: 9.5 MB (9479944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80a341745aa6980bcb8273bb506259faafaae34baaeb43ede939080ef3ef7dac`  
-		Last Modified: Thu, 11 Jan 2024 05:43:39 GMT  
-		Size: 853.0 B  
+	-	`sha256:a25e4a6a5db73b31880fff3d710874defaec6bcd2b9f853d614d194d22495050`  
+		Last Modified: Thu, 01 Feb 2024 01:07:22 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c08a1cc912c68c8114a14e7447c1aaf0a43f16715d083b6d12cbf5f13d0ba7cd`  
-		Last Modified: Thu, 11 Jan 2024 05:43:39 GMT  
-		Size: 358.0 B  
+	-	`sha256:c36189f89a734c47bb1dfdeab667cd4d9c900afdfc7b0193a876de77d49e7e3c`  
+		Last Modified: Thu, 01 Feb 2024 01:07:23 GMT  
+		Size: 357.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e965e2157aec94d6682e8bc86044a06d8953d5b0383d65dde32b479e08578876`  
-		Last Modified: Thu, 11 Jan 2024 05:43:39 GMT  
+	-	`sha256:1d1eeedba9c54a6ec60e5a07eed7d27370a67074362ae0643b87cec9ba9f93c6`  
+		Last Modified: Thu, 01 Feb 2024 01:07:22 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -3073,7 +3073,7 @@ CMD ["mvn"]
 ## `maven:3-amazoncorretto-8-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:b66f6496a3446c2122b4497395ad7915b3e98074ee2ff76ca47a0262c4cdf83f
+$ docker pull maven@sha256:23fec81ade7d85b059832322e7ed296dd52ab17a7f312b2380ec9c9b0e00fe9f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3084,20 +3084,20 @@ $ docker pull maven@sha256:b66f6496a3446c2122b4497395ad7915b3e98074ee2ff76ca47a0
 ### `maven:3-amazoncorretto-8-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:aab2db59604c31251397359d09af5acadd978d91012141868d056ccf9150be8d
+$ docker pull maven@sha256:4aa47853ce61c650c0625d81b773119279a39380cb5d94f81e70710043226110
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.5 MB (160548319 bytes)**  
+-	Total Size: **160.6 MB (160573705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5baed65e66206a5f08f175da3046c3ae115c8f2e6b995d6934aeb2917014e49a`
+-	Image ID: `sha256:5e7eb727bb98421887202c25e972afb606379e598618b958d112a933af271971`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -3124,48 +3124,48 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03edbb31ad8158f678c28701b4ac61e6f64e0e41051b5b59a18706d92c6c2bf3`  
-		Last Modified: Thu, 11 Jan 2024 05:43:48 GMT  
-		Size: 121.9 MB (121941075 bytes)  
+	-	`sha256:d7faf0324c620b507578dab0c6f15fddff7b56f3bfa5e69990f89dba4a0bf5c7`  
+		Last Modified: Thu, 01 Feb 2024 01:07:31 GMT  
+		Size: 121.9 MB (121941921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fcb74b20a634243854afd95725cd286307b08f5e02768fa09275055f328a514`  
-		Last Modified: Thu, 11 Jan 2024 05:43:40 GMT  
-		Size: 9.5 MB (9479948 bytes)  
+	-	`sha256:8b1edeb27aee9418beff3fc95c1fea53ed3381f8b4e44193b5888df5efec4bbc`  
+		Last Modified: Thu, 01 Feb 2024 01:07:23 GMT  
+		Size: 9.5 MB (9479944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80a341745aa6980bcb8273bb506259faafaae34baaeb43ede939080ef3ef7dac`  
-		Last Modified: Thu, 11 Jan 2024 05:43:39 GMT  
-		Size: 853.0 B  
+	-	`sha256:a25e4a6a5db73b31880fff3d710874defaec6bcd2b9f853d614d194d22495050`  
+		Last Modified: Thu, 01 Feb 2024 01:07:22 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c08a1cc912c68c8114a14e7447c1aaf0a43f16715d083b6d12cbf5f13d0ba7cd`  
-		Last Modified: Thu, 11 Jan 2024 05:43:39 GMT  
-		Size: 358.0 B  
+	-	`sha256:c36189f89a734c47bb1dfdeab667cd4d9c900afdfc7b0193a876de77d49e7e3c`  
+		Last Modified: Thu, 01 Feb 2024 01:07:23 GMT  
+		Size: 357.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e965e2157aec94d6682e8bc86044a06d8953d5b0383d65dde32b479e08578876`  
-		Last Modified: Thu, 11 Jan 2024 05:43:39 GMT  
+	-	`sha256:1d1eeedba9c54a6ec60e5a07eed7d27370a67074362ae0643b87cec9ba9f93c6`  
+		Last Modified: Thu, 01 Feb 2024 01:07:22 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-amazoncorretto-8-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:573a18c81db8f02a3a90b529644b5425e63213d1f065b04b5282539f06ed762f
+$ docker pull maven@sha256:d4a869c5eb95a4f8d8d679da701fce1e8e8855d8431c179f0af86869ec53b96e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.4 MB (144403736 bytes)**  
+-	Total Size: **144.4 MB (144431458 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b76cad15e45a954fa4a4ae0fad3a96ea2139f11c73e922d2973d4d04107b28a`
+-	Image ID: `sha256:15e9be9315fb5fedde660c41250bd35aad9ad144e9ea87c8b26b97f4c11f556e`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:40:44 GMT
-ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
-# Thu, 11 Jan 2024 02:40:45 GMT
+# Wed, 31 Jan 2024 22:44:26 GMT
+ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+# Wed, 31 Jan 2024 22:44:27 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -3192,29 +3192,29 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
-		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
-		Size: 29.2 MB (29157335 bytes)  
+	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
+		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
+		Size: 29.2 MB (29180832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0ff01baf921077a91ed3395450664af3fd70d1745ec7b3b34aef81c4d4d1eb9`  
-		Last Modified: Thu, 11 Jan 2024 06:21:21 GMT  
-		Size: 105.8 MB (105765082 bytes)  
+	-	`sha256:88f701d17ad0f7861266c18af5772782bf195da9e679d0f64b17f1f06e83e5fd`  
+		Last Modified: Thu, 01 Feb 2024 01:31:16 GMT  
+		Size: 105.8 MB (105769295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b7b7b09709d8d5719cbdd9b2ead7c49a6dd335c093dd1aac1d6624528a19817`  
-		Last Modified: Thu, 11 Jan 2024 06:21:15 GMT  
-		Size: 9.5 MB (9479941 bytes)  
+	-	`sha256:4825df74514e9970f8ceee33fdb74e811d2a7d82f15f89fc524330b02cc07a37`  
+		Last Modified: Thu, 01 Feb 2024 01:31:09 GMT  
+		Size: 9.5 MB (9479953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89c48ecc4f361d439b559ad5e5ea45dcd5750ca26e02ad5551a809e4b160f587`  
-		Last Modified: Thu, 11 Jan 2024 06:21:14 GMT  
-		Size: 853.0 B  
+	-	`sha256:530c234fc3fb3d10f05a5f16b16f1660384bfc90f6a19af905e5456b3ea1d1b6`  
+		Last Modified: Thu, 01 Feb 2024 01:31:08 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0bf24356e0d01903f6bc156da16ff10a3508dd7b4b60101215c8d76e68da4772`  
-		Last Modified: Thu, 11 Jan 2024 06:21:14 GMT  
-		Size: 360.0 B  
+	-	`sha256:6a36137cea47710db14d0fa0c7014e5f375950641c538c416540156b523c311a`  
+		Last Modified: Thu, 01 Feb 2024 01:31:08 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0053ffbab0a7118462b1fe39700807228b924c2ae7cde1d48793774c626702ea`  
-		Last Modified: Thu, 11 Jan 2024 06:21:14 GMT  
-		Size: 165.0 B  
+	-	`sha256:028f77877352da8c8c70dc9b2057c47d5f6ccbdff7f4d6bc22ba45464a4856e3`  
+		Last Modified: Thu, 01 Feb 2024 01:31:08 GMT  
+		Size: 166.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `maven:3-eclipse-temurin`
@@ -11831,7 +11831,7 @@ CMD ["mvn"]
 ## `maven:3.9-amazoncorretto-11-debian`
 
 ```console
-$ docker pull maven@sha256:d7a06b927840cea038e6c3e81c6a335a11b40d76c991e849c7f419c1023f6f27
+$ docker pull maven@sha256:f483982fbef8f0381b7f0badba1fc830135aa895e772ae5b04926e2aec5ecf79
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11842,20 +11842,20 @@ $ docker pull maven@sha256:d7a06b927840cea038e6c3e81c6a335a11b40d76c991e849c7f41
 ### `maven:3.9-amazoncorretto-11-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:bf08f6b2d2ca7005d70c4bafc3b0e1348f11b5140cb99882cc68703258e4fcfb
+$ docker pull maven@sha256:e5672e30a4bc2b2db2e59736ee4a75b8767077e30d756ad3447dda9ea3aa7701
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.9 MB (237905923 bytes)**  
+-	Total Size: **237.9 MB (237938206 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a0e918863d6712273753d47b1be9fdc0987da44ce0985b80ae32d2b03e2011b`
+-	Image ID: `sha256:72327a94da4272d7c4e62c7622ce876f3ea39491a9b357668b6395414aba70bc`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -11882,48 +11882,48 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c91f52f81e8754699c71561bf2be2748dee3439a628a3317705eb1db1e6656b0`  
-		Last Modified: Thu, 11 Jan 2024 05:42:14 GMT  
-		Size: 199.3 MB (199298683 bytes)  
+	-	`sha256:dadcd64c7ce1994300a9070b4378d062a8783aa5253b235e35610543b74432c0`  
+		Last Modified: Thu, 01 Feb 2024 01:05:49 GMT  
+		Size: 199.3 MB (199306424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c68edb2f0b7fe36fa51480f70aefa70d54b92a829579eb412a2ee36b87435cf2`  
-		Last Modified: Thu, 11 Jan 2024 05:42:01 GMT  
-		Size: 9.5 MB (9479945 bytes)  
+	-	`sha256:8f34d8a76c9b4e1b339508e90076a1c5e241e26a698353b6369a8300a81fa094`  
+		Last Modified: Thu, 01 Feb 2024 01:05:36 GMT  
+		Size: 9.5 MB (9479942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9bd9f43c3fcd5447f182de5d186f302016ce75c4305111709e5385c2e04ad33`  
-		Last Modified: Thu, 11 Jan 2024 05:42:00 GMT  
-		Size: 851.0 B  
+	-	`sha256:84bd404d83b00d51fdd0af394261cd58d6a3f0459eb95657ac4c919f4e59bdfd`  
+		Last Modified: Thu, 01 Feb 2024 01:05:35 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:556f86933d34466a4615890c6b916fe1a5adae9ee93345d7c50d583d121a9f5d`  
-		Last Modified: Thu, 11 Jan 2024 05:42:00 GMT  
+	-	`sha256:ee1ddf758a784dda694ba94dc7d6f81c5b4dd13e76fe4ffe47474ac14011f930`  
+		Last Modified: Thu, 01 Feb 2024 01:05:35 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d881ecb490b1b44ac2709680e989866abf3a64095ec72c47236ff4275581a493`  
-		Last Modified: Thu, 11 Jan 2024 05:42:00 GMT  
-		Size: 165.0 B  
+	-	`sha256:f1776b408ac1cf1da53d45617471d7c82c31e70fd0bc0c0e49d1433b6178ccca`  
+		Last Modified: Thu, 01 Feb 2024 01:05:35 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.9-amazoncorretto-11-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:fd6c6f8d1d73e225a98dc08039c78c89dc214750beec9a361397f392c3ba8319
+$ docker pull maven@sha256:06faf6c825bb8e31feb5d9657b9fd8ef81356e35fad587d7c3dc317d86beda2b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **234.8 MB (234787725 bytes)**  
+-	Total Size: **234.8 MB (234835523 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9744cf0a4d7e8e2661d9df863f1881677b4cb53a3c4db87a37075d1d00966c50`
+-	Image ID: `sha256:cea3992100610a11b733300ac1e39ecfc0ed16352f5e518884ebe088d87a1348`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:40:44 GMT
-ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
-# Thu, 11 Jan 2024 02:40:45 GMT
+# Wed, 31 Jan 2024 22:44:26 GMT
+ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+# Wed, 31 Jan 2024 22:44:27 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -11950,35 +11950,35 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
-		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
-		Size: 29.2 MB (29157335 bytes)  
+	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
+		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
+		Size: 29.2 MB (29180832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50edd382a7556e8f3409836e4a297b63e1dcb970c308891abd86f5912caa3081`  
-		Last Modified: Thu, 11 Jan 2024 06:19:42 GMT  
-		Size: 196.1 MB (196149067 bytes)  
+	-	`sha256:12734ba641ffae225eab3e88170767d3d7204808fc8565d008c182973005d63b`  
+		Last Modified: Thu, 01 Feb 2024 01:29:44 GMT  
+		Size: 196.2 MB (196173364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67f642fb871f93a7ca3f67fa2495b32c3c8a3005b190b7ba220d5e1b16dd02d0`  
-		Last Modified: Thu, 11 Jan 2024 06:19:32 GMT  
-		Size: 9.5 MB (9479945 bytes)  
+	-	`sha256:03d6db6881d95013b203ce1b9c9296c79cb3a4cac01a7299b814ab11f5e3102f`  
+		Last Modified: Thu, 01 Feb 2024 01:29:33 GMT  
+		Size: 9.5 MB (9479951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bff852bc9b126852c4c77d324e46fa22ce08af0d5d31afa7e550c6ceb5c845c1`  
-		Last Modified: Thu, 11 Jan 2024 06:19:31 GMT  
-		Size: 853.0 B  
+	-	`sha256:32c34a1366d97ce9842568f98fe971c1524efdc598e1d10d8051791de9a64655`  
+		Last Modified: Thu, 01 Feb 2024 01:29:33 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8af30b11409538dcc54560b01e207204568ef5a48cc188af606b681760066af`  
-		Last Modified: Thu, 11 Jan 2024 06:19:31 GMT  
-		Size: 360.0 B  
+	-	`sha256:143650f9ceb7ae69e6ceed0267ffb5f998d1f7e32a0eed3e2c2db3f06ab1dee9`  
+		Last Modified: Thu, 01 Feb 2024 01:29:32 GMT  
+		Size: 357.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cb0705fefbe5d83a9c8a86dc4d29fe2af2088150e21800c62709ea64cad3558`  
-		Last Modified: Thu, 11 Jan 2024 06:19:31 GMT  
+	-	`sha256:6854fd67524312f3829792f75a599941d3eea528568e0d128330145732d903ae`  
+		Last Modified: Thu, 01 Feb 2024 01:29:32 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `maven:3.9-amazoncorretto-11-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:d7a06b927840cea038e6c3e81c6a335a11b40d76c991e849c7f419c1023f6f27
+$ docker pull maven@sha256:f483982fbef8f0381b7f0badba1fc830135aa895e772ae5b04926e2aec5ecf79
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11989,20 +11989,20 @@ $ docker pull maven@sha256:d7a06b927840cea038e6c3e81c6a335a11b40d76c991e849c7f41
 ### `maven:3.9-amazoncorretto-11-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:bf08f6b2d2ca7005d70c4bafc3b0e1348f11b5140cb99882cc68703258e4fcfb
+$ docker pull maven@sha256:e5672e30a4bc2b2db2e59736ee4a75b8767077e30d756ad3447dda9ea3aa7701
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.9 MB (237905923 bytes)**  
+-	Total Size: **237.9 MB (237938206 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a0e918863d6712273753d47b1be9fdc0987da44ce0985b80ae32d2b03e2011b`
+-	Image ID: `sha256:72327a94da4272d7c4e62c7622ce876f3ea39491a9b357668b6395414aba70bc`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -12029,48 +12029,48 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c91f52f81e8754699c71561bf2be2748dee3439a628a3317705eb1db1e6656b0`  
-		Last Modified: Thu, 11 Jan 2024 05:42:14 GMT  
-		Size: 199.3 MB (199298683 bytes)  
+	-	`sha256:dadcd64c7ce1994300a9070b4378d062a8783aa5253b235e35610543b74432c0`  
+		Last Modified: Thu, 01 Feb 2024 01:05:49 GMT  
+		Size: 199.3 MB (199306424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c68edb2f0b7fe36fa51480f70aefa70d54b92a829579eb412a2ee36b87435cf2`  
-		Last Modified: Thu, 11 Jan 2024 05:42:01 GMT  
-		Size: 9.5 MB (9479945 bytes)  
+	-	`sha256:8f34d8a76c9b4e1b339508e90076a1c5e241e26a698353b6369a8300a81fa094`  
+		Last Modified: Thu, 01 Feb 2024 01:05:36 GMT  
+		Size: 9.5 MB (9479942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9bd9f43c3fcd5447f182de5d186f302016ce75c4305111709e5385c2e04ad33`  
-		Last Modified: Thu, 11 Jan 2024 05:42:00 GMT  
-		Size: 851.0 B  
+	-	`sha256:84bd404d83b00d51fdd0af394261cd58d6a3f0459eb95657ac4c919f4e59bdfd`  
+		Last Modified: Thu, 01 Feb 2024 01:05:35 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:556f86933d34466a4615890c6b916fe1a5adae9ee93345d7c50d583d121a9f5d`  
-		Last Modified: Thu, 11 Jan 2024 05:42:00 GMT  
+	-	`sha256:ee1ddf758a784dda694ba94dc7d6f81c5b4dd13e76fe4ffe47474ac14011f930`  
+		Last Modified: Thu, 01 Feb 2024 01:05:35 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d881ecb490b1b44ac2709680e989866abf3a64095ec72c47236ff4275581a493`  
-		Last Modified: Thu, 11 Jan 2024 05:42:00 GMT  
-		Size: 165.0 B  
+	-	`sha256:f1776b408ac1cf1da53d45617471d7c82c31e70fd0bc0c0e49d1433b6178ccca`  
+		Last Modified: Thu, 01 Feb 2024 01:05:35 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.9-amazoncorretto-11-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:fd6c6f8d1d73e225a98dc08039c78c89dc214750beec9a361397f392c3ba8319
+$ docker pull maven@sha256:06faf6c825bb8e31feb5d9657b9fd8ef81356e35fad587d7c3dc317d86beda2b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **234.8 MB (234787725 bytes)**  
+-	Total Size: **234.8 MB (234835523 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9744cf0a4d7e8e2661d9df863f1881677b4cb53a3c4db87a37075d1d00966c50`
+-	Image ID: `sha256:cea3992100610a11b733300ac1e39ecfc0ed16352f5e518884ebe088d87a1348`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:40:44 GMT
-ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
-# Thu, 11 Jan 2024 02:40:45 GMT
+# Wed, 31 Jan 2024 22:44:26 GMT
+ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+# Wed, 31 Jan 2024 22:44:27 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -12097,28 +12097,28 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
-		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
-		Size: 29.2 MB (29157335 bytes)  
+	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
+		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
+		Size: 29.2 MB (29180832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50edd382a7556e8f3409836e4a297b63e1dcb970c308891abd86f5912caa3081`  
-		Last Modified: Thu, 11 Jan 2024 06:19:42 GMT  
-		Size: 196.1 MB (196149067 bytes)  
+	-	`sha256:12734ba641ffae225eab3e88170767d3d7204808fc8565d008c182973005d63b`  
+		Last Modified: Thu, 01 Feb 2024 01:29:44 GMT  
+		Size: 196.2 MB (196173364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67f642fb871f93a7ca3f67fa2495b32c3c8a3005b190b7ba220d5e1b16dd02d0`  
-		Last Modified: Thu, 11 Jan 2024 06:19:32 GMT  
-		Size: 9.5 MB (9479945 bytes)  
+	-	`sha256:03d6db6881d95013b203ce1b9c9296c79cb3a4cac01a7299b814ab11f5e3102f`  
+		Last Modified: Thu, 01 Feb 2024 01:29:33 GMT  
+		Size: 9.5 MB (9479951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bff852bc9b126852c4c77d324e46fa22ce08af0d5d31afa7e550c6ceb5c845c1`  
-		Last Modified: Thu, 11 Jan 2024 06:19:31 GMT  
-		Size: 853.0 B  
+	-	`sha256:32c34a1366d97ce9842568f98fe971c1524efdc598e1d10d8051791de9a64655`  
+		Last Modified: Thu, 01 Feb 2024 01:29:33 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8af30b11409538dcc54560b01e207204568ef5a48cc188af606b681760066af`  
-		Last Modified: Thu, 11 Jan 2024 06:19:31 GMT  
-		Size: 360.0 B  
+	-	`sha256:143650f9ceb7ae69e6ceed0267ffb5f998d1f7e32a0eed3e2c2db3f06ab1dee9`  
+		Last Modified: Thu, 01 Feb 2024 01:29:32 GMT  
+		Size: 357.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cb0705fefbe5d83a9c8a86dc4d29fe2af2088150e21800c62709ea64cad3558`  
-		Last Modified: Thu, 11 Jan 2024 06:19:31 GMT  
+	-	`sha256:6854fd67524312f3829792f75a599941d3eea528568e0d128330145732d903ae`  
+		Last Modified: Thu, 01 Feb 2024 01:29:32 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -12475,7 +12475,7 @@ CMD ["mvn"]
 ## `maven:3.9-amazoncorretto-17-debian`
 
 ```console
-$ docker pull maven@sha256:9c6d8ef0eb1844237aa07d138ccdad499aacb54ce352b085370938f97d8b026a
+$ docker pull maven@sha256:6526548d587f59bfdcc8bd3007dbf255097120c1a94e49ec6c16786aa6b456c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12486,20 +12486,20 @@ $ docker pull maven@sha256:9c6d8ef0eb1844237aa07d138ccdad499aacb54ce352b08537093
 ### `maven:3.9-amazoncorretto-17-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:11eb64d94108dbff2a2e5c85fcf395ba238367cc8bd4f5d658e6ec257b02a9e4
+$ docker pull maven@sha256:1524232f900e41b63a02518aefd613776ebbf8c194e8242a855ebcf4eb3ea45f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **236.4 MB (236369316 bytes)**  
+-	Total Size: **236.4 MB (236430682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d0646721bd0068b8a45a5c51e9044d28b6b02d0f68dcbcd3b0f1ee9c54c2c6c9`
+-	Image ID: `sha256:7a977eef67b19c48b029dd318acad1377703b1d4a83fc69c9b9419fa708b7a90`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -12526,48 +12526,48 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b54ffb78f6eb2ce02fd16ab56dc6aa3607345c32c7eee7ea17180a8da7cb9b1b`  
-		Last Modified: Thu, 11 Jan 2024 05:42:46 GMT  
-		Size: 197.8 MB (197762073 bytes)  
+	-	`sha256:88332ac8920b0613d68f0e1580424176d5d0ba8b19b179684587191632fb6b1c`  
+		Last Modified: Thu, 01 Feb 2024 01:06:26 GMT  
+		Size: 197.8 MB (197798899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47b64a1278a4899891d5823f1c02e0711bf6dc9e6a37d5d180e94a99fe9d6ccc`  
-		Last Modified: Thu, 11 Jan 2024 05:42:33 GMT  
-		Size: 9.5 MB (9479948 bytes)  
+	-	`sha256:df68f8306bd067cc113d3570612f62f0da3e7002398e169521d6df3f735babc5`  
+		Last Modified: Thu, 01 Feb 2024 01:06:12 GMT  
+		Size: 9.5 MB (9479943 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d4361e3302e9aace6de7b4d83c4251e67dad5578ce115d271dbdf77f5322b87`  
-		Last Modified: Thu, 11 Jan 2024 05:42:32 GMT  
+	-	`sha256:dd5e486f329d789281aedfc3d4dfbd7780c868263f3ce3ca65ad918e3cacba70`  
+		Last Modified: Thu, 01 Feb 2024 01:06:11 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d18870d25909ce62908ef1cb4c63d66129846a4daad9e1df3cab6dbb7a648e06`  
-		Last Modified: Thu, 11 Jan 2024 05:42:32 GMT  
+	-	`sha256:d7289134c5a5dd7bfc85180639bbf75cd96213856e287e039ea4d373ef203475`  
+		Last Modified: Thu, 01 Feb 2024 01:06:11 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d96c80f24e24b51d1b223a589e530a425f882eb33bda6a8528e8ed84223c18e2`  
-		Last Modified: Thu, 11 Jan 2024 05:42:32 GMT  
-		Size: 164.0 B  
+	-	`sha256:50067052e686279bc1fd6d1c75a3ab2ce47a8db02c486aca238907fc6db8759c`  
+		Last Modified: Thu, 01 Feb 2024 01:06:10 GMT  
+		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.9-amazoncorretto-17-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:604df95c1ad2c3a1666c3acc3685ab53ad32f577bff0f1976ab697a8542bb58c
+$ docker pull maven@sha256:d774ecec4c946f1f0022a8feb978f466b31c64854094d6faafb1332f7cd6e1e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **234.7 MB (234735595 bytes)**  
+-	Total Size: **234.8 MB (234808126 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9bb1e45b1f9d544ee598847b41b73ce6b9d93d15986f01324aecdac4d6b542d6`
+-	Image ID: `sha256:f781ecf8986c2c715f973da9871dce49318f8add4af2690abf01bc71ba69f04e`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:40:44 GMT
-ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
-# Thu, 11 Jan 2024 02:40:45 GMT
+# Wed, 31 Jan 2024 22:44:26 GMT
+ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+# Wed, 31 Jan 2024 22:44:27 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -12594,35 +12594,35 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
-		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
-		Size: 29.2 MB (29157335 bytes)  
+	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
+		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
+		Size: 29.2 MB (29180832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b06f0f2406595f2ecad6f9662e8845bca525263bf7c198efd11870323fe7b1e9`  
-		Last Modified: Thu, 11 Jan 2024 06:20:11 GMT  
-		Size: 196.1 MB (196096958 bytes)  
+	-	`sha256:41a1fa1e80d1a8a1e878e3648b9cd8689758bd7bb20cd45cb7d5037d1d949bc1`  
+		Last Modified: Thu, 01 Feb 2024 01:30:17 GMT  
+		Size: 196.1 MB (196145964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46a2f4f3cf3af5f521bd4b3981175692fbde10dda48503e6a75214cb0022fc2e`  
-		Last Modified: Thu, 11 Jan 2024 06:20:01 GMT  
-		Size: 9.5 MB (9479927 bytes)  
+	-	`sha256:6b432b87084e4d8e601b06ab9b29528af885ac98d4593360c1eb548d3366a418`  
+		Last Modified: Thu, 01 Feb 2024 01:30:06 GMT  
+		Size: 9.5 MB (9479953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:956acf01cd52dbb12b0ce6b39fe54f98a0cca3582177f414a64500c50a2b1aa2`  
-		Last Modified: Thu, 11 Jan 2024 06:20:00 GMT  
-		Size: 853.0 B  
+	-	`sha256:5e84147cf650f90c181fdbb0ef2282ed33292a0e46399942583201c33ef0c733`  
+		Last Modified: Thu, 01 Feb 2024 01:30:06 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:976383a39b875cf08e52d2331305f0c473e57dd3661aa2e25201d550f0816f11`  
-		Last Modified: Thu, 11 Jan 2024 06:20:00 GMT  
-		Size: 357.0 B  
+	-	`sha256:02dcac400aee4a3a613f565be696b8356f2e3f9c965a77bc2fd5866aeef9914e`  
+		Last Modified: Thu, 01 Feb 2024 01:30:06 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a8e519084bbe61411779c548bdac55b5e92e2dd558ce65c6c0e050ad6a69796`  
-		Last Modified: Thu, 11 Jan 2024 06:20:00 GMT  
+	-	`sha256:70159ab1446bb2190bed447c01970f83949e1aae5cd657934fdc3dde9ccf77f4`  
+		Last Modified: Thu, 01 Feb 2024 01:30:06 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `maven:3.9-amazoncorretto-17-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:9c6d8ef0eb1844237aa07d138ccdad499aacb54ce352b085370938f97d8b026a
+$ docker pull maven@sha256:6526548d587f59bfdcc8bd3007dbf255097120c1a94e49ec6c16786aa6b456c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12633,20 +12633,20 @@ $ docker pull maven@sha256:9c6d8ef0eb1844237aa07d138ccdad499aacb54ce352b08537093
 ### `maven:3.9-amazoncorretto-17-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:11eb64d94108dbff2a2e5c85fcf395ba238367cc8bd4f5d658e6ec257b02a9e4
+$ docker pull maven@sha256:1524232f900e41b63a02518aefd613776ebbf8c194e8242a855ebcf4eb3ea45f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **236.4 MB (236369316 bytes)**  
+-	Total Size: **236.4 MB (236430682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d0646721bd0068b8a45a5c51e9044d28b6b02d0f68dcbcd3b0f1ee9c54c2c6c9`
+-	Image ID: `sha256:7a977eef67b19c48b029dd318acad1377703b1d4a83fc69c9b9419fa708b7a90`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -12673,48 +12673,48 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b54ffb78f6eb2ce02fd16ab56dc6aa3607345c32c7eee7ea17180a8da7cb9b1b`  
-		Last Modified: Thu, 11 Jan 2024 05:42:46 GMT  
-		Size: 197.8 MB (197762073 bytes)  
+	-	`sha256:88332ac8920b0613d68f0e1580424176d5d0ba8b19b179684587191632fb6b1c`  
+		Last Modified: Thu, 01 Feb 2024 01:06:26 GMT  
+		Size: 197.8 MB (197798899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47b64a1278a4899891d5823f1c02e0711bf6dc9e6a37d5d180e94a99fe9d6ccc`  
-		Last Modified: Thu, 11 Jan 2024 05:42:33 GMT  
-		Size: 9.5 MB (9479948 bytes)  
+	-	`sha256:df68f8306bd067cc113d3570612f62f0da3e7002398e169521d6df3f735babc5`  
+		Last Modified: Thu, 01 Feb 2024 01:06:12 GMT  
+		Size: 9.5 MB (9479943 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d4361e3302e9aace6de7b4d83c4251e67dad5578ce115d271dbdf77f5322b87`  
-		Last Modified: Thu, 11 Jan 2024 05:42:32 GMT  
+	-	`sha256:dd5e486f329d789281aedfc3d4dfbd7780c868263f3ce3ca65ad918e3cacba70`  
+		Last Modified: Thu, 01 Feb 2024 01:06:11 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d18870d25909ce62908ef1cb4c63d66129846a4daad9e1df3cab6dbb7a648e06`  
-		Last Modified: Thu, 11 Jan 2024 05:42:32 GMT  
+	-	`sha256:d7289134c5a5dd7bfc85180639bbf75cd96213856e287e039ea4d373ef203475`  
+		Last Modified: Thu, 01 Feb 2024 01:06:11 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d96c80f24e24b51d1b223a589e530a425f882eb33bda6a8528e8ed84223c18e2`  
-		Last Modified: Thu, 11 Jan 2024 05:42:32 GMT  
-		Size: 164.0 B  
+	-	`sha256:50067052e686279bc1fd6d1c75a3ab2ce47a8db02c486aca238907fc6db8759c`  
+		Last Modified: Thu, 01 Feb 2024 01:06:10 GMT  
+		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.9-amazoncorretto-17-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:604df95c1ad2c3a1666c3acc3685ab53ad32f577bff0f1976ab697a8542bb58c
+$ docker pull maven@sha256:d774ecec4c946f1f0022a8feb978f466b31c64854094d6faafb1332f7cd6e1e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **234.7 MB (234735595 bytes)**  
+-	Total Size: **234.8 MB (234808126 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9bb1e45b1f9d544ee598847b41b73ce6b9d93d15986f01324aecdac4d6b542d6`
+-	Image ID: `sha256:f781ecf8986c2c715f973da9871dce49318f8add4af2690abf01bc71ba69f04e`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:40:44 GMT
-ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
-# Thu, 11 Jan 2024 02:40:45 GMT
+# Wed, 31 Jan 2024 22:44:26 GMT
+ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+# Wed, 31 Jan 2024 22:44:27 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -12741,28 +12741,28 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
-		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
-		Size: 29.2 MB (29157335 bytes)  
+	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
+		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
+		Size: 29.2 MB (29180832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b06f0f2406595f2ecad6f9662e8845bca525263bf7c198efd11870323fe7b1e9`  
-		Last Modified: Thu, 11 Jan 2024 06:20:11 GMT  
-		Size: 196.1 MB (196096958 bytes)  
+	-	`sha256:41a1fa1e80d1a8a1e878e3648b9cd8689758bd7bb20cd45cb7d5037d1d949bc1`  
+		Last Modified: Thu, 01 Feb 2024 01:30:17 GMT  
+		Size: 196.1 MB (196145964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46a2f4f3cf3af5f521bd4b3981175692fbde10dda48503e6a75214cb0022fc2e`  
-		Last Modified: Thu, 11 Jan 2024 06:20:01 GMT  
-		Size: 9.5 MB (9479927 bytes)  
+	-	`sha256:6b432b87084e4d8e601b06ab9b29528af885ac98d4593360c1eb548d3366a418`  
+		Last Modified: Thu, 01 Feb 2024 01:30:06 GMT  
+		Size: 9.5 MB (9479953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:956acf01cd52dbb12b0ce6b39fe54f98a0cca3582177f414a64500c50a2b1aa2`  
-		Last Modified: Thu, 11 Jan 2024 06:20:00 GMT  
-		Size: 853.0 B  
+	-	`sha256:5e84147cf650f90c181fdbb0ef2282ed33292a0e46399942583201c33ef0c733`  
+		Last Modified: Thu, 01 Feb 2024 01:30:06 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:976383a39b875cf08e52d2331305f0c473e57dd3661aa2e25201d550f0816f11`  
-		Last Modified: Thu, 11 Jan 2024 06:20:00 GMT  
-		Size: 357.0 B  
+	-	`sha256:02dcac400aee4a3a613f565be696b8356f2e3f9c965a77bc2fd5866aeef9914e`  
+		Last Modified: Thu, 01 Feb 2024 01:30:06 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a8e519084bbe61411779c548bdac55b5e92e2dd558ce65c6c0e050ad6a69796`  
-		Last Modified: Thu, 11 Jan 2024 06:20:00 GMT  
+	-	`sha256:70159ab1446bb2190bed447c01970f83949e1aae5cd657934fdc3dde9ccf77f4`  
+		Last Modified: Thu, 01 Feb 2024 01:30:06 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -13119,7 +13119,7 @@ CMD ["mvn"]
 ## `maven:3.9-amazoncorretto-21-debian`
 
 ```console
-$ docker pull maven@sha256:451456fb1611e6e8f60d15cebc99045182eff5bc53644a6a6fbf35e0d093a7e7
+$ docker pull maven@sha256:0dc7709f27b91ba95ecf7f6e393a4cf2f0b99732b22254e885ddf2bac0a69c93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13130,20 +13130,20 @@ $ docker pull maven@sha256:451456fb1611e6e8f60d15cebc99045182eff5bc53644a6a6fbf3
 ### `maven:3.9-amazoncorretto-21-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:35b0ec225ec95394e088648969d07991e2a2e8005b6113cf8f633d807c97207a
+$ docker pull maven@sha256:d16b58c97faa953416e714ef9a5b887d6c10780cf299712302ed47d7557fa61e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.0 MB (251958368 bytes)**  
+-	Total Size: **252.2 MB (252209530 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d3b69de646ea01a8a4bee93741fae64f20222f02de4a06a63c13b0991393435`
+-	Image ID: `sha256:9af995a5daa9bca28dab403bceaaf6caf7e988ee12b08efe5be08aae32547413`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -13170,48 +13170,48 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:452658320a09cafa0ae9b2b84cab557ed515cd5d385ee555287e8de4e0f8f9ec`  
-		Last Modified: Thu, 11 Jan 2024 05:43:20 GMT  
-		Size: 213.4 MB (213351137 bytes)  
+	-	`sha256:24f3c9a400333343f78fd7ca6589de3d7edafd07aab43ea2b10b5be771a8c9ff`  
+		Last Modified: Thu, 01 Feb 2024 01:07:02 GMT  
+		Size: 213.6 MB (213577744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d806d12e35c8d2476f31468166dcf3d118841c3f9e913b2046bd726caa760f21`  
-		Last Modified: Thu, 11 Jan 2024 05:43:06 GMT  
-		Size: 9.5 MB (9479933 bytes)  
+	-	`sha256:82058ce8b6cdeda0f67ac06072761c7f962abb6006087bd48d7d287cf7aa9f0d`  
+		Last Modified: Thu, 01 Feb 2024 01:06:46 GMT  
+		Size: 9.5 MB (9479943 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0341876d44dd85dfef3aab940f87c45a1c11bde76893e676cb44b20fb880826`  
-		Last Modified: Thu, 11 Jan 2024 05:43:05 GMT  
-		Size: 853.0 B  
+	-	`sha256:6b149f2082d626762a2834e6eb736314e529340ccf2290525ae9790dc222cc04`  
+		Last Modified: Thu, 01 Feb 2024 01:06:45 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fd8def76149c7ba2cd28be76f377a85243b40638bc3f49e1bdf9e205a2bd907`  
-		Last Modified: Thu, 11 Jan 2024 05:43:05 GMT  
+	-	`sha256:bf22b5b79f3faddbd6c7585cd08f0fa98a53100e4063daeb916f32d0de2b4a7e`  
+		Last Modified: Thu, 01 Feb 2024 01:06:45 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a81a2c45d44e13618fc24e71761b8479ede07468e48053fef1694aa9efb85d1c`  
-		Last Modified: Thu, 11 Jan 2024 05:43:05 GMT  
+	-	`sha256:2104fbc6fe8ac1b066b4d9ad12c15d357eb30bffc0025c36e33d0141a8694d6b`  
+		Last Modified: Thu, 01 Feb 2024 01:06:45 GMT  
 		Size: 166.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.9-amazoncorretto-21-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:92270457b539ddd508f838aa682b3759c933ad08bcb3b7e8f45d0d03251a097c
+$ docker pull maven@sha256:2da57f80f0ce821ef23d8d18eb32b2008b1fbc1c1cf4744483af31cdb29c0659
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **249.8 MB (249759325 bytes)**  
+-	Total Size: **250.0 MB (249997629 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d35bd0f25ffd8d6c58dcb5acaa5e78bad8fa006630058b41f1316d9343f5ff13`
+-	Image ID: `sha256:3b5a04284ae39e48d535bf3d4d6752e93d5100347524426ebe3868854b0e19bd`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:40:44 GMT
-ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
-# Thu, 11 Jan 2024 02:40:45 GMT
+# Wed, 31 Jan 2024 22:44:26 GMT
+ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+# Wed, 31 Jan 2024 22:44:27 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -13238,35 +13238,35 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
-		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
-		Size: 29.2 MB (29157335 bytes)  
+	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
+		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
+		Size: 29.2 MB (29180832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f52a8a666a6b8705503fbd6f6cb78f25fa54b964c14d8dc24d7a4a99c1883e1`  
-		Last Modified: Thu, 11 Jan 2024 06:20:56 GMT  
-		Size: 211.1 MB (211120674 bytes)  
+	-	`sha256:b7c1e6d77b49024f13f9143bece133e7e38a62e064fe0be6b56a8936dc332905`  
+		Last Modified: Thu, 01 Feb 2024 01:30:49 GMT  
+		Size: 211.3 MB (211335474 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78857fa6be0a6442c87d3e74da2633c87bc92694894668633b227a7d29e0eae3`  
-		Last Modified: Thu, 11 Jan 2024 06:20:44 GMT  
-		Size: 9.5 MB (9479941 bytes)  
+	-	`sha256:0122ad7a8594027cc888948924ca4e2269785b2de5a5a09152c795c6032ccbbc`  
+		Last Modified: Thu, 01 Feb 2024 01:30:37 GMT  
+		Size: 9.5 MB (9479948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:96b2c9c0a71f869c88b865265974527f5f45737a7031d098147573a18e1c1b9e`  
-		Last Modified: Thu, 11 Jan 2024 06:20:43 GMT  
-		Size: 852.0 B  
+	-	`sha256:ae8c0dbfd09c807648dd1f8da9b989cd8f3b04d273e1954b9017f5b5e4965970`  
+		Last Modified: Thu, 01 Feb 2024 01:30:36 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e83d8b85f64bd59e0e0d380b5cf7321b832ef927076c667cb515f7a24412450`  
-		Last Modified: Thu, 11 Jan 2024 06:20:43 GMT  
-		Size: 358.0 B  
+	-	`sha256:cad1923c907cf992fe1b37ed18a37206cb5be59b49ab305bcba08beacac748c4`  
+		Last Modified: Thu, 01 Feb 2024 01:30:36 GMT  
+		Size: 357.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:198e5457a2450d1c64124b0aea56d8636c6615ea5df009c411d156c58aa16410`  
-		Last Modified: Thu, 11 Jan 2024 06:20:43 GMT  
+	-	`sha256:9afa93e348e9cdb54eb35824fd2e782f0fd434ca507f53d38627c81c9484c9a7`  
+		Last Modified: Thu, 01 Feb 2024 01:30:37 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `maven:3.9-amazoncorretto-21-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:451456fb1611e6e8f60d15cebc99045182eff5bc53644a6a6fbf35e0d093a7e7
+$ docker pull maven@sha256:0dc7709f27b91ba95ecf7f6e393a4cf2f0b99732b22254e885ddf2bac0a69c93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13277,20 +13277,20 @@ $ docker pull maven@sha256:451456fb1611e6e8f60d15cebc99045182eff5bc53644a6a6fbf3
 ### `maven:3.9-amazoncorretto-21-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:35b0ec225ec95394e088648969d07991e2a2e8005b6113cf8f633d807c97207a
+$ docker pull maven@sha256:d16b58c97faa953416e714ef9a5b887d6c10780cf299712302ed47d7557fa61e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.0 MB (251958368 bytes)**  
+-	Total Size: **252.2 MB (252209530 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d3b69de646ea01a8a4bee93741fae64f20222f02de4a06a63c13b0991393435`
+-	Image ID: `sha256:9af995a5daa9bca28dab403bceaaf6caf7e988ee12b08efe5be08aae32547413`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -13317,48 +13317,48 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:452658320a09cafa0ae9b2b84cab557ed515cd5d385ee555287e8de4e0f8f9ec`  
-		Last Modified: Thu, 11 Jan 2024 05:43:20 GMT  
-		Size: 213.4 MB (213351137 bytes)  
+	-	`sha256:24f3c9a400333343f78fd7ca6589de3d7edafd07aab43ea2b10b5be771a8c9ff`  
+		Last Modified: Thu, 01 Feb 2024 01:07:02 GMT  
+		Size: 213.6 MB (213577744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d806d12e35c8d2476f31468166dcf3d118841c3f9e913b2046bd726caa760f21`  
-		Last Modified: Thu, 11 Jan 2024 05:43:06 GMT  
-		Size: 9.5 MB (9479933 bytes)  
+	-	`sha256:82058ce8b6cdeda0f67ac06072761c7f962abb6006087bd48d7d287cf7aa9f0d`  
+		Last Modified: Thu, 01 Feb 2024 01:06:46 GMT  
+		Size: 9.5 MB (9479943 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0341876d44dd85dfef3aab940f87c45a1c11bde76893e676cb44b20fb880826`  
-		Last Modified: Thu, 11 Jan 2024 05:43:05 GMT  
-		Size: 853.0 B  
+	-	`sha256:6b149f2082d626762a2834e6eb736314e529340ccf2290525ae9790dc222cc04`  
+		Last Modified: Thu, 01 Feb 2024 01:06:45 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fd8def76149c7ba2cd28be76f377a85243b40638bc3f49e1bdf9e205a2bd907`  
-		Last Modified: Thu, 11 Jan 2024 05:43:05 GMT  
+	-	`sha256:bf22b5b79f3faddbd6c7585cd08f0fa98a53100e4063daeb916f32d0de2b4a7e`  
+		Last Modified: Thu, 01 Feb 2024 01:06:45 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a81a2c45d44e13618fc24e71761b8479ede07468e48053fef1694aa9efb85d1c`  
-		Last Modified: Thu, 11 Jan 2024 05:43:05 GMT  
+	-	`sha256:2104fbc6fe8ac1b066b4d9ad12c15d357eb30bffc0025c36e33d0141a8694d6b`  
+		Last Modified: Thu, 01 Feb 2024 01:06:45 GMT  
 		Size: 166.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.9-amazoncorretto-21-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:92270457b539ddd508f838aa682b3759c933ad08bcb3b7e8f45d0d03251a097c
+$ docker pull maven@sha256:2da57f80f0ce821ef23d8d18eb32b2008b1fbc1c1cf4744483af31cdb29c0659
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **249.8 MB (249759325 bytes)**  
+-	Total Size: **250.0 MB (249997629 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d35bd0f25ffd8d6c58dcb5acaa5e78bad8fa006630058b41f1316d9343f5ff13`
+-	Image ID: `sha256:3b5a04284ae39e48d535bf3d4d6752e93d5100347524426ebe3868854b0e19bd`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:40:44 GMT
-ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
-# Thu, 11 Jan 2024 02:40:45 GMT
+# Wed, 31 Jan 2024 22:44:26 GMT
+ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+# Wed, 31 Jan 2024 22:44:27 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -13385,28 +13385,28 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
-		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
-		Size: 29.2 MB (29157335 bytes)  
+	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
+		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
+		Size: 29.2 MB (29180832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f52a8a666a6b8705503fbd6f6cb78f25fa54b964c14d8dc24d7a4a99c1883e1`  
-		Last Modified: Thu, 11 Jan 2024 06:20:56 GMT  
-		Size: 211.1 MB (211120674 bytes)  
+	-	`sha256:b7c1e6d77b49024f13f9143bece133e7e38a62e064fe0be6b56a8936dc332905`  
+		Last Modified: Thu, 01 Feb 2024 01:30:49 GMT  
+		Size: 211.3 MB (211335474 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78857fa6be0a6442c87d3e74da2633c87bc92694894668633b227a7d29e0eae3`  
-		Last Modified: Thu, 11 Jan 2024 06:20:44 GMT  
-		Size: 9.5 MB (9479941 bytes)  
+	-	`sha256:0122ad7a8594027cc888948924ca4e2269785b2de5a5a09152c795c6032ccbbc`  
+		Last Modified: Thu, 01 Feb 2024 01:30:37 GMT  
+		Size: 9.5 MB (9479948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:96b2c9c0a71f869c88b865265974527f5f45737a7031d098147573a18e1c1b9e`  
-		Last Modified: Thu, 11 Jan 2024 06:20:43 GMT  
-		Size: 852.0 B  
+	-	`sha256:ae8c0dbfd09c807648dd1f8da9b989cd8f3b04d273e1954b9017f5b5e4965970`  
+		Last Modified: Thu, 01 Feb 2024 01:30:36 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e83d8b85f64bd59e0e0d380b5cf7321b832ef927076c667cb515f7a24412450`  
-		Last Modified: Thu, 11 Jan 2024 06:20:43 GMT  
-		Size: 358.0 B  
+	-	`sha256:cad1923c907cf992fe1b37ed18a37206cb5be59b49ab305bcba08beacac748c4`  
+		Last Modified: Thu, 01 Feb 2024 01:30:36 GMT  
+		Size: 357.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:198e5457a2450d1c64124b0aea56d8636c6615ea5df009c411d156c58aa16410`  
-		Last Modified: Thu, 11 Jan 2024 06:20:43 GMT  
+	-	`sha256:9afa93e348e9cdb54eb35824fd2e782f0fd434ca507f53d38627c81c9484c9a7`  
+		Last Modified: Thu, 01 Feb 2024 01:30:37 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -13759,7 +13759,7 @@ CMD ["mvn"]
 ## `maven:3.9-amazoncorretto-8-debian`
 
 ```console
-$ docker pull maven@sha256:b66f6496a3446c2122b4497395ad7915b3e98074ee2ff76ca47a0262c4cdf83f
+$ docker pull maven@sha256:23fec81ade7d85b059832322e7ed296dd52ab17a7f312b2380ec9c9b0e00fe9f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13770,20 +13770,20 @@ $ docker pull maven@sha256:b66f6496a3446c2122b4497395ad7915b3e98074ee2ff76ca47a0
 ### `maven:3.9-amazoncorretto-8-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:aab2db59604c31251397359d09af5acadd978d91012141868d056ccf9150be8d
+$ docker pull maven@sha256:4aa47853ce61c650c0625d81b773119279a39380cb5d94f81e70710043226110
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.5 MB (160548319 bytes)**  
+-	Total Size: **160.6 MB (160573705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5baed65e66206a5f08f175da3046c3ae115c8f2e6b995d6934aeb2917014e49a`
+-	Image ID: `sha256:5e7eb727bb98421887202c25e972afb606379e598618b958d112a933af271971`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -13810,48 +13810,48 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03edbb31ad8158f678c28701b4ac61e6f64e0e41051b5b59a18706d92c6c2bf3`  
-		Last Modified: Thu, 11 Jan 2024 05:43:48 GMT  
-		Size: 121.9 MB (121941075 bytes)  
+	-	`sha256:d7faf0324c620b507578dab0c6f15fddff7b56f3bfa5e69990f89dba4a0bf5c7`  
+		Last Modified: Thu, 01 Feb 2024 01:07:31 GMT  
+		Size: 121.9 MB (121941921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fcb74b20a634243854afd95725cd286307b08f5e02768fa09275055f328a514`  
-		Last Modified: Thu, 11 Jan 2024 05:43:40 GMT  
-		Size: 9.5 MB (9479948 bytes)  
+	-	`sha256:8b1edeb27aee9418beff3fc95c1fea53ed3381f8b4e44193b5888df5efec4bbc`  
+		Last Modified: Thu, 01 Feb 2024 01:07:23 GMT  
+		Size: 9.5 MB (9479944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80a341745aa6980bcb8273bb506259faafaae34baaeb43ede939080ef3ef7dac`  
-		Last Modified: Thu, 11 Jan 2024 05:43:39 GMT  
-		Size: 853.0 B  
+	-	`sha256:a25e4a6a5db73b31880fff3d710874defaec6bcd2b9f853d614d194d22495050`  
+		Last Modified: Thu, 01 Feb 2024 01:07:22 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c08a1cc912c68c8114a14e7447c1aaf0a43f16715d083b6d12cbf5f13d0ba7cd`  
-		Last Modified: Thu, 11 Jan 2024 05:43:39 GMT  
-		Size: 358.0 B  
+	-	`sha256:c36189f89a734c47bb1dfdeab667cd4d9c900afdfc7b0193a876de77d49e7e3c`  
+		Last Modified: Thu, 01 Feb 2024 01:07:23 GMT  
+		Size: 357.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e965e2157aec94d6682e8bc86044a06d8953d5b0383d65dde32b479e08578876`  
-		Last Modified: Thu, 11 Jan 2024 05:43:39 GMT  
+	-	`sha256:1d1eeedba9c54a6ec60e5a07eed7d27370a67074362ae0643b87cec9ba9f93c6`  
+		Last Modified: Thu, 01 Feb 2024 01:07:22 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.9-amazoncorretto-8-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:573a18c81db8f02a3a90b529644b5425e63213d1f065b04b5282539f06ed762f
+$ docker pull maven@sha256:d4a869c5eb95a4f8d8d679da701fce1e8e8855d8431c179f0af86869ec53b96e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.4 MB (144403736 bytes)**  
+-	Total Size: **144.4 MB (144431458 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b76cad15e45a954fa4a4ae0fad3a96ea2139f11c73e922d2973d4d04107b28a`
+-	Image ID: `sha256:15e9be9315fb5fedde660c41250bd35aad9ad144e9ea87c8b26b97f4c11f556e`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:40:44 GMT
-ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
-# Thu, 11 Jan 2024 02:40:45 GMT
+# Wed, 31 Jan 2024 22:44:26 GMT
+ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+# Wed, 31 Jan 2024 22:44:27 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -13878,35 +13878,35 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
-		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
-		Size: 29.2 MB (29157335 bytes)  
+	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
+		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
+		Size: 29.2 MB (29180832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0ff01baf921077a91ed3395450664af3fd70d1745ec7b3b34aef81c4d4d1eb9`  
-		Last Modified: Thu, 11 Jan 2024 06:21:21 GMT  
-		Size: 105.8 MB (105765082 bytes)  
+	-	`sha256:88f701d17ad0f7861266c18af5772782bf195da9e679d0f64b17f1f06e83e5fd`  
+		Last Modified: Thu, 01 Feb 2024 01:31:16 GMT  
+		Size: 105.8 MB (105769295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b7b7b09709d8d5719cbdd9b2ead7c49a6dd335c093dd1aac1d6624528a19817`  
-		Last Modified: Thu, 11 Jan 2024 06:21:15 GMT  
-		Size: 9.5 MB (9479941 bytes)  
+	-	`sha256:4825df74514e9970f8ceee33fdb74e811d2a7d82f15f89fc524330b02cc07a37`  
+		Last Modified: Thu, 01 Feb 2024 01:31:09 GMT  
+		Size: 9.5 MB (9479953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89c48ecc4f361d439b559ad5e5ea45dcd5750ca26e02ad5551a809e4b160f587`  
-		Last Modified: Thu, 11 Jan 2024 06:21:14 GMT  
-		Size: 853.0 B  
+	-	`sha256:530c234fc3fb3d10f05a5f16b16f1660384bfc90f6a19af905e5456b3ea1d1b6`  
+		Last Modified: Thu, 01 Feb 2024 01:31:08 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0bf24356e0d01903f6bc156da16ff10a3508dd7b4b60101215c8d76e68da4772`  
-		Last Modified: Thu, 11 Jan 2024 06:21:14 GMT  
-		Size: 360.0 B  
+	-	`sha256:6a36137cea47710db14d0fa0c7014e5f375950641c538c416540156b523c311a`  
+		Last Modified: Thu, 01 Feb 2024 01:31:08 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0053ffbab0a7118462b1fe39700807228b924c2ae7cde1d48793774c626702ea`  
-		Last Modified: Thu, 11 Jan 2024 06:21:14 GMT  
-		Size: 165.0 B  
+	-	`sha256:028f77877352da8c8c70dc9b2057c47d5f6ccbdff7f4d6bc22ba45464a4856e3`  
+		Last Modified: Thu, 01 Feb 2024 01:31:08 GMT  
+		Size: 166.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `maven:3.9-amazoncorretto-8-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:b66f6496a3446c2122b4497395ad7915b3e98074ee2ff76ca47a0262c4cdf83f
+$ docker pull maven@sha256:23fec81ade7d85b059832322e7ed296dd52ab17a7f312b2380ec9c9b0e00fe9f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13917,20 +13917,20 @@ $ docker pull maven@sha256:b66f6496a3446c2122b4497395ad7915b3e98074ee2ff76ca47a0
 ### `maven:3.9-amazoncorretto-8-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:aab2db59604c31251397359d09af5acadd978d91012141868d056ccf9150be8d
+$ docker pull maven@sha256:4aa47853ce61c650c0625d81b773119279a39380cb5d94f81e70710043226110
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.5 MB (160548319 bytes)**  
+-	Total Size: **160.6 MB (160573705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5baed65e66206a5f08f175da3046c3ae115c8f2e6b995d6934aeb2917014e49a`
+-	Image ID: `sha256:5e7eb727bb98421887202c25e972afb606379e598618b958d112a933af271971`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -13957,48 +13957,48 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03edbb31ad8158f678c28701b4ac61e6f64e0e41051b5b59a18706d92c6c2bf3`  
-		Last Modified: Thu, 11 Jan 2024 05:43:48 GMT  
-		Size: 121.9 MB (121941075 bytes)  
+	-	`sha256:d7faf0324c620b507578dab0c6f15fddff7b56f3bfa5e69990f89dba4a0bf5c7`  
+		Last Modified: Thu, 01 Feb 2024 01:07:31 GMT  
+		Size: 121.9 MB (121941921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fcb74b20a634243854afd95725cd286307b08f5e02768fa09275055f328a514`  
-		Last Modified: Thu, 11 Jan 2024 05:43:40 GMT  
-		Size: 9.5 MB (9479948 bytes)  
+	-	`sha256:8b1edeb27aee9418beff3fc95c1fea53ed3381f8b4e44193b5888df5efec4bbc`  
+		Last Modified: Thu, 01 Feb 2024 01:07:23 GMT  
+		Size: 9.5 MB (9479944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80a341745aa6980bcb8273bb506259faafaae34baaeb43ede939080ef3ef7dac`  
-		Last Modified: Thu, 11 Jan 2024 05:43:39 GMT  
-		Size: 853.0 B  
+	-	`sha256:a25e4a6a5db73b31880fff3d710874defaec6bcd2b9f853d614d194d22495050`  
+		Last Modified: Thu, 01 Feb 2024 01:07:22 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c08a1cc912c68c8114a14e7447c1aaf0a43f16715d083b6d12cbf5f13d0ba7cd`  
-		Last Modified: Thu, 11 Jan 2024 05:43:39 GMT  
-		Size: 358.0 B  
+	-	`sha256:c36189f89a734c47bb1dfdeab667cd4d9c900afdfc7b0193a876de77d49e7e3c`  
+		Last Modified: Thu, 01 Feb 2024 01:07:23 GMT  
+		Size: 357.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e965e2157aec94d6682e8bc86044a06d8953d5b0383d65dde32b479e08578876`  
-		Last Modified: Thu, 11 Jan 2024 05:43:39 GMT  
+	-	`sha256:1d1eeedba9c54a6ec60e5a07eed7d27370a67074362ae0643b87cec9ba9f93c6`  
+		Last Modified: Thu, 01 Feb 2024 01:07:22 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.9-amazoncorretto-8-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:573a18c81db8f02a3a90b529644b5425e63213d1f065b04b5282539f06ed762f
+$ docker pull maven@sha256:d4a869c5eb95a4f8d8d679da701fce1e8e8855d8431c179f0af86869ec53b96e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.4 MB (144403736 bytes)**  
+-	Total Size: **144.4 MB (144431458 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b76cad15e45a954fa4a4ae0fad3a96ea2139f11c73e922d2973d4d04107b28a`
+-	Image ID: `sha256:15e9be9315fb5fedde660c41250bd35aad9ad144e9ea87c8b26b97f4c11f556e`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:40:44 GMT
-ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
-# Thu, 11 Jan 2024 02:40:45 GMT
+# Wed, 31 Jan 2024 22:44:26 GMT
+ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+# Wed, 31 Jan 2024 22:44:27 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -14025,29 +14025,29 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
-		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
-		Size: 29.2 MB (29157335 bytes)  
+	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
+		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
+		Size: 29.2 MB (29180832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0ff01baf921077a91ed3395450664af3fd70d1745ec7b3b34aef81c4d4d1eb9`  
-		Last Modified: Thu, 11 Jan 2024 06:21:21 GMT  
-		Size: 105.8 MB (105765082 bytes)  
+	-	`sha256:88f701d17ad0f7861266c18af5772782bf195da9e679d0f64b17f1f06e83e5fd`  
+		Last Modified: Thu, 01 Feb 2024 01:31:16 GMT  
+		Size: 105.8 MB (105769295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b7b7b09709d8d5719cbdd9b2ead7c49a6dd335c093dd1aac1d6624528a19817`  
-		Last Modified: Thu, 11 Jan 2024 06:21:15 GMT  
-		Size: 9.5 MB (9479941 bytes)  
+	-	`sha256:4825df74514e9970f8ceee33fdb74e811d2a7d82f15f89fc524330b02cc07a37`  
+		Last Modified: Thu, 01 Feb 2024 01:31:09 GMT  
+		Size: 9.5 MB (9479953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89c48ecc4f361d439b559ad5e5ea45dcd5750ca26e02ad5551a809e4b160f587`  
-		Last Modified: Thu, 11 Jan 2024 06:21:14 GMT  
-		Size: 853.0 B  
+	-	`sha256:530c234fc3fb3d10f05a5f16b16f1660384bfc90f6a19af905e5456b3ea1d1b6`  
+		Last Modified: Thu, 01 Feb 2024 01:31:08 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0bf24356e0d01903f6bc156da16ff10a3508dd7b4b60101215c8d76e68da4772`  
-		Last Modified: Thu, 11 Jan 2024 06:21:14 GMT  
-		Size: 360.0 B  
+	-	`sha256:6a36137cea47710db14d0fa0c7014e5f375950641c538c416540156b523c311a`  
+		Last Modified: Thu, 01 Feb 2024 01:31:08 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0053ffbab0a7118462b1fe39700807228b924c2ae7cde1d48793774c626702ea`  
-		Last Modified: Thu, 11 Jan 2024 06:21:14 GMT  
-		Size: 165.0 B  
+	-	`sha256:028f77877352da8c8c70dc9b2057c47d5f6ccbdff7f4d6bc22ba45464a4856e3`  
+		Last Modified: Thu, 01 Feb 2024 01:31:08 GMT  
+		Size: 166.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `maven:3.9-eclipse-temurin`
@@ -22664,7 +22664,7 @@ CMD ["mvn"]
 ## `maven:3.9.6-amazoncorretto-11-debian`
 
 ```console
-$ docker pull maven@sha256:d7a06b927840cea038e6c3e81c6a335a11b40d76c991e849c7f419c1023f6f27
+$ docker pull maven@sha256:f483982fbef8f0381b7f0badba1fc830135aa895e772ae5b04926e2aec5ecf79
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -22675,20 +22675,20 @@ $ docker pull maven@sha256:d7a06b927840cea038e6c3e81c6a335a11b40d76c991e849c7f41
 ### `maven:3.9.6-amazoncorretto-11-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:bf08f6b2d2ca7005d70c4bafc3b0e1348f11b5140cb99882cc68703258e4fcfb
+$ docker pull maven@sha256:e5672e30a4bc2b2db2e59736ee4a75b8767077e30d756ad3447dda9ea3aa7701
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.9 MB (237905923 bytes)**  
+-	Total Size: **237.9 MB (237938206 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a0e918863d6712273753d47b1be9fdc0987da44ce0985b80ae32d2b03e2011b`
+-	Image ID: `sha256:72327a94da4272d7c4e62c7622ce876f3ea39491a9b357668b6395414aba70bc`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -22715,48 +22715,48 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c91f52f81e8754699c71561bf2be2748dee3439a628a3317705eb1db1e6656b0`  
-		Last Modified: Thu, 11 Jan 2024 05:42:14 GMT  
-		Size: 199.3 MB (199298683 bytes)  
+	-	`sha256:dadcd64c7ce1994300a9070b4378d062a8783aa5253b235e35610543b74432c0`  
+		Last Modified: Thu, 01 Feb 2024 01:05:49 GMT  
+		Size: 199.3 MB (199306424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c68edb2f0b7fe36fa51480f70aefa70d54b92a829579eb412a2ee36b87435cf2`  
-		Last Modified: Thu, 11 Jan 2024 05:42:01 GMT  
-		Size: 9.5 MB (9479945 bytes)  
+	-	`sha256:8f34d8a76c9b4e1b339508e90076a1c5e241e26a698353b6369a8300a81fa094`  
+		Last Modified: Thu, 01 Feb 2024 01:05:36 GMT  
+		Size: 9.5 MB (9479942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9bd9f43c3fcd5447f182de5d186f302016ce75c4305111709e5385c2e04ad33`  
-		Last Modified: Thu, 11 Jan 2024 05:42:00 GMT  
-		Size: 851.0 B  
+	-	`sha256:84bd404d83b00d51fdd0af394261cd58d6a3f0459eb95657ac4c919f4e59bdfd`  
+		Last Modified: Thu, 01 Feb 2024 01:05:35 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:556f86933d34466a4615890c6b916fe1a5adae9ee93345d7c50d583d121a9f5d`  
-		Last Modified: Thu, 11 Jan 2024 05:42:00 GMT  
+	-	`sha256:ee1ddf758a784dda694ba94dc7d6f81c5b4dd13e76fe4ffe47474ac14011f930`  
+		Last Modified: Thu, 01 Feb 2024 01:05:35 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d881ecb490b1b44ac2709680e989866abf3a64095ec72c47236ff4275581a493`  
-		Last Modified: Thu, 11 Jan 2024 05:42:00 GMT  
-		Size: 165.0 B  
+	-	`sha256:f1776b408ac1cf1da53d45617471d7c82c31e70fd0bc0c0e49d1433b6178ccca`  
+		Last Modified: Thu, 01 Feb 2024 01:05:35 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.9.6-amazoncorretto-11-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:fd6c6f8d1d73e225a98dc08039c78c89dc214750beec9a361397f392c3ba8319
+$ docker pull maven@sha256:06faf6c825bb8e31feb5d9657b9fd8ef81356e35fad587d7c3dc317d86beda2b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **234.8 MB (234787725 bytes)**  
+-	Total Size: **234.8 MB (234835523 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9744cf0a4d7e8e2661d9df863f1881677b4cb53a3c4db87a37075d1d00966c50`
+-	Image ID: `sha256:cea3992100610a11b733300ac1e39ecfc0ed16352f5e518884ebe088d87a1348`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:40:44 GMT
-ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
-# Thu, 11 Jan 2024 02:40:45 GMT
+# Wed, 31 Jan 2024 22:44:26 GMT
+ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+# Wed, 31 Jan 2024 22:44:27 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -22783,35 +22783,35 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
-		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
-		Size: 29.2 MB (29157335 bytes)  
+	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
+		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
+		Size: 29.2 MB (29180832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50edd382a7556e8f3409836e4a297b63e1dcb970c308891abd86f5912caa3081`  
-		Last Modified: Thu, 11 Jan 2024 06:19:42 GMT  
-		Size: 196.1 MB (196149067 bytes)  
+	-	`sha256:12734ba641ffae225eab3e88170767d3d7204808fc8565d008c182973005d63b`  
+		Last Modified: Thu, 01 Feb 2024 01:29:44 GMT  
+		Size: 196.2 MB (196173364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67f642fb871f93a7ca3f67fa2495b32c3c8a3005b190b7ba220d5e1b16dd02d0`  
-		Last Modified: Thu, 11 Jan 2024 06:19:32 GMT  
-		Size: 9.5 MB (9479945 bytes)  
+	-	`sha256:03d6db6881d95013b203ce1b9c9296c79cb3a4cac01a7299b814ab11f5e3102f`  
+		Last Modified: Thu, 01 Feb 2024 01:29:33 GMT  
+		Size: 9.5 MB (9479951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bff852bc9b126852c4c77d324e46fa22ce08af0d5d31afa7e550c6ceb5c845c1`  
-		Last Modified: Thu, 11 Jan 2024 06:19:31 GMT  
-		Size: 853.0 B  
+	-	`sha256:32c34a1366d97ce9842568f98fe971c1524efdc598e1d10d8051791de9a64655`  
+		Last Modified: Thu, 01 Feb 2024 01:29:33 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8af30b11409538dcc54560b01e207204568ef5a48cc188af606b681760066af`  
-		Last Modified: Thu, 11 Jan 2024 06:19:31 GMT  
-		Size: 360.0 B  
+	-	`sha256:143650f9ceb7ae69e6ceed0267ffb5f998d1f7e32a0eed3e2c2db3f06ab1dee9`  
+		Last Modified: Thu, 01 Feb 2024 01:29:32 GMT  
+		Size: 357.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cb0705fefbe5d83a9c8a86dc4d29fe2af2088150e21800c62709ea64cad3558`  
-		Last Modified: Thu, 11 Jan 2024 06:19:31 GMT  
+	-	`sha256:6854fd67524312f3829792f75a599941d3eea528568e0d128330145732d903ae`  
+		Last Modified: Thu, 01 Feb 2024 01:29:32 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `maven:3.9.6-amazoncorretto-11-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:d7a06b927840cea038e6c3e81c6a335a11b40d76c991e849c7f419c1023f6f27
+$ docker pull maven@sha256:f483982fbef8f0381b7f0badba1fc830135aa895e772ae5b04926e2aec5ecf79
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -22822,20 +22822,20 @@ $ docker pull maven@sha256:d7a06b927840cea038e6c3e81c6a335a11b40d76c991e849c7f41
 ### `maven:3.9.6-amazoncorretto-11-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:bf08f6b2d2ca7005d70c4bafc3b0e1348f11b5140cb99882cc68703258e4fcfb
+$ docker pull maven@sha256:e5672e30a4bc2b2db2e59736ee4a75b8767077e30d756ad3447dda9ea3aa7701
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.9 MB (237905923 bytes)**  
+-	Total Size: **237.9 MB (237938206 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a0e918863d6712273753d47b1be9fdc0987da44ce0985b80ae32d2b03e2011b`
+-	Image ID: `sha256:72327a94da4272d7c4e62c7622ce876f3ea39491a9b357668b6395414aba70bc`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -22862,48 +22862,48 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c91f52f81e8754699c71561bf2be2748dee3439a628a3317705eb1db1e6656b0`  
-		Last Modified: Thu, 11 Jan 2024 05:42:14 GMT  
-		Size: 199.3 MB (199298683 bytes)  
+	-	`sha256:dadcd64c7ce1994300a9070b4378d062a8783aa5253b235e35610543b74432c0`  
+		Last Modified: Thu, 01 Feb 2024 01:05:49 GMT  
+		Size: 199.3 MB (199306424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c68edb2f0b7fe36fa51480f70aefa70d54b92a829579eb412a2ee36b87435cf2`  
-		Last Modified: Thu, 11 Jan 2024 05:42:01 GMT  
-		Size: 9.5 MB (9479945 bytes)  
+	-	`sha256:8f34d8a76c9b4e1b339508e90076a1c5e241e26a698353b6369a8300a81fa094`  
+		Last Modified: Thu, 01 Feb 2024 01:05:36 GMT  
+		Size: 9.5 MB (9479942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9bd9f43c3fcd5447f182de5d186f302016ce75c4305111709e5385c2e04ad33`  
-		Last Modified: Thu, 11 Jan 2024 05:42:00 GMT  
-		Size: 851.0 B  
+	-	`sha256:84bd404d83b00d51fdd0af394261cd58d6a3f0459eb95657ac4c919f4e59bdfd`  
+		Last Modified: Thu, 01 Feb 2024 01:05:35 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:556f86933d34466a4615890c6b916fe1a5adae9ee93345d7c50d583d121a9f5d`  
-		Last Modified: Thu, 11 Jan 2024 05:42:00 GMT  
+	-	`sha256:ee1ddf758a784dda694ba94dc7d6f81c5b4dd13e76fe4ffe47474ac14011f930`  
+		Last Modified: Thu, 01 Feb 2024 01:05:35 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d881ecb490b1b44ac2709680e989866abf3a64095ec72c47236ff4275581a493`  
-		Last Modified: Thu, 11 Jan 2024 05:42:00 GMT  
-		Size: 165.0 B  
+	-	`sha256:f1776b408ac1cf1da53d45617471d7c82c31e70fd0bc0c0e49d1433b6178ccca`  
+		Last Modified: Thu, 01 Feb 2024 01:05:35 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.9.6-amazoncorretto-11-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:fd6c6f8d1d73e225a98dc08039c78c89dc214750beec9a361397f392c3ba8319
+$ docker pull maven@sha256:06faf6c825bb8e31feb5d9657b9fd8ef81356e35fad587d7c3dc317d86beda2b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **234.8 MB (234787725 bytes)**  
+-	Total Size: **234.8 MB (234835523 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9744cf0a4d7e8e2661d9df863f1881677b4cb53a3c4db87a37075d1d00966c50`
+-	Image ID: `sha256:cea3992100610a11b733300ac1e39ecfc0ed16352f5e518884ebe088d87a1348`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:40:44 GMT
-ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
-# Thu, 11 Jan 2024 02:40:45 GMT
+# Wed, 31 Jan 2024 22:44:26 GMT
+ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+# Wed, 31 Jan 2024 22:44:27 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -22930,28 +22930,28 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
-		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
-		Size: 29.2 MB (29157335 bytes)  
+	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
+		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
+		Size: 29.2 MB (29180832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50edd382a7556e8f3409836e4a297b63e1dcb970c308891abd86f5912caa3081`  
-		Last Modified: Thu, 11 Jan 2024 06:19:42 GMT  
-		Size: 196.1 MB (196149067 bytes)  
+	-	`sha256:12734ba641ffae225eab3e88170767d3d7204808fc8565d008c182973005d63b`  
+		Last Modified: Thu, 01 Feb 2024 01:29:44 GMT  
+		Size: 196.2 MB (196173364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67f642fb871f93a7ca3f67fa2495b32c3c8a3005b190b7ba220d5e1b16dd02d0`  
-		Last Modified: Thu, 11 Jan 2024 06:19:32 GMT  
-		Size: 9.5 MB (9479945 bytes)  
+	-	`sha256:03d6db6881d95013b203ce1b9c9296c79cb3a4cac01a7299b814ab11f5e3102f`  
+		Last Modified: Thu, 01 Feb 2024 01:29:33 GMT  
+		Size: 9.5 MB (9479951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bff852bc9b126852c4c77d324e46fa22ce08af0d5d31afa7e550c6ceb5c845c1`  
-		Last Modified: Thu, 11 Jan 2024 06:19:31 GMT  
-		Size: 853.0 B  
+	-	`sha256:32c34a1366d97ce9842568f98fe971c1524efdc598e1d10d8051791de9a64655`  
+		Last Modified: Thu, 01 Feb 2024 01:29:33 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8af30b11409538dcc54560b01e207204568ef5a48cc188af606b681760066af`  
-		Last Modified: Thu, 11 Jan 2024 06:19:31 GMT  
-		Size: 360.0 B  
+	-	`sha256:143650f9ceb7ae69e6ceed0267ffb5f998d1f7e32a0eed3e2c2db3f06ab1dee9`  
+		Last Modified: Thu, 01 Feb 2024 01:29:32 GMT  
+		Size: 357.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cb0705fefbe5d83a9c8a86dc4d29fe2af2088150e21800c62709ea64cad3558`  
-		Last Modified: Thu, 11 Jan 2024 06:19:31 GMT  
+	-	`sha256:6854fd67524312f3829792f75a599941d3eea528568e0d128330145732d903ae`  
+		Last Modified: Thu, 01 Feb 2024 01:29:32 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -23308,7 +23308,7 @@ CMD ["mvn"]
 ## `maven:3.9.6-amazoncorretto-17-debian`
 
 ```console
-$ docker pull maven@sha256:9c6d8ef0eb1844237aa07d138ccdad499aacb54ce352b085370938f97d8b026a
+$ docker pull maven@sha256:6526548d587f59bfdcc8bd3007dbf255097120c1a94e49ec6c16786aa6b456c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23319,20 +23319,20 @@ $ docker pull maven@sha256:9c6d8ef0eb1844237aa07d138ccdad499aacb54ce352b08537093
 ### `maven:3.9.6-amazoncorretto-17-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:11eb64d94108dbff2a2e5c85fcf395ba238367cc8bd4f5d658e6ec257b02a9e4
+$ docker pull maven@sha256:1524232f900e41b63a02518aefd613776ebbf8c194e8242a855ebcf4eb3ea45f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **236.4 MB (236369316 bytes)**  
+-	Total Size: **236.4 MB (236430682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d0646721bd0068b8a45a5c51e9044d28b6b02d0f68dcbcd3b0f1ee9c54c2c6c9`
+-	Image ID: `sha256:7a977eef67b19c48b029dd318acad1377703b1d4a83fc69c9b9419fa708b7a90`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -23359,48 +23359,48 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b54ffb78f6eb2ce02fd16ab56dc6aa3607345c32c7eee7ea17180a8da7cb9b1b`  
-		Last Modified: Thu, 11 Jan 2024 05:42:46 GMT  
-		Size: 197.8 MB (197762073 bytes)  
+	-	`sha256:88332ac8920b0613d68f0e1580424176d5d0ba8b19b179684587191632fb6b1c`  
+		Last Modified: Thu, 01 Feb 2024 01:06:26 GMT  
+		Size: 197.8 MB (197798899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47b64a1278a4899891d5823f1c02e0711bf6dc9e6a37d5d180e94a99fe9d6ccc`  
-		Last Modified: Thu, 11 Jan 2024 05:42:33 GMT  
-		Size: 9.5 MB (9479948 bytes)  
+	-	`sha256:df68f8306bd067cc113d3570612f62f0da3e7002398e169521d6df3f735babc5`  
+		Last Modified: Thu, 01 Feb 2024 01:06:12 GMT  
+		Size: 9.5 MB (9479943 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d4361e3302e9aace6de7b4d83c4251e67dad5578ce115d271dbdf77f5322b87`  
-		Last Modified: Thu, 11 Jan 2024 05:42:32 GMT  
+	-	`sha256:dd5e486f329d789281aedfc3d4dfbd7780c868263f3ce3ca65ad918e3cacba70`  
+		Last Modified: Thu, 01 Feb 2024 01:06:11 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d18870d25909ce62908ef1cb4c63d66129846a4daad9e1df3cab6dbb7a648e06`  
-		Last Modified: Thu, 11 Jan 2024 05:42:32 GMT  
+	-	`sha256:d7289134c5a5dd7bfc85180639bbf75cd96213856e287e039ea4d373ef203475`  
+		Last Modified: Thu, 01 Feb 2024 01:06:11 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d96c80f24e24b51d1b223a589e530a425f882eb33bda6a8528e8ed84223c18e2`  
-		Last Modified: Thu, 11 Jan 2024 05:42:32 GMT  
-		Size: 164.0 B  
+	-	`sha256:50067052e686279bc1fd6d1c75a3ab2ce47a8db02c486aca238907fc6db8759c`  
+		Last Modified: Thu, 01 Feb 2024 01:06:10 GMT  
+		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.9.6-amazoncorretto-17-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:604df95c1ad2c3a1666c3acc3685ab53ad32f577bff0f1976ab697a8542bb58c
+$ docker pull maven@sha256:d774ecec4c946f1f0022a8feb978f466b31c64854094d6faafb1332f7cd6e1e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **234.7 MB (234735595 bytes)**  
+-	Total Size: **234.8 MB (234808126 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9bb1e45b1f9d544ee598847b41b73ce6b9d93d15986f01324aecdac4d6b542d6`
+-	Image ID: `sha256:f781ecf8986c2c715f973da9871dce49318f8add4af2690abf01bc71ba69f04e`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:40:44 GMT
-ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
-# Thu, 11 Jan 2024 02:40:45 GMT
+# Wed, 31 Jan 2024 22:44:26 GMT
+ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+# Wed, 31 Jan 2024 22:44:27 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -23427,35 +23427,35 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
-		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
-		Size: 29.2 MB (29157335 bytes)  
+	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
+		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
+		Size: 29.2 MB (29180832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b06f0f2406595f2ecad6f9662e8845bca525263bf7c198efd11870323fe7b1e9`  
-		Last Modified: Thu, 11 Jan 2024 06:20:11 GMT  
-		Size: 196.1 MB (196096958 bytes)  
+	-	`sha256:41a1fa1e80d1a8a1e878e3648b9cd8689758bd7bb20cd45cb7d5037d1d949bc1`  
+		Last Modified: Thu, 01 Feb 2024 01:30:17 GMT  
+		Size: 196.1 MB (196145964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46a2f4f3cf3af5f521bd4b3981175692fbde10dda48503e6a75214cb0022fc2e`  
-		Last Modified: Thu, 11 Jan 2024 06:20:01 GMT  
-		Size: 9.5 MB (9479927 bytes)  
+	-	`sha256:6b432b87084e4d8e601b06ab9b29528af885ac98d4593360c1eb548d3366a418`  
+		Last Modified: Thu, 01 Feb 2024 01:30:06 GMT  
+		Size: 9.5 MB (9479953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:956acf01cd52dbb12b0ce6b39fe54f98a0cca3582177f414a64500c50a2b1aa2`  
-		Last Modified: Thu, 11 Jan 2024 06:20:00 GMT  
-		Size: 853.0 B  
+	-	`sha256:5e84147cf650f90c181fdbb0ef2282ed33292a0e46399942583201c33ef0c733`  
+		Last Modified: Thu, 01 Feb 2024 01:30:06 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:976383a39b875cf08e52d2331305f0c473e57dd3661aa2e25201d550f0816f11`  
-		Last Modified: Thu, 11 Jan 2024 06:20:00 GMT  
-		Size: 357.0 B  
+	-	`sha256:02dcac400aee4a3a613f565be696b8356f2e3f9c965a77bc2fd5866aeef9914e`  
+		Last Modified: Thu, 01 Feb 2024 01:30:06 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a8e519084bbe61411779c548bdac55b5e92e2dd558ce65c6c0e050ad6a69796`  
-		Last Modified: Thu, 11 Jan 2024 06:20:00 GMT  
+	-	`sha256:70159ab1446bb2190bed447c01970f83949e1aae5cd657934fdc3dde9ccf77f4`  
+		Last Modified: Thu, 01 Feb 2024 01:30:06 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `maven:3.9.6-amazoncorretto-17-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:9c6d8ef0eb1844237aa07d138ccdad499aacb54ce352b085370938f97d8b026a
+$ docker pull maven@sha256:6526548d587f59bfdcc8bd3007dbf255097120c1a94e49ec6c16786aa6b456c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23466,20 +23466,20 @@ $ docker pull maven@sha256:9c6d8ef0eb1844237aa07d138ccdad499aacb54ce352b08537093
 ### `maven:3.9.6-amazoncorretto-17-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:11eb64d94108dbff2a2e5c85fcf395ba238367cc8bd4f5d658e6ec257b02a9e4
+$ docker pull maven@sha256:1524232f900e41b63a02518aefd613776ebbf8c194e8242a855ebcf4eb3ea45f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **236.4 MB (236369316 bytes)**  
+-	Total Size: **236.4 MB (236430682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d0646721bd0068b8a45a5c51e9044d28b6b02d0f68dcbcd3b0f1ee9c54c2c6c9`
+-	Image ID: `sha256:7a977eef67b19c48b029dd318acad1377703b1d4a83fc69c9b9419fa708b7a90`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -23506,48 +23506,48 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b54ffb78f6eb2ce02fd16ab56dc6aa3607345c32c7eee7ea17180a8da7cb9b1b`  
-		Last Modified: Thu, 11 Jan 2024 05:42:46 GMT  
-		Size: 197.8 MB (197762073 bytes)  
+	-	`sha256:88332ac8920b0613d68f0e1580424176d5d0ba8b19b179684587191632fb6b1c`  
+		Last Modified: Thu, 01 Feb 2024 01:06:26 GMT  
+		Size: 197.8 MB (197798899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47b64a1278a4899891d5823f1c02e0711bf6dc9e6a37d5d180e94a99fe9d6ccc`  
-		Last Modified: Thu, 11 Jan 2024 05:42:33 GMT  
-		Size: 9.5 MB (9479948 bytes)  
+	-	`sha256:df68f8306bd067cc113d3570612f62f0da3e7002398e169521d6df3f735babc5`  
+		Last Modified: Thu, 01 Feb 2024 01:06:12 GMT  
+		Size: 9.5 MB (9479943 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d4361e3302e9aace6de7b4d83c4251e67dad5578ce115d271dbdf77f5322b87`  
-		Last Modified: Thu, 11 Jan 2024 05:42:32 GMT  
+	-	`sha256:dd5e486f329d789281aedfc3d4dfbd7780c868263f3ce3ca65ad918e3cacba70`  
+		Last Modified: Thu, 01 Feb 2024 01:06:11 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d18870d25909ce62908ef1cb4c63d66129846a4daad9e1df3cab6dbb7a648e06`  
-		Last Modified: Thu, 11 Jan 2024 05:42:32 GMT  
+	-	`sha256:d7289134c5a5dd7bfc85180639bbf75cd96213856e287e039ea4d373ef203475`  
+		Last Modified: Thu, 01 Feb 2024 01:06:11 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d96c80f24e24b51d1b223a589e530a425f882eb33bda6a8528e8ed84223c18e2`  
-		Last Modified: Thu, 11 Jan 2024 05:42:32 GMT  
-		Size: 164.0 B  
+	-	`sha256:50067052e686279bc1fd6d1c75a3ab2ce47a8db02c486aca238907fc6db8759c`  
+		Last Modified: Thu, 01 Feb 2024 01:06:10 GMT  
+		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.9.6-amazoncorretto-17-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:604df95c1ad2c3a1666c3acc3685ab53ad32f577bff0f1976ab697a8542bb58c
+$ docker pull maven@sha256:d774ecec4c946f1f0022a8feb978f466b31c64854094d6faafb1332f7cd6e1e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **234.7 MB (234735595 bytes)**  
+-	Total Size: **234.8 MB (234808126 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9bb1e45b1f9d544ee598847b41b73ce6b9d93d15986f01324aecdac4d6b542d6`
+-	Image ID: `sha256:f781ecf8986c2c715f973da9871dce49318f8add4af2690abf01bc71ba69f04e`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:40:44 GMT
-ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
-# Thu, 11 Jan 2024 02:40:45 GMT
+# Wed, 31 Jan 2024 22:44:26 GMT
+ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+# Wed, 31 Jan 2024 22:44:27 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -23574,28 +23574,28 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
-		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
-		Size: 29.2 MB (29157335 bytes)  
+	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
+		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
+		Size: 29.2 MB (29180832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b06f0f2406595f2ecad6f9662e8845bca525263bf7c198efd11870323fe7b1e9`  
-		Last Modified: Thu, 11 Jan 2024 06:20:11 GMT  
-		Size: 196.1 MB (196096958 bytes)  
+	-	`sha256:41a1fa1e80d1a8a1e878e3648b9cd8689758bd7bb20cd45cb7d5037d1d949bc1`  
+		Last Modified: Thu, 01 Feb 2024 01:30:17 GMT  
+		Size: 196.1 MB (196145964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46a2f4f3cf3af5f521bd4b3981175692fbde10dda48503e6a75214cb0022fc2e`  
-		Last Modified: Thu, 11 Jan 2024 06:20:01 GMT  
-		Size: 9.5 MB (9479927 bytes)  
+	-	`sha256:6b432b87084e4d8e601b06ab9b29528af885ac98d4593360c1eb548d3366a418`  
+		Last Modified: Thu, 01 Feb 2024 01:30:06 GMT  
+		Size: 9.5 MB (9479953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:956acf01cd52dbb12b0ce6b39fe54f98a0cca3582177f414a64500c50a2b1aa2`  
-		Last Modified: Thu, 11 Jan 2024 06:20:00 GMT  
-		Size: 853.0 B  
+	-	`sha256:5e84147cf650f90c181fdbb0ef2282ed33292a0e46399942583201c33ef0c733`  
+		Last Modified: Thu, 01 Feb 2024 01:30:06 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:976383a39b875cf08e52d2331305f0c473e57dd3661aa2e25201d550f0816f11`  
-		Last Modified: Thu, 11 Jan 2024 06:20:00 GMT  
-		Size: 357.0 B  
+	-	`sha256:02dcac400aee4a3a613f565be696b8356f2e3f9c965a77bc2fd5866aeef9914e`  
+		Last Modified: Thu, 01 Feb 2024 01:30:06 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a8e519084bbe61411779c548bdac55b5e92e2dd558ce65c6c0e050ad6a69796`  
-		Last Modified: Thu, 11 Jan 2024 06:20:00 GMT  
+	-	`sha256:70159ab1446bb2190bed447c01970f83949e1aae5cd657934fdc3dde9ccf77f4`  
+		Last Modified: Thu, 01 Feb 2024 01:30:06 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -23952,7 +23952,7 @@ CMD ["mvn"]
 ## `maven:3.9.6-amazoncorretto-21-debian`
 
 ```console
-$ docker pull maven@sha256:451456fb1611e6e8f60d15cebc99045182eff5bc53644a6a6fbf35e0d093a7e7
+$ docker pull maven@sha256:0dc7709f27b91ba95ecf7f6e393a4cf2f0b99732b22254e885ddf2bac0a69c93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23963,20 +23963,20 @@ $ docker pull maven@sha256:451456fb1611e6e8f60d15cebc99045182eff5bc53644a6a6fbf3
 ### `maven:3.9.6-amazoncorretto-21-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:35b0ec225ec95394e088648969d07991e2a2e8005b6113cf8f633d807c97207a
+$ docker pull maven@sha256:d16b58c97faa953416e714ef9a5b887d6c10780cf299712302ed47d7557fa61e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.0 MB (251958368 bytes)**  
+-	Total Size: **252.2 MB (252209530 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d3b69de646ea01a8a4bee93741fae64f20222f02de4a06a63c13b0991393435`
+-	Image ID: `sha256:9af995a5daa9bca28dab403bceaaf6caf7e988ee12b08efe5be08aae32547413`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -24003,48 +24003,48 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:452658320a09cafa0ae9b2b84cab557ed515cd5d385ee555287e8de4e0f8f9ec`  
-		Last Modified: Thu, 11 Jan 2024 05:43:20 GMT  
-		Size: 213.4 MB (213351137 bytes)  
+	-	`sha256:24f3c9a400333343f78fd7ca6589de3d7edafd07aab43ea2b10b5be771a8c9ff`  
+		Last Modified: Thu, 01 Feb 2024 01:07:02 GMT  
+		Size: 213.6 MB (213577744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d806d12e35c8d2476f31468166dcf3d118841c3f9e913b2046bd726caa760f21`  
-		Last Modified: Thu, 11 Jan 2024 05:43:06 GMT  
-		Size: 9.5 MB (9479933 bytes)  
+	-	`sha256:82058ce8b6cdeda0f67ac06072761c7f962abb6006087bd48d7d287cf7aa9f0d`  
+		Last Modified: Thu, 01 Feb 2024 01:06:46 GMT  
+		Size: 9.5 MB (9479943 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0341876d44dd85dfef3aab940f87c45a1c11bde76893e676cb44b20fb880826`  
-		Last Modified: Thu, 11 Jan 2024 05:43:05 GMT  
-		Size: 853.0 B  
+	-	`sha256:6b149f2082d626762a2834e6eb736314e529340ccf2290525ae9790dc222cc04`  
+		Last Modified: Thu, 01 Feb 2024 01:06:45 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fd8def76149c7ba2cd28be76f377a85243b40638bc3f49e1bdf9e205a2bd907`  
-		Last Modified: Thu, 11 Jan 2024 05:43:05 GMT  
+	-	`sha256:bf22b5b79f3faddbd6c7585cd08f0fa98a53100e4063daeb916f32d0de2b4a7e`  
+		Last Modified: Thu, 01 Feb 2024 01:06:45 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a81a2c45d44e13618fc24e71761b8479ede07468e48053fef1694aa9efb85d1c`  
-		Last Modified: Thu, 11 Jan 2024 05:43:05 GMT  
+	-	`sha256:2104fbc6fe8ac1b066b4d9ad12c15d357eb30bffc0025c36e33d0141a8694d6b`  
+		Last Modified: Thu, 01 Feb 2024 01:06:45 GMT  
 		Size: 166.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.9.6-amazoncorretto-21-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:92270457b539ddd508f838aa682b3759c933ad08bcb3b7e8f45d0d03251a097c
+$ docker pull maven@sha256:2da57f80f0ce821ef23d8d18eb32b2008b1fbc1c1cf4744483af31cdb29c0659
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **249.8 MB (249759325 bytes)**  
+-	Total Size: **250.0 MB (249997629 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d35bd0f25ffd8d6c58dcb5acaa5e78bad8fa006630058b41f1316d9343f5ff13`
+-	Image ID: `sha256:3b5a04284ae39e48d535bf3d4d6752e93d5100347524426ebe3868854b0e19bd`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:40:44 GMT
-ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
-# Thu, 11 Jan 2024 02:40:45 GMT
+# Wed, 31 Jan 2024 22:44:26 GMT
+ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+# Wed, 31 Jan 2024 22:44:27 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -24071,35 +24071,35 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
-		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
-		Size: 29.2 MB (29157335 bytes)  
+	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
+		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
+		Size: 29.2 MB (29180832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f52a8a666a6b8705503fbd6f6cb78f25fa54b964c14d8dc24d7a4a99c1883e1`  
-		Last Modified: Thu, 11 Jan 2024 06:20:56 GMT  
-		Size: 211.1 MB (211120674 bytes)  
+	-	`sha256:b7c1e6d77b49024f13f9143bece133e7e38a62e064fe0be6b56a8936dc332905`  
+		Last Modified: Thu, 01 Feb 2024 01:30:49 GMT  
+		Size: 211.3 MB (211335474 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78857fa6be0a6442c87d3e74da2633c87bc92694894668633b227a7d29e0eae3`  
-		Last Modified: Thu, 11 Jan 2024 06:20:44 GMT  
-		Size: 9.5 MB (9479941 bytes)  
+	-	`sha256:0122ad7a8594027cc888948924ca4e2269785b2de5a5a09152c795c6032ccbbc`  
+		Last Modified: Thu, 01 Feb 2024 01:30:37 GMT  
+		Size: 9.5 MB (9479948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:96b2c9c0a71f869c88b865265974527f5f45737a7031d098147573a18e1c1b9e`  
-		Last Modified: Thu, 11 Jan 2024 06:20:43 GMT  
-		Size: 852.0 B  
+	-	`sha256:ae8c0dbfd09c807648dd1f8da9b989cd8f3b04d273e1954b9017f5b5e4965970`  
+		Last Modified: Thu, 01 Feb 2024 01:30:36 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e83d8b85f64bd59e0e0d380b5cf7321b832ef927076c667cb515f7a24412450`  
-		Last Modified: Thu, 11 Jan 2024 06:20:43 GMT  
-		Size: 358.0 B  
+	-	`sha256:cad1923c907cf992fe1b37ed18a37206cb5be59b49ab305bcba08beacac748c4`  
+		Last Modified: Thu, 01 Feb 2024 01:30:36 GMT  
+		Size: 357.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:198e5457a2450d1c64124b0aea56d8636c6615ea5df009c411d156c58aa16410`  
-		Last Modified: Thu, 11 Jan 2024 06:20:43 GMT  
+	-	`sha256:9afa93e348e9cdb54eb35824fd2e782f0fd434ca507f53d38627c81c9484c9a7`  
+		Last Modified: Thu, 01 Feb 2024 01:30:37 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `maven:3.9.6-amazoncorretto-21-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:451456fb1611e6e8f60d15cebc99045182eff5bc53644a6a6fbf35e0d093a7e7
+$ docker pull maven@sha256:0dc7709f27b91ba95ecf7f6e393a4cf2f0b99732b22254e885ddf2bac0a69c93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -24110,20 +24110,20 @@ $ docker pull maven@sha256:451456fb1611e6e8f60d15cebc99045182eff5bc53644a6a6fbf3
 ### `maven:3.9.6-amazoncorretto-21-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:35b0ec225ec95394e088648969d07991e2a2e8005b6113cf8f633d807c97207a
+$ docker pull maven@sha256:d16b58c97faa953416e714ef9a5b887d6c10780cf299712302ed47d7557fa61e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.0 MB (251958368 bytes)**  
+-	Total Size: **252.2 MB (252209530 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d3b69de646ea01a8a4bee93741fae64f20222f02de4a06a63c13b0991393435`
+-	Image ID: `sha256:9af995a5daa9bca28dab403bceaaf6caf7e988ee12b08efe5be08aae32547413`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -24150,48 +24150,48 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:452658320a09cafa0ae9b2b84cab557ed515cd5d385ee555287e8de4e0f8f9ec`  
-		Last Modified: Thu, 11 Jan 2024 05:43:20 GMT  
-		Size: 213.4 MB (213351137 bytes)  
+	-	`sha256:24f3c9a400333343f78fd7ca6589de3d7edafd07aab43ea2b10b5be771a8c9ff`  
+		Last Modified: Thu, 01 Feb 2024 01:07:02 GMT  
+		Size: 213.6 MB (213577744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d806d12e35c8d2476f31468166dcf3d118841c3f9e913b2046bd726caa760f21`  
-		Last Modified: Thu, 11 Jan 2024 05:43:06 GMT  
-		Size: 9.5 MB (9479933 bytes)  
+	-	`sha256:82058ce8b6cdeda0f67ac06072761c7f962abb6006087bd48d7d287cf7aa9f0d`  
+		Last Modified: Thu, 01 Feb 2024 01:06:46 GMT  
+		Size: 9.5 MB (9479943 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0341876d44dd85dfef3aab940f87c45a1c11bde76893e676cb44b20fb880826`  
-		Last Modified: Thu, 11 Jan 2024 05:43:05 GMT  
-		Size: 853.0 B  
+	-	`sha256:6b149f2082d626762a2834e6eb736314e529340ccf2290525ae9790dc222cc04`  
+		Last Modified: Thu, 01 Feb 2024 01:06:45 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fd8def76149c7ba2cd28be76f377a85243b40638bc3f49e1bdf9e205a2bd907`  
-		Last Modified: Thu, 11 Jan 2024 05:43:05 GMT  
+	-	`sha256:bf22b5b79f3faddbd6c7585cd08f0fa98a53100e4063daeb916f32d0de2b4a7e`  
+		Last Modified: Thu, 01 Feb 2024 01:06:45 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a81a2c45d44e13618fc24e71761b8479ede07468e48053fef1694aa9efb85d1c`  
-		Last Modified: Thu, 11 Jan 2024 05:43:05 GMT  
+	-	`sha256:2104fbc6fe8ac1b066b4d9ad12c15d357eb30bffc0025c36e33d0141a8694d6b`  
+		Last Modified: Thu, 01 Feb 2024 01:06:45 GMT  
 		Size: 166.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.9.6-amazoncorretto-21-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:92270457b539ddd508f838aa682b3759c933ad08bcb3b7e8f45d0d03251a097c
+$ docker pull maven@sha256:2da57f80f0ce821ef23d8d18eb32b2008b1fbc1c1cf4744483af31cdb29c0659
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **249.8 MB (249759325 bytes)**  
+-	Total Size: **250.0 MB (249997629 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d35bd0f25ffd8d6c58dcb5acaa5e78bad8fa006630058b41f1316d9343f5ff13`
+-	Image ID: `sha256:3b5a04284ae39e48d535bf3d4d6752e93d5100347524426ebe3868854b0e19bd`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:40:44 GMT
-ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
-# Thu, 11 Jan 2024 02:40:45 GMT
+# Wed, 31 Jan 2024 22:44:26 GMT
+ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+# Wed, 31 Jan 2024 22:44:27 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -24218,28 +24218,28 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
-		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
-		Size: 29.2 MB (29157335 bytes)  
+	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
+		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
+		Size: 29.2 MB (29180832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f52a8a666a6b8705503fbd6f6cb78f25fa54b964c14d8dc24d7a4a99c1883e1`  
-		Last Modified: Thu, 11 Jan 2024 06:20:56 GMT  
-		Size: 211.1 MB (211120674 bytes)  
+	-	`sha256:b7c1e6d77b49024f13f9143bece133e7e38a62e064fe0be6b56a8936dc332905`  
+		Last Modified: Thu, 01 Feb 2024 01:30:49 GMT  
+		Size: 211.3 MB (211335474 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78857fa6be0a6442c87d3e74da2633c87bc92694894668633b227a7d29e0eae3`  
-		Last Modified: Thu, 11 Jan 2024 06:20:44 GMT  
-		Size: 9.5 MB (9479941 bytes)  
+	-	`sha256:0122ad7a8594027cc888948924ca4e2269785b2de5a5a09152c795c6032ccbbc`  
+		Last Modified: Thu, 01 Feb 2024 01:30:37 GMT  
+		Size: 9.5 MB (9479948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:96b2c9c0a71f869c88b865265974527f5f45737a7031d098147573a18e1c1b9e`  
-		Last Modified: Thu, 11 Jan 2024 06:20:43 GMT  
-		Size: 852.0 B  
+	-	`sha256:ae8c0dbfd09c807648dd1f8da9b989cd8f3b04d273e1954b9017f5b5e4965970`  
+		Last Modified: Thu, 01 Feb 2024 01:30:36 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e83d8b85f64bd59e0e0d380b5cf7321b832ef927076c667cb515f7a24412450`  
-		Last Modified: Thu, 11 Jan 2024 06:20:43 GMT  
-		Size: 358.0 B  
+	-	`sha256:cad1923c907cf992fe1b37ed18a37206cb5be59b49ab305bcba08beacac748c4`  
+		Last Modified: Thu, 01 Feb 2024 01:30:36 GMT  
+		Size: 357.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:198e5457a2450d1c64124b0aea56d8636c6615ea5df009c411d156c58aa16410`  
-		Last Modified: Thu, 11 Jan 2024 06:20:43 GMT  
+	-	`sha256:9afa93e348e9cdb54eb35824fd2e782f0fd434ca507f53d38627c81c9484c9a7`  
+		Last Modified: Thu, 01 Feb 2024 01:30:37 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -24592,7 +24592,7 @@ CMD ["mvn"]
 ## `maven:3.9.6-amazoncorretto-8-debian`
 
 ```console
-$ docker pull maven@sha256:b66f6496a3446c2122b4497395ad7915b3e98074ee2ff76ca47a0262c4cdf83f
+$ docker pull maven@sha256:23fec81ade7d85b059832322e7ed296dd52ab17a7f312b2380ec9c9b0e00fe9f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -24603,20 +24603,20 @@ $ docker pull maven@sha256:b66f6496a3446c2122b4497395ad7915b3e98074ee2ff76ca47a0
 ### `maven:3.9.6-amazoncorretto-8-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:aab2db59604c31251397359d09af5acadd978d91012141868d056ccf9150be8d
+$ docker pull maven@sha256:4aa47853ce61c650c0625d81b773119279a39380cb5d94f81e70710043226110
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.5 MB (160548319 bytes)**  
+-	Total Size: **160.6 MB (160573705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5baed65e66206a5f08f175da3046c3ae115c8f2e6b995d6934aeb2917014e49a`
+-	Image ID: `sha256:5e7eb727bb98421887202c25e972afb606379e598618b958d112a933af271971`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -24643,48 +24643,48 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03edbb31ad8158f678c28701b4ac61e6f64e0e41051b5b59a18706d92c6c2bf3`  
-		Last Modified: Thu, 11 Jan 2024 05:43:48 GMT  
-		Size: 121.9 MB (121941075 bytes)  
+	-	`sha256:d7faf0324c620b507578dab0c6f15fddff7b56f3bfa5e69990f89dba4a0bf5c7`  
+		Last Modified: Thu, 01 Feb 2024 01:07:31 GMT  
+		Size: 121.9 MB (121941921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fcb74b20a634243854afd95725cd286307b08f5e02768fa09275055f328a514`  
-		Last Modified: Thu, 11 Jan 2024 05:43:40 GMT  
-		Size: 9.5 MB (9479948 bytes)  
+	-	`sha256:8b1edeb27aee9418beff3fc95c1fea53ed3381f8b4e44193b5888df5efec4bbc`  
+		Last Modified: Thu, 01 Feb 2024 01:07:23 GMT  
+		Size: 9.5 MB (9479944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80a341745aa6980bcb8273bb506259faafaae34baaeb43ede939080ef3ef7dac`  
-		Last Modified: Thu, 11 Jan 2024 05:43:39 GMT  
-		Size: 853.0 B  
+	-	`sha256:a25e4a6a5db73b31880fff3d710874defaec6bcd2b9f853d614d194d22495050`  
+		Last Modified: Thu, 01 Feb 2024 01:07:22 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c08a1cc912c68c8114a14e7447c1aaf0a43f16715d083b6d12cbf5f13d0ba7cd`  
-		Last Modified: Thu, 11 Jan 2024 05:43:39 GMT  
-		Size: 358.0 B  
+	-	`sha256:c36189f89a734c47bb1dfdeab667cd4d9c900afdfc7b0193a876de77d49e7e3c`  
+		Last Modified: Thu, 01 Feb 2024 01:07:23 GMT  
+		Size: 357.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e965e2157aec94d6682e8bc86044a06d8953d5b0383d65dde32b479e08578876`  
-		Last Modified: Thu, 11 Jan 2024 05:43:39 GMT  
+	-	`sha256:1d1eeedba9c54a6ec60e5a07eed7d27370a67074362ae0643b87cec9ba9f93c6`  
+		Last Modified: Thu, 01 Feb 2024 01:07:22 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.9.6-amazoncorretto-8-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:573a18c81db8f02a3a90b529644b5425e63213d1f065b04b5282539f06ed762f
+$ docker pull maven@sha256:d4a869c5eb95a4f8d8d679da701fce1e8e8855d8431c179f0af86869ec53b96e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.4 MB (144403736 bytes)**  
+-	Total Size: **144.4 MB (144431458 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b76cad15e45a954fa4a4ae0fad3a96ea2139f11c73e922d2973d4d04107b28a`
+-	Image ID: `sha256:15e9be9315fb5fedde660c41250bd35aad9ad144e9ea87c8b26b97f4c11f556e`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:40:44 GMT
-ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
-# Thu, 11 Jan 2024 02:40:45 GMT
+# Wed, 31 Jan 2024 22:44:26 GMT
+ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+# Wed, 31 Jan 2024 22:44:27 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -24711,35 +24711,35 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
-		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
-		Size: 29.2 MB (29157335 bytes)  
+	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
+		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
+		Size: 29.2 MB (29180832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0ff01baf921077a91ed3395450664af3fd70d1745ec7b3b34aef81c4d4d1eb9`  
-		Last Modified: Thu, 11 Jan 2024 06:21:21 GMT  
-		Size: 105.8 MB (105765082 bytes)  
+	-	`sha256:88f701d17ad0f7861266c18af5772782bf195da9e679d0f64b17f1f06e83e5fd`  
+		Last Modified: Thu, 01 Feb 2024 01:31:16 GMT  
+		Size: 105.8 MB (105769295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b7b7b09709d8d5719cbdd9b2ead7c49a6dd335c093dd1aac1d6624528a19817`  
-		Last Modified: Thu, 11 Jan 2024 06:21:15 GMT  
-		Size: 9.5 MB (9479941 bytes)  
+	-	`sha256:4825df74514e9970f8ceee33fdb74e811d2a7d82f15f89fc524330b02cc07a37`  
+		Last Modified: Thu, 01 Feb 2024 01:31:09 GMT  
+		Size: 9.5 MB (9479953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89c48ecc4f361d439b559ad5e5ea45dcd5750ca26e02ad5551a809e4b160f587`  
-		Last Modified: Thu, 11 Jan 2024 06:21:14 GMT  
-		Size: 853.0 B  
+	-	`sha256:530c234fc3fb3d10f05a5f16b16f1660384bfc90f6a19af905e5456b3ea1d1b6`  
+		Last Modified: Thu, 01 Feb 2024 01:31:08 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0bf24356e0d01903f6bc156da16ff10a3508dd7b4b60101215c8d76e68da4772`  
-		Last Modified: Thu, 11 Jan 2024 06:21:14 GMT  
-		Size: 360.0 B  
+	-	`sha256:6a36137cea47710db14d0fa0c7014e5f375950641c538c416540156b523c311a`  
+		Last Modified: Thu, 01 Feb 2024 01:31:08 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0053ffbab0a7118462b1fe39700807228b924c2ae7cde1d48793774c626702ea`  
-		Last Modified: Thu, 11 Jan 2024 06:21:14 GMT  
-		Size: 165.0 B  
+	-	`sha256:028f77877352da8c8c70dc9b2057c47d5f6ccbdff7f4d6bc22ba45464a4856e3`  
+		Last Modified: Thu, 01 Feb 2024 01:31:08 GMT  
+		Size: 166.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `maven:3.9.6-amazoncorretto-8-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:b66f6496a3446c2122b4497395ad7915b3e98074ee2ff76ca47a0262c4cdf83f
+$ docker pull maven@sha256:23fec81ade7d85b059832322e7ed296dd52ab17a7f312b2380ec9c9b0e00fe9f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -24750,20 +24750,20 @@ $ docker pull maven@sha256:b66f6496a3446c2122b4497395ad7915b3e98074ee2ff76ca47a0
 ### `maven:3.9.6-amazoncorretto-8-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:aab2db59604c31251397359d09af5acadd978d91012141868d056ccf9150be8d
+$ docker pull maven@sha256:4aa47853ce61c650c0625d81b773119279a39380cb5d94f81e70710043226110
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.5 MB (160548319 bytes)**  
+-	Total Size: **160.6 MB (160573705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5baed65e66206a5f08f175da3046c3ae115c8f2e6b995d6934aeb2917014e49a`
+-	Image ID: `sha256:5e7eb727bb98421887202c25e972afb606379e598618b958d112a933af271971`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:37:54 GMT
-ADD file:9deb26e1dbc258df47629e6f8fbcea4e4b54e7673537cc925db16af858d9cc8d in / 
-# Thu, 11 Jan 2024 02:37:54 GMT
+# Wed, 31 Jan 2024 22:35:18 GMT
+ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
+# Wed, 31 Jan 2024 22:35:18 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -24790,48 +24790,48 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1`  
-		Last Modified: Thu, 11 Jan 2024 02:42:28 GMT  
-		Size: 29.1 MB (29125921 bytes)  
+	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
+		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
+		Size: 29.2 MB (29150465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03edbb31ad8158f678c28701b4ac61e6f64e0e41051b5b59a18706d92c6c2bf3`  
-		Last Modified: Thu, 11 Jan 2024 05:43:48 GMT  
-		Size: 121.9 MB (121941075 bytes)  
+	-	`sha256:d7faf0324c620b507578dab0c6f15fddff7b56f3bfa5e69990f89dba4a0bf5c7`  
+		Last Modified: Thu, 01 Feb 2024 01:07:31 GMT  
+		Size: 121.9 MB (121941921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fcb74b20a634243854afd95725cd286307b08f5e02768fa09275055f328a514`  
-		Last Modified: Thu, 11 Jan 2024 05:43:40 GMT  
-		Size: 9.5 MB (9479948 bytes)  
+	-	`sha256:8b1edeb27aee9418beff3fc95c1fea53ed3381f8b4e44193b5888df5efec4bbc`  
+		Last Modified: Thu, 01 Feb 2024 01:07:23 GMT  
+		Size: 9.5 MB (9479944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80a341745aa6980bcb8273bb506259faafaae34baaeb43ede939080ef3ef7dac`  
-		Last Modified: Thu, 11 Jan 2024 05:43:39 GMT  
-		Size: 853.0 B  
+	-	`sha256:a25e4a6a5db73b31880fff3d710874defaec6bcd2b9f853d614d194d22495050`  
+		Last Modified: Thu, 01 Feb 2024 01:07:22 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c08a1cc912c68c8114a14e7447c1aaf0a43f16715d083b6d12cbf5f13d0ba7cd`  
-		Last Modified: Thu, 11 Jan 2024 05:43:39 GMT  
-		Size: 358.0 B  
+	-	`sha256:c36189f89a734c47bb1dfdeab667cd4d9c900afdfc7b0193a876de77d49e7e3c`  
+		Last Modified: Thu, 01 Feb 2024 01:07:23 GMT  
+		Size: 357.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e965e2157aec94d6682e8bc86044a06d8953d5b0383d65dde32b479e08578876`  
-		Last Modified: Thu, 11 Jan 2024 05:43:39 GMT  
+	-	`sha256:1d1eeedba9c54a6ec60e5a07eed7d27370a67074362ae0643b87cec9ba9f93c6`  
+		Last Modified: Thu, 01 Feb 2024 01:07:22 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.9.6-amazoncorretto-8-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:573a18c81db8f02a3a90b529644b5425e63213d1f065b04b5282539f06ed762f
+$ docker pull maven@sha256:d4a869c5eb95a4f8d8d679da701fce1e8e8855d8431c179f0af86869ec53b96e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.4 MB (144403736 bytes)**  
+-	Total Size: **144.4 MB (144431458 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b76cad15e45a954fa4a4ae0fad3a96ea2139f11c73e922d2973d4d04107b28a`
+-	Image ID: `sha256:15e9be9315fb5fedde660c41250bd35aad9ad144e9ea87c8b26b97f4c11f556e`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 02:40:44 GMT
-ADD file:70e4f0c71f88c97c8db279b998c10d4943954d304ff9f51875c3699a4dc5ee4e in / 
-# Thu, 11 Jan 2024 02:40:45 GMT
+# Wed, 31 Jan 2024 22:44:26 GMT
+ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+# Wed, 31 Jan 2024 22:44:27 GMT
 CMD ["bash"]
 # Mon, 11 Dec 2023 11:12:11 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -24858,29 +24858,29 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a5573528b1f0cf2f5d87c94fe0aee9d8967d5de98258be9303c3c6fa477824ec`  
-		Last Modified: Thu, 11 Jan 2024 02:44:04 GMT  
-		Size: 29.2 MB (29157335 bytes)  
+	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
+		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
+		Size: 29.2 MB (29180832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0ff01baf921077a91ed3395450664af3fd70d1745ec7b3b34aef81c4d4d1eb9`  
-		Last Modified: Thu, 11 Jan 2024 06:21:21 GMT  
-		Size: 105.8 MB (105765082 bytes)  
+	-	`sha256:88f701d17ad0f7861266c18af5772782bf195da9e679d0f64b17f1f06e83e5fd`  
+		Last Modified: Thu, 01 Feb 2024 01:31:16 GMT  
+		Size: 105.8 MB (105769295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b7b7b09709d8d5719cbdd9b2ead7c49a6dd335c093dd1aac1d6624528a19817`  
-		Last Modified: Thu, 11 Jan 2024 06:21:15 GMT  
-		Size: 9.5 MB (9479941 bytes)  
+	-	`sha256:4825df74514e9970f8ceee33fdb74e811d2a7d82f15f89fc524330b02cc07a37`  
+		Last Modified: Thu, 01 Feb 2024 01:31:09 GMT  
+		Size: 9.5 MB (9479953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89c48ecc4f361d439b559ad5e5ea45dcd5750ca26e02ad5551a809e4b160f587`  
-		Last Modified: Thu, 11 Jan 2024 06:21:14 GMT  
-		Size: 853.0 B  
+	-	`sha256:530c234fc3fb3d10f05a5f16b16f1660384bfc90f6a19af905e5456b3ea1d1b6`  
+		Last Modified: Thu, 01 Feb 2024 01:31:08 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0bf24356e0d01903f6bc156da16ff10a3508dd7b4b60101215c8d76e68da4772`  
-		Last Modified: Thu, 11 Jan 2024 06:21:14 GMT  
-		Size: 360.0 B  
+	-	`sha256:6a36137cea47710db14d0fa0c7014e5f375950641c538c416540156b523c311a`  
+		Last Modified: Thu, 01 Feb 2024 01:31:08 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0053ffbab0a7118462b1fe39700807228b924c2ae7cde1d48793774c626702ea`  
-		Last Modified: Thu, 11 Jan 2024 06:21:14 GMT  
-		Size: 165.0 B  
+	-	`sha256:028f77877352da8c8c70dc9b2057c47d5f6ccbdff7f4d6bc22ba45464a4856e3`  
+		Last Modified: Thu, 01 Feb 2024 01:31:08 GMT  
+		Size: 166.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `maven:3.9.6-eclipse-temurin`
