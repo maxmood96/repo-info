@@ -1,4 +1,4 @@
-## `debian:experimental`
+## `debian:experimental-20240130`
 
 ```console
 $ docker pull debian@sha256:4fc25a9afb88f84c9fccf71ed0ca1fdecf684ed38645825adb08fe66d6536266
@@ -16,7 +16,7 @@ $ docker pull debian@sha256:4fc25a9afb88f84c9fccf71ed0ca1fdecf684ed38645825adb08
 	-	linux; riscv64
 	-	linux; s390x
 
-### `debian:experimental` - linux; amd64
+### `debian:experimental-20240130` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:c7d8f3488ecd79e6b01b8f18466a757cdf6be2682c12fe9b562a7eaca7f4316e
@@ -48,7 +48,7 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 		Size: 220.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:experimental` - linux; arm variant v5
+### `debian:experimental-20240130` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:c7b49375c5a02038a4741c50ba2ac361666aeb2e19411ba27c6f0e966c542c87
@@ -80,7 +80,7 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 		Size: 221.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:experimental` - linux; arm variant v7
+### `debian:experimental-20240130` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:57612fe4aa4c91a146134260ca8d6ded2acd18984c465629a1dd932f52a77bba
@@ -112,7 +112,7 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 		Size: 219.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:experimental` - linux; arm64 variant v8
+### `debian:experimental-20240130` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:ce2fd6a6183f8f524798b6ecd3084f59eea0b86b660281027214dcf050070fd9
@@ -144,7 +144,7 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 		Size: 221.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:experimental` - linux; 386
+### `debian:experimental-20240130` - linux; 386
 
 ```console
 $ docker pull debian@sha256:0b312caec07fda6f307464c31af1fff21d65ba232322aab98347ae771c18d520
@@ -176,7 +176,7 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 		Size: 221.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:experimental` - linux; mips64le
+### `debian:experimental-20240130` - linux; mips64le
 
 ```console
 $ docker pull debian@sha256:27e3d0c256fa500b829a44e75abef825a06e44abc352d635715fad37f66932b2
@@ -208,7 +208,7 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 		Size: 222.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:experimental` - linux; ppc64le
+### `debian:experimental-20240130` - linux; ppc64le
 
 ```console
 $ docker pull debian@sha256:be8e0fa1a8572906af3ac6d074f777a85647046e815b157b4ac48ed2aa4046c9
@@ -240,7 +240,7 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 		Size: 221.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:experimental` - linux; riscv64
+### `debian:experimental-20240130` - linux; riscv64
 
 ```console
 $ docker pull debian@sha256:47f6109f7d8a2ab5898c981073f4d57d1db29a43c119a5d33bb4d401ed97ab27
@@ -272,7 +272,7 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:experimental` - linux; s390x
+### `debian:experimental-20240130` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:c3ff2bf13d7a8a609194dce2eb9594ff1c8b941885caf0773468f2b9c9376276
