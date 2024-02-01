@@ -1,10 +1,10 @@
-# `clojure:lein-2.10.0-bullseye`
+# `clojure:lein-2.11.1-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5756c676d4992dae920ebe4897c8da03e9674ad8f206f3f15e5434db2829703e`
-- Created: `2024-01-24T22:26:31.038578616Z`
-- Virtual Size: ~ 455.37 Mb  
+- Image ID: `sha256:e8572dcda65f722f16f64272527e2375beb2cd6159ce581ce6e5168789947ae6`
+- Created: `2024-02-01T00:00:35.652923625Z`
+- Virtual Size: ~ 459.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `LEIN_VERSION=2.10.0`
+  - `LEIN_VERSION=2.11.1`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
 

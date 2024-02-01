@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0468bd3f860036bde4e582e752882c01bdaddf2d683842b04db046e58083e987`
-- Created: `2024-01-25T22:25:58.60651899Z`
-- Virtual Size: ~ 426.34 Mb  
+- Image ID: `sha256:7c5c839c9e314fea9176e8120a3540049974d45d6a603f6e7d404238e7bc9c37`
+- Created: `2024-01-29T19:45:55.273963512Z`
+- Virtual Size: ~ 430.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.10+7`
-  - `LEIN_VERSION=2.10.0`
+  - `LEIN_VERSION=2.11.1`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
 - Labels:
@@ -1491,14 +1491,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.5.16+dfsg-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.16%2bdfsg-0ubuntu0.22.04.1.dsc' openldap_2.5.16+dfsg-0ubuntu0.22.04.1.dsc 3319 SHA512:d1041b2c938fca2cf6ed0518057d2f724b3e24bf0f3e29c5b4420f1925b80eb3f4aa8393b3aa0eae275d1990c53fb718b88e982721aacda361c2517fdfd7f0e6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.16%2bdfsg.orig.tar.gz' openldap_2.5.16+dfsg.orig.tar.gz 5608943 SHA512:0e3a208773e1ee1bd307594e55c3d4fdc6a9dddd517f6d433e89c4064a9d796a37ad49e106de803217fdac58221d56fa568dc269c185fb40650647e4024fcc98
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.16%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.16+dfsg-0ubuntu0.22.04.1.debian.tar.xz 171800 SHA512:18b60cf943512a8e2d726c9cd1114a3637d46efc928f4a1f241da11eeaf6c859d5f7402c0888a81da425386543d9a2eaac8a9e8c768cfa24b2c605aa88fb01db
-```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.12`
 
