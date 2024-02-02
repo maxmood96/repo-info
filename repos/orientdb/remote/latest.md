@@ -1,7 +1,7 @@
 ## `orientdb:latest`
 
 ```console
-$ docker pull orientdb@sha256:3fe87d083384a0cd75930474e668fc3402e00af9385b6afa6a153a2ba60891c7
+$ docker pull orientdb@sha256:d2b6c5d838821a36a5070d948feddd2526ac142502303baeca0c597c2f567f77
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,106 +13,106 @@ $ docker pull orientdb@sha256:3fe87d083384a0cd75930474e668fc3402e00af9385b6afa6a
 ### `orientdb:latest` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:a08b32119eb5b8c7becaeed9de419205a438321305ab828fff46a10ed60b0813
+$ docker pull orientdb@sha256:72ace32766c923d890bed1c56e2f774c0f5772b15133b091fb1a4736a0e3f257
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **211.0 MB (210960018 bytes)**  
+-	Total Size: **211.0 MB (210960851 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0d09dc39bca9dd52f2588b3725fe8994fa117c17872eee584d7bff4e439ad8e`
+-	Image ID: `sha256:16bc8d7bae2eabfa5996ce3ceea6047a8547d5cbd73daac5694c2b02c89ea47f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 17:08:09 GMT
+# Thu, 25 Jan 2024 17:54:38 GMT
 ARG RELEASE
-# Thu, 11 Jan 2024 17:08:09 GMT
+# Thu, 25 Jan 2024 17:54:38 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 11 Jan 2024 17:08:09 GMT
+# Thu, 25 Jan 2024 17:54:38 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 11 Jan 2024 17:08:09 GMT
+# Thu, 25 Jan 2024 17:54:38 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 11 Jan 2024 17:08:11 GMT
-ADD file:c646150c866c8b5ece67bc79c610718acf858034fa22502b0dba3d38c53fc9a9 in / 
-# Thu, 11 Jan 2024 17:08:11 GMT
+# Thu, 25 Jan 2024 17:54:40 GMT
+ADD file:99224b1f237763b3053ca27ea5641f9a801c21154c7ccbff2c099654cc6db942 in / 
+# Thu, 25 Jan 2024 17:54:41 GMT
 CMD ["/bin/bash"]
-# Wed, 17 Jan 2024 07:14:20 GMT
+# Fri, 02 Feb 2024 07:42:24 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 17 Jan 2024 07:14:20 GMT
+# Fri, 02 Feb 2024 07:42:24 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 17 Jan 2024 07:14:20 GMT
+# Fri, 02 Feb 2024 07:42:24 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 17 Jan 2024 07:14:56 GMT
+# Fri, 02 Feb 2024 07:42:37 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/*
-# Wed, 24 Jan 2024 20:31:27 GMT
+# Fri, 02 Feb 2024 07:42:37 GMT
 ENV JAVA_VERSION=jdk8u402-b06
-# Wed, 24 Jan 2024 20:31:32 GMT
+# Fri, 02 Feb 2024 07:42:42 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='241a72d6f0051de30c71e7ade95b34cd85a249c8e5925bcc7a95872bee81fd84';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u402b06.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='fcfd08abe39f18e719e391f2fc37b8ac1053075426d10efac4cbf8969e7aa55e';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u402b06.tar.gz';          ;;        armhf|arm)          ESUM='271f28c7b3592b201b7434292c21d923f520af8ff1c090b6849cb946e34a6bdb';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u402b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='64bc05cdffe827c84000177dca2eb4ff0a8ff0021889bb75abff3639d4f51838';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;
-# Wed, 24 Jan 2024 20:31:33 GMT
+# Fri, 02 Feb 2024 07:42:43 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete."
-# Thu, 25 Jan 2024 19:31:47 GMT
+# Fri, 02 Feb 2024 07:42:43 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Thu, 25 Jan 2024 19:31:47 GMT
+# Fri, 02 Feb 2024 07:42:43 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 25 Jan 2024 21:05:03 GMT
+# Fri, 02 Feb 2024 18:05:15 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
-# Thu, 25 Jan 2024 21:05:03 GMT
+# Fri, 02 Feb 2024 18:05:15 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Thu, 25 Jan 2024 21:05:03 GMT
+# Fri, 02 Feb 2024 18:05:15 GMT
 ENV ORIENTDB_VERSION=3.2.26
-# Thu, 25 Jan 2024 21:05:03 GMT
+# Fri, 02 Feb 2024 18:05:15 GMT
 ENV ORIENTDB_DOWNLOAD_MD5=b90008923e8b228d62d9181499015cf9
-# Thu, 25 Jan 2024 21:05:04 GMT
+# Fri, 02 Feb 2024 18:05:16 GMT
 ENV ORIENTDB_DOWNLOAD_SHA1=e18a190249dca50b9cdeebdd1687037af0349b21
-# Thu, 25 Jan 2024 21:05:04 GMT
+# Fri, 02 Feb 2024 18:05:16 GMT
 ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.26/orientdb-community-3.2.26.tar.gz
-# Thu, 25 Jan 2024 21:05:13 GMT
+# Fri, 02 Feb 2024 18:05:20 GMT
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/*
-# Thu, 25 Jan 2024 21:05:17 GMT
+# Fri, 02 Feb 2024 18:05:23 GMT
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-community-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-community-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/*
-# Thu, 25 Jan 2024 21:05:17 GMT
+# Fri, 02 Feb 2024 18:05:24 GMT
 ENV PATH=/orientdb/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 21:05:17 GMT
+# Fri, 02 Feb 2024 18:05:24 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Thu, 25 Jan 2024 21:05:17 GMT
+# Fri, 02 Feb 2024 18:05:24 GMT
 WORKDIR /orientdb
-# Thu, 25 Jan 2024 21:05:17 GMT
+# Fri, 02 Feb 2024 18:05:24 GMT
 EXPOSE 2424
-# Thu, 25 Jan 2024 21:05:17 GMT
+# Fri, 02 Feb 2024 18:05:24 GMT
 EXPOSE 2480
-# Thu, 25 Jan 2024 21:05:17 GMT
+# Fri, 02 Feb 2024 18:05:24 GMT
 CMD ["server.sh"]
 ```
 
 -	Layers:
-	-	`sha256:df2fac849a4581b035132d99e203fd83dc65590ea565435a266cb0e14a508838`  
-		Last Modified: Thu, 11 Jan 2024 22:28:44 GMT  
-		Size: 30.4 MB (30447114 bytes)  
+	-	`sha256:31bd5f451a847d651a0996256753a9b22a6ea8c65fefb010e77ea9c839fe2fac`  
+		Last Modified: Thu, 25 Jan 2024 22:24:23 GMT  
+		Size: 30.4 MB (30447882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34e4f12b52933eaf22480862af2278c73cca667e35d95f7c2fa7d5b1e66cdc58`  
-		Last Modified: Wed, 17 Jan 2024 07:19:01 GMT  
-		Size: 12.9 MB (12906285 bytes)  
+	-	`sha256:32b311b806c85db4346e8b1835111a4685f302d3b9df8c823b84513d5a390fa9`  
+		Last Modified: Fri, 02 Feb 2024 07:47:37 GMT  
+		Size: 12.9 MB (12906315 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30e12591c641c85d00ffb3e6208d34048553ac7e681484af700b24f91fa6fc56`  
-		Last Modified: Wed, 24 Jan 2024 20:40:32 GMT  
-		Size: 103.6 MB (103601233 bytes)  
+	-	`sha256:aeca6a207a8e7a80be1d2a50f72153f172df979e0303a07bebcf4d227f52008c`  
+		Last Modified: Fri, 02 Feb 2024 07:47:43 GMT  
+		Size: 103.6 MB (103601294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b216b6db93deaad39843c7c28735454357a9cd9319789ad47afae231e948e764`  
-		Last Modified: Wed, 24 Jan 2024 20:40:23 GMT  
-		Size: 160.0 B  
+	-	`sha256:826877f016d85e74d96235667bffee85ae6367c4a6557ebb624fa4763b8c5700`  
+		Last Modified: Fri, 02 Feb 2024 07:47:35 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a16bf2af9a85dde0ba7acd23ed8e5166790981ca877d9c3f61e2663fe2258110`  
-		Last Modified: Thu, 25 Jan 2024 19:34:24 GMT  
+	-	`sha256:c77c5b1038cba6c10d34b66fbe72283aae2bc733387e95b98ea685ba9643ab1c`  
+		Last Modified: Fri, 02 Feb 2024 07:47:34 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfa4c4f68c6e35e3aeba758316258528e11315cff5f4e6c953e6327f55acf07e`  
-		Last Modified: Thu, 25 Jan 2024 21:06:55 GMT  
-		Size: 352.0 B  
+	-	`sha256:f94dc12f2a331ba1c98de6e05d4195fa2d8648e7e0b92a0c14b48e50a842cb8e`  
+		Last Modified: Fri, 02 Feb 2024 18:07:07 GMT  
+		Size: 354.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d70df86d6bccba3d1882d750713bd948443287ccdf79c89d0fe095983f485ea`  
-		Last Modified: Thu, 25 Jan 2024 21:06:58 GMT  
-		Size: 64.0 MB (64004140 bytes)  
+	-	`sha256:62f5d34b4ed6ef3ccc8538dd9183cb2413cfaf0aff6d3dd05ebd2a2ea5e019bb`  
+		Last Modified: Fri, 02 Feb 2024 18:07:11 GMT  
+		Size: 64.0 MB (64004110 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `orientdb:latest` - linux; arm variant v7
