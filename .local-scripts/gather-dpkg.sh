@@ -99,7 +99,7 @@ for src in "${sortedSources[@]}"; do
 			continue
 		fi
 		IFS=$'\n'
-		licenses+=( $(awk -F ':[ \t]+' '$1 == "License" && NF > 1 { gsub(/^License:[ \t]+/, ""); print }' "$f") )
+		licenses+=( $(gawk -F ':[ \t]+' '$1 == "License" && NF > 1 { gsub(/^License:[ \t]+/, ""); print }' "$f") )
 		licenses+=( $(grep -oE '/usr/share/common-licenses/[0-9a-zA-Z_.+-]+' "$f" | cut -d/ -f5-) )
 		unset IFS
 		licenseFiles+=( "$f" )
