@@ -1,7 +1,7 @@
 ## `storm:latest`
 
 ```console
-$ docker pull storm@sha256:b6a9d1c8e67bdb417db5a5aa314bc315c9cb3c2079cf1f82da25490c5f0f810a
+$ docker pull storm@sha256:36aa92a109dc581cb9238c575dc4c862ecff3648de24fae4a56651dfc227047b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -115,14 +115,14 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 ### `storm:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull storm@sha256:aa6496ef403de3b7b923e03540278170f94b9df93e744aef2285b07192c513fe
+$ docker pull storm@sha256:591b6d31f19e39c96cb397ca998ca13ee0148e56caba5f8d808bacfd8b03474e
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **547.4 MB (547422865 bytes)**  
+-	Total Size: **560.5 MB (560458841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a652cf09b31c38e60d7838c805d6ad1d1aa00082b6a77e1103ebb90595b9b835`
+-	Image ID: `sha256:7bbb5c3564495ad6f2fcb7bad83cf5b71c7b6d0ab96086236831f309f2b0c470`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -162,18 +162,18 @@ ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
 RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
 # Fri, 02 Feb 2024 08:48:49 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python3         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Fri, 02 Feb 2024 08:48:49 GMT
-ARG DISTRO_NAME=apache-storm-2.6.0
-# Fri, 02 Feb 2024 08:49:29 GMT
-# ARGS: DISTRO_NAME=apache-storm-2.6.0
-RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     importKeys() {       for key in       5167DE337E7370373499FC1DA4A672F11B5050C8       32C8C0BEE3D01AF46B6E24B0AC30BFA8FEF0711F       79B03D059E628478FC9F1D8B152CAD0C46E87B61       51379DA8A7AE5B02674EF15C134716AF768D9B6E       DA903F2CF9BBD42EAECFA9E45EA6FAEF09A4474D       6156BAC0C21A1991CF1B690AB2973D6F4A67943A       B83D15E72253ED1104EB4FBBDAB472F0E5B8A431       ; do         gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys "$key" ||         gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||         gpg --batch --keyserver hkps://pgp.mit.edu --recv-keys "$key" ||         gpg --batch --keyserver hkps://keyserver.pgp.com --recv-keys "$key" ;       done;     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     importKeys;     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
-# Fri, 02 Feb 2024 08:49:32 GMT
-WORKDIR /apache-storm-2.6.0
-# Fri, 02 Feb 2024 08:49:32 GMT
-ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-2.6.0/bin
-# Fri, 02 Feb 2024 08:49:32 GMT
+# Fri, 02 Feb 2024 20:19:33 GMT
+ARG DISTRO_NAME=apache-storm-2.6.1
+# Fri, 02 Feb 2024 20:20:31 GMT
+# ARGS: DISTRO_NAME=apache-storm-2.6.1
+RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     importKeys() {       for key in       5167DE337E7370373499FC1DA4A672F11B5050C8       32C8C0BEE3D01AF46B6E24B0AC30BFA8FEF0711F       79B03D059E628478FC9F1D8B152CAD0C46E87B61       51379DA8A7AE5B02674EF15C134716AF768D9B6E       DA903F2CF9BBD42EAECFA9E45EA6FAEF09A4474D       6156BAC0C21A1991CF1B690AB2973D6F4A67943A       B83D15E72253ED1104EB4FBBDAB472F0E5B8A431       339F3B2F72129ABCA81D96DA91EA7956A2DAD9CE       ; do         gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys "$key" ||         gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||         gpg --batch --keyserver hkps://pgp.mit.edu --recv-keys "$key" ||         gpg --batch --keyserver hkps://keyserver.pgp.com --recv-keys "$key" ;       done;     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     importKeys;     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
+# Fri, 02 Feb 2024 20:20:34 GMT
+WORKDIR /apache-storm-2.6.1
+# Fri, 02 Feb 2024 20:20:34 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-2.6.1/bin
+# Fri, 02 Feb 2024 20:20:34 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Fri, 02 Feb 2024 08:49:32 GMT
+# Fri, 02 Feb 2024 20:20:34 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -206,11 +206,11 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Fri, 02 Feb 2024 08:49:47 GMT  
 		Size: 13.6 MB (13580279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fc9a683aaaf30dddb9146edf3087c4a0d179cd7ad79638fd60fe9f6f5f0ee37`  
-		Last Modified: Fri, 02 Feb 2024 08:50:00 GMT  
-		Size: 447.2 MB (447192133 bytes)  
+	-	`sha256:9ccbd0f5ea5f999bd2a2931295098dd9fddea11350e33673d12d7d23be874840`  
+		Last Modified: Fri, 02 Feb 2024 20:21:04 GMT  
+		Size: 460.2 MB (460228109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b06fb8911f05bb77066bd6a06e11670bc272cfd71fbf14d03b32f8b14e2129c`  
-		Last Modified: Fri, 02 Feb 2024 08:49:44 GMT  
+	-	`sha256:de2717ce0e40da1a2ce972d9b07915b359148819e6aa13c9a790a34ba3389784`  
+		Last Modified: Fri, 02 Feb 2024 20:20:49 GMT  
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
