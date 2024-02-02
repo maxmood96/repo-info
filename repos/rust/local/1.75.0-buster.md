@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a21d339c937dabb52c8ebcd30a166e5efd5640ac825786886c38841752d7d58b`
+- Image ID: `sha256:cef1cd31f719a7f5a6cdc53e3b882aaffa7acd996da9bbe3710d11c85e98bb50`
 - Created: `2023-12-28T16:30:38Z`
 - Virtual Size: ~ 1.32 Gb  
   (total size of all layers on-disk)
@@ -3621,14 +3621,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/make-dfsg/4.2.1-1.2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/make-dfsg/4.2.1-1.2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mariadb-10.3=1:10.3.39-0+deb10u1`
+### `dpkg` source package: `mariadb-10.3=1:10.3.39-0+deb10u2`
 
 Binary Packages:
 
-- `libmariadb-dev=1:10.3.39-0+deb10u1`
-- `libmariadb-dev-compat:amd64=1:10.3.39-0+deb10u1`
-- `libmariadb3:amd64=1:10.3.39-0+deb10u1`
-- `mariadb-common=1:10.3.39-0+deb10u1`
+- `libmariadb-dev=1:10.3.39-0+deb10u2`
+- `libmariadb-dev-compat:amd64=1:10.3.39-0+deb10u2`
+- `libmariadb3:amd64=1:10.3.39-0+deb10u2`
+- `mariadb-common=1:10.3.39-0+deb10u2`
 
 Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/doc/libmariadb-dev-compat/copyright`, `/usr/share/doc/libmariadb3/copyright`, `/usr/share/doc/mariadb-common/copyright`)
 
@@ -3652,13 +3652,21 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris mariadb-10.3=1:10.3.39-0+deb10u2
+'http://deb.debian.org/debian-security/pool/updates/main/m/mariadb-10.3/mariadb-10.3_10.3.39-0%2bdeb10u2.dsc' mariadb-10.3_10.3.39-0+deb10u2.dsc 4837 SHA256:15608bb4fc9babf80fb19d57dfb51cb179e41c5e9909dd17ea78406e1e0b78aa
+'http://deb.debian.org/debian-security/pool/updates/main/m/mariadb-10.3/mariadb-10.3_10.3.39.orig.tar.gz' mariadb-10.3_10.3.39.orig.tar.gz 74469177 SHA256:18bd51c847565af4da18748b052ab9bcbb569ab6e6766ca8da7dcca1f941f876
+'http://deb.debian.org/debian-security/pool/updates/main/m/mariadb-10.3/mariadb-10.3_10.3.39.orig.tar.gz.asc' mariadb-10.3_10.3.39.orig.tar.gz.asc 833 SHA256:c7ae557f5d41c280da680be37e554c49d0512a28bda695cace61eab14ebe01d5
+'http://deb.debian.org/debian-security/pool/updates/main/m/mariadb-10.3/mariadb-10.3_10.3.39-0%2bdeb10u2.debian.tar.xz' mariadb-10.3_10.3.39-0+deb10u2.debian.tar.xz 232160 SHA256:9e5f474c25942d353ef4e1fe1de088ea7491673cb81e995d1fa6b5fd72ab28c8
+```
 
-- http://snapshot.debian.org/package/mariadb-10.3/1:10.3.39-0+deb10u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/mariadb-10.3/1:10.3.39-0+deb10u2/ (for browsing the source)
+- https://sources.debian.net/src/mariadb-10.3/1:10.3.39-0+deb10u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mariadb-10.3/1:10.3.39-0+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
