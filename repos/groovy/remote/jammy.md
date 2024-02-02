@@ -1,7 +1,7 @@
 ## `groovy:jammy`
 
 ```console
-$ docker pull groovy@sha256:7c0cd66b35c0902db9fab7d0d5f3f0f0efd6d480b8caf8381e01e79fb086b1db
+$ docker pull groovy@sha256:68d73b0db87e2bdd21e5ccaa9eb30c5d5afa8421cd810281820e5a9a221320b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -122,107 +122,107 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ### `groovy:jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:e0b0fb30b23f370dca66b0c3f53d047e9e96236f7c0c990a2a466e48e563fdcc
+$ docker pull groovy@sha256:b4b387076ac2ded6e52353dedb47fc60a5416a3520a82f93d454ab1f1e699fd8
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.1 MB (221146386 bytes)**  
+-	Total Size: **221.1 MB (221144070 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5a2892be3a44f1f537b82b21d665f61c727e16367e8e03835b0eaa51d924153b`
+-	Image ID: `sha256:d9a173de20a3dfe5eea9b8a46ab9ceb4415d38d90354ddc1fce142ca0b6ede05`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 17:30:37 GMT
+# Thu, 25 Jan 2024 17:56:53 GMT
 ARG RELEASE
-# Thu, 11 Jan 2024 17:30:37 GMT
+# Thu, 25 Jan 2024 17:56:53 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 11 Jan 2024 17:30:37 GMT
+# Thu, 25 Jan 2024 17:56:53 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 11 Jan 2024 17:30:37 GMT
+# Thu, 25 Jan 2024 17:56:53 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 11 Jan 2024 17:30:39 GMT
-ADD file:7c2f93ce47dedf9ba449bf11d41e9930af9fa209725f5772dc09f8c8100b5626 in / 
-# Thu, 11 Jan 2024 17:30:40 GMT
+# Thu, 25 Jan 2024 17:57:00 GMT
+ADD file:4ba96538a312573f561a65d64c11d4fdcdd435be02139f66ef9f44c4fd9507cd in / 
+# Thu, 25 Jan 2024 17:57:00 GMT
 CMD ["/bin/bash"]
-# Wed, 17 Jan 2024 09:39:35 GMT
+# Thu, 01 Feb 2024 23:40:39 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 17 Jan 2024 09:39:35 GMT
+# Thu, 01 Feb 2024 23:40:39 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 17 Jan 2024 09:39:35 GMT
+# Thu, 01 Feb 2024 23:40:39 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 17 Jan 2024 09:41:53 GMT
+# Thu, 01 Feb 2024 23:43:49 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/*
-# Wed, 24 Jan 2024 21:12:44 GMT
+# Thu, 01 Feb 2024 23:43:49 GMT
 ENV JAVA_VERSION=jdk-17.0.10+7
-# Wed, 24 Jan 2024 21:12:54 GMT
+# Thu, 01 Feb 2024 23:43:59 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='6e4201abfb3b020c1fb899b7ac063083c271250bf081f3aa7e63d91291a90b74';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.10_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='a8fd07e1e97352e97e330beb20f1c6b351ba064ca7878e974c7d68b8a5c1b378';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.10_7.tar.gz';          ;;        armhf|arm)          ESUM='9bb8ccb9993f85d07ca3d834354ce426857793262bea8dab861b0aebb152d89c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.10_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='f5fc5c9273b722ad73241a5e84feb4eba21697a57ba718dd16cfbddda45a6a4b';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.10_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='691f625edd425022500eea3b41ec6137fa078dab15632fda42de04f804079774';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Wed, 24 Jan 2024 21:12:57 GMT
+# Thu, 01 Feb 2024 23:44:02 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Thu, 25 Jan 2024 20:17:56 GMT
+# Thu, 01 Feb 2024 23:44:02 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Thu, 25 Jan 2024 20:17:56 GMT
+# Thu, 01 Feb 2024 23:44:02 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 25 Jan 2024 20:17:56 GMT
+# Thu, 01 Feb 2024 23:44:02 GMT
 CMD ["jshell"]
-# Thu, 25 Jan 2024 21:13:34 GMT
+# Fri, 02 Feb 2024 01:26:04 GMT
 CMD ["groovysh"]
-# Thu, 25 Jan 2024 21:13:35 GMT
+# Fri, 02 Feb 2024 01:26:04 GMT
 ENV GROOVY_HOME=/opt/groovy
-# Thu, 25 Jan 2024 21:13:37 GMT
+# Fri, 02 Feb 2024 01:26:05 GMT
 RUN set -o errexit -o nounset     && echo "Adding groovy user and group"     && groupadd --system --gid 1000 groovy     && useradd --system --gid groovy --uid 1000 --shell /bin/bash --create-home groovy     && mkdir --parents /home/groovy/.groovy/grapes     && chown --recursive groovy:groovy /home/groovy     && chmod --recursive 1777 /home/groovy         && echo "Symlinking root .groovy to groovy .groovy"     && ln --symbolic /home/groovy/.groovy /root/.groovy
-# Thu, 25 Jan 2024 21:13:38 GMT
+# Fri, 02 Feb 2024 01:26:05 GMT
 VOLUME [/home/groovy/.groovy/grapes]
-# Thu, 25 Jan 2024 21:13:38 GMT
+# Fri, 02 Feb 2024 01:26:05 GMT
 WORKDIR /home/groovy
-# Thu, 25 Jan 2024 21:13:49 GMT
+# Fri, 02 Feb 2024 01:26:11 GMT
 RUN apt-get update     && echo "Installing build dependencies"     && apt-get install --yes --no-install-recommends         dirmngr         gnupg         unzip         wget     && rm --recursive --force /var/lib/apt/lists/*
-# Thu, 25 Jan 2024 21:13:49 GMT
+# Fri, 02 Feb 2024 01:26:11 GMT
 ENV GROOVY_VERSION=4.0.18
-# Thu, 25 Jan 2024 21:14:00 GMT
+# Fri, 02 Feb 2024 01:26:21 GMT
 RUN set -o errexit -o nounset     && echo "Downloading Groovy"     && wget --no-verbose --output-document=groovy.zip "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip"         && echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server"     && export GNUPGHOME="$(mktemp -d)"     && gpg --batch --no-tty --keyserver keyserver.ubuntu.com --recv-keys         7FAA0F2206DE228F0DB01AD741321490758AAD6F         331224E1D7BE883D16E8A685825C06C827AF6B66         34441E504A937F43EB0DAEF96A65176A0FB1CD0B         9A810E3B766E089FFB27C70F11B595CEDC4AEBB5         81CABC23EECA0790E8989B361FF96E10F0E13706         && echo "Checking download signature"     && wget --no-verbose --output-document=groovy.zip.asc "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc"     && gpg --batch --no-tty --verify groovy.zip.asc groovy.zip     && rm --recursive --force "${GNUPGHOME}"     && rm groovy.zip.asc         && echo "Installing Groovy"     && unzip groovy.zip     && rm groovy.zip     && mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/"     && ln --symbolic "${GROOVY_HOME}/bin/grape" /usr/bin/grape     && ln --symbolic "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy     && ln --symbolic "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc     && ln --symbolic "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole     && ln --symbolic "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc     && ln --symbolic "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh     && ln --symbolic "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy         && echo "Editing startGroovy to include java.xml.bind module"     && sed --in-place 's|startGroovy ( ) {|startGroovy ( ) {\n    JAVA_OPTS="$JAVA_OPTS --add-modules=ALL-SYSTEM"|' "${GROOVY_HOME}/bin/startGroovy"
-# Thu, 25 Jan 2024 21:14:01 GMT
+# Fri, 02 Feb 2024 01:26:21 GMT
 USER 1000:1000
-# Thu, 25 Jan 2024 21:14:05 GMT
+# Fri, 02 Feb 2024 01:26:23 GMT
 RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && groovy --version
 ```
 
 -	Layers:
-	-	`sha256:cea537175db3d13760d71d7a8baa0a5e82491345696d2da089429926cceccffe`  
-		Last Modified: Fri, 12 Jan 2024 04:33:34 GMT  
-		Size: 27.5 MB (27525460 bytes)  
+	-	`sha256:708d435a5d58f83439fc15ec09677faf51737e48d41a910750f0f6e9ef7285fe`  
+		Last Modified: Fri, 26 Jan 2024 09:13:01 GMT  
+		Size: 27.5 MB (27526382 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d718e61980ad7fa6f989d43c4a8b6ee393bd6940e24b4ac30785daa28ddee20c`  
-		Last Modified: Wed, 17 Jan 2024 09:44:51 GMT  
-		Size: 17.6 MB (17592266 bytes)  
+	-	`sha256:c9c06b8a18876a77d3871437218031ef7718974677f2d62467e5cf313b116f80`  
+		Last Modified: Thu, 01 Feb 2024 23:48:30 GMT  
+		Size: 17.6 MB (17590415 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b23ac073972d68f2bda586d7e141f8dd49af7ad7c45f4bcad222c928ae3bb4c`  
-		Last Modified: Wed, 24 Jan 2024 21:17:05 GMT  
-		Size: 142.3 MB (142338781 bytes)  
+	-	`sha256:c61d08e4a8ce8f4e0803ce86ee9c1372320902ad6a4afb0120f9db449c80c638`  
+		Last Modified: Thu, 01 Feb 2024 23:48:40 GMT  
+		Size: 142.3 MB (142338716 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:806a353ec79ff5f22a8515ef650085b43b1ed735a86d303493ec21271515827b`  
-		Last Modified: Wed, 24 Jan 2024 21:16:52 GMT  
+	-	`sha256:0e909098ae0590106ae400069a235139b0d64c8e02437bc09c4fc58e39f678d1`  
+		Last Modified: Thu, 01 Feb 2024 23:48:27 GMT  
 		Size: 174.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c75760d36968198609be59610096dcd1a6a243f6bda50b558b1fdbd7f4ba3e44`  
-		Last Modified: Thu, 25 Jan 2024 20:20:11 GMT  
+	-	`sha256:f21e211cd0f279ce2d71b1765b63a66af7b8f8f88693584f064124416c936274`  
+		Last Modified: Thu, 01 Feb 2024 23:48:27 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d12e7b33ac72a4f91f7b6bab76ba2ba59deadae504cd2cced9f0dc816f85c4d5`  
-		Last Modified: Thu, 25 Jan 2024 21:15:18 GMT  
-		Size: 4.4 KB (4373 bytes)  
+	-	`sha256:59ce2cf732dce12b83272278610d097a5f5d083305032140723aae2ed4015634`  
+		Last Modified: Fri, 02 Feb 2024 01:27:27 GMT  
+		Size: 4.4 KB (4371 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b0f9f8cb23a10239e71fb7f51f3bd3d44eeba130d63c3df9d51fa9ba6f195a9`  
-		Last Modified: Thu, 25 Jan 2024 21:15:18 GMT  
-		Size: 3.9 MB (3881970 bytes)  
+	-	`sha256:db687c0942e40d4664f28cc692d21da248eae392b24ebcbbff70d5ba8314ae6c`  
+		Last Modified: Fri, 02 Feb 2024 01:27:28 GMT  
+		Size: 3.9 MB (3880650 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07a7b0237de992bf5225122c6c2024374634b47279b4f376dacfac16f5fc3046`  
-		Last Modified: Thu, 25 Jan 2024 21:15:21 GMT  
+	-	`sha256:f33343d35964e9d770e6eca5cecf4529fc2544e8b678d70f7c12d8f2adb72a95`  
+		Last Modified: Fri, 02 Feb 2024 01:27:31 GMT  
 		Size: 29.8 MB (29802457 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e04624772000cede6bf09f4629cc81fd886e7f0f3af2d0e36c5378962942380d`  
-		Last Modified: Thu, 25 Jan 2024 21:15:18 GMT  
+	-	`sha256:7cfe5e7cb010e52f2c73b8c99f8a3c64a854d6d684638fcaf1fad81af0e589e8`  
+		Last Modified: Fri, 02 Feb 2024 01:27:27 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
