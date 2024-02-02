@@ -1,7 +1,7 @@
 ## `eclipse-temurin:17-jre`
 
 ```console
-$ docker pull eclipse-temurin@sha256:d00d059c6d71d565693d88cd88ae15d97666e43ecde57d92301d7f78dbd50f5e
+$ docker pull eclipse-temurin@sha256:47afd83a4e58e90f583cdab19443da3961177818d513fa44581a9dc148e50bfb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,69 +17,69 @@ $ docker pull eclipse-temurin@sha256:d00d059c6d71d565693d88cd88ae15d97666e43ecde
 ### `eclipse-temurin:17-jre` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:69384a6005201078433af90c8355f960a9fe36e6148d88342ef672e71d65d660
+$ docker pull eclipse-temurin@sha256:0adcf8486107fbd706de4b4fdde64c2d2e3ead4c689b2fb7ae4947010e1f00b4
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **95.1 MB (95069391 bytes)**  
+-	Total Size: **95.1 MB (95070257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:77936e8fa04ec3510b6836cdd7cc7c59efad44fb827c164a5fec773c4df73d77`
+-	Image ID: `sha256:9e9e35b89306a8d8d9ed417a1d5c8d0518dd771c2f277e18cbdca5f87067984f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
-# Thu, 11 Jan 2024 17:08:09 GMT
+# Thu, 25 Jan 2024 17:54:38 GMT
 ARG RELEASE
-# Thu, 11 Jan 2024 17:08:09 GMT
+# Thu, 25 Jan 2024 17:54:38 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 11 Jan 2024 17:08:09 GMT
+# Thu, 25 Jan 2024 17:54:38 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 11 Jan 2024 17:08:09 GMT
+# Thu, 25 Jan 2024 17:54:38 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 11 Jan 2024 17:08:11 GMT
-ADD file:c646150c866c8b5ece67bc79c610718acf858034fa22502b0dba3d38c53fc9a9 in / 
-# Thu, 11 Jan 2024 17:08:11 GMT
+# Thu, 25 Jan 2024 17:54:40 GMT
+ADD file:99224b1f237763b3053ca27ea5641f9a801c21154c7ccbff2c099654cc6db942 in / 
+# Thu, 25 Jan 2024 17:54:41 GMT
 CMD ["/bin/bash"]
-# Wed, 17 Jan 2024 07:14:20 GMT
+# Fri, 02 Feb 2024 07:42:24 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 17 Jan 2024 07:14:20 GMT
+# Fri, 02 Feb 2024 07:42:24 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 17 Jan 2024 07:14:20 GMT
+# Fri, 02 Feb 2024 07:42:24 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 17 Jan 2024 07:16:34 GMT
+# Fri, 02 Feb 2024 07:45:02 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/*
-# Wed, 24 Jan 2024 20:35:35 GMT
+# Fri, 02 Feb 2024 07:45:02 GMT
 ENV JAVA_VERSION=jdk-17.0.10+7
-# Wed, 24 Jan 2024 20:37:01 GMT
+# Fri, 02 Feb 2024 07:45:36 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='16080d055da0962fbd6b40f659a98a457cba3efa7ea716d5400cfebe8b935bf0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.10_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='620cc0e7338f2722f3ed076ac65c0fafb575981426bac4e1970860e5e2d048f0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.10_7.tar.gz';          ;;        armhf|arm)          ESUM='0378bdf6769632b182b27ba4e53b17eaefefdbafa3845c15e1bd88a5aeec8442';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.10_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='4e18b60dba540b5c431ff03f74a1c73b22d83151f93b8768241d264d1a53582d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.10_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='c1b2fd232fc55e814479d7585d7ec45bae952a2f4137084f1d99f958c6880a49';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Wed, 24 Jan 2024 20:37:02 GMT
+# Fri, 02 Feb 2024 07:45:37 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete."
-# Thu, 25 Jan 2024 19:32:50 GMT
+# Fri, 02 Feb 2024 07:45:37 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Thu, 25 Jan 2024 19:32:50 GMT
+# Fri, 02 Feb 2024 07:45:37 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:df2fac849a4581b035132d99e203fd83dc65590ea565435a266cb0e14a508838`  
-		Last Modified: Thu, 11 Jan 2024 22:28:44 GMT  
-		Size: 30.4 MB (30447114 bytes)  
+	-	`sha256:31bd5f451a847d651a0996256753a9b22a6ea8c65fefb010e77ea9c839fe2fac`  
+		Last Modified: Thu, 25 Jan 2024 22:24:23 GMT  
+		Size: 30.4 MB (30447882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c506251a0ae0b836353578bafa8d6aeb266158d3291ba4abbc2f5f8ccda6f742`  
-		Last Modified: Wed, 17 Jan 2024 07:20:28 GMT  
-		Size: 17.5 MB (17458145 bytes)  
+	-	`sha256:26611c45681a8966387aee7b2e1494405e20bc5a46dc5da0af9228c45f8e8ec4`  
+		Last Modified: Fri, 02 Feb 2024 07:50:10 GMT  
+		Size: 17.5 MB (17458288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b8c673b95895c0efae2a8f0414597595f1d4f6b3e7973d0b99ee9b366580dd1`  
-		Last Modified: Wed, 24 Jan 2024 20:48:16 GMT  
-		Size: 47.2 MB (47163238 bytes)  
+	-	`sha256:7657bba016afbc9b5b668492429479081862469157560f39c722fca733c6a4e7`  
+		Last Modified: Fri, 02 Feb 2024 07:50:54 GMT  
+		Size: 47.2 MB (47163193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f3fdfdbc1541d3276eaff7653137f8be176069196a72c68a0bf735dc617e7a2`  
-		Last Modified: Wed, 24 Jan 2024 20:48:09 GMT  
-		Size: 161.0 B  
+	-	`sha256:e5c532b683186e5e796b6523fee32e214bd7eeda453b630d2322010697be91e8`  
+		Last Modified: Fri, 02 Feb 2024 07:50:48 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4080cbbe938d7cadb00eda7a89a93f5878d7e968b4e8b23640b11c37ad69ca7b`  
-		Last Modified: Thu, 25 Jan 2024 19:36:00 GMT  
-		Size: 733.0 B  
+	-	`sha256:65e11da758202f5d3e080b1205b5f37c11a0ca72e8d428ba219b7d9d99befe18`  
+		Last Modified: Fri, 02 Feb 2024 07:50:48 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17-jre` - linux; arm variant v7
