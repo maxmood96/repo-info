@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9f309c60c6b59fec22f4815924c10852cc04d4fadcd1e95936f1160f9863dc14`
-- Created: `2024-01-17T18:26:13.659488818Z`
-- Virtual Size: ~ 806.72 Mb  
+- Image ID: `sha256:88c1e541bb4382c86eaa07bf375fd1afc4c7a1c4d78d5fcd490db477dc0ed9cd`
+- Created: `2024-01-31T00:00:32.445986009Z`
+- Virtual Size: ~ 808.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
@@ -19,19 +19,19 @@
   - `OPENJ9_SCC=true`
   - `RANDFILE=/tmp/.rnd`
 - Labels:
-  - `BuildLabel=cl231220231127-1901`
+  - `BuildLabel=cl240120240115-2042`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=23.0.0.12`
+  - `ProductVersion=24.0.0.1`
   - `org.opencontainers.image.authors=Leo Christy Jesuraj, Thomas Watson, Wendy Raschke, Michal Broz`
   - `org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with IBM Semeru Runtime Open Edition OpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://ibm.biz/wl-app-image-template`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
   - `org.opencontainers.image.ref.name=ubuntu`
-  - `org.opencontainers.image.revision=cl231220231127-1901`
+  - `org.opencontainers.image.revision=cl240120240115-2042`
   - `org.opencontainers.image.title=IBM WebSphere Liberty`
   - `org.opencontainers.image.url=https://github.com/WASdev/ci.docker`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=23.0.0.12`
+  - `org.opencontainers.image.version=24.0.0.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1183,9 +1183,8 @@ $ apt-get source -qq --print-uris nettle=3.7.3-1build2
 Binary Packages:
 
 - `libssl3:amd64=3.0.2-0ubuntu1.12`
-- `openssl=3.0.2-0ubuntu1.12`
 
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -1200,6 +1199,29 @@ $ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.12
 'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
 'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
 'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.12.debian.tar.xz' openssl_3.0.2-0ubuntu1.12.debian.tar.xz 206100 SHA512:2cdbd3c0c91200def2b1b49af64cda5bbb977a6ea5739a42e21f0970d1e97711ca866c574eed502bf4c1be38f64a3be679a67ae5d4589c84f532c73a1d8e6925
+```
+
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.13`
+
+Binary Packages:
+
+- `openssl=3.0.2-0ubuntu1.13`
+
+Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
+
+- `Apache-2.0`
+- `Artistic`
+- `GPL-1`
+- `GPL-1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.13
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.13.dsc' openssl_3.0.2-0ubuntu1.13.dsc 2556 SHA512:008b21355745d24d9e9d03050154ee7d5caff8c5a3c14f42c12c11595edb164a29fb9aa2af922a7a11be0c74c392bbd7377dd28c06c73c5920a9994b5858ad78
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.13.debian.tar.xz' openssl_3.0.2-0ubuntu1.13.debian.tar.xz 216532 SHA512:47dd40da04c25d4007689b8bf3be1e5520ac15e24a76af131d190f345025ab5301ba9ea47f15200e5209d278261f41cd64053e0a463666d343f26c56322bb2d8
 ```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
