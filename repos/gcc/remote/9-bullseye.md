@@ -1,7 +1,7 @@
 ## `gcc:9-bullseye`
 
 ```console
-$ docker pull gcc@sha256:6f0f0ab2e9c7750b7c95376068cb7593bf396d6fb3f082c17523bf57fcfc02c9
+$ docker pull gcc@sha256:96a42c9df45c677ef1496590e974908ce7a08ffad3c6ba9cdfea9530ce388ba7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,39 +22,37 @@ $ docker pull gcc@sha256:6f0f0ab2e9c7750b7c95376068cb7593bf396d6fb3f082c17523bf5
 ### `gcc:9-bullseye` - linux; amd64
 
 ```console
-$ docker pull gcc@sha256:9ffb0fb7be1d5710acc4ed578fceb5a524d2eb7080212e6acbce3043ea02fdea
+$ docker pull gcc@sha256:51957b5a2d8d077b55ef19572475573cbbb4f3573b5ed2eb966000c7efe9a2d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **421.2 MB (421223171 bytes)**  
+-	Total Size: **421.2 MB (421205955 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:060dd30491dbd7fb0cd9640c4091d20071f699fc757c1ec5eb4fee44cd66116e`
+-	Image ID: `sha256:89d3ab02e8369295f9ff5e11b13969e1e589763eca2dcb79f22db819eaf21c50`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 21 Jun 2023 21:54:01 GMT
+# Fri, 27 Oct 2023 19:22:51 GMT
 ADD file:4fa73c8d113df02c8656b74ab87563432215332f3de78446a02e5ab7d6e2ab7a in / 
-# Wed, 21 Jun 2023 21:54:01 GMT
+# Fri, 27 Oct 2023 19:22:51 GMT
 CMD ["bash"]
-# Wed, 21 Jun 2023 21:54:01 GMT
+# Fri, 27 Oct 2023 19:22:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 21 Jun 2023 21:54:01 GMT
+# Fri, 27 Oct 2023 19:22:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 21 Jun 2023 21:54:01 GMT
+# Fri, 27 Oct 2023 19:22:51 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 21 Jun 2023 21:54:01 GMT
+# Fri, 27 Oct 2023 19:22:51 GMT
 ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Wed, 21 Jun 2023 21:54:01 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 	; 	rm -rf /var/lib/apt/lists/*; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done # buildkit
-# Wed, 21 Jun 2023 21:54:01 GMT
+# Fri, 27 Oct 2023 19:22:51 GMT
 ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		ftp://ftp.gnu.org/gnu/gcc
-# Wed, 21 Jun 2023 21:54:01 GMT
+# Fri, 27 Oct 2023 19:22:51 GMT
 ENV GCC_VERSION=9.5.0
-# Wed, 21 Jun 2023 21:54:01 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a --with-float=hard --with-fpu=vfpv3-d16 --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 21 Jun 2023 21:54:01 GMT
+# Fri, 27 Oct 2023 19:22:51 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a --with-float=hard --with-fpu=vfpv3-d16 --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Fri, 27 Oct 2023 19:22:51 GMT
 RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	bash -Eeuo pipefail -xc ' 		deb="$(strings /usr/lib/*/libstdc++.so* | grep "^GLIBC" | sort -u)"; 		gcc="$(strings /usr/local/lib*/libstdc++.so | grep "^GLIBC" | sort -u)"; 		diff="$(comm -23 <(cat <<<"$deb") <(cat <<<"$gcc"))"; 		test -z "$diff"; 	' # buildkit
-# Wed, 21 Jun 2023 21:54:01 GMT
+# Fri, 27 Oct 2023 19:22:51 GMT
 RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
 ```
 
@@ -75,45 +73,41 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Last Modified: Wed, 31 Jan 2024 23:34:15 GMT  
 		Size: 196.9 MB (196898029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2e0ccee5ef3ab1a439da52e8ed5b5f5f8fea708fbc5d7171f624f5c2411ea3c`  
-		Last Modified: Thu, 01 Feb 2024 00:56:25 GMT  
-		Size: 16.7 KB (16739 bytes)  
+	-	`sha256:63dd3c6269b6e7c3949faa4a7c72e91da99cb573e62792d0a29123157c065ddf`  
+		Last Modified: Fri, 02 Feb 2024 01:58:31 GMT  
+		Size: 98.9 MB (98872440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1be2d8de3f6472d81c2c8d4423ed2e35bac4b34b3dc1f1f32d817c1552d4609`  
-		Last Modified: Thu, 01 Feb 2024 00:56:26 GMT  
-		Size: 98.9 MB (98872920 bytes)  
+	-	`sha256:8ddc94c15acadf9888e61e2da86cef799e2fcf7b0642d848053e77464ae956d3`  
+		Last Modified: Fri, 02 Feb 2024 01:58:29 GMT  
+		Size: 10.1 KB (10093 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64ddeafa5e9d223aae34689439252d88245d3b069a02dd208bc5ae42a6983224`  
-		Last Modified: Thu, 01 Feb 2024 00:56:25 GMT  
-		Size: 10.1 KB (10095 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:528b1802cc1153e4a04f46851d0ddd202d6f9df8d4be1c8b118be5dce90ed827`  
-		Last Modified: Thu, 01 Feb 2024 00:56:24 GMT  
-		Size: 1.9 KB (1890 bytes)  
+	-	`sha256:45b70f7315ad529664e49ced4893f1b1db1d0557541e7acfd1861037ad2b53b1`  
+		Last Modified: Fri, 02 Feb 2024 01:58:29 GMT  
+		Size: 1.9 KB (1895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:9-bullseye` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:a10caa03631c4b8293467777475ab51162fa64fea1f81ef85c92f02c7faf09fe
+$ docker pull gcc@sha256:4ce4ee655fd1ae79d3e919a1786cbbf2a3d0f9a98793c83747704bfce3e8fa28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.0 MB (12982604 bytes)**  
+-	Total Size: **13.0 MB (12980398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb3f6fd0c6f0feb0dcf5eb8bdfe4c77118632ec58cbea99ef54fceab67036e31`
+-	Image ID: `sha256:e663f775b2206b6fdc85233a34f36ee3fc3d32412945c5c4833798a9b8a59bb7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bc07a4bd499670cba72e285ae9cf92d74d4d427f0532c02a553c00883ab1673f`  
-		Last Modified: Thu, 01 Feb 2024 00:56:25 GMT  
+	-	`sha256:ed43b569e34ce8628e0ba5207ccc3379e5143f6607cccf8ff7225ec782a17881`  
+		Last Modified: Fri, 02 Feb 2024 01:58:29 GMT  
 		Size: 13.0 MB (12952885 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:adee5f30219ef622fda224ab49d979f591e44b0daa012536fdfd93944755f687`  
-		Last Modified: Thu, 01 Feb 2024 00:56:25 GMT  
-		Size: 29.7 KB (29719 bytes)  
+	-	`sha256:9266f9da4418101b7b699df5b94609bc47148a8fd6a48d7647c4754c0bb9e0dd`  
+		Last Modified: Fri, 02 Feb 2024 01:58:29 GMT  
+		Size: 27.5 KB (27513 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:9-bullseye` - linux; arm variant v5
