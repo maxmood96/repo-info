@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:8307b3e0e59893a72cd40d8c997f8bb026bfbf31b970ba24b2262bf242d1c6e4
+$ docker pull clojure@sha256:249d2e31e97a5af79bce0fd9021d38c7b1d76939fbde14a4a21fab77e1b52063
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -66,14 +66,14 @@ CMD ["clj"]
 ### `clojure:temurin-11-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:aa4a81b694626c3590dc9027586bc2a5b4a53b9f02249e2b4e9e33ef83648232
+$ docker pull clojure@sha256:3becd02f804eb0ad3ebff9214757895c671ed68bd83093cfd4d109c0dd2dfecb
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **240.0 MB (240007642 bytes)**  
+-	Total Size: **240.0 MB (240007541 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58f47acf89773f855b474370dd74a2e02d0d202b0cfc25f5141c346ebbd6ec2b`
+-	Image ID: `sha256:1440bdf1fcab32beca1a2e2aabffefec5167ce9ce12d56c2e39449ab9b9d71c6`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -83,19 +83,19 @@ ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in /
 CMD ["bash"]
 # Thu, 01 Feb 2024 06:20:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 01 Feb 2024 06:25:03 GMT
-COPY dir:454699b64b949edd3264b234e72a891ace37d538f2726c5ec754e17e6fb3fb19 in /opt/java/openjdk 
-# Thu, 01 Feb 2024 06:25:07 GMT
+# Fri, 02 Feb 2024 08:20:17 GMT
+COPY dir:66e2d93ab60a4ef1bb1a1f0fa29608c8835186fbe657955fddda78ed144821fc in /opt/java/openjdk 
+# Fri, 02 Feb 2024 08:20:20 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 01 Feb 2024 06:28:28 GMT
+# Fri, 02 Feb 2024 08:25:24 GMT
 ENV CLOJURE_VERSION=1.11.1.1435
-# Thu, 01 Feb 2024 06:28:28 GMT
+# Fri, 02 Feb 2024 08:25:24 GMT
 WORKDIR /tmp
-# Thu, 01 Feb 2024 06:28:43 GMT
+# Fri, 02 Feb 2024 08:25:40 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap wget && rm -rf /var/lib/apt/lists/* && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apt-get purge -y --auto-remove curl wget
-# Thu, 01 Feb 2024 06:28:44 GMT
+# Fri, 02 Feb 2024 08:25:40 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Thu, 01 Feb 2024 06:28:44 GMT
+# Fri, 02 Feb 2024 08:25:40 GMT
 CMD ["clj"]
 ```
 
@@ -104,15 +104,15 @@ CMD ["clj"]
 		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
 		Size: 29.2 MB (29180832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85c45e79333257621ebdb964760990997f3a264d1e457e0bfb0ba6e5b5865a5b`  
-		Last Modified: Thu, 01 Feb 2024 06:42:36 GMT  
-		Size: 142.0 MB (142006518 bytes)  
+	-	`sha256:00498bb373c7ab039d3c50e9ee01de46ff61000a6e4866749566b453c520b9fc`  
+		Last Modified: Fri, 02 Feb 2024 08:38:25 GMT  
+		Size: 142.0 MB (142006400 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89c01d829397f3ac2c7e122f8063b9abc8eb6d21dd786edb1cbe9b8035787a69`  
-		Last Modified: Thu, 01 Feb 2024 06:44:28 GMT  
-		Size: 68.8 MB (68819676 bytes)  
+	-	`sha256:8184a1a450db549e763590e1e04b27b8ede54170e1167229a31143004bd6b289`  
+		Last Modified: Fri, 02 Feb 2024 08:41:02 GMT  
+		Size: 68.8 MB (68819690 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39adb36119cc2dbf781d1339221636d2ec647e019f426dc8f46c3f26bce188b8`  
-		Last Modified: Thu, 01 Feb 2024 06:44:19 GMT  
-		Size: 616.0 B  
+	-	`sha256:2c7fc9d43e32b7728ea27693c5c9fee2fcefd335001bf83c0df166cd09d75a1a`  
+		Last Modified: Fri, 02 Feb 2024 08:40:55 GMT  
+		Size: 619.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
