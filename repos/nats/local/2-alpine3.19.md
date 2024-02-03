@@ -1,17 +1,17 @@
-# `nats:2.10.9-alpine3.19`
+# `nats:2.10.10-alpine3.19`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d40b186cead18c79f854aa8b74737698e3dcb3bdea734ffd895da73010284e49`
-- Created: `2024-01-27T07:59:30.979133469Z`
-- Virtual Size: ~ 23.11 Mb  
+- Image ID: `sha256:03b3427e7bfc380643064592125e5f851754edecc335a9c229e6082118f4cdac`
+- Created: `2024-02-03T09:22:18.904763085Z`
+- Virtual Size: ~ 23.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["nats-server","--config","/etc/nats/nats-server.conf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NATS_SERVER=2.10.9`
+  - `NATS_SERVER=2.10.10`
 
 ## `apk` (`.apk`-based packages)
 
@@ -273,16 +273,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2023d-r0 description:
+tzdata-2024a-r0 description:
 Timezone data
 
-tzdata-2023d-r0 webpage:
+tzdata-2024a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2023d-r0 installed size:
-3076 KiB
+tzdata-2024a-r0 installed size:
+3072 KiB
 
-tzdata-2023d-r0 license:
+tzdata-2024a-r0 license:
 Public-Domain
 
 ```
