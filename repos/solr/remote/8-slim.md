@@ -1,7 +1,7 @@
 ## `solr:8-slim`
 
 ```console
-$ docker pull solr@sha256:f33dfdd4fb31d0aecab9f087b087f1fa8207dae948e114e6967025e3ed7afdf9
+$ docker pull solr@sha256:83cf169a6296342d8cc3c975380bc973ffb46b8e67a6e681fdce338e90c7a37d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -336,42 +336,42 @@ $ docker pull solr@sha256:17e1e49ba8b14d5af59ed23403619cb1cff214f09c45a19ea74faf
 ### `solr:8-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull solr@sha256:2d14926ed7acad65ee753702d8053d24699cb2dd32f2525c0d14c75c77246aa8
+$ docker pull solr@sha256:1ab048bcc7c5bb8ff55bea945952f4fb716e865fe10e0dc824393d5e2b2c6e00
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **312.2 MB (312226572 bytes)**  
+-	Total Size: **312.2 MB (312233113 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8cc509e9a4882000f7eafba52851261e3f9811c17ca7c60eaafba5ddcc4f308a`
+-	Image ID: `sha256:c0453f5ce621e5e0667a5c37b7a5f54d2038681a1e8c613c17f2092c9b0b4f7c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Wed, 13 Dec 2023 10:29:33 GMT
+# Tue, 23 Jan 2024 13:04:26 GMT
 ARG RELEASE
-# Wed, 13 Dec 2023 10:29:33 GMT
+# Tue, 23 Jan 2024 13:04:26 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 13 Dec 2023 10:29:34 GMT
+# Tue, 23 Jan 2024 13:04:26 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 13 Dec 2023 10:29:34 GMT
+# Tue, 23 Jan 2024 13:04:26 GMT
 LABEL org.opencontainers.image.version=20.04
-# Wed, 13 Dec 2023 10:29:41 GMT
-ADD file:9ec8b7bbb2fbc8c90f1f24e19ab22130e03be1cc4727459e1265d2ed652377a1 in / 
-# Wed, 13 Dec 2023 10:29:42 GMT
+# Tue, 23 Jan 2024 13:04:27 GMT
+ADD file:9497e9dbcde9a04e764625c77c975cfced1dd0bb3bb7717572ea47621f3c12a7 in / 
+# Tue, 23 Jan 2024 13:04:27 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Dec 2023 10:01:59 GMT
+# Thu, 25 Jan 2024 18:38:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 16 Dec 2023 10:02:00 GMT
+# Thu, 25 Jan 2024 18:38:04 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 16 Dec 2023 10:02:00 GMT
+# Thu, 25 Jan 2024 18:38:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 16 Dec 2023 10:02:15 GMT
+# Thu, 25 Jan 2024 18:38:04 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/*
-# Wed, 24 Jan 2024 20:40:56 GMT
+# Thu, 25 Jan 2024 18:38:04 GMT
 ENV JAVA_VERSION=jdk-11.0.22+7
-# Wed, 24 Jan 2024 20:41:55 GMT
+# Thu, 25 Jan 2024 18:38:04 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Wed, 24 Jan 2024 20:41:56 GMT
+# Thu, 25 Jan 2024 18:38:04 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete."
 # Thu, 25 Jan 2024 18:38:04 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
@@ -422,44 +422,44 @@ CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:a5319f8e5f3f0f8f6e663c807041d5294b7c309e06b86d115409bbdb4c9d7165`  
-		Last Modified: Thu, 14 Dec 2023 13:03:55 GMT  
-		Size: 27.2 MB (27203144 bytes)  
+	-	`sha256:beb9e0b551f10db0eea20b2fc47ad9cb3a7f0f338845eeb162a82fec32843b1a`  
+		Last Modified: Wed, 24 Jan 2024 18:44:36 GMT  
+		Size: 27.2 MB (27205060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b69f35fd155c9c0a485e63ad002a7b98a6ce1921e230d386f1cffd2c8c16878`  
-		Last Modified: Sat, 16 Dec 2023 10:06:15 GMT  
-		Size: 16.8 MB (16769031 bytes)  
+	-	`sha256:aa774d25e71a9aa0fabab9093684ee75133fee0e119afe23e6f5c3318d0ce083`  
+		Last Modified: Fri, 02 Feb 2024 02:14:02 GMT  
+		Size: 16.8 MB (16773969 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c543f6650b69b3bee3f3e3f61edfc1914055bc8a224ee23b7e806dce4d5c4c0f`  
-		Last Modified: Wed, 24 Jan 2024 20:49:51 GMT  
-		Size: 45.4 MB (45398449 bytes)  
+	-	`sha256:cb4593119e5e018dc69694ebea665acba7f9048c7f884e18bd42f23348978bb2`  
+		Last Modified: Fri, 02 Feb 2024 02:15:53 GMT  
+		Size: 45.4 MB (45398211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:676fe86464de13c4a63218a37304fe2415dd099b19e0ef70f19f052ce4d90724`  
-		Last Modified: Wed, 24 Jan 2024 20:49:46 GMT  
+	-	`sha256:343774c85c6beed3d9d17bb544c38db51aaaf17ea3a2f2071699f24c8c1f1d84`  
+		Last Modified: Fri, 02 Feb 2024 02:15:48 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90f2ec17a75dd3e50c387d2a45502a56e66f4835bcb621dbe816246fc62929ab`  
-		Last Modified: Thu, 25 Jan 2024 19:42:27 GMT  
+	-	`sha256:ef524e9bbd62f6bb8cbdca1f34347a00d5cc4be8f33cc731bbfc52565a5f003b`  
+		Last Modified: Fri, 02 Feb 2024 02:15:48 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b76429bf1a2938b70d13a9339561f4b31cef7c5eb77a93bf0ceec635e908347c`  
-		Last Modified: Tue, 30 Jan 2024 01:31:52 GMT  
-		Size: 4.5 MB (4511758 bytes)  
+	-	`sha256:a5ca2c0ff66291ea001546e9c4c8fbebb5557adc6f0446411eff7ac9660466c3`  
+		Last Modified: Mon, 05 Feb 2024 18:54:16 GMT  
+		Size: 4.5 MB (4511719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e77cf9a893df4d15f40fd902bfe4c0851c907fdc61372e11b01e0ecec0710d8a`  
-		Last Modified: Tue, 30 Jan 2024 01:31:52 GMT  
-		Size: 4.3 KB (4309 bytes)  
+	-	`sha256:f03a2c9e2a11291b672096052f54cf83f62a1a38c0578c1e34757cb8a7dea702`  
+		Last Modified: Mon, 05 Feb 2024 18:54:15 GMT  
+		Size: 4.3 KB (4310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4624a2d3d3f7970f83f2abeb0867b2aa24df324f67f8d231b875fbbd0411b3b3`  
-		Last Modified: Tue, 30 Jan 2024 01:31:52 GMT  
+	-	`sha256:aa999c81e3a9e99f62b419491e33c3bf5026dbfc00d62dcd9b0f86ef248732f5`  
+		Last Modified: Mon, 05 Feb 2024 18:54:16 GMT  
 		Size: 3.4 KB (3440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0cca8a6c5e63c05f761682e480c3f4f1d5e8e21a5d7f977a3f447b4cede04a95`  
-		Last Modified: Tue, 30 Jan 2024 01:31:59 GMT  
-		Size: 218.3 MB (218329239 bytes)  
+	-	`sha256:718c51c4af4baf69f4d4cc4695e4dc8d53ebface9daca332b1e9701d6fb46f3c`  
+		Last Modified: Mon, 05 Feb 2024 18:54:21 GMT  
+		Size: 218.3 MB (218329202 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61b46d30cf77b3583975f491933b9387b119f1b7e6cc93e325fdb3ce175495a9`  
-		Last Modified: Tue, 30 Jan 2024 01:31:53 GMT  
+	-	`sha256:d09f143e3de29cac64106a40e520b77be667799f56d4ab9cd7bb6f694683ffe6`  
+		Last Modified: Mon, 05 Feb 2024 18:54:17 GMT  
 		Size: 6.3 KB (6277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -470,66 +470,66 @@ CMD ["solr-foreground"]
 ### `solr:8-slim` - unknown; unknown
 
 ```console
-$ docker pull solr@sha256:8bd1b1b638557182738b23ce61e90d4fc3df311f8390ddc3dbc31fb7a63f8e78
+$ docker pull solr@sha256:849a4b2cdb600d1e8866d97a54fba9bb91ec2cf29b48a5e5924b34d240133c03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.5 MB (3530690 bytes)**  
+-	Total Size: **3.5 MB (3536511 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc3389008589260dbb5cd090c1a0277dace6eb31100365ddb2700eea8ccc63a5`
+-	Image ID: `sha256:7906e6311805d1de7b4aef360c243a52a2ffecb67acea39fc19f1c000b29bdde`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5664aa4c67c0439b7af9d463d077218413fba0d497d4c1c16e3eeee20cd8fc19`  
-		Last Modified: Tue, 30 Jan 2024 01:32:38 GMT  
-		Size: 3.5 MB (3494387 bytes)  
+	-	`sha256:eb910b47e9feb922eb55592db43b719d3fa5eabba063e459d11fbeed45df9079`  
+		Last Modified: Mon, 05 Feb 2024 18:54:45 GMT  
+		Size: 3.5 MB (3500208 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bf0f7dd02cf2bd40442b786a6efe9a4cab3e51c4a8c6bc1562fb2adf975fd157`  
-		Last Modified: Tue, 30 Jan 2024 01:32:37 GMT  
+	-	`sha256:43b1854ed378f70fa85a1fdc73bd8ebac93dd3e93d8612da87aec62a66364054`  
+		Last Modified: Mon, 05 Feb 2024 18:54:45 GMT  
 		Size: 36.3 KB (36303 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `solr:8-slim` - linux; ppc64le
 
 ```console
-$ docker pull solr@sha256:8347776d1f43165dda44eb5febf47e3d77339b61fff4160676778c3b0a7dd4ab
+$ docker pull solr@sha256:ab9653baa4d4c4b7c2aa23bd310745cb9f5c1fc1a8d550bf659f73de2f6d738c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **317.9 MB (317908979 bytes)**  
+-	Total Size: **317.9 MB (317917191 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69118aefdbe76d9ec27d186d6edf8bf3ce8a39e415aadc02bea38df5abea0834`
+-	Image ID: `sha256:780a14f7b27cb9c206054e1aa72753c41a734104f03f17a69d973d03dffd8818`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Wed, 13 Dec 2023 10:36:32 GMT
+# Tue, 23 Jan 2024 12:54:35 GMT
 ARG RELEASE
-# Wed, 13 Dec 2023 10:36:32 GMT
+# Tue, 23 Jan 2024 12:54:35 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 13 Dec 2023 10:36:32 GMT
+# Tue, 23 Jan 2024 12:54:35 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 13 Dec 2023 10:36:32 GMT
+# Tue, 23 Jan 2024 12:54:35 GMT
 LABEL org.opencontainers.image.version=20.04
-# Wed, 13 Dec 2023 10:36:35 GMT
-ADD file:b7dcee8fbada51f19b857a4a8ef334aab211090abf4247194ddfeb1504df7420 in / 
-# Wed, 13 Dec 2023 10:36:35 GMT
+# Tue, 23 Jan 2024 12:54:38 GMT
+ADD file:96f44a86185939ee5de23552dc064d300ba16f7f31dc2d5ea1081d99cb0ecc9f in / 
+# Tue, 23 Jan 2024 12:54:39 GMT
 CMD ["/bin/bash"]
-# Sat, 16 Dec 2023 10:36:38 GMT
+# Thu, 25 Jan 2024 18:38:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 16 Dec 2023 10:36:39 GMT
+# Thu, 25 Jan 2024 18:38:04 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 16 Dec 2023 10:36:39 GMT
+# Thu, 25 Jan 2024 18:38:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 16 Dec 2023 10:37:10 GMT
+# Thu, 25 Jan 2024 18:38:04 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/*
-# Wed, 24 Jan 2024 20:36:56 GMT
+# Thu, 25 Jan 2024 18:38:04 GMT
 ENV JAVA_VERSION=jdk-11.0.22+7
-# Wed, 24 Jan 2024 20:38:44 GMT
+# Thu, 25 Jan 2024 18:38:04 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Wed, 24 Jan 2024 20:38:48 GMT
+# Thu, 25 Jan 2024 18:38:04 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete."
 # Thu, 25 Jan 2024 18:38:04 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
@@ -580,45 +580,45 @@ CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:3cdeaacd390f730da6f0fb692f91fa6acafd7c373cd75524447a25371b6cf3b5`  
-		Last Modified: Sat, 16 Dec 2023 10:34:06 GMT  
-		Size: 33.3 MB (33314320 bytes)  
+	-	`sha256:235f35baf74b5944d6dbafa8498b4e2ba58703a9be506a8a9008f01bb6d54cff`  
+		Last Modified: Fri, 02 Feb 2024 01:44:37 GMT  
+		Size: 33.3 MB (33316035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ed67c1e92d231797f6ccdb5b8dfc66523da0505bda01ed804febc7f69bbc165`  
-		Last Modified: Sat, 16 Dec 2023 10:43:55 GMT  
-		Size: 18.2 MB (18215112 bytes)  
+	-	`sha256:067dcd4de1ca6ca1d1f4bccfe97d19183f512cff5bcd36cfc652cc33247818ec`  
+		Last Modified: Fri, 02 Feb 2024 02:46:36 GMT  
+		Size: 18.2 MB (18221689 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7eeac73eaef794d0fd2af66928b12804a6ba0b71293da470af27a789aa2bc9cd`  
-		Last Modified: Wed, 24 Jan 2024 20:51:48 GMT  
-		Size: 42.5 MB (42495535 bytes)  
+	-	`sha256:776d52193b904d6d2eede6bb6c952fdff1968755449f303b9a06bea18361bc4f`  
+		Last Modified: Fri, 02 Feb 2024 02:48:52 GMT  
+		Size: 42.5 MB (42495508 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31539ab1838f951211dc075c9756ac6712397a4179fdbd940f2f9945334b49d5`  
-		Last Modified: Wed, 24 Jan 2024 20:51:42 GMT  
-		Size: 160.0 B  
+	-	`sha256:20c250a0e0aba5b079befe84b06639e4c508a8e77afe44678207c006d910c45a`  
+		Last Modified: Fri, 02 Feb 2024 02:48:45 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9cbb0553b95a40ba9d43d428a9696a14666b008cda938d4010990dd6ebccb761`  
-		Last Modified: Thu, 25 Jan 2024 19:29:10 GMT  
+	-	`sha256:a18542ac4f51f5e82e0e20943d5a7bc4b9f5c69c4c8e0cd10a857ab8faa1a26b`  
+		Last Modified: Fri, 02 Feb 2024 02:48:45 GMT  
 		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6840d4289a00e467effbfd4c7197dcf8ed1c93f1e78751792597b8e8f64eb4fa`  
-		Last Modified: Tue, 30 Jan 2024 04:50:47 GMT  
-		Size: 5.5 MB (5539796 bytes)  
+	-	`sha256:6f15840601824bde6fad29f4bdd9e24b7b6a3eec66377e833d0c88857bb41397`  
+		Last Modified: Mon, 05 Feb 2024 18:44:13 GMT  
+		Size: 5.5 MB (5539824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d81d0215f360a6b857be62575639e6324fc212f876a2f27b2762bb1dd0d7cc07`  
-		Last Modified: Tue, 30 Jan 2024 04:50:48 GMT  
-		Size: 4.3 KB (4276 bytes)  
+	-	`sha256:17fc5f99880d94c2ea71f95de3e4bc1f5a00ba5f7015aa9cbe68ac16af28093e`  
+		Last Modified: Mon, 05 Feb 2024 18:44:13 GMT  
+		Size: 4.3 KB (4277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24e3ed1819e7afd98c9043f379c03349348babf6e0017160e84e845caa4e0caa`  
-		Last Modified: Tue, 30 Jan 2024 04:50:48 GMT  
-		Size: 3.4 KB (3436 bytes)  
+	-	`sha256:0f92845c9b60fa884d2ca8991a7cfca53074439a979f81b4c903ac42512a6350`  
+		Last Modified: Mon, 05 Feb 2024 18:44:14 GMT  
+		Size: 3.4 KB (3440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82eaefaa59eca24bfbd158d425ff3475efbf50210bf09d1fb507460565f8a91e`  
-		Last Modified: Tue, 30 Jan 2024 04:50:54 GMT  
-		Size: 218.3 MB (218329303 bytes)  
+	-	`sha256:f3a712ea18391e0ef911e0a8cd29be3fcce7cd7c0e9c945a45fbd8c36f0624fe`  
+		Last Modified: Mon, 05 Feb 2024 18:44:30 GMT  
+		Size: 218.3 MB (218329217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:324b6304989e22d62d459ba74ec39526533d3cbc180cec5729e2b0c91238cee7`  
-		Last Modified: Tue, 30 Jan 2024 04:50:49 GMT  
-		Size: 6.3 KB (6276 bytes)  
+	-	`sha256:d7ee15a989b0d094a73ba71433db3aef18a3ffd21046668e7b76cf6d308f2833`  
+		Last Modified: Mon, 05 Feb 2024 18:44:15 GMT  
+		Size: 6.3 KB (6274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -628,24 +628,24 @@ CMD ["solr-foreground"]
 ### `solr:8-slim` - unknown; unknown
 
 ```console
-$ docker pull solr@sha256:f54a6f1ddbf2e04d1a33ecc058365863adec4358b24125a440c7c776f421bb15
+$ docker pull solr@sha256:eea154e737c3ab956aad1f6a357a617b60f46edb34353193d7a4c21a00b951f9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.5 MB (3534982 bytes)**  
+-	Total Size: **3.5 MB (3540826 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884ca63432bd424ee33b5922a42fe4eab45ad8cff1426a55e4189e33e7173117`
+-	Image ID: `sha256:eaeefd8148341ab7607266ac1f02d00ab5c708b020e0ae2bd6f9eb6b15523f93`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d9fe3b58431bd709adffaac643b2c0fdd92eda01b61ce6a820adee7ea5208e33`  
-		Last Modified: Tue, 30 Jan 2024 05:17:40 GMT  
-		Size: 3.5 MB (3498649 bytes)  
+	-	`sha256:8b0f5c8f95d8e5149420bb9087ab1204208907950e1f71158bcd1c312c455d26`  
+		Last Modified: Mon, 05 Feb 2024 18:44:55 GMT  
+		Size: 3.5 MB (3504493 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a62a2d363dd121104f44291a8854f2ac9aa05a81f72248dd6b961d3ac11fc758`  
-		Last Modified: Tue, 30 Jan 2024 05:17:39 GMT  
+	-	`sha256:7fbf5befadf0e1cc7fbb6df97e3491287eca34609c5f3ca47bff15a092fad186`  
+		Last Modified: Mon, 05 Feb 2024 18:44:55 GMT  
 		Size: 36.3 KB (36333 bytes)  
 		MIME: application/vnd.in-toto+json
 
