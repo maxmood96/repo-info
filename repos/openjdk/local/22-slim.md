@@ -1,9 +1,9 @@
-# `openjdk:22-ea-33-jdk-slim-bookworm`
+# `openjdk:22-ea-34-jdk-slim-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4634553f3aefd017e07215ee0226a8845f72f86d3fd96677833c3411117859dc`
-- Created: `2024-01-26T01:48:32Z`
+- Image ID: `sha256:451baa7446e6993530d655767c4257e3ecb3e2afe7accce5080620163b62d6f4`
+- Created: `2024-02-02T19:48:11Z`
 - Virtual Size: ~ 434.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-22/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-22`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=22-ea+33`
+  - `JAVA_VERSION=22-ea+34`
 
 ## `dpkg` (`.deb`-based packages)
 
