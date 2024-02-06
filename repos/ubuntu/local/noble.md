@@ -603,14 +603,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.1-4ubuntu7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.1-4ubuntu7.dsc' gnutls28_3.8.1-4ubuntu7.dsc 3091 SHA512:cc55527de92b38a9c23a3a9164f137eda083d923d2b312608d9adec14ac5dc2a6be7448179913c6b8f4c3b63f8c2a4cbe9e27b98ac2d21a6c1dc4dac9d9a54fb
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.1.orig.tar.xz' gnutls28_3.8.1.orig.tar.xz 6447056 SHA512:22e78db86b835843df897d14ad633d8a553c0f9b1389daa0c2f864869c6b9ca889028d434f9552237dc4f1b37c978fbe0cce166e3768e5d4e8850ff69a6fc872
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.1-4ubuntu7.debian.tar.xz' gnutls28_3.8.1-4ubuntu7.debian.tar.xz 73680 SHA512:917e2673388b59d5e52f614266629bc710ac0cf904d668f6482a400a71bec2fa1c0a4820982cf24269f1bdf390106a151b54742b3bb4e2199c9a0f518c1e3a14
-```
 
 ### `dpkg` source package: `grep=3.11-4`
 
@@ -1005,14 +1000,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcrypt=1:4.4.36-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.36-2.dsc' libxcrypt_4.4.36-2.dsc 1563 SHA512:dc89e5cf496906c63ac28a7dc7e73566eabec64347e5cec21343b735627a2153216dbd9fb49e4d26c327febbb914cf52fe1065e1cd05cc7408fbb14abe50929a
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.36.orig.tar.xz' libxcrypt_4.4.36.orig.tar.xz 392732 SHA512:82839d70fc068a4d4d5e14488ea7599e2430091ace53640d639628330eff52a058ac589b6b5a39bc6c83166e68cbf9b9e2024e0371df1f949336f633f2a1726e
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.36-2.debian.tar.xz' libxcrypt_4.4.36-2.debian.tar.xz 8284 SHA512:f6095cadce8d436bd6ebc51514bd8eb401f331d5c29256f8a15d37637ef1c8a7699fbff69a1bb11e10d5a7ed1370c6f3c8ebd975e3ecbf38b2dbf2852f2cca3f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libxcrypt/1:4.4.36-2/
+
 
 ### `dpkg` source package: `libzstd=1.5.5+dfsg2-2`
 
@@ -1179,15 +1173,9 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `customFSFUL`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.25.3-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3-2ubuntu2.dsc' p11-kit_0.25.3-2ubuntu2.dsc 2645 SHA512:7dc7b2379e203df71ec61279ad8b02a952e45a235a1b89c4751329102b37b8ec9261c85bd08cbf896f9eb7ae184e46a21c2c725405fcaf13f0e1e4af5997f19d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3.orig.tar.xz' p11-kit_0.25.3.orig.tar.xz 991528 SHA512:ad2d393bf122526cbba18dc9d5a13f2c1cad7d70125ec90ffd02059dfa5ef30ac59dfc0bb9bc6380c8f317e207c9e87e895f1945634f56ddf910c2958868fb4c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3.orig.tar.xz.asc' p11-kit_0.25.3.orig.tar.xz.asc 228 SHA512:e275d64222dc5b15fd5d0f6927c8317dc7f85fdce8dea084a5cda8845ae1115e04680c7ebe774d7f97232a7aab271e8d264f2dbcb2d90833ad70b6fa7946b778
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3-2ubuntu2.debian.tar.xz' p11-kit_0.25.3-2ubuntu2.debian.tar.xz 25908 SHA512:0a09ade5e91672790bb1b191210ef17c5ed88cade440a16619239769b80b7552690323ab5f9ebdfc053fa2c602b8fdaa936af2f3374a7d38ac4a866e1e0f2792
-```
 
 ### `dpkg` source package: `pam=1.5.2-9.1ubuntu2`
 
