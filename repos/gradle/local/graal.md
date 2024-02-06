@@ -1,9 +1,9 @@
-# `gradle:8.5.0-jdk17-graal`
+# `gradle:8.6.0-jdk17-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f66925c848bc2c5b913324272134db15d4139e5be5c4248446a0d364ccc17e7c`
-- Created: `2024-02-02T06:58:33.155257023Z`
+- Image ID: `sha256:9511e1739b83fedefaa49f4f7a432d97ab96bdebfd8cecac380064d038ca6e4f`
+- Created: `2024-02-03T09:11:28.300739374Z`
 - Virtual Size: ~ 1.15 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=17.0.9`
-  - `GRADLE_VERSION=8.5`
+  - `GRADLE_VERSION=8.6`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -2082,15 +2082,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.13
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.13.dsc' openssl_3.0.2-0ubuntu1.13.dsc 2556 SHA512:008b21355745d24d9e9d03050154ee7d5caff8c5a3c14f42c12c11595edb164a29fb9aa2af922a7a11be0c74c392bbd7377dd28c06c73c5920a9994b5858ad78
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.13.debian.tar.xz' openssl_3.0.2-0ubuntu1.13.debian.tar.xz 216532 SHA512:47dd40da04c25d4007689b8bf3be1e5520ac15e24a76af131d190f345025ab5301ba9ea47f15200e5209d278261f41cd64053e0a463666d343f26c56322bb2d8
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
