@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:580df611d5ec430f82d0c55146ac50c5c31c1e99104567a8a927827810b6c92c`
+- Image ID: `sha256:301cd64b6a505e70c2fde277b5d1ee470f0719045d17909f0e25685aba7f067d`
 - Created: `2024-01-22T14:26:01Z`
-- Virtual Size: ~ 646.08 Mb  
+- Virtual Size: ~ 647.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `NEO4J_HOME=/var/lib/neo4j`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-01-16T18:44:24`
+  - `build-date=2024-01-31T08:51:16`
   - `com.redhat.component=ubi8-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -31,9 +31,9 @@
   - `io.openshift.tags=minimal rhel8`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi8-minimal`
-  - `release=1108.1705420507`
+  - `release=1108.1706691034`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 8.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8-minimal/images/8.9-1108.1705420507`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8-minimal/images/8.9-1108.1706691034`
   - `vcs-ref=7e7670a8c8c9a3be83beaa2787f3703b404d4a1d`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -437,7 +437,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `gnutls-3.6.16-8.el8_9.x86_64`
+### `rpm` package: `gnutls-3.6.16-8.el8_9.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
@@ -989,13 +989,13 @@ Licenses (from `rpm --query`): LGPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libssh-0.9.6-10.el8_8.x86_64`
+### `rpm` package: `libssh-0.9.6-13.el8_9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libssh-config-0.9.6-10.el8_8.noarch`
+### `rpm` package: `libssh-config-0.9.6-13.el8_9.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -1367,7 +1367,7 @@ Licenses (from `rpm --query`): MIT and Python and ASL 2.0 and BSD and ISC and LG
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-rpm-4.14.3-26.el8.x86_64`
+### `rpm` package: `python3-rpm-4.14.3-28.el8_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
@@ -1409,19 +1409,19 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rpm-4.14.3-26.el8.x86_64`
+### `rpm` package: `rpm-4.14.3-28.el8_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rpm-build-libs-4.14.3-26.el8.x86_64`
+### `rpm` package: `rpm-build-libs-4.14.3-28.el8_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rpm-libs-4.14.3-26.el8.x86_64`
+### `rpm` package: `rpm-libs-4.14.3-28.el8_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
