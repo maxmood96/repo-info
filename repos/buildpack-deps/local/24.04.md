@@ -216,15 +216,13 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris automake-1.16=1:1.16.5-1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/automake-1.16/automake-1.16_1.16.5-1.3.dsc' automake-1.16_1.16.5-1.3.dsc 1973 SHA512:911924e07fb9951025d95d0827f431a63e78d55c95eafa8c61c2248bff6880a5902ac1be2ff4f104308bfe853b7cf4c4cdb860faa1fd7feb0f1a0912f0e4f330
-'http://archive.ubuntu.com/ubuntu/pool/main/a/automake-1.16/automake-1.16_1.16.5.orig.tar.xz' automake-1.16_1.16.5.orig.tar.xz 1601740 SHA512:3084ae543aa3fb5a05104ffb2e66cfa9a53080f2343c44809707fd648516869511500dba50dae67ff10f92a1bf3b5a92b2a0fa01cda30adb69b9da03994d9d88
-'http://archive.ubuntu.com/ubuntu/pool/main/a/automake-1.16/automake-1.16_1.16.5.orig.tar.xz.asc' automake-1.16_1.16.5.orig.tar.xz.asc 833 SHA512:032a7c39abb4cabbefa4eb9c15263baec0902e48c0c81364307361a41fd55be282b9640707c789f5ae572e8e60240e34d1b575a671b5710f5d2a5716fafc2d51
-'http://archive.ubuntu.com/ubuntu/pool/main/a/automake-1.16/automake-1.16_1.16.5-1.3.debian.tar.xz' automake-1.16_1.16.5-1.3.debian.tar.xz 14164 SHA512:ca023f45d90ec57db7819688ae457c162ca4429b360bae8dacd6b8b5087a0da51956fd931f23573d7dd47f26422f702a70b219caa55bf76d395417b97af7d5de
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/automake-1.16/1:1.16.5-1.3/
+
 
 ### `dpkg` source package: `autotools-dev=20220109.1`
 
@@ -1121,14 +1119,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-14-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-14=14-20240126-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14-20240126-2ubuntu1.dsc' gcc-14_14-20240126-2ubuntu1.dsc 46810 SHA512:bc88bb7abfc64cadf3af865e6eed70bf0bc2c395292399d1f88d0d35be5472490ad2b172e1cb26e46a7055f1f95c7fa95c05b51b8559c260b6c84392b09b6a88
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14-20240126.orig.tar.gz' gcc-14_14-20240126.orig.tar.gz 90930640 SHA512:419337dd01e5ab3caef9bc84609e8473a06c15a7bad14d598aa56f3b31e6798843f3acff9523961a8b3c1e4cb1307a94e6455e28acfa56660a4d0a5915aff4fb
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14-20240126-2ubuntu1.debian.tar.xz' gcc-14_14-20240126-2ubuntu1.debian.tar.xz 537820 SHA512:389ddd55250785010f9962cdf70cb0d113612e77a4911b2fda0dd6abc2b56120e7740a3d6ad864632677a81ff9f0d6bde3775b19d4f57df4326f47954328f905
-```
 
 ### `dpkg` source package: `gcc-defaults=1.214ubuntu1`
 
@@ -1408,14 +1401,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.1-4ubuntu7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.1-4ubuntu7.dsc' gnutls28_3.8.1-4ubuntu7.dsc 3091 SHA512:cc55527de92b38a9c23a3a9164f137eda083d923d2b312608d9adec14ac5dc2a6be7448179913c6b8f4c3b63f8c2a4cbe9e27b98ac2d21a6c1dc4dac9d9a54fb
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.1.orig.tar.xz' gnutls28_3.8.1.orig.tar.xz 6447056 SHA512:22e78db86b835843df897d14ad633d8a553c0f9b1389daa0c2f864869c6b9ca889028d434f9552237dc4f1b37c978fbe0cce166e3768e5d4e8850ff69a6fc872
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.1-4ubuntu7.debian.tar.xz' gnutls28_3.8.1-4ubuntu7.debian.tar.xz 73680 SHA512:917e2673388b59d5e52f614266629bc710ac0cf904d668f6482a400a71bec2fa1c0a4820982cf24269f1bdf390106a151b54742b3bb4e2199c9a0f518c1e3a14
-```
 
 ### `dpkg` source package: `gobject-introspection=1.78.1-6`
 
@@ -2685,15 +2673,9 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`, `/usr/share/doc/
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.5-1build2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.5-1build2.dsc' libselinux_3.5-1build2.dsc 3007 SHA512:ac8e7137344bcf46bbb062ef0f07860c74481e6b4d635be1be40bafc7e0e84554a5e30f85b87f03bf90751ff2753fa3a2e5e4320ab64919df39bb27499c559da
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.5.orig.tar.gz' libselinux_3.5.orig.tar.gz 211453 SHA512:4e13261a5821018a5f3cdce676f180bb62e5bc225981ca8a498ece0d1c88d9ba8eaa0ce4099dd0849309a8a7c5a9a0953df841a9922f2c284e5a109e5d937ba7
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.5.orig.tar.gz.asc' libselinux_3.5.orig.tar.gz.asc 981 SHA512:ba486d29c92801a02f75213ef5bcc4a0c4a87afe9dfa797aa9bb495ded40f21e37b22d6ea114c0e480d669b090d1116e8b9cac9fa9ea29678d3647bc58d8bb29
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.5-1build2.debian.tar.xz' libselinux_3.5-1build2.debian.tar.xz 35960 SHA512:87fe257d83f8de42662016790a0fccdfe984344b2d2c0a78895295d33e1b667e4270c5d2402609e95fdac30e596715032b4754d78b661a19842ea03690ac053f
-```
 
 ### `dpkg` source package: `libsemanage=3.5-1build1`
 
@@ -3588,14 +3570,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.58.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.58.0-1.dsc' nghttp2_1.58.0-1.dsc 2534 SHA512:e5c4f7da9d382d75832ac94a71183eb88c87e1611c2c282b47230c26236303c75801b6dacf4acda35c45b995c95dc7482b25579aa68a52036f58b45528493dd2
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.58.0.orig.tar.gz' nghttp2_1.58.0.orig.tar.gz 1061810 SHA512:70d7b37b57494847dd6ce940361a4add2dbbd0f533253cafb926089bbf9ad2376d52bf6334427521a133517fae14b7f96ca4c052c434c28ebcfb1a66db884d1d
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.58.0-1.debian.tar.xz' nghttp2_1.58.0-1.debian.tar.xz 11788 SHA512:01a467dfce017ad47707e21ebef43b215ccdf7940e273fbc0e16ed616a59f38b260f70dde15e53ca24c545a9e489967b747c6f857b6794122fd519d1e7f353c1
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/nghttp2/1.58.0-1/
+
 
 ### `dpkg` source package: `npth=1.6-3build2`
 
@@ -3797,15 +3778,9 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `customFSFUL`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.25.3-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3-2ubuntu2.dsc' p11-kit_0.25.3-2ubuntu2.dsc 2645 SHA512:7dc7b2379e203df71ec61279ad8b02a952e45a235a1b89c4751329102b37b8ec9261c85bd08cbf896f9eb7ae184e46a21c2c725405fcaf13f0e1e4af5997f19d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3.orig.tar.xz' p11-kit_0.25.3.orig.tar.xz 991528 SHA512:ad2d393bf122526cbba18dc9d5a13f2c1cad7d70125ec90ffd02059dfa5ef30ac59dfc0bb9bc6380c8f317e207c9e87e895f1945634f56ddf910c2958868fb4c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3.orig.tar.xz.asc' p11-kit_0.25.3.orig.tar.xz.asc 228 SHA512:e275d64222dc5b15fd5d0f6927c8317dc7f85fdce8dea084a5cda8845ae1115e04680c7ebe774d7f97232a7aab271e8d264f2dbcb2d90833ad70b6fa7946b778
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3-2ubuntu2.debian.tar.xz' p11-kit_0.25.3-2ubuntu2.debian.tar.xz 25908 SHA512:0a09ade5e91672790bb1b191210ef17c5ed88cade440a16619239769b80b7552690323ab5f9ebdfc053fa2c602b8fdaa936af2f3374a7d38ac4a866e1e0f2792
-```
 
 ### `dpkg` source package: `pam=1.5.2-9.1ubuntu2`
 

@@ -738,14 +738,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.1-4ubuntu7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.1-4ubuntu7.dsc' gnutls28_3.8.1-4ubuntu7.dsc 3091 SHA512:cc55527de92b38a9c23a3a9164f137eda083d923d2b312608d9adec14ac5dc2a6be7448179913c6b8f4c3b63f8c2a4cbe9e27b98ac2d21a6c1dc4dac9d9a54fb
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.1.orig.tar.xz' gnutls28_3.8.1.orig.tar.xz 6447056 SHA512:22e78db86b835843df897d14ad633d8a553c0f9b1389daa0c2f864869c6b9ca889028d434f9552237dc4f1b37c978fbe0cce166e3768e5d4e8850ff69a6fc872
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.1-4ubuntu7.debian.tar.xz' gnutls28_3.8.1-4ubuntu7.debian.tar.xz 73680 SHA512:917e2673388b59d5e52f614266629bc710ac0cf904d668f6482a400a71bec2fa1c0a4820982cf24269f1bdf390106a151b54742b3bb4e2199c9a0f518c1e3a14
-```
 
 ### `dpkg` source package: `grep=3.11-4`
 
@@ -1137,15 +1132,9 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.5-1build2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.5-1build2.dsc' libselinux_3.5-1build2.dsc 3007 SHA512:ac8e7137344bcf46bbb062ef0f07860c74481e6b4d635be1be40bafc7e0e84554a5e30f85b87f03bf90751ff2753fa3a2e5e4320ab64919df39bb27499c559da
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.5.orig.tar.gz' libselinux_3.5.orig.tar.gz 211453 SHA512:4e13261a5821018a5f3cdce676f180bb62e5bc225981ca8a498ece0d1c88d9ba8eaa0ce4099dd0849309a8a7c5a9a0953df841a9922f2c284e5a109e5d937ba7
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.5.orig.tar.gz.asc' libselinux_3.5.orig.tar.gz.asc 981 SHA512:ba486d29c92801a02f75213ef5bcc4a0c4a87afe9dfa797aa9bb495ded40f21e37b22d6ea114c0e480d669b090d1116e8b9cac9fa9ea29678d3647bc58d8bb29
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.5-1build2.debian.tar.xz' libselinux_3.5-1build2.debian.tar.xz 35960 SHA512:87fe257d83f8de42662016790a0fccdfe984344b2d2c0a78895295d33e1b667e4270c5d2402609e95fdac30e596715032b4754d78b661a19842ea03690ac053f
-```
 
 ### `dpkg` source package: `libsemanage=3.5-1build1`
 
@@ -1560,15 +1549,9 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `customFSFUL`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.25.3-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3-2ubuntu2.dsc' p11-kit_0.25.3-2ubuntu2.dsc 2645 SHA512:7dc7b2379e203df71ec61279ad8b02a952e45a235a1b89c4751329102b37b8ec9261c85bd08cbf896f9eb7ae184e46a21c2c725405fcaf13f0e1e4af5997f19d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3.orig.tar.xz' p11-kit_0.25.3.orig.tar.xz 991528 SHA512:ad2d393bf122526cbba18dc9d5a13f2c1cad7d70125ec90ffd02059dfa5ef30ac59dfc0bb9bc6380c8f317e207c9e87e895f1945634f56ddf910c2958868fb4c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3.orig.tar.xz.asc' p11-kit_0.25.3.orig.tar.xz.asc 228 SHA512:e275d64222dc5b15fd5d0f6927c8317dc7f85fdce8dea084a5cda8845ae1115e04680c7ebe774d7f97232a7aab271e8d264f2dbcb2d90833ad70b6fa7946b778
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3-2ubuntu2.debian.tar.xz' p11-kit_0.25.3-2ubuntu2.debian.tar.xz 25908 SHA512:0a09ade5e91672790bb1b191210ef17c5ed88cade440a16619239769b80b7552690323ab5f9ebdfc053fa2c602b8fdaa936af2f3374a7d38ac4a866e1e0f2792
-```
 
 ### `dpkg` source package: `pam=1.5.2-9.1ubuntu2`
 

@@ -1395,19 +1395,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.209
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.209.dsc' gcc-defaults_1.209.dsc 12977 SHA256:1630a5032c099af0ed37a1ef4ec4621d40dca07a90fdb5ae2c2c0cc72731d883
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.209.tar.xz' gcc-defaults_1.209.tar.xz 49252 SHA256:ced894e554179a37f5d7ad6cf2ade344ce0948c7600fc4a822bfc995e2744f4d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-defaults/1.209/
 
-- https://sources.debian.net/src/gcc-defaults/1.209/ (for browsing the source)
-- https://sources.debian.net/src/gcc-defaults/1.209/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-defaults/1.209/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.23-5`
 
@@ -2552,20 +2546,13 @@ Licenses: (parsed from: `/usr/share/doc/libdeflate-dev/copyright`, `/usr/share/d
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdeflate=1.18-1
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.18-1.dsc' libdeflate_1.18-1.dsc 2196 SHA256:a5c2eb47274cb08515906097b8e8bac5db6bef9046741669a635efdedc3998f4
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.18.orig.tar.gz' libdeflate_1.18.orig.tar.gz 184924 SHA256:225d982bcaf553221c76726358d2ea139bb34913180b20823c782cede060affd
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.18-1.debian.tar.xz' libdeflate_1.18-1.debian.tar.xz 4756 SHA256:0a570e79b9fe0377fcf26888b1e5160779dfcfe6cf069892796016c2958eac0f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libdeflate/1.18-1/
 
-- https://sources.debian.net/src/libdeflate/1.18-1/ (for browsing the source)
-- https://sources.debian.net/src/libdeflate/1.18-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdeflate/1.18-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libedit=3.1-20230828-1`
 
@@ -2891,21 +2878,13 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn2=2.3.4-1
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.4-1.dsc' libidn2_2.3.4-1.dsc 1915 SHA256:b7c1c506ea6691c9481176171490c3fde53ef8e51e1a28fb1d4e19dda61f7d59
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.4.orig.tar.gz' libidn2_2.3.4.orig.tar.gz 2083823 SHA256:93caba72b4e051d1f8d4f5a076ab63c99b77faee019b72b9783b267986dbb45f
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.4.orig.tar.gz.asc' libidn2_2.3.4.orig.tar.gz.asc 228 SHA256:c55c8cd14f398186407808f188ed5325faa01a62d88e79bb700bd8c839f75ceb
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.4-1.debian.tar.xz' libidn2_2.3.4-1.debian.tar.xz 16024 SHA256:a928219502f43e337aa3476098b96a250776d9be0b92255bd701c7fee572df68
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libidn2/2.3.4-1/
 
-- https://sources.debian.net/src/libidn2/2.3.4-1/ (for browsing the source)
-- https://sources.debian.net/src/libidn2/2.3.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libidn2/2.3.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libjpeg-turbo=1:2.1.5-2`
 
