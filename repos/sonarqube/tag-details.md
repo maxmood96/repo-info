@@ -6832,23 +6832,48 @@ $ docker pull sonarqube@sha256:f3e9ac48bfd0afb9250d4a12759b8a867cfa414ff338b5580
 
 ## `sonarqube:9.9.4-community`
 
-**does not exist** (yet?)
+```console
+$ docker pull sonarqube@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sonarqube:9.9.4-datacenter-app`
 
-**does not exist** (yet?)
+```console
+$ docker pull sonarqube@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sonarqube:9.9.4-datacenter-search`
 
-**does not exist** (yet?)
+```console
+$ docker pull sonarqube@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sonarqube:9.9.4-developer`
 
-**does not exist** (yet?)
+```console
+$ docker pull sonarqube@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sonarqube:9.9.4-enterprise`
 
-**does not exist** (yet?)
+```console
+$ docker pull sonarqube@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `sonarqube:community`
 
