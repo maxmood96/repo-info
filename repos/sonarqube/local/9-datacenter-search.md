@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e4bf4199938ec1b03f6a78b3fc373d823617e481d8824fef7e2ef6a120fb4c42`
-- Created: `2023-11-14T10:44:06Z`
-- Virtual Size: ~ 763.72 Mb  
+- Image ID: `sha256:d45541e0b5e98fe6ab52f2ac8f401e677380dfa2b17f75d8d0d264249a9f17b8`
+- Created: `2024-02-05T11:14:58Z`
+- Virtual Size: ~ 763.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/sonarqube/docker/run.sh"]`
@@ -1094,9 +1094,8 @@ Binary Packages:
 
 - `libcap2:amd64=1:2.44-1ubuntu0.22.04.1`
 - `libcap2-bin=1:2.44-1ubuntu0.22.04.1`
-- `libpam-cap:amd64=1:2.44-1ubuntu0.22.04.1`
 
-Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`, `/usr/share/doc/libcap2-bin/copyright`, `/usr/share/doc/libpam-cap/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`, `/usr/share/doc/libcap2-bin/copyright`)
 
 - `BSD-3-clause`
 - `GPL-2`
@@ -1576,25 +1575,6 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux-atm=1:2.5.1-4build2`
-
-Binary Packages:
-
-- `libatm1:amd64=1:2.5.1-4build2`
-
-Licenses: (parsed from: `/usr/share/doc/libatm1/copyright`)
-
-- `GPL-2`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris linux-atm=1:2.5.1-4build2
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux-atm/linux-atm_2.5.1-4build2.dsc' linux-atm_2.5.1-4build2.dsc 2062 SHA512:58bb16bd504412282e336b3a0fc8f62ebd3dcd43e9218085809c36812741a62d7a5cef31080b52a8819c3de7ee4bc5305a193f3ac4782826233c2a598c90f5ca
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux-atm/linux-atm_2.5.1.orig.tar.gz' linux-atm_2.5.1.orig.tar.gz 1308638 SHA512:7a3e931c47651f7a2acc646120f9a8172c2177d1c6b2267a1a0249c0b3c97ef5c4e93c4e213c455984ec2adf3eaebaab34d489dd27161425fa1c5bcd483fa7a3
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux-atm/linux-atm_2.5.1-4build2.debian.tar.xz' linux-atm_2.5.1-4build2.debian.tar.xz 10896 SHA512:f159e0344d4bb4d4ed817c8ede34d814624b63365592d9ce143ab8df1fb06b24323f80463bcf615420e0ecc9b02b4336c17541657c8ba46f1d8d710518403da9
-```
-
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
 
 Binary Packages:
@@ -1789,15 +1769,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.13
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.13.dsc' openssl_3.0.2-0ubuntu1.13.dsc 2556 SHA512:008b21355745d24d9e9d03050154ee7d5caff8c5a3c14f42c12c11595edb164a29fb9aa2af922a7a11be0c74c392bbd7377dd28c06c73c5920a9994b5858ad78
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.13.debian.tar.xz' openssl_3.0.2-0ubuntu1.13.debian.tar.xz 216532 SHA512:47dd40da04c25d4007689b8bf3be1e5520ac15e24a76af131d190f345025ab5301ba9ea47f15200e5209d278261f41cd64053e0a463666d343f26c56322bb2d8
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
