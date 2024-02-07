@@ -1,7 +1,7 @@
 ## `golang:1-bookworm`
 
 ```console
-$ docker pull golang@sha256:e523727d50cc4f4c667179ef0f596f047fb25a2ca394c6964124047116e7889d
+$ docker pull golang@sha256:874c2677e43be36a429823f2742af85844772664f273c1c8c8235f10aba51cd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,13 +17,13 @@ $ docker pull golang@sha256:e523727d50cc4f4c667179ef0f596f047fb25a2ca394c6964124
 ### `golang:1-bookworm` - linux; amd64
 
 ```console
-$ docker pull golang@sha256:ecde762a70025518c23ca1564441dc2ae2dc7af7254392e5d48c7918b156a163
+$ docker pull golang@sha256:53048e8f87cb42d5dfb620423479e1acf2d178038c77c61b97ed5d4165e574dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **297.2 MB (297152912 bytes)**  
+-	Total Size: **299.5 MB (299504374 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c541743933a7d840c5923d7793a4417f92729d9b7115e8a5cef5deeb11eaf6b`
+-	Image ID: `sha256:7853857031a63166b8d40fba90d76f778167bd8358b94b929caa754928fc913f`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -35,21 +35,21 @@ CMD ["bash"]
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
 # Wed, 31 Jan 2024 23:22:52 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Feb 2024 18:23:15 GMT
+# Tue, 06 Feb 2024 23:26:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 Feb 2024 18:23:15 GMT
-ENV GOLANG_VERSION=1.21.7
-# Tue, 06 Feb 2024 18:23:15 GMT
+# Tue, 06 Feb 2024 23:26:32 GMT
+ENV GOLANG_VERSION=1.22.0
+# Tue, 06 Feb 2024 23:26:32 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 06 Feb 2024 18:23:15 GMT
+# Tue, 06 Feb 2024 23:26:32 GMT
 ENV GOPATH=/go
-# Tue, 06 Feb 2024 18:23:15 GMT
+# Tue, 06 Feb 2024 23:26:32 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 06 Feb 2024 18:23:15 GMT
+# Tue, 06 Feb 2024 23:26:32 GMT
 COPY /usr/local/go/ /usr/local/go/ # buildkit
-# Tue, 06 Feb 2024 18:23:15 GMT
+# Tue, 06 Feb 2024 23:26:32 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 06 Feb 2024 18:23:15 GMT
+# Tue, 06 Feb 2024 23:26:32 GMT
 WORKDIR /go
 ```
 
@@ -70,13 +70,13 @@ WORKDIR /go
 		Last Modified: Thu, 01 Feb 2024 12:58:13 GMT  
 		Size: 92.4 MB (92366895 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:848a732639f4ba926051511178f320171f919f2f157951958525c0773d8bc58c`  
-		Last Modified: Tue, 06 Feb 2024 23:55:39 GMT  
-		Size: 67.0 MB (67009646 bytes)  
+	-	`sha256:8bbf1019a3931d46680ba28312ece943ca4d86f80f9c58b09968a37e4a049307`  
+		Last Modified: Wed, 07 Feb 2024 13:33:44 GMT  
+		Size: 69.4 MB (69361107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a6f762ff10f6812e1b6063bc2a1c85f2119b2b05906377991c98ee06a4160b9`  
-		Last Modified: Tue, 06 Feb 2024 23:55:28 GMT  
-		Size: 174.0 B  
+	-	`sha256:bf1e6dc5a1ac410b7e8343abf0d478e1b8a4ee1967c9a5a2297645d6a0f06926`  
+		Last Modified: Wed, 07 Feb 2024 13:33:33 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
