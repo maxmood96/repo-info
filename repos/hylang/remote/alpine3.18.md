@@ -1,7 +1,7 @@
 ## `hylang:alpine3.18`
 
 ```console
-$ docker pull hylang@sha256:3321b218b6d6f62cfa60d5f0f15701242c9ba80b6b502aa2a2b6185ba8ee85d5
+$ docker pull hylang@sha256:fb92ca6021223a1eef8104600a39e6c9ee99416ae79feca5664938dcdd01e72f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -525,13 +525,13 @@ $ docker pull hylang@sha256:e5aea3473f9844161f1b583e311eb9ec958c9fcdf78ea28365ae
 ### `hylang:alpine3.18` - linux; ppc64le
 
 ```console
-$ docker pull hylang@sha256:95c1d5de61b5a25ac22c81c8b60090aacf9e40ef6a1d01d567ef3efa48afa174
+$ docker pull hylang@sha256:c62ff980f04919d074d2d4c2aaa26b6d39143696beb51401800e5f3e4ce0bff2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.1 MB (24137356 bytes)**  
+-	Total Size: **24.2 MB (24201381 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72ebf223a092c2e3725d84d912041b6998b97a117a11446a06c2e2e2da53fc80`
+-	Image ID: `sha256:1b14cb7c44b5625362d181465a75ff0a2b837a82fbed74543834377b477577c8`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -539,29 +539,29 @@ $ docker pull hylang@sha256:95c1d5de61b5a25ac22c81c8b60090aacf9e40ef6a1d01d567ef
 ADD file:9adfbd84cce437533ba2c9cac17cd508a477a1a94523005875b2f04ddac20112 in / 
 # Fri, 05 Jan 2024 23:20:01 GMT
 CMD ["/bin/sh"]
-# Wed, 20 Dec 2023 04:08:00 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 20 Dec 2023 04:08:00 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Dec 2023 04:08:00 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 RUN set -eux; 	apk add --no-cache 		ca-certificates 		tzdata 	; # buildkit
-# Wed, 20 Dec 2023 04:08:00 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 ENV GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305
-# Wed, 20 Dec 2023 04:08:00 GMT
-ENV PYTHON_VERSION=3.12.1
-# Wed, 20 Dec 2023 04:08:00 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
+ENV PYTHON_VERSION=3.12.2
+# Fri, 05 Jan 2024 23:20:01 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gnupg 		tar 		xz 				bluez-dev 		bzip2-dev 		dpkg-dev dpkg 		expat-dev 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz-dev 		zlib-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-lto 		--with-system-expat 		--without-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 		"PROFILE_TASK=${PROFILE_TASK:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		"PROFILE_TASK=${PROFILE_TASK:-}" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-network --virtual .python-rundeps 	; 	apk del --no-network .build-deps; 		python3 --version # buildkit
-# Wed, 20 Dec 2023 04:08:00 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
-# Wed, 20 Dec 2023 04:08:00 GMT
-ENV PYTHON_PIP_VERSION=23.2.1
-# Wed, 20 Dec 2023 04:08:00 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/049c52c665e8c5fd1751f942316e0a5c777d304f/public/get-pip.py
-# Wed, 20 Dec 2023 04:08:00 GMT
-ENV PYTHON_GET_PIP_SHA256=7cfd4bdc4d475ea971f1c0710a5953bcc704d171f83c797b9529d9974502fcc6
-# Wed, 20 Dec 2023 04:08:00 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
+ENV PYTHON_PIP_VERSION=24.0
+# Fri, 05 Jan 2024 23:20:01 GMT
+ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/dbf0c85f76fb6e1ab42aa672ffca6f0a675d9ee4/public/get-pip.py
+# Fri, 05 Jan 2024 23:20:01 GMT
+ENV PYTHON_GET_PIP_SHA256=dfe9fd5c28dc98b5ac17979a953ea550cec37ae1b47a5116007395bfacff2ab9
+# Fri, 05 Jan 2024 23:20:01 GMT
 RUN set -eux; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 	; 	rm -f get-pip.py; 		pip --version # buildkit
-# Wed, 20 Dec 2023 04:08:00 GMT
+# Fri, 05 Jan 2024 23:20:01 GMT
 CMD ["python3"]
 # Fri, 05 Jan 2024 23:20:01 GMT
 ENV HY_VERSION=0.28.0
@@ -582,45 +582,45 @@ CMD ["hy"]
 		Last Modified: Sat, 27 Jan 2024 06:52:09 GMT  
 		Size: 625.4 KB (625408 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8183eed3a44332d441f9d533d462ec4b05629e0f537f6f9864d9d5977010c90d`  
-		Last Modified: Sat, 27 Jan 2024 06:52:52 GMT  
-		Size: 12.0 MB (11955752 bytes)  
+	-	`sha256:a99ff2200b40af1e8e000d898986d4d374a973c2d07787bc96602a2b2aecf741`  
+		Last Modified: Wed, 07 Feb 2024 21:57:45 GMT  
+		Size: 12.0 MB (11983796 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2a557e16a4bce2c2d8e9f7240edc0550b4184f0e4d6b4b4ae51a9af36b5c00f`  
-		Last Modified: Sat, 27 Jan 2024 06:52:50 GMT  
+	-	`sha256:9592da50615f57a6f73130c8909a94f1fcf1fa34e63a3c8374f0bd36171b90c9`  
+		Last Modified: Wed, 07 Feb 2024 21:57:42 GMT  
 		Size: 242.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8ff39d9de46e1d0da76668fc788fbcf4b7fbc0a679715c361aa09cdaccd3bfd`  
-		Last Modified: Sat, 27 Jan 2024 06:52:51 GMT  
-		Size: 2.7 MB (2676277 bytes)  
+	-	`sha256:81a3f1bb1461a99b2f7ad8f55acceaca3890aa6eb86c26a720e27cf11b385126`  
+		Last Modified: Wed, 07 Feb 2024 21:57:43 GMT  
+		Size: 2.7 MB (2696699 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d91a53d9eaac6c6e9ec27265fef4a3721930c1c36433ac695d27aae19911962f`  
-		Last Modified: Tue, 30 Jan 2024 04:04:25 GMT  
-		Size: 5.5 MB (5531190 bytes)  
+	-	`sha256:39ca2317188f223c0457b31251459fa36e393c59e9d3f016d71dae90980f8e95`  
+		Last Modified: Wed, 07 Feb 2024 23:36:06 GMT  
+		Size: 5.5 MB (5546749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:alpine3.18` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:d01971466fbf1667db200183e6cb1c8a64e76c9f5d10c5b051bed631c2ec3872
+$ docker pull hylang@sha256:05f15f93275c2647b5cde44d7a10859e45bbc07742d2f6bf4d090374b76328dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **871.2 KB (871165 bytes)**  
+-	Total Size: **871.1 KB (871123 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38f126831e7715d462af96e7170a9b39d85ad3a7a24d18f9404d415b05e60ecf`
+-	Image ID: `sha256:c2c438acd581daf690b96d6d171d782c42a59dfc36f14fb148b860a7179359d0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bc01a8d4004192a6b7afa977e52bda88fcc1c1ec798cc88a3a1fb117f1ed5d9d`  
-		Last Modified: Tue, 30 Jan 2024 04:04:24 GMT  
-		Size: 860.7 KB (860740 bytes)  
+	-	`sha256:ad6dd1690c4029754f9e9411f52800b57a70a892cc25d88bc0d933794ce5024e`  
+		Last Modified: Wed, 07 Feb 2024 23:36:06 GMT  
+		Size: 860.7 KB (860700 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1ffdd8d2cccd75aade6a1cd0a612f09396bbac82395d77e75b8f0c40acda303a`  
-		Last Modified: Tue, 30 Jan 2024 04:04:23 GMT  
-		Size: 10.4 KB (10425 bytes)  
+	-	`sha256:e1fc5b5d382b83d0c67bf89924d3687d105293b14908ed8acdfb3beab890b34b`  
+		Last Modified: Wed, 07 Feb 2024 23:36:06 GMT  
+		Size: 10.4 KB (10423 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hylang:alpine3.18` - linux; s390x
