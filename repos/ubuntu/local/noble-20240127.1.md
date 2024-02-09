@@ -816,15 +816,9 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn2=2.3.4-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2/libidn2_2.3.4-1build1.dsc' libidn2_2.3.4-1build1.dsc 2544 SHA512:0f74769d4eb24386f8410e5fdbe95c6bd40e26aab34174a4c34311e835fcd6043dcf17c0b7d918cefd212922c78ae08d7b5bfe506e02f545906b6eec54472af8
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2/libidn2_2.3.4.orig.tar.gz' libidn2_2.3.4.orig.tar.gz 2083823 SHA512:a6e90ccef56cfd0b37e3333ab3594bb3cec7ca42a138ca8c4f4ce142da208fa792f6c78ca00c01001c2bc02831abcbaf1cf9bcc346a5290fd7b30708f5a462f3
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2/libidn2_2.3.4.orig.tar.gz.asc' libidn2_2.3.4.orig.tar.gz.asc 228 SHA512:d2a575723326ae256a60e3edf7766af65434f716e11f963bb7ac29b6b2ff2872b41684a1bd1c6f3a3921e8a083512eff1faf2b0fc02513095c2bcf3563312fe0
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2/libidn2_2.3.4-1build1.debian.tar.xz' libidn2_2.3.4-1build1.debian.tar.xz 16088 SHA512:ee67682f1696987dd41ab4ff25681a86d189826ee4a5dc0673b457a7d0200c48c409db0c374fecc7c17965193ae2adb0ab96ae80cbabde5aae4125cc3f6a6634
-```
 
 ### `dpkg` source package: `libmd=1.1.0-2`
 
@@ -879,15 +873,9 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.5-1build2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.5-1build2.dsc' libselinux_3.5-1build2.dsc 3007 SHA512:ac8e7137344bcf46bbb062ef0f07860c74481e6b4d635be1be40bafc7e0e84554a5e30f85b87f03bf90751ff2753fa3a2e5e4320ab64919df39bb27499c559da
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.5.orig.tar.gz' libselinux_3.5.orig.tar.gz 211453 SHA512:4e13261a5821018a5f3cdce676f180bb62e5bc225981ca8a498ece0d1c88d9ba8eaa0ce4099dd0849309a8a7c5a9a0953df841a9922f2c284e5a109e5d937ba7
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.5.orig.tar.gz.asc' libselinux_3.5.orig.tar.gz.asc 981 SHA512:ba486d29c92801a02f75213ef5bcc4a0c4a87afe9dfa797aa9bb495ded40f21e37b22d6ea114c0e480d669b090d1116e8b9cac9fa9ea29678d3647bc58d8bb29
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.5-1build2.debian.tar.xz' libselinux_3.5-1build2.debian.tar.xz 35960 SHA512:87fe257d83f8de42662016790a0fccdfe984344b2d2c0a78895295d33e1b667e4270c5d2402609e95fdac30e596715032b4754d78b661a19842ea03690ac053f
-```
 
 ### `dpkg` source package: `libsemanage=3.5-1build1`
 
@@ -902,15 +890,9 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=3.5-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.5-1build1.dsc' libsemanage_3.5-1build1.dsc 3014 SHA512:aa134e2bd2dfa58d11966d7df7ca94738f2095d077dbf329c4c2fda2a0969cf923f64e9e81c8e1f25833bcb5fcf5f3ab8de6930332c9071398edb116d87f8d23
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.5.orig.tar.gz' libsemanage_3.5.orig.tar.gz 185060 SHA512:959fbd0d6bc6849da6caa13dc41c3f8818cbbd29f04b5d2ac7246c4b395b4f370f113a04cc9cfcb52be2afebfa636013ac4ad4011384c58c7ce066a45cae2751
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.5.orig.tar.gz.asc' libsemanage_3.5.orig.tar.gz.asc 981 SHA512:c0a5ddb69c32ddefa26b3d1ec676bcc373e959dd8b4a7fcf6e1f74a3ca8e9af22af851ca66d3c43a704215ff79d27244e33d23038ef2f52ccc321aeb5f0c2790
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.5-1build1.debian.tar.xz' libsemanage_3.5-1build1.debian.tar.xz 30032 SHA512:338ad06136b29a955ec5492d10fa620dd8745371112ba4376d757d38ba07c08c07901ceade44d7324306d409cc14715cb6fca67292f0e02baee07322a999c721
-```
 
 ### `dpkg` source package: `libsepol=3.5-2`
 
