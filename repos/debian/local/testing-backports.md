@@ -1768,21 +1768,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2023d-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2023d-1.dsc' tzdata_2023d-1.dsc 2429 SHA256:bd8e7517af66474ca7522eb920edcd27fd795df3aa56a72eeaadb010d0ffac88
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2023d.orig.tar.gz' tzdata_2023d.orig.tar.gz 449767 SHA256:dbca21970b0a8b8c0ceceec1d7b91fa903be0f6eca5ae732b5329672232a08f3
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2023d.orig.tar.gz.asc' tzdata_2023d.orig.tar.gz.asc 833 SHA256:c9e755e34bed5c686e53cd93255195a37a25d86f6e863844eb12f91aab8f85fc
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2023d-1.debian.tar.xz' tzdata_2023d-1.debian.tar.xz 122092 SHA256:44b3b5f32a68dabfac48a0784d4408bc8108e29e6e6c5783b53f32cfba4a3a00
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2023d-1/
 
-- https://sources.debian.net/src/tzdata/2023d-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2023d-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2023d-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `usrmerge=39`
 
