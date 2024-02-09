@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:19f6ae362f22081125e3d8fcc2324e34114ac5e54388abe0d2f67d97143abe1f`
+- Image ID: `sha256:ae3b29c77001dafe383df7e5bbc3f0da069b210432c791be470b8b9e7971ec5b`
 - Created: `2024-01-22T14:26:01Z`
-- Virtual Size: ~ 915.64 Mb  
+- Virtual Size: ~ 914.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `NEO4J_HOME=/var/lib/neo4j`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-01-31T08:51:16`
+  - `build-date=2024-02-01T13:45:18`
   - `com.redhat.component=ubi8-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -31,9 +31,9 @@
   - `io.openshift.tags=minimal rhel8`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi8-minimal`
-  - `release=1108.1706691034`
+  - `release=1108.1706795067`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 8.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8-minimal/images/8.9-1108.1706691034`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8-minimal/images/8.9-1108.1706795067`
   - `vcs-ref=7e7670a8c8c9a3be83beaa2787f3703b404d4a1d`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
