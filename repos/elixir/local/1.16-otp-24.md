@@ -1,9 +1,9 @@
-# `elixir:1.16.0-otp-24`
+# `elixir:1.16.1-otp-24`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9dd785c9fe13dad9c8694fec2eedab0ec55503da570cfd3be925929dac8f8290`
-- Created: `2023-12-23T22:14:59Z`
+- Image ID: `sha256:f6f8a73b1a93840f6d6e15019912aae48d89b715919cc59635d95702fe0e4414`
+- Created: `2024-02-06T15:23:33Z`
 - Virtual Size: ~ 1.48 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `OTP_VERSION=24.3.4.15`
   - `REBAR3_VERSION=3.20.0`
   - `REBAR_VERSION=2.6.4`
-  - `ELIXIR_VERSION=v1.16.0`
+  - `ELIXIR_VERSION=v1.16.1`
   - `LANG=C.UTF-8`
 - Labels:
   - `org.opencontainers.image.version=24.3.4.15`
@@ -8236,21 +8236,13 @@ Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.0-18/copyright`, 
 - `MPL-1.1`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris webkit2gtk=2.42.4-1~deb11u1
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.42.4-1%7edeb11u1.dsc' webkit2gtk_2.42.4-1~deb11u1.dsc 3929 SHA256:b26aff19a7252071967ca6d489896623b5d4abe04d7e67b144580b1c63d5f473
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.42.4.orig.tar.xz' webkit2gtk_2.42.4.orig.tar.xz 32059260 SHA256:52288b30bda22373442cecb86f9c9a569ad8d4769a1f97b352290ed92a67ed86
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.42.4.orig.tar.xz.asc' webkit2gtk_2.42.4.orig.tar.xz.asc 195 SHA256:4c81a8b90fbdd689bba48c88ee5dcab23ae53931d48e1c69199e71870a5f3185
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.42.4-1%7edeb11u1.debian.tar.xz' webkit2gtk_2.42.4-1~deb11u1.debian.tar.xz 85516 SHA256:a35d3850265fb2e246bad6d40407492195c2597ab744e430574d14aa1843e4f0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/webkit2gtk/2.42.4-1~deb11u1/
 
-- https://sources.debian.net/src/webkit2gtk/2.42.4-1~deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/webkit2gtk/2.42.4-1~deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/webkit2gtk/2.42.4-1~deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21-1+deb11u1`
 
