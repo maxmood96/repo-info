@@ -1080,20 +1080,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/li
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.5.0-2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.5.0-2.dsc' expat_2.5.0-2.dsc 1964 SHA256:b4aab5ad11812b0593128742f08be007a0c1663d683b7ef705d0660db6e94544
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.5.0.orig.tar.gz' expat_2.5.0.orig.tar.gz 8320988 SHA256:ab00ee05c7067fd10a35c5d2a4922ebba746ddd50ff83b79c828da17bbdf1757
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.5.0-2.debian.tar.xz' expat_2.5.0-2.debian.tar.xz 12804 SHA256:605973555634c2197ce219736cbb7eb17464894768c5fe2c4b8b8279f052ece5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.5.0-2/
 
-- https://sources.debian.net/src/expat/2.5.0-2/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.5.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.5.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.10-1`
 
@@ -2275,20 +2268,13 @@ Licenses: (parsed from: `/usr/share/doc/libblas3/copyright`, `/usr/share/doc/lib
 - `BSD-3-clause`
 - `BSD-3-clause-intel`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lapack=3.12.0-2
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.12.0-2.dsc' lapack_3.12.0-2.dsc 3307 SHA256:2b079892997c724e3b0d649b00986ef21f1438e219b44e4146d34d058356c0d6
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.12.0.orig.tar.gz' lapack_3.12.0.orig.tar.gz 7933607 SHA256:eac9570f8e0ad6f30ce4b963f4f033f0f643e7c3912fc9ee6cd99120675ad48b
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.12.0-2.debian.tar.xz' lapack_3.12.0-2.debian.tar.xz 28408 SHA256:b181aa768bd0647ca99e23588195859d4032a8f75a30043775bf7b003ca8f681
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lapack/3.12.0-2/
 
-- https://sources.debian.net/src/lapack/3.12.0-2/ (for browsing the source)
-- https://sources.debian.net/src/lapack/3.12.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lapack/3.12.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lcms2=2.14-2`
 
@@ -2435,20 +2421,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap-ng=0.8.4-1
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.4-1.dsc' libcap-ng_0.8.4-1.dsc 1638 SHA256:868aaad7806afad2e167629535bd32be91226bb21ec457d42581838ff7ec41b0
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.4.orig.tar.gz' libcap-ng_0.8.4.orig.tar.gz 59317 SHA256:5615c76a61039e283a6bd107c4faf345ae5ad4dcd45907defe5e474d8fdb6fd2
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.4-1.debian.tar.xz' libcap-ng_0.8.4-1.debian.tar.xz 6836 SHA256:a1e8f6b5741732c793caec0cb440620c0d54f772998e094da449138bc19ac184
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcap-ng/0.8.4-1/
 
-- https://sources.debian.net/src/libcap-ng/0.8.4-1/ (for browsing the source)
-- https://sources.debian.net/src/libcap-ng/0.8.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcap-ng/0.8.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap2=1:2.66-4`
 
@@ -5008,20 +4987,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-16=16.1-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-16/postgresql-16_16.1-1.dsc' postgresql-16_16.1-1.dsc 4187 SHA256:ca8f7b31e77c2ff09c6ded2c0964fcfd5a61a30b7bd865e9b6debd9c754910cf
-'http://deb.debian.org/debian/pool/main/p/postgresql-16/postgresql-16_16.1.orig.tar.bz2' postgresql-16_16.1.orig.tar.bz2 24605482 SHA256:ce3c4d85d19b0121fe0d3f8ef1fa601f71989e86f8a66f7dc3ad546dd5564fec
-'http://deb.debian.org/debian/pool/main/p/postgresql-16/postgresql-16_16.1-1.debian.tar.xz' postgresql-16_16.1-1.debian.tar.xz 30640 SHA256:86eb655649921d52b6027e7fa40403ec44e743647962158df5a8c4ebf4ff5294
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-16/16.1-1/
 
-- https://sources.debian.net/src/postgresql-16/16.1-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-16/16.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-16/16.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.4-4`
 
@@ -5136,20 +5108,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.11/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.11=3.11.7-2
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.7-2.dsc' python3.11_3.11.7-2.dsc 3781 SHA256:24909ae983b14d136378bab28d29976297addc0f748bb2651292ae060d6674e3
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.7.orig.tar.xz' python3.11_3.11.7.orig.tar.xz 20074108 SHA256:18e1aa7e66ff3a58423d59ed22815a6954e53342122c45df20c96877c062b9b7
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.7-2.debian.tar.xz' python3.11_3.11.7-2.debian.tar.xz 213720 SHA256:5eff4459cc6a9cb75ac02fabf8b53c471ce2677523e93c203ceaa012178d097f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.11/3.11.7-2/
 
-- https://sources.debian.net/src/python3.11/3.11.7-2/ (for browsing the source)
-- https://sources.debian.net/src/python3.11/3.11.7-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.11/3.11.7-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.12=3.12.1-2`
 
@@ -5180,20 +5145,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.12=3.12.1-2
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.1-2.dsc' python3.12_3.12.1-2.dsc 3812 SHA256:be41d2aa85f0dc3823c277e943ceafb2ce0429aa267d4b67436ab00263f67e34
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.1.orig.tar.xz' python3.12_3.12.1.orig.tar.xz 20583448 SHA256:8dfb8f426fcd226657f9e2bd5f1e96e53264965176fa17d32658e873591aeb21
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.1-2.debian.tar.xz' python3.12_3.12.1-2.debian.tar.xz 212012 SHA256:c6d4023783ad4f68af566ecceeb7837f1ebf4a390e2e676b032dcf5e0aa4279c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.12/3.12.1-2/
 
-- https://sources.debian.net/src/python3.12/3.12.1-2/ (for browsing the source)
-- https://sources.debian.net/src/python3.12/3.12.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.12/3.12.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-3`
 

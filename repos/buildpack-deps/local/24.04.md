@@ -527,15 +527,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu1.dsc' curl_8.5.0-2ubuntu1.dsc 3232 SHA512:0b2648b3bb8b2d21f21962945e8136f9d8ce33989e80f8c0b42ae405ddf8cc5e89341879ebdb31e941d5435680c1cca2a7c67787e76bec1df577ece1bfc834b7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz.asc' curl_8.5.0.orig.tar.gz.asc 488 SHA512:bf15ca7bb9f97ab4283610dcfd1b1f93ba7d72786cd3f7984d08e2020b0eb0b2b2df31e7196b54643ede5abc88f05ffb3d4311ef4c872f7d157fe2abef99f69b
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu1.debian.tar.xz' curl_8.5.0-2ubuntu1.debian.tar.xz 49068 SHA512:eb60a5615c75e932ae52906fc200bf0d94ae6719a54471dc3ca55030faabc46f18641e92ad54f3d77e29e9d27344b3377e5bde48db65a0c2c3017df6050de104
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-4`
 
@@ -2349,15 +2343,9 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn2=2.3.4-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2/libidn2_2.3.4-1build1.dsc' libidn2_2.3.4-1build1.dsc 2544 SHA512:0f74769d4eb24386f8410e5fdbe95c6bd40e26aab34174a4c34311e835fcd6043dcf17c0b7d918cefd212922c78ae08d7b5bfe506e02f545906b6eec54472af8
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2/libidn2_2.3.4.orig.tar.gz' libidn2_2.3.4.orig.tar.gz 2083823 SHA512:a6e90ccef56cfd0b37e3333ab3594bb3cec7ca42a138ca8c4f4ce142da208fa792f6c78ca00c01001c2bc02831abcbaf1cf9bcc346a5290fd7b30708f5a462f3
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2/libidn2_2.3.4.orig.tar.gz.asc' libidn2_2.3.4.orig.tar.gz.asc 228 SHA512:d2a575723326ae256a60e3edf7766af65434f716e11f963bb7ac29b6b2ff2872b41684a1bd1c6f3a3921e8a083512eff1faf2b0fc02513095c2bcf3563312fe0
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2/libidn2_2.3.4-1build1.debian.tar.xz' libidn2_2.3.4-1build1.debian.tar.xz 16088 SHA512:ee67682f1696987dd41ab4ff25681a86d189826ee4a5dc0673b457a7d0200c48c409db0c374fecc7c17965193ae2adb0ab96ae80cbabde5aae4125cc3f6a6634
-```
 
 ### `dpkg` source package: `libjpeg-turbo=2.1.5-2ubuntu1`
 
@@ -2690,15 +2678,9 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=3.5-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.5-1build1.dsc' libsemanage_3.5-1build1.dsc 3014 SHA512:aa134e2bd2dfa58d11966d7df7ca94738f2095d077dbf329c4c2fda2a0969cf923f64e9e81c8e1f25833bcb5fcf5f3ab8de6930332c9071398edb116d87f8d23
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.5.orig.tar.gz' libsemanage_3.5.orig.tar.gz 185060 SHA512:959fbd0d6bc6849da6caa13dc41c3f8818cbbd29f04b5d2ac7246c4b395b4f370f113a04cc9cfcb52be2afebfa636013ac4ad4011384c58c7ce066a45cae2751
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.5.orig.tar.gz.asc' libsemanage_3.5.orig.tar.gz.asc 981 SHA512:c0a5ddb69c32ddefa26b3d1ec676bcc373e959dd8b4a7fcf6e1f74a3ca8e9af22af851ca66d3c43a704215ff79d27244e33d23038ef2f52ccc321aeb5f0c2790
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.5-1build1.debian.tar.xz' libsemanage_3.5-1build1.debian.tar.xz 30032 SHA512:338ad06136b29a955ec5492d10fa620dd8745371112ba4376d757d38ba07c08c07901ceade44d7324306d409cc14715cb6fca67292f0e02baee07322a999c721
-```
 
 ### `dpkg` source package: `libsepol=3.5-2`
 
@@ -4642,14 +4624,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unzip=6.0-28ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-28ubuntu1.dsc' unzip_6.0-28ubuntu1.dsc 1836 SHA512:d3e4624dcb937521ba0abf8696c7641877d752738e90ae62f62534220ad7d95c88885ed9619ada67b0b00c39c6de2deb703dceb2ec085ab1c090a1f0779296a4
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA512:0694e403ebc57b37218e00ec1a406cae5cc9c5b52b6798e0d4590840b6cdbf9ddc0d9471f67af783e960f8fa2e620394d51384257dca23d06bcd90224a80ce5d
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-28ubuntu1.debian.tar.xz' unzip_6.0-28ubuntu1.debian.tar.xz 28440 SHA512:1a73f1dfc8cdc0e904618461327959d27342e75cf613a8129bb664e3704b3afe1de942960a676e4eff4a6bbfbef3f6b77c94b46f79b6a035413461a11a854146
-```
 
 ### `dpkg` source package: `usrmerge=38ubuntu1`
 

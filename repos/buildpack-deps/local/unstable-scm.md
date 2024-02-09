@@ -753,20 +753,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.5.0-2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.5.0-2.dsc' expat_2.5.0-2.dsc 1964 SHA256:b4aab5ad11812b0593128742f08be007a0c1663d683b7ef705d0660db6e94544
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.5.0.orig.tar.gz' expat_2.5.0.orig.tar.gz 8320988 SHA256:ab00ee05c7067fd10a35c5d2a4922ebba746ddd50ff83b79c828da17bbdf1757
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.5.0-2.debian.tar.xz' expat_2.5.0-2.debian.tar.xz 12804 SHA256:605973555634c2197ce219736cbb7eb17464894768c5fe2c4b8b8279f052ece5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.5.0-2/
 
-- https://sources.debian.net/src/expat/2.5.0-2/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.5.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.5.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.9.0-5`
 
@@ -1312,20 +1305,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap-ng=0.8.4-1
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.4-1.dsc' libcap-ng_0.8.4-1.dsc 1638 SHA256:868aaad7806afad2e167629535bd32be91226bb21ec457d42581838ff7ec41b0
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.4.orig.tar.gz' libcap-ng_0.8.4.orig.tar.gz 59317 SHA256:5615c76a61039e283a6bd107c4faf345ae5ad4dcd45907defe5e474d8fdb6fd2
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.4-1.debian.tar.xz' libcap-ng_0.8.4-1.debian.tar.xz 6836 SHA256:a1e8f6b5741732c793caec0cb440620c0d54f772998e094da449138bc19ac184
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcap-ng/0.8.4-1/
 
-- https://sources.debian.net/src/libcap-ng/0.8.4-1/ (for browsing the source)
-- https://sources.debian.net/src/libcap-ng/0.8.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcap-ng/0.8.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap2=1:2.66-4`
 
@@ -2617,20 +2603,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.11-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.11=3.11.7-2
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.7-2.dsc' python3.11_3.11.7-2.dsc 3781 SHA256:24909ae983b14d136378bab28d29976297addc0f748bb2651292ae060d6674e3
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.7.orig.tar.xz' python3.11_3.11.7.orig.tar.xz 20074108 SHA256:18e1aa7e66ff3a58423d59ed22815a6954e53342122c45df20c96877c062b9b7
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.7-2.debian.tar.xz' python3.11_3.11.7-2.debian.tar.xz 213720 SHA256:5eff4459cc6a9cb75ac02fabf8b53c471ce2677523e93c203ceaa012178d097f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.11/3.11.7-2/
 
-- https://sources.debian.net/src/python3.11/3.11.7-2/ (for browsing the source)
-- https://sources.debian.net/src/python3.11/3.11.7-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.11/3.11.7-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-3`
 
