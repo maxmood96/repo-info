@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:271f446e5bcf7b65b71ea40efa16b24628c87e560b78a1a6399e171822d272d1`
-- Created: `2024-02-02T07:40:20.502785147Z`
+- Image ID: `sha256:fdf5bb3c65fcefbdf62e5accaf255759b7cfea6902575c31de8a396025826564`
+- Created: `2024-02-09T19:36:48.724270181Z`
 - Virtual Size: ~ 1.81 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -5706,11 +5706,11 @@ $ apt-get source -qq --print-uris npth=1.6-3build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3build2.debian.tar.xz' npth_1.6-3build2.debian.tar.xz 10904 SHA512:426ab3ab9e27b3701d67cde0a4c4040aa9ccac22a0266321824487fe80a118ccd6860b6fa0fb5ca3c46dfa3c20053889fbb51a2e74618065b3aff059a0216c4c
 ```
 
-### `dpkg` source package: `odoo=17.0.20240126`
+### `dpkg` source package: `odoo=17.0.20240209`
 
 Binary Packages:
 
-- `odoo=17.0.20240126`
+- `odoo=17.0.20240209`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
