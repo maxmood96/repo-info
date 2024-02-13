@@ -1,7 +1,7 @@
 ## `openjdk:22-jdk-nanoserver`
 
 ```console
-$ docker pull openjdk@sha256:99c218b4f3e54585cb553c59d270a5c09f4bbc7be8e877f3344684462e51d064
+$ docker pull openjdk@sha256:cf5790d7875a49e642ce70b50f49ca510b65691af22ceef881a93bcf31e73f07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,37 +11,37 @@ $ docker pull openjdk@sha256:99c218b4f3e54585cb553c59d270a5c09f4bbc7be8e877f3344
 ### `openjdk:22-jdk-nanoserver` - windows version 10.0.17763.5329; amd64
 
 ```console
-$ docker pull openjdk@sha256:049e8d81dfed6cd9b3f12bb6a418f3d462bf95df8a641fbf0d3adee5b338010e
+$ docker pull openjdk@sha256:d1d5d6cd7ab41a7f30961a2842fcbc240bb0b2a51548fd4d0c63eff0d8101022
 ```
 
 -	Docker Version: 24.0.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **305.9 MB (305886011 bytes)**  
+-	Total Size: **305.9 MB (305856792 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e46401f5c3b7c21661fd0713c9c03dbeab9d6cebf9a7b130fbbd02c75e1e4a5`
+-	Image ID: `sha256:e3efce77e7512c46d7e8c8a92036d680c5c42071bd48804e048afdae93552c90`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["cmd","\/s","\/c"]`
 
 ```dockerfile
 # Tue, 02 Jan 2024 22:32:22 GMT
 RUN Apply image 10.0.17763.5329
-# Fri, 02 Feb 2024 23:53:22 GMT
+# Mon, 12 Feb 2024 22:56:00 GMT
 SHELL [cmd /s /c]
-# Fri, 02 Feb 2024 23:53:24 GMT
+# Mon, 12 Feb 2024 22:56:02 GMT
 ENV JAVA_HOME=C:\openjdk-22
-# Fri, 02 Feb 2024 23:53:25 GMT
+# Mon, 12 Feb 2024 22:56:03 GMT
 USER ContainerAdministrator
-# Fri, 02 Feb 2024 23:53:38 GMT
+# Mon, 12 Feb 2024 22:56:19 GMT
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH% 	&& setx /M PATH %JAVA_HOME%\bin;%PATH% 	&& echo Complete.
-# Fri, 02 Feb 2024 23:53:38 GMT
+# Mon, 12 Feb 2024 22:56:20 GMT
 USER ContainerUser
-# Fri, 02 Feb 2024 23:53:39 GMT
-ENV JAVA_VERSION=22-ea+34
-# Fri, 02 Feb 2024 23:53:47 GMT
-COPY dir:7507700644c1de9ac912a15fc7989f655e799d7c1c035cf562aa0a88ab0dfd5b in C:\openjdk-22 
-# Fri, 02 Feb 2024 23:53:54 GMT
+# Mon, 12 Feb 2024 22:56:20 GMT
+ENV JAVA_VERSION=22
+# Mon, 12 Feb 2024 22:56:29 GMT
+COPY dir:ce7c8053267780a9233f43fd4d9a18cc1368b2bafecd86f958b1f78643bbb9b8 in C:\openjdk-22 
+# Mon, 12 Feb 2024 22:56:35 GMT
 RUN echo Verifying install ... 	&& echo   javac --version && javac --version 	&& echo   java --version && java --version 	&& echo Complete.
-# Fri, 02 Feb 2024 23:53:55 GMT
+# Mon, 12 Feb 2024 22:56:35 GMT
 CMD ["jshell"]
 ```
 
@@ -50,39 +50,39 @@ CMD ["jshell"]
 		Last Modified: Tue, 09 Jan 2024 22:20:25 GMT  
 		Size: 104.6 MB (104591228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3a7feb9ef9af9b1b75ad00e91ed41e651860a1fff146e539b81e6cb9f10d2ce`  
-		Last Modified: Fri, 02 Feb 2024 23:54:03 GMT  
-		Size: 1.1 KB (1060 bytes)  
+	-	`sha256:69f9879f6fde6b0fbbbd1d09d50cef813e06f91165865843ab1346e0cba59155`  
+		Last Modified: Mon, 12 Feb 2024 22:56:40 GMT  
+		Size: 1.0 KB (1032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51c4d7d5687b1bd9e213475534a32c87acd18c13258a2a730c424800b87e3e7a`  
-		Last Modified: Fri, 02 Feb 2024 23:54:02 GMT  
+	-	`sha256:705c945b0e6641f7e715e77246e6933f4288bfcdc06544db6f4b2d112f355e44`  
+		Last Modified: Mon, 12 Feb 2024 22:56:39 GMT  
+		Size: 1.0 KB (1043 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:832dfd5c5c932958b28d34c5b2342b9281535fad02cbdc80eefe21105c07fc35`  
+		Last Modified: Mon, 12 Feb 2024 22:56:39 GMT  
 		Size: 1.0 KB (1039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b82ad65ec0d8e32707e5ab5c88f2a638a1f024b6f763a8a8db977e108a01b03`  
-		Last Modified: Fri, 02 Feb 2024 23:54:01 GMT  
-		Size: 1.0 KB (1036 bytes)  
+	-	`sha256:e21a36147ea038f1baecc5bf9fcbaccb127a08310e985a4a634926f36ff4d6b3`  
+		Last Modified: Mon, 12 Feb 2024 22:56:39 GMT  
+		Size: 67.8 KB (67781 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:672cde345e6181c800226da830ed76fd6385f6b80ec36070821f62911cdf6394`  
-		Last Modified: Fri, 02 Feb 2024 23:54:01 GMT  
-		Size: 67.7 KB (67728 bytes)  
+	-	`sha256:5e3eb1407435535ac3651b9e2aa3b8a3b7b09ad9224d6c6beed51c0a8661bb55`  
+		Last Modified: Mon, 12 Feb 2024 22:56:38 GMT  
+		Size: 1.0 KB (1032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d231787a562bbd73492ba458f8d3728c5b6e9446b04d0a774a59271ac59da45f`  
-		Last Modified: Fri, 02 Feb 2024 23:53:59 GMT  
-		Size: 1.0 KB (1037 bytes)  
+	-	`sha256:f820dcdf301a7da30548a2155457c9999734d7c33bbcd8b2208360aa78fef39e`  
+		Last Modified: Mon, 12 Feb 2024 22:56:38 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01a0c35bcaa49f8e35062b6aa106e17891a7a1126fcfbd1823bd5376f8fa28ce`  
-		Last Modified: Fri, 02 Feb 2024 23:53:59 GMT  
-		Size: 1.0 KB (1024 bytes)  
+	-	`sha256:f76a2d385f315b0900e376628f68a4832e3918b67634ee656096a36c0394c6c8`  
+		Last Modified: Mon, 12 Feb 2024 22:56:49 GMT  
+		Size: 197.4 MB (197366863 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d76e8aab56a3b17054a3f0413c00d112dda56f8ec20bbbb2678965f443bb7a07`  
-		Last Modified: Fri, 02 Feb 2024 23:54:11 GMT  
-		Size: 197.4 MB (197367554 bytes)  
+	-	`sha256:ebacf58004a6ee9e75548a2ca230a015db2a7d02d9606968e48731a93dc1806c`  
+		Last Modified: Mon, 12 Feb 2024 22:56:38 GMT  
+		Size: 3.8 MB (3824688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:545df351a6cd4e7b899440fca953cd1b739eda1436a9d3e3eaf91fb77fa4fdfb`  
-		Last Modified: Fri, 02 Feb 2024 23:54:00 GMT  
-		Size: 3.9 MB (3853268 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43c53553639ff1de516568d3619bd480e218945a7316b969cc394ad2d6bd99a0`  
-		Last Modified: Fri, 02 Feb 2024 23:53:59 GMT  
-		Size: 1.0 KB (1037 bytes)  
+	-	`sha256:5a2af3f00ee43683f39151dbf0e4abe1bae0b06b49ecc3ee939a99864db59d4d`  
+		Last Modified: Mon, 12 Feb 2024 22:56:38 GMT  
+		Size: 1.0 KB (1041 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
