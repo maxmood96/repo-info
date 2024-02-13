@@ -1,7 +1,7 @@
 ## `golang:1-bookworm`
 
 ```console
-$ docker pull golang@sha256:ffe437c97bf9ea4c7b87c6cb03960e800d0186a1f5802563d94917994702d1c9
+$ docker pull golang@sha256:ec75c446b58317793746901bbff9127da1c85f90e08b45dcb3c9ff6291110125
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -224,23 +224,23 @@ WORKDIR /go
 ### `golang:1-bookworm` - linux; 386
 
 ```console
-$ docker pull golang@sha256:8ad949991d4bcac2fff5a1dbfa77d4a92840f42d32704a1c26254b82faf6d738
+$ docker pull golang@sha256:eb365ffb1fb05e1072391f90ef00cfebfc93662165216593ccc76ffdf8ed9170
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.6 MB (298600501 bytes)**  
+-	Total Size: **298.6 MB (298567738 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e4db188a64ae9b34cae38ef5fcf96d0b43900ee04d19a4724ddef2595e9e024`
+-	Image ID: `sha256:039ff5142ded71424558ac108810943145a790e8dce4222a2312541a0af1f201`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 22:38:50 GMT
-ADD file:185b752162445ab4f6f919d4279c3e0631e6ee605698ec61317458546cb121f3 in / 
-# Wed, 31 Jan 2024 22:38:51 GMT
+# Tue, 13 Feb 2024 00:38:44 GMT
+ADD file:e12b4798eb856f517a57dfe550811e57903589ffa74a09d47f7c0261e23ca645 in / 
+# Tue, 13 Feb 2024 00:38:44 GMT
 CMD ["bash"]
-# Wed, 31 Jan 2024 23:32:28 GMT
+# Tue, 13 Feb 2024 01:17:17 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 31 Jan 2024 23:32:53 GMT
+# Tue, 13 Feb 2024 01:17:42 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 # Tue, 06 Feb 2024 23:26:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	rm -rf /var/lib/apt/lists/* # buildkit
@@ -261,29 +261,29 @@ WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:4ea3f2a7e82bec0cc3c3005b69be76f8931170968478e9b540091cde5dbdf791`  
-		Last Modified: Wed, 31 Jan 2024 22:43:19 GMT  
-		Size: 50.6 MB (50603415 bytes)  
+	-	`sha256:911275c2fc723590176bf48d32222d2b1299cd1a17294bdc4cebd96e25742b27`  
+		Last Modified: Tue, 13 Feb 2024 00:43:21 GMT  
+		Size: 50.6 MB (50581925 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ee967c27b9c941dceae087384959ba6b8e9de11c54505fd91905d98eea18baf`  
-		Last Modified: Wed, 31 Jan 2024 23:44:47 GMT  
-		Size: 24.9 MB (24888772 bytes)  
+	-	`sha256:a04ecbcf46d4507b6a8970b941f809a05d49cd1ac9402f7495e0cfbeac9fd1c9`  
+		Last Modified: Tue, 13 Feb 2024 01:29:22 GMT  
+		Size: 24.9 MB (24884414 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:342d8ebbc02bcb8071e4594b56892d4ec04d2bdcf0ee0283d75d845023c1c9fa`  
-		Last Modified: Wed, 31 Jan 2024 23:45:13 GMT  
-		Size: 66.0 MB (65989049 bytes)  
+	-	`sha256:84d2a319089434096accd3face0ee4bb9f2e02eb5571f7d983c3c48579df902f`  
+		Last Modified: Tue, 13 Feb 2024 01:29:47 GMT  
+		Size: 66.0 MB (65986836 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db7398ef24c7b6cb275d0a6291e39cd3a4d9418dc42f62313f52b0fab8952c51`  
-		Last Modified: Thu, 01 Feb 2024 12:03:30 GMT  
-		Size: 89.8 MB (89774019 bytes)  
+	-	`sha256:cae1c0332765d563222c0047e69c57ef3a49395a851c283d7db6c54fda0adfbc`  
+		Last Modified: Tue, 13 Feb 2024 15:12:48 GMT  
+		Size: 89.8 MB (89769305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f509333fb1b68ade2a3d3debe5bd140e8e871cb5d6b53731693cb523fcb0a2dc`  
-		Last Modified: Wed, 07 Feb 2024 02:41:19 GMT  
-		Size: 67.3 MB (67345041 bytes)  
+	-	`sha256:e457d5a1694ef74e23acfb908c7f6ed2879f6fc2252225f40f68881cb63074c4`  
+		Last Modified: Tue, 13 Feb 2024 15:12:46 GMT  
+		Size: 67.3 MB (67345051 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1d040fac3f26dde837ece167c186d92c0382315406d24114b1875a6bbca523a`  
-		Last Modified: Wed, 07 Feb 2024 02:41:03 GMT  
-		Size: 173.0 B  
+	-	`sha256:06e9d05783d207c08ff58895bcb1d908dc705710c25425ebd24f22ad9bbc4076`  
+		Last Modified: Tue, 13 Feb 2024 15:12:26 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
