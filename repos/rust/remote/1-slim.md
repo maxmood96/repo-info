@@ -1,7 +1,7 @@
 ## `rust:1-slim`
 
 ```console
-$ docker pull rust@sha256:304e30dc3cdb0ac27a39ea4660cc813e5a4c0ff40ae13d8a072835826205cd0c
+$ docker pull rust@sha256:816bc3fe0e8f61b3d5789cb2e8d209f95634cd6602e628c6c4749cae0c7905c2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20,19 +20,19 @@ $ docker pull rust@sha256:304e30dc3cdb0ac27a39ea4660cc813e5a4c0ff40ae13d8a072835
 ### `rust:1-slim` - linux; amd64
 
 ```console
-$ docker pull rust@sha256:d975952a48f0f7be77bac3755e5324a965adc173e92492e65eeb0ca7105393a6
+$ docker pull rust@sha256:7182695b4df05e6e102201259ab93e5f9eaf11b3735f0355620a98064af825d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **279.2 MB (279242472 bytes)**  
+-	Total Size: **279.4 MB (279371843 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3a7312f8ea9949544d26bd8cad695de6414d0cd349098a241a2c184608158ca8`
+-	Image ID: `sha256:7c221e464aaccc6fb9374d2cc10b8742f3a154d7211985813b70424ce40ab7d5`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 22:35:18 GMT
-ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
-# Wed, 31 Jan 2024 22:35:18 GMT
+# Thu, 08 Feb 2024 14:18:11 GMT
+ADD file:eb6a3def1f69e76655620640e610015f285bc23c97e89855feb1f0548309d518 in / 
+# Thu, 08 Feb 2024 14:18:11 GMT
 CMD ["bash"]
 # Thu, 08 Feb 2024 14:18:11 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin RUST_VERSION=1.76.0
@@ -41,36 +41,36 @@ RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends
 ```
 
 -	Layers:
-	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
-		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
-		Size: 29.2 MB (29150465 bytes)  
+	-	`sha256:e1caac4eb9d2ec24aa3618e5992208321a92492aef5fef5eb9e470895f771c56`  
+		Last Modified: Tue, 13 Feb 2024 00:42:02 GMT  
+		Size: 29.1 MB (29124091 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c67ab74a2a5198ef20a22135190f5d30800540b5aaed34acbc2558a5bb0467fe`  
-		Last Modified: Thu, 08 Feb 2024 18:51:15 GMT  
-		Size: 250.1 MB (250092007 bytes)  
+	-	`sha256:25691eb7d62a1dba4ac865e10798b95531a11fe88ea735833ce8f5bd2ffcdaaf`  
+		Last Modified: Tue, 13 Feb 2024 01:55:31 GMT  
+		Size: 250.2 MB (250247752 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rust:1-slim` - unknown; unknown
 
 ```console
-$ docker pull rust@sha256:e7de1ae3396bc33a2008904f96e97aace332894b2ce6e0c756cfbc94528cf8dc
+$ docker pull rust@sha256:f399573b602868394e06881e77e4894fcae039f9658e6f00c2d358774ba12ba2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3425040 bytes)**  
+-	Total Size: **3.4 MB (3425096 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:577b22509194a62ffc67eb43793f4264628bf9ee85d00a36bb07b2e35a60963e`
+-	Image ID: `sha256:7cd36c569f3aa32f8695f38aff18010546e2134f82b63aa5a3fd089cec0d0d35`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a250b641d8129d3d3f8a94a7d80e2ec36cade9fa41d54365d961195214dffd9a`  
-		Last Modified: Thu, 08 Feb 2024 18:51:09 GMT  
-		Size: 3.4 MB (3412338 bytes)  
+	-	`sha256:2b2f594ebe8b1b09d6bb9f1e71ad99df9ae33f8f00a63755dc2233915be8fd0e`  
+		Last Modified: Tue, 13 Feb 2024 01:55:28 GMT  
+		Size: 3.4 MB (3412394 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:31a93b4fb8ec5b1ee24596b1751baf6bba84e42c646edd4b1a94ae7286eda837`  
-		Last Modified: Thu, 08 Feb 2024 18:51:08 GMT  
+	-	`sha256:06070e00f404e7798ceff6c9c603333d5be858c492bea0b5479d606a03d6a5b3`  
+		Last Modified: Tue, 13 Feb 2024 01:55:28 GMT  
 		Size: 12.7 KB (12702 bytes)  
 		MIME: application/vnd.in-toto+json
 
