@@ -1500,14 +1500,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.10-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.10-1ubuntu3.dsc' openssl_3.0.10-1ubuntu3.dsc 2473 SHA512:35ffad00cdd471d1b17d1648fc4bec3f6d301be6746b2f5e716fd7576269988db506016a13825f2d341ab35c8563c4bcd28d51afe88c770fe3ea6e46dfb0d928
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.10.orig.tar.gz' openssl_3.0.10.orig.tar.gz 15194904 SHA512:fc12f3beed5e2d2f4767aeb772ceb6ba26f6cbfabc247765854108266b27a1223134f0e81735867a9069bc9c07a14b9816e85903cef91bd1b90f781f0b98b61a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.10-1ubuntu3.debian.tar.xz' openssl_3.0.10-1ubuntu3.debian.tar.xz 121200 SHA512:391ac9c86c93572e972f091b5a56437365c92ef530044449cea3b82967597af467abc46e13460e4838974d484c680b83fa7f79cdb44df8b681954335a69ff9a5
-```
 
 ### `dpkg` source package: `p11-kit=0.25.3-2ubuntu2`
 
@@ -1837,15 +1832,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.45.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.0-1.dsc' sqlite3_3.45.0-1.dsc 2486 SHA512:3bd91ba0a06cce8c8753dae06909a794c4515417e9edccc06e7e90105802b398dd686322266f60b56160b246ed2c4cd5b06e62f24cd8b265e2aa48818cec5b6d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.0.orig-www.tar.xz' sqlite3_3.45.0.orig-www.tar.xz 5704748 SHA512:d70a8d855995fabba89a9b0ad51d7b0898d673042e612d3d081f5bc2845a3633a6f18cbaa6900b7f8bd6a57bdcad8ed794412b42a355db67a105a96e95a5c08c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.0.orig.tar.xz' sqlite3_3.45.0.orig.tar.xz 8256116 SHA512:3798c186f452d10f2a187e00848aff76f2657205f55d5746b7c9ab1d59d8b6c46a8334a9b79eae39269813492c4b368198da4423a4aacb7a5d7e09ceb37eda0b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.0-1.debian.tar.xz' sqlite3_3.45.0-1.debian.tar.xz 30276 SHA512:aa84d4b585621330db5ee692373d4d474168af34555de0492718b9ac19bbc3abdb3ebe56cb66d04de1ea5090fe66b529a8089a60848f7e3af21f769d4cdd3e5f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sqlite3/3.45.0-1/
+
 
 ### `dpkg` source package: `systemd=253.5-1ubuntu7`
 

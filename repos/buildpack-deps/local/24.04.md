@@ -1840,14 +1840,9 @@ Licenses: (parsed from: `/usr/share/doc/libblas3/copyright`, `/usr/share/doc/lib
 - `BSD-3-clause`
 - `BSD-3-clause-intel`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lapack=3.11.0-2build1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lapack/lapack_3.11.0-2build1.dsc' lapack_3.11.0-2build1.dsc 3331 SHA512:df95bf7d12c3ae3dd416ebc49d5d63df880f4d8178ac1c8ea5f114db48a901ca4bbc5bc36a025fc36b96455eddb12ecfb4e7b3f9972202791182a6ea99071fe4
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lapack/lapack_3.11.0.orig.tar.gz' lapack_3.11.0.orig.tar.gz 7723808 SHA512:fc3258b9d91a833149a68a89c5589b5113e90a8f9f41c3a73fbfccb1ecddd92d9462802c0f870f1c3dab392623452de4ef512727f5874ffdcba6a4845f78fc9a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lapack/lapack_3.11.0-2build1.debian.tar.xz' lapack_3.11.0-2build1.debian.tar.xz 33008 SHA512:55d2d9715a46c2daffb3566c6b80be85d82af42d683638323a04c0b4e8a01a30bd52c711d4e08c7050ec09515c4195eba3ac92d6e49713354660866e5524de38
-```
 
 ### `dpkg` source package: `lcms2=2.14-2`
 
@@ -3730,14 +3725,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.10-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.10-1ubuntu3.dsc' openssl_3.0.10-1ubuntu3.dsc 2473 SHA512:35ffad00cdd471d1b17d1648fc4bec3f6d301be6746b2f5e716fd7576269988db506016a13825f2d341ab35c8563c4bcd28d51afe88c770fe3ea6e46dfb0d928
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.10.orig.tar.gz' openssl_3.0.10.orig.tar.gz 15194904 SHA512:fc12f3beed5e2d2f4767aeb772ceb6ba26f6cbfabc247765854108266b27a1223134f0e81735867a9069bc9c07a14b9816e85903cef91bd1b90f781f0b98b61a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.10-1ubuntu3.debian.tar.xz' openssl_3.0.10-1ubuntu3.debian.tar.xz 121200 SHA512:391ac9c86c93572e972f091b5a56437365c92ef530044449cea3b82967597af467abc46e13460e4838974d484c680b83fa7f79cdb44df8b681954335a69ff9a5
-```
 
 ### `dpkg` source package: `p11-kit=0.25.3-2ubuntu2`
 
@@ -4162,14 +4152,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.12=3.12.1-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.1-2.dsc' python3.12_3.12.1-2.dsc 3812 SHA512:c3626ee5ad2426f239a5fd8e5efca3c8167d76b9471ebddcb3fc63b4afdd1a8209c4392b1d7cd65efc43b6c484b733dec8237a68a1297c2ac89cdd6538cec905
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.1.orig.tar.xz' python3.12_3.12.1.orig.tar.xz 20583448 SHA512:44cf06b89ade692d87ca3105d8e3de5c7ce3f5fb318690fff513cf56f909ff5e0d0f6a0b22ae270b12e1fe3051b1bde3ec786506ec87c810b1d02e92e45dff07
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.1-2.debian.tar.xz' python3.12_3.12.1-2.debian.tar.xz 212012 SHA512:df02f1119ad4debefa6e371ecc03cf5f2fccabbe3c30f62f8b4a66d452789482c5d86b59f67c78ba5adf7569a3895e68543ce54cacb74b8f892fc5bebf8ed3bf
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.12/3.12.1-2/
+
 
 ### `dpkg` source package: `readline=8.2-3`
 
@@ -4414,15 +4403,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.45.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.0-1.dsc' sqlite3_3.45.0-1.dsc 2486 SHA512:3bd91ba0a06cce8c8753dae06909a794c4515417e9edccc06e7e90105802b398dd686322266f60b56160b246ed2c4cd5b06e62f24cd8b265e2aa48818cec5b6d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.0.orig-www.tar.xz' sqlite3_3.45.0.orig-www.tar.xz 5704748 SHA512:d70a8d855995fabba89a9b0ad51d7b0898d673042e612d3d081f5bc2845a3633a6f18cbaa6900b7f8bd6a57bdcad8ed794412b42a355db67a105a96e95a5c08c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.0.orig.tar.xz' sqlite3_3.45.0.orig.tar.xz 8256116 SHA512:3798c186f452d10f2a187e00848aff76f2657205f55d5746b7c9ab1d59d8b6c46a8334a9b79eae39269813492c4b368198da4423a4aacb7a5d7e09ceb37eda0b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.0-1.debian.tar.xz' sqlite3_3.45.0-1.debian.tar.xz 30276 SHA512:aa84d4b585621330db5ee692373d4d474168af34555de0492718b9ac19bbc3abdb3ebe56cb66d04de1ea5090fe66b529a8089a60848f7e3af21f769d4cdd3e5f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sqlite3/3.45.0-1/
+
 
 ### `dpkg` source package: `subversion=1.14.3-1`
 
