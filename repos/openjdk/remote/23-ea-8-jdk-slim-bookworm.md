@@ -1,7 +1,7 @@
 ## `openjdk:23-ea-8-jdk-slim-bookworm`
 
 ```console
-$ docker pull openjdk@sha256:b8599dc9522e4184a8f3b6fafc31c770e6b45ad1e0500c77fbcb36439b586e2c
+$ docker pull openjdk@sha256:b2fb384d581295cbd35335dc5dab061e7b4e094d7db40698a4e8d534b79c23dd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,19 +14,19 @@ $ docker pull openjdk@sha256:b8599dc9522e4184a8f3b6fafc31c770e6b45ad1e0500c77fbc
 ### `openjdk:23-ea-8-jdk-slim-bookworm` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:5d3f99602be25011d8d44b86679a302eb1b9d7d4e97dd7d28de4245c0828b302
+$ docker pull openjdk@sha256:1b12842b4043ae238c429bc02fc338bbf4f078e19243f50a2c1fe5ed8d66aa47
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **236.3 MB (236281058 bytes)**  
+-	Total Size: **236.4 MB (236448257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:901e5b31da455be51055b534b266c15298f9c46ae1ca011a2e3de7b45b849493`
+-	Image ID: `sha256:a9bbc66513d3c5d50be67a455abfd12337caaff073d491250dd34157018f94ef`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 22:35:18 GMT
-ADD file:af0f4e41d68b67ca88a1ce6297326159e18e27670d7bfc0bf5804a4e2b268cc8 in / 
-# Wed, 31 Jan 2024 22:35:18 GMT
+# Fri, 02 Feb 2024 19:54:38 GMT
+ADD file:eb6a3def1f69e76655620640e610015f285bc23c97e89855feb1f0548309d518 in / 
+# Fri, 02 Feb 2024 19:54:38 GMT
 CMD ["bash"]
 # Fri, 02 Feb 2024 19:54:38 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/* # buildkit
@@ -45,41 +45,41 @@ CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:c57ee5000d61345aa3ee6684794a8110328e2274d9a5ae7855969d1a26394463`  
-		Last Modified: Wed, 31 Jan 2024 22:39:55 GMT  
-		Size: 29.2 MB (29150465 bytes)  
+	-	`sha256:e1caac4eb9d2ec24aa3618e5992208321a92492aef5fef5eb9e470895f771c56`  
+		Last Modified: Tue, 13 Feb 2024 00:42:02 GMT  
+		Size: 29.1 MB (29124091 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef9d9b96adf8201958d2131d28dde1f97ea4d43c9255d51e0a49e94b1f15d32c`  
-		Last Modified: Fri, 02 Feb 2024 22:53:27 GMT  
-		Size: 3.8 MB (3821598 bytes)  
+	-	`sha256:60a5e15f3c7f2d952441c89d77e46fbf0b96666c2807e3be2c752cdc01085942`  
+		Last Modified: Tue, 13 Feb 2024 01:54:03 GMT  
+		Size: 4.0 MB (4014970 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b829526b78dcbb5070dd65e7ceb734428149d8ad3c274e475aa108b270995c4`  
-		Last Modified: Fri, 02 Feb 2024 22:53:30 GMT  
-		Size: 203.3 MB (203308995 bytes)  
+	-	`sha256:331c625077eb0041fcccd2bbb618f96dd4aa0f4c1d4360f6b33b74e9d95b9fb1`  
+		Last Modified: Tue, 13 Feb 2024 01:54:08 GMT  
+		Size: 203.3 MB (203309196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `openjdk:23-ea-8-jdk-slim-bookworm` - unknown; unknown
 
 ```console
-$ docker pull openjdk@sha256:c99982f65e3e0839f8d869b41b5b375ee5f0780a80ab36f227c0218275c8ef09
+$ docker pull openjdk@sha256:6892a283cdf86a1f68453bb66e9284b58f37d2d590deb8b2483bb3b040870c8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 MB (2056507 bytes)**  
+-	Total Size: **2.1 MB (2056557 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84d70e340cb193e85554365e78e650998393e8e8f756340f98dd1503a930b48f`
+-	Image ID: `sha256:e5062d20a3899625b37d9978459aa6588f66999853e0f744c764fb7a5c9a6079`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:46de691b93b5d015b5beddf3e1f2d55ed2a7b3cc43146b0db192720bdddc1ee6`  
-		Last Modified: Fri, 02 Feb 2024 22:53:27 GMT  
-		Size: 2.0 MB (2037182 bytes)  
+	-	`sha256:6c45544fbbe5d27480550b657ca5e7755bd82fb3ee8b5f0f817d26cafaaec0c1`  
+		Last Modified: Tue, 13 Feb 2024 01:54:04 GMT  
+		Size: 2.0 MB (2037230 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6eb8412daa9f47d477dc017b23eda5163b6274fdd3551702802be30d04bae619`  
-		Last Modified: Fri, 02 Feb 2024 22:53:27 GMT  
-		Size: 19.3 KB (19325 bytes)  
+	-	`sha256:f0512d4fecc8ee1b6e1d280d404009704266477af890331841f6d2948dbd317c`  
+		Last Modified: Tue, 13 Feb 2024 01:54:03 GMT  
+		Size: 19.3 KB (19327 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `openjdk:23-ea-8-jdk-slim-bookworm` - linux; arm64 variant v8
