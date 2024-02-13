@@ -1,10 +1,10 @@
-# `wordpress:cli-2.9.0-php8.1`
+# `wordpress:cli-2.10.0-php8.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0ae848954956517f8630ff6dccc4a3b8965fd650217d8e6710301e17d7e0bf4e`
-- Created: `2023-10-25T13:03:13Z`
-- Virtual Size: ~ 211.10 Mb  
+- Image ID: `sha256:2e54d3ffea83848f5fe5fc9920c35c3a1e5bd1d1690e69fada7646ad9dde6781`
+- Created: `2024-02-08T20:03:13Z`
+- Virtual Size: ~ 211.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -22,8 +22,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.27.tar.xz.asc`
   - `PHP_SHA256=479e65c3f05714d4aace1370e617d78e49e996ec7a7579a5be47535be61f0658`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
-  - `WORDPRESS_CLI_VERSION=2.9.0`
-  - `WORDPRESS_CLI_SHA512=39fa365300ab45840e30cc344595bbd175c3558a4499679edd9f9e3a00a846e94179c29c80de3242f1c405f3623605605748d188d9bb98450d9377388f60f113`
+  - `WORDPRESS_CLI_VERSION=2.10.0`
+  - `WORDPRESS_CLI_SHA512=c243265be520cd906f6dac767b56bb4e7dae9b6308db32b7e45ed8adbacad97bce987fd69b019d25478f394f0082404a0f44a93416f5e4d943cb32fd08f1feac`
 
 ## `apk` (`.apk`-based packages)
 
@@ -506,16 +506,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.5.0-r2 description:
+libexpat-2.6.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.5.0-r2 webpage:
+libexpat-2.6.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.5.0-r2 installed size:
+libexpat-2.6.0-r0 installed size:
 144 KiB
 
-libexpat-2.5.0-r2 license:
+libexpat-2.6.0-r0 license:
 MIT
 
 ```
