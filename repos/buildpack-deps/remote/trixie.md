@@ -1,7 +1,7 @@
 ## `buildpack-deps:trixie`
 
 ```console
-$ docker pull buildpack-deps@sha256:b902087d4e6dc08365debc5c7473cca58b2beeb5b6a02398769cb889dacd7634
+$ docker pull buildpack-deps@sha256:f238c0e7a9039476b471011fa490b566de21b03ae9c70b65566e8d5ab0c9e86c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18,89 +18,89 @@ $ docker pull buildpack-deps@sha256:b902087d4e6dc08365debc5c7473cca58b2beeb5b6a0
 ### `buildpack-deps:trixie` - linux; amd64
 
 ```console
-$ docker pull buildpack-deps@sha256:ea270324fc89bffc8655b18530eaf16c8be105028b541b14fd8e27c3d8c18509
+$ docker pull buildpack-deps@sha256:2ccf6b25b8566453f5f526fbd4c3831aa06a4bcbebd9493e84e09e3b4570117e
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **406.1 MB (406084464 bytes)**  
+-	Total Size: **409.8 MB (409750740 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07f5e6f7876e6a769bfc4648d373d5b92011e54a6457c200421daccd1e4a0ee0`
+-	Image ID: `sha256:1ca6651cb595f48fdb562484fab92a2371fd14450365d10b7516be35283aa314`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 22:37:59 GMT
-ADD file:8ad3e26aeda90bbd087b64f3a0110c8f2e520a774d62a26d5aeb7c5006e472ca in / 
-# Wed, 31 Jan 2024 22:38:00 GMT
+# Tue, 13 Feb 2024 00:40:05 GMT
+ADD file:fdbc095d632d315bfdea7b6a7cb53bfc7d32b5f6d604481cc9ff350c6ee09e3a in / 
+# Tue, 13 Feb 2024 00:40:05 GMT
 CMD ["bash"]
-# Fri, 02 Feb 2024 06:00:26 GMT
+# Tue, 13 Feb 2024 01:28:11 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean
-# Fri, 02 Feb 2024 06:00:50 GMT
+# Tue, 13 Feb 2024 01:28:28 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean
-# Fri, 02 Feb 2024 06:02:18 GMT
+# Tue, 13 Feb 2024 01:29:22 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean
 ```
 
 -	Layers:
-	-	`sha256:a946c083680d9a81b8eb8383bbc21cd34444b1c5f3212c5d3fc463e0220d7b73`  
-		Last Modified: Wed, 31 Jan 2024 22:44:39 GMT  
-		Size: 52.3 MB (52283197 bytes)  
+	-	`sha256:02ffa0574dfa0456dc05b0e175a93781ebc31447cddca3de402d11ac2734c97a`  
+		Last Modified: Tue, 13 Feb 2024 00:46:31 GMT  
+		Size: 52.3 MB (52331572 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3989ddeeace463dca551e8958b92088c5e4b3d49b9ba7ca3579c7dbf9cd9af1`  
-		Last Modified: Fri, 02 Feb 2024 06:21:45 GMT  
-		Size: 24.3 MB (24340256 bytes)  
+	-	`sha256:ee8b4acf3d75cdfabf855170e302e7faa684ea2ab5ed2c5f7ca4ab289f942ae3`  
+		Last Modified: Tue, 13 Feb 2024 01:34:58 GMT  
+		Size: 26.8 MB (26849910 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35b2c7ba7e29214031a9c39d6d5b6571c726fcfdab6f617b8aae44203ea601ea`  
-		Last Modified: Fri, 02 Feb 2024 06:22:05 GMT  
-		Size: 66.4 MB (66423406 bytes)  
+	-	`sha256:63e96ba6a4df5f9a034d0f042c6ba596296abfca3f619a6c6625bec56ca08f02`  
+		Last Modified: Tue, 13 Feb 2024 01:35:16 GMT  
+		Size: 66.5 MB (66454282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0beaa393fc5b0cf30ad7c7983d01a5f0299988e669717a9879a7b05b7a2bd2a`  
-		Last Modified: Fri, 02 Feb 2024 06:22:46 GMT  
-		Size: 263.0 MB (263037605 bytes)  
+	-	`sha256:7a6861838beebbc0b557a6de8a7fb09bbccaf7158cf0c2b59348823b05fdd0d3`  
+		Last Modified: Tue, 13 Feb 2024 01:35:58 GMT  
+		Size: 264.1 MB (264114976 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:trixie` - linux; arm variant v5
 
 ```console
-$ docker pull buildpack-deps@sha256:e64909db19a56e73d1b3ce133800dd6afdb77355d9e98472b94fa0d463b4c176
+$ docker pull buildpack-deps@sha256:8c0cc9887ce02ed395a536f49065fe63711009cee94e2d79abca0ff517ce3ad5
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **367.8 MB (367829572 bytes)**  
+-	Total Size: **373.0 MB (373029590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69d6f8248127c2d250742b5da26a3d5cf1fc769ca82bb995894b9c41d3589fe1`
+-	Image ID: `sha256:e9c2092ce016bdf4f1cc7ccdd8be6788c7bc03de1cf3a39edf63ff83df0cbc97`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 22:46:08 GMT
-ADD file:7144257253ce293f694d917fb06ea4d03cb3cffd94c432e47fa5a77e03a5a2f7 in / 
-# Wed, 31 Jan 2024 22:46:09 GMT
+# Tue, 13 Feb 2024 01:11:00 GMT
+ADD file:8084501970c8177779352fb042faf935926737abda51187262ee0b2cabb246de in / 
+# Tue, 13 Feb 2024 01:11:00 GMT
 CMD ["bash"]
-# Fri, 02 Feb 2024 00:48:50 GMT
+# Tue, 13 Feb 2024 01:50:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean
-# Fri, 02 Feb 2024 00:49:22 GMT
+# Tue, 13 Feb 2024 01:51:11 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean
-# Fri, 02 Feb 2024 00:51:52 GMT
+# Tue, 13 Feb 2024 01:52:54 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean
 ```
 
 -	Layers:
-	-	`sha256:9be7d01dbe3e5ca74f21aad18f318e9da338902efa0bdf09221df8cf061d6b3a`  
-		Last Modified: Wed, 31 Jan 2024 22:51:27 GMT  
-		Size: 49.4 MB (49400791 bytes)  
+	-	`sha256:6eafce9f3c4ac029ffad9441b0ad63ffd00fa23ea2ac500527ce7dcf6ceec0f3`  
+		Last Modified: Tue, 13 Feb 2024 01:17:23 GMT  
+		Size: 49.4 MB (49418395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd8e83ce6004aab85ee491973a0f9e3b97cfa5114d4dacf9858519bf7991608f`  
-		Last Modified: Fri, 02 Feb 2024 00:52:46 GMT  
-		Size: 22.8 MB (22791743 bytes)  
+	-	`sha256:53ca4176ba40503694123907b12411c085ef59844a004a61e19e8ca4ed6fdc68`  
+		Last Modified: Tue, 13 Feb 2024 01:58:08 GMT  
+		Size: 25.2 MB (25242967 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae023c275943af5403b4457371b90865b8075cde3ba18ef56c9dcce109b643a9`  
-		Last Modified: Fri, 02 Feb 2024 00:53:11 GMT  
-		Size: 64.1 MB (64079789 bytes)  
+	-	`sha256:283ca3166ffd80ea83ab111c2390bc95b099bd6fd3a16ebb965559ad02fb483f`  
+		Last Modified: Tue, 13 Feb 2024 01:58:33 GMT  
+		Size: 64.1 MB (64096976 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68cbc67ab1f5ac10951b154ba7862006f5310f069ce3ec1976ec50d38633bb6a`  
-		Last Modified: Fri, 02 Feb 2024 00:54:04 GMT  
-		Size: 231.6 MB (231557249 bytes)  
+	-	`sha256:5d901a84a069b82728e01139c65e037a1f75e08bcc5f823a2d09e12c1eac80f8`  
+		Last Modified: Tue, 13 Feb 2024 01:59:25 GMT  
+		Size: 234.3 MB (234271252 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:trixie` - linux; arm variant v7
@@ -150,89 +150,89 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 ### `buildpack-deps:trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull buildpack-deps@sha256:215ae05dd29b76b8e018951df5d2e8de5fb11f7285ee3222cc17e078485b843c
+$ docker pull buildpack-deps@sha256:b50632c5c3c1da541f198af067944b978fc3e86d09d6e5faf31f7cd7bec9f0dc
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **386.2 MB (386193256 bytes)**  
+-	Total Size: **397.5 MB (397477302 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8209ad79eeeb994c392831c0ee634da34495b938ac1ff448464d6e00e44f982`
+-	Image ID: `sha256:eb739bca9cfb606e2e4198c8b388fd60e62d0ba4c857851a82f722e1fc6b0d8a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 22:46:18 GMT
-ADD file:22615a550fb316cdf09ee3c185139fbdb9bf6b776c7f96bba26ba5cc5b14fbb4 in / 
-# Wed, 31 Jan 2024 22:46:19 GMT
+# Tue, 13 Feb 2024 00:43:09 GMT
+ADD file:b40105fd74cc055edd0e68436fc1b45799a62376b3530660f3a93d3c606cb590 in / 
+# Tue, 13 Feb 2024 00:43:09 GMT
 CMD ["bash"]
-# Fri, 02 Feb 2024 00:47:39 GMT
+# Tue, 13 Feb 2024 01:44:21 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean
-# Fri, 02 Feb 2024 00:48:00 GMT
+# Tue, 13 Feb 2024 01:44:34 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean
-# Fri, 02 Feb 2024 00:49:25 GMT
+# Tue, 13 Feb 2024 01:45:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean
 ```
 
 -	Layers:
-	-	`sha256:b24f8e2b921fe314282df3bbfa20988c1046ee499441de80fd5229551987d1eb`  
-		Last Modified: Wed, 31 Jan 2024 22:52:31 GMT  
-		Size: 52.2 MB (52161387 bytes)  
+	-	`sha256:bcbaf42bd4ac1f9cb9ae9a8d53c22847171447fef1719f5037eaeed94f945284`  
+		Last Modified: Tue, 13 Feb 2024 00:49:06 GMT  
+		Size: 52.2 MB (52194112 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25c4512a32748f0e93f76775383772932810e78398b7fc5a25c81e38a202a60f`  
-		Last Modified: Fri, 02 Feb 2024 01:06:57 GMT  
-		Size: 23.6 MB (23596615 bytes)  
+	-	`sha256:8e56f725cf4defa388afd50973a22d727c0eea3662f1f6927b2da7c29431eccc`  
+		Last Modified: Tue, 13 Feb 2024 01:50:22 GMT  
+		Size: 26.4 MB (26367599 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a766100162b3e4745b3fea6e0c168464cca872d32ac0adb8922d33c224aa3a5`  
-		Last Modified: Fri, 02 Feb 2024 01:07:14 GMT  
-		Size: 66.5 MB (66537471 bytes)  
+	-	`sha256:5ddbc13be4438f9f8d894060aed3c33f0d7346f4270baeb1a88d2666d594e5e6`  
+		Last Modified: Tue, 13 Feb 2024 01:50:38 GMT  
+		Size: 66.6 MB (66561866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7cf7c421b734f06c61de04526591b6befd47bc6b071c6e6fe381fdb1ad41eaf7`  
-		Last Modified: Fri, 02 Feb 2024 01:07:48 GMT  
-		Size: 243.9 MB (243897783 bytes)  
+	-	`sha256:de2f96767199297b5c9b62bfca3bf8dbe64f2140a3971075286c296b044f2327`  
+		Last Modified: Tue, 13 Feb 2024 01:51:12 GMT  
+		Size: 252.4 MB (252353725 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:trixie` - linux; 386
 
 ```console
-$ docker pull buildpack-deps@sha256:2a3d51d6fa62c5809f71d347a615fc6da91c1ba3fad139aac228bb332f158f0e
+$ docker pull buildpack-deps@sha256:6bea73c06e3551fc523afbb46a8a36107fb11a2b34ef71401204332062512d23
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **400.1 MB (400115296 bytes)**  
+-	Total Size: **406.2 MB (406188638 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6540614f2841db8efa796aff98eb4518fbe179cbe1fe49848203f50bb685abd7`
+-	Image ID: `sha256:a4ce9d00a5d17f92dea63d4f7a5cc99f96b4ba99f43b734292e757b4c9618f48`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 22:41:43 GMT
-ADD file:443c10cf2bd14299f3b496a80df4429c5642d898fb2f3e8c184e8c4d58fb8cd2 in / 
-# Wed, 31 Jan 2024 22:41:44 GMT
+# Tue, 13 Feb 2024 00:41:45 GMT
+ADD file:48adfe9ef1da0d6e87fe297dd6cf8e9e117db33c490c41c77b6f2aadda29a275 in / 
+# Tue, 13 Feb 2024 00:41:46 GMT
 CMD ["bash"]
-# Fri, 02 Feb 2024 00:38:53 GMT
+# Tue, 13 Feb 2024 01:27:02 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean
-# Fri, 02 Feb 2024 00:39:17 GMT
+# Tue, 13 Feb 2024 01:27:26 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean
-# Fri, 02 Feb 2024 00:41:00 GMT
+# Tue, 13 Feb 2024 01:28:39 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean
 ```
 
 -	Layers:
-	-	`sha256:c71e0026d29ede0429851d35323a9a769fb82ad7760740b559b172f3789ae3b7`  
-		Last Modified: Wed, 31 Jan 2024 22:49:09 GMT  
-		Size: 53.1 MB (53140039 bytes)  
+	-	`sha256:b1a72a4bdfc8e16b8965d5db9e85a05a0f23a851b8b45d3b9e7376d79f2f223b`  
+		Last Modified: Tue, 13 Feb 2024 00:49:03 GMT  
+		Size: 53.2 MB (53166976 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84d65910f8e6ecd215a4cfaada6490da4c0f4366147a1cc7a5c79cab0ae7f7fd`  
-		Last Modified: Fri, 02 Feb 2024 00:41:55 GMT  
-		Size: 24.9 MB (24931471 bytes)  
+	-	`sha256:52348cdaee951cfde5088d97935929bf6f09626868b2b48c50a688783d5fad8e`  
+		Last Modified: Tue, 13 Feb 2024 01:35:17 GMT  
+		Size: 27.9 MB (27886423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a44a5c722cd80db8316b102f28c77833949cff82e03df4affc5a5ff9a7005cfe`  
-		Last Modified: Fri, 02 Feb 2024 00:42:21 GMT  
-		Size: 68.2 MB (68222097 bytes)  
+	-	`sha256:75f591e946a39d16953fde73e2ef14b2bfd79e49f9bd7d3f7f47afa1b2b5265f`  
+		Last Modified: Tue, 13 Feb 2024 01:35:43 GMT  
+		Size: 68.2 MB (68243501 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7ace9b60f073f6580a56f02847a10adc40b1fa636a055219897cae655993ee5`  
-		Last Modified: Fri, 02 Feb 2024 00:43:20 GMT  
-		Size: 253.8 MB (253821689 bytes)  
+	-	`sha256:02e75a2a2fbea7b1fbd9bb0b804cd9b38871606c13ab1171e0718bc6b1bc3c64`  
+		Last Modified: Tue, 13 Feb 2024 01:36:42 GMT  
+		Size: 256.9 MB (256891738 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:trixie` - linux; mips64le
