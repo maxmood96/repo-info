@@ -925,14 +925,9 @@ Licenses: (parsed from: `/usr/share/doc/libxtables12/copyright`)
 - `GPL-2+`
 - `custom`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iptables=1.8.7-1ubuntu5.1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7-1ubuntu5.1.dsc' iptables_1.8.7-1ubuntu5.1.dsc 2850 SHA512:6f089e285dd0bce3573d3c1b3ce8b0f7cbee219b7358a3edd42265e9cb1b9e25fbb1a5f5e4cbbe8455596ef3ebca1bac47cc75b8bc67c670ce3a429ee102f49c
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7.orig.tar.bz2' iptables_1.8.7.orig.tar.bz2 717862 SHA512:c0a33fafbf1139157a9f52860938ebedc282a1394a68dcbd58981159379eb525919f999b25925f2cb4d6b18089bd99a94b00b3e73cff5cb0a0e47bdff174ed75
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7-1ubuntu5.1.debian.tar.xz' iptables_1.8.7-1ubuntu5.1.debian.tar.xz 87396 SHA512:0c9e33150ede833159b94b5373b04abd56fc4c38d733a6a5c207a95a9b6574863bd882feead7622424d3e54257c3e7171e128a61c5ff6a4c5433478ccb026d12
-```
 
 ### `dpkg` source package: `keyutils=1.6.1-2ubuntu3`
 
