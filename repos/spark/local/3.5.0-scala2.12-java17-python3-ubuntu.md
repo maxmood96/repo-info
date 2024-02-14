@@ -203,15 +203,9 @@ Licenses: (parsed from: `/usr/share/doc/bind9-host/copyright`, `/usr/share/doc/b
 - `MPL-2.0`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bind9=1:9.18.18-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.18-0ubuntu0.22.04.1.dsc' bind9_9.18.18-0ubuntu0.22.04.1.dsc 3292 SHA512:cab47c5632101fbcac6b4e2afc2eea818ce39c057ceadd1f6540b8997614654b705819020d4096f14210e6774404abb12d16cf3b25a3d5464e4c0fce550242e0
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.18.orig.tar.xz' bind9_9.18.18.orig.tar.xz 5490428 SHA512:8d94ec93915c776b9035bce2c3e707c6fb2fa526dbc3b08211c8265daa2c3c88bde51bec08dc416b5b7ba61604754846c4d1efa3f09eebd23847c417c9dc8760
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.18.orig.tar.xz.asc' bind9_9.18.18.orig.tar.xz.asc 833 SHA512:f928d702967940f60fd8a0c9e6458f75abaf2f902220094aa0c1df7b158cb22230689c06b987cea3cbe88b0f8847d0bd073fb542730ff0c879086019d2917f32
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.18-0ubuntu0.22.04.1.debian.tar.xz' bind9_9.18.18-0ubuntu0.22.04.1.debian.tar.xz 92684 SHA512:93e4fda57076610e5a7f2fe4ff9708468c7b111bc939169a227cb0314058ae0b22eac20f8efd24bf5c8910858332cbe407c2ac33856e2f82b77eb0a0573705ff
-```
 
 ### `dpkg` source package: `binutils=2.38-4ubuntu2.5`
 
