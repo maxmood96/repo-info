@@ -1,10 +1,10 @@
-# `solr:9.4.1-slim`
+# `solr:9.5.0-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ef30eca27bb75a1ae7978aab1b5a9229aa49d7fc4e031ffaf1e160e1a3f7dd93`
-- Created: `2024-01-25T18:38:04Z`
-- Virtual Size: ~ 354.50 Mb  
+- Image ID: `sha256:e1acb5802046745610a3ebf4ca3d14d24307e515517087abc97199dec8463a1f`
+- Created: `2024-02-12T14:46:38Z`
+- Virtual Size: ~ 355.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -36,7 +36,7 @@
   - `org.opencontainers.image.source=https://github.com/apache/solr`
   - `org.opencontainers.image.title=Apache Solr`
   - `org.opencontainers.image.url=https://solr.apache.org`
-  - `org.opencontainers.image.version=9.4.1`
+  - `org.opencontainers.image.version=9.5.0`
 
 ## `dpkg` (`.deb`-based packages)
 
