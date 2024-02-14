@@ -1,10 +1,10 @@
-# `composer:2.6.6`
+# `composer:2.7.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e2bba1f537c99c7fd18bf199bf035d534be95ae8be923d8689a1928dd097de84`
-- Created: `2023-12-11T11:48:14Z`
-- Virtual Size: ~ 192.16 Mb  
+- Image ID: `sha256:110f0e5d0a1e0ec0e0d4a99a9418f10ebcc833f13fe90393211181c62f594eaf`
+- Created: `2024-02-10T15:19:23Z`
+- Virtual Size: ~ 192.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=4ffa3e44afc9c590e28dc0d2d31fc61f0139f8b335f11880a121b9f9b9f0634e`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=2.6.6`
+  - `COMPOSER_VERSION=2.7.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -540,16 +540,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.5.0-r2 description:
+libexpat-2.6.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.5.0-r2 webpage:
+libexpat-2.6.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.5.0-r2 installed size:
+libexpat-2.6.0-r0 installed size:
 144 KiB
 
-libexpat-2.5.0-r2 license:
+libexpat-2.6.0-r0 license:
 MIT
 
 ```
