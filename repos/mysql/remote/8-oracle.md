@@ -1,7 +1,7 @@
 ## `mysql:8-oracle`
 
 ```console
-$ docker pull mysql@sha256:343b82684a6b05812c58ca20ccd3af8bcf8a5f48b1842f251c54379bfce848f9
+$ docker pull mysql@sha256:ff5ab9cdce0b4c59704b4e2a09deed5ab8467be795e0ea20228b8528f53fcf82
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -134,19 +134,19 @@ $ docker pull mysql@sha256:5274b178cef715e019f1d100752f50511629f19214f372229c496
 ### `mysql:8-oracle` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:1fb3a55e812ef9ca0aea545719c6ade78e437ef10f5e9115f165c0cc45a1873b
+$ docker pull mysql@sha256:cf2ece69590c9306aea19dbcc6880fd2f839378b5a0599fc2144d8fd53d7c79b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **181.4 MB (181355402 bytes)**  
+-	Total Size: **181.4 MB (181350870 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f567a0830cbbe5a0f0a01155e72b194cf4e63ad5643bc15bd5493116ae9ad1e`
+-	Image ID: `sha256:e68e2614955cad9955f5bf3eab032c5c5356e00ae1e7725e850cc0beec446214`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
 # Thu, 18 Jan 2024 17:37:32 GMT
-ADD file:cd2f7e73ea216c58af8e2422d8e7fdd8cdc79f510d74cf24416e3a3f4929f8c2 in / 
+ADD file:53c58659a3a149d31f0d4d27fa4b6bd9309fb3d49af7029f3734b7412be59e5b in / 
 # Thu, 18 Jan 2024 17:37:32 GMT
 CMD ["/bin/bash"]
 # Thu, 18 Jan 2024 17:37:32 GMT
@@ -186,67 +186,67 @@ CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:0647c03756d6c2108bc331960a270dba455e910d0f076e51ad650f96b8c54db9`  
-		Last Modified: Tue, 06 Feb 2024 22:06:18 GMT  
-		Size: 50.1 MB (50077424 bytes)  
+	-	`sha256:ea4e27ae0b4ca9ec65ab9fad027fde7a9b423d8982124bf17fee78d70c56715d`  
+		Last Modified: Wed, 14 Feb 2024 01:46:25 GMT  
+		Size: 50.1 MB (50072914 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c571053c52e26a7a92e8deecce48f574cbd8ee084fe6cd2fc9364b2d1cfc83a`  
-		Last Modified: Tue, 06 Feb 2024 23:29:05 GMT  
-		Size: 884.0 B  
+	-	`sha256:83790430248242651bf0fd628da54a6ba6285193bbb5b6dd885276c30dda0fca`  
+		Last Modified: Wed, 14 Feb 2024 11:00:31 GMT  
+		Size: 883.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6453741958d8daf97caae065cd580ced71ebaf5ef14cbe9a0ad878f0e3993f9`  
-		Last Modified: Tue, 06 Feb 2024 23:29:06 GMT  
+	-	`sha256:3c574b61b2411bc88f41515e3cb0e2adea26cecbbf09f08c8629993e67e17fe1`  
+		Last Modified: Wed, 14 Feb 2024 11:00:31 GMT  
 		Size: 913.0 KB (912965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03e97ad7011a7fe93550602e106b83b26a19279e41a50deb11d18a3f3456df65`  
-		Last Modified: Tue, 06 Feb 2024 23:29:05 GMT  
-		Size: 4.3 MB (4296380 bytes)  
+	-	`sha256:654fc4f3eb2d8d40b8cb0624d941ee572357f12bee608d47db41c249b5514964`  
+		Last Modified: Wed, 14 Feb 2024 11:00:31 GMT  
+		Size: 4.3 MB (4296411 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65f90da87686b38d8cafeb4b24913cbba39ef1087ee5a11f49df873457b8ee94`  
-		Last Modified: Tue, 06 Feb 2024 23:29:06 GMT  
+	-	`sha256:32da9c2187e392ab929fab14fb34c690b1bc9fd1b57328427bba8d7be8157b5c`  
+		Last Modified: Wed, 14 Feb 2024 11:00:32 GMT  
 		Size: 2.6 KB (2605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:389c2a8fa113a20e70ad26c869d8c806ba8cb53e06a98021c8f5b41314706fe7`  
-		Last Modified: Tue, 06 Feb 2024 23:29:07 GMT  
-		Size: 340.0 B  
+	-	`sha256:dc99c3c88bd6a34b9545aaf31cc887e6593c8de6b75462e970c17b6f719d7033`  
+		Last Modified: Wed, 14 Feb 2024 11:00:32 GMT  
+		Size: 339.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9ec19ee1f6a05fc54b4114c7afb96452faab912ba78cd79801a5070cbfb097d`  
-		Last Modified: Tue, 06 Feb 2024 23:29:09 GMT  
-		Size: 62.0 MB (62038782 bytes)  
+	-	`sha256:970181cc0aa652b91de7ef5d3a4a8334ca1aa33ba6c056d9e40b3393c55f8e7a`  
+		Last Modified: Wed, 14 Feb 2024 11:00:35 GMT  
+		Size: 62.0 MB (62038818 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe4ac7a81f6fc355b4a249c452db8f14f9b26be2a5e40f303bb76dbc9bfc7a50`  
-		Last Modified: Tue, 06 Feb 2024 23:29:08 GMT  
+	-	`sha256:d77b716c39d5b0ea63d0ceede4cf7561556f433b87b57469ffb08dfff917341a`  
+		Last Modified: Wed, 14 Feb 2024 11:00:33 GMT  
 		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:425626fff053054f82c2fdbc28682d8b6406b39b2022418edf564d7955e65cd0`  
-		Last Modified: Tue, 06 Feb 2024 23:29:10 GMT  
-		Size: 64.0 MB (64020519 bytes)  
+	-	`sha256:9e650d7f9f83be21b6573f6e6928f6feca92eeda8d3fff9b87ce692342008aaf`  
+		Last Modified: Wed, 14 Feb 2024 11:00:36 GMT  
+		Size: 64.0 MB (64020429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b24585fbe7059bcc01d9159387cd8d647dab53bd9ba884748050d7e0754ef90c`  
-		Last Modified: Tue, 06 Feb 2024 23:29:08 GMT  
-		Size: 5.2 KB (5178 bytes)  
+	-	`sha256:acc21ff36b4b883c5f94497fb34e8b488b8fc405d527d4fa78eb88716f04a150`  
+		Last Modified: Wed, 14 Feb 2024 11:00:34 GMT  
+		Size: 5.2 KB (5181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:8-oracle` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:67c6025ecec8f40cae1f111867f6a508f125705d758960efdc6b66ab3e021f90
+$ docker pull mysql@sha256:2992bb8f887541d31fd2620bca3517c79493d221c2e574237eccb197f2c6f044
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.2 MB (12164940 bytes)**  
+-	Total Size: **12.2 MB (12164939 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9cffc11f2065f14f88b716ff45fb79d5273a153f5dd3274cbb5e29a2b42995ce`
+-	Image ID: `sha256:d943f63e9e568384c0c1fd4311e13ef90099e33afefef87dd105743d4594af20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ae695922a2e26a20dac635e86850bd7365283469d42f6c972805463ec4817464`  
-		Last Modified: Tue, 06 Feb 2024 23:29:06 GMT  
+	-	`sha256:4d1c8b0d984b5d7fdeeade25631416d5bf469b14276110d512cb50e74d30823a`  
+		Last Modified: Wed, 14 Feb 2024 11:00:31 GMT  
 		Size: 12.1 MB (12129654 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:41ae588ccc6f09d4905be66cbdc06c66863786ee439cb5da13bf785f866c1cd1`  
-		Last Modified: Tue, 06 Feb 2024 23:29:05 GMT  
-		Size: 35.3 KB (35286 bytes)  
+	-	`sha256:cbd46473e3d612a62cf79ea1ac033c73ba240026e52911972dc2808d3aa221dc`  
+		Last Modified: Wed, 14 Feb 2024 11:00:31 GMT  
+		Size: 35.3 KB (35285 bytes)  
 		MIME: application/vnd.in-toto+json
