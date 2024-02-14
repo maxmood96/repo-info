@@ -10,7 +10,7 @@
 ## `swipl:9.2.0`
 
 ```console
-$ docker pull swipl@sha256:1e7225c6cee1a063316b28a76396be706679bb8e0efaa8f26e0c62a45034ccd6
+$ docker pull swipl@sha256:f2520f76849ead3c49ec35d3790ae47333345f4e33b1897e69104c0a59c2d48b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -159,18 +159,18 @@ $ docker pull swipl@sha256:a635d955042d4e979eb7dacd730cd0f7a867fa6eaef3fa4ecca4f
 ### `swipl:9.2.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull swipl@sha256:3621d7115caff23a98ad77fd7d377211bc4e40fc9fcb043d879cf6f8c138bdac
+$ docker pull swipl@sha256:3c42dc916cacb6876d5f7912cf5a9c71bb49524504f6acc232de02671f435ae3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **94.4 MB (94439585 bytes)**  
+-	Total Size: **94.4 MB (94410168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:67361d97f6a16ce6c8847f35c61cfd37d3736d069bd25fef22a61e7960968469`
+-	Image ID: `sha256:3523274f98d685dbdf7a6a9d96704e1a99c5f82ca99d49184b77c32263f079b9`
 -	Default Command: `["swipl"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 17:20:27 GMT
-ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+ADD file:a3e4f94158c3515dc70de5aa81c136a9f7daf5adcac636a15c237097cb454140 in / 
 # Wed, 31 Jan 2024 17:20:27 GMT
 CMD ["bash"]
 # Wed, 31 Jan 2024 17:20:27 GMT
@@ -186,40 +186,40 @@ CMD ["swipl"]
 ```
 
 -	Layers:
-	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
-		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
-		Size: 29.2 MB (29180832 bytes)  
+	-	`sha256:f546e941f15b76df3d982d56985432b05bc065e3923fb35be25a4d33d5c0f911`  
+		Last Modified: Tue, 13 Feb 2024 00:44:54 GMT  
+		Size: 29.2 MB (29156363 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:908fca5bef8a4e554e74cc61f9ab2b48bc38acaad5357f6c2141d53b46a65284`  
-		Last Modified: Thu, 08 Feb 2024 19:44:01 GMT  
-		Size: 47.7 MB (47681868 bytes)  
+	-	`sha256:edd47474c3366ea4fb7156808ecf87fb0ea66e8adaa8ddf5847ad3fe85371928`  
+		Last Modified: Wed, 14 Feb 2024 09:40:43 GMT  
+		Size: 47.7 MB (47677037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0ce6184dd9d08c2d89f2bd29e2a5d93f4a0b1eece6aa9ea44ead2d94be418d1`  
-		Last Modified: Thu, 08 Feb 2024 20:00:59 GMT  
-		Size: 17.6 MB (17576885 bytes)  
+	-	`sha256:f75e07280346bf778abb92f5181186cf0776ecf6c3a76e4458a0b64ddcc51962`  
+		Last Modified: Wed, 14 Feb 2024 09:57:37 GMT  
+		Size: 17.6 MB (17576768 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swipl:9.2.0` - unknown; unknown
 
 ```console
-$ docker pull swipl@sha256:fa2ec0cb77abb84293c97193557f5b1c4a852722de0de6cc93b4d61314a8ecee
+$ docker pull swipl@sha256:75e446d8a9d18ab3fa64c08ecc1ac2d0c5df4712de93f06a7d3959bb5a723c80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2742717 bytes)**  
+-	Total Size: **2.7 MB (2742765 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b60d7508557529ccadc808827869f8a65863d6c4c00d7ff6205bcce0d08f6452`
+-	Image ID: `sha256:585c2778ccc285e2b6a53a25da0c51cf78deb241b634c646a39d0944f916585b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8bc7d921817ae908b6a24429058391191606c4419692c794c6068db8bf80785d`  
-		Last Modified: Thu, 08 Feb 2024 20:00:59 GMT  
-		Size: 2.7 MB (2725611 bytes)  
+	-	`sha256:8aedf5ac5c98279f2ef3d99ce3706cd3be7080ba18a34fba998cbb721383b87b`  
+		Last Modified: Wed, 14 Feb 2024 09:57:37 GMT  
+		Size: 2.7 MB (2725659 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0b9d715332f39978966476c733c253205ea2a482652cb7fb75d980bdcb234bac`  
-		Last Modified: Thu, 08 Feb 2024 20:00:58 GMT  
+	-	`sha256:a62932ccc38a5bb9ef215a9e8ec97c1c481d98a629a29689c1a4df72cce14cfc`  
+		Last Modified: Wed, 14 Feb 2024 09:57:36 GMT  
 		Size: 17.1 KB (17106 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -658,7 +658,7 @@ $ docker pull swipl@sha256:9a53ecf3d9f4c1ca03155be62558e0289013e6f159466f5f7cfcf
 ## `swipl:stable`
 
 ```console
-$ docker pull swipl@sha256:1e7225c6cee1a063316b28a76396be706679bb8e0efaa8f26e0c62a45034ccd6
+$ docker pull swipl@sha256:f2520f76849ead3c49ec35d3790ae47333345f4e33b1897e69104c0a59c2d48b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -807,18 +807,18 @@ $ docker pull swipl@sha256:a635d955042d4e979eb7dacd730cd0f7a867fa6eaef3fa4ecca4f
 ### `swipl:stable` - linux; arm64 variant v8
 
 ```console
-$ docker pull swipl@sha256:3621d7115caff23a98ad77fd7d377211bc4e40fc9fcb043d879cf6f8c138bdac
+$ docker pull swipl@sha256:3c42dc916cacb6876d5f7912cf5a9c71bb49524504f6acc232de02671f435ae3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **94.4 MB (94439585 bytes)**  
+-	Total Size: **94.4 MB (94410168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:67361d97f6a16ce6c8847f35c61cfd37d3736d069bd25fef22a61e7960968469`
+-	Image ID: `sha256:3523274f98d685dbdf7a6a9d96704e1a99c5f82ca99d49184b77c32263f079b9`
 -	Default Command: `["swipl"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 17:20:27 GMT
-ADD file:ef6f078c1e72fcfafb9bfeeff0c1c771219dc2efe34650963106f63d32183b49 in / 
+ADD file:a3e4f94158c3515dc70de5aa81c136a9f7daf5adcac636a15c237097cb454140 in / 
 # Wed, 31 Jan 2024 17:20:27 GMT
 CMD ["bash"]
 # Wed, 31 Jan 2024 17:20:27 GMT
@@ -834,39 +834,39 @@ CMD ["swipl"]
 ```
 
 -	Layers:
-	-	`sha256:25d3892798f8b99159e3c1136799bfed560027ce451b50d57d961f4f02577ff5`  
-		Last Modified: Wed, 31 Jan 2024 22:48:07 GMT  
-		Size: 29.2 MB (29180832 bytes)  
+	-	`sha256:f546e941f15b76df3d982d56985432b05bc065e3923fb35be25a4d33d5c0f911`  
+		Last Modified: Tue, 13 Feb 2024 00:44:54 GMT  
+		Size: 29.2 MB (29156363 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:908fca5bef8a4e554e74cc61f9ab2b48bc38acaad5357f6c2141d53b46a65284`  
-		Last Modified: Thu, 08 Feb 2024 19:44:01 GMT  
-		Size: 47.7 MB (47681868 bytes)  
+	-	`sha256:edd47474c3366ea4fb7156808ecf87fb0ea66e8adaa8ddf5847ad3fe85371928`  
+		Last Modified: Wed, 14 Feb 2024 09:40:43 GMT  
+		Size: 47.7 MB (47677037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0ce6184dd9d08c2d89f2bd29e2a5d93f4a0b1eece6aa9ea44ead2d94be418d1`  
-		Last Modified: Thu, 08 Feb 2024 20:00:59 GMT  
-		Size: 17.6 MB (17576885 bytes)  
+	-	`sha256:f75e07280346bf778abb92f5181186cf0776ecf6c3a76e4458a0b64ddcc51962`  
+		Last Modified: Wed, 14 Feb 2024 09:57:37 GMT  
+		Size: 17.6 MB (17576768 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swipl:stable` - unknown; unknown
 
 ```console
-$ docker pull swipl@sha256:fa2ec0cb77abb84293c97193557f5b1c4a852722de0de6cc93b4d61314a8ecee
+$ docker pull swipl@sha256:75e446d8a9d18ab3fa64c08ecc1ac2d0c5df4712de93f06a7d3959bb5a723c80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2742717 bytes)**  
+-	Total Size: **2.7 MB (2742765 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b60d7508557529ccadc808827869f8a65863d6c4c00d7ff6205bcce0d08f6452`
+-	Image ID: `sha256:585c2778ccc285e2b6a53a25da0c51cf78deb241b634c646a39d0944f916585b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8bc7d921817ae908b6a24429058391191606c4419692c794c6068db8bf80785d`  
-		Last Modified: Thu, 08 Feb 2024 20:00:59 GMT  
-		Size: 2.7 MB (2725611 bytes)  
+	-	`sha256:8aedf5ac5c98279f2ef3d99ce3706cd3be7080ba18a34fba998cbb721383b87b`  
+		Last Modified: Wed, 14 Feb 2024 09:57:37 GMT  
+		Size: 2.7 MB (2725659 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0b9d715332f39978966476c733c253205ea2a482652cb7fb75d980bdcb234bac`  
-		Last Modified: Thu, 08 Feb 2024 20:00:58 GMT  
+	-	`sha256:a62932ccc38a5bb9ef215a9e8ec97c1c481d98a629a29689c1a4df72cce14cfc`  
+		Last Modified: Wed, 14 Feb 2024 09:57:36 GMT  
 		Size: 17.1 KB (17106 bytes)  
 		MIME: application/vnd.in-toto+json
