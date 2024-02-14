@@ -1,7 +1,7 @@
 ## `openjdk:22-jdk-oraclelinux7`
 
 ```console
-$ docker pull openjdk@sha256:ab3f5d2b4782cde8a78321356ae1ff7509f724bb8bb63797dff5cb2107328773
+$ docker pull openjdk@sha256:84bc1896d1958da84082ca9471120b8e9379f838e1b2dff1a168c8029bc9c431
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -85,19 +85,19 @@ $ docker pull openjdk@sha256:5690d3bb6c9da5702c641f2a20268cf0aece501095613305463
 ### `openjdk:22-jdk-oraclelinux7` - linux; arm64 variant v8
 
 ```console
-$ docker pull openjdk@sha256:910b15229f33f8dac0e75321016a14fee29cdc5c9218bdae1539a87dab0c5b19
+$ docker pull openjdk@sha256:7dd743497c2832a3f0792224a8cf5a90ff1880cd387ef7ead2541dd99d54f94c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **267.1 MB (267076346 bytes)**  
+-	Total Size: **267.1 MB (267058856 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14f469ab7f97308106a089d9b4eb63d6e069b39afea47ef955dcfa985bfdaf72`
+-	Image ID: `sha256:4b666b8009cfac4fca3c150fe80f47334ac8d2fc2781480d77a39fccb8f0732f`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Wed, 17 Jan 2024 22:08:17 GMT
-ADD file:8e4f54dbc6703a8208e63085c4e5598de223be1f27406807e223bc6ef121c4cf in / 
-# Wed, 17 Jan 2024 22:08:18 GMT
+# Fri, 09 Feb 2024 19:48:12 GMT
+ADD file:8a1de5e2eb0c974503a07ee47335076f6fd201d377d647cbc5454453b71f05dc in / 
+# Fri, 09 Feb 2024 19:48:12 GMT
 CMD ["/bin/bash"]
 # Fri, 09 Feb 2024 19:48:12 GMT
 RUN set -eux; 	yum install -y --setopt=skip_missing_names_on_install=False 		gzip 		tar 				binutils 		freetype fontconfig 	; 	rm -rf /var/cache/yum # buildkit
@@ -116,39 +116,39 @@ CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:963289c7c202b6b90d04fa4c851434fe886f6eaf9d3f3cd608dd53d3616791ea`  
-		Last Modified: Wed, 17 Jan 2024 22:10:14 GMT  
-		Size: 51.0 MB (51000317 bytes)  
+	-	`sha256:f12fd75c9aeabed692ef7b5d8a691db1e8f77911ac84bdaba43458300ab36fb9`  
+		Last Modified: Wed, 14 Feb 2024 01:47:06 GMT  
+		Size: 51.0 MB (50996218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b42a06ab66b43a901c035f28bcf7a5d44201a1d0f6130c5d26dcce4d2d409c86`  
-		Last Modified: Sat, 27 Jan 2024 20:34:04 GMT  
-		Size: 15.3 MB (15258019 bytes)  
+	-	`sha256:d0f5782b608cb55c41f80fe5c4e8c6606f42add68733d4172117af3cbf2d90aa`  
+		Last Modified: Wed, 14 Feb 2024 11:17:14 GMT  
+		Size: 15.2 MB (15244449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16b9c98caa8fb27b5e3193214b82b6e2bbe5ead093126d9cfe128c147495acb6`  
-		Last Modified: Tue, 13 Feb 2024 00:30:59 GMT  
-		Size: 200.8 MB (200818010 bytes)  
+	-	`sha256:2dbe25479eca7b73dfaf9c72f0d0747cbd0421badcc06c49c20014909b38f802`  
+		Last Modified: Wed, 14 Feb 2024 11:18:51 GMT  
+		Size: 200.8 MB (200818189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `openjdk:22-jdk-oraclelinux7` - unknown; unknown
 
 ```console
-$ docker pull openjdk@sha256:e036a6c5163f06dc0150fd8730d0cca61142e254e1aa6e62ab82b251020c0aff
+$ docker pull openjdk@sha256:f4087ec7a229e9fe42e7c8271367d688bbc8ea4d6f269186f2d2a9d441f6b128
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3780482 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b16d4e93743aed2959c395d4e3010762ddeb92ddbcd7aad2b61a5b2b84bc65e`
+-	Image ID: `sha256:6f374617c74dd02d04b4e5edc2dfd716b4836e38e3baa94cc8713dafbe40f990`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8951e48518cbd54beebbec1728b8eb305490ebdff19f2ff25bddb8f83fafe7d9`  
-		Last Modified: Tue, 13 Feb 2024 00:30:55 GMT  
+	-	`sha256:066151ba2419ba26c295cd5bd12d5e50a77085802c1edc4e8c4b7d483fbee4ff`  
+		Last Modified: Wed, 14 Feb 2024 11:18:47 GMT  
 		Size: 3.8 MB (3764840 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d288ba5e4792858ff6c802f3ac62341c6745c11c30a56be498ece5a5297aa3ad`  
-		Last Modified: Tue, 13 Feb 2024 00:30:54 GMT  
+	-	`sha256:b7d8c818cf620ec23a3aca4644d669a7c024576b4d8b454457aa73358005e124`  
+		Last Modified: Wed, 14 Feb 2024 11:18:46 GMT  
 		Size: 15.6 KB (15642 bytes)  
 		MIME: application/vnd.in-toto+json
