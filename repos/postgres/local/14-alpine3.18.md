@@ -1,10 +1,10 @@
-# `postgres:14.10-alpine3.18`
+# `postgres:14.11-alpine3.18`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d20fe884f9ea58db3f4f7adb8adab4a2ec7d68858dbfb276d0409e8f90d774f`
-- Created: `2023-12-22T00:27:15Z`
-- Virtual Size: ~ 235.38 Mb  
+- Image ID: `sha256:99abdb3ebd73932b45c33508914b363649a012a2851112f073b38bf7ca7efd01`
+- Created: `2024-02-08T19:28:15Z`
+- Virtual Size: ~ 235.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=14`
-  - `PG_VERSION=14.10`
-  - `PG_SHA256=c99431c48e9d470b0d0ab946eb2141a3cd19130c2fb4dc4b3284a7774ecc8399`
+  - `PG_VERSION=14.11`
+  - `PG_SHA256=a670bd7dce22dcad4297b261136b3b1d4a09a6f541719562aa14ca63bf2968a8`
   - `DOCKER_PG_LLVM_DEPS=llvm15-dev 		clang15`
   - `PGDATA=/var/lib/postgresql/data`
 
@@ -720,16 +720,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2023d-r0 description:
+tzdata-2024a-r0 description:
 Timezone data
 
-tzdata-2023d-r0 webpage:
+tzdata-2024a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2023d-r0 installed size:
-3076 KiB
+tzdata-2024a-r0 installed size:
+3072 KiB
 
-tzdata-2023d-r0 license:
+tzdata-2024a-r0 license:
 Public-Domain
 
 ```
