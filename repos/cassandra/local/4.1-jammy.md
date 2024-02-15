@@ -1,10 +1,10 @@
-# `cassandra:4.1.3`
+# `cassandra:4.1.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c5a661a601b9297c727a7e4f0f330eef30ba06af1b8be0b8ca48f64eb6416e19`
-- Created: `2024-01-16T18:43:13Z`
-- Virtual Size: ~ 353.34 Mb  
+- Image ID: `sha256:81e82c5ea6f89a32290ad564729afd4928ab57951487826082bfbbc856611f09`
+- Created: `2024-02-14T21:24:28Z`
+- Virtual Size: ~ 353.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -20,8 +20,8 @@
   - `CASSANDRA_HOME=/opt/cassandra`
   - `CASSANDRA_CONF=/etc/cassandra`
   - `GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55 	7464AAD9068241C50BA6A26232F35CB2F546D93E 	CEC5C50B9C629EF0F5AB2706650B72EB14CCD622`
-  - `CASSANDRA_VERSION=4.1.3`
-  - `CASSANDRA_SHA512=393443a5b9849645362df2f7536e734e1fc6d513aadf440fab8dda3063553394a138805098796d35f9d4d31e2899ecab630a2ec2a44d00d5e63bed549a2e844c`
+  - `CASSANDRA_VERSION=4.1.4`
+  - `CASSANDRA_SHA512=ddc9f4157a6e272b421850c7787b822bae36c72ab2dce711a91dc24fe18bf56f2cd91c61410243cdc0eeeb5f2a7e5419f8a531863116026996bd3f167c36a916`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -873,11 +873,11 @@ $ apt-get source -qq --print-uris iproute2=5.15.0-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_5.15.0-1ubuntu2.debian.tar.xz' iproute2_5.15.0-1ubuntu2.debian.tar.xz 40800 SHA512:530a0f15b5539f047bb02d9fb3693190cce543f5dfe67b92f8f45487da77ca26422f1051bae098a4f5acc68ceb19eb56ffa5d07c565c3e18d67ffc823378eee8
 ```
 
-### `dpkg` source package: `iptables=1.8.7-1ubuntu5.1`
+### `dpkg` source package: `iptables=1.8.7-1ubuntu5.2`
 
 Binary Packages:
 
-- `libxtables12:amd64=1.8.7-1ubuntu5.1`
+- `libxtables12:amd64=1.8.7-1ubuntu5.2`
 
 Licenses: (parsed from: `/usr/share/doc/libxtables12/copyright`)
 
@@ -889,10 +889,10 @@ Licenses: (parsed from: `/usr/share/doc/libxtables12/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris iptables=1.8.7-1ubuntu5.1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7-1ubuntu5.1.dsc' iptables_1.8.7-1ubuntu5.1.dsc 2850 SHA512:6f089e285dd0bce3573d3c1b3ce8b0f7cbee219b7358a3edd42265e9cb1b9e25fbb1a5f5e4cbbe8455596ef3ebca1bac47cc75b8bc67c670ce3a429ee102f49c
+$ apt-get source -qq --print-uris iptables=1.8.7-1ubuntu5.2
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7-1ubuntu5.2.dsc' iptables_1.8.7-1ubuntu5.2.dsc 2850 SHA512:b07f7e5e7056bcff264bbd7cf770b40462f6c5984582b175fc86f22c6435f4b3e138074db97851c92739dc32e80a6f9fc29d990e7efebdeabd8532440c4a500a
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7.orig.tar.bz2' iptables_1.8.7.orig.tar.bz2 717862 SHA512:c0a33fafbf1139157a9f52860938ebedc282a1394a68dcbd58981159379eb525919f999b25925f2cb4d6b18089bd99a94b00b3e73cff5cb0a0e47bdff174ed75
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7-1ubuntu5.1.debian.tar.xz' iptables_1.8.7-1ubuntu5.1.debian.tar.xz 87396 SHA512:0c9e33150ede833159b94b5373b04abd56fc4c38d733a6a5c207a95a9b6574863bd882feead7622424d3e54257c3e7171e128a61c5ff6a4c5433478ccb026d12
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7-1ubuntu5.2.debian.tar.xz' iptables_1.8.7-1ubuntu5.2.debian.tar.xz 88180 SHA512:c9f01e0fbfd22f5961f17da4edc3c15902959cb031067b4872d2e8d20ca3a96f56bb260f3d51fefd0c17177bbc1753dd7e3b23e1836e7b9eae252db313e4b402
 ```
 
 ### `dpkg` source package: `jemalloc=5.2.1-4ubuntu1`
