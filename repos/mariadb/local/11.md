@@ -1,10 +1,10 @@
-# `mariadb:11.2.2-jammy`
+# `mariadb:11.2.3-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5bf2b86cbac506ee1dca87b9bc6bddd0afb59d14e97e111ff6579887121fedae`
-- Created: `2023-11-21T20:35:25Z`
-- Virtual Size: ~ 404.47 Mb  
+- Image ID: `sha256:299933e6115e275a468af447a40ac7b50fdb1bd9ca40b0292a14fe1bf5b832f3`
+- Created: `2024-02-11T23:03:42Z`
+- Virtual Size: ~ 404.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.17`
   - `LANG=C.UTF-8`
-  - `MARIADB_VERSION=1:11.2.2+maria~ubu2204`
+  - `MARIADB_VERSION=1:11.2.3+maria~ubu2204`
 - Labels:
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/library/ubuntu:jammy`
@@ -25,7 +25,7 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=11.2.2`
+  - `org.opencontainers.image.version=11.2.3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -761,11 +761,11 @@ $ apt-get source -qq --print-uris iproute2=5.15.0-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_5.15.0-1ubuntu2.debian.tar.xz' iproute2_5.15.0-1ubuntu2.debian.tar.xz 40800 SHA512:530a0f15b5539f047bb02d9fb3693190cce543f5dfe67b92f8f45487da77ca26422f1051bae098a4f5acc68ceb19eb56ffa5d07c565c3e18d67ffc823378eee8
 ```
 
-### `dpkg` source package: `iptables=1.8.7-1ubuntu5.1`
+### `dpkg` source package: `iptables=1.8.7-1ubuntu5.2`
 
 Binary Packages:
 
-- `libxtables12:amd64=1.8.7-1ubuntu5.1`
+- `libxtables12:amd64=1.8.7-1ubuntu5.2`
 
 Licenses: (parsed from: `/usr/share/doc/libxtables12/copyright`)
 
@@ -777,10 +777,10 @@ Licenses: (parsed from: `/usr/share/doc/libxtables12/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris iptables=1.8.7-1ubuntu5.1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7-1ubuntu5.1.dsc' iptables_1.8.7-1ubuntu5.1.dsc 2850 SHA512:6f089e285dd0bce3573d3c1b3ce8b0f7cbee219b7358a3edd42265e9cb1b9e25fbb1a5f5e4cbbe8455596ef3ebca1bac47cc75b8bc67c670ce3a429ee102f49c
+$ apt-get source -qq --print-uris iptables=1.8.7-1ubuntu5.2
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7-1ubuntu5.2.dsc' iptables_1.8.7-1ubuntu5.2.dsc 2850 SHA512:b07f7e5e7056bcff264bbd7cf770b40462f6c5984582b175fc86f22c6435f4b3e138074db97851c92739dc32e80a6f9fc29d990e7efebdeabd8532440c4a500a
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7.orig.tar.bz2' iptables_1.8.7.orig.tar.bz2 717862 SHA512:c0a33fafbf1139157a9f52860938ebedc282a1394a68dcbd58981159379eb525919f999b25925f2cb4d6b18089bd99a94b00b3e73cff5cb0a0e47bdff174ed75
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7-1ubuntu5.1.debian.tar.xz' iptables_1.8.7-1ubuntu5.1.debian.tar.xz 87396 SHA512:0c9e33150ede833159b94b5373b04abd56fc4c38d733a6a5c207a95a9b6574863bd882feead7622424d3e54257c3e7171e128a61c5ff6a4c5433478ccb026d12
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7-1ubuntu5.2.debian.tar.xz' iptables_1.8.7-1ubuntu5.2.debian.tar.xz 88180 SHA512:c9f01e0fbfd22f5961f17da4edc3c15902959cb031067b4872d2e8d20ca3a96f56bb260f3d51fefd0c17177bbc1753dd7e3b23e1836e7b9eae252db313e4b402
 ```
 
 ### `dpkg` source package: `jemalloc=5.2.1-4ubuntu1`
@@ -1554,18 +1554,18 @@ $ apt-get source -qq --print-uris lz4=1.9.3-2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.9.3-2build2.debian.tar.xz' lz4_1.9.3-2build2.debian.tar.xz 14088 SHA512:9f61516a672186299a96aee5b7a71d9cb1ad3db2697fa10b802fef14a63587bb3459281f7300726711a116893c10858914f558aece1d224876e287020a23dde6
 ```
 
-### `dpkg` source package: `mariadb=1:11.2.2+maria~ubu2204`
+### `dpkg` source package: `mariadb=1:11.2.3+maria~ubu2204`
 
 Binary Packages:
 
-- `libmariadb3:amd64=1:11.2.2+maria~ubu2204`
-- `mariadb-backup=1:11.2.2+maria~ubu2204`
-- `mariadb-client=1:11.2.2+maria~ubu2204`
-- `mariadb-client-core=1:11.2.2+maria~ubu2204`
-- `mariadb-common=1:11.2.2+maria~ubu2204`
-- `mariadb-server=1:11.2.2+maria~ubu2204`
-- `mariadb-server-core=1:11.2.2+maria~ubu2204`
-- `mysql-common=1:11.2.2+maria~ubu2204`
+- `libmariadb3:amd64=1:11.2.3+maria~ubu2204`
+- `mariadb-backup=1:11.2.3+maria~ubu2204`
+- `mariadb-client=1:11.2.3+maria~ubu2204`
+- `mariadb-client-core=1:11.2.3+maria~ubu2204`
+- `mariadb-common=1:11.2.3+maria~ubu2204`
+- `mariadb-server=1:11.2.3+maria~ubu2204`
+- `mariadb-server-core=1:11.2.3+maria~ubu2204`
+- `mysql-common=1:11.2.3+maria~ubu2204`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1574,9 +1574,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb=1:11.2.2+maria~ubu2204
-'http://archive.mariadb.org/mariadb-11.2.2/repo/ubuntu/pool/main/m/mariadb/mariadb_11.2.2%2bmaria%7eubu2204.dsc' mariadb_11.2.2+maria~ubu2204.dsc 4546 SHA256:ac5446e75801afbb248ded29338cf219e5f4109f48eb4c8b1d905fcb3bc7a57e
-'http://archive.mariadb.org/mariadb-11.2.2/repo/ubuntu/pool/main/m/mariadb/mariadb_11.2.2%2bmaria%7eubu2204.tar.xz' mariadb_11.2.2+maria~ubu2204.tar.xz 63191508 SHA256:1c42524df5ed4c5d1593355d0eac6e3055f89d4253f122b9a2241dd2af2b1cc5
+$ apt-get source -qq --print-uris mariadb=1:11.2.3+maria~ubu2204
+'http://archive.mariadb.org/mariadb-11.2.3/repo/ubuntu/pool/main/m/mariadb/mariadb_11.2.3%2bmaria%7eubu2204.dsc' mariadb_11.2.3+maria~ubu2204.dsc 4489 SHA256:5917f220fb84cd97022cabe17a80ab48dfacb7b3c033080e962b74c58dcdf308
+'http://archive.mariadb.org/mariadb-11.2.3/repo/ubuntu/pool/main/m/mariadb/mariadb_11.2.3%2bmaria%7eubu2204.tar.xz' mariadb_11.2.3+maria~ubu2204.tar.xz 63672588 SHA256:412b0193fe2302a4ff7ea809d0d7345a2f4c9760a9d0f607e1449c3b891c06e1
 ```
 
 ### `dpkg` source package: `mawk=1.3.4.20200120-3`
@@ -1703,9 +1703,8 @@ $ apt-get source -qq --print-uris nettle=3.7.3-1build2
 Binary Packages:
 
 - `libssl3:amd64=3.0.2-0ubuntu1.13`
-- `openssl=3.0.2-0ubuntu1.13`
 
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -1715,6 +1714,29 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.14`
+
+Binary Packages:
+
+- `openssl=3.0.2-0ubuntu1.14`
+
+Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
+
+- `Apache-2.0`
+- `Artistic`
+- `GPL-1`
+- `GPL-1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.14
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.14.dsc' openssl_3.0.2-0ubuntu1.14.dsc 2730 SHA512:b1897ad335d3fe41f801248d9765977c25cf81a02cd25b6a4f61d97b33d13444125a4e8b2c46d39a1e53f922ff517aa92660851552a68d1e1dc172d72bceb77a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.14.debian.tar.xz' openssl_3.0.2-0ubuntu1.14.debian.tar.xz 223084 SHA512:3b3a34429981694643d873e21c8ae07bbd2f127fdf1c64a19cdd72f11380231a96ded752122f605c269d574cc5266a7b63a9acfd2945d0ee967405d792368a86
+```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
