@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-tools-deps-bullseye`
 
 ```console
-$ docker pull clojure@sha256:f01e818103bf4de095b2ec7c8a2a93138409609747895dc7daaba795f1f22f37
+$ docker pull clojure@sha256:328afdb4e6bb672e2ca09a230d4cd1144ba60b62814ce955c5d55b04218a152b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -66,14 +66,14 @@ CMD ["clj"]
 ### `clojure:temurin-11-tools-deps-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:d745561aa90440c364ecbba1e37437f2dd078c25bad73471398abaeab662ef24
+$ docker pull clojure@sha256:d8b962986626ac5fa4b22a8d54967382e283c8b2cc23c0945919de1af759a910
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **264.9 MB (264870077 bytes)**  
+-	Total Size: **264.9 MB (264870493 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fca6dc0eef5acd585348b88ed221f1f73daf74fc43efe3eeecbe425911f1148e`
+-	Image ID: `sha256:6c33bd7beb3dac8e951a6ccdfac1b29c0f8629406f79a9bc899b603c9e5d1740`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -83,19 +83,19 @@ ADD file:46791e28a2eef97a17393ff5cf2928d2e721f9380340a34c7d2e85053edec7c1 in /
 CMD ["bash"]
 # Tue, 13 Feb 2024 01:55:35 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 13 Feb 2024 02:00:36 GMT
-COPY dir:66e2d93ab60a4ef1bb1a1f0fa29608c8835186fbe657955fddda78ed144821fc in /opt/java/openjdk 
-# Tue, 13 Feb 2024 02:00:39 GMT
+# Fri, 16 Feb 2024 07:53:01 GMT
+COPY dir:0419d7bc8c60addce41546593a3de80cd02ee9001351a641f9cf113402b5fb20 in /opt/java/openjdk 
+# Fri, 16 Feb 2024 07:53:04 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 13 Feb 2024 02:03:46 GMT
+# Fri, 16 Feb 2024 07:57:07 GMT
 ENV CLOJURE_VERSION=1.11.1.1435
-# Tue, 13 Feb 2024 02:03:46 GMT
+# Fri, 16 Feb 2024 07:57:07 GMT
 WORKDIR /tmp
-# Tue, 13 Feb 2024 02:04:00 GMT
+# Fri, 16 Feb 2024 07:57:25 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap wget && rm -rf /var/lib/apt/lists/* && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apt-get purge -y --auto-remove curl wget
-# Tue, 13 Feb 2024 02:04:00 GMT
+# Fri, 16 Feb 2024 07:57:26 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Tue, 13 Feb 2024 02:04:00 GMT
+# Fri, 16 Feb 2024 07:57:26 GMT
 CMD ["clj"]
 ```
 
@@ -104,15 +104,15 @@ CMD ["clj"]
 		Last Modified: Tue, 13 Feb 2024 00:45:14 GMT  
 		Size: 53.7 MB (53721486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c186ed2a4be59e96efae471350e604eb9aeb2c333085eb5710177787530416b`  
-		Last Modified: Tue, 13 Feb 2024 02:17:46 GMT  
-		Size: 142.0 MB (142006384 bytes)  
+	-	`sha256:648b28c7b0b1b882a71e9849233f4ab02acfab37c54f47808d97c101efa9ef70`  
+		Last Modified: Fri, 16 Feb 2024 08:08:08 GMT  
+		Size: 142.0 MB (142006410 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b160600e399c2c65ddbc9446c42deffbe0e34e3b4bcc7b27d1955d33651fd95c`  
-		Last Modified: Tue, 13 Feb 2024 02:19:53 GMT  
-		Size: 69.1 MB (69141593 bytes)  
+	-	`sha256:057197a50027a401011e137fad7dba3b460ec7f68b7bd4dbfc59b05e4a7656f0`  
+		Last Modified: Fri, 16 Feb 2024 08:10:21 GMT  
+		Size: 69.1 MB (69141980 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f19562ad000e88e9f640e90cc637217de7d1da1d54f53f052ac48d64414b7f2e`  
-		Last Modified: Tue, 13 Feb 2024 02:19:45 GMT  
-		Size: 614.0 B  
+	-	`sha256:5465c5f0a888f79982612fae76e35174cd18c792d5af89988f000ac0fc5cf40d`  
+		Last Modified: Fri, 16 Feb 2024 08:10:15 GMT  
+		Size: 617.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
