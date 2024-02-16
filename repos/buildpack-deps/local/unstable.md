@@ -133,19 +133,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.7.10
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.10.dsc' apt_2.7.10.dsc 2935 SHA256:5ffa0845e3b266da07e97aaa4ac913bf79a0614ab877ec73eb2d34baced3ced8
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.10.tar.xz' apt_2.7.10.tar.xz 2347804 SHA256:55466c484aa64097ac20f538b4ae042e7f62e6116205418d11ea4fc9221d807e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.7.10/
 
-- https://sources.debian.net/src/apt/2.7.10/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.7.10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.7.10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-1`
 

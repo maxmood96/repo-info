@@ -943,20 +943,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.37-15~deb13u1
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.37-15%7edeb13u1.dsc' glibc_2.37-15~deb13u1.dsc 9075 SHA256:a7dc14d3e6161381ab5da643d7adbf21083d2572bdb37a9d9a99eeb01252b694
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.37.orig.tar.xz' glibc_2.37.orig.tar.xz 19503016 SHA256:d05f010158c16cef110fa1ab560c31477249ee2105360101858a5146aa6fe7d0
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.37-15%7edeb13u1.debian.tar.xz' glibc_2.37-15~deb13u1.debian.tar.xz 411440 SHA256:a16dfdcea228710d62f1569a426559138905496b533838a323b1e226202560ad
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.37-15~deb13u1/
 
-- https://sources.debian.net/src/glibc/2.37-15~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.37-15~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.37-15~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2`
 
