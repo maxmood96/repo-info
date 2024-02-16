@@ -170,13 +170,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12ubuntu4.5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.5.dsc' base-files_12ubuntu4.5.dsc 1639 SHA512:ed1e51f0a6e81f5db4cf6b79f9134b57fda84a7bab5d3c2302775eeb132e94f6296cf446104a31126657b164a2fd133657dc0e3d8f693d2e54216e008293bc93
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.5.tar.xz' base-files_12ubuntu4.5.tar.xz 81912 SHA512:c7f1e6fe9cc88b0784fe50bec8060ab53f57cd868eebaf04b06a9b0b864b48529c6d84c7288f59e695a0996f1630edfe6917c97a9af911409f13fb5732aaeb9e
-```
 
 ### `dpkg` source package: `base-passwd=3.5.52build1`
 
@@ -1871,14 +1867,9 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.8.1-2ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.1.dsc' shadow_4.8.1-2ubuntu2.1.dsc 2060 SHA512:c642f1979173ee997678a73dc7cb9098e185aee3a2860807895534dbe16d25fc2b2546355024d3b45e1dae5ea8bf9184f38929f4fd4e13203b411de3e6690c2d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA512:780a983483d847ed3c91c82064a0fa902b6f4185225978241bc3bc03fcc3aa143975b46aee43151c6ba43efcfdb1819516b76ba7ad3d1d3c34fcc38ea42e917b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.1.debian.tar.xz' shadow_4.8.1-2ubuntu2.1.debian.tar.xz 96432 SHA512:aa6eead6f612c0dc9001ce0f74de0b9b0e4da371958d4860675e5cbf88d353adce8e070fa1bb904e287ce79de7ccc3d896936fb95113d2440b75f0207e2504f3
-```
 
 ### `dpkg` source package: `systemd=249.11-0ubuntu3.12`
 
@@ -2017,9 +2008,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris unzip=6.0-26ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-26ubuntu3.1.dsc' unzip_6.0-26ubuntu3.1.dsc 1681 SHA512:47c357eec3d6fcdaeed063db7e689cd172ed3a907ce91a209b70185d23ed65ed87f57f7a441a87dcd2c73dc0397112842370474b8ea8428096a4ac5aa294b12f
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA512:0694e403ebc57b37218e00ec1a406cae5cc9c5b52b6798e0d4590840b6cdbf9ddc0d9471f67af783e960f8fa2e620394d51384257dca23d06bcd90224a80ce5d
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-26ubuntu3.1.debian.tar.xz' unzip_6.0-26ubuntu3.1.debian.tar.xz 28272 SHA512:4da46213009cdc917ecf71e78314127623761c694f4ce346aec8a0c6ee5c8714425e79055a1f296a76891f86b1121483f342b25626e82d15304ec5b83d76c133
+'http://security.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-26ubuntu3.1.dsc' unzip_6.0-26ubuntu3.1.dsc 1681 SHA512:47c357eec3d6fcdaeed063db7e689cd172ed3a907ce91a209b70185d23ed65ed87f57f7a441a87dcd2c73dc0397112842370474b8ea8428096a4ac5aa294b12f
+'http://security.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA512:0694e403ebc57b37218e00ec1a406cae5cc9c5b52b6798e0d4590840b6cdbf9ddc0d9471f67af783e960f8fa2e620394d51384257dca23d06bcd90224a80ce5d
+'http://security.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-26ubuntu3.1.debian.tar.xz' unzip_6.0-26ubuntu3.1.debian.tar.xz 28272 SHA512:4da46213009cdc917ecf71e78314127623761c694f4ce346aec8a0c6ee5c8714425e79055a1f296a76891f86b1121483f342b25626e82d15304ec5b83d76c133
 ```
 
 ### `dpkg` source package: `usrmerge=25ubuntu2`

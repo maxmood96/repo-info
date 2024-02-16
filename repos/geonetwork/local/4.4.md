@@ -1646,14 +1646,9 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.8.1-1ubuntu5.20.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.4.dsc' shadow_4.8.1-1ubuntu5.20.04.4.dsc 2081 SHA512:1968b47f4f96a0e846e478225362e29f2531dd1b4ded802bef531f989ce8972dfccf13e5a8f538a5e8d9f83ce2b9572cc7d7b57dcad59dcbc0d6bb2318cd51a6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA512:780a983483d847ed3c91c82064a0fa902b6f4185225978241bc3bc03fcc3aa143975b46aee43151c6ba43efcfdb1819516b76ba7ad3d1d3c34fcc38ea42e917b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.4.debian.tar.xz' shadow_4.8.1-1ubuntu5.20.04.4.debian.tar.xz 86684 SHA512:8e70ed00983db7bf2b182812cfa9d8c6151de836bacfdf23fbefea37419a72b6be0e126ad2f085ea46aff25de99e66470206cb91259a09b1f6852cb83ca1fb3f
-```
 
 ### `dpkg` source package: `sqlite3=3.31.1-4ubuntu0.6`
 
@@ -1815,9 +1810,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris unzip=6.0-25ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-25ubuntu1.1.dsc' unzip_6.0-25ubuntu1.1.dsc 1674 SHA512:5589dcca106750f69af732513552a3ad7940f9fb01e30d8663c536dda1b245c6b06786d81ac76ed299f87c6f945c0d631a70808056c6fcde48c224508a1a91d0
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA512:0694e403ebc57b37218e00ec1a406cae5cc9c5b52b6798e0d4590840b6cdbf9ddc0d9471f67af783e960f8fa2e620394d51384257dca23d06bcd90224a80ce5d
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-25ubuntu1.1.debian.tar.xz' unzip_6.0-25ubuntu1.1.debian.tar.xz 27520 SHA512:589ba60ba88eda4ca6713826268d68583b0c90fd7dbbed6aa831631bf77aee94fde7c29e5da26ddec9a13644eaf614c7bb9368707efc9d11f62db89e4a985456
+'http://security.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-25ubuntu1.1.dsc' unzip_6.0-25ubuntu1.1.dsc 1674 SHA512:5589dcca106750f69af732513552a3ad7940f9fb01e30d8663c536dda1b245c6b06786d81ac76ed299f87c6f945c0d631a70808056c6fcde48c224508a1a91d0
+'http://security.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA512:0694e403ebc57b37218e00ec1a406cae5cc9c5b52b6798e0d4590840b6cdbf9ddc0d9471f67af783e960f8fa2e620394d51384257dca23d06bcd90224a80ce5d
+'http://security.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-25ubuntu1.1.debian.tar.xz' unzip_6.0-25ubuntu1.1.debian.tar.xz 27520 SHA512:589ba60ba88eda4ca6713826268d68583b0c90fd7dbbed6aa831631bf77aee94fde7c29e5da26ddec9a13644eaf614c7bb9368707efc9d11f62db89e4a985456
 ```
 
 ### `dpkg` source package: `util-linux=2.34-0.1ubuntu9.4`
