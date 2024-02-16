@@ -1,7 +1,7 @@
 ## `buildpack-deps:noble`
 
 ```console
-$ docker pull buildpack-deps@sha256:ff7293459765b8e723d15364fd4b1a768615e0dcf0a189efa89d499164ad4d91
+$ docker pull buildpack-deps@sha256:fd1b9d25b3f29b38b4c8a39cb3a0105e65b6510238a78a6c234d1272ef6864d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15,53 +15,53 @@ $ docker pull buildpack-deps@sha256:ff7293459765b8e723d15364fd4b1a768615e0dcf0a1
 ### `buildpack-deps:noble` - linux; amd64
 
 ```console
-$ docker pull buildpack-deps@sha256:cd5f99addc9b35bb1bd8f13bd0448776d50eee8471018bbfd5d1e5d7f64aa85c
+$ docker pull buildpack-deps@sha256:333917f6aa55aaa103d0b78bbb3743bda393e7d317bbcd3b1deb0f8b72031234
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **321.5 MB (321518288 bytes)**  
+-	Total Size: **323.9 MB (323857558 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:638dcb861eba582270374268162f21bff618683d074e51c68add0d58cf195c29`
+-	Image ID: `sha256:01879effe0ec199729157e81f7d45cd0a74546be873c66d59fa0a688098b10f6`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 27 Jan 2024 16:15:22 GMT
+# Mon, 12 Feb 2024 04:51:33 GMT
 ARG RELEASE
-# Sat, 27 Jan 2024 16:15:22 GMT
+# Mon, 12 Feb 2024 04:51:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sat, 27 Jan 2024 16:15:22 GMT
+# Mon, 12 Feb 2024 04:51:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sat, 27 Jan 2024 16:15:22 GMT
+# Mon, 12 Feb 2024 04:51:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Sat, 27 Jan 2024 16:15:24 GMT
-ADD file:dc9fb0ed3a650c89a500aae31f5c47e13e9ec29bfe109f890faf9e86f8c49cbc in / 
-# Sat, 27 Jan 2024 16:15:24 GMT
+# Mon, 12 Feb 2024 04:51:35 GMT
+ADD file:5fdfd910138ea9c55567565b4159698866331e2e19eacecb4cc9d14a337e4e72 in / 
+# Mon, 12 Feb 2024 04:51:35 GMT
 CMD ["/bin/bash"]
-# Fri, 02 Feb 2024 06:17:39 GMT
+# Fri, 16 Feb 2024 03:34:22 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 02 Feb 2024 06:18:18 GMT
+# Fri, 16 Feb 2024 03:35:04 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 02 Feb 2024 06:20:43 GMT
+# Fri, 16 Feb 2024 03:38:14 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:c7b0d57ce5e9ca2a7fec0ccf889c85acec4f977152802e1d84c4359f4f0cf7a4`  
-		Last Modified: Fri, 02 Feb 2024 02:17:16 GMT  
-		Size: 30.4 MB (30405589 bytes)  
+	-	`sha256:f97f48cbc0b07925817eb987f4aad620bb8746b88171a7a78a9eb70c056a1f16`  
+		Last Modified: Fri, 16 Feb 2024 03:40:13 GMT  
+		Size: 30.4 MB (30383550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ce34b814e1d4069681e2c3b5c647e27920db44fd6bc67e19a3918dc34b075cc`  
-		Last Modified: Fri, 02 Feb 2024 06:25:52 GMT  
-		Size: 13.7 MB (13712421 bytes)  
+	-	`sha256:43159cd89f554b8b5218ce69e51f6de33a8670c302dbb8da0845c7ccabc7862b`  
+		Last Modified: Fri, 16 Feb 2024 03:40:11 GMT  
+		Size: 13.7 MB (13726943 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2accc45dfab8442a66b0b0fe52964433bb916c6f2b1bb82fa2b89be9c71044c7`  
-		Last Modified: Fri, 02 Feb 2024 06:26:10 GMT  
-		Size: 45.4 MB (45392993 bytes)  
+	-	`sha256:bf161ff7600e7b7c16f6ede46503033c3e73c9937f61e69002cd9d251df0d55d`  
+		Last Modified: Fri, 16 Feb 2024 03:40:29 GMT  
+		Size: 48.1 MB (48138649 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a966bfe04bc6248febfb91cd451e07428cd7fdba004cca214fcd0789eb2358d`  
-		Last Modified: Fri, 02 Feb 2024 06:26:49 GMT  
-		Size: 232.0 MB (232007285 bytes)  
+	-	`sha256:c70b23ce13f84812ac6df1bc6603b609b4098273dd0ead57baadb72855d6221e`  
+		Last Modified: Fri, 16 Feb 2024 03:41:09 GMT  
+		Size: 231.6 MB (231608416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:noble` - linux; arm variant v7
