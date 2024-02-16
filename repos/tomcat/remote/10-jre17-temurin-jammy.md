@@ -1,7 +1,7 @@
 ## `tomcat:10-jre17-temurin-jammy`
 
 ```console
-$ docker pull tomcat@sha256:ad898aa570e70dfff560be7379eaf645bb6b5bb783d12be77eb12d6dabb7eb78
+$ docker pull tomcat@sha256:76877d773329c434f9b8e3af971172ee4f3907bfd49391b1870cef83c97dcc07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15,117 +15,117 @@ $ docker pull tomcat@sha256:ad898aa570e70dfff560be7379eaf645bb6b5bb783d12be77eb1
 ### `tomcat:10-jre17-temurin-jammy` - linux; amd64
 
 ```console
-$ docker pull tomcat@sha256:cd4ae9eac07a3510bf4b74b51026615fdbe2f1927358dc44bbdfea10191a10b5
+$ docker pull tomcat@sha256:5c096dd1199078ff3257a4dfa76f92789684b17d3319596e8f8ebfca48808e2c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **107.9 MB (107855281 bytes)**  
+-	Total Size: **107.9 MB (107857897 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e87fc4cdb77ce4a6a628d5ad3f38e97172e5c273374885c1caf80a5abb1c0f72`
+-	Image ID: `sha256:443a82c8c29456789be8c5fbcb067f4923e31d18c70b8cc7b2ba032c197b5666`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Thu, 25 Jan 2024 17:54:38 GMT
+# Tue, 13 Feb 2024 10:06:26 GMT
 ARG RELEASE
-# Thu, 25 Jan 2024 17:54:38 GMT
+# Tue, 13 Feb 2024 10:06:26 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 25 Jan 2024 17:54:38 GMT
+# Tue, 13 Feb 2024 10:06:26 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 25 Jan 2024 17:54:38 GMT
+# Tue, 13 Feb 2024 10:06:26 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 25 Jan 2024 17:54:40 GMT
-ADD file:99224b1f237763b3053ca27ea5641f9a801c21154c7ccbff2c099654cc6db942 in / 
-# Thu, 25 Jan 2024 17:54:41 GMT
+# Tue, 13 Feb 2024 10:06:28 GMT
+ADD file:7f9a3c5a4231ed19174c21d17ce05d84d568cff6d3a0c2a1d7c3a9be5e45c02c in / 
+# Tue, 13 Feb 2024 10:06:28 GMT
 CMD ["/bin/bash"]
-# Fri, 02 Feb 2024 07:42:24 GMT
+# Fri, 16 Feb 2024 01:38:22 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 02 Feb 2024 07:42:24 GMT
+# Fri, 16 Feb 2024 01:38:22 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 02 Feb 2024 07:42:24 GMT
+# Fri, 16 Feb 2024 01:38:22 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 02 Feb 2024 07:45:02 GMT
+# Fri, 16 Feb 2024 01:40:28 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/*
-# Fri, 02 Feb 2024 07:45:02 GMT
+# Fri, 16 Feb 2024 01:40:28 GMT
 ENV JAVA_VERSION=jdk-17.0.10+7
-# Fri, 02 Feb 2024 07:45:36 GMT
+# Fri, 16 Feb 2024 01:40:59 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='16080d055da0962fbd6b40f659a98a457cba3efa7ea716d5400cfebe8b935bf0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.10_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='620cc0e7338f2722f3ed076ac65c0fafb575981426bac4e1970860e5e2d048f0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.10_7.tar.gz';          ;;        armhf|arm)          ESUM='0378bdf6769632b182b27ba4e53b17eaefefdbafa3845c15e1bd88a5aeec8442';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.10_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='4e18b60dba540b5c431ff03f74a1c73b22d83151f93b8768241d264d1a53582d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.10_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='c1b2fd232fc55e814479d7585d7ec45bae952a2f4137084f1d99f958c6880a49';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Fri, 02 Feb 2024 07:45:37 GMT
+# Fri, 16 Feb 2024 01:41:00 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete."
-# Fri, 02 Feb 2024 07:45:37 GMT
+# Fri, 16 Feb 2024 01:41:00 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Fri, 02 Feb 2024 07:45:37 GMT
+# Fri, 16 Feb 2024 01:41:00 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 02 Feb 2024 12:24:12 GMT
+# Fri, 16 Feb 2024 04:48:48 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Fri, 02 Feb 2024 12:24:12 GMT
+# Fri, 16 Feb 2024 04:48:48 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 02 Feb 2024 12:24:12 GMT
+# Fri, 16 Feb 2024 04:48:48 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Fri, 02 Feb 2024 12:24:13 GMT
+# Fri, 16 Feb 2024 04:48:48 GMT
 WORKDIR /usr/local/tomcat
-# Fri, 02 Feb 2024 12:24:13 GMT
+# Fri, 16 Feb 2024 04:48:48 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Fri, 02 Feb 2024 12:24:13 GMT
+# Fri, 16 Feb 2024 04:48:48 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Fri, 02 Feb 2024 12:24:13 GMT
+# Fri, 16 Feb 2024 04:48:49 GMT
 ENV GPG_KEYS=5C3C5F3E314C866292F359A8F3AD5C94A67F707E A9C5DF4D22E99998D9875A5110C01C5A2F6059E7
-# Fri, 02 Feb 2024 12:24:13 GMT
+# Fri, 16 Feb 2024 04:48:49 GMT
 ENV TOMCAT_MAJOR=10
-# Fri, 02 Feb 2024 12:24:13 GMT
+# Fri, 16 Feb 2024 04:48:49 GMT
 ENV TOMCAT_VERSION=10.1.18
-# Fri, 02 Feb 2024 12:24:13 GMT
+# Fri, 16 Feb 2024 04:48:49 GMT
 ENV TOMCAT_SHA512=56d1478501bd63945aae08d9f7c1fd37e14761dd9606a3bf5996870256b542b561a354fb89c4693c5695d0f13fa217028115b311d50b4ecec03acc7785006638
-# Fri, 02 Feb 2024 12:24:13 GMT
-COPY dir:10b4a1ad581cd07d7bd8c060f9aaab7980a860c92e30f161dc00860eec7b6c9f in /usr/local/tomcat 
-# Fri, 02 Feb 2024 12:24:18 GMT
+# Fri, 16 Feb 2024 04:48:49 GMT
+COPY dir:c19ef26617704a5fd61dcd1db55a8ef0a362d74a540ee3b310face7e902cd2d5 in /usr/local/tomcat 
+# Fri, 16 Feb 2024 04:48:54 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
-# Fri, 02 Feb 2024 12:24:19 GMT
+# Fri, 16 Feb 2024 04:48:55 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Fri, 02 Feb 2024 12:24:19 GMT
+# Fri, 16 Feb 2024 04:48:55 GMT
 EXPOSE 8080
-# Fri, 02 Feb 2024 12:24:19 GMT
+# Fri, 16 Feb 2024 04:48:55 GMT
 ENTRYPOINT []
-# Fri, 02 Feb 2024 12:24:19 GMT
+# Fri, 16 Feb 2024 04:48:56 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:31bd5f451a847d651a0996256753a9b22a6ea8c65fefb010e77ea9c839fe2fac`  
-		Last Modified: Thu, 25 Jan 2024 22:24:23 GMT  
-		Size: 30.4 MB (30447882 bytes)  
+	-	`sha256:d66d6a6a368713979f9d00fad193991ae1af18b8efd3abf4d70ade192807c1bd`  
+		Last Modified: Tue, 13 Feb 2024 03:03:16 GMT  
+		Size: 30.5 MB (30450077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26611c45681a8966387aee7b2e1494405e20bc5a46dc5da0af9228c45f8e8ec4`  
-		Last Modified: Fri, 02 Feb 2024 07:50:10 GMT  
-		Size: 17.5 MB (17458288 bytes)  
+	-	`sha256:18f947fdc0fc4be68d9f9c4c3912a92df875230cdd8267c01077167a69114f54`  
+		Last Modified: Fri, 16 Feb 2024 01:44:10 GMT  
+		Size: 17.5 MB (17458484 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7657bba016afbc9b5b668492429479081862469157560f39c722fca733c6a4e7`  
-		Last Modified: Fri, 02 Feb 2024 07:50:54 GMT  
-		Size: 47.2 MB (47163193 bytes)  
+	-	`sha256:5374706a264d34f054909a042d958bf140f3624be56e6ca8ee2bd40c4650ae91`  
+		Last Modified: Fri, 16 Feb 2024 01:44:40 GMT  
+		Size: 47.2 MB (47163245 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5c532b683186e5e796b6523fee32e214bd7eeda453b630d2322010697be91e8`  
-		Last Modified: Fri, 02 Feb 2024 07:50:48 GMT  
+	-	`sha256:c9aeff6b625d796ae065d95dd069d3f2c999314b436332616a6e3b9397038891`  
+		Last Modified: Fri, 16 Feb 2024 01:44:33 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65e11da758202f5d3e080b1205b5f37c11a0ca72e8d428ba219b7d9d99befe18`  
-		Last Modified: Fri, 02 Feb 2024 07:50:48 GMT  
+	-	`sha256:82faf7b7220dc5dd434962b0d3b1d9f4630792cabb13615559a9cf093d4afb88`  
+		Last Modified: Fri, 16 Feb 2024 01:44:33 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cd1e7b220ba3bc44242e84f32e06eafd9c47254bbdd6b0ca7ac59136fd3cc28`  
-		Last Modified: Fri, 02 Feb 2024 12:48:13 GMT  
-		Size: 170.0 B  
+	-	`sha256:2b633af09da77b3268755d4a1d9c430a50ad0a131e1b2ecdb997e3ee6a86978f`  
+		Last Modified: Fri, 16 Feb 2024 05:02:20 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01f80ca130a5993edd58330e5e9ac09ff8cc2957b78af8518efeeb36b9d94902`  
-		Last Modified: Fri, 02 Feb 2024 12:48:14 GMT  
-		Size: 12.3 MB (12326301 bytes)  
+	-	`sha256:b23b62d3ea113be6dc4b0d74998dd079074ec0c5307df0954b3c22e578e9a4a5`  
+		Last Modified: Fri, 16 Feb 2024 05:02:21 GMT  
+		Size: 12.3 MB (12326300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62e9ddc5058cca34169c0fec2624d9e5a903fd952bb75732f8ffcc547b4ef015`  
-		Last Modified: Fri, 02 Feb 2024 12:48:14 GMT  
-		Size: 458.4 KB (458424 bytes)  
+	-	`sha256:b0442e01198f87a4a25b72c84da5fff5296a137944e4b86558d75d24410cab7a`  
+		Last Modified: Fri, 16 Feb 2024 05:02:20 GMT  
+		Size: 458.6 KB (458594 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f37522a6f37ea4501fbc616d8f54d563eeb4a766d39d26808aa4db929f4a8dbb`  
-		Last Modified: Fri, 02 Feb 2024 12:48:13 GMT  
-		Size: 129.0 B  
+	-	`sha256:08fa94b93a037d7ad22784c87df330230a814d3956826948c73f38dd70e32909`  
+		Last Modified: Fri, 16 Feb 2024 05:02:20 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `tomcat:10-jre17-temurin-jammy` - linux; arm variant v7
@@ -363,117 +363,117 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:10-jre17-temurin-jammy` - linux; ppc64le
 
 ```console
-$ docker pull tomcat@sha256:917e589443876bf039b8c1b0a25aa96f112d903b569c4c438b65eb24962f8644
+$ docker pull tomcat@sha256:27bc298744cb5891e341c2ca2785efebe1786edef51618328849d7e7900d7783
 ```
 
 -	Docker Version: 20.10.26
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **114.2 MB (114227608 bytes)**  
+-	Total Size: **114.2 MB (114197167 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d8215c8585bb155b7829b8da3facfdfb033e86e6fc37769e220c102029d2e07`
+-	Image ID: `sha256:6546b6e9df82a173ae425c3b6cf44df7eb8a7823c91165e3f5e5678eda3316b6`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Thu, 25 Jan 2024 17:56:59 GMT
+# Tue, 13 Feb 2024 10:06:12 GMT
 ARG RELEASE
-# Thu, 25 Jan 2024 17:56:59 GMT
+# Tue, 13 Feb 2024 10:06:12 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 25 Jan 2024 17:56:59 GMT
+# Tue, 13 Feb 2024 10:06:12 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 25 Jan 2024 17:56:59 GMT
+# Tue, 13 Feb 2024 10:06:12 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 25 Jan 2024 17:57:02 GMT
-ADD file:516de9c24f8fb95b9521e039ca0709347304eaf18821af0546eb4f3e9da81a19 in / 
-# Thu, 25 Jan 2024 17:57:02 GMT
+# Tue, 13 Feb 2024 10:06:17 GMT
+ADD file:c082e39391784606dcfb3aa7298125fa9e8fe08e83ff006496eac650ad180c35 in / 
+# Tue, 13 Feb 2024 10:06:17 GMT
 CMD ["/bin/bash"]
-# Fri, 02 Feb 2024 02:38:53 GMT
+# Fri, 16 Feb 2024 03:01:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 02 Feb 2024 02:38:54 GMT
+# Fri, 16 Feb 2024 03:01:15 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 02 Feb 2024 02:38:54 GMT
+# Fri, 16 Feb 2024 03:01:15 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 02 Feb 2024 02:43:38 GMT
+# Fri, 16 Feb 2024 03:03:52 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/*
-# Fri, 02 Feb 2024 02:43:40 GMT
+# Fri, 16 Feb 2024 03:03:54 GMT
 ENV JAVA_VERSION=jdk-17.0.10+7
-# Fri, 02 Feb 2024 02:44:36 GMT
+# Fri, 16 Feb 2024 03:04:38 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='16080d055da0962fbd6b40f659a98a457cba3efa7ea716d5400cfebe8b935bf0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.10_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='620cc0e7338f2722f3ed076ac65c0fafb575981426bac4e1970860e5e2d048f0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.10_7.tar.gz';          ;;        armhf|arm)          ESUM='0378bdf6769632b182b27ba4e53b17eaefefdbafa3845c15e1bd88a5aeec8442';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.10_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='4e18b60dba540b5c431ff03f74a1c73b22d83151f93b8768241d264d1a53582d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.10_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='c1b2fd232fc55e814479d7585d7ec45bae952a2f4137084f1d99f958c6880a49';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Fri, 02 Feb 2024 02:44:39 GMT
+# Fri, 16 Feb 2024 03:04:41 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete."
-# Fri, 02 Feb 2024 02:44:39 GMT
+# Fri, 16 Feb 2024 03:04:41 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Fri, 02 Feb 2024 02:44:40 GMT
+# Fri, 16 Feb 2024 03:04:41 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 02 Feb 2024 07:19:40 GMT
+# Fri, 16 Feb 2024 04:56:17 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Fri, 02 Feb 2024 07:19:40 GMT
+# Fri, 16 Feb 2024 04:56:17 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 02 Feb 2024 07:19:42 GMT
+# Fri, 16 Feb 2024 04:56:18 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Fri, 02 Feb 2024 07:19:42 GMT
+# Fri, 16 Feb 2024 04:56:19 GMT
 WORKDIR /usr/local/tomcat
-# Fri, 02 Feb 2024 07:19:42 GMT
+# Fri, 16 Feb 2024 04:56:19 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Fri, 02 Feb 2024 07:19:43 GMT
+# Fri, 16 Feb 2024 04:56:19 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Fri, 02 Feb 2024 07:19:44 GMT
+# Fri, 16 Feb 2024 04:56:19 GMT
 ENV GPG_KEYS=5C3C5F3E314C866292F359A8F3AD5C94A67F707E A9C5DF4D22E99998D9875A5110C01C5A2F6059E7
-# Fri, 02 Feb 2024 07:19:44 GMT
+# Fri, 16 Feb 2024 04:56:20 GMT
 ENV TOMCAT_MAJOR=10
-# Fri, 02 Feb 2024 07:19:45 GMT
+# Fri, 16 Feb 2024 04:56:20 GMT
 ENV TOMCAT_VERSION=10.1.18
-# Fri, 02 Feb 2024 07:19:45 GMT
+# Fri, 16 Feb 2024 04:56:20 GMT
 ENV TOMCAT_SHA512=56d1478501bd63945aae08d9f7c1fd37e14761dd9606a3bf5996870256b542b561a354fb89c4693c5695d0f13fa217028115b311d50b4ecec03acc7785006638
-# Fri, 02 Feb 2024 07:19:47 GMT
-COPY dir:bbe4ccb52332d783d9409b44d37cf6c075bc5652f97b0b2bce245f41f6694e50 in /usr/local/tomcat 
-# Fri, 02 Feb 2024 07:19:57 GMT
+# Fri, 16 Feb 2024 04:56:21 GMT
+COPY dir:5ff969023c91d75abe33b819647d6d622f3e3aeab5254d0977e2a37f1f0a5ffc in /usr/local/tomcat 
+# Fri, 16 Feb 2024 04:56:28 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
-# Fri, 02 Feb 2024 07:20:02 GMT
+# Fri, 16 Feb 2024 04:56:31 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Fri, 02 Feb 2024 07:20:03 GMT
+# Fri, 16 Feb 2024 04:56:31 GMT
 EXPOSE 8080
-# Fri, 02 Feb 2024 07:20:03 GMT
+# Fri, 16 Feb 2024 04:56:31 GMT
 ENTRYPOINT []
-# Fri, 02 Feb 2024 07:20:04 GMT
+# Fri, 16 Feb 2024 04:56:32 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:4cddbbaaed5c0bb0075d1b49c5185496b73a0103b0d818f916036e28a6cb5f81`  
-		Last Modified: Fri, 02 Feb 2024 00:09:07 GMT  
-		Size: 35.7 MB (35659183 bytes)  
+	-	`sha256:fb95b1654dd508e6f2d1e7103bcd3af75a00fa6826603132794816af5418de7c`  
+		Last Modified: Fri, 16 Feb 2024 03:06:52 GMT  
+		Size: 35.6 MB (35628838 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c18e38d90dcfc4a5c7e7603c42709446092d81fa7db3d02bf1b3268ec7f2b33`  
-		Last Modified: Fri, 02 Feb 2024 02:49:52 GMT  
-		Size: 18.7 MB (18726284 bytes)  
+	-	`sha256:7dc402319b10feb1c6820fa2bc7cfba7869a3473e27191ab283db519e7e6da50`  
+		Last Modified: Fri, 16 Feb 2024 03:08:21 GMT  
+		Size: 18.7 MB (18726189 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca810e9b2aea7e8e34d5a49650956717c294cb08a1f4694bfb6f2dff3df04e05`  
-		Last Modified: Fri, 02 Feb 2024 02:50:42 GMT  
-		Size: 47.0 MB (47012525 bytes)  
+	-	`sha256:a2f9bec281d586fe857a730cd40136459428c7ccefda7ad98a1e0c5194e2d295`  
+		Last Modified: Fri, 16 Feb 2024 03:08:53 GMT  
+		Size: 47.0 MB (47012472 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:156813484546a6535bd6a6b1b6d8ddf7f7512ed16513fc6d1704f17c1dba347d`  
-		Last Modified: Fri, 02 Feb 2024 02:50:34 GMT  
-		Size: 161.0 B  
+	-	`sha256:b64d28cb5695f590c46c7d223348d7d58bfba0e23dec221f5343b0dca7a09bcb`  
+		Last Modified: Fri, 16 Feb 2024 03:08:45 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0f6c8758a6656575e6625bae130379131cefe92e137c79648b0ae07a09ac094`  
-		Last Modified: Fri, 02 Feb 2024 02:50:34 GMT  
-		Size: 733.0 B  
+	-	`sha256:77aabc96be0541477c14b4c395f0cedb75eb6388609833afb6cb0da3a3b182c7`  
+		Last Modified: Fri, 16 Feb 2024 03:08:45 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10c06829c002673eea25427b18456586e562dd0bb3aeda176c0fd0cba4dcfe98`  
-		Last Modified: Fri, 02 Feb 2024 08:10:30 GMT  
-		Size: 171.0 B  
+	-	`sha256:a515b8f2ec4e0019840dbf53bb6403e487fe611bd65a8ad1a6cab8513ac76088`  
+		Last Modified: Fri, 16 Feb 2024 05:20:25 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f805d7cae812f5c39fb5a07bd48d035b20d4b13dcf370f27d253cc2955595e1`  
-		Last Modified: Fri, 02 Feb 2024 08:10:32 GMT  
-		Size: 12.3 MB (12338732 bytes)  
+	-	`sha256:ba613b2e2341d842b98b448ff124cb29d1f246adaceb17f2f465e8f1e7a48c4f`  
+		Last Modified: Fri, 16 Feb 2024 05:20:26 GMT  
+		Size: 12.3 MB (12338746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4cf4d7b3687bec3690223d97feeb7fee39a3763e9a0e46a7abf0eb766b665390`  
-		Last Modified: Fri, 02 Feb 2024 08:10:31 GMT  
-		Size: 489.7 KB (489688 bytes)  
+	-	`sha256:c6e45d5964bf39ac7f50b8d1e56c7c87c62659fa8a206213b92bfaab017469d4`  
+		Last Modified: Fri, 16 Feb 2024 05:20:25 GMT  
+		Size: 489.7 KB (489725 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ace3cda5c6df110aede2ab761f13271d046c2ed22c63aca8c639377b5b2035dc`  
-		Last Modified: Fri, 02 Feb 2024 08:10:31 GMT  
-		Size: 131.0 B  
+	-	`sha256:591fff9c30965b54f70b8d396a4ea285c46b690fe70de80046792df9f699db2c`  
+		Last Modified: Fri, 16 Feb 2024 05:20:25 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `tomcat:10-jre17-temurin-jammy` - linux; s390x
