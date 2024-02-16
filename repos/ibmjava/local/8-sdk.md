@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5ea23cce9bc1c9f435f847c0c7ea929d30377f630b98f41f0de71fb36e4b29bf`
-- Created: `2024-02-02T07:28:13.353168978Z`
-- Virtual Size: ~ 331.88 Mb  
+- Image ID: `sha256:2a16b14b49ae43547e4bb57429f8fc942c68363fb17d2549d0e5df5af87bf764`
+- Created: `2024-02-14T01:42:23.864477548Z`
+- Virtual Size: ~ 332.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=8.0.8.15`
+  - `JAVA_VERSION=8.0.8.20`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
 - Labels:
@@ -135,13 +135,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12ubuntu4.5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.5.dsc' base-files_12ubuntu4.5.dsc 1639 SHA512:ed1e51f0a6e81f5db4cf6b79f9134b57fda84a7bab5d3c2302775eeb132e94f6296cf446104a31126657b164a2fd133657dc0e3d8f693d2e54216e008293bc93
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.5.tar.xz' base-files_12ubuntu4.5.tar.xz 81912 SHA512:c7f1e6fe9cc88b0784fe50bec8060ab53f57cd868eebaf04b06a9b0b864b48529c6d84c7288f59e695a0996f1630edfe6917c97a9af911409f13fb5732aaeb9e
-```
 
 ### `dpkg` source package: `base-passwd=3.5.52build1`
 
@@ -1421,14 +1417,9 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.8.1-2ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.1.dsc' shadow_4.8.1-2ubuntu2.1.dsc 2060 SHA512:c642f1979173ee997678a73dc7cb9098e185aee3a2860807895534dbe16d25fc2b2546355024d3b45e1dae5ea8bf9184f38929f4fd4e13203b411de3e6690c2d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA512:780a983483d847ed3c91c82064a0fa902b6f4185225978241bc3bc03fcc3aa143975b46aee43151c6ba43efcfdb1819516b76ba7ad3d1d3c34fcc38ea42e917b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.1.debian.tar.xz' shadow_4.8.1-2ubuntu2.1.debian.tar.xz 96432 SHA512:aa6eead6f612c0dc9001ce0f74de0b9b0e4da371958d4860675e5cbf88d353adce8e070fa1bb904e287ce79de7ccc3d896936fb95113d2440b75f0207e2504f3
-```
 
 ### `dpkg` source package: `systemd=249.11-0ubuntu3.12`
 
