@@ -1,7 +1,7 @@
 ## `yourls:1-apache`
 
 ```console
-$ docker pull yourls@sha256:aa39a4e23163660fe0da49aaac861a6c685609caceb5dbf126fa440f20757715
+$ docker pull yourls@sha256:708ce5234dd37ab54baa009a82e979e29ab294153eb5d28c0382604c23bf4f93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -627,14 +627,14 @@ CMD ["apache2-foreground"]
 ### `yourls:1-apache` - linux; arm64 variant v8
 
 ```console
-$ docker pull yourls@sha256:c90f17519d7c28e13d8269479c678a31fdb046cc9773f0eb137e4e8fc33f2814
+$ docker pull yourls@sha256:c29cb32be2ded89089e71c9641f8c4865c149f718d67878ea15372a19fcdd2d0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.3 MB (176279479 bytes)**  
+-	Total Size: **176.3 MB (176289040 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9fe279084481fbb26c4cd1946ac5d198ad69c26dfbdbcc7f0986fa5c5c2fc2d`
+-	Image ID: `sha256:f7c0de65d4c01bc785d5accb45d8188a5c044a68bb7ac774fcac717bad922419`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -671,77 +671,77 @@ ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 13 Feb 2024 05:41:44 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Tue, 13 Feb 2024 06:08:29 GMT
-ENV PHP_VERSION=8.2.15
-# Tue, 13 Feb 2024 06:08:29 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.2.15.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.15.tar.xz.asc
-# Tue, 13 Feb 2024 06:08:29 GMT
-ENV PHP_SHA256=eca5deac02d77d806838275f8a3024b38b35ac0a5d9853dcc71c6cbe3f1f8765
-# Tue, 13 Feb 2024 06:08:39 GMT
+# Fri, 16 Feb 2024 23:44:20 GMT
+ENV PHP_VERSION=8.2.16
+# Fri, 16 Feb 2024 23:44:20 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.2.16.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.16.tar.xz.asc
+# Fri, 16 Feb 2024 23:44:20 GMT
+ENV PHP_SHA256=28cdc995b7d5421711c7044294885fcde4390c9f67504a994b4cf9bc1b5cc593
+# Fri, 16 Feb 2024 23:44:31 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Tue, 13 Feb 2024 06:08:39 GMT
+# Fri, 16 Feb 2024 23:44:31 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Tue, 13 Feb 2024 06:12:00 GMT
+# Fri, 16 Feb 2024 23:48:01 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Tue, 13 Feb 2024 06:12:00 GMT
+# Fri, 16 Feb 2024 23:48:02 GMT
 COPY multi:e11221d43af7136e4dbad5a74e659bcfa753214a9e615c3daf357f1633d9d3d1 in /usr/local/bin/ 
-# Tue, 13 Feb 2024 06:12:01 GMT
+# Fri, 16 Feb 2024 23:48:02 GMT
 RUN docker-php-ext-enable sodium
-# Tue, 13 Feb 2024 06:12:01 GMT
+# Fri, 16 Feb 2024 23:48:02 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 13 Feb 2024 06:12:01 GMT
+# Fri, 16 Feb 2024 23:48:02 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 13 Feb 2024 06:12:01 GMT
+# Fri, 16 Feb 2024 23:48:02 GMT
 COPY file:e3123fcb6566efa979f945bfac1c94c854a559d7b82723e42118882a8ac4de66 in /usr/local/bin/ 
-# Tue, 13 Feb 2024 06:12:01 GMT
+# Fri, 16 Feb 2024 23:48:02 GMT
 WORKDIR /var/www/html
-# Tue, 13 Feb 2024 06:12:01 GMT
+# Fri, 16 Feb 2024 23:48:03 GMT
 EXPOSE 80
-# Tue, 13 Feb 2024 06:12:01 GMT
+# Fri, 16 Feb 2024 23:48:03 GMT
 CMD ["apache2-foreground"]
-# Tue, 13 Feb 2024 13:23:17 GMT
+# Sat, 17 Feb 2024 03:10:12 GMT
 LABEL org.opencontainers.image.title=YOURLS
-# Tue, 13 Feb 2024 13:23:17 GMT
+# Sat, 17 Feb 2024 03:10:12 GMT
 LABEL org.opencontainers.image.description=Your Own URL Shortener
-# Tue, 13 Feb 2024 13:23:17 GMT
+# Sat, 17 Feb 2024 03:10:12 GMT
 LABEL org.opencontainers.image.url=https://yourls.org/
-# Tue, 13 Feb 2024 13:23:17 GMT
+# Sat, 17 Feb 2024 03:10:12 GMT
 LABEL org.opencontainers.image.documentation=https://yourls.org/
-# Tue, 13 Feb 2024 13:23:17 GMT
+# Sat, 17 Feb 2024 03:10:12 GMT
 LABEL org.opencontainers.image.vendor=YOURLS Org
-# Tue, 13 Feb 2024 13:23:18 GMT
+# Sat, 17 Feb 2024 03:10:12 GMT
 LABEL org.opencontainers.image.authors=YOURLS
-# Tue, 13 Feb 2024 13:23:18 GMT
+# Sat, 17 Feb 2024 03:10:12 GMT
 LABEL org.opencontainers.image.licenses=MIT
-# Tue, 13 Feb 2024 13:23:18 GMT
+# Sat, 17 Feb 2024 03:10:12 GMT
 LABEL io.artifacthub.package.readme-url=https://raw.githubusercontent.com/YOURLS/YOURLS/master/README.md
-# Tue, 13 Feb 2024 13:24:20 GMT
+# Sat, 17 Feb 2024 03:11:13 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)" bcmath opcache pdo_mysql mysqli
-# Tue, 13 Feb 2024 13:24:20 GMT
+# Sat, 17 Feb 2024 03:11:13 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Tue, 13 Feb 2024 13:24:21 GMT
+# Sat, 17 Feb 2024 03:11:14 GMT
 RUN a2enmod rewrite expires
-# Tue, 13 Feb 2024 13:24:21 GMT
+# Sat, 17 Feb 2024 03:11:14 GMT
 ARG YOURLS_VERSION=1.9.2
-# Tue, 13 Feb 2024 13:24:21 GMT
+# Sat, 17 Feb 2024 03:11:14 GMT
 ARG YOURLS_SHA256=62a95ba766d62f3305d75944cbfe12d5a90c08c88fbf2f6e67150d36412b916f
-# Tue, 13 Feb 2024 13:24:21 GMT
+# Sat, 17 Feb 2024 03:11:14 GMT
 LABEL org.opencontainers.image.version=1.9.2
-# Tue, 13 Feb 2024 13:24:21 GMT
+# Sat, 17 Feb 2024 03:11:14 GMT
 ENV YOURLS_VERSION=1.9.2
-# Tue, 13 Feb 2024 13:24:21 GMT
+# Sat, 17 Feb 2024 03:11:14 GMT
 ENV YOURLS_SHA256=62a95ba766d62f3305d75944cbfe12d5a90c08c88fbf2f6e67150d36412b916f
-# Tue, 13 Feb 2024 13:24:23 GMT
+# Sat, 17 Feb 2024 03:11:16 GMT
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls
-# Tue, 13 Feb 2024 13:24:23 GMT
+# Sat, 17 Feb 2024 03:11:16 GMT
 COPY --chown=www-data:www-datafile:f5584b9849b80034920f4de5f1297cb1be461f765f3437b87ddf6c86daa6499d in /usr/src/yourls/user/ 
-# Tue, 13 Feb 2024 13:24:23 GMT
+# Sat, 17 Feb 2024 03:11:16 GMT
 COPY file:975ababf859e7cabd8184ab0b2b317a5d8d3ccb6f4922be7f2a5d28c20d075a2 in /usr/local/bin/ 
-# Tue, 13 Feb 2024 13:24:23 GMT
+# Sat, 17 Feb 2024 03:11:16 GMT
 COPY file:5b7ff05d0c98ad759c4bec0ef8a7ce74cae42e95b42564b55f43b341c2c3e3f5 in /usr/src/yourls/ 
-# Tue, 13 Feb 2024 13:24:23 GMT
+# Sat, 17 Feb 2024 03:11:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 13 Feb 2024 13:24:23 GMT
+# Sat, 17 Feb 2024 03:11:16 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -774,70 +774,70 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 13 Feb 2024 07:00:52 GMT  
 		Size: 511.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f29386a07b0fb38b6f26a5a8c069cad0296b4554cee7ca6d835d589aba41462c`  
-		Last Modified: Tue, 13 Feb 2024 07:09:04 GMT  
-		Size: 12.4 MB (12408227 bytes)  
+	-	`sha256:56f2add01290aa3598b2ea1cdd0a04d3a306905439735d9270a89c6deaec7a6d`  
+		Last Modified: Sat, 17 Feb 2024 00:41:07 GMT  
+		Size: 12.4 MB (12418439 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df6a0d2ccf9bb28e54c8b6e5ad86add1a87bfb22761da9eb7ea8bdf4b7ebdd8e`  
-		Last Modified: Tue, 13 Feb 2024 07:09:00 GMT  
-		Size: 492.0 B  
+	-	`sha256:54656683693ef7e6d7409402141fec35ede4063c6f31f233643482cc1a911db9`  
+		Last Modified: Sat, 17 Feb 2024 00:41:04 GMT  
+		Size: 490.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec30c4cb990f53b935a7f8bd9190a5c37fb2d7c7427b6c7b14e3e1ec73ba2a56`  
-		Last Modified: Tue, 13 Feb 2024 07:09:02 GMT  
-		Size: 11.4 MB (11411295 bytes)  
+	-	`sha256:76ef51206c991e1983ab30a13df1e7d253c131c9818b5a276c54f78007f844e6`  
+		Last Modified: Sat, 17 Feb 2024 00:41:06 GMT  
+		Size: 11.4 MB (11410641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da02d12faeeddd5da284c9bf92ff195f1105bef826ab21ba909db967793c03c8`  
-		Last Modified: Tue, 13 Feb 2024 07:09:00 GMT  
+	-	`sha256:924b7b7efabe65d740a612004a7af510ac1bf5b96d11dda44a4ad4cccbaf0aa0`  
+		Last Modified: Sat, 17 Feb 2024 00:41:04 GMT  
 		Size: 2.5 KB (2459 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6de9da0d9fb698f29b8b078b7b96bc86b5456666d456c2606fa10d22b4b8d94a`  
-		Last Modified: Tue, 13 Feb 2024 07:09:00 GMT  
-		Size: 245.0 B  
+	-	`sha256:6483e6c661df6dff1acb943b12b0fc244d9fa4e30438bf1c8e718b55f3b40839`  
+		Last Modified: Sat, 17 Feb 2024 00:41:04 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fe3329f8e7716983d4634d2eb72f9a31acf2b043ffec645c05faad08bb47cab`  
-		Last Modified: Tue, 13 Feb 2024 07:09:01 GMT  
-		Size: 893.0 B  
+	-	`sha256:1a0ad63e8cc1c0ff0d13ab7df4a6015d9706c8cb69f6352d19251c80ab40e93c`  
+		Last Modified: Sat, 17 Feb 2024 00:41:04 GMT  
+		Size: 894.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8444474043d8d48deae4f8c43875c95a04ebac4819b1531edc041c211134223`  
-		Last Modified: Tue, 13 Feb 2024 13:25:49 GMT  
-		Size: 788.9 KB (788946 bytes)  
+	-	`sha256:371df627d227920c78e0dc3348d126a25bc3a6b0c7119a37cae056e17d2e2c52`  
+		Last Modified: Sat, 17 Feb 2024 03:14:20 GMT  
+		Size: 788.9 KB (788934 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c77e6ee1165e3e1f5fb9af8a6c04c06d465f0665795c1818ea04a28c8d498a15`  
-		Last Modified: Tue, 13 Feb 2024 13:25:49 GMT  
-		Size: 325.0 B  
+	-	`sha256:a67550d0f7595cf792f8780b4323777dfc6ad966f3e8c5ac31f50042cd39c52a`  
+		Last Modified: Sat, 17 Feb 2024 03:14:20 GMT  
+		Size: 327.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54b7a716cc9456e728b3be716afbd11f5fa549b0bffa526a1afdd9e0d92649f2`  
-		Last Modified: Tue, 13 Feb 2024 13:25:46 GMT  
+	-	`sha256:31e4f42f4463cb2895a84591f458edecef1bd00cc98e122b42055965e154fd59`  
+		Last Modified: Sat, 17 Feb 2024 03:14:18 GMT  
 		Size: 347.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c13fa1f81fa3a9e33147f863831ebdc4453e65b0322fc7395a1539f944b92d6`  
-		Last Modified: Tue, 13 Feb 2024 13:25:47 GMT  
-		Size: 4.1 MB (4073438 bytes)  
+	-	`sha256:835224318f30edb11620f9e2ab5fe8b5a06bdcfd0ef63cdfd58ebb39713d0007`  
+		Last Modified: Sat, 17 Feb 2024 03:14:19 GMT  
+		Size: 4.1 MB (4073441 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a9a78d7230d5e8b8fb628be803a5627a99a9c93707517ca893d086d175f0ccd`  
-		Last Modified: Tue, 13 Feb 2024 13:25:46 GMT  
-		Size: 2.0 KB (2046 bytes)  
+	-	`sha256:de917d132dc3784b2c80c628adfb79fe3519ea3b184e1190b50abc2a15cb4054`  
+		Last Modified: Sat, 17 Feb 2024 03:14:18 GMT  
+		Size: 2.0 KB (2050 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2bc7fd5484b3c32e3f631c103b699536e146236651707df484caed0f6ec7175`  
-		Last Modified: Tue, 13 Feb 2024 13:25:46 GMT  
-		Size: 1.6 KB (1552 bytes)  
+	-	`sha256:7d3f873955f6bb0c2cccd3d8f04bf02ea4feb20f0c724ead673afec620ecfb92`  
+		Last Modified: Sat, 17 Feb 2024 03:14:18 GMT  
+		Size: 1.6 KB (1553 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02e3df5ff804ea8c963ba0f64b92c50f1a8c700ba882eee67b95f6bfa2a5d3cb`  
-		Last Modified: Tue, 13 Feb 2024 13:25:46 GMT  
-		Size: 328.0 B  
+	-	`sha256:69a2459bc387017d3fb7aeddc525053b3c5d3103c10f5d9185c6dcc033292093`  
+		Last Modified: Sat, 17 Feb 2024 03:14:18 GMT  
+		Size: 331.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `yourls:1-apache` - linux; 386
 
 ```console
-$ docker pull yourls@sha256:36045d386a32d8294f5c2081d7b07f796b33bb4d37bc68879ffd6b34c9d59569
+$ docker pull yourls@sha256:681a46bf57d4be17bcb6a7ced9a81315aa68eec73f8376a6d7dc8331c43c12d9
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **181.1 MB (181121281 bytes)**  
+-	Total Size: **181.1 MB (181132214 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68bd3cf7b459ccf5f28d527f5b9a3fba348f9bf7db283e5bcfee79b50faee6a3`
+-	Image ID: `sha256:88bf22cb6034b7a66c8317eb766c7733783465f852166ce0814d76cb72c2fbe1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -874,77 +874,77 @@ ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 13 Feb 2024 06:43:45 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Tue, 13 Feb 2024 07:33:46 GMT
-ENV PHP_VERSION=8.2.15
-# Tue, 13 Feb 2024 07:33:47 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.2.15.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.15.tar.xz.asc
-# Tue, 13 Feb 2024 07:33:47 GMT
-ENV PHP_SHA256=eca5deac02d77d806838275f8a3024b38b35ac0a5d9853dcc71c6cbe3f1f8765
-# Tue, 13 Feb 2024 07:34:01 GMT
+# Fri, 16 Feb 2024 21:37:44 GMT
+ENV PHP_VERSION=8.2.16
+# Fri, 16 Feb 2024 21:37:44 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.2.16.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.16.tar.xz.asc
+# Fri, 16 Feb 2024 21:37:44 GMT
+ENV PHP_SHA256=28cdc995b7d5421711c7044294885fcde4390c9f67504a994b4cf9bc1b5cc593
+# Fri, 16 Feb 2024 21:37:58 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Tue, 13 Feb 2024 07:34:02 GMT
+# Fri, 16 Feb 2024 21:37:58 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Tue, 13 Feb 2024 07:40:22 GMT
+# Fri, 16 Feb 2024 21:44:24 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Tue, 13 Feb 2024 07:40:22 GMT
+# Fri, 16 Feb 2024 21:44:25 GMT
 COPY multi:e11221d43af7136e4dbad5a74e659bcfa753214a9e615c3daf357f1633d9d3d1 in /usr/local/bin/ 
-# Tue, 13 Feb 2024 07:40:23 GMT
+# Fri, 16 Feb 2024 21:44:25 GMT
 RUN docker-php-ext-enable sodium
-# Tue, 13 Feb 2024 07:40:23 GMT
+# Fri, 16 Feb 2024 21:44:25 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 13 Feb 2024 07:40:23 GMT
+# Fri, 16 Feb 2024 21:44:26 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 13 Feb 2024 07:40:23 GMT
+# Fri, 16 Feb 2024 21:44:26 GMT
 COPY file:e3123fcb6566efa979f945bfac1c94c854a559d7b82723e42118882a8ac4de66 in /usr/local/bin/ 
-# Tue, 13 Feb 2024 07:40:24 GMT
+# Fri, 16 Feb 2024 21:44:26 GMT
 WORKDIR /var/www/html
-# Tue, 13 Feb 2024 07:40:24 GMT
+# Fri, 16 Feb 2024 21:44:26 GMT
 EXPOSE 80
-# Tue, 13 Feb 2024 07:40:24 GMT
+# Fri, 16 Feb 2024 21:44:26 GMT
 CMD ["apache2-foreground"]
-# Tue, 13 Feb 2024 16:31:15 GMT
+# Sat, 17 Feb 2024 03:40:25 GMT
 LABEL org.opencontainers.image.title=YOURLS
-# Tue, 13 Feb 2024 16:31:16 GMT
+# Sat, 17 Feb 2024 03:40:25 GMT
 LABEL org.opencontainers.image.description=Your Own URL Shortener
-# Tue, 13 Feb 2024 16:31:16 GMT
+# Sat, 17 Feb 2024 03:40:25 GMT
 LABEL org.opencontainers.image.url=https://yourls.org/
-# Tue, 13 Feb 2024 16:31:16 GMT
+# Sat, 17 Feb 2024 03:40:25 GMT
 LABEL org.opencontainers.image.documentation=https://yourls.org/
-# Tue, 13 Feb 2024 16:31:16 GMT
+# Sat, 17 Feb 2024 03:40:25 GMT
 LABEL org.opencontainers.image.vendor=YOURLS Org
-# Tue, 13 Feb 2024 16:31:16 GMT
+# Sat, 17 Feb 2024 03:40:25 GMT
 LABEL org.opencontainers.image.authors=YOURLS
-# Tue, 13 Feb 2024 16:31:16 GMT
+# Sat, 17 Feb 2024 03:40:26 GMT
 LABEL org.opencontainers.image.licenses=MIT
-# Tue, 13 Feb 2024 16:31:16 GMT
+# Sat, 17 Feb 2024 03:40:26 GMT
 LABEL io.artifacthub.package.readme-url=https://raw.githubusercontent.com/YOURLS/YOURLS/master/README.md
-# Tue, 13 Feb 2024 16:32:11 GMT
+# Sat, 17 Feb 2024 03:41:19 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)" bcmath opcache pdo_mysql mysqli
-# Tue, 13 Feb 2024 16:32:11 GMT
+# Sat, 17 Feb 2024 03:41:19 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Tue, 13 Feb 2024 16:32:12 GMT
+# Sat, 17 Feb 2024 03:41:20 GMT
 RUN a2enmod rewrite expires
-# Tue, 13 Feb 2024 16:32:12 GMT
+# Sat, 17 Feb 2024 03:41:20 GMT
 ARG YOURLS_VERSION=1.9.2
-# Tue, 13 Feb 2024 16:32:12 GMT
+# Sat, 17 Feb 2024 03:41:20 GMT
 ARG YOURLS_SHA256=62a95ba766d62f3305d75944cbfe12d5a90c08c88fbf2f6e67150d36412b916f
-# Tue, 13 Feb 2024 16:32:12 GMT
+# Sat, 17 Feb 2024 03:41:20 GMT
 LABEL org.opencontainers.image.version=1.9.2
-# Tue, 13 Feb 2024 16:32:12 GMT
+# Sat, 17 Feb 2024 03:41:20 GMT
 ENV YOURLS_VERSION=1.9.2
-# Tue, 13 Feb 2024 16:32:12 GMT
+# Sat, 17 Feb 2024 03:41:20 GMT
 ENV YOURLS_SHA256=62a95ba766d62f3305d75944cbfe12d5a90c08c88fbf2f6e67150d36412b916f
-# Tue, 13 Feb 2024 16:32:14 GMT
+# Sat, 17 Feb 2024 03:41:23 GMT
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls
-# Tue, 13 Feb 2024 16:32:15 GMT
+# Sat, 17 Feb 2024 03:41:23 GMT
 COPY --chown=www-data:www-datafile:f5584b9849b80034920f4de5f1297cb1be461f765f3437b87ddf6c86daa6499d in /usr/src/yourls/user/ 
-# Tue, 13 Feb 2024 16:32:15 GMT
+# Sat, 17 Feb 2024 03:41:23 GMT
 COPY file:975ababf859e7cabd8184ab0b2b317a5d8d3ccb6f4922be7f2a5d28c20d075a2 in /usr/local/bin/ 
-# Tue, 13 Feb 2024 16:32:15 GMT
+# Sat, 17 Feb 2024 03:41:23 GMT
 COPY file:5b7ff05d0c98ad759c4bec0ef8a7ce74cae42e95b42564b55f43b341c2c3e3f5 in /usr/src/yourls/ 
-# Tue, 13 Feb 2024 16:32:15 GMT
+# Sat, 17 Feb 2024 03:41:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 13 Feb 2024 16:32:15 GMT
+# Sat, 17 Feb 2024 03:41:23 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -977,56 +977,56 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 13 Feb 2024 09:09:42 GMT  
 		Size: 513.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16f319fd9049ee21eccbb2c23231019d3746d7634ea0bfd69993f02efcf8997c`  
-		Last Modified: Tue, 13 Feb 2024 09:19:17 GMT  
-		Size: 12.4 MB (12407595 bytes)  
+	-	`sha256:93d571a557eb17cd66ccd923db5aaed0047842aea3e3407b428b83e0d6c8ae3f`  
+		Last Modified: Fri, 16 Feb 2024 23:12:03 GMT  
+		Size: 12.4 MB (12417854 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58504e4335c41bed822efa4ad7b25f791c5cc6d9083b99d25943fed18891bf68`  
-		Last Modified: Tue, 13 Feb 2024 09:19:14 GMT  
-		Size: 490.0 B  
+	-	`sha256:92db3dcc5ac6df7af99efcdc4fb6b9f9ea14539745d190cbcf726f3d7106ca5f`  
+		Last Modified: Fri, 16 Feb 2024 23:12:00 GMT  
+		Size: 492.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19276e3afb9f25daf34037f4d19ea0302b5350ded9a2d2a89bde7ad1c08bd7b7`  
-		Last Modified: Tue, 13 Feb 2024 09:19:18 GMT  
-		Size: 11.6 MB (11638109 bytes)  
+	-	`sha256:f8e6d815268b454ee74bcd297e927a9333f4d672ff50d6352c2181170be4f511`  
+		Last Modified: Fri, 16 Feb 2024 23:12:04 GMT  
+		Size: 11.6 MB (11638762 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f11b92ecacf55e1b3d78edbf5baccea90e44bbc062a77468ce5f01aae4ce53d`  
-		Last Modified: Tue, 13 Feb 2024 09:19:14 GMT  
-		Size: 2.5 KB (2458 bytes)  
+	-	`sha256:be0cba875927142b1b9fb3a365c55c9f04cbc13fd0f140a5adce72b2510c5193`  
+		Last Modified: Fri, 16 Feb 2024 23:12:01 GMT  
+		Size: 2.5 KB (2459 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1de8b000ea1dc85d6489a771eacacc0b89a42714ac3564896f2a0f87ec18647`  
-		Last Modified: Tue, 13 Feb 2024 09:19:14 GMT  
-		Size: 244.0 B  
+	-	`sha256:ae4a460537d9cdd6c906773d904d2ee130d54e2b745b9dbbf93fae929a7cd616`  
+		Last Modified: Fri, 16 Feb 2024 23:12:00 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ec0f7e99cf4670b71f0f0410acde2e2986034b5cca05650e313a5afebcfdf52`  
-		Last Modified: Tue, 13 Feb 2024 09:19:14 GMT  
-		Size: 893.0 B  
+	-	`sha256:98b569c20d8ec2af262ae390bdc92a38f1ada036585ebd9c813f49dae87f4fdf`  
+		Last Modified: Fri, 16 Feb 2024 23:12:00 GMT  
+		Size: 894.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4792b7646762211e42b178c0c15586869c96a5075b503fe5fe5e54a93032e5c0`  
-		Last Modified: Tue, 13 Feb 2024 16:33:48 GMT  
-		Size: 504.3 KB (504282 bytes)  
+	-	`sha256:754c209bda5f40f0df89045f4375e341e84949c7590ba7f9f43efd1da70ce4db`  
+		Last Modified: Sat, 17 Feb 2024 03:44:21 GMT  
+		Size: 504.3 KB (504289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4409003c4522d9dd397f951a31cfc5fda1d36be0a915f1663a9a28c5d192841a`  
-		Last Modified: Tue, 13 Feb 2024 16:33:48 GMT  
-		Size: 323.0 B  
+	-	`sha256:d3f76aeff8d3c6b8b0f9b3ca4bf3ce3683f8adb624cf348af201809b9741dc2b`  
+		Last Modified: Sat, 17 Feb 2024 03:44:21 GMT  
+		Size: 330.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc4983d2b714f85fda887e0afe636be44bc485004ad731354c6428a94917df0a`  
-		Last Modified: Tue, 13 Feb 2024 16:33:46 GMT  
-		Size: 349.0 B  
+	-	`sha256:3f078ab3f33e730605010b273240a338c22e448826568b9707911ee1178b20f1`  
+		Last Modified: Sat, 17 Feb 2024 03:44:19 GMT  
+		Size: 351.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c21b79d91f27b11860514f850ad479df42ebcac622565d9e29d8847ebee46338`  
-		Last Modified: Tue, 13 Feb 2024 16:33:47 GMT  
-		Size: 4.1 MB (4073454 bytes)  
+	-	`sha256:bc1513b6b46af936dd36e8fb6bfe091837bdbf54ed5545c40878111efce81c6f`  
+		Last Modified: Sat, 17 Feb 2024 03:44:20 GMT  
+		Size: 4.1 MB (4073444 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d3f377f7fffae71c22adbeaf114249bca96356b4648154c84c9091f3bdde921`  
-		Last Modified: Tue, 13 Feb 2024 16:33:46 GMT  
-		Size: 2.0 KB (2049 bytes)  
+	-	`sha256:0fb13cd29cc67afa764195d7cdbedea0e9230f258eeed1bfb66f4b8b1ea31afa`  
+		Last Modified: Sat, 17 Feb 2024 03:44:19 GMT  
+		Size: 2.1 KB (2053 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c37abc47a13ac3270cc755c416a34600183a0c13dbfb3eed56450069c17f1e5b`  
-		Last Modified: Tue, 13 Feb 2024 16:33:46 GMT  
-		Size: 1.6 KB (1552 bytes)  
+	-	`sha256:a1db54dcc68bba0ff9558bc5a37c87686852644078ce141f5d82d58d64b75386`  
+		Last Modified: Sat, 17 Feb 2024 03:44:19 GMT  
+		Size: 1.6 KB (1555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e30255107342a98220d715c5db57e3b4dfd604b8c4f7a6b4ed59766f14932cfe`  
-		Last Modified: Tue, 13 Feb 2024 16:33:51 GMT  
+	-	`sha256:7177a8302f39a71b9d5584860f0b20a2a6d5eeeddd8776284371b41733c11578`  
+		Last Modified: Sat, 17 Feb 2024 03:44:19 GMT  
 		Size: 332.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1439,14 +1439,14 @@ CMD ["apache2-foreground"]
 ### `yourls:1-apache` - linux; s390x
 
 ```console
-$ docker pull yourls@sha256:70c16552dc750dc524a6fbe8c652a5655c37f12e67bb9832385228fd2ef258aa
+$ docker pull yourls@sha256:33a825169d97f3819b2a762727e0e54c5dbcf6ba76267952041574f3ae0f1b45
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.5 MB (155480725 bytes)**  
+-	Total Size: **155.5 MB (155491725 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38bc5a58ac33a1334a019e8759b72cf8bb68a01ef6fb022600c839e4cecdc2c3`
+-	Image ID: `sha256:94f5a9f448c4877d3762830119cd08f426a74641b75adc9eabb79b9207ce1f76`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1483,77 +1483,77 @@ ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 13 Feb 2024 06:26:00 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Tue, 13 Feb 2024 07:01:05 GMT
-ENV PHP_VERSION=8.2.15
-# Tue, 13 Feb 2024 07:01:06 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.2.15.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.15.tar.xz.asc
-# Tue, 13 Feb 2024 07:01:06 GMT
-ENV PHP_SHA256=eca5deac02d77d806838275f8a3024b38b35ac0a5d9853dcc71c6cbe3f1f8765
-# Tue, 13 Feb 2024 07:01:15 GMT
+# Fri, 16 Feb 2024 22:10:34 GMT
+ENV PHP_VERSION=8.2.16
+# Fri, 16 Feb 2024 22:10:34 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.2.16.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.16.tar.xz.asc
+# Fri, 16 Feb 2024 22:10:34 GMT
+ENV PHP_SHA256=28cdc995b7d5421711c7044294885fcde4390c9f67504a994b4cf9bc1b5cc593
+# Fri, 16 Feb 2024 22:10:42 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Tue, 13 Feb 2024 07:01:15 GMT
+# Fri, 16 Feb 2024 22:10:43 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Tue, 13 Feb 2024 07:03:47 GMT
+# Fri, 16 Feb 2024 22:13:09 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Tue, 13 Feb 2024 07:03:47 GMT
+# Fri, 16 Feb 2024 22:13:10 GMT
 COPY multi:e11221d43af7136e4dbad5a74e659bcfa753214a9e615c3daf357f1633d9d3d1 in /usr/local/bin/ 
-# Tue, 13 Feb 2024 07:03:48 GMT
+# Fri, 16 Feb 2024 22:13:11 GMT
 RUN docker-php-ext-enable sodium
-# Tue, 13 Feb 2024 07:03:48 GMT
+# Fri, 16 Feb 2024 22:13:11 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 13 Feb 2024 07:03:48 GMT
+# Fri, 16 Feb 2024 22:13:11 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 13 Feb 2024 07:03:48 GMT
+# Fri, 16 Feb 2024 22:13:11 GMT
 COPY file:e3123fcb6566efa979f945bfac1c94c854a559d7b82723e42118882a8ac4de66 in /usr/local/bin/ 
-# Tue, 13 Feb 2024 07:03:48 GMT
+# Fri, 16 Feb 2024 22:13:11 GMT
 WORKDIR /var/www/html
-# Tue, 13 Feb 2024 07:03:49 GMT
+# Fri, 16 Feb 2024 22:13:11 GMT
 EXPOSE 80
-# Tue, 13 Feb 2024 07:03:49 GMT
+# Fri, 16 Feb 2024 22:13:11 GMT
 CMD ["apache2-foreground"]
-# Tue, 13 Feb 2024 14:34:02 GMT
+# Sat, 17 Feb 2024 03:32:11 GMT
 LABEL org.opencontainers.image.title=YOURLS
-# Tue, 13 Feb 2024 14:34:02 GMT
+# Sat, 17 Feb 2024 03:32:11 GMT
 LABEL org.opencontainers.image.description=Your Own URL Shortener
-# Tue, 13 Feb 2024 14:34:02 GMT
+# Sat, 17 Feb 2024 03:32:11 GMT
 LABEL org.opencontainers.image.url=https://yourls.org/
-# Tue, 13 Feb 2024 14:34:02 GMT
+# Sat, 17 Feb 2024 03:32:11 GMT
 LABEL org.opencontainers.image.documentation=https://yourls.org/
-# Tue, 13 Feb 2024 14:34:02 GMT
+# Sat, 17 Feb 2024 03:32:11 GMT
 LABEL org.opencontainers.image.vendor=YOURLS Org
-# Tue, 13 Feb 2024 14:34:03 GMT
+# Sat, 17 Feb 2024 03:32:12 GMT
 LABEL org.opencontainers.image.authors=YOURLS
-# Tue, 13 Feb 2024 14:34:03 GMT
+# Sat, 17 Feb 2024 03:32:12 GMT
 LABEL org.opencontainers.image.licenses=MIT
-# Tue, 13 Feb 2024 14:34:03 GMT
+# Sat, 17 Feb 2024 03:32:12 GMT
 LABEL io.artifacthub.package.readme-url=https://raw.githubusercontent.com/YOURLS/YOURLS/master/README.md
-# Tue, 13 Feb 2024 14:34:16 GMT
+# Sat, 17 Feb 2024 03:32:25 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)" bcmath opcache pdo_mysql mysqli
-# Tue, 13 Feb 2024 14:34:17 GMT
+# Sat, 17 Feb 2024 03:32:26 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Tue, 13 Feb 2024 14:34:17 GMT
+# Sat, 17 Feb 2024 03:32:26 GMT
 RUN a2enmod rewrite expires
-# Tue, 13 Feb 2024 14:34:18 GMT
+# Sat, 17 Feb 2024 03:32:26 GMT
 ARG YOURLS_VERSION=1.9.2
-# Tue, 13 Feb 2024 14:34:18 GMT
+# Sat, 17 Feb 2024 03:32:27 GMT
 ARG YOURLS_SHA256=62a95ba766d62f3305d75944cbfe12d5a90c08c88fbf2f6e67150d36412b916f
-# Tue, 13 Feb 2024 14:34:18 GMT
+# Sat, 17 Feb 2024 03:32:27 GMT
 LABEL org.opencontainers.image.version=1.9.2
-# Tue, 13 Feb 2024 14:34:18 GMT
+# Sat, 17 Feb 2024 03:32:27 GMT
 ENV YOURLS_VERSION=1.9.2
-# Tue, 13 Feb 2024 14:34:18 GMT
+# Sat, 17 Feb 2024 03:32:27 GMT
 ENV YOURLS_SHA256=62a95ba766d62f3305d75944cbfe12d5a90c08c88fbf2f6e67150d36412b916f
-# Tue, 13 Feb 2024 14:34:20 GMT
+# Sat, 17 Feb 2024 03:32:29 GMT
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls
-# Tue, 13 Feb 2024 14:34:20 GMT
+# Sat, 17 Feb 2024 03:32:30 GMT
 COPY --chown=www-data:www-datafile:f5584b9849b80034920f4de5f1297cb1be461f765f3437b87ddf6c86daa6499d in /usr/src/yourls/user/ 
-# Tue, 13 Feb 2024 14:34:21 GMT
+# Sat, 17 Feb 2024 03:32:30 GMT
 COPY file:975ababf859e7cabd8184ab0b2b317a5d8d3ccb6f4922be7f2a5d28c20d075a2 in /usr/local/bin/ 
-# Tue, 13 Feb 2024 14:34:21 GMT
+# Sat, 17 Feb 2024 03:32:30 GMT
 COPY file:5b7ff05d0c98ad759c4bec0ef8a7ce74cae42e95b42564b55f43b341c2c3e3f5 in /usr/src/yourls/ 
-# Tue, 13 Feb 2024 14:34:21 GMT
+# Sat, 17 Feb 2024 03:32:30 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 13 Feb 2024 14:34:21 GMT
+# Sat, 17 Feb 2024 03:32:30 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1586,55 +1586,55 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 13 Feb 2024 08:12:31 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8e05f416835fe96accffeac29c64e41a2a8a3f107fca79ecea9724c1c1b9ee2`  
-		Last Modified: Tue, 13 Feb 2024 08:18:51 GMT  
-		Size: 12.4 MB (12406846 bytes)  
+	-	`sha256:0a67e0e7db7bca80c9d8beada908dbc822d0dd003d758cc4f415f8eb09c7e008`  
+		Last Modified: Fri, 16 Feb 2024 23:22:08 GMT  
+		Size: 12.4 MB (12417221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:411422b84ab73ae4b1258f47e3050b02ca5cc68effabff8f6ecfd600ddd2fc50`  
-		Last Modified: Tue, 13 Feb 2024 08:18:49 GMT  
-		Size: 492.0 B  
+	-	`sha256:6fb3b1badfdc7eafaa820f7a6534b07fd32ce236fd3681e448b38478b1c8de7c`  
+		Last Modified: Fri, 16 Feb 2024 23:22:07 GMT  
+		Size: 491.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e0ea8c2c848aafcd0344f9676635818676467ab8e330b7adf0ea36e7736df6c`  
-		Last Modified: Tue, 13 Feb 2024 08:18:51 GMT  
-		Size: 10.4 MB (10448340 bytes)  
+	-	`sha256:0c5e572f19690093fc1054945c8b1a604b78851ca3b95d13782fe6aed4b58c8e`  
+		Last Modified: Fri, 16 Feb 2024 23:22:08 GMT  
+		Size: 10.4 MB (10448974 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d9f2b4c0e8e267622ccb0e55ff6057baafb14a54ae7e8f2547b8f8ce1a94b13`  
-		Last Modified: Tue, 13 Feb 2024 08:18:49 GMT  
-		Size: 2.5 KB (2458 bytes)  
+	-	`sha256:32203b510ec49f165ff8e20fd5f90be84b7be7c13cd758a78cbbf4307f55c9a6`  
+		Last Modified: Fri, 16 Feb 2024 23:22:06 GMT  
+		Size: 2.5 KB (2456 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525e475a1df2ac088aa04705e337c6df021090db897fcc75d76f4d5dfd776002`  
-		Last Modified: Tue, 13 Feb 2024 08:18:49 GMT  
+	-	`sha256:ffe3ff9ae954e0698d615e745a14316414f35f8dd2e1bd5de164dfeec72a9b6b`  
+		Last Modified: Fri, 16 Feb 2024 23:22:06 GMT  
 		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5065643b93f66d8f8f5a6f8509c8ed3c0dfba00af87d6c3968056344fa603a38`  
-		Last Modified: Tue, 13 Feb 2024 08:18:50 GMT  
-		Size: 894.0 B  
+	-	`sha256:ab5c4db249c297f0d073eb34f2c2153db9644fd1e0f039346fcc12e63feda368`  
+		Last Modified: Fri, 16 Feb 2024 23:22:07 GMT  
+		Size: 892.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:534f7ab98780f0a472f9970c1ef2c7b171b490be2a34c0b30b0ff0c784ae9804`  
-		Last Modified: Tue, 13 Feb 2024 14:38:30 GMT  
-		Size: 161.7 KB (161708 bytes)  
+	-	`sha256:8987a2c612451af43fe079c793b130994c57a872948df035df69323c7f09709e`  
+		Last Modified: Sat, 17 Feb 2024 03:36:42 GMT  
+		Size: 161.7 KB (161696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a71bfb085e9f5f2534fe218204d6f76efee6b4908b6f47446b95a385c487fd0`  
-		Last Modified: Tue, 13 Feb 2024 14:38:30 GMT  
-		Size: 324.0 B  
+	-	`sha256:30dc2ab20d3a4fe6bdaf991d9b72d983dec64084e3cf5690ce42f929e2f32def`  
+		Last Modified: Sat, 17 Feb 2024 03:36:42 GMT  
+		Size: 326.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed9dbb6fc8f99d9a237f926be5f2ff8e21b3f53465c597de583eddab8c65d2c2`  
-		Last Modified: Tue, 13 Feb 2024 14:38:28 GMT  
-		Size: 342.0 B  
+	-	`sha256:eebe83091f05a9079be6b142c4867fe40dbc2d63b4fc2b5af2edfd201362e3f6`  
+		Last Modified: Sat, 17 Feb 2024 03:36:41 GMT  
+		Size: 341.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4647064faabe5933e7d56e89264cf149a5c7ab2328d1e095497f0dd11ebcc336`  
-		Last Modified: Tue, 13 Feb 2024 14:38:29 GMT  
-		Size: 4.1 MB (4073441 bytes)  
+	-	`sha256:4a2050c2479f4316983cc2aca8eeba48c410c841c01efad215fea04909b0b81c`  
+		Last Modified: Sat, 17 Feb 2024 03:36:42 GMT  
+		Size: 4.1 MB (4073442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa67d13b8841b4d0727afe04428fd03fb5e6a9567e0140165e897801a44468e6`  
-		Last Modified: Tue, 13 Feb 2024 14:38:28 GMT  
-		Size: 2.1 KB (2051 bytes)  
+	-	`sha256:561dcb6d7d22effdb887fdf73a93de69c0f49dd2810647b12c0897d4cf40337f`  
+		Last Modified: Sat, 17 Feb 2024 03:36:41 GMT  
+		Size: 2.1 KB (2052 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09e35f40df5b286e36f0a856546f03ef73f0de2058235914350c4a237a5e1683`  
-		Last Modified: Tue, 13 Feb 2024 14:38:28 GMT  
-		Size: 1.6 KB (1553 bytes)  
+	-	`sha256:7925b47ab5f152273702a2f255bf977cbcffa5799b83f06691ab283b9a812602`  
+		Last Modified: Sat, 17 Feb 2024 03:36:41 GMT  
+		Size: 1.6 KB (1556 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab1b8fa725483156e326e39446ebdcf30d6e4468be61d29095ab75e3657fe12c`  
-		Last Modified: Tue, 13 Feb 2024 14:38:28 GMT  
-		Size: 330.0 B  
+	-	`sha256:67ae7904a08574c684a339a9dc1928271d64a2561722fdce3b130fb0523d1dd2`  
+		Last Modified: Sat, 17 Feb 2024 03:36:41 GMT  
+		Size: 332.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
