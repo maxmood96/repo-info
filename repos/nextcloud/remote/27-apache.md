@@ -1,7 +1,7 @@
 ## `nextcloud:27-apache`
 
 ```console
-$ docker pull nextcloud@sha256:3f738c3c2248cc5547643f08b033ce27f66dcb8f1a152c6e0e20151d17170feb
+$ docker pull nextcloud@sha256:a6f1259559102dca9a00e1d4d983a18ca0afd6ba314bda9c4fca4249b89b2ba5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -404,14 +404,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:27-apache` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:ab0733a5b66ce52525c0290901e6ae428a3fbbd0cd1898eed247c2d6807ab721
+$ docker pull nextcloud@sha256:2dd619fe759cdd0ccf63b4f8d4ec33ee50d6501c85358c8e57ff054caf26134e
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **382.0 MB (382002658 bytes)**  
+-	Total Size: **382.0 MB (382013195 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01f6592eabcf7e42ba7d19aada5d8454a8d53ce6720f8f9d6ff877e186bc85cb`
+-	Image ID: `sha256:21d5e3c05b357af47dc01c78cfe5ed947e232221c1a5a83609422a7d49729287`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -448,63 +448,63 @@ ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 13 Feb 2024 11:55:10 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Tue, 13 Feb 2024 12:52:35 GMT
-ENV PHP_VERSION=8.2.15
-# Tue, 13 Feb 2024 12:52:35 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.2.15.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.15.tar.xz.asc
-# Tue, 13 Feb 2024 12:52:35 GMT
-ENV PHP_SHA256=eca5deac02d77d806838275f8a3024b38b35ac0a5d9853dcc71c6cbe3f1f8765
-# Tue, 13 Feb 2024 12:52:52 GMT
+# Fri, 16 Feb 2024 21:08:08 GMT
+ENV PHP_VERSION=8.2.16
+# Fri, 16 Feb 2024 21:08:08 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.2.16.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.16.tar.xz.asc
+# Fri, 16 Feb 2024 21:08:08 GMT
+ENV PHP_SHA256=28cdc995b7d5421711c7044294885fcde4390c9f67504a994b4cf9bc1b5cc593
+# Fri, 16 Feb 2024 21:08:25 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Tue, 13 Feb 2024 12:52:53 GMT
+# Fri, 16 Feb 2024 21:08:26 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Tue, 13 Feb 2024 12:59:16 GMT
+# Fri, 16 Feb 2024 21:11:52 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Tue, 13 Feb 2024 12:59:17 GMT
+# Fri, 16 Feb 2024 21:11:53 GMT
 COPY multi:e11221d43af7136e4dbad5a74e659bcfa753214a9e615c3daf357f1633d9d3d1 in /usr/local/bin/ 
-# Tue, 13 Feb 2024 12:59:19 GMT
+# Fri, 16 Feb 2024 21:11:53 GMT
 RUN docker-php-ext-enable sodium
-# Tue, 13 Feb 2024 12:59:19 GMT
+# Fri, 16 Feb 2024 21:11:53 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 13 Feb 2024 12:59:19 GMT
+# Fri, 16 Feb 2024 21:11:54 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 13 Feb 2024 12:59:20 GMT
+# Fri, 16 Feb 2024 21:11:54 GMT
 COPY file:e3123fcb6566efa979f945bfac1c94c854a559d7b82723e42118882a8ac4de66 in /usr/local/bin/ 
-# Tue, 13 Feb 2024 12:59:20 GMT
+# Fri, 16 Feb 2024 21:11:54 GMT
 WORKDIR /var/www/html
-# Tue, 13 Feb 2024 12:59:20 GMT
+# Fri, 16 Feb 2024 21:11:54 GMT
 EXPOSE 80
-# Tue, 13 Feb 2024 12:59:20 GMT
+# Fri, 16 Feb 2024 21:11:54 GMT
 CMD ["apache2-foreground"]
-# Tue, 13 Feb 2024 20:43:47 GMT
+# Sat, 17 Feb 2024 01:31:40 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         busybox-static         bzip2         libldap-common         libmagickcore-6.q16-6-extra         rsync     ;     rm -rf /var/lib/apt/lists/*;         mkdir -p /var/spool/cron/crontabs;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data
-# Tue, 13 Feb 2024 20:43:48 GMT
+# Sat, 17 Feb 2024 01:31:40 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Tue, 13 Feb 2024 20:43:48 GMT
+# Sat, 17 Feb 2024 01:31:40 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Tue, 13 Feb 2024 20:49:15 GMT
+# Sat, 17 Feb 2024 01:37:07 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libgmp-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmagickwand-dev         libmcrypt-dev         libmemcached-dev         libpng-dev         libpq-dev         libwebp-dev         libxml2-dev         libzip-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         gd         gmp         intl         ldap         opcache         pcntl         pdo_mysql         pdo_pgsql         sysvsem         zip     ;         pecl install APCu-5.1.23;     pecl install imagick-3.7.0;     pecl install memcached-3.2.0;     pecl install redis-6.0.2;         docker-php-ext-enable         apcu         imagick         memcached         redis     ;     rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'         | sort -u         | xargs -r dpkg-query --search         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
-# Tue, 13 Feb 2024 20:49:18 GMT
+# Sat, 17 Feb 2024 01:37:09 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=128M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
-# Tue, 13 Feb 2024 20:49:18 GMT
+# Sat, 17 Feb 2024 01:37:10 GMT
 VOLUME [/var/www/html]
-# Tue, 13 Feb 2024 20:49:20 GMT
+# Sat, 17 Feb 2024 01:37:12 GMT
 RUN a2enmod headers rewrite remoteip ;     {      echo 'RemoteIPHeader X-Real-IP';      echo 'RemoteIPInternalProxy 10.0.0.0/8';      echo 'RemoteIPInternalProxy 172.16.0.0/12';      echo 'RemoteIPInternalProxy 192.168.0.0/16';     } > /etc/apache2/conf-available/remoteip.conf;     a2enconf remoteip
-# Tue, 13 Feb 2024 20:49:20 GMT
+# Sat, 17 Feb 2024 01:37:13 GMT
 ENV APACHE_BODY_LIMIT=1073741824
-# Tue, 13 Feb 2024 20:49:22 GMT
+# Sat, 17 Feb 2024 01:37:14 GMT
 RUN {      echo 'LimitRequestBody ${APACHE_BODY_LIMIT}';     } > /etc/apache2/conf-available/apache-limits.conf;     a2enconf apache-limits
-# Tue, 13 Feb 2024 20:58:17 GMT
+# Sat, 17 Feb 2024 01:53:30 GMT
 ENV NEXTCLOUD_VERSION=27.1.6
-# Tue, 13 Feb 2024 20:59:43 GMT
+# Sat, 17 Feb 2024 01:54:56 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-27.1.6.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-27.1.6.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Tue, 13 Feb 2024 20:59:49 GMT
+# Sat, 17 Feb 2024 01:55:00 GMT
 COPY multi:9585a9602f24ff6c37b7e8821d7e5fca4a450cd9cc8c66163bc629028ca3df5c in / 
-# Tue, 13 Feb 2024 20:59:50 GMT
+# Sat, 17 Feb 2024 01:55:02 GMT
 COPY multi:325eebb30e6912e4cdbb030d4d22b6dd14fe18ca007f50df3afe27a136e1e383 in /usr/src/nextcloud/config/ 
-# Tue, 13 Feb 2024 20:59:51 GMT
+# Sat, 17 Feb 2024 01:55:02 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 13 Feb 2024 20:59:51 GMT
+# Sat, 17 Feb 2024 01:55:03 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -537,61 +537,61 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 13 Feb 2024 14:19:32 GMT  
 		Size: 513.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:729930f264d2f7771b9bc3fac05b37dcc7801d39efe0aa6ff51077fb216f9b1a`  
-		Last Modified: Tue, 13 Feb 2024 14:29:18 GMT  
-		Size: 12.4 MB (12406569 bytes)  
+	-	`sha256:f2af0b5aa84beeda148bb4da82ea4eb24707aae92be1821f514f345089c763cd`  
+		Last Modified: Fri, 16 Feb 2024 21:59:55 GMT  
+		Size: 12.4 MB (12416822 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a53cb4bd3a2c2939d057fb8e25dae33aeec17a163870f4b73ad64b4c2173fdf`  
-		Last Modified: Tue, 13 Feb 2024 14:29:15 GMT  
-		Size: 491.0 B  
+	-	`sha256:c2d6dac787e2509f4179842fc5f3275c04f8e8e9cdcaefd6559819aa13d9dd77`  
+		Last Modified: Fri, 16 Feb 2024 21:59:52 GMT  
+		Size: 494.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0b5684b87c4c09b8cf48e9f43ddfb30f6215a21c799bf306399ee7eeb9345f1`  
-		Last Modified: Tue, 13 Feb 2024 14:29:17 GMT  
-		Size: 9.8 MB (9817226 bytes)  
+	-	`sha256:01c1ae8ae0fe7af0efc0d539a527a65ea01e2d353dabaa271a426405a29cbca9`  
+		Last Modified: Fri, 16 Feb 2024 21:59:54 GMT  
+		Size: 9.8 MB (9817148 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdd2095f47783ab6d97db90b08d624d484b6b7528fa5c85912c88dc5e9f30fd6`  
-		Last Modified: Tue, 13 Feb 2024 14:29:14 GMT  
-		Size: 2.5 KB (2457 bytes)  
+	-	`sha256:d30b4c24d5e33511d29d47f2533b9f884cfa020de878b3c1b787f30d20080153`  
+		Last Modified: Fri, 16 Feb 2024 21:59:52 GMT  
+		Size: 2.5 KB (2458 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3824c3cda33a8ae6129ba7fd090194aab8f4d7aa21519cb5449ec72748649503`  
-		Last Modified: Tue, 13 Feb 2024 14:29:14 GMT  
+	-	`sha256:051b22ebe5b88b6291c20747fc62fe5b767c147dd10fe2373643c7eec06c7810`  
+		Last Modified: Fri, 16 Feb 2024 21:59:52 GMT  
 		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab36749856abb27028aea6ddf245884af1c9a9dcc2e57e7a6d511956952a89cc`  
-		Last Modified: Tue, 13 Feb 2024 14:29:14 GMT  
-		Size: 894.0 B  
+	-	`sha256:8370e79bae1fe2de8502f181536cb2266992281f96b91ac6707cf2a127386aad`  
+		Last Modified: Fri, 16 Feb 2024 21:59:52 GMT  
+		Size: 893.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f68c5c9c15739657cab7107d10feac06e56e15c430e80f508f54091120ac712f`  
-		Last Modified: Tue, 13 Feb 2024 21:06:15 GMT  
-		Size: 18.1 MB (18131149 bytes)  
+	-	`sha256:9e2c9c7645ee1ed402160ae23ffc37e1608eef6b610370909f8e84f3ad7b8789`  
+		Last Modified: Sat, 17 Feb 2024 02:04:10 GMT  
+		Size: 18.1 MB (18131139 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6e6bd75c069342a028a77239e67dafad9ef61da53c1a0305737e2f7522a2a10`  
-		Last Modified: Tue, 13 Feb 2024 21:06:18 GMT  
-		Size: 18.9 MB (18920965 bytes)  
+	-	`sha256:cfd9af299d45924def955e30e73584807164ed971a2288a1448ce5f15c9dcba8`  
+		Last Modified: Sat, 17 Feb 2024 02:04:13 GMT  
+		Size: 18.9 MB (18921443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:675ee181986f07803e499f9ac8f2822cc7e696f197b9880c8b5b356199843edc`  
-		Last Modified: Tue, 13 Feb 2024 21:06:09 GMT  
+	-	`sha256:3218ce735aa7a71a9ceed47dbd2305cbc228b22b490774a153be326b1207d32a`  
+		Last Modified: Sat, 17 Feb 2024 02:04:03 GMT  
 		Size: 759.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ee23caabd2c4b53536950c7ea6db5ec1ebe7d8e92de81383be1b848bf096d4c`  
-		Last Modified: Tue, 13 Feb 2024 21:06:07 GMT  
-		Size: 578.0 B  
+	-	`sha256:133c28b732fc61b82bc6f22ce664bf4e99ad8c7d55a0842f33f53366fa65e735`  
+		Last Modified: Sat, 17 Feb 2024 02:04:01 GMT  
+		Size: 576.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebe7d7dd968abd61eaa3cb6b807f05a7bdce0501c8a04d70154570d82af61d79`  
-		Last Modified: Tue, 13 Feb 2024 21:06:07 GMT  
-		Size: 398.0 B  
+	-	`sha256:9be35568c74d5c2e225cb942bf0aa1b0ace42892b388eb6d6d3a3fe81a99dd57`  
+		Last Modified: Sat, 17 Feb 2024 02:04:01 GMT  
+		Size: 399.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ee3cace64a5189bcdadba0fe54af1b2ee5dce8373277cc7a4d153bb3240224a`  
-		Last Modified: Tue, 13 Feb 2024 21:08:45 GMT  
-		Size: 202.8 MB (202781128 bytes)  
+	-	`sha256:6b21353877152d70c1513325c3d91aa00e3702ba244ae63d8ad46e78996d98b9`  
+		Last Modified: Sat, 17 Feb 2024 02:08:12 GMT  
+		Size: 202.8 MB (202781023 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7efeb2b0f8f92bce1e57d57c89052dd5d84af812fed7842033557b391d8aa53a`  
-		Last Modified: Tue, 13 Feb 2024 21:08:07 GMT  
-		Size: 3.6 KB (3614 bytes)  
+	-	`sha256:98f57cf03ec9d0d5a93f8013e4fc93ea1a65e62e441a5162f93c2281230a6ff1`  
+		Last Modified: Sat, 17 Feb 2024 02:07:21 GMT  
+		Size: 3.6 KB (3613 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:743512facfdc82d21654a12e9c0fc51492af90d8402836d55e4c8294ebf04da8`  
-		Last Modified: Tue, 13 Feb 2024 21:08:07 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:c665083683cbf57d9753e06253ee0e8e53ec09deeb4ce5faead83f22b05ab2c5`  
+		Last Modified: Sat, 17 Feb 2024 02:07:21 GMT  
+		Size: 2.4 KB (2392 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:27-apache` - linux; arm64 variant v8
@@ -1176,14 +1176,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:27-apache` - linux; ppc64le
 
 ```console
-$ docker pull nextcloud@sha256:e26fa9114b5dcaac1dd82320919b93af189d748cb4331fe6d558c6b4b3c2627d
+$ docker pull nextcloud@sha256:b4209b427456cd69b87df45bb0b3e8cc29e3573aec15bfa06529939f38f25ecd
 ```
 
 -	Docker Version: 20.10.26
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **429.4 MB (429378906 bytes)**  
+-	Total Size: **429.4 MB (429391404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a491edf84dc79635b2a550da406548eb74f63544404d457748cd8f59a07c9ca8`
+-	Image ID: `sha256:3475e33d1d6d913680397aff8dc2148174cc574444457f60d42fbcd99aa4051e`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1220,63 +1220,63 @@ ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 13 Feb 2024 05:22:53 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Tue, 13 Feb 2024 05:52:11 GMT
-ENV PHP_VERSION=8.2.15
-# Tue, 13 Feb 2024 05:52:12 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.2.15.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.15.tar.xz.asc
-# Tue, 13 Feb 2024 05:52:12 GMT
-ENV PHP_SHA256=eca5deac02d77d806838275f8a3024b38b35ac0a5d9853dcc71c6cbe3f1f8765
-# Tue, 13 Feb 2024 05:52:33 GMT
+# Fri, 16 Feb 2024 21:15:25 GMT
+ENV PHP_VERSION=8.2.16
+# Fri, 16 Feb 2024 21:15:25 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.2.16.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.16.tar.xz.asc
+# Fri, 16 Feb 2024 21:15:26 GMT
+ENV PHP_SHA256=28cdc995b7d5421711c7044294885fcde4390c9f67504a994b4cf9bc1b5cc593
+# Fri, 16 Feb 2024 21:15:58 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Tue, 13 Feb 2024 05:52:34 GMT
+# Fri, 16 Feb 2024 21:15:59 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Tue, 13 Feb 2024 05:55:42 GMT
+# Fri, 16 Feb 2024 21:19:45 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Tue, 13 Feb 2024 05:55:43 GMT
+# Fri, 16 Feb 2024 21:19:47 GMT
 COPY multi:e11221d43af7136e4dbad5a74e659bcfa753214a9e615c3daf357f1633d9d3d1 in /usr/local/bin/ 
-# Tue, 13 Feb 2024 05:55:44 GMT
+# Fri, 16 Feb 2024 21:19:48 GMT
 RUN docker-php-ext-enable sodium
-# Tue, 13 Feb 2024 05:55:45 GMT
+# Fri, 16 Feb 2024 21:19:49 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 13 Feb 2024 05:55:45 GMT
+# Fri, 16 Feb 2024 21:19:50 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 13 Feb 2024 05:55:45 GMT
+# Fri, 16 Feb 2024 21:19:50 GMT
 COPY file:e3123fcb6566efa979f945bfac1c94c854a559d7b82723e42118882a8ac4de66 in /usr/local/bin/ 
-# Tue, 13 Feb 2024 05:55:46 GMT
+# Fri, 16 Feb 2024 21:19:52 GMT
 WORKDIR /var/www/html
-# Tue, 13 Feb 2024 05:55:46 GMT
+# Fri, 16 Feb 2024 21:19:53 GMT
 EXPOSE 80
-# Tue, 13 Feb 2024 05:55:47 GMT
+# Fri, 16 Feb 2024 21:19:54 GMT
 CMD ["apache2-foreground"]
-# Tue, 13 Feb 2024 10:25:56 GMT
+# Sat, 17 Feb 2024 01:57:36 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         busybox-static         bzip2         libldap-common         libmagickcore-6.q16-6-extra         rsync     ;     rm -rf /var/lib/apt/lists/*;         mkdir -p /var/spool/cron/crontabs;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data
-# Tue, 13 Feb 2024 10:25:57 GMT
+# Sat, 17 Feb 2024 01:57:37 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Tue, 13 Feb 2024 10:25:57 GMT
+# Sat, 17 Feb 2024 01:57:38 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Tue, 13 Feb 2024 10:29:49 GMT
+# Sat, 17 Feb 2024 02:01:32 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libgmp-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmagickwand-dev         libmcrypt-dev         libmemcached-dev         libpng-dev         libpq-dev         libwebp-dev         libxml2-dev         libzip-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         gd         gmp         intl         ldap         opcache         pcntl         pdo_mysql         pdo_pgsql         sysvsem         zip     ;         pecl install APCu-5.1.23;     pecl install imagick-3.7.0;     pecl install memcached-3.2.0;     pecl install redis-6.0.2;         docker-php-ext-enable         apcu         imagick         memcached         redis     ;     rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'         | sort -u         | xargs -r dpkg-query --search         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
-# Tue, 13 Feb 2024 10:29:52 GMT
+# Sat, 17 Feb 2024 02:01:35 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=128M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
-# Tue, 13 Feb 2024 10:29:52 GMT
+# Sat, 17 Feb 2024 02:01:35 GMT
 VOLUME [/var/www/html]
-# Tue, 13 Feb 2024 10:29:54 GMT
+# Sat, 17 Feb 2024 02:01:36 GMT
 RUN a2enmod headers rewrite remoteip ;     {      echo 'RemoteIPHeader X-Real-IP';      echo 'RemoteIPInternalProxy 10.0.0.0/8';      echo 'RemoteIPInternalProxy 172.16.0.0/12';      echo 'RemoteIPInternalProxy 192.168.0.0/16';     } > /etc/apache2/conf-available/remoteip.conf;     a2enconf remoteip
-# Tue, 13 Feb 2024 10:29:55 GMT
+# Sat, 17 Feb 2024 02:01:37 GMT
 ENV APACHE_BODY_LIMIT=1073741824
-# Tue, 13 Feb 2024 10:29:56 GMT
+# Sat, 17 Feb 2024 02:01:38 GMT
 RUN {      echo 'LimitRequestBody ${APACHE_BODY_LIMIT}';     } > /etc/apache2/conf-available/apache-limits.conf;     a2enconf apache-limits
-# Tue, 13 Feb 2024 10:36:42 GMT
+# Sat, 17 Feb 2024 02:12:37 GMT
 ENV NEXTCLOUD_VERSION=27.1.6
-# Tue, 13 Feb 2024 10:37:49 GMT
+# Sat, 17 Feb 2024 02:13:45 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-27.1.6.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-27.1.6.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Tue, 13 Feb 2024 10:37:59 GMT
+# Sat, 17 Feb 2024 02:13:52 GMT
 COPY multi:9585a9602f24ff6c37b7e8821d7e5fca4a450cd9cc8c66163bc629028ca3df5c in / 
-# Tue, 13 Feb 2024 10:38:00 GMT
+# Sat, 17 Feb 2024 02:13:53 GMT
 COPY multi:325eebb30e6912e4cdbb030d4d22b6dd14fe18ca007f50df3afe27a136e1e383 in /usr/src/nextcloud/config/ 
-# Tue, 13 Feb 2024 10:38:01 GMT
+# Sat, 17 Feb 2024 02:13:54 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 13 Feb 2024 10:38:01 GMT
+# Sat, 17 Feb 2024 02:13:54 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1309,61 +1309,61 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 13 Feb 2024 06:44:25 GMT  
 		Size: 513.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42550739b7f48af716ac832fad1934c3cd65a3af5c7b62a26902f47601927316`  
-		Last Modified: Tue, 13 Feb 2024 06:54:14 GMT  
-		Size: 12.4 MB (12408126 bytes)  
+	-	`sha256:e3ac54141bd03ba3998d5a07c1579de7ccdfe88299cfa45e4733e01ca12e3de0`  
+		Last Modified: Fri, 16 Feb 2024 22:09:08 GMT  
+		Size: 12.4 MB (12418434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46df924d7eef2bd9e70044d4446be91fcdefdf371aace2a0259973ccc336aca8`  
-		Last Modified: Tue, 13 Feb 2024 06:54:12 GMT  
+	-	`sha256:d17118051cc795a0d2c32d5b82b6fd0845a6ecc4993df3eb151c2bdd25cd8fc4`  
+		Last Modified: Fri, 16 Feb 2024 22:09:05 GMT  
 		Size: 491.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:167aa1659e64fadc6152357b3e6abc6d28f56a25b8076d22275d7bd36a9e03cc`  
-		Last Modified: Tue, 13 Feb 2024 06:54:13 GMT  
-		Size: 11.8 MB (11813243 bytes)  
+	-	`sha256:49609f1d79df3385e4b15e6eee2d1b9c566011134aeaec20e69417ae8a697ee8`  
+		Last Modified: Fri, 16 Feb 2024 22:09:08 GMT  
+		Size: 11.8 MB (11814601 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e8043b9d3bd33a06672fd37521b2445df2f9f85b8b52d9cc56969e67c45fb2d`  
-		Last Modified: Tue, 13 Feb 2024 06:54:11 GMT  
-		Size: 2.5 KB (2457 bytes)  
+	-	`sha256:836c214603adfa28aafd22a311a6615c785810df52ad43f77d195f05736da78a`  
+		Last Modified: Fri, 16 Feb 2024 22:09:05 GMT  
+		Size: 2.5 KB (2459 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f1dfca68d509a1142b3fb23a5a6367e0ae0cb5474e4830eb706f009e87c99c3`  
-		Last Modified: Tue, 13 Feb 2024 06:54:12 GMT  
+	-	`sha256:29d0550518aae4100bd9ab9f109f0ae8f6e86d3e9b5d46f169750c59368e7eb8`  
+		Last Modified: Fri, 16 Feb 2024 22:09:06 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:511ecf1b755b47018e22491beb51c9f16a806520903e77beea5834e58b541781`  
-		Last Modified: Tue, 13 Feb 2024 06:54:11 GMT  
-		Size: 895.0 B  
+	-	`sha256:b2c5ad2f5e2212b15866bfd2210b21b7aa3dd22e354459d0f93137487d0f1201`  
+		Last Modified: Fri, 16 Feb 2024 22:09:05 GMT  
+		Size: 894.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c514ad440791832a9c154e32a3ee93d810ef4892f4bf4498b4f055d0b983432a`  
-		Last Modified: Tue, 13 Feb 2024 10:42:53 GMT  
-		Size: 22.6 MB (22616948 bytes)  
+	-	`sha256:0478066bb8e77038e7998e4a1de435ce7d9a941e00f581874ce03ff4f6c5610e`  
+		Last Modified: Sat, 17 Feb 2024 02:21:06 GMT  
+		Size: 22.6 MB (22617281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:32ef9191a7d4722475c3bfe9fcfb680d483211817e2ddca3f97d0bfd6e065088`  
-		Last Modified: Tue, 13 Feb 2024 10:42:54 GMT  
-		Size: 21.8 MB (21821962 bytes)  
+	-	`sha256:8832606045849a624df59b5377ff2e9cfaa3d80920bd0dfe09a81438db9ef303`  
+		Last Modified: Sat, 17 Feb 2024 02:21:07 GMT  
+		Size: 21.8 MB (21822288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7bac3189f0602ac8e3158ab6080caca847e506ae0bb73dddc4f1455b2fe3c21`  
-		Last Modified: Tue, 13 Feb 2024 10:42:49 GMT  
-		Size: 760.0 B  
+	-	`sha256:d01fb4f765a99444342390edc4ac142739ed5d090adf8efcedd2eda43ed0f31c`  
+		Last Modified: Sat, 17 Feb 2024 02:21:03 GMT  
+		Size: 762.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb5a1a7d36c33db6d78b7366fbd9565e5a28d3e0cc1078f8342ae94d5f887a57`  
-		Last Modified: Tue, 13 Feb 2024 10:42:47 GMT  
-		Size: 584.0 B  
+	-	`sha256:33ca3700e6b769eee7ec97b62470f3de8002dc03aa677e6e4e41010b8cf5b1fd`  
+		Last Modified: Sat, 17 Feb 2024 02:21:01 GMT  
+		Size: 582.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f9078a44d2716c548840fe70f213e766ca6df78c250bda5b3442a62b59aa5b9`  
-		Last Modified: Tue, 13 Feb 2024 10:42:47 GMT  
-		Size: 402.0 B  
+	-	`sha256:69e4af27a015406ea220331fa04c25ee6046295184265629b35d9bf8db3a5a68`  
+		Last Modified: Sat, 17 Feb 2024 02:21:01 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a35c4207a1a7957bd20a63c2edc90ed4ba4c839eae962b38b4e46dbc358609d6`  
-		Last Modified: Tue, 13 Feb 2024 10:44:47 GMT  
-		Size: 202.8 MB (202783747 bytes)  
+	-	`sha256:e1910aa73e53d4510c35f4ebc5e1a6a2b0b6d49b21f73631134768379f74ddc2`  
+		Last Modified: Sat, 17 Feb 2024 02:23:36 GMT  
+		Size: 202.8 MB (202783915 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b898f97bf351755238a768cea1d73a6c81b0ff9a8eef230ec8375fd7a12921a3`  
-		Last Modified: Tue, 13 Feb 2024 10:44:18 GMT  
+	-	`sha256:81153d7e39ce43842a971d43514afdfadee729029b07d8009c81ccae4c10d764`  
+		Last Modified: Sat, 17 Feb 2024 02:23:09 GMT  
 		Size: 3.6 KB (3613 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d66bba495ffe40916da635a272e90210872cef568fcf758cf5df35b72a85e9`  
-		Last Modified: Tue, 13 Feb 2024 10:44:18 GMT  
-		Size: 2.4 KB (2392 bytes)  
+	-	`sha256:d46e8146e1500ace37031f5563dbcea43f3480b71cb594063e8091f762268e4b`  
+		Last Modified: Sat, 17 Feb 2024 02:23:09 GMT  
+		Size: 2.4 KB (2395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:27-apache` - linux; s390x
