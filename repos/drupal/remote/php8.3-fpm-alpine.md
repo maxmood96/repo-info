@@ -1,7 +1,7 @@
 ## `drupal:php8.3-fpm-alpine`
 
 ```console
-$ docker pull drupal@sha256:305896c5c563e879a9d28e6e739bc6e69a6a776c8601adc55bdac435574943a6
+$ docker pull drupal@sha256:3dcde7ac0e1bd71fdbaf318fc74d328a07e9d64e74ba9da074ffa494af40c67c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -684,13 +684,13 @@ $ docker pull drupal@sha256:0bcd2579e01196b838c1280598214f34d31b6ca4e8514868c357
 ### `drupal:php8.3-fpm-alpine` - linux; 386
 
 ```console
-$ docker pull drupal@sha256:40af6703dc6440e43b8b34443fb80eb5ea1c5c411497da3706dfbc0362811547
+$ docker pull drupal@sha256:a8e2567e4ad1ec5d34e32844c651ebdca5ddb65b6893c694672dee6b18f6f73e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.2 MB (54241590 bytes)**  
+-	Total Size: **54.3 MB (54270362 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c320cabe432cf4c809ba2d980eaa5d7e6ae1f0afa46a1b7c7303c0d6b7847121`
+-	Image ID: `sha256:ec93e1bf25ca22e5450030722c9f6be569d196df05d306b128bd5f67a12f5342`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -717,33 +717,33 @@ ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Sat, 27 Jan 2024 04:42:13 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Sat, 27 Jan 2024 04:42:13 GMT
-ENV PHP_VERSION=8.3.2
-# Sat, 27 Jan 2024 04:42:14 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.3.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.2.tar.xz.asc
-# Sat, 27 Jan 2024 04:42:14 GMT
-ENV PHP_SHA256=4ffa3e44afc9c590e28dc0d2d31fc61f0139f8b335f11880a121b9f9b9f0634e
-# Sat, 27 Jan 2024 04:42:21 GMT
+# Thu, 08 Feb 2024 04:27:17 GMT
+ENV PHP_VERSION=8.3.3
+# Thu, 08 Feb 2024 04:27:17 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.3.3.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.3.tar.xz.asc
+# Thu, 08 Feb 2024 04:27:17 GMT
+ENV PHP_SHA256=b0a996276fe21fe9ca8f993314c8bc02750f464c7b0343f056fb0894a8dfa9d1
+# Thu, 08 Feb 2024 04:27:17 GMT
 RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apk del --no-network .fetch-deps
-# Sat, 27 Jan 2024 04:42:21 GMT
+# Thu, 08 Feb 2024 04:27:17 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Sat, 27 Jan 2024 04:56:06 GMT
+# Thu, 08 Feb 2024 04:27:17 GMT
 RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 's390x-linux-musl' && echo '--without-pcre-jit') 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Sat, 27 Jan 2024 04:56:07 GMT
+# Thu, 08 Feb 2024 04:27:17 GMT
 COPY multi:869bde9dbeae74886a05c9e2107b3e3b4877116db8c6d9adbaff2719f9fb5262 in /usr/local/bin/ 
-# Sat, 27 Jan 2024 04:56:08 GMT
+# Thu, 08 Feb 2024 04:27:17 GMT
 RUN docker-php-ext-enable sodium
-# Sat, 27 Jan 2024 04:56:09 GMT
+# Thu, 08 Feb 2024 04:27:17 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 27 Jan 2024 04:56:09 GMT
+# Thu, 08 Feb 2024 04:27:17 GMT
 WORKDIR /var/www/html
-# Sat, 27 Jan 2024 04:56:09 GMT
+# Thu, 08 Feb 2024 04:27:17 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini"
-# Sat, 27 Jan 2024 04:56:10 GMT
+# Thu, 08 Feb 2024 04:27:17 GMT
 STOPSIGNAL SIGQUIT
-# Sat, 27 Jan 2024 04:56:10 GMT
+# Thu, 08 Feb 2024 04:27:17 GMT
 EXPOSE 9000
-# Sat, 27 Jan 2024 04:56:10 GMT
+# Thu, 08 Feb 2024 04:27:17 GMT
 CMD ["php-fpm"]
 # Thu, 08 Feb 2024 04:27:17 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		freetype-dev 		libjpeg-turbo-dev 		libpng-dev 		libwebp-dev 		libzip-dev 		postgresql-dev 	; 		docker-php-ext-configure gd 		--with-freetype 		--with-jpeg=/usr/include 		--with-webp 	; 		docker-php-ext-install -j "$(nproc)" 		gd 		opcache 		pdo_mysql 		pdo_pgsql 		zip 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .drupal-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
@@ -778,72 +778,72 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Sat, 27 Jan 2024 06:46:11 GMT  
 		Size: 268.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f764086f31884d7b0f1d7eb0ba50a7b60b54ba024be9203e346e7c20e21bf91`  
-		Last Modified: Sat, 27 Jan 2024 06:46:11 GMT  
-		Size: 12.5 MB (12460896 bytes)  
+	-	`sha256:57fe87cb4105d85f21e30e09f6f3a4330d2da218201655603275e6770844ec7b`  
+		Last Modified: Fri, 16 Feb 2024 23:08:44 GMT  
+		Size: 12.5 MB (12485203 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:227533438eebd55051b7f7a308b969d3a741e478d18e7b99124830dbf77fa548`  
-		Last Modified: Sat, 27 Jan 2024 06:46:09 GMT  
-		Size: 491.0 B  
+	-	`sha256:5f84bf168af34de29f2c6bc3f13c1ec1fd67aa19ceb524b8310f4c8ac5110fe8`  
+		Last Modified: Fri, 16 Feb 2024 23:08:43 GMT  
+		Size: 496.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41206c9eb0e7fc5eb1d723b6b8b788079bb9b2052528376bb6f1662e092c86c6`  
-		Last Modified: Sat, 27 Jan 2024 06:46:56 GMT  
-		Size: 13.4 MB (13401770 bytes)  
+	-	`sha256:584bd9de8aa36aed77df3463e73a253e945691cce3f0977718caeee327465202`  
+		Last Modified: Fri, 16 Feb 2024 23:09:33 GMT  
+		Size: 13.4 MB (13406079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42020456917f55f9355dd65ee095f6af11c056d11b85583daf00929f861326d4`  
-		Last Modified: Sat, 27 Jan 2024 06:46:53 GMT  
-		Size: 2.4 KB (2449 bytes)  
+	-	`sha256:f390eb0f71e9279c66eb65fe2bccac1432b51df562ca6b000042e90b61696d4c`  
+		Last Modified: Fri, 16 Feb 2024 23:09:29 GMT  
+		Size: 2.5 KB (2452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:571a88d1c69b53240242309270dbb8ce09e1bc879febde2a3291d96067e186c7`  
-		Last Modified: Sat, 27 Jan 2024 06:46:53 GMT  
-		Size: 19.3 KB (19294 bytes)  
+	-	`sha256:f94490d62030aa63d2c654198fa4fe06c7edbced273aeca4242661e9e6ffa06a`  
+		Last Modified: Fri, 16 Feb 2024 23:09:29 GMT  
+		Size: 19.3 KB (19306 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:998a2caca5ea122a6e744d2291bd137ad9a1762759a766616675e8f2a2199646`  
-		Last Modified: Sat, 27 Jan 2024 06:46:53 GMT  
-		Size: 9.2 KB (9179 bytes)  
+	-	`sha256:217605dee46bcf87fcd78052b665688948c21363c04b273cc97d9e0d038c5d15`  
+		Last Modified: Fri, 16 Feb 2024 23:09:30 GMT  
+		Size: 9.2 KB (9184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce112fd5dee0c0e8c86c634834a4b944b3fd2f3c3409d4dfc1fa6e31ecdb50c7`  
-		Last Modified: Mon, 12 Feb 2024 21:55:22 GMT  
-		Size: 2.3 MB (2319910 bytes)  
+	-	`sha256:4fcd6e551c3643650d21c9d7b4946e635a8c30d696de61d5dce43fc69e064780`  
+		Last Modified: Fri, 16 Feb 2024 23:52:24 GMT  
+		Size: 2.3 MB (2319964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ec7f483d360a634132f6db40f136c90e2b4a866d88a31cc76d8ed83bfdb579cb`  
-		Last Modified: Mon, 12 Feb 2024 21:55:22 GMT  
-		Size: 311.0 B  
+	-	`sha256:e3ba0dc5bf5497614f1f66cf49b0d948fc8efdaa2bcbb4e07fc91e4c2baae07c`  
+		Last Modified: Fri, 16 Feb 2024 23:52:24 GMT  
+		Size: 310.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6350f7ac0301d061a726b6ae516c44660a0c141a8862f529ed24ad9bff034c20`  
-		Last Modified: Mon, 12 Feb 2024 21:55:22 GMT  
+	-	`sha256:2bdc1f7aa12c5de01b848e75f7981a2343b2e09ff2e04db129d9f0dd6ce93464`  
+		Last Modified: Fri, 16 Feb 2024 23:52:24 GMT  
 		Size: 721.6 KB (721578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d636fce049e464f702d63d5b644be038d8d56345a1f02fce4a0f6726f00fc229`  
-		Last Modified: Mon, 12 Feb 2024 21:55:22 GMT  
+	-	`sha256:573849990a2bfec1d00607370dd07b7a52ba26ef5bf2e820104f6a226d722494`  
+		Last Modified: Fri, 16 Feb 2024 23:52:24 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ecedf79dc3a322b0df786323e8343548a499875818178790ad4547feb7a821db`  
-		Last Modified: Mon, 12 Feb 2024 21:55:23 GMT  
-		Size: 19.2 MB (19234648 bytes)  
+	-	`sha256:03696bbed7962189c7aa2135bf75c461b98681d11ad8cb565b5de8eccd5b1334`  
+		Last Modified: Fri, 16 Feb 2024 23:52:25 GMT  
+		Size: 19.2 MB (19234726 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:php8.3-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:86195279c331e37d65278fa280375d35dc4e74f696fd2032710f406a368a9467
+$ docker pull drupal@sha256:7f354e04e7cd940e33019dfcb6aaa2b5cc0cecec79d8336866797064b66e8820
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **845.6 KB (845573 bytes)**  
+-	Total Size: **878.1 KB (878115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d315ec583d9f144a6cf99076f69d04250e8841985fc384095146ee3384ab31a`
+-	Image ID: `sha256:f88d76436ddba465ad407c20626defc26897a46c0c30a5e923834ee806869b00`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dc0ed9df8a7c6c820a022985dce6d066d295bc3b94d6cf9a73f80858992b3879`  
-		Last Modified: Mon, 12 Feb 2024 21:55:22 GMT  
-		Size: 809.8 KB (809788 bytes)  
+	-	`sha256:86714241e3c498597b609133d750a81f4f128ef0c5c856f40e3384f8a42243b9`  
+		Last Modified: Fri, 16 Feb 2024 23:52:23 GMT  
+		Size: 842.3 KB (842330 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5e737e705e2eeee02b7bb9b93cc5b92355cf8623965560615c6f04a8671d59bb`  
-		Last Modified: Mon, 12 Feb 2024 21:55:22 GMT  
+	-	`sha256:948d3a87bd6d13bca84fafae5b75d387addb5379aa82ec9ab8b7f7867c431868`  
+		Last Modified: Fri, 16 Feb 2024 23:52:23 GMT  
 		Size: 35.8 KB (35785 bytes)  
 		MIME: application/vnd.in-toto+json
 
