@@ -1,19 +1,19 @@
-# `ibm-semeru-runtimes:open-11.0.21_9-jre-centos7`
+# `ibm-semeru-runtimes:open-11.0.22_7-jdk-centos7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0de25bd5cd5b2f8e0beced0a434235607959ecf6ece146e2cc1091d2672b98a3`
-- Created: `2024-01-16T19:46:02.540433887Z`
-- Virtual Size: ~ 404.09 Mb  
+- Image ID: `sha256:12eade68999f3881a5a5cfeab93be367488fc6f324cc4ebfbc953673964c87ec`
+- Created: `2024-02-14T20:56:30.357301241Z`
+- Virtual Size: ~ 604.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["/bin/bash"]`
+- Command: `["jshell"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.21+9_openj9-0.41.0`
+  - `JAVA_VERSION=jdk-11.0.22+7_openj9-0.43.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
 - Labels:
@@ -692,8 +692,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url krb5-libs-1.15.1-50.el7
-http://vault.centos.org/centos/7/updates/Source/SPackages/krb5-1.15.1-50.el7.src.rpm
 http://vault.centos.org/centos/7/os/Source/SPackages/krb5-1.15.1-50.el7.src.rpm
+http://vault.centos.org/centos/7/updates/Source/SPackages/krb5-1.15.1-50.el7.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.2.51-15.el7.x86_64`
@@ -1023,8 +1023,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libxml2-2.9.1-6.el7.5
-http://vault.centos.org/centos/7/updates/Source/SPackages/libxml2-2.9.1-6.el7.5.src.rpm
 http://vault.centos.org/centos/7/os/Source/SPackages/libxml2-2.9.1-6.el7.5.src.rpm
+http://vault.centos.org/centos/7/updates/Source/SPackages/libxml2-2.9.1-6.el7.5.src.rpm
 ```
 
 ### `rpm` package: `libxml2-python-2.9.1-6.el7.5.x86_64`
@@ -1035,8 +1035,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libxml2-python-2.9.1-6.el7.5
-http://vault.centos.org/centos/7/updates/Source/SPackages/libxml2-2.9.1-6.el7.5.src.rpm
 http://vault.centos.org/centos/7/os/Source/SPackages/libxml2-2.9.1-6.el7.5.src.rpm
+http://vault.centos.org/centos/7/updates/Source/SPackages/libxml2-2.9.1-6.el7.5.src.rpm
 ```
 
 ### `rpm` package: `lua-5.1.4-15.el7.x86_64`
