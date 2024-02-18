@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:204f22687de2043ad129b6406b9e683fda38cc5161442af85c27d6faa1c58926`
-- Created: `2024-01-27T10:50:45.157971036Z`
+- Image ID: `sha256:526e9fcf54b228f9dac6e648df0bd62b64832e9d5f6630d59b3db26da975017b`
+- Created: `2024-02-17T02:14:43.607727374Z`
 - Virtual Size: ~ 138.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.15`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.15.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.15.tar.xz.asc`
-  - `PHP_SHA256=eca5deac02d77d806838275f8a3024b38b35ac0a5d9853dcc71c6cbe3f1f8765`
+  - `PHP_VERSION=8.2.16`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.16.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.16.tar.xz.asc`
+  - `PHP_SHA256=28cdc995b7d5421711c7044294885fcde4390c9f67504a994b4cf9bc1b5cc593`
   - `MAX_EXECUTION_TIME=600`
   - `MEMORY_LIMIT=512M`
   - `UPLOAD_LIMIT=2048K`
@@ -725,16 +725,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.11.6-r0 description:
+libxml2-2.11.7-r0 description:
 XML parsing library, version 2
 
-libxml2-2.11.6-r0 webpage:
+libxml2-2.11.7-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.11.6-r0 installed size:
+libxml2-2.11.7-r0 installed size:
 1092 KiB
 
-libxml2-2.11.6-r0 license:
+libxml2-2.11.7-r0 license:
 MIT
 
 ```
@@ -980,16 +980,16 @@ GPL-3.0-or-later
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2023d-r0 description:
+tzdata-2024a-r0 description:
 Timezone data
 
-tzdata-2023d-r0 webpage:
+tzdata-2024a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2023d-r0 installed size:
-3076 KiB
+tzdata-2024a-r0 installed size:
+3072 KiB
 
-tzdata-2023d-r0 license:
+tzdata-2024a-r0 license:
 Public-Domain
 
 ```
