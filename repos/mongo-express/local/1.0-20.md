@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d5a36b8db9c27354e8d9837ba1e20923f2a2b4bb453da193b76b14dde344a162`
-- Created: `2024-01-27T10:07:10.005611517Z`
-- Virtual Size: ~ 280.45 Mb  
+- Image ID: `sha256:be777a1fa6d9a2d5862a382793b4ca6f9c1bbde256fbbcf5feb7b099484a82a6`
+- Created: `2024-02-15T23:31:00.09808098Z`
+- Virtual Size: ~ 280.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/sbin/tini","--","/docker-entrypoint.sh"]`
 - Command: `["mongo-express"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=20.11.0`
+  - `NODE_VERSION=20.11.1`
   - `YARN_VERSION=1.22.19`
   - `ME_CONFIG_MONGODB_URL=mongodb://mongo:27017`
   - `ME_CONFIG_MONGODB_ENABLE_ADMIN=true`
