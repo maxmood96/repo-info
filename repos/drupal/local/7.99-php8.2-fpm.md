@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:180874c5360a33f26c0b2763746b70dfd8e1141dd8b402d5ffa0f8dd0dff5c81`
+- Image ID: `sha256:7fab8c3f43544691068568a7059dfec9d9b2cfc1ba7fedd3f20f20c1301f588b`
 - Created: `2024-01-03T18:58:56Z`
-- Virtual Size: ~ 512.26 Mb  
+- Virtual Size: ~ 512.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.15`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.15.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.15.tar.xz.asc`
-  - `PHP_SHA256=eca5deac02d77d806838275f8a3024b38b35ac0a5d9853dcc71c6cbe3f1f8765`
+  - `PHP_VERSION=8.2.16`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.16.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.16.tar.xz.asc`
+  - `PHP_SHA256=28cdc995b7d5421711c7044294885fcde4390c9f67504a994b4cf9bc1b5cc593`
   - `DRUPAL_VERSION=7.99`
   - `DRUPAL_URL=https://ftp.drupal.org/files/projects/drupal-7.99.tar.gz`
   - `DRUPAL_MD5=0fbcb06e354309356e6b4e33d2cd242d`
@@ -2767,11 +2767,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkgconf/1.8.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkgconf/1.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-15=15.5-0+deb12u1`
+### `dpkg` source package: `postgresql-15=15.6-0+deb12u1`
 
 Binary Packages:
 
-- `libpq5:amd64=15.5-0+deb12u1`
+- `libpq5:amd64=15.6-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -2791,17 +2791,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-15=15.5-0+deb12u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.5-0%2bdeb12u1.dsc' postgresql-15_15.5-0+deb12u1.dsc 3919 SHA256:0375551ce7ba7e8f5242e59cb20b944adcc6826f78422f2a436be6e99725e666
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.5.orig.tar.bz2' postgresql-15_15.5.orig.tar.bz2 23091780 SHA256:8f53aa95d78eb8e82536ea46b68187793b42bba3b4f65aa342f540b23c9b10a6
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.5-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.5-0+deb12u1.debian.tar.xz 25052 SHA256:0cfb11525046064ad795faab3b68e4b450f2fda314ae3fa6555a7178b4674dfb
+$ apt-get source -qq --print-uris postgresql-15=15.6-0+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.6-0%2bdeb12u1.dsc' postgresql-15_15.6-0+deb12u1.dsc 3919 SHA256:463b1874382cb45eafde63b39b73af844547ba5fde93ecf7b0ef53f3de15ef65
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.6.orig.tar.bz2' postgresql-15_15.6.orig.tar.bz2 23093967 SHA256:8455146ed9c69c93a57de954aead0302cafad035c2b242175d6aa1e17ebcb2fb
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.6-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.6-0+deb12u1.debian.tar.xz 25272 SHA256:8c82dc4cf12db5c640c527981e83d73c33c1530293cf3314692c82dffbe07ec4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-15/15.5-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-15/15.5-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-15/15.5-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-15/15.6-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-15/15.6-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-15/15.6-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=3.0-2`
 

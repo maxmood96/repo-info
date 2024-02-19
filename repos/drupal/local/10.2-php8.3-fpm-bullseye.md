@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:198a95a3cc5e353f6e9853ce25526d75bf5331edf5c033552e2b9a086e48eb27`
+- Image ID: `sha256:967384f3f5f7281c024f95e9a8321089bde63c5526a34f48543f4deaaa097c6b`
 - Created: `2024-02-08T04:27:17Z`
-- Virtual Size: ~ 546.14 Mb  
+- Virtual Size: ~ 546.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.2`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.2.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.2.tar.xz.asc`
-  - `PHP_SHA256=4ffa3e44afc9c590e28dc0d2d31fc61f0139f8b335f11880a121b9f9b9f0634e`
+  - `PHP_VERSION=8.3.3`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.3.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.3.tar.xz.asc`
+  - `PHP_SHA256=b0a996276fe21fe9ca8f993314c8bc02750f464c7b0343f056fb0894a8dfa9d1`
   - `DRUPAL_VERSION=10.2.3`
 
 ## `dpkg` (`.deb`-based packages)
@@ -2643,11 +2643,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkg-config/0.29.2-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkg-config/0.29.2-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-13=13.13-0+deb11u1`
+### `dpkg` source package: `postgresql-13=13.14-0+deb11u1`
 
 Binary Packages:
 
-- `libpq5:amd64=13.13-0+deb11u1`
+- `libpq5:amd64=13.14-0+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -2670,17 +2670,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-13=13.13-0+deb11u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-13/postgresql-13_13.13-0%2bdeb11u1.dsc' postgresql-13_13.13-0+deb11u1.dsc 3703 SHA256:cc00a8e979f48eedb7350e20067037decead5aec088115c36c5447a106925297
-'http://deb.debian.org/debian/pool/main/p/postgresql-13/postgresql-13_13.13.orig.tar.bz2' postgresql-13_13.13.orig.tar.bz2 21563452 SHA256:8af69c2599047a2ad246567d68ec4131aef116954d8c3e469e9789080b37a474
-'http://deb.debian.org/debian/pool/main/p/postgresql-13/postgresql-13_13.13-0%2bdeb11u1.debian.tar.xz' postgresql-13_13.13-0+deb11u1.debian.tar.xz 34584 SHA256:e9970f831644130f24c62e8e9d7cf34cae2dcde633ea32fa442e2164e1205de8
+$ apt-get source -qq --print-uris postgresql-13=13.14-0+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.14-0%2bdeb11u1.dsc' postgresql-13_13.14-0+deb11u1.dsc 3703 SHA256:50ce2b604ada87ca68f2206d9968aa55dc4e5e4733daeee8734471c4a43bb860
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.14.orig.tar.bz2' postgresql-13_13.14.orig.tar.bz2 21584146 SHA256:b8df078551898960bd500dc5d38a177e9905376df81fe7f2b660a1407fa6a5ed
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.14-0%2bdeb11u1.debian.tar.xz' postgresql-13_13.14-0+deb11u1.debian.tar.xz 34724 SHA256:801200e90899fd6f9468f4c16f9cbc9fa56588e0f2cd751f953fb494f8589472
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-13/13.13-0+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-13/13.13-0+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-13/13.13-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-13/13.14-0+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-13/13.14-0+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-13/13.14-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=2.0.3-1`
 

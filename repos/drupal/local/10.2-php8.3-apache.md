@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:87709feacc488933d059b67e38fde13ae83fe4338a0d0d6a5a1d3f1579cb38cc`
+- Image ID: `sha256:267452d340cfcc86f79886dc74a8887dd69afce908405e22f6355bf954dcfb75`
 - Created: `2024-02-08T04:27:17Z`
-- Virtual Size: ~ 598.34 Mb  
+- Virtual Size: ~ 598.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.2`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.2.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.2.tar.xz.asc`
-  - `PHP_SHA256=4ffa3e44afc9c590e28dc0d2d31fc61f0139f8b335f11880a121b9f9b9f0634e`
+  - `PHP_VERSION=8.3.3`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.3.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.3.tar.xz.asc`
+  - `PHP_SHA256=b0a996276fe21fe9ca8f993314c8bc02750f464c7b0343f056fb0894a8dfa9d1`
   - `DRUPAL_VERSION=10.2.3`
 
 ## `dpkg` (`.deb`-based packages)
@@ -2939,11 +2939,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkgconf/1.8.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkgconf/1.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-15=15.5-0+deb12u1`
+### `dpkg` source package: `postgresql-15=15.6-0+deb12u1`
 
 Binary Packages:
 
-- `libpq5:amd64=15.5-0+deb12u1`
+- `libpq5:amd64=15.6-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -2963,17 +2963,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-15=15.5-0+deb12u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.5-0%2bdeb12u1.dsc' postgresql-15_15.5-0+deb12u1.dsc 3919 SHA256:0375551ce7ba7e8f5242e59cb20b944adcc6826f78422f2a436be6e99725e666
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.5.orig.tar.bz2' postgresql-15_15.5.orig.tar.bz2 23091780 SHA256:8f53aa95d78eb8e82536ea46b68187793b42bba3b4f65aa342f540b23c9b10a6
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.5-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.5-0+deb12u1.debian.tar.xz 25052 SHA256:0cfb11525046064ad795faab3b68e4b450f2fda314ae3fa6555a7178b4674dfb
+$ apt-get source -qq --print-uris postgresql-15=15.6-0+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.6-0%2bdeb12u1.dsc' postgresql-15_15.6-0+deb12u1.dsc 3919 SHA256:463b1874382cb45eafde63b39b73af844547ba5fde93ecf7b0ef53f3de15ef65
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.6.orig.tar.bz2' postgresql-15_15.6.orig.tar.bz2 23093967 SHA256:8455146ed9c69c93a57de954aead0302cafad035c2b242175d6aa1e17ebcb2fb
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.6-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.6-0+deb12u1.debian.tar.xz 25272 SHA256:8c82dc4cf12db5c640c527981e83d73c33c1530293cf3314692c82dffbe07ec4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-15/15.5-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-15/15.5-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-15/15.5-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-15/15.6-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-15/15.6-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-15/15.6-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.2-3`
 
