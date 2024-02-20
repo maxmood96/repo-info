@@ -53,13 +53,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.7.10
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.7.10.dsc' apt_2.7.10.dsc 2935 SHA512:53a1780e567931c8a3d0033a9d9f7aac54b451425f108e1644fc58a27188a0ca189166fa028a84e6e694a48907d94f1b92404253ac78af3c3dee0428d89b7576
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.7.10.tar.xz' apt_2.7.10.tar.xz 2347804 SHA512:ad43c07adace9499f9b15d71593e8a69084cc72949982b77928834c82004929ec442d9032d277f0233c72ac2ee93ecb23bce409713714a0db0111470d12c5c02
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/2.7.10/
+
 
 ### `dpkg` source package: `attr=1:2.5.2-1`
 
@@ -378,13 +378,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.22.2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.2ubuntu2.dsc' dpkg_1.22.2ubuntu2.dsc 3148 SHA512:c69604da1bc181a8494bdcf6f83a677135c308e0123b5ee8ec76c0a0380d32be5d9d5d43eec58c0a3053c74807ee3d1aab7c4658ccb7b6fa86b013281961531a
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.2ubuntu2.tar.xz' dpkg_1.22.2ubuntu2.tar.xz 5629312 SHA512:41be0eea30101268e44acfd395d808652884c53e7b9a027a503b66cd2c55d06027d11e7c428c2ba50048ce97df665471bf5a5cd002e1df4a9a0db9aeb89b8d73
-```
 
 ### `dpkg` source package: `e2fsprogs=1.47.0-2ubuntu1`
 
@@ -720,14 +716,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap-ng=0.8.4-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.4-1.dsc' libcap-ng_0.8.4-1.dsc 1638 SHA512:b3498f32ab46abd932425c64776656a35439f91cbd0e27504cd355812d3776e3c30cdefc22d41b4bab5bce2f2ebb71a73d2548ae9777de99adac161960564236
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.4.orig.tar.gz' libcap-ng_0.8.4.orig.tar.gz 59317 SHA512:3e640ba4bfa2d5b5d0eb463abca3b2c745b10e929571c0ec32eb068bdc41fd95e19f7131893a22ceebb4d1f1083d3d87d9a32f0808442d594ac5940791152acf
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.4-1.debian.tar.xz' libcap-ng_0.8.4-1.debian.tar.xz 6836 SHA512:d18db686a3cd9509f7c78c43d1680a2b46cc21f896273765f016b6a1ba5e7ba0c0a65b9d404ffddb055c864134a4237cf0195cfd06975b9814e0100963cb23e3
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libcap-ng/0.8.4-1/
+
 
 ### `dpkg` source package: `libcap2=1:2.66-4ubuntu1`
 
@@ -1372,13 +1367,13 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 - `configure`
 - `installsh`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.20
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.20.dsc' sensible-utils_0.0.20.dsc 1737 SHA512:0b0267948347d7aace0c6117228ffa005e5c36e61c9289c409c33d78349fed34956db655541774ec161dc4497d95ccc9d609557f6aaf1d335ced3689ef16a744
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.20.tar.xz' sensible-utils_0.0.20.tar.xz 70608 SHA512:439b783003f9b9361baec01f2888f9638bf7d670b90e7262c50fdff2b724f53f83a776bda385003f61b0bbf37c3213208642e2f1289e93a1ba6b1da2107cb02f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sensible-utils/0.0.20/
+
 
 ### `dpkg` source package: `shadow=1:4.13+dfsg1-3ubuntu1`
 
