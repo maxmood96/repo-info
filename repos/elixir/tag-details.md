@@ -4,13 +4,22 @@
 
 -	[`elixir:1.12`](#elixir112)
 -	[`elixir:1.12-alpine`](#elixir112-alpine)
+-	[`elixir:1.12-otp-24`](#elixir112-otp-24)
+-	[`elixir:1.12-otp-24-alpine`](#elixir112-otp-24-alpine)
+-	[`elixir:1.12-otp-24-slim`](#elixir112-otp-24-slim)
 -	[`elixir:1.12-slim`](#elixir112-slim)
 -	[`elixir:1.12.3`](#elixir1123)
 -	[`elixir:1.12.3-alpine`](#elixir1123-alpine)
+-	[`elixir:1.12.3-otp-24`](#elixir1123-otp-24)
+-	[`elixir:1.12.3-otp-24-alpine`](#elixir1123-otp-24-alpine)
+-	[`elixir:1.12.3-otp-24-slim`](#elixir1123-otp-24-slim)
 -	[`elixir:1.12.3-slim`](#elixir1123-slim)
 -	[`elixir:1.13`](#elixir113)
 -	[`elixir:1.13-alpine`](#elixir113-alpine)
 -	[`elixir:1.13-otp-23-slim`](#elixir113-otp-23-slim)
+-	[`elixir:1.13-otp-24`](#elixir113-otp-24)
+-	[`elixir:1.13-otp-24-alpine`](#elixir113-otp-24-alpine)
+-	[`elixir:1.13-otp-24-slim`](#elixir113-otp-24-slim)
 -	[`elixir:1.13-otp-25`](#elixir113-otp-25)
 -	[`elixir:1.13-otp-25-alpine`](#elixir113-otp-25-alpine)
 -	[`elixir:1.13-otp-25-slim`](#elixir113-otp-25-slim)
@@ -18,6 +27,9 @@
 -	[`elixir:1.13.4`](#elixir1134)
 -	[`elixir:1.13.4-alpine`](#elixir1134-alpine)
 -	[`elixir:1.13.4-otp-23-slim`](#elixir1134-otp-23-slim)
+-	[`elixir:1.13.4-otp-24`](#elixir1134-otp-24)
+-	[`elixir:1.13.4-otp-24-alpine`](#elixir1134-otp-24-alpine)
+-	[`elixir:1.13.4-otp-24-slim`](#elixir1134-otp-24-slim)
 -	[`elixir:1.13.4-otp-25`](#elixir1134-otp-25)
 -	[`elixir:1.13.4-otp-25-alpine`](#elixir1134-otp-25-alpine)
 -	[`elixir:1.13.4-otp-25-slim`](#elixir1134-otp-25-slim)
@@ -30,6 +42,9 @@
 -	[`elixir:1.14-otp-25`](#elixir114-otp-25)
 -	[`elixir:1.14-otp-25-alpine`](#elixir114-otp-25-alpine)
 -	[`elixir:1.14-otp-25-slim`](#elixir114-otp-25-slim)
+-	[`elixir:1.14-otp-26`](#elixir114-otp-26)
+-	[`elixir:1.14-otp-26-alpine`](#elixir114-otp-26-alpine)
+-	[`elixir:1.14-otp-26-slim`](#elixir114-otp-26-slim)
 -	[`elixir:1.14-slim`](#elixir114-slim)
 -	[`elixir:1.14.5`](#elixir1145)
 -	[`elixir:1.14.5-alpine`](#elixir1145-alpine)
@@ -39,6 +54,9 @@
 -	[`elixir:1.14.5-otp-25`](#elixir1145-otp-25)
 -	[`elixir:1.14.5-otp-25-alpine`](#elixir1145-otp-25-alpine)
 -	[`elixir:1.14.5-otp-25-slim`](#elixir1145-otp-25-slim)
+-	[`elixir:1.14.5-otp-26`](#elixir1145-otp-26)
+-	[`elixir:1.14.5-otp-26-alpine`](#elixir1145-otp-26-alpine)
+-	[`elixir:1.14.5-otp-26-slim`](#elixir1145-otp-26-slim)
 -	[`elixir:1.14.5-slim`](#elixir1145-slim)
 -	[`elixir:1.15`](#elixir115)
 -	[`elixir:1.15-alpine`](#elixir115-alpine)
@@ -48,6 +66,9 @@
 -	[`elixir:1.15-otp-25`](#elixir115-otp-25)
 -	[`elixir:1.15-otp-25-alpine`](#elixir115-otp-25-alpine)
 -	[`elixir:1.15-otp-25-slim`](#elixir115-otp-25-slim)
+-	[`elixir:1.15-otp-26`](#elixir115-otp-26)
+-	[`elixir:1.15-otp-26-alpine`](#elixir115-otp-26-alpine)
+-	[`elixir:1.15-otp-26-slim`](#elixir115-otp-26-slim)
 -	[`elixir:1.15-slim`](#elixir115-slim)
 -	[`elixir:1.15.7`](#elixir1157)
 -	[`elixir:1.15.7-alpine`](#elixir1157-alpine)
@@ -57,6 +78,9 @@
 -	[`elixir:1.15.7-otp-25`](#elixir1157-otp-25)
 -	[`elixir:1.15.7-otp-25-alpine`](#elixir1157-otp-25-alpine)
 -	[`elixir:1.15.7-otp-25-slim`](#elixir1157-otp-25-slim)
+-	[`elixir:1.15.7-otp-26`](#elixir1157-otp-26)
+-	[`elixir:1.15.7-otp-26-alpine`](#elixir1157-otp-26-alpine)
+-	[`elixir:1.15.7-otp-26-slim`](#elixir1157-otp-26-slim)
 -	[`elixir:1.15.7-slim`](#elixir1157-slim)
 -	[`elixir:1.16`](#elixir116)
 -	[`elixir:1.16-alpine`](#elixir116-alpine)
@@ -66,6 +90,9 @@
 -	[`elixir:1.16-otp-25`](#elixir116-otp-25)
 -	[`elixir:1.16-otp-25-alpine`](#elixir116-otp-25-alpine)
 -	[`elixir:1.16-otp-25-slim`](#elixir116-otp-25-slim)
+-	[`elixir:1.16-otp-26`](#elixir116-otp-26)
+-	[`elixir:1.16-otp-26-alpine`](#elixir116-otp-26-alpine)
+-	[`elixir:1.16-otp-26-slim`](#elixir116-otp-26-slim)
 -	[`elixir:1.16-slim`](#elixir116-slim)
 -	[`elixir:1.16.1`](#elixir1161)
 -	[`elixir:1.16.1-alpine`](#elixir1161-alpine)
@@ -75,6 +102,9 @@
 -	[`elixir:1.16.1-otp-25`](#elixir1161-otp-25)
 -	[`elixir:1.16.1-otp-25-alpine`](#elixir1161-otp-25-alpine)
 -	[`elixir:1.16.1-otp-25-slim`](#elixir1161-otp-25-slim)
+-	[`elixir:1.16.1-otp-26`](#elixir1161-otp-26)
+-	[`elixir:1.16.1-otp-26-alpine`](#elixir1161-otp-26-alpine)
+-	[`elixir:1.16.1-otp-26-slim`](#elixir1161-otp-26-slim)
 -	[`elixir:1.16.1-slim`](#elixir1161-slim)
 -	[`elixir:alpine`](#elixiralpine)
 -	[`elixir:latest`](#elixirlatest)
@@ -84,6 +114,9 @@
 -	[`elixir:otp-25`](#elixirotp-25)
 -	[`elixir:otp-25-alpine`](#elixirotp-25-alpine)
 -	[`elixir:otp-25-slim`](#elixirotp-25-slim)
+-	[`elixir:otp-26`](#elixirotp-26)
+-	[`elixir:otp-26-alpine`](#elixirotp-26-alpine)
+-	[`elixir:otp-26-slim`](#elixirotp-26-slim)
 -	[`elixir:slim`](#elixirslim)
 
 ## `elixir:1.12`
@@ -1171,6 +1204,33 @@ $ docker pull elixir@sha256:3a5312199a66bc8967d430a64fd396113c9a87f707b3919b1102
 		Last Modified: Sun, 28 Jan 2024 07:18:32 GMT  
 		Size: 8.9 KB (8903 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `elixir:1.12-otp-24`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.12-otp-24-alpine`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.12-otp-24-slim`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:1.12-slim`
 
@@ -2704,6 +2764,33 @@ $ docker pull elixir@sha256:3a5312199a66bc8967d430a64fd396113c9a87f707b3919b1102
 		Last Modified: Sun, 28 Jan 2024 07:18:32 GMT  
 		Size: 8.9 KB (8903 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `elixir:1.12.3-otp-24`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.12.3-otp-24-alpine`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.12.3-otp-24-slim`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:1.12.3-slim`
 
@@ -4538,6 +4625,33 @@ $ docker pull elixir@sha256:f9e337a3c240e82f0a0c023d49835ba99b140c5327d892bfe260
 		Last Modified: Tue, 13 Feb 2024 05:56:56 GMT  
 		Size: 9.5 KB (9518 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `elixir:1.13-otp-24`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.13-otp-24-alpine`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.13-otp-24-slim`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:1.13-otp-25`
 
@@ -7905,6 +8019,33 @@ $ docker pull elixir@sha256:f9e337a3c240e82f0a0c023d49835ba99b140c5327d892bfe260
 		Last Modified: Tue, 13 Feb 2024 05:56:56 GMT  
 		Size: 9.5 KB (9518 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `elixir:1.13.4-otp-24`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.13.4-otp-24-alpine`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.13.4-otp-24-slim`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:1.13.4-otp-25`
 
@@ -14038,6 +14179,33 @@ $ docker pull elixir@sha256:86605c61a61c8e00ec9d1ebda30ece4869070e9b66a6486d1eb5
 		Size: 9.2 KB (9204 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `elixir:1.14-otp-26`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.14-otp-26-alpine`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.14-otp-26-slim`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `elixir:1.14-slim`
 
 ```console
@@ -18636,6 +18804,33 @@ $ docker pull elixir@sha256:86605c61a61c8e00ec9d1ebda30ece4869070e9b66a6486d1eb5
 		Last Modified: Wed, 14 Feb 2024 10:51:20 GMT  
 		Size: 9.2 KB (9204 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `elixir:1.14.5-otp-26`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.14.5-otp-26-alpine`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.14.5-otp-26-slim`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:1.14.5-slim`
 
@@ -23236,6 +23431,33 @@ $ docker pull elixir@sha256:2295c6ece4ea665169d5fd4518cbcb98508fc7b827805e59e6fa
 		Size: 9.2 KB (9204 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `elixir:1.15-otp-26`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.15-otp-26-alpine`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.15-otp-26-slim`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `elixir:1.15-slim`
 
 ```console
@@ -27834,6 +28056,33 @@ $ docker pull elixir@sha256:2295c6ece4ea665169d5fd4518cbcb98508fc7b827805e59e6fa
 		Last Modified: Wed, 14 Feb 2024 09:54:15 GMT  
 		Size: 9.2 KB (9204 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `elixir:1.15.7-otp-26`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.15.7-otp-26-alpine`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.15.7-otp-26-slim`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:1.15.7-slim`
 
@@ -32434,6 +32683,33 @@ $ docker pull elixir@sha256:5d439f9ec6d9b4bc9e01f606ff049a24505031bfcee09c03e508
 		Size: 9.8 KB (9843 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `elixir:1.16-otp-26`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.16-otp-26-alpine`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.16-otp-26-slim`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `elixir:1.16-slim`
 
 ```console
@@ -37033,6 +37309,33 @@ $ docker pull elixir@sha256:5d439f9ec6d9b4bc9e01f606ff049a24505031bfcee09c03e508
 		Size: 9.8 KB (9843 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `elixir:1.16.1-otp-26`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.16.1-otp-26-alpine`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:1.16.1-otp-26-slim`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `elixir:1.16.1-slim`
 
 ```console
@@ -41631,6 +41934,33 @@ $ docker pull elixir@sha256:5d439f9ec6d9b4bc9e01f606ff049a24505031bfcee09c03e508
 		Last Modified: Wed, 14 Feb 2024 09:10:48 GMT  
 		Size: 9.8 KB (9843 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `elixir:otp-26`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:otp-26-alpine`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `elixir:otp-26-slim`
+
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:slim`
 
