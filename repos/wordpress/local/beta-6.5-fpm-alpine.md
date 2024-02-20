@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:611da8480ae47283b9d6395bc6d39f04cb78960b8f5d02f4b9939d4e52cec1bf`
+- Image ID: `sha256:e9a5ca7377f3089166dba2fd752d6a978e0352bd212f62dbc7f31ade11199557`
 - Created: `2024-02-13T20:03:10Z`
-- Virtual Size: ~ 253.37 Mb  
+- Virtual Size: ~ 253.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.15`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.15.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.15.tar.xz.asc`
-  - `PHP_SHA256=eca5deac02d77d806838275f8a3024b38b35ac0a5d9853dcc71c6cbe3f1f8765`
+  - `PHP_VERSION=8.2.16`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.16.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.16.tar.xz.asc`
+  - `PHP_SHA256=28cdc995b7d5421711c7044294885fcde4390c9f67504a994b4cf9bc1b5cc593`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1115,16 +1115,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.11.6-r0 description:
+libxml2-2.11.7-r0 description:
 XML parsing library, version 2
 
-libxml2-2.11.6-r0 webpage:
+libxml2-2.11.7-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.11.6-r0 installed size:
+libxml2-2.11.7-r0 installed size:
 1092 KiB
 
-libxml2-2.11.6-r0 license:
+libxml2-2.11.7-r0 license:
 MIT
 
 ```
