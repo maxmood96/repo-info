@@ -544,13 +544,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.22.2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.2ubuntu2.dsc' dpkg_1.22.2ubuntu2.dsc 3148 SHA512:c69604da1bc181a8494bdcf6f83a677135c308e0123b5ee8ec76c0a0380d32be5d9d5d43eec58c0a3053c74807ee3d1aab7c4658ccb7b6fa86b013281961531a
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.2ubuntu2.tar.xz' dpkg_1.22.2ubuntu2.tar.xz 5629312 SHA512:41be0eea30101268e44acfd395d808652884c53e7b9a027a503b66cd2c55d06027d11e7c428c2ba50048ce97df665471bf5a5cd002e1df4a9a0db9aeb89b8d73
-```
 
 ### `dpkg` source package: `e2fsprogs=1.47.0-2ubuntu1`
 
@@ -1893,15 +1889,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu1.dsc' openssh_9.6p1-3ubuntu1.dsc 3345 SHA512:1e6c82fabd3861b2b238b568a3ecada73816c89eb74ae2b8af8bbbccea29fa554707d6b86917d55c7b2ebea7b27918eb4ffe7515e1835ad07f8cb88aeb786eb0
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu1.debian.tar.xz' openssh_9.6p1-3ubuntu1.debian.tar.xz 194420 SHA512:50758dc8de4dede4412fb4e97829e5196de4f46ff8c11ff3bc9e6e6a2efdce525d72e79b743291858830c92630d89ee5a3b72c2eb7783c4b1046977ad9ec457b
-```
 
 ### `dpkg` source package: `openssl=3.0.10-1ubuntu4`
 
@@ -2274,13 +2264,13 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 - `configure`
 - `installsh`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.20
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.20.dsc' sensible-utils_0.0.20.dsc 1737 SHA512:0b0267948347d7aace0c6117228ffa005e5c36e61c9289c409c33d78349fed34956db655541774ec161dc4497d95ccc9d609557f6aaf1d335ced3689ef16a744
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.20.tar.xz' sensible-utils_0.0.20.tar.xz 70608 SHA512:439b783003f9b9361baec01f2888f9638bf7d670b90e7262c50fdff2b724f53f83a776bda385003f61b0bbf37c3213208642e2f1289e93a1ba6b1da2107cb02f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sensible-utils/0.0.20/
+
 
 ### `dpkg` source package: `serf=1.3.10-1`
 
@@ -2466,15 +2456,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 - `ICU`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2023d-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d-1ubuntu2.dsc' tzdata_2023d-1ubuntu2.dsc 2675 SHA512:bea023850103ec85567d3bffecf773f4999b71804170312e329dfc06a2b2ce0c1657105456560a4a0028bd8e805029335d1b8edd1e62a6ca4adfc9f0ec0eb5d5
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d.orig.tar.gz' tzdata_2023d.orig.tar.gz 449767 SHA512:81832b2d738c28cecbcb3906cc07568c5ae574adc9de35b25d4bf613581c92d471d67213b4261a56f0ec02efcf211b4e298b7e1dc367c972e726b0a2e9498df4
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d.orig.tar.gz.asc' tzdata_2023d.orig.tar.gz.asc 833 SHA512:3266f0ad4e05365fb09d48b9baeb884447cc4c16ecd4f0d2bf5f25b0aabe03b48fca11c19379a45545dc4f41acc68633c624d99d2700f439d9233ecab6d1f184
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d-1ubuntu2.debian.tar.xz' tzdata_2023d-1ubuntu2.debian.tar.xz 183532 SHA512:ae833beafff3ee7eb02d01f5a0052bfc413e53a2ae9b69022d797011efc3b914b91b1c1d8604bdc1474bcaf364f9650a6cfd4ee7a89444b1c2e33a3dc988296f
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
 

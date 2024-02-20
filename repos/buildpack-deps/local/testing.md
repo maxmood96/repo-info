@@ -133,19 +133,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.7.10
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.10.dsc' apt_2.7.10.dsc 2935 SHA256:5ffa0845e3b266da07e97aaa4ac913bf79a0614ab877ec73eb2d34baced3ced8
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.10.tar.xz' apt_2.7.10.tar.xz 2347804 SHA256:55466c484aa64097ac20f538b4ae042e7f62e6116205418d11ea4fc9221d807e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.7.10/
 
-- https://sources.debian.net/src/apt/2.7.10/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.7.10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.7.10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-1`
 
@@ -837,19 +831,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.85
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.85.dsc' debconf_1.5.85.dsc 2035 SHA256:ed488a7990a438b83b635bd07bfe64015a40c55cf0cd009bd2e89546950625d0
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.85.tar.xz' debconf_1.5.85.tar.xz 573844 SHA256:75e2f17a6a2d0e3d00a85908a4cea58e45cd3f7ede626b7d38e14c5806a12a12
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.85/
 
-- https://sources.debian.net/src/debconf/1.5.85/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.85/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.85/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2023.4`
 
@@ -4009,20 +3997,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.6.13-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.6.13-1.dsc' linux_6.6.13-1.dsc 231670 SHA256:390171fd4c1332be06cc440734e26091f63ee2651787ad4a8bd47c1b6474c68c
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.6.13.orig.tar.xz' linux_6.6.13.orig.tar.xz 142662888 SHA256:a057cf7ae0d9714a7ab003b4b1a8ba996080c2469856998b4eb68ec9cdaa74e6
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.6.13-1.debian.tar.xz' linux_6.6.13-1.debian.tar.xz 1567188 SHA256:4fbb86f9ade7c9b4dc25420d46fff3b81b4337e39c568931d51d2bf9302739ff
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/6.6.13-1/
 
-- https://sources.debian.net/src/linux/6.6.13-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.6.13-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.6.13-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
