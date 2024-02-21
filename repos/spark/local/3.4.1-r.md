@@ -225,14 +225,9 @@ Licenses: (parsed from: `/usr/share/doc/bind9-host/copyright`, `/usr/share/doc/b
 - `ISC`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bind9=1:9.16.1-0ubuntu2.16
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.16.1-0ubuntu2.16.dsc' bind9_9.16.1-0ubuntu2.16.dsc 2740 SHA512:f2f58145340a90288581e3a41e317d67c101f576b661e8685c0323a791324b9968df2ac4f9edc2375d63568e109f0f941f215c9a4ba11af1ef0b6abbdfc54fda
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.16.1.orig.tar.xz' bind9_9.16.1.orig.tar.xz 4541768 SHA512:9a1e8987f312b09a16c2ee0fd1d1eb8e4951b8dbcf3c0d51a1a1fb179a261028239ab2bebc3e559592cc766de57a26ba37b27621a0c5e1711d36c2416f0a0c26
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.16.1-0ubuntu2.16.debian.tar.xz' bind9_9.16.1-0ubuntu2.16.debian.tar.xz 87596 SHA512:7de4d2c0fb0bba15e619270fcbc8bc8d6ddeb013f64c160e4406bd79a0ea8cccb0e7e050aa535a3450e1f8c0548170e4d944c05c1e4cde118d59be47b49190cb
-```
 
 ### `dpkg` source package: `binutils=2.34-6ubuntu1.8`
 
@@ -4937,14 +4932,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.1.0+git191117-2ubuntu0.20.04.11
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0%2bgit191117-2ubuntu0.20.04.11.dsc' tiff_4.1.0+git191117-2ubuntu0.20.04.11.dsc 2426 SHA512:421a5d14e907221f01f661ac8fc5a79c7bea087bfe69b13967870444fb5d0acd250cead176b9175dd66cccaa2e63af2bbf2b44605cbf2253921c553fc0b33e0b
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0%2bgit191117.orig.tar.xz' tiff_4.1.0+git191117.orig.tar.xz 1533524 SHA512:25b4bc4522fc2e7f3ca6857b87acd4481d8643566b1120c755020afc8b48949238ee2078bc43dd3ba7407eaa4e36b1b712d7056f101ddaf60f94dab8607870b8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0%2bgit191117-2ubuntu0.20.04.11.debian.tar.xz' tiff_4.1.0+git191117-2ubuntu0.20.04.11.debian.tar.xz 49092 SHA512:191a7714b07daf4f283df425df239cc0d3c0d3d9dc68c05ea9f2b85573cb6d2d3d670371b2d134ce2824b6902afe3e059616e43becd13898b1fa888ebefbdb7c
-```
 
 ### `dpkg` source package: `tini=0.18.0-1`
 
