@@ -58,19 +58,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.7.10
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.10.dsc' apt_2.7.10.dsc 2935 SHA256:5ffa0845e3b266da07e97aaa4ac913bf79a0614ab877ec73eb2d34baced3ced8
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.10.tar.xz' apt_2.7.10.tar.xz 2347804 SHA256:55466c484aa64097ac20f538b4ae042e7f62e6116205418d11ea4fc9221d807e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.7.10/
 
-- https://sources.debian.net/src/apt/2.7.10/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.7.10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.7.10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-1`
 
@@ -225,10 +219,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris boot=1.3-28.1-1
-'http://http.debian.net/debian/pool/main/b/boot/boot_1.3-28.1-1.dsc' boot_1.3-28.1-1.dsc 1816 SHA256:2a77d1f260086849c36782a4016179611543bf74f3b6ffdec10f179c9ce834d1
-'http://http.debian.net/debian/pool/main/b/boot/boot_1.3-28.1.orig.tar.gz' boot_1.3-28.1.orig.tar.gz 236854 SHA256:d4cde76fcc8ccc7ffa329de69147b66a6a93a10188e89342fd18207b1d02ff53
-'http://http.debian.net/debian/pool/main/b/boot/boot_1.3-28.1-1.debian.tar.xz' boot_1.3-28.1-1.debian.tar.xz 5344 SHA256:b8aa9a51db4cd1d8a7e77a17772e2619cc952fbea54aeec37791d1bbc23b6fed
+'http://deb.debian.org/debian/pool/main/b/boot/boot_1.3-28.1-1.dsc' boot_1.3-28.1-1.dsc 1816 SHA256:2a77d1f260086849c36782a4016179611543bf74f3b6ffdec10f179c9ce834d1
+'http://deb.debian.org/debian/pool/main/b/boot/boot_1.3-28.1.orig.tar.gz' boot_1.3-28.1.orig.tar.gz 236854 SHA256:d4cde76fcc8ccc7ffa329de69147b66a6a93a10188e89342fd18207b1d02ff53
+'http://deb.debian.org/debian/pool/main/b/boot/boot_1.3-28.1-1.debian.tar.xz' boot_1.3-28.1-1.debian.tar.xz 5344 SHA256:b8aa9a51db4cd1d8a7e77a17772e2619cc952fbea54aeec37791d1bbc23b6fed
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/boot/1.3-28.1-1/ (for browsing the source)
+- https://sources.debian.net/src/boot/1.3-28.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/boot/1.3-28.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `brotli=1.1.0-2`
 
@@ -547,19 +547,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.85
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.85.dsc' debconf_1.5.85.dsc 2035 SHA256:ed488a7990a438b83b635bd07bfe64015a40c55cf0cd009bd2e89546950625d0
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.85.tar.xz' debconf_1.5.85.tar.xz 573844 SHA256:75e2f17a6a2d0e3d00a85908a4cea58e45cd3f7ede626b7d38e14c5806a12a12
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.85/
 
-- https://sources.debian.net/src/debconf/1.5.85/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.85/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.85/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2023.4`
 
@@ -712,14 +706,13 @@ Licenses: (parsed from: `/usr/share/doc/ed/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ed=1.20-1
-'http://http.debian.net/debian/pool/main/e/ed/ed_1.20-1.dsc' ed_1.20-1.dsc 1818 SHA256:f06797efc3bfba3aa4823601f82847a905a524c87df850c4139a25e20edf6374
-'http://http.debian.net/debian/pool/main/e/ed/ed_1.20.orig.tar.gz' ed_1.20.orig.tar.gz 93358 SHA256:ef3ba7408f1c6aedde6e8c2f54929d8546b8add36aa53a808c6195b89112470f
-'http://http.debian.net/debian/pool/main/e/ed/ed_1.20-1.debian.tar.xz' ed_1.20-1.debian.tar.xz 8572 SHA256:184fe5d617cb51cd740015740b83c44d6adc5797f288648de37ffc0935bafc64
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/ed/1.20-1/
+
 
 ### `dpkg` source package: `expat=2.5.0-2`
 
@@ -805,10 +798,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris fontconfig=2.14.2-6
-'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.14.2-6.dsc' fontconfig_2.14.2-6.dsc 2323 SHA256:45f357363d06b8ea6efa02e081c8713dfcf05a5a7df97262fd31d4b35d1eb002
-'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.14.2.orig.tar.xz' fontconfig_2.14.2.orig.tar.xz 1440844 SHA256:dba695b57bce15023d2ceedef82062c2b925e51f5d4cc4aef736cf13f60a468b
-'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.14.2-6.debian.tar.xz' fontconfig_2.14.2-6.debian.tar.xz 57916 SHA256:09287ffc3dcee05a78e70d078e1f4c4a18766821177ce7a9764bc318a6bf4fe3
+'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.14.2-6.dsc' fontconfig_2.14.2-6.dsc 2323 SHA256:45f357363d06b8ea6efa02e081c8713dfcf05a5a7df97262fd31d4b35d1eb002
+'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.14.2.orig.tar.xz' fontconfig_2.14.2.orig.tar.xz 1440844 SHA256:dba695b57bce15023d2ceedef82062c2b925e51f5d4cc4aef736cf13f60a468b
+'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.14.2-6.debian.tar.xz' fontconfig_2.14.2-6.debian.tar.xz 57916 SHA256:09287ffc3dcee05a78e70d078e1f4c4a18766821177ce7a9764bc318a6bf4fe3
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/fontconfig/2.14.2-6/ (for browsing the source)
+- https://sources.debian.net/src/fontconfig/2.14.2-6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/fontconfig/2.14.2-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `foreign=0.8.86-1`
 
@@ -1066,20 +1065,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.37-15~deb13u1
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.37-15%7edeb13u1.dsc' glibc_2.37-15~deb13u1.dsc 9075 SHA256:a7dc14d3e6161381ab5da643d7adbf21083d2572bdb37a9d9a99eeb01252b694
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.37.orig.tar.xz' glibc_2.37.orig.tar.xz 19503016 SHA256:d05f010158c16cef110fa1ab560c31477249ee2105360101858a5146aa6fe7d0
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.37-15%7edeb13u1.debian.tar.xz' glibc_2.37-15~deb13u1.debian.tar.xz 411440 SHA256:a16dfdcea228710d62f1569a426559138905496b533838a323b1e226202560ad
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.37-15~deb13u1/
 
-- https://sources.debian.net/src/glibc/2.37-15~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.37-15~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.37-15~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2`
 
@@ -2189,10 +2181,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libwebp=1.3.2-0.3
-'http://http.debian.net/debian/pool/main/libw/libwebp/libwebp_1.3.2-0.3.dsc' libwebp_1.3.2-0.3.dsc 2461 SHA256:5fde1afa1af8f1608b26a0040775573b896f97c843fa6f050bd0f4523ac4b6a5
-'http://http.debian.net/debian/pool/main/libw/libwebp/libwebp_1.3.2.orig.tar.gz' libwebp_1.3.2.orig.tar.gz 4162949 SHA256:2a499607df669e40258e53d0ade8035ba4ec0175244869d1025d460562aa09b4
-'http://http.debian.net/debian/pool/main/libw/libwebp/libwebp_1.3.2-0.3.debian.tar.xz' libwebp_1.3.2-0.3.debian.tar.xz 15524 SHA256:cacf877660813a005658e18975faa4ffe30b01286a17cf767ffd666e270ce5d5
+'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_1.3.2-0.3.dsc' libwebp_1.3.2-0.3.dsc 2461 SHA256:5fde1afa1af8f1608b26a0040775573b896f97c843fa6f050bd0f4523ac4b6a5
+'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_1.3.2.orig.tar.gz' libwebp_1.3.2.orig.tar.gz 4162949 SHA256:2a499607df669e40258e53d0ade8035ba4ec0175244869d1025d460562aa09b4
+'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_1.3.2-0.3.debian.tar.xz' libwebp_1.3.2-0.3.debian.tar.xz 15524 SHA256:cacf877660813a005658e18975faa4ffe30b01286a17cf767ffd666e270ce5d5
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libwebp/1.3.2-0.3/ (for browsing the source)
+- https://sources.debian.net/src/libwebp/1.3.2-0.3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libwebp/1.3.2-0.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libx11=2:1.8.7-1`
 
@@ -2697,20 +2695,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenblas0-pthread/copyright`)
 - `BSD-3-clause`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openblas=0.3.25+ds-2
-'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.25%2bds-2.dsc' openblas_0.3.25+ds-2.dsc 4553 SHA256:ee35aa6663bae74f898e57763bb3b60b71837984896b0c81c69d415a7a591fb3
-'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.25%2bds.orig.tar.xz' openblas_0.3.25+ds.orig.tar.xz 1959820 SHA256:2d1b8f05fb9b080d61c32896a98b3f64db6b3389a975994cdef3b595249cd6fe
-'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.25%2bds-2.debian.tar.xz' openblas_0.3.25+ds-2.debian.tar.xz 24456 SHA256:2b5d5ae1805d3d4aa23016fc9e35b24651c4dde65c885110c16e4460537ecada
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openblas/0.3.25+ds-2/
 
-- https://sources.debian.net/src/openblas/0.3.25+ds-2/ (for browsing the source)
-- https://sources.debian.net/src/openblas/0.3.25+ds-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openblas/0.3.25+ds-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.5.13+dfsg-5`
 
@@ -3328,10 +3319,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-3
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-3.dsc' shadow_4.13+dfsg1-3.dsc 2407 SHA256:13f79d61847c6ea525dcde26bb71b99d24b4d15cbbebf5070537c9a8caa50a52
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1.orig.tar.xz' shadow_4.13+dfsg1.orig.tar.xz 1811752 SHA256:a8bb3a2aceff1cbe39d0f50687dcc1d7e7be0516a9d954d8e2eedb93f5906207
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-3.debian.tar.xz' shadow_4.13+dfsg1-3.debian.tar.xz 82360 SHA256:4fac3636727d73b660d18d084532e2bcc7d6bf5632b5e3c2897aae9cad4a9d8e
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-3.dsc' shadow_4.13+dfsg1-3.dsc 2407 SHA256:13f79d61847c6ea525dcde26bb71b99d24b4d15cbbebf5070537c9a8caa50a52
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1.orig.tar.xz' shadow_4.13+dfsg1.orig.tar.xz 1811752 SHA256:a8bb3a2aceff1cbe39d0f50687dcc1d7e7be0516a9d954d8e2eedb93f5906207
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-3.debian.tar.xz' shadow_4.13+dfsg1-3.debian.tar.xz 82360 SHA256:4fac3636727d73b660d18d084532e2bcc7d6bf5632b5e3c2897aae9cad4a9d8e
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/shadow/1:4.13+dfsg1-3/ (for browsing the source)
+- https://sources.debian.net/src/shadow/1:4.13+dfsg1-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `survival=3.5-7-1`
 
@@ -3343,14 +3340,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-survival/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris survival=3.5-7-1
-'http://http.debian.net/debian/pool/main/s/survival/survival_3.5-7-1.dsc' survival_3.5-7-1.dsc 1861 SHA256:f23a969e34040d76d9c64741b5bc3f44f8349776a11c358626e7d2815a7bb823
-'http://http.debian.net/debian/pool/main/s/survival/survival_3.5-7.orig.tar.gz' survival_3.5-7.orig.tar.gz 6724094 SHA256:d50e2dd32add39f0d148c17ec301eeff1ba9b74d9f9674324a9acd5ef234272e
-'http://http.debian.net/debian/pool/main/s/survival/survival_3.5-7-1.debian.tar.xz' survival_3.5-7-1.debian.tar.xz 6316 SHA256:35ea2065b1c169c0f4c18b628af15940131b9379c1f9d23b8bc3d4106fca5efe
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/survival/3.5-7-1/
+
 
 ### `dpkg` source package: `systemd=255.3-2`
 
