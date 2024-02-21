@@ -5151,20 +5151,13 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unbound=1.9.0-2+deb10u3
-'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.9.0-2%2bdeb10u3.dsc' unbound_1.9.0-2+deb10u3.dsc 3209 SHA256:9d7e5f6590cdb52cda3d1f11c2a243ee4033370651dfe1dbca5716e217ca4bf6
-'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.9.0.orig.tar.gz' unbound_1.9.0.orig.tar.gz 5662176 SHA256:415af94b8392bc6b2c52e44ac8f17935cc6ddf2cc81edfb47c5be4ad205ab917
-'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.9.0-2%2bdeb10u3.debian.tar.xz' unbound_1.9.0-2+deb10u3.debian.tar.xz 35720 SHA256:b8d43f47f38cc6cd891f99b170d0a372df695400a7eaa5b8702477c8f0682f0f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/unbound/1.9.0-2+deb10u3/
 
-- https://sources.debian.net/src/unbound/1.9.0-2+deb10u3/ (for browsing the source)
-- https://sources.debian.net/src/unbound/1.9.0-2+deb10u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unbound/1.9.0-2+deb10u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-23+deb10u3`
 
