@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6d5ef104b82efe057cfb526ff1df87276802721f19a76ca1490e90e18622f1d8`
-- Created: `2024-02-02T16:55:21.371618174Z`
-- Virtual Size: ~ 400.10 Mb  
+- Image ID: `sha256:b9b18cff850c3d8d563406a7d2954b95df650480a61e5f3cb826438bbd5690d8`
+- Created: `2024-02-21T00:53:22.52236888Z`
+- Virtual Size: ~ 400.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,8 +16,8 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk8u402-b06`
-  - `JRUBY_VERSION=9.4.5.0`
-  - `JRUBY_SHA256=a40f78c4641ccc86752e16b2da247fd6bc9fbcf9a4864cf1be36f7ff7b35684c`
+  - `JRUBY_VERSION=9.4.6.0`
+  - `JRUBY_SHA256=2da14de4152b71fdbfa35ba4687a46ef12cd465740337b549cc1fe6c7c139813`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
