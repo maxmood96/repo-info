@@ -229,14 +229,9 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=9.4-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-2ubuntu2.dsc' coreutils_9.4-2ubuntu2.dsc 2061 SHA512:f2f76a54259e5789aa715442aaf3fe7feab5675648cd7c79fa2e14fb7534722917e7c774fab47ee62b584a472325632171de7c0fe2242025eba19367e4c112fa
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4.orig.tar.xz' coreutils_9.4.orig.tar.xz 5979200 SHA512:7c55ee23b685a0462bbbd118b04d25278c902604a0dcf3bf4f8bf81faa0500dee5a7813cba6f586d676c98e520cafd420f16479619305e94ea6798d8437561f5
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-2ubuntu2.debian.tar.xz' coreutils_9.4-2ubuntu2.debian.tar.xz 39368 SHA512:a52b2c1b6aef60a5fe70d741df1aab61fea459979f5aebaf8fd4de951963c34016a0ef0de470ecc7aa393bd1a9274f34d0799da049193a2007afab78c9e75a81
-```
 
 ### `dpkg` source package: `dash=0.5.12-6ubuntu1`
 
@@ -300,13 +295,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.82
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debconf/debconf_1.5.82.dsc' debconf_1.5.82.dsc 2035 SHA512:bca5b8290d54709a706faaef77f16fb98fc074e7aacc8a40d650f4a76c1d843b8a2534cadbfe9f6170e6d4892b82d76f2fb16e474fb82bcc5e616024fae68be6
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debconf/debconf_1.5.82.tar.xz' debconf_1.5.82.tar.xz 571540 SHA512:5a9b26d90cf02e6f5b267e6e6416e91ac31115b124b05b4edd2dd785eea92a6d9c060f591dad6645784ff956a07555cb1bf11a35f4712d5bc308c4b6726da88a
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/debconf/1.5.82/
+
 
 ### `dpkg` source package: `debianutils=5.16`
 
@@ -521,15 +516,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.38-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38-3ubuntu1.dsc' glibc_2.38-3ubuntu1.dsc 9310 SHA512:de01b8db04324f5d375a9ebd6247b3c0b126eac983edc6ff9e03b294bdeeb297630e4b7894e6b04ff81844d17d0342eeb22e662c5a97373f00c2508ee9ab5dc3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38.orig.tar.xz' glibc_2.38.orig.tar.xz 18913712 SHA512:a6dd5e42dcd63d58e2820c783522c8c895890b6e8c8e6c83b025553de0cc77cdf227e7044e431ead98c89c68a9ce4dd63509b47e647775fb2075f011849c1900
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38.orig.tar.xz.asc' glibc_2.38.orig.tar.xz.asc 833 SHA512:32248467450f4530f8e84c03ea78d8293946e1b1def853eff9fb2cb51106e66cc3b024a254f3c2fabd2634f8192bd14e7df00c317f4230860d702c4d9ec7a01e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38-3ubuntu1.debian.tar.xz' glibc_2.38-3ubuntu1.debian.tar.xz 456828 SHA512:cad380328036402b74bf614a8970daec9be7a90bca5fa21552db56cecdd25122f5720eda8f2dc13dae4c583477458d485beceacbced9df4e46d7de44e36b7100
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu4`
 
@@ -654,15 +643,9 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.12-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12-1ubuntu1.dsc' gzip_1.12-1ubuntu1.dsc 2303 SHA512:8b6f5ada04f3dbcb891f9af31a28cf1a161392f98f78724088752981a3453474b32ad2f7312c683bd65fba6b6fe14b26bbacbe462a3204acfe614f7c0f217ff5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12.orig.tar.xz' gzip_1.12.orig.tar.xz 825548 SHA512:116326fe991828227de150336a0c016f4fe932dfbb728a16b4a84965256d9929574a4f5cfaf3cf6bb4154972ef0d110f26ab472c93e62ec9a5fd7a5d65abea24
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12.orig.tar.xz.asc' gzip_1.12.orig.tar.xz.asc 833 SHA512:1f4702797f7c5f1873c2f9c2f6210ba23824455d17ee82f50f0bf24240ed5bdf0090cf85338ccf76ba82422f8b4ad3a329d8bbf1350cb094d7bd61aa45550397
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12-1ubuntu1.debian.tar.xz' gzip_1.12-1ubuntu1.debian.tar.xz 19796 SHA512:247ee91f2d67935a809248c8134789a57e13db3534e7d7c5e0ab543a4b1024cc39c29b3fb2fc5805b42f87004187601e642c45fd1f51baa80b21441786e64da7
-```
 
 ### `dpkg` source package: `hostname=3.23+nmu1ubuntu1`
 
@@ -674,13 +657,9 @@ Licenses: (parsed from: `/usr/share/doc/hostname/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris hostname=3.23+nmu1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/h/hostname/hostname_3.23%2bnmu1ubuntu1.dsc' hostname_3.23+nmu1ubuntu1.dsc 1567 SHA512:95f3a3ae2197f342fbac41664b2aca64bac415a9b7675364f256512207fadfd2476786e186781c05724fcf0b1d37cbfa1560c6f363e27495e5d35efea92483c4
-'http://archive.ubuntu.com/ubuntu/pool/main/h/hostname/hostname_3.23%2bnmu1ubuntu1.tar.xz' hostname_3.23+nmu1ubuntu1.tar.xz 13124 SHA512:c14a9a7e39812ba6be3a3ed62f1e95815437e78b8edfa4a0daa7fc5939a22b522df51eed30ef96940082cae95a9a53f1988e9740d9b423b728dfa5995f92937d
-```
 
 ### `dpkg` source package: `init-system-helpers=1.66ubuntu1`
 
@@ -736,14 +715,9 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap2=1:2.66-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-4ubuntu1.dsc' libcap2_2.66-4ubuntu1.dsc 2336 SHA512:884095371ffcf06c2e1b5f2a5e9e68f369558767e969c22aeec741a5b57e8cc91ee0311876d165839b55211c93a36c1e1121ce9faaf8d48aa13013eebb0179f4
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66.orig.tar.xz' libcap2_2.66.orig.tar.xz 181592 SHA512:ac005b622f6e065f30ce282a5c87240e7b9da75366ee537aa4835bc501b44bc242c10a4ba4dc070e2415fc7f635d1c3c4e45fbeeaf962cf7973dda82bf6377f0
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-4ubuntu1.debian.tar.xz' libcap2_2.66-4ubuntu1.debian.tar.xz 22076 SHA512:1f19fc5203de495bf3edb52249bcd6ea14a30b521f223cf75171b6b521c370bf8a21def958307d1712d6ad187b938d2a684ee400279f100c0836f24c7fab99cf
-```
 
 ### `dpkg` source package: `libffi=3.4.4-2`
 
@@ -762,14 +736,13 @@ Licenses: (parsed from: `/usr/share/doc/libffi8/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libffi=3.4.4-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi_3.4.4-2.dsc' libffi_3.4.4-2.dsc 1951 SHA512:9b1b51d3625ff3e903a1f89f567341ac68d27d28d2ca522d93c53ef4b59f7c49236579f3d80b007a0d7867c67d2330bfe9ec13a8190afbc3ce5330110147848d
-'http://archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi_3.4.4.orig.tar.gz' libffi_3.4.4.orig.tar.gz 1362394 SHA512:88680aeb0fa0dc0319e5cd2ba45b4b5a340bc9b4bcf20b1e0613b39cd898f177a3863aa94034d8e23a7f6f44d858a53dcd36d1bb8dee13b751ef814224061889
-'http://archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi_3.4.4-2.debian.tar.xz' libffi_3.4.4-2.debian.tar.xz 14172 SHA512:a0e37092340e9727acaca19f9a78535840dc2de9ea7a5beecbeca54f4b2080c9a0874c34094dfe79e01d0f993e24d4ee59829d493f5c0405ad9ace2d9b2e4f6a
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libffi/3.4.4-2/
+
 
 ### `dpkg` source package: `libgcrypt20=1.10.3-2`
 
@@ -1113,15 +1086,13 @@ Licenses: (parsed from: `/usr/share/doc/libncursesw6/copyright`, `/usr/share/doc
 - `MIT/X11`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.4+20231209-1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.4%2b20231209-1.dsc' ncurses_6.4+20231209-1.dsc 3807 SHA512:c883e058d00b75e2d56d2bfafcb5dfee029c96cb79c9c17504dcea29b0183a2bc58a9d2d7ba028c90584821ad7c65abd99ff29b48404c4fbd472ea69e4952553
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.4%2b20231209.orig.tar.gz' ncurses_6.4+20231209.orig.tar.gz 3673169 SHA512:293b91b20f676230e28dadfc6ec811ac898e56d558d919566bf515d91ee9bd5df222f56da593d5ce249550a38ad4a9d206df2761f170c7738c9e8a3ea564e42a
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.4%2b20231209.orig.tar.gz.asc' ncurses_6.4+20231209.orig.tar.gz.asc 729 SHA512:39936242c7ef118f73d0d93d985a970b59c23f436dc7844084affa8ea76ae036b6794cba57e8320e20a3dd9eb1fce1344615a82780d4dcd750a47333d9d99e00
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.4%2b20231209-1.debian.tar.xz' ncurses_6.4+20231209-1.debian.tar.xz 48812 SHA512:51a090855ed265a33a0ec26c8f75f958f8228744dba49803480d55957fae9c44169b7552e521f9ad2173c75f51872bf4d3c3a080bf3de304bf136f561f2cc373
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/ncurses/6.4+20231209-1/
+
 
 ### `dpkg` source package: `nettle=3.9.1-2`
 
