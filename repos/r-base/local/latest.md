@@ -794,20 +794,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fontconfig=2.14.2-6
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.14.2-6.dsc' fontconfig_2.14.2-6.dsc 2323 SHA256:45f357363d06b8ea6efa02e081c8713dfcf05a5a7df97262fd31d4b35d1eb002
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.14.2.orig.tar.xz' fontconfig_2.14.2.orig.tar.xz 1440844 SHA256:dba695b57bce15023d2ceedef82062c2b925e51f5d4cc4aef736cf13f60a468b
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.14.2-6.debian.tar.xz' fontconfig_2.14.2-6.debian.tar.xz 57916 SHA256:09287ffc3dcee05a78e70d078e1f4c4a18766821177ce7a9764bc318a6bf4fe3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/fontconfig/2.14.2-6/
 
-- https://sources.debian.net/src/fontconfig/2.14.2-6/ (for browsing the source)
-- https://sources.debian.net/src/fontconfig/2.14.2-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/fontconfig/2.14.2-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `foreign=0.8.86-1`
 
@@ -1684,10 +1677,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libffi=3.4.4-2
-'http://http.debian.net/debian/pool/main/libf/libffi/libffi_3.4.4-2.dsc' libffi_3.4.4-2.dsc 1951 SHA256:ece62406f97ba791be56d614c44d7e3ade1f32e3f2bdb6e4b17de84e29278f8a
-'http://http.debian.net/debian/pool/main/libf/libffi/libffi_3.4.4.orig.tar.gz' libffi_3.4.4.orig.tar.gz 1362394 SHA256:d66c56ad259a82cf2a9dfc408b32bf5da52371500b84745f7fb8b645712df676
-'http://http.debian.net/debian/pool/main/libf/libffi/libffi_3.4.4-2.debian.tar.xz' libffi_3.4.4-2.debian.tar.xz 14172 SHA256:c49678cfcd2757007f95bc85e695b0aefe6bf83e6806a2cd3a94f33ab9b6b1d9
+'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.4.4-2.dsc' libffi_3.4.4-2.dsc 1951 SHA256:ece62406f97ba791be56d614c44d7e3ade1f32e3f2bdb6e4b17de84e29278f8a
+'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.4.4.orig.tar.gz' libffi_3.4.4.orig.tar.gz 1362394 SHA256:d66c56ad259a82cf2a9dfc408b32bf5da52371500b84745f7fb8b645712df676
+'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.4.4-2.debian.tar.xz' libffi_3.4.4-2.debian.tar.xz 14172 SHA256:c49678cfcd2757007f95bc85e695b0aefe6bf83e6806a2cd3a94f33ab9b6b1d9
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libffi/3.4.4-2/ (for browsing the source)
+- https://sources.debian.net/src/libffi/3.4.4-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libffi/3.4.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgcrypt20=1.10.3-2`
 
@@ -2177,20 +2176,13 @@ Licenses: (parsed from: `/usr/share/doc/libsharpyuv0/copyright`, `/usr/share/doc
 - `Apache-2.0`
 - `BSD-3-Clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwebp=1.3.2-0.3
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_1.3.2-0.3.dsc' libwebp_1.3.2-0.3.dsc 2461 SHA256:5fde1afa1af8f1608b26a0040775573b896f97c843fa6f050bd0f4523ac4b6a5
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_1.3.2.orig.tar.gz' libwebp_1.3.2.orig.tar.gz 4162949 SHA256:2a499607df669e40258e53d0ade8035ba4ec0175244869d1025d460562aa09b4
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_1.3.2-0.3.debian.tar.xz' libwebp_1.3.2-0.3.debian.tar.xz 15524 SHA256:cacf877660813a005658e18975faa4ffe30b01286a17cf767ffd666e270ce5d5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libwebp/1.3.2-0.3/
 
-- https://sources.debian.net/src/libwebp/1.3.2-0.3/ (for browsing the source)
-- https://sources.debian.net/src/libwebp/1.3.2-0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libwebp/1.3.2-0.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libx11=2:1.8.7-1`
 
@@ -3315,20 +3307,13 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-3
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-3.dsc' shadow_4.13+dfsg1-3.dsc 2407 SHA256:13f79d61847c6ea525dcde26bb71b99d24b4d15cbbebf5070537c9a8caa50a52
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1.orig.tar.xz' shadow_4.13+dfsg1.orig.tar.xz 1811752 SHA256:a8bb3a2aceff1cbe39d0f50687dcc1d7e7be0516a9d954d8e2eedb93f5906207
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-3.debian.tar.xz' shadow_4.13+dfsg1-3.debian.tar.xz 82360 SHA256:4fac3636727d73b660d18d084532e2bcc7d6bf5632b5e3c2897aae9cad4a9d8e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-3/
 
-- https://sources.debian.net/src/shadow/1:4.13+dfsg1-3/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.13+dfsg1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `survival=3.5-7-1`
 
