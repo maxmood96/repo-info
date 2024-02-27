@@ -275,14 +275,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.38-4ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.5.dsc' binutils_2.38-4ubuntu2.5.dsc 8553 SHA512:ec755a2441fc42aafb4f94af852d918b1edcbdc5861cd1b7fc8f5ad0d0b8e74598f181362b5ded75d5a9593fbf448665a548dc774f64b96137d72fd7ba0d0322
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA512:8bf0b0d193c9c010e0518ee2b2e5a830898af206510992483b427477ed178396cd210235e85fd7bd99a96fc6d5eedbeccbd48317a10f752b7336ada8b2bb826d
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.5.debian.tar.xz' binutils_2.38-4ubuntu2.5.debian.tar.xz 299000 SHA512:35fafa38ac3a87583cfdea8a30ef2907f240d9936975c337d7435f3b4e140d65c6d52a1510ff4b4ac9a63bb39d2442962fe975c12e3e55fffa0af52c322abf5f
-```
 
 ### `dpkg` source package: `boost1.74=1.74.0-14ubuntu3`
 
@@ -2738,14 +2733,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.3.dsc' libxml2_2.9.13+dfsg-1ubuntu0.3.dsc 3030 SHA512:db5ebffb5ef705a96bbbc6e6144bf337257acd63f4054884b36d1d78d0e7a69f3cbdd0f26c7af8bb4eba5fc39a091afc904730b72d2176dd58dcd1e997df9847
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.3.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.3.debian.tar.xz 36996 SHA512:92f78e32fee091a0f6cbfa9a69addba9aa4e927721f5e7670ac9fd56332050055e6b17fb54d7470e628309866e3a3db993fe70977174d3b05bc4c9e6459ce290
-```
 
 ### `dpkg` source package: `libxrandr=2:1.5.2-1build1`
 
