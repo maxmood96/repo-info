@@ -48,63 +48,138 @@
 
 ## `unit:1.32.0-go1.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.32.0-go1.22`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.32.0-jsc11`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.32.0-minimal`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.32.0-node20`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.32.0-node21`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.32.0-perl5.36`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.32.0-perl5.38`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.32.0-php8.2`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.32.0-php8.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.32.0-python3.11`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.32.0-python3.12`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.32.0-ruby3.2`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.32.0-ruby3.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.32.0-wasm`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:go`
 
@@ -951,7 +1026,12 @@ $ docker pull unit@sha256:5642233a3753cde0005d4a1158c924e76ef5ad5ded294b1ff52b90
 
 ## `unit:go1.22`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:jsc`
 
@@ -2489,7 +2569,12 @@ $ docker pull unit@sha256:60b54459572591ef136e1e05d718ffb858e904700b68d7f8ed7c82
 
 ## `unit:node21`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:perl`
 
@@ -4568,7 +4653,12 @@ $ docker pull unit@sha256:1ef1cd04b376a4c10003c9cae99b394352f0e6a33a350dec2795af
 
 ## `unit:php8.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:python`
 
@@ -5511,7 +5601,12 @@ $ docker pull unit@sha256:795c76d0cd43fe14a09caab7a724168c2ab49bf2976d3fc51551f9
 
 ## `unit:python3.12`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:ruby`
 
@@ -6406,7 +6501,12 @@ $ docker pull unit@sha256:04dea176c65e7978dddfb9c484bd29bb69a6e7c57af5d26e2c241f
 
 ## `unit:ruby3.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:wasm`
 
