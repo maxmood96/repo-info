@@ -333,14 +333,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.38-4ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.5.dsc' binutils_2.38-4ubuntu2.5.dsc 8553 SHA512:ec755a2441fc42aafb4f94af852d918b1edcbdc5861cd1b7fc8f5ad0d0b8e74598f181362b5ded75d5a9593fbf448665a548dc774f64b96137d72fd7ba0d0322
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA512:8bf0b0d193c9c010e0518ee2b2e5a830898af206510992483b427477ed178396cd210235e85fd7bd99a96fc6d5eedbeccbd48317a10f752b7336ada8b2bb826d
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.5.debian.tar.xz' binutils_2.38-4ubuntu2.5.debian.tar.xz 299000 SHA512:35fafa38ac3a87583cfdea8a30ef2907f240d9936975c337d7435f3b4e140d65c6d52a1510ff4b4ac9a63bb39d2442962fe975c12e3e55fffa0af52c322abf5f
-```
 
 ### `dpkg` source package: `brotli=1.0.9-2build6`
 
@@ -1832,14 +1827,9 @@ Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 - `public-domain-1`
 - `public-domain-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libde265=1.0.8-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libde265/libde265_1.0.8-1ubuntu0.1.dsc' libde265_1.0.8-1ubuntu0.1.dsc 2375 SHA512:e6225052deed2ded457afd8f2e06ea08da574f8e07c6e9e393770176a45916aebad896f8a61ae30249987128c163c6c1ce3585fa8340cf5baef795f58dd58008
-'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libde265/libde265_1.0.8.orig.tar.gz' libde265_1.0.8.orig.tar.gz 837878 SHA512:bcb33493cbc337d29047c6765189aaba523b20c138aa4fd5c264b3c6aea64cd174cbe14ca2d88c76319e0a8bd5d2e6269f300f056876d2962217eea7934172da
-'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libde265/libde265_1.0.8-1ubuntu0.1.debian.tar.xz' libde265_1.0.8-1ubuntu0.1.debian.tar.xz 12776 SHA512:1271675ec99c3fcbde70abd72dfc0a1a6678c12a2ec59725f852ea25cdbccdb884b7b956b0072674e6e7334ceec87d16a3299e0266f15c72dae89cab0fdc27f3
-```
 
 ### `dpkg` source package: `libdeflate=1.10-2`
 
@@ -2877,14 +2867,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.3.dsc' libxml2_2.9.13+dfsg-1ubuntu0.3.dsc 3030 SHA512:db5ebffb5ef705a96bbbc6e6144bf337257acd63f4054884b36d1d78d0e7a69f3cbdd0f26c7af8bb4eba5fc39a091afc904730b72d2176dd58dcd1e997df9847
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.3.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.3.debian.tar.xz 36996 SHA512:92f78e32fee091a0f6cbfa9a69addba9aa4e927721f5e7670ac9fd56332050055e6b17fb54d7470e628309866e3a3db993fe70977174d3b05bc4c9e6459ce290
-```
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1build4`
 
@@ -3552,15 +3537,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.14
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.14.dsc' openssl_3.0.2-0ubuntu1.14.dsc 2730 SHA512:b1897ad335d3fe41f801248d9765977c25cf81a02cd25b6a4f61d97b33d13444125a4e8b2c46d39a1e53f922ff517aa92660851552a68d1e1dc172d72bceb77a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.14.debian.tar.xz' openssl_3.0.2-0ubuntu1.14.debian.tar.xz 223084 SHA512:3b3a34429981694643d873e21c8ae07bbd2f127fdf1c64a19cdd72f11380231a96ded752122f605c269d574cc5266a7b63a9acfd2945d0ee967405d792368a86
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
@@ -3859,14 +3838,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-14=14.10-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.10-0ubuntu0.22.04.1.dsc' postgresql-14_14.10-0ubuntu0.22.04.1.dsc 3864 SHA512:3abd66310f03bdbe61dba1f6b180e36fec177aad651c23212d0e9d432dbb8b630c0e489abe077f347ebc78ea0f03fc45abfe57862f84e3868851b50c76123cdf
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.10.orig.tar.gz' postgresql-14_14.10.orig.tar.gz 29190254 SHA512:48474b41452cfffb834f57da8b9f433ddf614513e623de34dcad2da1df59d165de73c156eb851754b16d51331790474a6967ca3525e7bb84a641d703d3e2d786
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.10-0ubuntu0.22.04.1.debian.tar.xz' postgresql-14_14.10-0ubuntu0.22.04.1.debian.tar.xz 27236 SHA512:8741bf254c8e32825edca0f9600bbb5049f9d8fd03c2e019dd5085ea49b46df930f907bee8c287197872bdce83fdc2ad09ad0de79207b859089267fc93f37c5f
-```
 
 ### `dpkg` source package: `procps=2:3.3.17-6ubuntu2.1`
 

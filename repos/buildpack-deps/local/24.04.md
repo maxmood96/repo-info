@@ -29,15 +29,9 @@ Licenses: (parsed from: `/usr/share/doc/libacl1/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris acl=2.3.1-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.1-4ubuntu1.dsc' acl_2.3.1-4ubuntu1.dsc 2649 SHA512:aebbd66e0ae95d321b46a9c8c3e81679aae434bdb1600812e5ec381d48ec11ce80140e0b6b6ede95c5faa87f06ec157d1c56d44d81640c5c9c9f50866d7ef303
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.1.orig.tar.xz' acl_2.3.1.orig.tar.xz 355676 SHA512:7d02f05d17305f8587ab485395b00c7fdb8e44c1906d0d04b70a43a3020803e8b2b8c707abb6147f794867dfa87bd51769c2d3e11a3db55ecbd2006a6e6231dc
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.1.orig.tar.xz.asc' acl_2.3.1.orig.tar.xz.asc 833 SHA512:be046f3bf1ac7e21d2a07bf6ea87c1fedeed2f9d370d8bf3de1aa0c448de5484b1523697415849b6b7ca23e48e3df5353f6aebe850eb20fc2044d2681c71f298
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.1-4ubuntu1.debian.tar.xz' acl_2.3.1-4ubuntu1.debian.tar.xz 31452 SHA512:7c1b22e30196f25e69eef3bb7948ee3c6432ea4fbfd6befaa6f0b246d551d0093e61ecc12adcedb0114210fcd1c4dff500e8c0675a688b5d4a2f562c14d8c7bd
-```
 
 ### `dpkg` source package: `adduser=3.137ubuntu1`
 
@@ -254,13 +248,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13ubuntu6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu6.dsc' base-files_13ubuntu6.dsc 1654 SHA512:fbd25912c734c241c3353c66f391479df58f97fabf491e2a7c66453f8542574066830c98e1f94d88dd0fd77422e0c7377fbb71a2bd9a455b9534d90e78b600bf
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu6.tar.xz' base-files_13ubuntu6.tar.xz 93196 SHA512:915c5c158c31ddf2b217b050d0102093629f89e61f0c91e53876297dbe91fa04136f516b6db2f655e757be6b5e652a886462eb4b2c8868fb75c8c419f740e8ab
-```
 
 ### `dpkg` source package: `base-passwd=3.6.3`
 
@@ -943,14 +933,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fontconfig=2.14.2-6ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.14.2-6ubuntu1.dsc' fontconfig_2.14.2-6ubuntu1.dsc 2775 SHA512:97e4df7f2984d7c0accc72424ffcbb64c72bc1450bfb23a0dea284690d875a12e5f2134b3bee5633a3d03af3517ea3c501909dc44d9bd1504d6e476fb84fbc82
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.14.2.orig.tar.xz' fontconfig_2.14.2.orig.tar.xz 1440844 SHA512:23483e0ae6aa7589fd37f9949a4cf951c5bff981739dbb446881e4cea86a208c0ab31e2358666eac724af1dc6a689a42733a7ce91cd3e76d8d91eacedb318085
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.14.2-6ubuntu1.debian.tar.xz' fontconfig_2.14.2-6ubuntu1.debian.tar.xz 29316 SHA512:8636664d8f9fec0ef6ac5da60a4d8fa2984ac4bd6aba9e8d23133e7ef0bc9f82f01ea0076cea5b163b725f4ecb24d994854aaf0682c63cf7f668df9f8e99564c
-```
 
 ### `dpkg` source package: `fonts-dejavu=2.37-8`
 
@@ -1252,15 +1237,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.78.3-2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.78.3-2.dsc' glib2.0_2.78.3-2.dsc 3551 SHA512:14a638696eb35c2db73489af45b361acd7696e6b17dbe8ccf0c8ff0ebde6d12973859b5a67bf2ccad588ccd2e4e7911ea03a3ba3a2c8c3c1f37168ba578b1aa5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.78.3.orig-unicode-data.tar.xz' glib2.0_2.78.3.orig-unicode-data.tar.xz 266184 SHA512:c818eae7b8df69b69abc2c59870eaad7488e3266afb5055b851fcbdd9dd96d9808787881631a8d840487acb3b40c18691b6c58d3df4735fa6eab41a5aa1295ff
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.78.3.orig.tar.xz' glib2.0_2.78.3.orig.tar.xz 5321388 SHA512:9c1af75fb973d23ce0286d5b7836eea45f9628c148ced5ac10e10abceda05024ae4c57f01439824d3287d986527500b7b959828b630b6e4a3314b5224f4d7246
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.78.3-2.debian.tar.xz' glib2.0_2.78.3-2.debian.tar.xz 120396 SHA512:9f2d8645522644046af42b8cf0754c8ed2d364c08d1ae12085d4fa6cf3d0c099c04fe9646c9ac6678001c22c4034c7ba35edd3d59860e13f27a851309c6303f4
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.78.3-2/
+
 
 ### `dpkg` source package: `glibc=2.38-3ubuntu1`
 
@@ -1339,15 +1322,9 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.40-1.1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.40-1.1ubuntu1.dsc' gnupg2_2.2.40-1.1ubuntu1.dsc 3920 SHA512:c2cfd636e9bdfc8fe19d9213597325782fe15bd228d0e7d601f18c37d23c2be81c62337621bb835d2defc85feade8f67c4a7f680902d32c77f112cfa2258c7bb
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.40.orig.tar.bz2' gnupg2_2.2.40.orig.tar.bz2 7301631 SHA512:4c2f5fbf37ba6fbad0045aad23129186963010c673ea0b81801adc4f98efe14d6c7228e22815b6b26307c1fe5bb51cd088aa6a0f06a9325d3c021849ef81c594
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.40.orig.tar.bz2.asc' gnupg2_2.2.40.orig.tar.bz2.asc 228 SHA512:50e8abae322430bf4d3230d0291ca519663a1397fe0d0b8df29076808504b5fea2b984952d6dc51ecc239c12af8ecd5d93b88dd1c6bc0babf0b48a5a840b8ada
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.40-1.1ubuntu1.debian.tar.xz' gnupg2_2.2.40-1.1ubuntu1.debian.tar.xz 65264 SHA512:1efaad1ebfcda85888670e613bb4488ff2ad773190a593f4d2ac298e731a5641e84bfc2c0dba4b5fd8f1af455212a388b99f903dfc770a772d45b4ccaafcb2e1
-```
 
 ### `dpkg` source package: `gnutls28=3.8.3-1ubuntu1`
 
@@ -1416,15 +1393,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.78.1-6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.78.1-6.dsc' gobject-introspection_1.78.1-6.dsc 3663 SHA512:715c70832d66675a5322e1650ea2a9088a939a7e5b8a239fe7fd10622c939c3849b744d6821dbbfbdb97f0e1dfe620b52356ca701694a3ca32172552ebd3fbf5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.78.1.orig-glib.tar.xz' gobject-introspection_1.78.1.orig-glib.tar.xz 5327096 SHA512:3d06890002f4b13f831c83fbb70cfce529f9750e30888619e4d6277116be15d106379a03143412cf4b2a289c0cbdbbc299ecf17284fbffc06c791ecf7556c765
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.78.1.orig.tar.xz' gobject-introspection_1.78.1.orig.tar.xz 1060296 SHA512:a3081882995a762645b04faa71082dbd523bee845519007e48b13235aad8a4cd4c74f0d042a6c17710125f945bd970e4b76e95a559274e294d595e04725a4e97
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.78.1-6.debian.tar.xz' gobject-introspection_1.78.1-6.debian.tar.xz 53244 SHA512:07ad84c73387b4ee7c765d76272551f3c5489161b5defa9cd59fe51520f7b4abf19dd7574789eb83cc04c357e89a331addb49c2dce0ef78ebc6ea59bf55fe703
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gobject-introspection/1.78.1-6/
+
 
 ### `dpkg` source package: `graphite2=1.3.14-2`
 
@@ -1656,15 +1631,9 @@ Licenses: (parsed from: `/usr/share/doc/libimath-3-1-29/copyright`, `/usr/share/
 
 - `imath`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imath=3.1.9-3ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imath/imath_3.1.9-3ubuntu2.dsc' imath_3.1.9-3ubuntu2.dsc 2648 SHA512:4d2a94b7ac3a27e8407d775ac6be140bc283da798f3469a8092b35b36efc4eedcfb0f7cb793a49bcedcb9755e6ec0c9060b28be38efe0093ea8cf0b9c15412ae
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imath/imath_3.1.9.orig.tar.gz' imath_3.1.9.orig.tar.gz 598497 SHA512:ad96b2ac306fc13c01e8ea3256f885499c3f545be327feaba0f5e093b70b544bcca6f8b353fa7e35107aae515c19caced44331a95d0414f367ead4691ec73564
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imath/imath_3.1.9.orig.tar.gz.asc' imath_3.1.9.orig.tar.gz.asc 287 SHA512:9b3978e44b531429aba42b9cc4969a470898d9d74652e3809edb0273ba9b127c471aec6570b5d352be738f59810091c0df2c70d39c16d2c32833d173b270f72c
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imath/imath_3.1.9-3ubuntu2.debian.tar.xz' imath_3.1.9-3ubuntu2.debian.tar.xz 9484 SHA512:55b3d3ac8d8cea885acb63a32ff959cf23dd30b3084a80495c028b74861426dd7e22cb98fb1616c4daf8c7bfaf8a97e40da6f4f2911b2390cc017fdbcb51ecd3
-```
 
 ### `dpkg` source package: `init-system-helpers=1.66ubuntu1`
 
@@ -1973,14 +1942,9 @@ Licenses: (parsed from: `/usr/share/doc/libcbor0.10/copyright`)
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcbor=0.10.2-1.1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcbor/libcbor_0.10.2-1.1ubuntu1.dsc' libcbor_0.10.2-1.1ubuntu1.dsc 2213 SHA512:5aa531f3358071f5709b01e684401ebca0df403b5cbefe219ec5f8690356a1a8596387d8adc90c173d1ab806bc47a5a17c755e6a17febcbddb8aa580413d62c4
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcbor/libcbor_0.10.2.orig.tar.gz' libcbor_0.10.2.orig.tar.gz 289450 SHA512:23c6177443778d4b4833ec7ed0d0e639a0d4863372e3a38d772fdce2673eae6d5cb2a31a2a021d1a699082ea53494977c907fd0e94149b97cb23a4b6d039228a
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcbor/libcbor_0.10.2-1.1ubuntu1.debian.tar.xz' libcbor_0.10.2-1.1ubuntu1.debian.tar.xz 5412 SHA512:815dc9102d7cdf74b42655b805a447cdd2fbeecea74b3ee63530f1159b1d8102d3b98ff65f76a4087812970fd45f6a455fc6d44fba4f1eb4f4c4ceef6533f09b
-```
 
 ### `dpkg` source package: `libdatrie=0.2.13-3`
 
@@ -4023,14 +3987,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-16=16.1-1build3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.1-1build3.dsc' postgresql-16_16.1-1build3.dsc 4211 SHA512:e28abca4ddfdce9cae6dd7ace11ab573a7c1c49170376a63df203e60f9ab84247bf0fedbcdc0c3c7325e94238cd0ca532ae42dd5cd9ba30f0ebf954d460fc7c4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.1.orig.tar.bz2' postgresql-16_16.1.orig.tar.bz2 24605482 SHA512:69f4635e5841452599f13b47df41ce2425ab34b4e4582fd2c635bc78d561fa36c5b03eccb4ae6569872dc74775be1b5a62dee20c9a4f12a43339250128352918
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.1-1build3.debian.tar.xz' postgresql-16_16.1-1build3.debian.tar.xz 30772 SHA512:0488c1cca5ee8800c35141029371316f8b892475ecac88f3ce8f53a619449be2cbe482865e1648fecb201835c8134da9fc5a8b22d6362c7bfbf65a7412b6f389
-```
 
 ### `dpkg` source package: `procps=2:4.0.4-2ubuntu1`
 
@@ -4089,13 +4048,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.11.4-5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.11.4-5ubuntu1.dsc' python3-defaults_3.11.4-5ubuntu1.dsc 3108 SHA512:31f52ffb5ec12b2addc51a23e116788641777c51544a29393652c1614a5ebb55de429565c7086d6e1f21c9c2d51548b3159d214cec16a16e6fe1c83d7ff5a253
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.11.4-5ubuntu1.tar.gz' python3-defaults_3.11.4-5ubuntu1.tar.gz 146771 SHA512:3ce3ddb9e2953c0f06c3a67e405537410421788a9f61cc078d76c3a3957407f08740c35133a6b785588b4f5ac065c2f5a37ba8920f3fd19e7929df6c0b2ec6ed
-```
 
 ### `dpkg` source package: `python3.11=3.11.8-1`
 
@@ -4600,14 +4555,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unzip=6.0-28ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-28ubuntu2.dsc' unzip_6.0-28ubuntu2.dsc 1811 SHA512:b471111fb0fc9facf66b421431470c80bc82c58a4d4ff48169159d10a19008975644f287a43ddd611c2ad8f25165ed930d0cae1f1061be847d6e519a7b39e19d
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA512:0694e403ebc57b37218e00ec1a406cae5cc9c5b52b6798e0d4590840b6cdbf9ddc0d9471f67af783e960f8fa2e620394d51384257dca23d06bcd90224a80ce5d
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-28ubuntu2.debian.tar.xz' unzip_6.0-28ubuntu2.debian.tar.xz 28820 SHA512:40356f9d52ce6dcffa4188504f1610847645c748a18299c82a57537ca94e142b01da034ebb5a8152be648ccef02a2daa732a0dd102f385c0acfdd98ee6cfd098
-```
 
 ### `dpkg` source package: `utf8proc=2.9.0-1`
 
