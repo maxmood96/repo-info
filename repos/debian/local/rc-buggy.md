@@ -477,19 +477,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.22.4
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.4.dsc' dpkg_1.22.4.dsc 3041 SHA256:ee53c49c12d0f7e7616f0143fdbd6f587ed68c5241a739e9224302fa165e2f95
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.4.tar.xz' dpkg_1.22.4.tar.xz 5623080 SHA256:40818c174e6074a190e0013fa0ea8b04db743b8e5e7a7818239510fbb4e6eb1d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dpkg/1.22.4/
 
-- https://sources.debian.net/src/dpkg/1.22.4/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.22.4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.22.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.47.0-2`
 
@@ -519,10 +513,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris e2fsprogs=1.47.0-2
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.0-2.dsc' e2fsprogs_1.47.0-2.dsc 2846 SHA256:35b4de254e021f721362b767994598e249fea02e38ac446197cd9c22be1130fd
+'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.0-2.1%7eexp1.dsc' e2fsprogs_1.47.0-2.1~exp1.dsc 3175 SHA256:b7b1eb625fcf850fdb9836410fe3785696800fc252fde71cfd2797c3646d0990
 'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.0.orig.tar.gz' e2fsprogs_1.47.0.orig.tar.gz 9637717 SHA256:6667afde56eef0c6af26684974400e4d2288ea49e9441bf5e6229195d51a3578
 'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.0.orig.tar.gz.asc' e2fsprogs_1.47.0.orig.tar.gz.asc 488 SHA256:704928204a52ddaa0ac8ef549c1bfba3c38e66c361d3853c8a4c38e6082b90f1
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.0-2.debian.tar.xz' e2fsprogs_1.47.0-2.debian.tar.xz 87328 SHA256:3a756e08d300666039e34577293d11d70c7a1da7850fad478580a81af6348277
+'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.0-2.1%7eexp1.debian.tar.xz' e2fsprogs_1.47.0-2.1~exp1.debian.tar.xz 87500 SHA256:42abe426dde5683f6ce65fb559ae5246c65ea7bfeccbc4b0e68d7fd1b69a609f
 ```
 
 Other potentially useful URLs:
