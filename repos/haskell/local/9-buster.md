@@ -1,15 +1,15 @@
-# `haskell:9.8.1-buster`
+# `haskell:9.8.2-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:567e60563a74ef688be9489a934d8438ef39881834a98fafc3374445725310d9`
-- Created: `2024-02-16T19:22:05.675910563Z`
+- Image ID: `sha256:d24aebf5ec871df8aafe4247617f9e03fa0463084567582901f61d0f3628e050`
+- Created: `2024-02-23T18:55:17.827318148Z`
 - Virtual Size: ~ 3.76 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["ghci"]`
 - Environment:
-  - `PATH=/root/.cabal/bin:/root/.local/bin:/opt/ghc/9.8.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/root/.cabal/bin:/root/.local/bin:/opt/ghc/9.8.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1459,20 +1459,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-dane0/copyright`, `/usr/share/
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.6.7-4+deb10u11
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7-4%2bdeb10u11.dsc' gnutls28_3.6.7-4+deb10u11.dsc 3265 SHA256:973b459a8c0fa5019354b1d903f727f505aea77ca9e1a250dea3ad5f9eea2797
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz' gnutls28_3.6.7.orig.tar.xz 8153728 SHA256:5b3409ad5aaf239808730d1ee12fdcd148c0be00262c7edf157af655a8a188e2
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7-4%2bdeb10u11.debian.tar.xz' gnutls28_3.6.7-4+deb10u11.debian.tar.xz 103904 SHA256:81e40a799a93438cdf14cd01ab1c73b4841d7d524cf018a9e764911af13a05af
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.6.7-4+deb10u11/
 
-- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u11/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.6.7-4+deb10u11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gobject-introspection=1.58.3-2`
 
