@@ -29,15 +29,9 @@ Licenses: (parsed from: `/usr/share/doc/libacl1/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris acl=2.3.1-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.1-4ubuntu1.dsc' acl_2.3.1-4ubuntu1.dsc 2649 SHA512:aebbd66e0ae95d321b46a9c8c3e81679aae434bdb1600812e5ec381d48ec11ce80140e0b6b6ede95c5faa87f06ec157d1c56d44d81640c5c9c9f50866d7ef303
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.1.orig.tar.xz' acl_2.3.1.orig.tar.xz 355676 SHA512:7d02f05d17305f8587ab485395b00c7fdb8e44c1906d0d04b70a43a3020803e8b2b8c707abb6147f794867dfa87bd51769c2d3e11a3db55ecbd2006a6e6231dc
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.1.orig.tar.xz.asc' acl_2.3.1.orig.tar.xz.asc 833 SHA512:be046f3bf1ac7e21d2a07bf6ea87c1fedeed2f9d370d8bf3de1aa0c448de5484b1523697415849b6b7ca23e48e3df5353f6aebe850eb20fc2044d2681c71f298
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.1-4ubuntu1.debian.tar.xz' acl_2.3.1-4ubuntu1.debian.tar.xz 31452 SHA512:7c1b22e30196f25e69eef3bb7948ee3c6432ea4fbfd6befaa6f0b246d551d0093e61ecc12adcedb0114210fcd1c4dff500e8c0675a688b5d4a2f562c14d8c7bd
-```
 
 ### `dpkg` source package: `apt=2.7.10`
 
@@ -116,13 +110,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13ubuntu6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu6.dsc' base-files_13ubuntu6.dsc 1654 SHA512:fbd25912c734c241c3353c66f391479df58f97fabf491e2a7c66453f8542574066830c98e1f94d88dd0fd77422e0c7377fbb71a2bd9a455b9534d90e78b600bf
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu6.tar.xz' base-files_13ubuntu6.tar.xz 93196 SHA512:915c5c158c31ddf2b217b050d0102093629f89e61f0c91e53876297dbe91fa04136f516b6db2f655e757be6b5e652a886462eb4b2c8868fb75c8c419f740e8ab
-```
 
 ### `dpkg` source package: `base-passwd=3.6.3`
 
@@ -163,14 +153,9 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 - `MIT-like`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.2.21-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.21-2ubuntu1.dsc' bash_5.2.21-2ubuntu1.dsc 2321 SHA512:6da2aa60c4e3090d90b869ad5ee0eba13f29750470fcc5eb86fbbc4239fd9b496142b0b3ec62b8290f49e552debee50688762ffe2bff028492dcc3680d5c5013
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.21.orig.tar.xz' bash_5.2.21.orig.tar.xz 5598816 SHA512:ccfd5201ebc32feb302db324868bec42a525a6b08176c77e16feb191fcd6ee4240182dcad783e6e3f010c6d33f356b2c628758f0387ef488ab8b3f932e54babb
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.21-2ubuntu1.debian.tar.xz' bash_5.2.21-2ubuntu1.debian.tar.xz 94132 SHA512:f584f012395a09b82b798a62a6249de8a6fec8689d3c92d68c28bcd8c8f78dc5033945e75b7f83d2a78ea9d3e8885fca8d139d8713a2f85bc52fd9f11ccf673a
-```
 
 ### `dpkg` source package: `bzip2=1.0.8-5build1`
 
@@ -183,14 +168,9 @@ Licenses: (parsed from: `/usr/share/doc/libbz2-1.0/copyright`)
 - `BSD-variant`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bzip2=1.0.8-5build1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-5build1.dsc' bzip2_1.0.8-5build1.dsc 1860 SHA512:dfb9cd3a99f8c80a27e088b6ba7f06f50bc2bdbc61f574ed8f77d0fa58ff07fa1c34a060351fd4b601537181143dd934caadd7a00eb97aea5933febb7b61743d
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8.orig.tar.gz' bzip2_1.0.8.orig.tar.gz 810029 SHA512:083f5e675d73f3233c7930ebe20425a533feedeaaa9d8cc86831312a6581cefbe6ed0d08d2fa89be81082f2a5abdabca8b3c080bf97218a1bd59dc118a30b9f3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-5build1.debian.tar.bz2' bzip2_1.0.8-5build1.debian.tar.bz2 26870 SHA512:e030c257c3458d780fd0ffc6f328efd69d0e875e81acd7441a7c6651194ebded61017c96aad7c99061f93d50dfc33056abe98c9a599abc900f49d51c4a1eed6f
-```
 
 ### `dpkg` source package: `cdebconf=0.271ubuntu1`
 
@@ -247,14 +227,9 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.12-6ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.12-6ubuntu1.dsc' dash_0.5.12-6ubuntu1.dsc 2087 SHA512:4f7dab651cbcbb65749c58f99e13ebc9e4e035663c35a5954e79a55fb034f82f1755891b24eac6fdbdcd9d4ea41356f365e01e880a07bd36a0fd77e6da9c333d
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.12.orig.tar.gz' dash_0.5.12.orig.tar.gz 246054 SHA512:13bd262be0089260cbd13530a9cf34690c0abeb2f1920eb5e61be7951b716f9f335b86279d425dbfae56cbd49231a8fdffdff70601a5177da3d543be6fc5eb17
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.12-6ubuntu1.debian.tar.xz' dash_0.5.12-6ubuntu1.debian.tar.xz 39428 SHA512:bab3a9c5bbd839e4a8aaa50df73d4a71b1086dcfebd5d19d12811733382e04e48e694c5f87f901481540cd4e9819503ab246d0270dffde37baaa6dff3f65e454
-```
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg2-4`
 
@@ -566,15 +541,9 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.40-1.1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.40-1.1ubuntu1.dsc' gnupg2_2.2.40-1.1ubuntu1.dsc 3920 SHA512:c2cfd636e9bdfc8fe19d9213597325782fe15bd228d0e7d601f18c37d23c2be81c62337621bb835d2defc85feade8f67c4a7f680902d32c77f112cfa2258c7bb
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.40.orig.tar.bz2' gnupg2_2.2.40.orig.tar.bz2 7301631 SHA512:4c2f5fbf37ba6fbad0045aad23129186963010c673ea0b81801adc4f98efe14d6c7228e22815b6b26307c1fe5bb51cd088aa6a0f06a9325d3c021849ef81c594
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.40.orig.tar.bz2.asc' gnupg2_2.2.40.orig.tar.bz2.asc 228 SHA512:50e8abae322430bf4d3230d0291ca519663a1397fe0d0b8df29076808504b5fea2b984952d6dc51ecc239c12af8ecd5d93b88dd1c6bc0babf0b48a5a840b8ada
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.40-1.1ubuntu1.debian.tar.xz' gnupg2_2.2.40-1.1ubuntu1.debian.tar.xz 65264 SHA512:1efaad1ebfcda85888670e613bb4488ff2ad773190a593f4d2ac298e731a5641e84bfc2c0dba4b5fd8f1af455212a388b99f903dfc770a772d45b4ccaafcb2e1
-```
 
 ### `dpkg` source package: `gnutls28=3.8.3-1ubuntu1`
 
@@ -1200,14 +1169,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.2-9.1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.2-9.1ubuntu2.dsc' pam_1.5.2-9.1ubuntu2.dsc 2704 SHA512:da05e05a48a43a215425cd9fee1ac3952676da584dc06c10bff684a0189720c74e8d3e97592cabb579bd11546a916b264f8fe16a4d400394a94040fe6a0eaad6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.2.orig.tar.xz' pam_1.5.2.orig.tar.xz 988784 SHA512:fa16350c132d3e5fb82b60d991768fb596582639841b8ece645c684705467305ccf1302a0147ec222ab78c01b2c9114c5496dc1ca565d2b56bf315f29a815144
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.2-9.1ubuntu2.debian.tar.xz' pam_1.5.2-9.1ubuntu2.debian.tar.xz 177148 SHA512:9f18032c920da3d7599c38c220b8dd3fa62da33437b1d36b06855bb7fcb54abae0b2c30cb853c6d06145f3e210c862b2d0ab2db8e0c92804ff4949d45449dde2
-```
 
 ### `dpkg` source package: `pcre2=10.42-4ubuntu1`
 
@@ -1361,14 +1325,9 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.13%2bdfsg1-3ubuntu1.dsc' shadow_4.13+dfsg1-3ubuntu1.dsc 2514 SHA512:e0712f93f9039244b3e5d9623af429723e6281985368d303b06008359c2e201d632f831f2cf2f318472c90d437c5467f2651995bb0f63275b4f5aa071213918e
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.13%2bdfsg1.orig.tar.xz' shadow_4.13+dfsg1.orig.tar.xz 1811752 SHA512:27106ca26d6e4c9e5833cf79811b10f656ade547bbc18b87faf79bbe0581a9e1467cbb6c354320e2d5233d17208d77742ebf197d32b6d2f08439e37e368ded1d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.13%2bdfsg1-3ubuntu1.debian.tar.xz' shadow_4.13+dfsg1-3ubuntu1.debian.tar.xz 94664 SHA512:931b99eefca127b84d1fb16ede72dfd3c1a20584d8d871fd0a8c857fdfb5c70188e0d02cde25d0fb67e58ccc94d39a34fb69f2954149ab06f2a190c87be43a4c
-```
 
 ### `dpkg` source package: `systemd=253.5-1ubuntu7`
 
@@ -1408,14 +1367,9 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.08-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_3.08-3ubuntu1.dsc' sysvinit_3.08-3ubuntu1.dsc 2495 SHA512:d204847d567b6b367005b9aa6746e7993ad811ac7fec85cc2a15d80ad06d1c01b37d2b518c0d21c2a2598b3a317fe537a86cb7546b7564cb6b37a9337b99d5aa
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_3.08.orig.tar.gz' sysvinit_3.08.orig.tar.gz 513674 SHA512:63ed7ebd50944adce1a35af7798d0e2d6248f36a606f63bb7a567424555ec33e83c33b897528c801b4b4ac61b24d2a3555c9a690031c50a94e7ead83f37f8e96
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_3.08-3ubuntu1.debian.tar.xz' sysvinit_3.08-3ubuntu1.debian.tar.xz 139156 SHA512:46c99bc70a9e9d4f5d3edcd16966ee046be3f26b34d47f7cb101b3e15ca50c1dd0fc3877c33ecc6bdd948d74a91cfc387c40ecdb019e966370f42233a965bca3
-```
 
 ### `dpkg` source package: `tar=1.35+dfsg-3`
 
@@ -1493,14 +1447,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.39.2-6ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.2-6ubuntu1.dsc' util-linux_2.39.2-6ubuntu1.dsc 4711 SHA512:a0fb49b3257ae4564fbb29f39c5b1152f0d327ccd7325125f70e1c73e8716ce6fe3985fca260b950baacfb49d6a70250f5ca33468c3b04dc75445abca4d64f73
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.2.orig.tar.xz' util-linux_2.39.2.orig.tar.xz 8362220 SHA512:cebecdd62749d0aeea2c4faf7ad1606426eff03ef3b15cd9c2df1126f216a4ed546d8fc3218c649fa95944eb87a98bb6a7cdd0bea31057c481c5cf608ffc19a3
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.2-6ubuntu1.debian.tar.xz' util-linux_2.39.2-6ubuntu1.debian.tar.xz 105504 SHA512:cb91c7b60ebd4359ba554f4099ecc42fea4a30d3427123b1d76156f455ccd641da4baf457f09535400569f590da9d83378541214da1b93be8154865f89efb906
-```
 
 ### `dpkg` source package: `xxhash=0.8.2-2`
 
