@@ -6570,14 +6570,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.10+dfsg-5ubuntu0.20.04.6
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg-5ubuntu0.20.04.6.dsc' libxml2_2.9.10+dfsg-5ubuntu0.20.04.6.dsc 3121 SHA512:bbff011d7648a8f55c9d415c68926e5391492776ec2257e19a218d2cf52c7152b36abe491f05b242cbf4f743ce386aeec433c10ce8c3049ee5df72759304bdb0
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg.orig.tar.xz' libxml2_2.9.10+dfsg.orig.tar.xz 2503560 SHA512:605c6c0f8bf2c53208d0a036ff09a4025843f45139b711c90dc83066feda2f285a5578d55d4a58d33eedbe7485a5c1ec5608ba6c6beed1fb55649f87dca0cec3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg-5ubuntu0.20.04.6.debian.tar.xz' libxml2_2.9.10+dfsg-5ubuntu0.20.04.6.debian.tar.xz 41852 SHA512:b4f95b785c860ff6a054802a7d4353475d7a61f1886962ab8ce8a2fe78aab10bf546fe01a256f25cf15ce999dd25dd7b4b4d910ccf2806ce95f7ac98c156d1da
-```
 
 ### `dpkg` source package: `libxmu=2:1.1.3-0ubuntu1`
 
@@ -7597,14 +7592,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL-2-1`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-lts=11.0.21+9-0ubuntu1~20.04
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.21%2b9-0ubuntu1%7e20.04.dsc' openjdk-lts_11.0.21+9-0ubuntu1~20.04.dsc 4643 SHA512:5f191963ba8a88162efb8b578f113b64f79d200bc2cacc23a4f4a2461ee4de5ac973a39615004c2e87a790c6e3b242631ac72da31545a0cec1b9c6425fb405b1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.21%2b9.orig.tar.xz' openjdk-lts_11.0.21+9.orig.tar.xz 68896980 SHA512:16af41f693214996ccf2f8e2794e3bd372c7cb422dff2861d615496a6d0ecea30462afba70207c208ed8647dd39f8d13fac7ebdbbabaa740ad81a0e505578358
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.21%2b9-0ubuntu1%7e20.04.debian.tar.xz' openjdk-lts_11.0.21+9-0ubuntu1~20.04.debian.tar.xz 162976 SHA512:06ccddf69d65c267ad14ef3e0dbabebea91f5d45c0fea94e0ea0b3ab77c1fdfb37d194b9d4b9c13b8e14a14396466f9142fb031f6fae84f23372345df8d69d11
-```
 
 ### `dpkg` source package: `openjpeg2=2.3.1-1ubuntu4.20.04.1`
 
@@ -8019,14 +8009,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-12=12.17-0ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.17-0ubuntu0.20.04.1.dsc' postgresql-12_12.17-0ubuntu0.20.04.1.dsc 3764 SHA512:defc663f44c5051436201285e26aad0f69876d32b1137d2a808f4e6ed9229b8aeb1399602c53105ed5822456802541b89e427cb0fbe7ba6eefe82be364cd816e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.17.orig.tar.gz' postgresql-12_12.17.orig.tar.gz 27792441 SHA512:445d2c530517022d2cae9dfc54cf5ab84845837896103c1474ad9f7cb752cca62fb51062838bfb06155673fba73cd313e3496311c7b897629208af1b4844f746
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.17-0ubuntu0.20.04.1.debian.tar.xz' postgresql-12_12.17-0ubuntu0.20.04.1.debian.tar.xz 28896 SHA512:00de68270644f769b6b0775685c6e8e7b958013d8615c817f3f7b13c1ae749205b405ed606560fa2935f2b57b1085edd16ec0dc136037f3f6087bcd61cac748d
-```
 
 ### `dpkg` source package: `procps=2:3.3.16-1ubuntu2.4`
 
