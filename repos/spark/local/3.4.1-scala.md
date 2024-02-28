@@ -1434,14 +1434,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.10+dfsg-5ubuntu0.20.04.6
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg-5ubuntu0.20.04.6.dsc' libxml2_2.9.10+dfsg-5ubuntu0.20.04.6.dsc 3121 SHA512:bbff011d7648a8f55c9d415c68926e5391492776ec2257e19a218d2cf52c7152b36abe491f05b242cbf4f743ce386aeec433c10ce8c3049ee5df72759304bdb0
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg.orig.tar.xz' libxml2_2.9.10+dfsg.orig.tar.xz 2503560 SHA512:605c6c0f8bf2c53208d0a036ff09a4025843f45139b711c90dc83066feda2f285a5578d55d4a58d33eedbe7485a5c1ec5608ba6c6beed1fb55649f87dca0cec3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg-5ubuntu0.20.04.6.debian.tar.xz' libxml2_2.9.10+dfsg-5ubuntu0.20.04.6.debian.tar.xz 41852 SHA512:b4f95b785c860ff6a054802a7d4353475d7a61f1886962ab8ce8a2fe78aab10bf546fe01a256f25cf15ce999dd25dd7b4b4d910ccf2806ce95f7ac98c156d1da
-```
 
 ### `dpkg` source package: `libzstd=1.4.4+dfsg-3ubuntu0.1`
 
