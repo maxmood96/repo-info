@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7d843420ad7da1547387069e18d4b1eddb222ad90d2bf7405b41894956cc9c17`
+- Image ID: `sha256:158c41c69d70b0d649c596b2b268aca10a6eae4521c28dae4bd9eba0f7bf67c3`
 - Created: `2023-12-11T11:12:11Z`
-- Virtual Size: ~ 810.92 Mb  
+- Virtual Size: ~ 820.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -62,15 +62,15 @@ $ dnf --quiet download --source --url bzip2-libs-1.0.6-13.amzn2.0.3
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a89e25c80d884e892b949c3a4ffe5544e746fefff56588a05bb72fbc22c0aeb4/../../../../../blobstore/5eb7c8b4ed1b326f5e640d655f92f498451c8013b223ad5702abb108358ef0dc/bzip2-1.0.6-13.amzn2.0.3.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2023.2.62-1.amzn2.0.1.noarch`
+### `rpm` package: `ca-certificates-2023.2.64-1.amzn2.0.1.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ca-certificates-2023.2.62-1.amzn2.0.1.noarch
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a89e25c80d884e892b949c3a4ffe5544e746fefff56588a05bb72fbc22c0aeb4/../../../../../blobstore/76a982dd256319dafe3f5aad3aac01edbd5e1d97168ee2e2e8e966fb21bbab20/ca-certificates-2023.2.62-1.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url ca-certificates-2023.2.64-1.amzn2.0.1.noarch
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a89e25c80d884e892b949c3a4ffe5544e746fefff56588a05bb72fbc22c0aeb4/../../../../../blobstore/60739ca1e679ac9837797e6e6e78ca296faf21d1d9c2ad288f7539c8adc1793b/ca-certificates-2023.2.64-1.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `chkconfig-1.7.4-1.amzn2.0.2.x86_64`
@@ -795,15 +795,15 @@ $ dnf --quiet download --source --url nspr-4.35.0-1.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a89e25c80d884e892b949c3a4ffe5544e746fefff56588a05bb72fbc22c0aeb4/../../../../../blobstore/ff6f819d94da64b15bbf33ec914529f7010def8329f177e8534293d072901b92/nspr-4.35.0-1.amzn2.src.rpm
 ```
 
-### `rpm` package: `nss-3.90.0-2.amzn2.0.1.x86_64`
+### `rpm` package: `nss-3.90.0-2.amzn2.0.2.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url nss-3.90.0-2.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a89e25c80d884e892b949c3a4ffe5544e746fefff56588a05bb72fbc22c0aeb4/../../../../../blobstore/aef9190716ac4adec707edef19bad72e55b07777b8689982da5d4aee378e4ea8/nss-3.90.0-2.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url nss-3.90.0-2.amzn2.0.2
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a89e25c80d884e892b949c3a4ffe5544e746fefff56588a05bb72fbc22c0aeb4/../../../../../blobstore/c0937ce110ab46441ff9c8c24084c5f69b9f52904ddef90de0daaf0827e2ea65/nss-3.90.0-2.amzn2.0.2.src.rpm
 ```
 
 ### `rpm` package: `nss-pem-1.0.3-5.amzn2.x86_64`
@@ -817,48 +817,48 @@ $ dnf --quiet download --source --url nss-pem-1.0.3-5.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a89e25c80d884e892b949c3a4ffe5544e746fefff56588a05bb72fbc22c0aeb4/../../../../../blobstore/704279710518c94532cf67062b10877693d651e1b652fb60ed1ce1fa0cb49d7a/nss-pem-1.0.3-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `nss-softokn-3.90.0-6.amzn2.0.1.x86_64`
+### `rpm` package: `nss-softokn-3.90.0-6.amzn2.0.2.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url nss-softokn-3.90.0-6.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a89e25c80d884e892b949c3a4ffe5544e746fefff56588a05bb72fbc22c0aeb4/../../../../../blobstore/8653795044b61f1d3f7027e4d8b29343df42283b5a6cff4df3ad2515ea364671/nss-softokn-3.90.0-6.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url nss-softokn-3.90.0-6.amzn2.0.2
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a89e25c80d884e892b949c3a4ffe5544e746fefff56588a05bb72fbc22c0aeb4/../../../../../blobstore/6b744a951b86205fbff055c8d9e2ae9cc8c0a90b9a1e733d555f7b38c5cb1ec0/nss-softokn-3.90.0-6.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `nss-softokn-freebl-3.90.0-6.amzn2.0.1.x86_64`
+### `rpm` package: `nss-softokn-freebl-3.90.0-6.amzn2.0.2.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url nss-softokn-freebl-3.90.0-6.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a89e25c80d884e892b949c3a4ffe5544e746fefff56588a05bb72fbc22c0aeb4/../../../../../blobstore/8653795044b61f1d3f7027e4d8b29343df42283b5a6cff4df3ad2515ea364671/nss-softokn-3.90.0-6.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url nss-softokn-freebl-3.90.0-6.amzn2.0.2
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a89e25c80d884e892b949c3a4ffe5544e746fefff56588a05bb72fbc22c0aeb4/../../../../../blobstore/6b744a951b86205fbff055c8d9e2ae9cc8c0a90b9a1e733d555f7b38c5cb1ec0/nss-softokn-3.90.0-6.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `nss-sysinit-3.90.0-2.amzn2.0.1.x86_64`
+### `rpm` package: `nss-sysinit-3.90.0-2.amzn2.0.2.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url nss-sysinit-3.90.0-2.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a89e25c80d884e892b949c3a4ffe5544e746fefff56588a05bb72fbc22c0aeb4/../../../../../blobstore/aef9190716ac4adec707edef19bad72e55b07777b8689982da5d4aee378e4ea8/nss-3.90.0-2.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url nss-sysinit-3.90.0-2.amzn2.0.2
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a89e25c80d884e892b949c3a4ffe5544e746fefff56588a05bb72fbc22c0aeb4/../../../../../blobstore/c0937ce110ab46441ff9c8c24084c5f69b9f52904ddef90de0daaf0827e2ea65/nss-3.90.0-2.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `nss-tools-3.90.0-2.amzn2.0.1.x86_64`
+### `rpm` package: `nss-tools-3.90.0-2.amzn2.0.2.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url nss-tools-3.90.0-2.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a89e25c80d884e892b949c3a4ffe5544e746fefff56588a05bb72fbc22c0aeb4/../../../../../blobstore/aef9190716ac4adec707edef19bad72e55b07777b8689982da5d4aee378e4ea8/nss-3.90.0-2.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url nss-tools-3.90.0-2.amzn2.0.2
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a89e25c80d884e892b949c3a4ffe5544e746fefff56588a05bb72fbc22c0aeb4/../../../../../blobstore/c0937ce110ab46441ff9c8c24084c5f69b9f52904ddef90de0daaf0827e2ea65/nss-3.90.0-2.amzn2.0.2.src.rpm
 ```
 
 ### `rpm` package: `nss-util-3.90.0-1.amzn2.x86_64`
@@ -1169,15 +1169,15 @@ $ dnf --quiet download --source --url tar-1.26-35.amzn2.0.3
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a89e25c80d884e892b949c3a4ffe5544e746fefff56588a05bb72fbc22c0aeb4/../../../../../blobstore/9347f37d4dc439045de8dbfb449ed3cfc87ce85e57782dd4684d30b53294d4c1/tar-1.26-35.amzn2.0.3.src.rpm
 ```
 
-### `rpm` package: `tzdata-2023d-1.amzn2.0.1.noarch`
+### `rpm` package: `tzdata-2024a-1.amzn2.0.1.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2023d-1.amzn2.0.1.noarch
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a89e25c80d884e892b949c3a4ffe5544e746fefff56588a05bb72fbc22c0aeb4/../../../../../blobstore/0843a78c60dc71055b9fb41c2d8090aaf50b1ccf707b76f4b521ba33403a715c/tzdata-2023d-1.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url tzdata-2024a-1.amzn2.0.1.noarch
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a89e25c80d884e892b949c3a4ffe5544e746fefff56588a05bb72fbc22c0aeb4/../../../../../blobstore/9d158b03fd666bbcf8477fcb2ce9ba8545361d7ecc708eba9c90921ddfee8f25/tzdata-2024a-1.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `vim-data-9.0.2153-1.amzn2.0.1.noarch`
