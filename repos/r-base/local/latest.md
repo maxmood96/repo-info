@@ -215,20 +215,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-boot/copyright`)
 
 - `'unlimited distribution'`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris boot=1.3-28.1-1
-'http://deb.debian.org/debian/pool/main/b/boot/boot_1.3-28.1-1.dsc' boot_1.3-28.1-1.dsc 1816 SHA256:2a77d1f260086849c36782a4016179611543bf74f3b6ffdec10f179c9ce834d1
-'http://deb.debian.org/debian/pool/main/b/boot/boot_1.3-28.1.orig.tar.gz' boot_1.3-28.1.orig.tar.gz 236854 SHA256:d4cde76fcc8ccc7ffa329de69147b66a6a93a10188e89342fd18207b1d02ff53
-'http://deb.debian.org/debian/pool/main/b/boot/boot_1.3-28.1-1.debian.tar.xz' boot_1.3-28.1-1.debian.tar.xz 5344 SHA256:b8aa9a51db4cd1d8a7e77a17772e2619cc952fbea54aeec37791d1bbc23b6fed
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/boot/1.3-28.1-1/
 
-- https://sources.debian.net/src/boot/1.3-28.1-1/ (for browsing the source)
-- https://sources.debian.net/src/boot/1.3-28.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/boot/1.3-28.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `brotli=1.1.0-2`
 
@@ -649,9 +642,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris dpkg=1.22.4
-'http://http.debian.net/debian/pool/main/d/dpkg/dpkg_1.22.4.dsc' dpkg_1.22.4.dsc 3041 SHA256:ee53c49c12d0f7e7616f0143fdbd6f587ed68c5241a739e9224302fa165e2f95
-'http://http.debian.net/debian/pool/main/d/dpkg/dpkg_1.22.4.tar.xz' dpkg_1.22.4.tar.xz 5623080 SHA256:40818c174e6074a190e0013fa0ea8b04db743b8e5e7a7818239510fbb4e6eb1d
+'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.4.dsc' dpkg_1.22.4.dsc 3041 SHA256:ee53c49c12d0f7e7616f0143fdbd6f587ed68c5241a739e9224302fa165e2f95
+'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.4.tar.xz' dpkg_1.22.4.tar.xz 5623080 SHA256:40818c174e6074a190e0013fa0ea8b04db743b8e5e7a7818239510fbb4e6eb1d
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/dpkg/1.22.4/ (for browsing the source)
+- https://sources.debian.net/src/dpkg/1.22.4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dpkg/1.22.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.47.0-2`
 
@@ -1036,11 +1035,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glib2.0=2.78.3-2
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.78.3-2.dsc' glib2.0_2.78.3-2.dsc 3551 SHA256:e29d0e77603b8cb4a7781646b490a9902467716d73d7983c4ddd6401d1f1ebcc
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.78.3.orig-unicode-data.tar.xz' glib2.0_2.78.3.orig-unicode-data.tar.xz 266184 SHA256:7c3e36ec1356ac025a92169b74c4c3e6858345f59ed4ea4cf0db300dec4fa21a
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.78.3.orig.tar.xz' glib2.0_2.78.3.orig.tar.xz 5321388 SHA256:609801dd373796e515972bf95fc0b2daa44545481ee2f465c4f204d224b2bc21
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.78.3-2.debian.tar.xz' glib2.0_2.78.3-2.debian.tar.xz 120396 SHA256:da1ab2fae981d9e4132795f5ec527cc398983aa1a94251c48b3e98e536a39a07
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.78.3-2.dsc' glib2.0_2.78.3-2.dsc 3551 SHA256:e29d0e77603b8cb4a7781646b490a9902467716d73d7983c4ddd6401d1f1ebcc
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.78.3.orig-unicode-data.tar.xz' glib2.0_2.78.3.orig-unicode-data.tar.xz 266184 SHA256:7c3e36ec1356ac025a92169b74c4c3e6858345f59ed4ea4cf0db300dec4fa21a
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.78.3.orig.tar.xz' glib2.0_2.78.3.orig.tar.xz 5321388 SHA256:609801dd373796e515972bf95fc0b2daa44545481ee2f465c4f204d224b2bc21
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.78.3-2.debian.tar.xz' glib2.0_2.78.3-2.debian.tar.xz 120396 SHA256:da1ab2fae981d9e4132795f5ec527cc398983aa1a94251c48b3e98e536a39a07
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/glib2.0/2.78.3-2/ (for browsing the source)
+- https://sources.debian.net/src/glib2.0/2.78.3-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glib2.0/2.78.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.37-15~deb13u1`
 
@@ -1566,11 +1571,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libbsd=0.11.8-1
-'http://http.debian.net/debian/pool/main/libb/libbsd/libbsd_0.11.8-1.dsc' libbsd_0.11.8-1.dsc 2347 SHA256:ca60717663ed359f4ec7a854976242a9c4307923e5c6f9eb87a06707e8b447ba
-'http://http.debian.net/debian/pool/main/libb/libbsd/libbsd_0.11.8.orig.tar.xz' libbsd_0.11.8.orig.tar.xz 432376 SHA256:55fdfa2696fb4d55a592fa9ad14a9df897c7b0008ddb3b30c419914841f85f33
-'http://http.debian.net/debian/pool/main/libb/libbsd/libbsd_0.11.8.orig.tar.xz.asc' libbsd_0.11.8.orig.tar.xz.asc 931 SHA256:938fcc5b81422c36aae2417c0aacbc3bb782ab8e5def916c5ae473ed2b45df6a
-'http://http.debian.net/debian/pool/main/libb/libbsd/libbsd_0.11.8-1.debian.tar.xz' libbsd_0.11.8-1.debian.tar.xz 18288 SHA256:6764507e51c10c135d98b66693fd17e0d41673ce0352340c4396788cf904a0a5
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.11.8-1.dsc' libbsd_0.11.8-1.dsc 2347 SHA256:ca60717663ed359f4ec7a854976242a9c4307923e5c6f9eb87a06707e8b447ba
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.11.8.orig.tar.xz' libbsd_0.11.8.orig.tar.xz 432376 SHA256:55fdfa2696fb4d55a592fa9ad14a9df897c7b0008ddb3b30c419914841f85f33
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.11.8.orig.tar.xz.asc' libbsd_0.11.8.orig.tar.xz.asc 931 SHA256:938fcc5b81422c36aae2417c0aacbc3bb782ab8e5def916c5ae473ed2b45df6a
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.11.8-1.debian.tar.xz' libbsd_0.11.8-1.debian.tar.xz 18288 SHA256:6764507e51c10c135d98b66693fd17e0d41673ce0352340c4396788cf904a0a5
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libbsd/0.11.8-1/ (for browsing the source)
+- https://sources.debian.net/src/libbsd/0.11.8-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libbsd/0.11.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.8.4-1`
 
@@ -1673,20 +1684,13 @@ Licenses: (parsed from: `/usr/share/doc/libffi8/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libffi=3.4.4-2
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.4.4-2.dsc' libffi_3.4.4-2.dsc 1951 SHA256:ece62406f97ba791be56d614c44d7e3ade1f32e3f2bdb6e4b17de84e29278f8a
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.4.4.orig.tar.gz' libffi_3.4.4.orig.tar.gz 1362394 SHA256:d66c56ad259a82cf2a9dfc408b32bf5da52371500b84745f7fb8b645712df676
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.4.4-2.debian.tar.xz' libffi_3.4.4-2.debian.tar.xz 14172 SHA256:c49678cfcd2757007f95bc85e695b0aefe6bf83e6806a2cd3a94f33ab9b6b1d9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libffi/3.4.4-2/
 
-- https://sources.debian.net/src/libffi/3.4.4-2/ (for browsing the source)
-- https://sources.debian.net/src/libffi/3.4.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libffi/3.4.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgcrypt20=1.10.3-2`
 
@@ -1906,10 +1910,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libpng1.6=1.6.42-1
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.42-1.dsc' libpng1.6_1.6.42-1.dsc 2241 SHA256:a5e76ea544620bd5a052e8fbba32ea48ef9c2df8513fa4f77578cf9ffd20b18d
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.42.orig.tar.gz' libpng1.6_1.6.42.orig.tar.gz 1542966 SHA256:fe89de292e223829859d21990d9c4d6b7e30e295a268f6a53a022611aa98bd67
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.42-1.debian.tar.xz' libpng1.6_1.6.42-1.debian.tar.xz 31232 SHA256:40503aba31d34c524d410ca8e5ab51752c6f27020a072b1572e0a519aff30821
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.42-1.dsc' libpng1.6_1.6.42-1.dsc 2241 SHA256:a5e76ea544620bd5a052e8fbba32ea48ef9c2df8513fa4f77578cf9ffd20b18d
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.42.orig.tar.gz' libpng1.6_1.6.42.orig.tar.gz 1542966 SHA256:fe89de292e223829859d21990d9c4d6b7e30e295a268f6a53a022611aa98bd67
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.42-1.debian.tar.xz' libpng1.6_1.6.42-1.debian.tar.xz 31232 SHA256:40503aba31d34c524d410ca8e5ab51752c6f27020a072b1572e0a519aff30821
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libpng1.6/1.6.42-1/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.42-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.42-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1`
 
@@ -2855,10 +2865,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pango1.0=1.51.0+ds-4
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.51.0%2bds-4.dsc' pango1.0_1.51.0+ds-4.dsc 3654 SHA256:72d88f378dcd67daf16e803cb59b74cb67996e01a55a48c497ee6d061949a1af
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.51.0%2bds.orig.tar.xz' pango1.0_1.51.0+ds.orig.tar.xz 1731104 SHA256:df51bb6819e91fda4f6c8ba8d2bd51e437e6f7daa86419d69a15e33a99002170
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.51.0%2bds-4.debian.tar.xz' pango1.0_1.51.0+ds-4.debian.tar.xz 41724 SHA256:30e6a27c1a1f441934e712e34e68462b442f5134208a44505464b53be3bfc740
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.51.0%2bds-4.dsc' pango1.0_1.51.0+ds-4.dsc 3654 SHA256:72d88f378dcd67daf16e803cb59b74cb67996e01a55a48c497ee6d061949a1af
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.51.0%2bds.orig.tar.xz' pango1.0_1.51.0+ds.orig.tar.xz 1731104 SHA256:df51bb6819e91fda4f6c8ba8d2bd51e437e6f7daa86419d69a15e33a99002170
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.51.0%2bds-4.debian.tar.xz' pango1.0_1.51.0+ds-4.debian.tar.xz 41724 SHA256:30e6a27c1a1f441934e712e34e68462b442f5134208a44505464b53be3bfc740
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/pango1.0/1.51.0+ds-4/ (for browsing the source)
+- https://sources.debian.net/src/pango1.0/1.51.0+ds-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pango1.0/1.51.0+ds-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-7`
 
@@ -3355,10 +3371,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=255.3-2
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_255.3-2.dsc' systemd_255.3-2.dsc 7045 SHA256:4b8806cb37214c9006e1f74bc16b5d1969b9296c59713de23247084566ccdbda
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_255.3.orig.tar.gz' systemd_255.3.orig.tar.gz 14873273 SHA256:27807c65f969d0e0e44629dee8379e1e2c30e6c5e84be0389438c4ab1b225000
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_255.3-2.debian.tar.xz' systemd_255.3-2.debian.tar.xz 174204 SHA256:1d1af57206309837dc65b4a233ffa14cc7c7ceefbe8b4c4a224b9bc05872a5e7
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.3-2.dsc' systemd_255.3-2.dsc 7045 SHA256:4b8806cb37214c9006e1f74bc16b5d1969b9296c59713de23247084566ccdbda
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.3.orig.tar.gz' systemd_255.3.orig.tar.gz 14873273 SHA256:27807c65f969d0e0e44629dee8379e1e2c30e6c5e84be0389438c4ab1b225000
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.3-2.debian.tar.xz' systemd_255.3-2.debian.tar.xz 174204 SHA256:1d1af57206309837dc65b4a233ffa14cc7c7ceefbe8b4c4a224b9bc05872a5e7
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/systemd/255.3-2/ (for browsing the source)
+- https://sources.debian.net/src/systemd/255.3-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/255.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.08-6`
 
