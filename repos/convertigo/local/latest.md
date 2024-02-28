@@ -232,14 +232,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.34-6ubuntu1.8
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.8.dsc' binutils_2.34-6ubuntu1.8.dsc 8521 SHA512:73cc3af442e392b7b070f03417db3dd5f7b0a0aef58ee58abe7dc0fdd6a4aa5f07ed772536ee51c00ee57dfb5c7e302ee402bc2c583ba9977044d86d3d4565fd
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34.orig.tar.xz' binutils_2.34.orig.tar.xz 21637796 SHA512:2c7976939dcf5e8c5b7374cccd39bfe803b1bec73c6abfa0eb17c24e1942574c6bdb874c66a092a82adc443182eacd8a5a8001c19a76101f0c7ba40c27de0bbd
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.8.debian.tar.xz' binutils_2.34-6ubuntu1.8.debian.tar.xz 168440 SHA512:33cf58aeb644bc6c274b6abd19209a957048d16a6c1f37165e256b717e0cdf48f81ff611c952f98bbd186895f6b6d5bb3c3f7459131d4d6d0d64798ec4597547
-```
 
 ### `dpkg` source package: `brotli=1.0.7-6ubuntu0.1`
 
@@ -1444,14 +1439,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.21
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.21.dsc' openssl_1.1.1f-1ubuntu2.21.dsc 2470 SHA512:b0fa9fdce5cd5b9385962386a3d720ba5ea3f01e87bdf32c7b32fb2bad42b5ac144ad22608c4efdd225eb3d27c1d1ca767b4adb1dfdd97e4c7dff1047970b103
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.21.debian.tar.xz' openssl_1.1.1f-1ubuntu2.21.debian.tar.xz 235076 SHA512:02ddcc12610f0540cceaf29640911959f3cad9139604ff36c4583fe56af0afd49b8becf26ff19f4d75e81e6c5755b8a16d1919a496470d9a6b9b6203c1077747
-```
 
 ### `dpkg` source package: `p11-kit=0.23.20-1ubuntu0.1`
 
