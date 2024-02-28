@@ -1,10 +1,10 @@
-# `unit:1.31.1-php8.2`
+# `unit:1.32.0-php8.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:90646c0b14e0321307009278742e064cdee61c9d9861bca5d228a592b10e35e4`
-- Created: `2023-10-19T10:47:22Z`
-- Virtual Size: ~ 505.97 Mb  
+- Image ID: `sha256:ea822f7e1fb89a6fffc66c0f7e04dd8c4f1fc0c95855da78f02da8348cb3b848`
+- Created: `2024-02-27T15:15:42Z`
+- Virtual Size: ~ 504.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -28,7 +28,7 @@
   - `org.opencontainers.image.title=Unit (php8.2)`
   - `org.opencontainers.image.url=https://unit.nginx.org`
   - `org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>`
-  - `org.opencontainers.image.version=1.31.1`
+  - `org.opencontainers.image.version=1.32.0`
 
 ## `dpkg` (`.deb`-based packages)
 

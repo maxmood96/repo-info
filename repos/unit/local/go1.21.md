@@ -1,10 +1,10 @@
-# `unit:1.31.1-go1.21`
+# `unit:1.32.0-go1.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:94c8354cfdbed3d10afb992fa1af9332d004eb334466cf48425e1e19d698aa8c`
-- Created: `2023-10-19T10:47:22Z`
-- Virtual Size: ~ 766.89 Mb  
+- Image ID: `sha256:8f88099104952f50140d95ca63a79502eb485cef6d2cb4130aba0839f30b9c46`
+- Created: `2024-02-27T15:15:42Z`
+- Virtual Size: ~ 766.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -21,7 +21,7 @@
   - `org.opencontainers.image.title=Unit (go1.21)`
   - `org.opencontainers.image.url=https://unit.nginx.org`
   - `org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>`
-  - `org.opencontainers.image.version=1.31.1`
+  - `org.opencontainers.image.version=1.32.0`
 
 ## `dpkg` (`.deb`-based packages)
 

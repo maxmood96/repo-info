@@ -1,10 +1,10 @@
-# `unit:1.31.1-python3.11`
+# `unit:1.32.0-python3.12`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a04cd49af3a960d979676ecc7599fed2248e20295d1577f6c8d0c736a4b7c01d`
-- Created: `2023-10-19T10:47:22Z`
-- Virtual Size: ~ 940.91 Mb  
+- Image ID: `sha256:bba9c08e0d127ccb70c5a9b6dadd0d967d638b663237266b8785f72741473bfb`
+- Created: `2024-02-27T15:15:42Z`
+- Virtual Size: ~ 952.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -12,20 +12,19 @@
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D`
-  - `PYTHON_VERSION=3.11.8`
+  - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
+  - `PYTHON_VERSION=3.12.2`
   - `PYTHON_PIP_VERSION=24.0`
-  - `PYTHON_SETUPTOOLS_VERSION=65.5.1`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/dbf0c85f76fb6e1ab42aa672ffca6f0a675d9ee4/public/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=dfe9fd5c28dc98b5ac17979a953ea550cec37ae1b47a5116007395bfacff2ab9`
 - Labels:
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
   - `org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images`
   - `org.opencontainers.image.source=https://github.com/nginx/unit`
-  - `org.opencontainers.image.title=Unit (python3.11)`
+  - `org.opencontainers.image.title=Unit (python3.12)`
   - `org.opencontainers.image.url=https://unit.nginx.org`
   - `org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>`
-  - `org.opencontainers.image.version=1.31.1`
+  - `org.opencontainers.image.version=1.32.0`
 
 ## `dpkg` (`.deb`-based packages)
 

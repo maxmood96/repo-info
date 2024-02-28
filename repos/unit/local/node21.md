@@ -1,31 +1,26 @@
-# `unit:1.31.1-ruby3.2`
+# `unit:1.32.0-node21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:19b7beb2a48514f3b52a71ea87f123feacf4f57fc368c55e7c52ae51dfa63035`
-- Created: `2023-10-19T10:47:22Z`
-- Virtual Size: ~ 912.34 Mb  
+- Image ID: `sha256:d8db26e08b2db06aa38d9adb246677f850a98a0d1ebc4abc5df519f09fc2fd57`
+- Created: `2024-02-27T15:15:42Z`
+- Virtual Size: ~ 1.04 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
 - Command: `["unitd","--no-daemon","--control","unix:/var/run/control.unit.sock"]`
 - Environment:
-  - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.2.3`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.3.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=cfb231954b8c241043a538a4c682a1cca0b2016d835fee0b9e4a0be3ceba476b`
-  - `GEM_HOME=/usr/local/bundle`
-  - `BUNDLE_SILENCE_ROOT_WARNING=1`
-  - `BUNDLE_APP_CONFIG=/usr/local/bundle`
+  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `NODE_VERSION=21.6.2`
+  - `YARN_VERSION=1.22.19`
 - Labels:
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
   - `org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images`
   - `org.opencontainers.image.source=https://github.com/nginx/unit`
-  - `org.opencontainers.image.title=Unit (ruby3.2)`
+  - `org.opencontainers.image.title=Unit (node21)`
   - `org.opencontainers.image.url=https://unit.nginx.org`
   - `org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>`
-  - `org.opencontainers.image.version=1.31.1`
+  - `org.opencontainers.image.version=1.32.0`
 
 ## `dpkg` (`.deb`-based packages)
 

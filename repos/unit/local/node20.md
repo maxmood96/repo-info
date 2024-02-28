@@ -1,9 +1,9 @@
-# `unit:1.31.1-node20`
+# `unit:1.32.0-node20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d6a624eedae17e5753b4cc673c564135fd77c1c82aeb52bac3d05dda1769a1d7`
-- Created: `2023-10-19T10:47:22Z`
+- Image ID: `sha256:922e4ee335af0846c00a1a0e8389f8b1ca72b080b5f4d8d12d30d5dea9030d10`
+- Created: `2024-02-27T15:15:42Z`
 - Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -20,7 +20,7 @@
   - `org.opencontainers.image.title=Unit (node20)`
   - `org.opencontainers.image.url=https://unit.nginx.org`
   - `org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>`
-  - `org.opencontainers.image.version=1.31.1`
+  - `org.opencontainers.image.version=1.32.0`
 
 ## `dpkg` (`.deb`-based packages)
 
