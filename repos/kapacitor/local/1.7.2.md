@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ebc0c7402165af22fb742158bfb047b4bd0172ad11e62ba4cc65b354e43e322d`
-- Created: `2024-02-16T09:12:14.152311399Z`
-- Virtual Size: ~ 313.97 Mb  
+- Image ID: `sha256:ed52f27cbadace622f4dc8f01dde72586797f967ba7d5a7d319de4ada919133a`
+- Created: `2024-02-27T21:00:58.843999234Z`
+- Virtual Size: ~ 320.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["kapacitord"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `KAPACITOR_VERSION=1.7.1`
+  - `KAPACITOR_VERSION=1.7.2`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -753,11 +753,11 @@ $ apt-get source -qq --print-uris init-system-helpers=1.62
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.62.tar.xz' init-system-helpers_1.62.tar.xz 42144 SHA512:d90f12e642d086bd0d560ece87d119079c164b90ddbb77b2f804979540095b655715febbc2a5b0d50d7f94434d1ff7c0f4044d5d5411916fbca8300f3f88da7f
 ```
 
-### `dpkg` source package: `kapacitor=1.7.1-1`
+### `dpkg` source package: `kapacitor=1.7.2-1`
 
 Binary Packages:
 
-- `kapacitor=1.7.1-1`
+- `kapacitor=1.7.2-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1485,15 +1485,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.14
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.14.dsc' openssl_3.0.2-0ubuntu1.14.dsc 2730 SHA512:b1897ad335d3fe41f801248d9765977c25cf81a02cd25b6a4f61d97b33d13444125a4e8b2c46d39a1e53f922ff517aa92660851552a68d1e1dc172d72bceb77a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.14.debian.tar.xz' openssl_3.0.2-0ubuntu1.14.debian.tar.xz 223084 SHA512:3b3a34429981694643d873e21c8ae07bbd2f127fdf1c64a19cdd72f11380231a96ded752122f605c269d574cc5266a7b63a9acfd2945d0ee967405d792368a86
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
