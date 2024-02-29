@@ -202,14 +202,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.34-6ubuntu1.8
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.8.dsc' binutils_2.34-6ubuntu1.8.dsc 8521 SHA512:73cc3af442e392b7b070f03417db3dd5f7b0a0aef58ee58abe7dc0fdd6a4aa5f07ed772536ee51c00ee57dfb5c7e302ee402bc2c583ba9977044d86d3d4565fd
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34.orig.tar.xz' binutils_2.34.orig.tar.xz 21637796 SHA512:2c7976939dcf5e8c5b7374cccd39bfe803b1bec73c6abfa0eb17c24e1942574c6bdb874c66a092a82adc443182eacd8a5a8001c19a76101f0c7ba40c27de0bbd
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.8.debian.tar.xz' binutils_2.34-6ubuntu1.8.debian.tar.xz 168440 SHA512:33cf58aeb644bc6c274b6abd19209a957048d16a6c1f37165e256b717e0cdf48f81ff611c952f98bbd186895f6b6d5bb3c3f7459131d4d6d0d64798ec4597547
-```
 
 ### `dpkg` source package: `brotli=1.0.7-6ubuntu0.1`
 
@@ -1002,14 +997,9 @@ Licenses: (parsed from: `/usr/share/doc/less/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris less=551-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/less/less_551-1ubuntu0.1.dsc' less_551-1ubuntu0.1.dsc 1896 SHA512:36327d6d40de19ef896fdc1e1d49580442a06a423c0a758a1b7e0bb9403a4beb123d43fc1c8d9a371e4f65b343f4ee8526cc86f85474c597fa63c0d288a467f1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/less/less_551.orig.tar.gz' less_551.orig.tar.gz 347007 SHA512:ef5296b9ebd72f83c05cad8a0f7a5eec2290e9b358ee725e09e8541bd95f94c0e14ea22aa04b287a0654079338eaeae813f2235b8e9f819fbbc9040dd65a9585
-'http://archive.ubuntu.com/ubuntu/pool/main/l/less/less_551-1ubuntu0.1.debian.tar.xz' less_551-1ubuntu0.1.debian.tar.xz 18896 SHA512:b903f507df5da4cb5ad9bdeb462d8f65bd0ee85aec63c5bcfe74e1578294be762d4b44c958fcb2a631b40479fe656b006f9c931a7a35b175fc477b3b4d45fc86
-```
 
 ### `dpkg` source package: `libbsd=0.10.0-1`
 
