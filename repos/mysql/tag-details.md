@@ -1054,7 +1054,12 @@ $ docker pull mysql@sha256:71bd429485fbd27de87bc6df70171585bab325ba725fe33f41638
 
 ## `mysql:8.0-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mysql:8.0-debian`
 
@@ -1994,7 +1999,12 @@ $ docker pull mysql@sha256:71bd429485fbd27de87bc6df70171585bab325ba725fe33f41638
 
 ## `mysql:8.0.36-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull mysql@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mysql:8.0.36-debian`
 
