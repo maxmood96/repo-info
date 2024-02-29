@@ -1,10 +1,10 @@
-# `docker:25.0.3-git`
+# `docker:25.0.3-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a92f5a7949b1ee0adcba969a419a89a0df8b3ea53f81ee8ecd153da776db5f57`
-- Created: `2024-01-19T12:04:26Z`
-- Virtual Size: ~ 348.58 Mb  
+- Image ID: `sha256:e5fbe8997fd9ff8f2894874c12a4fbc5fc1bb42d08a7db8433bbe09066562a2a`
+- Created: `2024-02-23T19:50:50Z`
+- Virtual Size: ~ 348.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
