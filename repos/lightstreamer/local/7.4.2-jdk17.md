@@ -1,10 +1,10 @@
-# `lightstreamer:7.4.1-jdk17-temurin`
+# `lightstreamer:7.4.2-jdk17-temurin`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bb56ce56d6f54f91e9c133a53118beca7757723b700e601bf878759c6ea32b54`
-- Created: `2024-02-16T04:05:48.48311818Z`
-- Virtual Size: ~ 483.81 Mb  
+- Image ID: `sha256:87aac56ae746c9ab984e29f7c497779bbffd8f1bed4cb3a67e7a5c826e1496bd`
+- Created: `2024-02-29T19:21:46.588008607Z`
+- Virtual Size: ~ 484.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,8 +16,8 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.10+7`
-  - `LIGHTSTREAMER_VERSION=7.4.1`
-  - `LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.1/Lightstreamer-7.4.1.tar.gz`
+  - `LIGHTSTREAMER_VERSION=7.4.2`
+  - `LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.2/Lightstreamer-7.4.2.tar.gz`
 - Labels:
   - `maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>`
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -1968,15 +1968,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2023d-0ubuntu0.22.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d-0ubuntu0.22.04.dsc' tzdata_2023d-0ubuntu0.22.04.dsc 2501 SHA512:492604b865c2ef53782d8f0ab74403876866e34c3f2dbb8512edace1a9f95fddf7d24534d9f7cb93e788b9c56bf579270f40151830f139cc03e40ef81a5a7622
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d.orig.tar.gz' tzdata_2023d.orig.tar.gz 449767 SHA512:81832b2d738c28cecbcb3906cc07568c5ae574adc9de35b25d4bf613581c92d471d67213b4261a56f0ec02efcf211b4e298b7e1dc367c972e726b0a2e9498df4
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d.orig.tar.gz.asc' tzdata_2023d.orig.tar.gz.asc 833 SHA512:3266f0ad4e05365fb09d48b9baeb884447cc4c16ecd4f0d2bf5f25b0aabe03b48fca11c19379a45545dc4f41acc68633c624d99d2700f439d9233ecab6d1f184
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d-0ubuntu0.22.04.debian.tar.xz' tzdata_2023d-0ubuntu0.22.04.debian.tar.xz 175044 SHA512:a50f220a034c2116ccb02d757102019b2976cec3d052034f6ffa03f40c291f96cbdbb150e16772ae385a088969873b181e542c57a90b068361b7701c876cea71
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
 
