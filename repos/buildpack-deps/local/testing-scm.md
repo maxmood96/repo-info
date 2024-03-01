@@ -1278,21 +1278,13 @@ Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 - `ISC-Original`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libbsd=0.11.8-1
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.11.8-1.dsc' libbsd_0.11.8-1.dsc 2347 SHA256:ca60717663ed359f4ec7a854976242a9c4307923e5c6f9eb87a06707e8b447ba
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.11.8.orig.tar.xz' libbsd_0.11.8.orig.tar.xz 432376 SHA256:55fdfa2696fb4d55a592fa9ad14a9df897c7b0008ddb3b30c419914841f85f33
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.11.8.orig.tar.xz.asc' libbsd_0.11.8.orig.tar.xz.asc 931 SHA256:938fcc5b81422c36aae2417c0aacbc3bb782ab8e5def916c5ae473ed2b45df6a
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.11.8-1.debian.tar.xz' libbsd_0.11.8-1.debian.tar.xz 18288 SHA256:6764507e51c10c135d98b66693fd17e0d41673ce0352340c4396788cf904a0a5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libbsd/0.11.8-1/
 
-- https://sources.debian.net/src/libbsd/0.11.8-1/ (for browsing the source)
-- https://sources.debian.net/src/libbsd/0.11.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libbsd/0.11.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.8.4-1`
 
@@ -2303,21 +2295,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.6p1-3
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.6p1-3.dsc' openssh_9.6p1-3.dsc 3344 SHA256:f81df50f2a7609d9930fcf9d6886220efc34c73cdf163727c1d8f4b9362c69ec
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA256:910211c07255a8c5ad654391b40ee59800710dd8119dd5362de09385aa7a777c
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA256:9b1e931cbc811f02e91f7eacd55f8211cc45dade11975462f4b0dcdad29927aa
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.6p1-3.debian.tar.xz' openssh_9.6p1-3.debian.tar.xz 188528 SHA256:e40384b5d55d7cab5e8718012bb71a7c04a40c90d904c7ae59f5560c2eca9287
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:9.6p1-3/
 
-- https://sources.debian.net/src/openssh/1:9.6p1-3/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:9.6p1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:9.6p1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.1.5-1`
 

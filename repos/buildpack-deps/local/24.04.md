@@ -822,14 +822,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/li
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.5.0-2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.5.0-2.dsc' expat_2.5.0-2.dsc 1964 SHA512:a71f12ab67b948e890dd1d7e00339acb22cef4f834bc2cd26cbfc04eb5e0d65d56a22e41d384394862104e2e8da0309f4029b059a7adcfdc2d0b0d1acc64ca28
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.5.0.orig.tar.gz' expat_2.5.0.orig.tar.gz 8320988 SHA512:779f0d0f3f2d8b33db0fd044864ab5ab1a40f20501f792fe90ad0d18de536c4765c3749f120e21fec11a0e6c89af1dc576d1fe261c871ca44a594f7b61fd1d9e
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.5.0-2.debian.tar.xz' expat_2.5.0-2.debian.tar.xz 12804 SHA512:3603f3f3f3e4f0bc2c7a29a25aa7c9681ff4a93d48b7e5fabb0d58f8e048c3d7eb0487140f813bd925c4cb2b956a3bd2f68d8c3d75f79066624d83445739cb57
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/expat/2.5.0-2/
+
 
 ### `dpkg` source package: `fftw3=3.3.10-1ubuntu1`
 
@@ -1039,14 +1038,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-13/copyright`, `/usr/share/doc/cpp-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-13=13.2.0-13ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.2.0-13ubuntu1.dsc' gcc-13_13.2.0-13ubuntu1.dsc 39472 SHA512:4c52433a2b1f4d808d6e4c9d45ecdf4d52e85620e4d2b674f3132d05a8b8092247db253dbf71ed6e77c6fd2e93d2b670eef25d643fcbd5ec6876ad1515c3ae10
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.2.0.orig.tar.gz' gcc-13_13.2.0.orig.tar.gz 92596024 SHA512:cf149aff3cbee36bf23987e91016fa3f93dbcba8c88319876e6aa3cacd1dacea27d06ea7c4da6394a56d7d9d4f14ac928ead7d25502f0cc6db558f7f5cd99dff
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.2.0-13ubuntu1.debian.tar.xz' gcc-13_13.2.0-13ubuntu1.debian.tar.xz 1792336 SHA512:8baa552ad2a080124dcfdfc1680a2523d41212f129b8315b6710144197de0a79a033a58b907c1deb3c4690e74b682d795273180553b83d01fa6d7283aefef728
-```
 
 ### `dpkg` source package: `gcc-14=14-20240201-3ubuntu1`
 
@@ -1075,14 +1069,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-14-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-14=14-20240201-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14-20240201-3ubuntu1.dsc' gcc-14_14-20240201-3ubuntu1.dsc 46880 SHA512:f6d63a9f5369b5f0878357bea57becba14f41a70ef37559cdb356f59fdacbc05f6519bc6cf2a14ed54255b1c13a14097f63fc7eb4ab90df52c777c3bc14e3d6f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14-20240201.orig.tar.gz' gcc-14_14-20240201.orig.tar.gz 90968295 SHA512:71d3e24da9d1becb6d6903752830631060fe784075dc241c9b1a1743b5f7a2ff95962ee5af0eeef8f5ebe0f2282b81e20671a681350b72d8c131a1014d73ac13
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14-20240201-3ubuntu1.debian.tar.xz' gcc-14_14-20240201-3ubuntu1.debian.tar.xz 539256 SHA512:44b1c181d4d8078987d64a6e5eab709fab88c5760347273ccca3d9cf4f8a3a83a151ecc1c705efd1e0ab7b6f4591f96a182ca7c38912ba8bc091f723f61976f9
-```
 
 ### `dpkg` source package: `gcc-defaults=1.214ubuntu1`
 
@@ -2479,14 +2468,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.42-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.42-1.dsc' libpng1.6_1.6.42-1.dsc 2241 SHA512:58f6042b0ffb6d9b69fa003bda328387c690c8c636b3354a56eb205ae2b60921cc0e89df3cc4983b3272e43932f53d1e53b45d1f4384ef574b21552e4cbc0572
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.42.orig.tar.gz' libpng1.6_1.6.42.orig.tar.gz 1542966 SHA512:f438ab7941c383e8267b2cc49bb2563520eb25189a1c3453f0474b91ac6940245904c9c871efe057507f8a31b4603739b10886c3a1da2bf867ae58f05055a07d
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.42-1.debian.tar.xz' libpng1.6_1.6.42-1.debian.tar.xz 31232 SHA512:04a4b87189472770267d316f964163ba178ae3ac2840490337f20971e6d6b1d7e916c82dd6d66e80cbf861c9acffe52ca6fd1ad2b5672b155cdf45774198d2c0
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libpng1.6/1.6.42-1/
+
 
 ### `dpkg` source package: `libpsl=0.21.2-1build1`
 
@@ -3540,14 +3528,9 @@ Licenses: (parsed from: `/usr/share/doc/libnpth0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris npth=1.6-3build2
-'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3build2.dsc' npth_1.6-3build2.dsc 2063 SHA512:19ea7bd0ffc2b0aff06c52298c9a25c2f30619239bea09b571feb4a3d162f461a4529136e351da42b16ab3eaef5add24234f644e822e859ccb32de5bfd658ec0
-'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6.orig.tar.bz2' npth_1.6.orig.tar.bz2 300486 SHA512:2ed1012e14a9d10665420b9a23628be7e206fd9348111ec751349b93557ee69f1176bcf7e6b195b35b1c44a5e0e81ee33b713f03d79a33d1ecd9037035afeda2
-'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3build2.debian.tar.xz' npth_1.6-3build2.debian.tar.xz 10904 SHA512:426ab3ab9e27b3701d67cde0a4c4040aa9ccac22a0266321824487fe80a118ccd6860b6fa0fb5ca3c46dfa3c20053889fbb51a2e74618065b3aff059a0216c4c
-```
 
 ### `dpkg` source package: `numpy=1:1.24.2-2`
 

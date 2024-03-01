@@ -1003,10 +1003,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris e2fsprogs=1.47.0-2
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.0-2.dsc' e2fsprogs_1.47.0-2.dsc 2846 SHA256:35b4de254e021f721362b767994598e249fea02e38ac446197cd9c22be1130fd
+'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.0-2.3.dsc' e2fsprogs_1.47.0-2.3.dsc 3148 SHA256:a1c0f31f77ae3ddb823a13561df02d3cd6a655bb735bb572617ddc6d104acee4
 'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.0.orig.tar.gz' e2fsprogs_1.47.0.orig.tar.gz 9637717 SHA256:6667afde56eef0c6af26684974400e4d2288ea49e9441bf5e6229195d51a3578
 'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.0.orig.tar.gz.asc' e2fsprogs_1.47.0.orig.tar.gz.asc 488 SHA256:704928204a52ddaa0ac8ef549c1bfba3c38e66c361d3853c8a4c38e6082b90f1
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.0-2.debian.tar.xz' e2fsprogs_1.47.0-2.debian.tar.xz 87328 SHA256:3a756e08d300666039e34577293d11d70c7a1da7850fad478580a81af6348277
+'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.0-2.3.debian.tar.xz' e2fsprogs_1.47.0-2.3.debian.tar.xz 87780 SHA256:d7a35e13ccd97bb488d2afbe8e5fadc95d2173ac3fc3f989c00dacb3f5b9b551
 ```
 
 Other potentially useful URLs:
@@ -1040,9 +1040,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris elfutils=0.190-1
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.190-1.dsc' elfutils_0.190-1.dsc 3248 SHA256:7fe52e8c06c8270aaed8da26d88ad36de9db02d8398d911ef9c4dbb80777ae6e
+'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.190-1.1.dsc' elfutils_0.190-1.1.dsc 3283 SHA256:ed386142ef928638225e58bd9cd469969a16bfb3a71d7486f6c6ea33daf1503f
 'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.190.orig.tar.bz2' elfutils_0.190.orig.tar.bz2 9162766 SHA256:8e00a3a9b5f04bc1dc273ae86281d2d26ed412020b391ffcc23198f10231d692
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.190-1.debian.tar.xz' elfutils_0.190-1.debian.tar.xz 43220 SHA256:6bea598f52bb0247530ce8fc6edc739c44993381995913280880225bb411bdfc
+'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.190-1.1.debian.tar.xz' elfutils_0.190-1.1.debian.tar.xz 43492 SHA256:82e1e23ab046165d5237bcece53581503bdf31a14c9f78042e445af286839f0d
 ```
 
 Other potentially useful URLs:
@@ -1123,10 +1123,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris file=1:5.45-2
-'http://deb.debian.org/debian/pool/main/f/file/file_5.45-2.dsc' file_5.45-2.dsc 2240 SHA256:19e9b54d226b31f6cb9740330135bdf382213e27d5e6a73b47a94dd4c500f892
+'http://deb.debian.org/debian/pool/main/f/file/file_5.45-2.1.dsc' file_5.45-2.1.dsc 2276 SHA256:b5cdc0578f9447d55b8804b94f7aaf1bbac215c52896f5920ccb84c1ec6269cb
 'http://deb.debian.org/debian/pool/main/f/file/file_5.45.orig.tar.gz' file_5.45.orig.tar.gz 1246503 SHA256:fc97f51029bb0e2c9f4e3bffefdaf678f0e039ee872b9de5c002a6d09c784d82
 'http://deb.debian.org/debian/pool/main/f/file/file_5.45.orig.tar.gz.asc' file_5.45.orig.tar.gz.asc 169 SHA256:81aacbee95911bd9825e81748d42f41dadf846ba13165462dc428467ed9ee075
-'http://deb.debian.org/debian/pool/main/f/file/file_5.45-2.debian.tar.xz' file_5.45-2.debian.tar.xz 34452 SHA256:ae29610c9a6b82fff65b17140ba1cd91e01cda6406c66c12baeb3aadcdf82787
+'http://deb.debian.org/debian/pool/main/f/file/file_5.45-2.1.debian.tar.xz' file_5.45-2.1.debian.tar.xz 34612 SHA256:585ff50ee9d1a4f7eeb7f330999538c6f31ccae3e4d846e50cee0af718e346a8
 ```
 
 Other potentially useful URLs:
@@ -2030,9 +2030,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris imagemagick=8:6.9.12.98+dfsg1-5
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.12.98%2bdfsg1-5.dsc' imagemagick_6.9.12.98+dfsg1-5.dsc 5073 SHA256:398fb796393f63a6afd19822b9a139fbbff8bcbbb6d79e0c9c15ed1afdb18933
+'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.12.98%2bdfsg1-5.1.dsc' imagemagick_6.9.12.98+dfsg1-5.1.dsc 5117 SHA256:a3bcc6e48313f8bfc27fc03e6782624cde92d7b2588fe979d1d0750db548eb2c
 'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.12.98%2bdfsg1.orig.tar.xz' imagemagick_6.9.12.98+dfsg1.orig.tar.xz 9606104 SHA256:123a3d1109bf76601614df30d886099abd47aad1b5af8789fae0a954e7475e2d
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.12.98%2bdfsg1-5.debian.tar.xz' imagemagick_6.9.12.98+dfsg1-5.debian.tar.xz 260264 SHA256:d66bd1e69ddaaf25d3d1db49ac9c942ea7d92fc8cc44b501dbdf881f6ed78e1d
+'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.12.98%2bdfsg1-5.1.debian.tar.xz' imagemagick_6.9.12.98+dfsg1-5.1.debian.tar.xz 260592 SHA256:07c90afff01a31509952a97a9b10045507b969f21ae216d1501db81245cd8b79
 ```
 
 Other potentially useful URLs:
@@ -4690,20 +4690,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.2-9.1
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2-9.1.dsc' pam_1.5.2-9.1.dsc 2502 SHA256:d4b7fa6507e266e715b5d8474ef251d18478e5b69f494f41bbcc49122e4ca42b
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2.orig.tar.xz' pam_1.5.2.orig.tar.xz 988784 SHA256:e4ec7131a91da44512574268f493c6d8ca105c87091691b8e9b56ca685d4f94d
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2-9.1.debian.tar.xz' pam_1.5.2-9.1.debian.tar.xz 130160 SHA256:075dbb4cc5b9cd3260861e9e1f65db17f934ff5c02c574a9fdfe0cb334c2f1b5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pam/1.5.2-9.1/
 
-- https://sources.debian.net/src/pam/1.5.2-9.1/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.5.2-9.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.5.2-9.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pango1.0=1.51.0+ds-4`
 
@@ -4732,20 +4725,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.51.0+ds-4
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.51.0%2bds-4.dsc' pango1.0_1.51.0+ds-4.dsc 3654 SHA256:72d88f378dcd67daf16e803cb59b74cb67996e01a55a48c497ee6d061949a1af
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.51.0%2bds.orig.tar.xz' pango1.0_1.51.0+ds.orig.tar.xz 1731104 SHA256:df51bb6819e91fda4f6c8ba8d2bd51e437e6f7daa86419d69a15e33a99002170
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.51.0%2bds-4.debian.tar.xz' pango1.0_1.51.0+ds-4.debian.tar.xz 41724 SHA256:30e6a27c1a1f441934e712e34e68462b442f5134208a44505464b53be3bfc740
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.51.0+ds-4/
 
-- https://sources.debian.net/src/pango1.0/1.51.0+ds-4/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.51.0+ds-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.51.0+ds-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-7`
 
@@ -5520,20 +5506,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=255.3-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.3-2.dsc' systemd_255.3-2.dsc 7045 SHA256:4b8806cb37214c9006e1f74bc16b5d1969b9296c59713de23247084566ccdbda
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.3.orig.tar.gz' systemd_255.3.orig.tar.gz 14873273 SHA256:27807c65f969d0e0e44629dee8379e1e2c30e6c5e84be0389438c4ab1b225000
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.3-2.debian.tar.xz' systemd_255.3-2.debian.tar.xz 174204 SHA256:1d1af57206309837dc65b4a233ffa14cc7c7ceefbe8b4c4a224b9bc05872a5e7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/255.3-2/
 
-- https://sources.debian.net/src/systemd/255.3-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/255.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/255.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.08-6`
 

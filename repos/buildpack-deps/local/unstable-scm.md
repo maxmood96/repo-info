@@ -721,10 +721,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris e2fsprogs=1.47.0-2
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.0-2.dsc' e2fsprogs_1.47.0-2.dsc 2846 SHA256:35b4de254e021f721362b767994598e249fea02e38ac446197cd9c22be1130fd
+'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.0-2.3.dsc' e2fsprogs_1.47.0-2.3.dsc 3148 SHA256:a1c0f31f77ae3ddb823a13561df02d3cd6a655bb735bb572617ddc6d104acee4
 'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.0.orig.tar.gz' e2fsprogs_1.47.0.orig.tar.gz 9637717 SHA256:6667afde56eef0c6af26684974400e4d2288ea49e9441bf5e6229195d51a3578
 'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.0.orig.tar.gz.asc' e2fsprogs_1.47.0.orig.tar.gz.asc 488 SHA256:704928204a52ddaa0ac8ef549c1bfba3c38e66c361d3853c8a4c38e6082b90f1
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.0-2.debian.tar.xz' e2fsprogs_1.47.0-2.debian.tar.xz 87328 SHA256:3a756e08d300666039e34577293d11d70c7a1da7850fad478580a81af6348277
+'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.0-2.3.debian.tar.xz' e2fsprogs_1.47.0-2.3.debian.tar.xz 87780 SHA256:d7a35e13ccd97bb488d2afbe8e5fadc95d2173ac3fc3f989c00dacb3f5b9b551
 ```
 
 Other potentially useful URLs:
@@ -2401,20 +2401,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.2-9.1
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2-9.1.dsc' pam_1.5.2-9.1.dsc 2502 SHA256:d4b7fa6507e266e715b5d8474ef251d18478e5b69f494f41bbcc49122e4ca42b
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2.orig.tar.xz' pam_1.5.2.orig.tar.xz 988784 SHA256:e4ec7131a91da44512574268f493c6d8ca105c87091691b8e9b56ca685d4f94d
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.2-9.1.debian.tar.xz' pam_1.5.2-9.1.debian.tar.xz 130160 SHA256:075dbb4cc5b9cd3260861e9e1f65db17f934ff5c02c574a9fdfe0cb334c2f1b5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pam/1.5.2-9.1/
 
-- https://sources.debian.net/src/pam/1.5.2-9.1/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.5.2-9.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.5.2-9.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre2=10.42-4`
 
@@ -2905,20 +2898,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=255.3-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.3-2.dsc' systemd_255.3-2.dsc 7045 SHA256:4b8806cb37214c9006e1f74bc16b5d1969b9296c59713de23247084566ccdbda
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.3.orig.tar.gz' systemd_255.3.orig.tar.gz 14873273 SHA256:27807c65f969d0e0e44629dee8379e1e2c30e6c5e84be0389438c4ab1b225000
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.3-2.debian.tar.xz' systemd_255.3-2.debian.tar.xz 174204 SHA256:1d1af57206309837dc65b4a233ffa14cc7c7ceefbe8b4c4a224b9bc05872a5e7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/255.3-2/
 
-- https://sources.debian.net/src/systemd/255.3-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/255.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/255.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.08-6`
 
