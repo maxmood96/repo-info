@@ -3178,15 +3178,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.14
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.14.dsc' openssl_3.0.2-0ubuntu1.14.dsc 2730 SHA512:b1897ad335d3fe41f801248d9765977c25cf81a02cd25b6a4f61d97b33d13444125a4e8b2c46d39a1e53f922ff517aa92660851552a68d1e1dc172d72bceb77a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.14.debian.tar.xz' openssl_3.0.2-0ubuntu1.14.debian.tar.xz 223084 SHA512:3b3a34429981694643d873e21c8ae07bbd2f127fdf1c64a19cdd72f11380231a96ded752122f605c269d574cc5266a7b63a9acfd2945d0ee967405d792368a86
-```
 
 ### `dpkg` source package: `orc=1:0.4.32-2`
 
@@ -3786,15 +3780,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.3.0-6ubuntu0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.7.dsc' tiff_4.3.0-6ubuntu0.7.dsc 2573 SHA512:97b3f09abb1ba0720546159af3a9dde1926e6b988e0bd05742da65e0134f0e9641668fdfa3db1bf19c4916ed51a3f540b79e67602d75ef7278b44550cdd2bd61
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz' tiff_4.3.0.orig.tar.gz 2808254 SHA512:e04a4a6c542e58a174c1e9516af3908acf1d3d3e1096648c5514f4963f73e7af27387a76b0fbabe43cf867a18874088f963796a7cd6e45deb998692e3e235493
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz.asc' tiff_4.3.0.orig.tar.gz.asc 488 SHA512:115a4c5714b52d0fbea800c494d83c8a96b70b2c9ce84a8df03205d9afc517faa17963f5f9508c013d7d3e2be6675b84b594a771a829406473234c4bd85e469e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.7.debian.tar.xz' tiff_4.3.0-6ubuntu0.7.debian.tar.xz 46852 SHA512:dd997306dda648e35e2ca741144a57a34ef124fb42984f4102b69eefd15d56bc758cae4c44760973e300e27e567f3598d6de7cfebc54c5792b43f0b31a663f9e
-```
 
 ### `dpkg` source package: `tzdata=2023d-0ubuntu0.22.04`
 
@@ -3806,15 +3794,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2023d-0ubuntu0.22.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d-0ubuntu0.22.04.dsc' tzdata_2023d-0ubuntu0.22.04.dsc 2501 SHA512:492604b865c2ef53782d8f0ab74403876866e34c3f2dbb8512edace1a9f95fddf7d24534d9f7cb93e788b9c56bf579270f40151830f139cc03e40ef81a5a7622
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d.orig.tar.gz' tzdata_2023d.orig.tar.gz 449767 SHA512:81832b2d738c28cecbcb3906cc07568c5ae574adc9de35b25d4bf613581c92d471d67213b4261a56f0ec02efcf211b4e298b7e1dc367c972e726b0a2e9498df4
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d.orig.tar.gz.asc' tzdata_2023d.orig.tar.gz.asc 833 SHA512:3266f0ad4e05365fb09d48b9baeb884447cc4c16ecd4f0d2bf5f25b0aabe03b48fca11c19379a45545dc4f41acc68633c624d99d2700f439d9233ecab6d1f184
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d-0ubuntu0.22.04.debian.tar.xz' tzdata_2023d-0ubuntu0.22.04.debian.tar.xz 175044 SHA512:a50f220a034c2116ccb02d757102019b2976cec3d052034f6ffa03f40c291f96cbdbb150e16772ae385a088969873b181e542c57a90b068361b7701c876cea71
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
 
