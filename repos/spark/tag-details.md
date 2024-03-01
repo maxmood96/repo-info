@@ -26,6 +26,22 @@
 -	[`spark:3.5.0-scala2.12-java17-python3-ubuntu`](#spark350-scala212-java17-python3-ubuntu)
 -	[`spark:3.5.0-scala2.12-java17-r-ubuntu`](#spark350-scala212-java17-r-ubuntu)
 -	[`spark:3.5.0-scala2.12-java17-ubuntu`](#spark350-scala212-java17-ubuntu)
+-	[`spark:3.5.1`](#spark351)
+-	[`spark:3.5.1-java17`](#spark351-java17)
+-	[`spark:3.5.1-java17-python3`](#spark351-java17-python3)
+-	[`spark:3.5.1-java17-r`](#spark351-java17-r)
+-	[`spark:3.5.1-java17-scala`](#spark351-java17-scala)
+-	[`spark:3.5.1-python3`](#spark351-python3)
+-	[`spark:3.5.1-r`](#spark351-r)
+-	[`spark:3.5.1-scala`](#spark351-scala)
+-	[`spark:3.5.1-scala2.12-java11-python3-r-ubuntu`](#spark351-scala212-java11-python3-r-ubuntu)
+-	[`spark:3.5.1-scala2.12-java11-python3-ubuntu`](#spark351-scala212-java11-python3-ubuntu)
+-	[`spark:3.5.1-scala2.12-java11-r-ubuntu`](#spark351-scala212-java11-r-ubuntu)
+-	[`spark:3.5.1-scala2.12-java11-ubuntu`](#spark351-scala212-java11-ubuntu)
+-	[`spark:3.5.1-scala2.12-java17-python3-r-ubuntu`](#spark351-scala212-java17-python3-r-ubuntu)
+-	[`spark:3.5.1-scala2.12-java17-python3-ubuntu`](#spark351-scala212-java17-python3-ubuntu)
+-	[`spark:3.5.1-scala2.12-java17-r-ubuntu`](#spark351-scala212-java17-r-ubuntu)
+-	[`spark:3.5.1-scala2.12-java17-ubuntu`](#spark351-scala212-java17-ubuntu)
 -	[`spark:latest`](#sparklatest)
 -	[`spark:python3`](#sparkpython3)
 -	[`spark:python3-java17`](#sparkpython3-java17)
@@ -5827,6 +5843,70 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 		Last Modified: Fri, 16 Feb 2024 07:25:44 GMT  
 		Size: 2.1 KB (2138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `spark:3.5.1`
+
+**does not exist** (yet?)
+
+## `spark:3.5.1-java17`
+
+**does not exist** (yet?)
+
+## `spark:3.5.1-java17-python3`
+
+**does not exist** (yet?)
+
+## `spark:3.5.1-java17-r`
+
+**does not exist** (yet?)
+
+## `spark:3.5.1-java17-scala`
+
+**does not exist** (yet?)
+
+## `spark:3.5.1-python3`
+
+**does not exist** (yet?)
+
+## `spark:3.5.1-r`
+
+**does not exist** (yet?)
+
+## `spark:3.5.1-scala`
+
+**does not exist** (yet?)
+
+## `spark:3.5.1-scala2.12-java11-python3-r-ubuntu`
+
+**does not exist** (yet?)
+
+## `spark:3.5.1-scala2.12-java11-python3-ubuntu`
+
+**does not exist** (yet?)
+
+## `spark:3.5.1-scala2.12-java11-r-ubuntu`
+
+**does not exist** (yet?)
+
+## `spark:3.5.1-scala2.12-java11-ubuntu`
+
+**does not exist** (yet?)
+
+## `spark:3.5.1-scala2.12-java17-python3-r-ubuntu`
+
+**does not exist** (yet?)
+
+## `spark:3.5.1-scala2.12-java17-python3-ubuntu`
+
+**does not exist** (yet?)
+
+## `spark:3.5.1-scala2.12-java17-r-ubuntu`
+
+**does not exist** (yet?)
+
+## `spark:3.5.1-scala2.12-java17-ubuntu`
+
+**does not exist** (yet?)
 
 ## `spark:latest`
 
