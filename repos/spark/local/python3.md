@@ -1,10 +1,10 @@
-# `spark:3.5.0-scala2.12-java11-python3-ubuntu`
+# `spark:3.5.1-scala2.12-java11-python3-ubuntu`
 
 ## Docker Metadata
 
-- Image ID: `sha256:282c2d48fc351c0b6a99d1961e08fcfc19307dc32776c1e0c8ff11949dc406f8`
-- Created: `2024-02-02T18:37:09.919397405Z`
-- Virtual Size: ~ 981.90 Mb  
+- Image ID: `sha256:65263753d69ef6d1c45bf6ba04961bb6ad8019cc0f0c90d9df5eb3bbd6da6cdb`
+- Created: `2024-03-01T02:42:50.03784976Z`
+- Virtual Size: ~ 981.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/entrypoint.sh"]`
@@ -15,9 +15,9 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.22+7`
-  - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz`
-  - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz.asc`
-  - `GPG_KEY=FC3AE3A7EAA1BAC98770840E7E1ABCC53AAA2216`
+  - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz`
+  - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz.asc`
+  - `GPG_KEY=FD3E84942E5E6106235A1D25BD356A9F8740E4FF`
   - `SPARK_HOME=/opt/spark`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -205,16 +205,16 @@ Licenses: (parsed from: `/usr/share/doc/bind9-host/copyright`, `/usr/share/doc/b
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `binutils=2.34-6ubuntu1.8`
+### `dpkg` source package: `binutils=2.34-6ubuntu1.9`
 
 Binary Packages:
 
-- `binutils=2.34-6ubuntu1.8`
-- `binutils-common:amd64=2.34-6ubuntu1.8`
-- `binutils-x86-64-linux-gnu=2.34-6ubuntu1.8`
-- `libbinutils:amd64=2.34-6ubuntu1.8`
-- `libctf-nobfd0:amd64=2.34-6ubuntu1.8`
-- `libctf0:amd64=2.34-6ubuntu1.8`
+- `binutils=2.34-6ubuntu1.9`
+- `binutils-common:amd64=2.34-6ubuntu1.9`
+- `binutils-x86-64-linux-gnu=2.34-6ubuntu1.9`
+- `libbinutils:amd64=2.34-6ubuntu1.9`
+- `libctf-nobfd0:amd64=2.34-6ubuntu1.9`
+- `libctf0:amd64=2.34-6ubuntu1.9`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
 
@@ -222,9 +222,14 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris binutils=2.34-6ubuntu1.9
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.9.dsc' binutils_2.34-6ubuntu1.9.dsc 8521 SHA512:4dbd7e95ebd0cbe0f2b048673d99c802ffd58a4d9f7a76335a1f74776f19729e41730f7a4949e0dbbeff43c35eefa0ea87c80882ede5508e750c64d6a50970bb
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34.orig.tar.xz' binutils_2.34.orig.tar.xz 21637796 SHA512:2c7976939dcf5e8c5b7374cccd39bfe803b1bec73c6abfa0eb17c24e1942574c6bdb874c66a092a82adc443182eacd8a5a8001c19a76101f0c7ba40c27de0bbd
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.9.debian.tar.xz' binutils_2.34-6ubuntu1.9.debian.tar.xz 170448 SHA512:63244d200b47340abffce7c5d8d389f22a5a9bc83a171cd9a895d0d237c0cac1c96e91f76bc3fb5bdc0318263935ae0f6ebde7870e3099d7733c7e5a9f8e9c8d
+```
 
 ### `dpkg` source package: `brotli=1.0.7-6ubuntu0.1`
 
@@ -1697,14 +1702,9 @@ Licenses: (parsed from: `/usr/share/doc/libuv1/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libuv1=1.34.2-1ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libuv1/libuv1_1.34.2-1ubuntu1.3.dsc' libuv1_1.34.2-1ubuntu1.3.dsc 2128 SHA512:63e852aa003a6abf03102111c4b57c0eada9b2f100c35106fa84e55d340e00bd7c63d02e21d128010514f7a779963efec6a432015a6d1e2decbf369395a45f71
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libuv1/libuv1_1.34.2.orig.tar.gz' libuv1_1.34.2.orig.tar.gz 1245417 SHA512:c549be16d10c1935150a395126b07b45e93ccb6edfe4a03f24bf4de39476f1e0339f22c3960022ae6170c5bb0667c77b16eb0b434aae280a53145fe5369de033
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libuv1/libuv1_1.34.2-1ubuntu1.3.debian.tar.xz' libuv1_1.34.2-1ubuntu1.3.debian.tar.xz 24960 SHA512:e1775a3baac055fe8875c3a1b5c44f8edfc0a551cd180f44c0ffd31da01a8f2fe62f12abf16cec731c4c3ff22bf1c0c3118c4d5d19f4120d5b35a2bcee7205aa
-```
 
 ### `dpkg` source package: `libxcrypt=1:4.4.10-10ubuntu4`
 
@@ -1764,19 +1764,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4%2bdfsg-3ubuntu0.1.debian.tar.xz' libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz 17300 SHA512:0484891be5603d00bd57b799c708b9395fccbaa8c6c44f535377f6fa2c7ac22c01c8a3c1b45e1c1f3c30f19dc74d510626bf82067fcbfb53c39f1bcc2249affe
 ```
 
-### `dpkg` source package: `linux=5.4.0-170.188`
+### `dpkg` source package: `linux=5.4.0-172.190`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.4.0-170.188`
+- `linux-libc-dev:amd64=5.4.0-172.190`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.4.0-172.190
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-172.190.dsc' linux_5.4.0-172.190.dsc 7421 SHA512:ed70b6b67b49d7c5a64eb6a7ec7654b024cd80dfd695854d48a94054f271df9b5549edc265596da1604f43619729b70121b235ffec5d9a6cab9c0cc074ca808c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-172.190.diff.gz' linux_5.4.0-172.190.diff.gz 11396271 SHA512:7cf4e66aaf28ab50f61eadfe49ac4b83317006865a0483912d0925da7efd9c7d72d5531d1117ffe03ab49d8f6882bf83a0da42d073f9ae235154c81f3109dcc6
+```
 
 ### `dpkg` source package: `lmdb=0.9.24-1`
 
@@ -2759,15 +2764,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2023d-0ubuntu0.20.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d-0ubuntu0.20.04.dsc' tzdata_2023d-0ubuntu0.20.04.dsc 2516 SHA512:455e7f5e6461259c63d1217cc44a4b7468e3ffd3186286c33182f5f930493e75b10bc5d5145a736ae7121a7020acac835053f1af6df4a246a6a2099a9cb96086
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d.orig.tar.gz' tzdata_2023d.orig.tar.gz 449767 SHA512:81832b2d738c28cecbcb3906cc07568c5ae574adc9de35b25d4bf613581c92d471d67213b4261a56f0ec02efcf211b4e298b7e1dc367c972e726b0a2e9498df4
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d.orig.tar.gz.asc' tzdata_2023d.orig.tar.gz.asc 833 SHA512:3266f0ad4e05365fb09d48b9baeb884447cc4c16ecd4f0d2bf5f25b0aabe03b48fca11c19379a45545dc4f41acc68633c624d99d2700f439d9233ecab6d1f184
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023d-0ubuntu0.20.04.debian.tar.xz' tzdata_2023d-0ubuntu0.20.04.debian.tar.xz 170484 SHA512:57602f59538b53fe18f56ed526f769a645c5c7298e1e82405266bffe0a782b1cd4297d1fea3a64e55b0d45f051697f99df7aab5cebbf62f8342f5e5dc606b3e2
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 
