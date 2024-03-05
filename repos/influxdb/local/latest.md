@@ -1,4 +1,4 @@
-# `influxdb:2.7`
+# `influxdb:2`
 
 ## Docker Metadata
 
