@@ -868,19 +868,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.16
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.16.dsc' debianutils_5.16.dsc 1313 SHA256:fef33bd1a13391d16e0a1ee4b81c1b5bfaa85aeacf05290a9b09a5c4337c89e5
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.16.tar.xz' debianutils_5.16.tar.xz 105808 SHA256:eeb069c2639906f4181214dd1c4e448bc825229b0250ebf66f69c7344e8aa1e0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/5.16/
 
-- https://sources.debian.net/src/debianutils/5.16/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/5.16/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/5.16/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.10-1`
 
@@ -4170,21 +4164,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=6.6.1-2
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.6.1-2.dsc' mercurial_6.6.1-2.dsc 2806 SHA256:e04e28910cab137a7b4bde1948f9a19f4c07b5a9133cc9563d7b41162f1b30dc
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.6.1.orig.tar.gz' mercurial_6.6.1.orig.tar.gz 8250933 SHA256:a29465a3fe40a3e8d49ba8343134ac2aba286b683ffeb838da0cf6e4521f9695
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.6.1.orig.tar.gz.asc' mercurial_6.6.1.orig.tar.gz.asc 659 SHA256:9ea9cdb932a7f671540171cd853d1da41e6d8332fa2c63fc5d5d857611a669a5
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.6.1-2.debian.tar.xz' mercurial_6.6.1-2.debian.tar.xz 70260 SHA256:475ac5c14e25b2e203cf60e75e01cbec62f86b9ad341bec44464cfd1ccf38965
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/6.6.1-2/
 
-- https://sources.debian.net/src/mercurial/6.6.1-2/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/6.6.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/6.6.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpclib3=1.3.1-1`
 
@@ -4709,20 +4695,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.51.0+ds-4
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.51.0%2bds-4.dsc' pango1.0_1.51.0+ds-4.dsc 3654 SHA256:72d88f378dcd67daf16e803cb59b74cb67996e01a55a48c497ee6d061949a1af
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.51.0%2bds.orig.tar.xz' pango1.0_1.51.0+ds.orig.tar.xz 1731104 SHA256:df51bb6819e91fda4f6c8ba8d2bd51e437e6f7daa86419d69a15e33a99002170
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.51.0%2bds-4.debian.tar.xz' pango1.0_1.51.0+ds-4.debian.tar.xz 41724 SHA256:30e6a27c1a1f441934e712e34e68462b442f5134208a44505464b53be3bfc740
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.51.0+ds-4/
 
-- https://sources.debian.net/src/pango1.0/1.51.0+ds-4/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.51.0+ds-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.51.0+ds-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-7`
 
@@ -5953,21 +5932,13 @@ Licenses: (parsed from: `/usr/share/doc/liblzma-dev/copyright`, `/usr/share/doc/
 - `permissive-nowarranty`
 - `probably-PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.4.5-0.3
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.5-0.3.dsc' xz-utils_5.4.5-0.3.dsc 2720 SHA256:3da917542fe87c05b058833bdd91929a5a42632f883d2fddd2dde74e2735bb0f
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.5.orig.tar.xz' xz-utils_5.4.5.orig.tar.xz 1680520 SHA256:da9dec6c12cf2ecf269c31ab65b5de18e8e52b96f35d5bcd08c12b43e6878803
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.5.orig.tar.xz.asc' xz-utils_5.4.5.orig.tar.xz.asc 833 SHA256:1fbf414df852daab603ad43a57348e4e5fc20c95ce10be16c433ee7c5e1da69b
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.5-0.3.debian.tar.xz' xz-utils_5.4.5-0.3.debian.tar.xz 26944 SHA256:5ac2b0fe0e5c24806fc0b9d72e5ed9b796532404170b4331e5482571ebc86f2a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/xz-utils/5.4.5-0.3/
 
-- https://sources.debian.net/src/xz-utils/5.4.5-0.3/ (for browsing the source)
-- https://sources.debian.net/src/xz-utils/5.4.5-0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xz-utils/5.4.5-0.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.3.dfsg-3`
 

@@ -563,19 +563,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.16
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.16.dsc' debianutils_5.16.dsc 1313 SHA256:fef33bd1a13391d16e0a1ee4b81c1b5bfaa85aeacf05290a9b09a5c4337c89e5
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.16.tar.xz' debianutils_5.16.tar.xz 105808 SHA256:eeb069c2639906f4181214dd1c4e448bc825229b0250ebf66f69c7344e8aa1e0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/5.16/
 
-- https://sources.debian.net/src/debianutils/5.16/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/5.16/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/5.16/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.10-1`
 
@@ -2520,21 +2514,13 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 - `permissive-nowarranty`
 - `probably-PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.4.5-0.3
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.5-0.3.dsc' xz-utils_5.4.5-0.3.dsc 2720 SHA256:3da917542fe87c05b058833bdd91929a5a42632f883d2fddd2dde74e2735bb0f
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.5.orig.tar.xz' xz-utils_5.4.5.orig.tar.xz 1680520 SHA256:da9dec6c12cf2ecf269c31ab65b5de18e8e52b96f35d5bcd08c12b43e6878803
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.5.orig.tar.xz.asc' xz-utils_5.4.5.orig.tar.xz.asc 833 SHA256:1fbf414df852daab603ad43a57348e4e5fc20c95ce10be16c433ee7c5e1da69b
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.5-0.3.debian.tar.xz' xz-utils_5.4.5-0.3.debian.tar.xz 26944 SHA256:5ac2b0fe0e5c24806fc0b9d72e5ed9b796532404170b4331e5482571ebc86f2a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/xz-utils/5.4.5-0.3/
 
-- https://sources.debian.net/src/xz-utils/5.4.5-0.3/ (for browsing the source)
-- https://sources.debian.net/src/xz-utils/5.4.5-0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xz-utils/5.4.5-0.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.3.dfsg-3`
 

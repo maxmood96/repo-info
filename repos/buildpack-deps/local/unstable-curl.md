@@ -563,19 +563,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.16
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.16.dsc' debianutils_5.16.dsc 1313 SHA256:fef33bd1a13391d16e0a1ee4b81c1b5bfaa85aeacf05290a9b09a5c4337c89e5
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.16.tar.xz' debianutils_5.16.tar.xz 105808 SHA256:eeb069c2639906f4181214dd1c4e448bc825229b0250ebf66f69c7344e8aa1e0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/5.16/
 
-- https://sources.debian.net/src/debianutils/5.16/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/5.16/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/5.16/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.10-1`
 
@@ -1286,21 +1280,13 @@ Licenses: (parsed from: `/usr/share/doc/libksba8/copyright`)
 - `GPL-3`
 - `LGPL-2.1-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libksba=1.6.5-2
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.5-2.dsc' libksba_1.6.5-2.dsc 2482 SHA256:c839a44e6889e6d9dcf92d48cde5d385026c4179b3ad3bd99987d8b1e1421344
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.5.orig.tar.bz2' libksba_1.6.5.orig.tar.bz2 708400 SHA256:a564628c574c99287998753f98d750babd91a4e9db451f46ad140466ef2a6d16
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.5.orig.tar.bz2.asc' libksba_1.6.5.orig.tar.bz2.asc 228 SHA256:655f24d0be324b38c03664e1f04d3c9d7865b8123d5ea71835aa61f141277a57
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.5-2.debian.tar.xz' libksba_1.6.5-2.debian.tar.xz 14732 SHA256:eb89a4ebcd0c27ee5daf8e61c852f9ddd7ff081220d6aa8cc025817d23a548b3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libksba/1.6.5-2/
 
-- https://sources.debian.net/src/libksba/1.6.5-2/ (for browsing the source)
-- https://sources.debian.net/src/libksba/1.6.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libksba/1.6.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libmd=1.1.0-2`
 
@@ -2037,10 +2023,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris perl=5.38.2-3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2-3.dsc' perl_5.38.2-3.dsc 2933 SHA256:f9bcf5b9f37840805afe2ed77ba928e3f2e01e3683160ced93d7643be8c056e7
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2-3.1.dsc' perl_5.38.2-3.1.dsc 2946 SHA256:e9d1f91eaf369f2e53443c4e77ad5bf3d96eee12781137917ebcf97bb092f920
 'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA256:4d1b34cc058f9963cb89785ecc040d57f6d7725cd83329cfa4ef8b27566454d2
 'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA256:d91115e90b896520e83d4de6b52f8254ef2b70a8d545ffab33200ea9f1cf29e8
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2-3.debian.tar.xz' perl_5.38.2-3.debian.tar.xz 165464 SHA256:39652e1185d219f1c8a7d436cf6457ec002ae9e1dfc4ad016b36176c10e5847b
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2-3.1.debian.tar.xz' perl_5.38.2-3.1.debian.tar.xz 165700 SHA256:fbb4ca57cdbb209c4e15e3632c89a746ed1c53c5bfb79e4e906ea0ce542b2b6a
 ```
 
 Other potentially useful URLs:
@@ -2291,20 +2277,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.08-6
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08-6.dsc' sysvinit_3.08-6.dsc 2359 SHA256:7bb250f3b216f67e213c3659958fe6115d6c6d7956950b12ea69117c8bf01151
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08.orig.tar.gz' sysvinit_3.08.orig.tar.gz 513674 SHA256:325e42ae4ae5ae3e4d989e0604aeb5e4eae5f3ee21e401db3c79000718f8c836
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08-6.debian.tar.xz' sysvinit_3.08-6.debian.tar.xz 138768 SHA256:dcf037d93671e1c9f70df6941fc735fc22b004be327087c121069eb5c1794e5c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.08-6/
 
-- https://sources.debian.net/src/sysvinit/3.08-6/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.08-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.08-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-3`
 
@@ -2421,20 +2400,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.39.3-6
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3-6.dsc' util-linux_2.39.3-6.dsc 4608 SHA256:53a8bd6e71dbd9b053251b851f098a90c9ba28202e37d06e4f423e6349df77e1
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3.orig.tar.xz' util-linux_2.39.3.orig.tar.xz 8526168 SHA256:7b6605e48d1a49f43cc4b4cfc59f313d0dd5402fa40b96810bd572e167dfed0f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3-6.debian.tar.xz' util-linux_2.39.3-6.debian.tar.xz 99148 SHA256:81abf57702e400d0052c8b30f396b0bad73aebaadceb935455017437b2abb2cf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.39.3-6/
 
-- https://sources.debian.net/src/util-linux/2.39.3-6/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.39.3-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.39.3-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21.4-1`
 
