@@ -30,6 +30,8 @@
 -	[`influxdb:1.9.13-data-alpine`](#influxdb1913-data-alpine)
 -	[`influxdb:1.9.13-meta`](#influxdb1913-meta)
 -	[`influxdb:1.9.13-meta-alpine`](#influxdb1913-meta-alpine)
+-	[`influxdb:2`](#influxdb2)
+-	[`influxdb:2-alpine`](#influxdb2-alpine)
 -	[`influxdb:2.7`](#influxdb27)
 -	[`influxdb:2.7-alpine`](#influxdb27-alpine)
 -	[`influxdb:2.7.5`](#influxdb275)
@@ -2584,6 +2586,24 @@ CMD ["influxd-meta"]
 		Last Modified: Sat, 27 Jan 2024 05:52:07 GMT  
 		Size: 372.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `influxdb:2`
+
+```console
+$ docker pull influxdb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `influxdb:2-alpine`
+
+```console
+$ docker pull influxdb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `influxdb:2.7`
 
