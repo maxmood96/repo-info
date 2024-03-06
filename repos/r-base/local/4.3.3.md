@@ -432,10 +432,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=8.6.0-3
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.6.0-3.dsc' curl_8.6.0-3.dsc 3053 SHA256:652c385de66831b9626b09f8e4381694b7a319e51ad9f01f50f45dbb3141c974
+'http://http.debian.net/debian/pool/main/c/curl/curl_8.6.0-3.2.dsc' curl_8.6.0-3.2.dsc 3120 SHA256:efe974dc618cabd7827112bc5931a72a239054e3f418e1f8e20c016e57a79956
 'http://http.debian.net/debian/pool/main/c/curl/curl_8.6.0.orig.tar.gz' curl_8.6.0.orig.tar.gz 4381562 SHA256:9c6db808160015f30f3c656c0dec125feb9dc00753596bf858a272b5dd8dc398
 'http://http.debian.net/debian/pool/main/c/curl/curl_8.6.0.orig.tar.gz.asc' curl_8.6.0.orig.tar.gz.asc 488 SHA256:ad4096ad10259c44e9e832c64189050412f71befb9a9465b8c40b178c5a3d88f
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.6.0-3.debian.tar.xz' curl_8.6.0-3.debian.tar.xz 48428 SHA256:88b2593c74a5ed8ea9b7fa5795bd6e04f6e12911d546ba178d343860d32ba4dd
+'http://http.debian.net/debian/pool/main/c/curl/curl_8.6.0-3.2.debian.tar.xz' curl_8.6.0-3.2.debian.tar.xz 48632 SHA256:768babbae1eda7878ae8e81d351ba7edf2760e239695072ca15b1222e3451a47
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-4`
@@ -574,13 +574,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.16
-'http://http.debian.net/debian/pool/main/d/debianutils/debianutils_5.16.dsc' debianutils_5.16.dsc 1313 SHA256:fef33bd1a13391d16e0a1ee4b81c1b5bfaa85aeacf05290a9b09a5c4337c89e5
-'http://http.debian.net/debian/pool/main/d/debianutils/debianutils_5.16.tar.xz' debianutils_5.16.tar.xz 105808 SHA256:eeb069c2639906f4181214dd1c4e448bc825229b0250ebf66f69c7344e8aa1e0
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/debianutils/5.16/
+
 
 ### `dpkg` source package: `diffutils=1:3.10-1`
 
@@ -1879,14 +1879,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.43-2
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.43-2.dsc' libpng1.6_1.6.43-2.dsc 2247 SHA256:1d72d9a770d67af1d1819e103e7ab28447e68756eee1862ebefe0f93b2a7a202
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.43.orig.tar.gz' libpng1.6_1.6.43.orig.tar.gz 1554715 SHA256:fecc95b46cf05e8e3fc8a414750e0ba5aad00d89e9fdf175e94ff041caf1a03a
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.43-2.debian.tar.xz' libpng1.6_1.6.43-2.debian.tar.xz 31392 SHA256:052cd36659b71599d81edec8f522114def0055750cd3c09180e180db4ca957de
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libpng1.6/1.6.43-2/
+
 
 ### `dpkg` source package: `libpsl=0.21.2-1`
 
@@ -3334,20 +3333,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=255.3-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.3-2.dsc' systemd_255.3-2.dsc 7045 SHA256:4b8806cb37214c9006e1f74bc16b5d1969b9296c59713de23247084566ccdbda
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.3.orig.tar.gz' systemd_255.3.orig.tar.gz 14873273 SHA256:27807c65f969d0e0e44629dee8379e1e2c30e6c5e84be0389438c4ab1b225000
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.3-2.debian.tar.xz' systemd_255.3-2.debian.tar.xz 174204 SHA256:1d1af57206309837dc65b4a233ffa14cc7c7ceefbe8b4c4a224b9bc05872a5e7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/255.3-2/
 
-- https://sources.debian.net/src/systemd/255.3-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/255.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/255.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.08-6`
 
@@ -3365,14 +3357,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.08-6
-'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_3.08-6.dsc' sysvinit_3.08-6.dsc 2359 SHA256:7bb250f3b216f67e213c3659958fe6115d6c6d7956950b12ea69117c8bf01151
-'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_3.08.orig.tar.gz' sysvinit_3.08.orig.tar.gz 513674 SHA256:325e42ae4ae5ae3e4d989e0604aeb5e4eae5f3ee21e401db3c79000718f8c836
-'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_3.08-6.debian.tar.xz' sysvinit_3.08-6.debian.tar.xz 138768 SHA256:dcf037d93671e1c9f70df6941fc735fc22b004be327087c121069eb5c1794e5c
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sysvinit/3.08-6/
+
 
 ### `dpkg` source package: `tar=1.35+dfsg-3`
 
@@ -3415,10 +3406,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tcl8.6=8.6.13+dfsg-2
-'http://http.debian.net/debian/pool/main/t/tcl8.6/tcl8.6_8.6.13%2bdfsg-2.dsc' tcl8.6_8.6.13+dfsg-2.dsc 2120 SHA256:7965fd63c4cb970d0f675f574f6730114c806139e433cb3589a428658fc4d0cd
-'http://http.debian.net/debian/pool/main/t/tcl8.6/tcl8.6_8.6.13%2bdfsg.orig.tar.gz' tcl8.6_8.6.13+dfsg.orig.tar.gz 6302749 SHA256:83bce7277e3825df0179567e0d8a431ebb1a126df53ea4a94af89dd4dd0f26d5
-'http://http.debian.net/debian/pool/main/t/tcl8.6/tcl8.6_8.6.13%2bdfsg-2.debian.tar.xz' tcl8.6_8.6.13+dfsg-2.debian.tar.xz 14336 SHA256:899c8d800988caa1f5a8b070d3697f29c3d098754416cc2816b94dfa93aef009
+'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.13%2bdfsg-2.dsc' tcl8.6_8.6.13+dfsg-2.dsc 2120 SHA256:7965fd63c4cb970d0f675f574f6730114c806139e433cb3589a428658fc4d0cd
+'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.13%2bdfsg.orig.tar.gz' tcl8.6_8.6.13+dfsg.orig.tar.gz 6302749 SHA256:83bce7277e3825df0179567e0d8a431ebb1a126df53ea4a94af89dd4dd0f26d5
+'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.13%2bdfsg-2.debian.tar.xz' tcl8.6_8.6.13+dfsg-2.debian.tar.xz 14336 SHA256:899c8d800988caa1f5a8b070d3697f29c3d098754416cc2816b94dfa93aef009
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/tcl8.6/8.6.13+dfsg-2/ (for browsing the source)
+- https://sources.debian.net/src/tcl8.6/8.6.13+dfsg-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tcl8.6/8.6.13+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tex-gyre=20180621-6`
 
@@ -3591,10 +3588,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris util-linux=2.39.3-6
-'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.39.3-6.dsc' util-linux_2.39.3-6.dsc 4608 SHA256:53a8bd6e71dbd9b053251b851f098a90c9ba28202e37d06e4f423e6349df77e1
-'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.39.3.orig.tar.xz' util-linux_2.39.3.orig.tar.xz 8526168 SHA256:7b6605e48d1a49f43cc4b4cfc59f313d0dd5402fa40b96810bd572e167dfed0f
-'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.39.3-6.debian.tar.xz' util-linux_2.39.3-6.debian.tar.xz 99148 SHA256:81abf57702e400d0052c8b30f396b0bad73aebaadceb935455017437b2abb2cf
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3-6.dsc' util-linux_2.39.3-6.dsc 4608 SHA256:53a8bd6e71dbd9b053251b851f098a90c9ba28202e37d06e4f423e6349df77e1
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3.orig.tar.xz' util-linux_2.39.3.orig.tar.xz 8526168 SHA256:7b6605e48d1a49f43cc4b4cfc59f313d0dd5402fa40b96810bd572e167dfed0f
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3-6.debian.tar.xz' util-linux_2.39.3-6.debian.tar.xz 99148 SHA256:81abf57702e400d0052c8b30f396b0bad73aebaadceb935455017437b2abb2cf
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/util-linux/2.39.3-6/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.39.3-6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.39.3-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `vim=2:9.1.0016-1`
 
