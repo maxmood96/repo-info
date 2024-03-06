@@ -1,10 +1,10 @@
-# `julia:1.10.1-bookworm`
+# `julia:1.10.2-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4ae4a5eea63105374a0e3ad6f704dedf7bf406350ddb98b6ad13582428fa24df`
-- Created: `2024-02-15T00:59:15Z`
-- Virtual Size: ~ 686.38 Mb  
+- Image ID: `sha256:8d8d4d33fed96c37753f780924b50dc1b30244ee466862b31ff2dd340abc8463`
+- Created: `2024-03-02T06:59:15Z`
+- Virtual Size: ~ 688.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JULIA_PATH=/usr/local/julia`
   - `JULIA_GPG=3673DF529D9049477F76B37566E3C7DC03D6E495`
-  - `JULIA_VERSION=1.10.1`
+  - `JULIA_VERSION=1.10.2`
 
 ## `dpkg` (`.deb`-based packages)
 
