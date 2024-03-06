@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8f88099104952f50140d95ca63a79502eb485cef6d2cb4130aba0839f30b9c46`
+- Image ID: `sha256:9cbbd620b2da0f2c43f87c782fbe87c86ed4dfb2e810384c634ecec2269628c2`
 - Created: `2024-02-27T15:15:42Z`
 - Virtual Size: ~ 766.96 Mb  
   (total size of all layers on-disk)
@@ -11,7 +11,7 @@
 - Command: `["unitd","--no-daemon","--control","unix:/var/run/control.unit.sock"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.21.7`
+  - `GOLANG_VERSION=1.21.8`
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
 - Labels:
