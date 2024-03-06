@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:22afd6f7422dc2b594c2e69f5a782734a95cecf8c88576b50374c5a5cdee5107`
-- Created: `2024-01-27T10:14:28.666922467Z`
-- Virtual Size: ~ 233.64 Mb  
+- Image ID: `sha256:e7770d00b9d07b7613a063e02a6c4e89e661360c9152e6bad437b1085c38c7b8`
+- Created: `2024-03-04T21:01:11.754763401Z`
+- Virtual Size: ~ 241.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -335,6 +335,40 @@ gnu-libiconv-libs-1.17-r2 installed size:
 
 gnu-libiconv-libs-1.17-r2 license:
 LGPL-2.1-or-later
+
+```
+
+### `apk` package: `icu-data-en`
+
+```console
+icu-data-en-74.1-r0 description:
+Stripped down ICU data with only en_US/GB locale and no legacy charset converters
+
+icu-data-en-74.1-r0 webpage:
+https://icu.unicode.org/
+
+icu-data-en-74.1-r0 installed size:
+2756 KiB
+
+icu-data-en-74.1-r0 license:
+ICU
+
+```
+
+### `apk` package: `icu-libs`
+
+```console
+icu-libs-74.1-r0 description:
+International Components for Unicode library (libraries)
+
+icu-libs-74.1-r0 webpage:
+https://icu.unicode.org/
+
+icu-libs-74.1-r0 installed size:
+4408 KiB
+
+icu-libs-74.1-r0 license:
+ICU
 
 ```
 
