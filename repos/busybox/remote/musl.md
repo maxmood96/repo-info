@@ -1,16 +1,15 @@
 ## `busybox:musl`
 
 ```console
-$ docker pull busybox@sha256:2bee84ba940ae80d4a0a7b26e1a9630d3783f61edac6d10a60ae3f50bb8f326c
+$ docker pull busybox@sha256:84fbdf15839802266b3ff1420959c2efb8d10ab1f8122c31f714f977969cc801
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 9
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
-	-	unknown; unknown
 	-	linux; 386
 	-	linux; ppc64le
 	-	linux; riscv64
@@ -88,51 +87,25 @@ RUN BusyBox 1.36.1 (musl), Alpine 3.19.1
 ### `busybox:musl` - linux; arm64 variant v8
 
 ```console
-$ docker pull busybox@sha256:fed6b26ea319254ef0d6bae87482b5ab58b85250a7cc46d14c533e1f5c2556db
+$ docker pull busybox@sha256:648143a312f16e5b5a6f64dfa4024a281fb4a30467500ca8b0091a9984f1c751
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **921.0 KB (920992 bytes)**  
+-	Total Size: **889.3 KB (889254 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:04f13cdcd8df2876053fd8dc5d01363344a92ea4d6537bd78625b9209e988edf`
+-	Image ID: `sha256:5fe55161a78a4987bee3ddec858b7ca09929f69b8c00ed318d5df93f3769d02c`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 17 Jan 2024 21:49:12 GMT
-ADD busybox.tar.xz / # buildkit
-# Wed, 17 Jan 2024 21:49:12 GMT
-CMD ["sh"]
+# Thu, 18 May 2023 22:34:17 GMT
+RUN BusyBox 1.36.1 (musl), Alpine 3.19.1
 ```
 
 -	Layers:
-	-	`sha256:d997961b9429e6c49b53a709a914c6578f5ff5ba7166ee52de62d1ac94887c1e`  
-		Last Modified: Fri, 19 Jan 2024 01:36:22 GMT  
-		Size: 921.0 KB (920992 bytes)  
+	-	`sha256:181aea4c42f8873b483fd576cfa3dacadb70d642c67888825ef2d351d18fa0fc`  
+		Last Modified: Wed, 06 Mar 2024 01:48:10 GMT  
+		Size: 889.3 KB (889254 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `busybox:musl` - unknown; unknown
-
-```console
-$ docker pull busybox@sha256:1cbd2ff89d7ff09ec11e246f3a887f3a914ab78b5d7445c43487b8c6fbed88cc
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 KB (9177 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d83f629b0163590a531f21a762bb0cbaa263d937678e8f68d96a31c90ef4a07b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:3c2685448006e438049a85838a6b8137f2e8454a9bc20b249241ff956b520505`  
-		Last Modified: Fri, 19 Jan 2024 01:36:22 GMT  
-		Size: 3.3 KB (3294 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:6177450e2c462aaedbb8f947886eb918cc00046a7fdc55ccca512c51f9243ee4`  
-		Last Modified: Fri, 19 Jan 2024 01:36:22 GMT  
-		Size: 5.9 KB (5883 bytes)  
-		MIME: application/vnd.in-toto+json
 
 ### `busybox:musl` - linux; 386
 
