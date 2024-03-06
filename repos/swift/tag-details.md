@@ -2,6 +2,32 @@
 
 # Tags of `swift`
 
+-	[`swift:5.10`](#swift510)
+-	[`swift:5.10-amazonlinux2`](#swift510-amazonlinux2)
+-	[`swift:5.10-amazonlinux2-slim`](#swift510-amazonlinux2-slim)
+-	[`swift:5.10-centos7`](#swift510-centos7)
+-	[`swift:5.10-centos7-slim`](#swift510-centos7-slim)
+-	[`swift:5.10-focal`](#swift510-focal)
+-	[`swift:5.10-focal-slim`](#swift510-focal-slim)
+-	[`swift:5.10-jammy`](#swift510-jammy)
+-	[`swift:5.10-jammy-slim`](#swift510-jammy-slim)
+-	[`swift:5.10-rhel-ubi9`](#swift510-rhel-ubi9)
+-	[`swift:5.10-rhel-ubi9-slim`](#swift510-rhel-ubi9-slim)
+-	[`swift:5.10-slim`](#swift510-slim)
+-	[`swift:5.10-windowsservercore-ltsc2022`](#swift510-windowsservercore-ltsc2022)
+-	[`swift:5.10.0`](#swift5100)
+-	[`swift:5.10.0-amazonlinux2`](#swift5100-amazonlinux2)
+-	[`swift:5.10.0-amazonlinux2-slim`](#swift5100-amazonlinux2-slim)
+-	[`swift:5.10.0-centos7`](#swift5100-centos7)
+-	[`swift:5.10.0-centos7-slim`](#swift5100-centos7-slim)
+-	[`swift:5.10.0-focal`](#swift5100-focal)
+-	[`swift:5.10.0-focal-slim`](#swift5100-focal-slim)
+-	[`swift:5.10.0-jammy`](#swift5100-jammy)
+-	[`swift:5.10.0-jammy-slim`](#swift5100-jammy-slim)
+-	[`swift:5.10.0-rhel-ubi9`](#swift5100-rhel-ubi9)
+-	[`swift:5.10.0-rhel-ubi9-slim`](#swift5100-rhel-ubi9-slim)
+-	[`swift:5.10.0-slim`](#swift5100-slim)
+-	[`swift:5.10.0-windowsservercore-ltsc2022`](#swift5100-windowsservercore-ltsc2022)
 -	[`swift:5.2-amazonlinux2`](#swift52-amazonlinux2)
 -	[`swift:5.2-amazonlinux2-slim`](#swift52-amazonlinux2-slim)
 -	[`swift:5.2-centos7`](#swift52-centos7)
@@ -145,6 +171,110 @@
 -	[`swift:rhel-ubi9-slim`](#swiftrhel-ubi9-slim)
 -	[`swift:slim`](#swiftslim)
 -	[`swift:windowsservercore-ltsc2022`](#swiftwindowsservercore-ltsc2022)
+
+## `swift:5.10`
+
+**does not exist** (yet?)
+
+## `swift:5.10-amazonlinux2`
+
+**does not exist** (yet?)
+
+## `swift:5.10-amazonlinux2-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.10-centos7`
+
+**does not exist** (yet?)
+
+## `swift:5.10-centos7-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.10-focal`
+
+**does not exist** (yet?)
+
+## `swift:5.10-focal-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.10-jammy`
+
+**does not exist** (yet?)
+
+## `swift:5.10-jammy-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.10-rhel-ubi9`
+
+**does not exist** (yet?)
+
+## `swift:5.10-rhel-ubi9-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.10-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.10-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `swift:5.10.0`
+
+**does not exist** (yet?)
+
+## `swift:5.10.0-amazonlinux2`
+
+**does not exist** (yet?)
+
+## `swift:5.10.0-amazonlinux2-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.10.0-centos7`
+
+**does not exist** (yet?)
+
+## `swift:5.10.0-centos7-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.10.0-focal`
+
+**does not exist** (yet?)
+
+## `swift:5.10.0-focal-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.10.0-jammy`
+
+**does not exist** (yet?)
+
+## `swift:5.10.0-jammy-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.10.0-rhel-ubi9`
+
+**does not exist** (yet?)
+
+## `swift:5.10.0-rhel-ubi9-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.10.0-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.10.0-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `swift:5.2-amazonlinux2`
 
