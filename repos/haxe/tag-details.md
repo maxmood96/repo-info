@@ -95,7 +95,7 @@
 ## `haxe:4.0`
 
 ```console
-$ docker pull haxe@sha256:4bccbdc34bf9644d2b9cedab511f814aaa9706fc87dfe74b0d02bec094f10ee5
+$ docker pull haxe@sha256:599b2ff90832c9b74f7a91305ef73b27130f98a22b53f199bcf821cab864c2a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -175,14 +175,14 @@ CMD ["haxe"]
 ### `haxe:4.0` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:28fcd84c28e9a329789f6612ecc7437d2e3579d85299ecc2e250cd177220424c
+$ docker pull haxe@sha256:01e8f66d02c642075f4e1103b0925396370623711b4a3c0710412de8e78c1476
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.8 MB (127790760 bytes)**  
+-	Total Size: **127.8 MB (127790774 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf0c15d3002310a5235afb037750db9a88d134e4c045fb3ec1a42a5812cb383d`
+-	Image ID: `sha256:2efe4140ead2e95b6df4e6959e6590f5302a1a5f168e04f31741f730077e83eb`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -206,9 +206,9 @@ RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libp
 ENV HAXE_VERSION=4.0.5
 # Tue, 13 Feb 2024 16:44:30 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Tue, 13 Feb 2024 16:49:56 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 13 Feb 2024 16:49:57 GMT
+# Wed, 06 Mar 2024 00:00:02 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Wed, 06 Mar 2024 00:00:03 GMT
 CMD ["haxe"]
 ```
 
@@ -233,9 +233,9 @@ CMD ["haxe"]
 		Last Modified: Tue, 13 Feb 2024 16:57:54 GMT  
 		Size: 1.4 MB (1387835 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de251c68db29387d94c7aa791aa5d0e1e5b7cd28f0ec44851ccbdab99f159ec0`  
-		Last Modified: Tue, 13 Feb 2024 16:58:46 GMT  
-		Size: 9.6 MB (9641727 bytes)  
+	-	`sha256:2fbbf882f82325f10a95a02b02c398fa388ba3568e2c7b9152b4c8f481b3b372`  
+		Last Modified: Wed, 06 Mar 2024 00:08:49 GMT  
+		Size: 9.6 MB (9641741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.0` - linux; arm64 variant v8
@@ -1120,7 +1120,7 @@ CMD ["haxe"]
 ## `haxe:4.0-bullseye`
 
 ```console
-$ docker pull haxe@sha256:fe27a978c17cf984269d45bc5f31fa8794b535c00ad9962e57557113316b7a84
+$ docker pull haxe@sha256:fc721129c3c2107e6abeede9cf90f34b8f5881fe16d8ea9fbe281c34003ad474
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1198,14 +1198,14 @@ CMD ["haxe"]
 ### `haxe:4.0-bullseye` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:28fcd84c28e9a329789f6612ecc7437d2e3579d85299ecc2e250cd177220424c
+$ docker pull haxe@sha256:01e8f66d02c642075f4e1103b0925396370623711b4a3c0710412de8e78c1476
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.8 MB (127790760 bytes)**  
+-	Total Size: **127.8 MB (127790774 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf0c15d3002310a5235afb037750db9a88d134e4c045fb3ec1a42a5812cb383d`
+-	Image ID: `sha256:2efe4140ead2e95b6df4e6959e6590f5302a1a5f168e04f31741f730077e83eb`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -1229,9 +1229,9 @@ RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libp
 ENV HAXE_VERSION=4.0.5
 # Tue, 13 Feb 2024 16:44:30 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Tue, 13 Feb 2024 16:49:56 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 13 Feb 2024 16:49:57 GMT
+# Wed, 06 Mar 2024 00:00:02 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Wed, 06 Mar 2024 00:00:03 GMT
 CMD ["haxe"]
 ```
 
@@ -1256,9 +1256,9 @@ CMD ["haxe"]
 		Last Modified: Tue, 13 Feb 2024 16:57:54 GMT  
 		Size: 1.4 MB (1387835 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de251c68db29387d94c7aa791aa5d0e1e5b7cd28f0ec44851ccbdab99f159ec0`  
-		Last Modified: Tue, 13 Feb 2024 16:58:46 GMT  
-		Size: 9.6 MB (9641727 bytes)  
+	-	`sha256:2fbbf882f82325f10a95a02b02c398fa388ba3568e2c7b9152b4c8f481b3b372`  
+		Last Modified: Wed, 06 Mar 2024 00:08:49 GMT  
+		Size: 9.6 MB (9641741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.0-bullseye` - linux; arm64 variant v8
@@ -1330,7 +1330,7 @@ CMD ["haxe"]
 ## `haxe:4.0-buster`
 
 ```console
-$ docker pull haxe@sha256:f1ab91b5e40cf8a17b7fa845f80f42b5cd4600cee273b3e7e570bf31a15f39b9
+$ docker pull haxe@sha256:e1d640e5b4ffb5d8bd54d028726bc9d5bd5b43c8c67a4d0761cc48e3774189d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1408,14 +1408,14 @@ CMD ["haxe"]
 ### `haxe:4.0-buster` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:6c298f270afdff9ac8d071c96fe98e7e9a8a705379281ef838f792566f0734d6
+$ docker pull haxe@sha256:dcba7b46141548fa9ecaada2e3a0d628776dc45fac35ae2eaa583155ddf88169
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **121.5 MB (121540730 bytes)**  
+-	Total Size: **121.5 MB (121540716 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bce32b790a19e6a27ce0fced4e3d7955e4ebee492c1b76bd8dd31e526e3af39d`
+-	Image ID: `sha256:bc7cdc71604f904e40a42c8ccb569407b1d2cb737f09b902d798b9dc43ee80e1`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -1439,9 +1439,9 @@ RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libp
 ENV HAXE_VERSION=4.0.5
 # Tue, 13 Feb 2024 16:50:09 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Tue, 13 Feb 2024 16:57:25 GMT
-RUN set -ex 	&& buildDeps=' 		make 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --compiler=4.08.1 --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 13 Feb 2024 16:57:26 GMT
+# Wed, 06 Mar 2024 00:07:15 GMT
+RUN set -ex 	&& buildDeps=' 		make 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.08.1 --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Wed, 06 Mar 2024 00:07:15 GMT
 CMD ["haxe"]
 ```
 
@@ -1466,9 +1466,9 @@ CMD ["haxe"]
 		Last Modified: Tue, 13 Feb 2024 16:58:12 GMT  
 		Size: 2.3 MB (2253391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a27d64afa1209f755071bd1d5c4f2e053068eaca23906e9699ab7c1557da1555`  
-		Last Modified: Tue, 13 Feb 2024 16:58:58 GMT  
-		Size: 8.4 MB (8413819 bytes)  
+	-	`sha256:0bc59d0afa8a2a10a65383b5a1d1f0ad0c0201c12f5c18e8a0b8aa5e4439cbe6`  
+		Last Modified: Wed, 06 Mar 2024 00:08:59 GMT  
+		Size: 8.4 MB (8413805 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.0-buster` - linux; arm64 variant v8
@@ -2127,7 +2127,7 @@ CMD ["haxe"]
 ## `haxe:4.0.5`
 
 ```console
-$ docker pull haxe@sha256:4bccbdc34bf9644d2b9cedab511f814aaa9706fc87dfe74b0d02bec094f10ee5
+$ docker pull haxe@sha256:599b2ff90832c9b74f7a91305ef73b27130f98a22b53f199bcf821cab864c2a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2207,14 +2207,14 @@ CMD ["haxe"]
 ### `haxe:4.0.5` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:28fcd84c28e9a329789f6612ecc7437d2e3579d85299ecc2e250cd177220424c
+$ docker pull haxe@sha256:01e8f66d02c642075f4e1103b0925396370623711b4a3c0710412de8e78c1476
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.8 MB (127790760 bytes)**  
+-	Total Size: **127.8 MB (127790774 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf0c15d3002310a5235afb037750db9a88d134e4c045fb3ec1a42a5812cb383d`
+-	Image ID: `sha256:2efe4140ead2e95b6df4e6959e6590f5302a1a5f168e04f31741f730077e83eb`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -2238,9 +2238,9 @@ RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libp
 ENV HAXE_VERSION=4.0.5
 # Tue, 13 Feb 2024 16:44:30 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Tue, 13 Feb 2024 16:49:56 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 13 Feb 2024 16:49:57 GMT
+# Wed, 06 Mar 2024 00:00:02 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Wed, 06 Mar 2024 00:00:03 GMT
 CMD ["haxe"]
 ```
 
@@ -2265,9 +2265,9 @@ CMD ["haxe"]
 		Last Modified: Tue, 13 Feb 2024 16:57:54 GMT  
 		Size: 1.4 MB (1387835 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de251c68db29387d94c7aa791aa5d0e1e5b7cd28f0ec44851ccbdab99f159ec0`  
-		Last Modified: Tue, 13 Feb 2024 16:58:46 GMT  
-		Size: 9.6 MB (9641727 bytes)  
+	-	`sha256:2fbbf882f82325f10a95a02b02c398fa388ba3568e2c7b9152b4c8f481b3b372`  
+		Last Modified: Wed, 06 Mar 2024 00:08:49 GMT  
+		Size: 9.6 MB (9641741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.0.5` - linux; arm64 variant v8
@@ -3152,7 +3152,7 @@ CMD ["haxe"]
 ## `haxe:4.0.5-bullseye`
 
 ```console
-$ docker pull haxe@sha256:fe27a978c17cf984269d45bc5f31fa8794b535c00ad9962e57557113316b7a84
+$ docker pull haxe@sha256:fc721129c3c2107e6abeede9cf90f34b8f5881fe16d8ea9fbe281c34003ad474
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3230,14 +3230,14 @@ CMD ["haxe"]
 ### `haxe:4.0.5-bullseye` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:28fcd84c28e9a329789f6612ecc7437d2e3579d85299ecc2e250cd177220424c
+$ docker pull haxe@sha256:01e8f66d02c642075f4e1103b0925396370623711b4a3c0710412de8e78c1476
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.8 MB (127790760 bytes)**  
+-	Total Size: **127.8 MB (127790774 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf0c15d3002310a5235afb037750db9a88d134e4c045fb3ec1a42a5812cb383d`
+-	Image ID: `sha256:2efe4140ead2e95b6df4e6959e6590f5302a1a5f168e04f31741f730077e83eb`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -3261,9 +3261,9 @@ RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libp
 ENV HAXE_VERSION=4.0.5
 # Tue, 13 Feb 2024 16:44:30 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Tue, 13 Feb 2024 16:49:56 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 13 Feb 2024 16:49:57 GMT
+# Wed, 06 Mar 2024 00:00:02 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Wed, 06 Mar 2024 00:00:03 GMT
 CMD ["haxe"]
 ```
 
@@ -3288,9 +3288,9 @@ CMD ["haxe"]
 		Last Modified: Tue, 13 Feb 2024 16:57:54 GMT  
 		Size: 1.4 MB (1387835 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de251c68db29387d94c7aa791aa5d0e1e5b7cd28f0ec44851ccbdab99f159ec0`  
-		Last Modified: Tue, 13 Feb 2024 16:58:46 GMT  
-		Size: 9.6 MB (9641727 bytes)  
+	-	`sha256:2fbbf882f82325f10a95a02b02c398fa388ba3568e2c7b9152b4c8f481b3b372`  
+		Last Modified: Wed, 06 Mar 2024 00:08:49 GMT  
+		Size: 9.6 MB (9641741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.0.5-bullseye` - linux; arm64 variant v8
@@ -3362,7 +3362,7 @@ CMD ["haxe"]
 ## `haxe:4.0.5-buster`
 
 ```console
-$ docker pull haxe@sha256:f1ab91b5e40cf8a17b7fa845f80f42b5cd4600cee273b3e7e570bf31a15f39b9
+$ docker pull haxe@sha256:e1d640e5b4ffb5d8bd54d028726bc9d5bd5b43c8c67a4d0761cc48e3774189d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3440,14 +3440,14 @@ CMD ["haxe"]
 ### `haxe:4.0.5-buster` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:6c298f270afdff9ac8d071c96fe98e7e9a8a705379281ef838f792566f0734d6
+$ docker pull haxe@sha256:dcba7b46141548fa9ecaada2e3a0d628776dc45fac35ae2eaa583155ddf88169
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **121.5 MB (121540730 bytes)**  
+-	Total Size: **121.5 MB (121540716 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bce32b790a19e6a27ce0fced4e3d7955e4ebee492c1b76bd8dd31e526e3af39d`
+-	Image ID: `sha256:bc7cdc71604f904e40a42c8ccb569407b1d2cb737f09b902d798b9dc43ee80e1`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -3471,9 +3471,9 @@ RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libp
 ENV HAXE_VERSION=4.0.5
 # Tue, 13 Feb 2024 16:50:09 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Tue, 13 Feb 2024 16:57:25 GMT
-RUN set -ex 	&& buildDeps=' 		make 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --compiler=4.08.1 --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 13 Feb 2024 16:57:26 GMT
+# Wed, 06 Mar 2024 00:07:15 GMT
+RUN set -ex 	&& buildDeps=' 		make 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.08.1 --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Wed, 06 Mar 2024 00:07:15 GMT
 CMD ["haxe"]
 ```
 
@@ -3498,9 +3498,9 @@ CMD ["haxe"]
 		Last Modified: Tue, 13 Feb 2024 16:58:12 GMT  
 		Size: 2.3 MB (2253391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a27d64afa1209f755071bd1d5c4f2e053068eaca23906e9699ab7c1557da1555`  
-		Last Modified: Tue, 13 Feb 2024 16:58:58 GMT  
-		Size: 8.4 MB (8413819 bytes)  
+	-	`sha256:0bc59d0afa8a2a10a65383b5a1d1f0ad0c0201c12f5c18e8a0b8aa5e4439cbe6`  
+		Last Modified: Wed, 06 Mar 2024 00:08:59 GMT  
+		Size: 8.4 MB (8413805 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.0.5-buster` - linux; arm64 variant v8
@@ -4159,7 +4159,7 @@ CMD ["haxe"]
 ## `haxe:4.1`
 
 ```console
-$ docker pull haxe@sha256:4f14bb6030be9cac1fdae0fb131d24e9824436cfddcd3a581977d56976a65706
+$ docker pull haxe@sha256:d106e11f4d488cf250db48d5180ebfb9ff4abf077afdfa7018bd722886c845d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4239,14 +4239,14 @@ CMD ["haxe"]
 ### `haxe:4.1` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:edb974808dc2c9c4d6b8eecf26c37c2e3a9f59ccef05437919ba0f2ece2ff775
+$ docker pull haxe@sha256:7a075ca29cb03de139b0553b47b1242cf6af12b0d58f8bc94483574f9bfb7fa0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.0 MB (127979863 bytes)**  
+-	Total Size: **128.0 MB (127979850 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:51d89ecacde50dafde867a152744c1ed2e8b89e9252c90375e30b45650075f92`
+-	Image ID: `sha256:982535a675493f1f9d56cde350a549032424c52b30068bf99a2a117fd2258569`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -4270,9 +4270,9 @@ RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libp
 ENV HAXE_VERSION=4.1.5
 # Tue, 13 Feb 2024 16:32:43 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Tue, 13 Feb 2024 16:37:20 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 13 Feb 2024 16:37:21 GMT
+# Tue, 05 Mar 2024 23:48:00 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:48:00 GMT
 CMD ["haxe"]
 ```
 
@@ -4297,9 +4297,9 @@ CMD ["haxe"]
 		Last Modified: Tue, 13 Feb 2024 16:57:54 GMT  
 		Size: 1.4 MB (1387835 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b5867f8b0307b64361eb8a2592393bb711d87f744a18d4b7b482db5648cfafe`  
-		Last Modified: Tue, 13 Feb 2024 16:58:24 GMT  
-		Size: 9.8 MB (9830830 bytes)  
+	-	`sha256:07b6af7c28f79d158d4a4648fce699e14ec9188a04642a622a2f3f48c68be1e9`  
+		Last Modified: Wed, 06 Mar 2024 00:08:29 GMT  
+		Size: 9.8 MB (9830817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.1` - linux; arm64 variant v8
@@ -5184,7 +5184,7 @@ CMD ["haxe"]
 ## `haxe:4.1-bullseye`
 
 ```console
-$ docker pull haxe@sha256:96e75537eed533c9ed97ed6280dd98306baa8a709fe89ae624aa6703c75e6fa0
+$ docker pull haxe@sha256:d9c7e61723811a5f4924eeb8ce2a8b4853b84448d70188c53f74ae65fbe2c847
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5262,14 +5262,14 @@ CMD ["haxe"]
 ### `haxe:4.1-bullseye` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:edb974808dc2c9c4d6b8eecf26c37c2e3a9f59ccef05437919ba0f2ece2ff775
+$ docker pull haxe@sha256:7a075ca29cb03de139b0553b47b1242cf6af12b0d58f8bc94483574f9bfb7fa0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.0 MB (127979863 bytes)**  
+-	Total Size: **128.0 MB (127979850 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:51d89ecacde50dafde867a152744c1ed2e8b89e9252c90375e30b45650075f92`
+-	Image ID: `sha256:982535a675493f1f9d56cde350a549032424c52b30068bf99a2a117fd2258569`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -5293,9 +5293,9 @@ RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libp
 ENV HAXE_VERSION=4.1.5
 # Tue, 13 Feb 2024 16:32:43 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Tue, 13 Feb 2024 16:37:20 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 13 Feb 2024 16:37:21 GMT
+# Tue, 05 Mar 2024 23:48:00 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:48:00 GMT
 CMD ["haxe"]
 ```
 
@@ -5320,9 +5320,9 @@ CMD ["haxe"]
 		Last Modified: Tue, 13 Feb 2024 16:57:54 GMT  
 		Size: 1.4 MB (1387835 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b5867f8b0307b64361eb8a2592393bb711d87f744a18d4b7b482db5648cfafe`  
-		Last Modified: Tue, 13 Feb 2024 16:58:24 GMT  
-		Size: 9.8 MB (9830830 bytes)  
+	-	`sha256:07b6af7c28f79d158d4a4648fce699e14ec9188a04642a622a2f3f48c68be1e9`  
+		Last Modified: Wed, 06 Mar 2024 00:08:29 GMT  
+		Size: 9.8 MB (9830817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.1-bullseye` - linux; arm64 variant v8
@@ -5394,7 +5394,7 @@ CMD ["haxe"]
 ## `haxe:4.1-buster`
 
 ```console
-$ docker pull haxe@sha256:ed8e5531df925243a5d6eddea4aedaa14316617a1ae2f0b53c1917e4112db573
+$ docker pull haxe@sha256:3d0f54b06a54adfe3e4db5676be3c987b4df2f51471964893e9c42f85808f8be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5472,14 +5472,14 @@ CMD ["haxe"]
 ### `haxe:4.1-buster` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:0ffb7050972de4668da664bc340704ea4b82130ff87b32dd60767f3ebfa3bb6f
+$ docker pull haxe@sha256:d8bd05014c089cea3a137519f46eeda34fa1732153940b2d6872be42815cdbfe
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **121.7 MB (121726479 bytes)**  
+-	Total Size: **121.7 MB (121726510 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb1fddfde30aaff0951828868587cf4dd22eb32e9ac39a5cc118726a52f84563`
+-	Image ID: `sha256:8881fbd711afc0f146ec9dbaac96701863dfa246b56d777e0131634178521206`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -5503,9 +5503,9 @@ RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libp
 ENV HAXE_VERSION=4.1.5
 # Tue, 13 Feb 2024 16:37:37 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Tue, 13 Feb 2024 16:44:13 GMT
-RUN set -ex 	&& buildDeps=' 		make 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --compiler=4.08.1 --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 13 Feb 2024 16:44:13 GMT
+# Tue, 05 Mar 2024 23:54:19 GMT
+RUN set -ex 	&& buildDeps=' 		make 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.08.1 --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:54:20 GMT
 CMD ["haxe"]
 ```
 
@@ -5530,9 +5530,9 @@ CMD ["haxe"]
 		Last Modified: Tue, 13 Feb 2024 16:58:12 GMT  
 		Size: 2.3 MB (2253391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee12453b58e8eb53a28ee1b099042a2005f51fb063d8853645794cc41d8b7fb9`  
-		Last Modified: Tue, 13 Feb 2024 16:58:35 GMT  
-		Size: 8.6 MB (8599568 bytes)  
+	-	`sha256:8c81e1274dc02236101bcd0307c9942b9cdd14c395b0219eab0370c8140d7d38`  
+		Last Modified: Wed, 06 Mar 2024 00:08:39 GMT  
+		Size: 8.6 MB (8599599 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.1-buster` - linux; arm64 variant v8
@@ -6191,7 +6191,7 @@ CMD ["haxe"]
 ## `haxe:4.1.5`
 
 ```console
-$ docker pull haxe@sha256:4f14bb6030be9cac1fdae0fb131d24e9824436cfddcd3a581977d56976a65706
+$ docker pull haxe@sha256:d106e11f4d488cf250db48d5180ebfb9ff4abf077afdfa7018bd722886c845d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6271,14 +6271,14 @@ CMD ["haxe"]
 ### `haxe:4.1.5` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:edb974808dc2c9c4d6b8eecf26c37c2e3a9f59ccef05437919ba0f2ece2ff775
+$ docker pull haxe@sha256:7a075ca29cb03de139b0553b47b1242cf6af12b0d58f8bc94483574f9bfb7fa0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.0 MB (127979863 bytes)**  
+-	Total Size: **128.0 MB (127979850 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:51d89ecacde50dafde867a152744c1ed2e8b89e9252c90375e30b45650075f92`
+-	Image ID: `sha256:982535a675493f1f9d56cde350a549032424c52b30068bf99a2a117fd2258569`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -6302,9 +6302,9 @@ RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libp
 ENV HAXE_VERSION=4.1.5
 # Tue, 13 Feb 2024 16:32:43 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Tue, 13 Feb 2024 16:37:20 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 13 Feb 2024 16:37:21 GMT
+# Tue, 05 Mar 2024 23:48:00 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:48:00 GMT
 CMD ["haxe"]
 ```
 
@@ -6329,9 +6329,9 @@ CMD ["haxe"]
 		Last Modified: Tue, 13 Feb 2024 16:57:54 GMT  
 		Size: 1.4 MB (1387835 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b5867f8b0307b64361eb8a2592393bb711d87f744a18d4b7b482db5648cfafe`  
-		Last Modified: Tue, 13 Feb 2024 16:58:24 GMT  
-		Size: 9.8 MB (9830830 bytes)  
+	-	`sha256:07b6af7c28f79d158d4a4648fce699e14ec9188a04642a622a2f3f48c68be1e9`  
+		Last Modified: Wed, 06 Mar 2024 00:08:29 GMT  
+		Size: 9.8 MB (9830817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.1.5` - linux; arm64 variant v8
@@ -7216,7 +7216,7 @@ CMD ["haxe"]
 ## `haxe:4.1.5-bullseye`
 
 ```console
-$ docker pull haxe@sha256:96e75537eed533c9ed97ed6280dd98306baa8a709fe89ae624aa6703c75e6fa0
+$ docker pull haxe@sha256:d9c7e61723811a5f4924eeb8ce2a8b4853b84448d70188c53f74ae65fbe2c847
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7294,14 +7294,14 @@ CMD ["haxe"]
 ### `haxe:4.1.5-bullseye` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:edb974808dc2c9c4d6b8eecf26c37c2e3a9f59ccef05437919ba0f2ece2ff775
+$ docker pull haxe@sha256:7a075ca29cb03de139b0553b47b1242cf6af12b0d58f8bc94483574f9bfb7fa0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.0 MB (127979863 bytes)**  
+-	Total Size: **128.0 MB (127979850 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:51d89ecacde50dafde867a152744c1ed2e8b89e9252c90375e30b45650075f92`
+-	Image ID: `sha256:982535a675493f1f9d56cde350a549032424c52b30068bf99a2a117fd2258569`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -7325,9 +7325,9 @@ RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libp
 ENV HAXE_VERSION=4.1.5
 # Tue, 13 Feb 2024 16:32:43 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Tue, 13 Feb 2024 16:37:20 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 13 Feb 2024 16:37:21 GMT
+# Tue, 05 Mar 2024 23:48:00 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:48:00 GMT
 CMD ["haxe"]
 ```
 
@@ -7352,9 +7352,9 @@ CMD ["haxe"]
 		Last Modified: Tue, 13 Feb 2024 16:57:54 GMT  
 		Size: 1.4 MB (1387835 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b5867f8b0307b64361eb8a2592393bb711d87f744a18d4b7b482db5648cfafe`  
-		Last Modified: Tue, 13 Feb 2024 16:58:24 GMT  
-		Size: 9.8 MB (9830830 bytes)  
+	-	`sha256:07b6af7c28f79d158d4a4648fce699e14ec9188a04642a622a2f3f48c68be1e9`  
+		Last Modified: Wed, 06 Mar 2024 00:08:29 GMT  
+		Size: 9.8 MB (9830817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.1.5-bullseye` - linux; arm64 variant v8
@@ -7426,7 +7426,7 @@ CMD ["haxe"]
 ## `haxe:4.1.5-buster`
 
 ```console
-$ docker pull haxe@sha256:ed8e5531df925243a5d6eddea4aedaa14316617a1ae2f0b53c1917e4112db573
+$ docker pull haxe@sha256:3d0f54b06a54adfe3e4db5676be3c987b4df2f51471964893e9c42f85808f8be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7504,14 +7504,14 @@ CMD ["haxe"]
 ### `haxe:4.1.5-buster` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:0ffb7050972de4668da664bc340704ea4b82130ff87b32dd60767f3ebfa3bb6f
+$ docker pull haxe@sha256:d8bd05014c089cea3a137519f46eeda34fa1732153940b2d6872be42815cdbfe
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **121.7 MB (121726479 bytes)**  
+-	Total Size: **121.7 MB (121726510 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb1fddfde30aaff0951828868587cf4dd22eb32e9ac39a5cc118726a52f84563`
+-	Image ID: `sha256:8881fbd711afc0f146ec9dbaac96701863dfa246b56d777e0131634178521206`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -7535,9 +7535,9 @@ RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libp
 ENV HAXE_VERSION=4.1.5
 # Tue, 13 Feb 2024 16:37:37 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Tue, 13 Feb 2024 16:44:13 GMT
-RUN set -ex 	&& buildDeps=' 		make 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --compiler=4.08.1 --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 13 Feb 2024 16:44:13 GMT
+# Tue, 05 Mar 2024 23:54:19 GMT
+RUN set -ex 	&& buildDeps=' 		make 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.08.1 --disable-sandboxing 	&& eval `opam env` 	&& opam pin add extlib 1.7.7 --no-action 	&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:54:20 GMT
 CMD ["haxe"]
 ```
 
@@ -7562,9 +7562,9 @@ CMD ["haxe"]
 		Last Modified: Tue, 13 Feb 2024 16:58:12 GMT  
 		Size: 2.3 MB (2253391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee12453b58e8eb53a28ee1b099042a2005f51fb063d8853645794cc41d8b7fb9`  
-		Last Modified: Tue, 13 Feb 2024 16:58:35 GMT  
-		Size: 8.6 MB (8599568 bytes)  
+	-	`sha256:8c81e1274dc02236101bcd0307c9942b9cdd14c395b0219eab0370c8140d7d38`  
+		Last Modified: Wed, 06 Mar 2024 00:08:39 GMT  
+		Size: 8.6 MB (8599599 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.1.5-buster` - linux; arm64 variant v8
@@ -8223,7 +8223,7 @@ CMD ["haxe"]
 ## `haxe:4.2`
 
 ```console
-$ docker pull haxe@sha256:74fc108dc06a7f022755a452f1a2d236daee2014d932d7d1d8876fc01a5a2dc8
+$ docker pull haxe@sha256:ca6d0d4685ee1912c49f4723e4184ecd77a9fc6362b4d5cfc523696fdd726e9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8303,14 +8303,14 @@ CMD ["haxe"]
 ### `haxe:4.2` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:e2cc5bd3f72d758f3850ad1190ffdb06fc37b39d586c0bde8acb7929390ee657
+$ docker pull haxe@sha256:cc39b8208a092f5527047407b4171e8f6cd1c8ba22486aedef95765909116f16
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.3 MB (129257832 bytes)**  
+-	Total Size: **129.3 MB (129258037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43287b4f20ad554fd66ed8af44d9618e9f086def590c7abdf30880fd1463e022`
+-	Image ID: `sha256:d02de2a34d4922b95b16afe52bbd2bf2f5354b36505bb82fdf2a86de9be22bf4`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -8334,9 +8334,9 @@ RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libp
 ENV HAXE_VERSION=4.2.5
 # Tue, 13 Feb 2024 16:19:09 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Tue, 13 Feb 2024 16:23:08 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 13 Feb 2024 16:23:09 GMT
+# Tue, 05 Mar 2024 23:37:14 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:37:14 GMT
 CMD ["haxe"]
 ```
 
@@ -8361,9 +8361,9 @@ CMD ["haxe"]
 		Last Modified: Tue, 13 Feb 2024 16:57:54 GMT  
 		Size: 1.4 MB (1387835 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38954a60745d0c81a78e29a5f6345631f8cd60a61f9df6d2b488c20937b1b164`  
-		Last Modified: Tue, 13 Feb 2024 16:57:57 GMT  
-		Size: 11.1 MB (11108799 bytes)  
+	-	`sha256:f41d731e20743a6905fddb7e36cd7b3e5152916d5b6ebec4cb08c8d1bf151c5b`  
+		Last Modified: Wed, 06 Mar 2024 00:08:08 GMT  
+		Size: 11.1 MB (11109004 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.2` - linux; arm64 variant v8
@@ -9248,7 +9248,7 @@ CMD ["haxe"]
 ## `haxe:4.2-bullseye`
 
 ```console
-$ docker pull haxe@sha256:ef5707e53b79152f683393c54268032ff3647884dafaf69eff427e3edf36aacc
+$ docker pull haxe@sha256:d4b11ace8ce489a79c938dc862bb56e804301e22408af3313be7af508738e2f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9326,14 +9326,14 @@ CMD ["haxe"]
 ### `haxe:4.2-bullseye` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:e2cc5bd3f72d758f3850ad1190ffdb06fc37b39d586c0bde8acb7929390ee657
+$ docker pull haxe@sha256:cc39b8208a092f5527047407b4171e8f6cd1c8ba22486aedef95765909116f16
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.3 MB (129257832 bytes)**  
+-	Total Size: **129.3 MB (129258037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43287b4f20ad554fd66ed8af44d9618e9f086def590c7abdf30880fd1463e022`
+-	Image ID: `sha256:d02de2a34d4922b95b16afe52bbd2bf2f5354b36505bb82fdf2a86de9be22bf4`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -9357,9 +9357,9 @@ RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libp
 ENV HAXE_VERSION=4.2.5
 # Tue, 13 Feb 2024 16:19:09 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Tue, 13 Feb 2024 16:23:08 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 13 Feb 2024 16:23:09 GMT
+# Tue, 05 Mar 2024 23:37:14 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:37:14 GMT
 CMD ["haxe"]
 ```
 
@@ -9384,9 +9384,9 @@ CMD ["haxe"]
 		Last Modified: Tue, 13 Feb 2024 16:57:54 GMT  
 		Size: 1.4 MB (1387835 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38954a60745d0c81a78e29a5f6345631f8cd60a61f9df6d2b488c20937b1b164`  
-		Last Modified: Tue, 13 Feb 2024 16:57:57 GMT  
-		Size: 11.1 MB (11108799 bytes)  
+	-	`sha256:f41d731e20743a6905fddb7e36cd7b3e5152916d5b6ebec4cb08c8d1bf151c5b`  
+		Last Modified: Wed, 06 Mar 2024 00:08:08 GMT  
+		Size: 11.1 MB (11109004 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.2-bullseye` - linux; arm64 variant v8
@@ -9458,7 +9458,7 @@ CMD ["haxe"]
 ## `haxe:4.2-buster`
 
 ```console
-$ docker pull haxe@sha256:e642eade4182195c4f3a872c47439a69f6ce06ed16008674c8e83c104632588f
+$ docker pull haxe@sha256:e806e768719fc291d8dc57605cb5a51ddc91f440573210a36ec194c3339b57c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9536,14 +9536,14 @@ CMD ["haxe"]
 ### `haxe:4.2-buster` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:6f939a71cd919d7a27b0944542a0eff4cde60a5e5d735a2a0ec53958d0875392
+$ docker pull haxe@sha256:d99695b78b618efa1a790427cfd06a1f94a0b845660d27e89ea5f0527d41449a
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **123.0 MB (123002012 bytes)**  
+-	Total Size: **123.0 MB (123002061 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ecf39861db8cb34dcba816fc2e8e08131b37be73341be57631a1f4f920a4590e`
+-	Image ID: `sha256:17d9ef458d169b9ad42a8eea4602e8db120c6d9f6e9630991a7e958969b322e7`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -9567,9 +9567,9 @@ RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libp
 ENV HAXE_VERSION=4.2.5
 # Tue, 13 Feb 2024 16:25:58 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Tue, 13 Feb 2024 16:32:32 GMT
-RUN set -ex 	&& buildDeps=' 		make 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --compiler=4.08.1 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 13 Feb 2024 16:32:33 GMT
+# Tue, 05 Mar 2024 23:43:27 GMT
+RUN set -ex 	&& buildDeps=' 		make 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.08.1 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:43:28 GMT
 CMD ["haxe"]
 ```
 
@@ -9594,9 +9594,9 @@ CMD ["haxe"]
 		Last Modified: Tue, 13 Feb 2024 16:58:12 GMT  
 		Size: 2.3 MB (2253391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2003bf0380b0cc9d0dd89cd6c8ef444a145e398751888f886b6094f319ff6adb`  
-		Last Modified: Tue, 13 Feb 2024 16:58:13 GMT  
-		Size: 9.9 MB (9875101 bytes)  
+	-	`sha256:26b16b642cb61b64d2c94c725947205fe8e9f73f823f0fdf570dc2b0cefa46c4`  
+		Last Modified: Wed, 06 Mar 2024 00:08:19 GMT  
+		Size: 9.9 MB (9875150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.2-buster` - linux; arm64 variant v8
@@ -10255,7 +10255,7 @@ CMD ["haxe"]
 ## `haxe:4.2.5`
 
 ```console
-$ docker pull haxe@sha256:74fc108dc06a7f022755a452f1a2d236daee2014d932d7d1d8876fc01a5a2dc8
+$ docker pull haxe@sha256:ca6d0d4685ee1912c49f4723e4184ecd77a9fc6362b4d5cfc523696fdd726e9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10335,14 +10335,14 @@ CMD ["haxe"]
 ### `haxe:4.2.5` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:e2cc5bd3f72d758f3850ad1190ffdb06fc37b39d586c0bde8acb7929390ee657
+$ docker pull haxe@sha256:cc39b8208a092f5527047407b4171e8f6cd1c8ba22486aedef95765909116f16
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.3 MB (129257832 bytes)**  
+-	Total Size: **129.3 MB (129258037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43287b4f20ad554fd66ed8af44d9618e9f086def590c7abdf30880fd1463e022`
+-	Image ID: `sha256:d02de2a34d4922b95b16afe52bbd2bf2f5354b36505bb82fdf2a86de9be22bf4`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -10366,9 +10366,9 @@ RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libp
 ENV HAXE_VERSION=4.2.5
 # Tue, 13 Feb 2024 16:19:09 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Tue, 13 Feb 2024 16:23:08 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 13 Feb 2024 16:23:09 GMT
+# Tue, 05 Mar 2024 23:37:14 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:37:14 GMT
 CMD ["haxe"]
 ```
 
@@ -10393,9 +10393,9 @@ CMD ["haxe"]
 		Last Modified: Tue, 13 Feb 2024 16:57:54 GMT  
 		Size: 1.4 MB (1387835 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38954a60745d0c81a78e29a5f6345631f8cd60a61f9df6d2b488c20937b1b164`  
-		Last Modified: Tue, 13 Feb 2024 16:57:57 GMT  
-		Size: 11.1 MB (11108799 bytes)  
+	-	`sha256:f41d731e20743a6905fddb7e36cd7b3e5152916d5b6ebec4cb08c8d1bf151c5b`  
+		Last Modified: Wed, 06 Mar 2024 00:08:08 GMT  
+		Size: 11.1 MB (11109004 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.2.5` - linux; arm64 variant v8
@@ -11280,7 +11280,7 @@ CMD ["haxe"]
 ## `haxe:4.2.5-bullseye`
 
 ```console
-$ docker pull haxe@sha256:ef5707e53b79152f683393c54268032ff3647884dafaf69eff427e3edf36aacc
+$ docker pull haxe@sha256:d4b11ace8ce489a79c938dc862bb56e804301e22408af3313be7af508738e2f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11358,14 +11358,14 @@ CMD ["haxe"]
 ### `haxe:4.2.5-bullseye` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:e2cc5bd3f72d758f3850ad1190ffdb06fc37b39d586c0bde8acb7929390ee657
+$ docker pull haxe@sha256:cc39b8208a092f5527047407b4171e8f6cd1c8ba22486aedef95765909116f16
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.3 MB (129257832 bytes)**  
+-	Total Size: **129.3 MB (129258037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43287b4f20ad554fd66ed8af44d9618e9f086def590c7abdf30880fd1463e022`
+-	Image ID: `sha256:d02de2a34d4922b95b16afe52bbd2bf2f5354b36505bb82fdf2a86de9be22bf4`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -11389,9 +11389,9 @@ RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libp
 ENV HAXE_VERSION=4.2.5
 # Tue, 13 Feb 2024 16:19:09 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Tue, 13 Feb 2024 16:23:08 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 13 Feb 2024 16:23:09 GMT
+# Tue, 05 Mar 2024 23:37:14 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:37:14 GMT
 CMD ["haxe"]
 ```
 
@@ -11416,9 +11416,9 @@ CMD ["haxe"]
 		Last Modified: Tue, 13 Feb 2024 16:57:54 GMT  
 		Size: 1.4 MB (1387835 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38954a60745d0c81a78e29a5f6345631f8cd60a61f9df6d2b488c20937b1b164`  
-		Last Modified: Tue, 13 Feb 2024 16:57:57 GMT  
-		Size: 11.1 MB (11108799 bytes)  
+	-	`sha256:f41d731e20743a6905fddb7e36cd7b3e5152916d5b6ebec4cb08c8d1bf151c5b`  
+		Last Modified: Wed, 06 Mar 2024 00:08:08 GMT  
+		Size: 11.1 MB (11109004 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.2.5-bullseye` - linux; arm64 variant v8
@@ -11490,7 +11490,7 @@ CMD ["haxe"]
 ## `haxe:4.2.5-buster`
 
 ```console
-$ docker pull haxe@sha256:e642eade4182195c4f3a872c47439a69f6ce06ed16008674c8e83c104632588f
+$ docker pull haxe@sha256:e806e768719fc291d8dc57605cb5a51ddc91f440573210a36ec194c3339b57c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11568,14 +11568,14 @@ CMD ["haxe"]
 ### `haxe:4.2.5-buster` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:6f939a71cd919d7a27b0944542a0eff4cde60a5e5d735a2a0ec53958d0875392
+$ docker pull haxe@sha256:d99695b78b618efa1a790427cfd06a1f94a0b845660d27e89ea5f0527d41449a
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **123.0 MB (123002012 bytes)**  
+-	Total Size: **123.0 MB (123002061 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ecf39861db8cb34dcba816fc2e8e08131b37be73341be57631a1f4f920a4590e`
+-	Image ID: `sha256:17d9ef458d169b9ad42a8eea4602e8db120c6d9f6e9630991a7e958969b322e7`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -11599,9 +11599,9 @@ RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libp
 ENV HAXE_VERSION=4.2.5
 # Tue, 13 Feb 2024 16:25:58 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Tue, 13 Feb 2024 16:32:32 GMT
-RUN set -ex 	&& buildDeps=' 		make 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --compiler=4.08.1 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 13 Feb 2024 16:32:33 GMT
+# Tue, 05 Mar 2024 23:43:27 GMT
+RUN set -ex 	&& buildDeps=' 		make 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.08.1 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:43:28 GMT
 CMD ["haxe"]
 ```
 
@@ -11626,9 +11626,9 @@ CMD ["haxe"]
 		Last Modified: Tue, 13 Feb 2024 16:58:12 GMT  
 		Size: 2.3 MB (2253391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2003bf0380b0cc9d0dd89cd6c8ef444a145e398751888f886b6094f319ff6adb`  
-		Last Modified: Tue, 13 Feb 2024 16:58:13 GMT  
-		Size: 9.9 MB (9875101 bytes)  
+	-	`sha256:26b16b642cb61b64d2c94c725947205fe8e9f73f823f0fdf570dc2b0cefa46c4`  
+		Last Modified: Wed, 06 Mar 2024 00:08:19 GMT  
+		Size: 9.9 MB (9875150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.2.5-buster` - linux; arm64 variant v8
@@ -12287,7 +12287,7 @@ CMD ["haxe"]
 ## `haxe:4.3`
 
 ```console
-$ docker pull haxe@sha256:14f4573b5c4e34d9af1a2e28fc60533066723da7bc96fe8f2c27dca98b31f64c
+$ docker pull haxe@sha256:59fa78d2cabea34c0f2245b4f78589d9341ebc58e4c955fb570461b06222a205
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12367,67 +12367,67 @@ CMD ["haxe"]
 ### `haxe:4.3` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:b608dcbccdb65677b660fc14bf315f37b2140349628a80af63f2afd243bd1dcb
+$ docker pull haxe@sha256:7e50b035efdb191d01a1a6eff4a9da2bdb14158cc8108f57dcb3f82c5225ebc0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.5 MB (129504078 bytes)**  
+-	Total Size: **129.5 MB (129527000 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad08629bc9b2fc1e9ef08f5fb959eccc5fc6330a933d59b2e29da109df1af63e`
+-	Image ID: `sha256:479b40a6f51e511edbfc42a1cd9fba3e1f02eec7b6734aa8def0bc02f2189b77`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 22:44:31 GMT
-ADD file:7a3ca444fa582cdedade49cd6262ee982b6da86eafe22b1b77326c8eab3f88cf in / 
-# Wed, 31 Jan 2024 22:44:31 GMT
+# Tue, 13 Feb 2024 01:20:21 GMT
+ADD file:a6e150be02b0758f7cb3863651ae586c1592e19949e91c78e3771ceaad602a2a in / 
+# Tue, 13 Feb 2024 01:20:22 GMT
 CMD ["bash"]
-# Thu, 01 Feb 2024 02:49:00 GMT
+# Tue, 13 Feb 2024 04:16:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 01 Feb 2024 02:49:20 GMT
+# Tue, 13 Feb 2024 04:16:34 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 01 Feb 2024 05:47:01 GMT
+# Tue, 13 Feb 2024 15:37:22 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 01 Feb 2024 05:47:06 GMT
+# Tue, 05 Mar 2024 23:17:55 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 01 Feb 2024 05:47:06 GMT
+# Tue, 05 Mar 2024 23:17:55 GMT
 ENV NEKO_VERSION=2.3.0
-# Thu, 01 Feb 2024 05:48:36 GMT
+# Tue, 05 Mar 2024 23:19:27 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-3-0/neko-2.3.0.tar.gz" 	&& echo "850e7e317bdaf24ed652efeff89c1cb21380ca19f20e68a296c84f6bad4ee995 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Thu, 01 Feb 2024 05:48:36 GMT
-ENV HAXE_VERSION=4.3.3
-# Thu, 01 Feb 2024 05:48:37 GMT
+# Tue, 05 Mar 2024 23:19:27 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:19:28 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 01 Feb 2024 05:51:35 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.3.3 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Thu, 01 Feb 2024 05:51:36 GMT
+# Tue, 05 Mar 2024 23:22:48 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:22:49 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:413453d204f637339c7a4727b614537000709bb2ff00a6307e262cf37237761c`  
-		Last Modified: Wed, 31 Jan 2024 22:49:12 GMT  
-		Size: 50.2 MB (50216178 bytes)  
+	-	`sha256:623a3ffac68434a8d471ef584bdb1dcbfafd4648778c484c1566ff7910d04b0e`  
+		Last Modified: Tue, 13 Feb 2024 01:27:15 GMT  
+		Size: 50.2 MB (50241706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b1bf41a938a7614b6b4a47164d8e064bbe0014418bfb366d6fac331d52eb271`  
-		Last Modified: Thu, 01 Feb 2024 02:59:37 GMT  
-		Size: 14.9 MB (14880646 bytes)  
+	-	`sha256:6c12ee536bcdc51ad528b0ed79abe7893d5c4c356dd3b5d3321eb8eda18294ca`  
+		Last Modified: Tue, 13 Feb 2024 04:28:21 GMT  
+		Size: 14.9 MB (14879180 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e95de382e9abef96d20556d56d3fb966963ac36ee44cacf79096d796176232c7`  
-		Last Modified: Thu, 01 Feb 2024 02:59:54 GMT  
-		Size: 50.4 MB (50361245 bytes)  
+	-	`sha256:eebe7ea1391c25ae1a4d9bd9382746170a0edc00c1085152e15d7ade4b3fa456`  
+		Last Modified: Tue, 13 Feb 2024 04:28:43 GMT  
+		Size: 50.4 MB (50357734 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e916f785e8106f7e3d231d3b9235aa360cf02950e0a63ca4444790d956992c5d`  
-		Last Modified: Thu, 01 Feb 2024 06:34:10 GMT  
-		Size: 1.3 MB (1283350 bytes)  
+	-	`sha256:8672aeb1080353103282ba88808bad38fea56a381779d710f586c80398aef8e7`  
+		Last Modified: Wed, 06 Mar 2024 00:07:41 GMT  
+		Size: 1.3 MB (1282589 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b4fc4ba84e2d4e1415c887585eb971fa7ccf09af5d77a57e2e3bec687cc6653`  
-		Last Modified: Thu, 01 Feb 2024 06:34:10 GMT  
-		Size: 1.4 MB (1389912 bytes)  
+	-	`sha256:dfbe9d4298112a8a733ba81e2b90e87afd4713e2873f499a8e0904dc6d8945d2`  
+		Last Modified: Wed, 06 Mar 2024 00:07:41 GMT  
+		Size: 1.4 MB (1387749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc057a7ea3363295064e96a79074bad2dd9cd2791428b1d0bc260a4bdafea05d`  
-		Last Modified: Thu, 01 Feb 2024 06:34:13 GMT  
-		Size: 11.4 MB (11372747 bytes)  
+	-	`sha256:237cb31ec15aafe7089da51424f363285b3ee273f59e0e219a3dbb73b1e3adcd`  
+		Last Modified: Wed, 06 Mar 2024 00:07:44 GMT  
+		Size: 11.4 MB (11378042 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.3` - linux; arm64 variant v8
@@ -12499,14 +12499,14 @@ CMD ["haxe"]
 ### `haxe:4.3` - windows version 10.0.20348.2322; amd64
 
 ```console
-$ docker pull haxe@sha256:4ca2b305e366a1747138628cb74b017be400ffc25bc215f23678d712c6b42177
+$ docker pull haxe@sha256:0cc8597a9e1401ce1af5c6f3b236a0e2db8a13aec8916c141f1438f686fee46a
 ```
 
 -	Docker Version: 20.10.21
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 GB (1937018424 bytes)**  
+-	Total Size: **1.9 GB (1937036414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03901b6087dd1762da8748e5d2f3ba1965c84b40fb6711d9c677fc8c1b83c415`
+-	Image ID: `sha256:377e849da36e4f8ae74f05af188aa0bc9f259fc931643a40f3e37fe07995064f`
 -	Default Command: `["haxe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
@@ -12537,19 +12537,19 @@ RUN New-Item -ItemType directory -Path $env:HAXETOOLKIT_PATH;
 ENV NEKO_VERSION=2.3.0
 # Wed, 14 Feb 2024 21:30:39 GMT
 RUN $url = 'https://github.com/HaxeFoundation/neko/releases/download/v2-3-0/neko-2.3.0-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'neko.zip'; 		Write-Host 'Verifying sha256 (d09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b) ...'; 	if ((Get-FileHash neko.zip -Algorithm sha256).Hash -ne 'd09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path neko.zip -DestinationPath tmp; 	if (Test-Path tmp\neko.exe) { Move-Item tmp $env:NEKOPATH } 	else { Move-Item (Resolve-Path tmp\neko* | Select -ExpandProperty Path) $env:NEKOPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path neko.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  neko -version'; neko -version; 		Write-Host 'Complete.';
-# Wed, 14 Feb 2024 21:30:40 GMT
-ENV HAXE_VERSION=4.3.3
-# Wed, 14 Feb 2024 21:34:55 GMT
-RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.3/haxe-4.3.3-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (70953a966b90bceb664639d1a690567e39cf9e3ebacf8c622c17df76fa0a199b) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '70953a966b90bceb664639d1a690567e39cf9e3ebacf8c622c17df76fa0a199b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
-# Wed, 14 Feb 2024 21:35:16 GMT
+# Tue, 05 Mar 2024 23:15:12 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:19:22 GMT
+RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.4/haxe-4.3.4-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:19:42 GMT
 RUN New-Item -ItemType directory -Path $env:HAXELIB_PATH;
-# Wed, 14 Feb 2024 21:35:16 GMT
+# Tue, 05 Mar 2024 23:19:43 GMT
 ENV HOMEDRIVE=C:
-# Wed, 14 Feb 2024 21:35:35 GMT
+# Tue, 05 Mar 2024 23:20:01 GMT
 RUN $newPath = ('{0}\Users\{1}' -f $env:HOMEDRIVE, $env:USERNAME); 	Write-Host ('Updating HOMEPATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('HOMEPATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 14 Feb 2024 21:35:55 GMT
+# Tue, 05 Mar 2024 23:20:21 GMT
 RUN (New-Object System.Net.WebClient).DownloadString('https://lib.haxe.org/p/hxcpp/4.2.1/download/') >$null
-# Wed, 14 Feb 2024 21:35:55 GMT
+# Tue, 05 Mar 2024 23:20:22 GMT
 CMD ["haxe"]
 ```
 
@@ -12606,46 +12606,46 @@ CMD ["haxe"]
 		Last Modified: Wed, 14 Feb 2024 22:36:49 GMT  
 		Size: 2.1 MB (2132792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:33f0cda5fdb29b6a0bb5510a4732d475212c374c285d6b35eed6b9218dfcffea`  
-		Last Modified: Wed, 14 Feb 2024 22:36:48 GMT  
-		Size: 1.4 KB (1411 bytes)  
+	-	`sha256:dc557d75011fde75b3c2b5be70413ed7e63757458bfdd472f61497ad78085a8e`  
+		Last Modified: Tue, 05 Mar 2024 23:30:30 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7725c11b5766ae27f472b8ea84e5c6baea02863516f55248d8de9afa8f19edd`  
-		Last Modified: Wed, 14 Feb 2024 22:36:52 GMT  
-		Size: 9.6 MB (9570028 bytes)  
+	-	`sha256:a5477596e47730781d4af674baea9b7e7fcc83589d238b66d75cb17fcb0b0976`  
+		Last Modified: Tue, 05 Mar 2024 23:30:34 GMT  
+		Size: 9.6 MB (9609110 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad7c0d58e6f76d9888647408b1f823eaeb4637b147ba1f743d0553348c29e284`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 333.8 KB (333827 bytes)  
+	-	`sha256:e686f54b7330e7b27d2d4063fbc9f5c38abe9e58ab265544f6713a0429b7b7a5`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 327.6 KB (327629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05abdbfab0d89b5729021b42513af353b2776461b2b434e648fc195587735849`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 1.3 KB (1288 bytes)  
+	-	`sha256:e448242449c379ab8e51699f3f01ecce32da60b051d6722dbe19f601a0308d5f`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb037e1d64df68cd9e573809dfcfa435297aac0bbe0ba6046ddddd0dd6023231`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 336.9 KB (336906 bytes)  
+	-	`sha256:b3acf469ce2981d5ace0f99ad0c7cec77ca666021ee68f72eb924c4d076122c0`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 330.2 KB (330171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f77d68eb0c407254cfc55a96b1ae42bcdd45d15c231ad42c981b6435fe85596`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 357.7 KB (357702 bytes)  
+	-	`sha256:35e25b0c19a8089a36adbbbb4ae30f865e23aaeeead0fe2d9c80bb9a06d622ac`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 349.5 KB (349521 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:479f6978004fac3eb4efee129c2306030079cedb3c41b9f473ac53d087c65049`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:c0cf9f30dc552c92e27c4a052b10208872f4255dcb59f4ced183d0498594a3cf`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.3` - windows version 10.0.17763.5458; amd64
 
 ```console
-$ docker pull haxe@sha256:b8aa94148ad85babc293b93e188c7cec85cb30d22e0e736b75cdf715739c9000
+$ docker pull haxe@sha256:673d180da0f311e9a10ec0b3f5dad306f3df390720a1bace7513a7e1a13c6486
 ```
 
 -	Docker Version: 20.10.21
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2111231235 bytes)**  
+-	Total Size: **2.1 GB (2106798148 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b19c4da2e7a638f309c19aa14d99045ec8276bc038d458480b800cd9bae3938c`
+-	Image ID: `sha256:e2e6cd7e8d5e6c5fb550539f9c230e2c2d4419a77c23b850e6a28b3a4b53ff80`
 -	Default Command: `["haxe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
@@ -12676,19 +12676,19 @@ RUN New-Item -ItemType directory -Path $env:HAXETOOLKIT_PATH;
 ENV NEKO_VERSION=2.3.0
 # Wed, 14 Feb 2024 21:42:54 GMT
 RUN $url = 'https://github.com/HaxeFoundation/neko/releases/download/v2-3-0/neko-2.3.0-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'neko.zip'; 		Write-Host 'Verifying sha256 (d09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b) ...'; 	if ((Get-FileHash neko.zip -Algorithm sha256).Hash -ne 'd09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path neko.zip -DestinationPath tmp; 	if (Test-Path tmp\neko.exe) { Move-Item tmp $env:NEKOPATH } 	else { Move-Item (Resolve-Path tmp\neko* | Select -ExpandProperty Path) $env:NEKOPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path neko.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  neko -version'; neko -version; 		Write-Host 'Complete.';
-# Wed, 14 Feb 2024 21:42:55 GMT
-ENV HAXE_VERSION=4.3.3
-# Wed, 14 Feb 2024 21:47:49 GMT
-RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.3/haxe-4.3.3-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (70953a966b90bceb664639d1a690567e39cf9e3ebacf8c622c17df76fa0a199b) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '70953a966b90bceb664639d1a690567e39cf9e3ebacf8c622c17df76fa0a199b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
-# Wed, 14 Feb 2024 21:49:07 GMT
+# Tue, 05 Mar 2024 23:20:41 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:25:20 GMT
+RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.4/haxe-4.3.4-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:26:32 GMT
 RUN New-Item -ItemType directory -Path $env:HAXELIB_PATH;
-# Wed, 14 Feb 2024 21:49:08 GMT
+# Tue, 05 Mar 2024 23:26:33 GMT
 ENV HOMEDRIVE=C:
-# Wed, 14 Feb 2024 21:50:27 GMT
+# Tue, 05 Mar 2024 23:27:43 GMT
 RUN $newPath = ('{0}\Users\{1}' -f $env:HOMEDRIVE, $env:USERNAME); 	Write-Host ('Updating HOMEPATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('HOMEPATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 14 Feb 2024 21:51:48 GMT
+# Tue, 05 Mar 2024 23:29:01 GMT
 RUN (New-Object System.Net.WebClient).DownloadString('https://lib.haxe.org/p/hxcpp/4.2.1/download/') >$null
-# Wed, 14 Feb 2024 21:51:49 GMT
+# Tue, 05 Mar 2024 23:29:01 GMT
 CMD ["haxe"]
 ```
 
@@ -12745,33 +12745,33 @@ CMD ["haxe"]
 		Last Modified: Wed, 14 Feb 2024 22:37:07 GMT  
 		Size: 2.1 MB (2141307 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e00737189173fabfdcd08654261074fce12b063fa3e27555f9af0150d6935af1`  
-		Last Modified: Wed, 14 Feb 2024 22:37:06 GMT  
-		Size: 1.4 KB (1424 bytes)  
+	-	`sha256:f94e78fd99b2b85d7f90a9a7bc7ace0576f9593987af484c7c404e6b8a67823e`  
+		Last Modified: Tue, 05 Mar 2024 23:30:45 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e76a52a156155521e3ef5a7eb63d74ab41388e86d1f350af62fe1bf51740878c`  
-		Last Modified: Wed, 14 Feb 2024 22:37:12 GMT  
-		Size: 13.9 MB (13910789 bytes)  
+	-	`sha256:572886e794b3f38123d04dca0c178d0e089a26c7fcd226cfaf93b16645f52d15`  
+		Last Modified: Tue, 05 Mar 2024 23:30:49 GMT  
+		Size: 9.5 MB (9523133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ad0acdc817d77ca619d2595b4981aa8b2c8be028c21a2c1a0598e3d1dd07670`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 343.3 KB (343292 bytes)  
+	-	`sha256:c7fa0c690e2c609b29b448e0ca4bf38a7da786bbaebe2d3619dd1c74c3750851`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 331.0 KB (330956 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f38ddaeaff0ec5f527359ead2c65aee3e216a114f238c435ffb1e91cd68b81c`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:0502039faa6acf9b1ab1d50f73e1038bf28f392aacf33ff8c2c3399a377a3a9d`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 1.3 KB (1309 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d944484e7a8b3b8452c1213f0025ce76ef4c480ece61dec1bc38a512dff9160`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 348.6 KB (348650 bytes)  
+	-	`sha256:9379f159005197e3c7ec0b27ef17f08f739d7044bcb930ec15b9575731908c06`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 332.9 KB (332862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fcbbeb7d624d921ffc864b2aad60cfa7c380e320c85e1e879bd66964f3e89fd8`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 359.4 KB (359447 bytes)  
+	-	`sha256:04d79ab514417842c9f4656ab4e7995e7d58ee1c113dfbe358126d0efef94678`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 342.3 KB (342344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68dd116ba79880b8334c795f208668e7df9975066edbb00838e510e1974f7b1c`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 1.4 KB (1411 bytes)  
+	-	`sha256:28d51b7261194310821890e3f99bb0c31c2ecd289cafd94991d098e09a9b67d1`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 1.3 KB (1323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.3-alpine`
@@ -13312,7 +13312,7 @@ CMD ["haxe"]
 ## `haxe:4.3-bullseye`
 
 ```console
-$ docker pull haxe@sha256:ee336402b3b38b9773ac3592d693af419d294cb35ca5b2c93602004b7a052238
+$ docker pull haxe@sha256:12a2297a5eea656bb77a630d0ff1d7c0f58b9c8e7d7fceb263b581a1231ddf1c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13390,67 +13390,67 @@ CMD ["haxe"]
 ### `haxe:4.3-bullseye` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:b608dcbccdb65677b660fc14bf315f37b2140349628a80af63f2afd243bd1dcb
+$ docker pull haxe@sha256:7e50b035efdb191d01a1a6eff4a9da2bdb14158cc8108f57dcb3f82c5225ebc0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.5 MB (129504078 bytes)**  
+-	Total Size: **129.5 MB (129527000 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad08629bc9b2fc1e9ef08f5fb959eccc5fc6330a933d59b2e29da109df1af63e`
+-	Image ID: `sha256:479b40a6f51e511edbfc42a1cd9fba3e1f02eec7b6734aa8def0bc02f2189b77`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 22:44:31 GMT
-ADD file:7a3ca444fa582cdedade49cd6262ee982b6da86eafe22b1b77326c8eab3f88cf in / 
-# Wed, 31 Jan 2024 22:44:31 GMT
+# Tue, 13 Feb 2024 01:20:21 GMT
+ADD file:a6e150be02b0758f7cb3863651ae586c1592e19949e91c78e3771ceaad602a2a in / 
+# Tue, 13 Feb 2024 01:20:22 GMT
 CMD ["bash"]
-# Thu, 01 Feb 2024 02:49:00 GMT
+# Tue, 13 Feb 2024 04:16:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 01 Feb 2024 02:49:20 GMT
+# Tue, 13 Feb 2024 04:16:34 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 01 Feb 2024 05:47:01 GMT
+# Tue, 13 Feb 2024 15:37:22 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 01 Feb 2024 05:47:06 GMT
+# Tue, 05 Mar 2024 23:17:55 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 01 Feb 2024 05:47:06 GMT
+# Tue, 05 Mar 2024 23:17:55 GMT
 ENV NEKO_VERSION=2.3.0
-# Thu, 01 Feb 2024 05:48:36 GMT
+# Tue, 05 Mar 2024 23:19:27 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-3-0/neko-2.3.0.tar.gz" 	&& echo "850e7e317bdaf24ed652efeff89c1cb21380ca19f20e68a296c84f6bad4ee995 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Thu, 01 Feb 2024 05:48:36 GMT
-ENV HAXE_VERSION=4.3.3
-# Thu, 01 Feb 2024 05:48:37 GMT
+# Tue, 05 Mar 2024 23:19:27 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:19:28 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 01 Feb 2024 05:51:35 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.3.3 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Thu, 01 Feb 2024 05:51:36 GMT
+# Tue, 05 Mar 2024 23:22:48 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:22:49 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:413453d204f637339c7a4727b614537000709bb2ff00a6307e262cf37237761c`  
-		Last Modified: Wed, 31 Jan 2024 22:49:12 GMT  
-		Size: 50.2 MB (50216178 bytes)  
+	-	`sha256:623a3ffac68434a8d471ef584bdb1dcbfafd4648778c484c1566ff7910d04b0e`  
+		Last Modified: Tue, 13 Feb 2024 01:27:15 GMT  
+		Size: 50.2 MB (50241706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b1bf41a938a7614b6b4a47164d8e064bbe0014418bfb366d6fac331d52eb271`  
-		Last Modified: Thu, 01 Feb 2024 02:59:37 GMT  
-		Size: 14.9 MB (14880646 bytes)  
+	-	`sha256:6c12ee536bcdc51ad528b0ed79abe7893d5c4c356dd3b5d3321eb8eda18294ca`  
+		Last Modified: Tue, 13 Feb 2024 04:28:21 GMT  
+		Size: 14.9 MB (14879180 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e95de382e9abef96d20556d56d3fb966963ac36ee44cacf79096d796176232c7`  
-		Last Modified: Thu, 01 Feb 2024 02:59:54 GMT  
-		Size: 50.4 MB (50361245 bytes)  
+	-	`sha256:eebe7ea1391c25ae1a4d9bd9382746170a0edc00c1085152e15d7ade4b3fa456`  
+		Last Modified: Tue, 13 Feb 2024 04:28:43 GMT  
+		Size: 50.4 MB (50357734 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e916f785e8106f7e3d231d3b9235aa360cf02950e0a63ca4444790d956992c5d`  
-		Last Modified: Thu, 01 Feb 2024 06:34:10 GMT  
-		Size: 1.3 MB (1283350 bytes)  
+	-	`sha256:8672aeb1080353103282ba88808bad38fea56a381779d710f586c80398aef8e7`  
+		Last Modified: Wed, 06 Mar 2024 00:07:41 GMT  
+		Size: 1.3 MB (1282589 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b4fc4ba84e2d4e1415c887585eb971fa7ccf09af5d77a57e2e3bec687cc6653`  
-		Last Modified: Thu, 01 Feb 2024 06:34:10 GMT  
-		Size: 1.4 MB (1389912 bytes)  
+	-	`sha256:dfbe9d4298112a8a733ba81e2b90e87afd4713e2873f499a8e0904dc6d8945d2`  
+		Last Modified: Wed, 06 Mar 2024 00:07:41 GMT  
+		Size: 1.4 MB (1387749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc057a7ea3363295064e96a79074bad2dd9cd2791428b1d0bc260a4bdafea05d`  
-		Last Modified: Thu, 01 Feb 2024 06:34:13 GMT  
-		Size: 11.4 MB (11372747 bytes)  
+	-	`sha256:237cb31ec15aafe7089da51424f363285b3ee273f59e0e219a3dbb73b1e3adcd`  
+		Last Modified: Wed, 06 Mar 2024 00:07:44 GMT  
+		Size: 11.4 MB (11378042 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.3-bullseye` - linux; arm64 variant v8
@@ -13522,7 +13522,7 @@ CMD ["haxe"]
 ## `haxe:4.3-buster`
 
 ```console
-$ docker pull haxe@sha256:9e410cb325b375b694b0e1cd45ec983755c24bae5f9cecb4d009d5bde4250c43
+$ docker pull haxe@sha256:a333151d240a7670e57b64bacf0fb4526239aea1f8441a4218b6a83cd01e217c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13600,67 +13600,67 @@ CMD ["haxe"]
 ### `haxe:4.3-buster` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:c35797bf6fc24b0e641c26796bdcef27f331b45c8c4b0e51c7a181a19a4188ea
+$ docker pull haxe@sha256:183ee3e58ae0a2f24ef5c7f456b40f65ca3404f2d7d1058ea2f002fc16071d87
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **123.2 MB (123235246 bytes)**  
+-	Total Size: **124.5 MB (124525410 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:316354edc31e20346fac7feb5cccfefbf613602778799ae194071e7b396fe2a2`
+-	Image ID: `sha256:71c9ef9777de3a9615c10b4167157db1591dc6ab99eed2a0d3518c0e36f610f9`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 22:44:51 GMT
-ADD file:f7d675054a4ba85691acd979742ab5f8839e1e198ce8bb7830a06479744db901 in / 
-# Wed, 31 Jan 2024 22:44:54 GMT
+# Tue, 13 Feb 2024 01:20:54 GMT
+ADD file:952ff0908ecc63aa19ee3459c5e4ffbf10a0917e72f12212cec4e26ca37e18d3 in / 
+# Tue, 13 Feb 2024 01:20:55 GMT
 CMD ["bash"]
-# Thu, 01 Feb 2024 02:50:32 GMT
+# Tue, 13 Feb 2024 04:17:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 01 Feb 2024 02:50:55 GMT
+# Tue, 13 Feb 2024 04:18:20 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 01 Feb 2024 05:51:39 GMT
+# Tue, 13 Feb 2024 15:53:16 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 01 Feb 2024 05:51:45 GMT
+# Tue, 05 Mar 2024 23:23:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 01 Feb 2024 05:51:45 GMT
+# Tue, 05 Mar 2024 23:23:13 GMT
 ENV NEKO_VERSION=2.3.0
-# Thu, 01 Feb 2024 05:53:17 GMT
+# Tue, 05 Mar 2024 23:26:25 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-3-0/neko-2.3.0.tar.gz" 	&& echo "850e7e317bdaf24ed652efeff89c1cb21380ca19f20e68a296c84f6bad4ee995 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Thu, 01 Feb 2024 05:53:17 GMT
-ENV HAXE_VERSION=4.3.3
-# Thu, 01 Feb 2024 05:53:17 GMT
+# Tue, 05 Mar 2024 23:26:26 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:26:26 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 01 Feb 2024 05:58:54 GMT
-RUN set -ex 	&& buildDeps=' 		make 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.3.3 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --compiler=4.08.1 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Thu, 01 Feb 2024 05:58:54 GMT
+# Tue, 05 Mar 2024 23:33:10 GMT
+RUN set -ex 	&& buildDeps=' 		make 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.08.1 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:33:11 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:d262abdf15e38f7960a48edbd9d8d9de475362307d40e6620e518de8d55b49d6`  
-		Last Modified: Wed, 31 Jan 2024 22:49:56 GMT  
-		Size: 46.0 MB (45966700 bytes)  
+	-	`sha256:23a6e5471cecf9aa4fa6cf1fd7037e25b9e75821953151df1a9eb5cac88d5dae`  
+		Last Modified: Tue, 13 Feb 2024 01:28:01 GMT  
+		Size: 46.0 MB (45967625 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:177171da7d7b3ba27fb8c6a7fcdd2e5b11529c6dacfb38235704dfd2110abc06`  
-		Last Modified: Thu, 01 Feb 2024 03:00:39 GMT  
-		Size: 16.2 MB (16216433 bytes)  
+	-	`sha256:79b8cddb6bb767facfd385a827797ee92293ab687d7a0bd51dcc3e4fdf2e5410`  
+		Last Modified: Tue, 13 Feb 2024 04:29:37 GMT  
+		Size: 16.2 MB (16216342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58a579a1401e8d8e2a5b42e0da1f30d53451c3736d9a0f2bded6153cd62587c1`  
-		Last Modified: Thu, 01 Feb 2024 03:00:57 GMT  
-		Size: 47.4 MB (47410558 bytes)  
+	-	`sha256:540545321e809bdd3253dc3e501c07157ca494eeb57e88cfc5f7c5ee705676c6`  
+		Last Modified: Tue, 13 Feb 2024 04:29:56 GMT  
+		Size: 47.4 MB (47410097 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdfbee4024558578e47c06cf5bc3ca56be376fdf069a41d72ed18a0bad82ef81`  
-		Last Modified: Thu, 01 Feb 2024 06:34:23 GMT  
-		Size: 1.3 MB (1279373 bytes)  
+	-	`sha256:4813f60d72d31ea96a4ca0a45a27fdbeee027aa4e8c0068338aee0091ac9e3c0`  
+		Last Modified: Wed, 06 Mar 2024 00:07:54 GMT  
+		Size: 1.3 MB (1279452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa6d3bc6961a65e1a5235cba686c16266003ee1df47796cae8d2e99760f05118`  
-		Last Modified: Thu, 01 Feb 2024 06:34:23 GMT  
-		Size: 2.3 MB (2253064 bytes)  
+	-	`sha256:27bfe160db13c2252a3a1d5be3ef5265b3fda3558076f440474602bb2d7b05fe`  
+		Last Modified: Wed, 06 Mar 2024 00:07:54 GMT  
+		Size: 3.5 MB (3527869 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d62c4bd57f4d6458027a4b78a058b372cbce808849c78df458dabf9fa17e7e58`  
-		Last Modified: Thu, 01 Feb 2024 06:34:26 GMT  
-		Size: 10.1 MB (10109118 bytes)  
+	-	`sha256:82602cf6814bc6255094a6dd45e2f5d6fed48ae4c1e865e16d0815e0ca636499`  
+		Last Modified: Wed, 06 Mar 2024 00:07:57 GMT  
+		Size: 10.1 MB (10124025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.3-buster` - linux; arm64 variant v8
@@ -13732,7 +13732,7 @@ CMD ["haxe"]
 ## `haxe:4.3-windowsservercore`
 
 ```console
-$ docker pull haxe@sha256:aa6b2d0cf823e90a9afd07e81d5d1d24528adc18a6700d5aac679f6becd56279
+$ docker pull haxe@sha256:0d128d9ac23f4bf9ad2ebb394c5ba87ffba360ab165fab89b55b7966b8136b20
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13743,14 +13743,14 @@ $ docker pull haxe@sha256:aa6b2d0cf823e90a9afd07e81d5d1d24528adc18a6700d5aac679f
 ### `haxe:4.3-windowsservercore` - windows version 10.0.20348.2322; amd64
 
 ```console
-$ docker pull haxe@sha256:4ca2b305e366a1747138628cb74b017be400ffc25bc215f23678d712c6b42177
+$ docker pull haxe@sha256:0cc8597a9e1401ce1af5c6f3b236a0e2db8a13aec8916c141f1438f686fee46a
 ```
 
 -	Docker Version: 20.10.21
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 GB (1937018424 bytes)**  
+-	Total Size: **1.9 GB (1937036414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03901b6087dd1762da8748e5d2f3ba1965c84b40fb6711d9c677fc8c1b83c415`
+-	Image ID: `sha256:377e849da36e4f8ae74f05af188aa0bc9f259fc931643a40f3e37fe07995064f`
 -	Default Command: `["haxe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
@@ -13781,19 +13781,19 @@ RUN New-Item -ItemType directory -Path $env:HAXETOOLKIT_PATH;
 ENV NEKO_VERSION=2.3.0
 # Wed, 14 Feb 2024 21:30:39 GMT
 RUN $url = 'https://github.com/HaxeFoundation/neko/releases/download/v2-3-0/neko-2.3.0-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'neko.zip'; 		Write-Host 'Verifying sha256 (d09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b) ...'; 	if ((Get-FileHash neko.zip -Algorithm sha256).Hash -ne 'd09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path neko.zip -DestinationPath tmp; 	if (Test-Path tmp\neko.exe) { Move-Item tmp $env:NEKOPATH } 	else { Move-Item (Resolve-Path tmp\neko* | Select -ExpandProperty Path) $env:NEKOPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path neko.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  neko -version'; neko -version; 		Write-Host 'Complete.';
-# Wed, 14 Feb 2024 21:30:40 GMT
-ENV HAXE_VERSION=4.3.3
-# Wed, 14 Feb 2024 21:34:55 GMT
-RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.3/haxe-4.3.3-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (70953a966b90bceb664639d1a690567e39cf9e3ebacf8c622c17df76fa0a199b) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '70953a966b90bceb664639d1a690567e39cf9e3ebacf8c622c17df76fa0a199b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
-# Wed, 14 Feb 2024 21:35:16 GMT
+# Tue, 05 Mar 2024 23:15:12 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:19:22 GMT
+RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.4/haxe-4.3.4-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:19:42 GMT
 RUN New-Item -ItemType directory -Path $env:HAXELIB_PATH;
-# Wed, 14 Feb 2024 21:35:16 GMT
+# Tue, 05 Mar 2024 23:19:43 GMT
 ENV HOMEDRIVE=C:
-# Wed, 14 Feb 2024 21:35:35 GMT
+# Tue, 05 Mar 2024 23:20:01 GMT
 RUN $newPath = ('{0}\Users\{1}' -f $env:HOMEDRIVE, $env:USERNAME); 	Write-Host ('Updating HOMEPATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('HOMEPATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 14 Feb 2024 21:35:55 GMT
+# Tue, 05 Mar 2024 23:20:21 GMT
 RUN (New-Object System.Net.WebClient).DownloadString('https://lib.haxe.org/p/hxcpp/4.2.1/download/') >$null
-# Wed, 14 Feb 2024 21:35:55 GMT
+# Tue, 05 Mar 2024 23:20:22 GMT
 CMD ["haxe"]
 ```
 
@@ -13850,46 +13850,46 @@ CMD ["haxe"]
 		Last Modified: Wed, 14 Feb 2024 22:36:49 GMT  
 		Size: 2.1 MB (2132792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:33f0cda5fdb29b6a0bb5510a4732d475212c374c285d6b35eed6b9218dfcffea`  
-		Last Modified: Wed, 14 Feb 2024 22:36:48 GMT  
-		Size: 1.4 KB (1411 bytes)  
+	-	`sha256:dc557d75011fde75b3c2b5be70413ed7e63757458bfdd472f61497ad78085a8e`  
+		Last Modified: Tue, 05 Mar 2024 23:30:30 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7725c11b5766ae27f472b8ea84e5c6baea02863516f55248d8de9afa8f19edd`  
-		Last Modified: Wed, 14 Feb 2024 22:36:52 GMT  
-		Size: 9.6 MB (9570028 bytes)  
+	-	`sha256:a5477596e47730781d4af674baea9b7e7fcc83589d238b66d75cb17fcb0b0976`  
+		Last Modified: Tue, 05 Mar 2024 23:30:34 GMT  
+		Size: 9.6 MB (9609110 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad7c0d58e6f76d9888647408b1f823eaeb4637b147ba1f743d0553348c29e284`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 333.8 KB (333827 bytes)  
+	-	`sha256:e686f54b7330e7b27d2d4063fbc9f5c38abe9e58ab265544f6713a0429b7b7a5`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 327.6 KB (327629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05abdbfab0d89b5729021b42513af353b2776461b2b434e648fc195587735849`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 1.3 KB (1288 bytes)  
+	-	`sha256:e448242449c379ab8e51699f3f01ecce32da60b051d6722dbe19f601a0308d5f`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb037e1d64df68cd9e573809dfcfa435297aac0bbe0ba6046ddddd0dd6023231`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 336.9 KB (336906 bytes)  
+	-	`sha256:b3acf469ce2981d5ace0f99ad0c7cec77ca666021ee68f72eb924c4d076122c0`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 330.2 KB (330171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f77d68eb0c407254cfc55a96b1ae42bcdd45d15c231ad42c981b6435fe85596`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 357.7 KB (357702 bytes)  
+	-	`sha256:35e25b0c19a8089a36adbbbb4ae30f865e23aaeeead0fe2d9c80bb9a06d622ac`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 349.5 KB (349521 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:479f6978004fac3eb4efee129c2306030079cedb3c41b9f473ac53d087c65049`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:c0cf9f30dc552c92e27c4a052b10208872f4255dcb59f4ced183d0498594a3cf`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:4.3-windowsservercore` - windows version 10.0.17763.5458; amd64
 
 ```console
-$ docker pull haxe@sha256:b8aa94148ad85babc293b93e188c7cec85cb30d22e0e736b75cdf715739c9000
+$ docker pull haxe@sha256:673d180da0f311e9a10ec0b3f5dad306f3df390720a1bace7513a7e1a13c6486
 ```
 
 -	Docker Version: 20.10.21
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2111231235 bytes)**  
+-	Total Size: **2.1 GB (2106798148 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b19c4da2e7a638f309c19aa14d99045ec8276bc038d458480b800cd9bae3938c`
+-	Image ID: `sha256:e2e6cd7e8d5e6c5fb550539f9c230e2c2d4419a77c23b850e6a28b3a4b53ff80`
 -	Default Command: `["haxe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
@@ -13920,19 +13920,19 @@ RUN New-Item -ItemType directory -Path $env:HAXETOOLKIT_PATH;
 ENV NEKO_VERSION=2.3.0
 # Wed, 14 Feb 2024 21:42:54 GMT
 RUN $url = 'https://github.com/HaxeFoundation/neko/releases/download/v2-3-0/neko-2.3.0-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'neko.zip'; 		Write-Host 'Verifying sha256 (d09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b) ...'; 	if ((Get-FileHash neko.zip -Algorithm sha256).Hash -ne 'd09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path neko.zip -DestinationPath tmp; 	if (Test-Path tmp\neko.exe) { Move-Item tmp $env:NEKOPATH } 	else { Move-Item (Resolve-Path tmp\neko* | Select -ExpandProperty Path) $env:NEKOPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path neko.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  neko -version'; neko -version; 		Write-Host 'Complete.';
-# Wed, 14 Feb 2024 21:42:55 GMT
-ENV HAXE_VERSION=4.3.3
-# Wed, 14 Feb 2024 21:47:49 GMT
-RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.3/haxe-4.3.3-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (70953a966b90bceb664639d1a690567e39cf9e3ebacf8c622c17df76fa0a199b) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '70953a966b90bceb664639d1a690567e39cf9e3ebacf8c622c17df76fa0a199b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
-# Wed, 14 Feb 2024 21:49:07 GMT
+# Tue, 05 Mar 2024 23:20:41 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:25:20 GMT
+RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.4/haxe-4.3.4-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:26:32 GMT
 RUN New-Item -ItemType directory -Path $env:HAXELIB_PATH;
-# Wed, 14 Feb 2024 21:49:08 GMT
+# Tue, 05 Mar 2024 23:26:33 GMT
 ENV HOMEDRIVE=C:
-# Wed, 14 Feb 2024 21:50:27 GMT
+# Tue, 05 Mar 2024 23:27:43 GMT
 RUN $newPath = ('{0}\Users\{1}' -f $env:HOMEDRIVE, $env:USERNAME); 	Write-Host ('Updating HOMEPATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('HOMEPATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 14 Feb 2024 21:51:48 GMT
+# Tue, 05 Mar 2024 23:29:01 GMT
 RUN (New-Object System.Net.WebClient).DownloadString('https://lib.haxe.org/p/hxcpp/4.2.1/download/') >$null
-# Wed, 14 Feb 2024 21:51:49 GMT
+# Tue, 05 Mar 2024 23:29:01 GMT
 CMD ["haxe"]
 ```
 
@@ -13989,39 +13989,39 @@ CMD ["haxe"]
 		Last Modified: Wed, 14 Feb 2024 22:37:07 GMT  
 		Size: 2.1 MB (2141307 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e00737189173fabfdcd08654261074fce12b063fa3e27555f9af0150d6935af1`  
-		Last Modified: Wed, 14 Feb 2024 22:37:06 GMT  
-		Size: 1.4 KB (1424 bytes)  
+	-	`sha256:f94e78fd99b2b85d7f90a9a7bc7ace0576f9593987af484c7c404e6b8a67823e`  
+		Last Modified: Tue, 05 Mar 2024 23:30:45 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e76a52a156155521e3ef5a7eb63d74ab41388e86d1f350af62fe1bf51740878c`  
-		Last Modified: Wed, 14 Feb 2024 22:37:12 GMT  
-		Size: 13.9 MB (13910789 bytes)  
+	-	`sha256:572886e794b3f38123d04dca0c178d0e089a26c7fcd226cfaf93b16645f52d15`  
+		Last Modified: Tue, 05 Mar 2024 23:30:49 GMT  
+		Size: 9.5 MB (9523133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ad0acdc817d77ca619d2595b4981aa8b2c8be028c21a2c1a0598e3d1dd07670`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 343.3 KB (343292 bytes)  
+	-	`sha256:c7fa0c690e2c609b29b448e0ca4bf38a7da786bbaebe2d3619dd1c74c3750851`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 331.0 KB (330956 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f38ddaeaff0ec5f527359ead2c65aee3e216a114f238c435ffb1e91cd68b81c`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:0502039faa6acf9b1ab1d50f73e1038bf28f392aacf33ff8c2c3399a377a3a9d`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 1.3 KB (1309 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d944484e7a8b3b8452c1213f0025ce76ef4c480ece61dec1bc38a512dff9160`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 348.6 KB (348650 bytes)  
+	-	`sha256:9379f159005197e3c7ec0b27ef17f08f739d7044bcb930ec15b9575731908c06`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 332.9 KB (332862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fcbbeb7d624d921ffc864b2aad60cfa7c380e320c85e1e879bd66964f3e89fd8`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 359.4 KB (359447 bytes)  
+	-	`sha256:04d79ab514417842c9f4656ab4e7995e7d58ee1c113dfbe358126d0efef94678`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 342.3 KB (342344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68dd116ba79880b8334c795f208668e7df9975066edbb00838e510e1974f7b1c`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 1.4 KB (1411 bytes)  
+	-	`sha256:28d51b7261194310821890e3f99bb0c31c2ecd289cafd94991d098e09a9b67d1`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 1.3 KB (1323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.3-windowsservercore-1809`
 
 ```console
-$ docker pull haxe@sha256:1be85163c4a1bc5fbac6ebe47a96e0da7619099a49cd1d6d8332f81a2225a5b4
+$ docker pull haxe@sha256:c2f23939b8c736b256e073f85713653033891c0949c5350133f814d3ab7279d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14031,14 +14031,14 @@ $ docker pull haxe@sha256:1be85163c4a1bc5fbac6ebe47a96e0da7619099a49cd1d6d8332f8
 ### `haxe:4.3-windowsservercore-1809` - windows version 10.0.17763.5458; amd64
 
 ```console
-$ docker pull haxe@sha256:b8aa94148ad85babc293b93e188c7cec85cb30d22e0e736b75cdf715739c9000
+$ docker pull haxe@sha256:673d180da0f311e9a10ec0b3f5dad306f3df390720a1bace7513a7e1a13c6486
 ```
 
 -	Docker Version: 20.10.21
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2111231235 bytes)**  
+-	Total Size: **2.1 GB (2106798148 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b19c4da2e7a638f309c19aa14d99045ec8276bc038d458480b800cd9bae3938c`
+-	Image ID: `sha256:e2e6cd7e8d5e6c5fb550539f9c230e2c2d4419a77c23b850e6a28b3a4b53ff80`
 -	Default Command: `["haxe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
@@ -14069,19 +14069,19 @@ RUN New-Item -ItemType directory -Path $env:HAXETOOLKIT_PATH;
 ENV NEKO_VERSION=2.3.0
 # Wed, 14 Feb 2024 21:42:54 GMT
 RUN $url = 'https://github.com/HaxeFoundation/neko/releases/download/v2-3-0/neko-2.3.0-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'neko.zip'; 		Write-Host 'Verifying sha256 (d09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b) ...'; 	if ((Get-FileHash neko.zip -Algorithm sha256).Hash -ne 'd09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path neko.zip -DestinationPath tmp; 	if (Test-Path tmp\neko.exe) { Move-Item tmp $env:NEKOPATH } 	else { Move-Item (Resolve-Path tmp\neko* | Select -ExpandProperty Path) $env:NEKOPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path neko.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  neko -version'; neko -version; 		Write-Host 'Complete.';
-# Wed, 14 Feb 2024 21:42:55 GMT
-ENV HAXE_VERSION=4.3.3
-# Wed, 14 Feb 2024 21:47:49 GMT
-RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.3/haxe-4.3.3-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (70953a966b90bceb664639d1a690567e39cf9e3ebacf8c622c17df76fa0a199b) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '70953a966b90bceb664639d1a690567e39cf9e3ebacf8c622c17df76fa0a199b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
-# Wed, 14 Feb 2024 21:49:07 GMT
+# Tue, 05 Mar 2024 23:20:41 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:25:20 GMT
+RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.4/haxe-4.3.4-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:26:32 GMT
 RUN New-Item -ItemType directory -Path $env:HAXELIB_PATH;
-# Wed, 14 Feb 2024 21:49:08 GMT
+# Tue, 05 Mar 2024 23:26:33 GMT
 ENV HOMEDRIVE=C:
-# Wed, 14 Feb 2024 21:50:27 GMT
+# Tue, 05 Mar 2024 23:27:43 GMT
 RUN $newPath = ('{0}\Users\{1}' -f $env:HOMEDRIVE, $env:USERNAME); 	Write-Host ('Updating HOMEPATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('HOMEPATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 14 Feb 2024 21:51:48 GMT
+# Tue, 05 Mar 2024 23:29:01 GMT
 RUN (New-Object System.Net.WebClient).DownloadString('https://lib.haxe.org/p/hxcpp/4.2.1/download/') >$null
-# Wed, 14 Feb 2024 21:51:49 GMT
+# Tue, 05 Mar 2024 23:29:01 GMT
 CMD ["haxe"]
 ```
 
@@ -14138,39 +14138,39 @@ CMD ["haxe"]
 		Last Modified: Wed, 14 Feb 2024 22:37:07 GMT  
 		Size: 2.1 MB (2141307 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e00737189173fabfdcd08654261074fce12b063fa3e27555f9af0150d6935af1`  
-		Last Modified: Wed, 14 Feb 2024 22:37:06 GMT  
-		Size: 1.4 KB (1424 bytes)  
+	-	`sha256:f94e78fd99b2b85d7f90a9a7bc7ace0576f9593987af484c7c404e6b8a67823e`  
+		Last Modified: Tue, 05 Mar 2024 23:30:45 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e76a52a156155521e3ef5a7eb63d74ab41388e86d1f350af62fe1bf51740878c`  
-		Last Modified: Wed, 14 Feb 2024 22:37:12 GMT  
-		Size: 13.9 MB (13910789 bytes)  
+	-	`sha256:572886e794b3f38123d04dca0c178d0e089a26c7fcd226cfaf93b16645f52d15`  
+		Last Modified: Tue, 05 Mar 2024 23:30:49 GMT  
+		Size: 9.5 MB (9523133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ad0acdc817d77ca619d2595b4981aa8b2c8be028c21a2c1a0598e3d1dd07670`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 343.3 KB (343292 bytes)  
+	-	`sha256:c7fa0c690e2c609b29b448e0ca4bf38a7da786bbaebe2d3619dd1c74c3750851`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 331.0 KB (330956 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f38ddaeaff0ec5f527359ead2c65aee3e216a114f238c435ffb1e91cd68b81c`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:0502039faa6acf9b1ab1d50f73e1038bf28f392aacf33ff8c2c3399a377a3a9d`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 1.3 KB (1309 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d944484e7a8b3b8452c1213f0025ce76ef4c480ece61dec1bc38a512dff9160`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 348.6 KB (348650 bytes)  
+	-	`sha256:9379f159005197e3c7ec0b27ef17f08f739d7044bcb930ec15b9575731908c06`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 332.9 KB (332862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fcbbeb7d624d921ffc864b2aad60cfa7c380e320c85e1e879bd66964f3e89fd8`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 359.4 KB (359447 bytes)  
+	-	`sha256:04d79ab514417842c9f4656ab4e7995e7d58ee1c113dfbe358126d0efef94678`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 342.3 KB (342344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68dd116ba79880b8334c795f208668e7df9975066edbb00838e510e1974f7b1c`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 1.4 KB (1411 bytes)  
+	-	`sha256:28d51b7261194310821890e3f99bb0c31c2ecd289cafd94991d098e09a9b67d1`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 1.3 KB (1323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.3-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull haxe@sha256:e655c8ec7273bf3b08dcbd911c044bc4911ba4514045a0f137a2b13152d6199e
+$ docker pull haxe@sha256:4728378b793261148e4ffe10a858938959f3622948b7ca57c2d23f0cf2250e25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14180,14 +14180,14 @@ $ docker pull haxe@sha256:e655c8ec7273bf3b08dcbd911c044bc4911ba4514045a0f137a2b1
 ### `haxe:4.3-windowsservercore-ltsc2022` - windows version 10.0.20348.2322; amd64
 
 ```console
-$ docker pull haxe@sha256:4ca2b305e366a1747138628cb74b017be400ffc25bc215f23678d712c6b42177
+$ docker pull haxe@sha256:0cc8597a9e1401ce1af5c6f3b236a0e2db8a13aec8916c141f1438f686fee46a
 ```
 
 -	Docker Version: 20.10.21
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 GB (1937018424 bytes)**  
+-	Total Size: **1.9 GB (1937036414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03901b6087dd1762da8748e5d2f3ba1965c84b40fb6711d9c677fc8c1b83c415`
+-	Image ID: `sha256:377e849da36e4f8ae74f05af188aa0bc9f259fc931643a40f3e37fe07995064f`
 -	Default Command: `["haxe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
@@ -14218,19 +14218,19 @@ RUN New-Item -ItemType directory -Path $env:HAXETOOLKIT_PATH;
 ENV NEKO_VERSION=2.3.0
 # Wed, 14 Feb 2024 21:30:39 GMT
 RUN $url = 'https://github.com/HaxeFoundation/neko/releases/download/v2-3-0/neko-2.3.0-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'neko.zip'; 		Write-Host 'Verifying sha256 (d09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b) ...'; 	if ((Get-FileHash neko.zip -Algorithm sha256).Hash -ne 'd09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path neko.zip -DestinationPath tmp; 	if (Test-Path tmp\neko.exe) { Move-Item tmp $env:NEKOPATH } 	else { Move-Item (Resolve-Path tmp\neko* | Select -ExpandProperty Path) $env:NEKOPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path neko.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  neko -version'; neko -version; 		Write-Host 'Complete.';
-# Wed, 14 Feb 2024 21:30:40 GMT
-ENV HAXE_VERSION=4.3.3
-# Wed, 14 Feb 2024 21:34:55 GMT
-RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.3/haxe-4.3.3-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (70953a966b90bceb664639d1a690567e39cf9e3ebacf8c622c17df76fa0a199b) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '70953a966b90bceb664639d1a690567e39cf9e3ebacf8c622c17df76fa0a199b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
-# Wed, 14 Feb 2024 21:35:16 GMT
+# Tue, 05 Mar 2024 23:15:12 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:19:22 GMT
+RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.4/haxe-4.3.4-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:19:42 GMT
 RUN New-Item -ItemType directory -Path $env:HAXELIB_PATH;
-# Wed, 14 Feb 2024 21:35:16 GMT
+# Tue, 05 Mar 2024 23:19:43 GMT
 ENV HOMEDRIVE=C:
-# Wed, 14 Feb 2024 21:35:35 GMT
+# Tue, 05 Mar 2024 23:20:01 GMT
 RUN $newPath = ('{0}\Users\{1}' -f $env:HOMEDRIVE, $env:USERNAME); 	Write-Host ('Updating HOMEPATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('HOMEPATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 14 Feb 2024 21:35:55 GMT
+# Tue, 05 Mar 2024 23:20:21 GMT
 RUN (New-Object System.Net.WebClient).DownloadString('https://lib.haxe.org/p/hxcpp/4.2.1/download/') >$null
-# Wed, 14 Feb 2024 21:35:55 GMT
+# Tue, 05 Mar 2024 23:20:22 GMT
 CMD ["haxe"]
 ```
 
@@ -14287,83 +14287,1179 @@ CMD ["haxe"]
 		Last Modified: Wed, 14 Feb 2024 22:36:49 GMT  
 		Size: 2.1 MB (2132792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:33f0cda5fdb29b6a0bb5510a4732d475212c374c285d6b35eed6b9218dfcffea`  
-		Last Modified: Wed, 14 Feb 2024 22:36:48 GMT  
-		Size: 1.4 KB (1411 bytes)  
+	-	`sha256:dc557d75011fde75b3c2b5be70413ed7e63757458bfdd472f61497ad78085a8e`  
+		Last Modified: Tue, 05 Mar 2024 23:30:30 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7725c11b5766ae27f472b8ea84e5c6baea02863516f55248d8de9afa8f19edd`  
-		Last Modified: Wed, 14 Feb 2024 22:36:52 GMT  
-		Size: 9.6 MB (9570028 bytes)  
+	-	`sha256:a5477596e47730781d4af674baea9b7e7fcc83589d238b66d75cb17fcb0b0976`  
+		Last Modified: Tue, 05 Mar 2024 23:30:34 GMT  
+		Size: 9.6 MB (9609110 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad7c0d58e6f76d9888647408b1f823eaeb4637b147ba1f743d0553348c29e284`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 333.8 KB (333827 bytes)  
+	-	`sha256:e686f54b7330e7b27d2d4063fbc9f5c38abe9e58ab265544f6713a0429b7b7a5`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 327.6 KB (327629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05abdbfab0d89b5729021b42513af353b2776461b2b434e648fc195587735849`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 1.3 KB (1288 bytes)  
+	-	`sha256:e448242449c379ab8e51699f3f01ecce32da60b051d6722dbe19f601a0308d5f`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb037e1d64df68cd9e573809dfcfa435297aac0bbe0ba6046ddddd0dd6023231`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 336.9 KB (336906 bytes)  
+	-	`sha256:b3acf469ce2981d5ace0f99ad0c7cec77ca666021ee68f72eb924c4d076122c0`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 330.2 KB (330171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f77d68eb0c407254cfc55a96b1ae42bcdd45d15c231ad42c981b6435fe85596`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 357.7 KB (357702 bytes)  
+	-	`sha256:35e25b0c19a8089a36adbbbb4ae30f865e23aaeeead0fe2d9c80bb9a06d622ac`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 349.5 KB (349521 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:479f6978004fac3eb4efee129c2306030079cedb3c41b9f473ac53d087c65049`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:c0cf9f30dc552c92e27c4a052b10208872f4255dcb59f4ced183d0498594a3cf`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.3.4`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:f265f44264e5166cba45ffa20e405481f5f149d81b8955594beddbefcdaaddda
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 3
+	-	linux; arm variant v7
+	-	windows version 10.0.20348.2322; amd64
+	-	windows version 10.0.17763.5458; amd64
+
+### `haxe:4.3.4` - linux; arm variant v7
+
+```console
+$ docker pull haxe@sha256:7e50b035efdb191d01a1a6eff4a9da2bdb14158cc8108f57dcb3f82c5225ebc0
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **129.5 MB (129527000 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:479b40a6f51e511edbfc42a1cd9fba3e1f02eec7b6734aa8def0bc02f2189b77`
+-	Default Command: `["haxe"]`
+
+```dockerfile
+# Tue, 13 Feb 2024 01:20:21 GMT
+ADD file:a6e150be02b0758f7cb3863651ae586c1592e19949e91c78e3771ceaad602a2a in / 
+# Tue, 13 Feb 2024 01:20:22 GMT
+CMD ["bash"]
+# Tue, 13 Feb 2024 04:16:13 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 13 Feb 2024 04:16:34 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 13 Feb 2024 15:37:22 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 05 Mar 2024 23:17:55 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/*
+# Tue, 05 Mar 2024 23:17:55 GMT
+ENV NEKO_VERSION=2.3.0
+# Tue, 05 Mar 2024 23:19:27 GMT
+RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-3-0/neko-2.3.0.tar.gz" 	&& echo "850e7e317bdaf24ed652efeff89c1cb21380ca19f20e68a296c84f6bad4ee995 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
+# Tue, 05 Mar 2024 23:19:27 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:19:28 GMT
+ENV HAXE_STD_PATH=/usr/local/share/haxe/std
+# Tue, 05 Mar 2024 23:22:48 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:22:49 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:623a3ffac68434a8d471ef584bdb1dcbfafd4648778c484c1566ff7910d04b0e`  
+		Last Modified: Tue, 13 Feb 2024 01:27:15 GMT  
+		Size: 50.2 MB (50241706 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6c12ee536bcdc51ad528b0ed79abe7893d5c4c356dd3b5d3321eb8eda18294ca`  
+		Last Modified: Tue, 13 Feb 2024 04:28:21 GMT  
+		Size: 14.9 MB (14879180 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eebe7ea1391c25ae1a4d9bd9382746170a0edc00c1085152e15d7ade4b3fa456`  
+		Last Modified: Tue, 13 Feb 2024 04:28:43 GMT  
+		Size: 50.4 MB (50357734 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8672aeb1080353103282ba88808bad38fea56a381779d710f586c80398aef8e7`  
+		Last Modified: Wed, 06 Mar 2024 00:07:41 GMT  
+		Size: 1.3 MB (1282589 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dfbe9d4298112a8a733ba81e2b90e87afd4713e2873f499a8e0904dc6d8945d2`  
+		Last Modified: Wed, 06 Mar 2024 00:07:41 GMT  
+		Size: 1.4 MB (1387749 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:237cb31ec15aafe7089da51424f363285b3ee273f59e0e219a3dbb73b1e3adcd`  
+		Last Modified: Wed, 06 Mar 2024 00:07:44 GMT  
+		Size: 11.4 MB (11378042 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `haxe:4.3.4` - windows version 10.0.20348.2322; amd64
+
+```console
+$ docker pull haxe@sha256:0cc8597a9e1401ce1af5c6f3b236a0e2db8a13aec8916c141f1438f686fee46a
+```
+
+-	Docker Version: 20.10.21
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.9 GB (1937036414 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:377e849da36e4f8ae74f05af188aa0bc9f259fc931643a40f3e37fe07995064f`
+-	Default Command: `["haxe"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 08 Jun 2023 12:55:20 GMT
+RUN Apply image 10.0.20348.1787
+# Wed, 07 Feb 2024 06:55:59 GMT
+RUN Install update 10.0.20348.2322
+# Wed, 14 Feb 2024 21:28:12 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Wed, 14 Feb 2024 21:28:13 GMT
+ENV HAXETOOLKIT_PATH=C:\HaxeToolkit
+# Wed, 14 Feb 2024 21:28:14 GMT
+ENV NEKOPATH=C:\HaxeToolkit\neko
+# Wed, 14 Feb 2024 21:28:15 GMT
+ENV HAXEPATH=C:\HaxeToolkit\haxe
+# Wed, 14 Feb 2024 21:28:15 GMT
+ENV HAXE_STD_PATH=C:\HaxeToolkit\haxe\std
+# Wed, 14 Feb 2024 21:28:16 GMT
+ENV HAXELIB_PATH=C:\HaxeToolkit\haxe\lib
+# Wed, 14 Feb 2024 21:28:37 GMT
+RUN $newPath = ('{0};{1};{2}' -f $env:HAXEPATH, $env:NEKOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
+# Wed, 14 Feb 2024 21:29:42 GMT
+RUN $url = 'https://download.microsoft.com/download/0/5/6/056dcda9-d667-4e27-8001-8a0c6971d6b1/vcredist_x86.exe'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'vcredist_x86.exe'; 		Write-Host 'Verifying sha256 (89f4e593ea5541d1c53f983923124f9fd061a1c0c967339109e375c661573c17) ...'; 	if ((Get-FileHash vcredist_x86.exe -Algorithm sha256).Hash -ne '89f4e593ea5541d1c53f983923124f9fd061a1c0c967339109e375c661573c17') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process -FilePath "vcredist_x86.exe" -ArgumentList "/Q" -Wait; 		Write-Host 'Removing installer...'; 	Remove-Item .\vcredist_x86.exe; 		Write-Host 'Complete.';
+# Wed, 14 Feb 2024 21:30:03 GMT
+RUN New-Item -ItemType directory -Path $env:HAXETOOLKIT_PATH;
+# Wed, 14 Feb 2024 21:30:03 GMT
+ENV NEKO_VERSION=2.3.0
+# Wed, 14 Feb 2024 21:30:39 GMT
+RUN $url = 'https://github.com/HaxeFoundation/neko/releases/download/v2-3-0/neko-2.3.0-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'neko.zip'; 		Write-Host 'Verifying sha256 (d09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b) ...'; 	if ((Get-FileHash neko.zip -Algorithm sha256).Hash -ne 'd09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path neko.zip -DestinationPath tmp; 	if (Test-Path tmp\neko.exe) { Move-Item tmp $env:NEKOPATH } 	else { Move-Item (Resolve-Path tmp\neko* | Select -ExpandProperty Path) $env:NEKOPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path neko.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  neko -version'; neko -version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:15:12 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:19:22 GMT
+RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.4/haxe-4.3.4-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:19:42 GMT
+RUN New-Item -ItemType directory -Path $env:HAXELIB_PATH;
+# Tue, 05 Mar 2024 23:19:43 GMT
+ENV HOMEDRIVE=C:
+# Tue, 05 Mar 2024 23:20:01 GMT
+RUN $newPath = ('{0}\Users\{1}' -f $env:HOMEDRIVE, $env:USERNAME); 	Write-Host ('Updating HOMEPATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('HOMEPATH', $newPath, [EnvironmentVariableTarget]::Machine);
+# Tue, 05 Mar 2024 23:20:21 GMT
+RUN (New-Object System.Net.WebClient).DownloadString('https://lib.haxe.org/p/hxcpp/4.2.1/download/') >$null
+# Tue, 05 Mar 2024 23:20:22 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:7c76e5cf7755ce357ffb737715b0da6799a50ea468cc252c094f4d915d426b3f`  
+		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
+		Size: 1.4 GB (1388598786 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:855fa6b82f2f8fea22646f0d4aa228ea8cbb8bc562afd14a163a8f3d0eb010e1`  
+		Last Modified: Tue, 13 Feb 2024 18:28:53 GMT  
+		Size: 522.1 MB (522055371 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:15530311ac6487034f1099258c2c440613d6f78ac1eaa4b64fd9f4f0c8af1fe9`  
+		Last Modified: Wed, 14 Feb 2024 22:36:55 GMT  
+		Size: 1.3 KB (1315 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4011b8e5a3627b0d6caa42d83346c2dba9c54fd7c5f3e9b96f6209efb25cf6a6`  
+		Last Modified: Wed, 14 Feb 2024 22:36:53 GMT  
+		Size: 1.3 KB (1323 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:830f6502214ed8a7640eb3b82ed22defd4e0948f778dcf51f92f1ca31e841e2b`  
+		Last Modified: Wed, 14 Feb 2024 22:36:53 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0f71a6e42e1b7033eeea3a544723ba73dfacba2f9c2a8693defb1674b2c3ea1d`  
+		Last Modified: Wed, 14 Feb 2024 22:36:53 GMT  
+		Size: 1.3 KB (1292 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4008bc65fde88e3a84280556ec9b7aaa2c24dd01a4aa3a2689f67e9cba65b751`  
+		Last Modified: Wed, 14 Feb 2024 22:36:51 GMT  
+		Size: 1.4 KB (1362 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:21bcd6bec806846846cd0a21b95979b81b6284b3e920e813c7abd5c7e6dc607a`  
+		Last Modified: Wed, 14 Feb 2024 22:36:51 GMT  
+		Size: 1.3 KB (1294 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:09ecbb5b760e48330ae768c433abb8a684243f282013c9d37d5cc2ae5b55e08e`  
+		Last Modified: Wed, 14 Feb 2024 22:36:51 GMT  
+		Size: 457.5 KB (457455 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b6cd71bf6e68ae143258f4524c7ba09953f4e151d6d0736478f97f324f794e89`  
+		Last Modified: Wed, 14 Feb 2024 22:36:52 GMT  
+		Size: 12.9 MB (12858865 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d9b817d51d89bba3fc1d770c8bf6469240bd292bc3752f2930953954c4cf0191`  
+		Last Modified: Wed, 14 Feb 2024 22:36:48 GMT  
+		Size: 303.4 KB (303412 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2395d13d2e9d01ec6c8dc3c03ab651b527d56975bd6b1905bd277898a226fcdd`  
+		Last Modified: Wed, 14 Feb 2024 22:36:48 GMT  
+		Size: 1.4 KB (1412 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5474bd107afaf8954c3ae4d183e7d604f7f2ecd92cc441c6ccc47db3460aa889`  
+		Last Modified: Wed, 14 Feb 2024 22:36:49 GMT  
+		Size: 2.1 MB (2132792 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dc557d75011fde75b3c2b5be70413ed7e63757458bfdd472f61497ad78085a8e`  
+		Last Modified: Tue, 05 Mar 2024 23:30:30 GMT  
+		Size: 1.4 KB (1435 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a5477596e47730781d4af674baea9b7e7fcc83589d238b66d75cb17fcb0b0976`  
+		Last Modified: Tue, 05 Mar 2024 23:30:34 GMT  
+		Size: 9.6 MB (9609110 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e686f54b7330e7b27d2d4063fbc9f5c38abe9e58ab265544f6713a0429b7b7a5`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 327.6 KB (327629 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e448242449c379ab8e51699f3f01ecce32da60b051d6722dbe19f601a0308d5f`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 1.3 KB (1289 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b3acf469ce2981d5ace0f99ad0c7cec77ca666021ee68f72eb924c4d076122c0`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 330.2 KB (330171 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:35e25b0c19a8089a36adbbbb4ae30f865e23aaeeead0fe2d9c80bb9a06d622ac`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 349.5 KB (349521 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c0cf9f30dc552c92e27c4a052b10208872f4255dcb59f4ced183d0498594a3cf`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 1.3 KB (1292 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `haxe:4.3.4` - windows version 10.0.17763.5458; amd64
+
+```console
+$ docker pull haxe@sha256:673d180da0f311e9a10ec0b3f5dad306f3df390720a1bace7513a7e1a13c6486
+```
+
+-	Docker Version: 20.10.21
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.1 GB (2106798148 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e2e6cd7e8d5e6c5fb550539f9c230e2c2d4419a77c23b850e6a28b3a4b53ff80`
+-	Default Command: `["haxe"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 08 Jun 2023 12:58:24 GMT
+RUN Apply image 10.0.17763.4499
+# Sun, 04 Feb 2024 04:14:09 GMT
+RUN Install update 10.0.17763.5458
+# Wed, 14 Feb 2024 21:03:16 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Wed, 14 Feb 2024 21:36:17 GMT
+ENV HAXETOOLKIT_PATH=C:\HaxeToolkit
+# Wed, 14 Feb 2024 21:36:18 GMT
+ENV NEKOPATH=C:\HaxeToolkit\neko
+# Wed, 14 Feb 2024 21:36:19 GMT
+ENV HAXEPATH=C:\HaxeToolkit\haxe
+# Wed, 14 Feb 2024 21:36:20 GMT
+ENV HAXE_STD_PATH=C:\HaxeToolkit\haxe\std
+# Wed, 14 Feb 2024 21:36:21 GMT
+ENV HAXELIB_PATH=C:\HaxeToolkit\haxe\lib
+# Wed, 14 Feb 2024 21:37:38 GMT
+RUN $newPath = ('{0};{1};{2}' -f $env:HAXEPATH, $env:NEKOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
+# Wed, 14 Feb 2024 21:39:39 GMT
+RUN $url = 'https://download.microsoft.com/download/0/5/6/056dcda9-d667-4e27-8001-8a0c6971d6b1/vcredist_x86.exe'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'vcredist_x86.exe'; 		Write-Host 'Verifying sha256 (89f4e593ea5541d1c53f983923124f9fd061a1c0c967339109e375c661573c17) ...'; 	if ((Get-FileHash vcredist_x86.exe -Algorithm sha256).Hash -ne '89f4e593ea5541d1c53f983923124f9fd061a1c0c967339109e375c661573c17') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process -FilePath "vcredist_x86.exe" -ArgumentList "/Q" -Wait; 		Write-Host 'Removing installer...'; 	Remove-Item .\vcredist_x86.exe; 		Write-Host 'Complete.';
+# Wed, 14 Feb 2024 21:41:07 GMT
+RUN New-Item -ItemType directory -Path $env:HAXETOOLKIT_PATH;
+# Wed, 14 Feb 2024 21:41:09 GMT
+ENV NEKO_VERSION=2.3.0
+# Wed, 14 Feb 2024 21:42:54 GMT
+RUN $url = 'https://github.com/HaxeFoundation/neko/releases/download/v2-3-0/neko-2.3.0-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'neko.zip'; 		Write-Host 'Verifying sha256 (d09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b) ...'; 	if ((Get-FileHash neko.zip -Algorithm sha256).Hash -ne 'd09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path neko.zip -DestinationPath tmp; 	if (Test-Path tmp\neko.exe) { Move-Item tmp $env:NEKOPATH } 	else { Move-Item (Resolve-Path tmp\neko* | Select -ExpandProperty Path) $env:NEKOPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path neko.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  neko -version'; neko -version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:20:41 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:25:20 GMT
+RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.4/haxe-4.3.4-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:26:32 GMT
+RUN New-Item -ItemType directory -Path $env:HAXELIB_PATH;
+# Tue, 05 Mar 2024 23:26:33 GMT
+ENV HOMEDRIVE=C:
+# Tue, 05 Mar 2024 23:27:43 GMT
+RUN $newPath = ('{0}\Users\{1}' -f $env:HOMEDRIVE, $env:USERNAME); 	Write-Host ('Updating HOMEPATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('HOMEPATH', $newPath, [EnvironmentVariableTarget]::Machine);
+# Tue, 05 Mar 2024 23:29:01 GMT
+RUN (New-Object System.Net.WebClient).DownloadString('https://lib.haxe.org/p/hxcpp/4.2.1/download/') >$null
+# Tue, 05 Mar 2024 23:29:01 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:c9226d61d3bdbf9f09821b32f5878623b8daaa5fb4f875cb63c199f87a26d57e`  
+		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
+		Size: 1.7 GB (1650620357 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dda007680e5cddfaf6f5428f70f8c514ac0b9dd099972b7d475cce4c5c899558`  
+		Last Modified: Tue, 13 Feb 2024 18:23:52 GMT  
+		Size: 429.8 MB (429828428 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3486482d07b6425fcc693b0eaca3c37fbd34ec9ca8b8989ee7127a5c75155b0d`  
+		Last Modified: Wed, 14 Feb 2024 21:11:00 GMT  
+		Size: 1.4 KB (1437 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7e2e9c71bf0eb2e38199b0daca8c5d2851f9e15ef0162330230f1feb258b6408`  
+		Last Modified: Wed, 14 Feb 2024 22:37:11 GMT  
+		Size: 1.3 KB (1330 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:28de9da0d37869fe993a82b7ab516864800a78a07a5a2479d6bbdf914ec4f1a8`  
+		Last Modified: Wed, 14 Feb 2024 22:37:11 GMT  
+		Size: 1.3 KB (1290 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fbfe4890346c0f3985fa72b6fa5a432ed3b8da22432c9a218f3f1da3bbdd8264`  
+		Last Modified: Wed, 14 Feb 2024 22:37:11 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bf0c99d893b398ff58901075a1b6e2454f995020e84172cf9f347b049b073044`  
+		Last Modified: Wed, 14 Feb 2024 22:37:09 GMT  
+		Size: 1.4 KB (1417 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:58de1758252cdfad2cb15dfd030112d1d95fda8eb040e8ab6e7efc13aeacc83d`  
+		Last Modified: Wed, 14 Feb 2024 22:37:09 GMT  
+		Size: 1.4 KB (1419 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4699e320840591d221337af6c7e92cca0206796e8720d95ab6b973af1cdeb1f5`  
+		Last Modified: Wed, 14 Feb 2024 22:37:09 GMT  
+		Size: 462.7 KB (462737 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:21fc32f757bbb15da2d0059e4a62dd6775604064b3bcaf307e985ee003ae8320`  
+		Last Modified: Wed, 14 Feb 2024 22:37:10 GMT  
+		Size: 12.9 MB (12896359 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3a683aed463e5efe749c6cad123119a06ec34f0e06421a7291a987447af701e3`  
+		Last Modified: Wed, 14 Feb 2024 22:37:07 GMT  
+		Size: 306.2 KB (306165 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19f9498bcc07012371c74de7404525ba39426dae33e645712f384dfb2dd766b1`  
+		Last Modified: Wed, 14 Feb 2024 22:37:06 GMT  
+		Size: 1.4 KB (1390 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3cfdae332ff5b267b696c81f2e500c8167a44f9b42dc29fffbf8e233e959b069`  
+		Last Modified: Wed, 14 Feb 2024 22:37:07 GMT  
+		Size: 2.1 MB (2141307 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f94e78fd99b2b85d7f90a9a7bc7ace0576f9593987af484c7c404e6b8a67823e`  
+		Last Modified: Tue, 05 Mar 2024 23:30:45 GMT  
+		Size: 1.3 KB (1292 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:572886e794b3f38123d04dca0c178d0e089a26c7fcd226cfaf93b16645f52d15`  
+		Last Modified: Tue, 05 Mar 2024 23:30:49 GMT  
+		Size: 9.5 MB (9523133 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c7fa0c690e2c609b29b448e0ca4bf38a7da786bbaebe2d3619dd1c74c3750851`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 331.0 KB (330956 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0502039faa6acf9b1ab1d50f73e1038bf28f392aacf33ff8c2c3399a377a3a9d`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 1.3 KB (1309 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9379f159005197e3c7ec0b27ef17f08f739d7044bcb930ec15b9575731908c06`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 332.9 KB (332862 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:04d79ab514417842c9f4656ab4e7995e7d58ee1c113dfbe358126d0efef94678`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 342.3 KB (342344 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:28d51b7261194310821890e3f99bb0c31c2ecd289cafd94991d098e09a9b67d1`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 1.3 KB (1323 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.3.4-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `haxe:4.3.4-alpine3.16`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `haxe:4.3.4-alpine3.17`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `haxe:4.3.4-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `haxe:4.3.4-alpine3.19`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `haxe:4.3.4-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:52412cf691dc348c0fae83861ec9e40adfb29686418a0b2a90dbf137e64866c2
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	linux; arm variant v7
+
+### `haxe:4.3.4-bullseye` - linux; arm variant v7
+
+```console
+$ docker pull haxe@sha256:7e50b035efdb191d01a1a6eff4a9da2bdb14158cc8108f57dcb3f82c5225ebc0
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **129.5 MB (129527000 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:479b40a6f51e511edbfc42a1cd9fba3e1f02eec7b6734aa8def0bc02f2189b77`
+-	Default Command: `["haxe"]`
+
+```dockerfile
+# Tue, 13 Feb 2024 01:20:21 GMT
+ADD file:a6e150be02b0758f7cb3863651ae586c1592e19949e91c78e3771ceaad602a2a in / 
+# Tue, 13 Feb 2024 01:20:22 GMT
+CMD ["bash"]
+# Tue, 13 Feb 2024 04:16:13 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 13 Feb 2024 04:16:34 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 13 Feb 2024 15:37:22 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 05 Mar 2024 23:17:55 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/*
+# Tue, 05 Mar 2024 23:17:55 GMT
+ENV NEKO_VERSION=2.3.0
+# Tue, 05 Mar 2024 23:19:27 GMT
+RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-3-0/neko-2.3.0.tar.gz" 	&& echo "850e7e317bdaf24ed652efeff89c1cb21380ca19f20e68a296c84f6bad4ee995 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
+# Tue, 05 Mar 2024 23:19:27 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:19:28 GMT
+ENV HAXE_STD_PATH=/usr/local/share/haxe/std
+# Tue, 05 Mar 2024 23:22:48 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:22:49 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:623a3ffac68434a8d471ef584bdb1dcbfafd4648778c484c1566ff7910d04b0e`  
+		Last Modified: Tue, 13 Feb 2024 01:27:15 GMT  
+		Size: 50.2 MB (50241706 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6c12ee536bcdc51ad528b0ed79abe7893d5c4c356dd3b5d3321eb8eda18294ca`  
+		Last Modified: Tue, 13 Feb 2024 04:28:21 GMT  
+		Size: 14.9 MB (14879180 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eebe7ea1391c25ae1a4d9bd9382746170a0edc00c1085152e15d7ade4b3fa456`  
+		Last Modified: Tue, 13 Feb 2024 04:28:43 GMT  
+		Size: 50.4 MB (50357734 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8672aeb1080353103282ba88808bad38fea56a381779d710f586c80398aef8e7`  
+		Last Modified: Wed, 06 Mar 2024 00:07:41 GMT  
+		Size: 1.3 MB (1282589 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dfbe9d4298112a8a733ba81e2b90e87afd4713e2873f499a8e0904dc6d8945d2`  
+		Last Modified: Wed, 06 Mar 2024 00:07:41 GMT  
+		Size: 1.4 MB (1387749 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:237cb31ec15aafe7089da51424f363285b3ee273f59e0e219a3dbb73b1e3adcd`  
+		Last Modified: Wed, 06 Mar 2024 00:07:44 GMT  
+		Size: 11.4 MB (11378042 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.3.4-buster`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:6a9570017a918492f9db42ff2b55e16f90cb8f141cbfcd8db7dd6e883122378e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	linux; arm variant v7
+
+### `haxe:4.3.4-buster` - linux; arm variant v7
+
+```console
+$ docker pull haxe@sha256:183ee3e58ae0a2f24ef5c7f456b40f65ca3404f2d7d1058ea2f002fc16071d87
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **124.5 MB (124525410 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:71c9ef9777de3a9615c10b4167157db1591dc6ab99eed2a0d3518c0e36f610f9`
+-	Default Command: `["haxe"]`
+
+```dockerfile
+# Tue, 13 Feb 2024 01:20:54 GMT
+ADD file:952ff0908ecc63aa19ee3459c5e4ffbf10a0917e72f12212cec4e26ca37e18d3 in / 
+# Tue, 13 Feb 2024 01:20:55 GMT
+CMD ["bash"]
+# Tue, 13 Feb 2024 04:17:58 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 13 Feb 2024 04:18:20 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 13 Feb 2024 15:53:16 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 05 Mar 2024 23:23:11 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/*
+# Tue, 05 Mar 2024 23:23:13 GMT
+ENV NEKO_VERSION=2.3.0
+# Tue, 05 Mar 2024 23:26:25 GMT
+RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-3-0/neko-2.3.0.tar.gz" 	&& echo "850e7e317bdaf24ed652efeff89c1cb21380ca19f20e68a296c84f6bad4ee995 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
+# Tue, 05 Mar 2024 23:26:26 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:26:26 GMT
+ENV HAXE_STD_PATH=/usr/local/share/haxe/std
+# Tue, 05 Mar 2024 23:33:10 GMT
+RUN set -ex 	&& buildDeps=' 		make 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.08.1 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:33:11 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:23a6e5471cecf9aa4fa6cf1fd7037e25b9e75821953151df1a9eb5cac88d5dae`  
+		Last Modified: Tue, 13 Feb 2024 01:28:01 GMT  
+		Size: 46.0 MB (45967625 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:79b8cddb6bb767facfd385a827797ee92293ab687d7a0bd51dcc3e4fdf2e5410`  
+		Last Modified: Tue, 13 Feb 2024 04:29:37 GMT  
+		Size: 16.2 MB (16216342 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:540545321e809bdd3253dc3e501c07157ca494eeb57e88cfc5f7c5ee705676c6`  
+		Last Modified: Tue, 13 Feb 2024 04:29:56 GMT  
+		Size: 47.4 MB (47410097 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4813f60d72d31ea96a4ca0a45a27fdbeee027aa4e8c0068338aee0091ac9e3c0`  
+		Last Modified: Wed, 06 Mar 2024 00:07:54 GMT  
+		Size: 1.3 MB (1279452 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:27bfe160db13c2252a3a1d5be3ef5265b3fda3558076f440474602bb2d7b05fe`  
+		Last Modified: Wed, 06 Mar 2024 00:07:54 GMT  
+		Size: 3.5 MB (3527869 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:82602cf6814bc6255094a6dd45e2f5d6fed48ae4c1e865e16d0815e0ca636499`  
+		Last Modified: Wed, 06 Mar 2024 00:07:57 GMT  
+		Size: 10.1 MB (10124025 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.3.4-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:0d128d9ac23f4bf9ad2ebb394c5ba87ffba360ab165fab89b55b7966b8136b20
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 2
+	-	windows version 10.0.20348.2322; amd64
+	-	windows version 10.0.17763.5458; amd64
+
+### `haxe:4.3.4-windowsservercore` - windows version 10.0.20348.2322; amd64
+
+```console
+$ docker pull haxe@sha256:0cc8597a9e1401ce1af5c6f3b236a0e2db8a13aec8916c141f1438f686fee46a
+```
+
+-	Docker Version: 20.10.21
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.9 GB (1937036414 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:377e849da36e4f8ae74f05af188aa0bc9f259fc931643a40f3e37fe07995064f`
+-	Default Command: `["haxe"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 08 Jun 2023 12:55:20 GMT
+RUN Apply image 10.0.20348.1787
+# Wed, 07 Feb 2024 06:55:59 GMT
+RUN Install update 10.0.20348.2322
+# Wed, 14 Feb 2024 21:28:12 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Wed, 14 Feb 2024 21:28:13 GMT
+ENV HAXETOOLKIT_PATH=C:\HaxeToolkit
+# Wed, 14 Feb 2024 21:28:14 GMT
+ENV NEKOPATH=C:\HaxeToolkit\neko
+# Wed, 14 Feb 2024 21:28:15 GMT
+ENV HAXEPATH=C:\HaxeToolkit\haxe
+# Wed, 14 Feb 2024 21:28:15 GMT
+ENV HAXE_STD_PATH=C:\HaxeToolkit\haxe\std
+# Wed, 14 Feb 2024 21:28:16 GMT
+ENV HAXELIB_PATH=C:\HaxeToolkit\haxe\lib
+# Wed, 14 Feb 2024 21:28:37 GMT
+RUN $newPath = ('{0};{1};{2}' -f $env:HAXEPATH, $env:NEKOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
+# Wed, 14 Feb 2024 21:29:42 GMT
+RUN $url = 'https://download.microsoft.com/download/0/5/6/056dcda9-d667-4e27-8001-8a0c6971d6b1/vcredist_x86.exe'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'vcredist_x86.exe'; 		Write-Host 'Verifying sha256 (89f4e593ea5541d1c53f983923124f9fd061a1c0c967339109e375c661573c17) ...'; 	if ((Get-FileHash vcredist_x86.exe -Algorithm sha256).Hash -ne '89f4e593ea5541d1c53f983923124f9fd061a1c0c967339109e375c661573c17') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process -FilePath "vcredist_x86.exe" -ArgumentList "/Q" -Wait; 		Write-Host 'Removing installer...'; 	Remove-Item .\vcredist_x86.exe; 		Write-Host 'Complete.';
+# Wed, 14 Feb 2024 21:30:03 GMT
+RUN New-Item -ItemType directory -Path $env:HAXETOOLKIT_PATH;
+# Wed, 14 Feb 2024 21:30:03 GMT
+ENV NEKO_VERSION=2.3.0
+# Wed, 14 Feb 2024 21:30:39 GMT
+RUN $url = 'https://github.com/HaxeFoundation/neko/releases/download/v2-3-0/neko-2.3.0-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'neko.zip'; 		Write-Host 'Verifying sha256 (d09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b) ...'; 	if ((Get-FileHash neko.zip -Algorithm sha256).Hash -ne 'd09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path neko.zip -DestinationPath tmp; 	if (Test-Path tmp\neko.exe) { Move-Item tmp $env:NEKOPATH } 	else { Move-Item (Resolve-Path tmp\neko* | Select -ExpandProperty Path) $env:NEKOPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path neko.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  neko -version'; neko -version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:15:12 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:19:22 GMT
+RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.4/haxe-4.3.4-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:19:42 GMT
+RUN New-Item -ItemType directory -Path $env:HAXELIB_PATH;
+# Tue, 05 Mar 2024 23:19:43 GMT
+ENV HOMEDRIVE=C:
+# Tue, 05 Mar 2024 23:20:01 GMT
+RUN $newPath = ('{0}\Users\{1}' -f $env:HOMEDRIVE, $env:USERNAME); 	Write-Host ('Updating HOMEPATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('HOMEPATH', $newPath, [EnvironmentVariableTarget]::Machine);
+# Tue, 05 Mar 2024 23:20:21 GMT
+RUN (New-Object System.Net.WebClient).DownloadString('https://lib.haxe.org/p/hxcpp/4.2.1/download/') >$null
+# Tue, 05 Mar 2024 23:20:22 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:7c76e5cf7755ce357ffb737715b0da6799a50ea468cc252c094f4d915d426b3f`  
+		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
+		Size: 1.4 GB (1388598786 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:855fa6b82f2f8fea22646f0d4aa228ea8cbb8bc562afd14a163a8f3d0eb010e1`  
+		Last Modified: Tue, 13 Feb 2024 18:28:53 GMT  
+		Size: 522.1 MB (522055371 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:15530311ac6487034f1099258c2c440613d6f78ac1eaa4b64fd9f4f0c8af1fe9`  
+		Last Modified: Wed, 14 Feb 2024 22:36:55 GMT  
+		Size: 1.3 KB (1315 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4011b8e5a3627b0d6caa42d83346c2dba9c54fd7c5f3e9b96f6209efb25cf6a6`  
+		Last Modified: Wed, 14 Feb 2024 22:36:53 GMT  
+		Size: 1.3 KB (1323 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:830f6502214ed8a7640eb3b82ed22defd4e0948f778dcf51f92f1ca31e841e2b`  
+		Last Modified: Wed, 14 Feb 2024 22:36:53 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0f71a6e42e1b7033eeea3a544723ba73dfacba2f9c2a8693defb1674b2c3ea1d`  
+		Last Modified: Wed, 14 Feb 2024 22:36:53 GMT  
+		Size: 1.3 KB (1292 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4008bc65fde88e3a84280556ec9b7aaa2c24dd01a4aa3a2689f67e9cba65b751`  
+		Last Modified: Wed, 14 Feb 2024 22:36:51 GMT  
+		Size: 1.4 KB (1362 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:21bcd6bec806846846cd0a21b95979b81b6284b3e920e813c7abd5c7e6dc607a`  
+		Last Modified: Wed, 14 Feb 2024 22:36:51 GMT  
+		Size: 1.3 KB (1294 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:09ecbb5b760e48330ae768c433abb8a684243f282013c9d37d5cc2ae5b55e08e`  
+		Last Modified: Wed, 14 Feb 2024 22:36:51 GMT  
+		Size: 457.5 KB (457455 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b6cd71bf6e68ae143258f4524c7ba09953f4e151d6d0736478f97f324f794e89`  
+		Last Modified: Wed, 14 Feb 2024 22:36:52 GMT  
+		Size: 12.9 MB (12858865 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d9b817d51d89bba3fc1d770c8bf6469240bd292bc3752f2930953954c4cf0191`  
+		Last Modified: Wed, 14 Feb 2024 22:36:48 GMT  
+		Size: 303.4 KB (303412 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2395d13d2e9d01ec6c8dc3c03ab651b527d56975bd6b1905bd277898a226fcdd`  
+		Last Modified: Wed, 14 Feb 2024 22:36:48 GMT  
+		Size: 1.4 KB (1412 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5474bd107afaf8954c3ae4d183e7d604f7f2ecd92cc441c6ccc47db3460aa889`  
+		Last Modified: Wed, 14 Feb 2024 22:36:49 GMT  
+		Size: 2.1 MB (2132792 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dc557d75011fde75b3c2b5be70413ed7e63757458bfdd472f61497ad78085a8e`  
+		Last Modified: Tue, 05 Mar 2024 23:30:30 GMT  
+		Size: 1.4 KB (1435 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a5477596e47730781d4af674baea9b7e7fcc83589d238b66d75cb17fcb0b0976`  
+		Last Modified: Tue, 05 Mar 2024 23:30:34 GMT  
+		Size: 9.6 MB (9609110 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e686f54b7330e7b27d2d4063fbc9f5c38abe9e58ab265544f6713a0429b7b7a5`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 327.6 KB (327629 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e448242449c379ab8e51699f3f01ecce32da60b051d6722dbe19f601a0308d5f`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 1.3 KB (1289 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b3acf469ce2981d5ace0f99ad0c7cec77ca666021ee68f72eb924c4d076122c0`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 330.2 KB (330171 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:35e25b0c19a8089a36adbbbb4ae30f865e23aaeeead0fe2d9c80bb9a06d622ac`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 349.5 KB (349521 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c0cf9f30dc552c92e27c4a052b10208872f4255dcb59f4ced183d0498594a3cf`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 1.3 KB (1292 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `haxe:4.3.4-windowsservercore` - windows version 10.0.17763.5458; amd64
+
+```console
+$ docker pull haxe@sha256:673d180da0f311e9a10ec0b3f5dad306f3df390720a1bace7513a7e1a13c6486
+```
+
+-	Docker Version: 20.10.21
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.1 GB (2106798148 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e2e6cd7e8d5e6c5fb550539f9c230e2c2d4419a77c23b850e6a28b3a4b53ff80`
+-	Default Command: `["haxe"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 08 Jun 2023 12:58:24 GMT
+RUN Apply image 10.0.17763.4499
+# Sun, 04 Feb 2024 04:14:09 GMT
+RUN Install update 10.0.17763.5458
+# Wed, 14 Feb 2024 21:03:16 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Wed, 14 Feb 2024 21:36:17 GMT
+ENV HAXETOOLKIT_PATH=C:\HaxeToolkit
+# Wed, 14 Feb 2024 21:36:18 GMT
+ENV NEKOPATH=C:\HaxeToolkit\neko
+# Wed, 14 Feb 2024 21:36:19 GMT
+ENV HAXEPATH=C:\HaxeToolkit\haxe
+# Wed, 14 Feb 2024 21:36:20 GMT
+ENV HAXE_STD_PATH=C:\HaxeToolkit\haxe\std
+# Wed, 14 Feb 2024 21:36:21 GMT
+ENV HAXELIB_PATH=C:\HaxeToolkit\haxe\lib
+# Wed, 14 Feb 2024 21:37:38 GMT
+RUN $newPath = ('{0};{1};{2}' -f $env:HAXEPATH, $env:NEKOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
+# Wed, 14 Feb 2024 21:39:39 GMT
+RUN $url = 'https://download.microsoft.com/download/0/5/6/056dcda9-d667-4e27-8001-8a0c6971d6b1/vcredist_x86.exe'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'vcredist_x86.exe'; 		Write-Host 'Verifying sha256 (89f4e593ea5541d1c53f983923124f9fd061a1c0c967339109e375c661573c17) ...'; 	if ((Get-FileHash vcredist_x86.exe -Algorithm sha256).Hash -ne '89f4e593ea5541d1c53f983923124f9fd061a1c0c967339109e375c661573c17') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process -FilePath "vcredist_x86.exe" -ArgumentList "/Q" -Wait; 		Write-Host 'Removing installer...'; 	Remove-Item .\vcredist_x86.exe; 		Write-Host 'Complete.';
+# Wed, 14 Feb 2024 21:41:07 GMT
+RUN New-Item -ItemType directory -Path $env:HAXETOOLKIT_PATH;
+# Wed, 14 Feb 2024 21:41:09 GMT
+ENV NEKO_VERSION=2.3.0
+# Wed, 14 Feb 2024 21:42:54 GMT
+RUN $url = 'https://github.com/HaxeFoundation/neko/releases/download/v2-3-0/neko-2.3.0-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'neko.zip'; 		Write-Host 'Verifying sha256 (d09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b) ...'; 	if ((Get-FileHash neko.zip -Algorithm sha256).Hash -ne 'd09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path neko.zip -DestinationPath tmp; 	if (Test-Path tmp\neko.exe) { Move-Item tmp $env:NEKOPATH } 	else { Move-Item (Resolve-Path tmp\neko* | Select -ExpandProperty Path) $env:NEKOPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path neko.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  neko -version'; neko -version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:20:41 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:25:20 GMT
+RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.4/haxe-4.3.4-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:26:32 GMT
+RUN New-Item -ItemType directory -Path $env:HAXELIB_PATH;
+# Tue, 05 Mar 2024 23:26:33 GMT
+ENV HOMEDRIVE=C:
+# Tue, 05 Mar 2024 23:27:43 GMT
+RUN $newPath = ('{0}\Users\{1}' -f $env:HOMEDRIVE, $env:USERNAME); 	Write-Host ('Updating HOMEPATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('HOMEPATH', $newPath, [EnvironmentVariableTarget]::Machine);
+# Tue, 05 Mar 2024 23:29:01 GMT
+RUN (New-Object System.Net.WebClient).DownloadString('https://lib.haxe.org/p/hxcpp/4.2.1/download/') >$null
+# Tue, 05 Mar 2024 23:29:01 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:c9226d61d3bdbf9f09821b32f5878623b8daaa5fb4f875cb63c199f87a26d57e`  
+		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
+		Size: 1.7 GB (1650620357 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dda007680e5cddfaf6f5428f70f8c514ac0b9dd099972b7d475cce4c5c899558`  
+		Last Modified: Tue, 13 Feb 2024 18:23:52 GMT  
+		Size: 429.8 MB (429828428 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3486482d07b6425fcc693b0eaca3c37fbd34ec9ca8b8989ee7127a5c75155b0d`  
+		Last Modified: Wed, 14 Feb 2024 21:11:00 GMT  
+		Size: 1.4 KB (1437 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7e2e9c71bf0eb2e38199b0daca8c5d2851f9e15ef0162330230f1feb258b6408`  
+		Last Modified: Wed, 14 Feb 2024 22:37:11 GMT  
+		Size: 1.3 KB (1330 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:28de9da0d37869fe993a82b7ab516864800a78a07a5a2479d6bbdf914ec4f1a8`  
+		Last Modified: Wed, 14 Feb 2024 22:37:11 GMT  
+		Size: 1.3 KB (1290 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fbfe4890346c0f3985fa72b6fa5a432ed3b8da22432c9a218f3f1da3bbdd8264`  
+		Last Modified: Wed, 14 Feb 2024 22:37:11 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bf0c99d893b398ff58901075a1b6e2454f995020e84172cf9f347b049b073044`  
+		Last Modified: Wed, 14 Feb 2024 22:37:09 GMT  
+		Size: 1.4 KB (1417 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:58de1758252cdfad2cb15dfd030112d1d95fda8eb040e8ab6e7efc13aeacc83d`  
+		Last Modified: Wed, 14 Feb 2024 22:37:09 GMT  
+		Size: 1.4 KB (1419 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4699e320840591d221337af6c7e92cca0206796e8720d95ab6b973af1cdeb1f5`  
+		Last Modified: Wed, 14 Feb 2024 22:37:09 GMT  
+		Size: 462.7 KB (462737 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:21fc32f757bbb15da2d0059e4a62dd6775604064b3bcaf307e985ee003ae8320`  
+		Last Modified: Wed, 14 Feb 2024 22:37:10 GMT  
+		Size: 12.9 MB (12896359 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3a683aed463e5efe749c6cad123119a06ec34f0e06421a7291a987447af701e3`  
+		Last Modified: Wed, 14 Feb 2024 22:37:07 GMT  
+		Size: 306.2 KB (306165 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19f9498bcc07012371c74de7404525ba39426dae33e645712f384dfb2dd766b1`  
+		Last Modified: Wed, 14 Feb 2024 22:37:06 GMT  
+		Size: 1.4 KB (1390 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3cfdae332ff5b267b696c81f2e500c8167a44f9b42dc29fffbf8e233e959b069`  
+		Last Modified: Wed, 14 Feb 2024 22:37:07 GMT  
+		Size: 2.1 MB (2141307 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f94e78fd99b2b85d7f90a9a7bc7ace0576f9593987af484c7c404e6b8a67823e`  
+		Last Modified: Tue, 05 Mar 2024 23:30:45 GMT  
+		Size: 1.3 KB (1292 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:572886e794b3f38123d04dca0c178d0e089a26c7fcd226cfaf93b16645f52d15`  
+		Last Modified: Tue, 05 Mar 2024 23:30:49 GMT  
+		Size: 9.5 MB (9523133 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c7fa0c690e2c609b29b448e0ca4bf38a7da786bbaebe2d3619dd1c74c3750851`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 331.0 KB (330956 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0502039faa6acf9b1ab1d50f73e1038bf28f392aacf33ff8c2c3399a377a3a9d`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 1.3 KB (1309 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9379f159005197e3c7ec0b27ef17f08f739d7044bcb930ec15b9575731908c06`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 332.9 KB (332862 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:04d79ab514417842c9f4656ab4e7995e7d58ee1c113dfbe358126d0efef94678`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 342.3 KB (342344 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:28d51b7261194310821890e3f99bb0c31c2ecd289cafd94991d098e09a9b67d1`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 1.3 KB (1323 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.3.4-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:c2f23939b8c736b256e073f85713653033891c0949c5350133f814d3ab7279d9
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	windows version 10.0.17763.5458; amd64
+
+### `haxe:4.3.4-windowsservercore-1809` - windows version 10.0.17763.5458; amd64
+
+```console
+$ docker pull haxe@sha256:673d180da0f311e9a10ec0b3f5dad306f3df390720a1bace7513a7e1a13c6486
+```
+
+-	Docker Version: 20.10.21
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.1 GB (2106798148 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e2e6cd7e8d5e6c5fb550539f9c230e2c2d4419a77c23b850e6a28b3a4b53ff80`
+-	Default Command: `["haxe"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 08 Jun 2023 12:58:24 GMT
+RUN Apply image 10.0.17763.4499
+# Sun, 04 Feb 2024 04:14:09 GMT
+RUN Install update 10.0.17763.5458
+# Wed, 14 Feb 2024 21:03:16 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Wed, 14 Feb 2024 21:36:17 GMT
+ENV HAXETOOLKIT_PATH=C:\HaxeToolkit
+# Wed, 14 Feb 2024 21:36:18 GMT
+ENV NEKOPATH=C:\HaxeToolkit\neko
+# Wed, 14 Feb 2024 21:36:19 GMT
+ENV HAXEPATH=C:\HaxeToolkit\haxe
+# Wed, 14 Feb 2024 21:36:20 GMT
+ENV HAXE_STD_PATH=C:\HaxeToolkit\haxe\std
+# Wed, 14 Feb 2024 21:36:21 GMT
+ENV HAXELIB_PATH=C:\HaxeToolkit\haxe\lib
+# Wed, 14 Feb 2024 21:37:38 GMT
+RUN $newPath = ('{0};{1};{2}' -f $env:HAXEPATH, $env:NEKOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
+# Wed, 14 Feb 2024 21:39:39 GMT
+RUN $url = 'https://download.microsoft.com/download/0/5/6/056dcda9-d667-4e27-8001-8a0c6971d6b1/vcredist_x86.exe'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'vcredist_x86.exe'; 		Write-Host 'Verifying sha256 (89f4e593ea5541d1c53f983923124f9fd061a1c0c967339109e375c661573c17) ...'; 	if ((Get-FileHash vcredist_x86.exe -Algorithm sha256).Hash -ne '89f4e593ea5541d1c53f983923124f9fd061a1c0c967339109e375c661573c17') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process -FilePath "vcredist_x86.exe" -ArgumentList "/Q" -Wait; 		Write-Host 'Removing installer...'; 	Remove-Item .\vcredist_x86.exe; 		Write-Host 'Complete.';
+# Wed, 14 Feb 2024 21:41:07 GMT
+RUN New-Item -ItemType directory -Path $env:HAXETOOLKIT_PATH;
+# Wed, 14 Feb 2024 21:41:09 GMT
+ENV NEKO_VERSION=2.3.0
+# Wed, 14 Feb 2024 21:42:54 GMT
+RUN $url = 'https://github.com/HaxeFoundation/neko/releases/download/v2-3-0/neko-2.3.0-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'neko.zip'; 		Write-Host 'Verifying sha256 (d09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b) ...'; 	if ((Get-FileHash neko.zip -Algorithm sha256).Hash -ne 'd09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path neko.zip -DestinationPath tmp; 	if (Test-Path tmp\neko.exe) { Move-Item tmp $env:NEKOPATH } 	else { Move-Item (Resolve-Path tmp\neko* | Select -ExpandProperty Path) $env:NEKOPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path neko.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  neko -version'; neko -version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:20:41 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:25:20 GMT
+RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.4/haxe-4.3.4-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:26:32 GMT
+RUN New-Item -ItemType directory -Path $env:HAXELIB_PATH;
+# Tue, 05 Mar 2024 23:26:33 GMT
+ENV HOMEDRIVE=C:
+# Tue, 05 Mar 2024 23:27:43 GMT
+RUN $newPath = ('{0}\Users\{1}' -f $env:HOMEDRIVE, $env:USERNAME); 	Write-Host ('Updating HOMEPATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('HOMEPATH', $newPath, [EnvironmentVariableTarget]::Machine);
+# Tue, 05 Mar 2024 23:29:01 GMT
+RUN (New-Object System.Net.WebClient).DownloadString('https://lib.haxe.org/p/hxcpp/4.2.1/download/') >$null
+# Tue, 05 Mar 2024 23:29:01 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:c9226d61d3bdbf9f09821b32f5878623b8daaa5fb4f875cb63c199f87a26d57e`  
+		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
+		Size: 1.7 GB (1650620357 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dda007680e5cddfaf6f5428f70f8c514ac0b9dd099972b7d475cce4c5c899558`  
+		Last Modified: Tue, 13 Feb 2024 18:23:52 GMT  
+		Size: 429.8 MB (429828428 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3486482d07b6425fcc693b0eaca3c37fbd34ec9ca8b8989ee7127a5c75155b0d`  
+		Last Modified: Wed, 14 Feb 2024 21:11:00 GMT  
+		Size: 1.4 KB (1437 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7e2e9c71bf0eb2e38199b0daca8c5d2851f9e15ef0162330230f1feb258b6408`  
+		Last Modified: Wed, 14 Feb 2024 22:37:11 GMT  
+		Size: 1.3 KB (1330 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:28de9da0d37869fe993a82b7ab516864800a78a07a5a2479d6bbdf914ec4f1a8`  
+		Last Modified: Wed, 14 Feb 2024 22:37:11 GMT  
+		Size: 1.3 KB (1290 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fbfe4890346c0f3985fa72b6fa5a432ed3b8da22432c9a218f3f1da3bbdd8264`  
+		Last Modified: Wed, 14 Feb 2024 22:37:11 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bf0c99d893b398ff58901075a1b6e2454f995020e84172cf9f347b049b073044`  
+		Last Modified: Wed, 14 Feb 2024 22:37:09 GMT  
+		Size: 1.4 KB (1417 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:58de1758252cdfad2cb15dfd030112d1d95fda8eb040e8ab6e7efc13aeacc83d`  
+		Last Modified: Wed, 14 Feb 2024 22:37:09 GMT  
+		Size: 1.4 KB (1419 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4699e320840591d221337af6c7e92cca0206796e8720d95ab6b973af1cdeb1f5`  
+		Last Modified: Wed, 14 Feb 2024 22:37:09 GMT  
+		Size: 462.7 KB (462737 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:21fc32f757bbb15da2d0059e4a62dd6775604064b3bcaf307e985ee003ae8320`  
+		Last Modified: Wed, 14 Feb 2024 22:37:10 GMT  
+		Size: 12.9 MB (12896359 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3a683aed463e5efe749c6cad123119a06ec34f0e06421a7291a987447af701e3`  
+		Last Modified: Wed, 14 Feb 2024 22:37:07 GMT  
+		Size: 306.2 KB (306165 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19f9498bcc07012371c74de7404525ba39426dae33e645712f384dfb2dd766b1`  
+		Last Modified: Wed, 14 Feb 2024 22:37:06 GMT  
+		Size: 1.4 KB (1390 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3cfdae332ff5b267b696c81f2e500c8167a44f9b42dc29fffbf8e233e959b069`  
+		Last Modified: Wed, 14 Feb 2024 22:37:07 GMT  
+		Size: 2.1 MB (2141307 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f94e78fd99b2b85d7f90a9a7bc7ace0576f9593987af484c7c404e6b8a67823e`  
+		Last Modified: Tue, 05 Mar 2024 23:30:45 GMT  
+		Size: 1.3 KB (1292 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:572886e794b3f38123d04dca0c178d0e089a26c7fcd226cfaf93b16645f52d15`  
+		Last Modified: Tue, 05 Mar 2024 23:30:49 GMT  
+		Size: 9.5 MB (9523133 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c7fa0c690e2c609b29b448e0ca4bf38a7da786bbaebe2d3619dd1c74c3750851`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 331.0 KB (330956 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0502039faa6acf9b1ab1d50f73e1038bf28f392aacf33ff8c2c3399a377a3a9d`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 1.3 KB (1309 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9379f159005197e3c7ec0b27ef17f08f739d7044bcb930ec15b9575731908c06`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 332.9 KB (332862 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:04d79ab514417842c9f4656ab4e7995e7d58ee1c113dfbe358126d0efef94678`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 342.3 KB (342344 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:28d51b7261194310821890e3f99bb0c31c2ecd289cafd94991d098e09a9b67d1`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 1.3 KB (1323 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:4.3.4-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull haxe@sha256:4728378b793261148e4ffe10a858938959f3622948b7ca57c2d23f0cf2250e25
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	windows version 10.0.20348.2322; amd64
+
+### `haxe:4.3.4-windowsservercore-ltsc2022` - windows version 10.0.20348.2322; amd64
+
+```console
+$ docker pull haxe@sha256:0cc8597a9e1401ce1af5c6f3b236a0e2db8a13aec8916c141f1438f686fee46a
+```
+
+-	Docker Version: 20.10.21
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.9 GB (1937036414 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:377e849da36e4f8ae74f05af188aa0bc9f259fc931643a40f3e37fe07995064f`
+-	Default Command: `["haxe"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
+
+```dockerfile
+# Thu, 08 Jun 2023 12:55:20 GMT
+RUN Apply image 10.0.20348.1787
+# Wed, 07 Feb 2024 06:55:59 GMT
+RUN Install update 10.0.20348.2322
+# Wed, 14 Feb 2024 21:28:12 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
+# Wed, 14 Feb 2024 21:28:13 GMT
+ENV HAXETOOLKIT_PATH=C:\HaxeToolkit
+# Wed, 14 Feb 2024 21:28:14 GMT
+ENV NEKOPATH=C:\HaxeToolkit\neko
+# Wed, 14 Feb 2024 21:28:15 GMT
+ENV HAXEPATH=C:\HaxeToolkit\haxe
+# Wed, 14 Feb 2024 21:28:15 GMT
+ENV HAXE_STD_PATH=C:\HaxeToolkit\haxe\std
+# Wed, 14 Feb 2024 21:28:16 GMT
+ENV HAXELIB_PATH=C:\HaxeToolkit\haxe\lib
+# Wed, 14 Feb 2024 21:28:37 GMT
+RUN $newPath = ('{0};{1};{2}' -f $env:HAXEPATH, $env:NEKOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
+# Wed, 14 Feb 2024 21:29:42 GMT
+RUN $url = 'https://download.microsoft.com/download/0/5/6/056dcda9-d667-4e27-8001-8a0c6971d6b1/vcredist_x86.exe'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'vcredist_x86.exe'; 		Write-Host 'Verifying sha256 (89f4e593ea5541d1c53f983923124f9fd061a1c0c967339109e375c661573c17) ...'; 	if ((Get-FileHash vcredist_x86.exe -Algorithm sha256).Hash -ne '89f4e593ea5541d1c53f983923124f9fd061a1c0c967339109e375c661573c17') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process -FilePath "vcredist_x86.exe" -ArgumentList "/Q" -Wait; 		Write-Host 'Removing installer...'; 	Remove-Item .\vcredist_x86.exe; 		Write-Host 'Complete.';
+# Wed, 14 Feb 2024 21:30:03 GMT
+RUN New-Item -ItemType directory -Path $env:HAXETOOLKIT_PATH;
+# Wed, 14 Feb 2024 21:30:03 GMT
+ENV NEKO_VERSION=2.3.0
+# Wed, 14 Feb 2024 21:30:39 GMT
+RUN $url = 'https://github.com/HaxeFoundation/neko/releases/download/v2-3-0/neko-2.3.0-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'neko.zip'; 		Write-Host 'Verifying sha256 (d09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b) ...'; 	if ((Get-FileHash neko.zip -Algorithm sha256).Hash -ne 'd09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path neko.zip -DestinationPath tmp; 	if (Test-Path tmp\neko.exe) { Move-Item tmp $env:NEKOPATH } 	else { Move-Item (Resolve-Path tmp\neko* | Select -ExpandProperty Path) $env:NEKOPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path neko.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  neko -version'; neko -version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:15:12 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:19:22 GMT
+RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.4/haxe-4.3.4-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:19:42 GMT
+RUN New-Item -ItemType directory -Path $env:HAXELIB_PATH;
+# Tue, 05 Mar 2024 23:19:43 GMT
+ENV HOMEDRIVE=C:
+# Tue, 05 Mar 2024 23:20:01 GMT
+RUN $newPath = ('{0}\Users\{1}' -f $env:HOMEDRIVE, $env:USERNAME); 	Write-Host ('Updating HOMEPATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('HOMEPATH', $newPath, [EnvironmentVariableTarget]::Machine);
+# Tue, 05 Mar 2024 23:20:21 GMT
+RUN (New-Object System.Net.WebClient).DownloadString('https://lib.haxe.org/p/hxcpp/4.2.1/download/') >$null
+# Tue, 05 Mar 2024 23:20:22 GMT
+CMD ["haxe"]
+```
+
+-	Layers:
+	-	`sha256:7c76e5cf7755ce357ffb737715b0da6799a50ea468cc252c094f4d915d426b3f`  
+		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
+		Size: 1.4 GB (1388598786 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:855fa6b82f2f8fea22646f0d4aa228ea8cbb8bc562afd14a163a8f3d0eb010e1`  
+		Last Modified: Tue, 13 Feb 2024 18:28:53 GMT  
+		Size: 522.1 MB (522055371 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:15530311ac6487034f1099258c2c440613d6f78ac1eaa4b64fd9f4f0c8af1fe9`  
+		Last Modified: Wed, 14 Feb 2024 22:36:55 GMT  
+		Size: 1.3 KB (1315 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4011b8e5a3627b0d6caa42d83346c2dba9c54fd7c5f3e9b96f6209efb25cf6a6`  
+		Last Modified: Wed, 14 Feb 2024 22:36:53 GMT  
+		Size: 1.3 KB (1323 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:830f6502214ed8a7640eb3b82ed22defd4e0948f778dcf51f92f1ca31e841e2b`  
+		Last Modified: Wed, 14 Feb 2024 22:36:53 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0f71a6e42e1b7033eeea3a544723ba73dfacba2f9c2a8693defb1674b2c3ea1d`  
+		Last Modified: Wed, 14 Feb 2024 22:36:53 GMT  
+		Size: 1.3 KB (1292 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4008bc65fde88e3a84280556ec9b7aaa2c24dd01a4aa3a2689f67e9cba65b751`  
+		Last Modified: Wed, 14 Feb 2024 22:36:51 GMT  
+		Size: 1.4 KB (1362 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:21bcd6bec806846846cd0a21b95979b81b6284b3e920e813c7abd5c7e6dc607a`  
+		Last Modified: Wed, 14 Feb 2024 22:36:51 GMT  
+		Size: 1.3 KB (1294 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:09ecbb5b760e48330ae768c433abb8a684243f282013c9d37d5cc2ae5b55e08e`  
+		Last Modified: Wed, 14 Feb 2024 22:36:51 GMT  
+		Size: 457.5 KB (457455 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b6cd71bf6e68ae143258f4524c7ba09953f4e151d6d0736478f97f324f794e89`  
+		Last Modified: Wed, 14 Feb 2024 22:36:52 GMT  
+		Size: 12.9 MB (12858865 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d9b817d51d89bba3fc1d770c8bf6469240bd292bc3752f2930953954c4cf0191`  
+		Last Modified: Wed, 14 Feb 2024 22:36:48 GMT  
+		Size: 303.4 KB (303412 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2395d13d2e9d01ec6c8dc3c03ab651b527d56975bd6b1905bd277898a226fcdd`  
+		Last Modified: Wed, 14 Feb 2024 22:36:48 GMT  
+		Size: 1.4 KB (1412 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5474bd107afaf8954c3ae4d183e7d604f7f2ecd92cc441c6ccc47db3460aa889`  
+		Last Modified: Wed, 14 Feb 2024 22:36:49 GMT  
+		Size: 2.1 MB (2132792 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dc557d75011fde75b3c2b5be70413ed7e63757458bfdd472f61497ad78085a8e`  
+		Last Modified: Tue, 05 Mar 2024 23:30:30 GMT  
+		Size: 1.4 KB (1435 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a5477596e47730781d4af674baea9b7e7fcc83589d238b66d75cb17fcb0b0976`  
+		Last Modified: Tue, 05 Mar 2024 23:30:34 GMT  
+		Size: 9.6 MB (9609110 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e686f54b7330e7b27d2d4063fbc9f5c38abe9e58ab265544f6713a0429b7b7a5`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 327.6 KB (327629 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e448242449c379ab8e51699f3f01ecce32da60b051d6722dbe19f601a0308d5f`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 1.3 KB (1289 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b3acf469ce2981d5ace0f99ad0c7cec77ca666021ee68f72eb924c4d076122c0`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 330.2 KB (330171 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:35e25b0c19a8089a36adbbbb4ae30f865e23aaeeead0fe2d9c80bb9a06d622ac`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 349.5 KB (349521 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c0cf9f30dc552c92e27c4a052b10208872f4255dcb59f4ced183d0498594a3cf`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 1.3 KB (1292 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:latest`
 
 ```console
-$ docker pull haxe@sha256:14f4573b5c4e34d9af1a2e28fc60533066723da7bc96fe8f2c27dca98b31f64c
+$ docker pull haxe@sha256:59fa78d2cabea34c0f2245b4f78589d9341ebc58e4c955fb570461b06222a205
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14443,67 +15539,67 @@ CMD ["haxe"]
 ### `haxe:latest` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:b608dcbccdb65677b660fc14bf315f37b2140349628a80af63f2afd243bd1dcb
+$ docker pull haxe@sha256:7e50b035efdb191d01a1a6eff4a9da2bdb14158cc8108f57dcb3f82c5225ebc0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.5 MB (129504078 bytes)**  
+-	Total Size: **129.5 MB (129527000 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad08629bc9b2fc1e9ef08f5fb959eccc5fc6330a933d59b2e29da109df1af63e`
+-	Image ID: `sha256:479b40a6f51e511edbfc42a1cd9fba3e1f02eec7b6734aa8def0bc02f2189b77`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 22:44:31 GMT
-ADD file:7a3ca444fa582cdedade49cd6262ee982b6da86eafe22b1b77326c8eab3f88cf in / 
-# Wed, 31 Jan 2024 22:44:31 GMT
+# Tue, 13 Feb 2024 01:20:21 GMT
+ADD file:a6e150be02b0758f7cb3863651ae586c1592e19949e91c78e3771ceaad602a2a in / 
+# Tue, 13 Feb 2024 01:20:22 GMT
 CMD ["bash"]
-# Thu, 01 Feb 2024 02:49:00 GMT
+# Tue, 13 Feb 2024 04:16:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 01 Feb 2024 02:49:20 GMT
+# Tue, 13 Feb 2024 04:16:34 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 01 Feb 2024 05:47:01 GMT
+# Tue, 13 Feb 2024 15:37:22 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 01 Feb 2024 05:47:06 GMT
+# Tue, 05 Mar 2024 23:17:55 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 01 Feb 2024 05:47:06 GMT
+# Tue, 05 Mar 2024 23:17:55 GMT
 ENV NEKO_VERSION=2.3.0
-# Thu, 01 Feb 2024 05:48:36 GMT
+# Tue, 05 Mar 2024 23:19:27 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-3-0/neko-2.3.0.tar.gz" 	&& echo "850e7e317bdaf24ed652efeff89c1cb21380ca19f20e68a296c84f6bad4ee995 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Thu, 01 Feb 2024 05:48:36 GMT
-ENV HAXE_VERSION=4.3.3
-# Thu, 01 Feb 2024 05:48:37 GMT
+# Tue, 05 Mar 2024 23:19:27 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:19:28 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 01 Feb 2024 05:51:35 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.3.3 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Thu, 01 Feb 2024 05:51:36 GMT
+# Tue, 05 Mar 2024 23:22:48 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.4 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 05 Mar 2024 23:22:49 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:413453d204f637339c7a4727b614537000709bb2ff00a6307e262cf37237761c`  
-		Last Modified: Wed, 31 Jan 2024 22:49:12 GMT  
-		Size: 50.2 MB (50216178 bytes)  
+	-	`sha256:623a3ffac68434a8d471ef584bdb1dcbfafd4648778c484c1566ff7910d04b0e`  
+		Last Modified: Tue, 13 Feb 2024 01:27:15 GMT  
+		Size: 50.2 MB (50241706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b1bf41a938a7614b6b4a47164d8e064bbe0014418bfb366d6fac331d52eb271`  
-		Last Modified: Thu, 01 Feb 2024 02:59:37 GMT  
-		Size: 14.9 MB (14880646 bytes)  
+	-	`sha256:6c12ee536bcdc51ad528b0ed79abe7893d5c4c356dd3b5d3321eb8eda18294ca`  
+		Last Modified: Tue, 13 Feb 2024 04:28:21 GMT  
+		Size: 14.9 MB (14879180 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e95de382e9abef96d20556d56d3fb966963ac36ee44cacf79096d796176232c7`  
-		Last Modified: Thu, 01 Feb 2024 02:59:54 GMT  
-		Size: 50.4 MB (50361245 bytes)  
+	-	`sha256:eebe7ea1391c25ae1a4d9bd9382746170a0edc00c1085152e15d7ade4b3fa456`  
+		Last Modified: Tue, 13 Feb 2024 04:28:43 GMT  
+		Size: 50.4 MB (50357734 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e916f785e8106f7e3d231d3b9235aa360cf02950e0a63ca4444790d956992c5d`  
-		Last Modified: Thu, 01 Feb 2024 06:34:10 GMT  
-		Size: 1.3 MB (1283350 bytes)  
+	-	`sha256:8672aeb1080353103282ba88808bad38fea56a381779d710f586c80398aef8e7`  
+		Last Modified: Wed, 06 Mar 2024 00:07:41 GMT  
+		Size: 1.3 MB (1282589 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b4fc4ba84e2d4e1415c887585eb971fa7ccf09af5d77a57e2e3bec687cc6653`  
-		Last Modified: Thu, 01 Feb 2024 06:34:10 GMT  
-		Size: 1.4 MB (1389912 bytes)  
+	-	`sha256:dfbe9d4298112a8a733ba81e2b90e87afd4713e2873f499a8e0904dc6d8945d2`  
+		Last Modified: Wed, 06 Mar 2024 00:07:41 GMT  
+		Size: 1.4 MB (1387749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc057a7ea3363295064e96a79074bad2dd9cd2791428b1d0bc260a4bdafea05d`  
-		Last Modified: Thu, 01 Feb 2024 06:34:13 GMT  
-		Size: 11.4 MB (11372747 bytes)  
+	-	`sha256:237cb31ec15aafe7089da51424f363285b3ee273f59e0e219a3dbb73b1e3adcd`  
+		Last Modified: Wed, 06 Mar 2024 00:07:44 GMT  
+		Size: 11.4 MB (11378042 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:latest` - linux; arm64 variant v8
@@ -14575,14 +15671,14 @@ CMD ["haxe"]
 ### `haxe:latest` - windows version 10.0.20348.2322; amd64
 
 ```console
-$ docker pull haxe@sha256:4ca2b305e366a1747138628cb74b017be400ffc25bc215f23678d712c6b42177
+$ docker pull haxe@sha256:0cc8597a9e1401ce1af5c6f3b236a0e2db8a13aec8916c141f1438f686fee46a
 ```
 
 -	Docker Version: 20.10.21
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 GB (1937018424 bytes)**  
+-	Total Size: **1.9 GB (1937036414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03901b6087dd1762da8748e5d2f3ba1965c84b40fb6711d9c677fc8c1b83c415`
+-	Image ID: `sha256:377e849da36e4f8ae74f05af188aa0bc9f259fc931643a40f3e37fe07995064f`
 -	Default Command: `["haxe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
@@ -14613,19 +15709,19 @@ RUN New-Item -ItemType directory -Path $env:HAXETOOLKIT_PATH;
 ENV NEKO_VERSION=2.3.0
 # Wed, 14 Feb 2024 21:30:39 GMT
 RUN $url = 'https://github.com/HaxeFoundation/neko/releases/download/v2-3-0/neko-2.3.0-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'neko.zip'; 		Write-Host 'Verifying sha256 (d09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b) ...'; 	if ((Get-FileHash neko.zip -Algorithm sha256).Hash -ne 'd09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path neko.zip -DestinationPath tmp; 	if (Test-Path tmp\neko.exe) { Move-Item tmp $env:NEKOPATH } 	else { Move-Item (Resolve-Path tmp\neko* | Select -ExpandProperty Path) $env:NEKOPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path neko.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  neko -version'; neko -version; 		Write-Host 'Complete.';
-# Wed, 14 Feb 2024 21:30:40 GMT
-ENV HAXE_VERSION=4.3.3
-# Wed, 14 Feb 2024 21:34:55 GMT
-RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.3/haxe-4.3.3-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (70953a966b90bceb664639d1a690567e39cf9e3ebacf8c622c17df76fa0a199b) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '70953a966b90bceb664639d1a690567e39cf9e3ebacf8c622c17df76fa0a199b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
-# Wed, 14 Feb 2024 21:35:16 GMT
+# Tue, 05 Mar 2024 23:15:12 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:19:22 GMT
+RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.4/haxe-4.3.4-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:19:42 GMT
 RUN New-Item -ItemType directory -Path $env:HAXELIB_PATH;
-# Wed, 14 Feb 2024 21:35:16 GMT
+# Tue, 05 Mar 2024 23:19:43 GMT
 ENV HOMEDRIVE=C:
-# Wed, 14 Feb 2024 21:35:35 GMT
+# Tue, 05 Mar 2024 23:20:01 GMT
 RUN $newPath = ('{0}\Users\{1}' -f $env:HOMEDRIVE, $env:USERNAME); 	Write-Host ('Updating HOMEPATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('HOMEPATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 14 Feb 2024 21:35:55 GMT
+# Tue, 05 Mar 2024 23:20:21 GMT
 RUN (New-Object System.Net.WebClient).DownloadString('https://lib.haxe.org/p/hxcpp/4.2.1/download/') >$null
-# Wed, 14 Feb 2024 21:35:55 GMT
+# Tue, 05 Mar 2024 23:20:22 GMT
 CMD ["haxe"]
 ```
 
@@ -14682,46 +15778,46 @@ CMD ["haxe"]
 		Last Modified: Wed, 14 Feb 2024 22:36:49 GMT  
 		Size: 2.1 MB (2132792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:33f0cda5fdb29b6a0bb5510a4732d475212c374c285d6b35eed6b9218dfcffea`  
-		Last Modified: Wed, 14 Feb 2024 22:36:48 GMT  
-		Size: 1.4 KB (1411 bytes)  
+	-	`sha256:dc557d75011fde75b3c2b5be70413ed7e63757458bfdd472f61497ad78085a8e`  
+		Last Modified: Tue, 05 Mar 2024 23:30:30 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7725c11b5766ae27f472b8ea84e5c6baea02863516f55248d8de9afa8f19edd`  
-		Last Modified: Wed, 14 Feb 2024 22:36:52 GMT  
-		Size: 9.6 MB (9570028 bytes)  
+	-	`sha256:a5477596e47730781d4af674baea9b7e7fcc83589d238b66d75cb17fcb0b0976`  
+		Last Modified: Tue, 05 Mar 2024 23:30:34 GMT  
+		Size: 9.6 MB (9609110 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad7c0d58e6f76d9888647408b1f823eaeb4637b147ba1f743d0553348c29e284`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 333.8 KB (333827 bytes)  
+	-	`sha256:e686f54b7330e7b27d2d4063fbc9f5c38abe9e58ab265544f6713a0429b7b7a5`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 327.6 KB (327629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05abdbfab0d89b5729021b42513af353b2776461b2b434e648fc195587735849`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 1.3 KB (1288 bytes)  
+	-	`sha256:e448242449c379ab8e51699f3f01ecce32da60b051d6722dbe19f601a0308d5f`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb037e1d64df68cd9e573809dfcfa435297aac0bbe0ba6046ddddd0dd6023231`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 336.9 KB (336906 bytes)  
+	-	`sha256:b3acf469ce2981d5ace0f99ad0c7cec77ca666021ee68f72eb924c4d076122c0`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 330.2 KB (330171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f77d68eb0c407254cfc55a96b1ae42bcdd45d15c231ad42c981b6435fe85596`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 357.7 KB (357702 bytes)  
+	-	`sha256:35e25b0c19a8089a36adbbbb4ae30f865e23aaeeead0fe2d9c80bb9a06d622ac`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 349.5 KB (349521 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:479f6978004fac3eb4efee129c2306030079cedb3c41b9f473ac53d087c65049`  
-		Last Modified: Wed, 14 Feb 2024 22:36:46 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:c0cf9f30dc552c92e27c4a052b10208872f4255dcb59f4ced183d0498594a3cf`  
+		Last Modified: Tue, 05 Mar 2024 23:30:28 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:latest` - windows version 10.0.17763.5458; amd64
 
 ```console
-$ docker pull haxe@sha256:b8aa94148ad85babc293b93e188c7cec85cb30d22e0e736b75cdf715739c9000
+$ docker pull haxe@sha256:673d180da0f311e9a10ec0b3f5dad306f3df390720a1bace7513a7e1a13c6486
 ```
 
 -	Docker Version: 20.10.21
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2111231235 bytes)**  
+-	Total Size: **2.1 GB (2106798148 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b19c4da2e7a638f309c19aa14d99045ec8276bc038d458480b800cd9bae3938c`
+-	Image ID: `sha256:e2e6cd7e8d5e6c5fb550539f9c230e2c2d4419a77c23b850e6a28b3a4b53ff80`
 -	Default Command: `["haxe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
@@ -14752,19 +15848,19 @@ RUN New-Item -ItemType directory -Path $env:HAXETOOLKIT_PATH;
 ENV NEKO_VERSION=2.3.0
 # Wed, 14 Feb 2024 21:42:54 GMT
 RUN $url = 'https://github.com/HaxeFoundation/neko/releases/download/v2-3-0/neko-2.3.0-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'neko.zip'; 		Write-Host 'Verifying sha256 (d09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b) ...'; 	if ((Get-FileHash neko.zip -Algorithm sha256).Hash -ne 'd09fdf362cd2e3274f6c8528be7211663260c3a5323ce893b7637c2818995f0b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path neko.zip -DestinationPath tmp; 	if (Test-Path tmp\neko.exe) { Move-Item tmp $env:NEKOPATH } 	else { Move-Item (Resolve-Path tmp\neko* | Select -ExpandProperty Path) $env:NEKOPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path neko.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  neko -version'; neko -version; 		Write-Host 'Complete.';
-# Wed, 14 Feb 2024 21:42:55 GMT
-ENV HAXE_VERSION=4.3.3
-# Wed, 14 Feb 2024 21:47:49 GMT
-RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.3/haxe-4.3.3-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (70953a966b90bceb664639d1a690567e39cf9e3ebacf8c622c17df76fa0a199b) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '70953a966b90bceb664639d1a690567e39cf9e3ebacf8c622c17df76fa0a199b') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
-# Wed, 14 Feb 2024 21:49:07 GMT
+# Tue, 05 Mar 2024 23:20:41 GMT
+ENV HAXE_VERSION=4.3.4
+# Tue, 05 Mar 2024 23:25:20 GMT
+RUN $url = 'https://github.com/HaxeFoundation/haxe/releases/download/4.3.4/haxe-4.3.4-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile haxe.zip; 		Write-Host 'Verifying sha256 (402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503) ...'; 	if ((Get-FileHash haxe.zip -Algorithm sha256).Hash -ne '402ca2e8fd08477b5c08191bddc0e9af3b58484308dde4558f670a455bc3e503') { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType directory -Path tmp; 	Expand-Archive -Path haxe.zip -DestinationPath tmp; 	if (Test-Path tmp\haxe.exe) { Move-Item tmp $env:HAXEPATH } 	else { Move-Item (Resolve-Path tmp\haxe* | Select -ExpandProperty Path) $env:HAXEPATH }; 		Write-Host 'Removing ...'; 	Remove-Item -Path haxe.zip, tmp -Force -Recurse -ErrorAction Ignore; 		Write-Host 'Verifying install ...'; 	Write-Host '  haxe -version'; haxe -version; 	Write-Host '  haxelib version'; haxelib version; 		Write-Host 'Complete.';
+# Tue, 05 Mar 2024 23:26:32 GMT
 RUN New-Item -ItemType directory -Path $env:HAXELIB_PATH;
-# Wed, 14 Feb 2024 21:49:08 GMT
+# Tue, 05 Mar 2024 23:26:33 GMT
 ENV HOMEDRIVE=C:
-# Wed, 14 Feb 2024 21:50:27 GMT
+# Tue, 05 Mar 2024 23:27:43 GMT
 RUN $newPath = ('{0}\Users\{1}' -f $env:HOMEDRIVE, $env:USERNAME); 	Write-Host ('Updating HOMEPATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('HOMEPATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 14 Feb 2024 21:51:48 GMT
+# Tue, 05 Mar 2024 23:29:01 GMT
 RUN (New-Object System.Net.WebClient).DownloadString('https://lib.haxe.org/p/hxcpp/4.2.1/download/') >$null
-# Wed, 14 Feb 2024 21:51:49 GMT
+# Tue, 05 Mar 2024 23:29:01 GMT
 CMD ["haxe"]
 ```
 
@@ -14821,31 +15917,31 @@ CMD ["haxe"]
 		Last Modified: Wed, 14 Feb 2024 22:37:07 GMT  
 		Size: 2.1 MB (2141307 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e00737189173fabfdcd08654261074fce12b063fa3e27555f9af0150d6935af1`  
-		Last Modified: Wed, 14 Feb 2024 22:37:06 GMT  
-		Size: 1.4 KB (1424 bytes)  
+	-	`sha256:f94e78fd99b2b85d7f90a9a7bc7ace0576f9593987af484c7c404e6b8a67823e`  
+		Last Modified: Tue, 05 Mar 2024 23:30:45 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e76a52a156155521e3ef5a7eb63d74ab41388e86d1f350af62fe1bf51740878c`  
-		Last Modified: Wed, 14 Feb 2024 22:37:12 GMT  
-		Size: 13.9 MB (13910789 bytes)  
+	-	`sha256:572886e794b3f38123d04dca0c178d0e089a26c7fcd226cfaf93b16645f52d15`  
+		Last Modified: Tue, 05 Mar 2024 23:30:49 GMT  
+		Size: 9.5 MB (9523133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ad0acdc817d77ca619d2595b4981aa8b2c8be028c21a2c1a0598e3d1dd07670`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 343.3 KB (343292 bytes)  
+	-	`sha256:c7fa0c690e2c609b29b448e0ca4bf38a7da786bbaebe2d3619dd1c74c3750851`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 331.0 KB (330956 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f38ddaeaff0ec5f527359ead2c65aee3e216a114f238c435ffb1e91cd68b81c`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:0502039faa6acf9b1ab1d50f73e1038bf28f392aacf33ff8c2c3399a377a3a9d`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 1.3 KB (1309 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d944484e7a8b3b8452c1213f0025ce76ef4c480ece61dec1bc38a512dff9160`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 348.6 KB (348650 bytes)  
+	-	`sha256:9379f159005197e3c7ec0b27ef17f08f739d7044bcb930ec15b9575731908c06`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 332.9 KB (332862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fcbbeb7d624d921ffc864b2aad60cfa7c380e320c85e1e879bd66964f3e89fd8`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 359.4 KB (359447 bytes)  
+	-	`sha256:04d79ab514417842c9f4656ab4e7995e7d58ee1c113dfbe358126d0efef94678`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 342.3 KB (342344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68dd116ba79880b8334c795f208668e7df9975066edbb00838e510e1974f7b1c`  
-		Last Modified: Wed, 14 Feb 2024 22:37:04 GMT  
-		Size: 1.4 KB (1411 bytes)  
+	-	`sha256:28d51b7261194310821890e3f99bb0c31c2ecd289cafd94991d098e09a9b67d1`  
+		Last Modified: Tue, 05 Mar 2024 23:30:43 GMT  
+		Size: 1.3 KB (1323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
