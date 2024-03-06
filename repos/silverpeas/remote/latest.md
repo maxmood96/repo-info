@@ -1,7 +1,7 @@
 ## `silverpeas:latest`
 
 ```console
-$ docker pull silverpeas@sha256:197a7543516719b27d106b665fec1c96e8d53d9c23fabfb59e341ecb4235f6b0
+$ docker pull silverpeas@sha256:ab0aa3e5a5feb00dbd3ec5eaa79eaec0adf1606b02ba7e0ea9caaf21f8395049
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,142 +11,142 @@ $ docker pull silverpeas@sha256:197a7543516719b27d106b665fec1c96e8d53d9c23fabfb5
 ### `silverpeas:latest` - linux; amd64
 
 ```console
-$ docker pull silverpeas@sha256:1ac6ea7de74934fbc0e03cb807bb5568b6f7c1308cd1766408f127238b82ee7e
+$ docker pull silverpeas@sha256:b956b1b6845b58bd53a8e6483defe02e3e1b91488958659ade9913a4acba53f6
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.8 GB (1777011745 bytes)**  
+-	Total Size: **1.8 GB (1777030461 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64de98de4ed0d9e1672fd53723fa0ba98e941a972c4ddcb1bec31b036a1fe81f`
+-	Image ID: `sha256:47b721661c97cc497ffe5a96e701fa10d7cd7a0c28580a77945fab3c89cd8034`
 -	Default Command: `["\/opt\/run.sh"]`
 
 ```dockerfile
-# Tue, 23 Jan 2024 13:01:02 GMT
+# Fri, 16 Feb 2024 21:32:49 GMT
 ARG RELEASE
-# Tue, 23 Jan 2024 13:01:02 GMT
+# Fri, 16 Feb 2024 21:32:49 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 23 Jan 2024 13:01:02 GMT
+# Fri, 16 Feb 2024 21:32:49 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 23 Jan 2024 13:01:02 GMT
+# Fri, 16 Feb 2024 21:32:49 GMT
 LABEL org.opencontainers.image.version=20.04
-# Tue, 23 Jan 2024 13:01:04 GMT
-ADD file:4b4e122c96445546ef9fba44a4eae6ada6239edecb9eea2c807a83abaebad451 in / 
-# Tue, 23 Jan 2024 13:01:04 GMT
+# Fri, 16 Feb 2024 21:32:52 GMT
+ADD file:a25798f31219000d6a82d2c9258743926b1a400530d12dbb1eadf2c2519f9888 in / 
+# Fri, 16 Feb 2024 21:32:52 GMT
 CMD ["/bin/bash"]
-# Fri, 02 Feb 2024 03:27:47 GMT
+# Wed, 06 Mar 2024 05:33:41 GMT
 MAINTAINER Miguel Moquillon "miguel.moquillon@silverpeas.org"
-# Fri, 02 Feb 2024 03:27:47 GMT
+# Wed, 06 Mar 2024 05:33:41 GMT
 ENV TERM=xterm
-# Fri, 02 Feb 2024 03:35:45 GMT
+# Wed, 06 Mar 2024 05:41:14 GMT
 RUN apt-get update   && apt-get install -y tzdata   && apt-get install -y     apt-utils     iputils-ping     curl     wget     vim     locales     language-pack-en     language-pack-fr     procps     net-tools     zip     unzip     openjdk-11-jdk     ffmpeg     imagemagick     ghostscript     libreoffice     ure     gpgv   && rm -rf /var/lib/apt/lists/*   && update-ca-certificates -f
-# Fri, 02 Feb 2024 03:35:52 GMT
+# Wed, 06 Mar 2024 05:41:19 GMT
 RUN wget -nc https://www.silverpeas.org/files/swftools-bin-0.9.2.zip   && echo 'd40bd091c84bde2872f2733a3c767b3a686c8e8477a3af3a96ef347cf05c5e43 *swftools-bin-0.9.2.zip' | sha256sum -   && unzip swftools-bin-0.9.2.zip -d /   && rm swftools-bin-0.9.2.zip
-# Fri, 02 Feb 2024 03:35:56 GMT
+# Wed, 06 Mar 2024 05:41:22 GMT
 RUN wget -nc https://www.silverpeas.org/files/pdf2json-bin-0.68.zip   && echo 'eec849cdd75224f9d44c0999ed1fbe8764a773d8ab0cf7fff4bf922ab81c9f84 *pdf2json-bin-0.68.zip' | sha256sum -   && unzip pdf2json-bin-0.68.zip -d /   && rm pdf2json-bin-0.68.zip
-# Fri, 02 Feb 2024 03:35:56 GMT
+# Wed, 06 Mar 2024 05:41:23 GMT
 ARG DEFAULT_LOCALE=en_US.UTF-8
-# Fri, 02 Feb 2024 03:36:34 GMT
+# Wed, 06 Mar 2024 05:42:02 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen   && echo "fr_FR.UTF-8 UTF-8" >> /etc/locale.gen   && echo "de_DE.UTF-8 UTF-8" >> /etc/locale.gen   && locale-gen   && update-locale LANG=${DEFAULT_LOCALE} LANGUAGE=${DEFAULT_LOCALE} LC_ALL=${DEFAULT_LOCALE}
-# Fri, 02 Feb 2024 03:36:34 GMT
+# Wed, 06 Mar 2024 05:42:03 GMT
 ENV LANG=en_US.UTF-8
-# Fri, 02 Feb 2024 03:36:34 GMT
+# Wed, 06 Mar 2024 05:42:03 GMT
 ENV LANGUAGE=en_US.UTF-8
-# Fri, 02 Feb 2024 03:36:34 GMT
+# Wed, 06 Mar 2024 05:42:03 GMT
 ENV LC_ALL=en_US.UTF-8
-# Fri, 02 Feb 2024 03:36:35 GMT
+# Wed, 06 Mar 2024 05:42:03 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Fri, 02 Feb 2024 03:36:35 GMT
+# Wed, 06 Mar 2024 05:42:04 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN ln -svT "/usr/lib/jvm/java-11-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Fri, 02 Feb 2024 03:36:35 GMT
+# Wed, 06 Mar 2024 05:42:04 GMT
 ENV JAVA_HOME=/docker-java-home
-# Fri, 02 Feb 2024 03:36:36 GMT
+# Wed, 06 Mar 2024 05:42:04 GMT
 ENV SILVERPEAS_HOME=/opt/silverpeas
-# Fri, 02 Feb 2024 03:36:36 GMT
+# Wed, 06 Mar 2024 05:42:04 GMT
 ENV JBOSS_HOME=/opt/wildfly
-# Fri, 23 Feb 2024 02:53:03 GMT
+# Wed, 06 Mar 2024 05:42:04 GMT
 ENV SILVERPEAS_VERSION=6.3.4
-# Fri, 23 Feb 2024 02:53:03 GMT
+# Wed, 06 Mar 2024 05:42:04 GMT
 ENV WILDFLY_VERSION=26.1.1
-# Fri, 23 Feb 2024 02:53:03 GMT
+# Wed, 06 Mar 2024 05:42:04 GMT
 LABEL name=Silverpeas 6.3.4 description=Image to install and to run Silverpeas 6.3.4 vendor=Silverpeas version=6.3.4 build=1
-# Fri, 23 Feb 2024 02:53:38 GMT
+# Wed, 06 Mar 2024 05:42:38 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc   && gpg --keyserver keys.openpgp.org --recv-keys 3F4657EF9C591F2FEA458FEBC19391EB3DF442B6   && gpg --batch --verify silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc https://www.silverpeas.org/files/wildfly-${WILDFLY_VERSION}.Final.zip   && unzip silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip -d /opt   && unzip wildfly-${WILDFLY_VERSION}.Final.zip -d /opt   && mv /opt/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?} /opt/silverpeas   && mv /opt/wildfly-${WILDFLY_VERSION}.Final /opt/wildfly   && rm *.zip   && mkdir -p /root/.m2
-# Fri, 23 Feb 2024 02:53:39 GMT
+# Wed, 06 Mar 2024 05:42:38 GMT
 COPY file:4d0e637a3e1ce0b8143795fd5df1997a7ee18fba27382849ed23e9ecb8142009 in /root/.m2/ 
-# Fri, 23 Feb 2024 02:53:39 GMT
+# Wed, 06 Mar 2024 05:42:38 GMT
 COPY file:473bf75b335a39b6b4b39c64cd151bd8ed3d3e33da73b8124e537a5db1fad3d6 in /opt/silverpeas/bin/ 
-# Fri, 23 Feb 2024 02:53:39 GMT
+# Wed, 06 Mar 2024 05:42:39 GMT
 WORKDIR /opt/silverpeas/bin
-# Fri, 23 Feb 2024 02:53:39 GMT
+# Wed, 06 Mar 2024 05:42:39 GMT
 COPY file:53a5e8023ae593585b413b14c995a55c412d5a4dff0ebcb7db632f2c22c39da6 in /opt/ 
-# Fri, 23 Feb 2024 02:53:39 GMT
+# Wed, 06 Mar 2024 05:42:39 GMT
 COPY file:b5a807d0a061fd9e87c6acfc7080c110a5f3c030251fe9a4c995cec7603e12d2 in /opt/silverpeas/configuration/silverpeas/ 
-# Fri, 23 Feb 2024 02:56:10 GMT
+# Wed, 06 Mar 2024 05:45:10 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN sed -i -e "s/SILVERPEAS_VERSION/${SILVERPEAS_VERSION}/g" ${SILVERPEAS_HOME}/bin/silverpeas.gradle   && ./silverpeas construct   && rm ../log/build-*   && touch .install
-# Fri, 23 Feb 2024 02:56:13 GMT
+# Wed, 06 Mar 2024 05:45:13 GMT
 EXPOSE 8000 9990
-# Fri, 23 Feb 2024 02:56:13 GMT
+# Wed, 06 Mar 2024 05:45:13 GMT
 VOLUME [/opt/silverpeas/log /opt/silverpeas/data /opt/silverpeas/properties /opt/silverpeas/xmlcomponents/workflows]
-# Fri, 23 Feb 2024 02:56:13 GMT
+# Wed, 06 Mar 2024 05:45:13 GMT
 CMD ["/opt/run.sh"]
 ```
 
 -	Layers:
-	-	`sha256:3c67549075b6db92af85c8649f848d697b5bb1f448b436c4b4d6ee6834ab45f7`  
-		Last Modified: Tue, 23 Jan 2024 18:44:22 GMT  
-		Size: 28.6 MB (28584460 bytes)  
+	-	`sha256:63e9bbe323274e77e58d77c6ab6802d247458f784222fbb07a2556d6ec74ee05`  
+		Last Modified: Sat, 17 Feb 2024 02:07:52 GMT  
+		Size: 28.6 MB (28584317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21478c4a5959c6d09b8bb2d4ecf23304997c77e7f0b25d7d788dd3687b0aa0ae`  
-		Last Modified: Fri, 02 Feb 2024 05:59:12 GMT  
-		Size: 762.3 MB (762344120 bytes)  
+	-	`sha256:36b06d973373245e4d8ba2a7d568f0eddb1042668921fe683aa78e35e8c52c59`  
+		Last Modified: Wed, 06 Mar 2024 05:46:51 GMT  
+		Size: 762.4 MB (762367403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad3d379b00704865e167ee6ed4bd48e26ebe5b5d3646b1ec3ec0c824c1b66bb9`  
-		Last Modified: Fri, 02 Feb 2024 05:57:50 GMT  
-		Size: 4.0 MB (3994069 bytes)  
+	-	`sha256:2cd4b46a224e387376d6ba1178be2751b3d981bf152087548bd05aad4092cf8e`  
+		Last Modified: Wed, 06 Mar 2024 05:45:29 GMT  
+		Size: 4.0 MB (3994070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fda3c1e4ba697069e9c4a2fa6ec14b1e31050c98205b52486f3b45d5eb277aa1`  
-		Last Modified: Fri, 02 Feb 2024 05:57:50 GMT  
-		Size: 7.1 MB (7146638 bytes)  
+	-	`sha256:b410a7f29f7f9c03b4d116af73c94100c434b47bb09bba31797a3ff04096e668`  
+		Last Modified: Wed, 06 Mar 2024 05:45:30 GMT  
+		Size: 7.1 MB (7146645 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7e3c0611b65a16b8b03c2b764137fdde10fc1bd2389efc88385acd68c9f5323`  
-		Last Modified: Fri, 02 Feb 2024 05:57:48 GMT  
-		Size: 2.5 MB (2534361 bytes)  
+	-	`sha256:c95c9befad7c33b43b20480d71b9d5d618d99831112a24bafcc82cc68c320a2f`  
+		Last Modified: Wed, 06 Mar 2024 05:45:27 GMT  
+		Size: 2.5 MB (2534359 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb9a76f61979e562b65e217118d08791c247a62b4c0ee2730275e4f3300769ff`  
-		Last Modified: Fri, 02 Feb 2024 05:57:47 GMT  
+	-	`sha256:c96551efad5fba45a0daab4d953ec8aa510d9ef331ff3b3aa9b2660514397c98`  
+		Last Modified: Wed, 06 Mar 2024 05:45:27 GMT  
 		Size: 243.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad309448567fc38f955ed2bbc664ee00e191e947bdb1ad81ebc455acd782b513`  
-		Last Modified: Fri, 02 Feb 2024 05:57:47 GMT  
+	-	`sha256:206c11de2cabec3a580cb1805d43fcf5ec7a2678f9b3e1da1ee52645bd9501e4`  
+		Last Modified: Wed, 06 Mar 2024 05:45:27 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fc1d942f2ef6fdc3231da770fa1c848e5c6a1c1c76538323ce4a35de3e6bb7d`  
-		Last Modified: Fri, 23 Feb 2024 02:56:46 GMT  
-		Size: 217.8 MB (217842691 bytes)  
+	-	`sha256:2d9815a0ce8bebeee16e48c39682c3145b2362078f96e0b130dfa627cb958529`  
+		Last Modified: Wed, 06 Mar 2024 05:45:38 GMT  
+		Size: 217.8 MB (217842685 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bcbfe949f23f3ea240583e59ad6a8ed0ac4ad82e7ce2ae3864518187b60385c`  
-		Last Modified: Fri, 23 Feb 2024 02:56:32 GMT  
-		Size: 405.0 B  
+	-	`sha256:b57db74d4e07b8fc3bbc057fa7b64b8d10a9d9956f58faa74b9968fdfc3c0da9`  
+		Last Modified: Wed, 06 Mar 2024 05:45:25 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efc2d448134a59d6a54f9dd403aa9f147dd913db237f589c7a528ebe9a35d71e`  
-		Last Modified: Fri, 23 Feb 2024 02:56:32 GMT  
-		Size: 660.0 B  
+	-	`sha256:01512619965624b77da9b98b62384303f24988a773b8e52893bb51b237d67ff3`  
+		Last Modified: Wed, 06 Mar 2024 05:45:25 GMT  
+		Size: 661.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4be94b879cb141a8d8dc820756bc56239d352ca581aeef103d38605c143c418`  
-		Last Modified: Fri, 23 Feb 2024 02:56:32 GMT  
-		Size: 909.0 B  
+	-	`sha256:d7b9a664129ff8745baf567f69d9d6526bee1a54cda7fdc26b60fc8c71e7b8d6`  
+		Last Modified: Wed, 06 Mar 2024 05:45:25 GMT  
+		Size: 908.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52d39c3502a7ae34ce99fa8e1a547fb8761eab9cbf1cb87c92c13c753120f716`  
-		Last Modified: Fri, 23 Feb 2024 02:56:32 GMT  
-		Size: 383.0 B  
+	-	`sha256:a113ba1f8409d3f9a84202eff74f01b8ef522ff9c61af529e2dc539755943ae9`  
+		Last Modified: Wed, 06 Mar 2024 05:45:25 GMT  
+		Size: 384.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ab215316696b145dfe23194e465138448f86dfd92df7405fb040d5a0814e28b`  
-		Last Modified: Fri, 23 Feb 2024 02:57:10 GMT  
-		Size: 754.6 MB (754562676 bytes)  
+	-	`sha256:fa8ab7560e5db5441de727bd0223de7a47a989064d8b912a7aedbceabad2bd81`  
+		Last Modified: Wed, 06 Mar 2024 05:46:04 GMT  
+		Size: 754.6 MB (754558253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
