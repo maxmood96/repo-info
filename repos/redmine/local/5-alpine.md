@@ -1,10 +1,10 @@
-# `redmine:5.1.1-alpine3.18`
+# `redmine:5.1.2-alpine3.18`
 
 ## Docker Metadata
 
-- Image ID: `sha256:066ac120dca14870b3f4aa701a53052954892c04907784e07b983ff80b8ea9a4`
-- Created: `2023-12-19T17:42:47Z`
-- Virtual Size: ~ 464.56 Mb  
+- Image ID: `sha256:304748857e9d0f51ac33ddb85c4462011bbab98c7c4f755d072e88e86ebbef1f`
+- Created: `2024-03-04T21:34:05Z`
+- Virtual Size: ~ 464.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -20,9 +20,9 @@
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=5.1.1`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.1.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=edf3095746effd04ad5140681d618f5fa8d06be09c47b6f8b615dcad0b753e6e`
+  - `REDMINE_VERSION=5.1.2`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.2.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=26c0ca0a9aaee1ceb983825bf1266c99b0850bf013c178713f5a3b0080012123`
   - `BUNDLE_FORCE_RUBY_PLATFORM=1`
 
 ## `apk` (`.apk`-based packages)
@@ -557,16 +557,16 @@ GPL-2.0-only
 ### `apk` package: `glib`
 
 ```console
-glib-2.76.4-r0 description:
+glib-2.76.6-r0 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.76.4-r0 webpage:
+glib-2.76.6-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.76.4-r0 installed size:
+glib-2.76.6-r0 installed size:
 3824 KiB
 
-glib-2.76.4-r0 license:
+glib-2.76.6-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -863,16 +863,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.5.0-r1 description:
+libexpat-2.6.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.5.0-r1 webpage:
+libexpat-2.6.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.5.0-r1 installed size:
+libexpat-2.6.0-r0 installed size:
 144 KiB
 
-libexpat-2.5.0-r1 license:
+libexpat-2.6.0-r0 license:
 MIT
 
 ```
@@ -1169,16 +1169,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-15.5-r0 description:
+libpq-15.6-r0 description:
 PostgreSQL client library
 
-libpq-15.5-r0 webpage:
+libpq-15.6-r0 webpage:
 https://www.postgresql.org/
 
-libpq-15.5-r0 installed size:
+libpq-15.6-r0 installed size:
 320 KiB
 
-libpq-15.5-r0 license:
+libpq-15.6-r0 license:
 PostgreSQL
 
 ```
@@ -1458,16 +1458,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.11.6-r0 description:
+libxml2-2.11.7-r0 description:
 XML parsing library, version 2
 
-libxml2-2.11.6-r0 webpage:
+libxml2-2.11.7-r0 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.11.6-r0 installed size:
+libxml2-2.11.7-r0 installed size:
 1108 KiB
 
-libxml2-2.11.6-r0 license:
+libxml2-2.11.7-r0 license:
 MIT
 
 ```
@@ -2070,16 +2070,16 @@ MIT
 ### `apk` package: `python3`
 
 ```console
-python3-3.11.6-r0 description:
+python3-3.11.8-r0 description:
 High-level scripting language
 
-python3-3.11.6-r0 webpage:
+python3-3.11.8-r0 webpage:
 https://www.python.org/
 
-python3-3.11.6-r0 installed size:
+python3-3.11.8-r0 installed size:
 24 MiB
 
-python3-3.11.6-r0 license:
+python3-3.11.8-r0 license:
 PSF-2.0
 
 ```
@@ -2087,16 +2087,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.11.6-r0 description:
+python3-pyc-3.11.8-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.11.6-r0 webpage:
+python3-pyc-3.11.8-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.11.6-r0 installed size:
+python3-pyc-3.11.8-r0 installed size:
 4096 B
 
-python3-pyc-3.11.6-r0 license:
+python3-pyc-3.11.8-r0 license:
 PSF-2.0
 
 ```
@@ -2104,16 +2104,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.11.6-r0 description:
+python3-pycache-pyc0-3.11.8-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.11.6-r0 webpage:
+python3-pycache-pyc0-3.11.8-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.11.6-r0 installed size:
+python3-pycache-pyc0-3.11.8-r0 installed size:
 13 MiB
 
-python3-pycache-pyc0-3.11.6-r0 license:
+python3-pycache-pyc0-3.11.8-r0 license:
 PSF-2.0
 
 ```
@@ -2308,16 +2308,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2023d-r0 description:
+tzdata-2024a-r0 description:
 Timezone data
 
-tzdata-2023d-r0 webpage:
+tzdata-2024a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2023d-r0 installed size:
-3076 KiB
+tzdata-2024a-r0 installed size:
+3072 KiB
 
-tzdata-2023d-r0 license:
+tzdata-2024a-r0 license:
 Public-Domain
 
 ```
