@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f42cb1c7e98048a2022a8f621d4972b3cb209f5d54c68d655239b20fad4686a`
+- Image ID: `sha256:79112eff9c89624d06e0506e6ae01b76c68ec9fdbe2eda0c6f7ae56dae725f41`
 - Created: `2024-02-29T23:33:16Z`
 - Virtual Size: ~ 756.48 Mb  
   (total size of all layers on-disk)
@@ -130,19 +130,23 @@ $ apt-get source -qq --print-uris audit=1:3.0.7-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.0.7-1build1.debian.tar.xz' audit_3.0.7-1build1.debian.tar.xz 17772 SHA512:cdf346fc7dc04e42b44a9089fb7c01e68ea54ccd20d3eef8100d0cd8eed8ebd0764d8fd6ceab133faa0bfeee18e3cfe7625d230600b0e34ed0c19a7b739ec783
 ```
 
-### `dpkg` source package: `base-files=12ubuntu4.5`
+### `dpkg` source package: `base-files=12ubuntu4.6`
 
 Binary Packages:
 
-- `base-files=12ubuntu4.5`
+- `base-files=12ubuntu4.6`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=12ubuntu4.6
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.6.dsc' base-files_12ubuntu4.6.dsc 1598 SHA512:3029ee4489c85a99f7b82387905260cfada128a79b4f811e4565bb5b5059fe052eac6a2eaf49262318c64b89b63b437dc0bf062bb80601b12c107b236990280d
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.6.tar.xz' base-files_12ubuntu4.6.tar.xz 81940 SHA512:a267b25b26473c3b538c4b492077f82fc0a73eafc816c73845efe5a54675fcfaeee0b2fbd2971b19cd5a19fb4564c9e6bc72d5209d200be40bc8085305e5ba6d
+```
 
 ### `dpkg` source package: `base-passwd=3.5.52build1`
 
@@ -1459,30 +1463,14 @@ $ apt-get source -qq --print-uris openldap=2.5.16+dfsg-0ubuntu0.22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.16%2bdfsg-0ubuntu0.22.04.2.debian.tar.xz' openldap_2.5.16+dfsg-0ubuntu0.22.04.2.debian.tar.xz 171868 SHA512:55bb4e1ae7d067c2d000c4cbc296d24658f694dab324c922c13956298187501c6dc91902d309b46622f61f57fbd2400b7097593ec871736652b85dd9c9ec5898
 ```
 
-### `dpkg` source package: `openssl=3.0.2-0ubuntu1.14`
-
-Binary Packages:
-
-- `libssl3:amd64=3.0.2-0ubuntu1.14`
-
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
-
-- `Apache-2.0`
-- `Artistic`
-- `GPL-1`
-- `GPL-1+`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.15`
 
 Binary Packages:
 
+- `libssl3:amd64=3.0.2-0ubuntu1.15`
 - `openssl=3.0.2-0ubuntu1.15`
 
-Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -1739,20 +1727,25 @@ $ apt-get source -qq --print-uris sensible-utils=0.0.17
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.17.tar.xz' sensible-utils_0.0.17.tar.xz 66648 SHA512:fb7803cacc4222f232f64850e5559aca0b56ad98b6fd31f36c89740d72f7a235e7f2934ebce1d788882bff7196d59a2ed6cc3584f31e1c1c9e3593cedca2382b
 ```
 
-### `dpkg` source package: `shadow=1:4.8.1-2ubuntu2.1`
+### `dpkg` source package: `shadow=1:4.8.1-2ubuntu2.2`
 
 Binary Packages:
 
-- `login=1:4.8.1-2ubuntu2.1`
-- `passwd=1:4.8.1-2ubuntu2.1`
+- `login=1:4.8.1-2ubuntu2.2`
+- `passwd=1:4.8.1-2ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris shadow=1:4.8.1-2ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.2.dsc' shadow_4.8.1-2ubuntu2.2.dsc 2060 SHA512:765de71da656f0fd36b0872e05c1f736b167faf3af9a52247e0810d260606fe440a541c5558a882f8a5d150d91f76f01303cada28ba5febe4d16042eda3da7c8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA512:780a983483d847ed3c91c82064a0fa902b6f4185225978241bc3bc03fcc3aa143975b46aee43151c6ba43efcfdb1819516b76ba7ad3d1d3c34fcc38ea42e917b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.2.debian.tar.xz' shadow_4.8.1-2ubuntu2.2.debian.tar.xz 98488 SHA512:dfa83a48e365f57c4881e77307bdea56db3e1b78e28ae687e5346daf1e71fe8df3388329ef6e7c90377555367267719e42e9c7f752da5b897e731bd9ca50a581
+```
 
 ### `dpkg` source package: `systemd=249.11-0ubuntu3.12`
 
