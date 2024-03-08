@@ -2023,10 +2023,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris perl=5.38.2-3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2-3.1.dsc' perl_5.38.2-3.1.dsc 2946 SHA256:e9d1f91eaf369f2e53443c4e77ad5bf3d96eee12781137917ebcf97bb092f920
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2-3.2.dsc' perl_5.38.2-3.2.dsc 2946 SHA256:9d5494b48f76abdb907fe4ef6fb85c71c0bae503edb69a782b6dce4de33e47a2
 'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA256:4d1b34cc058f9963cb89785ecc040d57f6d7725cd83329cfa4ef8b27566454d2
 'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA256:d91115e90b896520e83d4de6b52f8254ef2b70a8d545ffab33200ea9f1cf29e8
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2-3.1.debian.tar.xz' perl_5.38.2-3.1.debian.tar.xz 165700 SHA256:fbb4ca57cdbb209c4e15e3632c89a746ed1c53c5bfb79e4e906ea0ce542b2b6a
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2-3.2.debian.tar.xz' perl_5.38.2-3.2.debian.tar.xz 165800 SHA256:31c8950b4bba7b2f48a88b44d335c14e3ba2506f260e82023df533163570a7cc
 ```
 
 Other potentially useful URLs:

@@ -1272,21 +1272,13 @@ Licenses: (parsed from: `/usr/share/doc/libksba8/copyright`)
 - `GPL-3`
 - `LGPL-2.1-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libksba=1.6.5-2
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.5-2.dsc' libksba_1.6.5-2.dsc 2482 SHA256:c839a44e6889e6d9dcf92d48cde5d385026c4179b3ad3bd99987d8b1e1421344
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.5.orig.tar.bz2' libksba_1.6.5.orig.tar.bz2 708400 SHA256:a564628c574c99287998753f98d750babd91a4e9db451f46ad140466ef2a6d16
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.5.orig.tar.bz2.asc' libksba_1.6.5.orig.tar.bz2.asc 228 SHA256:655f24d0be324b38c03664e1f04d3c9d7865b8123d5ea71835aa61f141277a57
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.5-2.debian.tar.xz' libksba_1.6.5-2.debian.tar.xz 14732 SHA256:eb89a4ebcd0c27ee5daf8e61c852f9ddd7ff081220d6aa8cc025817d23a548b3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libksba/1.6.5-2/
 
-- https://sources.debian.net/src/libksba/1.6.5-2/ (for browsing the source)
-- https://sources.debian.net/src/libksba/1.6.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libksba/1.6.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libmd=1.1.0-2`
 
@@ -2260,20 +2252,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=255.3-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.3-2.dsc' systemd_255.3-2.dsc 7045 SHA256:4b8806cb37214c9006e1f74bc16b5d1969b9296c59713de23247084566ccdbda
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.3.orig.tar.gz' systemd_255.3.orig.tar.gz 14873273 SHA256:27807c65f969d0e0e44629dee8379e1e2c30e6c5e84be0389438c4ab1b225000
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.3-2.debian.tar.xz' systemd_255.3-2.debian.tar.xz 174204 SHA256:1d1af57206309837dc65b4a233ffa14cc7c7ceefbe8b4c4a224b9bc05872a5e7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/255.3-2/
 
-- https://sources.debian.net/src/systemd/255.3-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/255.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/255.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.08-6`
 
@@ -2291,20 +2276,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.08-6
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08-6.dsc' sysvinit_3.08-6.dsc 2359 SHA256:7bb250f3b216f67e213c3659958fe6115d6c6d7956950b12ea69117c8bf01151
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08.orig.tar.gz' sysvinit_3.08.orig.tar.gz 513674 SHA256:325e42ae4ae5ae3e4d989e0604aeb5e4eae5f3ee21e401db3c79000718f8c836
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08-6.debian.tar.xz' sysvinit_3.08-6.debian.tar.xz 138768 SHA256:dcf037d93671e1c9f70df6941fc735fc22b004be327087c121069eb5c1794e5c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.08-6/
 
-- https://sources.debian.net/src/sysvinit/3.08-6/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.08-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.08-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-3`
 
