@@ -1,9 +1,9 @@
-# `aerospike:ce-7.0.0.4`
+# `aerospike:ce-7.0.0.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:299a8f6a309b7b6acf3f1cba1b109df07cdf54d952eefd9a12eb19b7b66145b3`
-- Created: `2024-02-15T02:50:50.211062046Z`
+- Image ID: `sha256:c24b3b818b5a34bcf9d8d5e669aa65f567f3c1788dfeb4bac7c05946bb2c41b9`
+- Created: `2024-03-07T20:51:13.857355322Z`
 - Virtual Size: ~ 212.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,7 +19,7 @@
   - `org.opencontainers.image.title=Aerospike Community Server`
   - `org.opencontainers.image.url=https://github.com/aerospike/aerospike-server.docker`
   - `org.opencontainers.image.vendor=Aerospike`
-  - `org.opencontainers.image.version=7.0.0.4`
+  - `org.opencontainers.image.version=7.0.0.5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -77,11 +77,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.134/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.134/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `aerospike-server-community=7.0.0.4-1`
+### `dpkg` source package: `aerospike-server-community=7.0.0.5-1`
 
 Binary Packages:
 
-- `aerospike-server-community=7.0.0.4-1`
+- `aerospike-server-community=7.0.0.5-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
