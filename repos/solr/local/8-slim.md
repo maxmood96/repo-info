@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f347ca8d1fa05173b1994cf00bf73631f20441ba0938821520ce39619837430`
-- Created: `2024-02-09T17:48:20Z`
+- Image ID: `sha256:31b8ac4a57a85dc7a0a338ae6926710118d70dce11ed91df1e69ef364f6b74d5`
+- Created: `2024-02-13T16:30:16Z`
 - Virtual Size: ~ 525.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1586,20 +1586,25 @@ $ apt-get source -qq --print-uris openldap=2.4.49+dfsg-2ubuntu1.10
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49%2bdfsg-2ubuntu1.10.debian.tar.xz' openldap_2.4.49+dfsg-2ubuntu1.10.debian.tar.xz 190520 SHA512:6782b86834c3643acd64ecf68643af47e030fded12ed90bf84c40072c63bdcd01ada54bdf0eb8ef54123c70d5b96dd447b498ed1a0e0c88efcd56126e2c9e646
 ```
 
-### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.20`
+### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.22`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1f-1ubuntu2.20`
-- `openssl=1.1.1f-1ubuntu2.20`
+- `libssl1.1:amd64=1.1.1f-1ubuntu2.22`
+- `openssl=1.1.1f-1ubuntu2.22`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.22
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.22.dsc' openssl_1.1.1f-1ubuntu2.22.dsc 2523 SHA512:2b22b220723b3b6d3b926a6e567a01486443b12e46544136d312dc106d3f5e9efdc82b861939c295610900905892ebf74f98acacd5a54aca11980ba4c621f383
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.22.debian.tar.xz' openssl_1.1.1f-1ubuntu2.22.debian.tar.xz 261008 SHA512:40ddf4fe839e94342246036c70db5c0997c66ded36e5f86edf1e6b5f413aae697bc16816fc028b13bb4e2909434f6603b16d72f794139eba0af5a417782f17d7
+```
 
 ### `dpkg` source package: `p11-kit=0.23.20-1ubuntu0.1`
 
@@ -1863,20 +1868,25 @@ $ apt-get source -qq --print-uris sensible-utils=0.0.12+nmu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.12%2bnmu1.tar.xz' sensible-utils_0.0.12+nmu1.tar.xz 61988 SHA256:53c6606facf083adbbf0da04e6d774b31ff3f46c7ba36a82d3f182779f4c3f5b
 ```
 
-### `dpkg` source package: `shadow=1:4.8.1-1ubuntu5.20.04.4`
+### `dpkg` source package: `shadow=1:4.8.1-1ubuntu5.20.04.5`
 
 Binary Packages:
 
-- `login=1:4.8.1-1ubuntu5.20.04.4`
-- `passwd=1:4.8.1-1ubuntu5.20.04.4`
+- `login=1:4.8.1-1ubuntu5.20.04.5`
+- `passwd=1:4.8.1-1ubuntu5.20.04.5`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris shadow=1:4.8.1-1ubuntu5.20.04.5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.5.dsc' shadow_4.8.1-1ubuntu5.20.04.5.dsc 2081 SHA512:882dbe402de8ac195152445d0d1ff48a4eb925cb440d3c3d956739295527e81ec9c8631ad8dd09cfccb2b8054600698cfe49db718e9e8d725e0a57d99b9d75c6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA512:780a983483d847ed3c91c82064a0fa902b6f4185225978241bc3bc03fcc3aa143975b46aee43151c6ba43efcfdb1819516b76ba7ad3d1d3c34fcc38ea42e917b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.5.debian.tar.xz' shadow_4.8.1-1ubuntu5.20.04.5.debian.tar.xz 88744 SHA512:b12978fe6b7f0de302a6070f245aba6abc97ee3cefe7ea4925c16d45547d850f4cfd7ab5e7eb7940176d7afe37d16feda3b3bd458a0151a3ffe6a330f0197db9
+```
 
 ### `dpkg` source package: `sqlite3=3.31.1-4ubuntu0.6`
 
@@ -1987,19 +1997,25 @@ $ apt-get source -qq --print-uris tini=0.18.0-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/t/tini/tini_0.18.0-1.debian.tar.xz' tini_0.18.0-1.debian.tar.xz 1804 SHA256:fd17df866484221af45d0be8cdb7be38b3764d4382253a5b4bdf3f2c3442b0db
 ```
 
-### `dpkg` source package: `tzdata=2023d-0ubuntu0.20.04`
+### `dpkg` source package: `tzdata=2024a-0ubuntu0.20.04`
 
 Binary Packages:
 
-- `tzdata=2023d-0ubuntu0.20.04`
+- `tzdata=2024a-0ubuntu0.20.04`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2024a-0ubuntu0.20.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.20.04.dsc' tzdata_2024a-0ubuntu0.20.04.dsc 2516 SHA512:a15b25ae9dc2fbed32a7eb6f41b5036203117dd610d5a657eeb56d507dd985684978f0e3126919fa51a3c6cccc461ab5b4d78c1e1d185c4e95a149318215a32b
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA512:1f09f1b2327cc9e1afc7e9045e83ee3377918dafe1bee2f282b6991828d03b3c70a4d3a17f9207dfb1361bb25bc214a8922a756e84fa114e9ba476226db57236
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA512:a06ddc95002f2dcd3c071d020a74bc98aae2cbf56a502718f9bc08e90e0075b17aaaa653ceecd49a1133cdadfc43134365043f827b19c7dad68050dbda6ba77e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.20.04.debian.tar.xz' tzdata_2024a-0ubuntu0.20.04.debian.tar.xz 170964 SHA512:d1d7386d828f1598632c8cc3bf7a8d6912f1783598d681ca97383e873afa095a51fc994e0cb6c1ed6a0ef6f8e1c619e2bc7679c060a74bc436c1646ff5f99c1c
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 
