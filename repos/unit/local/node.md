@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d8db26e08b2db06aa38d9adb246677f850a98a0d1ebc4abc5df519f09fc2fd57`
+- Image ID: `sha256:7c45f1a157430a39f10ef6bc41cf7895a9b8d259b7cf8df823e0e433c88afec2`
 - Created: `2024-02-27T15:15:42Z`
-- Virtual Size: ~ 1.04 Gb  
+- Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
 - Command: `["unitd","--no-daemon","--control","unix:/var/run/control.unit.sock"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=21.6.2`
+  - `NODE_VERSION=21.7.0`
   - `YARN_VERSION=1.22.19`
 - Labels:
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
