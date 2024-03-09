@@ -1015,15 +1015,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.78.4-2.1
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.78.4-2.1.dsc' glib2.0_2.78.4-2.1.dsc 3572 SHA256:083b0a0de16b24e735a8b70705945cc2d946bfe46bb9a9c1e8e04dcfcad5e20e
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.78.4.orig-unicode-data.tar.xz' glib2.0_2.78.4.orig-unicode-data.tar.xz 266184 SHA256:7c3e36ec1356ac025a92169b74c4c3e6858345f59ed4ea4cf0db300dec4fa21a
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.78.4.orig.tar.xz' glib2.0_2.78.4.orig.tar.xz 5331892 SHA256:24b8e0672dca120cc32d394bccb85844e732e04fe75d18bb0573b2dbc7548f63
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.78.4-2.1.debian.tar.xz' glib2.0_2.78.4-2.1.debian.tar.xz 120708 SHA256:f3329e7f4a908dc912a0119ed726102ab1797ee8dea300b41d8286a4b9f73a72
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.78.4-2.1/
+
 
 ### `dpkg` source package: `glibc=2.37-15`
 
@@ -2998,14 +2996,13 @@ Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-bas
 - `LGPL-2.1`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-base=4.3.3-1
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.3.3-1.dsc' r-base_4.3.3-1.dsc 2925 SHA256:d8132bfcb782f3b10e3622a314842b7ec507702522241fbaa829ec9ee2a7f873
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.3.3.orig.tar.gz' r-base_4.3.3.orig.tar.gz 35861202 SHA256:80851231393b85bf3877ee9e39b282e750ed864c5ec60cbd68e6e139f0520330
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.3.3-1.debian.tar.xz' r-base_4.3.3-1.debian.tar.xz 99624 SHA256:7482969cc31b0d39467f0d3db7abb60b1ccf34c45d162f6aa20e8570432d92e7
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/r-base/4.3.3-1/
+
 
 ### `dpkg` source package: `r-cran-class=7.3-22-2`
 
@@ -3402,20 +3399,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tcl8.6=8.6.13+dfsg-2
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.13%2bdfsg-2.dsc' tcl8.6_8.6.13+dfsg-2.dsc 2120 SHA256:7965fd63c4cb970d0f675f574f6730114c806139e433cb3589a428658fc4d0cd
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.13%2bdfsg.orig.tar.gz' tcl8.6_8.6.13+dfsg.orig.tar.gz 6302749 SHA256:83bce7277e3825df0179567e0d8a431ebb1a126df53ea4a94af89dd4dd0f26d5
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.13%2bdfsg-2.debian.tar.xz' tcl8.6_8.6.13+dfsg-2.debian.tar.xz 14336 SHA256:899c8d800988caa1f5a8b070d3697f29c3d098754416cc2816b94dfa93aef009
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tcl8.6/8.6.13+dfsg-2/
 
-- https://sources.debian.net/src/tcl8.6/8.6.13+dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/tcl8.6/8.6.13+dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tcl8.6/8.6.13+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tex-gyre=20180621-6`
 
