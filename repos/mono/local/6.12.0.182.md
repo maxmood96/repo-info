@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cb2dd7c1920b10b924f9e761f33ffa9589b27a93c943b27054956f5ff93e9f9c`
-- Created: `2024-02-13T11:31:11.225194767Z`
+- Image ID: `sha256:d2edb103e4763bd224c469e7d68ddf314f64a084806286d5dc86c7d927a327a8`
+- Created: `2024-03-12T02:45:29.911430061Z`
 - Virtual Size: ~ 787.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1088,11 +1088,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.2.12-1+deb10u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.2.12-1+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.6.7-4+deb10u11`
+### `dpkg` source package: `gnutls28=3.6.7-4+deb10u12`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.6.7-4+deb10u11`
+- `libgnutls30:amd64=3.6.7-4+deb10u12`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -1108,13 +1108,20 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gnutls28=3.6.7-4+deb10u12
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7-4%2bdeb10u12.dsc' gnutls28_3.6.7-4+deb10u12.dsc 3114 SHA256:cbf15d0135d5a7d3942204f90d16ff331355a203de9551d56ad3bc3045699758
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz' gnutls28_3.6.7.orig.tar.xz 8153728 SHA256:5b3409ad5aaf239808730d1ee12fdcd148c0be00262c7edf157af655a8a188e2
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7-4%2bdeb10u12.debian.tar.xz' gnutls28_3.6.7-4+deb10u12.debian.tar.xz 104752 SHA256:6370a6cca2cd83b77362a1b609c584854b2fbc2a104c92ba9eed5db825f17234
+```
 
-- http://snapshot.debian.org/package/gnutls28/3.6.7-4+deb10u11/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u12/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u12/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.6.7-4+deb10u12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.3-1`
 
@@ -3136,11 +3143,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sysvinit/2.93-8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sysvinit/2.93-8/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tar=1.30+dfsg-6`
+### `dpkg` source package: `tar=1.30+dfsg-6+deb10u1`
 
 Binary Packages:
 
-- `tar=1.30+dfsg-6`
+- `tar=1.30+dfsg-6+deb10u1`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -3150,23 +3157,23 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tar=1.30+dfsg-6
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.30%2bdfsg-6.dsc' tar_1.30+dfsg-6.dsc 1995 SHA256:1515951c8a2fc9a43e822efd82d9043cdec4bec47ddca9e7f1311c73e6b00d0c
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.30%2bdfsg.orig.tar.xz' tar_1.30+dfsg.orig.tar.xz 1883220 SHA256:c02f3747ffe02017878303dde8b78e79cd220364c5e8048cf92320232e38912d
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.30%2bdfsg-6.debian.tar.xz' tar_1.30+dfsg-6.debian.tar.xz 22124 SHA256:b7caae6287992536353413e7a9b21301b29c32066bb6f36b7190074af9dd5c50
+$ apt-get source -qq --print-uris tar=1.30+dfsg-6+deb10u1
+'http://deb.debian.org/debian-security/pool/updates/main/t/tar/tar_1.30%2bdfsg-6%2bdeb10u1.dsc' tar_1.30+dfsg-6+deb10u1.dsc 2027 SHA256:e113c87abc8a1e252b4b7e5cfe9e5d9c3621eeb9acd950f02cf8ed6fe5a3f2f3
+'http://deb.debian.org/debian-security/pool/updates/main/t/tar/tar_1.30%2bdfsg.orig.tar.xz' tar_1.30+dfsg.orig.tar.xz 1883220 SHA256:c02f3747ffe02017878303dde8b78e79cd220364c5e8048cf92320232e38912d
+'http://deb.debian.org/debian-security/pool/updates/main/t/tar/tar_1.30%2bdfsg-6%2bdeb10u1.debian.tar.xz' tar_1.30+dfsg-6+deb10u1.debian.tar.xz 22864 SHA256:ac217f71b5f978a57a2bdc10b8da236f22931c6941a73b060f7c4ba9f7c5277b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tar/1.30+dfsg-6/ (for browsing the source)
-- https://sources.debian.net/src/tar/1.30+dfsg-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tar/1.30+dfsg-6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tar/1.30+dfsg-6+deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/tar/1.30+dfsg-6+deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tar/1.30+dfsg-6+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tiff=4.1.0+git191117-2~deb10u8`
+### `dpkg` source package: `tiff=4.1.0+git191117-2~deb10u9`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.1.0+git191117-2~deb10u8`
+- `libtiff5:amd64=4.1.0+git191117-2~deb10u9`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
@@ -3175,17 +3182,17 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff=4.1.0+git191117-2~deb10u8
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.1.0%2bgit191117-2%7edeb10u8.dsc' tiff_4.1.0+git191117-2~deb10u8.dsc 2274 SHA256:fe9bb494ce22d6a3533dd76560369da547572b28265e234ad91891d7c210f17b
+$ apt-get source -qq --print-uris tiff=4.1.0+git191117-2~deb10u9
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.1.0%2bgit191117-2%7edeb10u9.dsc' tiff_4.1.0+git191117-2~deb10u9.dsc 2303 SHA256:b06ed60ad26cdafecac3a52eb201165cfe017890f21fe192358be22f409157b5
 'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.1.0%2bgit191117.orig.tar.xz' tiff_4.1.0+git191117.orig.tar.xz 1533524 SHA256:67e1d045e994adb7144b0cca228d70dd6d520aaf8c75c342064bc0fd601e6e42
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.1.0%2bgit191117-2%7edeb10u8.debian.tar.xz' tiff_4.1.0+git191117-2~deb10u8.debian.tar.xz 45552 SHA256:a60b7afdcd7ffc49ca79fa685a473c2cd5ad6677d5443dac9792b1cce88f5ffd
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.1.0%2bgit191117-2%7edeb10u9.debian.tar.xz' tiff_4.1.0+git191117-2~deb10u9.debian.tar.xz 46040 SHA256:dc9c3c9cd0a883670dc99f920f396ead717159240474ba7631ec9f7057e77133
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tiff/4.1.0+git191117-2~deb10u8/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.1.0+git191117-2~deb10u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.1.0+git191117-2~deb10u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tiff/4.1.0+git191117-2~deb10u9/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.1.0+git191117-2~deb10u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.1.0+git191117-2~deb10u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2021a-0+deb10u12`
 
