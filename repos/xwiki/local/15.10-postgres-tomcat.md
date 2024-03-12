@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:04a8166aea49a184bde3aae1450ec5e1d9bad6a318f77baf282ea145747bca2c`
-- Created: `2024-02-09T16:20:44Z`
+- Image ID: `sha256:9bbb727f5a7b72ea3813e55d294b85e94d3a97b18ba4ae1250aada1ff60fb5e9`
+- Created: `2024-03-08T08:40:14Z`
 - Virtual Size: ~ 1.19 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -23,9 +23,14 @@
   - `TOMCAT_MAJOR=9`
   - `TOMCAT_VERSION=9.0.86`
   - `TOMCAT_SHA512=e8a8000dbeba5ee266ec4bf77217574364ffd114c8b913816f2e7a5e4eab4d01d0be3f05c8fccefcb5c5d770308efe1983be80279b6ef6d122d6183288a8ee9c`
-  - `XWIKI_VERSION=15.10.6`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.10.6`
-  - `XWIKI_DOWNLOAD_SHA256=1491cbfd91d8fe7362c65d01ade6ce36ce7a8adfa4b99e4f339783771d8ab675`
+  - `XWIKI_VERSION=15.10.7`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.10.7`
+  - `XWIKI_DOWNLOAD_SHA256=7333e4459754a78b655ed6bdf7633229a750dbe9e92f7dd46fa217f4cf817669`
+  - `POSTGRES_JDBC_VERSION=42.7.2`
+  - `POSTGRES_JDBC_SHA256=0c244ac7d02cf89d8e29852eace6595d75bc4d78581b85b2768460081646a57b`
+  - `POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.2`
+  - `POSTGRES_JDBC_ARTIFACT=postgresql-42.7.2.jar`
+  - `POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.2.jar`
 - Labels:
   - `org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki`
@@ -466,11 +471,11 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.1.debian.tar.xz' coreutils_8.32-4.1ubuntu1.1.debian.tar.xz 43872 SHA512:939c55b25f5496124a5590a1220fcff39a4eb78bf226a56c2ae57d21de7cfd9c971bb257725ddacab03f5f8c2a9941ce51bdec2c6e5c04bf55bfe8ec6ed78d4c
 ```
 
-### `dpkg` source package: `cups=2.4.1op1-1ubuntu4.7`
+### `dpkg` source package: `cups=2.4.1op1-1ubuntu4.8`
 
 Binary Packages:
 
-- `libcups2:amd64=2.4.1op1-1ubuntu4.7`
+- `libcups2:amd64=2.4.1op1-1ubuntu4.8`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -484,10 +489,10 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cups=2.4.1op1-1ubuntu4.7
-'http://security.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.7.dsc' cups_2.4.1op1-1ubuntu4.7.dsc 3135 SHA512:e45b8d6691f42d3946540edd28747edccc4409aeec0e759cf777bd4c3207715dc32efef5b62b7eec4c75d4c84f1883596d1709d4bba265f51bdfa8b688dd5b6e
-'http://security.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1.orig.tar.gz' cups_2.4.1op1.orig.tar.gz 8113914 SHA512:74e83728fcc3baf709176442b26711250fd4d4ede1e81e35b02a5607711067e28cd5a05d5bc3337953f6b2236c5a429b13f3a7f1218a08a2d3c30a8c9b0d96fd
-'http://security.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.7.debian.tar.xz' cups_2.4.1op1-1ubuntu4.7.debian.tar.xz 357988 SHA512:be0569e54882c139044c4679e4ecaeabafa91e379a274f0ab39305cdd1223b5db97b9d96f8744dcb161f2a3ea59644f21d860d92d8c92c79b4d25b1f8d6c79ac
+$ apt-get source -qq --print-uris cups=2.4.1op1-1ubuntu4.8
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.8.dsc' cups_2.4.1op1-1ubuntu4.8.dsc 2495 SHA512:2826bb1a5a2b3f326f08a40ab48cfe8929086fdf03499f63689f268ca7e5c02629c4955f661b42b3aeffd7b8907816fa1e6cd73ad805a88cb123094fb44c995d
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1.orig.tar.gz' cups_2.4.1op1.orig.tar.gz 8113914 SHA512:74e83728fcc3baf709176442b26711250fd4d4ede1e81e35b02a5607711067e28cd5a05d5bc3337953f6b2236c5a429b13f3a7f1218a08a2d3c30a8c9b0d96fd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.8.debian.tar.xz' cups_2.4.1op1-1ubuntu4.8.debian.tar.xz 358172 SHA512:488e4fa5b6c8ddaea383cae2e320f98ab8f2e072f0a5e886f697df257869b94455cab6849a393e4c156000a9450c5ff677c368f8c0d0407a3800e1153a2f27aa
 ```
 
 ### `dpkg` source package: `curl=7.81.0-1ubuntu1.15`
