@@ -1,7 +1,7 @@
 ## `openjdk:22-slim-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:52e0fada5c1be2ad59dbf98106d5bdc2f6c00a6fa55df01e5e6274daef7ce68c
+$ docker pull openjdk@sha256:f6cbd1308d32d37f6acafe9ad4876a42138e9088a1cff05fec63da8a6361f28f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,19 +14,19 @@ $ docker pull openjdk@sha256:52e0fada5c1be2ad59dbf98106d5bdc2f6c00a6fa55df01e5e6
 ### `openjdk:22-slim-bullseye` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:7b19d4e4bfe77116825ae4a8d1ec7bf886c603263d1eb3f415a7329fdb83b4d4
+$ docker pull openjdk@sha256:fc0aad82f8d4f4be2674eec80ad957162e45bd3cc3f448107ca68ae2d2db6269
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.9 MB (235932424 bytes)**  
+-	Total Size: **235.9 MB (235932449 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ac9f2b3cdd7bcef5e873898c0f67492ad1aa5626479a6c895729307e895f994`
+-	Image ID: `sha256:d1ba8146224113be7d414ba33fd53f0e0742b4d953eb1f5368b76f63cbe08fa9`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Tue, 13 Feb 2024 00:37:43 GMT
-ADD file:40ad95eaf61b2797e8d2282bc2388bce34c3c24ed78e694695a8c3dbcd3ddbbb in / 
-# Tue, 13 Feb 2024 00:37:44 GMT
+# Fri, 16 Feb 2024 19:48:24 GMT
+ADD file:3cd55ecee0ffd78be95dd5842ecd3171631aaccaae50fe41f6bf60ad5be6aaa9 in / 
+# Fri, 16 Feb 2024 19:48:24 GMT
 CMD ["bash"]
 # Fri, 16 Feb 2024 19:48:24 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/* # buildkit
@@ -45,40 +45,40 @@ CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:5d0aeceef7eeb53c3f853fb229ea7fd13a5a56f4ba371ca48f0477493046b702`  
-		Last Modified: Tue, 13 Feb 2024 00:42:47 GMT  
-		Size: 31.4 MB (31422425 bytes)  
+	-	`sha256:c0edef2937fa3b888b0cc3f9f5a4db00a1be6f297be5f057a77d738f91e675a0`  
+		Last Modified: Tue, 12 Mar 2024 01:26:20 GMT  
+		Size: 31.4 MB (31422489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8e1e78e441f29de5576190bdc5b323d8588fae3929e14b9582571bb7a5d262c`  
-		Last Modified: Sat, 17 Feb 2024 00:53:31 GMT  
-		Size: 1.6 MB (1581821 bytes)  
+	-	`sha256:b448f9faf2f16dd6d689fa1be319cd01db21bcc69a89a47494f34ae1fc3c056b`  
+		Last Modified: Tue, 12 Mar 2024 01:57:54 GMT  
+		Size: 1.6 MB (1581783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:370932126612274007a0bff7d7141aec9141c9cf404b8cd85b8b713fc0706dd9`  
-		Last Modified: Sat, 17 Feb 2024 00:53:33 GMT  
-		Size: 202.9 MB (202928178 bytes)  
+	-	`sha256:41063888bfa022203c7aec9b58c37cdf4c65b333cfebad67bd7f68d978016e02`  
+		Last Modified: Tue, 12 Mar 2024 01:57:58 GMT  
+		Size: 202.9 MB (202928177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `openjdk:22-slim-bullseye` - unknown; unknown
 
 ```console
-$ docker pull openjdk@sha256:6dcbb60f68d3bd1bd99010167e91f2e8b17342911dce9e80939938c45f80a61b
+$ docker pull openjdk@sha256:e52663c037fa11ac8c8dae95315bca9720bfdf0b5e62d007f14e26af5f94f35a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.7 MB (2654518 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3edcc5ce6271ce1584d74885534cad4324723336177a2576b861f239bdcf0009`
+-	Image ID: `sha256:f5a77eee97a767024dc12ddb358bb87c72f342567d53f573c992e604c8804580`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f725c252ec266244e17bde57a44c530f2653d7bc496ab6612e6c9c5708c24f7a`  
-		Last Modified: Sat, 17 Feb 2024 00:53:31 GMT  
+	-	`sha256:b982f3b0a8aa49fcf5eada769acbcefbd123b21cf644b86917f729afe1113efc`  
+		Last Modified: Tue, 12 Mar 2024 01:57:54 GMT  
 		Size: 2.6 MB (2637650 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ee7f45fb1fb94782b8fb838d5108bf96acb268cfe6912c16e55b00fdfc647315`  
-		Last Modified: Sat, 17 Feb 2024 00:53:31 GMT  
+	-	`sha256:da537cf6dfda49914aa7ca1f132f13b1e1fb8d6bc92e02fa241eb8ddb7316b9c`  
+		Last Modified: Tue, 12 Mar 2024 01:57:53 GMT  
 		Size: 16.9 KB (16868 bytes)  
 		MIME: application/vnd.in-toto+json
 
