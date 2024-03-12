@@ -46713,51 +46713,111 @@ $ docker pull elixir@sha256:6715f376c9a8756019a3be595d4bc2c081e954291f578b160d01
 
 ## `elixir:1.16.2`
 
-**does not exist** (yet?)
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:1.16.2-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:1.16.2-otp-24`
 
-**does not exist** (yet?)
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:1.16.2-otp-24-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:1.16.2-otp-24-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:1.16.2-otp-25`
 
-**does not exist** (yet?)
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:1.16.2-otp-25-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:1.16.2-otp-25-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:1.16.2-otp-26`
 
-**does not exist** (yet?)
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:1.16.2-otp-26-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:1.16.2-otp-26-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:1.16.2-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull elixir@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `elixir:alpine`
 
