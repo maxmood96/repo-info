@@ -1,7 +1,7 @@
 ## `buildpack-deps:bookworm-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:5ae09bb7361b140d5ba1afcca356fbf37afac93de1d5319339179e07c0098f77
+$ docker pull buildpack-deps@sha256:da13a0b5c77dc3e752cc9d9e185b9c09f2e2064d8e11218ffca5a57406a10bfc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -146,33 +146,33 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 ### `buildpack-deps:bookworm-curl` - linux; 386
 
 ```console
-$ docker pull buildpack-deps@sha256:3c1100581a915bcad3c65d416ffa5c59f9c6791b8f7ed13a0d6458a162d9e669
+$ docker pull buildpack-deps@sha256:7bfebc01b0982fb9874fe5bc61cb62bf8dba226d5fa3477f593bdad7502621f3
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.5 MB (75466339 bytes)**  
+-	Total Size: **75.5 MB (75466713 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aed05ae5df9ff35b46cdbf27e308cc5c8f0619b60a27b9b624f3682a6db147b1`
+-	Image ID: `sha256:a7410bad07bb558d5fe093b6a01893c3a2b26334e114a68a3644836299bf37f6`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 13 Feb 2024 00:38:44 GMT
-ADD file:e12b4798eb856f517a57dfe550811e57903589ffa74a09d47f7c0261e23ca645 in / 
-# Tue, 13 Feb 2024 00:38:44 GMT
+# Tue, 12 Mar 2024 00:57:47 GMT
+ADD file:4cc8d7cc52399e70fff26562034447d71192cc79b9dac9551bce3f3046ba905a in / 
+# Tue, 12 Mar 2024 00:57:48 GMT
 CMD ["bash"]
-# Tue, 13 Feb 2024 01:17:17 GMT
+# Tue, 12 Mar 2024 07:40:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:911275c2fc723590176bf48d32222d2b1299cd1a17294bdc4cebd96e25742b27`  
-		Last Modified: Tue, 13 Feb 2024 00:43:21 GMT  
-		Size: 50.6 MB (50581925 bytes)  
+	-	`sha256:76c347d52f9093273e46a420ef3def7fbe603accb8533dbef53629d661d7d464`  
+		Last Modified: Tue, 12 Mar 2024 01:02:18 GMT  
+		Size: 50.6 MB (50581859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a04ecbcf46d4507b6a8970b941f809a05d49cd1ac9402f7495e0cfbeac9fd1c9`  
-		Last Modified: Tue, 13 Feb 2024 01:29:22 GMT  
-		Size: 24.9 MB (24884414 bytes)  
+	-	`sha256:58451b255cbefff55ab1d06e4d8396e373e8deb00528e5b8f44a5575cb35e8a7`  
+		Last Modified: Tue, 12 Mar 2024 07:53:20 GMT  
+		Size: 24.9 MB (24884854 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:bookworm-curl` - linux; mips64le
