@@ -1,7 +1,7 @@
 ## `erlang:latest`
 
 ```console
-$ docker pull erlang@sha256:4fa277ab0843ca48ee6ce1a8f824eea15155b79bb402bc26a8fe3f6b2992e4e3
+$ docker pull erlang@sha256:5efa2199252791bf55ed3daf749d47e4b4b51d9f4d39c423934fdfb999eddfe3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18,14 +18,14 @@ $ docker pull erlang@sha256:4fa277ab0843ca48ee6ce1a8f824eea15155b79bb402bc26a8fe
 ### `erlang:latest` - linux; amd64
 
 ```console
-$ docker pull erlang@sha256:052a9c3a9ef758d3b68c8a278b7ce9dfa3c0e5a397cc1881454554d66d1dd838
+$ docker pull erlang@sha256:129238bf6df7040d5a4467cec03e4b8fc65b466cc57bde723c5b787a01c36ae6
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **603.1 MB (603145487 bytes)**  
+-	Total Size: **597.8 MB (597819745 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cae097dc58b0ede981ee289f1460335c328c8659b28bde953046e9e13ba9078c`
+-	Image ID: `sha256:c9b0c1394f86a48476d19bf39ec9388c6136c6d1074b957bfe33b0d5fd9001f3`
 -	Default Command: `["erl"]`
 
 ```dockerfile
@@ -39,19 +39,19 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 # Tue, 13 Feb 2024 01:22:09 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 21 Feb 2024 02:23:31 GMT
-ENV OTP_VERSION=26.2.2 REBAR3_VERSION=3.22.1
-# Wed, 21 Feb 2024 02:23:31 GMT
-LABEL org.opencontainers.image.version=26.2.2
-# Wed, 21 Feb 2024 02:32:59 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="93c09aa8814018c23d218ac68b2bcdba188e12086223fbfa08af5cc70edd7ee1" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Wed, 21 Feb 2024 02:33:01 GMT
+# Mon, 11 Mar 2024 23:51:47 GMT
+ENV OTP_VERSION=26.2.3 REBAR3_VERSION=3.22.1
+# Mon, 11 Mar 2024 23:51:47 GMT
+LABEL org.opencontainers.image.version=26.2.3
+# Tue, 12 Mar 2024 00:01:39 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="7a79e7955890b06572dbb3c3460771a71f729c15bc6ced018916a432669fd239" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
+# Tue, 12 Mar 2024 00:01:41 GMT
 CMD ["erl"]
-# Wed, 21 Feb 2024 02:33:01 GMT
+# Tue, 12 Mar 2024 00:01:41 GMT
 ENV REBAR_VERSION=2.6.4
-# Wed, 21 Feb 2024 02:33:05 GMT
+# Tue, 12 Mar 2024 00:01:45 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Wed, 21 Feb 2024 02:33:23 GMT
+# Tue, 12 Mar 2024 00:02:03 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="2855b5784300865d2e43cb7a135cb2bba144cf15214c619065b918afc8cc6eb9" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
@@ -72,17 +72,17 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Last Modified: Tue, 13 Feb 2024 01:31:35 GMT  
 		Size: 211.1 MB (211120435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a0eb7d55dbe8c994a0b82a9b95148c2dfa7c7139159d977ba79d6a850e27efc8`  
-		Last Modified: Wed, 21 Feb 2024 03:23:52 GMT  
-		Size: 253.3 MB (253302317 bytes)  
+	-	`sha256:8d8a4d027ce222ae06eeb4177bde6223cb75c056b21eb0a8d139d24b34f11521`  
+		Last Modified: Tue, 12 Mar 2024 00:15:43 GMT  
+		Size: 248.0 MB (247976571 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bd6e5d197f08e738e4b3c6024146ceebd356ddbd51732d07042b198ceafbfb1`  
-		Last Modified: Wed, 21 Feb 2024 03:23:22 GMT  
-		Size: 195.0 KB (194955 bytes)  
+	-	`sha256:b9169058cc4f907389a5451af299fdae5cda53dee7198e6f95bc379852746509`  
+		Last Modified: Tue, 12 Mar 2024 00:15:15 GMT  
+		Size: 194.9 KB (194950 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:521c3902820f2cf594aa73dd4888684e9da59c87a0b4ca680969030930a7dde2`  
-		Last Modified: Wed, 21 Feb 2024 03:23:22 GMT  
-		Size: 788.3 KB (788270 bytes)  
+	-	`sha256:582c83cb6c28354bc0889316c79315fa8b6e4b49a96f89c3c69c648c59f9e2bf`  
+		Last Modified: Tue, 12 Mar 2024 00:15:15 GMT  
+		Size: 788.3 KB (788279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:latest` - linux; arm variant v5
@@ -158,14 +158,14 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:latest` - linux; arm variant v7
 
 ```console
-$ docker pull erlang@sha256:0dac5d970c437b03ce9bf964cd39e76cd2a339aaff2c64a2a935aea7cf4482f3
+$ docker pull erlang@sha256:70802829e3422d61cadd00493265e4c9d89e5bbc804b7dcea61dc0827f35f28e
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **526.5 MB (526454790 bytes)**  
+-	Total Size: **521.4 MB (521449824 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76440082f36b83502a5f6c1306f4443999f56a80671a3dfcd2114ee9c697253b`
+-	Image ID: `sha256:82eccbf5507e7f37afeff7e5f5d23f1e8a0c5b6262d0bd09677e6ea0d657b181`
 -	Default Command: `["erl"]`
 
 ```dockerfile
@@ -179,19 +179,19 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 # Tue, 13 Feb 2024 04:15:43 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 21 Feb 2024 01:40:07 GMT
-ENV OTP_VERSION=26.2.2 REBAR3_VERSION=3.22.1
-# Wed, 21 Feb 2024 01:40:08 GMT
-LABEL org.opencontainers.image.version=26.2.2
-# Wed, 21 Feb 2024 01:54:33 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="93c09aa8814018c23d218ac68b2bcdba188e12086223fbfa08af5cc70edd7ee1" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Wed, 21 Feb 2024 01:54:35 GMT
+# Mon, 11 Mar 2024 22:58:27 GMT
+ENV OTP_VERSION=26.2.3 REBAR3_VERSION=3.22.1
+# Mon, 11 Mar 2024 22:58:27 GMT
+LABEL org.opencontainers.image.version=26.2.3
+# Mon, 11 Mar 2024 23:06:03 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="7a79e7955890b06572dbb3c3460771a71f729c15bc6ced018916a432669fd239" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
+# Mon, 11 Mar 2024 23:06:06 GMT
 CMD ["erl"]
-# Wed, 21 Feb 2024 01:54:35 GMT
+# Mon, 11 Mar 2024 23:06:06 GMT
 ENV REBAR_VERSION=2.6.4
-# Wed, 21 Feb 2024 01:54:42 GMT
+# Mon, 11 Mar 2024 23:06:12 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Wed, 21 Feb 2024 01:55:18 GMT
+# Mon, 11 Mar 2024 23:06:36 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="2855b5784300865d2e43cb7a135cb2bba144cf15214c619065b918afc8cc6eb9" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
@@ -212,17 +212,17 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Last Modified: Tue, 13 Feb 2024 04:28:07 GMT  
 		Size: 175.1 MB (175089000 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf3b17b51ce018d81ceeb933d91795f45d851ca4ad166d50ad61541edd14b873`  
-		Last Modified: Wed, 21 Feb 2024 03:18:28 GMT  
-		Size: 224.1 MB (224065658 bytes)  
+	-	`sha256:13049149940f8e88b6bbb0e8eb2cc473312944948ebebc0a3ecab070ab35ded6`  
+		Last Modified: Mon, 11 Mar 2024 23:18:14 GMT  
+		Size: 219.1 MB (219060676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69137e4f25ce30c28d17bf198e5bf0992e3f587002e83f6f666650924a6a49fa`  
-		Last Modified: Wed, 21 Feb 2024 03:17:41 GMT  
-		Size: 195.0 KB (194983 bytes)  
+	-	`sha256:ebc1c959dbc1af3407420db1a8bedf7d066b20f8095daf6abd7fe7493656f2b9`  
+		Last Modified: Mon, 11 Mar 2024 23:16:45 GMT  
+		Size: 195.0 KB (194985 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18e89b251b8a5ba436f2738dce1c54738803fdf39ed2a4602be89a6c3f21d10d`  
-		Last Modified: Wed, 21 Feb 2024 03:17:42 GMT  
-		Size: 788.3 KB (788264 bytes)  
+	-	`sha256:2a0ff1bc31334574311cad31c7efb825465faf21f1386ae07c884c39042aa4e6`  
+		Last Modified: Mon, 11 Mar 2024 23:16:45 GMT  
+		Size: 788.3 KB (788278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:latest` - linux; arm64 variant v8
@@ -298,14 +298,14 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ### `erlang:latest` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:26f88b2f4e2347ac05bc29d0a26271970e8430a063bb8bdc0e726718f073ba7e
+$ docker pull erlang@sha256:6368fa63ecbac168976e18b436bac8bd14a182ae855179c4ee2269d4944fff28
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **599.4 MB (599400016 bytes)**  
+-	Total Size: **594.3 MB (594275130 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3145638a0236432627ea910c561319e055284a0419d42e1a483390c655c9d2e8`
+-	Image ID: `sha256:3b634a185ef6ac713fc550088160dd6f96316fbbdaec36d1fe567002b04bdc01`
 -	Default Command: `["erl"]`
 
 ```dockerfile
@@ -319,19 +319,19 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 # Tue, 13 Feb 2024 01:19:00 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 21 Feb 2024 02:29:34 GMT
-ENV OTP_VERSION=26.2.2 REBAR3_VERSION=3.22.1
-# Wed, 21 Feb 2024 02:29:34 GMT
-LABEL org.opencontainers.image.version=26.2.2
-# Wed, 21 Feb 2024 02:44:09 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="93c09aa8814018c23d218ac68b2bcdba188e12086223fbfa08af5cc70edd7ee1" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Wed, 21 Feb 2024 02:44:11 GMT
+# Mon, 11 Mar 2024 22:58:37 GMT
+ENV OTP_VERSION=26.2.3 REBAR3_VERSION=3.22.1
+# Mon, 11 Mar 2024 22:58:38 GMT
+LABEL org.opencontainers.image.version=26.2.3
+# Mon, 11 Mar 2024 23:13:36 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="7a79e7955890b06572dbb3c3460771a71f729c15bc6ced018916a432669fd239" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
+# Mon, 11 Mar 2024 23:13:37 GMT
 CMD ["erl"]
-# Wed, 21 Feb 2024 02:44:11 GMT
+# Mon, 11 Mar 2024 23:13:37 GMT
 ENV REBAR_VERSION=2.6.4
-# Wed, 21 Feb 2024 02:44:17 GMT
+# Mon, 11 Mar 2024 23:13:44 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Wed, 21 Feb 2024 02:44:51 GMT
+# Mon, 11 Mar 2024 23:14:19 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="2855b5784300865d2e43cb7a135cb2bba144cf15214c619065b918afc8cc6eb9" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
@@ -352,30 +352,30 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Last Modified: Tue, 13 Feb 2024 01:30:38 GMT  
 		Size: 210.0 MB (210046749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c3e3b70d4d4ed2c4a08438a28ba7fde27d947bd98e5e0b1d2f8b2f4c2f36f90`  
-		Last Modified: Wed, 21 Feb 2024 04:07:00 GMT  
-		Size: 246.9 MB (246916937 bytes)  
+	-	`sha256:a238d7e7588b566d4bf998facce45e60b171a30c49ecdf1cfef14e44ac0b9019`  
+		Last Modified: Mon, 11 Mar 2024 23:38:22 GMT  
+		Size: 241.8 MB (241791931 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9dfe54ece531a96d9221af4040b3864c54c6b03630309dfe407253f44aa7a906`  
-		Last Modified: Wed, 21 Feb 2024 04:06:14 GMT  
-		Size: 194.9 KB (194883 bytes)  
+	-	`sha256:3fbf11b2a9d83240d030f47f6fab2397730c2f418be9bbccef3afdc0a8dd3b78`  
+		Last Modified: Mon, 11 Mar 2024 23:35:59 GMT  
+		Size: 195.0 KB (194997 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf1ead44aabf4a31c29a60b725d61a5a5f3d9d2f1bdaacec2fddb6986ec59dd0`  
-		Last Modified: Wed, 21 Feb 2024 04:06:14 GMT  
-		Size: 788.3 KB (788272 bytes)  
+	-	`sha256:473dd0fe4fd76351c6172a1d028e688b6b9c7aac575b3b25c64c42478d517e91`  
+		Last Modified: Mon, 11 Mar 2024 23:35:59 GMT  
+		Size: 788.3 KB (788278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:latest` - linux; mips64le
 
 ```console
-$ docker pull erlang@sha256:6858a1ff096dd127d47f3d2a2e8d5dcf71330d6d8a1fa99c09feac0851485302
+$ docker pull erlang@sha256:0c24f54e5dbc69c7a65f3757ef219db0f5142cb2f98d09b47ae218419a5d6305
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **552.9 MB (552880646 bytes)**  
+-	Total Size: **547.5 MB (547546479 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9645f09c05adb11569b4dc05c3849e684d3c7fb67db86a72f55229a597919d7`
+-	Image ID: `sha256:bdcd0fefc6d51f2988ea9b8b4f688d8935c0a12091dc7e8383f141022b72c4c6`
 -	Default Command: `["erl"]`
 
 ```dockerfile
@@ -389,19 +389,19 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 # Tue, 13 Feb 2024 03:51:22 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 21 Feb 2024 02:21:51 GMT
-ENV OTP_VERSION=26.2.2 REBAR3_VERSION=3.22.1
-# Wed, 21 Feb 2024 02:21:57 GMT
-LABEL org.opencontainers.image.version=26.2.2
-# Wed, 21 Feb 2024 03:01:12 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="93c09aa8814018c23d218ac68b2bcdba188e12086223fbfa08af5cc70edd7ee1" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Wed, 21 Feb 2024 03:01:23 GMT
+# Mon, 11 Mar 2024 23:15:16 GMT
+ENV OTP_VERSION=26.2.3 REBAR3_VERSION=3.22.1
+# Mon, 11 Mar 2024 23:15:22 GMT
+LABEL org.opencontainers.image.version=26.2.3
+# Mon, 11 Mar 2024 23:53:44 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="7a79e7955890b06572dbb3c3460771a71f729c15bc6ced018916a432669fd239" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
+# Mon, 11 Mar 2024 23:53:54 GMT
 CMD ["erl"]
-# Wed, 21 Feb 2024 03:01:31 GMT
+# Mon, 11 Mar 2024 23:54:02 GMT
 ENV REBAR_VERSION=2.6.4
-# Wed, 21 Feb 2024 03:01:58 GMT
+# Mon, 11 Mar 2024 23:54:29 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Wed, 21 Feb 2024 03:03:47 GMT
+# Mon, 11 Mar 2024 23:56:12 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="2855b5784300865d2e43cb7a135cb2bba144cf15214c619065b918afc8cc6eb9" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
@@ -422,30 +422,30 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Last Modified: Tue, 13 Feb 2024 04:23:34 GMT  
 		Size: 189.7 MB (189709673 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba79309fba2b9d54dac2d91d70c1fb694ccb949ea71eeaca1e25f82b128f08a6`  
-		Last Modified: Wed, 21 Feb 2024 06:21:16 GMT  
-		Size: 226.0 MB (226028004 bytes)  
+	-	`sha256:094404f538734ac069d1fe143bd069541e8dae95b7660949c6f7120cef8f7ab6`  
+		Last Modified: Tue, 12 Mar 2024 00:24:21 GMT  
+		Size: 220.7 MB (220693804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:edd4e3372693e69280b2063c47a59fc4e6593674e767e3af0afd48628a62ce76`  
-		Last Modified: Wed, 21 Feb 2024 06:19:01 GMT  
-		Size: 194.9 KB (194912 bytes)  
+	-	`sha256:36299e87256a3730ac38eccf5154d6781de288d0ef43ff7ad35078f9622ab311`  
+		Last Modified: Tue, 12 Mar 2024 00:22:14 GMT  
+		Size: 194.9 KB (194939 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0288269ad4362d5e721e6c1cbe2a8084f769a0e9e43b0d2e2d7909c4b102d65a`  
-		Last Modified: Wed, 21 Feb 2024 06:19:02 GMT  
-		Size: 788.2 KB (788199 bytes)  
+	-	`sha256:8482a4dbbe894e2e8a0e98e18ef53e2254d9d572b81ed5337a79417700fb499f`  
+		Last Modified: Tue, 12 Mar 2024 00:22:15 GMT  
+		Size: 788.2 KB (788205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:latest` - linux; ppc64le
 
 ```console
-$ docker pull erlang@sha256:cd48074f421ef893d45e3d21435bd74c20def780446760545d4017fa9034ccca
+$ docker pull erlang@sha256:4a4160ba89f0ae6d8709be447e8a671e956023ad348b7f90cfef049356ed9062
 ```
 
 -	Docker Version: 20.10.26
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **613.6 MB (613583331 bytes)**  
+-	Total Size: **608.3 MB (608284391 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f848b6c872d5cd4e4eed64645ccbe87b2ad40069081de79acc16ec5debc161d0`
+-	Image ID: `sha256:06b5842771d2423df05ced399c87ba1a0149dc094f0d3d0676e0688daa00727c`
 -	Default Command: `["erl"]`
 
 ```dockerfile
@@ -459,19 +459,19 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 # Tue, 13 Feb 2024 07:23:07 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 21 Feb 2024 01:40:42 GMT
-ENV OTP_VERSION=26.2.2 REBAR3_VERSION=3.22.1
-# Wed, 21 Feb 2024 01:40:43 GMT
-LABEL org.opencontainers.image.version=26.2.2
-# Wed, 21 Feb 2024 01:48:48 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="93c09aa8814018c23d218ac68b2bcdba188e12086223fbfa08af5cc70edd7ee1" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Wed, 21 Feb 2024 01:48:52 GMT
+# Mon, 11 Mar 2024 23:33:29 GMT
+ENV OTP_VERSION=26.2.3 REBAR3_VERSION=3.22.1
+# Mon, 11 Mar 2024 23:33:29 GMT
+LABEL org.opencontainers.image.version=26.2.3
+# Mon, 11 Mar 2024 23:47:14 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="7a79e7955890b06572dbb3c3460771a71f729c15bc6ced018916a432669fd239" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
+# Mon, 11 Mar 2024 23:47:21 GMT
 CMD ["erl"]
-# Wed, 21 Feb 2024 01:48:53 GMT
+# Mon, 11 Mar 2024 23:47:23 GMT
 ENV REBAR_VERSION=2.6.4
-# Wed, 21 Feb 2024 01:49:00 GMT
+# Mon, 11 Mar 2024 23:47:34 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Wed, 21 Feb 2024 01:49:37 GMT
+# Mon, 11 Mar 2024 23:48:15 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="2855b5784300865d2e43cb7a135cb2bba144cf15214c619065b918afc8cc6eb9" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
@@ -492,30 +492,30 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Last Modified: Tue, 13 Feb 2024 07:37:13 GMT  
 		Size: 214.2 MB (214151358 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bf2dcbe809981aaabbd9ac74cff411569ac054ac295afe42a7a72f629af5b77`  
-		Last Modified: Wed, 21 Feb 2024 02:40:52 GMT  
-		Size: 249.6 MB (249614682 bytes)  
+	-	`sha256:2e8c31a367af638f8791dac0849f5bc97d3bd8a9e41a341ede3458f298c6aba5`  
+		Last Modified: Tue, 12 Mar 2024 00:07:32 GMT  
+		Size: 244.3 MB (244315724 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afa17a33f88ea89a54f45d8136388ed131e2a0e4ff3cb2e1b84c0b4d251fa1a6`  
-		Last Modified: Wed, 21 Feb 2024 02:40:17 GMT  
-		Size: 195.0 KB (194990 bytes)  
+	-	`sha256:a074934cb9b7314d1c5762a7dcaeeb3f9c85177f663b56af15f9d308f90f26ea`  
+		Last Modified: Tue, 12 Mar 2024 00:06:58 GMT  
+		Size: 195.0 KB (195000 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6baaf52a76cc343b0a3616879c9dfdde530d54e720104a7685e12571b6a59c11`  
-		Last Modified: Wed, 21 Feb 2024 02:40:17 GMT  
-		Size: 788.3 KB (788270 bytes)  
+	-	`sha256:cc44c0cf5bf08d1d7b95c53df89f7c0fab98658ce251cdd8a81cb9e3099ee5c8`  
+		Last Modified: Tue, 12 Mar 2024 00:06:59 GMT  
+		Size: 788.3 KB (788278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:latest` - linux; s390x
 
 ```console
-$ docker pull erlang@sha256:3f4c3c95c6460de29113b79fd4a7678e63f632f71ec7b17396672ff0c6b2d2b5
+$ docker pull erlang@sha256:237e10a773f1f6f9c669d2fe7a75c61cb01b23030168100332eb94a30964e245
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **558.0 MB (557954366 bytes)**  
+-	Total Size: **552.5 MB (552526680 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6951af49e3b1ca3e37053da781f3673872644b2927d7ce0002ea087433b7ed35`
+-	Image ID: `sha256:39944ffea735e700956481da8a1a6d9074d812746c7124ac562e5ca38549548d`
 -	Default Command: `["erl"]`
 
 ```dockerfile
@@ -529,19 +529,19 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 # Tue, 13 Feb 2024 02:25:44 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 21 Feb 2024 02:22:00 GMT
-ENV OTP_VERSION=26.2.2 REBAR3_VERSION=3.22.1
-# Wed, 21 Feb 2024 02:22:00 GMT
-LABEL org.opencontainers.image.version=26.2.2
-# Wed, 21 Feb 2024 02:29:21 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="93c09aa8814018c23d218ac68b2bcdba188e12086223fbfa08af5cc70edd7ee1" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Wed, 21 Feb 2024 02:29:37 GMT
+# Mon, 11 Mar 2024 23:45:30 GMT
+ENV OTP_VERSION=26.2.3 REBAR3_VERSION=3.22.1
+# Mon, 11 Mar 2024 23:45:30 GMT
+LABEL org.opencontainers.image.version=26.2.3
+# Mon, 11 Mar 2024 23:52:40 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="7a79e7955890b06572dbb3c3460771a71f729c15bc6ced018916a432669fd239" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
+# Mon, 11 Mar 2024 23:52:49 GMT
 CMD ["erl"]
-# Wed, 21 Feb 2024 02:29:37 GMT
+# Mon, 11 Mar 2024 23:52:49 GMT
 ENV REBAR_VERSION=2.6.4
-# Wed, 21 Feb 2024 02:29:41 GMT
+# Mon, 11 Mar 2024 23:52:53 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Wed, 21 Feb 2024 02:30:02 GMT
+# Mon, 11 Mar 2024 23:53:14 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="2855b5784300865d2e43cb7a135cb2bba144cf15214c619065b918afc8cc6eb9" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
 ```
 
@@ -562,15 +562,15 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Last Modified: Tue, 13 Feb 2024 02:58:47 GMT  
 		Size: 183.2 MB (183169094 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6749ae5e5b6252d6d71046839ef04429ffeb698c792112b6a6e361bf9e214137`  
-		Last Modified: Wed, 21 Feb 2024 03:21:59 GMT  
-		Size: 238.7 MB (238716001 bytes)  
+	-	`sha256:2a440ed54063b84467a2cbe29f656d8d6297b3ae1a9408cf522347cccd8a88a6`  
+		Last Modified: Tue, 12 Mar 2024 00:14:26 GMT  
+		Size: 233.3 MB (233288245 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c0782f750ec8c32be877d4a160c1cde9f22bb16389d7111cba83e2c915715d0`  
-		Last Modified: Wed, 21 Feb 2024 03:21:32 GMT  
-		Size: 194.9 KB (194930 bytes)  
+	-	`sha256:88642b6928c10cf360ab7ddfeb84f896fcf738554d8df1af165989d9c581dff3`  
+		Last Modified: Tue, 12 Mar 2024 00:14:00 GMT  
+		Size: 195.0 KB (194994 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9217f1940ebb01e73b88d8734cc37fb995d4bbbb5f39cd622d77345b434615d`  
-		Last Modified: Wed, 21 Feb 2024 03:21:32 GMT  
-		Size: 788.3 KB (788272 bytes)  
+	-	`sha256:12bde251152c6fd9c7934174fb3fc55d9e923fc8743fc51d376c20e5b606f2f9`  
+		Last Modified: Tue, 12 Mar 2024 00:14:00 GMT  
+		Size: 788.3 KB (788278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
