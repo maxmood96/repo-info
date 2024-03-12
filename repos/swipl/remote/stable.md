@@ -1,7 +1,7 @@
 ## `swipl:stable`
 
 ```console
-$ docker pull swipl@sha256:0e4a42478c23f10bb80c1c258162b95ab41a32ae6d30822c759c0d26cf5d7f76
+$ docker pull swipl@sha256:72e6880122d7f9a9ece3405418839b60a7d631b8ebf959780089e5c666ef286a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,19 +16,19 @@ $ docker pull swipl@sha256:0e4a42478c23f10bb80c1c258162b95ab41a32ae6d30822c759c0
 ### `swipl:stable` - linux; amd64
 
 ```console
-$ docker pull swipl@sha256:368f940fe90ffab84bb1c8f2803054504ab5506709969f7d30434865a1d35648
+$ docker pull swipl@sha256:0a6bf341527554126301cba364987978118f1fb7f7dac7d423bd781c5235be4e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.5 MB (96471872 bytes)**  
+-	Total Size: **96.5 MB (96469156 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b288f3ce883cc15a8ef73963cfbf86ea27f564468b440cb9a1be1b36e2ddbeb4`
+-	Image ID: `sha256:3d59ac21a11b7f814c50b5d2515297a1bbc9f1f285aefdeeb4e64aae98336c66`
 -	Default Command: `["swipl"]`
 
 ```dockerfile
-# Tue, 13 Feb 2024 00:37:22 GMT
-ADD file:eb6a3def1f69e76655620640e610015f285bc23c97e89855feb1f0548309d518 in / 
-# Tue, 13 Feb 2024 00:37:22 GMT
+# Thu, 29 Feb 2024 11:46:50 GMT
+ADD file:b86ae1c7ca3586d8feedcd9ff1b2b1e8ab872caf6587618f1da689045a5d7ae4 in / 
+# Thu, 29 Feb 2024 11:46:50 GMT
 CMD ["bash"]
 # Thu, 29 Feb 2024 11:46:50 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Michael Hendricks <michael@ndrix.org>
@@ -43,41 +43,41 @@ CMD ["swipl"]
 ```
 
 -	Layers:
-	-	`sha256:e1caac4eb9d2ec24aa3618e5992208321a92492aef5fef5eb9e470895f771c56`  
-		Last Modified: Tue, 13 Feb 2024 00:42:02 GMT  
-		Size: 29.1 MB (29124091 bytes)  
+	-	`sha256:8a1e25ce7c4f75e372e9884f8f7b1bedcfe4a7a7d452eb4b0a1c7477c9a90345`  
+		Last Modified: Tue, 12 Mar 2024 01:25:41 GMT  
+		Size: 29.1 MB (29124181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1814e9a2e520c359c4ee964ad3874ce3e411d79071d85aeb558f6dc47d3ac47`  
-		Last Modified: Thu, 29 Feb 2024 20:00:54 GMT  
-		Size: 49.2 MB (49202835 bytes)  
+	-	`sha256:32836535bb266084fddec8f71490d9b48b54c62a9591557ff80e77c5888afc67`  
+		Last Modified: Tue, 12 Mar 2024 02:11:42 GMT  
+		Size: 49.2 MB (49202887 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5eeb27bc9361029f7b78aae9f2f73ca67ffdd7e8eb6aa75bf58b8b5de1a73b89`  
-		Last Modified: Thu, 29 Feb 2024 20:00:53 GMT  
-		Size: 18.1 MB (18144946 bytes)  
+	-	`sha256:a42a0f6ff4c8d42fbf278bb12de926fd075a6e3f734e81876012e139b14abfef`  
+		Last Modified: Tue, 12 Mar 2024 02:11:41 GMT  
+		Size: 18.1 MB (18142088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swipl:stable` - unknown; unknown
 
 ```console
-$ docker pull swipl@sha256:f862ef30bf6f98e066ad34bc1ab0b94c705e904ad26b299d22c81a827d2a3c98
+$ docker pull swipl@sha256:2a029bc6e4d7d20f54e9505e05bd63a0ece37e5e79705469d69ca63f87ef31e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3129935 bytes)**  
+-	Total Size: **3.1 MB (3129937 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:136edd601d6534ac356a296c00f031f9f1c9eec416387f0a057bfa6b1141e0a0`
+-	Image ID: `sha256:2992146764349cd9fc067080f07b16586b22180a6d5231d84735f931cd584d3f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b125062c1072b124538ffdfca2e3fe96c1b89e7ac8ef49a5449df00479ccbf2b`  
-		Last Modified: Thu, 29 Feb 2024 20:00:53 GMT  
+	-	`sha256:cbc36ee1c4be59e1d988bcc29aa189b3fb730c618a9332498e1481c5b4335dee`  
+		Last Modified: Tue, 12 Mar 2024 02:11:40 GMT  
 		Size: 3.1 MB (3112670 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cecb88851293d201611552e8247ada216f89a64ed79230b21a8c920cbc9ad2c9`  
-		Last Modified: Thu, 29 Feb 2024 20:00:52 GMT  
-		Size: 17.3 KB (17265 bytes)  
+	-	`sha256:610f6042afab438ed878ed6c191dd5dacf1f0fcec9737be7b09d5b87d34fcf5e`  
+		Last Modified: Tue, 12 Mar 2024 02:11:40 GMT  
+		Size: 17.3 KB (17267 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swipl:stable` - linux; arm variant v7
