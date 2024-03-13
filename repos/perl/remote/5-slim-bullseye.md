@@ -1,7 +1,7 @@
 ## `perl:5-slim-bullseye`
 
 ```console
-$ docker pull perl@sha256:496652a5f8a3e901520eff3b4bc3eb48638de79be97ba2683bdbded684f1f2e3
+$ docker pull perl@sha256:bb678baa68d827853552c6d7dac73d7359758fd0934cbfad55ac4c1294ef036a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -164,69 +164,69 @@ $ docker pull perl@sha256:5cb308c993620f0262c6e62d42a490e49db9a32272ccf0265347bc
 ### `perl:5-slim-bullseye` - linux; arm variant v7
 
 ```console
-$ docker pull perl@sha256:f6a748321778ee34b6435bf41e7314e88bfe12a824696737236aaf0aaf58fb80
+$ docker pull perl@sha256:60958cb7e48d74e0d13d44b6f862452fb2ec7b69982543a1f66a946eaaeaa019
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.6 MB (48573378 bytes)**  
+-	Total Size: **48.6 MB (48571044 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b27cc282559226de9c679d9ba77d5e249c757d6c92f9181677adab0f482b4c0`
+-	Image ID: `sha256:7151fb58490266bda6e287f362fbe7283d23b8bf68ed60704fcfd3e9b8e8d715`
 -	Default Command: `["perl5.38.2","-de0"]`
 
 ```dockerfile
-# Sat, 20 Jan 2024 20:51:34 GMT
-ADD file:8904abb8948cc1601202f5f3dd63ae52e3b980ac6acafff765b9424bfd5defef in / 
-# Sat, 20 Jan 2024 20:51:34 GMT
+# Fri, 23 Feb 2024 16:07:57 GMT
+ADD file:f0436b046c7a5f796efae4d2d2be5a99ad212807e4aa49fc8cc372a4c4c8c4b0 in / 
+# Fri, 23 Feb 2024 16:07:57 GMT
 CMD ["bash"]
-# Sat, 20 Jan 2024 20:51:34 GMT
+# Fri, 23 Feb 2024 16:07:57 GMT
 WORKDIR /usr/src/perl
-# Sat, 20 Jan 2024 20:51:34 GMT
+# Fri, 23 Feb 2024 16:07:57 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends        bzip2        ca-certificates        curl        dpkg-dev        gcc        libc6-dev        make        netbase        patch        zlib1g-dev        xz-utils        libssl-dev     && curl -fL https://cpan.metacpan.org/authors/id/P/PE/PEVANS/perl-5.38.2.tar.gz -o perl-5.38.2.tar.gz     && echo 'a0a31534451eb7b83c7d6594a497543a54d488bc90ca00f5e34762577f40655e *perl-5.38.2.tar.gz' | sha256sum --strict --check -     && tar --strip-components=1 -xaf perl-5.38.2.tar.gz -C /usr/src/perl     && rm perl-5.38.2.tar.gz     && cat *.patch | patch -p1     && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"     && archBits="$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)"     && archFlag="$([ "$archBits" = '64' ] && echo '-Duse64bitall' || echo '-Duse64bitint')"     && ./Configure -Darchname="$gnuArch" "$archFlag" -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -fLO https://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7047.tar.gz     && echo '963e63c6e1a8725ff2f624e9086396ae150db51dd0a337c3781d09a994af05a5 *App-cpanminus-1.7047.tar.gz' | sha256sum --strict --check -     && tar -xzf App-cpanminus-1.7047.tar.gz && cd App-cpanminus-1.7047 && perl bin/cpanm . && cd /root     && cpanm IO::Socket::SSL     && curl -fL https://raw.githubusercontent.com/skaji/cpm/0.997014/cpm -o /usr/local/bin/cpm     && echo 'ee525f2493e36c6f688eddabaf53a51c4d3b2a4ebaa81576ac8b9f78ab57f4a1 */usr/local/bin/cpm' | sha256sum --strict --check -     && chmod +x /usr/local/bin/cpm     && savedPackages="ca-certificates make netbase zlib1g-dev libssl-dev"     && apt-mark auto '.*' > /dev/null     && apt-mark manual $savedPackages     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && rm -fr /var/cache/apt/* /var/lib/apt/lists/*     && rm -fr /root/.cpanm /usr/src/perl /usr/src/App-cpanminus-1.7047* /tmp/*     && cpanm --version && cpm --version # buildkit
-# Sat, 20 Jan 2024 20:51:34 GMT
+# Fri, 23 Feb 2024 16:07:57 GMT
 WORKDIR /usr/src/app
-# Sat, 20 Jan 2024 20:51:34 GMT
+# Fri, 23 Feb 2024 16:07:57 GMT
 CMD ["perl5.38.2" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:7c57dc7cd6a5cd2a6636e8cbb774969d6394ce3ef35cb0d229f5cfbcd8ada61a`  
-		Last Modified: Tue, 13 Feb 2024 01:27:40 GMT  
-		Size: 26.6 MB (26582672 bytes)  
+	-	`sha256:5b16029f28c496dabb357a7310d24f957046a925411ccd44eca962c03f85e38e`  
+		Last Modified: Tue, 12 Mar 2024 01:04:23 GMT  
+		Size: 26.6 MB (26582714 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:747b2e1c3235665a1332104c30fd195ddf61f88a0958bcb327bcc0946161f473`  
-		Last Modified: Thu, 15 Feb 2024 05:13:49 GMT  
+	-	`sha256:475c25e9dac719893224a1cd5c8dc1762f32d0d860b64613e5a47f29710b6baf`  
+		Last Modified: Wed, 13 Mar 2024 01:25:53 GMT  
 		Size: 136.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e838fd760fc3f9107b8afadc37cff147aa1ea6063a4722902ae2e9f77d585fd`  
-		Last Modified: Thu, 15 Feb 2024 05:13:50 GMT  
-		Size: 22.0 MB (21990438 bytes)  
+	-	`sha256:0ab2aa915b2404ae6691730ac5ff4d6e76f878c84716458a645f1d3080792c50`  
+		Last Modified: Wed, 13 Mar 2024 01:25:54 GMT  
+		Size: 22.0 MB (21988061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bcea92181e0d344d29f75a0fd12d58804b623ea2da9aa0d3dc7f3a249b00f86`  
-		Last Modified: Thu, 15 Feb 2024 05:13:49 GMT  
-		Size: 132.0 B  
+	-	`sha256:937098cb6bea525d8ed6f2da85d5d40b73d302384b63af25de69776aa688cbab`  
+		Last Modified: Wed, 13 Mar 2024 01:25:54 GMT  
+		Size: 133.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `perl:5-slim-bullseye` - unknown; unknown
 
 ```console
-$ docker pull perl@sha256:587ae7ecf284bc48e9bfa9a06b938dfefa762e7ad26a0f4c7af1a4bfbc885a6c
+$ docker pull perl@sha256:eb1479f3da12a24c666834d9cb09ea37b2ef93f3f0392a3fe48ad82f89eb4c50
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3382090 bytes)**  
+-	Total Size: **3.9 MB (3902974 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a25e172c008968ee749769fe202588ed36456d6030f4afe8410be6521251406e`
+-	Image ID: `sha256:67a72cc6f543a9a6e8c7fd6dd080c2c4fc7465662b5f431174e8b3ec174504ee`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dc3e02a772913342a9fd425755f6da864805022aa2e9a2e4322d40a02bc374ec`  
-		Last Modified: Thu, 15 Feb 2024 05:13:50 GMT  
-		Size: 3.4 MB (3365806 bytes)  
+	-	`sha256:ad4ad0209d6cc6fe6cebf72490ac665edc17723186c30a2d6c5c573ae923f2ee`  
+		Last Modified: Wed, 13 Mar 2024 01:25:54 GMT  
+		Size: 3.9 MB (3886690 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:be5bd63f2cbb67261fbc30b02a9e3177b1450cadbee489315b9563fc8bf1f610`  
-		Last Modified: Thu, 15 Feb 2024 05:13:49 GMT  
+	-	`sha256:2663958f87528de82ad28b43e02677d1203fe6db6aa77883ba5237ceaacb7a1e`  
+		Last Modified: Wed, 13 Mar 2024 01:25:53 GMT  
 		Size: 16.3 KB (16284 bytes)  
 		MIME: application/vnd.in-toto+json
 
