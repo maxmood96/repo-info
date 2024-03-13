@@ -1,7 +1,7 @@
 ## `hylang:python3.8`
 
 ```console
-$ docker pull hylang@sha256:6ca02525de87986c2ed3fd6997415316c260f0f4858586fe9b652d226f35bcd1
+$ docker pull hylang@sha256:e2eb08cda57e7464fb4141502461d130d42a55da72995582b7d76ea0ca9baf01
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -232,18 +232,18 @@ $ docker pull hylang@sha256:672ff8e0fee17571f6ac5f16dc75fb3a7f4ffc0bceb89433cd35
 ### `hylang:python3.8` - linux; arm variant v7
 
 ```console
-$ docker pull hylang@sha256:e063b327e632097e33f58a8db230dbe1df90e65e9eda8d0697aeb3b48aabcc84
+$ docker pull hylang@sha256:5f6b7a24b03def97a91d89eb9b0d1d4ddd791e169bc02c976713c9d8c1a9623d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.4 MB (47415824 bytes)**  
+-	Total Size: **47.4 MB (47417769 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6602a72f353c3baf060de2e9f55ad1a681e01e4fcbfe5d473b91a3cf338c6211`
+-	Image ID: `sha256:5fb35d60cc95aeff6fcd4638251c44f52241089bda6a1dbc2b3cb7081072b90f`
 -	Default Command: `["hy"]`
 
 ```dockerfile
 # Fri, 05 Jan 2024 23:20:01 GMT
-ADD file:9766a0d12bded41ae2e7bcaa8d246afb6f5d5b6d2222e97193d07737d3f5b609 in / 
+ADD file:6c18cdac8d96366de6fc24521b972b80d34639ac5484f27a5d4e355fca934e5d in / 
 # Fri, 05 Jan 2024 23:20:01 GMT
 CMD ["bash"]
 # Fri, 05 Jan 2024 23:20:01 GMT
@@ -283,53 +283,53 @@ CMD ["hy"]
 ```
 
 -	Layers:
-	-	`sha256:7a5e2a926145215a27b5a8051ed294061243135af64539be80d4449e05f71f52`  
-		Last Modified: Tue, 13 Feb 2024 01:26:50 GMT  
-		Size: 24.7 MB (24716645 bytes)  
+	-	`sha256:c5c3540d9b4f416003fa1e21822e15ea4bbe0749e6d1104e7af5c8a1a30b26fd`  
+		Last Modified: Tue, 12 Mar 2024 01:03:36 GMT  
+		Size: 24.7 MB (24716725 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:664d596fd3aafb25ec4a89b5efe03598161c640fe1eece06ac86d5c446cc9182`  
-		Last Modified: Tue, 13 Feb 2024 09:51:46 GMT  
-		Size: 2.9 MB (2909935 bytes)  
+	-	`sha256:a7abf62bf6bc92d8fae841956bd2dc9e39bb9cf7cfc2bb072578ef56ef5a1d59`  
+		Last Modified: Tue, 12 Mar 2024 06:45:37 GMT  
+		Size: 2.9 MB (2909963 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9583d403a99b6286eb13e5aacb3cca2339296efbb6b3ab632e92082f31e67e44`  
-		Last Modified: Tue, 13 Feb 2024 09:56:59 GMT  
-		Size: 12.9 MB (12931401 bytes)  
+	-	`sha256:c91894d4f21a795ae7e400ef53542c0491dcb953ec2414dd964d22518e4be79e`  
+		Last Modified: Tue, 12 Mar 2024 06:49:55 GMT  
+		Size: 12.9 MB (12931047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ba66f2b1927b53e03a23590f60a03d1d1598ee71791229c1036e48c4a802128`  
-		Last Modified: Tue, 13 Feb 2024 09:56:56 GMT  
-		Size: 244.0 B  
+	-	`sha256:2cad15edf04df2348b43d2f295894ce20dc95e5f0e66e697da48063fd1fef047`  
+		Last Modified: Tue, 12 Mar 2024 06:49:54 GMT  
+		Size: 243.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ac094a7c3a672297cc1ed864b1a995901c53ad541968c3f4ea6e898a2a26f63`  
-		Last Modified: Tue, 13 Feb 2024 09:56:57 GMT  
-		Size: 3.1 MB (3133610 bytes)  
+	-	`sha256:cd450e874d7562bfc72eae9ca4341bb85e7042e7af613b7121f44a27ea8aee9d`  
+		Last Modified: Tue, 12 Mar 2024 06:49:55 GMT  
+		Size: 3.1 MB (3133913 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e4228f8e4c5d3c45d4e330f5deb8311b534fa38328d72105041f6578d620b45`  
-		Last Modified: Sat, 17 Feb 2024 05:44:46 GMT  
-		Size: 3.7 MB (3723989 bytes)  
+	-	`sha256:4a0500c86b899b47e57ce0cd9a69be6f02fc30283e7892a36061aa65463bf4a8`  
+		Last Modified: Wed, 13 Mar 2024 10:05:22 GMT  
+		Size: 3.7 MB (3725878 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:python3.8` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:ac60e3d1c0ba36058b6be84dbae88f18284a8f16034a0fa800442b97032ad25b
+$ docker pull hylang@sha256:3eac7bdb335c68db8c8415a25c2822da767151a39e3ccb4662cab37d19b1ea7c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 MB (2447394 bytes)**  
+-	Total Size: **2.4 MB (2447393 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43a639fd05eef93309b7fb9437b44729c078401d02de728b37ee2d298ff1a5ce`
+-	Image ID: `sha256:db5479c67de6d2ce9613d000dfd784778a1e2c6e6cb94d95d1a66bfa8963db89`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3bd685eeb68d63d03ff33185bdcd849c544af0e4b97d797064628c3bbb15339a`  
-		Last Modified: Sat, 17 Feb 2024 05:44:45 GMT  
+	-	`sha256:de8e63a1820f9cd7f047234cb08664553271c454c7f3c842a414c17af55dd974`  
+		Last Modified: Wed, 13 Mar 2024 10:05:22 GMT  
 		Size: 2.4 MB (2436915 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2ae2a7ca5ab7d9d64a3f10d62cdca4b4308dfb17eb5cd08582cdc75ebf8c8e92`  
-		Last Modified: Sat, 17 Feb 2024 05:44:45 GMT  
-		Size: 10.5 KB (10479 bytes)  
+	-	`sha256:505a79920b77d6ebb08f914bc678ef2220ebc8193eb79d603c2aca094698e602`  
+		Last Modified: Wed, 13 Mar 2024 10:05:22 GMT  
+		Size: 10.5 KB (10478 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hylang:python3.8` - linux; arm64 variant v8
