@@ -1,7 +1,7 @@
 ## `perl:devel-slim-threaded-bookworm`
 
 ```console
-$ docker pull perl@sha256:9a88c764a8aa229a0fc5b83a6b8d463e5cb43ac3a9e7530122b9e04658b8fabd
+$ docker pull perl@sha256:c3e07630bad51f3dc31488b6529e93fe71a515b33c4cbd058b3d5f0745901019
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -371,19 +371,19 @@ $ docker pull perl@sha256:cc8d0f671c5ee3bb72ece3d58b6943d0caa7f3ada84353f29d30e0
 ### `perl:devel-slim-threaded-bookworm` - linux; mips64le
 
 ```console
-$ docker pull perl@sha256:1b630451d2b3827400d9da305105effaacbed91b9cac3687cb23adcce8c1d03e
+$ docker pull perl@sha256:1bf6a657c4203fce89374c3f733cb3903c868cd24451d016d05f4db07d30c30c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.1 MB (56057654 bytes)**  
+-	Total Size: **56.1 MB (56058535 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:26d482be1ca5392736c14145589d3e63640f6bab8b78fac24f9f485b2168c909`
+-	Image ID: `sha256:1bcdfe90185613208c647cf230e6bb5b6b0ff3afbaa74b595ba6ae0f5d2b5ef9`
 -	Default Command: `["perl5.39.8","-de0"]`
 
 ```dockerfile
-# Tue, 13 Feb 2024 02:04:14 GMT
-ADD file:7b0bbeed7888e49f58bdffd816596bc88b87bd4a3761c5a2590f3123c077899b in / 
-# Tue, 13 Feb 2024 02:04:18 GMT
+# Fri, 23 Feb 2024 16:07:57 GMT
+ADD file:c03c59e261bb08f39e6a97df2fd4b82f1e11b49a62d1859a8f8efac680b80a88 in / 
+# Fri, 23 Feb 2024 16:07:57 GMT
 CMD ["bash"]
 # Fri, 23 Feb 2024 16:07:57 GMT
 WORKDIR /usr/src/perl
@@ -396,41 +396,41 @@ CMD ["perl5.39.8" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:78ede1ea2c0b185708583060a40bd2aeddee7b533566b4df729e98e5e5de458b`  
-		Last Modified: Tue, 13 Feb 2024 02:15:10 GMT  
-		Size: 29.1 MB (29119092 bytes)  
+	-	`sha256:aad79459a0f767fcded51c9547150a1cfd96638972389ab8621b5f3eb4a9c280`  
+		Last Modified: Tue, 12 Mar 2024 01:17:09 GMT  
+		Size: 29.1 MB (29119205 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:781e0db7b4b5c420568723a747e801dff60e8a693fe141a742020787cf651525`  
-		Last Modified: Fri, 23 Feb 2024 20:05:34 GMT  
-		Size: 134.0 B  
+	-	`sha256:7c1629788e0cfa96ddee49c53d8a3ae580ceba7f901dafbd773847a02e4de4ee`  
+		Last Modified: Wed, 13 Mar 2024 04:40:38 GMT  
+		Size: 135.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1af6c6e86e7fe541d2baf44223a3d643b7a1492528470a2ae0d79e34ece58838`  
-		Last Modified: Fri, 23 Feb 2024 22:04:09 GMT  
-		Size: 26.9 MB (26938297 bytes)  
+	-	`sha256:9c3a8cc9043143a32a955b3cdc04808921be5127ce8e491fe2b89b8cd93b3620`  
+		Last Modified: Wed, 13 Mar 2024 15:27:34 GMT  
+		Size: 26.9 MB (26939062 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a80fb20b532d7a8a2fea3a21efa997ff35846faa77cf6e13f91cd8fd7f47f353`  
-		Last Modified: Fri, 23 Feb 2024 22:04:06 GMT  
-		Size: 131.0 B  
+	-	`sha256:b2cadbf0ae0c9a06111a973a155dafb2bf4dfe699637ef62f9afcdccf35f48d5`  
+		Last Modified: Wed, 13 Mar 2024 15:27:31 GMT  
+		Size: 133.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `perl:devel-slim-threaded-bookworm` - unknown; unknown
 
 ```console
-$ docker pull perl@sha256:de5fd1b96566489fa13d1a105eed879ac9baeeef651e6022dac929f1586335df
+$ docker pull perl@sha256:f39fae0c1eb3c0d3b14f8e9f2ddc2b08ed045a0c747b75f37ee06b71bf9716f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.6 KB (16574 bytes)**  
+-	Total Size: **16.6 KB (16572 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:284452ee345c3dc7009d4339c2b5cc62ef97cf821e716278a4499ff225e1594c`
+-	Image ID: `sha256:6720da0726b09e8194d32cfab0f36cc85c23498f842838799f133c2e3250923c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ddf4feda1042a8f4ecdd00b266d5b31d96d0861b8bf59523ef37674760e6bd44`  
-		Last Modified: Fri, 23 Feb 2024 22:04:06 GMT  
-		Size: 16.6 KB (16574 bytes)  
+	-	`sha256:466c66d031f590fba5d085d8f80e037eb5a3c5e7214e4485bf1ebb9c9eb57312`  
+		Last Modified: Wed, 13 Mar 2024 15:27:31 GMT  
+		Size: 16.6 KB (16572 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `perl:devel-slim-threaded-bookworm` - linux; ppc64le
