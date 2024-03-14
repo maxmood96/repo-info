@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:841acd02de2a85270f4aba8df29ca8b4dadc80645b11c1ee6b63d63bc6b89b61`
-- Created: `2024-03-06T10:27:16Z`
+- Image ID: `sha256:7628d54b6f3953e71968b48675e76b02cf32a043d59f2df0e87dccc4c65242b9`
+- Created: `2024-03-12T23:13:02Z`
 - Virtual Size: ~ 598.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -24,6 +24,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.3.tar.xz.asc`
   - `PHP_SHA256=b0a996276fe21fe9ca8f993314c8bc02750f464c7b0343f056fb0894a8dfa9d1`
   - `DRUPAL_VERSION=10.2.4`
+  - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `dpkg` (`.deb`-based packages)
 

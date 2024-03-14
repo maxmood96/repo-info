@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3c7231dc06540b6ed44433fbffc8562ad76224955cec611424cac6f97b8426a6`
-- Created: `2024-03-06T10:27:16Z`
-- Virtual Size: ~ 169.82 Mb  
+- Image ID: `sha256:6096e4047bf6854a2098203eece9f85964f9b4c2777cf783c241d4d2cedd9e45`
+- Created: `2024-03-12T23:13:02Z`
+- Virtual Size: ~ 169.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -22,6 +22,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.16.tar.xz.asc`
   - `PHP_SHA256=28cdc995b7d5421711c7044294885fcde4390c9f67504a994b4cf9bc1b5cc593`
   - `DRUPAL_VERSION=10.2.4`
+  - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `apk` (`.apk`-based packages)
 
