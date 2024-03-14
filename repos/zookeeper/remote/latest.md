@@ -1,7 +1,7 @@
 ## `zookeeper:latest`
 
 ```console
-$ docker pull zookeeper@sha256:677e558d5e936a704a9e7b9d47773ba36b459febf9ad7cf108a4d6a180264656
+$ docker pull zookeeper@sha256:2489edd5cd947123c2aec759f76d39710b9484de4e9e032cea47d72b4675ed36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -128,14 +128,14 @@ CMD ["zkServer.sh" "start-foreground"]
 ### `zookeeper:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull zookeeper@sha256:b04d93d08c030ef0f064b10ec389e0b95cf5ae5bd1fb818598794ff07f27d0ed
+$ docker pull zookeeper@sha256:d96da638efb7a5104455d532034e9a298d64f7811d467eb727f618ec19c9a2e8
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.8 MB (118831503 bytes)**  
+-	Total Size: **118.7 MB (118712811 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f73adb2c1e7b4b34fcef91448ceaefa2ed48a70fe687c0b85781d50dfe158dfb`
+-	Image ID: `sha256:9100782dec238b82df86a0296be5c88377d7899f6d743a3d9de81a79fd132345`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -176,28 +176,28 @@ ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
 # Wed, 06 Mar 2024 12:14:03 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Wed, 06 Mar 2024 12:14:03 GMT
-ARG GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA
-# Wed, 06 Mar 2024 12:14:59 GMT
-ARG SHORT_DISTRO_NAME=zookeeper-3.9.1
-# Wed, 06 Mar 2024 12:14:59 GMT
-ARG DISTRO_NAME=apache-zookeeper-3.9.1-bin
-# Wed, 06 Mar 2024 12:15:03 GMT
-# ARGS: DISTRO_NAME=apache-zookeeper-3.9.1-bin GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA SHORT_DISTRO_NAME=zookeeper-3.9.1
+# Thu, 14 Mar 2024 18:17:15 GMT
+ARG GPG_KEY=AF3D175EC05DB249738D01AC8D8C3C3ED0B02E66
+# Thu, 14 Mar 2024 18:17:23 GMT
+ARG SHORT_DISTRO_NAME=zookeeper-3.9.2
+# Thu, 14 Mar 2024 18:17:24 GMT
+ARG DISTRO_NAME=apache-zookeeper-3.9.2-bin
+# Thu, 14 Mar 2024 18:17:29 GMT
+# ARGS: DISTRO_NAME=apache-zookeeper-3.9.2-bin GPG_KEY=AF3D175EC05DB249738D01AC8D8C3C3ED0B02E66 SHORT_DISTRO_NAME=zookeeper-3.9.2
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Wed, 06 Mar 2024 12:15:03 GMT
-WORKDIR /apache-zookeeper-3.9.1-bin
-# Wed, 06 Mar 2024 12:15:03 GMT
+# Thu, 14 Mar 2024 18:17:29 GMT
+WORKDIR /apache-zookeeper-3.9.2-bin
+# Thu, 14 Mar 2024 18:17:29 GMT
 VOLUME [/data /datalog /logs]
-# Wed, 06 Mar 2024 12:15:04 GMT
+# Thu, 14 Mar 2024 18:17:29 GMT
 EXPOSE 2181 2888 3888 8080
-# Wed, 06 Mar 2024 12:15:04 GMT
-ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.9.1-bin/bin ZOOCFGDIR=/conf
-# Wed, 06 Mar 2024 12:15:04 GMT
+# Thu, 14 Mar 2024 18:17:29 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.9.2-bin/bin ZOOCFGDIR=/conf
+# Thu, 14 Mar 2024 18:17:30 GMT
 COPY file:15946498c7ecbfe405350ae22386ab548cb62ffb5e51b384938a3e1d87a02052 in / 
-# Wed, 06 Mar 2024 12:15:04 GMT
+# Thu, 14 Mar 2024 18:17:30 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 06 Mar 2024 12:15:04 GMT
+# Thu, 14 Mar 2024 18:17:30 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
@@ -230,13 +230,13 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Wed, 06 Mar 2024 12:16:00 GMT  
 		Size: 4.5 MB (4511047 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0a1e05afc47461968287421f3838340f2f28597ce196ec5e8ec4055e8a33f2f`  
-		Last Modified: Wed, 06 Mar 2024 12:16:20 GMT  
-		Size: 20.4 MB (20419371 bytes)  
+	-	`sha256:a497c6bff7aa6c677550d131cb6105936d8c3df40c2092d27d36f2a073b458d3`  
+		Last Modified: Thu, 14 Mar 2024 18:18:02 GMT  
+		Size: 20.3 MB (20300680 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b74e721e4af01553f9fa62c92d358ae87654f73b5c7b7c1839d8f750752dc89`  
-		Last Modified: Wed, 06 Mar 2024 12:16:18 GMT  
-		Size: 774.0 B  
+	-	`sha256:e119367fb4589986d67cc2d6e6b1e8a0942dba055f230c57a109bda26859b915`  
+		Last Modified: Thu, 14 Mar 2024 18:18:01 GMT  
+		Size: 773.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `zookeeper:latest` - linux; ppc64le
