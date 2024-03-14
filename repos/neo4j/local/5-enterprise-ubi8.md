@@ -1,10 +1,10 @@
-# `neo4j:5.17.0-enterprise-ubi8`
+# `neo4j:5.18.0-enterprise-ubi8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d00d9433bc176aff9e3e6b9ff21e1c7e1986cf7d9283cf319fd2824204d7edf`
-- Created: `2024-02-23T15:05:08Z`
-- Virtual Size: ~ 960.26 Mb  
+- Image ID: `sha256:177880b2cdc2becdf0b4f97816e3a4527dfc99ebe4fa41d3bd353521124fafd6`
+- Created: `2024-03-13T08:34:21Z`
+- Virtual Size: ~ 951.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/var/lib/neo4j/bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
   - `JAVA_HOME=/usr`
-  - `NEO4J_SHA256=a0acf804ff2f4bbb18f9ab8e2ee9e60f614056a361987be293f09acc2d3f0ff4`
-  - `NEO4J_TARBALL=neo4j-enterprise-5.17.0-unix.tar.gz`
+  - `NEO4J_SHA256=2a4c8cea8ff65f02b3d386d9454db4b8054741551c731144c4759557d1a4f455`
+  - `NEO4J_TARBALL=neo4j-enterprise-5.18.0-unix.tar.gz`
   - `NEO4J_EDITION=enterprise`
   - `NEO4J_HOME=/var/lib/neo4j`
 - Labels:
@@ -1391,7 +1391,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-unbound-1.16.2-5.el8.x86_64`
+### `rpm` package: `python3-unbound-1.16.2-5.el8_9.2.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
@@ -1517,7 +1517,7 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `unbound-libs-1.16.2-5.el8.x86_64`
+### `rpm` package: `unbound-libs-1.16.2-5.el8_9.2.x86_64`
 
 Licenses (from `rpm --query`): BSD
 

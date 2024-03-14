@@ -1,9 +1,9 @@
-# `neo4j:5.17.0-enterprise-ubi9`
+# `neo4j:5.18.0-enterprise-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6e8e05085587403b0c69c7397dee2d2670105099abbf925cb6470563e67eb9f6`
-- Created: `2024-02-23T15:05:08Z`
+- Image ID: `sha256:bf5a16a5894c56e2e264ac8331391806daffb40b6d1904f9bee70a75b0fad971`
+- Created: `2024-03-13T08:34:21Z`
 - Virtual Size: ~ 1.21 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,8 +13,8 @@
   - `PATH=/var/lib/neo4j/bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
   - `JAVA_HOME=/usr`
-  - `NEO4J_SHA256=a0acf804ff2f4bbb18f9ab8e2ee9e60f614056a361987be293f09acc2d3f0ff4`
-  - `NEO4J_TARBALL=neo4j-enterprise-5.17.0-unix.tar.gz`
+  - `NEO4J_SHA256=2a4c8cea8ff65f02b3d386d9454db4b8054741551c731144c4759557d1a4f455`
+  - `NEO4J_TARBALL=neo4j-enterprise-5.18.0-unix.tar.gz`
   - `NEO4J_EDITION=enterprise`
   - `NEO4J_HOME=/var/lib/neo4j`
 - Labels:
@@ -41,7 +41,7 @@
 
 ## `rpm` (`.rpm`-based packages)
 
-### `rpm` package: `NetworkManager-libnm-1.44.0-4.el9_3.x86_64`
+### `rpm` package: `NetworkManager-libnm-1.44.0-5.el9_3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -131,13 +131,13 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `binutils-2.35.2-42.el9.x86_64`
+### `rpm` package: `binutils-2.35.2-42.el9_3.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `binutils-gold-2.35.2-42.el9.x86_64`
+### `rpm` package: `binutils-gold-2.35.2-42.el9_3.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
@@ -461,31 +461,37 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-2.34-83.el9_3.7.x86_64`
+### `rpm` package: `glibc-2.34-83.el9_3.12.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-common-2.34-83.el9_3.7.x86_64`
+### `rpm` package: `glibc-common-2.34-83.el9_3.12.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-devel-2.34-83.el9_3.7.x86_64`
+### `rpm` package: `glibc-devel-2.34-83.el9_3.12.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-headers-2.34-83.el9_3.7.x86_64`
+### `rpm` package: `glibc-headers-2.34-83.el9_3.12.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-minimal-langpack-2.34-83.el9_3.7.x86_64`
+### `rpm` package: `glibc-langpack-en-2.34-83.el9_3.12.x86_64`
+
+Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+
+### `rpm` package: `glibc-minimal-langpack-2.34-83.el9_3.12.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
@@ -689,7 +695,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `kernel-headers-5.14.0-362.18.1.el9_3.x86_64`
+### `rpm` package: `kernel-headers-5.14.0-362.24.1.el9_3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2 and Redistributable, no modification permitted
 
@@ -1625,13 +1631,13 @@ Licenses (from `rpm --query`): OpenLDAP
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssh-8.7p1-34.el9.x86_64`
+### `rpm` package: `openssh-8.7p1-34.el9_3.3.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssh-clients-8.7p1-34.el9.x86_64`
+### `rpm` package: `openssh-clients-8.7p1-34.el9_3.3.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
@@ -2177,7 +2183,7 @@ Licenses (from `rpm --query`): Python
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-pip-wheel-21.2.3-7.el9.noarch`
+### `rpm` package: `python3-pip-wheel-21.2.3-7.el9_3.1.noarch`
 
 Licenses (from `rpm --query`): MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0 or BSD)
 
