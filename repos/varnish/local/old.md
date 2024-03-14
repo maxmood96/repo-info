@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bbd083b6e41dd5534eddeaeffba205fc0e9b95ae44f667a134961c019d803254`
-- Created: `2024-02-13T08:06:32.246058064Z`
-- Virtual Size: ~ 261.30 Mb  
+- Image ID: `sha256:2c68141722a0c9bde224e5a07cbd8d6e1130c23a4df6746d78f29d520abef14a`
+- Created: `2024-03-12T09:40:12.894020022Z`
+- Virtual Size: ~ 261.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-varnish-entrypoint"]`
@@ -1688,11 +1688,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libunistring/0.9.10-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libunistring/0.9.10-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libuv1=1.40.0-2`
+### `dpkg` source package: `libuv1=1.40.0-2+deb11u1`
 
 Binary Packages:
 
-- `libuv1:amd64=1.40.0-2`
+- `libuv1:amd64=1.40.0-2+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libuv1/copyright`)
 
@@ -1707,17 +1707,17 @@ Licenses: (parsed from: `/usr/share/doc/libuv1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libuv1=1.40.0-2
-'http://deb.debian.org/debian/pool/main/libu/libuv1/libuv1_1.40.0-2.dsc' libuv1_1.40.0-2.dsc 1997 SHA256:474cc846bbc36e68da06539d57a0f26b890fc113e9598a45e8aa6230877c7ce7
-'http://deb.debian.org/debian/pool/main/libu/libuv1/libuv1_1.40.0.orig.tar.gz' libuv1_1.40.0.orig.tar.gz 1274644 SHA256:6e249e8d1b47078f43fdddc4274c84aa533879bd503aead7e1e2784815eec0d0
-'http://deb.debian.org/debian/pool/main/libu/libuv1/libuv1_1.40.0-2.debian.tar.xz' libuv1_1.40.0-2.debian.tar.xz 23904 SHA256:cf4ec6b8d02e5eaece8a93636599935e2b3cc242df1976bfc24453816e50755f
+$ apt-get source -qq --print-uris libuv1=1.40.0-2+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/libu/libuv1/libuv1_1.40.0-2%2bdeb11u1.dsc' libuv1_1.40.0-2+deb11u1.dsc 2029 SHA256:e01789770e96bb8d4e7b3c751d962c4cf6bb937af7d62814f5e57de53b064ab2
+'http://deb.debian.org/debian-security/pool/updates/main/libu/libuv1/libuv1_1.40.0.orig.tar.gz' libuv1_1.40.0.orig.tar.gz 1274644 SHA256:6e249e8d1b47078f43fdddc4274c84aa533879bd503aead7e1e2784815eec0d0
+'http://deb.debian.org/debian-security/pool/updates/main/libu/libuv1/libuv1_1.40.0-2%2bdeb11u1.debian.tar.xz' libuv1_1.40.0-2+deb11u1.debian.tar.xz 24400 SHA256:ab5be8b9b8e36085be9fee20896e88d87da253bf579168615f52045db58e01cd
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libuv1/1.40.0-2/ (for browsing the source)
-- https://sources.debian.net/src/libuv1/1.40.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libuv1/1.40.0-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libuv1/1.40.0-2+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/libuv1/1.40.0-2+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libuv1/1.40.0-2+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxcrypt=1:4.4.18-4`
 
@@ -2350,11 +2350,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tzdata/2024a-0+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tzdata/2024a-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `unbound=1.13.1-1+deb11u1`
+### `dpkg` source package: `unbound=1.13.1-1+deb11u2`
 
 Binary Packages:
 
-- `libunbound8:amd64=1.13.1-1+deb11u1`
+- `libunbound8:amd64=1.13.1-1+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 
@@ -2377,18 +2377,18 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris unbound=1.13.1-1+deb11u1
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.13.1-1%2bdeb11u1.dsc' unbound_1.13.1-1+deb11u1.dsc 3194 SHA256:af4c16c1dcdb4ddbb60fc7fa2fe927d1e80551dfb60cc19f75adcece33a0f76c
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.13.1.orig.tar.gz' unbound_1.13.1.orig.tar.gz 5976957 SHA256:8504d97b8fc5bd897345c95d116e0ee0ddf8c8ff99590ab2b4bd13278c9f50b8
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.13.1.orig.tar.gz.asc' unbound_1.13.1.orig.tar.gz.asc 833 SHA256:1ca1fb3db4baa3e831bc42fcecf3eaceb316abf7a2d816dc46d0efcd199f419e
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.13.1-1%2bdeb11u1.debian.tar.xz' unbound_1.13.1-1+deb11u1.debian.tar.xz 29448 SHA256:0e47998afdcb29066c559031c374a3d8eb5b7a7e850a7e347b89304882fcf859
+$ apt-get source -qq --print-uris unbound=1.13.1-1+deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.13.1-1%2bdeb11u2.dsc' unbound_1.13.1-1+deb11u2.dsc 3198 SHA256:4594320d0d1c8997ce17530763637ae96dcf72ce5d9412a01a9fd71806ac6afe
+'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.13.1.orig.tar.gz' unbound_1.13.1.orig.tar.gz 5976957 SHA256:8504d97b8fc5bd897345c95d116e0ee0ddf8c8ff99590ab2b4bd13278c9f50b8
+'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.13.1.orig.tar.gz.asc' unbound_1.13.1.orig.tar.gz.asc 833 SHA256:1ca1fb3db4baa3e831bc42fcecf3eaceb316abf7a2d816dc46d0efcd199f419e
+'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.13.1-1%2bdeb11u2.debian.tar.xz' unbound_1.13.1-1+deb11u2.debian.tar.xz 44472 SHA256:2c0289540d8530d2a7cf377d4fe2ba87f4998a37e452d5b8b4f8d353b89dd2e7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/unbound/1.13.1-1+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/unbound/1.13.1-1+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unbound/1.13.1-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/unbound/1.13.1-1+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/unbound/1.13.1-1+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/unbound/1.13.1-1+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.36.1-8+deb11u1`
 
