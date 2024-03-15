@@ -1,7 +1,7 @@
 ## `xwiki:15-mariadb-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:4d2525ab165cc57491f53ac49aaa6128beb7257d064bb6ce36c9a580a95e8eb2
+$ docker pull xwiki@sha256:bfad0b863d591cfbfc0b3170aa153d535d48f5af0f6c571333f09c7cf545a967
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull xwiki@sha256:4d2525ab165cc57491f53ac49aaa6128beb7257d064bb6ce36c9a
 ### `xwiki:15-mariadb-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:8fa30f7a05ab5a8ae2e4a4b1fce984ee06e00f1b3474588484df095e3dafc77c
+$ docker pull xwiki@sha256:e0fc6d5e15913697924d51cc0ffb34f9f54c48f0936228fd6415236cd386e3bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **593.9 MB (593922409 bytes)**  
+-	Total Size: **593.9 MB (593933070 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d935be260ff265e39e13f7e183b7600c423c32bd1d2aed3c8a2401bb2335aa9`
+-	Image ID: `sha256:486c84644afae75a442f7f8948bc328b4c7575e73bbe4ad06b87a58956b48d8e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -71,21 +71,21 @@ ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
 # Wed, 06 Mar 2024 14:46:31 GMT
 ENV TOMCAT_MAJOR=9
-# Wed, 06 Mar 2024 14:46:31 GMT
-ENV TOMCAT_VERSION=9.0.86
-# Wed, 06 Mar 2024 14:46:31 GMT
-ENV TOMCAT_SHA512=e8a8000dbeba5ee266ec4bf77217574364ffd114c8b913816f2e7a5e4eab4d01d0be3f05c8fccefcb5c5d770308efe1983be80279b6ef6d122d6183288a8ee9c
-# Wed, 06 Mar 2024 14:46:32 GMT
-COPY dir:a1b18cd4173fc89867b3684c0bcb6ed5fd2f800394449b55a0ac4e5f96c33c28 in /usr/local/tomcat 
-# Wed, 06 Mar 2024 14:46:37 GMT
+# Fri, 08 Mar 2024 08:40:14 GMT
+ENV TOMCAT_VERSION=9.0.87
+# Fri, 08 Mar 2024 08:40:14 GMT
+ENV TOMCAT_SHA512=71a64fe805aab89ef4798571d860a3c9a4f751f808921559a9249305abb205836de33ab89bb33b625a77f799f193d6bffbe94aadf293866df756d708f5bfb933
+# Fri, 08 Mar 2024 08:40:14 GMT
+COPY dir:40d6dbdce612cc991adb2ee5ce85320942841bbd0b1682a73533c868a43a5fcd in /usr/local/tomcat 
+# Fri, 08 Mar 2024 08:40:14 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
-# Wed, 06 Mar 2024 14:46:38 GMT
+# Fri, 08 Mar 2024 08:40:14 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Wed, 06 Mar 2024 14:46:38 GMT
+# Fri, 08 Mar 2024 08:40:14 GMT
 EXPOSE 8080
-# Wed, 06 Mar 2024 14:46:38 GMT
+# Fri, 08 Mar 2024 08:40:14 GMT
 ENTRYPOINT []
-# Wed, 06 Mar 2024 14:46:38 GMT
+# Fri, 08 Mar 2024 08:40:14 GMT
 CMD ["catalina.sh" "run"]
 # Fri, 08 Mar 2024 08:40:14 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
@@ -162,81 +162,81 @@ CMD ["xwiki"]
 		Last Modified: Wed, 06 Mar 2024 15:02:53 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e5f7b6e8ca72c71914be68652c1d9d21fe4d11d3258c55cbfbd7f43e6427a55`  
-		Last Modified: Wed, 06 Mar 2024 15:06:00 GMT  
-		Size: 12.4 MB (12411761 bytes)  
+	-	`sha256:d02d3bf9e34aeb06417cc1a650b47db29515ca39161db2741c569aa8693558c5`  
+		Last Modified: Fri, 15 Mar 2024 00:35:00 GMT  
+		Size: 12.4 MB (12421982 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a73969ab971ee89d66abcc9270b522fac62871788fcc65712f84c2ef0c7962f0`  
-		Last Modified: Wed, 06 Mar 2024 15:05:59 GMT  
-		Size: 458.6 KB (458590 bytes)  
+	-	`sha256:c7ae216fbbd9f86d3022a270437e1fdbf1bf3eacbe277feebc7fd116a074ab31`  
+		Last Modified: Fri, 15 Mar 2024 00:34:59 GMT  
+		Size: 458.5 KB (458549 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1831643cd49257da268e364edf6c6b53b8fe8ced3e3095325777f16866823d8`  
-		Last Modified: Wed, 06 Mar 2024 15:05:59 GMT  
+	-	`sha256:55e4d00229948d26a05477214e037e219aa38ee6ee20539d3c8f4f2f094ba1f4`  
+		Last Modified: Fri, 15 Mar 2024 00:34:59 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fa0b52769b0a88c39baeef49e7f6c8b364296b1efd8519a11c3ad0ec9f4fcd7c`  
-		Last Modified: Fri, 08 Mar 2024 19:50:04 GMT  
-		Size: 178.3 MB (178348786 bytes)  
+	-	`sha256:b097190ba8c8b580266770f58ebb02261939e4408f9e8b3b54c544051b4b9a1d`  
+		Last Modified: Fri, 15 Mar 2024 01:49:36 GMT  
+		Size: 178.3 MB (178349263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de6edab0efc9e5bb71163fa4b44cdaa087b796bcd4cb2bd423354e4f32a36be6`  
-		Last Modified: Fri, 08 Mar 2024 19:50:06 GMT  
-		Size: 307.0 MB (306998687 bytes)  
+	-	`sha256:ae9fedc4dce79ca4d24a1e3f09d44acc440352bf8daff96ed57cc076594c9781`  
+		Last Modified: Fri, 15 Mar 2024 01:49:41 GMT  
+		Size: 307.0 MB (306998699 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c71cebb9cdc6e863b1ad95d9785f05cbb38f8f26d2fc6ddf66a491b67dc64d8`  
-		Last Modified: Fri, 08 Mar 2024 19:50:01 GMT  
-		Size: 620.0 KB (619999 bytes)  
+	-	`sha256:0d868ea7aac4a6430b9f7641fdbc5626e75b2da440939835f8e9fd2d0e5613d3`  
+		Last Modified: Fri, 15 Mar 2024 01:49:31 GMT  
+		Size: 620.0 KB (619998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01601bdc6960321f341266a42655e8fed894dfde28265330eeae9fbb5bb61223`  
-		Last Modified: Fri, 08 Mar 2024 19:50:01 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:4b93760ee00eb214fdc4ee2036a2bea1c1ab39fdcdabd4b0a8f40815df8714d8`  
+		Last Modified: Fri, 15 Mar 2024 01:49:31 GMT  
+		Size: 1.3 KB (1336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b6ef33c5d8b628b93f5bf2c308bc2a86bdfbe0bb7f637bdf715f8d875fe4a83`  
-		Last Modified: Fri, 08 Mar 2024 19:50:02 GMT  
-		Size: 2.3 KB (2309 bytes)  
+	-	`sha256:f4be3144c30cec8d7e8410bd301a1c9f566c1d6798bf0751c0ed5d78de64a3d4`  
+		Last Modified: Fri, 15 Mar 2024 01:49:32 GMT  
+		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f89f61f54ed22c3839feca464736bd93585e7571f7a60fed2e62887a609cde76`  
-		Last Modified: Fri, 08 Mar 2024 19:50:03 GMT  
-		Size: 6.4 KB (6415 bytes)  
+	-	`sha256:36c269fbde47fd5fedbe50456e70f3749a6ab94b98377298f0ecc479d27d049d`  
+		Last Modified: Fri, 15 Mar 2024 01:49:32 GMT  
+		Size: 6.4 KB (6416 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e1c2b2ee402e2b8d2550b79725841109530c6c564397f7f0c9492bed8e80001`  
-		Last Modified: Fri, 08 Mar 2024 19:50:03 GMT  
-		Size: 2.4 KB (2441 bytes)  
+	-	`sha256:07ec7d8860a146d0ccf243d03487e007da30ec43e162f1a0352b61eda219195b`  
+		Last Modified: Fri, 15 Mar 2024 01:49:33 GMT  
+		Size: 2.4 KB (2438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:15-mariadb-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:410cc78ccef9673e7412207d85eb58152885b02d4937ef76767c6ab7de63c277
+$ docker pull xwiki@sha256:7a4b7d50d32d1a888e7144c33ec6f2818c2ceefb53d3e6e0272a825853840ff3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.1 MB (9098409 bytes)**  
+-	Total Size: **9.1 MB (9098406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:162f666676da7b30ab8e79258c49d5686f46e94534fa869354396874c2c43d96`
+-	Image ID: `sha256:78623a618a724dc0a2b0beb08f25b2aa306b477b62506252ed9ee2e5a2d557fc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a77244755644e0e3d7cf28ff3490b890d575521a40a2658c883f66ebfc19eb4`  
-		Last Modified: Fri, 08 Mar 2024 19:50:01 GMT  
+	-	`sha256:85de48493b6811d987390e5b12f6cb5485967d2f98119c4ba335c487e106ec78`  
+		Last Modified: Fri, 15 Mar 2024 01:49:31 GMT  
 		Size: 9.1 MB (9057019 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:af5d47c986063c4f2f23a8659e6c8aec6c14c301734c77693527ed600cb66a17`  
-		Last Modified: Fri, 08 Mar 2024 19:50:01 GMT  
-		Size: 41.4 KB (41390 bytes)  
+	-	`sha256:8d9f35a03d925883adc982b529324058103443317663454cb2706666c44419b4`  
+		Last Modified: Fri, 15 Mar 2024 01:49:31 GMT  
+		Size: 41.4 KB (41387 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:15-mariadb-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:2032427ac51ba0c92370f599df24ca0daa11a058f9362af9b6dd58a075a0fb0b
+$ docker pull xwiki@sha256:871c47188cc44b98421fc7c4476c373d53310b14ca6ea51bc5630edaab6486b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **587.8 MB (587792751 bytes)**  
+-	Total Size: **587.8 MB (587803994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32ad13c336c91464ecf9aa6401b91608ef4f1ba56a96ccdc6394f85fb0c46814`
+-	Image ID: `sha256:104774eaf0da996570f201d9e0c3eb0b3f22f7bc89fcaca2b7321329024894c0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -287,21 +287,21 @@ ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
 # Wed, 06 Mar 2024 11:28:09 GMT
 ENV TOMCAT_MAJOR=9
-# Wed, 06 Mar 2024 11:28:09 GMT
-ENV TOMCAT_VERSION=9.0.86
-# Wed, 06 Mar 2024 11:28:09 GMT
-ENV TOMCAT_SHA512=e8a8000dbeba5ee266ec4bf77217574364ffd114c8b913816f2e7a5e4eab4d01d0be3f05c8fccefcb5c5d770308efe1983be80279b6ef6d122d6183288a8ee9c
-# Wed, 06 Mar 2024 11:28:09 GMT
-COPY dir:28b6e0807ab1afc14ce8a00cdcc0b2974f83fc2610eb66e632a1e50cf924f4d1 in /usr/local/tomcat 
-# Wed, 06 Mar 2024 11:28:13 GMT
+# Fri, 08 Mar 2024 08:40:14 GMT
+ENV TOMCAT_VERSION=9.0.87
+# Fri, 08 Mar 2024 08:40:14 GMT
+ENV TOMCAT_SHA512=71a64fe805aab89ef4798571d860a3c9a4f751f808921559a9249305abb205836de33ab89bb33b625a77f799f193d6bffbe94aadf293866df756d708f5bfb933
+# Fri, 08 Mar 2024 08:40:14 GMT
+COPY dir:a438b3922681c6646cb859c6691b163ee551beeceefb652b5380a78c74ba3266 in /usr/local/tomcat 
+# Fri, 08 Mar 2024 08:40:14 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
-# Wed, 06 Mar 2024 11:28:14 GMT
+# Fri, 08 Mar 2024 08:40:14 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Wed, 06 Mar 2024 11:28:14 GMT
+# Fri, 08 Mar 2024 08:40:14 GMT
 EXPOSE 8080
-# Wed, 06 Mar 2024 11:28:14 GMT
+# Fri, 08 Mar 2024 08:40:14 GMT
 ENTRYPOINT []
-# Wed, 06 Mar 2024 11:28:14 GMT
+# Fri, 08 Mar 2024 08:40:14 GMT
 CMD ["catalina.sh" "run"]
 # Fri, 08 Mar 2024 08:40:14 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
@@ -378,67 +378,67 @@ CMD ["xwiki"]
 		Last Modified: Wed, 06 Mar 2024 11:41:12 GMT  
 		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1382c29b3803a3ed8ad76b10a0f89ac97eec6ffef82efe7a74e17587507deda`  
-		Last Modified: Wed, 06 Mar 2024 11:44:01 GMT  
-		Size: 12.4 MB (12418173 bytes)  
+	-	`sha256:74e281f727be7fd28fba4819ffdd9ce87f32b51125b9ec925007964e5de10120`  
+		Last Modified: Fri, 15 Mar 2024 01:03:45 GMT  
+		Size: 12.4 MB (12428440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1780b315b5019fafa9af700eac18080401d8ff7ba4e5f268fa384e0e21aeaa9`  
-		Last Modified: Wed, 06 Mar 2024 11:44:01 GMT  
-		Size: 457.3 KB (457337 bytes)  
+	-	`sha256:2eac2aa3387dedf25ad21372bea13d10b6f0a6fed373df59d31ad8f5b09de7e5`  
+		Last Modified: Fri, 15 Mar 2024 01:03:44 GMT  
+		Size: 457.3 KB (457321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca53784182e5039a7835057ef6cfd2ef8ebd593fa32f4b46916fe4891a02767e`  
-		Last Modified: Wed, 06 Mar 2024 11:44:00 GMT  
-		Size: 129.0 B  
+	-	`sha256:684ab03dff227b5ec8e230cdb2d0fd458f091d52e3d8ee4b703fba7694aa2187`  
+		Last Modified: Fri, 15 Mar 2024 01:03:44 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84d2716dc193947443b4076411c7be42b6193da2fef7865bab47581d1b667c0e`  
-		Last Modified: Wed, 06 Mar 2024 19:09:21 GMT  
-		Size: 173.4 MB (173387332 bytes)  
+	-	`sha256:555f2f2efb411e6fb4cdc817013317dd9a304f3b366e6759cf86919293dffa22`  
+		Last Modified: Fri, 15 Mar 2024 01:55:48 GMT  
+		Size: 173.4 MB (173388300 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f721f1b59f0dddf83676baaa9825bf579367dce3dd097672521447fd488c968`  
-		Last Modified: Fri, 08 Mar 2024 20:02:59 GMT  
-		Size: 307.0 MB (306998695 bytes)  
+	-	`sha256:0e7db3b5c982f8b81fac57dde6b9ad207fdb902b036262201514e7f2479559d4`  
+		Last Modified: Fri, 15 Mar 2024 02:00:06 GMT  
+		Size: 307.0 MB (306998696 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eccd43cf2c63ed473b35e665144ed8209c36926ede3ac4b5104c376f7e4cf48e`  
-		Last Modified: Fri, 08 Mar 2024 20:05:19 GMT  
-		Size: 620.0 KB (619998 bytes)  
+	-	`sha256:1c134d7426f7dcfa3ac30e3dbd1eb07274b991f18bfa3c95a75f01ddfb718f60`  
+		Last Modified: Fri, 15 Mar 2024 02:02:18 GMT  
+		Size: 620.0 KB (620001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a938fc8dd302ea722f272622b9dcc22a1919eb0fd874c32e7de7e4e0fca927a2`  
-		Last Modified: Fri, 08 Mar 2024 20:05:18 GMT  
-		Size: 1.3 KB (1336 bytes)  
+	-	`sha256:c7272034bf4cda85f7fd36245316b9e7d3785592d707e1bd1ff62f507be000c2`  
+		Last Modified: Fri, 15 Mar 2024 02:02:22 GMT  
+		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5622fba967341b2a3a32857f52b61b7739f5a3de91cdb17a88e7611edd470bf1`  
-		Last Modified: Fri, 08 Mar 2024 20:05:18 GMT  
-		Size: 2.3 KB (2301 bytes)  
+	-	`sha256:2d04e6b22af3d889c8ea9910153883ee55355d25c19ff3647fbbadaac461b24d`  
+		Last Modified: Fri, 15 Mar 2024 02:02:18 GMT  
+		Size: 2.3 KB (2309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:815be4a5ec35580b2409d48349b34a0338318a0be41a87528f008970d70c0aa4`  
-		Last Modified: Fri, 08 Mar 2024 20:05:19 GMT  
+	-	`sha256:4d0bbef0b542d477742cade418670e23eb7f8341733c7814a538faae19cb4a1e`  
+		Last Modified: Fri, 15 Mar 2024 02:02:18 GMT  
 		Size: 6.4 KB (6416 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d7392ff89ed5db6639dcc9871b2a73e3f6cac89420f3f5baf6fa7c80e61cb8c`  
-		Last Modified: Fri, 08 Mar 2024 20:05:19 GMT  
-		Size: 2.4 KB (2439 bytes)  
+	-	`sha256:560654ff7b652b720cfb970904391db332a51858903866e101d155126120b6fe`  
+		Last Modified: Fri, 15 Mar 2024 02:02:19 GMT  
+		Size: 2.4 KB (2443 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:15-mariadb-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:7915993dc0a22645081c1d9bf0fd407ad5f6179d37074e984677b17966d01c9b
+$ docker pull xwiki@sha256:f81f174042f6f601e406b453ba2ff8d89d36b544fe08a80f7c54b4efe062d1a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9193382 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d0be4b1c147a9be5a292412e5cfda9fee1176fcd6e4158c498a3f640744064fb`
+-	Image ID: `sha256:30c12a61412f1628948e83be3f364d1539b6c32c1bd1ae8eb59faa8648f15d06`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf1feacea14b0780b75153a56afa5c26d7b7dec7ed536fb221aa037c326d7db5`  
-		Last Modified: Fri, 08 Mar 2024 20:05:19 GMT  
+	-	`sha256:d96df1f115e3f7a918c10071e03e3e2bfdce856395735d58eb37826f20c3d1b2`  
+		Last Modified: Fri, 15 Mar 2024 02:02:18 GMT  
 		Size: 9.2 MB (9153445 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:71f446086ee4c063675764111619a04e17fd066771eff5a39ae80f88e8b2eab3`  
-		Last Modified: Fri, 08 Mar 2024 20:05:18 GMT  
+	-	`sha256:4f7c579e9c1590eeee821cc3681dbda4f6f07457c2cbc6212d21151946653fe8`  
+		Last Modified: Fri, 15 Mar 2024 02:02:17 GMT  
 		Size: 39.9 KB (39937 bytes)  
 		MIME: application/vnd.in-toto+json
