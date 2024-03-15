@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e590ef8a3be528866061250c1ade8d5dc57ec60606d64f51b85d71ccf83682c3`
+- Image ID: `sha256:efc5dbb7ab34cfcda598785faff2533b562c6e0731157c07b747c9819ba3f73c`
 - Created: `2024-02-13T09:10:03Z`
 - Virtual Size: ~ 1.18 Gb  
   (total size of all layers on-disk)
@@ -21,8 +21,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.86`
-  - `TOMCAT_SHA512=e8a8000dbeba5ee266ec4bf77217574364ffd114c8b913816f2e7a5e4eab4d01d0be3f05c8fccefcb5c5d770308efe1983be80279b6ef6d122d6183288a8ee9c`
+  - `TOMCAT_VERSION=9.0.87`
+  - `TOMCAT_SHA512=71a64fe805aab89ef4798571d860a3c9a4f751f808921559a9249305abb205836de33ab89bb33b625a77f799f193d6bffbe94aadf293866df756d708f5bfb933`
   - `XWIKI_VERSION=14.10.21`
   - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.10.21`
   - `XWIKI_DOWNLOAD_SHA256=72a634e2aeb085878dce2629a3e5e6136887d0c22712dcee5a284be8143135ea`
@@ -471,11 +471,11 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.1.debian.tar.xz' coreutils_8.32-4.1ubuntu1.1.debian.tar.xz 43872 SHA512:939c55b25f5496124a5590a1220fcff39a4eb78bf226a56c2ae57d21de7cfd9c971bb257725ddacab03f5f8c2a9941ce51bdec2c6e5c04bf55bfe8ec6ed78d4c
 ```
 
-### `dpkg` source package: `cups=2.4.1op1-1ubuntu4.7`
+### `dpkg` source package: `cups=2.4.1op1-1ubuntu4.8`
 
 Binary Packages:
 
-- `libcups2:amd64=2.4.1op1-1ubuntu4.7`
+- `libcups2:amd64=2.4.1op1-1ubuntu4.8`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -489,10 +489,10 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cups=2.4.1op1-1ubuntu4.7
-'http://security.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.7.dsc' cups_2.4.1op1-1ubuntu4.7.dsc 3135 SHA512:e45b8d6691f42d3946540edd28747edccc4409aeec0e759cf777bd4c3207715dc32efef5b62b7eec4c75d4c84f1883596d1709d4bba265f51bdfa8b688dd5b6e
-'http://security.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1.orig.tar.gz' cups_2.4.1op1.orig.tar.gz 8113914 SHA512:74e83728fcc3baf709176442b26711250fd4d4ede1e81e35b02a5607711067e28cd5a05d5bc3337953f6b2236c5a429b13f3a7f1218a08a2d3c30a8c9b0d96fd
-'http://security.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.7.debian.tar.xz' cups_2.4.1op1-1ubuntu4.7.debian.tar.xz 357988 SHA512:be0569e54882c139044c4679e4ecaeabafa91e379a274f0ab39305cdd1223b5db97b9d96f8744dcb161f2a3ea59644f21d860d92d8c92c79b4d25b1f8d6c79ac
+$ apt-get source -qq --print-uris cups=2.4.1op1-1ubuntu4.8
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.8.dsc' cups_2.4.1op1-1ubuntu4.8.dsc 2495 SHA512:2826bb1a5a2b3f326f08a40ab48cfe8929086fdf03499f63689f268ca7e5c02629c4955f661b42b3aeffd7b8907816fa1e6cd73ad805a88cb123094fb44c995d
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1.orig.tar.gz' cups_2.4.1op1.orig.tar.gz 8113914 SHA512:74e83728fcc3baf709176442b26711250fd4d4ede1e81e35b02a5607711067e28cd5a05d5bc3337953f6b2236c5a429b13f3a7f1218a08a2d3c30a8c9b0d96fd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.8.debian.tar.xz' cups_2.4.1op1-1ubuntu4.8.debian.tar.xz 358172 SHA512:488e4fa5b6c8ddaea383cae2e320f98ab8f2e072f0a5e886f697df257869b94455cab6849a393e4c156000a9450c5ff677c368f8c0d0407a3800e1153a2f27aa
 ```
 
 ### `dpkg` source package: `curl=7.81.0-1ubuntu1.15`
@@ -784,14 +784,9 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.4.7-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.2.dsc' expat_2.4.7-1ubuntu0.2.dsc 2149 SHA512:0bde21907800936262a4772e22395533af0aace706ce2b3172888cc69e893c38fcf726331740b96a9b69bb067714cf847408ccf7c336c53051cc7dd6a48e3eab
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7.orig.tar.gz' expat_2.4.7.orig.tar.gz 8316374 SHA512:91bc9792c4ba1d0ad835f633d8cfa62130692f48308eea8932ec5e13a01542120561b0f255b4adc58b1adae6f83632cbabf428b5b5c0d2ac6de542478a951232
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.2.debian.tar.xz' expat_2.4.7-1ubuntu0.2.debian.tar.xz 14828 SHA512:87919c60b24a4d85660375973233fb72e0d50f91ef7cb53d12efdd23bc050aa058eb06f9d807aacd3e59832de06fbd5b2110bdcb852f354b2b84c6c8b255df84
-```
 
 ### `dpkg` source package: `findutils=4.8.0-1ubuntu3`
 
@@ -3155,9 +3150,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openldap=2.5.16+dfsg-0ubuntu0.22.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.16%2bdfsg-0ubuntu0.22.04.2.dsc' openldap_2.5.16+dfsg-0ubuntu0.22.04.2.dsc 3319 SHA512:f8abf12d82a0044b830ca307afd1b3e5bc59ab29a6e440f61ace59e03f6a5d3fe38e56182315d45c35bc1bea010339a16df8c9f68bc8ca255d50c7c3decfbced
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.16%2bdfsg.orig.tar.gz' openldap_2.5.16+dfsg.orig.tar.gz 5608943 SHA512:0e3a208773e1ee1bd307594e55c3d4fdc6a9dddd517f6d433e89c4064a9d796a37ad49e106de803217fdac58221d56fa568dc269c185fb40650647e4024fcc98
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.16%2bdfsg-0ubuntu0.22.04.2.debian.tar.xz' openldap_2.5.16+dfsg-0ubuntu0.22.04.2.debian.tar.xz 171868 SHA512:55bb4e1ae7d067c2d000c4cbc296d24658f694dab324c922c13956298187501c6dc91902d309b46622f61f57fbd2400b7097593ec871736652b85dd9c9ec5898
+'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.16%2bdfsg-0ubuntu0.22.04.2.dsc' openldap_2.5.16+dfsg-0ubuntu0.22.04.2.dsc 3319 SHA512:f8abf12d82a0044b830ca307afd1b3e5bc59ab29a6e440f61ace59e03f6a5d3fe38e56182315d45c35bc1bea010339a16df8c9f68bc8ca255d50c7c3decfbced
+'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.16%2bdfsg.orig.tar.gz' openldap_2.5.16+dfsg.orig.tar.gz 5608943 SHA512:0e3a208773e1ee1bd307594e55c3d4fdc6a9dddd517f6d433e89c4064a9d796a37ad49e106de803217fdac58221d56fa568dc269c185fb40650647e4024fcc98
+'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.16%2bdfsg-0ubuntu0.22.04.2.debian.tar.xz' openldap_2.5.16+dfsg-0ubuntu0.22.04.2.debian.tar.xz 171868 SHA512:55bb4e1ae7d067c2d000c4cbc296d24658f694dab324c922c13956298187501c6dc91902d309b46622f61f57fbd2400b7097593ec871736652b85dd9c9ec5898
 ```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.15`
