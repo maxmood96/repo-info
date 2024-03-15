@@ -1,10 +1,10 @@
-# `wordpress:beta-6.5-RC1-php8.1-fpm-alpine`
+# `wordpress:beta-6.5-RC2-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c24737f7b33490021741a8c959aa59eb241941831b9778b273ea3ab75d921340`
-- Created: `2024-03-05T20:03:11Z`
-- Virtual Size: ~ 253.01 Mb  
+- Image ID: `sha256:4e7745c15f4d2190c90cc46243f57bec2b407e04c870d7404280d8d28d336e97`
+- Created: `2024-03-12T19:03:10Z`
+- Virtual Size: ~ 251.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,11 +16,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.27`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.27.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.27.tar.xz.asc`
-  - `PHP_SHA256=479e65c3f05714d4aace1370e617d78e49e996ec7a7579a5be47535be61f0658`
+  - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
+  - `PHP_VERSION=8.2.16`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.16.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.16.tar.xz.asc`
+  - `PHP_SHA256=28cdc995b7d5421711c7044294885fcde4390c9f67504a994b4cf9bc1b5cc593`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1115,16 +1115,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.11.6-r0 description:
+libxml2-2.11.7-r0 description:
 XML parsing library, version 2
 
-libxml2-2.11.6-r0 webpage:
+libxml2-2.11.7-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.11.6-r0 installed size:
+libxml2-2.11.7-r0 installed size:
 1092 KiB
 
-libxml2-2.11.6-r0 license:
+libxml2-2.11.7-r0 license:
 MIT
 
 ```
