@@ -1223,20 +1223,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fontconfig=2.15.0-1
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.15.0-1.dsc' fontconfig_2.15.0-1.dsc 2665 SHA256:ab0a8029d69f7183d4e42bf8fbc7d8638dfd2e2ac195090b6437de7bc5bfafc8
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.15.0.orig.tar.xz' fontconfig_2.15.0.orig.tar.xz 1447820 SHA256:63a0658d0e06e0fa886106452b58ef04f21f58202ea02a94c39de0d3335d7c0e
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.15.0-1.debian.tar.xz' fontconfig_2.15.0-1.debian.tar.xz 58076 SHA256:761f760a26360b2292f006bf73eba5187d57ff326b7cf833f9af6b9552497047
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/fontconfig/2.15.0-1/
 
-- https://sources.debian.net/src/fontconfig/2.15.0-1/ (for browsing the source)
-- https://sources.debian.net/src/fontconfig/2.15.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/fontconfig/2.15.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fonts-dejavu=2.37-8`
 

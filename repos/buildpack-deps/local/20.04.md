@@ -3737,9 +3737,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python2.7=2.7.18-1~20.04.3
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18-1%7e20.04.3.dsc' python2.7_2.7.18-1~20.04.3.dsc 3297 SHA512:7923db242804737a7adde1782a38a06b5fd2dc086d2e8cb1bceeb4fc098313d17f2fa62fc02bcab3831800b0d69cba5495fe91ecedbff18b56f4826eccd3de17
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18.orig.tar.gz' python2.7_2.7.18.orig.tar.gz 17539408 SHA512:9a81cea8f8853b183364b399a238604075b00d18badb0cde118b20fe4428135de5d75a3feca0d56a3d8d40d557e3933de573671072d9da6f76f84435d23bf1ba
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18-1%7e20.04.3.diff.gz' python2.7_2.7.18-1~20.04.3.diff.gz 297866 SHA512:716aa294efb5bb747742ad0b8989ae0ead9107270c6be78173b4ade8106f8cef44873c6d75ea75e146fe1aae99df20632fc3107b1a0ce47192e0eb32062e8fae
+'http://security.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18-1%7e20.04.3.dsc' python2.7_2.7.18-1~20.04.3.dsc 3297 SHA512:7923db242804737a7adde1782a38a06b5fd2dc086d2e8cb1bceeb4fc098313d17f2fa62fc02bcab3831800b0d69cba5495fe91ecedbff18b56f4826eccd3de17
+'http://security.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18.orig.tar.gz' python2.7_2.7.18.orig.tar.gz 17539408 SHA512:9a81cea8f8853b183364b399a238604075b00d18badb0cde118b20fe4428135de5d75a3feca0d56a3d8d40d557e3933de573671072d9da6f76f84435d23bf1ba
+'http://security.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18-1%7e20.04.3.diff.gz' python2.7_2.7.18-1~20.04.3.diff.gz 297866 SHA512:716aa294efb5bb747742ad0b8989ae0ead9107270c6be78173b4ade8106f8cef44873c6d75ea75e146fe1aae99df20632fc3107b1a0ce47192e0eb32062e8fae
 ```
 
 ### `dpkg` source package: `python3-defaults=3.8.2-0ubuntu2`
