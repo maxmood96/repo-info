@@ -1,7 +1,7 @@
 ## `tomcat:8-jdk21-corretto-al2`
 
 ```console
-$ docker pull tomcat@sha256:f879c38b2ae23e30e54eb0851a4a719b3c6becb9055ad872d4bb84eecdd5614c
+$ docker pull tomcat@sha256:7ca3d6d1e4fe781bc9d460b7fab3d5462f8f774f54d595510cda4bc36bf82e41
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -91,57 +91,57 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:8-jdk21-corretto-al2` - linux; arm64 variant v8
 
 ```console
-$ docker pull tomcat@sha256:c7e1f594f57725692461ec567e08c9476f258b0aad0fdc663fda7364c9a6c71a
+$ docker pull tomcat@sha256:4cb06ef9a054c98e0a8c41a7caa0950d3fa38f94fb572208ed30fd92f7d7d08d
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **244.3 MB (244256900 bytes)**  
+-	Total Size: **244.3 MB (244257059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b7dc77bbd53e488b56c0db0d2fcf3fec5cdc783afdf79646edc698620cddda3`
+-	Image ID: `sha256:05c36c2c0f2abb2218169c3be7e1ab597a4a81800fd6aa45abb100e28881bdc3`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Mon, 11 Mar 2024 22:39:58 GMT
+# Sat, 16 Mar 2024 00:06:05 GMT
 COPY dir:60a98a70510e647cb179bdf64e415936867e1b536f6e2209b88df6cf5ebf8753 in / 
-# Mon, 11 Mar 2024 22:39:59 GMT
+# Sat, 16 Mar 2024 00:06:06 GMT
 CMD ["/bin/bash"]
-# Mon, 11 Mar 2024 23:17:37 GMT
+# Sat, 16 Mar 2024 03:46:32 GMT
 ARG version=21.0.2.14-1
-# Mon, 11 Mar 2024 23:17:59 GMT
+# Sat, 16 Mar 2024 03:46:51 GMT
 # ARGS: version=21.0.2.14-1
 RUN set -eux     && export GNUPGHOME="$(mktemp -d)"     && curl -fL -o corretto.key https://yum.corretto.aws/corretto.key     && gpg --batch --import corretto.key     && gpg --batch --export --armor '6DC3636DAE534049C8B94623A122542AB04F24E3' > corretto.key     && rpm --import corretto.key     && rm -r "$GNUPGHOME" corretto.key     && curl -fL -o /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo     && grep -q '^gpgcheck=1' /etc/yum.repos.d/corretto.repo     && echo "priority=9" >> /etc/yum.repos.d/corretto.repo     && yum install -y java-21-amazon-corretto-devel-$version     && (find /usr/lib/jvm/java-21-amazon-corretto -name src.zip -delete || true)     && yum install -y fontconfig     && yum clean all
-# Mon, 11 Mar 2024 23:18:01 GMT
+# Sat, 16 Mar 2024 03:46:53 GMT
 ENV LANG=C.UTF-8
-# Mon, 11 Mar 2024 23:18:01 GMT
+# Sat, 16 Mar 2024 03:46:53 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-21-amazon-corretto
-# Tue, 12 Mar 2024 00:32:45 GMT
+# Sat, 16 Mar 2024 12:44:00 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Tue, 12 Mar 2024 00:32:46 GMT
+# Sat, 16 Mar 2024 12:44:00 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 12 Mar 2024 00:32:46 GMT
+# Sat, 16 Mar 2024 12:44:00 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Tue, 12 Mar 2024 00:32:46 GMT
+# Sat, 16 Mar 2024 12:44:00 GMT
 WORKDIR /usr/local/tomcat
-# Tue, 12 Mar 2024 00:32:46 GMT
+# Sat, 16 Mar 2024 12:44:00 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Tue, 12 Mar 2024 00:32:46 GMT
+# Sat, 16 Mar 2024 12:44:01 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Tue, 12 Mar 2024 00:35:28 GMT
+# Sat, 16 Mar 2024 12:46:45 GMT
 ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 5C3C5F3E314C866292F359A8F3AD5C94A67F707E 765908099ACF92702C7D949BFA0C35EA8AA299F1 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
-# Tue, 12 Mar 2024 00:35:28 GMT
+# Sat, 16 Mar 2024 12:46:45 GMT
 ENV TOMCAT_MAJOR=8
-# Tue, 12 Mar 2024 00:35:28 GMT
+# Sat, 16 Mar 2024 12:46:45 GMT
 ENV TOMCAT_VERSION=8.5.99
-# Tue, 12 Mar 2024 00:35:28 GMT
+# Sat, 16 Mar 2024 12:46:45 GMT
 ENV TOMCAT_SHA512=38f636039d00c66ff8f7347dfedcc1eef85b7ce25cf98dcc9192df07f85d4f6aec447922e0f934c1ab7d099ec484b2060aad4de496d5ca14637ac435cb55b7c0
-# Tue, 12 Mar 2024 00:36:01 GMT
+# Sat, 16 Mar 2024 12:47:16 GMT
 RUN set -eux; 		if ! command -v yumdb > /dev/null; then 		yum install -y --setopt=skip_missing_names_on_install=False yum-utils; 		yumdb set reason dep yum-utils; 	fi; 	_yum_install_temporary() { ( set -eu +x; 		local pkg todo=''; 		for pkg; do 			if ! rpm --query "$pkg" > /dev/null 2>&1; then 				todo="$todo $pkg"; 			fi; 		done; 		if [ -n "$todo" ]; then 			set -x; 			yum install -y --setopt=skip_missing_names_on_install=False $todo; 			yumdb set reason dep $todo; 		fi; 	) }; 	_yum_install_temporary gzip tar; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://dlcdn.apache.org/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	_yum_install_temporary 		apr-devel 		gcc 		make 		openssl11-devel 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ && $(NF-1) != "=>" { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt rpm --query --whatprovides 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r yumdb set reason user 	; 		yum autoremove -y; 	yum clean all; 	rm -rf /var/cache/yum; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 1777 logs temp work; 		catalina.sh version
-# Tue, 12 Mar 2024 00:36:03 GMT
+# Sat, 16 Mar 2024 12:47:18 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Tue, 12 Mar 2024 00:36:03 GMT
+# Sat, 16 Mar 2024 12:47:18 GMT
 EXPOSE 8080
-# Tue, 12 Mar 2024 00:36:03 GMT
+# Sat, 16 Mar 2024 12:47:18 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -150,19 +150,19 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Mon, 11 Mar 2024 22:40:31 GMT  
 		Size: 64.6 MB (64576374 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89afb3df4ed84c211f9f5bc693ba62048e54560218a7a1c614657efca7e14ea2`  
-		Last Modified: Mon, 11 Mar 2024 23:26:13 GMT  
-		Size: 163.7 MB (163693886 bytes)  
+	-	`sha256:201946717303295f4c7e20fd112327a99499a834cb08fec92e62353b3f0a7a6e`  
+		Last Modified: Sat, 16 Mar 2024 04:00:49 GMT  
+		Size: 163.7 MB (163694008 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c83e60a3dd2daffedf11cbb31b5bdd531ba3956cd20cab40ea8b7b0731d9b8cd`  
-		Last Modified: Tue, 12 Mar 2024 00:41:00 GMT  
+	-	`sha256:6839c3b9b8b7f132de4660b72f93b860957fbdae3311e141ff49393e366321ce`  
+		Last Modified: Sat, 16 Mar 2024 12:52:06 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:631928c63894838f2b24a43f5fdcb98d4515cf9800c37ad57bac843783baed61`  
-		Last Modified: Tue, 12 Mar 2024 00:42:32 GMT  
-		Size: 16.0 MB (15986338 bytes)  
+	-	`sha256:d67b00d8d0da71de34d6c224ad034d87946e66df2c297d480eae4a2bb302fb54`  
+		Last Modified: Sat, 16 Mar 2024 12:53:32 GMT  
+		Size: 16.0 MB (15986373 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d58a1edc09f70d061395ccd1775e72a621d9ba200f078048d848802a40b5663`  
-		Last Modified: Tue, 12 Mar 2024 00:42:30 GMT  
-		Size: 131.0 B  
+	-	`sha256:1410d0957c7fabf76fe06ed0a013cf94dc278f354bce16aaef386d37fe12d999`  
+		Last Modified: Sat, 16 Mar 2024 12:53:31 GMT  
+		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
