@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3ea6d19bfe90a9444ceb8a4be71e7b47641d2a079a67800b8e53e67822cb1681`
-- Created: `2024-01-27T08:51:57.581832199Z`
+- Image ID: `sha256:f0389ba3cac2f2a9e3550f05c480f1e9164e7c2a72adbe44ebf3555d82957d81`
+- Created: `2024-03-16T11:16:04.474496244Z`
 - Virtual Size: ~ 228.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -640,16 +640,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.5.0-r2 description:
+libexpat-2.6.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.5.0-r2 webpage:
+libexpat-2.6.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.5.0-r2 installed size:
+libexpat-2.6.2-r0 installed size:
 144 KiB
 
-libexpat-2.5.0-r2 license:
+libexpat-2.6.2-r0 license:
 MIT
 
 ```
@@ -1184,16 +1184,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2023d-r0 description:
+tzdata-2024a-r0 description:
 Timezone data
 
-tzdata-2023d-r0 webpage:
+tzdata-2024a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2023d-r0 installed size:
-3076 KiB
+tzdata-2024a-r0 installed size:
+3072 KiB
 
-tzdata-2023d-r0 license:
+tzdata-2024a-r0 license:
 Public-Domain
 
 ```
