@@ -141,7 +141,7 @@ CMD ["raku"]
 ## `rakudo-star:2023.08-alpine`
 
 ```console
-$ docker pull rakudo-star@sha256:657c89801633da3118f922aa77b5b36343a55e20eacb0480ad2f4134031b846a
+$ docker pull rakudo-star@sha256:93f572c663e42aae2c596e17d18ae318dc32e908cf29b7f4c802f49a0ad18892
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -198,14 +198,14 @@ CMD ["raku"]
 ### `rakudo-star:2023.08-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rakudo-star@sha256:45f610a76c671cc3e0da1e03f370aeb3747cf83cadc30dc9ec2af97b44ee1476
+$ docker pull rakudo-star@sha256:498433d9535e79d78b3fa04842f73ea7db83703aa92722a109c3db09cb5ceb21
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.8 MB (42793684 bytes)**  
+-	Total Size: **43.1 MB (43091741 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8cc23e422b5422ba8982a5d64cbc59e4baeebbdb4b763736602e35afd084859`
+-	Image ID: `sha256:1c663c0795e31bce83665c0dba465f826a11b2723a9083691e1163c1cf2e393f`
 -	Default Command: `["raku"]`
 
 ```dockerfile
@@ -213,17 +213,17 @@ $ docker pull rakudo-star@sha256:45f610a76c671cc3e0da1e03f370aeb3747cf83cadc30dc
 ADD file:6dc287a22d6cc7723b0576dd3a9a644468d133c54d42c8a8eda403e3117648f7 in / 
 # Fri, 26 Jan 2024 23:44:55 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 08:45:53 GMT
+# Sat, 16 Mar 2024 10:11:20 GMT
 RUN addgroup -S raku && adduser -S raku -G raku
-# Sat, 27 Jan 2024 08:45:53 GMT
+# Sat, 16 Mar 2024 10:11:21 GMT
 ARG rakudo_version=2023.08-01
-# Sat, 27 Jan 2024 08:45:53 GMT
+# Sat, 16 Mar 2024 10:11:21 GMT
 ENV rakudo_version=2023.08-01
-# Sat, 27 Jan 2024 09:05:38 GMT
+# Sat, 16 Mar 2024 10:29:53 GMT
 RUN buildDeps='         bash         gcc         gnupg         libc-dev         make         perl     '         url="https://rakudo.org/dl/star/rakudo-star-${rakudo_version}.tar.gz"     keyfp="3E7E3C6EAF916676AC549285A2919382E961E2EE"     pubkeyurl="https://rakudo.org/keys/rakudo_github_automation-${keyfp}.asc"     tmpdir="$(mktemp -d)"     && set -eux     && export GNUPGHOME="${tmpdir}/gnupg"     && mkdir $GNUPGHOME     && apk add --no-cache --virtual .build-deps $buildDeps     && apk add --no-cache readline     && mkdir ${tmpdir}/rakudo         && wget ${url}.asc -O ${tmpdir}/rakudo.tar.gz.asc     && wget $url -O ${tmpdir}/rakudo.tar.gz     && wget $pubkeyurl -O ${tmpdir}/key.asc         && gpg --batch --import ${tmpdir}/key.asc     && gpg --batch --export $keyfp > ${tmpdir}/${keyfp}.asc     && rm -rf $GNUPGHOME     && mkdir $GNUPGHOME     && gpg --batch --import ${tmpdir}/${keyfp}.asc     && gpg --batch --verify ${tmpdir}/rakudo.tar.gz.asc ${tmpdir}/rakudo.tar.gz         && tar xzf ${tmpdir}/rakudo.tar.gz --strip-components=1 -C ${tmpdir}/rakudo     && (         cd ${tmpdir}/rakudo         && bash bin/rstar install -p /usr     )     && rm -rf $tmpdir     && apk del --no-network .build-deps
-# Sat, 27 Jan 2024 09:05:39 GMT
+# Sat, 16 Mar 2024 10:29:54 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/core/bin:/usr/share/perl6/site/bin:/usr/share/perl6/vendor/bin
-# Sat, 27 Jan 2024 09:05:39 GMT
+# Sat, 16 Mar 2024 10:29:54 GMT
 CMD ["raku"]
 ```
 
@@ -232,19 +232,19 @@ CMD ["raku"]
 		Last Modified: Fri, 26 Jan 2024 23:45:31 GMT  
 		Size: 3.3 MB (3333361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:897976e66518ecaa7a7c5f6fd5376b6b4561c3ad75b51b5429b52c7809a1af4d`  
-		Last Modified: Sat, 27 Jan 2024 09:05:54 GMT  
+	-	`sha256:bbe8bfe00de8aadf1840629aeb63e7d0163fa54d61f13c076da68f0e9c4d79d0`  
+		Last Modified: Sat, 16 Mar 2024 10:30:06 GMT  
 		Size: 1.3 KB (1269 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14cbeca8cfdb968f7cd3086591a7aec9a9fa2d6b6d8f2cfff616921aa1544eed`  
-		Last Modified: Sat, 27 Jan 2024 09:06:00 GMT  
-		Size: 39.5 MB (39459054 bytes)  
+	-	`sha256:14bd9c67676899acd1bff8e63378fac60f87982e0440c24934af7503fa4d5fca`  
+		Last Modified: Sat, 16 Mar 2024 10:30:12 GMT  
+		Size: 39.8 MB (39757111 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rakudo-star:alpine`
 
 ```console
-$ docker pull rakudo-star@sha256:657c89801633da3118f922aa77b5b36343a55e20eacb0480ad2f4134031b846a
+$ docker pull rakudo-star@sha256:93f572c663e42aae2c596e17d18ae318dc32e908cf29b7f4c802f49a0ad18892
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -301,14 +301,14 @@ CMD ["raku"]
 ### `rakudo-star:alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rakudo-star@sha256:45f610a76c671cc3e0da1e03f370aeb3747cf83cadc30dc9ec2af97b44ee1476
+$ docker pull rakudo-star@sha256:498433d9535e79d78b3fa04842f73ea7db83703aa92722a109c3db09cb5ceb21
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.8 MB (42793684 bytes)**  
+-	Total Size: **43.1 MB (43091741 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8cc23e422b5422ba8982a5d64cbc59e4baeebbdb4b763736602e35afd084859`
+-	Image ID: `sha256:1c663c0795e31bce83665c0dba465f826a11b2723a9083691e1163c1cf2e393f`
 -	Default Command: `["raku"]`
 
 ```dockerfile
@@ -316,17 +316,17 @@ $ docker pull rakudo-star@sha256:45f610a76c671cc3e0da1e03f370aeb3747cf83cadc30dc
 ADD file:6dc287a22d6cc7723b0576dd3a9a644468d133c54d42c8a8eda403e3117648f7 in / 
 # Fri, 26 Jan 2024 23:44:55 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 08:45:53 GMT
+# Sat, 16 Mar 2024 10:11:20 GMT
 RUN addgroup -S raku && adduser -S raku -G raku
-# Sat, 27 Jan 2024 08:45:53 GMT
+# Sat, 16 Mar 2024 10:11:21 GMT
 ARG rakudo_version=2023.08-01
-# Sat, 27 Jan 2024 08:45:53 GMT
+# Sat, 16 Mar 2024 10:11:21 GMT
 ENV rakudo_version=2023.08-01
-# Sat, 27 Jan 2024 09:05:38 GMT
+# Sat, 16 Mar 2024 10:29:53 GMT
 RUN buildDeps='         bash         gcc         gnupg         libc-dev         make         perl     '         url="https://rakudo.org/dl/star/rakudo-star-${rakudo_version}.tar.gz"     keyfp="3E7E3C6EAF916676AC549285A2919382E961E2EE"     pubkeyurl="https://rakudo.org/keys/rakudo_github_automation-${keyfp}.asc"     tmpdir="$(mktemp -d)"     && set -eux     && export GNUPGHOME="${tmpdir}/gnupg"     && mkdir $GNUPGHOME     && apk add --no-cache --virtual .build-deps $buildDeps     && apk add --no-cache readline     && mkdir ${tmpdir}/rakudo         && wget ${url}.asc -O ${tmpdir}/rakudo.tar.gz.asc     && wget $url -O ${tmpdir}/rakudo.tar.gz     && wget $pubkeyurl -O ${tmpdir}/key.asc         && gpg --batch --import ${tmpdir}/key.asc     && gpg --batch --export $keyfp > ${tmpdir}/${keyfp}.asc     && rm -rf $GNUPGHOME     && mkdir $GNUPGHOME     && gpg --batch --import ${tmpdir}/${keyfp}.asc     && gpg --batch --verify ${tmpdir}/rakudo.tar.gz.asc ${tmpdir}/rakudo.tar.gz         && tar xzf ${tmpdir}/rakudo.tar.gz --strip-components=1 -C ${tmpdir}/rakudo     && (         cd ${tmpdir}/rakudo         && bash bin/rstar install -p /usr     )     && rm -rf $tmpdir     && apk del --no-network .build-deps
-# Sat, 27 Jan 2024 09:05:39 GMT
+# Sat, 16 Mar 2024 10:29:54 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/core/bin:/usr/share/perl6/site/bin:/usr/share/perl6/vendor/bin
-# Sat, 27 Jan 2024 09:05:39 GMT
+# Sat, 16 Mar 2024 10:29:54 GMT
 CMD ["raku"]
 ```
 
@@ -335,13 +335,13 @@ CMD ["raku"]
 		Last Modified: Fri, 26 Jan 2024 23:45:31 GMT  
 		Size: 3.3 MB (3333361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:897976e66518ecaa7a7c5f6fd5376b6b4561c3ad75b51b5429b52c7809a1af4d`  
-		Last Modified: Sat, 27 Jan 2024 09:05:54 GMT  
+	-	`sha256:bbe8bfe00de8aadf1840629aeb63e7d0163fa54d61f13c076da68f0e9c4d79d0`  
+		Last Modified: Sat, 16 Mar 2024 10:30:06 GMT  
 		Size: 1.3 KB (1269 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14cbeca8cfdb968f7cd3086591a7aec9a9fa2d6b6d8f2cfff616921aa1544eed`  
-		Last Modified: Sat, 27 Jan 2024 09:06:00 GMT  
-		Size: 39.5 MB (39459054 bytes)  
+	-	`sha256:14bd9c67676899acd1bff8e63378fac60f87982e0440c24934af7503fa4d5fca`  
+		Last Modified: Sat, 16 Mar 2024 10:30:12 GMT  
+		Size: 39.8 MB (39757111 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rakudo-star:latest`
