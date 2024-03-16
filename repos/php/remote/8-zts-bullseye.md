@@ -1,7 +1,7 @@
 ## `php:8-zts-bullseye`
 
 ```console
-$ docker pull php@sha256:e66a8e47992bca4032190efcc107b493998cebb25349e61656145dffcb1cb948
+$ docker pull php@sha256:b79e850ee45d7f9feb2549867a1d5063a7d6a96504438c207cecf81453f8d0f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -697,14 +697,14 @@ CMD ["php" "-a"]
 ### `php:8-zts-bullseye` - linux; s390x
 
 ```console
-$ docker pull php@sha256:337c43d87b6cdccba959af5e17c95c838221e63b90e0254d84163732dc7f6e73
+$ docker pull php@sha256:034a07bec8f982a254fd5d84c6688e55a4805ef29d39f479c0d77aeb6df92251
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **147.8 MB (147832434 bytes)**  
+-	Total Size: **147.8 MB (147813122 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d92b463194db86a71e47a29746fdbfca17a7e5468f856770a04b9f050cdd5e0`
+-	Image ID: `sha256:0bc859cc794b903e0289346bd53fc2e231ba415c96893079775127b38c8d21b0`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -731,25 +731,25 @@ ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 12 Mar 2024 08:21:25 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Tue, 12 Mar 2024 08:57:45 GMT
-ENV PHP_VERSION=8.3.3
-# Tue, 12 Mar 2024 08:57:45 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.3.3.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.3.tar.xz.asc
-# Tue, 12 Mar 2024 08:57:45 GMT
-ENV PHP_SHA256=b0a996276fe21fe9ca8f993314c8bc02750f464c7b0343f056fb0894a8dfa9d1
-# Tue, 12 Mar 2024 08:57:54 GMT
+# Sat, 16 Mar 2024 11:58:03 GMT
+ENV PHP_VERSION=8.3.4
+# Sat, 16 Mar 2024 11:58:03 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.3.4.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.4.tar.xz.asc
+# Sat, 16 Mar 2024 11:58:03 GMT
+ENV PHP_SHA256=39a337036a546e5c28aea76cf424ac172db5156bd8a8fd85252e389409a5ba63
+# Sat, 16 Mar 2024 11:58:14 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Tue, 12 Mar 2024 08:57:54 GMT
+# Sat, 16 Mar 2024 11:58:15 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Tue, 12 Mar 2024 09:09:58 GMT
+# Sat, 16 Mar 2024 12:13:03 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--enable-embed 				--enable-zts 		--disable-zend-signals 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Tue, 12 Mar 2024 09:10:00 GMT
+# Sat, 16 Mar 2024 12:13:06 GMT
 COPY multi:6edd033b037aa2d7697fc3b9f82c2f162146c1920a0c6d25a165dc56783204db in /usr/local/bin/ 
-# Tue, 12 Mar 2024 09:10:01 GMT
+# Sat, 16 Mar 2024 12:13:06 GMT
 RUN docker-php-ext-enable sodium
-# Tue, 12 Mar 2024 09:10:01 GMT
+# Sat, 16 Mar 2024 12:13:06 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 12 Mar 2024 09:10:01 GMT
+# Sat, 16 Mar 2024 12:13:06 GMT
 CMD ["php" "-a"]
 ```
 
@@ -770,23 +770,23 @@ CMD ["php" "-a"]
 		Last Modified: Tue, 12 Mar 2024 11:16:34 GMT  
 		Size: 270.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:794ab624b052311df11028b409f70709f70735855b2c0e35e617fa072c4b0dd9`  
-		Last Modified: Tue, 12 Mar 2024 11:18:53 GMT  
-		Size: 12.8 MB (12781578 bytes)  
+	-	`sha256:b85f6c129e07d75f6b45e721c272cfcd5438fdcf3f3bc109bf24e285399a8de2`  
+		Last Modified: Sat, 16 Mar 2024 14:17:36 GMT  
+		Size: 12.8 MB (12762168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f446571cb39fe322554eb1bd4c56f5b0b5a2ce2a465521dd22a15fed38141ffd`  
-		Last Modified: Tue, 12 Mar 2024 11:18:53 GMT  
+	-	`sha256:12fb43face16e0fc195de83a3d43b2062ee0104d07fecd17c9891af312598baf`  
+		Last Modified: Sat, 16 Mar 2024 14:17:35 GMT  
 		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a60f041e48508fc643a986be43dafb1adb38c278be73f66330f81303eac6398`  
-		Last Modified: Tue, 12 Mar 2024 11:19:39 GMT  
-		Size: 33.7 MB (33747899 bytes)  
+	-	`sha256:bd539b7094502b846dc8866d519eb3d75f9c8f90325c1478ea365073eef555a4`  
+		Last Modified: Sat, 16 Mar 2024 14:18:40 GMT  
+		Size: 33.7 MB (33747996 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cba78152f5ccbabdede9787fcc93ff208e4830d079ab98b4c99913a302eebb6b`  
-		Last Modified: Tue, 12 Mar 2024 11:19:34 GMT  
+	-	`sha256:aff4df199d78a9c796c55fa629e0bd9b3a5adb4a17761b4433ce54528b092d98`  
+		Last Modified: Sat, 16 Mar 2024 14:18:35 GMT  
 		Size: 2.4 KB (2448 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9026a212de766f18b8d1fb999a160f6fe2e932f2d411fe5ac138b6adfbe7134`  
-		Last Modified: Tue, 12 Mar 2024 11:19:34 GMT  
-		Size: 246.0 B  
+	-	`sha256:5a295a078ab0af0ee996c7db4ff372dcbbc9e17da52880aedb4199845574af63`  
+		Last Modified: Sat, 16 Mar 2024 14:18:35 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
