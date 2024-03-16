@@ -1,7 +1,7 @@
 ## `tomee:9-jre17-Temurin-alpine-microprofile`
 
 ```console
-$ docker pull tomee@sha256:7df56002cc4312c40c504bede69ad7b847c51ce9c67d221cb2172133c071af0f
+$ docker pull tomee@sha256:36e1afc4e294dfc70f982ad93d16c727d812ed06eaec45c9bbdee6ca3728ce9f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull tomee@sha256:7df56002cc4312c40c504bede69ad7b847c51ce9c67d221cb2172
 ### `tomee:9-jre17-Temurin-alpine-microprofile` - linux; amd64
 
 ```console
-$ docker pull tomee@sha256:58f2d2f527a62e3ee50d6d1e4c849e29d1f76735fa5b71cc8c43646c9b18ab73
+$ docker pull tomee@sha256:27824c17ce574616a9c4608088be5874e0ec139c785f811b8c4dbe0df7ce78d3
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.4 MB (138437318 bytes)**  
+-	Total Size: **138.4 MB (138435859 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcd4dc5623b2b13f7087fbf38ceff1a011e07d7968b7e74fb4d0020d7a98fb18`
+-	Image ID: `sha256:5726e4c2c0ae7a7bcddb65af90d0ba65c6e6d77c23cebdb512f27f61a404c1f1`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -27,43 +27,43 @@ $ docker pull tomee@sha256:58f2d2f527a62e3ee50d6d1e4c849e29d1f76735fa5b71cc8c436
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:54:20 GMT
+# Sat, 16 Mar 2024 03:24:03 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:54:20 GMT
+# Sat, 16 Mar 2024 03:24:03 GMT
 ENV JAVA_VERSION=jdk-17.0.10+7
-# Sat, 27 Jan 2024 00:54:49 GMT
+# Sat, 16 Mar 2024 03:24:33 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='822f43f3de715b8eccad3fab8715cdfda02ec343f004fa56107e73433d2d6fa3';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:54:50 GMT
+# Sat, 16 Mar 2024 03:24:34 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete."
-# Sat, 27 Jan 2024 00:54:50 GMT
+# Sat, 16 Mar 2024 03:24:34 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:54:50 GMT
+# Sat, 16 Mar 2024 03:24:34 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 09:22:19 GMT
+# Sat, 16 Mar 2024 12:20:26 GMT
 ENV PATH=/usr/local/tomee/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 09:22:20 GMT
+# Sat, 16 Mar 2024 12:20:26 GMT
 RUN mkdir -p /usr/local/tomee ~/.gnupg
-# Sat, 27 Jan 2024 09:22:20 GMT
+# Sat, 16 Mar 2024 12:20:26 GMT
 WORKDIR /usr/local/tomee
-# Sat, 27 Jan 2024 09:22:45 GMT
+# Sat, 16 Mar 2024 12:20:51 GMT
 RUN apk add --no-cache gpg gpg-agent gpg-agent dirmngr curl   && rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 09:22:55 GMT
+# Sat, 16 Mar 2024 12:21:02 GMT
 RUN set -xe;   for key in   9056B710F1E332780DE7AF34CBAEBE39A46C4CA1   F067B8140F5DD80E1D3B5D92318242FE9A0B1183   223D3A74B068ECA354DC385CE126833F9CF64915   DBCCD103B8B24F86FFAAB025C8BB472CD297D428   7A2744A8A9AAF063C23EB7868EBE7DBE8D050EEF   B8B301E6105DF628076BD92C5483E55897ABD9B9   FAA603D58B1BA4EDF65896D0ED340E0E6D545F97   A57DAF81C1B69921F4BA8723A8DE0A4DB863A7C1   82D8419BA697F0E7FB85916EE91287822FDB81B1   B7574789F5018690043E6DD9C212662E12F3E1DD   C23A3F6F595EBD0F960270CC997C8F1A5BE6E4C1   678F2D98F1FD9643811639FB622B8F2D043F71D8   BDD0BBEB753192957EFC5F896A62FC8EF17D8FEF   D11DF12CC2CA4894BDE638B967C1227A2678363C   C92604B0DEC5C62CFF5801E73D4683C24EDC64D1   626C542EDA7C113814B77AF09C04914D63645D20   3948829384B269D333CC5B98358807C52B4B0E23   B83D15E72253ED1104EB4FBBDAB472F0E5B8A431   871638A21A7F2C38066471420306A354336B4F0D   ; do     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done
-# Sat, 27 Jan 2024 09:27:04 GMT
+# Sat, 16 Mar 2024 12:25:08 GMT
 ENV TOMEE_VER=9.1.2
-# Sat, 27 Jan 2024 09:27:04 GMT
+# Sat, 16 Mar 2024 12:25:08 GMT
 ENV TOMEE_BUILD=microprofile
-# Sat, 27 Jan 2024 09:27:11 GMT
+# Sat, 16 Mar 2024 12:25:16 GMT
 RUN set -x   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.asc -o tomee.tar.gz.asc   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.sha512 -o tomee.tar.gz.sha512   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz -o apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && gpg --batch --verify tomee.tar.gz.asc apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && sed "s/\t/  /" tomee.tar.gz.sha512 | sha512sum -c -   && tar -zxf apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && mv apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}/* /usr/local/tomee   && rm apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && rm -Rf apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}   && rm bin/*.bat   && rm bin/*.exe   && rm bin/*.tar.gz*   && rm tomee.tar.gz.asc   && rm tomee.tar.gz*
-# Sat, 27 Jan 2024 09:27:12 GMT
+# Sat, 16 Mar 2024 12:25:16 GMT
 EXPOSE 8080
-# Sat, 27 Jan 2024 09:27:12 GMT
+# Sat, 16 Mar 2024 12:25:16 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -72,35 +72,35 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59648cfc069f04a8d0eece9cae80e25155888dc9b5de722b58603efafaa0d78b`  
-		Last Modified: Sat, 27 Jan 2024 00:58:00 GMT  
-		Size: 13.1 MB (13138018 bytes)  
+	-	`sha256:3d6fa00702eb0aa7934afc50cb28145402935b385451bcb6ae891ecc0d4a9b90`  
+		Last Modified: Sat, 16 Mar 2024 03:27:45 GMT  
+		Size: 13.1 MB (13136633 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9abb6cc445659b8286cd811ad69c709228f589624833dfb8517f932b487a9f9`  
-		Last Modified: Sat, 27 Jan 2024 00:58:30 GMT  
-		Size: 46.9 MB (46869769 bytes)  
+	-	`sha256:28528847f172e3604d36dd918544138fdb9d6c4a98d8f87e9cb0db07b8010f88`  
+		Last Modified: Sat, 16 Mar 2024 03:28:15 GMT  
+		Size: 46.9 MB (46869703 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3ede540a85f05a3652a14d8f0c3b7cb34f44f5cad5c4c8335b01412d29db332`  
-		Last Modified: Sat, 27 Jan 2024 00:58:24 GMT  
+	-	`sha256:99966b7f5eb75ff89d49da006e700bf72d8e6090b0444f7d67182936676e4c96`  
+		Last Modified: Sat, 16 Mar 2024 03:28:08 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b03b692a406bdac3987ce16b2b9ce49d576c906580c8a02ac95d13fdcfd0bb06`  
-		Last Modified: Sat, 27 Jan 2024 00:58:23 GMT  
-		Size: 716.0 B  
+	-	`sha256:ce6e16c0974f3b779bb90c8277cce05a08f80fbf190cd98ebfa45d8004d4a44d`  
+		Last Modified: Sat, 16 Mar 2024 03:28:08 GMT  
+		Size: 717.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12ecb8d27f482d57a6241ccee22563ed21369b00e36627ada4188ca9bec8521b`  
-		Last Modified: Sat, 27 Jan 2024 09:34:48 GMT  
-		Size: 219.0 B  
+	-	`sha256:bdef56e4a7ae084687c2de228a9c0bb9ff88c83f97fb39feeef08e9642499945`  
+		Last Modified: Sat, 16 Mar 2024 12:33:18 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afbb1dac9425fd8badbe550a49e957dc3656d25c85a6f5b539ef7a906e67b213`  
-		Last Modified: Sat, 27 Jan 2024 09:35:59 GMT  
-		Size: 6.2 MB (6239241 bytes)  
+	-	`sha256:e9d255273e5422f66b907a2859651f7d97d0ce4c55a13f271aa0d88d65fdb3f6`  
+		Last Modified: Sat, 16 Mar 2024 12:34:31 GMT  
+		Size: 6.2 MB (6239235 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80bd224d762648c1a935085735b8dfc85d8e1b5f2516637bc5ae50c776e9bc88`  
-		Last Modified: Sat, 27 Jan 2024 09:35:58 GMT  
-		Size: 69.3 KB (69319 bytes)  
+	-	`sha256:ea8cd639679ff47303339a77072d7df30210adef2d316478a258c0343c5e0afb`  
+		Last Modified: Sat, 16 Mar 2024 12:34:30 GMT  
+		Size: 69.3 KB (69292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17c51a265306362c76ce4db7b133fd060bf1ebffd4ed122d201500448009b4ea`  
-		Last Modified: Sat, 27 Jan 2024 09:44:28 GMT  
-		Size: 68.7 MB (68711147 bytes)  
+	-	`sha256:891560e45b3470b7846450965682b6ef33bc0769e96d7325fb24121887e109e0`  
+		Last Modified: Sat, 16 Mar 2024 12:43:00 GMT  
+		Size: 68.7 MB (68711172 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
