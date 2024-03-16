@@ -1,7 +1,7 @@
 ## `nats-streaming:latest`
 
 ```console
-$ docker pull nats-streaming@sha256:287ef27136eaf2b5bb0307fd1cb8e1fad30fecafe19085361d8d83c9a42fa072
+$ docker pull nats-streaming@sha256:ae51187bae9d37f9407f237a71f7d96d65769c643fda054db9d4fb833e536661
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -46,25 +46,25 @@ CMD ["-m" "8222"]
 ### `nats-streaming:latest` - linux; arm variant v6
 
 ```console
-$ docker pull nats-streaming@sha256:7c0df6b56800d90dc6702f47f13f23ffbc547d4940f5aae02065b6d2db2ab837
+$ docker pull nats-streaming@sha256:06fb6244e01ee2f750a377e3b4667690606bd00b2da608ebf4d3f510da969f58
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **7.4 MB (7400558 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:db85ebd595a588f3973bc327448cfe9daa15b4ee2365c5d12e8e7c6b25bd8e1d`
+-	Image ID: `sha256:bc4163f52d657630a7497cc5ed780cb0e526d205ab44c1ed5db9bcd92421d441`
 -	Entrypoint: `["\/nats-streaming-server"]`
 -	Default Command: `["-m","8222"]`
 
 ```dockerfile
-# Sat, 18 Nov 2023 02:49:29 GMT
+# Sat, 16 Mar 2024 01:28:54 GMT
 COPY file:e4edbab8bcf05b4e72bb54c048c40d905be561470b53d7775b2681da921079bf in /nats-streaming-server 
-# Sat, 18 Nov 2023 02:49:30 GMT
+# Sat, 16 Mar 2024 01:28:54 GMT
 EXPOSE 4222 8222
-# Sat, 18 Nov 2023 02:49:30 GMT
+# Sat, 16 Mar 2024 01:28:55 GMT
 ENTRYPOINT ["/nats-streaming-server"]
-# Sat, 18 Nov 2023 02:49:30 GMT
+# Sat, 16 Mar 2024 01:28:55 GMT
 CMD ["-m" "8222"]
 ```
 
@@ -77,25 +77,25 @@ CMD ["-m" "8222"]
 ### `nats-streaming:latest` - linux; arm variant v7
 
 ```console
-$ docker pull nats-streaming@sha256:64c568a9f16fd9cdb0de8ebe636484136fff965895eaaa1105d4fa97962a0789
+$ docker pull nats-streaming@sha256:fd65026a57ec9b7f7526cc044f1fce18464576098d2d7f2a9f281ae551e9cfaa
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **7.4 MB (7388059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c4b26a17e490fa4e89a3e60275fc0517264a6b004a248e1433100b70b12d9312`
+-	Image ID: `sha256:7c161cb8c47bbfa86d413659c720348c856925d051a6aa594e3ae448d762c7a4`
 -	Entrypoint: `["\/nats-streaming-server"]`
 -	Default Command: `["-m","8222"]`
 
 ```dockerfile
-# Sat, 18 Nov 2023 01:57:50 GMT
+# Sat, 16 Mar 2024 00:55:20 GMT
 COPY file:a0fedf18f5da1eeab300ea9cdcc5f58d326f2065865996f8076f6ad214be1e98 in /nats-streaming-server 
-# Sat, 18 Nov 2023 01:57:50 GMT
+# Sat, 16 Mar 2024 00:55:20 GMT
 EXPOSE 4222 8222
-# Sat, 18 Nov 2023 01:57:50 GMT
+# Sat, 16 Mar 2024 00:55:20 GMT
 ENTRYPOINT ["/nats-streaming-server"]
-# Sat, 18 Nov 2023 01:57:50 GMT
+# Sat, 16 Mar 2024 00:55:20 GMT
 CMD ["-m" "8222"]
 ```
 
