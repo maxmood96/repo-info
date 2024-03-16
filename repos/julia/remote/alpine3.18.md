@@ -1,7 +1,7 @@
 ## `julia:alpine3.18`
 
 ```console
-$ docker pull julia@sha256:7f8486f8692b9f1a17b4ddb3729524be951c573fff12113a26addaab8308398b
+$ docker pull julia@sha256:4ce0a482bda454fd6aa52c8c5905dc9b9fc77cb242c61be6ba7c72225f41ec5e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,13 +12,13 @@ $ docker pull julia@sha256:7f8486f8692b9f1a17b4ddb3729524be951c573fff12113a26add
 ### `julia:alpine3.18` - linux; amd64
 
 ```console
-$ docker pull julia@sha256:1bbd28d0734008a3c07ce1afec649c697bb97791d8bc4a9ea225b264723a6032
+$ docker pull julia@sha256:3b9843ef7a5e928148df73a1fba0fc8057a425849a3dceb506bc81a99c15dbd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.4 MB (176427089 bytes)**  
+-	Total Size: **176.4 MB (176426466 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9d14faf02c393b47fe0afc12f50978c0926d1ffa16d76a942c4b0de23b685041`
+-	Image ID: `sha256:0c68d0b0ee18907e613bfeb859980bd5a75b39a1a31ca730f024bcdca9089f4c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["julia"]`
 
@@ -50,35 +50,35 @@ CMD ["julia"]
 		Last Modified: Sat, 27 Jan 2024 00:31:36 GMT  
 		Size: 3.4 MB (3402542 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:add9c6579366d1de933786d6803c0d37c34971142f8965ca8d160c30df4dcbbe`  
-		Last Modified: Tue, 05 Mar 2024 00:50:05 GMT  
-		Size: 173.0 MB (173024181 bytes)  
+	-	`sha256:3bac3c727fd1356dac6130fb36c4bc4c087aa58561fc49bf371eb069ad7c8994`  
+		Last Modified: Fri, 15 Mar 2024 23:54:47 GMT  
+		Size: 173.0 MB (173023560 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af0e8cdfed7780083c69c7c15ffe2f8685aff17ef37e3ed27b6102981b97e90e`  
-		Last Modified: Tue, 05 Mar 2024 00:50:02 GMT  
-		Size: 366.0 B  
+	-	`sha256:76f092b1910ec4d0c4f490665352ea1499323d72b337cea40db1f06013b31ee2`  
+		Last Modified: Fri, 15 Mar 2024 23:54:44 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `julia:alpine3.18` - unknown; unknown
 
 ```console
-$ docker pull julia@sha256:62392a9cd2b5103f9e93b2257f1d6efad1024e65fe50a753ae71f75c67f3bf94
+$ docker pull julia@sha256:d958ccdb2cac743b8b552859db5b3922d8d7532fd8457218a36033146f86f4b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **124.8 KB (124787 bytes)**  
+-	Total Size: **125.8 KB (125798 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0a10f722a9dc9b82f2a54123eb6bff69b52e1fb19cf5ef4b59bb644104d57d1a`
+-	Image ID: `sha256:12dcc2aa8d72ee62ecbddcdb70c2e9a74f8da8895a24ae59d56600c0cc90ef01`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4455a8752bf1e2fac66164a4bab62740f3cc1e51b24b32d069cb83bc533d9ea9`  
-		Last Modified: Tue, 05 Mar 2024 00:50:02 GMT  
-		Size: 111.3 KB (111301 bytes)  
+	-	`sha256:0ee5e89842a5462f12b2a30307f7007bc451cd50789581e20ef788f1ce94cc77`  
+		Last Modified: Fri, 15 Mar 2024 23:54:44 GMT  
+		Size: 112.3 KB (112312 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:95b6fd5089fcd208ea41ed4f01894d7c18090d329586bb7e6ec37f95d9084c97`  
-		Last Modified: Tue, 05 Mar 2024 00:50:02 GMT  
+	-	`sha256:6bc229bb826d4e98779e5017dc7875ed37ee9ac9f4b9dd34fdd6ba9f3e659101`  
+		Last Modified: Fri, 15 Mar 2024 23:54:44 GMT  
 		Size: 13.5 KB (13486 bytes)  
 		MIME: application/vnd.in-toto+json
