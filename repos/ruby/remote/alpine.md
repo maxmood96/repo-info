@@ -1,7 +1,7 @@
 ## `ruby:alpine`
 
 ```console
-$ docker pull ruby@sha256:0b267e402a1b8de0bb25b376cd0c29e29a60e9dff8b64ad397c672f48054d4b4
+$ docker pull ruby@sha256:1625f4c5c47262581097a97b28f59a55dabcd588d7c74be53e55527201f5e895
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -465,13 +465,13 @@ $ docker pull ruby@sha256:7dcd6f275aa6c8590e7c847281f936ae8fbe79df485c3919d3c4d8
 ### `ruby:alpine` - linux; ppc64le
 
 ```console
-$ docker pull ruby@sha256:a3068b2c698a8737b37ebb96c44ef9edafa3f44c23a838ebf39c1766847e1865
+$ docker pull ruby@sha256:2fa84bcd88766ea95ab4b45a9d3b29873a75bc3e3367be8b3e8a8ba5f6bb2d8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.7 MB (41666676 bytes)**  
+-	Total Size: **41.7 MB (41666666 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4fbac5c1e0d7ff61d523186eebaa4d4b58652563692fa6278e751899d029a4e5`
+-	Image ID: `sha256:5a24722a49fb7055c9e8b4e080969d82175d6474b8cae338890fe1f9a3ab2bbd`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -510,45 +510,45 @@ CMD ["irb"]
 		Last Modified: Sat, 27 Jan 2024 00:28:10 GMT  
 		Size: 3.4 MB (3358353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2deaf097fef920259a4fdc48fba5faa8280ff99f14e04eef4158def3d720560c`  
-		Last Modified: Wed, 07 Feb 2024 18:33:28 GMT  
-		Size: 6.9 MB (6895109 bytes)  
+	-	`sha256:7cb307286d3e3b8f3ceb24d3d25a75c30828fa828a518ba0f83e0b0639738987`  
+		Last Modified: Sat, 16 Mar 2024 11:41:37 GMT  
+		Size: 6.9 MB (6895127 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ff7fec7fede5b8aacd875cd69cd157c7541a27ad3238410453dcef33eb490ed`  
-		Last Modified: Wed, 07 Feb 2024 18:33:28 GMT  
-		Size: 195.0 B  
+	-	`sha256:226b2954ed0d9bf771486d574b3df647fbaad6c78644bbac42a61c77803fd514`  
+		Last Modified: Sat, 16 Mar 2024 11:41:37 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2885c64c7bf78c54f562c2124b04a9f541aec0899fd07f99bff0972fc9766578`  
-		Last Modified: Thu, 29 Feb 2024 23:10:33 GMT  
-		Size: 31.4 MB (31412880 bytes)  
+	-	`sha256:65a9b5acd1b0a720777d66740dc32dd4ea01827e92727012e4f7622be2d6e19a`  
+		Last Modified: Sat, 16 Mar 2024 11:41:38 GMT  
+		Size: 31.4 MB (31412849 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2e38af6cb2197ef7116d747aed840f936ea353428f885254599f6d0e87b9af2`  
-		Last Modified: Thu, 29 Feb 2024 23:10:32 GMT  
-		Size: 139.0 B  
+	-	`sha256:2661881c44de855453221953d006f7268443f65296b8bba74b444f42e6ec63f8`  
+		Last Modified: Sat, 16 Mar 2024 11:41:37 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ruby:alpine` - unknown; unknown
 
 ```console
-$ docker pull ruby@sha256:aef343050bfdfb3c111480a8c4e6790534c4411241f7ef3e1327f036b02e78aa
+$ docker pull ruby@sha256:c3304f33dcd27e3d097c721af5c26ff98aae8fda8326d1cb547915b11815ba89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **981.0 KB (981019 bytes)**  
+-	Total Size: **981.0 KB (981020 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a7f0e1ee6012d696f4b1c658b45e73160f6eec2b2d39b89c5d37153fc237deb`
+-	Image ID: `sha256:23ead4bc5d858691368ff00e136cf9015d74de43e8377cbcff8ddcdbc896a34f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:119ea26ca1a88e063f6b192c0480f24182a902331a2171506cdaebf39fa12e3d`  
-		Last Modified: Thu, 29 Feb 2024 23:10:32 GMT  
+	-	`sha256:49fe1526f3af75bdb68e18079d0925042a53563b6875fb03b2791f3da40f5b83`  
+		Last Modified: Sat, 16 Mar 2024 11:41:37 GMT  
 		Size: 953.3 KB (953312 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a3cdff7eae2929a5a00c729b7595fe4c961050df095f15885f6966e3bbbc00fc`  
-		Last Modified: Thu, 29 Feb 2024 23:10:31 GMT  
-		Size: 27.7 KB (27707 bytes)  
+	-	`sha256:15d57dd5fc7c479761fc393479947546bce1e99e1c038ee3476a17643036ba06`  
+		Last Modified: Sat, 16 Mar 2024 11:41:37 GMT  
+		Size: 27.7 KB (27708 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ruby:alpine` - linux; s390x
