@@ -1891,7 +1891,7 @@ CMD ["repl"]
 ## `clojure:temurin-11-alpine`
 
 ```console
-$ docker pull clojure@sha256:b65e33bc9d2e39e7ec046bd457abed3f491e85e9ccf6d8e31329db8801c1e318
+$ docker pull clojure@sha256:db0aadde03f0e69d8c71e29c03b7551ab4450100162b933fe1b36b3eb32ce0a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1901,14 +1901,14 @@ $ docker pull clojure@sha256:b65e33bc9d2e39e7ec046bd457abed3f491e85e9ccf6d8e3132
 ### `clojure:temurin-11-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:82a4b3bd9a930ee32c51bcae865caa12664f062c817c00dfeca129c5d7a4dda8
+$ docker pull clojure@sha256:0ee84d157dc2abc4d196a868bf17e42d981067b823f888ffea2c3cb27d1916c6
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.4 MB (177426349 bytes)**  
+-	Total Size: **177.4 MB (177424963 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:858a81a75873f03f3f57d0f51012c1ec81962a091f0e44b3c9ae05e124ea907a`
+-	Image ID: `sha256:b9f7e7369c873f874f81f4158711b3929c54a925c958c6069d8e6d277f6e1164`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
@@ -1917,35 +1917,35 @@ $ docker pull clojure@sha256:82a4b3bd9a930ee32c51bcae865caa12664f062c817c00dfeca
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:53:00 GMT
+# Sat, 16 Mar 2024 03:22:34 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:53:37 GMT
+# Sat, 16 Mar 2024 03:23:14 GMT
 ENV JAVA_VERSION=jdk-11.0.22+7
-# Sat, 27 Jan 2024 00:53:46 GMT
+# Sat, 16 Mar 2024 03:23:23 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='b541c99a5de71ebbe53e7815f9222e377b814fa1025f9f5274cb7bad226809f8';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 CMD ["jshell"]
-# Sat, 27 Jan 2024 09:52:07 GMT
+# Sat, 16 Mar 2024 12:02:32 GMT
 ENV CLOJURE_VERSION=1.11.1.1435
-# Sat, 27 Jan 2024 09:52:07 GMT
+# Sat, 16 Mar 2024 12:02:33 GMT
 WORKDIR /tmp
-# Sat, 27 Jan 2024 09:52:12 GMT
+# Sat, 16 Mar 2024 12:02:37 GMT
 RUN apk add --no-cache curl bash make git && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
-# Sat, 27 Jan 2024 09:52:12 GMT
+# Sat, 16 Mar 2024 12:02:38 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Sat, 27 Jan 2024 09:52:12 GMT
+# Sat, 16 Mar 2024 12:02:38 GMT
 CMD ["clj"]
 ```
 
@@ -1954,29 +1954,29 @@ CMD ["clj"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d043da2becbad64efc04c3177047b954002aa6a615a5716af19ecff2d3ff3ed0`  
-		Last Modified: Sat, 27 Jan 2024 00:56:34 GMT  
-		Size: 8.5 MB (8528146 bytes)  
+	-	`sha256:976103255ec1c30e915c990ab7c4afbf0348497ea66d200421c4d2bc23d6dd76`  
+		Last Modified: Sat, 16 Mar 2024 03:26:22 GMT  
+		Size: 8.5 MB (8526752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d770813566ace7742087c2bce62d8d9bd663f7886f3b58f416026074632f870d`  
-		Last Modified: Sat, 27 Jan 2024 00:57:24 GMT  
-		Size: 140.5 MB (140489170 bytes)  
+	-	`sha256:dbf1ca864b0522e1d3876431e2b6b47117f4fb4ae79aad639374b0342a549dde`  
+		Last Modified: Sat, 16 Mar 2024 03:27:12 GMT  
+		Size: 140.5 MB (140489184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f7ed25e6ab7a24f87e7e0744e91fe7f632968e4e3576013a381f17a992fb2e5`  
-		Last Modified: Sat, 27 Jan 2024 00:57:14 GMT  
-		Size: 174.0 B  
+	-	`sha256:ce08a0028c1d253de32b0e996ea40a15dcd237923215d4cfe524b1d2d46a1779`  
+		Last Modified: Sat, 16 Mar 2024 03:27:00 GMT  
+		Size: 181.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3eb764dc0954e0f7f98a91f4a30e02ddc68d011d4703d21207b2f1fbf2d3964`  
-		Last Modified: Sat, 27 Jan 2024 00:57:14 GMT  
+	-	`sha256:44d237574a8123d4d5783b3d4c957327736b2e96280d838605635b985b1e6c6c`  
+		Last Modified: Sat, 16 Mar 2024 03:27:01 GMT  
 		Size: 716.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e19b54e604b3ba37392c09372e24e1be8c5f496f0ef452449cfdd5260e7f69fe`  
-		Last Modified: Sat, 27 Jan 2024 09:56:52 GMT  
-		Size: 25.0 MB (24998793 bytes)  
+	-	`sha256:dc42bd3c6a9114c166845317269e876e7eb3b1a82a5cb48a57b234bdceb98ce2`  
+		Last Modified: Sat, 16 Mar 2024 12:07:20 GMT  
+		Size: 25.0 MB (24998777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6fb4db37f34c9fc6a003a6fa31e1d2232173cf5753d38c2d7ccfff8207dbdcd`  
-		Last Modified: Sat, 27 Jan 2024 09:56:49 GMT  
-		Size: 621.0 B  
+	-	`sha256:b113017939d6c73dae06da5ab4bfb03748bfd0aa735c33182fecf0f5b864ca12`  
+		Last Modified: Sat, 16 Mar 2024 12:07:19 GMT  
+		Size: 624.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:temurin-11-bookworm`
@@ -5492,7 +5492,7 @@ CMD ["lein" "repl"]
 ## `clojure:temurin-11-lein-2.11.2-alpine`
 
 ```console
-$ docker pull clojure@sha256:9dade1408c18a78749e4e06b6eb3a1ef5b835c88768bd476b3ffee5e3e4b2426
+$ docker pull clojure@sha256:89ce7518844769eccd8126197ace2ab9e144eb5a078ea21939b3b0c6e94a2815
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5502,14 +5502,14 @@ $ docker pull clojure@sha256:9dade1408c18a78749e4e06b6eb3a1ef5b835c88768bd476b3f
 ### `clojure:temurin-11-lein-2.11.2-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:475771f64c8d5de7c73ec2fa0b86e0b95d9a8eb3dc392ae4f5b5f410392018cb
+$ docker pull clojure@sha256:7f5d7777d5575bbe0e9f960b20de4913ffb72aac5fcf2dbc9aa130daa02ee713
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.6 MB (171629231 bytes)**  
+-	Total Size: **171.6 MB (171627912 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:219a604df9c7cedbd60034ed666c1123fff8b61b6b08734f135d4bea84ff339d`
+-	Image ID: `sha256:29ba9af5f45c84d1e2f04c3610fa359b561485f0d0ef46a2be10062d176a0cb4`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["lein","repl"]`
 
@@ -5518,41 +5518,41 @@ $ docker pull clojure@sha256:475771f64c8d5de7c73ec2fa0b86e0b95d9a8eb3dc392ae4f5b
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:53:00 GMT
+# Sat, 16 Mar 2024 03:22:34 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:53:37 GMT
+# Sat, 16 Mar 2024 03:23:14 GMT
 ENV JAVA_VERSION=jdk-11.0.22+7
-# Sat, 27 Jan 2024 00:53:46 GMT
+# Sat, 16 Mar 2024 03:23:23 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='b541c99a5de71ebbe53e7815f9222e377b814fa1025f9f5274cb7bad226809f8';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 CMD ["jshell"]
-# Thu, 15 Feb 2024 02:56:43 GMT
+# Sat, 16 Mar 2024 12:02:04 GMT
 ENV LEIN_VERSION=2.11.2
-# Thu, 15 Feb 2024 02:56:43 GMT
+# Sat, 16 Mar 2024 12:02:04 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 15 Feb 2024 02:56:43 GMT
+# Sat, 16 Mar 2024 12:02:04 GMT
 WORKDIR /tmp
-# Thu, 15 Feb 2024 02:56:51 GMT
+# Sat, 16 Mar 2024 12:02:12 GMT
 RUN set -eux; apk add --no-cache ca-certificates bash tar openssl gnupg && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apk del ca-certificates tar openssl gnupg
-# Thu, 15 Feb 2024 02:56:51 GMT
+# Sat, 16 Mar 2024 12:02:12 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Thu, 15 Feb 2024 02:56:51 GMT
+# Sat, 16 Mar 2024 12:02:12 GMT
 ENV LEIN_ROOT=1
-# Thu, 15 Feb 2024 02:56:54 GMT
+# Sat, 16 Mar 2024 12:02:14 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.1"]])' > project.clj   && lein deps && rm project.clj
-# Thu, 15 Feb 2024 02:56:54 GMT
+# Sat, 16 Mar 2024 12:02:14 GMT
 CMD ["lein" "repl"]
 ```
 
@@ -5561,29 +5561,29 @@ CMD ["lein" "repl"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d043da2becbad64efc04c3177047b954002aa6a615a5716af19ecff2d3ff3ed0`  
-		Last Modified: Sat, 27 Jan 2024 00:56:34 GMT  
-		Size: 8.5 MB (8528146 bytes)  
+	-	`sha256:976103255ec1c30e915c990ab7c4afbf0348497ea66d200421c4d2bc23d6dd76`  
+		Last Modified: Sat, 16 Mar 2024 03:26:22 GMT  
+		Size: 8.5 MB (8526752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d770813566ace7742087c2bce62d8d9bd663f7886f3b58f416026074632f870d`  
-		Last Modified: Sat, 27 Jan 2024 00:57:24 GMT  
-		Size: 140.5 MB (140489170 bytes)  
+	-	`sha256:dbf1ca864b0522e1d3876431e2b6b47117f4fb4ae79aad639374b0342a549dde`  
+		Last Modified: Sat, 16 Mar 2024 03:27:12 GMT  
+		Size: 140.5 MB (140489184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f7ed25e6ab7a24f87e7e0744e91fe7f632968e4e3576013a381f17a992fb2e5`  
-		Last Modified: Sat, 27 Jan 2024 00:57:14 GMT  
-		Size: 174.0 B  
+	-	`sha256:ce08a0028c1d253de32b0e996ea40a15dcd237923215d4cfe524b1d2d46a1779`  
+		Last Modified: Sat, 16 Mar 2024 03:27:00 GMT  
+		Size: 181.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3eb764dc0954e0f7f98a91f4a30e02ddc68d011d4703d21207b2f1fbf2d3964`  
-		Last Modified: Sat, 27 Jan 2024 00:57:14 GMT  
+	-	`sha256:44d237574a8123d4d5783b3d4c957327736b2e96280d838605635b985b1e6c6c`  
+		Last Modified: Sat, 16 Mar 2024 03:27:01 GMT  
 		Size: 716.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f75e771bbf53f3541533d30da8539f6f0bb7632aabc6fbc2e9ee0d65a25ec57`  
-		Last Modified: Thu, 15 Feb 2024 03:08:32 GMT  
-		Size: 14.8 MB (14803151 bytes)  
+	-	`sha256:d108dce11ece7abdd23860f4c8c90365729b0fa77835ad706b71da2732166764`  
+		Last Modified: Sat, 16 Mar 2024 12:07:07 GMT  
+		Size: 14.8 MB (14803175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b2621929ebb1abf996ef94e98355e12d349a261dcd6481e3bfde8f84ef39661`  
-		Last Modified: Thu, 15 Feb 2024 03:08:31 GMT  
-		Size: 4.4 MB (4399145 bytes)  
+	-	`sha256:03b1a7d401e3613f3cefed0b9d01504cc32be35d611a83ea2dab35441cabad2c`  
+		Last Modified: Sat, 16 Mar 2024 12:07:06 GMT  
+		Size: 4.4 MB (4399175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:temurin-11-lein-2.11.2-bookworm`
@@ -6515,7 +6515,7 @@ CMD ["lein" "repl"]
 ## `clojure:temurin-11-lein-alpine`
 
 ```console
-$ docker pull clojure@sha256:9dade1408c18a78749e4e06b6eb3a1ef5b835c88768bd476b3ffee5e3e4b2426
+$ docker pull clojure@sha256:89ce7518844769eccd8126197ace2ab9e144eb5a078ea21939b3b0c6e94a2815
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6525,14 +6525,14 @@ $ docker pull clojure@sha256:9dade1408c18a78749e4e06b6eb3a1ef5b835c88768bd476b3f
 ### `clojure:temurin-11-lein-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:475771f64c8d5de7c73ec2fa0b86e0b95d9a8eb3dc392ae4f5b5f410392018cb
+$ docker pull clojure@sha256:7f5d7777d5575bbe0e9f960b20de4913ffb72aac5fcf2dbc9aa130daa02ee713
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.6 MB (171629231 bytes)**  
+-	Total Size: **171.6 MB (171627912 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:219a604df9c7cedbd60034ed666c1123fff8b61b6b08734f135d4bea84ff339d`
+-	Image ID: `sha256:29ba9af5f45c84d1e2f04c3610fa359b561485f0d0ef46a2be10062d176a0cb4`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["lein","repl"]`
 
@@ -6541,41 +6541,41 @@ $ docker pull clojure@sha256:475771f64c8d5de7c73ec2fa0b86e0b95d9a8eb3dc392ae4f5b
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:53:00 GMT
+# Sat, 16 Mar 2024 03:22:34 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:53:37 GMT
+# Sat, 16 Mar 2024 03:23:14 GMT
 ENV JAVA_VERSION=jdk-11.0.22+7
-# Sat, 27 Jan 2024 00:53:46 GMT
+# Sat, 16 Mar 2024 03:23:23 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='b541c99a5de71ebbe53e7815f9222e377b814fa1025f9f5274cb7bad226809f8';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 CMD ["jshell"]
-# Thu, 15 Feb 2024 02:56:43 GMT
+# Sat, 16 Mar 2024 12:02:04 GMT
 ENV LEIN_VERSION=2.11.2
-# Thu, 15 Feb 2024 02:56:43 GMT
+# Sat, 16 Mar 2024 12:02:04 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 15 Feb 2024 02:56:43 GMT
+# Sat, 16 Mar 2024 12:02:04 GMT
 WORKDIR /tmp
-# Thu, 15 Feb 2024 02:56:51 GMT
+# Sat, 16 Mar 2024 12:02:12 GMT
 RUN set -eux; apk add --no-cache ca-certificates bash tar openssl gnupg && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apk del ca-certificates tar openssl gnupg
-# Thu, 15 Feb 2024 02:56:51 GMT
+# Sat, 16 Mar 2024 12:02:12 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Thu, 15 Feb 2024 02:56:51 GMT
+# Sat, 16 Mar 2024 12:02:12 GMT
 ENV LEIN_ROOT=1
-# Thu, 15 Feb 2024 02:56:54 GMT
+# Sat, 16 Mar 2024 12:02:14 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.1"]])' > project.clj   && lein deps && rm project.clj
-# Thu, 15 Feb 2024 02:56:54 GMT
+# Sat, 16 Mar 2024 12:02:14 GMT
 CMD ["lein" "repl"]
 ```
 
@@ -6584,29 +6584,29 @@ CMD ["lein" "repl"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d043da2becbad64efc04c3177047b954002aa6a615a5716af19ecff2d3ff3ed0`  
-		Last Modified: Sat, 27 Jan 2024 00:56:34 GMT  
-		Size: 8.5 MB (8528146 bytes)  
+	-	`sha256:976103255ec1c30e915c990ab7c4afbf0348497ea66d200421c4d2bc23d6dd76`  
+		Last Modified: Sat, 16 Mar 2024 03:26:22 GMT  
+		Size: 8.5 MB (8526752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d770813566ace7742087c2bce62d8d9bd663f7886f3b58f416026074632f870d`  
-		Last Modified: Sat, 27 Jan 2024 00:57:24 GMT  
-		Size: 140.5 MB (140489170 bytes)  
+	-	`sha256:dbf1ca864b0522e1d3876431e2b6b47117f4fb4ae79aad639374b0342a549dde`  
+		Last Modified: Sat, 16 Mar 2024 03:27:12 GMT  
+		Size: 140.5 MB (140489184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f7ed25e6ab7a24f87e7e0744e91fe7f632968e4e3576013a381f17a992fb2e5`  
-		Last Modified: Sat, 27 Jan 2024 00:57:14 GMT  
-		Size: 174.0 B  
+	-	`sha256:ce08a0028c1d253de32b0e996ea40a15dcd237923215d4cfe524b1d2d46a1779`  
+		Last Modified: Sat, 16 Mar 2024 03:27:00 GMT  
+		Size: 181.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3eb764dc0954e0f7f98a91f4a30e02ddc68d011d4703d21207b2f1fbf2d3964`  
-		Last Modified: Sat, 27 Jan 2024 00:57:14 GMT  
+	-	`sha256:44d237574a8123d4d5783b3d4c957327736b2e96280d838605635b985b1e6c6c`  
+		Last Modified: Sat, 16 Mar 2024 03:27:01 GMT  
 		Size: 716.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f75e771bbf53f3541533d30da8539f6f0bb7632aabc6fbc2e9ee0d65a25ec57`  
-		Last Modified: Thu, 15 Feb 2024 03:08:32 GMT  
-		Size: 14.8 MB (14803151 bytes)  
+	-	`sha256:d108dce11ece7abdd23860f4c8c90365729b0fa77835ad706b71da2732166764`  
+		Last Modified: Sat, 16 Mar 2024 12:07:07 GMT  
+		Size: 14.8 MB (14803175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b2621929ebb1abf996ef94e98355e12d349a261dcd6481e3bfde8f84ef39661`  
-		Last Modified: Thu, 15 Feb 2024 03:08:31 GMT  
-		Size: 4.4 MB (4399145 bytes)  
+	-	`sha256:03b1a7d401e3613f3cefed0b9d01504cc32be35d611a83ea2dab35441cabad2c`  
+		Last Modified: Sat, 16 Mar 2024 12:07:06 GMT  
+		Size: 4.4 MB (4399175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:temurin-11-lein-bookworm`
@@ -7916,7 +7916,7 @@ CMD ["clj"]
 ## `clojure:temurin-11-tools-deps-1.11.1.1435-alpine`
 
 ```console
-$ docker pull clojure@sha256:b65e33bc9d2e39e7ec046bd457abed3f491e85e9ccf6d8e31329db8801c1e318
+$ docker pull clojure@sha256:db0aadde03f0e69d8c71e29c03b7551ab4450100162b933fe1b36b3eb32ce0a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7926,14 +7926,14 @@ $ docker pull clojure@sha256:b65e33bc9d2e39e7ec046bd457abed3f491e85e9ccf6d8e3132
 ### `clojure:temurin-11-tools-deps-1.11.1.1435-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:82a4b3bd9a930ee32c51bcae865caa12664f062c817c00dfeca129c5d7a4dda8
+$ docker pull clojure@sha256:0ee84d157dc2abc4d196a868bf17e42d981067b823f888ffea2c3cb27d1916c6
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.4 MB (177426349 bytes)**  
+-	Total Size: **177.4 MB (177424963 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:858a81a75873f03f3f57d0f51012c1ec81962a091f0e44b3c9ae05e124ea907a`
+-	Image ID: `sha256:b9f7e7369c873f874f81f4158711b3929c54a925c958c6069d8e6d277f6e1164`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
@@ -7942,35 +7942,35 @@ $ docker pull clojure@sha256:82a4b3bd9a930ee32c51bcae865caa12664f062c817c00dfeca
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:53:00 GMT
+# Sat, 16 Mar 2024 03:22:34 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:53:37 GMT
+# Sat, 16 Mar 2024 03:23:14 GMT
 ENV JAVA_VERSION=jdk-11.0.22+7
-# Sat, 27 Jan 2024 00:53:46 GMT
+# Sat, 16 Mar 2024 03:23:23 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='b541c99a5de71ebbe53e7815f9222e377b814fa1025f9f5274cb7bad226809f8';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 CMD ["jshell"]
-# Sat, 27 Jan 2024 09:52:07 GMT
+# Sat, 16 Mar 2024 12:02:32 GMT
 ENV CLOJURE_VERSION=1.11.1.1435
-# Sat, 27 Jan 2024 09:52:07 GMT
+# Sat, 16 Mar 2024 12:02:33 GMT
 WORKDIR /tmp
-# Sat, 27 Jan 2024 09:52:12 GMT
+# Sat, 16 Mar 2024 12:02:37 GMT
 RUN apk add --no-cache curl bash make git && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
-# Sat, 27 Jan 2024 09:52:12 GMT
+# Sat, 16 Mar 2024 12:02:38 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Sat, 27 Jan 2024 09:52:12 GMT
+# Sat, 16 Mar 2024 12:02:38 GMT
 CMD ["clj"]
 ```
 
@@ -7979,29 +7979,29 @@ CMD ["clj"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d043da2becbad64efc04c3177047b954002aa6a615a5716af19ecff2d3ff3ed0`  
-		Last Modified: Sat, 27 Jan 2024 00:56:34 GMT  
-		Size: 8.5 MB (8528146 bytes)  
+	-	`sha256:976103255ec1c30e915c990ab7c4afbf0348497ea66d200421c4d2bc23d6dd76`  
+		Last Modified: Sat, 16 Mar 2024 03:26:22 GMT  
+		Size: 8.5 MB (8526752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d770813566ace7742087c2bce62d8d9bd663f7886f3b58f416026074632f870d`  
-		Last Modified: Sat, 27 Jan 2024 00:57:24 GMT  
-		Size: 140.5 MB (140489170 bytes)  
+	-	`sha256:dbf1ca864b0522e1d3876431e2b6b47117f4fb4ae79aad639374b0342a549dde`  
+		Last Modified: Sat, 16 Mar 2024 03:27:12 GMT  
+		Size: 140.5 MB (140489184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f7ed25e6ab7a24f87e7e0744e91fe7f632968e4e3576013a381f17a992fb2e5`  
-		Last Modified: Sat, 27 Jan 2024 00:57:14 GMT  
-		Size: 174.0 B  
+	-	`sha256:ce08a0028c1d253de32b0e996ea40a15dcd237923215d4cfe524b1d2d46a1779`  
+		Last Modified: Sat, 16 Mar 2024 03:27:00 GMT  
+		Size: 181.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3eb764dc0954e0f7f98a91f4a30e02ddc68d011d4703d21207b2f1fbf2d3964`  
-		Last Modified: Sat, 27 Jan 2024 00:57:14 GMT  
+	-	`sha256:44d237574a8123d4d5783b3d4c957327736b2e96280d838605635b985b1e6c6c`  
+		Last Modified: Sat, 16 Mar 2024 03:27:01 GMT  
 		Size: 716.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e19b54e604b3ba37392c09372e24e1be8c5f496f0ef452449cfdd5260e7f69fe`  
-		Last Modified: Sat, 27 Jan 2024 09:56:52 GMT  
-		Size: 25.0 MB (24998793 bytes)  
+	-	`sha256:dc42bd3c6a9114c166845317269e876e7eb3b1a82a5cb48a57b234bdceb98ce2`  
+		Last Modified: Sat, 16 Mar 2024 12:07:20 GMT  
+		Size: 25.0 MB (24998777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6fb4db37f34c9fc6a003a6fa31e1d2232173cf5753d38c2d7ccfff8207dbdcd`  
-		Last Modified: Sat, 27 Jan 2024 09:56:49 GMT  
-		Size: 621.0 B  
+	-	`sha256:b113017939d6c73dae06da5ab4bfb03748bfd0aa735c33182fecf0f5b864ca12`  
+		Last Modified: Sat, 16 Mar 2024 12:07:19 GMT  
+		Size: 624.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:temurin-11-tools-deps-1.11.1.1435-bookworm`
@@ -8861,7 +8861,7 @@ CMD ["clj"]
 ## `clojure:temurin-11-tools-deps-alpine`
 
 ```console
-$ docker pull clojure@sha256:b65e33bc9d2e39e7ec046bd457abed3f491e85e9ccf6d8e31329db8801c1e318
+$ docker pull clojure@sha256:db0aadde03f0e69d8c71e29c03b7551ab4450100162b933fe1b36b3eb32ce0a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8871,14 +8871,14 @@ $ docker pull clojure@sha256:b65e33bc9d2e39e7ec046bd457abed3f491e85e9ccf6d8e3132
 ### `clojure:temurin-11-tools-deps-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:82a4b3bd9a930ee32c51bcae865caa12664f062c817c00dfeca129c5d7a4dda8
+$ docker pull clojure@sha256:0ee84d157dc2abc4d196a868bf17e42d981067b823f888ffea2c3cb27d1916c6
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.4 MB (177426349 bytes)**  
+-	Total Size: **177.4 MB (177424963 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:858a81a75873f03f3f57d0f51012c1ec81962a091f0e44b3c9ae05e124ea907a`
+-	Image ID: `sha256:b9f7e7369c873f874f81f4158711b3929c54a925c958c6069d8e6d277f6e1164`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
@@ -8887,35 +8887,35 @@ $ docker pull clojure@sha256:82a4b3bd9a930ee32c51bcae865caa12664f062c817c00dfeca
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:53:00 GMT
+# Sat, 16 Mar 2024 03:22:34 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:53:37 GMT
+# Sat, 16 Mar 2024 03:23:14 GMT
 ENV JAVA_VERSION=jdk-11.0.22+7
-# Sat, 27 Jan 2024 00:53:46 GMT
+# Sat, 16 Mar 2024 03:23:23 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='b541c99a5de71ebbe53e7815f9222e377b814fa1025f9f5274cb7bad226809f8';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 00:53:48 GMT
+# Sat, 16 Mar 2024 03:23:26 GMT
 CMD ["jshell"]
-# Sat, 27 Jan 2024 09:52:07 GMT
+# Sat, 16 Mar 2024 12:02:32 GMT
 ENV CLOJURE_VERSION=1.11.1.1435
-# Sat, 27 Jan 2024 09:52:07 GMT
+# Sat, 16 Mar 2024 12:02:33 GMT
 WORKDIR /tmp
-# Sat, 27 Jan 2024 09:52:12 GMT
+# Sat, 16 Mar 2024 12:02:37 GMT
 RUN apk add --no-cache curl bash make git && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
-# Sat, 27 Jan 2024 09:52:12 GMT
+# Sat, 16 Mar 2024 12:02:38 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Sat, 27 Jan 2024 09:52:12 GMT
+# Sat, 16 Mar 2024 12:02:38 GMT
 CMD ["clj"]
 ```
 
@@ -8924,29 +8924,29 @@ CMD ["clj"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d043da2becbad64efc04c3177047b954002aa6a615a5716af19ecff2d3ff3ed0`  
-		Last Modified: Sat, 27 Jan 2024 00:56:34 GMT  
-		Size: 8.5 MB (8528146 bytes)  
+	-	`sha256:976103255ec1c30e915c990ab7c4afbf0348497ea66d200421c4d2bc23d6dd76`  
+		Last Modified: Sat, 16 Mar 2024 03:26:22 GMT  
+		Size: 8.5 MB (8526752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d770813566ace7742087c2bce62d8d9bd663f7886f3b58f416026074632f870d`  
-		Last Modified: Sat, 27 Jan 2024 00:57:24 GMT  
-		Size: 140.5 MB (140489170 bytes)  
+	-	`sha256:dbf1ca864b0522e1d3876431e2b6b47117f4fb4ae79aad639374b0342a549dde`  
+		Last Modified: Sat, 16 Mar 2024 03:27:12 GMT  
+		Size: 140.5 MB (140489184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f7ed25e6ab7a24f87e7e0744e91fe7f632968e4e3576013a381f17a992fb2e5`  
-		Last Modified: Sat, 27 Jan 2024 00:57:14 GMT  
-		Size: 174.0 B  
+	-	`sha256:ce08a0028c1d253de32b0e996ea40a15dcd237923215d4cfe524b1d2d46a1779`  
+		Last Modified: Sat, 16 Mar 2024 03:27:00 GMT  
+		Size: 181.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3eb764dc0954e0f7f98a91f4a30e02ddc68d011d4703d21207b2f1fbf2d3964`  
-		Last Modified: Sat, 27 Jan 2024 00:57:14 GMT  
+	-	`sha256:44d237574a8123d4d5783b3d4c957327736b2e96280d838605635b985b1e6c6c`  
+		Last Modified: Sat, 16 Mar 2024 03:27:01 GMT  
 		Size: 716.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e19b54e604b3ba37392c09372e24e1be8c5f496f0ef452449cfdd5260e7f69fe`  
-		Last Modified: Sat, 27 Jan 2024 09:56:52 GMT  
-		Size: 25.0 MB (24998793 bytes)  
+	-	`sha256:dc42bd3c6a9114c166845317269e876e7eb3b1a82a5cb48a57b234bdceb98ce2`  
+		Last Modified: Sat, 16 Mar 2024 12:07:20 GMT  
+		Size: 25.0 MB (24998777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6fb4db37f34c9fc6a003a6fa31e1d2232173cf5753d38c2d7ccfff8207dbdcd`  
-		Last Modified: Sat, 27 Jan 2024 09:56:49 GMT  
-		Size: 621.0 B  
+	-	`sha256:b113017939d6c73dae06da5ab4bfb03748bfd0aa735c33182fecf0f5b864ca12`  
+		Last Modified: Sat, 16 Mar 2024 12:07:19 GMT  
+		Size: 624.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:temurin-11-tools-deps-bookworm`
@@ -9806,7 +9806,7 @@ CMD ["clj"]
 ## `clojure:temurin-17-alpine`
 
 ```console
-$ docker pull clojure@sha256:6e5f2f29bab522ab74ddf0a4464892a34bb7b688055479d5161b44c6f37769df
+$ docker pull clojure@sha256:4e8b68225dd68160a2d3bc51bc92179747ffb55834d0b481a9b3eca66f0ea305
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9816,14 +9816,14 @@ $ docker pull clojure@sha256:6e5f2f29bab522ab74ddf0a4464892a34bb7b688055479d5161
 ### `clojure:temurin-17-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:a030abc4283e3c7ba4f02a5e4ac3b9a6b9393e3f8a2d9233bf4339ed045d4f3c
+$ docker pull clojure@sha256:208b53605afa88bb0d545dbda024ccd4a19833340f39f0f4a381732573caebc0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **185.7 MB (185697357 bytes)**  
+-	Total Size: **185.7 MB (185696045 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2393d68ac3fc376f0bb8cf6ccd3ee20888f75912104484e2d18279396db1f016`
+-	Image ID: `sha256:04aeb3083b5f6881de1d98baad7d7efdd8385132b491adf9119032f6568506c8`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -9832,39 +9832,39 @@ $ docker pull clojure@sha256:a030abc4283e3c7ba4f02a5e4ac3b9a6b9393e3f8a2d9233bf4
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:54:20 GMT
+# Sat, 16 Mar 2024 03:24:03 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:54:20 GMT
+# Sat, 16 Mar 2024 03:24:03 GMT
 ENV JAVA_VERSION=jdk-17.0.10+7
-# Sat, 27 Jan 2024 00:54:29 GMT
+# Sat, 16 Mar 2024 03:24:12 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='ce4085548f73ec97fa870de3f7da87634b4cbbf9753600365e2e0b255585e7e1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:54:31 GMT
+# Sat, 16 Mar 2024 03:24:14 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Sat, 27 Jan 2024 00:54:32 GMT
+# Sat, 16 Mar 2024 03:24:14 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:54:32 GMT
+# Sat, 16 Mar 2024 03:24:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 00:54:32 GMT
+# Sat, 16 Mar 2024 03:24:15 GMT
 CMD ["jshell"]
-# Sat, 27 Jan 2024 09:53:15 GMT
+# Sat, 16 Mar 2024 12:03:39 GMT
 ENV CLOJURE_VERSION=1.11.1.1435
-# Sat, 27 Jan 2024 09:53:15 GMT
+# Sat, 16 Mar 2024 12:03:39 GMT
 WORKDIR /tmp
-# Sat, 27 Jan 2024 09:53:19 GMT
+# Sat, 16 Mar 2024 12:03:44 GMT
 RUN apk add --no-cache curl bash make git && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
-# Sat, 27 Jan 2024 09:53:20 GMT
+# Sat, 16 Mar 2024 12:03:44 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Sat, 27 Jan 2024 09:53:20 GMT
+# Sat, 16 Mar 2024 12:03:44 GMT
 COPY file:137b40904568e30898cd031ef34f77e7f132846ba4eec91d04ae4b93dddfbb8d in /usr/local/bin/entrypoint 
-# Sat, 27 Jan 2024 09:53:20 GMT
+# Sat, 16 Mar 2024 12:03:44 GMT
 ENTRYPOINT ["entrypoint"]
-# Sat, 27 Jan 2024 09:53:20 GMT
+# Sat, 16 Mar 2024 12:03:44 GMT
 CMD ["-M" "--repl"]
 ```
 
@@ -9873,32 +9873,32 @@ CMD ["-M" "--repl"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59648cfc069f04a8d0eece9cae80e25155888dc9b5de722b58603efafaa0d78b`  
-		Last Modified: Sat, 27 Jan 2024 00:58:00 GMT  
-		Size: 13.1 MB (13138018 bytes)  
+	-	`sha256:3d6fa00702eb0aa7934afc50cb28145402935b385451bcb6ae891ecc0d4a9b90`  
+		Last Modified: Sat, 16 Mar 2024 03:27:45 GMT  
+		Size: 13.1 MB (13136633 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36d0e7d6722862146a131ded4549c3456466f939a62c3b10dc6c0cde4388f142`  
-		Last Modified: Sat, 27 Jan 2024 00:58:09 GMT  
-		Size: 144.1 MB (144142367 bytes)  
+	-	`sha256:dc145c2c40b090019607ad8d5618e1026c57507c6622d156be1870fa790a7339`  
+		Last Modified: Sat, 16 Mar 2024 03:27:56 GMT  
+		Size: 144.1 MB (144142428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:745a045d72287cc9b24556bae295db743545eb7a54481f9d6bbb7096a5178dde`  
-		Last Modified: Sat, 27 Jan 2024 00:57:58 GMT  
-		Size: 175.0 B  
+	-	`sha256:65413771e18cd2c82e4675596f5160e42af611ff7d9eabbe7621c2d626bd9b6b`  
+		Last Modified: Sat, 16 Mar 2024 03:27:44 GMT  
+		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20480f891b31ebf94a42342dec8efad6db7087933f7117262a9ac7cca80f68b3`  
-		Last Modified: Sat, 27 Jan 2024 00:57:58 GMT  
+	-	`sha256:80f39855dd57cb06f224fd5f6e6327f6551e336425c751b77c2f53f11ba7ce94`  
+		Last Modified: Sat, 16 Mar 2024 03:27:43 GMT  
 		Size: 716.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26b3d47da4063d0a1752cc87d76c347fa2ae7f688fe0e17de67e13e8dd22411c`  
-		Last Modified: Sat, 27 Jan 2024 09:57:28 GMT  
-		Size: 25.0 MB (25006322 bytes)  
+	-	`sha256:ba21eb07ffb6d9238c53980b1761349f5dfb7e5bc01cf89e9988f1fe34a74441`  
+		Last Modified: Sat, 16 Mar 2024 12:07:53 GMT  
+		Size: 25.0 MB (25006333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cca6a2acc87ebe00fde13b33c8d695f64b46dfd36302cede7205edf4e717ef3`  
-		Last Modified: Sat, 27 Jan 2024 09:57:27 GMT  
-		Size: 625.0 B  
+	-	`sha256:22ab4bbc3b6202ed37018a406bf397605ca2d3f85bc3c21cd907742754fe3816`  
+		Last Modified: Sat, 16 Mar 2024 12:07:51 GMT  
+		Size: 623.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39d40ff37b5b3368cc7cb2e7325ae905c175f58175f1613534871ec55be28170`  
-		Last Modified: Sat, 27 Jan 2024 09:57:27 GMT  
+	-	`sha256:c21bc9ad1a783cdabdd5ae79393cf3b5f160871bb65e2941ec24c33bc2764a31`  
+		Last Modified: Sat, 16 Mar 2024 12:07:51 GMT  
 		Size: 405.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -13791,7 +13791,7 @@ CMD ["repl"]
 ## `clojure:temurin-17-lein-2.11.2-alpine`
 
 ```console
-$ docker pull clojure@sha256:6ade4c4186faabeb02c2cf4cebaf3fa9f4f02a9888e3dc272ca965001dfa95bf
+$ docker pull clojure@sha256:0480caaccbbdb7be2e802d327413734f340f16e5853db3b8b0dfb00218373c23
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13801,14 +13801,14 @@ $ docker pull clojure@sha256:6ade4c4186faabeb02c2cf4cebaf3fa9f4f02a9888e3dc272ca
 ### `clojure:temurin-17-lein-2.11.2-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:2772fe1e777fac154dfd0a0e63f4cc7f9c1478d8bb07df3478f0d34a3d112da2
+$ docker pull clojure@sha256:483be08819442bc632f979a4295da2ba681c6b0a55e26cd73a97146a199a78b9
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **179.9 MB (179897397 bytes)**  
+-	Total Size: **179.9 MB (179896129 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:46975b6746517826017ccb7f17d5aeb6079f0fcf46d613a5734187ae1e76545d`
+-	Image ID: `sha256:e39d39517b66e1c351764102a6d7fc135c9c84f886826d9638cac8840be7c32c`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -13817,45 +13817,45 @@ $ docker pull clojure@sha256:2772fe1e777fac154dfd0a0e63f4cc7f9c1478d8bb07df3478f
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:54:20 GMT
+# Sat, 16 Mar 2024 03:24:03 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:54:20 GMT
+# Sat, 16 Mar 2024 03:24:03 GMT
 ENV JAVA_VERSION=jdk-17.0.10+7
-# Sat, 27 Jan 2024 00:54:29 GMT
+# Sat, 16 Mar 2024 03:24:12 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='ce4085548f73ec97fa870de3f7da87634b4cbbf9753600365e2e0b255585e7e1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:54:31 GMT
+# Sat, 16 Mar 2024 03:24:14 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Sat, 27 Jan 2024 00:54:32 GMT
+# Sat, 16 Mar 2024 03:24:14 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:54:32 GMT
+# Sat, 16 Mar 2024 03:24:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 00:54:32 GMT
+# Sat, 16 Mar 2024 03:24:15 GMT
 CMD ["jshell"]
-# Thu, 15 Feb 2024 02:59:51 GMT
+# Sat, 16 Mar 2024 12:03:10 GMT
 ENV LEIN_VERSION=2.11.2
-# Thu, 15 Feb 2024 02:59:51 GMT
+# Sat, 16 Mar 2024 12:03:10 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 15 Feb 2024 02:59:51 GMT
+# Sat, 16 Mar 2024 12:03:10 GMT
 WORKDIR /tmp
-# Thu, 15 Feb 2024 02:59:58 GMT
+# Sat, 16 Mar 2024 12:03:18 GMT
 RUN set -eux; apk add --no-cache ca-certificates bash tar openssl gnupg && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apk del ca-certificates tar openssl gnupg
-# Thu, 15 Feb 2024 02:59:58 GMT
+# Sat, 16 Mar 2024 12:03:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Thu, 15 Feb 2024 02:59:59 GMT
+# Sat, 16 Mar 2024 12:03:18 GMT
 ENV LEIN_ROOT=1
-# Thu, 15 Feb 2024 03:00:01 GMT
+# Sat, 16 Mar 2024 12:03:20 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.1"]])' > project.clj   && lein deps && rm project.clj
-# Thu, 15 Feb 2024 03:00:01 GMT
+# Sat, 16 Mar 2024 12:03:20 GMT
 COPY file:cf90f595e38d932dff3bdcd4221efe7c65fb3432787490053b55b6917f06e4cd in /usr/local/bin/entrypoint 
-# Thu, 15 Feb 2024 03:00:01 GMT
+# Sat, 16 Mar 2024 12:03:20 GMT
 ENTRYPOINT ["entrypoint"]
-# Thu, 15 Feb 2024 03:00:01 GMT
+# Sat, 16 Mar 2024 12:03:21 GMT
 CMD ["repl"]
 ```
 
@@ -13864,33 +13864,33 @@ CMD ["repl"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59648cfc069f04a8d0eece9cae80e25155888dc9b5de722b58603efafaa0d78b`  
-		Last Modified: Sat, 27 Jan 2024 00:58:00 GMT  
-		Size: 13.1 MB (13138018 bytes)  
+	-	`sha256:3d6fa00702eb0aa7934afc50cb28145402935b385451bcb6ae891ecc0d4a9b90`  
+		Last Modified: Sat, 16 Mar 2024 03:27:45 GMT  
+		Size: 13.1 MB (13136633 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36d0e7d6722862146a131ded4549c3456466f939a62c3b10dc6c0cde4388f142`  
-		Last Modified: Sat, 27 Jan 2024 00:58:09 GMT  
-		Size: 144.1 MB (144142367 bytes)  
+	-	`sha256:dc145c2c40b090019607ad8d5618e1026c57507c6622d156be1870fa790a7339`  
+		Last Modified: Sat, 16 Mar 2024 03:27:56 GMT  
+		Size: 144.1 MB (144142428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:745a045d72287cc9b24556bae295db743545eb7a54481f9d6bbb7096a5178dde`  
-		Last Modified: Sat, 27 Jan 2024 00:57:58 GMT  
-		Size: 175.0 B  
+	-	`sha256:65413771e18cd2c82e4675596f5160e42af611ff7d9eabbe7621c2d626bd9b6b`  
+		Last Modified: Sat, 16 Mar 2024 03:27:44 GMT  
+		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20480f891b31ebf94a42342dec8efad6db7087933f7117262a9ac7cca80f68b3`  
-		Last Modified: Sat, 27 Jan 2024 00:57:58 GMT  
+	-	`sha256:80f39855dd57cb06f224fd5f6e6327f6551e336425c751b77c2f53f11ba7ce94`  
+		Last Modified: Sat, 16 Mar 2024 03:27:43 GMT  
 		Size: 716.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23fc3f75b6b1e5137de56529f254f9e26de4a0a7d631bb872c348ea51b7e2d40`  
-		Last Modified: Thu, 15 Feb 2024 03:10:00 GMT  
-		Size: 14.8 MB (14807804 bytes)  
+	-	`sha256:c11c32fb174f338e9523460657a1c173144221bfe5eaa5be171de22d75574237`  
+		Last Modified: Sat, 16 Mar 2024 12:07:40 GMT  
+		Size: 14.8 MB (14807859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6aa348d0458c0c3e4228083799e6f17c7df0aa694f5e50727bd84bbc4cb6dc01`  
-		Last Modified: Thu, 15 Feb 2024 03:09:59 GMT  
-		Size: 4.4 MB (4399180 bytes)  
+	-	`sha256:bccf588cb80188dea667173a8c6cdb4ba3abe2217873686f9719b5d071d4e58e`  
+		Last Modified: Sat, 16 Mar 2024 12:07:40 GMT  
+		Size: 4.4 MB (4399177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97f3177c4863bb2a5f71ef8fab5562346ca1abc1545249f51d34f1d013d927ef`  
-		Last Modified: Thu, 15 Feb 2024 03:09:58 GMT  
-		Size: 408.0 B  
+	-	`sha256:89aedd9ada57c7058058269a06d7d8da5a265ba54413f4d66c4d023b80957164`  
+		Last Modified: Sat, 16 Mar 2024 12:07:39 GMT  
+		Size: 409.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:temurin-17-lein-2.11.2-bookworm`
@@ -14926,7 +14926,7 @@ CMD ["repl"]
 ## `clojure:temurin-17-lein-alpine`
 
 ```console
-$ docker pull clojure@sha256:6ade4c4186faabeb02c2cf4cebaf3fa9f4f02a9888e3dc272ca965001dfa95bf
+$ docker pull clojure@sha256:0480caaccbbdb7be2e802d327413734f340f16e5853db3b8b0dfb00218373c23
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14936,14 +14936,14 @@ $ docker pull clojure@sha256:6ade4c4186faabeb02c2cf4cebaf3fa9f4f02a9888e3dc272ca
 ### `clojure:temurin-17-lein-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:2772fe1e777fac154dfd0a0e63f4cc7f9c1478d8bb07df3478f0d34a3d112da2
+$ docker pull clojure@sha256:483be08819442bc632f979a4295da2ba681c6b0a55e26cd73a97146a199a78b9
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **179.9 MB (179897397 bytes)**  
+-	Total Size: **179.9 MB (179896129 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:46975b6746517826017ccb7f17d5aeb6079f0fcf46d613a5734187ae1e76545d`
+-	Image ID: `sha256:e39d39517b66e1c351764102a6d7fc135c9c84f886826d9638cac8840be7c32c`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -14952,45 +14952,45 @@ $ docker pull clojure@sha256:2772fe1e777fac154dfd0a0e63f4cc7f9c1478d8bb07df3478f
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:54:20 GMT
+# Sat, 16 Mar 2024 03:24:03 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:54:20 GMT
+# Sat, 16 Mar 2024 03:24:03 GMT
 ENV JAVA_VERSION=jdk-17.0.10+7
-# Sat, 27 Jan 2024 00:54:29 GMT
+# Sat, 16 Mar 2024 03:24:12 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='ce4085548f73ec97fa870de3f7da87634b4cbbf9753600365e2e0b255585e7e1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:54:31 GMT
+# Sat, 16 Mar 2024 03:24:14 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Sat, 27 Jan 2024 00:54:32 GMT
+# Sat, 16 Mar 2024 03:24:14 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:54:32 GMT
+# Sat, 16 Mar 2024 03:24:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 00:54:32 GMT
+# Sat, 16 Mar 2024 03:24:15 GMT
 CMD ["jshell"]
-# Thu, 15 Feb 2024 02:59:51 GMT
+# Sat, 16 Mar 2024 12:03:10 GMT
 ENV LEIN_VERSION=2.11.2
-# Thu, 15 Feb 2024 02:59:51 GMT
+# Sat, 16 Mar 2024 12:03:10 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 15 Feb 2024 02:59:51 GMT
+# Sat, 16 Mar 2024 12:03:10 GMT
 WORKDIR /tmp
-# Thu, 15 Feb 2024 02:59:58 GMT
+# Sat, 16 Mar 2024 12:03:18 GMT
 RUN set -eux; apk add --no-cache ca-certificates bash tar openssl gnupg && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apk del ca-certificates tar openssl gnupg
-# Thu, 15 Feb 2024 02:59:58 GMT
+# Sat, 16 Mar 2024 12:03:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Thu, 15 Feb 2024 02:59:59 GMT
+# Sat, 16 Mar 2024 12:03:18 GMT
 ENV LEIN_ROOT=1
-# Thu, 15 Feb 2024 03:00:01 GMT
+# Sat, 16 Mar 2024 12:03:20 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.1"]])' > project.clj   && lein deps && rm project.clj
-# Thu, 15 Feb 2024 03:00:01 GMT
+# Sat, 16 Mar 2024 12:03:20 GMT
 COPY file:cf90f595e38d932dff3bdcd4221efe7c65fb3432787490053b55b6917f06e4cd in /usr/local/bin/entrypoint 
-# Thu, 15 Feb 2024 03:00:01 GMT
+# Sat, 16 Mar 2024 12:03:20 GMT
 ENTRYPOINT ["entrypoint"]
-# Thu, 15 Feb 2024 03:00:01 GMT
+# Sat, 16 Mar 2024 12:03:21 GMT
 CMD ["repl"]
 ```
 
@@ -14999,33 +14999,33 @@ CMD ["repl"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59648cfc069f04a8d0eece9cae80e25155888dc9b5de722b58603efafaa0d78b`  
-		Last Modified: Sat, 27 Jan 2024 00:58:00 GMT  
-		Size: 13.1 MB (13138018 bytes)  
+	-	`sha256:3d6fa00702eb0aa7934afc50cb28145402935b385451bcb6ae891ecc0d4a9b90`  
+		Last Modified: Sat, 16 Mar 2024 03:27:45 GMT  
+		Size: 13.1 MB (13136633 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36d0e7d6722862146a131ded4549c3456466f939a62c3b10dc6c0cde4388f142`  
-		Last Modified: Sat, 27 Jan 2024 00:58:09 GMT  
-		Size: 144.1 MB (144142367 bytes)  
+	-	`sha256:dc145c2c40b090019607ad8d5618e1026c57507c6622d156be1870fa790a7339`  
+		Last Modified: Sat, 16 Mar 2024 03:27:56 GMT  
+		Size: 144.1 MB (144142428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:745a045d72287cc9b24556bae295db743545eb7a54481f9d6bbb7096a5178dde`  
-		Last Modified: Sat, 27 Jan 2024 00:57:58 GMT  
-		Size: 175.0 B  
+	-	`sha256:65413771e18cd2c82e4675596f5160e42af611ff7d9eabbe7621c2d626bd9b6b`  
+		Last Modified: Sat, 16 Mar 2024 03:27:44 GMT  
+		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20480f891b31ebf94a42342dec8efad6db7087933f7117262a9ac7cca80f68b3`  
-		Last Modified: Sat, 27 Jan 2024 00:57:58 GMT  
+	-	`sha256:80f39855dd57cb06f224fd5f6e6327f6551e336425c751b77c2f53f11ba7ce94`  
+		Last Modified: Sat, 16 Mar 2024 03:27:43 GMT  
 		Size: 716.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23fc3f75b6b1e5137de56529f254f9e26de4a0a7d631bb872c348ea51b7e2d40`  
-		Last Modified: Thu, 15 Feb 2024 03:10:00 GMT  
-		Size: 14.8 MB (14807804 bytes)  
+	-	`sha256:c11c32fb174f338e9523460657a1c173144221bfe5eaa5be171de22d75574237`  
+		Last Modified: Sat, 16 Mar 2024 12:07:40 GMT  
+		Size: 14.8 MB (14807859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6aa348d0458c0c3e4228083799e6f17c7df0aa694f5e50727bd84bbc4cb6dc01`  
-		Last Modified: Thu, 15 Feb 2024 03:09:59 GMT  
-		Size: 4.4 MB (4399180 bytes)  
+	-	`sha256:bccf588cb80188dea667173a8c6cdb4ba3abe2217873686f9719b5d071d4e58e`  
+		Last Modified: Sat, 16 Mar 2024 12:07:40 GMT  
+		Size: 4.4 MB (4399177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97f3177c4863bb2a5f71ef8fab5562346ca1abc1545249f51d34f1d013d927ef`  
-		Last Modified: Thu, 15 Feb 2024 03:09:58 GMT  
-		Size: 408.0 B  
+	-	`sha256:89aedd9ada57c7058058269a06d7d8da5a265ba54413f4d66c4d023b80957164`  
+		Last Modified: Sat, 16 Mar 2024 12:07:39 GMT  
+		Size: 409.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:temurin-17-lein-bookworm`
@@ -16471,7 +16471,7 @@ CMD ["-M" "--repl"]
 ## `clojure:temurin-17-tools-deps-1.11.1.1435-alpine`
 
 ```console
-$ docker pull clojure@sha256:6e5f2f29bab522ab74ddf0a4464892a34bb7b688055479d5161b44c6f37769df
+$ docker pull clojure@sha256:4e8b68225dd68160a2d3bc51bc92179747ffb55834d0b481a9b3eca66f0ea305
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16481,14 +16481,14 @@ $ docker pull clojure@sha256:6e5f2f29bab522ab74ddf0a4464892a34bb7b688055479d5161
 ### `clojure:temurin-17-tools-deps-1.11.1.1435-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:a030abc4283e3c7ba4f02a5e4ac3b9a6b9393e3f8a2d9233bf4339ed045d4f3c
+$ docker pull clojure@sha256:208b53605afa88bb0d545dbda024ccd4a19833340f39f0f4a381732573caebc0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **185.7 MB (185697357 bytes)**  
+-	Total Size: **185.7 MB (185696045 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2393d68ac3fc376f0bb8cf6ccd3ee20888f75912104484e2d18279396db1f016`
+-	Image ID: `sha256:04aeb3083b5f6881de1d98baad7d7efdd8385132b491adf9119032f6568506c8`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -16497,39 +16497,39 @@ $ docker pull clojure@sha256:a030abc4283e3c7ba4f02a5e4ac3b9a6b9393e3f8a2d9233bf4
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:54:20 GMT
+# Sat, 16 Mar 2024 03:24:03 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:54:20 GMT
+# Sat, 16 Mar 2024 03:24:03 GMT
 ENV JAVA_VERSION=jdk-17.0.10+7
-# Sat, 27 Jan 2024 00:54:29 GMT
+# Sat, 16 Mar 2024 03:24:12 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='ce4085548f73ec97fa870de3f7da87634b4cbbf9753600365e2e0b255585e7e1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:54:31 GMT
+# Sat, 16 Mar 2024 03:24:14 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Sat, 27 Jan 2024 00:54:32 GMT
+# Sat, 16 Mar 2024 03:24:14 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:54:32 GMT
+# Sat, 16 Mar 2024 03:24:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 00:54:32 GMT
+# Sat, 16 Mar 2024 03:24:15 GMT
 CMD ["jshell"]
-# Sat, 27 Jan 2024 09:53:15 GMT
+# Sat, 16 Mar 2024 12:03:39 GMT
 ENV CLOJURE_VERSION=1.11.1.1435
-# Sat, 27 Jan 2024 09:53:15 GMT
+# Sat, 16 Mar 2024 12:03:39 GMT
 WORKDIR /tmp
-# Sat, 27 Jan 2024 09:53:19 GMT
+# Sat, 16 Mar 2024 12:03:44 GMT
 RUN apk add --no-cache curl bash make git && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
-# Sat, 27 Jan 2024 09:53:20 GMT
+# Sat, 16 Mar 2024 12:03:44 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Sat, 27 Jan 2024 09:53:20 GMT
+# Sat, 16 Mar 2024 12:03:44 GMT
 COPY file:137b40904568e30898cd031ef34f77e7f132846ba4eec91d04ae4b93dddfbb8d in /usr/local/bin/entrypoint 
-# Sat, 27 Jan 2024 09:53:20 GMT
+# Sat, 16 Mar 2024 12:03:44 GMT
 ENTRYPOINT ["entrypoint"]
-# Sat, 27 Jan 2024 09:53:20 GMT
+# Sat, 16 Mar 2024 12:03:44 GMT
 CMD ["-M" "--repl"]
 ```
 
@@ -16538,32 +16538,32 @@ CMD ["-M" "--repl"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59648cfc069f04a8d0eece9cae80e25155888dc9b5de722b58603efafaa0d78b`  
-		Last Modified: Sat, 27 Jan 2024 00:58:00 GMT  
-		Size: 13.1 MB (13138018 bytes)  
+	-	`sha256:3d6fa00702eb0aa7934afc50cb28145402935b385451bcb6ae891ecc0d4a9b90`  
+		Last Modified: Sat, 16 Mar 2024 03:27:45 GMT  
+		Size: 13.1 MB (13136633 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36d0e7d6722862146a131ded4549c3456466f939a62c3b10dc6c0cde4388f142`  
-		Last Modified: Sat, 27 Jan 2024 00:58:09 GMT  
-		Size: 144.1 MB (144142367 bytes)  
+	-	`sha256:dc145c2c40b090019607ad8d5618e1026c57507c6622d156be1870fa790a7339`  
+		Last Modified: Sat, 16 Mar 2024 03:27:56 GMT  
+		Size: 144.1 MB (144142428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:745a045d72287cc9b24556bae295db743545eb7a54481f9d6bbb7096a5178dde`  
-		Last Modified: Sat, 27 Jan 2024 00:57:58 GMT  
-		Size: 175.0 B  
+	-	`sha256:65413771e18cd2c82e4675596f5160e42af611ff7d9eabbe7621c2d626bd9b6b`  
+		Last Modified: Sat, 16 Mar 2024 03:27:44 GMT  
+		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20480f891b31ebf94a42342dec8efad6db7087933f7117262a9ac7cca80f68b3`  
-		Last Modified: Sat, 27 Jan 2024 00:57:58 GMT  
+	-	`sha256:80f39855dd57cb06f224fd5f6e6327f6551e336425c751b77c2f53f11ba7ce94`  
+		Last Modified: Sat, 16 Mar 2024 03:27:43 GMT  
 		Size: 716.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26b3d47da4063d0a1752cc87d76c347fa2ae7f688fe0e17de67e13e8dd22411c`  
-		Last Modified: Sat, 27 Jan 2024 09:57:28 GMT  
-		Size: 25.0 MB (25006322 bytes)  
+	-	`sha256:ba21eb07ffb6d9238c53980b1761349f5dfb7e5bc01cf89e9988f1fe34a74441`  
+		Last Modified: Sat, 16 Mar 2024 12:07:53 GMT  
+		Size: 25.0 MB (25006333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cca6a2acc87ebe00fde13b33c8d695f64b46dfd36302cede7205edf4e717ef3`  
-		Last Modified: Sat, 27 Jan 2024 09:57:27 GMT  
-		Size: 625.0 B  
+	-	`sha256:22ab4bbc3b6202ed37018a406bf397605ca2d3f85bc3c21cd907742754fe3816`  
+		Last Modified: Sat, 16 Mar 2024 12:07:51 GMT  
+		Size: 623.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39d40ff37b5b3368cc7cb2e7325ae905c175f58175f1613534871ec55be28170`  
-		Last Modified: Sat, 27 Jan 2024 09:57:27 GMT  
+	-	`sha256:c21bc9ad1a783cdabdd5ae79393cf3b5f160871bb65e2941ec24c33bc2764a31`  
+		Last Modified: Sat, 16 Mar 2024 12:07:51 GMT  
 		Size: 405.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -17528,7 +17528,7 @@ CMD ["-M" "--repl"]
 ## `clojure:temurin-17-tools-deps-alpine`
 
 ```console
-$ docker pull clojure@sha256:6e5f2f29bab522ab74ddf0a4464892a34bb7b688055479d5161b44c6f37769df
+$ docker pull clojure@sha256:4e8b68225dd68160a2d3bc51bc92179747ffb55834d0b481a9b3eca66f0ea305
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17538,14 +17538,14 @@ $ docker pull clojure@sha256:6e5f2f29bab522ab74ddf0a4464892a34bb7b688055479d5161
 ### `clojure:temurin-17-tools-deps-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:a030abc4283e3c7ba4f02a5e4ac3b9a6b9393e3f8a2d9233bf4339ed045d4f3c
+$ docker pull clojure@sha256:208b53605afa88bb0d545dbda024ccd4a19833340f39f0f4a381732573caebc0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **185.7 MB (185697357 bytes)**  
+-	Total Size: **185.7 MB (185696045 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2393d68ac3fc376f0bb8cf6ccd3ee20888f75912104484e2d18279396db1f016`
+-	Image ID: `sha256:04aeb3083b5f6881de1d98baad7d7efdd8385132b491adf9119032f6568506c8`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -17554,39 +17554,39 @@ $ docker pull clojure@sha256:a030abc4283e3c7ba4f02a5e4ac3b9a6b9393e3f8a2d9233bf4
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:54:20 GMT
+# Sat, 16 Mar 2024 03:24:03 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:54:20 GMT
+# Sat, 16 Mar 2024 03:24:03 GMT
 ENV JAVA_VERSION=jdk-17.0.10+7
-# Sat, 27 Jan 2024 00:54:29 GMT
+# Sat, 16 Mar 2024 03:24:12 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='ce4085548f73ec97fa870de3f7da87634b4cbbf9753600365e2e0b255585e7e1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:54:31 GMT
+# Sat, 16 Mar 2024 03:24:14 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Sat, 27 Jan 2024 00:54:32 GMT
+# Sat, 16 Mar 2024 03:24:14 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:54:32 GMT
+# Sat, 16 Mar 2024 03:24:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 00:54:32 GMT
+# Sat, 16 Mar 2024 03:24:15 GMT
 CMD ["jshell"]
-# Sat, 27 Jan 2024 09:53:15 GMT
+# Sat, 16 Mar 2024 12:03:39 GMT
 ENV CLOJURE_VERSION=1.11.1.1435
-# Sat, 27 Jan 2024 09:53:15 GMT
+# Sat, 16 Mar 2024 12:03:39 GMT
 WORKDIR /tmp
-# Sat, 27 Jan 2024 09:53:19 GMT
+# Sat, 16 Mar 2024 12:03:44 GMT
 RUN apk add --no-cache curl bash make git && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
-# Sat, 27 Jan 2024 09:53:20 GMT
+# Sat, 16 Mar 2024 12:03:44 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Sat, 27 Jan 2024 09:53:20 GMT
+# Sat, 16 Mar 2024 12:03:44 GMT
 COPY file:137b40904568e30898cd031ef34f77e7f132846ba4eec91d04ae4b93dddfbb8d in /usr/local/bin/entrypoint 
-# Sat, 27 Jan 2024 09:53:20 GMT
+# Sat, 16 Mar 2024 12:03:44 GMT
 ENTRYPOINT ["entrypoint"]
-# Sat, 27 Jan 2024 09:53:20 GMT
+# Sat, 16 Mar 2024 12:03:44 GMT
 CMD ["-M" "--repl"]
 ```
 
@@ -17595,32 +17595,32 @@ CMD ["-M" "--repl"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59648cfc069f04a8d0eece9cae80e25155888dc9b5de722b58603efafaa0d78b`  
-		Last Modified: Sat, 27 Jan 2024 00:58:00 GMT  
-		Size: 13.1 MB (13138018 bytes)  
+	-	`sha256:3d6fa00702eb0aa7934afc50cb28145402935b385451bcb6ae891ecc0d4a9b90`  
+		Last Modified: Sat, 16 Mar 2024 03:27:45 GMT  
+		Size: 13.1 MB (13136633 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36d0e7d6722862146a131ded4549c3456466f939a62c3b10dc6c0cde4388f142`  
-		Last Modified: Sat, 27 Jan 2024 00:58:09 GMT  
-		Size: 144.1 MB (144142367 bytes)  
+	-	`sha256:dc145c2c40b090019607ad8d5618e1026c57507c6622d156be1870fa790a7339`  
+		Last Modified: Sat, 16 Mar 2024 03:27:56 GMT  
+		Size: 144.1 MB (144142428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:745a045d72287cc9b24556bae295db743545eb7a54481f9d6bbb7096a5178dde`  
-		Last Modified: Sat, 27 Jan 2024 00:57:58 GMT  
-		Size: 175.0 B  
+	-	`sha256:65413771e18cd2c82e4675596f5160e42af611ff7d9eabbe7621c2d626bd9b6b`  
+		Last Modified: Sat, 16 Mar 2024 03:27:44 GMT  
+		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20480f891b31ebf94a42342dec8efad6db7087933f7117262a9ac7cca80f68b3`  
-		Last Modified: Sat, 27 Jan 2024 00:57:58 GMT  
+	-	`sha256:80f39855dd57cb06f224fd5f6e6327f6551e336425c751b77c2f53f11ba7ce94`  
+		Last Modified: Sat, 16 Mar 2024 03:27:43 GMT  
 		Size: 716.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26b3d47da4063d0a1752cc87d76c347fa2ae7f688fe0e17de67e13e8dd22411c`  
-		Last Modified: Sat, 27 Jan 2024 09:57:28 GMT  
-		Size: 25.0 MB (25006322 bytes)  
+	-	`sha256:ba21eb07ffb6d9238c53980b1761349f5dfb7e5bc01cf89e9988f1fe34a74441`  
+		Last Modified: Sat, 16 Mar 2024 12:07:53 GMT  
+		Size: 25.0 MB (25006333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cca6a2acc87ebe00fde13b33c8d695f64b46dfd36302cede7205edf4e717ef3`  
-		Last Modified: Sat, 27 Jan 2024 09:57:27 GMT  
-		Size: 625.0 B  
+	-	`sha256:22ab4bbc3b6202ed37018a406bf397605ca2d3f85bc3c21cd907742754fe3816`  
+		Last Modified: Sat, 16 Mar 2024 12:07:51 GMT  
+		Size: 623.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39d40ff37b5b3368cc7cb2e7325ae905c175f58175f1613534871ec55be28170`  
-		Last Modified: Sat, 27 Jan 2024 09:57:27 GMT  
+	-	`sha256:c21bc9ad1a783cdabdd5ae79393cf3b5f160871bb65e2941ec24c33bc2764a31`  
+		Last Modified: Sat, 16 Mar 2024 12:07:51 GMT  
 		Size: 405.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -18585,7 +18585,7 @@ CMD ["-M" "--repl"]
 ## `clojure:temurin-21-alpine`
 
 ```console
-$ docker pull clojure@sha256:1ea28666b638b42b394d9d2b0523fb2486a3c39e6b400f19c0840cc6a8d57d7e
+$ docker pull clojure@sha256:3c64c9c92fb27d00351281f4a0fb580f2d8a49a2283d1528abe80efebb07f56b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18595,14 +18595,14 @@ $ docker pull clojure@sha256:1ea28666b638b42b394d9d2b0523fb2486a3c39e6b400f19c08
 ### `clojure:temurin-21-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:eec2ff9776944d19ad9f7f2eec8906f02ce1f86538482df38cb0b0ac6bae5a6c
+$ docker pull clojure@sha256:82f2acb29485be523a15ddc98b0caa0cb440c7b2a1d58d23ad2472a68f40a804
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.2 MB (200168066 bytes)**  
+-	Total Size: **200.2 MB (200166739 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95c17c0cb7b7f369c56885cb8551774a9ddb3f0c71268396462ce9b934b330c4`
+-	Image ID: `sha256:905a98914a0ae83b601a293ad2da651acb3219280cb03351ef7585cf5d4e26be`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -18611,39 +18611,39 @@ $ docker pull clojure@sha256:eec2ff9776944d19ad9f7f2eec8906f02ce1f86538482df38cb
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:54:20 GMT
+# Sat, 16 Mar 2024 03:24:03 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:55:02 GMT
+# Sat, 16 Mar 2024 03:24:47 GMT
 ENV JAVA_VERSION=jdk-21.0.2+13
-# Sat, 27 Jan 2024 00:55:13 GMT
+# Sat, 16 Mar 2024 03:24:58 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ae933ea8eeb4a077f19277842ba95ba93d29177e44d53cec7a98afd3b9abb2c3';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_aarch64_alpine-linux_hotspot_21.0.2_13.tar.gz';          ;;        amd64|x86_64)          ESUM='f1aef3652dd52778e81eb4897a88a34e38ca0159d22f160f7205e69907a0f14d';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.2_13.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:00 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:00 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:00 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:01 GMT
 CMD ["jshell"]
-# Sat, 27 Jan 2024 09:54:05 GMT
+# Sat, 16 Mar 2024 12:04:29 GMT
 ENV CLOJURE_VERSION=1.11.1.1435
-# Sat, 27 Jan 2024 09:54:05 GMT
+# Sat, 16 Mar 2024 12:04:29 GMT
 WORKDIR /tmp
-# Sat, 27 Jan 2024 09:54:10 GMT
+# Sat, 16 Mar 2024 12:04:34 GMT
 RUN apk add --no-cache curl bash make git && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
-# Sat, 27 Jan 2024 09:54:10 GMT
+# Sat, 16 Mar 2024 12:04:34 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Sat, 27 Jan 2024 09:54:10 GMT
+# Sat, 16 Mar 2024 12:04:34 GMT
 COPY file:137b40904568e30898cd031ef34f77e7f132846ba4eec91d04ae4b93dddfbb8d in /usr/local/bin/entrypoint 
-# Sat, 27 Jan 2024 09:54:10 GMT
+# Sat, 16 Mar 2024 12:04:34 GMT
 ENTRYPOINT ["entrypoint"]
-# Sat, 27 Jan 2024 09:54:10 GMT
+# Sat, 16 Mar 2024 12:04:34 GMT
 CMD ["-M" "--repl"]
 ```
 
@@ -18652,33 +18652,33 @@ CMD ["-M" "--repl"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59648cfc069f04a8d0eece9cae80e25155888dc9b5de722b58603efafaa0d78b`  
-		Last Modified: Sat, 27 Jan 2024 00:58:00 GMT  
-		Size: 13.1 MB (13138018 bytes)  
+	-	`sha256:3d6fa00702eb0aa7934afc50cb28145402935b385451bcb6ae891ecc0d4a9b90`  
+		Last Modified: Sat, 16 Mar 2024 03:27:45 GMT  
+		Size: 13.1 MB (13136633 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b168e20b9f2c7cde9300b36733340d229efb681e7862b716580cdb07cdb572e`  
-		Last Modified: Sat, 27 Jan 2024 00:58:54 GMT  
-		Size: 158.6 MB (158613083 bytes)  
+	-	`sha256:d612c1d04b376743b394b68467423c1b2caae2a70e06e7c7ba24e11fbc29ca5d`  
+		Last Modified: Sat, 16 Mar 2024 03:28:46 GMT  
+		Size: 158.6 MB (158613135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98795b95bb4830f88ab5d81f355f8a6f3bd833705d858023f9b58c42457db454`  
-		Last Modified: Sat, 27 Jan 2024 00:58:42 GMT  
-		Size: 179.0 B  
+	-	`sha256:549d9f50a51df057355cfbbaa0f094954f8d8b227b6a91c110bfd718d5410fd7`  
+		Last Modified: Sat, 16 Mar 2024 03:28:26 GMT  
+		Size: 177.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4451c8b3dbe1616b4f1d08ac6cbd135f48e3d3393f2c37402ac18b0b845dfdc`  
-		Last Modified: Sat, 27 Jan 2024 00:58:42 GMT  
+	-	`sha256:5a33d3f3feeb368051b5b1fb0ca441b7e4369a393131de1c86610a736ff8a6d6`  
+		Last Modified: Sat, 16 Mar 2024 03:28:26 GMT  
 		Size: 716.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4258d2675e5c0f4139e2f72cd91a99aa2dbeb652cf2b69197ee05fe40a0d951e`  
-		Last Modified: Sat, 27 Jan 2024 09:58:00 GMT  
-		Size: 25.0 MB (25006313 bytes)  
+	-	`sha256:6041a77b9f2624824f2a09da0102ded6d95a8aba98c986a8a26c10da7de4f54a`  
+		Last Modified: Sat, 16 Mar 2024 12:08:26 GMT  
+		Size: 25.0 MB (25006320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0e27bd6a1d9c479ca329f67be2a672013e858c1428342454ad037b7b02ff7a6`  
-		Last Modified: Sat, 27 Jan 2024 09:57:58 GMT  
+	-	`sha256:e65279956228fab09a5d1b18e24d152f7ce8e2b45d11897da5cf9d91a6b4f26a`  
+		Last Modified: Sat, 16 Mar 2024 12:08:24 GMT  
 		Size: 624.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8d3d911d2e894f20eebf53e13f8282fd85e16055c23382ddf6a2d10aef2142b`  
-		Last Modified: Sat, 27 Jan 2024 09:57:58 GMT  
-		Size: 404.0 B  
+	-	`sha256:d4b856178408bfe05c10b17fa465f5eb894b5a8907dba2733230e0c41cc92691`  
+		Last Modified: Sat, 16 Mar 2024 12:08:24 GMT  
+		Size: 405.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:temurin-21-bookworm`
@@ -19735,7 +19735,7 @@ CMD ["repl"]
 ## `clojure:temurin-21-lein-2.11.2-alpine`
 
 ```console
-$ docker pull clojure@sha256:01423047960fd829e5c6348ff6180bbbf8e93aa38ba0d81779d892476116ec92
+$ docker pull clojure@sha256:df8bf38f786f2770ceab3f6828ae388a21bbb477a59bb8ee1f534d2f325d643d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -19745,14 +19745,14 @@ $ docker pull clojure@sha256:01423047960fd829e5c6348ff6180bbbf8e93aa38ba0d81779d
 ### `clojure:temurin-21-lein-2.11.2-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:c7a7f298cf8ed3577afa94dc674cd948b9070f0321df8ab0f81cccd57157ce92
+$ docker pull clojure@sha256:98fd381538f359e93fc15860989fd8fe8163d3ce2ababc792b328076aa5b81b1
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **194.4 MB (194368084 bytes)**  
+-	Total Size: **194.4 MB (194366800 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b13b90065964fd844afdca2a131646cb09101217ef76d43b4cd90a9a71f25ac`
+-	Image ID: `sha256:077162a38143dd4fccfb2ab7611b9462e199ea03b290b5eec36f53856af7a0d4`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -19761,45 +19761,45 @@ $ docker pull clojure@sha256:c7a7f298cf8ed3577afa94dc674cd948b9070f0321df8ab0f81
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:54:20 GMT
+# Sat, 16 Mar 2024 03:24:03 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:55:02 GMT
+# Sat, 16 Mar 2024 03:24:47 GMT
 ENV JAVA_VERSION=jdk-21.0.2+13
-# Sat, 27 Jan 2024 00:55:13 GMT
+# Sat, 16 Mar 2024 03:24:58 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ae933ea8eeb4a077f19277842ba95ba93d29177e44d53cec7a98afd3b9abb2c3';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_aarch64_alpine-linux_hotspot_21.0.2_13.tar.gz';          ;;        amd64|x86_64)          ESUM='f1aef3652dd52778e81eb4897a88a34e38ca0159d22f160f7205e69907a0f14d';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.2_13.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:00 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:00 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:00 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:01 GMT
 CMD ["jshell"]
-# Thu, 15 Feb 2024 03:02:44 GMT
+# Sat, 16 Mar 2024 12:04:02 GMT
 ENV LEIN_VERSION=2.11.2
-# Thu, 15 Feb 2024 03:02:44 GMT
+# Sat, 16 Mar 2024 12:04:03 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 15 Feb 2024 03:02:44 GMT
+# Sat, 16 Mar 2024 12:04:03 GMT
 WORKDIR /tmp
-# Thu, 15 Feb 2024 03:02:51 GMT
+# Sat, 16 Mar 2024 12:04:10 GMT
 RUN set -eux; apk add --no-cache ca-certificates bash tar openssl gnupg && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apk del ca-certificates tar openssl gnupg
-# Thu, 15 Feb 2024 03:02:52 GMT
+# Sat, 16 Mar 2024 12:04:10 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Thu, 15 Feb 2024 03:02:52 GMT
+# Sat, 16 Mar 2024 12:04:10 GMT
 ENV LEIN_ROOT=1
-# Thu, 15 Feb 2024 03:02:55 GMT
+# Sat, 16 Mar 2024 12:04:13 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.1"]])' > project.clj   && lein deps && rm project.clj
-# Thu, 15 Feb 2024 03:02:55 GMT
+# Sat, 16 Mar 2024 12:04:13 GMT
 COPY file:cf90f595e38d932dff3bdcd4221efe7c65fb3432787490053b55b6917f06e4cd in /usr/local/bin/entrypoint 
-# Thu, 15 Feb 2024 03:02:55 GMT
+# Sat, 16 Mar 2024 12:04:13 GMT
 ENTRYPOINT ["entrypoint"]
-# Thu, 15 Feb 2024 03:02:55 GMT
+# Sat, 16 Mar 2024 12:04:13 GMT
 CMD ["repl"]
 ```
 
@@ -19808,32 +19808,32 @@ CMD ["repl"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59648cfc069f04a8d0eece9cae80e25155888dc9b5de722b58603efafaa0d78b`  
-		Last Modified: Sat, 27 Jan 2024 00:58:00 GMT  
-		Size: 13.1 MB (13138018 bytes)  
+	-	`sha256:3d6fa00702eb0aa7934afc50cb28145402935b385451bcb6ae891ecc0d4a9b90`  
+		Last Modified: Sat, 16 Mar 2024 03:27:45 GMT  
+		Size: 13.1 MB (13136633 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b168e20b9f2c7cde9300b36733340d229efb681e7862b716580cdb07cdb572e`  
-		Last Modified: Sat, 27 Jan 2024 00:58:54 GMT  
-		Size: 158.6 MB (158613083 bytes)  
+	-	`sha256:d612c1d04b376743b394b68467423c1b2caae2a70e06e7c7ba24e11fbc29ca5d`  
+		Last Modified: Sat, 16 Mar 2024 03:28:46 GMT  
+		Size: 158.6 MB (158613135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98795b95bb4830f88ab5d81f355f8a6f3bd833705d858023f9b58c42457db454`  
-		Last Modified: Sat, 27 Jan 2024 00:58:42 GMT  
-		Size: 179.0 B  
+	-	`sha256:549d9f50a51df057355cfbbaa0f094954f8d8b227b6a91c110bfd718d5410fd7`  
+		Last Modified: Sat, 16 Mar 2024 03:28:26 GMT  
+		Size: 177.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4451c8b3dbe1616b4f1d08ac6cbd135f48e3d3393f2c37402ac18b0b845dfdc`  
-		Last Modified: Sat, 27 Jan 2024 00:58:42 GMT  
+	-	`sha256:5a33d3f3feeb368051b5b1fb0ca441b7e4369a393131de1c86610a736ff8a6d6`  
+		Last Modified: Sat, 16 Mar 2024 03:28:26 GMT  
 		Size: 716.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fad943bc74bc4e9ab45f00ab5e2a34215fc49c828ba552e139b1a9b633b386d9`  
-		Last Modified: Thu, 15 Feb 2024 03:11:23 GMT  
-		Size: 14.8 MB (14807804 bytes)  
+	-	`sha256:8801ea710e34c780dda993c48e7db033a764712c16c5d50653dd4c13e84a5acd`  
+		Last Modified: Sat, 16 Mar 2024 12:08:11 GMT  
+		Size: 14.8 MB (14807861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e3ee8e80ebb4e9f10dc69445edf2a5bb3c94f59bfd7890e53efb13593332b03`  
-		Last Modified: Thu, 15 Feb 2024 03:11:23 GMT  
-		Size: 4.4 MB (4399148 bytes)  
+	-	`sha256:f7866cd0651324f966f0f847bc253fc5dd702aa8a910ad93afdd299219f5ed53`  
+		Last Modified: Sat, 16 Mar 2024 12:08:10 GMT  
+		Size: 4.4 MB (4399142 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:943404928eb676ea116c9cb0e1de4e03dd3a1086c86ce63609460d46f4b1a29d`  
-		Last Modified: Thu, 15 Feb 2024 03:11:22 GMT  
+	-	`sha256:03a529c5c9fb70d231257acff4af00da9699e69e42411f8eba2dc822ac66aa2d`  
+		Last Modified: Sat, 16 Mar 2024 12:08:11 GMT  
 		Size: 407.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -20653,7 +20653,7 @@ CMD ["repl"]
 ## `clojure:temurin-21-lein-alpine`
 
 ```console
-$ docker pull clojure@sha256:01423047960fd829e5c6348ff6180bbbf8e93aa38ba0d81779d892476116ec92
+$ docker pull clojure@sha256:df8bf38f786f2770ceab3f6828ae388a21bbb477a59bb8ee1f534d2f325d643d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -20663,14 +20663,14 @@ $ docker pull clojure@sha256:01423047960fd829e5c6348ff6180bbbf8e93aa38ba0d81779d
 ### `clojure:temurin-21-lein-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:c7a7f298cf8ed3577afa94dc674cd948b9070f0321df8ab0f81cccd57157ce92
+$ docker pull clojure@sha256:98fd381538f359e93fc15860989fd8fe8163d3ce2ababc792b328076aa5b81b1
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **194.4 MB (194368084 bytes)**  
+-	Total Size: **194.4 MB (194366800 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b13b90065964fd844afdca2a131646cb09101217ef76d43b4cd90a9a71f25ac`
+-	Image ID: `sha256:077162a38143dd4fccfb2ab7611b9462e199ea03b290b5eec36f53856af7a0d4`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -20679,45 +20679,45 @@ $ docker pull clojure@sha256:c7a7f298cf8ed3577afa94dc674cd948b9070f0321df8ab0f81
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:54:20 GMT
+# Sat, 16 Mar 2024 03:24:03 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:55:02 GMT
+# Sat, 16 Mar 2024 03:24:47 GMT
 ENV JAVA_VERSION=jdk-21.0.2+13
-# Sat, 27 Jan 2024 00:55:13 GMT
+# Sat, 16 Mar 2024 03:24:58 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ae933ea8eeb4a077f19277842ba95ba93d29177e44d53cec7a98afd3b9abb2c3';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_aarch64_alpine-linux_hotspot_21.0.2_13.tar.gz';          ;;        amd64|x86_64)          ESUM='f1aef3652dd52778e81eb4897a88a34e38ca0159d22f160f7205e69907a0f14d';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.2_13.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:00 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:00 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:00 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:01 GMT
 CMD ["jshell"]
-# Thu, 15 Feb 2024 03:02:44 GMT
+# Sat, 16 Mar 2024 12:04:02 GMT
 ENV LEIN_VERSION=2.11.2
-# Thu, 15 Feb 2024 03:02:44 GMT
+# Sat, 16 Mar 2024 12:04:03 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 15 Feb 2024 03:02:44 GMT
+# Sat, 16 Mar 2024 12:04:03 GMT
 WORKDIR /tmp
-# Thu, 15 Feb 2024 03:02:51 GMT
+# Sat, 16 Mar 2024 12:04:10 GMT
 RUN set -eux; apk add --no-cache ca-certificates bash tar openssl gnupg && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apk del ca-certificates tar openssl gnupg
-# Thu, 15 Feb 2024 03:02:52 GMT
+# Sat, 16 Mar 2024 12:04:10 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Thu, 15 Feb 2024 03:02:52 GMT
+# Sat, 16 Mar 2024 12:04:10 GMT
 ENV LEIN_ROOT=1
-# Thu, 15 Feb 2024 03:02:55 GMT
+# Sat, 16 Mar 2024 12:04:13 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.1"]])' > project.clj   && lein deps && rm project.clj
-# Thu, 15 Feb 2024 03:02:55 GMT
+# Sat, 16 Mar 2024 12:04:13 GMT
 COPY file:cf90f595e38d932dff3bdcd4221efe7c65fb3432787490053b55b6917f06e4cd in /usr/local/bin/entrypoint 
-# Thu, 15 Feb 2024 03:02:55 GMT
+# Sat, 16 Mar 2024 12:04:13 GMT
 ENTRYPOINT ["entrypoint"]
-# Thu, 15 Feb 2024 03:02:55 GMT
+# Sat, 16 Mar 2024 12:04:13 GMT
 CMD ["repl"]
 ```
 
@@ -20726,32 +20726,32 @@ CMD ["repl"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59648cfc069f04a8d0eece9cae80e25155888dc9b5de722b58603efafaa0d78b`  
-		Last Modified: Sat, 27 Jan 2024 00:58:00 GMT  
-		Size: 13.1 MB (13138018 bytes)  
+	-	`sha256:3d6fa00702eb0aa7934afc50cb28145402935b385451bcb6ae891ecc0d4a9b90`  
+		Last Modified: Sat, 16 Mar 2024 03:27:45 GMT  
+		Size: 13.1 MB (13136633 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b168e20b9f2c7cde9300b36733340d229efb681e7862b716580cdb07cdb572e`  
-		Last Modified: Sat, 27 Jan 2024 00:58:54 GMT  
-		Size: 158.6 MB (158613083 bytes)  
+	-	`sha256:d612c1d04b376743b394b68467423c1b2caae2a70e06e7c7ba24e11fbc29ca5d`  
+		Last Modified: Sat, 16 Mar 2024 03:28:46 GMT  
+		Size: 158.6 MB (158613135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98795b95bb4830f88ab5d81f355f8a6f3bd833705d858023f9b58c42457db454`  
-		Last Modified: Sat, 27 Jan 2024 00:58:42 GMT  
-		Size: 179.0 B  
+	-	`sha256:549d9f50a51df057355cfbbaa0f094954f8d8b227b6a91c110bfd718d5410fd7`  
+		Last Modified: Sat, 16 Mar 2024 03:28:26 GMT  
+		Size: 177.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4451c8b3dbe1616b4f1d08ac6cbd135f48e3d3393f2c37402ac18b0b845dfdc`  
-		Last Modified: Sat, 27 Jan 2024 00:58:42 GMT  
+	-	`sha256:5a33d3f3feeb368051b5b1fb0ca441b7e4369a393131de1c86610a736ff8a6d6`  
+		Last Modified: Sat, 16 Mar 2024 03:28:26 GMT  
 		Size: 716.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fad943bc74bc4e9ab45f00ab5e2a34215fc49c828ba552e139b1a9b633b386d9`  
-		Last Modified: Thu, 15 Feb 2024 03:11:23 GMT  
-		Size: 14.8 MB (14807804 bytes)  
+	-	`sha256:8801ea710e34c780dda993c48e7db033a764712c16c5d50653dd4c13e84a5acd`  
+		Last Modified: Sat, 16 Mar 2024 12:08:11 GMT  
+		Size: 14.8 MB (14807861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e3ee8e80ebb4e9f10dc69445edf2a5bb3c94f59bfd7890e53efb13593332b03`  
-		Last Modified: Thu, 15 Feb 2024 03:11:23 GMT  
-		Size: 4.4 MB (4399148 bytes)  
+	-	`sha256:f7866cd0651324f966f0f847bc253fc5dd702aa8a910ad93afdd299219f5ed53`  
+		Last Modified: Sat, 16 Mar 2024 12:08:10 GMT  
+		Size: 4.4 MB (4399142 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:943404928eb676ea116c9cb0e1de4e03dd3a1086c86ce63609460d46f4b1a29d`  
-		Last Modified: Thu, 15 Feb 2024 03:11:22 GMT  
+	-	`sha256:03a529c5c9fb70d231257acff4af00da9699e69e42411f8eba2dc822ac66aa2d`  
+		Last Modified: Sat, 16 Mar 2024 12:08:11 GMT  
 		Size: 407.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -21845,7 +21845,7 @@ CMD ["-M" "--repl"]
 ## `clojure:temurin-21-tools-deps-1.11.1.1435-alpine`
 
 ```console
-$ docker pull clojure@sha256:1ea28666b638b42b394d9d2b0523fb2486a3c39e6b400f19c0840cc6a8d57d7e
+$ docker pull clojure@sha256:3c64c9c92fb27d00351281f4a0fb580f2d8a49a2283d1528abe80efebb07f56b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -21855,14 +21855,14 @@ $ docker pull clojure@sha256:1ea28666b638b42b394d9d2b0523fb2486a3c39e6b400f19c08
 ### `clojure:temurin-21-tools-deps-1.11.1.1435-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:eec2ff9776944d19ad9f7f2eec8906f02ce1f86538482df38cb0b0ac6bae5a6c
+$ docker pull clojure@sha256:82f2acb29485be523a15ddc98b0caa0cb440c7b2a1d58d23ad2472a68f40a804
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.2 MB (200168066 bytes)**  
+-	Total Size: **200.2 MB (200166739 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95c17c0cb7b7f369c56885cb8551774a9ddb3f0c71268396462ce9b934b330c4`
+-	Image ID: `sha256:905a98914a0ae83b601a293ad2da651acb3219280cb03351ef7585cf5d4e26be`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -21871,39 +21871,39 @@ $ docker pull clojure@sha256:eec2ff9776944d19ad9f7f2eec8906f02ce1f86538482df38cb
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:54:20 GMT
+# Sat, 16 Mar 2024 03:24:03 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:55:02 GMT
+# Sat, 16 Mar 2024 03:24:47 GMT
 ENV JAVA_VERSION=jdk-21.0.2+13
-# Sat, 27 Jan 2024 00:55:13 GMT
+# Sat, 16 Mar 2024 03:24:58 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ae933ea8eeb4a077f19277842ba95ba93d29177e44d53cec7a98afd3b9abb2c3';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_aarch64_alpine-linux_hotspot_21.0.2_13.tar.gz';          ;;        amd64|x86_64)          ESUM='f1aef3652dd52778e81eb4897a88a34e38ca0159d22f160f7205e69907a0f14d';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.2_13.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:00 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:00 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:00 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:01 GMT
 CMD ["jshell"]
-# Sat, 27 Jan 2024 09:54:05 GMT
+# Sat, 16 Mar 2024 12:04:29 GMT
 ENV CLOJURE_VERSION=1.11.1.1435
-# Sat, 27 Jan 2024 09:54:05 GMT
+# Sat, 16 Mar 2024 12:04:29 GMT
 WORKDIR /tmp
-# Sat, 27 Jan 2024 09:54:10 GMT
+# Sat, 16 Mar 2024 12:04:34 GMT
 RUN apk add --no-cache curl bash make git && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
-# Sat, 27 Jan 2024 09:54:10 GMT
+# Sat, 16 Mar 2024 12:04:34 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Sat, 27 Jan 2024 09:54:10 GMT
+# Sat, 16 Mar 2024 12:04:34 GMT
 COPY file:137b40904568e30898cd031ef34f77e7f132846ba4eec91d04ae4b93dddfbb8d in /usr/local/bin/entrypoint 
-# Sat, 27 Jan 2024 09:54:10 GMT
+# Sat, 16 Mar 2024 12:04:34 GMT
 ENTRYPOINT ["entrypoint"]
-# Sat, 27 Jan 2024 09:54:10 GMT
+# Sat, 16 Mar 2024 12:04:34 GMT
 CMD ["-M" "--repl"]
 ```
 
@@ -21912,33 +21912,33 @@ CMD ["-M" "--repl"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59648cfc069f04a8d0eece9cae80e25155888dc9b5de722b58603efafaa0d78b`  
-		Last Modified: Sat, 27 Jan 2024 00:58:00 GMT  
-		Size: 13.1 MB (13138018 bytes)  
+	-	`sha256:3d6fa00702eb0aa7934afc50cb28145402935b385451bcb6ae891ecc0d4a9b90`  
+		Last Modified: Sat, 16 Mar 2024 03:27:45 GMT  
+		Size: 13.1 MB (13136633 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b168e20b9f2c7cde9300b36733340d229efb681e7862b716580cdb07cdb572e`  
-		Last Modified: Sat, 27 Jan 2024 00:58:54 GMT  
-		Size: 158.6 MB (158613083 bytes)  
+	-	`sha256:d612c1d04b376743b394b68467423c1b2caae2a70e06e7c7ba24e11fbc29ca5d`  
+		Last Modified: Sat, 16 Mar 2024 03:28:46 GMT  
+		Size: 158.6 MB (158613135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98795b95bb4830f88ab5d81f355f8a6f3bd833705d858023f9b58c42457db454`  
-		Last Modified: Sat, 27 Jan 2024 00:58:42 GMT  
-		Size: 179.0 B  
+	-	`sha256:549d9f50a51df057355cfbbaa0f094954f8d8b227b6a91c110bfd718d5410fd7`  
+		Last Modified: Sat, 16 Mar 2024 03:28:26 GMT  
+		Size: 177.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4451c8b3dbe1616b4f1d08ac6cbd135f48e3d3393f2c37402ac18b0b845dfdc`  
-		Last Modified: Sat, 27 Jan 2024 00:58:42 GMT  
+	-	`sha256:5a33d3f3feeb368051b5b1fb0ca441b7e4369a393131de1c86610a736ff8a6d6`  
+		Last Modified: Sat, 16 Mar 2024 03:28:26 GMT  
 		Size: 716.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4258d2675e5c0f4139e2f72cd91a99aa2dbeb652cf2b69197ee05fe40a0d951e`  
-		Last Modified: Sat, 27 Jan 2024 09:58:00 GMT  
-		Size: 25.0 MB (25006313 bytes)  
+	-	`sha256:6041a77b9f2624824f2a09da0102ded6d95a8aba98c986a8a26c10da7de4f54a`  
+		Last Modified: Sat, 16 Mar 2024 12:08:26 GMT  
+		Size: 25.0 MB (25006320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0e27bd6a1d9c479ca329f67be2a672013e858c1428342454ad037b7b02ff7a6`  
-		Last Modified: Sat, 27 Jan 2024 09:57:58 GMT  
+	-	`sha256:e65279956228fab09a5d1b18e24d152f7ce8e2b45d11897da5cf9d91a6b4f26a`  
+		Last Modified: Sat, 16 Mar 2024 12:08:24 GMT  
 		Size: 624.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8d3d911d2e894f20eebf53e13f8282fd85e16055c23382ddf6a2d10aef2142b`  
-		Last Modified: Sat, 27 Jan 2024 09:57:58 GMT  
-		Size: 404.0 B  
+	-	`sha256:d4b856178408bfe05c10b17fa465f5eb894b5a8907dba2733230e0c41cc92691`  
+		Last Modified: Sat, 16 Mar 2024 12:08:24 GMT  
+		Size: 405.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:temurin-21-tools-deps-1.11.1.1435-bookworm`
@@ -22697,7 +22697,7 @@ CMD ["-M" "--repl"]
 ## `clojure:temurin-21-tools-deps-alpine`
 
 ```console
-$ docker pull clojure@sha256:1ea28666b638b42b394d9d2b0523fb2486a3c39e6b400f19c0840cc6a8d57d7e
+$ docker pull clojure@sha256:3c64c9c92fb27d00351281f4a0fb580f2d8a49a2283d1528abe80efebb07f56b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -22707,14 +22707,14 @@ $ docker pull clojure@sha256:1ea28666b638b42b394d9d2b0523fb2486a3c39e6b400f19c08
 ### `clojure:temurin-21-tools-deps-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:eec2ff9776944d19ad9f7f2eec8906f02ce1f86538482df38cb0b0ac6bae5a6c
+$ docker pull clojure@sha256:82f2acb29485be523a15ddc98b0caa0cb440c7b2a1d58d23ad2472a68f40a804
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.2 MB (200168066 bytes)**  
+-	Total Size: **200.2 MB (200166739 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95c17c0cb7b7f369c56885cb8551774a9ddb3f0c71268396462ce9b934b330c4`
+-	Image ID: `sha256:905a98914a0ae83b601a293ad2da651acb3219280cb03351ef7585cf5d4e26be`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -22723,39 +22723,39 @@ $ docker pull clojure@sha256:eec2ff9776944d19ad9f7f2eec8906f02ce1f86538482df38cb
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:54:20 GMT
+# Sat, 16 Mar 2024 03:24:03 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:55:02 GMT
+# Sat, 16 Mar 2024 03:24:47 GMT
 ENV JAVA_VERSION=jdk-21.0.2+13
-# Sat, 27 Jan 2024 00:55:13 GMT
+# Sat, 16 Mar 2024 03:24:58 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ae933ea8eeb4a077f19277842ba95ba93d29177e44d53cec7a98afd3b9abb2c3';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_aarch64_alpine-linux_hotspot_21.0.2_13.tar.gz';          ;;        amd64|x86_64)          ESUM='f1aef3652dd52778e81eb4897a88a34e38ca0159d22f160f7205e69907a0f14d';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.2_13.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:00 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:00 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:00 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 00:55:16 GMT
+# Sat, 16 Mar 2024 03:25:01 GMT
 CMD ["jshell"]
-# Sat, 27 Jan 2024 09:54:05 GMT
+# Sat, 16 Mar 2024 12:04:29 GMT
 ENV CLOJURE_VERSION=1.11.1.1435
-# Sat, 27 Jan 2024 09:54:05 GMT
+# Sat, 16 Mar 2024 12:04:29 GMT
 WORKDIR /tmp
-# Sat, 27 Jan 2024 09:54:10 GMT
+# Sat, 16 Mar 2024 12:04:34 GMT
 RUN apk add --no-cache curl bash make git && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
-# Sat, 27 Jan 2024 09:54:10 GMT
+# Sat, 16 Mar 2024 12:04:34 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Sat, 27 Jan 2024 09:54:10 GMT
+# Sat, 16 Mar 2024 12:04:34 GMT
 COPY file:137b40904568e30898cd031ef34f77e7f132846ba4eec91d04ae4b93dddfbb8d in /usr/local/bin/entrypoint 
-# Sat, 27 Jan 2024 09:54:10 GMT
+# Sat, 16 Mar 2024 12:04:34 GMT
 ENTRYPOINT ["entrypoint"]
-# Sat, 27 Jan 2024 09:54:10 GMT
+# Sat, 16 Mar 2024 12:04:34 GMT
 CMD ["-M" "--repl"]
 ```
 
@@ -22764,33 +22764,33 @@ CMD ["-M" "--repl"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59648cfc069f04a8d0eece9cae80e25155888dc9b5de722b58603efafaa0d78b`  
-		Last Modified: Sat, 27 Jan 2024 00:58:00 GMT  
-		Size: 13.1 MB (13138018 bytes)  
+	-	`sha256:3d6fa00702eb0aa7934afc50cb28145402935b385451bcb6ae891ecc0d4a9b90`  
+		Last Modified: Sat, 16 Mar 2024 03:27:45 GMT  
+		Size: 13.1 MB (13136633 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b168e20b9f2c7cde9300b36733340d229efb681e7862b716580cdb07cdb572e`  
-		Last Modified: Sat, 27 Jan 2024 00:58:54 GMT  
-		Size: 158.6 MB (158613083 bytes)  
+	-	`sha256:d612c1d04b376743b394b68467423c1b2caae2a70e06e7c7ba24e11fbc29ca5d`  
+		Last Modified: Sat, 16 Mar 2024 03:28:46 GMT  
+		Size: 158.6 MB (158613135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98795b95bb4830f88ab5d81f355f8a6f3bd833705d858023f9b58c42457db454`  
-		Last Modified: Sat, 27 Jan 2024 00:58:42 GMT  
-		Size: 179.0 B  
+	-	`sha256:549d9f50a51df057355cfbbaa0f094954f8d8b227b6a91c110bfd718d5410fd7`  
+		Last Modified: Sat, 16 Mar 2024 03:28:26 GMT  
+		Size: 177.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4451c8b3dbe1616b4f1d08ac6cbd135f48e3d3393f2c37402ac18b0b845dfdc`  
-		Last Modified: Sat, 27 Jan 2024 00:58:42 GMT  
+	-	`sha256:5a33d3f3feeb368051b5b1fb0ca441b7e4369a393131de1c86610a736ff8a6d6`  
+		Last Modified: Sat, 16 Mar 2024 03:28:26 GMT  
 		Size: 716.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4258d2675e5c0f4139e2f72cd91a99aa2dbeb652cf2b69197ee05fe40a0d951e`  
-		Last Modified: Sat, 27 Jan 2024 09:58:00 GMT  
-		Size: 25.0 MB (25006313 bytes)  
+	-	`sha256:6041a77b9f2624824f2a09da0102ded6d95a8aba98c986a8a26c10da7de4f54a`  
+		Last Modified: Sat, 16 Mar 2024 12:08:26 GMT  
+		Size: 25.0 MB (25006320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0e27bd6a1d9c479ca329f67be2a672013e858c1428342454ad037b7b02ff7a6`  
-		Last Modified: Sat, 27 Jan 2024 09:57:58 GMT  
+	-	`sha256:e65279956228fab09a5d1b18e24d152f7ce8e2b45d11897da5cf9d91a6b4f26a`  
+		Last Modified: Sat, 16 Mar 2024 12:08:24 GMT  
 		Size: 624.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8d3d911d2e894f20eebf53e13f8282fd85e16055c23382ddf6a2d10aef2142b`  
-		Last Modified: Sat, 27 Jan 2024 09:57:58 GMT  
-		Size: 404.0 B  
+	-	`sha256:d4b856178408bfe05c10b17fa465f5eb894b5a8907dba2733230e0c41cc92691`  
+		Last Modified: Sat, 16 Mar 2024 12:08:24 GMT  
+		Size: 405.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:temurin-21-tools-deps-bookworm`
@@ -23549,7 +23549,7 @@ CMD ["-M" "--repl"]
 ## `clojure:temurin-8-alpine`
 
 ```console
-$ docker pull clojure@sha256:4898cf56585590fab4280ae85c5e0204ec4cba4167736e3e9e26f240c4c34729
+$ docker pull clojure@sha256:87c9816aa84537a5acee11a5696dca1cf366e543197f4cb89e655ed640d52099
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23559,14 +23559,14 @@ $ docker pull clojure@sha256:4898cf56585590fab4280ae85c5e0204ec4cba4167736e3e9e2
 ### `clojure:temurin-8-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:87e497f372659c0df8233b626668471a26d7e778657655f8da92988170b1e8c2
+$ docker pull clojure@sha256:8db51f26b1b7f80163e3181fad2084e8133cddd73fec87a29087780573d3a40c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.4 MB (138441003 bytes)**  
+-	Total Size: **138.4 MB (138439687 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d43d402e57d15c0cd56da9e98ac66e67249c4efe5cf315330a88c59ae74d5723`
+-	Image ID: `sha256:664fcd7ad899e33040eed45c78089cc0a1d7f6e7aa54972085ef089eeb94cbf1`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
@@ -23575,33 +23575,33 @@ $ docker pull clojure@sha256:87e497f372659c0df8233b626668471a26d7e778657655f8da9
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:53:00 GMT
+# Sat, 16 Mar 2024 03:22:34 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:53:00 GMT
+# Sat, 16 Mar 2024 03:22:34 GMT
 ENV JAVA_VERSION=jdk8u402-b06
-# Sat, 27 Jan 2024 00:53:07 GMT
+# Sat, 16 Mar 2024 03:22:40 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='c911fc057440f48c95f3eea8ec688732f43584e93fc0b090f5a361b2b6a64b71';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:53:08 GMT
+# Sat, 16 Mar 2024 03:22:41 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete."
-# Sat, 27 Jan 2024 00:53:08 GMT
+# Sat, 16 Mar 2024 03:22:41 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:53:08 GMT
+# Sat, 16 Mar 2024 03:22:41 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 09:50:59 GMT
+# Sat, 16 Mar 2024 12:01:26 GMT
 ENV CLOJURE_VERSION=1.11.1.1435
-# Sat, 27 Jan 2024 09:50:59 GMT
+# Sat, 16 Mar 2024 12:01:26 GMT
 WORKDIR /tmp
-# Sat, 27 Jan 2024 09:51:05 GMT
+# Sat, 16 Mar 2024 12:01:31 GMT
 RUN apk add --no-cache curl bash make git && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
-# Sat, 27 Jan 2024 09:51:05 GMT
+# Sat, 16 Mar 2024 12:01:32 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Sat, 27 Jan 2024 09:51:05 GMT
+# Sat, 16 Mar 2024 12:01:32 GMT
 CMD ["clj"]
 ```
 
@@ -23610,29 +23610,29 @@ CMD ["clj"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d043da2becbad64efc04c3177047b954002aa6a615a5716af19ecff2d3ff3ed0`  
-		Last Modified: Sat, 27 Jan 2024 00:56:34 GMT  
-		Size: 8.5 MB (8528146 bytes)  
+	-	`sha256:976103255ec1c30e915c990ab7c4afbf0348497ea66d200421c4d2bc23d6dd76`  
+		Last Modified: Sat, 16 Mar 2024 03:26:22 GMT  
+		Size: 8.5 MB (8526752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8741ab9a3e5ee73cb0206f307b55a2726315260f8528cc938ff34f1c8e5d80b`  
-		Last Modified: Sat, 27 Jan 2024 00:56:42 GMT  
-		Size: 101.5 MB (101503872 bytes)  
+	-	`sha256:a7ca92f67d05917686333845e142afe8b77283119a8374298674e4cbe88b24cb`  
+		Last Modified: Sat, 16 Mar 2024 03:26:30 GMT  
+		Size: 101.5 MB (101503933 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb7b717201f1ef54e5e4ba0b7f4e7bddef76d7bd0f701ef6da06fd4fed273681`  
-		Last Modified: Sat, 27 Jan 2024 00:56:33 GMT  
-		Size: 158.0 B  
+	-	`sha256:5bd418c5265b9d736e8fae4b6cb89634551a9a3510e4291f24d4c2da36aa73bc`  
+		Last Modified: Sat, 16 Mar 2024 03:26:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8943f3da6bd76aaf14fa268110c75319364884fadf5883dfd91ca31e52f5e74`  
-		Last Modified: Sat, 27 Jan 2024 00:56:33 GMT  
-		Size: 716.0 B  
+	-	`sha256:1171a607152584c1fb6d80ae47b5950d3f2a2618c2ea1db7042e17be383b8c32`  
+		Last Modified: Sat, 16 Mar 2024 03:26:21 GMT  
+		Size: 717.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5165e9554975426521cd162ca762b05b84713194f14f3f2b1a469eca458ee232`  
-		Last Modified: Sat, 27 Jan 2024 09:56:17 GMT  
-		Size: 25.0 MB (24998760 bytes)  
+	-	`sha256:e42d434d4eab7561ad40c47076ef1665991fd257fc31484cb954a3dece8a2d71`  
+		Last Modified: Sat, 16 Mar 2024 12:06:46 GMT  
+		Size: 25.0 MB (24998775 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2b8b01fa829b23e381d5531c38f7ca4700b939fd016f7e230778c1217fe64e0`  
-		Last Modified: Sat, 27 Jan 2024 09:56:15 GMT  
-		Size: 622.0 B  
+	-	`sha256:3d2bd27c0e894ce401fc243baf4459cf40f0e8f1eaddbceeb46e342242b2e9a1`  
+		Last Modified: Sat, 16 Mar 2024 12:06:44 GMT  
+		Size: 620.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:temurin-8-bookworm`
@@ -27108,7 +27108,7 @@ CMD ["lein" "repl"]
 ## `clojure:temurin-8-lein-2.11.2-alpine`
 
 ```console
-$ docker pull clojure@sha256:a204a6e2bf8db6b86bd0d50f1302cac892b3de23ab1b076b345dca10bc5146d9
+$ docker pull clojure@sha256:db75f87275ab7495bc93192aa19b59b285d9b8a237be8c5d3183c70b4f3c8365
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -27118,14 +27118,14 @@ $ docker pull clojure@sha256:a204a6e2bf8db6b86bd0d50f1302cac892b3de23ab1b076b345
 ### `clojure:temurin-8-lein-2.11.2-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:c1b82b6009470e813361fa38a6054ce0a0308383a5bb693489bb202c8f4a3d1d
+$ docker pull clojure@sha256:10bbca5b235f6a04b0aa477d19fb9d7b19892d91f9e670edc48e4e91e87ad4f1
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.6 MB (132643951 bytes)**  
+-	Total Size: **132.6 MB (132642673 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6138738385a7a26458e7ef1a374092f217ada83875643b2937fff4e463260ea9`
+-	Image ID: `sha256:e4a210dd38059f3add6a2d1dc38e763e746ec85032b15c9d567fcac46889a185`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["lein","repl"]`
 
@@ -27134,39 +27134,39 @@ $ docker pull clojure@sha256:c1b82b6009470e813361fa38a6054ce0a0308383a5bb693489b
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:53:00 GMT
+# Sat, 16 Mar 2024 03:22:34 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:53:00 GMT
+# Sat, 16 Mar 2024 03:22:34 GMT
 ENV JAVA_VERSION=jdk8u402-b06
-# Sat, 27 Jan 2024 00:53:07 GMT
+# Sat, 16 Mar 2024 03:22:40 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='c911fc057440f48c95f3eea8ec688732f43584e93fc0b090f5a361b2b6a64b71';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:53:08 GMT
+# Sat, 16 Mar 2024 03:22:41 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete."
-# Sat, 27 Jan 2024 00:53:08 GMT
+# Sat, 16 Mar 2024 03:22:41 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:53:08 GMT
+# Sat, 16 Mar 2024 03:22:41 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 15 Feb 2024 02:53:18 GMT
+# Sat, 16 Mar 2024 12:00:54 GMT
 ENV LEIN_VERSION=2.11.2
-# Thu, 15 Feb 2024 02:53:19 GMT
+# Sat, 16 Mar 2024 12:00:54 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 15 Feb 2024 02:53:19 GMT
+# Sat, 16 Mar 2024 12:00:54 GMT
 WORKDIR /tmp
-# Thu, 15 Feb 2024 02:53:27 GMT
+# Sat, 16 Mar 2024 12:01:02 GMT
 RUN set -eux; apk add --no-cache ca-certificates bash tar openssl gnupg && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apk del ca-certificates tar openssl gnupg
-# Thu, 15 Feb 2024 02:53:27 GMT
+# Sat, 16 Mar 2024 12:01:03 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Thu, 15 Feb 2024 02:53:27 GMT
+# Sat, 16 Mar 2024 12:01:03 GMT
 ENV LEIN_ROOT=1
-# Thu, 15 Feb 2024 02:53:30 GMT
+# Sat, 16 Mar 2024 12:01:07 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.1"]])' > project.clj   && lein deps && rm project.clj
-# Thu, 15 Feb 2024 02:53:30 GMT
+# Sat, 16 Mar 2024 12:01:07 GMT
 CMD ["lein" "repl"]
 ```
 
@@ -27175,29 +27175,29 @@ CMD ["lein" "repl"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d043da2becbad64efc04c3177047b954002aa6a615a5716af19ecff2d3ff3ed0`  
-		Last Modified: Sat, 27 Jan 2024 00:56:34 GMT  
-		Size: 8.5 MB (8528146 bytes)  
+	-	`sha256:976103255ec1c30e915c990ab7c4afbf0348497ea66d200421c4d2bc23d6dd76`  
+		Last Modified: Sat, 16 Mar 2024 03:26:22 GMT  
+		Size: 8.5 MB (8526752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8741ab9a3e5ee73cb0206f307b55a2726315260f8528cc938ff34f1c8e5d80b`  
-		Last Modified: Sat, 27 Jan 2024 00:56:42 GMT  
-		Size: 101.5 MB (101503872 bytes)  
+	-	`sha256:a7ca92f67d05917686333845e142afe8b77283119a8374298674e4cbe88b24cb`  
+		Last Modified: Sat, 16 Mar 2024 03:26:30 GMT  
+		Size: 101.5 MB (101503933 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb7b717201f1ef54e5e4ba0b7f4e7bddef76d7bd0f701ef6da06fd4fed273681`  
-		Last Modified: Sat, 27 Jan 2024 00:56:33 GMT  
-		Size: 158.0 B  
+	-	`sha256:5bd418c5265b9d736e8fae4b6cb89634551a9a3510e4291f24d4c2da36aa73bc`  
+		Last Modified: Sat, 16 Mar 2024 03:26:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8943f3da6bd76aaf14fa268110c75319364884fadf5883dfd91ca31e52f5e74`  
-		Last Modified: Sat, 27 Jan 2024 00:56:33 GMT  
-		Size: 716.0 B  
+	-	`sha256:1171a607152584c1fb6d80ae47b5950d3f2a2618c2ea1db7042e17be383b8c32`  
+		Last Modified: Sat, 16 Mar 2024 03:26:21 GMT  
+		Size: 717.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11004513910044c550c4849b7a98303415641a76efa12260296bfc8b6c575dc2`  
-		Last Modified: Thu, 15 Feb 2024 03:07:00 GMT  
-		Size: 14.8 MB (14803127 bytes)  
+	-	`sha256:9dd3cd1c8ddec04e700afe1a643e21de287305d69f69e02e89ff5b8b74c773ed`  
+		Last Modified: Sat, 16 Mar 2024 12:06:31 GMT  
+		Size: 14.8 MB (14803175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e18600c0fc6e1c15a4c628d3d3acf0146bddde6c48f5288cf98176ae771eee5`  
-		Last Modified: Thu, 15 Feb 2024 03:06:59 GMT  
-		Size: 4.4 MB (4399203 bytes)  
+	-	`sha256:ba6843138007401cd2f5843bea3e6e2466237ec7ac8daa8be5775d848093edbb`  
+		Last Modified: Sat, 16 Mar 2024 12:06:31 GMT  
+		Size: 4.4 MB (4399206 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:temurin-8-lein-2.11.2-bookworm`
@@ -28121,7 +28121,7 @@ CMD ["lein" "repl"]
 ## `clojure:temurin-8-lein-alpine`
 
 ```console
-$ docker pull clojure@sha256:a204a6e2bf8db6b86bd0d50f1302cac892b3de23ab1b076b345dca10bc5146d9
+$ docker pull clojure@sha256:db75f87275ab7495bc93192aa19b59b285d9b8a237be8c5d3183c70b4f3c8365
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -28131,14 +28131,14 @@ $ docker pull clojure@sha256:a204a6e2bf8db6b86bd0d50f1302cac892b3de23ab1b076b345
 ### `clojure:temurin-8-lein-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:c1b82b6009470e813361fa38a6054ce0a0308383a5bb693489bb202c8f4a3d1d
+$ docker pull clojure@sha256:10bbca5b235f6a04b0aa477d19fb9d7b19892d91f9e670edc48e4e91e87ad4f1
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.6 MB (132643951 bytes)**  
+-	Total Size: **132.6 MB (132642673 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6138738385a7a26458e7ef1a374092f217ada83875643b2937fff4e463260ea9`
+-	Image ID: `sha256:e4a210dd38059f3add6a2d1dc38e763e746ec85032b15c9d567fcac46889a185`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["lein","repl"]`
 
@@ -28147,39 +28147,39 @@ $ docker pull clojure@sha256:c1b82b6009470e813361fa38a6054ce0a0308383a5bb693489b
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:53:00 GMT
+# Sat, 16 Mar 2024 03:22:34 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:53:00 GMT
+# Sat, 16 Mar 2024 03:22:34 GMT
 ENV JAVA_VERSION=jdk8u402-b06
-# Sat, 27 Jan 2024 00:53:07 GMT
+# Sat, 16 Mar 2024 03:22:40 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='c911fc057440f48c95f3eea8ec688732f43584e93fc0b090f5a361b2b6a64b71';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:53:08 GMT
+# Sat, 16 Mar 2024 03:22:41 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete."
-# Sat, 27 Jan 2024 00:53:08 GMT
+# Sat, 16 Mar 2024 03:22:41 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:53:08 GMT
+# Sat, 16 Mar 2024 03:22:41 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 15 Feb 2024 02:53:18 GMT
+# Sat, 16 Mar 2024 12:00:54 GMT
 ENV LEIN_VERSION=2.11.2
-# Thu, 15 Feb 2024 02:53:19 GMT
+# Sat, 16 Mar 2024 12:00:54 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 15 Feb 2024 02:53:19 GMT
+# Sat, 16 Mar 2024 12:00:54 GMT
 WORKDIR /tmp
-# Thu, 15 Feb 2024 02:53:27 GMT
+# Sat, 16 Mar 2024 12:01:02 GMT
 RUN set -eux; apk add --no-cache ca-certificates bash tar openssl gnupg && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apk del ca-certificates tar openssl gnupg
-# Thu, 15 Feb 2024 02:53:27 GMT
+# Sat, 16 Mar 2024 12:01:03 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Thu, 15 Feb 2024 02:53:27 GMT
+# Sat, 16 Mar 2024 12:01:03 GMT
 ENV LEIN_ROOT=1
-# Thu, 15 Feb 2024 02:53:30 GMT
+# Sat, 16 Mar 2024 12:01:07 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.1"]])' > project.clj   && lein deps && rm project.clj
-# Thu, 15 Feb 2024 02:53:30 GMT
+# Sat, 16 Mar 2024 12:01:07 GMT
 CMD ["lein" "repl"]
 ```
 
@@ -28188,29 +28188,29 @@ CMD ["lein" "repl"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d043da2becbad64efc04c3177047b954002aa6a615a5716af19ecff2d3ff3ed0`  
-		Last Modified: Sat, 27 Jan 2024 00:56:34 GMT  
-		Size: 8.5 MB (8528146 bytes)  
+	-	`sha256:976103255ec1c30e915c990ab7c4afbf0348497ea66d200421c4d2bc23d6dd76`  
+		Last Modified: Sat, 16 Mar 2024 03:26:22 GMT  
+		Size: 8.5 MB (8526752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8741ab9a3e5ee73cb0206f307b55a2726315260f8528cc938ff34f1c8e5d80b`  
-		Last Modified: Sat, 27 Jan 2024 00:56:42 GMT  
-		Size: 101.5 MB (101503872 bytes)  
+	-	`sha256:a7ca92f67d05917686333845e142afe8b77283119a8374298674e4cbe88b24cb`  
+		Last Modified: Sat, 16 Mar 2024 03:26:30 GMT  
+		Size: 101.5 MB (101503933 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb7b717201f1ef54e5e4ba0b7f4e7bddef76d7bd0f701ef6da06fd4fed273681`  
-		Last Modified: Sat, 27 Jan 2024 00:56:33 GMT  
-		Size: 158.0 B  
+	-	`sha256:5bd418c5265b9d736e8fae4b6cb89634551a9a3510e4291f24d4c2da36aa73bc`  
+		Last Modified: Sat, 16 Mar 2024 03:26:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8943f3da6bd76aaf14fa268110c75319364884fadf5883dfd91ca31e52f5e74`  
-		Last Modified: Sat, 27 Jan 2024 00:56:33 GMT  
-		Size: 716.0 B  
+	-	`sha256:1171a607152584c1fb6d80ae47b5950d3f2a2618c2ea1db7042e17be383b8c32`  
+		Last Modified: Sat, 16 Mar 2024 03:26:21 GMT  
+		Size: 717.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11004513910044c550c4849b7a98303415641a76efa12260296bfc8b6c575dc2`  
-		Last Modified: Thu, 15 Feb 2024 03:07:00 GMT  
-		Size: 14.8 MB (14803127 bytes)  
+	-	`sha256:9dd3cd1c8ddec04e700afe1a643e21de287305d69f69e02e89ff5b8b74c773ed`  
+		Last Modified: Sat, 16 Mar 2024 12:06:31 GMT  
+		Size: 14.8 MB (14803175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e18600c0fc6e1c15a4c628d3d3acf0146bddde6c48f5288cf98176ae771eee5`  
-		Last Modified: Thu, 15 Feb 2024 03:06:59 GMT  
-		Size: 4.4 MB (4399203 bytes)  
+	-	`sha256:ba6843138007401cd2f5843bea3e6e2466237ec7ac8daa8be5775d848093edbb`  
+		Last Modified: Sat, 16 Mar 2024 12:06:31 GMT  
+		Size: 4.4 MB (4399206 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:temurin-8-lein-bookworm`
@@ -29504,7 +29504,7 @@ CMD ["clj"]
 ## `clojure:temurin-8-tools-deps-1.11.1.1435-alpine`
 
 ```console
-$ docker pull clojure@sha256:4898cf56585590fab4280ae85c5e0204ec4cba4167736e3e9e26f240c4c34729
+$ docker pull clojure@sha256:87c9816aa84537a5acee11a5696dca1cf366e543197f4cb89e655ed640d52099
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -29514,14 +29514,14 @@ $ docker pull clojure@sha256:4898cf56585590fab4280ae85c5e0204ec4cba4167736e3e9e2
 ### `clojure:temurin-8-tools-deps-1.11.1.1435-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:87e497f372659c0df8233b626668471a26d7e778657655f8da92988170b1e8c2
+$ docker pull clojure@sha256:8db51f26b1b7f80163e3181fad2084e8133cddd73fec87a29087780573d3a40c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.4 MB (138441003 bytes)**  
+-	Total Size: **138.4 MB (138439687 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d43d402e57d15c0cd56da9e98ac66e67249c4efe5cf315330a88c59ae74d5723`
+-	Image ID: `sha256:664fcd7ad899e33040eed45c78089cc0a1d7f6e7aa54972085ef089eeb94cbf1`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
@@ -29530,33 +29530,33 @@ $ docker pull clojure@sha256:87e497f372659c0df8233b626668471a26d7e778657655f8da9
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:53:00 GMT
+# Sat, 16 Mar 2024 03:22:34 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:53:00 GMT
+# Sat, 16 Mar 2024 03:22:34 GMT
 ENV JAVA_VERSION=jdk8u402-b06
-# Sat, 27 Jan 2024 00:53:07 GMT
+# Sat, 16 Mar 2024 03:22:40 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='c911fc057440f48c95f3eea8ec688732f43584e93fc0b090f5a361b2b6a64b71';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:53:08 GMT
+# Sat, 16 Mar 2024 03:22:41 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete."
-# Sat, 27 Jan 2024 00:53:08 GMT
+# Sat, 16 Mar 2024 03:22:41 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:53:08 GMT
+# Sat, 16 Mar 2024 03:22:41 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 09:50:59 GMT
+# Sat, 16 Mar 2024 12:01:26 GMT
 ENV CLOJURE_VERSION=1.11.1.1435
-# Sat, 27 Jan 2024 09:50:59 GMT
+# Sat, 16 Mar 2024 12:01:26 GMT
 WORKDIR /tmp
-# Sat, 27 Jan 2024 09:51:05 GMT
+# Sat, 16 Mar 2024 12:01:31 GMT
 RUN apk add --no-cache curl bash make git && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
-# Sat, 27 Jan 2024 09:51:05 GMT
+# Sat, 16 Mar 2024 12:01:32 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Sat, 27 Jan 2024 09:51:05 GMT
+# Sat, 16 Mar 2024 12:01:32 GMT
 CMD ["clj"]
 ```
 
@@ -29565,29 +29565,29 @@ CMD ["clj"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d043da2becbad64efc04c3177047b954002aa6a615a5716af19ecff2d3ff3ed0`  
-		Last Modified: Sat, 27 Jan 2024 00:56:34 GMT  
-		Size: 8.5 MB (8528146 bytes)  
+	-	`sha256:976103255ec1c30e915c990ab7c4afbf0348497ea66d200421c4d2bc23d6dd76`  
+		Last Modified: Sat, 16 Mar 2024 03:26:22 GMT  
+		Size: 8.5 MB (8526752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8741ab9a3e5ee73cb0206f307b55a2726315260f8528cc938ff34f1c8e5d80b`  
-		Last Modified: Sat, 27 Jan 2024 00:56:42 GMT  
-		Size: 101.5 MB (101503872 bytes)  
+	-	`sha256:a7ca92f67d05917686333845e142afe8b77283119a8374298674e4cbe88b24cb`  
+		Last Modified: Sat, 16 Mar 2024 03:26:30 GMT  
+		Size: 101.5 MB (101503933 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb7b717201f1ef54e5e4ba0b7f4e7bddef76d7bd0f701ef6da06fd4fed273681`  
-		Last Modified: Sat, 27 Jan 2024 00:56:33 GMT  
-		Size: 158.0 B  
+	-	`sha256:5bd418c5265b9d736e8fae4b6cb89634551a9a3510e4291f24d4c2da36aa73bc`  
+		Last Modified: Sat, 16 Mar 2024 03:26:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8943f3da6bd76aaf14fa268110c75319364884fadf5883dfd91ca31e52f5e74`  
-		Last Modified: Sat, 27 Jan 2024 00:56:33 GMT  
-		Size: 716.0 B  
+	-	`sha256:1171a607152584c1fb6d80ae47b5950d3f2a2618c2ea1db7042e17be383b8c32`  
+		Last Modified: Sat, 16 Mar 2024 03:26:21 GMT  
+		Size: 717.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5165e9554975426521cd162ca762b05b84713194f14f3f2b1a469eca458ee232`  
-		Last Modified: Sat, 27 Jan 2024 09:56:17 GMT  
-		Size: 25.0 MB (24998760 bytes)  
+	-	`sha256:e42d434d4eab7561ad40c47076ef1665991fd257fc31484cb954a3dece8a2d71`  
+		Last Modified: Sat, 16 Mar 2024 12:06:46 GMT  
+		Size: 25.0 MB (24998775 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2b8b01fa829b23e381d5531c38f7ca4700b939fd016f7e230778c1217fe64e0`  
-		Last Modified: Sat, 27 Jan 2024 09:56:15 GMT  
-		Size: 622.0 B  
+	-	`sha256:3d2bd27c0e894ce401fc243baf4459cf40f0e8f1eaddbceeb46e342242b2e9a1`  
+		Last Modified: Sat, 16 Mar 2024 12:06:44 GMT  
+		Size: 620.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:temurin-8-tools-deps-1.11.1.1435-bookworm`
@@ -30439,7 +30439,7 @@ CMD ["clj"]
 ## `clojure:temurin-8-tools-deps-alpine`
 
 ```console
-$ docker pull clojure@sha256:4898cf56585590fab4280ae85c5e0204ec4cba4167736e3e9e26f240c4c34729
+$ docker pull clojure@sha256:87c9816aa84537a5acee11a5696dca1cf366e543197f4cb89e655ed640d52099
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -30449,14 +30449,14 @@ $ docker pull clojure@sha256:4898cf56585590fab4280ae85c5e0204ec4cba4167736e3e9e2
 ### `clojure:temurin-8-tools-deps-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:87e497f372659c0df8233b626668471a26d7e778657655f8da92988170b1e8c2
+$ docker pull clojure@sha256:8db51f26b1b7f80163e3181fad2084e8133cddd73fec87a29087780573d3a40c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.4 MB (138441003 bytes)**  
+-	Total Size: **138.4 MB (138439687 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d43d402e57d15c0cd56da9e98ac66e67249c4efe5cf315330a88c59ae74d5723`
+-	Image ID: `sha256:664fcd7ad899e33040eed45c78089cc0a1d7f6e7aa54972085ef089eeb94cbf1`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
@@ -30465,33 +30465,33 @@ $ docker pull clojure@sha256:87e497f372659c0df8233b626668471a26d7e778657655f8da9
 ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
 # Sat, 27 Jan 2024 00:30:48 GMT
 CMD ["/bin/sh"]
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 27 Jan 2024 00:52:58 GMT
+# Sat, 16 Mar 2024 03:22:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 27 Jan 2024 00:53:00 GMT
+# Sat, 16 Mar 2024 03:22:34 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata     ;     rm -rf /var/cache/apk/*
-# Sat, 27 Jan 2024 00:53:00 GMT
+# Sat, 16 Mar 2024 03:22:34 GMT
 ENV JAVA_VERSION=jdk8u402-b06
-# Sat, 27 Jan 2024 00:53:07 GMT
+# Sat, 16 Mar 2024 03:22:40 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='c911fc057440f48c95f3eea8ec688732f43584e93fc0b090f5a361b2b6a64b71';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
-# Sat, 27 Jan 2024 00:53:08 GMT
+# Sat, 16 Mar 2024 03:22:41 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete."
-# Sat, 27 Jan 2024 00:53:08 GMT
+# Sat, 16 Mar 2024 03:22:41 GMT
 COPY file:aaf8d8da6065d3bd1ae04bf3c61d0adc8b6aa74964f19b57d4566fe5ec22ae14 in /__cacert_entrypoint.sh 
-# Sat, 27 Jan 2024 00:53:08 GMT
+# Sat, 16 Mar 2024 03:22:41 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 27 Jan 2024 09:50:59 GMT
+# Sat, 16 Mar 2024 12:01:26 GMT
 ENV CLOJURE_VERSION=1.11.1.1435
-# Sat, 27 Jan 2024 09:50:59 GMT
+# Sat, 16 Mar 2024 12:01:26 GMT
 WORKDIR /tmp
-# Sat, 27 Jan 2024 09:51:05 GMT
+# Sat, 16 Mar 2024 12:01:31 GMT
 RUN apk add --no-cache curl bash make git && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
-# Sat, 27 Jan 2024 09:51:05 GMT
+# Sat, 16 Mar 2024 12:01:32 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Sat, 27 Jan 2024 09:51:05 GMT
+# Sat, 16 Mar 2024 12:01:32 GMT
 CMD ["clj"]
 ```
 
@@ -30500,29 +30500,29 @@ CMD ["clj"]
 		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
 		Size: 3.4 MB (3408729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d043da2becbad64efc04c3177047b954002aa6a615a5716af19ecff2d3ff3ed0`  
-		Last Modified: Sat, 27 Jan 2024 00:56:34 GMT  
-		Size: 8.5 MB (8528146 bytes)  
+	-	`sha256:976103255ec1c30e915c990ab7c4afbf0348497ea66d200421c4d2bc23d6dd76`  
+		Last Modified: Sat, 16 Mar 2024 03:26:22 GMT  
+		Size: 8.5 MB (8526752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8741ab9a3e5ee73cb0206f307b55a2726315260f8528cc938ff34f1c8e5d80b`  
-		Last Modified: Sat, 27 Jan 2024 00:56:42 GMT  
-		Size: 101.5 MB (101503872 bytes)  
+	-	`sha256:a7ca92f67d05917686333845e142afe8b77283119a8374298674e4cbe88b24cb`  
+		Last Modified: Sat, 16 Mar 2024 03:26:30 GMT  
+		Size: 101.5 MB (101503933 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb7b717201f1ef54e5e4ba0b7f4e7bddef76d7bd0f701ef6da06fd4fed273681`  
-		Last Modified: Sat, 27 Jan 2024 00:56:33 GMT  
-		Size: 158.0 B  
+	-	`sha256:5bd418c5265b9d736e8fae4b6cb89634551a9a3510e4291f24d4c2da36aa73bc`  
+		Last Modified: Sat, 16 Mar 2024 03:26:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8943f3da6bd76aaf14fa268110c75319364884fadf5883dfd91ca31e52f5e74`  
-		Last Modified: Sat, 27 Jan 2024 00:56:33 GMT  
-		Size: 716.0 B  
+	-	`sha256:1171a607152584c1fb6d80ae47b5950d3f2a2618c2ea1db7042e17be383b8c32`  
+		Last Modified: Sat, 16 Mar 2024 03:26:21 GMT  
+		Size: 717.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5165e9554975426521cd162ca762b05b84713194f14f3f2b1a469eca458ee232`  
-		Last Modified: Sat, 27 Jan 2024 09:56:17 GMT  
-		Size: 25.0 MB (24998760 bytes)  
+	-	`sha256:e42d434d4eab7561ad40c47076ef1665991fd257fc31484cb954a3dece8a2d71`  
+		Last Modified: Sat, 16 Mar 2024 12:06:46 GMT  
+		Size: 25.0 MB (24998775 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2b8b01fa829b23e381d5531c38f7ca4700b939fd016f7e230778c1217fe64e0`  
-		Last Modified: Sat, 27 Jan 2024 09:56:15 GMT  
-		Size: 622.0 B  
+	-	`sha256:3d2bd27c0e894ce401fc243baf4459cf40f0e8f1eaddbceeb46e342242b2e9a1`  
+		Last Modified: Sat, 16 Mar 2024 12:06:44 GMT  
+		Size: 620.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:temurin-8-tools-deps-bookworm`
