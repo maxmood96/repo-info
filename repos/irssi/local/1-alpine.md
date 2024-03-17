@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c33d0b6133f016daecdc32847e2719e1b8377593ca3a157e4e2182ec699b3619`
+- Image ID: `sha256:f0205c9eb770ca108bf1919df79dc9e7b1ace03abbe7dbcc36dc1103059682d8`
 - Created: `2023-10-03T09:06:10Z`
 - Virtual Size: ~ 57.81 Mb  
   (total size of all layers on-disk)
@@ -155,16 +155,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `glib`
 
 ```console
-glib-2.76.4-r0 description:
+glib-2.76.6-r0 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.76.4-r0 webpage:
+glib-2.76.6-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.76.4-r0 installed size:
+glib-2.76.6-r0 installed size:
 3824 KiB
 
-glib-2.76.4-r0 license:
+glib-2.76.6-r0 license:
 LGPL-2.1-or-later
 
 ```
