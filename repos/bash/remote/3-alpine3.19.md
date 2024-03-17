@@ -1,7 +1,7 @@
 ## `bash:3-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:fee1bb56d547a745b6ace7445fe2f52617015ab669efd7ea783b069e77f4bd4c
+$ docker pull bash@sha256:97adb7ccc12572226538ef72e7792e9a9d7a0115010986c597a85961005c41ae
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -98,13 +98,13 @@ $ docker pull bash@sha256:f4ab8f9291fa8c0ba64ffbe83c7d32af79b1a1e774034b4d24a44b
 ### `bash:3-alpine3.19` - linux; arm variant v6
 
 ```console
-$ docker pull bash@sha256:8af770fe7bde1e0723ee0803aa65314f03fc9c878986506187da49d00fd4f3bb
+$ docker pull bash@sha256:949c1d1239cc03d4ce6252f821dd87dfdd2d3fe9d9162583e8f16dee16639c75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.7 MB (4742478 bytes)**  
+-	Total Size: **4.7 MB (4742471 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e89a64dbe7abbc5faaf925f424c320315b6dfe5f789fb30380acf74f00ca26e3`
+-	Image ID: `sha256:8fe90a289049bbe0c20f5c63c2ddbca397bf7e019c0da86c03149d695c75fc40`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -136,33 +136,33 @@ CMD ["bash"]
 		Last Modified: Fri, 26 Jan 2024 23:49:40 GMT  
 		Size: 3.2 MB (3165396 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46a9172ca6d56c8026275130213c581eee513cee9afee89204578c8e32494d30`  
-		Last Modified: Sun, 28 Jan 2024 19:43:59 GMT  
-		Size: 1.6 MB (1576751 bytes)  
+	-	`sha256:32e1dc42b01ca082e92c8e6b4dd0e5fcf995cc46a25c9bcfe2bec6d65327a6ec`  
+		Last Modified: Sun, 17 Mar 2024 10:00:09 GMT  
+		Size: 1.6 MB (1576743 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bee665ac7ec93658dabb2819821a7323d73970bfdb9c3f526cfc73072c73380`  
-		Last Modified: Sun, 28 Jan 2024 19:43:59 GMT  
-		Size: 331.0 B  
+	-	`sha256:501e5664a0710f19881f9306b6aa67ab9a4ee95c10f6ab2358f766df969d9751`  
+		Last Modified: Sun, 17 Mar 2024 10:00:08 GMT  
+		Size: 332.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bash:3-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull bash@sha256:81abd8a895e36d6619108ee5d49682f73a2fab9bb78c46d98235775cb01668bb
+$ docker pull bash@sha256:b9b57eea63a056c8b6fcd727627c4367fbd847e7cbd6b864aad79b7d16ea27e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **21.0 KB (20983 bytes)**  
+-	Total Size: **21.0 KB (20982 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:471af60e8a5707276a2da944d7901b6e8af01712b96d0dd68672da458a2fc9ba`
+-	Image ID: `sha256:b45a0c4f41ab6d7b3083a4e8adc0cbd354672d8e60c19fab09f2a787b04aaec9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:91f832e6af1fa2d4d9d120d67446656a1e25b5645cb58e14fa1a1ba14361b0d6`  
-		Last Modified: Sun, 28 Jan 2024 19:43:59 GMT  
-		Size: 21.0 KB (20983 bytes)  
+	-	`sha256:246026c695afec99442cc632c2784bd43a55c36a1e22379b5b194f50a0485dc7`  
+		Last Modified: Sun, 17 Mar 2024 10:00:10 GMT  
+		Size: 21.0 KB (20982 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `bash:3-alpine3.19` - linux; arm variant v7
