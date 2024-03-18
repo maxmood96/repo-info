@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6a9c543567eaaf4fe7e5aff10c1911581e24b12e9cb91a2ad006ecb0b7a13263`
-- Created: `2024-01-27T10:35:59.781514125Z`
-- Virtual Size: ~ 395.54 Mb  
+- Image ID: `sha256:7699db4ce284e2f40fa6abf22f14e689e1a55841887a0924746ddcbdae1b392c`
+- Created: `2024-03-16T09:51:04.624318787Z`
+- Virtual Size: ~ 395.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -522,16 +522,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.5.0-r2 description:
+libexpat-2.6.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.5.0-r2 webpage:
+libexpat-2.6.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.5.0-r2 installed size:
+libexpat-2.6.2-r0 installed size:
 144 KiB
 
-libexpat-2.5.0-r2 license:
+libexpat-2.6.2-r0 license:
 MIT
 
 ```
@@ -845,16 +845,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.11.6-r0 description:
+libxml2-2.11.7-r0 description:
 XML parsing library, version 2
 
-libxml2-2.11.6-r0 webpage:
+libxml2-2.11.7-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.11.6-r0 installed size:
+libxml2-2.11.7-r0 installed size:
 1092 KiB
 
-libxml2-2.11.6-r0 license:
+libxml2-2.11.7-r0 license:
 MIT
 
 ```
@@ -998,16 +998,16 @@ BSD-3-Clause
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.11.6-r1 description:
+pyc-3.11.8-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.11.6-r1 webpage:
+pyc-3.11.8-r0 webpage:
 https://www.python.org/
 
-pyc-3.11.6-r1 installed size:
+pyc-3.11.8-r0 installed size:
 4096 B
 
-pyc-3.11.6-r1 license:
+pyc-3.11.8-r0 license:
 PSF-2.0
 
 ```
@@ -1015,16 +1015,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.11.6-r1 description:
+python3-3.11.8-r0 description:
 High-level scripting language
 
-python3-3.11.6-r1 webpage:
+python3-3.11.8-r0 webpage:
 https://www.python.org/
 
-python3-3.11.6-r1 installed size:
+python3-3.11.8-r0 installed size:
 24 MiB
 
-python3-3.11.6-r1 license:
+python3-3.11.8-r0 license:
 PSF-2.0
 
 ```
@@ -1032,16 +1032,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.11.6-r1 description:
+python3-pyc-3.11.8-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.11.6-r1 webpage:
+python3-pyc-3.11.8-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.11.6-r1 installed size:
+python3-pyc-3.11.8-r0 installed size:
 4096 B
 
-python3-pyc-3.11.6-r1 license:
+python3-pyc-3.11.8-r0 license:
 PSF-2.0
 
 ```
@@ -1049,16 +1049,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.11.6-r1 description:
+python3-pycache-pyc0-3.11.8-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.11.6-r1 webpage:
+python3-pycache-pyc0-3.11.8-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.11.6-r1 installed size:
+python3-pycache-pyc0-3.11.8-r0 installed size:
 13 MiB
 
-python3-pycache-pyc0-3.11.6-r1 license:
+python3-pycache-pyc0-3.11.8-r0 license:
 PSF-2.0
 
 ```
