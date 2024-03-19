@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:27a36dcf7dcd0e7f4d51284a8dbea1dd9941b773ab9cbc966938216a2f1daf5f`
-- Created: `2024-02-22T17:25:22.529886434Z`
+- Image ID: `sha256:dfb9ccc4af8b2418a9ae098cb2be0a58f4027b0c223c384c33899913408db7d8`
+- Created: `2024-03-16T08:47:40.976030854Z`
 - Virtual Size: ~ 136.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -953,16 +953,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.0-r0 description:
+libexpat-2.6.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.0-r0 webpage:
+libexpat-2.6.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.0-r0 installed size:
+libexpat-2.6.2-r0 installed size:
 144 KiB
 
-libexpat-2.6.0-r0 license:
+libexpat-2.6.2-r0 license:
 MIT
 
 ```
@@ -1259,16 +1259,16 @@ GPL-2.0-or-later
 ### `apk` package: `runtime-dependencies`
 
 ```console
-runtime-dependencies-20240222.172038 description:
+runtime-dependencies-20240316.084330 description:
 virtual meta package
 
-runtime-dependencies-20240222.172038 webpage:
+runtime-dependencies-20240316.084330 webpage:
 
 
-runtime-dependencies-20240222.172038 installed size:
+runtime-dependencies-20240316.084330 installed size:
 0 B
 
-runtime-dependencies-20240222.172038 license:
+runtime-dependencies-20240316.084330 license:
 
 
 ```
