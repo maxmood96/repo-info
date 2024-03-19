@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:09a00b468bdd003d93d4d53c68c23b2e6c4d8461cbbb8e7f97ccf522ede31074`
-- Created: `2024-01-27T10:52:02.368509019Z`
+- Image ID: `sha256:b5dda1d971251ad11bf251d497228f048671d232afa585a0d8697c99cda7243d`
+- Created: `2024-03-16T10:38:31.382183985Z`
 - Virtual Size: ~ 87.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -405,16 +405,16 @@ X11
 ### `apk` package: `libpq`
 
 ```console
-libpq-16.1-r0 description:
+libpq-16.2-r0 description:
 PostgreSQL client library
 
-libpq-16.1-r0 webpage:
+libpq-16.2-r0 webpage:
 https://www.postgresql.org/
 
-libpq-16.1-r0 installed size:
+libpq-16.2-r0 installed size:
 328 KiB
 
-libpq-16.1-r0 license:
+libpq-16.2-r0 license:
 PostgreSQL
 
 ```
@@ -473,16 +473,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.11.6-r0 description:
+libxml2-2.11.7-r0 description:
 XML parsing library, version 2
 
-libxml2-2.11.6-r0 webpage:
+libxml2-2.11.7-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.11.6-r0 installed size:
+libxml2-2.11.7-r0 installed size:
 1092 KiB
 
-libxml2-2.11.6-r0 license:
+libxml2-2.11.7-r0 license:
 MIT
 
 ```
