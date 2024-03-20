@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e7770d00b9d07b7613a063e02a6c4e89e661360c9152e6bad437b1085c38c7b8`
-- Created: `2024-03-04T21:01:11.754763401Z`
+- Image ID: `sha256:e49f6998a8c1ac53565518207e731720a1d3621145feca0a5685c3a9cb45704a`
+- Created: `2024-03-16T09:47:00.136428634Z`
 - Virtual Size: ~ 241.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -630,16 +630,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.5.0-r2 description:
+libexpat-2.6.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.5.0-r2 webpage:
+libexpat-2.6.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.5.0-r2 installed size:
+libexpat-2.6.2-r0 installed size:
 144 KiB
 
-libexpat-2.5.0-r2 license:
+libexpat-2.6.2-r0 license:
 MIT
 
 ```
@@ -1157,16 +1157,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.11.6-r0 description:
+libxml2-2.11.7-r0 description:
 XML parsing library, version 2
 
-libxml2-2.11.6-r0 webpage:
+libxml2-2.11.7-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.11.6-r0 installed size:
+libxml2-2.11.7-r0 installed size:
 1092 KiB
 
-libxml2-2.11.6-r0 license:
+libxml2-2.11.7-r0 license:
 MIT
 
 ```
