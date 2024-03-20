@@ -1201,21 +1201,13 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.12-1
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12-1.dsc' gzip_1.12-1.dsc 2009 SHA256:49a287787a0b4fc816eb576c011c472d1f630ec1778dfa120bd7fce4a844c253
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12.orig.tar.xz' gzip_1.12.orig.tar.xz 825548 SHA256:ce5e03e519f637e1f814011ace35c4f87b33c0bbabeec35baf5fbd3479e91956
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12.orig.tar.xz.asc' gzip_1.12.orig.tar.xz.asc 833 SHA256:3ed9ab54452576e0be0d477c772c9f47baa36415133fef7dd1fcf7b15480ba32
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12-1.debian.tar.xz' gzip_1.12-1.debian.tar.xz 18736 SHA256:fcf2317e8eeddd66766ec5f3853025b109bd13815ec86ed6563e1af68d17193a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gzip/1.12-1/
 
-- https://sources.debian.net/src/gzip/1.12-1/ (for browsing the source)
-- https://sources.debian.net/src/gzip/1.12-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gzip/1.12-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `harfbuzz=8.3.0-2`
 
@@ -1554,11 +1546,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libbsd=0.12.1-1
-'http://http.debian.net/debian/pool/main/libb/libbsd/libbsd_0.12.1-1.dsc' libbsd_0.12.1-1.dsc 2347 SHA256:0bd9f20ba3ff7cdc880c2fb6a430c93fe81463eaa097b8e246dedf6cfd7a5c2c
-'http://http.debian.net/debian/pool/main/libb/libbsd/libbsd_0.12.1.orig.tar.xz' libbsd_0.12.1.orig.tar.xz 444048 SHA256:d7747f8ec1baa6ff5c096a9dd587c061233dec90da0f1aedd66d830f6db6996a
-'http://http.debian.net/debian/pool/main/libb/libbsd/libbsd_0.12.1.orig.tar.xz.asc' libbsd_0.12.1.orig.tar.xz.asc 833 SHA256:04a4b66da93ea3c761e15fcedd705a969b67597d0619c3ebc5fe3cf72d477f1f
-'http://http.debian.net/debian/pool/main/libb/libbsd/libbsd_0.12.1-1.debian.tar.xz' libbsd_0.12.1-1.debian.tar.xz 18552 SHA256:ea28ecb15d4c38b84383845e8bd9add1aafa24c46c3dbf8f84b29a8d9cead722
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.1-1.dsc' libbsd_0.12.1-1.dsc 2347 SHA256:0bd9f20ba3ff7cdc880c2fb6a430c93fe81463eaa097b8e246dedf6cfd7a5c2c
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.1.orig.tar.xz' libbsd_0.12.1.orig.tar.xz 444048 SHA256:d7747f8ec1baa6ff5c096a9dd587c061233dec90da0f1aedd66d830f6db6996a
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.1.orig.tar.xz.asc' libbsd_0.12.1.orig.tar.xz.asc 833 SHA256:04a4b66da93ea3c761e15fcedd705a969b67597d0619c3ebc5fe3cf72d477f1f
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.1-1.debian.tar.xz' libbsd_0.12.1-1.debian.tar.xz 18552 SHA256:ea28ecb15d4c38b84383845e8bd9add1aafa24c46c3dbf8f84b29a8d9cead722
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libbsd/0.12.1-1/ (for browsing the source)
+- https://sources.debian.net/src/libbsd/0.12.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libbsd/0.12.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.8.4-2`
 
@@ -2996,14 +2994,13 @@ Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-bas
 - `LGPL-2.1`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-base=4.3.3-2
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.3.3-2.dsc' r-base_4.3.3-2.dsc 2939 SHA256:52cbd7a5c15f523d20077415dd2667fe7bd3c9813adaacc3f3c616c6b6ea0948
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.3.3.orig.tar.gz' r-base_4.3.3.orig.tar.gz 35861202 SHA256:80851231393b85bf3877ee9e39b282e750ed864c5ec60cbd68e6e139f0520330
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.3.3-2.debian.tar.xz' r-base_4.3.3-2.debian.tar.xz 99664 SHA256:103d3e509956fe82619f6988864efa728fb5e06f5fc19b411bd3c0cb9ff7e68a
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/r-base/4.3.3-2/
+
 
 ### `dpkg` source package: `r-cran-class=7.3-22-2`
 
@@ -3652,11 +3649,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris wget=1.21.4-1
-'http://http.debian.net/debian/pool/main/w/wget/wget_1.21.4-1.dsc' wget_1.21.4-1.dsc 2167 SHA256:885f3b8acfeaa27119296d18e2624cc80788670e585692375e82f381d2b99f3b
-'http://http.debian.net/debian/pool/main/w/wget/wget_1.21.4.orig.tar.gz' wget_1.21.4.orig.tar.gz 5059591 SHA256:81542f5cefb8faacc39bbbc6c82ded80e3e4a88505ae72ea51df27525bcde04c
-'http://http.debian.net/debian/pool/main/w/wget/wget_1.21.4.orig.tar.gz.asc' wget_1.21.4.orig.tar.gz.asc 854 SHA256:fb1ce21577dee962be8bf95cbf86f806815778264622a5d756324ff8dd3bfc57
-'http://http.debian.net/debian/pool/main/w/wget/wget_1.21.4-1.debian.tar.xz' wget_1.21.4-1.debian.tar.xz 60692 SHA256:88857f1f61992bbbaa591149be2caf1cad9327c8c02c68a5ae6d078ed8f3678c
+'http://deb.debian.org/debian/pool/main/w/wget/wget_1.21.4-1.dsc' wget_1.21.4-1.dsc 2167 SHA256:885f3b8acfeaa27119296d18e2624cc80788670e585692375e82f381d2b99f3b
+'http://deb.debian.org/debian/pool/main/w/wget/wget_1.21.4.orig.tar.gz' wget_1.21.4.orig.tar.gz 5059591 SHA256:81542f5cefb8faacc39bbbc6c82ded80e3e4a88505ae72ea51df27525bcde04c
+'http://deb.debian.org/debian/pool/main/w/wget/wget_1.21.4.orig.tar.gz.asc' wget_1.21.4.orig.tar.gz.asc 854 SHA256:fb1ce21577dee962be8bf95cbf86f806815778264622a5d756324ff8dd3bfc57
+'http://deb.debian.org/debian/pool/main/w/wget/wget_1.21.4-1.debian.tar.xz' wget_1.21.4-1.debian.tar.xz 60692 SHA256:88857f1f61992bbbaa591149be2caf1cad9327c8c02c68a5ae6d078ed8f3678c
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/wget/1.21.4-1/ (for browsing the source)
+- https://sources.debian.net/src/wget/1.21.4-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/wget/1.21.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xauth=1:1.1.2-1`
 
