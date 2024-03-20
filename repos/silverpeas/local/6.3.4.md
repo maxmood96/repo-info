@@ -8990,14 +8990,9 @@ Licenses: (parsed from: `/usr/share/doc/vim/copyright`, `/usr/share/doc/vim-comm
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:8.1.2269-1ubuntu5.21
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269-1ubuntu5.21.dsc' vim_8.1.2269-1ubuntu5.21.dsc 2944 SHA512:e0c9afbf57ff44acdf02c9dac84c8cf1c1d7c089ceae0b177a0c0768b4dedb289be5a891efbc069d1dc85bcbc4614bd99e740a32874dacdd53a4bb536c604805
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269.orig.tar.gz' vim_8.1.2269.orig.tar.gz 14590233 SHA512:5194817a5665e08816e87e3b10219e19510ca87c5c377ddc0a50aa84ffd4d7391badad3e993f83802d6da5e9da8834635c1acbdd4a909e75b4947f99f13c1746
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269-1ubuntu5.21.debian.tar.xz' vim_8.1.2269-1ubuntu5.21.debian.tar.xz 261980 SHA512:f715aff083b7efe59d2bb223e2a2ece8844faebb06b7fedecfa69a9d720368ae12bfed8dc0dbe2216e145149220e9de9721a32a378fb8d4d0c2cb0922de0101e
-```
 
 ### `dpkg` source package: `vulkan-loader=1.2.131.2-1`
 
