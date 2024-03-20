@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d442e6a2b12a086927a54e0e878d3c843ad6d3156db75a43d5b57de921f305f4`
-- Created: `2024-02-21T18:57:57.871223538Z`
+- Image ID: `sha256:dc4f6af62aff7f0796b45cd0ccdff76f8bf419462e79ed01594ec8aff03fa33f`
+- Created: `2024-03-16T10:53:12.564042408Z`
 - Virtual Size: ~ 270.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -117,16 +117,16 @@ Apache-2.0 OR CC0-1.0
 ### `apk` package: `avahi-libs`
 
 ```console
-avahi-libs-0.8-r13 description:
+avahi-libs-0.8-r16 description:
 Libraries for avahi run-time use
 
-avahi-libs-0.8-r13 webpage:
+avahi-libs-0.8-r16 webpage:
 https://www.avahi.org/
 
-avahi-libs-0.8-r13 installed size:
+avahi-libs-0.8-r16 installed size:
 120 KiB
 
-avahi-libs-0.8-r13 license:
+avahi-libs-0.8-r16 license:
 LGPL-2.1-or-later
 
 ```
@@ -712,16 +712,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.5.0-r2 description:
+libexpat-2.6.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.5.0-r2 webpage:
+libexpat-2.6.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.5.0-r2 installed size:
+libexpat-2.6.2-r0 installed size:
 144 KiB
 
-libexpat-2.5.0-r2 license:
+libexpat-2.6.2-r0 license:
 MIT
 
 ```
@@ -933,16 +933,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-16.1-r0 description:
+libpq-16.2-r0 description:
 PostgreSQL client library
 
-libpq-16.1-r0 webpage:
+libpq-16.2-r0 webpage:
 https://www.postgresql.org/
 
-libpq-16.1-r0 installed size:
+libpq-16.2-r0 installed size:
 328 KiB
 
-libpq-16.1-r0 license:
+libpq-16.2-r0 license:
 PostgreSQL
 
 ```
@@ -1205,16 +1205,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.11.6-r0 description:
+libxml2-2.11.7-r0 description:
 XML parsing library, version 2
 
-libxml2-2.11.6-r0 webpage:
+libxml2-2.11.7-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.11.6-r0 installed size:
+libxml2-2.11.7-r0 installed size:
 1092 KiB
 
-libxml2-2.11.6-r0 license:
+libxml2-2.11.7-r0 license:
 MIT
 
 ```

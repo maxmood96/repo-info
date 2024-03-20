@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c2445002c94770307886eae57932e4f88127024caab743b6f17c9a21aa992bcc`
-- Created: `2024-02-21T18:58:29.891601987Z`
-- Virtual Size: ~ 271.42 Mb  
+- Image ID: `sha256:4c125d44b882e8944e57ac80693d4375581605d1b4642cfe34b04cd374a648fd`
+- Created: `2024-03-16T10:58:38.764036721Z`
+- Virtual Size: ~ 271.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.16`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.16.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.16.tar.xz.asc`
-  - `PHP_SHA256=28cdc995b7d5421711c7044294885fcde4390c9f67504a994b4cf9bc1b5cc593`
+  - `PHP_VERSION=8.2.17`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.17.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.17.tar.xz.asc`
+  - `PHP_SHA256=1cc4ef733ba58f6557db648012471f1916e5bac316303aa165535bedab08ee35`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=4.4.3`
   - `JOOMLA_SHA512=40be1f6d16430b4d0f7fde1ac2c96245388f28031790757e667b5ab52802105aec1ce51efdaa13576082218e0842c893d884a78f1ef358bec6fa1fb0a2cdabcd`
@@ -117,16 +117,16 @@ Apache-2.0 OR CC0-1.0
 ### `apk` package: `avahi-libs`
 
 ```console
-avahi-libs-0.8-r13 description:
+avahi-libs-0.8-r16 description:
 Libraries for avahi run-time use
 
-avahi-libs-0.8-r13 webpage:
+avahi-libs-0.8-r16 webpage:
 https://www.avahi.org/
 
-avahi-libs-0.8-r13 installed size:
+avahi-libs-0.8-r16 installed size:
 120 KiB
 
-avahi-libs-0.8-r13 license:
+avahi-libs-0.8-r16 license:
 LGPL-2.1-or-later
 
 ```
@@ -712,16 +712,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.0-r0 description:
+libexpat-2.6.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.0-r0 webpage:
+libexpat-2.6.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.0-r0 installed size:
+libexpat-2.6.2-r0 installed size:
 144 KiB
 
-libexpat-2.6.0-r0 license:
+libexpat-2.6.2-r0 license:
 MIT
 
 ```
