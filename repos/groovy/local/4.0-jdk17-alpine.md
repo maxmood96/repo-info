@@ -1,9 +1,9 @@
-# `groovy:4.0.19-jdk17-alpine`
+# `groovy:4.0.20-jdk17-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a625f0f0cb0931917cd0606c48135c5592954d83b75f01d6bed2225f2f39f8c7`
-- Created: `2024-03-05T00:56:29.966556998Z`
+- Image ID: `sha256:a35f02775fc46543eb4d73134387882ca2942aaaa690b5250e497621e2c2c340`
+- Created: `2024-03-18T17:55:40.830788585Z`
 - Virtual Size: ~ 348.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.10+7`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=4.0.19`
+  - `GROOVY_VERSION=4.0.20`
 
 ## `apk` (`.apk`-based packages)
 
@@ -330,16 +330,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.5.0-r2 description:
+libexpat-2.6.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.5.0-r2 webpage:
+libexpat-2.6.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.5.0-r2 installed size:
+libexpat-2.6.2-r0 installed size:
 144 KiB
 
-libexpat-2.5.0-r2 license:
+libexpat-2.6.2-r0 license:
 MIT
 
 ```
@@ -636,16 +636,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2023d-r0 description:
+tzdata-2024a-r0 description:
 Timezone data
 
-tzdata-2023d-r0 webpage:
+tzdata-2024a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2023d-r0 installed size:
-3076 KiB
+tzdata-2024a-r0 installed size:
+3072 KiB
 
-tzdata-2023d-r0 license:
+tzdata-2024a-r0 license:
 Public-Domain
 
 ```

@@ -1,10 +1,10 @@
-# `groovy:4.0.19-jdk8`
+# `groovy:4.0.20-jdk8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4aca48bb90157e7f9ac318ea9d90ab547ce2071594b3a86ee9685fbf288e8d47`
-- Created: `2024-03-06T13:17:57.083377261Z`
-- Virtual Size: ~ 360.45 Mb  
+- Image ID: `sha256:3010fd2d7e2e3f0a6410286de88b4146b49a7cd30ac587e4f6d2dd6e1c5a1e7f`
+- Created: `2024-03-18T17:54:26.396768162Z`
+- Virtual Size: ~ 360.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk8u402-b06`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=4.0.19`
+  - `GROOVY_VERSION=4.0.20`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
