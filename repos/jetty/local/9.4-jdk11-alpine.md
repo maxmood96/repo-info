@@ -1,9 +1,9 @@
-# `jetty:9.4.53-jdk11-alpine`
+# `jetty:9.4.54-jdk11-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:27398dc0aae87c93aeea6be3b88c9957d76c2e88210ed8e03d1321914a5b25ae`
-- Created: `2024-03-16T11:17:22.563806107Z`
+- Image ID: `sha256:c61ff1f72ee5d5ddf34db008a0ae0ab6050fbad5ecf98baee0d23e58995c96e4`
+- Created: `2024-03-18T18:40:43.17670246Z`
 - Virtual Size: ~ 315.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,11 +16,11 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.22+7`
-  - `JETTY_VERSION=9.4.53.v20231009`
+  - `JETTY_VERSION=9.4.54.v20240208`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
   - `TMPDIR=/tmp/jetty`
-  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.53.v20231009/jetty-home-9.4.53.v20231009.tar.gz`
+  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.54.v20240208/jetty-home-9.4.54.v20240208.tar.gz`
   - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3`
 
 ## `apk` (`.apk`-based packages)
