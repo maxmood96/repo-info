@@ -1,7 +1,7 @@
 ## `flink:scala_2.12-java17`
 
 ```console
-$ docker pull flink@sha256:ce8b6ae5e0a145a705638765e86a925fa3b5550ac979e40dca69d5849269c7eb
+$ docker pull flink@sha256:1dec16eeee5279383eb4b232b87ac826aefd18f0de8e242b3df93a8f51d01a07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -131,14 +131,14 @@ CMD ["help"]
 ### `flink:scala_2.12-java17` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:26d3a3a4d086aa51ad3de10a2f300fe2dfcc9669e81600330bf4b14919cb743e
+$ docker pull flink@sha256:732fcff297a8434b4ff2759bd69891e7ee9afc2a7a2faf6134b8602e60cc3585
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **580.6 MB (580640381 bytes)**  
+-	Total Size: **581.2 MB (581201883 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d3e8f10b3ea77f0c34ed12dbb1ba17131b30ef5f456a3e12c6313f50a7447e9e`
+-	Image ID: `sha256:f2cdf3c0a4e7d2902e62ea6f728b40aeb712808399d9fc2fba7c40332df8a33c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -179,25 +179,25 @@ RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-bas
 ENV GOSU_VERSION=1.11
 # Wed, 06 Mar 2024 12:18:30 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Wed, 06 Mar 2024 12:18:30 GMT
-ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.18.1/flink-1.18.1-bin-scala_2.12.tgz FLINK_ASC_URL=https://downloads.apache.org/flink/flink-1.18.1/flink-1.18.1-bin-scala_2.12.tgz.asc GPG_KEY=96AE0E32CBE6E0753CE6DF6CB078D1D3253A8D82 CHECK_GPG=true
-# Wed, 06 Mar 2024 12:18:30 GMT
+# Thu, 21 Mar 2024 00:40:54 GMT
+ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.19.0/flink-1.19.0-bin-scala_2.12.tgz FLINK_ASC_URL=https://downloads.apache.org/flink/flink-1.19.0/flink-1.19.0-bin-scala_2.12.tgz.asc GPG_KEY=028B6605F51BC296B56A5042E57D30ABEE75CA06 CHECK_GPG=true
+# Thu, 21 Mar 2024 00:40:54 GMT
 ENV FLINK_HOME=/opt/flink
-# Wed, 06 Mar 2024 12:18:30 GMT
+# Thu, 21 Mar 2024 00:40:54 GMT
 ENV PATH=/opt/flink/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 06 Mar 2024 12:18:31 GMT
+# Thu, 21 Mar 2024 00:40:54 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Wed, 06 Mar 2024 12:18:31 GMT
+# Thu, 21 Mar 2024 00:40:54 GMT
 WORKDIR /opt/flink
-# Wed, 06 Mar 2024 12:19:46 GMT
-RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;     sed -i 's/rest.address: localhost/rest.address: 0.0.0.0/g' $FLINK_HOME/conf/flink-conf.yaml;   sed -i 's/rest.bind-address: localhost/rest.bind-address: 0.0.0.0/g' $FLINK_HOME/conf/flink-conf.yaml;   sed -i 's/jobmanager.bind-host: localhost/jobmanager.bind-host: 0.0.0.0/g' $FLINK_HOME/conf/flink-conf.yaml;   sed -i 's/taskmanager.bind-host: localhost/taskmanager.bind-host: 0.0.0.0/g' $FLINK_HOME/conf/flink-conf.yaml;   sed -i '/taskmanager.host: localhost/d' $FLINK_HOME/conf/flink-conf.yaml;
-# Wed, 06 Mar 2024 12:19:49 GMT
-COPY file:ab8cf5711c2ee73018994cee7133a7f61b2e5fca388abbb79b5eac61bf7f4fa3 in / 
-# Wed, 06 Mar 2024 12:19:49 GMT
+# Thu, 21 Mar 2024 00:41:18 GMT
+RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;     CONF_FILE="$FLINK_HOME/conf/flink-conf.yaml";   if [ ! -e "$FLINK_HOME/conf/flink-conf.yaml" ]; then     CONF_FILE="${FLINK_HOME}/conf/config.yaml";     /bin/bash "$FLINK_HOME/bin/config-parser-utils.sh" "${FLINK_HOME}/conf" "${FLINK_HOME}/bin" "${FLINK_HOME}/lib"         "-repKV" "rest.address,localhost,0.0.0.0"         "-repKV" "rest.bind-address,localhost,0.0.0.0"         "-repKV" "jobmanager.bind-host,localhost,0.0.0.0"         "-repKV" "taskmanager.bind-host,localhost,0.0.0.0"         "-rmKV" "taskmanager.host=localhost";   else     sed -i 's/rest.address: localhost/rest.address: 0.0.0.0/g' "$CONF_FILE";     sed -i 's/rest.bind-address: localhost/rest.bind-address: 0.0.0.0/g' "$CONF_FILE";     sed -i 's/jobmanager.bind-host: localhost/jobmanager.bind-host: 0.0.0.0/g' "$CONF_FILE";     sed -i 's/taskmanager.bind-host: localhost/taskmanager.bind-host: 0.0.0.0/g' "$CONF_FILE";     sed -i '/taskmanager.host: localhost/d' "$CONF_FILE";   fi;
+# Thu, 21 Mar 2024 00:41:21 GMT
+COPY file:aee5980b778e9182b2247b659f9bb6b3039386b38a5837b9cb99d0addc7b73c1 in / 
+# Thu, 21 Mar 2024 00:41:21 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 06 Mar 2024 12:19:49 GMT
+# Thu, 21 Mar 2024 00:41:21 GMT
 EXPOSE 6123 8081
-# Wed, 06 Mar 2024 12:19:49 GMT
+# Thu, 21 Mar 2024 00:41:22 GMT
 CMD ["help"]
 ```
 
@@ -230,19 +230,19 @@ CMD ["help"]
 		Last Modified: Wed, 06 Mar 2024 12:59:16 GMT  
 		Size: 835.4 KB (835394 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c14b76314d392f4497174668b8acc72d1e00df95bbbf7b5a069b142faae1a233`  
-		Last Modified: Wed, 06 Mar 2024 12:59:16 GMT  
-		Size: 4.7 KB (4652 bytes)  
+	-	`sha256:5e3f734c9cdadb5f3d337de2a0dd8d1382e2038a29992b5dd409fb8977fc9bdd`  
+		Last Modified: Thu, 21 Mar 2024 00:43:04 GMT  
+		Size: 4.7 KB (4653 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52afb90ab38db8f3973244f9b1106b85ab5822faada6d06517758dd43c5b95f7`  
-		Last Modified: Wed, 06 Mar 2024 12:59:16 GMT  
+	-	`sha256:5e48c1d917df988735ac28d354353b97fdf24c1f1b1e5a5f748891d0633b2a92`  
+		Last Modified: Thu, 21 Mar 2024 00:43:04 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c2df91d4bc9b433571021c70e64e0b90fa8bf5d8d687640f622cc6e988f5340`  
-		Last Modified: Wed, 06 Mar 2024 12:59:33 GMT  
-		Size: 481.4 MB (481393440 bytes)  
+	-	`sha256:10ea83b6101024c90a28bb8b13b6e327b752d1614439fe989a5ed5c04d1f3606`  
+		Last Modified: Thu, 21 Mar 2024 00:43:20 GMT  
+		Size: 482.0 MB (481954782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c28c4ae36a011ff4d06c72a3c38c090f3c021c749d90738fd93ecc69260e7e0d`  
-		Last Modified: Wed, 06 Mar 2024 12:59:16 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:4fd1aa0708778b37858e2322e6e2c014602766be7c92be39ed66f0ef90d05e5c`  
+		Last Modified: Thu, 21 Mar 2024 00:43:04 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
