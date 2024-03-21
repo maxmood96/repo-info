@@ -1,7 +1,7 @@
 ## `notary:server`
 
 ```console
-$ docker pull notary@sha256:8024670de67f18ec3886f919ccc92f5d06fcd10bbd1f7f8217e6907dcc2b020f
+$ docker pull notary@sha256:7f9417095e8d91f600dbe9179dc423ac3088e5775006e17c9f3f29dbe934e2fd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -132,13 +132,13 @@ RUN
 ### `notary:server` - linux; arm variant v6
 
 ```console
-$ docker pull notary@sha256:27eeb5fa2ad1a0d82ffec781e37b071ef7111918a67df7d288382dcef47ff640
+$ docker pull notary@sha256:013c489e9d78716df8700d44e0dabe01daae6ea7a6ec86dcc81c033a838b12be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.5 MB (7511541 bytes)**  
+-	Total Size: **7.5 MB (7511529 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72b5ca69449d40d149071a52290c54c7815d33b1d6ed7efa88d26fae0e223b41`
+-	Image ID: `sha256:9c8570128c1acfcf122ceb76bfb55d0ea472437a7a26dc74acc487b6cfda3f81`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["notary-server","--version"]`
 
@@ -178,48 +178,48 @@ CMD ["notary-server" "--version"]
 		Last Modified: Fri, 26 Jan 2024 23:50:09 GMT  
 		Size: 2.6 MB (2615845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c74657dd1e96df2c28f1594d3eada4cc7e83a21c56c0523cb474fccd867dab4`  
-		Last Modified: Tue, 30 Jan 2024 18:57:12 GMT  
-		Size: 1.2 KB (1184 bytes)  
+	-	`sha256:5a8ee0fe68961d6ee52c91239fdf2be6eda70ccd54aa2fd8a66ac8baad840022`  
+		Last Modified: Mon, 18 Mar 2024 16:05:07 GMT  
+		Size: 1.2 KB (1186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8eadda8e880d785961a1c13b8375f9992e9ebf77d75b5e1356f4d2d6a37a6dc`  
-		Last Modified: Tue, 30 Jan 2024 18:57:12 GMT  
-		Size: 119.0 B  
+	-	`sha256:eeca046fcfd0aecbbaed970b5c2038495557424628495aebf41cf45b7c660b29`  
+		Last Modified: Mon, 18 Mar 2024 16:05:07 GMT  
+		Size: 117.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb621b3714eeb12ce31453b3c373a22b7ef1059f3c05e0bb671fb12d6ad93c06`  
-		Last Modified: Tue, 30 Jan 2024 18:57:13 GMT  
-		Size: 4.9 MB (4893568 bytes)  
+	-	`sha256:61be247f48e8f3878008266b94146502febffc5e99c61cb7e6938c3219b96ebc`  
+		Last Modified: Mon, 18 Mar 2024 16:05:08 GMT  
+		Size: 4.9 MB (4893556 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e33754574e7de01a162d8051349c9e11c5aa0f580864b9453cf2c0540819b531`  
-		Last Modified: Tue, 30 Jan 2024 18:57:12 GMT  
-		Size: 416.0 B  
+	-	`sha256:e2612b96832eef280d897413ca70e1d657e1f745724cb5f2e4d7c7ba0e4c9907`  
+		Last Modified: Mon, 18 Mar 2024 16:05:08 GMT  
+		Size: 417.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44675f301c102b3dc063bd64de3b66b24c78e53b922640120d1823ffd42384b2`  
-		Last Modified: Tue, 30 Jan 2024 18:57:13 GMT  
-		Size: 377.0 B  
+	-	`sha256:ea12a5d844e6138c0d7ceb9febc5b878c65f067621e396d35dbc429731634805`  
+		Last Modified: Mon, 18 Mar 2024 16:05:08 GMT  
+		Size: 376.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `notary:server` - unknown; unknown
 
 ```console
-$ docker pull notary@sha256:0443143bdbc03559cf891500e5f62d0a18dcb581015139832017282c2bf3c8f0
+$ docker pull notary@sha256:7afcd6756cbb249bf078970fe37729734a0ffd89836ab54e8cfaf28b83b11f53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.0 KB (18958 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:028d94f6529a6aa8fe51ce446fdc8d8fd78a8dc479fa493dcf76b7d4a3a3fb9a`
+-	Image ID: `sha256:91329b57dd8f2f06dd16e266fe8c3451a2e827fb5fb8211f50aa4cded9157e75`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6bae0458374e9dc37d3d298381cb973e3664322f7a0f29c593dd0fad3c966442`  
-		Last Modified: Tue, 30 Jan 2024 18:57:12 GMT  
+	-	`sha256:0f0d130e83a940c4f59a70dd33e559b05d44fb63174309b3d44b22e26906938f`  
+		Last Modified: Mon, 18 Mar 2024 16:05:08 GMT  
 		Size: 19.0 KB (18958 bytes)  
 		MIME: application/vnd.in-toto+json
 
