@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:22ad4abc91f723468c5159e468873fe5297e2f7b452ef8ac5847e44012ea42bc`
-- Created: `2024-02-03T09:10:48.187469022Z`
-- Virtual Size: ~ 527.47 Mb  
+- Image ID: `sha256:7571038b1da2571521a9fcacd72c7d625df543888cda2261963f15b43c0f1701`
+- Created: `2024-03-16T12:11:42.209156564Z`
+- Virtual Size: ~ 527.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -330,16 +330,16 @@ GPL-2.0-only
 ### `apk` package: `git-lfs`
 
 ```console
-git-lfs-3.4.1-r0 description:
+git-lfs-3.4.1-r1 description:
 Git extension for versioning large files
 
-git-lfs-3.4.1-r0 webpage:
+git-lfs-3.4.1-r1 webpage:
 https://git-lfs.github.io/
 
-git-lfs-3.4.1-r0 installed size:
+git-lfs-3.4.1-r1 installed size:
 12 MiB
 
-git-lfs-3.4.1-r0 license:
+git-lfs-3.4.1-r1 license:
 MIT
 
 ```
@@ -415,16 +415,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.5.0-r2 description:
+libexpat-2.6.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.5.0-r2 webpage:
+libexpat-2.6.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.5.0-r2 installed size:
+libexpat-2.6.2-r0 installed size:
 144 KiB
 
-libexpat-2.5.0-r2 license:
+libexpat-2.6.2-r0 license:
 MIT
 
 ```
@@ -908,16 +908,16 @@ BSD-3-Clause
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.11.6-r1 description:
+pyc-3.11.8-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.11.6-r1 webpage:
+pyc-3.11.8-r0 webpage:
 https://www.python.org/
 
-pyc-3.11.6-r1 installed size:
+pyc-3.11.8-r0 installed size:
 4096 B
 
-pyc-3.11.6-r1 license:
+pyc-3.11.8-r0 license:
 PSF-2.0
 
 ```
@@ -925,16 +925,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.11.6-r1 description:
+python3-3.11.8-r0 description:
 High-level scripting language
 
-python3-3.11.6-r1 webpage:
+python3-3.11.8-r0 webpage:
 https://www.python.org/
 
-python3-3.11.6-r1 installed size:
+python3-3.11.8-r0 installed size:
 24 MiB
 
-python3-3.11.6-r1 license:
+python3-3.11.8-r0 license:
 PSF-2.0
 
 ```
@@ -942,16 +942,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.11.6-r1 description:
+python3-pyc-3.11.8-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.11.6-r1 webpage:
+python3-pyc-3.11.8-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.11.6-r1 installed size:
+python3-pyc-3.11.8-r0 installed size:
 4096 B
 
-python3-pyc-3.11.6-r1 license:
+python3-pyc-3.11.8-r0 license:
 PSF-2.0
 
 ```
@@ -959,16 +959,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.11.6-r1 description:
+python3-pycache-pyc0-3.11.8-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.11.6-r1 webpage:
+python3-pycache-pyc0-3.11.8-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.11.6-r1 installed size:
+python3-pycache-pyc0-3.11.8-r0 installed size:
 13 MiB
 
-python3-pycache-pyc0-3.11.6-r1 license:
+python3-pycache-pyc0-3.11.8-r0 license:
 PSF-2.0
 
 ```
@@ -1095,16 +1095,16 @@ Apache-2.0 AND BSD-2-Clause
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2023d-r0 description:
+tzdata-2024a-r0 description:
 Timezone data
 
-tzdata-2023d-r0 webpage:
+tzdata-2024a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2023d-r0 installed size:
-3076 KiB
+tzdata-2024a-r0 installed size:
+3072 KiB
 
-tzdata-2023d-r0 license:
+tzdata-2024a-r0 license:
 Public-Domain
 
 ```
