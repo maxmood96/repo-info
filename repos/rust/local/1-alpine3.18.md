@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c67969c3a6eb9759afc51c03a5c97c5abfc6ac9efd3bca8cb925a49ef40f77d1`
-- Created: `2024-03-11T15:56:03Z`
-- Virtual Size: ~ 817.97 Mb  
+- Image ID: `sha256:8feac781ca19ebd4977cf3429c51a2f846ee2c9bc5870a46ed5bb9d8355493f1`
+- Created: `2024-03-21T14:04:03Z`
+- Virtual Size: ~ 782.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.76.0`
+  - `RUST_VERSION=1.77.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -138,16 +138,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20230506-r0 description:
+ca-certificates-20240226-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20230506-r0 webpage:
+ca-certificates-20240226-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20230506-r0 installed size:
-688 KiB
+ca-certificates-20240226-r0 installed size:
+712 KiB
 
-ca-certificates-20230506-r0 license:
+ca-certificates-20240226-r0 license:
 MPL-2.0 AND MIT
 
 ```

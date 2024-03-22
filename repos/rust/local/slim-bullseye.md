@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3c400f84d497599ddf6a28e1a36252635be095e6810bcdd30137b9ad455828c5`
-- Created: `2024-03-11T15:56:03Z`
-- Virtual Size: ~ 760.43 Mb  
+- Image ID: `sha256:181b3a545e420cd4367bd58b756b7a0bb6303e6f17d0729e0235984d4f71e8cb`
+- Created: `2024-03-21T14:04:03Z`
+- Virtual Size: ~ 725.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.76.0`
+  - `RUST_VERSION=1.77.0`
 
 ## `dpkg` (`.deb`-based packages)
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:081eef35f101eb0646f6ed6edb43993977006d1db5948f0edaa31d14f656fed8`
-- Created: `2024-03-11T15:56:03Z`
-- Virtual Size: ~ 1.32 Gb  
+- Image ID: `sha256:69aa358b705cacf17d7eb60ea54fe9809e2284f0834ca617870ea7ce334b8ce2`
+- Created: `2024-03-21T14:04:03Z`
+- Virtual Size: ~ 1.29 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.76.0`
+  - `RUST_VERSION=1.77.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -553,20 +553,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.64.0-4+deb10u8
-'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0-4%2bdeb10u8.dsc' curl_7.64.0-4+deb10u8.dsc 2694 SHA256:43cb6b77daab8e8861a5c01bf1f44915fa6a94161f15b0ed2403be90e5a80bc2
-'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0.orig.tar.gz' curl_7.64.0.orig.tar.gz 4032645 SHA256:cb90d2eb74d4e358c1ed1489f8e3af96b50ea4374ad71f143fa4595e998d81b5
-'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0-4%2bdeb10u8.debian.tar.xz' curl_7.64.0-4+deb10u8.debian.tar.xz 71744 SHA256:b41c8488fac73431610536b19b63d96e29cd12d1b4f51e433ce2ac206a7d5683
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.64.0-4+deb10u8/
 
-- https://sources.debian.net/src/curl/7.64.0-4+deb10u8/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.64.0-4+deb10u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.64.0-4+deb10u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-1+deb10u2`
 
@@ -1771,20 +1764,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.10.23+dfsg-2.1+deb10u6
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.10.23%2bdfsg-2.1%2bdeb10u6.dsc' imagemagick_6.9.10.23+dfsg-2.1+deb10u6.dsc 5239 SHA256:53918c05acea7724571ec97ec111c8fa229eab843c96116854d7920e62360dee
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.10.23%2bdfsg.orig.tar.xz' imagemagick_6.9.10.23+dfsg.orig.tar.xz 9081188 SHA256:44249112b624f2cc315573fa96685e547da27ebb321432259290c407023c531e
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.10.23%2bdfsg-2.1%2bdeb10u6.debian.tar.xz' imagemagick_6.9.10.23+dfsg-2.1+deb10u6.debian.tar.xz 266256 SHA256:1da356e74bc3c3f1df08d1a379c8d15400989fcd5ed422dbd74b7c66153d55d6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:6.9.10.23+dfsg-2.1+deb10u6/
 
-- https://sources.debian.net/src/imagemagick/8:6.9.10.23+dfsg-2.1+deb10u6/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:6.9.10.23+dfsg-2.1+deb10u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:6.9.10.23+dfsg-2.1+deb10u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.56+nmu1`
 
@@ -4507,20 +4493,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-11=11.22-0+deb10u1
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-11/postgresql-11_11.22-0%2bdeb10u1.dsc' postgresql-11_11.22-0+deb10u1.dsc 3745 SHA256:ba35d186c00e553a253e54038c48521d80a5cf2f0c3b40a6d6fce70ad4b49810
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-11/postgresql-11_11.22.orig.tar.bz2' postgresql-11_11.22.orig.tar.bz2 20482994 SHA256:2cb7c97d7a0d7278851bbc9c61f467b69c094c72b81740b751108e7892ebe1f0
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-11/postgresql-11_11.22-0%2bdeb10u1.debian.tar.xz' postgresql-11_11.22-0+deb10u1.debian.tar.xz 29868 SHA256:93e1ae7d4a32f10a2e2ea82a11a0fa0cfdb964c1a126f54aff7f174ec3e4c880
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-11/11.22-0+deb10u1/
 
-- https://sources.debian.net/src/postgresql-11/11.22-0+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-11/11.22-0+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-11/11.22-0+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.15-2`
 
