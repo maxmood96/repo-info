@@ -1761,20 +1761,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.10.23+dfsg-2.1+deb10u6
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.10.23%2bdfsg-2.1%2bdeb10u6.dsc' imagemagick_6.9.10.23+dfsg-2.1+deb10u6.dsc 5239 SHA256:53918c05acea7724571ec97ec111c8fa229eab843c96116854d7920e62360dee
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.10.23%2bdfsg.orig.tar.xz' imagemagick_6.9.10.23+dfsg.orig.tar.xz 9081188 SHA256:44249112b624f2cc315573fa96685e547da27ebb321432259290c407023c531e
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.10.23%2bdfsg-2.1%2bdeb10u6.debian.tar.xz' imagemagick_6.9.10.23+dfsg-2.1+deb10u6.debian.tar.xz 266256 SHA256:1da356e74bc3c3f1df08d1a379c8d15400989fcd5ed422dbd74b7c66153d55d6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:6.9.10.23+dfsg-2.1+deb10u6/
 
-- https://sources.debian.net/src/imagemagick/8:6.9.10.23+dfsg-2.1+deb10u6/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:6.9.10.23+dfsg-2.1+deb10u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:6.9.10.23+dfsg-2.1+deb10u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.56+nmu1`
 
