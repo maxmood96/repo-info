@@ -1,10 +1,10 @@
-# `wordpress:beta-6.5-RC2-php8.3-fpm-alpine`
+# `wordpress:beta-6.5-RC3-php8.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ccece1699a246d82796a3c9ddd9cd490300658c7a862ad6a4607a8f9e67feb98`
-- Created: `2024-03-12T19:03:10Z`
-- Virtual Size: ~ 256.65 Mb  
+- Image ID: `sha256:c92fdd8247a505f0db936e2b24407c6b168fdd6aa5853f6a42e62d9a1eef941c`
+- Created: `2024-03-19T19:03:10Z`
+- Virtual Size: ~ 256.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.3`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.3.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.3.tar.xz.asc`
-  - `PHP_SHA256=b0a996276fe21fe9ca8f993314c8bc02750f464c7b0343f056fb0894a8dfa9d1`
+  - `PHP_VERSION=8.3.4`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.4.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.4.tar.xz.asc`
+  - `PHP_SHA256=39a337036a546e5c28aea76cf424ac172db5156bd8a8fd85252e389409a5ba63`
 
 ## `apk` (`.apk`-based packages)
 
@@ -112,16 +112,16 @@ Apache-2.0 OR CC0-1.0
 ### `apk` package: `avahi-libs`
 
 ```console
-avahi-libs-0.8-r13 description:
+avahi-libs-0.8-r16 description:
 Libraries for avahi run-time use
 
-avahi-libs-0.8-r13 webpage:
+avahi-libs-0.8-r16 webpage:
 https://www.avahi.org/
 
-avahi-libs-0.8-r13 installed size:
+avahi-libs-0.8-r16 installed size:
 120 KiB
 
-avahi-libs-0.8-r13 license:
+avahi-libs-0.8-r16 license:
 LGPL-2.1-or-later
 
 ```
@@ -690,16 +690,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.0-r0 description:
+libexpat-2.6.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.0-r0 webpage:
+libexpat-2.6.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.0-r0 installed size:
+libexpat-2.6.2-r0 installed size:
 144 KiB
 
-libexpat-2.6.0-r0 license:
+libexpat-2.6.2-r0 license:
 MIT
 
 ```
