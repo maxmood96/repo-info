@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dbe054bc0129c5e7daaba60958ed19cf96cc8937a1ef76ee8b83ccbd25b90cdc`
-- Created: `2024-02-08T00:29:10.718998445Z`
-- Virtual Size: ~ 136.23 Mb  
+- Image ID: `sha256:311fdde33124f8fd62224a5344d9144fe8ef959b7d6d36337a35c1f7f3a7cec2`
+- Created: `2024-03-16T12:54:55.19095081Z`
+- Virtual Size: ~ 135.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -330,16 +330,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.5.0-r2 description:
+libexpat-2.6.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.5.0-r2 webpage:
+libexpat-2.6.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.5.0-r2 installed size:
+libexpat-2.6.2-r0 installed size:
 144 KiB
 
-libexpat-2.5.0-r2 license:
+libexpat-2.6.2-r0 license:
 MIT
 
 ```
@@ -568,16 +568,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.11.6-r0 description:
+libxml2-2.11.7-r0 description:
 XML parsing library, version 2
 
-libxml2-2.11.6-r0 webpage:
+libxml2-2.11.7-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.11.6-r0 installed size:
+libxml2-2.11.7-r0 installed size:
 1092 KiB
 
-libxml2-2.11.6-r0 license:
+libxml2-2.11.7-r0 license:
 MIT
 
 ```
@@ -585,16 +585,16 @@ MIT
 ### `apk` package: `libxml2-utils`
 
 ```console
-libxml2-utils-2.11.6-r0 description:
+libxml2-utils-2.11.7-r0 description:
 XML utilities
 
-libxml2-utils-2.11.6-r0 webpage:
+libxml2-utils-2.11.7-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-utils-2.11.6-r0 installed size:
+libxml2-utils-2.11.7-r0 installed size:
 100 KiB
 
-libxml2-utils-2.11.6-r0 license:
+libxml2-utils-2.11.7-r0 license:
 MIT
 
 ```
@@ -772,16 +772,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2023d-r0 description:
+tzdata-2024a-r0 description:
 Timezone data
 
-tzdata-2023d-r0 webpage:
+tzdata-2024a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2023d-r0 installed size:
-3076 KiB
+tzdata-2024a-r0 installed size:
+3072 KiB
 
-tzdata-2023d-r0 license:
+tzdata-2024a-r0 license:
 Public-Domain
 
 ```
