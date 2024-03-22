@@ -1,10 +1,10 @@
-# `nginx:1.25.4-alpine-perl`
+# `nginx:1.25.4-alpine-otel`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1ee8f91a67574d8472a8d70f893c8fdec4b069607511f3dcc4237836be50c302`
-- Created: `2024-02-14T18:24:57Z`
-- Virtual Size: ~ 78.13 Mb  
+- Image ID: `sha256:4fc2695fe6939edc05f30d0513cb46e3694ec0f84deeeaef46dc0676ad13593c`
+- Created: `2024-03-19T20:00:07Z`
+- Virtual Size: ~ 64.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -14,6 +14,7 @@
   - `NGINX_VERSION=1.25.4`
   - `PKG_RELEASE=1`
   - `NJS_VERSION=0.8.3`
+  - `OTEL_VERSION=0.1.0`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
 
@@ -155,6 +156,23 @@ GPL-2.0-only
 
 ```
 
+### `apk` package: `c-ares`
+
+```console
+c-ares-1.19.1-r0 description:
+An asynchronously DNS/names resolver library
+
+c-ares-1.19.1-r0 webpage:
+https://c-ares.org/
+
+c-ares-1.19.1-r0 installed size:
+92 KiB
+
+c-ares-1.19.1-r0 license:
+MIT
+
+```
+
 ### `apk` package: `ca-certificates`
 
 ```console
@@ -254,6 +272,40 @@ geoip-1.6.12-r5 installed size:
 
 geoip-1.6.12-r5 license:
 LGPL-2.1-or-later
+
+```
+
+### `apk` package: `icu-data-en`
+
+```console
+icu-data-en-73.2-r2 description:
+Stripped down ICU data with only en_US/GB locale and no legacy charset converters
+
+icu-data-en-73.2-r2 webpage:
+https://icu.unicode.org/
+
+icu-data-en-73.2-r2 installed size:
+3016 KiB
+
+icu-data-en-73.2-r2 license:
+ICU
+
+```
+
+### `apk` package: `icu-libs`
+
+```console
+icu-libs-73.2-r2 description:
+International Components for Unicode library (libraries)
+
+icu-libs-73.2-r2 webpage:
+https://icu.unicode.org/
+
+icu-libs-73.2-r2 installed size:
+4332 KiB
+
+icu-libs-73.2-r2 license:
+ICU
 
 ```
 
@@ -407,6 +459,23 @@ libexpat-2.6.2-r0 installed size:
 
 libexpat-2.6.2-r0 license:
 MIT
+
+```
+
+### `apk` package: `libgcc`
+
+```console
+libgcc-12.2.1_git20220924-r10 description:
+GNU C compiler runtime libraries
+
+libgcc-12.2.1_git20220924-r10 webpage:
+https://gcc.gnu.org
+
+libgcc-12.2.1_git20220924-r10 installed size:
+132 KiB
+
+libgcc-12.2.1_git20220924-r10 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -611,6 +680,23 @@ libssl3-3.1.4-r5 installed size:
 
 libssl3-3.1.4-r5 license:
 Apache-2.0
+
+```
+
+### `apk` package: `libstdc++`
+
+```console
+libstdc++-12.2.1_git20220924-r10 description:
+GNU C++ standard runtime library
+
+libstdc++-12.2.1_git20220924-r10 webpage:
+https://gcc.gnu.org
+
+libstdc++-12.2.1_git20220924-r10 installed size:
+2356 KiB
+
+libstdc++-12.2.1_git20220924-r10 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -954,19 +1040,19 @@ nginx-module-njs-1.25.4.0.8.3-r1 license:
 
 ```
 
-### `apk` package: `nginx-module-perl`
+### `apk` package: `nginx-module-otel`
 
 ```console
-nginx-module-perl-1.25.4-r1 description:
-nginx Perl dynamic module
+nginx-module-otel-1.25.4.0.1.0-r1 description:
+nginx OpenTelemetry dynamic module
 
-nginx-module-perl-1.25.4-r1 webpage:
+nginx-module-otel-1.25.4.0.1.0-r1 webpage:
 https://nginx.org/
 
-nginx-module-perl-1.25.4-r1 installed size:
-156 KiB
+nginx-module-otel-1.25.4.0.1.0-r1 installed size:
+10 MiB
 
-nginx-module-perl-1.25.4-r1 license:
+nginx-module-otel-1.25.4.0.1.0-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1005,20 +1091,20 @@ BSD-3-Clause
 
 ```
 
-### `apk` package: `perl`
+### `apk` package: `re2`
 
 ```console
-perl-5.36.2-r0 description:
-Larry Wall's Practical Extraction and Report Language
+re2-2023.03.01-r1 description:
+Efficient, principled regular expression library
 
-perl-5.36.2-r0 webpage:
-https://www.perl.org/
+re2-2023.03.01-r1 webpage:
+https://github.com/google/re2
 
-perl-5.36.2-r0 installed size:
-38 MiB
+re2-2023.03.01-r1 installed size:
+420 KiB
 
-perl-5.36.2-r0 license:
-Artistic-Perl OR GPL-1.0-or-later
+re2-2023.03.01-r1 license:
+BSD-3-Clause
 
 ```
 
