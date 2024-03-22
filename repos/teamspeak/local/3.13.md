@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:13bab7e6af8088dbc86af2f4b3fcece8c38f4d7288d9226c0dd908aafae7e494`
-- Created: `2024-01-27T04:22:19.988801914Z`
+- Image ID: `sha256:36ae13a2a8d48788e39dd46eafb0a81d5b8cd576f46397242e32f81f37e75ff9`
+- Created: `2024-03-16T09:04:15.054483734Z`
 - Virtual Size: ~ 28.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -204,16 +204,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libpq`
 
 ```console
-libpq-15.5-r0 description:
+libpq-15.6-r0 description:
 PostgreSQL client library
 
-libpq-15.5-r0 webpage:
+libpq-15.6-r0 webpage:
 https://www.postgresql.org/
 
-libpq-15.5-r0 installed size:
+libpq-15.6-r0 installed size:
 320 KiB
 
-libpq-15.5-r0 license:
+libpq-15.6-r0 license:
 PostgreSQL
 
 ```
