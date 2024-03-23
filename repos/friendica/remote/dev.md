@@ -1,7 +1,7 @@
 ## `friendica:dev`
 
 ```console
-$ docker pull friendica@sha256:7a1662ef419c59f099608818e9c7a3cc310b245a5a9c9d68b497601f7e42cee2
+$ docker pull friendica@sha256:005ac240e82a0f1eceaeaee59add684266fc683795d143378637544e5f86cdcd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18,14 +18,14 @@ $ docker pull friendica@sha256:7a1662ef419c59f099608818e9c7a3cc310b245a5a9c9d68b
 ### `friendica:dev` - linux; amd64
 
 ```console
-$ docker pull friendica@sha256:31baad626a127ef001e9b02f06358eb676ae59c9a4a66cd4b19550971f26fd69
+$ docker pull friendica@sha256:b95cc99b2fe217c7500b753cf78353f8d11ec247a1646a2054786c02abf1d3fc
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.0 MB (218043351 bytes)**  
+-	Total Size: **218.0 MB (218045974 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1aab8685526d15b5659884d872ff1de2ba9c3cb92a0d2113b113dd2f74d28807`
+-	Image ID: `sha256:985370eab139c4c495fdd7910edd5c767f910a0a6115b4d2e4b1bfc0b2d1412a`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -102,27 +102,27 @@ RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get upda
 ENV PHP_MEMORY_LIMIT=512M
 # Tue, 12 Mar 2024 14:23:51 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Tue, 12 Mar 2024 14:23:51 GMT
-RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
-# Tue, 12 Mar 2024 14:23:51 GMT
+# Sat, 23 Mar 2024 01:52:10 GMT
+RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;     ln -s /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
+# Sat, 23 Mar 2024 01:52:10 GMT
 VOLUME [/var/www/html]
-# Tue, 12 Mar 2024 14:23:52 GMT
+# Sat, 23 Mar 2024 01:52:10 GMT
 RUN set -ex;    a2enmod rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPTrustedProxy 10.0.0.0/8 ;     echo RemoteIPTrustedProxy 172.16.0.0/12 ;     echo RemoteIPTrustedProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Tue, 12 Mar 2024 14:23:52 GMT
+# Sat, 23 Mar 2024 01:52:10 GMT
 ENV FRIENDICA_SYSLOG_FLAGS=39
-# Tue, 12 Mar 2024 14:27:50 GMT
-ENV FRIENDICA_VERSION=2024.03-dev
-# Tue, 12 Mar 2024 14:27:50 GMT
-ENV FRIENDICA_ADDONS=2024.03-dev
-# Tue, 12 Mar 2024 14:27:55 GMT
+# Sat, 23 Mar 2024 01:54:53 GMT
+ENV FRIENDICA_VERSION=2024.06-dev
+# Sat, 23 Mar 2024 01:54:54 GMT
+ENV FRIENDICA_ADDONS=2024.06-dev
+# Sat, 23 Mar 2024 01:54:59 GMT
 RUN set -ex;     fetchDeps="         gnupg     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;
-# Tue, 12 Mar 2024 14:27:55 GMT
+# Sat, 23 Mar 2024 01:54:59 GMT
 COPY multi:25ccf1ddc0e0285a533455c8e856fafdfe193ac37a4c3c06069260e518fe72d7 in / 
-# Tue, 12 Mar 2024 14:27:55 GMT
+# Sat, 23 Mar 2024 01:54:59 GMT
 COPY multi:201dba5df7e408009a8882797a28095a47753a2db673a80c99e898e88501c42e in /usr/src/friendica/config/ 
-# Tue, 12 Mar 2024 14:27:55 GMT
+# Sat, 23 Mar 2024 01:54:59 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Tue, 12 Mar 2024 14:27:55 GMT
+# Sat, 23 Mar 2024 01:54:59 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -191,38 +191,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 12 Mar 2024 14:28:49 GMT  
 		Size: 18.2 MB (18198286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:164b157c6f3c4a18288fd0870d6791cabcb443e603c663c91b4369fb5abdb50e`  
-		Last Modified: Tue, 12 Mar 2024 14:28:44 GMT  
-		Size: 647.0 B  
+	-	`sha256:f3332d8b449f1c6d86ead69f9340017fc928acff145f6887ba6e7b0233fcb094`  
+		Last Modified: Sat, 23 Mar 2024 01:55:35 GMT  
+		Size: 680.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:221a9682f7965178575ab2ee6a6e068d7f47cec28270dd62d78a71ababcc9e5d`  
-		Last Modified: Tue, 12 Mar 2024 14:28:44 GMT  
+	-	`sha256:341ec3d7e483945292cfb3867e65ee25d7e05c3526337fb426145ec826205d42`  
+		Last Modified: Sat, 23 Mar 2024 01:55:35 GMT  
 		Size: 542.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:574d50c8f7d7058134e171cc14a794e6659c8ae076bb3e896d943d1dc2279c92`  
-		Last Modified: Tue, 12 Mar 2024 14:29:33 GMT  
-		Size: 17.3 MB (17251801 bytes)  
+	-	`sha256:cd285811c9119e1ab9c2a87aaf25f002c5d130a09f1f2c021f99019fc83fb4a9`  
+		Last Modified: Sat, 23 Mar 2024 01:57:18 GMT  
+		Size: 17.3 MB (17254393 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5bf39c7e8a219ec30b5cd861f4f4482944512f12a11382a6e3ff51b362aa6b84`  
-		Last Modified: Tue, 12 Mar 2024 14:29:31 GMT  
-		Size: 3.8 KB (3818 bytes)  
+	-	`sha256:0c9f2d0f78700cb8dbe0ef7710f615e3d9255239e36b5f0fa65476e47d715e09`  
+		Last Modified: Sat, 23 Mar 2024 01:57:17 GMT  
+		Size: 3.8 KB (3815 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e463d553b3a98864c501504dcfac6be6b8303a26d69de6479d758b1ee43f782`  
-		Last Modified: Tue, 12 Mar 2024 14:29:31 GMT  
-		Size: 946.0 B  
+	-	`sha256:cc627e7a82db3bb645fd646611c2b1395999b9969fc30700b7121060e31b2c6f`  
+		Last Modified: Sat, 23 Mar 2024 01:57:17 GMT  
+		Size: 947.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `friendica:dev` - linux; arm variant v5
 
 ```console
-$ docker pull friendica@sha256:982fdfb599fc1c715058f7ab76f91536e172c85229421137dd332045a6f4014f
+$ docker pull friendica@sha256:444253604f268647155faafcb3a92d15bf25dea1cfc2ccf7848f1ea273eed1d0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **193.3 MB (193262564 bytes)**  
+-	Total Size: **193.3 MB (193263105 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d922294fa866bcb8ad0f8e782a7c7f910a741abe1a02711300169708a3e17081`
+-	Image ID: `sha256:8f5dc068da4446f127b01fc1602e7d03b584f40dbbab19e7db7a92f647d8d2f0`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -299,27 +299,27 @@ RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get upda
 ENV PHP_MEMORY_LIMIT=512M
 # Tue, 12 Mar 2024 08:49:36 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Tue, 12 Mar 2024 08:49:36 GMT
-RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
-# Tue, 12 Mar 2024 08:49:37 GMT
+# Sat, 23 Mar 2024 00:48:21 GMT
+RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;     ln -s /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
+# Sat, 23 Mar 2024 00:48:21 GMT
 VOLUME [/var/www/html]
-# Tue, 12 Mar 2024 08:49:37 GMT
+# Sat, 23 Mar 2024 00:48:22 GMT
 RUN set -ex;    a2enmod rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPTrustedProxy 10.0.0.0/8 ;     echo RemoteIPTrustedProxy 172.16.0.0/12 ;     echo RemoteIPTrustedProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Tue, 12 Mar 2024 08:49:37 GMT
+# Sat, 23 Mar 2024 00:48:22 GMT
 ENV FRIENDICA_SYSLOG_FLAGS=39
-# Tue, 12 Mar 2024 08:53:53 GMT
-ENV FRIENDICA_VERSION=2024.03-dev
-# Tue, 12 Mar 2024 08:53:53 GMT
-ENV FRIENDICA_ADDONS=2024.03-dev
-# Tue, 12 Mar 2024 08:54:01 GMT
+# Sat, 23 Mar 2024 00:50:34 GMT
+ENV FRIENDICA_VERSION=2024.06-dev
+# Sat, 23 Mar 2024 00:50:35 GMT
+ENV FRIENDICA_ADDONS=2024.06-dev
+# Sat, 23 Mar 2024 00:50:41 GMT
 RUN set -ex;     fetchDeps="         gnupg     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;
-# Tue, 12 Mar 2024 08:54:01 GMT
+# Sat, 23 Mar 2024 00:50:42 GMT
 COPY multi:25ccf1ddc0e0285a533455c8e856fafdfe193ac37a4c3c06069260e518fe72d7 in / 
-# Tue, 12 Mar 2024 08:54:01 GMT
+# Sat, 23 Mar 2024 00:50:42 GMT
 COPY multi:201dba5df7e408009a8882797a28095a47753a2db673a80c99e898e88501c42e in /usr/src/friendica/config/ 
-# Tue, 12 Mar 2024 08:54:01 GMT
+# Sat, 23 Mar 2024 00:50:42 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Tue, 12 Mar 2024 08:54:02 GMT
+# Sat, 23 Mar 2024 00:50:42 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -388,38 +388,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 12 Mar 2024 08:54:53 GMT  
 		Size: 15.9 MB (15909109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34266579ff7792555f6897d46904b3a15b17237fa266c1350dfd73f5d3fa4d17`  
-		Last Modified: Tue, 12 Mar 2024 08:54:49 GMT  
-		Size: 640.0 B  
+	-	`sha256:0a21dfc70afdb28ce7f80a522ab972d3ad08768f3b742c6772738963be80cb07`  
+		Last Modified: Sat, 23 Mar 2024 00:51:08 GMT  
+		Size: 678.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa52cb352be2660dc9e374588a02412cfeaed0783998375056d5d92ef1296fc1`  
-		Last Modified: Tue, 12 Mar 2024 08:54:49 GMT  
-		Size: 537.0 B  
+	-	`sha256:0427bb303bf4291f30a2cf295398c1b6b0b69880d7e3690c6aa487a778c8bcf0`  
+		Last Modified: Sat, 23 Mar 2024 00:51:08 GMT  
+		Size: 536.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d28a02c9395b93a124b3494af52c884be1da802ef5db9d9b41714ae6c333adc`  
-		Last Modified: Tue, 12 Mar 2024 08:55:35 GMT  
-		Size: 17.0 MB (17030882 bytes)  
+	-	`sha256:94f9d341eba43382664acdd4339fe7ddf3fc38ec90bdae0c07e52c407bfd521d`  
+		Last Modified: Sat, 23 Mar 2024 00:52:26 GMT  
+		Size: 17.0 MB (17031386 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f25da816c978799814d281fae4c93448175680dedd21553114b08d2354c9bd47`  
-		Last Modified: Tue, 12 Mar 2024 08:55:34 GMT  
+	-	`sha256:3e1e1317bf3c4a188393220037fa43e8bb84b8cde8fef1805d24ef3dcd9888d3`  
+		Last Modified: Sat, 23 Mar 2024 00:52:25 GMT  
 		Size: 3.8 KB (3817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f79ba97cadb2b0589d913d5463cb7e5737b4c72b691df2d50984acf979879d2d`  
-		Last Modified: Tue, 12 Mar 2024 08:55:34 GMT  
+	-	`sha256:0bba6193dbad26e6a41987813ded564fd952aae873968a51cd27553a6c481c39`  
+		Last Modified: Sat, 23 Mar 2024 00:52:25 GMT  
 		Size: 946.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `friendica:dev` - linux; arm variant v7
 
 ```console
-$ docker pull friendica@sha256:b3fcbe910d18c12d1239521c4f0067c2d7c26b786ee1cf9e9de830f03bb695b2
+$ docker pull friendica@sha256:f7b34812f4658f3fe98d01c3109ee3b8e3772b374f7c1a6c0f81c76e6795427e
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.3 MB (184323144 bytes)**  
+-	Total Size: **184.3 MB (184324194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ec8a1f95363040539dddec1be567ef4689c7fdbf8b835361b77a57c92e695974`
+-	Image ID: `sha256:341c4de1c529047640729fbe2196b4ace2f2d67ea83a17a2651eb30ec3aa1fd7`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -496,27 +496,27 @@ RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get upda
 ENV PHP_MEMORY_LIMIT=512M
 # Tue, 12 Mar 2024 12:01:05 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Tue, 12 Mar 2024 12:01:06 GMT
-RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
-# Tue, 12 Mar 2024 12:01:06 GMT
+# Sat, 23 Mar 2024 00:57:29 GMT
+RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;     ln -s /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
+# Sat, 23 Mar 2024 00:57:29 GMT
 VOLUME [/var/www/html]
-# Tue, 12 Mar 2024 12:01:08 GMT
+# Sat, 23 Mar 2024 00:57:31 GMT
 RUN set -ex;    a2enmod rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPTrustedProxy 10.0.0.0/8 ;     echo RemoteIPTrustedProxy 172.16.0.0/12 ;     echo RemoteIPTrustedProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Tue, 12 Mar 2024 12:01:08 GMT
+# Sat, 23 Mar 2024 00:57:32 GMT
 ENV FRIENDICA_SYSLOG_FLAGS=39
-# Tue, 12 Mar 2024 12:06:45 GMT
-ENV FRIENDICA_VERSION=2024.03-dev
-# Tue, 12 Mar 2024 12:06:45 GMT
-ENV FRIENDICA_ADDONS=2024.03-dev
-# Tue, 12 Mar 2024 12:06:51 GMT
+# Sat, 23 Mar 2024 01:01:50 GMT
+ENV FRIENDICA_VERSION=2024.06-dev
+# Sat, 23 Mar 2024 01:01:51 GMT
+ENV FRIENDICA_ADDONS=2024.06-dev
+# Sat, 23 Mar 2024 01:02:00 GMT
 RUN set -ex;     fetchDeps="         gnupg     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;
-# Tue, 12 Mar 2024 12:06:52 GMT
+# Sat, 23 Mar 2024 01:02:02 GMT
 COPY multi:25ccf1ddc0e0285a533455c8e856fafdfe193ac37a4c3c06069260e518fe72d7 in / 
-# Tue, 12 Mar 2024 12:06:52 GMT
+# Sat, 23 Mar 2024 01:02:03 GMT
 COPY multi:201dba5df7e408009a8882797a28095a47753a2db673a80c99e898e88501c42e in /usr/src/friendica/config/ 
-# Tue, 12 Mar 2024 12:06:52 GMT
+# Sat, 23 Mar 2024 01:02:04 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Tue, 12 Mar 2024 12:06:52 GMT
+# Sat, 23 Mar 2024 01:02:04 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -585,38 +585,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 12 Mar 2024 12:07:50 GMT  
 		Size: 14.8 MB (14797097 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f61689e46f3f4342e3266db2ea07f48bb9046e2e4cc9777e433ccfed728beee`  
-		Last Modified: Tue, 12 Mar 2024 12:07:45 GMT  
-		Size: 643.0 B  
+	-	`sha256:e1b2240fae93436186730e34f25030a7e5a38f4c1ee4509f72362b20574f51e3`  
+		Last Modified: Sat, 23 Mar 2024 01:03:01 GMT  
+		Size: 682.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15d80df56050caa744507d1e825fcfb3ac4c0dc745749609b93a4dd6476dc155`  
-		Last Modified: Tue, 12 Mar 2024 12:07:45 GMT  
-		Size: 535.0 B  
+	-	`sha256:85c8ea50ecc06f6058863db1521fe8b7b54158a87b639b789f72f2db98c21247`  
+		Last Modified: Sat, 23 Mar 2024 01:03:01 GMT  
+		Size: 536.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13219466059be8795c42862fc8dc5c35fc068f59ba5155521c9e639a0acb23d9`  
-		Last Modified: Tue, 12 Mar 2024 12:08:36 GMT  
-		Size: 16.9 MB (16926554 bytes)  
+	-	`sha256:0bac92f2ba54e4427992a938c8aa1eb3f507d8706d4519c793d00e704ff4168a`  
+		Last Modified: Sat, 23 Mar 2024 01:05:12 GMT  
+		Size: 16.9 MB (16927564 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc1e04b640a401148385673564a6a81ddd692b59bde5d1974299643438601ed8`  
-		Last Modified: Tue, 12 Mar 2024 12:08:34 GMT  
-		Size: 3.8 KB (3818 bytes)  
+	-	`sha256:0265aa2c9c1a8c6e58acf00aa0061e0aa1bfd1c5e598e2bd779cf5e753e8fb4d`  
+		Last Modified: Sat, 23 Mar 2024 01:05:10 GMT  
+		Size: 3.8 KB (3814 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8556ecab7aeadea0b3ceaea0a5fb62e68a958bed9b52dff22bf987dd70129b7`  
-		Last Modified: Tue, 12 Mar 2024 12:08:34 GMT  
-		Size: 948.0 B  
+	-	`sha256:4b7d8d9772dc638001952d580b9bb311afaaa5562729ecc7d971d6d1a8b5f2c7`  
+		Last Modified: Sat, 23 Mar 2024 01:05:10 GMT  
+		Size: 952.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `friendica:dev` - linux; arm64 variant v8
 
 ```console
-$ docker pull friendica@sha256:0db22d66a87d00253509ccb4db8ba32a134ba05d6051cbbc1b325ec25639c43e
+$ docker pull friendica@sha256:799baf654a40e9b9c71ec18ce5cd8b42a3aa7f22055592d4350fed711bc1813f
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **209.7 MB (209677374 bytes)**  
+-	Total Size: **209.7 MB (209679638 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3e8ad8f7924fcb527b9ebf5f4757c49f7550d47b43668c69387330f9dd912b6f`
+-	Image ID: `sha256:14e557a6790e638b0dcc418f82f9bd94193896a877817e24bf106830ee336921`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -693,27 +693,27 @@ RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get upda
 ENV PHP_MEMORY_LIMIT=512M
 # Tue, 12 Mar 2024 12:09:10 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Tue, 12 Mar 2024 12:09:10 GMT
-RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
-# Tue, 12 Mar 2024 12:09:10 GMT
+# Sat, 23 Mar 2024 00:39:32 GMT
+RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;     ln -s /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
+# Sat, 23 Mar 2024 00:39:32 GMT
 VOLUME [/var/www/html]
-# Tue, 12 Mar 2024 12:09:11 GMT
+# Sat, 23 Mar 2024 00:39:33 GMT
 RUN set -ex;    a2enmod rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPTrustedProxy 10.0.0.0/8 ;     echo RemoteIPTrustedProxy 172.16.0.0/12 ;     echo RemoteIPTrustedProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Tue, 12 Mar 2024 12:09:11 GMT
+# Sat, 23 Mar 2024 00:39:33 GMT
 ENV FRIENDICA_SYSLOG_FLAGS=39
-# Tue, 12 Mar 2024 12:13:09 GMT
-ENV FRIENDICA_VERSION=2024.03-dev
-# Tue, 12 Mar 2024 12:13:09 GMT
-ENV FRIENDICA_ADDONS=2024.03-dev
-# Tue, 12 Mar 2024 12:13:13 GMT
+# Sat, 23 Mar 2024 00:42:03 GMT
+ENV FRIENDICA_VERSION=2024.06-dev
+# Sat, 23 Mar 2024 00:42:04 GMT
+ENV FRIENDICA_ADDONS=2024.06-dev
+# Sat, 23 Mar 2024 00:42:08 GMT
 RUN set -ex;     fetchDeps="         gnupg     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;
-# Tue, 12 Mar 2024 12:13:13 GMT
+# Sat, 23 Mar 2024 00:42:08 GMT
 COPY multi:25ccf1ddc0e0285a533455c8e856fafdfe193ac37a4c3c06069260e518fe72d7 in / 
-# Tue, 12 Mar 2024 12:13:14 GMT
+# Sat, 23 Mar 2024 00:42:08 GMT
 COPY multi:201dba5df7e408009a8882797a28095a47753a2db673a80c99e898e88501c42e in /usr/src/friendica/config/ 
-# Tue, 12 Mar 2024 12:13:14 GMT
+# Sat, 23 Mar 2024 00:42:08 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Tue, 12 Mar 2024 12:13:14 GMT
+# Sat, 23 Mar 2024 00:42:08 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -782,38 +782,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 12 Mar 2024 12:14:00 GMT  
 		Size: 16.4 MB (16423968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4695780487cb74f9adadb74c12f4c3634d5301e32d7c0190637e76ef661c43fa`  
-		Last Modified: Tue, 12 Mar 2024 12:13:56 GMT  
-		Size: 639.0 B  
+	-	`sha256:781984ece38dfe9a3b4a21e7ac4d32e1d7c47439d24d8194606e8495a1ca3bbe`  
+		Last Modified: Sat, 23 Mar 2024 00:42:41 GMT  
+		Size: 680.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:932b7c36f101f37e36f5dda271f6d60e5170bd5deb9061565ee22d10aadbb860`  
-		Last Modified: Tue, 12 Mar 2024 12:13:56 GMT  
-		Size: 537.0 B  
+	-	`sha256:d04675a2aac7a690d31a519ada21ba031128413cb7a5bc117921ae0510e56d80`  
+		Last Modified: Sat, 23 Mar 2024 00:42:41 GMT  
+		Size: 553.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f669312b1d60bc9a2f01e4d2b1b7a9b7f3703dc9f6d7d3a1cad1e54cc24b3d3`  
-		Last Modified: Tue, 12 Mar 2024 12:14:40 GMT  
-		Size: 17.0 MB (17045604 bytes)  
+	-	`sha256:318e162dda887d9bcfaa06e2e4c13ae73c0da0de5e68dba42209b9a381addc3e`  
+		Last Modified: Sat, 23 Mar 2024 00:44:17 GMT  
+		Size: 17.0 MB (17047814 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0f8dcb20ef0ad6651bc98f2954739559dac729b8d6c3afc2c96b913c988e70f`  
-		Last Modified: Tue, 12 Mar 2024 12:14:39 GMT  
-		Size: 3.8 KB (3818 bytes)  
+	-	`sha256:4ea858d5f6cb6a137f9453d8b05d7dc21abe54e82817e5f4aafbe6f0981f1a7d`  
+		Last Modified: Sat, 23 Mar 2024 00:44:15 GMT  
+		Size: 3.8 KB (3817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cbd215b3ed22220c74581d4d37978c9578c183e9810786b3333c6982ffd511b1`  
-		Last Modified: Tue, 12 Mar 2024 12:14:39 GMT  
-		Size: 949.0 B  
+	-	`sha256:866dab64cfc4d7c028a1257fcfd9d7f8887b25101a8b075d642dca61189c50c6`  
+		Last Modified: Sat, 23 Mar 2024 00:44:15 GMT  
+		Size: 947.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `friendica:dev` - linux; 386
 
 ```console
-$ docker pull friendica@sha256:ae2cc9f93e5532c4bfd504609658cdeb2d29b63e7e68fa0b305e1da8523ba706
+$ docker pull friendica@sha256:e9e46175577d0f925e491af73b62875d022f3681b2d288105a68a4d651307816
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.3 MB (221264625 bytes)**  
+-	Total Size: **221.3 MB (221266394 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b74ec035d1b6ab4356e16cfe720ad9f8e102fd7f4bc9945a8dab860577fa020c`
+-	Image ID: `sha256:ab7154ec2faf63a6a19d991fb498f241283c997d9ea4d966363e9278357b0d51`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -890,27 +890,27 @@ RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get upda
 ENV PHP_MEMORY_LIMIT=512M
 # Tue, 12 Mar 2024 15:07:52 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Tue, 12 Mar 2024 15:07:53 GMT
-RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
-# Tue, 12 Mar 2024 15:07:53 GMT
+# Sat, 23 Mar 2024 00:59:20 GMT
+RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;     ln -s /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
+# Sat, 23 Mar 2024 00:59:20 GMT
 VOLUME [/var/www/html]
-# Tue, 12 Mar 2024 15:07:53 GMT
+# Sat, 23 Mar 2024 00:59:21 GMT
 RUN set -ex;    a2enmod rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPTrustedProxy 10.0.0.0/8 ;     echo RemoteIPTrustedProxy 172.16.0.0/12 ;     echo RemoteIPTrustedProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Tue, 12 Mar 2024 15:07:53 GMT
+# Sat, 23 Mar 2024 00:59:21 GMT
 ENV FRIENDICA_SYSLOG_FLAGS=39
-# Tue, 12 Mar 2024 15:12:56 GMT
-ENV FRIENDICA_VERSION=2024.03-dev
-# Tue, 12 Mar 2024 15:12:56 GMT
-ENV FRIENDICA_ADDONS=2024.03-dev
-# Tue, 12 Mar 2024 15:13:03 GMT
+# Sat, 23 Mar 2024 01:02:26 GMT
+ENV FRIENDICA_VERSION=2024.06-dev
+# Sat, 23 Mar 2024 01:02:26 GMT
+ENV FRIENDICA_ADDONS=2024.06-dev
+# Sat, 23 Mar 2024 01:02:34 GMT
 RUN set -ex;     fetchDeps="         gnupg     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;
-# Tue, 12 Mar 2024 15:13:04 GMT
+# Sat, 23 Mar 2024 01:02:34 GMT
 COPY multi:25ccf1ddc0e0285a533455c8e856fafdfe193ac37a4c3c06069260e518fe72d7 in / 
-# Tue, 12 Mar 2024 15:13:04 GMT
+# Sat, 23 Mar 2024 01:02:35 GMT
 COPY multi:201dba5df7e408009a8882797a28095a47753a2db673a80c99e898e88501c42e in /usr/src/friendica/config/ 
-# Tue, 12 Mar 2024 15:13:04 GMT
+# Sat, 23 Mar 2024 01:02:35 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Tue, 12 Mar 2024 15:13:04 GMT
+# Sat, 23 Mar 2024 01:02:35 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -979,38 +979,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 12 Mar 2024 15:14:09 GMT  
 		Size: 17.5 MB (17466366 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5a6947ee4ed7725015946e811c805590d17148368f0e6c0859733831dc0aa68`  
-		Last Modified: Tue, 12 Mar 2024 15:14:02 GMT  
-		Size: 639.0 B  
+	-	`sha256:f7c0066c1f15575a934a699d0adfe4c5c609756c866317138bb8ff4b6f8cd136`  
+		Last Modified: Sat, 23 Mar 2024 01:03:11 GMT  
+		Size: 679.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebeca2188d68ecdb45097d8bffb80b2e4f352437a89710c68492625cc1b0c714`  
-		Last Modified: Tue, 12 Mar 2024 15:14:02 GMT  
-		Size: 537.0 B  
+	-	`sha256:1a13ef52a73edfe1339878ae3467177a19c1bcd5f90bdc210e1984f5b6f02f34`  
+		Last Modified: Sat, 23 Mar 2024 01:03:11 GMT  
+		Size: 543.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:384befed34087a731b369b25b657316a820886535e72469a76b758b9caa061ef`  
-		Last Modified: Tue, 12 Mar 2024 15:14:58 GMT  
-		Size: 18.0 MB (17988869 bytes)  
+	-	`sha256:c12e6086ed012a1aa109dab01a0b16e2f98a32e076ee545bad00705b7240f938`  
+		Last Modified: Sat, 23 Mar 2024 01:05:17 GMT  
+		Size: 18.0 MB (17990591 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9162d9f0d3b391ee638ad037a8925e95dfc86ce58422598c2ed918ebcc879d80`  
-		Last Modified: Tue, 12 Mar 2024 15:14:55 GMT  
+	-	`sha256:3b4557a17fdd17c4de024c7b5b2d2245c6e6cd7ca7933a748344ec794dbf3d58`  
+		Last Modified: Sat, 23 Mar 2024 01:05:15 GMT  
 		Size: 3.8 KB (3818 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7267a4daa5ebf3fc99635a70ee2be7ed4d05a3083916e900cc216a649f8423b`  
-		Last Modified: Tue, 12 Mar 2024 15:14:55 GMT  
-		Size: 947.0 B  
+	-	`sha256:82a9cd582691c8deab7af54de407097ff53f556f00d7ad1bfece9406d20a6247`  
+		Last Modified: Sat, 23 Mar 2024 01:05:15 GMT  
+		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `friendica:dev` - linux; mips64le
 
 ```console
-$ docker pull friendica@sha256:1f54258c3def342e57cb32f5757ac6166f09348c6ad748a958922ba6c8ca955d
+$ docker pull friendica@sha256:aab7467d8407f7496d75ee7c84ddf4761005058eeb22fac6d53d219be47e530b
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.2 MB (191181912 bytes)**  
+-	Total Size: **191.2 MB (191183373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df86023ff65e2f27d5c0ca947f78eac7beb55fa6e0d949a5faf00028d653b2d4`
+-	Image ID: `sha256:0cc59a504862b791a9cfdd5832b8a17929fff3881e5aa9ed953079e01b4bbad0`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1087,27 +1087,27 @@ RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get upda
 ENV PHP_MEMORY_LIMIT=512M
 # Tue, 12 Mar 2024 21:58:39 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Tue, 12 Mar 2024 21:58:46 GMT
-RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
-# Tue, 12 Mar 2024 21:58:49 GMT
+# Sat, 23 Mar 2024 01:07:44 GMT
+RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;     ln -s /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
+# Sat, 23 Mar 2024 01:07:48 GMT
 VOLUME [/var/www/html]
-# Tue, 12 Mar 2024 21:58:56 GMT
+# Sat, 23 Mar 2024 01:07:56 GMT
 RUN set -ex;    a2enmod rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPTrustedProxy 10.0.0.0/8 ;     echo RemoteIPTrustedProxy 172.16.0.0/12 ;     echo RemoteIPTrustedProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Tue, 12 Mar 2024 21:59:00 GMT
+# Sat, 23 Mar 2024 01:08:00 GMT
 ENV FRIENDICA_SYSLOG_FLAGS=39
-# Tue, 12 Mar 2024 22:16:43 GMT
-ENV FRIENDICA_VERSION=2024.03-dev
-# Tue, 12 Mar 2024 22:16:47 GMT
-ENV FRIENDICA_ADDONS=2024.03-dev
-# Tue, 12 Mar 2024 22:17:17 GMT
+# Sat, 23 Mar 2024 01:18:05 GMT
+ENV FRIENDICA_VERSION=2024.06-dev
+# Sat, 23 Mar 2024 01:18:09 GMT
+ENV FRIENDICA_ADDONS=2024.06-dev
+# Sat, 23 Mar 2024 01:18:44 GMT
 RUN set -ex;     fetchDeps="         gnupg     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;
-# Tue, 12 Mar 2024 22:17:21 GMT
+# Sat, 23 Mar 2024 01:18:48 GMT
 COPY multi:25ccf1ddc0e0285a533455c8e856fafdfe193ac37a4c3c06069260e518fe72d7 in / 
-# Tue, 12 Mar 2024 22:17:25 GMT
+# Sat, 23 Mar 2024 01:18:52 GMT
 COPY multi:201dba5df7e408009a8882797a28095a47753a2db673a80c99e898e88501c42e in /usr/src/friendica/config/ 
-# Tue, 12 Mar 2024 22:17:29 GMT
+# Sat, 23 Mar 2024 01:18:55 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Tue, 12 Mar 2024 22:17:32 GMT
+# Sat, 23 Mar 2024 01:19:00 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1176,38 +1176,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 12 Mar 2024 22:21:22 GMT  
 		Size: 15.7 MB (15723649 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8cb786fd376568974aba81050cb8b6b2ccd58cdd2297ecdea140227ad07bde5c`  
-		Last Modified: Tue, 12 Mar 2024 22:21:08 GMT  
-		Size: 614.0 B  
+	-	`sha256:cb3786e2a9368aba8aeec3d7d23abe28449d8c2d98bf25464c6279914adead78`  
+		Last Modified: Sat, 23 Mar 2024 01:20:36 GMT  
+		Size: 652.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b93c449bc9f2d07e015c432f44dd62757391f04c38a014cdeb464ec153f4ca38`  
-		Last Modified: Tue, 12 Mar 2024 22:21:08 GMT  
+	-	`sha256:bf283196a5a61d712a049015ba9679ad9fd51b5f3a9500a9d6ebd48902a7f1c0`  
+		Last Modified: Sat, 23 Mar 2024 01:20:36 GMT  
 		Size: 546.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12bd76e2d603c2e89d58eedd0e6d3f99284477a1971a8c84e9913b2ddcf577bc`  
-		Last Modified: Tue, 12 Mar 2024 22:22:55 GMT  
-		Size: 16.5 MB (16531803 bytes)  
+	-	`sha256:d33f4911e258c246d66d17a03ffe53452bcf046ddd350a762d6dc1efcfef0882`  
+		Last Modified: Sat, 23 Mar 2024 01:23:40 GMT  
+		Size: 16.5 MB (16533227 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a150b6f64a391154aa5f346e9ed3c7553845bfe40f810f6c5f0624ec43ae17c`  
-		Last Modified: Tue, 12 Mar 2024 22:22:48 GMT  
-		Size: 3.8 KB (3818 bytes)  
+	-	`sha256:5fc5ce04f03880e96d27b75be38b8ae3b071bf466ec32a867a9f814692f1b894`  
+		Last Modified: Sat, 23 Mar 2024 01:23:33 GMT  
+		Size: 3.8 KB (3815 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7abd9e633a144060c3357188f19bd6385fc75ae31ac1fd853e922e0e8ff2a2a2`  
-		Last Modified: Tue, 12 Mar 2024 22:22:48 GMT  
-		Size: 920.0 B  
+	-	`sha256:3d015383c84dc1367fceee762033083d4f6e23531f736d7734145074a41536b8`  
+		Last Modified: Sat, 23 Mar 2024 01:23:33 GMT  
+		Size: 922.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `friendica:dev` - linux; ppc64le
 
 ```console
-$ docker pull friendica@sha256:f3395ef1aa36f8e79170a4236025643f0483c68501354fbf0e7dbdd34f1da74c
+$ docker pull friendica@sha256:c4ff3370e77e66f6059924a8c143a4fdabbce28e1417c67e18dc466213dd415c
 ```
 
 -	Docker Version: 20.10.26
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.1 MB (218129466 bytes)**  
+-	Total Size: **218.1 MB (218131593 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5b1ed667151fed44a1b8384522abe22dccfc15e23b7b154c0159a4037116c56`
+-	Image ID: `sha256:7faf8d927cf61c9b35f37ef83baa75d2d37551ca387a0abfa5be849640368738`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1284,27 +1284,27 @@ RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get upda
 ENV PHP_MEMORY_LIMIT=512M
 # Tue, 12 Mar 2024 15:47:28 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Tue, 12 Mar 2024 15:47:29 GMT
-RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
-# Tue, 12 Mar 2024 15:47:30 GMT
+# Sat, 23 Mar 2024 01:25:52 GMT
+RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;     ln -s /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
+# Sat, 23 Mar 2024 01:25:54 GMT
 VOLUME [/var/www/html]
-# Tue, 12 Mar 2024 15:47:32 GMT
+# Sat, 23 Mar 2024 01:25:57 GMT
 RUN set -ex;    a2enmod rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPTrustedProxy 10.0.0.0/8 ;     echo RemoteIPTrustedProxy 172.16.0.0/12 ;     echo RemoteIPTrustedProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Tue, 12 Mar 2024 15:47:32 GMT
+# Sat, 23 Mar 2024 01:25:58 GMT
 ENV FRIENDICA_SYSLOG_FLAGS=39
-# Tue, 12 Mar 2024 15:55:02 GMT
-ENV FRIENDICA_VERSION=2024.03-dev
-# Tue, 12 Mar 2024 15:55:02 GMT
-ENV FRIENDICA_ADDONS=2024.03-dev
-# Tue, 12 Mar 2024 15:55:12 GMT
+# Sat, 23 Mar 2024 01:32:19 GMT
+ENV FRIENDICA_VERSION=2024.06-dev
+# Sat, 23 Mar 2024 01:32:19 GMT
+ENV FRIENDICA_ADDONS=2024.06-dev
+# Sat, 23 Mar 2024 01:32:36 GMT
 RUN set -ex;     fetchDeps="         gnupg     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;
-# Tue, 12 Mar 2024 15:55:13 GMT
+# Sat, 23 Mar 2024 01:32:37 GMT
 COPY multi:25ccf1ddc0e0285a533455c8e856fafdfe193ac37a4c3c06069260e518fe72d7 in / 
-# Tue, 12 Mar 2024 15:55:13 GMT
+# Sat, 23 Mar 2024 01:32:37 GMT
 COPY multi:201dba5df7e408009a8882797a28095a47753a2db673a80c99e898e88501c42e in /usr/src/friendica/config/ 
-# Tue, 12 Mar 2024 15:55:14 GMT
+# Sat, 23 Mar 2024 01:32:38 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Tue, 12 Mar 2024 15:55:14 GMT
+# Sat, 23 Mar 2024 01:32:39 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1373,38 +1373,38 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 12 Mar 2024 15:56:48 GMT  
 		Size: 17.7 MB (17679607 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f168c7cec590cfcd15763ad2af26cfeaa0ce510e116343832174194bd0f7cca`  
-		Last Modified: Tue, 12 Mar 2024 15:56:40 GMT  
-		Size: 644.0 B  
+	-	`sha256:d1728e0e0eb526ee8429ecf23f41722057a2de5e2723ec0ccbfb38443e365abc`  
+		Last Modified: Sat, 23 Mar 2024 01:33:52 GMT  
+		Size: 682.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d938481835a0865471d914d759991db64ee820ceb7257418bae85c0a72398651`  
-		Last Modified: Tue, 12 Mar 2024 15:56:40 GMT  
-		Size: 546.0 B  
+	-	`sha256:13eba2da77383ba82d34dcf85a77290d558b2dd3ced60c3463a7949380c2faf2`  
+		Last Modified: Sat, 23 Mar 2024 01:33:52 GMT  
+		Size: 549.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a58ad275cede0fbb8082b2626b465bf71c9799b6713507e8f16ed4b8424a42e4`  
-		Last Modified: Tue, 12 Mar 2024 15:57:36 GMT  
-		Size: 17.6 MB (17558936 bytes)  
+	-	`sha256:c74aa1253560a41d206400ebfd45967e5545588700b0a51680dff1ded887f210`  
+		Last Modified: Sat, 23 Mar 2024 01:35:54 GMT  
+		Size: 17.6 MB (17561021 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0061a805edb231da0af59d8f4f174ec18f855404c8962004dc0596993507c6b1`  
-		Last Modified: Tue, 12 Mar 2024 15:57:34 GMT  
+	-	`sha256:095d1420363ae9f3a3b5e68eb6d1bd0569475666eff0fbc3c8a0eeaf019ce0a8`  
+		Last Modified: Sat, 23 Mar 2024 01:35:52 GMT  
 		Size: 3.8 KB (3818 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:509941d09b83f99c96c0ddfc80d4b0934f4b412d4c3ad32f200fed3a03c37d58`  
-		Last Modified: Tue, 12 Mar 2024 15:57:34 GMT  
-		Size: 946.0 B  
+	-	`sha256:e4d96fd1edffd2a81ef4871dc6be3fdf1b49628bbbae88da30cec582a070e7dd`  
+		Last Modified: Sat, 23 Mar 2024 01:35:52 GMT  
+		Size: 947.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `friendica:dev` - linux; s390x
 
 ```console
-$ docker pull friendica@sha256:86cc5f280f576046b7c033307fbe0ed6a1ff172249ee8fe5c8e20665e1d784a2
+$ docker pull friendica@sha256:5c2fbeba7003c0ec16f53e596dbe1d1ee6f8e6d494a2c57f3e459b1c7e46cd22
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.5 MB (191519525 bytes)**  
+-	Total Size: **191.5 MB (191520569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:871e5e612b60568a5b36afc1188c53ae7be8b182be70c02852e804896d12f3fe`
+-	Image ID: `sha256:03b11b0dc8268f07ff7a0a6ab5774529a170ba267f12a8df4793b40ddebfc471`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1481,27 +1481,27 @@ RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get upda
 ENV PHP_MEMORY_LIMIT=512M
 # Tue, 12 Mar 2024 14:51:59 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Tue, 12 Mar 2024 14:52:00 GMT
-RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
-# Tue, 12 Mar 2024 14:52:00 GMT
+# Sat, 23 Mar 2024 00:59:33 GMT
+RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;     ln -s /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
+# Sat, 23 Mar 2024 00:59:33 GMT
 VOLUME [/var/www/html]
-# Tue, 12 Mar 2024 14:52:00 GMT
+# Sat, 23 Mar 2024 00:59:34 GMT
 RUN set -ex;    a2enmod rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPTrustedProxy 10.0.0.0/8 ;     echo RemoteIPTrustedProxy 172.16.0.0/12 ;     echo RemoteIPTrustedProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Tue, 12 Mar 2024 14:52:01 GMT
+# Sat, 23 Mar 2024 00:59:34 GMT
 ENV FRIENDICA_SYSLOG_FLAGS=39
-# Tue, 12 Mar 2024 14:58:19 GMT
-ENV FRIENDICA_VERSION=2024.03-dev
-# Tue, 12 Mar 2024 14:58:19 GMT
-ENV FRIENDICA_ADDONS=2024.03-dev
-# Tue, 12 Mar 2024 14:58:23 GMT
+# Sat, 23 Mar 2024 01:09:59 GMT
+ENV FRIENDICA_VERSION=2024.06-dev
+# Sat, 23 Mar 2024 01:09:59 GMT
+ENV FRIENDICA_ADDONS=2024.06-dev
+# Sat, 23 Mar 2024 01:10:04 GMT
 RUN set -ex;     fetchDeps="         gnupg     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;
-# Tue, 12 Mar 2024 14:58:24 GMT
+# Sat, 23 Mar 2024 01:10:05 GMT
 COPY multi:25ccf1ddc0e0285a533455c8e856fafdfe193ac37a4c3c06069260e518fe72d7 in / 
-# Tue, 12 Mar 2024 14:58:24 GMT
+# Sat, 23 Mar 2024 01:10:05 GMT
 COPY multi:201dba5df7e408009a8882797a28095a47753a2db673a80c99e898e88501c42e in /usr/src/friendica/config/ 
-# Tue, 12 Mar 2024 14:58:24 GMT
+# Sat, 23 Mar 2024 01:10:06 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Tue, 12 Mar 2024 14:58:24 GMT
+# Sat, 23 Mar 2024 01:10:06 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1570,23 +1570,23 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 12 Mar 2024 15:06:20 GMT  
 		Size: 15.8 MB (15769484 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2738b8d5a83e9714f0e8cd29e6f76f852cca5bab3b4aa1f09ec4e3348285ebf`  
-		Last Modified: Tue, 12 Mar 2024 15:06:17 GMT  
-		Size: 641.0 B  
+	-	`sha256:bd5d1bc1f53b2bfef8bdd3165a7f8bef81e109b6213fdb8de54271b64ceeaba2`  
+		Last Modified: Sat, 23 Mar 2024 01:14:31 GMT  
+		Size: 679.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d2757f4598b597261da7cc70bf3b62cb88177392244d5781756cb03c5dfe099`  
-		Last Modified: Tue, 12 Mar 2024 15:06:17 GMT  
-		Size: 533.0 B  
+	-	`sha256:b93342e19309572859b1b21530619b274197d9cd3e47e865c878b84f49ed8804`  
+		Last Modified: Sat, 23 Mar 2024 01:14:31 GMT  
+		Size: 537.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbe8c58d1600f12f36867ad830620be3ccdf22210cc16653589c3f4264af6acf`  
-		Last Modified: Tue, 12 Mar 2024 15:06:51 GMT  
-		Size: 16.6 MB (16612205 bytes)  
+	-	`sha256:bb6a8e1dabbe84d140378ea5dbb89df434a17014967150b73a44222870c5431d`  
+		Last Modified: Sat, 23 Mar 2024 01:16:00 GMT  
+		Size: 16.6 MB (16613209 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b84bfd2e30ab8edba39f00e83adff7d860edd206f1bbad28df04e9d194a9acda`  
-		Last Modified: Tue, 12 Mar 2024 15:06:50 GMT  
-		Size: 3.8 KB (3818 bytes)  
+	-	`sha256:559c2ba0ffc2729c2d5aafb07d33d02b45a211efc6c64e6060a79788883cf954`  
+		Last Modified: Sat, 23 Mar 2024 01:15:59 GMT  
+		Size: 3.8 KB (3815 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c61111fc451c16dcc36e253dc807c7eb9684cacdd0141c2ddc0986d10fa08583`  
-		Last Modified: Tue, 12 Mar 2024 15:06:50 GMT  
-		Size: 946.0 B  
+	-	`sha256:be43280e2d7500940d866ec8c406eb79bbb9578dde444deda7e4051a897c9b88`  
+		Last Modified: Sat, 23 Mar 2024 01:15:59 GMT  
+		Size: 947.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
