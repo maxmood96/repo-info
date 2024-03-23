@@ -468,10 +468,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg1-4
-'http://http.debian.net/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-4.dsc' cyrus-sasl2_2.1.28+dfsg1-4.dsc 3224 SHA256:d2169fde5404f07f71ae5265e308f0239e2788c0f8115fa3f10ce83ba4c1fd5d
-'http://http.debian.net/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg1.orig.tar.xz 794540 SHA256:e796a5d85d1a85e1b433d43504e467f9075c7ebc0b45730a3996cf11b1deada4
-'http://http.debian.net/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-4.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg1-4.debian.tar.xz 96688 SHA256:10f7765c85fb0601c0e9cf9d0ac250d194cd7d190f4656ca52dcd993c731ff4c
+'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-4.dsc' cyrus-sasl2_2.1.28+dfsg1-4.dsc 3224 SHA256:d2169fde5404f07f71ae5265e308f0239e2788c0f8115fa3f10ce83ba4c1fd5d
+'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg1.orig.tar.xz 794540 SHA256:e796a5d85d1a85e1b433d43504e467f9075c7ebc0b45730a3996cf11b1deada4
+'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-4.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg1-4.debian.tar.xz 96688 SHA256:10f7765c85fb0601c0e9cf9d0ac250d194cd7d190f4656ca52dcd993c731ff4c
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg1-4/ (for browsing the source)
+- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg1-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.12-6`
 
@@ -516,14 +522,13 @@ Licenses: (parsed from: `/usr/share/doc/libdb5.3t64/copyright`)
 - `X11`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28+dfsg2-5
-'http://http.debian.net/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-5.dsc' db5.3_5.3.28+dfsg2-5.dsc 2399 SHA256:6bf596a772e37d9c25aadddd94af55e0be0cf74ff8b23b2e7a22111ae4961e90
-'http://http.debian.net/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2.orig.tar.xz' db5.3_5.3.28+dfsg2.orig.tar.xz 21287688 SHA256:ad41b507415dec8316e828b2230242af2251d2c86eefa3c7aa9ef47c5239ef33
-'http://http.debian.net/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-5.debian.tar.xz' db5.3_5.3.28+dfsg2-5.debian.tar.xz 33828 SHA256:8229f7ef3be7eba4ce9b1df6d8c849217b74f49ab50757f6df01537a49170eaa
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg2-5/
+
 
 ### `dpkg` source package: `debconf=1.5.86`
 
@@ -1015,15 +1020,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.78.4-4
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.78.4-4.dsc' glib2.0_2.78.4-4.dsc 3849 SHA256:537026f4dd5de99b3e1beef95317e0f6009b0709ba595be4e0d6d174b1e127c8
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.78.4.orig-unicode-data.tar.xz' glib2.0_2.78.4.orig-unicode-data.tar.xz 266184 SHA256:7c3e36ec1356ac025a92169b74c4c3e6858345f59ed4ea4cf0db300dec4fa21a
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.78.4.orig.tar.xz' glib2.0_2.78.4.orig.tar.xz 5331892 SHA256:24b8e0672dca120cc32d394bccb85844e732e04fe75d18bb0573b2dbc7548f63
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.78.4-4.debian.tar.xz' glib2.0_2.78.4-4.debian.tar.xz 124184 SHA256:e7be0655c2054c707ec8c5235de8471d8770dcbd9783e3ba7767bebdd7cb6525
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.78.4-4/
+
 
 ### `dpkg` source package: `glibc=2.37-15.1`
 
@@ -1542,21 +1545,13 @@ Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 - `ISC-Original`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libbsd=0.12.1-1
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.1-1.dsc' libbsd_0.12.1-1.dsc 2347 SHA256:0bd9f20ba3ff7cdc880c2fb6a430c93fe81463eaa097b8e246dedf6cfd7a5c2c
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.1.orig.tar.xz' libbsd_0.12.1.orig.tar.xz 444048 SHA256:d7747f8ec1baa6ff5c096a9dd587c061233dec90da0f1aedd66d830f6db6996a
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.1.orig.tar.xz.asc' libbsd_0.12.1.orig.tar.xz.asc 833 SHA256:04a4b66da93ea3c761e15fcedd705a969b67597d0619c3ebc5fe3cf72d477f1f
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.1-1.debian.tar.xz' libbsd_0.12.1-1.debian.tar.xz 18552 SHA256:ea28ecb15d4c38b84383845e8bd9add1aafa24c46c3dbf8f84b29a8d9cead722
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libbsd/0.12.1-1/
 
-- https://sources.debian.net/src/libbsd/0.12.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libbsd/0.12.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libbsd/0.12.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.8.4-2`
 
@@ -2702,14 +2697,13 @@ Licenses: (parsed from: `/usr/share/doc/libldap-2.5-0/copyright`)
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.5.16+dfsg-1
-'http://http.debian.net/debian/pool/main/o/openldap/openldap_2.5.16%2bdfsg-1.dsc' openldap_2.5.16+dfsg-1.dsc 3325 SHA256:003298a4ef49b1d4361803898030548baab042a4c8ee61bcd343d8b27ee0736b
-'http://http.debian.net/debian/pool/main/o/openldap/openldap_2.5.16%2bdfsg.orig.tar.xz' openldap_2.5.16+dfsg.orig.tar.xz 3752304 SHA256:d6809068254e6ee7cce272696eec6fea175639992042ad11304fd2e7d25c02af
-'http://http.debian.net/debian/pool/main/o/openldap/openldap_2.5.16%2bdfsg-1.debian.tar.xz' openldap_2.5.16+dfsg-1.debian.tar.xz 167800 SHA256:c25195f55940e49455d06796a9ad585fbf44ce611f0afe8a29d53e78d633b902
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/openldap/2.5.16+dfsg-1/
+
 
 ### `dpkg` source package: `openssl=3.1.5-1.1`
 
