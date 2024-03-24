@@ -4685,20 +4685,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.7-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.7=3.7.3-2+deb10u6
-'http://deb.debian.org/debian-security/pool/updates/main/p/python3.7/python3.7_3.7.3-2%2bdeb10u6.dsc' python3.7_3.7.3-2+deb10u6.dsc 3441 SHA256:c4135134f704d53eba2c9a5c707268c259ef8631946797d53c8b0070335eb72c
-'http://deb.debian.org/debian-security/pool/updates/main/p/python3.7/python3.7_3.7.3.orig.tar.xz' python3.7_3.7.3.orig.tar.xz 17108364 SHA256:da60b54064d4cfcd9c26576f6df2690e62085123826cff2e667e72a91952d318
-'http://deb.debian.org/debian-security/pool/updates/main/p/python3.7/python3.7_3.7.3-2%2bdeb10u6.debian.tar.xz' python3.7_3.7.3-2+deb10u6.debian.tar.xz 249688 SHA256:b4451d2bb09ee7c07cd82ea0366aecf7f6b73da3ddd6fa263c3ba0437b6c7348
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.7/3.7.3-2+deb10u6/
 
-- https://sources.debian.net/src/python3.7/3.7.3-2+deb10u6/ (for browsing the source)
-- https://sources.debian.net/src/python3.7/3.7.3-2+deb10u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.7/3.7.3-2+deb10u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-5`
 
