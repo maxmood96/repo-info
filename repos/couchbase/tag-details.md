@@ -5,14 +5,17 @@
 -	[`couchbase:7.0.5`](#couchbase705)
 -	[`couchbase:7.1.6`](#couchbase716)
 -	[`couchbase:7.2.4`](#couchbase724)
+-	[`couchbase:7.6.0`](#couchbase760)
 -	[`couchbase:community`](#couchbasecommunity)
 -	[`couchbase:community-7.0.2`](#couchbasecommunity-702)
 -	[`couchbase:community-7.1.1`](#couchbasecommunity-711)
 -	[`couchbase:community-7.2.4`](#couchbasecommunity-724)
+-	[`couchbase:community-7.6.0`](#couchbasecommunity-760)
 -	[`couchbase:enterprise`](#couchbaseenterprise)
 -	[`couchbase:enterprise-7.0.5`](#couchbaseenterprise-705)
 -	[`couchbase:enterprise-7.1.6`](#couchbaseenterprise-716)
 -	[`couchbase:enterprise-7.2.4`](#couchbaseenterprise-724)
+-	[`couchbase:enterprise-7.6.0`](#couchbaseenterprise-760)
 -	[`couchbase:latest`](#couchbaselatest)
 
 ## `couchbase:7.0.5`
@@ -648,6 +651,10 @@ VOLUME [/opt/couchbase/var]
 		Last Modified: Wed, 06 Mar 2024 03:57:58 GMT  
 		Size: 868.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `couchbase:7.6.0`
+
+**does not exist** (yet?)
 
 ## `couchbase:community`
 
@@ -1539,6 +1546,10 @@ VOLUME [/opt/couchbase/var]
 		Size: 868.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `couchbase:community-7.6.0`
+
+**does not exist** (yet?)
+
 ## `couchbase:enterprise`
 
 ```console
@@ -2423,6 +2434,10 @@ VOLUME [/opt/couchbase/var]
 		Last Modified: Wed, 06 Mar 2024 03:57:58 GMT  
 		Size: 868.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `couchbase:enterprise-7.6.0`
+
+**does not exist** (yet?)
 
 ## `couchbase:latest`
 
