@@ -1,7 +1,7 @@
 ## `crate:latest`
 
 ```console
-$ docker pull crate@sha256:46fa4da58e3f4a567671975c0ec2eba7fcf33b39da111088c5ae55af48ed7c4c
+$ docker pull crate@sha256:e409cb2f3f66fe521f3fc42b302607b7a4b449a212e97be4ad596f0e70e7a8e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -97,14 +97,14 @@ CMD ["crate"]
 ### `crate:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull crate@sha256:28bdfb70812431d1d531f30812af2a7e76bb5df40498cab3e8b00749fd8c7c8d
+$ docker pull crate@sha256:57c8684779a63e3084f17fe26a3c4b0642dc0f6f21b9f0ac76a5bf6221937fb9
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.4 MB (187430867 bytes)**  
+-	Total Size: **187.4 MB (187431496 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1879cf9cbdc17cfbf69c7bec3d66c9cf55463b9827f43a372932a174fc269b5`
+-	Image ID: `sha256:e79e04e4aa5a1eefc7a8370ff819a55cda27886df6a03cc50df6ba7f2feafe28`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
@@ -115,33 +115,33 @@ ADD file:441d5753e358643a6d34ba14749df2f53865a75394abf02aaaf8f8cb75bd98eb in /
 CMD ["/bin/bash"]
 # Wed, 29 Nov 2023 00:16:49 GMT
 RUN dnf install --nodocs --assumeyes gzip python3 shadow-utils tar     && dnf clean all     && rm -rf /var/cache/yum
-# Tue, 20 Feb 2024 19:39:55 GMT
-RUN groupadd crate     && useradd -u 1000 -g crate -d /crate crate     && export PLATFORM="$(         case $(uname --m) in             x86_64)  echo x64_linux ;;             aarch64) echo aarch64_linux ;;         esac)"     && export CRATE_URL=https://cdn.crate.io/downloads/releases/cratedb/${PLATFORM}/crate-5.6.2.tar.gz     && curl -fSL -O ${CRATE_URL}     && curl -fSL -O ${CRATE_URL}.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-5.6.2.tar.gz.asc crate-5.6.2.tar.gz     && rm -rf "$GNUPGHOME" crate-5.6.2.tar.gz.asc     && tar -xf crate-5.6.2.tar.gz -C /crate --strip-components=1     && rm crate-5.6.2.tar.gz
-# Tue, 20 Feb 2024 19:39:59 GMT
-RUN curl -fSL -O https://cdn.crate.io/downloads/releases/crash_standalone_0.31.0     && curl -fSL -O https://cdn.crate.io/downloads/releases/crash_standalone_0.31.0.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crash_standalone_0.31.0.asc crash_standalone_0.31.0     && rm -rf "$GNUPGHOME" crash_standalone_0.31.0.asc     && mv crash_standalone_0.31.0 /usr/local/bin/crash     && chmod +x /usr/local/bin/crash
-# Tue, 20 Feb 2024 19:39:59 GMT
+# Mon, 25 Mar 2024 20:15:38 GMT
+RUN groupadd crate     && useradd -u 1000 -g crate -d /crate crate     && export PLATFORM="$(         case $(uname --m) in             x86_64)  echo x64_linux ;;             aarch64) echo aarch64_linux ;;         esac)"     && export CRATE_URL=https://cdn.crate.io/downloads/releases/cratedb/${PLATFORM}/crate-5.6.3.tar.gz     && curl -fSL -O ${CRATE_URL}     && curl -fSL -O ${CRATE_URL}.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-5.6.3.tar.gz.asc crate-5.6.3.tar.gz     && rm -rf "$GNUPGHOME" crate-5.6.3.tar.gz.asc     && tar -xf crate-5.6.3.tar.gz -C /crate --strip-components=1     && rm crate-5.6.3.tar.gz
+# Mon, 25 Mar 2024 20:15:41 GMT
+RUN curl -fSL -O https://cdn.crate.io/downloads/releases/crash_standalone_0.31.2     && curl -fSL -O https://cdn.crate.io/downloads/releases/crash_standalone_0.31.2.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crash_standalone_0.31.2.asc crash_standalone_0.31.2     && rm -rf "$GNUPGHOME" crash_standalone_0.31.2.asc     && mv crash_standalone_0.31.2 /usr/local/bin/crash     && chmod +x /usr/local/bin/crash
+# Mon, 25 Mar 2024 20:15:41 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 20 Feb 2024 19:39:59 GMT
+# Mon, 25 Mar 2024 20:15:41 GMT
 ENV CRATE_HEAP_SIZE=512M
-# Tue, 20 Feb 2024 19:40:00 GMT
+# Mon, 25 Mar 2024 20:15:42 GMT
 RUN mkdir -p /data/data /data/log
-# Tue, 20 Feb 2024 19:40:00 GMT
+# Mon, 25 Mar 2024 20:15:42 GMT
 VOLUME [/data]
-# Tue, 20 Feb 2024 19:40:00 GMT
+# Mon, 25 Mar 2024 20:15:42 GMT
 WORKDIR /data
-# Tue, 20 Feb 2024 19:40:00 GMT
+# Mon, 25 Mar 2024 20:15:42 GMT
 EXPOSE 4200 4300 5432
-# Tue, 20 Feb 2024 19:40:00 GMT
+# Mon, 25 Mar 2024 20:15:42 GMT
 COPY --chown=1000:0file:bff8d2f33b7a44d36fcd66fc7e7d92b0ee463d0eb0df2a56e42511d4f1b3e9b2 in /crate/config/crate.yml 
-# Tue, 20 Feb 2024 19:40:00 GMT
+# Mon, 25 Mar 2024 20:15:42 GMT
 COPY --chown=1000:0file:5f0d1b776d3a6517508a00a88f8053bd0933a642599374c9dff00dc3b632fd09 in /crate/config/log4j2.properties 
-# Tue, 20 Feb 2024 19:40:00 GMT
-LABEL maintainer=Crate.io <office@crate.io> org.opencontainers.image.created=2024-02-15T11:12:51.046180 org.opencontainers.image.title=crate org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time. org.opencontainers.image.url=https://crate.io/products/cratedb/ org.opencontainers.image.source=https://github.com/crate/docker-crate org.opencontainers.image.vendor=Crate.io org.opencontainers.image.version=5.6.2
-# Tue, 20 Feb 2024 19:40:00 GMT
+# Mon, 25 Mar 2024 20:15:42 GMT
+LABEL maintainer=Crate.io <office@crate.io> org.opencontainers.image.created=2024-03-22T09:35:11.010811 org.opencontainers.image.title=crate org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time. org.opencontainers.image.url=https://crate.io/products/cratedb/ org.opencontainers.image.source=https://github.com/crate/docker-crate org.opencontainers.image.vendor=Crate.io org.opencontainers.image.version=5.6.3
+# Mon, 25 Mar 2024 20:15:42 GMT
 COPY file:2e0f9e8c9006d6d56e9be42bd5646f68ec854481fcfbe51bafbf8695dc44b38a in / 
-# Tue, 20 Feb 2024 19:40:00 GMT
+# Mon, 25 Mar 2024 20:15:42 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 20 Feb 2024 19:40:01 GMT
+# Mon, 25 Mar 2024 20:15:42 GMT
 CMD ["crate"]
 ```
 
@@ -154,27 +154,27 @@ CMD ["crate"]
 		Last Modified: Wed, 29 Nov 2023 00:19:03 GMT  
 		Size: 424.4 KB (424401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e06c436e656c0be71e3cf0eaff212531f39175939774b1bee86875d52c844893`  
-		Last Modified: Tue, 20 Feb 2024 19:40:35 GMT  
-		Size: 118.0 MB (117973396 bytes)  
+	-	`sha256:d8a99e18b081f16d85ef619f1d9446662e1fe51781dc28d229b9aacf69619097`  
+		Last Modified: Mon, 25 Mar 2024 20:16:11 GMT  
+		Size: 118.0 MB (117973572 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bbd2a45899431f60313ca6372a2cfbd988c485ace31c5f47939fe0309264421`  
-		Last Modified: Tue, 20 Feb 2024 19:40:26 GMT  
-		Size: 1.9 MB (1940199 bytes)  
+	-	`sha256:56edf68e692115a8a190a84cde0d28196276c73fbe8b8b31e32af4ec159f94d9`  
+		Last Modified: Mon, 25 Mar 2024 20:16:01 GMT  
+		Size: 1.9 MB (1940652 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:239face4be5587ba7d073334de8e8ed1eca2bdfcdb57cd3163ad22de0273b485`  
-		Last Modified: Tue, 20 Feb 2024 19:40:25 GMT  
-		Size: 157.0 B  
+	-	`sha256:72a9a204fa8f538c63102043301839a0f5ddcc259bebd688540a1179dd07b788`  
+		Last Modified: Mon, 25 Mar 2024 20:16:01 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd83443272ccf80612ea07ba12ea3536a287a30364beefdb34e8e284416c3740`  
-		Last Modified: Tue, 20 Feb 2024 19:40:25 GMT  
-		Size: 265.0 B  
+	-	`sha256:cfedf3a041dfee68642739da5c9b04f2ae8464be436135cf785d7b1ae0f8dd94`  
+		Last Modified: Mon, 25 Mar 2024 20:16:00 GMT  
+		Size: 264.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a7b96ba070510a3ad2fcbc6747158d9df710a9c6b8b8f2c673f0694ae27f542`  
-		Last Modified: Tue, 20 Feb 2024 19:40:25 GMT  
-		Size: 958.0 B  
+	-	`sha256:b81a3532d970df067c05de27c527d9bc1ae43f558c259da049d0055679642c98`  
+		Last Modified: Mon, 25 Mar 2024 20:16:00 GMT  
+		Size: 957.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bb20643c237ed2f64c56987fb1e2616980b69b0f6f6c5daabb97d9a032eb3d7`  
-		Last Modified: Tue, 20 Feb 2024 19:40:25 GMT  
-		Size: 500.0 B  
+	-	`sha256:3f898019761e42a52d28fe9e7002bcb7259e4a1b594caf76eabe9ba4596cfb42`  
+		Last Modified: Mon, 25 Mar 2024 20:16:01 GMT  
+		Size: 504.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
