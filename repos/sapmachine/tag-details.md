@@ -92,6 +92,21 @@
 -	[`sapmachine:21.0.2-jre-ubuntu-jammy`](#sapmachine2102-jre-ubuntu-jammy)
 -	[`sapmachine:21.0.2-ubuntu-22.04`](#sapmachine2102-ubuntu-2204)
 -	[`sapmachine:21.0.2-ubuntu-jammy`](#sapmachine2102-ubuntu-jammy)
+-	[`sapmachine:22`](#sapmachine22)
+-	[`sapmachine:22-jdk-headless-ubuntu`](#sapmachine22-jdk-headless-ubuntu)
+-	[`sapmachine:22-jdk-headless-ubuntu-22.04`](#sapmachine22-jdk-headless-ubuntu-2204)
+-	[`sapmachine:22-jdk-headless-ubuntu-jammy`](#sapmachine22-jdk-headless-ubuntu-jammy)
+-	[`sapmachine:22-jdk-ubuntu`](#sapmachine22-jdk-ubuntu)
+-	[`sapmachine:22-jdk-ubuntu-22.04`](#sapmachine22-jdk-ubuntu-2204)
+-	[`sapmachine:22-jdk-ubuntu-jammy`](#sapmachine22-jdk-ubuntu-jammy)
+-	[`sapmachine:22-jre-headless-ubuntu`](#sapmachine22-jre-headless-ubuntu)
+-	[`sapmachine:22-jre-headless-ubuntu-22.04`](#sapmachine22-jre-headless-ubuntu-2204)
+-	[`sapmachine:22-jre-headless-ubuntu-jammy`](#sapmachine22-jre-headless-ubuntu-jammy)
+-	[`sapmachine:22-jre-ubuntu`](#sapmachine22-jre-ubuntu)
+-	[`sapmachine:22-jre-ubuntu-22.04`](#sapmachine22-jre-ubuntu-2204)
+-	[`sapmachine:22-jre-ubuntu-jammy`](#sapmachine22-jre-ubuntu-jammy)
+-	[`sapmachine:22-ubuntu-22.04`](#sapmachine22-ubuntu-2204)
+-	[`sapmachine:22-ubuntu-jammy`](#sapmachine22-ubuntu-jammy)
 -	[`sapmachine:jdk-headless-ubuntu`](#sapmachinejdk-headless-ubuntu)
 -	[`sapmachine:jdk-headless-ubuntu-jammy`](#sapmachinejdk-headless-ubuntu-jammy)
 -	[`sapmachine:jdk-headless-ubuntu-jammy-22.04`](#sapmachinejdk-headless-ubuntu-jammy-2204)
@@ -13082,6 +13097,66 @@ CMD ["jshell"]
 		Last Modified: Wed, 06 Mar 2024 03:27:37 GMT  
 		Size: 216.2 MB (216212039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sapmachine:22`
+
+**does not exist** (yet?)
+
+## `sapmachine:22-jdk-headless-ubuntu`
+
+**does not exist** (yet?)
+
+## `sapmachine:22-jdk-headless-ubuntu-22.04`
+
+**does not exist** (yet?)
+
+## `sapmachine:22-jdk-headless-ubuntu-jammy`
+
+**does not exist** (yet?)
+
+## `sapmachine:22-jdk-ubuntu`
+
+**does not exist** (yet?)
+
+## `sapmachine:22-jdk-ubuntu-22.04`
+
+**does not exist** (yet?)
+
+## `sapmachine:22-jdk-ubuntu-jammy`
+
+**does not exist** (yet?)
+
+## `sapmachine:22-jre-headless-ubuntu`
+
+**does not exist** (yet?)
+
+## `sapmachine:22-jre-headless-ubuntu-22.04`
+
+**does not exist** (yet?)
+
+## `sapmachine:22-jre-headless-ubuntu-jammy`
+
+**does not exist** (yet?)
+
+## `sapmachine:22-jre-ubuntu`
+
+**does not exist** (yet?)
+
+## `sapmachine:22-jre-ubuntu-22.04`
+
+**does not exist** (yet?)
+
+## `sapmachine:22-jre-ubuntu-jammy`
+
+**does not exist** (yet?)
+
+## `sapmachine:22-ubuntu-22.04`
+
+**does not exist** (yet?)
+
+## `sapmachine:22-ubuntu-jammy`
+
+**does not exist** (yet?)
 
 ## `sapmachine:jdk-headless-ubuntu`
 
