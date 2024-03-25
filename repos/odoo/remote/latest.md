@@ -1,7 +1,7 @@
 ## `odoo:latest`
 
 ```console
-$ docker pull odoo@sha256:7523a05b13d0b0addbbf79bdfbecee62ade032076ba391054c70711f3ade3a42
+$ docker pull odoo@sha256:4e748f0b002012da711a9ff21ebe6d4bdb784205016bd04ac7c4830026bc07ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull odoo@sha256:7523a05b13d0b0addbbf79bdfbecee62ade032076ba391054c7071
 ### `odoo:latest` - linux; amd64
 
 ```console
-$ docker pull odoo@sha256:c097985f4243b7d057715118b98eae309d1c963ac4ba496065094a4970248d67
+$ docker pull odoo@sha256:f247de51bf0bd27033eddb3aa76158d2c645d2cf61c864389cbc8436e97dc946
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **600.9 MB (600880596 bytes)**  
+-	Total Size: **601.2 MB (601198776 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75a117dd3eff1275e66067c47ce92c119f6ec01a3bdbbaac307dfa31c2e4eaeb`
+-	Image ID: `sha256:7e45d7945bd144b41261f9fda39f2b6b1225374f44bf20a2aba766ce058e6a73`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -54,33 +54,33 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jammy-pgdg main' > /etc/a
 RUN npm install -g rtlcss
 # Wed, 06 Mar 2024 03:10:23 GMT
 ENV ODOO_VERSION=17.0
-# Tue, 12 Mar 2024 17:58:02 GMT
-ARG ODOO_RELEASE=20240312
-# Tue, 12 Mar 2024 17:58:02 GMT
-ARG ODOO_SHA=467f514f90cf8cdc36dddd84129adefc4624be36
-# Tue, 12 Mar 2024 18:00:03 GMT
-# ARGS: ODOO_RELEASE=20240312 ODOO_SHA=467f514f90cf8cdc36dddd84129adefc4624be36
+# Mon, 25 Mar 2024 20:13:50 GMT
+ARG ODOO_RELEASE=20240325
+# Mon, 25 Mar 2024 20:13:50 GMT
+ARG ODOO_SHA=d137d4e0c5df0bee241a6078aa3ce0bf6953289e
+# Mon, 25 Mar 2024 20:15:27 GMT
+# ARGS: ODOO_RELEASE=20240325 ODOO_SHA=d137d4e0c5df0bee241a6078aa3ce0bf6953289e
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb
-# Tue, 12 Mar 2024 18:00:07 GMT
+# Mon, 25 Mar 2024 20:15:32 GMT
 COPY file:cbe34bc5236465e4ed439e0c8f6504d2d221f79f7c70b37fe62b56662bd0ab6d in / 
-# Tue, 12 Mar 2024 18:00:07 GMT
+# Mon, 25 Mar 2024 20:15:32 GMT
 COPY file:1e7209cce5525d270c422815db614f496d4d0da4820de1ab0000e9e592223235 in /etc/odoo/ 
-# Tue, 12 Mar 2024 18:00:08 GMT
-# ARGS: ODOO_RELEASE=20240312 ODOO_SHA=467f514f90cf8cdc36dddd84129adefc4624be36
+# Mon, 25 Mar 2024 20:15:33 GMT
+# ARGS: ODOO_RELEASE=20240325 ODOO_SHA=d137d4e0c5df0bee241a6078aa3ce0bf6953289e
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons
-# Tue, 12 Mar 2024 18:00:08 GMT
+# Mon, 25 Mar 2024 20:15:33 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 12 Mar 2024 18:00:08 GMT
+# Mon, 25 Mar 2024 20:15:33 GMT
 EXPOSE 8069 8071 8072
-# Tue, 12 Mar 2024 18:00:08 GMT
+# Mon, 25 Mar 2024 20:15:33 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 12 Mar 2024 18:00:08 GMT
+# Mon, 25 Mar 2024 20:15:33 GMT
 COPY file:0bc771c66dfeb517d19d13ea2699a0d3cbbbba684c8851640e6b87fe85b40619 in /usr/local/bin/wait-for-psql.py 
-# Tue, 12 Mar 2024 18:00:08 GMT
+# Mon, 25 Mar 2024 20:15:33 GMT
 USER odoo
-# Tue, 12 Mar 2024 18:00:08 GMT
+# Mon, 25 Mar 2024 20:15:34 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 12 Mar 2024 18:00:08 GMT
+# Mon, 25 Mar 2024 20:15:34 GMT
 CMD ["odoo"]
 ```
 
@@ -101,38 +101,38 @@ CMD ["odoo"]
 		Last Modified: Wed, 06 Mar 2024 03:12:53 GMT  
 		Size: 463.5 KB (463535 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e690b7354eb75e119ec42b72ccc5128ba6233158c10fb963500f5056304efacf`  
-		Last Modified: Tue, 12 Mar 2024 18:03:59 GMT  
-		Size: 333.7 MB (333710535 bytes)  
+	-	`sha256:f8af06cc4793bb719ec879b5341adaf15a265ab59f7b1dcfdaf0b765ad688351`  
+		Last Modified: Mon, 25 Mar 2024 20:19:33 GMT  
+		Size: 334.0 MB (334028714 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b529d45c0119d1973d1b79b9c578129f51e2262b554a502d4f1c62bbca9447a7`  
-		Last Modified: Tue, 12 Mar 2024 18:03:21 GMT  
-		Size: 703.0 B  
+	-	`sha256:171ea0e32bd1422ccc747f0bca5a5ede791c8bb751e49db07752f0c733a2384f`  
+		Last Modified: Mon, 25 Mar 2024 20:18:55 GMT  
+		Size: 702.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:96a51b5089356d97fb773c804884a9a212bd14d917704ac07a03a689859ad77c`  
-		Last Modified: Tue, 12 Mar 2024 18:03:21 GMT  
+	-	`sha256:8085f62d18ad15f5745dc2c4315ec3c6a05a2acdde8165c37105e65c1172b38d`  
+		Last Modified: Mon, 25 Mar 2024 20:18:55 GMT  
 		Size: 555.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a71476cf6d9ad48c07e4132d9d404b97c9ae3d970f08e64c16829476d9cfbee`  
-		Last Modified: Tue, 12 Mar 2024 18:03:21 GMT  
-		Size: 620.0 B  
+	-	`sha256:068834d6e97533438f89c2da813f4874ac424066326774976b4d9c9995a0dc15`  
+		Last Modified: Mon, 25 Mar 2024 20:18:55 GMT  
+		Size: 623.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79c83c4741a0aaa79b05350e564691153b2f2e5a0248b77651e93cc0a7871f77`  
-		Last Modified: Tue, 12 Mar 2024 18:03:21 GMT  
-		Size: 585.0 B  
+	-	`sha256:7a244eff3b4db5e4f40e8521c00d6593a1a7f6a39fd0c788298773ec4cccdbc9`  
+		Last Modified: Mon, 25 Mar 2024 20:18:56 GMT  
+		Size: 584.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `odoo:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull odoo@sha256:ea848e7067d43101ca6d5509a94a787962c060ab77ee2dbff2f1a0e6e3b2ec81
+$ docker pull odoo@sha256:c8eba87d747dcf5da5e17bef7eed0d69e03e2dd21d5844b47ae54fbb5da739a2
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **595.8 MB (595845243 bytes)**  
+-	Total Size: **596.1 MB (596145046 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34df8c4e9dcc31ef75afe067b00eda22cc9cd31392853781e6733865322e88be`
+-	Image ID: `sha256:e4972616593fbe72a656634bd46cc62262500cee871c767e310b187f8faf6292`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -166,33 +166,33 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jammy-pgdg main' > /etc/a
 RUN npm install -g rtlcss
 # Wed, 06 Mar 2024 04:56:24 GMT
 ENV ODOO_VERSION=17.0
-# Tue, 12 Mar 2024 17:16:34 GMT
-ARG ODOO_RELEASE=20240312
-# Tue, 12 Mar 2024 17:16:34 GMT
-ARG ODOO_SHA=467f514f90cf8cdc36dddd84129adefc4624be36
-# Tue, 12 Mar 2024 17:18:55 GMT
-# ARGS: ODOO_RELEASE=20240312 ODOO_SHA=467f514f90cf8cdc36dddd84129adefc4624be36
+# Mon, 25 Mar 2024 20:16:27 GMT
+ARG ODOO_RELEASE=20240325
+# Mon, 25 Mar 2024 20:16:27 GMT
+ARG ODOO_SHA=d137d4e0c5df0bee241a6078aa3ce0bf6953289e
+# Mon, 25 Mar 2024 20:18:42 GMT
+# ARGS: ODOO_RELEASE=20240325 ODOO_SHA=d137d4e0c5df0bee241a6078aa3ce0bf6953289e
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb
-# Tue, 12 Mar 2024 17:19:04 GMT
+# Mon, 25 Mar 2024 20:18:49 GMT
 COPY file:cbe34bc5236465e4ed439e0c8f6504d2d221f79f7c70b37fe62b56662bd0ab6d in / 
-# Tue, 12 Mar 2024 17:19:04 GMT
+# Mon, 25 Mar 2024 20:18:49 GMT
 COPY file:1e7209cce5525d270c422815db614f496d4d0da4820de1ab0000e9e592223235 in /etc/odoo/ 
-# Tue, 12 Mar 2024 17:19:04 GMT
-# ARGS: ODOO_RELEASE=20240312 ODOO_SHA=467f514f90cf8cdc36dddd84129adefc4624be36
+# Mon, 25 Mar 2024 20:18:50 GMT
+# ARGS: ODOO_RELEASE=20240325 ODOO_SHA=d137d4e0c5df0bee241a6078aa3ce0bf6953289e
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons
-# Tue, 12 Mar 2024 17:19:04 GMT
+# Mon, 25 Mar 2024 20:18:50 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 12 Mar 2024 17:19:04 GMT
+# Mon, 25 Mar 2024 20:18:50 GMT
 EXPOSE 8069 8071 8072
-# Tue, 12 Mar 2024 17:19:04 GMT
+# Mon, 25 Mar 2024 20:18:50 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 12 Mar 2024 17:19:05 GMT
+# Mon, 25 Mar 2024 20:18:50 GMT
 COPY file:0bc771c66dfeb517d19d13ea2699a0d3cbbbba684c8851640e6b87fe85b40619 in /usr/local/bin/wait-for-psql.py 
-# Tue, 12 Mar 2024 17:19:05 GMT
+# Mon, 25 Mar 2024 20:18:50 GMT
 USER odoo
-# Tue, 12 Mar 2024 17:19:05 GMT
+# Mon, 25 Mar 2024 20:18:50 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 12 Mar 2024 17:19:05 GMT
+# Mon, 25 Mar 2024 20:18:50 GMT
 CMD ["odoo"]
 ```
 
@@ -213,38 +213,38 @@ CMD ["odoo"]
 		Last Modified: Wed, 06 Mar 2024 04:58:29 GMT  
 		Size: 463.5 KB (463546 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b3be5e5d50a421dd890930bfb95b1fe77d1ff92e350cd6c162187b6d675851b`  
-		Last Modified: Tue, 12 Mar 2024 17:21:31 GMT  
-		Size: 333.3 MB (333331582 bytes)  
+	-	`sha256:366961ad535530ea1eb7009e0e5fc762d153b47985f073800b6390a4f1671ae5`  
+		Last Modified: Mon, 25 Mar 2024 20:21:20 GMT  
+		Size: 333.6 MB (333631383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:695c01490528a61fffeb7dfc44d25d3d2ae760bae68280b595ec4eab88fadb8d`  
-		Last Modified: Tue, 12 Mar 2024 17:20:56 GMT  
-		Size: 706.0 B  
+	-	`sha256:ffef111ee6ebca522b316f6b2f7243ada7870555008c644234b1089c0eaf499b`  
+		Last Modified: Mon, 25 Mar 2024 20:20:50 GMT  
+		Size: 705.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e22e664cf1ded17a59155829cca757ea678212c7ad5e2d256ea97feea889ab4`  
-		Last Modified: Tue, 12 Mar 2024 17:20:56 GMT  
-		Size: 555.0 B  
+	-	`sha256:7e0f66a2bde2f26c06758bb129559279f2f80d5b8eab858865035aeffa31635f`  
+		Last Modified: Mon, 25 Mar 2024 20:20:50 GMT  
+		Size: 554.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:772bfac9ac02fd36bf0f3bcd1d231cc4f8e82f42a4d01fa44ffe59f9e88c8a18`  
-		Last Modified: Tue, 12 Mar 2024 17:20:56 GMT  
-		Size: 619.0 B  
+	-	`sha256:fc35c02533a41b7c214a2569afb79170e0ad2cec6d84b560196a2f0ac43e324f`  
+		Last Modified: Mon, 25 Mar 2024 20:20:50 GMT  
+		Size: 623.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52c93b6c4da4abc860c51a63c7e4153def0e9d396218b3fb5a7b3d9d72b1306b`  
-		Last Modified: Tue, 12 Mar 2024 17:20:57 GMT  
+	-	`sha256:fa3fd697c209f540ab9d2fef92a9bc28b1e7137d371a151d9a33a58365b9fc65`  
+		Last Modified: Mon, 25 Mar 2024 20:20:50 GMT  
 		Size: 586.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `odoo:latest` - linux; ppc64le
 
 ```console
-$ docker pull odoo@sha256:be9fb82d4b7d75b6db6c1d1958f253dd3da953b0da588b8c63d9b833ce5e4ae3
+$ docker pull odoo@sha256:41f5fc35ff4c82e7fc149da8629fda122ebd49b2737cb4cfb91cdd3487b4bc46
 ```
 
 -	Docker Version: 20.10.26
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **617.7 MB (617652838 bytes)**  
+-	Total Size: **618.0 MB (617972223 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f05c160663686f012782be156c37773b5ab04bf48bafb38cdf95bb02a5a34ac`
+-	Image ID: `sha256:6c0a11f2a651874831565d54afda840ce339ed06d60318784a12bb64caddad3c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
@@ -278,33 +278,33 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jammy-pgdg main' > /etc/a
 RUN npm install -g rtlcss
 # Wed, 06 Mar 2024 03:01:26 GMT
 ENV ODOO_VERSION=17.0
-# Tue, 12 Mar 2024 18:41:10 GMT
-ARG ODOO_RELEASE=20240312
-# Tue, 12 Mar 2024 18:41:11 GMT
-ARG ODOO_SHA=467f514f90cf8cdc36dddd84129adefc4624be36
-# Tue, 12 Mar 2024 18:45:07 GMT
-# ARGS: ODOO_RELEASE=20240312 ODOO_SHA=467f514f90cf8cdc36dddd84129adefc4624be36
+# Mon, 25 Mar 2024 19:33:49 GMT
+ARG ODOO_RELEASE=20240325
+# Mon, 25 Mar 2024 19:33:49 GMT
+ARG ODOO_SHA=d137d4e0c5df0bee241a6078aa3ce0bf6953289e
+# Mon, 25 Mar 2024 19:36:52 GMT
+# ARGS: ODOO_RELEASE=20240325 ODOO_SHA=d137d4e0c5df0bee241a6078aa3ce0bf6953289e
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c -     && apt-get update     && apt-get -y install --no-install-recommends ./odoo.deb     && rm -rf /var/lib/apt/lists/* odoo.deb
-# Tue, 12 Mar 2024 18:45:18 GMT
+# Mon, 25 Mar 2024 19:37:05 GMT
 COPY file:cbe34bc5236465e4ed439e0c8f6504d2d221f79f7c70b37fe62b56662bd0ab6d in / 
-# Tue, 12 Mar 2024 18:45:19 GMT
+# Mon, 25 Mar 2024 19:37:05 GMT
 COPY file:1e7209cce5525d270c422815db614f496d4d0da4820de1ab0000e9e592223235 in /etc/odoo/ 
-# Tue, 12 Mar 2024 18:45:23 GMT
-# ARGS: ODOO_RELEASE=20240312 ODOO_SHA=467f514f90cf8cdc36dddd84129adefc4624be36
+# Mon, 25 Mar 2024 19:37:07 GMT
+# ARGS: ODOO_RELEASE=20240325 ODOO_SHA=d137d4e0c5df0bee241a6078aa3ce0bf6953289e
 RUN chown odoo /etc/odoo/odoo.conf     && mkdir -p /mnt/extra-addons     && chown -R odoo /mnt/extra-addons
-# Tue, 12 Mar 2024 18:45:23 GMT
+# Mon, 25 Mar 2024 19:37:07 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Tue, 12 Mar 2024 18:45:24 GMT
+# Mon, 25 Mar 2024 19:37:08 GMT
 EXPOSE 8069 8071 8072
-# Tue, 12 Mar 2024 18:45:26 GMT
+# Mon, 25 Mar 2024 19:37:09 GMT
 ENV ODOO_RC=/etc/odoo/odoo.conf
-# Tue, 12 Mar 2024 18:45:26 GMT
+# Mon, 25 Mar 2024 19:37:09 GMT
 COPY file:0bc771c66dfeb517d19d13ea2699a0d3cbbbba684c8851640e6b87fe85b40619 in /usr/local/bin/wait-for-psql.py 
-# Tue, 12 Mar 2024 18:45:27 GMT
+# Mon, 25 Mar 2024 19:37:10 GMT
 USER odoo
-# Tue, 12 Mar 2024 18:45:28 GMT
+# Mon, 25 Mar 2024 19:37:10 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 12 Mar 2024 18:45:29 GMT
+# Mon, 25 Mar 2024 19:37:11 GMT
 CMD ["odoo"]
 ```
 
@@ -325,23 +325,23 @@ CMD ["odoo"]
 		Last Modified: Wed, 06 Mar 2024 03:04:59 GMT  
 		Size: 463.6 KB (463555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca2ecb9421489d54a3104f2ff940fe8d77dd1bbd28b0da17944138bf6f6a0af0`  
-		Last Modified: Tue, 12 Mar 2024 18:51:22 GMT  
-		Size: 335.5 MB (335460060 bytes)  
+	-	`sha256:6d44c933de6a2a4801a52b166e822fa56550b69007ae7b159ab76b24e45b38e9`  
+		Last Modified: Mon, 25 Mar 2024 19:41:01 GMT  
+		Size: 335.8 MB (335779444 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ae50c6a278937581f5561399e82838010f30b4b85da235221aa80aac038d473`  
-		Last Modified: Tue, 12 Mar 2024 18:50:36 GMT  
-		Size: 705.0 B  
+	-	`sha256:ce6ad50b2a9452bbe455256df986f63033fb60a561ce550de4312da2043e8b5d`  
+		Last Modified: Mon, 25 Mar 2024 19:40:15 GMT  
+		Size: 706.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d0c5bb949045be8efdd08af5f14aed8a85e5af0b552c06664a195b0e6e72dba`  
-		Last Modified: Tue, 12 Mar 2024 18:50:36 GMT  
-		Size: 554.0 B  
+	-	`sha256:514a1b09ea7dc25305e95e67169f08f64dde45d735e098622529812556f18718`  
+		Last Modified: Mon, 25 Mar 2024 19:40:15 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91463c9d76f658346bc54c69797e671d95dff35b1459d901ef8ad1f635de40fa`  
-		Last Modified: Tue, 12 Mar 2024 18:50:36 GMT  
-		Size: 624.0 B  
+	-	`sha256:c5881699184a1c0c3fa6b9a0a06a08e154c2ae51e3a0f25238626b2f2fe2d756`  
+		Last Modified: Mon, 25 Mar 2024 19:40:15 GMT  
+		Size: 620.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1f8413d6df2fb76a798d9ae862fb23dbe91f9bf25f34671a30bd7866d647e6e`  
-		Last Modified: Tue, 12 Mar 2024 18:50:36 GMT  
-		Size: 584.0 B  
+	-	`sha256:90cb5fe91b9baf374b5bd1552ede136a2724299a8efa916ff873efcf25dea837`  
+		Last Modified: Mon, 25 Mar 2024 19:40:15 GMT  
+		Size: 586.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
