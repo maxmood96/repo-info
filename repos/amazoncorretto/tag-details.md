@@ -117,6 +117,33 @@
 -	[`amazoncorretto:21.0.2-alpine3.17`](#amazoncorretto2102-alpine317)
 -	[`amazoncorretto:21.0.2-alpine3.18`](#amazoncorretto2102-alpine318)
 -	[`amazoncorretto:21.0.2-alpine3.19`](#amazoncorretto2102-alpine319)
+-	[`amazoncorretto:22-al2023`](#amazoncorretto22-al2023)
+-	[`amazoncorretto:22-al2023-headful`](#amazoncorretto22-al2023-headful)
+-	[`amazoncorretto:22-al2023-headless`](#amazoncorretto22-al2023-headless)
+-	[`amazoncorretto:22-al2023-jdk`](#amazoncorretto22-al2023-jdk)
+-	[`amazoncorretto:22-alpine`](#amazoncorretto22-alpine)
+-	[`amazoncorretto:22-alpine-full`](#amazoncorretto22-alpine-full)
+-	[`amazoncorretto:22-alpine-jdk`](#amazoncorretto22-alpine-jdk)
+-	[`amazoncorretto:22-alpine3.16`](#amazoncorretto22-alpine316)
+-	[`amazoncorretto:22-alpine3.16-full`](#amazoncorretto22-alpine316-full)
+-	[`amazoncorretto:22-alpine3.16-jdk`](#amazoncorretto22-alpine316-jdk)
+-	[`amazoncorretto:22-alpine3.17`](#amazoncorretto22-alpine317)
+-	[`amazoncorretto:22-alpine3.17-full`](#amazoncorretto22-alpine317-full)
+-	[`amazoncorretto:22-alpine3.17-jdk`](#amazoncorretto22-alpine317-jdk)
+-	[`amazoncorretto:22-alpine3.18`](#amazoncorretto22-alpine318)
+-	[`amazoncorretto:22-alpine3.18-full`](#amazoncorretto22-alpine318-full)
+-	[`amazoncorretto:22-alpine3.18-jdk`](#amazoncorretto22-alpine318-jdk)
+-	[`amazoncorretto:22-alpine3.19`](#amazoncorretto22-alpine319)
+-	[`amazoncorretto:22-alpine3.19-full`](#amazoncorretto22-alpine319-full)
+-	[`amazoncorretto:22-alpine3.19-jdk`](#amazoncorretto22-alpine319-jdk)
+-	[`amazoncorretto:22.0.0-al2023`](#amazoncorretto2200-al2023)
+-	[`amazoncorretto:22.0.0-al2023-headful`](#amazoncorretto2200-al2023-headful)
+-	[`amazoncorretto:22.0.0-al2023-headless`](#amazoncorretto2200-al2023-headless)
+-	[`amazoncorretto:22.0.0-alpine`](#amazoncorretto2200-alpine)
+-	[`amazoncorretto:22.0.0-alpine3.16`](#amazoncorretto2200-alpine316)
+-	[`amazoncorretto:22.0.0-alpine3.17`](#amazoncorretto2200-alpine317)
+-	[`amazoncorretto:22.0.0-alpine3.18`](#amazoncorretto2200-alpine318)
+-	[`amazoncorretto:22.0.0-alpine3.19`](#amazoncorretto2200-alpine319)
 -	[`amazoncorretto:8`](#amazoncorretto8)
 -	[`amazoncorretto:8-al2-full`](#amazoncorretto8-al2-full)
 -	[`amazoncorretto:8-al2-generic`](#amazoncorretto8-al2-generic)
@@ -10696,6 +10723,114 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 		Last Modified: Sat, 16 Mar 2024 04:03:23 GMT  
 		Size: 157.3 MB (157342295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `amazoncorretto:22-al2023`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22-al2023-headful`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22-al2023-headless`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22-al2023-jdk`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22-alpine`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22-alpine-full`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22-alpine-jdk`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22-alpine3.16`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22-alpine3.16-full`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22-alpine3.16-jdk`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22-alpine3.17`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22-alpine3.17-full`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22-alpine3.17-jdk`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22-alpine3.18`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22-alpine3.18-full`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22-alpine3.18-jdk`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22-alpine3.19`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22-alpine3.19-full`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22-alpine3.19-jdk`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22.0.0-al2023`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22.0.0-al2023-headful`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22.0.0-al2023-headless`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22.0.0-alpine`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22.0.0-alpine3.16`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22.0.0-alpine3.17`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22.0.0-alpine3.18`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:22.0.0-alpine3.19`
+
+**does not exist** (yet?)
 
 ## `amazoncorretto:8`
 
