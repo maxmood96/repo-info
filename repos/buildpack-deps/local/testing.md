@@ -2550,20 +2550,13 @@ Licenses: (parsed from: `/usr/share/doc/libdeflate-dev/copyright`, `/usr/share/d
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdeflate=1.19-1
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.19-1.dsc' libdeflate_1.19-1.dsc 2196 SHA256:a0fc083efcf9b54596a885928f780745146c01c7f644bddee0945334ba57a5e8
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.19.orig.tar.gz' libdeflate_1.19.orig.tar.gz 187684 SHA256:27bf62d71cd64728ff43a9feb92f2ac2f2bf748986d856133cc1e51992428c25
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.19-1.debian.tar.xz' libdeflate_1.19-1.debian.tar.xz 4796 SHA256:eaaa5ceac6fffc48b53997df8cfec3152e7fc922214667dfe82a669b81ef99b1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libdeflate/1.19-1/
 
-- https://sources.debian.net/src/libdeflate/1.19-1/ (for browsing the source)
-- https://sources.debian.net/src/libdeflate/1.19-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdeflate/1.19-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libedit=3.1-20230828-1`
 

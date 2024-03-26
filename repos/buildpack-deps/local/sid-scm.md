@@ -125,19 +125,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.7.13
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.13.dsc' apt_2.7.13.dsc 2977 SHA256:7f721fdc5b38b73e50900f74285aceabbd2b6b2e11c971dc5b8da5a251df79a3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.13.tar.xz' apt_2.7.13.tar.xz 2352000 SHA256:c42ab55e91d7bee5fcbf7ff8c3584714cbacaa0365f091e7e604f7f8493c7e35
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.7.13/
 
-- https://sources.debian.net/src/apt/2.7.13/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.7.13/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.7.13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-1`
 
@@ -1851,21 +1845,13 @@ Licenses: (parsed from: `/usr/share/doc/libunistring5/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libunistring=1.1-2
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.1-2.dsc' libunistring_1.1-2.dsc 2031 SHA256:2d8f1274fdc9b7434e9dcc4a0a6891e36aa015f43e4a0638ec4de6837873bd98
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.1.orig.tar.xz' libunistring_1.1.orig.tar.xz 2397676 SHA256:827c1eb9cb6e7c738b171745dac0888aa58c5924df2e59239318383de0729b98
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.1.orig.tar.xz.asc' libunistring_1.1.orig.tar.xz.asc 833 SHA256:dadae6c38f85f9e8776231436c601c386924ceb44d511456c61c9be73608933d
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.1-2.debian.tar.xz' libunistring_1.1-2.debian.tar.xz 14008 SHA256:93dd1881e69e6046e2d2ec20ce99f2ae07e4ba078c506cd40104e19e08c681d1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libunistring/1.1-2/
 
-- https://sources.debian.net/src/libunistring/1.1-2/ (for browsing the source)
-- https://sources.debian.net/src/libunistring/1.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libunistring/1.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxcrypt=1:4.4.36-4`
 
@@ -2014,21 +2000,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=6.6.3-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.6.3-1.dsc' mercurial_6.6.3-1.dsc 2806 SHA256:a5c4e53757a0e199a091dbe23c53397d56181f54d57a37e7ed21f3cdb38774ed
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.6.3.orig.tar.gz' mercurial_6.6.3.orig.tar.gz 8253219 SHA256:f75d6a4a75823a1b7d713a4967eca2f596f466e58fc6bc06d72642932fd7e307
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.6.3.orig.tar.gz.asc' mercurial_6.6.3.orig.tar.gz.asc 659 SHA256:879623d4c4cc62fb2c8636b058431950095e5c0397c65a7e8fbae4dd52c725d9
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.6.3-1.debian.tar.xz' mercurial_6.6.3-1.debian.tar.xz 69608 SHA256:b6dcc37bd8fb3f07cca4966ae1830c92eafc650f495d510789efab635f7fd2f3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/6.6.3-1/
 
-- https://sources.debian.net/src/mercurial/6.6.3-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/6.6.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/6.6.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.4+20240113-1`
 
@@ -2572,20 +2550,13 @@ Licenses: (parsed from: `/usr/share/doc/libreadline8t64/copyright`, `/usr/share/
 - `GPL-3+`
 - `ISC-no-attribution`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris readline=8.2-3.1
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.2-3.1.dsc' readline_8.2-3.1.dsc 2794 SHA256:07e62d78157170b2a2978fffd73de951bc5d06f670bc3e3f773b3a4118d5f640
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.2.orig.tar.gz' readline_8.2.orig.tar.gz 3043952 SHA256:3feb7171f16a84ee82ca18a36d7b9be109a52c04f492a053331d7d1095007c35
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.2-3.1.debian.tar.xz' readline_8.2-3.1.debian.tar.xz 33684 SHA256:41038ff4079aa652712e6d45821e83c0a1eda49d24bfa39fbedfdd4e34c18569
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/readline/8.2-3.1/
 
-- https://sources.debian.net/src/readline/8.2-3.1/ (for browsing the source)
-- https://sources.debian.net/src/readline/8.2-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/readline/8.2-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-2`
 
@@ -2626,20 +2597,13 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=0.33.0-2
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_0.33.0-2.dsc' rust-sequoia-sq_0.33.0-2.dsc 3612 SHA256:b7bef97502a345cac96b8eec33934316882d8bba4858305de9845c2203affc80
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_0.33.0.orig.tar.gz' rust-sequoia-sq_0.33.0.orig.tar.gz 388309 SHA256:23d13cc95cd149404f273474b214b3159b6ad9d2f8a30ac8fd87f834ddbbbf98
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_0.33.0-2.debian.tar.xz' rust-sequoia-sq_0.33.0-2.debian.tar.xz 4372 SHA256:4e1ca2868e42c74fc66ae8eb86f2d03fe2c9cd82b793b8e2987992010e16d9a3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sq/0.33.0-2/
 
-- https://sources.debian.net/src/rust-sequoia-sq/0.33.0-2/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sq/0.33.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sq/0.33.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.9-2`
 
