@@ -1,7 +1,7 @@
 ## `hylang:python3.8-alpine`
 
 ```console
-$ docker pull hylang@sha256:6bb0648102293879a6003cfd731842fd88509e6fda0a4b1bac96ef5d3832f3e2
+$ docker pull hylang@sha256:8a622eebb3afe15aef545385d5521f658876c1a7ca3118dabfab07791c6276aa
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -638,7 +638,7 @@ $ docker pull hylang@sha256:5da85f72dc5631199f0e8ccae19fdaf2109c47412a0846d9801f
 ### `hylang:python3.8-alpine` - linux; s390x
 
 ```console
-$ docker pull hylang@sha256:5f7f74d890d8e7d5f31fd46c70d26b27aca87851e100ec53bac46d12c0950711
+$ docker pull hylang@sha256:7402a83bcc2d9513a26fede3456da62ed71e666decb3cf1ea58b1a2a03a5715e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -717,23 +717,23 @@ CMD ["hy"]
 ### `hylang:python3.8-alpine` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:63b84a925b491f96b46d4fa3a1f2103ad97379fbcce08cd1f0ae87772c11cdcb
+$ docker pull hylang@sha256:c419bf5f04b5b44f5975cb9dd27c8157fa16c3104e36d7909ceead1f94dbd4d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.0 MB (1031895 bytes)**  
+-	Total Size: **1.0 MB (1031077 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5a7bc4581b25e3b882d6db7add396752765d3327bca8e5dd3f5403aa1e2644f`
+-	Image ID: `sha256:18f8d44c47d5043f47cca4e30c0cf30213328e269b636c3a06fc0bb74b1c1866`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f15ceece57a666c163667ad145a171e83a40981f6fa134c879bc0cc2372bd36e`  
-		Last Modified: Thu, 21 Mar 2024 02:15:23 GMT  
+	-	`sha256:99b9f50235eac4ec2a1043962d6ff3305b480146114d7f274083756d49e7cfb0`  
+		Last Modified: Tue, 26 Mar 2024 09:22:51 GMT  
 		Size: 1.0 MB (1021463 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:76fe544c09fbce6b460a02dd1fd0d2de6d2553130f2ec1d9ba31ed5eed569907`  
-		Last Modified: Thu, 21 Mar 2024 02:15:24 GMT  
-		Size: 10.4 KB (10432 bytes)  
+	-	`sha256:5af5725b56b32b3682ee136e9218c37990eeb7af0dde1885a5fe44497c093141`  
+		Last Modified: Tue, 26 Mar 2024 09:22:51 GMT  
+		Size: 9.6 KB (9614 bytes)  
 		MIME: application/vnd.in-toto+json
