@@ -1,7 +1,7 @@
 ## `alt:sisyphus`
 
 ```console
-$ docker pull alt@sha256:10ec966cd3c24e3cb9ae46c58d700fa5426eebd8c3f28b7cdb926eb51c1a360e
+$ docker pull alt@sha256:fd749c14bcd6f85bc5bad4d63fa6c593ea29905e297abcb55b5c365b5a7410a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -82,34 +82,34 @@ CMD ["/bin/bash"]
 ### `alt:sisyphus` - linux; 386
 
 ```console
-$ docker pull alt@sha256:d617039e3809907755cb19d543a4f472f8e905d2fae6eff6cdd36eefa11c6dee
+$ docker pull alt@sha256:c366a71922398907e0ab02f26f39b0fa4342717479967c2ac6d64aa1f6f8e4bc
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.7 MB (40702475 bytes)**  
+-	Total Size: **42.3 MB (42330009 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:300d39ac6f7431a24c271330f93101f13029323985c6aa4b0001a011f3ef09c6`
+-	Image ID: `sha256:fc1ea1c88c71fe1278cf31d65763bb1aa6531c1d62ab6789c7fca7b742bc0806`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Wed, 19 Jul 2023 23:38:46 GMT
 MAINTAINER [Alexey Shabalin <shaba@altlinux.org>] [Mikhail Gordeev <obirvalger@altlinux.org]
-# Tue, 26 Sep 2023 00:39:15 GMT
-ADD file:1559defa544d370bbb68358c687c080bd3538b387fcafb401135ad1904726ea8 in / 
-# Tue, 26 Sep 2023 00:39:16 GMT
+# Tue, 26 Mar 2024 01:00:13 GMT
+ADD file:0b365b70061f0a638d24b52f6a5cf6de460d3c0361d4b8a653fe21c42f92f46f in / 
+# Tue, 26 Mar 2024 01:00:14 GMT
 RUN true > /etc/security/limits.d/50-defaults.conf
-# Tue, 26 Sep 2023 00:39:16 GMT
+# Tue, 26 Mar 2024 01:00:14 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:b4877b6a639d6c8ee34b196f6fc27ee8e11fb3bd1f038bfdc4d8189284649893`  
-		Last Modified: Tue, 26 Sep 2023 00:40:05 GMT  
-		Size: 40.7 MB (40702285 bytes)  
+	-	`sha256:b895f6cc6490b4c7324f648bc3e02f7def799d31e26454588f22b68383681bd3`  
+		Last Modified: Tue, 26 Mar 2024 01:00:51 GMT  
+		Size: 42.3 MB (42329819 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea1e8299ef54b083c2177fe487a10d46eec8adab884074fc8bef65cb890f1d0a`  
-		Last Modified: Tue, 26 Sep 2023 00:39:56 GMT  
+	-	`sha256:02b71ceec1145e7f71adc79fed3272948bfaff4d6c77ae8a2cdc2595700a039b`  
+		Last Modified: Tue, 26 Mar 2024 01:00:42 GMT  
 		Size: 190.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
