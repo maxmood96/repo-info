@@ -1,7 +1,7 @@
 ## `tomcat:latest`
 
 ```console
-$ docker pull tomcat@sha256:c83cd6449a4d34d6c5a9fe11934c15a09c4762a2b0db46c916a4fba032e6b117
+$ docker pull tomcat@sha256:4e4db45dfba61e257656c847037f3a839f39356573af1707f71b822a3de030a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -238,14 +238,14 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:latest` - linux; ppc64le
 
 ```console
-$ docker pull tomcat@sha256:df09d048ef72308c179272af570d504f035eb0b02b40d9e15219d989cc3f3273
+$ docker pull tomcat@sha256:7a3b5e314d4aa94c133db1cb3a85b10056387d83e14ec644c37f0fb79ff02f4c
 ```
 
 -	Docker Version: 20.10.26
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **226.7 MB (226714709 bytes)**  
+-	Total Size: **226.7 MB (226729427 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a44bc3f12d7980a75522664d5c360ff248077c7a7b0ffeb2e6157d79f6da8518`
+-	Image ID: `sha256:cc5d51c4e139ce62a521ab42e30aac017f9cba8b70a587ff6d3def68bab1030d`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -297,19 +297,19 @@ ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
 ENV GPG_KEYS=5C3C5F3E314C866292F359A8F3AD5C94A67F707E A9C5DF4D22E99998D9875A5110C01C5A2F6059E7
 # Wed, 06 Mar 2024 04:23:01 GMT
 ENV TOMCAT_MAJOR=10
-# Wed, 06 Mar 2024 04:23:02 GMT
-ENV TOMCAT_VERSION=10.1.19
-# Wed, 06 Mar 2024 04:23:02 GMT
-ENV TOMCAT_SHA512=7264da6196a510b0bba74469d215d61a464331302239256477f78b6bec067f7f4d90f671b96a440061ae0e20d16b1be8ca1dbd547dab9927383366dbc677f590
-# Wed, 06 Mar 2024 04:24:20 GMT
+# Tue, 26 Mar 2024 01:24:11 GMT
+ENV TOMCAT_VERSION=10.1.20
+# Tue, 26 Mar 2024 01:24:11 GMT
+ENV TOMCAT_SHA512=6728a28b93c4ef457ed90b8fcaa71a60f9739c4531c59a245879d2075db94c6bac336ea5a28748364df0f81a155d52b0839ecdd0c09adafdea29942a85b265b4
+# Tue, 26 Mar 2024 01:26:11 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://dlcdn.apache.org/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 1777 logs temp work; 		catalina.sh version
-# Wed, 06 Mar 2024 04:24:23 GMT
+# Tue, 26 Mar 2024 01:26:15 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Wed, 06 Mar 2024 04:24:24 GMT
+# Tue, 26 Mar 2024 01:26:16 GMT
 EXPOSE 8080
-# Wed, 06 Mar 2024 04:24:24 GMT
+# Tue, 26 Mar 2024 01:26:17 GMT
 ENTRYPOINT []
-# Wed, 06 Mar 2024 04:24:25 GMT
+# Tue, 26 Mar 2024 01:26:18 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -338,13 +338,13 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Wed, 06 Mar 2024 05:10:30 GMT  
 		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:067c56e8b53ce099b4c10b56a908f29a2efc578ecd823e25d74c5eb7820ea97a`  
-		Last Modified: Wed, 06 Mar 2024 05:11:38 GMT  
-		Size: 13.1 MB (13070835 bytes)  
+	-	`sha256:5710928555c434e937fd731e38fe5c69778d0bf897865a93abbe2dee8fafd8f9`  
+		Last Modified: Tue, 26 Mar 2024 01:48:23 GMT  
+		Size: 13.1 MB (13085554 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0f966b6076c91ee017d1c0d7feca30fa33b5be035b95624a86e7eaccd141bb4`  
-		Last Modified: Wed, 06 Mar 2024 05:11:37 GMT  
-		Size: 131.0 B  
+	-	`sha256:ba51c4960abea2d7ddff660759a418636c5f058099213a9fbda64dc244d2f2d9`  
+		Last Modified: Tue, 26 Mar 2024 01:48:22 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `tomcat:latest` - linux; s390x
