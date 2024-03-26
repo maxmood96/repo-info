@@ -1,10 +1,10 @@
-# `gradle:8.6.0-jdk21-alpine`
+# `gradle:8.7.0-jdk21-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b7071f27a9200cb3bd1e25fdb8a282d75000dc0da819b57152268321891fb5d`
-- Created: `2024-03-16T12:12:20.708007875Z`
-- Virtual Size: ~ 580.32 Mb  
+- Image ID: `sha256:f2ae692483ff2369c9cd957c409bd7191ff2baba7322e27baaf643f799055ed2`
+- Created: `2024-03-25T20:03:25.075529574Z`
+- Virtual Size: ~ 581.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.2+13`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.6`
+  - `GRADLE_VERSION=8.7`
 
 ## `apk` (`.apk`-based packages)
 
