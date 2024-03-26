@@ -1,7 +1,7 @@
 ## `unit:perl5.36`
 
 ```console
-$ docker pull unit@sha256:b6ccd918ef257bf82120a94993fe0811dfefb123b6b3b47fc5e9d8b8ad35e382
+$ docker pull unit@sha256:bbf94155eafbcbf2c4e586ded64d906cf47b217bdb200b62b7e8097185e83790
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull unit@sha256:b6ccd918ef257bf82120a94993fe0811dfefb123b6b3b47fc5e9d8
 ### `unit:perl5.36` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:7586d3699df258d557a154b7000433a9a2060df2cd56bf10c65f2a505020b73a
+$ docker pull unit@sha256:0a84f92c3d758e698c9f367fcacdca6f3953737632774ef14f141dd10b28ba0b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **344.7 MB (344717629 bytes)**  
+-	Total Size: **344.7 MB (344717776 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:307d8ca41717056d39f9c43b558e2e43f89bf97c6a1651a04bc25b56efe679eb`
+-	Image ID: `sha256:0ffbd96e59456f2e6ff27c586fb78c370b114bea5cccf16e4952613b19e3876d`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -43,33 +43,33 @@ RUN true     && curl -fL https://cpan.metacpan.org/authors/id/P/PE/PEVANS/perl-5
 WORKDIR /usr/src/app
 # Fri, 23 Feb 2024 16:07:57 GMT
 CMD ["perl5.36.3" "-de0"]
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.title=Unit (perl5.36)
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 27 Feb 2024 15:15:42 GMT
-LABEL org.opencontainers.image.version=1.32.0
-# Tue, 27 Feb 2024 15:15:42 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.32.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure perl     && make -j $NCPU perl-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure perl     && make -j $NCPU perl-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
+LABEL org.opencontainers.image.version=1.32.1
+# Tue, 26 Mar 2024 13:57:15 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.32.1-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure perl     && make -j $NCPU perl-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure perl     && make -j $NCPU perl-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Tue, 26 Mar 2024 13:57:15 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 STOPSIGNAL SIGTERM
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -102,53 +102,53 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 12 Mar 2024 07:05:18 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fa902e44eb4e68e6a305532d912b1438e56459ff48f6ee737d235504bd4634ea`  
-		Last Modified: Tue, 12 Mar 2024 07:57:25 GMT  
-		Size: 7.0 MB (7041497 bytes)  
+	-	`sha256:eaa75be16fce043583ed6bbe50a89054d26f346c6622c0bef4931270b8440257`  
+		Last Modified: Tue, 26 Mar 2024 18:50:35 GMT  
+		Size: 7.0 MB (7041638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:101eaa76a9ab9ec1ac5eef12da0d3b15b9ca9f6d708f32df3ba4cd80138ae5bd`  
-		Last Modified: Tue, 12 Mar 2024 07:57:24 GMT  
-		Size: 1.3 KB (1261 bytes)  
+	-	`sha256:6636f51f4ca4f20c695fde7509553182b6d45006eee18db255e2ba345f8c93d6`  
+		Last Modified: Tue, 26 Mar 2024 18:50:35 GMT  
+		Size: 1.3 KB (1262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8504776835d59d06b8e02663582c45dbd36d478dface7f3da50f9fd6c55ee57c`  
-		Last Modified: Tue, 12 Mar 2024 07:57:24 GMT  
-		Size: 1.5 KB (1453 bytes)  
+	-	`sha256:7a5ce195b8c93c2c8ef4a6367708858333e9e4b93abf8726d96092998ebf55c2`  
+		Last Modified: Tue, 26 Mar 2024 18:50:35 GMT  
+		Size: 1.5 KB (1458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:perl5.36` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:c62c3b05ac1b0d410d685862d596618d79787bca5440336184dfc9180dbb1f08
+$ docker pull unit@sha256:8980456545d6cc735dca202eb73b3c77466c1a7f512597eef645b3861743d4f0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.0 MB (14998211 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58957e52604bc0f0568ff0d7363e2aedb125a9d541bb81c779dbd9dbd5ed41bf`
+-	Image ID: `sha256:87e3c96c1823ea8e59586bdef4c16e6384da0a93424478eaf5ba0db58ada7d83`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5fd58122c1bdd43a585e9ec6272f6e764e44c829d418846d466a31ee7abcddf4`  
-		Last Modified: Tue, 12 Mar 2024 07:57:25 GMT  
+	-	`sha256:26db342ce299a8fc1b99dd3b5d1e35f7fed818dde5e41feb69726a3da2193064`  
+		Last Modified: Tue, 26 Mar 2024 18:50:35 GMT  
 		Size: 15.0 MB (14973004 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fc1cf83ba2f3ae4faca501eece4fc6c38da3c55c697ab5b6c248faf7aa9fd441`  
-		Last Modified: Tue, 12 Mar 2024 07:57:24 GMT  
+	-	`sha256:75e8da20b19451cc6fa4740cf23b5f7431b404c77fc5fd3e309f040d04a5f2ef`  
+		Last Modified: Tue, 26 Mar 2024 18:50:35 GMT  
 		Size: 25.2 KB (25207 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `unit:perl5.36` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:8c52d8f9193760f9effb18e843e492943f55c6dbb2cab1b631c7e9b1881e148f
+$ docker pull unit@sha256:a5f116f86bc13826f08522e64f0fb2516435dd0271f67618112f429dca314b82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **336.2 MB (336195465 bytes)**  
+-	Total Size: **336.2 MB (336195516 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:91ed29be4937f4fab481a39aa1ba673b92669b16da01909664cf2c550134ac31`
+-	Image ID: `sha256:9328548dee4e34689b03785426f3247d16b8428a154b65b40c5e0e13dbfa10c6`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -171,33 +171,33 @@ RUN true     && curl -fL https://cpan.metacpan.org/authors/id/P/PE/PEVANS/perl-5
 WORKDIR /usr/src/app
 # Fri, 23 Feb 2024 16:07:57 GMT
 CMD ["perl5.36.3" "-de0"]
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.title=Unit (perl5.36)
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 27 Feb 2024 15:15:42 GMT
-LABEL org.opencontainers.image.version=1.32.0
-# Tue, 27 Feb 2024 15:15:42 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.32.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure perl     && make -j $NCPU perl-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure perl     && make -j $NCPU perl-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
+LABEL org.opencontainers.image.version=1.32.1
+# Tue, 26 Mar 2024 13:57:15 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.32.1-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure perl     && make -j $NCPU perl-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure perl     && make -j $NCPU perl-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Tue, 26 Mar 2024 13:57:15 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 STOPSIGNAL SIGTERM
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 27 Feb 2024 15:15:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -230,39 +230,39 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Wed, 13 Mar 2024 00:24:01 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afdf6ffeaac1374df28b88fe475bd01aef1b3766a217bed6c12f075919ecb118`  
-		Last Modified: Wed, 13 Mar 2024 08:31:26 GMT  
-		Size: 6.9 MB (6918410 bytes)  
+	-	`sha256:d6a6c3aadd5f55b32d6ade1dadc4687179a500ae54a5502541946b3f91f60797`  
+		Last Modified: Tue, 26 Mar 2024 19:18:39 GMT  
+		Size: 6.9 MB (6918461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13c792a928032a959c83378ccaa5cea4b53d9b4ef4957145386bb131ea48a791`  
-		Last Modified: Wed, 13 Mar 2024 08:31:25 GMT  
-		Size: 1.3 KB (1263 bytes)  
+	-	`sha256:f6f68872613e53d83b8bfd129d1d4c392533fc4f96a023287dbc4bb80abbacec`  
+		Last Modified: Tue, 26 Mar 2024 19:18:39 GMT  
+		Size: 1.3 KB (1262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e845fd4bebba7cc0b94585913f988402ead2e29ad1be8058b72395617b3a97ed`  
-		Last Modified: Wed, 13 Mar 2024 08:31:25 GMT  
-		Size: 1.5 KB (1455 bytes)  
+	-	`sha256:77fad283d90b40f63b422b90d9c5cc99c4b69d94c678a2971e213983d9937dc7`  
+		Last Modified: Tue, 26 Mar 2024 19:18:38 GMT  
+		Size: 1.5 KB (1456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:perl5.36` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:24e2383c1c2179a07fb5c6cd8b53de069436cbd6747a0b67a134b2d0295d00dc
+$ docker pull unit@sha256:0dc5aa1d15105ad3e65bcb982eb3d36164922323a0d71d0743b2038560babf77
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.0 MB (15000805 bytes)**  
+-	Total Size: **15.0 MB (15000804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eab93d693c4deafbcf69531f7a9979ae8cb268301ff1e0020c0f1b31120df4d8`
+-	Image ID: `sha256:472102575d821c1f37a8f338493b07836246192e13d03b6ba566f90215df943c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dc8d23436e9805329d1b870270d17f9935c2f8f81efa7e76326ca943a8a178fb`  
-		Last Modified: Wed, 13 Mar 2024 08:31:26 GMT  
+	-	`sha256:59f6bc38c760c72338b24cf6e2b83d87cfdf7d61cbd4bd17a4d7fd556133de77`  
+		Last Modified: Tue, 26 Mar 2024 19:18:39 GMT  
 		Size: 15.0 MB (14975466 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b4c7b98a045a24ef563dac093e52742618ab0c708143d35d4ab1646f63c5d1fd`  
-		Last Modified: Wed, 13 Mar 2024 08:31:25 GMT  
-		Size: 25.3 KB (25339 bytes)  
+	-	`sha256:29308bf4b89fdf6c70c98534983c2a6bb3652b8068cd3e367a3f7a51bd268794`  
+		Last Modified: Tue, 26 Mar 2024 19:18:38 GMT  
+		Size: 25.3 KB (25338 bytes)  
 		MIME: application/vnd.in-toto+json
