@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:619cf9aa73e9231d64eb063f216d6c6c2208ba56fade72a78f12b8f41cc93cb3`
-- Created: `2024-02-26T13:14:55Z`
-- Virtual Size: ~ 1.19 Gb  
+- Image ID: `sha256:0e49823ba26728d36973f7c54998b72273642628907f977b73698d05eedb2214`
+- Created: `2024-03-25T15:14:20Z`
+- Virtual Size: ~ 1.16 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -23,9 +23,14 @@
   - `TOMCAT_MAJOR=9`
   - `TOMCAT_VERSION=9.0.87`
   - `TOMCAT_SHA512=71a64fe805aab89ef4798571d860a3c9a4f751f808921559a9249305abb205836de33ab89bb33b625a77f799f193d6bffbe94aadf293866df756d708f5bfb933`
-  - `XWIKI_VERSION=16.1.0`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.1.0`
-  - `XWIKI_DOWNLOAD_SHA256=e236fc101710a0bfefed2328cc66652e265f21ab40dd30e6b7ce52300da744d5`
+  - `XWIKI_VERSION=16.2.0`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.2.0`
+  - `XWIKI_DOWNLOAD_SHA256=7d355ae1c88691b19af9658e3f042083d57c08d5e52e1ade25536536ad72fb3f`
+  - `POSTGRES_JDBC_VERSION=42.7.2`
+  - `POSTGRES_JDBC_SHA256=0c244ac7d02cf89d8e29852eace6595d75bc4d78581b85b2768460081646a57b`
+  - `POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.2`
+  - `POSTGRES_JDBC_ARTIFACT=postgresql-42.7.2.jar`
+  - `POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.2.jar`
 - Labels:
   - `org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki`
