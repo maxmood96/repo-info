@@ -1,10 +1,10 @@
-# `tomcat:8.5.99-jdk8-temurin-jammy`
+# `tomcat:8.5.100-jdk8-temurin-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6253f8cb6ebbd06e0eecca7dcff541cb718190d74a6928cb05eeb969750726b7`
-- Created: `2024-03-06T14:56:37.171823138Z`
-- Virtual Size: ~ 337.96 Mb  
+- Image ID: `sha256:f33441954adda4afe57a74171bb2f44ffe24e4c91ebbcbfc5a47d1797b4ef0aa`
+- Created: `2024-03-26T02:02:27.129714628Z`
+- Virtual Size: ~ 337.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,8 +20,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 5C3C5F3E314C866292F359A8F3AD5C94A67F707E 765908099ACF92702C7D949BFA0C35EA8AA299F1 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.5.99`
-  - `TOMCAT_SHA512=38f636039d00c66ff8f7347dfedcc1eef85b7ce25cf98dcc9192df07f85d4f6aec447922e0f934c1ab7d099ec484b2060aad4de496d5ca14637ac435cb55b7c0`
+  - `TOMCAT_VERSION=8.5.100`
+  - `TOMCAT_SHA512=14d8dca911fe9c5b7e636e054ac2e70a532ddc358eda83ed3679e51df8baa7a397cabb8a5777b815014d46064cbc33e8d9ea75b9426dccdae54fb3913d9a54f0`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -297,15 +297,9 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.1.dsc' coreutils_8.32-4.1ubuntu1.1.dsc 2299 SHA512:8f63a7432108ac3e60d1f2975afcff8e6c3446df2faec984beb08582686e2f143d8c00e749f32de37aa2005ff6bbd5fc65ff8086a97fb8c46f0ce5e02836366b
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32.orig.tar.xz' coreutils_8.32.orig.tar.xz 5547836 SHA512:1c8f3584efd61b4b02e7ac5db8e103b63cfb2063432caaf1e64cb2dcc56d8c657d1133bbf10bd41468d6a1f31142e6caa81d16ae68fa3e6e84075c253613a145
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32.orig.tar.xz.asc' coreutils_8.32.orig.tar.xz.asc 833 SHA512:9c73b35c9e8f7c2b8eff317afcb5aa3234c5f41c80d1882f3c2342906f3fdc876ae45d1256dd1b8fd3cb58c50925f3c13f93de5018626634fdca3c72c14a9acb
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.1.debian.tar.xz' coreutils_8.32-4.1ubuntu1.1.debian.tar.xz 43872 SHA512:939c55b25f5496124a5590a1220fcff39a4eb78bf226a56c2ae57d21de7cfd9c971bb257725ddacab03f5f8c2a9941ce51bdec2c6e5c04bf55bfe8ec6ed78d4c
-```
 
 ### `dpkg` source package: `curl=7.81.0-1ubuntu1.15`
 
@@ -323,15 +317,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.15
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.15.dsc' curl_7.81.0-1ubuntu1.15.dsc 3143 SHA512:be0a3975bb53980499beeed1d2bb1e5dc8b77553a9b7ad9843137ad6ae68d54608af09cd489893c9309d6569a4b6cccd1319486b85a65baac67352957cbf0349
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.15.debian.tar.xz' curl_7.81.0-1ubuntu1.15.debian.tar.xz 73324 SHA512:9573260499a29c6b181d2f67ff7b203a8d024d990cb9d4702dbbb09496ffd3db03bfc27fcabd624d121061114c176d4d982a506dccf27f3643bb4e046fab6c43
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
