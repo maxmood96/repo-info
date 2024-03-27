@@ -313,14 +313,13 @@ Licenses: (parsed from: `/usr/share/doc/libcairo2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cairo=1.18.0-2
-'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.18.0-2.dsc' cairo_1.18.0-2.dsc 2882 SHA256:ed73a0c970ec143bccfd3cdb005b15e6ddc9a2ccf4e67c81bf8a08879cded84e
-'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.18.0.orig.tar.xz' cairo_1.18.0.orig.tar.xz 33761148 SHA256:243a0736b978a33dee29f9cca7521733b78a65b5418206fef7bd1c3d4cf10b64
-'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.18.0-2.debian.tar.xz' cairo_1.18.0-2.debian.tar.xz 29824 SHA256:b8c32c1573fe294060dddb3754857dbb053086d91ac4cdd779466c14cfe77cd0
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cairo/1.18.0-2/
+
 
 ### `dpkg` source package: `cdebconf=0.271`
 
@@ -1629,14 +1628,13 @@ Licenses: (parsed from: `/usr/share/doc/libdeflate0/copyright`)
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdeflate=1.19-1
-'http://http.debian.net/debian/pool/main/libd/libdeflate/libdeflate_1.19-1.dsc' libdeflate_1.19-1.dsc 2196 SHA256:a0fc083efcf9b54596a885928f780745146c01c7f644bddee0945334ba57a5e8
-'http://http.debian.net/debian/pool/main/libd/libdeflate/libdeflate_1.19.orig.tar.gz' libdeflate_1.19.orig.tar.gz 187684 SHA256:27bf62d71cd64728ff43a9feb92f2ac2f2bf748986d856133cc1e51992428c25
-'http://http.debian.net/debian/pool/main/libd/libdeflate/libdeflate_1.19-1.debian.tar.xz' libdeflate_1.19-1.debian.tar.xz 4796 SHA256:eaaa5ceac6fffc48b53997df8cfec3152e7fc922214667dfe82a669b81ef99b1
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libdeflate/1.19-1/
+
 
 ### `dpkg` source package: `libffi=3.4.6-1`
 
@@ -2091,14 +2089,13 @@ Licenses: (parsed from: `/usr/share/doc/libtirpc-common/copyright`)
 - `PERMISSIVE`
 - `__AUTO_PERMISSIVE__`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtirpc=1.3.4+ds-1.1
-'http://http.debian.net/debian/pool/main/libt/libtirpc/libtirpc_1.3.4%2bds-1.1.dsc' libtirpc_1.3.4+ds-1.1.dsc 2140 SHA256:012a4ee79ce510fbb977f380ba8385a0e83495a7e693838ffd5fa6da7a5037fd
-'http://http.debian.net/debian/pool/main/libt/libtirpc/libtirpc_1.3.4%2bds.orig.tar.gz' libtirpc_1.3.4+ds.orig.tar.gz 700735 SHA256:730101dbb756b258164e496109bfdeee87eb0fcc05cd5a820e5f34537a1e637d
-'http://http.debian.net/debian/pool/main/libt/libtirpc/libtirpc_1.3.4%2bds-1.1.debian.tar.xz' libtirpc_1.3.4+ds-1.1.debian.tar.xz 11808 SHA256:21544328f6839257adc9298047c64d8fef5134e8e8f9d4efc0f9135928bea229
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libtirpc/1.3.4+ds-1.1/
+
 
 ### `dpkg` source package: `libunistring=1.1-2`
 
@@ -2125,11 +2122,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libunistring=1.1-2
-'http://http.debian.net/debian/pool/main/libu/libunistring/libunistring_1.1-2.dsc' libunistring_1.1-2.dsc 2031 SHA256:2d8f1274fdc9b7434e9dcc4a0a6891e36aa015f43e4a0638ec4de6837873bd98
-'http://http.debian.net/debian/pool/main/libu/libunistring/libunistring_1.1.orig.tar.xz' libunistring_1.1.orig.tar.xz 2397676 SHA256:827c1eb9cb6e7c738b171745dac0888aa58c5924df2e59239318383de0729b98
-'http://http.debian.net/debian/pool/main/libu/libunistring/libunistring_1.1.orig.tar.xz.asc' libunistring_1.1.orig.tar.xz.asc 833 SHA256:dadae6c38f85f9e8776231436c601c386924ceb44d511456c61c9be73608933d
-'http://http.debian.net/debian/pool/main/libu/libunistring/libunistring_1.1-2.debian.tar.xz' libunistring_1.1-2.debian.tar.xz 14008 SHA256:93dd1881e69e6046e2d2ec20ce99f2ae07e4ba078c506cd40104e19e08c681d1
+'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.1-2.dsc' libunistring_1.1-2.dsc 2031 SHA256:2d8f1274fdc9b7434e9dcc4a0a6891e36aa015f43e4a0638ec4de6837873bd98
+'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.1.orig.tar.xz' libunistring_1.1.orig.tar.xz 2397676 SHA256:827c1eb9cb6e7c738b171745dac0888aa58c5924df2e59239318383de0729b98
+'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.1.orig.tar.xz.asc' libunistring_1.1.orig.tar.xz.asc 833 SHA256:dadae6c38f85f9e8776231436c601c386924ceb44d511456c61c9be73608933d
+'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.1-2.debian.tar.xz' libunistring_1.1-2.debian.tar.xz 14008 SHA256:93dd1881e69e6046e2d2ec20ce99f2ae07e4ba078c506cd40104e19e08c681d1
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libunistring/1.1-2/ (for browsing the source)
+- https://sources.debian.net/src/libunistring/1.1-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libunistring/1.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libwebp=1.3.2-0.4`
 
@@ -3113,14 +3116,13 @@ Licenses: (parsed from: `/usr/share/doc/libreadline-dev/copyright`, `/usr/share/
 - `GPL-3+`
 - `ISC-no-attribution`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris readline=8.2-3.1
-'http://http.debian.net/debian/pool/main/r/readline/readline_8.2-3.1.dsc' readline_8.2-3.1.dsc 2794 SHA256:07e62d78157170b2a2978fffd73de951bc5d06f670bc3e3f773b3a4118d5f640
-'http://http.debian.net/debian/pool/main/r/readline/readline_8.2.orig.tar.gz' readline_8.2.orig.tar.gz 3043952 SHA256:3feb7171f16a84ee82ca18a36d7b9be109a52c04f492a053331d7d1095007c35
-'http://http.debian.net/debian/pool/main/r/readline/readline_8.2-3.1.debian.tar.xz' readline_8.2-3.1.debian.tar.xz 33684 SHA256:41038ff4079aa652712e6d45821e83c0a1eda49d24bfa39fbedfdd4e34c18569
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/readline/8.2-3.1/
+
 
 ### `dpkg` source package: `rmatrix=1.6-5-1`
 
@@ -3623,10 +3625,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris vim=2:9.1.0016-1
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.0016-1.dsc' vim_9.1.0016-1.dsc 2905 SHA256:80cecf5b5abbc6420dfb38b4774c4907e4b7623319ed8e9399163a384f0e61d7
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.0016.orig.tar.gz' vim_9.1.0016.orig.tar.gz 17621043 SHA256:abe876bb18554bb1eb69d23eaabe89caabeef182737e9e8bfa4cc298dee061df
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.0016-1.debian.tar.xz' vim_9.1.0016-1.debian.tar.xz 187588 SHA256:47b6e47308d5fc916b1c8d34cd88dc8abc281728f2c127657ff9b061680766f6
+'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.0016-1.dsc' vim_9.1.0016-1.dsc 2905 SHA256:80cecf5b5abbc6420dfb38b4774c4907e4b7623319ed8e9399163a384f0e61d7
+'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.0016.orig.tar.gz' vim_9.1.0016.orig.tar.gz 17621043 SHA256:abe876bb18554bb1eb69d23eaabe89caabeef182737e9e8bfa4cc298dee061df
+'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.0016-1.debian.tar.xz' vim_9.1.0016-1.debian.tar.xz 187588 SHA256:47b6e47308d5fc916b1c8d34cd88dc8abc281728f2c127657ff9b061680766f6
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/vim/2:9.1.0016-1/ (for browsing the source)
+- https://sources.debian.net/src/vim/2:9.1.0016-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/vim/2:9.1.0016-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21.4-1`
 
