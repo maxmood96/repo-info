@@ -1,9 +1,9 @@
-# `unit:1.32.0-ruby3.3`
+# `unit:1.32.1-ruby3.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ba6d2d6f381ef8e04c26a4b0b94c9efdee2d1d8abae673513756a6b20f7728ba`
-- Created: `2024-02-27T15:15:42Z`
+- Image ID: `sha256:fba3b4af16687ae94ca8f364ee32a480ea4338826a3735362136e66e2ea56cfe`
+- Created: `2024-03-26T13:57:15Z`
 - Virtual Size: ~ 914.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -25,7 +25,7 @@
   - `org.opencontainers.image.title=Unit (ruby3.3)`
   - `org.opencontainers.image.url=https://unit.nginx.org`
   - `org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>`
-  - `org.opencontainers.image.version=1.32.0`
+  - `org.opencontainers.image.version=1.32.1`
 
 ## `dpkg` (`.deb`-based packages)
 

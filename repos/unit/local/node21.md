@@ -1,9 +1,9 @@
-# `unit:1.32.0-node21`
+# `unit:1.32.1-node21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:890cf03af921c9ab9688ef3168f493fa40c882b86a139aca70a377c6df6f2e68`
-- Created: `2024-02-27T15:15:42Z`
+- Image ID: `sha256:5d8cf2a9f66ffadb2280d5794ee34dc0242d02fce5e0156c443c1916703a4c7c`
+- Created: `2024-03-26T13:57:15Z`
 - Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -20,7 +20,7 @@
   - `org.opencontainers.image.title=Unit (node21)`
   - `org.opencontainers.image.url=https://unit.nginx.org`
   - `org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>`
-  - `org.opencontainers.image.version=1.32.0`
+  - `org.opencontainers.image.version=1.32.1`
 
 ## `dpkg` (`.deb`-based packages)
 

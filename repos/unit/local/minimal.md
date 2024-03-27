@@ -1,9 +1,9 @@
-# `unit:1.32.0-minimal`
+# `unit:1.32.1-minimal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0e46f84df1fd2a355d6969a2aa4a37be2f215ff080ad61f34f68c6280244e5bb`
-- Created: `2024-02-27T15:15:42Z`
+- Image ID: `sha256:8e1410b18f91a82f5984c63334c346301fae45e510e48f3c45645934577671c4`
+- Created: `2024-03-26T13:57:15Z`
 - Virtual Size: ~ 104.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,7 +18,7 @@
   - `org.opencontainers.image.title=Unit (minimal)`
   - `org.opencontainers.image.url=https://unit.nginx.org`
   - `org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>`
-  - `org.opencontainers.image.version=1.32.0`
+  - `org.opencontainers.image.version=1.32.1`
 
 ## `dpkg` (`.deb`-based packages)
 

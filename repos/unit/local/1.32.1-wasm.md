@@ -1,10 +1,10 @@
-# `unit:1.32.0-wasm`
+# `unit:1.32.1-wasm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e3d4dd7e98848f7be754b96e926ef785628becfba7856b6f06e3e44ff46cbf8c`
-- Created: `2024-02-27T15:15:42Z`
-- Virtual Size: ~ 160.97 Mb  
+- Image ID: `sha256:5e0f415027891273fde6f7f11e37e4e73a954384a13478dac12086bda7a038eb`
+- Created: `2024-03-26T13:57:15Z`
+- Virtual Size: ~ 160.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `org.opencontainers.image.title=Unit (wasm)`
   - `org.opencontainers.image.url=https://unit.nginx.org`
   - `org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>`
-  - `org.opencontainers.image.version=1.32.0`
+  - `org.opencontainers.image.version=1.32.1`
 
 ## `dpkg` (`.deb`-based packages)
 
