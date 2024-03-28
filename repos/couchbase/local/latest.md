@@ -1,10 +1,10 @@
-# `couchbase:7.2.4`
+# `couchbase:7.6.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:664c713e21069f3c8e0db259b3a4053ae8add19c228def941ddcea33223baab3`
-- Created: `2024-03-06T05:48:50.490217849Z`
-- Virtual Size: ~ 1.40 Gb  
+- Image ID: `sha256:bc41528b1bb6a83d70e8c361a27276e926cd9886b5c961aec69183db1bb1fcaf`
+- Created: `2024-03-25T19:55:30.851535633Z`
+- Virtual Size: ~ 1.62 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -258,11 +258,11 @@ $ apt-get source -qq --print-uris coreutils=8.30-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.30-3ubuntu2.debian.tar.xz' coreutils_8.30-3ubuntu2.debian.tar.xz 39636 SHA256:98204ef9d94e5c567880cd0245fdb7940eaf7592d6c6830c300ad117628b351f
 ```
 
-### `dpkg` source package: `couchbase-server=7.2.4-7070-1`
+### `dpkg` source package: `couchbase-server=7.6.0-2176-1`
 
 Binary Packages:
 
-- `couchbase-server=7.2.4-7070-1`
+- `couchbase-server=7.6.0-2176-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1470,25 +1470,6 @@ $ apt-get source -qq --print-uris publicsuffix=20200303.0012-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/publicsuffix/publicsuffix_20200303.0012-1.debian.tar.xz' publicsuffix_20200303.0012-1.debian.tar.xz 15328 SHA256:3dbbd7b1e20bafc3e5ad73732cb026a4b8e6e5dafa25a9047151e9a28b251647
 ```
 
-### `dpkg` source package: `runit=2.1.2-9.2ubuntu1`
-
-Binary Packages:
-
-- `runit=2.1.2-9.2ubuntu1`
-
-Licenses: (parsed from: `/usr/share/doc/runit/copyright`)
-
-- `BSD-3-clause`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris runit=2.1.2-9.2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/runit/runit_2.1.2-9.2ubuntu1.dsc' runit_2.1.2-9.2ubuntu1.dsc 1773 SHA256:68ac16165a8a9fc4be2b2eb6ae596568a104e7e974028b913b0a7b6ebaea0045
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/runit/runit_2.1.2.orig.tar.gz' runit_2.1.2.orig.tar.gz 110916 SHA256:6fd0160cb0cf1207de4e66754b6d39750cff14bb0aa66ab49490992c0c47ba18
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/runit/runit_2.1.2-9.2ubuntu1.debian.tar.xz' runit_2.1.2-9.2ubuntu1.debian.tar.xz 20688 SHA256:ca4626ad795d9207833bce5543db888e7dabdde764d8829121c6f236393401e9
-```
-
 ### `dpkg` source package: `sed=4.7-1`
 
 Binary Packages:
@@ -1765,14 +1746,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.34-0.1ubuntu9.4
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34-0.1ubuntu9.4.dsc' util-linux_2.34-0.1ubuntu9.4.dsc 4067 SHA512:c5aac721638d7cf7187143a62ab03530c4feb9fe63767762db1a75a4cbb07ca078e45696d3a663945bd6fcbfcdded98a926f479cf69e335b4f4130e78565282d
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34.orig.tar.xz' util-linux_2.34.orig.tar.xz 4974812 SHA512:2d0b76f63d32e7afb7acf61a83fabbfd58baa34ab78b3a331ce87f9c676a5fd71c56a493ded95039540d2c46b6048caaa38d7fb4491eb3d52d7b09dc54655cd7
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34-0.1ubuntu9.4.debian.tar.xz' util-linux_2.34-0.1ubuntu9.4.debian.tar.xz 98148 SHA512:4e1c5e0d1c8fcd735bbab4418a16dbd60280a6707ceb41338bf7d25f0991139b569e42e713c9f33b3e924116c638480f8cf2a92b16c9584f5a845086e1858b69
-```
 
 ### `dpkg` source package: `wget=1.20.3-1ubuntu2`
 
