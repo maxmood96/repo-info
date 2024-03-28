@@ -1,7 +1,7 @@
 ## `jetty:12-jdk21-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:028702607ef1ca12eca4106b610471b929c6a5f0e698fb86d05e5a0b8c1fbbb5
+$ docker pull jetty@sha256:286ecf7533828cf7b2108e7d7e00884fe1334e4b925ec0797b8e4a2ee51fa1d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull jetty@sha256:028702607ef1ca12eca4106b610471b929c6a5f0e698fb86d05e5
 ### `jetty:12-jdk21-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:eceaca283f0cd3a51741801cccecc38b279cf8153ad940b332f0d3ec2b7f9c8c
+$ docker pull jetty@sha256:be9da67f0c7888409e9cfd82a4cf2426a887e7acdfdd72f6ea8e2c23725c2fcb
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.7 MB (241719122 bytes)**  
+-	Total Size: **241.7 MB (241718654 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70d30153c24b8b3835ba10cde77d5aca566a6f91ac02a6e0e5d19b637389d03d`
+-	Image ID: `sha256:bc30f08337a58d2acab032f7bf4030dd7a040e43dfea83ba48e43027f0e40911`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -36,53 +36,53 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:21c2e8d95909bec6f4acdaf4aed55b44ee13603681f93b152e423e3e6a4a207b in / 
 # Tue, 27 Feb 2024 18:52:59 GMT
 CMD ["/bin/bash"]
-# Wed, 06 Mar 2024 06:02:14 GMT
+# Thu, 25 Jan 2024 11:07:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 06 Mar 2024 06:02:14 GMT
+# Thu, 25 Jan 2024 11:07:04 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 06 Mar 2024 06:02:14 GMT
+# Thu, 25 Jan 2024 11:07:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 06 Mar 2024 06:04:59 GMT
-RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/*
-# Wed, 06 Mar 2024 06:05:43 GMT
+# Thu, 25 Jan 2024 11:07:04 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 25 Jan 2024 11:07:04 GMT
 ENV JAVA_VERSION=jdk-21.0.2+13
-# Wed, 06 Mar 2024 06:05:52 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='3ce6a2b357e2ef45fd6b53d6587aa05bfec7771e7fb982f2c964f6b771b7526a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.2_13.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='454bebb2c9fe48d981341461ffb6bf1017c7b7c6e15c6b0c29b959194ba3aaa5';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_x64_linux_hotspot_21.0.2_13.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='d08de863499d8851811c893e8915828f2cd8eb67ed9e29432a6b4e222d80a12f';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.2_13.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='0d5676c50821e0d0b951bf3ffd717e7a13be2a89d8848a5c13b4aedc6f982c78';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.2_13.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Wed, 06 Mar 2024 06:05:54 GMT
-RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete."
-# Wed, 06 Mar 2024 06:05:54 GMT
-COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Wed, 06 Mar 2024 06:05:54 GMT
+# Thu, 25 Jan 2024 11:07:04 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='3ce6a2b357e2ef45fd6b53d6587aa05bfec7771e7fb982f2c964f6b771b7526a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.2_13.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='454bebb2c9fe48d981341461ffb6bf1017c7b7c6e15c6b0c29b959194ba3aaa5';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_x64_linux_hotspot_21.0.2_13.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='d08de863499d8851811c893e8915828f2cd8eb67ed9e29432a6b4e222d80a12f';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.2_13.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='0d5676c50821e0d0b951bf3ffd717e7a13be2a89d8848a5c13b4aedc6f982c78';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.2_13.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Thu, 25 Jan 2024 11:07:04 GMT
+RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Thu, 25 Jan 2024 11:07:04 GMT
+COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 25 Jan 2024 11:07:04 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 06 Mar 2024 06:05:55 GMT
+# Thu, 25 Jan 2024 11:07:04 GMT
 CMD ["jshell"]
-# Mon, 18 Mar 2024 18:42:58 GMT
+# Thu, 28 Mar 2024 04:36:53 GMT
 ENV JETTY_VERSION=12.0.7
-# Mon, 18 Mar 2024 18:42:58 GMT
+# Thu, 28 Mar 2024 04:36:53 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Mon, 18 Mar 2024 18:42:58 GMT
+# Thu, 28 Mar 2024 04:36:53 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Mon, 18 Mar 2024 18:42:58 GMT
+# Thu, 28 Mar 2024 04:36:53 GMT
 ENV TMPDIR=/tmp/jetty
-# Mon, 18 Mar 2024 18:42:58 GMT
+# Thu, 28 Mar 2024 04:36:53 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 18 Mar 2024 18:42:58 GMT
+# Thu, 28 Mar 2024 04:36:53 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.7/jetty-home-12.0.7.tar.gz
-# Mon, 18 Mar 2024 18:42:58 GMT
+# Thu, 28 Mar 2024 04:36:53 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3
-# Mon, 18 Mar 2024 18:43:18 GMT
+# Thu, 28 Mar 2024 04:37:12 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ;
-# Mon, 18 Mar 2024 18:43:19 GMT
+# Thu, 28 Mar 2024 04:37:12 GMT
 WORKDIR /var/lib/jetty
-# Mon, 18 Mar 2024 18:43:19 GMT
+# Thu, 28 Mar 2024 04:37:12 GMT
 COPY multi:6bf6ffc2c0ff756d51254f4ec987e84575c16c895c328c42a63bde92f8d5278a in / 
-# Mon, 18 Mar 2024 18:43:19 GMT
+# Thu, 28 Mar 2024 04:37:12 GMT
 USER jetty
-# Mon, 18 Mar 2024 18:43:19 GMT
+# Thu, 28 Mar 2024 04:37:12 GMT
 EXPOSE 8080
-# Mon, 18 Mar 2024 18:43:19 GMT
+# Thu, 28 Mar 2024 04:37:12 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 18 Mar 2024 18:43:19 GMT
+# Thu, 28 Mar 2024 04:37:12 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -91,28 +91,28 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Tue, 27 Feb 2024 20:46:06 GMT  
 		Size: 30.5 MB (30451302 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e2670537dcebc0b445ca47e68b31667f3572b8758b8388e24d8a6770e860ecc8`  
-		Last Modified: Wed, 06 Mar 2024 06:09:59 GMT  
-		Size: 17.5 MB (17456336 bytes)  
+	-	`sha256:dfc0d9a6855e071b36fbc6570e03cad42b0048eb5b1f5614c1753d6380cecfa9`  
+		Last Modified: Thu, 28 Mar 2024 02:09:07 GMT  
+		Size: 17.5 MB (17455933 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c44aaba36909c15b3b9d03a8a296637d8661ba2986ba8ff6927f631fc988cdc7`  
-		Last Modified: Wed, 06 Mar 2024 06:11:09 GMT  
-		Size: 159.6 MB (159589864 bytes)  
+	-	`sha256:3026e8edc115003ac0bde98276de13eaed165bd9d99af8b10b1ab3635978cace`  
+		Last Modified: Thu, 28 Mar 2024 02:11:58 GMT  
+		Size: 159.6 MB (159589847 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3b64924ef708a2f8604b20a2d073790a6c02fa6771a9b9160f10b4a8ffc8c6e`  
-		Last Modified: Wed, 06 Mar 2024 06:10:56 GMT  
-		Size: 174.0 B  
+	-	`sha256:cd470b4ec28da1a32e70b3c9ee25623977aa4b114ec0a8ed0080a5d331792d60`  
+		Last Modified: Thu, 28 Mar 2024 02:11:45 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:737fef02af8d88e64c776ec2c0b485bbe1e8d70e2aea5f3fb915ffc536ad434a`  
-		Last Modified: Wed, 06 Mar 2024 06:10:57 GMT  
+	-	`sha256:6789efe2b2c4c0ab17bd435bc3ba75ccfd24a4e8e398a7fc456f9db1194607e9`  
+		Last Modified: Thu, 28 Mar 2024 02:11:45 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b85890c39540cd4b479e5aa8605f9599b85f94a46319bc7dbc5a4811bcb74aba`  
-		Last Modified: Mon, 18 Mar 2024 18:59:38 GMT  
-		Size: 34.2 MB (34219078 bytes)  
+	-	`sha256:fdcb1f7da0b6e2aa39523477140fafaa3ad6adf2263cf966062f97ec07036d59`  
+		Last Modified: Thu, 28 Mar 2024 04:55:19 GMT  
+		Size: 34.2 MB (34219029 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd6ccdb164ac81e8bd24c4906e06ebf948299b87bfadb4f7c15d9ea4e0ef55da`  
-		Last Modified: Mon, 18 Mar 2024 18:59:36 GMT  
+	-	`sha256:3abf46af7a23df7485fb653ba100157f17d9036b85445a43469808942cb5c58c`  
+		Last Modified: Thu, 28 Mar 2024 04:55:17 GMT  
 		Size: 1.6 KB (1634 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
