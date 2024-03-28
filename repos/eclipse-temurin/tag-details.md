@@ -172,6 +172,56 @@
 -	[`eclipse-temurin:21.0.2_13-jre-windowsservercore`](#eclipse-temurin2102_13-jre-windowsservercore)
 -	[`eclipse-temurin:21.0.2_13-jre-windowsservercore-1809`](#eclipse-temurin2102_13-jre-windowsservercore-1809)
 -	[`eclipse-temurin:21.0.2_13-jre-windowsservercore-ltsc2022`](#eclipse-temurin2102_13-jre-windowsservercore-ltsc2022)
+-	[`eclipse-temurin:22`](#eclipse-temurin22)
+-	[`eclipse-temurin:22-alpine`](#eclipse-temurin22-alpine)
+-	[`eclipse-temurin:22-jammy`](#eclipse-temurin22-jammy)
+-	[`eclipse-temurin:22-jdk`](#eclipse-temurin22-jdk)
+-	[`eclipse-temurin:22-jdk-alpine`](#eclipse-temurin22-jdk-alpine)
+-	[`eclipse-temurin:22-jdk-jammy`](#eclipse-temurin22-jdk-jammy)
+-	[`eclipse-temurin:22-jdk-nanoserver`](#eclipse-temurin22-jdk-nanoserver)
+-	[`eclipse-temurin:22-jdk-nanoserver-1809`](#eclipse-temurin22-jdk-nanoserver-1809)
+-	[`eclipse-temurin:22-jdk-nanoserver-ltsc2022`](#eclipse-temurin22-jdk-nanoserver-ltsc2022)
+-	[`eclipse-temurin:22-jdk-ubi9-minimal`](#eclipse-temurin22-jdk-ubi9-minimal)
+-	[`eclipse-temurin:22-jdk-windowsservercore`](#eclipse-temurin22-jdk-windowsservercore)
+-	[`eclipse-temurin:22-jdk-windowsservercore-1809`](#eclipse-temurin22-jdk-windowsservercore-1809)
+-	[`eclipse-temurin:22-jdk-windowsservercore-ltsc2022`](#eclipse-temurin22-jdk-windowsservercore-ltsc2022)
+-	[`eclipse-temurin:22-jre`](#eclipse-temurin22-jre)
+-	[`eclipse-temurin:22-jre-alpine`](#eclipse-temurin22-jre-alpine)
+-	[`eclipse-temurin:22-jre-jammy`](#eclipse-temurin22-jre-jammy)
+-	[`eclipse-temurin:22-jre-nanoserver`](#eclipse-temurin22-jre-nanoserver)
+-	[`eclipse-temurin:22-jre-nanoserver-1809`](#eclipse-temurin22-jre-nanoserver-1809)
+-	[`eclipse-temurin:22-jre-nanoserver-ltsc2022`](#eclipse-temurin22-jre-nanoserver-ltsc2022)
+-	[`eclipse-temurin:22-jre-ubi9-minimal`](#eclipse-temurin22-jre-ubi9-minimal)
+-	[`eclipse-temurin:22-jre-windowsservercore`](#eclipse-temurin22-jre-windowsservercore)
+-	[`eclipse-temurin:22-jre-windowsservercore-1809`](#eclipse-temurin22-jre-windowsservercore-1809)
+-	[`eclipse-temurin:22-jre-windowsservercore-ltsc2022`](#eclipse-temurin22-jre-windowsservercore-ltsc2022)
+-	[`eclipse-temurin:22-nanoserver`](#eclipse-temurin22-nanoserver)
+-	[`eclipse-temurin:22-nanoserver-1809`](#eclipse-temurin22-nanoserver-1809)
+-	[`eclipse-temurin:22-nanoserver-ltsc2022`](#eclipse-temurin22-nanoserver-ltsc2022)
+-	[`eclipse-temurin:22-ubi9-minimal`](#eclipse-temurin22-ubi9-minimal)
+-	[`eclipse-temurin:22-windowsservercore`](#eclipse-temurin22-windowsservercore)
+-	[`eclipse-temurin:22-windowsservercore-1809`](#eclipse-temurin22-windowsservercore-1809)
+-	[`eclipse-temurin:22-windowsservercore-ltsc2022`](#eclipse-temurin22-windowsservercore-ltsc2022)
+-	[`eclipse-temurin:22_36-jdk`](#eclipse-temurin22_36-jdk)
+-	[`eclipse-temurin:22_36-jdk-alpine`](#eclipse-temurin22_36-jdk-alpine)
+-	[`eclipse-temurin:22_36-jdk-jammy`](#eclipse-temurin22_36-jdk-jammy)
+-	[`eclipse-temurin:22_36-jdk-nanoserver`](#eclipse-temurin22_36-jdk-nanoserver)
+-	[`eclipse-temurin:22_36-jdk-nanoserver-1809`](#eclipse-temurin22_36-jdk-nanoserver-1809)
+-	[`eclipse-temurin:22_36-jdk-nanoserver-ltsc2022`](#eclipse-temurin22_36-jdk-nanoserver-ltsc2022)
+-	[`eclipse-temurin:22_36-jdk-ubi9-minimal`](#eclipse-temurin22_36-jdk-ubi9-minimal)
+-	[`eclipse-temurin:22_36-jdk-windowsservercore`](#eclipse-temurin22_36-jdk-windowsservercore)
+-	[`eclipse-temurin:22_36-jdk-windowsservercore-1809`](#eclipse-temurin22_36-jdk-windowsservercore-1809)
+-	[`eclipse-temurin:22_36-jdk-windowsservercore-ltsc2022`](#eclipse-temurin22_36-jdk-windowsservercore-ltsc2022)
+-	[`eclipse-temurin:22_36-jre`](#eclipse-temurin22_36-jre)
+-	[`eclipse-temurin:22_36-jre-alpine`](#eclipse-temurin22_36-jre-alpine)
+-	[`eclipse-temurin:22_36-jre-jammy`](#eclipse-temurin22_36-jre-jammy)
+-	[`eclipse-temurin:22_36-jre-nanoserver`](#eclipse-temurin22_36-jre-nanoserver)
+-	[`eclipse-temurin:22_36-jre-nanoserver-1809`](#eclipse-temurin22_36-jre-nanoserver-1809)
+-	[`eclipse-temurin:22_36-jre-nanoserver-ltsc2022`](#eclipse-temurin22_36-jre-nanoserver-ltsc2022)
+-	[`eclipse-temurin:22_36-jre-ubi9-minimal`](#eclipse-temurin22_36-jre-ubi9-minimal)
+-	[`eclipse-temurin:22_36-jre-windowsservercore`](#eclipse-temurin22_36-jre-windowsservercore)
+-	[`eclipse-temurin:22_36-jre-windowsservercore-1809`](#eclipse-temurin22_36-jre-windowsservercore-1809)
+-	[`eclipse-temurin:22_36-jre-windowsservercore-ltsc2022`](#eclipse-temurin22_36-jre-windowsservercore-ltsc2022)
 -	[`eclipse-temurin:8`](#eclipse-temurin8)
 -	[`eclipse-temurin:8-alpine`](#eclipse-temurin8-alpine)
 -	[`eclipse-temurin:8-centos7`](#eclipse-temurin8-centos7)
@@ -34723,6 +34773,456 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 		Last Modified: Wed, 13 Mar 2024 01:39:26 GMT  
 		Size: 292.4 KB (292351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `eclipse-temurin:22`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-alpine`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jammy`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jdk`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jdk-alpine`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jdk-jammy`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jdk-nanoserver`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jdk-nanoserver-1809`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jdk-nanoserver-ltsc2022`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jdk-ubi9-minimal`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jdk-windowsservercore`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jdk-windowsservercore-1809`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jdk-windowsservercore-ltsc2022`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jre`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jre-alpine`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jre-jammy`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jre-nanoserver`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jre-nanoserver-1809`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jre-nanoserver-ltsc2022`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jre-ubi9-minimal`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jre-windowsservercore`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jre-windowsservercore-1809`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-jre-windowsservercore-ltsc2022`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-nanoserver`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-nanoserver-1809`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-nanoserver-ltsc2022`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-ubi9-minimal`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-windowsservercore`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-windowsservercore-1809`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22-windowsservercore-ltsc2022`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jdk`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jdk-alpine`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jdk-jammy`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jdk-nanoserver`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jdk-nanoserver-1809`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jdk-nanoserver-ltsc2022`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jdk-ubi9-minimal`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jdk-windowsservercore`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jdk-windowsservercore-1809`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jdk-windowsservercore-ltsc2022`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jre`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jre-alpine`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jre-jammy`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jre-nanoserver`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jre-nanoserver-1809`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jre-nanoserver-ltsc2022`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jre-ubi9-minimal`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jre-windowsservercore`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jre-windowsservercore-1809`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `eclipse-temurin:22_36-jre-windowsservercore-ltsc2022`
+
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8`
 
