@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f4429d5993f62904630967c92bb9f567c0d19bfb136a16a640aafecef0188f1`
+- Image ID: `sha256:647b9877df11a5ccf27aae7cb5cc6b2743915c16574d958cf2792f8829c65709`
 - Created: `2024-03-19T21:53:23Z`
-- Virtual Size: ~ 407.38 Mb  
+- Virtual Size: ~ 408.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=25.0.5`
   - `DOCKER_BUILDX_VERSION=0.13.1`
-  - `DOCKER_COMPOSE_VERSION=2.25.0`
+  - `DOCKER_COMPOSE_VERSION=2.26.0`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e`
 
