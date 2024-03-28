@@ -1,16 +1,16 @@
-# `sapmachine:21-jre-ubuntu`
+# `sapmachine:22-jre-ubuntu`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3e744768521a83b2f2707fdac8936d1eaacbc4648486413bfec779e019cbc291`
-- Created: `2024-03-06T05:16:36.665817885Z`
-- Virtual Size: ~ 255.70 Mb  
+- Image ID: `sha256:db83268b239bcc1031f51fc7c93a74e26e29d8e66904d0f18e750f18d6c62939`
+- Created: `2024-03-25T22:31:14.411299162Z`
+- Virtual Size: ~ 253.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/lib/jvm/sapmachine-21`
+  - `JAVA_HOME=/usr/lib/jvm/sapmachine-22`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -268,15 +268,9 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.1.dsc' coreutils_8.32-4.1ubuntu1.1.dsc 2299 SHA512:8f63a7432108ac3e60d1f2975afcff8e6c3446df2faec984beb08582686e2f143d8c00e749f32de37aa2005ff6bbd5fc65ff8086a97fb8c46f0ce5e02836366b
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32.orig.tar.xz' coreutils_8.32.orig.tar.xz 5547836 SHA512:1c8f3584efd61b4b02e7ac5db8e103b63cfb2063432caaf1e64cb2dcc56d8c657d1133bbf10bd41468d6a1f31142e6caa81d16ae68fa3e6e84075c253613a145
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32.orig.tar.xz.asc' coreutils_8.32.orig.tar.xz.asc 833 SHA512:9c73b35c9e8f7c2b8eff317afcb5aa3234c5f41c80d1882f3c2342906f3fdc876ae45d1256dd1b8fd3cb58c50925f3c13f93de5018626634fdca3c72c14a9acb
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.1.debian.tar.xz' coreutils_8.32-4.1ubuntu1.1.debian.tar.xz 43872 SHA512:939c55b25f5496124a5590a1220fcff39a4eb78bf226a56c2ae57d21de7cfd9c971bb257725ddacab03f5f8c2a9941ce51bdec2c6e5c04bf55bfe8ec6ed78d4c
-```
 
 ### `dpkg` source package: `dash=0.5.11+git20210903+057cd650a4ed-3build1`
 
@@ -424,19 +418,24 @@ $ apt-get source -qq --print-uris e2fsprogs=1.46.5-2ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.1.debian.tar.xz' e2fsprogs_1.46.5-2ubuntu1.1.debian.tar.xz 85972 SHA512:76a3ff1b2bfd26e464ccf7cd70a96eeb6a703a6d647fcaebc71d54e6cd9070339a5f0ac02322e181c45e4c7bd7ad4daf66079f193b1191eb9ff2a5f6275fa31f
 ```
 
-### `dpkg` source package: `expat=2.4.7-1ubuntu0.2`
+### `dpkg` source package: `expat=2.4.7-1ubuntu0.3`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.4.7-1ubuntu0.2`
+- `libexpat1:amd64=2.4.7-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris expat=2.4.7-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.3.dsc' expat_2.4.7-1ubuntu0.3.dsc 2137 SHA512:6d8ea5baa2a7fc6b586a320ef58b22739ced74006d23b335cd42ac63c4c845261f831446893633db1cc9ca966fea6bbf005d331370e7266b46b4ad377345ee80
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7.orig.tar.gz' expat_2.4.7.orig.tar.gz 8316374 SHA512:91bc9792c4ba1d0ad835f633d8cfa62130692f48308eea8932ec5e13a01542120561b0f255b4adc58b1adae6f83632cbabf428b5b5c0d2ac6de542478a951232
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.3.debian.tar.xz' expat_2.4.7-1ubuntu0.3.debian.tar.xz 21688 SHA512:8b511ecf7af0c6b3dba6b76cdb243ba0bc513716a597b8493ed979b71e11a8e155d74de460a1b983b23902eace82b1193a54fe8e69ac57d79663ddb72a48223f
+```
 
 ### `dpkg` source package: `findutils=4.8.0-1ubuntu3`
 
@@ -1743,11 +1742,11 @@ $ apt-get source -qq --print-uris procps=2:3.3.17-6ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.1.debian.tar.xz' procps_3.3.17-6ubuntu2.1.debian.tar.xz 35488 SHA512:720a52d14be82aecd59e2456fbb19574c99cc5281660a36994ef4aa619c14bbec43fd30b5e949446e5db6b6bebf8003a5f173298fe8bf56ac949d61ad0225a79
 ```
 
-### `dpkg` source package: `sapmachine-21-jre=21.0.2`
+### `dpkg` source package: `sapmachine-22-jre=22`
 
 Binary Packages:
 
-- `sapmachine-21-jre=21.0.2`
+- `sapmachine-22-jre=22`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
