@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7686a6a892a4613b84578e60ff6336ce2280fc81dd0ec1116dfd08b5ffb3b23c`
-- Created: `2024-03-06T13:09:16.707556619Z`
-- Virtual Size: ~ 304.54 Mb  
+- Image ID: `sha256:1e0c20024fc06340ef00a371b98ffa9db1801f6cd1f8333189b9c8d96e3ff178`
+- Created: `2024-03-28T05:12:44.000959317Z`
+- Virtual Size: ~ 304.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -286,12 +286,12 @@ $ apt-get source -qq --print-uris coreutils=8.30-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.30-3ubuntu2.debian.tar.xz' coreutils_8.30-3ubuntu2.debian.tar.xz 39636 SHA256:98204ef9d94e5c567880cd0245fdb7940eaf7592d6c6830c300ad117628b351f
 ```
 
-### `dpkg` source package: `curl=7.68.0-1ubuntu2.21`
+### `dpkg` source package: `curl=7.68.0-1ubuntu2.22`
 
 Binary Packages:
 
-- `curl=7.68.0-1ubuntu2.21`
-- `libcurl4:amd64=7.68.0-1ubuntu2.21`
+- `curl=7.68.0-1ubuntu2.22`
+- `libcurl4:amd64=7.68.0-1ubuntu2.22`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -305,10 +305,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.21
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.21.dsc' curl_7.68.0-1ubuntu2.21.dsc 2737 SHA512:6637e374c7078dd9535a898ac4eed18088543d73152d631f65c6068bd5682fc2aaf5de7173a95d778c2ac44d1cf2e99860f4576c84a006af82de36707aac7673
+$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.22
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.22.dsc' curl_7.68.0-1ubuntu2.22.dsc 2737 SHA512:a1f3f711ae4f0978872cbc35659b14a9294056b55b2099faf83a3aae00fce0ee0f0bc4397da9617ef29438c2218dd58d86ca4cec454ef6fae6575023c0787b5a
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.21.debian.tar.xz' curl_7.68.0-1ubuntu2.21.debian.tar.xz 69924 SHA512:c2e15589ce3f296ebe4d42f3baa4c03237ad7b8d5d7fd2a3f0e1e2a6e3a41a8cb046c21bcbab8820e8cab0cd70a6eba5bb0ed8678158f9c1003c60f5293e3c06
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.22.debian.tar.xz' curl_7.68.0-1ubuntu2.22.debian.tar.xz 70620 SHA512:be12a18917b5ff3c0b26b4f8932fc5a15ea237752719105426984961b98ce5043dd4573e79c22b62a8210143d7ec0742f0db4f6a80f37e57963298906f5cc602
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
@@ -1239,19 +1239,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4%2bdfsg-3ubuntu0.1.debian.tar.xz' libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz 17300 SHA512:0484891be5603d00bd57b799c708b9395fccbaa8c6c44f535377f6fa2c7ac22c01c8a3c1b45e1c1f3c30f19dc74d510626bf82067fcbfb53c39f1bcc2249affe
 ```
 
-### `dpkg` source package: `linux=5.4.0-173.191`
+### `dpkg` source package: `linux=5.4.0-174.193`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.4.0-173.191`
+- `linux-libc-dev:amd64=5.4.0-174.193`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.4.0-174.193
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-174.193.dsc' linux_5.4.0-174.193.dsc 7421 SHA512:407c8ec79b80271ad01d815fa25fd591a504915b5a933635bbaaeed2bd5ea9c1e33347e81045975bd1b3c393f5f99a928ed6c3c02919671ec2a7474122585e3c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-174.193.diff.gz' linux_5.4.0-174.193.diff.gz 11548645 SHA512:7fca26f48b1cb0aa0db412f334dd4aa5089f47b61e7640d38c84ec6329188e90670e1817cf4f31220dcdf8d80a8b8bb9ba79682bf416acf9e042db49caae9bb9
+```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 
@@ -1868,14 +1873,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.34-0.1ubuntu9.4
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34-0.1ubuntu9.4.dsc' util-linux_2.34-0.1ubuntu9.4.dsc 4067 SHA512:c5aac721638d7cf7187143a62ab03530c4feb9fe63767762db1a75a4cbb07ca078e45696d3a663945bd6fcbfcdded98a926f479cf69e335b4f4130e78565282d
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34.orig.tar.xz' util-linux_2.34.orig.tar.xz 4974812 SHA512:2d0b76f63d32e7afb7acf61a83fabbfd58baa34ab78b3a331ce87f9c676a5fd71c56a493ded95039540d2c46b6048caaa38d7fb4491eb3d52d7b09dc54655cd7
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34-0.1ubuntu9.4.debian.tar.xz' util-linux_2.34-0.1ubuntu9.4.debian.tar.xz 98148 SHA512:4e1c5e0d1c8fcd735bbab4418a16dbd60280a6707ceb41338bf7d25f0991139b569e42e713c9f33b3e924116c638480f8cf2a92b16c9584f5a845086e1858b69
-```
 
 ### `dpkg` source package: `wget=1.20.3-1ubuntu2`
 
