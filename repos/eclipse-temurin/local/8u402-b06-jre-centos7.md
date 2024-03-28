@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:442f865b2f0cf4a7d38f6e6062028fa74ab8da2ce401408b349a8bcbab2b6cc5`
-- Created: `2024-01-24T20:32:56.123295217Z`
-- Virtual Size: ~ 350.88 Mb  
+- Image ID: `sha256:f6593834a84bb5f8cc30494c50a0bc9fb60482a2e07e9d5f47457e72b363b25e`
+- Created: `2024-01-24T16:26:40Z`
+- Virtual Size: ~ 350.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -1599,15 +1599,15 @@ $ dnf --quiet download --source --url tar-1.26-35.el7
 http://vault.centos.org/centos/7/os/Source/SPackages/tar-1.26-35.el7.src.rpm
 ```
 
-### `rpm` package: `tzdata-2023c-1.el7.noarch`
+### `rpm` package: `tzdata-2024a-1.el7.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2023c-1.el7.noarch
-http://vault.centos.org/centos/7/updates/Source/SPackages/tzdata-2023c-1.el7.src.rpm
+$ dnf --quiet download --source --url tzdata-2024a-1.el7.noarch
+http://vault.centos.org/centos/7/updates/Source/SPackages/tzdata-2024a-1.el7.src.rpm
 ```
 
 ### `rpm` package: `ustr-1.0.4-16.el7.x86_64`

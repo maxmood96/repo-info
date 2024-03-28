@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:db6fc016e66a9272f034b050a2dbc640a3a8730a0ad829fd9294ccdf3c56d158`
-- Created: `2024-03-16T03:23:26.572675536Z`
-- Virtual Size: ~ 288.65 Mb  
+- Image ID: `sha256:c15509fac4d7264742c7e7f0577ec89413bb9c5035d1ff9a97a34337288aa419`
+- Created: `2024-01-24T16:26:40Z`
+- Virtual Size: ~ 288.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -141,16 +141,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20230506-r0 description:
+ca-certificates-20240226-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20230506-r0 webpage:
+ca-certificates-20240226-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20230506-r0 installed size:
-688 KiB
+ca-certificates-20240226-r0 installed size:
+712 KiB
 
-ca-certificates-20230506-r0 license:
+ca-certificates-20240226-r0 license:
 MPL-2.0 AND MIT
 
 ```

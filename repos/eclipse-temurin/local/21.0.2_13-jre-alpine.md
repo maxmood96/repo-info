@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8c07a483cecda31112893d53500aee1225e2d562d8f9a8f2b4db150c817076d0`
-- Created: `2024-03-16T03:25:16.503191538Z`
-- Virtual Size: ~ 202.10 Mb  
+- Image ID: `sha256:d3e9b76faa33518bedb6f8dbe979c6fdf80892da33eb571957e650cb3d67a93e`
+- Created: `2024-03-27T15:44:12Z`
+- Virtual Size: ~ 189.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -86,23 +86,6 @@ GPL-2.0-only
 
 ```
 
-### `apk` package: `binutils`
-
-```console
-binutils-2.41-r0 description:
-Tools necessary to build programs
-
-binutils-2.41-r0 webpage:
-https://www.gnu.org/software/binutils/
-
-binutils-2.41-r0 installed size:
-9552 KiB
-
-binutils-2.41-r0 license:
-GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
-
-```
-
 ### `apk` package: `brotli-libs`
 
 ```console
@@ -157,16 +140,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20230506-r0 description:
+ca-certificates-20240226-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20230506-r0 webpage:
+ca-certificates-20240226-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20230506-r0 installed size:
-688 KiB
+ca-certificates-20240226-r0 installed size:
+712 KiB
 
-ca-certificates-20230506-r0 license:
+ca-certificates-20240226-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -253,23 +236,6 @@ freetype-2.13.2-r0 installed size:
 
 freetype-2.13.2-r0 license:
 FTL OR GPL-2.0-or-later
-
-```
-
-### `apk` package: `jansson`
-
-```console
-jansson-2.14-r4 description:
-lightweight JSON library
-
-jansson-2.14-r4 webpage:
-http://www.digip.org/jansson/
-
-jansson-2.14-r4 installed size:
-64 KiB
-
-jansson-2.14-r4 license:
-MIT
 
 ```
 
@@ -375,23 +341,6 @@ MIT
 
 ```
 
-### `apk` package: `libgcc`
-
-```console
-libgcc-13.2.1_git20231014-r0 description:
-GNU C compiler runtime libraries
-
-libgcc-13.2.1_git20231014-r0 webpage:
-https://gcc.gnu.org
-
-libgcc-13.2.1_git20231014-r0 installed size:
-152 KiB
-
-libgcc-13.2.1_git20231014-r0 license:
-GPL-2.0-or-later AND LGPL-2.1-or-later
-
-```
-
 ### `apk` package: `libintl`
 
 ```console
@@ -440,23 +389,6 @@ libssl3-3.1.4-r5 installed size:
 
 libssl3-3.1.4-r5 license:
 Apache-2.0
-
-```
-
-### `apk` package: `libstdc++`
-
-```console
-libstdc++-13.2.1_git20231014-r0 description:
-GNU C++ standard runtime library
-
-libstdc++-13.2.1_git20231014-r0 webpage:
-https://gcc.gnu.org
-
-libstdc++-13.2.1_git20231014-r0 installed size:
-2652 KiB
-
-libstdc++-13.2.1_git20231014-r0 license:
-GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -661,22 +593,5 @@ zlib-1.3.1-r0 installed size:
 
 zlib-1.3.1-r0 license:
 Zlib
-
-```
-
-### `apk` package: `zstd-libs`
-
-```console
-zstd-libs-1.5.5-r8 description:
-Zstandard - Fast real-time compression algorithm (libraries)
-
-zstd-libs-1.5.5-r8 webpage:
-https://www.zstd.net/
-
-zstd-libs-1.5.5-r8 installed size:
-712 KiB
-
-zstd-libs-1.5.5-r8 license:
-BSD-3-Clause OR GPL-2.0-or-later
 
 ```

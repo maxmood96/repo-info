@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3517be289c081603ba4f1d4818a0236c0b93430c6bd9b7136d9535b79c7f1eb1`
-- Created: `2024-01-26T01:58:54.638857362Z`
-- Virtual Size: ~ 240.86 Mb  
+- Image ID: `sha256:372f4983a20d3c33f9eb2765bd9b7d4e04bbea7a3ad0c0506f2616b533cb069a`
+- Created: `2024-01-24T16:26:40Z`
+- Virtual Size: ~ 251.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -64,13 +64,13 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `binutils-2.35.2-42.el9.x86_64`
+### `rpm` package: `binutils-2.35.2-42.el9_3.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `binutils-gold-2.35.2-42.el9.x86_64`
+### `rpm` package: `binutils-gold-2.35.2-42.el9_3.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
@@ -196,25 +196,25 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-2.34-83.el9_3.7.x86_64`
+### `rpm` package: `glibc-2.34-83.el9_3.12.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-common-2.34-83.el9_3.7.x86_64`
+### `rpm` package: `glibc-common-2.34-83.el9_3.12.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-langpack-en-2.34-83.el9_3.7.x86_64`
+### `rpm` package: `glibc-langpack-en-2.34-83.el9_3.12.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-minimal-langpack-2.34-83.el9_3.7.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-83.el9_3.12.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
@@ -742,7 +742,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `tzdata-2023d-1.el9.noarch`
+### `rpm` package: `tzdata-2024a-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
