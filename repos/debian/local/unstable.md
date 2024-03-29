@@ -1792,20 +1792,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.39.3-10
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3-10.dsc' util-linux_2.39.3-10.dsc 4615 SHA256:d544e486a38ca3a7b3c5d91d4089c8c3ab555a5c3a31620767fde32767a1574b
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3.orig.tar.xz' util-linux_2.39.3.orig.tar.xz 8526168 SHA256:7b6605e48d1a49f43cc4b4cfc59f313d0dd5402fa40b96810bd572e167dfed0f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3-10.debian.tar.xz' util-linux_2.39.3-10.debian.tar.xz 100632 SHA256:da5ec66e93ca1a66634cb405595c256255141f149164301aa26333f38bd80206
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.39.3-10/
 
-- https://sources.debian.net/src/util-linux/2.39.3-10/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.39.3-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.39.3-10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.2-2`
 
