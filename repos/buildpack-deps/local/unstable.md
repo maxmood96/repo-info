@@ -3039,20 +3039,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.43-3
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.43-3.dsc' libpng1.6_1.6.43-3.dsc 2269 SHA256:a88f5c6967302cd039a2cdd6b9fd8069f94ecf61eb199ce07d1104c16b09fc9f
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.43.orig.tar.gz' libpng1.6_1.6.43.orig.tar.gz 1554715 SHA256:fecc95b46cf05e8e3fc8a414750e0ba5aad00d89e9fdf175e94ff041caf1a03a
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.43-3.debian.tar.xz' libpng1.6_1.6.43-3.debian.tar.xz 31428 SHA256:117a6f31de9d928c1c11d841528851f17b6493cfe5326de9fe33a2aa0f2682a6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpng1.6/1.6.43-3/
 
-- https://sources.debian.net/src/libpng1.6/1.6.43-3/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.43-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.43-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -3172,20 +3165,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `Unlicense,`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.57.92+dfsg-2
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.57.92%2bdfsg-2.dsc' librsvg_2.57.92+dfsg-2.dsc 3195 SHA256:a3f4f6c0cbcddf1196857e857e15ba4eb2e6b2fe899130b441d6d0e6d5740e70
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.57.92%2bdfsg.orig.tar.xz' librsvg_2.57.92+dfsg.orig.tar.xz 5736012 SHA256:d84b2265364631729cad0c22b07c1e8b5b3a31e85ef6cd183b675039119894a9
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.57.92%2bdfsg-2.debian.tar.xz' librsvg_2.57.92+dfsg-2.debian.tar.xz 29509868 SHA256:5cccb6c84de51613c5bc42d3d2d3342015e015de0670e74c919ee6c7090f56b2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/librsvg/2.57.92+dfsg-2/
 
-- https://sources.debian.net/src/librsvg/2.57.92+dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/librsvg/2.57.92+dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/librsvg/2.57.92+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.5.5-1`
 
@@ -4025,20 +4011,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:10.11.7-2
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.7-2.dsc' mariadb_10.11.7-2.dsc 5056 SHA256:901c11461954d186e4836700736f8f459147946b898ceb116f42b9048de615e7
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.7.orig.tar.gz' mariadb_10.11.7.orig.tar.gz 96991805 SHA256:9aa2e3445fadd52524505c8d9c9bd08e4a4f51600b5c2d7933fe18ae6b1c53ca
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.7-2.debian.tar.xz' mariadb_10.11.7-2.debian.tar.xz 277240 SHA256:fc03d98f896daee2b1be98025c429208c2b19bf0d1ea4cba610871b394b8a640
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb/1:10.11.7-2/
 
-- https://sources.debian.net/src/mariadb/1:10.11.7-2/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:10.11.7-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:10.11.7-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20240123-1`
 
@@ -5646,20 +5625,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.39.3-10
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3-10.dsc' util-linux_2.39.3-10.dsc 4615 SHA256:d544e486a38ca3a7b3c5d91d4089c8c3ab555a5c3a31620767fde32767a1574b
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3.orig.tar.xz' util-linux_2.39.3.orig.tar.xz 8526168 SHA256:7b6605e48d1a49f43cc4b4cfc59f313d0dd5402fa40b96810bd572e167dfed0f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3-10.debian.tar.xz' util-linux_2.39.3-10.debian.tar.xz 100632 SHA256:da5ec66e93ca1a66634cb405595c256255141f149164301aa26333f38bd80206
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.39.3-10/
 
-- https://sources.debian.net/src/util-linux/2.39.3-10/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.39.3-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.39.3-10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21.4-1`
 

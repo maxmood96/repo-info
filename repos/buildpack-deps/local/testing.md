@@ -3565,21 +3565,13 @@ Licenses: (parsed from: `/usr/share/doc/libunistring5/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libunistring=1.1-2
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.1-2.dsc' libunistring_1.1-2.dsc 2031 SHA256:2d8f1274fdc9b7434e9dcc4a0a6891e36aa015f43e4a0638ec4de6837873bd98
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.1.orig.tar.xz' libunistring_1.1.orig.tar.xz 2397676 SHA256:827c1eb9cb6e7c738b171745dac0888aa58c5924df2e59239318383de0729b98
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.1.orig.tar.xz.asc' libunistring_1.1.orig.tar.xz.asc 833 SHA256:dadae6c38f85f9e8776231436c601c386924ceb44d511456c61c9be73608933d
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.1-2.debian.tar.xz' libunistring_1.1-2.debian.tar.xz 14008 SHA256:93dd1881e69e6046e2d2ec20ce99f2ae07e4ba078c506cd40104e19e08c681d1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libunistring/1.1-2/
 
-- https://sources.debian.net/src/libunistring/1.1-2/ (for browsing the source)
-- https://sources.debian.net/src/libunistring/1.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libunistring/1.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libwebp=1.3.2-0.4`
 
@@ -4218,21 +4210,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=6.6.3-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.6.3-1.dsc' mercurial_6.6.3-1.dsc 2806 SHA256:a5c4e53757a0e199a091dbe23c53397d56181f54d57a37e7ed21f3cdb38774ed
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.6.3.orig.tar.gz' mercurial_6.6.3.orig.tar.gz 8253219 SHA256:f75d6a4a75823a1b7d713a4967eca2f596f466e58fc6bc06d72642932fd7e307
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.6.3.orig.tar.gz.asc' mercurial_6.6.3.orig.tar.gz.asc 659 SHA256:879623d4c4cc62fb2c8636b058431950095e5c0397c65a7e8fbae4dd52c725d9
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.6.3-1.debian.tar.xz' mercurial_6.6.3-1.debian.tar.xz 69608 SHA256:b6dcc37bd8fb3f07cca4966ae1830c92eafc650f495d510789efab635f7fd2f3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/6.6.3-1/
 
-- https://sources.debian.net/src/mercurial/6.6.3-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/6.6.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/6.6.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpclib3=1.3.1-1`
 
@@ -6020,21 +6004,13 @@ Licenses: (parsed from: `/usr/share/doc/liblzma-dev/copyright`, `/usr/share/doc/
 - `none`
 - `permissive-nowarranty`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.6.0-0.2
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.6.0-0.2.dsc' xz-utils_5.6.0-0.2.dsc 2530 SHA256:39af2d0b1cb02451b1fc711c40942b79ad31f5e4313c400c0f4ac4c3986a50c3
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.6.0.orig.tar.xz' xz-utils_5.6.0.orig.tar.xz 1773076 SHA256:cdafe1632f139c82937cc1ed824f7a60b7b0a0619dfbbd681dcac02b1ac28f5b
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.6.0.orig.tar.xz.asc' xz-utils_5.6.0.orig.tar.xz.asc 833 SHA256:12bcbb95747f710130c0ce6814f611eaa56b7584be480ecd0e6299623df32513
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.6.0-0.2.debian.tar.xz' xz-utils_5.6.0-0.2.debian.tar.xz 28100 SHA256:9c87030b406078f2db8cdc8c5d1852aa90ac543a86d70f3723ca88a1b352c1d0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/xz-utils/5.6.0-0.2/
 
-- https://sources.debian.net/src/xz-utils/5.6.0-0.2/ (for browsing the source)
-- https://sources.debian.net/src/xz-utils/5.6.0-0.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xz-utils/5.6.0-0.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.3.dfsg-3`
 
