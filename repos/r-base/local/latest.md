@@ -62,9 +62,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=2.7.12
-'http://http.debian.net/debian/pool/main/a/apt/apt_2.7.12.dsc' apt_2.7.12.dsc 2935 SHA256:2ca5e44c888a1e485ccd5ef0d3a653f718c6615d499c38c6696fad978f6c03dd
-'http://http.debian.net/debian/pool/main/a/apt/apt_2.7.12.tar.xz' apt_2.7.12.tar.xz 2350828 SHA256:e46d166b5fc887c2d9bca7add7e0ccda547b962b762e1272a08c0426baa99caf
+'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.12.dsc' apt_2.7.12.dsc 2935 SHA256:2ca5e44c888a1e485ccd5ef0d3a653f718c6615d499c38c6696fad978f6c03dd
+'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.12.tar.xz' apt_2.7.12.tar.xz 2350828 SHA256:e46d166b5fc887c2d9bca7add7e0ccda547b962b762e1272a08c0426baa99caf
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/apt/2.7.12/ (for browsing the source)
+- https://sources.debian.net/src/apt/2.7.12/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/2.7.12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-1`
 
@@ -1471,10 +1477,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris lattice=0.22-5-1
-'http://http.debian.net/debian/pool/main/l/lattice/lattice_0.22-5-1.dsc' lattice_0.22-5-1.dsc 1838 SHA256:6082e7c096e2eeb45c928b46b4e388bbefb659b1b44c47f6d3b11456d11d48bb
-'http://http.debian.net/debian/pool/main/l/lattice/lattice_0.22-5.orig.tar.gz' lattice_0.22-5.orig.tar.gz 599044 SHA256:ba1fbe5e18a133507dca9851b7f933002bdb6d1f3ea5f410a0a441103b6da5f1
-'http://http.debian.net/debian/pool/main/l/lattice/lattice_0.22-5-1.debian.tar.xz' lattice_0.22-5-1.debian.tar.xz 5380 SHA256:73affdebdc7025c2d7f7cfb1ad96aedf4569239a7a10b8de9466a95fb420abf7
+'http://deb.debian.org/debian/pool/main/l/lattice/lattice_0.22-5-1.dsc' lattice_0.22-5-1.dsc 1838 SHA256:6082e7c096e2eeb45c928b46b4e388bbefb659b1b44c47f6d3b11456d11d48bb
+'http://deb.debian.org/debian/pool/main/l/lattice/lattice_0.22-5.orig.tar.gz' lattice_0.22-5.orig.tar.gz 599044 SHA256:ba1fbe5e18a133507dca9851b7f933002bdb6d1f3ea5f410a0a441103b6da5f1
+'http://deb.debian.org/debian/pool/main/l/lattice/lattice_0.22-5-1.debian.tar.xz' lattice_0.22-5-1.debian.tar.xz 5380 SHA256:73affdebdc7025c2d7f7cfb1ad96aedf4569239a7a10b8de9466a95fb420abf7
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/lattice/0.22-5-1/ (for browsing the source)
+- https://sources.debian.net/src/lattice/0.22-5-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/lattice/0.22-5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lerc=4.0.0+ds-4`
 
@@ -1843,14 +1855,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.43-3
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.43-3.dsc' libpng1.6_1.6.43-3.dsc 2269 SHA256:a88f5c6967302cd039a2cdd6b9fd8069f94ecf61eb199ce07d1104c16b09fc9f
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.43.orig.tar.gz' libpng1.6_1.6.43.orig.tar.gz 1554715 SHA256:fecc95b46cf05e8e3fc8a414750e0ba5aad00d89e9fdf175e94ff041caf1a03a
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.43-3.debian.tar.xz' libpng1.6_1.6.43-3.debian.tar.xz 31428 SHA256:117a6f31de9d928c1c11d841528851f17b6493cfe5326de9fe33a2aa0f2682a6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libpng1.6/1.6.43-3/
+
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -2118,21 +2129,13 @@ Licenses: (parsed from: `/usr/share/doc/libunistring5/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libunistring=1.1-2
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.1-2.dsc' libunistring_1.1-2.dsc 2031 SHA256:2d8f1274fdc9b7434e9dcc4a0a6891e36aa015f43e4a0638ec4de6837873bd98
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.1.orig.tar.xz' libunistring_1.1.orig.tar.xz 2397676 SHA256:827c1eb9cb6e7c738b171745dac0888aa58c5924df2e59239318383de0729b98
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.1.orig.tar.xz.asc' libunistring_1.1.orig.tar.xz.asc 833 SHA256:dadae6c38f85f9e8776231436c601c386924ceb44d511456c61c9be73608933d
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.1-2.debian.tar.xz' libunistring_1.1-2.debian.tar.xz 14008 SHA256:93dd1881e69e6046e2d2ec20ce99f2ae07e4ba078c506cd40104e19e08c681d1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libunistring/1.1-2/
 
-- https://sources.debian.net/src/libunistring/1.1-2/ (for browsing the source)
-- https://sources.debian.net/src/libunistring/1.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libunistring/1.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libwebp=1.3.2-0.4`
 
@@ -2415,10 +2418,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris littler=0.3.19-1
-'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.19-1.dsc' littler_0.3.19-1.dsc 1874 SHA256:121781a5a11a34f02f6a91c0ce7e549eb4ca21ee408eea41fd9b523b363170d9
-'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.19.orig.tar.gz' littler_0.3.19.orig.tar.gz 122659 SHA256:e1cfab5cc300c5ff7dd12c906afac2c8d87fec3fc43f07a8d0cf4a059ba36509
-'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.19-1.debian.tar.xz' littler_0.3.19-1.debian.tar.xz 7128 SHA256:493e6c9ff89c2d765158c3dfa458a5222121e97276adf9d4d14c60c17b9f5735
+'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.19-1.dsc' littler_0.3.19-1.dsc 1874 SHA256:121781a5a11a34f02f6a91c0ce7e549eb4ca21ee408eea41fd9b523b363170d9
+'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.19.orig.tar.gz' littler_0.3.19.orig.tar.gz 122659 SHA256:e1cfab5cc300c5ff7dd12c906afac2c8d87fec3fc43f07a8d0cf4a059ba36509
+'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.19-1.debian.tar.xz' littler_0.3.19-1.debian.tar.xz 7128 SHA256:493e6c9ff89c2d765158c3dfa458a5222121e97276adf9d4d14c60c17b9f5735
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/littler/0.3.19-1/ (for browsing the source)
+- https://sources.debian.net/src/littler/0.3.19-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/littler/0.3.19-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
