@@ -1,11 +1,11 @@
-## `debian:unstable-slim`
+## `debian:unstable-20240330-slim`
 
 ```console
-$ docker pull debian@sha256:73364f560366d0197d5e06b374fb082cdc3c8b27ec82dc514c5adfea00ad1a5f
+$ docker pull debian@sha256:6fc7ce17c379640dc1d1246a8107cc338f94578e19bf66ecae1a03e4f93319db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 9
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -14,9 +14,8 @@ $ docker pull debian@sha256:73364f560366d0197d5e06b374fb082cdc3c8b27ec82dc514c5a
 	-	linux; mips64le
 	-	linux; ppc64le
 	-	linux; riscv64
-	-	linux; s390x
 
-### `debian:unstable-slim` - linux; amd64
+### `debian:unstable-20240330-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:25c9a0cd383cd56dd323946984aaff0f22c525e4fb6fc4b59e4e41167ef57835
@@ -42,7 +41,7 @@ CMD ["bash"]
 		Size: 30.9 MB (30853805 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; arm variant v5
+### `debian:unstable-20240330-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:bd19000c7264ef7d58e7c832c655f3cc6c8dd62835d344bde76bdb5cf87ca71f
@@ -68,7 +67,7 @@ CMD ["bash"]
 		Size: 28.0 MB (28039410 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; arm variant v7
+### `debian:unstable-20240330-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:26a2d4aff31f9a52ea56e1f04674fa3099bfd9454005d7b2bcb62a522df52c9a
@@ -94,7 +93,7 @@ CMD ["bash"]
 		Size: 25.6 MB (25648531 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; arm64 variant v8
+### `debian:unstable-20240330-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:be0c4c53da9fea553167cfd0b66ce8822bdea75d53723248f1fe0e0ec5b2b4b1
@@ -120,7 +119,7 @@ CMD ["bash"]
 		Size: 30.7 MB (30726498 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; 386
+### `debian:unstable-20240330-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:70603fa40c8ced0a673a468dc6dce927dad3e45af558cbba75f9217583b14954
@@ -146,7 +145,7 @@ CMD ["bash"]
 		Size: 31.6 MB (31631899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; mips64le
+### `debian:unstable-20240330-slim` - linux; mips64le
 
 ```console
 $ docker pull debian@sha256:64d88a658ac5d349425d75f27d120ca2197bf98515600d6c133ae0942db35123
@@ -172,7 +171,7 @@ CMD ["bash"]
 		Size: 30.0 MB (29953248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; ppc64le
+### `debian:unstable-20240330-slim` - linux; ppc64le
 
 ```console
 $ docker pull debian@sha256:1e7a758d02bb9c3b0e077921bd9a2ae9fdddc9ae17325fa493f9fe43794d6c94
@@ -198,7 +197,7 @@ CMD ["bash"]
 		Size: 34.6 MB (34640804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; riscv64
+### `debian:unstable-20240330-slim` - linux; riscv64
 
 ```console
 $ docker pull debian@sha256:06bf3eea0932835ff00ec00eb875d59c2a491a4f52a4bbc6872f85e0acee8c8a
@@ -222,30 +221,4 @@ CMD ["bash"]
 	-	`sha256:a9a885e2fd6cb16263416c642fbc8e7e9a847fca7cab505afb114ab58f195d12`  
 		Last Modified: Sat, 30 Mar 2024 20:56:44 GMT  
 		Size: 29.1 MB (29061135 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `debian:unstable-slim` - linux; s390x
-
-```console
-$ docker pull debian@sha256:62c6c9a42047068fd013e400d6302cb81e9d9ef70fbd92e65b145464a319d9c7
-```
-
--	Docker Version: 20.10.23
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.2 MB (30247361 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c41c19e47cb122019d05438407db5b17a3df96e727e40bb85bc443a62a4f80b9`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Tue, 12 Mar 2024 01:16:45 GMT
-ADD file:c81da15f3069f61d3a07c82537878c2341c3a5afcb878fb3583a6b053873a124 in / 
-# Tue, 12 Mar 2024 01:16:47 GMT
-CMD ["bash"]
-```
-
--	Layers:
-	-	`sha256:043fdeda1d43dfecf36b6c409d6d4455be4402f3c814f67316eba1a5fa4d0136`  
-		Last Modified: Tue, 12 Mar 2024 01:24:25 GMT  
-		Size: 30.2 MB (30247361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
