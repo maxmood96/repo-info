@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:72f57b40d54c8e7c3de650c3d25a22fc51371457cf6080dfbb06521f5b739bb1`
-- Created: `2024-03-18T18:37:21.035482137Z`
-- Virtual Size: ~ 204.04 Mb  
+- Image ID: `sha256:b00bfeec0ee9a54afa02d99442581c358069ef26545bb33d858c6d500288e48e`
+- Created: `2024-03-28T04:31:56.038315454Z`
+- Virtual Size: ~ 191.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -93,23 +93,6 @@ GPL-2.0-only
 
 ```
 
-### `apk` package: `binutils`
-
-```console
-binutils-2.41-r0 description:
-Tools necessary to build programs
-
-binutils-2.41-r0 webpage:
-https://www.gnu.org/software/binutils/
-
-binutils-2.41-r0 installed size:
-9552 KiB
-
-binutils-2.41-r0 license:
-GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
-
-```
-
 ### `apk` package: `brotli-libs`
 
 ```console
@@ -164,16 +147,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.24.0-r1 description:
+c-ares-1.27.0-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.24.0-r1 webpage:
+c-ares-1.27.0-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.24.0-r1 installed size:
-144 KiB
+c-ares-1.27.0-r0 installed size:
+152 KiB
 
-c-ares-1.24.0-r1 license:
+c-ares-1.27.0-r0 license:
 MIT
 
 ```
@@ -181,16 +164,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20230506-r0 description:
+ca-certificates-20240226-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20230506-r0 webpage:
+ca-certificates-20240226-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20230506-r0 installed size:
-688 KiB
+ca-certificates-20240226-r0 installed size:
+712 KiB
 
-ca-certificates-20230506-r0 license:
+ca-certificates-20240226-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -436,16 +419,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.3-r0 description:
+gnutls-3.8.4-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.3-r0 webpage:
+gnutls-3.8.4-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.3-r0 installed size:
-1856 KiB
+gnutls-3.8.4-r0 installed size:
+1876 KiB
 
-gnutls-3.8.3-r0 license:
+gnutls-3.8.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -532,23 +515,6 @@ gpgv-2.4.4-r0 installed size:
 
 gpgv-2.4.4-r0 license:
 GPL-3.0-or-later
-
-```
-
-### `apk` package: `jansson`
-
-```console
-jansson-2.14-r4 description:
-lightweight JSON library
-
-jansson-2.14-r4 webpage:
-http://www.digip.org/jansson/
-
-jansson-2.14-r4 installed size:
-64 KiB
-
-jansson-2.14-r4 license:
-MIT
 
 ```
 
@@ -685,23 +651,6 @@ libfontenc-1.1.7-r4 installed size:
 
 libfontenc-1.1.7-r4 license:
 MIT
-
-```
-
-### `apk` package: `libgcc`
-
-```console
-libgcc-13.2.1_git20231014-r0 description:
-GNU C compiler runtime libraries
-
-libgcc-13.2.1_git20231014-r0 webpage:
-https://gcc.gnu.org
-
-libgcc-13.2.1_git20231014-r0 installed size:
-152 KiB
-
-libgcc-13.2.1_git20231014-r0 license:
-GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -872,23 +821,6 @@ libssl3-3.1.4-r5 installed size:
 
 libssl3-3.1.4-r5 license:
 Apache-2.0
-
-```
-
-### `apk` package: `libstdc++`
-
-```console
-libstdc++-13.2.1_git20231014-r0 description:
-GNU C++ standard runtime library
-
-libstdc++-13.2.1_git20231014-r0 webpage:
-https://gcc.gnu.org
-
-libstdc++-13.2.1_git20231014-r0 installed size:
-2652 KiB
-
-libstdc++-13.2.1_git20231014-r0 license:
-GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -1212,22 +1144,5 @@ zlib-1.3.1-r0 installed size:
 
 zlib-1.3.1-r0 license:
 Zlib
-
-```
-
-### `apk` package: `zstd-libs`
-
-```console
-zstd-libs-1.5.5-r8 description:
-Zstandard - Fast real-time compression algorithm (libraries)
-
-zstd-libs-1.5.5-r8 webpage:
-https://www.zstd.net/
-
-zstd-libs-1.5.5-r8 installed size:
-712 KiB
-
-zstd-libs-1.5.5-r8 license:
-BSD-3-Clause OR GPL-2.0-or-later
 
 ```
