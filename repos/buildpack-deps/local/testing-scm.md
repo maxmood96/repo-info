@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d652704e9a00d957fc5de5a96e89b65a829acaccfa3de508ebcd9040d9ce0b6d`
-- Created: `2024-03-12T06:00:07.66067714Z`
-- Virtual Size: ~ 356.54 Mb  
+- Image ID: `sha256:129adc2f7a72789a1a148218ecde13379a552586ced05b0690a00e7c0044a5c9`
+- Created: `2024-03-30T21:40:19.302198118Z`
+- Virtual Size: ~ 356.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -313,11 +313,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/brotli/1.1.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/brotli/1.1.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `bzip2=1.0.8-5`
+### `dpkg` source package: `bzip2=1.0.8-5.1`
 
 Binary Packages:
 
-- `libbz2-1.0:amd64=1.0.8-5+b2`
+- `libbz2-1.0:amd64=1.0.8-5.1`
 
 Licenses: (parsed from: `/usr/share/doc/libbz2-1.0/copyright`)
 
@@ -327,7 +327,7 @@ Licenses: (parsed from: `/usr/share/doc/libbz2-1.0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris bzip2=1.0.8-5
+$ apt-get source -qq --print-uris bzip2=1.0.8-5.1
 'http://deb.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.8-5.1.dsc' bzip2_1.0.8-5.1.dsc 2189 SHA256:210e367658236ea084627394015d466554f1ed2353a5feee5756335dc56074e6
 'http://deb.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.8.orig.tar.gz' bzip2_1.0.8.orig.tar.gz 810029 SHA256:ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269
 'http://deb.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.8-5.1.debian.tar.bz2' bzip2_1.0.8-5.1.debian.tar.bz2 26823 SHA256:8d07df2356a8105cc1ad4a64eba54c89aeb732fdc285e845cea1f6f66dda432d
@@ -335,9 +335,9 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-5
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/bzip2/1.0.8-5/ (for browsing the source)
-- https://sources.debian.net/src/bzip2/1.0.8-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bzip2/1.0.8-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/bzip2/1.0.8-5.1/ (for browsing the source)
+- https://sources.debian.net/src/bzip2/1.0.8-5.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/bzip2/1.0.8-5.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ca-certificates=20240203`
 
@@ -1101,11 +1101,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/grep/3.11-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/grep/3.11-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gzip=1.12-1`
+### `dpkg` source package: `gzip=1.12-1.1`
 
 Binary Packages:
 
-- `gzip=1.12-1`
+- `gzip=1.12-1.1`
 
 Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 
@@ -1115,13 +1115,21 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gzip=1.12-1.1
+'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12-1.1.dsc' gzip_1.12-1.1.dsc 2167 SHA256:212bff0edd2ccbbf816d7168f46f81d714b57043c249411e2e2d0fd71c3d3e40
+'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12.orig.tar.xz' gzip_1.12.orig.tar.xz 825548 SHA256:ce5e03e519f637e1f814011ace35c4f87b33c0bbabeec35baf5fbd3479e91956
+'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12.orig.tar.xz.asc' gzip_1.12.orig.tar.xz.asc 833 SHA256:3ed9ab54452576e0be0d477c772c9f47baa36415133fef7dd1fcf7b15480ba32
+'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12-1.1.debian.tar.xz' gzip_1.12-1.1.debian.tar.xz 19244 SHA256:d48d5314c0255114f43964f78b87262299bbac840e5f511a078e2d2590937ad6
+```
 
-- http://snapshot.debian.org/package/gzip/1.12-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gzip/1.12-1.1/ (for browsing the source)
+- https://sources.debian.net/src/gzip/1.12-1.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gzip/1.12-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.23+nmu2`
 
@@ -1266,11 +1274,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libassuan/2.5.6-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libassuan/2.5.6-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libbsd=0.12.1-1`
+### `dpkg` source package: `libbsd=0.12.2-1`
 
 Binary Packages:
 
-- `libbsd0:amd64=0.12.1-1`
+- `libbsd0:amd64=0.12.2-1`
 
 Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 
@@ -1289,13 +1297,21 @@ Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 - `ISC-Original`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libbsd=0.12.2-1
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.2-1.dsc' libbsd_0.12.2-1.dsc 2347 SHA256:18bfe06bd7f6d5e3f77f7827bcf129014918952cdcd6102288afdae8120dc6c9
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.2.orig.tar.xz' libbsd_0.12.2.orig.tar.xz 446032 SHA256:b88cc9163d0c652aaf39a99991d974ddba1c3a9711db8f1b5838af2a14731014
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.2.orig.tar.xz.asc' libbsd_0.12.2.orig.tar.xz.asc 833 SHA256:620dc92f158ebe0a650c0e92214a8121b927276895dc9a1dcaa38f627fa0fcb0
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.2-1.debian.tar.xz' libbsd_0.12.2-1.debian.tar.xz 18612 SHA256:618f0d116e18729cb7d5b93095e112c429aad294993b4def2c0498761d4646e9
+```
 
-- http://snapshot.debian.org/package/libbsd/0.12.1-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libbsd/0.12.2-1/ (for browsing the source)
+- https://sources.debian.net/src/libbsd/0.12.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libbsd/0.12.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.8.4-2`
 
@@ -1908,11 +1924,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libtirpc/1.3.4+ds-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libtirpc/1.3.4+ds-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libunistring=1.1-2`
+### `dpkg` source package: `libunistring=1.2-1`
 
 Binary Packages:
 
-- `libunistring5:amd64=1.1-2`
+- `libunistring5:amd64=1.2-1`
 
 Licenses: (parsed from: `/usr/share/doc/libunistring5/copyright`)
 
@@ -1929,13 +1945,21 @@ Licenses: (parsed from: `/usr/share/doc/libunistring5/copyright`)
 - `LGPL-3+`
 - `X11`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libunistring=1.2-1
+'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.2-1.dsc' libunistring_1.2-1.dsc 2181 SHA256:5d951adce58920ab7e598f04b903f402382557ad102576d01184553437467dd6
+'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.2.orig.tar.xz' libunistring_1.2.orig.tar.xz 2502196 SHA256:632bd65ed74a881ca8a0309a1001c428bd1cbd5cd7ddbf8cedcd2e65f4dcdc44
+'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.2.orig.tar.xz.asc' libunistring_1.2.orig.tar.xz.asc 833 SHA256:91da3f033231a635dae9e0161c834b74e890e1eba19d4e5972b26c5c312ac2cb
+'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.2-1.debian.tar.xz' libunistring_1.2-1.debian.tar.xz 13656 SHA256:0605dbb77c072393abaa9e6ec8507d57d91f62aee4d7a7f968f295e4e9ab3bcf
+```
 
-- http://snapshot.debian.org/package/libunistring/1.1-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libunistring/1.2-1/ (for browsing the source)
+- https://sources.debian.net/src/libunistring/1.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libunistring/1.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxcrypt=1:4.4.36-4`
 
@@ -2070,12 +2094,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/media-types/10.1.0/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/media-types/10.1.0/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mercurial=6.6.3-1`
+### `dpkg` source package: `mercurial=6.7.1-1`
 
 Binary Packages:
 
-- `mercurial=6.6.3-1`
-- `mercurial-common=6.6.3-1`
+- `mercurial=6.7.1-1`
+- `mercurial-common=6.7.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/mercurial-common/copyright`)
 
@@ -2084,13 +2108,21 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris mercurial=6.7.1-1
+'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.7.1-1.dsc' mercurial_6.7.1-1.dsc 2806 SHA256:279b616ba076a593b7b46582447cc6fac9ccb94eaf770e1bd711f99bd6a79328
+'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.7.1.orig.tar.gz' mercurial_6.7.1.orig.tar.gz 8301644 SHA256:9b0eda5d0d0ddb8b31e9c76aa06fc55fd2ffb02bc3614de0b1437336b2fc1254
+'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.7.1.orig.tar.gz.asc' mercurial_6.7.1.orig.tar.gz.asc 659 SHA256:a2c6d434087f2b553371c0c2335a6a784c24de00acf44c752d746764f3aaec25
+'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.7.1-1.debian.tar.xz' mercurial_6.7.1-1.debian.tar.xz 69448 SHA256:6ec6c634811b3d82ce2fb4afa69a84c3d2dea7a8628a091aa55e296132c68ff1
+```
 
-- http://snapshot.debian.org/package/mercurial/6.6.3-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/mercurial/6.7.1-1/ (for browsing the source)
+- https://sources.debian.net/src/mercurial/6.7.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mercurial/6.7.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.4+20240113-1`
 
@@ -3201,38 +3233,44 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/xxhash/0.8.2-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/xxhash/0.8.2-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `xz-utils=5.6.0-0.2`
+### `dpkg` source package: `xz-utils=5.6.1+really5.4.5-1`
 
 Binary Packages:
 
-- `liblzma5:amd64=5.6.0-0.2`
+- `liblzma5:amd64=5.6.1+really5.4.5-1`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
-- `0BSD`
 - `Autoconf`
-- `CC-BY-SA-4.0`
-- `FSFUL`
-- `FSFULLR`
 - `GPL-2`
 - `GPL-2+`
 - `GPL-3`
-- `GPL-3.0-or-later-WITH-Autoconf-exception-macro`
+- `LGPL-2`
 - `LGPL-2.1`
 - `LGPL-2.1+`
 - `PD`
 - `PD-debian`
+- `config-h`
 - `noderivs`
 - `none`
+- `permissive-fsf`
 - `permissive-nowarranty`
+- `probably-PD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris xz-utils=5.6.1+really5.4.5-1
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1.dsc' xz-utils_5.6.1+really5.4.5-1.dsc 2679 SHA256:7d7ab95b2004b949a083b66190ad8dc8272fae32e04888027a2a40976844207c
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5.orig.tar.xz' xz-utils_5.6.1+really5.4.5.orig.tar.xz 1680520 SHA256:da9dec6c12cf2ecf269c31ab65b5de18e8e52b96f35d5bcd08c12b43e6878803
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1.debian.tar.xz' xz-utils_5.6.1+really5.4.5-1.debian.tar.xz 27232 SHA256:0c54c44098e31a529c942faff69f8367cfdd5e80212139fca9b7ee40e7f86a45
+```
 
-- http://snapshot.debian.org/package/xz-utils/5.6.0-0.2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/xz-utils/5.6.1+really5.4.5-1/ (for browsing the source)
+- https://sources.debian.net/src/xz-utils/5.6.1+really5.4.5-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xz-utils/5.6.1+really5.4.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.3.dfsg-3`
 
