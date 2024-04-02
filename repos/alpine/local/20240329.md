@@ -1,10 +1,10 @@
-# `alpine:20240315`
+# `alpine:20240329`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f9cc4fcfea4c10fdfff45f332c05315bfbea15d813e5eebd8670f4beaa34265`
-- Created: `2024-03-15T23:38:46.900053876Z`
-- Virtual Size: ~ 7.39 Mb  
+- Image ID: `sha256:49b3cb3043cd00b3911213a837d1559638376017483d2d4b9761ed12e50f4f3e`
+- Created: `2024-03-29T17:51:41.169866653Z`
+- Virtual Size: ~ 7.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -16,16 +16,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.6.2-r0 description:
+alpine-baselayout-3.6.3-r0 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.6.2-r0 webpage:
+alpine-baselayout-3.6.3-r0 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.6.2-r0 installed size:
+alpine-baselayout-3.6.3-r0 installed size:
 308 KiB
 
-alpine-baselayout-3.6.2-r0 license:
+alpine-baselayout-3.6.3-r0 license:
 GPL-2.0-only
 
 ```
@@ -33,16 +33,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.6.2-r0 description:
+alpine-baselayout-data-3.6.3-r0 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.6.2-r0 webpage:
+alpine-baselayout-data-3.6.3-r0 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-data-3.6.2-r0 installed size:
+alpine-baselayout-data-3.6.3-r0 installed size:
 76 KiB
 
-alpine-baselayout-data-3.6.2-r0 license:
+alpine-baselayout-data-3.6.3-r0 license:
 GPL-2.0-only
 
 ```
@@ -67,16 +67,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.1-r0 description:
+apk-tools-2.14.1-r1 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.1-r0 webpage:
+apk-tools-2.14.1-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.1-r0 installed size:
-304 KiB
+apk-tools-2.14.1-r1 installed size:
+296 KiB
 
-apk-tools-2.14.1-r0 license:
+apk-tools-2.14.1-r1 license:
 GPL-2.0-only
 
 ```
@@ -84,16 +84,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.36.1-r21 description:
+busybox-1.36.1-r24 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.36.1-r21 webpage:
+busybox-1.36.1-r24 webpage:
 https://busybox.net/
 
-busybox-1.36.1-r21 installed size:
-924 KiB
+busybox-1.36.1-r24 installed size:
+908 KiB
 
-busybox-1.36.1-r21 license:
+busybox-1.36.1-r24 license:
 GPL-2.0-only
 
 ```
@@ -101,16 +101,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.36.1-r21 description:
+busybox-binsh-1.36.1-r24 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.36.1-r21 webpage:
+busybox-binsh-1.36.1-r24 webpage:
 https://busybox.net/
 
-busybox-binsh-1.36.1-r21 installed size:
+busybox-binsh-1.36.1-r24 installed size:
 8192 B
 
-busybox-binsh-1.36.1-r21 license:
+busybox-binsh-1.36.1-r24 license:
 GPL-2.0-only
 
 ```
@@ -135,16 +135,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.5-r5 description:
+libcrypto3-3.2.1-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.1.5-r5 webpage:
+libcrypto3-3.2.1-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.5-r5 installed size:
-4508 KiB
+libcrypto3-3.2.1-r1 installed size:
+4644 KiB
 
-libcrypto3-3.1.5-r5 license:
+libcrypto3-3.2.1-r1 license:
 Apache-2.0
 
 ```
@@ -152,16 +152,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.5-r5 description:
+libssl3-3.2.1-r1 description:
 SSL shared libraries
 
-libssl3-3.1.5-r5 webpage:
+libssl3-3.2.1-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.5-r5 installed size:
-548 KiB
+libssl3-3.2.1-r1 installed size:
+760 KiB
 
-libssl3-3.1.5-r5 license:
+libssl3-3.2.1-r1 license:
 Apache-2.0
 
 ```
@@ -220,16 +220,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.36.1-r21 description:
+ssl_client-1.36.1-r24 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.36.1-r21 webpage:
+ssl_client-1.36.1-r24 webpage:
 https://busybox.net/
 
-ssl_client-1.36.1-r21 installed size:
+ssl_client-1.36.1-r24 installed size:
 28 KiB
 
-ssl_client-1.36.1-r21 license:
+ssl_client-1.36.1-r24 license:
 GPL-2.0-only
 
 ```
