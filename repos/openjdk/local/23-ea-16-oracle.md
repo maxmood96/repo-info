@@ -1,10 +1,10 @@
-# `openjdk:23-ea-15-jdk-oraclelinux9`
+# `openjdk:23-ea-16-jdk-oraclelinux9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:016259b562187773a9e1c51ada4bb0c38e4b62ee5819b94e51b3d8100b6f9c33`
-- Created: `2024-03-22T18:48:16Z`
-- Virtual Size: ~ 558.41 Mb  
+- Image ID: `sha256:70cec48b63d4a98c9f9c30841fd3bb50080a8944728f616a11fad86f00f4a6ca`
+- Created: `2024-03-29T00:48:11Z`
+- Virtual Size: ~ 566.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-23/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-23`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=23-ea+15`
+  - `JAVA_VERSION=23-ea+16`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -295,16 +295,16 @@ https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSourc
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/elfutils-0.189-3.el9.src.rpm
 ```
 
-### `rpm` package: `expat-2.5.0-1.el9.x86_64`
+### `rpm` package: `expat-2.5.0-1.el9_3.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url expat-2.5.0-1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/expat-2.5.0-1.el9.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/expat-2.5.0-1.el9.src.rpm
+$ dnf --quiet download --source --url expat-2.5.0-1.el9_3.1
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/expat-2.5.0-1.el9_3.1.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/expat-2.5.0-1.el9_3.1.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-14.el9.x86_64`
@@ -1364,16 +1364,16 @@ https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/p1
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/p11-kit-0.24.1-2.el9.src.rpm
 ```
 
-### `rpm` package: `pam-1.5.1-15.el9.x86_64`
+### `rpm` package: `pam-1.5.1-15.0.1.el9.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url pam-1.5.1-15.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/pam-1.5.1-15.el9.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/pam-1.5.1-15.el9.src.rpm
+$ dnf --quiet download --source --url pam-1.5.1-15.0.1.el9
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/pam-1.5.1-15.0.1.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/pam-1.5.1-15.0.1.el9.src.rpm
 ```
 
 ### `rpm` package: `pcre-8.44-3.el9.3.x86_64`
