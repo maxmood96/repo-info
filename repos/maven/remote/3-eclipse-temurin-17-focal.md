@@ -1,7 +1,7 @@
 ## `maven:3-eclipse-temurin-17-focal`
 
 ```console
-$ docker pull maven@sha256:0edd36bcc411e67743c61739be8090db40ada8a5e67f95687ab89e778a828a5a
+$ docker pull maven@sha256:2f289c24aee7974f25283fa3e382185df8e15374c2c1dbfdb21c4d791c437729
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -463,13 +463,13 @@ CMD ["mvn"]
 ### `maven:3-eclipse-temurin-17-focal` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:742cf4a9cb957456d4a11682e1f8622b8593bf52c17393d1a731a3e62ff847d3
+$ docker pull maven@sha256:c94690dc98a4974b327ac33a6ea0d3868ff758af57252cf8457713c07eed66cf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **218.7 MB (218676548 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae8bfc5f3b681077dc15bc1cbb846183ef88c466c4342573b899bc21e38c80ae`
+-	Image ID: `sha256:33d6f91e1564366afe715df7915dcc7d5299f75addc01564e99af680a6e1ca97`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -506,27 +506,27 @@ COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 25 Jan 2024 11:07:04 GMT
 CMD ["jshell"]
-# Mon, 11 Dec 2023 11:12:11 GMT
+# Mon, 18 Dec 2023 19:11:15 GMT
 RUN apt-get update   && apt-get install -y ca-certificates curl git --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 11 Dec 2023 11:12:11 GMT
+# Mon, 18 Dec 2023 19:11:15 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 11 Dec 2023 11:12:11 GMT
+# Mon, 18 Dec 2023 19:11:15 GMT
 COPY /usr/share/maven /usr/share/maven # buildkit
-# Mon, 11 Dec 2023 11:12:11 GMT
+# Mon, 18 Dec 2023 19:11:15 GMT
 COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Mon, 11 Dec 2023 11:12:11 GMT
+# Mon, 18 Dec 2023 19:11:15 GMT
 COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
-# Mon, 11 Dec 2023 11:12:11 GMT
+# Mon, 18 Dec 2023 19:11:15 GMT
 RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Mon, 11 Dec 2023 11:12:11 GMT
+# Mon, 18 Dec 2023 19:11:15 GMT
 ARG MAVEN_VERSION=3.9.6
-# Mon, 11 Dec 2023 11:12:11 GMT
+# Mon, 18 Dec 2023 19:11:15 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 11 Dec 2023 11:12:11 GMT
+# Mon, 18 Dec 2023 19:11:15 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 11 Dec 2023 11:12:11 GMT
+# Mon, 18 Dec 2023 19:11:15 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 11 Dec 2023 11:12:11 GMT
+# Mon, 18 Dec 2023 19:11:15 GMT
 CMD ["mvn"]
 ```
 
