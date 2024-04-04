@@ -1,10 +1,10 @@
-# `drupal:10.2.4-php8.3-fpm-alpine3.19`
+# `drupal:10.2.5-php8.3-fpm-alpine3.19`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ed9852f1f4a734afe40b65002159c26b1bb0c0373ba50c23811b954ab6a85a82`
-- Created: `2024-03-12T23:13:02Z`
-- Virtual Size: ~ 174.60 Mb  
+- Image ID: `sha256:b0406b1c40a8ab58b37a52535e1df8383d23351fb0281b009b584f239bdf853c`
+- Created: `2024-04-03T09:27:54Z`
+- Virtual Size: ~ 174.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.3.4.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.4.tar.xz.asc`
   - `PHP_SHA256=39a337036a546e5c28aea76cf424ac172db5156bd8a8fd85252e389409a5ba63`
-  - `DRUPAL_VERSION=10.2.4`
+  - `DRUPAL_VERSION=10.2.5`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `apk` (`.apk`-based packages)
