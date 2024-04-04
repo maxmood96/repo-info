@@ -1,7 +1,7 @@
 ## `mageia:latest`
 
 ```console
-$ docker pull mageia@sha256:dd1cefbc0f9abca27c549f67a7e15e2df71e39bda0bf33517b8e61099ba2c6a2
+$ docker pull mageia@sha256:a793154119e91bba6c85efcc7a600b5009752ee72ad7352e31dade0bc6f4ac78
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -41,29 +41,29 @@ CMD ["/bin/bash"]
 ### `mageia:latest` - linux; arm variant v7
 
 ```console
-$ docker pull mageia@sha256:3c7af3f6e7c0ff13a5bed95893d83a70670ea82496df8a7031330c2a0e7f3548
+$ docker pull mageia@sha256:cddb9667a689b0ef50f5453dbf1fc4ade8078f07e149d97cd4a7d5f031055f92
 ```
 
--	Docker Version: 19.03.12
+-	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **98.7 MB (98722394 bytes)**  
+-	Total Size: **91.8 MB (91785682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:007291ab74dba35b5326ba43f66ef87f64361ef9e505157615185ffac2d5fe0a`
+-	Image ID: `sha256:31ff5a335b938a7c537b1e6595116d0602cf84983125d21c24741664f648b449`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 10 May 2019 23:52:32 GMT
-MAINTAINER "Juan Luis Baptiste" <juancho@mageia.org>
-# Thu, 08 Apr 2021 18:59:48 GMT
-ADD file:1d85a62b5307305b3ac2a98bbe876a81bcf28d9535186ac0e9d1d3be9427591b in / 
-# Thu, 08 Apr 2021 18:59:50 GMT
+# Thu, 04 Apr 2024 02:55:44 GMT
+LABEL maintainer=Juan Luis Baptiste <juancho@mageia.org>
+# Thu, 04 Apr 2024 02:55:53 GMT
+ADD file:0ab5250d532c7724419c18eb34862c1c0923b4a9598fc93a7976246d04d1de9a in / 
+# Thu, 04 Apr 2024 02:55:54 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:c95c4479265a26554c2c1e0a3014d17b2c7dd17051a554e256a13b1952e4194f`  
-		Last Modified: Thu, 08 Apr 2021 19:02:03 GMT  
-		Size: 98.7 MB (98722394 bytes)  
+	-	`sha256:f216afdcd8d977f49bc38485108f57d6c4a4b563f1657defb949e06d072a79ea`  
+		Last Modified: Thu, 04 Apr 2024 02:56:49 GMT  
+		Size: 91.8 MB (91785682 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mageia:latest` - linux; arm64 variant v8

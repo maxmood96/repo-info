@@ -1,7 +1,7 @@
 ## `mageia:cauldron`
 
 ```console
-$ docker pull mageia@sha256:ab8621e4e7e5b80984286517512ce5e5e6e7e1c869118dffb1000965284ec588
+$ docker pull mageia@sha256:1a41a7baed681f578090b0adf77c4768e0eea7935659e272c05bbe0114bc4bf2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -41,29 +41,29 @@ CMD ["/bin/bash"]
 ### `mageia:cauldron` - linux; arm variant v7
 
 ```console
-$ docker pull mageia@sha256:5d0b02c7042da09eefe17487369d72620530b21c50bc2df1d4da8744670f57ff
+$ docker pull mageia@sha256:8a78df3280db93ed976aab8f36bbbdd338482df0c0e962b7f6a38920177f5329
 ```
 
--	Docker Version: 19.03.12
+-	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **99.6 MB (99644274 bytes)**  
+-	Total Size: **96.7 MB (96702853 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b2c9ab030502da023b8a5fabc60478c9b41eb69d2f52bce8cdd3ed68aa2d6a8`
+-	Image ID: `sha256:cc060b99e32ebe696ecd49d573b1f6e6fd40a58dbc97341aa2acd0f8cc4f0c20`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 10 May 2019 23:52:32 GMT
-MAINTAINER "Juan Luis Baptiste" <juancho@mageia.org>
-# Thu, 08 Apr 2021 19:01:09 GMT
-ADD file:07cf8e6fdfdac3035e1563ad16a17dc72386a58276c36b20367ae2241d848165 in / 
-# Thu, 08 Apr 2021 19:01:13 GMT
+# Thu, 04 Apr 2024 02:55:44 GMT
+LABEL maintainer=Juan Luis Baptiste <juancho@mageia.org>
+# Thu, 04 Apr 2024 02:56:24 GMT
+ADD file:3ca21207addc9453c31d79a5c27c53ccc03125b3915131d5436677de1a8915f3 in / 
+# Thu, 04 Apr 2024 02:56:26 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:7146c64058582eda58cd7025bcf2d86a943da07d48c146f907996dc572f56aa5`  
-		Last Modified: Thu, 08 Apr 2021 19:03:20 GMT  
-		Size: 99.6 MB (99644274 bytes)  
+	-	`sha256:474206c893fd0c52dc481e8783a0220062ca1a7f000b4e7aebe4a63eddb48a01`  
+		Last Modified: Thu, 04 Apr 2024 02:57:35 GMT  
+		Size: 96.7 MB (96702853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mageia:cauldron` - linux; arm64 variant v8
