@@ -2,106 +2,10 @@
 
 # Tags of `mageia`
 
--	[`mageia:7`](#mageia7)
 -	[`mageia:8`](#mageia8)
+-	[`mageia:9`](#mageia9)
 -	[`mageia:cauldron`](#mageiacauldron)
 -	[`mageia:latest`](#mageialatest)
-
-## `mageia:7`
-
-```console
-$ docker pull mageia@sha256:30a0be429b4c987bd57697382562aed95a33fc2ed6927239709334ce3a3f5f95
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 3
-	-	linux; amd64
-	-	linux; arm variant v7
-	-	linux; arm64 variant v8
-
-### `mageia:7` - linux; amd64
-
-```console
-$ docker pull mageia@sha256:f5a26c57f5f60a817cad323c1eeeba305ea5f7828c49ecd284abdb5ba851dc86
-```
-
--	Docker Version: 19.03.12
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.8 MB (101790982 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d4f79c43e24562ed859d373e53f598955bb91c727d41cbb2d8667d9327043797`
--	Default Command: `["\/bin\/bash"]`
-
-```dockerfile
-# Thu, 08 Apr 2021 19:22:32 GMT
-MAINTAINER "Juan Luis Baptiste" <juancho@mageia.org>
-# Thu, 08 Apr 2021 19:22:57 GMT
-ADD file:7816e97f0bcaf09a3e3a94e88111cb6e188a681b3113e5eb2edf13c50d1ca06f in / 
-# Thu, 08 Apr 2021 19:22:58 GMT
-CMD ["/bin/bash"]
-```
-
--	Layers:
-	-	`sha256:d515b204ceac4cd76c6293d199258b871820a4a6843a6745384b2fb22af44440`  
-		Last Modified: Thu, 08 Apr 2021 19:24:09 GMT  
-		Size: 101.8 MB (101790982 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `mageia:7` - linux; arm variant v7
-
-```console
-$ docker pull mageia@sha256:1611bdd9c1ecc6d337009690bb836c09d2e835ae29fddf1b1b561b58f1d1177a
-```
-
--	Docker Version: 19.03.12
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **91.2 MB (91222991 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89342603512f4fc7ae0af1571b8d2e24a5f157fd6a7fb565b5ef7ad7a830cc7e`
--	Default Command: `["\/bin\/bash"]`
-
-```dockerfile
-# Fri, 10 May 2019 23:52:32 GMT
-MAINTAINER "Juan Luis Baptiste" <juancho@mageia.org>
-# Thu, 08 Apr 2021 19:00:22 GMT
-ADD file:88915bd3cb5c5f5f8ecc3d520c3da2243baa431ed5528239735303282103aa7a in / 
-# Thu, 08 Apr 2021 19:00:28 GMT
-CMD ["/bin/bash"]
-```
-
--	Layers:
-	-	`sha256:7666fe2a0a4161a052cbfe34be01c545fd1a0b49cb7069dd1a21c0376dccc03c`  
-		Last Modified: Thu, 08 Apr 2021 19:02:40 GMT  
-		Size: 91.2 MB (91222991 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `mageia:7` - linux; arm64 variant v8
-
-```console
-$ docker pull mageia@sha256:f8c58ebb2c946647465b524166677b7e36774b7fb35b9df6547950beaa8f973e
-```
-
--	Docker Version: 19.03.12
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **97.6 MB (97593342 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60eee2243cdfe171f664a986e8b4092b08c33601e1d1560a063e24eb3182b7f1`
--	Default Command: `["\/bin\/bash"]`
-
-```dockerfile
-# Mon, 20 May 2019 22:51:25 GMT
-MAINTAINER "Juan Luis Baptiste" <juancho@mageia.org>
-# Thu, 08 Apr 2021 18:41:59 GMT
-ADD file:1646caa9d073a61893d13fc9a537f6185ec4ef26b9b5dd116cb1a6bd30eba192 in / 
-# Thu, 08 Apr 2021 18:42:05 GMT
-CMD ["/bin/bash"]
-```
-
--	Layers:
-	-	`sha256:618e086e95ae1e71fc76185eb9ad3d53ef6e3c466b65bf4b94a8692205192a4e`  
-		Last Modified: Thu, 08 Apr 2021 18:43:46 GMT  
-		Size: 97.6 MB (97593342 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mageia:8`
 
@@ -198,6 +102,10 @@ CMD ["/bin/bash"]
 		Last Modified: Thu, 08 Apr 2021 18:43:14 GMT  
 		Size: 103.5 MB (103482098 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mageia:9`
+
+**does not exist** (yet?)
 
 ## `mageia:cauldron`
 
