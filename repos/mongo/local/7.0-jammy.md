@@ -1,10 +1,10 @@
-# `mongo:7.0.7-jammy`
+# `mongo:7.0.8-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:24041ceefc56c2a051bd3a9a8397b319f6bcd62fff796647f2c1da0a201ab792`
-- Created: `2024-03-18T16:01:38Z`
-- Virtual Size: ~ 754.99 Mb  
+- Image ID: `sha256:fb4debd652389d87df781cd0da313bef78f90ed1dca45f3409b58364503e32d0`
+- Created: `2024-04-03T16:02:10Z`
+- Virtual Size: ~ 758.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=7.0`
-  - `MONGO_VERSION=7.0.7`
+  - `MONGO_VERSION=7.0.8`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -273,11 +273,11 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.15`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.16`
 
 Binary Packages:
 
-- `libcurl4:amd64=7.81.0-1ubuntu1.15`
+- `libcurl4:amd64=7.81.0-1ubuntu1.16`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 
@@ -288,9 +288,15 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.16
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.16.dsc' curl_7.81.0-1ubuntu1.16.dsc 3143 SHA512:2bd2da2215732d792fe614d83b4f208e6d51bd91c4e6a687f4ebcd25341d1e272e22d901a7a79b3ffc52d52bcdf7b3341de12bb104910a2a994f10c3b60dbdc6
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.16.debian.tar.xz' curl_7.81.0-1ubuntu1.16.debian.tar.xz 74060 SHA512:2ab57a71c69b2cf91a5b4170e0b46cbef2000ffecad24b0edda02c9c1fe9cde41016746ff0f799a17cb3c25fb155777ee3ce133ef2162ba2db733e6fac734231
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -1285,11 +1291,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-mongosh=2.2.0`
+### `dpkg` source package: `mongodb-mongosh=2.2.2`
 
 Binary Packages:
 
-- `mongodb-mongosh=2.2.0`
+- `mongodb-mongosh=2.2.2`
 
 Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 
@@ -1300,17 +1306,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=7.0.7`
+### `dpkg` source package: `mongodb-org=7.0.8`
 
 Binary Packages:
 
-- `mongodb-org=7.0.7`
-- `mongodb-org-database=7.0.7`
-- `mongodb-org-database-tools-extra=7.0.7`
-- `mongodb-org-mongos=7.0.7`
-- `mongodb-org-server=7.0.7`
-- `mongodb-org-shell=7.0.7`
-- `mongodb-org-tools=7.0.7`
+- `mongodb-org=7.0.8`
+- `mongodb-org-database=7.0.8`
+- `mongodb-org-database-tools-extra=7.0.8`
+- `mongodb-org-mongos=7.0.8`
+- `mongodb-org-server=7.0.8`
+- `mongodb-org-shell=7.0.8`
+- `mongodb-org-tools=7.0.8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
