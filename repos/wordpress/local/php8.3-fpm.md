@@ -1,10 +1,10 @@
-# `wordpress:6.4.3-php8.3-fpm`
+# `wordpress:6.5.0-php8.3-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1eccb2df9fdf47184f61cf3a11e9e32fb01ed9ee5d65bbf734f9bf9951851cc2`
-- Created: `2024-03-11T23:23:48Z`
-- Virtual Size: ~ 733.34 Mb  
+- Image ID: `sha256:5c38ee495fca330b0354b1fb17e814d9dd3b63db5f54fa2e6ae022797f7e45ce`
+- Created: `2024-04-02T19:05:43Z`
+- Virtual Size: ~ 740.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -4498,21 +4498,21 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/usrmerge/37~deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/usrmerge/37~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `util-linux=2.38.1-5`
+### `dpkg` source package: `util-linux=2.38.1-5+deb12u1`
 
 Binary Packages:
 
-- `bsdutils=1:2.38.1-5+b1`
-- `libblkid-dev:amd64=2.38.1-5+b1`
-- `libblkid1:amd64=2.38.1-5+b1`
-- `libmount-dev:amd64=2.38.1-5+b1`
-- `libmount1:amd64=2.38.1-5+b1`
-- `libsmartcols1:amd64=2.38.1-5+b1`
-- `libuuid1:amd64=2.38.1-5+b1`
-- `mount=2.38.1-5+b1`
-- `util-linux=2.38.1-5+b1`
-- `util-linux-extra=2.38.1-5+b1`
-- `uuid-dev:amd64=2.38.1-5+b1`
+- `bsdutils=1:2.38.1-5+deb12u1`
+- `libblkid-dev:amd64=2.38.1-5+deb12u1`
+- `libblkid1:amd64=2.38.1-5+deb12u1`
+- `libmount-dev:amd64=2.38.1-5+deb12u1`
+- `libmount1:amd64=2.38.1-5+deb12u1`
+- `libsmartcols1:amd64=2.38.1-5+deb12u1`
+- `libuuid1:amd64=2.38.1-5+deb12u1`
+- `mount=2.38.1-5+deb12u1`
+- `util-linux=2.38.1-5+deb12u1`
+- `util-linux-extra=2.38.1-5+deb12u1`
+- `uuid-dev:amd64=2.38.1-5+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid-dev/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount-dev/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/util-linux-extra/copyright`, `/usr/share/doc/uuid-dev/copyright`)
 
@@ -4536,7 +4536,7 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.38.1-5
+$ apt-get source -qq --print-uris util-linux=2.38.1-5+deb12u1
 'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u1.dsc' util-linux_2.38.1-5+deb12u1.dsc 4579 SHA256:980d9d9d9e56c12c067c281d8e4e6b1314537d8dac408b9f933e033da535d455
 'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.38.1.orig.tar.xz' util-linux_2.38.1.orig.tar.xz 7495904 SHA256:60492a19b44e6cf9a3ddff68325b333b8b52b6c59ce3ebd6a0ecaa4c5117e84f
 'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u1.debian.tar.xz' util-linux_2.38.1-5+deb12u1.debian.tar.xz 118748 SHA256:751272cc0bbf1ed84a5a3378798aac17164de12f449575cc979b5b294f27d305
@@ -4544,9 +4544,9 @@ $ apt-get source -qq --print-uris util-linux=2.38.1-5
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/util-linux/2.38.1-5/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.38.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.38.1-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/util-linux/2.38.1-5+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.38.1-5+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.38.1-5+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `x265=3.5-2`
 

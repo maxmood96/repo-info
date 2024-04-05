@@ -1,10 +1,10 @@
-# `wordpress:6.4.3-php8.1-fpm-alpine`
+# `wordpress:6.5.0-php8.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4f549a0e75844b4a93252cb96c88124799f75502daf3d03ddb26aed8ae09d317`
-- Created: `2024-03-11T23:23:48Z`
-- Virtual Size: ~ 250.77 Mb  
+- Image ID: `sha256:62560b9e0506b3ac5d0766bc89c1df1b47d041111f239485222ac15d41674855`
+- Created: `2024-04-02T19:05:43Z`
+- Virtual Size: ~ 251.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -401,16 +401,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.3-r0 description:
+gnutls-3.8.4-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.3-r0 webpage:
+gnutls-3.8.4-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.3-r0 installed size:
-1856 KiB
+gnutls-3.8.4-r0 installed size:
+1876 KiB
 
-gnutls-3.8.3-r0 license:
+gnutls-3.8.4-r0 license:
 LGPL-2.1-or-later
 
 ```
