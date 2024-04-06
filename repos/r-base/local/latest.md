@@ -440,15 +440,13 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.7.1-1
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.7.1-1.dsc' curl_8.7.1-1.dsc 3398 SHA256:60f84e0bd6c1c96a58721505bcfd27585089acc86018c25dbe6b8ea094c3fbd5
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.7.1.orig.tar.gz' curl_8.7.1.orig.tar.gz 4462311 SHA256:f91249c87f68ea00cf27c44fdfa5a78423e41e71b7d408e5901a9896d905c495
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.7.1.orig.tar.gz.asc' curl_8.7.1.orig.tar.gz.asc 488 SHA256:f2abc438269f3fe37749941d91069f4972d339cae9b289e536257d90098dcd1f
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.7.1-1.debian.tar.xz' curl_8.7.1-1.debian.tar.xz 46556 SHA256:1c813e975d8692ff25428c922e3ff5223ff8a1d309b34e2eefa2dbf0f6f8f644
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/curl/8.7.1-1/
+
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-6`
 
@@ -2604,14 +2602,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.60.0-1
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.60.0-1.dsc' nghttp2_1.60.0-1.dsc 2531 SHA256:58a6c61623f906f15c28583bbead4bd5497290b49cd525da2aa933b1edbc730c
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.60.0.orig.tar.gz' nghttp2_1.60.0.orig.tar.gz 1063242 SHA256:3cc9403c64e0a133868f62132ff0884cd5dc567eee5bd7b2d03ac81293695d6b
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.60.0-1.debian.tar.xz' nghttp2_1.60.0-1.debian.tar.xz 38752 SHA256:6f7267938bb4a8e96680b12bb5b7b9135ac3ea35f804e3f92002d33a440b4b62
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/nghttp2/1.60.0-1/
+
 
 ### `dpkg` source package: `nlme=3.1.164-1`
 
@@ -3471,11 +3468,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tzdata=2024a-1
-'http://http.debian.net/debian/pool/main/t/tzdata/tzdata_2024a-1.dsc' tzdata_2024a-1.dsc 2429 SHA256:16e9e28383d581d0440a379f14e96786308976a409ce2c3f7b64a4b0a2935bda
-'http://http.debian.net/debian/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA256:0d0434459acbd2059a7a8da1f3304a84a86591f6ed69c6248fffa502b6edffe3
-'http://http.debian.net/debian/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA256:f64725f9f65419e7b009e3b95b75ea9516382d0be64aef63d78654d9c569ed0d
-'http://http.debian.net/debian/pool/main/t/tzdata/tzdata_2024a-1.debian.tar.xz' tzdata_2024a-1.debian.tar.xz 122116 SHA256:2cdad8bafca6cbd13fe0c8f41e7c45bc4a30cdde631b5bb8438f850670513855
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a-1.dsc' tzdata_2024a-1.dsc 2429 SHA256:16e9e28383d581d0440a379f14e96786308976a409ce2c3f7b64a4b0a2935bda
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA256:0d0434459acbd2059a7a8da1f3304a84a86591f6ed69c6248fffa502b6edffe3
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA256:f64725f9f65419e7b009e3b95b75ea9516382d0be64aef63d78654d9c569ed0d
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a-1.debian.tar.xz' tzdata_2024a-1.debian.tar.xz 122116 SHA256:2cdad8bafca6cbd13fe0c8f41e7c45bc4a30cdde631b5bb8438f850670513855
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/tzdata/2024a-1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2024a-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2024a-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0043+nmu1`
 
