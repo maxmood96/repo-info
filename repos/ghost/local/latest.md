@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:211b30ebeffe55236782c496b9f5ae3f06457953863ea05dd9a7d70fd430df30`
+- Image ID: `sha256:92b0c93ce4408d052c8810aa33606fed6e6416406f2cb6a06c66692fd5844f4d`
 - Created: `2024-04-01T08:19:13Z`
-- Virtual Size: ~ 592.73 Mb  
+- Virtual Size: ~ 592.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node","current/index.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=18.20.0`
+  - `NODE_VERSION=18.20.1`
   - `YARN_VERSION=1.22.19`
   - `GOSU_VERSION=1.16`
   - `NODE_ENV=production`
