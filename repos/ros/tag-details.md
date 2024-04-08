@@ -6406,7 +6406,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 
 ## `ros:rolling-perception-noble`
 
-**does not exist** (yet?)
+```console
+$ docker pull ros@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ros:rolling-ros-base`
 
@@ -6631,7 +6636,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 
 ## `ros:rolling-ros-base-noble`
 
-**does not exist** (yet?)
+```console
+$ docker pull ros@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ros:rolling-ros-core`
 
@@ -6808,4 +6818,9 @@ CMD ["bash"]
 
 ## `ros:rolling-ros-core-noble`
 
-**does not exist** (yet?)
+```console
+$ docker pull ros@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
