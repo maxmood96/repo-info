@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6fe64f3a27e0086cf28d100c5cdb3a54ffda116c006bf09dd047eb6da0d8d3b1`
-- Created: `2024-03-06T04:54:41.934503256Z`
-- Virtual Size: ~ 495.50 Mb  
+- Image ID: `sha256:302f159e7d317d553b7fd59e932a25a8fd7853acc7cd59a7c61c897546edcc82`
+- Created: `2024-04-09T01:13:01.319015254Z`
+- Virtual Size: ~ 519.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -16,4 +16,4 @@
   - `ROS_DISTRO=rolling`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
-  - `org.opencontainers.image.version=22.04`
+  - `org.opencontainers.image.version=24.04`
