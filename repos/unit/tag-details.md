@@ -2209,7 +2209,7 @@ $ docker pull unit@sha256:04033b9f62a96b780821d74699399f5a43cb3e49c7128f47a799ae
 ## `unit:1.32.1-php8.2`
 
 ```console
-$ docker pull unit@sha256:abfafea2097835baf11e3465ba9d7dbd3bd435cfd1e2d54628ced57f32185d2d
+$ docker pull unit@sha256:23f831d6389bb94afb3d6473fe7a9b743aa07b8af336e0a6d0396ab086fdeceb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2382,13 +2382,13 @@ $ docker pull unit@sha256:f7f0bb5e23622ba4a835ba8f621558b9b97f4abb2c363514298f07
 ### `unit:1.32.1-php8.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:36502db8392652f2b0dd9bdf2d2e0c7d563de36503e64b5062ea7d53e711818f
+$ docker pull unit@sha256:f3d5cb15ed72f6dcd04647d906df58fa8c1178bc431448517c8392804560ddd6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **170.6 MB (170646547 bytes)**  
+-	Total Size: **170.6 MB (170646607 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f72c856425290f7e36eed33d8ca54e2a4eb93c44c561a695b340b8d2f089dbb`
+-	Image ID: `sha256:9b63a129af9e9b4be4a27fbbbffd996977622491b3d99adfc37bf5076adc8a95`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -2425,15 +2425,15 @@ ENV PHP_SHA256=1cc4ef733ba58f6557db648012471f1916e5bac316303aa165535bedab08ee35
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 # Sat, 16 Mar 2024 01:15:02 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Sat, 16 Mar 2024 01:17:42 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Sat, 16 Mar 2024 01:17:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
+# Tue, 26 Mar 2024 13:57:15 GMT
 COPY multi:6edd033b037aa2d7697fc3b9f82c2f162146c1920a0c6d25a165dc56783204db in /usr/local/bin/ 
-# Sat, 16 Mar 2024 01:17:43 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 RUN docker-php-ext-enable sodium
-# Sat, 16 Mar 2024 01:17:43 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 16 Mar 2024 01:17:43 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 CMD ["php" "-a"]
 # Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.title=Unit (php8.2)
@@ -2490,59 +2490,59 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Sat, 16 Mar 2024 02:21:00 GMT  
 		Size: 492.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:110b469e79b240b58373b0e7cf0d4c91d9b9edf450f9d078de82b3cf2b1c1bad`  
-		Last Modified: Sat, 16 Mar 2024 02:21:04 GMT  
-		Size: 34.5 MB (34450895 bytes)  
+	-	`sha256:b040201a6d77dd26c1d3c5b7bd4087262badaa3138b190462749fb7301c21c10`  
+		Last Modified: Tue, 09 Apr 2024 00:29:53 GMT  
+		Size: 34.5 MB (34450887 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f84bcbff7cc92c8537963ebf4899e84501f84b1a2ed25b401eaa0ba812e574dc`  
-		Last Modified: Sat, 16 Mar 2024 02:21:01 GMT  
+	-	`sha256:a9532be4946f8a0c15ea61ba11ae0da6ff596f3c7e00f8dc579489116636c397`  
+		Last Modified: Tue, 09 Apr 2024 00:29:49 GMT  
 		Size: 2.5 KB (2450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cd90b5ac706badf931d6712666ef86ed1aad64ad8ce276e587696fee5e87f8f`  
-		Last Modified: Sat, 16 Mar 2024 02:21:00 GMT  
+	-	`sha256:d1d3e99242b72f3913ce06d6ff90910b3d03a86a3cd6ba51bee671ef0d3459d5`  
+		Last Modified: Tue, 09 Apr 2024 00:29:49 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:272809c7152bb08e9e1269d3b2dcb9a0f9e331abbe4fb665e03eac94fdeb8e19`  
-		Last Modified: Tue, 26 Mar 2024 19:20:53 GMT  
-		Size: 6.8 MB (6772979 bytes)  
+	-	`sha256:7e739db2af72b5b36a67eab7020320408a37aadc4732f2d59ffa4033c8ad4d8a`  
+		Last Modified: Tue, 09 Apr 2024 09:01:49 GMT  
+		Size: 6.8 MB (6773048 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3bb7c79a45843deef7925f186ca2b41696e6a220d3d2f57e2d319829698509d`  
-		Last Modified: Tue, 26 Mar 2024 19:20:53 GMT  
-		Size: 1.3 KB (1272 bytes)  
+	-	`sha256:49bee3a710c9f58919a6414da6dca0634d50744ac2b0fc309a67ce4f07903c3b`  
+		Last Modified: Tue, 09 Apr 2024 09:01:49 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4544cb0565c77e0cc55520cc4cd7858bbd24fea95b1283b094f15f4c556dcede`  
-		Last Modified: Tue, 26 Mar 2024 19:20:53 GMT  
+	-	`sha256:d5cbcd2025ef5aa9734e71059d85efe213f1c2f406a3285c199ff49ad706e38d`  
+		Last Modified: Tue, 09 Apr 2024 09:01:49 GMT  
 		Size: 1.5 KB (1455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:1.32.1-php8.2` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:fc8f6529104e1ce0da2e7055e5db0544c05309c8bfe0ae0e69c6d6911f2481ce
+$ docker pull unit@sha256:52c5890ab75e2ac423bf0abb614ac4057f5988a9df44f48ad473475bf265fe23
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6368613 bytes)**  
+-	Total Size: **6.4 MB (6370076 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bae304c2c2dcc64cf2d5c4c8ae3ff082e1b60459b31df280e53f6f53a78952e9`
+-	Image ID: `sha256:1937dc22e01c1c2708d98267c5569adb00fdd783f319a32ff922fbc3448e61c0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:451cf461419caa3a6480acb1211dc9111d5872b9dc96a4355084f256b5658d8c`  
-		Last Modified: Tue, 26 Mar 2024 19:20:53 GMT  
+	-	`sha256:a7ede84f7f516102e6d9f26abe29f29b5f111d9148db9032eb5329b348473ae8`  
+		Last Modified: Tue, 09 Apr 2024 09:01:49 GMT  
 		Size: 6.3 MB (6342576 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d4a2bb66ce267f708789627f62d73e41c05481464e3cbed2f726c018ece38cfb`  
-		Last Modified: Tue, 26 Mar 2024 19:20:52 GMT  
-		Size: 26.0 KB (26037 bytes)  
+	-	`sha256:a2131c632499cb407c24a1b2a258cda067451dc058178204ee00587da8113c42`  
+		Last Modified: Tue, 09 Apr 2024 09:01:48 GMT  
+		Size: 27.5 KB (27500 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:1.32.1-php8.3`
 
 ```console
-$ docker pull unit@sha256:b30a08dc7e6c166ee189f8dab659f7c6c8cc4727fbcad3ae5cba165508eee16a
+$ docker pull unit@sha256:0f887466c504d86900dbd27eabe885eec9e8a48a9660171cd89fc0a9f6696a7d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2715,13 +2715,13 @@ $ docker pull unit@sha256:0ba835a5f3d6400b98983b6f209c96258a25d598762b50895ed79d
 ### `unit:1.32.1-php8.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:81de6f22cf5cafa0089c9d92ac74d83f85c2afe52262a2e9d02f38cfd841c39e
+$ docker pull unit@sha256:896f5c18e33634368038506e550ab9c2958a62ad9705b0a97133f325677a526e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.4 MB (171396398 bytes)**  
+-	Total Size: **171.4 MB (171396562 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0a131c88b8372d012cb8220c9372015b0711772e0eb09a9f4dca5218c9faca1e`
+-	Image ID: `sha256:5f896d936c8f01b944f40282e3f3914f758b32b38fc6b879d5223acad8e53aec`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -2758,15 +2758,15 @@ ENV PHP_SHA256=39a337036a546e5c28aea76cf424ac172db5156bd8a8fd85252e389409a5ba63
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 # Sat, 16 Mar 2024 00:23:41 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Sat, 16 Mar 2024 00:26:36 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Sat, 16 Mar 2024 00:26:37 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
+# Tue, 26 Mar 2024 13:57:15 GMT
 COPY multi:6edd033b037aa2d7697fc3b9f82c2f162146c1920a0c6d25a165dc56783204db in /usr/local/bin/ 
-# Sat, 16 Mar 2024 00:26:37 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 RUN docker-php-ext-enable sodium
-# Sat, 16 Mar 2024 00:26:37 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 16 Mar 2024 00:26:37 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 CMD ["php" "-a"]
 # Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.title=Unit (php8.3)
@@ -2823,53 +2823,53 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Sat, 16 Mar 2024 02:16:10 GMT  
 		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b8eb7c8fa54f8df739803e75ef05d61301a25ec20f2b0df223ad6cc10100e31`  
-		Last Modified: Sat, 16 Mar 2024 02:16:14 GMT  
-		Size: 34.8 MB (34847659 bytes)  
+	-	`sha256:6056f8b379f0f8d8df5922a485862cdd7b1c8597a5c085f7962b9d0607fff5d9`  
+		Last Modified: Tue, 09 Apr 2024 00:24:57 GMT  
+		Size: 34.8 MB (34847775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e8b1d88121d7dce4ed78eeccd1d9678992d2f38232dd9f658231755469642d7`  
-		Last Modified: Sat, 16 Mar 2024 02:16:09 GMT  
-		Size: 2.4 KB (2446 bytes)  
+	-	`sha256:7e8b9cde10512377b1b5bc669393713f545d471dfc703da9a04d5eea8a349fbe`  
+		Last Modified: Tue, 09 Apr 2024 00:24:53 GMT  
+		Size: 2.4 KB (2449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c18bca7a442751913f41e4b10bd24944fcd36ccf9928ce0b8dd6e9032e45b7a`  
-		Last Modified: Sat, 16 Mar 2024 02:16:09 GMT  
+	-	`sha256:44c69423de15803d1fb9ced042cbd50cc937bf90278d602c888f7e4927f15cb7`  
+		Last Modified: Tue, 09 Apr 2024 00:24:53 GMT  
 		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45b63f78c5f989ec7af52603e521ae5ecf3956836a44595f8e5f06247e948c8d`  
-		Last Modified: Tue, 26 Mar 2024 19:19:50 GMT  
-		Size: 6.8 MB (6774186 bytes)  
+	-	`sha256:a1b655991762337685e5ad5f52f8324e5bb4100cee072b531194cb73260ca5f5`  
+		Last Modified: Tue, 09 Apr 2024 09:00:41 GMT  
+		Size: 6.8 MB (6774238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f583b110a142b645c536cc9d28804240695ab0f4276e90846e8fddc67292cdc`  
-		Last Modified: Tue, 26 Mar 2024 19:19:49 GMT  
-		Size: 1.3 KB (1273 bytes)  
+	-	`sha256:44e715007ba600fff24c8c0946d0c4492ba37b020850234ecea44e3f755d5195`  
+		Last Modified: Tue, 09 Apr 2024 09:00:42 GMT  
+		Size: 1.3 KB (1270 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c915ccaaef77d72d7f0007ba3e1438ddc78f72b9cb7023330fc3fbadde6af480`  
-		Last Modified: Tue, 26 Mar 2024 19:19:49 GMT  
-		Size: 1.5 KB (1457 bytes)  
+	-	`sha256:976610a4ed6c890ed506a87e52f05df554e111fff6fd6ca31da5468236d58336`  
+		Last Modified: Tue, 09 Apr 2024 09:00:42 GMT  
+		Size: 1.5 KB (1453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:1.32.1-php8.3` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:bdb24b8b1bb7b7073ad0573ec07739e5011b303500d647e49e768ac97289fdbb
+$ docker pull unit@sha256:67938af53571899bbb7c6fb25ee938c839face033cacc7dc8776a98e616ff566
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6369770 bytes)**  
+-	Total Size: **6.4 MB (6371233 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b6d84bb2adfba3c594748a4ac025f87997321dcad340a5abcb1b40207040999`
+-	Image ID: `sha256:f1e474f90c9f610b4daa805450066bec3ad1d1fa51252501d5125aca168dda90`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2c43b1bdae994310d49c2cfab3f65750a95bb3f0a4a2533b85429e022bc23852`  
-		Last Modified: Tue, 26 Mar 2024 19:19:50 GMT  
+	-	`sha256:128b3b9d51e99c1f48cf6a05277e4ee9f7036701dfcff8a830c3e557c109b895`  
+		Last Modified: Tue, 09 Apr 2024 09:00:42 GMT  
 		Size: 6.3 MB (6343154 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fcf2bea2f1ea1bedd19614dd17a9c3bd33f2a2defff052126323a37c84842221`  
-		Last Modified: Tue, 26 Mar 2024 19:19:49 GMT  
-		Size: 26.6 KB (26616 bytes)  
+	-	`sha256:765c5fe7c74328481b13c65f1f02a9afc732f48615912f54d3a722c7e9a28f26`  
+		Last Modified: Tue, 09 Apr 2024 09:00:41 GMT  
+		Size: 28.1 KB (28079 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:1.32.1-python3.11`
@@ -3497,7 +3497,7 @@ $ docker pull unit@sha256:2d80a2560ae278f5de23a1aa5c25b4f19c64f731d569887715ac93
 ## `unit:1.32.1-ruby3.2`
 
 ```console
-$ docker pull unit@sha256:037089b651c64657a0ffc62f64ba1d38c5ff26ec795010600562b9a22db47b7e
+$ docker pull unit@sha256:9ae98bbd805eb86cf14b4b0b8f6d9f2fbf6c748f10c56884a179d8f568b719d6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3652,48 +3652,48 @@ $ docker pull unit@sha256:bffe9d874826cb58c89fb1483eb5cbfccda8668df94a3edf98bf3d
 ### `unit:1.32.1-ruby3.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:c367df93493b9148a67979575e34ac367a363d3b9d51350861ed3975a0516724
+$ docker pull unit@sha256:483fc65a8f5e901d756863472a91df155f06470dee053396a021a59b4940c230
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **355.6 MB (355620392 bytes)**  
+-	Total Size: **355.6 MB (355620267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb03e60427aa1724a5ef7d0525fc2f6ba5629b5a3f0604fff1ccf694eb8501a9`
+-	Image ID: `sha256:9c7453a6dd304e0060f5096aebe97157b98d5f859a4f279dc1f3d2f5f160af15`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 12 Mar 2024 00:45:43 GMT
 ADD file:7cb312b5f676a37f5c3172be6eb95e30986e5da0dcf21985d2176f8a9a037012 in / 
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 12 Mar 2024 00:45:44 GMT
 CMD ["bash"]
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 12 Mar 2024 01:26:03 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 12 Mar 2024 01:26:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 12 Mar 2024 01:27:09 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	{ 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc # buildkit
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV LANG=C.UTF-8
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV RUBY_VERSION=3.2.3
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.3.tar.xz
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV RUBY_DOWNLOAD_SHA256=cfb231954b8c241043a538a4c682a1cca0b2016d835fee0b9e4a0be3ceba476b
-# Thu, 18 Jan 2024 12:03:17 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	; 	rm -rf /var/lib/apt/lists/*; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='0b2f6c8f85a3d02fde2efc0ced4657869d73fccfce59defb4e8d29233116e6db' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='673e336c81c65e6b16dcdede33f4cc9ed0f08bde1dbe7a935f113605292dc800' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.74.1' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	; 	rm -rf /var/lib/apt/lists/*; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='0b2f6c8f85a3d02fde2efc0ced4657869d73fccfce59defb4e8d29233116e6db' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='673e336c81c65e6b16dcdede33f4cc9ed0f08bde1dbe7a935f113605292dc800' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.74.1' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 1777 "$GEM_HOME" # buildkit
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 CMD ["irb"]
 # Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.title=Unit (ruby3.2)
@@ -3742,59 +3742,59 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 12 Mar 2024 01:36:09 GMT  
 		Size: 189.9 MB (189914923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:20b5ae0d9d7fabe57b5de95d0e305412a0277ee8e35843a07bef0b29587f339a`  
-		Last Modified: Wed, 13 Mar 2024 04:37:18 GMT  
-		Size: 198.0 B  
+	-	`sha256:753564aa5d7922448f61c9159f0363499f37599cb91cb0ea61c3d4a57517a569`  
+		Last Modified: Tue, 09 Apr 2024 07:10:30 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61af80f98d86af14c16f60049d59b65df3e01ef03b14a31437d037368e2acd4e`  
-		Last Modified: Wed, 13 Mar 2024 04:57:45 GMT  
-		Size: 34.4 MB (34393651 bytes)  
+	-	`sha256:f91acb2b453b6d337c2cee83bbfe7b50f6b0ed3544ee3244a0a2c61d353e27b2`  
+		Last Modified: Tue, 09 Apr 2024 07:20:24 GMT  
+		Size: 34.4 MB (34393585 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aab1b135a49f9e47e96e4d6b9e9115ebc9a3849a07da2bc8090a16caba05129c`  
-		Last Modified: Wed, 13 Mar 2024 04:57:43 GMT  
-		Size: 143.0 B  
+	-	`sha256:af9c4843f7de506bb2ba0c2f728b23cc362b6d855315064deb70af6afc2586c2`  
+		Last Modified: Tue, 09 Apr 2024 07:20:22 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a241749961ec8d850fcbdd37d007e2438936ea09ee5d20f76a77908cd3ca9854`  
-		Last Modified: Tue, 26 Mar 2024 19:55:53 GMT  
-		Size: 7.1 MB (7143141 bytes)  
+	-	`sha256:c526a08fa8f0e737ed8b117b6d7d233cbebfa27ce15492243806af2bfa3a2854`  
+		Last Modified: Tue, 09 Apr 2024 09:04:36 GMT  
+		Size: 7.1 MB (7143083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e38bfc77293f6408450f4cec22ddfaba3f342d0af4b455fff9ad8aab227dce6`  
-		Last Modified: Tue, 26 Mar 2024 19:55:52 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:c131332022eda6d654bba5241cfe64393d4505c28d803637a752172b02c86f51`  
+		Last Modified: Tue, 09 Apr 2024 09:04:35 GMT  
+		Size: 1.3 KB (1273 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff48104d0793dfde94822624e5743e03d76494d3623225a78ed7608d8204510b`  
-		Last Modified: Tue, 26 Mar 2024 19:55:52 GMT  
-		Size: 1.5 KB (1459 bytes)  
+	-	`sha256:b1a02217134b763c0798dfc225b75b49653e61997e0b083959b1192fad84e40e`  
+		Last Modified: Tue, 09 Apr 2024 09:04:35 GMT  
+		Size: 1.5 KB (1456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:1.32.1-ruby3.2` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:3ddd761c008f21edd88b6c62bd98cc61f01c5be424e99131d47f1ebac1c710f5
+$ docker pull unit@sha256:c63360dc09ec18a799fa8832f4f830979d11e4b600f7be3258e2a762a316a2dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.1 MB (15094613 bytes)**  
+-	Total Size: **15.1 MB (15094614 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:218ddff24cc4f400c2f0d27bb45489ebd2a47332a6dec95bf4e4d56938ec7371`
+-	Image ID: `sha256:6b22b5a989a4ac3edf38a229c7be0f1c50983114e8d55d988bf3b8fe727213b1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:861ad22fcd05fd3973e54b406fe782341fa753f7e135f51c854b6939fda569c2`  
-		Last Modified: Tue, 26 Mar 2024 19:55:53 GMT  
+	-	`sha256:813438b0f78727e7356fdd7a0d4d73d7bda7d148b9cd6d51421e08b9cee7b94f`  
+		Last Modified: Tue, 09 Apr 2024 09:04:36 GMT  
 		Size: 15.1 MB (15068889 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5f7b12b72f95fc8e12f8a965dc65a83a90b6124e7d7b4278d663adbcf3d7e95b`  
-		Last Modified: Tue, 26 Mar 2024 19:55:52 GMT  
-		Size: 25.7 KB (25724 bytes)  
+	-	`sha256:8170c596c7a5c5b91cd9455c2fbbe192871eb5ef09d91224d09f432e9cb351d6`  
+		Last Modified: Tue, 09 Apr 2024 09:04:35 GMT  
+		Size: 25.7 KB (25725 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:1.32.1-ruby3.3`
 
 ```console
-$ docker pull unit@sha256:88273d08ad8e4c8e5b14e1e8d3e6b49547dc0bd10a9106833222d371764a7a6a
+$ docker pull unit@sha256:01ce4a7c718ba145760ab6c8a3e0596b447114a542ed637fb96569074d3cd945
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3949,48 +3949,48 @@ $ docker pull unit@sha256:9c27f55f8b45fd8981568e63949c77ed174133b5d248ed523d48b1
 ### `unit:1.32.1-ruby3.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:cdbdf68572df75922b60a2e812b891ff54d2eb3ed11070b701ae2f9e6fb732f6
+$ docker pull unit@sha256:468b02fdd51895cec4945447a60abe8b8aa057e8ef14cf21797cdfde9db98994
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **357.5 MB (357454590 bytes)**  
+-	Total Size: **357.5 MB (357454955 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c400c0831a90b1faeddb615cab4aa5e05c3d51f390991409d1ae3fda1bbfd85a`
+-	Image ID: `sha256:15325cdf124806b765a56430685055ce6b3af742f7dc9c9cef65b7874fca2582`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 00:45:43 GMT
 ADD file:7cb312b5f676a37f5c3172be6eb95e30986e5da0dcf21985d2176f8a9a037012 in / 
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 00:45:44 GMT
 CMD ["bash"]
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 01:26:03 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 01:26:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 01:27:09 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	{ 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc # buildkit
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV LANG=C.UTF-8
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV RUBY_VERSION=3.3.0
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.0.tar.xz
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV RUBY_DOWNLOAD_SHA256=676b65a36e637e90f982b57b059189b3276b9045034dcd186a7e9078847b975b
-# Thu, 29 Feb 2024 21:45:14 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 	; 	rm -rf /var/lib/apt/lists/*; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='0b2f6c8f85a3d02fde2efc0ced4657869d73fccfce59defb4e8d29233116e6db' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='673e336c81c65e6b16dcdede33f4cc9ed0f08bde1dbe7a935f113605292dc800' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.74.1' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		wget -O 'arm64-fix.patch' 'https://github.com/ruby/ruby/commit/7f97e3540ce448b501bcbee15afac5f94bb22dd9.patch?full_index=1'; 	echo '86bc65415fd62cb2272a4df249f39fb79db15617ad05c540e05a22f02eae73b3 *arm64-fix.patch' | sha256sum --check --strict; 	patch -p1 -i arm64-fix.patch; 	rm arm64-fix.patch; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 	; 	rm -rf /var/lib/apt/lists/*; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='0b2f6c8f85a3d02fde2efc0ced4657869d73fccfce59defb4e8d29233116e6db' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='673e336c81c65e6b16dcdede33f4cc9ed0f08bde1dbe7a935f113605292dc800' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.74.1' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		wget -O 'arm64-fix.patch' 'https://github.com/ruby/ruby/commit/7f97e3540ce448b501bcbee15afac5f94bb22dd9.patch?full_index=1'; 	echo '86bc65415fd62cb2272a4df249f39fb79db15617ad05c540e05a22f02eae73b3 *arm64-fix.patch' | sha256sum --check --strict; 	patch -p1 -i arm64-fix.patch; 	rm arm64-fix.patch; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 1777 "$GEM_HOME" # buildkit
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 CMD ["irb"]
 # Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.title=Unit (ruby3.3)
@@ -4039,52 +4039,52 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 12 Mar 2024 01:36:09 GMT  
 		Size: 189.9 MB (189914923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:20b5ae0d9d7fabe57b5de95d0e305412a0277ee8e35843a07bef0b29587f339a`  
-		Last Modified: Wed, 13 Mar 2024 04:37:18 GMT  
-		Size: 198.0 B  
+	-	`sha256:753564aa5d7922448f61c9159f0363499f37599cb91cb0ea61c3d4a57517a569`  
+		Last Modified: Tue, 09 Apr 2024 07:10:30 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:478de42b40a3ad7059861a43874fd871988de98df723a94c2f189f7434a2b9ed`  
-		Last Modified: Wed, 13 Mar 2024 04:37:19 GMT  
-		Size: 36.2 MB (36232957 bytes)  
+	-	`sha256:2f357e734a2622f5320e1ce7c1f8be1d981f0184dd35b500e9ee17727d7bdfb6`  
+		Last Modified: Tue, 09 Apr 2024 07:10:32 GMT  
+		Size: 36.2 MB (36233369 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09e73f51162cd0a0f2dc6ca10abce0f43b02c68ae6f783c6537471c8fc78a7a0`  
-		Last Modified: Wed, 13 Mar 2024 04:37:18 GMT  
+	-	`sha256:feb0357374923e0d97522fad313d992f37f967e545a048741dcd5be8c1242a1c`  
+		Last Modified: Tue, 09 Apr 2024 07:10:30 GMT  
 		Size: 145.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b3c5fdcc6f39fc545d1d14512f5a476d50d51bfc39360162c5e8b2b509188b1`  
-		Last Modified: Tue, 26 Mar 2024 19:54:39 GMT  
-		Size: 7.1 MB (7138037 bytes)  
+	-	`sha256:58e6a8f35f5954a0573a739a54d0a463fe72cd84a39435f8da1df1b481ebed38`  
+		Last Modified: Tue, 09 Apr 2024 09:03:20 GMT  
+		Size: 7.1 MB (7137988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4becc97fff4136346880a7a2abffc61929e1854098b40bc2a98fea0876dff6d5`  
-		Last Modified: Tue, 26 Mar 2024 19:54:38 GMT  
-		Size: 1.3 KB (1271 bytes)  
+	-	`sha256:11a61bc664aecbf74a4a51ac692fc74b1f753866de2bdeb29111183aae7504f4`  
+		Last Modified: Tue, 09 Apr 2024 09:03:20 GMT  
+		Size: 1.3 KB (1272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2390a55ed9704a3c4d39b8b8e24814598b5d13a498ed7ee05a5ba3bf372fa20c`  
-		Last Modified: Tue, 26 Mar 2024 19:54:38 GMT  
-		Size: 1.5 KB (1456 bytes)  
+	-	`sha256:b02d3e0f32425df72deef054cd2d82b44428e6c5059eec60793a117fa9ced305`  
+		Last Modified: Tue, 09 Apr 2024 09:03:20 GMT  
+		Size: 1.5 KB (1455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:1.32.1-ruby3.3` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:407b4509fe9b7b5758d6f60ae8450ac92351a0328fae651e49c5ab0b8a6924ee
+$ docker pull unit@sha256:ee10338374c20bc33bec2b8c9e0997c21be8a752a7c8351e304a595bcc5eb144
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.1 MB (15095715 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e224df5ef1c170f1ccb93bdd00806ba082bfd79f1f2a73856420b5e4bbe6d08`
+-	Image ID: `sha256:464ad692689f4aba4ef1173b6aa0d84bdcaa4cf44d16b5f9e269dfb271c21ec6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:df8bad2ae968ac87cc68e622213d7d22141aef8dfda155b6390c31c889544cd9`  
-		Last Modified: Tue, 26 Mar 2024 19:54:39 GMT  
+	-	`sha256:9001d74525ba12122607f618a9885a91e962bbdf479419d1c98ebba0992d23ee`  
+		Last Modified: Tue, 09 Apr 2024 09:03:21 GMT  
 		Size: 15.1 MB (15069404 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:976c25ff6bcd5be2eacdad55f0294f69c125905539d4baaa1b67bdcb35b272bf`  
-		Last Modified: Tue, 26 Mar 2024 19:54:38 GMT  
+	-	`sha256:501ff92ebfabfb28225b09b655da1070e6dd0688927772fafce5166a1ce00be2`  
+		Last Modified: Tue, 09 Apr 2024 09:03:20 GMT  
 		Size: 26.3 KB (26311 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8311,7 +8311,7 @@ $ docker pull unit@sha256:04033b9f62a96b780821d74699399f5a43cb3e49c7128f47a799ae
 ## `unit:php`
 
 ```console
-$ docker pull unit@sha256:b30a08dc7e6c166ee189f8dab659f7c6c8cc4727fbcad3ae5cba165508eee16a
+$ docker pull unit@sha256:0f887466c504d86900dbd27eabe885eec9e8a48a9660171cd89fc0a9f6696a7d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8484,13 +8484,13 @@ $ docker pull unit@sha256:0ba835a5f3d6400b98983b6f209c96258a25d598762b50895ed79d
 ### `unit:php` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:81de6f22cf5cafa0089c9d92ac74d83f85c2afe52262a2e9d02f38cfd841c39e
+$ docker pull unit@sha256:896f5c18e33634368038506e550ab9c2958a62ad9705b0a97133f325677a526e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.4 MB (171396398 bytes)**  
+-	Total Size: **171.4 MB (171396562 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0a131c88b8372d012cb8220c9372015b0711772e0eb09a9f4dca5218c9faca1e`
+-	Image ID: `sha256:5f896d936c8f01b944f40282e3f3914f758b32b38fc6b879d5223acad8e53aec`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -8527,15 +8527,15 @@ ENV PHP_SHA256=39a337036a546e5c28aea76cf424ac172db5156bd8a8fd85252e389409a5ba63
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 # Sat, 16 Mar 2024 00:23:41 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Sat, 16 Mar 2024 00:26:36 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Sat, 16 Mar 2024 00:26:37 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
+# Tue, 26 Mar 2024 13:57:15 GMT
 COPY multi:6edd033b037aa2d7697fc3b9f82c2f162146c1920a0c6d25a165dc56783204db in /usr/local/bin/ 
-# Sat, 16 Mar 2024 00:26:37 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 RUN docker-php-ext-enable sodium
-# Sat, 16 Mar 2024 00:26:37 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 16 Mar 2024 00:26:37 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 CMD ["php" "-a"]
 # Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.title=Unit (php8.3)
@@ -8592,59 +8592,59 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Sat, 16 Mar 2024 02:16:10 GMT  
 		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b8eb7c8fa54f8df739803e75ef05d61301a25ec20f2b0df223ad6cc10100e31`  
-		Last Modified: Sat, 16 Mar 2024 02:16:14 GMT  
-		Size: 34.8 MB (34847659 bytes)  
+	-	`sha256:6056f8b379f0f8d8df5922a485862cdd7b1c8597a5c085f7962b9d0607fff5d9`  
+		Last Modified: Tue, 09 Apr 2024 00:24:57 GMT  
+		Size: 34.8 MB (34847775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e8b1d88121d7dce4ed78eeccd1d9678992d2f38232dd9f658231755469642d7`  
-		Last Modified: Sat, 16 Mar 2024 02:16:09 GMT  
-		Size: 2.4 KB (2446 bytes)  
+	-	`sha256:7e8b9cde10512377b1b5bc669393713f545d471dfc703da9a04d5eea8a349fbe`  
+		Last Modified: Tue, 09 Apr 2024 00:24:53 GMT  
+		Size: 2.4 KB (2449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c18bca7a442751913f41e4b10bd24944fcd36ccf9928ce0b8dd6e9032e45b7a`  
-		Last Modified: Sat, 16 Mar 2024 02:16:09 GMT  
+	-	`sha256:44c69423de15803d1fb9ced042cbd50cc937bf90278d602c888f7e4927f15cb7`  
+		Last Modified: Tue, 09 Apr 2024 00:24:53 GMT  
 		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45b63f78c5f989ec7af52603e521ae5ecf3956836a44595f8e5f06247e948c8d`  
-		Last Modified: Tue, 26 Mar 2024 19:19:50 GMT  
-		Size: 6.8 MB (6774186 bytes)  
+	-	`sha256:a1b655991762337685e5ad5f52f8324e5bb4100cee072b531194cb73260ca5f5`  
+		Last Modified: Tue, 09 Apr 2024 09:00:41 GMT  
+		Size: 6.8 MB (6774238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f583b110a142b645c536cc9d28804240695ab0f4276e90846e8fddc67292cdc`  
-		Last Modified: Tue, 26 Mar 2024 19:19:49 GMT  
-		Size: 1.3 KB (1273 bytes)  
+	-	`sha256:44e715007ba600fff24c8c0946d0c4492ba37b020850234ecea44e3f755d5195`  
+		Last Modified: Tue, 09 Apr 2024 09:00:42 GMT  
+		Size: 1.3 KB (1270 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c915ccaaef77d72d7f0007ba3e1438ddc78f72b9cb7023330fc3fbadde6af480`  
-		Last Modified: Tue, 26 Mar 2024 19:19:49 GMT  
-		Size: 1.5 KB (1457 bytes)  
+	-	`sha256:976610a4ed6c890ed506a87e52f05df554e111fff6fd6ca31da5468236d58336`  
+		Last Modified: Tue, 09 Apr 2024 09:00:42 GMT  
+		Size: 1.5 KB (1453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:php` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:bdb24b8b1bb7b7073ad0573ec07739e5011b303500d647e49e768ac97289fdbb
+$ docker pull unit@sha256:67938af53571899bbb7c6fb25ee938c839face033cacc7dc8776a98e616ff566
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6369770 bytes)**  
+-	Total Size: **6.4 MB (6371233 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b6d84bb2adfba3c594748a4ac025f87997321dcad340a5abcb1b40207040999`
+-	Image ID: `sha256:f1e474f90c9f610b4daa805450066bec3ad1d1fa51252501d5125aca168dda90`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2c43b1bdae994310d49c2cfab3f65750a95bb3f0a4a2533b85429e022bc23852`  
-		Last Modified: Tue, 26 Mar 2024 19:19:50 GMT  
+	-	`sha256:128b3b9d51e99c1f48cf6a05277e4ee9f7036701dfcff8a830c3e557c109b895`  
+		Last Modified: Tue, 09 Apr 2024 09:00:42 GMT  
 		Size: 6.3 MB (6343154 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fcf2bea2f1ea1bedd19614dd17a9c3bd33f2a2defff052126323a37c84842221`  
-		Last Modified: Tue, 26 Mar 2024 19:19:49 GMT  
-		Size: 26.6 KB (26616 bytes)  
+	-	`sha256:765c5fe7c74328481b13c65f1f02a9afc732f48615912f54d3a722c7e9a28f26`  
+		Last Modified: Tue, 09 Apr 2024 09:00:41 GMT  
+		Size: 28.1 KB (28079 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:php8`
 
 ```console
-$ docker pull unit@sha256:b30a08dc7e6c166ee189f8dab659f7c6c8cc4727fbcad3ae5cba165508eee16a
+$ docker pull unit@sha256:0f887466c504d86900dbd27eabe885eec9e8a48a9660171cd89fc0a9f6696a7d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8817,13 +8817,13 @@ $ docker pull unit@sha256:0ba835a5f3d6400b98983b6f209c96258a25d598762b50895ed79d
 ### `unit:php8` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:81de6f22cf5cafa0089c9d92ac74d83f85c2afe52262a2e9d02f38cfd841c39e
+$ docker pull unit@sha256:896f5c18e33634368038506e550ab9c2958a62ad9705b0a97133f325677a526e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.4 MB (171396398 bytes)**  
+-	Total Size: **171.4 MB (171396562 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0a131c88b8372d012cb8220c9372015b0711772e0eb09a9f4dca5218c9faca1e`
+-	Image ID: `sha256:5f896d936c8f01b944f40282e3f3914f758b32b38fc6b879d5223acad8e53aec`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -8860,15 +8860,15 @@ ENV PHP_SHA256=39a337036a546e5c28aea76cf424ac172db5156bd8a8fd85252e389409a5ba63
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 # Sat, 16 Mar 2024 00:23:41 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Sat, 16 Mar 2024 00:26:36 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Sat, 16 Mar 2024 00:26:37 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
+# Tue, 26 Mar 2024 13:57:15 GMT
 COPY multi:6edd033b037aa2d7697fc3b9f82c2f162146c1920a0c6d25a165dc56783204db in /usr/local/bin/ 
-# Sat, 16 Mar 2024 00:26:37 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 RUN docker-php-ext-enable sodium
-# Sat, 16 Mar 2024 00:26:37 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 16 Mar 2024 00:26:37 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 CMD ["php" "-a"]
 # Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.title=Unit (php8.3)
@@ -8925,59 +8925,59 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Sat, 16 Mar 2024 02:16:10 GMT  
 		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b8eb7c8fa54f8df739803e75ef05d61301a25ec20f2b0df223ad6cc10100e31`  
-		Last Modified: Sat, 16 Mar 2024 02:16:14 GMT  
-		Size: 34.8 MB (34847659 bytes)  
+	-	`sha256:6056f8b379f0f8d8df5922a485862cdd7b1c8597a5c085f7962b9d0607fff5d9`  
+		Last Modified: Tue, 09 Apr 2024 00:24:57 GMT  
+		Size: 34.8 MB (34847775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e8b1d88121d7dce4ed78eeccd1d9678992d2f38232dd9f658231755469642d7`  
-		Last Modified: Sat, 16 Mar 2024 02:16:09 GMT  
-		Size: 2.4 KB (2446 bytes)  
+	-	`sha256:7e8b9cde10512377b1b5bc669393713f545d471dfc703da9a04d5eea8a349fbe`  
+		Last Modified: Tue, 09 Apr 2024 00:24:53 GMT  
+		Size: 2.4 KB (2449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c18bca7a442751913f41e4b10bd24944fcd36ccf9928ce0b8dd6e9032e45b7a`  
-		Last Modified: Sat, 16 Mar 2024 02:16:09 GMT  
+	-	`sha256:44c69423de15803d1fb9ced042cbd50cc937bf90278d602c888f7e4927f15cb7`  
+		Last Modified: Tue, 09 Apr 2024 00:24:53 GMT  
 		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45b63f78c5f989ec7af52603e521ae5ecf3956836a44595f8e5f06247e948c8d`  
-		Last Modified: Tue, 26 Mar 2024 19:19:50 GMT  
-		Size: 6.8 MB (6774186 bytes)  
+	-	`sha256:a1b655991762337685e5ad5f52f8324e5bb4100cee072b531194cb73260ca5f5`  
+		Last Modified: Tue, 09 Apr 2024 09:00:41 GMT  
+		Size: 6.8 MB (6774238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f583b110a142b645c536cc9d28804240695ab0f4276e90846e8fddc67292cdc`  
-		Last Modified: Tue, 26 Mar 2024 19:19:49 GMT  
-		Size: 1.3 KB (1273 bytes)  
+	-	`sha256:44e715007ba600fff24c8c0946d0c4492ba37b020850234ecea44e3f755d5195`  
+		Last Modified: Tue, 09 Apr 2024 09:00:42 GMT  
+		Size: 1.3 KB (1270 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c915ccaaef77d72d7f0007ba3e1438ddc78f72b9cb7023330fc3fbadde6af480`  
-		Last Modified: Tue, 26 Mar 2024 19:19:49 GMT  
-		Size: 1.5 KB (1457 bytes)  
+	-	`sha256:976610a4ed6c890ed506a87e52f05df554e111fff6fd6ca31da5468236d58336`  
+		Last Modified: Tue, 09 Apr 2024 09:00:42 GMT  
+		Size: 1.5 KB (1453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:php8` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:bdb24b8b1bb7b7073ad0573ec07739e5011b303500d647e49e768ac97289fdbb
+$ docker pull unit@sha256:67938af53571899bbb7c6fb25ee938c839face033cacc7dc8776a98e616ff566
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6369770 bytes)**  
+-	Total Size: **6.4 MB (6371233 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b6d84bb2adfba3c594748a4ac025f87997321dcad340a5abcb1b40207040999`
+-	Image ID: `sha256:f1e474f90c9f610b4daa805450066bec3ad1d1fa51252501d5125aca168dda90`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2c43b1bdae994310d49c2cfab3f65750a95bb3f0a4a2533b85429e022bc23852`  
-		Last Modified: Tue, 26 Mar 2024 19:19:50 GMT  
+	-	`sha256:128b3b9d51e99c1f48cf6a05277e4ee9f7036701dfcff8a830c3e557c109b895`  
+		Last Modified: Tue, 09 Apr 2024 09:00:42 GMT  
 		Size: 6.3 MB (6343154 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fcf2bea2f1ea1bedd19614dd17a9c3bd33f2a2defff052126323a37c84842221`  
-		Last Modified: Tue, 26 Mar 2024 19:19:49 GMT  
-		Size: 26.6 KB (26616 bytes)  
+	-	`sha256:765c5fe7c74328481b13c65f1f02a9afc732f48615912f54d3a722c7e9a28f26`  
+		Last Modified: Tue, 09 Apr 2024 09:00:41 GMT  
+		Size: 28.1 KB (28079 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:php8.2`
 
 ```console
-$ docker pull unit@sha256:abfafea2097835baf11e3465ba9d7dbd3bd435cfd1e2d54628ced57f32185d2d
+$ docker pull unit@sha256:23f831d6389bb94afb3d6473fe7a9b743aa07b8af336e0a6d0396ab086fdeceb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9150,13 +9150,13 @@ $ docker pull unit@sha256:f7f0bb5e23622ba4a835ba8f621558b9b97f4abb2c363514298f07
 ### `unit:php8.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:36502db8392652f2b0dd9bdf2d2e0c7d563de36503e64b5062ea7d53e711818f
+$ docker pull unit@sha256:f3d5cb15ed72f6dcd04647d906df58fa8c1178bc431448517c8392804560ddd6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **170.6 MB (170646547 bytes)**  
+-	Total Size: **170.6 MB (170646607 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f72c856425290f7e36eed33d8ca54e2a4eb93c44c561a695b340b8d2f089dbb`
+-	Image ID: `sha256:9b63a129af9e9b4be4a27fbbbffd996977622491b3d99adfc37bf5076adc8a95`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -9193,15 +9193,15 @@ ENV PHP_SHA256=1cc4ef733ba58f6557db648012471f1916e5bac316303aa165535bedab08ee35
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 # Sat, 16 Mar 2024 01:15:02 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Sat, 16 Mar 2024 01:17:42 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Sat, 16 Mar 2024 01:17:42 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
+# Tue, 26 Mar 2024 13:57:15 GMT
 COPY multi:6edd033b037aa2d7697fc3b9f82c2f162146c1920a0c6d25a165dc56783204db in /usr/local/bin/ 
-# Sat, 16 Mar 2024 01:17:43 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 RUN docker-php-ext-enable sodium
-# Sat, 16 Mar 2024 01:17:43 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 16 Mar 2024 01:17:43 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 CMD ["php" "-a"]
 # Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.title=Unit (php8.2)
@@ -9258,59 +9258,59 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Sat, 16 Mar 2024 02:21:00 GMT  
 		Size: 492.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:110b469e79b240b58373b0e7cf0d4c91d9b9edf450f9d078de82b3cf2b1c1bad`  
-		Last Modified: Sat, 16 Mar 2024 02:21:04 GMT  
-		Size: 34.5 MB (34450895 bytes)  
+	-	`sha256:b040201a6d77dd26c1d3c5b7bd4087262badaa3138b190462749fb7301c21c10`  
+		Last Modified: Tue, 09 Apr 2024 00:29:53 GMT  
+		Size: 34.5 MB (34450887 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f84bcbff7cc92c8537963ebf4899e84501f84b1a2ed25b401eaa0ba812e574dc`  
-		Last Modified: Sat, 16 Mar 2024 02:21:01 GMT  
+	-	`sha256:a9532be4946f8a0c15ea61ba11ae0da6ff596f3c7e00f8dc579489116636c397`  
+		Last Modified: Tue, 09 Apr 2024 00:29:49 GMT  
 		Size: 2.5 KB (2450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cd90b5ac706badf931d6712666ef86ed1aad64ad8ce276e587696fee5e87f8f`  
-		Last Modified: Sat, 16 Mar 2024 02:21:00 GMT  
+	-	`sha256:d1d3e99242b72f3913ce06d6ff90910b3d03a86a3cd6ba51bee671ef0d3459d5`  
+		Last Modified: Tue, 09 Apr 2024 00:29:49 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:272809c7152bb08e9e1269d3b2dcb9a0f9e331abbe4fb665e03eac94fdeb8e19`  
-		Last Modified: Tue, 26 Mar 2024 19:20:53 GMT  
-		Size: 6.8 MB (6772979 bytes)  
+	-	`sha256:7e739db2af72b5b36a67eab7020320408a37aadc4732f2d59ffa4033c8ad4d8a`  
+		Last Modified: Tue, 09 Apr 2024 09:01:49 GMT  
+		Size: 6.8 MB (6773048 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3bb7c79a45843deef7925f186ca2b41696e6a220d3d2f57e2d319829698509d`  
-		Last Modified: Tue, 26 Mar 2024 19:20:53 GMT  
-		Size: 1.3 KB (1272 bytes)  
+	-	`sha256:49bee3a710c9f58919a6414da6dca0634d50744ac2b0fc309a67ce4f07903c3b`  
+		Last Modified: Tue, 09 Apr 2024 09:01:49 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4544cb0565c77e0cc55520cc4cd7858bbd24fea95b1283b094f15f4c556dcede`  
-		Last Modified: Tue, 26 Mar 2024 19:20:53 GMT  
+	-	`sha256:d5cbcd2025ef5aa9734e71059d85efe213f1c2f406a3285c199ff49ad706e38d`  
+		Last Modified: Tue, 09 Apr 2024 09:01:49 GMT  
 		Size: 1.5 KB (1455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:php8.2` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:fc8f6529104e1ce0da2e7055e5db0544c05309c8bfe0ae0e69c6d6911f2481ce
+$ docker pull unit@sha256:52c5890ab75e2ac423bf0abb614ac4057f5988a9df44f48ad473475bf265fe23
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6368613 bytes)**  
+-	Total Size: **6.4 MB (6370076 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bae304c2c2dcc64cf2d5c4c8ae3ff082e1b60459b31df280e53f6f53a78952e9`
+-	Image ID: `sha256:1937dc22e01c1c2708d98267c5569adb00fdd783f319a32ff922fbc3448e61c0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:451cf461419caa3a6480acb1211dc9111d5872b9dc96a4355084f256b5658d8c`  
-		Last Modified: Tue, 26 Mar 2024 19:20:53 GMT  
+	-	`sha256:a7ede84f7f516102e6d9f26abe29f29b5f111d9148db9032eb5329b348473ae8`  
+		Last Modified: Tue, 09 Apr 2024 09:01:49 GMT  
 		Size: 6.3 MB (6342576 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d4a2bb66ce267f708789627f62d73e41c05481464e3cbed2f726c018ece38cfb`  
-		Last Modified: Tue, 26 Mar 2024 19:20:52 GMT  
-		Size: 26.0 KB (26037 bytes)  
+	-	`sha256:a2131c632499cb407c24a1b2a258cda067451dc058178204ee00587da8113c42`  
+		Last Modified: Tue, 09 Apr 2024 09:01:48 GMT  
+		Size: 27.5 KB (27500 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:php8.3`
 
 ```console
-$ docker pull unit@sha256:b30a08dc7e6c166ee189f8dab659f7c6c8cc4727fbcad3ae5cba165508eee16a
+$ docker pull unit@sha256:0f887466c504d86900dbd27eabe885eec9e8a48a9660171cd89fc0a9f6696a7d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9483,13 +9483,13 @@ $ docker pull unit@sha256:0ba835a5f3d6400b98983b6f209c96258a25d598762b50895ed79d
 ### `unit:php8.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:81de6f22cf5cafa0089c9d92ac74d83f85c2afe52262a2e9d02f38cfd841c39e
+$ docker pull unit@sha256:896f5c18e33634368038506e550ab9c2958a62ad9705b0a97133f325677a526e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.4 MB (171396398 bytes)**  
+-	Total Size: **171.4 MB (171396562 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0a131c88b8372d012cb8220c9372015b0711772e0eb09a9f4dca5218c9faca1e`
+-	Image ID: `sha256:5f896d936c8f01b944f40282e3f3914f758b32b38fc6b879d5223acad8e53aec`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -9526,15 +9526,15 @@ ENV PHP_SHA256=39a337036a546e5c28aea76cf424ac172db5156bd8a8fd85252e389409a5ba63
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
 # Sat, 16 Mar 2024 00:23:41 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Sat, 16 Mar 2024 00:26:36 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Sat, 16 Mar 2024 00:26:37 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
+# Tue, 26 Mar 2024 13:57:15 GMT
 COPY multi:6edd033b037aa2d7697fc3b9f82c2f162146c1920a0c6d25a165dc56783204db in /usr/local/bin/ 
-# Sat, 16 Mar 2024 00:26:37 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 RUN docker-php-ext-enable sodium
-# Sat, 16 Mar 2024 00:26:37 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 16 Mar 2024 00:26:37 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 CMD ["php" "-a"]
 # Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.title=Unit (php8.3)
@@ -9591,53 +9591,53 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Sat, 16 Mar 2024 02:16:10 GMT  
 		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b8eb7c8fa54f8df739803e75ef05d61301a25ec20f2b0df223ad6cc10100e31`  
-		Last Modified: Sat, 16 Mar 2024 02:16:14 GMT  
-		Size: 34.8 MB (34847659 bytes)  
+	-	`sha256:6056f8b379f0f8d8df5922a485862cdd7b1c8597a5c085f7962b9d0607fff5d9`  
+		Last Modified: Tue, 09 Apr 2024 00:24:57 GMT  
+		Size: 34.8 MB (34847775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e8b1d88121d7dce4ed78eeccd1d9678992d2f38232dd9f658231755469642d7`  
-		Last Modified: Sat, 16 Mar 2024 02:16:09 GMT  
-		Size: 2.4 KB (2446 bytes)  
+	-	`sha256:7e8b9cde10512377b1b5bc669393713f545d471dfc703da9a04d5eea8a349fbe`  
+		Last Modified: Tue, 09 Apr 2024 00:24:53 GMT  
+		Size: 2.4 KB (2449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c18bca7a442751913f41e4b10bd24944fcd36ccf9928ce0b8dd6e9032e45b7a`  
-		Last Modified: Sat, 16 Mar 2024 02:16:09 GMT  
+	-	`sha256:44c69423de15803d1fb9ced042cbd50cc937bf90278d602c888f7e4927f15cb7`  
+		Last Modified: Tue, 09 Apr 2024 00:24:53 GMT  
 		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45b63f78c5f989ec7af52603e521ae5ecf3956836a44595f8e5f06247e948c8d`  
-		Last Modified: Tue, 26 Mar 2024 19:19:50 GMT  
-		Size: 6.8 MB (6774186 bytes)  
+	-	`sha256:a1b655991762337685e5ad5f52f8324e5bb4100cee072b531194cb73260ca5f5`  
+		Last Modified: Tue, 09 Apr 2024 09:00:41 GMT  
+		Size: 6.8 MB (6774238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f583b110a142b645c536cc9d28804240695ab0f4276e90846e8fddc67292cdc`  
-		Last Modified: Tue, 26 Mar 2024 19:19:49 GMT  
-		Size: 1.3 KB (1273 bytes)  
+	-	`sha256:44e715007ba600fff24c8c0946d0c4492ba37b020850234ecea44e3f755d5195`  
+		Last Modified: Tue, 09 Apr 2024 09:00:42 GMT  
+		Size: 1.3 KB (1270 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c915ccaaef77d72d7f0007ba3e1438ddc78f72b9cb7023330fc3fbadde6af480`  
-		Last Modified: Tue, 26 Mar 2024 19:19:49 GMT  
-		Size: 1.5 KB (1457 bytes)  
+	-	`sha256:976610a4ed6c890ed506a87e52f05df554e111fff6fd6ca31da5468236d58336`  
+		Last Modified: Tue, 09 Apr 2024 09:00:42 GMT  
+		Size: 1.5 KB (1453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:php8.3` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:bdb24b8b1bb7b7073ad0573ec07739e5011b303500d647e49e768ac97289fdbb
+$ docker pull unit@sha256:67938af53571899bbb7c6fb25ee938c839face033cacc7dc8776a98e616ff566
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6369770 bytes)**  
+-	Total Size: **6.4 MB (6371233 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b6d84bb2adfba3c594748a4ac025f87997321dcad340a5abcb1b40207040999`
+-	Image ID: `sha256:f1e474f90c9f610b4daa805450066bec3ad1d1fa51252501d5125aca168dda90`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2c43b1bdae994310d49c2cfab3f65750a95bb3f0a4a2533b85429e022bc23852`  
-		Last Modified: Tue, 26 Mar 2024 19:19:50 GMT  
+	-	`sha256:128b3b9d51e99c1f48cf6a05277e4ee9f7036701dfcff8a830c3e557c109b895`  
+		Last Modified: Tue, 09 Apr 2024 09:00:42 GMT  
 		Size: 6.3 MB (6343154 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fcf2bea2f1ea1bedd19614dd17a9c3bd33f2a2defff052126323a37c84842221`  
-		Last Modified: Tue, 26 Mar 2024 19:19:49 GMT  
-		Size: 26.6 KB (26616 bytes)  
+	-	`sha256:765c5fe7c74328481b13c65f1f02a9afc732f48615912f54d3a722c7e9a28f26`  
+		Last Modified: Tue, 09 Apr 2024 09:00:41 GMT  
+		Size: 28.1 KB (28079 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:python`
@@ -10883,7 +10883,7 @@ $ docker pull unit@sha256:2d80a2560ae278f5de23a1aa5c25b4f19c64f731d569887715ac93
 ## `unit:ruby`
 
 ```console
-$ docker pull unit@sha256:88273d08ad8e4c8e5b14e1e8d3e6b49547dc0bd10a9106833222d371764a7a6a
+$ docker pull unit@sha256:01ce4a7c718ba145760ab6c8a3e0596b447114a542ed637fb96569074d3cd945
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11038,48 +11038,48 @@ $ docker pull unit@sha256:9c27f55f8b45fd8981568e63949c77ed174133b5d248ed523d48b1
 ### `unit:ruby` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:cdbdf68572df75922b60a2e812b891ff54d2eb3ed11070b701ae2f9e6fb732f6
+$ docker pull unit@sha256:468b02fdd51895cec4945447a60abe8b8aa057e8ef14cf21797cdfde9db98994
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **357.5 MB (357454590 bytes)**  
+-	Total Size: **357.5 MB (357454955 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c400c0831a90b1faeddb615cab4aa5e05c3d51f390991409d1ae3fda1bbfd85a`
+-	Image ID: `sha256:15325cdf124806b765a56430685055ce6b3af742f7dc9c9cef65b7874fca2582`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 00:45:43 GMT
 ADD file:7cb312b5f676a37f5c3172be6eb95e30986e5da0dcf21985d2176f8a9a037012 in / 
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 00:45:44 GMT
 CMD ["bash"]
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 01:26:03 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 01:26:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 01:27:09 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	{ 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc # buildkit
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV LANG=C.UTF-8
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV RUBY_VERSION=3.3.0
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.0.tar.xz
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV RUBY_DOWNLOAD_SHA256=676b65a36e637e90f982b57b059189b3276b9045034dcd186a7e9078847b975b
-# Thu, 29 Feb 2024 21:45:14 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 	; 	rm -rf /var/lib/apt/lists/*; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='0b2f6c8f85a3d02fde2efc0ced4657869d73fccfce59defb4e8d29233116e6db' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='673e336c81c65e6b16dcdede33f4cc9ed0f08bde1dbe7a935f113605292dc800' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.74.1' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		wget -O 'arm64-fix.patch' 'https://github.com/ruby/ruby/commit/7f97e3540ce448b501bcbee15afac5f94bb22dd9.patch?full_index=1'; 	echo '86bc65415fd62cb2272a4df249f39fb79db15617ad05c540e05a22f02eae73b3 *arm64-fix.patch' | sha256sum --check --strict; 	patch -p1 -i arm64-fix.patch; 	rm arm64-fix.patch; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 	; 	rm -rf /var/lib/apt/lists/*; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='0b2f6c8f85a3d02fde2efc0ced4657869d73fccfce59defb4e8d29233116e6db' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='673e336c81c65e6b16dcdede33f4cc9ed0f08bde1dbe7a935f113605292dc800' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.74.1' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		wget -O 'arm64-fix.patch' 'https://github.com/ruby/ruby/commit/7f97e3540ce448b501bcbee15afac5f94bb22dd9.patch?full_index=1'; 	echo '86bc65415fd62cb2272a4df249f39fb79db15617ad05c540e05a22f02eae73b3 *arm64-fix.patch' | sha256sum --check --strict; 	patch -p1 -i arm64-fix.patch; 	rm arm64-fix.patch; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 1777 "$GEM_HOME" # buildkit
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 CMD ["irb"]
 # Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.title=Unit (ruby3.3)
@@ -11128,59 +11128,59 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 12 Mar 2024 01:36:09 GMT  
 		Size: 189.9 MB (189914923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:20b5ae0d9d7fabe57b5de95d0e305412a0277ee8e35843a07bef0b29587f339a`  
-		Last Modified: Wed, 13 Mar 2024 04:37:18 GMT  
-		Size: 198.0 B  
+	-	`sha256:753564aa5d7922448f61c9159f0363499f37599cb91cb0ea61c3d4a57517a569`  
+		Last Modified: Tue, 09 Apr 2024 07:10:30 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:478de42b40a3ad7059861a43874fd871988de98df723a94c2f189f7434a2b9ed`  
-		Last Modified: Wed, 13 Mar 2024 04:37:19 GMT  
-		Size: 36.2 MB (36232957 bytes)  
+	-	`sha256:2f357e734a2622f5320e1ce7c1f8be1d981f0184dd35b500e9ee17727d7bdfb6`  
+		Last Modified: Tue, 09 Apr 2024 07:10:32 GMT  
+		Size: 36.2 MB (36233369 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09e73f51162cd0a0f2dc6ca10abce0f43b02c68ae6f783c6537471c8fc78a7a0`  
-		Last Modified: Wed, 13 Mar 2024 04:37:18 GMT  
+	-	`sha256:feb0357374923e0d97522fad313d992f37f967e545a048741dcd5be8c1242a1c`  
+		Last Modified: Tue, 09 Apr 2024 07:10:30 GMT  
 		Size: 145.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b3c5fdcc6f39fc545d1d14512f5a476d50d51bfc39360162c5e8b2b509188b1`  
-		Last Modified: Tue, 26 Mar 2024 19:54:39 GMT  
-		Size: 7.1 MB (7138037 bytes)  
+	-	`sha256:58e6a8f35f5954a0573a739a54d0a463fe72cd84a39435f8da1df1b481ebed38`  
+		Last Modified: Tue, 09 Apr 2024 09:03:20 GMT  
+		Size: 7.1 MB (7137988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4becc97fff4136346880a7a2abffc61929e1854098b40bc2a98fea0876dff6d5`  
-		Last Modified: Tue, 26 Mar 2024 19:54:38 GMT  
-		Size: 1.3 KB (1271 bytes)  
+	-	`sha256:11a61bc664aecbf74a4a51ac692fc74b1f753866de2bdeb29111183aae7504f4`  
+		Last Modified: Tue, 09 Apr 2024 09:03:20 GMT  
+		Size: 1.3 KB (1272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2390a55ed9704a3c4d39b8b8e24814598b5d13a498ed7ee05a5ba3bf372fa20c`  
-		Last Modified: Tue, 26 Mar 2024 19:54:38 GMT  
-		Size: 1.5 KB (1456 bytes)  
+	-	`sha256:b02d3e0f32425df72deef054cd2d82b44428e6c5059eec60793a117fa9ced305`  
+		Last Modified: Tue, 09 Apr 2024 09:03:20 GMT  
+		Size: 1.5 KB (1455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:ruby` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:407b4509fe9b7b5758d6f60ae8450ac92351a0328fae651e49c5ab0b8a6924ee
+$ docker pull unit@sha256:ee10338374c20bc33bec2b8c9e0997c21be8a752a7c8351e304a595bcc5eb144
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.1 MB (15095715 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e224df5ef1c170f1ccb93bdd00806ba082bfd79f1f2a73856420b5e4bbe6d08`
+-	Image ID: `sha256:464ad692689f4aba4ef1173b6aa0d84bdcaa4cf44d16b5f9e269dfb271c21ec6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:df8bad2ae968ac87cc68e622213d7d22141aef8dfda155b6390c31c889544cd9`  
-		Last Modified: Tue, 26 Mar 2024 19:54:39 GMT  
+	-	`sha256:9001d74525ba12122607f618a9885a91e962bbdf479419d1c98ebba0992d23ee`  
+		Last Modified: Tue, 09 Apr 2024 09:03:21 GMT  
 		Size: 15.1 MB (15069404 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:976c25ff6bcd5be2eacdad55f0294f69c125905539d4baaa1b67bdcb35b272bf`  
-		Last Modified: Tue, 26 Mar 2024 19:54:38 GMT  
+	-	`sha256:501ff92ebfabfb28225b09b655da1070e6dd0688927772fafce5166a1ce00be2`  
+		Last Modified: Tue, 09 Apr 2024 09:03:20 GMT  
 		Size: 26.3 KB (26311 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:ruby3`
 
 ```console
-$ docker pull unit@sha256:88273d08ad8e4c8e5b14e1e8d3e6b49547dc0bd10a9106833222d371764a7a6a
+$ docker pull unit@sha256:01ce4a7c718ba145760ab6c8a3e0596b447114a542ed637fb96569074d3cd945
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11335,48 +11335,48 @@ $ docker pull unit@sha256:9c27f55f8b45fd8981568e63949c77ed174133b5d248ed523d48b1
 ### `unit:ruby3` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:cdbdf68572df75922b60a2e812b891ff54d2eb3ed11070b701ae2f9e6fb732f6
+$ docker pull unit@sha256:468b02fdd51895cec4945447a60abe8b8aa057e8ef14cf21797cdfde9db98994
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **357.5 MB (357454590 bytes)**  
+-	Total Size: **357.5 MB (357454955 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c400c0831a90b1faeddb615cab4aa5e05c3d51f390991409d1ae3fda1bbfd85a`
+-	Image ID: `sha256:15325cdf124806b765a56430685055ce6b3af742f7dc9c9cef65b7874fca2582`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 00:45:43 GMT
 ADD file:7cb312b5f676a37f5c3172be6eb95e30986e5da0dcf21985d2176f8a9a037012 in / 
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 00:45:44 GMT
 CMD ["bash"]
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 01:26:03 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 01:26:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 01:27:09 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	{ 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc # buildkit
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV LANG=C.UTF-8
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV RUBY_VERSION=3.3.0
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.0.tar.xz
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV RUBY_DOWNLOAD_SHA256=676b65a36e637e90f982b57b059189b3276b9045034dcd186a7e9078847b975b
-# Thu, 29 Feb 2024 21:45:14 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 	; 	rm -rf /var/lib/apt/lists/*; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='0b2f6c8f85a3d02fde2efc0ced4657869d73fccfce59defb4e8d29233116e6db' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='673e336c81c65e6b16dcdede33f4cc9ed0f08bde1dbe7a935f113605292dc800' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.74.1' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		wget -O 'arm64-fix.patch' 'https://github.com/ruby/ruby/commit/7f97e3540ce448b501bcbee15afac5f94bb22dd9.patch?full_index=1'; 	echo '86bc65415fd62cb2272a4df249f39fb79db15617ad05c540e05a22f02eae73b3 *arm64-fix.patch' | sha256sum --check --strict; 	patch -p1 -i arm64-fix.patch; 	rm arm64-fix.patch; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 	; 	rm -rf /var/lib/apt/lists/*; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='0b2f6c8f85a3d02fde2efc0ced4657869d73fccfce59defb4e8d29233116e6db' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='673e336c81c65e6b16dcdede33f4cc9ed0f08bde1dbe7a935f113605292dc800' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.74.1' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		wget -O 'arm64-fix.patch' 'https://github.com/ruby/ruby/commit/7f97e3540ce448b501bcbee15afac5f94bb22dd9.patch?full_index=1'; 	echo '86bc65415fd62cb2272a4df249f39fb79db15617ad05c540e05a22f02eae73b3 *arm64-fix.patch' | sha256sum --check --strict; 	patch -p1 -i arm64-fix.patch; 	rm arm64-fix.patch; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 1777 "$GEM_HOME" # buildkit
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 CMD ["irb"]
 # Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.title=Unit (ruby3.3)
@@ -11425,59 +11425,59 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 12 Mar 2024 01:36:09 GMT  
 		Size: 189.9 MB (189914923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:20b5ae0d9d7fabe57b5de95d0e305412a0277ee8e35843a07bef0b29587f339a`  
-		Last Modified: Wed, 13 Mar 2024 04:37:18 GMT  
-		Size: 198.0 B  
+	-	`sha256:753564aa5d7922448f61c9159f0363499f37599cb91cb0ea61c3d4a57517a569`  
+		Last Modified: Tue, 09 Apr 2024 07:10:30 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:478de42b40a3ad7059861a43874fd871988de98df723a94c2f189f7434a2b9ed`  
-		Last Modified: Wed, 13 Mar 2024 04:37:19 GMT  
-		Size: 36.2 MB (36232957 bytes)  
+	-	`sha256:2f357e734a2622f5320e1ce7c1f8be1d981f0184dd35b500e9ee17727d7bdfb6`  
+		Last Modified: Tue, 09 Apr 2024 07:10:32 GMT  
+		Size: 36.2 MB (36233369 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09e73f51162cd0a0f2dc6ca10abce0f43b02c68ae6f783c6537471c8fc78a7a0`  
-		Last Modified: Wed, 13 Mar 2024 04:37:18 GMT  
+	-	`sha256:feb0357374923e0d97522fad313d992f37f967e545a048741dcd5be8c1242a1c`  
+		Last Modified: Tue, 09 Apr 2024 07:10:30 GMT  
 		Size: 145.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b3c5fdcc6f39fc545d1d14512f5a476d50d51bfc39360162c5e8b2b509188b1`  
-		Last Modified: Tue, 26 Mar 2024 19:54:39 GMT  
-		Size: 7.1 MB (7138037 bytes)  
+	-	`sha256:58e6a8f35f5954a0573a739a54d0a463fe72cd84a39435f8da1df1b481ebed38`  
+		Last Modified: Tue, 09 Apr 2024 09:03:20 GMT  
+		Size: 7.1 MB (7137988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4becc97fff4136346880a7a2abffc61929e1854098b40bc2a98fea0876dff6d5`  
-		Last Modified: Tue, 26 Mar 2024 19:54:38 GMT  
-		Size: 1.3 KB (1271 bytes)  
+	-	`sha256:11a61bc664aecbf74a4a51ac692fc74b1f753866de2bdeb29111183aae7504f4`  
+		Last Modified: Tue, 09 Apr 2024 09:03:20 GMT  
+		Size: 1.3 KB (1272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2390a55ed9704a3c4d39b8b8e24814598b5d13a498ed7ee05a5ba3bf372fa20c`  
-		Last Modified: Tue, 26 Mar 2024 19:54:38 GMT  
-		Size: 1.5 KB (1456 bytes)  
+	-	`sha256:b02d3e0f32425df72deef054cd2d82b44428e6c5059eec60793a117fa9ced305`  
+		Last Modified: Tue, 09 Apr 2024 09:03:20 GMT  
+		Size: 1.5 KB (1455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:ruby3` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:407b4509fe9b7b5758d6f60ae8450ac92351a0328fae651e49c5ab0b8a6924ee
+$ docker pull unit@sha256:ee10338374c20bc33bec2b8c9e0997c21be8a752a7c8351e304a595bcc5eb144
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.1 MB (15095715 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e224df5ef1c170f1ccb93bdd00806ba082bfd79f1f2a73856420b5e4bbe6d08`
+-	Image ID: `sha256:464ad692689f4aba4ef1173b6aa0d84bdcaa4cf44d16b5f9e269dfb271c21ec6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:df8bad2ae968ac87cc68e622213d7d22141aef8dfda155b6390c31c889544cd9`  
-		Last Modified: Tue, 26 Mar 2024 19:54:39 GMT  
+	-	`sha256:9001d74525ba12122607f618a9885a91e962bbdf479419d1c98ebba0992d23ee`  
+		Last Modified: Tue, 09 Apr 2024 09:03:21 GMT  
 		Size: 15.1 MB (15069404 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:976c25ff6bcd5be2eacdad55f0294f69c125905539d4baaa1b67bdcb35b272bf`  
-		Last Modified: Tue, 26 Mar 2024 19:54:38 GMT  
+	-	`sha256:501ff92ebfabfb28225b09b655da1070e6dd0688927772fafce5166a1ce00be2`  
+		Last Modified: Tue, 09 Apr 2024 09:03:20 GMT  
 		Size: 26.3 KB (26311 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:ruby3.2`
 
 ```console
-$ docker pull unit@sha256:037089b651c64657a0ffc62f64ba1d38c5ff26ec795010600562b9a22db47b7e
+$ docker pull unit@sha256:9ae98bbd805eb86cf14b4b0b8f6d9f2fbf6c748f10c56884a179d8f568b719d6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11632,48 +11632,48 @@ $ docker pull unit@sha256:bffe9d874826cb58c89fb1483eb5cbfccda8668df94a3edf98bf3d
 ### `unit:ruby3.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:c367df93493b9148a67979575e34ac367a363d3b9d51350861ed3975a0516724
+$ docker pull unit@sha256:483fc65a8f5e901d756863472a91df155f06470dee053396a021a59b4940c230
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **355.6 MB (355620392 bytes)**  
+-	Total Size: **355.6 MB (355620267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb03e60427aa1724a5ef7d0525fc2f6ba5629b5a3f0604fff1ccf694eb8501a9`
+-	Image ID: `sha256:9c7453a6dd304e0060f5096aebe97157b98d5f859a4f279dc1f3d2f5f160af15`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 12 Mar 2024 00:45:43 GMT
 ADD file:7cb312b5f676a37f5c3172be6eb95e30986e5da0dcf21985d2176f8a9a037012 in / 
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 12 Mar 2024 00:45:44 GMT
 CMD ["bash"]
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 12 Mar 2024 01:26:03 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 12 Mar 2024 01:26:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 12 Mar 2024 01:27:09 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	{ 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc # buildkit
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV LANG=C.UTF-8
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV RUBY_VERSION=3.2.3
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.3.tar.xz
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV RUBY_DOWNLOAD_SHA256=cfb231954b8c241043a538a4c682a1cca0b2016d835fee0b9e4a0be3ceba476b
-# Thu, 18 Jan 2024 12:03:17 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	; 	rm -rf /var/lib/apt/lists/*; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='0b2f6c8f85a3d02fde2efc0ced4657869d73fccfce59defb4e8d29233116e6db' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='673e336c81c65e6b16dcdede33f4cc9ed0f08bde1dbe7a935f113605292dc800' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.74.1' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	; 	rm -rf /var/lib/apt/lists/*; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='0b2f6c8f85a3d02fde2efc0ced4657869d73fccfce59defb4e8d29233116e6db' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='673e336c81c65e6b16dcdede33f4cc9ed0f08bde1dbe7a935f113605292dc800' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.74.1' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 1777 "$GEM_HOME" # buildkit
-# Thu, 18 Jan 2024 12:03:17 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 CMD ["irb"]
 # Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.title=Unit (ruby3.2)
@@ -11722,59 +11722,59 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 12 Mar 2024 01:36:09 GMT  
 		Size: 189.9 MB (189914923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:20b5ae0d9d7fabe57b5de95d0e305412a0277ee8e35843a07bef0b29587f339a`  
-		Last Modified: Wed, 13 Mar 2024 04:37:18 GMT  
-		Size: 198.0 B  
+	-	`sha256:753564aa5d7922448f61c9159f0363499f37599cb91cb0ea61c3d4a57517a569`  
+		Last Modified: Tue, 09 Apr 2024 07:10:30 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61af80f98d86af14c16f60049d59b65df3e01ef03b14a31437d037368e2acd4e`  
-		Last Modified: Wed, 13 Mar 2024 04:57:45 GMT  
-		Size: 34.4 MB (34393651 bytes)  
+	-	`sha256:f91acb2b453b6d337c2cee83bbfe7b50f6b0ed3544ee3244a0a2c61d353e27b2`  
+		Last Modified: Tue, 09 Apr 2024 07:20:24 GMT  
+		Size: 34.4 MB (34393585 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aab1b135a49f9e47e96e4d6b9e9115ebc9a3849a07da2bc8090a16caba05129c`  
-		Last Modified: Wed, 13 Mar 2024 04:57:43 GMT  
-		Size: 143.0 B  
+	-	`sha256:af9c4843f7de506bb2ba0c2f728b23cc362b6d855315064deb70af6afc2586c2`  
+		Last Modified: Tue, 09 Apr 2024 07:20:22 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a241749961ec8d850fcbdd37d007e2438936ea09ee5d20f76a77908cd3ca9854`  
-		Last Modified: Tue, 26 Mar 2024 19:55:53 GMT  
-		Size: 7.1 MB (7143141 bytes)  
+	-	`sha256:c526a08fa8f0e737ed8b117b6d7d233cbebfa27ce15492243806af2bfa3a2854`  
+		Last Modified: Tue, 09 Apr 2024 09:04:36 GMT  
+		Size: 7.1 MB (7143083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e38bfc77293f6408450f4cec22ddfaba3f342d0af4b455fff9ad8aab227dce6`  
-		Last Modified: Tue, 26 Mar 2024 19:55:52 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:c131332022eda6d654bba5241cfe64393d4505c28d803637a752172b02c86f51`  
+		Last Modified: Tue, 09 Apr 2024 09:04:35 GMT  
+		Size: 1.3 KB (1273 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff48104d0793dfde94822624e5743e03d76494d3623225a78ed7608d8204510b`  
-		Last Modified: Tue, 26 Mar 2024 19:55:52 GMT  
-		Size: 1.5 KB (1459 bytes)  
+	-	`sha256:b1a02217134b763c0798dfc225b75b49653e61997e0b083959b1192fad84e40e`  
+		Last Modified: Tue, 09 Apr 2024 09:04:35 GMT  
+		Size: 1.5 KB (1456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:ruby3.2` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:3ddd761c008f21edd88b6c62bd98cc61f01c5be424e99131d47f1ebac1c710f5
+$ docker pull unit@sha256:c63360dc09ec18a799fa8832f4f830979d11e4b600f7be3258e2a762a316a2dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.1 MB (15094613 bytes)**  
+-	Total Size: **15.1 MB (15094614 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:218ddff24cc4f400c2f0d27bb45489ebd2a47332a6dec95bf4e4d56938ec7371`
+-	Image ID: `sha256:6b22b5a989a4ac3edf38a229c7be0f1c50983114e8d55d988bf3b8fe727213b1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:861ad22fcd05fd3973e54b406fe782341fa753f7e135f51c854b6939fda569c2`  
-		Last Modified: Tue, 26 Mar 2024 19:55:53 GMT  
+	-	`sha256:813438b0f78727e7356fdd7a0d4d73d7bda7d148b9cd6d51421e08b9cee7b94f`  
+		Last Modified: Tue, 09 Apr 2024 09:04:36 GMT  
 		Size: 15.1 MB (15068889 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5f7b12b72f95fc8e12f8a965dc65a83a90b6124e7d7b4278d663adbcf3d7e95b`  
-		Last Modified: Tue, 26 Mar 2024 19:55:52 GMT  
-		Size: 25.7 KB (25724 bytes)  
+	-	`sha256:8170c596c7a5c5b91cd9455c2fbbe192871eb5ef09d91224d09f432e9cb351d6`  
+		Last Modified: Tue, 09 Apr 2024 09:04:35 GMT  
+		Size: 25.7 KB (25725 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:ruby3.3`
 
 ```console
-$ docker pull unit@sha256:88273d08ad8e4c8e5b14e1e8d3e6b49547dc0bd10a9106833222d371764a7a6a
+$ docker pull unit@sha256:01ce4a7c718ba145760ab6c8a3e0596b447114a542ed637fb96569074d3cd945
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11929,48 +11929,48 @@ $ docker pull unit@sha256:9c27f55f8b45fd8981568e63949c77ed174133b5d248ed523d48b1
 ### `unit:ruby3.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:cdbdf68572df75922b60a2e812b891ff54d2eb3ed11070b701ae2f9e6fb732f6
+$ docker pull unit@sha256:468b02fdd51895cec4945447a60abe8b8aa057e8ef14cf21797cdfde9db98994
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **357.5 MB (357454590 bytes)**  
+-	Total Size: **357.5 MB (357454955 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c400c0831a90b1faeddb615cab4aa5e05c3d51f390991409d1ae3fda1bbfd85a`
+-	Image ID: `sha256:15325cdf124806b765a56430685055ce6b3af742f7dc9c9cef65b7874fca2582`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 00:45:43 GMT
 ADD file:7cb312b5f676a37f5c3172be6eb95e30986e5da0dcf21985d2176f8a9a037012 in / 
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 00:45:44 GMT
 CMD ["bash"]
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 01:26:03 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 01:26:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 12 Mar 2024 01:27:09 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	{ 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc # buildkit
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV LANG=C.UTF-8
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV RUBY_VERSION=3.3.0
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.0.tar.xz
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV RUBY_DOWNLOAD_SHA256=676b65a36e637e90f982b57b059189b3276b9045034dcd186a7e9078847b975b
-# Thu, 29 Feb 2024 21:45:14 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 	; 	rm -rf /var/lib/apt/lists/*; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='0b2f6c8f85a3d02fde2efc0ced4657869d73fccfce59defb4e8d29233116e6db' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='673e336c81c65e6b16dcdede33f4cc9ed0f08bde1dbe7a935f113605292dc800' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.74.1' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		wget -O 'arm64-fix.patch' 'https://github.com/ruby/ruby/commit/7f97e3540ce448b501bcbee15afac5f94bb22dd9.patch?full_index=1'; 	echo '86bc65415fd62cb2272a4df249f39fb79db15617ad05c540e05a22f02eae73b3 *arm64-fix.patch' | sha256sum --check --strict; 	patch -p1 -i arm64-fix.patch; 	rm arm64-fix.patch; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 	; 	rm -rf /var/lib/apt/lists/*; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='0b2f6c8f85a3d02fde2efc0ced4657869d73fccfce59defb4e8d29233116e6db' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.26.0/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='673e336c81c65e6b16dcdede33f4cc9ed0f08bde1dbe7a935f113605292dc800' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.74.1' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		wget -O 'arm64-fix.patch' 'https://github.com/ruby/ruby/commit/7f97e3540ce448b501bcbee15afac5f94bb22dd9.patch?full_index=1'; 	echo '86bc65415fd62cb2272a4df249f39fb79db15617ad05c540e05a22f02eae73b3 *arm64-fix.patch' | sha256sum --check --strict; 	patch -p1 -i arm64-fix.patch; 	rm arm64-fix.patch; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 1777 "$GEM_HOME" # buildkit
-# Thu, 29 Feb 2024 21:45:14 GMT
+# Tue, 26 Mar 2024 13:57:15 GMT
 CMD ["irb"]
 # Tue, 26 Mar 2024 13:57:15 GMT
 LABEL org.opencontainers.image.title=Unit (ruby3.3)
@@ -12019,52 +12019,52 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 12 Mar 2024 01:36:09 GMT  
 		Size: 189.9 MB (189914923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:20b5ae0d9d7fabe57b5de95d0e305412a0277ee8e35843a07bef0b29587f339a`  
-		Last Modified: Wed, 13 Mar 2024 04:37:18 GMT  
-		Size: 198.0 B  
+	-	`sha256:753564aa5d7922448f61c9159f0363499f37599cb91cb0ea61c3d4a57517a569`  
+		Last Modified: Tue, 09 Apr 2024 07:10:30 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:478de42b40a3ad7059861a43874fd871988de98df723a94c2f189f7434a2b9ed`  
-		Last Modified: Wed, 13 Mar 2024 04:37:19 GMT  
-		Size: 36.2 MB (36232957 bytes)  
+	-	`sha256:2f357e734a2622f5320e1ce7c1f8be1d981f0184dd35b500e9ee17727d7bdfb6`  
+		Last Modified: Tue, 09 Apr 2024 07:10:32 GMT  
+		Size: 36.2 MB (36233369 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09e73f51162cd0a0f2dc6ca10abce0f43b02c68ae6f783c6537471c8fc78a7a0`  
-		Last Modified: Wed, 13 Mar 2024 04:37:18 GMT  
+	-	`sha256:feb0357374923e0d97522fad313d992f37f967e545a048741dcd5be8c1242a1c`  
+		Last Modified: Tue, 09 Apr 2024 07:10:30 GMT  
 		Size: 145.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b3c5fdcc6f39fc545d1d14512f5a476d50d51bfc39360162c5e8b2b509188b1`  
-		Last Modified: Tue, 26 Mar 2024 19:54:39 GMT  
-		Size: 7.1 MB (7138037 bytes)  
+	-	`sha256:58e6a8f35f5954a0573a739a54d0a463fe72cd84a39435f8da1df1b481ebed38`  
+		Last Modified: Tue, 09 Apr 2024 09:03:20 GMT  
+		Size: 7.1 MB (7137988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4becc97fff4136346880a7a2abffc61929e1854098b40bc2a98fea0876dff6d5`  
-		Last Modified: Tue, 26 Mar 2024 19:54:38 GMT  
-		Size: 1.3 KB (1271 bytes)  
+	-	`sha256:11a61bc664aecbf74a4a51ac692fc74b1f753866de2bdeb29111183aae7504f4`  
+		Last Modified: Tue, 09 Apr 2024 09:03:20 GMT  
+		Size: 1.3 KB (1272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2390a55ed9704a3c4d39b8b8e24814598b5d13a498ed7ee05a5ba3bf372fa20c`  
-		Last Modified: Tue, 26 Mar 2024 19:54:38 GMT  
-		Size: 1.5 KB (1456 bytes)  
+	-	`sha256:b02d3e0f32425df72deef054cd2d82b44428e6c5059eec60793a117fa9ced305`  
+		Last Modified: Tue, 09 Apr 2024 09:03:20 GMT  
+		Size: 1.5 KB (1455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:ruby3.3` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:407b4509fe9b7b5758d6f60ae8450ac92351a0328fae651e49c5ab0b8a6924ee
+$ docker pull unit@sha256:ee10338374c20bc33bec2b8c9e0997c21be8a752a7c8351e304a595bcc5eb144
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.1 MB (15095715 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e224df5ef1c170f1ccb93bdd00806ba082bfd79f1f2a73856420b5e4bbe6d08`
+-	Image ID: `sha256:464ad692689f4aba4ef1173b6aa0d84bdcaa4cf44d16b5f9e269dfb271c21ec6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:df8bad2ae968ac87cc68e622213d7d22141aef8dfda155b6390c31c889544cd9`  
-		Last Modified: Tue, 26 Mar 2024 19:54:39 GMT  
+	-	`sha256:9001d74525ba12122607f618a9885a91e962bbdf479419d1c98ebba0992d23ee`  
+		Last Modified: Tue, 09 Apr 2024 09:03:21 GMT  
 		Size: 15.1 MB (15069404 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:976c25ff6bcd5be2eacdad55f0294f69c125905539d4baaa1b67bdcb35b272bf`  
-		Last Modified: Tue, 26 Mar 2024 19:54:38 GMT  
+	-	`sha256:501ff92ebfabfb28225b09b655da1070e6dd0688927772fafce5166a1ce00be2`  
+		Last Modified: Tue, 09 Apr 2024 09:03:20 GMT  
 		Size: 26.3 KB (26311 bytes)  
 		MIME: application/vnd.in-toto+json
 
