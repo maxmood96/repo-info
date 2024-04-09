@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1fa462bbeeedaec4194388c2c7dc7779feba49d731c8997ec2f8340b1cd976ea`
-- Created: `2024-03-18T18:05:33.017352381Z`
+- Image ID: `sha256:6295a4d08d940625a175cd891c9801263199c82e80be2f07b87a3af68ff73fa2`
+- Created: `2024-04-03T18:23:44.866335967Z`
 - Virtual Size: ~ 2.31 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -627,20 +627,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.6-2+deb10u6
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.6-2%2bdeb10u6.dsc' expat_2.2.6-2+deb10u6.dsc 2010 SHA256:12e5e94724e3c495aab1fb7dba2f30eabf554b0b3ecafa3ad59fffb0ac379ebf
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.6.orig.tar.gz' expat_2.2.6.orig.tar.gz 8275473 SHA256:574499cba22a599393e28d99ecfa1e7fc85be7d6651d543045244d5b561cb7ff
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.6-2%2bdeb10u6.debian.tar.xz' expat_2.2.6-2+deb10u6.debian.tar.xz 29268 SHA256:f938a77385f9e1a452ab2b45b887dc6539607d097211bf69d1194453d0f05d57
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.2.6-2+deb10u6/
 
-- https://sources.debian.net/src/expat/2.2.6-2+deb10u6/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.2.6-2+deb10u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.2.6-2+deb10u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20190209-2`
 
