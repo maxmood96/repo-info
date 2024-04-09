@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:00a8acaf0e75ecdd861dcb26714218f34473d7d019298b2a1b35667bd5ad1fe0`
-- Created: `2024-04-02T19:05:43Z`
-- Virtual Size: ~ 735.43 Mb  
+- Image ID: `sha256:1d77e6429f44eb35a67f50d8d4103af19e61d760b8bdd08f925c148726e9284b`
+- Created: `2024-04-05T21:51:03Z`
+- Virtual Size: ~ 682.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -974,43 +974,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.47.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.47.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `elfutils=0.188-2.1`
-
-Binary Packages:
-
-- `libelf1:amd64=0.188-2.1`
-
-Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
-
-- `BSD-2-clause`
-- `GFDL-1.3`
-- `GFDL-NIV-1.3`
-- `GPL-2`
-- `GPL-2+`
-- `GPL-3`
-- `GPL-3+`
-- `GPL-3+ with Bison exception`
-- `LGPL-2.1`
-- `LGPL-2.1+`
-- `LGPL-3`
-- `LGPL-3+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris elfutils=0.188-2.1
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.188-2.1.dsc' elfutils_0.188-2.1.dsc 3451 SHA256:2e73c5bfe9d0ddbf837742d638c43b049590ae1de8f6e3d9c2740c28e2550760
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.188.orig.tar.bz2' elfutils_0.188.orig.tar.bz2 9112977 SHA256:fb8b0e8d0802005b9a309c60c1d8de32dd2951b56f0c3a3cb56d21ce01595dff
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.188.orig.tar.bz2.asc' elfutils_0.188.orig.tar.bz2.asc 488 SHA256:061bb59801b8a23de4b129acb242210889be2c25b43ad2bcc2eb04966a1823e6
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.188-2.1.debian.tar.xz' elfutils_0.188-2.1.debian.tar.xz 42328 SHA256:dac77dc13f8f3bb2c541d631faf75216fc6640a359143a4545129ee096bc35ff
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/elfutils/0.188-2.1/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.188-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.188-2.1/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `expat=2.5.0-1`
 
 Binary Packages:
@@ -1402,12 +1365,8 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libglib2.0-0:amd64=2.74.6-2`
-- `libglib2.0-bin=2.74.6-2`
-- `libglib2.0-data=2.74.6-2`
-- `libglib2.0-dev:amd64=2.74.6-2`
-- `libglib2.0-dev-bin=2.74.6-2`
 
-Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-bin/copyright`, `/usr/share/doc/libglib2.0-data/copyright`, `/usr/share/doc/libglib2.0-dev/copyright`, `/usr/share/doc/libglib2.0-dev-bin/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
 - `AFL-2.0`
 - `Apache-2.0`
@@ -2183,10 +2142,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libffi-dev:amd64=3.4.4-1`
 - `libffi8:amd64=3.4.4-1`
 
-Licenses: (parsed from: `/usr/share/doc/libffi-dev/copyright`, `/usr/share/doc/libffi8/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libffi8/copyright`)
 
 - `Expat`
 - `GPL`
@@ -2691,9 +2649,8 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libselinux1:amd64=3.4-1+b6`
-- `libselinux1-dev:amd64=3.4-1+b6`
 
-Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`, `/usr/share/doc/libselinux1-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -2746,10 +2703,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libsepol-dev:amd64=3.4-2.1`
 - `libsepol2:amd64=3.4-2.1`
 
-Licenses: (parsed from: `/usr/share/doc/libsepol-dev/copyright`, `/usr/share/doc/libsepol2/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libsepol2/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
@@ -3409,30 +3365,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mawk/1.3.4.20200120-3.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mawk/1.3.4.20200120-3.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `media-types=10.0.0`
-
-Binary Packages:
-
-- `media-types=10.0.0`
-
-Licenses: (parsed from: `/usr/share/doc/media-types/copyright`)
-
-- `ad-hoc`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris media-types=10.0.0
-'http://deb.debian.org/debian/pool/main/m/media-types/media-types_10.0.0.dsc' media-types_10.0.0.dsc 1624 SHA256:d2e34e90508ac2c21c3cc6c01e2cf186093a8d2edcdc279e7d280a0a4ffe132d
-'http://deb.debian.org/debian/pool/main/m/media-types/media-types_10.0.0.tar.xz' media-types_10.0.0.tar.xz 57912 SHA256:fe0f5adcb153e642c5e3295b811cddf6ba12bf3df5e7c6c012f3b98dfae1d245
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/media-types/10.0.0/ (for browsing the source)
-- https://sources.debian.net/src/media-types/10.0.0/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/media-types/10.0.0/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `mpclib3=1.3.1-1`
 
 Binary Packages:
@@ -3488,12 +3420,11 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libncursesw6:amd64=6.4-4`
 - `libtinfo6:amd64=6.4-4`
 - `ncurses-base=6.4-4`
 - `ncurses-bin=6.4-4`
 
-Licenses: (parsed from: `/usr/share/doc/libncursesw6/copyright`, `/usr/share/doc/libtinfo6/copyright`, `/usr/share/doc/ncurses-base/copyright`, `/usr/share/doc/ncurses-bin/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libtinfo6/copyright`, `/usr/share/doc/ncurses-base/copyright`, `/usr/share/doc/ncurses-bin/copyright`)
 
 - `BSD-3-clause`
 - `MIT/X11`
@@ -3820,13 +3751,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libpcre2-16-0:amd64=10.42-1`
-- `libpcre2-32-0:amd64=10.42-1`
 - `libpcre2-8-0:amd64=10.42-1`
-- `libpcre2-dev:amd64=10.42-1`
-- `libpcre2-posix3:amd64=10.42-1`
 
-Licenses: (parsed from: `/usr/share/doc/libpcre2-16-0/copyright`, `/usr/share/doc/libpcre2-32-0/copyright`, `/usr/share/doc/libpcre2-8-0/copyright`, `/usr/share/doc/libpcre2-dev/copyright`, `/usr/share/doc/libpcre2-posix3/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 
 - `BSD-2-clause`
 - `BSD-3-clause`
@@ -3966,102 +3893,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/poppler-data/0.4.12-1/ (for browsing the source)
 - https://sources.debian.net/src/poppler-data/0.4.12-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/poppler-data/0.4.12-1/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `python3-defaults=3.11.2-1`
-
-Binary Packages:
-
-- `libpython3-stdlib:amd64=3.11.2-1+b1`
-- `python3=3.11.2-1+b1`
-- `python3-minimal=3.11.2-1+b1`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.11.2-1
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.11.2-1.dsc' python3-defaults_3.11.2-1.dsc 2961 SHA256:75cac54d11a4f7bc2c88eeeabddd74dc27b072c3bd515e71c8be2641b062e980
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.11.2-1.tar.gz' python3-defaults_3.11.2-1.tar.gz 145949 SHA256:21ba2c8fcf78161b73f98f9d1c3432be10d9f45e7783501f08cace5ad4115808
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/python3-defaults/3.11.2-1/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.11.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.11.2-1/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `python3-stdlib-extensions=3.11.2-3`
-
-Binary Packages:
-
-- `python3-distutils=3.11.2-3`
-- `python3-lib2to3=3.11.2-3`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris python3-stdlib-extensions=3.11.2-3
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.11.2-3.dsc' python3-stdlib-extensions_3.11.2-3.dsc 2485 SHA256:a6ea0ffffff105c3d34fa2986961826e04bc20efb2ff5af3a04460a528994fbd
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.11.2.orig.tar.xz' python3-stdlib-extensions_3.11.2.orig.tar.xz 1120876 SHA256:bd96f9aedb530633ead00fbbeb5223c9dd85ba492c78e506ca329f3df5841f3e
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.11.2-3.debian.tar.xz' python3-stdlib-extensions_3.11.2-3.debian.tar.xz 25964 SHA256:d1824aed18f046336b96dced598ae33cd67886f22823bf1d155e793ee6296f6e
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/python3-stdlib-extensions/3.11.2-3/ (for browsing the source)
-- https://sources.debian.net/src/python3-stdlib-extensions/3.11.2-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-stdlib-extensions/3.11.2-3/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `python3.11=3.11.2-6`
-
-Binary Packages:
-
-- `libpython3.11-minimal:amd64=3.11.2-6`
-- `libpython3.11-stdlib:amd64=3.11.2-6`
-- `python3.11=3.11.2-6`
-- `python3.11-minimal=3.11.2-6`
-
-Licenses: (parsed from: `/usr/share/doc/libpython3.11-minimal/copyright`, `/usr/share/doc/libpython3.11-stdlib/copyright`, `/usr/share/doc/python3.11/copyright`, `/usr/share/doc/python3.11-minimal/copyright`)
-
-- `* Permission to use this software in any way is granted without`
-- `By obtaining, using, and/or copying this software and/or its`
-- `GPL-2`
-- `Permission  is  hereby granted,  free  of charge,  to  any person`
-- `Permission is hereby granted, free of charge, to any person obtaining`
-- `Permission to use, copy, modify,`
-- `Redistribution`
-- `This software is provided 'as-is', without any express`
-- `This software is provided as-is, without express`
-- `binary forms, with`
-- `distribute this software`
-- `distribute this software and`
-- `distribute this software for any`
-- `implied`
-- `its`
-- `use in source`
-- `without`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris python3.11=3.11.2-6
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.2-6.dsc' python3.11_3.11.2-6.dsc 3636 SHA256:0d20d0252fc9bbbf2be59c3156b0532b400f9908a6bfdac6bc9d60f2e3325f02
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.2.orig.tar.gz' python3.11_3.11.2.orig.tar.gz 26437858 SHA256:2411c74bda5bbcfcddaf4531f66d1adc73f247f529aee981b029513aefdbf849
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.2-6.debian.tar.xz' python3.11_3.11.2-6.debian.tar.xz 213492 SHA256:187df94fba2bb3eff72801b392a7632cc69efd56a76e774d4fa9b62a608c0702
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/python3.11/3.11.2-6/ (for browsing the source)
-- https://sources.debian.net/src/python3.11/3.11.2-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.11/3.11.2-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=3.0-2`
 
@@ -4503,18 +4334,15 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `bsdutils=1:2.38.1-5+deb12u1`
-- `libblkid-dev:amd64=2.38.1-5+deb12u1`
 - `libblkid1:amd64=2.38.1-5+deb12u1`
-- `libmount-dev:amd64=2.38.1-5+deb12u1`
 - `libmount1:amd64=2.38.1-5+deb12u1`
 - `libsmartcols1:amd64=2.38.1-5+deb12u1`
 - `libuuid1:amd64=2.38.1-5+deb12u1`
 - `mount=2.38.1-5+deb12u1`
 - `util-linux=2.38.1-5+deb12u1`
 - `util-linux-extra=2.38.1-5+deb12u1`
-- `uuid-dev:amd64=2.38.1-5+deb12u1`
 
-Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid-dev/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount-dev/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/util-linux-extra/copyright`, `/usr/share/doc/uuid-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/util-linux-extra/copyright`)
 
 - `BSD-3-clause`
 - `BSD-4-clause`
@@ -4723,9 +4551,8 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `zlib1g:amd64=1:1.2.13.dfsg-1`
-- `zlib1g-dev:amd64=1:1.2.13.dfsg-1`
 
-Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`, `/usr/share/doc/zlib1g-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 
 - `Zlib`
 
