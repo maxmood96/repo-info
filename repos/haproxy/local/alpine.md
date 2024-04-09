@@ -1,19 +1,19 @@
-# `haproxy:2.9.6-alpine`
+# `haproxy:2.9.7-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:52687313354fcb811a81dcaed652b9fb194f673f7e3752b83d1f8d307b522fe8`
-- Created: `2024-02-26T18:13:28Z`
-- Virtual Size: ~ 25.79 Mb  
+- Image ID: `sha256:507cf331789f9ed48c1ffc2a3f694c7d951a21084a84290c9884409cd74003ce`
+- Created: `2024-04-06T00:53:00Z`
+- Virtual Size: ~ 25.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["haproxy","-f","/usr/local/etc/haproxy/haproxy.cfg"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `HAPROXY_VERSION=2.9.6`
-  - `HAPROXY_URL=https://www.haproxy.org/download/2.9/src/haproxy-2.9.6.tar.gz`
-  - `HAPROXY_SHA256=208adf47c8fa83c54978034ba5c0110b7463c47078f119bd052342171a3b9a0b`
+  - `HAPROXY_VERSION=2.9.7`
+  - `HAPROXY_URL=https://www.haproxy.org/download/2.9/src/haproxy-2.9.7.tar.gz`
+  - `HAPROXY_SHA256=d1a0a56f008a8d2f007bc0c37df6b2952520d1f4dde33b8d3802710e5158c131`
 
 ## `apk` (`.apk`-based packages)
 
@@ -122,16 +122,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20230506-r0 description:
+ca-certificates-20240226-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20230506-r0 webpage:
+ca-certificates-20240226-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20230506-r0 installed size:
-688 KiB
+ca-certificates-20240226-r0 installed size:
+712 KiB
 
-ca-certificates-20230506-r0 license:
+ca-certificates-20240226-r0 license:
 MPL-2.0 AND MIT
 
 ```
