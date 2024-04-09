@@ -446,21 +446,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.7.1-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.7.1-1.dsc' curl_8.7.1-1.dsc 3398 SHA256:60f84e0bd6c1c96a58721505bcfd27585089acc86018c25dbe6b8ea094c3fbd5
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.7.1.orig.tar.gz' curl_8.7.1.orig.tar.gz 4462311 SHA256:f91249c87f68ea00cf27c44fdfa5a78423e41e71b7d408e5901a9896d905c495
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.7.1.orig.tar.gz.asc' curl_8.7.1.orig.tar.gz.asc 488 SHA256:f2abc438269f3fe37749941d91069f4972d339cae9b289e536257d90098dcd1f
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.7.1-1.debian.tar.xz' curl_8.7.1-1.debian.tar.xz 46556 SHA256:1c813e975d8692ff25428c922e3ff5223ff8a1d309b34e2eefa2dbf0f6f8f644
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.7.1-1/
 
-- https://sources.debian.net/src/curl/8.7.1-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.7.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.7.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-6`
 
@@ -1058,21 +1050,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.4-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.4-2.dsc' gnutls28_3.8.4-2.dsc 3271 SHA256:5d9a04822ab28aacb365aa044b7d37cb847f5a42be387a3a03b59318aaacd873
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.4.orig.tar.xz' gnutls28_3.8.4.orig.tar.xz 6487520 SHA256:2bea4e154794f3f00180fa2a5c51fe8b005ac7a31cd58bd44cdfa7f36ebc3a9b
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.4.orig.tar.xz.asc' gnutls28_3.8.4.orig.tar.xz.asc 228 SHA256:d776e9a0794539e44107c20b5a2f9126c62833e3c0206eb682bd240fff41558a
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.4-2.debian.tar.xz' gnutls28_3.8.4-2.debian.tar.xz 77868 SHA256:8989ce35468f95da98611b64b363a678652d612859f9584c89b2a1da6228a0fd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.4-2/
 
-- https://sources.debian.net/src/gnutls28/3.8.4-2/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.11-4`
 
@@ -2152,20 +2136,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.60.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.60.0-1.dsc' nghttp2_1.60.0-1.dsc 2531 SHA256:58a6c61623f906f15c28583bbead4bd5497290b49cd525da2aa933b1edbc730c
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.60.0.orig.tar.gz' nghttp2_1.60.0.orig.tar.gz 1063242 SHA256:3cc9403c64e0a133868f62132ff0884cd5dc567eee5bd7b2d03ac81293695d6b
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.60.0-1.debian.tar.xz' nghttp2_1.60.0-1.debian.tar.xz 38752 SHA256:6f7267938bb4a8e96680b12bb5b7b9135ac3ea35f804e3f92002d33a440b4b62
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.60.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.60.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.60.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.60.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-3.1`
 
@@ -2257,21 +2234,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.7p1-2
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.7p1-2.dsc' openssh_9.7p1-2.dsc 3383 SHA256:71cf7c4f5548e5e91ca1d2b74490cba3231763870fe7ac79f95ffbea95a77055
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.7p1.orig.tar.gz' openssh_9.7p1.orig.tar.gz 1848766 SHA256:490426f766d82a2763fcacd8d83ea3d70798750c7bd2aff2e57dc5660f773ffd
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.7p1.orig.tar.gz.asc' openssh_9.7p1.orig.tar.gz.asc 833 SHA256:9cee21fd45be07747fa82cd799e4cd8d14203165834d6fc7ccbcf60718901489
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.7p1-2.debian.tar.xz' openssh_9.7p1-2.debian.tar.xz 189332 SHA256:655ac5089179bc03b55d012c18cdd85d85a3c8669ebd491bab0d22d0f6f4a17a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:9.7p1-2/
 
-- https://sources.debian.net/src/openssh/1:9.7p1-2/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:9.7p1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:9.7p1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.1.5-1.1`
 
@@ -2363,21 +2332,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.3-6
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.3-6.dsc' pam_1.5.3-6.dsc 2771 SHA256:9e91c1db7b3ca72f70c174d8332e9d65e5b3dcd4c0abb3beaeabc3b6d53ac2bb
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.3.orig.tar.xz' pam_1.5.3.orig.tar.xz 1020076 SHA256:7ac4b50feee004a9fa88f1dfd2d2fa738a82896763050cd773b3c54b0a818283
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.3.orig.tar.xz.asc' pam_1.5.3.orig.tar.xz.asc 801 SHA256:ce5690766060d60a8f0fba447f480d8d49988821740698cbdf2ecfd84dc8895c
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.3-6.debian.tar.xz' pam_1.5.3-6.debian.tar.xz 144228 SHA256:3a0f9f542f7fd6444b32b4d864f8447c6f8bfd46c079a8d381aa782ff1d3e634
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pam/1.5.3-6/
 
-- https://sources.debian.net/src/pam/1.5.3-6/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.5.3-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.5.3-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre2=10.42-4`
 
@@ -2964,21 +2925,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2024a-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a-1.dsc' tzdata_2024a-1.dsc 2429 SHA256:16e9e28383d581d0440a379f14e96786308976a409ce2c3f7b64a4b0a2935bda
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA256:0d0434459acbd2059a7a8da1f3304a84a86591f6ed69c6248fffa502b6edffe3
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA256:f64725f9f65419e7b009e3b95b75ea9516382d0be64aef63d78654d9c569ed0d
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a-1.debian.tar.xz' tzdata_2024a-1.debian.tar.xz 122116 SHA256:2cdad8bafca6cbd13fe0c8f41e7c45bc4a30cdde631b5bb8438f850670513855
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2024a-1/
 
-- https://sources.debian.net/src/tzdata/2024a-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2024a-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2024a-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0043+nmu1`
 
@@ -3086,20 +3039,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.39.3-11
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3-11.dsc' util-linux_2.39.3-11.dsc 4615 SHA256:ce633670e9c20868b10a7fbdad1536ce835a1a9bc9110b52c439407858ead27d
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3.orig.tar.xz' util-linux_2.39.3.orig.tar.xz 8526168 SHA256:7b6605e48d1a49f43cc4b4cfc59f313d0dd5402fa40b96810bd572e167dfed0f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.3-11.debian.tar.xz' util-linux_2.39.3-11.debian.tar.xz 101040 SHA256:ddd349c425a6a85ef950473fc7dac12053606f8ed8169a4736240cf0f9586219
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.39.3-11/
 
-- https://sources.debian.net/src/util-linux/2.39.3-11/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.39.3-11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.39.3-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.24.5-1`
 
