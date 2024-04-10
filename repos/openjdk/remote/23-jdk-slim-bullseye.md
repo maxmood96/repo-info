@@ -1,7 +1,7 @@
 ## `openjdk:23-jdk-slim-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:922e6f768559163640513279d03a96275990304808e03050fbbddba7d77ac1a4
+$ docker pull openjdk@sha256:e7b58a7313adad172d8f2adfe135ee55a31de141dd1f5ba9c75e03e4fb77cd8d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,19 +14,19 @@ $ docker pull openjdk@sha256:922e6f768559163640513279d03a96275990304808e03050fbb
 ### `openjdk:23-jdk-slim-bullseye` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:e3774e7ad3ec29fdb6265e1bf8bef4448617da4476346d3950b823362c34419a
+$ docker pull openjdk@sha256:e0a9f57bd7dd3b1a1c338755e9e0bb54a2c758e120fd3a99e94d050f96b04201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **244.0 MB (244013417 bytes)**  
+-	Total Size: **244.0 MB (244018674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b794d8d6a38889ca586f8e82bce0cf77c021fc1aaa3ad9c5e4088539fadd3dd`
+-	Image ID: `sha256:177164be36c41a5002e37a689176a9000f34c91dafe86c077e830b74a37a9afc`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Tue, 12 Mar 2024 01:21:23 GMT
-ADD file:3cd55ecee0ffd78be95dd5842ecd3171631aaccaae50fe41f6bf60ad5be6aaa9 in / 
-# Tue, 12 Mar 2024 01:21:23 GMT
+# Thu, 04 Apr 2024 18:48:10 GMT
+ADD file:5d6b639e8b6bcc01149b7486502558088f9816200063ca72b91a1f989bc8d85e in / 
+# Thu, 04 Apr 2024 18:48:10 GMT
 CMD ["bash"]
 # Thu, 04 Apr 2024 18:48:10 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/* # buildkit
@@ -45,40 +45,40 @@ CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:c0edef2937fa3b888b0cc3f9f5a4db00a1be6f297be5f057a77d738f91e675a0`  
-		Last Modified: Tue, 12 Mar 2024 01:26:20 GMT  
-		Size: 31.4 MB (31422489 bytes)  
+	-	`sha256:04e7578caeaa5a84ad5d534aabbb307a37c85f9444b94949d37544a1c69c8f15`  
+		Last Modified: Wed, 10 Apr 2024 01:56:15 GMT  
+		Size: 31.4 MB (31427738 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3627b15bfecfe6b00359ff71b46a9065d5c1e627c7c277e1230693e685175ecb`  
-		Last Modified: Fri, 05 Apr 2024 17:52:23 GMT  
-		Size: 1.6 MB (1581828 bytes)  
+	-	`sha256:83262eecb2c3bdb609dab430f50b400b43f7b4bef37e2500a7b2f09297a43a0b`  
+		Last Modified: Wed, 10 Apr 2024 02:54:21 GMT  
+		Size: 1.6 MB (1581842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ecf6f13e4600c7c784527e4b54d5c26d60fa86f59310ba418b9ff2326850436`  
-		Last Modified: Fri, 05 Apr 2024 17:52:26 GMT  
-		Size: 211.0 MB (211009100 bytes)  
+	-	`sha256:424262463bdf0d0f335e91a3635c4e7b204554a6196012de8156baf1229da07c`  
+		Last Modified: Wed, 10 Apr 2024 02:54:24 GMT  
+		Size: 211.0 MB (211009094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `openjdk:23-jdk-slim-bullseye` - unknown; unknown
 
 ```console
-$ docker pull openjdk@sha256:f49bd041a6bb4641800a0e8df9d4492bbb73501d9a393bad3787895d28d269e9
+$ docker pull openjdk@sha256:68a40bd763f8d3469eeaa5b8508fa6941c9deae89160f122442cee70bcf515df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.7 MB (2655806 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30318b9c111b75ca6d9b6cd71fa43bd289415566a1e12eae2a1a2e0c4280937e`
+-	Image ID: `sha256:74582508bcc18cbbd63217730ef8ce7281e34b7411bfbfd7ff01c55faf0298e9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4055f2b947e4b616656e09e420a1d3dfcb5e4ecc5cbf8528163bd6c13c2f84b2`  
-		Last Modified: Fri, 05 Apr 2024 17:52:23 GMT  
+	-	`sha256:9c7ad575c4381cb007534aa23eec732fb5a7aa315c39b01bb34284c38665e8da`  
+		Last Modified: Wed, 10 Apr 2024 02:54:21 GMT  
 		Size: 2.6 MB (2638334 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:398ff617be47f860033adb96f9737eb64ee98a66f2e8c691e2f7705c71942adc`  
-		Last Modified: Fri, 05 Apr 2024 17:52:23 GMT  
+	-	`sha256:90d9c6e3a199742e5e0eee03148555a1b94073f4202900517ef9fd0542f65d70`  
+		Last Modified: Wed, 10 Apr 2024 02:54:21 GMT  
 		Size: 17.5 KB (17472 bytes)  
 		MIME: application/vnd.in-toto+json
 
