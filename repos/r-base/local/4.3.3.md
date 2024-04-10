@@ -1139,15 +1139,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.4-2
-'http://http.debian.net/debian/pool/main/g/gnutls28/gnutls28_3.8.4-2.dsc' gnutls28_3.8.4-2.dsc 3271 SHA256:5d9a04822ab28aacb365aa044b7d37cb847f5a42be387a3a03b59318aaacd873
-'http://http.debian.net/debian/pool/main/g/gnutls28/gnutls28_3.8.4.orig.tar.xz' gnutls28_3.8.4.orig.tar.xz 6487520 SHA256:2bea4e154794f3f00180fa2a5c51fe8b005ac7a31cd58bd44cdfa7f36ebc3a9b
-'http://http.debian.net/debian/pool/main/g/gnutls28/gnutls28_3.8.4.orig.tar.xz.asc' gnutls28_3.8.4.orig.tar.xz.asc 228 SHA256:d776e9a0794539e44107c20b5a2f9126c62833e3c0206eb682bd240fff41558a
-'http://http.debian.net/debian/pool/main/g/gnutls28/gnutls28_3.8.4-2.debian.tar.xz' gnutls28_3.8.4-2.debian.tar.xz 77868 SHA256:8989ce35468f95da98611b64b363a678652d612859f9584c89b2a1da6228a0fd
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gnutls28/3.8.4-2/
+
 
 ### `dpkg` source package: `graphite2=1.3.14-2`
 
