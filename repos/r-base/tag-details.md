@@ -8,7 +8,7 @@
 ## `r-base:4.3.3`
 
 ```console
-$ docker pull r-base@sha256:89665d00ab6ec19ee1b6c64d94f8de1f376b0db04fb7f52c7757d69e2a39017e
+$ docker pull r-base@sha256:6ea914c2bdda90df5669636c30bd8aa193f76008ed1d8cb68b3f0250521af05d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -87,67 +87,67 @@ CMD ["R"]
 ### `r-base:4.3.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull r-base@sha256:8b37274b0740f697ab4753c6ec550346811738057479442715173851980b042f
+$ docker pull r-base@sha256:8e7cc26469ee3032788e278284b3ad18cfc743f1917fec87060b6c2b7b055a77
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **360.4 MB (360442736 bytes)**  
+-	Total Size: **361.4 MB (361357336 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0555de241164bd162b6042fa9dc5b7046c40048c73e66edb4dcab501931b3b22`
+-	Image ID: `sha256:6e44c419f1835aa9d61ccdc3baec2dfedbc83ea740b9f6354014ca6eed290058`
 -	Default Command: `["R"]`
 
 ```dockerfile
-# Sat, 30 Mar 2024 20:55:20 GMT
-ADD file:fc3581778ead218cf3f2b0cc783c67d5a425cb255a88178c9f2a6f07a1806740 in / 
-# Sat, 30 Mar 2024 20:55:21 GMT
+# Wed, 10 Apr 2024 00:41:59 GMT
+ADD file:c1dcd2a0564b0f415e37aec0f860788ea1a7d93297d92334df4a88c427e6a0a5 in / 
+# Wed, 10 Apr 2024 00:42:00 GMT
 CMD ["bash"]
-# Sat, 30 Mar 2024 21:30:20 GMT
+# Wed, 10 Apr 2024 10:15:46 GMT
 LABEL org.opencontainers.image.licenses=GPL-2.0-or-later org.opencontainers.image.source=https://github.com/rocker-org/rocker org.opencontainers.image.vendor=Rocker Project org.opencontainers.image.authors=Dirk Eddelbuettel <edd@debian.org>
-# Sat, 30 Mar 2024 21:30:21 GMT
+# Wed, 10 Apr 2024 10:15:46 GMT
 RUN useradd -s /bin/bash -m docker 	&& usermod -a -G staff docker
-# Sat, 30 Mar 2024 21:30:30 GMT
+# Wed, 10 Apr 2024 10:15:57 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		ed 		less 		locales 		vim-tiny 		wget 		ca-certificates 		fonts-texgyre 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 30 Mar 2024 21:30:32 GMT
+# Wed, 10 Apr 2024 10:15:59 GMT
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen 	&& locale-gen en_US.utf8 	&& /usr/sbin/update-locale LANG=en_US.UTF-8
-# Sat, 30 Mar 2024 21:30:32 GMT
+# Wed, 10 Apr 2024 10:15:59 GMT
 ENV LC_ALL=en_US.UTF-8
-# Sat, 30 Mar 2024 21:30:32 GMT
+# Wed, 10 Apr 2024 10:15:59 GMT
 ENV LANG=en_US.UTF-8
-# Sat, 30 Mar 2024 21:30:32 GMT
+# Wed, 10 Apr 2024 10:15:59 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default         && echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/90local-no-recommends
-# Sat, 30 Mar 2024 21:30:32 GMT
+# Wed, 10 Apr 2024 10:15:59 GMT
 ENV R_BASE_VERSION=4.3.3
-# Sat, 30 Mar 2024 21:31:53 GMT
+# Wed, 10 Apr 2024 10:17:21 GMT
 RUN apt-get update         && apt-get install -y -t unstable --no-install-recommends                 libopenblas0-pthread 		littler                 r-cran-docopt                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-*                 r-base-core=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& chown root:staff "/usr/local/lib/R/site-library" 	&& chmod g+ws "/usr/local/lib/R/site-library" 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 30 Mar 2024 21:31:58 GMT
+# Wed, 10 Apr 2024 10:17:26 GMT
 CMD ["R"]
 ```
 
 -	Layers:
-	-	`sha256:b431ee02c5840b16ec0729ce2312ad3bdbd0a4edca10b33678f7132ad29de406`  
-		Last Modified: Sat, 30 Mar 2024 20:57:27 GMT  
-		Size: 52.2 MB (52193168 bytes)  
+	-	`sha256:e97907a307822d1fe2c2fb105577bd49075d36f6726aea18395aa29336a73c74`  
+		Last Modified: Wed, 10 Apr 2024 00:47:45 GMT  
+		Size: 52.2 MB (52193812 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:563ed164f1ed2a724f6e2937d88db638383383f6d5283ec7ffdc19bebb831e87`  
-		Last Modified: Sat, 30 Mar 2024 21:32:19 GMT  
-		Size: 3.4 KB (3359 bytes)  
+	-	`sha256:5449e25be0fbcc0767c693595277c05ac37f618957104a8645562b4f67af33d5`  
+		Last Modified: Wed, 10 Apr 2024 10:17:44 GMT  
+		Size: 3.4 KB (3361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43db62cb80c94023c2d9f8c02956591cc8b76182268aaeab447888f5e3f465d1`  
-		Last Modified: Sat, 30 Mar 2024 21:32:21 GMT  
-		Size: 22.8 MB (22836594 bytes)  
+	-	`sha256:4b79e8b804767fc54e1d144155c2d067b1682235e423a2804427354f688feeb9`  
+		Last Modified: Wed, 10 Apr 2024 10:17:46 GMT  
+		Size: 22.8 MB (22836679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15bc9da573d53d06f368c983cb0936e592483dff845578c0d051d29fca97ba2c`  
-		Last Modified: Sat, 30 Mar 2024 21:32:19 GMT  
-		Size: 866.3 KB (866328 bytes)  
+	-	`sha256:19cb05256f64228fdd514f23ac9a8274f4a1f76fd067167ef0abb98580f52a77`  
+		Last Modified: Wed, 10 Apr 2024 10:17:45 GMT  
+		Size: 866.3 KB (866325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c027dd1714db232eaafc003e85ee316c329ec4e87f38c646db0881fd5caf5bc`  
-		Last Modified: Sat, 30 Mar 2024 21:32:19 GMT  
-		Size: 347.0 B  
+	-	`sha256:478c6d56b26abd79b13882268cc8e64286f0e704c20d17eb8dfee71f70fb9427`  
+		Last Modified: Wed, 10 Apr 2024 10:17:44 GMT  
+		Size: 349.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a2c012c235c0c4f3da2e99c7c8f50ea22355a80fbf40d9d7afc4c40fbd4d69c`  
-		Last Modified: Sat, 30 Mar 2024 21:32:42 GMT  
-		Size: 284.5 MB (284542940 bytes)  
+	-	`sha256:aefd2e355114e93fcb03a15bde4fa04df0e423a9f48f927d95eb1c2533870088`  
+		Last Modified: Wed, 10 Apr 2024 10:18:08 GMT  
+		Size: 285.5 MB (285456810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `r-base:4.3.3` - linux; ppc64le
@@ -285,7 +285,7 @@ CMD ["R"]
 ## `r-base:latest`
 
 ```console
-$ docker pull r-base@sha256:89665d00ab6ec19ee1b6c64d94f8de1f376b0db04fb7f52c7757d69e2a39017e
+$ docker pull r-base@sha256:6ea914c2bdda90df5669636c30bd8aa193f76008ed1d8cb68b3f0250521af05d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -364,67 +364,67 @@ CMD ["R"]
 ### `r-base:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull r-base@sha256:8b37274b0740f697ab4753c6ec550346811738057479442715173851980b042f
+$ docker pull r-base@sha256:8e7cc26469ee3032788e278284b3ad18cfc743f1917fec87060b6c2b7b055a77
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **360.4 MB (360442736 bytes)**  
+-	Total Size: **361.4 MB (361357336 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0555de241164bd162b6042fa9dc5b7046c40048c73e66edb4dcab501931b3b22`
+-	Image ID: `sha256:6e44c419f1835aa9d61ccdc3baec2dfedbc83ea740b9f6354014ca6eed290058`
 -	Default Command: `["R"]`
 
 ```dockerfile
-# Sat, 30 Mar 2024 20:55:20 GMT
-ADD file:fc3581778ead218cf3f2b0cc783c67d5a425cb255a88178c9f2a6f07a1806740 in / 
-# Sat, 30 Mar 2024 20:55:21 GMT
+# Wed, 10 Apr 2024 00:41:59 GMT
+ADD file:c1dcd2a0564b0f415e37aec0f860788ea1a7d93297d92334df4a88c427e6a0a5 in / 
+# Wed, 10 Apr 2024 00:42:00 GMT
 CMD ["bash"]
-# Sat, 30 Mar 2024 21:30:20 GMT
+# Wed, 10 Apr 2024 10:15:46 GMT
 LABEL org.opencontainers.image.licenses=GPL-2.0-or-later org.opencontainers.image.source=https://github.com/rocker-org/rocker org.opencontainers.image.vendor=Rocker Project org.opencontainers.image.authors=Dirk Eddelbuettel <edd@debian.org>
-# Sat, 30 Mar 2024 21:30:21 GMT
+# Wed, 10 Apr 2024 10:15:46 GMT
 RUN useradd -s /bin/bash -m docker 	&& usermod -a -G staff docker
-# Sat, 30 Mar 2024 21:30:30 GMT
+# Wed, 10 Apr 2024 10:15:57 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		ed 		less 		locales 		vim-tiny 		wget 		ca-certificates 		fonts-texgyre 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 30 Mar 2024 21:30:32 GMT
+# Wed, 10 Apr 2024 10:15:59 GMT
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen 	&& locale-gen en_US.utf8 	&& /usr/sbin/update-locale LANG=en_US.UTF-8
-# Sat, 30 Mar 2024 21:30:32 GMT
+# Wed, 10 Apr 2024 10:15:59 GMT
 ENV LC_ALL=en_US.UTF-8
-# Sat, 30 Mar 2024 21:30:32 GMT
+# Wed, 10 Apr 2024 10:15:59 GMT
 ENV LANG=en_US.UTF-8
-# Sat, 30 Mar 2024 21:30:32 GMT
+# Wed, 10 Apr 2024 10:15:59 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default         && echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/90local-no-recommends
-# Sat, 30 Mar 2024 21:30:32 GMT
+# Wed, 10 Apr 2024 10:15:59 GMT
 ENV R_BASE_VERSION=4.3.3
-# Sat, 30 Mar 2024 21:31:53 GMT
+# Wed, 10 Apr 2024 10:17:21 GMT
 RUN apt-get update         && apt-get install -y -t unstable --no-install-recommends                 libopenblas0-pthread 		littler                 r-cran-docopt                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-*                 r-base-core=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& chown root:staff "/usr/local/lib/R/site-library" 	&& chmod g+ws "/usr/local/lib/R/site-library" 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 30 Mar 2024 21:31:58 GMT
+# Wed, 10 Apr 2024 10:17:26 GMT
 CMD ["R"]
 ```
 
 -	Layers:
-	-	`sha256:b431ee02c5840b16ec0729ce2312ad3bdbd0a4edca10b33678f7132ad29de406`  
-		Last Modified: Sat, 30 Mar 2024 20:57:27 GMT  
-		Size: 52.2 MB (52193168 bytes)  
+	-	`sha256:e97907a307822d1fe2c2fb105577bd49075d36f6726aea18395aa29336a73c74`  
+		Last Modified: Wed, 10 Apr 2024 00:47:45 GMT  
+		Size: 52.2 MB (52193812 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:563ed164f1ed2a724f6e2937d88db638383383f6d5283ec7ffdc19bebb831e87`  
-		Last Modified: Sat, 30 Mar 2024 21:32:19 GMT  
-		Size: 3.4 KB (3359 bytes)  
+	-	`sha256:5449e25be0fbcc0767c693595277c05ac37f618957104a8645562b4f67af33d5`  
+		Last Modified: Wed, 10 Apr 2024 10:17:44 GMT  
+		Size: 3.4 KB (3361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43db62cb80c94023c2d9f8c02956591cc8b76182268aaeab447888f5e3f465d1`  
-		Last Modified: Sat, 30 Mar 2024 21:32:21 GMT  
-		Size: 22.8 MB (22836594 bytes)  
+	-	`sha256:4b79e8b804767fc54e1d144155c2d067b1682235e423a2804427354f688feeb9`  
+		Last Modified: Wed, 10 Apr 2024 10:17:46 GMT  
+		Size: 22.8 MB (22836679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15bc9da573d53d06f368c983cb0936e592483dff845578c0d051d29fca97ba2c`  
-		Last Modified: Sat, 30 Mar 2024 21:32:19 GMT  
-		Size: 866.3 KB (866328 bytes)  
+	-	`sha256:19cb05256f64228fdd514f23ac9a8274f4a1f76fd067167ef0abb98580f52a77`  
+		Last Modified: Wed, 10 Apr 2024 10:17:45 GMT  
+		Size: 866.3 KB (866325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c027dd1714db232eaafc003e85ee316c329ec4e87f38c646db0881fd5caf5bc`  
-		Last Modified: Sat, 30 Mar 2024 21:32:19 GMT  
-		Size: 347.0 B  
+	-	`sha256:478c6d56b26abd79b13882268cc8e64286f0e704c20d17eb8dfee71f70fb9427`  
+		Last Modified: Wed, 10 Apr 2024 10:17:44 GMT  
+		Size: 349.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a2c012c235c0c4f3da2e99c7c8f50ea22355a80fbf40d9d7afc4c40fbd4d69c`  
-		Last Modified: Sat, 30 Mar 2024 21:32:42 GMT  
-		Size: 284.5 MB (284542940 bytes)  
+	-	`sha256:aefd2e355114e93fcb03a15bde4fa04df0e423a9f48f927d95eb1c2533870088`  
+		Last Modified: Wed, 10 Apr 2024 10:18:08 GMT  
+		Size: 285.5 MB (285456810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `r-base:latest` - linux; ppc64le
