@@ -1,7 +1,7 @@
 ## `python:bullseye`
 
 ```console
-$ docker pull python@sha256:24d1dd665dce1dc1b930db3b292ba4f8eb10dfad06110cf71a26021c23945e6f
+$ docker pull python@sha256:8945ebd9848a2c3db1742de85c5eca0300e14ca22d2f50cd709c5b89f82f989b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -266,25 +266,25 @@ CMD ["python3"]
 ### `python:bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull python@sha256:9656d09053d619ea5151b6602e47b5e240b7f019244f75f5dd5db5eccee2c659
+$ docker pull python@sha256:b24247c87ef9b8feb710400facff3b55a47f335eaa5f6102d7c92dedcf8cd6fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **346.1 MB (346065627 bytes)**  
+-	Total Size: **346.1 MB (346070964 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd20be545d6638f93f2dc5120bfa6a0c086a3c10e071d4d0d632e3e797c0bdf7`
+-	Image ID: `sha256:68c9cdca79f4162c1dcd3ca872095c54ac4ae0751b9e7f4f2ea07fe97f73441d`
 -	Default Command: `["python3"]`
 
 ```dockerfile
-# Tue, 12 Mar 2024 00:45:43 GMT
-ADD file:7cb312b5f676a37f5c3172be6eb95e30986e5da0dcf21985d2176f8a9a037012 in / 
-# Tue, 12 Mar 2024 00:45:44 GMT
+# Wed, 10 Apr 2024 00:40:30 GMT
+ADD file:6fedb173fe261ff0e13b004ca692b7edcc74dcc3c4384fee092b96ef9508992c in / 
+# Wed, 10 Apr 2024 00:40:30 GMT
 CMD ["bash"]
-# Tue, 12 Mar 2024 01:26:03 GMT
+# Wed, 10 Apr 2024 04:23:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2024 01:26:18 GMT
+# Wed, 10 Apr 2024 04:23:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2024 01:27:09 GMT
+# Wed, 10 Apr 2024 04:24:33 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
 # Tue, 09 Apr 2024 15:49:24 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -313,37 +313,37 @@ CMD ["python3"]
 ```
 
 -	Layers:
-	-	`sha256:f53ee134f2f58aa9d86f682cbedb185619a5b857474f430e6dc3384fafdec81c`  
-		Last Modified: Tue, 12 Mar 2024 00:49:12 GMT  
-		Size: 53.7 MB (53722099 bytes)  
+	-	`sha256:197947a07d5f6c6ff020ca65dcea4e52671f85f67bee1b59af46cb0dc36580d9`  
+		Last Modified: Wed, 10 Apr 2024 00:44:24 GMT  
+		Size: 53.7 MB (53729176 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:289bcd9f29514582dfa181c0dd78e701e54e4abb9988a08a2175a3b8de2d4b3e`  
-		Last Modified: Tue, 12 Mar 2024 01:35:30 GMT  
-		Size: 15.7 MB (15749203 bytes)  
+	-	`sha256:31e3f4a530684a6d51e431d14164bdf20c7ad515e8948ddbfbf5f9c2c3680727`  
+		Last Modified: Wed, 10 Apr 2024 04:33:00 GMT  
+		Size: 15.7 MB (15749239 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07b26e715641714983e979229284b3dd79698d1c59197f4e33089c8c196e2956`  
-		Last Modified: Tue, 12 Mar 2024 01:35:44 GMT  
-		Size: 54.7 MB (54694301 bytes)  
+	-	`sha256:27317b8832e116e0457de89bfb9097cbcd3165d6079c38230f3728894dfb3af1`  
+		Last Modified: Wed, 10 Apr 2024 04:33:14 GMT  
+		Size: 54.7 MB (54694342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d317b4db41e297cffa1559c871d84437b3544f7a4c04d6cf339cd4e8caa94c76`  
-		Last Modified: Tue, 12 Mar 2024 01:36:09 GMT  
-		Size: 189.9 MB (189914923 bytes)  
+	-	`sha256:191dceb3c5772a800dd46b1b628a79e2167bd6bb0e9844a04e9ffc8a550a182b`  
+		Last Modified: Wed, 10 Apr 2024 04:33:40 GMT  
+		Size: 189.9 MB (189914112 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9dfe33bab13da6b8d41cc78f57e10c543ec3798a0b0fb9ca1c326f9e4530091`  
-		Last Modified: Tue, 12 Mar 2024 09:46:47 GMT  
-		Size: 6.4 MB (6405362 bytes)  
+	-	`sha256:e2c5617071f964a50443a9b5a8c9156c7b88efd4a750fd861b408fb93348d2f6`  
+		Last Modified: Wed, 10 Apr 2024 12:17:21 GMT  
+		Size: 6.4 MB (6405350 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57113b6cebe10ce86357dfb29af4dfe27af0d95aa520fa6fad8bb60d7dfe7850`  
-		Last Modified: Wed, 10 Apr 2024 04:10:38 GMT  
-		Size: 22.9 MB (22881043 bytes)  
+	-	`sha256:8b9b36a07b694040e5b79c3f478c1ecdcba2855356da6da78ea66c43cd320f99`  
+		Last Modified: Wed, 10 Apr 2024 12:17:23 GMT  
+		Size: 22.9 MB (22880057 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c4a5cc989677e39ba1270cf6126c356885a9a2ecab9d44ce3b6e552b47d36e9`  
-		Last Modified: Wed, 10 Apr 2024 04:10:35 GMT  
-		Size: 247.0 B  
+	-	`sha256:c6650a36ffa64c88a4fbf3d0c2baec09cf0b9ead4aff4d2946c121753c80ce2e`  
+		Last Modified: Wed, 10 Apr 2024 12:17:20 GMT  
+		Size: 243.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aed33f25c24117cb7e5b9ae11dfb1cd92f8fa83bfdded80820d0c60e25ce3319`  
-		Last Modified: Wed, 10 Apr 2024 04:10:36 GMT  
-		Size: 2.7 MB (2698449 bytes)  
+	-	`sha256:e885e153eb5b04f5251965fce7ef7f3ae7ecc7b36042190defa574a1ba745a3c`  
+		Last Modified: Wed, 10 Apr 2024 12:17:21 GMT  
+		Size: 2.7 MB (2698445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:bullseye` - linux; 386
