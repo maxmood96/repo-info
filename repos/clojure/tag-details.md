@@ -153,6 +153,40 @@
 -	[`clojure:temurin-21-tools-deps-bullseye`](#clojuretemurin-21-tools-deps-bullseye)
 -	[`clojure:temurin-21-tools-deps-bullseye-slim`](#clojuretemurin-21-tools-deps-bullseye-slim)
 -	[`clojure:temurin-21-tools-deps-jammy`](#clojuretemurin-21-tools-deps-jammy)
+-	[`clojure:temurin-22-alpine`](#clojuretemurin-22-alpine)
+-	[`clojure:temurin-22-bookworm`](#clojuretemurin-22-bookworm)
+-	[`clojure:temurin-22-bookworm-slim`](#clojuretemurin-22-bookworm-slim)
+-	[`clojure:temurin-22-bullseye`](#clojuretemurin-22-bullseye)
+-	[`clojure:temurin-22-bullseye-slim`](#clojuretemurin-22-bullseye-slim)
+-	[`clojure:temurin-22-jammy`](#clojuretemurin-22-jammy)
+-	[`clojure:temurin-22-lein`](#clojuretemurin-22-lein)
+-	[`clojure:temurin-22-lein-2.11.2`](#clojuretemurin-22-lein-2112)
+-	[`clojure:temurin-22-lein-2.11.2-alpine`](#clojuretemurin-22-lein-2112-alpine)
+-	[`clojure:temurin-22-lein-2.11.2-bookworm`](#clojuretemurin-22-lein-2112-bookworm)
+-	[`clojure:temurin-22-lein-2.11.2-bookworm-slim`](#clojuretemurin-22-lein-2112-bookworm-slim)
+-	[`clojure:temurin-22-lein-2.11.2-bullseye`](#clojuretemurin-22-lein-2112-bullseye)
+-	[`clojure:temurin-22-lein-2.11.2-bullseye-slim`](#clojuretemurin-22-lein-2112-bullseye-slim)
+-	[`clojure:temurin-22-lein-2.11.2-jammy`](#clojuretemurin-22-lein-2112-jammy)
+-	[`clojure:temurin-22-lein-alpine`](#clojuretemurin-22-lein-alpine)
+-	[`clojure:temurin-22-lein-bookworm`](#clojuretemurin-22-lein-bookworm)
+-	[`clojure:temurin-22-lein-bookworm-slim`](#clojuretemurin-22-lein-bookworm-slim)
+-	[`clojure:temurin-22-lein-bullseye`](#clojuretemurin-22-lein-bullseye)
+-	[`clojure:temurin-22-lein-bullseye-slim`](#clojuretemurin-22-lein-bullseye-slim)
+-	[`clojure:temurin-22-lein-jammy`](#clojuretemurin-22-lein-jammy)
+-	[`clojure:temurin-22-tools-deps`](#clojuretemurin-22-tools-deps)
+-	[`clojure:temurin-22-tools-deps-1.11.1.1435`](#clojuretemurin-22-tools-deps-11111435)
+-	[`clojure:temurin-22-tools-deps-1.11.1.1435-alpine`](#clojuretemurin-22-tools-deps-11111435-alpine)
+-	[`clojure:temurin-22-tools-deps-1.11.1.1435-bookworm`](#clojuretemurin-22-tools-deps-11111435-bookworm)
+-	[`clojure:temurin-22-tools-deps-1.11.1.1435-bookworm-slim`](#clojuretemurin-22-tools-deps-11111435-bookworm-slim)
+-	[`clojure:temurin-22-tools-deps-1.11.1.1435-bullseye`](#clojuretemurin-22-tools-deps-11111435-bullseye)
+-	[`clojure:temurin-22-tools-deps-1.11.1.1435-bullseye-slim`](#clojuretemurin-22-tools-deps-11111435-bullseye-slim)
+-	[`clojure:temurin-22-tools-deps-1.11.1.1435-jammy`](#clojuretemurin-22-tools-deps-11111435-jammy)
+-	[`clojure:temurin-22-tools-deps-alpine`](#clojuretemurin-22-tools-deps-alpine)
+-	[`clojure:temurin-22-tools-deps-bookworm`](#clojuretemurin-22-tools-deps-bookworm)
+-	[`clojure:temurin-22-tools-deps-bookworm-slim`](#clojuretemurin-22-tools-deps-bookworm-slim)
+-	[`clojure:temurin-22-tools-deps-bullseye`](#clojuretemurin-22-tools-deps-bullseye)
+-	[`clojure:temurin-22-tools-deps-bullseye-slim`](#clojuretemurin-22-tools-deps-bullseye-slim)
+-	[`clojure:temurin-22-tools-deps-jammy`](#clojuretemurin-22-tools-deps-jammy)
 -	[`clojure:temurin-8-alpine`](#clojuretemurin-8-alpine)
 -	[`clojure:temurin-8-bookworm`](#clojuretemurin-8-bookworm)
 -	[`clojure:temurin-8-bookworm-slim`](#clojuretemurin-8-bookworm-slim)
@@ -23545,6 +23579,142 @@ CMD ["-M" "--repl"]
 		Last Modified: Thu, 28 Mar 2024 02:58:10 GMT  
 		Size: 402.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `clojure:temurin-22-alpine`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-bookworm`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-bookworm-slim`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-bullseye-slim`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-jammy`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-lein`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-lein-2.11.2`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-lein-2.11.2-alpine`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-lein-2.11.2-bookworm`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-lein-2.11.2-bookworm-slim`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-lein-2.11.2-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-lein-2.11.2-bullseye-slim`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-lein-2.11.2-jammy`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-lein-alpine`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-lein-bookworm`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-lein-bookworm-slim`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-lein-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-lein-bullseye-slim`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-lein-jammy`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-tools-deps`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-tools-deps-1.11.1.1435`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-tools-deps-1.11.1.1435-alpine`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-tools-deps-1.11.1.1435-bookworm`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-tools-deps-1.11.1.1435-bookworm-slim`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-tools-deps-1.11.1.1435-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-tools-deps-1.11.1.1435-bullseye-slim`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-tools-deps-1.11.1.1435-jammy`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-tools-deps-alpine`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-tools-deps-bookworm`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-tools-deps-bookworm-slim`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-tools-deps-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-tools-deps-bullseye-slim`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-22-tools-deps-jammy`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-8-alpine`
 
