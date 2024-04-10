@@ -1,7 +1,7 @@
 ## `pypy:2-7-bookworm`
 
 ```console
-$ docker pull pypy@sha256:1a75c4ca2095a107c126111a5a4a639b13a589570f75df0fe62789a97efc8631
+$ docker pull pypy@sha256:5c06a432fe800395f87e60e7f2800c6679b786d1b0578fab3854e96f475add4a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,25 +16,25 @@ $ docker pull pypy@sha256:1a75c4ca2095a107c126111a5a4a639b13a589570f75df0fe62789
 ### `pypy:2-7-bookworm` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:3d08c91cc0ad23ac01da8285ead9c8a6c25aeb52aea897ec754574aa8f242a4b
+$ docker pull pypy@sha256:b1ef70aff2a389dc27805dbab52612bd12706c5b2066a98e0918e0e5a3479f86
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **385.2 MB (385204844 bytes)**  
+-	Total Size: **385.2 MB (385211573 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bce376fc61f404db1b35c94ac56068a6bb90d28f242295301c846c11e3201014`
+-	Image ID: `sha256:59c0a5f40eb9a092a417a968ec31751a0cf59fc6fb31510ef17f5cf08df1c571`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Tue, 12 Mar 2024 01:20:46 GMT
-ADD file:b18b4c32dd8042f45097997c732dc29b3917fd7d5f337f9e772eee5875fbe6f1 in / 
-# Tue, 12 Mar 2024 01:20:46 GMT
+# Fri, 05 Apr 2024 21:59:23 GMT
+ADD file:ca6d1f0f80dd6c91b8ba1d1adf77d7af6d0e5f2f493a2858e384c11874314395 in / 
+# Fri, 05 Apr 2024 21:59:23 GMT
 CMD ["bash"]
-# Tue, 12 Mar 2024 05:53:14 GMT
+# Fri, 05 Apr 2024 21:59:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2024 05:53:34 GMT
+# Fri, 05 Apr 2024 21:59:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 12 Mar 2024 05:54:33 GMT
+# Fri, 05 Apr 2024 21:59:23 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
 # Fri, 05 Apr 2024 21:59:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl 		tk 	; 	rm -rf /var/lib/apt/lists/* # buildkit
@@ -57,56 +57,56 @@ CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:71215d55680cf0ab2dcc0e1dd65ed76414e3fb0c294249b5b9319a8fa7c398e4`  
-		Last Modified: Tue, 12 Mar 2024 01:25:15 GMT  
-		Size: 49.6 MB (49552196 bytes)  
+	-	`sha256:609c73876867487da051ad470002217da69bb052e2538710ade0730d893ff51f`  
+		Last Modified: Wed, 10 Apr 2024 01:55:11 GMT  
+		Size: 49.6 MB (49560360 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3cb8f9c23302e175d87a827f0a1c376bd59b1f6949bd3bc24ab8da0d669cdfa0`  
-		Last Modified: Tue, 12 Mar 2024 06:02:24 GMT  
-		Size: 24.0 MB (24046734 bytes)  
+	-	`sha256:7247ea8d81e671d079d67f3a9909315ef4641b45db90d62a1b18e3430c1937d4`  
+		Last Modified: Wed, 10 Apr 2024 05:34:49 GMT  
+		Size: 24.0 MB (24046793 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f899db30843f8330d5a40d1acb26bb00e93a9f21bff253f31c20562fa264767`  
-		Last Modified: Tue, 12 Mar 2024 06:02:43 GMT  
-		Size: 64.1 MB (64140360 bytes)  
+	-	`sha256:be374d06f38273b62ddd7aa5bc3ce3f9c781fd49a1f5a5dd94a46d2986920d7a`  
+		Last Modified: Wed, 10 Apr 2024 05:35:08 GMT  
+		Size: 64.1 MB (64140565 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:567db630df8d441ffe43e050ede26996c87e3b33c99f79d4fba0bf6b7ffa0213`  
-		Last Modified: Tue, 12 Mar 2024 06:03:18 GMT  
-		Size: 211.1 MB (211139445 bytes)  
+	-	`sha256:b4580645a8e50b87a19330da289a9b1540022379f2c99d3f0112e3c5c4a8d051`  
+		Last Modified: Wed, 10 Apr 2024 05:35:44 GMT  
+		Size: 211.1 MB (211137750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:56e97af5e3132b606a837c84a1fc35175c5c81c4d9b6dc6396e5dd7692faa4c8`  
-		Last Modified: Mon, 08 Apr 2024 21:57:05 GMT  
-		Size: 3.0 MB (2999445 bytes)  
+	-	`sha256:d5ac76fc2f7357515971ed9284920979a204ea8998afe30c4404e2d1a1de5769`  
+		Last Modified: Wed, 10 Apr 2024 06:54:43 GMT  
+		Size: 3.0 MB (2999416 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ceadfbf77daf9ed2c028cea5671d81fd7b6c063716b7ef3423965e601bb428a5`  
-		Last Modified: Mon, 08 Apr 2024 21:57:05 GMT  
-		Size: 31.4 MB (31430656 bytes)  
+	-	`sha256:bee3467570f311148a3190caf10e768007d57d67a410af6f11ccd5086d251d36`  
+		Last Modified: Wed, 10 Apr 2024 06:54:43 GMT  
+		Size: 31.4 MB (31430644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a60bab901d007ed54735afc5a87cd47ba1a15647a6442d94e501d3513f2018bc`  
-		Last Modified: Mon, 08 Apr 2024 21:57:05 GMT  
-		Size: 1.9 MB (1896008 bytes)  
+	-	`sha256:2a543c139f5342b4de5945b762c68c262dd239f600dc89da13998e1e99ea6a82`  
+		Last Modified: Wed, 10 Apr 2024 06:54:43 GMT  
+		Size: 1.9 MB (1896045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2-7-bookworm` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:df5cce9a46635a00b51a2a4a0723dd5d5e71ccfe8d0e63d190826bc9ce6994c0
+$ docker pull pypy@sha256:814a65b8463430a081f707d88f9c5605b5057b151a06c9c5cdf2d3dd8da3f11e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 MB (15716419 bytes)**  
+-	Total Size: **15.7 MB (15706478 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30ba464b29adb3371dae54c0b1784138fd75bc2cfc61c77ff96caafe0a0917c6`
+-	Image ID: `sha256:6dbf8a0b66f5d63f7a2380fcb920bf31a62f68e811c903cd4e6b60c6422454c9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:685e29091e3281753d0cb85b24f41f6eb16de6c0ca8e92959987e827b8cb0c9f`  
-		Last Modified: Mon, 08 Apr 2024 21:57:05 GMT  
-		Size: 15.7 MB (15691660 bytes)  
+	-	`sha256:e91b26132ef73f8d7df8f1a0bf52e2216fd5fdb712a21d7ebaf87fcfa4cfb6bd`  
+		Last Modified: Wed, 10 Apr 2024 06:54:43 GMT  
+		Size: 15.7 MB (15681719 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:18a787885aee760026cd800d6fc0cdd43e97269744a069652e76ae1d25d1af30`  
-		Last Modified: Mon, 08 Apr 2024 21:57:05 GMT  
+	-	`sha256:577c56174ee32b8de99c28bd67b9e6122fe282da494514c5df3e9d70257e36d9`  
+		Last Modified: Wed, 10 Apr 2024 06:54:42 GMT  
 		Size: 24.8 KB (24759 bytes)  
 		MIME: application/vnd.in-toto+json
 
