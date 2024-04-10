@@ -1,10 +1,10 @@
-# `jetty:12.0.7-jdk21-alpine-amazoncorretto`
+# `jetty:12.0.8-jdk21-alpine-amazoncorretto`
 
 ## Docker Metadata
 
-- Image ID: `sha256:846278a71491cf3c24fbbbaf52b2f24f38e3f921ac980b9d2e4482d295144551`
-- Created: `2024-03-18T18:48:02.852196162Z`
-- Virtual Size: ~ 373.88 Mb  
+- Image ID: `sha256:be002e651f750b3bdcfd1bd0834478dbc7f76f02a46b954955d39cb715bf9c22`
+- Created: `2024-04-08T19:57:33.640456485Z`
+- Virtual Size: ~ 374.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,11 +13,11 @@
   - `PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/default-jvm/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/default-jvm`
-  - `JETTY_VERSION=12.0.7`
+  - `JETTY_VERSION=12.0.8`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
   - `TMPDIR=/tmp/jetty`
-  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.7/jetty-home-12.0.7.tar.gz`
+  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.8/jetty-home-12.0.8.tar.gz`
   - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3`
 
 ## `apk` (`.apk`-based packages)
@@ -161,16 +161,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.24.0-r1 description:
+c-ares-1.27.0-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.24.0-r1 webpage:
+c-ares-1.27.0-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.24.0-r1 installed size:
-144 KiB
+c-ares-1.27.0-r0 installed size:
+152 KiB
 
-c-ares-1.24.0-r1 license:
+c-ares-1.27.0-r0 license:
 MIT
 
 ```
@@ -365,16 +365,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.3-r0 description:
+gnutls-3.8.4-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.3-r0 webpage:
+gnutls-3.8.4-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.3-r0 installed size:
-1856 KiB
+gnutls-3.8.4-r0 installed size:
+1876 KiB
 
-gnutls-3.8.3-r0 license:
+gnutls-3.8.4-r0 license:
 LGPL-2.1-or-later
 
 ```
