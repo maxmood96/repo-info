@@ -1880,14 +1880,9 @@ Licenses: (parsed from: `/usr/share/doc/libuuid1/copyright`)
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.34-0.1ubuntu9.5
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34-0.1ubuntu9.5.dsc' util-linux_2.34-0.1ubuntu9.5.dsc 4045 SHA512:d1075f0a6b691aeda94b95797273195d4a2457f5e8019a5209c2ca6ff0a4985fc028fe58613c9359b1fc10e511adfda1f1b7f8da9c4e3b1d0b93ec2414a1d32e
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34.orig.tar.xz' util-linux_2.34.orig.tar.xz 4974812 SHA512:2d0b76f63d32e7afb7acf61a83fabbfd58baa34ab78b3a331ce87f9c676a5fd71c56a493ded95039540d2c46b6048caaa38d7fb4491eb3d52d7b09dc54655cd7
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34-0.1ubuntu9.5.debian.tar.xz' util-linux_2.34-0.1ubuntu9.5.debian.tar.xz 102876 SHA512:8c15815b2bab5cdd1fed9870727252b5b7a95fad12e940515ab806635c2fca0e52bc2bbf7c88e2ca6ba8f0c7ea244c8fdedb42f7b6df681a8cc3d28289b62164
-```
 
 ### `dpkg` source package: `wget=1.20.3-1ubuntu2`
 
