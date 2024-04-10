@@ -1,7 +1,7 @@
 ## `clojure:temurin-17-jammy`
 
 ```console
-$ docker pull clojure@sha256:78b065087cdd7dab4c3a26393670c900bef4e9c417aad35a6473e3ce619a603b
+$ docker pull clojure@sha256:d6f7ce560721f689015b93f0f4c325bd221b8658cfdd5092b2faeff1491381a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -109,14 +109,14 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-17-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:4a54d16042e6fe4819989421d5c2d3ff7a0a2b49708a4ab82a51a08ba057ec8e
+$ docker pull clojure@sha256:21b5f14b92f3c64c091f39cc7cbeb4141dc68b532e4b317c708973f05bb75165
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.6 MB (242638025 bytes)**  
+-	Total Size: **242.6 MB (242638964 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9589e6aaa0f0d95809ee214da18cf099fef8c7a2990dc997d70c6a099b1ca1c5`
+-	Image ID: `sha256:4fdfa35df8ca39ff64e0abf51bc7c669b6c969fd99e712d07b75a3f0cc985c22`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -157,15 +157,15 @@ CMD ["jshell"]
 ENV CLOJURE_VERSION=1.11.1.1435
 # Thu, 28 Mar 2024 02:45:10 GMT
 WORKDIR /tmp
-# Thu, 28 Mar 2024 02:45:22 GMT
-RUN apt-get update && apt-get install -y make git rlwrap wget && rm -rf /var/lib/apt/lists/* && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apt-get purge -y --auto-remove wget
-# Thu, 28 Mar 2024 02:45:23 GMT
+# Wed, 10 Apr 2024 18:08:19 GMT
+RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -sLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)"
+# Wed, 10 Apr 2024 18:08:19 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Thu, 28 Mar 2024 02:45:23 GMT
+# Wed, 10 Apr 2024 18:08:19 GMT
 COPY file:137b40904568e30898cd031ef34f77e7f132846ba4eec91d04ae4b93dddfbb8d in /usr/local/bin/entrypoint 
-# Thu, 28 Mar 2024 02:45:23 GMT
+# Wed, 10 Apr 2024 18:08:19 GMT
 ENTRYPOINT ["entrypoint"]
-# Thu, 28 Mar 2024 02:45:23 GMT
+# Wed, 10 Apr 2024 18:08:19 GMT
 CMD ["-M" "--repl"]
 ```
 
@@ -190,15 +190,15 @@ CMD ["-M" "--repl"]
 		Last Modified: Thu, 28 Mar 2024 00:52:40 GMT  
 		Size: 731.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b168aa86716f0ede19eaac2f27cef09fe2fc5a92cf47990a416b5d67dc7f5042`  
-		Last Modified: Thu, 28 Mar 2024 02:57:33 GMT  
-		Size: 51.7 MB (51653110 bytes)  
+	-	`sha256:b3727cf3f4b8f1eb30768efa6644ec4c6ded3c32005afc64905bc5a5a3ecf8da`  
+		Last Modified: Wed, 10 Apr 2024 18:22:24 GMT  
+		Size: 51.7 MB (51654053 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4af008b774c3e786da6dcd88c3053202142c38f905e74529df0337bd6bfc0ca8`  
-		Last Modified: Thu, 28 Mar 2024 02:57:29 GMT  
-		Size: 622.0 B  
+	-	`sha256:1ba9a71fef06be68a54556698aa5e0ee5799656c802816076a9dd8ea823623e9`  
+		Last Modified: Wed, 10 Apr 2024 18:22:17 GMT  
+		Size: 619.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6fb6bda6f91a50ebd41cf33b9d0ec92df23823f353d4e8bc656e41a5e5ec719e`  
-		Last Modified: Thu, 28 Mar 2024 02:57:28 GMT  
-		Size: 403.0 B  
+	-	`sha256:be27d9e8e8f94fc0f681330d8b2682b7820bc159a11db4d883e820115af3ac01`  
+		Last Modified: Wed, 10 Apr 2024 18:22:17 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
