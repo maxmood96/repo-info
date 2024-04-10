@@ -1,82 +1,82 @@
 ## `eclipse-temurin:8-jre-nanoserver-1809`
 
 ```console
-$ docker pull eclipse-temurin@sha256:f704a2d64078293934ad97d1c5360c17aadeafeaab4ec2dcc741a189a6e8fa10
+$ docker pull eclipse-temurin@sha256:89d7b6150654d98351a7066333a9232881a096fd8ada8af572b2721767ebd7d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.17763.5576; amd64
+	-	windows version 10.0.17763.5696; amd64
 
-### `eclipse-temurin:8-jre-nanoserver-1809` - windows version 10.0.17763.5576; amd64
+### `eclipse-temurin:8-jre-nanoserver-1809` - windows version 10.0.17763.5696; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:8a42f23bc839897dc2dfcd208fe4395b1e3de9768670c30c14f407e7e41ecdc8
+$ docker pull eclipse-temurin@sha256:90b1dc7e2a32e687b807f7a312416a51326a67f2341a222ed52d86551981ddc3
 ```
 
 -	Docker Version: 20.10.21
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.9 MB (144895861 bytes)**  
+-	Total Size: **145.2 MB (145164937 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1cfb67f8c257f548e709ee8ddd7f52dc342153c69571120493dfb60032695b8`
+-	Image ID: `sha256:319ee8757f988129758e81d9fd6c613541a63a473f55b0cec7c888a6a66723fc`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["cmd","\/s","\/c"]`
 
 ```dockerfile
-# Mon, 04 Mar 2024 00:43:57 GMT
-RUN Apply image 10.0.17763.5576
-# Wed, 13 Mar 2024 00:41:38 GMT
+# Sat, 06 Apr 2024 02:05:27 GMT
+RUN Apply image 10.0.17763.5696
+# Tue, 09 Apr 2024 23:42:55 GMT
 SHELL [cmd /s /c]
-# Wed, 13 Mar 2024 00:41:38 GMT
+# Tue, 09 Apr 2024 23:42:55 GMT
 ENV JAVA_VERSION=jdk8u402-b06
-# Wed, 13 Mar 2024 00:41:39 GMT
+# Tue, 09 Apr 2024 23:42:56 GMT
 ENV JAVA_HOME=C:\openjdk-8
-# Wed, 13 Mar 2024 00:41:40 GMT
+# Tue, 09 Apr 2024 23:42:57 GMT
 USER ContainerAdministrator
-# Wed, 13 Mar 2024 00:41:51 GMT
+# Tue, 09 Apr 2024 23:43:11 GMT
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH%     && setx /M PATH %JAVA_HOME%\bin;%PATH%     && echo Complete.
-# Wed, 13 Mar 2024 00:41:51 GMT
+# Tue, 09 Apr 2024 23:43:12 GMT
 USER ContainerUser
-# Wed, 13 Mar 2024 00:46:59 GMT
+# Tue, 09 Apr 2024 23:48:37 GMT
 COPY dir:db8ed4bc6cf3fc1a9a530d737bd8bcda792821f4f1e3e610cedaee77629ebb36 in C:\openjdk-8 
-# Wed, 13 Mar 2024 00:47:10 GMT
+# Tue, 09 Apr 2024 23:48:48 GMT
 RUN echo Verifying install ...     && echo java -version && java -version     && echo Complete.
 ```
 
 -	Layers:
-	-	`sha256:7d1978583f4a1122c5128a802637410697b681e7aa97b596dcb589b088c0b85d`  
-		Last Modified: Tue, 12 Mar 2024 19:41:51 GMT  
-		Size: 104.6 MB (104620103 bytes)  
+	-	`sha256:a9b4234352dbe48c2ab26f66b300829ca94d2fc63738ee6d4221f9962d33cf5c`  
+		Last Modified: Tue, 09 Apr 2024 20:38:39 GMT  
+		Size: 104.9 MB (104889083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9569a24b1d9b596a48436098ac5fe49c52e3153cd3bd147e365a80a4059570fd`  
-		Last Modified: Wed, 13 Mar 2024 01:31:07 GMT  
-		Size: 1.2 KB (1161 bytes)  
+	-	`sha256:7b591b5f81c02344da39dc8a9084b5791cbf552c1eb85e79db1f38dfc715a681`  
+		Last Modified: Wed, 10 Apr 2024 00:47:46 GMT  
+		Size: 1.2 KB (1179 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0ac6979d3018020e5d56f24192e72d677112ce70959b875a73d0ceb74f7ab4a`  
-		Last Modified: Wed, 13 Mar 2024 01:31:07 GMT  
-		Size: 1.2 KB (1151 bytes)  
+	-	`sha256:95f488ee65de2b011deb88b648a2fd4a8df01a6335e42405d991c1303f90ecc8`  
+		Last Modified: Wed, 10 Apr 2024 00:47:46 GMT  
+		Size: 1.2 KB (1162 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a09b00f17d16e8707c45a7f82c7b23111fc4386bb12c142f745c8f3d75630a0`  
-		Last Modified: Wed, 13 Mar 2024 01:31:07 GMT  
-		Size: 1.2 KB (1163 bytes)  
+	-	`sha256:852d1dc582f1e8accc43aef8daeca6eb89735a124fb1f967b7f73ef3f9be2e91`  
+		Last Modified: Wed, 10 Apr 2024 00:47:46 GMT  
+		Size: 1.1 KB (1147 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d598c02e10beef0b23187e3090a387054f0aaba86c9b427e0e59a2b6cf0375cf`  
-		Last Modified: Wed, 13 Mar 2024 01:31:05 GMT  
-		Size: 1.2 KB (1158 bytes)  
+	-	`sha256:576c3d12347d0a39213fcd0330b9f36d0b8dd7f058cb28dc6c5a90efab178eb6`  
+		Last Modified: Wed, 10 Apr 2024 00:47:44 GMT  
+		Size: 1.2 KB (1174 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df21f9058d8a1bfd11006bb0255f88c7865c2c34851a191447c198e670ea384b`  
-		Last Modified: Wed, 13 Mar 2024 01:31:05 GMT  
-		Size: 68.9 KB (68906 bytes)  
+	-	`sha256:ee1e9364eb12671c19584d282ec60e21d04e812386049c863e0a536a61ada0e3`  
+		Last Modified: Wed, 10 Apr 2024 00:47:44 GMT  
+		Size: 66.6 KB (66551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78c8255b1c5b4f751fb254a0543c26a87c06339f37b1f99fb38054529a1941b9`  
-		Last Modified: Wed, 13 Mar 2024 01:31:05 GMT  
-		Size: 1.2 KB (1167 bytes)  
+	-	`sha256:08c2b0dd596df841ed6302a2df14e30ef0baac11bcf940216ef52ac8afbde390`  
+		Last Modified: Wed, 10 Apr 2024 00:47:44 GMT  
+		Size: 1.2 KB (1159 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7327bdcb6663c24af50cfde472b143643988b08f2345da772b271e816de1fb6a`  
-		Last Modified: Wed, 13 Mar 2024 01:32:16 GMT  
-		Size: 40.1 MB (40113792 bytes)  
+	-	`sha256:d05475690ba99de61f49f9bcb963ea2e28d247dae783aa516ab53eafc5310208`  
+		Last Modified: Wed, 10 Apr 2024 00:48:59 GMT  
+		Size: 40.1 MB (40117597 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5d128228ab37d6998c19ff029665fcbe6bca33a86420330277672b2907b6521`  
-		Last Modified: Wed, 13 Mar 2024 01:32:10 GMT  
-		Size: 87.3 KB (87260 bytes)  
+	-	`sha256:e58cfd7c63fadcc806fa012d963fd773e9269931da21c0c92d85d290a1401eac`  
+		Last Modified: Wed, 10 Apr 2024 00:48:53 GMT  
+		Size: 85.9 KB (85885 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
