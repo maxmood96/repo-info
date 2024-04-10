@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:985370eab139c4c495fdd7910edd5c767f910a0a6115b4d2e4b1bfc0b2d1412a`
-- Created: `2024-03-23T01:54:59.738362227Z`
-- Virtual Size: ~ 571.16 Mb  
+- Image ID: `sha256:992bfb9e2c6c6192955b5db1d6c33035e10cd64ebeb58479ecfc20295b7ba06c`
+- Created: `2024-04-09T02:54:33.283142331Z`
+- Virtual Size: ~ 572.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -4323,14 +4323,11 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `bsdutils=1:2.36.1-8+deb11u1`
-- `libblkid1:amd64=2.36.1-8+deb11u1`
-- `libmount1:amd64=2.36.1-8+deb11u1`
 - `libsmartcols1:amd64=2.36.1-8+deb11u1`
-- `libuuid1:amd64=2.36.1-8+deb11u1`
 - `mount=2.36.1-8+deb11u1`
 - `util-linux=2.36.1-8+deb11u1`
 
-Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
+Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
 - `BSD-2-clause`
 - `BSD-3-clause`
@@ -4363,6 +4360,48 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/util-linux/2.36.1-8+deb11u1/ (for browsing the source)
 - https://sources.debian.net/src/util-linux/2.36.1-8+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/util-linux/2.36.1-8+deb11u1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `util-linux=2.36.1-8+deb11u2`
+
+Binary Packages:
+
+- `libblkid1:amd64=2.36.1-8+deb11u2`
+- `libmount1:amd64=2.36.1-8+deb11u2`
+- `libuuid1:amd64=2.36.1-8+deb11u2`
+
+Licenses: (parsed from: `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libuuid1/copyright`)
+
+- `BSD-2-clause`
+- `BSD-3-clause`
+- `BSD-4-clause`
+- `GPL-2`
+- `GPL-2+`
+- `GPL-3`
+- `GPL-3+`
+- `LGPL`
+- `LGPL-2`
+- `LGPL-2+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+- `LGPL-3`
+- `LGPL-3+`
+- `MIT`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris util-linux=2.36.1-8+deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.36.1-8%2bdeb11u2.dsc' util-linux_2.36.1-8+deb11u2.dsc 4306 SHA256:16cfb1bc4d0a52f5edf2c78b5e022bb1fc180f03b93a5094b5c420a0d8d4431a
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.36.1.orig.tar.xz' util-linux_2.36.1.orig.tar.xz 5231880 SHA256:09fac242172cd8ec27f0739d8d192402c69417617091d8c6e974841568f37eed
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.36.1-8%2bdeb11u2.debian.tar.xz' util-linux_2.36.1-8+deb11u2.debian.tar.xz 106524 SHA256:0b07fbb79e1dab3be2568295664af950a7c3e589ce7821febf2ab0a3ccbe4862
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/util-linux/2.36.1-8+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.36.1-8+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.36.1-8+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `x265=3.4-2`
 
