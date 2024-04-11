@@ -1,10 +1,10 @@
-# `ghost:5.81.1`
+# `ghost:5.82.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:92b0c93ce4408d052c8810aa33606fed6e6416406f2cb6a06c66692fd5844f4d`
-- Created: `2024-04-01T08:19:13Z`
-- Virtual Size: ~ 592.78 Mb  
+- Image ID: `sha256:50c23e72c27069a183eea11d309859d085cedd3675743c824f31eff6afca3d7a`
+- Created: `2024-04-08T20:19:13Z`
+- Virtual Size: ~ 592.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `GHOST_CLI_VERSION=1.26.0`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
-  - `GHOST_VERSION=5.81.1`
+  - `GHOST_VERSION=5.82.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1824,18 +1824,18 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/usrmerge/37~deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/usrmerge/37~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `util-linux=2.38.1-5`
+### `dpkg` source package: `util-linux=2.38.1-5+deb12u1`
 
 Binary Packages:
 
-- `bsdutils=1:2.38.1-5+b1`
-- `libblkid1:amd64=2.38.1-5+b1`
-- `libmount1:amd64=2.38.1-5+b1`
-- `libsmartcols1:amd64=2.38.1-5+b1`
-- `libuuid1:amd64=2.38.1-5+b1`
-- `mount=2.38.1-5+b1`
-- `util-linux=2.38.1-5+b1`
-- `util-linux-extra=2.38.1-5+b1`
+- `bsdutils=1:2.38.1-5+deb12u1`
+- `libblkid1:amd64=2.38.1-5+deb12u1`
+- `libmount1:amd64=2.38.1-5+deb12u1`
+- `libsmartcols1:amd64=2.38.1-5+deb12u1`
+- `libuuid1:amd64=2.38.1-5+deb12u1`
+- `mount=2.38.1-5+deb12u1`
+- `util-linux=2.38.1-5+deb12u1`
+- `util-linux-extra=2.38.1-5+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/util-linux-extra/copyright`)
 
@@ -1859,7 +1859,7 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.38.1-5
+$ apt-get source -qq --print-uris util-linux=2.38.1-5+deb12u1
 'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u1.dsc' util-linux_2.38.1-5+deb12u1.dsc 4579 SHA256:980d9d9d9e56c12c067c281d8e4e6b1314537d8dac408b9f933e033da535d455
 'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.38.1.orig.tar.xz' util-linux_2.38.1.orig.tar.xz 7495904 SHA256:60492a19b44e6cf9a3ddff68325b333b8b52b6c59ce3ebd6a0ecaa4c5117e84f
 'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u1.debian.tar.xz' util-linux_2.38.1-5+deb12u1.debian.tar.xz 118748 SHA256:751272cc0bbf1ed84a5a3378798aac17164de12f449575cc979b5b294f27d305
@@ -1867,9 +1867,9 @@ $ apt-get source -qq --print-uris util-linux=2.38.1-5
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/util-linux/2.38.1-5/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.38.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.38.1-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/util-linux/2.38.1-5+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.38.1-5+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.38.1-5+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.1-1`
 
