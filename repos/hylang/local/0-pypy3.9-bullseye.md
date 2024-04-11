@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f84761b1901a9a2554bf04c0d69a28de93e66674fc01d99eaa30a53fe65c9844`
+- Image ID: `sha256:9a0e0e394414366d7e42f50cec766daec5d99c1caa54114ee6965c51a138b6c7`
 - Created: `2024-01-05T23:20:01Z`
-- Virtual Size: ~ 240.76 Mb  
+- Virtual Size: ~ 220.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -671,11 +671,9 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libc-bin=2.31-13+deb11u8`
-- `libc-dev-bin=2.31-13+deb11u8`
 - `libc6:amd64=2.31-13+deb11u8`
-- `libc6-dev:amd64=2.31-13+deb11u8`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -1106,10 +1104,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libnsl-dev:amd64=1.3.0-2`
 - `libnsl2:amd64=1.3.0-2`
 
-Licenses: (parsed from: `/usr/share/doc/libnsl-dev/copyright`, `/usr/share/doc/libnsl2/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libnsl2/copyright`)
 
 - `BSD-3-clause`
 - `GPL-2`
@@ -1280,10 +1277,9 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libtirpc-common=1.3.1-1+deb11u1`
-- `libtirpc-dev:amd64=1.3.1-1+deb11u1`
 - `libtirpc3:amd64=1.3.1-1+deb11u1`
 
-Licenses: (parsed from: `/usr/share/doc/libtirpc-common/copyright`, `/usr/share/doc/libtirpc-dev/copyright`, `/usr/share/doc/libtirpc3/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libtirpc-common/copyright`, `/usr/share/doc/libtirpc3/copyright`)
 
 - `BSD-2-Clause`
 - `BSD-3-Clause`
@@ -1349,7 +1345,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libcrypt-dev:amd64=1:4.4.18-4`
 - `libcrypt1:amd64=1:4.4.18-4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -1398,38 +1393,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/ (for browsing the source)
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `linux=5.10.209-2`
-
-Binary Packages:
-
-- `linux-libc-dev:amd64=5.10.209-2`
-
-Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
-
-- `BSD-2-clause`
-- `CRYPTOGAMS`
-- `GPL-2`
-- `GPL-2+`
-- `LGPL-2.1`
-- `Unicode-data`
-- `X11`
-- `Xen-interface`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris linux=5.10.209-2
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.209-2.dsc' linux_5.10.209-2.dsc 205890 SHA256:6d137389e102a5f358d80bbd0c524925d897ddf7c3a1aec73cf6348c1fa29599
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.209.orig.tar.xz' linux_5.10.209.orig.tar.xz 121921636 SHA256:69b99ca71f4c93882bf7c50140ddae031aa75ad0d9d9ea6de32929a24a6469b9
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.209-2.debian.tar.xz' linux_5.10.209-2.debian.tar.xz 1653884 SHA256:85c8a9d0b2931156ac60c9c27c8685cd602ecf5add9b7919b8c59bb5145d8b02
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/linux/5.10.209-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.209-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.209-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
@@ -1952,17 +1915,17 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tzdata/2024a-0+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tzdata/2024a-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `util-linux=2.36.1-8+deb11u1`
+### `dpkg` source package: `util-linux=2.36.1-8+deb11u2`
 
 Binary Packages:
 
-- `bsdutils=1:2.36.1-8+deb11u1`
-- `libblkid1:amd64=2.36.1-8+deb11u1`
-- `libmount1:amd64=2.36.1-8+deb11u1`
-- `libsmartcols1:amd64=2.36.1-8+deb11u1`
-- `libuuid1:amd64=2.36.1-8+deb11u1`
-- `mount=2.36.1-8+deb11u1`
-- `util-linux=2.36.1-8+deb11u1`
+- `bsdutils=1:2.36.1-8+deb11u2`
+- `libblkid1:amd64=2.36.1-8+deb11u2`
+- `libmount1:amd64=2.36.1-8+deb11u2`
+- `libsmartcols1:amd64=2.36.1-8+deb11u2`
+- `libuuid1:amd64=2.36.1-8+deb11u2`
+- `mount=2.36.1-8+deb11u2`
+- `util-linux=2.36.1-8+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -1986,17 +1949,17 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.36.1-8+deb11u1
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1-8%2bdeb11u1.dsc' util-linux_2.36.1-8+deb11u1.dsc 4461 SHA256:1f42a8e46c383b6fbfb57ea89dfe5adb5b7e6960bc5e8cdb9589109773be6cac
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1.orig.tar.xz' util-linux_2.36.1.orig.tar.xz 5231880 SHA256:09fac242172cd8ec27f0739d8d192402c69417617091d8c6e974841568f37eed
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1-8%2bdeb11u1.debian.tar.xz' util-linux_2.36.1-8+deb11u1.debian.tar.xz 101448 SHA256:edda1d46e25a40e730c672aac2cd0e44f9eeb0fb64b27be957d6924ed5288a0a
+$ apt-get source -qq --print-uris util-linux=2.36.1-8+deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.36.1-8%2bdeb11u2.dsc' util-linux_2.36.1-8+deb11u2.dsc 4306 SHA256:16cfb1bc4d0a52f5edf2c78b5e022bb1fc180f03b93a5094b5c420a0d8d4431a
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.36.1.orig.tar.xz' util-linux_2.36.1.orig.tar.xz 5231880 SHA256:09fac242172cd8ec27f0739d8d192402c69417617091d8c6e974841568f37eed
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.36.1-8%2bdeb11u2.debian.tar.xz' util-linux_2.36.1-8+deb11u2.debian.tar.xz 106524 SHA256:0b07fbb79e1dab3be2568295664af950a7c3e589ce7821febf2ab0a3ccbe4862
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/util-linux/2.36.1-8+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.36.1-8+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.36.1-8+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/util-linux/2.36.1-8+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.36.1-8+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.36.1-8+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.0-2`
 
