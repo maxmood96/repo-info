@@ -1,7 +1,7 @@
 ## `satosa:8-bookworm`
 
 ```console
-$ docker pull satosa@sha256:0ca41fd5096b7760dc55382138c4b612d9d14a3053869d48c472cac06b88e2ea
+$ docker pull satosa@sha256:575c3ef7b671c496314a0ded7e0b4a79ae9e29dfeb6ccdd7645489e5c6799619
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -427,102 +427,102 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 ### `satosa:8-bookworm` - linux; s390x
 
 ```console
-$ docker pull satosa@sha256:12938bc60b565499ba801c3f9bb52f0f04e10599a0a2a4c98d022b2405e0382e
+$ docker pull satosa@sha256:b43d3fd238a36783513725cb3e8d15f84065586cd76aea16a4cfeba90c41553a
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **271.7 MB (271726475 bytes)**  
+-	Total Size: **328.6 MB (328578434 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d48f0c06c1c78802630887d6f0f0a05adeda7f135d8070bd6d77dabe39fd10ba`
+-	Image ID: `sha256:3c2ae6184e95cb5dd0991d083b5b8438b882b6fe43a8e947a222acbb4659b654`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["gunicorn","-b0.0.0.0:8080","satosa.wsgi:app"]`
 
 ```dockerfile
-# Tue, 12 Mar 2024 00:54:02 GMT
-ADD file:80ab985d4871ca6a72156bedfe1038e6b1a89591fc2fd86c4ef778d293223aff in / 
-# Tue, 12 Mar 2024 00:54:03 GMT
+# Wed, 10 Apr 2024 01:14:52 GMT
+ADD file:0e66ba8384d53d3671a6a148f8bad9decf482a97ef81d0740132e74b8e30c670 in / 
+# Wed, 10 Apr 2024 01:14:57 GMT
 CMD ["bash"]
-# Thu, 21 Mar 2024 23:32:08 GMT
+# Tue, 09 Apr 2024 15:49:24 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Mar 2024 23:32:08 GMT
+# Tue, 09 Apr 2024 15:49:24 GMT
 ENV LANG=C.UTF-8
-# Thu, 21 Mar 2024 23:32:08 GMT
+# Tue, 09 Apr 2024 15:49:24 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 21 Mar 2024 23:32:08 GMT
+# Tue, 09 Apr 2024 15:49:24 GMT
 ENV GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305
-# Thu, 21 Mar 2024 23:32:08 GMT
-ENV PYTHON_VERSION=3.12.2
-# Thu, 21 Mar 2024 23:32:08 GMT
+# Tue, 09 Apr 2024 15:49:24 GMT
+ENV PYTHON_VERSION=3.12.3
+# Tue, 09 Apr 2024 15:49:24 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libdb-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-lto 		--with-system-expat 		--without-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="$(dpkg-buildflags --get CFLAGS)"; 	LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 		"PROFILE_TASK=${PROFILE_TASK:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		"PROFILE_TASK=${PROFILE_TASK:-}" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version # buildkit
-# Thu, 21 Mar 2024 23:32:08 GMT
+# Tue, 09 Apr 2024 15:49:24 GMT
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
-# Thu, 21 Mar 2024 23:32:08 GMT
+# Tue, 09 Apr 2024 15:49:24 GMT
 ENV PYTHON_PIP_VERSION=24.0
-# Thu, 21 Mar 2024 23:32:08 GMT
+# Tue, 09 Apr 2024 15:49:24 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/dbf0c85f76fb6e1ab42aa672ffca6f0a675d9ee4/public/get-pip.py
-# Thu, 21 Mar 2024 23:32:08 GMT
+# Tue, 09 Apr 2024 15:49:24 GMT
 ENV PYTHON_GET_PIP_SHA256=dfe9fd5c28dc98b5ac17979a953ea550cec37ae1b47a5116007395bfacff2ab9
-# Thu, 21 Mar 2024 23:32:08 GMT
+# Tue, 09 Apr 2024 15:49:24 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 	; 	rm -f get-pip.py; 		pip --version # buildkit
-# Thu, 21 Mar 2024 23:32:08 GMT
+# Tue, 09 Apr 2024 15:49:24 GMT
 CMD ["python3"]
-# Tue, 26 Mar 2024 00:24:58 GMT
+# Fri, 12 Apr 2024 07:30:12 GMT
 RUN set -eux; 	groupadd -g 1000 satosa; 	useradd -m -g 1000 -u 1000 satosa; 	apt-get update; 	apt-get install -y --no-install-recommends 		jq 		libxml2-utils 		xmlsec1 	; 	rm -rf /var/lib/apt/lists/*; 	pip install --no-cache-dir 		yq 	;
-# Tue, 26 Mar 2024 00:24:59 GMT
+# Fri, 12 Apr 2024 07:30:13 GMT
 ENV SATOSA_VERSION=8.4.0
-# Tue, 26 Mar 2024 00:29:36 GMT
+# Fri, 12 Apr 2024 07:33:48 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		cargo 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		python3-dev 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 	pip install --no-cache-dir 		satosa==${SATOSA_VERSION} 	; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	mkdir /etc/satosa; 	chown -R satosa:satosa /etc/satosa
-# Tue, 26 Mar 2024 00:29:44 GMT
+# Fri, 12 Apr 2024 07:33:55 GMT
 RUN set -eux; 	python -c 'import urllib.request; urllib.request.urlretrieve("https://github.com/IdentityPython/SATOSA/archive/refs/tags/v'${SATOSA_VERSION%%[a-z]*}'.tar.gz","/tmp/satosa.tgz")'; 	mkdir /usr/share/satosa; 	tar --extract --directory /usr/share/satosa --strip-components=1 --file /tmp/satosa.tgz SATOSA-${SATOSA_VERSION%%[a-z]*}/example/; 	rm /tmp/satosa.tgz
-# Tue, 26 Mar 2024 00:29:44 GMT
+# Fri, 12 Apr 2024 07:33:55 GMT
 WORKDIR /etc/satosa
-# Tue, 26 Mar 2024 00:29:44 GMT
+# Fri, 12 Apr 2024 07:33:55 GMT
 COPY file:c55013587aaf85deb9d4e88a802c99946f6d607afbf641c34429da762c1aa229 in /usr/local/bin/ 
-# Tue, 26 Mar 2024 00:29:44 GMT
+# Fri, 12 Apr 2024 07:33:55 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 26 Mar 2024 00:29:45 GMT
+# Fri, 12 Apr 2024 07:33:56 GMT
 EXPOSE 8080
-# Tue, 26 Mar 2024 00:29:45 GMT
+# Fri, 12 Apr 2024 07:33:56 GMT
 USER satosa:satosa
-# Tue, 26 Mar 2024 00:29:45 GMT
+# Fri, 12 Apr 2024 07:33:56 GMT
 CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 ```
 
 -	Layers:
-	-	`sha256:9cada496cd2b8a88571bf23d513e7fce34888d13321fcf23c6613bffe4c37297`  
-		Last Modified: Tue, 12 Mar 2024 01:21:14 GMT  
-		Size: 27.5 MB (27488684 bytes)  
+	-	`sha256:06d33788df65214dbd82280e1b49e32ce4580d4f3df100d32090f4eae8ccd99c`  
+		Last Modified: Wed, 10 Apr 2024 01:48:29 GMT  
+		Size: 27.5 MB (27494178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:422f87c81c09eed198f4840cfdda489d126bc576b267aaf7a15d3032c5707256`  
-		Last Modified: Tue, 12 Mar 2024 07:57:27 GMT  
-		Size: 3.2 MB (3166489 bytes)  
+	-	`sha256:b0ab55367ea61634c0fef8eca2dc0a6674c6bb708a9a768102459e1f6b1e015c`  
+		Last Modified: Wed, 10 Apr 2024 06:07:52 GMT  
+		Size: 3.2 MB (3166546 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55a2b7432fae80ee3d073a061259d46325906d548b004eaecb0499ab6b91c30a`  
-		Last Modified: Tue, 12 Mar 2024 07:58:06 GMT  
-		Size: 11.9 MB (11917854 bytes)  
+	-	`sha256:44da4e20c1159526a8ab96aeb1ecfaede20fa9ca95a36db944dd44b791caa700`  
+		Last Modified: Wed, 10 Apr 2024 06:07:53 GMT  
+		Size: 11.9 MB (11923693 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dba0d92e1771edb9fbb73e82ee7cd9b9a2034e2cb6e61db2bf0c4ece3e55c6ce`  
-		Last Modified: Tue, 12 Mar 2024 07:58:04 GMT  
-		Size: 244.0 B  
+	-	`sha256:3684cdc4eaef5ded9c337509ee03f1438147c574b5e8783902a79b6a99c9c06a`  
+		Last Modified: Wed, 10 Apr 2024 06:07:51 GMT  
+		Size: 245.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8afd540ac6732227a84a56f203e1cc6f5c67efcfc6de3cc645be334a746ff6a2`  
-		Last Modified: Tue, 12 Mar 2024 07:58:05 GMT  
-		Size: 3.0 MB (2978841 bytes)  
+	-	`sha256:45bc63a26231b21d46d587666ba9331962168cdb206fc9a9d8db96fbb16cdb8d`  
+		Last Modified: Wed, 10 Apr 2024 06:07:52 GMT  
+		Size: 3.0 MB (2980958 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb8ded72e491d897dc4f81e9798a7383ee72d861ec8eae86205a75e34a468f9d`  
-		Last Modified: Tue, 26 Mar 2024 00:32:11 GMT  
-		Size: 23.8 MB (23847054 bytes)  
+	-	`sha256:39b05eca61e2c3a7b9453f7c2fa7ba080ed3dd398c801c02136bd4ec2a16f233`  
+		Last Modified: Fri, 12 Apr 2024 07:35:04 GMT  
+		Size: 23.9 MB (23864021 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f5ad47f12871d77354a22e5964945f9a1deb81e55674d9c120c12045a37219f`  
-		Last Modified: Tue, 26 Mar 2024 00:32:29 GMT  
-		Size: 202.3 MB (202315202 bytes)  
+	-	`sha256:6eea38987c6a175218ba4798a2911626690d512a590ef940c40f0ad5e564d9da`  
+		Last Modified: Fri, 12 Apr 2024 07:35:14 GMT  
+		Size: 259.1 MB (259136692 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8635e1fedbc0ccb7d2ab02087ae86ede39a03d45ab9863d25d3702bb529accf`  
-		Last Modified: Tue, 26 Mar 2024 00:32:06 GMT  
-		Size: 10.0 KB (9963 bytes)  
+	-	`sha256:0129b742e124dd3e885b2dd46777712537202188d1a16ece3a8a5c46e56c50e8`  
+		Last Modified: Fri, 12 Apr 2024 07:35:01 GMT  
+		Size: 10.0 KB (9962 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8853a256bdc15a734634526bafee53640deb30eab9dd5a33a2c3518fc44dfb2`  
-		Last Modified: Tue, 26 Mar 2024 00:32:06 GMT  
-		Size: 2.1 KB (2144 bytes)  
+	-	`sha256:0388b0702af04b43a6bfec66d830e1bb9c855aaeefb56476ee809b4e2d8b1be4`  
+		Last Modified: Fri, 12 Apr 2024 07:35:01 GMT  
+		Size: 2.1 KB (2139 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
