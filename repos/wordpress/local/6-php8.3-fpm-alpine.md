@@ -1,10 +1,10 @@
-# `wordpress:6.5.0-php8.3-fpm-alpine`
+# `wordpress:6.5.2-php8.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:13d3f4fd3bbd75c9bc61652cf8f1ea1ddb40e3005209895e2384d49d7ac170a9`
-- Created: `2024-04-02T19:05:43Z`
-- Virtual Size: ~ 256.66 Mb  
+- Image ID: `sha256:5ec671e5db597709353b57553a2c4dac0a69b6debc49228dc255e89a9020391d`
+- Created: `2024-04-10T02:30:59Z`
+- Virtual Size: ~ 262.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.4`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.4.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.4.tar.xz.asc`
-  - `PHP_SHA256=39a337036a546e5c28aea76cf424ac172db5156bd8a8fd85252e389409a5ba63`
+  - `PHP_VERSION=8.3.6`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.6.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.6.tar.xz.asc`
+  - `PHP_SHA256=53c8386b2123af97626d3438b3e4058e0c5914cb74b048a6676c57ac647f5eae`
 
 ## `apk` (`.apk`-based packages)
 
@@ -197,16 +197,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.24.0-r1 description:
+c-ares-1.27.0-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.24.0-r1 webpage:
+c-ares-1.27.0-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.24.0-r1 installed size:
-144 KiB
+c-ares-1.27.0-r0 installed size:
+152 KiB
 
-c-ares-1.24.0-r1 license:
+c-ares-1.27.0-r0 license:
 MIT
 
 ```
@@ -656,16 +656,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r5 description:
+libcrypto3-3.1.4-r6 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r5 webpage:
+libcrypto3-3.1.4-r6 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r5 installed size:
+libcrypto3-3.1.4-r6 installed size:
 4500 KiB
 
-libcrypto3-3.1.4-r5 license:
+libcrypto3-3.1.4-r6 license:
 Apache-2.0
 
 ```
@@ -911,16 +911,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r5 description:
+libssl3-3.1.4-r6 description:
 SSL shared libraries
 
-libssl3-3.1.4-r5 webpage:
+libssl3-3.1.4-r6 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r5 installed size:
+libssl3-3.1.4-r6 installed size:
 548 KiB
 
-libssl3-3.1.4-r5 license:
+libssl3-3.1.4-r6 license:
 Apache-2.0
 
 ```
@@ -1251,16 +1251,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r5 description:
+openssl-3.1.4-r6 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r5 webpage:
+openssl-3.1.4-r6 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r5 installed size:
+openssl-3.1.4-r6 installed size:
 732 KiB
 
-openssl-3.1.4-r5 license:
+openssl-3.1.4-r6 license:
 Apache-2.0
 
 ```
