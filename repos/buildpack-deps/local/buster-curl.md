@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:69123c5465280e07adf01a66e71dfe077eb93deb346ecbf80550e5c64893eada`
-- Created: `2024-03-12T05:56:14.741333546Z`
-- Virtual Size: ~ 147.21 Mb  
+- Image ID: `sha256:79f257116d1e01d1a04ea40abe5506efaed3ca51e62b01cb6f2177218c8d0a66`
+- Created: `2024-04-10T05:27:59.275716926Z`
+- Virtual Size: ~ 147.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -324,12 +324,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.30-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.30-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.64.0-4+deb10u8`
+### `dpkg` source package: `curl=7.64.0-4+deb10u9`
 
 Binary Packages:
 
-- `curl=7.64.0-4+deb10u8`
-- `libcurl4:amd64=7.64.0-4+deb10u8`
+- `curl=7.64.0-4+deb10u9`
+- `libcurl4:amd64=7.64.0-4+deb10u9`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -340,13 +340,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.64.0-4+deb10u9
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0-4%2bdeb10u9.dsc' curl_7.64.0-4+deb10u9.dsc 2719 SHA256:4aa1619bb94edf34dc8c66fce4665089a9d2daa78ddaf0af7c9d63180b5bd306
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0.orig.tar.gz' curl_7.64.0.orig.tar.gz 4032645 SHA256:cb90d2eb74d4e358c1ed1489f8e3af96b50ea4374ad71f143fa4595e998d81b5
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0-4%2bdeb10u9.debian.tar.xz' curl_7.64.0-4+deb10u9.debian.tar.xz 72416 SHA256:ca0718f3388879cc2c7b6db8d5d784c88ac599721812888c45d84b63c454ef58
+```
 
-- http://snapshot.debian.org/package/curl/7.64.0-4+deb10u8/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.64.0-4+deb10u9/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.64.0-4+deb10u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.64.0-4+deb10u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-1+deb10u2`
 
@@ -2254,19 +2261,19 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tzdata/2021a-0+deb10u12/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tzdata/2021a-0+deb10u12/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `util-linux=2.33.1-0.1`
+### `dpkg` source package: `util-linux=2.33.1-0.1+deb10u1`
 
 Binary Packages:
 
-- `bsdutils=1:2.33.1-0.1`
-- `fdisk=2.33.1-0.1`
-- `libblkid1:amd64=2.33.1-0.1`
-- `libfdisk1:amd64=2.33.1-0.1`
-- `libmount1:amd64=2.33.1-0.1`
-- `libsmartcols1:amd64=2.33.1-0.1`
-- `libuuid1:amd64=2.33.1-0.1`
-- `mount=2.33.1-0.1`
-- `util-linux=2.33.1-0.1`
+- `bsdutils=1:2.33.1-0.1+deb10u1`
+- `fdisk=2.33.1-0.1+deb10u1`
+- `libblkid1:amd64=2.33.1-0.1+deb10u1`
+- `libfdisk1:amd64=2.33.1-0.1+deb10u1`
+- `libmount1:amd64=2.33.1-0.1+deb10u1`
+- `libsmartcols1:amd64=2.33.1-0.1+deb10u1`
+- `libuuid1:amd64=2.33.1-0.1+deb10u1`
+- `mount=2.33.1-0.1+deb10u1`
+- `util-linux=2.33.1-0.1+deb10u1`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdisk/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -2290,17 +2297,17 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.33.1-0.1
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.33.1-0.1.dsc' util-linux_2.33.1-0.1.dsc 3988 SHA256:b5ee1ff0a8de37c3e4d7c0c29b7571b30ba4bea1d37e55e3d1dac3a3cbc50827
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.33.1.orig.tar.xz' util-linux_2.33.1.orig.tar.xz 4650936 SHA256:c14bd9f3b6e1792b90db87696e87ec643f9d63efa0a424f092a5a6b2f2dbef21
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.33.1-0.1.debian.tar.xz' util-linux_2.33.1-0.1.debian.tar.xz 81780 SHA256:07bfeb8298fab559dec2091463cab343785853bcae6c92c0806b7639e105913a
+$ apt-get source -qq --print-uris util-linux=2.33.1-0.1+deb10u1
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.33.1-0.1%2bdeb10u1.dsc' util-linux_2.33.1-0.1+deb10u1.dsc 3995 SHA256:cb5ba81b8dfa3ddfe2995b640b2fbe6b35d9706b0185d8d03efe2e6238dcf361
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.33.1.orig.tar.xz' util-linux_2.33.1.orig.tar.xz 4650936 SHA256:c14bd9f3b6e1792b90db87696e87ec643f9d63efa0a424f092a5a6b2f2dbef21
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.33.1-0.1%2bdeb10u1.debian.tar.xz' util-linux_2.33.1-0.1+deb10u1.debian.tar.xz 87368 SHA256:a1f70741a39a31700a443f462a50c3a10b540256bdde1635e0afdb083507d0bf
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/util-linux/2.33.1-0.1/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.33.1-0.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.33.1-0.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/util-linux/2.33.1-0.1+deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.33.1-0.1+deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.33.1-0.1+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.20.1-1.1`
 

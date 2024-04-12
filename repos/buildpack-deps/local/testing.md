@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:efd6e9445ce815823bd61f82d8ccac60f8042376e7245a561d54e52d5d405da5`
-- Created: `2024-03-30T21:41:28.873371526Z`
+- Image ID: `sha256:660c67ac59352e42df731c6b35275ad3e32375454b2758c799e83475c2f3a490`
+- Created: `2024-04-10T05:33:28.073454695Z`
 - Virtual Size: ~ 1.12 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -4249,12 +4249,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/media-types/10.1.0/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/media-types/10.1.0/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mercurial=6.7.1-1`
+### `dpkg` source package: `mercurial=6.7.2-1`
 
 Binary Packages:
 
-- `mercurial=6.7.1-1`
-- `mercurial-common=6.7.1-1`
+- `mercurial=6.7.2-1`
+- `mercurial-common=6.7.2-1`
 
 Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/mercurial-common/copyright`)
 
@@ -4263,13 +4263,21 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris mercurial=6.7.2-1
+'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.7.2-1.dsc' mercurial_6.7.2-1.dsc 2806 SHA256:903c49bf8937e4d5de9c354363f28419ebaaa1b8328c09728785faf0fd4d208a
+'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.7.2.orig.tar.gz' mercurial_6.7.2.orig.tar.gz 8302143 SHA256:1c22070c05dfaac41ff88a39ce2508dde480f0dd05d45d7efab4c5cdc6ddd806
+'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.7.2.orig.tar.gz.asc' mercurial_6.7.2.orig.tar.gz.asc 659 SHA256:954a0ee6421c46ab815956465c821336e96d7af32c69d138b0f2b9ad6bdaf431
+'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.7.2-1.debian.tar.xz' mercurial_6.7.2-1.debian.tar.xz 69476 SHA256:033fd110d988e8cc32d43310706bdbd387f00f1a939fcdb2727e3aac5effcd7a
+```
 
-- http://snapshot.debian.org/package/mercurial/6.7.1-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/mercurial/6.7.2-1/ (for browsing the source)
+- https://sources.debian.net/src/mercurial/6.7.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mercurial/6.7.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpclib3=1.3.1-1`
 
@@ -5081,24 +5089,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/procps/2:4.0.4-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/procps/2:4.0.4-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python-packaging=23.2-1`
+### `dpkg` source package: `python-packaging=24.0-1`
 
 Binary Packages:
 
-- `python3-packaging=23.2-1`
+- `python3-packaging=24.0-1`
 
 Licenses: (parsed from: `/usr/share/doc/python3-packaging/copyright`)
 
 - `Apache-2.0`
 - `BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris python-packaging=24.0-1
+'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_24.0-1.dsc' python-packaging_24.0-1.dsc 1932 SHA256:fbde25de75ee1c592299f5e8fac11a4e85149f37222f6fff16bcb20b7146d041
+'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_24.0.orig.tar.gz' python-packaging_24.0.orig.tar.gz 147882 SHA256:eb82c5e3e56209074766e6885bb04b8c38a0c015d0a30036ebe7ece34c9989e9
+'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_24.0-1.debian.tar.xz' python-packaging_24.0-1.debian.tar.xz 2928 SHA256:4ceff47943271cc2b9fa18b2e373378c26f0cdd9b3acd63bea11d0470be31a78
+```
 
-- http://snapshot.debian.org/package/python-packaging/23.2-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/python-packaging/24.0-1/ (for browsing the source)
+- https://sources.debian.net/src/python-packaging/24.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python-packaging/24.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.11.6-1`
 
