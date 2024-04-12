@@ -1,19 +1,19 @@
-# `erlang:24.3.4.16-alpine`
+# `erlang:24.3.4.17-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:dc3b0ade5e087e31b47bcdf895279682333070dba5508a876e0382f8826a302b`
-- Created: `2024-03-16T08:26:18.730521046Z`
-- Virtual Size: ~ 73.75 Mb  
+- Image ID: `sha256:093fff0fb8287877b40545d4f4ad15c70144b0b920847b906068d2d76f5afb2e`
+- Created: `2024-04-11T23:29:22.976571466Z`
+- Virtual Size: ~ 78.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=24.3.4.16`
-  - `REBAR3_VERSION=3.22.1`
+  - `OTP_VERSION=24.3.4.17`
+  - `REBAR3_VERSION=3.23.0`
 - Labels:
-  - `org.opencontainers.image.version=24.3.4.16`
+  - `org.opencontainers.image.version=24.3.4.17`
 
 ## `apk` (`.apk`-based packages)
 
@@ -122,16 +122,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20230506-r0 description:
+ca-certificates-20240226-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20230506-r0 webpage:
+ca-certificates-20240226-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20230506-r0 installed size:
-692 KiB
+ca-certificates-20240226-r0 installed size:
+716 KiB
 
-ca-certificates-20230506-r0 license:
+ca-certificates-20240226-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -173,16 +173,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.12-r4 description:
+libcrypto3-3.0.12-r5 description:
 Crypto library from openssl
 
-libcrypto3-3.0.12-r4 webpage:
+libcrypto3-3.0.12-r5 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.12-r4 installed size:
+libcrypto3-3.0.12-r5 installed size:
 4120 KiB
 
-libcrypto3-3.0.12-r4 license:
+libcrypto3-3.0.12-r5 license:
 Apache-2.0
 
 ```
@@ -224,16 +224,16 @@ GPL-2.0-only AND LGPL-2.1-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.12-r4 description:
+libssl3-3.0.12-r5 description:
 SSL shared libraries
 
-libssl3-3.0.12-r4 webpage:
+libssl3-3.0.12-r5 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.12-r4 installed size:
+libssl3-3.0.12-r5 installed size:
 608 KiB
 
-libssl3-3.0.12-r4 license:
+libssl3-3.0.12-r5 license:
 Apache-2.0
 
 ```
