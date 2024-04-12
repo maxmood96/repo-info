@@ -3083,14 +3083,9 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.68.2-0ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.68.2-0ubuntu1.2.dsc' nss_3.68.2-0ubuntu1.2.dsc 2284 SHA512:06b60420ae132fee044e4912f1b815145648f985aaef19bbec4c735e30cf70794f4d5d87d13058ab27161ae9900b95fd2a6472545dcdc05e17bef9152a7f7d3b
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.68.2.orig.tar.gz' nss_3.68.2.orig.tar.gz 82406396 SHA512:31fe62f9e6f1695546bf8b087ae35ac2d3f39fde6be6ab3fcbc81ef66cf6290fc34b799e3809fcba4e913d0e305c476ee8ee1f22d0f957ec6978025920bdb9de
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.68.2-0ubuntu1.2.debian.tar.xz' nss_3.68.2-0ubuntu1.2.debian.tar.xz 28328 SHA512:89a6c60cb4f2bf2e9f335c1b56cd0ef5854bea58a1cd491b1f453fe7e4e1bae097aa502ac80c5bfd0e1d62d843db51ffc8a300ef79886ce8dc2ca151913ddc73
-```
 
 ### `dpkg` source package: `openjpeg2=2.4.0-6`
 
@@ -3934,14 +3929,9 @@ Licenses: (parsed from: `/usr/share/doc/libuuid1/copyright`)
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.37.2-4ubuntu3.3
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.3.dsc' util-linux_2.37.2-4ubuntu3.3.dsc 4550 SHA512:de03ffa5c3dd762b52836bb635397e100ec04ba0c2560fc90e9c57adce7af6af79390553d80e159e2f19918fcd7136ff648b42162ea0f46fa3314081476e384b
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2.orig.tar.xz' util-linux_2.37.2.orig.tar.xz 5621624 SHA512:38f0fe820445e3bfa79550e6581c230f98c7661566ccc4daa51c7208a5f972c61b4e57dfc86bed074fdbc7c40bc79f856be8f6a05a8860c1c0cecc4208e8b81d
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.3.debian.tar.xz' util-linux_2.37.2-4ubuntu3.3.debian.tar.xz 114004 SHA512:028d4263ef2a043f88701670127f4432879305e14647c477b4080b2908f30aa7d7f81e820799124f2a526992a39eaa8cfdc1ad10a7558fbe5f538699dfb2657d
-```
 
 ### `dpkg` source package: `wget=1.21.2-2ubuntu1`
 
