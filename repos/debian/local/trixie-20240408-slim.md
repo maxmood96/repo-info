@@ -1,10 +1,10 @@
-# `debian:trixie`
+# `debian:trixie-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4bdc1a36552a32bbe5670c7e5d2318ed2a8eadb2bd92e71e983fcca52f45614f`
-- Created: `2024-03-30T20:53:04.775757821Z`
-- Virtual Size: ~ 124.15 Mb  
+- Image ID: `sha256:e153ffdbd88fad6a99971cec74f3fce6ff923fdd7248ae52de98415ca484635f`
+- Created: `2024-04-10T01:53:49.289392674Z`
+- Virtual Size: ~ 81.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
