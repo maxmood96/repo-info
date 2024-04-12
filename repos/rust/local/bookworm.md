@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:05cdf9a39a55aa4d4a5863751533e7a2f187aa4dbe3cfd0f40f1c242968a4d95`
-- Created: `2024-03-29T15:09:47Z`
+- Image ID: `sha256:ead19e243dc6f0b82077e2f7aca0a70a7e4fdd9300f6fa71b1557210b6bea496`
+- Created: `2024-04-09T22:06:26Z`
 - Virtual Size: ~ 1.41 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,9 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.77.1`
+  - `RUST_VERSION=1.77.2`
+- Labels:
+  - `org.opencontainers.image.source=https://github.com/rust-lang/docker-rust`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -5653,21 +5655,21 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/utf8proc/2.8.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/utf8proc/2.8.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `util-linux=2.38.1-5`
+### `dpkg` source package: `util-linux=2.38.1-5+deb12u1`
 
 Binary Packages:
 
-- `bsdutils=1:2.38.1-5+b1`
-- `libblkid-dev:amd64=2.38.1-5+b1`
-- `libblkid1:amd64=2.38.1-5+b1`
-- `libmount-dev:amd64=2.38.1-5+b1`
-- `libmount1:amd64=2.38.1-5+b1`
-- `libsmartcols1:amd64=2.38.1-5+b1`
-- `libuuid1:amd64=2.38.1-5+b1`
-- `mount=2.38.1-5+b1`
-- `util-linux=2.38.1-5+b1`
-- `util-linux-extra=2.38.1-5+b1`
-- `uuid-dev:amd64=2.38.1-5+b1`
+- `bsdutils=1:2.38.1-5+deb12u1`
+- `libblkid-dev:amd64=2.38.1-5+deb12u1`
+- `libblkid1:amd64=2.38.1-5+deb12u1`
+- `libmount-dev:amd64=2.38.1-5+deb12u1`
+- `libmount1:amd64=2.38.1-5+deb12u1`
+- `libsmartcols1:amd64=2.38.1-5+deb12u1`
+- `libuuid1:amd64=2.38.1-5+deb12u1`
+- `mount=2.38.1-5+deb12u1`
+- `util-linux=2.38.1-5+deb12u1`
+- `util-linux-extra=2.38.1-5+deb12u1`
+- `uuid-dev:amd64=2.38.1-5+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid-dev/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount-dev/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/util-linux-extra/copyright`, `/usr/share/doc/uuid-dev/copyright`)
 
@@ -5691,7 +5693,7 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.38.1-5
+$ apt-get source -qq --print-uris util-linux=2.38.1-5+deb12u1
 'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u1.dsc' util-linux_2.38.1-5+deb12u1.dsc 4579 SHA256:980d9d9d9e56c12c067c281d8e4e6b1314537d8dac408b9f933e033da535d455
 'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.38.1.orig.tar.xz' util-linux_2.38.1.orig.tar.xz 7495904 SHA256:60492a19b44e6cf9a3ddff68325b333b8b52b6c59ce3ebd6a0ecaa4c5117e84f
 'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u1.debian.tar.xz' util-linux_2.38.1-5+deb12u1.debian.tar.xz 118748 SHA256:751272cc0bbf1ed84a5a3378798aac17164de12f449575cc979b5b294f27d305
@@ -5699,9 +5701,9 @@ $ apt-get source -qq --print-uris util-linux=2.38.1-5
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/util-linux/2.38.1-5/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.38.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.38.1-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/util-linux/2.38.1-5+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.38.1-5+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.38.1-5+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21.3-1`
 

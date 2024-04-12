@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9bf3768dc1199147635ea0350cc726d8d03beeae56ea2e1988475a012e45a8ac`
-- Created: `2024-03-29T15:09:47Z`
-- Virtual Size: ~ 782.29 Mb  
+- Image ID: `sha256:d5d5e3a7dd699641a0c6368e65fad736d7c583359096663c1e4bf5e98b85d5a1`
+- Created: `2024-04-09T22:06:26Z`
+- Virtual Size: ~ 782.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -12,7 +12,9 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.77.1`
+  - `RUST_VERSION=1.77.2`
+- Labels:
+  - `org.opencontainers.image.source=https://github.com/rust-lang/docker-rust`
 
 ## `apk` (`.apk`-based packages)
 

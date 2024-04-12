@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7938074100c8c611ba31c6fd23772c61b18eba9e3b489b515672bd019136eaff`
-- Created: `2024-03-29T15:09:47Z`
-- Virtual Size: ~ 675.56 Mb  
+- Image ID: `sha256:ebcb8545702f9a0e6721b40aaa469aefcb0622810562883d52ba50ba057c1c5a`
+- Created: `2024-04-09T22:06:26Z`
+- Virtual Size: ~ 675.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,9 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.77.1`
+  - `RUST_VERSION=1.77.2`
+- Labels:
+  - `org.opencontainers.image.source=https://github.com/rust-lang/docker-rust`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1778,19 +1780,19 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tzdata/2021a-0+deb10u12/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tzdata/2021a-0+deb10u12/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `util-linux=2.33.1-0.1`
+### `dpkg` source package: `util-linux=2.33.1-0.1+deb10u1`
 
 Binary Packages:
 
-- `bsdutils=1:2.33.1-0.1`
-- `fdisk=2.33.1-0.1`
-- `libblkid1:amd64=2.33.1-0.1`
-- `libfdisk1:amd64=2.33.1-0.1`
-- `libmount1:amd64=2.33.1-0.1`
-- `libsmartcols1:amd64=2.33.1-0.1`
-- `libuuid1:amd64=2.33.1-0.1`
-- `mount=2.33.1-0.1`
-- `util-linux=2.33.1-0.1`
+- `bsdutils=1:2.33.1-0.1+deb10u1`
+- `fdisk=2.33.1-0.1+deb10u1`
+- `libblkid1:amd64=2.33.1-0.1+deb10u1`
+- `libfdisk1:amd64=2.33.1-0.1+deb10u1`
+- `libmount1:amd64=2.33.1-0.1+deb10u1`
+- `libsmartcols1:amd64=2.33.1-0.1+deb10u1`
+- `libuuid1:amd64=2.33.1-0.1+deb10u1`
+- `mount=2.33.1-0.1+deb10u1`
+- `util-linux=2.33.1-0.1+deb10u1`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdisk/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -1814,17 +1816,17 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.33.1-0.1
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.33.1-0.1.dsc' util-linux_2.33.1-0.1.dsc 3988 SHA256:b5ee1ff0a8de37c3e4d7c0c29b7571b30ba4bea1d37e55e3d1dac3a3cbc50827
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.33.1.orig.tar.xz' util-linux_2.33.1.orig.tar.xz 4650936 SHA256:c14bd9f3b6e1792b90db87696e87ec643f9d63efa0a424f092a5a6b2f2dbef21
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.33.1-0.1.debian.tar.xz' util-linux_2.33.1-0.1.debian.tar.xz 81780 SHA256:07bfeb8298fab559dec2091463cab343785853bcae6c92c0806b7639e105913a
+$ apt-get source -qq --print-uris util-linux=2.33.1-0.1+deb10u1
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.33.1-0.1%2bdeb10u1.dsc' util-linux_2.33.1-0.1+deb10u1.dsc 3995 SHA256:cb5ba81b8dfa3ddfe2995b640b2fbe6b35d9706b0185d8d03efe2e6238dcf361
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.33.1.orig.tar.xz' util-linux_2.33.1.orig.tar.xz 4650936 SHA256:c14bd9f3b6e1792b90db87696e87ec643f9d63efa0a424f092a5a6b2f2dbef21
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.33.1-0.1%2bdeb10u1.debian.tar.xz' util-linux_2.33.1-0.1+deb10u1.debian.tar.xz 87368 SHA256:a1f70741a39a31700a443f462a50c3a10b540256bdde1635e0afdb083507d0bf
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/util-linux/2.33.1-0.1/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.33.1-0.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.33.1-0.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/util-linux/2.33.1-0.1+deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.33.1-0.1+deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.33.1-0.1+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xz-utils=5.2.4-1+deb10u1`
 
