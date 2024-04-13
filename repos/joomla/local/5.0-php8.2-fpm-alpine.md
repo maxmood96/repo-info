@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:66e772f7ab77ad9dfb0e03582dc6b7faf269edef16e7b34e7635d43cf58d1f80`
-- Created: `2024-03-16T10:50:39.047954948Z`
-- Virtual Size: ~ 264.60 Mb  
+- Image ID: `sha256:a738842c8858e63f927672cd19f8e5b3f544881a56d18c3b86ab0bc670c420c6`
+- Created: `2024-04-11T20:34:29.29946197Z`
+- Virtual Size: ~ 270.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.17`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.17.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.17.tar.xz.asc`
-  - `PHP_SHA256=1cc4ef733ba58f6557db648012471f1916e5bac316303aa165535bedab08ee35`
+  - `PHP_VERSION=8.2.18`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.18.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.18.tar.xz.asc`
+  - `PHP_SHA256=44b306fc021e56441f691da6c3108788bd9e450f293b3bc70fcd64b08dd41a50`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=5.0.3`
   - `JOOMLA_SHA512=5fa4a0fdae08f8ea71216337b02f4f8dcf75b8d001fc82c0987041844cc263e78ca8244a0fbbc4a3e53055c8e09a1533464d90ea118ebd79b2b1b972807c532e`
@@ -202,16 +202,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.24.0-r1 description:
+c-ares-1.27.0-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.24.0-r1 webpage:
+c-ares-1.27.0-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.24.0-r1 installed size:
-144 KiB
+c-ares-1.27.0-r0 installed size:
+152 KiB
 
-c-ares-1.24.0-r1 license:
+c-ares-1.27.0-r0 license:
 MIT
 
 ```
@@ -423,16 +423,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.3-r0 description:
+gnutls-3.8.4-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.3-r0 webpage:
+gnutls-3.8.4-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.3-r0 installed size:
-1856 KiB
+gnutls-3.8.4-r0 installed size:
+1876 KiB
 
-gnutls-3.8.3-r0 license:
+gnutls-3.8.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -678,16 +678,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r5 description:
+libcrypto3-3.1.4-r6 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r5 webpage:
+libcrypto3-3.1.4-r6 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r5 installed size:
+libcrypto3-3.1.4-r6 installed size:
 4500 KiB
 
-libcrypto3-3.1.4-r5 license:
+libcrypto3-3.1.4-r6 license:
 Apache-2.0
 
 ```
@@ -1001,16 +1001,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r5 description:
+libssl3-3.1.4-r6 description:
 SSL shared libraries
 
-libssl3-3.1.4-r5 webpage:
+libssl3-3.1.4-r6 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r5 installed size:
+libssl3-3.1.4-r6 installed size:
 548 KiB
 
-libssl3-3.1.4-r5 license:
+libssl3-3.1.4-r6 license:
 Apache-2.0
 
 ```
@@ -1341,16 +1341,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r5 description:
+openssl-3.1.4-r6 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r5 webpage:
+openssl-3.1.4-r6 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r5 installed size:
+openssl-3.1.4-r6 installed size:
 732 KiB
 
-openssl-3.1.4-r5 license:
+openssl-3.1.4-r6 license:
 Apache-2.0
 
 ```
