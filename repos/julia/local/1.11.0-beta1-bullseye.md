@@ -1,10 +1,10 @@
-# `julia:1.11.0-alpha2-bullseye`
+# `julia:1.11.0-beta1-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1fedffc8f0eeb9a7f87c423a988134af898ae9e7d9a569bce3d1b19a3cfccdc5`
-- Created: `2024-03-19T17:59:39Z`
-- Virtual Size: ~ 964.89 Mb  
+- Image ID: `sha256:cbcb7377236b37680cef8effaea3a3c2768828e2b43c1e19953ad4bc0b97675c`
+- Created: `2024-04-10T21:26:13Z`
+- Virtual Size: ~ 966.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JULIA_PATH=/usr/local/julia`
   - `JULIA_GPG=3673DF529D9049477F76B37566E3C7DC03D6E495`
-  - `JULIA_VERSION=1.11.0-alpha2`
+  - `JULIA_VERSION=1.11.0-beta1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2072,17 +2072,17 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tzdata/2024a-0+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tzdata/2024a-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `util-linux=2.36.1-8+deb11u1`
+### `dpkg` source package: `util-linux=2.36.1-8+deb11u2`
 
 Binary Packages:
 
-- `bsdutils=1:2.36.1-8+deb11u1`
-- `libblkid1:amd64=2.36.1-8+deb11u1`
-- `libmount1:amd64=2.36.1-8+deb11u1`
-- `libsmartcols1:amd64=2.36.1-8+deb11u1`
-- `libuuid1:amd64=2.36.1-8+deb11u1`
-- `mount=2.36.1-8+deb11u1`
-- `util-linux=2.36.1-8+deb11u1`
+- `bsdutils=1:2.36.1-8+deb11u2`
+- `libblkid1:amd64=2.36.1-8+deb11u2`
+- `libmount1:amd64=2.36.1-8+deb11u2`
+- `libsmartcols1:amd64=2.36.1-8+deb11u2`
+- `libuuid1:amd64=2.36.1-8+deb11u2`
+- `mount=2.36.1-8+deb11u2`
+- `util-linux=2.36.1-8+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -2106,17 +2106,17 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.36.1-8+deb11u1
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1-8%2bdeb11u1.dsc' util-linux_2.36.1-8+deb11u1.dsc 4461 SHA256:1f42a8e46c383b6fbfb57ea89dfe5adb5b7e6960bc5e8cdb9589109773be6cac
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1.orig.tar.xz' util-linux_2.36.1.orig.tar.xz 5231880 SHA256:09fac242172cd8ec27f0739d8d192402c69417617091d8c6e974841568f37eed
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1-8%2bdeb11u1.debian.tar.xz' util-linux_2.36.1-8+deb11u1.debian.tar.xz 101448 SHA256:edda1d46e25a40e730c672aac2cd0e44f9eeb0fb64b27be957d6924ed5288a0a
+$ apt-get source -qq --print-uris util-linux=2.36.1-8+deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.36.1-8%2bdeb11u2.dsc' util-linux_2.36.1-8+deb11u2.dsc 4306 SHA256:16cfb1bc4d0a52f5edf2c78b5e022bb1fc180f03b93a5094b5c420a0d8d4431a
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.36.1.orig.tar.xz' util-linux_2.36.1.orig.tar.xz 5231880 SHA256:09fac242172cd8ec27f0739d8d192402c69417617091d8c6e974841568f37eed
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.36.1-8%2bdeb11u2.debian.tar.xz' util-linux_2.36.1-8+deb11u2.debian.tar.xz 106524 SHA256:0b07fbb79e1dab3be2568295664af950a7c3e589ce7821febf2ab0a3ccbe4862
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/util-linux/2.36.1-8+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.36.1-8+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.36.1-8+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/util-linux/2.36.1-8+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.36.1-8+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.36.1-8+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.0-2`
 
