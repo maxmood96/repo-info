@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:abbf18cbde367e097ee397d94199e1c746c06ffe876b7f49b4de0ad4829af4d2`
+- Image ID: `sha256:886248f2d6568c475f38dcdd04858c57d102339e0fa60addcb081f759e3689e4`
 - Created: `2024-04-08T20:19:13Z`
 - Virtual Size: ~ 516.63 Mb  
   (total size of all layers on-disk)
@@ -11,7 +11,7 @@
 - Command: `["node","current/index.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=18.20.1`
+  - `NODE_VERSION=18.20.2`
   - `YARN_VERSION=1.22.19`
   - `NODE_ENV=production`
   - `GHOST_CLI_VERSION=1.26.0`
