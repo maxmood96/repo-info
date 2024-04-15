@@ -1,7 +1,7 @@
 ## `eclipse-temurin:8u402-b06-jdk-jammy`
 
 ```console
-$ docker pull eclipse-temurin@sha256:bd3add7a785e62894f0589887410a98f666be2390285f18888de57f0b0089b2a
+$ docker pull eclipse-temurin@sha256:920aafad547de308fc52c979f6efe255f63aad6b761fbac4f44d11617cc4af08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -215,13 +215,13 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ### `eclipse-temurin:8u402-b06-jdk-jammy` - linux; ppc64le
 
 ```console
-$ docker pull eclipse-temurin@sha256:ad51bf05fff7bd68342d63e7566ed24d1cb9b169175418816d8b01b4e08f0829
+$ docker pull eclipse-temurin@sha256:d5e80020d5daf47772841f508c6bba518291d41522d6690f1f84f6c914b7c1fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **150.5 MB (150460617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d4270bfbcf26f62c942c2b86c35ccf662a1f2c7438e6331e55e2950e7fb7c46`
+-	Image ID: `sha256:04480d8c443bd32c96762f03d93779446caa903a62fa3d53696fda065da32253`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
