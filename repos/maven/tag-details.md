@@ -8415,7 +8415,7 @@ CMD ["mvn"]
 ## `maven:3-eclipse-temurin-8`
 
 ```console
-$ docker pull maven@sha256:8506bcb13370ca6e7e4549a17f6d4de74bb684fc95164124ab6d0be62b282c97
+$ docker pull maven@sha256:848ab26b5447bc755680195e906a41888bad8c18bf136db1704d5dcad5b5794a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8758,13 +8758,13 @@ CMD ["mvn"]
 ### `maven:3-eclipse-temurin-8` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:d53c0c12a8e9d507a10c2f3f9c583f87f3844af3dce519fe020e2a1bed6e8e03
+$ docker pull maven@sha256:3433a7c0b2483e9ad59c9c59e75dda744c49941a03ed7f9bcd7d9e258acc0471
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **182.0 MB (182027320 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:434acc309b76102875761f8333dfa1d2ed21820827a380b31cea4541d124702a`
+-	Image ID: `sha256:019bd4b128dc62aebd4e7331577855c4765e514736a5cf4deffbdd36d1dcdd48`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -20647,7 +20647,7 @@ CMD ["mvn"]
 ## `maven:3.9-eclipse-temurin-8`
 
 ```console
-$ docker pull maven@sha256:8506bcb13370ca6e7e4549a17f6d4de74bb684fc95164124ab6d0be62b282c97
+$ docker pull maven@sha256:848ab26b5447bc755680195e906a41888bad8c18bf136db1704d5dcad5b5794a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -20990,13 +20990,13 @@ CMD ["mvn"]
 ### `maven:3.9-eclipse-temurin-8` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:d53c0c12a8e9d507a10c2f3f9c583f87f3844af3dce519fe020e2a1bed6e8e03
+$ docker pull maven@sha256:3433a7c0b2483e9ad59c9c59e75dda744c49941a03ed7f9bcd7d9e258acc0471
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **182.0 MB (182027320 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:434acc309b76102875761f8333dfa1d2ed21820827a380b31cea4541d124702a`
+-	Image ID: `sha256:019bd4b128dc62aebd4e7331577855c4765e514736a5cf4deffbdd36d1dcdd48`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -32879,7 +32879,7 @@ CMD ["mvn"]
 ## `maven:3.9.6-eclipse-temurin-8`
 
 ```console
-$ docker pull maven@sha256:8506bcb13370ca6e7e4549a17f6d4de74bb684fc95164124ab6d0be62b282c97
+$ docker pull maven@sha256:848ab26b5447bc755680195e906a41888bad8c18bf136db1704d5dcad5b5794a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -33222,13 +33222,13 @@ CMD ["mvn"]
 ### `maven:3.9.6-eclipse-temurin-8` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:d53c0c12a8e9d507a10c2f3f9c583f87f3844af3dce519fe020e2a1bed6e8e03
+$ docker pull maven@sha256:3433a7c0b2483e9ad59c9c59e75dda744c49941a03ed7f9bcd7d9e258acc0471
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **182.0 MB (182027320 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:434acc309b76102875761f8333dfa1d2ed21820827a380b31cea4541d124702a`
+-	Image ID: `sha256:019bd4b128dc62aebd4e7331577855c4765e514736a5cf4deffbdd36d1dcdd48`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
