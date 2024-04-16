@@ -1,7 +1,7 @@
 ## `buildpack-deps:mantic-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:7944e9467d6ceb9b9821182ac5ceaa20cd3228ffcfa12682269b2e97e3a93692
+$ docker pull buildpack-deps@sha256:9f770512e2b9f54404ac9d2399e655a91e284d66131703bea5aff2d8f4b1361b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -95,41 +95,41 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 ### `buildpack-deps:mantic-curl` - linux; arm64 variant v8
 
 ```console
-$ docker pull buildpack-deps@sha256:4341891a0761c7bcd09df0d6c13682f3d1c1479160b0333bf1089308cb974b70
+$ docker pull buildpack-deps@sha256:4505b7dc7f5685a24cb1941d94817f3a65a6abe0e838fe63a40f817a39f321be
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.0 MB (37028373 bytes)**  
+-	Total Size: **37.0 MB (37042792 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fe26cb29e36768799cbb3f4712ea4afbdaf4140eb64b1b05e8c996880413533`
+-	Image ID: `sha256:ee54acd7d81d6f1e9c516992b01ed0104929934f750deb2f030f20660a4d13b4`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 16 Feb 2024 09:24:31 GMT
+# Fri, 12 Apr 2024 15:51:12 GMT
 ARG RELEASE
-# Fri, 16 Feb 2024 09:24:31 GMT
+# Fri, 12 Apr 2024 15:51:12 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 16 Feb 2024 09:24:31 GMT
+# Fri, 12 Apr 2024 15:51:12 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 16 Feb 2024 09:24:31 GMT
+# Fri, 12 Apr 2024 15:51:12 GMT
 LABEL org.opencontainers.image.version=23.10
-# Fri, 16 Feb 2024 09:24:36 GMT
-ADD file:31c3d4b2613da88a6e201d2ec72f20609b03ad4d375d97b9c686cce80c24ab2f in / 
-# Fri, 16 Feb 2024 09:24:36 GMT
+# Fri, 12 Apr 2024 15:51:14 GMT
+ADD file:26243ab96da01a7d087b1c824a80d95c015b3c87952acd0ff162515d17c19a31 in / 
+# Fri, 12 Apr 2024 15:51:14 GMT
 CMD ["/bin/bash"]
-# Wed, 06 Mar 2024 03:40:08 GMT
+# Tue, 16 Apr 2024 02:00:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:7c61e8985bd62f5d93258f96a729f264b9eb712d879491c8f79a3fd1a3fa54d0`  
-		Last Modified: Wed, 06 Mar 2024 03:51:26 GMT  
-		Size: 27.4 MB (27364411 bytes)  
+	-	`sha256:14dec08930ea65c3dbde0e38ed54f079d9cc601f7e9429870443eb6f5c127ecd`  
+		Last Modified: Tue, 16 Apr 2024 02:12:13 GMT  
+		Size: 27.4 MB (27378355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:561438a9c1b423f692b4e8db906c99bc70f6080f9d43220d6ba38dde6ad43ea9`  
-		Last Modified: Wed, 06 Mar 2024 03:51:23 GMT  
-		Size: 9.7 MB (9663962 bytes)  
+	-	`sha256:a48b671c7c275cde8e73a26074b9763487010e57526a55b3e22e3bc0da54ec6b`  
+		Last Modified: Tue, 16 Apr 2024 02:12:10 GMT  
+		Size: 9.7 MB (9664437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:mantic-curl` - linux; ppc64le
