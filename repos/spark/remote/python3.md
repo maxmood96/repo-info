@@ -1,7 +1,7 @@
 ## `spark:python3`
 
 ```console
-$ docker pull spark@sha256:3aea99e061c9ecf27038d228d8c89a506becd969ad014f65f2971bb5ab63bf05
+$ docker pull spark@sha256:0da7ce51fbc4ee0b63af0a7efb1d4fa65094c834904395482780e6c80aeff5b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -129,28 +129,28 @@ USER spark
 ### `spark:python3` - linux; arm64 variant v8
 
 ```console
-$ docker pull spark@sha256:f1da8f802b9aaf4ce2b8773c8403876b7d90a36d1270afa807988be07edf7139
+$ docker pull spark@sha256:fa0c6e67e7eb0ce3efe01b4c774fa9bc7801022205b8ded84ef4f69ca3252c31
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **524.9 MB (524948259 bytes)**  
+-	Total Size: **525.1 MB (525090913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9e06c80c0af262b09ae2c9144e9a0242a6622f2e768516d94925ee8dd5b9cbc1`
+-	Image ID: `sha256:94eedb2e0404076c37a407dda6edb81138a20e3204de652bbdbe17ab7c053da9`
 -	Entrypoint: `["\/opt\/entrypoint.sh"]`
 
 ```dockerfile
-# Fri, 16 Feb 2024 19:15:01 GMT
+# Wed, 10 Apr 2024 19:07:29 GMT
 ARG RELEASE
-# Fri, 16 Feb 2024 19:15:01 GMT
+# Wed, 10 Apr 2024 19:07:30 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 16 Feb 2024 19:15:01 GMT
+# Wed, 10 Apr 2024 19:07:30 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 16 Feb 2024 19:15:01 GMT
+# Wed, 10 Apr 2024 19:07:30 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 16 Feb 2024 19:15:06 GMT
-ADD file:a8303c80b47ec165c276111aa6f98ee877e4da60ddafa00b7547032a3de7935d in / 
-# Fri, 16 Feb 2024 19:15:06 GMT
+# Wed, 10 Apr 2024 19:07:39 GMT
+ADD file:acbed61dbc48e6a7411bf9844ddddb8ea75cd88378599d63b0b603e98acf0762 in / 
+# Wed, 10 Apr 2024 19:07:40 GMT
 CMD ["/bin/bash"]
 # Thu, 25 Jan 2024 11:07:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -170,75 +170,75 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 25 Jan 2024 11:07:04 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 28 Mar 2024 04:06:43 GMT
+# Tue, 16 Apr 2024 05:50:51 GMT
 ARG spark_uid=185
-# Thu, 28 Mar 2024 04:06:43 GMT
+# Tue, 16 Apr 2024 05:50:52 GMT
 # ARGS: spark_uid=185
 RUN groupadd --system --gid=${spark_uid} spark &&     useradd --system --uid=${spark_uid} --gid=spark spark
-# Thu, 28 Mar 2024 04:07:12 GMT
+# Tue, 16 Apr 2024 05:51:28 GMT
 # ARGS: spark_uid=185
 RUN set -ex;     apt-get update;     apt-get install -y gnupg2 wget bash tini libc6 libpam-modules krb5-user libnss3 procps net-tools gosu libnss-wrapper;     mkdir -p /opt/spark;     mkdir /opt/spark/python;     mkdir -p /opt/spark/examples;     mkdir -p /opt/spark/work-dir;     chmod g+w /opt/spark/work-dir;     touch /opt/spark/RELEASE;     chown -R spark:spark /opt/spark;     echo "auth required pam_wheel.so use_uid" >> /etc/pam.d/su;     rm -rf /var/lib/apt/lists/*
-# Thu, 28 Mar 2024 04:07:12 GMT
+# Tue, 16 Apr 2024 05:51:28 GMT
 ENV SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz.asc GPG_KEY=FD3E84942E5E6106235A1D25BD356A9F8740E4FF
-# Thu, 28 Mar 2024 04:08:15 GMT
+# Tue, 16 Apr 2024 05:52:37 GMT
 # ARGS: spark_uid=185
 RUN set -ex;     export SPARK_TMP="$(mktemp -d)";     cd $SPARK_TMP;     wget -nv -O spark.tgz "$SPARK_TGZ_URL";     wget -nv -O spark.tgz.asc "$SPARK_TGZ_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkps://keys.openpgp.org --recv-key "$GPG_KEY" ||     gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY";     gpg --batch --verify spark.tgz.asc spark.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" spark.tgz.asc;         tar -xf spark.tgz --strip-components=1;     chown -R spark:spark .;     mv jars /opt/spark/;     mv bin /opt/spark/;     mv sbin /opt/spark/;     mv kubernetes/dockerfiles/spark/decom.sh /opt/;     mv examples /opt/spark/;     mv kubernetes/tests /opt/spark/;     mv data /opt/spark/;     mv python/pyspark /opt/spark/python/pyspark/;     mv python/lib /opt/spark/python/lib/;     mv R /opt/spark/;     chmod a+x /opt/decom.sh;     cd ..;     rm -rf "$SPARK_TMP";
-# Thu, 28 Mar 2024 04:08:17 GMT
+# Tue, 16 Apr 2024 05:52:39 GMT
 COPY file:b1ecb91165fbd66c0d3cfad8d169bf4914b1cf964de586096e80f8b5ca8b3b12 in /opt/ 
-# Thu, 28 Mar 2024 04:08:17 GMT
+# Tue, 16 Apr 2024 05:52:39 GMT
 ENV SPARK_HOME=/opt/spark
-# Thu, 28 Mar 2024 04:08:17 GMT
+# Tue, 16 Apr 2024 05:52:39 GMT
 WORKDIR /opt/spark/work-dir
-# Thu, 28 Mar 2024 04:08:17 GMT
+# Tue, 16 Apr 2024 05:52:39 GMT
 USER spark
-# Thu, 28 Mar 2024 04:08:17 GMT
+# Tue, 16 Apr 2024 05:52:39 GMT
 ENTRYPOINT ["/opt/entrypoint.sh"]
-# Thu, 28 Mar 2024 04:08:21 GMT
+# Tue, 16 Apr 2024 05:52:44 GMT
 USER root
-# Thu, 28 Mar 2024 04:19:18 GMT
+# Tue, 16 Apr 2024 06:07:11 GMT
 RUN set -ex;     apt-get update;     apt-get install -y python3 python3-pip;     rm -rf /var/lib/apt/lists/*
-# Thu, 28 Mar 2024 04:19:19 GMT
+# Tue, 16 Apr 2024 06:07:12 GMT
 USER spark
 ```
 
 -	Layers:
-	-	`sha256:c2984f07e523b18eaa80a8ca4614feba1808673e5adbc26f162d2ee50031961c`  
-		Last Modified: Sat, 17 Feb 2024 04:07:41 GMT  
-		Size: 27.2 MB (27204287 bytes)  
+	-	`sha256:7688b82426696e44f961201d38c484dd5279eb88689c7eadb2100dd075e697f8`  
+		Last Modified: Fri, 12 Apr 2024 07:29:54 GMT  
+		Size: 27.2 MB (27204984 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bba6206cf5e5c72dd9d04c2269ff85b1ce7015a33a12585df751669013b790c`  
-		Last Modified: Thu, 28 Mar 2024 00:48:26 GMT  
-		Size: 16.8 MB (16776713 bytes)  
+	-	`sha256:0d2f0d048c4dc921b108e92215dcba18b91b316fdaad6521463665d94fdab64c`  
+		Last Modified: Tue, 16 Apr 2024 02:55:17 GMT  
+		Size: 16.8 MB (16777181 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:666babb87e1b877e1c99e4b7853c9bed35362d5c6682397f989071b16113bdf0`  
-		Last Modified: Thu, 28 Mar 2024 00:51:36 GMT  
-		Size: 45.4 MB (45398843 bytes)  
+	-	`sha256:4c3fdf98acafe5d6bd7900975cb228eff11369e2fa9407990a40120e66a6706c`  
+		Last Modified: Tue, 16 Apr 2024 02:57:02 GMT  
+		Size: 45.4 MB (45398315 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a85558f92efd27f42214962f838718449db6c1a2993f56adc1bfed6295933daf`  
-		Last Modified: Thu, 28 Mar 2024 00:51:30 GMT  
+	-	`sha256:9168422648fbaf479f89951c8b5ec4c40ef5db900008b6efeaa2ef99be090d0e`  
+		Last Modified: Tue, 16 Apr 2024 02:56:57 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:442ae6cc3a859547ae8fea84089d04cea00a5ea06c318dbe0027d22d39ce1317`  
-		Last Modified: Thu, 28 Mar 2024 00:51:30 GMT  
+	-	`sha256:1d32419daa46e91265a8c77d96bd75e478ec69d6f832bb640ffe47126e9aed24`  
+		Last Modified: Tue, 16 Apr 2024 02:56:57 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b5647ba03f1f7f3064ce1d4b1e8daef7d23768e4ec5c3bf8b8b893b82a36212`  
-		Last Modified: Thu, 28 Mar 2024 04:25:14 GMT  
+	-	`sha256:a0b42f52ee8ff321a5ac604b2625fc4cd48bdb81546346eafa69b4224f6c2dd7`  
+		Last Modified: Tue, 16 Apr 2024 06:12:47 GMT  
 		Size: 1.4 KB (1450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6c727b1a4ebb07363bc91e65a889ce229350c43a48e527b4ee58a9f8dfc0295`  
-		Last Modified: Thu, 28 Mar 2024 04:25:16 GMT  
-		Size: 23.5 MB (23511717 bytes)  
+	-	`sha256:717ca1c63e838950d03f5f53336a5753532514d2c34285babb5226245c0caea1`  
+		Last Modified: Tue, 16 Apr 2024 06:12:49 GMT  
+		Size: 23.7 MB (23664025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e73a97586be585cd4c90a573531825306da97f389b70371ffe4f30e40c0c26d0`  
-		Last Modified: Thu, 28 Mar 2024 04:25:26 GMT  
-		Size: 324.5 MB (324484834 bytes)  
+	-	`sha256:02602c4e66e2adddb2c052b8858b5b8e29bf7025a26cf6ff4961a3b3f2fba29c`  
+		Last Modified: Tue, 16 Apr 2024 06:12:59 GMT  
+		Size: 324.5 MB (324484858 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4793164fd6ca45f611b48fdbb1cfac8298af12bb145be67d7a16576b190cab2c`  
-		Last Modified: Thu, 28 Mar 2024 04:25:14 GMT  
-		Size: 2.1 KB (2138 bytes)  
+	-	`sha256:4da50293a601984a54aefb64863be34242a987e50a7716bd9b11d26346869f76`  
+		Last Modified: Tue, 16 Apr 2024 06:12:47 GMT  
+		Size: 2.1 KB (2139 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c69761c8d62ab08505312aaa25e0086c45a74e86c53e28c5f52365407e3e09ac`  
-		Last Modified: Thu, 28 Mar 2024 04:30:36 GMT  
-		Size: 87.6 MB (87567384 bytes)  
+	-	`sha256:91ff1ec2d23924760ca508b168cfe829b3700e32f132d97f10039cbab0f71185`  
+		Last Modified: Tue, 16 Apr 2024 06:17:54 GMT  
+		Size: 87.6 MB (87557068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
