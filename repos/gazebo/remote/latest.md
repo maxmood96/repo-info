@@ -1,7 +1,7 @@
 ## `gazebo:latest`
 
 ```console
-$ docker pull gazebo@sha256:817b4d9b4078db7382a93bff57bca147be4b039094d1f5e4d0a76b5f9f9fad27
+$ docker pull gazebo@sha256:ef39cf8c407e6c423ebf0bbe9ea68a55675ae84b3ee8b03dfe31609e3d33228d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,82 +11,82 @@ $ docker pull gazebo@sha256:817b4d9b4078db7382a93bff57bca147be4b039094d1f5e4d0a7
 ### `gazebo:latest` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:3e2ae9da681dc519257a802cb921247b32a55e8adf6d4e814609264cc46cf3e0
+$ docker pull gazebo@sha256:bfa3deaa5c24af309cc99b2e09ac330470f6bc5bd9d05e4733b820f2425c0662
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **610.3 MB (610307631 bytes)**  
+-	Total Size: **610.5 MB (610502821 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3a6e98e9c91cdf1154937e51110cb5564f83b1d79625f84c158bc84c5e1d81d`
+-	Image ID: `sha256:7eacd46c6904e22cfcad97b1ead6599233e93e433d7042b796c16511aabb008c`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Fri, 16 Feb 2024 21:32:49 GMT
+# Wed, 10 Apr 2024 18:50:35 GMT
 ARG RELEASE
-# Fri, 16 Feb 2024 21:32:49 GMT
+# Wed, 10 Apr 2024 18:50:35 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 16 Feb 2024 21:32:49 GMT
+# Wed, 10 Apr 2024 18:50:35 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 16 Feb 2024 21:32:49 GMT
+# Wed, 10 Apr 2024 18:50:35 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 16 Feb 2024 21:32:52 GMT
-ADD file:a25798f31219000d6a82d2c9258743926b1a400530d12dbb1eadf2c2519f9888 in / 
-# Fri, 16 Feb 2024 21:32:52 GMT
+# Wed, 10 Apr 2024 18:50:37 GMT
+ADD file:ea2128e23dce0162557abadd80656bd5ae047d573095d1d4323eb4154490dfdc in / 
+# Wed, 10 Apr 2024 18:50:37 GMT
 CMD ["/bin/bash"]
-# Wed, 06 Mar 2024 04:18:49 GMT
+# Tue, 16 Apr 2024 04:30:18 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/*
-# Wed, 06 Mar 2024 04:19:00 GMT
+# Tue, 16 Apr 2024 04:30:26 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Wed, 06 Mar 2024 04:19:02 GMT
+# Tue, 16 Apr 2024 04:30:27 GMT
 RUN set -eux; 	key='D2486D2DD83DB69272AFE98867170598AF249743'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	mkdir -p /usr/share/keyrings; 	gpg --batch --export "$key" > /usr/share/keyrings/pkgs-osrf-archive-keyring.gpg; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"
-# Wed, 06 Mar 2024 04:19:02 GMT
+# Tue, 16 Apr 2024 04:30:28 GMT
 RUN . /etc/os-release     && echo "deb [ signed-by=/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg ] http://packages.osrfoundation.org/gazebo/$ID-stable $VERSION_CODENAME main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Wed, 06 Mar 2024 04:21:59 GMT
+# Tue, 16 Apr 2024 04:33:23 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     gazebo11=11.14.0-1*     && rm -rf /var/lib/apt/lists/*
-# Wed, 06 Mar 2024 04:22:01 GMT
+# Tue, 16 Apr 2024 04:33:25 GMT
 EXPOSE 11345
-# Wed, 06 Mar 2024 04:22:01 GMT
+# Tue, 16 Apr 2024 04:33:25 GMT
 COPY file:b79966dec12c55a0a5c9e673326cc3faf9cbbeee0ea5f172e863df237eb8a601 in / 
-# Wed, 06 Mar 2024 04:22:02 GMT
+# Tue, 16 Apr 2024 04:33:25 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Wed, 06 Mar 2024 04:22:02 GMT
+# Tue, 16 Apr 2024 04:33:26 GMT
 CMD ["gzserver"]
-# Wed, 06 Mar 2024 04:26:43 GMT
+# Tue, 16 Apr 2024 04:37:41 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     libgazebo11-dev=11.14.0-1*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:63e9bbe323274e77e58d77c6ab6802d247458f784222fbb07a2556d6ec74ee05`  
-		Last Modified: Sat, 17 Feb 2024 02:07:52 GMT  
-		Size: 28.6 MB (28584317 bytes)  
+	-	`sha256:80888bc6716fcbb8874e75ac88898d3e38e6f1bc55678f0e97ca9d706b7f3733`  
+		Last Modified: Fri, 12 Apr 2024 07:27:49 GMT  
+		Size: 28.6 MB (28584506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9b717a9d4ad213e59d73577a626c9c9093b2e6bf2dd493fc3fee4c33f9db601`  
-		Last Modified: Wed, 06 Mar 2024 04:27:10 GMT  
-		Size: 1.2 MB (1198476 bytes)  
+	-	`sha256:350577e5266945e4416d80fce245cb0971317163751d1b7260af54a9cb3b480c`  
+		Last Modified: Tue, 16 Apr 2024 04:38:09 GMT  
+		Size: 1.2 MB (1198508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5f5ecd5001c5e4c5758fef666edcd4e26272b0cfecf06a567b8ad6584e6eabb`  
-		Last Modified: Wed, 06 Mar 2024 04:27:08 GMT  
-		Size: 5.6 MB (5553760 bytes)  
+	-	`sha256:2e04936935ba44d82940f64f9eeb303923248c298ecd92e7b48155f112ff5d88`  
+		Last Modified: Tue, 16 Apr 2024 04:38:08 GMT  
+		Size: 5.6 MB (5553810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:261375588b7961ac194ebb599469ed0e59bcb05e0621dc8e903fe9ccf721e4ba`  
-		Last Modified: Wed, 06 Mar 2024 04:27:07 GMT  
-		Size: 1.5 KB (1472 bytes)  
+	-	`sha256:aa91fa230d04b15442f9fdc43a8fa3b4a03c9fe8f08ce286f1d4a7b32cb1f590`  
+		Last Modified: Tue, 16 Apr 2024 04:38:07 GMT  
+		Size: 1.5 KB (1473 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ac128ceeb4b0338e80f7e5691d6838c64a4db0c212bc4e888a1dd92c5cbd27a`  
-		Last Modified: Wed, 06 Mar 2024 04:27:07 GMT  
-		Size: 289.0 B  
+	-	`sha256:eb7ead5b242d8095779a6aea1bf55c6fc1a6e457b86912f1edf6a2828953f0c7`  
+		Last Modified: Tue, 16 Apr 2024 04:38:07 GMT  
+		Size: 290.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:993d348ded91d72d8e92f7864289a48a1d5ad0e877091fbeb4fd6d1ba5440434`  
-		Last Modified: Wed, 06 Mar 2024 04:27:39 GMT  
-		Size: 277.9 MB (277882479 bytes)  
+	-	`sha256:046ba4637f1ac376cac9b737e495d613efdc31f0a0a17317ad52c41d8ea3b5d8`  
+		Last Modified: Tue, 16 Apr 2024 04:38:38 GMT  
+		Size: 278.1 MB (278056562 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a50c014767d0115c169c1bf6257de9696fc8399f7be4ffdca6a97169c67b2df5`  
-		Last Modified: Wed, 06 Mar 2024 04:27:07 GMT  
+	-	`sha256:ed904ba23be2e341f80af609a3cfbe0518f94949a12bec7b6d01d9f02f7d65eb`  
+		Last Modified: Tue, 16 Apr 2024 04:38:07 GMT  
 		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12190eac66f1bc61556358353250e4e925fefe8e23ef328c4d37ceab05d3a925`  
-		Last Modified: Wed, 06 Mar 2024 04:28:36 GMT  
-		Size: 297.1 MB (297086650 bytes)  
+	-	`sha256:d325b602480d38961210f4480b347ac55d8b9319f6b34f3710886025a0bc50ad`  
+		Last Modified: Tue, 16 Apr 2024 04:39:33 GMT  
+		Size: 297.1 MB (297107484 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
