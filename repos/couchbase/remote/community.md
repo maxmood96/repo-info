@@ -1,7 +1,7 @@
 ## `couchbase:community`
 
 ```console
-$ docker pull couchbase@sha256:83dbb4bc8a48f807a8ea4ed27e565c07e437be0daf9a9dc76b65c4afb2a398bf
+$ docker pull couchbase@sha256:fe993760259c0c9c1b3da72f86d48a0fc260b671e3bc8f05f3eb6532069a15b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -139,126 +139,126 @@ VOLUME [/opt/couchbase/var]
 ### `couchbase:community` - linux; arm64 variant v8
 
 ```console
-$ docker pull couchbase@sha256:55609d38205228689a5f1640287e1cfc57e59550df70bfcf298223f79843b91a
+$ docker pull couchbase@sha256:69549a2ec3de24455cac9a694ac6f9ff74d55f14785c4f88e8bf765881617aa1
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **367.8 MB (367766412 bytes)**  
+-	Total Size: **367.8 MB (367767970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:71ed716aeaa4f0a2a5d1d3aeefa821a96c5312fc7d96f6809a035cd64abd0258`
+-	Image ID: `sha256:b6f48a8ecb40ac6e6afd4365d685b48f1c7a75f105a16c82b4212df095daffbf`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["couchbase-server"]`
 
 ```dockerfile
-# Fri, 16 Feb 2024 19:15:01 GMT
+# Wed, 10 Apr 2024 19:07:29 GMT
 ARG RELEASE
-# Fri, 16 Feb 2024 19:15:01 GMT
+# Wed, 10 Apr 2024 19:07:30 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 16 Feb 2024 19:15:01 GMT
+# Wed, 10 Apr 2024 19:07:30 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 16 Feb 2024 19:15:01 GMT
+# Wed, 10 Apr 2024 19:07:30 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 16 Feb 2024 19:15:06 GMT
-ADD file:a8303c80b47ec165c276111aa6f98ee877e4da60ddafa00b7547032a3de7935d in / 
-# Fri, 16 Feb 2024 19:15:06 GMT
+# Wed, 10 Apr 2024 19:07:39 GMT
+ADD file:acbed61dbc48e6a7411bf9844ddddb8ea75cd88378599d63b0b603e98acf0762 in / 
+# Wed, 10 Apr 2024 19:07:40 GMT
 CMD ["/bin/bash"]
-# Wed, 06 Mar 2024 03:53:20 GMT
+# Tue, 16 Apr 2024 03:18:54 GMT
 LABEL maintainer=docker@couchbase.com
-# Wed, 06 Mar 2024 03:53:20 GMT
+# Tue, 16 Apr 2024 03:18:54 GMT
 ARG UPDATE_COMMAND=apt-get update -y -q
-# Wed, 06 Mar 2024 03:53:20 GMT
+# Tue, 16 Apr 2024 03:18:54 GMT
 ARG CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-# Mon, 25 Mar 2024 20:09:44 GMT
+# Tue, 16 Apr 2024 03:19:13 GMT
 # ARGS: CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* UPDATE_COMMAND=apt-get update -y -q
 RUN set -x     && ${UPDATE_COMMAND}     && apt-get install -y -q wget tzdata       lsof lshw sysstat net-tools numactl bzip2     && ${CLEANUP_COMMAND}
-# Mon, 25 Mar 2024 20:10:37 GMT
+# Tue, 16 Apr 2024 03:19:46 GMT
 # ARGS: CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* UPDATE_COMMAND=apt-get update -y -q
 RUN set -x     && apt-get update     && apt-get install -y gcc git make     && cd /usr/src     && git clone https://github.com/couchbasedeps/runit     && cd runit     && git checkout edb631449d89d5b452a5992c6ffaa1e384fea697     && ./package/compile     && cp ./command/* /sbin/     && apt-get purge -y --autoremove gcc git make     && apt-get clean     && rm -rf /var/lib/apt/lists/* /usr/src/runit
-# Wed, 03 Apr 2024 18:05:32 GMT
+# Tue, 16 Apr 2024 03:19:46 GMT
 ARG CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.1
-# Wed, 03 Apr 2024 18:07:10 GMT
+# Tue, 16 Apr 2024 03:21:17 GMT
 ARG CB_PACKAGE=couchbase-server-community_7.6.1-linux_@@ARCH@@.deb
-# Wed, 03 Apr 2024 18:07:10 GMT
+# Tue, 16 Apr 2024 03:21:17 GMT
 ARG CB_SKIP_CHECKSUM=false
-# Wed, 03 Apr 2024 18:07:10 GMT
+# Tue, 16 Apr 2024 03:21:17 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/couchbase/bin:/opt/couchbase/bin/tools:/opt/couchbase/bin/install
-# Wed, 03 Apr 2024 18:07:11 GMT
+# Tue, 16 Apr 2024 03:21:17 GMT
 # ARGS: CB_PACKAGE=couchbase-server-community_7.6.1-linux_@@ARCH@@.deb CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.1 CB_SKIP_CHECKSUM=false CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* UPDATE_COMMAND=apt-get update -y -q
 RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
-# Wed, 03 Apr 2024 18:07:49 GMT
+# Tue, 16 Apr 2024 03:21:56 GMT
 # ARGS: CB_PACKAGE=couchbase-server-community_7.6.1-linux_@@ARCH@@.deb CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.1 CB_SKIP_CHECKSUM=false CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* UPDATE_COMMAND=apt-get update -y -q
 RUN set -x     && export INSTALL_DONT_START_SERVER=1     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch}" in          'arm64')            CB_SHA256=abfd2a4d57c930be72d501af1e54612e06d9a73faf948df549c342252f1d3e49            ;;          'amd64')            CB_SHA256=c1e48a4175ed7f82532a1b2b858f0c2af08752ab83b4d084cb16d59f52437a82            ;;        esac     && CB_PACKAGE=$(echo ${CB_PACKAGE} | sed -e "s/@@ARCH@@/${dpkgArch}/")     && wget -N --no-verbose $CB_RELEASE_URL/$CB_PACKAGE     && { ${CB_SKIP_CHECKSUM} || echo "$CB_SHA256  $CB_PACKAGE" | sha256sum -c - ; }     && ${UPDATE_COMMAND}     && apt-get install -y ./$CB_PACKAGE     && rm -f ./$CB_PACKAGE     && ${CLEANUP_COMMAND}     && rm -rf /tmp/* /var/tmp/*
-# Wed, 03 Apr 2024 18:07:56 GMT
+# Tue, 16 Apr 2024 03:22:02 GMT
 # ARGS: CB_PACKAGE=couchbase-server-community_7.6.1-linux_@@ARCH@@.deb CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.1 CB_SKIP_CHECKSUM=false CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* UPDATE_COMMAND=apt-get update -y -q
 RUN sed -i -e '1 s/$/\/docker/' /opt/couchbase/VARIANT.txt
-# Wed, 03 Apr 2024 18:07:56 GMT
+# Tue, 16 Apr 2024 03:22:02 GMT
 COPY file:018fa38d92aa0a4679f57c2d43b5c14547b2c603cab6ec7fd3240af5545472b5 in /etc/service/couchbase-server/run 
-# Wed, 03 Apr 2024 18:07:56 GMT
+# Tue, 16 Apr 2024 03:22:03 GMT
 # ARGS: CB_PACKAGE=couchbase-server-community_7.6.1-linux_@@ARCH@@.deb CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.1 CB_SKIP_CHECKSUM=false CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* UPDATE_COMMAND=apt-get update -y -q
 RUN set -x     && mkdir -p /etc/service/couchbase-server/supervise     && chown -R couchbase:couchbase                 /etc/service                 /etc/service/couchbase-server/supervise
-# Wed, 03 Apr 2024 18:07:56 GMT
+# Tue, 16 Apr 2024 03:22:03 GMT
 COPY file:1302333e9e56b11ae357341056dee0080efda9457b1ce3de1a1ecb6023e760ae in /usr/local/bin/ 
-# Wed, 03 Apr 2024 18:07:57 GMT
+# Tue, 16 Apr 2024 03:22:03 GMT
 # ARGS: CB_PACKAGE=couchbase-server-community_7.6.1-linux_@@ARCH@@.deb CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.1 CB_SKIP_CHECKSUM=false CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* UPDATE_COMMAND=apt-get update -y -q
 RUN set -x     && ln -s dummy.sh /usr/local/bin/iptables-save     && ln -s dummy.sh /usr/local/bin/lvdisplay     && ln -s dummy.sh /usr/local/bin/vgdisplay     && ln -s dummy.sh /usr/local/bin/pvdisplay
-# Wed, 03 Apr 2024 18:07:57 GMT
+# Tue, 16 Apr 2024 03:22:04 GMT
 # ARGS: CB_PACKAGE=couchbase-server-community_7.6.1-linux_@@ARCH@@.deb CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.1 CB_SKIP_CHECKSUM=false CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* UPDATE_COMMAND=apt-get update -y -q
 RUN set -ex     &&  if [ ! -e /opt/couchbase/bin/curl.real ]; then             ${UPDATE_COMMAND};             apt-get install -y chrpath;             chrpath -r '$ORIGIN/../lib' /opt/couchbase/bin/curl;             apt-get remove -y chrpath;             apt-get autoremove -y;             ${CLEANUP_COMMAND};         fi
-# Wed, 03 Apr 2024 18:07:57 GMT
+# Tue, 16 Apr 2024 03:22:04 GMT
 COPY file:d33fbbdd0ce895d4e271d6bb86ac8fd83524ba267b4e2af7a862d4d466a732ba in / 
-# Wed, 03 Apr 2024 18:07:57 GMT
+# Tue, 16 Apr 2024 03:22:04 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 03 Apr 2024 18:07:57 GMT
+# Tue, 16 Apr 2024 03:22:04 GMT
 CMD ["couchbase-server"]
-# Wed, 03 Apr 2024 18:07:58 GMT
+# Tue, 16 Apr 2024 03:22:04 GMT
 EXPOSE 11207 11210 11280 18091 18092 18093 18094 18095 18096 18097 8091 8092 8093 8094 8095 8096 8097 9123
-# Wed, 03 Apr 2024 18:07:58 GMT
+# Tue, 16 Apr 2024 03:22:04 GMT
 VOLUME [/opt/couchbase/var]
 ```
 
 -	Layers:
-	-	`sha256:c2984f07e523b18eaa80a8ca4614feba1808673e5adbc26f162d2ee50031961c`  
-		Last Modified: Sat, 17 Feb 2024 04:07:41 GMT  
-		Size: 27.2 MB (27204287 bytes)  
+	-	`sha256:7688b82426696e44f961201d38c484dd5279eb88689c7eadb2100dd075e697f8`  
+		Last Modified: Fri, 12 Apr 2024 07:29:54 GMT  
+		Size: 27.2 MB (27204984 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23a70596a0a7145916afe9432e93cb09ff5afcb23b36d2e34b6ae25193d2b9ba`  
-		Last Modified: Mon, 25 Mar 2024 20:13:26 GMT  
-		Size: 6.0 MB (6027552 bytes)  
+	-	`sha256:11863ef3e894dd6ffa24e5592f86fc52b51e62391229ae4e356dbf4f9f565c4f`  
+		Last Modified: Tue, 16 Apr 2024 03:26:52 GMT  
+		Size: 6.0 MB (6027895 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84fd1b0caa23b4cff84ef14dd8c48fb56d2da767b34c863298692c154ab1491b`  
-		Last Modified: Mon, 25 Mar 2024 20:13:25 GMT  
-		Size: 937.9 KB (937892 bytes)  
+	-	`sha256:050cd1760032ad0930988694136c07112902c2fa6d05b175000bfe7fe7e8ae41`  
+		Last Modified: Tue, 16 Apr 2024 03:26:51 GMT  
+		Size: 938.2 KB (938223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f98ce821f2ae755d5559682b9ebf8b33ef835a73e678750a89b9fc7c7b22826`  
-		Last Modified: Wed, 03 Apr 2024 18:09:32 GMT  
-		Size: 1.8 KB (1843 bytes)  
+	-	`sha256:7b1da51bcdc61f69943ae37b39dbe437c08b49cf442dc34e92b3fb51806066c2`  
+		Last Modified: Tue, 16 Apr 2024 03:27:52 GMT  
+		Size: 1.8 KB (1837 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d428885163ff9f565cccc4cf20e001b7ed1d5392e0805042d222a0fa8adc950d`  
-		Last Modified: Wed, 03 Apr 2024 18:10:02 GMT  
-		Size: 333.6 MB (333591921 bytes)  
+	-	`sha256:b5f5953723e88dcc8bf7500f20bc2a69383045b80484d521120f2f240ba60939`  
+		Last Modified: Tue, 16 Apr 2024 03:28:21 GMT  
+		Size: 333.6 MB (333592108 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7559baf51ebad082be871aba5d21d4f29d47a035ec0ef6753973a7c8fae5659`  
-		Last Modified: Wed, 03 Apr 2024 18:09:32 GMT  
+	-	`sha256:29c146994ee34ff0ce90827e0aa56b326e33443657578fd8dd028d7405d7c37b`  
+		Last Modified: Tue, 16 Apr 2024 03:27:52 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:704573f84df35fedc87f8e3e5d50f48478a27ce11ee5eea7f2352cf267301549`  
-		Last Modified: Wed, 03 Apr 2024 18:09:30 GMT  
-		Size: 693.0 B  
+	-	`sha256:f0550e546386bf516846b61c3d53de8e3baf1d1f8ada0adc8917045610cb4869`  
+		Last Modified: Tue, 16 Apr 2024 03:27:50 GMT  
+		Size: 695.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:027bd22ecac3b153ef6a154c30b88118af75eaab905172728e68b9e52f2dbbca`  
-		Last Modified: Wed, 03 Apr 2024 18:09:30 GMT  
-		Size: 725.0 B  
+	-	`sha256:7d5f1f70fa8ad847efc8befbd198421514d6dcd1046f321108963ee579fc93ed`  
+		Last Modified: Tue, 16 Apr 2024 03:27:50 GMT  
+		Size: 728.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bab0f54866a63a7eb47d88915ba82a51e79655d2736d4523b4a177074aa1252e`  
-		Last Modified: Wed, 03 Apr 2024 18:09:30 GMT  
-		Size: 237.0 B  
+	-	`sha256:91f7729fa51b580e193e72c17264ec0dffbf11cc79ffe3e78f154666962c5237`  
+		Last Modified: Tue, 16 Apr 2024 03:27:50 GMT  
+		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac9777ff9297dd6e16edbdf06d33f58b93d71be7a02e5e5869efed3a84e06a2e`  
-		Last Modified: Wed, 03 Apr 2024 18:09:30 GMT  
-		Size: 220.0 B  
+	-	`sha256:fa1e37bdb95e4d75054d5ac94fd067f417b6b8a37a9ddbb7ef79ace81e1a44cb`  
+		Last Modified: Tue, 16 Apr 2024 03:27:50 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31c5f5dcb1ab334de66949e88a0d0223987ca15248f01ac6008444f747744773`  
-		Last Modified: Wed, 03 Apr 2024 18:09:30 GMT  
-		Size: 855.0 B  
+	-	`sha256:e03590bd811827aa9264803266c094566248e3242e05c37eba419e763cc5a2c0`  
+		Last Modified: Tue, 16 Apr 2024 03:27:50 GMT  
+		Size: 857.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
