@@ -9,55 +9,67 @@
 -	[`jruby:9.3-jdk`](#jruby93-jdk)
 -	[`jruby:9.3-jdk11`](#jruby93-jdk11)
 -	[`jruby:9.3-jdk17`](#jruby93-jdk17)
+-	[`jruby:9.3-jdk21`](#jruby93-jdk21)
 -	[`jruby:9.3-jdk8`](#jruby93-jdk8)
 -	[`jruby:9.3-jre`](#jruby93-jre)
 -	[`jruby:9.3-jre11`](#jruby93-jre11)
 -	[`jruby:9.3-jre17`](#jruby93-jre17)
+-	[`jruby:9.3-jre21`](#jruby93-jre21)
 -	[`jruby:9.3-jre8`](#jruby93-jre8)
 -	[`jruby:9.3.14`](#jruby9314)
 -	[`jruby:9.3.14-jdk`](#jruby9314-jdk)
 -	[`jruby:9.3.14-jdk11`](#jruby9314-jdk11)
 -	[`jruby:9.3.14-jdk17`](#jruby9314-jdk17)
+-	[`jruby:9.3.14-jdk21`](#jruby9314-jdk21)
 -	[`jruby:9.3.14-jdk8`](#jruby9314-jdk8)
 -	[`jruby:9.3.14-jre`](#jruby9314-jre)
 -	[`jruby:9.3.14-jre11`](#jruby9314-jre11)
 -	[`jruby:9.3.14-jre17`](#jruby9314-jre17)
+-	[`jruby:9.3.14-jre21`](#jruby9314-jre21)
 -	[`jruby:9.3.14-jre8`](#jruby9314-jre8)
 -	[`jruby:9.3.14.0`](#jruby93140)
 -	[`jruby:9.3.14.0-jdk`](#jruby93140-jdk)
 -	[`jruby:9.3.14.0-jdk11`](#jruby93140-jdk11)
 -	[`jruby:9.3.14.0-jdk17`](#jruby93140-jdk17)
+-	[`jruby:9.3.14.0-jdk21`](#jruby93140-jdk21)
 -	[`jruby:9.3.14.0-jdk8`](#jruby93140-jdk8)
 -	[`jruby:9.3.14.0-jre`](#jruby93140-jre)
 -	[`jruby:9.3.14.0-jre11`](#jruby93140-jre11)
 -	[`jruby:9.3.14.0-jre17`](#jruby93140-jre17)
+-	[`jruby:9.3.14.0-jre21`](#jruby93140-jre21)
 -	[`jruby:9.3.14.0-jre8`](#jruby93140-jre8)
 -	[`jruby:9.4`](#jruby94)
 -	[`jruby:9.4-jdk`](#jruby94-jdk)
 -	[`jruby:9.4-jdk11`](#jruby94-jdk11)
 -	[`jruby:9.4-jdk17`](#jruby94-jdk17)
+-	[`jruby:9.4-jdk21`](#jruby94-jdk21)
 -	[`jruby:9.4-jdk8`](#jruby94-jdk8)
 -	[`jruby:9.4-jre`](#jruby94-jre)
 -	[`jruby:9.4-jre11`](#jruby94-jre11)
 -	[`jruby:9.4-jre17`](#jruby94-jre17)
+-	[`jruby:9.4-jre21`](#jruby94-jre21)
 -	[`jruby:9.4-jre8`](#jruby94-jre8)
 -	[`jruby:9.4.6`](#jruby946)
 -	[`jruby:9.4.6-jdk`](#jruby946-jdk)
 -	[`jruby:9.4.6-jdk11`](#jruby946-jdk11)
 -	[`jruby:9.4.6-jdk17`](#jruby946-jdk17)
+-	[`jruby:9.4.6-jdk21`](#jruby946-jdk21)
 -	[`jruby:9.4.6-jdk8`](#jruby946-jdk8)
 -	[`jruby:9.4.6-jre`](#jruby946-jre)
 -	[`jruby:9.4.6-jre11`](#jruby946-jre11)
 -	[`jruby:9.4.6-jre17`](#jruby946-jre17)
+-	[`jruby:9.4.6-jre21`](#jruby946-jre21)
 -	[`jruby:9.4.6-jre8`](#jruby946-jre8)
 -	[`jruby:9.4.6.0`](#jruby9460)
 -	[`jruby:9.4.6.0-jdk`](#jruby9460-jdk)
 -	[`jruby:9.4.6.0-jdk11`](#jruby9460-jdk11)
 -	[`jruby:9.4.6.0-jdk17`](#jruby9460-jdk17)
+-	[`jruby:9.4.6.0-jdk21`](#jruby9460-jdk21)
 -	[`jruby:9.4.6.0-jdk8`](#jruby9460-jdk8)
 -	[`jruby:9.4.6.0-jre`](#jruby9460-jre)
 -	[`jruby:9.4.6.0-jre11`](#jruby9460-jre11)
 -	[`jruby:9.4.6.0-jre17`](#jruby9460-jre17)
+-	[`jruby:9.4.6.0-jre21`](#jruby9460-jre21)
 -	[`jruby:9.4.6.0-jre8`](#jruby9460-jre8)
 -	[`jruby:latest`](#jrubylatest)
 
@@ -1728,6 +1740,10 @@ CMD ["irb"]
 		Size: 174.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `jruby:9.3-jdk21`
+
+**does not exist** (yet?)
+
 ## `jruby:9.3-jdk8`
 
 ```console
@@ -2675,6 +2691,10 @@ CMD ["irb"]
 		Last Modified: Thu, 28 Mar 2024 02:15:07 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `jruby:9.3-jre21`
+
+**does not exist** (yet?)
 
 ## `jruby:9.3-jre8`
 
@@ -3869,6 +3889,10 @@ CMD ["irb"]
 		Size: 174.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `jruby:9.3.14-jdk21`
+
+**does not exist** (yet?)
+
 ## `jruby:9.3.14-jdk8`
 
 ```console
@@ -4816,6 +4840,10 @@ CMD ["irb"]
 		Last Modified: Thu, 28 Mar 2024 02:15:07 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `jruby:9.3.14-jre21`
+
+**does not exist** (yet?)
 
 ## `jruby:9.3.14-jre8`
 
@@ -6010,6 +6038,10 @@ CMD ["irb"]
 		Size: 174.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `jruby:9.3.14.0-jdk21`
+
+**does not exist** (yet?)
+
 ## `jruby:9.3.14.0-jdk8`
 
 ```console
@@ -6957,6 +6989,10 @@ CMD ["irb"]
 		Last Modified: Thu, 28 Mar 2024 02:15:07 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `jruby:9.3.14.0-jre21`
+
+**does not exist** (yet?)
 
 ## `jruby:9.3.14.0-jre8`
 
@@ -8151,6 +8187,10 @@ CMD ["irb"]
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `jruby:9.4-jdk21`
+
+**does not exist** (yet?)
+
 ## `jruby:9.4-jdk8`
 
 ```console
@@ -9098,6 +9138,10 @@ CMD ["irb"]
 		Last Modified: Thu, 28 Mar 2024 02:13:37 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `jruby:9.4-jre21`
+
+**does not exist** (yet?)
 
 ## `jruby:9.4-jre8`
 
@@ -10292,6 +10336,10 @@ CMD ["irb"]
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `jruby:9.4.6-jdk21`
+
+**does not exist** (yet?)
+
 ## `jruby:9.4.6-jdk8`
 
 ```console
@@ -11239,6 +11287,10 @@ CMD ["irb"]
 		Last Modified: Thu, 28 Mar 2024 02:13:37 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `jruby:9.4.6-jre21`
+
+**does not exist** (yet?)
 
 ## `jruby:9.4.6-jre8`
 
@@ -12433,6 +12485,10 @@ CMD ["irb"]
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `jruby:9.4.6.0-jdk21`
+
+**does not exist** (yet?)
+
 ## `jruby:9.4.6.0-jdk8`
 
 ```console
@@ -13380,6 +13436,10 @@ CMD ["irb"]
 		Last Modified: Thu, 28 Mar 2024 02:13:37 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `jruby:9.4.6.0-jre21`
+
+**does not exist** (yet?)
 
 ## `jruby:9.4.6.0-jre8`
 
