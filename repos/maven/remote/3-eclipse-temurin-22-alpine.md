@@ -1,7 +1,7 @@
 ## `maven:3-eclipse-temurin-22-alpine`
 
 ```console
-$ docker pull maven@sha256:a6e7c85ef8764e324e02db12234ea8d717294247a03656fff20e54183d538639
+$ docker pull maven@sha256:1e7d2dd2d89a0eacc366e1c3114147ed83e838fc715b3ba1f64abfe88ed31893
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,13 +12,13 @@ $ docker pull maven@sha256:a6e7c85ef8764e324e02db12234ea8d717294247a03656fff20e5
 ### `maven:3-eclipse-temurin-22-alpine` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:6240b762dbb57031bf63e6c0f460e8c71063f359721590690a2434fed120dafc
+$ docker pull maven@sha256:5bfaf23a8433273b96deccf5c60f498f9d2bce7ab7676fc37c949a10436678b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **185.6 MB (185576691 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e9b923e70724552b79b686793dc124d2fcbf46f586e381f2d481865d0745961`
+-	Image ID: `sha256:050ffa5f3ae5e8bfb3ba46f9af8cd840d35613ba943a2b2c8f1bc03213719796`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
