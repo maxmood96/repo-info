@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0adee8f4dd2279a19c52eed37256f7a9c67a2d28ff33299207cc8c280844e27e`
-- Created: `2024-02-16T09:35:52.124548064Z`
-- Virtual Size: ~ 71.11 Mb  
+- Image ID: `sha256:93816ef1ab9007d690d5e88dbb2646b371d52f27a44605fee6561519afc15d0a`
+- Created: `2024-04-12T15:51:10.80000107Z`
+- Virtual Size: ~ 71.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -39,12 +39,12 @@ $ apt-get source -qq --print-uris acl=2.3.1-3
 'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.1-3.debian.tar.xz' acl_2.3.1-3.debian.tar.xz 30968 SHA512:a29af03f79bf6cd50852c9538013458b8bdb579c2059df1682120ced75bf8023b32a4f4c2fff8466364d1c97ad4113f84fdfbdc1c991b3f5a7fee2b1db2692d0
 ```
 
-### `dpkg` source package: `apt=2.7.3`
+### `dpkg` source package: `apt=2.7.3ubuntu0.1`
 
 Binary Packages:
 
-- `apt=2.7.3`
-- `libapt-pkg6.0:amd64=2.7.3`
+- `apt=2.7.3ubuntu0.1`
+- `libapt-pkg6.0:amd64=2.7.3ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0/copyright`)
 
@@ -56,9 +56,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=2.7.3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.7.3.dsc' apt_2.7.3.dsc 2945 SHA512:35608187cc9605110148634b01a56a1d06ad259c2a8dc127a630803e2943a70827379be97b28092b7fdf5a2b59103e450efcabdef82da571f434f4b286c2735e
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.7.3.tar.xz' apt_2.7.3.tar.xz 2343000 SHA512:0941bdffa2344edadf5cc6b299188acc05a10bb3ff1f4d10c7ac5c96daafce6a9fc2dc7d40a38617f950e623dec25ed68c7bf51e346cdf5fdf600ef00de5416e
+$ apt-get source -qq --print-uris apt=2.7.3ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.7.3ubuntu0.1.dsc' apt_2.7.3ubuntu0.1.dsc 3060 SHA512:2ed2e6bb90f8bd8efe674400c06b89f119204320f59cfee068e6f54d3de66d22bb2ddb502a93aae00050fbba328aacf9d0e269f51b8e81bceb8769de160fb709
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.7.3ubuntu0.1.tar.xz' apt_2.7.3ubuntu0.1.tar.xz 2343160 SHA512:99e1d0335f3c71a9adf9964b880acebc03901381a548c0b1a53f281947b13e968a6ea674fffd5b5fd58868ddeb48302eb545365d87da95bb5e8b22c064e7673e
 ```
 
 ### `dpkg` source package: `attr=1:2.5.1-4`
@@ -367,11 +367,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.8-4
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.8-4.debian.tar.xz' diffutils_3.8-4.debian.tar.xz 14428 SHA512:874a41a50f6db1b91a358445513a22a24871be830a10a9d192ac2957fa91a4c3e2265472fcf08f867b21a1c125b192ca559cc77c5ad51e35275a635d58ae1c8a
 ```
 
-### `dpkg` source package: `dpkg=1.22.0ubuntu1`
+### `dpkg` source package: `dpkg=1.22.0ubuntu1.1`
 
 Binary Packages:
 
-- `dpkg=1.22.0ubuntu1`
+- `dpkg=1.22.0ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -382,9 +382,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dpkg=1.22.0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.0ubuntu1.dsc' dpkg_1.22.0ubuntu1.dsc 3069 SHA512:0fe848d6e8dbf6e95c206a6ca4b03b96af061c5f3f16dfbc8f9808b8f33fa4593d5fb19bec7b2a4aef4a1bc45957108cbb1304497c95fca5526a5d92454bec2f
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.0ubuntu1.tar.xz' dpkg_1.22.0ubuntu1.tar.xz 5358284 SHA512:a185638cba29a2054ac40fa59b4b86f6842d10dedd6e53ff7d6c715f1953df6544912a44116a39eec8766903ad23ed2c370d79a745bd48495f105bb9a4df58bd
+$ apt-get source -qq --print-uris dpkg=1.22.0ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.0ubuntu1.1.dsc' dpkg_1.22.0ubuntu1.1.dsc 3077 SHA512:9ac9f8b47cd66b7cb4946997aaaa5959b7fd3a5a33518da768da76cb895597e144a55dbff0bfbbb8205cac12de5f719d6fc0ba60936eb75d4668228e609f8251
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.0ubuntu1.1.tar.xz' dpkg_1.22.0ubuntu1.1.tar.xz 5358400 SHA512:da9b2834b703e1c3d038207537ca587f1ad18c7d1bac543beec715381e3f6a2b40fcb56904880b922ee3c68e0e4d5c93f8f1b03c24731b90eb03c05b0b7c5e04
 ```
 
 ### `dpkg` source package: `e2fsprogs=1.47.0-2ubuntu1`
@@ -591,15 +591,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.1-4ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.1-4ubuntu1.2.dsc' gnutls28_3.8.1-4ubuntu1.2.dsc 3346 SHA512:53475e4add75773428d4749330e4475ab5d1ca096099bcd6bf4cc1edaafbefd36fd76e840fae977f73fe631e4e56887c37d9b88872b8e61adefb25e55968bd15
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.1.orig.tar.xz' gnutls28_3.8.1.orig.tar.xz 6447056 SHA512:22e78db86b835843df897d14ad633d8a553c0f9b1389daa0c2f864869c6b9ca889028d434f9552237dc4f1b37c978fbe0cce166e3768e5d4e8850ff69a6fc872
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.1.orig.tar.xz.asc' gnutls28_3.8.1.orig.tar.xz.asc 996 SHA512:ad42a077718a91b82959ee7ed8282b69e73825c70c5c60eb4a1f87aab055dee2ac74a03f489d5f11c2094ec6ac01ea44c0daffb61cb4daae714dcaf5ea89ecd0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.1-4ubuntu1.2.debian.tar.xz' gnutls28_3.8.1-4ubuntu1.2.debian.tar.xz 77080 SHA512:09e079792b24f4d879ebc0c931e678f9904cd39b25611065b7cf20e3173020b97794de1e2bf628b6e351f1a07ea19ee4ee72644812e7a4b53c587b036aad14f4
-```
 
 ### `dpkg` source package: `grep=3.11-2`
 
@@ -1475,17 +1469,17 @@ $ apt-get source -qq --print-uris usrmerge=35ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/u/usrmerge/usrmerge_35ubuntu1.tar.xz' usrmerge_35ubuntu1.tar.xz 15240 SHA512:5116c42163a7b972282ca7af66c268f29197a725fc91020bcd2fcd7ba31f150a705749f3fcf7b02b45d778ffff93e4bc93af0db9491dd28f82e7be9793e9fb0d
 ```
 
-### `dpkg` source package: `util-linux=2.39.1-4ubuntu2`
+### `dpkg` source package: `util-linux=2.39.1-4ubuntu2.2`
 
 Binary Packages:
 
-- `bsdutils=1:2.39.1-4ubuntu2`
-- `libblkid1:amd64=2.39.1-4ubuntu2`
-- `libmount1:amd64=2.39.1-4ubuntu2`
-- `libsmartcols1:amd64=2.39.1-4ubuntu2`
-- `libuuid1:amd64=2.39.1-4ubuntu2`
-- `mount=2.39.1-4ubuntu2`
-- `util-linux=2.39.1-4ubuntu2`
+- `bsdutils=1:2.39.1-4ubuntu2.2`
+- `libblkid1:amd64=2.39.1-4ubuntu2.2`
+- `libmount1:amd64=2.39.1-4ubuntu2.2`
+- `libsmartcols1:amd64=2.39.1-4ubuntu2.2`
+- `libuuid1:amd64=2.39.1-4ubuntu2.2`
+- `mount=2.39.1-4ubuntu2.2`
+- `util-linux=2.39.1-4ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -1509,10 +1503,10 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.39.1-4ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.1-4ubuntu2.dsc' util-linux_2.39.1-4ubuntu2.dsc 4643 SHA512:0e9d2a14c2662687eed1c8aa35fa4b8ce208a33a82fe5c8c6f102cf9caa68d3199680c2fca93dc86d634e0dab9d6a99f83a23baa6a75f122fdc99dfbb5cb10cc
+$ apt-get source -qq --print-uris util-linux=2.39.1-4ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.1-4ubuntu2.2.dsc' util-linux_2.39.1-4ubuntu2.2.dsc 4651 SHA512:1749aa06909567787f3a1881c72c17643f88a3600ded684f028653418f0bb65da2baad1b48a863df2d48b85b366cc62dace80ecd6162ac682daab27e1189275e
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.1.orig.tar.xz' util-linux_2.39.1.orig.tar.xz 8351164 SHA512:8fe2c9014f6161330610f7470b870855cecbd3fab9c187b75d8f22e16573c82516050479be39cfb9f7dd6d7ef1cc298d31d839b194dda5ec4daf0d1197ac71e9
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.1-4ubuntu2.debian.tar.xz' util-linux_2.39.1-4ubuntu2.debian.tar.xz 103044 SHA512:72c0480ece71252f940efb6bd6996212f0ccf06ba24e58330b4ad13a13d161ca30e81cfed4cf0575715442da6ba337adbf74eac09abeebb637272a5035be3950
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.1-4ubuntu2.2.debian.tar.xz' util-linux_2.39.1-4ubuntu2.2.debian.tar.xz 103512 SHA512:505638b4714a39e703b457ef48a343b6a18f5f68be8eb57a0e29f35986deb38130a46c8770a1a235197946d91bcf2ff07c07e2fd321127e52594902d9a02ce9e
 ```
 
 ### `dpkg` source package: `xxhash=0.8.1-1`
