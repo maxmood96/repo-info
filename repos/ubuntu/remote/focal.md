@@ -1,7 +1,7 @@
 ## `ubuntu:focal`
 
 ```console
-$ docker pull ubuntu@sha256:c97a46bb9b30a4a957464fd07c55f1612c800513bdbc7ff798ec08a6bd94b5ef
+$ docker pull ubuntu@sha256:6d7b3dc0269ceeab28d239ca791b82e05abd533fa7c3a0f0378a92e3e5afae97
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -117,35 +117,35 @@ CMD ["/bin/bash"]
 ### `ubuntu:focal` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:bfa3015908143dd401cc6d0dbd9f0571ff9e087caead46867ce12abac0a4de42
+$ docker pull ubuntu@sha256:ef596418082f13191304a313d8b6aa0d292c5e1135f16d811866555593867175
 ```
 
 -	Docker Version: 24.0.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.1 MB (32076591 bytes)**  
+-	Total Size: **32.1 MB (32076803 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84a17c1701fa251e5b67bec65b30806df72254eaf34f27ae067b98d47162bf24`
+-	Image ID: `sha256:6ed3b4511576ff9171ba7363af64dd3bba1a8983bf9218fa63369dbd13a6283c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 16 Feb 2024 19:14:37 GMT
+# Wed, 10 Apr 2024 19:04:56 GMT
 ARG RELEASE
-# Fri, 16 Feb 2024 19:14:37 GMT
+# Wed, 10 Apr 2024 19:04:56 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 16 Feb 2024 19:14:37 GMT
+# Wed, 10 Apr 2024 19:04:56 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 16 Feb 2024 19:14:37 GMT
+# Wed, 10 Apr 2024 19:04:56 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 16 Feb 2024 19:14:40 GMT
-ADD file:e8a9147477810033be455b6d05074e33f9e64458087ca10e58dbc087c80e00ad in / 
-# Fri, 16 Feb 2024 19:14:40 GMT
+# Wed, 10 Apr 2024 19:04:59 GMT
+ADD file:8efe37e124c3eb7c9e2b3ba1f33a019526490b9a49cbe8997abf72caf6bb7ece in / 
+# Wed, 10 Apr 2024 19:04:59 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:38dfc0ab6c0b1b6c56d726c3ed7ccbb809c0f85c5d85e9dbed8fed77007c4ed0`  
-		Last Modified: Fri, 16 Feb 2024 21:41:11 GMT  
-		Size: 32.1 MB (32076591 bytes)  
+	-	`sha256:1dff51f344fcb2f57b1b40c521798a8e8ccde4d330528f16250dde1506790c1e`  
+		Last Modified: Wed, 10 Apr 2024 19:19:37 GMT  
+		Size: 32.1 MB (32076803 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:focal` - linux; s390x
