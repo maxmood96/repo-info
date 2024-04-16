@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-boot-2.8.3-jammy`
 
 ```console
-$ docker pull clojure@sha256:e20a7d52eed1311adea35d85c61833648741aca5d530cef66cfa7d0a1db7fc32
+$ docker pull clojure@sha256:91ce8c7acb2fb6275d3508d6fa0d79bfb726b422112b04efa4cc01932b636d9a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -107,29 +107,29 @@ CMD ["boot" "repl"]
 ### `clojure:temurin-11-boot-2.8.3-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:41dfbeddd04b8c58016e549f6730132ca430b4c18ace9a2124bf93d96d7dabc4
+$ docker pull clojure@sha256:6d26fe30876e07ed8ecf3fdad0a94686151dee59c6477a7d5a0303edd7427176
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.4 MB (242421746 bytes)**  
+-	Total Size: **242.4 MB (242423083 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1318f2c8c09ca59db05443dd5bd3246796779ee8ca53a323c1f8d040dff0e457`
+-	Image ID: `sha256:f1e3b6e14f0537c312dbbef47a707add8a27f29ca46ca4908b0b26597d9e34f9`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["boot","repl"]`
 
 ```dockerfile
-# Tue, 27 Feb 2024 18:53:22 GMT
+# Wed, 10 Apr 2024 18:26:15 GMT
 ARG RELEASE
-# Tue, 27 Feb 2024 18:53:22 GMT
+# Wed, 10 Apr 2024 18:26:15 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 27 Feb 2024 18:53:22 GMT
+# Wed, 10 Apr 2024 18:26:15 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 27 Feb 2024 18:53:22 GMT
+# Wed, 10 Apr 2024 18:26:15 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 27 Feb 2024 18:53:25 GMT
-ADD file:07cdbabf782942af04487c9da03de50a611a51e69d8bac1f593acb73a3ba3a46 in / 
-# Tue, 27 Feb 2024 18:53:25 GMT
+# Wed, 10 Apr 2024 18:26:17 GMT
+ADD file:5523c8e2dfa5286893a32b66bdb3395b76e282d86d79b7320a5855e8f55481e1 in / 
+# Wed, 10 Apr 2024 18:26:17 GMT
 CMD ["/bin/bash"]
 # Thu, 25 Jan 2024 11:07:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -151,50 +151,50 @@ COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 25 Jan 2024 11:07:04 GMT
 CMD ["jshell"]
-# Thu, 28 Mar 2024 02:34:43 GMT
+# Tue, 16 Apr 2024 06:35:20 GMT
 ENV BOOT_VERSION=2.8.3
-# Thu, 28 Mar 2024 02:34:43 GMT
+# Tue, 16 Apr 2024 06:35:20 GMT
 ENV BOOT_INSTALL=/usr/local/bin/
-# Thu, 28 Mar 2024 02:34:43 GMT
+# Tue, 16 Apr 2024 06:35:20 GMT
 WORKDIR /tmp
-# Thu, 28 Mar 2024 02:34:47 GMT
+# Tue, 16 Apr 2024 06:35:24 GMT
 RUN apt-get update && apt-get install -y wget && rm -rf /var/lib/apt/lists/* && mkdir -p $BOOT_INSTALL && wget -q https://github.com/boot-clj/boot-bin/releases/download/latest/boot.sh && echo "Comparing installer checksum..." && sha256sum boot.sh && echo "0ccd697f2027e7e1cd3be3d62721057cbc841585740d0aaa9fbb485d7b1f17c3 *boot.sh" | sha256sum -c - && mv boot.sh $BOOT_INSTALL/boot && chmod 0755 $BOOT_INSTALL/boot && apt-get purge -y --auto-remove wget
-# Thu, 28 Mar 2024 02:34:47 GMT
+# Tue, 16 Apr 2024 06:35:24 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Thu, 28 Mar 2024 02:34:47 GMT
+# Tue, 16 Apr 2024 06:35:24 GMT
 ENV BOOT_AS_ROOT=yes
-# Thu, 28 Mar 2024 02:35:04 GMT
+# Tue, 16 Apr 2024 06:35:41 GMT
 RUN boot
-# Thu, 28 Mar 2024 02:35:04 GMT
+# Tue, 16 Apr 2024 06:35:42 GMT
 CMD ["boot" "repl"]
 ```
 
 -	Layers:
-	-	`sha256:71dca2167f9f5ee82e602460098ce45ba714cb60cd683d677d994dad97c74bb2`  
-		Last Modified: Wed, 28 Feb 2024 01:55:47 GMT  
-		Size: 28.4 MB (28400638 bytes)  
+	-	`sha256:89412e4d2f8b52822269bdfcea7664caa02251913b423e2ede06eb268ff39557`  
+		Last Modified: Fri, 12 Apr 2024 01:35:29 GMT  
+		Size: 28.4 MB (28400298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2168560270786452bc1288278f5b8a7831c90a490efa55dc798deec8e871311a`  
-		Last Modified: Thu, 28 Mar 2024 00:48:42 GMT  
-		Size: 12.8 MB (12846303 bytes)  
+	-	`sha256:62af4570e03cd18721264dca7618ad8bfe7fc52046caf98dd92dbd19a11ae3bf`  
+		Last Modified: Tue, 16 Apr 2024 02:55:33 GMT  
+		Size: 12.8 MB (12847096 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fd5f2dc7848119160dd1d53b9506acf5959ee9bbb1237b18a5e135cc705f76e`  
-		Last Modified: Thu, 28 Mar 2024 00:50:43 GMT  
-		Size: 142.0 MB (142014623 bytes)  
+	-	`sha256:b8435ce2fcb301ff48191f9da7dd108437bc7f06ed73120b41426e09c9a6da6d`  
+		Last Modified: Tue, 16 Apr 2024 02:56:44 GMT  
+		Size: 142.0 MB (142014659 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a63447d12fb938c3a501e889e70575adf85575a0d36e8b6ba8828f62f7d1262b`  
-		Last Modified: Thu, 28 Mar 2024 00:50:33 GMT  
-		Size: 175.0 B  
+	-	`sha256:6069fc1486e4ee30ca7cac97a30d6b86f09b480ea5c52ef5211c15d8903f2648`  
+		Last Modified: Tue, 16 Apr 2024 02:56:35 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17d1416e6f1eec4000cbfd3a08d7d33e8200760d235abd6c6581fb30a0e569a6`  
-		Last Modified: Thu, 28 Mar 2024 00:50:34 GMT  
-		Size: 733.0 B  
+	-	`sha256:dd80c27f30f19544616bcfd19b08600c15a3bd9d804eb6de126b963b6effc8c7`  
+		Last Modified: Tue, 16 Apr 2024 02:56:35 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fbd8bc2201134d96e83eb5448a54440afc937b99625d2d4f49608c54ac4baeae`  
-		Last Modified: Thu, 28 Mar 2024 02:50:40 GMT  
-		Size: 338.8 KB (338840 bytes)  
+	-	`sha256:e957fb8d3ac1538e6330f9ffb291a5a115f1c232dc8483ce0d3c472457e81dc9`  
+		Last Modified: Tue, 16 Apr 2024 06:53:26 GMT  
+		Size: 339.6 KB (339640 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:219e437170840f4aeefc0a093e7bd9b597fac2c24d5b21802aeffbd6d913bf88`  
-		Last Modified: Thu, 28 Mar 2024 02:50:42 GMT  
-		Size: 58.8 MB (58820434 bytes)  
+	-	`sha256:9e900e295a664d34c4629d318452216e74ce3bd9b3507933e32f4055a2787598`  
+		Last Modified: Tue, 16 Apr 2024 06:53:29 GMT  
+		Size: 58.8 MB (58820484 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

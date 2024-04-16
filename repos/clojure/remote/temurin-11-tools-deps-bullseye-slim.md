@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-tools-deps-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:431ea6a46a5f6d35e977368125219981b72f5b006f2efac10e70e18ae0a76423
+$ docker pull clojure@sha256:1785f82ac37865f8dd29bd8f940472f89b2ba5e8b356f6fdad5f56edbc30b5d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -66,14 +66,14 @@ CMD ["clj"]
 ### `clojure:temurin-11-tools-deps-bullseye-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:7fc70a6e7af1e08354e82958400778927e4d4c5bbdb88b1fea6654040cb165e0
+$ docker pull clojure@sha256:d75033fb7302baa041d9381c4319774082decbfcccbf85b572717d64a38addd7
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.8 MB (230834039 bytes)**  
+-	Total Size: **230.8 MB (230834189 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2f957be25686b312c95262e97c444c94a5aecc0aa660ca8323705d7440a0441`
+-	Image ID: `sha256:6358316d4029509a5ab26ead9efa63c221d8677cd0494b2c1503c019941279d7`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -83,19 +83,19 @@ ADD file:b6a7ade0a9cb3d95d76b5cee3357ae94ff134a72609e260e046cda9537b31b9d in /
 CMD ["bash"]
 # Wed, 10 Apr 2024 04:39:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 10 Apr 2024 04:44:53 GMT
-COPY dir:d5fb8d9a38dea7496f2aff176bc9a34bbca80551c2dc57109d2dae5907a339ee in /opt/java/openjdk 
-# Wed, 10 Apr 2024 04:44:56 GMT
+# Tue, 16 Apr 2024 06:34:19 GMT
+COPY dir:337eb37873e2fe424b3d62c18ff2640cf50898156a884981e9e10924759441c3 in /opt/java/openjdk 
+# Tue, 16 Apr 2024 06:34:22 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 10 Apr 2024 04:47:48 GMT
+# Tue, 16 Apr 2024 06:39:02 GMT
 ENV CLOJURE_VERSION=1.11.1.1435
-# Wed, 10 Apr 2024 04:47:48 GMT
+# Tue, 16 Apr 2024 06:39:02 GMT
 WORKDIR /tmp
-# Wed, 10 Apr 2024 18:05:28 GMT
+# Tue, 16 Apr 2024 06:39:16 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -sLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apt-get purge -y --auto-remove curl
-# Wed, 10 Apr 2024 18:05:28 GMT
+# Tue, 16 Apr 2024 06:39:16 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Wed, 10 Apr 2024 18:05:28 GMT
+# Tue, 16 Apr 2024 06:39:16 GMT
 CMD ["clj"]
 ```
 
@@ -104,15 +104,15 @@ CMD ["clj"]
 		Last Modified: Wed, 10 Apr 2024 00:44:46 GMT  
 		Size: 30.1 MB (30076306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a9f0cb0cf9f2a91955c0e3d73d286f38239bde001a4ae6b8442625ab39f1197`  
-		Last Modified: Wed, 10 Apr 2024 05:02:10 GMT  
-		Size: 142.0 MB (142006303 bytes)  
+	-	`sha256:ff05a7b30a1c1c5b0e61fdf5d3f92a4bba15507b0cd3761604069982b2384477`  
+		Last Modified: Tue, 16 Apr 2024 06:53:05 GMT  
+		Size: 142.0 MB (142006376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da6b4ef348047edf7d926f9f2fa83570ef72dff9c087d7868acdc2fd6bf44650`  
-		Last Modified: Wed, 10 Apr 2024 18:19:45 GMT  
-		Size: 58.8 MB (58750812 bytes)  
+	-	`sha256:7fe9269803173b5493b1a95cc3bc9ce42a14d9198d6f63c4d032e696a1361c7c`  
+		Last Modified: Tue, 16 Apr 2024 06:55:34 GMT  
+		Size: 58.8 MB (58750890 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f97b5430b5d9013a7768b62bb1c47bac62be5dcf1504b9f4eefe79d39895127`  
-		Last Modified: Wed, 10 Apr 2024 18:19:38 GMT  
-		Size: 618.0 B  
+	-	`sha256:c3304d3a70d586ebd395a0cfe332eee0e06f354db657c122c7a2b698208a67be`  
+		Last Modified: Tue, 16 Apr 2024 06:55:29 GMT  
+		Size: 617.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
