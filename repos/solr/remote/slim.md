@@ -1,7 +1,7 @@
 ## `solr:slim`
 
 ```console
-$ docker pull solr@sha256:0038dde76dbb4f0db060578147d01c4432e9d27c067ea25a4245f37601a28ed4
+$ docker pull solr@sha256:fe4ab5a8e03beffb66f7b1d9ab73ce80dacda218e59087e84e499057d40f85f0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20,13 +20,13 @@ $ docker pull solr@sha256:0038dde76dbb4f0db060578147d01c4432e9d27c067ea25a4245f3
 ### `solr:slim` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:8c00a7a28cb0f40990f9d73f0dac5aa026bd61ad967951387ef06470a7d28b69
+$ docker pull solr@sha256:9ddfaffb8c65aa5766611e2127b35d43bc233af51c1a8802910429f48b7292b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.4 MB (156448241 bytes)**  
+-	Total Size: **156.4 MB (156438141 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac0b7b54bafcca5b605e72ef5b8c2e108efbd59c9f5ddd768cd6a926f39a30cb`
+-	Image ID: `sha256:e856f70a1578b61539ded159d58fbe71666401e289f6fb36cf1b56257fc1cf91`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
@@ -40,7 +40,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Tue, 13 Feb 2024 16:30:16 GMT
 LABEL org.opencontainers.image.version=22.04
 # Tue, 13 Feb 2024 16:30:16 GMT
-ADD file:21c2e8d95909bec6f4acdaf4aed55b44ee13603681f93b152e423e3e6a4a207b in / 
+ADD file:3bd10da0673e2e72cb06a1f64a9df49a36341df39b0f762e3d1b38ee4de296fa in / 
 # Tue, 13 Feb 2024 16:30:16 GMT
 CMD ["/bin/bash"]
 # Tue, 13 Feb 2024 16:30:16 GMT
@@ -119,45 +119,45 @@ CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:23828d760c7b04df02891af556c40ca44c2dd79d6837ea6f18fac24f4108448c`  
-		Last Modified: Tue, 27 Feb 2024 20:46:06 GMT  
-		Size: 30.5 MB (30451302 bytes)  
+	-	`sha256:7021d1b70935851c95c45ed18156980b5024eda29b99564429025ea04f5ec109`  
+		Last Modified: Thu, 11 Apr 2024 03:03:17 GMT  
+		Size: 30.4 MB (30439778 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfcf356fa6e6902e661a53c29cf3b351f284090cb2c0de2ad6c5c238a6fdb9a8`  
-		Last Modified: Thu, 28 Mar 2024 02:03:28 GMT  
-		Size: 12.9 MB (12904693 bytes)  
+	-	`sha256:a1dddff65ed2408fb8512cf4a5e475bc56396102dc76b9968c1f68a06414767b`  
+		Last Modified: Tue, 16 Apr 2024 04:03:41 GMT  
+		Size: 12.9 MB (12905145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b345ba1396e8406df1a417529c91dac4e4802e6b18921719b9022f3dfb3734cf`  
-		Last Modified: Thu, 28 Mar 2024 02:10:46 GMT  
-		Size: 47.2 MB (47163261 bytes)  
+	-	`sha256:1799e72eec6b835f4f493ec08eef7c0de31e3d1e4b3265db1d346a5282630e16`  
+		Last Modified: Tue, 16 Apr 2024 04:06:54 GMT  
+		Size: 47.2 MB (47163386 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33e0a682e40f83e4da859eee85bc3b44b9444d2949261d3f2a475b030d190ecb`  
-		Last Modified: Thu, 28 Mar 2024 02:10:39 GMT  
-		Size: 159.0 B  
+	-	`sha256:58e489940d10c0f286533ea7999e045f2ff1188baa6aad2d676349e3e72c5e8b`  
+		Last Modified: Tue, 16 Apr 2024 04:06:48 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fa5752204b57ae4cecf034a16e07738b48b46bfdb2f5aa6981b074fb11f5626`  
-		Last Modified: Thu, 28 Mar 2024 02:10:39 GMT  
+	-	`sha256:34382f6b019ca012a4b3f974b3039a24f169585e6ae8fa737cf539791d51ea1f`  
+		Last Modified: Tue, 16 Apr 2024 04:06:48 GMT  
 		Size: 731.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e58b36f07f1e2e1664527ad0fb1ebe3e2dd7c4bb9b2b68ef75294ec01539ab4`  
-		Last Modified: Thu, 28 Mar 2024 02:49:30 GMT  
-		Size: 64.3 MB (64324767 bytes)  
+	-	`sha256:ce4c30de298bed77cd12026c7cf905f938a3e91f48acdacc0d6fd96d96e33582`  
+		Last Modified: Tue, 16 Apr 2024 05:57:07 GMT  
+		Size: 64.3 MB (64325161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34a521dc9798da3be70a2c6a05c88018f0a106a1ded48962c9f2df142492dcd4`  
-		Last Modified: Thu, 28 Mar 2024 02:49:30 GMT  
-		Size: 4.3 KB (4273 bytes)  
+	-	`sha256:d2b51f114af12f2ed6ec2939e7c332aff5b93929c4ba42493553c7494fc1e997`  
+		Last Modified: Tue, 16 Apr 2024 05:57:06 GMT  
+		Size: 4.3 KB (4271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e081e1f8b23ffadf7e34cff4d425604ae79534a90c2494a75424825a511284cf`  
-		Last Modified: Thu, 28 Mar 2024 02:49:30 GMT  
+	-	`sha256:a0fa5a8eea832099c8bac735c03265d337a80020a4f135fc4f9f4bf2ddbf505d`  
+		Last Modified: Tue, 16 Apr 2024 05:57:06 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c7b71c152b7cee8367a567ff385b0ead2ec0d3994bf6f50dfbdd514c6bcd7299`  
-		Last Modified: Thu, 28 Mar 2024 02:49:30 GMT  
-		Size: 10.8 KB (10790 bytes)  
+	-	`sha256:009e41f55de22cba6fe17878f85fdfb0131322a6a520ab90af15faa99e3cd55a`  
+		Last Modified: Tue, 16 Apr 2024 05:57:06 GMT  
+		Size: 10.8 KB (10786 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc91f3f893ba5323800ec49d2ff4c98a8e2db4c5061faf0eee2562e429fb9c22`  
-		Last Modified: Thu, 28 Mar 2024 02:49:30 GMT  
-		Size: 1.6 MB (1588019 bytes)  
+	-	`sha256:c6b35e53d500dfbb6fad72a4c47750f3b91291b8474198fe760dd5415d6329fb`  
+		Last Modified: Tue, 16 Apr 2024 05:57:07 GMT  
+		Size: 1.6 MB (1588477 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -167,24 +167,24 @@ CMD ["solr-foreground"]
 ### `solr:slim` - unknown; unknown
 
 ```console
-$ docker pull solr@sha256:ead14a4c87723f694ae12bc40b46cdcd9afd165fced4f8261c64f7fe52468f19
+$ docker pull solr@sha256:aa9076dc0fabfe5ea1c489fa5c2eb96f44ac0dc70ab7184ce3e51e9af2028f5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3692051 bytes)**  
+-	Total Size: **3.7 MB (3692083 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd897a1117d50df84045c42b2b4bce2cc49ca9a04fd4993211dbce60540e2c33`
+-	Image ID: `sha256:e64593fdbda2e60f92b1259b3d01dffdb7c8c8e3b94f0b8091f9afa5510f9981`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ae6c8e32774841a5e8b3bd5887188c3cdbfc92195ac017f1b6add53f67fcf588`  
-		Last Modified: Thu, 28 Mar 2024 02:49:29 GMT  
-		Size: 3.7 MB (3657184 bytes)  
+	-	`sha256:dbb9dbdc21d727333c7773618c0cc3100cbf6327bbe175eed5bb4b15c41ad31c`  
+		Last Modified: Tue, 16 Apr 2024 05:57:05 GMT  
+		Size: 3.7 MB (3657216 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:63049c4f656b8f13d2acd02fa0ed6ee91e00619358d68a23e02d6737c1c8f7da`  
-		Last Modified: Thu, 28 Mar 2024 02:49:29 GMT  
+	-	`sha256:85de2aa374bbae98c7a0718c18534ad250d3433a289cef67ec553d9fb6d1dbaf`  
+		Last Modified: Tue, 16 Apr 2024 05:57:05 GMT  
 		Size: 34.9 KB (34867 bytes)  
 		MIME: application/vnd.in-toto+json
 
