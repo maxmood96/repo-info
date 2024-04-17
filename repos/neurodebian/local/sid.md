@@ -81,19 +81,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.7.14
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.14.dsc' apt_2.7.14.dsc 2977 SHA256:99d27439b093bb20a378ae9114db378a29115159a9bace930153316d49930db7
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.14.tar.xz' apt_2.7.14.tar.xz 2353208 SHA256:7a01783f05b7d90f36aea7871cc06757499ae8ade933497aaeb6c508274e7358
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.7.14/
 
-- https://sources.debian.net/src/apt/2.7.14/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.7.14/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.7.14/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-1`
 
@@ -410,20 +404,13 @@ Licenses: (parsed from: `/usr/share/doc/libdb5.3t64/copyright`)
 - `X11`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28+dfsg2-6
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-6.dsc' db5.3_5.3.28+dfsg2-6.dsc 1769 SHA256:f56d1b663622620445a0654a7b5efc0ad7d04cc0278d8695f159d76ac272b0b8
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2.orig.tar.xz' db5.3_5.3.28+dfsg2.orig.tar.xz 21287688 SHA256:ad41b507415dec8316e828b2230242af2251d2c86eefa3c7aa9ef47c5239ef33
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-6.debian.tar.xz' db5.3_5.3.28+dfsg2-6.debian.tar.xz 34196 SHA256:e1ebfb15e23cd7f64d801ec4bad0c30aa178ab0d23e75b993896f1ece8187cff
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg2-6/
 
-- https://sources.debian.net/src/db5.3/5.3.28+dfsg2-6/ (for browsing the source)
-- https://sources.debian.net/src/db5.3/5.3.28+dfsg2-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg2-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.86`
 
