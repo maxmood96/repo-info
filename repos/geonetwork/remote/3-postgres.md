@@ -1,7 +1,7 @@
 ## `geonetwork:3-postgres`
 
 ```console
-$ docker pull geonetwork@sha256:d1a9d1b187616e40ec78e762c7555c7e3f95a4b769a7370a4972e9c0bc578dd8
+$ docker pull geonetwork@sha256:3045c74bf9395a80671f421c368a528db5fb3b856b0ca77e406d3eddfa270044
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,14 +14,14 @@ $ docker pull geonetwork@sha256:d1a9d1b187616e40ec78e762c7555c7e3f95a4b769a7370a
 ### `geonetwork:3-postgres` - linux; amd64
 
 ```console
-$ docker pull geonetwork@sha256:c5705193a84ce8cfe13cd1ca5e28aab7c7c881b6c71468f707c882dfb84487f0
+$ docker pull geonetwork@sha256:5ca00ae76176604c05c3513937ec685d72df5a0958bd9183c26e48a3956d1a5f
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **408.3 MB (408316124 bytes)**  
+-	Total Size: **408.3 MB (408319485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2f7abe653eb080cdcea024acc122f4c03d3b71507ac5935e4b9c293b0b366e9`
+-	Image ID: `sha256:fc6db4cf06fd6d8696c4f7decd45d3ca27ecce247f8208b047ccff86dd301d4b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -72,53 +72,53 @@ ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
 # Tue, 16 Apr 2024 10:12:04 GMT
 ENV TOMCAT_MAJOR=9
-# Tue, 16 Apr 2024 10:12:04 GMT
-ENV TOMCAT_VERSION=9.0.87
-# Tue, 16 Apr 2024 10:12:04 GMT
-ENV TOMCAT_SHA512=71a64fe805aab89ef4798571d860a3c9a4f751f808921559a9249305abb205836de33ab89bb33b625a77f799f193d6bffbe94aadf293866df756d708f5bfb933
-# Tue, 16 Apr 2024 10:12:33 GMT
+# Wed, 17 Apr 2024 00:46:07 GMT
+ENV TOMCAT_VERSION=9.0.88
+# Wed, 17 Apr 2024 00:46:07 GMT
+ENV TOMCAT_SHA512=b2668f50339afdd266dbdf3ff20a98632a5552910179eda272b65ea0b18be4bef8fa9988e3cfc77e4eae4b74ae1e7abe2483b0e427a07628ed50fed3a13eefb9
+# Wed, 17 Apr 2024 00:46:36 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://dlcdn.apache.org/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 1777 logs temp work; 		catalina.sh version
-# Tue, 16 Apr 2024 10:12:35 GMT
+# Wed, 17 Apr 2024 00:46:37 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Tue, 16 Apr 2024 10:12:35 GMT
+# Wed, 17 Apr 2024 00:46:38 GMT
 EXPOSE 8080
-# Tue, 16 Apr 2024 10:12:35 GMT
+# Wed, 17 Apr 2024 00:46:38 GMT
 ENTRYPOINT []
-# Tue, 16 Apr 2024 10:12:35 GMT
+# Wed, 17 Apr 2024 00:46:38 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 16 Apr 2024 14:40:45 GMT
+# Wed, 17 Apr 2024 02:04:42 GMT
 ENV GN_FILE=geonetwork.war
-# Tue, 16 Apr 2024 14:40:45 GMT
+# Wed, 17 Apr 2024 02:04:42 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Tue, 16 Apr 2024 14:40:45 GMT
+# Wed, 17 Apr 2024 02:04:42 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC
-# Tue, 16 Apr 2024 14:40:45 GMT
+# Wed, 17 Apr 2024 02:04:42 GMT
 ENV GN_VERSION=3.12.11
-# Tue, 16 Apr 2024 14:40:45 GMT
+# Wed, 17 Apr 2024 02:04:42 GMT
 ENV GN_DOWNLOAD_MD5=2ece7076f05068e7a5270af03e32d632
-# Tue, 16 Apr 2024 14:40:45 GMT
+# Wed, 17 Apr 2024 02:04:42 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Tue, 16 Apr 2024 14:41:04 GMT
+# Wed, 17 Apr 2024 02:05:01 GMT
 RUN apt-get update &&      apt-get install -y --no-install-recommends           unzip           curl &&     rm -rf /var/lib/apt/lists/* &&      curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *${GN_FILE}" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Tue, 16 Apr 2024 14:41:05 GMT
+# Wed, 17 Apr 2024 02:05:03 GMT
 COPY file:0804862fd42c05f06dfa65cb1e5dad9a956d8ac6a3ddd4d962847ba159f5cfe6 in /entrypoint.sh 
-# Tue, 16 Apr 2024 14:41:05 GMT
+# Wed, 17 Apr 2024 02:05:03 GMT
 WORKDIR /usr/local/tomcat
-# Tue, 16 Apr 2024 14:41:05 GMT
+# Wed, 17 Apr 2024 02:05:03 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 16 Apr 2024 14:41:05 GMT
+# Wed, 17 Apr 2024 02:05:03 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 16 Apr 2024 14:41:18 GMT
+# Wed, 17 Apr 2024 02:05:15 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends postgresql-client &&     rm -rf /var/lib/apt/lists/*
-# Tue, 16 Apr 2024 14:41:19 GMT
+# Wed, 17 Apr 2024 02:05:15 GMT
 RUN sed -i -e 's#<import resource="../config-db/${geonetwork.db.type:h2}.xml"/>#<!--<import resource="../config-db/${geonetwork.db.type:h2}.xml"/-->#g' "${CATALINA_HOME}/webapps/geonetwork/WEB-INF/config-node/srv.xml" && sed -i -e 's#<!--<import resource="../config-db/postgres.xml"/>-->#<import resource="../config-db/postgres.xml"/>#g' "${CATALINA_HOME}/webapps/geonetwork/WEB-INF/config-node/srv.xml"
-# Tue, 16 Apr 2024 14:41:19 GMT
+# Wed, 17 Apr 2024 02:05:16 GMT
 COPY file:83f69d2041e5fb378033b0db57e096c81ba0725102ab4da4f089685e748fcce3 in /usr/local/tomcat/webapps/geonetwork/WEB-INF/config-db/jdbc.properties 
-# Tue, 16 Apr 2024 14:41:19 GMT
+# Wed, 17 Apr 2024 02:05:16 GMT
 COPY file:c88411abba7ad9b7bb75019f08755dbfa163d2fc7fdd80676bf9350c4c56a19c in /entrypoint.sh 
-# Tue, 16 Apr 2024 14:41:19 GMT
+# Wed, 17 Apr 2024 02:05:16 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 16 Apr 2024 14:41:19 GMT
+# Wed, 17 Apr 2024 02:05:16 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -147,36 +147,36 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 16 Apr 2024 10:22:42 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e56b024ce4b19a70e482020cbe31119ccfe6af5149ef217bfbadf1ba68efbfef`  
-		Last Modified: Tue, 16 Apr 2024 10:22:43 GMT  
-		Size: 12.9 MB (12889827 bytes)  
+	-	`sha256:d4d798edb424b8f4196e019286fd299042530589d5e986e940bc253f257cc8a5`  
+		Last Modified: Wed, 17 Apr 2024 00:56:16 GMT  
+		Size: 12.9 MB (12893156 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7808a42266cfa32a3311f6cc539d2b4df9c4fab395c03e3fa5bf0252627f2566`  
-		Last Modified: Tue, 16 Apr 2024 10:22:42 GMT  
-		Size: 130.0 B  
+	-	`sha256:17eebb699f0a3843dcd1159cbc5b5e0288f064d914b898fc9c04c5840f4e9775`  
+		Last Modified: Wed, 17 Apr 2024 00:56:15 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01be0a324da2ce02d6e7e15dd51025720e5527b8f506bc7394722e4caafc40b1`  
-		Last Modified: Tue, 16 Apr 2024 14:42:48 GMT  
-		Size: 234.8 MB (234776864 bytes)  
+	-	`sha256:fa45fbea666e3b7720126540b6f01355fd21bc2c740858391b07468169f08472`  
+		Last Modified: Wed, 17 Apr 2024 02:05:48 GMT  
+		Size: 234.8 MB (234776887 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27c89811671ef0ecbc7754833b333017672c0238771cb6e4a99658a8c6ded94b`  
-		Last Modified: Tue, 16 Apr 2024 14:42:35 GMT  
+	-	`sha256:303d9961269223f0008aa8ef3730c73374517138149183165b1e4b0b9231eea2`  
+		Last Modified: Wed, 17 Apr 2024 02:05:35 GMT  
 		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31eb92e202a4d8c779b134d877cc9f0986e42f16f575b49ea8ea916d8938176d`  
-		Last Modified: Tue, 16 Apr 2024 14:43:02 GMT  
-		Size: 13.7 MB (13698410 bytes)  
+	-	`sha256:ec2878b2864721616ea965c87700170d2f6ce0b4031396886345aac492a04c2d`  
+		Last Modified: Wed, 17 Apr 2024 02:06:02 GMT  
+		Size: 13.7 MB (13698423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72f0f9767045676937ac57d14c7a3cf5d7560bc1731c4ed9323ea94302e5e605`  
-		Last Modified: Tue, 16 Apr 2024 14:42:59 GMT  
-		Size: 1.3 KB (1267 bytes)  
+	-	`sha256:4866c674257818ea845f30864ac1510cecff9f1b930b1704c09e98aeeb8e7a6a`  
+		Last Modified: Wed, 17 Apr 2024 02:06:00 GMT  
+		Size: 1.3 KB (1264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1efefdf38c60a57e95dddbb23041247f9b89501243401832756cdbeeac1b3da7`  
-		Last Modified: Tue, 16 Apr 2024 14:42:59 GMT  
-		Size: 1.1 KB (1124 bytes)  
+	-	`sha256:6a5e5c1531d9595967766909be06896da9b126695af659012cd22ee7f477399d`  
+		Last Modified: Wed, 17 Apr 2024 02:06:00 GMT  
+		Size: 1.1 KB (1122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13b8b29a9b1b8516371c8cf7e43a98bf707356b61e8d91ecde20f8be41a1ed8a`  
-		Last Modified: Tue, 16 Apr 2024 14:42:59 GMT  
+	-	`sha256:adde3571c5ce72d590f681ce3f6a2a834c2793ee6983e91f7ba9a036ebebcbc5`  
+		Last Modified: Wed, 17 Apr 2024 02:06:00 GMT  
 		Size: 973.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -352,14 +352,14 @@ CMD ["catalina.sh" "run"]
 ### `geonetwork:3-postgres` - linux; arm64 variant v8
 
 ```console
-$ docker pull geonetwork@sha256:2cf73e2c283ada596f845b1a71d9f06b9bdd0655ecd99629fac77a89b1f019e6
+$ docker pull geonetwork@sha256:10475a8cf168cdd26f6591535d97e5e474e35aac8b964db76f43245071237324
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **405.2 MB (405230487 bytes)**  
+-	Total Size: **405.2 MB (405231604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34e17d7ef52cd176f1a2683aa3e80ef586535de8d9b8e7166277d00bf25270ee`
+-	Image ID: `sha256:2c201496ebc50b86dd522e9f361558a01b337cdeb3de71ab9a4885944904324b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -410,53 +410,53 @@ ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
 # Tue, 16 Apr 2024 08:35:49 GMT
 ENV TOMCAT_MAJOR=9
-# Tue, 16 Apr 2024 08:35:49 GMT
-ENV TOMCAT_VERSION=9.0.87
-# Tue, 16 Apr 2024 08:35:49 GMT
-ENV TOMCAT_SHA512=71a64fe805aab89ef4798571d860a3c9a4f751f808921559a9249305abb205836de33ab89bb33b625a77f799f193d6bffbe94aadf293866df756d708f5bfb933
-# Tue, 16 Apr 2024 08:36:15 GMT
+# Wed, 17 Apr 2024 00:56:44 GMT
+ENV TOMCAT_VERSION=9.0.88
+# Wed, 17 Apr 2024 00:56:44 GMT
+ENV TOMCAT_SHA512=b2668f50339afdd266dbdf3ff20a98632a5552910179eda272b65ea0b18be4bef8fa9988e3cfc77e4eae4b74ae1e7abe2483b0e427a07628ed50fed3a13eefb9
+# Wed, 17 Apr 2024 00:57:09 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://dlcdn.apache.org/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 1777 logs temp work; 		catalina.sh version
-# Tue, 16 Apr 2024 08:36:16 GMT
+# Wed, 17 Apr 2024 00:57:11 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Tue, 16 Apr 2024 08:36:16 GMT
+# Wed, 17 Apr 2024 00:57:11 GMT
 EXPOSE 8080
-# Tue, 16 Apr 2024 08:36:16 GMT
+# Wed, 17 Apr 2024 00:57:11 GMT
 ENTRYPOINT []
-# Tue, 16 Apr 2024 08:36:16 GMT
+# Wed, 17 Apr 2024 00:57:11 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 16 Apr 2024 10:32:55 GMT
+# Wed, 17 Apr 2024 02:04:46 GMT
 ENV GN_FILE=geonetwork.war
-# Tue, 16 Apr 2024 10:32:55 GMT
+# Wed, 17 Apr 2024 02:04:46 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Tue, 16 Apr 2024 10:32:55 GMT
+# Wed, 17 Apr 2024 02:04:46 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC
-# Tue, 16 Apr 2024 10:32:55 GMT
+# Wed, 17 Apr 2024 02:04:46 GMT
 ENV GN_VERSION=3.12.11
-# Tue, 16 Apr 2024 10:32:55 GMT
+# Wed, 17 Apr 2024 02:04:46 GMT
 ENV GN_DOWNLOAD_MD5=2ece7076f05068e7a5270af03e32d632
-# Tue, 16 Apr 2024 10:32:55 GMT
+# Wed, 17 Apr 2024 02:04:46 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Tue, 16 Apr 2024 10:33:56 GMT
+# Wed, 17 Apr 2024 02:05:08 GMT
 RUN apt-get update &&      apt-get install -y --no-install-recommends           unzip           curl &&     rm -rf /var/lib/apt/lists/* &&      curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *${GN_FILE}" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Tue, 16 Apr 2024 10:33:58 GMT
+# Wed, 17 Apr 2024 02:05:10 GMT
 COPY file:0804862fd42c05f06dfa65cb1e5dad9a956d8ac6a3ddd4d962847ba159f5cfe6 in /entrypoint.sh 
-# Tue, 16 Apr 2024 10:33:58 GMT
+# Wed, 17 Apr 2024 02:05:10 GMT
 WORKDIR /usr/local/tomcat
-# Tue, 16 Apr 2024 10:33:58 GMT
+# Wed, 17 Apr 2024 02:05:10 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 16 Apr 2024 10:33:58 GMT
+# Wed, 17 Apr 2024 02:05:10 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 16 Apr 2024 10:34:14 GMT
+# Wed, 17 Apr 2024 02:05:23 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends postgresql-client &&     rm -rf /var/lib/apt/lists/*
-# Tue, 16 Apr 2024 10:34:15 GMT
+# Wed, 17 Apr 2024 02:05:24 GMT
 RUN sed -i -e 's#<import resource="../config-db/${geonetwork.db.type:h2}.xml"/>#<!--<import resource="../config-db/${geonetwork.db.type:h2}.xml"/-->#g' "${CATALINA_HOME}/webapps/geonetwork/WEB-INF/config-node/srv.xml" && sed -i -e 's#<!--<import resource="../config-db/postgres.xml"/>-->#<import resource="../config-db/postgres.xml"/>#g' "${CATALINA_HOME}/webapps/geonetwork/WEB-INF/config-node/srv.xml"
-# Tue, 16 Apr 2024 10:34:15 GMT
+# Wed, 17 Apr 2024 02:05:24 GMT
 COPY file:83f69d2041e5fb378033b0db57e096c81ba0725102ab4da4f089685e748fcce3 in /usr/local/tomcat/webapps/geonetwork/WEB-INF/config-db/jdbc.properties 
-# Tue, 16 Apr 2024 10:34:15 GMT
+# Wed, 17 Apr 2024 02:05:24 GMT
 COPY file:c88411abba7ad9b7bb75019f08755dbfa163d2fc7fdd80676bf9350c4c56a19c in /entrypoint.sh 
-# Tue, 16 Apr 2024 10:34:15 GMT
+# Wed, 17 Apr 2024 02:05:24 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 16 Apr 2024 10:34:15 GMT
+# Wed, 17 Apr 2024 02:05:24 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -485,36 +485,36 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 16 Apr 2024 08:45:43 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b168ceef100b684bf090c559bb63133aeae1e90cca16753df6a6f67db4b0134`  
-		Last Modified: Tue, 16 Apr 2024 08:45:44 GMT  
-		Size: 12.9 MB (12898634 bytes)  
+	-	`sha256:7f22011e78fb7e9d9659acc4dd50d464cdbbc183b2825dd51c74e3f3666d8507`  
+		Last Modified: Wed, 17 Apr 2024 01:06:17 GMT  
+		Size: 12.9 MB (12899681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:758e31376962e5a0ff5651b17355caedb367b584ccd794b514e23175539212b1`  
-		Last Modified: Tue, 16 Apr 2024 08:45:43 GMT  
-		Size: 131.0 B  
+	-	`sha256:666bf69350793f2ed165fd3ae0d0d7ea919761b97cae54113d67f70880977b4b`  
+		Last Modified: Wed, 17 Apr 2024 01:06:16 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45575e7bb012a8d1046b532f2115a6704d2186d2d76c16a2c6af136155a0f14b`  
-		Last Modified: Tue, 16 Apr 2024 10:35:41 GMT  
-		Size: 234.8 MB (234773919 bytes)  
+	-	`sha256:c0db24df3ef527e58fa06bb0af88557883e9681305d22b022d2b858b49fe23e0`  
+		Last Modified: Wed, 17 Apr 2024 02:05:50 GMT  
+		Size: 234.8 MB (234773990 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:340b2673ce222bfb12d259c2d5a0e1f69d5fd5e6b7d2bd553d740807c5330c29`  
-		Last Modified: Tue, 16 Apr 2024 10:35:30 GMT  
-		Size: 249.0 B  
+	-	`sha256:bf431c745201dff940d5c5f9c17f0d657146e84be32455eb5666adfab384a61f`  
+		Last Modified: Wed, 17 Apr 2024 02:05:39 GMT  
+		Size: 250.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c28c0baec8c5903c1ef7a33e04313ae126042edc20994b735e71282ec735e9e6`  
-		Last Modified: Tue, 16 Apr 2024 10:35:54 GMT  
-		Size: 13.6 MB (13599878 bytes)  
+	-	`sha256:83a5e383f5c6464dd2f5a439699d2bd14ef7f06486f7541bfcd4acc44f139832`  
+		Last Modified: Wed, 17 Apr 2024 02:06:04 GMT  
+		Size: 13.6 MB (13599874 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b7f36b297ccd826194f85f5ee17e28cc68fc1f5554e8c4b45c137d6da742c0d`  
-		Last Modified: Tue, 16 Apr 2024 10:35:52 GMT  
-		Size: 1.3 KB (1265 bytes)  
+	-	`sha256:e60c7643204114ef22c6459173ab8c137f63fc2396e4745ab9894a309f1892b1`  
+		Last Modified: Wed, 17 Apr 2024 02:06:02 GMT  
+		Size: 1.3 KB (1268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca31b50ee401fb9999f32b30e1e57b9dfd3b88c22e9792d5aeae2bd0051ad115`  
-		Last Modified: Tue, 16 Apr 2024 10:35:52 GMT  
+	-	`sha256:c299284a0bb2720a6e8b5d2df95c16a482ae1cf1d6e45cbdb62adaa5104d37fe`  
+		Last Modified: Wed, 17 Apr 2024 02:06:02 GMT  
 		Size: 1.1 KB (1123 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c80aadd6c0bcc8444755c4c76f7cff866367b6dc74b49ca9f1896ac9dc9b8d8f`  
-		Last Modified: Tue, 16 Apr 2024 10:35:52 GMT  
+	-	`sha256:c9738c67f3982b74fb4a2087c6d0dcea02bf72fd08f13adbb86ff3c0a9facb80`  
+		Last Modified: Wed, 17 Apr 2024 02:06:02 GMT  
 		Size: 974.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
