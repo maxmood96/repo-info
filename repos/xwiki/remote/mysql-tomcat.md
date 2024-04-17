@@ -1,7 +1,7 @@
 ## `xwiki:mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:3c2268a8a3c27bed5f2df00935cc860bacfddc5fc88a09aa80653afee3c025c4
+$ docker pull xwiki@sha256:ca1d2099fedd69799ad8e6f839078929d13f97a98a72c533f43e23ca973a855d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull xwiki@sha256:3c2268a8a3c27bed5f2df00935cc860bacfddc5fc88a09aa80653
 ### `xwiki:mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:9545c7b4a97bca302290f3138fbd2efc942f15891cc6a2fe52a3140219e77938
+$ docker pull xwiki@sha256:d9cd520ba92caaa65cd82bf36c2f7cfc5f90b7bd850a9aaca0a90468c4077222
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.7 MB (577745261 bytes)**  
+-	Total Size: **577.7 MB (577746119 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1532d31fa4a977a2c199096dc222e8148448835dc5f24e217c90e646167797e`
+-	Image ID: `sha256:5fcd46dc1d38df37d3116a05ed484606acf5c7b4b6b885e5e2666f31a035f6ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -72,11 +72,11 @@ ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110
 # Mon, 25 Mar 2024 15:14:20 GMT
 ENV TOMCAT_MAJOR=9
 # Mon, 25 Mar 2024 15:14:20 GMT
-ENV TOMCAT_VERSION=9.0.87
+ENV TOMCAT_VERSION=9.0.88
 # Mon, 25 Mar 2024 15:14:20 GMT
-ENV TOMCAT_SHA512=71a64fe805aab89ef4798571d860a3c9a4f751f808921559a9249305abb205836de33ab89bb33b625a77f799f193d6bffbe94aadf293866df756d708f5bfb933
+ENV TOMCAT_SHA512=b2668f50339afdd266dbdf3ff20a98632a5552910179eda272b65ea0b18be4bef8fa9988e3cfc77e4eae4b74ae1e7abe2483b0e427a07628ed50fed3a13eefb9
 # Mon, 25 Mar 2024 15:14:20 GMT
-COPY dir:02fcf5fddc0d509575aac0f258b8d0dd9791c34841d8f89045db868df7d275ef in /usr/local/tomcat 
+COPY dir:21b598d99845ff41cfddd8ebdf74c402718bd40914bc352e03188c0e23998855 in /usr/local/tomcat 
 # Mon, 25 Mar 2024 15:14:20 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
 # Mon, 25 Mar 2024 15:14:20 GMT
@@ -162,69 +162,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 16 Apr 2024 10:17:56 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b3201e53b092426b22acbdac77348317958250542389726ab64297a080cfff2`  
-		Last Modified: Tue, 16 Apr 2024 10:20:44 GMT  
-		Size: 12.4 MB (12422012 bytes)  
+	-	`sha256:02e461cc60d5d721b03cd0896f718040546e37022620703bb4023e13abc6ff6f`  
+		Last Modified: Wed, 17 Apr 2024 00:53:32 GMT  
+		Size: 12.4 MB (12423174 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66fe89699442c19a7aaec012e3078afaf1a2e8c0a0edfcc92e53dbc80489154b`  
-		Last Modified: Tue, 16 Apr 2024 10:20:43 GMT  
-		Size: 456.3 KB (456304 bytes)  
+	-	`sha256:ca0fc3af8030aac4ada24c5100acd6056729ce68b5a05a36b5ce3a4ce43c7823`  
+		Last Modified: Wed, 17 Apr 2024 00:53:32 GMT  
+		Size: 456.3 KB (456267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd2a23b9a44b245f77c5f55aaa48e1fe7c70c80a2feffcfb010764c2cc44da39`  
-		Last Modified: Tue, 16 Apr 2024 10:20:43 GMT  
+	-	`sha256:c69fa22e2f846057d0e21a57835b0ce44f5b1af95d2144074ba9dc386f18dcfa`  
+		Last Modified: Wed, 17 Apr 2024 00:53:31 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d876c9793813b34ffc3679ad5466d51ceb29eb89a5a0746cfc2505c1c3cd1d77`  
-		Last Modified: Tue, 16 Apr 2024 15:32:48 GMT  
-		Size: 178.4 MB (178431029 bytes)  
+	-	`sha256:2d17202aa9bade1b05f0e3dbf5d4e572af863abf03b19efa12b9680aaf674971`  
+		Last Modified: Wed, 17 Apr 2024 01:50:58 GMT  
+		Size: 178.4 MB (178430761 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63371ae27a24b311364b88f1a59c24c643343982d979268c95bad38e923dc57f`  
-		Last Modified: Tue, 16 Apr 2024 15:32:50 GMT  
-		Size: 293.6 MB (293556771 bytes)  
+	-	`sha256:a59bbe1b8e0c0a19a29b3afda875bf9455dd35863fa91dfa11b72792fe90595c`  
+		Last Modified: Wed, 17 Apr 2024 01:50:58 GMT  
+		Size: 293.6 MB (293556776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e4ed8bcec70c8771ec76406cd63c050a319e6ac268b63eaaeac9be887e1e283`  
-		Last Modified: Tue, 16 Apr 2024 15:32:44 GMT  
-		Size: 2.4 MB (2356948 bytes)  
+	-	`sha256:5acb065d3299873124837422e312e7a48de54b914f59a0f70bce443599d5cec1`  
+		Last Modified: Wed, 17 Apr 2024 01:50:51 GMT  
+		Size: 2.4 MB (2356949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb8a4915983fb41f38abb15948a4d9165069894ec20094c166ae1551df03ad13`  
-		Last Modified: Tue, 16 Apr 2024 15:32:43 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:a3ec161fbe3921fc62bd1fb67eaed8b6d1967f677aab93db956133939c8db066`  
+		Last Modified: Wed, 17 Apr 2024 01:50:51 GMT  
+		Size: 1.3 KB (1337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:683f7e69bd96d7687f93fa47b0ff2400cdd31aa019c1ac9bb72b95707eec397b`  
-		Last Modified: Tue, 16 Apr 2024 15:32:45 GMT  
+	-	`sha256:f424f049ea20da654a460f30e908efded46bac1be225039dfda1a82deca96d1a`  
+		Last Modified: Wed, 17 Apr 2024 01:50:52 GMT  
 		Size: 2.4 KB (2371 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad25020b2187c7e835e5da2fb445435cf77d9c79e5d96d972fd931f3a4166dcc`  
-		Last Modified: Tue, 16 Apr 2024 15:32:45 GMT  
+	-	`sha256:85def993412dd3c876563439371127db26ec5f616e87378754c7f399e1c05bfa`  
+		Last Modified: Wed, 17 Apr 2024 01:50:52 GMT  
 		Size: 6.5 KB (6507 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61bcc00ab2737614dc2c1cc392aea04e54c3471471cb311eb9fd34a081b012ab`  
-		Last Modified: Tue, 16 Apr 2024 15:32:46 GMT  
-		Size: 2.5 KB (2478 bytes)  
+	-	`sha256:17da40d272dc16dd01a56129fead381ffdf83fb9637d63f6dfbf1d938e2788e6`  
+		Last Modified: Wed, 17 Apr 2024 01:50:53 GMT  
+		Size: 2.5 KB (2476 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:mysql-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:1ea7aadfff019af5c179472491108f83a37215e26a8a7fcdebf1402d6c507693
+$ docker pull xwiki@sha256:91f65777341d7277197a33e0398c3ade8ae7ff7ad64fe5bab33d6c8bd5f00ea6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.9 MB (8927100 bytes)**  
+-	Total Size: **8.9 MB (8927168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:366ea4f44f3befddfc50b19ee4cde7c9bcdbc75e48ccae15bfb544bc8403d7f5`
+-	Image ID: `sha256:0aaab00c2f8368aaceb88c497da336340d1a23d53c85c267f74275b9032e0855`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d688b4e627073aeb383ca208303e363786a941eb4819f10d0dc1c64dcf72ee4d`  
-		Last Modified: Tue, 16 Apr 2024 15:32:44 GMT  
-		Size: 8.9 MB (8884062 bytes)  
+	-	`sha256:c12bd58f1a25b038e9aa31761970d72c71469625bb5e2a09c225c87f0704ce83`  
+		Last Modified: Wed, 17 Apr 2024 01:50:51 GMT  
+		Size: 8.9 MB (8884127 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:691eab99f59571c5a67b20a281fcb5f45a9d5b933ac57e0ba4a73d42a660df66`  
-		Last Modified: Tue, 16 Apr 2024 15:32:43 GMT  
-		Size: 43.0 KB (43038 bytes)  
+	-	`sha256:6fc0b3ffcb08d0116d85c364932ec442a644839d784c14c852b31716e1720e80`  
+		Last Modified: Wed, 17 Apr 2024 01:50:51 GMT  
+		Size: 43.0 KB (43041 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:mysql-tomcat` - linux; arm64 variant v8
