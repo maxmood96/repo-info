@@ -133,19 +133,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.7.14
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.14.dsc' apt_2.7.14.dsc 2977 SHA256:99d27439b093bb20a378ae9114db378a29115159a9bace930153316d49930db7
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.7.14.tar.xz' apt_2.7.14.tar.xz 2353208 SHA256:7a01783f05b7d90f36aea7871cc06757499ae8ade933497aaeb6c508274e7358
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.7.14/
 
-- https://sources.debian.net/src/apt/2.7.14/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.7.14/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.7.14/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-1`
 
@@ -812,20 +806,13 @@ Licenses: (parsed from: `/usr/share/doc/libdb5.3-dev/copyright`, `/usr/share/doc
 - `X11`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28+dfsg2-6
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-6.dsc' db5.3_5.3.28+dfsg2-6.dsc 1769 SHA256:f56d1b663622620445a0654a7b5efc0ad7d04cc0278d8695f159d76ac272b0b8
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2.orig.tar.xz' db5.3_5.3.28+dfsg2.orig.tar.xz 21287688 SHA256:ad41b507415dec8316e828b2230242af2251d2c86eefa3c7aa9ef47c5239ef33
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-6.debian.tar.xz' db5.3_5.3.28+dfsg2-6.debian.tar.xz 34196 SHA256:e1ebfb15e23cd7f64d801ec4bad0c30aa178ab0d23e75b993896f1ece8187cff
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg2-6/
 
-- https://sources.debian.net/src/db5.3/5.3.28+dfsg2-6/ (for browsing the source)
-- https://sources.debian.net/src/db5.3/5.3.28+dfsg2-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg2-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.86`
 
@@ -4100,20 +4087,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:10.11.7-3
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.7-3.dsc' mariadb_10.11.7-3.dsc 5078 SHA256:f3cf2958a6a897dbce469c56f1e70b68fe3904b522b5c9e5f934ef9c3891b841
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.7.orig.tar.gz' mariadb_10.11.7.orig.tar.gz 96991805 SHA256:9aa2e3445fadd52524505c8d9c9bd08e4a4f51600b5c2d7933fe18ae6b1c53ca
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.7-3.debian.tar.xz' mariadb_10.11.7-3.debian.tar.xz 278732 SHA256:f214647f174d47d604f8848567404e952bb95c0e22d06ddc9693818aed16ea00
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb/1:10.11.7-3/
 
-- https://sources.debian.net/src/mariadb/1:10.11.7-3/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:10.11.7-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:10.11.7-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20240123-1`
 
@@ -5729,20 +5709,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.40-5
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40-5.dsc' util-linux_2.40-5.dsc 4643 SHA256:86f8999a3505494b17de9fa0df2bbd9f43d17d294ad305fee06242900f09a0fe
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.orig.tar.xz' util-linux_2.40.orig.tar.xz 8762888 SHA256:d57a626081f9ead02fa44c63a6af162ec19c58f53e993f206ab7c3a6641c2cd7
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40-5.debian.tar.xz' util-linux_2.40-5.debian.tar.xz 101208 SHA256:9a66a82c6d0299dff382a0e25931a5f1e685355f3bf5fb4a648edb9af7fec983
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.40-5/
 
-- https://sources.debian.net/src/util-linux/2.40-5/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.40-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.40-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.24.5-1`
 
