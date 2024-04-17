@@ -1,10 +1,10 @@
-# `tomcat:9.0.87-jdk21-corretto-al2`
+# `tomcat:9.0.88-jdk21-corretto-al2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:32e858bb71b7546cae0e0824d80f44fed896b2df556a1ca3fddff86ffb4a41c1`
-- Created: `2024-04-05T20:45:47.815697696Z`
-- Virtual Size: ~ 527.64 Mb  
+- Image ID: `sha256:45a29adcfeff138e55e0d5a638d9f31c916e54a5a6e6df31509a059a00349973`
+- Created: `2024-04-17T00:40:49.657613725Z`
+- Virtual Size: ~ 527.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -17,8 +17,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.87`
-  - `TOMCAT_SHA512=71a64fe805aab89ef4798571d860a3c9a4f751f808921559a9249305abb205836de33ab89bb33b625a77f799f193d6bffbe94aadf293866df756d708f5bfb933`
+  - `TOMCAT_VERSION=9.0.88`
+  - `TOMCAT_SHA512=b2668f50339afdd266dbdf3ff20a98632a5552910179eda272b65ea0b18be4bef8fa9988e3cfc77e4eae4b74ae1e7abe2483b0e427a07628ed50fed3a13eefb9`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -408,7 +408,7 @@ $ dnf --quiet download --source --url info-5.1-5.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1269ac6ece3a711d82e26469209920246e2367ed458db04cf0b375e3523c26d5/../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `java-21-amazon-corretto-devel-21.0.2.14-1.x86_64`
+### `rpm` package: `java-21-amazon-corretto-devel-21.0.3.9-1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
