@@ -1,10 +1,10 @@
-# `joomla:4.4.3-php8.2-fpm`
+# `joomla:5.1.0-php8.2-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f3a08fa4b675d53449324d1fbe0571130b5c2b405f7dce664252b025eb63ba66`
-- Created: `2024-04-11T20:43:07.977426493Z`
-- Virtual Size: ~ 748.56 Mb  
+- Image ID: `sha256:12f820cd66fd4dc98e36193a9f14df37dcd5c4b3e859045f9ea32b9d628581b5`
+- Created: `2024-04-17T00:31:01.980591755Z`
+- Virtual Size: ~ 749.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,8 +22,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.18.tar.xz.asc`
   - `PHP_SHA256=44b306fc021e56441f691da6c3108788bd9e450f293b3bc70fcd64b08dd41a50`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=4.4.3`
-  - `JOOMLA_SHA512=40be1f6d16430b4d0f7fde1ac2c96245388f28031790757e667b5ab52802105aec1ce51efdaa13576082218e0842c893d884a78f1ef358bec6fa1fb0a2cdabcd`
+  - `JOOMLA_VERSION=5.1.0`
+  - `JOOMLA_SHA512=3d5e547520ddbbbd256dccaf9c88911d3571bb0698f6857a0472f174fa1d62b71ee24442c16c20528c70dc5d4b97bf946182146497d32faecf6f8897ff72485c`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -3283,8 +3283,9 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libzstd1:amd64=1.5.4+dfsg2-5`
+- `zstd=1.5.4+dfsg2-5`
 
-Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`, `/usr/share/doc/zstd/copyright`)
 
 - `BSD-3-clause`
 - `Expat`
