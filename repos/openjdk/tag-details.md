@@ -90,7 +90,7 @@
 ## `openjdk:23`
 
 ```console
-$ docker pull openjdk@sha256:20243f31dce5a48e26c36a467b4cb1f3e5e57e9df3e30a51e35f72b74a40bf80
+$ docker pull openjdk@sha256:b1a092f472c0444de947ba492a20eea65a93a164e7b6c4ab09f6ba1f07acc77f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -417,7 +417,7 @@ CMD ["jshell"]
 ## `openjdk:23-bookworm`
 
 ```console
-$ docker pull openjdk@sha256:62a072b03c4a15fd24d3b135ddde1f5be42c7ba6b3e4b81fc6170aa31b9e646f
+$ docker pull openjdk@sha256:9335a474e33334bf014a6d09c060aa6d15d1d2f8386cbd9640a3378525a67ada
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -596,7 +596,7 @@ $ docker pull openjdk@sha256:38f529ea2975ae6a84ef9688659323c18cf154df6611ba52293
 ## `openjdk:23-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:c00672ca4b38895347d13a29c4c13ffdcb7c8a1077297afa9d3f75da55bef495
+$ docker pull openjdk@sha256:38a07c1a722a3bba102ac3aa6901ec832f1e1f899fefb9a0088bb542f7eba676
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -775,7 +775,7 @@ $ docker pull openjdk@sha256:9c31052658b850fcc8af260d1114433e825720601e68f41cf29
 ## `openjdk:23-ea`
 
 ```console
-$ docker pull openjdk@sha256:20243f31dce5a48e26c36a467b4cb1f3e5e57e9df3e30a51e35f72b74a40bf80
+$ docker pull openjdk@sha256:b1a092f472c0444de947ba492a20eea65a93a164e7b6c4ab09f6ba1f07acc77f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1102,7 +1102,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-18`
 
 ```console
-$ docker pull openjdk@sha256:20243f31dce5a48e26c36a467b4cb1f3e5e57e9df3e30a51e35f72b74a40bf80
+$ docker pull openjdk@sha256:b1a092f472c0444de947ba492a20eea65a93a164e7b6c4ab09f6ba1f07acc77f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1429,7 +1429,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-18-bookworm`
 
 ```console
-$ docker pull openjdk@sha256:62a072b03c4a15fd24d3b135ddde1f5be42c7ba6b3e4b81fc6170aa31b9e646f
+$ docker pull openjdk@sha256:9335a474e33334bf014a6d09c060aa6d15d1d2f8386cbd9640a3378525a67ada
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1608,7 +1608,7 @@ $ docker pull openjdk@sha256:38f529ea2975ae6a84ef9688659323c18cf154df6611ba52293
 ## `openjdk:23-ea-18-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:c00672ca4b38895347d13a29c4c13ffdcb7c8a1077297afa9d3f75da55bef495
+$ docker pull openjdk@sha256:38a07c1a722a3bba102ac3aa6901ec832f1e1f899fefb9a0088bb542f7eba676
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1787,7 +1787,7 @@ $ docker pull openjdk@sha256:9c31052658b850fcc8af260d1114433e825720601e68f41cf29
 ## `openjdk:23-ea-18-jdk`
 
 ```console
-$ docker pull openjdk@sha256:20243f31dce5a48e26c36a467b4cb1f3e5e57e9df3e30a51e35f72b74a40bf80
+$ docker pull openjdk@sha256:b1a092f472c0444de947ba492a20eea65a93a164e7b6c4ab09f6ba1f07acc77f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2114,7 +2114,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-18-jdk-bookworm`
 
 ```console
-$ docker pull openjdk@sha256:62a072b03c4a15fd24d3b135ddde1f5be42c7ba6b3e4b81fc6170aa31b9e646f
+$ docker pull openjdk@sha256:9335a474e33334bf014a6d09c060aa6d15d1d2f8386cbd9640a3378525a67ada
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2293,7 +2293,7 @@ $ docker pull openjdk@sha256:38f529ea2975ae6a84ef9688659323c18cf154df6611ba52293
 ## `openjdk:23-ea-18-jdk-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:c00672ca4b38895347d13a29c4c13ffdcb7c8a1077297afa9d3f75da55bef495
+$ docker pull openjdk@sha256:38a07c1a722a3bba102ac3aa6901ec832f1e1f899fefb9a0088bb542f7eba676
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2650,7 +2650,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-18-jdk-oracle`
 
 ```console
-$ docker pull openjdk@sha256:c914dee9d2de32df5bbb0a09dc99036068153d6db23cfbbdee6ea1c6a2cfac01
+$ docker pull openjdk@sha256:557341e5d4b6c3d487cdadc235896643b0a892af041dac5b2711978c3f3e237d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2805,7 +2805,7 @@ $ docker pull openjdk@sha256:d284173765f33d4a228f6ae7dd83acc7e058509a614f2bd3348
 ## `openjdk:23-ea-18-jdk-oraclelinux8`
 
 ```console
-$ docker pull openjdk@sha256:0d766e6322e6b0dce0002298f16a0d51b6bc91650556041cae6cee64f8909f58
+$ docker pull openjdk@sha256:b756b15a7c19b50e3a9c9e832f04feb3e216a3e8e84e1430aa2afaa18d17e7c9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2960,7 +2960,7 @@ $ docker pull openjdk@sha256:ccb126b77fb77d55fa458e9837c5502fd3961edf5ce14939231
 ## `openjdk:23-ea-18-jdk-oraclelinux9`
 
 ```console
-$ docker pull openjdk@sha256:c914dee9d2de32df5bbb0a09dc99036068153d6db23cfbbdee6ea1c6a2cfac01
+$ docker pull openjdk@sha256:557341e5d4b6c3d487cdadc235896643b0a892af041dac5b2711978c3f3e237d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3115,7 +3115,7 @@ $ docker pull openjdk@sha256:d284173765f33d4a228f6ae7dd83acc7e058509a614f2bd3348
 ## `openjdk:23-ea-18-jdk-slim`
 
 ```console
-$ docker pull openjdk@sha256:29384a4bd799cdbd82d4f8c61ab692f6ba78fdc7f5a6fe301b35f49fb742262e
+$ docker pull openjdk@sha256:fb453464cae8dabd4d0ba31e12c435533696be8f6b4e23ea50c6ec7a8bbd680b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3270,7 +3270,7 @@ $ docker pull openjdk@sha256:0d89e135ace6d419e9e830a8b7d2207e10ae169129cbde87ac7
 ## `openjdk:23-ea-18-jdk-slim-bookworm`
 
 ```console
-$ docker pull openjdk@sha256:29384a4bd799cdbd82d4f8c61ab692f6ba78fdc7f5a6fe301b35f49fb742262e
+$ docker pull openjdk@sha256:fb453464cae8dabd4d0ba31e12c435533696be8f6b4e23ea50c6ec7a8bbd680b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3425,7 +3425,7 @@ $ docker pull openjdk@sha256:0d89e135ace6d419e9e830a8b7d2207e10ae169129cbde87ac7
 ## `openjdk:23-ea-18-jdk-slim-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:c206b64ce0216e021a44eb3fea01cfc7dcdf651f45ec0a6fda311822abf85516
+$ docker pull openjdk@sha256:f83a70c37f592319f4c53dfb21434c17c36f5fe334361ad4a95287f2ebfb994f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4129,7 +4129,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-18-oracle`
 
 ```console
-$ docker pull openjdk@sha256:c914dee9d2de32df5bbb0a09dc99036068153d6db23cfbbdee6ea1c6a2cfac01
+$ docker pull openjdk@sha256:557341e5d4b6c3d487cdadc235896643b0a892af041dac5b2711978c3f3e237d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4284,7 +4284,7 @@ $ docker pull openjdk@sha256:d284173765f33d4a228f6ae7dd83acc7e058509a614f2bd3348
 ## `openjdk:23-ea-18-oraclelinux8`
 
 ```console
-$ docker pull openjdk@sha256:0d766e6322e6b0dce0002298f16a0d51b6bc91650556041cae6cee64f8909f58
+$ docker pull openjdk@sha256:b756b15a7c19b50e3a9c9e832f04feb3e216a3e8e84e1430aa2afaa18d17e7c9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4439,7 +4439,7 @@ $ docker pull openjdk@sha256:ccb126b77fb77d55fa458e9837c5502fd3961edf5ce14939231
 ## `openjdk:23-ea-18-oraclelinux9`
 
 ```console
-$ docker pull openjdk@sha256:c914dee9d2de32df5bbb0a09dc99036068153d6db23cfbbdee6ea1c6a2cfac01
+$ docker pull openjdk@sha256:557341e5d4b6c3d487cdadc235896643b0a892af041dac5b2711978c3f3e237d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4594,7 +4594,7 @@ $ docker pull openjdk@sha256:d284173765f33d4a228f6ae7dd83acc7e058509a614f2bd3348
 ## `openjdk:23-ea-18-slim`
 
 ```console
-$ docker pull openjdk@sha256:29384a4bd799cdbd82d4f8c61ab692f6ba78fdc7f5a6fe301b35f49fb742262e
+$ docker pull openjdk@sha256:fb453464cae8dabd4d0ba31e12c435533696be8f6b4e23ea50c6ec7a8bbd680b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4749,7 +4749,7 @@ $ docker pull openjdk@sha256:0d89e135ace6d419e9e830a8b7d2207e10ae169129cbde87ac7
 ## `openjdk:23-ea-18-slim-bookworm`
 
 ```console
-$ docker pull openjdk@sha256:29384a4bd799cdbd82d4f8c61ab692f6ba78fdc7f5a6fe301b35f49fb742262e
+$ docker pull openjdk@sha256:fb453464cae8dabd4d0ba31e12c435533696be8f6b4e23ea50c6ec7a8bbd680b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4904,7 +4904,7 @@ $ docker pull openjdk@sha256:0d89e135ace6d419e9e830a8b7d2207e10ae169129cbde87ac7
 ## `openjdk:23-ea-18-slim-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:c206b64ce0216e021a44eb3fea01cfc7dcdf651f45ec0a6fda311822abf85516
+$ docker pull openjdk@sha256:f83a70c37f592319f4c53dfb21434c17c36f5fe334361ad4a95287f2ebfb994f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5430,7 +5430,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-bookworm`
 
 ```console
-$ docker pull openjdk@sha256:62a072b03c4a15fd24d3b135ddde1f5be42c7ba6b3e4b81fc6170aa31b9e646f
+$ docker pull openjdk@sha256:9335a474e33334bf014a6d09c060aa6d15d1d2f8386cbd9640a3378525a67ada
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5609,7 +5609,7 @@ $ docker pull openjdk@sha256:38f529ea2975ae6a84ef9688659323c18cf154df6611ba52293
 ## `openjdk:23-ea-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:c00672ca4b38895347d13a29c4c13ffdcb7c8a1077297afa9d3f75da55bef495
+$ docker pull openjdk@sha256:38a07c1a722a3bba102ac3aa6901ec832f1e1f899fefb9a0088bb542f7eba676
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5788,7 +5788,7 @@ $ docker pull openjdk@sha256:9c31052658b850fcc8af260d1114433e825720601e68f41cf29
 ## `openjdk:23-ea-jdk`
 
 ```console
-$ docker pull openjdk@sha256:20243f31dce5a48e26c36a467b4cb1f3e5e57e9df3e30a51e35f72b74a40bf80
+$ docker pull openjdk@sha256:b1a092f472c0444de947ba492a20eea65a93a164e7b6c4ab09f6ba1f07acc77f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6115,7 +6115,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-jdk-bookworm`
 
 ```console
-$ docker pull openjdk@sha256:62a072b03c4a15fd24d3b135ddde1f5be42c7ba6b3e4b81fc6170aa31b9e646f
+$ docker pull openjdk@sha256:9335a474e33334bf014a6d09c060aa6d15d1d2f8386cbd9640a3378525a67ada
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6294,7 +6294,7 @@ $ docker pull openjdk@sha256:38f529ea2975ae6a84ef9688659323c18cf154df6611ba52293
 ## `openjdk:23-ea-jdk-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:c00672ca4b38895347d13a29c4c13ffdcb7c8a1077297afa9d3f75da55bef495
+$ docker pull openjdk@sha256:38a07c1a722a3bba102ac3aa6901ec832f1e1f899fefb9a0088bb542f7eba676
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6651,7 +6651,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-jdk-oracle`
 
 ```console
-$ docker pull openjdk@sha256:c914dee9d2de32df5bbb0a09dc99036068153d6db23cfbbdee6ea1c6a2cfac01
+$ docker pull openjdk@sha256:557341e5d4b6c3d487cdadc235896643b0a892af041dac5b2711978c3f3e237d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6806,7 +6806,7 @@ $ docker pull openjdk@sha256:d284173765f33d4a228f6ae7dd83acc7e058509a614f2bd3348
 ## `openjdk:23-ea-jdk-oraclelinux8`
 
 ```console
-$ docker pull openjdk@sha256:0d766e6322e6b0dce0002298f16a0d51b6bc91650556041cae6cee64f8909f58
+$ docker pull openjdk@sha256:b756b15a7c19b50e3a9c9e832f04feb3e216a3e8e84e1430aa2afaa18d17e7c9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6961,7 +6961,7 @@ $ docker pull openjdk@sha256:ccb126b77fb77d55fa458e9837c5502fd3961edf5ce14939231
 ## `openjdk:23-ea-jdk-oraclelinux9`
 
 ```console
-$ docker pull openjdk@sha256:c914dee9d2de32df5bbb0a09dc99036068153d6db23cfbbdee6ea1c6a2cfac01
+$ docker pull openjdk@sha256:557341e5d4b6c3d487cdadc235896643b0a892af041dac5b2711978c3f3e237d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7116,7 +7116,7 @@ $ docker pull openjdk@sha256:d284173765f33d4a228f6ae7dd83acc7e058509a614f2bd3348
 ## `openjdk:23-ea-jdk-slim`
 
 ```console
-$ docker pull openjdk@sha256:29384a4bd799cdbd82d4f8c61ab692f6ba78fdc7f5a6fe301b35f49fb742262e
+$ docker pull openjdk@sha256:fb453464cae8dabd4d0ba31e12c435533696be8f6b4e23ea50c6ec7a8bbd680b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7271,7 +7271,7 @@ $ docker pull openjdk@sha256:0d89e135ace6d419e9e830a8b7d2207e10ae169129cbde87ac7
 ## `openjdk:23-ea-jdk-slim-bookworm`
 
 ```console
-$ docker pull openjdk@sha256:29384a4bd799cdbd82d4f8c61ab692f6ba78fdc7f5a6fe301b35f49fb742262e
+$ docker pull openjdk@sha256:fb453464cae8dabd4d0ba31e12c435533696be8f6b4e23ea50c6ec7a8bbd680b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7426,7 +7426,7 @@ $ docker pull openjdk@sha256:0d89e135ace6d419e9e830a8b7d2207e10ae169129cbde87ac7
 ## `openjdk:23-ea-jdk-slim-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:c206b64ce0216e021a44eb3fea01cfc7dcdf651f45ec0a6fda311822abf85516
+$ docker pull openjdk@sha256:f83a70c37f592319f4c53dfb21434c17c36f5fe334361ad4a95287f2ebfb994f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8130,7 +8130,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-oracle`
 
 ```console
-$ docker pull openjdk@sha256:c914dee9d2de32df5bbb0a09dc99036068153d6db23cfbbdee6ea1c6a2cfac01
+$ docker pull openjdk@sha256:557341e5d4b6c3d487cdadc235896643b0a892af041dac5b2711978c3f3e237d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8285,7 +8285,7 @@ $ docker pull openjdk@sha256:d284173765f33d4a228f6ae7dd83acc7e058509a614f2bd3348
 ## `openjdk:23-ea-oraclelinux8`
 
 ```console
-$ docker pull openjdk@sha256:0d766e6322e6b0dce0002298f16a0d51b6bc91650556041cae6cee64f8909f58
+$ docker pull openjdk@sha256:b756b15a7c19b50e3a9c9e832f04feb3e216a3e8e84e1430aa2afaa18d17e7c9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8440,7 +8440,7 @@ $ docker pull openjdk@sha256:ccb126b77fb77d55fa458e9837c5502fd3961edf5ce14939231
 ## `openjdk:23-ea-oraclelinux9`
 
 ```console
-$ docker pull openjdk@sha256:c914dee9d2de32df5bbb0a09dc99036068153d6db23cfbbdee6ea1c6a2cfac01
+$ docker pull openjdk@sha256:557341e5d4b6c3d487cdadc235896643b0a892af041dac5b2711978c3f3e237d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8595,7 +8595,7 @@ $ docker pull openjdk@sha256:d284173765f33d4a228f6ae7dd83acc7e058509a614f2bd3348
 ## `openjdk:23-ea-slim`
 
 ```console
-$ docker pull openjdk@sha256:29384a4bd799cdbd82d4f8c61ab692f6ba78fdc7f5a6fe301b35f49fb742262e
+$ docker pull openjdk@sha256:fb453464cae8dabd4d0ba31e12c435533696be8f6b4e23ea50c6ec7a8bbd680b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8750,7 +8750,7 @@ $ docker pull openjdk@sha256:0d89e135ace6d419e9e830a8b7d2207e10ae169129cbde87ac7
 ## `openjdk:23-ea-slim-bookworm`
 
 ```console
-$ docker pull openjdk@sha256:29384a4bd799cdbd82d4f8c61ab692f6ba78fdc7f5a6fe301b35f49fb742262e
+$ docker pull openjdk@sha256:fb453464cae8dabd4d0ba31e12c435533696be8f6b4e23ea50c6ec7a8bbd680b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8905,7 +8905,7 @@ $ docker pull openjdk@sha256:0d89e135ace6d419e9e830a8b7d2207e10ae169129cbde87ac7
 ## `openjdk:23-ea-slim-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:c206b64ce0216e021a44eb3fea01cfc7dcdf651f45ec0a6fda311822abf85516
+$ docker pull openjdk@sha256:f83a70c37f592319f4c53dfb21434c17c36f5fe334361ad4a95287f2ebfb994f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9431,7 +9431,7 @@ CMD ["jshell"]
 ## `openjdk:23-jdk`
 
 ```console
-$ docker pull openjdk@sha256:20243f31dce5a48e26c36a467b4cb1f3e5e57e9df3e30a51e35f72b74a40bf80
+$ docker pull openjdk@sha256:b1a092f472c0444de947ba492a20eea65a93a164e7b6c4ab09f6ba1f07acc77f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9758,7 +9758,7 @@ CMD ["jshell"]
 ## `openjdk:23-jdk-bookworm`
 
 ```console
-$ docker pull openjdk@sha256:62a072b03c4a15fd24d3b135ddde1f5be42c7ba6b3e4b81fc6170aa31b9e646f
+$ docker pull openjdk@sha256:9335a474e33334bf014a6d09c060aa6d15d1d2f8386cbd9640a3378525a67ada
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9937,7 +9937,7 @@ $ docker pull openjdk@sha256:38f529ea2975ae6a84ef9688659323c18cf154df6611ba52293
 ## `openjdk:23-jdk-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:c00672ca4b38895347d13a29c4c13ffdcb7c8a1077297afa9d3f75da55bef495
+$ docker pull openjdk@sha256:38a07c1a722a3bba102ac3aa6901ec832f1e1f899fefb9a0088bb542f7eba676
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10294,7 +10294,7 @@ CMD ["jshell"]
 ## `openjdk:23-jdk-oracle`
 
 ```console
-$ docker pull openjdk@sha256:c914dee9d2de32df5bbb0a09dc99036068153d6db23cfbbdee6ea1c6a2cfac01
+$ docker pull openjdk@sha256:557341e5d4b6c3d487cdadc235896643b0a892af041dac5b2711978c3f3e237d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10449,7 +10449,7 @@ $ docker pull openjdk@sha256:d284173765f33d4a228f6ae7dd83acc7e058509a614f2bd3348
 ## `openjdk:23-jdk-oraclelinux8`
 
 ```console
-$ docker pull openjdk@sha256:0d766e6322e6b0dce0002298f16a0d51b6bc91650556041cae6cee64f8909f58
+$ docker pull openjdk@sha256:b756b15a7c19b50e3a9c9e832f04feb3e216a3e8e84e1430aa2afaa18d17e7c9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10604,7 +10604,7 @@ $ docker pull openjdk@sha256:ccb126b77fb77d55fa458e9837c5502fd3961edf5ce14939231
 ## `openjdk:23-jdk-oraclelinux9`
 
 ```console
-$ docker pull openjdk@sha256:c914dee9d2de32df5bbb0a09dc99036068153d6db23cfbbdee6ea1c6a2cfac01
+$ docker pull openjdk@sha256:557341e5d4b6c3d487cdadc235896643b0a892af041dac5b2711978c3f3e237d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10759,7 +10759,7 @@ $ docker pull openjdk@sha256:d284173765f33d4a228f6ae7dd83acc7e058509a614f2bd3348
 ## `openjdk:23-jdk-slim`
 
 ```console
-$ docker pull openjdk@sha256:29384a4bd799cdbd82d4f8c61ab692f6ba78fdc7f5a6fe301b35f49fb742262e
+$ docker pull openjdk@sha256:fb453464cae8dabd4d0ba31e12c435533696be8f6b4e23ea50c6ec7a8bbd680b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10914,7 +10914,7 @@ $ docker pull openjdk@sha256:0d89e135ace6d419e9e830a8b7d2207e10ae169129cbde87ac7
 ## `openjdk:23-jdk-slim-bookworm`
 
 ```console
-$ docker pull openjdk@sha256:29384a4bd799cdbd82d4f8c61ab692f6ba78fdc7f5a6fe301b35f49fb742262e
+$ docker pull openjdk@sha256:fb453464cae8dabd4d0ba31e12c435533696be8f6b4e23ea50c6ec7a8bbd680b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11069,7 +11069,7 @@ $ docker pull openjdk@sha256:0d89e135ace6d419e9e830a8b7d2207e10ae169129cbde87ac7
 ## `openjdk:23-jdk-slim-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:c206b64ce0216e021a44eb3fea01cfc7dcdf651f45ec0a6fda311822abf85516
+$ docker pull openjdk@sha256:f83a70c37f592319f4c53dfb21434c17c36f5fe334361ad4a95287f2ebfb994f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11773,7 +11773,7 @@ CMD ["jshell"]
 ## `openjdk:23-oracle`
 
 ```console
-$ docker pull openjdk@sha256:c914dee9d2de32df5bbb0a09dc99036068153d6db23cfbbdee6ea1c6a2cfac01
+$ docker pull openjdk@sha256:557341e5d4b6c3d487cdadc235896643b0a892af041dac5b2711978c3f3e237d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11928,7 +11928,7 @@ $ docker pull openjdk@sha256:d284173765f33d4a228f6ae7dd83acc7e058509a614f2bd3348
 ## `openjdk:23-oraclelinux8`
 
 ```console
-$ docker pull openjdk@sha256:0d766e6322e6b0dce0002298f16a0d51b6bc91650556041cae6cee64f8909f58
+$ docker pull openjdk@sha256:b756b15a7c19b50e3a9c9e832f04feb3e216a3e8e84e1430aa2afaa18d17e7c9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12083,7 +12083,7 @@ $ docker pull openjdk@sha256:ccb126b77fb77d55fa458e9837c5502fd3961edf5ce14939231
 ## `openjdk:23-oraclelinux9`
 
 ```console
-$ docker pull openjdk@sha256:c914dee9d2de32df5bbb0a09dc99036068153d6db23cfbbdee6ea1c6a2cfac01
+$ docker pull openjdk@sha256:557341e5d4b6c3d487cdadc235896643b0a892af041dac5b2711978c3f3e237d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12238,7 +12238,7 @@ $ docker pull openjdk@sha256:d284173765f33d4a228f6ae7dd83acc7e058509a614f2bd3348
 ## `openjdk:23-slim`
 
 ```console
-$ docker pull openjdk@sha256:29384a4bd799cdbd82d4f8c61ab692f6ba78fdc7f5a6fe301b35f49fb742262e
+$ docker pull openjdk@sha256:fb453464cae8dabd4d0ba31e12c435533696be8f6b4e23ea50c6ec7a8bbd680b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12393,7 +12393,7 @@ $ docker pull openjdk@sha256:0d89e135ace6d419e9e830a8b7d2207e10ae169129cbde87ac7
 ## `openjdk:23-slim-bookworm`
 
 ```console
-$ docker pull openjdk@sha256:29384a4bd799cdbd82d4f8c61ab692f6ba78fdc7f5a6fe301b35f49fb742262e
+$ docker pull openjdk@sha256:fb453464cae8dabd4d0ba31e12c435533696be8f6b4e23ea50c6ec7a8bbd680b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12548,7 +12548,7 @@ $ docker pull openjdk@sha256:0d89e135ace6d419e9e830a8b7d2207e10ae169129cbde87ac7
 ## `openjdk:23-slim-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:c206b64ce0216e021a44eb3fea01cfc7dcdf651f45ec0a6fda311822abf85516
+$ docker pull openjdk@sha256:f83a70c37f592319f4c53dfb21434c17c36f5fe334361ad4a95287f2ebfb994f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

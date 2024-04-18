@@ -1,7 +1,7 @@
 ## `openjdk:23-jdk-slim-bookworm`
 
 ```console
-$ docker pull openjdk@sha256:29384a4bd799cdbd82d4f8c61ab692f6ba78fdc7f5a6fe301b35f49fb742262e
+$ docker pull openjdk@sha256:fb453464cae8dabd4d0ba31e12c435533696be8f6b4e23ea50c6ec7a8bbd680b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

@@ -1,7 +1,7 @@
 ## `openjdk:23-ea-jdk-slim-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:c206b64ce0216e021a44eb3fea01cfc7dcdf651f45ec0a6fda311822abf85516
+$ docker pull openjdk@sha256:f83a70c37f592319f4c53dfb21434c17c36f5fe334361ad4a95287f2ebfb994f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

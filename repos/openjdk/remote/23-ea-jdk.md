@@ -1,7 +1,7 @@
 ## `openjdk:23-ea-jdk`
 
 ```console
-$ docker pull openjdk@sha256:20243f31dce5a48e26c36a467b4cb1f3e5e57e9df3e30a51e35f72b74a40bf80
+$ docker pull openjdk@sha256:b1a092f472c0444de947ba492a20eea65a93a164e7b6c4ab09f6ba1f07acc77f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

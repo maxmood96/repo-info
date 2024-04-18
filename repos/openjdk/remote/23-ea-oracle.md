@@ -1,7 +1,7 @@
 ## `openjdk:23-ea-oracle`
 
 ```console
-$ docker pull openjdk@sha256:c914dee9d2de32df5bbb0a09dc99036068153d6db23cfbbdee6ea1c6a2cfac01
+$ docker pull openjdk@sha256:557341e5d4b6c3d487cdadc235896643b0a892af041dac5b2711978c3f3e237d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
