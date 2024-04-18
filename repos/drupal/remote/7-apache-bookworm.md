@@ -1,7 +1,7 @@
 ## `drupal:7-apache-bookworm`
 
 ```console
-$ docker pull drupal@sha256:c6cd5e46f1e0ab555e4486b9a84b03f6e633a91364416419672d542552693e74
+$ docker pull drupal@sha256:075dab20e24ab2d3cf9ef9bbf41417cbd707cdebf6e7196bb0feb8197bc4999c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

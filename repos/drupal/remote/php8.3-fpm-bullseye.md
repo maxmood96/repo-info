@@ -1,7 +1,7 @@
 ## `drupal:php8.3-fpm-bullseye`
 
 ```console
-$ docker pull drupal@sha256:8585ae44d3a08dcb1a0394005ac1db2cad457735add3ce60df21f67e64f003ee
+$ docker pull drupal@sha256:19f1dbc65a5b6afda32086b32069131e4e0cdc990cf3031cfba0dc30ff05dca5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
