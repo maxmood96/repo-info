@@ -1,7 +1,7 @@
 ## `rabbitmq:3-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:0cf2beefe9bd6c38adf0a118627aa8fbe201d645778890101a93718b9d7247eb
+$ docker pull rabbitmq@sha256:4bcec9fde55c9baf6c73a6969bd9070fb109ced1a5daa9679eb90c8145940809
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
