@@ -62,7 +62,7 @@
 ## `bash:3`
 
 ```console
-$ docker pull bash@sha256:3b60a59cc293e2ebfeeaa9fc662613a4478b4fe77cbf369a27476b3fd2ebf701
+$ docker pull bash@sha256:b89a5501ba42e3acac66dc43632b97378fba5f3b2bb4ec542021f4454a2d7959
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -599,7 +599,7 @@ $ docker pull bash@sha256:e3eee79f27625ff6d76ac04803d721bac7d547d816bd6d06732792
 ## `bash:3-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:3b60a59cc293e2ebfeeaa9fc662613a4478b4fe77cbf369a27476b3fd2ebf701
+$ docker pull bash@sha256:b89a5501ba42e3acac66dc43632b97378fba5f3b2bb4ec542021f4454a2d7959
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1136,7 +1136,7 @@ $ docker pull bash@sha256:e3eee79f27625ff6d76ac04803d721bac7d547d816bd6d06732792
 ## `bash:3.0`
 
 ```console
-$ docker pull bash@sha256:b094bf8d8deb15a80cee192421942df26dc03f60ae1c2c152387262e5186b3bf
+$ docker pull bash@sha256:35893a66d457c6955d08a96f8ec35283b0cf111a4229de1f83757b6cc0cc9f94
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1673,7 +1673,7 @@ $ docker pull bash@sha256:55587746e64fecd68692c23f6c61a0b29242d160e071d88b8c0a3a
 ## `bash:3.0-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:b094bf8d8deb15a80cee192421942df26dc03f60ae1c2c152387262e5186b3bf
+$ docker pull bash@sha256:35893a66d457c6955d08a96f8ec35283b0cf111a4229de1f83757b6cc0cc9f94
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2210,7 +2210,7 @@ $ docker pull bash@sha256:55587746e64fecd68692c23f6c61a0b29242d160e071d88b8c0a3a
 ## `bash:3.0.22`
 
 ```console
-$ docker pull bash@sha256:b094bf8d8deb15a80cee192421942df26dc03f60ae1c2c152387262e5186b3bf
+$ docker pull bash@sha256:35893a66d457c6955d08a96f8ec35283b0cf111a4229de1f83757b6cc0cc9f94
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2747,7 +2747,7 @@ $ docker pull bash@sha256:55587746e64fecd68692c23f6c61a0b29242d160e071d88b8c0a3a
 ## `bash:3.0.22-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:b094bf8d8deb15a80cee192421942df26dc03f60ae1c2c152387262e5186b3bf
+$ docker pull bash@sha256:35893a66d457c6955d08a96f8ec35283b0cf111a4229de1f83757b6cc0cc9f94
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3284,7 +3284,7 @@ $ docker pull bash@sha256:55587746e64fecd68692c23f6c61a0b29242d160e071d88b8c0a3a
 ## `bash:3.1`
 
 ```console
-$ docker pull bash@sha256:518207b8423fa0aad4d65013bd02bc8f38c07c6273194899d962a4764f960eb7
+$ docker pull bash@sha256:7eef2a347301e9ebdb2ff4dc7bd8be066772c70fa6795eb0098574466fafc9a1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3807,7 +3807,7 @@ $ docker pull bash@sha256:f1a4b9cf46b1ed3baa6e770a37706dc3c44aec2cfb68cacca56d2d
 ## `bash:3.1-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:518207b8423fa0aad4d65013bd02bc8f38c07c6273194899d962a4764f960eb7
+$ docker pull bash@sha256:7eef2a347301e9ebdb2ff4dc7bd8be066772c70fa6795eb0098574466fafc9a1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4330,7 +4330,7 @@ $ docker pull bash@sha256:f1a4b9cf46b1ed3baa6e770a37706dc3c44aec2cfb68cacca56d2d
 ## `bash:3.1.23`
 
 ```console
-$ docker pull bash@sha256:518207b8423fa0aad4d65013bd02bc8f38c07c6273194899d962a4764f960eb7
+$ docker pull bash@sha256:7eef2a347301e9ebdb2ff4dc7bd8be066772c70fa6795eb0098574466fafc9a1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4853,7 +4853,7 @@ $ docker pull bash@sha256:f1a4b9cf46b1ed3baa6e770a37706dc3c44aec2cfb68cacca56d2d
 ## `bash:3.1.23-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:518207b8423fa0aad4d65013bd02bc8f38c07c6273194899d962a4764f960eb7
+$ docker pull bash@sha256:7eef2a347301e9ebdb2ff4dc7bd8be066772c70fa6795eb0098574466fafc9a1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5376,7 +5376,7 @@ $ docker pull bash@sha256:f1a4b9cf46b1ed3baa6e770a37706dc3c44aec2cfb68cacca56d2d
 ## `bash:3.2`
 
 ```console
-$ docker pull bash@sha256:3b60a59cc293e2ebfeeaa9fc662613a4478b4fe77cbf369a27476b3fd2ebf701
+$ docker pull bash@sha256:b89a5501ba42e3acac66dc43632b97378fba5f3b2bb4ec542021f4454a2d7959
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5913,7 +5913,7 @@ $ docker pull bash@sha256:e3eee79f27625ff6d76ac04803d721bac7d547d816bd6d06732792
 ## `bash:3.2-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:3b60a59cc293e2ebfeeaa9fc662613a4478b4fe77cbf369a27476b3fd2ebf701
+$ docker pull bash@sha256:b89a5501ba42e3acac66dc43632b97378fba5f3b2bb4ec542021f4454a2d7959
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6450,7 +6450,7 @@ $ docker pull bash@sha256:e3eee79f27625ff6d76ac04803d721bac7d547d816bd6d06732792
 ## `bash:3.2.57`
 
 ```console
-$ docker pull bash@sha256:3b60a59cc293e2ebfeeaa9fc662613a4478b4fe77cbf369a27476b3fd2ebf701
+$ docker pull bash@sha256:b89a5501ba42e3acac66dc43632b97378fba5f3b2bb4ec542021f4454a2d7959
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6987,7 +6987,7 @@ $ docker pull bash@sha256:e3eee79f27625ff6d76ac04803d721bac7d547d816bd6d06732792
 ## `bash:3.2.57-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:3b60a59cc293e2ebfeeaa9fc662613a4478b4fe77cbf369a27476b3fd2ebf701
+$ docker pull bash@sha256:b89a5501ba42e3acac66dc43632b97378fba5f3b2bb4ec542021f4454a2d7959
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7524,7 +7524,7 @@ $ docker pull bash@sha256:e3eee79f27625ff6d76ac04803d721bac7d547d816bd6d06732792
 ## `bash:4`
 
 ```console
-$ docker pull bash@sha256:556fe955685b62fea78e66effc4e165f863ff76c99d217cd94b300480fc4cbbd
+$ docker pull bash@sha256:a982a9f0f765835536f77878a75feb09fb1d8853757d58745f6b1c2da3800ea5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8061,7 +8061,7 @@ $ docker pull bash@sha256:9ab9938b4e15b3b66c5d779fe99418a5cf0fa3d3ce69e212a9a66d
 ## `bash:4-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:556fe955685b62fea78e66effc4e165f863ff76c99d217cd94b300480fc4cbbd
+$ docker pull bash@sha256:a982a9f0f765835536f77878a75feb09fb1d8853757d58745f6b1c2da3800ea5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8598,7 +8598,7 @@ $ docker pull bash@sha256:9ab9938b4e15b3b66c5d779fe99418a5cf0fa3d3ce69e212a9a66d
 ## `bash:4.0`
 
 ```console
-$ docker pull bash@sha256:ddca03d7736f2f394910f0287db22acbd5e6757d154d219a9a1c5d2e8bbc89a4
+$ docker pull bash@sha256:1f49d6e21c3abb796eb57b78b9f09adb666818adf26aee5e6afc68ad97d54f20
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9121,7 +9121,7 @@ $ docker pull bash@sha256:26a89c932df400c30ec466549ae3123911d32e921178209697600d
 ## `bash:4.0-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:ddca03d7736f2f394910f0287db22acbd5e6757d154d219a9a1c5d2e8bbc89a4
+$ docker pull bash@sha256:1f49d6e21c3abb796eb57b78b9f09adb666818adf26aee5e6afc68ad97d54f20
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9644,7 +9644,7 @@ $ docker pull bash@sha256:26a89c932df400c30ec466549ae3123911d32e921178209697600d
 ## `bash:4.0.44`
 
 ```console
-$ docker pull bash@sha256:ddca03d7736f2f394910f0287db22acbd5e6757d154d219a9a1c5d2e8bbc89a4
+$ docker pull bash@sha256:1f49d6e21c3abb796eb57b78b9f09adb666818adf26aee5e6afc68ad97d54f20
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10167,7 +10167,7 @@ $ docker pull bash@sha256:26a89c932df400c30ec466549ae3123911d32e921178209697600d
 ## `bash:4.0.44-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:ddca03d7736f2f394910f0287db22acbd5e6757d154d219a9a1c5d2e8bbc89a4
+$ docker pull bash@sha256:1f49d6e21c3abb796eb57b78b9f09adb666818adf26aee5e6afc68ad97d54f20
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10690,7 +10690,7 @@ $ docker pull bash@sha256:26a89c932df400c30ec466549ae3123911d32e921178209697600d
 ## `bash:4.1`
 
 ```console
-$ docker pull bash@sha256:a11f3d233a522c24a94100f68cd3e3704f1776a4671c5500935bd3e8d35af750
+$ docker pull bash@sha256:ddf473b11190c3ea468b726fc90f97362297ac2ac574e99038bb6178d343ffa5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11213,7 +11213,7 @@ $ docker pull bash@sha256:1055e969aa7d7f7dce24a736c381fc3808ce257d2c530ee3d363fa
 ## `bash:4.1-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:a11f3d233a522c24a94100f68cd3e3704f1776a4671c5500935bd3e8d35af750
+$ docker pull bash@sha256:ddf473b11190c3ea468b726fc90f97362297ac2ac574e99038bb6178d343ffa5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11736,7 +11736,7 @@ $ docker pull bash@sha256:1055e969aa7d7f7dce24a736c381fc3808ce257d2c530ee3d363fa
 ## `bash:4.1.17`
 
 ```console
-$ docker pull bash@sha256:a11f3d233a522c24a94100f68cd3e3704f1776a4671c5500935bd3e8d35af750
+$ docker pull bash@sha256:ddf473b11190c3ea468b726fc90f97362297ac2ac574e99038bb6178d343ffa5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12259,7 +12259,7 @@ $ docker pull bash@sha256:1055e969aa7d7f7dce24a736c381fc3808ce257d2c530ee3d363fa
 ## `bash:4.1.17-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:a11f3d233a522c24a94100f68cd3e3704f1776a4671c5500935bd3e8d35af750
+$ docker pull bash@sha256:ddf473b11190c3ea468b726fc90f97362297ac2ac574e99038bb6178d343ffa5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12782,7 +12782,7 @@ $ docker pull bash@sha256:1055e969aa7d7f7dce24a736c381fc3808ce257d2c530ee3d363fa
 ## `bash:4.2`
 
 ```console
-$ docker pull bash@sha256:e47b189c9dfec46435f4e8c42ba110e10fc9f83a1a987a5a506a65330d12f719
+$ docker pull bash@sha256:455fdcdd4e027bad0a3aa62c1ac259fd0584d7883845b66c14821b99695d7bc9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13319,7 +13319,7 @@ $ docker pull bash@sha256:04822588adc701674bd57945506666d09ad6fb20f125929f44f073
 ## `bash:4.2-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:e47b189c9dfec46435f4e8c42ba110e10fc9f83a1a987a5a506a65330d12f719
+$ docker pull bash@sha256:455fdcdd4e027bad0a3aa62c1ac259fd0584d7883845b66c14821b99695d7bc9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13856,7 +13856,7 @@ $ docker pull bash@sha256:04822588adc701674bd57945506666d09ad6fb20f125929f44f073
 ## `bash:4.2.53`
 
 ```console
-$ docker pull bash@sha256:e47b189c9dfec46435f4e8c42ba110e10fc9f83a1a987a5a506a65330d12f719
+$ docker pull bash@sha256:455fdcdd4e027bad0a3aa62c1ac259fd0584d7883845b66c14821b99695d7bc9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14393,7 +14393,7 @@ $ docker pull bash@sha256:04822588adc701674bd57945506666d09ad6fb20f125929f44f073
 ## `bash:4.2.53-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:e47b189c9dfec46435f4e8c42ba110e10fc9f83a1a987a5a506a65330d12f719
+$ docker pull bash@sha256:455fdcdd4e027bad0a3aa62c1ac259fd0584d7883845b66c14821b99695d7bc9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14930,7 +14930,7 @@ $ docker pull bash@sha256:04822588adc701674bd57945506666d09ad6fb20f125929f44f073
 ## `bash:4.3`
 
 ```console
-$ docker pull bash@sha256:624121f6e1852f62ece38c80bade7aa8c63e2b96768d1289998adc281558b09e
+$ docker pull bash@sha256:d4014d0e1cae36fcac5de49ac59c22a6399a30367932b7c007549934ae682389
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15467,7 +15467,7 @@ $ docker pull bash@sha256:e8331f45f7f9e48373b9765c2de9d1ff46691de54b6536b8639379
 ## `bash:4.3-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:624121f6e1852f62ece38c80bade7aa8c63e2b96768d1289998adc281558b09e
+$ docker pull bash@sha256:d4014d0e1cae36fcac5de49ac59c22a6399a30367932b7c007549934ae682389
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16004,7 +16004,7 @@ $ docker pull bash@sha256:e8331f45f7f9e48373b9765c2de9d1ff46691de54b6536b8639379
 ## `bash:4.3.48`
 
 ```console
-$ docker pull bash@sha256:624121f6e1852f62ece38c80bade7aa8c63e2b96768d1289998adc281558b09e
+$ docker pull bash@sha256:d4014d0e1cae36fcac5de49ac59c22a6399a30367932b7c007549934ae682389
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16541,7 +16541,7 @@ $ docker pull bash@sha256:e8331f45f7f9e48373b9765c2de9d1ff46691de54b6536b8639379
 ## `bash:4.3.48-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:624121f6e1852f62ece38c80bade7aa8c63e2b96768d1289998adc281558b09e
+$ docker pull bash@sha256:d4014d0e1cae36fcac5de49ac59c22a6399a30367932b7c007549934ae682389
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17078,7 +17078,7 @@ $ docker pull bash@sha256:e8331f45f7f9e48373b9765c2de9d1ff46691de54b6536b8639379
 ## `bash:4.4`
 
 ```console
-$ docker pull bash@sha256:556fe955685b62fea78e66effc4e165f863ff76c99d217cd94b300480fc4cbbd
+$ docker pull bash@sha256:a982a9f0f765835536f77878a75feb09fb1d8853757d58745f6b1c2da3800ea5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17615,7 +17615,7 @@ $ docker pull bash@sha256:9ab9938b4e15b3b66c5d779fe99418a5cf0fa3d3ce69e212a9a66d
 ## `bash:4.4-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:556fe955685b62fea78e66effc4e165f863ff76c99d217cd94b300480fc4cbbd
+$ docker pull bash@sha256:a982a9f0f765835536f77878a75feb09fb1d8853757d58745f6b1c2da3800ea5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18152,7 +18152,7 @@ $ docker pull bash@sha256:9ab9938b4e15b3b66c5d779fe99418a5cf0fa3d3ce69e212a9a66d
 ## `bash:4.4.23`
 
 ```console
-$ docker pull bash@sha256:556fe955685b62fea78e66effc4e165f863ff76c99d217cd94b300480fc4cbbd
+$ docker pull bash@sha256:a982a9f0f765835536f77878a75feb09fb1d8853757d58745f6b1c2da3800ea5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18689,7 +18689,7 @@ $ docker pull bash@sha256:9ab9938b4e15b3b66c5d779fe99418a5cf0fa3d3ce69e212a9a66d
 ## `bash:4.4.23-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:556fe955685b62fea78e66effc4e165f863ff76c99d217cd94b300480fc4cbbd
+$ docker pull bash@sha256:a982a9f0f765835536f77878a75feb09fb1d8853757d58745f6b1c2da3800ea5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19226,7 +19226,7 @@ $ docker pull bash@sha256:9ab9938b4e15b3b66c5d779fe99418a5cf0fa3d3ce69e212a9a66d
 ## `bash:5`
 
 ```console
-$ docker pull bash@sha256:5353512b79d2963e92a2b97d9cb52df72d32f94661aa825fcfa0aede73304743
+$ docker pull bash@sha256:890897682a8025c1e178b5ec6126b3b532ad8535f1e81dbf60bc2b7300b1bcf8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19763,7 +19763,7 @@ $ docker pull bash@sha256:a8ee8bc099efc73861665247c8f7ac6b88b74fac21e63a796243d4
 ## `bash:5-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:5353512b79d2963e92a2b97d9cb52df72d32f94661aa825fcfa0aede73304743
+$ docker pull bash@sha256:890897682a8025c1e178b5ec6126b3b532ad8535f1e81dbf60bc2b7300b1bcf8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20300,7 +20300,7 @@ $ docker pull bash@sha256:a8ee8bc099efc73861665247c8f7ac6b88b74fac21e63a796243d4
 ## `bash:5.0`
 
 ```console
-$ docker pull bash@sha256:d2edcbbacf661964e5eec717f8565d25ea79e7f7691f8469f4f9b86fc09246fb
+$ docker pull bash@sha256:bc0f9f4cd208862e154919d75359f9a1c798680ec792e3b427489f4582eb95a5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20823,7 +20823,7 @@ $ docker pull bash@sha256:fa2555a641e501864176930d0504fd9c6d179e7bc84f8afdfc0509
 ## `bash:5.0-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:d2edcbbacf661964e5eec717f8565d25ea79e7f7691f8469f4f9b86fc09246fb
+$ docker pull bash@sha256:bc0f9f4cd208862e154919d75359f9a1c798680ec792e3b427489f4582eb95a5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21346,7 +21346,7 @@ $ docker pull bash@sha256:fa2555a641e501864176930d0504fd9c6d179e7bc84f8afdfc0509
 ## `bash:5.0.18`
 
 ```console
-$ docker pull bash@sha256:d2edcbbacf661964e5eec717f8565d25ea79e7f7691f8469f4f9b86fc09246fb
+$ docker pull bash@sha256:bc0f9f4cd208862e154919d75359f9a1c798680ec792e3b427489f4582eb95a5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21869,7 +21869,7 @@ $ docker pull bash@sha256:fa2555a641e501864176930d0504fd9c6d179e7bc84f8afdfc0509
 ## `bash:5.0.18-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:d2edcbbacf661964e5eec717f8565d25ea79e7f7691f8469f4f9b86fc09246fb
+$ docker pull bash@sha256:bc0f9f4cd208862e154919d75359f9a1c798680ec792e3b427489f4582eb95a5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22392,7 +22392,7 @@ $ docker pull bash@sha256:fa2555a641e501864176930d0504fd9c6d179e7bc84f8afdfc0509
 ## `bash:5.1`
 
 ```console
-$ docker pull bash@sha256:703d7ebbdccda77165d223b1248dfabb8d802c59a439539f148b0d8adebac69c
+$ docker pull bash@sha256:3b7ce567b14df1a7954d1ccc47748bc61c29ecc5eb4e1a3bd7f628146a2e1984
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22929,7 +22929,7 @@ $ docker pull bash@sha256:aaf39aab1e701c3401a050de55b913840f3ab85be4c972654aa303
 ## `bash:5.1-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:703d7ebbdccda77165d223b1248dfabb8d802c59a439539f148b0d8adebac69c
+$ docker pull bash@sha256:3b7ce567b14df1a7954d1ccc47748bc61c29ecc5eb4e1a3bd7f628146a2e1984
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23466,7 +23466,7 @@ $ docker pull bash@sha256:aaf39aab1e701c3401a050de55b913840f3ab85be4c972654aa303
 ## `bash:5.1.16`
 
 ```console
-$ docker pull bash@sha256:703d7ebbdccda77165d223b1248dfabb8d802c59a439539f148b0d8adebac69c
+$ docker pull bash@sha256:3b7ce567b14df1a7954d1ccc47748bc61c29ecc5eb4e1a3bd7f628146a2e1984
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24003,7 +24003,7 @@ $ docker pull bash@sha256:aaf39aab1e701c3401a050de55b913840f3ab85be4c972654aa303
 ## `bash:5.1.16-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:703d7ebbdccda77165d223b1248dfabb8d802c59a439539f148b0d8adebac69c
+$ docker pull bash@sha256:3b7ce567b14df1a7954d1ccc47748bc61c29ecc5eb4e1a3bd7f628146a2e1984
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24540,7 +24540,7 @@ $ docker pull bash@sha256:aaf39aab1e701c3401a050de55b913840f3ab85be4c972654aa303
 ## `bash:5.2`
 
 ```console
-$ docker pull bash@sha256:5353512b79d2963e92a2b97d9cb52df72d32f94661aa825fcfa0aede73304743
+$ docker pull bash@sha256:890897682a8025c1e178b5ec6126b3b532ad8535f1e81dbf60bc2b7300b1bcf8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25077,7 +25077,7 @@ $ docker pull bash@sha256:a8ee8bc099efc73861665247c8f7ac6b88b74fac21e63a796243d4
 ## `bash:5.2-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:5353512b79d2963e92a2b97d9cb52df72d32f94661aa825fcfa0aede73304743
+$ docker pull bash@sha256:890897682a8025c1e178b5ec6126b3b532ad8535f1e81dbf60bc2b7300b1bcf8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25614,7 +25614,7 @@ $ docker pull bash@sha256:a8ee8bc099efc73861665247c8f7ac6b88b74fac21e63a796243d4
 ## `bash:5.2.26`
 
 ```console
-$ docker pull bash@sha256:5353512b79d2963e92a2b97d9cb52df72d32f94661aa825fcfa0aede73304743
+$ docker pull bash@sha256:890897682a8025c1e178b5ec6126b3b532ad8535f1e81dbf60bc2b7300b1bcf8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26151,7 +26151,7 @@ $ docker pull bash@sha256:a8ee8bc099efc73861665247c8f7ac6b88b74fac21e63a796243d4
 ## `bash:5.2.26-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:5353512b79d2963e92a2b97d9cb52df72d32f94661aa825fcfa0aede73304743
+$ docker pull bash@sha256:890897682a8025c1e178b5ec6126b3b532ad8535f1e81dbf60bc2b7300b1bcf8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26688,7 +26688,7 @@ $ docker pull bash@sha256:a8ee8bc099efc73861665247c8f7ac6b88b74fac21e63a796243d4
 ## `bash:alpine3.19`
 
 ```console
-$ docker pull bash@sha256:5353512b79d2963e92a2b97d9cb52df72d32f94661aa825fcfa0aede73304743
+$ docker pull bash@sha256:890897682a8025c1e178b5ec6126b3b532ad8535f1e81dbf60bc2b7300b1bcf8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27225,7 +27225,7 @@ $ docker pull bash@sha256:a8ee8bc099efc73861665247c8f7ac6b88b74fac21e63a796243d4
 ## `bash:devel`
 
 ```console
-$ docker pull bash@sha256:23ce0bf792b84fb421c08e264c7d93ab351626b7ecba3c32528963218e863dce
+$ docker pull bash@sha256:16779783f5c1437baf69cadf315f1a751ff6a2677fb30c08e2b7cf59313580eb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27734,7 +27734,7 @@ $ docker pull bash@sha256:d92857a56a48b6b0ec2bfc276ff95778314a53504219db6cc420a8
 ## `bash:devel-20240415`
 
 ```console
-$ docker pull bash@sha256:23ce0bf792b84fb421c08e264c7d93ab351626b7ecba3c32528963218e863dce
+$ docker pull bash@sha256:16779783f5c1437baf69cadf315f1a751ff6a2677fb30c08e2b7cf59313580eb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28243,7 +28243,7 @@ $ docker pull bash@sha256:d92857a56a48b6b0ec2bfc276ff95778314a53504219db6cc420a8
 ## `bash:devel-20240415-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:23ce0bf792b84fb421c08e264c7d93ab351626b7ecba3c32528963218e863dce
+$ docker pull bash@sha256:16779783f5c1437baf69cadf315f1a751ff6a2677fb30c08e2b7cf59313580eb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28752,7 +28752,7 @@ $ docker pull bash@sha256:d92857a56a48b6b0ec2bfc276ff95778314a53504219db6cc420a8
 ## `bash:devel-alpine3.19`
 
 ```console
-$ docker pull bash@sha256:23ce0bf792b84fb421c08e264c7d93ab351626b7ecba3c32528963218e863dce
+$ docker pull bash@sha256:16779783f5c1437baf69cadf315f1a751ff6a2677fb30c08e2b7cf59313580eb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29261,7 +29261,7 @@ $ docker pull bash@sha256:d92857a56a48b6b0ec2bfc276ff95778314a53504219db6cc420a8
 ## `bash:latest`
 
 ```console
-$ docker pull bash@sha256:5353512b79d2963e92a2b97d9cb52df72d32f94661aa825fcfa0aede73304743
+$ docker pull bash@sha256:890897682a8025c1e178b5ec6126b3b532ad8535f1e81dbf60bc2b7300b1bcf8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

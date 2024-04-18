@@ -1,7 +1,7 @@
 ## `bash:latest`
 
 ```console
-$ docker pull bash@sha256:5353512b79d2963e92a2b97d9cb52df72d32f94661aa825fcfa0aede73304743
+$ docker pull bash@sha256:890897682a8025c1e178b5ec6126b3b532ad8535f1e81dbf60bc2b7300b1bcf8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
