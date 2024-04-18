@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:81c0d677e3f7a0f6f6cb880b78c4e25b99b0952da6dc990746cddda6a9e6bc2a`
-- Created: `2024-03-06T21:06:10.047700839Z`
+- Image ID: `sha256:f2d3826a61033b01c969b18d7a00ccf4e4b748dddf31f554c9410b7245f0e628`
+- Created: `2024-04-15T19:04:16.320544954Z`
 - Virtual Size: ~ 2.54 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-01-17T19:05:40`
+  - `build-date=2024-02-29T13:57:42`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,9 +30,9 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=1552`
+  - `release=1610`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.3-1552`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.3-1610`
   - `vcs-ref=eb726081eeafc660c182aae53074ec6631cb473e`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -70,13 +70,13 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `binutils-2.35.2-42.el9.x86_64`
+### `rpm` package: `binutils-2.35.2-42.el9_3.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `binutils-gold-2.35.2-42.el9.x86_64`
+### `rpm` package: `binutils-gold-2.35.2-42.el9_3.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
@@ -136,7 +136,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `curl-minimal-7.76.1-26.el9_3.2.x86_64`
+### `rpm` package: `curl-minimal-7.76.1-26.el9_3.3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -274,7 +274,7 @@ Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `gdb-gdbserver-10.2-11.el9.x86_64`
+### `rpm` package: `gdb-gdbserver-10.2-11.1.el9_3.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ and GPLv2+ with exceptions and GPL+ and LGPLv2+ and LGPLv3+ and BSD and Public Domain and GFDL
 
@@ -310,31 +310,31 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-2.34-83.el9_3.7.x86_64`
+### `rpm` package: `glibc-2.34-83.el9_3.12.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-common-2.34-83.el9_3.7.x86_64`
+### `rpm` package: `glibc-common-2.34-83.el9_3.12.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-devel-2.34-83.el9_3.7.x86_64`
+### `rpm` package: `glibc-devel-2.34-83.el9_3.12.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-headers-2.34-83.el9_3.7.x86_64`
+### `rpm` package: `glibc-headers-2.34-83.el9_3.12.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-minimal-langpack-2.34-83.el9_3.7.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-83.el9_3.12.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
@@ -352,7 +352,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `gnutls-3.7.6-23.el9.x86_64`
+### `rpm` package: `gnutls-3.7.6-23.el9_3.3.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
@@ -424,7 +424,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `kernel-headers-5.14.0-362.18.1.el9_3.x86_64`
+### `rpm` package: `kernel-headers-5.14.0-362.24.1.el9_3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2 and Redistributable, no modification permitted
 
@@ -466,7 +466,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `less-590-2.el9_2.x86_64`
+### `rpm` package: `less-590-3.el9_3.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ or BSD
 
@@ -538,13 +538,13 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libcurl-devel-7.76.1-26.el9_3.2.x86_64`
+### `rpm` package: `libcurl-devel-7.76.1-26.el9_3.3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libcurl-minimal-7.76.1-26.el9_3.2.x86_64`
+### `rpm` package: `libcurl-minimal-7.76.1-26.el9_3.3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -916,25 +916,25 @@ Licenses (from `rpm --query`): OpenLDAP
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssh-8.7p1-34.el9.x86_64`
+### `rpm` package: `openssh-8.7p1-34.el9_3.3.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssh-clients-8.7p1-34.el9.x86_64`
+### `rpm` package: `openssh-clients-8.7p1-34.el9_3.3.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-3.0.7-24.el9.x86_64`
+### `rpm` package: `openssl-3.0.7-25.el9_3.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-libs-3.0.7-24.el9.x86_64`
+### `rpm` package: `openssl-libs-3.0.7-25.el9_3.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
@@ -1510,13 +1510,13 @@ Licenses (from `rpm --query`): Python
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-pip-21.2.3-7.el9.noarch`
+### `rpm` package: `python3-pip-21.2.3-7.el9_3.1.noarch`
 
 Licenses (from `rpm --query`): MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0 or BSD)
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-pip-wheel-21.2.3-7.el9.noarch`
+### `rpm` package: `python3-pip-wheel-21.2.3-7.el9_3.1.noarch`
 
 Licenses (from `rpm --query`): MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0 or BSD)
 
