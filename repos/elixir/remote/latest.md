@@ -1,7 +1,7 @@
 ## `elixir:latest`
 
 ```console
-$ docker pull elixir@sha256:8603893e8398a845b70945d3e0c13a6937c76d053ef107683be15cdf43ee7bdf
+$ docker pull elixir@sha256:490b30c57c1c28b580c9e76c64f9937714353ba4808e02596dfd7f2d4bbb5b03
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

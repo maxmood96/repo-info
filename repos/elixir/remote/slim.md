@@ -1,7 +1,7 @@
 ## `elixir:slim`
 
 ```console
-$ docker pull elixir@sha256:d974f3fa8c8828eba31f3eb6e48a4ecbaee8bde37b1a2c7b46063b3d915d1af5
+$ docker pull elixir@sha256:38dd8871f69d875aaeee41e60177830cc3727c7d3354bb728a2ff88185946df4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

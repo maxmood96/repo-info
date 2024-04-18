@@ -1,7 +1,7 @@
 ## `elixir:otp-24-alpine`
 
 ```console
-$ docker pull elixir@sha256:cdb4c48fb2fbbd5daff4a5c5aa3e3a4a88a0abd8a969999e340cedcb005e8801
+$ docker pull elixir@sha256:860c6805b668dc4b6ccbdedae19150843fdb2bf0c47822b9b0342e3ea2683ba2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

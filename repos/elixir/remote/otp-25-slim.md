@@ -1,7 +1,7 @@
 ## `elixir:otp-25-slim`
 
 ```console
-$ docker pull elixir@sha256:364ac365bf661729bd7a617f2efd0f0388fa3b45c319530393462a7856b506b3
+$ docker pull elixir@sha256:55fe704691061e3d91911534beb072e0ef25c9570fa68a0b2189290abcdf2425
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
