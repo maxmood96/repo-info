@@ -1,7 +1,7 @@
 ## `perl:5-slim-buster`
 
 ```console
-$ docker pull perl@sha256:442b78602cdc41dd75ea73f16014e96ae76f51a8b679b446cf857f446d2c888f
+$ docker pull perl@sha256:b58f4e25c4355ae672c58abd3c7ef146d26a53794d2c3046612e2ae4e0ff4ce4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
