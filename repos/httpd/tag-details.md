@@ -22,7 +22,7 @@
 ## `httpd:2`
 
 ```console
-$ docker pull httpd@sha256:73b2e9e2861bcfe682b9a67d83433b6a6b36176459134aa25ec711058075fd47
+$ docker pull httpd@sha256:5e6d1a11039b6fbb1bd5f72ba507fcd36a5077e34f8d404d9b2c65f8f57da615
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -803,7 +803,7 @@ $ docker pull httpd@sha256:f7804b508dac1564ebb9099b253e526e253713458a341621f2d3a
 ## `httpd:2-alpine`
 
 ```console
-$ docker pull httpd@sha256:6b242338c5c497fef59963d961e1f224262fc313482943cdf16b1875da26836f
+$ docker pull httpd@sha256:49a4adcbf79c5944c34f20c75f3af56146a68e8ccbbfb688c3b2f5e584b9c06d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1529,7 +1529,7 @@ $ docker pull httpd@sha256:f6d2ea0678751c8928910a6156f560c2dde868a32d09c26c48486
 ## `httpd:2-alpine3.19`
 
 ```console
-$ docker pull httpd@sha256:6b242338c5c497fef59963d961e1f224262fc313482943cdf16b1875da26836f
+$ docker pull httpd@sha256:49a4adcbf79c5944c34f20c75f3af56146a68e8ccbbfb688c3b2f5e584b9c06d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2255,7 +2255,7 @@ $ docker pull httpd@sha256:f6d2ea0678751c8928910a6156f560c2dde868a32d09c26c48486
 ## `httpd:2-bookworm`
 
 ```console
-$ docker pull httpd@sha256:73b2e9e2861bcfe682b9a67d83433b6a6b36176459134aa25ec711058075fd47
+$ docker pull httpd@sha256:5e6d1a11039b6fbb1bd5f72ba507fcd36a5077e34f8d404d9b2c65f8f57da615
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3036,7 +3036,7 @@ $ docker pull httpd@sha256:f7804b508dac1564ebb9099b253e526e253713458a341621f2d3a
 ## `httpd:2.4`
 
 ```console
-$ docker pull httpd@sha256:73b2e9e2861bcfe682b9a67d83433b6a6b36176459134aa25ec711058075fd47
+$ docker pull httpd@sha256:5e6d1a11039b6fbb1bd5f72ba507fcd36a5077e34f8d404d9b2c65f8f57da615
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3817,7 +3817,7 @@ $ docker pull httpd@sha256:f7804b508dac1564ebb9099b253e526e253713458a341621f2d3a
 ## `httpd:2.4-alpine`
 
 ```console
-$ docker pull httpd@sha256:6b242338c5c497fef59963d961e1f224262fc313482943cdf16b1875da26836f
+$ docker pull httpd@sha256:49a4adcbf79c5944c34f20c75f3af56146a68e8ccbbfb688c3b2f5e584b9c06d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4543,7 +4543,7 @@ $ docker pull httpd@sha256:f6d2ea0678751c8928910a6156f560c2dde868a32d09c26c48486
 ## `httpd:2.4-alpine3.19`
 
 ```console
-$ docker pull httpd@sha256:6b242338c5c497fef59963d961e1f224262fc313482943cdf16b1875da26836f
+$ docker pull httpd@sha256:49a4adcbf79c5944c34f20c75f3af56146a68e8ccbbfb688c3b2f5e584b9c06d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5269,7 +5269,7 @@ $ docker pull httpd@sha256:f6d2ea0678751c8928910a6156f560c2dde868a32d09c26c48486
 ## `httpd:2.4-bookworm`
 
 ```console
-$ docker pull httpd@sha256:73b2e9e2861bcfe682b9a67d83433b6a6b36176459134aa25ec711058075fd47
+$ docker pull httpd@sha256:5e6d1a11039b6fbb1bd5f72ba507fcd36a5077e34f8d404d9b2c65f8f57da615
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6050,7 +6050,7 @@ $ docker pull httpd@sha256:f7804b508dac1564ebb9099b253e526e253713458a341621f2d3a
 ## `httpd:2.4.59`
 
 ```console
-$ docker pull httpd@sha256:73b2e9e2861bcfe682b9a67d83433b6a6b36176459134aa25ec711058075fd47
+$ docker pull httpd@sha256:5e6d1a11039b6fbb1bd5f72ba507fcd36a5077e34f8d404d9b2c65f8f57da615
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6831,7 +6831,7 @@ $ docker pull httpd@sha256:f7804b508dac1564ebb9099b253e526e253713458a341621f2d3a
 ## `httpd:2.4.59-alpine`
 
 ```console
-$ docker pull httpd@sha256:6b242338c5c497fef59963d961e1f224262fc313482943cdf16b1875da26836f
+$ docker pull httpd@sha256:49a4adcbf79c5944c34f20c75f3af56146a68e8ccbbfb688c3b2f5e584b9c06d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7557,7 +7557,7 @@ $ docker pull httpd@sha256:f6d2ea0678751c8928910a6156f560c2dde868a32d09c26c48486
 ## `httpd:2.4.59-alpine3.19`
 
 ```console
-$ docker pull httpd@sha256:6b242338c5c497fef59963d961e1f224262fc313482943cdf16b1875da26836f
+$ docker pull httpd@sha256:49a4adcbf79c5944c34f20c75f3af56146a68e8ccbbfb688c3b2f5e584b9c06d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8283,7 +8283,7 @@ $ docker pull httpd@sha256:f6d2ea0678751c8928910a6156f560c2dde868a32d09c26c48486
 ## `httpd:2.4.59-bookworm`
 
 ```console
-$ docker pull httpd@sha256:73b2e9e2861bcfe682b9a67d83433b6a6b36176459134aa25ec711058075fd47
+$ docker pull httpd@sha256:5e6d1a11039b6fbb1bd5f72ba507fcd36a5077e34f8d404d9b2c65f8f57da615
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9064,7 +9064,7 @@ $ docker pull httpd@sha256:f7804b508dac1564ebb9099b253e526e253713458a341621f2d3a
 ## `httpd:alpine`
 
 ```console
-$ docker pull httpd@sha256:6b242338c5c497fef59963d961e1f224262fc313482943cdf16b1875da26836f
+$ docker pull httpd@sha256:49a4adcbf79c5944c34f20c75f3af56146a68e8ccbbfb688c3b2f5e584b9c06d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9790,7 +9790,7 @@ $ docker pull httpd@sha256:f6d2ea0678751c8928910a6156f560c2dde868a32d09c26c48486
 ## `httpd:alpine3.19`
 
 ```console
-$ docker pull httpd@sha256:6b242338c5c497fef59963d961e1f224262fc313482943cdf16b1875da26836f
+$ docker pull httpd@sha256:49a4adcbf79c5944c34f20c75f3af56146a68e8ccbbfb688c3b2f5e584b9c06d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10516,7 +10516,7 @@ $ docker pull httpd@sha256:f6d2ea0678751c8928910a6156f560c2dde868a32d09c26c48486
 ## `httpd:bookworm`
 
 ```console
-$ docker pull httpd@sha256:73b2e9e2861bcfe682b9a67d83433b6a6b36176459134aa25ec711058075fd47
+$ docker pull httpd@sha256:5e6d1a11039b6fbb1bd5f72ba507fcd36a5077e34f8d404d9b2c65f8f57da615
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11297,7 +11297,7 @@ $ docker pull httpd@sha256:f7804b508dac1564ebb9099b253e526e253713458a341621f2d3a
 ## `httpd:latest`
 
 ```console
-$ docker pull httpd@sha256:73b2e9e2861bcfe682b9a67d83433b6a6b36176459134aa25ec711058075fd47
+$ docker pull httpd@sha256:5e6d1a11039b6fbb1bd5f72ba507fcd36a5077e34f8d404d9b2c65f8f57da615
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
