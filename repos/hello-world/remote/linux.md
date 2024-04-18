@@ -1,7 +1,7 @@
 ## `hello-world:linux`
 
 ```console
-$ docker pull hello-world@sha256:2f1179e98aaa68b4b6a2bf0e72b1b6c8ddd7ad657ea2388bddcf142ff5a324de
+$ docker pull hello-world@sha256:fc5fd4759ce512db28c5aef0b0cc3b793e76b88ef0f3be831fd5ffbdf9527820
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
