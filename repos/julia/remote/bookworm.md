@@ -1,7 +1,7 @@
 ## `julia:bookworm`
 
 ```console
-$ docker pull julia@sha256:986f430ddf5bf3b7e3160672eb2b070647f2e72b8f6a50eb900151c1fc3694a8
+$ docker pull julia@sha256:e4b8e63c39d2ff6890d7fbaa03af9882e23f1d8406d7dc2f31d312db8ce5c700
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

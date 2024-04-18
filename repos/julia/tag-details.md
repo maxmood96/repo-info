@@ -87,7 +87,7 @@
 ## `julia:1`
 
 ```console
-$ docker pull julia@sha256:0b1f743be510afbaba9a5008f3eff60a21f02df8d3e10890d287d9e6d4b38617
+$ docker pull julia@sha256:4f25d498a79cbd33e4927086991a97b5cee244e043d384ac93c8526084245ede
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -733,7 +733,7 @@ $ docker pull julia@sha256:383bf2eccf8fef81477d905bf29c979c426a16cfda10440b2d043
 ## `julia:1-bookworm`
 
 ```console
-$ docker pull julia@sha256:986f430ddf5bf3b7e3160672eb2b070647f2e72b8f6a50eb900151c1fc3694a8
+$ docker pull julia@sha256:e4b8e63c39d2ff6890d7fbaa03af9882e23f1d8406d7dc2f31d312db8ce5c700
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -988,7 +988,7 @@ $ docker pull julia@sha256:0585cca84e94ec7f2e286fab256cfa0ba1779394ce241fbb620f7
 ## `julia:1-bullseye`
 
 ```console
-$ docker pull julia@sha256:e18be7ffb78bc2430b54ce0024749bcd41691f3815a15f03606a4dd6fca72d1b
+$ docker pull julia@sha256:1fe79d737e5d0045754a9182fd290e36832384f5cbc5b9ac01cfe9db47d7d554
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1542,7 +1542,7 @@ CMD ["julia"]
 ## `julia:1.10`
 
 ```console
-$ docker pull julia@sha256:0b1f743be510afbaba9a5008f3eff60a21f02df8d3e10890d287d9e6d4b38617
+$ docker pull julia@sha256:4f25d498a79cbd33e4927086991a97b5cee244e043d384ac93c8526084245ede
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2188,7 +2188,7 @@ $ docker pull julia@sha256:383bf2eccf8fef81477d905bf29c979c426a16cfda10440b2d043
 ## `julia:1.10-bookworm`
 
 ```console
-$ docker pull julia@sha256:986f430ddf5bf3b7e3160672eb2b070647f2e72b8f6a50eb900151c1fc3694a8
+$ docker pull julia@sha256:e4b8e63c39d2ff6890d7fbaa03af9882e23f1d8406d7dc2f31d312db8ce5c700
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2443,7 +2443,7 @@ $ docker pull julia@sha256:0585cca84e94ec7f2e286fab256cfa0ba1779394ce241fbb620f7
 ## `julia:1.10-bullseye`
 
 ```console
-$ docker pull julia@sha256:e18be7ffb78bc2430b54ce0024749bcd41691f3815a15f03606a4dd6fca72d1b
+$ docker pull julia@sha256:1fe79d737e5d0045754a9182fd290e36832384f5cbc5b9ac01cfe9db47d7d554
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2997,7 +2997,7 @@ CMD ["julia"]
 ## `julia:1.10.2`
 
 ```console
-$ docker pull julia@sha256:0b1f743be510afbaba9a5008f3eff60a21f02df8d3e10890d287d9e6d4b38617
+$ docker pull julia@sha256:4f25d498a79cbd33e4927086991a97b5cee244e043d384ac93c8526084245ede
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3643,7 +3643,7 @@ $ docker pull julia@sha256:383bf2eccf8fef81477d905bf29c979c426a16cfda10440b2d043
 ## `julia:1.10.2-bookworm`
 
 ```console
-$ docker pull julia@sha256:986f430ddf5bf3b7e3160672eb2b070647f2e72b8f6a50eb900151c1fc3694a8
+$ docker pull julia@sha256:e4b8e63c39d2ff6890d7fbaa03af9882e23f1d8406d7dc2f31d312db8ce5c700
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3898,7 +3898,7 @@ $ docker pull julia@sha256:0585cca84e94ec7f2e286fab256cfa0ba1779394ce241fbb620f7
 ## `julia:1.10.2-bullseye`
 
 ```console
-$ docker pull julia@sha256:e18be7ffb78bc2430b54ce0024749bcd41691f3815a15f03606a4dd6fca72d1b
+$ docker pull julia@sha256:1fe79d737e5d0045754a9182fd290e36832384f5cbc5b9ac01cfe9db47d7d554
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4452,7 +4452,7 @@ CMD ["julia"]
 ## `julia:1.11-rc`
 
 ```console
-$ docker pull julia@sha256:6b0967499ade5d5be834692f8e028de81172364fe791be9bb85164a996b1cbfb
+$ docker pull julia@sha256:ca8c7b7a770c31fa57fba6d7b24876d9090e3f661a22e43ec5094291006e7d26
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5180,7 +5180,7 @@ $ docker pull julia@sha256:a117a3510625fa0aeeb17fd51e899a8b892c1464f03b31d48fdc4
 ## `julia:1.11-rc-bookworm`
 
 ```console
-$ docker pull julia@sha256:09e07223e61d12db06207fc37826a1ff1e87e068b1aecf3ae2899331a47e3974
+$ docker pull julia@sha256:0f20c8055223cceb3e132d61f1d85328cfe1f82d3273c5dfaf55af4eca11eafd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5517,7 +5517,7 @@ $ docker pull julia@sha256:668f67803fd40b15cb6886d98e5763c128b2e9568bb2452b0b51b
 ## `julia:1.11-rc-bullseye`
 
 ```console
-$ docker pull julia@sha256:b6560ca06de0842ca2e13f83da4528a45ed648c201d76202cf3a8bcbfa745109
+$ docker pull julia@sha256:6625b054b678e97022b20185b806b7b7f47a80d0baeffa90cc0ffb82644bfc6d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6153,7 +6153,7 @@ CMD ["julia"]
 ## `julia:1.11.0-beta1`
 
 ```console
-$ docker pull julia@sha256:6b0967499ade5d5be834692f8e028de81172364fe791be9bb85164a996b1cbfb
+$ docker pull julia@sha256:ca8c7b7a770c31fa57fba6d7b24876d9090e3f661a22e43ec5094291006e7d26
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6881,7 +6881,7 @@ $ docker pull julia@sha256:a117a3510625fa0aeeb17fd51e899a8b892c1464f03b31d48fdc4
 ## `julia:1.11.0-beta1-bookworm`
 
 ```console
-$ docker pull julia@sha256:09e07223e61d12db06207fc37826a1ff1e87e068b1aecf3ae2899331a47e3974
+$ docker pull julia@sha256:0f20c8055223cceb3e132d61f1d85328cfe1f82d3273c5dfaf55af4eca11eafd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7218,7 +7218,7 @@ $ docker pull julia@sha256:668f67803fd40b15cb6886d98e5763c128b2e9568bb2452b0b51b
 ## `julia:1.11.0-beta1-bullseye`
 
 ```console
-$ docker pull julia@sha256:b6560ca06de0842ca2e13f83da4528a45ed648c201d76202cf3a8bcbfa745109
+$ docker pull julia@sha256:6625b054b678e97022b20185b806b7b7f47a80d0baeffa90cc0ffb82644bfc6d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7854,7 +7854,7 @@ CMD ["julia"]
 ## `julia:1.6`
 
 ```console
-$ docker pull julia@sha256:1359ce21cb3f70e8e52bc2462927391d1305c43d823b5db42017b2eccfe8d730
+$ docker pull julia@sha256:7690fd09588f63d6843108e7266f27816399edbe2636e0f528566544983b0071
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8582,7 +8582,7 @@ $ docker pull julia@sha256:c4bb175799e8ad0835fe2357bcb5ce9b37be77f190e23382b06ec
 ## `julia:1.6-bookworm`
 
 ```console
-$ docker pull julia@sha256:3ffa9602f548f82e05d4693c2f5b3891eb9fa2e93efe07d15af8f9b0be60c4f2
+$ docker pull julia@sha256:a96feb7dfda8b8bb81cfe8c59ffd67a2bacf2ea4a0574463857228b9b415de20
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8919,7 +8919,7 @@ $ docker pull julia@sha256:e3cb133794644be4d3c027898196d4ea97e2146e870016b7cc54e
 ## `julia:1.6-bullseye`
 
 ```console
-$ docker pull julia@sha256:06614bbc46a6b6c617136a4c7359aaf8abb29306d832f4eb5799f1a6bf50d5af
+$ docker pull julia@sha256:571e681c8d361e3722274ec9fcb5aea2dc628edcd1fcd4dbc4b27c40b15f813a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9555,7 +9555,7 @@ CMD ["julia"]
 ## `julia:1.6.7`
 
 ```console
-$ docker pull julia@sha256:1359ce21cb3f70e8e52bc2462927391d1305c43d823b5db42017b2eccfe8d730
+$ docker pull julia@sha256:7690fd09588f63d6843108e7266f27816399edbe2636e0f528566544983b0071
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10283,7 +10283,7 @@ $ docker pull julia@sha256:c4bb175799e8ad0835fe2357bcb5ce9b37be77f190e23382b06ec
 ## `julia:1.6.7-bookworm`
 
 ```console
-$ docker pull julia@sha256:3ffa9602f548f82e05d4693c2f5b3891eb9fa2e93efe07d15af8f9b0be60c4f2
+$ docker pull julia@sha256:a96feb7dfda8b8bb81cfe8c59ffd67a2bacf2ea4a0574463857228b9b415de20
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10620,7 +10620,7 @@ $ docker pull julia@sha256:e3cb133794644be4d3c027898196d4ea97e2146e870016b7cc54e
 ## `julia:1.6.7-bullseye`
 
 ```console
-$ docker pull julia@sha256:06614bbc46a6b6c617136a4c7359aaf8abb29306d832f4eb5799f1a6bf50d5af
+$ docker pull julia@sha256:571e681c8d361e3722274ec9fcb5aea2dc628edcd1fcd4dbc4b27c40b15f813a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11511,7 +11511,7 @@ $ docker pull julia@sha256:383bf2eccf8fef81477d905bf29c979c426a16cfda10440b2d043
 ## `julia:bookworm`
 
 ```console
-$ docker pull julia@sha256:986f430ddf5bf3b7e3160672eb2b070647f2e72b8f6a50eb900151c1fc3694a8
+$ docker pull julia@sha256:e4b8e63c39d2ff6890d7fbaa03af9882e23f1d8406d7dc2f31d312db8ce5c700
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11766,7 +11766,7 @@ $ docker pull julia@sha256:0585cca84e94ec7f2e286fab256cfa0ba1779394ce241fbb620f7
 ## `julia:bullseye`
 
 ```console
-$ docker pull julia@sha256:e18be7ffb78bc2430b54ce0024749bcd41691f3815a15f03606a4dd6fca72d1b
+$ docker pull julia@sha256:1fe79d737e5d0045754a9182fd290e36832384f5cbc5b9ac01cfe9db47d7d554
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12021,7 +12021,7 @@ $ docker pull julia@sha256:b37b0f6b5d59f456cad8996719e87042f48e60b5f852f93bc5265
 ## `julia:latest`
 
 ```console
-$ docker pull julia@sha256:0b1f743be510afbaba9a5008f3eff60a21f02df8d3e10890d287d9e6d4b38617
+$ docker pull julia@sha256:4f25d498a79cbd33e4927086991a97b5cee244e043d384ac93c8526084245ede
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12412,7 +12412,7 @@ CMD ["julia"]
 ## `julia:rc`
 
 ```console
-$ docker pull julia@sha256:6b0967499ade5d5be834692f8e028de81172364fe791be9bb85164a996b1cbfb
+$ docker pull julia@sha256:ca8c7b7a770c31fa57fba6d7b24876d9090e3f661a22e43ec5094291006e7d26
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13140,7 +13140,7 @@ $ docker pull julia@sha256:a117a3510625fa0aeeb17fd51e899a8b892c1464f03b31d48fdc4
 ## `julia:rc-bookworm`
 
 ```console
-$ docker pull julia@sha256:09e07223e61d12db06207fc37826a1ff1e87e068b1aecf3ae2899331a47e3974
+$ docker pull julia@sha256:0f20c8055223cceb3e132d61f1d85328cfe1f82d3273c5dfaf55af4eca11eafd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13477,7 +13477,7 @@ $ docker pull julia@sha256:668f67803fd40b15cb6886d98e5763c128b2e9568bb2452b0b51b
 ## `julia:rc-bullseye`
 
 ```console
-$ docker pull julia@sha256:b6560ca06de0842ca2e13f83da4528a45ed648c201d76202cf3a8bcbfa745109
+$ docker pull julia@sha256:6625b054b678e97022b20185b806b7b7f47a80d0baeffa90cc0ffb82644bfc6d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

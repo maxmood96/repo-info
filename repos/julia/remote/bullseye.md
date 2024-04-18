@@ -1,7 +1,7 @@
 ## `julia:bullseye`
 
 ```console
-$ docker pull julia@sha256:e18be7ffb78bc2430b54ce0024749bcd41691f3815a15f03606a4dd6fca72d1b
+$ docker pull julia@sha256:1fe79d737e5d0045754a9182fd290e36832384f5cbc5b9ac01cfe9db47d7d554
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
