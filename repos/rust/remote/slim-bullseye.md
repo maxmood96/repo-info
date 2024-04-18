@@ -1,7 +1,7 @@
 ## `rust:slim-bullseye`
 
 ```console
-$ docker pull rust@sha256:7d0ef90295debd248e162f83c9290a482695a317fcc5a8c2ee18342c0f5ceb10
+$ docker pull rust@sha256:1a0ae98affa8f875bd0107143f97b7333d731d1c7eb3f81601ae0751243aaba7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

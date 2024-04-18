@@ -50,7 +50,7 @@
 ## `rust:1`
 
 ```console
-$ docker pull rust@sha256:5cff57814c85fcc0508036e3932c87dd39faf67ba4ed7388bee160a932cc1ed5
+$ docker pull rust@sha256:6052afe7c422c163798bb9064b7215db15c5f790214ee2c2e787daf8ed3de92a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -883,7 +883,7 @@ $ docker pull rust@sha256:07fcac075e46cdcd0b7ad2a6c17d6d167910b8b9e827ccef0d7309
 ## `rust:1-bookworm`
 
 ```console
-$ docker pull rust@sha256:5cff57814c85fcc0508036e3932c87dd39faf67ba4ed7388bee160a932cc1ed5
+$ docker pull rust@sha256:6052afe7c422c163798bb9064b7215db15c5f790214ee2c2e787daf8ed3de92a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1287,7 +1287,7 @@ $ docker pull rust@sha256:02f4a3043cc802bcf6a41f21a2409dd71d9cb197a2c478d8a827b7
 ## `rust:1-bullseye`
 
 ```console
-$ docker pull rust@sha256:6e7d0c4cf100729f7965e213faedc68e6edcc647561ff736f7863afa15d47c8a
+$ docker pull rust@sha256:4cb856969822501a4c839dadae7a4786e11293ee93efb93b6a91a0c0fc640b89
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2016,7 +2016,7 @@ $ docker pull rust@sha256:7e6b07cf29947420afc7f3cb9d9b96eafc3cc70e75561c2725b2a8
 ## `rust:1-slim`
 
 ```console
-$ docker pull rust@sha256:4991f8f4de2156c0bb5b92585c40ba47db6cc9084f86536ff43664d845774d12
+$ docker pull rust@sha256:6f4e99235442c7e62420313392840288f1f3ac6a3fb99dda0d529aa893b3f36c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2330,7 +2330,7 @@ $ docker pull rust@sha256:3e25407fd7b96b4749e8457f51989d09b0c9670bfb3120c2fe462f
 ## `rust:1-slim-bookworm`
 
 ```console
-$ docker pull rust@sha256:4991f8f4de2156c0bb5b92585c40ba47db6cc9084f86536ff43664d845774d12
+$ docker pull rust@sha256:6f4e99235442c7e62420313392840288f1f3ac6a3fb99dda0d529aa893b3f36c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2644,7 +2644,7 @@ $ docker pull rust@sha256:3e25407fd7b96b4749e8457f51989d09b0c9670bfb3120c2fe462f
 ## `rust:1-slim-bullseye`
 
 ```console
-$ docker pull rust@sha256:7d0ef90295debd248e162f83c9290a482695a317fcc5a8c2ee18342c0f5ceb10
+$ docker pull rust@sha256:1a0ae98affa8f875bd0107143f97b7333d731d1c7eb3f81601ae0751243aaba7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3211,7 +3211,7 @@ $ docker pull rust@sha256:752c286f93a3ae53df42fe4c2153bcdb6523435d242f194aa29259
 ## `rust:1.77`
 
 ```console
-$ docker pull rust@sha256:5cff57814c85fcc0508036e3932c87dd39faf67ba4ed7388bee160a932cc1ed5
+$ docker pull rust@sha256:6052afe7c422c163798bb9064b7215db15c5f790214ee2c2e787daf8ed3de92a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4044,7 +4044,7 @@ $ docker pull rust@sha256:07fcac075e46cdcd0b7ad2a6c17d6d167910b8b9e827ccef0d7309
 ## `rust:1.77-bookworm`
 
 ```console
-$ docker pull rust@sha256:5cff57814c85fcc0508036e3932c87dd39faf67ba4ed7388bee160a932cc1ed5
+$ docker pull rust@sha256:6052afe7c422c163798bb9064b7215db15c5f790214ee2c2e787daf8ed3de92a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4448,7 +4448,7 @@ $ docker pull rust@sha256:02f4a3043cc802bcf6a41f21a2409dd71d9cb197a2c478d8a827b7
 ## `rust:1.77-bullseye`
 
 ```console
-$ docker pull rust@sha256:6e7d0c4cf100729f7965e213faedc68e6edcc647561ff736f7863afa15d47c8a
+$ docker pull rust@sha256:4cb856969822501a4c839dadae7a4786e11293ee93efb93b6a91a0c0fc640b89
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5177,7 +5177,7 @@ $ docker pull rust@sha256:7e6b07cf29947420afc7f3cb9d9b96eafc3cc70e75561c2725b2a8
 ## `rust:1.77-slim`
 
 ```console
-$ docker pull rust@sha256:4991f8f4de2156c0bb5b92585c40ba47db6cc9084f86536ff43664d845774d12
+$ docker pull rust@sha256:6f4e99235442c7e62420313392840288f1f3ac6a3fb99dda0d529aa893b3f36c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5491,7 +5491,7 @@ $ docker pull rust@sha256:3e25407fd7b96b4749e8457f51989d09b0c9670bfb3120c2fe462f
 ## `rust:1.77-slim-bookworm`
 
 ```console
-$ docker pull rust@sha256:4991f8f4de2156c0bb5b92585c40ba47db6cc9084f86536ff43664d845774d12
+$ docker pull rust@sha256:6f4e99235442c7e62420313392840288f1f3ac6a3fb99dda0d529aa893b3f36c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5805,7 +5805,7 @@ $ docker pull rust@sha256:3e25407fd7b96b4749e8457f51989d09b0c9670bfb3120c2fe462f
 ## `rust:1.77-slim-bullseye`
 
 ```console
-$ docker pull rust@sha256:7d0ef90295debd248e162f83c9290a482695a317fcc5a8c2ee18342c0f5ceb10
+$ docker pull rust@sha256:1a0ae98affa8f875bd0107143f97b7333d731d1c7eb3f81601ae0751243aaba7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6372,7 +6372,7 @@ $ docker pull rust@sha256:752c286f93a3ae53df42fe4c2153bcdb6523435d242f194aa29259
 ## `rust:1.77.2`
 
 ```console
-$ docker pull rust@sha256:5cff57814c85fcc0508036e3932c87dd39faf67ba4ed7388bee160a932cc1ed5
+$ docker pull rust@sha256:6052afe7c422c163798bb9064b7215db15c5f790214ee2c2e787daf8ed3de92a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7205,7 +7205,7 @@ $ docker pull rust@sha256:07fcac075e46cdcd0b7ad2a6c17d6d167910b8b9e827ccef0d7309
 ## `rust:1.77.2-bookworm`
 
 ```console
-$ docker pull rust@sha256:5cff57814c85fcc0508036e3932c87dd39faf67ba4ed7388bee160a932cc1ed5
+$ docker pull rust@sha256:6052afe7c422c163798bb9064b7215db15c5f790214ee2c2e787daf8ed3de92a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7609,7 +7609,7 @@ $ docker pull rust@sha256:02f4a3043cc802bcf6a41f21a2409dd71d9cb197a2c478d8a827b7
 ## `rust:1.77.2-bullseye`
 
 ```console
-$ docker pull rust@sha256:6e7d0c4cf100729f7965e213faedc68e6edcc647561ff736f7863afa15d47c8a
+$ docker pull rust@sha256:4cb856969822501a4c839dadae7a4786e11293ee93efb93b6a91a0c0fc640b89
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8338,7 +8338,7 @@ $ docker pull rust@sha256:7e6b07cf29947420afc7f3cb9d9b96eafc3cc70e75561c2725b2a8
 ## `rust:1.77.2-slim`
 
 ```console
-$ docker pull rust@sha256:4991f8f4de2156c0bb5b92585c40ba47db6cc9084f86536ff43664d845774d12
+$ docker pull rust@sha256:6f4e99235442c7e62420313392840288f1f3ac6a3fb99dda0d529aa893b3f36c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8652,7 +8652,7 @@ $ docker pull rust@sha256:3e25407fd7b96b4749e8457f51989d09b0c9670bfb3120c2fe462f
 ## `rust:1.77.2-slim-bookworm`
 
 ```console
-$ docker pull rust@sha256:4991f8f4de2156c0bb5b92585c40ba47db6cc9084f86536ff43664d845774d12
+$ docker pull rust@sha256:6f4e99235442c7e62420313392840288f1f3ac6a3fb99dda0d529aa893b3f36c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8966,7 +8966,7 @@ $ docker pull rust@sha256:3e25407fd7b96b4749e8457f51989d09b0c9670bfb3120c2fe462f
 ## `rust:1.77.2-slim-bullseye`
 
 ```console
-$ docker pull rust@sha256:7d0ef90295debd248e162f83c9290a482695a317fcc5a8c2ee18342c0f5ceb10
+$ docker pull rust@sha256:1a0ae98affa8f875bd0107143f97b7333d731d1c7eb3f81601ae0751243aaba7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9962,7 +9962,7 @@ $ docker pull rust@sha256:07fcac075e46cdcd0b7ad2a6c17d6d167910b8b9e827ccef0d7309
 ## `rust:bookworm`
 
 ```console
-$ docker pull rust@sha256:5cff57814c85fcc0508036e3932c87dd39faf67ba4ed7388bee160a932cc1ed5
+$ docker pull rust@sha256:6052afe7c422c163798bb9064b7215db15c5f790214ee2c2e787daf8ed3de92a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10366,7 +10366,7 @@ $ docker pull rust@sha256:02f4a3043cc802bcf6a41f21a2409dd71d9cb197a2c478d8a827b7
 ## `rust:bullseye`
 
 ```console
-$ docker pull rust@sha256:6e7d0c4cf100729f7965e213faedc68e6edcc647561ff736f7863afa15d47c8a
+$ docker pull rust@sha256:4cb856969822501a4c839dadae7a4786e11293ee93efb93b6a91a0c0fc640b89
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11095,7 +11095,7 @@ $ docker pull rust@sha256:7e6b07cf29947420afc7f3cb9d9b96eafc3cc70e75561c2725b2a8
 ## `rust:latest`
 
 ```console
-$ docker pull rust@sha256:5cff57814c85fcc0508036e3932c87dd39faf67ba4ed7388bee160a932cc1ed5
+$ docker pull rust@sha256:6052afe7c422c163798bb9064b7215db15c5f790214ee2c2e787daf8ed3de92a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11499,7 +11499,7 @@ $ docker pull rust@sha256:02f4a3043cc802bcf6a41f21a2409dd71d9cb197a2c478d8a827b7
 ## `rust:slim`
 
 ```console
-$ docker pull rust@sha256:4991f8f4de2156c0bb5b92585c40ba47db6cc9084f86536ff43664d845774d12
+$ docker pull rust@sha256:6f4e99235442c7e62420313392840288f1f3ac6a3fb99dda0d529aa893b3f36c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11813,7 +11813,7 @@ $ docker pull rust@sha256:3e25407fd7b96b4749e8457f51989d09b0c9670bfb3120c2fe462f
 ## `rust:slim-bookworm`
 
 ```console
-$ docker pull rust@sha256:4991f8f4de2156c0bb5b92585c40ba47db6cc9084f86536ff43664d845774d12
+$ docker pull rust@sha256:6f4e99235442c7e62420313392840288f1f3ac6a3fb99dda0d529aa893b3f36c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12127,7 +12127,7 @@ $ docker pull rust@sha256:3e25407fd7b96b4749e8457f51989d09b0c9670bfb3120c2fe462f
 ## `rust:slim-bullseye`
 
 ```console
-$ docker pull rust@sha256:7d0ef90295debd248e162f83c9290a482695a317fcc5a8c2ee18342c0f5ceb10
+$ docker pull rust@sha256:1a0ae98affa8f875bd0107143f97b7333d731d1c7eb3f81601ae0751243aaba7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
