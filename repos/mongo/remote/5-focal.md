@@ -1,7 +1,7 @@
 ## `mongo:5-focal`
 
 ```console
-$ docker pull mongo@sha256:a11085243561c473dc8eb319f5d6bbb70e51461cb08029695c9d820530df7495
+$ docker pull mongo@sha256:b4f3ce39d8aa3ab52c5fa69931801e6cbd2115d657a1fd0f3e07e1767ddf737c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
