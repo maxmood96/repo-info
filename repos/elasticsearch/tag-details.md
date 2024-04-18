@@ -8,7 +8,7 @@
 ## `elasticsearch:7.17.20`
 
 ```console
-$ docker pull elasticsearch@sha256:9b62bc115d32ff25a7a84319e2a6f5c1ef7e28754dc6f40232e7a0d41d5063f6
+$ docker pull elasticsearch@sha256:2479cc342a6414a920b7fb3c2f55232a174f53e10612c8f15eece7e66eb7c97e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -269,7 +269,7 @@ $ docker pull elasticsearch@sha256:b4db7e251f50718aa9439db041496015be0aa217766d0
 ## `elasticsearch:8.13.0`
 
 ```console
-$ docker pull elasticsearch@sha256:1886408460504dd4b2eef769024f65bb4d884946016ac329bfc4e0fcee2c67bf
+$ docker pull elasticsearch@sha256:75e68e06b38a052807a4be91761325c6e054052a50088cd5eea7e155bc4802ab
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
