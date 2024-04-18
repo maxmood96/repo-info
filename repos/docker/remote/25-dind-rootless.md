@@ -1,7 +1,7 @@
 ## `docker:25-dind-rootless`
 
 ```console
-$ docker pull docker@sha256:e00944f341b74a7b8a12431fdd2506cb630ffdf575fe164584cd97ed54082a85
+$ docker pull docker@sha256:4193bb3a95f16b1809a10a4541873555d4960d91ef6179466f34ca5c18e47dd6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

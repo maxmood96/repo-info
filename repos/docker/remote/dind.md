@@ -1,7 +1,7 @@
 ## `docker:dind`
 
 ```console
-$ docker pull docker@sha256:a2d55c6061a342e42db62654b7b7cdf16113828a80b3827cbd9453806c08549c
+$ docker pull docker@sha256:6c14c5009447b4c0610880fd61cf8c2f7f50acf3e310ff1e2dd8413953067737
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
