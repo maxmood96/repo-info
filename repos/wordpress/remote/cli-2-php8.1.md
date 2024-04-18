@@ -1,7 +1,7 @@
 ## `wordpress:cli-2-php8.1`
 
 ```console
-$ docker pull wordpress@sha256:6fb46f99fd5b0d360344ed63ecfa9e7aee1ca86a5446158b17b5364fc4ae84d0
+$ docker pull wordpress@sha256:87d613b7e9cb9f44f4a4d99c687ad715246ad92dd3897b9494ca8886bdf3130d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
