@@ -1,7 +1,7 @@
 ## `fluentd:latest`
 
 ```console
-$ docker pull fluentd@sha256:267dc96426972a04ec2b789749f8ddf0f2731d36cef4aa0fb6a720ad854ff2ad
+$ docker pull fluentd@sha256:3a321be649dec62963e094436e8175f41ad663b47d09af4eec51eaad86eb831f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

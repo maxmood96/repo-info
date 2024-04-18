@@ -11,7 +11,7 @@
 ## `fluentd:latest`
 
 ```console
-$ docker pull fluentd@sha256:267dc96426972a04ec2b789749f8ddf0f2731d36cef4aa0fb6a720ad854ff2ad
+$ docker pull fluentd@sha256:3a321be649dec62963e094436e8175f41ad663b47d09af4eec51eaad86eb831f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -568,7 +568,7 @@ $ docker pull fluentd@sha256:55d6196eef0ac6d020eb8e2606a7c38b7923d101f535443d91a
 ## `fluentd:v1.16-1`
 
 ```console
-$ docker pull fluentd@sha256:267dc96426972a04ec2b789749f8ddf0f2731d36cef4aa0fb6a720ad854ff2ad
+$ docker pull fluentd@sha256:3a321be649dec62963e094436e8175f41ad663b47d09af4eec51eaad86eb831f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1125,7 +1125,7 @@ $ docker pull fluentd@sha256:55d6196eef0ac6d020eb8e2606a7c38b7923d101f535443d91a
 ## `fluentd:v1.16-debian-1`
 
 ```console
-$ docker pull fluentd@sha256:7c2f3b1659f1499008d942f70af5d2ffad266a5b72dbb3ce1bc6617af60eb4f7
+$ docker pull fluentd@sha256:349f3288d8b7c3091300e9c16871ad59e39ed997e1f0848a0a65a677fa6d3aa7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2072,7 +2072,7 @@ $ docker pull fluentd@sha256:be06d56aa8a7d7824482a38eec40b5e45de1e2cc911069c6e3d
 ## `fluentd:v1.16.2-1.1`
 
 ```console
-$ docker pull fluentd@sha256:267dc96426972a04ec2b789749f8ddf0f2731d36cef4aa0fb6a720ad854ff2ad
+$ docker pull fluentd@sha256:3a321be649dec62963e094436e8175f41ad663b47d09af4eec51eaad86eb831f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2629,7 +2629,7 @@ $ docker pull fluentd@sha256:55d6196eef0ac6d020eb8e2606a7c38b7923d101f535443d91a
 ## `fluentd:v1.16.2-debian-1.1`
 
 ```console
-$ docker pull fluentd@sha256:7c2f3b1659f1499008d942f70af5d2ffad266a5b72dbb3ce1bc6617af60eb4f7
+$ docker pull fluentd@sha256:349f3288d8b7c3091300e9c16871ad59e39ed997e1f0848a0a65a677fa6d3aa7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
