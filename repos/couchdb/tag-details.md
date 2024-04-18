@@ -800,7 +800,7 @@ $ docker pull couchdb@sha256:3fee5fdef3441f245ea91ab0a943d6a2b295f31d8e8c39279a1
 ## `couchdb:3`
 
 ```console
-$ docker pull couchdb@sha256:b3af4abdf14137d9978f628c455a57143a03e3d8a7f23bb7913a02d2c9041f40
+$ docker pull couchdb@sha256:8baec729b8a3ae0c23127c933bfa48ecce295f210d65441a81b35d1006fbc42b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2105,7 +2105,7 @@ $ docker pull couchdb@sha256:e6ad654b9c5982679eb124c14c733163a0d701e2e6d6724264c
 ## `couchdb:3.3`
 
 ```console
-$ docker pull couchdb@sha256:b3af4abdf14137d9978f628c455a57143a03e3d8a7f23bb7913a02d2c9041f40
+$ docker pull couchdb@sha256:8baec729b8a3ae0c23127c933bfa48ecce295f210d65441a81b35d1006fbc42b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2618,7 +2618,7 @@ $ docker pull couchdb@sha256:6c5eeddcab4ea0af89cb90ebdea4a80465b9e4e0bde817312a5
 ## `couchdb:3.3.3`
 
 ```console
-$ docker pull couchdb@sha256:b3af4abdf14137d9978f628c455a57143a03e3d8a7f23bb7913a02d2c9041f40
+$ docker pull couchdb@sha256:8baec729b8a3ae0c23127c933bfa48ecce295f210d65441a81b35d1006fbc42b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3131,7 +3131,7 @@ $ docker pull couchdb@sha256:6c5eeddcab4ea0af89cb90ebdea4a80465b9e4e0bde817312a5
 ## `couchdb:latest`
 
 ```console
-$ docker pull couchdb@sha256:b3af4abdf14137d9978f628c455a57143a03e3d8a7f23bb7913a02d2c9041f40
+$ docker pull couchdb@sha256:8baec729b8a3ae0c23127c933bfa48ecce295f210d65441a81b35d1006fbc42b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
