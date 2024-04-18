@@ -1,7 +1,7 @@
 ## `rust:slim-buster`
 
 ```console
-$ docker pull rust@sha256:01972e99e0857aabc0bc514bd16c1fc9e82040b3f60de53c40d34f114d5e99a7
+$ docker pull rust@sha256:876735f972610a54975e42c020d3bc5c076e30e0f332bf92baeca7f8ad71d042
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

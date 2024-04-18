@@ -1,7 +1,7 @@
 ## `rust:slim-bookworm`
 
 ```console
-$ docker pull rust@sha256:090d8d4e37850b349b59912647cc7a35c6a64dba8168f6998562f02483fa37d7
+$ docker pull rust@sha256:4991f8f4de2156c0bb5b92585c40ba47db6cc9084f86536ff43664d845774d12
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
