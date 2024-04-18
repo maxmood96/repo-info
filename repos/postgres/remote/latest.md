@@ -1,7 +1,7 @@
 ## `postgres:latest`
 
 ```console
-$ docker pull postgres@sha256:5e2d7104e1bed38baacb9d7389873a0b6056667f25ab4762b4c050379fdfea1b
+$ docker pull postgres@sha256:f4b0987cb4ba8bcc2b90aa33ad8b5786669bec4dc633fc93d1418275e3627b34
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

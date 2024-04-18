@@ -1,7 +1,7 @@
 ## `postgres:alpine3.18`
 
 ```console
-$ docker pull postgres@sha256:a40b3f68d3ac34bb1822acf7f6b5cb7e721c6934bfffc2ebb2469b8beafc3005
+$ docker pull postgres@sha256:4d463e8393ed59fa9fbc897370bdc007ded16bed235bde45a9594ec5eecb8f7e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
