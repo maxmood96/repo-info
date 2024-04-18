@@ -1,7 +1,7 @@
 ## `neo4j:enterprise`
 
 ```console
-$ docker pull neo4j@sha256:d30d4e1a6e9e85a6babe370cfc41096b796a38128988663f95a0ec4f43347c76
+$ docker pull neo4j@sha256:4f291adffe0ec129df6caf0cc9be605c57c05085893a8b4589ff93ceaaa120d9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

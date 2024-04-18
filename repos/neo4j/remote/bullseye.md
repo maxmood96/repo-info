@@ -1,7 +1,7 @@
 ## `neo4j:bullseye`
 
 ```console
-$ docker pull neo4j@sha256:c4bef2eda8c04dfbd02e686547f893482c039f394fffabf51f950c747d11db30
+$ docker pull neo4j@sha256:276114b1d8a1934f96baf91d377a85ab81df747a8f82704f4fdd7dd6abadd185
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
