@@ -1,7 +1,7 @@
 ## `perl:5-slim-bookworm`
 
 ```console
-$ docker pull perl@sha256:83e082ac9db0204eeb699df8e9d3c87e49723d957ef91a64f73c2ada43c8cb6b
+$ docker pull perl@sha256:3409ecd0d1b2bdb8010cffda1ff32a95f5c140259aabb7618db608944c1b0b6d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

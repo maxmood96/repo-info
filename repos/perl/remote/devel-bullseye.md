@@ -1,7 +1,7 @@
 ## `perl:devel-bullseye`
 
 ```console
-$ docker pull perl@sha256:bed57284a359dbbb804cda47e8f22abc554ba81b7fa84494c86df76423e617b5
+$ docker pull perl@sha256:887792d46367bdf183213b0917120d257d49e00a57c87b1d45e5b9fa1161f373
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

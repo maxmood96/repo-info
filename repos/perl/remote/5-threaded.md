@@ -1,7 +1,7 @@
 ## `perl:5-threaded`
 
 ```console
-$ docker pull perl@sha256:6446180a540a4678c5e6da29f4ae4169b1cc01281c11fc6a197a6ce0c5a645b5
+$ docker pull perl@sha256:8e88775671810be498564cd8ea85c6154ad45e6de931d8891e88ad6faaeaf4b5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

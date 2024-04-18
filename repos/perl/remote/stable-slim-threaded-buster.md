@@ -1,7 +1,7 @@
 ## `perl:stable-slim-threaded-buster`
 
 ```console
-$ docker pull perl@sha256:c425accb78733b8a5f2914f47e5651a03b9d1f262c6d259ab5ccf450ab7833b2
+$ docker pull perl@sha256:4fbd71e5e069797db6ac53fb39800631b4ab1f20c35b7939afa6d4e603906082
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
