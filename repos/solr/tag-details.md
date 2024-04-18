@@ -24,7 +24,7 @@
 ## `solr:8`
 
 ```console
-$ docker pull solr@sha256:5e51d54b8f62403bae1d0c313236820528cc1ebc993a08ef2b665ffc65689084
+$ docker pull solr@sha256:5b4a48fbf403e6ee60ffd56b877c5eb8a0f6312349fffff457403a7ce900a087
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -833,7 +833,7 @@ $ docker pull solr@sha256:d1cb1442ea29f7546a897ef0968336ab43a7dfe712f7204486d7d3
 ## `solr:8-slim`
 
 ```console
-$ docker pull solr@sha256:4ddde9a0ebcdcd1c2bb3382454ba39bb0412d3c315fd9dae482417e3dfb73957
+$ docker pull solr@sha256:c207d5c965eb32bb7a12a731d757b8c3a70e2a90d15ddd9d0d05ee83fbf0b0a4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1642,7 +1642,7 @@ $ docker pull solr@sha256:3ccdac3ef75254269be5f86fb85c3b5f1280061105ff4fed7d1fdd
 ## `solr:8.11`
 
 ```console
-$ docker pull solr@sha256:5e51d54b8f62403bae1d0c313236820528cc1ebc993a08ef2b665ffc65689084
+$ docker pull solr@sha256:5b4a48fbf403e6ee60ffd56b877c5eb8a0f6312349fffff457403a7ce900a087
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2451,7 +2451,7 @@ $ docker pull solr@sha256:d1cb1442ea29f7546a897ef0968336ab43a7dfe712f7204486d7d3
 ## `solr:8.11-slim`
 
 ```console
-$ docker pull solr@sha256:4ddde9a0ebcdcd1c2bb3382454ba39bb0412d3c315fd9dae482417e3dfb73957
+$ docker pull solr@sha256:c207d5c965eb32bb7a12a731d757b8c3a70e2a90d15ddd9d0d05ee83fbf0b0a4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3260,7 +3260,7 @@ $ docker pull solr@sha256:3ccdac3ef75254269be5f86fb85c3b5f1280061105ff4fed7d1fdd
 ## `solr:8.11.3`
 
 ```console
-$ docker pull solr@sha256:5e51d54b8f62403bae1d0c313236820528cc1ebc993a08ef2b665ffc65689084
+$ docker pull solr@sha256:5b4a48fbf403e6ee60ffd56b877c5eb8a0f6312349fffff457403a7ce900a087
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4069,7 +4069,7 @@ $ docker pull solr@sha256:d1cb1442ea29f7546a897ef0968336ab43a7dfe712f7204486d7d3
 ## `solr:8.11.3-slim`
 
 ```console
-$ docker pull solr@sha256:4ddde9a0ebcdcd1c2bb3382454ba39bb0412d3c315fd9dae482417e3dfb73957
+$ docker pull solr@sha256:c207d5c965eb32bb7a12a731d757b8c3a70e2a90d15ddd9d0d05ee83fbf0b0a4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4878,7 +4878,7 @@ $ docker pull solr@sha256:3ccdac3ef75254269be5f86fb85c3b5f1280061105ff4fed7d1fdd
 ## `solr:9`
 
 ```console
-$ docker pull solr@sha256:83f5d2606eb0f0a8550ba8984e9368318179f6fecd91aff2916d57dde86b487f
+$ docker pull solr@sha256:7794314d02647991dc6363c30acf72a36cc16c5630bfb30b261aadc359eb3e48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5752,7 +5752,7 @@ $ docker pull solr@sha256:4765f9226406cd3ca7ca7e7583043afe52a5e26a52e512ace9ef41
 ## `solr:9-slim`
 
 ```console
-$ docker pull solr@sha256:fc7aeb666f30db582022206f82e866d9ea26dfea8458d276d98a0cca3182d417
+$ docker pull solr@sha256:aee2a943d14328b6519f158d1057a6ad2b09f493f7ba124c95d8500d24239ab7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6626,7 +6626,7 @@ $ docker pull solr@sha256:4fba7576d2af4d972f8fbecbdf0e2195bfd78b3f44506a7d6a8d8b
 ## `solr:9.4`
 
 ```console
-$ docker pull solr@sha256:06bfd864ec0467922ff21c755508f333900813dc22d46b640707b85189be322e
+$ docker pull solr@sha256:243af208397aa936e44b56d44a349fee8240d2fd3bd77cd596ab6b6c38b9f86f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7500,7 +7500,7 @@ $ docker pull solr@sha256:86d179e81526b8540fe70a0ccf3f83d5c0a8b11da73d57636be00f
 ## `solr:9.4-slim`
 
 ```console
-$ docker pull solr@sha256:416125e9647a7b33b0af5be01e0c9582c291cfd64974141993f509ba98834b6f
+$ docker pull solr@sha256:6baa140b1a6b04be59df91239d6f380290630ad4e66e5bef3a83da541e2f9163
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8374,7 +8374,7 @@ $ docker pull solr@sha256:0da69ae27cf9fa3a2cec9c9c0c155df68214fa951d5aeb4d11adad
 ## `solr:9.4.1`
 
 ```console
-$ docker pull solr@sha256:06bfd864ec0467922ff21c755508f333900813dc22d46b640707b85189be322e
+$ docker pull solr@sha256:243af208397aa936e44b56d44a349fee8240d2fd3bd77cd596ab6b6c38b9f86f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9248,7 +9248,7 @@ $ docker pull solr@sha256:86d179e81526b8540fe70a0ccf3f83d5c0a8b11da73d57636be00f
 ## `solr:9.4.1-slim`
 
 ```console
-$ docker pull solr@sha256:416125e9647a7b33b0af5be01e0c9582c291cfd64974141993f509ba98834b6f
+$ docker pull solr@sha256:6baa140b1a6b04be59df91239d6f380290630ad4e66e5bef3a83da541e2f9163
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10122,7 +10122,7 @@ $ docker pull solr@sha256:0da69ae27cf9fa3a2cec9c9c0c155df68214fa951d5aeb4d11adad
 ## `solr:9.5`
 
 ```console
-$ docker pull solr@sha256:83f5d2606eb0f0a8550ba8984e9368318179f6fecd91aff2916d57dde86b487f
+$ docker pull solr@sha256:7794314d02647991dc6363c30acf72a36cc16c5630bfb30b261aadc359eb3e48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10996,7 +10996,7 @@ $ docker pull solr@sha256:4765f9226406cd3ca7ca7e7583043afe52a5e26a52e512ace9ef41
 ## `solr:9.5-slim`
 
 ```console
-$ docker pull solr@sha256:fc7aeb666f30db582022206f82e866d9ea26dfea8458d276d98a0cca3182d417
+$ docker pull solr@sha256:aee2a943d14328b6519f158d1057a6ad2b09f493f7ba124c95d8500d24239ab7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11870,7 +11870,7 @@ $ docker pull solr@sha256:4fba7576d2af4d972f8fbecbdf0e2195bfd78b3f44506a7d6a8d8b
 ## `solr:9.5.0`
 
 ```console
-$ docker pull solr@sha256:83f5d2606eb0f0a8550ba8984e9368318179f6fecd91aff2916d57dde86b487f
+$ docker pull solr@sha256:7794314d02647991dc6363c30acf72a36cc16c5630bfb30b261aadc359eb3e48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12744,7 +12744,7 @@ $ docker pull solr@sha256:4765f9226406cd3ca7ca7e7583043afe52a5e26a52e512ace9ef41
 ## `solr:9.5.0-slim`
 
 ```console
-$ docker pull solr@sha256:fc7aeb666f30db582022206f82e866d9ea26dfea8458d276d98a0cca3182d417
+$ docker pull solr@sha256:aee2a943d14328b6519f158d1057a6ad2b09f493f7ba124c95d8500d24239ab7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13618,7 +13618,7 @@ $ docker pull solr@sha256:4fba7576d2af4d972f8fbecbdf0e2195bfd78b3f44506a7d6a8d8b
 ## `solr:latest`
 
 ```console
-$ docker pull solr@sha256:83f5d2606eb0f0a8550ba8984e9368318179f6fecd91aff2916d57dde86b487f
+$ docker pull solr@sha256:7794314d02647991dc6363c30acf72a36cc16c5630bfb30b261aadc359eb3e48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14492,7 +14492,7 @@ $ docker pull solr@sha256:4765f9226406cd3ca7ca7e7583043afe52a5e26a52e512ace9ef41
 ## `solr:slim`
 
 ```console
-$ docker pull solr@sha256:fc7aeb666f30db582022206f82e866d9ea26dfea8458d276d98a0cca3182d417
+$ docker pull solr@sha256:aee2a943d14328b6519f158d1057a6ad2b09f493f7ba124c95d8500d24239ab7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

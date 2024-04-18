@@ -1,7 +1,7 @@
 ## `solr:9-slim`
 
 ```console
-$ docker pull solr@sha256:fc7aeb666f30db582022206f82e866d9ea26dfea8458d276d98a0cca3182d417
+$ docker pull solr@sha256:aee2a943d14328b6519f158d1057a6ad2b09f493f7ba124c95d8500d24239ab7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
