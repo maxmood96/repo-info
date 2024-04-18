@@ -1,7 +1,7 @@
 ## `irssi:alpine`
 
 ```console
-$ docker pull irssi@sha256:0ceafb7e23e5f221cde61aeaacf1922c944b51717a3ee5a2396995302aaa4616
+$ docker pull irssi@sha256:d9b9697afa9ddc9f7f004715f9d4cd45429b813a3fa997a29f62ad58e9498298
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
