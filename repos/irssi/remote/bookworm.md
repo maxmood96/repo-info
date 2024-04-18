@@ -1,7 +1,7 @@
 ## `irssi:bookworm`
 
 ```console
-$ docker pull irssi@sha256:aa364cae9a00d593f91f3bf33e20ec0652418f2415499ef9dda35b7a0ef3af9c
+$ docker pull irssi@sha256:574ed08de830969fc61449a6e13cc80b0bd4507eb8baef30496dee5b09a59a10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

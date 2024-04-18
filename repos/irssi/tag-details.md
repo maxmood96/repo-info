@@ -22,7 +22,7 @@
 ## `irssi:1`
 
 ```console
-$ docker pull irssi@sha256:aa364cae9a00d593f91f3bf33e20ec0652418f2415499ef9dda35b7a0ef3af9c
+$ docker pull irssi@sha256:574ed08de830969fc61449a6e13cc80b0bd4507eb8baef30496dee5b09a59a10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -707,7 +707,7 @@ $ docker pull irssi@sha256:47f6775d6773f78e14b5b50a7d2d3960fc0a90c99fa59fc8ae842
 ## `irssi:1-alpine`
 
 ```console
-$ docker pull irssi@sha256:5030f65c07d60b5f62254827cb2cf9816aeb1acbcd4ae02bf1fc99a047d5f494
+$ docker pull irssi@sha256:0ceafb7e23e5f221cde61aeaacf1922c944b51717a3ee5a2396995302aaa4616
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1307,7 +1307,7 @@ $ docker pull irssi@sha256:22a0c93167fe07cd53d1327ddb6dbb3e64592771f6860982e3ad6
 ## `irssi:1-alpine3.18`
 
 ```console
-$ docker pull irssi@sha256:5030f65c07d60b5f62254827cb2cf9816aeb1acbcd4ae02bf1fc99a047d5f494
+$ docker pull irssi@sha256:0ceafb7e23e5f221cde61aeaacf1922c944b51717a3ee5a2396995302aaa4616
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1907,7 +1907,7 @@ $ docker pull irssi@sha256:22a0c93167fe07cd53d1327ddb6dbb3e64592771f6860982e3ad6
 ## `irssi:1-bookworm`
 
 ```console
-$ docker pull irssi@sha256:aa364cae9a00d593f91f3bf33e20ec0652418f2415499ef9dda35b7a0ef3af9c
+$ docker pull irssi@sha256:574ed08de830969fc61449a6e13cc80b0bd4507eb8baef30496dee5b09a59a10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2592,7 +2592,7 @@ $ docker pull irssi@sha256:47f6775d6773f78e14b5b50a7d2d3960fc0a90c99fa59fc8ae842
 ## `irssi:1.4`
 
 ```console
-$ docker pull irssi@sha256:aa364cae9a00d593f91f3bf33e20ec0652418f2415499ef9dda35b7a0ef3af9c
+$ docker pull irssi@sha256:574ed08de830969fc61449a6e13cc80b0bd4507eb8baef30496dee5b09a59a10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3277,7 +3277,7 @@ $ docker pull irssi@sha256:47f6775d6773f78e14b5b50a7d2d3960fc0a90c99fa59fc8ae842
 ## `irssi:1.4-alpine`
 
 ```console
-$ docker pull irssi@sha256:5030f65c07d60b5f62254827cb2cf9816aeb1acbcd4ae02bf1fc99a047d5f494
+$ docker pull irssi@sha256:0ceafb7e23e5f221cde61aeaacf1922c944b51717a3ee5a2396995302aaa4616
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3877,7 +3877,7 @@ $ docker pull irssi@sha256:22a0c93167fe07cd53d1327ddb6dbb3e64592771f6860982e3ad6
 ## `irssi:1.4-alpine3.18`
 
 ```console
-$ docker pull irssi@sha256:5030f65c07d60b5f62254827cb2cf9816aeb1acbcd4ae02bf1fc99a047d5f494
+$ docker pull irssi@sha256:0ceafb7e23e5f221cde61aeaacf1922c944b51717a3ee5a2396995302aaa4616
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4477,7 +4477,7 @@ $ docker pull irssi@sha256:22a0c93167fe07cd53d1327ddb6dbb3e64592771f6860982e3ad6
 ## `irssi:1.4-bookworm`
 
 ```console
-$ docker pull irssi@sha256:aa364cae9a00d593f91f3bf33e20ec0652418f2415499ef9dda35b7a0ef3af9c
+$ docker pull irssi@sha256:574ed08de830969fc61449a6e13cc80b0bd4507eb8baef30496dee5b09a59a10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5162,7 +5162,7 @@ $ docker pull irssi@sha256:47f6775d6773f78e14b5b50a7d2d3960fc0a90c99fa59fc8ae842
 ## `irssi:1.4.5`
 
 ```console
-$ docker pull irssi@sha256:aa364cae9a00d593f91f3bf33e20ec0652418f2415499ef9dda35b7a0ef3af9c
+$ docker pull irssi@sha256:574ed08de830969fc61449a6e13cc80b0bd4507eb8baef30496dee5b09a59a10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5847,7 +5847,7 @@ $ docker pull irssi@sha256:47f6775d6773f78e14b5b50a7d2d3960fc0a90c99fa59fc8ae842
 ## `irssi:1.4.5-alpine`
 
 ```console
-$ docker pull irssi@sha256:5030f65c07d60b5f62254827cb2cf9816aeb1acbcd4ae02bf1fc99a047d5f494
+$ docker pull irssi@sha256:0ceafb7e23e5f221cde61aeaacf1922c944b51717a3ee5a2396995302aaa4616
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6447,7 +6447,7 @@ $ docker pull irssi@sha256:22a0c93167fe07cd53d1327ddb6dbb3e64592771f6860982e3ad6
 ## `irssi:1.4.5-alpine3.18`
 
 ```console
-$ docker pull irssi@sha256:5030f65c07d60b5f62254827cb2cf9816aeb1acbcd4ae02bf1fc99a047d5f494
+$ docker pull irssi@sha256:0ceafb7e23e5f221cde61aeaacf1922c944b51717a3ee5a2396995302aaa4616
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7047,7 +7047,7 @@ $ docker pull irssi@sha256:22a0c93167fe07cd53d1327ddb6dbb3e64592771f6860982e3ad6
 ## `irssi:1.4.5-bookworm`
 
 ```console
-$ docker pull irssi@sha256:aa364cae9a00d593f91f3bf33e20ec0652418f2415499ef9dda35b7a0ef3af9c
+$ docker pull irssi@sha256:574ed08de830969fc61449a6e13cc80b0bd4507eb8baef30496dee5b09a59a10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7732,7 +7732,7 @@ $ docker pull irssi@sha256:47f6775d6773f78e14b5b50a7d2d3960fc0a90c99fa59fc8ae842
 ## `irssi:alpine`
 
 ```console
-$ docker pull irssi@sha256:5030f65c07d60b5f62254827cb2cf9816aeb1acbcd4ae02bf1fc99a047d5f494
+$ docker pull irssi@sha256:0ceafb7e23e5f221cde61aeaacf1922c944b51717a3ee5a2396995302aaa4616
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8332,7 +8332,7 @@ $ docker pull irssi@sha256:22a0c93167fe07cd53d1327ddb6dbb3e64592771f6860982e3ad6
 ## `irssi:alpine3.18`
 
 ```console
-$ docker pull irssi@sha256:5030f65c07d60b5f62254827cb2cf9816aeb1acbcd4ae02bf1fc99a047d5f494
+$ docker pull irssi@sha256:0ceafb7e23e5f221cde61aeaacf1922c944b51717a3ee5a2396995302aaa4616
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8932,7 +8932,7 @@ $ docker pull irssi@sha256:22a0c93167fe07cd53d1327ddb6dbb3e64592771f6860982e3ad6
 ## `irssi:bookworm`
 
 ```console
-$ docker pull irssi@sha256:aa364cae9a00d593f91f3bf33e20ec0652418f2415499ef9dda35b7a0ef3af9c
+$ docker pull irssi@sha256:574ed08de830969fc61449a6e13cc80b0bd4507eb8baef30496dee5b09a59a10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9617,7 +9617,7 @@ $ docker pull irssi@sha256:47f6775d6773f78e14b5b50a7d2d3960fc0a90c99fa59fc8ae842
 ## `irssi:latest`
 
 ```console
-$ docker pull irssi@sha256:aa364cae9a00d593f91f3bf33e20ec0652418f2415499ef9dda35b7a0ef3af9c
+$ docker pull irssi@sha256:574ed08de830969fc61449a6e13cc80b0bd4507eb8baef30496dee5b09a59a10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
