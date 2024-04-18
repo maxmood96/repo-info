@@ -22,7 +22,7 @@
 ## `memcached:1`
 
 ```console
-$ docker pull memcached@sha256:82625260027aa4d419f83100abf7e9dc83d1b841af276c0dc808cd911a1dbda0
+$ docker pull memcached@sha256:0d201d2fd4541f7f4d217feb676e98bae2fa1862968dc88557e9317ac9b3b258
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -699,7 +699,7 @@ $ docker pull memcached@sha256:64eae8898cc85e910111e89e74db50996e4c2c5fc4a5172d3
 ## `memcached:1-alpine`
 
 ```console
-$ docker pull memcached@sha256:9177d35a8e2b4224b2b99ec2930a8dc58f7c5af74a6b8143ae907fe9b11463d4
+$ docker pull memcached@sha256:8906e7654a202d07e6b1bd6a1382b309e718feb9084987c365337ec8161ccaab
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1188,7 +1188,7 @@ $ docker pull memcached@sha256:ecba7487095ee7d9a4ab5dc74ce4e434f1a2d8056d87a5a2d
 ## `memcached:1-alpine3.19`
 
 ```console
-$ docker pull memcached@sha256:9177d35a8e2b4224b2b99ec2930a8dc58f7c5af74a6b8143ae907fe9b11463d4
+$ docker pull memcached@sha256:8906e7654a202d07e6b1bd6a1382b309e718feb9084987c365337ec8161ccaab
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1677,7 +1677,7 @@ $ docker pull memcached@sha256:ecba7487095ee7d9a4ab5dc74ce4e434f1a2d8056d87a5a2d
 ## `memcached:1-bookworm`
 
 ```console
-$ docker pull memcached@sha256:82625260027aa4d419f83100abf7e9dc83d1b841af276c0dc808cd911a1dbda0
+$ docker pull memcached@sha256:0d201d2fd4541f7f4d217feb676e98bae2fa1862968dc88557e9317ac9b3b258
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2354,7 +2354,7 @@ $ docker pull memcached@sha256:64eae8898cc85e910111e89e74db50996e4c2c5fc4a5172d3
 ## `memcached:1.6`
 
 ```console
-$ docker pull memcached@sha256:82625260027aa4d419f83100abf7e9dc83d1b841af276c0dc808cd911a1dbda0
+$ docker pull memcached@sha256:0d201d2fd4541f7f4d217feb676e98bae2fa1862968dc88557e9317ac9b3b258
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3031,7 +3031,7 @@ $ docker pull memcached@sha256:64eae8898cc85e910111e89e74db50996e4c2c5fc4a5172d3
 ## `memcached:1.6-alpine`
 
 ```console
-$ docker pull memcached@sha256:9177d35a8e2b4224b2b99ec2930a8dc58f7c5af74a6b8143ae907fe9b11463d4
+$ docker pull memcached@sha256:8906e7654a202d07e6b1bd6a1382b309e718feb9084987c365337ec8161ccaab
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3520,7 +3520,7 @@ $ docker pull memcached@sha256:ecba7487095ee7d9a4ab5dc74ce4e434f1a2d8056d87a5a2d
 ## `memcached:1.6-alpine3.19`
 
 ```console
-$ docker pull memcached@sha256:9177d35a8e2b4224b2b99ec2930a8dc58f7c5af74a6b8143ae907fe9b11463d4
+$ docker pull memcached@sha256:8906e7654a202d07e6b1bd6a1382b309e718feb9084987c365337ec8161ccaab
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4009,7 +4009,7 @@ $ docker pull memcached@sha256:ecba7487095ee7d9a4ab5dc74ce4e434f1a2d8056d87a5a2d
 ## `memcached:1.6-bookworm`
 
 ```console
-$ docker pull memcached@sha256:82625260027aa4d419f83100abf7e9dc83d1b841af276c0dc808cd911a1dbda0
+$ docker pull memcached@sha256:0d201d2fd4541f7f4d217feb676e98bae2fa1862968dc88557e9317ac9b3b258
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4686,7 +4686,7 @@ $ docker pull memcached@sha256:64eae8898cc85e910111e89e74db50996e4c2c5fc4a5172d3
 ## `memcached:1.6.26`
 
 ```console
-$ docker pull memcached@sha256:82625260027aa4d419f83100abf7e9dc83d1b841af276c0dc808cd911a1dbda0
+$ docker pull memcached@sha256:0d201d2fd4541f7f4d217feb676e98bae2fa1862968dc88557e9317ac9b3b258
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5363,7 +5363,7 @@ $ docker pull memcached@sha256:64eae8898cc85e910111e89e74db50996e4c2c5fc4a5172d3
 ## `memcached:1.6.26-alpine`
 
 ```console
-$ docker pull memcached@sha256:9177d35a8e2b4224b2b99ec2930a8dc58f7c5af74a6b8143ae907fe9b11463d4
+$ docker pull memcached@sha256:8906e7654a202d07e6b1bd6a1382b309e718feb9084987c365337ec8161ccaab
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5852,7 +5852,7 @@ $ docker pull memcached@sha256:ecba7487095ee7d9a4ab5dc74ce4e434f1a2d8056d87a5a2d
 ## `memcached:1.6.26-alpine3.19`
 
 ```console
-$ docker pull memcached@sha256:9177d35a8e2b4224b2b99ec2930a8dc58f7c5af74a6b8143ae907fe9b11463d4
+$ docker pull memcached@sha256:8906e7654a202d07e6b1bd6a1382b309e718feb9084987c365337ec8161ccaab
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6341,7 +6341,7 @@ $ docker pull memcached@sha256:ecba7487095ee7d9a4ab5dc74ce4e434f1a2d8056d87a5a2d
 ## `memcached:1.6.26-bookworm`
 
 ```console
-$ docker pull memcached@sha256:82625260027aa4d419f83100abf7e9dc83d1b841af276c0dc808cd911a1dbda0
+$ docker pull memcached@sha256:0d201d2fd4541f7f4d217feb676e98bae2fa1862968dc88557e9317ac9b3b258
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7018,7 +7018,7 @@ $ docker pull memcached@sha256:64eae8898cc85e910111e89e74db50996e4c2c5fc4a5172d3
 ## `memcached:alpine`
 
 ```console
-$ docker pull memcached@sha256:9177d35a8e2b4224b2b99ec2930a8dc58f7c5af74a6b8143ae907fe9b11463d4
+$ docker pull memcached@sha256:8906e7654a202d07e6b1bd6a1382b309e718feb9084987c365337ec8161ccaab
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7507,7 +7507,7 @@ $ docker pull memcached@sha256:ecba7487095ee7d9a4ab5dc74ce4e434f1a2d8056d87a5a2d
 ## `memcached:alpine3.19`
 
 ```console
-$ docker pull memcached@sha256:9177d35a8e2b4224b2b99ec2930a8dc58f7c5af74a6b8143ae907fe9b11463d4
+$ docker pull memcached@sha256:8906e7654a202d07e6b1bd6a1382b309e718feb9084987c365337ec8161ccaab
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7996,7 +7996,7 @@ $ docker pull memcached@sha256:ecba7487095ee7d9a4ab5dc74ce4e434f1a2d8056d87a5a2d
 ## `memcached:bookworm`
 
 ```console
-$ docker pull memcached@sha256:82625260027aa4d419f83100abf7e9dc83d1b841af276c0dc808cd911a1dbda0
+$ docker pull memcached@sha256:0d201d2fd4541f7f4d217feb676e98bae2fa1862968dc88557e9317ac9b3b258
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8673,7 +8673,7 @@ $ docker pull memcached@sha256:64eae8898cc85e910111e89e74db50996e4c2c5fc4a5172d3
 ## `memcached:latest`
 
 ```console
-$ docker pull memcached@sha256:82625260027aa4d419f83100abf7e9dc83d1b841af276c0dc808cd911a1dbda0
+$ docker pull memcached@sha256:0d201d2fd4541f7f4d217feb676e98bae2fa1862968dc88557e9317ac9b3b258
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
