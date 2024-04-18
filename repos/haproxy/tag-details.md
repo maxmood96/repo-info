@@ -70,7 +70,7 @@
 ## `haproxy:2.0`
 
 ```console
-$ docker pull haproxy@sha256:5c757b3a305bf54db93e8c85ea4162870a7251d0da5aff27ef880e5b2925faee
+$ docker pull haproxy@sha256:22c4edc14251d714e040eb710137bb6c2504c9497342b8814f8e748cc7be8336
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -455,7 +455,7 @@ $ docker pull haproxy@sha256:39bda9f3affccc45ddcdad9226b048ed85f55b55bd4ef11815b
 ## `haproxy:2.0-alpine`
 
 ```console
-$ docker pull haproxy@sha256:787422dd8c3aeb2ee375c39491b936237a5a639bd9e04367b7f44930178046ae
+$ docker pull haproxy@sha256:3d3ee83f6251251eeee9f40edc86486049672d7b8a354353c91570b4ea614b5b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1118,7 +1118,7 @@ $ docker pull haproxy@sha256:9cdae503756b2732690240315f13bbd62bb13659c44d8aaf8d4
 ## `haproxy:2.0-alpine3.16`
 
 ```console
-$ docker pull haproxy@sha256:787422dd8c3aeb2ee375c39491b936237a5a639bd9e04367b7f44930178046ae
+$ docker pull haproxy@sha256:3d3ee83f6251251eeee9f40edc86486049672d7b8a354353c91570b4ea614b5b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1781,7 +1781,7 @@ $ docker pull haproxy@sha256:9cdae503756b2732690240315f13bbd62bb13659c44d8aaf8d4
 ## `haproxy:2.0-buster`
 
 ```console
-$ docker pull haproxy@sha256:5c757b3a305bf54db93e8c85ea4162870a7251d0da5aff27ef880e5b2925faee
+$ docker pull haproxy@sha256:22c4edc14251d714e040eb710137bb6c2504c9497342b8814f8e748cc7be8336
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2166,7 +2166,7 @@ $ docker pull haproxy@sha256:39bda9f3affccc45ddcdad9226b048ed85f55b55bd4ef11815b
 ## `haproxy:2.0.35`
 
 ```console
-$ docker pull haproxy@sha256:5c757b3a305bf54db93e8c85ea4162870a7251d0da5aff27ef880e5b2925faee
+$ docker pull haproxy@sha256:22c4edc14251d714e040eb710137bb6c2504c9497342b8814f8e748cc7be8336
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2551,7 +2551,7 @@ $ docker pull haproxy@sha256:39bda9f3affccc45ddcdad9226b048ed85f55b55bd4ef11815b
 ## `haproxy:2.0.35-alpine`
 
 ```console
-$ docker pull haproxy@sha256:787422dd8c3aeb2ee375c39491b936237a5a639bd9e04367b7f44930178046ae
+$ docker pull haproxy@sha256:3d3ee83f6251251eeee9f40edc86486049672d7b8a354353c91570b4ea614b5b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3214,7 +3214,7 @@ $ docker pull haproxy@sha256:9cdae503756b2732690240315f13bbd62bb13659c44d8aaf8d4
 ## `haproxy:2.0.35-alpine3.16`
 
 ```console
-$ docker pull haproxy@sha256:787422dd8c3aeb2ee375c39491b936237a5a639bd9e04367b7f44930178046ae
+$ docker pull haproxy@sha256:3d3ee83f6251251eeee9f40edc86486049672d7b8a354353c91570b4ea614b5b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3877,7 +3877,7 @@ $ docker pull haproxy@sha256:9cdae503756b2732690240315f13bbd62bb13659c44d8aaf8d4
 ## `haproxy:2.0.35-buster`
 
 ```console
-$ docker pull haproxy@sha256:5c757b3a305bf54db93e8c85ea4162870a7251d0da5aff27ef880e5b2925faee
+$ docker pull haproxy@sha256:22c4edc14251d714e040eb710137bb6c2504c9497342b8814f8e748cc7be8336
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4262,7 +4262,7 @@ $ docker pull haproxy@sha256:39bda9f3affccc45ddcdad9226b048ed85f55b55bd4ef11815b
 ## `haproxy:2.2`
 
 ```console
-$ docker pull haproxy@sha256:37f2d8532bacdff12c7471d87d36efcce24eb0d26447addb9153156e08e78904
+$ docker pull haproxy@sha256:339054abee115b369305d8c0b52e761a9440281c73fbb881e291f06ed71b062d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5019,7 +5019,7 @@ $ docker pull haproxy@sha256:5e9cc81545f5aa274b84e464030451f4567286bb3b40c4bd1b5
 ## `haproxy:2.2-alpine`
 
 ```console
-$ docker pull haproxy@sha256:1e373179c8ba52db393d07565349511d91758248a06e11c195f3a91cf2c49334
+$ docker pull haproxy@sha256:20d5eaf7187ede329062d406ad0eb815def443e5c622dab01a047f6d5251d984
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5682,7 +5682,7 @@ $ docker pull haproxy@sha256:54a6f9bd2262e34dfab262b3bb1e539afab840b72377ddbdca1
 ## `haproxy:2.2-alpine3.16`
 
 ```console
-$ docker pull haproxy@sha256:1e373179c8ba52db393d07565349511d91758248a06e11c195f3a91cf2c49334
+$ docker pull haproxy@sha256:20d5eaf7187ede329062d406ad0eb815def443e5c622dab01a047f6d5251d984
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6345,7 +6345,7 @@ $ docker pull haproxy@sha256:54a6f9bd2262e34dfab262b3bb1e539afab840b72377ddbdca1
 ## `haproxy:2.2-bullseye`
 
 ```console
-$ docker pull haproxy@sha256:37f2d8532bacdff12c7471d87d36efcce24eb0d26447addb9153156e08e78904
+$ docker pull haproxy@sha256:339054abee115b369305d8c0b52e761a9440281c73fbb881e291f06ed71b062d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7102,7 +7102,7 @@ $ docker pull haproxy@sha256:5e9cc81545f5aa274b84e464030451f4567286bb3b40c4bd1b5
 ## `haproxy:2.2.33`
 
 ```console
-$ docker pull haproxy@sha256:37f2d8532bacdff12c7471d87d36efcce24eb0d26447addb9153156e08e78904
+$ docker pull haproxy@sha256:339054abee115b369305d8c0b52e761a9440281c73fbb881e291f06ed71b062d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7859,7 +7859,7 @@ $ docker pull haproxy@sha256:5e9cc81545f5aa274b84e464030451f4567286bb3b40c4bd1b5
 ## `haproxy:2.2.33-alpine`
 
 ```console
-$ docker pull haproxy@sha256:1e373179c8ba52db393d07565349511d91758248a06e11c195f3a91cf2c49334
+$ docker pull haproxy@sha256:20d5eaf7187ede329062d406ad0eb815def443e5c622dab01a047f6d5251d984
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8522,7 +8522,7 @@ $ docker pull haproxy@sha256:54a6f9bd2262e34dfab262b3bb1e539afab840b72377ddbdca1
 ## `haproxy:2.2.33-alpine3.16`
 
 ```console
-$ docker pull haproxy@sha256:1e373179c8ba52db393d07565349511d91758248a06e11c195f3a91cf2c49334
+$ docker pull haproxy@sha256:20d5eaf7187ede329062d406ad0eb815def443e5c622dab01a047f6d5251d984
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9185,7 +9185,7 @@ $ docker pull haproxy@sha256:54a6f9bd2262e34dfab262b3bb1e539afab840b72377ddbdca1
 ## `haproxy:2.2.33-bullseye`
 
 ```console
-$ docker pull haproxy@sha256:37f2d8532bacdff12c7471d87d36efcce24eb0d26447addb9153156e08e78904
+$ docker pull haproxy@sha256:339054abee115b369305d8c0b52e761a9440281c73fbb881e291f06ed71b062d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9942,7 +9942,7 @@ $ docker pull haproxy@sha256:5e9cc81545f5aa274b84e464030451f4567286bb3b40c4bd1b5
 ## `haproxy:2.4`
 
 ```console
-$ docker pull haproxy@sha256:b8a127211d66fc4de98b6b2f21cbd7d6195f40f9a242b6b55eca7037b96f5b3d
+$ docker pull haproxy@sha256:666ee4358ba338dcae71618e582b914469761ac3f35de7d3836fda3089cee299
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10667,7 +10667,7 @@ $ docker pull haproxy@sha256:9e4388102f2a06bee65237e24c3b54d7583a37c5865e8bbb4d3
 ## `haproxy:2.4-alpine`
 
 ```console
-$ docker pull haproxy@sha256:9e962a5ec24039413eee43719ae8027f685d1daa0b040621e016cce1f68de41a
+$ docker pull haproxy@sha256:79677da624757ee25805f483c3a649714ef7df7f3b6605d18c0b99821da31095
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11302,7 +11302,7 @@ $ docker pull haproxy@sha256:2fe6ebd80b3503645b90585b2fc17fea397c688b03bb26b12f4
 ## `haproxy:2.4-alpine3.19`
 
 ```console
-$ docker pull haproxy@sha256:9e962a5ec24039413eee43719ae8027f685d1daa0b040621e016cce1f68de41a
+$ docker pull haproxy@sha256:79677da624757ee25805f483c3a649714ef7df7f3b6605d18c0b99821da31095
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11937,7 +11937,7 @@ $ docker pull haproxy@sha256:2fe6ebd80b3503645b90585b2fc17fea397c688b03bb26b12f4
 ## `haproxy:2.4-bookworm`
 
 ```console
-$ docker pull haproxy@sha256:b8a127211d66fc4de98b6b2f21cbd7d6195f40f9a242b6b55eca7037b96f5b3d
+$ docker pull haproxy@sha256:666ee4358ba338dcae71618e582b914469761ac3f35de7d3836fda3089cee299
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12662,7 +12662,7 @@ $ docker pull haproxy@sha256:9e4388102f2a06bee65237e24c3b54d7583a37c5865e8bbb4d3
 ## `haproxy:2.4.26`
 
 ```console
-$ docker pull haproxy@sha256:b8a127211d66fc4de98b6b2f21cbd7d6195f40f9a242b6b55eca7037b96f5b3d
+$ docker pull haproxy@sha256:666ee4358ba338dcae71618e582b914469761ac3f35de7d3836fda3089cee299
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13387,7 +13387,7 @@ $ docker pull haproxy@sha256:9e4388102f2a06bee65237e24c3b54d7583a37c5865e8bbb4d3
 ## `haproxy:2.4.26-alpine`
 
 ```console
-$ docker pull haproxy@sha256:9e962a5ec24039413eee43719ae8027f685d1daa0b040621e016cce1f68de41a
+$ docker pull haproxy@sha256:79677da624757ee25805f483c3a649714ef7df7f3b6605d18c0b99821da31095
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14022,7 +14022,7 @@ $ docker pull haproxy@sha256:2fe6ebd80b3503645b90585b2fc17fea397c688b03bb26b12f4
 ## `haproxy:2.4.26-alpine3.19`
 
 ```console
-$ docker pull haproxy@sha256:9e962a5ec24039413eee43719ae8027f685d1daa0b040621e016cce1f68de41a
+$ docker pull haproxy@sha256:79677da624757ee25805f483c3a649714ef7df7f3b6605d18c0b99821da31095
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14657,7 +14657,7 @@ $ docker pull haproxy@sha256:2fe6ebd80b3503645b90585b2fc17fea397c688b03bb26b12f4
 ## `haproxy:2.4.26-bookworm`
 
 ```console
-$ docker pull haproxy@sha256:b8a127211d66fc4de98b6b2f21cbd7d6195f40f9a242b6b55eca7037b96f5b3d
+$ docker pull haproxy@sha256:666ee4358ba338dcae71618e582b914469761ac3f35de7d3836fda3089cee299
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15382,7 +15382,7 @@ $ docker pull haproxy@sha256:9e4388102f2a06bee65237e24c3b54d7583a37c5865e8bbb4d3
 ## `haproxy:2.6`
 
 ```console
-$ docker pull haproxy@sha256:0bdced6f0d663f9291171f05d70c209f65f7b174daad3904edb2ab94662ea3fd
+$ docker pull haproxy@sha256:e05edb9bd57c5f13e11801125c4a52a69fc85a771aab4f2993b40dbd3b11276f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16107,7 +16107,7 @@ $ docker pull haproxy@sha256:3234deebfcc6828efdfea8fcf091d69536aefb6c85333a3c5e9
 ## `haproxy:2.6-alpine`
 
 ```console
-$ docker pull haproxy@sha256:adfcb36e9027aae7601563a48797330c946d600d0cb721c0527de67829a4e872
+$ docker pull haproxy@sha256:b3d68ed29c22dc10168c76835e4e3a2c7919bb8704a69d48659b1004df1728de
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16742,7 +16742,7 @@ $ docker pull haproxy@sha256:98b6208f93cad881bdf5325bcfb913812e8fba464bf0f10d5ae
 ## `haproxy:2.6-alpine3.19`
 
 ```console
-$ docker pull haproxy@sha256:adfcb36e9027aae7601563a48797330c946d600d0cb721c0527de67829a4e872
+$ docker pull haproxy@sha256:b3d68ed29c22dc10168c76835e4e3a2c7919bb8704a69d48659b1004df1728de
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17377,7 +17377,7 @@ $ docker pull haproxy@sha256:98b6208f93cad881bdf5325bcfb913812e8fba464bf0f10d5ae
 ## `haproxy:2.6-bookworm`
 
 ```console
-$ docker pull haproxy@sha256:0bdced6f0d663f9291171f05d70c209f65f7b174daad3904edb2ab94662ea3fd
+$ docker pull haproxy@sha256:e05edb9bd57c5f13e11801125c4a52a69fc85a771aab4f2993b40dbd3b11276f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18102,7 +18102,7 @@ $ docker pull haproxy@sha256:3234deebfcc6828efdfea8fcf091d69536aefb6c85333a3c5e9
 ## `haproxy:2.6.17`
 
 ```console
-$ docker pull haproxy@sha256:0bdced6f0d663f9291171f05d70c209f65f7b174daad3904edb2ab94662ea3fd
+$ docker pull haproxy@sha256:e05edb9bd57c5f13e11801125c4a52a69fc85a771aab4f2993b40dbd3b11276f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18827,7 +18827,7 @@ $ docker pull haproxy@sha256:3234deebfcc6828efdfea8fcf091d69536aefb6c85333a3c5e9
 ## `haproxy:2.6.17-alpine`
 
 ```console
-$ docker pull haproxy@sha256:adfcb36e9027aae7601563a48797330c946d600d0cb721c0527de67829a4e872
+$ docker pull haproxy@sha256:b3d68ed29c22dc10168c76835e4e3a2c7919bb8704a69d48659b1004df1728de
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19462,7 +19462,7 @@ $ docker pull haproxy@sha256:98b6208f93cad881bdf5325bcfb913812e8fba464bf0f10d5ae
 ## `haproxy:2.6.17-alpine3.19`
 
 ```console
-$ docker pull haproxy@sha256:adfcb36e9027aae7601563a48797330c946d600d0cb721c0527de67829a4e872
+$ docker pull haproxy@sha256:b3d68ed29c22dc10168c76835e4e3a2c7919bb8704a69d48659b1004df1728de
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20097,7 +20097,7 @@ $ docker pull haproxy@sha256:98b6208f93cad881bdf5325bcfb913812e8fba464bf0f10d5ae
 ## `haproxy:2.6.17-bookworm`
 
 ```console
-$ docker pull haproxy@sha256:0bdced6f0d663f9291171f05d70c209f65f7b174daad3904edb2ab94662ea3fd
+$ docker pull haproxy@sha256:e05edb9bd57c5f13e11801125c4a52a69fc85a771aab4f2993b40dbd3b11276f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20822,7 +20822,7 @@ $ docker pull haproxy@sha256:3234deebfcc6828efdfea8fcf091d69536aefb6c85333a3c5e9
 ## `haproxy:2.8`
 
 ```console
-$ docker pull haproxy@sha256:299e90c960f090181247773ec3e325a0cb1893228cd5cafe615c58b88e654abc
+$ docker pull haproxy@sha256:ec18f97e21611916c85cd15c7580f7ea967620362b6ebf76b0d7b4dd9e090365
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21595,7 +21595,7 @@ $ docker pull haproxy@sha256:57d00f5d8cd0bf55c7a60d586f5ac4ab35c12e54b931558ca34
 ## `haproxy:2.8-alpine`
 
 ```console
-$ docker pull haproxy@sha256:ed5c8bc98c5f0aca44c630b65cec169629a7fca51ebc3b0207c7b2208eedd7a4
+$ docker pull haproxy@sha256:4146cfab6486a4ef9230259aa9fd9b1ed4e7acd3d53926958f12fdd9753ad47e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22272,7 +22272,7 @@ $ docker pull haproxy@sha256:e991288e51c947c437fea1f679d6264f458ea0f7f317737b835
 ## `haproxy:2.8-alpine3.19`
 
 ```console
-$ docker pull haproxy@sha256:ed5c8bc98c5f0aca44c630b65cec169629a7fca51ebc3b0207c7b2208eedd7a4
+$ docker pull haproxy@sha256:4146cfab6486a4ef9230259aa9fd9b1ed4e7acd3d53926958f12fdd9753ad47e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22949,7 +22949,7 @@ $ docker pull haproxy@sha256:e991288e51c947c437fea1f679d6264f458ea0f7f317737b835
 ## `haproxy:2.8-bookworm`
 
 ```console
-$ docker pull haproxy@sha256:299e90c960f090181247773ec3e325a0cb1893228cd5cafe615c58b88e654abc
+$ docker pull haproxy@sha256:ec18f97e21611916c85cd15c7580f7ea967620362b6ebf76b0d7b4dd9e090365
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23722,7 +23722,7 @@ $ docker pull haproxy@sha256:57d00f5d8cd0bf55c7a60d586f5ac4ab35c12e54b931558ca34
 ## `haproxy:2.8.9`
 
 ```console
-$ docker pull haproxy@sha256:299e90c960f090181247773ec3e325a0cb1893228cd5cafe615c58b88e654abc
+$ docker pull haproxy@sha256:ec18f97e21611916c85cd15c7580f7ea967620362b6ebf76b0d7b4dd9e090365
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24495,7 +24495,7 @@ $ docker pull haproxy@sha256:57d00f5d8cd0bf55c7a60d586f5ac4ab35c12e54b931558ca34
 ## `haproxy:2.8.9-alpine`
 
 ```console
-$ docker pull haproxy@sha256:ed5c8bc98c5f0aca44c630b65cec169629a7fca51ebc3b0207c7b2208eedd7a4
+$ docker pull haproxy@sha256:4146cfab6486a4ef9230259aa9fd9b1ed4e7acd3d53926958f12fdd9753ad47e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25172,7 +25172,7 @@ $ docker pull haproxy@sha256:e991288e51c947c437fea1f679d6264f458ea0f7f317737b835
 ## `haproxy:2.8.9-alpine3.19`
 
 ```console
-$ docker pull haproxy@sha256:ed5c8bc98c5f0aca44c630b65cec169629a7fca51ebc3b0207c7b2208eedd7a4
+$ docker pull haproxy@sha256:4146cfab6486a4ef9230259aa9fd9b1ed4e7acd3d53926958f12fdd9753ad47e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25849,7 +25849,7 @@ $ docker pull haproxy@sha256:e991288e51c947c437fea1f679d6264f458ea0f7f317737b835
 ## `haproxy:2.8.9-bookworm`
 
 ```console
-$ docker pull haproxy@sha256:299e90c960f090181247773ec3e325a0cb1893228cd5cafe615c58b88e654abc
+$ docker pull haproxy@sha256:ec18f97e21611916c85cd15c7580f7ea967620362b6ebf76b0d7b4dd9e090365
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26622,7 +26622,7 @@ $ docker pull haproxy@sha256:57d00f5d8cd0bf55c7a60d586f5ac4ab35c12e54b931558ca34
 ## `haproxy:2.9`
 
 ```console
-$ docker pull haproxy@sha256:0623183051c67987ab767d0158e8139ec437a678e7bc24278685b61f9f370b44
+$ docker pull haproxy@sha256:82df32a691e11f467c83c2576670498c733907a6cd6722151a77c6580c735dd4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27395,7 +27395,7 @@ $ docker pull haproxy@sha256:846153158fa622de233af6d9ce1bc53a291ce98af9b05e1824b
 ## `haproxy:2.9-alpine`
 
 ```console
-$ docker pull haproxy@sha256:8fc1002e72b9f7baa9d2c97eb6b42756a498e29136af064128a1ed0700fae452
+$ docker pull haproxy@sha256:109bc4b43c6705762257a5f7a3ab07894304fd1e68a3a7127e4af7fb51494ae3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28072,7 +28072,7 @@ $ docker pull haproxy@sha256:e8c189a43216a3c73ccf14ee35ff9e6e19147dfbfe0041b761a
 ## `haproxy:2.9-alpine3.19`
 
 ```console
-$ docker pull haproxy@sha256:8fc1002e72b9f7baa9d2c97eb6b42756a498e29136af064128a1ed0700fae452
+$ docker pull haproxy@sha256:109bc4b43c6705762257a5f7a3ab07894304fd1e68a3a7127e4af7fb51494ae3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28749,7 +28749,7 @@ $ docker pull haproxy@sha256:e8c189a43216a3c73ccf14ee35ff9e6e19147dfbfe0041b761a
 ## `haproxy:2.9-bookworm`
 
 ```console
-$ docker pull haproxy@sha256:0623183051c67987ab767d0158e8139ec437a678e7bc24278685b61f9f370b44
+$ docker pull haproxy@sha256:82df32a691e11f467c83c2576670498c733907a6cd6722151a77c6580c735dd4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29522,7 +29522,7 @@ $ docker pull haproxy@sha256:846153158fa622de233af6d9ce1bc53a291ce98af9b05e1824b
 ## `haproxy:2.9.7`
 
 ```console
-$ docker pull haproxy@sha256:0623183051c67987ab767d0158e8139ec437a678e7bc24278685b61f9f370b44
+$ docker pull haproxy@sha256:82df32a691e11f467c83c2576670498c733907a6cd6722151a77c6580c735dd4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30295,7 +30295,7 @@ $ docker pull haproxy@sha256:846153158fa622de233af6d9ce1bc53a291ce98af9b05e1824b
 ## `haproxy:2.9.7-alpine`
 
 ```console
-$ docker pull haproxy@sha256:8fc1002e72b9f7baa9d2c97eb6b42756a498e29136af064128a1ed0700fae452
+$ docker pull haproxy@sha256:109bc4b43c6705762257a5f7a3ab07894304fd1e68a3a7127e4af7fb51494ae3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30972,7 +30972,7 @@ $ docker pull haproxy@sha256:e8c189a43216a3c73ccf14ee35ff9e6e19147dfbfe0041b761a
 ## `haproxy:2.9.7-alpine3.19`
 
 ```console
-$ docker pull haproxy@sha256:8fc1002e72b9f7baa9d2c97eb6b42756a498e29136af064128a1ed0700fae452
+$ docker pull haproxy@sha256:109bc4b43c6705762257a5f7a3ab07894304fd1e68a3a7127e4af7fb51494ae3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -31649,7 +31649,7 @@ $ docker pull haproxy@sha256:e8c189a43216a3c73ccf14ee35ff9e6e19147dfbfe0041b761a
 ## `haproxy:2.9.7-bookworm`
 
 ```console
-$ docker pull haproxy@sha256:0623183051c67987ab767d0158e8139ec437a678e7bc24278685b61f9f370b44
+$ docker pull haproxy@sha256:82df32a691e11f467c83c2576670498c733907a6cd6722151a77c6580c735dd4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -32422,7 +32422,7 @@ $ docker pull haproxy@sha256:846153158fa622de233af6d9ce1bc53a291ce98af9b05e1824b
 ## `haproxy:3.0-dev`
 
 ```console
-$ docker pull haproxy@sha256:f77cea7b7ff2c5a04f5d87c501adb4561f6ce883df5e443360352780ded4d13e
+$ docker pull haproxy@sha256:12a9d6d41a1824930d7a787e18a28d09024e33bbaf0b49ac68fc2b6f51c3c1db
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33195,7 +33195,7 @@ $ docker pull haproxy@sha256:bd0fd29e9cff19e29be4b7c313c8018e3380f6d75db49f71138
 ## `haproxy:3.0-dev-alpine`
 
 ```console
-$ docker pull haproxy@sha256:32544ccb78643b54e1294578ba613c3a99a5b4f43d7b7c8af4241cac8827b209
+$ docker pull haproxy@sha256:fe3e8d66b135e0d547ebd178d89022ec4e883ae48c3aab5b0d56236a2d172f83
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33872,7 +33872,7 @@ $ docker pull haproxy@sha256:ed815f9c36a0dc538bdab62c06822a500a798b3ad093c2c309e
 ## `haproxy:3.0-dev-alpine3.19`
 
 ```console
-$ docker pull haproxy@sha256:32544ccb78643b54e1294578ba613c3a99a5b4f43d7b7c8af4241cac8827b209
+$ docker pull haproxy@sha256:fe3e8d66b135e0d547ebd178d89022ec4e883ae48c3aab5b0d56236a2d172f83
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -34549,7 +34549,7 @@ $ docker pull haproxy@sha256:ed815f9c36a0dc538bdab62c06822a500a798b3ad093c2c309e
 ## `haproxy:3.0-dev-bookworm`
 
 ```console
-$ docker pull haproxy@sha256:f77cea7b7ff2c5a04f5d87c501adb4561f6ce883df5e443360352780ded4d13e
+$ docker pull haproxy@sha256:12a9d6d41a1824930d7a787e18a28d09024e33bbaf0b49ac68fc2b6f51c3c1db
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -35322,7 +35322,7 @@ $ docker pull haproxy@sha256:bd0fd29e9cff19e29be4b7c313c8018e3380f6d75db49f71138
 ## `haproxy:3.0-dev7`
 
 ```console
-$ docker pull haproxy@sha256:f77cea7b7ff2c5a04f5d87c501adb4561f6ce883df5e443360352780ded4d13e
+$ docker pull haproxy@sha256:12a9d6d41a1824930d7a787e18a28d09024e33bbaf0b49ac68fc2b6f51c3c1db
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -36095,7 +36095,7 @@ $ docker pull haproxy@sha256:bd0fd29e9cff19e29be4b7c313c8018e3380f6d75db49f71138
 ## `haproxy:3.0-dev7-alpine`
 
 ```console
-$ docker pull haproxy@sha256:32544ccb78643b54e1294578ba613c3a99a5b4f43d7b7c8af4241cac8827b209
+$ docker pull haproxy@sha256:fe3e8d66b135e0d547ebd178d89022ec4e883ae48c3aab5b0d56236a2d172f83
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -36772,7 +36772,7 @@ $ docker pull haproxy@sha256:ed815f9c36a0dc538bdab62c06822a500a798b3ad093c2c309e
 ## `haproxy:3.0-dev7-alpine3.19`
 
 ```console
-$ docker pull haproxy@sha256:32544ccb78643b54e1294578ba613c3a99a5b4f43d7b7c8af4241cac8827b209
+$ docker pull haproxy@sha256:fe3e8d66b135e0d547ebd178d89022ec4e883ae48c3aab5b0d56236a2d172f83
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -37449,7 +37449,7 @@ $ docker pull haproxy@sha256:ed815f9c36a0dc538bdab62c06822a500a798b3ad093c2c309e
 ## `haproxy:3.0-dev7-bookworm`
 
 ```console
-$ docker pull haproxy@sha256:f77cea7b7ff2c5a04f5d87c501adb4561f6ce883df5e443360352780ded4d13e
+$ docker pull haproxy@sha256:12a9d6d41a1824930d7a787e18a28d09024e33bbaf0b49ac68fc2b6f51c3c1db
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -38222,7 +38222,7 @@ $ docker pull haproxy@sha256:bd0fd29e9cff19e29be4b7c313c8018e3380f6d75db49f71138
 ## `haproxy:alpine`
 
 ```console
-$ docker pull haproxy@sha256:8fc1002e72b9f7baa9d2c97eb6b42756a498e29136af064128a1ed0700fae452
+$ docker pull haproxy@sha256:109bc4b43c6705762257a5f7a3ab07894304fd1e68a3a7127e4af7fb51494ae3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -38899,7 +38899,7 @@ $ docker pull haproxy@sha256:e8c189a43216a3c73ccf14ee35ff9e6e19147dfbfe0041b761a
 ## `haproxy:alpine3.19`
 
 ```console
-$ docker pull haproxy@sha256:8fc1002e72b9f7baa9d2c97eb6b42756a498e29136af064128a1ed0700fae452
+$ docker pull haproxy@sha256:109bc4b43c6705762257a5f7a3ab07894304fd1e68a3a7127e4af7fb51494ae3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -39576,7 +39576,7 @@ $ docker pull haproxy@sha256:e8c189a43216a3c73ccf14ee35ff9e6e19147dfbfe0041b761a
 ## `haproxy:bookworm`
 
 ```console
-$ docker pull haproxy@sha256:0623183051c67987ab767d0158e8139ec437a678e7bc24278685b61f9f370b44
+$ docker pull haproxy@sha256:82df32a691e11f467c83c2576670498c733907a6cd6722151a77c6580c735dd4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -40349,7 +40349,7 @@ $ docker pull haproxy@sha256:846153158fa622de233af6d9ce1bc53a291ce98af9b05e1824b
 ## `haproxy:latest`
 
 ```console
-$ docker pull haproxy@sha256:0623183051c67987ab767d0158e8139ec437a678e7bc24278685b61f9f370b44
+$ docker pull haproxy@sha256:82df32a691e11f467c83c2576670498c733907a6cd6722151a77c6580c735dd4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -41122,7 +41122,7 @@ $ docker pull haproxy@sha256:846153158fa622de233af6d9ce1bc53a291ce98af9b05e1824b
 ## `haproxy:lts`
 
 ```console
-$ docker pull haproxy@sha256:299e90c960f090181247773ec3e325a0cb1893228cd5cafe615c58b88e654abc
+$ docker pull haproxy@sha256:ec18f97e21611916c85cd15c7580f7ea967620362b6ebf76b0d7b4dd9e090365
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -41895,7 +41895,7 @@ $ docker pull haproxy@sha256:57d00f5d8cd0bf55c7a60d586f5ac4ab35c12e54b931558ca34
 ## `haproxy:lts-alpine`
 
 ```console
-$ docker pull haproxy@sha256:ed5c8bc98c5f0aca44c630b65cec169629a7fca51ebc3b0207c7b2208eedd7a4
+$ docker pull haproxy@sha256:4146cfab6486a4ef9230259aa9fd9b1ed4e7acd3d53926958f12fdd9753ad47e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -42572,7 +42572,7 @@ $ docker pull haproxy@sha256:e991288e51c947c437fea1f679d6264f458ea0f7f317737b835
 ## `haproxy:lts-alpine3.19`
 
 ```console
-$ docker pull haproxy@sha256:ed5c8bc98c5f0aca44c630b65cec169629a7fca51ebc3b0207c7b2208eedd7a4
+$ docker pull haproxy@sha256:4146cfab6486a4ef9230259aa9fd9b1ed4e7acd3d53926958f12fdd9753ad47e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -43249,7 +43249,7 @@ $ docker pull haproxy@sha256:e991288e51c947c437fea1f679d6264f458ea0f7f317737b835
 ## `haproxy:lts-bookworm`
 
 ```console
-$ docker pull haproxy@sha256:299e90c960f090181247773ec3e325a0cb1893228cd5cafe615c58b88e654abc
+$ docker pull haproxy@sha256:ec18f97e21611916c85cd15c7580f7ea967620362b6ebf76b0d7b4dd9e090365
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
