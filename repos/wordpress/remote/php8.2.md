@@ -1,7 +1,7 @@
 ## `wordpress:php8.2`
 
 ```console
-$ docker pull wordpress@sha256:607398bc69bbd4d8155d179a5a8d3363e2a21379d9e850f07b68078260ebb4c9
+$ docker pull wordpress@sha256:e054130f1d6ab9b222548472c695b9d34159370001bf53650f7083a32847d926
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
