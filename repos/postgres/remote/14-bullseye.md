@@ -1,7 +1,7 @@
 ## `postgres:14-bullseye`
 
 ```console
-$ docker pull postgres@sha256:d7193a7d8c3d30ba784951a0a8443b18392d3f208cdd81d60b7c96b6ba138dc8
+$ docker pull postgres@sha256:632a8f33b43872ce0efebf849ba021aa80b3f7011dcf43dbfce7be8932a3c356
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

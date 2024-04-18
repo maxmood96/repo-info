@@ -1,7 +1,7 @@
 ## `postgres:14-bookworm`
 
 ```console
-$ docker pull postgres@sha256:369f1bdcc22fa90fc0fc38f0b462aede1812b604f957d14227a84ffc89d85df5
+$ docker pull postgres@sha256:76966dfaaca6dd8033974da7bafa231432b4139186178467192ae810ebf4bae7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
