@@ -1,7 +1,7 @@
 ## `redmine:alpine`
 
 ```console
-$ docker pull redmine@sha256:426811257fb64db29af2341f7571f0fd38581a6b8d8aec9e18bdce53ea50e2ff
+$ docker pull redmine@sha256:5c1733b2dbafe14af6e9bee2ac744716c6182b19fadcd951a096ef56688dfef7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

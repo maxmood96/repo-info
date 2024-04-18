@@ -1,7 +1,7 @@
 ## `redmine:bookworm`
 
 ```console
-$ docker pull redmine@sha256:6fe9deaf1d8542b0a4b4b4d72549b6fb3ce2b17bc0724fd6addca0f5be53baac
+$ docker pull redmine@sha256:bd4c39e18acef6b4d0d3afab2d9d8ca046ee6f7b0275132c80ba976e1babf974
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
