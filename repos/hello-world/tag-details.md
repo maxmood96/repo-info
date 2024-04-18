@@ -11,7 +11,7 @@
 ## `hello-world:latest`
 
 ```console
-$ docker pull hello-world@sha256:79355e7e1e61fb3d3281e482b298c732b2552e67990d17b0cc4ee636872fa215
+$ docker pull hello-world@sha256:91bc16c380fe750bcab6a4fd29c55940a7967379663693ec9f4749d3878cd939
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -588,7 +588,7 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 ## `hello-world:linux`
 
 ```console
-$ docker pull hello-world@sha256:fc5fd4759ce512db28c5aef0b0cc3b793e76b88ef0f3be831fd5ffbdf9527820
+$ docker pull hello-world@sha256:46977346ceccec6151a32f7fe4e0abc234fa7c3157e783d2c26358eebcef9584
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
