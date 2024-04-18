@@ -1,7 +1,7 @@
 ## `drupal:7-php8.1-fpm-alpine3.18`
 
 ```console
-$ docker pull drupal@sha256:0fa82d219087a26a7254b9722334af43787a8a939686f9d5282f7796f2907713
+$ docker pull drupal@sha256:ca0952d882ee429f17bc1a1ae1242ff7066062d38a6056cd143e7477cab58b10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

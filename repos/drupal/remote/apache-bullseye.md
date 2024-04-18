@@ -1,7 +1,7 @@
 ## `drupal:apache-bullseye`
 
 ```console
-$ docker pull drupal@sha256:866bacb6f238eaf5c0ff5b34c8e7e8490cdbb57786b7f0db90d9ba1ce191baef
+$ docker pull drupal@sha256:7987ff1613bfa42675780544cffddf25262b19eb66b282c159189ae674733740
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
