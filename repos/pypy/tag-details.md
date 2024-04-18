@@ -195,7 +195,7 @@
 ## `pypy:2`
 
 ```console
-$ docker pull pypy@sha256:23ef16bf9892373cf172c58a00d246d5f60ab60c10f8c4eabd64ae5ed9a65c7a
+$ docker pull pypy@sha256:9120aa6658ac7a43b710e5f95c0209a20bb5ed579ae72e07182c5de4b7c0a4ff
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -685,7 +685,7 @@ CMD ["pypy"]
 ## `pypy:2-7`
 
 ```console
-$ docker pull pypy@sha256:23ef16bf9892373cf172c58a00d246d5f60ab60c10f8c4eabd64ae5ed9a65c7a
+$ docker pull pypy@sha256:9120aa6658ac7a43b710e5f95c0209a20bb5ed579ae72e07182c5de4b7c0a4ff
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1175,7 +1175,7 @@ CMD ["pypy"]
 ## `pypy:2-7-bookworm`
 
 ```console
-$ docker pull pypy@sha256:dd52d545ede9e66ab8513b89406c6df2af475780248cb821578dba74efb0c37c
+$ docker pull pypy@sha256:315e9e8d39ad87a48e11c58241ee3e046713e372750e71f762bde7130f07fd16
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1481,7 +1481,7 @@ $ docker pull pypy@sha256:5fc7d431aad4e35c7338c9e3b40d64c75de3e42df8166513dec2ee
 ## `pypy:2-7-bullseye`
 
 ```console
-$ docker pull pypy@sha256:130558e1a851d006799157e02c1353d541e20626854c52bd9d1f5126595a7870
+$ docker pull pypy@sha256:f762a30a3a13f0366788bd9289084dea8e0682804abe0280b81e982301ec5d31
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1787,7 +1787,7 @@ $ docker pull pypy@sha256:8689ecdbaac9dbb8516f1dac1a8f391658aa2557ff687b6d2609a5
 ## `pypy:2-7-slim`
 
 ```console
-$ docker pull pypy@sha256:e6ec15e0ba496a6ccdf07226b5c0f607127d32cf31d7a4b6b62ba1689a5d15e0
+$ docker pull pypy@sha256:c32a28f2174d639b7e40979b422676f2d3b0498ef7441cfd1384c7bf8885ff48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2039,7 +2039,7 @@ $ docker pull pypy@sha256:6ad8921630825326f74a3eb26e4e26a68ca845a6d363a823fcadf6
 ## `pypy:2-7-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:397d9902f61515189d55ebbf21b390f51ec4a917b66700a6a6dba83a9354a73e
+$ docker pull pypy@sha256:bd669b54a6fd4adce4486b55ce3ab936fca8e70b8598e9961f4fc2f3c5a54cd7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2291,7 +2291,7 @@ $ docker pull pypy@sha256:07c917e0a06dbcad226d1328350a99d5f19a29733143169c9b9430
 ## `pypy:2-7-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:e6ec15e0ba496a6ccdf07226b5c0f607127d32cf31d7a4b6b62ba1689a5d15e0
+$ docker pull pypy@sha256:c32a28f2174d639b7e40979b422676f2d3b0498ef7441cfd1384c7bf8885ff48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2938,7 +2938,7 @@ CMD ["pypy"]
 ## `pypy:2-7.3`
 
 ```console
-$ docker pull pypy@sha256:23ef16bf9892373cf172c58a00d246d5f60ab60c10f8c4eabd64ae5ed9a65c7a
+$ docker pull pypy@sha256:9120aa6658ac7a43b710e5f95c0209a20bb5ed579ae72e07182c5de4b7c0a4ff
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3428,7 +3428,7 @@ CMD ["pypy"]
 ## `pypy:2-7.3-bookworm`
 
 ```console
-$ docker pull pypy@sha256:dd52d545ede9e66ab8513b89406c6df2af475780248cb821578dba74efb0c37c
+$ docker pull pypy@sha256:315e9e8d39ad87a48e11c58241ee3e046713e372750e71f762bde7130f07fd16
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3734,7 +3734,7 @@ $ docker pull pypy@sha256:5fc7d431aad4e35c7338c9e3b40d64c75de3e42df8166513dec2ee
 ## `pypy:2-7.3-bullseye`
 
 ```console
-$ docker pull pypy@sha256:130558e1a851d006799157e02c1353d541e20626854c52bd9d1f5126595a7870
+$ docker pull pypy@sha256:f762a30a3a13f0366788bd9289084dea8e0682804abe0280b81e982301ec5d31
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4040,7 +4040,7 @@ $ docker pull pypy@sha256:8689ecdbaac9dbb8516f1dac1a8f391658aa2557ff687b6d2609a5
 ## `pypy:2-7.3-slim`
 
 ```console
-$ docker pull pypy@sha256:e6ec15e0ba496a6ccdf07226b5c0f607127d32cf31d7a4b6b62ba1689a5d15e0
+$ docker pull pypy@sha256:c32a28f2174d639b7e40979b422676f2d3b0498ef7441cfd1384c7bf8885ff48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4292,7 +4292,7 @@ $ docker pull pypy@sha256:6ad8921630825326f74a3eb26e4e26a68ca845a6d363a823fcadf6
 ## `pypy:2-7.3-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:397d9902f61515189d55ebbf21b390f51ec4a917b66700a6a6dba83a9354a73e
+$ docker pull pypy@sha256:bd669b54a6fd4adce4486b55ce3ab936fca8e70b8598e9961f4fc2f3c5a54cd7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4544,7 +4544,7 @@ $ docker pull pypy@sha256:07c917e0a06dbcad226d1328350a99d5f19a29733143169c9b9430
 ## `pypy:2-7.3-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:e6ec15e0ba496a6ccdf07226b5c0f607127d32cf31d7a4b6b62ba1689a5d15e0
+$ docker pull pypy@sha256:c32a28f2174d639b7e40979b422676f2d3b0498ef7441cfd1384c7bf8885ff48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5191,7 +5191,7 @@ CMD ["pypy"]
 ## `pypy:2-7.3.15`
 
 ```console
-$ docker pull pypy@sha256:23ef16bf9892373cf172c58a00d246d5f60ab60c10f8c4eabd64ae5ed9a65c7a
+$ docker pull pypy@sha256:9120aa6658ac7a43b710e5f95c0209a20bb5ed579ae72e07182c5de4b7c0a4ff
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5681,7 +5681,7 @@ CMD ["pypy"]
 ## `pypy:2-7.3.15-bookworm`
 
 ```console
-$ docker pull pypy@sha256:dd52d545ede9e66ab8513b89406c6df2af475780248cb821578dba74efb0c37c
+$ docker pull pypy@sha256:315e9e8d39ad87a48e11c58241ee3e046713e372750e71f762bde7130f07fd16
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5987,7 +5987,7 @@ $ docker pull pypy@sha256:5fc7d431aad4e35c7338c9e3b40d64c75de3e42df8166513dec2ee
 ## `pypy:2-7.3.15-bullseye`
 
 ```console
-$ docker pull pypy@sha256:130558e1a851d006799157e02c1353d541e20626854c52bd9d1f5126595a7870
+$ docker pull pypy@sha256:f762a30a3a13f0366788bd9289084dea8e0682804abe0280b81e982301ec5d31
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6293,7 +6293,7 @@ $ docker pull pypy@sha256:8689ecdbaac9dbb8516f1dac1a8f391658aa2557ff687b6d2609a5
 ## `pypy:2-7.3.15-slim`
 
 ```console
-$ docker pull pypy@sha256:e6ec15e0ba496a6ccdf07226b5c0f607127d32cf31d7a4b6b62ba1689a5d15e0
+$ docker pull pypy@sha256:c32a28f2174d639b7e40979b422676f2d3b0498ef7441cfd1384c7bf8885ff48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6545,7 +6545,7 @@ $ docker pull pypy@sha256:6ad8921630825326f74a3eb26e4e26a68ca845a6d363a823fcadf6
 ## `pypy:2-7.3.15-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:397d9902f61515189d55ebbf21b390f51ec4a917b66700a6a6dba83a9354a73e
+$ docker pull pypy@sha256:bd669b54a6fd4adce4486b55ce3ab936fca8e70b8598e9961f4fc2f3c5a54cd7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6797,7 +6797,7 @@ $ docker pull pypy@sha256:07c917e0a06dbcad226d1328350a99d5f19a29733143169c9b9430
 ## `pypy:2-7.3.15-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:e6ec15e0ba496a6ccdf07226b5c0f607127d32cf31d7a4b6b62ba1689a5d15e0
+$ docker pull pypy@sha256:c32a28f2174d639b7e40979b422676f2d3b0498ef7441cfd1384c7bf8885ff48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7444,7 +7444,7 @@ CMD ["pypy"]
 ## `pypy:2-bookworm`
 
 ```console
-$ docker pull pypy@sha256:dd52d545ede9e66ab8513b89406c6df2af475780248cb821578dba74efb0c37c
+$ docker pull pypy@sha256:315e9e8d39ad87a48e11c58241ee3e046713e372750e71f762bde7130f07fd16
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7750,7 +7750,7 @@ $ docker pull pypy@sha256:5fc7d431aad4e35c7338c9e3b40d64c75de3e42df8166513dec2ee
 ## `pypy:2-bullseye`
 
 ```console
-$ docker pull pypy@sha256:130558e1a851d006799157e02c1353d541e20626854c52bd9d1f5126595a7870
+$ docker pull pypy@sha256:f762a30a3a13f0366788bd9289084dea8e0682804abe0280b81e982301ec5d31
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8056,7 +8056,7 @@ $ docker pull pypy@sha256:8689ecdbaac9dbb8516f1dac1a8f391658aa2557ff687b6d2609a5
 ## `pypy:2-slim`
 
 ```console
-$ docker pull pypy@sha256:e6ec15e0ba496a6ccdf07226b5c0f607127d32cf31d7a4b6b62ba1689a5d15e0
+$ docker pull pypy@sha256:c32a28f2174d639b7e40979b422676f2d3b0498ef7441cfd1384c7bf8885ff48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8308,7 +8308,7 @@ $ docker pull pypy@sha256:6ad8921630825326f74a3eb26e4e26a68ca845a6d363a823fcadf6
 ## `pypy:2-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:397d9902f61515189d55ebbf21b390f51ec4a917b66700a6a6dba83a9354a73e
+$ docker pull pypy@sha256:bd669b54a6fd4adce4486b55ce3ab936fca8e70b8598e9961f4fc2f3c5a54cd7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8560,7 +8560,7 @@ $ docker pull pypy@sha256:07c917e0a06dbcad226d1328350a99d5f19a29733143169c9b9430
 ## `pypy:2-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:e6ec15e0ba496a6ccdf07226b5c0f607127d32cf31d7a4b6b62ba1689a5d15e0
+$ docker pull pypy@sha256:c32a28f2174d639b7e40979b422676f2d3b0498ef7441cfd1384c7bf8885ff48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9207,7 +9207,7 @@ CMD ["pypy"]
 ## `pypy:2.7`
 
 ```console
-$ docker pull pypy@sha256:23ef16bf9892373cf172c58a00d246d5f60ab60c10f8c4eabd64ae5ed9a65c7a
+$ docker pull pypy@sha256:9120aa6658ac7a43b710e5f95c0209a20bb5ed579ae72e07182c5de4b7c0a4ff
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9697,7 +9697,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7`
 
 ```console
-$ docker pull pypy@sha256:23ef16bf9892373cf172c58a00d246d5f60ab60c10f8c4eabd64ae5ed9a65c7a
+$ docker pull pypy@sha256:9120aa6658ac7a43b710e5f95c0209a20bb5ed579ae72e07182c5de4b7c0a4ff
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10187,7 +10187,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7-bookworm`
 
 ```console
-$ docker pull pypy@sha256:dd52d545ede9e66ab8513b89406c6df2af475780248cb821578dba74efb0c37c
+$ docker pull pypy@sha256:315e9e8d39ad87a48e11c58241ee3e046713e372750e71f762bde7130f07fd16
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10493,7 +10493,7 @@ $ docker pull pypy@sha256:5fc7d431aad4e35c7338c9e3b40d64c75de3e42df8166513dec2ee
 ## `pypy:2.7-7-bullseye`
 
 ```console
-$ docker pull pypy@sha256:130558e1a851d006799157e02c1353d541e20626854c52bd9d1f5126595a7870
+$ docker pull pypy@sha256:f762a30a3a13f0366788bd9289084dea8e0682804abe0280b81e982301ec5d31
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10799,7 +10799,7 @@ $ docker pull pypy@sha256:8689ecdbaac9dbb8516f1dac1a8f391658aa2557ff687b6d2609a5
 ## `pypy:2.7-7-slim`
 
 ```console
-$ docker pull pypy@sha256:e6ec15e0ba496a6ccdf07226b5c0f607127d32cf31d7a4b6b62ba1689a5d15e0
+$ docker pull pypy@sha256:c32a28f2174d639b7e40979b422676f2d3b0498ef7441cfd1384c7bf8885ff48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11051,7 +11051,7 @@ $ docker pull pypy@sha256:6ad8921630825326f74a3eb26e4e26a68ca845a6d363a823fcadf6
 ## `pypy:2.7-7-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:397d9902f61515189d55ebbf21b390f51ec4a917b66700a6a6dba83a9354a73e
+$ docker pull pypy@sha256:bd669b54a6fd4adce4486b55ce3ab936fca8e70b8598e9961f4fc2f3c5a54cd7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11303,7 +11303,7 @@ $ docker pull pypy@sha256:07c917e0a06dbcad226d1328350a99d5f19a29733143169c9b9430
 ## `pypy:2.7-7-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:e6ec15e0ba496a6ccdf07226b5c0f607127d32cf31d7a4b6b62ba1689a5d15e0
+$ docker pull pypy@sha256:c32a28f2174d639b7e40979b422676f2d3b0498ef7441cfd1384c7bf8885ff48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11950,7 +11950,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.3`
 
 ```console
-$ docker pull pypy@sha256:23ef16bf9892373cf172c58a00d246d5f60ab60c10f8c4eabd64ae5ed9a65c7a
+$ docker pull pypy@sha256:9120aa6658ac7a43b710e5f95c0209a20bb5ed579ae72e07182c5de4b7c0a4ff
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12440,7 +12440,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.3-bookworm`
 
 ```console
-$ docker pull pypy@sha256:dd52d545ede9e66ab8513b89406c6df2af475780248cb821578dba74efb0c37c
+$ docker pull pypy@sha256:315e9e8d39ad87a48e11c58241ee3e046713e372750e71f762bde7130f07fd16
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12746,7 +12746,7 @@ $ docker pull pypy@sha256:5fc7d431aad4e35c7338c9e3b40d64c75de3e42df8166513dec2ee
 ## `pypy:2.7-7.3-bullseye`
 
 ```console
-$ docker pull pypy@sha256:130558e1a851d006799157e02c1353d541e20626854c52bd9d1f5126595a7870
+$ docker pull pypy@sha256:f762a30a3a13f0366788bd9289084dea8e0682804abe0280b81e982301ec5d31
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13052,7 +13052,7 @@ $ docker pull pypy@sha256:8689ecdbaac9dbb8516f1dac1a8f391658aa2557ff687b6d2609a5
 ## `pypy:2.7-7.3-slim`
 
 ```console
-$ docker pull pypy@sha256:e6ec15e0ba496a6ccdf07226b5c0f607127d32cf31d7a4b6b62ba1689a5d15e0
+$ docker pull pypy@sha256:c32a28f2174d639b7e40979b422676f2d3b0498ef7441cfd1384c7bf8885ff48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13304,7 +13304,7 @@ $ docker pull pypy@sha256:6ad8921630825326f74a3eb26e4e26a68ca845a6d363a823fcadf6
 ## `pypy:2.7-7.3-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:397d9902f61515189d55ebbf21b390f51ec4a917b66700a6a6dba83a9354a73e
+$ docker pull pypy@sha256:bd669b54a6fd4adce4486b55ce3ab936fca8e70b8598e9961f4fc2f3c5a54cd7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13556,7 +13556,7 @@ $ docker pull pypy@sha256:07c917e0a06dbcad226d1328350a99d5f19a29733143169c9b9430
 ## `pypy:2.7-7.3-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:e6ec15e0ba496a6ccdf07226b5c0f607127d32cf31d7a4b6b62ba1689a5d15e0
+$ docker pull pypy@sha256:c32a28f2174d639b7e40979b422676f2d3b0498ef7441cfd1384c7bf8885ff48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14203,7 +14203,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.3.15`
 
 ```console
-$ docker pull pypy@sha256:23ef16bf9892373cf172c58a00d246d5f60ab60c10f8c4eabd64ae5ed9a65c7a
+$ docker pull pypy@sha256:9120aa6658ac7a43b710e5f95c0209a20bb5ed579ae72e07182c5de4b7c0a4ff
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14693,7 +14693,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.3.15-bookworm`
 
 ```console
-$ docker pull pypy@sha256:dd52d545ede9e66ab8513b89406c6df2af475780248cb821578dba74efb0c37c
+$ docker pull pypy@sha256:315e9e8d39ad87a48e11c58241ee3e046713e372750e71f762bde7130f07fd16
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14999,7 +14999,7 @@ $ docker pull pypy@sha256:5fc7d431aad4e35c7338c9e3b40d64c75de3e42df8166513dec2ee
 ## `pypy:2.7-7.3.15-bullseye`
 
 ```console
-$ docker pull pypy@sha256:130558e1a851d006799157e02c1353d541e20626854c52bd9d1f5126595a7870
+$ docker pull pypy@sha256:f762a30a3a13f0366788bd9289084dea8e0682804abe0280b81e982301ec5d31
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15305,7 +15305,7 @@ $ docker pull pypy@sha256:8689ecdbaac9dbb8516f1dac1a8f391658aa2557ff687b6d2609a5
 ## `pypy:2.7-7.3.15-slim`
 
 ```console
-$ docker pull pypy@sha256:e6ec15e0ba496a6ccdf07226b5c0f607127d32cf31d7a4b6b62ba1689a5d15e0
+$ docker pull pypy@sha256:c32a28f2174d639b7e40979b422676f2d3b0498ef7441cfd1384c7bf8885ff48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15557,7 +15557,7 @@ $ docker pull pypy@sha256:6ad8921630825326f74a3eb26e4e26a68ca845a6d363a823fcadf6
 ## `pypy:2.7-7.3.15-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:397d9902f61515189d55ebbf21b390f51ec4a917b66700a6a6dba83a9354a73e
+$ docker pull pypy@sha256:bd669b54a6fd4adce4486b55ce3ab936fca8e70b8598e9961f4fc2f3c5a54cd7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15809,7 +15809,7 @@ $ docker pull pypy@sha256:07c917e0a06dbcad226d1328350a99d5f19a29733143169c9b9430
 ## `pypy:2.7-7.3.15-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:e6ec15e0ba496a6ccdf07226b5c0f607127d32cf31d7a4b6b62ba1689a5d15e0
+$ docker pull pypy@sha256:c32a28f2174d639b7e40979b422676f2d3b0498ef7441cfd1384c7bf8885ff48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16456,7 +16456,7 @@ CMD ["pypy"]
 ## `pypy:2.7-bookworm`
 
 ```console
-$ docker pull pypy@sha256:dd52d545ede9e66ab8513b89406c6df2af475780248cb821578dba74efb0c37c
+$ docker pull pypy@sha256:315e9e8d39ad87a48e11c58241ee3e046713e372750e71f762bde7130f07fd16
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16762,7 +16762,7 @@ $ docker pull pypy@sha256:5fc7d431aad4e35c7338c9e3b40d64c75de3e42df8166513dec2ee
 ## `pypy:2.7-bullseye`
 
 ```console
-$ docker pull pypy@sha256:130558e1a851d006799157e02c1353d541e20626854c52bd9d1f5126595a7870
+$ docker pull pypy@sha256:f762a30a3a13f0366788bd9289084dea8e0682804abe0280b81e982301ec5d31
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17068,7 +17068,7 @@ $ docker pull pypy@sha256:8689ecdbaac9dbb8516f1dac1a8f391658aa2557ff687b6d2609a5
 ## `pypy:2.7-slim`
 
 ```console
-$ docker pull pypy@sha256:e6ec15e0ba496a6ccdf07226b5c0f607127d32cf31d7a4b6b62ba1689a5d15e0
+$ docker pull pypy@sha256:c32a28f2174d639b7e40979b422676f2d3b0498ef7441cfd1384c7bf8885ff48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17320,7 +17320,7 @@ $ docker pull pypy@sha256:6ad8921630825326f74a3eb26e4e26a68ca845a6d363a823fcadf6
 ## `pypy:2.7-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:397d9902f61515189d55ebbf21b390f51ec4a917b66700a6a6dba83a9354a73e
+$ docker pull pypy@sha256:bd669b54a6fd4adce4486b55ce3ab936fca8e70b8598e9961f4fc2f3c5a54cd7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17572,7 +17572,7 @@ $ docker pull pypy@sha256:07c917e0a06dbcad226d1328350a99d5f19a29733143169c9b9430
 ## `pypy:2.7-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:e6ec15e0ba496a6ccdf07226b5c0f607127d32cf31d7a4b6b62ba1689a5d15e0
+$ docker pull pypy@sha256:c32a28f2174d639b7e40979b422676f2d3b0498ef7441cfd1384c7bf8885ff48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18219,7 +18219,7 @@ CMD ["pypy"]
 ## `pypy:3`
 
 ```console
-$ docker pull pypy@sha256:31b40390969911bcafd114fb6b29ad70a1d04e033b40a4123228daf3e8ebdc95
+$ docker pull pypy@sha256:77a4870d27fba491f5942e1d5250edf354bb0993e677d641f9ba56364453333d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18697,7 +18697,7 @@ CMD ["pypy"]
 ## `pypy:3-7`
 
 ```console
-$ docker pull pypy@sha256:31b40390969911bcafd114fb6b29ad70a1d04e033b40a4123228daf3e8ebdc95
+$ docker pull pypy@sha256:77a4870d27fba491f5942e1d5250edf354bb0993e677d641f9ba56364453333d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19175,7 +19175,7 @@ CMD ["pypy"]
 ## `pypy:3-7-bookworm`
 
 ```console
-$ docker pull pypy@sha256:977232494c5642c73161370f7749a6fd5a3fec8df30e5a73929f48b9b282a79f
+$ docker pull pypy@sha256:72c5c8bfc543f3cca7e47d81cb267ba46a593527168f8fb07e0d1ba71975c8b5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19481,7 +19481,7 @@ $ docker pull pypy@sha256:1b7faad2934914074c0cb27ea2aa24361b63b47cc353ccacc9b8db
 ## `pypy:3-7-bullseye`
 
 ```console
-$ docker pull pypy@sha256:e8d81268175ae324398712354066bd770eae2f4a08ab241b5318a3f05e750529
+$ docker pull pypy@sha256:438da6a9fa768baec5ec631612a68b8bace20555a89209f047194bb19bf01365
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19787,7 +19787,7 @@ $ docker pull pypy@sha256:d5ec2285fb7dd58a09a0880d68a10e97a800e6b40faa2ffef2e3bc
 ## `pypy:3-7-slim`
 
 ```console
-$ docker pull pypy@sha256:271850703e037a0bfb82c335770d5eb850db36c982da2dea6bea46bebf838730
+$ docker pull pypy@sha256:3ad8dceee07bcaf7486a90785c40449c621d89ac12b7ba00458b3a6e5bafbe95
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20039,7 +20039,7 @@ $ docker pull pypy@sha256:f958777e8342bb9890418d97e519a8a6e3cbf0814937bc6c510eee
 ## `pypy:3-7-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:8ae23f25ccab065a20f0b13aefacfb529d4b592dbbd2550487d8a900ee1b3e53
+$ docker pull pypy@sha256:38b4e55ed5f9a1c1cc7085f400e9699625a092681430b6b7ef4c6d38f48136cd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20291,7 +20291,7 @@ $ docker pull pypy@sha256:d26b6290875b47a57aed024f70cf90c2a05473d78515ab28598f16
 ## `pypy:3-7-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:271850703e037a0bfb82c335770d5eb850db36c982da2dea6bea46bebf838730
+$ docker pull pypy@sha256:3ad8dceee07bcaf7486a90785c40449c621d89ac12b7ba00458b3a6e5bafbe95
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20914,7 +20914,7 @@ CMD ["pypy"]
 ## `pypy:3-7.3`
 
 ```console
-$ docker pull pypy@sha256:31b40390969911bcafd114fb6b29ad70a1d04e033b40a4123228daf3e8ebdc95
+$ docker pull pypy@sha256:77a4870d27fba491f5942e1d5250edf354bb0993e677d641f9ba56364453333d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21392,7 +21392,7 @@ CMD ["pypy"]
 ## `pypy:3-7.3-bookworm`
 
 ```console
-$ docker pull pypy@sha256:977232494c5642c73161370f7749a6fd5a3fec8df30e5a73929f48b9b282a79f
+$ docker pull pypy@sha256:72c5c8bfc543f3cca7e47d81cb267ba46a593527168f8fb07e0d1ba71975c8b5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21698,7 +21698,7 @@ $ docker pull pypy@sha256:1b7faad2934914074c0cb27ea2aa24361b63b47cc353ccacc9b8db
 ## `pypy:3-7.3-bullseye`
 
 ```console
-$ docker pull pypy@sha256:e8d81268175ae324398712354066bd770eae2f4a08ab241b5318a3f05e750529
+$ docker pull pypy@sha256:438da6a9fa768baec5ec631612a68b8bace20555a89209f047194bb19bf01365
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22004,7 +22004,7 @@ $ docker pull pypy@sha256:d5ec2285fb7dd58a09a0880d68a10e97a800e6b40faa2ffef2e3bc
 ## `pypy:3-7.3-slim`
 
 ```console
-$ docker pull pypy@sha256:271850703e037a0bfb82c335770d5eb850db36c982da2dea6bea46bebf838730
+$ docker pull pypy@sha256:3ad8dceee07bcaf7486a90785c40449c621d89ac12b7ba00458b3a6e5bafbe95
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22256,7 +22256,7 @@ $ docker pull pypy@sha256:f958777e8342bb9890418d97e519a8a6e3cbf0814937bc6c510eee
 ## `pypy:3-7.3-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:8ae23f25ccab065a20f0b13aefacfb529d4b592dbbd2550487d8a900ee1b3e53
+$ docker pull pypy@sha256:38b4e55ed5f9a1c1cc7085f400e9699625a092681430b6b7ef4c6d38f48136cd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22508,7 +22508,7 @@ $ docker pull pypy@sha256:d26b6290875b47a57aed024f70cf90c2a05473d78515ab28598f16
 ## `pypy:3-7.3-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:271850703e037a0bfb82c335770d5eb850db36c982da2dea6bea46bebf838730
+$ docker pull pypy@sha256:3ad8dceee07bcaf7486a90785c40449c621d89ac12b7ba00458b3a6e5bafbe95
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23131,7 +23131,7 @@ CMD ["pypy"]
 ## `pypy:3-7.3.15`
 
 ```console
-$ docker pull pypy@sha256:31b40390969911bcafd114fb6b29ad70a1d04e033b40a4123228daf3e8ebdc95
+$ docker pull pypy@sha256:77a4870d27fba491f5942e1d5250edf354bb0993e677d641f9ba56364453333d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23609,7 +23609,7 @@ CMD ["pypy"]
 ## `pypy:3-7.3.15-bookworm`
 
 ```console
-$ docker pull pypy@sha256:977232494c5642c73161370f7749a6fd5a3fec8df30e5a73929f48b9b282a79f
+$ docker pull pypy@sha256:72c5c8bfc543f3cca7e47d81cb267ba46a593527168f8fb07e0d1ba71975c8b5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23915,7 +23915,7 @@ $ docker pull pypy@sha256:1b7faad2934914074c0cb27ea2aa24361b63b47cc353ccacc9b8db
 ## `pypy:3-7.3.15-bullseye`
 
 ```console
-$ docker pull pypy@sha256:e8d81268175ae324398712354066bd770eae2f4a08ab241b5318a3f05e750529
+$ docker pull pypy@sha256:438da6a9fa768baec5ec631612a68b8bace20555a89209f047194bb19bf01365
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24221,7 +24221,7 @@ $ docker pull pypy@sha256:d5ec2285fb7dd58a09a0880d68a10e97a800e6b40faa2ffef2e3bc
 ## `pypy:3-7.3.15-slim`
 
 ```console
-$ docker pull pypy@sha256:271850703e037a0bfb82c335770d5eb850db36c982da2dea6bea46bebf838730
+$ docker pull pypy@sha256:3ad8dceee07bcaf7486a90785c40449c621d89ac12b7ba00458b3a6e5bafbe95
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24473,7 +24473,7 @@ $ docker pull pypy@sha256:f958777e8342bb9890418d97e519a8a6e3cbf0814937bc6c510eee
 ## `pypy:3-7.3.15-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:8ae23f25ccab065a20f0b13aefacfb529d4b592dbbd2550487d8a900ee1b3e53
+$ docker pull pypy@sha256:38b4e55ed5f9a1c1cc7085f400e9699625a092681430b6b7ef4c6d38f48136cd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24725,7 +24725,7 @@ $ docker pull pypy@sha256:d26b6290875b47a57aed024f70cf90c2a05473d78515ab28598f16
 ## `pypy:3-7.3.15-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:271850703e037a0bfb82c335770d5eb850db36c982da2dea6bea46bebf838730
+$ docker pull pypy@sha256:3ad8dceee07bcaf7486a90785c40449c621d89ac12b7ba00458b3a6e5bafbe95
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25348,7 +25348,7 @@ CMD ["pypy"]
 ## `pypy:3-bookworm`
 
 ```console
-$ docker pull pypy@sha256:977232494c5642c73161370f7749a6fd5a3fec8df30e5a73929f48b9b282a79f
+$ docker pull pypy@sha256:72c5c8bfc543f3cca7e47d81cb267ba46a593527168f8fb07e0d1ba71975c8b5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25654,7 +25654,7 @@ $ docker pull pypy@sha256:1b7faad2934914074c0cb27ea2aa24361b63b47cc353ccacc9b8db
 ## `pypy:3-bullseye`
 
 ```console
-$ docker pull pypy@sha256:e8d81268175ae324398712354066bd770eae2f4a08ab241b5318a3f05e750529
+$ docker pull pypy@sha256:438da6a9fa768baec5ec631612a68b8bace20555a89209f047194bb19bf01365
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25960,7 +25960,7 @@ $ docker pull pypy@sha256:d5ec2285fb7dd58a09a0880d68a10e97a800e6b40faa2ffef2e3bc
 ## `pypy:3-slim`
 
 ```console
-$ docker pull pypy@sha256:271850703e037a0bfb82c335770d5eb850db36c982da2dea6bea46bebf838730
+$ docker pull pypy@sha256:3ad8dceee07bcaf7486a90785c40449c621d89ac12b7ba00458b3a6e5bafbe95
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26212,7 +26212,7 @@ $ docker pull pypy@sha256:f958777e8342bb9890418d97e519a8a6e3cbf0814937bc6c510eee
 ## `pypy:3-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:8ae23f25ccab065a20f0b13aefacfb529d4b592dbbd2550487d8a900ee1b3e53
+$ docker pull pypy@sha256:38b4e55ed5f9a1c1cc7085f400e9699625a092681430b6b7ef4c6d38f48136cd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26464,7 +26464,7 @@ $ docker pull pypy@sha256:d26b6290875b47a57aed024f70cf90c2a05473d78515ab28598f16
 ## `pypy:3-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:271850703e037a0bfb82c335770d5eb850db36c982da2dea6bea46bebf838730
+$ docker pull pypy@sha256:3ad8dceee07bcaf7486a90785c40449c621d89ac12b7ba00458b3a6e5bafbe95
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27087,7 +27087,7 @@ CMD ["pypy"]
 ## `pypy:3.10`
 
 ```console
-$ docker pull pypy@sha256:31b40390969911bcafd114fb6b29ad70a1d04e033b40a4123228daf3e8ebdc95
+$ docker pull pypy@sha256:77a4870d27fba491f5942e1d5250edf354bb0993e677d641f9ba56364453333d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27565,7 +27565,7 @@ CMD ["pypy"]
 ## `pypy:3.10-7`
 
 ```console
-$ docker pull pypy@sha256:31b40390969911bcafd114fb6b29ad70a1d04e033b40a4123228daf3e8ebdc95
+$ docker pull pypy@sha256:77a4870d27fba491f5942e1d5250edf354bb0993e677d641f9ba56364453333d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28043,7 +28043,7 @@ CMD ["pypy"]
 ## `pypy:3.10-7-bookworm`
 
 ```console
-$ docker pull pypy@sha256:977232494c5642c73161370f7749a6fd5a3fec8df30e5a73929f48b9b282a79f
+$ docker pull pypy@sha256:72c5c8bfc543f3cca7e47d81cb267ba46a593527168f8fb07e0d1ba71975c8b5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28349,7 +28349,7 @@ $ docker pull pypy@sha256:1b7faad2934914074c0cb27ea2aa24361b63b47cc353ccacc9b8db
 ## `pypy:3.10-7-bullseye`
 
 ```console
-$ docker pull pypy@sha256:e8d81268175ae324398712354066bd770eae2f4a08ab241b5318a3f05e750529
+$ docker pull pypy@sha256:438da6a9fa768baec5ec631612a68b8bace20555a89209f047194bb19bf01365
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28655,7 +28655,7 @@ $ docker pull pypy@sha256:d5ec2285fb7dd58a09a0880d68a10e97a800e6b40faa2ffef2e3bc
 ## `pypy:3.10-7-slim`
 
 ```console
-$ docker pull pypy@sha256:271850703e037a0bfb82c335770d5eb850db36c982da2dea6bea46bebf838730
+$ docker pull pypy@sha256:3ad8dceee07bcaf7486a90785c40449c621d89ac12b7ba00458b3a6e5bafbe95
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28907,7 +28907,7 @@ $ docker pull pypy@sha256:f958777e8342bb9890418d97e519a8a6e3cbf0814937bc6c510eee
 ## `pypy:3.10-7-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:8ae23f25ccab065a20f0b13aefacfb529d4b592dbbd2550487d8a900ee1b3e53
+$ docker pull pypy@sha256:38b4e55ed5f9a1c1cc7085f400e9699625a092681430b6b7ef4c6d38f48136cd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29159,7 +29159,7 @@ $ docker pull pypy@sha256:d26b6290875b47a57aed024f70cf90c2a05473d78515ab28598f16
 ## `pypy:3.10-7-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:271850703e037a0bfb82c335770d5eb850db36c982da2dea6bea46bebf838730
+$ docker pull pypy@sha256:3ad8dceee07bcaf7486a90785c40449c621d89ac12b7ba00458b3a6e5bafbe95
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29782,7 +29782,7 @@ CMD ["pypy"]
 ## `pypy:3.10-7.3`
 
 ```console
-$ docker pull pypy@sha256:31b40390969911bcafd114fb6b29ad70a1d04e033b40a4123228daf3e8ebdc95
+$ docker pull pypy@sha256:77a4870d27fba491f5942e1d5250edf354bb0993e677d641f9ba56364453333d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30260,7 +30260,7 @@ CMD ["pypy"]
 ## `pypy:3.10-7.3-bookworm`
 
 ```console
-$ docker pull pypy@sha256:977232494c5642c73161370f7749a6fd5a3fec8df30e5a73929f48b9b282a79f
+$ docker pull pypy@sha256:72c5c8bfc543f3cca7e47d81cb267ba46a593527168f8fb07e0d1ba71975c8b5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30566,7 +30566,7 @@ $ docker pull pypy@sha256:1b7faad2934914074c0cb27ea2aa24361b63b47cc353ccacc9b8db
 ## `pypy:3.10-7.3-bullseye`
 
 ```console
-$ docker pull pypy@sha256:e8d81268175ae324398712354066bd770eae2f4a08ab241b5318a3f05e750529
+$ docker pull pypy@sha256:438da6a9fa768baec5ec631612a68b8bace20555a89209f047194bb19bf01365
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30872,7 +30872,7 @@ $ docker pull pypy@sha256:d5ec2285fb7dd58a09a0880d68a10e97a800e6b40faa2ffef2e3bc
 ## `pypy:3.10-7.3-slim`
 
 ```console
-$ docker pull pypy@sha256:271850703e037a0bfb82c335770d5eb850db36c982da2dea6bea46bebf838730
+$ docker pull pypy@sha256:3ad8dceee07bcaf7486a90785c40449c621d89ac12b7ba00458b3a6e5bafbe95
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -31124,7 +31124,7 @@ $ docker pull pypy@sha256:f958777e8342bb9890418d97e519a8a6e3cbf0814937bc6c510eee
 ## `pypy:3.10-7.3-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:8ae23f25ccab065a20f0b13aefacfb529d4b592dbbd2550487d8a900ee1b3e53
+$ docker pull pypy@sha256:38b4e55ed5f9a1c1cc7085f400e9699625a092681430b6b7ef4c6d38f48136cd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -31376,7 +31376,7 @@ $ docker pull pypy@sha256:d26b6290875b47a57aed024f70cf90c2a05473d78515ab28598f16
 ## `pypy:3.10-7.3-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:271850703e037a0bfb82c335770d5eb850db36c982da2dea6bea46bebf838730
+$ docker pull pypy@sha256:3ad8dceee07bcaf7486a90785c40449c621d89ac12b7ba00458b3a6e5bafbe95
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -31999,7 +31999,7 @@ CMD ["pypy"]
 ## `pypy:3.10-7.3.15`
 
 ```console
-$ docker pull pypy@sha256:31b40390969911bcafd114fb6b29ad70a1d04e033b40a4123228daf3e8ebdc95
+$ docker pull pypy@sha256:77a4870d27fba491f5942e1d5250edf354bb0993e677d641f9ba56364453333d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -32477,7 +32477,7 @@ CMD ["pypy"]
 ## `pypy:3.10-7.3.15-bookworm`
 
 ```console
-$ docker pull pypy@sha256:977232494c5642c73161370f7749a6fd5a3fec8df30e5a73929f48b9b282a79f
+$ docker pull pypy@sha256:72c5c8bfc543f3cca7e47d81cb267ba46a593527168f8fb07e0d1ba71975c8b5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -32783,7 +32783,7 @@ $ docker pull pypy@sha256:1b7faad2934914074c0cb27ea2aa24361b63b47cc353ccacc9b8db
 ## `pypy:3.10-7.3.15-bullseye`
 
 ```console
-$ docker pull pypy@sha256:e8d81268175ae324398712354066bd770eae2f4a08ab241b5318a3f05e750529
+$ docker pull pypy@sha256:438da6a9fa768baec5ec631612a68b8bace20555a89209f047194bb19bf01365
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33089,7 +33089,7 @@ $ docker pull pypy@sha256:d5ec2285fb7dd58a09a0880d68a10e97a800e6b40faa2ffef2e3bc
 ## `pypy:3.10-7.3.15-slim`
 
 ```console
-$ docker pull pypy@sha256:271850703e037a0bfb82c335770d5eb850db36c982da2dea6bea46bebf838730
+$ docker pull pypy@sha256:3ad8dceee07bcaf7486a90785c40449c621d89ac12b7ba00458b3a6e5bafbe95
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33341,7 +33341,7 @@ $ docker pull pypy@sha256:f958777e8342bb9890418d97e519a8a6e3cbf0814937bc6c510eee
 ## `pypy:3.10-7.3.15-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:8ae23f25ccab065a20f0b13aefacfb529d4b592dbbd2550487d8a900ee1b3e53
+$ docker pull pypy@sha256:38b4e55ed5f9a1c1cc7085f400e9699625a092681430b6b7ef4c6d38f48136cd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33593,7 +33593,7 @@ $ docker pull pypy@sha256:d26b6290875b47a57aed024f70cf90c2a05473d78515ab28598f16
 ## `pypy:3.10-7.3.15-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:271850703e037a0bfb82c335770d5eb850db36c982da2dea6bea46bebf838730
+$ docker pull pypy@sha256:3ad8dceee07bcaf7486a90785c40449c621d89ac12b7ba00458b3a6e5bafbe95
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -34216,7 +34216,7 @@ CMD ["pypy"]
 ## `pypy:3.10-bookworm`
 
 ```console
-$ docker pull pypy@sha256:977232494c5642c73161370f7749a6fd5a3fec8df30e5a73929f48b9b282a79f
+$ docker pull pypy@sha256:72c5c8bfc543f3cca7e47d81cb267ba46a593527168f8fb07e0d1ba71975c8b5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -34522,7 +34522,7 @@ $ docker pull pypy@sha256:1b7faad2934914074c0cb27ea2aa24361b63b47cc353ccacc9b8db
 ## `pypy:3.10-bullseye`
 
 ```console
-$ docker pull pypy@sha256:e8d81268175ae324398712354066bd770eae2f4a08ab241b5318a3f05e750529
+$ docker pull pypy@sha256:438da6a9fa768baec5ec631612a68b8bace20555a89209f047194bb19bf01365
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -34828,7 +34828,7 @@ $ docker pull pypy@sha256:d5ec2285fb7dd58a09a0880d68a10e97a800e6b40faa2ffef2e3bc
 ## `pypy:3.10-slim`
 
 ```console
-$ docker pull pypy@sha256:271850703e037a0bfb82c335770d5eb850db36c982da2dea6bea46bebf838730
+$ docker pull pypy@sha256:3ad8dceee07bcaf7486a90785c40449c621d89ac12b7ba00458b3a6e5bafbe95
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -35080,7 +35080,7 @@ $ docker pull pypy@sha256:f958777e8342bb9890418d97e519a8a6e3cbf0814937bc6c510eee
 ## `pypy:3.10-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:8ae23f25ccab065a20f0b13aefacfb529d4b592dbbd2550487d8a900ee1b3e53
+$ docker pull pypy@sha256:38b4e55ed5f9a1c1cc7085f400e9699625a092681430b6b7ef4c6d38f48136cd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -35332,7 +35332,7 @@ $ docker pull pypy@sha256:d26b6290875b47a57aed024f70cf90c2a05473d78515ab28598f16
 ## `pypy:3.10-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:271850703e037a0bfb82c335770d5eb850db36c982da2dea6bea46bebf838730
+$ docker pull pypy@sha256:3ad8dceee07bcaf7486a90785c40449c621d89ac12b7ba00458b3a6e5bafbe95
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -35955,7 +35955,7 @@ CMD ["pypy"]
 ## `pypy:3.9`
 
 ```console
-$ docker pull pypy@sha256:1c5fc49acb64fbfc7c019ab1490e4c77e992c5802d0c0f234b63695106013580
+$ docker pull pypy@sha256:7a1c0483ecc3189c254acbd2600a709f744e73970e3ca9ca4fc03f19382fec69
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -36433,7 +36433,7 @@ CMD ["pypy"]
 ## `pypy:3.9-7`
 
 ```console
-$ docker pull pypy@sha256:1c5fc49acb64fbfc7c019ab1490e4c77e992c5802d0c0f234b63695106013580
+$ docker pull pypy@sha256:7a1c0483ecc3189c254acbd2600a709f744e73970e3ca9ca4fc03f19382fec69
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -36911,7 +36911,7 @@ CMD ["pypy"]
 ## `pypy:3.9-7-bookworm`
 
 ```console
-$ docker pull pypy@sha256:99145a21f9556cf8a276e33e5700d74a762a2f8796060d142935f33651734bfb
+$ docker pull pypy@sha256:b6ea2e4cb10bed49f39bfb18e560388b1136c92fd4907c2936a8a4510daf1b5c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -37217,7 +37217,7 @@ $ docker pull pypy@sha256:3a81d723b7f870f4ba95cff32055d4ec0ed7038c4779997176dce8
 ## `pypy:3.9-7-bullseye`
 
 ```console
-$ docker pull pypy@sha256:ddb44b62cda3383510761b86b4e2b842ef63aca00a8b0d927d5ce914ab26c3b1
+$ docker pull pypy@sha256:28147f5dd2cbd110d652e94e30c2102c34d980e36f9af829fe23b58146bfff1e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -37523,7 +37523,7 @@ $ docker pull pypy@sha256:06eebe15ff40d3826675a0ba582e71c482908947b9297fd04847bc
 ## `pypy:3.9-7-slim`
 
 ```console
-$ docker pull pypy@sha256:2fcf6464097cfb70cdf5e546f1cd568cada364d16255fd13384ee8e33018e7ee
+$ docker pull pypy@sha256:e129b38e7e503ac3b0c4a60085e0923908a90a88b26ab9e186d8e47caee3c274
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -37775,7 +37775,7 @@ $ docker pull pypy@sha256:da5e5cd7e24e49f5bba6ca549a450482707369e0cb94a3ca825ddf
 ## `pypy:3.9-7-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:323ac0fb492247e10960b773476aa425310752943732dcb0fec93a0467d0ecbe
+$ docker pull pypy@sha256:94ba6e062004d4521a1d486f946332b2d1727ff3f2a15060aae09dabac15e8d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -38027,7 +38027,7 @@ $ docker pull pypy@sha256:b205a88df53a0fffbf8248905f832ee3f55d979cb2cfaf3dd88306
 ## `pypy:3.9-7-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:2fcf6464097cfb70cdf5e546f1cd568cada364d16255fd13384ee8e33018e7ee
+$ docker pull pypy@sha256:e129b38e7e503ac3b0c4a60085e0923908a90a88b26ab9e186d8e47caee3c274
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -38650,7 +38650,7 @@ CMD ["pypy"]
 ## `pypy:3.9-7.3`
 
 ```console
-$ docker pull pypy@sha256:1c5fc49acb64fbfc7c019ab1490e4c77e992c5802d0c0f234b63695106013580
+$ docker pull pypy@sha256:7a1c0483ecc3189c254acbd2600a709f744e73970e3ca9ca4fc03f19382fec69
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -39128,7 +39128,7 @@ CMD ["pypy"]
 ## `pypy:3.9-7.3-bookworm`
 
 ```console
-$ docker pull pypy@sha256:99145a21f9556cf8a276e33e5700d74a762a2f8796060d142935f33651734bfb
+$ docker pull pypy@sha256:b6ea2e4cb10bed49f39bfb18e560388b1136c92fd4907c2936a8a4510daf1b5c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -39434,7 +39434,7 @@ $ docker pull pypy@sha256:3a81d723b7f870f4ba95cff32055d4ec0ed7038c4779997176dce8
 ## `pypy:3.9-7.3-bullseye`
 
 ```console
-$ docker pull pypy@sha256:ddb44b62cda3383510761b86b4e2b842ef63aca00a8b0d927d5ce914ab26c3b1
+$ docker pull pypy@sha256:28147f5dd2cbd110d652e94e30c2102c34d980e36f9af829fe23b58146bfff1e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -39740,7 +39740,7 @@ $ docker pull pypy@sha256:06eebe15ff40d3826675a0ba582e71c482908947b9297fd04847bc
 ## `pypy:3.9-7.3-slim`
 
 ```console
-$ docker pull pypy@sha256:2fcf6464097cfb70cdf5e546f1cd568cada364d16255fd13384ee8e33018e7ee
+$ docker pull pypy@sha256:e129b38e7e503ac3b0c4a60085e0923908a90a88b26ab9e186d8e47caee3c274
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -39992,7 +39992,7 @@ $ docker pull pypy@sha256:da5e5cd7e24e49f5bba6ca549a450482707369e0cb94a3ca825ddf
 ## `pypy:3.9-7.3-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:323ac0fb492247e10960b773476aa425310752943732dcb0fec93a0467d0ecbe
+$ docker pull pypy@sha256:94ba6e062004d4521a1d486f946332b2d1727ff3f2a15060aae09dabac15e8d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -40244,7 +40244,7 @@ $ docker pull pypy@sha256:b205a88df53a0fffbf8248905f832ee3f55d979cb2cfaf3dd88306
 ## `pypy:3.9-7.3-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:2fcf6464097cfb70cdf5e546f1cd568cada364d16255fd13384ee8e33018e7ee
+$ docker pull pypy@sha256:e129b38e7e503ac3b0c4a60085e0923908a90a88b26ab9e186d8e47caee3c274
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -40867,7 +40867,7 @@ CMD ["pypy"]
 ## `pypy:3.9-7.3.15`
 
 ```console
-$ docker pull pypy@sha256:1c5fc49acb64fbfc7c019ab1490e4c77e992c5802d0c0f234b63695106013580
+$ docker pull pypy@sha256:7a1c0483ecc3189c254acbd2600a709f744e73970e3ca9ca4fc03f19382fec69
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -41345,7 +41345,7 @@ CMD ["pypy"]
 ## `pypy:3.9-7.3.15-bookworm`
 
 ```console
-$ docker pull pypy@sha256:99145a21f9556cf8a276e33e5700d74a762a2f8796060d142935f33651734bfb
+$ docker pull pypy@sha256:b6ea2e4cb10bed49f39bfb18e560388b1136c92fd4907c2936a8a4510daf1b5c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -41651,7 +41651,7 @@ $ docker pull pypy@sha256:3a81d723b7f870f4ba95cff32055d4ec0ed7038c4779997176dce8
 ## `pypy:3.9-7.3.15-bullseye`
 
 ```console
-$ docker pull pypy@sha256:ddb44b62cda3383510761b86b4e2b842ef63aca00a8b0d927d5ce914ab26c3b1
+$ docker pull pypy@sha256:28147f5dd2cbd110d652e94e30c2102c34d980e36f9af829fe23b58146bfff1e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -41957,7 +41957,7 @@ $ docker pull pypy@sha256:06eebe15ff40d3826675a0ba582e71c482908947b9297fd04847bc
 ## `pypy:3.9-7.3.15-slim`
 
 ```console
-$ docker pull pypy@sha256:2fcf6464097cfb70cdf5e546f1cd568cada364d16255fd13384ee8e33018e7ee
+$ docker pull pypy@sha256:e129b38e7e503ac3b0c4a60085e0923908a90a88b26ab9e186d8e47caee3c274
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -42209,7 +42209,7 @@ $ docker pull pypy@sha256:da5e5cd7e24e49f5bba6ca549a450482707369e0cb94a3ca825ddf
 ## `pypy:3.9-7.3.15-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:323ac0fb492247e10960b773476aa425310752943732dcb0fec93a0467d0ecbe
+$ docker pull pypy@sha256:94ba6e062004d4521a1d486f946332b2d1727ff3f2a15060aae09dabac15e8d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -42461,7 +42461,7 @@ $ docker pull pypy@sha256:b205a88df53a0fffbf8248905f832ee3f55d979cb2cfaf3dd88306
 ## `pypy:3.9-7.3.15-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:2fcf6464097cfb70cdf5e546f1cd568cada364d16255fd13384ee8e33018e7ee
+$ docker pull pypy@sha256:e129b38e7e503ac3b0c4a60085e0923908a90a88b26ab9e186d8e47caee3c274
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -43084,7 +43084,7 @@ CMD ["pypy"]
 ## `pypy:3.9-bookworm`
 
 ```console
-$ docker pull pypy@sha256:99145a21f9556cf8a276e33e5700d74a762a2f8796060d142935f33651734bfb
+$ docker pull pypy@sha256:b6ea2e4cb10bed49f39bfb18e560388b1136c92fd4907c2936a8a4510daf1b5c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -43390,7 +43390,7 @@ $ docker pull pypy@sha256:3a81d723b7f870f4ba95cff32055d4ec0ed7038c4779997176dce8
 ## `pypy:3.9-bullseye`
 
 ```console
-$ docker pull pypy@sha256:ddb44b62cda3383510761b86b4e2b842ef63aca00a8b0d927d5ce914ab26c3b1
+$ docker pull pypy@sha256:28147f5dd2cbd110d652e94e30c2102c34d980e36f9af829fe23b58146bfff1e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -43696,7 +43696,7 @@ $ docker pull pypy@sha256:06eebe15ff40d3826675a0ba582e71c482908947b9297fd04847bc
 ## `pypy:3.9-slim`
 
 ```console
-$ docker pull pypy@sha256:2fcf6464097cfb70cdf5e546f1cd568cada364d16255fd13384ee8e33018e7ee
+$ docker pull pypy@sha256:e129b38e7e503ac3b0c4a60085e0923908a90a88b26ab9e186d8e47caee3c274
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -43948,7 +43948,7 @@ $ docker pull pypy@sha256:da5e5cd7e24e49f5bba6ca549a450482707369e0cb94a3ca825ddf
 ## `pypy:3.9-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:323ac0fb492247e10960b773476aa425310752943732dcb0fec93a0467d0ecbe
+$ docker pull pypy@sha256:94ba6e062004d4521a1d486f946332b2d1727ff3f2a15060aae09dabac15e8d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -44200,7 +44200,7 @@ $ docker pull pypy@sha256:b205a88df53a0fffbf8248905f832ee3f55d979cb2cfaf3dd88306
 ## `pypy:3.9-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:2fcf6464097cfb70cdf5e546f1cd568cada364d16255fd13384ee8e33018e7ee
+$ docker pull pypy@sha256:e129b38e7e503ac3b0c4a60085e0923908a90a88b26ab9e186d8e47caee3c274
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -44823,7 +44823,7 @@ CMD ["pypy"]
 ## `pypy:bookworm`
 
 ```console
-$ docker pull pypy@sha256:977232494c5642c73161370f7749a6fd5a3fec8df30e5a73929f48b9b282a79f
+$ docker pull pypy@sha256:72c5c8bfc543f3cca7e47d81cb267ba46a593527168f8fb07e0d1ba71975c8b5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -45129,7 +45129,7 @@ $ docker pull pypy@sha256:1b7faad2934914074c0cb27ea2aa24361b63b47cc353ccacc9b8db
 ## `pypy:bullseye`
 
 ```console
-$ docker pull pypy@sha256:e8d81268175ae324398712354066bd770eae2f4a08ab241b5318a3f05e750529
+$ docker pull pypy@sha256:438da6a9fa768baec5ec631612a68b8bace20555a89209f047194bb19bf01365
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -45435,7 +45435,7 @@ $ docker pull pypy@sha256:d5ec2285fb7dd58a09a0880d68a10e97a800e6b40faa2ffef2e3bc
 ## `pypy:latest`
 
 ```console
-$ docker pull pypy@sha256:31b40390969911bcafd114fb6b29ad70a1d04e033b40a4123228daf3e8ebdc95
+$ docker pull pypy@sha256:77a4870d27fba491f5942e1d5250edf354bb0993e677d641f9ba56364453333d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -45913,7 +45913,7 @@ CMD ["pypy"]
 ## `pypy:slim`
 
 ```console
-$ docker pull pypy@sha256:271850703e037a0bfb82c335770d5eb850db36c982da2dea6bea46bebf838730
+$ docker pull pypy@sha256:3ad8dceee07bcaf7486a90785c40449c621d89ac12b7ba00458b3a6e5bafbe95
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -46165,7 +46165,7 @@ $ docker pull pypy@sha256:f958777e8342bb9890418d97e519a8a6e3cbf0814937bc6c510eee
 ## `pypy:slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:8ae23f25ccab065a20f0b13aefacfb529d4b592dbbd2550487d8a900ee1b3e53
+$ docker pull pypy@sha256:38b4e55ed5f9a1c1cc7085f400e9699625a092681430b6b7ef4c6d38f48136cd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -46417,7 +46417,7 @@ $ docker pull pypy@sha256:d26b6290875b47a57aed024f70cf90c2a05473d78515ab28598f16
 ## `pypy:slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:271850703e037a0bfb82c335770d5eb850db36c982da2dea6bea46bebf838730
+$ docker pull pypy@sha256:3ad8dceee07bcaf7486a90785c40449c621d89ac12b7ba00458b3a6e5bafbe95
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

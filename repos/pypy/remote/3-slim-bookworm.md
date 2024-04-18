@@ -1,7 +1,7 @@
 ## `pypy:3-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:8ae23f25ccab065a20f0b13aefacfb529d4b592dbbd2550487d8a900ee1b3e53
+$ docker pull pypy@sha256:38b4e55ed5f9a1c1cc7085f400e9699625a092681430b6b7ef4c6d38f48136cd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
