@@ -10,7 +10,7 @@
 ## `cirros:0`
 
 ```console
-$ docker pull cirros@sha256:6b2d9f5341bce2b1fb29669ff46744a145079ccc6a674849de3a4946ec3d8ffb
+$ docker pull cirros@sha256:51ef111e5a51258e85b82c81c9a5e9897b4c640a3eb3a4b7b9274656b95c0181
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -271,7 +271,7 @@ $ docker pull cirros@sha256:35c56a44903ef5d51db97a9b826e9858331f08b62b69496948c2
 ## `cirros:0.6`
 
 ```console
-$ docker pull cirros@sha256:6b2d9f5341bce2b1fb29669ff46744a145079ccc6a674849de3a4946ec3d8ffb
+$ docker pull cirros@sha256:51ef111e5a51258e85b82c81c9a5e9897b4c640a3eb3a4b7b9274656b95c0181
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -532,7 +532,7 @@ $ docker pull cirros@sha256:35c56a44903ef5d51db97a9b826e9858331f08b62b69496948c2
 ## `cirros:0.6.2`
 
 ```console
-$ docker pull cirros@sha256:6b2d9f5341bce2b1fb29669ff46744a145079ccc6a674849de3a4946ec3d8ffb
+$ docker pull cirros@sha256:51ef111e5a51258e85b82c81c9a5e9897b4c640a3eb3a4b7b9274656b95c0181
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -793,7 +793,7 @@ $ docker pull cirros@sha256:35c56a44903ef5d51db97a9b826e9858331f08b62b69496948c2
 ## `cirros:latest`
 
 ```console
-$ docker pull cirros@sha256:6b2d9f5341bce2b1fb29669ff46744a145079ccc6a674849de3a4946ec3d8ffb
+$ docker pull cirros@sha256:51ef111e5a51258e85b82c81c9a5e9897b4c640a3eb3a4b7b9274656b95c0181
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
