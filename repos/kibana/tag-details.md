@@ -8,7 +8,7 @@
 ## `kibana:7.17.20`
 
 ```console
-$ docker pull kibana@sha256:307e550d89da7e8521e60ebea864449ac5151705213b98ab1752cab439f975fd
+$ docker pull kibana@sha256:81d3c458373bc8aaba1805714c304d89f992aed7df9781eab27a347926457ed4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -333,7 +333,7 @@ $ docker pull kibana@sha256:f1254a47511258e5db8ffe1cb4b7024ff56bf3fbb99705cb03b0
 ## `kibana:8.13.0`
 
 ```console
-$ docker pull kibana@sha256:d3dfbecc5337f6215caccad3253ccf2ce98d3e0af11ac7b3f9a7b40d74f8ddea
+$ docker pull kibana@sha256:60f9dea65872b59a245e32783f5497b6215a0c88a6a38b82e85a77e946208292
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
