@@ -31,7 +31,7 @@
 ## `mysql:8`
 
 ```console
-$ docker pull mysql@sha256:203a051f50657d045108fa38a438a109101500d42b7ac4c03d399fcce43c4f2f
+$ docker pull mysql@sha256:9de9d54fecee6253130e65154b930978b1fcc336bcc86dfd06e89b72a2588ebe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -284,7 +284,7 @@ $ docker pull mysql@sha256:a0f3689f8c039124c43ae02cc65a61678060a14676cb8bd9cf469
 ## `mysql:8-oracle`
 
 ```console
-$ docker pull mysql@sha256:203a051f50657d045108fa38a438a109101500d42b7ac4c03d399fcce43c4f2f
+$ docker pull mysql@sha256:9de9d54fecee6253130e65154b930978b1fcc336bcc86dfd06e89b72a2588ebe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -537,7 +537,7 @@ $ docker pull mysql@sha256:a0f3689f8c039124c43ae02cc65a61678060a14676cb8bd9cf469
 ## `mysql:8-oraclelinux8`
 
 ```console
-$ docker pull mysql@sha256:203a051f50657d045108fa38a438a109101500d42b7ac4c03d399fcce43c4f2f
+$ docker pull mysql@sha256:9de9d54fecee6253130e65154b930978b1fcc336bcc86dfd06e89b72a2588ebe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -790,7 +790,7 @@ $ docker pull mysql@sha256:a0f3689f8c039124c43ae02cc65a61678060a14676cb8bd9cf469
 ## `mysql:8.0`
 
 ```console
-$ docker pull mysql@sha256:ba4d18421e71eb0e8429b5c8465c1bb30d17bc89c7e9ccd2a61b375b23ef93d9
+$ docker pull mysql@sha256:a532724022429812ec797c285c1b540a644c15e248579c6bfdf12a8fbaab4964
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1055,7 +1055,7 @@ $ docker pull mysql@sha256:d8090dc3f33e9bcf04952f50eddaec163b81fd8104043d43eb13f
 ## `mysql:8.0-bookworm`
 
 ```console
-$ docker pull mysql@sha256:b1691fd5212f0a5623e5e27d70f2ac790611d442efe56a27837b9aea25e0d058
+$ docker pull mysql@sha256:2587273f04a17b1a746e61bf67efff827f56adc457975722dfeee20b2ba2468d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1196,7 +1196,7 @@ $ docker pull mysql@sha256:d0eeb367d96d6ca6cd0e4587dd3cbb171f0118bd696e8b8213e30
 ## `mysql:8.0-debian`
 
 ```console
-$ docker pull mysql@sha256:b1691fd5212f0a5623e5e27d70f2ac790611d442efe56a27837b9aea25e0d058
+$ docker pull mysql@sha256:2587273f04a17b1a746e61bf67efff827f56adc457975722dfeee20b2ba2468d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1337,7 +1337,7 @@ $ docker pull mysql@sha256:d0eeb367d96d6ca6cd0e4587dd3cbb171f0118bd696e8b8213e30
 ## `mysql:8.0-oracle`
 
 ```console
-$ docker pull mysql@sha256:ba4d18421e71eb0e8429b5c8465c1bb30d17bc89c7e9ccd2a61b375b23ef93d9
+$ docker pull mysql@sha256:a532724022429812ec797c285c1b540a644c15e248579c6bfdf12a8fbaab4964
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1602,7 +1602,7 @@ $ docker pull mysql@sha256:d8090dc3f33e9bcf04952f50eddaec163b81fd8104043d43eb13f
 ## `mysql:8.0-oraclelinux8`
 
 ```console
-$ docker pull mysql@sha256:ba4d18421e71eb0e8429b5c8465c1bb30d17bc89c7e9ccd2a61b375b23ef93d9
+$ docker pull mysql@sha256:a532724022429812ec797c285c1b540a644c15e248579c6bfdf12a8fbaab4964
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1867,7 +1867,7 @@ $ docker pull mysql@sha256:d8090dc3f33e9bcf04952f50eddaec163b81fd8104043d43eb13f
 ## `mysql:8.0.36`
 
 ```console
-$ docker pull mysql@sha256:ba4d18421e71eb0e8429b5c8465c1bb30d17bc89c7e9ccd2a61b375b23ef93d9
+$ docker pull mysql@sha256:a532724022429812ec797c285c1b540a644c15e248579c6bfdf12a8fbaab4964
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2132,7 +2132,7 @@ $ docker pull mysql@sha256:d8090dc3f33e9bcf04952f50eddaec163b81fd8104043d43eb13f
 ## `mysql:8.0.36-bookworm`
 
 ```console
-$ docker pull mysql@sha256:b1691fd5212f0a5623e5e27d70f2ac790611d442efe56a27837b9aea25e0d058
+$ docker pull mysql@sha256:2587273f04a17b1a746e61bf67efff827f56adc457975722dfeee20b2ba2468d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2273,7 +2273,7 @@ $ docker pull mysql@sha256:d0eeb367d96d6ca6cd0e4587dd3cbb171f0118bd696e8b8213e30
 ## `mysql:8.0.36-debian`
 
 ```console
-$ docker pull mysql@sha256:b1691fd5212f0a5623e5e27d70f2ac790611d442efe56a27837b9aea25e0d058
+$ docker pull mysql@sha256:2587273f04a17b1a746e61bf67efff827f56adc457975722dfeee20b2ba2468d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2414,7 +2414,7 @@ $ docker pull mysql@sha256:d0eeb367d96d6ca6cd0e4587dd3cbb171f0118bd696e8b8213e30
 ## `mysql:8.0.36-oracle`
 
 ```console
-$ docker pull mysql@sha256:ba4d18421e71eb0e8429b5c8465c1bb30d17bc89c7e9ccd2a61b375b23ef93d9
+$ docker pull mysql@sha256:a532724022429812ec797c285c1b540a644c15e248579c6bfdf12a8fbaab4964
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2679,7 +2679,7 @@ $ docker pull mysql@sha256:d8090dc3f33e9bcf04952f50eddaec163b81fd8104043d43eb13f
 ## `mysql:8.0.36-oraclelinux8`
 
 ```console
-$ docker pull mysql@sha256:ba4d18421e71eb0e8429b5c8465c1bb30d17bc89c7e9ccd2a61b375b23ef93d9
+$ docker pull mysql@sha256:a532724022429812ec797c285c1b540a644c15e248579c6bfdf12a8fbaab4964
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2944,7 +2944,7 @@ $ docker pull mysql@sha256:d8090dc3f33e9bcf04952f50eddaec163b81fd8104043d43eb13f
 ## `mysql:8.3`
 
 ```console
-$ docker pull mysql@sha256:203a051f50657d045108fa38a438a109101500d42b7ac4c03d399fcce43c4f2f
+$ docker pull mysql@sha256:9de9d54fecee6253130e65154b930978b1fcc336bcc86dfd06e89b72a2588ebe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3197,7 +3197,7 @@ $ docker pull mysql@sha256:a0f3689f8c039124c43ae02cc65a61678060a14676cb8bd9cf469
 ## `mysql:8.3-oracle`
 
 ```console
-$ docker pull mysql@sha256:203a051f50657d045108fa38a438a109101500d42b7ac4c03d399fcce43c4f2f
+$ docker pull mysql@sha256:9de9d54fecee6253130e65154b930978b1fcc336bcc86dfd06e89b72a2588ebe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3450,7 +3450,7 @@ $ docker pull mysql@sha256:a0f3689f8c039124c43ae02cc65a61678060a14676cb8bd9cf469
 ## `mysql:8.3-oraclelinux8`
 
 ```console
-$ docker pull mysql@sha256:203a051f50657d045108fa38a438a109101500d42b7ac4c03d399fcce43c4f2f
+$ docker pull mysql@sha256:9de9d54fecee6253130e65154b930978b1fcc336bcc86dfd06e89b72a2588ebe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3703,7 +3703,7 @@ $ docker pull mysql@sha256:a0f3689f8c039124c43ae02cc65a61678060a14676cb8bd9cf469
 ## `mysql:8.3.0`
 
 ```console
-$ docker pull mysql@sha256:203a051f50657d045108fa38a438a109101500d42b7ac4c03d399fcce43c4f2f
+$ docker pull mysql@sha256:9de9d54fecee6253130e65154b930978b1fcc336bcc86dfd06e89b72a2588ebe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3956,7 +3956,7 @@ $ docker pull mysql@sha256:a0f3689f8c039124c43ae02cc65a61678060a14676cb8bd9cf469
 ## `mysql:8.3.0-oracle`
 
 ```console
-$ docker pull mysql@sha256:203a051f50657d045108fa38a438a109101500d42b7ac4c03d399fcce43c4f2f
+$ docker pull mysql@sha256:9de9d54fecee6253130e65154b930978b1fcc336bcc86dfd06e89b72a2588ebe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4209,7 +4209,7 @@ $ docker pull mysql@sha256:a0f3689f8c039124c43ae02cc65a61678060a14676cb8bd9cf469
 ## `mysql:8.3.0-oraclelinux8`
 
 ```console
-$ docker pull mysql@sha256:203a051f50657d045108fa38a438a109101500d42b7ac4c03d399fcce43c4f2f
+$ docker pull mysql@sha256:9de9d54fecee6253130e65154b930978b1fcc336bcc86dfd06e89b72a2588ebe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4462,7 +4462,7 @@ $ docker pull mysql@sha256:a0f3689f8c039124c43ae02cc65a61678060a14676cb8bd9cf469
 ## `mysql:innovation`
 
 ```console
-$ docker pull mysql@sha256:203a051f50657d045108fa38a438a109101500d42b7ac4c03d399fcce43c4f2f
+$ docker pull mysql@sha256:9de9d54fecee6253130e65154b930978b1fcc336bcc86dfd06e89b72a2588ebe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4715,7 +4715,7 @@ $ docker pull mysql@sha256:a0f3689f8c039124c43ae02cc65a61678060a14676cb8bd9cf469
 ## `mysql:innovation-oracle`
 
 ```console
-$ docker pull mysql@sha256:203a051f50657d045108fa38a438a109101500d42b7ac4c03d399fcce43c4f2f
+$ docker pull mysql@sha256:9de9d54fecee6253130e65154b930978b1fcc336bcc86dfd06e89b72a2588ebe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4968,7 +4968,7 @@ $ docker pull mysql@sha256:a0f3689f8c039124c43ae02cc65a61678060a14676cb8bd9cf469
 ## `mysql:innovation-oraclelinux8`
 
 ```console
-$ docker pull mysql@sha256:203a051f50657d045108fa38a438a109101500d42b7ac4c03d399fcce43c4f2f
+$ docker pull mysql@sha256:9de9d54fecee6253130e65154b930978b1fcc336bcc86dfd06e89b72a2588ebe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5221,7 +5221,7 @@ $ docker pull mysql@sha256:a0f3689f8c039124c43ae02cc65a61678060a14676cb8bd9cf469
 ## `mysql:latest`
 
 ```console
-$ docker pull mysql@sha256:203a051f50657d045108fa38a438a109101500d42b7ac4c03d399fcce43c4f2f
+$ docker pull mysql@sha256:9de9d54fecee6253130e65154b930978b1fcc336bcc86dfd06e89b72a2588ebe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5474,7 +5474,7 @@ $ docker pull mysql@sha256:a0f3689f8c039124c43ae02cc65a61678060a14676cb8bd9cf469
 ## `mysql:oracle`
 
 ```console
-$ docker pull mysql@sha256:203a051f50657d045108fa38a438a109101500d42b7ac4c03d399fcce43c4f2f
+$ docker pull mysql@sha256:9de9d54fecee6253130e65154b930978b1fcc336bcc86dfd06e89b72a2588ebe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5727,7 +5727,7 @@ $ docker pull mysql@sha256:a0f3689f8c039124c43ae02cc65a61678060a14676cb8bd9cf469
 ## `mysql:oraclelinux8`
 
 ```console
-$ docker pull mysql@sha256:203a051f50657d045108fa38a438a109101500d42b7ac4c03d399fcce43c4f2f
+$ docker pull mysql@sha256:9de9d54fecee6253130e65154b930978b1fcc336bcc86dfd06e89b72a2588ebe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
