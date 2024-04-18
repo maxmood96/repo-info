@@ -30,7 +30,7 @@
 ## `redmine:5`
 
 ```console
-$ docker pull redmine@sha256:bd4c39e18acef6b4d0d3afab2d9d8ca046ee6f7b0275132c80ba976e1babf974
+$ docker pull redmine@sha256:b1461630e78753c82c015cf0f2be771bd97a9efc46b2896b3f2af97e8a76912b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1315,7 +1315,7 @@ $ docker pull redmine@sha256:173ead1a6d852a3374955fb2a7f4ffb22b1d3080a78e46f7ea9
 ## `redmine:5-alpine`
 
 ```console
-$ docker pull redmine@sha256:5c1733b2dbafe14af6e9bee2ac744716c6182b19fadcd951a096ef56688dfef7
+$ docker pull redmine@sha256:7845a90a14512432d006f804a157a47fe659fe653e6d20ec385b5038922ed140
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2398,7 +2398,7 @@ $ docker pull redmine@sha256:8c66b78c903c0201827696aa5deeac4de46072d7e7a5486cf0a
 ## `redmine:5-alpine3.18`
 
 ```console
-$ docker pull redmine@sha256:5c1733b2dbafe14af6e9bee2ac744716c6182b19fadcd951a096ef56688dfef7
+$ docker pull redmine@sha256:7845a90a14512432d006f804a157a47fe659fe653e6d20ec385b5038922ed140
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3481,7 +3481,7 @@ $ docker pull redmine@sha256:8c66b78c903c0201827696aa5deeac4de46072d7e7a5486cf0a
 ## `redmine:5-bookworm`
 
 ```console
-$ docker pull redmine@sha256:bd4c39e18acef6b4d0d3afab2d9d8ca046ee6f7b0275132c80ba976e1babf974
+$ docker pull redmine@sha256:b1461630e78753c82c015cf0f2be771bd97a9efc46b2896b3f2af97e8a76912b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4766,7 +4766,7 @@ $ docker pull redmine@sha256:173ead1a6d852a3374955fb2a7f4ffb22b1d3080a78e46f7ea9
 ## `redmine:5.0`
 
 ```console
-$ docker pull redmine@sha256:26f4d32be63c9f81df1f822886e9532e5e2b88b132b8df3ae9a6c9c9f5aa9280
+$ docker pull redmine@sha256:aace4f0538fd442cc4299fd7153031b784c6f7115cae220babfb3a0b77b2878d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6051,7 +6051,7 @@ $ docker pull redmine@sha256:5a55ceca05003654e12da80b5449ce55c26b3774453070a0bb0
 ## `redmine:5.0-alpine`
 
 ```console
-$ docker pull redmine@sha256:9071b241f905bfa6caf74be6701f6fc584f4371de9597952c2170e0fbfbdc9ed
+$ docker pull redmine@sha256:3bf2c57272d03cff3f0e6b047b910c3545274951240b532c9c41cb2d56ed5679
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7134,7 +7134,7 @@ $ docker pull redmine@sha256:b32ddf4440584c520c4d59de1e680349c65eaa68eaef41de4e5
 ## `redmine:5.0-alpine3.18`
 
 ```console
-$ docker pull redmine@sha256:9071b241f905bfa6caf74be6701f6fc584f4371de9597952c2170e0fbfbdc9ed
+$ docker pull redmine@sha256:3bf2c57272d03cff3f0e6b047b910c3545274951240b532c9c41cb2d56ed5679
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8217,7 +8217,7 @@ $ docker pull redmine@sha256:b32ddf4440584c520c4d59de1e680349c65eaa68eaef41de4e5
 ## `redmine:5.0-bookworm`
 
 ```console
-$ docker pull redmine@sha256:26f4d32be63c9f81df1f822886e9532e5e2b88b132b8df3ae9a6c9c9f5aa9280
+$ docker pull redmine@sha256:aace4f0538fd442cc4299fd7153031b784c6f7115cae220babfb3a0b77b2878d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9502,7 +9502,7 @@ $ docker pull redmine@sha256:5a55ceca05003654e12da80b5449ce55c26b3774453070a0bb0
 ## `redmine:5.0.8`
 
 ```console
-$ docker pull redmine@sha256:26f4d32be63c9f81df1f822886e9532e5e2b88b132b8df3ae9a6c9c9f5aa9280
+$ docker pull redmine@sha256:aace4f0538fd442cc4299fd7153031b784c6f7115cae220babfb3a0b77b2878d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10787,7 +10787,7 @@ $ docker pull redmine@sha256:5a55ceca05003654e12da80b5449ce55c26b3774453070a0bb0
 ## `redmine:5.0.8-alpine`
 
 ```console
-$ docker pull redmine@sha256:9071b241f905bfa6caf74be6701f6fc584f4371de9597952c2170e0fbfbdc9ed
+$ docker pull redmine@sha256:3bf2c57272d03cff3f0e6b047b910c3545274951240b532c9c41cb2d56ed5679
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11870,7 +11870,7 @@ $ docker pull redmine@sha256:b32ddf4440584c520c4d59de1e680349c65eaa68eaef41de4e5
 ## `redmine:5.0.8-alpine3.18`
 
 ```console
-$ docker pull redmine@sha256:9071b241f905bfa6caf74be6701f6fc584f4371de9597952c2170e0fbfbdc9ed
+$ docker pull redmine@sha256:3bf2c57272d03cff3f0e6b047b910c3545274951240b532c9c41cb2d56ed5679
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12953,7 +12953,7 @@ $ docker pull redmine@sha256:b32ddf4440584c520c4d59de1e680349c65eaa68eaef41de4e5
 ## `redmine:5.0.8-bookworm`
 
 ```console
-$ docker pull redmine@sha256:26f4d32be63c9f81df1f822886e9532e5e2b88b132b8df3ae9a6c9c9f5aa9280
+$ docker pull redmine@sha256:aace4f0538fd442cc4299fd7153031b784c6f7115cae220babfb3a0b77b2878d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14238,7 +14238,7 @@ $ docker pull redmine@sha256:5a55ceca05003654e12da80b5449ce55c26b3774453070a0bb0
 ## `redmine:5.1`
 
 ```console
-$ docker pull redmine@sha256:bd4c39e18acef6b4d0d3afab2d9d8ca046ee6f7b0275132c80ba976e1babf974
+$ docker pull redmine@sha256:b1461630e78753c82c015cf0f2be771bd97a9efc46b2896b3f2af97e8a76912b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15523,7 +15523,7 @@ $ docker pull redmine@sha256:173ead1a6d852a3374955fb2a7f4ffb22b1d3080a78e46f7ea9
 ## `redmine:5.1-alpine`
 
 ```console
-$ docker pull redmine@sha256:5c1733b2dbafe14af6e9bee2ac744716c6182b19fadcd951a096ef56688dfef7
+$ docker pull redmine@sha256:7845a90a14512432d006f804a157a47fe659fe653e6d20ec385b5038922ed140
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16606,7 +16606,7 @@ $ docker pull redmine@sha256:8c66b78c903c0201827696aa5deeac4de46072d7e7a5486cf0a
 ## `redmine:5.1-alpine3.18`
 
 ```console
-$ docker pull redmine@sha256:5c1733b2dbafe14af6e9bee2ac744716c6182b19fadcd951a096ef56688dfef7
+$ docker pull redmine@sha256:7845a90a14512432d006f804a157a47fe659fe653e6d20ec385b5038922ed140
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17689,7 +17689,7 @@ $ docker pull redmine@sha256:8c66b78c903c0201827696aa5deeac4de46072d7e7a5486cf0a
 ## `redmine:5.1-bookworm`
 
 ```console
-$ docker pull redmine@sha256:bd4c39e18acef6b4d0d3afab2d9d8ca046ee6f7b0275132c80ba976e1babf974
+$ docker pull redmine@sha256:b1461630e78753c82c015cf0f2be771bd97a9efc46b2896b3f2af97e8a76912b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18974,7 +18974,7 @@ $ docker pull redmine@sha256:173ead1a6d852a3374955fb2a7f4ffb22b1d3080a78e46f7ea9
 ## `redmine:5.1.2`
 
 ```console
-$ docker pull redmine@sha256:bd4c39e18acef6b4d0d3afab2d9d8ca046ee6f7b0275132c80ba976e1babf974
+$ docker pull redmine@sha256:b1461630e78753c82c015cf0f2be771bd97a9efc46b2896b3f2af97e8a76912b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20259,7 +20259,7 @@ $ docker pull redmine@sha256:173ead1a6d852a3374955fb2a7f4ffb22b1d3080a78e46f7ea9
 ## `redmine:5.1.2-alpine`
 
 ```console
-$ docker pull redmine@sha256:5c1733b2dbafe14af6e9bee2ac744716c6182b19fadcd951a096ef56688dfef7
+$ docker pull redmine@sha256:7845a90a14512432d006f804a157a47fe659fe653e6d20ec385b5038922ed140
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21342,7 +21342,7 @@ $ docker pull redmine@sha256:8c66b78c903c0201827696aa5deeac4de46072d7e7a5486cf0a
 ## `redmine:5.1.2-alpine3.18`
 
 ```console
-$ docker pull redmine@sha256:5c1733b2dbafe14af6e9bee2ac744716c6182b19fadcd951a096ef56688dfef7
+$ docker pull redmine@sha256:7845a90a14512432d006f804a157a47fe659fe653e6d20ec385b5038922ed140
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22425,7 +22425,7 @@ $ docker pull redmine@sha256:8c66b78c903c0201827696aa5deeac4de46072d7e7a5486cf0a
 ## `redmine:5.1.2-bookworm`
 
 ```console
-$ docker pull redmine@sha256:bd4c39e18acef6b4d0d3afab2d9d8ca046ee6f7b0275132c80ba976e1babf974
+$ docker pull redmine@sha256:b1461630e78753c82c015cf0f2be771bd97a9efc46b2896b3f2af97e8a76912b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23710,7 +23710,7 @@ $ docker pull redmine@sha256:173ead1a6d852a3374955fb2a7f4ffb22b1d3080a78e46f7ea9
 ## `redmine:alpine`
 
 ```console
-$ docker pull redmine@sha256:5c1733b2dbafe14af6e9bee2ac744716c6182b19fadcd951a096ef56688dfef7
+$ docker pull redmine@sha256:7845a90a14512432d006f804a157a47fe659fe653e6d20ec385b5038922ed140
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24793,7 +24793,7 @@ $ docker pull redmine@sha256:8c66b78c903c0201827696aa5deeac4de46072d7e7a5486cf0a
 ## `redmine:alpine3.18`
 
 ```console
-$ docker pull redmine@sha256:5c1733b2dbafe14af6e9bee2ac744716c6182b19fadcd951a096ef56688dfef7
+$ docker pull redmine@sha256:7845a90a14512432d006f804a157a47fe659fe653e6d20ec385b5038922ed140
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25876,7 +25876,7 @@ $ docker pull redmine@sha256:8c66b78c903c0201827696aa5deeac4de46072d7e7a5486cf0a
 ## `redmine:bookworm`
 
 ```console
-$ docker pull redmine@sha256:bd4c39e18acef6b4d0d3afab2d9d8ca046ee6f7b0275132c80ba976e1babf974
+$ docker pull redmine@sha256:b1461630e78753c82c015cf0f2be771bd97a9efc46b2896b3f2af97e8a76912b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27161,7 +27161,7 @@ $ docker pull redmine@sha256:173ead1a6d852a3374955fb2a7f4ffb22b1d3080a78e46f7ea9
 ## `redmine:latest`
 
 ```console
-$ docker pull redmine@sha256:bd4c39e18acef6b4d0d3afab2d9d8ca046ee6f7b0275132c80ba976e1babf974
+$ docker pull redmine@sha256:b1461630e78753c82c015cf0f2be771bd97a9efc46b2896b3f2af97e8a76912b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
