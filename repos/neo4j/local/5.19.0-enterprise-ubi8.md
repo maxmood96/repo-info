@@ -1,10 +1,10 @@
-# `neo4j:5.18.1-enterprise-ubi8`
+# `neo4j:5.19.0-enterprise-ubi8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:20263cfa9aaae7114b8a5e314d98325104d8c1b9f969dfcb22ec79b6fac1fde4`
-- Created: `2024-03-18T11:02:14Z`
-- Virtual Size: ~ 951.18 Mb  
+- Image ID: `sha256:c8741b07b1bd0088bf10a2a4d0b0dfd7b475bf61efd57b0426f836afda8c7dd7`
+- Created: `2024-04-12T11:14:18Z`
+- Virtual Size: ~ 925.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -13,13 +13,13 @@
   - `PATH=/var/lib/neo4j/bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
   - `JAVA_HOME=/usr`
-  - `NEO4J_SHA256=a2ab866be05d2decef558b3e711c4b4403f3a35be6b87f7b94c618bb83b8f7c3`
-  - `NEO4J_TARBALL=neo4j-enterprise-5.18.1-unix.tar.gz`
+  - `NEO4J_SHA256=6dc5af32f8e01f1cb8f8618d1314d91713172db14f53c695b77ca733ff504356`
+  - `NEO4J_TARBALL=neo4j-enterprise-5.19.0-unix.tar.gz`
   - `NEO4J_EDITION=enterprise`
   - `NEO4J_HOME=/var/lib/neo4j`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-02-01T13:45:18`
+  - `build-date=2024-03-27T02:10:48`
   - `com.redhat.component=ubi8-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -31,9 +31,9 @@
   - `io.openshift.tags=minimal rhel8`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi8-minimal`
-  - `release=1108.1706795067`
+  - `release=1161`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 8.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8-minimal/images/8.9-1108.1706795067`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8-minimal/images/8.9-1161`
   - `vcs-ref=7e7670a8c8c9a3be83beaa2787f3703b404d4a1d`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -203,7 +203,7 @@ Licenses (from `rpm --query`): LGPLv2 and zlib
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `curl-7.61.1-33.el8.x86_64`
+### `rpm` package: `curl-7.61.1-33.el8_9.5.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -317,7 +317,7 @@ Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `expat-2.2.5-11.el8.x86_64`
+### `rpm` package: `expat-2.2.5-11.el8_9.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -419,25 +419,13 @@ Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ an
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-gconv-extra-2.28-236.el8_9.12.x86_64`
-
-Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `glibc-langpack-en-2.28-236.el8_9.12.x86_64`
-
-Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
 ### `rpm` package: `glibc-minimal-langpack-2.28-236.el8_9.12.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `gmp-6.1.2-10.el8.x86_64`
+### `rpm` package: `gmp-6.1.2-11.el8_8.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv3+ or GPLv2+
 
@@ -731,7 +719,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libblkid-2.32.1-43.el8.x86_64`
+### `rpm` package: `libblkid-2.32.1-44.el8_9.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -761,7 +749,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libcurl-7.61.1-33.el8.x86_64`
+### `rpm` package: `libcurl-7.61.1-33.el8_9.5.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -803,7 +791,7 @@ Licenses (from `rpm --query`): BSD and ISC
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libfdisk-2.32.1-43.el8.x86_64`
+### `rpm` package: `libfdisk-2.32.1-44.el8_9.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -881,7 +869,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libmount-2.32.1-43.el8.x86_64`
+### `rpm` package: `libmount-2.32.1-44.el8_9.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -983,7 +971,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libsmartcols-2.32.1-43.el8.x86_64`
+### `rpm` package: `libsmartcols-2.32.1-44.el8_9.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -1061,7 +1049,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libuuid-2.32.1-43.el8.x86_64`
+### `rpm` package: `libuuid-2.32.1-44.el8_9.1.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
@@ -1307,7 +1295,7 @@ Licenses (from `rpm --query`): Python
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `platform-python-pip-9.0.3-23.el8.noarch`
+### `rpm` package: `platform-python-pip-9.0.3-23.el8_9.1.noarch`
 
 Licenses (from `rpm --query`): MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0 or BSD)
 
@@ -1373,7 +1361,7 @@ Licenses (from `rpm --query`): Python
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-pip-wheel-9.0.3-23.el8.noarch`
+### `rpm` package: `python3-pip-wheel-9.0.3-23.el8_9.1.noarch`
 
 Licenses (from `rpm --query`): MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0 or BSD)
 
@@ -1391,7 +1379,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-unbound-1.16.2-5.el8_9.2.x86_64`
+### `rpm` package: `python3-unbound-1.16.2-5.el8_9.6.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
@@ -1517,13 +1505,13 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `unbound-libs-1.16.2-5.el8_9.2.x86_64`
+### `rpm` package: `unbound-libs-1.16.2-5.el8_9.6.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `util-linux-2.32.1-43.el8.x86_64`
+### `rpm` package: `util-linux-2.32.1-44.el8_9.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2 and GPLv2+ and LGPLv2+ and BSD with advertising and Public Domain
 
