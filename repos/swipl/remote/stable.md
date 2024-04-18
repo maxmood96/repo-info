@@ -1,7 +1,7 @@
 ## `swipl:stable`
 
 ```console
-$ docker pull swipl@sha256:8bfe511362d9cd039f466533a64e27c01919ee27844746923de994b1cb6c950d
+$ docker pull swipl@sha256:7e36a284d2fcda45b713a556ad15e35d1c98c7b3b4d01cd2701b8ed58ab2b47d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

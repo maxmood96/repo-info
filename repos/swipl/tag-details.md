@@ -10,7 +10,7 @@
 ## `swipl:9.2.3`
 
 ```console
-$ docker pull swipl@sha256:8bfe511362d9cd039f466533a64e27c01919ee27844746923de994b1cb6c950d
+$ docker pull swipl@sha256:7e36a284d2fcda45b713a556ad15e35d1c98c7b3b4d01cd2701b8ed58ab2b47d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -226,7 +226,7 @@ $ docker pull swipl@sha256:6e391bb1ba33ed7eecf647bf34f2005c7da070fcf4d6c511dc13c
 ## `swipl:9.3.2`
 
 ```console
-$ docker pull swipl@sha256:2b6a9e857d9fdaecded1e204bfa316f51c2b00d5a978421d74ba1254b1cbb6e0
+$ docker pull swipl@sha256:c0af25bec5be8c6d7162f74e6334d70c4109e63f146c9a61965d9aff661c28d7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -442,7 +442,7 @@ $ docker pull swipl@sha256:4907a027897c59d76f58412ccb8ee5e9cdef252714d7f5af39ff5
 ## `swipl:latest`
 
 ```console
-$ docker pull swipl@sha256:2b6a9e857d9fdaecded1e204bfa316f51c2b00d5a978421d74ba1254b1cbb6e0
+$ docker pull swipl@sha256:c0af25bec5be8c6d7162f74e6334d70c4109e63f146c9a61965d9aff661c28d7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -658,7 +658,7 @@ $ docker pull swipl@sha256:4907a027897c59d76f58412ccb8ee5e9cdef252714d7f5af39ff5
 ## `swipl:stable`
 
 ```console
-$ docker pull swipl@sha256:8bfe511362d9cd039f466533a64e27c01919ee27844746923de994b1cb6c950d
+$ docker pull swipl@sha256:7e36a284d2fcda45b713a556ad15e35d1c98c7b3b4d01cd2701b8ed58ab2b47d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
