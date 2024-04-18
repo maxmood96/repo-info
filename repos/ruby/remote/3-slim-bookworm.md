@@ -1,7 +1,7 @@
 ## `ruby:3-slim-bookworm`
 
 ```console
-$ docker pull ruby@sha256:a3f580e963eaa9d8c49b91fc1935292b71c2be4cc8132d11fc35f680c79bf49f
+$ docker pull ruby@sha256:14a522eca826040d1fb3035ac0195f7a09d402eb10708b64166ff8b968a648d8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

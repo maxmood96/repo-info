@@ -1,7 +1,7 @@
 ## `ruby:3-alpine3.19`
 
 ```console
-$ docker pull ruby@sha256:27013907b6320c9a8576c2b4784bce64f84de4ca14f87f9149def1200f2db378
+$ docker pull ruby@sha256:98905a43c515e1efd81e02fc91f1b6c0242f9268e76cd6897426ee9b7f8e8c4f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
