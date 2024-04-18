@@ -1,7 +1,7 @@
 ## `ghost:5-alpine`
 
 ```console
-$ docker pull ghost@sha256:17c233c6eebb1e65b123edbb7638683fc016d573a96d4429a5cfe21e0344e424
+$ docker pull ghost@sha256:1935a74277c556022eb461a2a6a604f6687cc885df740622e4e375f2080420af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
