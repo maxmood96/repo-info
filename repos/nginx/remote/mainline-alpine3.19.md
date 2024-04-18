@@ -1,7 +1,7 @@
 ## `nginx:mainline-alpine3.19`
 
 ```console
-$ docker pull nginx@sha256:5c3aa130b70df4e6061405b0d81de66a998858a51cf39102d646ac2976bc4690
+$ docker pull nginx@sha256:e9e0c3a702f02406384e0d7b0a1d4e7aa7fbc3c92c2ef158b183df73f185792b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

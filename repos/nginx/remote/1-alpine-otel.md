@@ -1,7 +1,7 @@
 ## `nginx:1-alpine-otel`
 
 ```console
-$ docker pull nginx@sha256:54c11a730725ab626c49b4601b5e63d5828c535192b51f7ec3d905ffbb4f0c6d
+$ docker pull nginx@sha256:206352020cedde3c3892813cb5200cab5a7e57271f34874e1c502f5ff4283ea9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
