@@ -1,7 +1,7 @@
 ## `notary:server-0.7.0`
 
 ```console
-$ docker pull notary@sha256:7f9417095e8d91f600dbe9179dc423ac3088e5775006e17c9f3f29dbe934e2fd
+$ docker pull notary@sha256:ad27fdef19a8ac6ea2ce141adc7dd7d6ecfa757d831a908981bcf205098278a4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

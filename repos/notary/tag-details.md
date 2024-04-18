@@ -10,7 +10,7 @@
 ## `notary:server`
 
 ```console
-$ docker pull notary@sha256:7f9417095e8d91f600dbe9179dc423ac3088e5775006e17c9f3f29dbe934e2fd
+$ docker pull notary@sha256:ad27fdef19a8ac6ea2ce141adc7dd7d6ecfa757d831a908981bcf205098278a4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -627,7 +627,7 @@ $ docker pull notary@sha256:e36fe9031fac344e10d25b12c04cdd67465ee955527de5f402c6
 ## `notary:server-0.7.0`
 
 ```console
-$ docker pull notary@sha256:7f9417095e8d91f600dbe9179dc423ac3088e5775006e17c9f3f29dbe934e2fd
+$ docker pull notary@sha256:ad27fdef19a8ac6ea2ce141adc7dd7d6ecfa757d831a908981bcf205098278a4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1244,7 +1244,7 @@ $ docker pull notary@sha256:e36fe9031fac344e10d25b12c04cdd67465ee955527de5f402c6
 ## `notary:signer`
 
 ```console
-$ docker pull notary@sha256:ef5b4a77a350eb0256550240ad4d905d0634e954cb6aede92acd4d891ab0d3a5
+$ docker pull notary@sha256:62178bbf11d4418d02d8a41f9fd419e95d66e11c5b00909f8638e8673fc4cb00
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1873,7 +1873,7 @@ $ docker pull notary@sha256:e8326eb34838897b53c80aaab771af4cc16c0298768228f8cc4b
 ## `notary:signer-0.7.0`
 
 ```console
-$ docker pull notary@sha256:ef5b4a77a350eb0256550240ad4d905d0634e954cb6aede92acd4d891ab0d3a5
+$ docker pull notary@sha256:62178bbf11d4418d02d8a41f9fd419e95d66e11c5b00909f8638e8673fc4cb00
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
