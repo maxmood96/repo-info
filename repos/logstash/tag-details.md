@@ -8,7 +8,7 @@
 ## `logstash:7.17.20`
 
 ```console
-$ docker pull logstash@sha256:7aca31b79b8a92bde84a410f016364aa45d91ac291b75f7a7981772cc3bfa291
+$ docker pull logstash@sha256:850c47b37309af8d386566e9bcdb6c540bb02e161bd2906b66d8394d547dea73
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -307,7 +307,7 @@ $ docker pull logstash@sha256:65a9014e803de8e51926be497091784e0cc24ab534ec9a877e
 ## `logstash:8.13.0`
 
 ```console
-$ docker pull logstash@sha256:9912c7bdbada8a196eddc1438f873fc6c622135f466603e8a35aebbc2c38342c
+$ docker pull logstash@sha256:9e1025206d85a0a6dac4f693fba95f402de56efe5f9c849af3e8c45210160463
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
