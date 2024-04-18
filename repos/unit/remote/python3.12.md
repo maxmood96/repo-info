@@ -1,7 +1,7 @@
 ## `unit:python3.12`
 
 ```console
-$ docker pull unit@sha256:47db2726be8a06190ea3de2bc38a28f00a275e851d3569545097114d538c2e86
+$ docker pull unit@sha256:f1f543cfdefef3f29e698e69d72392119a6d1f2a987357d2d85d6e77572fe391
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

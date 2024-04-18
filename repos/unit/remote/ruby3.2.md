@@ -1,7 +1,7 @@
 ## `unit:ruby3.2`
 
 ```console
-$ docker pull unit@sha256:223b45317770f38c102fc6df70f10d782ea028eb5afac859b0b7557f14ebbe07
+$ docker pull unit@sha256:ffaeb2e21c897ea4b3a16f5388aa38ed4ad9b14518fd03b1c383e008819ad194
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

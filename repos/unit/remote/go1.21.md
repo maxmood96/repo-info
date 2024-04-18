@@ -1,7 +1,7 @@
 ## `unit:go1.21`
 
 ```console
-$ docker pull unit@sha256:286f6b0437f5f09905420bb5b5aefd7baf54edc6a4266f56b08eddd0c2bb2272
+$ docker pull unit@sha256:6dc3b128906d5e11f9de332edd8a576f19466e43b5d23e6c8a6d45fccbb3aa94
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

@@ -1,7 +1,7 @@
 ## `unit:php8`
 
 ```console
-$ docker pull unit@sha256:6d72fa741ae63fc807204a2262edcc1b480c7fcfbe3c182891e6f4b8a524c9c8
+$ docker pull unit@sha256:6d6d7c472e5c26ba41393cb45e21801a0d747fde0715d96fd396aaa85babf9ad
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

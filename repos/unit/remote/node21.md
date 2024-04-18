@@ -1,7 +1,7 @@
 ## `unit:node21`
 
 ```console
-$ docker pull unit@sha256:d59a03cf4f89f64bd5164c07d7169648c59750d5a8eff8357bea2b50aac0e471
+$ docker pull unit@sha256:d9cc13f935c7b9276c9085af69a7b033239bafe136a3e2064cf717bbedb5747b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

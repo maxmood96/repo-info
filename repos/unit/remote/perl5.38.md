@@ -1,7 +1,7 @@
 ## `unit:perl5.38`
 
 ```console
-$ docker pull unit@sha256:05d3f6c8fdeaf0ff166beba3709422559d7f97d65a153af3932cdef0618af8e5
+$ docker pull unit@sha256:033aa52586cd1fbfc1389819df6bb89280a7be596328be691435527c6a8e17fd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
