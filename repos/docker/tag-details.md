@@ -91,7 +91,7 @@
 ## `docker:24`
 
 ```console
-$ docker pull docker@sha256:075c18ab4f44c5d5c9d40c736e479a34020420e77f9740b23107be70ff358ab3
+$ docker pull docker@sha256:3b4f65bd487d3061955e8413899402e0f6e590f12d43a0205a3ebd61170a304f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -748,7 +748,7 @@ $ docker pull docker@sha256:d3a2cd8007a07c6a1820cff96adba0ef9b576c310f458dc24051
 ## `docker:24-cli`
 
 ```console
-$ docker pull docker@sha256:4327131038396768050373a93fd07c14d57dff73fd9eb0e5b83824058a5d1564
+$ docker pull docker@sha256:240dd795ed5ee2fe041508f894174a5b867f22dfcfac8bd1aa550f5ecbb3d839
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1225,7 +1225,7 @@ $ docker pull docker@sha256:aed9c22324e86a817384e2a3438b2f9c42b8b183705d61105bcf
 ## `docker:24-dind`
 
 ```console
-$ docker pull docker@sha256:075c18ab4f44c5d5c9d40c736e479a34020420e77f9740b23107be70ff358ab3
+$ docker pull docker@sha256:3b4f65bd487d3061955e8413899402e0f6e590f12d43a0205a3ebd61170a304f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2285,7 +2285,7 @@ $ docker pull docker@sha256:2d02c7beb755e32f45ffeb9e79674f2e92b902d0f22e26a3bb9a
 ## `docker:24-git`
 
 ```console
-$ docker pull docker@sha256:075c18ab4f44c5d5c9d40c736e479a34020420e77f9740b23107be70ff358ab3
+$ docker pull docker@sha256:3b4f65bd487d3061955e8413899402e0f6e590f12d43a0205a3ebd61170a304f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3409,7 +3409,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 ## `docker:24.0`
 
 ```console
-$ docker pull docker@sha256:075c18ab4f44c5d5c9d40c736e479a34020420e77f9740b23107be70ff358ab3
+$ docker pull docker@sha256:3b4f65bd487d3061955e8413899402e0f6e590f12d43a0205a3ebd61170a304f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4066,7 +4066,7 @@ $ docker pull docker@sha256:d3a2cd8007a07c6a1820cff96adba0ef9b576c310f458dc24051
 ## `docker:24.0-cli`
 
 ```console
-$ docker pull docker@sha256:4327131038396768050373a93fd07c14d57dff73fd9eb0e5b83824058a5d1564
+$ docker pull docker@sha256:240dd795ed5ee2fe041508f894174a5b867f22dfcfac8bd1aa550f5ecbb3d839
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4543,7 +4543,7 @@ $ docker pull docker@sha256:aed9c22324e86a817384e2a3438b2f9c42b8b183705d61105bcf
 ## `docker:24.0-dind`
 
 ```console
-$ docker pull docker@sha256:075c18ab4f44c5d5c9d40c736e479a34020420e77f9740b23107be70ff358ab3
+$ docker pull docker@sha256:3b4f65bd487d3061955e8413899402e0f6e590f12d43a0205a3ebd61170a304f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5603,7 +5603,7 @@ $ docker pull docker@sha256:2d02c7beb755e32f45ffeb9e79674f2e92b902d0f22e26a3bb9a
 ## `docker:24.0-git`
 
 ```console
-$ docker pull docker@sha256:075c18ab4f44c5d5c9d40c736e479a34020420e77f9740b23107be70ff358ab3
+$ docker pull docker@sha256:3b4f65bd487d3061955e8413899402e0f6e590f12d43a0205a3ebd61170a304f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6727,7 +6727,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 ## `docker:24.0.9`
 
 ```console
-$ docker pull docker@sha256:075c18ab4f44c5d5c9d40c736e479a34020420e77f9740b23107be70ff358ab3
+$ docker pull docker@sha256:3b4f65bd487d3061955e8413899402e0f6e590f12d43a0205a3ebd61170a304f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7384,7 +7384,7 @@ $ docker pull docker@sha256:d3a2cd8007a07c6a1820cff96adba0ef9b576c310f458dc24051
 ## `docker:24.0.9-alpine3.19`
 
 ```console
-$ docker pull docker@sha256:075c18ab4f44c5d5c9d40c736e479a34020420e77f9740b23107be70ff358ab3
+$ docker pull docker@sha256:3b4f65bd487d3061955e8413899402e0f6e590f12d43a0205a3ebd61170a304f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8041,7 +8041,7 @@ $ docker pull docker@sha256:d3a2cd8007a07c6a1820cff96adba0ef9b576c310f458dc24051
 ## `docker:24.0.9-cli`
 
 ```console
-$ docker pull docker@sha256:4327131038396768050373a93fd07c14d57dff73fd9eb0e5b83824058a5d1564
+$ docker pull docker@sha256:240dd795ed5ee2fe041508f894174a5b867f22dfcfac8bd1aa550f5ecbb3d839
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8518,7 +8518,7 @@ $ docker pull docker@sha256:aed9c22324e86a817384e2a3438b2f9c42b8b183705d61105bcf
 ## `docker:24.0.9-cli-alpine3.19`
 
 ```console
-$ docker pull docker@sha256:4327131038396768050373a93fd07c14d57dff73fd9eb0e5b83824058a5d1564
+$ docker pull docker@sha256:240dd795ed5ee2fe041508f894174a5b867f22dfcfac8bd1aa550f5ecbb3d839
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8995,7 +8995,7 @@ $ docker pull docker@sha256:aed9c22324e86a817384e2a3438b2f9c42b8b183705d61105bcf
 ## `docker:24.0.9-dind`
 
 ```console
-$ docker pull docker@sha256:075c18ab4f44c5d5c9d40c736e479a34020420e77f9740b23107be70ff358ab3
+$ docker pull docker@sha256:3b4f65bd487d3061955e8413899402e0f6e590f12d43a0205a3ebd61170a304f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9652,7 +9652,7 @@ $ docker pull docker@sha256:d3a2cd8007a07c6a1820cff96adba0ef9b576c310f458dc24051
 ## `docker:24.0.9-dind-alpine3.19`
 
 ```console
-$ docker pull docker@sha256:075c18ab4f44c5d5c9d40c736e479a34020420e77f9740b23107be70ff358ab3
+$ docker pull docker@sha256:3b4f65bd487d3061955e8413899402e0f6e590f12d43a0205a3ebd61170a304f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10712,7 +10712,7 @@ $ docker pull docker@sha256:2d02c7beb755e32f45ffeb9e79674f2e92b902d0f22e26a3bb9a
 ## `docker:24.0.9-git`
 
 ```console
-$ docker pull docker@sha256:075c18ab4f44c5d5c9d40c736e479a34020420e77f9740b23107be70ff358ab3
+$ docker pull docker@sha256:3b4f65bd487d3061955e8413899402e0f6e590f12d43a0205a3ebd61170a304f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11836,7 +11836,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 ## `docker:25`
 
 ```console
-$ docker pull docker@sha256:f92968c91f19a385dd92c8e34b7fecec4b443e6e20c8bfc89ba304759ac660bc
+$ docker pull docker@sha256:cee07ab3981e10ff7f107b77cf2003aa4b2b2d85f895ea5d78270932d8d56c81
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12493,7 +12493,7 @@ $ docker pull docker@sha256:e29bbb566e1b0cf41b2a2d70496de1bc3208697d85ab6d134fc5
 ## `docker:25-cli`
 
 ```console
-$ docker pull docker@sha256:1edcbd17d14ca58f1541e86bfa7a08533bd0ceea336a337b49587559b10ab568
+$ docker pull docker@sha256:ec7d71bebe1e2b1ca8f6d53061dfe2a5a021c74750803009abca6651afc621e9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12970,7 +12970,7 @@ $ docker pull docker@sha256:a597526a38aa3a5ba4af8614210594fcd2c10623101cc309032a
 ## `docker:25-dind`
 
 ```console
-$ docker pull docker@sha256:f92968c91f19a385dd92c8e34b7fecec4b443e6e20c8bfc89ba304759ac660bc
+$ docker pull docker@sha256:cee07ab3981e10ff7f107b77cf2003aa4b2b2d85f895ea5d78270932d8d56c81
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14030,7 +14030,7 @@ $ docker pull docker@sha256:3332edbc6376e8e651eece21054ef89f91a54826665fb7994b23
 ## `docker:25-git`
 
 ```console
-$ docker pull docker@sha256:f92968c91f19a385dd92c8e34b7fecec4b443e6e20c8bfc89ba304759ac660bc
+$ docker pull docker@sha256:cee07ab3981e10ff7f107b77cf2003aa4b2b2d85f895ea5d78270932d8d56c81
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15154,7 +15154,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 ## `docker:25.0`
 
 ```console
-$ docker pull docker@sha256:f92968c91f19a385dd92c8e34b7fecec4b443e6e20c8bfc89ba304759ac660bc
+$ docker pull docker@sha256:cee07ab3981e10ff7f107b77cf2003aa4b2b2d85f895ea5d78270932d8d56c81
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15811,7 +15811,7 @@ $ docker pull docker@sha256:e29bbb566e1b0cf41b2a2d70496de1bc3208697d85ab6d134fc5
 ## `docker:25.0-cli`
 
 ```console
-$ docker pull docker@sha256:1edcbd17d14ca58f1541e86bfa7a08533bd0ceea336a337b49587559b10ab568
+$ docker pull docker@sha256:ec7d71bebe1e2b1ca8f6d53061dfe2a5a021c74750803009abca6651afc621e9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16288,7 +16288,7 @@ $ docker pull docker@sha256:a597526a38aa3a5ba4af8614210594fcd2c10623101cc309032a
 ## `docker:25.0-dind`
 
 ```console
-$ docker pull docker@sha256:f92968c91f19a385dd92c8e34b7fecec4b443e6e20c8bfc89ba304759ac660bc
+$ docker pull docker@sha256:cee07ab3981e10ff7f107b77cf2003aa4b2b2d85f895ea5d78270932d8d56c81
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17348,7 +17348,7 @@ $ docker pull docker@sha256:3332edbc6376e8e651eece21054ef89f91a54826665fb7994b23
 ## `docker:25.0-git`
 
 ```console
-$ docker pull docker@sha256:f92968c91f19a385dd92c8e34b7fecec4b443e6e20c8bfc89ba304759ac660bc
+$ docker pull docker@sha256:cee07ab3981e10ff7f107b77cf2003aa4b2b2d85f895ea5d78270932d8d56c81
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18472,7 +18472,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 ## `docker:25.0.5`
 
 ```console
-$ docker pull docker@sha256:f92968c91f19a385dd92c8e34b7fecec4b443e6e20c8bfc89ba304759ac660bc
+$ docker pull docker@sha256:cee07ab3981e10ff7f107b77cf2003aa4b2b2d85f895ea5d78270932d8d56c81
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19129,7 +19129,7 @@ $ docker pull docker@sha256:e29bbb566e1b0cf41b2a2d70496de1bc3208697d85ab6d134fc5
 ## `docker:25.0.5-alpine3.19`
 
 ```console
-$ docker pull docker@sha256:f92968c91f19a385dd92c8e34b7fecec4b443e6e20c8bfc89ba304759ac660bc
+$ docker pull docker@sha256:cee07ab3981e10ff7f107b77cf2003aa4b2b2d85f895ea5d78270932d8d56c81
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19786,7 +19786,7 @@ $ docker pull docker@sha256:e29bbb566e1b0cf41b2a2d70496de1bc3208697d85ab6d134fc5
 ## `docker:25.0.5-cli`
 
 ```console
-$ docker pull docker@sha256:1edcbd17d14ca58f1541e86bfa7a08533bd0ceea336a337b49587559b10ab568
+$ docker pull docker@sha256:ec7d71bebe1e2b1ca8f6d53061dfe2a5a021c74750803009abca6651afc621e9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20263,7 +20263,7 @@ $ docker pull docker@sha256:a597526a38aa3a5ba4af8614210594fcd2c10623101cc309032a
 ## `docker:25.0.5-cli-alpine3.19`
 
 ```console
-$ docker pull docker@sha256:1edcbd17d14ca58f1541e86bfa7a08533bd0ceea336a337b49587559b10ab568
+$ docker pull docker@sha256:ec7d71bebe1e2b1ca8f6d53061dfe2a5a021c74750803009abca6651afc621e9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20740,7 +20740,7 @@ $ docker pull docker@sha256:a597526a38aa3a5ba4af8614210594fcd2c10623101cc309032a
 ## `docker:25.0.5-dind`
 
 ```console
-$ docker pull docker@sha256:f92968c91f19a385dd92c8e34b7fecec4b443e6e20c8bfc89ba304759ac660bc
+$ docker pull docker@sha256:cee07ab3981e10ff7f107b77cf2003aa4b2b2d85f895ea5d78270932d8d56c81
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21397,7 +21397,7 @@ $ docker pull docker@sha256:e29bbb566e1b0cf41b2a2d70496de1bc3208697d85ab6d134fc5
 ## `docker:25.0.5-dind-alpine3.19`
 
 ```console
-$ docker pull docker@sha256:f92968c91f19a385dd92c8e34b7fecec4b443e6e20c8bfc89ba304759ac660bc
+$ docker pull docker@sha256:cee07ab3981e10ff7f107b77cf2003aa4b2b2d85f895ea5d78270932d8d56c81
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22457,7 +22457,7 @@ $ docker pull docker@sha256:3332edbc6376e8e651eece21054ef89f91a54826665fb7994b23
 ## `docker:25.0.5-git`
 
 ```console
-$ docker pull docker@sha256:f92968c91f19a385dd92c8e34b7fecec4b443e6e20c8bfc89ba304759ac660bc
+$ docker pull docker@sha256:cee07ab3981e10ff7f107b77cf2003aa4b2b2d85f895ea5d78270932d8d56c81
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23581,7 +23581,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 ## `docker:26`
 
 ```console
-$ docker pull docker@sha256:6c14c5009447b4c0610880fd61cf8c2f7f50acf3e310ff1e2dd8413953067737
+$ docker pull docker@sha256:12b3a58c977a087514382df904f2af4f24f958fbaee86e81ba3fb092a5baa880
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24238,7 +24238,7 @@ $ docker pull docker@sha256:1d48de40cadd26d749aff3b67608b76955ab8974c225ba3bc1a4
 ## `docker:26-cli`
 
 ```console
-$ docker pull docker@sha256:53c143f40c5b47144e7ac34dde9647c2fc5160712d62b15e95eab52caed47f75
+$ docker pull docker@sha256:7484c21adbb0d62b79128386fd7ca4189420b37837962443ffdbcbb36f8c5d8c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24715,7 +24715,7 @@ $ docker pull docker@sha256:3e7b61ea5a7726a03f0fb6d52707611d599a9e92bc3812e2b1f8
 ## `docker:26-dind`
 
 ```console
-$ docker pull docker@sha256:6c14c5009447b4c0610880fd61cf8c2f7f50acf3e310ff1e2dd8413953067737
+$ docker pull docker@sha256:12b3a58c977a087514382df904f2af4f24f958fbaee86e81ba3fb092a5baa880
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26242,7 +26242,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 ## `docker:26.0`
 
 ```console
-$ docker pull docker@sha256:6c14c5009447b4c0610880fd61cf8c2f7f50acf3e310ff1e2dd8413953067737
+$ docker pull docker@sha256:12b3a58c977a087514382df904f2af4f24f958fbaee86e81ba3fb092a5baa880
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26899,7 +26899,7 @@ $ docker pull docker@sha256:1d48de40cadd26d749aff3b67608b76955ab8974c225ba3bc1a4
 ## `docker:26.0-cli`
 
 ```console
-$ docker pull docker@sha256:53c143f40c5b47144e7ac34dde9647c2fc5160712d62b15e95eab52caed47f75
+$ docker pull docker@sha256:7484c21adbb0d62b79128386fd7ca4189420b37837962443ffdbcbb36f8c5d8c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27376,7 +27376,7 @@ $ docker pull docker@sha256:3e7b61ea5a7726a03f0fb6d52707611d599a9e92bc3812e2b1f8
 ## `docker:26.0-dind`
 
 ```console
-$ docker pull docker@sha256:6c14c5009447b4c0610880fd61cf8c2f7f50acf3e310ff1e2dd8413953067737
+$ docker pull docker@sha256:12b3a58c977a087514382df904f2af4f24f958fbaee86e81ba3fb092a5baa880
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28903,7 +28903,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 ## `docker:26.0.1`
 
 ```console
-$ docker pull docker@sha256:6c14c5009447b4c0610880fd61cf8c2f7f50acf3e310ff1e2dd8413953067737
+$ docker pull docker@sha256:12b3a58c977a087514382df904f2af4f24f958fbaee86e81ba3fb092a5baa880
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29560,7 +29560,7 @@ $ docker pull docker@sha256:1d48de40cadd26d749aff3b67608b76955ab8974c225ba3bc1a4
 ## `docker:26.0.1-alpine3.19`
 
 ```console
-$ docker pull docker@sha256:6c14c5009447b4c0610880fd61cf8c2f7f50acf3e310ff1e2dd8413953067737
+$ docker pull docker@sha256:12b3a58c977a087514382df904f2af4f24f958fbaee86e81ba3fb092a5baa880
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30217,7 +30217,7 @@ $ docker pull docker@sha256:1d48de40cadd26d749aff3b67608b76955ab8974c225ba3bc1a4
 ## `docker:26.0.1-cli`
 
 ```console
-$ docker pull docker@sha256:53c143f40c5b47144e7ac34dde9647c2fc5160712d62b15e95eab52caed47f75
+$ docker pull docker@sha256:7484c21adbb0d62b79128386fd7ca4189420b37837962443ffdbcbb36f8c5d8c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30694,7 +30694,7 @@ $ docker pull docker@sha256:3e7b61ea5a7726a03f0fb6d52707611d599a9e92bc3812e2b1f8
 ## `docker:26.0.1-cli-alpine3.19`
 
 ```console
-$ docker pull docker@sha256:53c143f40c5b47144e7ac34dde9647c2fc5160712d62b15e95eab52caed47f75
+$ docker pull docker@sha256:7484c21adbb0d62b79128386fd7ca4189420b37837962443ffdbcbb36f8c5d8c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -31171,7 +31171,7 @@ $ docker pull docker@sha256:3e7b61ea5a7726a03f0fb6d52707611d599a9e92bc3812e2b1f8
 ## `docker:26.0.1-dind`
 
 ```console
-$ docker pull docker@sha256:6c14c5009447b4c0610880fd61cf8c2f7f50acf3e310ff1e2dd8413953067737
+$ docker pull docker@sha256:12b3a58c977a087514382df904f2af4f24f958fbaee86e81ba3fb092a5baa880
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -31828,7 +31828,7 @@ $ docker pull docker@sha256:1d48de40cadd26d749aff3b67608b76955ab8974c225ba3bc1a4
 ## `docker:26.0.1-dind-alpine3.19`
 
 ```console
-$ docker pull docker@sha256:6c14c5009447b4c0610880fd61cf8c2f7f50acf3e310ff1e2dd8413953067737
+$ docker pull docker@sha256:12b3a58c977a087514382df904f2af4f24f958fbaee86e81ba3fb092a5baa880
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33355,7 +33355,7 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 ## `docker:cli`
 
 ```console
-$ docker pull docker@sha256:53c143f40c5b47144e7ac34dde9647c2fc5160712d62b15e95eab52caed47f75
+$ docker pull docker@sha256:7484c21adbb0d62b79128386fd7ca4189420b37837962443ffdbcbb36f8c5d8c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33832,7 +33832,7 @@ $ docker pull docker@sha256:3e7b61ea5a7726a03f0fb6d52707611d599a9e92bc3812e2b1f8
 ## `docker:dind`
 
 ```console
-$ docker pull docker@sha256:6c14c5009447b4c0610880fd61cf8c2f7f50acf3e310ff1e2dd8413953067737
+$ docker pull docker@sha256:12b3a58c977a087514382df904f2af4f24f958fbaee86e81ba3fb092a5baa880
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -34892,7 +34892,7 @@ $ docker pull docker@sha256:61bca444390a9b4ca5e01fd4c99ad2cbec1a88a40d5ae64b110c
 ## `docker:latest`
 
 ```console
-$ docker pull docker@sha256:6c14c5009447b4c0610880fd61cf8c2f7f50acf3e310ff1e2dd8413953067737
+$ docker pull docker@sha256:12b3a58c977a087514382df904f2af4f24f958fbaee86e81ba3fb092a5baa880
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
