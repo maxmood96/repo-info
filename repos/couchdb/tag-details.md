@@ -17,7 +17,7 @@
 ## `couchdb:2`
 
 ```console
-$ docker pull couchdb@sha256:d921350e5174f27a479b3a45effa61c52990928e420656b655ad0d69ef6df738
+$ docker pull couchdb@sha256:43c7fb459180edbf8a6832e93bb9d233cf0e4c7c55f0a77d0d7b7e562c389fda
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -278,7 +278,7 @@ $ docker pull couchdb@sha256:3fee5fdef3441f245ea91ab0a943d6a2b295f31d8e8c39279a1
 ## `couchdb:2.3`
 
 ```console
-$ docker pull couchdb@sha256:d921350e5174f27a479b3a45effa61c52990928e420656b655ad0d69ef6df738
+$ docker pull couchdb@sha256:43c7fb459180edbf8a6832e93bb9d233cf0e4c7c55f0a77d0d7b7e562c389fda
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -539,7 +539,7 @@ $ docker pull couchdb@sha256:3fee5fdef3441f245ea91ab0a943d6a2b295f31d8e8c39279a1
 ## `couchdb:2.3.1`
 
 ```console
-$ docker pull couchdb@sha256:d921350e5174f27a479b3a45effa61c52990928e420656b655ad0d69ef6df738
+$ docker pull couchdb@sha256:43c7fb459180edbf8a6832e93bb9d233cf0e4c7c55f0a77d0d7b7e562c389fda
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -800,7 +800,7 @@ $ docker pull couchdb@sha256:3fee5fdef3441f245ea91ab0a943d6a2b295f31d8e8c39279a1
 ## `couchdb:3`
 
 ```console
-$ docker pull couchdb@sha256:6d70ead98dd45c8d99b2aa4a3f2733cc28886f2c08b0c218095797ed171de135
+$ docker pull couchdb@sha256:b3af4abdf14137d9978f628c455a57143a03e3d8a7f23bb7913a02d2c9041f40
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1313,7 +1313,7 @@ $ docker pull couchdb@sha256:6c5eeddcab4ea0af89cb90ebdea4a80465b9e4e0bde817312a5
 ## `couchdb:3.1`
 
 ```console
-$ docker pull couchdb@sha256:313c82f459eb2123167f0ec6f0f7e734faf58213b621825ff87bc0025eb9775a
+$ docker pull couchdb@sha256:c9629261c586f39ffa30c0ad5329c81ae6ed3b1d9ad5fd5a55daa67f6513c6af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1574,7 +1574,7 @@ $ docker pull couchdb@sha256:e9439220a550e0582f7cd1fefb1ac08b7a19d1f444e7809032c
 ## `couchdb:3.1.2`
 
 ```console
-$ docker pull couchdb@sha256:313c82f459eb2123167f0ec6f0f7e734faf58213b621825ff87bc0025eb9775a
+$ docker pull couchdb@sha256:c9629261c586f39ffa30c0ad5329c81ae6ed3b1d9ad5fd5a55daa67f6513c6af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1835,7 +1835,7 @@ $ docker pull couchdb@sha256:e9439220a550e0582f7cd1fefb1ac08b7a19d1f444e7809032c
 ## `couchdb:3.2`
 
 ```console
-$ docker pull couchdb@sha256:5766156815fca34892c4781ac62d527b9a164c8c84d2205b41d05728ed78f747
+$ docker pull couchdb@sha256:08766089712bf482f40b75ba5f0aa750f2edb97d073e57e4bc87ea0994a49127
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1970,7 +1970,7 @@ $ docker pull couchdb@sha256:e6ad654b9c5982679eb124c14c733163a0d701e2e6d6724264c
 ## `couchdb:3.2.3`
 
 ```console
-$ docker pull couchdb@sha256:5766156815fca34892c4781ac62d527b9a164c8c84d2205b41d05728ed78f747
+$ docker pull couchdb@sha256:08766089712bf482f40b75ba5f0aa750f2edb97d073e57e4bc87ea0994a49127
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2105,7 +2105,7 @@ $ docker pull couchdb@sha256:e6ad654b9c5982679eb124c14c733163a0d701e2e6d6724264c
 ## `couchdb:3.3`
 
 ```console
-$ docker pull couchdb@sha256:6d70ead98dd45c8d99b2aa4a3f2733cc28886f2c08b0c218095797ed171de135
+$ docker pull couchdb@sha256:b3af4abdf14137d9978f628c455a57143a03e3d8a7f23bb7913a02d2c9041f40
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2618,7 +2618,7 @@ $ docker pull couchdb@sha256:6c5eeddcab4ea0af89cb90ebdea4a80465b9e4e0bde817312a5
 ## `couchdb:3.3.3`
 
 ```console
-$ docker pull couchdb@sha256:6d70ead98dd45c8d99b2aa4a3f2733cc28886f2c08b0c218095797ed171de135
+$ docker pull couchdb@sha256:b3af4abdf14137d9978f628c455a57143a03e3d8a7f23bb7913a02d2c9041f40
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3131,7 +3131,7 @@ $ docker pull couchdb@sha256:6c5eeddcab4ea0af89cb90ebdea4a80465b9e4e0bde817312a5
 ## `couchdb:latest`
 
 ```console
-$ docker pull couchdb@sha256:6d70ead98dd45c8d99b2aa4a3f2733cc28886f2c08b0c218095797ed171de135
+$ docker pull couchdb@sha256:b3af4abdf14137d9978f628c455a57143a03e3d8a7f23bb7913a02d2c9041f40
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
