@@ -1,7 +1,7 @@
 ## `julia:alpine3.18`
 
 ```console
-$ docker pull julia@sha256:4ce0a482bda454fd6aa52c8c5905dc9b9fc77cb242c61be6ba7c72225f41ec5e
+$ docker pull julia@sha256:59fdf0eda6f0654d7832d1a494d766d68b7bbdbda20e0ad32f6f605f0e615e63
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`

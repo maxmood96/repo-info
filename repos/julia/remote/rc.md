@@ -1,7 +1,7 @@
 ## `julia:rc`
 
 ```console
-$ docker pull julia@sha256:c071eb0428eff8bd08cf384f97ac7628b9a71549672a7fd09de2930df446e108
+$ docker pull julia@sha256:6b0967499ade5d5be834692f8e028de81172364fe791be9bb85164a996b1cbfb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
