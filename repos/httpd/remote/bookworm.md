@@ -1,7 +1,7 @@
 ## `httpd:bookworm`
 
 ```console
-$ docker pull httpd@sha256:5e6d1a11039b6fbb1bd5f72ba507fcd36a5077e34f8d404d9b2c65f8f57da615
+$ docker pull httpd@sha256:b19cace6539a05579c55fda6be0a873c1d2c2e7392e7c08805141f79852ab07b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
