@@ -1,7 +1,7 @@
 ## `ruby:3-slim-bullseye`
 
 ```console
-$ docker pull ruby@sha256:bae684c4f1e4b50e9506ae0b4566139fe6aec5a9c644fd72f37105d07841dfd6
+$ docker pull ruby@sha256:188ffd25a9ac1d835ac862e3610f2e89126b21add4320ea2dc22253096536275
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
