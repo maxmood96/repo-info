@@ -854,15 +854,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.6.dsc' glibc_2.35-0ubuntu3.6.dsc 8588 SHA512:6cd193039258f1791209328157a3287339c841798f1324fdd62ae651af4af3403c76cfd2a124b1e305f0dee31f9898f86900a27ee10792bce3d080eaba430f73
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.6.debian.tar.xz' glibc_2.35-0ubuntu3.6.debian.tar.xz 931608 SHA512:6dfd583e3ae9fc7bb0bc69679c32bfdf6a0b8a943d470b7c4962cf9ed3079fe289d4c4ac026ef61b13167d0229b354bd04df6afe5f5b5f0c090741d519b86792
-```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -1894,10 +1888,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssh=1:8.9p1-3ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.6.dsc' openssh_8.9p1-3ubuntu0.6.dsc 3347 SHA512:048b6f76bbd42b901ef1b47d9da965146e14ec579e36db6ffd0c63e1f8317eddfa22c26ef33ee02428c9f1c872ea26b6815df6634e3a7be8887e74141aab1d0d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz' openssh_8.9p1.orig.tar.gz 1820282 SHA512:04bd38ea6fe4be31acc8c4e83de7d3dda66fb7207be2e4ba25d3b8118d13d098a283769da9e8ce1fc4fba7edf739c14efcc6c9137132919261a7f882314b0f6b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz.asc' openssh_8.9p1.orig.tar.gz.asc 833 SHA512:fd0bbd285ff2f8791f5a512f087f32bce026b716d5ac213cd4ef28f08722601fb943514bee71b2ac4b9f9363e2f120ce6c60fed952d1d8e53dbcf2a6fe2e706b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.6.debian.tar.xz' openssh_8.9p1-3ubuntu0.6.debian.tar.xz 198192 SHA512:e2b41a020ff7255b26152b94b733c1e466bfa56c8f835092c0ec9f8c7838a2c0ac4a412dca361b445c1ea641232092caf14d61ee118291984e6fd8deb36f833c
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.6.dsc' openssh_8.9p1-3ubuntu0.6.dsc 3347 SHA512:048b6f76bbd42b901ef1b47d9da965146e14ec579e36db6ffd0c63e1f8317eddfa22c26ef33ee02428c9f1c872ea26b6815df6634e3a7be8887e74141aab1d0d
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz' openssh_8.9p1.orig.tar.gz 1820282 SHA512:04bd38ea6fe4be31acc8c4e83de7d3dda66fb7207be2e4ba25d3b8118d13d098a283769da9e8ce1fc4fba7edf739c14efcc6c9137132919261a7f882314b0f6b
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz.asc' openssh_8.9p1.orig.tar.gz.asc 833 SHA512:fd0bbd285ff2f8791f5a512f087f32bce026b716d5ac213cd4ef28f08722601fb943514bee71b2ac4b9f9363e2f120ce6c60fed952d1d8e53dbcf2a6fe2e706b
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.6.debian.tar.xz' openssh_8.9p1-3ubuntu0.6.debian.tar.xz 198192 SHA512:e2b41a020ff7255b26152b94b733c1e466bfa56c8f835092c0ec9f8c7838a2c0ac4a412dca361b445c1ea641232092caf14d61ee118291984e6fd8deb36f833c
 ```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.15`

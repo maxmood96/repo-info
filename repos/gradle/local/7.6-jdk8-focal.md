@@ -834,14 +834,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.14
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.14.dsc' glibc_2.31-0ubuntu9.14.dsc 9256 SHA512:a868a97063e183d64871bc005b5b6cfcec87236a2cd5b37a4fad11a8291c5de4674800c3d7aa995125d1149c130cbb0b73f0a9817a02e67fd5a779d7d9e6577b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.14.debian.tar.xz' glibc_2.31-0ubuntu9.14.debian.tar.xz 885020 SHA512:6cb9078cf6222ee9ff936fda8591aa3790a1fe3742531f1b32c317271c726d365ee32f72cbfc31945bda497bbcc7f4f3a588b03fdd8f74479f175515924bb9bd
-```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4ubuntu0.1`
 
