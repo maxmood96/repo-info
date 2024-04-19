@@ -1,7 +1,7 @@
 ## `hylang:pypy3.9-bookworm`
 
 ```console
-$ docker pull hylang@sha256:d5d26b1fe24fe330a795d5ca883be4498fa4f3d5c3a31875b6c5496e01b005a0
+$ docker pull hylang@sha256:efe2e7163cfd1a7b89ec278f41bae4a6946b45ec1a2900d8cdb2da2b16d62e2d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
