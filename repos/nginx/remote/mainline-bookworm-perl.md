@@ -1,7 +1,7 @@
 ## `nginx:mainline-bookworm-perl`
 
 ```console
-$ docker pull nginx@sha256:ad9fe6b8540b3341c165a6bfdda1f699e7e883a30e783a784fbd12eb05440c19
+$ docker pull nginx@sha256:f8be29f9f318e0f5f6303d9c24d588154b019156a1b1969585a9279ad9f2df46
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
