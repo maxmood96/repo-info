@@ -1,10 +1,10 @@
-# `tomee:8.0.16-jre17-Temurin-alpine-plume`
+# `tomee:9.1.3-jre17-Temurin-alpine-plume`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a6fe41990bfcd426ff28bf7fd6cd5863c255d0f25708f7b226deaf013db4c0a4`
-- Created: `2024-03-28T06:01:10.767483807Z`
-- Virtual Size: ~ 268.75 Mb  
+- Image ID: `sha256:9511d46c70031624c859ded5a185aeade341c429a59343a69b40e6af119014c5`
+- Created: `2024-04-17T02:10:22.618700512Z`
+- Virtual Size: ~ 270.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.10+7`
-  - `TOMEE_VER=8.0.16`
+  - `TOMEE_VER=9.1.3`
   - `TOMEE_BUILD=plume`
 
 ## `apk` (`.apk`-based packages)
