@@ -1,9 +1,9 @@
-# `dart:3.3.3-sdk`
+# `dart:3.3.4-sdk`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5cbfd4a34f5f339dd6e147c0c2e381f3e7f0a03a4c53626c3148fc0a7b911b3b`
-- Created: `2024-04-10T05:41:00.314568845Z`
+- Image ID: `sha256:0b41d11273a3ce8c8839da276fa265292e1b736f759b806dbbcc14066cd54526`
+- Created: `2024-04-18T17:50:58.09451676Z`
 - Virtual Size: ~ 829.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
