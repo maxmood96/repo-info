@@ -1,7 +1,7 @@
 ## `mongo:nanoserver`
 
 ```console
-$ docker pull mongo@sha256:af2d07d7641d60ed63e8f6a2b53c8d020980a6ccaeb5591812b6dde31d553621
+$ docker pull mongo@sha256:72292218d03c8c8e096479e9cf8a7b37d0d951bb9c13f62ccb0b2bb95d7c541e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

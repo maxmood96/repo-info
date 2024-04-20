@@ -1,7 +1,7 @@
 ## `mongo:5-nanoserver-ltsc2022`
 
 ```console
-$ docker pull mongo@sha256:e95fd720b750fa3a499d97ea0154e78786ed79be41ebf11c4197f75a6ffd605c
+$ docker pull mongo@sha256:57466a114fbfe7335069fdf146d0a0bdfadd3d205ebb3838aaf3f572f6b111fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

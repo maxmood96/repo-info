@@ -1,7 +1,7 @@
 ## `mongo:windowsservercore-ltsc2022`
 
 ```console
-$ docker pull mongo@sha256:582dc4b8392cb86d3e92aca38e9463e91859040fc82bba11e41294b2ca553818
+$ docker pull mongo@sha256:c8b1c833ed5a3cebf6356b77d3b04aaad883f1c9334c26d5d16c31e7d990a416
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
