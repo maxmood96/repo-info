@@ -87,7 +87,7 @@
 ## `julia:1`
 
 ```console
-$ docker pull julia@sha256:4f25d498a79cbd33e4927086991a97b5cee244e043d384ac93c8526084245ede
+$ docker pull julia@sha256:f45a60818bc33c54e6b71827d76b2216896bc77e7b35b5e3b0d077e8a86baf2b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1243,7 +1243,7 @@ $ docker pull julia@sha256:b37b0f6b5d59f456cad8996719e87042f48e60b5f852f93bc5265
 ## `julia:1-windowsservercore`
 
 ```console
-$ docker pull julia@sha256:16f920dfbdc0678e053d9fcc1ae4c8a92c98b7640e2518cff973d58b6fefac88
+$ docker pull julia@sha256:cbb5838e58e88fdba252a72d9511e5b104f7e5077cd2edb87c6f2a19aa2fdac3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1388,7 +1388,7 @@ CMD ["julia"]
 ## `julia:1-windowsservercore-1809`
 
 ```console
-$ docker pull julia@sha256:41600818d27de38092fa338e1b3475d0d92d830a54b4f77675578fa023e0a9bb
+$ docker pull julia@sha256:fa8a2485e0d9da16f330da0f5e90646c492e41c13711538e7d2fb99b0f4fee54
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1465,7 +1465,7 @@ CMD ["julia"]
 ## `julia:1-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull julia@sha256:62345775a720e2f2317e1d2eb400852de4fb6899e2033ad2847be47f3df2a77d
+$ docker pull julia@sha256:38bc94c3d32e005875f98ad74bc1f9d14372064a849a89ff64857131aa8edc07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1542,7 +1542,7 @@ CMD ["julia"]
 ## `julia:1.10`
 
 ```console
-$ docker pull julia@sha256:4f25d498a79cbd33e4927086991a97b5cee244e043d384ac93c8526084245ede
+$ docker pull julia@sha256:f45a60818bc33c54e6b71827d76b2216896bc77e7b35b5e3b0d077e8a86baf2b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2698,7 +2698,7 @@ $ docker pull julia@sha256:b37b0f6b5d59f456cad8996719e87042f48e60b5f852f93bc5265
 ## `julia:1.10-windowsservercore`
 
 ```console
-$ docker pull julia@sha256:16f920dfbdc0678e053d9fcc1ae4c8a92c98b7640e2518cff973d58b6fefac88
+$ docker pull julia@sha256:cbb5838e58e88fdba252a72d9511e5b104f7e5077cd2edb87c6f2a19aa2fdac3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2843,7 +2843,7 @@ CMD ["julia"]
 ## `julia:1.10-windowsservercore-1809`
 
 ```console
-$ docker pull julia@sha256:41600818d27de38092fa338e1b3475d0d92d830a54b4f77675578fa023e0a9bb
+$ docker pull julia@sha256:fa8a2485e0d9da16f330da0f5e90646c492e41c13711538e7d2fb99b0f4fee54
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2920,7 +2920,7 @@ CMD ["julia"]
 ## `julia:1.10-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull julia@sha256:62345775a720e2f2317e1d2eb400852de4fb6899e2033ad2847be47f3df2a77d
+$ docker pull julia@sha256:38bc94c3d32e005875f98ad74bc1f9d14372064a849a89ff64857131aa8edc07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2997,7 +2997,7 @@ CMD ["julia"]
 ## `julia:1.10.2`
 
 ```console
-$ docker pull julia@sha256:4f25d498a79cbd33e4927086991a97b5cee244e043d384ac93c8526084245ede
+$ docker pull julia@sha256:f45a60818bc33c54e6b71827d76b2216896bc77e7b35b5e3b0d077e8a86baf2b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4153,7 +4153,7 @@ $ docker pull julia@sha256:b37b0f6b5d59f456cad8996719e87042f48e60b5f852f93bc5265
 ## `julia:1.10.2-windowsservercore`
 
 ```console
-$ docker pull julia@sha256:16f920dfbdc0678e053d9fcc1ae4c8a92c98b7640e2518cff973d58b6fefac88
+$ docker pull julia@sha256:cbb5838e58e88fdba252a72d9511e5b104f7e5077cd2edb87c6f2a19aa2fdac3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4298,7 +4298,7 @@ CMD ["julia"]
 ## `julia:1.10.2-windowsservercore-1809`
 
 ```console
-$ docker pull julia@sha256:41600818d27de38092fa338e1b3475d0d92d830a54b4f77675578fa023e0a9bb
+$ docker pull julia@sha256:fa8a2485e0d9da16f330da0f5e90646c492e41c13711538e7d2fb99b0f4fee54
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4375,7 +4375,7 @@ CMD ["julia"]
 ## `julia:1.10.2-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull julia@sha256:62345775a720e2f2317e1d2eb400852de4fb6899e2033ad2847be47f3df2a77d
+$ docker pull julia@sha256:38bc94c3d32e005875f98ad74bc1f9d14372064a849a89ff64857131aa8edc07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4452,7 +4452,7 @@ CMD ["julia"]
 ## `julia:1.11-rc`
 
 ```console
-$ docker pull julia@sha256:ca8c7b7a770c31fa57fba6d7b24876d9090e3f661a22e43ec5094291006e7d26
+$ docker pull julia@sha256:55c46cd9e3daa5092b645862a1be72439e2b69dfc2019b897beb167a1a421b72
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5854,7 +5854,7 @@ $ docker pull julia@sha256:dc60194877126ca45e93b2d406b90395ca30f79a7d4f6225287a7
 ## `julia:1.11-rc-windowsservercore`
 
 ```console
-$ docker pull julia@sha256:fcca44bd608ffec8f8397419013d9ef75e4081e25a3262db415ba14931e71189
+$ docker pull julia@sha256:33fc813f191f470ea04d85ab3e7d801fef6a51264c1b9d8a22e1784b809ddf65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5999,7 +5999,7 @@ CMD ["julia"]
 ## `julia:1.11-rc-windowsservercore-1809`
 
 ```console
-$ docker pull julia@sha256:d25b09c83bf0ee563e0c33f5e9c879c4f06d96641e861e0eea2e6b128d0b943b
+$ docker pull julia@sha256:1bd46363bc98d63a5e69e5ff82e996d5b92e40f2db2757cd7fa6f1b1397dc99b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6076,7 +6076,7 @@ CMD ["julia"]
 ## `julia:1.11-rc-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull julia@sha256:cecc091aca6ce2b30cf2e5d2608de60c57ae92ab7a82ea1c0a364a4581f08764
+$ docker pull julia@sha256:2a79496bb06dd535ef19e105cb9b1e8311006f7145a2b8ff02aacc97f6bfae33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6153,7 +6153,7 @@ CMD ["julia"]
 ## `julia:1.11.0-beta1`
 
 ```console
-$ docker pull julia@sha256:ca8c7b7a770c31fa57fba6d7b24876d9090e3f661a22e43ec5094291006e7d26
+$ docker pull julia@sha256:55c46cd9e3daa5092b645862a1be72439e2b69dfc2019b897beb167a1a421b72
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7555,7 +7555,7 @@ $ docker pull julia@sha256:dc60194877126ca45e93b2d406b90395ca30f79a7d4f6225287a7
 ## `julia:1.11.0-beta1-windowsservercore`
 
 ```console
-$ docker pull julia@sha256:fcca44bd608ffec8f8397419013d9ef75e4081e25a3262db415ba14931e71189
+$ docker pull julia@sha256:33fc813f191f470ea04d85ab3e7d801fef6a51264c1b9d8a22e1784b809ddf65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7700,7 +7700,7 @@ CMD ["julia"]
 ## `julia:1.11.0-beta1-windowsservercore-1809`
 
 ```console
-$ docker pull julia@sha256:d25b09c83bf0ee563e0c33f5e9c879c4f06d96641e861e0eea2e6b128d0b943b
+$ docker pull julia@sha256:1bd46363bc98d63a5e69e5ff82e996d5b92e40f2db2757cd7fa6f1b1397dc99b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7777,7 +7777,7 @@ CMD ["julia"]
 ## `julia:1.11.0-beta1-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull julia@sha256:cecc091aca6ce2b30cf2e5d2608de60c57ae92ab7a82ea1c0a364a4581f08764
+$ docker pull julia@sha256:2a79496bb06dd535ef19e105cb9b1e8311006f7145a2b8ff02aacc97f6bfae33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7854,7 +7854,7 @@ CMD ["julia"]
 ## `julia:1.6`
 
 ```console
-$ docker pull julia@sha256:7690fd09588f63d6843108e7266f27816399edbe2636e0f528566544983b0071
+$ docker pull julia@sha256:40c1cc250ff66ea81decd56462a37081461d1c88911b9e68e169e68cd38fb57e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9256,7 +9256,7 @@ $ docker pull julia@sha256:83dd5eb8de42bdac576d454a57d63f7e5e2a73bdbb9f711a4cce4
 ## `julia:1.6-windowsservercore`
 
 ```console
-$ docker pull julia@sha256:64868212aaacbd8412547dde6f3b8c53d4dbf08725e8bac3642f1c551243cc9b
+$ docker pull julia@sha256:684a6613dacf1b65edd9f515e238761bc7c73ed778ce216a9c3d8e9779c3847a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9401,7 +9401,7 @@ CMD ["julia"]
 ## `julia:1.6-windowsservercore-1809`
 
 ```console
-$ docker pull julia@sha256:6cd4a7d19c121e196a422d8db8b3169cee478a043486b74ba74cbb52da19c9ff
+$ docker pull julia@sha256:42829d1dc17637b513a8bf70ab0bc106479ae4aec6be23c2af8aa2f11fc3d643
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9478,7 +9478,7 @@ CMD ["julia"]
 ## `julia:1.6-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull julia@sha256:276210bb7402380f9085a8171ab525819cb0609702646ec6d9955ba803d26bd2
+$ docker pull julia@sha256:8f1e27a30b5333607bb7109d7dfb386f6bdf4be88f90bf026976a68aecda55b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9555,7 +9555,7 @@ CMD ["julia"]
 ## `julia:1.6.7`
 
 ```console
-$ docker pull julia@sha256:7690fd09588f63d6843108e7266f27816399edbe2636e0f528566544983b0071
+$ docker pull julia@sha256:40c1cc250ff66ea81decd56462a37081461d1c88911b9e68e169e68cd38fb57e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10957,7 +10957,7 @@ $ docker pull julia@sha256:83dd5eb8de42bdac576d454a57d63f7e5e2a73bdbb9f711a4cce4
 ## `julia:1.6.7-windowsservercore`
 
 ```console
-$ docker pull julia@sha256:64868212aaacbd8412547dde6f3b8c53d4dbf08725e8bac3642f1c551243cc9b
+$ docker pull julia@sha256:684a6613dacf1b65edd9f515e238761bc7c73ed778ce216a9c3d8e9779c3847a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11102,7 +11102,7 @@ CMD ["julia"]
 ## `julia:1.6.7-windowsservercore-1809`
 
 ```console
-$ docker pull julia@sha256:6cd4a7d19c121e196a422d8db8b3169cee478a043486b74ba74cbb52da19c9ff
+$ docker pull julia@sha256:42829d1dc17637b513a8bf70ab0bc106479ae4aec6be23c2af8aa2f11fc3d643
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11179,7 +11179,7 @@ CMD ["julia"]
 ## `julia:1.6.7-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull julia@sha256:276210bb7402380f9085a8171ab525819cb0609702646ec6d9955ba803d26bd2
+$ docker pull julia@sha256:8f1e27a30b5333607bb7109d7dfb386f6bdf4be88f90bf026976a68aecda55b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12021,7 +12021,7 @@ $ docker pull julia@sha256:b37b0f6b5d59f456cad8996719e87042f48e60b5f852f93bc5265
 ## `julia:latest`
 
 ```console
-$ docker pull julia@sha256:4f25d498a79cbd33e4927086991a97b5cee244e043d384ac93c8526084245ede
+$ docker pull julia@sha256:f45a60818bc33c54e6b71827d76b2216896bc77e7b35b5e3b0d077e8a86baf2b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12412,7 +12412,7 @@ CMD ["julia"]
 ## `julia:rc`
 
 ```console
-$ docker pull julia@sha256:ca8c7b7a770c31fa57fba6d7b24876d9090e3f661a22e43ec5094291006e7d26
+$ docker pull julia@sha256:55c46cd9e3daa5092b645862a1be72439e2b69dfc2019b897beb167a1a421b72
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13814,7 +13814,7 @@ $ docker pull julia@sha256:dc60194877126ca45e93b2d406b90395ca30f79a7d4f6225287a7
 ## `julia:rc-windowsservercore`
 
 ```console
-$ docker pull julia@sha256:fcca44bd608ffec8f8397419013d9ef75e4081e25a3262db415ba14931e71189
+$ docker pull julia@sha256:33fc813f191f470ea04d85ab3e7d801fef6a51264c1b9d8a22e1784b809ddf65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13959,7 +13959,7 @@ CMD ["julia"]
 ## `julia:rc-windowsservercore-1809`
 
 ```console
-$ docker pull julia@sha256:d25b09c83bf0ee563e0c33f5e9c879c4f06d96641e861e0eea2e6b128d0b943b
+$ docker pull julia@sha256:1bd46363bc98d63a5e69e5ff82e996d5b92e40f2db2757cd7fa6f1b1397dc99b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14036,7 +14036,7 @@ CMD ["julia"]
 ## `julia:rc-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull julia@sha256:cecc091aca6ce2b30cf2e5d2608de60c57ae92ab7a82ea1c0a364a4581f08764
+$ docker pull julia@sha256:2a79496bb06dd535ef19e105cb9b1e8311006f7145a2b8ff02aacc97f6bfae33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14113,7 +14113,7 @@ CMD ["julia"]
 ## `julia:windowsservercore`
 
 ```console
-$ docker pull julia@sha256:16f920dfbdc0678e053d9fcc1ae4c8a92c98b7640e2518cff973d58b6fefac88
+$ docker pull julia@sha256:cbb5838e58e88fdba252a72d9511e5b104f7e5077cd2edb87c6f2a19aa2fdac3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14258,7 +14258,7 @@ CMD ["julia"]
 ## `julia:windowsservercore-1809`
 
 ```console
-$ docker pull julia@sha256:41600818d27de38092fa338e1b3475d0d92d830a54b4f77675578fa023e0a9bb
+$ docker pull julia@sha256:fa8a2485e0d9da16f330da0f5e90646c492e41c13711538e7d2fb99b0f4fee54
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14335,7 +14335,7 @@ CMD ["julia"]
 ## `julia:windowsservercore-ltsc2022`
 
 ```console
-$ docker pull julia@sha256:62345775a720e2f2317e1d2eb400852de4fb6899e2033ad2847be47f3df2a77d
+$ docker pull julia@sha256:38bc94c3d32e005875f98ad74bc1f9d14372064a849a89ff64857131aa8edc07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
