@@ -137,9 +137,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris base-files=13
-'http://http.debian.net/debian/pool/main/b/base-files/base-files_13.dsc' base-files_13.dsc 1093 SHA256:9a355f5c19670ce338c4febb196c427cc5f67940953478b515d555fba9fbdddc
-'http://http.debian.net/debian/pool/main/b/base-files/base-files_13.tar.xz' base-files_13.tar.xz 66064 SHA256:439153bdf296481135cb0b801fe46765dc83f8b9914a0275d6a162339de12f56
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.dsc' base-files_13.dsc 1093 SHA256:9a355f5c19670ce338c4febb196c427cc5f67940953478b515d555fba9fbdddc
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.tar.xz' base-files_13.tar.xz 66064 SHA256:439153bdf296481135cb0b801fe46765dc83f8b9914a0275d6a162339de12f56
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/base-files/13/ (for browsing the source)
+- https://sources.debian.net/src/base-files/13/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.3`
 
@@ -440,15 +446,13 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.7.1-2
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.7.1-2.dsc' curl_8.7.1-2.dsc 3398 SHA256:2d9b8c99abc43fa11d5808b63840965ff0ac8e8c7351ca34014d435efc65c0d0
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.7.1.orig.tar.gz' curl_8.7.1.orig.tar.gz 4462311 SHA256:f91249c87f68ea00cf27c44fdfa5a78423e41e71b7d408e5901a9896d905c495
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.7.1.orig.tar.gz.asc' curl_8.7.1.orig.tar.gz.asc 488 SHA256:f2abc438269f3fe37749941d91069f4972d339cae9b289e536257d90098dcd1f
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.7.1-2.debian.tar.xz' curl_8.7.1-2.debian.tar.xz 50768 SHA256:5f90d2c1d1af3e32f8f582b8c03bdea3734d817d7039ce498c094397a2b6a5f8
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/curl/8.7.1-2/
+
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-6`
 
@@ -1586,10 +1590,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libcap-ng=0.8.4-2
-'http://http.debian.net/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.4-2.dsc' libcap-ng_0.8.4-2.dsc 1638 SHA256:57f7b2e3b4ffb9180668e24b3201cd04e236594cdfaa0d896fd871acba43254a
-'http://http.debian.net/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.4.orig.tar.gz' libcap-ng_0.8.4.orig.tar.gz 59317 SHA256:5615c76a61039e283a6bd107c4faf345ae5ad4dcd45907defe5e474d8fdb6fd2
-'http://http.debian.net/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.4-2.debian.tar.xz' libcap-ng_0.8.4-2.debian.tar.xz 7264 SHA256:3fa4bd0c1a65faf4e52d607f266ec24f4594a2503cc1f3fee1ec6f1db21d9351
+'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.4-2.dsc' libcap-ng_0.8.4-2.dsc 1638 SHA256:57f7b2e3b4ffb9180668e24b3201cd04e236594cdfaa0d896fd871acba43254a
+'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.4.orig.tar.gz' libcap-ng_0.8.4.orig.tar.gz 59317 SHA256:5615c76a61039e283a6bd107c4faf345ae5ad4dcd45907defe5e474d8fdb6fd2
+'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.4-2.debian.tar.xz' libcap-ng_0.8.4-2.debian.tar.xz 7264 SHA256:3fa4bd0c1a65faf4e52d607f266ec24f4594a2503cc1f3fee1ec6f1db21d9351
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libcap-ng/0.8.4-2/ (for browsing the source)
+- https://sources.debian.net/src/libcap-ng/0.8.4-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libcap-ng/0.8.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap2=1:2.66-5`
 
@@ -3351,10 +3361,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sysvinit=3.08-7
-'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_3.08-7.dsc' sysvinit_3.08-7.dsc 2347 SHA256:db4bc8f5c945880e23e25a2ebbca950c6697438c6ed7bdf966f541a21124a7a9
-'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_3.08.orig.tar.gz' sysvinit_3.08.orig.tar.gz 513674 SHA256:325e42ae4ae5ae3e4d989e0604aeb5e4eae5f3ee21e401db3c79000718f8c836
-'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_3.08-7.debian.tar.xz' sysvinit_3.08-7.debian.tar.xz 121140 SHA256:946838f29b62b191ea350ad51fbbcaa18be7f2f537f6024b8d5aede7282949e6
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08-7.dsc' sysvinit_3.08-7.dsc 2347 SHA256:db4bc8f5c945880e23e25a2ebbca950c6697438c6ed7bdf966f541a21124a7a9
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08.orig.tar.gz' sysvinit_3.08.orig.tar.gz 513674 SHA256:325e42ae4ae5ae3e4d989e0604aeb5e4eae5f3ee21e401db3c79000718f8c836
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.08-7.debian.tar.xz' sysvinit_3.08-7.debian.tar.xz 121140 SHA256:946838f29b62b191ea350ad51fbbcaa18be7f2f537f6024b8d5aede7282949e6
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/sysvinit/3.08-7/ (for browsing the source)
+- https://sources.debian.net/src/sysvinit/3.08-7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sysvinit/3.08-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-3`
 
