@@ -1,7 +1,7 @@
 ## `openjdk:23-ea-jdk-nanoserver`
 
 ```console
-$ docker pull openjdk@sha256:f2fa6a5709cb9685f66807174ea0a8f1732e091423c78a8d18d9d9cfaa51a260
+$ docker pull openjdk@sha256:934ada4829fd220ac8c7d3aafd46f935727c23c1902852d8a43a3b0f75040530
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

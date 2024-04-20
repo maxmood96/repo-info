@@ -90,7 +90,7 @@
 ## `openjdk:23`
 
 ```console
-$ docker pull openjdk@sha256:b1a092f472c0444de947ba492a20eea65a93a164e7b6c4ab09f6ba1f07acc77f
+$ docker pull openjdk@sha256:860ce6252077ef00e3d94aeed4e8624ba63c12987895fef9132aca8adab2b10b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -775,7 +775,7 @@ $ docker pull openjdk@sha256:9c31052658b850fcc8af260d1114433e825720601e68f41cf29
 ## `openjdk:23-ea`
 
 ```console
-$ docker pull openjdk@sha256:b1a092f472c0444de947ba492a20eea65a93a164e7b6c4ab09f6ba1f07acc77f
+$ docker pull openjdk@sha256:860ce6252077ef00e3d94aeed4e8624ba63c12987895fef9132aca8adab2b10b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1102,7 +1102,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-18`
 
 ```console
-$ docker pull openjdk@sha256:b1a092f472c0444de947ba492a20eea65a93a164e7b6c4ab09f6ba1f07acc77f
+$ docker pull openjdk@sha256:860ce6252077ef00e3d94aeed4e8624ba63c12987895fef9132aca8adab2b10b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1787,7 +1787,7 @@ $ docker pull openjdk@sha256:9c31052658b850fcc8af260d1114433e825720601e68f41cf29
 ## `openjdk:23-ea-18-jdk`
 
 ```console
-$ docker pull openjdk@sha256:b1a092f472c0444de947ba492a20eea65a93a164e7b6c4ab09f6ba1f07acc77f
+$ docker pull openjdk@sha256:860ce6252077ef00e3d94aeed4e8624ba63c12987895fef9132aca8adab2b10b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2472,7 +2472,7 @@ $ docker pull openjdk@sha256:9c31052658b850fcc8af260d1114433e825720601e68f41cf29
 ## `openjdk:23-ea-18-jdk-nanoserver`
 
 ```console
-$ docker pull openjdk@sha256:f2fa6a5709cb9685f66807174ea0a8f1732e091423c78a8d18d9d9cfaa51a260
+$ docker pull openjdk@sha256:934ada4829fd220ac8c7d3aafd46f935727c23c1902852d8a43a3b0f75040530
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2561,7 +2561,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-18-jdk-nanoserver-1809`
 
 ```console
-$ docker pull openjdk@sha256:f2fa6a5709cb9685f66807174ea0a8f1732e091423c78a8d18d9d9cfaa51a260
+$ docker pull openjdk@sha256:934ada4829fd220ac8c7d3aafd46f935727c23c1902852d8a43a3b0f75040530
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3580,7 +3580,7 @@ $ docker pull openjdk@sha256:67816bf0f9c359485e8cacb9986cc731fce2beb6ef945637396
 ## `openjdk:23-ea-18-jdk-windowsservercore`
 
 ```console
-$ docker pull openjdk@sha256:0f0097014b565a3333c7488e49c77a1323db29075b654a3b3953f929bc366e00
+$ docker pull openjdk@sha256:24601370142221da4c382cb146ee770ae090c2dca803d749f7afd9402941ef59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3761,7 +3761,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-18-jdk-windowsservercore-1809`
 
 ```console
-$ docker pull openjdk@sha256:f59a4b9996b2713f0751c816be9ef36aed94ead617278967932b518e38f55494
+$ docker pull openjdk@sha256:eeaa5ee6554fd5d08cbf70cfff185679594c975937f5404b312e0b43b7b4c64f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3856,7 +3856,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-18-jdk-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull openjdk@sha256:274440d956262bd98ce6ea7d6cb0ad8e0d6cafac5bb890272d917746bfb05bb9
+$ docker pull openjdk@sha256:caf51a7c75082efac4217e8d61d8423b3fa65f42e65ac54924305501dfb2fe91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3951,7 +3951,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-18-nanoserver`
 
 ```console
-$ docker pull openjdk@sha256:f2fa6a5709cb9685f66807174ea0a8f1732e091423c78a8d18d9d9cfaa51a260
+$ docker pull openjdk@sha256:934ada4829fd220ac8c7d3aafd46f935727c23c1902852d8a43a3b0f75040530
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4040,7 +4040,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-18-nanoserver-1809`
 
 ```console
-$ docker pull openjdk@sha256:f2fa6a5709cb9685f66807174ea0a8f1732e091423c78a8d18d9d9cfaa51a260
+$ docker pull openjdk@sha256:934ada4829fd220ac8c7d3aafd46f935727c23c1902852d8a43a3b0f75040530
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5059,7 +5059,7 @@ $ docker pull openjdk@sha256:67816bf0f9c359485e8cacb9986cc731fce2beb6ef945637396
 ## `openjdk:23-ea-18-windowsservercore`
 
 ```console
-$ docker pull openjdk@sha256:0f0097014b565a3333c7488e49c77a1323db29075b654a3b3953f929bc366e00
+$ docker pull openjdk@sha256:24601370142221da4c382cb146ee770ae090c2dca803d749f7afd9402941ef59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5240,7 +5240,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-18-windowsservercore-1809`
 
 ```console
-$ docker pull openjdk@sha256:f59a4b9996b2713f0751c816be9ef36aed94ead617278967932b518e38f55494
+$ docker pull openjdk@sha256:eeaa5ee6554fd5d08cbf70cfff185679594c975937f5404b312e0b43b7b4c64f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5335,7 +5335,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-18-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull openjdk@sha256:274440d956262bd98ce6ea7d6cb0ad8e0d6cafac5bb890272d917746bfb05bb9
+$ docker pull openjdk@sha256:caf51a7c75082efac4217e8d61d8423b3fa65f42e65ac54924305501dfb2fe91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5788,7 +5788,7 @@ $ docker pull openjdk@sha256:9c31052658b850fcc8af260d1114433e825720601e68f41cf29
 ## `openjdk:23-ea-jdk`
 
 ```console
-$ docker pull openjdk@sha256:b1a092f472c0444de947ba492a20eea65a93a164e7b6c4ab09f6ba1f07acc77f
+$ docker pull openjdk@sha256:860ce6252077ef00e3d94aeed4e8624ba63c12987895fef9132aca8adab2b10b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6473,7 +6473,7 @@ $ docker pull openjdk@sha256:9c31052658b850fcc8af260d1114433e825720601e68f41cf29
 ## `openjdk:23-ea-jdk-nanoserver`
 
 ```console
-$ docker pull openjdk@sha256:f2fa6a5709cb9685f66807174ea0a8f1732e091423c78a8d18d9d9cfaa51a260
+$ docker pull openjdk@sha256:934ada4829fd220ac8c7d3aafd46f935727c23c1902852d8a43a3b0f75040530
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6562,7 +6562,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-jdk-nanoserver-1809`
 
 ```console
-$ docker pull openjdk@sha256:f2fa6a5709cb9685f66807174ea0a8f1732e091423c78a8d18d9d9cfaa51a260
+$ docker pull openjdk@sha256:934ada4829fd220ac8c7d3aafd46f935727c23c1902852d8a43a3b0f75040530
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7581,7 +7581,7 @@ $ docker pull openjdk@sha256:67816bf0f9c359485e8cacb9986cc731fce2beb6ef945637396
 ## `openjdk:23-ea-jdk-windowsservercore`
 
 ```console
-$ docker pull openjdk@sha256:0f0097014b565a3333c7488e49c77a1323db29075b654a3b3953f929bc366e00
+$ docker pull openjdk@sha256:24601370142221da4c382cb146ee770ae090c2dca803d749f7afd9402941ef59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7762,7 +7762,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-jdk-windowsservercore-1809`
 
 ```console
-$ docker pull openjdk@sha256:f59a4b9996b2713f0751c816be9ef36aed94ead617278967932b518e38f55494
+$ docker pull openjdk@sha256:eeaa5ee6554fd5d08cbf70cfff185679594c975937f5404b312e0b43b7b4c64f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7857,7 +7857,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-jdk-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull openjdk@sha256:274440d956262bd98ce6ea7d6cb0ad8e0d6cafac5bb890272d917746bfb05bb9
+$ docker pull openjdk@sha256:caf51a7c75082efac4217e8d61d8423b3fa65f42e65ac54924305501dfb2fe91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7952,7 +7952,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-nanoserver`
 
 ```console
-$ docker pull openjdk@sha256:f2fa6a5709cb9685f66807174ea0a8f1732e091423c78a8d18d9d9cfaa51a260
+$ docker pull openjdk@sha256:934ada4829fd220ac8c7d3aafd46f935727c23c1902852d8a43a3b0f75040530
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8041,7 +8041,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-nanoserver-1809`
 
 ```console
-$ docker pull openjdk@sha256:f2fa6a5709cb9685f66807174ea0a8f1732e091423c78a8d18d9d9cfaa51a260
+$ docker pull openjdk@sha256:934ada4829fd220ac8c7d3aafd46f935727c23c1902852d8a43a3b0f75040530
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9060,7 +9060,7 @@ $ docker pull openjdk@sha256:67816bf0f9c359485e8cacb9986cc731fce2beb6ef945637396
 ## `openjdk:23-ea-windowsservercore`
 
 ```console
-$ docker pull openjdk@sha256:0f0097014b565a3333c7488e49c77a1323db29075b654a3b3953f929bc366e00
+$ docker pull openjdk@sha256:24601370142221da4c382cb146ee770ae090c2dca803d749f7afd9402941ef59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9241,7 +9241,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-windowsservercore-1809`
 
 ```console
-$ docker pull openjdk@sha256:f59a4b9996b2713f0751c816be9ef36aed94ead617278967932b518e38f55494
+$ docker pull openjdk@sha256:eeaa5ee6554fd5d08cbf70cfff185679594c975937f5404b312e0b43b7b4c64f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9336,7 +9336,7 @@ CMD ["jshell"]
 ## `openjdk:23-ea-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull openjdk@sha256:274440d956262bd98ce6ea7d6cb0ad8e0d6cafac5bb890272d917746bfb05bb9
+$ docker pull openjdk@sha256:caf51a7c75082efac4217e8d61d8423b3fa65f42e65ac54924305501dfb2fe91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9431,7 +9431,7 @@ CMD ["jshell"]
 ## `openjdk:23-jdk`
 
 ```console
-$ docker pull openjdk@sha256:b1a092f472c0444de947ba492a20eea65a93a164e7b6c4ab09f6ba1f07acc77f
+$ docker pull openjdk@sha256:860ce6252077ef00e3d94aeed4e8624ba63c12987895fef9132aca8adab2b10b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10116,7 +10116,7 @@ $ docker pull openjdk@sha256:9c31052658b850fcc8af260d1114433e825720601e68f41cf29
 ## `openjdk:23-jdk-nanoserver`
 
 ```console
-$ docker pull openjdk@sha256:f2fa6a5709cb9685f66807174ea0a8f1732e091423c78a8d18d9d9cfaa51a260
+$ docker pull openjdk@sha256:934ada4829fd220ac8c7d3aafd46f935727c23c1902852d8a43a3b0f75040530
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10205,7 +10205,7 @@ CMD ["jshell"]
 ## `openjdk:23-jdk-nanoserver-1809`
 
 ```console
-$ docker pull openjdk@sha256:f2fa6a5709cb9685f66807174ea0a8f1732e091423c78a8d18d9d9cfaa51a260
+$ docker pull openjdk@sha256:934ada4829fd220ac8c7d3aafd46f935727c23c1902852d8a43a3b0f75040530
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11224,7 +11224,7 @@ $ docker pull openjdk@sha256:67816bf0f9c359485e8cacb9986cc731fce2beb6ef945637396
 ## `openjdk:23-jdk-windowsservercore`
 
 ```console
-$ docker pull openjdk@sha256:0f0097014b565a3333c7488e49c77a1323db29075b654a3b3953f929bc366e00
+$ docker pull openjdk@sha256:24601370142221da4c382cb146ee770ae090c2dca803d749f7afd9402941ef59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11405,7 +11405,7 @@ CMD ["jshell"]
 ## `openjdk:23-jdk-windowsservercore-1809`
 
 ```console
-$ docker pull openjdk@sha256:f59a4b9996b2713f0751c816be9ef36aed94ead617278967932b518e38f55494
+$ docker pull openjdk@sha256:eeaa5ee6554fd5d08cbf70cfff185679594c975937f5404b312e0b43b7b4c64f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11500,7 +11500,7 @@ CMD ["jshell"]
 ## `openjdk:23-jdk-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull openjdk@sha256:274440d956262bd98ce6ea7d6cb0ad8e0d6cafac5bb890272d917746bfb05bb9
+$ docker pull openjdk@sha256:caf51a7c75082efac4217e8d61d8423b3fa65f42e65ac54924305501dfb2fe91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11595,7 +11595,7 @@ CMD ["jshell"]
 ## `openjdk:23-nanoserver`
 
 ```console
-$ docker pull openjdk@sha256:f2fa6a5709cb9685f66807174ea0a8f1732e091423c78a8d18d9d9cfaa51a260
+$ docker pull openjdk@sha256:934ada4829fd220ac8c7d3aafd46f935727c23c1902852d8a43a3b0f75040530
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11684,7 +11684,7 @@ CMD ["jshell"]
 ## `openjdk:23-nanoserver-1809`
 
 ```console
-$ docker pull openjdk@sha256:f2fa6a5709cb9685f66807174ea0a8f1732e091423c78a8d18d9d9cfaa51a260
+$ docker pull openjdk@sha256:934ada4829fd220ac8c7d3aafd46f935727c23c1902852d8a43a3b0f75040530
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12703,7 +12703,7 @@ $ docker pull openjdk@sha256:67816bf0f9c359485e8cacb9986cc731fce2beb6ef945637396
 ## `openjdk:23-windowsservercore`
 
 ```console
-$ docker pull openjdk@sha256:0f0097014b565a3333c7488e49c77a1323db29075b654a3b3953f929bc366e00
+$ docker pull openjdk@sha256:24601370142221da4c382cb146ee770ae090c2dca803d749f7afd9402941ef59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12884,7 +12884,7 @@ CMD ["jshell"]
 ## `openjdk:23-windowsservercore-1809`
 
 ```console
-$ docker pull openjdk@sha256:f59a4b9996b2713f0751c816be9ef36aed94ead617278967932b518e38f55494
+$ docker pull openjdk@sha256:eeaa5ee6554fd5d08cbf70cfff185679594c975937f5404b312e0b43b7b4c64f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12979,7 +12979,7 @@ CMD ["jshell"]
 ## `openjdk:23-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull openjdk@sha256:274440d956262bd98ce6ea7d6cb0ad8e0d6cafac5bb890272d917746bfb05bb9
+$ docker pull openjdk@sha256:caf51a7c75082efac4217e8d61d8423b3fa65f42e65ac54924305501dfb2fe91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

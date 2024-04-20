@@ -1,7 +1,7 @@
 ## `openjdk:23-ea-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull openjdk@sha256:274440d956262bd98ce6ea7d6cb0ad8e0d6cafac5bb890272d917746bfb05bb9
+$ docker pull openjdk@sha256:caf51a7c75082efac4217e8d61d8423b3fa65f42e65ac54924305501dfb2fe91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
