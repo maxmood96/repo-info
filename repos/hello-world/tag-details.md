@@ -11,7 +11,7 @@
 ## `hello-world:latest`
 
 ```console
-$ docker pull hello-world@sha256:a1893f68bcec8d0f6b09351b7522e4b546d38b0c9b948cb7e761bece66a5c437
+$ docker pull hello-world@sha256:a26bff933ddc26d5cdf7faa98b4ae1e3ec20c4985e6f87ac0973052224d24302
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1091,7 +1091,7 @@ $ docker pull hello-world@sha256:50f420e8710676da03668e446f1f51097b745e3e2c9807b
 ## `hello-world:nanoserver`
 
 ```console
-$ docker pull hello-world@sha256:5553e9c813458bb731c38478ad7b743da6a57e58bc71c3029cecc2c467a78ba6
+$ docker pull hello-world@sha256:81773e4dd4145f4d17d7a0c344fd3b5c42443fdb1154ad367a8626616fbf9574
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1174,7 +1174,7 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 ## `hello-world:nanoserver-1809`
 
 ```console
-$ docker pull hello-world@sha256:279075d823fc6f778bf6bd527bcd79dab74e827444ff4798699e1fc40a0d8f27
+$ docker pull hello-world@sha256:fe9653c8d4cef0bd583f4738d324ad09578da96a50f056061b0c037a3c048584
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1220,7 +1220,7 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 ## `hello-world:nanoserver-ltsc2022`
 
 ```console
-$ docker pull hello-world@sha256:e4a28b62005dd534d3e60dca9dca69b9d51584826082ba553b87b6ab926baa93
+$ docker pull hello-world@sha256:dc1f9844d414ae61044458926a3902cf092a137d44f94abf293bad24e1f514fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

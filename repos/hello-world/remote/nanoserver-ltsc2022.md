@@ -1,7 +1,7 @@
 ## `hello-world:nanoserver-ltsc2022`
 
 ```console
-$ docker pull hello-world@sha256:e4a28b62005dd534d3e60dca9dca69b9d51584826082ba553b87b6ab926baa93
+$ docker pull hello-world@sha256:dc1f9844d414ae61044458926a3902cf092a137d44f94abf293bad24e1f514fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

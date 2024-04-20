@@ -1,7 +1,7 @@
 ## `hello-world:nanoserver-1809`
 
 ```console
-$ docker pull hello-world@sha256:279075d823fc6f778bf6bd527bcd79dab74e827444ff4798699e1fc40a0d8f27
+$ docker pull hello-world@sha256:fe9653c8d4cef0bd583f4738d324ad09578da96a50f056061b0c037a3c048584
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
