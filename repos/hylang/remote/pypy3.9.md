@@ -1,7 +1,7 @@
 ## `hylang:pypy3.9`
 
 ```console
-$ docker pull hylang@sha256:fa2abc9295dac8d966aecfb7a2829e127a9b24f4ae9d705ec2973a921df76783
+$ docker pull hylang@sha256:7f313358b5feb499d51e44d6c144c1cc349bc65f9e0ab0d09ba0921a9ee495ba
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
