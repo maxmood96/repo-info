@@ -1,7 +1,7 @@
 ## `pypy:3-7-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:41437c862d67dd0ad6421937c4fbf06ea08038e5b742147ca8ccf7a7fd5ca4bc
+$ docker pull pypy@sha256:6d2c0363c83c9cc6431941a0f3c58ba523c88a15dcb2123d1d4ac032d894d229
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`

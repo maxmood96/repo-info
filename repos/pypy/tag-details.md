@@ -195,7 +195,7 @@
 ## `pypy:2`
 
 ```console
-$ docker pull pypy@sha256:9120aa6658ac7a43b710e5f95c0209a20bb5ed579ae72e07182c5de4b7c0a4ff
+$ docker pull pypy@sha256:e0fc35e2fb7788265fe1d2b02681f78cb9d19831274561ef5d75b7a1611be1af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -685,7 +685,7 @@ CMD ["pypy"]
 ## `pypy:2-7`
 
 ```console
-$ docker pull pypy@sha256:9120aa6658ac7a43b710e5f95c0209a20bb5ed579ae72e07182c5de4b7c0a4ff
+$ docker pull pypy@sha256:e0fc35e2fb7788265fe1d2b02681f78cb9d19831274561ef5d75b7a1611be1af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2543,7 +2543,7 @@ $ docker pull pypy@sha256:6ad8921630825326f74a3eb26e4e26a68ca845a6d363a823fcadf6
 ## `pypy:2-7-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:e7a0a651258408fe2469f6bc77992c1600f2184290cb421ff49539e9531bde38
+$ docker pull pypy@sha256:468aa56fde72d4536bf86a00f712d5c1436f22adb0b705249d90d59a1c0c8cbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2736,7 +2736,7 @@ CMD ["pypy"]
 ## `pypy:2-7-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:a441f1cdb485c217827b6f5e33e96431c3e28cd020abcb17fe3caedf20182c5d
+$ docker pull pypy@sha256:f32add6e53e97069cbc40fbf06645c53994db873ba4e2a277c3a8c6d2df48a62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2837,7 +2837,7 @@ CMD ["pypy"]
 ## `pypy:2-7-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:548dfaf18d209eabbe2d0c4daf4f7fc41b4fe74eb588f04d0d15450a2945edbf
+$ docker pull pypy@sha256:12037b6edd9100011c3f635664f17b21ae233240a0bda68b68ad125040e3df34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2938,7 +2938,7 @@ CMD ["pypy"]
 ## `pypy:2-7.3`
 
 ```console
-$ docker pull pypy@sha256:9120aa6658ac7a43b710e5f95c0209a20bb5ed579ae72e07182c5de4b7c0a4ff
+$ docker pull pypy@sha256:e0fc35e2fb7788265fe1d2b02681f78cb9d19831274561ef5d75b7a1611be1af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4796,7 +4796,7 @@ $ docker pull pypy@sha256:6ad8921630825326f74a3eb26e4e26a68ca845a6d363a823fcadf6
 ## `pypy:2-7.3-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:e7a0a651258408fe2469f6bc77992c1600f2184290cb421ff49539e9531bde38
+$ docker pull pypy@sha256:468aa56fde72d4536bf86a00f712d5c1436f22adb0b705249d90d59a1c0c8cbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4989,7 +4989,7 @@ CMD ["pypy"]
 ## `pypy:2-7.3-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:a441f1cdb485c217827b6f5e33e96431c3e28cd020abcb17fe3caedf20182c5d
+$ docker pull pypy@sha256:f32add6e53e97069cbc40fbf06645c53994db873ba4e2a277c3a8c6d2df48a62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5090,7 +5090,7 @@ CMD ["pypy"]
 ## `pypy:2-7.3-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:548dfaf18d209eabbe2d0c4daf4f7fc41b4fe74eb588f04d0d15450a2945edbf
+$ docker pull pypy@sha256:12037b6edd9100011c3f635664f17b21ae233240a0bda68b68ad125040e3df34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5191,7 +5191,7 @@ CMD ["pypy"]
 ## `pypy:2-7.3.15`
 
 ```console
-$ docker pull pypy@sha256:9120aa6658ac7a43b710e5f95c0209a20bb5ed579ae72e07182c5de4b7c0a4ff
+$ docker pull pypy@sha256:e0fc35e2fb7788265fe1d2b02681f78cb9d19831274561ef5d75b7a1611be1af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7049,7 +7049,7 @@ $ docker pull pypy@sha256:6ad8921630825326f74a3eb26e4e26a68ca845a6d363a823fcadf6
 ## `pypy:2-7.3.15-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:e7a0a651258408fe2469f6bc77992c1600f2184290cb421ff49539e9531bde38
+$ docker pull pypy@sha256:468aa56fde72d4536bf86a00f712d5c1436f22adb0b705249d90d59a1c0c8cbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7242,7 +7242,7 @@ CMD ["pypy"]
 ## `pypy:2-7.3.15-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:a441f1cdb485c217827b6f5e33e96431c3e28cd020abcb17fe3caedf20182c5d
+$ docker pull pypy@sha256:f32add6e53e97069cbc40fbf06645c53994db873ba4e2a277c3a8c6d2df48a62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7343,7 +7343,7 @@ CMD ["pypy"]
 ## `pypy:2-7.3.15-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:548dfaf18d209eabbe2d0c4daf4f7fc41b4fe74eb588f04d0d15450a2945edbf
+$ docker pull pypy@sha256:12037b6edd9100011c3f635664f17b21ae233240a0bda68b68ad125040e3df34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8812,7 +8812,7 @@ $ docker pull pypy@sha256:6ad8921630825326f74a3eb26e4e26a68ca845a6d363a823fcadf6
 ## `pypy:2-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:e7a0a651258408fe2469f6bc77992c1600f2184290cb421ff49539e9531bde38
+$ docker pull pypy@sha256:468aa56fde72d4536bf86a00f712d5c1436f22adb0b705249d90d59a1c0c8cbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9005,7 +9005,7 @@ CMD ["pypy"]
 ## `pypy:2-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:a441f1cdb485c217827b6f5e33e96431c3e28cd020abcb17fe3caedf20182c5d
+$ docker pull pypy@sha256:f32add6e53e97069cbc40fbf06645c53994db873ba4e2a277c3a8c6d2df48a62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9106,7 +9106,7 @@ CMD ["pypy"]
 ## `pypy:2-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:548dfaf18d209eabbe2d0c4daf4f7fc41b4fe74eb588f04d0d15450a2945edbf
+$ docker pull pypy@sha256:12037b6edd9100011c3f635664f17b21ae233240a0bda68b68ad125040e3df34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9207,7 +9207,7 @@ CMD ["pypy"]
 ## `pypy:2.7`
 
 ```console
-$ docker pull pypy@sha256:9120aa6658ac7a43b710e5f95c0209a20bb5ed579ae72e07182c5de4b7c0a4ff
+$ docker pull pypy@sha256:e0fc35e2fb7788265fe1d2b02681f78cb9d19831274561ef5d75b7a1611be1af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9697,7 +9697,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7`
 
 ```console
-$ docker pull pypy@sha256:9120aa6658ac7a43b710e5f95c0209a20bb5ed579ae72e07182c5de4b7c0a4ff
+$ docker pull pypy@sha256:e0fc35e2fb7788265fe1d2b02681f78cb9d19831274561ef5d75b7a1611be1af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11555,7 +11555,7 @@ $ docker pull pypy@sha256:6ad8921630825326f74a3eb26e4e26a68ca845a6d363a823fcadf6
 ## `pypy:2.7-7-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:e7a0a651258408fe2469f6bc77992c1600f2184290cb421ff49539e9531bde38
+$ docker pull pypy@sha256:468aa56fde72d4536bf86a00f712d5c1436f22adb0b705249d90d59a1c0c8cbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11748,7 +11748,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:a441f1cdb485c217827b6f5e33e96431c3e28cd020abcb17fe3caedf20182c5d
+$ docker pull pypy@sha256:f32add6e53e97069cbc40fbf06645c53994db873ba4e2a277c3a8c6d2df48a62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11849,7 +11849,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:548dfaf18d209eabbe2d0c4daf4f7fc41b4fe74eb588f04d0d15450a2945edbf
+$ docker pull pypy@sha256:12037b6edd9100011c3f635664f17b21ae233240a0bda68b68ad125040e3df34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11950,7 +11950,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.3`
 
 ```console
-$ docker pull pypy@sha256:9120aa6658ac7a43b710e5f95c0209a20bb5ed579ae72e07182c5de4b7c0a4ff
+$ docker pull pypy@sha256:e0fc35e2fb7788265fe1d2b02681f78cb9d19831274561ef5d75b7a1611be1af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13808,7 +13808,7 @@ $ docker pull pypy@sha256:6ad8921630825326f74a3eb26e4e26a68ca845a6d363a823fcadf6
 ## `pypy:2.7-7.3-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:e7a0a651258408fe2469f6bc77992c1600f2184290cb421ff49539e9531bde38
+$ docker pull pypy@sha256:468aa56fde72d4536bf86a00f712d5c1436f22adb0b705249d90d59a1c0c8cbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14001,7 +14001,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.3-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:a441f1cdb485c217827b6f5e33e96431c3e28cd020abcb17fe3caedf20182c5d
+$ docker pull pypy@sha256:f32add6e53e97069cbc40fbf06645c53994db873ba4e2a277c3a8c6d2df48a62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14102,7 +14102,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.3-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:548dfaf18d209eabbe2d0c4daf4f7fc41b4fe74eb588f04d0d15450a2945edbf
+$ docker pull pypy@sha256:12037b6edd9100011c3f635664f17b21ae233240a0bda68b68ad125040e3df34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14203,7 +14203,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.3.15`
 
 ```console
-$ docker pull pypy@sha256:9120aa6658ac7a43b710e5f95c0209a20bb5ed579ae72e07182c5de4b7c0a4ff
+$ docker pull pypy@sha256:e0fc35e2fb7788265fe1d2b02681f78cb9d19831274561ef5d75b7a1611be1af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16061,7 +16061,7 @@ $ docker pull pypy@sha256:6ad8921630825326f74a3eb26e4e26a68ca845a6d363a823fcadf6
 ## `pypy:2.7-7.3.15-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:e7a0a651258408fe2469f6bc77992c1600f2184290cb421ff49539e9531bde38
+$ docker pull pypy@sha256:468aa56fde72d4536bf86a00f712d5c1436f22adb0b705249d90d59a1c0c8cbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16254,7 +16254,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.3.15-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:a441f1cdb485c217827b6f5e33e96431c3e28cd020abcb17fe3caedf20182c5d
+$ docker pull pypy@sha256:f32add6e53e97069cbc40fbf06645c53994db873ba4e2a277c3a8c6d2df48a62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16355,7 +16355,7 @@ CMD ["pypy"]
 ## `pypy:2.7-7.3.15-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:548dfaf18d209eabbe2d0c4daf4f7fc41b4fe74eb588f04d0d15450a2945edbf
+$ docker pull pypy@sha256:12037b6edd9100011c3f635664f17b21ae233240a0bda68b68ad125040e3df34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17824,7 +17824,7 @@ $ docker pull pypy@sha256:6ad8921630825326f74a3eb26e4e26a68ca845a6d363a823fcadf6
 ## `pypy:2.7-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:e7a0a651258408fe2469f6bc77992c1600f2184290cb421ff49539e9531bde38
+$ docker pull pypy@sha256:468aa56fde72d4536bf86a00f712d5c1436f22adb0b705249d90d59a1c0c8cbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18017,7 +18017,7 @@ CMD ["pypy"]
 ## `pypy:2.7-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:a441f1cdb485c217827b6f5e33e96431c3e28cd020abcb17fe3caedf20182c5d
+$ docker pull pypy@sha256:f32add6e53e97069cbc40fbf06645c53994db873ba4e2a277c3a8c6d2df48a62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18118,7 +18118,7 @@ CMD ["pypy"]
 ## `pypy:2.7-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:548dfaf18d209eabbe2d0c4daf4f7fc41b4fe74eb588f04d0d15450a2945edbf
+$ docker pull pypy@sha256:12037b6edd9100011c3f635664f17b21ae233240a0bda68b68ad125040e3df34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18219,7 +18219,7 @@ CMD ["pypy"]
 ## `pypy:3`
 
 ```console
-$ docker pull pypy@sha256:77a4870d27fba491f5942e1d5250edf354bb0993e677d641f9ba56364453333d
+$ docker pull pypy@sha256:015e0f0165125d406d8023cbe5ff8006d3cd0dbe959afbd77a5138c8bc328167
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18697,7 +18697,7 @@ CMD ["pypy"]
 ## `pypy:3-7`
 
 ```console
-$ docker pull pypy@sha256:77a4870d27fba491f5942e1d5250edf354bb0993e677d641f9ba56364453333d
+$ docker pull pypy@sha256:015e0f0165125d406d8023cbe5ff8006d3cd0dbe959afbd77a5138c8bc328167
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20543,7 +20543,7 @@ $ docker pull pypy@sha256:f958777e8342bb9890418d97e519a8a6e3cbf0814937bc6c510eee
 ## `pypy:3-7-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:ad20b3af4d244e3d61f919784ad9e1f7fe4be005a23fc01602bb9eba2ef2e8fe
+$ docker pull pypy@sha256:34be8a731d78ea56829f331d82aadaff946dd87d52dbf0130eafb6cf44935803
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -20724,7 +20724,7 @@ CMD ["pypy"]
 ## `pypy:3-7-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:5a4ed97f700b4a3b3e6fea184b114963550c3f6cb009365665a162a0b20d89f6
+$ docker pull pypy@sha256:c48a5393cf52aa05955b52f866009ebf53c544cffc70bf60b7d352c4ac591c4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -20819,7 +20819,7 @@ CMD ["pypy"]
 ## `pypy:3-7-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:41437c862d67dd0ad6421937c4fbf06ea08038e5b742147ca8ccf7a7fd5ca4bc
+$ docker pull pypy@sha256:6d2c0363c83c9cc6431941a0f3c58ba523c88a15dcb2123d1d4ac032d894d229
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -20914,7 +20914,7 @@ CMD ["pypy"]
 ## `pypy:3-7.3`
 
 ```console
-$ docker pull pypy@sha256:77a4870d27fba491f5942e1d5250edf354bb0993e677d641f9ba56364453333d
+$ docker pull pypy@sha256:015e0f0165125d406d8023cbe5ff8006d3cd0dbe959afbd77a5138c8bc328167
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22760,7 +22760,7 @@ $ docker pull pypy@sha256:f958777e8342bb9890418d97e519a8a6e3cbf0814937bc6c510eee
 ## `pypy:3-7.3-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:ad20b3af4d244e3d61f919784ad9e1f7fe4be005a23fc01602bb9eba2ef2e8fe
+$ docker pull pypy@sha256:34be8a731d78ea56829f331d82aadaff946dd87d52dbf0130eafb6cf44935803
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -22941,7 +22941,7 @@ CMD ["pypy"]
 ## `pypy:3-7.3-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:5a4ed97f700b4a3b3e6fea184b114963550c3f6cb009365665a162a0b20d89f6
+$ docker pull pypy@sha256:c48a5393cf52aa05955b52f866009ebf53c544cffc70bf60b7d352c4ac591c4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23036,7 +23036,7 @@ CMD ["pypy"]
 ## `pypy:3-7.3-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:41437c862d67dd0ad6421937c4fbf06ea08038e5b742147ca8ccf7a7fd5ca4bc
+$ docker pull pypy@sha256:6d2c0363c83c9cc6431941a0f3c58ba523c88a15dcb2123d1d4ac032d894d229
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23131,7 +23131,7 @@ CMD ["pypy"]
 ## `pypy:3-7.3.15`
 
 ```console
-$ docker pull pypy@sha256:77a4870d27fba491f5942e1d5250edf354bb0993e677d641f9ba56364453333d
+$ docker pull pypy@sha256:015e0f0165125d406d8023cbe5ff8006d3cd0dbe959afbd77a5138c8bc328167
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24977,7 +24977,7 @@ $ docker pull pypy@sha256:f958777e8342bb9890418d97e519a8a6e3cbf0814937bc6c510eee
 ## `pypy:3-7.3.15-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:ad20b3af4d244e3d61f919784ad9e1f7fe4be005a23fc01602bb9eba2ef2e8fe
+$ docker pull pypy@sha256:34be8a731d78ea56829f331d82aadaff946dd87d52dbf0130eafb6cf44935803
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -25158,7 +25158,7 @@ CMD ["pypy"]
 ## `pypy:3-7.3.15-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:5a4ed97f700b4a3b3e6fea184b114963550c3f6cb009365665a162a0b20d89f6
+$ docker pull pypy@sha256:c48a5393cf52aa05955b52f866009ebf53c544cffc70bf60b7d352c4ac591c4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -25253,7 +25253,7 @@ CMD ["pypy"]
 ## `pypy:3-7.3.15-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:41437c862d67dd0ad6421937c4fbf06ea08038e5b742147ca8ccf7a7fd5ca4bc
+$ docker pull pypy@sha256:6d2c0363c83c9cc6431941a0f3c58ba523c88a15dcb2123d1d4ac032d894d229
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -26716,7 +26716,7 @@ $ docker pull pypy@sha256:f958777e8342bb9890418d97e519a8a6e3cbf0814937bc6c510eee
 ## `pypy:3-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:ad20b3af4d244e3d61f919784ad9e1f7fe4be005a23fc01602bb9eba2ef2e8fe
+$ docker pull pypy@sha256:34be8a731d78ea56829f331d82aadaff946dd87d52dbf0130eafb6cf44935803
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -26897,7 +26897,7 @@ CMD ["pypy"]
 ## `pypy:3-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:5a4ed97f700b4a3b3e6fea184b114963550c3f6cb009365665a162a0b20d89f6
+$ docker pull pypy@sha256:c48a5393cf52aa05955b52f866009ebf53c544cffc70bf60b7d352c4ac591c4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -26992,7 +26992,7 @@ CMD ["pypy"]
 ## `pypy:3-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:41437c862d67dd0ad6421937c4fbf06ea08038e5b742147ca8ccf7a7fd5ca4bc
+$ docker pull pypy@sha256:6d2c0363c83c9cc6431941a0f3c58ba523c88a15dcb2123d1d4ac032d894d229
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -27087,7 +27087,7 @@ CMD ["pypy"]
 ## `pypy:3.10`
 
 ```console
-$ docker pull pypy@sha256:77a4870d27fba491f5942e1d5250edf354bb0993e677d641f9ba56364453333d
+$ docker pull pypy@sha256:015e0f0165125d406d8023cbe5ff8006d3cd0dbe959afbd77a5138c8bc328167
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27565,7 +27565,7 @@ CMD ["pypy"]
 ## `pypy:3.10-7`
 
 ```console
-$ docker pull pypy@sha256:77a4870d27fba491f5942e1d5250edf354bb0993e677d641f9ba56364453333d
+$ docker pull pypy@sha256:015e0f0165125d406d8023cbe5ff8006d3cd0dbe959afbd77a5138c8bc328167
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29411,7 +29411,7 @@ $ docker pull pypy@sha256:f958777e8342bb9890418d97e519a8a6e3cbf0814937bc6c510eee
 ## `pypy:3.10-7-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:ad20b3af4d244e3d61f919784ad9e1f7fe4be005a23fc01602bb9eba2ef2e8fe
+$ docker pull pypy@sha256:34be8a731d78ea56829f331d82aadaff946dd87d52dbf0130eafb6cf44935803
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -29592,7 +29592,7 @@ CMD ["pypy"]
 ## `pypy:3.10-7-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:5a4ed97f700b4a3b3e6fea184b114963550c3f6cb009365665a162a0b20d89f6
+$ docker pull pypy@sha256:c48a5393cf52aa05955b52f866009ebf53c544cffc70bf60b7d352c4ac591c4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -29687,7 +29687,7 @@ CMD ["pypy"]
 ## `pypy:3.10-7-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:41437c862d67dd0ad6421937c4fbf06ea08038e5b742147ca8ccf7a7fd5ca4bc
+$ docker pull pypy@sha256:6d2c0363c83c9cc6431941a0f3c58ba523c88a15dcb2123d1d4ac032d894d229
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -29782,7 +29782,7 @@ CMD ["pypy"]
 ## `pypy:3.10-7.3`
 
 ```console
-$ docker pull pypy@sha256:77a4870d27fba491f5942e1d5250edf354bb0993e677d641f9ba56364453333d
+$ docker pull pypy@sha256:015e0f0165125d406d8023cbe5ff8006d3cd0dbe959afbd77a5138c8bc328167
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -31628,7 +31628,7 @@ $ docker pull pypy@sha256:f958777e8342bb9890418d97e519a8a6e3cbf0814937bc6c510eee
 ## `pypy:3.10-7.3-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:ad20b3af4d244e3d61f919784ad9e1f7fe4be005a23fc01602bb9eba2ef2e8fe
+$ docker pull pypy@sha256:34be8a731d78ea56829f331d82aadaff946dd87d52dbf0130eafb6cf44935803
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -31809,7 +31809,7 @@ CMD ["pypy"]
 ## `pypy:3.10-7.3-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:5a4ed97f700b4a3b3e6fea184b114963550c3f6cb009365665a162a0b20d89f6
+$ docker pull pypy@sha256:c48a5393cf52aa05955b52f866009ebf53c544cffc70bf60b7d352c4ac591c4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -31904,7 +31904,7 @@ CMD ["pypy"]
 ## `pypy:3.10-7.3-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:41437c862d67dd0ad6421937c4fbf06ea08038e5b742147ca8ccf7a7fd5ca4bc
+$ docker pull pypy@sha256:6d2c0363c83c9cc6431941a0f3c58ba523c88a15dcb2123d1d4ac032d894d229
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -31999,7 +31999,7 @@ CMD ["pypy"]
 ## `pypy:3.10-7.3.15`
 
 ```console
-$ docker pull pypy@sha256:77a4870d27fba491f5942e1d5250edf354bb0993e677d641f9ba56364453333d
+$ docker pull pypy@sha256:015e0f0165125d406d8023cbe5ff8006d3cd0dbe959afbd77a5138c8bc328167
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33845,7 +33845,7 @@ $ docker pull pypy@sha256:f958777e8342bb9890418d97e519a8a6e3cbf0814937bc6c510eee
 ## `pypy:3.10-7.3.15-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:ad20b3af4d244e3d61f919784ad9e1f7fe4be005a23fc01602bb9eba2ef2e8fe
+$ docker pull pypy@sha256:34be8a731d78ea56829f331d82aadaff946dd87d52dbf0130eafb6cf44935803
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -34026,7 +34026,7 @@ CMD ["pypy"]
 ## `pypy:3.10-7.3.15-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:5a4ed97f700b4a3b3e6fea184b114963550c3f6cb009365665a162a0b20d89f6
+$ docker pull pypy@sha256:c48a5393cf52aa05955b52f866009ebf53c544cffc70bf60b7d352c4ac591c4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -34121,7 +34121,7 @@ CMD ["pypy"]
 ## `pypy:3.10-7.3.15-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:41437c862d67dd0ad6421937c4fbf06ea08038e5b742147ca8ccf7a7fd5ca4bc
+$ docker pull pypy@sha256:6d2c0363c83c9cc6431941a0f3c58ba523c88a15dcb2123d1d4ac032d894d229
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -35584,7 +35584,7 @@ $ docker pull pypy@sha256:f958777e8342bb9890418d97e519a8a6e3cbf0814937bc6c510eee
 ## `pypy:3.10-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:ad20b3af4d244e3d61f919784ad9e1f7fe4be005a23fc01602bb9eba2ef2e8fe
+$ docker pull pypy@sha256:34be8a731d78ea56829f331d82aadaff946dd87d52dbf0130eafb6cf44935803
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -35765,7 +35765,7 @@ CMD ["pypy"]
 ## `pypy:3.10-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:5a4ed97f700b4a3b3e6fea184b114963550c3f6cb009365665a162a0b20d89f6
+$ docker pull pypy@sha256:c48a5393cf52aa05955b52f866009ebf53c544cffc70bf60b7d352c4ac591c4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -35860,7 +35860,7 @@ CMD ["pypy"]
 ## `pypy:3.10-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:41437c862d67dd0ad6421937c4fbf06ea08038e5b742147ca8ccf7a7fd5ca4bc
+$ docker pull pypy@sha256:6d2c0363c83c9cc6431941a0f3c58ba523c88a15dcb2123d1d4ac032d894d229
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -35955,7 +35955,7 @@ CMD ["pypy"]
 ## `pypy:3.9`
 
 ```console
-$ docker pull pypy@sha256:7a1c0483ecc3189c254acbd2600a709f744e73970e3ca9ca4fc03f19382fec69
+$ docker pull pypy@sha256:c24a69e22b30a0b901232d0220bc3ea09d223148632856d71c2a0d0fd23aad22
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -36433,7 +36433,7 @@ CMD ["pypy"]
 ## `pypy:3.9-7`
 
 ```console
-$ docker pull pypy@sha256:7a1c0483ecc3189c254acbd2600a709f744e73970e3ca9ca4fc03f19382fec69
+$ docker pull pypy@sha256:c24a69e22b30a0b901232d0220bc3ea09d223148632856d71c2a0d0fd23aad22
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -38279,7 +38279,7 @@ $ docker pull pypy@sha256:da5e5cd7e24e49f5bba6ca549a450482707369e0cb94a3ca825ddf
 ## `pypy:3.9-7-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:8f8cc81a8c12a0b530f6ceba9b28573df8fe0b804b59f21755d4156eda1ea9f2
+$ docker pull pypy@sha256:7c08d7b5cf616013b8f9b5a7bf2d9904a76c9693b37165c838317c4035985707
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -38460,7 +38460,7 @@ CMD ["pypy"]
 ## `pypy:3.9-7-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:a6dff8f5e77be3ebecdb1c9bae44b55be5ba65da6d661775970bfc3c16bce231
+$ docker pull pypy@sha256:07c7f47b88912c6173f82329486be0918a55d09ae289efd185bfe73f140d9541
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -38555,7 +38555,7 @@ CMD ["pypy"]
 ## `pypy:3.9-7-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:5f30d15c0433f2b31c7592134b1ea38debc6ef0610cf52ee8f589386269fc7a6
+$ docker pull pypy@sha256:0d087dcb95220d979389046f7d4ad08944f65099b76578d4aceaf59038b92c61
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -38650,7 +38650,7 @@ CMD ["pypy"]
 ## `pypy:3.9-7.3`
 
 ```console
-$ docker pull pypy@sha256:7a1c0483ecc3189c254acbd2600a709f744e73970e3ca9ca4fc03f19382fec69
+$ docker pull pypy@sha256:c24a69e22b30a0b901232d0220bc3ea09d223148632856d71c2a0d0fd23aad22
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -40496,7 +40496,7 @@ $ docker pull pypy@sha256:da5e5cd7e24e49f5bba6ca549a450482707369e0cb94a3ca825ddf
 ## `pypy:3.9-7.3-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:8f8cc81a8c12a0b530f6ceba9b28573df8fe0b804b59f21755d4156eda1ea9f2
+$ docker pull pypy@sha256:7c08d7b5cf616013b8f9b5a7bf2d9904a76c9693b37165c838317c4035985707
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -40677,7 +40677,7 @@ CMD ["pypy"]
 ## `pypy:3.9-7.3-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:a6dff8f5e77be3ebecdb1c9bae44b55be5ba65da6d661775970bfc3c16bce231
+$ docker pull pypy@sha256:07c7f47b88912c6173f82329486be0918a55d09ae289efd185bfe73f140d9541
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -40772,7 +40772,7 @@ CMD ["pypy"]
 ## `pypy:3.9-7.3-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:5f30d15c0433f2b31c7592134b1ea38debc6ef0610cf52ee8f589386269fc7a6
+$ docker pull pypy@sha256:0d087dcb95220d979389046f7d4ad08944f65099b76578d4aceaf59038b92c61
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -40867,7 +40867,7 @@ CMD ["pypy"]
 ## `pypy:3.9-7.3.15`
 
 ```console
-$ docker pull pypy@sha256:7a1c0483ecc3189c254acbd2600a709f744e73970e3ca9ca4fc03f19382fec69
+$ docker pull pypy@sha256:c24a69e22b30a0b901232d0220bc3ea09d223148632856d71c2a0d0fd23aad22
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -42713,7 +42713,7 @@ $ docker pull pypy@sha256:da5e5cd7e24e49f5bba6ca549a450482707369e0cb94a3ca825ddf
 ## `pypy:3.9-7.3.15-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:8f8cc81a8c12a0b530f6ceba9b28573df8fe0b804b59f21755d4156eda1ea9f2
+$ docker pull pypy@sha256:7c08d7b5cf616013b8f9b5a7bf2d9904a76c9693b37165c838317c4035985707
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -42894,7 +42894,7 @@ CMD ["pypy"]
 ## `pypy:3.9-7.3.15-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:a6dff8f5e77be3ebecdb1c9bae44b55be5ba65da6d661775970bfc3c16bce231
+$ docker pull pypy@sha256:07c7f47b88912c6173f82329486be0918a55d09ae289efd185bfe73f140d9541
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -42989,7 +42989,7 @@ CMD ["pypy"]
 ## `pypy:3.9-7.3.15-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:5f30d15c0433f2b31c7592134b1ea38debc6ef0610cf52ee8f589386269fc7a6
+$ docker pull pypy@sha256:0d087dcb95220d979389046f7d4ad08944f65099b76578d4aceaf59038b92c61
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -44452,7 +44452,7 @@ $ docker pull pypy@sha256:da5e5cd7e24e49f5bba6ca549a450482707369e0cb94a3ca825ddf
 ## `pypy:3.9-windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:8f8cc81a8c12a0b530f6ceba9b28573df8fe0b804b59f21755d4156eda1ea9f2
+$ docker pull pypy@sha256:7c08d7b5cf616013b8f9b5a7bf2d9904a76c9693b37165c838317c4035985707
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -44633,7 +44633,7 @@ CMD ["pypy"]
 ## `pypy:3.9-windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:a6dff8f5e77be3ebecdb1c9bae44b55be5ba65da6d661775970bfc3c16bce231
+$ docker pull pypy@sha256:07c7f47b88912c6173f82329486be0918a55d09ae289efd185bfe73f140d9541
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -44728,7 +44728,7 @@ CMD ["pypy"]
 ## `pypy:3.9-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:5f30d15c0433f2b31c7592134b1ea38debc6ef0610cf52ee8f589386269fc7a6
+$ docker pull pypy@sha256:0d087dcb95220d979389046f7d4ad08944f65099b76578d4aceaf59038b92c61
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -45435,7 +45435,7 @@ $ docker pull pypy@sha256:d5ec2285fb7dd58a09a0880d68a10e97a800e6b40faa2ffef2e3bc
 ## `pypy:latest`
 
 ```console
-$ docker pull pypy@sha256:77a4870d27fba491f5942e1d5250edf354bb0993e677d641f9ba56364453333d
+$ docker pull pypy@sha256:015e0f0165125d406d8023cbe5ff8006d3cd0dbe959afbd77a5138c8bc328167
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -46669,7 +46669,7 @@ $ docker pull pypy@sha256:f958777e8342bb9890418d97e519a8a6e3cbf0814937bc6c510eee
 ## `pypy:windowsservercore`
 
 ```console
-$ docker pull pypy@sha256:ad20b3af4d244e3d61f919784ad9e1f7fe4be005a23fc01602bb9eba2ef2e8fe
+$ docker pull pypy@sha256:34be8a731d78ea56829f331d82aadaff946dd87d52dbf0130eafb6cf44935803
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -46850,7 +46850,7 @@ CMD ["pypy"]
 ## `pypy:windowsservercore-1809`
 
 ```console
-$ docker pull pypy@sha256:5a4ed97f700b4a3b3e6fea184b114963550c3f6cb009365665a162a0b20d89f6
+$ docker pull pypy@sha256:c48a5393cf52aa05955b52f866009ebf53c544cffc70bf60b7d352c4ac591c4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -46945,7 +46945,7 @@ CMD ["pypy"]
 ## `pypy:windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:41437c862d67dd0ad6421937c4fbf06ea08038e5b742147ca8ccf7a7fd5ca4bc
+$ docker pull pypy@sha256:6d2c0363c83c9cc6431941a0f3c58ba523c88a15dcb2123d1d4ac032d894d229
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
