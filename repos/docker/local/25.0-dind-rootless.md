@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2a19fc539b6327f7c37f6a641ee61d2b76b2113b5184be2159aaa24ee277406c`
+- Image ID: `sha256:d94fd8c628b6b173d7ca27f86f6252677f38d12a0f60f5f8b03e49e08be47dfa`
 - Created: `2024-03-19T21:53:23Z`
-- Virtual Size: ~ 408.64 Mb  
+- Virtual Size: ~ 414.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=25.0.5`
-  - `DOCKER_BUILDX_VERSION=0.13.1`
+  - `DOCKER_BUILDX_VERSION=0.14.0`
   - `DOCKER_COMPOSE_VERSION=2.26.1`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e`
@@ -616,16 +616,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r5 description:
+libcrypto3-3.1.4-r6 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r5 webpage:
+libcrypto3-3.1.4-r6 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r5 installed size:
+libcrypto3-3.1.4-r6 installed size:
 4500 KiB
 
-libcrypto3-3.1.4-r5 license:
+libcrypto3-3.1.4-r6 license:
 Apache-2.0
 
 ```
@@ -837,16 +837,16 @@ GPL-2.0-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r5 description:
+libssl3-3.1.4-r6 description:
 SSL shared libraries
 
-libssl3-3.1.4-r5 webpage:
+libssl3-3.1.4-r6 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r5 installed size:
+libssl3-3.1.4-r6 installed size:
 548 KiB
 
-libssl3-3.1.4-r5 license:
+libssl3-3.1.4-r6 license:
 Apache-2.0
 
 ```
@@ -1109,16 +1109,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r5 description:
+openssl-3.1.4-r6 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r5 webpage:
+openssl-3.1.4-r6 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r5 installed size:
+openssl-3.1.4-r6 installed size:
 732 KiB
 
-openssl-3.1.4-r5 license:
+openssl-3.1.4-r6 license:
 Apache-2.0
 
 ```
