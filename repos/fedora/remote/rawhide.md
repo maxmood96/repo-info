@@ -1,7 +1,7 @@
 ## `fedora:rawhide`
 
 ```console
-$ docker pull fedora@sha256:cd58e01738fe9d281934c71e47c8e4e605a008bb233436c356bbcbe478149a74
+$ docker pull fedora@sha256:f19d2fb41683125ae07533cc97bfaa142d12d86b697863ff6cabda4ed567f708
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -44,31 +44,31 @@ CMD ["/bin/bash"]
 ### `fedora:rawhide` - linux; arm64 variant v8
 
 ```console
-$ docker pull fedora@sha256:06a5dd2ea179ec728359788613e04207020dd8d4df2585265a989105cd6feacc
+$ docker pull fedora@sha256:a6470ecc114bf37e49f0f81fae81ed2e4b4cddc52290e6136c0043f5b9e71d74
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.7 MB (63744506 bytes)**  
+-	Total Size: **79.3 MB (79319685 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:20395178a277044340737b998e756b3fc7916f7146ed49e1ffed901928504ce6`
+-	Image ID: `sha256:dffb333156cd8abd31e6935c59a6b3b6fff9001bfbedd865671e2ec4260fff8d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Thu, 03 Nov 2022 19:58:13 GMT
 LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
-# Tue, 20 Feb 2024 23:40:09 GMT
-ENV DISTTAG=f41container FGC=f41 FBR=f41
-# Tue, 20 Feb 2024 23:40:13 GMT
-ADD file:01ed88f9445050974db551f44af068d40f2ddb443dce9bad24996ec4fbb3bb3d in / 
-# Tue, 20 Feb 2024 23:40:14 GMT
+# Mon, 22 Apr 2024 17:40:22 GMT
+ENV DISTTAG=rawhidecontainer FGC=rawhide FBR=rawhide
+# Mon, 22 Apr 2024 17:40:25 GMT
+ADD file:7364a33b6b7c15e6933363d84ba29cec955c9d7e075aed5bace37b976d3df2b4 in / 
+# Mon, 22 Apr 2024 17:40:27 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:a248d5d7f57ae03fbfb7e3de0b73bcd9b7032fa0832b5d09f8941d37ef1167f0`  
-		Last Modified: Tue, 20 Feb 2024 23:41:13 GMT  
-		Size: 63.7 MB (63744506 bytes)  
+	-	`sha256:2366548a1e246699c26f8594780c6879f2ddaaee558c5e41643052f5aefee0af`  
+		Last Modified: Mon, 22 Apr 2024 17:41:34 GMT  
+		Size: 79.3 MB (79319685 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:rawhide` - linux; ppc64le
