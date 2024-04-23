@@ -640,21 +640,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.7.1-2
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.7.1-2.dsc' curl_8.7.1-2.dsc 3398 SHA256:2d9b8c99abc43fa11d5808b63840965ff0ac8e8c7351ca34014d435efc65c0d0
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.7.1.orig.tar.gz' curl_8.7.1.orig.tar.gz 4462311 SHA256:f91249c87f68ea00cf27c44fdfa5a78423e41e71b7d408e5901a9896d905c495
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.7.1.orig.tar.gz.asc' curl_8.7.1.orig.tar.gz.asc 488 SHA256:f2abc438269f3fe37749941d91069f4972d339cae9b289e536257d90098dcd1f
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.7.1-2.debian.tar.xz' curl_8.7.1-2.debian.tar.xz 50768 SHA256:5f90d2c1d1af3e32f8f582b8c03bdea3734d817d7039ce498c094397a2b6a5f8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.7.1-2/
 
-- https://sources.debian.net/src/curl/8.7.1-2/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.7.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.7.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-6`
 
@@ -5523,21 +5515,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2024a-2
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a-2.dsc' tzdata_2024a-2.dsc 2429 SHA256:fc4ecf827fa5a8f609e181884b2a2b5949a5f305acf489a313d003960573b23c
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA256:0d0434459acbd2059a7a8da1f3304a84a86591f6ed69c6248fffa502b6edffe3
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA256:f64725f9f65419e7b009e3b95b75ea9516382d0be64aef63d78654d9c569ed0d
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a-2.debian.tar.xz' tzdata_2024a-2.debian.tar.xz 123348 SHA256:00e5910c13d114bbbe731b469e6413b70f41d5ffd9b7522be2351ada41783aa7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2024a-2/
 
-- https://sources.debian.net/src/tzdata/2024a-2/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2024a-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2024a-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0043+nmu1`
 
