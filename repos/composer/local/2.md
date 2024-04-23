@@ -1,10 +1,10 @@
-# `composer:2.7.2`
+# `composer:2.7.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b23be0584ffe318936039dcf877220904a9fa9dcdbd0f714efd5371596da2116`
-- Created: `2024-03-12T08:03:46Z`
-- Virtual Size: ~ 199.31 Mb  
+- Image ID: `sha256:a9068059263dea9f0b3e3726db875c489250dbdcf1aa3de489449108a0313192`
+- Created: `2024-04-23T14:12:49Z`
+- Virtual Size: ~ 235.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=53c8386b2123af97626d3438b3e4058e0c5914cb74b048a6676c57ac647f5eae`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=2.7.2`
+  - `COMPOSER_VERSION=2.7.4`
 
 ## `apk` (`.apk`-based packages)
 
@@ -98,16 +98,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.3-r1 description:
+apk-tools-2.14.4-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.3-r1 webpage:
+apk-tools-2.14.4-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.3-r1 installed size:
+apk-tools-2.14.4-r0 installed size:
 296 KiB
 
-apk-tools-2.14.3-r1 license:
+apk-tools-2.14.4-r0 license:
 GPL-2.0-only
 
 ```
@@ -1050,16 +1050,16 @@ BSD-3-Clause
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.11.8-r0 description:
+pyc-3.11.9-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.11.8-r0 webpage:
+pyc-3.11.9-r0 webpage:
 https://www.python.org/
 
-pyc-3.11.8-r0 installed size:
+pyc-3.11.9-r0 installed size:
 4096 B
 
-pyc-3.11.8-r0 license:
+pyc-3.11.9-r0 license:
 PSF-2.0
 
 ```
@@ -1067,16 +1067,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.11.8-r0 description:
+python3-3.11.9-r0 description:
 High-level scripting language
 
-python3-3.11.8-r0 webpage:
+python3-3.11.9-r0 webpage:
 https://www.python.org/
 
-python3-3.11.8-r0 installed size:
+python3-3.11.9-r0 installed size:
 24 MiB
 
-python3-3.11.8-r0 license:
+python3-3.11.9-r0 license:
 PSF-2.0
 
 ```
@@ -1084,16 +1084,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.11.8-r0 description:
+python3-pyc-3.11.9-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.11.8-r0 webpage:
+python3-pyc-3.11.9-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.11.8-r0 installed size:
+python3-pyc-3.11.9-r0 installed size:
 4096 B
 
-python3-pyc-3.11.8-r0 license:
+python3-pyc-3.11.9-r0 license:
 PSF-2.0
 
 ```
@@ -1101,16 +1101,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.11.8-r0 description:
+python3-pycache-pyc0-3.11.9-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.11.8-r0 webpage:
+python3-pycache-pyc0-3.11.9-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.11.8-r0 installed size:
+python3-pycache-pyc0-3.11.9-r0 installed size:
 13 MiB
 
-python3-pycache-pyc0-3.11.8-r0 license:
+python3-pycache-pyc0-3.11.9-r0 license:
 PSF-2.0
 
 ```
