@@ -1009,21 +1009,13 @@ Licenses: (parsed from: `/usr/share/doc/eatmydata/copyright`, `/usr/share/doc/li
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libeatmydata=131-1
-'http://deb.debian.org/debian/pool/main/libe/libeatmydata/libeatmydata_131-1.dsc' libeatmydata_131-1.dsc 2512 SHA256:159429d70a704354e179d1c84b126510d2886a094d0cef671f61a689e2235053
-'http://deb.debian.org/debian/pool/main/libe/libeatmydata/libeatmydata_131.orig.tar.gz' libeatmydata_131.orig.tar.gz 368469 SHA256:cf18a8c52138a38541be3478af446c06048108729d7e18476492d62d54baabc4
-'http://deb.debian.org/debian/pool/main/libe/libeatmydata/libeatmydata_131.orig.tar.gz.asc' libeatmydata_131.orig.tar.gz.asc 833 SHA256:5df5d49d129ed7aac755293ba6c8fc1316a661912ea80de68446384199a418e9
-'http://deb.debian.org/debian/pool/main/libe/libeatmydata/libeatmydata_131-1.debian.tar.xz' libeatmydata_131-1.debian.tar.xz 16084 SHA256:fa289b3aa7e88e108b56a88f9e606eb98ef5965483920c3a9c1a12bbc01a0fd7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libeatmydata/131-1/
 
-- https://sources.debian.net/src/libeatmydata/131-1/ (for browsing the source)
-- https://sources.debian.net/src/libeatmydata/131-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libeatmydata/131-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.4.6-1`
 
@@ -2078,21 +2070,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2024a-2
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a-2.dsc' tzdata_2024a-2.dsc 2429 SHA256:fc4ecf827fa5a8f609e181884b2a2b5949a5f305acf489a313d003960573b23c
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA256:0d0434459acbd2059a7a8da1f3304a84a86591f6ed69c6248fffa502b6edffe3
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA256:f64725f9f65419e7b009e3b95b75ea9516382d0be64aef63d78654d9c569ed0d
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a-2.debian.tar.xz' tzdata_2024a-2.debian.tar.xz 123348 SHA256:00e5910c13d114bbbe731b469e6413b70f41d5ffd9b7522be2351ada41783aa7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2024a-2/
 
-- https://sources.debian.net/src/tzdata/2024a-2/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2024a-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2024a-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `usrmerge=39`
 
