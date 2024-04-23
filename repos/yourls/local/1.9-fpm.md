@@ -2,12 +2,12 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4b67e74eb2fbc0b9a2bdf6a197bd29169d4d255d311719e34745532beb951425`
-- Created: `2024-04-11T21:37:44.11819311Z`
-- Virtual Size: ~ 504.24 Mb  
+- Image ID: `sha256:5de1fe5a506da0fd5a0b5d26c96211756f0467a59562eaef52fd1036e689b780`
+- Created: `2024-04-20T00:57:59.831408883Z`
+- Virtual Size: ~ 508.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["docker-entrypoint.sh"]`
+- Entrypoint: `["container-entrypoint.sh"]`
 - Command: `["php-fpm"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
@@ -16,23 +16,13 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.18`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.18.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.18.tar.xz.asc`
-  - `PHP_SHA256=44b306fc021e56441f691da6c3108788bd9e450f293b3bc70fcd64b08dd41a50`
+  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
+  - `PHP_VERSION=8.3.6`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.6.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.6.tar.xz.asc`
+  - `PHP_SHA256=53c8386b2123af97626d3438b3e4058e0c5914cb74b048a6676c57ac647f5eae`
   - `YOURLS_VERSION=1.9.2`
   - `YOURLS_SHA256=62a95ba766d62f3305d75944cbfe12d5a90c08c88fbf2f6e67150d36412b916f`
-- Labels:
-  - `io.artifacthub.package.readme-url=https://raw.githubusercontent.com/YOURLS/YOURLS/master/README.md`
-  - `org.opencontainers.image.authors=YOURLS`
-  - `org.opencontainers.image.description=Your Own URL Shortener`
-  - `org.opencontainers.image.documentation=https://yourls.org/`
-  - `org.opencontainers.image.licenses=MIT`
-  - `org.opencontainers.image.title=YOURLS`
-  - `org.opencontainers.image.url=https://yourls.org/`
-  - `org.opencontainers.image.vendor=YOURLS Org`
-  - `org.opencontainers.image.version=1.9.2`
 
 ## `dpkg` (`.deb`-based packages)
 
