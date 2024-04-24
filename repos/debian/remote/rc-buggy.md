@@ -1,7 +1,7 @@
 ## `debian:rc-buggy`
 
 ```console
-$ docker pull debian@sha256:a3966fde63e33108fe3dba1bdac54d4890b9e4470a5faaf33dc1dc0a3e4580e1
+$ docker pull debian@sha256:56bd9acbe2a1aba3b2b4b3df3b1e225ba7cc7e87fc4b8c97af8dd089f9c9706e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -243,33 +243,33 @@ RUN echo 'deb http://deb.debian.org/debian rc-buggy main' > /etc/apt/sources.lis
 ### `debian:rc-buggy` - linux; riscv64
 
 ```console
-$ docker pull debian@sha256:7294fc90bb4e11e12b73576c796271754ea37e80f54517ad4e2899eee92cd350
+$ docker pull debian@sha256:70eb42d131033dc91993315bfdeb2d8661e11fb6ed4a10dda530aacc9f6aa043
 ```
 
 -	Docker Version: 20.10.27
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.9 MB (49941248 bytes)**  
+-	Total Size: **50.7 MB (50665618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9416f53ed73862483d0a1810404cd03ad27b75f4258f13e3e43159dac921038`
+-	Image ID: `sha256:35edb47b4f3694bc21028cf3015240e5c3343098a9f22dee53dcebe78413bc25`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 10 Apr 2024 01:08:58 GMT
-ADD file:cf8b9266fc4180144feb816ff584ba8b6b03b244743764b117ff119f451aa497 in / 
-# Wed, 10 Apr 2024 01:09:00 GMT
+# Wed, 24 Apr 2024 03:09:40 GMT
+ADD file:d90cd6aeee4d6792791ea2b4b9b5059a36f027dc9b9bb977ca1e8446d6911cd3 in / 
+# Wed, 24 Apr 2024 03:09:42 GMT
 CMD ["bash"]
-# Wed, 10 Apr 2024 01:10:47 GMT
+# Wed, 24 Apr 2024 03:11:28 GMT
 RUN echo 'deb http://deb.debian.org/debian rc-buggy main' > /etc/apt/sources.list.d/experimental.list
 ```
 
 -	Layers:
-	-	`sha256:c8bfd6a26c3a37b6a00ea3d238fb8eed745384d2bb98efaff22428174a68f6a1`  
-		Last Modified: Wed, 10 Apr 2024 01:11:44 GMT  
-		Size: 49.9 MB (49941022 bytes)  
+	-	`sha256:95fc214d1cab5d6d820b79b86707ae2364689381f1652820f201941397cd8e5e`  
+		Last Modified: Wed, 24 Apr 2024 03:12:28 GMT  
+		Size: 50.7 MB (50665389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a87a9587bd8ac697894d9ddf850aae20937f6ae354d4f58c377b238a4c01cc35`  
-		Last Modified: Wed, 10 Apr 2024 01:13:46 GMT  
-		Size: 226.0 B  
+	-	`sha256:99e6c2dc53fb042895f27c223670a1afe9525f17f7af30ac2b4ee2b6a34e86f0`  
+		Last Modified: Wed, 24 Apr 2024 03:14:36 GMT  
+		Size: 229.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:rc-buggy` - linux; s390x
