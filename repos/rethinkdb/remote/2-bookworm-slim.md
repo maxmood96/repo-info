@@ -1,7 +1,7 @@
 ## `rethinkdb:2-bookworm-slim`
 
 ```console
-$ docker pull rethinkdb@sha256:970849ef4bc32c7f8527505eae4f226642206fa735a6bc5df90dcb256039c6b0
+$ docker pull rethinkdb@sha256:ded66e2aa8611199483778ee38746c3d8f796e8509a3f4ba62d1def5b528a25e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,58 +13,58 @@ $ docker pull rethinkdb@sha256:970849ef4bc32c7f8527505eae4f226642206fa735a6bc5df
 ### `rethinkdb:2-bookworm-slim` - linux; amd64
 
 ```console
-$ docker pull rethinkdb@sha256:b6be0f84acf4874044054c34f303028d34c08b6e3fe60716cef323cc33dd2367
+$ docker pull rethinkdb@sha256:ea9b7b0dc7ae26cd29714e7df8a5a537fae0d4537b2611a1357c5ee291bb5e80
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.1 MB (49117652 bytes)**  
+-	Total Size: **49.1 MB (49141590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:500977bd1ddcf525547277af1ffe2e88d71f945bfb479a3356b9d84e05754c0c`
+-	Image ID: `sha256:830099f65c358d289727dccc97cda8a8a8cb5e75f98d2e476b8812e60ad760f5`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Wed, 10 Apr 2024 01:50:48 GMT
-ADD file:d4bb05cb4d403a78b4ab5cd8d620330659d5aeb25f847d104ebc02c3a0f32624 in / 
-# Wed, 10 Apr 2024 01:50:48 GMT
+# Wed, 24 Apr 2024 03:28:09 GMT
+ADD file:4b1be1de1a1e5aa608c688cad2824587262081866180d7368feb79d33ca05953 in / 
+# Wed, 24 Apr 2024 03:28:09 GMT
 CMD ["bash"]
-# Wed, 10 Apr 2024 13:16:50 GMT
+# Wed, 24 Apr 2024 08:38:35 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2 curl     && rm -rf /var/lib/apt/lists/*
-# Wed, 10 Apr 2024 13:16:52 GMT
+# Wed, 24 Apr 2024 08:38:37 GMT
 RUN GNUPGHOME="$(mktemp -d)" && export GNUPGHOME     && gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys 539A3A8C6692E6E3F69B3FE81D85E93F801BB43F     && gpg --batch --export 539A3A8C6692E6E3F69B3FE81D85E93F801BB43F > /usr/share/keyrings/rethinkdb.gpg     && gpgconf --kill all && rm -rf "$GNUPGHOME"     && echo "deb [signed-by=/usr/share/keyrings/rethinkdb.gpg] https://download.rethinkdb.com/repository/debian-bookworm bookworm main" > /etc/apt/sources.list.d/rethinkdb.list
-# Wed, 10 Apr 2024 13:16:52 GMT
+# Wed, 24 Apr 2024 08:38:37 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.4.4~0bookworm
-# Wed, 10 Apr 2024 13:16:57 GMT
+# Wed, 24 Apr 2024 08:38:42 GMT
 RUN apt-get -qqy update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 10 Apr 2024 13:16:57 GMT
+# Wed, 24 Apr 2024 08:38:42 GMT
 VOLUME [/data]
-# Wed, 10 Apr 2024 13:16:58 GMT
+# Wed, 24 Apr 2024 08:38:42 GMT
 WORKDIR /data
-# Wed, 10 Apr 2024 13:16:58 GMT
+# Wed, 24 Apr 2024 08:38:42 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Wed, 10 Apr 2024 13:16:58 GMT
+# Wed, 24 Apr 2024 08:38:42 GMT
 EXPOSE 28015 29015 8080
 ```
 
 -	Layers:
-	-	`sha256:13808c22b207b066ef43572e57e4fb8c6172e887dd9a918c089a174a19371b7a`  
-		Last Modified: Wed, 10 Apr 2024 01:55:34 GMT  
-		Size: 29.1 MB (29131358 bytes)  
+	-	`sha256:b0a0cf830b12453b7e15359a804215a7bcccd3788e2bcecff2a03af64bbd4df7`  
+		Last Modified: Wed, 24 Apr 2024 03:32:41 GMT  
+		Size: 29.2 MB (29150479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a28cb05aed215bfea37c062c57c6af6e0db55081dd901784537ec43ec3f930ee`  
-		Last Modified: Wed, 10 Apr 2024 13:17:10 GMT  
-		Size: 9.8 MB (9786082 bytes)  
+	-	`sha256:811f1f5f65861187edb2cdfbd26f8bacf9c8751b4c32285cf7832585830884c5`  
+		Last Modified: Wed, 24 Apr 2024 08:38:56 GMT  
+		Size: 9.8 MB (9789565 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6725a6b062d7d686cf47cb52f45dfe25c1ec196c0dd2542cf9995c4fc6a4c26`  
-		Last Modified: Wed, 10 Apr 2024 13:17:09 GMT  
-		Size: 2.7 KB (2691 bytes)  
+	-	`sha256:23acfb916b8573536a7540b21cb499edfd3e653c2125da515b73ba1edc07a0d9`  
+		Last Modified: Wed, 24 Apr 2024 08:38:54 GMT  
+		Size: 2.7 KB (2690 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89350d47a12bfac59162ea0f7ebd2922862f37cbda97c932776d3f62e0a8ebca`  
-		Last Modified: Wed, 10 Apr 2024 13:17:10 GMT  
-		Size: 10.2 MB (10197394 bytes)  
+	-	`sha256:b21ee001743eaeaceb402752098c4889d0efe7d04309c123c6ffa0be493e53cb`  
+		Last Modified: Wed, 24 Apr 2024 08:38:56 GMT  
+		Size: 10.2 MB (10198729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5bbee74a2d07cc27382e81e18cc744b8a340991d54a485db2eea8c6e92b24cc6`  
-		Last Modified: Wed, 10 Apr 2024 13:17:09 GMT  
+	-	`sha256:77fee7b493de5b6a2ab7fa8c6c4519776f92948bf3c287a358c7b1c102ed7423`  
+		Last Modified: Wed, 24 Apr 2024 08:38:54 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
