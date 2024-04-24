@@ -1,7 +1,7 @@
 ## `eclipse-temurin:22-jre-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:cff33794a241b7381015bcb2fd3c21de05bb573754b1a95165d476edb148cb00
+$ docker pull eclipse-temurin@sha256:c9ef161dfa5c9172413780321f289a3aae540d73cc24be1d2a0bc08253b5beb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -71,13 +71,13 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ### `eclipse-temurin:22-jre-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:450d7fa496bbbfebc14a77b6ebce3b2dee5ee1e6cac8b61a13c68a35f4aa9573
+$ docker pull eclipse-temurin@sha256:11f3c075375ba01095393f2c6c95721f106dd0bcfe3104aca45c9b4638d8c183
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.0 MB (63971071 bytes)**  
+-	Total Size: **64.0 MB (63975250 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6242e6ce4d18848b04cf73b86201517d28dec5a3c4eb78068dcf8f3bf050a9c7`
+-	Image ID: `sha256:e897d20cb311447a2184901fdc719f17f53c8ffe2b3f0d5e97200ae81014afdf`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
@@ -85,23 +85,23 @@ $ docker pull eclipse-temurin@sha256:450d7fa496bbbfebc14a77b6ebce3b2dee5ee1e6cac
 ADD file:d0764a717d1e9d0aff3fa84779b11bfa0afe4430dcb6b46d965b209167639ba0 in / 
 # Fri, 26 Jan 2024 23:44:47 GMT
 CMD ["/bin/sh"]
-# Wed, 27 Mar 2024 15:44:12 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 27 Mar 2024 15:44:12 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 27 Mar 2024 15:44:12 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 27 Mar 2024 15:44:12 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata     ;     rm -rf /var/cache/apk/* # buildkit
-# Wed, 27 Mar 2024 15:44:12 GMT
-ENV JAVA_VERSION=jdk-22+36
-# Wed, 27 Mar 2024 15:44:12 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb3885be4b9f555d70d534dc1ac22d07bbd3a9246a6c56ad69897208c2d750cc';          BINARY_URL='https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22%2B36/OpenJDK22U-jre_aarch64_alpine-linux_hotspot_22_36.tar.gz';          ;;        amd64|x86_64)          ESUM='9b94b27229d21b74f9484b5963fd9517561a99a98f46c3f29c4b28c311e091a3';          BINARY_URL='https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22%2B36/OpenJDK22U-jre_x64_alpine-linux_hotspot_22_36.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Wed, 27 Mar 2024 15:44:12 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
+ENV JAVA_VERSION=jdk-22.0.1+8
+# Tue, 23 Apr 2024 20:51:38 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64|arm64)          ESUM='6cac56dde6793d887deea101cfff283dc5f285e1118c21cbd1c4cb69f1072e55';          BINARY_URL='https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.1%2B8/OpenJDK22U-jre_aarch64_alpine-linux_hotspot_22.0.1_8.tar.gz';          ;;        amd64|x86_64)          ESUM='e7c26ad00e3ded356b8c4b20b184ccf5bd63ccdccabde8d4a892389f178f1d5b';          BINARY_URL='https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.1%2B8/OpenJDK22U-jre_x64_alpine-linux_hotspot_22.0.1_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Tue, 23 Apr 2024 20:51:38 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 27 Mar 2024 15:44:12 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 27 Mar 2024 15:44:12 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
@@ -114,15 +114,15 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Last Modified: Thu, 28 Mar 2024 00:55:36 GMT  
 		Size: 8.6 MB (8610228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6592b865254cb1738226c160f12f4d3a769a73f9a4bb966c7a56c37779709d3`  
-		Last Modified: Thu, 28 Mar 2024 00:57:25 GMT  
-		Size: 52.0 MB (52012241 bytes)  
+	-	`sha256:0a5c6b9b538ad67bd75db7a436b5ac34853431c91ffcc3b55eaa88dbb3a45752`  
+		Last Modified: Wed, 24 Apr 2024 18:03:20 GMT  
+		Size: 52.0 MB (52016418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4162bad29aeb9556138df152e24e410d5bd920265efd9a8956796cfee34a1fe4`  
-		Last Modified: Thu, 28 Mar 2024 00:57:19 GMT  
-		Size: 171.0 B  
+	-	`sha256:1619771fd21c76db5638686bc0c0e7bfd44795c53c3b06016195631a3baa48d8`  
+		Last Modified: Wed, 24 Apr 2024 18:03:14 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f6471b431a667c61fee0291cfa50e2de28c5e4785f93e91a9fd27e336264b10`  
-		Last Modified: Thu, 28 Mar 2024 00:57:19 GMT  
-		Size: 716.0 B  
+	-	`sha256:202ac878ea3437a43fb36e386293e9ba0a32d588b581d746d39022fe9b201d94`  
+		Last Modified: Wed, 24 Apr 2024 18:03:14 GMT  
+		Size: 717.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
