@@ -1,7 +1,7 @@
 ## `adminer:standalone`
 
 ```console
-$ docker pull adminer@sha256:c0401354be93a66787682c1df4174a7b163ba571613fc4d745462dec62a31d29
+$ docker pull adminer@sha256:4d06c61fbc5f21e83e3aebf15912736e4730a814b03adc1063dd1fc9cd22e58d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -423,82 +423,82 @@ EXPOSE 8080
 ### `adminer:standalone` - linux; mips64le
 
 ```console
-$ docker pull adminer@sha256:dc9ad28daed35a5b5ef563f94e91664009c738a13ee9169df173bf93445aa110
+$ docker pull adminer@sha256:de263a394a6dbcdc2f65e0232b230314693e0fcc24356d8ce43631bcc51d2a94
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.7 MB (92653161 bytes)**  
+-	Total Size: **92.7 MB (92669440 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62b79d1ddd52100f2ac1f305213f8cf45477c3618012d29fe84e99474239297c`
+-	Image ID: `sha256:514c8c8e2d2113a3a8af960a7cbf0f81de2d3a036479cb7b277855f1029407ef`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["php","-S","[::]:8080","-t","\/var\/www\/html"]`
 
 ```dockerfile
-# Wed, 10 Apr 2024 01:10:45 GMT
-ADD file:b9ae0499407c5db6a4d213452b2b485d2f0c9fae0792c77a629177988969faa3 in / 
-# Wed, 10 Apr 2024 01:10:52 GMT
+# Wed, 24 Apr 2024 03:14:51 GMT
+ADD file:d071b57187646d0653c08b1eb289840e8f9b901923339a0c04c87c0cddd93a41 in / 
+# Wed, 24 Apr 2024 03:14:57 GMT
 CMD ["bash"]
-# Wed, 10 Apr 2024 02:39:09 GMT
+# Wed, 24 Apr 2024 10:43:49 GMT
 STOPSIGNAL SIGINT
-# Wed, 10 Apr 2024 02:41:05 GMT
+# Wed, 24 Apr 2024 10:45:40 GMT
 RUN export DEBIAN_FRONTEND="noninteractive" &&	set -x &&	apt-get update &&	apt-get install -y 		php7.4-cli 		php7.4-fpm 		php7.4-mbstring 		php7.4-mysql 		php7.4-odbc 		php7.4-pdo-dblib 		php7.4-pgsql 		php7.4-sqlite3 &&	rm -rf /var/lib/apt/lists/*
-# Wed, 10 Apr 2024 02:41:11 GMT
+# Wed, 24 Apr 2024 10:45:46 GMT
 RUN echo "upload_max_filesize = 128M" >> /etc/php/7.4/cli/conf.d/0-upload_large_dumps.ini &&	echo "post_max_size = 128M" >> /etc/php/7.4/cli/conf.d/0-upload_large_dumps.ini &&	echo "memory_limit = 1G" >> /etc/php/7.4/cli/conf.d/0-upload_large_dumps.ini &&	echo "max_execution_time = 600" >> /etc/php/7.4/cli/conf.d/0-upload_large_dumps.ini &&	echo "max_input_vars = 5000" >> /etc/php/7.4/cli/conf.d/0-upload_large_dumps.ini &&	echo "variables_order = \"EGPCS\"" >> /etc/php/7.4/cli/conf.d/0-env.ini &&	cp /etc/php/7.4/cli/conf.d/0-upload_large_dumps.ini /etc/php/7.4/fpm/conf.d/0-upload_large_dumps.ini
-# Wed, 10 Apr 2024 02:41:18 GMT
+# Wed, 24 Apr 2024 10:45:53 GMT
 RUN groupadd -r adminer &&	useradd -r -g adminer adminer &&	mkdir -p /var/www/html &&	mkdir /var/www/html/plugins-enabled &&	chown -R adminer:adminer /var/www/html
-# Wed, 10 Apr 2024 02:41:22 GMT
+# Wed, 24 Apr 2024 10:45:56 GMT
 WORKDIR /var/www/html
-# Wed, 10 Apr 2024 02:41:25 GMT
+# Wed, 24 Apr 2024 10:45:59 GMT
 COPY multi:8e2583c31626149dac766c1e81b6ba87f4289e683e42823f52b952fbab069922 in /var/www/html/ 
-# Wed, 10 Apr 2024 02:41:28 GMT
+# Wed, 24 Apr 2024 10:46:03 GMT
 ENV ADMINER_VERSION=4.8.1
-# Wed, 10 Apr 2024 02:41:31 GMT
+# Wed, 24 Apr 2024 10:46:06 GMT
 ENV ADMINER_DOWNLOAD_SHA256=2fd7e6d8f987b243ab1839249551f62adce19704c47d3d0c8dd9e57ea5b9c6b3
-# Wed, 10 Apr 2024 02:41:35 GMT
+# Wed, 24 Apr 2024 10:46:09 GMT
 ENV ADMINER_COMMIT=1f173e18bdf0be29182e0d67989df56eadea4754
-# Wed, 10 Apr 2024 02:42:26 GMT
+# Wed, 24 Apr 2024 10:47:00 GMT
 RUN export DEBIAN_FRONTEND="noninteractive" &&	set -x &&	buildDeps='git curl ca-certificates' &&	apt-get update &&	apt-get install -y $buildDeps --no-install-recommends &&	rm -rf /var/lib/apt/lists/* &&	curl -fsSL "https://github.com/vrana/adminer/releases/download/v$ADMINER_VERSION/adminer-$ADMINER_VERSION.php" -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c - &&	git clone --recurse-submodules=designs --depth 1 --shallow-submodules --branch "v$ADMINER_VERSION" https://github.com/vrana/adminer.git /tmp/adminer &&	commit="$(git -C /tmp/adminer/ rev-parse HEAD)" &&	[ "$commit" = "$ADMINER_COMMIT" ] &&	cp -r /tmp/adminer/designs/ /tmp/adminer/plugins/ . &&	rm -rf /tmp/adminer/ &&	apt-get purge -y --auto-remove $buildDeps
-# Wed, 10 Apr 2024 02:42:29 GMT
+# Wed, 24 Apr 2024 10:47:03 GMT
 COPY file:5ff0be587f5dd9166f7a558457b0e656c889de46d3bb2afd41f1714ab2c02ceb in /usr/local/bin/ 
-# Wed, 10 Apr 2024 02:42:32 GMT
+# Wed, 24 Apr 2024 10:47:06 GMT
 ENTRYPOINT ["entrypoint.sh"]
-# Wed, 10 Apr 2024 02:42:36 GMT
+# Wed, 24 Apr 2024 10:47:09 GMT
 USER adminer
-# Wed, 10 Apr 2024 02:42:39 GMT
+# Wed, 24 Apr 2024 10:47:13 GMT
 CMD ["php" "-S" "[::]:8080" "-t" "/var/www/html"]
-# Wed, 10 Apr 2024 02:42:43 GMT
+# Wed, 24 Apr 2024 10:47:16 GMT
 EXPOSE 8080
 ```
 
 -	Layers:
-	-	`sha256:eade21836c93150a05690be18ba07f9d56297d4f2b59f348647ec05e7c1435cc`  
-		Last Modified: Wed, 10 Apr 2024 01:22:42 GMT  
-		Size: 53.3 MB (53309804 bytes)  
+	-	`sha256:1d0c8a1684008e75383df0eb74516bfb1122de8ea4827b46099c12fd8e762fd1`  
+		Last Modified: Wed, 24 Apr 2024 03:26:04 GMT  
+		Size: 53.3 MB (53322762 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebd1902d9e940ca4f985ab4b15d03c10c1c41e25341e2d799d6377bd84fdf46b`  
-		Last Modified: Wed, 10 Apr 2024 02:45:11 GMT  
-		Size: 38.0 MB (37953054 bytes)  
+	-	`sha256:279765339683ddab38d8a848da07ff0ab06dc236bd83f3ed8c0a50caaa988348`  
+		Last Modified: Wed, 24 Apr 2024 10:49:50 GMT  
+		Size: 38.0 MB (37955469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfea05f8b6b2a727cf803190d314cfe081a05dc3c761b172fa1ed2fe9f796545`  
-		Last Modified: Wed, 10 Apr 2024 02:44:44 GMT  
-		Size: 396.0 B  
+	-	`sha256:0264741265ee3dd74b58446e908c99a3e7f6a83dd796a6569a61269de234be00`  
+		Last Modified: Wed, 24 Apr 2024 10:49:24 GMT  
+		Size: 394.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:764e1676e4c5fd49d420288450dcb8005826fd8aa7444dba2606c551c5757a4e`  
-		Last Modified: Wed, 10 Apr 2024 02:44:44 GMT  
-		Size: 1.7 KB (1739 bytes)  
+	-	`sha256:90843704d81a4158b5753eb611b04d65bd0da2f6dcd27681ddd9683fac9f1f8b`  
+		Last Modified: Wed, 24 Apr 2024 10:49:24 GMT  
+		Size: 1.7 KB (1733 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c4055216153022814d1fc92382438d7a435bb922fbc98e65ebf0fcc8ca7f5ce`  
-		Last Modified: Wed, 10 Apr 2024 02:44:45 GMT  
-		Size: 1.5 KB (1481 bytes)  
+	-	`sha256:a0bdb59770b069a31e703580bfa996edd4f09a0287acdfc15ec93799431781f5`  
+		Last Modified: Wed, 24 Apr 2024 10:49:24 GMT  
+		Size: 1.5 KB (1483 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2239f6ac05f686d4f5e4fcd85217b38a462a4dd4d1276544471694a38c8ee9dc`  
-		Last Modified: Wed, 10 Apr 2024 02:44:45 GMT  
-		Size: 1.4 MB (1386193 bytes)  
+	-	`sha256:729565a2e7b366bde6db907f4738a598d19c977353ee5446df738cc84664cf71`  
+		Last Modified: Wed, 24 Apr 2024 10:49:24 GMT  
+		Size: 1.4 MB (1387104 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8a7ee10ebd61983ec9f2bfd09957a7ae82fe39a3324e1d63cbd4f13745de165`  
-		Last Modified: Wed, 10 Apr 2024 02:44:44 GMT  
-		Size: 494.0 B  
+	-	`sha256:4d43f743ffe13ca4ed269893e7fe38cdfd979ef65f4edea4222135a5fe98ad08`  
+		Last Modified: Wed, 24 Apr 2024 10:49:24 GMT  
+		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adminer:standalone` - linux; ppc64le
