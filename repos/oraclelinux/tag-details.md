@@ -12,6 +12,7 @@
 -	[`oraclelinux:8.9`](#oraclelinux89)
 -	[`oraclelinux:9`](#oraclelinux9)
 -	[`oraclelinux:9-slim`](#oraclelinux9-slim)
+-	[`oraclelinux:9-slim-fips`](#oraclelinux9-slim-fips)
 
 ## `oraclelinux:7`
 
@@ -642,3 +643,7 @@ CMD ["/bin/bash"]
 		Last Modified: Fri, 08 Mar 2024 19:49:57 GMT  
 		Size: 47.7 MB (47664888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `oraclelinux:9-slim-fips`
+
+**does not exist** (yet?)
