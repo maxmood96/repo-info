@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b108b9a25fa671e591fb7df00214a46db122f8502901e42828e11bd5bcebb97a`
-- Created: `2024-04-10T05:21:43.092944396Z`
-- Virtual Size: ~ 250.24 Mb  
+- Image ID: `sha256:7e16da0864c3225e8df7016b289f8b27cb3676f738b7dc303cc5e4fb5aa2457b`
+- Created: `2024-04-24T07:56:21.293506482Z`
+- Virtual Size: ~ 250.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh"]`
@@ -786,12 +786,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.19-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.19-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.31-13+deb11u8`
+### `dpkg` source package: `glibc=2.31-13+deb11u9`
 
 Binary Packages:
 
-- `libc-bin=2.31-13+deb11u8`
-- `libc6:amd64=2.31-13+deb11u8`
+- `libc-bin=2.31-13+deb11u9`
+- `libc6:amd64=2.31-13+deb11u9`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -801,17 +801,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.31-13+deb11u8
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-13%2bdeb11u8.dsc' glibc_2.31-13+deb11u8.dsc 8347 SHA256:a2b6b4147f2f39c8b0ae69605b4c6b5cad2a2cb64c5fd308e1fc1da97a836683
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-13%2bdeb11u8.debian.tar.xz' glibc_2.31-13+deb11u8.debian.tar.xz 960488 SHA256:9a1efa1b0b5c8ff7779c4c631cfefa371172c6bd1cbdb2be4bbc1dc1d4e91179
+$ apt-get source -qq --print-uris glibc=2.31-13+deb11u9
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u9.dsc' glibc_2.31-13+deb11u9.dsc 8347 SHA256:d434d56ceee9b81ca36558abdf21fe95ce96dd0be5f296c4d1394a53aac3bdce
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u9.debian.tar.xz' glibc_2.31-13+deb11u9.debian.tar.xz 961928 SHA256:c57f8a2e9bfbedeb110cfe35f9aa387337464ab1233de37f520a802f828a2b97
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.31-13+deb11u8/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.31-13+deb11u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.31-13+deb11u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.31-13+deb11u9/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.31-13+deb11u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.31-13+deb11u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1+deb11u1`
 
@@ -2262,22 +2262,22 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/php-defaults/76/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/php-defaults/76/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `php7.4=7.4.33-1+deb11u4`
+### `dpkg` source package: `php7.4=7.4.33-1+deb11u5`
 
 Binary Packages:
 
-- `php7.4-cli=7.4.33-1+deb11u4`
-- `php7.4-common=7.4.33-1+deb11u4`
-- `php7.4-fpm=7.4.33-1+deb11u4`
-- `php7.4-json=7.4.33-1+deb11u4`
-- `php7.4-mbstring=7.4.33-1+deb11u4`
-- `php7.4-mysql=7.4.33-1+deb11u4`
-- `php7.4-odbc=7.4.33-1+deb11u4`
-- `php7.4-opcache=7.4.33-1+deb11u4`
-- `php7.4-pgsql=7.4.33-1+deb11u4`
-- `php7.4-readline=7.4.33-1+deb11u4`
-- `php7.4-sqlite3=7.4.33-1+deb11u4`
-- `php7.4-sybase=7.4.33-1+deb11u4`
+- `php7.4-cli=7.4.33-1+deb11u5`
+- `php7.4-common=7.4.33-1+deb11u5`
+- `php7.4-fpm=7.4.33-1+deb11u5`
+- `php7.4-json=7.4.33-1+deb11u5`
+- `php7.4-mbstring=7.4.33-1+deb11u5`
+- `php7.4-mysql=7.4.33-1+deb11u5`
+- `php7.4-odbc=7.4.33-1+deb11u5`
+- `php7.4-opcache=7.4.33-1+deb11u5`
+- `php7.4-pgsql=7.4.33-1+deb11u5`
+- `php7.4-readline=7.4.33-1+deb11u5`
+- `php7.4-sqlite3=7.4.33-1+deb11u5`
+- `php7.4-sybase=7.4.33-1+deb11u5`
 
 Licenses: (parsed from: `/usr/share/doc/php7.4-cli/copyright`, `/usr/share/doc/php7.4-common/copyright`, `/usr/share/doc/php7.4-fpm/copyright`, `/usr/share/doc/php7.4-json/copyright`, `/usr/share/doc/php7.4-mbstring/copyright`, `/usr/share/doc/php7.4-mysql/copyright`, `/usr/share/doc/php7.4-odbc/copyright`, `/usr/share/doc/php7.4-opcache/copyright`, `/usr/share/doc/php7.4-pgsql/copyright`, `/usr/share/doc/php7.4-readline/copyright`, `/usr/share/doc/php7.4-sqlite3/copyright`, `/usr/share/doc/php7.4-sybase/copyright`)
 
@@ -2304,18 +2304,18 @@ Licenses: (parsed from: `/usr/share/doc/php7.4-cli/copyright`, `/usr/share/doc/p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris php7.4=7.4.33-1+deb11u4
-'http://deb.debian.org/debian/pool/main/p/php7.4/php7.4_7.4.33-1%2bdeb11u4.dsc' php7.4_7.4.33-1+deb11u4.dsc 5825 SHA256:98b39be4aaebd6887ca18b03b2605faba6ce959e461a358d3b02ad146694088a
-'http://deb.debian.org/debian/pool/main/p/php7.4/php7.4_7.4.33.orig.tar.xz' php7.4_7.4.33.orig.tar.xz 10420144 SHA256:924846abf93bc613815c55dd3f5809377813ac62a9ec4eb3778675b82a27b927
-'http://deb.debian.org/debian/pool/main/p/php7.4/php7.4_7.4.33.orig.tar.xz.asc' php7.4_7.4.33.orig.tar.xz.asc 833 SHA256:569a01c7c605a4571fdf7dfadfff4215cc4a63ea5d474c7ec92bd7b4fecfffcb
-'http://deb.debian.org/debian/pool/main/p/php7.4/php7.4_7.4.33-1%2bdeb11u4.debian.tar.xz' php7.4_7.4.33-1+deb11u4.debian.tar.xz 77184 SHA256:66b1476f1ea7d5c158d5d1641a71b618f47bacb8794f1e22ab6146086694312e
+$ apt-get source -qq --print-uris php7.4=7.4.33-1+deb11u5
+'http://deb.debian.org/debian-security/pool/updates/main/p/php7.4/php7.4_7.4.33-1%2bdeb11u5.dsc' php7.4_7.4.33-1+deb11u5.dsc 5825 SHA256:0f374b4b07791304f4b366a7526e69e0ba9d85d7a6612890b9d34be5193df269
+'http://deb.debian.org/debian-security/pool/updates/main/p/php7.4/php7.4_7.4.33.orig.tar.xz' php7.4_7.4.33.orig.tar.xz 10420144 SHA256:924846abf93bc613815c55dd3f5809377813ac62a9ec4eb3778675b82a27b927
+'http://deb.debian.org/debian-security/pool/updates/main/p/php7.4/php7.4_7.4.33.orig.tar.xz.asc' php7.4_7.4.33.orig.tar.xz.asc 833 SHA256:569a01c7c605a4571fdf7dfadfff4215cc4a63ea5d474c7ec92bd7b4fecfffcb
+'http://deb.debian.org/debian-security/pool/updates/main/p/php7.4/php7.4_7.4.33-1%2bdeb11u5.debian.tar.xz' php7.4_7.4.33-1+deb11u5.debian.tar.xz 86144 SHA256:21885cc1308575eb8661d1d58e8249b74254f3991ebf52b631863b09240c1c21
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/php7.4/7.4.33-1+deb11u4/ (for browsing the source)
-- https://sources.debian.net/src/php7.4/7.4.33-1+deb11u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/php7.4/7.4.33-1+deb11u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/php7.4/7.4.33-1+deb11u5/ (for browsing the source)
+- https://sources.debian.net/src/php7.4/7.4.33-1+deb11u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/php7.4/7.4.33-1+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `postgresql-13=13.14-0+deb11u1`
 
