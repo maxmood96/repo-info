@@ -1,7 +1,7 @@
 ## `node:lts`
 
 ```console
-$ docker pull node@sha256:1de802fdf24ea1b1b5dddb5bbd17049708e61226c9753879360d056298fd5c66
+$ docker pull node@sha256:f89f8614e61a6da72ba33709a19560b9090a270ee9a8448de400717a5c63c644
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -246,78 +246,78 @@ CMD ["node"]
 ### `node:lts` - linux; ppc64le
 
 ```console
-$ docker pull node@sha256:8ba6a7243fc2487d5cf0cdfcb28a432fd8f5044e2f34f20ff5bacf3e5e6d7d5f
+$ docker pull node@sha256:9d4ef12eb9ef4691af412280c4722b3272e91f173d08cacbdd06797969e8dbdb
 ```
 
 -	Docker Version: 20.10.26
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **414.8 MB (414782844 bytes)**  
+-	Total Size: **414.8 MB (414848455 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cffcbd655f1e32cfaccc317fc004a17361bb6c4c488c0af5149842a1642c7cf7`
+-	Image ID: `sha256:7d95d72678f9456c822e7b0af595b73f37b9deb65d03230f651973784eb03048`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
-# Wed, 10 Apr 2024 01:26:15 GMT
-ADD file:12519205a7ecc1a9b92b9b26c967bf9f7204f2e0b9c81cb9a147b10a29b0715c in / 
-# Wed, 10 Apr 2024 01:26:17 GMT
+# Wed, 24 Apr 2024 03:20:52 GMT
+ADD file:6b48a0374d2bf17058a1ace290a29b25ef9f56d85e94d8cd33ac09dbdc5daddf in / 
+# Wed, 24 Apr 2024 03:20:55 GMT
 CMD ["bash"]
-# Wed, 10 Apr 2024 06:28:38 GMT
+# Wed, 24 Apr 2024 03:48:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 10 Apr 2024 06:29:41 GMT
+# Wed, 24 Apr 2024 03:49:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 10 Apr 2024 06:33:47 GMT
+# Wed, 24 Apr 2024 03:56:05 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 10 Apr 2024 12:27:00 GMT
+# Wed, 24 Apr 2024 05:59:03 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
-# Thu, 11 Apr 2024 15:06:37 GMT
+# Wed, 24 Apr 2024 06:04:34 GMT
 ENV NODE_VERSION=20.12.2
-# Thu, 11 Apr 2024 15:06:58 GMT
+# Wed, 24 Apr 2024 06:04:54 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && export GNUPGHOME="$(mktemp -d)"   && set -ex   && for key in     4ED778F539E3634C779C87C6D7062848A1AB005C     141F07595B7B3FFE74309A937405533BE57C7D57     74F12602B6F1C4E913FAA37AD3A89613643B6201     DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7     61FC681DFB92A079F1685E77973F295594EC4689     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     108F52B48DB57BB0CC439B2997B01419BD92F80A     A363A499291CBBC940DD62E41F10027AF002F8B0     CC68F5A3106FF448322E48ED27F5E38D5B0A215F   ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs   && node --version   && npm --version
-# Thu, 11 Apr 2024 15:07:00 GMT
+# Wed, 24 Apr 2024 06:04:58 GMT
 ENV YARN_VERSION=1.22.19
-# Tue, 23 Apr 2024 23:33:44 GMT
+# Wed, 24 Apr 2024 06:05:02 GMT
 RUN set -ex   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && yarn --version   && rm -rf /tmp/*
-# Tue, 23 Apr 2024 23:33:45 GMT
+# Wed, 24 Apr 2024 06:05:03 GMT
 COPY file:4d192565a7220e135cab6c77fbc1c73211b69f3d9fb37e62857b2c6eb9363d51 in /usr/local/bin/ 
-# Tue, 23 Apr 2024 23:33:45 GMT
+# Wed, 24 Apr 2024 06:05:04 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 23 Apr 2024 23:33:46 GMT
+# Wed, 24 Apr 2024 06:05:05 GMT
 CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:e6dcf23c0df5604eb9aa3050ab9c36d44dec4ab1448d2c229f4beaaf0f7fa503`  
-		Last Modified: Wed, 10 Apr 2024 01:30:37 GMT  
-		Size: 53.6 MB (53562477 bytes)  
+	-	`sha256:bf47934b0700489c27f4b1918c464037353ebec2ebc12585ceea997c9a34c71c`  
+		Last Modified: Wed, 24 Apr 2024 03:25:57 GMT  
+		Size: 53.6 MB (53580168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e9a49dc2918c681cd1306002e0306d198b0ab9f74366235b251cb85c930eaaa`  
-		Last Modified: Wed, 10 Apr 2024 07:16:20 GMT  
-		Size: 25.7 MB (25696598 bytes)  
+	-	`sha256:677be8677970cb6c89d034144a91a8695625d82f32553778be503e17ab5f55b3`  
+		Last Modified: Wed, 24 Apr 2024 04:22:57 GMT  
+		Size: 25.7 MB (25699777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7558a95a0d29869e7f316194c1d23abcbbe4d8c3340f4d3103f670b9d4af3eef`  
-		Last Modified: Wed, 10 Apr 2024 07:16:43 GMT  
-		Size: 69.6 MB (69581154 bytes)  
+	-	`sha256:a48162777bb1b177bfa77ee29ba9552a6c899119f959faa64ef54f0a5aab3116`  
+		Last Modified: Wed, 24 Apr 2024 04:23:19 GMT  
+		Size: 69.6 MB (69584472 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aab0dede385435598179e3ab86d7c4094cf59880d986b82c837b42b0649d5afa`  
-		Last Modified: Wed, 10 Apr 2024 07:17:27 GMT  
-		Size: 214.2 MB (214172353 bytes)  
+	-	`sha256:326e881f9e7d456fa7b2b9e91f26b48776888d7ca1975413e2554119bfef1024`  
+		Last Modified: Wed, 24 Apr 2024 04:23:59 GMT  
+		Size: 214.2 MB (214213767 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e287fa6b681dac91dca1006660a736dbec963eea7f7ca61e3697c425e02ba3e`  
-		Last Modified: Wed, 10 Apr 2024 12:43:06 GMT  
-		Size: 3.4 KB (3377 bytes)  
+	-	`sha256:33919bd31d0fed50c20b47f7afaf417f15125e184909dd906c6812030869d2ea`  
+		Last Modified: Wed, 24 Apr 2024 06:15:18 GMT  
+		Size: 3.4 KB (3368 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b489138d16477db55220b56b1ba8476ea20dc8fd39e61c0b7ae15ba22627c67a`  
-		Last Modified: Thu, 11 Apr 2024 15:52:08 GMT  
-		Size: 50.5 MB (50519324 bytes)  
+	-	`sha256:0d93dfb7c9fe23833972c3fbd32149e00b497ceb9e032a4fd55af17e920eb4bd`  
+		Last Modified: Wed, 24 Apr 2024 06:17:27 GMT  
+		Size: 50.5 MB (50519354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0bc2321c0fa9ea4f4187fe31a0e1243b333f89c45d12780cc357f044b5dd601e`  
-		Last Modified: Tue, 23 Apr 2024 23:42:04 GMT  
-		Size: 1.2 MB (1247106 bytes)  
+	-	`sha256:4ab08ca3057b070f27e7048db445c62b15b98d7e445ce0d737fd6498221e6bed`  
+		Last Modified: Wed, 24 Apr 2024 06:17:18 GMT  
+		Size: 1.2 MB (1247096 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a2b482fbedc5a6c2d3683e036bf65ca40568c649a43e873aa3dece70f172380`  
-		Last Modified: Tue, 23 Apr 2024 23:42:04 GMT  
-		Size: 455.0 B  
+	-	`sha256:4f8b0a8860472b4173e8e77218f42a9e64eeda231efe684b9afe7acba56f9c56`  
+		Last Modified: Wed, 24 Apr 2024 06:17:18 GMT  
+		Size: 453.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `node:lts` - linux; s390x
