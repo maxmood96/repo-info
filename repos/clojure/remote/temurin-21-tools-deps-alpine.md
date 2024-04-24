@@ -1,7 +1,7 @@
 ## `clojure:temurin-21-tools-deps-alpine`
 
 ```console
-$ docker pull clojure@sha256:02338309c9d3d23528b936b1e5a8912b477e0eec87ad8ee548860d455b2618a2
+$ docker pull clojure@sha256:6e81d0181443d0abba98e9cd2e65f6380b41841efaadee45d6627b05bbf88a96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull clojure@sha256:02338309c9d3d23528b936b1e5a8912b477e0eec87ad8ee5488
 ### `clojure:temurin-21-tools-deps-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:be38f37a2eb7aaa250bf09052096efb490795d26418988849d9868597b2e3f11
+$ docker pull clojure@sha256:c585d9900ce14a5db40232d337853dde4f489e74fa902bbd6ec61c376e69b197
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.2 MB (200175891 bytes)**  
+-	Total Size: **200.2 MB (200175913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a62a9cc798ce3cc5cee9be0a54e641ac6b89b1d18e6cff373d7ffd5c5ab43d10`
+-	Image ID: `sha256:a9d0e69229aaa430f9751a1959eee3b4045bac8d7e2ceb8e6482dec5c4d698b0`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -51,15 +51,15 @@ CMD ["jshell"]
 ENV CLOJURE_VERSION=1.11.1.1435
 # Thu, 28 Mar 2024 03:14:44 GMT
 WORKDIR /tmp
-# Wed, 10 Apr 2024 20:31:49 GMT
-RUN apk add --no-cache curl bash make git && curl -sLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
-# Wed, 10 Apr 2024 20:31:50 GMT
+# Tue, 23 Apr 2024 23:34:22 GMT
+RUN apk add --no-cache curl bash make git && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
+# Tue, 23 Apr 2024 23:34:22 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Wed, 10 Apr 2024 20:31:50 GMT
+# Tue, 23 Apr 2024 23:34:22 GMT
 COPY file:137b40904568e30898cd031ef34f77e7f132846ba4eec91d04ae4b93dddfbb8d in /usr/local/bin/entrypoint 
-# Wed, 10 Apr 2024 20:31:50 GMT
+# Tue, 23 Apr 2024 23:34:22 GMT
 ENTRYPOINT ["entrypoint"]
-# Wed, 10 Apr 2024 20:31:50 GMT
+# Tue, 23 Apr 2024 23:34:23 GMT
 CMD ["-M" "--repl"]
 ```
 
@@ -84,15 +84,15 @@ CMD ["-M" "--repl"]
 		Last Modified: Thu, 28 Mar 2024 02:11:23 GMT  
 		Size: 716.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:edbf0d297d8656a51fb0d76e3c2e2b3dd74e482483a4a5934519ab2132aca480`  
-		Last Modified: Wed, 10 Apr 2024 20:47:59 GMT  
-		Size: 25.0 MB (25009200 bytes)  
+	-	`sha256:9055b28e434f00b2ec7bca18e4b8c69c2f6fce533c2e651e588b29ace0e33901`  
+		Last Modified: Tue, 23 Apr 2024 23:47:12 GMT  
+		Size: 25.0 MB (25009221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ba2f3258cd13f4d305c84ba01eeecfc5fc710e97c6f19f9498b709b8276e8fe`  
-		Last Modified: Wed, 10 Apr 2024 20:47:57 GMT  
-		Size: 624.0 B  
+	-	`sha256:473fb95857b1457f12b5239329af04e6fbfeca984c2255c73db4aaf665929bde`  
+		Last Modified: Tue, 23 Apr 2024 23:47:10 GMT  
+		Size: 625.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:569d56de64da7ebe321aa98aefcba913f685346a590780f9d6a51ffe937ec378`  
-		Last Modified: Wed, 10 Apr 2024 20:47:57 GMT  
+	-	`sha256:f9da478ee8888b45dd0a9a375f49875496f641f94ee8378661734f5969448419`  
+		Last Modified: Tue, 23 Apr 2024 23:47:09 GMT  
 		Size: 405.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

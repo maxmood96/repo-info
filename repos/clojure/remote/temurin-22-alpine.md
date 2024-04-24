@@ -1,7 +1,7 @@
 ## `clojure:temurin-22-alpine`
 
 ```console
-$ docker pull clojure@sha256:dd99b048df075173d40a22105c8bce41b72ee1d8c0433a38db5150b3b873994e
+$ docker pull clojure@sha256:50419affe7a20b7dc4205f3c201ce0ec6560b8efdf90d8d5c60255d38c3da043
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull clojure@sha256:dd99b048df075173d40a22105c8bce41b72ee1d8c0433a38db5
 ### `clojure:temurin-22-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:087442ae2be568e752c33d862948683c9f7af15f8dbe12475550189873524733
+$ docker pull clojure@sha256:279d5f37e9f7db9ff6880e49bec58b3534d0f0de2b96899844a6184dfa3a5e67
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **198.5 MB (198470875 bytes)**  
+-	Total Size: **198.5 MB (198470880 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ca9d323e3402eb5f6b1fbe90f234fbd9eec26288fd46efc6629d40856c30dad6`
+-	Image ID: `sha256:a4c850b7e50a9601e74eb8670eb5ee684b4a628280324ac230e44d102ef43be1`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -51,15 +51,15 @@ CMD ["jshell"]
 ENV CLOJURE_VERSION=1.11.1.1435
 # Wed, 10 Apr 2024 20:36:36 GMT
 WORKDIR /tmp
-# Wed, 10 Apr 2024 20:36:41 GMT
-RUN apk add --no-cache curl bash make git && curl -sLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
-# Wed, 10 Apr 2024 20:36:41 GMT
+# Tue, 23 Apr 2024 23:36:43 GMT
+RUN apk add --no-cache curl bash make git && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "7edee5b12197a2dbe6338e672b109b18164cde84bea1f049ceceed41fc4dd10a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
+# Tue, 23 Apr 2024 23:36:43 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Wed, 10 Apr 2024 20:36:41 GMT
+# Tue, 23 Apr 2024 23:36:43 GMT
 COPY file:137b40904568e30898cd031ef34f77e7f132846ba4eec91d04ae4b93dddfbb8d in /usr/local/bin/entrypoint 
-# Wed, 10 Apr 2024 20:36:42 GMT
+# Tue, 23 Apr 2024 23:36:43 GMT
 ENTRYPOINT ["entrypoint"]
-# Wed, 10 Apr 2024 20:36:42 GMT
+# Tue, 23 Apr 2024 23:36:43 GMT
 CMD ["-M" "--repl"]
 ```
 
@@ -84,15 +84,15 @@ CMD ["-M" "--repl"]
 		Last Modified: Thu, 28 Mar 2024 02:13:16 GMT  
 		Size: 717.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bbde0890e1b6db2d7656826b0f1e6a8a5fb47ad8a74ecff6cd9869d11ee00d6`  
-		Last Modified: Wed, 10 Apr 2024 20:51:53 GMT  
-		Size: 25.0 MB (25009180 bytes)  
+	-	`sha256:35ba9452f5ace6c2934fe970bc6fe071b7cdbbf1e5093fb914f5a754139e6dab`  
+		Last Modified: Tue, 23 Apr 2024 23:49:18 GMT  
+		Size: 25.0 MB (25009184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e141ba97e461e7e7142b033bc6087c32654ffa75a7a0249f0f5b08847357ab5`  
-		Last Modified: Wed, 10 Apr 2024 20:51:51 GMT  
-		Size: 624.0 B  
+	-	`sha256:578517cc901cb51c56f4b1ddc0d1a953f847f8d9f149fda5c5ec3890ffe1f661`  
+		Last Modified: Tue, 23 Apr 2024 23:49:16 GMT  
+		Size: 625.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21ed4d1447b6a390fd693e53061444d9da2134d48a19851750533b1b3dab28be`  
-		Last Modified: Wed, 10 Apr 2024 20:51:51 GMT  
+	-	`sha256:04a0b802347c60264de722aaee95637a142c8f1d018177e0999982b7a620cd8e`  
+		Last Modified: Tue, 23 Apr 2024 23:49:16 GMT  
 		Size: 406.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
