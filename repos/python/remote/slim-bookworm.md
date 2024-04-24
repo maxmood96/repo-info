@@ -1,7 +1,7 @@
 ## `python:slim-bookworm`
 
 ```console
-$ docker pull python@sha256:399ca82ae14b7c202285a74a41595040422cb9b186df3339c3b67d0882f00fdd
+$ docker pull python@sha256:d4c7e80579556c874b29cbda92b13ebd6b83843d5f1df9d6cee9c77910a910b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -82,19 +82,19 @@ CMD ["python3"]
 ### `python:slim-bookworm` - linux; arm variant v5
 
 ```console
-$ docker pull python@sha256:da096869c14969a48808bd9814f6d14e5319f6db2fee6ef8167e5f8fe34a9bc7
+$ docker pull python@sha256:a9922d9d812c99034d23bef370270abe95def980c1f2664afac002f3e6a9428e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.4 MB (44425380 bytes)**  
+-	Total Size: **44.5 MB (44523068 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4bc63a09ef04334b9d795aa032c28273e74c041959ca25e9b095413fd3aa619a`
+-	Image ID: `sha256:dfdf74b7fba4651d3710bbb185245712c995dea66a65bb1e050f36b113a25e77`
 -	Default Command: `["python3"]`
 
 ```dockerfile
-# Wed, 10 Apr 2024 00:49:04 GMT
-ADD file:bfe2e0ed45dd2920845bd9283b7d13266c82fe9f48ba261b6529c28dc246d3e4 in / 
-# Wed, 10 Apr 2024 00:49:04 GMT
+# Wed, 24 Apr 2024 03:53:11 GMT
+ADD file:0140ab9be4171f94aae33901f189ffd8822ce6da4a052798883fd66d03b79be9 in / 
+# Wed, 24 Apr 2024 03:53:12 GMT
 CMD ["bash"]
 # Tue, 09 Apr 2024 15:49:24 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -123,25 +123,25 @@ CMD ["python3"]
 ```
 
 -	Layers:
-	-	`sha256:60d288182f6883c1ed662f82d32316348aac8ca45c943f1093aed5c0ed01b45c`  
-		Last Modified: Wed, 10 Apr 2024 00:54:34 GMT  
-		Size: 26.9 MB (26890564 bytes)  
+	-	`sha256:2c9444d4d8a989f4536a8afd8b41a3461ede5b15d490d87c3369b051095d7ae3`  
+		Last Modified: Wed, 24 Apr 2024 03:56:28 GMT  
+		Size: 26.9 MB (26910029 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a529fa7673fbc640fce624bdca42a743c8dad27428a00550d2b8bcede4f7fa6`  
-		Last Modified: Wed, 10 Apr 2024 04:30:45 GMT  
-		Size: 3.1 MB (3075390 bytes)  
+	-	`sha256:4dbd253d4f0e08b7def78c3ec9acceeb7ffaa22229767dd5b8e3b8cda191e1ec`  
+		Last Modified: Wed, 24 Apr 2024 11:08:19 GMT  
+		Size: 3.1 MB (3078423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e188e6a681472ac0b25f660f948edde3cf4ee040ea22445ae2534001a7f494b3`  
-		Last Modified: Wed, 10 Apr 2024 04:30:47 GMT  
-		Size: 11.5 MB (11478087 bytes)  
+	-	`sha256:a0a2972a3ccf8b792da8eb57d4028364f322452b3c2ad0dbbc39f8df3b7dbff4`  
+		Last Modified: Wed, 24 Apr 2024 11:08:21 GMT  
+		Size: 11.5 MB (11481143 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4903851106fa2fe941adccbd8415cc35e6716acd7b9361953f02e2941dd4d187`  
-		Last Modified: Wed, 10 Apr 2024 04:30:44 GMT  
+	-	`sha256:f916b1a7e1bff7077be5c58dbc341191f2098c3baef7921dafe1e5d3d5d2c0e6`  
+		Last Modified: Wed, 24 Apr 2024 11:08:19 GMT  
 		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8d5f1e37f440f4317fc3afb86cc6766c7446a78cea5a3968470d4c89e2beb41`  
-		Last Modified: Wed, 10 Apr 2024 04:30:45 GMT  
-		Size: 3.0 MB (2981095 bytes)  
+	-	`sha256:e6b9cdcf0fbc04a4a106e38e7c16815006dd49a29107f79cc5e338673c8e41c2`  
+		Last Modified: Wed, 24 Apr 2024 11:08:20 GMT  
+		Size: 3.1 MB (3053229 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:slim-bookworm` - linux; arm variant v7
