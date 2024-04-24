@@ -1,7 +1,7 @@
 ## `eclipse-temurin:17-jre`
 
 ```console
-$ docker pull eclipse-temurin@sha256:d83011ffee61e49c3c4ac87447190f95e6a70f89c0b8e2353ad4a86d920e4b11
+$ docker pull eclipse-temurin@sha256:c50303657ff29e922be548d2ba2b74ad7ee2683418e5179c5614b0ae1a6e3c0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -285,13 +285,13 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ### `eclipse-temurin:17-jre` - linux; s390x
 
 ```console
-$ docker pull eclipse-temurin@sha256:376e798e40ab40402f9c0b94d61c2fad7df21ca1dc6436525ac4f0f2957a8c90
+$ docker pull eclipse-temurin@sha256:856c28118e6df0582cdaa20c9ca26b3e32d3185cbef167f6f752e12dd28bfa58
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **85.4 MB (85390282 bytes)**  
+-	Total Size: **85.5 MB (85455446 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b2f22cc68988e6d5af92c24d60d7dae7c83c56cba59b2ab7dc35d2ee7b63778`
+-	Image ID: `sha256:5aff8e7fd940f9a103979bf0b9b955384a4e8d186c6fa67053b9d3cf55e8515d`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
@@ -307,23 +307,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:7691b95908cace61ceeec91c44a1a37e7dc2fc3ab5a5fd89f493cefdff9e840e in / 
 # Wed, 10 Apr 2024 19:09:05 GMT
 CMD ["/bin/bash"]
-# Wed, 27 Mar 2024 15:44:12 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 27 Mar 2024 15:44:12 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 27 Mar 2024 15:44:12 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 27 Mar 2024 15:44:12 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 27 Mar 2024 15:44:12 GMT
-ENV JAVA_VERSION=jdk-17.0.10+7
-# Wed, 27 Mar 2024 15:44:12 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='16080d055da0962fbd6b40f659a98a457cba3efa7ea716d5400cfebe8b935bf0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.10_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='620cc0e7338f2722f3ed076ac65c0fafb575981426bac4e1970860e5e2d048f0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.10_7.tar.gz';          ;;        armhf|arm)          ESUM='0378bdf6769632b182b27ba4e53b17eaefefdbafa3845c15e1bd88a5aeec8442';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.10_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='4e18b60dba540b5c431ff03f74a1c73b22d83151f93b8768241d264d1a53582d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.10_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='c1b2fd232fc55e814479d7585d7ec45bae952a2f4137084f1d99f958c6880a49';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 27 Mar 2024 15:44:12 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
+ENV JAVA_VERSION=jdk-17.0.11+9
+# Tue, 23 Apr 2024 20:51:38 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 23 Apr 2024 20:51:38 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 27 Mar 2024 15:44:12 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 27 Mar 2024 15:44:12 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
@@ -336,30 +336,30 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdfebbced680b7390af0f88a97ca932f8f27bff80826bc87eb9bf49c145e698d`  
-		Last Modified: Tue, 16 Apr 2024 01:52:25 GMT  
-		Size: 43.8 MB (43765845 bytes)  
+	-	`sha256:11b76b800695d16970dd53f9f27a10ce1860d85197ae77d53b6dd08e9b836d7d`  
+		Last Modified: Wed, 24 Apr 2024 19:51:35 GMT  
+		Size: 43.8 MB (43831009 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61d3da2d88573089bc4ee694af587d7d08402f351e99599db6d1da2b3604eae0`  
-		Last Modified: Tue, 16 Apr 2024 01:52:19 GMT  
-		Size: 159.0 B  
+	-	`sha256:9b983aaa2bcfdd00ffe3569f744782d2543f270663418d1ae509a7abef90f47e`  
+		Last Modified: Wed, 24 Apr 2024 19:51:29 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e5c2b092b12993a47168eec02810c84eeb0fd925b4dd1e08fedb626dd3fb089`  
-		Last Modified: Tue, 16 Apr 2024 01:52:19 GMT  
-		Size: 734.0 B  
+	-	`sha256:80136a5c62fb06ed9b371242941ea9c97e94473ecbfac8b266652b4f90eb8972`  
+		Last Modified: Wed, 24 Apr 2024 19:51:29 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17-jre` - windows version 10.0.20348.2402; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:12ca3164e3f188658dca65db641ccd2c9cbbc91913be41097724df1b42677aed
+$ docker pull eclipse-temurin@sha256:a7ee426ccc5ad52431e60bae8a6d9ae633c597d9debd5c3fac64fcb75120ee37
 ```
 
 -	Docker Version: 20.10.21
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2074481673 bytes)**  
+-	Total Size: **2.1 GB (2074558779 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:487a9ace6e2a76c4968a2bb11fb970cb62b6d67df0039a02663d5991818d6c2e`
+-	Image ID: `sha256:a13da63bfa2563437f64b1e540d2e7b3c24d82dd847b6741d2f345333fd3ee9a`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -370,11 +370,11 @@ RUN Apply image 10.0.20348.1787
 RUN Install update 10.0.20348.2402
 # Tue, 09 Apr 2024 23:37:11 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Apr 2024 00:00:34 GMT
-ENV JAVA_VERSION=jdk-17.0.10+7
-# Wed, 10 Apr 2024 00:07:39 GMT
-RUN Write-Host ('Downloading https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_windows_hotspot_17.0.10_7.msi ...');     curl.exe -LfsSo openjdk.msi https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_windows_hotspot_17.0.10_7.msi ;     Write-Host ('Verifying sha256 (c22a2f34d291e19c6f6120c8f15dac5a34659a37991299b6d15ed6009322e6f2) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne 'c22a2f34d291e19c6f6120c8f15dac5a34659a37991299b6d15ed6009322e6f2') {         Write-Host 'FAILED!';         exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     $proc = Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome', 'INSTALLDIR=C:\openjdk-17' -Wait -Passthru;     $proc.WaitForExit() ;     if ($proc.ExitCode -ne 0) {         Write-Host 'FAILED installing MSI!' ;         exit 1;     };         Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
-# Wed, 10 Apr 2024 00:08:04 GMT
+# Wed, 24 Apr 2024 18:47:52 GMT
+ENV JAVA_VERSION=jdk-17.0.11+9
+# Wed, 24 Apr 2024 18:54:55 GMT
+RUN Write-Host ('Downloading https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_windows_hotspot_17.0.11_9.msi ...');     curl.exe -LfsSo openjdk.msi https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_windows_hotspot_17.0.11_9.msi ;     Write-Host ('Verifying sha256 (1244a2fc43e502758f16bd49de01fa60e89a94247eee41fa449db8f90ed5e682) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne '1244a2fc43e502758f16bd49de01fa60e89a94247eee41fa449db8f90ed5e682') {         Write-Host 'FAILED!';         exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     $proc = Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome', 'INSTALLDIR=C:\openjdk-17' -Wait -Passthru;     $proc.WaitForExit() ;     if ($proc.ExitCode -ne 0) {         Write-Host 'FAILED installing MSI!' ;         exit 1;     };         Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
+# Wed, 24 Apr 2024 18:55:19 GMT
 RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --version;         Write-Host 'Complete.'
 ```
 
@@ -391,30 +391,30 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 		Last Modified: Wed, 10 Apr 2024 00:44:18 GMT  
 		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7849a5ecee7af640dcb0cfc9aec0e995664c6ef90fe3005b9a114b353831851e`  
-		Last Modified: Wed, 10 Apr 2024 00:51:47 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:6e6848cff0d3a417e34e0af02484770f9988ef235f3e0b09ab1c5ad3d5b626aa`  
+		Last Modified: Wed, 24 Apr 2024 19:37:27 GMT  
+		Size: 1.4 KB (1412 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9affed7097e7dab8c639aae314ffd409282c516cd6cb1b7fdcdb3434ee442036`  
-		Last Modified: Wed, 10 Apr 2024 00:53:42 GMT  
-		Size: 74.8 MB (74825970 bytes)  
+	-	`sha256:6b04bbc86215a1efc0ae9e1394884f54a6283a0d8759f88d7d5ccce7c602cec5`  
+		Last Modified: Wed, 24 Apr 2024 19:39:25 GMT  
+		Size: 74.9 MB (74893504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2a1feb32d7a7bb177266af8a15383349d3511a55ea5e5e45cd95dc0c7ce50c4`  
-		Last Modified: Wed, 10 Apr 2024 00:53:32 GMT  
-		Size: 279.4 KB (279363 bytes)  
+	-	`sha256:78c8ba9b828ca070a29d983634bf3b7cd799e0021add0242cc78ee3e3f4becd9`  
+		Last Modified: Wed, 24 Apr 2024 19:39:16 GMT  
+		Size: 288.8 KB (288820 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17-jre` - windows version 10.0.17763.5696; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:b50b02b3e3494a06325bc548c81d354af4ab25d875c53cb9927495e8e4eace55
+$ docker pull eclipse-temurin@sha256:9f353845c3524f54ea65eccbcf19f0a49432c7c9ba0a1f7d48029bf261b8633e
 ```
 
 -	Docker Version: 20.10.21
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2242442416 bytes)**  
+-	Total Size: **2.2 GB (2242541023 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:67de0761a48a00d404d438f9a9bfa3e5be5d467fe398a9730b34c19fdf1658af`
+-	Image ID: `sha256:db11d531e2e9221a03d68ce6e700057129530d33233e7a827a090c7a5806c144`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -425,11 +425,11 @@ RUN Apply image 10.0.17763.4499
 RUN Install update 10.0.17763.5696
 # Tue, 09 Apr 2024 23:38:55 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Apr 2024 00:02:18 GMT
-ENV JAVA_VERSION=jdk-17.0.10+7
-# Wed, 10 Apr 2024 00:09:55 GMT
-RUN Write-Host ('Downloading https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_windows_hotspot_17.0.10_7.msi ...');     curl.exe -LfsSo openjdk.msi https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_windows_hotspot_17.0.10_7.msi ;     Write-Host ('Verifying sha256 (c22a2f34d291e19c6f6120c8f15dac5a34659a37991299b6d15ed6009322e6f2) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne 'c22a2f34d291e19c6f6120c8f15dac5a34659a37991299b6d15ed6009322e6f2') {         Write-Host 'FAILED!';         exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     $proc = Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome', 'INSTALLDIR=C:\openjdk-17' -Wait -Passthru;     $proc.WaitForExit() ;     if ($proc.ExitCode -ne 0) {         Write-Host 'FAILED installing MSI!' ;         exit 1;     };         Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
-# Wed, 10 Apr 2024 00:11:18 GMT
+# Wed, 24 Apr 2024 18:49:35 GMT
+ENV JAVA_VERSION=jdk-17.0.11+9
+# Wed, 24 Apr 2024 18:57:15 GMT
+RUN Write-Host ('Downloading https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_windows_hotspot_17.0.11_9.msi ...');     curl.exe -LfsSo openjdk.msi https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_windows_hotspot_17.0.11_9.msi ;     Write-Host ('Verifying sha256 (1244a2fc43e502758f16bd49de01fa60e89a94247eee41fa449db8f90ed5e682) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne '1244a2fc43e502758f16bd49de01fa60e89a94247eee41fa449db8f90ed5e682') {         Write-Host 'FAILED!';         exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     $proc = Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome', 'INSTALLDIR=C:\openjdk-17' -Wait -Passthru;     $proc.WaitForExit() ;     if ($proc.ExitCode -ne 0) {         Write-Host 'FAILED installing MSI!' ;         exit 1;     };         Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
+# Wed, 24 Apr 2024 18:58:44 GMT
 RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --version;         Write-Host 'Complete.'
 ```
 
@@ -446,15 +446,15 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 		Last Modified: Wed, 10 Apr 2024 00:46:06 GMT  
 		Size: 1.4 KB (1411 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b231047d10067e1cf1d81b35d1a6c976dabad9e08d91e6b8342aac9007037325`  
-		Last Modified: Wed, 10 Apr 2024 00:52:24 GMT  
-		Size: 1.4 KB (1371 bytes)  
+	-	`sha256:0ad79c591b0b60061ca84ca875a79b8e11c69625ce8ffe978f216f4f79e12c86`  
+		Last Modified: Wed, 24 Apr 2024 19:38:05 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:195ab88a05e57f883732e225de9b3ca36c071be6b8d67eb5ab524487a5946e48`  
-		Last Modified: Wed, 10 Apr 2024 00:54:02 GMT  
-		Size: 74.8 MB (74845310 bytes)  
+	-	`sha256:f2eb938141ec403fe8a7372e967c8bda261607cce391e9683612590a2f384b0d`  
+		Last Modified: Wed, 24 Apr 2024 19:39:45 GMT  
+		Size: 74.9 MB (74925956 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1a59e493dfb95c6062d5d5bb748e62941387aa365dec780ae0c89588ef1aac5`  
-		Last Modified: Wed, 10 Apr 2024 00:53:52 GMT  
-		Size: 3.2 MB (3166365 bytes)  
+	-	`sha256:2b4270214eea193e8e767ee41bb5d239454d0f0220e44ce2f84fc1896939d132`  
+		Last Modified: Wed, 24 Apr 2024 19:39:36 GMT  
+		Size: 3.2 MB (3184255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
