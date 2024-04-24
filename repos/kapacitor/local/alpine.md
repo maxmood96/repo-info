@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3a76d1c0d1e9febbaf01821ba71af05f44cec841c985b97373fa4a071a41b1e9`
-- Created: `2024-03-16T08:41:04.812816049Z`
-- Virtual Size: ~ 182.66 Mb  
+- Image ID: `sha256:37013399c6e82dacd949c5cf924685ee39fb1cc6f3e598a3f984c8613f899f64`
+- Created: `2024-04-23T17:28:00.464966214Z`
+- Virtual Size: ~ 189.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["kapacitord"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `KAPACITOR_VERSION=1.7.2`
+  - `KAPACITOR_VERSION=1.7.4`
 
 ## `apk` (`.apk`-based packages)
 
@@ -120,16 +120,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20230506-r0 description:
+ca-certificates-20240226-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20230506-r0 webpage:
+ca-certificates-20240226-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20230506-r0 installed size:
-688 KiB
+ca-certificates-20240226-r0 installed size:
+712 KiB
 
-ca-certificates-20230506-r0 license:
+ca-certificates-20240226-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -267,6 +267,23 @@ ssl_client-1.36.1-r5 installed size:
 
 ssl_client-1.36.1-r5 license:
 GPL-2.0-only
+
+```
+
+### `apk` package: `su-exec`
+
+```console
+su-exec-0.2-r3 description:
+switch user and group id, setgroups and exec
+
+su-exec-0.2-r3 webpage:
+https://github.com/ncopa/su-exec
+
+su-exec-0.2-r3 installed size:
+24 KiB
+
+su-exec-0.2-r3 license:
+MIT
 
 ```
 
