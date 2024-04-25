@@ -1,7 +1,7 @@
 ## `hylang:0-pypy3.9-bookworm`
 
 ```console
-$ docker pull hylang@sha256:7b5712172517cb17afd39db585123d9eb9cb997282305954769483d6e00bbf4e
+$ docker pull hylang@sha256:624af6439ed701db55b75128e1b2f1edf3dd0cc44c6477acf12f81a7482b4899
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,13 +16,13 @@ $ docker pull hylang@sha256:7b5712172517cb17afd39db585123d9eb9cb9972823059547694
 ### `hylang:0-pypy3.9-bookworm` - linux; amd64
 
 ```console
-$ docker pull hylang@sha256:ff966909600f80afadc20073e7c7386765552a77279b6d2ba86dd2cbaf5ca4f0
+$ docker pull hylang@sha256:db04b67c18b3916ff69b8392df6ab94d9ccd53d0e75fb2c6be2bb61244dcf4e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.7 MB (71725084 bytes)**  
+-	Total Size: **70.2 MB (70187992 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eedb5308e627db5ff27c6a637e51ea19f904b5c71cc2985378ab7daa7640634b`
+-	Image ID: `sha256:e773e983ae97f5918dd8b74d010e568779cc6bae751c9f2a7c92bf176b29ca3d`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -37,9 +37,9 @@ ENV LANG=C.UTF-8
 # Fri, 05 Jan 2024 23:20:01 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Fri, 05 Jan 2024 23:20:01 GMT
-ENV PYPY_VERSION=7.3.15
+ENV PYPY_VERSION=7.3.16
 # Fri, 05 Jan 2024 23:20:01 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.15-linux64.tar.bz2'; 			sha256='f062be307200bde434817e1620cebc13f563d6ab25309442c5f4d0f0d68f0912'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.15-aarch64.tar.bz2'; 			sha256='03e35fcba290454bb0ccf7ee57fb42d1e63108d10d593776a382c0a2fe355de0'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.15-linux32.tar.bz2'; 			sha256='c6209380977066c9e8b96e8258821c70f996004ce1bc8659ae83d4fd5a89ff5c'; 			;; 		's390x') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.15-s390x.tar.bz2'; 			sha256='deeb5e54c36a0fd9cfefd16e63a0d5bed4f4a43e6bbc01c23f0ed8f7f1c0aaf3'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libexpat1 		libncurses5 		libncursesw6 		libsqlite3-0 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.9; 	if [ -f _gdbm_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libgdbm-dev; 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev liblzma-dev; 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libsqlite3-dev; 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.16-linux64.tar.bz2'; 			sha256='16f9c5b808c848516e742986e826b833cdbeda09ad8764e8704595adbe791b23'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.16-aarch64.tar.bz2'; 			sha256='de3f2ed3581b30555ac0dd3e4df78a262ec736a36fb2e8f28259f8539b278ef4'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.16-linux32.tar.bz2'; 			sha256='583b6d6dd4e8c07cbc04da04a7ec2bdfa6674825289c2378c5e018d5abe779ea'; 			;; 		's390x') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.16-s390x.tar.bz2'; 			sha256='7a56ebb27dba3110dc1ff52d8e0449cdb37fe5c2275f7faf11432e4e164833ba'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libexpat1 		libncurses5 		libncursesw6 		libsqlite3-0 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.9; 	if [ -f _gdbm_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libgdbm-dev; 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev liblzma-dev; 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libsqlite3-dev; 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
 # Fri, 05 Jan 2024 23:20:01 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py
 # Fri, 05 Jan 2024 23:20:01 GMT
@@ -63,45 +63,45 @@ CMD ["hy"]
 		Last Modified: Wed, 24 Apr 2024 03:32:41 GMT  
 		Size: 29.2 MB (29150479 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52e3d56acc5a31cc504ef1c738929d4a7ab014a066deb4ea9ba9dd52463b6e8c`  
-		Last Modified: Wed, 24 Apr 2024 04:57:36 GMT  
-		Size: 3.3 MB (3299451 bytes)  
+	-	`sha256:234c0d9f05c152215864977e79dffa974aab0b5f01a8c249aa11165dccb89f94`  
+		Last Modified: Thu, 25 Apr 2024 18:53:05 GMT  
+		Size: 3.3 MB (3299433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc61a572bbcb99552a91cba60912c94e3182bf8f2f85109572bdf60bd8409650`  
-		Last Modified: Wed, 24 Apr 2024 04:57:39 GMT  
-		Size: 31.6 MB (31642218 bytes)  
+	-	`sha256:11c27386a3103593468b99f9e6f334aae9e9a332ccef82228766246ddd7f5042`  
+		Last Modified: Thu, 25 Apr 2024 18:53:06 GMT  
+		Size: 30.9 MB (30879877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:54e5dda2643eae69849c50f9d33e84dc6997f61a26e8734e240ebbe8b7a34f72`  
-		Last Modified: Wed, 24 Apr 2024 04:57:36 GMT  
-		Size: 3.3 MB (3299874 bytes)  
+	-	`sha256:f4b44ab4ce6638ef895eb03d89d804d4ea2ee9dcf2d4a946223e60cce1a0b1c2`  
+		Last Modified: Thu, 25 Apr 2024 18:53:05 GMT  
+		Size: 2.9 MB (2912366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a186989423c3efc2a420e1b9f810840a59e9e24e35c66390272dae7f4b4d3f9`  
-		Last Modified: Wed, 24 Apr 2024 05:58:56 GMT  
-		Size: 4.3 MB (4333062 bytes)  
+	-	`sha256:e2f811e77aae3ec93e8a6343273aa23cd093b5734b6b22e53f5e4308ad6027d2`  
+		Last Modified: Thu, 25 Apr 2024 19:52:40 GMT  
+		Size: 3.9 MB (3945837 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:0-pypy3.9-bookworm` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:c373776842518db198b5b67c746e6e4179cc7b28b041c0fb03896a68a391c927
+$ docker pull hylang@sha256:a1a46058cf2ddea498c8e056b3fb239ddeacf0826c47d456c8abedf29b5390e8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 MB (2377571 bytes)**  
+-	Total Size: **2.4 MB (2377594 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfbf5ab50a793eced60ff8c12688f96f8195189cb2c62b71d532384a8d0d4451`
+-	Image ID: `sha256:c006464381322cc62a18feb61cd8ac20dc8e66229d4179a94640d341d0733019`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9051005a32c299d8202cd215dbefa8476562e7b7ebe18dd2aa8c91f2d2e6be27`  
-		Last Modified: Wed, 24 Apr 2024 05:58:56 GMT  
-		Size: 2.4 MB (2367723 bytes)  
+	-	`sha256:301a6cf1107996184a37aea654637f33eb11b169b9fd61a4ec455b9b0bbf9e20`  
+		Last Modified: Thu, 25 Apr 2024 19:52:40 GMT  
+		Size: 2.4 MB (2367747 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d2170d25ae853a0f9d1315e097fa0d8be47e263c8f9f62ba7dcd0b6b94aaef19`  
-		Last Modified: Wed, 24 Apr 2024 05:58:57 GMT  
-		Size: 9.8 KB (9848 bytes)  
+	-	`sha256:3da62aa739aaadcf01f86d7d54af242ab9aeefb5bde89d450f886fdf4d7007bb`  
+		Last Modified: Thu, 25 Apr 2024 19:52:40 GMT  
+		Size: 9.8 KB (9847 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hylang:0-pypy3.9-bookworm` - linux; arm64 variant v8
@@ -198,13 +198,13 @@ $ docker pull hylang@sha256:272f9219c038a968bead0514ff490980125e03fb39c116f364c4
 ### `hylang:0-pypy3.9-bookworm` - linux; 386
 
 ```console
-$ docker pull hylang@sha256:2e675bbb6f6f6ae4f29a8eeda5dba2c86755c613b981717970eaacc1c93ec203
+$ docker pull hylang@sha256:6e6f21986df684eaf2925c70bc0c9b7f95a3e84a2a1f703ce3910ec7367fb83f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.1 MB (69127439 bytes)**  
+-	Total Size: **67.6 MB (67615084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b99c09f8c747a2346baf6ce97c2e737fe4bbbefdd8209df0a666f016bc5da58`
+-	Image ID: `sha256:ad22efe82d045bf2d854e5ec8ed6957455867a4f699ea1ea097c81efa488d4f8`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -219,9 +219,9 @@ ENV LANG=C.UTF-8
 # Fri, 05 Jan 2024 23:20:01 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Fri, 05 Jan 2024 23:20:01 GMT
-ENV PYPY_VERSION=7.3.15
+ENV PYPY_VERSION=7.3.16
 # Fri, 05 Jan 2024 23:20:01 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.15-linux64.tar.bz2'; 			sha256='f062be307200bde434817e1620cebc13f563d6ab25309442c5f4d0f0d68f0912'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.15-aarch64.tar.bz2'; 			sha256='03e35fcba290454bb0ccf7ee57fb42d1e63108d10d593776a382c0a2fe355de0'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.15-linux32.tar.bz2'; 			sha256='c6209380977066c9e8b96e8258821c70f996004ce1bc8659ae83d4fd5a89ff5c'; 			;; 		's390x') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.15-s390x.tar.bz2'; 			sha256='deeb5e54c36a0fd9cfefd16e63a0d5bed4f4a43e6bbc01c23f0ed8f7f1c0aaf3'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libexpat1 		libncurses5 		libncursesw6 		libsqlite3-0 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.9; 	if [ -f _gdbm_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libgdbm-dev; 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev liblzma-dev; 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libsqlite3-dev; 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.16-linux64.tar.bz2'; 			sha256='16f9c5b808c848516e742986e826b833cdbeda09ad8764e8704595adbe791b23'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.16-aarch64.tar.bz2'; 			sha256='de3f2ed3581b30555ac0dd3e4df78a262ec736a36fb2e8f28259f8539b278ef4'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.16-linux32.tar.bz2'; 			sha256='583b6d6dd4e8c07cbc04da04a7ec2bdfa6674825289c2378c5e018d5abe779ea'; 			;; 		's390x') 			url='https://downloads.python.org/pypy/pypy3.9-v7.3.16-s390x.tar.bz2'; 			sha256='7a56ebb27dba3110dc1ff52d8e0449cdb37fe5c2275f7faf11432e4e164833ba'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libexpat1 		libncurses5 		libncursesw6 		libsqlite3-0 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.9; 	if [ -f _gdbm_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libgdbm-dev; 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev liblzma-dev; 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libsqlite3-dev; 		pypy3 _sqlite3_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
 # Fri, 05 Jan 2024 23:20:01 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py
 # Fri, 05 Jan 2024 23:20:01 GMT
@@ -245,43 +245,43 @@ CMD ["hy"]
 		Last Modified: Wed, 24 Apr 2024 03:43:36 GMT  
 		Size: 30.2 MB (30163183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5df70bf9786e29c016d3b8aa546f5b89c8c6b9ab01280c3e91c16742547cbab5`  
-		Last Modified: Wed, 24 Apr 2024 04:57:28 GMT  
-		Size: 3.3 MB (3304902 bytes)  
+	-	`sha256:8cd499abb1c5776354459755a7b3db1830e0318e5f6e6a19b7e0672ac7c44eb5`  
+		Last Modified: Thu, 25 Apr 2024 18:53:48 GMT  
+		Size: 3.3 MB (3304882 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:107889f6b336ead3ecf864b66b3ca4dacbd1545e52dc07221802711f3b521455`  
-		Last Modified: Wed, 24 Apr 2024 04:57:29 GMT  
-		Size: 28.0 MB (28026660 bytes)  
+	-	`sha256:92285701d21f4d3ded954344571c566378b882d893f3c4eeac39ee69c53675cc`  
+		Last Modified: Thu, 25 Apr 2024 18:53:49 GMT  
+		Size: 27.3 MB (27288930 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a12ed4519d82d0b38780d44730f4dda6d583977ee4901de061b29c87870c8eb`  
-		Last Modified: Wed, 24 Apr 2024 04:57:28 GMT  
-		Size: 3.3 MB (3299476 bytes)  
+	-	`sha256:27e2a7cfb9a4926bad7e0083a89b178e08941e3dccc2027d5d0778e32bda6fbd`  
+		Last Modified: Thu, 25 Apr 2024 18:53:48 GMT  
+		Size: 2.9 MB (2912023 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b702160de2f853d6a17b52c54b4a4e0fcadefa577c330769cc89809256f8e46`  
-		Last Modified: Wed, 24 Apr 2024 05:58:59 GMT  
-		Size: 4.3 MB (4333218 bytes)  
+	-	`sha256:c8830d0713490bb9be20970bf8672377758ea742eb5858aabfaa64e8ecd9c735`  
+		Last Modified: Thu, 25 Apr 2024 19:52:58 GMT  
+		Size: 3.9 MB (3946066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:0-pypy3.9-bookworm` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:8b784f3afe223fa8ff86ab3e2a6c799d6e98c89b8b9c97ec482cdfe6acfc3d5d
+$ docker pull hylang@sha256:9c1c5216d55fc2f14e830d61a0ba52301b8a8e645143450e811fa23d828d9e35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 MB (2374635 bytes)**  
+-	Total Size: **2.4 MB (2374659 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:59c5b9d24e3193336c5e986b52f831e2a62f4d6059432b4568b48cf80d0acc03`
+-	Image ID: `sha256:202bd2d56c7dd35c76548ae3d78bea6356aa1f45722ad3d9d2a7806425d22d91`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:483071b3ed84c003c0afbfc759399e97db39c4486b856b3fb1695f781263274d`  
-		Last Modified: Wed, 24 Apr 2024 05:58:59 GMT  
-		Size: 2.4 MB (2364839 bytes)  
+	-	`sha256:80cb4442e7ff9eb3c75a4c1848e5a3d285d26e22cb392846d51a67c6e15ab199`  
+		Last Modified: Thu, 25 Apr 2024 19:52:57 GMT  
+		Size: 2.4 MB (2364863 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5c58d67ed189426541cac2e1ce932d0ed61b65e2592ae1eab623658162f15245`  
-		Last Modified: Wed, 24 Apr 2024 05:58:58 GMT  
+	-	`sha256:ffe50e43549a1159dd78908125a1164785836b521899e63ec9dff7383f8eec12`  
+		Last Modified: Thu, 25 Apr 2024 19:52:57 GMT  
 		Size: 9.8 KB (9796 bytes)  
 		MIME: application/vnd.in-toto+json
