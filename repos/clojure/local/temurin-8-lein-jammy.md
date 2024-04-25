@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:20b1a694a7fe6f408468a8c75d0edc36d5a649fc7c29dd78c1ad0ecc1899e414`
-- Created: `2024-04-16T10:53:23.993114227Z`
-- Virtual Size: ~ 341.53 Mb  
+- Image ID: `sha256:5d6475c28e85f0fa77dc62ab475e3b9012367b33a0e6e8b796429fbc4a6461c8`
+- Created: `2024-04-24T21:16:10.656249861Z`
+- Virtual Size: ~ 341.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u402-b06`
+  - `JAVA_VERSION=jdk8u412-b08`
   - `LEIN_VERSION=2.11.2`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
