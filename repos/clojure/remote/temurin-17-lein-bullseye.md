@@ -1,7 +1,7 @@
 ## `clojure:temurin-17-lein-bullseye`
 
 ```console
-$ docker pull clojure@sha256:c8215c1aad3ce57f7aaa69efd1acec58ef7c4c90487c0d4e02a291706fca98e1
+$ docker pull clojure@sha256:c69f1adaa2bbbe1899dac9511b1504bceed3108f17a665aacfb4a9f2db70c898
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull clojure@sha256:c8215c1aad3ce57f7aaa69efd1acec58ef7c4c90487c0d4e02a
 ### `clojure:temurin-17-lein-bullseye` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:d381fe0683efe49392ecd1bc9bba6b9521a70acb6f181c3842ac3ad9dd64ed3a
+$ docker pull clojure@sha256:b3cee7f306e9a93a86ac86b639362b751e42a750027be18119bd886e85319e52
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **220.9 MB (220948812 bytes)**  
+-	Total Size: **220.9 MB (220947733 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d5f51102c5b43c9b9f88d8b7a32ba04c54da4e3dd5507d10d214d1618cc2a599`
+-	Image ID: `sha256:c435d4a3d3364351eeac3da8f3e2c1b35a952be8b55a0dc57a99182a315b2e55`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -46,13 +46,13 @@ RUN set -eux; apt-get update && apt-get install -y make gnupg wget && rm -rf /va
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
 # Wed, 24 Apr 2024 21:25:27 GMT
 ENV LEIN_ROOT=1
-# Wed, 24 Apr 2024 21:25:29 GMT
-RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.1"]])' > project.clj   && lein deps && rm project.clj
-# Wed, 24 Apr 2024 21:25:29 GMT
+# Thu, 25 Apr 2024 19:34:00 GMT
+RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.3"]])' > project.clj   && lein deps && rm project.clj
+# Thu, 25 Apr 2024 19:34:00 GMT
 COPY file:cf90f595e38d932dff3bdcd4221efe7c65fb3432787490053b55b6917f06e4cd in /usr/local/bin/entrypoint 
-# Wed, 24 Apr 2024 21:25:29 GMT
+# Thu, 25 Apr 2024 19:34:00 GMT
 ENTRYPOINT ["entrypoint"]
-# Wed, 24 Apr 2024 21:25:30 GMT
+# Thu, 25 Apr 2024 19:34:01 GMT
 CMD ["repl"]
 ```
 
@@ -69,26 +69,26 @@ CMD ["repl"]
 		Last Modified: Wed, 24 Apr 2024 21:48:30 GMT  
 		Size: 16.4 MB (16355008 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe265adc3673d8f2f62bffc1dd2c122c2244a4102a36421bb2a12d86c005de8a`  
-		Last Modified: Wed, 24 Apr 2024 21:48:29 GMT  
-		Size: 4.4 MB (4399206 bytes)  
+	-	`sha256:436fd1589f2e763429f44ffb68d218959cc7b4782a84af323394805050941b01`  
+		Last Modified: Thu, 25 Apr 2024 19:51:43 GMT  
+		Size: 4.4 MB (4398129 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47c1558665eb8eb169132e0f1a922c06bb3c4cb290ee9b6448355f1271650e6e`  
-		Last Modified: Wed, 24 Apr 2024 21:48:29 GMT  
-		Size: 402.0 B  
+	-	`sha256:d21fbea921ae28267b5060651f38a0b0d9ba5e5627c3493e8f3e3b6704f52154`  
+		Last Modified: Thu, 25 Apr 2024 19:51:42 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:temurin-17-lein-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:a60bb0d9410c97a277c031cbab66520ccad6c1c1751ad030957cd01a996bd84b
+$ docker pull clojure@sha256:65f07021e18c9d491641218eae4d9916174674b5b7ae55ddb933bec5c8638c28
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.4 MB (218375387 bytes)**  
+-	Total Size: **218.4 MB (218374319 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d59b0f56c62b868abe0842d492eb4397293e1ebb370bed020228f81ebd0c3bd5`
+-	Image ID: `sha256:bb2ce4f7a5e87bb85abe13660df4b84b2079f13da3618d868feb56804711bfff`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -115,13 +115,13 @@ RUN set -eux; apt-get update && apt-get install -y make gnupg wget && rm -rf /va
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
 # Wed, 24 Apr 2024 19:09:51 GMT
 ENV LEIN_ROOT=1
-# Wed, 24 Apr 2024 19:09:53 GMT
-RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.1"]])' > project.clj   && lein deps && rm project.clj
-# Wed, 24 Apr 2024 19:09:53 GMT
+# Thu, 25 Apr 2024 19:51:33 GMT
+RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.3"]])' > project.clj   && lein deps && rm project.clj
+# Thu, 25 Apr 2024 19:51:33 GMT
 COPY file:cf90f595e38d932dff3bdcd4221efe7c65fb3432787490053b55b6917f06e4cd in /usr/local/bin/entrypoint 
-# Wed, 24 Apr 2024 19:09:53 GMT
+# Thu, 25 Apr 2024 19:51:33 GMT
 ENTRYPOINT ["entrypoint"]
-# Wed, 24 Apr 2024 19:09:53 GMT
+# Thu, 25 Apr 2024 19:51:33 GMT
 CMD ["repl"]
 ```
 
@@ -138,11 +138,11 @@ CMD ["repl"]
 		Last Modified: Wed, 24 Apr 2024 19:28:42 GMT  
 		Size: 16.3 MB (16344038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54c861d311f425aa9cf21acb816879005a4bdb27216245dfb730071b6957cf3f`  
-		Last Modified: Wed, 24 Apr 2024 19:28:42 GMT  
-		Size: 4.4 MB (4399171 bytes)  
+	-	`sha256:b8e6b8d8123874aa40a89ae2bdd5dea610f2eedb2b7f09496c13838febf6483c`  
+		Last Modified: Thu, 25 Apr 2024 20:06:14 GMT  
+		Size: 4.4 MB (4398104 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f25b8d5cb39580ad2f31a185a7adf74e8bd3ad5cdb578e4950cd8cf376d0918`  
-		Last Modified: Wed, 24 Apr 2024 19:28:41 GMT  
-		Size: 403.0 B  
+	-	`sha256:96f20c0a71f22011a215074fab0f385284be85da1cc6eb039ea5467c3f8ce932`  
+		Last Modified: Thu, 25 Apr 2024 20:06:14 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

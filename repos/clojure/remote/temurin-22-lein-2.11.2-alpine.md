@@ -1,7 +1,7 @@
 ## `clojure:temurin-22-lein-2.11.2-alpine`
 
 ```console
-$ docker pull clojure@sha256:76ff01dab3733a129bb11038abb5a78ceaaa4f0c19137b00c27dcc918bd4eb33
+$ docker pull clojure@sha256:e7cfda39f8e54fe8d3f80f0bb12a13e4068eb7ba21da35c5ac1f40a38ba96009
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull clojure@sha256:76ff01dab3733a129bb11038abb5a78ceaaa4f0c19137b00c27
 ### `clojure:temurin-22-lein-2.11.2-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:7901b42b560f5cac89ff937926f0f89d1ee44c4d9961926a07a79d560660eca6
+$ docker pull clojure@sha256:ca0995e02c3ea33005708bc6cd7af1487f5f7b69dac2eef8d133185038fb9957
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **194.9 MB (194887315 bytes)**  
+-	Total Size: **194.9 MB (194886220 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7ba1c76119e5c86a1f5c9145638fe13e5b44334c88597b18c1d40eeb19a3f87`
+-	Image ID: `sha256:3ca62087a08113ce9f1136604033cf1234f85dbb9574c6adc34b7040b8a5b144`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -59,13 +59,13 @@ RUN set -eux; apk add --no-cache ca-certificates bash tar openssl gnupg && mkdir
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
 # Wed, 24 Apr 2024 21:33:16 GMT
 ENV LEIN_ROOT=1
-# Wed, 24 Apr 2024 21:33:18 GMT
-RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.1"]])' > project.clj   && lein deps && rm project.clj
-# Wed, 24 Apr 2024 21:33:18 GMT
+# Thu, 25 Apr 2024 19:39:21 GMT
+RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.3"]])' > project.clj   && lein deps && rm project.clj
+# Thu, 25 Apr 2024 19:39:22 GMT
 COPY file:cf90f595e38d932dff3bdcd4221efe7c65fb3432787490053b55b6917f06e4cd in /usr/local/bin/entrypoint 
-# Wed, 24 Apr 2024 21:33:18 GMT
+# Thu, 25 Apr 2024 19:39:22 GMT
 ENTRYPOINT ["entrypoint"]
-# Wed, 24 Apr 2024 21:33:18 GMT
+# Thu, 25 Apr 2024 19:39:22 GMT
 CMD ["repl"]
 ```
 
@@ -94,11 +94,11 @@ CMD ["repl"]
 		Last Modified: Wed, 24 Apr 2024 21:55:30 GMT  
 		Size: 17.0 MB (17000477 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:828a18d2946447c13fc39057b480852db24da45ac0061e68c9bb7b4c32b7ca0c`  
-		Last Modified: Wed, 24 Apr 2024 21:55:29 GMT  
-		Size: 4.4 MB (4399192 bytes)  
+	-	`sha256:84979b79804bbe3bb7df067fc5a97e37cd13a4d8932e149983d0ef9c4f2ddd4c`  
+		Last Modified: Thu, 25 Apr 2024 19:57:44 GMT  
+		Size: 4.4 MB (4398097 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac3fddc65cf139cdf0f5158976bc68b8a8edfe054e2b27f68c4810b2811ddcc4`  
-		Last Modified: Wed, 24 Apr 2024 21:55:28 GMT  
+	-	`sha256:841ee8558a776693030fd225fe6775fef026be591ff5aa83a010556797dddec3`  
+		Last Modified: Thu, 25 Apr 2024 19:57:43 GMT  
 		Size: 411.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
