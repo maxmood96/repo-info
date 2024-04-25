@@ -1,10 +1,10 @@
-# `eclipse-temurin:11.0.22_7-jdk-focal`
+# `eclipse-temurin:11.0.23_9-jdk-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4155a334fd25d75a34e49ac369fb09e286fd7a7c971cd2abc154571f979e8735`
-- Created: `2024-01-25T11:07:04Z`
-- Virtual Size: ~ 396.93 Mb  
+- Image ID: `sha256:31906eccc0ddc012ba56217082974ab61c244eeb07abd5c3acfe17532eb202ed`
+- Created: `2024-04-23T20:51:38Z`
+- Virtual Size: ~ 397.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.22+7`
+  - `JAVA_VERSION=jdk-11.0.23+9`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`

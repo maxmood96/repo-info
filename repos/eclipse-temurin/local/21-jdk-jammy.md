@@ -1,10 +1,10 @@
-# `eclipse-temurin:21.0.2_13-jdk-jammy`
+# `eclipse-temurin:21.0.3_9-jdk-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:737accc869c7f7f3e80b8bf10390db951995cb0c37bc67e0fd7001ad1d7d4714`
-- Created: `2024-01-25T11:07:04Z`
-- Virtual Size: ~ 436.20 Mb  
+- Image ID: `sha256:49bc6b1a1c709fbe0ec91d6dd1d67549a5a3c46904b5c425b5e9475237558a26`
+- Created: `2024-04-23T20:51:38Z`
+- Virtual Size: ~ 435.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.2+13`
+  - `JAVA_VERSION=jdk-21.0.3+9`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`

@@ -1,10 +1,10 @@
-# `eclipse-temurin:17.0.10_7-jdk-centos7`
+# `eclipse-temurin:17.0.11_9-jdk-centos7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b4532c7885ee151edf89f2157c52dd991317164395f2e8d6bee0998735c3c732`
-- Created: `2024-01-24T16:26:40Z`
-- Virtual Size: ~ 536.04 Mb  
+- Image ID: `sha256:052dca21eeb01da3b5709b0fbd66f0c2cf765d9dede0c8cd9a733fde0f6f401f`
+- Created: `2024-04-23T20:51:38Z`
+- Virtual Size: ~ 536.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.10+7`
+  - `JAVA_VERSION=jdk-17.0.11+9`
 - Labels:
   - `org.label-schema.build-date=20201113`
   - `org.label-schema.license=GPLv2`
