@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:96f1bcc5f311a3a078bc01bc407c23a559cc8e0fabfbead76b65ccd1116b336f`
+- Image ID: `sha256:71cc31ffc473c53d9e99aeb639676a45db72bce88c475b1fe050837fd8726b3c`
 - Created: `2024-01-05T23:20:01Z`
-- Virtual Size: ~ 135.05 Mb  
+- Virtual Size: ~ 135.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -741,12 +741,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.23-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.23-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.36-9+deb12u4`
+### `dpkg` source package: `glibc=2.36-9+deb12u6`
 
 Binary Packages:
 
-- `libc-bin=2.36-9+deb12u4`
-- `libc6:amd64=2.36-9+deb12u4`
+- `libc-bin=2.36-9+deb12u6`
+- `libc6:amd64=2.36-9+deb12u6`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -756,17 +756,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.36-9+deb12u4
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36-9%2bdeb12u4.dsc' glibc_2.36-9+deb12u4.dsc 9761 SHA256:9bb617509a73c40b9885fc543e6b7a2b064b0c1e93043fba763a55c0a05a2f38
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36.orig.tar.xz' glibc_2.36.orig.tar.xz 19363988 SHA256:a543c02070d46ccaf866957efd13f10c924daa74c86a90a0254db09a92a708ee
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36-9%2bdeb12u4.debian.tar.xz' glibc_2.36-9+deb12u4.debian.tar.xz 862120 SHA256:b650ed666dd8388b576c8b298abe26cfd0a0c548314e4d29674bd19b48e7b4b4
+$ apt-get source -qq --print-uris glibc=2.36-9+deb12u6
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u6.dsc' glibc_2.36-9+deb12u6.dsc 9761 SHA256:fbd6a3b34c8019bc677c1aa3c55a7cdd2fac0f5226151d408cbf107e89002c10
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36.orig.tar.xz' glibc_2.36.orig.tar.xz 19363988 SHA256:a543c02070d46ccaf866957efd13f10c924daa74c86a90a0254db09a92a708ee
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u6.debian.tar.xz' glibc_2.36-9+deb12u6.debian.tar.xz 858672 SHA256:dab8173d6a6393b50ed0737bd32ff993a3fa7bf4a837573eab8c67f1391ecb12
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.36-9+deb12u4/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.36-9+deb12u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.36-9+deb12u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.36-9+deb12u6/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.36-9+deb12u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.36-9+deb12u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg1-1.1`
 
