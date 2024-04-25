@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6a10f0927f730ef48fdee33a392ba0c29ba51d521fc2cf95e90744bb23181fbc`
+- Image ID: `sha256:3aea429b072ca23a0453aaeae749018c32534280bb5729093f8660f5d7a7339a`
 - Created: `2024-03-04T21:34:05Z`
-- Virtual Size: ~ 464.65 Mb  
+- Virtual Size: ~ 469.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.2.3`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.3.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=cfb231954b8c241043a538a4c682a1cca0b2016d835fee0b9e4a0be3ceba476b`
+  - `RUBY_VERSION=3.2.4`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.4.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=e7f1653d653232ec433472489a91afbc7433c9f760cc822defe7437c9d95791b`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -285,16 +285,16 @@ bzip2-1.0.6
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20230506-r0 description:
+ca-certificates-20240226-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20230506-r0 webpage:
+ca-certificates-20240226-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20230506-r0 installed size:
-688 KiB
+ca-certificates-20240226-r0 installed size:
+712 KiB
 
-ca-certificates-20230506-r0 license:
+ca-certificates-20240226-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -608,16 +608,16 @@ LGPL-3.0-or-later OR GPL-2.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.3-r0 description:
+gnutls-3.8.4-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.3-r0 webpage:
+gnutls-3.8.4-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.3-r0 installed size:
-1868 KiB
+gnutls-3.8.4-r0 installed size:
+1892 KiB
 
-gnutls-3.8.3-r0 license:
+gnutls-3.8.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -795,16 +795,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r5 description:
+libcrypto3-3.1.4-r6 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r5 webpage:
+libcrypto3-3.1.4-r6 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r5 installed size:
+libcrypto3-3.1.4-r6 installed size:
 4472 KiB
 
-libcrypto3-3.1.4-r5 license:
+libcrypto3-3.1.4-r6 license:
 Apache-2.0
 
 ```
@@ -1254,16 +1254,16 @@ custom
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r5 description:
+libssl3-3.1.4-r6 description:
 SSL shared libraries
 
-libssl3-3.1.4-r5 webpage:
+libssl3-3.1.4-r6 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r5 installed size:
+libssl3-3.1.4-r6 installed size:
 552 KiB
 
-libssl3-3.1.4-r5 license:
+libssl3-3.1.4-r6 license:
 Apache-2.0
 
 ```
@@ -1849,16 +1849,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `py3-certifi`
 
 ```console
-py3-certifi-2023.7.22-r0 description:
+py3-certifi-2024.2.2-r0 description:
 Python3 package for providing Mozilla's CA Bundle
 
-py3-certifi-2023.7.22-r0 webpage:
+py3-certifi-2024.2.2-r0 webpage:
 https://pypi.org/project/certifi
 
-py3-certifi-2023.7.22-r0 installed size:
+py3-certifi-2024.2.2-r0 installed size:
 64 KiB
 
-py3-certifi-2023.7.22-r0 license:
+py3-certifi-2024.2.2-r0 license:
 MPL-2.0
 
 ```
@@ -1866,16 +1866,16 @@ MPL-2.0
 ### `apk` package: `py3-certifi-pyc`
 
 ```console
-py3-certifi-pyc-2023.7.22-r0 description:
+py3-certifi-pyc-2024.2.2-r0 description:
 Precompiled Python bytecode for py3-certifi
 
-py3-certifi-pyc-2023.7.22-r0 webpage:
+py3-certifi-pyc-2024.2.2-r0 webpage:
 https://pypi.org/project/certifi
 
-py3-certifi-pyc-2023.7.22-r0 installed size:
+py3-certifi-pyc-2024.2.2-r0 installed size:
 40 KiB
 
-py3-certifi-pyc-2023.7.22-r0 license:
+py3-certifi-pyc-2024.2.2-r0 license:
 MPL-2.0
 
 ```
