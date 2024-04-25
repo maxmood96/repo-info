@@ -34,7 +34,7 @@
 ## `cassandra:3`
 
 ```console
-$ docker pull cassandra@sha256:55a90953a2b61eefe9ec664e32f6fc96880b92314df6e3c37a694f9a9779a5c5
+$ docker pull cassandra@sha256:a644b4cdb664aac6358dcc4389647854eef0074212697cca4edffb7ba5cf7d8e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -501,13 +501,13 @@ $ docker pull cassandra@sha256:cf426926f0052c58225a265bc9c2272ee3a2721bc3cb19ac9
 ### `cassandra:3` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:8b1b905b22cad39942b6d688253ec28adc218b53750df34d6456b83f535bc5a0
+$ docker pull cassandra@sha256:43e3394750287313a93233252a2e29390fe12f8a8d98bdd2e29e2b9dbea96f06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.4 MB (135408635 bytes)**  
+-	Total Size: **135.4 MB (135409951 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f2f6bf23e0522cf585c38fa37fdd2cfe6dfcedbe64f1cad70602d437f7d04f9`
+-	Image ID: `sha256:02f11075e686e58e163acbf624289fb7893ae57ddc6cd19dd63832dd620f8143`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -524,23 +524,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 10 Apr 2024 18:53:18 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk8u402-b06
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='782f842c22fe660c5acbea8c1d7b4e812fe658a9e48cd2e8e776d088c7ab32d3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u402b06.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='1d8c109e96bdb35ffff667dfb911ce03fb9f0f924048dcc8fdbd45198b263ecd';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_x64_linux_hotspot_8u402b06.tar.gz';          ;;        armhf|arm)          ESUM='d613a775573fc17ee972e62b5120dc34d8cac1810bb352e71bc01980ce3c48a8';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_arm_linux_hotspot_8u402b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='dd828b761805c2caecac94fcab8ea39cdf41480f07053553dc37edde104861af';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
+ENV JAVA_VERSION=jdk8u412-b08
+# Tue, 16 Apr 2024 17:30:31 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='17550a6a4ddf71ac81ba8f276467bc58f036c123c0f1bafcafd69f70e3e49cf5';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_aarch64_linux_hotspot_8u412b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='a8d994332a2ff15d48bf04405c3b2f6bd331a928dd96639b15e62891f7172363';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_x64_linux_hotspot_8u412b08.tar.gz';          ;;        armhf|arm)          ESUM='1a6b470ac83b241223447a1e6cb55c4a8f78af0146b9387e9842625041226654';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_arm_linux_hotspot_8u412b08.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='d3157230c01b320e47ad6df650e83b15f8f76294d0df9f1c03867d07fe2883c9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_ppc64le_linux_hotspot_8u412b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+# Tue, 16 Apr 2024 17:30:31 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Apr 2024 17:30:31 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -587,71 +587,71 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4206da7d8c95f02a873da81cad5304f89949515850830861aafb0a3af791644d`  
-		Last Modified: Tue, 16 Apr 2024 02:50:19 GMT  
-		Size: 41.2 MB (41241331 bytes)  
+	-	`sha256:08fc3b674c9d8931b9e2b9ded6a0e4a9429115f4fbf77b12659a05dd4a993cb3`  
+		Last Modified: Wed, 24 Apr 2024 17:43:05 GMT  
+		Size: 41.2 MB (41242486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd447520109fbfdfce35a2b5e4750caf6c7efb83d5e64b77e103fdf1a3d9c5f4`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 161.0 B  
+	-	`sha256:7536b63fb36ffd54193d39746541be162744d35817f961b6a7802f067fce1943`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a00201e5292d64c42fdfc0ffeeb64cbd455117176366f8ac1b686a57c706c656`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 734.0 B  
+	-	`sha256:1ac275397cec88123e32b7f07481f8c1261b5656a7ebadd395b6866fcc10a2cb`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a155c916e5308dc06a0c6cbb07acd69bda2f1675f5b8caed57270a425f58cf1`  
-		Last Modified: Thu, 18 Apr 2024 19:09:01 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:2f350f9302a134bafe95d93de74173a8861b45da31c9bef396f924bc1e784ad2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:15 GMT  
+		Size: 1.7 KB (1734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fcaf7a425e688b0b259b2892093718e3ca63829114c5659370c034ccc6043c0`  
-		Last Modified: Thu, 18 Apr 2024 19:09:03 GMT  
-		Size: 11.0 MB (10993184 bytes)  
+	-	`sha256:38c63fdbaa58fcfaf613edd87854546592ebb41313dbf397aab5651337a1c51b`  
+		Last Modified: Thu, 25 Apr 2024 10:25:17 GMT  
+		Size: 11.0 MB (10993277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4aec274a7bb3f17167a96e2c985330fbe7301c03e3b1d7305c188c40fb2eca56`  
-		Last Modified: Thu, 18 Apr 2024 19:09:02 GMT  
-		Size: 1.0 MB (1019323 bytes)  
+	-	`sha256:579c2b7e8ab2fb7968d8c13fbc71c23f97d0427aee457c809b49f5956903eda2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:16 GMT  
+		Size: 1.0 MB (1019361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a61e5a6517d66d9bebad081f7f332063e5365c66d255461df083db90293274d9`  
-		Last Modified: Thu, 18 Apr 2024 19:09:03 GMT  
-		Size: 32.8 MB (32796392 bytes)  
+	-	`sha256:e07cc32ee22f9b86c6474026c0344b66e3ffbaa1778aa98d83e5f0b5d1f4d282`  
+		Last Modified: Thu, 25 Apr 2024 10:25:18 GMT  
+		Size: 32.8 MB (32796417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e3ec75bb04167f5f7f01086f2d01e4d7f90a2f2de1c672c856a1b8895088a24`  
-		Last Modified: Thu, 18 Apr 2024 19:09:02 GMT  
-		Size: 1.2 KB (1216 bytes)  
+	-	`sha256:63752971e37dd0b487463eec63c0896efcd6d522b1ca10faf0cdd6476a378b2a`  
+		Last Modified: Thu, 25 Apr 2024 10:25:17 GMT  
+		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88e894b3e8c5fd0bd670a790c2a3529cffdd2f7f2cadab6b81fa98d7f622d927`  
-		Last Modified: Thu, 18 Apr 2024 19:09:04 GMT  
+	-	`sha256:98e50a66929c9fd264e80de0c3dd4d5a06c3259f1fbc611374e340e2cf5a9f3d`  
+		Last Modified: Thu, 25 Apr 2024 10:25:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:a8122faba34db874a69709f29fbbeb746096f71c4e7a6c2b80ccba36c12e044d
+$ docker pull cassandra@sha256:daf9948752d01f468ce79d6385b74d039b74aba2431b64685f0d82420cb69bfe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4244708 bytes)**  
+-	Total Size: **4.2 MB (4245526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:669f225da9e10975f2e33e695ac475282f6f09a4faab69208d60e5ddd9b6d979`
+-	Image ID: `sha256:6cd073cb1a31fc1730551243f441398816730bd2c167d587a4b15351493312e3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3dfb3e588f0f31120dd536e8a7a0ebf7409626b3011f394f813a3962f83f26fa`  
-		Last Modified: Thu, 18 Apr 2024 19:09:00 GMT  
+	-	`sha256:40738328ad9156198c3fdf152e1cb11bed639ab055f2db378e55a51e618f28a5`  
+		Last Modified: Thu, 25 Apr 2024 10:25:16 GMT  
 		Size: 4.2 MB (4206075 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b0441f4d70111aee474691c43b5199a841c33b6f2afc1dee9a630f478aae461f`  
-		Last Modified: Thu, 18 Apr 2024 19:08:59 GMT  
-		Size: 38.6 KB (38633 bytes)  
+	-	`sha256:df0198b7fb9aa5840efab18a303f3b1777a40c3444f5adf15160ed6085f7669c`  
+		Last Modified: Thu, 25 Apr 2024 10:25:15 GMT  
+		Size: 39.5 KB (39451 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:3-jammy`
 
 ```console
-$ docker pull cassandra@sha256:55a90953a2b61eefe9ec664e32f6fc96880b92314df6e3c37a694f9a9779a5c5
+$ docker pull cassandra@sha256:a644b4cdb664aac6358dcc4389647854eef0074212697cca4edffb7ba5cf7d8e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1118,13 +1118,13 @@ $ docker pull cassandra@sha256:cf426926f0052c58225a265bc9c2272ee3a2721bc3cb19ac9
 ### `cassandra:3-jammy` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:8b1b905b22cad39942b6d688253ec28adc218b53750df34d6456b83f535bc5a0
+$ docker pull cassandra@sha256:43e3394750287313a93233252a2e29390fe12f8a8d98bdd2e29e2b9dbea96f06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.4 MB (135408635 bytes)**  
+-	Total Size: **135.4 MB (135409951 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f2f6bf23e0522cf585c38fa37fdd2cfe6dfcedbe64f1cad70602d437f7d04f9`
+-	Image ID: `sha256:02f11075e686e58e163acbf624289fb7893ae57ddc6cd19dd63832dd620f8143`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -1141,23 +1141,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 10 Apr 2024 18:53:18 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk8u402-b06
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='782f842c22fe660c5acbea8c1d7b4e812fe658a9e48cd2e8e776d088c7ab32d3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u402b06.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='1d8c109e96bdb35ffff667dfb911ce03fb9f0f924048dcc8fdbd45198b263ecd';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_x64_linux_hotspot_8u402b06.tar.gz';          ;;        armhf|arm)          ESUM='d613a775573fc17ee972e62b5120dc34d8cac1810bb352e71bc01980ce3c48a8';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_arm_linux_hotspot_8u402b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='dd828b761805c2caecac94fcab8ea39cdf41480f07053553dc37edde104861af';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
+ENV JAVA_VERSION=jdk8u412-b08
+# Tue, 16 Apr 2024 17:30:31 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='17550a6a4ddf71ac81ba8f276467bc58f036c123c0f1bafcafd69f70e3e49cf5';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_aarch64_linux_hotspot_8u412b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='a8d994332a2ff15d48bf04405c3b2f6bd331a928dd96639b15e62891f7172363';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_x64_linux_hotspot_8u412b08.tar.gz';          ;;        armhf|arm)          ESUM='1a6b470ac83b241223447a1e6cb55c4a8f78af0146b9387e9842625041226654';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_arm_linux_hotspot_8u412b08.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='d3157230c01b320e47ad6df650e83b15f8f76294d0df9f1c03867d07fe2883c9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_ppc64le_linux_hotspot_8u412b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+# Tue, 16 Apr 2024 17:30:31 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Apr 2024 17:30:31 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -1204,71 +1204,71 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4206da7d8c95f02a873da81cad5304f89949515850830861aafb0a3af791644d`  
-		Last Modified: Tue, 16 Apr 2024 02:50:19 GMT  
-		Size: 41.2 MB (41241331 bytes)  
+	-	`sha256:08fc3b674c9d8931b9e2b9ded6a0e4a9429115f4fbf77b12659a05dd4a993cb3`  
+		Last Modified: Wed, 24 Apr 2024 17:43:05 GMT  
+		Size: 41.2 MB (41242486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd447520109fbfdfce35a2b5e4750caf6c7efb83d5e64b77e103fdf1a3d9c5f4`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 161.0 B  
+	-	`sha256:7536b63fb36ffd54193d39746541be162744d35817f961b6a7802f067fce1943`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a00201e5292d64c42fdfc0ffeeb64cbd455117176366f8ac1b686a57c706c656`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 734.0 B  
+	-	`sha256:1ac275397cec88123e32b7f07481f8c1261b5656a7ebadd395b6866fcc10a2cb`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a155c916e5308dc06a0c6cbb07acd69bda2f1675f5b8caed57270a425f58cf1`  
-		Last Modified: Thu, 18 Apr 2024 19:09:01 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:2f350f9302a134bafe95d93de74173a8861b45da31c9bef396f924bc1e784ad2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:15 GMT  
+		Size: 1.7 KB (1734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fcaf7a425e688b0b259b2892093718e3ca63829114c5659370c034ccc6043c0`  
-		Last Modified: Thu, 18 Apr 2024 19:09:03 GMT  
-		Size: 11.0 MB (10993184 bytes)  
+	-	`sha256:38c63fdbaa58fcfaf613edd87854546592ebb41313dbf397aab5651337a1c51b`  
+		Last Modified: Thu, 25 Apr 2024 10:25:17 GMT  
+		Size: 11.0 MB (10993277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4aec274a7bb3f17167a96e2c985330fbe7301c03e3b1d7305c188c40fb2eca56`  
-		Last Modified: Thu, 18 Apr 2024 19:09:02 GMT  
-		Size: 1.0 MB (1019323 bytes)  
+	-	`sha256:579c2b7e8ab2fb7968d8c13fbc71c23f97d0427aee457c809b49f5956903eda2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:16 GMT  
+		Size: 1.0 MB (1019361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a61e5a6517d66d9bebad081f7f332063e5365c66d255461df083db90293274d9`  
-		Last Modified: Thu, 18 Apr 2024 19:09:03 GMT  
-		Size: 32.8 MB (32796392 bytes)  
+	-	`sha256:e07cc32ee22f9b86c6474026c0344b66e3ffbaa1778aa98d83e5f0b5d1f4d282`  
+		Last Modified: Thu, 25 Apr 2024 10:25:18 GMT  
+		Size: 32.8 MB (32796417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e3ec75bb04167f5f7f01086f2d01e4d7f90a2f2de1c672c856a1b8895088a24`  
-		Last Modified: Thu, 18 Apr 2024 19:09:02 GMT  
-		Size: 1.2 KB (1216 bytes)  
+	-	`sha256:63752971e37dd0b487463eec63c0896efcd6d522b1ca10faf0cdd6476a378b2a`  
+		Last Modified: Thu, 25 Apr 2024 10:25:17 GMT  
+		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88e894b3e8c5fd0bd670a790c2a3529cffdd2f7f2cadab6b81fa98d7f622d927`  
-		Last Modified: Thu, 18 Apr 2024 19:09:04 GMT  
+	-	`sha256:98e50a66929c9fd264e80de0c3dd4d5a06c3259f1fbc611374e340e2cf5a9f3d`  
+		Last Modified: Thu, 25 Apr 2024 10:25:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:a8122faba34db874a69709f29fbbeb746096f71c4e7a6c2b80ccba36c12e044d
+$ docker pull cassandra@sha256:daf9948752d01f468ce79d6385b74d039b74aba2431b64685f0d82420cb69bfe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4244708 bytes)**  
+-	Total Size: **4.2 MB (4245526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:669f225da9e10975f2e33e695ac475282f6f09a4faab69208d60e5ddd9b6d979`
+-	Image ID: `sha256:6cd073cb1a31fc1730551243f441398816730bd2c167d587a4b15351493312e3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3dfb3e588f0f31120dd536e8a7a0ebf7409626b3011f394f813a3962f83f26fa`  
-		Last Modified: Thu, 18 Apr 2024 19:09:00 GMT  
+	-	`sha256:40738328ad9156198c3fdf152e1cb11bed639ab055f2db378e55a51e618f28a5`  
+		Last Modified: Thu, 25 Apr 2024 10:25:16 GMT  
 		Size: 4.2 MB (4206075 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b0441f4d70111aee474691c43b5199a841c33b6f2afc1dee9a630f478aae461f`  
-		Last Modified: Thu, 18 Apr 2024 19:08:59 GMT  
-		Size: 38.6 KB (38633 bytes)  
+	-	`sha256:df0198b7fb9aa5840efab18a303f3b1777a40c3444f5adf15160ed6085f7669c`  
+		Last Modified: Thu, 25 Apr 2024 10:25:15 GMT  
+		Size: 39.5 KB (39451 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:3.0`
 
 ```console
-$ docker pull cassandra@sha256:a8a3e664752a242f27d7abb7c3dfa5c4837e6b1d19a034bfb306e8ca70f37caf
+$ docker pull cassandra@sha256:ed9c71ab5943e5a50d67f07a9ab905d4f3c078ab3721704d77b3db7150da6e91
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1735,13 +1735,13 @@ $ docker pull cassandra@sha256:981695d0f32fef0cf3b9704c54bc32ad55815e9770b27ba53
 ### `cassandra:3.0` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:1c3267fbced77d1ccc140e28c8c50f2559fddbeb089cf886950b1096678f8358
+$ docker pull cassandra@sha256:bd5e2e4ec574c8031bd0673fa569a3622640685c3b45d5c53576ee7d6a1b0c6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.1 MB (131069399 bytes)**  
+-	Total Size: **131.1 MB (131070780 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cce5f66c8ce22242f2bde449ed4b2cbab8686a65e60c75f54d3dc30043aff22f`
+-	Image ID: `sha256:d6939963e07872602aa23664705cf00981beba647e92f01d2440d1b7b0664576`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -1758,23 +1758,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 10 Apr 2024 18:53:18 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk8u402-b06
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='782f842c22fe660c5acbea8c1d7b4e812fe658a9e48cd2e8e776d088c7ab32d3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u402b06.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='1d8c109e96bdb35ffff667dfb911ce03fb9f0f924048dcc8fdbd45198b263ecd';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_x64_linux_hotspot_8u402b06.tar.gz';          ;;        armhf|arm)          ESUM='d613a775573fc17ee972e62b5120dc34d8cac1810bb352e71bc01980ce3c48a8';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_arm_linux_hotspot_8u402b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='dd828b761805c2caecac94fcab8ea39cdf41480f07053553dc37edde104861af';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
+ENV JAVA_VERSION=jdk8u412-b08
+# Mon, 15 Apr 2024 20:24:12 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='17550a6a4ddf71ac81ba8f276467bc58f036c123c0f1bafcafd69f70e3e49cf5';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_aarch64_linux_hotspot_8u412b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='a8d994332a2ff15d48bf04405c3b2f6bd331a928dd96639b15e62891f7172363';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_x64_linux_hotspot_8u412b08.tar.gz';          ;;        armhf|arm)          ESUM='1a6b470ac83b241223447a1e6cb55c4a8f78af0146b9387e9842625041226654';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_arm_linux_hotspot_8u412b08.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='d3157230c01b320e47ad6df650e83b15f8f76294d0df9f1c03867d07fe2883c9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_ppc64le_linux_hotspot_8u412b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+# Mon, 15 Apr 2024 20:24:12 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 15 Apr 2024 20:24:12 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -1821,71 +1821,71 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4206da7d8c95f02a873da81cad5304f89949515850830861aafb0a3af791644d`  
-		Last Modified: Tue, 16 Apr 2024 02:50:19 GMT  
-		Size: 41.2 MB (41241331 bytes)  
+	-	`sha256:08fc3b674c9d8931b9e2b9ded6a0e4a9429115f4fbf77b12659a05dd4a993cb3`  
+		Last Modified: Wed, 24 Apr 2024 17:43:05 GMT  
+		Size: 41.2 MB (41242486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd447520109fbfdfce35a2b5e4750caf6c7efb83d5e64b77e103fdf1a3d9c5f4`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 161.0 B  
+	-	`sha256:7536b63fb36ffd54193d39746541be162744d35817f961b6a7802f067fce1943`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a00201e5292d64c42fdfc0ffeeb64cbd455117176366f8ac1b686a57c706c656`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 734.0 B  
+	-	`sha256:1ac275397cec88123e32b7f07481f8c1261b5656a7ebadd395b6866fcc10a2cb`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a155c916e5308dc06a0c6cbb07acd69bda2f1675f5b8caed57270a425f58cf1`  
-		Last Modified: Thu, 18 Apr 2024 19:09:01 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:2f350f9302a134bafe95d93de74173a8861b45da31c9bef396f924bc1e784ad2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:15 GMT  
+		Size: 1.7 KB (1734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fcaf7a425e688b0b259b2892093718e3ca63829114c5659370c034ccc6043c0`  
-		Last Modified: Thu, 18 Apr 2024 19:09:03 GMT  
-		Size: 11.0 MB (10993184 bytes)  
+	-	`sha256:38c63fdbaa58fcfaf613edd87854546592ebb41313dbf397aab5651337a1c51b`  
+		Last Modified: Thu, 25 Apr 2024 10:25:17 GMT  
+		Size: 11.0 MB (10993277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4aec274a7bb3f17167a96e2c985330fbe7301c03e3b1d7305c188c40fb2eca56`  
-		Last Modified: Thu, 18 Apr 2024 19:09:02 GMT  
-		Size: 1.0 MB (1019323 bytes)  
+	-	`sha256:579c2b7e8ab2fb7968d8c13fbc71c23f97d0427aee457c809b49f5956903eda2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:16 GMT  
+		Size: 1.0 MB (1019361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7fb60b64dbbd9de49009bce3306c974955db6bc27cc287ac30e40183aea47f8`  
-		Last Modified: Thu, 18 Apr 2024 19:10:29 GMT  
-		Size: 28.5 MB (28457154 bytes)  
+	-	`sha256:253b1d57f97c64980bbd5c2cf3c2a3830bc47b006fefe9c17d6c32ad33710aa7`  
+		Last Modified: Thu, 25 Apr 2024 10:26:19 GMT  
+		Size: 28.5 MB (28457247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:373ef8ea6d4299bbf00a414aaeffb83fbc498365be029156e2f8858a197f4aae`  
-		Last Modified: Thu, 18 Apr 2024 19:10:28 GMT  
-		Size: 1.2 KB (1218 bytes)  
+	-	`sha256:5f07e3937e124827ca95c433f491c81fc4f381a09b67f8276acc09a73b3bff11`  
+		Last Modified: Thu, 25 Apr 2024 10:26:18 GMT  
+		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64a9de24de5938c694f96725bd04c5fef7c626baf8cdae6ddf0c207fc132a329`  
-		Last Modified: Thu, 18 Apr 2024 19:10:28 GMT  
+	-	`sha256:ea8bea8ca5107371b6d93a96d739e005eb2e2b0b5aafdb52d996beaa284b6d9e`  
+		Last Modified: Thu, 25 Apr 2024 10:26:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3.0` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:b0aea171f1c283d2fac5f6e429a30fe0e2dda47fc73bea67c7a7043c4f8a265e
+$ docker pull cassandra@sha256:c71e226fd453e78faedc447aff41184f3757d6cf8216e5e3a0d86e2dd8e9ed43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4237073 bytes)**  
+-	Total Size: **4.2 MB (4237074 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:726027d857b91a2625f715ca31b516447230bbaa6f5e2fa7031851449b7c838f`
+-	Image ID: `sha256:92a012029d3927c3f5c6013e0ed469b102b56c7e98947861f4d118cd55d7fce9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43997f461dec1261c440b590beb281b4a257de402734958c340e889ddd8f21f9`  
-		Last Modified: Thu, 18 Apr 2024 19:10:28 GMT  
+	-	`sha256:b616556eaf4cd3996bfdeca73769ed5fe4060e9eb9cc9824702b5cdbb8f4fd04`  
+		Last Modified: Thu, 25 Apr 2024 10:26:18 GMT  
 		Size: 4.2 MB (4199043 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:225cf1e8cd91470c18c10a317d9039832a93f6a6b5a485ff87f789e905acc58e`  
-		Last Modified: Thu, 18 Apr 2024 19:10:27 GMT  
-		Size: 38.0 KB (38030 bytes)  
+	-	`sha256:af688d1c85f807a4c6ad7b0b4f1d1f7ef0b8e292172b36e4bbfbedd975618cbc`  
+		Last Modified: Thu, 25 Apr 2024 10:26:17 GMT  
+		Size: 38.0 KB (38031 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:3.0-jammy`
 
 ```console
-$ docker pull cassandra@sha256:a8a3e664752a242f27d7abb7c3dfa5c4837e6b1d19a034bfb306e8ca70f37caf
+$ docker pull cassandra@sha256:ed9c71ab5943e5a50d67f07a9ab905d4f3c078ab3721704d77b3db7150da6e91
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2352,13 +2352,13 @@ $ docker pull cassandra@sha256:981695d0f32fef0cf3b9704c54bc32ad55815e9770b27ba53
 ### `cassandra:3.0-jammy` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:1c3267fbced77d1ccc140e28c8c50f2559fddbeb089cf886950b1096678f8358
+$ docker pull cassandra@sha256:bd5e2e4ec574c8031bd0673fa569a3622640685c3b45d5c53576ee7d6a1b0c6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.1 MB (131069399 bytes)**  
+-	Total Size: **131.1 MB (131070780 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cce5f66c8ce22242f2bde449ed4b2cbab8686a65e60c75f54d3dc30043aff22f`
+-	Image ID: `sha256:d6939963e07872602aa23664705cf00981beba647e92f01d2440d1b7b0664576`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -2375,23 +2375,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 10 Apr 2024 18:53:18 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk8u402-b06
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='782f842c22fe660c5acbea8c1d7b4e812fe658a9e48cd2e8e776d088c7ab32d3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u402b06.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='1d8c109e96bdb35ffff667dfb911ce03fb9f0f924048dcc8fdbd45198b263ecd';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_x64_linux_hotspot_8u402b06.tar.gz';          ;;        armhf|arm)          ESUM='d613a775573fc17ee972e62b5120dc34d8cac1810bb352e71bc01980ce3c48a8';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_arm_linux_hotspot_8u402b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='dd828b761805c2caecac94fcab8ea39cdf41480f07053553dc37edde104861af';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
+ENV JAVA_VERSION=jdk8u412-b08
+# Mon, 15 Apr 2024 20:24:12 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='17550a6a4ddf71ac81ba8f276467bc58f036c123c0f1bafcafd69f70e3e49cf5';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_aarch64_linux_hotspot_8u412b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='a8d994332a2ff15d48bf04405c3b2f6bd331a928dd96639b15e62891f7172363';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_x64_linux_hotspot_8u412b08.tar.gz';          ;;        armhf|arm)          ESUM='1a6b470ac83b241223447a1e6cb55c4a8f78af0146b9387e9842625041226654';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_arm_linux_hotspot_8u412b08.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='d3157230c01b320e47ad6df650e83b15f8f76294d0df9f1c03867d07fe2883c9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_ppc64le_linux_hotspot_8u412b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+# Mon, 15 Apr 2024 20:24:12 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 15 Apr 2024 20:24:12 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -2438,71 +2438,71 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4206da7d8c95f02a873da81cad5304f89949515850830861aafb0a3af791644d`  
-		Last Modified: Tue, 16 Apr 2024 02:50:19 GMT  
-		Size: 41.2 MB (41241331 bytes)  
+	-	`sha256:08fc3b674c9d8931b9e2b9ded6a0e4a9429115f4fbf77b12659a05dd4a993cb3`  
+		Last Modified: Wed, 24 Apr 2024 17:43:05 GMT  
+		Size: 41.2 MB (41242486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd447520109fbfdfce35a2b5e4750caf6c7efb83d5e64b77e103fdf1a3d9c5f4`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 161.0 B  
+	-	`sha256:7536b63fb36ffd54193d39746541be162744d35817f961b6a7802f067fce1943`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a00201e5292d64c42fdfc0ffeeb64cbd455117176366f8ac1b686a57c706c656`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 734.0 B  
+	-	`sha256:1ac275397cec88123e32b7f07481f8c1261b5656a7ebadd395b6866fcc10a2cb`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a155c916e5308dc06a0c6cbb07acd69bda2f1675f5b8caed57270a425f58cf1`  
-		Last Modified: Thu, 18 Apr 2024 19:09:01 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:2f350f9302a134bafe95d93de74173a8861b45da31c9bef396f924bc1e784ad2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:15 GMT  
+		Size: 1.7 KB (1734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fcaf7a425e688b0b259b2892093718e3ca63829114c5659370c034ccc6043c0`  
-		Last Modified: Thu, 18 Apr 2024 19:09:03 GMT  
-		Size: 11.0 MB (10993184 bytes)  
+	-	`sha256:38c63fdbaa58fcfaf613edd87854546592ebb41313dbf397aab5651337a1c51b`  
+		Last Modified: Thu, 25 Apr 2024 10:25:17 GMT  
+		Size: 11.0 MB (10993277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4aec274a7bb3f17167a96e2c985330fbe7301c03e3b1d7305c188c40fb2eca56`  
-		Last Modified: Thu, 18 Apr 2024 19:09:02 GMT  
-		Size: 1.0 MB (1019323 bytes)  
+	-	`sha256:579c2b7e8ab2fb7968d8c13fbc71c23f97d0427aee457c809b49f5956903eda2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:16 GMT  
+		Size: 1.0 MB (1019361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7fb60b64dbbd9de49009bce3306c974955db6bc27cc287ac30e40183aea47f8`  
-		Last Modified: Thu, 18 Apr 2024 19:10:29 GMT  
-		Size: 28.5 MB (28457154 bytes)  
+	-	`sha256:253b1d57f97c64980bbd5c2cf3c2a3830bc47b006fefe9c17d6c32ad33710aa7`  
+		Last Modified: Thu, 25 Apr 2024 10:26:19 GMT  
+		Size: 28.5 MB (28457247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:373ef8ea6d4299bbf00a414aaeffb83fbc498365be029156e2f8858a197f4aae`  
-		Last Modified: Thu, 18 Apr 2024 19:10:28 GMT  
-		Size: 1.2 KB (1218 bytes)  
+	-	`sha256:5f07e3937e124827ca95c433f491c81fc4f381a09b67f8276acc09a73b3bff11`  
+		Last Modified: Thu, 25 Apr 2024 10:26:18 GMT  
+		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64a9de24de5938c694f96725bd04c5fef7c626baf8cdae6ddf0c207fc132a329`  
-		Last Modified: Thu, 18 Apr 2024 19:10:28 GMT  
+	-	`sha256:ea8bea8ca5107371b6d93a96d739e005eb2e2b0b5aafdb52d996beaa284b6d9e`  
+		Last Modified: Thu, 25 Apr 2024 10:26:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3.0-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:b0aea171f1c283d2fac5f6e429a30fe0e2dda47fc73bea67c7a7043c4f8a265e
+$ docker pull cassandra@sha256:c71e226fd453e78faedc447aff41184f3757d6cf8216e5e3a0d86e2dd8e9ed43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4237073 bytes)**  
+-	Total Size: **4.2 MB (4237074 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:726027d857b91a2625f715ca31b516447230bbaa6f5e2fa7031851449b7c838f`
+-	Image ID: `sha256:92a012029d3927c3f5c6013e0ed469b102b56c7e98947861f4d118cd55d7fce9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43997f461dec1261c440b590beb281b4a257de402734958c340e889ddd8f21f9`  
-		Last Modified: Thu, 18 Apr 2024 19:10:28 GMT  
+	-	`sha256:b616556eaf4cd3996bfdeca73769ed5fe4060e9eb9cc9824702b5cdbb8f4fd04`  
+		Last Modified: Thu, 25 Apr 2024 10:26:18 GMT  
 		Size: 4.2 MB (4199043 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:225cf1e8cd91470c18c10a317d9039832a93f6a6b5a485ff87f789e905acc58e`  
-		Last Modified: Thu, 18 Apr 2024 19:10:27 GMT  
-		Size: 38.0 KB (38030 bytes)  
+	-	`sha256:af688d1c85f807a4c6ad7b0b4f1d1f7ef0b8e292172b36e4bbfbedd975618cbc`  
+		Last Modified: Thu, 25 Apr 2024 10:26:17 GMT  
+		Size: 38.0 KB (38031 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:3.0.30`
 
 ```console
-$ docker pull cassandra@sha256:a8a3e664752a242f27d7abb7c3dfa5c4837e6b1d19a034bfb306e8ca70f37caf
+$ docker pull cassandra@sha256:ed9c71ab5943e5a50d67f07a9ab905d4f3c078ab3721704d77b3db7150da6e91
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2969,13 +2969,13 @@ $ docker pull cassandra@sha256:981695d0f32fef0cf3b9704c54bc32ad55815e9770b27ba53
 ### `cassandra:3.0.30` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:1c3267fbced77d1ccc140e28c8c50f2559fddbeb089cf886950b1096678f8358
+$ docker pull cassandra@sha256:bd5e2e4ec574c8031bd0673fa569a3622640685c3b45d5c53576ee7d6a1b0c6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.1 MB (131069399 bytes)**  
+-	Total Size: **131.1 MB (131070780 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cce5f66c8ce22242f2bde449ed4b2cbab8686a65e60c75f54d3dc30043aff22f`
+-	Image ID: `sha256:d6939963e07872602aa23664705cf00981beba647e92f01d2440d1b7b0664576`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -2992,23 +2992,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 10 Apr 2024 18:53:18 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk8u402-b06
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='782f842c22fe660c5acbea8c1d7b4e812fe658a9e48cd2e8e776d088c7ab32d3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u402b06.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='1d8c109e96bdb35ffff667dfb911ce03fb9f0f924048dcc8fdbd45198b263ecd';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_x64_linux_hotspot_8u402b06.tar.gz';          ;;        armhf|arm)          ESUM='d613a775573fc17ee972e62b5120dc34d8cac1810bb352e71bc01980ce3c48a8';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_arm_linux_hotspot_8u402b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='dd828b761805c2caecac94fcab8ea39cdf41480f07053553dc37edde104861af';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
+ENV JAVA_VERSION=jdk8u412-b08
+# Mon, 15 Apr 2024 20:24:12 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='17550a6a4ddf71ac81ba8f276467bc58f036c123c0f1bafcafd69f70e3e49cf5';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_aarch64_linux_hotspot_8u412b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='a8d994332a2ff15d48bf04405c3b2f6bd331a928dd96639b15e62891f7172363';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_x64_linux_hotspot_8u412b08.tar.gz';          ;;        armhf|arm)          ESUM='1a6b470ac83b241223447a1e6cb55c4a8f78af0146b9387e9842625041226654';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_arm_linux_hotspot_8u412b08.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='d3157230c01b320e47ad6df650e83b15f8f76294d0df9f1c03867d07fe2883c9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_ppc64le_linux_hotspot_8u412b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+# Mon, 15 Apr 2024 20:24:12 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 15 Apr 2024 20:24:12 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -3055,71 +3055,71 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4206da7d8c95f02a873da81cad5304f89949515850830861aafb0a3af791644d`  
-		Last Modified: Tue, 16 Apr 2024 02:50:19 GMT  
-		Size: 41.2 MB (41241331 bytes)  
+	-	`sha256:08fc3b674c9d8931b9e2b9ded6a0e4a9429115f4fbf77b12659a05dd4a993cb3`  
+		Last Modified: Wed, 24 Apr 2024 17:43:05 GMT  
+		Size: 41.2 MB (41242486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd447520109fbfdfce35a2b5e4750caf6c7efb83d5e64b77e103fdf1a3d9c5f4`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 161.0 B  
+	-	`sha256:7536b63fb36ffd54193d39746541be162744d35817f961b6a7802f067fce1943`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a00201e5292d64c42fdfc0ffeeb64cbd455117176366f8ac1b686a57c706c656`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 734.0 B  
+	-	`sha256:1ac275397cec88123e32b7f07481f8c1261b5656a7ebadd395b6866fcc10a2cb`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a155c916e5308dc06a0c6cbb07acd69bda2f1675f5b8caed57270a425f58cf1`  
-		Last Modified: Thu, 18 Apr 2024 19:09:01 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:2f350f9302a134bafe95d93de74173a8861b45da31c9bef396f924bc1e784ad2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:15 GMT  
+		Size: 1.7 KB (1734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fcaf7a425e688b0b259b2892093718e3ca63829114c5659370c034ccc6043c0`  
-		Last Modified: Thu, 18 Apr 2024 19:09:03 GMT  
-		Size: 11.0 MB (10993184 bytes)  
+	-	`sha256:38c63fdbaa58fcfaf613edd87854546592ebb41313dbf397aab5651337a1c51b`  
+		Last Modified: Thu, 25 Apr 2024 10:25:17 GMT  
+		Size: 11.0 MB (10993277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4aec274a7bb3f17167a96e2c985330fbe7301c03e3b1d7305c188c40fb2eca56`  
-		Last Modified: Thu, 18 Apr 2024 19:09:02 GMT  
-		Size: 1.0 MB (1019323 bytes)  
+	-	`sha256:579c2b7e8ab2fb7968d8c13fbc71c23f97d0427aee457c809b49f5956903eda2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:16 GMT  
+		Size: 1.0 MB (1019361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7fb60b64dbbd9de49009bce3306c974955db6bc27cc287ac30e40183aea47f8`  
-		Last Modified: Thu, 18 Apr 2024 19:10:29 GMT  
-		Size: 28.5 MB (28457154 bytes)  
+	-	`sha256:253b1d57f97c64980bbd5c2cf3c2a3830bc47b006fefe9c17d6c32ad33710aa7`  
+		Last Modified: Thu, 25 Apr 2024 10:26:19 GMT  
+		Size: 28.5 MB (28457247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:373ef8ea6d4299bbf00a414aaeffb83fbc498365be029156e2f8858a197f4aae`  
-		Last Modified: Thu, 18 Apr 2024 19:10:28 GMT  
-		Size: 1.2 KB (1218 bytes)  
+	-	`sha256:5f07e3937e124827ca95c433f491c81fc4f381a09b67f8276acc09a73b3bff11`  
+		Last Modified: Thu, 25 Apr 2024 10:26:18 GMT  
+		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64a9de24de5938c694f96725bd04c5fef7c626baf8cdae6ddf0c207fc132a329`  
-		Last Modified: Thu, 18 Apr 2024 19:10:28 GMT  
+	-	`sha256:ea8bea8ca5107371b6d93a96d739e005eb2e2b0b5aafdb52d996beaa284b6d9e`  
+		Last Modified: Thu, 25 Apr 2024 10:26:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3.0.30` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:b0aea171f1c283d2fac5f6e429a30fe0e2dda47fc73bea67c7a7043c4f8a265e
+$ docker pull cassandra@sha256:c71e226fd453e78faedc447aff41184f3757d6cf8216e5e3a0d86e2dd8e9ed43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4237073 bytes)**  
+-	Total Size: **4.2 MB (4237074 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:726027d857b91a2625f715ca31b516447230bbaa6f5e2fa7031851449b7c838f`
+-	Image ID: `sha256:92a012029d3927c3f5c6013e0ed469b102b56c7e98947861f4d118cd55d7fce9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43997f461dec1261c440b590beb281b4a257de402734958c340e889ddd8f21f9`  
-		Last Modified: Thu, 18 Apr 2024 19:10:28 GMT  
+	-	`sha256:b616556eaf4cd3996bfdeca73769ed5fe4060e9eb9cc9824702b5cdbb8f4fd04`  
+		Last Modified: Thu, 25 Apr 2024 10:26:18 GMT  
 		Size: 4.2 MB (4199043 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:225cf1e8cd91470c18c10a317d9039832a93f6a6b5a485ff87f789e905acc58e`  
-		Last Modified: Thu, 18 Apr 2024 19:10:27 GMT  
-		Size: 38.0 KB (38030 bytes)  
+	-	`sha256:af688d1c85f807a4c6ad7b0b4f1d1f7ef0b8e292172b36e4bbfbedd975618cbc`  
+		Last Modified: Thu, 25 Apr 2024 10:26:17 GMT  
+		Size: 38.0 KB (38031 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:3.0.30-jammy`
 
 ```console
-$ docker pull cassandra@sha256:a8a3e664752a242f27d7abb7c3dfa5c4837e6b1d19a034bfb306e8ca70f37caf
+$ docker pull cassandra@sha256:ed9c71ab5943e5a50d67f07a9ab905d4f3c078ab3721704d77b3db7150da6e91
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3586,13 +3586,13 @@ $ docker pull cassandra@sha256:981695d0f32fef0cf3b9704c54bc32ad55815e9770b27ba53
 ### `cassandra:3.0.30-jammy` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:1c3267fbced77d1ccc140e28c8c50f2559fddbeb089cf886950b1096678f8358
+$ docker pull cassandra@sha256:bd5e2e4ec574c8031bd0673fa569a3622640685c3b45d5c53576ee7d6a1b0c6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.1 MB (131069399 bytes)**  
+-	Total Size: **131.1 MB (131070780 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cce5f66c8ce22242f2bde449ed4b2cbab8686a65e60c75f54d3dc30043aff22f`
+-	Image ID: `sha256:d6939963e07872602aa23664705cf00981beba647e92f01d2440d1b7b0664576`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -3609,23 +3609,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 10 Apr 2024 18:53:18 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk8u402-b06
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='782f842c22fe660c5acbea8c1d7b4e812fe658a9e48cd2e8e776d088c7ab32d3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u402b06.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='1d8c109e96bdb35ffff667dfb911ce03fb9f0f924048dcc8fdbd45198b263ecd';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_x64_linux_hotspot_8u402b06.tar.gz';          ;;        armhf|arm)          ESUM='d613a775573fc17ee972e62b5120dc34d8cac1810bb352e71bc01980ce3c48a8';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_arm_linux_hotspot_8u402b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='dd828b761805c2caecac94fcab8ea39cdf41480f07053553dc37edde104861af';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
+ENV JAVA_VERSION=jdk8u412-b08
+# Mon, 15 Apr 2024 20:24:12 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='17550a6a4ddf71ac81ba8f276467bc58f036c123c0f1bafcafd69f70e3e49cf5';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_aarch64_linux_hotspot_8u412b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='a8d994332a2ff15d48bf04405c3b2f6bd331a928dd96639b15e62891f7172363';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_x64_linux_hotspot_8u412b08.tar.gz';          ;;        armhf|arm)          ESUM='1a6b470ac83b241223447a1e6cb55c4a8f78af0146b9387e9842625041226654';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_arm_linux_hotspot_8u412b08.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='d3157230c01b320e47ad6df650e83b15f8f76294d0df9f1c03867d07fe2883c9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_ppc64le_linux_hotspot_8u412b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+# Mon, 15 Apr 2024 20:24:12 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Mon, 15 Apr 2024 20:24:12 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 15 Apr 2024 20:24:12 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -3672,71 +3672,71 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4206da7d8c95f02a873da81cad5304f89949515850830861aafb0a3af791644d`  
-		Last Modified: Tue, 16 Apr 2024 02:50:19 GMT  
-		Size: 41.2 MB (41241331 bytes)  
+	-	`sha256:08fc3b674c9d8931b9e2b9ded6a0e4a9429115f4fbf77b12659a05dd4a993cb3`  
+		Last Modified: Wed, 24 Apr 2024 17:43:05 GMT  
+		Size: 41.2 MB (41242486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd447520109fbfdfce35a2b5e4750caf6c7efb83d5e64b77e103fdf1a3d9c5f4`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 161.0 B  
+	-	`sha256:7536b63fb36ffd54193d39746541be162744d35817f961b6a7802f067fce1943`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a00201e5292d64c42fdfc0ffeeb64cbd455117176366f8ac1b686a57c706c656`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 734.0 B  
+	-	`sha256:1ac275397cec88123e32b7f07481f8c1261b5656a7ebadd395b6866fcc10a2cb`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a155c916e5308dc06a0c6cbb07acd69bda2f1675f5b8caed57270a425f58cf1`  
-		Last Modified: Thu, 18 Apr 2024 19:09:01 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:2f350f9302a134bafe95d93de74173a8861b45da31c9bef396f924bc1e784ad2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:15 GMT  
+		Size: 1.7 KB (1734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fcaf7a425e688b0b259b2892093718e3ca63829114c5659370c034ccc6043c0`  
-		Last Modified: Thu, 18 Apr 2024 19:09:03 GMT  
-		Size: 11.0 MB (10993184 bytes)  
+	-	`sha256:38c63fdbaa58fcfaf613edd87854546592ebb41313dbf397aab5651337a1c51b`  
+		Last Modified: Thu, 25 Apr 2024 10:25:17 GMT  
+		Size: 11.0 MB (10993277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4aec274a7bb3f17167a96e2c985330fbe7301c03e3b1d7305c188c40fb2eca56`  
-		Last Modified: Thu, 18 Apr 2024 19:09:02 GMT  
-		Size: 1.0 MB (1019323 bytes)  
+	-	`sha256:579c2b7e8ab2fb7968d8c13fbc71c23f97d0427aee457c809b49f5956903eda2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:16 GMT  
+		Size: 1.0 MB (1019361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7fb60b64dbbd9de49009bce3306c974955db6bc27cc287ac30e40183aea47f8`  
-		Last Modified: Thu, 18 Apr 2024 19:10:29 GMT  
-		Size: 28.5 MB (28457154 bytes)  
+	-	`sha256:253b1d57f97c64980bbd5c2cf3c2a3830bc47b006fefe9c17d6c32ad33710aa7`  
+		Last Modified: Thu, 25 Apr 2024 10:26:19 GMT  
+		Size: 28.5 MB (28457247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:373ef8ea6d4299bbf00a414aaeffb83fbc498365be029156e2f8858a197f4aae`  
-		Last Modified: Thu, 18 Apr 2024 19:10:28 GMT  
-		Size: 1.2 KB (1218 bytes)  
+	-	`sha256:5f07e3937e124827ca95c433f491c81fc4f381a09b67f8276acc09a73b3bff11`  
+		Last Modified: Thu, 25 Apr 2024 10:26:18 GMT  
+		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64a9de24de5938c694f96725bd04c5fef7c626baf8cdae6ddf0c207fc132a329`  
-		Last Modified: Thu, 18 Apr 2024 19:10:28 GMT  
+	-	`sha256:ea8bea8ca5107371b6d93a96d739e005eb2e2b0b5aafdb52d996beaa284b6d9e`  
+		Last Modified: Thu, 25 Apr 2024 10:26:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3.0.30-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:b0aea171f1c283d2fac5f6e429a30fe0e2dda47fc73bea67c7a7043c4f8a265e
+$ docker pull cassandra@sha256:c71e226fd453e78faedc447aff41184f3757d6cf8216e5e3a0d86e2dd8e9ed43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4237073 bytes)**  
+-	Total Size: **4.2 MB (4237074 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:726027d857b91a2625f715ca31b516447230bbaa6f5e2fa7031851449b7c838f`
+-	Image ID: `sha256:92a012029d3927c3f5c6013e0ed469b102b56c7e98947861f4d118cd55d7fce9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43997f461dec1261c440b590beb281b4a257de402734958c340e889ddd8f21f9`  
-		Last Modified: Thu, 18 Apr 2024 19:10:28 GMT  
+	-	`sha256:b616556eaf4cd3996bfdeca73769ed5fe4060e9eb9cc9824702b5cdbb8f4fd04`  
+		Last Modified: Thu, 25 Apr 2024 10:26:18 GMT  
 		Size: 4.2 MB (4199043 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:225cf1e8cd91470c18c10a317d9039832a93f6a6b5a485ff87f789e905acc58e`  
-		Last Modified: Thu, 18 Apr 2024 19:10:27 GMT  
-		Size: 38.0 KB (38030 bytes)  
+	-	`sha256:af688d1c85f807a4c6ad7b0b4f1d1f7ef0b8e292172b36e4bbfbedd975618cbc`  
+		Last Modified: Thu, 25 Apr 2024 10:26:17 GMT  
+		Size: 38.0 KB (38031 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:3.11`
 
 ```console
-$ docker pull cassandra@sha256:55a90953a2b61eefe9ec664e32f6fc96880b92314df6e3c37a694f9a9779a5c5
+$ docker pull cassandra@sha256:a644b4cdb664aac6358dcc4389647854eef0074212697cca4edffb7ba5cf7d8e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4203,13 +4203,13 @@ $ docker pull cassandra@sha256:cf426926f0052c58225a265bc9c2272ee3a2721bc3cb19ac9
 ### `cassandra:3.11` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:8b1b905b22cad39942b6d688253ec28adc218b53750df34d6456b83f535bc5a0
+$ docker pull cassandra@sha256:43e3394750287313a93233252a2e29390fe12f8a8d98bdd2e29e2b9dbea96f06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.4 MB (135408635 bytes)**  
+-	Total Size: **135.4 MB (135409951 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f2f6bf23e0522cf585c38fa37fdd2cfe6dfcedbe64f1cad70602d437f7d04f9`
+-	Image ID: `sha256:02f11075e686e58e163acbf624289fb7893ae57ddc6cd19dd63832dd620f8143`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -4226,23 +4226,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 10 Apr 2024 18:53:18 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk8u402-b06
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='782f842c22fe660c5acbea8c1d7b4e812fe658a9e48cd2e8e776d088c7ab32d3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u402b06.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='1d8c109e96bdb35ffff667dfb911ce03fb9f0f924048dcc8fdbd45198b263ecd';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_x64_linux_hotspot_8u402b06.tar.gz';          ;;        armhf|arm)          ESUM='d613a775573fc17ee972e62b5120dc34d8cac1810bb352e71bc01980ce3c48a8';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_arm_linux_hotspot_8u402b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='dd828b761805c2caecac94fcab8ea39cdf41480f07053553dc37edde104861af';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
+ENV JAVA_VERSION=jdk8u412-b08
+# Tue, 16 Apr 2024 17:30:31 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='17550a6a4ddf71ac81ba8f276467bc58f036c123c0f1bafcafd69f70e3e49cf5';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_aarch64_linux_hotspot_8u412b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='a8d994332a2ff15d48bf04405c3b2f6bd331a928dd96639b15e62891f7172363';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_x64_linux_hotspot_8u412b08.tar.gz';          ;;        armhf|arm)          ESUM='1a6b470ac83b241223447a1e6cb55c4a8f78af0146b9387e9842625041226654';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_arm_linux_hotspot_8u412b08.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='d3157230c01b320e47ad6df650e83b15f8f76294d0df9f1c03867d07fe2883c9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_ppc64le_linux_hotspot_8u412b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+# Tue, 16 Apr 2024 17:30:31 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Apr 2024 17:30:31 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -4289,71 +4289,71 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4206da7d8c95f02a873da81cad5304f89949515850830861aafb0a3af791644d`  
-		Last Modified: Tue, 16 Apr 2024 02:50:19 GMT  
-		Size: 41.2 MB (41241331 bytes)  
+	-	`sha256:08fc3b674c9d8931b9e2b9ded6a0e4a9429115f4fbf77b12659a05dd4a993cb3`  
+		Last Modified: Wed, 24 Apr 2024 17:43:05 GMT  
+		Size: 41.2 MB (41242486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd447520109fbfdfce35a2b5e4750caf6c7efb83d5e64b77e103fdf1a3d9c5f4`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 161.0 B  
+	-	`sha256:7536b63fb36ffd54193d39746541be162744d35817f961b6a7802f067fce1943`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a00201e5292d64c42fdfc0ffeeb64cbd455117176366f8ac1b686a57c706c656`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 734.0 B  
+	-	`sha256:1ac275397cec88123e32b7f07481f8c1261b5656a7ebadd395b6866fcc10a2cb`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a155c916e5308dc06a0c6cbb07acd69bda2f1675f5b8caed57270a425f58cf1`  
-		Last Modified: Thu, 18 Apr 2024 19:09:01 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:2f350f9302a134bafe95d93de74173a8861b45da31c9bef396f924bc1e784ad2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:15 GMT  
+		Size: 1.7 KB (1734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fcaf7a425e688b0b259b2892093718e3ca63829114c5659370c034ccc6043c0`  
-		Last Modified: Thu, 18 Apr 2024 19:09:03 GMT  
-		Size: 11.0 MB (10993184 bytes)  
+	-	`sha256:38c63fdbaa58fcfaf613edd87854546592ebb41313dbf397aab5651337a1c51b`  
+		Last Modified: Thu, 25 Apr 2024 10:25:17 GMT  
+		Size: 11.0 MB (10993277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4aec274a7bb3f17167a96e2c985330fbe7301c03e3b1d7305c188c40fb2eca56`  
-		Last Modified: Thu, 18 Apr 2024 19:09:02 GMT  
-		Size: 1.0 MB (1019323 bytes)  
+	-	`sha256:579c2b7e8ab2fb7968d8c13fbc71c23f97d0427aee457c809b49f5956903eda2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:16 GMT  
+		Size: 1.0 MB (1019361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a61e5a6517d66d9bebad081f7f332063e5365c66d255461df083db90293274d9`  
-		Last Modified: Thu, 18 Apr 2024 19:09:03 GMT  
-		Size: 32.8 MB (32796392 bytes)  
+	-	`sha256:e07cc32ee22f9b86c6474026c0344b66e3ffbaa1778aa98d83e5f0b5d1f4d282`  
+		Last Modified: Thu, 25 Apr 2024 10:25:18 GMT  
+		Size: 32.8 MB (32796417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e3ec75bb04167f5f7f01086f2d01e4d7f90a2f2de1c672c856a1b8895088a24`  
-		Last Modified: Thu, 18 Apr 2024 19:09:02 GMT  
-		Size: 1.2 KB (1216 bytes)  
+	-	`sha256:63752971e37dd0b487463eec63c0896efcd6d522b1ca10faf0cdd6476a378b2a`  
+		Last Modified: Thu, 25 Apr 2024 10:25:17 GMT  
+		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88e894b3e8c5fd0bd670a790c2a3529cffdd2f7f2cadab6b81fa98d7f622d927`  
-		Last Modified: Thu, 18 Apr 2024 19:09:04 GMT  
+	-	`sha256:98e50a66929c9fd264e80de0c3dd4d5a06c3259f1fbc611374e340e2cf5a9f3d`  
+		Last Modified: Thu, 25 Apr 2024 10:25:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3.11` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:a8122faba34db874a69709f29fbbeb746096f71c4e7a6c2b80ccba36c12e044d
+$ docker pull cassandra@sha256:daf9948752d01f468ce79d6385b74d039b74aba2431b64685f0d82420cb69bfe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4244708 bytes)**  
+-	Total Size: **4.2 MB (4245526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:669f225da9e10975f2e33e695ac475282f6f09a4faab69208d60e5ddd9b6d979`
+-	Image ID: `sha256:6cd073cb1a31fc1730551243f441398816730bd2c167d587a4b15351493312e3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3dfb3e588f0f31120dd536e8a7a0ebf7409626b3011f394f813a3962f83f26fa`  
-		Last Modified: Thu, 18 Apr 2024 19:09:00 GMT  
+	-	`sha256:40738328ad9156198c3fdf152e1cb11bed639ab055f2db378e55a51e618f28a5`  
+		Last Modified: Thu, 25 Apr 2024 10:25:16 GMT  
 		Size: 4.2 MB (4206075 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b0441f4d70111aee474691c43b5199a841c33b6f2afc1dee9a630f478aae461f`  
-		Last Modified: Thu, 18 Apr 2024 19:08:59 GMT  
-		Size: 38.6 KB (38633 bytes)  
+	-	`sha256:df0198b7fb9aa5840efab18a303f3b1777a40c3444f5adf15160ed6085f7669c`  
+		Last Modified: Thu, 25 Apr 2024 10:25:15 GMT  
+		Size: 39.5 KB (39451 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:3.11-jammy`
 
 ```console
-$ docker pull cassandra@sha256:55a90953a2b61eefe9ec664e32f6fc96880b92314df6e3c37a694f9a9779a5c5
+$ docker pull cassandra@sha256:a644b4cdb664aac6358dcc4389647854eef0074212697cca4edffb7ba5cf7d8e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4820,13 +4820,13 @@ $ docker pull cassandra@sha256:cf426926f0052c58225a265bc9c2272ee3a2721bc3cb19ac9
 ### `cassandra:3.11-jammy` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:8b1b905b22cad39942b6d688253ec28adc218b53750df34d6456b83f535bc5a0
+$ docker pull cassandra@sha256:43e3394750287313a93233252a2e29390fe12f8a8d98bdd2e29e2b9dbea96f06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.4 MB (135408635 bytes)**  
+-	Total Size: **135.4 MB (135409951 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f2f6bf23e0522cf585c38fa37fdd2cfe6dfcedbe64f1cad70602d437f7d04f9`
+-	Image ID: `sha256:02f11075e686e58e163acbf624289fb7893ae57ddc6cd19dd63832dd620f8143`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -4843,23 +4843,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 10 Apr 2024 18:53:18 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk8u402-b06
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='782f842c22fe660c5acbea8c1d7b4e812fe658a9e48cd2e8e776d088c7ab32d3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u402b06.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='1d8c109e96bdb35ffff667dfb911ce03fb9f0f924048dcc8fdbd45198b263ecd';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_x64_linux_hotspot_8u402b06.tar.gz';          ;;        armhf|arm)          ESUM='d613a775573fc17ee972e62b5120dc34d8cac1810bb352e71bc01980ce3c48a8';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_arm_linux_hotspot_8u402b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='dd828b761805c2caecac94fcab8ea39cdf41480f07053553dc37edde104861af';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
+ENV JAVA_VERSION=jdk8u412-b08
+# Tue, 16 Apr 2024 17:30:31 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='17550a6a4ddf71ac81ba8f276467bc58f036c123c0f1bafcafd69f70e3e49cf5';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_aarch64_linux_hotspot_8u412b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='a8d994332a2ff15d48bf04405c3b2f6bd331a928dd96639b15e62891f7172363';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_x64_linux_hotspot_8u412b08.tar.gz';          ;;        armhf|arm)          ESUM='1a6b470ac83b241223447a1e6cb55c4a8f78af0146b9387e9842625041226654';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_arm_linux_hotspot_8u412b08.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='d3157230c01b320e47ad6df650e83b15f8f76294d0df9f1c03867d07fe2883c9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_ppc64le_linux_hotspot_8u412b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+# Tue, 16 Apr 2024 17:30:31 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Apr 2024 17:30:31 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -4906,71 +4906,71 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4206da7d8c95f02a873da81cad5304f89949515850830861aafb0a3af791644d`  
-		Last Modified: Tue, 16 Apr 2024 02:50:19 GMT  
-		Size: 41.2 MB (41241331 bytes)  
+	-	`sha256:08fc3b674c9d8931b9e2b9ded6a0e4a9429115f4fbf77b12659a05dd4a993cb3`  
+		Last Modified: Wed, 24 Apr 2024 17:43:05 GMT  
+		Size: 41.2 MB (41242486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd447520109fbfdfce35a2b5e4750caf6c7efb83d5e64b77e103fdf1a3d9c5f4`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 161.0 B  
+	-	`sha256:7536b63fb36ffd54193d39746541be162744d35817f961b6a7802f067fce1943`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a00201e5292d64c42fdfc0ffeeb64cbd455117176366f8ac1b686a57c706c656`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 734.0 B  
+	-	`sha256:1ac275397cec88123e32b7f07481f8c1261b5656a7ebadd395b6866fcc10a2cb`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a155c916e5308dc06a0c6cbb07acd69bda2f1675f5b8caed57270a425f58cf1`  
-		Last Modified: Thu, 18 Apr 2024 19:09:01 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:2f350f9302a134bafe95d93de74173a8861b45da31c9bef396f924bc1e784ad2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:15 GMT  
+		Size: 1.7 KB (1734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fcaf7a425e688b0b259b2892093718e3ca63829114c5659370c034ccc6043c0`  
-		Last Modified: Thu, 18 Apr 2024 19:09:03 GMT  
-		Size: 11.0 MB (10993184 bytes)  
+	-	`sha256:38c63fdbaa58fcfaf613edd87854546592ebb41313dbf397aab5651337a1c51b`  
+		Last Modified: Thu, 25 Apr 2024 10:25:17 GMT  
+		Size: 11.0 MB (10993277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4aec274a7bb3f17167a96e2c985330fbe7301c03e3b1d7305c188c40fb2eca56`  
-		Last Modified: Thu, 18 Apr 2024 19:09:02 GMT  
-		Size: 1.0 MB (1019323 bytes)  
+	-	`sha256:579c2b7e8ab2fb7968d8c13fbc71c23f97d0427aee457c809b49f5956903eda2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:16 GMT  
+		Size: 1.0 MB (1019361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a61e5a6517d66d9bebad081f7f332063e5365c66d255461df083db90293274d9`  
-		Last Modified: Thu, 18 Apr 2024 19:09:03 GMT  
-		Size: 32.8 MB (32796392 bytes)  
+	-	`sha256:e07cc32ee22f9b86c6474026c0344b66e3ffbaa1778aa98d83e5f0b5d1f4d282`  
+		Last Modified: Thu, 25 Apr 2024 10:25:18 GMT  
+		Size: 32.8 MB (32796417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e3ec75bb04167f5f7f01086f2d01e4d7f90a2f2de1c672c856a1b8895088a24`  
-		Last Modified: Thu, 18 Apr 2024 19:09:02 GMT  
-		Size: 1.2 KB (1216 bytes)  
+	-	`sha256:63752971e37dd0b487463eec63c0896efcd6d522b1ca10faf0cdd6476a378b2a`  
+		Last Modified: Thu, 25 Apr 2024 10:25:17 GMT  
+		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88e894b3e8c5fd0bd670a790c2a3529cffdd2f7f2cadab6b81fa98d7f622d927`  
-		Last Modified: Thu, 18 Apr 2024 19:09:04 GMT  
+	-	`sha256:98e50a66929c9fd264e80de0c3dd4d5a06c3259f1fbc611374e340e2cf5a9f3d`  
+		Last Modified: Thu, 25 Apr 2024 10:25:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3.11-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:a8122faba34db874a69709f29fbbeb746096f71c4e7a6c2b80ccba36c12e044d
+$ docker pull cassandra@sha256:daf9948752d01f468ce79d6385b74d039b74aba2431b64685f0d82420cb69bfe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4244708 bytes)**  
+-	Total Size: **4.2 MB (4245526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:669f225da9e10975f2e33e695ac475282f6f09a4faab69208d60e5ddd9b6d979`
+-	Image ID: `sha256:6cd073cb1a31fc1730551243f441398816730bd2c167d587a4b15351493312e3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3dfb3e588f0f31120dd536e8a7a0ebf7409626b3011f394f813a3962f83f26fa`  
-		Last Modified: Thu, 18 Apr 2024 19:09:00 GMT  
+	-	`sha256:40738328ad9156198c3fdf152e1cb11bed639ab055f2db378e55a51e618f28a5`  
+		Last Modified: Thu, 25 Apr 2024 10:25:16 GMT  
 		Size: 4.2 MB (4206075 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b0441f4d70111aee474691c43b5199a841c33b6f2afc1dee9a630f478aae461f`  
-		Last Modified: Thu, 18 Apr 2024 19:08:59 GMT  
-		Size: 38.6 KB (38633 bytes)  
+	-	`sha256:df0198b7fb9aa5840efab18a303f3b1777a40c3444f5adf15160ed6085f7669c`  
+		Last Modified: Thu, 25 Apr 2024 10:25:15 GMT  
+		Size: 39.5 KB (39451 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:3.11.17`
 
 ```console
-$ docker pull cassandra@sha256:55a90953a2b61eefe9ec664e32f6fc96880b92314df6e3c37a694f9a9779a5c5
+$ docker pull cassandra@sha256:a644b4cdb664aac6358dcc4389647854eef0074212697cca4edffb7ba5cf7d8e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5437,13 +5437,13 @@ $ docker pull cassandra@sha256:cf426926f0052c58225a265bc9c2272ee3a2721bc3cb19ac9
 ### `cassandra:3.11.17` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:8b1b905b22cad39942b6d688253ec28adc218b53750df34d6456b83f535bc5a0
+$ docker pull cassandra@sha256:43e3394750287313a93233252a2e29390fe12f8a8d98bdd2e29e2b9dbea96f06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.4 MB (135408635 bytes)**  
+-	Total Size: **135.4 MB (135409951 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f2f6bf23e0522cf585c38fa37fdd2cfe6dfcedbe64f1cad70602d437f7d04f9`
+-	Image ID: `sha256:02f11075e686e58e163acbf624289fb7893ae57ddc6cd19dd63832dd620f8143`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -5460,23 +5460,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 10 Apr 2024 18:53:18 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk8u402-b06
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='782f842c22fe660c5acbea8c1d7b4e812fe658a9e48cd2e8e776d088c7ab32d3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u402b06.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='1d8c109e96bdb35ffff667dfb911ce03fb9f0f924048dcc8fdbd45198b263ecd';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_x64_linux_hotspot_8u402b06.tar.gz';          ;;        armhf|arm)          ESUM='d613a775573fc17ee972e62b5120dc34d8cac1810bb352e71bc01980ce3c48a8';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_arm_linux_hotspot_8u402b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='dd828b761805c2caecac94fcab8ea39cdf41480f07053553dc37edde104861af';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
+ENV JAVA_VERSION=jdk8u412-b08
+# Tue, 16 Apr 2024 17:30:31 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='17550a6a4ddf71ac81ba8f276467bc58f036c123c0f1bafcafd69f70e3e49cf5';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_aarch64_linux_hotspot_8u412b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='a8d994332a2ff15d48bf04405c3b2f6bd331a928dd96639b15e62891f7172363';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_x64_linux_hotspot_8u412b08.tar.gz';          ;;        armhf|arm)          ESUM='1a6b470ac83b241223447a1e6cb55c4a8f78af0146b9387e9842625041226654';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_arm_linux_hotspot_8u412b08.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='d3157230c01b320e47ad6df650e83b15f8f76294d0df9f1c03867d07fe2883c9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_ppc64le_linux_hotspot_8u412b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+# Tue, 16 Apr 2024 17:30:31 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Apr 2024 17:30:31 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -5523,71 +5523,71 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4206da7d8c95f02a873da81cad5304f89949515850830861aafb0a3af791644d`  
-		Last Modified: Tue, 16 Apr 2024 02:50:19 GMT  
-		Size: 41.2 MB (41241331 bytes)  
+	-	`sha256:08fc3b674c9d8931b9e2b9ded6a0e4a9429115f4fbf77b12659a05dd4a993cb3`  
+		Last Modified: Wed, 24 Apr 2024 17:43:05 GMT  
+		Size: 41.2 MB (41242486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd447520109fbfdfce35a2b5e4750caf6c7efb83d5e64b77e103fdf1a3d9c5f4`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 161.0 B  
+	-	`sha256:7536b63fb36ffd54193d39746541be162744d35817f961b6a7802f067fce1943`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a00201e5292d64c42fdfc0ffeeb64cbd455117176366f8ac1b686a57c706c656`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 734.0 B  
+	-	`sha256:1ac275397cec88123e32b7f07481f8c1261b5656a7ebadd395b6866fcc10a2cb`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a155c916e5308dc06a0c6cbb07acd69bda2f1675f5b8caed57270a425f58cf1`  
-		Last Modified: Thu, 18 Apr 2024 19:09:01 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:2f350f9302a134bafe95d93de74173a8861b45da31c9bef396f924bc1e784ad2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:15 GMT  
+		Size: 1.7 KB (1734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fcaf7a425e688b0b259b2892093718e3ca63829114c5659370c034ccc6043c0`  
-		Last Modified: Thu, 18 Apr 2024 19:09:03 GMT  
-		Size: 11.0 MB (10993184 bytes)  
+	-	`sha256:38c63fdbaa58fcfaf613edd87854546592ebb41313dbf397aab5651337a1c51b`  
+		Last Modified: Thu, 25 Apr 2024 10:25:17 GMT  
+		Size: 11.0 MB (10993277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4aec274a7bb3f17167a96e2c985330fbe7301c03e3b1d7305c188c40fb2eca56`  
-		Last Modified: Thu, 18 Apr 2024 19:09:02 GMT  
-		Size: 1.0 MB (1019323 bytes)  
+	-	`sha256:579c2b7e8ab2fb7968d8c13fbc71c23f97d0427aee457c809b49f5956903eda2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:16 GMT  
+		Size: 1.0 MB (1019361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a61e5a6517d66d9bebad081f7f332063e5365c66d255461df083db90293274d9`  
-		Last Modified: Thu, 18 Apr 2024 19:09:03 GMT  
-		Size: 32.8 MB (32796392 bytes)  
+	-	`sha256:e07cc32ee22f9b86c6474026c0344b66e3ffbaa1778aa98d83e5f0b5d1f4d282`  
+		Last Modified: Thu, 25 Apr 2024 10:25:18 GMT  
+		Size: 32.8 MB (32796417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e3ec75bb04167f5f7f01086f2d01e4d7f90a2f2de1c672c856a1b8895088a24`  
-		Last Modified: Thu, 18 Apr 2024 19:09:02 GMT  
-		Size: 1.2 KB (1216 bytes)  
+	-	`sha256:63752971e37dd0b487463eec63c0896efcd6d522b1ca10faf0cdd6476a378b2a`  
+		Last Modified: Thu, 25 Apr 2024 10:25:17 GMT  
+		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88e894b3e8c5fd0bd670a790c2a3529cffdd2f7f2cadab6b81fa98d7f622d927`  
-		Last Modified: Thu, 18 Apr 2024 19:09:04 GMT  
+	-	`sha256:98e50a66929c9fd264e80de0c3dd4d5a06c3259f1fbc611374e340e2cf5a9f3d`  
+		Last Modified: Thu, 25 Apr 2024 10:25:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3.11.17` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:a8122faba34db874a69709f29fbbeb746096f71c4e7a6c2b80ccba36c12e044d
+$ docker pull cassandra@sha256:daf9948752d01f468ce79d6385b74d039b74aba2431b64685f0d82420cb69bfe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4244708 bytes)**  
+-	Total Size: **4.2 MB (4245526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:669f225da9e10975f2e33e695ac475282f6f09a4faab69208d60e5ddd9b6d979`
+-	Image ID: `sha256:6cd073cb1a31fc1730551243f441398816730bd2c167d587a4b15351493312e3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3dfb3e588f0f31120dd536e8a7a0ebf7409626b3011f394f813a3962f83f26fa`  
-		Last Modified: Thu, 18 Apr 2024 19:09:00 GMT  
+	-	`sha256:40738328ad9156198c3fdf152e1cb11bed639ab055f2db378e55a51e618f28a5`  
+		Last Modified: Thu, 25 Apr 2024 10:25:16 GMT  
 		Size: 4.2 MB (4206075 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b0441f4d70111aee474691c43b5199a841c33b6f2afc1dee9a630f478aae461f`  
-		Last Modified: Thu, 18 Apr 2024 19:08:59 GMT  
-		Size: 38.6 KB (38633 bytes)  
+	-	`sha256:df0198b7fb9aa5840efab18a303f3b1777a40c3444f5adf15160ed6085f7669c`  
+		Last Modified: Thu, 25 Apr 2024 10:25:15 GMT  
+		Size: 39.5 KB (39451 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:3.11.17-jammy`
 
 ```console
-$ docker pull cassandra@sha256:55a90953a2b61eefe9ec664e32f6fc96880b92314df6e3c37a694f9a9779a5c5
+$ docker pull cassandra@sha256:a644b4cdb664aac6358dcc4389647854eef0074212697cca4edffb7ba5cf7d8e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6054,13 +6054,13 @@ $ docker pull cassandra@sha256:cf426926f0052c58225a265bc9c2272ee3a2721bc3cb19ac9
 ### `cassandra:3.11.17-jammy` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:8b1b905b22cad39942b6d688253ec28adc218b53750df34d6456b83f535bc5a0
+$ docker pull cassandra@sha256:43e3394750287313a93233252a2e29390fe12f8a8d98bdd2e29e2b9dbea96f06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.4 MB (135408635 bytes)**  
+-	Total Size: **135.4 MB (135409951 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f2f6bf23e0522cf585c38fa37fdd2cfe6dfcedbe64f1cad70602d437f7d04f9`
+-	Image ID: `sha256:02f11075e686e58e163acbf624289fb7893ae57ddc6cd19dd63832dd620f8143`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -6077,23 +6077,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 10 Apr 2024 18:53:18 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk8u402-b06
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='782f842c22fe660c5acbea8c1d7b4e812fe658a9e48cd2e8e776d088c7ab32d3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u402b06.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='1d8c109e96bdb35ffff667dfb911ce03fb9f0f924048dcc8fdbd45198b263ecd';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_x64_linux_hotspot_8u402b06.tar.gz';          ;;        armhf|arm)          ESUM='d613a775573fc17ee972e62b5120dc34d8cac1810bb352e71bc01980ce3c48a8';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_arm_linux_hotspot_8u402b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='dd828b761805c2caecac94fcab8ea39cdf41480f07053553dc37edde104861af';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u402-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u402b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
+ENV JAVA_VERSION=jdk8u412-b08
+# Tue, 16 Apr 2024 17:30:31 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='17550a6a4ddf71ac81ba8f276467bc58f036c123c0f1bafcafd69f70e3e49cf5';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_aarch64_linux_hotspot_8u412b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='a8d994332a2ff15d48bf04405c3b2f6bd331a928dd96639b15e62891f7172363';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_x64_linux_hotspot_8u412b08.tar.gz';          ;;        armhf|arm)          ESUM='1a6b470ac83b241223447a1e6cb55c4a8f78af0146b9387e9842625041226654';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_arm_linux_hotspot_8u412b08.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el|powerpc:common64)          ESUM='d3157230c01b320e47ad6df650e83b15f8f76294d0df9f1c03867d07fe2883c9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_ppc64le_linux_hotspot_8u412b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+# Tue, 16 Apr 2024 17:30:31 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Tue, 16 Apr 2024 17:30:31 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Apr 2024 17:30:31 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -6140,71 +6140,71 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4206da7d8c95f02a873da81cad5304f89949515850830861aafb0a3af791644d`  
-		Last Modified: Tue, 16 Apr 2024 02:50:19 GMT  
-		Size: 41.2 MB (41241331 bytes)  
+	-	`sha256:08fc3b674c9d8931b9e2b9ded6a0e4a9429115f4fbf77b12659a05dd4a993cb3`  
+		Last Modified: Wed, 24 Apr 2024 17:43:05 GMT  
+		Size: 41.2 MB (41242486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd447520109fbfdfce35a2b5e4750caf6c7efb83d5e64b77e103fdf1a3d9c5f4`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 161.0 B  
+	-	`sha256:7536b63fb36ffd54193d39746541be162744d35817f961b6a7802f067fce1943`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a00201e5292d64c42fdfc0ffeeb64cbd455117176366f8ac1b686a57c706c656`  
-		Last Modified: Tue, 16 Apr 2024 02:50:12 GMT  
-		Size: 734.0 B  
+	-	`sha256:1ac275397cec88123e32b7f07481f8c1261b5656a7ebadd395b6866fcc10a2cb`  
+		Last Modified: Wed, 24 Apr 2024 17:42:59 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a155c916e5308dc06a0c6cbb07acd69bda2f1675f5b8caed57270a425f58cf1`  
-		Last Modified: Thu, 18 Apr 2024 19:09:01 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:2f350f9302a134bafe95d93de74173a8861b45da31c9bef396f924bc1e784ad2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:15 GMT  
+		Size: 1.7 KB (1734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fcaf7a425e688b0b259b2892093718e3ca63829114c5659370c034ccc6043c0`  
-		Last Modified: Thu, 18 Apr 2024 19:09:03 GMT  
-		Size: 11.0 MB (10993184 bytes)  
+	-	`sha256:38c63fdbaa58fcfaf613edd87854546592ebb41313dbf397aab5651337a1c51b`  
+		Last Modified: Thu, 25 Apr 2024 10:25:17 GMT  
+		Size: 11.0 MB (10993277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4aec274a7bb3f17167a96e2c985330fbe7301c03e3b1d7305c188c40fb2eca56`  
-		Last Modified: Thu, 18 Apr 2024 19:09:02 GMT  
-		Size: 1.0 MB (1019323 bytes)  
+	-	`sha256:579c2b7e8ab2fb7968d8c13fbc71c23f97d0427aee457c809b49f5956903eda2`  
+		Last Modified: Thu, 25 Apr 2024 10:25:16 GMT  
+		Size: 1.0 MB (1019361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a61e5a6517d66d9bebad081f7f332063e5365c66d255461df083db90293274d9`  
-		Last Modified: Thu, 18 Apr 2024 19:09:03 GMT  
-		Size: 32.8 MB (32796392 bytes)  
+	-	`sha256:e07cc32ee22f9b86c6474026c0344b66e3ffbaa1778aa98d83e5f0b5d1f4d282`  
+		Last Modified: Thu, 25 Apr 2024 10:25:18 GMT  
+		Size: 32.8 MB (32796417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e3ec75bb04167f5f7f01086f2d01e4d7f90a2f2de1c672c856a1b8895088a24`  
-		Last Modified: Thu, 18 Apr 2024 19:09:02 GMT  
-		Size: 1.2 KB (1216 bytes)  
+	-	`sha256:63752971e37dd0b487463eec63c0896efcd6d522b1ca10faf0cdd6476a378b2a`  
+		Last Modified: Thu, 25 Apr 2024 10:25:17 GMT  
+		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88e894b3e8c5fd0bd670a790c2a3529cffdd2f7f2cadab6b81fa98d7f622d927`  
-		Last Modified: Thu, 18 Apr 2024 19:09:04 GMT  
+	-	`sha256:98e50a66929c9fd264e80de0c3dd4d5a06c3259f1fbc611374e340e2cf5a9f3d`  
+		Last Modified: Thu, 25 Apr 2024 10:25:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3.11.17-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:a8122faba34db874a69709f29fbbeb746096f71c4e7a6c2b80ccba36c12e044d
+$ docker pull cassandra@sha256:daf9948752d01f468ce79d6385b74d039b74aba2431b64685f0d82420cb69bfe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4244708 bytes)**  
+-	Total Size: **4.2 MB (4245526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:669f225da9e10975f2e33e695ac475282f6f09a4faab69208d60e5ddd9b6d979`
+-	Image ID: `sha256:6cd073cb1a31fc1730551243f441398816730bd2c167d587a4b15351493312e3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3dfb3e588f0f31120dd536e8a7a0ebf7409626b3011f394f813a3962f83f26fa`  
-		Last Modified: Thu, 18 Apr 2024 19:09:00 GMT  
+	-	`sha256:40738328ad9156198c3fdf152e1cb11bed639ab055f2db378e55a51e618f28a5`  
+		Last Modified: Thu, 25 Apr 2024 10:25:16 GMT  
 		Size: 4.2 MB (4206075 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b0441f4d70111aee474691c43b5199a841c33b6f2afc1dee9a630f478aae461f`  
-		Last Modified: Thu, 18 Apr 2024 19:08:59 GMT  
-		Size: 38.6 KB (38633 bytes)  
+	-	`sha256:df0198b7fb9aa5840efab18a303f3b1777a40c3444f5adf15160ed6085f7669c`  
+		Last Modified: Thu, 25 Apr 2024 10:25:15 GMT  
+		Size: 39.5 KB (39451 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:4`
 
 ```console
-$ docker pull cassandra@sha256:b5f3722b1d738a5ed851adc14b27e6ef944bf480e7350d7719cadb5b23cd86a0
+$ docker pull cassandra@sha256:8d3943909a8ef8d40a3a09948d01ffe7f8862e64b18d2820c12f02219f2cc491
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6655,13 +6655,13 @@ $ docker pull cassandra@sha256:818e6bf890ce73fa419fb8e3eece0f6b7ade2ce7b9ad82538
 ### `cassandra:4` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:57c327ecf8f6451e533d414a677e515b0613955aa7f1664647d800e0e03eb993
+$ docker pull cassandra@sha256:9804dc1569f476a1401ba0d71a7a5143ce913e181a5d9056111879278db66c93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.6 MB (156613579 bytes)**  
+-	Total Size: **156.8 MB (156758254 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87e9f499e0e6a214a3c30d7ee785dfb0925d2d7d0e2ed10a549d9741e247b27c`
+-	Image ID: `sha256:d6066f284f3fc022dc7246d60c54123183d75b352c14e812678ee2ae2703047e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -6678,23 +6678,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -6739,73 +6739,73 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6849f23a4f1434c16f795f92fb3da9479ce10d1430d7c596b18d90ee4214c2b`  
-		Last Modified: Tue, 16 Apr 2024 02:51:44 GMT  
-		Size: 42.5 MB (42495113 bytes)  
+	-	`sha256:bfbf256ede8a47420c7318d3c88041015cf753cbd47b985cf569ff7776321d2e`  
+		Last Modified: Wed, 24 Apr 2024 17:45:50 GMT  
+		Size: 42.6 MB (42639841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc00b9755d5e4e76beaf4e1163bc4e996e32943f3675ac85e8ceb6752565dcbc`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
+	-	`sha256:cebf0f2f4ad23080aa60c01fdf9cc30e2ef2251086746ede6c96f92d0bba4944`  
+		Last Modified: Wed, 24 Apr 2024 17:45:42 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:534f801ae63411e03e2d0e382d7872e035bc223e769ca4cc8569f6d2f01a887c`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
-		Size: 734.0 B  
+	-	`sha256:4beb26164e0535e8a6ddb7d6592ab1db0840f4e8cd5e5f6ddde5d63abe2ec65d`  
+		Last Modified: Wed, 24 Apr 2024 17:45:41 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c19eded7d4b8b0bf0468e6541024fbeb0c9f01fed90ab436a5cfb7546c73d22f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 1.7 KB (1731 bytes)  
+	-	`sha256:6d3bef45224becba7197bf884c77b9792dc8a20add77068ca9ed5f1af8a6f848`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e07e589a9c54b9f1ef1bd91b83e24188d813e72194c5939540535cfed1c7a52`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 13.2 MB (13208882 bytes)  
+	-	`sha256:29aca4a915214f6c41626417ee160a9d9211dc0a9dfe175204e80c9c35d00da9`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 13.2 MB (13208792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3ea969784cfb74f648882077018ff6a6cda2c69771bd60a1a833936a8b52e08`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 1.0 MB (1019055 bytes)  
+	-	`sha256:880be8611ff9bbf307e88ddf8ea4b44c117d21e860fc268306ff43efc42116e0`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 1.0 MB (1019071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:377babe32453cbc271b45b7c236d648443f71a6a93e63efcf0a4668a1754e338`  
-		Last Modified: Thu, 18 Apr 2024 19:11:27 GMT  
-		Size: 50.5 MB (50532243 bytes)  
+	-	`sha256:891f0ce16db5921fbe0e978bdd898ec8e783a09427a219884b253556316920a8`  
+		Last Modified: Thu, 25 Apr 2024 10:22:32 GMT  
+		Size: 50.5 MB (50532260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c76364c28af1f6eff9f116253d83273c99619fc20581036cb05beb559a062b7f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:27 GMT  
+	-	`sha256:7d7f3904c395c9aeb6040d9bc8b2e9c73a54e0884d04606cc69889e8b8cd4b56`  
+		Last Modified: Thu, 25 Apr 2024 10:22:31 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:4cc6acf1c527a20d357d7385ac8a6227e341ad7cd293933782b503d0c6c3de5b
+$ docker pull cassandra@sha256:c9621a4e15716b0ca960a954fc4c22a540c918a0c48957354436799ead53c8cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4190655 bytes)**  
+-	Total Size: **4.2 MB (4191475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bff9805d4846f4e0489cf24e90890147b84c295cb779e9d55c917d228ed4d97`
+-	Image ID: `sha256:3e25712947f741b3071e9f1d57f6d22ce6c148e216fb9bc44b43ebb4f4f56f87`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:21eb4aaa32b7e2a8912bd9da72f54263f3b4a9b7d9f167c0baebea403f820840`  
-		Last Modified: Thu, 18 Apr 2024 19:11:25 GMT  
+	-	`sha256:502b81b656b9e48905fb4571c5377a474fb509404c8e387df870e7ae496ea7cf`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
 		Size: 4.2 MB (4154808 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:650baad590d9a3da918ace502a776ed555922b2802929468cb2ab0136a61c5bd`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 35.8 KB (35847 bytes)  
+	-	`sha256:03b0508eac7c0f456f3eaaf07ab6449ad736ab65df2c899f5b96ebf22b6658b8`  
+		Last Modified: Thu, 25 Apr 2024 10:22:28 GMT  
+		Size: 36.7 KB (36667 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:4` - linux; s390x
 
 ```console
-$ docker pull cassandra@sha256:8e271fe01f0d4a276968e5a6c382bc73dabecd3da0a287c8a5a73a50af55c6aa
+$ docker pull cassandra@sha256:e20e38bed7b3a67b119ebe6f9510c7ec499dd98bbafc704389abe75b910b366c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **146.2 MB (146173563 bytes)**  
+-	Total Size: **146.2 MB (146207683 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a41aee73fde95401b527a16ed253bcfcc12ed898cd9d435da443e84a1c6a132`
+-	Image ID: `sha256:63dae9407c02b3351caa5f3cec527a4581eae57348a60a86e2bff2bda099eeb5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -6822,23 +6822,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:7691b95908cace61ceeec91c44a1a37e7dc2fc3ab5a5fd89f493cefdff9e840e in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -6883,67 +6883,67 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:462f41d0ade66ae0cbbac6954f7e6cb27ec29a3bedfdffeb9b235f5fd3925520`  
-		Last Modified: Tue, 16 Apr 2024 01:51:19 GMT  
-		Size: 40.8 MB (40766133 bytes)  
+	-	`sha256:94af0e093c53d72dd53fc9166542711511b970a638cd6ad5fb8c990afb2a45ac`  
+		Last Modified: Wed, 24 Apr 2024 19:49:52 GMT  
+		Size: 40.8 MB (40799964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffe4d7eb3f743d9e91fa6a779c0e996fbc86c104154c5070cde03b8840eceb7e`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
+	-	`sha256:2e846eab472a97e99cc7d3ce406cb76e887e14bd0b772908522799adbd03b45e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd7aa937dc5864318cd995372e5d54863e03d67bedbe274df435a2a678380965`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:d3c322b3970299d6713ecc912ca5f036000587af3dfded39cbc00252dc72894e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e08a56076694145ed026659ee593606290bd9d23112f53677ffb6c0dc69ac9c1`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 1.7 KB (1729 bytes)  
+	-	`sha256:012876f373ca60723d688b09907e63f29bf827b18bc9b64cb517ce2bba8178e5`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f31a7d156a747e1cbceca7a402b341c3ec81255fdf4f89e3b25fc220ce414272`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 12.2 MB (12184224 bytes)  
+	-	`sha256:366bed68077187fba65714e890c590696a6a2e6a082ad8ff787077413d7dd9b6`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 12.2 MB (12184312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b758be916ec389866416631e7f9c740f03c4fac5de2b7a36fd7c2668915873`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 1.1 MB (1064218 bytes)  
+	-	`sha256:4900936eaafc8158a5663e5f55b0651dcd8b1faf447c4c86a8452133ed30c06d`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 1.1 MB (1064271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bba711c31a804835b3109b4b31d1dd6266590d37e946794b3154a41f48df607b`  
-		Last Modified: Tue, 16 Apr 2024 17:25:21 GMT  
-		Size: 50.5 MB (50531603 bytes)  
+	-	`sha256:131886edddbec4bd36d61c241eddf6e35388951696549a07130da305d58af86a`  
+		Last Modified: Thu, 25 Apr 2024 10:13:19 GMT  
+		Size: 50.5 MB (50531753 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a4f32d3da5f899d0fbac88ced485125c9898fffba7af24471a55b16f70172b0`  
-		Last Modified: Tue, 16 Apr 2024 17:25:20 GMT  
-		Size: 1.2 KB (1219 bytes)  
+	-	`sha256:80267e025f9a56e3189d76333d553da16cc3338de3ec3cb7a78a6c4c2dcae276`  
+		Last Modified: Thu, 25 Apr 2024 10:13:19 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:aedb85bd4e858ee9be6717e9f8c20f59cfa2b37de8ec66118e437e61a281c412
+$ docker pull cassandra@sha256:00e7cdcdb2051b0556927eb330a6636a5e37f1234057ad69c4922d3356c7f932
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4188653 bytes)**  
+-	Total Size: **4.2 MB (4187748 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72ffe27010cff8186ed3aede77a02e395dd97073a4b1b68eb30b06cd3016fa63`
+-	Image ID: `sha256:e4a3bd07eb42cce6af1b407eea718540668ec1049d095db76c4e6a95212513a2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8d85ac40f7488912d462b7321da1b56b9246440065bf2c5efd151b90fd19f45a`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 4.2 MB (4152057 bytes)  
+	-	`sha256:bdc3d9bf3345602c5f6d310dc990edc922625668bf43a7ca534d042b18cb6fd0`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 4.2 MB (4151148 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fa916b50886964edb9182a10c6add5867b4f1e7e94958e74165fd38427639f94`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 36.6 KB (36596 bytes)  
+	-	`sha256:1d8a13d1f48fa0e094e3e9fe4989a4daafb3189211b4df375b2604690d45e0ac`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 36.6 KB (36600 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:4-jammy`
 
 ```console
-$ docker pull cassandra@sha256:b5f3722b1d738a5ed851adc14b27e6ef944bf480e7350d7719cadb5b23cd86a0
+$ docker pull cassandra@sha256:8d3943909a8ef8d40a3a09948d01ffe7f8862e64b18d2820c12f02219f2cc491
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7394,13 +7394,13 @@ $ docker pull cassandra@sha256:818e6bf890ce73fa419fb8e3eece0f6b7ade2ce7b9ad82538
 ### `cassandra:4-jammy` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:57c327ecf8f6451e533d414a677e515b0613955aa7f1664647d800e0e03eb993
+$ docker pull cassandra@sha256:9804dc1569f476a1401ba0d71a7a5143ce913e181a5d9056111879278db66c93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.6 MB (156613579 bytes)**  
+-	Total Size: **156.8 MB (156758254 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87e9f499e0e6a214a3c30d7ee785dfb0925d2d7d0e2ed10a549d9741e247b27c`
+-	Image ID: `sha256:d6066f284f3fc022dc7246d60c54123183d75b352c14e812678ee2ae2703047e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -7417,23 +7417,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -7478,73 +7478,73 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6849f23a4f1434c16f795f92fb3da9479ce10d1430d7c596b18d90ee4214c2b`  
-		Last Modified: Tue, 16 Apr 2024 02:51:44 GMT  
-		Size: 42.5 MB (42495113 bytes)  
+	-	`sha256:bfbf256ede8a47420c7318d3c88041015cf753cbd47b985cf569ff7776321d2e`  
+		Last Modified: Wed, 24 Apr 2024 17:45:50 GMT  
+		Size: 42.6 MB (42639841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc00b9755d5e4e76beaf4e1163bc4e996e32943f3675ac85e8ceb6752565dcbc`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
+	-	`sha256:cebf0f2f4ad23080aa60c01fdf9cc30e2ef2251086746ede6c96f92d0bba4944`  
+		Last Modified: Wed, 24 Apr 2024 17:45:42 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:534f801ae63411e03e2d0e382d7872e035bc223e769ca4cc8569f6d2f01a887c`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
-		Size: 734.0 B  
+	-	`sha256:4beb26164e0535e8a6ddb7d6592ab1db0840f4e8cd5e5f6ddde5d63abe2ec65d`  
+		Last Modified: Wed, 24 Apr 2024 17:45:41 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c19eded7d4b8b0bf0468e6541024fbeb0c9f01fed90ab436a5cfb7546c73d22f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 1.7 KB (1731 bytes)  
+	-	`sha256:6d3bef45224becba7197bf884c77b9792dc8a20add77068ca9ed5f1af8a6f848`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e07e589a9c54b9f1ef1bd91b83e24188d813e72194c5939540535cfed1c7a52`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 13.2 MB (13208882 bytes)  
+	-	`sha256:29aca4a915214f6c41626417ee160a9d9211dc0a9dfe175204e80c9c35d00da9`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 13.2 MB (13208792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3ea969784cfb74f648882077018ff6a6cda2c69771bd60a1a833936a8b52e08`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 1.0 MB (1019055 bytes)  
+	-	`sha256:880be8611ff9bbf307e88ddf8ea4b44c117d21e860fc268306ff43efc42116e0`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 1.0 MB (1019071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:377babe32453cbc271b45b7c236d648443f71a6a93e63efcf0a4668a1754e338`  
-		Last Modified: Thu, 18 Apr 2024 19:11:27 GMT  
-		Size: 50.5 MB (50532243 bytes)  
+	-	`sha256:891f0ce16db5921fbe0e978bdd898ec8e783a09427a219884b253556316920a8`  
+		Last Modified: Thu, 25 Apr 2024 10:22:32 GMT  
+		Size: 50.5 MB (50532260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c76364c28af1f6eff9f116253d83273c99619fc20581036cb05beb559a062b7f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:27 GMT  
+	-	`sha256:7d7f3904c395c9aeb6040d9bc8b2e9c73a54e0884d04606cc69889e8b8cd4b56`  
+		Last Modified: Thu, 25 Apr 2024 10:22:31 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:4cc6acf1c527a20d357d7385ac8a6227e341ad7cd293933782b503d0c6c3de5b
+$ docker pull cassandra@sha256:c9621a4e15716b0ca960a954fc4c22a540c918a0c48957354436799ead53c8cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4190655 bytes)**  
+-	Total Size: **4.2 MB (4191475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bff9805d4846f4e0489cf24e90890147b84c295cb779e9d55c917d228ed4d97`
+-	Image ID: `sha256:3e25712947f741b3071e9f1d57f6d22ce6c148e216fb9bc44b43ebb4f4f56f87`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:21eb4aaa32b7e2a8912bd9da72f54263f3b4a9b7d9f167c0baebea403f820840`  
-		Last Modified: Thu, 18 Apr 2024 19:11:25 GMT  
+	-	`sha256:502b81b656b9e48905fb4571c5377a474fb509404c8e387df870e7ae496ea7cf`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
 		Size: 4.2 MB (4154808 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:650baad590d9a3da918ace502a776ed555922b2802929468cb2ab0136a61c5bd`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 35.8 KB (35847 bytes)  
+	-	`sha256:03b0508eac7c0f456f3eaaf07ab6449ad736ab65df2c899f5b96ebf22b6658b8`  
+		Last Modified: Thu, 25 Apr 2024 10:22:28 GMT  
+		Size: 36.7 KB (36667 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:4-jammy` - linux; s390x
 
 ```console
-$ docker pull cassandra@sha256:8e271fe01f0d4a276968e5a6c382bc73dabecd3da0a287c8a5a73a50af55c6aa
+$ docker pull cassandra@sha256:e20e38bed7b3a67b119ebe6f9510c7ec499dd98bbafc704389abe75b910b366c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **146.2 MB (146173563 bytes)**  
+-	Total Size: **146.2 MB (146207683 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a41aee73fde95401b527a16ed253bcfcc12ed898cd9d435da443e84a1c6a132`
+-	Image ID: `sha256:63dae9407c02b3351caa5f3cec527a4581eae57348a60a86e2bff2bda099eeb5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -7561,23 +7561,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:7691b95908cace61ceeec91c44a1a37e7dc2fc3ab5a5fd89f493cefdff9e840e in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -7622,67 +7622,67 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:462f41d0ade66ae0cbbac6954f7e6cb27ec29a3bedfdffeb9b235f5fd3925520`  
-		Last Modified: Tue, 16 Apr 2024 01:51:19 GMT  
-		Size: 40.8 MB (40766133 bytes)  
+	-	`sha256:94af0e093c53d72dd53fc9166542711511b970a638cd6ad5fb8c990afb2a45ac`  
+		Last Modified: Wed, 24 Apr 2024 19:49:52 GMT  
+		Size: 40.8 MB (40799964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffe4d7eb3f743d9e91fa6a779c0e996fbc86c104154c5070cde03b8840eceb7e`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
+	-	`sha256:2e846eab472a97e99cc7d3ce406cb76e887e14bd0b772908522799adbd03b45e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd7aa937dc5864318cd995372e5d54863e03d67bedbe274df435a2a678380965`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:d3c322b3970299d6713ecc912ca5f036000587af3dfded39cbc00252dc72894e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e08a56076694145ed026659ee593606290bd9d23112f53677ffb6c0dc69ac9c1`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 1.7 KB (1729 bytes)  
+	-	`sha256:012876f373ca60723d688b09907e63f29bf827b18bc9b64cb517ce2bba8178e5`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f31a7d156a747e1cbceca7a402b341c3ec81255fdf4f89e3b25fc220ce414272`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 12.2 MB (12184224 bytes)  
+	-	`sha256:366bed68077187fba65714e890c590696a6a2e6a082ad8ff787077413d7dd9b6`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 12.2 MB (12184312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b758be916ec389866416631e7f9c740f03c4fac5de2b7a36fd7c2668915873`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 1.1 MB (1064218 bytes)  
+	-	`sha256:4900936eaafc8158a5663e5f55b0651dcd8b1faf447c4c86a8452133ed30c06d`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 1.1 MB (1064271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bba711c31a804835b3109b4b31d1dd6266590d37e946794b3154a41f48df607b`  
-		Last Modified: Tue, 16 Apr 2024 17:25:21 GMT  
-		Size: 50.5 MB (50531603 bytes)  
+	-	`sha256:131886edddbec4bd36d61c241eddf6e35388951696549a07130da305d58af86a`  
+		Last Modified: Thu, 25 Apr 2024 10:13:19 GMT  
+		Size: 50.5 MB (50531753 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a4f32d3da5f899d0fbac88ced485125c9898fffba7af24471a55b16f70172b0`  
-		Last Modified: Tue, 16 Apr 2024 17:25:20 GMT  
-		Size: 1.2 KB (1219 bytes)  
+	-	`sha256:80267e025f9a56e3189d76333d553da16cc3338de3ec3cb7a78a6c4c2dcae276`  
+		Last Modified: Thu, 25 Apr 2024 10:13:19 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:aedb85bd4e858ee9be6717e9f8c20f59cfa2b37de8ec66118e437e61a281c412
+$ docker pull cassandra@sha256:00e7cdcdb2051b0556927eb330a6636a5e37f1234057ad69c4922d3356c7f932
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4188653 bytes)**  
+-	Total Size: **4.2 MB (4187748 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72ffe27010cff8186ed3aede77a02e395dd97073a4b1b68eb30b06cd3016fa63`
+-	Image ID: `sha256:e4a3bd07eb42cce6af1b407eea718540668ec1049d095db76c4e6a95212513a2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8d85ac40f7488912d462b7321da1b56b9246440065bf2c5efd151b90fd19f45a`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 4.2 MB (4152057 bytes)  
+	-	`sha256:bdc3d9bf3345602c5f6d310dc990edc922625668bf43a7ca534d042b18cb6fd0`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 4.2 MB (4151148 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fa916b50886964edb9182a10c6add5867b4f1e7e94958e74165fd38427639f94`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 36.6 KB (36596 bytes)  
+	-	`sha256:1d8a13d1f48fa0e094e3e9fe4989a4daafb3189211b4df375b2604690d45e0ac`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 36.6 KB (36600 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:4.0`
 
 ```console
-$ docker pull cassandra@sha256:18646013a9b0d2646c779c4eb74fa04ad6c4b30c92946f8b366031295ba3bad7
+$ docker pull cassandra@sha256:4249bc1ed1440200e06371ca4397850cd2162f39df451306593e5adef49002cf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8133,13 +8133,13 @@ $ docker pull cassandra@sha256:a1be08dc8225d1a06b29a25e73908ad59c6796177fe15a892
 ### `cassandra:4.0` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:c5d46a61022249e379d8fcca8186794a82f3a1821117ee0d83a4c049ac613b98
+$ docker pull cassandra@sha256:82a606781140e4f03ec717cc9be3152caf6e3d99b6e2d7d7dfc24c0e61d4384b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **154.6 MB (154560963 bytes)**  
+-	Total Size: **154.7 MB (154705618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af27faa50c4769df32b80ea720253b237f8ae9d7c279978b5bc7d3d5f8f690bf`
+-	Image ID: `sha256:c185326328a415a5dda06d5229c57f708b22b1f4ddc20b19a8eb01c742ab6a96`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -8156,23 +8156,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -8217,73 +8217,73 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6849f23a4f1434c16f795f92fb3da9479ce10d1430d7c596b18d90ee4214c2b`  
-		Last Modified: Tue, 16 Apr 2024 02:51:44 GMT  
-		Size: 42.5 MB (42495113 bytes)  
+	-	`sha256:bfbf256ede8a47420c7318d3c88041015cf753cbd47b985cf569ff7776321d2e`  
+		Last Modified: Wed, 24 Apr 2024 17:45:50 GMT  
+		Size: 42.6 MB (42639841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc00b9755d5e4e76beaf4e1163bc4e996e32943f3675ac85e8ceb6752565dcbc`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
+	-	`sha256:cebf0f2f4ad23080aa60c01fdf9cc30e2ef2251086746ede6c96f92d0bba4944`  
+		Last Modified: Wed, 24 Apr 2024 17:45:42 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:534f801ae63411e03e2d0e382d7872e035bc223e769ca4cc8569f6d2f01a887c`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
-		Size: 734.0 B  
+	-	`sha256:4beb26164e0535e8a6ddb7d6592ab1db0840f4e8cd5e5f6ddde5d63abe2ec65d`  
+		Last Modified: Wed, 24 Apr 2024 17:45:41 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c19eded7d4b8b0bf0468e6541024fbeb0c9f01fed90ab436a5cfb7546c73d22f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 1.7 KB (1731 bytes)  
+	-	`sha256:6d3bef45224becba7197bf884c77b9792dc8a20add77068ca9ed5f1af8a6f848`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e07e589a9c54b9f1ef1bd91b83e24188d813e72194c5939540535cfed1c7a52`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 13.2 MB (13208882 bytes)  
+	-	`sha256:29aca4a915214f6c41626417ee160a9d9211dc0a9dfe175204e80c9c35d00da9`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 13.2 MB (13208792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3ea969784cfb74f648882077018ff6a6cda2c69771bd60a1a833936a8b52e08`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 1.0 MB (1019055 bytes)  
+	-	`sha256:880be8611ff9bbf307e88ddf8ea4b44c117d21e860fc268306ff43efc42116e0`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 1.0 MB (1019071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:789336840f64fb641618dea4a6869064da1dba38da36e7990395c42c19a9b08d`  
-		Last Modified: Thu, 18 Apr 2024 19:12:02 GMT  
-		Size: 48.5 MB (48479628 bytes)  
+	-	`sha256:7133ec20b8f982599fe34e2750bf07b21c7dbfd545b64f0074eadbe59c0ebf50`  
+		Last Modified: Thu, 25 Apr 2024 10:23:36 GMT  
+		Size: 48.5 MB (48479624 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9940d0c69c0a48cf4d0005cc23ad171f530a247ba3c95efdca778040668a4b35`  
-		Last Modified: Thu, 18 Apr 2024 19:11:59 GMT  
-		Size: 1.2 KB (1218 bytes)  
+	-	`sha256:9edde95ed19df25a55d069c027fdcd51dfdb1aae76c5003089ab38095626dd1b`  
+		Last Modified: Thu, 25 Apr 2024 10:23:36 GMT  
+		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.0` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:7eef2ab33015432a6f85b97b1b9d6cc59ee35c9d021017fa3c88636819f07c83
+$ docker pull cassandra@sha256:67ba32f45d1212127d708a9fba54b90d94ce7568d6184140758a8637205f5c7d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.2 MB (4184789 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c672a2ae2b0ddfba4c6871394c996252b002c45458e3f627cf7b6d8d977a976b`
+-	Image ID: `sha256:f1505c90d0ce77c20344c86073c529f653ac0bdbf340c807235d851da81e68d4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f0a3732f00493059a3a5c9417d9857b4f90f3733df39a5b546b9758ad52818bf`  
-		Last Modified: Thu, 18 Apr 2024 19:12:00 GMT  
+	-	`sha256:cda44018d8f7855aea6f5a7ee06dc2f553cdc0f318368d3b7b7e2083b4906efc`  
+		Last Modified: Thu, 25 Apr 2024 10:23:34 GMT  
 		Size: 4.2 MB (4150163 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cec227360833609aeeed64c6f4baac1a84798e7996a2d32960423af9afebc57f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:59 GMT  
+	-	`sha256:7b86916d29ec4f4d5e609d8fc4ce8d5a7af2646d4b08609d518b3e97e40ced46`  
+		Last Modified: Thu, 25 Apr 2024 10:23:33 GMT  
 		Size: 34.6 KB (34626 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:4.0` - linux; s390x
 
 ```console
-$ docker pull cassandra@sha256:7af1d2f666c4b8035a7e9d6e3dab44ef8604c1c60c7265974f7eee38650a014d
+$ docker pull cassandra@sha256:4902b7f6b347412d291c33b1eac1e79b98d20e560dc424edd5c801bf69d1eca2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.1 MB (144120995 bytes)**  
+-	Total Size: **144.2 MB (144155063 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d89dad044fbd2d82cee74cc7b590d90dd2da5bf65eaadc6f01a74c644dec076`
+-	Image ID: `sha256:ea92b12f9e1e765d666c70eed1f99d5aec616b807a810ee3a28ce09c1a7ec120`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -8300,23 +8300,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:7691b95908cace61ceeec91c44a1a37e7dc2fc3ab5a5fd89f493cefdff9e840e in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -8361,67 +8361,67 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:462f41d0ade66ae0cbbac6954f7e6cb27ec29a3bedfdffeb9b235f5fd3925520`  
-		Last Modified: Tue, 16 Apr 2024 01:51:19 GMT  
-		Size: 40.8 MB (40766133 bytes)  
+	-	`sha256:94af0e093c53d72dd53fc9166542711511b970a638cd6ad5fb8c990afb2a45ac`  
+		Last Modified: Wed, 24 Apr 2024 19:49:52 GMT  
+		Size: 40.8 MB (40799964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffe4d7eb3f743d9e91fa6a779c0e996fbc86c104154c5070cde03b8840eceb7e`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
+	-	`sha256:2e846eab472a97e99cc7d3ce406cb76e887e14bd0b772908522799adbd03b45e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd7aa937dc5864318cd995372e5d54863e03d67bedbe274df435a2a678380965`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:d3c322b3970299d6713ecc912ca5f036000587af3dfded39cbc00252dc72894e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e08a56076694145ed026659ee593606290bd9d23112f53677ffb6c0dc69ac9c1`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 1.7 KB (1729 bytes)  
+	-	`sha256:012876f373ca60723d688b09907e63f29bf827b18bc9b64cb517ce2bba8178e5`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f31a7d156a747e1cbceca7a402b341c3ec81255fdf4f89e3b25fc220ce414272`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 12.2 MB (12184224 bytes)  
+	-	`sha256:366bed68077187fba65714e890c590696a6a2e6a082ad8ff787077413d7dd9b6`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 12.2 MB (12184312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b758be916ec389866416631e7f9c740f03c4fac5de2b7a36fd7c2668915873`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 1.1 MB (1064218 bytes)  
+	-	`sha256:4900936eaafc8158a5663e5f55b0651dcd8b1faf447c4c86a8452133ed30c06d`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 1.1 MB (1064271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a5c311d26f729cf1d7f2508e4d11f677d23d1296bd4f93d6eb5daa91ec2255d`  
-		Last Modified: Tue, 16 Apr 2024 17:26:33 GMT  
-		Size: 48.5 MB (48479037 bytes)  
+	-	`sha256:a24c3bb02f5967e23f9dd2192f09dd7c8d28b484d4c2b453568155f11ae82e58`  
+		Last Modified: Thu, 25 Apr 2024 10:14:12 GMT  
+		Size: 48.5 MB (48479133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9286636386bf82295b37e495c017682fc38057e06f6c28052184c64a6cf806e`  
-		Last Modified: Tue, 16 Apr 2024 17:26:31 GMT  
-		Size: 1.2 KB (1217 bytes)  
+	-	`sha256:a4bc1e4c5a81e45106ded316549f9fb3445f1e3455427c11ce97a90d95eabd41`  
+		Last Modified: Thu, 25 Apr 2024 10:14:10 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.0` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:3caf9f8785fbccaee02cbfb76a53be87e769b070ceed49c8ab3f0dafea59e5a4
+$ docker pull cassandra@sha256:20f49a9132838a081aa259ebc640b414391dc510eb6ed5eb6e927058ed9e2145
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4182014 bytes)**  
+-	Total Size: **4.2 MB (4181109 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1bb5f68e0f512e05bc2f278ce85eaa97369752f52ffc08fd77633c56a940943d`
+-	Image ID: `sha256:453810523fa147bcb0a565965550007a59413f275a74742f0295e3e20e3e1ddb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:017ebef74fed4a84f38780f379f58588bcae2fc6dea6e1d57f9997511d3b0ff8`  
-		Last Modified: Tue, 16 Apr 2024 17:26:31 GMT  
-		Size: 4.1 MB (4147436 bytes)  
+	-	`sha256:d66c7b188adabb42aee0a1f3aa3948047074b68a92028eb21c9ebc9f63acc45c`  
+		Last Modified: Thu, 25 Apr 2024 10:14:10 GMT  
+		Size: 4.1 MB (4146527 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6938212681b6a9082bacd07710b165960c6f563dd9bc24c55a8d90da55de75ef`  
-		Last Modified: Tue, 16 Apr 2024 17:26:31 GMT  
-		Size: 34.6 KB (34578 bytes)  
+	-	`sha256:19ca43309caf1f43a96ebf805125ced97e6fb4554e37bcce3f63484f0aa5bf98`  
+		Last Modified: Thu, 25 Apr 2024 10:14:09 GMT  
+		Size: 34.6 KB (34582 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:4.0-jammy`
 
 ```console
-$ docker pull cassandra@sha256:18646013a9b0d2646c779c4eb74fa04ad6c4b30c92946f8b366031295ba3bad7
+$ docker pull cassandra@sha256:4249bc1ed1440200e06371ca4397850cd2162f39df451306593e5adef49002cf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8872,13 +8872,13 @@ $ docker pull cassandra@sha256:a1be08dc8225d1a06b29a25e73908ad59c6796177fe15a892
 ### `cassandra:4.0-jammy` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:c5d46a61022249e379d8fcca8186794a82f3a1821117ee0d83a4c049ac613b98
+$ docker pull cassandra@sha256:82a606781140e4f03ec717cc9be3152caf6e3d99b6e2d7d7dfc24c0e61d4384b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **154.6 MB (154560963 bytes)**  
+-	Total Size: **154.7 MB (154705618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af27faa50c4769df32b80ea720253b237f8ae9d7c279978b5bc7d3d5f8f690bf`
+-	Image ID: `sha256:c185326328a415a5dda06d5229c57f708b22b1f4ddc20b19a8eb01c742ab6a96`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -8895,23 +8895,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -8956,73 +8956,73 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6849f23a4f1434c16f795f92fb3da9479ce10d1430d7c596b18d90ee4214c2b`  
-		Last Modified: Tue, 16 Apr 2024 02:51:44 GMT  
-		Size: 42.5 MB (42495113 bytes)  
+	-	`sha256:bfbf256ede8a47420c7318d3c88041015cf753cbd47b985cf569ff7776321d2e`  
+		Last Modified: Wed, 24 Apr 2024 17:45:50 GMT  
+		Size: 42.6 MB (42639841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc00b9755d5e4e76beaf4e1163bc4e996e32943f3675ac85e8ceb6752565dcbc`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
+	-	`sha256:cebf0f2f4ad23080aa60c01fdf9cc30e2ef2251086746ede6c96f92d0bba4944`  
+		Last Modified: Wed, 24 Apr 2024 17:45:42 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:534f801ae63411e03e2d0e382d7872e035bc223e769ca4cc8569f6d2f01a887c`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
-		Size: 734.0 B  
+	-	`sha256:4beb26164e0535e8a6ddb7d6592ab1db0840f4e8cd5e5f6ddde5d63abe2ec65d`  
+		Last Modified: Wed, 24 Apr 2024 17:45:41 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c19eded7d4b8b0bf0468e6541024fbeb0c9f01fed90ab436a5cfb7546c73d22f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 1.7 KB (1731 bytes)  
+	-	`sha256:6d3bef45224becba7197bf884c77b9792dc8a20add77068ca9ed5f1af8a6f848`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e07e589a9c54b9f1ef1bd91b83e24188d813e72194c5939540535cfed1c7a52`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 13.2 MB (13208882 bytes)  
+	-	`sha256:29aca4a915214f6c41626417ee160a9d9211dc0a9dfe175204e80c9c35d00da9`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 13.2 MB (13208792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3ea969784cfb74f648882077018ff6a6cda2c69771bd60a1a833936a8b52e08`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 1.0 MB (1019055 bytes)  
+	-	`sha256:880be8611ff9bbf307e88ddf8ea4b44c117d21e860fc268306ff43efc42116e0`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 1.0 MB (1019071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:789336840f64fb641618dea4a6869064da1dba38da36e7990395c42c19a9b08d`  
-		Last Modified: Thu, 18 Apr 2024 19:12:02 GMT  
-		Size: 48.5 MB (48479628 bytes)  
+	-	`sha256:7133ec20b8f982599fe34e2750bf07b21c7dbfd545b64f0074eadbe59c0ebf50`  
+		Last Modified: Thu, 25 Apr 2024 10:23:36 GMT  
+		Size: 48.5 MB (48479624 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9940d0c69c0a48cf4d0005cc23ad171f530a247ba3c95efdca778040668a4b35`  
-		Last Modified: Thu, 18 Apr 2024 19:11:59 GMT  
-		Size: 1.2 KB (1218 bytes)  
+	-	`sha256:9edde95ed19df25a55d069c027fdcd51dfdb1aae76c5003089ab38095626dd1b`  
+		Last Modified: Thu, 25 Apr 2024 10:23:36 GMT  
+		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.0-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:7eef2ab33015432a6f85b97b1b9d6cc59ee35c9d021017fa3c88636819f07c83
+$ docker pull cassandra@sha256:67ba32f45d1212127d708a9fba54b90d94ce7568d6184140758a8637205f5c7d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.2 MB (4184789 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c672a2ae2b0ddfba4c6871394c996252b002c45458e3f627cf7b6d8d977a976b`
+-	Image ID: `sha256:f1505c90d0ce77c20344c86073c529f653ac0bdbf340c807235d851da81e68d4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f0a3732f00493059a3a5c9417d9857b4f90f3733df39a5b546b9758ad52818bf`  
-		Last Modified: Thu, 18 Apr 2024 19:12:00 GMT  
+	-	`sha256:cda44018d8f7855aea6f5a7ee06dc2f553cdc0f318368d3b7b7e2083b4906efc`  
+		Last Modified: Thu, 25 Apr 2024 10:23:34 GMT  
 		Size: 4.2 MB (4150163 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cec227360833609aeeed64c6f4baac1a84798e7996a2d32960423af9afebc57f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:59 GMT  
+	-	`sha256:7b86916d29ec4f4d5e609d8fc4ce8d5a7af2646d4b08609d518b3e97e40ced46`  
+		Last Modified: Thu, 25 Apr 2024 10:23:33 GMT  
 		Size: 34.6 KB (34626 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:4.0-jammy` - linux; s390x
 
 ```console
-$ docker pull cassandra@sha256:7af1d2f666c4b8035a7e9d6e3dab44ef8604c1c60c7265974f7eee38650a014d
+$ docker pull cassandra@sha256:4902b7f6b347412d291c33b1eac1e79b98d20e560dc424edd5c801bf69d1eca2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.1 MB (144120995 bytes)**  
+-	Total Size: **144.2 MB (144155063 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d89dad044fbd2d82cee74cc7b590d90dd2da5bf65eaadc6f01a74c644dec076`
+-	Image ID: `sha256:ea92b12f9e1e765d666c70eed1f99d5aec616b807a810ee3a28ce09c1a7ec120`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -9039,23 +9039,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:7691b95908cace61ceeec91c44a1a37e7dc2fc3ab5a5fd89f493cefdff9e840e in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -9100,67 +9100,67 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:462f41d0ade66ae0cbbac6954f7e6cb27ec29a3bedfdffeb9b235f5fd3925520`  
-		Last Modified: Tue, 16 Apr 2024 01:51:19 GMT  
-		Size: 40.8 MB (40766133 bytes)  
+	-	`sha256:94af0e093c53d72dd53fc9166542711511b970a638cd6ad5fb8c990afb2a45ac`  
+		Last Modified: Wed, 24 Apr 2024 19:49:52 GMT  
+		Size: 40.8 MB (40799964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffe4d7eb3f743d9e91fa6a779c0e996fbc86c104154c5070cde03b8840eceb7e`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
+	-	`sha256:2e846eab472a97e99cc7d3ce406cb76e887e14bd0b772908522799adbd03b45e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd7aa937dc5864318cd995372e5d54863e03d67bedbe274df435a2a678380965`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:d3c322b3970299d6713ecc912ca5f036000587af3dfded39cbc00252dc72894e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e08a56076694145ed026659ee593606290bd9d23112f53677ffb6c0dc69ac9c1`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 1.7 KB (1729 bytes)  
+	-	`sha256:012876f373ca60723d688b09907e63f29bf827b18bc9b64cb517ce2bba8178e5`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f31a7d156a747e1cbceca7a402b341c3ec81255fdf4f89e3b25fc220ce414272`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 12.2 MB (12184224 bytes)  
+	-	`sha256:366bed68077187fba65714e890c590696a6a2e6a082ad8ff787077413d7dd9b6`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 12.2 MB (12184312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b758be916ec389866416631e7f9c740f03c4fac5de2b7a36fd7c2668915873`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 1.1 MB (1064218 bytes)  
+	-	`sha256:4900936eaafc8158a5663e5f55b0651dcd8b1faf447c4c86a8452133ed30c06d`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 1.1 MB (1064271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a5c311d26f729cf1d7f2508e4d11f677d23d1296bd4f93d6eb5daa91ec2255d`  
-		Last Modified: Tue, 16 Apr 2024 17:26:33 GMT  
-		Size: 48.5 MB (48479037 bytes)  
+	-	`sha256:a24c3bb02f5967e23f9dd2192f09dd7c8d28b484d4c2b453568155f11ae82e58`  
+		Last Modified: Thu, 25 Apr 2024 10:14:12 GMT  
+		Size: 48.5 MB (48479133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9286636386bf82295b37e495c017682fc38057e06f6c28052184c64a6cf806e`  
-		Last Modified: Tue, 16 Apr 2024 17:26:31 GMT  
-		Size: 1.2 KB (1217 bytes)  
+	-	`sha256:a4bc1e4c5a81e45106ded316549f9fb3445f1e3455427c11ce97a90d95eabd41`  
+		Last Modified: Thu, 25 Apr 2024 10:14:10 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.0-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:3caf9f8785fbccaee02cbfb76a53be87e769b070ceed49c8ab3f0dafea59e5a4
+$ docker pull cassandra@sha256:20f49a9132838a081aa259ebc640b414391dc510eb6ed5eb6e927058ed9e2145
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4182014 bytes)**  
+-	Total Size: **4.2 MB (4181109 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1bb5f68e0f512e05bc2f278ce85eaa97369752f52ffc08fd77633c56a940943d`
+-	Image ID: `sha256:453810523fa147bcb0a565965550007a59413f275a74742f0295e3e20e3e1ddb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:017ebef74fed4a84f38780f379f58588bcae2fc6dea6e1d57f9997511d3b0ff8`  
-		Last Modified: Tue, 16 Apr 2024 17:26:31 GMT  
-		Size: 4.1 MB (4147436 bytes)  
+	-	`sha256:d66c7b188adabb42aee0a1f3aa3948047074b68a92028eb21c9ebc9f63acc45c`  
+		Last Modified: Thu, 25 Apr 2024 10:14:10 GMT  
+		Size: 4.1 MB (4146527 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6938212681b6a9082bacd07710b165960c6f563dd9bc24c55a8d90da55de75ef`  
-		Last Modified: Tue, 16 Apr 2024 17:26:31 GMT  
-		Size: 34.6 KB (34578 bytes)  
+	-	`sha256:19ca43309caf1f43a96ebf805125ced97e6fb4554e37bcce3f63484f0aa5bf98`  
+		Last Modified: Thu, 25 Apr 2024 10:14:09 GMT  
+		Size: 34.6 KB (34582 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:4.0.12`
 
 ```console
-$ docker pull cassandra@sha256:18646013a9b0d2646c779c4eb74fa04ad6c4b30c92946f8b366031295ba3bad7
+$ docker pull cassandra@sha256:4249bc1ed1440200e06371ca4397850cd2162f39df451306593e5adef49002cf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9611,13 +9611,13 @@ $ docker pull cassandra@sha256:a1be08dc8225d1a06b29a25e73908ad59c6796177fe15a892
 ### `cassandra:4.0.12` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:c5d46a61022249e379d8fcca8186794a82f3a1821117ee0d83a4c049ac613b98
+$ docker pull cassandra@sha256:82a606781140e4f03ec717cc9be3152caf6e3d99b6e2d7d7dfc24c0e61d4384b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **154.6 MB (154560963 bytes)**  
+-	Total Size: **154.7 MB (154705618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af27faa50c4769df32b80ea720253b237f8ae9d7c279978b5bc7d3d5f8f690bf`
+-	Image ID: `sha256:c185326328a415a5dda06d5229c57f708b22b1f4ddc20b19a8eb01c742ab6a96`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -9634,23 +9634,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -9695,73 +9695,73 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6849f23a4f1434c16f795f92fb3da9479ce10d1430d7c596b18d90ee4214c2b`  
-		Last Modified: Tue, 16 Apr 2024 02:51:44 GMT  
-		Size: 42.5 MB (42495113 bytes)  
+	-	`sha256:bfbf256ede8a47420c7318d3c88041015cf753cbd47b985cf569ff7776321d2e`  
+		Last Modified: Wed, 24 Apr 2024 17:45:50 GMT  
+		Size: 42.6 MB (42639841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc00b9755d5e4e76beaf4e1163bc4e996e32943f3675ac85e8ceb6752565dcbc`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
+	-	`sha256:cebf0f2f4ad23080aa60c01fdf9cc30e2ef2251086746ede6c96f92d0bba4944`  
+		Last Modified: Wed, 24 Apr 2024 17:45:42 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:534f801ae63411e03e2d0e382d7872e035bc223e769ca4cc8569f6d2f01a887c`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
-		Size: 734.0 B  
+	-	`sha256:4beb26164e0535e8a6ddb7d6592ab1db0840f4e8cd5e5f6ddde5d63abe2ec65d`  
+		Last Modified: Wed, 24 Apr 2024 17:45:41 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c19eded7d4b8b0bf0468e6541024fbeb0c9f01fed90ab436a5cfb7546c73d22f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 1.7 KB (1731 bytes)  
+	-	`sha256:6d3bef45224becba7197bf884c77b9792dc8a20add77068ca9ed5f1af8a6f848`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e07e589a9c54b9f1ef1bd91b83e24188d813e72194c5939540535cfed1c7a52`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 13.2 MB (13208882 bytes)  
+	-	`sha256:29aca4a915214f6c41626417ee160a9d9211dc0a9dfe175204e80c9c35d00da9`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 13.2 MB (13208792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3ea969784cfb74f648882077018ff6a6cda2c69771bd60a1a833936a8b52e08`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 1.0 MB (1019055 bytes)  
+	-	`sha256:880be8611ff9bbf307e88ddf8ea4b44c117d21e860fc268306ff43efc42116e0`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 1.0 MB (1019071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:789336840f64fb641618dea4a6869064da1dba38da36e7990395c42c19a9b08d`  
-		Last Modified: Thu, 18 Apr 2024 19:12:02 GMT  
-		Size: 48.5 MB (48479628 bytes)  
+	-	`sha256:7133ec20b8f982599fe34e2750bf07b21c7dbfd545b64f0074eadbe59c0ebf50`  
+		Last Modified: Thu, 25 Apr 2024 10:23:36 GMT  
+		Size: 48.5 MB (48479624 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9940d0c69c0a48cf4d0005cc23ad171f530a247ba3c95efdca778040668a4b35`  
-		Last Modified: Thu, 18 Apr 2024 19:11:59 GMT  
-		Size: 1.2 KB (1218 bytes)  
+	-	`sha256:9edde95ed19df25a55d069c027fdcd51dfdb1aae76c5003089ab38095626dd1b`  
+		Last Modified: Thu, 25 Apr 2024 10:23:36 GMT  
+		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.0.12` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:7eef2ab33015432a6f85b97b1b9d6cc59ee35c9d021017fa3c88636819f07c83
+$ docker pull cassandra@sha256:67ba32f45d1212127d708a9fba54b90d94ce7568d6184140758a8637205f5c7d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.2 MB (4184789 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c672a2ae2b0ddfba4c6871394c996252b002c45458e3f627cf7b6d8d977a976b`
+-	Image ID: `sha256:f1505c90d0ce77c20344c86073c529f653ac0bdbf340c807235d851da81e68d4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f0a3732f00493059a3a5c9417d9857b4f90f3733df39a5b546b9758ad52818bf`  
-		Last Modified: Thu, 18 Apr 2024 19:12:00 GMT  
+	-	`sha256:cda44018d8f7855aea6f5a7ee06dc2f553cdc0f318368d3b7b7e2083b4906efc`  
+		Last Modified: Thu, 25 Apr 2024 10:23:34 GMT  
 		Size: 4.2 MB (4150163 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cec227360833609aeeed64c6f4baac1a84798e7996a2d32960423af9afebc57f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:59 GMT  
+	-	`sha256:7b86916d29ec4f4d5e609d8fc4ce8d5a7af2646d4b08609d518b3e97e40ced46`  
+		Last Modified: Thu, 25 Apr 2024 10:23:33 GMT  
 		Size: 34.6 KB (34626 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:4.0.12` - linux; s390x
 
 ```console
-$ docker pull cassandra@sha256:7af1d2f666c4b8035a7e9d6e3dab44ef8604c1c60c7265974f7eee38650a014d
+$ docker pull cassandra@sha256:4902b7f6b347412d291c33b1eac1e79b98d20e560dc424edd5c801bf69d1eca2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.1 MB (144120995 bytes)**  
+-	Total Size: **144.2 MB (144155063 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d89dad044fbd2d82cee74cc7b590d90dd2da5bf65eaadc6f01a74c644dec076`
+-	Image ID: `sha256:ea92b12f9e1e765d666c70eed1f99d5aec616b807a810ee3a28ce09c1a7ec120`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -9778,23 +9778,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:7691b95908cace61ceeec91c44a1a37e7dc2fc3ab5a5fd89f493cefdff9e840e in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -9839,67 +9839,67 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:462f41d0ade66ae0cbbac6954f7e6cb27ec29a3bedfdffeb9b235f5fd3925520`  
-		Last Modified: Tue, 16 Apr 2024 01:51:19 GMT  
-		Size: 40.8 MB (40766133 bytes)  
+	-	`sha256:94af0e093c53d72dd53fc9166542711511b970a638cd6ad5fb8c990afb2a45ac`  
+		Last Modified: Wed, 24 Apr 2024 19:49:52 GMT  
+		Size: 40.8 MB (40799964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffe4d7eb3f743d9e91fa6a779c0e996fbc86c104154c5070cde03b8840eceb7e`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
+	-	`sha256:2e846eab472a97e99cc7d3ce406cb76e887e14bd0b772908522799adbd03b45e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd7aa937dc5864318cd995372e5d54863e03d67bedbe274df435a2a678380965`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:d3c322b3970299d6713ecc912ca5f036000587af3dfded39cbc00252dc72894e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e08a56076694145ed026659ee593606290bd9d23112f53677ffb6c0dc69ac9c1`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 1.7 KB (1729 bytes)  
+	-	`sha256:012876f373ca60723d688b09907e63f29bf827b18bc9b64cb517ce2bba8178e5`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f31a7d156a747e1cbceca7a402b341c3ec81255fdf4f89e3b25fc220ce414272`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 12.2 MB (12184224 bytes)  
+	-	`sha256:366bed68077187fba65714e890c590696a6a2e6a082ad8ff787077413d7dd9b6`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 12.2 MB (12184312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b758be916ec389866416631e7f9c740f03c4fac5de2b7a36fd7c2668915873`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 1.1 MB (1064218 bytes)  
+	-	`sha256:4900936eaafc8158a5663e5f55b0651dcd8b1faf447c4c86a8452133ed30c06d`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 1.1 MB (1064271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a5c311d26f729cf1d7f2508e4d11f677d23d1296bd4f93d6eb5daa91ec2255d`  
-		Last Modified: Tue, 16 Apr 2024 17:26:33 GMT  
-		Size: 48.5 MB (48479037 bytes)  
+	-	`sha256:a24c3bb02f5967e23f9dd2192f09dd7c8d28b484d4c2b453568155f11ae82e58`  
+		Last Modified: Thu, 25 Apr 2024 10:14:12 GMT  
+		Size: 48.5 MB (48479133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9286636386bf82295b37e495c017682fc38057e06f6c28052184c64a6cf806e`  
-		Last Modified: Tue, 16 Apr 2024 17:26:31 GMT  
-		Size: 1.2 KB (1217 bytes)  
+	-	`sha256:a4bc1e4c5a81e45106ded316549f9fb3445f1e3455427c11ce97a90d95eabd41`  
+		Last Modified: Thu, 25 Apr 2024 10:14:10 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.0.12` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:3caf9f8785fbccaee02cbfb76a53be87e769b070ceed49c8ab3f0dafea59e5a4
+$ docker pull cassandra@sha256:20f49a9132838a081aa259ebc640b414391dc510eb6ed5eb6e927058ed9e2145
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4182014 bytes)**  
+-	Total Size: **4.2 MB (4181109 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1bb5f68e0f512e05bc2f278ce85eaa97369752f52ffc08fd77633c56a940943d`
+-	Image ID: `sha256:453810523fa147bcb0a565965550007a59413f275a74742f0295e3e20e3e1ddb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:017ebef74fed4a84f38780f379f58588bcae2fc6dea6e1d57f9997511d3b0ff8`  
-		Last Modified: Tue, 16 Apr 2024 17:26:31 GMT  
-		Size: 4.1 MB (4147436 bytes)  
+	-	`sha256:d66c7b188adabb42aee0a1f3aa3948047074b68a92028eb21c9ebc9f63acc45c`  
+		Last Modified: Thu, 25 Apr 2024 10:14:10 GMT  
+		Size: 4.1 MB (4146527 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6938212681b6a9082bacd07710b165960c6f563dd9bc24c55a8d90da55de75ef`  
-		Last Modified: Tue, 16 Apr 2024 17:26:31 GMT  
-		Size: 34.6 KB (34578 bytes)  
+	-	`sha256:19ca43309caf1f43a96ebf805125ced97e6fb4554e37bcce3f63484f0aa5bf98`  
+		Last Modified: Thu, 25 Apr 2024 10:14:09 GMT  
+		Size: 34.6 KB (34582 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:4.0.12-jammy`
 
 ```console
-$ docker pull cassandra@sha256:18646013a9b0d2646c779c4eb74fa04ad6c4b30c92946f8b366031295ba3bad7
+$ docker pull cassandra@sha256:4249bc1ed1440200e06371ca4397850cd2162f39df451306593e5adef49002cf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10350,13 +10350,13 @@ $ docker pull cassandra@sha256:a1be08dc8225d1a06b29a25e73908ad59c6796177fe15a892
 ### `cassandra:4.0.12-jammy` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:c5d46a61022249e379d8fcca8186794a82f3a1821117ee0d83a4c049ac613b98
+$ docker pull cassandra@sha256:82a606781140e4f03ec717cc9be3152caf6e3d99b6e2d7d7dfc24c0e61d4384b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **154.6 MB (154560963 bytes)**  
+-	Total Size: **154.7 MB (154705618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af27faa50c4769df32b80ea720253b237f8ae9d7c279978b5bc7d3d5f8f690bf`
+-	Image ID: `sha256:c185326328a415a5dda06d5229c57f708b22b1f4ddc20b19a8eb01c742ab6a96`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -10373,23 +10373,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -10434,73 +10434,73 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6849f23a4f1434c16f795f92fb3da9479ce10d1430d7c596b18d90ee4214c2b`  
-		Last Modified: Tue, 16 Apr 2024 02:51:44 GMT  
-		Size: 42.5 MB (42495113 bytes)  
+	-	`sha256:bfbf256ede8a47420c7318d3c88041015cf753cbd47b985cf569ff7776321d2e`  
+		Last Modified: Wed, 24 Apr 2024 17:45:50 GMT  
+		Size: 42.6 MB (42639841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc00b9755d5e4e76beaf4e1163bc4e996e32943f3675ac85e8ceb6752565dcbc`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
+	-	`sha256:cebf0f2f4ad23080aa60c01fdf9cc30e2ef2251086746ede6c96f92d0bba4944`  
+		Last Modified: Wed, 24 Apr 2024 17:45:42 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:534f801ae63411e03e2d0e382d7872e035bc223e769ca4cc8569f6d2f01a887c`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
-		Size: 734.0 B  
+	-	`sha256:4beb26164e0535e8a6ddb7d6592ab1db0840f4e8cd5e5f6ddde5d63abe2ec65d`  
+		Last Modified: Wed, 24 Apr 2024 17:45:41 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c19eded7d4b8b0bf0468e6541024fbeb0c9f01fed90ab436a5cfb7546c73d22f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 1.7 KB (1731 bytes)  
+	-	`sha256:6d3bef45224becba7197bf884c77b9792dc8a20add77068ca9ed5f1af8a6f848`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e07e589a9c54b9f1ef1bd91b83e24188d813e72194c5939540535cfed1c7a52`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 13.2 MB (13208882 bytes)  
+	-	`sha256:29aca4a915214f6c41626417ee160a9d9211dc0a9dfe175204e80c9c35d00da9`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 13.2 MB (13208792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3ea969784cfb74f648882077018ff6a6cda2c69771bd60a1a833936a8b52e08`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 1.0 MB (1019055 bytes)  
+	-	`sha256:880be8611ff9bbf307e88ddf8ea4b44c117d21e860fc268306ff43efc42116e0`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 1.0 MB (1019071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:789336840f64fb641618dea4a6869064da1dba38da36e7990395c42c19a9b08d`  
-		Last Modified: Thu, 18 Apr 2024 19:12:02 GMT  
-		Size: 48.5 MB (48479628 bytes)  
+	-	`sha256:7133ec20b8f982599fe34e2750bf07b21c7dbfd545b64f0074eadbe59c0ebf50`  
+		Last Modified: Thu, 25 Apr 2024 10:23:36 GMT  
+		Size: 48.5 MB (48479624 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9940d0c69c0a48cf4d0005cc23ad171f530a247ba3c95efdca778040668a4b35`  
-		Last Modified: Thu, 18 Apr 2024 19:11:59 GMT  
-		Size: 1.2 KB (1218 bytes)  
+	-	`sha256:9edde95ed19df25a55d069c027fdcd51dfdb1aae76c5003089ab38095626dd1b`  
+		Last Modified: Thu, 25 Apr 2024 10:23:36 GMT  
+		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.0.12-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:7eef2ab33015432a6f85b97b1b9d6cc59ee35c9d021017fa3c88636819f07c83
+$ docker pull cassandra@sha256:67ba32f45d1212127d708a9fba54b90d94ce7568d6184140758a8637205f5c7d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.2 MB (4184789 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c672a2ae2b0ddfba4c6871394c996252b002c45458e3f627cf7b6d8d977a976b`
+-	Image ID: `sha256:f1505c90d0ce77c20344c86073c529f653ac0bdbf340c807235d851da81e68d4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f0a3732f00493059a3a5c9417d9857b4f90f3733df39a5b546b9758ad52818bf`  
-		Last Modified: Thu, 18 Apr 2024 19:12:00 GMT  
+	-	`sha256:cda44018d8f7855aea6f5a7ee06dc2f553cdc0f318368d3b7b7e2083b4906efc`  
+		Last Modified: Thu, 25 Apr 2024 10:23:34 GMT  
 		Size: 4.2 MB (4150163 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cec227360833609aeeed64c6f4baac1a84798e7996a2d32960423af9afebc57f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:59 GMT  
+	-	`sha256:7b86916d29ec4f4d5e609d8fc4ce8d5a7af2646d4b08609d518b3e97e40ced46`  
+		Last Modified: Thu, 25 Apr 2024 10:23:33 GMT  
 		Size: 34.6 KB (34626 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:4.0.12-jammy` - linux; s390x
 
 ```console
-$ docker pull cassandra@sha256:7af1d2f666c4b8035a7e9d6e3dab44ef8604c1c60c7265974f7eee38650a014d
+$ docker pull cassandra@sha256:4902b7f6b347412d291c33b1eac1e79b98d20e560dc424edd5c801bf69d1eca2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.1 MB (144120995 bytes)**  
+-	Total Size: **144.2 MB (144155063 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d89dad044fbd2d82cee74cc7b590d90dd2da5bf65eaadc6f01a74c644dec076`
+-	Image ID: `sha256:ea92b12f9e1e765d666c70eed1f99d5aec616b807a810ee3a28ce09c1a7ec120`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -10517,23 +10517,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:7691b95908cace61ceeec91c44a1a37e7dc2fc3ab5a5fd89f493cefdff9e840e in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -10578,67 +10578,67 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:462f41d0ade66ae0cbbac6954f7e6cb27ec29a3bedfdffeb9b235f5fd3925520`  
-		Last Modified: Tue, 16 Apr 2024 01:51:19 GMT  
-		Size: 40.8 MB (40766133 bytes)  
+	-	`sha256:94af0e093c53d72dd53fc9166542711511b970a638cd6ad5fb8c990afb2a45ac`  
+		Last Modified: Wed, 24 Apr 2024 19:49:52 GMT  
+		Size: 40.8 MB (40799964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffe4d7eb3f743d9e91fa6a779c0e996fbc86c104154c5070cde03b8840eceb7e`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
+	-	`sha256:2e846eab472a97e99cc7d3ce406cb76e887e14bd0b772908522799adbd03b45e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd7aa937dc5864318cd995372e5d54863e03d67bedbe274df435a2a678380965`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:d3c322b3970299d6713ecc912ca5f036000587af3dfded39cbc00252dc72894e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e08a56076694145ed026659ee593606290bd9d23112f53677ffb6c0dc69ac9c1`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 1.7 KB (1729 bytes)  
+	-	`sha256:012876f373ca60723d688b09907e63f29bf827b18bc9b64cb517ce2bba8178e5`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f31a7d156a747e1cbceca7a402b341c3ec81255fdf4f89e3b25fc220ce414272`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 12.2 MB (12184224 bytes)  
+	-	`sha256:366bed68077187fba65714e890c590696a6a2e6a082ad8ff787077413d7dd9b6`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 12.2 MB (12184312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b758be916ec389866416631e7f9c740f03c4fac5de2b7a36fd7c2668915873`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 1.1 MB (1064218 bytes)  
+	-	`sha256:4900936eaafc8158a5663e5f55b0651dcd8b1faf447c4c86a8452133ed30c06d`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 1.1 MB (1064271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a5c311d26f729cf1d7f2508e4d11f677d23d1296bd4f93d6eb5daa91ec2255d`  
-		Last Modified: Tue, 16 Apr 2024 17:26:33 GMT  
-		Size: 48.5 MB (48479037 bytes)  
+	-	`sha256:a24c3bb02f5967e23f9dd2192f09dd7c8d28b484d4c2b453568155f11ae82e58`  
+		Last Modified: Thu, 25 Apr 2024 10:14:12 GMT  
+		Size: 48.5 MB (48479133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9286636386bf82295b37e495c017682fc38057e06f6c28052184c64a6cf806e`  
-		Last Modified: Tue, 16 Apr 2024 17:26:31 GMT  
-		Size: 1.2 KB (1217 bytes)  
+	-	`sha256:a4bc1e4c5a81e45106ded316549f9fb3445f1e3455427c11ce97a90d95eabd41`  
+		Last Modified: Thu, 25 Apr 2024 10:14:10 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.0.12-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:3caf9f8785fbccaee02cbfb76a53be87e769b070ceed49c8ab3f0dafea59e5a4
+$ docker pull cassandra@sha256:20f49a9132838a081aa259ebc640b414391dc510eb6ed5eb6e927058ed9e2145
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4182014 bytes)**  
+-	Total Size: **4.2 MB (4181109 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1bb5f68e0f512e05bc2f278ce85eaa97369752f52ffc08fd77633c56a940943d`
+-	Image ID: `sha256:453810523fa147bcb0a565965550007a59413f275a74742f0295e3e20e3e1ddb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:017ebef74fed4a84f38780f379f58588bcae2fc6dea6e1d57f9997511d3b0ff8`  
-		Last Modified: Tue, 16 Apr 2024 17:26:31 GMT  
-		Size: 4.1 MB (4147436 bytes)  
+	-	`sha256:d66c7b188adabb42aee0a1f3aa3948047074b68a92028eb21c9ebc9f63acc45c`  
+		Last Modified: Thu, 25 Apr 2024 10:14:10 GMT  
+		Size: 4.1 MB (4146527 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6938212681b6a9082bacd07710b165960c6f563dd9bc24c55a8d90da55de75ef`  
-		Last Modified: Tue, 16 Apr 2024 17:26:31 GMT  
-		Size: 34.6 KB (34578 bytes)  
+	-	`sha256:19ca43309caf1f43a96ebf805125ced97e6fb4554e37bcce3f63484f0aa5bf98`  
+		Last Modified: Thu, 25 Apr 2024 10:14:09 GMT  
+		Size: 34.6 KB (34582 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:4.1`
 
 ```console
-$ docker pull cassandra@sha256:b5f3722b1d738a5ed851adc14b27e6ef944bf480e7350d7719cadb5b23cd86a0
+$ docker pull cassandra@sha256:8d3943909a8ef8d40a3a09948d01ffe7f8862e64b18d2820c12f02219f2cc491
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11089,13 +11089,13 @@ $ docker pull cassandra@sha256:818e6bf890ce73fa419fb8e3eece0f6b7ade2ce7b9ad82538
 ### `cassandra:4.1` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:57c327ecf8f6451e533d414a677e515b0613955aa7f1664647d800e0e03eb993
+$ docker pull cassandra@sha256:9804dc1569f476a1401ba0d71a7a5143ce913e181a5d9056111879278db66c93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.6 MB (156613579 bytes)**  
+-	Total Size: **156.8 MB (156758254 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87e9f499e0e6a214a3c30d7ee785dfb0925d2d7d0e2ed10a549d9741e247b27c`
+-	Image ID: `sha256:d6066f284f3fc022dc7246d60c54123183d75b352c14e812678ee2ae2703047e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -11112,23 +11112,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -11173,73 +11173,73 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6849f23a4f1434c16f795f92fb3da9479ce10d1430d7c596b18d90ee4214c2b`  
-		Last Modified: Tue, 16 Apr 2024 02:51:44 GMT  
-		Size: 42.5 MB (42495113 bytes)  
+	-	`sha256:bfbf256ede8a47420c7318d3c88041015cf753cbd47b985cf569ff7776321d2e`  
+		Last Modified: Wed, 24 Apr 2024 17:45:50 GMT  
+		Size: 42.6 MB (42639841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc00b9755d5e4e76beaf4e1163bc4e996e32943f3675ac85e8ceb6752565dcbc`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
+	-	`sha256:cebf0f2f4ad23080aa60c01fdf9cc30e2ef2251086746ede6c96f92d0bba4944`  
+		Last Modified: Wed, 24 Apr 2024 17:45:42 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:534f801ae63411e03e2d0e382d7872e035bc223e769ca4cc8569f6d2f01a887c`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
-		Size: 734.0 B  
+	-	`sha256:4beb26164e0535e8a6ddb7d6592ab1db0840f4e8cd5e5f6ddde5d63abe2ec65d`  
+		Last Modified: Wed, 24 Apr 2024 17:45:41 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c19eded7d4b8b0bf0468e6541024fbeb0c9f01fed90ab436a5cfb7546c73d22f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 1.7 KB (1731 bytes)  
+	-	`sha256:6d3bef45224becba7197bf884c77b9792dc8a20add77068ca9ed5f1af8a6f848`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e07e589a9c54b9f1ef1bd91b83e24188d813e72194c5939540535cfed1c7a52`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 13.2 MB (13208882 bytes)  
+	-	`sha256:29aca4a915214f6c41626417ee160a9d9211dc0a9dfe175204e80c9c35d00da9`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 13.2 MB (13208792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3ea969784cfb74f648882077018ff6a6cda2c69771bd60a1a833936a8b52e08`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 1.0 MB (1019055 bytes)  
+	-	`sha256:880be8611ff9bbf307e88ddf8ea4b44c117d21e860fc268306ff43efc42116e0`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 1.0 MB (1019071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:377babe32453cbc271b45b7c236d648443f71a6a93e63efcf0a4668a1754e338`  
-		Last Modified: Thu, 18 Apr 2024 19:11:27 GMT  
-		Size: 50.5 MB (50532243 bytes)  
+	-	`sha256:891f0ce16db5921fbe0e978bdd898ec8e783a09427a219884b253556316920a8`  
+		Last Modified: Thu, 25 Apr 2024 10:22:32 GMT  
+		Size: 50.5 MB (50532260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c76364c28af1f6eff9f116253d83273c99619fc20581036cb05beb559a062b7f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:27 GMT  
+	-	`sha256:7d7f3904c395c9aeb6040d9bc8b2e9c73a54e0884d04606cc69889e8b8cd4b56`  
+		Last Modified: Thu, 25 Apr 2024 10:22:31 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.1` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:4cc6acf1c527a20d357d7385ac8a6227e341ad7cd293933782b503d0c6c3de5b
+$ docker pull cassandra@sha256:c9621a4e15716b0ca960a954fc4c22a540c918a0c48957354436799ead53c8cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4190655 bytes)**  
+-	Total Size: **4.2 MB (4191475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bff9805d4846f4e0489cf24e90890147b84c295cb779e9d55c917d228ed4d97`
+-	Image ID: `sha256:3e25712947f741b3071e9f1d57f6d22ce6c148e216fb9bc44b43ebb4f4f56f87`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:21eb4aaa32b7e2a8912bd9da72f54263f3b4a9b7d9f167c0baebea403f820840`  
-		Last Modified: Thu, 18 Apr 2024 19:11:25 GMT  
+	-	`sha256:502b81b656b9e48905fb4571c5377a474fb509404c8e387df870e7ae496ea7cf`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
 		Size: 4.2 MB (4154808 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:650baad590d9a3da918ace502a776ed555922b2802929468cb2ab0136a61c5bd`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 35.8 KB (35847 bytes)  
+	-	`sha256:03b0508eac7c0f456f3eaaf07ab6449ad736ab65df2c899f5b96ebf22b6658b8`  
+		Last Modified: Thu, 25 Apr 2024 10:22:28 GMT  
+		Size: 36.7 KB (36667 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:4.1` - linux; s390x
 
 ```console
-$ docker pull cassandra@sha256:8e271fe01f0d4a276968e5a6c382bc73dabecd3da0a287c8a5a73a50af55c6aa
+$ docker pull cassandra@sha256:e20e38bed7b3a67b119ebe6f9510c7ec499dd98bbafc704389abe75b910b366c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **146.2 MB (146173563 bytes)**  
+-	Total Size: **146.2 MB (146207683 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a41aee73fde95401b527a16ed253bcfcc12ed898cd9d435da443e84a1c6a132`
+-	Image ID: `sha256:63dae9407c02b3351caa5f3cec527a4581eae57348a60a86e2bff2bda099eeb5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -11256,23 +11256,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:7691b95908cace61ceeec91c44a1a37e7dc2fc3ab5a5fd89f493cefdff9e840e in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -11317,67 +11317,67 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:462f41d0ade66ae0cbbac6954f7e6cb27ec29a3bedfdffeb9b235f5fd3925520`  
-		Last Modified: Tue, 16 Apr 2024 01:51:19 GMT  
-		Size: 40.8 MB (40766133 bytes)  
+	-	`sha256:94af0e093c53d72dd53fc9166542711511b970a638cd6ad5fb8c990afb2a45ac`  
+		Last Modified: Wed, 24 Apr 2024 19:49:52 GMT  
+		Size: 40.8 MB (40799964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffe4d7eb3f743d9e91fa6a779c0e996fbc86c104154c5070cde03b8840eceb7e`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
+	-	`sha256:2e846eab472a97e99cc7d3ce406cb76e887e14bd0b772908522799adbd03b45e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd7aa937dc5864318cd995372e5d54863e03d67bedbe274df435a2a678380965`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:d3c322b3970299d6713ecc912ca5f036000587af3dfded39cbc00252dc72894e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e08a56076694145ed026659ee593606290bd9d23112f53677ffb6c0dc69ac9c1`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 1.7 KB (1729 bytes)  
+	-	`sha256:012876f373ca60723d688b09907e63f29bf827b18bc9b64cb517ce2bba8178e5`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f31a7d156a747e1cbceca7a402b341c3ec81255fdf4f89e3b25fc220ce414272`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 12.2 MB (12184224 bytes)  
+	-	`sha256:366bed68077187fba65714e890c590696a6a2e6a082ad8ff787077413d7dd9b6`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 12.2 MB (12184312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b758be916ec389866416631e7f9c740f03c4fac5de2b7a36fd7c2668915873`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 1.1 MB (1064218 bytes)  
+	-	`sha256:4900936eaafc8158a5663e5f55b0651dcd8b1faf447c4c86a8452133ed30c06d`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 1.1 MB (1064271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bba711c31a804835b3109b4b31d1dd6266590d37e946794b3154a41f48df607b`  
-		Last Modified: Tue, 16 Apr 2024 17:25:21 GMT  
-		Size: 50.5 MB (50531603 bytes)  
+	-	`sha256:131886edddbec4bd36d61c241eddf6e35388951696549a07130da305d58af86a`  
+		Last Modified: Thu, 25 Apr 2024 10:13:19 GMT  
+		Size: 50.5 MB (50531753 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a4f32d3da5f899d0fbac88ced485125c9898fffba7af24471a55b16f70172b0`  
-		Last Modified: Tue, 16 Apr 2024 17:25:20 GMT  
-		Size: 1.2 KB (1219 bytes)  
+	-	`sha256:80267e025f9a56e3189d76333d553da16cc3338de3ec3cb7a78a6c4c2dcae276`  
+		Last Modified: Thu, 25 Apr 2024 10:13:19 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.1` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:aedb85bd4e858ee9be6717e9f8c20f59cfa2b37de8ec66118e437e61a281c412
+$ docker pull cassandra@sha256:00e7cdcdb2051b0556927eb330a6636a5e37f1234057ad69c4922d3356c7f932
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4188653 bytes)**  
+-	Total Size: **4.2 MB (4187748 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72ffe27010cff8186ed3aede77a02e395dd97073a4b1b68eb30b06cd3016fa63`
+-	Image ID: `sha256:e4a3bd07eb42cce6af1b407eea718540668ec1049d095db76c4e6a95212513a2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8d85ac40f7488912d462b7321da1b56b9246440065bf2c5efd151b90fd19f45a`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 4.2 MB (4152057 bytes)  
+	-	`sha256:bdc3d9bf3345602c5f6d310dc990edc922625668bf43a7ca534d042b18cb6fd0`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 4.2 MB (4151148 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fa916b50886964edb9182a10c6add5867b4f1e7e94958e74165fd38427639f94`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 36.6 KB (36596 bytes)  
+	-	`sha256:1d8a13d1f48fa0e094e3e9fe4989a4daafb3189211b4df375b2604690d45e0ac`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 36.6 KB (36600 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:4.1-jammy`
 
 ```console
-$ docker pull cassandra@sha256:b5f3722b1d738a5ed851adc14b27e6ef944bf480e7350d7719cadb5b23cd86a0
+$ docker pull cassandra@sha256:8d3943909a8ef8d40a3a09948d01ffe7f8862e64b18d2820c12f02219f2cc491
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11828,13 +11828,13 @@ $ docker pull cassandra@sha256:818e6bf890ce73fa419fb8e3eece0f6b7ade2ce7b9ad82538
 ### `cassandra:4.1-jammy` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:57c327ecf8f6451e533d414a677e515b0613955aa7f1664647d800e0e03eb993
+$ docker pull cassandra@sha256:9804dc1569f476a1401ba0d71a7a5143ce913e181a5d9056111879278db66c93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.6 MB (156613579 bytes)**  
+-	Total Size: **156.8 MB (156758254 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87e9f499e0e6a214a3c30d7ee785dfb0925d2d7d0e2ed10a549d9741e247b27c`
+-	Image ID: `sha256:d6066f284f3fc022dc7246d60c54123183d75b352c14e812678ee2ae2703047e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -11851,23 +11851,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -11912,73 +11912,73 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6849f23a4f1434c16f795f92fb3da9479ce10d1430d7c596b18d90ee4214c2b`  
-		Last Modified: Tue, 16 Apr 2024 02:51:44 GMT  
-		Size: 42.5 MB (42495113 bytes)  
+	-	`sha256:bfbf256ede8a47420c7318d3c88041015cf753cbd47b985cf569ff7776321d2e`  
+		Last Modified: Wed, 24 Apr 2024 17:45:50 GMT  
+		Size: 42.6 MB (42639841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc00b9755d5e4e76beaf4e1163bc4e996e32943f3675ac85e8ceb6752565dcbc`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
+	-	`sha256:cebf0f2f4ad23080aa60c01fdf9cc30e2ef2251086746ede6c96f92d0bba4944`  
+		Last Modified: Wed, 24 Apr 2024 17:45:42 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:534f801ae63411e03e2d0e382d7872e035bc223e769ca4cc8569f6d2f01a887c`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
-		Size: 734.0 B  
+	-	`sha256:4beb26164e0535e8a6ddb7d6592ab1db0840f4e8cd5e5f6ddde5d63abe2ec65d`  
+		Last Modified: Wed, 24 Apr 2024 17:45:41 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c19eded7d4b8b0bf0468e6541024fbeb0c9f01fed90ab436a5cfb7546c73d22f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 1.7 KB (1731 bytes)  
+	-	`sha256:6d3bef45224becba7197bf884c77b9792dc8a20add77068ca9ed5f1af8a6f848`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e07e589a9c54b9f1ef1bd91b83e24188d813e72194c5939540535cfed1c7a52`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 13.2 MB (13208882 bytes)  
+	-	`sha256:29aca4a915214f6c41626417ee160a9d9211dc0a9dfe175204e80c9c35d00da9`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 13.2 MB (13208792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3ea969784cfb74f648882077018ff6a6cda2c69771bd60a1a833936a8b52e08`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 1.0 MB (1019055 bytes)  
+	-	`sha256:880be8611ff9bbf307e88ddf8ea4b44c117d21e860fc268306ff43efc42116e0`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 1.0 MB (1019071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:377babe32453cbc271b45b7c236d648443f71a6a93e63efcf0a4668a1754e338`  
-		Last Modified: Thu, 18 Apr 2024 19:11:27 GMT  
-		Size: 50.5 MB (50532243 bytes)  
+	-	`sha256:891f0ce16db5921fbe0e978bdd898ec8e783a09427a219884b253556316920a8`  
+		Last Modified: Thu, 25 Apr 2024 10:22:32 GMT  
+		Size: 50.5 MB (50532260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c76364c28af1f6eff9f116253d83273c99619fc20581036cb05beb559a062b7f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:27 GMT  
+	-	`sha256:7d7f3904c395c9aeb6040d9bc8b2e9c73a54e0884d04606cc69889e8b8cd4b56`  
+		Last Modified: Thu, 25 Apr 2024 10:22:31 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.1-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:4cc6acf1c527a20d357d7385ac8a6227e341ad7cd293933782b503d0c6c3de5b
+$ docker pull cassandra@sha256:c9621a4e15716b0ca960a954fc4c22a540c918a0c48957354436799ead53c8cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4190655 bytes)**  
+-	Total Size: **4.2 MB (4191475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bff9805d4846f4e0489cf24e90890147b84c295cb779e9d55c917d228ed4d97`
+-	Image ID: `sha256:3e25712947f741b3071e9f1d57f6d22ce6c148e216fb9bc44b43ebb4f4f56f87`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:21eb4aaa32b7e2a8912bd9da72f54263f3b4a9b7d9f167c0baebea403f820840`  
-		Last Modified: Thu, 18 Apr 2024 19:11:25 GMT  
+	-	`sha256:502b81b656b9e48905fb4571c5377a474fb509404c8e387df870e7ae496ea7cf`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
 		Size: 4.2 MB (4154808 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:650baad590d9a3da918ace502a776ed555922b2802929468cb2ab0136a61c5bd`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 35.8 KB (35847 bytes)  
+	-	`sha256:03b0508eac7c0f456f3eaaf07ab6449ad736ab65df2c899f5b96ebf22b6658b8`  
+		Last Modified: Thu, 25 Apr 2024 10:22:28 GMT  
+		Size: 36.7 KB (36667 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:4.1-jammy` - linux; s390x
 
 ```console
-$ docker pull cassandra@sha256:8e271fe01f0d4a276968e5a6c382bc73dabecd3da0a287c8a5a73a50af55c6aa
+$ docker pull cassandra@sha256:e20e38bed7b3a67b119ebe6f9510c7ec499dd98bbafc704389abe75b910b366c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **146.2 MB (146173563 bytes)**  
+-	Total Size: **146.2 MB (146207683 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a41aee73fde95401b527a16ed253bcfcc12ed898cd9d435da443e84a1c6a132`
+-	Image ID: `sha256:63dae9407c02b3351caa5f3cec527a4581eae57348a60a86e2bff2bda099eeb5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -11995,23 +11995,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:7691b95908cace61ceeec91c44a1a37e7dc2fc3ab5a5fd89f493cefdff9e840e in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -12056,67 +12056,67 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:462f41d0ade66ae0cbbac6954f7e6cb27ec29a3bedfdffeb9b235f5fd3925520`  
-		Last Modified: Tue, 16 Apr 2024 01:51:19 GMT  
-		Size: 40.8 MB (40766133 bytes)  
+	-	`sha256:94af0e093c53d72dd53fc9166542711511b970a638cd6ad5fb8c990afb2a45ac`  
+		Last Modified: Wed, 24 Apr 2024 19:49:52 GMT  
+		Size: 40.8 MB (40799964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffe4d7eb3f743d9e91fa6a779c0e996fbc86c104154c5070cde03b8840eceb7e`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
+	-	`sha256:2e846eab472a97e99cc7d3ce406cb76e887e14bd0b772908522799adbd03b45e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd7aa937dc5864318cd995372e5d54863e03d67bedbe274df435a2a678380965`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:d3c322b3970299d6713ecc912ca5f036000587af3dfded39cbc00252dc72894e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e08a56076694145ed026659ee593606290bd9d23112f53677ffb6c0dc69ac9c1`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 1.7 KB (1729 bytes)  
+	-	`sha256:012876f373ca60723d688b09907e63f29bf827b18bc9b64cb517ce2bba8178e5`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f31a7d156a747e1cbceca7a402b341c3ec81255fdf4f89e3b25fc220ce414272`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 12.2 MB (12184224 bytes)  
+	-	`sha256:366bed68077187fba65714e890c590696a6a2e6a082ad8ff787077413d7dd9b6`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 12.2 MB (12184312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b758be916ec389866416631e7f9c740f03c4fac5de2b7a36fd7c2668915873`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 1.1 MB (1064218 bytes)  
+	-	`sha256:4900936eaafc8158a5663e5f55b0651dcd8b1faf447c4c86a8452133ed30c06d`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 1.1 MB (1064271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bba711c31a804835b3109b4b31d1dd6266590d37e946794b3154a41f48df607b`  
-		Last Modified: Tue, 16 Apr 2024 17:25:21 GMT  
-		Size: 50.5 MB (50531603 bytes)  
+	-	`sha256:131886edddbec4bd36d61c241eddf6e35388951696549a07130da305d58af86a`  
+		Last Modified: Thu, 25 Apr 2024 10:13:19 GMT  
+		Size: 50.5 MB (50531753 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a4f32d3da5f899d0fbac88ced485125c9898fffba7af24471a55b16f70172b0`  
-		Last Modified: Tue, 16 Apr 2024 17:25:20 GMT  
-		Size: 1.2 KB (1219 bytes)  
+	-	`sha256:80267e025f9a56e3189d76333d553da16cc3338de3ec3cb7a78a6c4c2dcae276`  
+		Last Modified: Thu, 25 Apr 2024 10:13:19 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.1-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:aedb85bd4e858ee9be6717e9f8c20f59cfa2b37de8ec66118e437e61a281c412
+$ docker pull cassandra@sha256:00e7cdcdb2051b0556927eb330a6636a5e37f1234057ad69c4922d3356c7f932
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4188653 bytes)**  
+-	Total Size: **4.2 MB (4187748 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72ffe27010cff8186ed3aede77a02e395dd97073a4b1b68eb30b06cd3016fa63`
+-	Image ID: `sha256:e4a3bd07eb42cce6af1b407eea718540668ec1049d095db76c4e6a95212513a2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8d85ac40f7488912d462b7321da1b56b9246440065bf2c5efd151b90fd19f45a`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 4.2 MB (4152057 bytes)  
+	-	`sha256:bdc3d9bf3345602c5f6d310dc990edc922625668bf43a7ca534d042b18cb6fd0`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 4.2 MB (4151148 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fa916b50886964edb9182a10c6add5867b4f1e7e94958e74165fd38427639f94`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 36.6 KB (36596 bytes)  
+	-	`sha256:1d8a13d1f48fa0e094e3e9fe4989a4daafb3189211b4df375b2604690d45e0ac`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 36.6 KB (36600 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:4.1.4`
 
 ```console
-$ docker pull cassandra@sha256:b5f3722b1d738a5ed851adc14b27e6ef944bf480e7350d7719cadb5b23cd86a0
+$ docker pull cassandra@sha256:8d3943909a8ef8d40a3a09948d01ffe7f8862e64b18d2820c12f02219f2cc491
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12567,13 +12567,13 @@ $ docker pull cassandra@sha256:818e6bf890ce73fa419fb8e3eece0f6b7ade2ce7b9ad82538
 ### `cassandra:4.1.4` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:57c327ecf8f6451e533d414a677e515b0613955aa7f1664647d800e0e03eb993
+$ docker pull cassandra@sha256:9804dc1569f476a1401ba0d71a7a5143ce913e181a5d9056111879278db66c93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.6 MB (156613579 bytes)**  
+-	Total Size: **156.8 MB (156758254 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87e9f499e0e6a214a3c30d7ee785dfb0925d2d7d0e2ed10a549d9741e247b27c`
+-	Image ID: `sha256:d6066f284f3fc022dc7246d60c54123183d75b352c14e812678ee2ae2703047e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -12590,23 +12590,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -12651,73 +12651,73 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6849f23a4f1434c16f795f92fb3da9479ce10d1430d7c596b18d90ee4214c2b`  
-		Last Modified: Tue, 16 Apr 2024 02:51:44 GMT  
-		Size: 42.5 MB (42495113 bytes)  
+	-	`sha256:bfbf256ede8a47420c7318d3c88041015cf753cbd47b985cf569ff7776321d2e`  
+		Last Modified: Wed, 24 Apr 2024 17:45:50 GMT  
+		Size: 42.6 MB (42639841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc00b9755d5e4e76beaf4e1163bc4e996e32943f3675ac85e8ceb6752565dcbc`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
+	-	`sha256:cebf0f2f4ad23080aa60c01fdf9cc30e2ef2251086746ede6c96f92d0bba4944`  
+		Last Modified: Wed, 24 Apr 2024 17:45:42 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:534f801ae63411e03e2d0e382d7872e035bc223e769ca4cc8569f6d2f01a887c`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
-		Size: 734.0 B  
+	-	`sha256:4beb26164e0535e8a6ddb7d6592ab1db0840f4e8cd5e5f6ddde5d63abe2ec65d`  
+		Last Modified: Wed, 24 Apr 2024 17:45:41 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c19eded7d4b8b0bf0468e6541024fbeb0c9f01fed90ab436a5cfb7546c73d22f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 1.7 KB (1731 bytes)  
+	-	`sha256:6d3bef45224becba7197bf884c77b9792dc8a20add77068ca9ed5f1af8a6f848`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e07e589a9c54b9f1ef1bd91b83e24188d813e72194c5939540535cfed1c7a52`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 13.2 MB (13208882 bytes)  
+	-	`sha256:29aca4a915214f6c41626417ee160a9d9211dc0a9dfe175204e80c9c35d00da9`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 13.2 MB (13208792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3ea969784cfb74f648882077018ff6a6cda2c69771bd60a1a833936a8b52e08`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 1.0 MB (1019055 bytes)  
+	-	`sha256:880be8611ff9bbf307e88ddf8ea4b44c117d21e860fc268306ff43efc42116e0`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 1.0 MB (1019071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:377babe32453cbc271b45b7c236d648443f71a6a93e63efcf0a4668a1754e338`  
-		Last Modified: Thu, 18 Apr 2024 19:11:27 GMT  
-		Size: 50.5 MB (50532243 bytes)  
+	-	`sha256:891f0ce16db5921fbe0e978bdd898ec8e783a09427a219884b253556316920a8`  
+		Last Modified: Thu, 25 Apr 2024 10:22:32 GMT  
+		Size: 50.5 MB (50532260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c76364c28af1f6eff9f116253d83273c99619fc20581036cb05beb559a062b7f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:27 GMT  
+	-	`sha256:7d7f3904c395c9aeb6040d9bc8b2e9c73a54e0884d04606cc69889e8b8cd4b56`  
+		Last Modified: Thu, 25 Apr 2024 10:22:31 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.1.4` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:4cc6acf1c527a20d357d7385ac8a6227e341ad7cd293933782b503d0c6c3de5b
+$ docker pull cassandra@sha256:c9621a4e15716b0ca960a954fc4c22a540c918a0c48957354436799ead53c8cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4190655 bytes)**  
+-	Total Size: **4.2 MB (4191475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bff9805d4846f4e0489cf24e90890147b84c295cb779e9d55c917d228ed4d97`
+-	Image ID: `sha256:3e25712947f741b3071e9f1d57f6d22ce6c148e216fb9bc44b43ebb4f4f56f87`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:21eb4aaa32b7e2a8912bd9da72f54263f3b4a9b7d9f167c0baebea403f820840`  
-		Last Modified: Thu, 18 Apr 2024 19:11:25 GMT  
+	-	`sha256:502b81b656b9e48905fb4571c5377a474fb509404c8e387df870e7ae496ea7cf`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
 		Size: 4.2 MB (4154808 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:650baad590d9a3da918ace502a776ed555922b2802929468cb2ab0136a61c5bd`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 35.8 KB (35847 bytes)  
+	-	`sha256:03b0508eac7c0f456f3eaaf07ab6449ad736ab65df2c899f5b96ebf22b6658b8`  
+		Last Modified: Thu, 25 Apr 2024 10:22:28 GMT  
+		Size: 36.7 KB (36667 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:4.1.4` - linux; s390x
 
 ```console
-$ docker pull cassandra@sha256:8e271fe01f0d4a276968e5a6c382bc73dabecd3da0a287c8a5a73a50af55c6aa
+$ docker pull cassandra@sha256:e20e38bed7b3a67b119ebe6f9510c7ec499dd98bbafc704389abe75b910b366c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **146.2 MB (146173563 bytes)**  
+-	Total Size: **146.2 MB (146207683 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a41aee73fde95401b527a16ed253bcfcc12ed898cd9d435da443e84a1c6a132`
+-	Image ID: `sha256:63dae9407c02b3351caa5f3cec527a4581eae57348a60a86e2bff2bda099eeb5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -12734,23 +12734,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:7691b95908cace61ceeec91c44a1a37e7dc2fc3ab5a5fd89f493cefdff9e840e in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -12795,67 +12795,67 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:462f41d0ade66ae0cbbac6954f7e6cb27ec29a3bedfdffeb9b235f5fd3925520`  
-		Last Modified: Tue, 16 Apr 2024 01:51:19 GMT  
-		Size: 40.8 MB (40766133 bytes)  
+	-	`sha256:94af0e093c53d72dd53fc9166542711511b970a638cd6ad5fb8c990afb2a45ac`  
+		Last Modified: Wed, 24 Apr 2024 19:49:52 GMT  
+		Size: 40.8 MB (40799964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffe4d7eb3f743d9e91fa6a779c0e996fbc86c104154c5070cde03b8840eceb7e`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
+	-	`sha256:2e846eab472a97e99cc7d3ce406cb76e887e14bd0b772908522799adbd03b45e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd7aa937dc5864318cd995372e5d54863e03d67bedbe274df435a2a678380965`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:d3c322b3970299d6713ecc912ca5f036000587af3dfded39cbc00252dc72894e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e08a56076694145ed026659ee593606290bd9d23112f53677ffb6c0dc69ac9c1`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 1.7 KB (1729 bytes)  
+	-	`sha256:012876f373ca60723d688b09907e63f29bf827b18bc9b64cb517ce2bba8178e5`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f31a7d156a747e1cbceca7a402b341c3ec81255fdf4f89e3b25fc220ce414272`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 12.2 MB (12184224 bytes)  
+	-	`sha256:366bed68077187fba65714e890c590696a6a2e6a082ad8ff787077413d7dd9b6`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 12.2 MB (12184312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b758be916ec389866416631e7f9c740f03c4fac5de2b7a36fd7c2668915873`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 1.1 MB (1064218 bytes)  
+	-	`sha256:4900936eaafc8158a5663e5f55b0651dcd8b1faf447c4c86a8452133ed30c06d`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 1.1 MB (1064271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bba711c31a804835b3109b4b31d1dd6266590d37e946794b3154a41f48df607b`  
-		Last Modified: Tue, 16 Apr 2024 17:25:21 GMT  
-		Size: 50.5 MB (50531603 bytes)  
+	-	`sha256:131886edddbec4bd36d61c241eddf6e35388951696549a07130da305d58af86a`  
+		Last Modified: Thu, 25 Apr 2024 10:13:19 GMT  
+		Size: 50.5 MB (50531753 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a4f32d3da5f899d0fbac88ced485125c9898fffba7af24471a55b16f70172b0`  
-		Last Modified: Tue, 16 Apr 2024 17:25:20 GMT  
-		Size: 1.2 KB (1219 bytes)  
+	-	`sha256:80267e025f9a56e3189d76333d553da16cc3338de3ec3cb7a78a6c4c2dcae276`  
+		Last Modified: Thu, 25 Apr 2024 10:13:19 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.1.4` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:aedb85bd4e858ee9be6717e9f8c20f59cfa2b37de8ec66118e437e61a281c412
+$ docker pull cassandra@sha256:00e7cdcdb2051b0556927eb330a6636a5e37f1234057ad69c4922d3356c7f932
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4188653 bytes)**  
+-	Total Size: **4.2 MB (4187748 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72ffe27010cff8186ed3aede77a02e395dd97073a4b1b68eb30b06cd3016fa63`
+-	Image ID: `sha256:e4a3bd07eb42cce6af1b407eea718540668ec1049d095db76c4e6a95212513a2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8d85ac40f7488912d462b7321da1b56b9246440065bf2c5efd151b90fd19f45a`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 4.2 MB (4152057 bytes)  
+	-	`sha256:bdc3d9bf3345602c5f6d310dc990edc922625668bf43a7ca534d042b18cb6fd0`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 4.2 MB (4151148 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fa916b50886964edb9182a10c6add5867b4f1e7e94958e74165fd38427639f94`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 36.6 KB (36596 bytes)  
+	-	`sha256:1d8a13d1f48fa0e094e3e9fe4989a4daafb3189211b4df375b2604690d45e0ac`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 36.6 KB (36600 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:4.1.4-jammy`
 
 ```console
-$ docker pull cassandra@sha256:b5f3722b1d738a5ed851adc14b27e6ef944bf480e7350d7719cadb5b23cd86a0
+$ docker pull cassandra@sha256:8d3943909a8ef8d40a3a09948d01ffe7f8862e64b18d2820c12f02219f2cc491
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13306,13 +13306,13 @@ $ docker pull cassandra@sha256:818e6bf890ce73fa419fb8e3eece0f6b7ade2ce7b9ad82538
 ### `cassandra:4.1.4-jammy` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:57c327ecf8f6451e533d414a677e515b0613955aa7f1664647d800e0e03eb993
+$ docker pull cassandra@sha256:9804dc1569f476a1401ba0d71a7a5143ce913e181a5d9056111879278db66c93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.6 MB (156613579 bytes)**  
+-	Total Size: **156.8 MB (156758254 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87e9f499e0e6a214a3c30d7ee785dfb0925d2d7d0e2ed10a549d9741e247b27c`
+-	Image ID: `sha256:d6066f284f3fc022dc7246d60c54123183d75b352c14e812678ee2ae2703047e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -13329,23 +13329,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -13390,73 +13390,73 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6849f23a4f1434c16f795f92fb3da9479ce10d1430d7c596b18d90ee4214c2b`  
-		Last Modified: Tue, 16 Apr 2024 02:51:44 GMT  
-		Size: 42.5 MB (42495113 bytes)  
+	-	`sha256:bfbf256ede8a47420c7318d3c88041015cf753cbd47b985cf569ff7776321d2e`  
+		Last Modified: Wed, 24 Apr 2024 17:45:50 GMT  
+		Size: 42.6 MB (42639841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc00b9755d5e4e76beaf4e1163bc4e996e32943f3675ac85e8ceb6752565dcbc`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
+	-	`sha256:cebf0f2f4ad23080aa60c01fdf9cc30e2ef2251086746ede6c96f92d0bba4944`  
+		Last Modified: Wed, 24 Apr 2024 17:45:42 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:534f801ae63411e03e2d0e382d7872e035bc223e769ca4cc8569f6d2f01a887c`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
-		Size: 734.0 B  
+	-	`sha256:4beb26164e0535e8a6ddb7d6592ab1db0840f4e8cd5e5f6ddde5d63abe2ec65d`  
+		Last Modified: Wed, 24 Apr 2024 17:45:41 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c19eded7d4b8b0bf0468e6541024fbeb0c9f01fed90ab436a5cfb7546c73d22f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 1.7 KB (1731 bytes)  
+	-	`sha256:6d3bef45224becba7197bf884c77b9792dc8a20add77068ca9ed5f1af8a6f848`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e07e589a9c54b9f1ef1bd91b83e24188d813e72194c5939540535cfed1c7a52`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 13.2 MB (13208882 bytes)  
+	-	`sha256:29aca4a915214f6c41626417ee160a9d9211dc0a9dfe175204e80c9c35d00da9`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 13.2 MB (13208792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3ea969784cfb74f648882077018ff6a6cda2c69771bd60a1a833936a8b52e08`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 1.0 MB (1019055 bytes)  
+	-	`sha256:880be8611ff9bbf307e88ddf8ea4b44c117d21e860fc268306ff43efc42116e0`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 1.0 MB (1019071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:377babe32453cbc271b45b7c236d648443f71a6a93e63efcf0a4668a1754e338`  
-		Last Modified: Thu, 18 Apr 2024 19:11:27 GMT  
-		Size: 50.5 MB (50532243 bytes)  
+	-	`sha256:891f0ce16db5921fbe0e978bdd898ec8e783a09427a219884b253556316920a8`  
+		Last Modified: Thu, 25 Apr 2024 10:22:32 GMT  
+		Size: 50.5 MB (50532260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c76364c28af1f6eff9f116253d83273c99619fc20581036cb05beb559a062b7f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:27 GMT  
+	-	`sha256:7d7f3904c395c9aeb6040d9bc8b2e9c73a54e0884d04606cc69889e8b8cd4b56`  
+		Last Modified: Thu, 25 Apr 2024 10:22:31 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.1.4-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:4cc6acf1c527a20d357d7385ac8a6227e341ad7cd293933782b503d0c6c3de5b
+$ docker pull cassandra@sha256:c9621a4e15716b0ca960a954fc4c22a540c918a0c48957354436799ead53c8cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4190655 bytes)**  
+-	Total Size: **4.2 MB (4191475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bff9805d4846f4e0489cf24e90890147b84c295cb779e9d55c917d228ed4d97`
+-	Image ID: `sha256:3e25712947f741b3071e9f1d57f6d22ce6c148e216fb9bc44b43ebb4f4f56f87`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:21eb4aaa32b7e2a8912bd9da72f54263f3b4a9b7d9f167c0baebea403f820840`  
-		Last Modified: Thu, 18 Apr 2024 19:11:25 GMT  
+	-	`sha256:502b81b656b9e48905fb4571c5377a474fb509404c8e387df870e7ae496ea7cf`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
 		Size: 4.2 MB (4154808 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:650baad590d9a3da918ace502a776ed555922b2802929468cb2ab0136a61c5bd`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 35.8 KB (35847 bytes)  
+	-	`sha256:03b0508eac7c0f456f3eaaf07ab6449ad736ab65df2c899f5b96ebf22b6658b8`  
+		Last Modified: Thu, 25 Apr 2024 10:22:28 GMT  
+		Size: 36.7 KB (36667 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:4.1.4-jammy` - linux; s390x
 
 ```console
-$ docker pull cassandra@sha256:8e271fe01f0d4a276968e5a6c382bc73dabecd3da0a287c8a5a73a50af55c6aa
+$ docker pull cassandra@sha256:e20e38bed7b3a67b119ebe6f9510c7ec499dd98bbafc704389abe75b910b366c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **146.2 MB (146173563 bytes)**  
+-	Total Size: **146.2 MB (146207683 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a41aee73fde95401b527a16ed253bcfcc12ed898cd9d435da443e84a1c6a132`
+-	Image ID: `sha256:63dae9407c02b3351caa5f3cec527a4581eae57348a60a86e2bff2bda099eeb5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -13473,23 +13473,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:7691b95908cace61ceeec91c44a1a37e7dc2fc3ab5a5fd89f493cefdff9e840e in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -13534,67 +13534,67 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:462f41d0ade66ae0cbbac6954f7e6cb27ec29a3bedfdffeb9b235f5fd3925520`  
-		Last Modified: Tue, 16 Apr 2024 01:51:19 GMT  
-		Size: 40.8 MB (40766133 bytes)  
+	-	`sha256:94af0e093c53d72dd53fc9166542711511b970a638cd6ad5fb8c990afb2a45ac`  
+		Last Modified: Wed, 24 Apr 2024 19:49:52 GMT  
+		Size: 40.8 MB (40799964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffe4d7eb3f743d9e91fa6a779c0e996fbc86c104154c5070cde03b8840eceb7e`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
+	-	`sha256:2e846eab472a97e99cc7d3ce406cb76e887e14bd0b772908522799adbd03b45e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd7aa937dc5864318cd995372e5d54863e03d67bedbe274df435a2a678380965`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:d3c322b3970299d6713ecc912ca5f036000587af3dfded39cbc00252dc72894e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e08a56076694145ed026659ee593606290bd9d23112f53677ffb6c0dc69ac9c1`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 1.7 KB (1729 bytes)  
+	-	`sha256:012876f373ca60723d688b09907e63f29bf827b18bc9b64cb517ce2bba8178e5`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f31a7d156a747e1cbceca7a402b341c3ec81255fdf4f89e3b25fc220ce414272`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 12.2 MB (12184224 bytes)  
+	-	`sha256:366bed68077187fba65714e890c590696a6a2e6a082ad8ff787077413d7dd9b6`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 12.2 MB (12184312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b758be916ec389866416631e7f9c740f03c4fac5de2b7a36fd7c2668915873`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 1.1 MB (1064218 bytes)  
+	-	`sha256:4900936eaafc8158a5663e5f55b0651dcd8b1faf447c4c86a8452133ed30c06d`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 1.1 MB (1064271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bba711c31a804835b3109b4b31d1dd6266590d37e946794b3154a41f48df607b`  
-		Last Modified: Tue, 16 Apr 2024 17:25:21 GMT  
-		Size: 50.5 MB (50531603 bytes)  
+	-	`sha256:131886edddbec4bd36d61c241eddf6e35388951696549a07130da305d58af86a`  
+		Last Modified: Thu, 25 Apr 2024 10:13:19 GMT  
+		Size: 50.5 MB (50531753 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a4f32d3da5f899d0fbac88ced485125c9898fffba7af24471a55b16f70172b0`  
-		Last Modified: Tue, 16 Apr 2024 17:25:20 GMT  
-		Size: 1.2 KB (1219 bytes)  
+	-	`sha256:80267e025f9a56e3189d76333d553da16cc3338de3ec3cb7a78a6c4c2dcae276`  
+		Last Modified: Thu, 25 Apr 2024 10:13:19 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.1.4-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:aedb85bd4e858ee9be6717e9f8c20f59cfa2b37de8ec66118e437e61a281c412
+$ docker pull cassandra@sha256:00e7cdcdb2051b0556927eb330a6636a5e37f1234057ad69c4922d3356c7f932
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4188653 bytes)**  
+-	Total Size: **4.2 MB (4187748 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72ffe27010cff8186ed3aede77a02e395dd97073a4b1b68eb30b06cd3016fa63`
+-	Image ID: `sha256:e4a3bd07eb42cce6af1b407eea718540668ec1049d095db76c4e6a95212513a2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8d85ac40f7488912d462b7321da1b56b9246440065bf2c5efd151b90fd19f45a`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 4.2 MB (4152057 bytes)  
+	-	`sha256:bdc3d9bf3345602c5f6d310dc990edc922625668bf43a7ca534d042b18cb6fd0`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 4.2 MB (4151148 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fa916b50886964edb9182a10c6add5867b4f1e7e94958e74165fd38427639f94`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 36.6 KB (36596 bytes)  
+	-	`sha256:1d8a13d1f48fa0e094e3e9fe4989a4daafb3189211b4df375b2604690d45e0ac`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 36.6 KB (36600 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:5`
 
 ```console
-$ docker pull cassandra@sha256:7508b56b8471dfe2eacefcf96f6ddde1b280da48b70619c5f896a84bdbe9032b
+$ docker pull cassandra@sha256:74e653b7398a35682371f5741e35ebae6e3790d91d9452394c0b8c02cccc1854
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14045,13 +14045,13 @@ $ docker pull cassandra@sha256:3cc89aac51e19303a079b8b03bb5fa7b1e2fa99b4b507343b
 ### `cassandra:5` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:29385d7ce7a5bf5d4da6f48d9d46df9b30a69cee73b32d78cae086f4f173be71
+$ docker pull cassandra@sha256:92d82dd2696a182f500c84b4324c8ef7a1e965c307ba377f0f6a074b71aa5123
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **189.9 MB (189915758 bytes)**  
+-	Total Size: **190.0 MB (189992780 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ceabacc3b9a3e6667806cd320eb35834c44dd5fcdd80dc608bf3ad5bbb22a91`
+-	Image ID: `sha256:538950fea50f7bd52ace2d590a49b1e4e4e4ae68a0c2fecf0cf63c5f6fbdbbb4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -14077,9 +14077,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
-ENV JAVA_VERSION=jdk-17.0.10+7
+ENV JAVA_VERSION=jdk-17.0.11+9
 # Wed, 20 Mar 2024 22:45:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='16080d055da0962fbd6b40f659a98a457cba3efa7ea716d5400cfebe8b935bf0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.10_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='620cc0e7338f2722f3ed076ac65c0fafb575981426bac4e1970860e5e2d048f0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.10_7.tar.gz';          ;;        armhf|arm)          ESUM='0378bdf6769632b182b27ba4e53b17eaefefdbafa3845c15e1bd88a5aeec8442';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.10_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='4e18b60dba540b5c431ff03f74a1c73b22d83151f93b8768241d264d1a53582d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.10_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='c1b2fd232fc55e814479d7585d7ec45bae952a2f4137084f1d99f958c6880a49';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
@@ -14129,73 +14129,73 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63ece49982ab8596fedca8be1b0b439d0e0dabb7e325be0d514cf91142b07a61`  
-		Last Modified: Tue, 16 Apr 2024 02:53:23 GMT  
-		Size: 47.0 MB (47012109 bytes)  
+	-	`sha256:6792ded56cf183f4d7df8f60c596e1582dd1d673241cdd32b90c576f5e6a4279`  
+		Last Modified: Wed, 24 Apr 2024 17:48:57 GMT  
+		Size: 47.1 MB (47089024 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db801fca175d54a6587ecdc15885aa4ca4581a48d99a6f5f00ca697b1116fe54`  
-		Last Modified: Tue, 16 Apr 2024 02:53:13 GMT  
-		Size: 160.0 B  
+	-	`sha256:08ed86b3d45c5a8f894c4218c4c3d1340177d1242a5eb21b6e3012f0f0546f1c`  
+		Last Modified: Wed, 24 Apr 2024 17:48:49 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90005a24d689ce9ae4dc1543fd46f12817ae1bc349788847c79eb0959ff22e92`  
-		Last Modified: Tue, 16 Apr 2024 02:53:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:9f17c2528ba8737b08c739f19be74f270855722d66d518ad5e716dc0b2c3b3db`  
+		Last Modified: Wed, 24 Apr 2024 17:48:49 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7151cc2d237636473f64e860ac14d758ff3125704dd35756dd088372c3464855`  
-		Last Modified: Thu, 18 Apr 2024 19:10:57 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:99bb813dae69422f4c9188899a86d19ef572c13e8b44b88a910008a5bb31f68c`  
+		Last Modified: Thu, 25 Apr 2024 10:20:47 GMT  
+		Size: 1.7 KB (1733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33557b08741188f751d33c9023457683bbedf7271060561b1b2edf40919f4179`  
-		Last Modified: Thu, 18 Apr 2024 19:10:59 GMT  
-		Size: 13.2 MB (13208823 bytes)  
+	-	`sha256:e5c07d9a2e77a8ef02e41a62cc0451f3fc7efc271a3f3e1bb615b8bbe189c30c`  
+		Last Modified: Thu, 25 Apr 2024 10:20:49 GMT  
+		Size: 13.2 MB (13208861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:485eb2f159ab25cdd8bde99e14ed44501a87c5c430e76c7a2c31f070ab2b3c11`  
-		Last Modified: Thu, 18 Apr 2024 19:10:59 GMT  
-		Size: 1.0 MB (1019005 bytes)  
+	-	`sha256:cc0455379e03432ecc223e0b94c6b1017e3a57513ac23323cb955befa445880e`  
+		Last Modified: Thu, 25 Apr 2024 10:20:48 GMT  
+		Size: 1.0 MB (1019029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f44dc6ecc2d84359c9393003b8914a40adfa97297db2acf30d09e7f244459f05`  
-		Last Modified: Thu, 18 Apr 2024 19:11:01 GMT  
-		Size: 79.3 MB (79317536 bytes)  
+	-	`sha256:b1f0a577155ee68361499e0298f2a6edd042523143316ae22157ef8e3cd0e9b6`  
+		Last Modified: Thu, 25 Apr 2024 10:20:51 GMT  
+		Size: 79.3 MB (79317579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb89e4ab84dc33e8938e98f250eab41089e34f93a13d8b66edf21c213bf2b73`  
-		Last Modified: Thu, 18 Apr 2024 19:11:00 GMT  
-		Size: 1.2 KB (1219 bytes)  
+	-	`sha256:ff5e801944529b017fbcf9975fbdcc378f9bdac10432d2641fc6bba4cd0eef58`  
+		Last Modified: Thu, 25 Apr 2024 10:20:50 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:9b010bfbd104907b038f8ec926a752b14dba6fe0a0560734508f5d5610b662f1
+$ docker pull cassandra@sha256:c07a8483a779296a155b561a452428cdf185bdbb766f27fe249bd461aa23ef1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4224671 bytes)**  
+-	Total Size: **4.2 MB (4225486 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfcbe143fcdbd9e454337506b64bb36e78e226c54521e26ce36c548393aef870`
+-	Image ID: `sha256:67e799b936b23cd97f46c3ede6ed13779ec99d5624bdfe228338cbd94e58cfbb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:56f22ef0bbc99da4c17676681844338c2eab487bb027bb9a2b021721e4bba651`  
-		Last Modified: Thu, 18 Apr 2024 19:10:58 GMT  
+	-	`sha256:c6fbdc3c813a6f32f09f8faf01ce7d55a262ca8545b11770b20ed0d9eb7bcd44`  
+		Last Modified: Thu, 25 Apr 2024 10:20:47 GMT  
 		Size: 4.2 MB (4189414 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4e78cbe1554263a6e55cdf5feca02c503fc19ebbea94f5465d6c71d2eea0fed5`  
-		Last Modified: Thu, 18 Apr 2024 19:10:57 GMT  
-		Size: 35.3 KB (35257 bytes)  
+	-	`sha256:e9a2c743bc5d2c1c6d0af18907d45ae2628c54044f59fea5d466e9620bad6748`  
+		Last Modified: Thu, 25 Apr 2024 10:20:47 GMT  
+		Size: 36.1 KB (36072 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:5` - linux; s390x
 
 ```console
-$ docker pull cassandra@sha256:25d2300649cfb75dd66f6fed591fce3f465ab8d9de864c48f6c5ae97b3c2939f
+$ docker pull cassandra@sha256:e5152b9cacc2e564a96f860e27d942779530d9e79918a971efdcb29a93620a8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **178.0 MB (177958514 bytes)**  
+-	Total Size: **178.0 MB (178024018 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4148db9953fdc91d2ab7ecf952a2e8eb2936474e65651caffd283db45c5df41`
+-	Image ID: `sha256:6106d0a8029d70a03c5949992b5b6d8449efb73318ef61f89d0efa13fd7ab9dd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -14221,9 +14221,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
-ENV JAVA_VERSION=jdk-17.0.10+7
+ENV JAVA_VERSION=jdk-17.0.11+9
 # Wed, 20 Mar 2024 22:45:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='16080d055da0962fbd6b40f659a98a457cba3efa7ea716d5400cfebe8b935bf0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.10_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='620cc0e7338f2722f3ed076ac65c0fafb575981426bac4e1970860e5e2d048f0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.10_7.tar.gz';          ;;        armhf|arm)          ESUM='0378bdf6769632b182b27ba4e53b17eaefefdbafa3845c15e1bd88a5aeec8442';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.10_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='4e18b60dba540b5c431ff03f74a1c73b22d83151f93b8768241d264d1a53582d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.10_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='c1b2fd232fc55e814479d7585d7ec45bae952a2f4137084f1d99f958c6880a49';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
@@ -14273,67 +14273,67 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdfebbced680b7390af0f88a97ca932f8f27bff80826bc87eb9bf49c145e698d`  
-		Last Modified: Tue, 16 Apr 2024 01:52:25 GMT  
-		Size: 43.8 MB (43765845 bytes)  
+	-	`sha256:11b76b800695d16970dd53f9f27a10ce1860d85197ae77d53b6dd08e9b836d7d`  
+		Last Modified: Wed, 24 Apr 2024 19:51:35 GMT  
+		Size: 43.8 MB (43831009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61d3da2d88573089bc4ee694af587d7d08402f351e99599db6d1da2b3604eae0`  
-		Last Modified: Tue, 16 Apr 2024 01:52:19 GMT  
-		Size: 159.0 B  
+	-	`sha256:9b983aaa2bcfdd00ffe3569f744782d2543f270663418d1ae509a7abef90f47e`  
+		Last Modified: Wed, 24 Apr 2024 19:51:29 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e5c2b092b12993a47168eec02810c84eeb0fd925b4dd1e08fedb626dd3fb089`  
-		Last Modified: Tue, 16 Apr 2024 01:52:19 GMT  
-		Size: 734.0 B  
+	-	`sha256:80136a5c62fb06ed9b371242941ea9c97e94473ecbfac8b266652b4f90eb8972`  
+		Last Modified: Wed, 24 Apr 2024 19:51:29 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45908384d450ae1abf01126d259808539098e47921bb04028279bf7537cbffed`  
-		Last Modified: Tue, 16 Apr 2024 17:22:57 GMT  
-		Size: 1.7 KB (1728 bytes)  
+	-	`sha256:dff989aebc56e1f24a61b2e4e857374d2e204b983377534e124eb351e7825942`  
+		Last Modified: Thu, 25 Apr 2024 10:11:36 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:945ab5af4a90465aa7b32978d16f78198c38604f44bd5eb7e353631298a5e125`  
-		Last Modified: Tue, 16 Apr 2024 17:22:57 GMT  
-		Size: 12.2 MB (12184173 bytes)  
+	-	`sha256:de064834bb7f2f0fe82cfc0ec906052b04689be95ec6623288defcc2592365f0`  
+		Last Modified: Thu, 25 Apr 2024 10:11:37 GMT  
+		Size: 12.2 MB (12184332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8269c19cd7bb736826d88c78e3d9eb5dac4d6162060ee67b851d50dfe7b0ea20`  
-		Last Modified: Tue, 16 Apr 2024 17:22:57 GMT  
-		Size: 1.1 MB (1064203 bytes)  
+	-	`sha256:a8118bc4b82551c56f9a1dda40e3cfccf0e21bbf907f2fc38d7f16adf50774b5`  
+		Last Modified: Thu, 25 Apr 2024 10:11:37 GMT  
+		Size: 1.1 MB (1064263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99070bb8a99ec3dc93013a20407f0df23edc19fc564863724d4cc913a5b65e73`  
-		Last Modified: Tue, 16 Apr 2024 17:22:59 GMT  
-		Size: 79.3 MB (79316913 bytes)  
+	-	`sha256:8dc141ef4fb01437f85684f10a6cfb124db9c32e3b386cf5ffa37d22b3ef9e94`  
+		Last Modified: Thu, 25 Apr 2024 10:11:38 GMT  
+		Size: 79.3 MB (79317028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6a1a88cfe1c7a27becbc453d012d2ccc44f226007095f828719a9870a1876d0`  
-		Last Modified: Tue, 16 Apr 2024 17:22:58 GMT  
-		Size: 1.2 KB (1215 bytes)  
+	-	`sha256:89ff3dd5d65701fbcfe9458d5b6076869a1566f55fb510c667b841d3830d8123`  
+		Last Modified: Thu, 25 Apr 2024 10:11:37 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:57bb1efcd42aaefaade1ac72178d739552b75bb0ea87939bfa9b9eca4cbcfa73
+$ docker pull cassandra@sha256:73572061b5dd94f42e05fb161be1f7d862214b6a77e94b11453c5c0643318f6f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4222689 bytes)**  
+-	Total Size: **4.2 MB (4221783 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4ed2731a11cd57cf1f82debbbdbce8321da81d67577711d719b09644ca3f94c`
+-	Image ID: `sha256:ff6e2471fb6509a57ddd5ff29a8b394170dd3356b3e2be4d902fda7e0477b710`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:046157a70e3aa58ba624d79f6710ae2438ca5ccf0af796eb7b6fef41dc983586`  
-		Last Modified: Tue, 16 Apr 2024 17:22:55 GMT  
-		Size: 4.2 MB (4186675 bytes)  
+	-	`sha256:ccb44add5de72972ea173c95188148846ab6b00bc962787e53612a0d754cfa57`  
+		Last Modified: Thu, 25 Apr 2024 10:11:36 GMT  
+		Size: 4.2 MB (4185766 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0e83944684c63cb460068bec129a431a66a57c868c11aa26daf1d8036f99d172`  
-		Last Modified: Tue, 16 Apr 2024 17:22:55 GMT  
-		Size: 36.0 KB (36014 bytes)  
+	-	`sha256:258f66de6fb7b2f848c94696bcad56453a139e0925df8047f77b038232a3a216`  
+		Last Modified: Thu, 25 Apr 2024 10:11:36 GMT  
+		Size: 36.0 KB (36017 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:5-jammy`
 
 ```console
-$ docker pull cassandra@sha256:7508b56b8471dfe2eacefcf96f6ddde1b280da48b70619c5f896a84bdbe9032b
+$ docker pull cassandra@sha256:74e653b7398a35682371f5741e35ebae6e3790d91d9452394c0b8c02cccc1854
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14784,13 +14784,13 @@ $ docker pull cassandra@sha256:3cc89aac51e19303a079b8b03bb5fa7b1e2fa99b4b507343b
 ### `cassandra:5-jammy` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:29385d7ce7a5bf5d4da6f48d9d46df9b30a69cee73b32d78cae086f4f173be71
+$ docker pull cassandra@sha256:92d82dd2696a182f500c84b4324c8ef7a1e965c307ba377f0f6a074b71aa5123
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **189.9 MB (189915758 bytes)**  
+-	Total Size: **190.0 MB (189992780 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ceabacc3b9a3e6667806cd320eb35834c44dd5fcdd80dc608bf3ad5bbb22a91`
+-	Image ID: `sha256:538950fea50f7bd52ace2d590a49b1e4e4e4ae68a0c2fecf0cf63c5f6fbdbbb4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -14816,9 +14816,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
-ENV JAVA_VERSION=jdk-17.0.10+7
+ENV JAVA_VERSION=jdk-17.0.11+9
 # Wed, 20 Mar 2024 22:45:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='16080d055da0962fbd6b40f659a98a457cba3efa7ea716d5400cfebe8b935bf0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.10_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='620cc0e7338f2722f3ed076ac65c0fafb575981426bac4e1970860e5e2d048f0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.10_7.tar.gz';          ;;        armhf|arm)          ESUM='0378bdf6769632b182b27ba4e53b17eaefefdbafa3845c15e1bd88a5aeec8442';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.10_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='4e18b60dba540b5c431ff03f74a1c73b22d83151f93b8768241d264d1a53582d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.10_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='c1b2fd232fc55e814479d7585d7ec45bae952a2f4137084f1d99f958c6880a49';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
@@ -14868,73 +14868,73 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63ece49982ab8596fedca8be1b0b439d0e0dabb7e325be0d514cf91142b07a61`  
-		Last Modified: Tue, 16 Apr 2024 02:53:23 GMT  
-		Size: 47.0 MB (47012109 bytes)  
+	-	`sha256:6792ded56cf183f4d7df8f60c596e1582dd1d673241cdd32b90c576f5e6a4279`  
+		Last Modified: Wed, 24 Apr 2024 17:48:57 GMT  
+		Size: 47.1 MB (47089024 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db801fca175d54a6587ecdc15885aa4ca4581a48d99a6f5f00ca697b1116fe54`  
-		Last Modified: Tue, 16 Apr 2024 02:53:13 GMT  
-		Size: 160.0 B  
+	-	`sha256:08ed86b3d45c5a8f894c4218c4c3d1340177d1242a5eb21b6e3012f0f0546f1c`  
+		Last Modified: Wed, 24 Apr 2024 17:48:49 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90005a24d689ce9ae4dc1543fd46f12817ae1bc349788847c79eb0959ff22e92`  
-		Last Modified: Tue, 16 Apr 2024 02:53:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:9f17c2528ba8737b08c739f19be74f270855722d66d518ad5e716dc0b2c3b3db`  
+		Last Modified: Wed, 24 Apr 2024 17:48:49 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7151cc2d237636473f64e860ac14d758ff3125704dd35756dd088372c3464855`  
-		Last Modified: Thu, 18 Apr 2024 19:10:57 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:99bb813dae69422f4c9188899a86d19ef572c13e8b44b88a910008a5bb31f68c`  
+		Last Modified: Thu, 25 Apr 2024 10:20:47 GMT  
+		Size: 1.7 KB (1733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33557b08741188f751d33c9023457683bbedf7271060561b1b2edf40919f4179`  
-		Last Modified: Thu, 18 Apr 2024 19:10:59 GMT  
-		Size: 13.2 MB (13208823 bytes)  
+	-	`sha256:e5c07d9a2e77a8ef02e41a62cc0451f3fc7efc271a3f3e1bb615b8bbe189c30c`  
+		Last Modified: Thu, 25 Apr 2024 10:20:49 GMT  
+		Size: 13.2 MB (13208861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:485eb2f159ab25cdd8bde99e14ed44501a87c5c430e76c7a2c31f070ab2b3c11`  
-		Last Modified: Thu, 18 Apr 2024 19:10:59 GMT  
-		Size: 1.0 MB (1019005 bytes)  
+	-	`sha256:cc0455379e03432ecc223e0b94c6b1017e3a57513ac23323cb955befa445880e`  
+		Last Modified: Thu, 25 Apr 2024 10:20:48 GMT  
+		Size: 1.0 MB (1019029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f44dc6ecc2d84359c9393003b8914a40adfa97297db2acf30d09e7f244459f05`  
-		Last Modified: Thu, 18 Apr 2024 19:11:01 GMT  
-		Size: 79.3 MB (79317536 bytes)  
+	-	`sha256:b1f0a577155ee68361499e0298f2a6edd042523143316ae22157ef8e3cd0e9b6`  
+		Last Modified: Thu, 25 Apr 2024 10:20:51 GMT  
+		Size: 79.3 MB (79317579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb89e4ab84dc33e8938e98f250eab41089e34f93a13d8b66edf21c213bf2b73`  
-		Last Modified: Thu, 18 Apr 2024 19:11:00 GMT  
-		Size: 1.2 KB (1219 bytes)  
+	-	`sha256:ff5e801944529b017fbcf9975fbdcc378f9bdac10432d2641fc6bba4cd0eef58`  
+		Last Modified: Thu, 25 Apr 2024 10:20:50 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:9b010bfbd104907b038f8ec926a752b14dba6fe0a0560734508f5d5610b662f1
+$ docker pull cassandra@sha256:c07a8483a779296a155b561a452428cdf185bdbb766f27fe249bd461aa23ef1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4224671 bytes)**  
+-	Total Size: **4.2 MB (4225486 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfcbe143fcdbd9e454337506b64bb36e78e226c54521e26ce36c548393aef870`
+-	Image ID: `sha256:67e799b936b23cd97f46c3ede6ed13779ec99d5624bdfe228338cbd94e58cfbb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:56f22ef0bbc99da4c17676681844338c2eab487bb027bb9a2b021721e4bba651`  
-		Last Modified: Thu, 18 Apr 2024 19:10:58 GMT  
+	-	`sha256:c6fbdc3c813a6f32f09f8faf01ce7d55a262ca8545b11770b20ed0d9eb7bcd44`  
+		Last Modified: Thu, 25 Apr 2024 10:20:47 GMT  
 		Size: 4.2 MB (4189414 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4e78cbe1554263a6e55cdf5feca02c503fc19ebbea94f5465d6c71d2eea0fed5`  
-		Last Modified: Thu, 18 Apr 2024 19:10:57 GMT  
-		Size: 35.3 KB (35257 bytes)  
+	-	`sha256:e9a2c743bc5d2c1c6d0af18907d45ae2628c54044f59fea5d466e9620bad6748`  
+		Last Modified: Thu, 25 Apr 2024 10:20:47 GMT  
+		Size: 36.1 KB (36072 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:5-jammy` - linux; s390x
 
 ```console
-$ docker pull cassandra@sha256:25d2300649cfb75dd66f6fed591fce3f465ab8d9de864c48f6c5ae97b3c2939f
+$ docker pull cassandra@sha256:e5152b9cacc2e564a96f860e27d942779530d9e79918a971efdcb29a93620a8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **178.0 MB (177958514 bytes)**  
+-	Total Size: **178.0 MB (178024018 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4148db9953fdc91d2ab7ecf952a2e8eb2936474e65651caffd283db45c5df41`
+-	Image ID: `sha256:6106d0a8029d70a03c5949992b5b6d8449efb73318ef61f89d0efa13fd7ab9dd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -14960,9 +14960,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
-ENV JAVA_VERSION=jdk-17.0.10+7
+ENV JAVA_VERSION=jdk-17.0.11+9
 # Wed, 20 Mar 2024 22:45:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='16080d055da0962fbd6b40f659a98a457cba3efa7ea716d5400cfebe8b935bf0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.10_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='620cc0e7338f2722f3ed076ac65c0fafb575981426bac4e1970860e5e2d048f0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.10_7.tar.gz';          ;;        armhf|arm)          ESUM='0378bdf6769632b182b27ba4e53b17eaefefdbafa3845c15e1bd88a5aeec8442';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.10_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='4e18b60dba540b5c431ff03f74a1c73b22d83151f93b8768241d264d1a53582d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.10_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='c1b2fd232fc55e814479d7585d7ec45bae952a2f4137084f1d99f958c6880a49';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
@@ -15012,67 +15012,67 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdfebbced680b7390af0f88a97ca932f8f27bff80826bc87eb9bf49c145e698d`  
-		Last Modified: Tue, 16 Apr 2024 01:52:25 GMT  
-		Size: 43.8 MB (43765845 bytes)  
+	-	`sha256:11b76b800695d16970dd53f9f27a10ce1860d85197ae77d53b6dd08e9b836d7d`  
+		Last Modified: Wed, 24 Apr 2024 19:51:35 GMT  
+		Size: 43.8 MB (43831009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61d3da2d88573089bc4ee694af587d7d08402f351e99599db6d1da2b3604eae0`  
-		Last Modified: Tue, 16 Apr 2024 01:52:19 GMT  
-		Size: 159.0 B  
+	-	`sha256:9b983aaa2bcfdd00ffe3569f744782d2543f270663418d1ae509a7abef90f47e`  
+		Last Modified: Wed, 24 Apr 2024 19:51:29 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e5c2b092b12993a47168eec02810c84eeb0fd925b4dd1e08fedb626dd3fb089`  
-		Last Modified: Tue, 16 Apr 2024 01:52:19 GMT  
-		Size: 734.0 B  
+	-	`sha256:80136a5c62fb06ed9b371242941ea9c97e94473ecbfac8b266652b4f90eb8972`  
+		Last Modified: Wed, 24 Apr 2024 19:51:29 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45908384d450ae1abf01126d259808539098e47921bb04028279bf7537cbffed`  
-		Last Modified: Tue, 16 Apr 2024 17:22:57 GMT  
-		Size: 1.7 KB (1728 bytes)  
+	-	`sha256:dff989aebc56e1f24a61b2e4e857374d2e204b983377534e124eb351e7825942`  
+		Last Modified: Thu, 25 Apr 2024 10:11:36 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:945ab5af4a90465aa7b32978d16f78198c38604f44bd5eb7e353631298a5e125`  
-		Last Modified: Tue, 16 Apr 2024 17:22:57 GMT  
-		Size: 12.2 MB (12184173 bytes)  
+	-	`sha256:de064834bb7f2f0fe82cfc0ec906052b04689be95ec6623288defcc2592365f0`  
+		Last Modified: Thu, 25 Apr 2024 10:11:37 GMT  
+		Size: 12.2 MB (12184332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8269c19cd7bb736826d88c78e3d9eb5dac4d6162060ee67b851d50dfe7b0ea20`  
-		Last Modified: Tue, 16 Apr 2024 17:22:57 GMT  
-		Size: 1.1 MB (1064203 bytes)  
+	-	`sha256:a8118bc4b82551c56f9a1dda40e3cfccf0e21bbf907f2fc38d7f16adf50774b5`  
+		Last Modified: Thu, 25 Apr 2024 10:11:37 GMT  
+		Size: 1.1 MB (1064263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99070bb8a99ec3dc93013a20407f0df23edc19fc564863724d4cc913a5b65e73`  
-		Last Modified: Tue, 16 Apr 2024 17:22:59 GMT  
-		Size: 79.3 MB (79316913 bytes)  
+	-	`sha256:8dc141ef4fb01437f85684f10a6cfb124db9c32e3b386cf5ffa37d22b3ef9e94`  
+		Last Modified: Thu, 25 Apr 2024 10:11:38 GMT  
+		Size: 79.3 MB (79317028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6a1a88cfe1c7a27becbc453d012d2ccc44f226007095f828719a9870a1876d0`  
-		Last Modified: Tue, 16 Apr 2024 17:22:58 GMT  
-		Size: 1.2 KB (1215 bytes)  
+	-	`sha256:89ff3dd5d65701fbcfe9458d5b6076869a1566f55fb510c667b841d3830d8123`  
+		Last Modified: Thu, 25 Apr 2024 10:11:37 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:57bb1efcd42aaefaade1ac72178d739552b75bb0ea87939bfa9b9eca4cbcfa73
+$ docker pull cassandra@sha256:73572061b5dd94f42e05fb161be1f7d862214b6a77e94b11453c5c0643318f6f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4222689 bytes)**  
+-	Total Size: **4.2 MB (4221783 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4ed2731a11cd57cf1f82debbbdbce8321da81d67577711d719b09644ca3f94c`
+-	Image ID: `sha256:ff6e2471fb6509a57ddd5ff29a8b394170dd3356b3e2be4d902fda7e0477b710`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:046157a70e3aa58ba624d79f6710ae2438ca5ccf0af796eb7b6fef41dc983586`  
-		Last Modified: Tue, 16 Apr 2024 17:22:55 GMT  
-		Size: 4.2 MB (4186675 bytes)  
+	-	`sha256:ccb44add5de72972ea173c95188148846ab6b00bc962787e53612a0d754cfa57`  
+		Last Modified: Thu, 25 Apr 2024 10:11:36 GMT  
+		Size: 4.2 MB (4185766 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0e83944684c63cb460068bec129a431a66a57c868c11aa26daf1d8036f99d172`  
-		Last Modified: Tue, 16 Apr 2024 17:22:55 GMT  
-		Size: 36.0 KB (36014 bytes)  
+	-	`sha256:258f66de6fb7b2f848c94696bcad56453a139e0925df8047f77b038232a3a216`  
+		Last Modified: Thu, 25 Apr 2024 10:11:36 GMT  
+		Size: 36.0 KB (36017 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:5.0`
 
 ```console
-$ docker pull cassandra@sha256:7508b56b8471dfe2eacefcf96f6ddde1b280da48b70619c5f896a84bdbe9032b
+$ docker pull cassandra@sha256:74e653b7398a35682371f5741e35ebae6e3790d91d9452394c0b8c02cccc1854
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15523,13 +15523,13 @@ $ docker pull cassandra@sha256:3cc89aac51e19303a079b8b03bb5fa7b1e2fa99b4b507343b
 ### `cassandra:5.0` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:29385d7ce7a5bf5d4da6f48d9d46df9b30a69cee73b32d78cae086f4f173be71
+$ docker pull cassandra@sha256:92d82dd2696a182f500c84b4324c8ef7a1e965c307ba377f0f6a074b71aa5123
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **189.9 MB (189915758 bytes)**  
+-	Total Size: **190.0 MB (189992780 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ceabacc3b9a3e6667806cd320eb35834c44dd5fcdd80dc608bf3ad5bbb22a91`
+-	Image ID: `sha256:538950fea50f7bd52ace2d590a49b1e4e4e4ae68a0c2fecf0cf63c5f6fbdbbb4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -15555,9 +15555,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
-ENV JAVA_VERSION=jdk-17.0.10+7
+ENV JAVA_VERSION=jdk-17.0.11+9
 # Wed, 20 Mar 2024 22:45:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='16080d055da0962fbd6b40f659a98a457cba3efa7ea716d5400cfebe8b935bf0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.10_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='620cc0e7338f2722f3ed076ac65c0fafb575981426bac4e1970860e5e2d048f0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.10_7.tar.gz';          ;;        armhf|arm)          ESUM='0378bdf6769632b182b27ba4e53b17eaefefdbafa3845c15e1bd88a5aeec8442';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.10_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='4e18b60dba540b5c431ff03f74a1c73b22d83151f93b8768241d264d1a53582d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.10_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='c1b2fd232fc55e814479d7585d7ec45bae952a2f4137084f1d99f958c6880a49';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
@@ -15607,73 +15607,73 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63ece49982ab8596fedca8be1b0b439d0e0dabb7e325be0d514cf91142b07a61`  
-		Last Modified: Tue, 16 Apr 2024 02:53:23 GMT  
-		Size: 47.0 MB (47012109 bytes)  
+	-	`sha256:6792ded56cf183f4d7df8f60c596e1582dd1d673241cdd32b90c576f5e6a4279`  
+		Last Modified: Wed, 24 Apr 2024 17:48:57 GMT  
+		Size: 47.1 MB (47089024 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db801fca175d54a6587ecdc15885aa4ca4581a48d99a6f5f00ca697b1116fe54`  
-		Last Modified: Tue, 16 Apr 2024 02:53:13 GMT  
-		Size: 160.0 B  
+	-	`sha256:08ed86b3d45c5a8f894c4218c4c3d1340177d1242a5eb21b6e3012f0f0546f1c`  
+		Last Modified: Wed, 24 Apr 2024 17:48:49 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90005a24d689ce9ae4dc1543fd46f12817ae1bc349788847c79eb0959ff22e92`  
-		Last Modified: Tue, 16 Apr 2024 02:53:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:9f17c2528ba8737b08c739f19be74f270855722d66d518ad5e716dc0b2c3b3db`  
+		Last Modified: Wed, 24 Apr 2024 17:48:49 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7151cc2d237636473f64e860ac14d758ff3125704dd35756dd088372c3464855`  
-		Last Modified: Thu, 18 Apr 2024 19:10:57 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:99bb813dae69422f4c9188899a86d19ef572c13e8b44b88a910008a5bb31f68c`  
+		Last Modified: Thu, 25 Apr 2024 10:20:47 GMT  
+		Size: 1.7 KB (1733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33557b08741188f751d33c9023457683bbedf7271060561b1b2edf40919f4179`  
-		Last Modified: Thu, 18 Apr 2024 19:10:59 GMT  
-		Size: 13.2 MB (13208823 bytes)  
+	-	`sha256:e5c07d9a2e77a8ef02e41a62cc0451f3fc7efc271a3f3e1bb615b8bbe189c30c`  
+		Last Modified: Thu, 25 Apr 2024 10:20:49 GMT  
+		Size: 13.2 MB (13208861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:485eb2f159ab25cdd8bde99e14ed44501a87c5c430e76c7a2c31f070ab2b3c11`  
-		Last Modified: Thu, 18 Apr 2024 19:10:59 GMT  
-		Size: 1.0 MB (1019005 bytes)  
+	-	`sha256:cc0455379e03432ecc223e0b94c6b1017e3a57513ac23323cb955befa445880e`  
+		Last Modified: Thu, 25 Apr 2024 10:20:48 GMT  
+		Size: 1.0 MB (1019029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f44dc6ecc2d84359c9393003b8914a40adfa97297db2acf30d09e7f244459f05`  
-		Last Modified: Thu, 18 Apr 2024 19:11:01 GMT  
-		Size: 79.3 MB (79317536 bytes)  
+	-	`sha256:b1f0a577155ee68361499e0298f2a6edd042523143316ae22157ef8e3cd0e9b6`  
+		Last Modified: Thu, 25 Apr 2024 10:20:51 GMT  
+		Size: 79.3 MB (79317579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb89e4ab84dc33e8938e98f250eab41089e34f93a13d8b66edf21c213bf2b73`  
-		Last Modified: Thu, 18 Apr 2024 19:11:00 GMT  
-		Size: 1.2 KB (1219 bytes)  
+	-	`sha256:ff5e801944529b017fbcf9975fbdcc378f9bdac10432d2641fc6bba4cd0eef58`  
+		Last Modified: Thu, 25 Apr 2024 10:20:50 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5.0` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:9b010bfbd104907b038f8ec926a752b14dba6fe0a0560734508f5d5610b662f1
+$ docker pull cassandra@sha256:c07a8483a779296a155b561a452428cdf185bdbb766f27fe249bd461aa23ef1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4224671 bytes)**  
+-	Total Size: **4.2 MB (4225486 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfcbe143fcdbd9e454337506b64bb36e78e226c54521e26ce36c548393aef870`
+-	Image ID: `sha256:67e799b936b23cd97f46c3ede6ed13779ec99d5624bdfe228338cbd94e58cfbb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:56f22ef0bbc99da4c17676681844338c2eab487bb027bb9a2b021721e4bba651`  
-		Last Modified: Thu, 18 Apr 2024 19:10:58 GMT  
+	-	`sha256:c6fbdc3c813a6f32f09f8faf01ce7d55a262ca8545b11770b20ed0d9eb7bcd44`  
+		Last Modified: Thu, 25 Apr 2024 10:20:47 GMT  
 		Size: 4.2 MB (4189414 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4e78cbe1554263a6e55cdf5feca02c503fc19ebbea94f5465d6c71d2eea0fed5`  
-		Last Modified: Thu, 18 Apr 2024 19:10:57 GMT  
-		Size: 35.3 KB (35257 bytes)  
+	-	`sha256:e9a2c743bc5d2c1c6d0af18907d45ae2628c54044f59fea5d466e9620bad6748`  
+		Last Modified: Thu, 25 Apr 2024 10:20:47 GMT  
+		Size: 36.1 KB (36072 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:5.0` - linux; s390x
 
 ```console
-$ docker pull cassandra@sha256:25d2300649cfb75dd66f6fed591fce3f465ab8d9de864c48f6c5ae97b3c2939f
+$ docker pull cassandra@sha256:e5152b9cacc2e564a96f860e27d942779530d9e79918a971efdcb29a93620a8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **178.0 MB (177958514 bytes)**  
+-	Total Size: **178.0 MB (178024018 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4148db9953fdc91d2ab7ecf952a2e8eb2936474e65651caffd283db45c5df41`
+-	Image ID: `sha256:6106d0a8029d70a03c5949992b5b6d8449efb73318ef61f89d0efa13fd7ab9dd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -15699,9 +15699,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
-ENV JAVA_VERSION=jdk-17.0.10+7
+ENV JAVA_VERSION=jdk-17.0.11+9
 # Wed, 20 Mar 2024 22:45:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='16080d055da0962fbd6b40f659a98a457cba3efa7ea716d5400cfebe8b935bf0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.10_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='620cc0e7338f2722f3ed076ac65c0fafb575981426bac4e1970860e5e2d048f0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.10_7.tar.gz';          ;;        armhf|arm)          ESUM='0378bdf6769632b182b27ba4e53b17eaefefdbafa3845c15e1bd88a5aeec8442';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.10_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='4e18b60dba540b5c431ff03f74a1c73b22d83151f93b8768241d264d1a53582d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.10_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='c1b2fd232fc55e814479d7585d7ec45bae952a2f4137084f1d99f958c6880a49';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
@@ -15751,67 +15751,67 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdfebbced680b7390af0f88a97ca932f8f27bff80826bc87eb9bf49c145e698d`  
-		Last Modified: Tue, 16 Apr 2024 01:52:25 GMT  
-		Size: 43.8 MB (43765845 bytes)  
+	-	`sha256:11b76b800695d16970dd53f9f27a10ce1860d85197ae77d53b6dd08e9b836d7d`  
+		Last Modified: Wed, 24 Apr 2024 19:51:35 GMT  
+		Size: 43.8 MB (43831009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61d3da2d88573089bc4ee694af587d7d08402f351e99599db6d1da2b3604eae0`  
-		Last Modified: Tue, 16 Apr 2024 01:52:19 GMT  
-		Size: 159.0 B  
+	-	`sha256:9b983aaa2bcfdd00ffe3569f744782d2543f270663418d1ae509a7abef90f47e`  
+		Last Modified: Wed, 24 Apr 2024 19:51:29 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e5c2b092b12993a47168eec02810c84eeb0fd925b4dd1e08fedb626dd3fb089`  
-		Last Modified: Tue, 16 Apr 2024 01:52:19 GMT  
-		Size: 734.0 B  
+	-	`sha256:80136a5c62fb06ed9b371242941ea9c97e94473ecbfac8b266652b4f90eb8972`  
+		Last Modified: Wed, 24 Apr 2024 19:51:29 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45908384d450ae1abf01126d259808539098e47921bb04028279bf7537cbffed`  
-		Last Modified: Tue, 16 Apr 2024 17:22:57 GMT  
-		Size: 1.7 KB (1728 bytes)  
+	-	`sha256:dff989aebc56e1f24a61b2e4e857374d2e204b983377534e124eb351e7825942`  
+		Last Modified: Thu, 25 Apr 2024 10:11:36 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:945ab5af4a90465aa7b32978d16f78198c38604f44bd5eb7e353631298a5e125`  
-		Last Modified: Tue, 16 Apr 2024 17:22:57 GMT  
-		Size: 12.2 MB (12184173 bytes)  
+	-	`sha256:de064834bb7f2f0fe82cfc0ec906052b04689be95ec6623288defcc2592365f0`  
+		Last Modified: Thu, 25 Apr 2024 10:11:37 GMT  
+		Size: 12.2 MB (12184332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8269c19cd7bb736826d88c78e3d9eb5dac4d6162060ee67b851d50dfe7b0ea20`  
-		Last Modified: Tue, 16 Apr 2024 17:22:57 GMT  
-		Size: 1.1 MB (1064203 bytes)  
+	-	`sha256:a8118bc4b82551c56f9a1dda40e3cfccf0e21bbf907f2fc38d7f16adf50774b5`  
+		Last Modified: Thu, 25 Apr 2024 10:11:37 GMT  
+		Size: 1.1 MB (1064263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99070bb8a99ec3dc93013a20407f0df23edc19fc564863724d4cc913a5b65e73`  
-		Last Modified: Tue, 16 Apr 2024 17:22:59 GMT  
-		Size: 79.3 MB (79316913 bytes)  
+	-	`sha256:8dc141ef4fb01437f85684f10a6cfb124db9c32e3b386cf5ffa37d22b3ef9e94`  
+		Last Modified: Thu, 25 Apr 2024 10:11:38 GMT  
+		Size: 79.3 MB (79317028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6a1a88cfe1c7a27becbc453d012d2ccc44f226007095f828719a9870a1876d0`  
-		Last Modified: Tue, 16 Apr 2024 17:22:58 GMT  
-		Size: 1.2 KB (1215 bytes)  
+	-	`sha256:89ff3dd5d65701fbcfe9458d5b6076869a1566f55fb510c667b841d3830d8123`  
+		Last Modified: Thu, 25 Apr 2024 10:11:37 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5.0` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:57bb1efcd42aaefaade1ac72178d739552b75bb0ea87939bfa9b9eca4cbcfa73
+$ docker pull cassandra@sha256:73572061b5dd94f42e05fb161be1f7d862214b6a77e94b11453c5c0643318f6f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4222689 bytes)**  
+-	Total Size: **4.2 MB (4221783 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4ed2731a11cd57cf1f82debbbdbce8321da81d67577711d719b09644ca3f94c`
+-	Image ID: `sha256:ff6e2471fb6509a57ddd5ff29a8b394170dd3356b3e2be4d902fda7e0477b710`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:046157a70e3aa58ba624d79f6710ae2438ca5ccf0af796eb7b6fef41dc983586`  
-		Last Modified: Tue, 16 Apr 2024 17:22:55 GMT  
-		Size: 4.2 MB (4186675 bytes)  
+	-	`sha256:ccb44add5de72972ea173c95188148846ab6b00bc962787e53612a0d754cfa57`  
+		Last Modified: Thu, 25 Apr 2024 10:11:36 GMT  
+		Size: 4.2 MB (4185766 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0e83944684c63cb460068bec129a431a66a57c868c11aa26daf1d8036f99d172`  
-		Last Modified: Tue, 16 Apr 2024 17:22:55 GMT  
-		Size: 36.0 KB (36014 bytes)  
+	-	`sha256:258f66de6fb7b2f848c94696bcad56453a139e0925df8047f77b038232a3a216`  
+		Last Modified: Thu, 25 Apr 2024 10:11:36 GMT  
+		Size: 36.0 KB (36017 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:5.0-beta1`
 
 ```console
-$ docker pull cassandra@sha256:7508b56b8471dfe2eacefcf96f6ddde1b280da48b70619c5f896a84bdbe9032b
+$ docker pull cassandra@sha256:74e653b7398a35682371f5741e35ebae6e3790d91d9452394c0b8c02cccc1854
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16262,13 +16262,13 @@ $ docker pull cassandra@sha256:3cc89aac51e19303a079b8b03bb5fa7b1e2fa99b4b507343b
 ### `cassandra:5.0-beta1` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:29385d7ce7a5bf5d4da6f48d9d46df9b30a69cee73b32d78cae086f4f173be71
+$ docker pull cassandra@sha256:92d82dd2696a182f500c84b4324c8ef7a1e965c307ba377f0f6a074b71aa5123
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **189.9 MB (189915758 bytes)**  
+-	Total Size: **190.0 MB (189992780 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ceabacc3b9a3e6667806cd320eb35834c44dd5fcdd80dc608bf3ad5bbb22a91`
+-	Image ID: `sha256:538950fea50f7bd52ace2d590a49b1e4e4e4ae68a0c2fecf0cf63c5f6fbdbbb4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -16294,9 +16294,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
-ENV JAVA_VERSION=jdk-17.0.10+7
+ENV JAVA_VERSION=jdk-17.0.11+9
 # Wed, 20 Mar 2024 22:45:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='16080d055da0962fbd6b40f659a98a457cba3efa7ea716d5400cfebe8b935bf0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.10_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='620cc0e7338f2722f3ed076ac65c0fafb575981426bac4e1970860e5e2d048f0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.10_7.tar.gz';          ;;        armhf|arm)          ESUM='0378bdf6769632b182b27ba4e53b17eaefefdbafa3845c15e1bd88a5aeec8442';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.10_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='4e18b60dba540b5c431ff03f74a1c73b22d83151f93b8768241d264d1a53582d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.10_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='c1b2fd232fc55e814479d7585d7ec45bae952a2f4137084f1d99f958c6880a49';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
@@ -16346,73 +16346,73 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63ece49982ab8596fedca8be1b0b439d0e0dabb7e325be0d514cf91142b07a61`  
-		Last Modified: Tue, 16 Apr 2024 02:53:23 GMT  
-		Size: 47.0 MB (47012109 bytes)  
+	-	`sha256:6792ded56cf183f4d7df8f60c596e1582dd1d673241cdd32b90c576f5e6a4279`  
+		Last Modified: Wed, 24 Apr 2024 17:48:57 GMT  
+		Size: 47.1 MB (47089024 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db801fca175d54a6587ecdc15885aa4ca4581a48d99a6f5f00ca697b1116fe54`  
-		Last Modified: Tue, 16 Apr 2024 02:53:13 GMT  
-		Size: 160.0 B  
+	-	`sha256:08ed86b3d45c5a8f894c4218c4c3d1340177d1242a5eb21b6e3012f0f0546f1c`  
+		Last Modified: Wed, 24 Apr 2024 17:48:49 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90005a24d689ce9ae4dc1543fd46f12817ae1bc349788847c79eb0959ff22e92`  
-		Last Modified: Tue, 16 Apr 2024 02:53:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:9f17c2528ba8737b08c739f19be74f270855722d66d518ad5e716dc0b2c3b3db`  
+		Last Modified: Wed, 24 Apr 2024 17:48:49 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7151cc2d237636473f64e860ac14d758ff3125704dd35756dd088372c3464855`  
-		Last Modified: Thu, 18 Apr 2024 19:10:57 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:99bb813dae69422f4c9188899a86d19ef572c13e8b44b88a910008a5bb31f68c`  
+		Last Modified: Thu, 25 Apr 2024 10:20:47 GMT  
+		Size: 1.7 KB (1733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33557b08741188f751d33c9023457683bbedf7271060561b1b2edf40919f4179`  
-		Last Modified: Thu, 18 Apr 2024 19:10:59 GMT  
-		Size: 13.2 MB (13208823 bytes)  
+	-	`sha256:e5c07d9a2e77a8ef02e41a62cc0451f3fc7efc271a3f3e1bb615b8bbe189c30c`  
+		Last Modified: Thu, 25 Apr 2024 10:20:49 GMT  
+		Size: 13.2 MB (13208861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:485eb2f159ab25cdd8bde99e14ed44501a87c5c430e76c7a2c31f070ab2b3c11`  
-		Last Modified: Thu, 18 Apr 2024 19:10:59 GMT  
-		Size: 1.0 MB (1019005 bytes)  
+	-	`sha256:cc0455379e03432ecc223e0b94c6b1017e3a57513ac23323cb955befa445880e`  
+		Last Modified: Thu, 25 Apr 2024 10:20:48 GMT  
+		Size: 1.0 MB (1019029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f44dc6ecc2d84359c9393003b8914a40adfa97297db2acf30d09e7f244459f05`  
-		Last Modified: Thu, 18 Apr 2024 19:11:01 GMT  
-		Size: 79.3 MB (79317536 bytes)  
+	-	`sha256:b1f0a577155ee68361499e0298f2a6edd042523143316ae22157ef8e3cd0e9b6`  
+		Last Modified: Thu, 25 Apr 2024 10:20:51 GMT  
+		Size: 79.3 MB (79317579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb89e4ab84dc33e8938e98f250eab41089e34f93a13d8b66edf21c213bf2b73`  
-		Last Modified: Thu, 18 Apr 2024 19:11:00 GMT  
-		Size: 1.2 KB (1219 bytes)  
+	-	`sha256:ff5e801944529b017fbcf9975fbdcc378f9bdac10432d2641fc6bba4cd0eef58`  
+		Last Modified: Thu, 25 Apr 2024 10:20:50 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5.0-beta1` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:9b010bfbd104907b038f8ec926a752b14dba6fe0a0560734508f5d5610b662f1
+$ docker pull cassandra@sha256:c07a8483a779296a155b561a452428cdf185bdbb766f27fe249bd461aa23ef1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4224671 bytes)**  
+-	Total Size: **4.2 MB (4225486 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfcbe143fcdbd9e454337506b64bb36e78e226c54521e26ce36c548393aef870`
+-	Image ID: `sha256:67e799b936b23cd97f46c3ede6ed13779ec99d5624bdfe228338cbd94e58cfbb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:56f22ef0bbc99da4c17676681844338c2eab487bb027bb9a2b021721e4bba651`  
-		Last Modified: Thu, 18 Apr 2024 19:10:58 GMT  
+	-	`sha256:c6fbdc3c813a6f32f09f8faf01ce7d55a262ca8545b11770b20ed0d9eb7bcd44`  
+		Last Modified: Thu, 25 Apr 2024 10:20:47 GMT  
 		Size: 4.2 MB (4189414 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4e78cbe1554263a6e55cdf5feca02c503fc19ebbea94f5465d6c71d2eea0fed5`  
-		Last Modified: Thu, 18 Apr 2024 19:10:57 GMT  
-		Size: 35.3 KB (35257 bytes)  
+	-	`sha256:e9a2c743bc5d2c1c6d0af18907d45ae2628c54044f59fea5d466e9620bad6748`  
+		Last Modified: Thu, 25 Apr 2024 10:20:47 GMT  
+		Size: 36.1 KB (36072 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:5.0-beta1` - linux; s390x
 
 ```console
-$ docker pull cassandra@sha256:25d2300649cfb75dd66f6fed591fce3f465ab8d9de864c48f6c5ae97b3c2939f
+$ docker pull cassandra@sha256:e5152b9cacc2e564a96f860e27d942779530d9e79918a971efdcb29a93620a8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **178.0 MB (177958514 bytes)**  
+-	Total Size: **178.0 MB (178024018 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4148db9953fdc91d2ab7ecf952a2e8eb2936474e65651caffd283db45c5df41`
+-	Image ID: `sha256:6106d0a8029d70a03c5949992b5b6d8449efb73318ef61f89d0efa13fd7ab9dd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -16438,9 +16438,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
-ENV JAVA_VERSION=jdk-17.0.10+7
+ENV JAVA_VERSION=jdk-17.0.11+9
 # Wed, 20 Mar 2024 22:45:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='16080d055da0962fbd6b40f659a98a457cba3efa7ea716d5400cfebe8b935bf0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.10_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='620cc0e7338f2722f3ed076ac65c0fafb575981426bac4e1970860e5e2d048f0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.10_7.tar.gz';          ;;        armhf|arm)          ESUM='0378bdf6769632b182b27ba4e53b17eaefefdbafa3845c15e1bd88a5aeec8442';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.10_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='4e18b60dba540b5c431ff03f74a1c73b22d83151f93b8768241d264d1a53582d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.10_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='c1b2fd232fc55e814479d7585d7ec45bae952a2f4137084f1d99f958c6880a49';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
@@ -16490,67 +16490,67 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdfebbced680b7390af0f88a97ca932f8f27bff80826bc87eb9bf49c145e698d`  
-		Last Modified: Tue, 16 Apr 2024 01:52:25 GMT  
-		Size: 43.8 MB (43765845 bytes)  
+	-	`sha256:11b76b800695d16970dd53f9f27a10ce1860d85197ae77d53b6dd08e9b836d7d`  
+		Last Modified: Wed, 24 Apr 2024 19:51:35 GMT  
+		Size: 43.8 MB (43831009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61d3da2d88573089bc4ee694af587d7d08402f351e99599db6d1da2b3604eae0`  
-		Last Modified: Tue, 16 Apr 2024 01:52:19 GMT  
-		Size: 159.0 B  
+	-	`sha256:9b983aaa2bcfdd00ffe3569f744782d2543f270663418d1ae509a7abef90f47e`  
+		Last Modified: Wed, 24 Apr 2024 19:51:29 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e5c2b092b12993a47168eec02810c84eeb0fd925b4dd1e08fedb626dd3fb089`  
-		Last Modified: Tue, 16 Apr 2024 01:52:19 GMT  
-		Size: 734.0 B  
+	-	`sha256:80136a5c62fb06ed9b371242941ea9c97e94473ecbfac8b266652b4f90eb8972`  
+		Last Modified: Wed, 24 Apr 2024 19:51:29 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45908384d450ae1abf01126d259808539098e47921bb04028279bf7537cbffed`  
-		Last Modified: Tue, 16 Apr 2024 17:22:57 GMT  
-		Size: 1.7 KB (1728 bytes)  
+	-	`sha256:dff989aebc56e1f24a61b2e4e857374d2e204b983377534e124eb351e7825942`  
+		Last Modified: Thu, 25 Apr 2024 10:11:36 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:945ab5af4a90465aa7b32978d16f78198c38604f44bd5eb7e353631298a5e125`  
-		Last Modified: Tue, 16 Apr 2024 17:22:57 GMT  
-		Size: 12.2 MB (12184173 bytes)  
+	-	`sha256:de064834bb7f2f0fe82cfc0ec906052b04689be95ec6623288defcc2592365f0`  
+		Last Modified: Thu, 25 Apr 2024 10:11:37 GMT  
+		Size: 12.2 MB (12184332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8269c19cd7bb736826d88c78e3d9eb5dac4d6162060ee67b851d50dfe7b0ea20`  
-		Last Modified: Tue, 16 Apr 2024 17:22:57 GMT  
-		Size: 1.1 MB (1064203 bytes)  
+	-	`sha256:a8118bc4b82551c56f9a1dda40e3cfccf0e21bbf907f2fc38d7f16adf50774b5`  
+		Last Modified: Thu, 25 Apr 2024 10:11:37 GMT  
+		Size: 1.1 MB (1064263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99070bb8a99ec3dc93013a20407f0df23edc19fc564863724d4cc913a5b65e73`  
-		Last Modified: Tue, 16 Apr 2024 17:22:59 GMT  
-		Size: 79.3 MB (79316913 bytes)  
+	-	`sha256:8dc141ef4fb01437f85684f10a6cfb124db9c32e3b386cf5ffa37d22b3ef9e94`  
+		Last Modified: Thu, 25 Apr 2024 10:11:38 GMT  
+		Size: 79.3 MB (79317028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6a1a88cfe1c7a27becbc453d012d2ccc44f226007095f828719a9870a1876d0`  
-		Last Modified: Tue, 16 Apr 2024 17:22:58 GMT  
-		Size: 1.2 KB (1215 bytes)  
+	-	`sha256:89ff3dd5d65701fbcfe9458d5b6076869a1566f55fb510c667b841d3830d8123`  
+		Last Modified: Thu, 25 Apr 2024 10:11:37 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5.0-beta1` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:57bb1efcd42aaefaade1ac72178d739552b75bb0ea87939bfa9b9eca4cbcfa73
+$ docker pull cassandra@sha256:73572061b5dd94f42e05fb161be1f7d862214b6a77e94b11453c5c0643318f6f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4222689 bytes)**  
+-	Total Size: **4.2 MB (4221783 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4ed2731a11cd57cf1f82debbbdbce8321da81d67577711d719b09644ca3f94c`
+-	Image ID: `sha256:ff6e2471fb6509a57ddd5ff29a8b394170dd3356b3e2be4d902fda7e0477b710`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:046157a70e3aa58ba624d79f6710ae2438ca5ccf0af796eb7b6fef41dc983586`  
-		Last Modified: Tue, 16 Apr 2024 17:22:55 GMT  
-		Size: 4.2 MB (4186675 bytes)  
+	-	`sha256:ccb44add5de72972ea173c95188148846ab6b00bc962787e53612a0d754cfa57`  
+		Last Modified: Thu, 25 Apr 2024 10:11:36 GMT  
+		Size: 4.2 MB (4185766 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0e83944684c63cb460068bec129a431a66a57c868c11aa26daf1d8036f99d172`  
-		Last Modified: Tue, 16 Apr 2024 17:22:55 GMT  
-		Size: 36.0 KB (36014 bytes)  
+	-	`sha256:258f66de6fb7b2f848c94696bcad56453a139e0925df8047f77b038232a3a216`  
+		Last Modified: Thu, 25 Apr 2024 10:11:36 GMT  
+		Size: 36.0 KB (36017 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:5.0-beta1-jammy`
 
 ```console
-$ docker pull cassandra@sha256:7508b56b8471dfe2eacefcf96f6ddde1b280da48b70619c5f896a84bdbe9032b
+$ docker pull cassandra@sha256:74e653b7398a35682371f5741e35ebae6e3790d91d9452394c0b8c02cccc1854
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17001,13 +17001,13 @@ $ docker pull cassandra@sha256:3cc89aac51e19303a079b8b03bb5fa7b1e2fa99b4b507343b
 ### `cassandra:5.0-beta1-jammy` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:29385d7ce7a5bf5d4da6f48d9d46df9b30a69cee73b32d78cae086f4f173be71
+$ docker pull cassandra@sha256:92d82dd2696a182f500c84b4324c8ef7a1e965c307ba377f0f6a074b71aa5123
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **189.9 MB (189915758 bytes)**  
+-	Total Size: **190.0 MB (189992780 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ceabacc3b9a3e6667806cd320eb35834c44dd5fcdd80dc608bf3ad5bbb22a91`
+-	Image ID: `sha256:538950fea50f7bd52ace2d590a49b1e4e4e4ae68a0c2fecf0cf63c5f6fbdbbb4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -17033,9 +17033,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
-ENV JAVA_VERSION=jdk-17.0.10+7
+ENV JAVA_VERSION=jdk-17.0.11+9
 # Wed, 20 Mar 2024 22:45:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='16080d055da0962fbd6b40f659a98a457cba3efa7ea716d5400cfebe8b935bf0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.10_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='620cc0e7338f2722f3ed076ac65c0fafb575981426bac4e1970860e5e2d048f0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.10_7.tar.gz';          ;;        armhf|arm)          ESUM='0378bdf6769632b182b27ba4e53b17eaefefdbafa3845c15e1bd88a5aeec8442';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.10_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='4e18b60dba540b5c431ff03f74a1c73b22d83151f93b8768241d264d1a53582d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.10_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='c1b2fd232fc55e814479d7585d7ec45bae952a2f4137084f1d99f958c6880a49';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
@@ -17085,73 +17085,73 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63ece49982ab8596fedca8be1b0b439d0e0dabb7e325be0d514cf91142b07a61`  
-		Last Modified: Tue, 16 Apr 2024 02:53:23 GMT  
-		Size: 47.0 MB (47012109 bytes)  
+	-	`sha256:6792ded56cf183f4d7df8f60c596e1582dd1d673241cdd32b90c576f5e6a4279`  
+		Last Modified: Wed, 24 Apr 2024 17:48:57 GMT  
+		Size: 47.1 MB (47089024 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db801fca175d54a6587ecdc15885aa4ca4581a48d99a6f5f00ca697b1116fe54`  
-		Last Modified: Tue, 16 Apr 2024 02:53:13 GMT  
-		Size: 160.0 B  
+	-	`sha256:08ed86b3d45c5a8f894c4218c4c3d1340177d1242a5eb21b6e3012f0f0546f1c`  
+		Last Modified: Wed, 24 Apr 2024 17:48:49 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90005a24d689ce9ae4dc1543fd46f12817ae1bc349788847c79eb0959ff22e92`  
-		Last Modified: Tue, 16 Apr 2024 02:53:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:9f17c2528ba8737b08c739f19be74f270855722d66d518ad5e716dc0b2c3b3db`  
+		Last Modified: Wed, 24 Apr 2024 17:48:49 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7151cc2d237636473f64e860ac14d758ff3125704dd35756dd088372c3464855`  
-		Last Modified: Thu, 18 Apr 2024 19:10:57 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:99bb813dae69422f4c9188899a86d19ef572c13e8b44b88a910008a5bb31f68c`  
+		Last Modified: Thu, 25 Apr 2024 10:20:47 GMT  
+		Size: 1.7 KB (1733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33557b08741188f751d33c9023457683bbedf7271060561b1b2edf40919f4179`  
-		Last Modified: Thu, 18 Apr 2024 19:10:59 GMT  
-		Size: 13.2 MB (13208823 bytes)  
+	-	`sha256:e5c07d9a2e77a8ef02e41a62cc0451f3fc7efc271a3f3e1bb615b8bbe189c30c`  
+		Last Modified: Thu, 25 Apr 2024 10:20:49 GMT  
+		Size: 13.2 MB (13208861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:485eb2f159ab25cdd8bde99e14ed44501a87c5c430e76c7a2c31f070ab2b3c11`  
-		Last Modified: Thu, 18 Apr 2024 19:10:59 GMT  
-		Size: 1.0 MB (1019005 bytes)  
+	-	`sha256:cc0455379e03432ecc223e0b94c6b1017e3a57513ac23323cb955befa445880e`  
+		Last Modified: Thu, 25 Apr 2024 10:20:48 GMT  
+		Size: 1.0 MB (1019029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f44dc6ecc2d84359c9393003b8914a40adfa97297db2acf30d09e7f244459f05`  
-		Last Modified: Thu, 18 Apr 2024 19:11:01 GMT  
-		Size: 79.3 MB (79317536 bytes)  
+	-	`sha256:b1f0a577155ee68361499e0298f2a6edd042523143316ae22157ef8e3cd0e9b6`  
+		Last Modified: Thu, 25 Apr 2024 10:20:51 GMT  
+		Size: 79.3 MB (79317579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb89e4ab84dc33e8938e98f250eab41089e34f93a13d8b66edf21c213bf2b73`  
-		Last Modified: Thu, 18 Apr 2024 19:11:00 GMT  
-		Size: 1.2 KB (1219 bytes)  
+	-	`sha256:ff5e801944529b017fbcf9975fbdcc378f9bdac10432d2641fc6bba4cd0eef58`  
+		Last Modified: Thu, 25 Apr 2024 10:20:50 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5.0-beta1-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:9b010bfbd104907b038f8ec926a752b14dba6fe0a0560734508f5d5610b662f1
+$ docker pull cassandra@sha256:c07a8483a779296a155b561a452428cdf185bdbb766f27fe249bd461aa23ef1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4224671 bytes)**  
+-	Total Size: **4.2 MB (4225486 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfcbe143fcdbd9e454337506b64bb36e78e226c54521e26ce36c548393aef870`
+-	Image ID: `sha256:67e799b936b23cd97f46c3ede6ed13779ec99d5624bdfe228338cbd94e58cfbb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:56f22ef0bbc99da4c17676681844338c2eab487bb027bb9a2b021721e4bba651`  
-		Last Modified: Thu, 18 Apr 2024 19:10:58 GMT  
+	-	`sha256:c6fbdc3c813a6f32f09f8faf01ce7d55a262ca8545b11770b20ed0d9eb7bcd44`  
+		Last Modified: Thu, 25 Apr 2024 10:20:47 GMT  
 		Size: 4.2 MB (4189414 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4e78cbe1554263a6e55cdf5feca02c503fc19ebbea94f5465d6c71d2eea0fed5`  
-		Last Modified: Thu, 18 Apr 2024 19:10:57 GMT  
-		Size: 35.3 KB (35257 bytes)  
+	-	`sha256:e9a2c743bc5d2c1c6d0af18907d45ae2628c54044f59fea5d466e9620bad6748`  
+		Last Modified: Thu, 25 Apr 2024 10:20:47 GMT  
+		Size: 36.1 KB (36072 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:5.0-beta1-jammy` - linux; s390x
 
 ```console
-$ docker pull cassandra@sha256:25d2300649cfb75dd66f6fed591fce3f465ab8d9de864c48f6c5ae97b3c2939f
+$ docker pull cassandra@sha256:e5152b9cacc2e564a96f860e27d942779530d9e79918a971efdcb29a93620a8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **178.0 MB (177958514 bytes)**  
+-	Total Size: **178.0 MB (178024018 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4148db9953fdc91d2ab7ecf952a2e8eb2936474e65651caffd283db45c5df41`
+-	Image ID: `sha256:6106d0a8029d70a03c5949992b5b6d8449efb73318ef61f89d0efa13fd7ab9dd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -17177,9 +17177,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
-ENV JAVA_VERSION=jdk-17.0.10+7
+ENV JAVA_VERSION=jdk-17.0.11+9
 # Wed, 20 Mar 2024 22:45:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='16080d055da0962fbd6b40f659a98a457cba3efa7ea716d5400cfebe8b935bf0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.10_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='620cc0e7338f2722f3ed076ac65c0fafb575981426bac4e1970860e5e2d048f0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.10_7.tar.gz';          ;;        armhf|arm)          ESUM='0378bdf6769632b182b27ba4e53b17eaefefdbafa3845c15e1bd88a5aeec8442';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.10_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='4e18b60dba540b5c431ff03f74a1c73b22d83151f93b8768241d264d1a53582d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.10_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='c1b2fd232fc55e814479d7585d7ec45bae952a2f4137084f1d99f958c6880a49';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
@@ -17229,67 +17229,67 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdfebbced680b7390af0f88a97ca932f8f27bff80826bc87eb9bf49c145e698d`  
-		Last Modified: Tue, 16 Apr 2024 01:52:25 GMT  
-		Size: 43.8 MB (43765845 bytes)  
+	-	`sha256:11b76b800695d16970dd53f9f27a10ce1860d85197ae77d53b6dd08e9b836d7d`  
+		Last Modified: Wed, 24 Apr 2024 19:51:35 GMT  
+		Size: 43.8 MB (43831009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61d3da2d88573089bc4ee694af587d7d08402f351e99599db6d1da2b3604eae0`  
-		Last Modified: Tue, 16 Apr 2024 01:52:19 GMT  
-		Size: 159.0 B  
+	-	`sha256:9b983aaa2bcfdd00ffe3569f744782d2543f270663418d1ae509a7abef90f47e`  
+		Last Modified: Wed, 24 Apr 2024 19:51:29 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e5c2b092b12993a47168eec02810c84eeb0fd925b4dd1e08fedb626dd3fb089`  
-		Last Modified: Tue, 16 Apr 2024 01:52:19 GMT  
-		Size: 734.0 B  
+	-	`sha256:80136a5c62fb06ed9b371242941ea9c97e94473ecbfac8b266652b4f90eb8972`  
+		Last Modified: Wed, 24 Apr 2024 19:51:29 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45908384d450ae1abf01126d259808539098e47921bb04028279bf7537cbffed`  
-		Last Modified: Tue, 16 Apr 2024 17:22:57 GMT  
-		Size: 1.7 KB (1728 bytes)  
+	-	`sha256:dff989aebc56e1f24a61b2e4e857374d2e204b983377534e124eb351e7825942`  
+		Last Modified: Thu, 25 Apr 2024 10:11:36 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:945ab5af4a90465aa7b32978d16f78198c38604f44bd5eb7e353631298a5e125`  
-		Last Modified: Tue, 16 Apr 2024 17:22:57 GMT  
-		Size: 12.2 MB (12184173 bytes)  
+	-	`sha256:de064834bb7f2f0fe82cfc0ec906052b04689be95ec6623288defcc2592365f0`  
+		Last Modified: Thu, 25 Apr 2024 10:11:37 GMT  
+		Size: 12.2 MB (12184332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8269c19cd7bb736826d88c78e3d9eb5dac4d6162060ee67b851d50dfe7b0ea20`  
-		Last Modified: Tue, 16 Apr 2024 17:22:57 GMT  
-		Size: 1.1 MB (1064203 bytes)  
+	-	`sha256:a8118bc4b82551c56f9a1dda40e3cfccf0e21bbf907f2fc38d7f16adf50774b5`  
+		Last Modified: Thu, 25 Apr 2024 10:11:37 GMT  
+		Size: 1.1 MB (1064263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99070bb8a99ec3dc93013a20407f0df23edc19fc564863724d4cc913a5b65e73`  
-		Last Modified: Tue, 16 Apr 2024 17:22:59 GMT  
-		Size: 79.3 MB (79316913 bytes)  
+	-	`sha256:8dc141ef4fb01437f85684f10a6cfb124db9c32e3b386cf5ffa37d22b3ef9e94`  
+		Last Modified: Thu, 25 Apr 2024 10:11:38 GMT  
+		Size: 79.3 MB (79317028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6a1a88cfe1c7a27becbc453d012d2ccc44f226007095f828719a9870a1876d0`  
-		Last Modified: Tue, 16 Apr 2024 17:22:58 GMT  
-		Size: 1.2 KB (1215 bytes)  
+	-	`sha256:89ff3dd5d65701fbcfe9458d5b6076869a1566f55fb510c667b841d3830d8123`  
+		Last Modified: Thu, 25 Apr 2024 10:11:37 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5.0-beta1-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:57bb1efcd42aaefaade1ac72178d739552b75bb0ea87939bfa9b9eca4cbcfa73
+$ docker pull cassandra@sha256:73572061b5dd94f42e05fb161be1f7d862214b6a77e94b11453c5c0643318f6f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4222689 bytes)**  
+-	Total Size: **4.2 MB (4221783 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4ed2731a11cd57cf1f82debbbdbce8321da81d67577711d719b09644ca3f94c`
+-	Image ID: `sha256:ff6e2471fb6509a57ddd5ff29a8b394170dd3356b3e2be4d902fda7e0477b710`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:046157a70e3aa58ba624d79f6710ae2438ca5ccf0af796eb7b6fef41dc983586`  
-		Last Modified: Tue, 16 Apr 2024 17:22:55 GMT  
-		Size: 4.2 MB (4186675 bytes)  
+	-	`sha256:ccb44add5de72972ea173c95188148846ab6b00bc962787e53612a0d754cfa57`  
+		Last Modified: Thu, 25 Apr 2024 10:11:36 GMT  
+		Size: 4.2 MB (4185766 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0e83944684c63cb460068bec129a431a66a57c868c11aa26daf1d8036f99d172`  
-		Last Modified: Tue, 16 Apr 2024 17:22:55 GMT  
-		Size: 36.0 KB (36014 bytes)  
+	-	`sha256:258f66de6fb7b2f848c94696bcad56453a139e0925df8047f77b038232a3a216`  
+		Last Modified: Thu, 25 Apr 2024 10:11:36 GMT  
+		Size: 36.0 KB (36017 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:5.0-jammy`
 
 ```console
-$ docker pull cassandra@sha256:7508b56b8471dfe2eacefcf96f6ddde1b280da48b70619c5f896a84bdbe9032b
+$ docker pull cassandra@sha256:74e653b7398a35682371f5741e35ebae6e3790d91d9452394c0b8c02cccc1854
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17740,13 +17740,13 @@ $ docker pull cassandra@sha256:3cc89aac51e19303a079b8b03bb5fa7b1e2fa99b4b507343b
 ### `cassandra:5.0-jammy` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:29385d7ce7a5bf5d4da6f48d9d46df9b30a69cee73b32d78cae086f4f173be71
+$ docker pull cassandra@sha256:92d82dd2696a182f500c84b4324c8ef7a1e965c307ba377f0f6a074b71aa5123
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **189.9 MB (189915758 bytes)**  
+-	Total Size: **190.0 MB (189992780 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ceabacc3b9a3e6667806cd320eb35834c44dd5fcdd80dc608bf3ad5bbb22a91`
+-	Image ID: `sha256:538950fea50f7bd52ace2d590a49b1e4e4e4ae68a0c2fecf0cf63c5f6fbdbbb4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -17772,9 +17772,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
-ENV JAVA_VERSION=jdk-17.0.10+7
+ENV JAVA_VERSION=jdk-17.0.11+9
 # Wed, 20 Mar 2024 22:45:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='16080d055da0962fbd6b40f659a98a457cba3efa7ea716d5400cfebe8b935bf0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.10_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='620cc0e7338f2722f3ed076ac65c0fafb575981426bac4e1970860e5e2d048f0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.10_7.tar.gz';          ;;        armhf|arm)          ESUM='0378bdf6769632b182b27ba4e53b17eaefefdbafa3845c15e1bd88a5aeec8442';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.10_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='4e18b60dba540b5c431ff03f74a1c73b22d83151f93b8768241d264d1a53582d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.10_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='c1b2fd232fc55e814479d7585d7ec45bae952a2f4137084f1d99f958c6880a49';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
@@ -17824,73 +17824,73 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63ece49982ab8596fedca8be1b0b439d0e0dabb7e325be0d514cf91142b07a61`  
-		Last Modified: Tue, 16 Apr 2024 02:53:23 GMT  
-		Size: 47.0 MB (47012109 bytes)  
+	-	`sha256:6792ded56cf183f4d7df8f60c596e1582dd1d673241cdd32b90c576f5e6a4279`  
+		Last Modified: Wed, 24 Apr 2024 17:48:57 GMT  
+		Size: 47.1 MB (47089024 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db801fca175d54a6587ecdc15885aa4ca4581a48d99a6f5f00ca697b1116fe54`  
-		Last Modified: Tue, 16 Apr 2024 02:53:13 GMT  
-		Size: 160.0 B  
+	-	`sha256:08ed86b3d45c5a8f894c4218c4c3d1340177d1242a5eb21b6e3012f0f0546f1c`  
+		Last Modified: Wed, 24 Apr 2024 17:48:49 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90005a24d689ce9ae4dc1543fd46f12817ae1bc349788847c79eb0959ff22e92`  
-		Last Modified: Tue, 16 Apr 2024 02:53:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:9f17c2528ba8737b08c739f19be74f270855722d66d518ad5e716dc0b2c3b3db`  
+		Last Modified: Wed, 24 Apr 2024 17:48:49 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7151cc2d237636473f64e860ac14d758ff3125704dd35756dd088372c3464855`  
-		Last Modified: Thu, 18 Apr 2024 19:10:57 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:99bb813dae69422f4c9188899a86d19ef572c13e8b44b88a910008a5bb31f68c`  
+		Last Modified: Thu, 25 Apr 2024 10:20:47 GMT  
+		Size: 1.7 KB (1733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33557b08741188f751d33c9023457683bbedf7271060561b1b2edf40919f4179`  
-		Last Modified: Thu, 18 Apr 2024 19:10:59 GMT  
-		Size: 13.2 MB (13208823 bytes)  
+	-	`sha256:e5c07d9a2e77a8ef02e41a62cc0451f3fc7efc271a3f3e1bb615b8bbe189c30c`  
+		Last Modified: Thu, 25 Apr 2024 10:20:49 GMT  
+		Size: 13.2 MB (13208861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:485eb2f159ab25cdd8bde99e14ed44501a87c5c430e76c7a2c31f070ab2b3c11`  
-		Last Modified: Thu, 18 Apr 2024 19:10:59 GMT  
-		Size: 1.0 MB (1019005 bytes)  
+	-	`sha256:cc0455379e03432ecc223e0b94c6b1017e3a57513ac23323cb955befa445880e`  
+		Last Modified: Thu, 25 Apr 2024 10:20:48 GMT  
+		Size: 1.0 MB (1019029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f44dc6ecc2d84359c9393003b8914a40adfa97297db2acf30d09e7f244459f05`  
-		Last Modified: Thu, 18 Apr 2024 19:11:01 GMT  
-		Size: 79.3 MB (79317536 bytes)  
+	-	`sha256:b1f0a577155ee68361499e0298f2a6edd042523143316ae22157ef8e3cd0e9b6`  
+		Last Modified: Thu, 25 Apr 2024 10:20:51 GMT  
+		Size: 79.3 MB (79317579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb89e4ab84dc33e8938e98f250eab41089e34f93a13d8b66edf21c213bf2b73`  
-		Last Modified: Thu, 18 Apr 2024 19:11:00 GMT  
-		Size: 1.2 KB (1219 bytes)  
+	-	`sha256:ff5e801944529b017fbcf9975fbdcc378f9bdac10432d2641fc6bba4cd0eef58`  
+		Last Modified: Thu, 25 Apr 2024 10:20:50 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5.0-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:9b010bfbd104907b038f8ec926a752b14dba6fe0a0560734508f5d5610b662f1
+$ docker pull cassandra@sha256:c07a8483a779296a155b561a452428cdf185bdbb766f27fe249bd461aa23ef1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4224671 bytes)**  
+-	Total Size: **4.2 MB (4225486 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfcbe143fcdbd9e454337506b64bb36e78e226c54521e26ce36c548393aef870`
+-	Image ID: `sha256:67e799b936b23cd97f46c3ede6ed13779ec99d5624bdfe228338cbd94e58cfbb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:56f22ef0bbc99da4c17676681844338c2eab487bb027bb9a2b021721e4bba651`  
-		Last Modified: Thu, 18 Apr 2024 19:10:58 GMT  
+	-	`sha256:c6fbdc3c813a6f32f09f8faf01ce7d55a262ca8545b11770b20ed0d9eb7bcd44`  
+		Last Modified: Thu, 25 Apr 2024 10:20:47 GMT  
 		Size: 4.2 MB (4189414 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4e78cbe1554263a6e55cdf5feca02c503fc19ebbea94f5465d6c71d2eea0fed5`  
-		Last Modified: Thu, 18 Apr 2024 19:10:57 GMT  
-		Size: 35.3 KB (35257 bytes)  
+	-	`sha256:e9a2c743bc5d2c1c6d0af18907d45ae2628c54044f59fea5d466e9620bad6748`  
+		Last Modified: Thu, 25 Apr 2024 10:20:47 GMT  
+		Size: 36.1 KB (36072 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:5.0-jammy` - linux; s390x
 
 ```console
-$ docker pull cassandra@sha256:25d2300649cfb75dd66f6fed591fce3f465ab8d9de864c48f6c5ae97b3c2939f
+$ docker pull cassandra@sha256:e5152b9cacc2e564a96f860e27d942779530d9e79918a971efdcb29a93620a8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **178.0 MB (177958514 bytes)**  
+-	Total Size: **178.0 MB (178024018 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4148db9953fdc91d2ab7ecf952a2e8eb2936474e65651caffd283db45c5df41`
+-	Image ID: `sha256:6106d0a8029d70a03c5949992b5b6d8449efb73318ef61f89d0efa13fd7ab9dd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -17916,9 +17916,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
-ENV JAVA_VERSION=jdk-17.0.10+7
+ENV JAVA_VERSION=jdk-17.0.11+9
 # Wed, 20 Mar 2024 22:45:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='16080d055da0962fbd6b40f659a98a457cba3efa7ea716d5400cfebe8b935bf0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.10_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='620cc0e7338f2722f3ed076ac65c0fafb575981426bac4e1970860e5e2d048f0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.10_7.tar.gz';          ;;        armhf|arm)          ESUM='0378bdf6769632b182b27ba4e53b17eaefefdbafa3845c15e1bd88a5aeec8442';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.10_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='4e18b60dba540b5c431ff03f74a1c73b22d83151f93b8768241d264d1a53582d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.10_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='c1b2fd232fc55e814479d7585d7ec45bae952a2f4137084f1d99f958c6880a49';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Wed, 20 Mar 2024 22:45:06 GMT
@@ -17968,67 +17968,67 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdfebbced680b7390af0f88a97ca932f8f27bff80826bc87eb9bf49c145e698d`  
-		Last Modified: Tue, 16 Apr 2024 01:52:25 GMT  
-		Size: 43.8 MB (43765845 bytes)  
+	-	`sha256:11b76b800695d16970dd53f9f27a10ce1860d85197ae77d53b6dd08e9b836d7d`  
+		Last Modified: Wed, 24 Apr 2024 19:51:35 GMT  
+		Size: 43.8 MB (43831009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61d3da2d88573089bc4ee694af587d7d08402f351e99599db6d1da2b3604eae0`  
-		Last Modified: Tue, 16 Apr 2024 01:52:19 GMT  
-		Size: 159.0 B  
+	-	`sha256:9b983aaa2bcfdd00ffe3569f744782d2543f270663418d1ae509a7abef90f47e`  
+		Last Modified: Wed, 24 Apr 2024 19:51:29 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e5c2b092b12993a47168eec02810c84eeb0fd925b4dd1e08fedb626dd3fb089`  
-		Last Modified: Tue, 16 Apr 2024 01:52:19 GMT  
-		Size: 734.0 B  
+	-	`sha256:80136a5c62fb06ed9b371242941ea9c97e94473ecbfac8b266652b4f90eb8972`  
+		Last Modified: Wed, 24 Apr 2024 19:51:29 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45908384d450ae1abf01126d259808539098e47921bb04028279bf7537cbffed`  
-		Last Modified: Tue, 16 Apr 2024 17:22:57 GMT  
-		Size: 1.7 KB (1728 bytes)  
+	-	`sha256:dff989aebc56e1f24a61b2e4e857374d2e204b983377534e124eb351e7825942`  
+		Last Modified: Thu, 25 Apr 2024 10:11:36 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:945ab5af4a90465aa7b32978d16f78198c38604f44bd5eb7e353631298a5e125`  
-		Last Modified: Tue, 16 Apr 2024 17:22:57 GMT  
-		Size: 12.2 MB (12184173 bytes)  
+	-	`sha256:de064834bb7f2f0fe82cfc0ec906052b04689be95ec6623288defcc2592365f0`  
+		Last Modified: Thu, 25 Apr 2024 10:11:37 GMT  
+		Size: 12.2 MB (12184332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8269c19cd7bb736826d88c78e3d9eb5dac4d6162060ee67b851d50dfe7b0ea20`  
-		Last Modified: Tue, 16 Apr 2024 17:22:57 GMT  
-		Size: 1.1 MB (1064203 bytes)  
+	-	`sha256:a8118bc4b82551c56f9a1dda40e3cfccf0e21bbf907f2fc38d7f16adf50774b5`  
+		Last Modified: Thu, 25 Apr 2024 10:11:37 GMT  
+		Size: 1.1 MB (1064263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99070bb8a99ec3dc93013a20407f0df23edc19fc564863724d4cc913a5b65e73`  
-		Last Modified: Tue, 16 Apr 2024 17:22:59 GMT  
-		Size: 79.3 MB (79316913 bytes)  
+	-	`sha256:8dc141ef4fb01437f85684f10a6cfb124db9c32e3b386cf5ffa37d22b3ef9e94`  
+		Last Modified: Thu, 25 Apr 2024 10:11:38 GMT  
+		Size: 79.3 MB (79317028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6a1a88cfe1c7a27becbc453d012d2ccc44f226007095f828719a9870a1876d0`  
-		Last Modified: Tue, 16 Apr 2024 17:22:58 GMT  
-		Size: 1.2 KB (1215 bytes)  
+	-	`sha256:89ff3dd5d65701fbcfe9458d5b6076869a1566f55fb510c667b841d3830d8123`  
+		Last Modified: Thu, 25 Apr 2024 10:11:37 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5.0-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:57bb1efcd42aaefaade1ac72178d739552b75bb0ea87939bfa9b9eca4cbcfa73
+$ docker pull cassandra@sha256:73572061b5dd94f42e05fb161be1f7d862214b6a77e94b11453c5c0643318f6f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4222689 bytes)**  
+-	Total Size: **4.2 MB (4221783 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4ed2731a11cd57cf1f82debbbdbce8321da81d67577711d719b09644ca3f94c`
+-	Image ID: `sha256:ff6e2471fb6509a57ddd5ff29a8b394170dd3356b3e2be4d902fda7e0477b710`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:046157a70e3aa58ba624d79f6710ae2438ca5ccf0af796eb7b6fef41dc983586`  
-		Last Modified: Tue, 16 Apr 2024 17:22:55 GMT  
-		Size: 4.2 MB (4186675 bytes)  
+	-	`sha256:ccb44add5de72972ea173c95188148846ab6b00bc962787e53612a0d754cfa57`  
+		Last Modified: Thu, 25 Apr 2024 10:11:36 GMT  
+		Size: 4.2 MB (4185766 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0e83944684c63cb460068bec129a431a66a57c868c11aa26daf1d8036f99d172`  
-		Last Modified: Tue, 16 Apr 2024 17:22:55 GMT  
-		Size: 36.0 KB (36014 bytes)  
+	-	`sha256:258f66de6fb7b2f848c94696bcad56453a139e0925df8047f77b038232a3a216`  
+		Last Modified: Thu, 25 Apr 2024 10:11:36 GMT  
+		Size: 36.0 KB (36017 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:jammy`
 
 ```console
-$ docker pull cassandra@sha256:b5f3722b1d738a5ed851adc14b27e6ef944bf480e7350d7719cadb5b23cd86a0
+$ docker pull cassandra@sha256:8d3943909a8ef8d40a3a09948d01ffe7f8862e64b18d2820c12f02219f2cc491
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18479,13 +18479,13 @@ $ docker pull cassandra@sha256:818e6bf890ce73fa419fb8e3eece0f6b7ade2ce7b9ad82538
 ### `cassandra:jammy` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:57c327ecf8f6451e533d414a677e515b0613955aa7f1664647d800e0e03eb993
+$ docker pull cassandra@sha256:9804dc1569f476a1401ba0d71a7a5143ce913e181a5d9056111879278db66c93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.6 MB (156613579 bytes)**  
+-	Total Size: **156.8 MB (156758254 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87e9f499e0e6a214a3c30d7ee785dfb0925d2d7d0e2ed10a549d9741e247b27c`
+-	Image ID: `sha256:d6066f284f3fc022dc7246d60c54123183d75b352c14e812678ee2ae2703047e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -18502,23 +18502,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -18563,73 +18563,73 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6849f23a4f1434c16f795f92fb3da9479ce10d1430d7c596b18d90ee4214c2b`  
-		Last Modified: Tue, 16 Apr 2024 02:51:44 GMT  
-		Size: 42.5 MB (42495113 bytes)  
+	-	`sha256:bfbf256ede8a47420c7318d3c88041015cf753cbd47b985cf569ff7776321d2e`  
+		Last Modified: Wed, 24 Apr 2024 17:45:50 GMT  
+		Size: 42.6 MB (42639841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc00b9755d5e4e76beaf4e1163bc4e996e32943f3675ac85e8ceb6752565dcbc`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
+	-	`sha256:cebf0f2f4ad23080aa60c01fdf9cc30e2ef2251086746ede6c96f92d0bba4944`  
+		Last Modified: Wed, 24 Apr 2024 17:45:42 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:534f801ae63411e03e2d0e382d7872e035bc223e769ca4cc8569f6d2f01a887c`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
-		Size: 734.0 B  
+	-	`sha256:4beb26164e0535e8a6ddb7d6592ab1db0840f4e8cd5e5f6ddde5d63abe2ec65d`  
+		Last Modified: Wed, 24 Apr 2024 17:45:41 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c19eded7d4b8b0bf0468e6541024fbeb0c9f01fed90ab436a5cfb7546c73d22f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 1.7 KB (1731 bytes)  
+	-	`sha256:6d3bef45224becba7197bf884c77b9792dc8a20add77068ca9ed5f1af8a6f848`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e07e589a9c54b9f1ef1bd91b83e24188d813e72194c5939540535cfed1c7a52`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 13.2 MB (13208882 bytes)  
+	-	`sha256:29aca4a915214f6c41626417ee160a9d9211dc0a9dfe175204e80c9c35d00da9`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 13.2 MB (13208792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3ea969784cfb74f648882077018ff6a6cda2c69771bd60a1a833936a8b52e08`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 1.0 MB (1019055 bytes)  
+	-	`sha256:880be8611ff9bbf307e88ddf8ea4b44c117d21e860fc268306ff43efc42116e0`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 1.0 MB (1019071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:377babe32453cbc271b45b7c236d648443f71a6a93e63efcf0a4668a1754e338`  
-		Last Modified: Thu, 18 Apr 2024 19:11:27 GMT  
-		Size: 50.5 MB (50532243 bytes)  
+	-	`sha256:891f0ce16db5921fbe0e978bdd898ec8e783a09427a219884b253556316920a8`  
+		Last Modified: Thu, 25 Apr 2024 10:22:32 GMT  
+		Size: 50.5 MB (50532260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c76364c28af1f6eff9f116253d83273c99619fc20581036cb05beb559a062b7f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:27 GMT  
+	-	`sha256:7d7f3904c395c9aeb6040d9bc8b2e9c73a54e0884d04606cc69889e8b8cd4b56`  
+		Last Modified: Thu, 25 Apr 2024 10:22:31 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:4cc6acf1c527a20d357d7385ac8a6227e341ad7cd293933782b503d0c6c3de5b
+$ docker pull cassandra@sha256:c9621a4e15716b0ca960a954fc4c22a540c918a0c48957354436799ead53c8cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4190655 bytes)**  
+-	Total Size: **4.2 MB (4191475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bff9805d4846f4e0489cf24e90890147b84c295cb779e9d55c917d228ed4d97`
+-	Image ID: `sha256:3e25712947f741b3071e9f1d57f6d22ce6c148e216fb9bc44b43ebb4f4f56f87`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:21eb4aaa32b7e2a8912bd9da72f54263f3b4a9b7d9f167c0baebea403f820840`  
-		Last Modified: Thu, 18 Apr 2024 19:11:25 GMT  
+	-	`sha256:502b81b656b9e48905fb4571c5377a474fb509404c8e387df870e7ae496ea7cf`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
 		Size: 4.2 MB (4154808 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:650baad590d9a3da918ace502a776ed555922b2802929468cb2ab0136a61c5bd`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 35.8 KB (35847 bytes)  
+	-	`sha256:03b0508eac7c0f456f3eaaf07ab6449ad736ab65df2c899f5b96ebf22b6658b8`  
+		Last Modified: Thu, 25 Apr 2024 10:22:28 GMT  
+		Size: 36.7 KB (36667 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:jammy` - linux; s390x
 
 ```console
-$ docker pull cassandra@sha256:8e271fe01f0d4a276968e5a6c382bc73dabecd3da0a287c8a5a73a50af55c6aa
+$ docker pull cassandra@sha256:e20e38bed7b3a67b119ebe6f9510c7ec499dd98bbafc704389abe75b910b366c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **146.2 MB (146173563 bytes)**  
+-	Total Size: **146.2 MB (146207683 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a41aee73fde95401b527a16ed253bcfcc12ed898cd9d435da443e84a1c6a132`
+-	Image ID: `sha256:63dae9407c02b3351caa5f3cec527a4581eae57348a60a86e2bff2bda099eeb5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -18646,23 +18646,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:7691b95908cace61ceeec91c44a1a37e7dc2fc3ab5a5fd89f493cefdff9e840e in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -18707,67 +18707,67 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:462f41d0ade66ae0cbbac6954f7e6cb27ec29a3bedfdffeb9b235f5fd3925520`  
-		Last Modified: Tue, 16 Apr 2024 01:51:19 GMT  
-		Size: 40.8 MB (40766133 bytes)  
+	-	`sha256:94af0e093c53d72dd53fc9166542711511b970a638cd6ad5fb8c990afb2a45ac`  
+		Last Modified: Wed, 24 Apr 2024 19:49:52 GMT  
+		Size: 40.8 MB (40799964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffe4d7eb3f743d9e91fa6a779c0e996fbc86c104154c5070cde03b8840eceb7e`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
+	-	`sha256:2e846eab472a97e99cc7d3ce406cb76e887e14bd0b772908522799adbd03b45e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd7aa937dc5864318cd995372e5d54863e03d67bedbe274df435a2a678380965`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:d3c322b3970299d6713ecc912ca5f036000587af3dfded39cbc00252dc72894e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e08a56076694145ed026659ee593606290bd9d23112f53677ffb6c0dc69ac9c1`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 1.7 KB (1729 bytes)  
+	-	`sha256:012876f373ca60723d688b09907e63f29bf827b18bc9b64cb517ce2bba8178e5`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f31a7d156a747e1cbceca7a402b341c3ec81255fdf4f89e3b25fc220ce414272`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 12.2 MB (12184224 bytes)  
+	-	`sha256:366bed68077187fba65714e890c590696a6a2e6a082ad8ff787077413d7dd9b6`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 12.2 MB (12184312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b758be916ec389866416631e7f9c740f03c4fac5de2b7a36fd7c2668915873`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 1.1 MB (1064218 bytes)  
+	-	`sha256:4900936eaafc8158a5663e5f55b0651dcd8b1faf447c4c86a8452133ed30c06d`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 1.1 MB (1064271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bba711c31a804835b3109b4b31d1dd6266590d37e946794b3154a41f48df607b`  
-		Last Modified: Tue, 16 Apr 2024 17:25:21 GMT  
-		Size: 50.5 MB (50531603 bytes)  
+	-	`sha256:131886edddbec4bd36d61c241eddf6e35388951696549a07130da305d58af86a`  
+		Last Modified: Thu, 25 Apr 2024 10:13:19 GMT  
+		Size: 50.5 MB (50531753 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a4f32d3da5f899d0fbac88ced485125c9898fffba7af24471a55b16f70172b0`  
-		Last Modified: Tue, 16 Apr 2024 17:25:20 GMT  
-		Size: 1.2 KB (1219 bytes)  
+	-	`sha256:80267e025f9a56e3189d76333d553da16cc3338de3ec3cb7a78a6c4c2dcae276`  
+		Last Modified: Thu, 25 Apr 2024 10:13:19 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:aedb85bd4e858ee9be6717e9f8c20f59cfa2b37de8ec66118e437e61a281c412
+$ docker pull cassandra@sha256:00e7cdcdb2051b0556927eb330a6636a5e37f1234057ad69c4922d3356c7f932
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4188653 bytes)**  
+-	Total Size: **4.2 MB (4187748 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72ffe27010cff8186ed3aede77a02e395dd97073a4b1b68eb30b06cd3016fa63`
+-	Image ID: `sha256:e4a3bd07eb42cce6af1b407eea718540668ec1049d095db76c4e6a95212513a2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8d85ac40f7488912d462b7321da1b56b9246440065bf2c5efd151b90fd19f45a`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 4.2 MB (4152057 bytes)  
+	-	`sha256:bdc3d9bf3345602c5f6d310dc990edc922625668bf43a7ca534d042b18cb6fd0`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 4.2 MB (4151148 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fa916b50886964edb9182a10c6add5867b4f1e7e94958e74165fd38427639f94`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 36.6 KB (36596 bytes)  
+	-	`sha256:1d8a13d1f48fa0e094e3e9fe4989a4daafb3189211b4df375b2604690d45e0ac`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 36.6 KB (36600 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `cassandra:latest`
 
 ```console
-$ docker pull cassandra@sha256:b5f3722b1d738a5ed851adc14b27e6ef944bf480e7350d7719cadb5b23cd86a0
+$ docker pull cassandra@sha256:8d3943909a8ef8d40a3a09948d01ffe7f8862e64b18d2820c12f02219f2cc491
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19218,13 +19218,13 @@ $ docker pull cassandra@sha256:818e6bf890ce73fa419fb8e3eece0f6b7ade2ce7b9ad82538
 ### `cassandra:latest` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:57c327ecf8f6451e533d414a677e515b0613955aa7f1664647d800e0e03eb993
+$ docker pull cassandra@sha256:9804dc1569f476a1401ba0d71a7a5143ce913e181a5d9056111879278db66c93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.6 MB (156613579 bytes)**  
+-	Total Size: **156.8 MB (156758254 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87e9f499e0e6a214a3c30d7ee785dfb0925d2d7d0e2ed10a549d9741e247b27c`
+-	Image ID: `sha256:d6066f284f3fc022dc7246d60c54123183d75b352c14e812678ee2ae2703047e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -19241,23 +19241,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:417bf7a0c7958ce23aaf2e92c63328e2bc36835d1c9b8c8302702ba8bdf3cc7b in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -19302,73 +19302,73 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 02:49:35 GMT  
 		Size: 13.8 MB (13767192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6849f23a4f1434c16f795f92fb3da9479ce10d1430d7c596b18d90ee4214c2b`  
-		Last Modified: Tue, 16 Apr 2024 02:51:44 GMT  
-		Size: 42.5 MB (42495113 bytes)  
+	-	`sha256:bfbf256ede8a47420c7318d3c88041015cf753cbd47b985cf569ff7776321d2e`  
+		Last Modified: Wed, 24 Apr 2024 17:45:50 GMT  
+		Size: 42.6 MB (42639841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc00b9755d5e4e76beaf4e1163bc4e996e32943f3675ac85e8ceb6752565dcbc`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
+	-	`sha256:cebf0f2f4ad23080aa60c01fdf9cc30e2ef2251086746ede6c96f92d0bba4944`  
+		Last Modified: Wed, 24 Apr 2024 17:45:42 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:534f801ae63411e03e2d0e382d7872e035bc223e769ca4cc8569f6d2f01a887c`  
-		Last Modified: Tue, 16 Apr 2024 02:51:35 GMT  
-		Size: 734.0 B  
+	-	`sha256:4beb26164e0535e8a6ddb7d6592ab1db0840f4e8cd5e5f6ddde5d63abe2ec65d`  
+		Last Modified: Wed, 24 Apr 2024 17:45:41 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c19eded7d4b8b0bf0468e6541024fbeb0c9f01fed90ab436a5cfb7546c73d22f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 1.7 KB (1731 bytes)  
+	-	`sha256:6d3bef45224becba7197bf884c77b9792dc8a20add77068ca9ed5f1af8a6f848`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e07e589a9c54b9f1ef1bd91b83e24188d813e72194c5939540535cfed1c7a52`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 13.2 MB (13208882 bytes)  
+	-	`sha256:29aca4a915214f6c41626417ee160a9d9211dc0a9dfe175204e80c9c35d00da9`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 13.2 MB (13208792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3ea969784cfb74f648882077018ff6a6cda2c69771bd60a1a833936a8b52e08`  
-		Last Modified: Thu, 18 Apr 2024 19:11:26 GMT  
-		Size: 1.0 MB (1019055 bytes)  
+	-	`sha256:880be8611ff9bbf307e88ddf8ea4b44c117d21e860fc268306ff43efc42116e0`  
+		Last Modified: Thu, 25 Apr 2024 10:22:30 GMT  
+		Size: 1.0 MB (1019071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:377babe32453cbc271b45b7c236d648443f71a6a93e63efcf0a4668a1754e338`  
-		Last Modified: Thu, 18 Apr 2024 19:11:27 GMT  
-		Size: 50.5 MB (50532243 bytes)  
+	-	`sha256:891f0ce16db5921fbe0e978bdd898ec8e783a09427a219884b253556316920a8`  
+		Last Modified: Thu, 25 Apr 2024 10:22:32 GMT  
+		Size: 50.5 MB (50532260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c76364c28af1f6eff9f116253d83273c99619fc20581036cb05beb559a062b7f`  
-		Last Modified: Thu, 18 Apr 2024 19:11:27 GMT  
+	-	`sha256:7d7f3904c395c9aeb6040d9bc8b2e9c73a54e0884d04606cc69889e8b8cd4b56`  
+		Last Modified: Thu, 25 Apr 2024 10:22:31 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:latest` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:4cc6acf1c527a20d357d7385ac8a6227e341ad7cd293933782b503d0c6c3de5b
+$ docker pull cassandra@sha256:c9621a4e15716b0ca960a954fc4c22a540c918a0c48957354436799ead53c8cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4190655 bytes)**  
+-	Total Size: **4.2 MB (4191475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bff9805d4846f4e0489cf24e90890147b84c295cb779e9d55c917d228ed4d97`
+-	Image ID: `sha256:3e25712947f741b3071e9f1d57f6d22ce6c148e216fb9bc44b43ebb4f4f56f87`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:21eb4aaa32b7e2a8912bd9da72f54263f3b4a9b7d9f167c0baebea403f820840`  
-		Last Modified: Thu, 18 Apr 2024 19:11:25 GMT  
+	-	`sha256:502b81b656b9e48905fb4571c5377a474fb509404c8e387df870e7ae496ea7cf`  
+		Last Modified: Thu, 25 Apr 2024 10:22:29 GMT  
 		Size: 4.2 MB (4154808 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:650baad590d9a3da918ace502a776ed555922b2802929468cb2ab0136a61c5bd`  
-		Last Modified: Thu, 18 Apr 2024 19:11:24 GMT  
-		Size: 35.8 KB (35847 bytes)  
+	-	`sha256:03b0508eac7c0f456f3eaaf07ab6449ad736ab65df2c899f5b96ebf22b6658b8`  
+		Last Modified: Thu, 25 Apr 2024 10:22:28 GMT  
+		Size: 36.7 KB (36667 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:latest` - linux; s390x
 
 ```console
-$ docker pull cassandra@sha256:8e271fe01f0d4a276968e5a6c382bc73dabecd3da0a287c8a5a73a50af55c6aa
+$ docker pull cassandra@sha256:e20e38bed7b3a67b119ebe6f9510c7ec499dd98bbafc704389abe75b910b366c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **146.2 MB (146173563 bytes)**  
+-	Total Size: **146.2 MB (146207683 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a41aee73fde95401b527a16ed253bcfcc12ed898cd9d435da443e84a1c6a132`
+-	Image ID: `sha256:63dae9407c02b3351caa5f3cec527a4581eae57348a60a86e2bff2bda099eeb5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -19385,23 +19385,23 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:7691b95908cace61ceeec91c44a1a37e7dc2fc3ab5a5fd89f493cefdff9e840e in / 
 # Wed, 20 Mar 2024 22:45:06 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
-ENV JAVA_VERSION=jdk-11.0.22+7
-# Thu, 25 Jan 2024 11:07:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='46e2bff7d5f419ac7c2fad29e78bfacf49ead4a2de1aba73b6329128f6d1f707';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.22_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3a0fec1b9ef38d6abd86cf11f6001772b086096b6ec2588d2a02f1fa86b2b1de';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.22_7.tar.gz';          ;;        armhf|arm)          ESUM='a5ab40aa53ecd413a8af738e66855d423e64b5389f876a4825e2cbdb45e9cfb3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.22_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a6719f71217d0b6f931461acec465ca3a1eb0b0e94942fe165e27b30ecc341c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.22_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='1662e73deb814814fe27239666c5bf2d989484821343f0a3629ffb03729044ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.22_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
+ENV JAVA_VERSION=jdk-11.0.23+9
+# Wed, 20 Mar 2024 22:45:06 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7290ace47a030d89ea023c28e7aa555c9da72b4194f73b39ec9d058011bf06dd';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='786a72296189ba8e43999532aa73730d87ec1fce558eb3c4e98b611b423375e3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='025f994549708f7291ce3b0fa7c41f7e78ec3af3eae3f85fffe9c5fa4a54889f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='3b3fbd324620fd914bd8462e292124493fcf846fd69195c4b9a231131dc68d5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='25abb7f74f55847b0d509402111084bd7a244d904744f3bfffa89528bc3b8a69';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 25 Jan 2024 11:07:04 GMT
+# Wed, 20 Mar 2024 22:45:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 20 Mar 2024 22:45:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
@@ -19446,59 +19446,59 @@ CMD ["cassandra" "-f"]
 		Last Modified: Tue, 16 Apr 2024 01:50:44 GMT  
 		Size: 13.0 MB (12986387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:462f41d0ade66ae0cbbac6954f7e6cb27ec29a3bedfdffeb9b235f5fd3925520`  
-		Last Modified: Tue, 16 Apr 2024 01:51:19 GMT  
-		Size: 40.8 MB (40766133 bytes)  
+	-	`sha256:94af0e093c53d72dd53fc9166542711511b970a638cd6ad5fb8c990afb2a45ac`  
+		Last Modified: Wed, 24 Apr 2024 19:49:52 GMT  
+		Size: 40.8 MB (40799964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffe4d7eb3f743d9e91fa6a779c0e996fbc86c104154c5070cde03b8840eceb7e`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
+	-	`sha256:2e846eab472a97e99cc7d3ce406cb76e887e14bd0b772908522799adbd03b45e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd7aa937dc5864318cd995372e5d54863e03d67bedbe274df435a2a678380965`  
-		Last Modified: Tue, 16 Apr 2024 01:51:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:d3c322b3970299d6713ecc912ca5f036000587af3dfded39cbc00252dc72894e`  
+		Last Modified: Wed, 24 Apr 2024 19:49:47 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e08a56076694145ed026659ee593606290bd9d23112f53677ffb6c0dc69ac9c1`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 1.7 KB (1729 bytes)  
+	-	`sha256:012876f373ca60723d688b09907e63f29bf827b18bc9b64cb517ce2bba8178e5`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f31a7d156a747e1cbceca7a402b341c3ec81255fdf4f89e3b25fc220ce414272`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 12.2 MB (12184224 bytes)  
+	-	`sha256:366bed68077187fba65714e890c590696a6a2e6a082ad8ff787077413d7dd9b6`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 12.2 MB (12184312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b758be916ec389866416631e7f9c740f03c4fac5de2b7a36fd7c2668915873`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 1.1 MB (1064218 bytes)  
+	-	`sha256:4900936eaafc8158a5663e5f55b0651dcd8b1faf447c4c86a8452133ed30c06d`  
+		Last Modified: Thu, 25 Apr 2024 10:13:18 GMT  
+		Size: 1.1 MB (1064271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bba711c31a804835b3109b4b31d1dd6266590d37e946794b3154a41f48df607b`  
-		Last Modified: Tue, 16 Apr 2024 17:25:21 GMT  
-		Size: 50.5 MB (50531603 bytes)  
+	-	`sha256:131886edddbec4bd36d61c241eddf6e35388951696549a07130da305d58af86a`  
+		Last Modified: Thu, 25 Apr 2024 10:13:19 GMT  
+		Size: 50.5 MB (50531753 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a4f32d3da5f899d0fbac88ced485125c9898fffba7af24471a55b16f70172b0`  
-		Last Modified: Tue, 16 Apr 2024 17:25:20 GMT  
-		Size: 1.2 KB (1219 bytes)  
+	-	`sha256:80267e025f9a56e3189d76333d553da16cc3338de3ec3cb7a78a6c4c2dcae276`  
+		Last Modified: Thu, 25 Apr 2024 10:13:19 GMT  
+		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:latest` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:aedb85bd4e858ee9be6717e9f8c20f59cfa2b37de8ec66118e437e61a281c412
+$ docker pull cassandra@sha256:00e7cdcdb2051b0556927eb330a6636a5e37f1234057ad69c4922d3356c7f932
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4188653 bytes)**  
+-	Total Size: **4.2 MB (4187748 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72ffe27010cff8186ed3aede77a02e395dd97073a4b1b68eb30b06cd3016fa63`
+-	Image ID: `sha256:e4a3bd07eb42cce6af1b407eea718540668ec1049d095db76c4e6a95212513a2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8d85ac40f7488912d462b7321da1b56b9246440065bf2c5efd151b90fd19f45a`  
-		Last Modified: Tue, 16 Apr 2024 17:25:19 GMT  
-		Size: 4.2 MB (4152057 bytes)  
+	-	`sha256:bdc3d9bf3345602c5f6d310dc990edc922625668bf43a7ca534d042b18cb6fd0`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 4.2 MB (4151148 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fa916b50886964edb9182a10c6add5867b4f1e7e94958e74165fd38427639f94`  
-		Last Modified: Tue, 16 Apr 2024 17:25:18 GMT  
-		Size: 36.6 KB (36596 bytes)  
+	-	`sha256:1d8a13d1f48fa0e094e3e9fe4989a4daafb3189211b4df375b2604690d45e0ac`  
+		Last Modified: Thu, 25 Apr 2024 10:13:17 GMT  
+		Size: 36.6 KB (36600 bytes)  
 		MIME: application/vnd.in-toto+json
