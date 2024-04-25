@@ -1,7 +1,7 @@
 ## `tomcat:jdk21-temurin`
 
 ```console
-$ docker pull tomcat@sha256:a768924119030b778276c46dc19293cc8e4deae63b6b61dd8c2990df2917d00e
+$ docker pull tomcat@sha256:582f3de763911c26b2496a6b4d348a01ce774888247c7caa9bed78189cf8068d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -350,28 +350,28 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:jdk21-temurin` - linux; s390x
 
 ```console
-$ docker pull tomcat@sha256:96f5215c454bc4aca8adfa2c0758a413f698828ffe74d1c921d02c0cad07a968
+$ docker pull tomcat@sha256:f05aba3042e99e3087654474448641aa28b058bf28c1fa4b08c2ccdbe90566c1
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **210.6 MB (210582832 bytes)**  
+-	Total Size: **210.6 MB (210583495 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cfc13a93c807a0d5c833fca34bf5f81070540b8305f0f820247d19bb61a70af7`
+-	Image ID: `sha256:178f78804e6637b045dba3d5f0b0188953c58ae0a47eed5a32c398f7d04b61a7`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Wed, 10 Apr 2024 19:09:02 GMT
+# Wed, 17 Apr 2024 18:42:31 GMT
 ARG RELEASE
-# Wed, 10 Apr 2024 19:09:02 GMT
+# Wed, 17 Apr 2024 18:42:31 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 10 Apr 2024 19:09:02 GMT
+# Wed, 17 Apr 2024 18:42:31 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 10 Apr 2024 19:09:02 GMT
+# Wed, 17 Apr 2024 18:42:31 GMT
 LABEL org.opencontainers.image.version=22.04
-# Wed, 10 Apr 2024 19:09:05 GMT
-ADD file:7691b95908cace61ceeec91c44a1a37e7dc2fc3ab5a5fd89f493cefdff9e840e in / 
-# Wed, 10 Apr 2024 19:09:05 GMT
+# Wed, 17 Apr 2024 18:42:34 GMT
+ADD file:f721f8e69988c4a423ddfb143b1001213ba52ffe029e8623c2f62e210d611fbc in / 
+# Wed, 17 Apr 2024 18:42:35 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -393,68 +393,68 @@ COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 CMD ["jshell"]
-# Wed, 24 Apr 2024 21:41:10 GMT
+# Thu, 25 Apr 2024 23:19:58 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 24 Apr 2024 21:41:11 GMT
+# Thu, 25 Apr 2024 23:19:58 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Apr 2024 21:41:13 GMT
+# Thu, 25 Apr 2024 23:19:59 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 24 Apr 2024 21:41:14 GMT
+# Thu, 25 Apr 2024 23:19:59 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 24 Apr 2024 21:41:15 GMT
+# Thu, 25 Apr 2024 23:19:59 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 24 Apr 2024 21:41:16 GMT
+# Thu, 25 Apr 2024 23:19:59 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Wed, 24 Apr 2024 21:43:41 GMT
+# Thu, 25 Apr 2024 23:20:56 GMT
 ENV GPG_KEYS=5C3C5F3E314C866292F359A8F3AD5C94A67F707E A9C5DF4D22E99998D9875A5110C01C5A2F6059E7
-# Wed, 24 Apr 2024 21:43:42 GMT
+# Thu, 25 Apr 2024 23:20:56 GMT
 ENV TOMCAT_MAJOR=10
-# Wed, 24 Apr 2024 21:43:43 GMT
+# Thu, 25 Apr 2024 23:20:56 GMT
 ENV TOMCAT_VERSION=10.1.23
-# Wed, 24 Apr 2024 21:43:43 GMT
+# Thu, 25 Apr 2024 23:20:57 GMT
 ENV TOMCAT_SHA512=d2d65818e02b1a8b570a761d79bd32a2d578ce140ea0bd62d03aedc10a8c13cb203926e4d81fac0c54ba27e1f9ecbb4e4f09d50e33ea9ca4cdc6ed1848fa6292
-# Wed, 24 Apr 2024 21:44:34 GMT
+# Thu, 25 Apr 2024 23:21:24 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://dlcdn.apache.org/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 1777 logs temp work; 		catalina.sh version
-# Wed, 24 Apr 2024 21:44:37 GMT
+# Thu, 25 Apr 2024 23:21:26 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Wed, 24 Apr 2024 21:44:37 GMT
+# Thu, 25 Apr 2024 23:21:26 GMT
 EXPOSE 8080
-# Wed, 24 Apr 2024 21:44:38 GMT
+# Thu, 25 Apr 2024 23:21:26 GMT
 ENTRYPOINT []
-# Wed, 24 Apr 2024 21:44:38 GMT
+# Thu, 25 Apr 2024 23:21:26 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:800aa7ed945a05dec0024b71aaef6a3ed35eb8fc8eef0982ff134513d2295713`  
-		Last Modified: Tue, 16 Apr 2024 01:37:03 GMT  
-		Size: 28.6 MB (28637157 bytes)  
+	-	`sha256:a9e3c76851ed4cb17ff69f864b6230094c69b50fc344074f5cccf18cabee6dbf`  
+		Last Modified: Thu, 25 Apr 2024 20:58:17 GMT  
+		Size: 28.6 MB (28637471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d90ad5f0f0cb023cb83f6ebf71357088b3adc1470b11fde5229437a800c90ba`  
-		Last Modified: Tue, 16 Apr 2024 01:51:49 GMT  
-		Size: 17.3 MB (17259561 bytes)  
+	-	`sha256:632ea7b1a074cfadb9d808f8366d3241e31345a52efd6fd7e9bdd6fdb945e2fa`  
+		Last Modified: Thu, 25 Apr 2024 21:20:56 GMT  
+		Size: 17.3 MB (17259962 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfc996d2b04efb2df306eff945a0ab27b9c036665009133ddd80dd3e57dd973e`  
-		Last Modified: Wed, 24 Apr 2024 19:52:09 GMT  
-		Size: 147.0 MB (146982853 bytes)  
+	-	`sha256:12124d33cc04895b6da23215aab3958addfc4a84556189182aacbf4a010ed085`  
+		Last Modified: Thu, 25 Apr 2024 21:21:59 GMT  
+		Size: 147.0 MB (146982879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8acf09195371bc0907d694d817a766feeace98d442306cdd2321d2203d8cff33`  
-		Last Modified: Wed, 24 Apr 2024 19:51:56 GMT  
-		Size: 175.0 B  
+	-	`sha256:2adb58386d19828ba49cec02ca3a4c4ab2d37a924828d7d2e98761f1dfa6c4c6`  
+		Last Modified: Thu, 25 Apr 2024 21:21:46 GMT  
+		Size: 177.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:356ec473554afb99afecd68791d29200b704d60fa5b0336988298c743cd423d1`  
-		Last Modified: Wed, 24 Apr 2024 19:51:56 GMT  
-		Size: 734.0 B  
+	-	`sha256:f329fa6e09b8693d1aea274a44a6939b5328484ae4a4119f3c7d6d70309cbd35`  
+		Last Modified: Thu, 25 Apr 2024 21:21:46 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:244c71eaebbd18127af1cf575e31f48fe3feb4d9f05fef88fd8ce8a3cbf22fd1`  
-		Last Modified: Wed, 24 Apr 2024 21:59:09 GMT  
-		Size: 172.0 B  
+	-	`sha256:37c555ba4af733b557748a2a13d23bf908a39ce797cc215d16ac8c529381c385`  
+		Last Modified: Thu, 25 Apr 2024 23:29:59 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f82061bf9b695dd174b7c2beccc75cad90d8693e6b4d545a3c1fad520c8a056e`  
-		Last Modified: Wed, 24 Apr 2024 21:59:59 GMT  
-		Size: 17.7 MB (17702049 bytes)  
+	-	`sha256:bac79d9900d757946929596b16a6e25c3253ba9783eef3fcb270e02f98dfa628`  
+		Last Modified: Thu, 25 Apr 2024 23:30:43 GMT  
+		Size: 17.7 MB (17701969 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:980aef2ec86fa66e3bd39a2f724ef8a99598306ac12b97eaa3e51828a951f27e`  
-		Last Modified: Wed, 24 Apr 2024 21:59:58 GMT  
-		Size: 131.0 B  
+	-	`sha256:8992e7feaaa6e7605ed9c85985a2242a81bdb877cc124fa5d435ffdbaf28c43b`  
+		Last Modified: Thu, 25 Apr 2024 23:30:42 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
