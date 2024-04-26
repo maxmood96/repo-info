@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b595eb8149501ce0f1776e135cc157eaf54f69b8c0e3613cfae05dd0d3caf44a`
+- Image ID: `sha256:842d068ab93c1293d84d29a5705f2cdb9402c7ec3a47b93fef54d8adca577991`
 - Created: `2024-03-21T18:18:23Z`
-- Virtual Size: ~ 175.01 Mb  
+- Virtual Size: ~ 174.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["perl5.38.2","-de0"]`
@@ -630,14 +630,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-9/9.3.0-22/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-9/9.3.0-22/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.31-13+deb11u8`
+### `dpkg` source package: `glibc=2.31-13+deb11u9`
 
 Binary Packages:
 
-- `libc-bin=2.31-13+deb11u8`
-- `libc-dev-bin=2.31-13+deb11u8`
-- `libc6:amd64=2.31-13+deb11u8`
-- `libc6-dev:amd64=2.31-13+deb11u8`
+- `libc-bin=2.31-13+deb11u9`
+- `libc-dev-bin=2.31-13+deb11u9`
+- `libc6:amd64=2.31-13+deb11u9`
+- `libc6-dev:amd64=2.31-13+deb11u9`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
@@ -647,17 +647,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.31-13+deb11u8
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-13%2bdeb11u8.dsc' glibc_2.31-13+deb11u8.dsc 8347 SHA256:a2b6b4147f2f39c8b0ae69605b4c6b5cad2a2cb64c5fd308e1fc1da97a836683
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-13%2bdeb11u8.debian.tar.xz' glibc_2.31-13+deb11u8.debian.tar.xz 960488 SHA256:9a1efa1b0b5c8ff7779c4c631cfefa371172c6bd1cbdb2be4bbc1dc1d4e91179
+$ apt-get source -qq --print-uris glibc=2.31-13+deb11u9
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u9.dsc' glibc_2.31-13+deb11u9.dsc 8347 SHA256:d434d56ceee9b81ca36558abdf21fe95ce96dd0be5f296c4d1394a53aac3bdce
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u9.debian.tar.xz' glibc_2.31-13+deb11u9.debian.tar.xz 961928 SHA256:c57f8a2e9bfbedeb110cfe35f9aa387337464ab1233de37f520a802f828a2b97
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.31-13+deb11u8/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.31-13+deb11u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.31-13+deb11u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.31-13+deb11u9/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.31-13+deb11u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.31-13+deb11u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1+deb11u1`
 
