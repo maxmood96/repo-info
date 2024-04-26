@@ -1,7 +1,7 @@
 ## `maven:3-sapmachine-11`
 
 ```console
-$ docker pull maven@sha256:2f8d476d9727d210e712f08704470774ab002710ca1f471e8805f91469e7f107
+$ docker pull maven@sha256:a4bd5f5577a6e9915fe3c57222fff999de735205ef9350bd638ed8f2dfbae734
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,34 +13,34 @@ $ docker pull maven@sha256:2f8d476d9727d210e712f08704470774ab002710ca1f471e8805f
 ### `maven:3-sapmachine-11` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:e43053cf24e97b88642eb3101bb976b1e6358424ac1d9b081ebbdb28a1cffa2a
+$ docker pull maven@sha256:a3c2aa7f0c7f72a611e6362561f1f3d3153bcb11ad9deb4848eebdbff56f9922
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **261.5 MB (261544591 bytes)**  
+-	Total Size: **261.5 MB (261544840 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:724e8b4631389d34234551ce936ef61ddb22cd4329780dc43df28bde9330b756`
+-	Image ID: `sha256:842fb95195405efeb07a7b4fcb6c8af2ae7ad2d7f11a6b62e8e4deab4829ab61`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Wed, 10 Apr 2024 18:52:02 GMT
+# Wed, 17 Apr 2024 17:56:33 GMT
 ARG RELEASE
-# Wed, 10 Apr 2024 18:52:02 GMT
+# Wed, 17 Apr 2024 17:56:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 10 Apr 2024 18:52:02 GMT
+# Wed, 17 Apr 2024 17:56:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 10 Apr 2024 18:52:02 GMT
+# Wed, 17 Apr 2024 17:56:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Wed, 10 Apr 2024 18:52:04 GMT
-ADD file:3bd10da0673e2e72cb06a1f64a9df49a36341df39b0f762e3d1b38ee4de296fa in / 
-# Wed, 10 Apr 2024 18:52:04 GMT
+# Wed, 17 Apr 2024 17:56:35 GMT
+ADD file:aa631666e3d7f8925e1308c15b2b63b5649db2cfcb079cba8218af98a5966923 in / 
+# Wed, 17 Apr 2024 17:56:35 GMT
 CMD ["/bin/bash"]
-# Fri, 19 Apr 2024 22:29:37 GMT
+# Thu, 25 Apr 2024 23:16:57 GMT
 RUN apt-get update     && apt-get -y --no-install-recommends install ca-certificates gnupg     && export GNUPGHOME="$(mktemp -d)"     && gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/sapmachine.gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys CACB9FE09150307D1D22D82962754C3B3ABCFE23     && chmod 644 /etc/apt/trusted.gpg.d/sapmachine.gpg     && echo "deb http://dist.sapmachine.io/debian/$(dpkg --print-architecture)/ ./" > /etc/apt/sources.list.d/sapmachine.list     && apt-get update     && apt-get -y --no-install-recommends install sapmachine-11-jdk=11.0.23     && apt-get remove -y --purge --autoremove ca-certificates gnupg     && rm -rf "$GNUPGHOME" /var/lib/apt/lists/*
-# Fri, 19 Apr 2024 22:29:38 GMT
+# Thu, 25 Apr 2024 23:16:57 GMT
 ENV JAVA_HOME=/usr/lib/jvm/sapmachine-11
-# Fri, 19 Apr 2024 22:29:38 GMT
+# Thu, 25 Apr 2024 23:16:58 GMT
 CMD ["jshell"]
 # Mon, 18 Dec 2023 19:11:15 GMT
 RUN apt-get update   && apt-get install -y ca-certificates curl git --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -67,33 +67,33 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:7021d1b70935851c95c45ed18156980b5024eda29b99564429025ea04f5ec109`  
-		Last Modified: Thu, 11 Apr 2024 03:03:17 GMT  
-		Size: 30.4 MB (30439778 bytes)  
+	-	`sha256:a271f97708e3f580cf6997962841fe468ee650379d940e567090a62dfa2997cf`  
+		Last Modified: Wed, 17 Apr 2024 23:01:11 GMT  
+		Size: 30.4 MB (30439728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c61cc26f77119522d2fc9791246511dc622b86e2ad1ec2bce52193b78b6d32f`  
-		Last Modified: Fri, 19 Apr 2024 22:40:19 GMT  
-		Size: 200.7 MB (200690956 bytes)  
+	-	`sha256:06173d64526b71a3cc596d8f31cf7df360003e0116ced0f818a11d8e66f00493`  
+		Last Modified: Thu, 25 Apr 2024 23:27:09 GMT  
+		Size: 200.7 MB (200690990 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c7ad8eda46e564274f64054c232b4bc0cd3546d2f6697f36ffcbc271339cafa`  
-		Last Modified: Sat, 20 Apr 2024 00:25:11 GMT  
-		Size: 20.9 MB (20932516 bytes)  
+	-	`sha256:e616130de538d171b789cfbcbbdde148667b8a110aa6fc5fe99a3fdbd9a9d727`  
+		Last Modified: Fri, 26 Apr 2024 05:15:06 GMT  
+		Size: 20.9 MB (20932810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36aa765208d2aa419d9c91903dc09db8e9240dbb0c96e3eb728c3194235ed5e3`  
-		Last Modified: Sat, 20 Apr 2024 00:25:08 GMT  
-		Size: 9.5 MB (9479966 bytes)  
+	-	`sha256:6d564416daf88dd38645b9afbdab448e2f5de4c8bab1b77cdf2c4d9e308f5ef1`  
+		Last Modified: Fri, 26 Apr 2024 05:15:03 GMT  
+		Size: 9.5 MB (9479949 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47ec20cf275be9364fa7d2128391627a4143fe0a9efd07c59e5361b338690489`  
-		Last Modified: Sat, 20 Apr 2024 00:25:07 GMT  
-		Size: 857.0 B  
+	-	`sha256:9bbe394b2ba12dcdd9eabe08e40f206167f2c61fce0851e675dbd613a0c5adfa`  
+		Last Modified: Fri, 26 Apr 2024 05:15:02 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd2b145806fc356ba43fcf6fffd7d62f15c51b3b2ff4796d8f1fdd0b20052410`  
-		Last Modified: Sat, 20 Apr 2024 00:25:07 GMT  
-		Size: 361.0 B  
+	-	`sha256:653e87c741b02e673d9a669ca28d8955f10ac5528e6d24137833ea21fb021c18`  
+		Last Modified: Fri, 26 Apr 2024 05:15:02 GMT  
+		Size: 355.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3be30214c024e87deb9ab8184ae55d489b5bf99f7c62cebbede678974d1300ef`  
-		Last Modified: Sat, 20 Apr 2024 00:25:07 GMT  
-		Size: 157.0 B  
+	-	`sha256:50792f30fc5e461c4c80443f04197f19085a9e984aa72adccc34360a02982d9f`  
+		Last Modified: Fri, 26 Apr 2024 05:15:02 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-sapmachine-11` - linux; arm64 variant v8
