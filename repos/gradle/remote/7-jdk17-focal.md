@@ -1,7 +1,7 @@
 ## `gradle:7-jdk17-focal`
 
 ```console
-$ docker pull gradle@sha256:4475d13266dfda583cc013500cd8a6eccc5d89c721a4fa5d763626bf9dbd27f3
+$ docker pull gradle@sha256:ec55459c2745665a10b2b56f4b2f1caa7029908294fa361c8e76b871ddec5d62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -354,29 +354,29 @@ USER root
 ### `gradle:7-jdk17-focal` - linux; ppc64le
 
 ```console
-$ docker pull gradle@sha256:1b31d39dec90bee18bdd75b5fd2206325d7c0354992cb6eddc28f09e59878ee1
+$ docker pull gradle@sha256:f2ef0bdf67a65f1167902d3a2b1a7440cab903d80a902a5e45809d1afc809245
 ```
 
 -	Docker Version: 20.10.26
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **397.4 MB (397403981 bytes)**  
+-	Total Size: **397.4 MB (397403306 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:035d153d631f46a22e3f767a9c45949d4ee2e8aae81abddadcc10ef952c94b2f`
+-	Image ID: `sha256:e9b267204fdb242d70d06df36e5c293a7b1d28dc2e9592d0a068cb7f4ec4da89`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
-# Wed, 10 Apr 2024 19:04:56 GMT
+# Wed, 17 Apr 2024 17:58:26 GMT
 ARG RELEASE
-# Wed, 10 Apr 2024 19:04:56 GMT
+# Wed, 17 Apr 2024 17:58:26 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 10 Apr 2024 19:04:56 GMT
+# Wed, 17 Apr 2024 17:58:26 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 10 Apr 2024 19:04:56 GMT
+# Wed, 17 Apr 2024 17:58:26 GMT
 LABEL org.opencontainers.image.version=20.04
-# Wed, 10 Apr 2024 19:04:59 GMT
-ADD file:8efe37e124c3eb7c9e2b3ba1f33a019526490b9a49cbe8997abf72caf6bb7ece in / 
-# Wed, 10 Apr 2024 19:04:59 GMT
+# Wed, 17 Apr 2024 17:58:30 GMT
+ADD file:4b03eaec2f51a953c9ccc0a67500331d1c8e8184b6aabb40b8b988151cae02a7 in / 
+# Wed, 17 Apr 2024 17:58:30 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -398,69 +398,69 @@ COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 CMD ["jshell"]
-# Wed, 24 Apr 2024 18:19:45 GMT
+# Thu, 25 Apr 2024 23:50:03 GMT
 CMD ["gradle"]
-# Wed, 24 Apr 2024 18:19:46 GMT
+# Thu, 25 Apr 2024 23:50:03 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Wed, 24 Apr 2024 18:19:48 GMT
+# Thu, 25 Apr 2024 23:50:06 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle     && chmod --recursive o+rwx /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln --symbolic /home/gradle/.gradle /root/.gradle
-# Wed, 24 Apr 2024 18:19:49 GMT
+# Thu, 25 Apr 2024 23:50:07 GMT
 VOLUME [/home/gradle/.gradle]
-# Wed, 24 Apr 2024 18:19:49 GMT
+# Thu, 25 Apr 2024 23:50:08 GMT
 WORKDIR /home/gradle
-# Wed, 24 Apr 2024 18:20:33 GMT
+# Thu, 25 Apr 2024 23:50:58 GMT
 RUN set -o errexit -o nounset     && apt-get update     && apt-get install --yes --no-install-recommends         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm --recursive --force /var/lib/apt/lists/*         && echo "Testing VCSes"     && which bzr     && which git     && which git-lfs     && which hg     && which svn
-# Wed, 24 Apr 2024 18:22:28 GMT
+# Thu, 25 Apr 2024 23:53:10 GMT
 ENV GRADLE_VERSION=7.6.4
-# Wed, 24 Apr 2024 18:22:30 GMT
+# Thu, 25 Apr 2024 23:53:11 GMT
 ARG GRADLE_DOWNLOAD_SHA256=bed1da33cca0f557ab13691c77f38bb67388119e4794d113e051039b80af9bb1
-# Wed, 24 Apr 2024 18:22:37 GMT
+# Thu, 25 Apr 2024 23:53:18 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=bed1da33cca0f557ab13691c77f38bb67388119e4794d113e051039b80af9bb1
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking Gradle download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle
-# Wed, 24 Apr 2024 18:22:39 GMT
+# Thu, 25 Apr 2024 23:53:20 GMT
 USER gradle
-# Wed, 24 Apr 2024 18:22:41 GMT
+# Thu, 25 Apr 2024 23:53:24 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=bed1da33cca0f557ab13691c77f38bb67388119e4794d113e051039b80af9bb1
 RUN set -o errexit -o nounset     && echo "Testing Gradle installation"     && gradle --version
-# Wed, 24 Apr 2024 18:22:42 GMT
+# Thu, 25 Apr 2024 23:53:25 GMT
 USER root
 ```
 
 -	Layers:
-	-	`sha256:0c372adcddc32347cef56486050a9e3f15243cd4c6b2ef3b7de6d5d6f7bf9ef1`  
-		Last Modified: Tue, 16 Apr 2024 02:49:17 GMT  
-		Size: 33.3 MB (33315676 bytes)  
+	-	`sha256:2f8bb14c4f706bfa46117251c6dad75ca75486672a0d08c838c1c4b8ef608aad`  
+		Last Modified: Thu, 25 Apr 2024 20:52:39 GMT  
+		Size: 33.3 MB (33315776 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bed02fbc6753871f4cd99b60c0c861c226e21ec4f3e27e4691babd079d263a8`  
-		Last Modified: Tue, 16 Apr 2024 02:52:01 GMT  
-		Size: 22.7 MB (22716042 bytes)  
+	-	`sha256:d4fd604e55823794e835018398cff2686da8595656605ab3d7dc6e8f36060fca`  
+		Last Modified: Thu, 25 Apr 2024 20:55:10 GMT  
+		Size: 22.7 MB (22715700 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee46359fad070b5cf9e5ee8c5b75e537235d7ecba5bb9516cf14f4f5c8810f64`  
-		Last Modified: Wed, 24 Apr 2024 17:46:49 GMT  
-		Size: 144.8 MB (144794005 bytes)  
+	-	`sha256:dc25179a7b6c7d2f6d12f7e0a54d5f83784bf25d337f2714571ab15b0e97d482`  
+		Last Modified: Thu, 25 Apr 2024 20:55:18 GMT  
+		Size: 144.8 MB (144794419 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f85f1698635f2b248ed0faa8d38435d2d332310a4e6b3a089ae6485a8534dd7`  
-		Last Modified: Wed, 24 Apr 2024 17:46:34 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dd901e7bafdb6cdf2bb1001a1cc1ef142c9930a228d99d29bc9e5494c9cf2c2`  
+		Last Modified: Thu, 25 Apr 2024 20:55:05 GMT  
+		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f95db0bf733d28662a92bac54e802983602c3fe06e49b96a77c12b83a200d29`  
-		Last Modified: Wed, 24 Apr 2024 17:46:34 GMT  
+	-	`sha256:1b25dd233c61257ef2ed792a41bda509b0695209634878e46cab72d69939630e`  
+		Last Modified: Thu, 25 Apr 2024 20:55:05 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe6eb504661c00a765fe94544c9b655b9da6e292a19ba206ea972305e0414339`  
-		Last Modified: Wed, 24 Apr 2024 18:28:29 GMT  
-		Size: 4.4 KB (4366 bytes)  
+	-	`sha256:7105901b28a69530176ede916669afc46952d6c09d74a47484e490888b9b3c12`  
+		Last Modified: Thu, 25 Apr 2024 23:58:57 GMT  
+		Size: 4.4 KB (4368 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98ed6e5ecd02ceee75316b7b9fa080e5af677ca3b0dfdec9b2a24aa0129111f9`  
-		Last Modified: Wed, 24 Apr 2024 18:28:43 GMT  
-		Size: 73.8 MB (73842552 bytes)  
+	-	`sha256:5319944ace5cc81b3532439ecb18203813e77c54470d2be85054b19af1c6febf`  
+		Last Modified: Thu, 25 Apr 2024 23:59:11 GMT  
+		Size: 73.8 MB (73841699 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a81eb567ff9bb0b0adae4366e73bc2cfd7e0d1f42639b59f468a673606edad47`  
-		Last Modified: Wed, 24 Apr 2024 18:31:44 GMT  
-		Size: 122.7 MB (122730260 bytes)  
+	-	`sha256:53db15145a844196096af830f179762992ab0e09bc8fbcd18bca32ff75677384`  
+		Last Modified: Fri, 26 Apr 2024 00:02:31 GMT  
+		Size: 122.7 MB (122730262 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db03d0a2dfc669c6cc7b308b2b0415d90727f6738864f47b4eed50084b44ea0e`  
-		Last Modified: Wed, 24 Apr 2024 18:31:37 GMT  
+	-	`sha256:0d5f24f7c562890efa022dcf380c1716d185ad2fe96cb567d6084474855f3f64`  
+		Last Modified: Fri, 26 Apr 2024 00:02:24 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
