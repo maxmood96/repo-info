@@ -14,6 +14,12 @@
 -	[`websphere-liberty:24.0.0.3-kernel-java11-openj9`](#websphere-liberty24003-kernel-java11-openj9)
 -	[`websphere-liberty:24.0.0.3-kernel-java17-openj9`](#websphere-liberty24003-kernel-java17-openj9)
 -	[`websphere-liberty:24.0.0.3-kernel-java8-ibmjava`](#websphere-liberty24003-kernel-java8-ibmjava)
+-	[`websphere-liberty:24.0.0.4-full-java11-openj9`](#websphere-liberty24004-full-java11-openj9)
+-	[`websphere-liberty:24.0.0.4-full-java17-openj9`](#websphere-liberty24004-full-java17-openj9)
+-	[`websphere-liberty:24.0.0.4-full-java8-ibmjava`](#websphere-liberty24004-full-java8-ibmjava)
+-	[`websphere-liberty:24.0.0.4-kernel-java11-openj9`](#websphere-liberty24004-kernel-java11-openj9)
+-	[`websphere-liberty:24.0.0.4-kernel-java17-openj9`](#websphere-liberty24004-kernel-java17-openj9)
+-	[`websphere-liberty:24.0.0.4-kernel-java8-ibmjava`](#websphere-liberty24004-kernel-java8-ibmjava)
 -	[`websphere-liberty:full`](#websphere-libertyfull)
 -	[`websphere-liberty:full-java11-openj9`](#websphere-libertyfull-java11-openj9)
 -	[`websphere-liberty:full-java17-openj9`](#websphere-libertyfull-java17-openj9)
@@ -7075,6 +7081,30 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 		Last Modified: Thu, 25 Apr 2024 22:51:32 GMT  
 		Size: 5.9 MB (5925058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `websphere-liberty:24.0.0.4-full-java11-openj9`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:24.0.0.4-full-java17-openj9`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:24.0.0.4-full-java8-ibmjava`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:24.0.0.4-kernel-java11-openj9`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:24.0.0.4-kernel-java17-openj9`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:24.0.0.4-kernel-java8-ibmjava`
+
+**does not exist** (yet?)
 
 ## `websphere-liberty:full`
 
