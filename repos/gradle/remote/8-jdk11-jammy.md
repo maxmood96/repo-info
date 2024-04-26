@@ -1,7 +1,7 @@
 ## `gradle:8-jdk11-jammy`
 
 ```console
-$ docker pull gradle@sha256:201e5d7d1e99db60aa361555cea1c2e845b4b7fecfe1755a9ff324dc7f24d90e
+$ docker pull gradle@sha256:ca0e03bdda3342a43ee5df3ad5553f4b13f3fe86cacbd7c19e8246e17a447a8f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -241,29 +241,29 @@ USER root
 ### `gradle:8-jdk11-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull gradle@sha256:4ddcac16731f384d84b9fdf8a5a6851f8910b47f3b65671d27668c6d527d9c62
+$ docker pull gradle@sha256:dcf5709f21163564fea1b2aad341cb20f06deb26a5129c8d8e18b971f3aa9908
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **368.9 MB (368894628 bytes)**  
+-	Total Size: **368.9 MB (368896316 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d9b8274d040076f905984859d0e12e71813c437a42c31cfec32f46c5197793e`
+-	Image ID: `sha256:adf661e5bf638fc3e9e281d2247a86414584e083b60d08234dede3439de081bc`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
-# Wed, 10 Apr 2024 18:26:15 GMT
+# Wed, 17 Apr 2024 18:24:57 GMT
 ARG RELEASE
-# Wed, 10 Apr 2024 18:26:15 GMT
+# Wed, 17 Apr 2024 18:24:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 10 Apr 2024 18:26:15 GMT
+# Wed, 17 Apr 2024 18:24:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 10 Apr 2024 18:26:15 GMT
+# Wed, 17 Apr 2024 18:24:57 GMT
 LABEL org.opencontainers.image.version=22.04
-# Wed, 10 Apr 2024 18:26:17 GMT
-ADD file:5523c8e2dfa5286893a32b66bdb3395b76e282d86d79b7320a5855e8f55481e1 in / 
-# Wed, 10 Apr 2024 18:26:17 GMT
+# Wed, 17 Apr 2024 18:24:59 GMT
+ADD file:51afefc6be37e5e27507b9b77fca51df26536c9827fe51acac6a4f9c1ebd60e8 in / 
+# Wed, 17 Apr 2024 18:24:59 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -285,70 +285,70 @@ COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 CMD ["jshell"]
-# Wed, 24 Apr 2024 20:29:51 GMT
+# Fri, 26 Apr 2024 04:02:43 GMT
 CMD ["gradle"]
-# Wed, 24 Apr 2024 20:29:51 GMT
+# Fri, 26 Apr 2024 04:02:43 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Wed, 24 Apr 2024 20:29:51 GMT
+# Fri, 26 Apr 2024 04:02:44 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle     && chmod --recursive o+rwx /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln --symbolic /home/gradle/.gradle /root/.gradle
-# Wed, 24 Apr 2024 20:29:51 GMT
+# Fri, 26 Apr 2024 04:02:44 GMT
 VOLUME [/home/gradle/.gradle]
-# Wed, 24 Apr 2024 20:29:52 GMT
+# Fri, 26 Apr 2024 04:02:44 GMT
 WORKDIR /home/gradle
-# Wed, 24 Apr 2024 20:30:05 GMT
+# Fri, 26 Apr 2024 04:02:57 GMT
 RUN set -o errexit -o nounset     && apt-get update     && apt-get install --yes --no-install-recommends         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm --recursive --force /var/lib/apt/lists/*         && echo "Testing VCSes"     && which bzr     && which git     && which git-lfs     && which hg     && which svn
-# Wed, 24 Apr 2024 20:30:06 GMT
+# Fri, 26 Apr 2024 04:02:58 GMT
 ENV GRADLE_VERSION=8.7
-# Wed, 24 Apr 2024 20:30:06 GMT
+# Fri, 26 Apr 2024 04:02:58 GMT
 ARG GRADLE_DOWNLOAD_SHA256=544c35d6bd849ae8a5ed0bcea39ba677dc40f49df7d1835561582da2009b961d
-# Wed, 24 Apr 2024 20:30:10 GMT
+# Fri, 26 Apr 2024 04:03:02 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=544c35d6bd849ae8a5ed0bcea39ba677dc40f49df7d1835561582da2009b961d
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking Gradle download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle
-# Wed, 24 Apr 2024 20:30:11 GMT
+# Fri, 26 Apr 2024 04:03:03 GMT
 USER gradle
-# Wed, 24 Apr 2024 20:30:12 GMT
+# Fri, 26 Apr 2024 04:03:04 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=544c35d6bd849ae8a5ed0bcea39ba677dc40f49df7d1835561582da2009b961d
 RUN set -o errexit -o nounset     && echo "Testing Gradle installation"     && gradle --version
-# Wed, 24 Apr 2024 20:30:12 GMT
+# Fri, 26 Apr 2024 04:03:04 GMT
 USER root
 ```
 
 -	Layers:
-	-	`sha256:89412e4d2f8b52822269bdfcea7664caa02251913b423e2ede06eb268ff39557`  
-		Last Modified: Fri, 12 Apr 2024 01:35:29 GMT  
-		Size: 28.4 MB (28400298 bytes)  
+	-	`sha256:4e57ea70c49f36b38caa9ead687cc8b2a5e728636d925e2dca82de1b8e1b3088`  
+		Last Modified: Wed, 17 Apr 2024 23:25:57 GMT  
+		Size: 28.4 MB (28401002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62af4570e03cd18721264dca7618ad8bfe7fc52046caf98dd92dbd19a11ae3bf`  
-		Last Modified: Tue, 16 Apr 2024 02:55:33 GMT  
-		Size: 12.8 MB (12847096 bytes)  
+	-	`sha256:1f037ef0398100188bd636ef3da1525cc5cc7f04347a802ecc28ba3240408631`  
+		Last Modified: Thu, 25 Apr 2024 21:59:12 GMT  
+		Size: 12.8 MB (12846901 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe7204e5d8b0879c518361ed35db1e021adbd227da28f691da0e294de372d927`  
-		Last Modified: Wed, 24 Apr 2024 17:56:11 GMT  
-		Size: 142.3 MB (142311160 bytes)  
+	-	`sha256:69d7019dd12a4dbeada6f552e74528388a044b0aff455c1a08400b793feedcea`  
+		Last Modified: Thu, 25 Apr 2024 22:00:29 GMT  
+		Size: 142.3 MB (142312883 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5130e883ff711f709baa785a5e95fd004cfad346ad6de3b1020428a9e3003eac`  
-		Last Modified: Wed, 24 Apr 2024 17:56:02 GMT  
-		Size: 175.0 B  
+	-	`sha256:9c8d1faacb848a9e7ba67fe6821019d2e88da438ce48d82854608e87486d80a9`  
+		Last Modified: Thu, 25 Apr 2024 22:00:20 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:316d2ac860ab52db185f385ac101b00537f8a5952e9c7500c05165950957af91`  
-		Last Modified: Wed, 24 Apr 2024 17:56:02 GMT  
+	-	`sha256:910357abf97ff617aa26ddf310a00781560493c85424eb0b17f2176995f46402`  
+		Last Modified: Thu, 25 Apr 2024 22:00:21 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:180ecb5e9b3d52cd0f7887266facd28ba3d1888438ee3e1f19cd51be07b2eb9e`  
-		Last Modified: Wed, 24 Apr 2024 20:35:59 GMT  
-		Size: 4.4 KB (4370 bytes)  
+	-	`sha256:29b1e395bd1e058d5d02689070f3c2d35542deba7ff4bc65c4cc24a34e12f79b`  
+		Last Modified: Fri, 26 Apr 2024 04:08:34 GMT  
+		Size: 4.4 KB (4368 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e7e78444eba4ff7a99a3518c979c1fffdf2c4c6e9aa0718629df32008eee3e9`  
-		Last Modified: Wed, 24 Apr 2024 20:36:06 GMT  
-		Size: 51.1 MB (51120839 bytes)  
+	-	`sha256:1ee7cfd7724ead9179286ac41746e39ab3cd026544517db38e1b20575f64c15e`  
+		Last Modified: Fri, 26 Apr 2024 04:08:41 GMT  
+		Size: 51.1 MB (51120307 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbbe09096fa09f41c288ecfdcfb10fe4206bcecdac82905b61680bfe413da205`  
-		Last Modified: Wed, 24 Apr 2024 20:36:04 GMT  
-		Size: 134.2 MB (134209786 bytes)  
+	-	`sha256:943620019d0b71952fd6fc257a0745077a2d7a28116bc59be87f610443eda2dc`  
+		Last Modified: Fri, 26 Apr 2024 04:08:40 GMT  
+		Size: 134.2 MB (134209776 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06f61138d4542145d4868f48b64973433d62468b53c59f4a78a380f51033681b`  
-		Last Modified: Wed, 24 Apr 2024 20:35:59 GMT  
-		Size: 170.0 B  
+	-	`sha256:19a89d6b432601686a0d7eb4a1351f3cdfcb2e5333fc8463d0b31acace342de9`  
+		Last Modified: Fri, 26 Apr 2024 04:08:34 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:8-jdk11-jammy` - linux; ppc64le
