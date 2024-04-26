@@ -1,7 +1,7 @@
 ## `clojure:temurin-17-lein-2.11.2-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:109381456767e63d91c4192876f2e01e71348930477467e6545b5e9877fbe45f
+$ docker pull clojure@sha256:98bb575a64e912a39e52964f5c5a5c6fd50333c114d0551056d92f80c41f3db2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -81,14 +81,14 @@ CMD ["repl"]
 ### `clojure:temurin-17-lein-2.11.2-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:3685f61320d4f2198575943c6190365f88c88d09b98cc64c384ec1d7c169bbe3
+$ docker pull clojure@sha256:ffcb95e305fb1bceb175415277a7eebefff1559bc5185f519a6fc45b00c19e29
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **194.8 MB (194781598 bytes)**  
+-	Total Size: **194.8 MB (194781684 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0308611f973dc729828500c45e4e734c6d2e3c9724f38f81e43206eb4bd6ef93`
+-	Image ID: `sha256:b299f067b4e445275fb84edd49fc8e54a8b07f4c3d5a20e0a1a718bfb397ba49`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -99,29 +99,29 @@ ADD file:ea7004fb788ab5cf1604d6e71153c48d99b75fbd1810e78a8c79faff11fe6771 in /
 CMD ["bash"]
 # Wed, 24 Apr 2024 10:43:39 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Apr 2024 19:09:10 GMT
-COPY dir:894420f494a8d73ff0a7e5986ef0142218654b95343c81b2b9fc9a9d3ea0c174 in /opt/java/openjdk 
-# Wed, 24 Apr 2024 19:09:13 GMT
+# Fri, 26 Apr 2024 01:30:40 GMT
+COPY dir:c133644f5c07e30ba622e3ac6570b28080cd19be78bf4af55cfe492de2f59b24 in /opt/java/openjdk 
+# Fri, 26 Apr 2024 01:30:44 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Apr 2024 19:09:13 GMT
+# Fri, 26 Apr 2024 01:30:44 GMT
 ENV LEIN_VERSION=2.11.2
-# Wed, 24 Apr 2024 19:09:13 GMT
+# Fri, 26 Apr 2024 01:30:44 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Wed, 24 Apr 2024 19:09:13 GMT
+# Fri, 26 Apr 2024 01:30:44 GMT
 WORKDIR /tmp
-# Wed, 24 Apr 2024 19:09:27 GMT
+# Fri, 26 Apr 2024 01:30:58 GMT
 RUN set -eux; apt-get update && apt-get install -y gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget
-# Wed, 24 Apr 2024 19:09:27 GMT
+# Fri, 26 Apr 2024 01:30:59 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Wed, 24 Apr 2024 19:09:27 GMT
+# Fri, 26 Apr 2024 01:30:59 GMT
 ENV LEIN_ROOT=1
-# Thu, 25 Apr 2024 19:51:28 GMT
+# Fri, 26 Apr 2024 01:31:01 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.3"]])' > project.clj   && lein deps && rm project.clj
-# Thu, 25 Apr 2024 19:51:28 GMT
+# Fri, 26 Apr 2024 01:31:01 GMT
 COPY file:cf90f595e38d932dff3bdcd4221efe7c65fb3432787490053b55b6917f06e4cd in /usr/local/bin/entrypoint 
-# Thu, 25 Apr 2024 19:51:28 GMT
+# Fri, 26 Apr 2024 01:31:01 GMT
 ENTRYPOINT ["entrypoint"]
-# Thu, 25 Apr 2024 19:51:28 GMT
+# Fri, 26 Apr 2024 01:31:01 GMT
 CMD ["repl"]
 ```
 
@@ -130,19 +130,19 @@ CMD ["repl"]
 		Last Modified: Wed, 24 Apr 2024 04:14:07 GMT  
 		Size: 29.2 MB (29179935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:760600a5e2889343637bf277e65d485b109927b87e8fcdc44cb39ef52ec19dd1`  
-		Last Modified: Wed, 24 Apr 2024 19:28:33 GMT  
-		Size: 143.9 MB (143891815 bytes)  
+	-	`sha256:b6770cdeed59ae538d00e090e043e138bd2d6efa9cbea2d2e2ed4018b891f51c`  
+		Last Modified: Fri, 26 Apr 2024 01:42:11 GMT  
+		Size: 143.9 MB (143891890 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e19d2d2b81d204045c8e1be2e45cc84a2e7d0f5b747f11f4cc9aa7efaa992c7`  
-		Last Modified: Wed, 24 Apr 2024 19:28:25 GMT  
-		Size: 17.3 MB (17311343 bytes)  
+	-	`sha256:c7b8fde12efa870f90ffe7fd53b1f9d19d138a0b89404bad73ee3638a724c5b5`  
+		Last Modified: Fri, 26 Apr 2024 01:42:03 GMT  
+		Size: 17.3 MB (17311365 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13803ba8b3921eee67eeb0bd7e3349eabb3e6911ef75925957ce7b8ec9bde534`  
-		Last Modified: Thu, 25 Apr 2024 20:06:05 GMT  
-		Size: 4.4 MB (4398106 bytes)  
+	-	`sha256:a20ea79ffda350b5edc4740440ffc76d13303b346846b0777358e45298079b36`  
+		Last Modified: Fri, 26 Apr 2024 01:42:02 GMT  
+		Size: 4.4 MB (4398092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e2f88808c3adabb111408b142bf10121c7460e133428bfa1aa89474321c62c94`  
-		Last Modified: Thu, 25 Apr 2024 20:06:05 GMT  
-		Size: 399.0 B  
+	-	`sha256:afa984efe7104dbc58dae9deab0aef6310d74a757338ab7982fc99b5b2145b65`  
+		Last Modified: Fri, 26 Apr 2024 01:42:01 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
