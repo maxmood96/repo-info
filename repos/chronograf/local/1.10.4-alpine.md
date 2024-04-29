@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:26d628147ca6e52b9a6e841c074d13321cbfb2cbb3f6427f8a3b5ea41f6aa9da`
-- Created: `2024-03-16T03:20:54.94731463Z`
-- Virtual Size: ~ 118.79 Mb  
+- Image ID: `sha256:ff1aa448b8cb627fb1b3de3e95e85d1792fb7c84a2324e6bacc6cf6f2bd1c4df`
+- Created: `2024-04-26T22:08:29.631433036Z`
+- Virtual Size: ~ 118.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["chronograf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `CHRONOGRAF_VERSION=1.10.3`
+  - `CHRONOGRAF_VERSION=1.10.4`
 
 ## `apk` (`.apk`-based packages)
 
@@ -120,16 +120,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20230506-r0 description:
+ca-certificates-20240226-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20230506-r0 webpage:
+ca-certificates-20240226-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20230506-r0 installed size:
-688 KiB
+ca-certificates-20240226-r0 installed size:
+712 KiB
 
-ca-certificates-20230506-r0 license:
+ca-certificates-20240226-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -267,6 +267,23 @@ ssl_client-1.36.1-r5 installed size:
 
 ssl_client-1.36.1-r5 license:
 GPL-2.0-only
+
+```
+
+### `apk` package: `su-exec`
+
+```console
+su-exec-0.2-r3 description:
+switch user and group id, setgroups and exec
+
+su-exec-0.2-r3 webpage:
+https://github.com/ncopa/su-exec
+
+su-exec-0.2-r3 installed size:
+24 KiB
+
+su-exec-0.2-r3 license:
+MIT
 
 ```
 
