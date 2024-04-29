@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9a68436ac90fc0ce08d32355573fe92b5ede34e4e6cb9ee23e53836b1a62fb60`
+- Image ID: `sha256:ec50627ff584cca774a5c3bd3f9d4e323869d9ecf69e9af4a42e9fee63828893`
 - Created: `2024-04-23T20:51:38Z`
 - Virtual Size: ~ 429.07 Mb  
   (total size of all layers on-disk)
@@ -605,9 +605,8 @@ Binary Packages:
 
 - `libc-bin=2.35-0ubuntu3.6`
 - `libc6:amd64=2.35-0ubuntu3.6`
-- `locales=2.35-0ubuntu3.6`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GFDL-1.3`
 - `GPL-2`
@@ -616,6 +615,28 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `glibc=2.35-0ubuntu3.7`
+
+Binary Packages:
+
+- `locales=2.35-0ubuntu3.7`
+
+Licenses: (parsed from: `/usr/share/doc/locales/copyright`)
+
+- `GFDL-1.3`
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.7.dsc' glibc_2.35-0ubuntu3.7.dsc 8884 SHA512:93d82c1807fcc57af3e8749b0ceeead61a91048f4056e5a933dc3997b7c3f3e355eccdd44ee880d8a0503d189849bc76ae5f4beeae2bff7716fd474a9aeff60f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.7.debian.tar.xz' glibc_2.35-0ubuntu3.7.debian.tar.xz 933184 SHA512:44b020b91e52f5a08c62da41742cc46a8702d489f2923f0dbf1133ef080359a411f6ca8881606c30939789638026b6ac51ac9945c27a429cb85697a7c20ab815
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -669,11 +690,11 @@ $ apt-get source -qq --print-uris gnupg2=2.2.27-3ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.1.debian.tar.xz' gnupg2_2.2.27-3ubuntu2.1.debian.tar.xz 66676 SHA512:6f8aea12b515ef1b8558ac925bb84ae6f1743739c0edfc64e02952479d4a1271f8f6ee8fc23461164116f3f8396376009ed1ea609c55a59e4936f7d02b1f828a
 ```
 
-### `dpkg` source package: `gnutls28=3.7.3-4ubuntu1.4`
+### `dpkg` source package: `gnutls28=3.7.3-4ubuntu1.5`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.7.3-4ubuntu1.4`
+- `libgnutls30:amd64=3.7.3-4ubuntu1.5`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -691,9 +712,15 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls28=3.7.3-4ubuntu1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.5.dsc' gnutls28_3.7.3-4ubuntu1.5.dsc 3572 SHA512:0a38fab364da93670bcdcdca4638301cf7bf9ec3f6a2969ceb07c3bdd9483c1898fc75c9a0c30087dfa4507266327c18240ce2448d866ca47ede6d2d944a4581
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz' gnutls28_3.7.3.orig.tar.xz 6119292 SHA512:3ace744affe23e284342658d6d2d2de49dd50065489cbc8be18fc7d38187253e5268ca54027ce5cd517056c249ac039a7481e4548cec04325de37ae85617d077
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz.asc' gnutls28_3.7.3.orig.tar.xz.asc 833 SHA512:cd0d30298377deddf20a835863b71e3f119588061f659906ad2684004758943179531508b1c77c730e930e2131148095e60ad9be365353cce772472d5f5345df
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.5.debian.tar.xz' gnutls28_3.7.3-4ubuntu1.5.debian.tar.xz 88576 SHA512:aab7435e49efb1d7b8e4dd84c9fec9a9e68d56b6b78e95de9accfc7d3ec390ed397014374e22a86d0a193f01e8eba5bf46c85ef37c1794b51c673f3582fe2e35
+```
 
 ### `dpkg` source package: `grep=3.7-1build1`
 
