@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:07f40536f2fc61bfd047326255ccee239ecd869e808eb8c592b4560ec219b54e`
-- Created: `2024-04-16T04:47:33.322353236Z`
+- Image ID: `sha256:1681128e5c9666985cc446615a82be106d44247cd0daca4023c820dc48855487`
+- Created: `2024-04-26T00:26:17.988811393Z`
 - Virtual Size: ~ 1.38 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -552,11 +552,11 @@ $ apt-get source -qq --print-uris gnupg2=2.2.19-3ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.19-3ubuntu2.2.debian.tar.xz' gnupg2_2.2.19-3ubuntu2.2.debian.tar.xz 66132 SHA512:799684fb92e2c3c1016f0f0df6b4febb1e23b4c448768657358e2203120957d1329a5b4f0b417c659fe3bec414473e59f43ab6c0976b25439121d2b33a1ffe00
 ```
 
-### `dpkg` source package: `gnutls28=3.6.13-2ubuntu1.10`
+### `dpkg` source package: `gnutls28=3.6.13-2ubuntu1.11`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.6.13-2ubuntu1.10`
+- `libgnutls30:amd64=3.6.13-2ubuntu1.11`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -574,9 +574,15 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls28=3.6.13-2ubuntu1.11
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.11.dsc' gnutls28_3.6.13-2ubuntu1.11.dsc 3598 SHA512:b89f65658e49d01f08ec1a062bf15489c8d4b4ff9dc46aa079afefbbfa514a13edbb81eb4d22d224d5b64663290fa49dfad1af3da0829f918551b542ad8d2a58
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz' gnutls28_3.6.13.orig.tar.xz 5958956 SHA512:23581952cb72c9a34f378c002bb62413d5a1243b74b48ad8dc49eaea4020d33c550f8dc1dd374cf7fbfa4187b0ca1c5698c8a0430398268a8b8a863f8633305c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz.asc' gnutls28_3.6.13.orig.tar.xz.asc 667 SHA512:b343a8ace6a5c81c0c44b2cb65d8e83dfe5963c9bab04d9131fa8fd03cdf0c6f990d720af8767084e01bf5f7a7dbd0f048aefe68c3b6f1dc1ea1899d567a72f7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.11.debian.tar.xz' gnutls28_3.6.13-2ubuntu1.11.debian.tar.xz 79324 SHA512:b626c9fe40fa6edd9b98925519db26bfb1cb63dd384ac1013d00412dd11ab42466b83ad2a852a96554ac2b29260cf808e2d4f747e0c959714dfd1435063526e7
+```
 
 ### `dpkg` source package: `grep=3.4-1`
 
