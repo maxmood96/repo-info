@@ -1,17 +1,17 @@
-# `nginx:1.24.0-alpine-slim`
+# `nginx:1.26.0-alpine-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ee5112eafd255a2c921521a50e807fefd946c83b6d623260ff1d01e856423454`
-- Created: `2023-04-11T19:57:20Z`
-- Virtual Size: ~ 11.52 Mb  
+- Image ID: `sha256:6480310617dbbdd6332029ed897515097504f8c42849dccb5f8a52d608e37187`
+- Created: `2024-04-23T21:35:33Z`
+- Virtual Size: ~ 17.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.24.0`
+  - `NGINX_VERSION=1.26.0`
   - `PKG_RELEASE=1`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -21,16 +21,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.4.0-r0 description:
+alpine-baselayout-3.4.3-r2 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.4.0-r0 webpage:
+alpine-baselayout-3.4.3-r2 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.4.0-r0 installed size:
+alpine-baselayout-3.4.3-r2 installed size:
 324 KiB
 
-alpine-baselayout-3.4.0-r0 license:
+alpine-baselayout-3.4.3-r2 license:
 GPL-2.0-only
 
 ```
@@ -38,16 +38,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.4.0-r0 description:
+alpine-baselayout-data-3.4.3-r2 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.4.0-r0 webpage:
+alpine-baselayout-data-3.4.3-r2 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-data-3.4.0-r0 installed size:
+alpine-baselayout-data-3.4.3-r2 installed size:
 76 KiB
 
-alpine-baselayout-data-3.4.0-r0 license:
+alpine-baselayout-data-3.4.3-r2 license:
 GPL-2.0-only
 
 ```
@@ -72,16 +72,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.12.10-r1 description:
+apk-tools-2.14.0-r5 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.12.10-r1 webpage:
+apk-tools-2.14.0-r5 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.12.10-r1 installed size:
-300 KiB
+apk-tools-2.14.0-r5 installed size:
+304 KiB
 
-apk-tools-2.12.10-r1 license:
+apk-tools-2.14.0-r5 license:
 GPL-2.0-only
 
 ```
@@ -89,16 +89,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.35.0-r29 description:
+busybox-1.36.1-r15 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.35.0-r29 webpage:
+busybox-1.36.1-r15 webpage:
 https://busybox.net/
 
-busybox-1.35.0-r29 installed size:
-940 KiB
+busybox-1.36.1-r15 installed size:
+924 KiB
 
-busybox-1.35.0-r29 license:
+busybox-1.36.1-r15 license:
 GPL-2.0-only
 
 ```
@@ -106,16 +106,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.35.0-r29 description:
+busybox-binsh-1.36.1-r15 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.35.0-r29 webpage:
+busybox-binsh-1.36.1-r15 webpage:
 https://busybox.net/
 
-busybox-binsh-1.35.0-r29 installed size:
+busybox-binsh-1.36.1-r15 installed size:
 8192 B
 
-busybox-binsh-1.35.0-r29 license:
+busybox-binsh-1.36.1-r15 license:
 GPL-2.0-only
 
 ```
@@ -140,16 +140,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libc-utils`
 
 ```console
-libc-utils-0.7.2-r3 description:
+libc-utils-0.7.2-r5 description:
 Meta package to pull in correct libc
 
-libc-utils-0.7.2-r3 webpage:
+libc-utils-0.7.2-r5 webpage:
 https://alpinelinux.org
 
-libc-utils-0.7.2-r3 installed size:
+libc-utils-0.7.2-r5 installed size:
 4096 B
 
-libc-utils-0.7.2-r3 license:
+libc-utils-0.7.2-r5 license:
 BSD-2-Clause AND BSD-3-Clause
 
 ```
@@ -157,16 +157,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.12-r4 description:
+libcrypto3-3.1.4-r6 description:
 Crypto library from openssl
 
-libcrypto3-3.0.12-r4 webpage:
+libcrypto3-3.1.4-r6 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.12-r4 installed size:
-4120 KiB
+libcrypto3-3.1.4-r6 installed size:
+4500 KiB
 
-libcrypto3-3.0.12-r4 license:
+libcrypto3-3.1.4-r6 license:
 Apache-2.0
 
 ```
@@ -174,16 +174,16 @@ Apache-2.0
 ### `apk` package: `libintl`
 
 ```console
-libintl-0.21.1-r1 description:
+libintl-0.22.3-r0 description:
 GNU gettext runtime library
 
-libintl-0.21.1-r1 webpage:
+libintl-0.22.3-r0 webpage:
 https://www.gnu.org/software/gettext/gettext.html
 
-libintl-0.21.1-r1 installed size:
-56 KiB
+libintl-0.22.3-r0 installed size:
+80 KiB
 
-libintl-0.21.1-r1 license:
+libintl-0.22.3-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -191,16 +191,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.12-r4 description:
+libssl3-3.1.4-r6 description:
 SSL shared libraries
 
-libssl3-3.0.12-r4 webpage:
+libssl3-3.1.4-r6 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.12-r4 installed size:
-608 KiB
+libssl3-3.1.4-r6 installed size:
+548 KiB
 
-libssl3-3.0.12-r4 license:
+libssl3-3.1.4-r6 license:
 Apache-2.0
 
 ```
@@ -208,16 +208,16 @@ Apache-2.0
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.3-r5 description:
+musl-1.2.4_git20230717-r4 description:
 the musl c library (libc) implementation
 
-musl-1.2.3-r5 webpage:
+musl-1.2.4_git20230717-r4 webpage:
 https://musl.libc.org/
 
-musl-1.2.3-r5 installed size:
-620 KiB
+musl-1.2.4_git20230717-r4 installed size:
+652 KiB
 
-musl-1.2.3-r5 license:
+musl-1.2.4_git20230717-r4 license:
 MIT
 
 ```
@@ -225,16 +225,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.3-r5 description:
+musl-utils-1.2.4_git20230717-r4 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.3-r5 webpage:
+musl-utils-1.2.4_git20230717-r4 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.3-r5 installed size:
-132 KiB
+musl-utils-1.2.4_git20230717-r4 installed size:
+128 KiB
 
-musl-utils-1.2.3-r5 license:
+musl-utils-1.2.4_git20230717-r4 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -242,16 +242,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.24.0-r1 description:
+nginx-1.26.0-r1 description:
 High performance web server
 
-nginx-1.24.0-r1 webpage:
+nginx-1.26.0-r1 webpage:
 https://nginx.org/
 
-nginx-1.24.0-r1 installed size:
-2608 KiB
+nginx-1.26.0-r1 installed size:
+2720 KiB
 
-nginx-1.24.0-r1 license:
+nginx-1.26.0-r1 license:
 2-clause BSD-like license
 
 ```
@@ -259,16 +259,16 @@ nginx-1.24.0-r1 license:
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.42-r0 description:
+pcre2-10.42-r2 description:
 Perl-compatible regular expression library
 
-pcre2-10.42-r0 webpage:
+pcre2-10.42-r2 webpage:
 https://pcre.org/
 
-pcre2-10.42-r0 installed size:
-672 KiB
+pcre2-10.42-r2 installed size:
+692 KiB
 
-pcre2-10.42-r0 license:
+pcre2-10.42-r2 license:
 BSD-3-Clause
 
 ```
@@ -276,16 +276,16 @@ BSD-3-Clause
 ### `apk` package: `scanelf`
 
 ```console
-scanelf-1.3.5-r1 description:
+scanelf-1.3.7-r2 description:
 Scan ELF binaries for stuff
 
-scanelf-1.3.5-r1 webpage:
+scanelf-1.3.7-r2 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
-scanelf-1.3.5-r1 installed size:
-96 KiB
+scanelf-1.3.7-r2 installed size:
+80 KiB
 
-scanelf-1.3.5-r1 license:
+scanelf-1.3.7-r2 license:
 GPL-2.0-only
 
 ```
@@ -293,16 +293,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.35.0-r29 description:
+ssl_client-1.36.1-r15 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.35.0-r29 webpage:
+ssl_client-1.36.1-r15 webpage:
 https://busybox.net/
 
-ssl_client-1.35.0-r29 installed size:
+ssl_client-1.36.1-r15 installed size:
 28 KiB
 
-ssl_client-1.35.0-r29 license:
+ssl_client-1.36.1-r15 license:
 GPL-2.0-only
 
 ```
@@ -327,16 +327,16 @@ Public-Domain
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.13-r0 description:
+zlib-1.3.1-r0 description:
 A compression/decompression Library
 
-zlib-1.2.13-r0 webpage:
+zlib-1.3.1-r0 webpage:
 https://zlib.net/
 
-zlib-1.2.13-r0 installed size:
+zlib-1.3.1-r0 installed size:
 108 KiB
 
-zlib-1.2.13-r0 license:
+zlib-1.3.1-r0 license:
 Zlib
 
 ```

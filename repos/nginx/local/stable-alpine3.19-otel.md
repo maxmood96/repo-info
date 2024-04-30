@@ -1,20 +1,21 @@
-# `nginx:1.25.5-alpine-perl`
+# `nginx:1.26.0-alpine-otel`
 
 ## Docker Metadata
 
-- Image ID: `sha256:12b01ddc1c1e8615f74c0df8943306771d3e6a831301bccbfe662c641542f69e`
+- Image ID: `sha256:a89945290cc196a147bf50903f48fb473da4876e975daba7c7be340ea8c5b1fd`
 - Created: `2024-04-23T21:35:33Z`
-- Virtual Size: ~ 85.88 Mb  
+- Virtual Size: ~ 58.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.25.5`
+  - `NGINX_VERSION=1.26.0`
   - `PKG_RELEASE=1`
   - `NJS_VERSION=0.8.4`
-  - `NJS_RELEASE=2`
+  - `NJS_RELEASE=1`
+  - `OTEL_VERSION=0.1.0`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
 
@@ -428,6 +429,23 @@ MIT
 
 ```
 
+### `apk` package: `libgcc`
+
+```console
+libgcc-13.2.1_git20231014-r0 description:
+GNU C compiler runtime libraries
+
+libgcc-13.2.1_git20231014-r0 webpage:
+https://gcc.gnu.org
+
+libgcc-13.2.1_git20231014-r0 installed size:
+152 KiB
+
+libgcc-13.2.1_git20231014-r0 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
+
+```
+
 ### `apk` package: `libgcrypt`
 
 ```console
@@ -646,6 +664,23 @@ libssl3-3.1.4-r6 installed size:
 
 libssl3-3.1.4-r6 license:
 Apache-2.0
+
+```
+
+### `apk` package: `libstdc++`
+
+```console
+libstdc++-13.2.1_git20231014-r0 description:
+GNU C++ standard runtime library
+
+libstdc++-13.2.1_git20231014-r0 webpage:
+https://gcc.gnu.org
+
+libstdc++-13.2.1_git20231014-r0 installed size:
+2652 KiB
+
+libstdc++-13.2.1_git20231014-r0 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -924,16 +959,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.25.5-r1 description:
+nginx-1.26.0-r1 description:
 High performance web server
 
-nginx-1.25.5-r1 webpage:
+nginx-1.26.0-r1 webpage:
 https://nginx.org/
 
-nginx-1.25.5-r1 installed size:
+nginx-1.26.0-r1 installed size:
 2720 KiB
 
-nginx-1.25.5-r1 license:
+nginx-1.26.0-r1 license:
 2-clause BSD-like license
 
 ```
@@ -941,16 +976,16 @@ nginx-1.25.5-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.25.5-r1 description:
+nginx-module-geoip-1.26.0-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.25.5-r1 webpage:
+nginx-module-geoip-1.26.0-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.25.5-r1 installed size:
+nginx-module-geoip-1.26.0-r1 installed size:
 100 KiB
 
-nginx-module-geoip-1.25.5-r1 license:
+nginx-module-geoip-1.26.0-r1 license:
 2-clause BSD-like license
 
 ```
@@ -958,16 +993,16 @@ nginx-module-geoip-1.25.5-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.25.5-r1 description:
+nginx-module-image-filter-1.26.0-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.25.5-r1 webpage:
+nginx-module-image-filter-1.26.0-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.25.5-r1 installed size:
+nginx-module-image-filter-1.26.0-r1 installed size:
 84 KiB
 
-nginx-module-image-filter-1.25.5-r1 license:
+nginx-module-image-filter-1.26.0-r1 license:
 2-clause BSD-like license
 
 ```
@@ -975,33 +1010,33 @@ nginx-module-image-filter-1.25.5-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.25.5.0.8.4-r2 description:
+nginx-module-njs-1.26.0.0.8.4-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.25.5.0.8.4-r2 webpage:
+nginx-module-njs-1.26.0.0.8.4-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.25.5.0.8.4-r2 installed size:
+nginx-module-njs-1.26.0.0.8.4-r1 installed size:
 4756 KiB
 
-nginx-module-njs-1.25.5.0.8.4-r2 license:
+nginx-module-njs-1.26.0.0.8.4-r1 license:
 2-clause BSD-like license
 
 ```
 
-### `apk` package: `nginx-module-perl`
+### `apk` package: `nginx-module-otel`
 
 ```console
-nginx-module-perl-1.25.5-r1 description:
-nginx Perl dynamic module
+nginx-module-otel-1.26.0.0.1.0-r1 description:
+nginx OpenTelemetry dynamic module
 
-nginx-module-perl-1.25.5-r1 webpage:
+nginx-module-otel-1.26.0.0.1.0-r1 webpage:
 https://nginx.org/
 
-nginx-module-perl-1.25.5-r1 installed size:
-156 KiB
+nginx-module-otel-1.26.0.0.1.0-r1 installed size:
+6612 KiB
 
-nginx-module-perl-1.25.5-r1 license:
+nginx-module-otel-1.26.0.0.1.0-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1009,16 +1044,16 @@ nginx-module-perl-1.25.5-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.25.5-r1 description:
+nginx-module-xslt-1.26.0-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.25.5-r1 webpage:
+nginx-module-xslt-1.26.0-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.25.5-r1 installed size:
+nginx-module-xslt-1.26.0-r1 installed size:
 84 KiB
 
-nginx-module-xslt-1.25.5-r1 license:
+nginx-module-xslt-1.26.0-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1037,23 +1072,6 @@ pcre2-10.42-r2 installed size:
 
 pcre2-10.42-r2 license:
 BSD-3-Clause
-
-```
-
-### `apk` package: `perl`
-
-```console
-perl-5.38.2-r0 description:
-Larry Wall's Practical Extraction and Report Language
-
-perl-5.38.2-r0 webpage:
-https://www.perl.org/
-
-perl-5.38.2-r0 installed size:
-39 MiB
-
-perl-5.38.2-r0 license:
-Artistic-1.0-Perl OR GPL-1.0-or-later
 
 ```
 

@@ -1,20 +1,21 @@
-# `nginx:1.25.5`
+# `nginx:1.26.0-otel`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7383c266ef252ad70806f3072ee8e63d2a16d1e6bafa6146a2da867fc7c41759`
+- Image ID: `sha256:704632a6776d744460f98dae66660b4706baacc27662acca9dcb12ede8953b2d`
 - Created: `2024-04-23T22:15:45Z`
-- Virtual Size: ~ 187.61 Mb  
+- Virtual Size: ~ 194.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.25.5`
+  - `NGINX_VERSION=1.26.0`
   - `NJS_VERSION=0.8.4`
-  - `NJS_RELEASE=2~bookworm`
+  - `NJS_RELEASE=1~bookworm`
   - `PKG_RELEASE=1~bookworm`
+  - `OTEL_VERSION=0.1.0`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
 
@@ -348,6 +349,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.8-5/ (for browsing the source)
 - https://sources.debian.net/src/bzip2/1.0.8-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.8-5/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `c-ares=1.18.1-3`
+
+Binary Packages:
+
+- `libc-ares2:amd64=1.18.1-3`
+
+Licenses: (parsed from: `/usr/share/doc/libc-ares2/copyright`)
+
+- `GPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris c-ares=1.18.1-3
+'http://deb.debian.org/debian/pool/main/c/c-ares/c-ares_1.18.1-3.dsc' c-ares_1.18.1-3.dsc 2146 SHA256:91d95bb080e4cd1d0d507f4693496e323a593f6611161361fd76735292bda6b6
+'http://deb.debian.org/debian/pool/main/c/c-ares/c-ares_1.18.1.orig.tar.gz' c-ares_1.18.1.orig.tar.gz 1560165 SHA256:1a7d52a8a84a9fbffb1be9133c0f6e17217d91ea5a6fa61f6b4729cda78ebbcf
+'http://deb.debian.org/debian/pool/main/c/c-ares/c-ares_1.18.1.orig.tar.gz.asc' c-ares_1.18.1.orig.tar.gz.asc 488 SHA256:e5a8a7bb13f77833b3cbce1865d2521e07e7b8011eda414fc8934f4b816e5523
+'http://deb.debian.org/debian/pool/main/c/c-ares/c-ares_1.18.1-3.debian.tar.xz' c-ares_1.18.1-3.debian.tar.xz 12628 SHA256:15d38a23182dc143c655b0225d21baa291a2be17435c8a7f427189e3e314fac9
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/c-ares/1.18.1-3/ (for browsing the source)
+- https://sources.debian.net/src/c-ares/1.18.1-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/c-ares/1.18.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ca-certificates=20230311`
 
@@ -2604,11 +2631,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp2/1.52.0-1+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp2/1.52.0-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-geoip=1.25.5-1~bookworm`
+### `dpkg` source package: `nginx-module-geoip=1.26.0-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.25.5-1~bookworm`
+- `nginx-module-geoip=1.26.0-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2618,11 +2645,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.25.5-1~bookworm`
+### `dpkg` source package: `nginx-module-image-filter=1.26.0-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.25.5-1~bookworm`
+- `nginx-module-image-filter=1.26.0-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2632,11 +2659,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.25.5+0.8.4-2~bookworm`
+### `dpkg` source package: `nginx-module-njs=1.26.0+0.8.4-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-njs=1.25.5+0.8.4-2~bookworm`
+- `nginx-module-njs=1.26.0+0.8.4-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2646,11 +2673,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.25.5-1~bookworm`
+### `dpkg` source package: `nginx-module-otel=1.26.0+0.1.0-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.25.5-1~bookworm`
+- `nginx-module-otel=1.26.0+0.1.0-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2660,11 +2687,25 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.25.5-1~bookworm`
+### `dpkg` source package: `nginx-module-xslt=1.26.0-1~bookworm`
 
 Binary Packages:
 
-- `nginx=1.25.5-1~bookworm`
+- `nginx-module-xslt=1.26.0-1~bookworm`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `nginx=1.26.0-1~bookworm`
+
+Binary Packages:
+
+- `nginx=1.26.0-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
