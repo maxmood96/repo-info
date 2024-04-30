@@ -16,6 +16,13 @@
 -	[`ros:iron-ros-base-jammy`](#rosiron-ros-base-jammy)
 -	[`ros:iron-ros-core`](#rosiron-ros-core)
 -	[`ros:iron-ros-core-jammy`](#rosiron-ros-core-jammy)
+-	[`ros:jazzy`](#rosjazzy)
+-	[`ros:jazzy-perception`](#rosjazzy-perception)
+-	[`ros:jazzy-perception-noble`](#rosjazzy-perception-noble)
+-	[`ros:jazzy-ros-base`](#rosjazzy-ros-base)
+-	[`ros:jazzy-ros-base-noble`](#rosjazzy-ros-base-noble)
+-	[`ros:jazzy-ros-core`](#rosjazzy-ros-core)
+-	[`ros:jazzy-ros-core-noble`](#rosjazzy-ros-core-noble)
 -	[`ros:latest`](#roslatest)
 -	[`ros:noetic`](#rosnoetic)
 -	[`ros:noetic-perception`](#rosnoetic-perception)
@@ -2983,6 +2990,34 @@ CMD ["bash"]
 		Last Modified: Thu, 25 Apr 2024 23:51:13 GMT  
 		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ros:jazzy`
+
+**does not exist** (yet?)
+
+## `ros:jazzy-perception`
+
+**does not exist** (yet?)
+
+## `ros:jazzy-perception-noble`
+
+**does not exist** (yet?)
+
+## `ros:jazzy-ros-base`
+
+**does not exist** (yet?)
+
+## `ros:jazzy-ros-base-noble`
+
+**does not exist** (yet?)
+
+## `ros:jazzy-ros-core`
+
+**does not exist** (yet?)
+
+## `ros:jazzy-ros-core-noble`
+
+**does not exist** (yet?)
 
 ## `ros:latest`
 
