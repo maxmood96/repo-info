@@ -1,19 +1,19 @@
-# `ruby:3.3.0-alpine3.19`
+# `ruby:3.3.1-alpine3.19`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7660dae900cb8eb80dd27eab8f6c51951834e4d95e6e55b9ec49aec2f0350e60`
-- Created: `2024-02-29T21:45:14Z`
-- Virtual Size: ~ 80.19 Mb  
+- Image ID: `sha256:b4f27358a0d3ad554b421ca74382c8d9e2882e68ca9718584c2c4683f350b3d5`
+- Created: `2024-04-23T15:14:18Z`
+- Virtual Size: ~ 85.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.3.0`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.0.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=676b65a36e637e90f982b57b059189b3276b9045034dcd186a7e9078847b975b`
+  - `RUBY_VERSION=3.3.1`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.1.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=0686941a3ec395a15ae2a852487b2a88e5fb8a5518e188df00d8d1bb71a6349b`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -142,16 +142,16 @@ bzip2-1.0.6
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20230506-r0 description:
+ca-certificates-20240226-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20230506-r0 webpage:
+ca-certificates-20240226-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20230506-r0 installed size:
-688 KiB
+ca-certificates-20240226-r0 installed size:
+712 KiB
 
-ca-certificates-20230506-r0 license:
+ca-certificates-20240226-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -227,16 +227,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r5 description:
+libcrypto3-3.1.4-r6 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r5 webpage:
+libcrypto3-3.1.4-r6 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r5 installed size:
+libcrypto3-3.1.4-r6 installed size:
 4500 KiB
 
-libcrypto3-3.1.4-r5 license:
+libcrypto3-3.1.4-r6 license:
 Apache-2.0
 
 ```
@@ -363,16 +363,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r5 description:
+libssl3-3.1.4-r6 description:
 SSL shared libraries
 
-libssl3-3.1.4-r5 webpage:
+libssl3-3.1.4-r6 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r5 installed size:
+libssl3-3.1.4-r6 installed size:
 548 KiB
 
-libssl3-3.1.4-r5 license:
+libssl3-3.1.4-r6 license:
 Apache-2.0
 
 ```
