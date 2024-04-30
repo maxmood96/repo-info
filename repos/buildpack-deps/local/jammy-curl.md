@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:78501104e1cd13d4481d02a00dadc02f935caa3378fcef8e0c163065cd2b3d6b`
-- Created: `2024-04-16T03:40:40.604888466Z`
-- Virtual Size: ~ 95.00 Mb  
+- Image ID: `sha256:33ecbb392e389bc0ee9534ec9c3958b7341f8ffca4924e61a8b7697eb305548d`
+- Created: `2024-04-25T21:23:22.922447169Z`
+- Virtual Size: ~ 95.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -614,11 +614,11 @@ $ apt-get source -qq --print-uris gnupg2=2.2.27-3ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.1.debian.tar.xz' gnupg2_2.2.27-3ubuntu2.1.debian.tar.xz 66676 SHA512:6f8aea12b515ef1b8558ac925bb84ae6f1743739c0edfc64e02952479d4a1271f8f6ee8fc23461164116f3f8396376009ed1ea609c55a59e4936f7d02b1f828a
 ```
 
-### `dpkg` source package: `gnutls28=3.7.3-4ubuntu1.4`
+### `dpkg` source package: `gnutls28=3.7.3-4ubuntu1.5`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.7.3-4ubuntu1.4`
+- `libgnutls30:amd64=3.7.3-4ubuntu1.5`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -636,9 +636,15 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls28=3.7.3-4ubuntu1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.5.dsc' gnutls28_3.7.3-4ubuntu1.5.dsc 3572 SHA512:0a38fab364da93670bcdcdca4638301cf7bf9ec3f6a2969ceb07c3bdd9483c1898fc75c9a0c30087dfa4507266327c18240ce2448d866ca47ede6d2d944a4581
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz' gnutls28_3.7.3.orig.tar.xz 6119292 SHA512:3ace744affe23e284342658d6d2d2de49dd50065489cbc8be18fc7d38187253e5268ca54027ce5cd517056c249ac039a7481e4548cec04325de37ae85617d077
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz.asc' gnutls28_3.7.3.orig.tar.xz.asc 833 SHA512:cd0d30298377deddf20a835863b71e3f119588061f659906ad2684004758943179531508b1c77c730e930e2131148095e60ad9be365353cce772472d5f5345df
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.5.debian.tar.xz' gnutls28_3.7.3-4ubuntu1.5.debian.tar.xz 88576 SHA512:aab7435e49efb1d7b8e4dd84c9fec9a9e68d56b6b78e95de9accfc7d3ec390ed397014374e22a86d0a193f01e8eba5bf46c85ef37c1794b51c673f3582fe2e35
+```
 
 ### `dpkg` source package: `grep=3.7-1build1`
 
@@ -1379,14 +1385,9 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.43.0-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.1.dsc' nghttp2_1.43.0-1ubuntu0.1.dsc 2638 SHA512:a2b2662cd6976dc6d8c7398ccbf59150893ca34a0c06dc3c4e3aff7297dabebd0142c9db031406b30374425fe782870d8ad032907dbd5f983ff15f7e0d8ee83c
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0.orig.tar.bz2' nghttp2_1.43.0.orig.tar.bz2 4521786 SHA512:f2e6665ad6c73f0a1a8c7b34ca821a905868d41dafca913e6a054eb5afb534a85ae91618c1a4b098e43f350ca3703fd1ece7848f0a771e8393a3eb0581ceaf59
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.1.debian.tar.xz' nghttp2_1.43.0-1ubuntu0.1.debian.tar.xz 22312 SHA512:df80f395e566bd3aefb77425446aaa12f5e65dfbd3239eb68219afa6863e96ee79cdb0fc8cd8a6b7ba72a3483963158b3b80fd5a61bbce5efc2fb59573deb7fd
-```
 
 ### `dpkg` source package: `npth=1.6-3build2`
 
