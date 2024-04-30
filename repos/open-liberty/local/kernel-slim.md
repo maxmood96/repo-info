@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d4cdbe8e4a3afabd1f6b0a44649a9e7f93ea204018997f12cb456df5efa06122`
-- Created: `2024-04-16T12:43:53.766700913Z`
-- Virtual Size: ~ 286.94 Mb  
+- Image ID: `sha256:7d0d63252d272a91ea59b140d499b4ddd5036eee484c9f94d2f0b3e9e65ffab5`
+- Created: `2024-04-27T00:57:40.918927241Z`
+- Virtual Size: ~ 288.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/helpers/runtime/docker-server.sh"]`
@@ -27,12 +27,12 @@
   - `org.opencontainers.image.authors=Leo Christy Jesuraj, Melissa Lee, Thomas Watson, Michal Broz, Wendy Raschke`
   - `org.opencontainers.image.description=This image contains the Open Liberty runtime with IBM Semeru Runtime Open Edition OpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/OpenLiberty/ci.docker#building-an-application-image`
   - `org.opencontainers.image.ref.name=ubuntu`
-  - `org.opencontainers.image.revision=cl240320240311-1901`
+  - `org.opencontainers.image.revision=cl240420240408-2000`
   - `org.opencontainers.image.source=https://github.com/OpenLiberty/ci.docker`
   - `org.opencontainers.image.title=Open Liberty`
   - `org.opencontainers.image.url=https://openliberty.io/`
   - `org.opencontainers.image.vendor=Open Liberty`
-  - `org.opencontainers.image.version=24.0.0.3`
+  - `org.opencontainers.image.version=24.0.0.4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1441,14 +1441,9 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.43.0-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.1.dsc' nghttp2_1.43.0-1ubuntu0.1.dsc 2638 SHA512:a2b2662cd6976dc6d8c7398ccbf59150893ca34a0c06dc3c4e3aff7297dabebd0142c9db031406b30374425fe782870d8ad032907dbd5f983ff15f7e0d8ee83c
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0.orig.tar.bz2' nghttp2_1.43.0.orig.tar.bz2 4521786 SHA512:f2e6665ad6c73f0a1a8c7b34ca821a905868d41dafca913e6a054eb5afb534a85ae91618c1a4b098e43f350ca3703fd1ece7848f0a771e8393a3eb0581ceaf59
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.1.debian.tar.xz' nghttp2_1.43.0-1ubuntu0.1.debian.tar.xz 22312 SHA512:df80f395e566bd3aefb77425446aaa12f5e65dfbd3239eb68219afa6863e96ee79cdb0fc8cd8a6b7ba72a3483963158b3b80fd5a61bbce5efc2fb59573deb7fd
-```
 
 ### `dpkg` source package: `openldap=2.5.17+dfsg-0ubuntu0.22.04.1`
 
