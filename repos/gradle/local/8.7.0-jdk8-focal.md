@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fd405ea33e73214a4eae6e8362acf79bacf23d6d1b370afd89e841b0ffe37d79`
-- Created: `2024-04-16T04:10:34.482640585Z`
-- Virtual Size: ~ 663.85 Mb  
+- Image ID: `sha256:a6c6b852920068f2e2658796fd33f6ce8e22a48e981c38485f67caaa165567f6`
+- Created: `2024-04-25T22:21:06.064162039Z`
+- Virtual Size: ~ 663.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u402-b06`
+  - `JAVA_VERSION=jdk8u412-b08`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=8.7`
 - Labels:
@@ -827,9 +827,8 @@ Binary Packages:
 
 - `libc-bin=2.31-0ubuntu9.14`
 - `libc6:amd64=2.31-0ubuntu9.14`
-- `locales=2.31-0ubuntu9.14`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -837,6 +836,26 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `glibc=2.31-0ubuntu9.15`
+
+Binary Packages:
+
+- `locales=2.31-0ubuntu9.15`
+
+Licenses: (parsed from: `/usr/share/doc/locales/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.15
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.15.dsc' glibc_2.31-0ubuntu9.15.dsc 9552 SHA512:bc2abf554ad00e2cc853f3e0045ab42a7035973ac151d11105caddec834daf1a7614fafe3a63f6e15b0a70c193f46c848c7c9d84fe6b11b08e317a124ebf7242
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.15.debian.tar.xz' glibc_2.31-0ubuntu9.15.debian.tar.xz 886588 SHA512:fd7a6e2eadcf18086b44bfa19334cb2664e3bdf6282951c0c45b20f81a87e37c549485875c6de3d4c4c03ac81b18af5734d9708bb2036592055cc6824787d4fe
+```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4ubuntu0.1`
 
@@ -891,11 +910,11 @@ $ apt-get source -qq --print-uris gnupg2=2.2.19-3ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.19-3ubuntu2.2.debian.tar.xz' gnupg2_2.2.19-3ubuntu2.2.debian.tar.xz 66132 SHA512:799684fb92e2c3c1016f0f0df6b4febb1e23b4c448768657358e2203120957d1329a5b4f0b417c659fe3bec414473e59f43ab6c0976b25439121d2b33a1ffe00
 ```
 
-### `dpkg` source package: `gnutls28=3.6.13-2ubuntu1.10`
+### `dpkg` source package: `gnutls28=3.6.13-2ubuntu1.11`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.6.13-2ubuntu1.10`
+- `libgnutls30:amd64=3.6.13-2ubuntu1.11`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -913,9 +932,15 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls28=3.6.13-2ubuntu1.11
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.11.dsc' gnutls28_3.6.13-2ubuntu1.11.dsc 3598 SHA512:b89f65658e49d01f08ec1a062bf15489c8d4b4ff9dc46aa079afefbbfa514a13edbb81eb4d22d224d5b64663290fa49dfad1af3da0829f918551b542ad8d2a58
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz' gnutls28_3.6.13.orig.tar.xz 5958956 SHA512:23581952cb72c9a34f378c002bb62413d5a1243b74b48ad8dc49eaea4020d33c550f8dc1dd374cf7fbfa4187b0ca1c5698c8a0430398268a8b8a863f8633305c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz.asc' gnutls28_3.6.13.orig.tar.xz.asc 667 SHA512:b343a8ace6a5c81c0c44b2cb65d8e83dfe5963c9bab04d9131fa8fd03cdf0c6f990d720af8767084e01bf5f7a7dbd0f048aefe68c3b6f1dc1ea1899d567a72f7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.11.debian.tar.xz' gnutls28_3.6.13-2ubuntu1.11.debian.tar.xz 79324 SHA512:b626c9fe40fa6edd9b98925519db26bfb1cb63dd384ac1013d00412dd11ab42466b83ad2a852a96554ac2b29260cf808e2d4f747e0c959714dfd1435063526e7
+```
 
 ### `dpkg` source package: `grep=3.4-1`
 
@@ -1736,14 +1761,9 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.40.0-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0-1ubuntu0.2.dsc' nghttp2_1.40.0-1ubuntu0.2.dsc 2638 SHA512:16436ee7a8ab43139ae6b8fccd4a9ac32865e6bd648975387a979283673cfc1b69231eeedde27baf39abb05df2b027382505180e4923e4f9ac74ca828455930e
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0.orig.tar.bz2' nghttp2_1.40.0.orig.tar.bz2 1937537 SHA512:bc3f6dd8ccc3c6891b61206eeb2a74019b2559b4d75409e022c1a9ad0745d50cf8db7ca8e076993ab04a17f87455dc38159bf085bd844366dac82506e44656a0
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0-1ubuntu0.2.debian.tar.xz' nghttp2_1.40.0-1ubuntu0.2.debian.tar.xz 21060 SHA512:9ffb12f3e1e997c7824b3eb994d3789b69332d8f288f72ec0d09b705422373454844653d3aa79b29844a6e4c41890f0716112b63e3f6cce2c1f81adea35782f5
-```
 
 ### `dpkg` source package: `openldap=2.4.49+dfsg-2ubuntu1.10`
 

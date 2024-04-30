@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:15c296ec09fcb6be5858b9490763746a70cdedafd9c0e423136050030eef23ab`
-- Created: `2024-04-16T04:15:28.32915007Z`
-- Virtual Size: ~ 613.06 Mb  
+- Image ID: `sha256:e8d3871f8a39a824ecb9da0152f0a8531ab88d84fc1ace64c5c5366246e32a80`
+- Created: `2024-04-25T22:26:27.345667946Z`
+- Virtual Size: ~ 613.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u402-b06`
+  - `JAVA_VERSION=jdk8u412-b08`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=7.6.4`
 - Labels:
@@ -846,9 +846,8 @@ Binary Packages:
 
 - `libc-bin=2.35-0ubuntu3.6`
 - `libc6:amd64=2.35-0ubuntu3.6`
-- `locales=2.35-0ubuntu3.6`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GFDL-1.3`
 - `GPL-2`
@@ -857,6 +856,28 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `glibc=2.35-0ubuntu3.7`
+
+Binary Packages:
+
+- `locales=2.35-0ubuntu3.7`
+
+Licenses: (parsed from: `/usr/share/doc/locales/copyright`)
+
+- `GFDL-1.3`
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.7.dsc' glibc_2.35-0ubuntu3.7.dsc 8884 SHA512:93d82c1807fcc57af3e8749b0ceeead61a91048f4056e5a933dc3997b7c3f3e355eccdd44ee880d8a0503d189849bc76ae5f4beeae2bff7716fd474a9aeff60f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.7.debian.tar.xz' glibc_2.35-0ubuntu3.7.debian.tar.xz 933184 SHA512:44b020b91e52f5a08c62da41742cc46a8702d489f2923f0dbf1133ef080359a411f6ca8881606c30939789638026b6ac51ac9945c27a429cb85697a7c20ab815
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -910,11 +931,11 @@ $ apt-get source -qq --print-uris gnupg2=2.2.27-3ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.1.debian.tar.xz' gnupg2_2.2.27-3ubuntu2.1.debian.tar.xz 66676 SHA512:6f8aea12b515ef1b8558ac925bb84ae6f1743739c0edfc64e02952479d4a1271f8f6ee8fc23461164116f3f8396376009ed1ea609c55a59e4936f7d02b1f828a
 ```
 
-### `dpkg` source package: `gnutls28=3.7.3-4ubuntu1.4`
+### `dpkg` source package: `gnutls28=3.7.3-4ubuntu1.5`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.7.3-4ubuntu1.4`
+- `libgnutls30:amd64=3.7.3-4ubuntu1.5`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -932,9 +953,15 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls28=3.7.3-4ubuntu1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.5.dsc' gnutls28_3.7.3-4ubuntu1.5.dsc 3572 SHA512:0a38fab364da93670bcdcdca4638301cf7bf9ec3f6a2969ceb07c3bdd9483c1898fc75c9a0c30087dfa4507266327c18240ce2448d866ca47ede6d2d944a4581
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz' gnutls28_3.7.3.orig.tar.xz 6119292 SHA512:3ace744affe23e284342658d6d2d2de49dd50065489cbc8be18fc7d38187253e5268ca54027ce5cd517056c249ac039a7481e4548cec04325de37ae85617d077
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz.asc' gnutls28_3.7.3.orig.tar.xz.asc 833 SHA512:cd0d30298377deddf20a835863b71e3f119588061f659906ad2684004758943179531508b1c77c730e930e2131148095e60ad9be365353cce772472d5f5345df
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.5.debian.tar.xz' gnutls28_3.7.3-4ubuntu1.5.debian.tar.xz 88576 SHA512:aab7435e49efb1d7b8e4dd84c9fec9a9e68d56b6b78e95de9accfc7d3ec390ed397014374e22a86d0a193f01e8eba5bf46c85ef37c1794b51c673f3582fe2e35
+```
 
 ### `dpkg` source package: `grep=3.7-1build1`
 
@@ -1840,14 +1867,9 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.43.0-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.1.dsc' nghttp2_1.43.0-1ubuntu0.1.dsc 2638 SHA512:a2b2662cd6976dc6d8c7398ccbf59150893ca34a0c06dc3c4e3aff7297dabebd0142c9db031406b30374425fe782870d8ad032907dbd5f983ff15f7e0d8ee83c
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0.orig.tar.bz2' nghttp2_1.43.0.orig.tar.bz2 4521786 SHA512:f2e6665ad6c73f0a1a8c7b34ca821a905868d41dafca913e6a054eb5afb534a85ae91618c1a4b098e43f350ca3703fd1ece7848f0a771e8393a3eb0581ceaf59
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.1.debian.tar.xz' nghttp2_1.43.0-1ubuntu0.1.debian.tar.xz 22312 SHA512:df80f395e566bd3aefb77425446aaa12f5e65dfbd3239eb68219afa6863e96ee79cdb0fc8cd8a6b7ba72a3483963158b3b80fd5a61bbce5efc2fb59573deb7fd
-```
 
 ### `dpkg` source package: `openldap=2.5.17+dfsg-0ubuntu0.22.04.1`
 
@@ -1868,11 +1890,11 @@ $ apt-get source -qq --print-uris openldap=2.5.17+dfsg-0ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.17%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.17+dfsg-0ubuntu0.22.04.1.debian.tar.xz 172128 SHA512:0cc9210ff73f9dadf9a3cdbaf8abdaa36650c3611e889bc9e6b9cb637f6f5b25e23edc55d6f6cc910b6f08eb0795114d73472090dbf4c233d10432199f07836c
 ```
 
-### `dpkg` source package: `openssh=1:8.9p1-3ubuntu0.6`
+### `dpkg` source package: `openssh=1:8.9p1-3ubuntu0.7`
 
 Binary Packages:
 
-- `openssh-client=1:8.9p1-3ubuntu0.6`
+- `openssh-client=1:8.9p1-3ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1887,11 +1909,10 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:8.9p1-3ubuntu0.6
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.6.dsc' openssh_8.9p1-3ubuntu0.6.dsc 3347 SHA512:048b6f76bbd42b901ef1b47d9da965146e14ec579e36db6ffd0c63e1f8317eddfa22c26ef33ee02428c9f1c872ea26b6815df6634e3a7be8887e74141aab1d0d
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz' openssh_8.9p1.orig.tar.gz 1820282 SHA512:04bd38ea6fe4be31acc8c4e83de7d3dda66fb7207be2e4ba25d3b8118d13d098a283769da9e8ce1fc4fba7edf739c14efcc6c9137132919261a7f882314b0f6b
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz.asc' openssh_8.9p1.orig.tar.gz.asc 833 SHA512:fd0bbd285ff2f8791f5a512f087f32bce026b716d5ac213cd4ef28f08722601fb943514bee71b2ac4b9f9363e2f120ce6c60fed952d1d8e53dbcf2a6fe2e706b
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.6.debian.tar.xz' openssh_8.9p1-3ubuntu0.6.debian.tar.xz 198192 SHA512:e2b41a020ff7255b26152b94b733c1e466bfa56c8f835092c0ec9f8c7838a2c0ac4a412dca361b445c1ea641232092caf14d61ee118291984e6fd8deb36f833c
+$ apt-get source -qq --print-uris openssh=1:8.9p1-3ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.7.dsc' openssh_8.9p1-3ubuntu0.7.dsc 3132 SHA512:391560c7048f60b2c8698150cf243ba2130a9941192be2dda494933b7f9532d28d6777bf1600fc61921c54699edfa7c47534b83dcd18269b531e91d3ea403bb5
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz' openssh_8.9p1.orig.tar.gz 1820282 SHA512:04bd38ea6fe4be31acc8c4e83de7d3dda66fb7207be2e4ba25d3b8118d13d098a283769da9e8ce1fc4fba7edf739c14efcc6c9137132919261a7f882314b0f6b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.7.debian.tar.xz' openssh_8.9p1-3ubuntu0.7.debian.tar.xz 199940 SHA512:f32727cacfb886938a10e21edc6d4838dea0380115a5e87d33f3a4302fa02793f748d909adff049297b044c1c0dc02eecfae447b88ab6666621f61de5036b206
 ```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.15`
