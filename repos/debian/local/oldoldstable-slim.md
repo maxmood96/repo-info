@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1c2f58fd1c95d5eb50300c7c2d6214b115e1231ceaa586f9e77e55770937e3fe`
-- Created: `2024-04-10T01:51:58.317286442Z`
-- Virtual Size: ~ 69.31 Mb  
+- Image ID: `sha256:d3047332132ff0f69fe25168d4074ad6eb54a717d9012041f5c53deb60dfbc2c`
+- Created: `2024-04-24T03:29:09.59459335Z`
+- Virtual Size: ~ 69.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1517,23 +1517,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.30+dfsg-6+deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.30+dfsg-6+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2021a-0+deb10u12`
+### `dpkg` source package: `tzdata=2024a-0+deb10u1`
 
 Binary Packages:
 
-- `tzdata=2021a-0+deb10u12`
+- `tzdata=2024a-0+deb10u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2024a-0+deb10u1
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2024a-0%2bdeb10u1.dsc' tzdata_2024a-0+deb10u1.dsc 2065 SHA256:e7c4648141973d5123deee90c37d3750fb3f177658ac0530cbc6cf98397407e7
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA256:0d0434459acbd2059a7a8da1f3304a84a86591f6ed69c6248fffa502b6edffe3
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2024a-0%2bdeb10u1.debian.tar.xz' tzdata_2024a-0+deb10u1.debian.tar.xz 108036 SHA256:7d9ac44f5a3de97824936a2c50a88af1aeea6fabd98e098bbf91e285d9536520
+```
 
-- http://snapshot.debian.org/package/tzdata/2021a-0+deb10u12/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2024a-0+deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2024a-0+deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2024a-0+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.33.1-0.1+deb10u1`
 
