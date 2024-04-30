@@ -18,6 +18,10 @@
 -	[`solr:9.5-slim`](#solr95-slim)
 -	[`solr:9.5.0`](#solr950)
 -	[`solr:9.5.0-slim`](#solr950-slim)
+-	[`solr:9.6`](#solr96)
+-	[`solr:9.6-slim`](#solr96-slim)
+-	[`solr:9.6.0`](#solr960)
+-	[`solr:9.6.0-slim`](#solr960-slim)
 -	[`solr:latest`](#solrlatest)
 -	[`solr:slim`](#solrslim)
 
@@ -13614,6 +13618,22 @@ $ docker pull solr@sha256:7555c3b5a978931416af2edf9f0a310b0dbae92e2e1cd6119c919a
 		Last Modified: Fri, 26 Apr 2024 20:36:18 GMT  
 		Size: 34.1 KB (34054 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `solr:9.6`
+
+**does not exist** (yet?)
+
+## `solr:9.6-slim`
+
+**does not exist** (yet?)
+
+## `solr:9.6.0`
+
+**does not exist** (yet?)
+
+## `solr:9.6.0-slim`
+
+**does not exist** (yet?)
 
 ## `solr:latest`
 
