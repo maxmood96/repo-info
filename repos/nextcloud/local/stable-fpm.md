@@ -1,9 +1,9 @@
-# `nextcloud:28.0.4-fpm`
+# `nextcloud:28.0.5-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:aee71357e45940d2d187e661321ddfacb792c6162e5380e50ffa3f975cf3db92`
-- Created: `2024-04-11T21:15:04.573539367Z`
+- Image ID: `sha256:2b79b3af917964b959435efe42e39ac550db4896107eb0a9d8ddaa9bf935d047`
+- Created: `2024-04-26T20:33:47.504960473Z`
 - Virtual Size: ~ 1.23 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=44b306fc021e56441f691da6c3108788bd9e450f293b3bc70fcd64b08dd41a50`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
-  - `NEXTCLOUD_VERSION=28.0.4`
+  - `NEXTCLOUD_VERSION=28.0.5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1400,14 +1400,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/glib2.0/2.74.6-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/glib2.0/2.74.6-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.36-9+deb12u4`
+### `dpkg` source package: `glibc=2.36-9+deb12u6`
 
 Binary Packages:
 
-- `libc-bin=2.36-9+deb12u4`
-- `libc-dev-bin=2.36-9+deb12u4`
-- `libc6:amd64=2.36-9+deb12u4`
-- `libc6-dev:amd64=2.36-9+deb12u4`
+- `libc-bin=2.36-9+deb12u6`
+- `libc-dev-bin=2.36-9+deb12u6`
+- `libc6:amd64=2.36-9+deb12u6`
+- `libc6-dev:amd64=2.36-9+deb12u6`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
@@ -1417,17 +1417,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.36-9+deb12u4
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36-9%2bdeb12u4.dsc' glibc_2.36-9+deb12u4.dsc 9761 SHA256:9bb617509a73c40b9885fc543e6b7a2b064b0c1e93043fba763a55c0a05a2f38
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36.orig.tar.xz' glibc_2.36.orig.tar.xz 19363988 SHA256:a543c02070d46ccaf866957efd13f10c924daa74c86a90a0254db09a92a708ee
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36-9%2bdeb12u4.debian.tar.xz' glibc_2.36-9+deb12u4.debian.tar.xz 862120 SHA256:b650ed666dd8388b576c8b298abe26cfd0a0c548314e4d29674bd19b48e7b4b4
+$ apt-get source -qq --print-uris glibc=2.36-9+deb12u6
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u6.dsc' glibc_2.36-9+deb12u6.dsc 9761 SHA256:fbd6a3b34c8019bc677c1aa3c55a7cdd2fac0f5226151d408cbf107e89002c10
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36.orig.tar.xz' glibc_2.36.orig.tar.xz 19363988 SHA256:a543c02070d46ccaf866957efd13f10c924daa74c86a90a0254db09a92a708ee
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u6.debian.tar.xz' glibc_2.36-9+deb12u6.debian.tar.xz 858672 SHA256:dab8173d6a6393b50ed0737bd32ff993a3fa7bf4a837573eab8c67f1391ecb12
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.36-9+deb12u4/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.36-9+deb12u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.36-9+deb12u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.36-9+deb12u6/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.36-9+deb12u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.36-9+deb12u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg1-1.1`
 
@@ -3245,11 +3245,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.76-1`
+### `dpkg` source package: `linux=6.1.85-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.76-1`
+- `linux-libc-dev:amd64=6.1.85-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3264,17 +3264,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.76-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.76-1.dsc' linux_6.1.76-1.dsc 290924 SHA256:02f001b02a115975f288eda50c65c1ec6d821ed5775065c118847ce9497a3da8
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.76.orig.tar.xz' linux_6.1.76.orig.tar.xz 137552080 SHA256:d5c3db7304a5c4dbe2428c2051d6fefb856d0587131b0e4f73102c2de8a610a8
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.76-1.debian.tar.xz' linux_6.1.76-1.debian.tar.xz 1597884 SHA256:6f60088be11274e0c1377b851b78850bcc46d4c31605838370c9dfe660b84064
+$ apt-get source -qq --print-uris linux=6.1.85-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.85-1.dsc' linux_6.1.85-1.dsc 290924 SHA256:4b9de409835ac055d92e13763c4228dfb706f40c61352e512fdc98245f24f1d7
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.85.orig.tar.xz' linux_6.1.85.orig.tar.xz 137597252 SHA256:528d48ab19f355c6706263723cfda108492ac2dcb4de8af21f8b1676c8373d7d
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.85-1.debian.tar.xz' linux_6.1.85-1.debian.tar.xz 1627960 SHA256:99cc3b914e71fade4613d90c895232c16268565b8d04ee765e6c553b770d0d00
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.76-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.76-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.76-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.85-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.85-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.85-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
