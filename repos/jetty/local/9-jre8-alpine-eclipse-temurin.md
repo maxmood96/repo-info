@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:59ae6bdf9d40ec95f214baae691f7f9d48016436f2c46e3d4425fac18958d898`
-- Created: `2024-03-28T04:30:40.449367015Z`
-- Virtual Size: ~ 159.57 Mb  
+- Image ID: `sha256:51d485b71697bb63b2f8eb812d0c8c40e59b6dc19ca8aaf8577e28b5670b5a56`
+- Created: `2024-04-24T20:32:28.535233131Z`
+- Virtual Size: ~ 159.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u402-b06`
+  - `JAVA_VERSION=jdk8u412-b08`
   - `JETTY_VERSION=9.4.54.v20240208`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
