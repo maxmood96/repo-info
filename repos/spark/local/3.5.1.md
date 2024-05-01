@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dfffafd7610386ca3c15172bc9b1c682edb9e8edd3441982ebbda2a5c7368680`
-- Created: `2024-04-16T12:20:38.969213312Z`
-- Virtual Size: ~ 982.51 Mb  
+- Image ID: `sha256:1f09c2ff3e4bfcfc2eae2756216dbc07a91fa46729babdd99a203056b66466ba`
+- Created: `2024-04-26T03:51:52.707787383Z`
+- Virtual Size: ~ 995.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.22+7`
+  - `JAVA_VERSION=jdk-11.0.23+9`
   - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz`
   - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz.asc`
   - `GPG_KEY=FD3E84942E5E6106235A1D25BD356A9F8740E4FF`
@@ -825,12 +825,8 @@ $ apt-get source -qq --print-uris gdbm=1.18.1-5
 Binary Packages:
 
 - `libc-bin=2.31-0ubuntu9.14`
-- `libc-dev-bin=2.31-0ubuntu9.14`
-- `libc6:amd64=2.31-0ubuntu9.14`
-- `libc6-dev:amd64=2.31-0ubuntu9.14`
-- `locales=2.31-0ubuntu9.14`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -838,6 +834,29 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `glibc=2.31-0ubuntu9.15`
+
+Binary Packages:
+
+- `libc-dev-bin=2.31-0ubuntu9.15`
+- `libc6:amd64=2.31-0ubuntu9.15`
+- `libc6-dev:amd64=2.31-0ubuntu9.15`
+- `locales=2.31-0ubuntu9.15`
+
+Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/locales/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.15
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.15.dsc' glibc_2.31-0ubuntu9.15.dsc 9552 SHA512:bc2abf554ad00e2cc853f3e0045ab42a7035973ac151d11105caddec834daf1a7614fafe3a63f6e15b0a70c193f46c848c7c9d84fe6b11b08e317a124ebf7242
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.15.debian.tar.xz' glibc_2.31-0ubuntu9.15.debian.tar.xz 886588 SHA512:fd7a6e2eadcf18086b44bfa19334cb2664e3bdf6282951c0c45b20f81a87e37c549485875c6de3d4c4c03ac81b18af5734d9708bb2036592055cc6824787d4fe
+```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4ubuntu0.1`
 
@@ -903,11 +922,11 @@ $ apt-get source -qq --print-uris gnupg2=2.2.19-3ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.19-3ubuntu2.2.debian.tar.xz' gnupg2_2.2.19-3ubuntu2.2.debian.tar.xz 66132 SHA512:799684fb92e2c3c1016f0f0df6b4febb1e23b4c448768657358e2203120957d1329a5b4f0b417c659fe3bec414473e59f43ab6c0976b25439121d2b33a1ffe00
 ```
 
-### `dpkg` source package: `gnutls28=3.6.13-2ubuntu1.10`
+### `dpkg` source package: `gnutls28=3.6.13-2ubuntu1.11`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.6.13-2ubuntu1.10`
+- `libgnutls30:amd64=3.6.13-2ubuntu1.11`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -925,9 +944,15 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls28=3.6.13-2ubuntu1.11
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.11.dsc' gnutls28_3.6.13-2ubuntu1.11.dsc 3598 SHA512:b89f65658e49d01f08ec1a062bf15489c8d4b4ff9dc46aa079afefbbfa514a13edbb81eb4d22d224d5b64663290fa49dfad1af3da0829f918551b542ad8d2a58
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz' gnutls28_3.6.13.orig.tar.xz 5958956 SHA512:23581952cb72c9a34f378c002bb62413d5a1243b74b48ad8dc49eaea4020d33c550f8dc1dd374cf7fbfa4187b0ca1c5698c8a0430398268a8b8a863f8633305c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz.asc' gnutls28_3.6.13.orig.tar.xz.asc 667 SHA512:b343a8ace6a5c81c0c44b2cb65d8e83dfe5963c9bab04d9131fa8fd03cdf0c6f990d720af8767084e01bf5f7a7dbd0f048aefe68c3b6f1dc1ea1899d567a72f7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.11.debian.tar.xz' gnutls28_3.6.13-2ubuntu1.11.debian.tar.xz 79324 SHA512:b626c9fe40fa6edd9b98925519db26bfb1cb63dd384ac1013d00412dd11ab42466b83ad2a852a96554ac2b29260cf808e2d4f747e0c959714dfd1435063526e7
+```
 
 ### `dpkg` source package: `gosu=1.10-1ubuntu0.20.04.2`
 
@@ -1768,19 +1793,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4%2bdfsg-3ubuntu0.1.debian.tar.xz' libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz 17300 SHA512:0484891be5603d00bd57b799c708b9395fccbaa8c6c44f535377f6fa2c7ac22c01c8a3c1b45e1c1f3c30f19dc74d510626bf82067fcbfb53c39f1bcc2249affe
 ```
 
-### `dpkg` source package: `linux=5.4.0-176.196`
+### `dpkg` source package: `linux=5.4.0-177.197`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.4.0-176.196`
+- `linux-libc-dev:amd64=5.4.0-177.197`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.4.0-177.197
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-177.197.dsc' linux_5.4.0-177.197.dsc 7418 SHA512:975a7865293a672547d688aa53b890ddf947bf6879514704e9daf049ff300ae8eab4ce4c836317ac438b3926dacc9029c45e0c522e89119edfd10615dcbf506f
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-177.197.diff.gz' linux_5.4.0-177.197.diff.gz 9246021 SHA512:34cd8ad290ea9859b21faa9f7e908498b9f8d2f1e0ba8d57943e17014903a501b718dcb733e25d0108f8cf7f73074d0e30b575c7970adbfa4918577c11e2cc0f
+```
 
 ### `dpkg` source package: `lmdb=0.9.24-1`
 
@@ -2096,14 +2126,9 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.40.0-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0-1ubuntu0.2.dsc' nghttp2_1.40.0-1ubuntu0.2.dsc 2638 SHA512:16436ee7a8ab43139ae6b8fccd4a9ac32865e6bd648975387a979283673cfc1b69231eeedde27baf39abb05df2b027382505180e4923e4f9ac74ca828455930e
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0.orig.tar.bz2' nghttp2_1.40.0.orig.tar.bz2 1937537 SHA512:bc3f6dd8ccc3c6891b61206eeb2a74019b2559b4d75409e022c1a9ad0745d50cf8db7ca8e076993ab04a17f87455dc38159bf085bd844366dac82506e44656a0
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0-1ubuntu0.2.debian.tar.xz' nghttp2_1.40.0-1ubuntu0.2.debian.tar.xz 21060 SHA512:9ffb12f3e1e997c7824b3eb994d3789b69332d8f288f72ec0d09b705422373454844653d3aa79b29844a6e4c41890f0716112b63e3f6cce2c1f81adea35782f5
-```
 
 ### `dpkg` source package: `npth=1.6-1`
 
