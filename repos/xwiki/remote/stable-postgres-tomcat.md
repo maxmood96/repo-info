@@ -1,7 +1,7 @@
 ## `xwiki:stable-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:975fd9cf27bb024a1a9a2bec9ec7126a251dfab1df4e93e38bb70521ac327e40
+$ docker pull xwiki@sha256:80f96f6c8409aa92982c471a558a9cb04fcc742db2a8784a826c6e6e54d92614
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,126 +14,126 @@ $ docker pull xwiki@sha256:975fd9cf27bb024a1a9a2bec9ec7126a251dfab1df4e93e38bb70
 ### `xwiki:stable-postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:efbbbb4f696ee7f6c4bbea84f01f2e3b5379be107b195d2cf7ee9f5af0455d50
+$ docker pull xwiki@sha256:ebf3da319615ae3ae051c6d7338f0c55a33470a11572d0aa95682ce9eba56616
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.4 MB (577432178 bytes)**  
+-	Total Size: **577.8 MB (577803320 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53e485f0fec22b40314c278c930d6d8761615678233ce068a423bbe8f141de8c`
+-	Image ID: `sha256:bcdbd5d43f4cb0a9a581d5f125e0b0ee79101f4454029c01bd73fa8953323760`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
 ```dockerfile
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Wed, 17 Apr 2024 17:56:33 GMT
 ARG RELEASE
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Wed, 17 Apr 2024 17:56:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Wed, 17 Apr 2024 17:56:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Wed, 17 Apr 2024 17:56:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Wed, 17 Apr 2024 17:56:35 GMT
 ADD file:aa631666e3d7f8925e1308c15b2b63b5649db2cfcb079cba8218af98a5966923 in / 
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Wed, 17 Apr 2024 17:56:35 GMT
 CMD ["/bin/bash"]
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_VERSION=jdk-17.0.11+9
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:29:59 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:29:59 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:30:00 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:30:00 GMT
 WORKDIR /usr/local/tomcat
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:30:00 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:30:00 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:32:41 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:32:41 GMT
 ENV TOMCAT_MAJOR=9
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:32:41 GMT
 ENV TOMCAT_VERSION=9.0.88
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:32:41 GMT
 ENV TOMCAT_SHA512=b2668f50339afdd266dbdf3ff20a98632a5552910179eda272b65ea0b18be4bef8fa9988e3cfc77e4eae4b74ae1e7abe2483b0e427a07628ed50fed3a13eefb9
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:32:42 GMT
 COPY dir:008c1e737cb1d7c32c9c864d02bf0b16431c32c3c39b5b68188e5f3c48a90ec8 in /usr/local/tomcat 
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:32:47 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:32:49 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:32:49 GMT
 EXPOSE 8080
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:32:49 GMT
 ENTRYPOINT []
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:32:49 GMT
 CMD ["catalina.sh" "run"]
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
-ENV XWIKI_VERSION=16.2.0
-# Mon, 25 Mar 2024 15:14:20 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.2.0
-# Mon, 25 Mar 2024 15:14:20 GMT
-ENV XWIKI_DOWNLOAD_SHA256=7d355ae1c88691b19af9658e3f042083d57c08d5e52e1ade25536536ad72fb3f
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
+ENV XWIKI_VERSION=16.3.0
+# Tue, 30 Apr 2024 13:35:01 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.3.0
+# Tue, 30 Apr 2024 13:35:01 GMT
+ENV XWIKI_DOWNLOAD_SHA256=3d75d5d495ed89af2e76a6058fa347094be0efd4862f88814640cc18ef3e33ba
+# Tue, 30 Apr 2024 13:35:01 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
-ENV POSTGRES_JDBC_VERSION=42.7.2
-# Mon, 25 Mar 2024 15:14:20 GMT
-ENV POSTGRES_JDBC_SHA256=0c244ac7d02cf89d8e29852eace6595d75bc4d78581b85b2768460081646a57b
-# Mon, 25 Mar 2024 15:14:20 GMT
-ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.2
-# Mon, 25 Mar 2024 15:14:20 GMT
-ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.2.jar
-# Mon, 25 Mar 2024 15:14:20 GMT
-ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.2.jar
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
+ENV POSTGRES_JDBC_VERSION=42.7.3
+# Tue, 30 Apr 2024 13:35:01 GMT
+ENV POSTGRES_JDBC_SHA256=a2644cbfba1baa145ff7e8c8ef582a6eed7a7ec4ca792f7f054122bdec756268
+# Tue, 30 Apr 2024 13:35:01 GMT
+ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.3
+# Tue, 30 Apr 2024 13:35:01 GMT
+ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.3.jar
+# Tue, 30 Apr 2024 13:35:01 GMT
+ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.3.jar
+# Tue, 30 Apr 2024 13:35:01 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 VOLUME [/usr/local/xwiki]
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 CMD ["xwiki"]
 ```
 
@@ -174,182 +174,182 @@ CMD ["xwiki"]
 		Last Modified: Fri, 26 Apr 2024 02:44:22 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4cc6410add4b4989f116effddf5a85168ce821cbe76050795ce7c6134dcaf776`  
-		Last Modified: Fri, 26 Apr 2024 04:51:34 GMT  
-		Size: 179.4 MB (179369169 bytes)  
+	-	`sha256:99055c6722251906ad95ea863bd8682710b5eb35a665148a9b4b545079c990d6`  
+		Last Modified: Tue, 30 Apr 2024 21:53:33 GMT  
+		Size: 179.4 MB (179369143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:718d53c46b8f8a0784582e2da352bd19ece197f8ddc1cdce88be60a9a157d49b`  
-		Last Modified: Fri, 26 Apr 2024 04:51:34 GMT  
-		Size: 293.6 MB (293556741 bytes)  
+	-	`sha256:51c93bb914225a965d2558ff415271b61f6f1176b0e1835f1babdea0d4d07646`  
+		Last Modified: Tue, 30 Apr 2024 21:53:35 GMT  
+		Size: 293.9 MB (293927687 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:367865c0d14a9c52d48b370a725d3cbdf528037a29cc3516a32623fa88a11891`  
-		Last Modified: Fri, 26 Apr 2024 04:51:30 GMT  
-		Size: 1.0 MB (1011768 bytes)  
+	-	`sha256:2458f1fd74f7273bd869d4d1f4ba7e81c0a572cd485d578bf515e25c81039a54`  
+		Last Modified: Tue, 30 Apr 2024 21:53:29 GMT  
+		Size: 1.0 MB (1011980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e47f411f8fece3d7629b40c79c69d4932584ba9306634d62fa242e67069d0b1`  
-		Last Modified: Fri, 26 Apr 2024 04:51:29 GMT  
-		Size: 1.3 KB (1336 bytes)  
+	-	`sha256:f1a5c8716dde7fe2c63e527e92862ee3990420186d1461dc3f531ff58d7c9705`  
+		Last Modified: Tue, 30 Apr 2024 21:53:29 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26e0846323830919779ecaa0783f071b3300a44f09eb6ea756f4a57b493b14c2`  
-		Last Modified: Fri, 26 Apr 2024 04:51:30 GMT  
-		Size: 2.5 KB (2461 bytes)  
+	-	`sha256:9aca1a8bd0616c48d17034dcf1141eb67c3b9683f4f8ab3a1f98bf2fd2c63456`  
+		Last Modified: Tue, 30 Apr 2024 21:53:30 GMT  
+		Size: 2.5 KB (2467 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d387509f7ebfc47319712a727c03082871065fcf52d3328a473a4e67940a44c3`  
-		Last Modified: Fri, 26 Apr 2024 04:51:31 GMT  
-		Size: 6.5 KB (6507 bytes)  
+	-	`sha256:51011d26c4dd752fce891f3934e4db2e56f9d74273a570d7f236f6594e4b60a2`  
+		Last Modified: Tue, 30 Apr 2024 21:53:30 GMT  
+		Size: 6.5 KB (6497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:374959a6ad4bf3dd02b84fa9e343cbeacd6d035470a5505f0bdd48809448065d`  
-		Last Modified: Fri, 26 Apr 2024 04:51:31 GMT  
-		Size: 2.4 KB (2432 bytes)  
+	-	`sha256:ca50e1a51d989b372e1c864ebba276c6c3838c10217306d02c86c185b2c8554b`  
+		Last Modified: Tue, 30 Apr 2024 21:53:31 GMT  
+		Size: 2.4 KB (2438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:stable-postgres-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:428fd91c02fc0181f1551136a67c30f143f3e6b9d919a2b962e3c8ac8484ab16
+$ docker pull xwiki@sha256:d275d69a241c3740539c144b372b0691238e82fc3fd6f14217faf736eaec04ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.9 MB (8935198 bytes)**  
+-	Total Size: **8.9 MB (8936330 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e2b89b3f987e99583869b19b6eba9b51264c3384904935dc610f990e6e6cbf5`
+-	Image ID: `sha256:89ad4c357c3d067ba73ea62184f5886568996be69698a8b1f3b0899ea356be48`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5fddebf1914560cbed351b48423315b2ace9975f9ea3719c227b053a4c883886`  
-		Last Modified: Fri, 26 Apr 2024 04:51:30 GMT  
-		Size: 8.9 MB (8893405 bytes)  
+	-	`sha256:4652f6caf695b722a7e5a1d0addc76f8cd1d53ebd1a2994a7371e7d443a4bf35`  
+		Last Modified: Tue, 30 Apr 2024 21:53:29 GMT  
+		Size: 8.9 MB (8894537 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ee108581c6d93e0267e96e65a950c8ae1c5e783e81a55c6b9436835f7d4d0dd2`  
-		Last Modified: Fri, 26 Apr 2024 04:51:30 GMT  
+	-	`sha256:53fda33499305c87370e13d8062a53bad1164a793d3c456892ca6379d975a1a6`  
+		Last Modified: Tue, 30 Apr 2024 21:53:28 GMT  
 		Size: 41.8 KB (41793 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:stable-postgres-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:288327b4dbb7dfe5af0b85798c2346a31778999c72c385da04bd4f3cd6e3da3d
+$ docker pull xwiki@sha256:b088c424bfc992423b8b0060b40d4324971c0ef56837a6970e7514c6228b787d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **569.9 MB (569855016 bytes)**  
+-	Total Size: **570.2 MB (570225976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef95171f52f8dd1f105d45d72f09d13ec146a68c0d2f4220e807c6283031aa57`
+-	Image ID: `sha256:42d7394c8385e8d1da68f190556406ed0c4ce4c4aa718111a9748f4a54edd6d0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
 ```dockerfile
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Wed, 17 Apr 2024 18:24:57 GMT
 ARG RELEASE
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Wed, 17 Apr 2024 18:24:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Wed, 17 Apr 2024 18:24:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Wed, 17 Apr 2024 18:24:57 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Wed, 17 Apr 2024 18:24:59 GMT
 ADD file:51afefc6be37e5e27507b9b77fca51df26536c9827fe51acac6a4f9c1ebd60e8 in / 
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Wed, 17 Apr 2024 18:24:59 GMT
 CMD ["/bin/bash"]
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_VERSION=jdk-17.0.11+9
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:02:05 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:02:05 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:02:05 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:02:06 GMT
 WORKDIR /usr/local/tomcat
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:02:06 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:02:06 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:04:15 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:04:15 GMT
 ENV TOMCAT_MAJOR=9
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:04:15 GMT
 ENV TOMCAT_VERSION=9.0.88
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:04:16 GMT
 ENV TOMCAT_SHA512=b2668f50339afdd266dbdf3ff20a98632a5552910179eda272b65ea0b18be4bef8fa9988e3cfc77e4eae4b74ae1e7abe2483b0e427a07628ed50fed3a13eefb9
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:04:16 GMT
 COPY dir:949b638e0bd71c40d1afd6181bc6d9f0fc46ee6d705abc4af012e6d15a18c62d in /usr/local/tomcat 
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:04:20 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:04:21 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:04:21 GMT
 EXPOSE 8080
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:04:21 GMT
 ENTRYPOINT []
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Fri, 26 Apr 2024 02:04:21 GMT
 CMD ["catalina.sh" "run"]
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
-ENV XWIKI_VERSION=16.2.0
-# Mon, 25 Mar 2024 15:14:20 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.2.0
-# Mon, 25 Mar 2024 15:14:20 GMT
-ENV XWIKI_DOWNLOAD_SHA256=7d355ae1c88691b19af9658e3f042083d57c08d5e52e1ade25536536ad72fb3f
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
+ENV XWIKI_VERSION=16.3.0
+# Tue, 30 Apr 2024 13:35:01 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.3.0
+# Tue, 30 Apr 2024 13:35:01 GMT
+ENV XWIKI_DOWNLOAD_SHA256=3d75d5d495ed89af2e76a6058fa347094be0efd4862f88814640cc18ef3e33ba
+# Tue, 30 Apr 2024 13:35:01 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
-ENV POSTGRES_JDBC_VERSION=42.7.2
-# Mon, 25 Mar 2024 15:14:20 GMT
-ENV POSTGRES_JDBC_SHA256=0c244ac7d02cf89d8e29852eace6595d75bc4d78581b85b2768460081646a57b
-# Mon, 25 Mar 2024 15:14:20 GMT
-ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.2
-# Mon, 25 Mar 2024 15:14:20 GMT
-ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.2.jar
-# Mon, 25 Mar 2024 15:14:20 GMT
-ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.2.jar
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
+ENV POSTGRES_JDBC_VERSION=42.7.3
+# Tue, 30 Apr 2024 13:35:01 GMT
+ENV POSTGRES_JDBC_SHA256=a2644cbfba1baa145ff7e8c8ef582a6eed7a7ec4ca792f7f054122bdec756268
+# Tue, 30 Apr 2024 13:35:01 GMT
+ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.3
+# Tue, 30 Apr 2024 13:35:01 GMT
+ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.3.jar
+# Tue, 30 Apr 2024 13:35:01 GMT
+ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.3.jar
+# Tue, 30 Apr 2024 13:35:01 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 VOLUME [/usr/local/xwiki]
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 25 Mar 2024 15:14:20 GMT
+# Tue, 30 Apr 2024 13:35:01 GMT
 CMD ["xwiki"]
 ```
 
@@ -390,55 +390,55 @@ CMD ["xwiki"]
 		Last Modified: Fri, 26 Apr 2024 02:14:57 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a360008dc0bf4194895f648e9fdee6789f144886eb06aafe84143b718ac9d45d`  
-		Last Modified: Fri, 26 Apr 2024 10:19:36 GMT  
-		Size: 174.4 MB (174422103 bytes)  
+	-	`sha256:5ac8e0fb8c9d086bde613d2eb089938f170e86ae65fbeec68fe9e69daae5170f`  
+		Last Modified: Tue, 30 Apr 2024 23:34:15 GMT  
+		Size: 174.4 MB (174422040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b02151280fd0418d573490914f6733a93eedd0cec06a246f1896209d5b77f9e0`  
-		Last Modified: Fri, 26 Apr 2024 10:19:38 GMT  
-		Size: 293.6 MB (293556790 bytes)  
+	-	`sha256:0ab31484622da10aab07316cfb730cc42efb08661779ccfa6fa6bd5d91f19263`  
+		Last Modified: Tue, 30 Apr 2024 23:34:27 GMT  
+		Size: 293.9 MB (293927628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:702bc93b60f3e6b46b42cc3885cd826b3d829b50fe1d16c1a5b1d66ca4328444`  
-		Last Modified: Fri, 26 Apr 2024 10:19:32 GMT  
-		Size: 1.0 MB (1011773 bytes)  
+	-	`sha256:11f0c6a0ead1544212567af0b247a7d0fbea39d67ca1e37e62e48aae7d57e1a6`  
+		Last Modified: Tue, 30 Apr 2024 23:34:10 GMT  
+		Size: 1.0 MB (1011976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2764eacb1b8641ed457f292b794ebb3d372827e324a8a188c4f27347fae532db`  
-		Last Modified: Fri, 26 Apr 2024 10:19:32 GMT  
-		Size: 1.3 KB (1342 bytes)  
+	-	`sha256:a7411d6891f2a3d4c3a26b2b7c43272c4ba2b246039806716126a08849183d65`  
+		Last Modified: Tue, 30 Apr 2024 23:34:10 GMT  
+		Size: 1.3 KB (1338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a6b84954a27bf924c6f695f29c4c1884d383fdd0eb88fe2e6cef11c76e2f851e`  
-		Last Modified: Fri, 26 Apr 2024 10:19:33 GMT  
-		Size: 2.5 KB (2462 bytes)  
+	-	`sha256:ca6da982d38bb992afb5a81fbb47454476febc85234ccae1055580071799809c`  
+		Last Modified: Tue, 30 Apr 2024 23:34:11 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0897b72b8214891b61a3592fbb9681ad91907eba7f50a508673512f0ea5a71ea`  
-		Last Modified: Fri, 26 Apr 2024 10:19:33 GMT  
-		Size: 6.5 KB (6509 bytes)  
+	-	`sha256:09da782de3f3a03e77d450aae0d9780f4812f20c302ebbe033ee4b4454a3d32c`  
+		Last Modified: Tue, 30 Apr 2024 23:34:12 GMT  
+		Size: 6.5 KB (6495 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64dc9a6e3d88c3047fe56e5e9db26615e4f2d99bdf3752c8b193913ec1e9f876`  
-		Last Modified: Fri, 26 Apr 2024 10:19:34 GMT  
-		Size: 2.4 KB (2435 bytes)  
+	-	`sha256:4622b499de35f7d5f578606cb9defe73307611a730789bba95b81a2d90ac762c`  
+		Last Modified: Tue, 30 Apr 2024 23:34:13 GMT  
+		Size: 2.4 KB (2433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:stable-postgres-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:effcd8b10b4a73ad59aa8f5a4ecc36c279576b2892e505ab709389ecdc4111c3
+$ docker pull xwiki@sha256:ea4799ce9b22e025a9c81aeaa23502a44760eda85ad2153fa3f9474517d2532f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.9 MB (8934256 bytes)**  
+-	Total Size: **8.9 MB (8935388 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9e0fee8cb4762f50d8402f28091fe328bb40475a080c86a3b37e5ade7c4f805b`
+-	Image ID: `sha256:3893fc4521312ada0cadebf87508f0661b79d81048744619e4a58291bc7191ec`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b11e38bab0f4b0e4fc1d405f1eeeedb8a0b17fef6added9ce61a404cab6d6d2d`  
-		Last Modified: Fri, 26 Apr 2024 10:19:32 GMT  
-		Size: 8.9 MB (8893914 bytes)  
+	-	`sha256:37183b993aabe9e2376b2bc63cc0c7b11b4e44a94789e829daf9643f18b783fa`  
+		Last Modified: Tue, 30 Apr 2024 23:34:10 GMT  
+		Size: 8.9 MB (8895046 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:20d0895bf7e8dd87085370b12d26d05ddd50c6bdded77b68c7e4fc6c7e4df583`  
-		Last Modified: Fri, 26 Apr 2024 10:19:31 GMT  
+	-	`sha256:e41ae0308858efb1e64e6c5db0ae28e17555b693dd8ba801c3b367f9fa3388dd`  
+		Last Modified: Tue, 30 Apr 2024 23:34:10 GMT  
 		Size: 40.3 KB (40342 bytes)  
 		MIME: application/vnd.in-toto+json
