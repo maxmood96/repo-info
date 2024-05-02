@@ -1,7 +1,7 @@
 ## `maven:ibmjava`
 
 ```console
-$ docker pull maven@sha256:c8a1292e30867e1a4576195acb39b5ae4d8e023f87bf6f98f67dcfb05a25d6af
+$ docker pull maven@sha256:dca23af15fa0701fcf813f1cb4fe75a492c6d17d92682bdcf27e28879ae4f752
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,38 +13,38 @@ $ docker pull maven@sha256:c8a1292e30867e1a4576195acb39b5ae4d8e023f87bf6f98f67dc
 ### `maven:ibmjava` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:0de805d03ab8e4a29b832c756665ee41a20bb5e842b9f36c600445fa7f442286
+$ docker pull maven@sha256:1dc7fb096816728e5fdb580bdb9456988df39165f036fe3831f1a1bfe25d4410
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **215.3 MB (215268110 bytes)**  
+-	Total Size: **215.3 MB (215267890 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8650b4c11ccdd02874aa6f9313ac354ddae8c35239a54667ef632dea8cb43b55`
+-	Image ID: `sha256:f02603010a25c9cda45732dc752d81a7a2992c65a9435a8b6ec23b8802234c44`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Wed, 17 Apr 2024 17:56:33 GMT
+# Sat, 27 Apr 2024 13:18:35 GMT
 ARG RELEASE
-# Wed, 17 Apr 2024 17:56:33 GMT
+# Sat, 27 Apr 2024 13:18:35 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 17 Apr 2024 17:56:33 GMT
+# Sat, 27 Apr 2024 13:18:35 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 17 Apr 2024 17:56:33 GMT
+# Sat, 27 Apr 2024 13:18:35 GMT
 LABEL org.opencontainers.image.version=22.04
-# Wed, 17 Apr 2024 17:56:35 GMT
-ADD file:aa631666e3d7f8925e1308c15b2b63b5649db2cfcb079cba8218af98a5966923 in / 
-# Wed, 17 Apr 2024 17:56:35 GMT
+# Sat, 27 Apr 2024 13:18:37 GMT
+ADD file:a5d32dc2ab15ff0d7dbd72af26e361eb1f3e87a0d29ec3a1ceab24ad7b3e6ba9 in / 
+# Sat, 27 Apr 2024 13:18:37 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Apr 2024 23:00:40 GMT
+# Thu, 02 May 2024 02:25:37 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Thu, 25 Apr 2024 23:00:47 GMT
+# Thu, 02 May 2024 02:25:55 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Thu, 25 Apr 2024 23:00:47 GMT
+# Thu, 02 May 2024 02:25:55 GMT
 ENV JAVA_VERSION=8.0.8.21
-# Thu, 25 Apr 2024 23:01:28 GMT
+# Thu, 02 May 2024 02:26:35 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='7055a291305403c09d9248ba93ba748db390c38de46b38bc4153c1f07731cb75';          YML_FILE='8.0/sdk/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='2aad67a7340e93c4830e04901191d41082329a9390d40ecded124458f6990b95';          YML_FILE='8.0/sdk/linux/ppc64le/index.yml';          ;;        s390)          ESUM='a6e64697f4d1524444eee27eceaa6d8ce0e26879f8a656148c31661a75f67b4b';          YML_FILE='8.0/sdk/linux/s390/index.yml';          ;;        s390x)          ESUM='53816ed6e12f44a7466c0e06a2ea9fbee363574febe3747ec612166a0676da1b';          YML_FILE='8.0/sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz;
-# Thu, 25 Apr 2024 23:01:29 GMT
+# Thu, 02 May 2024 02:26:36 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 # Mon, 18 Dec 2023 19:11:15 GMT
 RUN apt-get update   && apt-get install -y ca-certificates curl --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
@@ -71,37 +71,37 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a271f97708e3f580cf6997962841fe468ee650379d940e567090a62dfa2997cf`  
-		Last Modified: Wed, 17 Apr 2024 23:01:11 GMT  
-		Size: 30.4 MB (30439728 bytes)  
+	-	`sha256:4a023cab5400feb5c1ab725beb8345ddb0e3200314004b56677a5eee2e8c86cf`  
+		Last Modified: Sat, 27 Apr 2024 20:07:18 GMT  
+		Size: 30.4 MB (30439649 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f3066bb336ddeade3e29eac1b48ce34f7ff3f10b32bea015f60e84d42e08c51`  
-		Last Modified: Thu, 25 Apr 2024 23:01:41 GMT  
-		Size: 1.5 MB (1469827 bytes)  
+	-	`sha256:53f8db45b3d5d0ac0b6b07122767bc090d41c210ecb9b4b374ecae77c6a71bbd`  
+		Last Modified: Thu, 02 May 2024 02:26:48 GMT  
+		Size: 1.5 MB (1469725 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f6edd4d46aa322b0ccb5b7e6cef5b1874fb2acf037531e418e2da737b7b9294`  
-		Last Modified: Thu, 25 Apr 2024 23:02:26 GMT  
-		Size: 172.2 MB (172179932 bytes)  
+	-	`sha256:cbb783971ffde75bb93aff837e9766229c4716339681e0520253bac4ff6ef1ca`  
+		Last Modified: Thu, 02 May 2024 02:27:34 GMT  
+		Size: 172.2 MB (172179916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12b8cb304991a2183f757fe7848383a200ff2dd609bdc3b463bd933b37e207c8`  
-		Last Modified: Fri, 26 Apr 2024 05:14:18 GMT  
-		Size: 1.7 MB (1697327 bytes)  
+	-	`sha256:520ad2b51ad8e6532797c6f437c6246bccd114f134efeb7276a99d158cf0a743`  
+		Last Modified: Thu, 02 May 2024 06:48:58 GMT  
+		Size: 1.7 MB (1697292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:907554bac13adb1de6ee33d4cc1c7cc794c42853ed6bf42a7d7c7137362d5727`  
-		Last Modified: Fri, 26 Apr 2024 05:14:19 GMT  
-		Size: 9.5 MB (9479935 bytes)  
+	-	`sha256:269469e3952a63a4abe64382fe4710feb0257a0fb09f0c07613dd3be72ddbccc`  
+		Last Modified: Thu, 02 May 2024 06:48:58 GMT  
+		Size: 9.5 MB (9479944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74ae364c64be2921c1ee7e1b5ffc1e3e2ba76db5e0cf2748a4ec258b7db9072c`  
-		Last Modified: Fri, 26 Apr 2024 05:14:18 GMT  
-		Size: 850.0 B  
+	-	`sha256:d03eaef4d27dd352f4c0aa05c0d98bde93c8dd8e36502007871aaabf65c0b546`  
+		Last Modified: Thu, 02 May 2024 06:48:57 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e950164f7e32ceac9af94efdbcb1d13c037087def3a318a40afd6000e7c5ee6`  
-		Last Modified: Fri, 26 Apr 2024 05:14:19 GMT  
-		Size: 354.0 B  
+	-	`sha256:45888613c135846de8542ff6d271ef25a30af9d15a8f1c88ee877c52fbc484ae`  
+		Last Modified: Thu, 02 May 2024 06:48:58 GMT  
+		Size: 357.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49c5a220d056d3513cada0c47f78dbde8cd01291f6df2e531e1280d1cfd7ea70`  
-		Last Modified: Fri, 26 Apr 2024 05:14:18 GMT  
-		Size: 157.0 B  
+	-	`sha256:a2835b165611dc67af7348607ceb2fafa6ef6a4a3ba728cd50ba630db407aa09`  
+		Last Modified: Thu, 02 May 2024 06:48:57 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:ibmjava` - linux; ppc64le
