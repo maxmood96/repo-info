@@ -29,6 +29,24 @@
 -	[`caddy:2.7.6-windowsservercore`](#caddy276-windowsservercore)
 -	[`caddy:2.7.6-windowsservercore-1809`](#caddy276-windowsservercore-1809)
 -	[`caddy:2.7.6-windowsservercore-ltsc2022`](#caddy276-windowsservercore-ltsc2022)
+-	[`caddy:2.8`](#caddy28)
+-	[`caddy:2.8-alpine`](#caddy28-alpine)
+-	[`caddy:2.8-builder`](#caddy28-builder)
+-	[`caddy:2.8-builder-alpine`](#caddy28-builder-alpine)
+-	[`caddy:2.8-builder-windowsservercore-1809`](#caddy28-builder-windowsservercore-1809)
+-	[`caddy:2.8-builder-windowsservercore-ltsc2022`](#caddy28-builder-windowsservercore-ltsc2022)
+-	[`caddy:2.8-windowsservercore`](#caddy28-windowsservercore)
+-	[`caddy:2.8-windowsservercore-1809`](#caddy28-windowsservercore-1809)
+-	[`caddy:2.8-windowsservercore-ltsc2022`](#caddy28-windowsservercore-ltsc2022)
+-	[`caddy:2.8.0-beta.1`](#caddy280-beta1)
+-	[`caddy:2.8.0-beta.1-alpine`](#caddy280-beta1-alpine)
+-	[`caddy:2.8.0-beta.1-builder`](#caddy280-beta1-builder)
+-	[`caddy:2.8.0-beta.1-builder-alpine`](#caddy280-beta1-builder-alpine)
+-	[`caddy:2.8.0-beta.1-builder-windowsservercore-1809`](#caddy280-beta1-builder-windowsservercore-1809)
+-	[`caddy:2.8.0-beta.1-builder-windowsservercore-ltsc2022`](#caddy280-beta1-builder-windowsservercore-ltsc2022)
+-	[`caddy:2.8.0-beta.1-windowsservercore`](#caddy280-beta1-windowsservercore)
+-	[`caddy:2.8.0-beta.1-windowsservercore-1809`](#caddy280-beta1-windowsservercore-1809)
+-	[`caddy:2.8.0-beta.1-windowsservercore-ltsc2022`](#caddy280-beta1-windowsservercore-ltsc2022)
 -	[`caddy:alpine`](#caddyalpine)
 -	[`caddy:builder`](#caddybuilder)
 -	[`caddy:builder-alpine`](#caddybuilder-alpine)
@@ -10601,6 +10619,78 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Last Modified: Wed, 10 Apr 2024 04:39:46 GMT  
 		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `caddy:2.8`
+
+**does not exist** (yet?)
+
+## `caddy:2.8-alpine`
+
+**does not exist** (yet?)
+
+## `caddy:2.8-builder`
+
+**does not exist** (yet?)
+
+## `caddy:2.8-builder-alpine`
+
+**does not exist** (yet?)
+
+## `caddy:2.8-builder-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `caddy:2.8-builder-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `caddy:2.8-windowsservercore`
+
+**does not exist** (yet?)
+
+## `caddy:2.8-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `caddy:2.8-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `caddy:2.8.0-beta.1`
+
+**does not exist** (yet?)
+
+## `caddy:2.8.0-beta.1-alpine`
+
+**does not exist** (yet?)
+
+## `caddy:2.8.0-beta.1-builder`
+
+**does not exist** (yet?)
+
+## `caddy:2.8.0-beta.1-builder-alpine`
+
+**does not exist** (yet?)
+
+## `caddy:2.8.0-beta.1-builder-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `caddy:2.8.0-beta.1-builder-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `caddy:2.8.0-beta.1-windowsservercore`
+
+**does not exist** (yet?)
+
+## `caddy:2.8.0-beta.1-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `caddy:2.8.0-beta.1-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `caddy:alpine`
 
