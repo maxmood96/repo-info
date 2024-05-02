@@ -1,7 +1,7 @@
 ## `ros:jazzy-ros-core`
 
 ```console
-$ docker pull ros@sha256:50524a88ca6cd6ef8edd8f4743b2d8a5448c20994f1bfca8516f70e30d2b325a
+$ docker pull ros@sha256:d1b854cab7510662dfecd13edcc7e2c1a458a8bd0f3a6fe7cb614f365a2fc9d0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -93,80 +93,80 @@ CMD ["bash"]
 ### `ros:jazzy-ros-core` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:20bb65666b9dd210891b2670032c605150a14aca677fdd3a407898ee841541db
+$ docker pull ros@sha256:95eb8627f16d2149a4525b8bc4b911dc89f744237aaab52e7b762eecded7d760
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.4 MB (157423158 bytes)**  
+-	Total Size: **151.6 MB (151561394 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92ee06dcb302a2950f7c2a49fd49e454ee93d541fee971d0c284a61e76eb2c08`
+-	Image ID: `sha256:6386b0fe348479ebb979313bc045e77679071e62253acf0ff17d5ef0e9879f8a`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 23 Apr 2024 22:03:43 GMT
+# Mon, 29 Apr 2024 16:39:55 GMT
 ARG RELEASE
-# Tue, 23 Apr 2024 22:03:43 GMT
+# Mon, 29 Apr 2024 16:39:55 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 23 Apr 2024 22:03:43 GMT
+# Mon, 29 Apr 2024 16:39:55 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 23 Apr 2024 22:03:43 GMT
+# Mon, 29 Apr 2024 16:39:55 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 23 Apr 2024 22:03:45 GMT
-ADD file:61020b87bc980abd05e75207205df7ecca6ea7023b3a5e804aabded0eebbf2e7 in / 
-# Tue, 23 Apr 2024 22:03:45 GMT
+# Mon, 29 Apr 2024 16:39:58 GMT
+ADD file:d1bd5209fbd828a2a6f6ad537f0eb77154890b9445411715281122300f5bb21e in / 
+# Mon, 29 Apr 2024 16:39:58 GMT
 CMD ["/bin/bash"]
-# Thu, 25 Apr 2024 23:40:03 GMT
+# Thu, 02 May 2024 02:11:22 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/*
-# Thu, 25 Apr 2024 23:40:22 GMT
+# Thu, 02 May 2024 02:11:42 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Tue, 30 Apr 2024 22:21:07 GMT
+# Thu, 02 May 2024 02:11:43 GMT
 RUN set -eux;        key='C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654';        export GNUPGHOME="$(mktemp -d)";        gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key";        mkdir -p /usr/share/keyrings;        gpg --batch --export "$key" > /usr/share/keyrings/ros2-testing-archive-keyring.gpg;        gpgconf --kill all;        rm -rf "$GNUPGHOME"
-# Tue, 30 Apr 2024 22:21:08 GMT
+# Thu, 02 May 2024 02:11:44 GMT
 RUN echo "deb [ signed-by=/usr/share/keyrings/ros2-testing-archive-keyring.gpg ] http://packages.ros.org/ros2-testing/ubuntu noble main" > /etc/apt/sources.list.d/ros2-testing.list
-# Tue, 30 Apr 2024 22:21:08 GMT
+# Thu, 02 May 2024 02:11:44 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Apr 2024 22:21:08 GMT
+# Thu, 02 May 2024 02:11:44 GMT
 ENV LC_ALL=C.UTF-8
-# Tue, 30 Apr 2024 22:21:08 GMT
+# Thu, 02 May 2024 02:11:44 GMT
 ENV ROS_DISTRO=jazzy
-# Tue, 30 Apr 2024 23:55:10 GMT
+# Thu, 02 May 2024 02:13:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-jazzy-ros-core=0.11.0-1*     && rm -rf /var/lib/apt/lists/*
-# Tue, 30 Apr 2024 23:55:14 GMT
+# Thu, 02 May 2024 02:13:53 GMT
 COPY file:ec5b16a0e777d7d7d041a72ffc817bf5f7b375662afa0c404f3ca36fad1afb90 in / 
-# Tue, 30 Apr 2024 23:55:14 GMT
+# Thu, 02 May 2024 02:13:53 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Tue, 30 Apr 2024 23:55:14 GMT
+# Thu, 02 May 2024 02:13:53 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:ec7cb58592b61e9a11cec56cc368247d061905f8eee62423f6dddd42173504b2`  
-		Last Modified: Wed, 24 Apr 2024 17:24:38 GMT  
-		Size: 29.0 MB (29037830 bytes)  
+	-	`sha256:ca6fd4ca81e04c073f1c2caac4de56748f56d5ff8b6eb9e1c781888109e50383`  
+		Last Modified: Thu, 02 May 2024 02:33:15 GMT  
+		Size: 29.0 MB (29038670 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05eeec93563e0c4bee2b919df0e289aa0a06346104ee647ecb90c42f12aea54e`  
-		Last Modified: Thu, 25 Apr 2024 23:53:26 GMT  
-		Size: 680.9 KB (680947 bytes)  
+	-	`sha256:6566430a89b8fd522af510326683dfd547bb47ce3368e0e7c13d03c03a259a73`  
+		Last Modified: Thu, 02 May 2024 02:33:11 GMT  
+		Size: 683.8 KB (683795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6d8d27f77c20bc7eb1198a0fc5a3a3f5f22edf40094d000e31aaf9d3ca83c88`  
-		Last Modified: Thu, 25 Apr 2024 23:53:24 GMT  
-		Size: 4.6 MB (4609997 bytes)  
+	-	`sha256:2c10c1a69a349bd188a99420ce3e817a3ff04579654dbb1e5fcabc0a226ba0dd`  
+		Last Modified: Thu, 02 May 2024 02:33:09 GMT  
+		Size: 4.6 MB (4611814 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8cd4b5b72a1b898bdeb45d8fc3fd23247a5fd5ab1c6117138a092495942466c`  
-		Last Modified: Wed, 01 May 2024 00:00:58 GMT  
-		Size: 2.0 KB (2026 bytes)  
+	-	`sha256:eb1530a98afb6ca6b735ba21a703b8ab482443c6984b4b5dd57136c4a1245e8f`  
+		Last Modified: Thu, 02 May 2024 02:33:08 GMT  
+		Size: 2.0 KB (2020 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe8d64a67472b41f6012691b8c43b6f71e2816c92cff68287894267a7121456c`  
-		Last Modified: Wed, 01 May 2024 00:00:57 GMT  
-		Size: 272.0 B  
+	-	`sha256:97b38a3ce2b2fd6079fcf853bc1533d0de85fbcf48949e9b3ee31f9b40f03e59`  
+		Last Modified: Thu, 02 May 2024 02:33:08 GMT  
+		Size: 274.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8281a9e77f8f0f8895dc7cf25059627c964d189568127d04596d7c3ed6fb6252`  
-		Last Modified: Wed, 01 May 2024 00:01:12 GMT  
-		Size: 123.1 MB (123091890 bytes)  
+	-	`sha256:7e82b0c960739bc7a727ac975dffda488d4ba93e271c18d3600c4be19c237167`  
+		Last Modified: Thu, 02 May 2024 02:33:32 GMT  
+		Size: 117.2 MB (117224625 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:628505832a45ff58607a29e51d5c4bbb5804debe3911e70c661b28206c15b4c9`  
-		Last Modified: Wed, 01 May 2024 00:00:57 GMT  
+	-	`sha256:1cff6639496fa69ef9e6bfd477bcec2737b680972d8f76ea9d277e11eb8f1b48`  
+		Last Modified: Thu, 02 May 2024 02:33:08 GMT  
 		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
