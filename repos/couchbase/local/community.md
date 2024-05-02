@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7a7c6fe83f5a2daaaedada16c58f2a8f19bcfdc90be302f8d7f3761fa0c4877a`
-- Created: `2024-04-26T00:22:03.10109666Z`
-- Virtual Size: ~ 1.03 Gb  
+- Image ID: `sha256:eba4538475c73a983b81e32ca06d3eb5eaa96366a7e2c714e0e43fb050ff8266`
+- Created: `2024-05-02T00:51:05.267562616Z`
+- Virtual Size: ~ 1.02 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -483,28 +483,14 @@ $ apt-get source -qq --print-uris gcc-10=10.5.0-1ubuntu1~20.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.5.0-1ubuntu1%7e20.04.debian.tar.xz' gcc-10_10.5.0-1ubuntu1~20.04.debian.tar.xz 5953836 SHA512:d68b8b10628bec39c370c9af1baa39bd76f3fb885d765b2d449435981ab772443187cba3bcb629e69a4a7c4b1e890babc4ea9ed8a3a3eb9a8e7e1e76abb8b526
 ```
 
-### `dpkg` source package: `glibc=2.31-0ubuntu9.14`
-
-Binary Packages:
-
-- `libc-bin=2.31-0ubuntu9.14`
-
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
-
-- `GPL-2`
-- `LGPL-2.1`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.15`
 
 Binary Packages:
 
+- `libc-bin=2.31-0ubuntu9.15`
 - `libc6:amd64=2.31-0ubuntu9.15`
 
-Licenses: (parsed from: `/usr/share/doc/libc6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
