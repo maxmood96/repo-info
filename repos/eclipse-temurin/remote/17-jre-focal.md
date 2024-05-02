@@ -1,7 +1,7 @@
 ## `eclipse-temurin:17-jre-focal`
 
 ```console
-$ docker pull eclipse-temurin@sha256:7e01045bdd31b02bb0d779f62be1a6604f216e2a0369df064143b302477a6c60
+$ docker pull eclipse-temurin@sha256:596bd79692284cd324c5132e973f64179c9adc16cdf457093aa3035bfcd4c683
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -149,27 +149,27 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ### `eclipse-temurin:17-jre-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:202887533b6ccc17faf087dd4a8124f634328a14b2e2e86351619dbedeaa20eb
+$ docker pull eclipse-temurin@sha256:e32b0f1ce5b6e8850e79356c38cf833a69afe09a9cffda6d31ca1c71c12ab97c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.7 MB (90701445 bytes)**  
+-	Total Size: **90.7 MB (90700222 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f27cfb8cf0453fe4285f79b86275a1149b4834bd849555563961d150b0308b27`
+-	Image ID: `sha256:d98b2d6b05a064ae137725393c8123cdd19b5ffe62df5face595d55cf88d5d7a`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
-# Wed, 17 Apr 2024 17:57:12 GMT
+# Sat, 27 Apr 2024 14:42:15 GMT
 ARG RELEASE
-# Wed, 17 Apr 2024 17:57:13 GMT
+# Sat, 27 Apr 2024 14:42:15 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 17 Apr 2024 17:57:13 GMT
+# Sat, 27 Apr 2024 14:42:15 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 17 Apr 2024 17:57:13 GMT
+# Sat, 27 Apr 2024 14:42:15 GMT
 LABEL org.opencontainers.image.version=20.04
-# Wed, 17 Apr 2024 17:57:14 GMT
-ADD file:14fd903d8c1e98bd6a8c31b38182fa528e5277243e3b7ea9f682a57a9e7a3e60 in / 
-# Wed, 17 Apr 2024 17:57:14 GMT
+# Sat, 27 Apr 2024 14:42:24 GMT
+ADD file:d1a4a31f5a3aea1e130c7e173da2ed506ba19e91be74ab9700d398774d0ace22 in / 
+# Sat, 27 Apr 2024 14:42:24 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -192,25 +192,25 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:11686d3c3279d285321ad7d2bd863c8436ee583c2e454390121bee791f83f4f0`  
-		Last Modified: Fri, 19 Apr 2024 07:58:29 GMT  
-		Size: 27.2 MB (27207009 bytes)  
+	-	`sha256:83049506c6eb6b11ef1a8774b3486a01a1804f7d13bd230b44788bc63248282d`  
+		Last Modified: Mon, 29 Apr 2024 19:12:05 GMT  
+		Size: 27.2 MB (27206145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4539c85e209826eaf353fa77d6cc309c67cce8c9eaf25cdc7a2828e4638c7412`  
-		Last Modified: Thu, 25 Apr 2024 21:58:56 GMT  
-		Size: 16.8 MB (16778128 bytes)  
+	-	`sha256:4a3510597c9954b37f646e357b476e00ba683391a190199312f9fd3f1344ca2d`  
+		Last Modified: Thu, 02 May 2024 04:17:12 GMT  
+		Size: 16.8 MB (16777842 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1c0c1bfb3209d07b08ba7bbca05db55ffe8befe0be39494a298f95a7bcb1667`  
-		Last Modified: Thu, 25 Apr 2024 22:02:02 GMT  
-		Size: 46.7 MB (46715416 bytes)  
+	-	`sha256:179f3c525ecc6e3fbc3e78a00a2f32f0d73eae54bf1effa0ec7338215f544f2f`  
+		Last Modified: Thu, 02 May 2024 04:20:12 GMT  
+		Size: 46.7 MB (46715346 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7835404aa9dc97cf1e47486d35d98d8ba3edd0f31da07e8778f33e1c4452907d`  
-		Last Modified: Thu, 25 Apr 2024 22:01:56 GMT  
-		Size: 159.0 B  
+	-	`sha256:dc9294565f1de900946ba483c01e7a55768fcca86332d4dcb4fa9734c81953be`  
+		Last Modified: Thu, 02 May 2024 04:20:06 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5e19e03b54f819ee9c77f52363092950612df35db699422579d13c0087af3f8`  
-		Last Modified: Thu, 25 Apr 2024 22:01:56 GMT  
-		Size: 733.0 B  
+	-	`sha256:7dbc4268e2f7591889c1c1d43b536aa18308907bb95218455d909afb7434a434`  
+		Last Modified: Thu, 02 May 2024 04:20:06 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17-jre-focal` - linux; ppc64le
