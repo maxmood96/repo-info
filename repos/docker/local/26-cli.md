@@ -1,9 +1,9 @@
-# `docker:26.1.0-cli`
+# `docker:26.1.1-cli`
 
 ## Docker Metadata
 
-- Image ID: `sha256:88607e5c76f51d60858f711dee462bc878cc788624c707f95fc61ae741da00b5`
-- Created: `2024-04-24T23:17:38Z`
+- Image ID: `sha256:1519cbc22b0c151ccd47fdfa5610f0b07cd1e0a9826c26c960b177ac9514be20`
+- Created: `2024-04-30T17:04:38Z`
 - Virtual Size: ~ 170.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=26.1.0`
+  - `DOCKER_VERSION=26.1.1`
   - `DOCKER_BUILDX_VERSION=0.14.0`
   - `DOCKER_COMPOSE_VERSION=2.27.0`
   - `DOCKER_TLS_CERTDIR=/certs`
