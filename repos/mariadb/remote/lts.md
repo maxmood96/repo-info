@@ -1,7 +1,7 @@
 ## `mariadb:lts`
 
 ```console
-$ docker pull mariadb@sha256:a0e299dce770c298fc7cfa4039205c066afc534ee6b72df8fa03cd3b151af938
+$ docker pull mariadb@sha256:103028cc66631f186ba1c479257b0cd41af9559d0b44a388c224153925946cd3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -270,13 +270,13 @@ $ docker pull mariadb@sha256:8aa8bb7e9121b97f58de4cb106ef92bfacbc09c9cb04113db1b
 ### `mariadb:lts` - linux; ppc64le
 
 ```console
-$ docker pull mariadb@sha256:ed1520ed13e6bc4a463618e7c95d5bd0ace73a9df61c3a94f25cb8844a56a02e
+$ docker pull mariadb@sha256:31967eda7b0af2c114588f7664209b5972793473fc380ad78e43730974fa38ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.5 MB (130516975 bytes)**  
+-	Total Size: **130.5 MB (130516825 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c587804e75bdb8f10ddf759631a35750d867ba2f0dfcb358d9abe9ef32003bb2`
+-	Image ID: `sha256:aacdf8177edaf0416e1a969ed8be8ed3b5cbc54977a67ef55853b219580a1a4b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mariadbd"]`
 
@@ -290,7 +290,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Thu, 22 Feb 2024 01:03:14 GMT
 LABEL org.opencontainers.image.version=22.04
 # Thu, 22 Feb 2024 01:03:14 GMT
-ADD file:a6dad5ca890a7e93d717612d191eff2d9bbab6f9cef18c588630297bd6a61cc4 in / 
+ADD file:3ab2760f4e449111dcca3f0816583c72999e1ce2ec20beac068dccfd6c9d8b81 in / 
 # Thu, 22 Feb 2024 01:03:14 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Feb 2024 01:03:14 GMT
@@ -336,61 +336,61 @@ CMD ["mariadbd"]
 ```
 
 -	Layers:
-	-	`sha256:8735f03877b4ef190c5279652cd5a0a8db5ddb4170fd1fb1710abee9d2f811b1`  
-		Last Modified: Wed, 17 Apr 2024 18:55:49 GMT  
-		Size: 34.5 MB (34461311 bytes)  
+	-	`sha256:5b7cf94291ea168ccdc203965a79f54603a4fe2e0738a3acf0f7a8d860e51f32`  
+		Last Modified: Sat, 27 Apr 2024 14:45:49 GMT  
+		Size: 34.5 MB (34461223 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c70ad7d6e03634799f516541da6fba8cd0b3fa69fc8281197bb5507ee5f4704`  
-		Last Modified: Thu, 25 Apr 2024 23:10:00 GMT  
-		Size: 1.7 KB (1727 bytes)  
+	-	`sha256:deda8edfc51fe872e286c0360cae593605d53e90edeb0e1dc506dd4e669f5b2e`  
+		Last Modified: Thu, 02 May 2024 03:48:19 GMT  
+		Size: 1.7 KB (1716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c76147975155474fcc9b3236571c1ff5a666122ca0a7f1ef93002240f0534707`  
-		Last Modified: Thu, 25 Apr 2024 23:10:00 GMT  
-		Size: 6.1 MB (6079554 bytes)  
+	-	`sha256:49f57ed9767ab0a36c4f03bd71e38670ab7bff8eda79363908f8dbf6972317d0`  
+		Last Modified: Thu, 02 May 2024 03:48:20 GMT  
+		Size: 6.1 MB (6079742 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cf0cbf8ceae33172414902f56988d2b960fe0e71e546a6304ce00938d5c1d55`  
-		Last Modified: Thu, 25 Apr 2024 23:09:59 GMT  
+	-	`sha256:a7cddc2e84cc69c4d071e928d69b328f19e972e1cc609f3e3ccee71f8ba7f5ba`  
+		Last Modified: Thu, 02 May 2024 03:48:19 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04b8cfe585a775f506ee26b033dad9b28ef5a11bbdee17e189304ab9d4b6a7c7`  
-		Last Modified: Fri, 26 Apr 2024 01:39:15 GMT  
-		Size: 338.0 B  
+	-	`sha256:b897c60d6315b8884af3be27e36529e626630517dce37012d04760d4d5612d73`  
+		Last Modified: Thu, 02 May 2024 06:42:30 GMT  
+		Size: 336.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1721f043c033973730e81ed4c251d19ef981df490dc2d4c544583b16b2b6fcfe`  
-		Last Modified: Fri, 26 Apr 2024 01:39:18 GMT  
-		Size: 90.0 MB (89962064 bytes)  
+	-	`sha256:3ed74d95d8e7dd6d9c025a0afee4884e04f60c5017c906d6bdf9195097dc19b5`  
+		Last Modified: Thu, 02 May 2024 06:42:33 GMT  
+		Size: 90.0 MB (89961836 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ace20b2aa033b0d94d79b6218353cb686ffa907466ba0a00a9fe3257d93c113b`  
-		Last Modified: Fri, 26 Apr 2024 01:39:15 GMT  
-		Size: 3.6 KB (3614 bytes)  
+	-	`sha256:5d1345cab2099a79786cf877a793c255ab97276ed54222dbd5050eed3c580aab`  
+		Last Modified: Thu, 02 May 2024 06:42:30 GMT  
+		Size: 3.6 KB (3608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:422368a9a70742e59748aefca6d7653f1e877fff2d8d46b7bae50587119fce87`  
-		Last Modified: Fri, 26 Apr 2024 01:39:15 GMT  
-		Size: 8.3 KB (8251 bytes)  
+	-	`sha256:10d44920f0d27ba5d587d4ae29e47c0890c8fdd77eff88bd3b5875c0879f0f20`  
+		Last Modified: Thu, 02 May 2024 06:42:30 GMT  
+		Size: 8.2 KB (8248 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mariadb:lts` - unknown; unknown
 
 ```console
-$ docker pull mariadb@sha256:210bd8e6d68fdab4cfc01d95e878949d27569847d0b69be868ac61cb8916f82a
+$ docker pull mariadb@sha256:fb0c350d7b471c3fff9dbd5f790755d5fcf2f07c7af30d210bf30906f29e641e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.6 MB (4616761 bytes)**  
+-	Total Size: **4.6 MB (4616759 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:176ee69f5240f8fd300a38ba30a6198c411efb9636974841164a71a5b8e7194f`
+-	Image ID: `sha256:9ba2efae0ac4de446b01c3dc522638127d2ea095d5e92c766f66dbc0fbee0703`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1f3af8317c7100d7b3d02822f52783f986576b7185e7ac9d56f34afc822852d1`  
-		Last Modified: Fri, 26 Apr 2024 01:39:15 GMT  
+	-	`sha256:11ae8b0e2b89cea9b15a272e65118de373c31bad61d208d9b9b222299ac80e3a`  
+		Last Modified: Thu, 02 May 2024 06:42:30 GMT  
 		Size: 4.6 MB (4585418 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4f10d198c6a8cbb7b6553fd14f1b9225c80b9c2f0cbf4ab60807e1762610a842`  
-		Last Modified: Fri, 26 Apr 2024 01:39:14 GMT  
-		Size: 31.3 KB (31343 bytes)  
+	-	`sha256:287e3048ee4c55bb4b3132e90505ebfb778bfb5319f986aa0e28041578fda54c`  
+		Last Modified: Thu, 02 May 2024 06:42:30 GMT  
+		Size: 31.3 KB (31341 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mariadb:lts` - linux; s390x
