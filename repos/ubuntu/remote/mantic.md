@@ -1,7 +1,7 @@
 ## `ubuntu:mantic`
 
 ```console
-$ docker pull ubuntu@sha256:bfae41cea51761ae450db6080b586a8c35334c756b511c06b393ae565a34cab4
+$ docker pull ubuntu@sha256:431db664ea655923702ac110ec4d09bb63bb146b2e37ef8cc889831990ee5dd1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15,35 +15,35 @@ $ docker pull ubuntu@sha256:bfae41cea51761ae450db6080b586a8c35334c756b511c06b393
 ### `ubuntu:mantic` - linux; amd64
 
 ```console
-$ docker pull ubuntu@sha256:7c151867cb4361e2c3ef67292aa1381158e279ed5a938bf3cd94b0902cdf271c
+$ docker pull ubuntu@sha256:141d7b0a56d0bd0b876765c20b48ec40e1843a09c1d0c79aa5efee82bee21244
 ```
 
 -	Docker Version: 24.0.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.2 MB (27233855 bytes)**  
+-	Total Size: **27.2 MB (27234007 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df6dfff70ab08e6e729605dab23db47e63318ad5d4bd3755f81ef61edc36338b`
+-	Image ID: `sha256:bd494f24c6ee4c536c1aa8b913be1fc699bf8d7d51911036d3671da8b36fefd3`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 16 Apr 2024 12:05:34 GMT
+# Mon, 29 Apr 2024 16:02:03 GMT
 ARG RELEASE
-# Tue, 16 Apr 2024 12:05:34 GMT
+# Mon, 29 Apr 2024 16:02:03 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 16 Apr 2024 12:05:34 GMT
+# Mon, 29 Apr 2024 16:02:03 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 16 Apr 2024 12:05:34 GMT
+# Mon, 29 Apr 2024 16:02:03 GMT
 LABEL org.opencontainers.image.version=23.10
-# Tue, 16 Apr 2024 12:05:35 GMT
-ADD file:e12b21146377229efd13935eb949a5d74cf2b246efc163ed315734630be3958c in / 
-# Tue, 16 Apr 2024 12:05:35 GMT
+# Mon, 29 Apr 2024 16:02:05 GMT
+ADD file:870c43eadc01423c5bc11fc4422ee10b05cae0f50c997f8e380e0ed25c6c0b11 in / 
+# Mon, 29 Apr 2024 16:02:05 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:1039cbbd4ddd89f4a92572c9d25ae65572b3a23e6639b098d4d5037486b11b92`  
-		Last Modified: Tue, 16 Apr 2024 12:46:30 GMT  
-		Size: 27.2 MB (27233855 bytes)  
+	-	`sha256:56c566a8d234cbea1867522f63b812f51bb091866286e8f350f23a951171b9f5`  
+		Last Modified: Mon, 29 Apr 2024 16:18:42 GMT  
+		Size: 27.2 MB (27234007 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:mantic` - linux; arm variant v7
@@ -151,33 +151,33 @@ CMD ["/bin/bash"]
 ### `ubuntu:mantic` - linux; s390x
 
 ```console
-$ docker pull ubuntu@sha256:6a8c9e2452486e9af2f9d341f526e36b92ae153773c6f3d2bf075fef525e820e
+$ docker pull ubuntu@sha256:47c6b893ab777ea2f23f010efa7af2b964ec6d3e04409dbc421e5cf06b9cfc45
 ```
 
 -	Docker Version: 24.0.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27332278 bytes)**  
+-	Total Size: **27.3 MB (27332110 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d60ec45481f4b29c95a39c6fb32f115c3ff9ad35d1fa78898f4a947380d5abf`
+-	Image ID: `sha256:070b853442b94c5e9ad49f3224ce745ad43cb333eeb4ea19788f224c4da22aa1`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 16 Apr 2024 12:37:06 GMT
+# Mon, 29 Apr 2024 15:49:35 GMT
 ARG RELEASE
-# Tue, 16 Apr 2024 12:37:06 GMT
+# Mon, 29 Apr 2024 15:49:35 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 16 Apr 2024 12:37:06 GMT
+# Mon, 29 Apr 2024 15:49:35 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 16 Apr 2024 12:37:06 GMT
+# Mon, 29 Apr 2024 15:49:35 GMT
 LABEL org.opencontainers.image.version=23.10
-# Tue, 16 Apr 2024 12:37:12 GMT
-ADD file:bcaae6745c5074969da19bc7c697ea513ed4123bd3a263300b0dd2d86c419d62 in / 
-# Tue, 16 Apr 2024 12:37:12 GMT
+# Mon, 29 Apr 2024 15:49:37 GMT
+ADD file:76b6235c926b9bd628f27161f73913d479e584c2035eb7185806b814f4e96e14 in / 
+# Mon, 29 Apr 2024 15:49:38 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:fb37a35236685ddfbba3beeca31d9aff06067e3467c97a9723710161595363b9`  
-		Last Modified: Tue, 16 Apr 2024 12:46:55 GMT  
-		Size: 27.3 MB (27332278 bytes)  
+	-	`sha256:e5f6811577ee1a4f42b07b0ef1fbbdd8a4cf7b470ee3ea89de99f370a57bf832`  
+		Last Modified: Mon, 29 Apr 2024 16:19:08 GMT  
+		Size: 27.3 MB (27332110 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
