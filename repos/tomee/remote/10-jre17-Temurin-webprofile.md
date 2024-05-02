@@ -1,7 +1,7 @@
 ## `tomee:10-jre17-Temurin-webprofile`
 
 ```console
-$ docker pull tomee@sha256:7acb75158ce001e72451253f25064d68d48132947c810b07b7a859909b39d55b
+$ docker pull tomee@sha256:6cd1e0df5e3df30e1cd3643a00bd22bd355c33a29422b2367fd36071fbad5e4d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -117,29 +117,29 @@ CMD ["catalina.sh" "run"]
 ### `tomee:10-jre17-Temurin-webprofile` - linux; arm64 variant v8
 
 ```console
-$ docker pull tomee@sha256:efcfdd8a3f76bb9eff6272e2aa964628850db4b165e8240773e1a8ea0aafa974
+$ docker pull tomee@sha256:909bdb122e1f8b21873628dc693be051540d307966b9de9169ab49ebda5f7bc1
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **150.2 MB (150208183 bytes)**  
+-	Total Size: **150.2 MB (150208712 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:04cb284497533ea02629aaf2c25b83949204bd37b4261d0d9a4be0c737681337`
+-	Image ID: `sha256:3fc3b52bd53726bcbbeea3abd7db153395cacd43026470a90567d91d690b423e`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Wed, 17 Apr 2024 18:24:57 GMT
+# Sat, 27 Apr 2024 14:32:22 GMT
 ARG RELEASE
-# Wed, 17 Apr 2024 18:24:57 GMT
+# Sat, 27 Apr 2024 14:32:22 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 17 Apr 2024 18:24:57 GMT
+# Sat, 27 Apr 2024 14:32:22 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 17 Apr 2024 18:24:57 GMT
+# Sat, 27 Apr 2024 14:32:23 GMT
 LABEL org.opencontainers.image.version=22.04
-# Wed, 17 Apr 2024 18:24:59 GMT
-ADD file:51afefc6be37e5e27507b9b77fca51df26536c9827fe51acac6a4f9c1ebd60e8 in / 
-# Wed, 17 Apr 2024 18:24:59 GMT
+# Sat, 27 Apr 2024 14:32:33 GMT
+ADD file:18035d0a8c59e3306bad4219c71a52b03397fc8f231baf7f676287c73024d85c in / 
+# Sat, 27 Apr 2024 14:32:33 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -159,62 +159,62 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 26 Apr 2024 03:37:24 GMT
+# Thu, 02 May 2024 05:04:05 GMT
 ENV PATH=/usr/local/tomee/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 26 Apr 2024 03:37:25 GMT
+# Thu, 02 May 2024 05:04:05 GMT
 RUN mkdir -p /usr/local/tomee ~/.gnupg
-# Fri, 26 Apr 2024 03:37:25 GMT
+# Thu, 02 May 2024 05:04:05 GMT
 WORKDIR /usr/local/tomee
-# Fri, 26 Apr 2024 03:37:29 GMT
+# Thu, 02 May 2024 05:04:10 GMT
 RUN apt-get update   && apt-get install -y --no-install-recommends gpg dirmngr gpg-agent   && rm -rf /var/lib/apt/lists/*
-# Fri, 26 Apr 2024 03:37:39 GMT
+# Thu, 02 May 2024 05:04:22 GMT
 RUN set -xe;   for key in   9056B710F1E332780DE7AF34CBAEBE39A46C4CA1   F067B8140F5DD80E1D3B5D92318242FE9A0B1183   223D3A74B068ECA354DC385CE126833F9CF64915   DBCCD103B8B24F86FFAAB025C8BB472CD297D428   7A2744A8A9AAF063C23EB7868EBE7DBE8D050EEF   B8B301E6105DF628076BD92C5483E55897ABD9B9   FAA603D58B1BA4EDF65896D0ED340E0E6D545F97   A57DAF81C1B69921F4BA8723A8DE0A4DB863A7C1   82D8419BA697F0E7FB85916EE91287822FDB81B1   B7574789F5018690043E6DD9C212662E12F3E1DD   C23A3F6F595EBD0F960270CC997C8F1A5BE6E4C1   678F2D98F1FD9643811639FB622B8F2D043F71D8   BDD0BBEB753192957EFC5F896A62FC8EF17D8FEF   D11DF12CC2CA4894BDE638B967C1227A2678363C   C92604B0DEC5C62CFF5801E73D4683C24EDC64D1   626C542EDA7C113814B77AF09C04914D63645D20   3948829384B269D333CC5B98358807C52B4B0E23   B83D15E72253ED1104EB4FBBDAB472F0E5B8A431   871638A21A7F2C38066471420306A354336B4F0D   ; do     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done
-# Fri, 26 Apr 2024 03:39:24 GMT
+# Thu, 02 May 2024 05:06:00 GMT
 ENV TOMEE_VER=10.0.0-M1
-# Fri, 26 Apr 2024 03:39:57 GMT
+# Thu, 02 May 2024 05:06:32 GMT
 ENV TOMEE_BUILD=webprofile
-# Fri, 26 Apr 2024 03:40:03 GMT
+# Thu, 02 May 2024 05:06:38 GMT
 RUN set -x   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.asc -o tomee.tar.gz.asc   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.sha512 -o tomee.tar.gz.sha512   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz -o apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && gpg --batch --verify tomee.tar.gz.asc apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && echo `cat tomee.tar.gz.sha512` | sha512sum -c -   && tar -zxf apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && mv apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}/* /usr/local/tomee   && rm apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && rm -Rf apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}   && rm bin/*.bat   && rm bin/*.exe   && rm bin/*.tar.gz*   && rm tomee.tar.gz.asc   && rm tomee.tar.gz*
-# Fri, 26 Apr 2024 03:40:03 GMT
+# Thu, 02 May 2024 05:06:39 GMT
 EXPOSE 8080
-# Fri, 26 Apr 2024 03:40:04 GMT
+# Thu, 02 May 2024 05:06:39 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:4e57ea70c49f36b38caa9ead687cc8b2a5e728636d925e2dca82de1b8e1b3088`  
-		Last Modified: Wed, 17 Apr 2024 23:25:57 GMT  
-		Size: 28.4 MB (28401002 bytes)  
+	-	`sha256:9b076355b79badd38bc5732aebeb48133934a0adae078e4a6bf52c7d9d7a4a82`  
+		Last Modified: Sun, 28 Apr 2024 01:56:19 GMT  
+		Size: 28.4 MB (28401184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f037ef0398100188bd636ef3da1525cc5cc7f04347a802ecc28ba3240408631`  
-		Last Modified: Thu, 25 Apr 2024 21:59:12 GMT  
-		Size: 12.8 MB (12846901 bytes)  
+	-	`sha256:2d2472ac6840da0115175cae8b0be8d1b8c2b6b74acb5fc6bf185b0c9333b8a3`  
+		Last Modified: Thu, 02 May 2024 04:17:28 GMT  
+		Size: 12.8 MB (12847034 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53a9d01cdbea836fa98a88c869097ca339c17dd29480bc1c936f937840fbde4d`  
-		Last Modified: Thu, 25 Apr 2024 22:02:15 GMT  
-		Size: 46.7 MB (46716123 bytes)  
+	-	`sha256:1725094f1f7082f023c1a047ec828bf8229f9aa4b95de8dfcf3433a5664a8625`  
+		Last Modified: Thu, 02 May 2024 04:20:25 GMT  
+		Size: 46.7 MB (46716197 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e659b60df2e1030cfa0f2df9583f9aab145276e83a37490b983bbcfa9322fde3`  
-		Last Modified: Thu, 25 Apr 2024 22:02:10 GMT  
-		Size: 159.0 B  
+	-	`sha256:e995ccba802f11ec98d823c76df9fc769ae179b10b0a6b239f526dcd74f907aa`  
+		Last Modified: Thu, 02 May 2024 04:20:20 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f320f164b70019d3de719bb4a4b380f596330be1d584f5d935f80a4344b5b48`  
-		Last Modified: Thu, 25 Apr 2024 22:02:10 GMT  
-		Size: 734.0 B  
+	-	`sha256:68d7fbbe7faa2fd420d969dafb00e3a6a0cc66074e4786e50e8c8b4f22e7f754`  
+		Last Modified: Thu, 02 May 2024 04:20:20 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dfc548b1914b9ce32b90503d68bccdf9eacc7d2381a81710dd138361df1cc304`  
-		Last Modified: Fri, 26 Apr 2024 03:49:51 GMT  
+	-	`sha256:bbcec30bf615cb5dad3674aa0bf7954f270d476e7ed31e82fe724bf88263b5ab`  
+		Last Modified: Thu, 02 May 2024 05:16:34 GMT  
 		Size: 220.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48721066a2d11e880413665cf33b112661d2172069f5dd1b3e7d4dcc6cc893a3`  
-		Last Modified: Fri, 26 Apr 2024 03:49:52 GMT  
-		Size: 2.6 MB (2583796 bytes)  
+	-	`sha256:541f476979ea61577b950f811825e1ec8e46e420edcc0466c7607d6ad3fd796f`  
+		Last Modified: Thu, 02 May 2024 05:16:34 GMT  
+		Size: 2.6 MB (2583912 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5dc82f4983aaf6920ad1a5bc7ce921e515d4009392151dcf479672f63fa1d72`  
-		Last Modified: Fri, 26 Apr 2024 03:49:52 GMT  
-		Size: 69.3 KB (69328 bytes)  
+	-	`sha256:16cc690a2969dfff41a931ddba0f9a5a08f5ece816906b25cd6e3d84fb3c2a02`  
+		Last Modified: Thu, 02 May 2024 05:16:33 GMT  
+		Size: 69.3 KB (69329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cec19d2d6ece353b78f2cf8df71cc4e9236bbfe83406146615bb305068fc080`  
-		Last Modified: Fri, 26 Apr 2024 03:59:52 GMT  
-		Size: 59.6 MB (59589920 bytes)  
+	-	`sha256:cb90c11ceb4e4a6dd5d83a71d4d075d7906a1b43319d230e243ed0ac3a025724`  
+		Last Modified: Thu, 02 May 2024 05:26:55 GMT  
+		Size: 59.6 MB (59589947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
