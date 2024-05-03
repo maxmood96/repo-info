@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:13f6479d04bc3c94470ba86f69a476f37d79a93a5d6463a84c9b6ed6d6c1b624`
-- Created: `2024-04-25T23:45:48.104081736Z`
-- Virtual Size: ~ 2.86 Gb  
+- Image ID: `sha256:5be917fe752a096a8264db442912bd583c805319b0f7bd93941978ff4cf6bb88`
+- Created: `2024-05-02T03:52:20.862770944Z`
+- Virtual Size: ~ 2.84 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
