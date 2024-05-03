@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:89e061eedef8677a47750ae0e3bf0c544f807a567c8da27ed6af706931e3132b`
-- Created: `2024-04-25T21:33:32.305782723Z`
-- Virtual Size: ~ 805.90 Mb  
+- Image ID: `sha256:804500f8c179d8acd90b7a8ac182045dd16d1a2a8852e33f39f2ca8d75bb8a07`
+- Created: `2024-05-02T02:06:19.56610492Z`
+- Virtual Size: ~ 789.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -3496,11 +3496,11 @@ $ apt-get source -qq --print-uris nettle=3.9.1-2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.9.1-2.debian.tar.xz' nettle_3.9.1-2.debian.tar.xz 24440 SHA512:5ecbb74a3e05032f4d13cb6f393f6d23b7a2fff4240370f05d973a331c279d6c9cb0fd5ca7d551febf4fd54e30ebb296729284c6327114529c101edcf80ec2cb
 ```
 
-### `dpkg` source package: `nghttp2=1.55.1-1ubuntu0.1`
+### `dpkg` source package: `nghttp2=1.55.1-1ubuntu0.2`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.55.1-1ubuntu0.1`
+- `libnghttp2-14:amd64=1.55.1-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -3511,9 +3511,14 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nghttp2=1.55.1-1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.55.1-1ubuntu0.2.dsc' nghttp2_1.55.1-1ubuntu0.2.dsc 2665 SHA512:c2c6a7b082d907d1c4141f54094213bd39b48afbc8e6e7cbd0362bce5758cc33a4ff128854ccfae9216875a9f1a2383675495892f1ae39745bb89ca01a44a558
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.55.1.orig.tar.gz' nghttp2_1.55.1.orig.tar.gz 1071258 SHA512:0ab1a987ec99f7b0652e75a93bebff9a5363f52758be1f6ae8626dcf9f4b2f931dec0a276cdd7b81522c61040e008345ecc5011c17a763b97a48b0f7e2615451
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.55.1-1ubuntu0.2.debian.tar.xz' nghttp2_1.55.1-1ubuntu0.2.debian.tar.xz 19328 SHA512:4f006403451fe5684573530f42f1124cd0df6741085c3600377d0704b080f6a5b377cd692a6fcf1d2f17e272c498579ecd11d4a0b2f37975b444672173bbd3d7
+```
 
 ### `dpkg` source package: `npth=1.6-3build2`
 
