@@ -12,7 +12,7 @@
 ## `fedora:38`
 
 ```console
-$ docker pull fedora@sha256:c569f112cfebcf9e2db6479fc69a11c48fbc7893b41b1efa8d906a9839223101
+$ docker pull fedora@sha256:b9ff6f23cceb5bde20bb1f79b492b98d71ef7a7ae518ca1b15b26661a11e6a94
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -145,7 +145,7 @@ CMD ["/bin/bash"]
 ## `fedora:39`
 
 ```console
-$ docker pull fedora@sha256:0b5b00b51828c47e65b8b75fd0ca003f067c87e0aeb5b5fef51678bd51986b1a
+$ docker pull fedora@sha256:ee042eb5527cfe117d279af0fff4461ad0c5441a8ef36deea9d98a2eb0130a90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -278,7 +278,7 @@ CMD ["/bin/bash"]
 ## `fedora:40`
 
 ```console
-$ docker pull fedora@sha256:4e007f288dce23966216be81ef62ba05d139b9338f327c1d1c73b7167dd47312
+$ docker pull fedora@sha256:5ce8497aeea599bf6b54ab3979133923d82aaa4f6ca5ced1812611b197c79eb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -411,7 +411,7 @@ CMD ["/bin/bash"]
 ## `fedora:41`
 
 ```console
-$ docker pull fedora@sha256:6fa9d7d37aa9c2fe396029fd9c4f878fdff9f6ecc044a44f5e2f6c3c63ab823d
+$ docker pull fedora@sha256:7dfa0287e66691369cf8ba4a7be39c21af8e4663c3c9a854c5ebb221bfbb7947
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -544,7 +544,7 @@ CMD ["/bin/bash"]
 ## `fedora:latest`
 
 ```console
-$ docker pull fedora@sha256:4e007f288dce23966216be81ef62ba05d139b9338f327c1d1c73b7167dd47312
+$ docker pull fedora@sha256:5ce8497aeea599bf6b54ab3979133923d82aaa4f6ca5ced1812611b197c79eb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -677,7 +677,7 @@ CMD ["/bin/bash"]
 ## `fedora:rawhide`
 
 ```console
-$ docker pull fedora@sha256:6fa9d7d37aa9c2fe396029fd9c4f878fdff9f6ecc044a44f5e2f6c3c63ab823d
+$ docker pull fedora@sha256:7dfa0287e66691369cf8ba4a7be39c21af8e4663c3c9a854c5ebb221bfbb7947
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
