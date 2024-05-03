@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:df6dfff70ab08e6e729605dab23db47e63318ad5d4bd3755f81ef61edc36338b`
-- Created: `2024-04-16T12:05:35.962933072Z`
+- Image ID: `sha256:bd494f24c6ee4c536c1aa8b913be1fc699bf8d7d51911036d3671da8b36fefd3`
+- Created: `2024-04-29T16:02:05.65813266Z`
 - Virtual Size: ~ 71.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -490,12 +490,12 @@ $ apt-get source -qq --print-uris gcc-13=13.2.0-4ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.2.0-4ubuntu3.debian.tar.xz' gcc-13_13.2.0-4ubuntu3.debian.tar.xz 1581144 SHA512:7ea0e627632deafe26cf219e4288fb9e1a6b9a7df4c8d2177fce9111b021d5d580ceff5cdcaf11adccb3bb4c72d3aac289417b67365ef771b8a2de4b43301dc9
 ```
 
-### `dpkg` source package: `glibc=2.38-1ubuntu6.1`
+### `dpkg` source package: `glibc=2.38-1ubuntu6.2`
 
 Binary Packages:
 
-- `libc-bin=2.38-1ubuntu6.1`
-- `libc6:amd64=2.38-1ubuntu6.1`
+- `libc-bin=2.38-1ubuntu6.2`
+- `libc6:amd64=2.38-1ubuntu6.2`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -503,9 +503,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.38-1ubuntu6.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38-1ubuntu6.2.dsc' glibc_2.38-1ubuntu6.2.dsc 9492 SHA512:f32de087164901e60a02ff41e115cd624068d0c92145e6d34727013ede1418a502714006f62b100ebd7fc97a9bf9779c72d8bcac84e390f34c029995b778337b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38.orig.tar.xz' glibc_2.38.orig.tar.xz 18913712 SHA512:a6dd5e42dcd63d58e2820c783522c8c895890b6e8c8e6c83b025553de0cc77cdf227e7044e431ead98c89c68a9ce4dd63509b47e647775fb2075f011849c1900
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38.orig.tar.xz.asc' glibc_2.38.orig.tar.xz.asc 833 SHA512:32248467450f4530f8e84c03ea78d8293946e1b1def853eff9fb2cb51106e66cc3b024a254f3c2fabd2634f8192bd14e7df00c317f4230860d702c4d9ec7a01e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38-1ubuntu6.2.debian.tar.xz' glibc_2.38-1ubuntu6.2.debian.tar.xz 462200 SHA512:1950f44c26a1254995a034005b37e5648ad18c7e9d4f340945d910369f44339c081a1f69e167e095379abca6ebacf52b093793d22fb15c9d76ec9f2ec9326841
+```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu4`
 
