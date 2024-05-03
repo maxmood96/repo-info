@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:783350f1d2be0610e2730df688417194ca785d80410ffbd196e066bf18264960`
-- Created: `2024-04-09T22:06:26Z`
+- Image ID: `sha256:271efa3fa4f8f11daabc83d0142e092de6daffa3a2b221c17cb11a018bf30f81`
+- Created: `2024-05-02T12:45:44Z`
 - Virtual Size: ~ 1.29 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.77.2`
+  - `RUST_VERSION=1.78.0`
 - Labels:
   - `org.opencontainers.image.source=https://github.com/rust-lang/docker-rust`
 
@@ -3964,20 +3964,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.36.0-2+deb10u2
-'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.36.0-2%2bdeb10u2.dsc' nghttp2_1.36.0-2+deb10u2.dsc 2613 SHA256:69305045b0175329199fa753a8765bf282aca5e63ec24cdba0b029fd37f7ade9
-'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.36.0.orig.tar.bz2' nghttp2_1.36.0.orig.tar.bz2 1919021 SHA256:16a734d7414062911e23989e243ca76e7722cb3c60273723e3e3ae4c21e71ceb
-'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.36.0-2%2bdeb10u2.debian.tar.xz' nghttp2_1.36.0-2+deb10u2.debian.tar.xz 21216 SHA256:6053a648d033620d2274f45fdebdd05374768fb39ff3d3cd45ba9aafa47f0a32
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.36.0-2+deb10u2/
 
-- https://sources.debian.net/src/nghttp2/1.36.0-2+deb10u2/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.36.0-2+deb10u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.36.0-2+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-1`
 
