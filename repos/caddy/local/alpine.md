@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0da4af4af9d73e970be3df873e00b8e658a7fc56ab982bfffa21d9bae68e3943`
-- Created: `2024-03-16T03:18:50.013709717Z`
-- Virtual Size: ~ 49.13 Mb  
+- Image ID: `sha256:f1e21ce508b7f91169630895a0fe9a9f58288e5eb6e899c3462f168229c84193`
+- Created: `2024-05-01T14:17:43Z`
+- Virtual Size: ~ 49.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["caddy","run","--config","/etc/caddy/Caddyfile","--adapter","caddyfile"]`
@@ -130,16 +130,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20230506-r0 description:
+ca-certificates-20240226-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20230506-r0 webpage:
+ca-certificates-20240226-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20230506-r0 installed size:
-688 KiB
+ca-certificates-20240226-r0 installed size:
+712 KiB
 
-ca-certificates-20230506-r0 license:
+ca-certificates-20240226-r0 license:
 MPL-2.0 AND MIT
 
 ```
