@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4d2c693b7f1144bd9cef3cbfe3d79bb14b9027dfdd3af526c7c405ef15bd32b8`
-- Created: `2024-04-26T02:22:29.509940112Z`
-- Virtual Size: ~ 330.84 Mb  
+- Image ID: `sha256:4642c1c8fa504815cc6b07c419ad101a4188ef1b3d7de387a16d108216650816`
+- Created: `2024-04-23T15:38:09Z`
+- Virtual Size: ~ 330.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -557,12 +557,12 @@ $ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.debian.tar.xz 575908 SHA512:d1bf37d9af699430d3b107d0966194b20aef22654337efdb99971b270609785020dd1f04ce6a0f3f3eb0dbad704b46e9d9e5dfa6a497e98c78a867f5bc290038
 ```
 
-### `dpkg` source package: `glibc=2.35-0ubuntu3.6`
+### `dpkg` source package: `glibc=2.35-0ubuntu3.7`
 
 Binary Packages:
 
-- `libc-bin=2.35-0ubuntu3.6`
-- `libc6:amd64=2.35-0ubuntu3.6`
+- `libc-bin=2.35-0ubuntu3.7`
+- `libc6:amd64=2.35-0ubuntu3.7`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -570,9 +570,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.7.dsc' glibc_2.35-0ubuntu3.7.dsc 8884 SHA512:93d82c1807fcc57af3e8749b0ceeead61a91048f4056e5a933dc3997b7c3f3e355eccdd44ee880d8a0503d189849bc76ae5f4beeae2bff7716fd474a9aeff60f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.7.debian.tar.xz' glibc_2.35-0ubuntu3.7.debian.tar.xz 933184 SHA512:44b020b91e52f5a08c62da41742cc46a8702d489f2923f0dbf1133ef080359a411f6ca8881606c30939789638026b6ac51ac9945c27a429cb85697a7c20ab815
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -1405,11 +1411,11 @@ $ apt-get source -qq --print-uris nettle=3.7.3-1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.7.3-1build2.debian.tar.xz' nettle_3.7.3-1build2.debian.tar.xz 22100 SHA512:c1935d35e9f04798273053ab92c7405ec225a5d72ba6c2869b0f2bf54b459ac428e113bc149796e91834a8b56082f8bbfbb906a6cd6787142b8932bd1dd83cec
 ```
 
-### `dpkg` source package: `nghttp2=1.43.0-1ubuntu0.1`
+### `dpkg` source package: `nghttp2=1.43.0-1ubuntu0.2`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.43.0-1ubuntu0.1`
+- `libnghttp2-14:amd64=1.43.0-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -1421,9 +1427,14 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nghttp2=1.43.0-1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.2.dsc' nghttp2_1.43.0-1ubuntu0.2.dsc 2679 SHA512:2ad7840a04e95d55fa98b6693be289fcc86330c2b9ea06b08cdf9f1bd2c3e0bffe2f312433f243ea8b7fd8ffeeba9c840581b3eb1bef662f487d075a8428ad2a
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0.orig.tar.bz2' nghttp2_1.43.0.orig.tar.bz2 4521786 SHA512:f2e6665ad6c73f0a1a8c7b34ca821a905868d41dafca913e6a054eb5afb534a85ae91618c1a4b098e43f350ca3703fd1ece7848f0a771e8393a3eb0581ceaf59
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.2.debian.tar.xz' nghttp2_1.43.0-1ubuntu0.2.debian.tar.xz 23788 SHA512:ebbbd0c00089e2b48feef151b00b952cfec456662f35d8dd68e886008cdb61bec788c5fa8bbd63614c18a2e06f187bf3112417e759a4f55a9c0db27511aa461a
+```
 
 ### `dpkg` source package: `npth=1.6-3build2`
 
