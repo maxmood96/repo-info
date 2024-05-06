@@ -1,10 +1,10 @@
-# `julia:1.10.2-bookworm`
+# `julia:1.10.3-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6aca897d526d5f48d74110f50b3d01e7eee8a085cc22d562930145e1ab3e3558`
-- Created: `2024-03-02T06:59:15Z`
-- Virtual Size: ~ 688.06 Mb  
+- Image ID: `sha256:7fe55dfa2578651552e2630d486c6dc53954551e1682fa55b984affa55926528`
+- Created: `2024-04-30T17:59:16Z`
+- Virtual Size: ~ 710.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JULIA_PATH=/usr/local/julia`
   - `JULIA_GPG=3673DF529D9049477F76B37566E3C7DC03D6E495`
-  - `JULIA_VERSION=1.10.2`
+  - `JULIA_VERSION=1.10.3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -788,32 +788,25 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-12/12.2.0-14/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-12/12.2.0-14/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.36-9+deb12u4`
+### `dpkg` source package: `glibc=2.36-9+deb12u6`
 
 Binary Packages:
 
-- `libc-bin=2.36-9+deb12u4`
-- `libc6:amd64=2.36-9+deb12u4`
+- `libc-bin=2.36-9+deb12u6`
+- `libc6:amd64=2.36-9+deb12u6`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.36-9+deb12u4
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36-9%2bdeb12u4.dsc' glibc_2.36-9+deb12u4.dsc 9761 SHA256:9bb617509a73c40b9885fc543e6b7a2b064b0c1e93043fba763a55c0a05a2f38
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36.orig.tar.xz' glibc_2.36.orig.tar.xz 19363988 SHA256:a543c02070d46ccaf866957efd13f10c924daa74c86a90a0254db09a92a708ee
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36-9%2bdeb12u4.debian.tar.xz' glibc_2.36-9+deb12u4.debian.tar.xz 862120 SHA256:b650ed666dd8388b576c8b298abe26cfd0a0c548314e4d29674bd19b48e7b4b4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.36-9+deb12u6/
 
-- https://sources.debian.net/src/glibc/2.36-9+deb12u4/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.36-9+deb12u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.36-9+deb12u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg1-1.1`
 

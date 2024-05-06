@@ -1,10 +1,10 @@
-# `julia:1.10.2-bullseye`
+# `julia:1.10.3-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6b519fbbe6fcb322b62c68e36176617f728f249f18bc61094bb919dc53c991bb`
-- Created: `2024-03-02T06:59:15Z`
-- Virtual Size: ~ 685.60 Mb  
+- Image ID: `sha256:eaa2c7c12053925106eccd240fe7b7fd066054e76c6d034588d366796c93f4f6`
+- Created: `2024-04-30T17:59:16Z`
+- Virtual Size: ~ 707.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JULIA_PATH=/usr/local/julia`
   - `JULIA_GPG=3673DF529D9049477F76B37566E3C7DC03D6E495`
-  - `JULIA_VERSION=1.10.2`
+  - `JULIA_VERSION=1.10.3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -718,32 +718,25 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-9/9.3.0-22/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-9/9.3.0-22/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.31-13+deb11u8`
+### `dpkg` source package: `glibc=2.31-13+deb11u9`
 
 Binary Packages:
 
-- `libc-bin=2.31-13+deb11u8`
-- `libc6:amd64=2.31-13+deb11u8`
+- `libc-bin=2.31-13+deb11u9`
+- `libc6:amd64=2.31-13+deb11u9`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.31-13+deb11u8
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-13%2bdeb11u8.dsc' glibc_2.31-13+deb11u8.dsc 8347 SHA256:a2b6b4147f2f39c8b0ae69605b4c6b5cad2a2cb64c5fd308e1fc1da97a836683
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-13%2bdeb11u8.debian.tar.xz' glibc_2.31-13+deb11u8.debian.tar.xz 960488 SHA256:9a1efa1b0b5c8ff7779c4c631cfefa371172c6bd1cbdb2be4bbc1dc1d4e91179
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.31-13+deb11u9/
 
-- https://sources.debian.net/src/glibc/2.31-13+deb11u8/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.31-13+deb11u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.31-13+deb11u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1+deb11u1`
 
