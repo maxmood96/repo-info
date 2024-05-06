@@ -1,7 +1,7 @@
 ## `almalinux:minimal`
 
 ```console
-$ docker pull almalinux@sha256:05ec84f1d89ab0ec28efeedddaa7dfb423f3842c349ca725a23db17d12f76fba
+$ docker pull almalinux@sha256:7b061ba0f4d69efe44565d12974f9032b4ee48dbc9cbcf27973f134158771a3d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -40,27 +40,27 @@ CMD ["/bin/bash"]
 ### `almalinux:minimal` - linux; arm64 variant v8
 
 ```console
-$ docker pull almalinux@sha256:4c0730fff0197817f4a6155f13fccc6d324ae46cf220f92a41ef07837e15d189
+$ docker pull almalinux@sha256:41ea5f0bc355bb7ffdef2d6f8afebe47a0c512539c96bc49f5c6d2be15e78c3c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.0 MB (32000408 bytes)**  
+-	Total Size: **33.0 MB (33044012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b4b0a8a37bda1386b544e2f6904c06c65b1ee85e4b4fc247577850cde8735fe9`
+-	Image ID: `sha256:b5a3ff64c86dd899cc5e27fd0761bece52c512e0a5a7c76a90a99dd8165e5438`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 12 Apr 2024 01:33:13 GMT
-ADD file:07c2a7663607c684378b148781b43fef49e6137c1c1f3bdfba81f1040bc64427 in / 
-# Fri, 12 Apr 2024 01:33:13 GMT
+# Mon, 06 May 2024 19:33:23 GMT
+ADD file:216a2a534ccb5fe4f78589ccf487cb561f8398daef8216f1b61b7a8f98bb2530 in / 
+# Mon, 06 May 2024 19:33:24 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:ce359e3edb1fdc1f58b371c3c4d14e779ebe3d2aac8f8ebd3c072d1c444934e8`  
-		Last Modified: Fri, 12 Apr 2024 01:34:21 GMT  
-		Size: 32.0 MB (32000408 bytes)  
+	-	`sha256:835c895d12325673313357404a6e693b55ef004e06f9e7bcb8b6cdf710002825`  
+		Last Modified: Mon, 06 May 2024 19:34:02 GMT  
+		Size: 33.0 MB (33044012 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `almalinux:minimal` - linux; ppc64le
