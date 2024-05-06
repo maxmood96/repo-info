@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5f28e21bc6ce677af2dac770195d412191af182ee3a79d25e0cb61cf62ffd0da`
+- Image ID: `sha256:d18a02e49a61d5f121a51c951be8fb2dceef79628ba1ca09305c1a7473639e9f`
 - Created: `2024-03-28T14:25:35Z`
 - Virtual Size: ~ 505.57 Mb  
   (total size of all layers on-disk)
@@ -726,30 +726,15 @@ $ apt-get source -qq --print-uris git=1:2.34.1-1ubuntu1.10
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.10.debian.tar.xz' git_2.34.1-1ubuntu1.10.debian.tar.xz 758892 SHA512:029b3f7756adab7d11abd53a935a06198f1947fefba2a768f9cbdf98b1a2b39e3dd5a17617afe2dbf1c4c7f3512b41825ebe0838ed8bbecb18b3bbe3962be338
 ```
 
-### `dpkg` source package: `glibc=2.35-0ubuntu3.6`
-
-Binary Packages:
-
-- `libc-bin=2.35-0ubuntu3.6`
-- `libc6:amd64=2.35-0ubuntu3.6`
-
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
-
-- `GFDL-1.3`
-- `GPL-2`
-- `LGPL-2.1`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.7`
 
 Binary Packages:
 
+- `libc-bin=2.35-0ubuntu3.7`
+- `libc6:amd64=2.35-0ubuntu3.7`
 - `locales=2.35-0ubuntu3.7`
 
-Licenses: (parsed from: `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GFDL-1.3`
 - `GPL-2`
