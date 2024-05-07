@@ -1,10 +1,10 @@
-# `drupal:10.2.5-php8.3-apache-bullseye`
+# `drupal:10.2.6-php8.3-apache-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c50a8da193bd2971f73f8c49dd591d649512a4759983ceb7ded87440f7ea60fe`
-- Created: `2024-04-05T21:55:18Z`
-- Virtual Size: ~ 554.98 Mb  
+- Image ID: `sha256:4ef7c46b3a4ec924c052242da8ef532faf0fb942bdba9378c74f8912183f13cf`
+- Created: `2024-05-01T21:27:52Z`
+- Virtual Size: ~ 555.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -23,7 +23,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.3.6.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.6.tar.xz.asc`
   - `PHP_SHA256=53c8386b2123af97626d3438b3e4058e0c5914cb74b048a6676c57ac647f5eae`
-  - `DRUPAL_VERSION=10.2.5`
+  - `DRUPAL_VERSION=10.2.6`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1139,20 +1139,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.31-13+deb11u9
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u9.dsc' glibc_2.31-13+deb11u9.dsc 8347 SHA256:d434d56ceee9b81ca36558abdf21fe95ce96dd0be5f296c4d1394a53aac3bdce
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u9.debian.tar.xz' glibc_2.31-13+deb11u9.debian.tar.xz 961928 SHA256:c57f8a2e9bfbedeb110cfe35f9aa387337464ab1233de37f520a802f828a2b97
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.31-13+deb11u9/
 
-- https://sources.debian.net/src/glibc/2.31-13+deb11u9/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.31-13+deb11u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.31-13+deb11u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1+deb11u1`
 

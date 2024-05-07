@@ -1,10 +1,10 @@
-# `drupal:10.2.5-php8.3-fpm-bookworm`
+# `drupal:10.2.6-php8.3-fpm-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9791c4a1eaa3f260f30be51245d92e08993c86f9d22703b9206f74d86cdf0270`
-- Created: `2024-04-05T21:55:18Z`
-- Virtual Size: ~ 590.43 Mb  
+- Image ID: `sha256:b1fa1c441490056c25739abe2c0d604282c6cf9bc994f6b9df37d539c0a2a171`
+- Created: `2024-05-01T21:27:52Z`
+- Virtual Size: ~ 590.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.3.6.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.6.tar.xz.asc`
   - `PHP_SHA256=53c8386b2123af97626d3438b3e4058e0c5914cb74b048a6676c57ac647f5eae`
-  - `DRUPAL_VERSION=10.2.5`
+  - `DRUPAL_VERSION=10.2.6`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1057,20 +1057,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.36-9+deb12u6
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u6.dsc' glibc_2.36-9+deb12u6.dsc 9761 SHA256:fbd6a3b34c8019bc677c1aa3c55a7cdd2fac0f5226151d408cbf107e89002c10
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36.orig.tar.xz' glibc_2.36.orig.tar.xz 19363988 SHA256:a543c02070d46ccaf866957efd13f10c924daa74c86a90a0254db09a92a708ee
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u6.debian.tar.xz' glibc_2.36-9+deb12u6.debian.tar.xz 858672 SHA256:dab8173d6a6393b50ed0737bd32ff993a3fa7bf4a837573eab8c67f1391ecb12
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.36-9+deb12u6/
 
-- https://sources.debian.net/src/glibc/2.36-9+deb12u6/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.36-9+deb12u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.36-9+deb12u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg1-1.1`
 
