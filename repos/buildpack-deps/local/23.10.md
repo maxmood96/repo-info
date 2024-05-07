@@ -1990,14 +1990,9 @@ Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 - `other-1`
 - `public-domain-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libde265=1.0.12-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libde265/libde265_1.0.12-2ubuntu0.1.dsc' libde265_1.0.12-2ubuntu0.1.dsc 2372 SHA512:e2563f4ebf2d8daf9c57982aa6cd4e7d3a9b39a2c3a9f4291aaaa5678a1cbdf0152e34925b824f4495392c079ba289555c493c0a049c71d5e4869288ae7e9064
-'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libde265/libde265_1.0.12.orig.tar.gz' libde265_1.0.12.orig.tar.gz 846345 SHA512:2cd105f3ce15a075da758f5429670b78ec162217017d1057eb828d7bc45414d35f2a8ab3b2cd5f247320c361740f4ab92d2ce5a6d943feeb33dc28c273e1ed64
-'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libde265/libde265_1.0.12-2ubuntu0.1.debian.tar.xz' libde265_1.0.12-2ubuntu0.1.debian.tar.xz 138104 SHA512:1a7ae8b48a2757f3cf53114f01aef2c3f41e3049439d8fc9b0ce4495dfc5ace999e1de21904e80a14c41ce62668549df83419861b82a559bebe0c7355dc97721
-```
 
 ### `dpkg` source package: `libdeflate=1.18-1`
 
