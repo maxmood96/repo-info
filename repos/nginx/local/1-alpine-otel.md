@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3122892fb04fe98de20ba6d1bb1fff2a99caf21f9337b9150b2134af5601aac1`
-- Created: `2024-04-23T21:35:33Z`
+- Image ID: `sha256:3f4536b3e577c35be93cd9d4a6564bd0ff4931609618a5e1526b4bf02603a7ef`
+- Created: `2024-05-03T19:49:21Z`
 - Virtual Size: ~ 58.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,7 +14,7 @@
   - `NGINX_VERSION=1.25.5`
   - `PKG_RELEASE=1`
   - `NJS_VERSION=0.8.4`
-  - `NJS_RELEASE=2`
+  - `NJS_RELEASE=3`
   - `OTEL_VERSION=0.1.0`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -1010,16 +1010,16 @@ nginx-module-image-filter-1.25.5-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.25.5.0.8.4-r2 description:
+nginx-module-njs-1.25.5.0.8.4-r3 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.25.5.0.8.4-r2 webpage:
+nginx-module-njs-1.25.5.0.8.4-r3 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.25.5.0.8.4-r2 installed size:
+nginx-module-njs-1.25.5.0.8.4-r3 installed size:
 4756 KiB
 
-nginx-module-njs-1.25.5.0.8.4-r2 license:
+nginx-module-njs-1.25.5.0.8.4-r3 license:
 2-clause BSD-like license
 
 ```

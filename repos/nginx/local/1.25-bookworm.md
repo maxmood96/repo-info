@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7383c266ef252ad70806f3072ee8e63d2a16d1e6bafa6146a2da867fc7c41759`
-- Created: `2024-04-23T22:15:45Z`
+- Image ID: `sha256:1d668e06f1e534ab338404ba891c37d618dd53c9073dcdd4ebde82aa7643f83f`
+- Created: `2024-05-03T19:49:21Z`
 - Virtual Size: ~ 187.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NGINX_VERSION=1.25.5`
   - `NJS_VERSION=0.8.4`
-  - `NJS_RELEASE=2~bookworm`
+  - `NJS_RELEASE=3~bookworm`
   - `PKG_RELEASE=1~bookworm`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -1059,20 +1059,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.36-9+deb12u6
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u6.dsc' glibc_2.36-9+deb12u6.dsc 9761 SHA256:fbd6a3b34c8019bc677c1aa3c55a7cdd2fac0f5226151d408cbf107e89002c10
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36.orig.tar.xz' glibc_2.36.orig.tar.xz 19363988 SHA256:a543c02070d46ccaf866957efd13f10c924daa74c86a90a0254db09a92a708ee
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u6.debian.tar.xz' glibc_2.36-9+deb12u6.debian.tar.xz 858672 SHA256:dab8173d6a6393b50ed0737bd32ff993a3fa7bf4a837573eab8c67f1391ecb12
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.36-9+deb12u6/
 
-- https://sources.debian.net/src/glibc/2.36-9+deb12u6/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.36-9+deb12u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.36-9+deb12u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg1-1.1`
 
@@ -2632,11 +2625,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.25.5+0.8.4-2~bookworm`
+### `dpkg` source package: `nginx-module-njs=1.25.5+0.8.4-3~bookworm`
 
 Binary Packages:
 
-- `nginx-module-njs=1.25.5+0.8.4-2~bookworm`
+- `nginx-module-njs=1.25.5+0.8.4-3~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
