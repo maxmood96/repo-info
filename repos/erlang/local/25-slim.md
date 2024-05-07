@@ -1,19 +1,19 @@
-# `erlang:25.3.2.11-slim`
+# `erlang:25.3.2.12-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7e22f2c13f70c49d5eebbd87393fe9c62e6c9980e1797dc5dd96b6064f48fb91`
-- Created: `2024-04-24T06:22:25.63423794Z`
-- Virtual Size: ~ 279.97 Mb  
+- Image ID: `sha256:65366f24ace231440729fcbae93cfe515e46e9eb2fa14df176ea483810fdac9a`
+- Created: `2024-05-06T19:19:34.805764876Z`
+- Virtual Size: ~ 292.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=25.3.2.11`
+  - `OTP_VERSION=25.3.2.12`
   - `REBAR3_VERSION=3.23.0`
 - Labels:
-  - `org.opencontainers.image.version=25.3.2.11`
+  - `org.opencontainers.image.version=25.3.2.12`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -608,14 +608,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-9/9.3.0-22/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-9/9.3.0-22/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.31-13+deb11u9`
+### `dpkg` source package: `glibc=2.31-13+deb11u10`
 
 Binary Packages:
 
-- `libc-bin=2.31-13+deb11u9`
-- `libc6:amd64=2.31-13+deb11u9`
+- `libc6:amd64=2.31-13+deb11u10`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -623,17 +622,36 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.31-13+deb11u9
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u9.dsc' glibc_2.31-13+deb11u9.dsc 8347 SHA256:d434d56ceee9b81ca36558abdf21fe95ce96dd0be5f296c4d1394a53aac3bdce
+$ apt-get source -qq --print-uris glibc=2.31-13+deb11u10
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u10.dsc' glibc_2.31-13+deb11u10.dsc 8351 SHA256:44074406fbc83225b0c498b95cc8cd50b98be4007048082ba5b07e94f3735c6e
 'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u9.debian.tar.xz' glibc_2.31-13+deb11u9.debian.tar.xz 961928 SHA256:c57f8a2e9bfbedeb110cfe35f9aa387337464ab1233de37f520a802f828a2b97
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u10.debian.tar.xz' glibc_2.31-13+deb11u10.debian.tar.xz 965724 SHA256:540a944da49803b9d8b5053a0390bc476688761168a1917ad1a22b6969182eaa
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.31-13+deb11u9/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.31-13+deb11u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.31-13+deb11u9/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.31-13+deb11u10/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.31-13+deb11u10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.31-13+deb11u10/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `glibc=2.31-13+deb11u9`
+
+Binary Packages:
+
+- `libc-bin=2.31-13+deb11u9`
+
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glibc/2.31-13+deb11u9/
+
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1+deb11u1`
 
