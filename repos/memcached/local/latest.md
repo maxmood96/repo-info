@@ -1,19 +1,19 @@
-# `memcached:1.6.26`
+# `memcached:1.6.27`
 
 ## Docker Metadata
 
-- Image ID: `sha256:10895cbae2201dbd8d84c3c9047f79424e9ed1ccbe25884d1b4d795d0ac6d5fb`
-- Created: `2024-04-05T21:52:05Z`
-- Virtual Size: ~ 84.85 Mb  
+- Image ID: `sha256:ec8c94e66592eab160b4534afad21e21800362694048e80f2c8e82b20c060a78`
+- Created: `2024-05-06T09:14:35Z`
+- Virtual Size: ~ 99.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["memcached"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `MEMCACHED_VERSION=1.6.26`
-  - `MEMCACHED_URL=https://memcached.org/files/memcached-1.6.26.tar.gz`
-  - `MEMCACHED_SHA1=03b9ea47eb9819bf0f53f48db908f45150f1072b`
+  - `MEMCACHED_VERSION=1.6.27`
+  - `MEMCACHED_URL=https://memcached.org/files/memcached-1.6.27.tar.gz`
+  - `MEMCACHED_SHA1=baf2e7494e1f62d275ff29a99f270abbdb923f75`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -700,25 +700,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-12/12.2.0-14/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-12/12.2.0-14/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.36-9+deb12u6`
+### `dpkg` source package: `glibc=2.36-9+deb12u7`
 
 Binary Packages:
 
-- `libc-bin=2.36-9+deb12u6`
-- `libc6:amd64=2.36-9+deb12u6`
+- `libc-bin=2.36-9+deb12u7`
+- `libc6:amd64=2.36-9+deb12u7`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris glibc=2.36-9+deb12u7
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u7.dsc' glibc_2.36-9+deb12u7.dsc 9761 SHA256:b5e615ea887acb1f16c4fdc83bb50c6ca9d38cde038caa9fe87b26c03076b772
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36.orig.tar.xz' glibc_2.36.orig.tar.xz 19363988 SHA256:a543c02070d46ccaf866957efd13f10c924daa74c86a90a0254db09a92a708ee
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u7.debian.tar.xz' glibc_2.36-9+deb12u7.debian.tar.xz 862848 SHA256:a9e0dcec7cd82c81d98f4d0652e9c576d5d4801ef8cfb8dfc06277a8977cb5ac
+```
 
-- http://snapshot.debian.org/package/glibc/2.36-9+deb12u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/glibc/2.36-9+deb12u7/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.36-9+deb12u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.36-9+deb12u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg1-1.1`
 
