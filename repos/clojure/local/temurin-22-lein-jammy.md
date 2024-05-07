@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3bccc2dbdae77f95f2463ad44862b2ce911cf1eef75193dff1e99ebb1857c95f`
-- Created: `2024-04-26T04:54:32.250581553Z`
+- Image ID: `sha256:428f65fc264fa50722a0d11e86326ce91b1a0ecec26e0f56756786727eae571a`
+- Created: `2024-05-02T05:42:50.957124088Z`
 - Virtual Size: ~ 452.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -602,30 +602,15 @@ $ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.debian.tar.xz 575908 SHA512:d1bf37d9af699430d3b107d0966194b20aef22654337efdb99971b270609785020dd1f04ce6a0f3f3eb0dbad704b46e9d9e5dfa6a497e98c78a867f5bc290038
 ```
 
-### `dpkg` source package: `glibc=2.35-0ubuntu3.6`
-
-Binary Packages:
-
-- `libc-bin=2.35-0ubuntu3.6`
-- `libc6:amd64=2.35-0ubuntu3.6`
-
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
-
-- `GFDL-1.3`
-- `GPL-2`
-- `LGPL-2.1`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.7`
 
 Binary Packages:
 
+- `libc-bin=2.35-0ubuntu3.7`
+- `libc6:amd64=2.35-0ubuntu3.7`
 - `locales=2.35-0ubuntu3.7`
 
-Licenses: (parsed from: `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GFDL-1.3`
 - `GPL-2`

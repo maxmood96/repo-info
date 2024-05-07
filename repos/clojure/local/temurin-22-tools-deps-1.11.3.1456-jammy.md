@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:55ebc24abe0ee05145b3f9d6e88b45101037f6cfc87ebefe081a20594673f90a`
-- Created: `2024-04-26T04:55:08.853494049Z`
+- Image ID: `sha256:2fb65081f2f36a86b7b373b486cfe3f8f0206e9f3b1f0482b476baeb37ade229`
+- Created: `2024-05-02T05:43:28.222723599Z`
 - Virtual Size: ~ 553.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -726,30 +726,15 @@ $ apt-get source -qq --print-uris git=1:2.34.1-1ubuntu1.10
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.10.debian.tar.xz' git_2.34.1-1ubuntu1.10.debian.tar.xz 758892 SHA512:029b3f7756adab7d11abd53a935a06198f1947fefba2a768f9cbdf98b1a2b39e3dd5a17617afe2dbf1c4c7f3512b41825ebe0838ed8bbecb18b3bbe3962be338
 ```
 
-### `dpkg` source package: `glibc=2.35-0ubuntu3.6`
-
-Binary Packages:
-
-- `libc-bin=2.35-0ubuntu3.6`
-- `libc6:amd64=2.35-0ubuntu3.6`
-
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
-
-- `GFDL-1.3`
-- `GPL-2`
-- `LGPL-2.1`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.7`
 
 Binary Packages:
 
+- `libc-bin=2.35-0ubuntu3.7`
+- `libc6:amd64=2.35-0ubuntu3.7`
 - `locales=2.35-0ubuntu3.7`
 
-Licenses: (parsed from: `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GFDL-1.3`
 - `GPL-2`
@@ -976,19 +961,24 @@ $ apt-get source -qq --print-uris krb5=1.19.2-2ubuntu0.3
 'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.3.debian.tar.xz' krb5_1.19.2-2ubuntu0.3.debian.tar.xz 108848 SHA512:368d8da9d03856e93341fe25483e3108f12b661dc00176ec0c42c40a73bf55f62f1f97724b1e811b9f15e2cf4aa6b43fde44d5b00ef9c2729fef1ed717538d3f
 ```
 
-### `dpkg` source package: `less=590-1ubuntu0.22.04.2`
+### `dpkg` source package: `less=590-1ubuntu0.22.04.3`
 
 Binary Packages:
 
-- `less=590-1ubuntu0.22.04.2`
+- `less=590-1ubuntu0.22.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/less/copyright`)
 
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris less=590-1ubuntu0.22.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/l/less/less_590-1ubuntu0.22.04.3.dsc' less_590-1ubuntu0.22.04.3.dsc 1961 SHA512:10950d6dd9536727ce5f57e0378b89070925193077893ac3256b0aee1bc2addd8dca0d7602c57d436f334efc9157e074f07baf22bae1e460d72c2a727f428ab0
+'http://archive.ubuntu.com/ubuntu/pool/main/l/less/less_590.orig.tar.gz' less_590.orig.tar.gz 352574 SHA512:426fa5840fd43c17bd5a452ad35ad24f2d6684623c6914403fd0059af62266bf2138e6828c7d73a1cef26a736c0d2b8ed4ab180eea8297281dae79a4228eb903
+'http://archive.ubuntu.com/ubuntu/pool/main/l/less/less_590-1ubuntu0.22.04.3.debian.tar.xz' less_590-1ubuntu0.22.04.3.debian.tar.xz 20648 SHA512:ae6ee3f3602c2031ca57b801660515da55ae15311e65035cf24c31f1f2be4d00db61f61830027bbf83bd5238fb97c5cab919880a151ba0b1ebbdf09dcde577c6
+```
 
 ### `dpkg` source package: `libbsd=0.11.5-1`
 

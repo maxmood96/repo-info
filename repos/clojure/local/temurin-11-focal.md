@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:264494acc531b1a27aeb3c8e1727865908d1f27509d42c96d15e534023bc30c8`
-- Created: `2024-04-26T04:47:44.44235189Z`
-- Virtual Size: ~ 539.64 Mb  
+- Image ID: `sha256:6aba875a97608357fb9b7665c3241327a5b57d4bd118a5f678445edcd42a3359`
+- Created: `2024-05-02T05:36:05.851189594Z`
+- Virtual Size: ~ 539.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -706,29 +706,15 @@ $ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu3.11
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.11.debian.tar.xz' git_2.25.1-1ubuntu3.11.debian.tar.xz 708608 SHA512:f761df90be2d25b8bbdcbec0fa781bf2b20e954350eb15a1a210408876ac7e90ca4b7643b00c074cd4ce7b286494b0bfb71f4586024e01c026737cb290165ba9
 ```
 
-### `dpkg` source package: `glibc=2.31-0ubuntu9.14`
-
-Binary Packages:
-
-- `libc-bin=2.31-0ubuntu9.14`
-- `libc6:amd64=2.31-0ubuntu9.14`
-
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
-
-- `GPL-2`
-- `LGPL-2.1`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.15`
 
 Binary Packages:
 
+- `libc-bin=2.31-0ubuntu9.15`
+- `libc6:amd64=2.31-0ubuntu9.15`
 - `locales=2.31-0ubuntu9.15`
 
-Licenses: (parsed from: `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -980,19 +966,24 @@ $ apt-get source -qq --print-uris krb5=1.17-6ubuntu4.4
 'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.4.debian.tar.xz' krb5_1.17-6ubuntu4.4.debian.tar.xz 148892 SHA512:0a54e9708aeeca0cddbdf71c3f5238399e03720d205462d1a633b85932a4e7b66a31230b906e6af2b4042608a6b1c25d80e7a56769ac4179d2931562d2d06488
 ```
 
-### `dpkg` source package: `less=551-1ubuntu0.2`
+### `dpkg` source package: `less=551-1ubuntu0.3`
 
 Binary Packages:
 
-- `less=551-1ubuntu0.2`
+- `less=551-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/less/copyright`)
 
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris less=551-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/l/less/less_551-1ubuntu0.3.dsc' less_551-1ubuntu0.3.dsc 1937 SHA512:bc97297e4cf31586d4b807c6c2ca27ab19992fbd0b4e0ed35c5cac2ed89587f2f81516a6f0149d8f4bdeec8249d698da353e8b2aa856b62f872577cf79c58dcc
+'http://archive.ubuntu.com/ubuntu/pool/main/l/less/less_551.orig.tar.gz' less_551.orig.tar.gz 347007 SHA512:ef5296b9ebd72f83c05cad8a0f7a5eec2290e9b358ee725e09e8541bd95f94c0e14ea22aa04b287a0654079338eaeae813f2235b8e9f819fbbc9040dd65a9585
+'http://archive.ubuntu.com/ubuntu/pool/main/l/less/less_551-1ubuntu0.3.debian.tar.xz' less_551-1ubuntu0.3.debian.tar.xz 20056 SHA512:8035a94c1498236831563e8655473b02564c2fd46760fc8aa6b883368392a6f4da49844a607509abd11a76e978caa9e2bfe95616ba4dd76374938cfae7d79560
+```
 
 ### `dpkg` source package: `libbsd=0.10.0-1`
 
@@ -1774,11 +1765,11 @@ $ apt-get source -qq --print-uris nettle=3.5.1+really3.5.1-2ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.5.1%2breally3.5.1-2ubuntu0.2.debian.tar.xz' nettle_3.5.1+really3.5.1-2ubuntu0.2.debian.tar.xz 27228 SHA512:389c303e679b6b6714f824f22bc8675c1ea4bdab0108b69e9514613109573d01592e3f80bf9a144866a159a9a09fa0f3218d62b9f6978bdfe5e95a18bcfe3a88
 ```
 
-### `dpkg` source package: `nghttp2=1.40.0-1ubuntu0.2`
+### `dpkg` source package: `nghttp2=1.40.0-1ubuntu0.3`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.40.0-1ubuntu0.2`
+- `libnghttp2-14:amd64=1.40.0-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -1790,9 +1781,14 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nghttp2=1.40.0-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0-1ubuntu0.3.dsc' nghttp2_1.40.0-1ubuntu0.3.dsc 2679 SHA512:23dc554f410fa4a99a06515040490c3e2cf1200dc0ccea05499ff10eecf5434899732b6f9344a6090e7c48b0b29771acb63745b44e11a76def1e2cc2c939efc0
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0.orig.tar.bz2' nghttp2_1.40.0.orig.tar.bz2 1937537 SHA512:bc3f6dd8ccc3c6891b61206eeb2a74019b2559b4d75409e022c1a9ad0745d50cf8db7ca8e076993ab04a17f87455dc38159bf085bd844366dac82506e44656a0
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0-1ubuntu0.3.debian.tar.xz' nghttp2_1.40.0-1ubuntu0.3.debian.tar.xz 22112 SHA512:d7c1a1efdf9e7413475ba156b3ed21bf931bd494a1a404003a31ddd104ad403d9935b7655c8d650ff2ce67e4d8b6598ab9f8e757993d72dd6dbd776bac40d9af
+```
 
 ### `dpkg` source package: `openldap=2.4.49+dfsg-2ubuntu1.10`
 
