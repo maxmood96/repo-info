@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:122efe91c69b3ed1ff4ffc479d3487b2d37836ee2ee5de285f8653e14258179f`
-- Created: `2024-04-26T17:06:55.398048636Z`
-- Virtual Size: ~ 212.01 Mb  
+- Image ID: `sha256:0f63e624e06ca6d6f027e0a987d4350f6c8d58b14a04397b46fe1333b7c6327f`
+- Created: `2024-05-02T18:31:30.687893778Z`
+- Virtual Size: ~ 211.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=22.0.0`
+  - `NODE_VERSION=22.1.0`
   - `YARN_VERSION=1.22.19`
 
 ## `dpkg` (`.deb`-based packages)
@@ -666,20 +666,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.36-9+deb12u6
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u6.dsc' glibc_2.36-9+deb12u6.dsc 9761 SHA256:fbd6a3b34c8019bc677c1aa3c55a7cdd2fac0f5226151d408cbf107e89002c10
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36.orig.tar.xz' glibc_2.36.orig.tar.xz 19363988 SHA256:a543c02070d46ccaf866957efd13f10c924daa74c86a90a0254db09a92a708ee
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u6.debian.tar.xz' glibc_2.36-9+deb12u6.debian.tar.xz 858672 SHA256:dab8173d6a6393b50ed0737bd32ff993a3fa7bf4a837573eab8c67f1391ecb12
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.36-9+deb12u6/
 
-- https://sources.debian.net/src/glibc/2.36-9+deb12u6/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.36-9+deb12u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.36-9+deb12u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg1-1.1`
 
