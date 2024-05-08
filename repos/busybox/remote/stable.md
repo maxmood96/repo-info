@@ -1,7 +1,7 @@
 ## `busybox:stable`
 
 ```console
-$ docker pull busybox@sha256:6776a33c72b3af7582a5b301e3a08186f2c21a3409f0d2b52dfddbdbe24a5b04
+$ docker pull busybox@sha256:5eef5ed34e1e1ff0a4ae850395cbf665c4de6b4b83a32a0bc7bcb998e24e7bbb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20,13 +20,13 @@ $ docker pull busybox@sha256:6776a33c72b3af7582a5b301e3a08186f2c21a3409f0d2b52df
 ### `busybox:stable` - linux; amd64
 
 ```console
-$ docker pull busybox@sha256:a236a6469768c17ca1a6ac81a35fe6fbc1efd76b0dcdf5aebb1cf5f0774ee539
+$ docker pull busybox@sha256:50aa4698fa6262977cff89181b2664b99d8a56dbca847bf62f2ef04854597cf8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2152658 bytes)**  
+-	Total Size: **2.2 MB (2152663 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f62daa0d2c724aa4378fb4591dfb3bc7a5d9ddacad8bf8e79771a49c93503df1`
+-	Image ID: `sha256:65ad0d468eb1c558bf7f4e64e790f586e9eda649ee9f130cd0e835b292bbc5ac`
 -	Default Command: `["sh"]`
 
 ```dockerfile
@@ -35,9 +35,9 @@ RUN BusyBox 1.36.1 (glibc), Debian 12
 ```
 
 -	Layers:
-	-	`sha256:ea6255c5eee62d175868cea60247806256b14fa8dc352d307355b97316987138`  
-		Last Modified: Tue, 30 Apr 2024 00:51:33 GMT  
-		Size: 2.2 MB (2152658 bytes)  
+	-	`sha256:ec562eabd705d25bfea8c8d79e4610775e375524af00552fe871d3338261563c`  
+		Last Modified: Wed, 08 May 2024 18:54:04 GMT  
+		Size: 2.2 MB (2152663 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `busybox:stable` - linux; arm variant v5
@@ -204,23 +204,23 @@ RUN BusyBox 1.36.1 (glibc), Debian 12
 ### `busybox:stable` - linux; riscv64
 
 ```console
-$ docker pull busybox@sha256:550a3dba1de5d4598fcb6ef9dbb7953b21166ef3f1bae1400e36aa58a2bf22bf
+$ docker pull busybox@sha256:0a9ce6c1a04fbe0711e61c7179b0bc0a9cc1dd1bf4ba998ef1a09f7437463ddf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **895.2 KB (895235 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d766b337645bec15ba1596e420bc08bf5fdf488f9ca0f99533b4172db7cfe4c`
+-	Image ID: `sha256:90dd5a4e0ab4329ecc66f5cabbdb0571bc85cd27b0bb94a88eb44d56684ae5c3`
 -	Default Command: `["sh"]`
 
 ```dockerfile
 # Thu, 18 May 2023 22:34:17 GMT
-RUN BusyBox 1.36.1 (uclibc), Buildroot 2024.02.1, Debian trixie
+RUN BusyBox 1.36.1 (uclibc), Buildroot 2024.02.2, Debian trixie
 ```
 
 -	Layers:
-	-	`sha256:e96c490d9c752804d7dde3ab45d10bd8001e8239bb878401d2b834e59500c52a`  
-		Last Modified: Fri, 29 Mar 2024 00:55:08 GMT  
+	-	`sha256:b44344d5c90bc5dd1cd972c108d98af2cd434111dd52da9cc86bc2b0dabfc6d1`  
+		Last Modified: Wed, 08 May 2024 18:55:00 GMT  
 		Size: 895.2 KB (895235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
