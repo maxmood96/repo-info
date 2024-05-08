@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:96bf7ff9902ab1efb419562a57e09ef1479651d2d8f43280c07625330d7851e9`
+- Image ID: `sha256:a6240b5d08ae9602684ce97b2612ea040ac468622e3ae4cb57a014eeb09fb7bd`
 - Created: `2024-03-26T13:57:15Z`
-- Virtual Size: ~ 1.03 Gb  
+- Virtual Size: ~ 1.06 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
 - Command: `["unitd","--no-daemon","--control","unix:/var/run/control.unit.sock"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=20.12.2`
+  - `NODE_VERSION=20.13.0`
   - `YARN_VERSION=1.22.19`
 - Labels:
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
@@ -1465,16 +1465,41 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/glib2.0/2.66.8-1+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/glib2.0/2.66.8-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `glibc=2.31-13+deb11u10`
+
+Binary Packages:
+
+- `libc-dev-bin=2.31-13+deb11u10`
+- `libc6:amd64=2.31-13+deb11u10`
+- `libc6-dev:amd64=2.31-13+deb11u10`
+
+Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.31-13+deb11u10
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u10.dsc' glibc_2.31-13+deb11u10.dsc 8351 SHA256:44074406fbc83225b0c498b95cc8cd50b98be4007048082ba5b07e94f3735c6e
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u10.debian.tar.xz' glibc_2.31-13+deb11u10.debian.tar.xz 965724 SHA256:540a944da49803b9d8b5053a0390bc476688761168a1917ad1a22b6969182eaa
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/glibc/2.31-13+deb11u10/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.31-13+deb11u10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.31-13+deb11u10/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `glibc=2.31-13+deb11u9`
 
 Binary Packages:
 
 - `libc-bin=2.31-13+deb11u9`
-- `libc-dev-bin=2.31-13+deb11u9`
-- `libc6:amd64=2.31-13+deb11u9`
-- `libc6-dev:amd64=2.31-13+deb11u9`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
