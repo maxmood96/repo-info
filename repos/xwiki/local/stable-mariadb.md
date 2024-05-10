@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4f8bea1daa740d8f9c8c6fd317c1404e6296f3830f1bcd536366ef778cc7cdf7`
+- Image ID: `sha256:aa5253242f552a013a22df93748baf5d4b24e0e6ecd3441ef3b1b84d77fac2fa`
 - Created: `2024-04-30T13:35:01Z`
 - Virtual Size: ~ 1.15 Gb  
   (total size of all layers on-disk)
@@ -21,8 +21,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.88`
-  - `TOMCAT_SHA512=b2668f50339afdd266dbdf3ff20a98632a5552910179eda272b65ea0b18be4bef8fa9988e3cfc77e4eae4b74ae1e7abe2483b0e427a07628ed50fed3a13eefb9`
+  - `TOMCAT_VERSION=9.0.89`
+  - `TOMCAT_SHA512=aaa2851bdc7a2476b6793e95174965c1c861531f161d8a138e87f8532b1af4d4b3d92dd1ae890614a692e5f13fb2e6946a1ada888f21e9d7db1964616b4181f0`
   - `XWIKI_VERSION=16.3.0`
   - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.3.0`
   - `XWIKI_DOWNLOAD_SHA256=3d75d5d495ed89af2e76a6058fa347094be0efd4862f88814640cc18ef3e33ba`
@@ -906,14 +906,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.2.dsc' glib2.0_2.72.4-0ubuntu2.2.dsc 3670 SHA512:f214b129a5ffafd2ed8a1f97fcef5f7081973aff3edef647a947b3ed5e8efc606cb4e085012033f948bee7c51c2cc99f32b91bd552de8508438796f95f42fdba
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4.orig.tar.xz' glib2.0_2.72.4.orig.tar.xz 4884256 SHA512:b4e2e0985e2184ee9656c4f1b4e15d8d1264f3d23d31349bc43d92e8432cffa48e1685c40517efb08dc5b57b8285acf65f2747deeb50e50d9cacec7160e7edf8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.2.debian.tar.xz' glib2.0_2.72.4-0ubuntu2.2.debian.tar.xz 128540 SHA512:d1f23d47687f1d5689a44d0c43a70d4a35d7a719dc3fa6b0ac516f0b1e4e07ee9be37dcf3671e51387c241b1abc7034f9959ef8ca85c249bcc9a541e93c88cc0
-```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.7`
 
@@ -3375,9 +3370,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.3.dsc' poppler_22.02.0-2ubuntu0.3.dsc 3230 SHA512:78fcf2ace95c4b8707f61b2349a4d713574ed7ec20914730f7d57f996c29db8f948e838cce18cc0ec08cf904b18b2fb3e20face50234e2d35c441021832b0a1b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.3.debian.tar.xz' poppler_22.02.0-2ubuntu0.3.debian.tar.xz 41588 SHA512:8e2bf94939f6a74db240f3fe2cc6788c6943c09eed69b9d53d0541937b0cca9e123e07942b60a9771edfd571d4f2630469a1297d338eceb88a1e9e6739dd9e6f
+'http://security.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.3.dsc' poppler_22.02.0-2ubuntu0.3.dsc 3230 SHA512:78fcf2ace95c4b8707f61b2349a4d713574ed7ec20914730f7d57f996c29db8f948e838cce18cc0ec08cf904b18b2fb3e20face50234e2d35c441021832b0a1b
+'http://security.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
+'http://security.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.3.debian.tar.xz' poppler_22.02.0-2ubuntu0.3.debian.tar.xz 41588 SHA512:8e2bf94939f6a74db240f3fe2cc6788c6943c09eed69b9d53d0541937b0cca9e123e07942b60a9771edfd571d4f2630469a1297d338eceb88a1e9e6739dd9e6f
 ```
 
 ### `dpkg` source package: `procps=2:3.3.17-6ubuntu2.1`
