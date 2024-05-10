@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a140a5ffb3db957c3926a30b1d1ec8e64e7fe48312d017235c980854d67351c7`
-- Created: `2024-04-12T23:52:17.697883977Z`
-- Virtual Size: ~ 196.24 Mb  
+- Image ID: `sha256:d2913aad91f13be6e0dc94098f3a8f1a08f493ada7fb2ba78a41b39d57d5b607`
+- Created: `2024-04-30T14:27:41Z`
+- Virtual Size: ~ 196.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -159,16 +159,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20230506-r0 description:
+ca-certificates-20240226-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20230506-r0 webpage:
+ca-certificates-20240226-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20230506-r0 installed size:
-688 KiB
+ca-certificates-20240226-r0 installed size:
+712 KiB
 
-ca-certificates-20230506-r0 license:
+ca-certificates-20240226-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -346,16 +346,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.3-r0 description:
+gnutls-3.8.4-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.3-r0 webpage:
+gnutls-3.8.4-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.3-r0 installed size:
-1868 KiB
+gnutls-3.8.4-r0 installed size:
+1892 KiB
 
-gnutls-3.8.3-r0 license:
+gnutls-3.8.4-r0 license:
 LGPL-2.1-or-later
 
 ```
