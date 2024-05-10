@@ -1,10 +1,10 @@
-# `monica:4.0.0-apache`
+# `monica:4.1.2-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f33e981c58b4ae3407680d2570b60258945164d2347cf5087814921b47ba8427`
-- Created: `2024-04-24T17:30:29.294166899Z`
-- Virtual Size: ~ 647.49 Mb  
+- Image ID: `sha256:f4f350c709adfcde3906fb88dff9627c89a393df38d776e1baef415bc84690ca`
+- Created: `2024-05-08T17:31:36.787576746Z`
+- Virtual Size: ~ 658.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/entrypoint.sh"]`
@@ -18,11 +18,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.28`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.28.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.28.tar.xz.asc`
-  - `PHP_SHA256=95d0b2e9466108fd750dab5c30a09e5c67f5ad2cb3b1ffb3625a038a755ad080`
+  - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
+  - `PHP_VERSION=8.2.18`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.18.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.18.tar.xz.asc`
+  - `PHP_SHA256=44b306fc021e56441f691da6c3108788bd9e450f293b3bc70fcd64b08dd41a50`
   - `PHP_OPCACHE_VALIDATE_TIMESTAMPS=0`
   - `PHP_OPCACHE_MAX_ACCELERATED_FILES=20000`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=192`
@@ -30,16 +30,16 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `APACHE_BODY_LIMIT=1073741824`
-  - `MONICA_VERSION=v4.0.0`
+  - `MONICA_VERSION=v4.1.2`
 - Labels:
   - `org.opencontainers.image.authors=Alexis Saettler <alexis@saettler.org>`
   - `org.opencontainers.image.description=This is MonicaHQ, your personal memory! MonicaHQ is like a CRM but for the friends, family, and acquaintances around you.`
-  - `org.opencontainers.image.revision=e1a3e1315b1a92a5ff0ccab6c22ba9ded77a599e`
+  - `org.opencontainers.image.revision=32028ce3ce79cef38df5d27a297e5b20680f0065`
   - `org.opencontainers.image.source=https://github.com/monicahq/docker`
   - `org.opencontainers.image.title=MonicaHQ, the Personal Relationship Manager`
   - `org.opencontainers.image.url=https://monicahq.com`
   - `org.opencontainers.image.vendor=Monica`
-  - `org.opencontainers.image.version=v4.0.0`
+  - `org.opencontainers.image.version=v4.1.2`
 
 ## `dpkg` (`.deb`-based packages)
 
