@@ -1,10 +1,10 @@
-# `wordpress:6.5.2-fpm`
+# `wordpress:6.5.3-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:54ca8a6e2c03d4e9c96b2d0db1a6c2c27d8f9c45c4f4617b2057827f3232dc25`
-- Created: `2024-04-10T02:30:59Z`
-- Virtual Size: ~ 676.12 Mb  
+- Image ID: `sha256:ee2f7302f6245b1592462d22c80b9bffb5690c7a6596252371e2751805ee4b00`
+- Created: `2024-05-07T19:09:31Z`
+- Virtual Size: ~ 676.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1360,11 +1360,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ghostscript/10.0.0~dfsg-11+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glib2.0=2.74.6-2`
+### `dpkg` source package: `glib2.0=2.74.6-2+deb12u1`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.74.6-2`
+- `libglib2.0-0:amd64=2.74.6-2+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
@@ -1394,21 +1394,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.74.6-2
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6-2.dsc' glib2.0_2.74.6-2.dsc 3667 SHA256:3643bdb48d558e0cc8090dd29042182309595aa554dc24a319182c60a0c964e2
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6.orig-unicode-data.tar.xz' glib2.0_2.74.6.orig-unicode-data.tar.xz 267596 SHA256:dabcaff9298aa111a94e580561d2f29371f3e61b356c925ec5e0792df2b11ff2
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6.orig.tar.xz' glib2.0_2.74.6.orig.tar.xz 5217312 SHA256:069cf7e51cd261eb163aaf06c8d1754c6835f31252180aff5814e5afc7757fbc
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6-2.debian.tar.xz' glib2.0_2.74.6-2.debian.tar.xz 120348 SHA256:cfd5202bd548def51f5d3c59657eba8f62c88c7339db635445bf0325043c81e6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.74.6-2+deb12u1/
 
-- https://sources.debian.net/src/glib2.0/2.74.6-2/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.74.6-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.74.6-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.36-9+deb12u6`
 
