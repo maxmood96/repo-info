@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ecd09c36cfcd7e296ec6315c099106fb10a66387ec90b6e28f59407db55fa3b1`
-- Created: `2024-04-20T00:42:12.327598821Z`
-- Virtual Size: ~ 484.36 Mb  
+- Image ID: `sha256:daf9b13f41cf2f784aa05cfa7b5aef15f2fb6c825a77ced99adf66d036f22c15`
+- Created: `2024-05-10T17:35:03.904873341Z`
+- Virtual Size: ~ 484.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -1281,6 +1281,17 @@ Source:
 ```console
 $ dnf --quiet download --source --url vim-minimal-9.0.2153-1.amzn2.0.1
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/669ff2d454aeea49ac1e2cf618c2ad5780c0e03d128fff2da07afe59df49cf17/../../../../../blobstore/928d719f6dff2671e2d73f21a7445f177d046b892e8c9fcc4fcac965e8d334f5/vim-9.0.2153-1.amzn2.0.1.src.rpm
+```
+
+### `rpm` package: `which-2.20-7.amzn2.0.2.x86_64`
+
+Licenses (from `rpm --query`): GPLv3
+
+Source:
+
+```console
+$ dnf --quiet download --source --url which-2.20-7.amzn2.0.2
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/669ff2d454aeea49ac1e2cf618c2ad5780c0e03d128fff2da07afe59df49cf17/../../../../../blobstore/d9233994729fe316288057fcbaba747385093389b4e685842f38e6431e3bd096/which-2.20-7.amzn2.0.2.src.rpm
 ```
 
 ### `rpm` package: `xz-5.2.2-1.amzn2.0.3.x86_64`

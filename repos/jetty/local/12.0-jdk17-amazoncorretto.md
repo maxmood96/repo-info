@@ -1,10 +1,10 @@
-# `jetty:12.0.8-jdk17-amazoncorretto`
+# `jetty:12.0.9-jdk17-amazoncorretto`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3922603b8024efc8d5c7144c5ae7f16afa4cb2368714c3761adf0b2928ea6633`
-- Created: `2024-04-20T00:40:50.9004196Z`
-- Virtual Size: ~ 521.17 Mb  
+- Image ID: `sha256:166e04f6805be048d599c32ed6a0fcca0ec9472767ca15ce0fd94b2ce7d681ab`
+- Created: `2024-05-10T17:33:44.045361744Z`
+- Virtual Size: ~ 521.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,11 +13,11 @@
   - `PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto`
-  - `JETTY_VERSION=12.0.8`
+  - `JETTY_VERSION=12.0.9`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
   - `TMPDIR=/tmp/jetty`
-  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.8/jetty-home-12.0.8.tar.gz`
+  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.9/jetty-home-12.0.9.tar.gz`
   - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3`
 
 ## `rpm` (`.rpm`-based packages)
@@ -1281,6 +1281,17 @@ Source:
 ```console
 $ dnf --quiet download --source --url vim-minimal-9.0.2153-1.amzn2.0.1
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/669ff2d454aeea49ac1e2cf618c2ad5780c0e03d128fff2da07afe59df49cf17/../../../../../blobstore/928d719f6dff2671e2d73f21a7445f177d046b892e8c9fcc4fcac965e8d334f5/vim-9.0.2153-1.amzn2.0.1.src.rpm
+```
+
+### `rpm` package: `which-2.20-7.amzn2.0.2.x86_64`
+
+Licenses (from `rpm --query`): GPLv3
+
+Source:
+
+```console
+$ dnf --quiet download --source --url which-2.20-7.amzn2.0.2
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/669ff2d454aeea49ac1e2cf618c2ad5780c0e03d128fff2da07afe59df49cf17/../../../../../blobstore/d9233994729fe316288057fcbaba747385093389b4e685842f38e6431e3bd096/which-2.20-7.amzn2.0.2.src.rpm
 ```
 
 ### `rpm` package: `xz-5.2.2-1.amzn2.0.3.x86_64`
