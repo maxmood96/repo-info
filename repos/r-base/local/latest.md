@@ -127,19 +127,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.1
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.1.dsc' base-files_13.1.dsc 1101 SHA256:acc27525670d2fad95568c59eacfcae20a64d989179689caa2bb2d8e8652d5f3
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.1.tar.xz' base-files_13.1.tar.xz 66276 SHA256:bf2f7efac97ec0586d6fa75b499902f6ba4ffd4f9d1b6adc48ffd4425d4c06ca
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/13.1/
 
-- https://sources.debian.net/src/base-files/13.1/ (for browsing the source)
-- https://sources.debian.net/src/base-files/13.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/13.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.3`
 
@@ -440,21 +434,13 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.7.1-3
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.7.1-3.dsc' curl_8.7.1-3.dsc 3398 SHA256:e82aef61cc65e71af664eeeae48923ffad5897ec24effc9d6e431f4a6beac1b7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.7.1.orig.tar.gz' curl_8.7.1.orig.tar.gz 4462311 SHA256:f91249c87f68ea00cf27c44fdfa5a78423e41e71b7d408e5901a9896d905c495
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.7.1.orig.tar.gz.asc' curl_8.7.1.orig.tar.gz.asc 488 SHA256:f2abc438269f3fe37749941d91069f4972d339cae9b289e536257d90098dcd1f
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.7.1-3.debian.tar.xz' curl_8.7.1-3.debian.tar.xz 52812 SHA256:a320ce9ce6758b709f2c3aa0b3b9237f8c84761d1eddcfabea4719bf092b3cec
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.7.1-3/
 
-- https://sources.debian.net/src/curl/8.7.1-3/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.7.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.7.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-6`
 
@@ -2557,11 +2543,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ncurses=6.4+20240414-1
-'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.4%2b20240414-1.dsc' ncurses_6.4+20240414-1.dsc 3889 SHA256:f33a9002684cc5bc88ad4b202b425ceb9ba9414358715c2feaea6ddde80663cf
-'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.4%2b20240414.orig.tar.gz' ncurses_6.4+20240414.orig.tar.gz 3696524 SHA256:eedcf0ce69b9509faa1026b80c0eed9853677334a2ee8f64a8aa86f8ff0668a0
-'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.4%2b20240414.orig.tar.gz.asc' ncurses_6.4+20240414.orig.tar.gz.asc 729 SHA256:fe61c3fad9b2f19eb4c5915b9c496f2175a0ef9c073b9c6a6a8da598c5c5a259
-'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.4%2b20240414-1.debian.tar.xz' ncurses_6.4+20240414-1.debian.tar.xz 49808 SHA256:47d46679a3f526f7ee324d05c5dd2e1f648b0e3397bce56a36d8e29c5d85108c
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20240414-1.dsc' ncurses_6.4+20240414-1.dsc 3889 SHA256:f33a9002684cc5bc88ad4b202b425ceb9ba9414358715c2feaea6ddde80663cf
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20240414.orig.tar.gz' ncurses_6.4+20240414.orig.tar.gz 3696524 SHA256:eedcf0ce69b9509faa1026b80c0eed9853677334a2ee8f64a8aa86f8ff0668a0
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20240414.orig.tar.gz.asc' ncurses_6.4+20240414.orig.tar.gz.asc 729 SHA256:fe61c3fad9b2f19eb4c5915b9c496f2175a0ef9c073b9c6a6a8da598c5c5a259
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4%2b20240414-1.debian.tar.xz' ncurses_6.4+20240414-1.debian.tar.xz 49808 SHA256:47d46679a3f526f7ee324d05c5dd2e1f648b0e3397bce56a36d8e29c5d85108c
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/ncurses/6.4+20240414-1/ (for browsing the source)
+- https://sources.debian.net/src/ncurses/6.4+20240414-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ncurses/6.4+20240414-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nettle=3.9.1-2.2`
 
@@ -2809,20 +2801,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.52.1+ds-1
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.52.1%2bds-1.dsc' pango1.0_1.52.1+ds-1.dsc 3514 SHA256:2c39e0fe992c7e67d77d742c96ab0ec126cdff8850df676c6aa5ed1755af849f
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.52.1%2bds.orig.tar.xz' pango1.0_1.52.1+ds.orig.tar.xz 1738052 SHA256:12d67d8182cbb2ae427406df9bab5ce2ff5619102bf2a0fc6331d80a9914b139
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.52.1%2bds-1.debian.tar.xz' pango1.0_1.52.1+ds-1.debian.tar.xz 41632 SHA256:e50d3cab73429e619a3cf2c640c4503c4b75be6b9e6587212edc9668d4dede7c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.52.1+ds-1/
 
-- https://sources.debian.net/src/pango1.0/1.52.1+ds-1/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.52.1+ds-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.52.1+ds-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-7`
 
