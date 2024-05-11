@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:06cab63097924adc02db9787c7844c8bb5a798a714b2f7d497972c8f6cdfaf91`
-- Created: `2023-10-27T19:22:51Z`
-- Virtual Size: ~ 1.38 Gb  
+- Image ID: `sha256:6a872d471e983147e206d1e0ab16c589dd8afbd9ed6cf1cf9f63e126beb78128`
+- Created: `2024-05-08T18:58:43Z`
+- Virtual Size: ~ 1.39 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1039,9 +1039,10 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `libdw1:amd64=0.188-2.1`
 - `libelf1:amd64=0.188-2.1`
 
-Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libdw1/copyright`, `/usr/share/doc/libelf1/copyright`)
 
 - `BSD-2-clause`
 - `GFDL-1.3`
@@ -2284,6 +2285,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/lerc/4.0.0+ds-2/ (for browsing the source)
 - https://sources.debian.net/src/lerc/4.0.0+ds-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/lerc/4.0.0+ds-2/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `libabigail=2.2-2`
+
+Binary Packages:
+
+- `abigail-tools=2.2-2`
+- `libabigail0:amd64=2.2-2`
+
+Licenses: (parsed from: `/usr/share/doc/abigail-tools/copyright`, `/usr/share/doc/libabigail0/copyright`)
+
+- `Apache-2.0`
+- `Apache-2.0 + LLVM exception`
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libabigail=2.2-2
+'http://deb.debian.org/debian/pool/main/liba/libabigail/libabigail_2.2-2.dsc' libabigail_2.2-2.dsc 2285 SHA256:f59ee1d577559f213d5e90fd06e550973e6a15c34d4dc5014f454ec8dfddd27c
+'http://deb.debian.org/debian/pool/main/liba/libabigail/libabigail_2.2.orig.tar.xz' libabigail_2.2.orig.tar.xz 351078692 SHA256:764d3d811550fadcca1e86e48a09564d0037a5210f54b24780becfa59095116b
+'http://deb.debian.org/debian/pool/main/liba/libabigail/libabigail_2.2-2.debian.tar.xz' libabigail_2.2-2.debian.tar.xz 4136 SHA256:a922fd31ef5470e31cc8763a8586179fce84cdb00a3d2c351401c958bcdba653
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libabigail/2.2-2/ (for browsing the source)
+- https://sources.debian.net/src/libabigail/2.2-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libabigail/2.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.5.5-5`
 

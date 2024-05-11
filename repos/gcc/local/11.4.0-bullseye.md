@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9633d00d5eb78f913772b14d322ba6cfebe144dd0e002930b978a584f8fefc7b`
-- Created: `2023-10-27T19:22:51Z`
-- Virtual Size: ~ 1.22 Gb  
+- Image ID: `sha256:ea86b79b2e48ca3801a74d90b1fa0d25abb6c5fdb6172c8796c40d4d03b5cc70`
+- Created: `2024-05-08T18:58:43Z`
+- Virtual Size: ~ 1.23 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -956,9 +956,10 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `libdw1:amd64=0.183-1`
 - `libelf1:amd64=0.183-1`
 
-Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libdw1/copyright`, `/usr/share/doc/libelf1/copyright`)
 
 - `GPL-2`
 - `GPL-3`
@@ -2082,6 +2083,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/lcms2/2.12~rc1-2/ (for browsing the source)
 - https://sources.debian.net/src/lcms2/2.12~rc1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/lcms2/2.12~rc1-2/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `libabigail=1.8-1`
+
+Binary Packages:
+
+- `abigail-tools=1.8-1`
+- `libabigail0:amd64=1.8-1`
+
+Licenses: (parsed from: `/usr/share/doc/abigail-tools/copyright`, `/usr/share/doc/libabigail0/copyright`)
+
+- `GPL-2`
+- `GPL-2+`
+- `LGPL-3`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libabigail=1.8-1
+'http://deb.debian.org/debian/pool/main/liba/libabigail/libabigail_1.8-1.dsc' libabigail_1.8-1.dsc 2226 SHA256:c16a973287109be0007ee886aacf49354712f9200ea2fb831989e9a8996fbff0
+'http://deb.debian.org/debian/pool/main/liba/libabigail/libabigail_1.8.orig.tar.gz' libabigail_1.8.orig.tar.gz 217312652 SHA256:1cbf260b894ccafc61b2673ba30c020c3f67dbba9dfa88dca3935dff661d665c
+'http://deb.debian.org/debian/pool/main/liba/libabigail/libabigail_1.8-1.debian.tar.xz' libabigail_1.8-1.debian.tar.xz 3688 SHA256:3d4f8d810c3762fcc56337bc2a6611d1b965dff7b3ec7fe3d44389702062ff4f
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libabigail/1.8-1/ (for browsing the source)
+- https://sources.debian.net/src/libabigail/1.8-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libabigail/1.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.5.3-7.1`
 
