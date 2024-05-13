@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e1a05621286bd1135c6ee687b2eb1a9ae3d6cfc66b99219555f36b4d1cb88edc`
+- Image ID: `sha256:afbd3b51c2a9248ebbe471132f8a5e7968ba3dea9acea6e8c088e48a0d12fad4`
 - Created: `2024-03-06T16:28:12Z`
-- Virtual Size: ~ 102.60 Mb  
+- Virtual Size: ~ 102.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.18`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.18.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.18.tar.xz.asc`
-  - `PHP_SHA256=44b306fc021e56441f691da6c3108788bd9e450f293b3bc70fcd64b08dd41a50`
+  - `PHP_VERSION=8.2.19`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.19.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.19.tar.xz.asc`
+  - `PHP_SHA256=aecd63f3ebea6768997f5c4fccd98acbf897762ed5fc25300e846197a9485c13`
   - `DRUPAL_VERSION=7.100`
   - `DRUPAL_URL=https://ftp.drupal.org/files/projects/drupal-7.100.tar.gz`
   - `DRUPAL_MD5=e1e0963944555bee14bf54af5467192a`
