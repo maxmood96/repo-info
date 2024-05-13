@@ -1041,14 +1041,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.2.dsc' glib2.0_2.72.4-0ubuntu2.2.dsc 3670 SHA512:f214b129a5ffafd2ed8a1f97fcef5f7081973aff3edef647a947b3ed5e8efc606cb4e085012033f948bee7c51c2cc99f32b91bd552de8508438796f95f42fdba
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4.orig.tar.xz' glib2.0_2.72.4.orig.tar.xz 4884256 SHA512:b4e2e0985e2184ee9656c4f1b4e15d8d1264f3d23d31349bc43d92e8432cffa48e1685c40517efb08dc5b57b8285acf65f2747deeb50e50d9cacec7160e7edf8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.2.debian.tar.xz' glib2.0_2.72.4-0ubuntu2.2.debian.tar.xz 128540 SHA512:d1f23d47687f1d5689a44d0c43a70d4a35d7a719dc3fa6b0ac516f0b1e4e07ee9be37dcf3671e51387c241b1abc7034f9959ef8ca85c249bcc9a541e93c88cc0
-```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.7`
 
