@@ -1,7 +1,7 @@
 ## `tomcat:latest`
 
 ```console
-$ docker pull tomcat@sha256:cb5764ebc51e56318773e75f7dea0bf3860dd505046f9e83e01f97b8273b9711
+$ docker pull tomcat@sha256:077388ab6bf11b4a9565877eb3a39a20c73ca70f21a42a9d82d2348ad3535e1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -126,14 +126,14 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull tomcat@sha256:1b480d9a9e5004c873b30e1522ed7fa715ba6f55e7a67ca1e5b721cc581aa86d
+$ docker pull tomcat@sha256:449f04fad5e05fbdda3e6917a2a360421d4ff071daedd5e46976dd5f67f2c072
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **217.2 MB (217234737 bytes)**  
+-	Total Size: **217.2 MB (217249732 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e1a739aac8b229469e9279413a3271bad860430ce3cfc3b2182db70be4122bfb`
+-	Image ID: `sha256:fcc3a8b5b6819e4c3c223c1511f4b7f4982ae9a43c41f8fc12a8fa05aecdbdca`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -185,19 +185,19 @@ ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
 ENV GPG_KEYS=5C3C5F3E314C866292F359A8F3AD5C94A67F707E A9C5DF4D22E99998D9875A5110C01C5A2F6059E7
 # Thu, 02 May 2024 07:34:14 GMT
 ENV TOMCAT_MAJOR=10
-# Thu, 02 May 2024 07:34:14 GMT
-ENV TOMCAT_VERSION=10.1.23
-# Thu, 02 May 2024 07:34:14 GMT
-ENV TOMCAT_SHA512=d2d65818e02b1a8b570a761d79bd32a2d578ce140ea0bd62d03aedc10a8c13cb203926e4d81fac0c54ba27e1f9ecbb4e4f09d50e33ea9ca4cdc6ed1848fa6292
-# Thu, 02 May 2024 07:34:38 GMT
+# Mon, 13 May 2024 22:24:01 GMT
+ENV TOMCAT_VERSION=10.1.24
+# Mon, 13 May 2024 22:24:01 GMT
+ENV TOMCAT_SHA512=793802f5cbbc0c4f722d3c63b52323df7ca37846445c254edcaaa7702fd71cf72aa9506b2b2c59322b9635e25f69913aa1b223098d9b4f1426f5f5447dd78ff3
+# Mon, 13 May 2024 22:25:54 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://dlcdn.apache.org/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 1777 logs temp work; 		catalina.sh version
-# Thu, 02 May 2024 07:34:39 GMT
+# Mon, 13 May 2024 22:25:55 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 02 May 2024 07:34:39 GMT
+# Mon, 13 May 2024 22:25:56 GMT
 EXPOSE 8080
-# Thu, 02 May 2024 07:34:39 GMT
+# Mon, 13 May 2024 22:25:56 GMT
 ENTRYPOINT []
-# Thu, 02 May 2024 07:34:39 GMT
+# Mon, 13 May 2024 22:25:56 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -226,13 +226,13 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 02 May 2024 07:42:30 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be1994dfde5fec09a785a356383deaba1049fe7a1360678969010ad58a967054`  
-		Last Modified: Thu, 02 May 2024 07:43:25 GMT  
-		Size: 13.3 MB (13301330 bytes)  
+	-	`sha256:abed2bf1229c1cf715066b79fad7aa998b63935f3427eeda95c1d7df3fba2d41`  
+		Last Modified: Mon, 13 May 2024 22:29:31 GMT  
+		Size: 13.3 MB (13316323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87762142831b2ebec38c2743c344dcbaf0279a8e7d96a71ee703716499f056b0`  
-		Last Modified: Thu, 02 May 2024 07:43:23 GMT  
-		Size: 129.0 B  
+	-	`sha256:456c7f430113cc2d1d5d78a4676624bfc527c28bece10abb3e232a83d32b29db`  
+		Last Modified: Mon, 13 May 2024 22:29:30 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `tomcat:latest` - linux; ppc64le
