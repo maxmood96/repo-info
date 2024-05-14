@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:50bf811886044bd32e1994444fd79564a3fa1239319d6dda36ff9b3885a06e57`
-- Created: `2024-05-07T21:29:49.529427141Z`
+- Image ID: `sha256:8b3f5f00d3732c60e29deecefbfe7c82cfc913e6f94af452d281cfed290a44e2`
+- Created: `2024-05-14T02:50:28.290803599Z`
 - Virtual Size: ~ 846.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -945,25 +945,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/git/1:2.39.2-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/git/1:2.39.2-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.36-9+deb12u6`
+### `dpkg` source package: `glibc=2.36-9+deb12u7`
 
 Binary Packages:
 
-- `libc-bin=2.36-9+deb12u6`
-- `libc6:amd64=2.36-9+deb12u6`
+- `libc-bin=2.36-9+deb12u7`
+- `libc6:amd64=2.36-9+deb12u7`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris glibc=2.36-9+deb12u7
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u7.dsc' glibc_2.36-9+deb12u7.dsc 9761 SHA256:b5e615ea887acb1f16c4fdc83bb50c6ca9d38cde038caa9fe87b26c03076b772
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36.orig.tar.xz' glibc_2.36.orig.tar.xz 19363988 SHA256:a543c02070d46ccaf866957efd13f10c924daa74c86a90a0254db09a92a708ee
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u7.debian.tar.xz' glibc_2.36-9+deb12u7.debian.tar.xz 862848 SHA256:a9e0dcec7cd82c81d98f4d0652e9c576d5d4801ef8cfb8dfc06277a8977cb5ac
+```
 
-- http://snapshot.debian.org/package/glibc/2.36-9+deb12u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/glibc/2.36-9+deb12u7/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.36-9+deb12u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.36-9+deb12u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg1-1.1`
 
