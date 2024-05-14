@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:93c622fd9ccc8e32b501763e88f45ac36e7493576e55bed376aa0780253e48d0`
+- Image ID: `sha256:68f76a3c59f8bf15e7237703aa474526d67514e250a4faeade6eacab22da4619`
 - Created: `2024-05-07T19:09:31Z`
-- Virtual Size: ~ 688.87 Mb  
+- Virtual Size: ~ 688.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.6`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.6.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.6.tar.xz.asc`
-  - `PHP_SHA256=53c8386b2123af97626d3438b3e4058e0c5914cb74b048a6676c57ac647f5eae`
+  - `PHP_VERSION=8.3.7`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.7.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.7.tar.xz.asc`
+  - `PHP_SHA256=d53433c1ca6b2c8741afa7c524272e6806c1e895e5912a058494fea89988570a`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -783,11 +783,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/dash/0.5.12-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/dash/0.5.12-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `dav1d=1.0.0-2`
+### `dpkg` source package: `dav1d=1.0.0-2+deb12u1`
 
 Binary Packages:
 
-- `libdav1d6:amd64=1.0.0-2`
+- `libdav1d6:amd64=1.0.0-2+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libdav1d6/copyright`)
 
@@ -798,18 +798,18 @@ Licenses: (parsed from: `/usr/share/doc/libdav1d6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dav1d=1.0.0-2
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.0.0-2.dsc' dav1d_1.0.0-2.dsc 2307 SHA256:7c76af118b5bc8c77bc3e9eca81dea42b0948c4452540e49eb2d0a02ae2758a4
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.0.0.orig.tar.xz' dav1d_1.0.0.orig.tar.xz 810116 SHA256:51737db7e4897e599684f873a4725176dd3c779e639411d7c4fce134bb5ebb82
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.0.0.orig.tar.xz.asc' dav1d_1.0.0.orig.tar.xz.asc 195 SHA256:208004c32681803aaaf41908d0ec5efe4ee0c20b4ea6258a7ddbf2291925c279
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.0.0-2.debian.tar.xz' dav1d_1.0.0-2.debian.tar.xz 7980 SHA256:e8c84eccfd20b0eb4ecb37f844714ee4dd9b8b3dc7ff58ccbb4fa1349a41c555
+$ apt-get source -qq --print-uris dav1d=1.0.0-2+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/d/dav1d/dav1d_1.0.0-2%2bdeb12u1.dsc' dav1d_1.0.0-2+deb12u1.dsc 2339 SHA256:590dba7fc0ce89cac8bdfbd2cd54594d65dff8b0b4becad1f558e033dd506cb4
+'http://deb.debian.org/debian-security/pool/updates/main/d/dav1d/dav1d_1.0.0.orig.tar.xz' dav1d_1.0.0.orig.tar.xz 810116 SHA256:51737db7e4897e599684f873a4725176dd3c779e639411d7c4fce134bb5ebb82
+'http://deb.debian.org/debian-security/pool/updates/main/d/dav1d/dav1d_1.0.0.orig.tar.xz.asc' dav1d_1.0.0.orig.tar.xz.asc 195 SHA256:208004c32681803aaaf41908d0ec5efe4ee0c20b4ea6258a7ddbf2291925c279
+'http://deb.debian.org/debian-security/pool/updates/main/d/dav1d/dav1d_1.0.0-2%2bdeb12u1.debian.tar.xz' dav1d_1.0.0-2+deb12u1.debian.tar.xz 8908 SHA256:ae53e2bda2a18275cc66570194fced9b9681df2b3b8e041586a26a59d69a727e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/dav1d/1.0.0-2/ (for browsing the source)
-- https://sources.debian.net/src/dav1d/1.0.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dav1d/1.0.0-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/dav1d/1.0.0-2+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/dav1d/1.0.0-2+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dav1d/1.0.0-2+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg2-1`
 
@@ -1459,11 +1459,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ghostscript/10.0.0~dfsg-11+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glib2.0=2.74.6-2+deb12u1`
+### `dpkg` source package: `glib2.0=2.74.6-2+deb12u2`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.74.6-2+deb12u1`
+- `libglib2.0-0:amd64=2.74.6-2+deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
@@ -1493,13 +1493,21 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris glib2.0=2.74.6-2+deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.74.6-2%2bdeb12u2.dsc' glib2.0_2.74.6-2+deb12u2.dsc 3604 SHA256:3db85fa7cf1af9aec5ebce7b756a9e1c7f19419117f50066ce45493ff1576c74
+'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.74.6.orig-unicode-data.tar.xz' glib2.0_2.74.6.orig-unicode-data.tar.xz 267596 SHA256:dabcaff9298aa111a94e580561d2f29371f3e61b356c925ec5e0792df2b11ff2
+'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.74.6.orig.tar.xz' glib2.0_2.74.6.orig.tar.xz 5217312 SHA256:069cf7e51cd261eb163aaf06c8d1754c6835f31252180aff5814e5afc7757fbc
+'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.74.6-2%2bdeb12u2.debian.tar.xz' glib2.0_2.74.6-2+deb12u2.debian.tar.xz 138916 SHA256:3a8ae0466f928daa5477b3bd61599ffb16e51070cdc17d131337fc324c68f22f
+```
 
-- http://snapshot.debian.org/package/glib2.0/2.74.6-2+deb12u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/glib2.0/2.74.6-2+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/glib2.0/2.74.6-2+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glib2.0/2.74.6-2+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.36-9+deb12u6`
 

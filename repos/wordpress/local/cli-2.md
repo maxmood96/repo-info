@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:afa5f6896bd626a76d67eca556be0f5e1b93df32e3d59e4e40c6906d11c9f9b6`
+- Image ID: `sha256:565379e8a9ac7c288e41b73f30880f44c2a568eabcbae2ee9b650b622122fb37`
 - Created: `2024-03-11T23:23:48Z`
-- Virtual Size: ~ 216.20 Mb  
+- Virtual Size: ~ 216.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.18`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.18.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.18.tar.xz.asc`
-  - `PHP_SHA256=44b306fc021e56441f691da6c3108788bd9e450f293b3bc70fcd64b08dd41a50`
+  - `PHP_VERSION=8.2.19`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.19.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.19.tar.xz.asc`
+  - `PHP_SHA256=aecd63f3ebea6768997f5c4fccd98acbf897762ed5fc25300e846197a9485c13`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.10.0`
   - `WORDPRESS_CLI_SHA512=c243265be520cd906f6dac767b56bb4e7dae9b6308db32b7e45ed8adbacad97bce987fd69b019d25478f394f0082404a0f44a93416f5e4d943cb32fd08f1feac`
@@ -387,16 +387,16 @@ MIT
 ### `apk` package: `less`
 
 ```console
-less-643-r1 description:
+less-643-r2 description:
 File pager
 
-less-643-r1 webpage:
+less-643-r2 webpage:
 https://www.greenwoodsoftware.com/less/
 
-less-643-r1 installed size:
+less-643-r2 installed size:
 216 KiB
 
-less-643-r1 license:
+less-643-r2 license:
 GPL-3.0-or-later OR BSD-2-Clause
 
 ```
