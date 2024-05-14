@@ -1,7 +1,7 @@
 ## `buildpack-deps:bookworm-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:63b1ea8df771d7003dadaf7d94e48980c82d729ac855acd60e3f2dbe4a7ad1af
+$ docker pull buildpack-deps@sha256:7721303986059016d29137d84a436e39098f588bd1e6b801aa202b266a12e4f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -208,39 +208,39 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 ### `buildpack-deps:bookworm-scm` - linux; mips64le
 
 ```console
-$ docker pull buildpack-deps@sha256:41732c9f8ae6f0f7cbe553b4f2d560bcce79f6d56a3db148c0ad63bf8992767c
+$ docker pull buildpack-deps@sha256:8cf747af094998ee527bd33e348e9ef1c22c349757f3cde7ea7a0fe0a5b60fa3
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.0 MB (135989379 bytes)**  
+-	Total Size: **136.0 MB (135989013 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10874e21a96f142a1531e93554c00a7119054847682c11d9c32b00eeea7c5609`
+-	Image ID: `sha256:1510421a679e334d18d89b5e06c07eb5401fa8dccbc83c12a27396d10b0950e9`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 24 Apr 2024 03:13:30 GMT
-ADD file:bd5e48bc3973f1ba0b2958f5feb2ef619d1da33cebe3daa160741598f3a64020 in / 
-# Wed, 24 Apr 2024 03:13:35 GMT
+# Tue, 14 May 2024 01:10:23 GMT
+ADD file:95717416297a85e0b38d171b3bf8d2b48e941bd725e476ee4f88033fed4ffee2 in / 
+# Tue, 14 May 2024 01:10:29 GMT
 CMD ["bash"]
-# Wed, 24 Apr 2024 03:54:35 GMT
+# Tue, 14 May 2024 10:59:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 24 Apr 2024 03:56:12 GMT
+# Tue, 14 May 2024 11:01:40 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:128b5268b494ed46f2601900fdc8201341f67542053dd84964164d230083ab26`  
-		Last Modified: Wed, 24 Apr 2024 03:24:37 GMT  
-		Size: 49.6 MB (49582786 bytes)  
+	-	`sha256:0fd7e383bbed45ca14b36b1e22f1591a0b2bddc34b2b6e2b34d4cd54b528e75f`  
+		Last Modified: Tue, 14 May 2024 01:21:36 GMT  
+		Size: 49.6 MB (49582338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1db7c75a6accf74d8a7a5baea9ca05e0af438c130a33d48ca96a5c26a8fd29ff`  
-		Last Modified: Wed, 24 Apr 2024 04:30:27 GMT  
-		Size: 23.4 MB (23438128 bytes)  
+	-	`sha256:e5ce1d8a69726b5d3330ae01a246efbb18fb60d54fb0d08b741a960e37d8b115`  
+		Last Modified: Tue, 14 May 2024 11:37:05 GMT  
+		Size: 23.4 MB (23438164 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e32516c9efb0754d31d8a9019f45fa9c88d3bdc96aca1c8a6cced34b949b6b7`  
-		Last Modified: Wed, 24 Apr 2024 04:31:20 GMT  
-		Size: 63.0 MB (62968465 bytes)  
+	-	`sha256:3e3667485c8dcf18ff23740eff9103874ec0aba9a4d45bade2f98f9f85fe0f63`  
+		Last Modified: Tue, 14 May 2024 11:37:57 GMT  
+		Size: 63.0 MB (62968511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:bookworm-scm` - linux; ppc64le
