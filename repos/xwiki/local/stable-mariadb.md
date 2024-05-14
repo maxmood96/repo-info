@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:aa5253242f552a013a22df93748baf5d4b24e0e6ecd3441ef3b1b84d77fac2fa`
-- Created: `2024-04-30T13:35:01Z`
+- Image ID: `sha256:a069fc3cb6e11cd28e3ebab38ee390c2af31939d69e2e5bd5cfdba60744396af`
+- Created: `2024-05-13T10:58:26Z`
 - Virtual Size: ~ 1.15 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -23,9 +23,9 @@
   - `TOMCAT_MAJOR=9`
   - `TOMCAT_VERSION=9.0.89`
   - `TOMCAT_SHA512=aaa2851bdc7a2476b6793e95174965c1c861531f161d8a138e87f8532b1af4d4b3d92dd1ae890614a692e5f13fb2e6946a1ada888f21e9d7db1964616b4181f0`
-  - `XWIKI_VERSION=16.3.0`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.3.0`
-  - `XWIKI_DOWNLOAD_SHA256=3d75d5d495ed89af2e76a6058fa347094be0efd4862f88814640cc18ef3e33ba`
+  - `XWIKI_VERSION=16.3.1`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.3.1`
+  - `XWIKI_DOWNLOAD_SHA256=3c39dc25b4ba180ab25e82f395a5282ef5ae589c65e45e0bd1319494d1eae4f4`
   - `MARIADB_JDBC_VERSION=3.3.3`
   - `MARIADB_JDBC_SHA256=89d71a6ffd800c032b23e588108688d391631f0aba962ba2381cc82cb111b796`
   - `MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.3.3`
@@ -894,11 +894,11 @@ $ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.debian.tar.xz 575908 SHA512:d1bf37d9af699430d3b107d0966194b20aef22654337efdb99971b270609785020dd1f04ce6a0f3f3eb0dbad704b46e9d9e5dfa6a497e98c78a867f5bc290038
 ```
 
-### `dpkg` source package: `glib2.0=2.72.4-0ubuntu2.2`
+### `dpkg` source package: `glib2.0=2.72.4-0ubuntu2.3`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.72.4-0ubuntu2.2`
+- `libglib2.0-0:amd64=2.72.4-0ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
@@ -906,9 +906,14 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 - `GPL-2+`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.3.dsc' glib2.0_2.72.4-0ubuntu2.3.dsc 3670 SHA512:bea1f5359cdfc0cf6403812b87263221523a54e50726fa7a2232e08f0eda35e3e23c6b98d1a978bfe141fc9a50732a335e5f7570489dafd042038f4ed2534f1e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4.orig.tar.xz' glib2.0_2.72.4.orig.tar.xz 4884256 SHA512:b4e2e0985e2184ee9656c4f1b4e15d8d1264f3d23d31349bc43d92e8432cffa48e1685c40517efb08dc5b57b8285acf65f2747deeb50e50d9cacec7160e7edf8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.3.debian.tar.xz' glib2.0_2.72.4-0ubuntu2.3.debian.tar.xz 146736 SHA512:0c94042cdadf2ead450f5bc97e06fd503e4954488d423f08280a050098d3a7a4203640f7e677d2d567d5d44b73ec94d297d77ffb8d3452bb947b78c87c9d8221
+```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.7`
 
@@ -3354,11 +3359,11 @@ $ apt-get source -qq --print-uris pixman=0.40.0-1ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.40.0-1ubuntu0.22.04.1.diff.gz' pixman_0.40.0-1ubuntu0.22.04.1.diff.gz 327740 SHA512:68949ad2589a7ae9fbe217a3d7fc58894d5a1b4bc6e219840b8620141fa2240b44e6a393bf847bfd18f5fcab2c6c6f143273936b076c29e1f979052b1275cb8e
 ```
 
-### `dpkg` source package: `poppler=22.02.0-2ubuntu0.3`
+### `dpkg` source package: `poppler=22.02.0-2ubuntu0.4`
 
 Binary Packages:
 
-- `libpoppler118:amd64=22.02.0-2ubuntu0.3`
+- `libpoppler118:amd64=22.02.0-2ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler118/copyright`)
 
@@ -3369,10 +3374,10 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler118/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.3
-'http://security.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.3.dsc' poppler_22.02.0-2ubuntu0.3.dsc 3230 SHA512:78fcf2ace95c4b8707f61b2349a4d713574ed7ec20914730f7d57f996c29db8f948e838cce18cc0ec08cf904b18b2fb3e20face50234e2d35c441021832b0a1b
-'http://security.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
-'http://security.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.3.debian.tar.xz' poppler_22.02.0-2ubuntu0.3.debian.tar.xz 41588 SHA512:8e2bf94939f6a74db240f3fe2cc6788c6943c09eed69b9d53d0541937b0cca9e123e07942b60a9771edfd571d4f2630469a1297d338eceb88a1e9e6739dd9e6f
+$ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.4.dsc' poppler_22.02.0-2ubuntu0.4.dsc 3393 SHA512:c9f03d294ea673ac41dc990c1ee674b1778c5ce13ac2391cdb861de8bcbef7286a9df60cfbd3e8fad090a9fc2626a3696fbe70ef408b5d5fb484f6f8c7746bd2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.4.debian.tar.xz' poppler_22.02.0-2ubuntu0.4.debian.tar.xz 42228 SHA512:8d9aa85ff7355b198c37e9a8cadd51303ef8596e3bc5509b153807a6fdbb64d60230083e162f4b0a1cec34ef7497c572447b7f7289f0de98d1c3b13238edff70
 ```
 
 ### `dpkg` source package: `procps=2:3.3.17-6ubuntu2.1`
