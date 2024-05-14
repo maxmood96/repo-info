@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a28665931843430475844c076abd4f2c44427499e236fd9cb182e53b9b2aecf9`
-- Created: `2024-04-24T04:13:53.324871629Z`
-- Virtual Size: ~ 147.80 Mb  
+- Image ID: `sha256:5bc71f9e4bcb7ede51c9b809fada6708d652cf5ecdbf1cb837c36c1aa3b154a0`
+- Created: `2024-05-14T02:57:37.000018583Z`
+- Virtual Size: ~ 147.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -675,25 +675,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-8/8.3.0-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-8/8.3.0-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.28-10+deb10u2`
+### `dpkg` source package: `glibc=2.28-10+deb10u3`
 
 Binary Packages:
 
-- `libc-bin=2.28-10+deb10u2`
-- `libc6:amd64=2.28-10+deb10u2`
+- `libc-bin=2.28-10+deb10u3`
+- `libc6:amd64=2.28-10+deb10u3`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris glibc=2.28-10+deb10u3
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.28-10%2bdeb10u3.dsc' glibc_2.28-10+deb10u3.dsc 8921 SHA256:731d162af297ab2f042e73b0910388a84214e48b68766ded409e6c391ca5e9c4
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.28.orig.tar.xz' glibc_2.28.orig.tar.xz 17061292 SHA256:53d3c1c7bff0fb25d4c7874bf13435dc44a71fd7dd5ffc9bfdcb513cdfc36854
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.28-10%2bdeb10u3.debian.tar.xz' glibc_2.28-10+deb10u3.debian.tar.xz 924552 SHA256:552ddba370dfe93ae9360b17ad4772b9f72b43223bf5e40a651797a2cbebadc2
+```
 
-- http://snapshot.debian.org/package/glibc/2.28-10+deb10u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/glibc/2.28-10+deb10u3/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.28-10+deb10u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.28-10+deb10u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-4+deb10u1`
 
@@ -1712,11 +1719,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.4.1-1+deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.4.1-1+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nghttp2=1.36.0-2+deb10u2`
+### `dpkg` source package: `nghttp2=1.36.0-2+deb10u3`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.36.0-2+deb10u2`
+- `libnghttp2-14:amd64=1.36.0-2+deb10u3`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -1728,13 +1735,20 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris nghttp2=1.36.0-2+deb10u3
+'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.36.0-2%2bdeb10u3.dsc' nghttp2_1.36.0-2+deb10u3.dsc 2576 SHA256:f6ab7fca79781b13788a96f3aeeaab0610f903bcd022939cde0d6670ce1c486b
+'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.36.0.orig.tar.bz2' nghttp2_1.36.0.orig.tar.bz2 1919021 SHA256:16a734d7414062911e23989e243ca76e7722cb3c60273723e3e3ae4c21e71ceb
+'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.36.0-2%2bdeb10u3.debian.tar.xz' nghttp2_1.36.0-2+deb10u3.debian.tar.xz 22668 SHA256:49f33901378a63f365dccd5cd8e6dd795835f17b2aff67ef4d72aa2402ad94c7
+```
 
-- http://snapshot.debian.org/package/nghttp2/1.36.0-2+deb10u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/nghttp2/1.36.0-2+deb10u3/ (for browsing the source)
+- https://sources.debian.net/src/nghttp2/1.36.0-2+deb10u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nghttp2/1.36.0-2+deb10u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-1`
 
