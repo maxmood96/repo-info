@@ -3,7 +3,9 @@
 # Tags of `storm`
 
 -	[`storm:2.6`](#storm26)
+-	[`storm:2.6-jre17`](#storm26-jre17)
 -	[`storm:2.6.2`](#storm262)
+-	[`storm:2.6.2-jre17`](#storm262-jre17)
 -	[`storm:latest`](#stormlatest)
 
 ## `storm:2.6`
@@ -223,6 +225,10 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `storm:2.6-jre17`
+
+**does not exist** (yet?)
+
 ## `storm:2.6.2`
 
 ```console
@@ -439,6 +445,10 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Thu, 02 May 2024 07:03:23 GMT  
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `storm:2.6.2-jre17`
+
+**does not exist** (yet?)
 
 ## `storm:latest`
 
