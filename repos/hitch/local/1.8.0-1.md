@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:917a5dfd2ff45d852d092bdcae994cfc659bfbb15885ec01a010ab066d6f021c`
-- Created: `2024-04-24T07:52:08.594076479Z`
+- Image ID: `sha256:2cd0a61d02afff2afd5a9e8290f61e5048bfe598f59a3418e5f24be0d868237c`
+- Created: `2024-05-14T05:23:11.666992342Z`
 - Virtual Size: ~ 85.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -630,25 +630,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-9/9.3.0-22/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-9/9.3.0-22/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.31-13+deb11u9`
+### `dpkg` source package: `glibc=2.31-13+deb11u10`
 
 Binary Packages:
 
-- `libc-bin=2.31-13+deb11u9`
-- `libc6:amd64=2.31-13+deb11u9`
+- `libc-bin=2.31-13+deb11u10`
+- `libc6:amd64=2.31-13+deb11u10`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris glibc=2.31-13+deb11u10
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u10.dsc' glibc_2.31-13+deb11u10.dsc 8351 SHA256:44074406fbc83225b0c498b95cc8cd50b98be4007048082ba5b07e94f3735c6e
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u10.debian.tar.xz' glibc_2.31-13+deb11u10.debian.tar.xz 965724 SHA256:540a944da49803b9d8b5053a0390bc476688761168a1917ad1a22b6969182eaa
+```
 
-- http://snapshot.debian.org/package/glibc/2.31-13+deb11u9/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/glibc/2.31-13+deb11u10/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.31-13+deb11u10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.31-13+deb11u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1+deb11u1`
 
