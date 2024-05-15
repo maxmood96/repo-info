@@ -18,13 +18,17 @@
 -	[`sapmachine:11-jdk-ubuntu-jammy`](#sapmachine11-jdk-ubuntu-jammy)
 -	[`sapmachine:11-jdk-ubuntu-noble`](#sapmachine11-jdk-ubuntu-noble)
 -	[`sapmachine:11-jre-headless-ubuntu`](#sapmachine11-jre-headless-ubuntu)
+-	[`sapmachine:11-jre-headless-ubuntu-20.04`](#sapmachine11-jre-headless-ubuntu-2004)
 -	[`sapmachine:11-jre-headless-ubuntu-22.04`](#sapmachine11-jre-headless-ubuntu-2204)
 -	[`sapmachine:11-jre-headless-ubuntu-24.04`](#sapmachine11-jre-headless-ubuntu-2404)
+-	[`sapmachine:11-jre-headless-ubuntu-focal`](#sapmachine11-jre-headless-ubuntu-focal)
 -	[`sapmachine:11-jre-headless-ubuntu-jammy`](#sapmachine11-jre-headless-ubuntu-jammy)
 -	[`sapmachine:11-jre-headless-ubuntu-noble`](#sapmachine11-jre-headless-ubuntu-noble)
 -	[`sapmachine:11-jre-ubuntu`](#sapmachine11-jre-ubuntu)
+-	[`sapmachine:11-jre-ubuntu-20.04`](#sapmachine11-jre-ubuntu-2004)
 -	[`sapmachine:11-jre-ubuntu-22.04`](#sapmachine11-jre-ubuntu-2204)
 -	[`sapmachine:11-jre-ubuntu-24.04`](#sapmachine11-jre-ubuntu-2404)
+-	[`sapmachine:11-jre-ubuntu-focal`](#sapmachine11-jre-ubuntu-focal)
 -	[`sapmachine:11-jre-ubuntu-jammy`](#sapmachine11-jre-ubuntu-jammy)
 -	[`sapmachine:11-jre-ubuntu-noble`](#sapmachine11-jre-ubuntu-noble)
 -	[`sapmachine:11-ubuntu-20.04`](#sapmachine11-ubuntu-2004)
@@ -49,13 +53,17 @@
 -	[`sapmachine:11.0.23-jdk-ubuntu-jammy`](#sapmachine11023-jdk-ubuntu-jammy)
 -	[`sapmachine:11.0.23-jdk-ubuntu-noble`](#sapmachine11023-jdk-ubuntu-noble)
 -	[`sapmachine:11.0.23-jre-headless-ubuntu`](#sapmachine11023-jre-headless-ubuntu)
+-	[`sapmachine:11.0.23-jre-headless-ubuntu-20.04`](#sapmachine11023-jre-headless-ubuntu-2004)
 -	[`sapmachine:11.0.23-jre-headless-ubuntu-22.04`](#sapmachine11023-jre-headless-ubuntu-2204)
 -	[`sapmachine:11.0.23-jre-headless-ubuntu-24.04`](#sapmachine11023-jre-headless-ubuntu-2404)
+-	[`sapmachine:11.0.23-jre-headless-ubuntu-focal`](#sapmachine11023-jre-headless-ubuntu-focal)
 -	[`sapmachine:11.0.23-jre-headless-ubuntu-jammy`](#sapmachine11023-jre-headless-ubuntu-jammy)
 -	[`sapmachine:11.0.23-jre-headless-ubuntu-noble`](#sapmachine11023-jre-headless-ubuntu-noble)
 -	[`sapmachine:11.0.23-jre-ubuntu`](#sapmachine11023-jre-ubuntu)
+-	[`sapmachine:11.0.23-jre-ubuntu-20.04`](#sapmachine11023-jre-ubuntu-2004)
 -	[`sapmachine:11.0.23-jre-ubuntu-22.04`](#sapmachine11023-jre-ubuntu-2204)
 -	[`sapmachine:11.0.23-jre-ubuntu-24.04`](#sapmachine11023-jre-ubuntu-2404)
+-	[`sapmachine:11.0.23-jre-ubuntu-focal`](#sapmachine11023-jre-ubuntu-focal)
 -	[`sapmachine:11.0.23-jre-ubuntu-jammy`](#sapmachine11023-jre-ubuntu-jammy)
 -	[`sapmachine:11.0.23-jre-ubuntu-noble`](#sapmachine11023-jre-ubuntu-noble)
 -	[`sapmachine:11.0.23-ubuntu-20.04`](#sapmachine11023-ubuntu-2004)
@@ -80,13 +88,17 @@
 -	[`sapmachine:17-jdk-ubuntu-jammy`](#sapmachine17-jdk-ubuntu-jammy)
 -	[`sapmachine:17-jdk-ubuntu-noble`](#sapmachine17-jdk-ubuntu-noble)
 -	[`sapmachine:17-jre-headless-ubuntu`](#sapmachine17-jre-headless-ubuntu)
+-	[`sapmachine:17-jre-headless-ubuntu-20.04`](#sapmachine17-jre-headless-ubuntu-2004)
 -	[`sapmachine:17-jre-headless-ubuntu-22.04`](#sapmachine17-jre-headless-ubuntu-2204)
 -	[`sapmachine:17-jre-headless-ubuntu-24.04`](#sapmachine17-jre-headless-ubuntu-2404)
+-	[`sapmachine:17-jre-headless-ubuntu-focal`](#sapmachine17-jre-headless-ubuntu-focal)
 -	[`sapmachine:17-jre-headless-ubuntu-jammy`](#sapmachine17-jre-headless-ubuntu-jammy)
 -	[`sapmachine:17-jre-headless-ubuntu-noble`](#sapmachine17-jre-headless-ubuntu-noble)
 -	[`sapmachine:17-jre-ubuntu`](#sapmachine17-jre-ubuntu)
+-	[`sapmachine:17-jre-ubuntu-20.04`](#sapmachine17-jre-ubuntu-2004)
 -	[`sapmachine:17-jre-ubuntu-22.04`](#sapmachine17-jre-ubuntu-2204)
 -	[`sapmachine:17-jre-ubuntu-24.04`](#sapmachine17-jre-ubuntu-2404)
+-	[`sapmachine:17-jre-ubuntu-focal`](#sapmachine17-jre-ubuntu-focal)
 -	[`sapmachine:17-jre-ubuntu-jammy`](#sapmachine17-jre-ubuntu-jammy)
 -	[`sapmachine:17-jre-ubuntu-noble`](#sapmachine17-jre-ubuntu-noble)
 -	[`sapmachine:17-ubuntu-20.04`](#sapmachine17-ubuntu-2004)
@@ -111,13 +123,17 @@
 -	[`sapmachine:17.0.11-jdk-ubuntu-jammy`](#sapmachine17011-jdk-ubuntu-jammy)
 -	[`sapmachine:17.0.11-jdk-ubuntu-noble`](#sapmachine17011-jdk-ubuntu-noble)
 -	[`sapmachine:17.0.11-jre-headless-ubuntu`](#sapmachine17011-jre-headless-ubuntu)
+-	[`sapmachine:17.0.11-jre-headless-ubuntu-20.04`](#sapmachine17011-jre-headless-ubuntu-2004)
 -	[`sapmachine:17.0.11-jre-headless-ubuntu-22.04`](#sapmachine17011-jre-headless-ubuntu-2204)
 -	[`sapmachine:17.0.11-jre-headless-ubuntu-24.04`](#sapmachine17011-jre-headless-ubuntu-2404)
+-	[`sapmachine:17.0.11-jre-headless-ubuntu-focal`](#sapmachine17011-jre-headless-ubuntu-focal)
 -	[`sapmachine:17.0.11-jre-headless-ubuntu-jammy`](#sapmachine17011-jre-headless-ubuntu-jammy)
 -	[`sapmachine:17.0.11-jre-headless-ubuntu-noble`](#sapmachine17011-jre-headless-ubuntu-noble)
 -	[`sapmachine:17.0.11-jre-ubuntu`](#sapmachine17011-jre-ubuntu)
+-	[`sapmachine:17.0.11-jre-ubuntu-20.04`](#sapmachine17011-jre-ubuntu-2004)
 -	[`sapmachine:17.0.11-jre-ubuntu-22.04`](#sapmachine17011-jre-ubuntu-2204)
 -	[`sapmachine:17.0.11-jre-ubuntu-24.04`](#sapmachine17011-jre-ubuntu-2404)
+-	[`sapmachine:17.0.11-jre-ubuntu-focal`](#sapmachine17011-jre-ubuntu-focal)
 -	[`sapmachine:17.0.11-jre-ubuntu-jammy`](#sapmachine17011-jre-ubuntu-jammy)
 -	[`sapmachine:17.0.11-jre-ubuntu-noble`](#sapmachine17011-jre-ubuntu-noble)
 -	[`sapmachine:17.0.11-ubuntu-20.04`](#sapmachine17011-ubuntu-2004)
@@ -142,13 +158,17 @@
 -	[`sapmachine:21-jdk-ubuntu-jammy`](#sapmachine21-jdk-ubuntu-jammy)
 -	[`sapmachine:21-jdk-ubuntu-noble`](#sapmachine21-jdk-ubuntu-noble)
 -	[`sapmachine:21-jre-headless-ubuntu`](#sapmachine21-jre-headless-ubuntu)
+-	[`sapmachine:21-jre-headless-ubuntu-20.04`](#sapmachine21-jre-headless-ubuntu-2004)
 -	[`sapmachine:21-jre-headless-ubuntu-22.04`](#sapmachine21-jre-headless-ubuntu-2204)
 -	[`sapmachine:21-jre-headless-ubuntu-24.04`](#sapmachine21-jre-headless-ubuntu-2404)
+-	[`sapmachine:21-jre-headless-ubuntu-focal`](#sapmachine21-jre-headless-ubuntu-focal)
 -	[`sapmachine:21-jre-headless-ubuntu-jammy`](#sapmachine21-jre-headless-ubuntu-jammy)
 -	[`sapmachine:21-jre-headless-ubuntu-noble`](#sapmachine21-jre-headless-ubuntu-noble)
 -	[`sapmachine:21-jre-ubuntu`](#sapmachine21-jre-ubuntu)
+-	[`sapmachine:21-jre-ubuntu-20.04`](#sapmachine21-jre-ubuntu-2004)
 -	[`sapmachine:21-jre-ubuntu-22.04`](#sapmachine21-jre-ubuntu-2204)
 -	[`sapmachine:21-jre-ubuntu-24.04`](#sapmachine21-jre-ubuntu-2404)
+-	[`sapmachine:21-jre-ubuntu-focal`](#sapmachine21-jre-ubuntu-focal)
 -	[`sapmachine:21-jre-ubuntu-jammy`](#sapmachine21-jre-ubuntu-jammy)
 -	[`sapmachine:21-jre-ubuntu-noble`](#sapmachine21-jre-ubuntu-noble)
 -	[`sapmachine:21-ubuntu-20.04`](#sapmachine21-ubuntu-2004)
@@ -173,13 +193,17 @@
 -	[`sapmachine:21.0.3-jdk-ubuntu-jammy`](#sapmachine2103-jdk-ubuntu-jammy)
 -	[`sapmachine:21.0.3-jdk-ubuntu-noble`](#sapmachine2103-jdk-ubuntu-noble)
 -	[`sapmachine:21.0.3-jre-headless-ubuntu`](#sapmachine2103-jre-headless-ubuntu)
+-	[`sapmachine:21.0.3-jre-headless-ubuntu-20.04`](#sapmachine2103-jre-headless-ubuntu-2004)
 -	[`sapmachine:21.0.3-jre-headless-ubuntu-22.04`](#sapmachine2103-jre-headless-ubuntu-2204)
 -	[`sapmachine:21.0.3-jre-headless-ubuntu-24.04`](#sapmachine2103-jre-headless-ubuntu-2404)
+-	[`sapmachine:21.0.3-jre-headless-ubuntu-focal`](#sapmachine2103-jre-headless-ubuntu-focal)
 -	[`sapmachine:21.0.3-jre-headless-ubuntu-jammy`](#sapmachine2103-jre-headless-ubuntu-jammy)
 -	[`sapmachine:21.0.3-jre-headless-ubuntu-noble`](#sapmachine2103-jre-headless-ubuntu-noble)
 -	[`sapmachine:21.0.3-jre-ubuntu`](#sapmachine2103-jre-ubuntu)
+-	[`sapmachine:21.0.3-jre-ubuntu-20.04`](#sapmachine2103-jre-ubuntu-2004)
 -	[`sapmachine:21.0.3-jre-ubuntu-22.04`](#sapmachine2103-jre-ubuntu-2204)
 -	[`sapmachine:21.0.3-jre-ubuntu-24.04`](#sapmachine2103-jre-ubuntu-2404)
+-	[`sapmachine:21.0.3-jre-ubuntu-focal`](#sapmachine2103-jre-ubuntu-focal)
 -	[`sapmachine:21.0.3-jre-ubuntu-jammy`](#sapmachine2103-jre-ubuntu-jammy)
 -	[`sapmachine:21.0.3-jre-ubuntu-noble`](#sapmachine2103-jre-ubuntu-noble)
 -	[`sapmachine:21.0.3-ubuntu-20.04`](#sapmachine2103-ubuntu-2004)
@@ -303,13 +327,17 @@
 -	[`sapmachine:lts-jdk-ubuntu-jammy`](#sapmachinelts-jdk-ubuntu-jammy)
 -	[`sapmachine:lts-jdk-ubuntu-noble`](#sapmachinelts-jdk-ubuntu-noble)
 -	[`sapmachine:lts-jre-headless-ubuntu`](#sapmachinelts-jre-headless-ubuntu)
+-	[`sapmachine:lts-jre-headless-ubuntu-20.04`](#sapmachinelts-jre-headless-ubuntu-2004)
 -	[`sapmachine:lts-jre-headless-ubuntu-22.04`](#sapmachinelts-jre-headless-ubuntu-2204)
 -	[`sapmachine:lts-jre-headless-ubuntu-24.04`](#sapmachinelts-jre-headless-ubuntu-2404)
+-	[`sapmachine:lts-jre-headless-ubuntu-focal`](#sapmachinelts-jre-headless-ubuntu-focal)
 -	[`sapmachine:lts-jre-headless-ubuntu-jammy`](#sapmachinelts-jre-headless-ubuntu-jammy)
 -	[`sapmachine:lts-jre-headless-ubuntu-noble`](#sapmachinelts-jre-headless-ubuntu-noble)
 -	[`sapmachine:lts-jre-ubuntu`](#sapmachinelts-jre-ubuntu)
+-	[`sapmachine:lts-jre-ubuntu-20.04`](#sapmachinelts-jre-ubuntu-2004)
 -	[`sapmachine:lts-jre-ubuntu-22.04`](#sapmachinelts-jre-ubuntu-2204)
 -	[`sapmachine:lts-jre-ubuntu-24.04`](#sapmachinelts-jre-ubuntu-2404)
+-	[`sapmachine:lts-jre-ubuntu-focal`](#sapmachinelts-jre-ubuntu-focal)
 -	[`sapmachine:lts-jre-ubuntu-jammy`](#sapmachinelts-jre-ubuntu-jammy)
 -	[`sapmachine:lts-jre-ubuntu-noble`](#sapmachinelts-jre-ubuntu-noble)
 -	[`sapmachine:lts-ubuntu-20.04`](#sapmachinelts-ubuntu-2004)
@@ -2629,6 +2657,10 @@ CMD ["jshell"]
 		Size: 47.7 MB (47705284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `sapmachine:11-jre-headless-ubuntu-20.04`
+
+**does not exist** (yet?)
+
 ## `sapmachine:11-jre-headless-ubuntu-22.04`
 
 ```console
@@ -2916,6 +2948,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 14 May 2024 23:40:22 GMT  
 		Size: 47.7 MB (47705284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sapmachine:11-jre-headless-ubuntu-focal`
+
+**does not exist** (yet?)
 
 ## `sapmachine:11-jre-headless-ubuntu-jammy`
 
@@ -3349,6 +3385,10 @@ CMD ["jshell"]
 		Size: 49.1 MB (49096989 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `sapmachine:11-jre-ubuntu-20.04`
+
+**does not exist** (yet?)
+
 ## `sapmachine:11-jre-ubuntu-22.04`
 
 ```console
@@ -3636,6 +3676,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 14 May 2024 23:39:58 GMT  
 		Size: 49.1 MB (49096989 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sapmachine:11-jre-ubuntu-focal`
+
+**does not exist** (yet?)
 
 ## `sapmachine:11-jre-ubuntu-jammy`
 
@@ -7093,6 +7137,10 @@ CMD ["jshell"]
 		Size: 47.7 MB (47705284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `sapmachine:11.0.23-jre-headless-ubuntu-20.04`
+
+**does not exist** (yet?)
+
 ## `sapmachine:11.0.23-jre-headless-ubuntu-22.04`
 
 ```console
@@ -7380,6 +7428,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 14 May 2024 23:40:22 GMT  
 		Size: 47.7 MB (47705284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sapmachine:11.0.23-jre-headless-ubuntu-focal`
+
+**does not exist** (yet?)
 
 ## `sapmachine:11.0.23-jre-headless-ubuntu-jammy`
 
@@ -7813,6 +7865,10 @@ CMD ["jshell"]
 		Size: 49.1 MB (49096989 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `sapmachine:11.0.23-jre-ubuntu-20.04`
+
+**does not exist** (yet?)
+
 ## `sapmachine:11.0.23-jre-ubuntu-22.04`
 
 ```console
@@ -8100,6 +8156,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 14 May 2024 23:39:58 GMT  
 		Size: 49.1 MB (49096989 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sapmachine:11.0.23-jre-ubuntu-focal`
+
+**does not exist** (yet?)
 
 ## `sapmachine:11.0.23-jre-ubuntu-jammy`
 
@@ -11557,6 +11617,10 @@ CMD ["jshell"]
 		Size: 54.3 MB (54277226 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `sapmachine:17-jre-headless-ubuntu-20.04`
+
+**does not exist** (yet?)
+
 ## `sapmachine:17-jre-headless-ubuntu-22.04`
 
 ```console
@@ -11844,6 +11908,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 14 May 2024 23:36:59 GMT  
 		Size: 54.3 MB (54277226 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sapmachine:17-jre-headless-ubuntu-focal`
+
+**does not exist** (yet?)
 
 ## `sapmachine:17-jre-headless-ubuntu-jammy`
 
@@ -12277,6 +12345,10 @@ CMD ["jshell"]
 		Size: 55.7 MB (55661180 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `sapmachine:17-jre-ubuntu-20.04`
+
+**does not exist** (yet?)
+
 ## `sapmachine:17-jre-ubuntu-22.04`
 
 ```console
@@ -12564,6 +12636,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 14 May 2024 23:36:33 GMT  
 		Size: 55.7 MB (55661180 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sapmachine:17-jre-ubuntu-focal`
+
+**does not exist** (yet?)
 
 ## `sapmachine:17-jre-ubuntu-jammy`
 
@@ -16021,6 +16097,10 @@ CMD ["jshell"]
 		Size: 54.3 MB (54277226 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `sapmachine:17.0.11-jre-headless-ubuntu-20.04`
+
+**does not exist** (yet?)
+
 ## `sapmachine:17.0.11-jre-headless-ubuntu-22.04`
 
 ```console
@@ -16308,6 +16388,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 14 May 2024 23:36:59 GMT  
 		Size: 54.3 MB (54277226 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sapmachine:17.0.11-jre-headless-ubuntu-focal`
+
+**does not exist** (yet?)
 
 ## `sapmachine:17.0.11-jre-headless-ubuntu-jammy`
 
@@ -16741,6 +16825,10 @@ CMD ["jshell"]
 		Size: 55.7 MB (55661180 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `sapmachine:17.0.11-jre-ubuntu-20.04`
+
+**does not exist** (yet?)
+
 ## `sapmachine:17.0.11-jre-ubuntu-22.04`
 
 ```console
@@ -17028,6 +17116,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 14 May 2024 23:36:33 GMT  
 		Size: 55.7 MB (55661180 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sapmachine:17.0.11-jre-ubuntu-focal`
+
+**does not exist** (yet?)
 
 ## `sapmachine:17.0.11-jre-ubuntu-jammy`
 
@@ -20485,6 +20577,10 @@ CMD ["jshell"]
 		Size: 60.6 MB (60573089 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `sapmachine:21-jre-headless-ubuntu-20.04`
+
+**does not exist** (yet?)
+
 ## `sapmachine:21-jre-headless-ubuntu-22.04`
 
 ```console
@@ -20772,6 +20868,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 14 May 2024 23:32:52 GMT  
 		Size: 60.6 MB (60573089 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sapmachine:21-jre-headless-ubuntu-focal`
+
+**does not exist** (yet?)
 
 ## `sapmachine:21-jre-headless-ubuntu-jammy`
 
@@ -21205,6 +21305,10 @@ CMD ["jshell"]
 		Size: 62.0 MB (61957923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `sapmachine:21-jre-ubuntu-20.04`
+
+**does not exist** (yet?)
+
 ## `sapmachine:21-jre-ubuntu-22.04`
 
 ```console
@@ -21492,6 +21596,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 14 May 2024 23:32:19 GMT  
 		Size: 62.0 MB (61957923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sapmachine:21-jre-ubuntu-focal`
+
+**does not exist** (yet?)
 
 ## `sapmachine:21-jre-ubuntu-jammy`
 
@@ -24949,6 +25057,10 @@ CMD ["jshell"]
 		Size: 60.6 MB (60573089 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `sapmachine:21.0.3-jre-headless-ubuntu-20.04`
+
+**does not exist** (yet?)
+
 ## `sapmachine:21.0.3-jre-headless-ubuntu-22.04`
 
 ```console
@@ -25236,6 +25348,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 14 May 2024 23:32:52 GMT  
 		Size: 60.6 MB (60573089 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sapmachine:21.0.3-jre-headless-ubuntu-focal`
+
+**does not exist** (yet?)
 
 ## `sapmachine:21.0.3-jre-headless-ubuntu-jammy`
 
@@ -25669,6 +25785,10 @@ CMD ["jshell"]
 		Size: 62.0 MB (61957923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `sapmachine:21.0.3-jre-ubuntu-20.04`
+
+**does not exist** (yet?)
+
 ## `sapmachine:21.0.3-jre-ubuntu-22.04`
 
 ```console
@@ -25956,6 +26076,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 14 May 2024 23:32:19 GMT  
 		Size: 62.0 MB (61957923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sapmachine:21.0.3-jre-ubuntu-focal`
+
+**does not exist** (yet?)
 
 ## `sapmachine:21.0.3-jre-ubuntu-jammy`
 
@@ -43669,6 +43793,10 @@ CMD ["jshell"]
 		Size: 60.6 MB (60573089 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `sapmachine:lts-jre-headless-ubuntu-20.04`
+
+**does not exist** (yet?)
+
 ## `sapmachine:lts-jre-headless-ubuntu-22.04`
 
 ```console
@@ -43956,6 +44084,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 14 May 2024 23:32:52 GMT  
 		Size: 60.6 MB (60573089 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sapmachine:lts-jre-headless-ubuntu-focal`
+
+**does not exist** (yet?)
 
 ## `sapmachine:lts-jre-headless-ubuntu-jammy`
 
@@ -44389,6 +44521,10 @@ CMD ["jshell"]
 		Size: 62.0 MB (61957923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `sapmachine:lts-jre-ubuntu-20.04`
+
+**does not exist** (yet?)
+
 ## `sapmachine:lts-jre-ubuntu-22.04`
 
 ```console
@@ -44676,6 +44812,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 14 May 2024 23:32:19 GMT  
 		Size: 62.0 MB (61957923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sapmachine:lts-jre-ubuntu-focal`
+
+**does not exist** (yet?)
 
 ## `sapmachine:lts-jre-ubuntu-jammy`
 
