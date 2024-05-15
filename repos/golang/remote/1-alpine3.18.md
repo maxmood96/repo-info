@@ -1,16 +1,17 @@
 ## `golang:1-alpine3.18`
 
 ```console
-$ docker pull golang@sha256:3c8959be72c0de050d3ce6fb5512d80ac1419fba9009a5cc2c662e0cd1764024
+$ docker pull golang@sha256:7b92b0f3c50b3f286d1054423002ad118367ec676a29de4adf60e06221003175
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 12
+-	Platforms: 13
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
 	-	unknown; unknown
 	-	linux; arm variant v7
+	-	unknown; unknown
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	unknown; unknown
@@ -180,13 +181,13 @@ $ docker pull golang@sha256:9decaa4c0907918c410bab46a842666a01ee4cc5e069849a477c
 ### `golang:1-alpine3.18` - linux; arm variant v7
 
 ```console
-$ docker pull golang@sha256:2e57541bf401b95bb81bf87459ac80d5e0875339aa877543d865c543bb8963e5
+$ docker pull golang@sha256:9b7dcaa57dfad1b7fb8afd4bb920d89a1f61d58faaaa6c2cb2732809dec2bfd6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.9 MB (70900714 bytes)**  
+-	Total Size: **70.9 MB (70909718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40410a0646662330c22bc56628defa06f6e37f7a322f4f810de6c32de3358b55`
+-	Image ID: `sha256:bec5a14cce3144bfbce46d6e37b106ad035c9fcad95b1db848d3456b8b33e4c5`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -216,23 +217,47 @@ WORKDIR /go
 	-	`sha256:19ffc66afc416e14f8733d680abfae4e1f6a3c90ae23c045857121fea320862b`  
 		Last Modified: Sat, 27 Jan 2024 00:15:39 GMT  
 		Size: 2.9 MB (2901392 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03de95814623b83a4328b4db2e23b14214f57c18389a27379988469d9b6bbccc`  
-		Last Modified: Sat, 16 Mar 2024 00:51:49 GMT  
-		Size: 284.1 KB (284082 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af6b4809d7be867dc48eeaceb719e94f544b1169dce59a9a9c08766e4243de04`  
-		Last Modified: Tue, 07 May 2024 18:30:43 GMT  
-		Size: 67.7 MB (67715033 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f78d50d16ddc626b592984bfd646d75740a6eebf44e6f37e92b808547aea395`  
-		Last Modified: Tue, 07 May 2024 18:30:30 GMT  
-		Size: 175.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0a1e32b4becad7a3ff9750dab0a6195a4136fe3417839cd5d6ced26f77c37d79`  
+		Last Modified: Wed, 15 May 2024 08:39:33 GMT  
+		Size: 293.0 KB (292954 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8bd578652b0fd72238bc2565adcc2bf2716995c086d72609492506b36ddec660`  
+		Last Modified: Wed, 15 May 2024 08:36:50 GMT  
+		Size: 67.7 MB (67715213 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f0232a1e75bccf36abc5bc755efa9f5a88930889e448bb2640829925290a652a`  
+		Last Modified: Wed, 15 May 2024 08:39:32 GMT  
+		Size: 127.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `golang:1-alpine3.18` - unknown; unknown
+
+```console
+$ docker pull golang@sha256:98ed1ae0dc016b6b69b2b67239b27e0f0de1347a5fa145e86daee9218731f277
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **225.9 KB (225943 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:677be7645e5f0d4a7438ad179cf090c00e63ec7dd15f97b3ec2a059667a0ec5f`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:99ce13a9d34fa01aa8c3624ddd97da1190809352564cb25f511ead623c672f24`  
+		Last Modified: Wed, 15 May 2024 08:39:32 GMT  
+		Size: 203.2 KB (203169 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:151b23d27b0723564f8d5f4c788cf88d15918c54d018d15016fd9b7065c6f1b9`  
+		Last Modified: Wed, 15 May 2024 08:39:32 GMT  
+		Size: 22.8 KB (22774 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ### `golang:1-alpine3.18` - linux; arm64 variant v8
 

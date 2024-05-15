@@ -1,16 +1,17 @@
 ## `golang:alpine`
 
 ```console
-$ docker pull golang@sha256:282ddcdde8fea3bceb235a539d7a2fee2f52559c5319c42e577df4bcae2c2f39
+$ docker pull golang@sha256:df479aa7d1298917c7de7fd56c7231ec450149f1e63d960ea96aebf9ff9240c5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 12
+-	Platforms: 13
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
 	-	unknown; unknown
 	-	linux; arm variant v7
+	-	unknown; unknown
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	unknown; unknown
@@ -180,13 +181,13 @@ $ docker pull golang@sha256:ede38240e04f2650dd1b2db98d49228eaf375739134fdc75dba2
 ### `golang:alpine` - linux; arm variant v7
 
 ```console
-$ docker pull golang@sha256:bd0393fc5383018eefeffd1de047bc98e13b0de67b38500ca344d1d2d6abd4db
+$ docker pull golang@sha256:20b4a52834614903826fc043859f35653a4c568098b3ac5a1e28dc85994f089c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.9 MB (70918346 bytes)**  
+-	Total Size: **70.9 MB (70927455 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ce6e1bec654c4d4f607dabe3796625cc024ca952a385d68862c6a03faf198a8`
+-	Image ID: `sha256:0ddaa325fb310831bde97c498bdf3a7b8cc5e084cd3848f891f49c808acd8f98`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -216,23 +217,47 @@ WORKDIR /go
 	-	`sha256:fda0ff469afd28d9cfbb946e8e0a3c911c591a2691bea62be9187e45a1c50549`  
 		Last Modified: Sat, 27 Jan 2024 00:15:27 GMT  
 		Size: 2.9 MB (2918899 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2fabedc5bd9b69689c72cc189479c37195587f7ed277acee62e4d8697939c19`  
-		Last Modified: Sat, 16 Mar 2024 00:51:13 GMT  
-		Size: 284.2 KB (284226 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:694efd8d2fb92e7dd0d13df64d4697585c82a3f98d85b5d2300bc7e6fe1f5f79`  
-		Last Modified: Tue, 07 May 2024 18:30:09 GMT  
-		Size: 67.7 MB (67715014 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14854386d35887204db82fd33e8adba98d4806695dcef17f215b53aa55648d1d`  
-		Last Modified: Tue, 07 May 2024 18:29:56 GMT  
-		Size: 175.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fa5bc8c8a85a004d09793602cc73eb5cdd7e51489747e55adbda95159c328a70`  
+		Last Modified: Wed, 15 May 2024 08:38:49 GMT  
+		Size: 293.2 KB (293185 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8bd578652b0fd72238bc2565adcc2bf2716995c086d72609492506b36ddec660`  
+		Last Modified: Wed, 15 May 2024 08:36:50 GMT  
+		Size: 67.7 MB (67715213 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e2149779e1ffef1096a27b02d94b473a272e256d5c015ce287a5ca9a26bc0171`  
+		Last Modified: Wed, 15 May 2024 08:38:49 GMT  
+		Size: 126.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `golang:alpine` - unknown; unknown
+
+```console
+$ docker pull golang@sha256:e95360c59613517ad8544fbd1c9c42af4fbeb3538a4ec24c12b0ef36f22fa800
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **229.1 KB (229107 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0f4334dc07c9c4a2f3881cdb281972e3973a96996d5b2688a0bc7d6bd109e254`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:ce7c85b82f26648565c904781ed7c8670935430c86b8f402fca263cf581313f3`  
+		Last Modified: Wed, 15 May 2024 08:38:49 GMT  
+		Size: 205.1 KB (205081 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:844714ec76764617fd1395ed8dcf25e4331a9f0732e6637fbb1413e53353ecff`  
+		Last Modified: Wed, 15 May 2024 08:38:48 GMT  
+		Size: 24.0 KB (24026 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ### `golang:alpine` - linux; arm64 variant v8
 
