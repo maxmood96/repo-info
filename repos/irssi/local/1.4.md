@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a28b3893e325034ec4d60ced16d8b41323cc8721738a37ab4a8bb42bb4686a89`
+- Image ID: `sha256:e16185f2b74f255890ad534685ba2f62f317cf9b49adf834e0bdb23b487d06f0`
 - Created: `2024-04-05T21:50:10Z`
-- Virtual Size: ~ 171.06 Mb  
+- Virtual Size: ~ 171.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irssi"]`
@@ -711,11 +711,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.23-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.23-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glib2.0=2.74.6-2`
+### `dpkg` source package: `glib2.0=2.74.6-2+deb12u2`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.74.6-2`
+- `libglib2.0-0:amd64=2.74.6-2+deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
@@ -748,38 +748,45 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glib2.0=2.74.6-2
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6-2.dsc' glib2.0_2.74.6-2.dsc 3667 SHA256:3643bdb48d558e0cc8090dd29042182309595aa554dc24a319182c60a0c964e2
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6.orig-unicode-data.tar.xz' glib2.0_2.74.6.orig-unicode-data.tar.xz 267596 SHA256:dabcaff9298aa111a94e580561d2f29371f3e61b356c925ec5e0792df2b11ff2
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6.orig.tar.xz' glib2.0_2.74.6.orig.tar.xz 5217312 SHA256:069cf7e51cd261eb163aaf06c8d1754c6835f31252180aff5814e5afc7757fbc
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6-2.debian.tar.xz' glib2.0_2.74.6-2.debian.tar.xz 120348 SHA256:cfd5202bd548def51f5d3c59657eba8f62c88c7339db635445bf0325043c81e6
+$ apt-get source -qq --print-uris glib2.0=2.74.6-2+deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.74.6-2%2bdeb12u2.dsc' glib2.0_2.74.6-2+deb12u2.dsc 3604 SHA256:3db85fa7cf1af9aec5ebce7b756a9e1c7f19419117f50066ce45493ff1576c74
+'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.74.6.orig-unicode-data.tar.xz' glib2.0_2.74.6.orig-unicode-data.tar.xz 267596 SHA256:dabcaff9298aa111a94e580561d2f29371f3e61b356c925ec5e0792df2b11ff2
+'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.74.6.orig.tar.xz' glib2.0_2.74.6.orig.tar.xz 5217312 SHA256:069cf7e51cd261eb163aaf06c8d1754c6835f31252180aff5814e5afc7757fbc
+'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.74.6-2%2bdeb12u2.debian.tar.xz' glib2.0_2.74.6-2+deb12u2.debian.tar.xz 138916 SHA256:3a8ae0466f928daa5477b3bd61599ffb16e51070cdc17d131337fc324c68f22f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glib2.0/2.74.6-2/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.74.6-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.74.6-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glib2.0/2.74.6-2+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/glib2.0/2.74.6-2+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glib2.0/2.74.6-2+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.36-9+deb12u6`
+### `dpkg` source package: `glibc=2.36-9+deb12u7`
 
 Binary Packages:
 
-- `libc-bin=2.36-9+deb12u6`
-- `libc6:amd64=2.36-9+deb12u6`
+- `libc-bin=2.36-9+deb12u7`
+- `libc6:amd64=2.36-9+deb12u7`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris glibc=2.36-9+deb12u7
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u7.dsc' glibc_2.36-9+deb12u7.dsc 9761 SHA256:b5e615ea887acb1f16c4fdc83bb50c6ca9d38cde038caa9fe87b26c03076b772
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36.orig.tar.xz' glibc_2.36.orig.tar.xz 19363988 SHA256:a543c02070d46ccaf866957efd13f10c924daa74c86a90a0254db09a92a708ee
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u7.debian.tar.xz' glibc_2.36-9+deb12u7.debian.tar.xz 862848 SHA256:a9e0dcec7cd82c81d98f4d0652e9c576d5d4801ef8cfb8dfc06277a8977cb5ac
+```
 
-- http://snapshot.debian.org/package/glibc/2.36-9+deb12u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/glibc/2.36-9+deb12u7/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.36-9+deb12u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.36-9+deb12u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg1-1.1`
 
