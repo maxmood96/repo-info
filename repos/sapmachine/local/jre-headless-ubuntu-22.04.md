@@ -1,10 +1,10 @@
-# `sapmachine:22-jdk-headless-ubuntu`
+# `sapmachine:22-jre-headless-ubuntu-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b6623eef139b90abbf641824a38250727525b8f4e7f6108219c5151a6b1ef2da`
-- Created: `2024-05-02T04:41:12.61723587Z`
-- Virtual Size: ~ 443.83 Mb  
+- Image ID: `sha256:b5cccd05d1d7930c7e67f36f9b6d3ed265244e9e67a68f4411050a6a13f300fa`
+- Created: `2024-05-02T04:40:02.025534601Z`
+- Virtual Size: ~ 250.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -1534,11 +1534,11 @@ $ apt-get source -qq --print-uris procps=2:3.3.17-6ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.1.debian.tar.xz' procps_3.3.17-6ubuntu2.1.debian.tar.xz 35488 SHA512:720a52d14be82aecd59e2456fbb19574c99cc5281660a36994ef4aa619c14bbec43fd30b5e949446e5db6b6bebf8003a5f173298fe8bf56ac949d61ad0225a79
 ```
 
-### `dpkg` source package: `sapmachine-22-jdk-headless=22.0.1`
+### `dpkg` source package: `sapmachine-22-jre-headless=22.0.1`
 
 Binary Packages:
 
-- `sapmachine-22-jdk-headless=22.0.1`
+- `sapmachine-22-jre-headless=22.0.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.

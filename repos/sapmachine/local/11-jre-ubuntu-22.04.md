@@ -1,4 +1,4 @@
-# `sapmachine:11-jre-ubuntu`
+# `sapmachine:11-jre-ubuntu-jammy`
 
 ## Docker Metadata
 

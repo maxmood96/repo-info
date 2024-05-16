@@ -1,10 +1,10 @@
-# `sapmachine:22-jdk-ubuntu`
+# `sapmachine:22-jre-ubuntu-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:432d95f9fb194ba0155eb49d9ad08074f452abe42e34eb0a67c91a59611b0425`
-- Created: `2024-05-02T04:41:55.302299489Z`
-- Virtual Size: ~ 447.30 Mb  
+- Image ID: `sha256:f8dcc163e0b33321aed6f8c7c103fcf157067ca4b17a36b6db73bcffadfcbdb4`
+- Created: `2024-05-02T04:40:27.18884258Z`
+- Virtual Size: ~ 253.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -1752,11 +1752,11 @@ $ apt-get source -qq --print-uris procps=2:3.3.17-6ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.1.debian.tar.xz' procps_3.3.17-6ubuntu2.1.debian.tar.xz 35488 SHA512:720a52d14be82aecd59e2456fbb19574c99cc5281660a36994ef4aa619c14bbec43fd30b5e949446e5db6b6bebf8003a5f173298fe8bf56ac949d61ad0225a79
 ```
 
-### `dpkg` source package: `sapmachine-22-jdk=22.0.1`
+### `dpkg` source package: `sapmachine-22-jre=22.0.1`
 
 Binary Packages:
 
-- `sapmachine-22-jdk=22.0.1`
+- `sapmachine-22-jre=22.0.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
