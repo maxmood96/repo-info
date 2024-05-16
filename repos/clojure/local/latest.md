@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:82070d4be095b1b1b11833edac8ce41a352ade061640fec125588fca66fc172d`
-- Created: `2024-04-25T19:26:27.124388192Z`
+- Image ID: `sha256:06a8e9e0cbc96c6f85eb668eb07ae50868d8092b1b47e9c26263e394eaa088b8`
+- Created: `2024-05-14T02:15:58.325714719Z`
 - Virtual Size: ~ 624.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -890,25 +890,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/git/1:2.39.2-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/git/1:2.39.2-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.36-9+deb12u6`
+### `dpkg` source package: `glibc=2.36-9+deb12u7`
 
 Binary Packages:
 
-- `libc-bin=2.36-9+deb12u6`
-- `libc6:amd64=2.36-9+deb12u6`
+- `libc-bin=2.36-9+deb12u7`
+- `libc6:amd64=2.36-9+deb12u7`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris glibc=2.36-9+deb12u7
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u7.dsc' glibc_2.36-9+deb12u7.dsc 9761 SHA256:b5e615ea887acb1f16c4fdc83bb50c6ca9d38cde038caa9fe87b26c03076b772
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36.orig.tar.xz' glibc_2.36.orig.tar.xz 19363988 SHA256:a543c02070d46ccaf866957efd13f10c924daa74c86a90a0254db09a92a708ee
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.36-9%2bdeb12u7.debian.tar.xz' glibc_2.36-9+deb12u7.debian.tar.xz 862848 SHA256:a9e0dcec7cd82c81d98f4d0652e9c576d5d4801ef8cfb8dfc06277a8977cb5ac
+```
 
-- http://snapshot.debian.org/package/glibc/2.36-9+deb12u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/glibc/2.36-9+deb12u7/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.36-9+deb12u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.36-9+deb12u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg1-1.1`
 
@@ -1209,11 +1216,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/krb5/1.20.1-2+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/krb5/1.20.1-2+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `less=590-2`
+### `dpkg` source package: `less=590-2.1~deb12u2`
 
 Binary Packages:
 
-- `less=590-2`
+- `less=590-2.1~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/less/copyright`)
 
@@ -1228,18 +1235,18 @@ Licenses: (parsed from: `/usr/share/doc/less/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris less=590-2
-'http://deb.debian.org/debian/pool/main/l/less/less_590-2.dsc' less_590-2.dsc 1883 SHA256:7c17d83b042bd870fd7aae452f66390dcd04fd7ba6d812d682021b21f99e52a4
-'http://deb.debian.org/debian/pool/main/l/less/less_590.orig.tar.gz' less_590.orig.tar.gz 352574 SHA256:6aadf54be8bf57d0e2999a3c5d67b1de63808bb90deb8f77b028eafae3a08e10
-'http://deb.debian.org/debian/pool/main/l/less/less_590.orig.tar.gz.asc' less_590.orig.tar.gz.asc 163 SHA256:1bd54dbadb45eeaeaf58cee2b7b4a701c634c11866082bc494752838af37c3db
-'http://deb.debian.org/debian/pool/main/l/less/less_590-2.debian.tar.xz' less_590-2.debian.tar.xz 22112 SHA256:f4ba54057ca3db7ed412f56979c2fe3bb49ed26697ce35017be3f35b368eded7
+$ apt-get source -qq --print-uris less=590-2.1~deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/l/less/less_590-2.1%7edeb12u2.dsc' less_590-2.1~deb12u2.dsc 2228 SHA256:1a4219f8ec9342851805089d9ee5ec7c0150287d5722ecc914c50790673ad9a6
+'http://deb.debian.org/debian-security/pool/updates/main/l/less/less_590.orig.tar.gz' less_590.orig.tar.gz 352574 SHA256:6aadf54be8bf57d0e2999a3c5d67b1de63808bb90deb8f77b028eafae3a08e10
+'http://deb.debian.org/debian-security/pool/updates/main/l/less/less_590.orig.tar.gz.asc' less_590.orig.tar.gz.asc 163 SHA256:1bd54dbadb45eeaeaf58cee2b7b4a701c634c11866082bc494752838af37c3db
+'http://deb.debian.org/debian-security/pool/updates/main/l/less/less_590-2.1%7edeb12u2.debian.tar.xz' less_590-2.1~deb12u2.debian.tar.xz 23852 SHA256:4a54c48a25cabb5408af6d7bc174cad96614e540b47d2b8962b3e13819fd9b30
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/less/590-2/ (for browsing the source)
-- https://sources.debian.net/src/less/590-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/less/590-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/less/590-2.1~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/less/590-2.1~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/less/590-2.1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libbsd=0.11.7-2`
 
