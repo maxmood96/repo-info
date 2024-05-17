@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ebe6261cf21c8a87571e9f4b502375b16f30e624d67d46e199388cdf0bc36235`
+- Image ID: `sha256:aa9f043e1a6922800eb35b5e7715a37c50d98f8504558944cc70afa0003bda2c`
 - Created: `2024-05-02T12:45:44Z`
 - Virtual Size: ~ 681.34 Mb  
   (total size of all layers on-disk)
@@ -661,27 +661,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-defaults/1.181/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-defaults/1.181/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.28-10+deb10u2`
+### `dpkg` source package: `glibc=2.28-10+deb10u3`
 
 Binary Packages:
 
-- `libc-bin=2.28-10+deb10u2`
-- `libc-dev-bin=2.28-10+deb10u2`
-- `libc6:amd64=2.28-10+deb10u2`
-- `libc6-dev:amd64=2.28-10+deb10u2`
+- `libc-bin=2.28-10+deb10u3`
+- `libc-dev-bin=2.28-10+deb10u3`
+- `libc6:amd64=2.28-10+deb10u3`
+- `libc6-dev:amd64=2.28-10+deb10u3`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris glibc=2.28-10+deb10u3
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.28-10%2bdeb10u3.dsc' glibc_2.28-10+deb10u3.dsc 8921 SHA256:731d162af297ab2f042e73b0910388a84214e48b68766ded409e6c391ca5e9c4
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.28.orig.tar.xz' glibc_2.28.orig.tar.xz 17061292 SHA256:53d3c1c7bff0fb25d4c7874bf13435dc44a71fd7dd5ffc9bfdcb513cdfc36854
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.28-10%2bdeb10u3.debian.tar.xz' glibc_2.28-10+deb10u3.debian.tar.xz 924552 SHA256:552ddba370dfe93ae9360b17ad4772b9f72b43223bf5e40a651797a2cbebadc2
+```
 
-- http://snapshot.debian.org/package/glibc/2.28-10+deb10u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/glibc/2.28-10+deb10u3/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.28-10+deb10u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.28-10+deb10u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-4+deb10u1`
 
