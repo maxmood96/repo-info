@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dabffbc30396e45eb1291cc333367d0290bf0ef7f094b2a0ea99b3f0ed549967`
+- Image ID: `sha256:9860c863aa5124fa0d8a9e74dd458bc9bac6aa2e017c77b3f2a6d33120b75425`
 - Created: `2024-03-11T18:49:41Z`
-- Virtual Size: ~ 306.44 Mb  
+- Virtual Size: ~ 293.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
@@ -614,9 +614,10 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `libc-bin=2.31-13+deb11u10`
 - `libc6:amd64=2.31-13+deb11u10`
 
-Licenses: (parsed from: `/usr/share/doc/libc6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -635,25 +636,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/glibc/2.31-13+deb11u10/ (for browsing the source)
 - https://sources.debian.net/src/glibc/2.31-13+deb11u10/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/glibc/2.31-13+deb11u10/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `glibc=2.31-13+deb11u9`
-
-Binary Packages:
-
-- `libc-bin=2.31-13+deb11u9`
-
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
-
-- `GPL-2`
-- `LGPL-2.1`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/glibc/2.31-13+deb11u9/
-
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1+deb11u1`
 
