@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c170135f6c0a18562ed0c6ab27d2cd6968162eb75c4657954108e139b9323dc6`
-- Created: `2024-04-24T20:14:56.913347032Z`
-- Virtual Size: ~ 582.09 Mb  
+- Image ID: `sha256:d3e26ecb87fb595e4952cc40f85668ec6b8df141786d550ba0867bd003bd22ba`
+- Created: `2024-03-23T20:25:42Z`
+- Virtual Size: ~ 582.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -330,16 +330,16 @@ GPL-3.0-or-later
 ### `apk` package: `git`
 
 ```console
-git-2.43.0-r0 description:
+git-2.43.4-r0 description:
 Distributed version control system
 
-git-2.43.0-r0 webpage:
+git-2.43.4-r0 webpage:
 https://www.git-scm.com/
 
-git-2.43.0-r0 installed size:
-6056 KiB
+git-2.43.4-r0 installed size:
+6068 KiB
 
-git-2.43.0-r0 license:
+git-2.43.4-r0 license:
 GPL-2.0-only
 
 ```
@@ -347,16 +347,16 @@ GPL-2.0-only
 ### `apk` package: `git-lfs`
 
 ```console
-git-lfs-3.4.1-r2 description:
+git-lfs-3.4.1-r3 description:
 Git extension for versioning large files
 
-git-lfs-3.4.1-r2 webpage:
+git-lfs-3.4.1-r3 webpage:
 https://git-lfs.github.io/
 
-git-lfs-3.4.1-r2 installed size:
+git-lfs-3.4.1-r3 installed size:
 11 MiB
 
-git-lfs-3.4.1-r2 license:
+git-lfs-3.4.1-r3 license:
 MIT
 
 ```
