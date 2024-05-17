@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8763bd858badf369db18ca42cbd658f37f7065ba5d7f7464c05a42148299c0aa`
-- Created: `2024-03-21T18:18:23Z`
-- Virtual Size: ~ 865.16 Mb  
+- Image ID: `sha256:96733cd90a5c71f31428f2955c787f08e0172a1b707f739050ac466e21fb8f91`
+- Created: `2024-04-29T09:51:00Z`
+- Virtual Size: ~ 865.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["perl5.38.2","-de0"]`
@@ -1296,15 +1296,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/git/1:2.20.1-2+deb10u8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/git/1:2.20.1-2+deb10u8/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glib2.0=2.58.3-2+deb10u5`
+### `dpkg` source package: `glib2.0=2.58.3-2+deb10u6`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.58.3-2+deb10u5`
-- `libglib2.0-bin=2.58.3-2+deb10u5`
-- `libglib2.0-data=2.58.3-2+deb10u5`
-- `libglib2.0-dev:amd64=2.58.3-2+deb10u5`
-- `libglib2.0-dev-bin=2.58.3-2+deb10u5`
+- `libglib2.0-0:amd64=2.58.3-2+deb10u6`
+- `libglib2.0-bin=2.58.3-2+deb10u6`
+- `libglib2.0-data=2.58.3-2+deb10u6`
+- `libglib2.0-dev:amd64=2.58.3-2+deb10u6`
+- `libglib2.0-dev-bin=2.58.3-2+deb10u6`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-bin/copyright`, `/usr/share/doc/libglib2.0-data/copyright`, `/usr/share/doc/libglib2.0-dev/copyright`, `/usr/share/doc/libglib2.0-dev-bin/copyright`)
 
@@ -1316,39 +1316,46 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glib2.0=2.58.3-2+deb10u5
-'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.58.3-2%2bdeb10u5.dsc' glib2.0_2.58.3-2+deb10u5.dsc 2729 SHA256:59c25e933d20f4f711c4b6685fbfeb46f1df344aa0e09c862b77fcaef94c57d3
+$ apt-get source -qq --print-uris glib2.0=2.58.3-2+deb10u6
+'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.58.3-2%2bdeb10u6.dsc' glib2.0_2.58.3-2+deb10u6.dsc 3485 SHA256:66bed4b3fa52679c2dc648aa64d3966e585528a99ea38776854752acd9714279
 'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.58.3.orig.tar.xz' glib2.0_2.58.3.orig.tar.xz 4863648 SHA256:8f43c31767e88a25da72b52a40f3301fefc49a665b56dc10ee7cc9565cbe7481
-'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.58.3-2%2bdeb10u5.debian.tar.xz' glib2.0_2.58.3-2+deb10u5.debian.tar.xz 130900 SHA256:5c9d1dc438c0a8923eaf65391e04906230d06a71426dc1aa6df785b12a4d21d4
+'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.58.3-2%2bdeb10u6.debian.tar.xz' glib2.0_2.58.3-2+deb10u6.debian.tar.xz 148468 SHA256:1e5a8b2922d60421ca0f5c8078a6efeaa037b9e5f7b0cdaabc2a4f54ffdc7f99
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glib2.0/2.58.3-2+deb10u5/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.58.3-2+deb10u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.58.3-2+deb10u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glib2.0/2.58.3-2+deb10u6/ (for browsing the source)
+- https://sources.debian.net/src/glib2.0/2.58.3-2+deb10u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glib2.0/2.58.3-2+deb10u6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.28-10+deb10u2`
+### `dpkg` source package: `glibc=2.28-10+deb10u3`
 
 Binary Packages:
 
-- `libc-bin=2.28-10+deb10u2`
-- `libc-dev-bin=2.28-10+deb10u2`
-- `libc6:amd64=2.28-10+deb10u2`
-- `libc6-dev:amd64=2.28-10+deb10u2`
+- `libc-bin=2.28-10+deb10u3`
+- `libc-dev-bin=2.28-10+deb10u3`
+- `libc6:amd64=2.28-10+deb10u3`
+- `libc6-dev:amd64=2.28-10+deb10u3`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris glibc=2.28-10+deb10u3
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.28-10%2bdeb10u3.dsc' glibc_2.28-10+deb10u3.dsc 8921 SHA256:731d162af297ab2f042e73b0910388a84214e48b68766ded409e6c391ca5e9c4
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.28.orig.tar.xz' glibc_2.28.orig.tar.xz 17061292 SHA256:53d3c1c7bff0fb25d4c7874bf13435dc44a71fd7dd5ffc9bfdcb513cdfc36854
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.28-10%2bdeb10u3.debian.tar.xz' glibc_2.28-10+deb10u3.debian.tar.xz 924552 SHA256:552ddba370dfe93ae9360b17ad4772b9f72b43223bf5e40a651797a2cbebadc2
+```
 
-- http://snapshot.debian.org/package/glibc/2.28-10+deb10u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/glibc/2.28-10+deb10u3/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.28-10+deb10u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.28-10+deb10u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-4+deb10u1`
 
@@ -3936,11 +3943,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.4.1-1+deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.4.1-1+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nghttp2=1.36.0-2+deb10u2`
+### `dpkg` source package: `nghttp2=1.36.0-2+deb10u3`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.36.0-2+deb10u2`
+- `libnghttp2-14:amd64=1.36.0-2+deb10u3`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -3952,13 +3959,20 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris nghttp2=1.36.0-2+deb10u3
+'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.36.0-2%2bdeb10u3.dsc' nghttp2_1.36.0-2+deb10u3.dsc 2576 SHA256:f6ab7fca79781b13788a96f3aeeaab0610f903bcd022939cde0d6670ce1c486b
+'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.36.0.orig.tar.bz2' nghttp2_1.36.0.orig.tar.bz2 1919021 SHA256:16a734d7414062911e23989e243ca76e7722cb3c60273723e3e3ae4c21e71ceb
+'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.36.0-2%2bdeb10u3.debian.tar.xz' nghttp2_1.36.0-2+deb10u3.debian.tar.xz 22668 SHA256:49f33901378a63f365dccd5cd8e6dd795835f17b2aff67ef4d72aa2402ad94c7
+```
 
-- http://snapshot.debian.org/package/nghttp2/1.36.0-2+deb10u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/nghttp2/1.36.0-2+deb10u3/ (for browsing the source)
+- https://sources.debian.net/src/nghttp2/1.36.0-2+deb10u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nghttp2/1.36.0-2+deb10u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-1`
 
