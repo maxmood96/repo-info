@@ -1,16 +1,16 @@
-# `docker:26.1.2-dind-rootless`
+# `docker:26.1.3-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fd7625e169c89cf6808f6824f137e41b272eee49f51b171ce8ffa2c0ec373b21`
-- Created: `2024-05-09T11:04:38Z`
-- Virtual Size: ~ 420.88 Mb  
+- Image ID: `sha256:8e79f33a9a764d4fd6a95941fc7dc729cb858c7b01e47dc040c7b95da45884aa`
+- Created: `2024-05-16T16:36:41Z`
+- Virtual Size: ~ 420.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=26.1.2`
+  - `DOCKER_VERSION=26.1.3`
   - `DOCKER_BUILDX_VERSION=0.14.0`
   - `DOCKER_COMPOSE_VERSION=2.27.0`
   - `DOCKER_TLS_CERTDIR=/certs`
@@ -344,16 +344,16 @@ GPL-2.0-only AND LGPL-2.1-only
 ### `apk` package: `git`
 
 ```console
-git-2.43.0-r0 description:
+git-2.43.4-r0 description:
 Distributed version control system
 
-git-2.43.0-r0 webpage:
+git-2.43.4-r0 webpage:
 https://www.git-scm.com/
 
-git-2.43.0-r0 installed size:
-6056 KiB
+git-2.43.4-r0 installed size:
+6068 KiB
 
-git-2.43.0-r0 license:
+git-2.43.4-r0 license:
 GPL-2.0-only
 
 ```

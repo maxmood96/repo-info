@@ -1,16 +1,16 @@
-# `docker:26.1.2-dind`
+# `docker:26.1.3-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1feaad25659a469625941125ebe98d4f169f882ff8f39975001662daa5ed43fa`
-- Created: `2024-05-09T11:04:38Z`
-- Virtual Size: ~ 365.00 Mb  
+- Image ID: `sha256:72f08938a4ea8f1023491bcc3f7601d8c489bee425a81835d47424e1f47105ad`
+- Created: `2024-05-16T16:36:41Z`
+- Virtual Size: ~ 365.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=26.1.2`
+  - `DOCKER_VERSION=26.1.3`
   - `DOCKER_BUILDX_VERSION=0.14.0`
   - `DOCKER_COMPOSE_VERSION=2.27.0`
   - `DOCKER_TLS_CERTDIR=/certs`
@@ -276,16 +276,16 @@ GPL-2.0-or-later
 ### `apk` package: `git`
 
 ```console
-git-2.43.0-r0 description:
+git-2.43.4-r0 description:
 Distributed version control system
 
-git-2.43.0-r0 webpage:
+git-2.43.4-r0 webpage:
 https://www.git-scm.com/
 
-git-2.43.0-r0 installed size:
-6056 KiB
+git-2.43.4-r0 installed size:
+6068 KiB
 
-git-2.43.0-r0 license:
+git-2.43.4-r0 license:
 GPL-2.0-only
 
 ```
