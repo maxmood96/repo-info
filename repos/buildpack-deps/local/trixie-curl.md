@@ -81,19 +81,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.2
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.2.dsc' apt_2.9.2.dsc 2973 SHA256:99288ae37560a08b243f880bd1b25c2488cb8869625e79f79a7d05738785a3ec
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.2.tar.xz' apt_2.9.2.tar.xz 2366352 SHA256:80aa74466b132e50ed8d0159f10e64a448b6a6c64723d62c42b83a5199ca03a7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.2/
 
-- https://sources.debian.net/src/apt/2.9.2/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-1`
 
@@ -2457,20 +2451,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.40-8
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40-8.dsc' util-linux_2.40-8.dsc 4643 SHA256:26532cb9687cf1bc8c98840038e69ee6a8240c7553cab349de403ab1920669ed
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.orig.tar.xz' util-linux_2.40.orig.tar.xz 8762888 SHA256:d57a626081f9ead02fa44c63a6af162ec19c58f53e993f206ab7c3a6641c2cd7
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40-8.debian.tar.xz' util-linux_2.40-8.debian.tar.xz 111052 SHA256:8d55056714ba6ab01b437a11b59d3da437111d8c691102e7e049be19c4e914aa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.40-8/
 
-- https://sources.debian.net/src/util-linux/2.40-8/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.40-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.40-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.24.5-1`
 

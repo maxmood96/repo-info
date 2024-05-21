@@ -1532,20 +1532,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.43.0-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.43.0-1.dsc' git_2.43.0-1.dsc 2825 SHA256:8917f913f47caeb31af3e5871ac679258fa677342db4cc3282a3ae64d6967321
-'http://deb.debian.org/debian/pool/main/g/git/git_2.43.0.orig.tar.xz' git_2.43.0.orig.tar.xz 7382996 SHA256:5446603e73d911781d259e565750dcd277a42836c8e392cac91cf137aa9b76ec
-'http://deb.debian.org/debian/pool/main/g/git/git_2.43.0-1.debian.tar.xz' git_2.43.0-1.debian.tar.xz 763384 SHA256:79c65d02aeb19fd1816830339cd48e861dc202332a2f605237a915b0819b7790
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.43.0-1/
 
-- https://sources.debian.net/src/git/1:2.43.0-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.43.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.43.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.80.2-1`
 
@@ -1930,20 +1923,13 @@ Licenses: (parsed from: `/usr/share/doc/hicolor-icon-theme/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris hicolor-icon-theme=0.17-2
-'http://deb.debian.org/debian/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.17-2.dsc' hicolor-icon-theme_0.17-2.dsc 2053 SHA256:9df02b466f82cd6fa13930bc197d001ed8ddac1abc7f8dde3db45ed1708336bd
-'http://deb.debian.org/debian/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.17.orig.tar.xz' hicolor-icon-theme_0.17.orig.tar.xz 53016 SHA256:317484352271d18cbbcfac3868eab798d67fff1b8402e740baa6ff41d588a9d8
-'http://deb.debian.org/debian/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.17-2.debian.tar.xz' hicolor-icon-theme_0.17-2.debian.tar.xz 3536 SHA256:97eec9852a2923b95bd13fc59c30fb1b9063ffd1f8a04748544d4975a84e98f2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/hicolor-icon-theme/0.17-2/
 
-- https://sources.debian.net/src/hicolor-icon-theme/0.17-2/ (for browsing the source)
-- https://sources.debian.net/src/hicolor-icon-theme/0.17-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/hicolor-icon-theme/0.17-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.23+nmu2`
 
@@ -2660,20 +2646,13 @@ Licenses: (parsed from: `/usr/share/doc/libevent-2.1-7t64/copyright`, `/usr/shar
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libevent=2.1.12-stable-8.1
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.1.12-stable-8.1.dsc' libevent_2.1.12-stable-8.1.dsc 2416 SHA256:743801c415d3421c9640aa2ee583cb6f46097e4bbd4696b025484c1e08333f8b
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.1.12-stable.orig.tar.gz' libevent_2.1.12-stable.orig.tar.gz 1100847 SHA256:92e6de1be9ec176428fd2367677e61ceffc2ee1cb119035037a27d346b0403bb
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.1.12-stable-8.1.debian.tar.xz' libevent_2.1.12-stable-8.1.debian.tar.xz 17912 SHA256:a2b67ad520ff9e7bcdff8e1102ecc89480b6b628ace05df3cd88b603b9e69677
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libevent/2.1.12-stable-8.1/
 
-- https://sources.debian.net/src/libevent/2.1.12-stable-8.1/ (for browsing the source)
-- https://sources.debian.net/src/libevent/2.1.12-stable-8.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libevent/2.1.12-stable-8.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libexif=0.6.24-1`
 
@@ -3664,20 +3643,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcb=1.17.0-1
-'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.17.0-1.dsc' libxcb_1.17.0-1.dsc 5294 SHA256:7d61f784c29d4277896c5bc6914c23c66b9ff3893fccdff7ea590296a31ab69a
-'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.17.0.orig.tar.gz' libxcb_1.17.0.orig.tar.gz 661593 SHA256:2c69287424c9e2128cb47ffe92171e10417041ec2963bceafb65cb3fcf8f0b85
-'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.17.0-1.diff.gz' libxcb_1.17.0-1.diff.gz 27870 SHA256:e1c6eaa7a4f46e90ead126f0ac033f03c73cbe3e738c8369200e2ccac1aca6a7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxcb/1.17.0-1/
 
-- https://sources.debian.net/src/libxcb/1.17.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libxcb/1.17.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxcb/1.17.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxcrypt=1:4.4.36-4`
 
@@ -4085,20 +4057,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:10.11.7-4
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.7-4.dsc' mariadb_10.11.7-4.dsc 5078 SHA256:152e15c08bf60e7eae2a433a9344ac5b8a1e55dab80d932854e48bc98cc64fc0
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.7.orig.tar.gz' mariadb_10.11.7.orig.tar.gz 96991805 SHA256:9aa2e3445fadd52524505c8d9c9bd08e4a4f51600b5c2d7933fe18ae6b1c53ca
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.7-4.debian.tar.xz' mariadb_10.11.7-4.debian.tar.xz 279328 SHA256:c321165b783d41fa14e87d1cadd85a9241a2aabe8a389f4e9a2f9bd5658a2065
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb/1:10.11.7-4/
 
-- https://sources.debian.net/src/mariadb/1:10.11.7-4/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:10.11.7-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:10.11.7-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20240123-1`
 
@@ -4425,20 +4390,13 @@ Licenses: (parsed from: `/usr/share/doc/python3-numpy/copyright`)
 - `ZLib`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris numpy=1:1.26.4+ds-8
-'http://deb.debian.org/debian/pool/main/n/numpy/numpy_1.26.4%2bds-8.dsc' numpy_1.26.4+ds-8.dsc 3017 SHA256:58a254683a9474c2e706d91e350764376a97226e62baaa5380bed35eeb0b5ece
-'http://deb.debian.org/debian/pool/main/n/numpy/numpy_1.26.4%2bds.orig.tar.xz' numpy_1.26.4+ds.orig.tar.xz 11269580 SHA256:6d7439af1de399433eb44fce065d22000b0480e6d153f013697d58387defb6af
-'http://deb.debian.org/debian/pool/main/n/numpy/numpy_1.26.4%2bds-8.debian.tar.xz' numpy_1.26.4+ds-8.debian.tar.xz 25264 SHA256:068521b75a99e7e2248fec6b45cfcce137324430174a1a0360271dc0a448e06e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/numpy/1:1.26.4+ds-8/
 
-- https://sources.debian.net/src/numpy/1:1.26.4+ds-8/ (for browsing the source)
-- https://sources.debian.net/src/numpy/1:1.26.4+ds-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/numpy/1:1.26.4+ds-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openexr=3.1.5-5.1`
 

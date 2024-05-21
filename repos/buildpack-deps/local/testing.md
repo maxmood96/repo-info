@@ -133,19 +133,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.2
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.2.dsc' apt_2.9.2.dsc 2973 SHA256:99288ae37560a08b243f880bd1b25c2488cb8869625e79f79a7d05738785a3ec
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.2.tar.xz' apt_2.9.2.tar.xz 2366352 SHA256:80aa74466b132e50ed8d0159f10e64a448b6a6c64723d62c42b83a5199ca03a7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.2/
 
-- https://sources.debian.net/src/apt/2.9.2/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-1`
 
@@ -1501,20 +1495,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.42.10+dfsg-3
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg-3.dsc' gdk-pixbuf_2.42.10+dfsg-3.dsc 3214 SHA256:cba4d9dbbc0a35d8e55137c9fa1da06d73881baf4b4f483f7a7ddd5ecaa2d98f
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.10+dfsg.orig.tar.xz 6439240 SHA256:46663e445468e92f4a0ca876b02aed4f8758595ee3acfaa6ef3ba2b29e1c1930
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg-3.debian.tar.xz' gdk-pixbuf_2.42.10+dfsg-3.debian.tar.xz 21336 SHA256:dd8003ae4be59c261ad6502d379065623681576679371109470085aa8ac94bc8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdk-pixbuf/2.42.10+dfsg-3/
 
-- https://sources.debian.net/src/gdk-pixbuf/2.42.10+dfsg-3/ (for browsing the source)
-- https://sources.debian.net/src/gdk-pixbuf/2.42.10+dfsg-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdk-pixbuf/2.42.10+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `git=1:2.43.0-1`
 
@@ -2682,20 +2669,13 @@ Licenses: (parsed from: `/usr/share/doc/libevent-2.1-7t64/copyright`, `/usr/shar
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libevent=2.1.12-stable-8.1
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.1.12-stable-8.1.dsc' libevent_2.1.12-stable-8.1.dsc 2416 SHA256:743801c415d3421c9640aa2ee583cb6f46097e4bbd4696b025484c1e08333f8b
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.1.12-stable.orig.tar.gz' libevent_2.1.12-stable.orig.tar.gz 1100847 SHA256:92e6de1be9ec176428fd2367677e61ceffc2ee1cb119035037a27d346b0403bb
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.1.12-stable-8.1.debian.tar.xz' libevent_2.1.12-stable-8.1.debian.tar.xz 17912 SHA256:a2b67ad520ff9e7bcdff8e1102ecc89480b6b628ace05df3cd88b603b9e69677
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libevent/2.1.12-stable-8.1/
 
-- https://sources.debian.net/src/libevent/2.1.12-stable-8.1/ (for browsing the source)
-- https://sources.debian.net/src/libevent/2.1.12-stable-8.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libevent/2.1.12-stable-8.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libexif=0.6.24-1`
 
@@ -4099,20 +4079,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:10.11.7-4
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.7-4.dsc' mariadb_10.11.7-4.dsc 5078 SHA256:152e15c08bf60e7eae2a433a9344ac5b8a1e55dab80d932854e48bc98cc64fc0
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.7.orig.tar.gz' mariadb_10.11.7.orig.tar.gz 96991805 SHA256:9aa2e3445fadd52524505c8d9c9bd08e4a4f51600b5c2d7933fe18ae6b1c53ca
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_10.11.7-4.debian.tar.xz' mariadb_10.11.7-4.debian.tar.xz 279328 SHA256:c321165b783d41fa14e87d1cadd85a9241a2aabe8a389f4e9a2f9bd5658a2065
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb/1:10.11.7-4/
 
-- https://sources.debian.net/src/mariadb/1:10.11.7-4/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:10.11.7-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:10.11.7-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20240123-1`
 
@@ -4423,20 +4396,13 @@ Licenses: (parsed from: `/usr/share/doc/python3-numpy/copyright`)
 - `ZLib`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris numpy=1:1.26.4+ds-8
-'http://deb.debian.org/debian/pool/main/n/numpy/numpy_1.26.4%2bds-8.dsc' numpy_1.26.4+ds-8.dsc 3017 SHA256:58a254683a9474c2e706d91e350764376a97226e62baaa5380bed35eeb0b5ece
-'http://deb.debian.org/debian/pool/main/n/numpy/numpy_1.26.4%2bds.orig.tar.xz' numpy_1.26.4+ds.orig.tar.xz 11269580 SHA256:6d7439af1de399433eb44fce065d22000b0480e6d153f013697d58387defb6af
-'http://deb.debian.org/debian/pool/main/n/numpy/numpy_1.26.4%2bds-8.debian.tar.xz' numpy_1.26.4+ds-8.debian.tar.xz 25264 SHA256:068521b75a99e7e2248fec6b45cfcce137324430174a1a0360271dc0a448e06e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/numpy/1:1.26.4+ds-8/
 
-- https://sources.debian.net/src/numpy/1:1.26.4+ds-8/ (for browsing the source)
-- https://sources.debian.net/src/numpy/1:1.26.4+ds-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/numpy/1:1.26.4+ds-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openexr=3.1.5-5.1`
 
@@ -4564,21 +4530,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.7p1-4
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.7p1-4.dsc' openssh_9.7p1-4.dsc 3284 SHA256:826c9403a681e0ec053db0a2b977efca0a07e773859fbc52f611f33d65202893
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.7p1.orig.tar.gz' openssh_9.7p1.orig.tar.gz 1848766 SHA256:490426f766d82a2763fcacd8d83ea3d70798750c7bd2aff2e57dc5660f773ffd
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.7p1.orig.tar.gz.asc' openssh_9.7p1.orig.tar.gz.asc 833 SHA256:9cee21fd45be07747fa82cd799e4cd8d14203165834d6fc7ccbcf60718901489
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.7p1-4.debian.tar.xz' openssh_9.7p1-4.debian.tar.xz 191760 SHA256:a9dfdaf12c63c03ca893c6425ac006f7abb40445fc320e74cfc97697c8cfb1b9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:9.7p1-4/
 
-- https://sources.debian.net/src/openssh/1:9.7p1-4/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:9.7p1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:9.7p1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.2.1-3`
 
@@ -5762,20 +5720,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.40-8
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40-8.dsc' util-linux_2.40-8.dsc 4643 SHA256:26532cb9687cf1bc8c98840038e69ee6a8240c7553cab349de403ab1920669ed
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.orig.tar.xz' util-linux_2.40.orig.tar.xz 8762888 SHA256:d57a626081f9ead02fa44c63a6af162ec19c58f53e993f206ab7c3a6641c2cd7
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40-8.debian.tar.xz' util-linux_2.40-8.debian.tar.xz 111052 SHA256:8d55056714ba6ab01b437a11b59d3da437111d8c691102e7e049be19c4e914aa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.40-8/
 
-- https://sources.debian.net/src/util-linux/2.40-8/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.40-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.40-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.24.5-1`
 
