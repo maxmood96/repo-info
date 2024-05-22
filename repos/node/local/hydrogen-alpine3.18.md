@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:450a4a0ee949c73fcbc6e7352b038a5fd40bff153c0ebf69b573c4f85cde6540`
-- Created: `2024-04-23T23:55:17.123231922Z`
+- Image ID: `sha256:a19326513a453cd39a23b64331d799c27baa6c502a44ef408f9c01405abd734d`
+- Created: `2024-05-21T17:32:22.266688446Z`
 - Virtual Size: ~ 126.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=18.20.2`
+  - `NODE_VERSION=18.20.3`
   - `YARN_VERSION=1.22.19`
 
 ## `apk` (`.apk`-based packages)
