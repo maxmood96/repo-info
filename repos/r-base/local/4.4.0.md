@@ -58,19 +58,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.2
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.2.dsc' apt_2.9.2.dsc 2973 SHA256:99288ae37560a08b243f880bd1b25c2488cb8869625e79f79a7d05738785a3ec
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.2.tar.xz' apt_2.9.2.tar.xz 2366352 SHA256:80aa74466b132e50ed8d0159f10e64a448b6a6c64723d62c42b83a5199ca03a7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.2/
 
-- https://sources.debian.net/src/apt/2.9.2/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-1`
 
@@ -1411,10 +1405,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris kernsmooth=2.23-22-1
-'http://http.debian.net/debian/pool/main/k/kernsmooth/kernsmooth_2.23-22-1.dsc' kernsmooth_2.23-22-1.dsc 1891 SHA256:c11f3b845695cd9df646afeb82796e2bbea1cf6b7846757df46d899731cb7708
-'http://http.debian.net/debian/pool/main/k/kernsmooth/kernsmooth_2.23-22.orig.tar.gz' kernsmooth_2.23-22.orig.tar.gz 25996 SHA256:76e044904606cab79c9edf4eae3ad63ac9d91a2962b44e063075b4b40e8574e9
-'http://http.debian.net/debian/pool/main/k/kernsmooth/kernsmooth_2.23-22-1.debian.tar.xz' kernsmooth_2.23-22-1.debian.tar.xz 3456 SHA256:025a39f51d6b9c9c06dfdca32d6f675f01d20756097b16e78ac3ae82d9e70400
+'http://deb.debian.org/debian/pool/main/k/kernsmooth/kernsmooth_2.23-22-1.dsc' kernsmooth_2.23-22-1.dsc 1891 SHA256:c11f3b845695cd9df646afeb82796e2bbea1cf6b7846757df46d899731cb7708
+'http://deb.debian.org/debian/pool/main/k/kernsmooth/kernsmooth_2.23-22.orig.tar.gz' kernsmooth_2.23-22.orig.tar.gz 25996 SHA256:76e044904606cab79c9edf4eae3ad63ac9d91a2962b44e063075b4b40e8574e9
+'http://deb.debian.org/debian/pool/main/k/kernsmooth/kernsmooth_2.23-22-1.debian.tar.xz' kernsmooth_2.23-22-1.debian.tar.xz 3456 SHA256:025a39f51d6b9c9c06dfdca32d6f675f01d20756097b16e78ac3ae82d9e70400
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/kernsmooth/2.23-22-1/ (for browsing the source)
+- https://sources.debian.net/src/kernsmooth/2.23-22-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/kernsmooth/2.23-22-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.6.3-3`
 
@@ -2209,14 +2209,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcb=1.17.0-1
-'http://http.debian.net/debian/pool/main/libx/libxcb/libxcb_1.17.0-1.dsc' libxcb_1.17.0-1.dsc 5294 SHA256:7d61f784c29d4277896c5bc6914c23c66b9ff3893fccdff7ea590296a31ab69a
-'http://http.debian.net/debian/pool/main/libx/libxcb/libxcb_1.17.0.orig.tar.gz' libxcb_1.17.0.orig.tar.gz 661593 SHA256:2c69287424c9e2128cb47ffe92171e10417041ec2963bceafb65cb3fcf8f0b85
-'http://http.debian.net/debian/pool/main/libx/libxcb/libxcb_1.17.0-1.diff.gz' libxcb_1.17.0-1.diff.gz 27870 SHA256:e1c6eaa7a4f46e90ead126f0ac033f03c73cbe3e738c8369200e2ccac1aca6a7
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libxcb/1.17.0-1/
+
 
 ### `dpkg` source package: `libxcrypt=1:4.4.36-4`
 
