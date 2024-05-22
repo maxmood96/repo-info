@@ -1,7 +1,7 @@
 ## `nats:alpine3.19`
 
 ```console
-$ docker pull nats@sha256:7c08f23567acce3eefc0fb4c8b96f32450e8a9382435bed265841a0cf848d54e
+$ docker pull nats@sha256:46b948b21d133d53865c75149902f8bcc7ecdf2015a0e5d17a1b60ad63055ae0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -128,14 +128,14 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ### `nats:alpine3.19` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:a3f56e81749917f8b07128d633c16d54338fb686f6ddcaa849a23b024cdc62cc
+$ docker pull nats@sha256:c1c3f0bceb82215bc89c429d235dfd564a0154336df7611788915005d5d22bfd
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.3 MB (14259407 bytes)**  
+-	Total Size: **8.9 MB (8886159 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6afd587d768a05bc1431c931ab535c88081752285018604a5cae23518073a5fd`
+-	Image ID: `sha256:a4a23fad47456e330d6140ec4dbe02add093ab97c9485ee26efd5c5e61894ab9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -152,13 +152,11 @@ RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		aarch64) nat
 COPY file:2c51166f33066351f3cfe3734f884c41f36fb66575bdde453c5c93e819cfae35 in /etc/nats/nats-server.conf 
 # Tue, 21 May 2024 23:03:47 GMT
 COPY file:b2810cc282a84164c4e1e5f77556bd78260283c00b329045f3f64a63f71e3570 in /usr/local/bin 
-# Tue, 21 May 2024 23:03:49 GMT
-RUN apk add --no-cache libcap   && setcap cap_net_bind_service=+ep /usr/local/bin/nats-server   && apk del libcap
-# Tue, 21 May 2024 23:03:49 GMT
+# Wed, 22 May 2024 18:33:16 GMT
 EXPOSE 4222 6222 8222
-# Tue, 21 May 2024 23:03:49 GMT
+# Wed, 22 May 2024 18:33:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 21 May 2024 23:03:49 GMT
+# Wed, 22 May 2024 18:33:16 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -179,22 +177,18 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Tue, 21 May 2024 23:04:30 GMT  
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af2a13bc359472f8406932f00ed1e4a78c2bd57597328886fca2d157b4fd875f`  
-		Last Modified: Tue, 21 May 2024 23:04:32 GMT  
-		Size: 5.4 MB (5373248 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nats:alpine3.19` - linux; arm64 variant v8
 
 ```console
-$ docker pull nats@sha256:8e0de73f92a021e34a4a3a2d9fe7db10ea0c5374f6acc4839aafa07f83389a89
+$ docker pull nats@sha256:91a69868d84728943a790c07e6d5f2fa095cc5647ed4a610a32be7bcfd987e3a
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.5 MB (14486423 bytes)**  
+-	Total Size: **9.2 MB (9214533 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a30706d32b39530e9b48913eb6b49e5b607cdf805b5b583ca6a10da052e8c863`
+-	Image ID: `sha256:7c0eb9f1eea7568ef80dab394446d660c3be468a9a6c64938f037132b1221e14`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -211,13 +205,11 @@ RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		aarch64) nat
 COPY file:2c51166f33066351f3cfe3734f884c41f36fb66575bdde453c5c93e819cfae35 in /etc/nats/nats-server.conf 
 # Tue, 21 May 2024 23:21:12 GMT
 COPY file:b2810cc282a84164c4e1e5f77556bd78260283c00b329045f3f64a63f71e3570 in /usr/local/bin 
-# Tue, 21 May 2024 23:21:13 GMT
-RUN apk add --no-cache libcap   && setcap cap_net_bind_service=+ep /usr/local/bin/nats-server   && apk del libcap
-# Tue, 21 May 2024 23:21:13 GMT
+# Wed, 22 May 2024 18:56:57 GMT
 EXPOSE 4222 6222 8222
-# Tue, 21 May 2024 23:21:14 GMT
+# Wed, 22 May 2024 18:56:57 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 21 May 2024 23:21:14 GMT
+# Wed, 22 May 2024 18:56:57 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -238,22 +230,18 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Tue, 21 May 2024 23:22:03 GMT  
 		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09d832ebe187b943a16762d91e06cfed3a2af866c23fb50873bc206b8ff64b15`  
-		Last Modified: Tue, 21 May 2024 23:22:04 GMT  
-		Size: 5.3 MB (5271890 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nats:alpine3.19` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:0b37f107c7121fb4970a680686bf47c0bdc6e221f073948f91fe1ccf935a8069
+$ docker pull nats@sha256:f92d1c718baecd1244eda884daf8b5f90208d2814f738c76b9d722e057868b27
 ```
 
 -	Docker Version: 20.10.26
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.5 MB (14453737 bytes)**  
+-	Total Size: **9.2 MB (9203460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dff3f441c8f17081f4726462e440f695fc1f61e1a2f10e242f42e4bd984077bb`
+-	Image ID: `sha256:aba0ab75ac8873f9966c3ec29d132df073cbe1b450c1516f9c1200800591f487`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -270,13 +258,11 @@ RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		aarch64) nat
 COPY file:2c51166f33066351f3cfe3734f884c41f36fb66575bdde453c5c93e819cfae35 in /etc/nats/nats-server.conf 
 # Tue, 21 May 2024 23:21:14 GMT
 COPY file:b2810cc282a84164c4e1e5f77556bd78260283c00b329045f3f64a63f71e3570 in /usr/local/bin 
-# Tue, 21 May 2024 23:21:15 GMT
-RUN apk add --no-cache libcap   && setcap cap_net_bind_service=+ep /usr/local/bin/nats-server   && apk del libcap
-# Tue, 21 May 2024 23:21:16 GMT
+# Wed, 22 May 2024 18:48:54 GMT
 EXPOSE 4222 6222 8222
-# Tue, 21 May 2024 23:21:16 GMT
+# Wed, 22 May 2024 18:48:55 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 21 May 2024 23:21:16 GMT
+# Wed, 22 May 2024 18:48:55 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -296,10 +282,6 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 	-	`sha256:a29cb8a321e6c477eee1702a71c5d6712719ebf97439a8e5ce5e98052caa4d73`  
 		Last Modified: Tue, 21 May 2024 23:21:51 GMT  
 		Size: 415.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74163ae1a817e733dfe24bdc0793bd29a32f24f194a83320208429d1d8a41355`  
-		Last Modified: Tue, 21 May 2024 23:21:53 GMT  
-		Size: 5.3 MB (5250277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nats:alpine3.19` - linux; s390x
