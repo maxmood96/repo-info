@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9fa2814a4c9a50904788e5d5f506b01d8a60522430409949170317fa91aa3f1e`
-- Created: `2024-05-13T18:30:40.253544545Z`
+- Image ID: `sha256:30de380444ec672807196166f4aea402d8fb9593d0d9f39edbcb9a4c45a3f856`
+- Created: `2024-05-22T19:56:56.736195624Z`
 - Virtual Size: ~ 1.84 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -5701,11 +5701,11 @@ $ apt-get source -qq --print-uris npth=1.6-3build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3build2.debian.tar.xz' npth_1.6-3build2.debian.tar.xz 10904 SHA512:426ab3ab9e27b3701d67cde0a4c4040aa9ccac22a0266321824487fe80a118ccd6860b6fa0fb5ca3c46dfa3c20053889fbb51a2e74618065b3aff059a0216c4c
 ```
 
-### `dpkg` source package: `odoo=17.0.20240513`
+### `dpkg` source package: `odoo=17.0.20240522`
 
 Binary Packages:
 
-- `odoo=17.0.20240513`
+- `odoo=17.0.20240522`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -6526,11 +6526,11 @@ $ apt-get source -qq --print-uris python-greenlet=1.1.2-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-greenlet/python-greenlet_1.1.2-3build1.debian.tar.xz' python-greenlet_1.1.2-3build1.debian.tar.xz 9672 SHA512:d5b62d4b448e086bef6ab5137a75c9aaae3166752bb004edf90ab98bae965d84c6306b0a9e8049231bc384a34d2f52588da1c4a3327a951259f9e238a568bca4
 ```
 
-### `dpkg` source package: `python-idna=3.3-1`
+### `dpkg` source package: `python-idna=3.3-1ubuntu0.1`
 
 Binary Packages:
 
-- `python3-idna=3.3-1`
+- `python3-idna=3.3-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/python3-idna/copyright`)
 
@@ -6541,10 +6541,10 @@ Licenses: (parsed from: `/usr/share/doc/python3-idna/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python-idna=3.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-idna/python-idna_3.3-1.dsc' python-idna_3.3-1.dsc 2094 SHA512:7f993bb98d4973a1fb523bd2deffabfa577ab555edbfdcb361be998abc8313c78d4d5f130b3252d40197990cf3b35349660eabc45b407aeb8ef16107cc1450e5
+$ apt-get source -qq --print-uris python-idna=3.3-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-idna/python-idna_3.3-1ubuntu0.1.dsc' python-idna_3.3-1ubuntu0.1.dsc 2258 SHA512:2c3308bf7cc3c761e4145edec74083dec1575064e35593afff0ca5a1d99431e5b8a42220269c6c86ae1f2e69298dfd3c2331728c39b7d4732dc2aafca8115e6f
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-idna/python-idna_3.3.orig.tar.gz' python-idna_3.3.orig.tar.gz 286689 SHA512:70b7cc8718e7d7899c75cfe476f044eae5a2fa03801fc9c12e3a092627ca943ffc4a578f9b8a55e181a11564835e125cfaaa577c02a6461dbb97366e620e53ad
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-idna/python-idna_3.3-1.debian.tar.xz' python-idna_3.3-1.debian.tar.xz 4900 SHA512:4c3e3f133999f9a0607d6787f43ebebdca48dae2127f2fe43ba764eecb72a5056fd3e2453467af0e87f88e56694bbffe1bc4121e11f21c9e4f61ee4a216cc11b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-idna/python-idna_3.3-1ubuntu0.1.debian.tar.xz' python-idna_3.3-1ubuntu0.1.debian.tar.xz 8848 SHA512:67859c244e63442af3270e7f16531aad57aff7aecf99446d4dd2090cc860c4973db1644e3836089e4a3258a6bac82a70e59a3da03bf9ddfe112c38c1c4807059
 ```
 
 ### `dpkg` source package: `python-ldap=3.2.0-4ubuntu7.1`
