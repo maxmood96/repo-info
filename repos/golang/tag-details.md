@@ -2115,7 +2115,12 @@ $ docker pull golang@sha256:6bb3dfd9218309f0a526787a94534b73fc6f45f0f60c19d53775
 
 ## `golang:1-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `golang:1-bookworm`
 
@@ -6263,7 +6268,12 @@ $ docker pull golang@sha256:7a675a2cec54a5fb59e7aa7faa1d1c87f39f04f8fcb3cf5a9c83
 
 ## `golang:1.21-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `golang:1.21-bookworm`
 
@@ -10411,7 +10421,12 @@ $ docker pull golang@sha256:7a675a2cec54a5fb59e7aa7faa1d1c87f39f04f8fcb3cf5a9c83
 
 ## `golang:1.21.10-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `golang:1.21.10-bookworm`
 
@@ -14559,7 +14574,12 @@ $ docker pull golang@sha256:6bb3dfd9218309f0a526787a94534b73fc6f45f0f60c19d53775
 
 ## `golang:1.22-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `golang:1.22-bookworm`
 
@@ -18707,7 +18727,12 @@ $ docker pull golang@sha256:6bb3dfd9218309f0a526787a94534b73fc6f45f0f60c19d53775
 
 ## `golang:1.22.3-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `golang:1.22.3-bookworm`
 
@@ -21989,7 +22014,12 @@ $ docker pull golang@sha256:6bb3dfd9218309f0a526787a94534b73fc6f45f0f60c19d53775
 
 ## `golang:alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `golang:bookworm`
 
