@@ -7383,7 +7383,12 @@ $ docker pull docker@sha256:99851a773f2adf1535c2c6c4f70fd37ee3462fafcfbcd05169f1
 
 ## `docker:24.0.9-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `docker:24.0.9-cli`
 
@@ -7864,7 +7869,12 @@ $ docker pull docker@sha256:2f417deeabad34e1048eab5d8b92dead1cd59559e6ead7d90455
 
 ## `docker:24.0.9-cli-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `docker:24.0.9-dind`
 
@@ -8525,7 +8535,12 @@ $ docker pull docker@sha256:99851a773f2adf1535c2c6c4f70fd37ee3462fafcfbcd05169f1
 
 ## `docker:24.0.9-dind-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `docker:24.0.9-dind-rootless`
 
@@ -17349,7 +17364,12 @@ $ docker pull docker@sha256:65db6c6542b69181b74f43ca41c1371d847b8519c610b925324d
 
 ## `docker:25.0.5-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `docker:25.0.5-cli`
 
@@ -17830,7 +17850,12 @@ $ docker pull docker@sha256:f7e7c02d30cf5cddab7e753d27281c97dc30cde219f240092c99
 
 ## `docker:25.0.5-cli-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `docker:25.0.5-dind`
 
@@ -18491,7 +18516,12 @@ $ docker pull docker@sha256:65db6c6542b69181b74f43ca41c1371d847b8519c610b925324d
 
 ## `docker:25.0.5-dind-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `docker:25.0.5-dind-rootless`
 
@@ -25993,7 +26023,12 @@ $ docker pull docker@sha256:47c6e01a3349717d62d7eee6de64e26420490213a8126219b8f9
 
 ## `docker:26.1.3-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `docker:26.1.3-cli`
 
@@ -26474,7 +26509,12 @@ $ docker pull docker@sha256:b6896b65bb8fc04a8a87205793a126d352b2205c48956a42c88b
 
 ## `docker:26.1.3-cli-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `docker:26.1.3-dind`
 
@@ -27135,7 +27175,12 @@ $ docker pull docker@sha256:47c6e01a3349717d62d7eee6de64e26420490213a8126219b8f9
 
 ## `docker:26.1.3-dind-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `docker:26.1.3-dind-rootless`
 
