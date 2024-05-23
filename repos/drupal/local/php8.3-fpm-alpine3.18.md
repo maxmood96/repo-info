@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e029728e4c43a4b5ddaf496dfd176c714928166c2250460c404c048dc357558f`
+- Image ID: `sha256:5e1d80bb682e46fdd34f86fb775c39ebb010a94a4d4873f255daf2db51d3baea`
 - Created: `2024-05-01T21:27:52Z`
-- Virtual Size: ~ 180.65 Mb  
+- Virtual Size: ~ 186.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -301,16 +301,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r6 description:
+libcrypto3-3.1.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r6 webpage:
+libcrypto3-3.1.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r6 installed size:
-4472 KiB
+libcrypto3-3.1.5-r0 installed size:
+4476 KiB
 
-libcrypto3-3.1.4-r6 license:
+libcrypto3-3.1.5-r0 license:
 Apache-2.0
 
 ```
@@ -420,16 +420,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-15.6-r0 description:
+libpq-15.7-r0 description:
 PostgreSQL client library
 
-libpq-15.6-r0 webpage:
+libpq-15.7-r0 webpage:
 https://www.postgresql.org/
 
-libpq-15.6-r0 installed size:
+libpq-15.7-r0 installed size:
 320 KiB
 
-libpq-15.6-r0 license:
+libpq-15.7-r0 license:
 PostgreSQL
 
 ```
@@ -454,16 +454,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r6 description:
+libssl3-3.1.5-r0 description:
 SSL shared libraries
 
-libssl3-3.1.4-r6 webpage:
+libssl3-3.1.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r6 installed size:
+libssl3-3.1.5-r0 installed size:
 552 KiB
 
-libssl3-3.1.4-r6 license:
+libssl3-3.1.5-r0 license:
 Apache-2.0
 
 ```
@@ -624,16 +624,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r6 description:
+openssl-3.1.5-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r6 webpage:
+openssl-3.1.5-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r6 installed size:
+openssl-3.1.5-r0 installed size:
 752 KiB
 
-openssl-3.1.4-r6 license:
+openssl-3.1.5-r0 license:
 Apache-2.0
 
 ```
