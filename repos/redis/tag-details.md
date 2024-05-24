@@ -1701,7 +1701,12 @@ $ docker pull redis@sha256:2ecfcfa9d7c59f3fe86242d86d459d9711bd3487473423a510149
 
 ## `redis:6-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull redis@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `redis:6-bookworm`
 
@@ -4250,7 +4255,12 @@ $ docker pull redis@sha256:2ecfcfa9d7c59f3fe86242d86d459d9711bd3487473423a510149
 
 ## `redis:6.2-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull redis@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `redis:6.2-bookworm`
 
@@ -6799,7 +6809,12 @@ $ docker pull redis@sha256:2ecfcfa9d7c59f3fe86242d86d459d9711bd3487473423a510149
 
 ## `redis:6.2.14-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull redis@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `redis:6.2.14-bookworm`
 
@@ -9348,7 +9363,12 @@ $ docker pull redis@sha256:db29371c5f9c342a85bb6aa5495591d8059e9d284b81396fe2a03
 
 ## `redis:7-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull redis@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `redis:7-bookworm`
 
@@ -11897,7 +11917,12 @@ $ docker pull redis@sha256:bc285db57292f8219f153c832b82ee902fcd30bbd883ad178744d
 
 ## `redis:7.0-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull redis@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `redis:7.0-bookworm`
 
@@ -14446,7 +14471,12 @@ $ docker pull redis@sha256:bc285db57292f8219f153c832b82ee902fcd30bbd883ad178744d
 
 ## `redis:7.0.15-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull redis@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `redis:7.0.15-bookworm`
 
@@ -16995,7 +17025,12 @@ $ docker pull redis@sha256:db29371c5f9c342a85bb6aa5495591d8059e9d284b81396fe2a03
 
 ## `redis:7.2-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull redis@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `redis:7.2-bookworm`
 
@@ -19544,7 +19579,12 @@ $ docker pull redis@sha256:db29371c5f9c342a85bb6aa5495591d8059e9d284b81396fe2a03
 
 ## `redis:7.2.5-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull redis@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `redis:7.2.5-bookworm`
 
@@ -21208,7 +21248,12 @@ $ docker pull redis@sha256:db29371c5f9c342a85bb6aa5495591d8059e9d284b81396fe2a03
 
 ## `redis:alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull redis@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `redis:bookworm`
 
