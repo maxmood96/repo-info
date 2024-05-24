@@ -1,20 +1,20 @@
-# `erlang:26.2.5.0`
+# `erlang:27.0.0.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c7c82b12fb9305d0c9996436667b6240e7d190cc406aea78fa2f4960e6b07f06`
-- Created: `2024-05-14T03:40:01.388299405Z`
-- Virtual Size: ~ 1.57 Gb  
+- Image ID: `sha256:7c5a864c6d04f611038c65da0c1eb0fbba9de718f474236056d4d242d91d54c2`
+- Created: `2024-05-22T18:46:45.458160975Z`
+- Virtual Size: ~ 1.74 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=26.2.5`
+  - `OTP_VERSION=27.0`
   - `REBAR3_VERSION=3.23.0`
   - `REBAR_VERSION=2.6.4`
 - Labels:
-  - `org.opencontainers.image.version=26.2.5`
+  - `org.opencontainers.image.version=27.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4169,17 +4169,49 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libgcrypt20/1.10.1-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libgcrypt20/1.10.1-3/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libglu=9.0.2-1.1`
+
+Binary Packages:
+
+- `libglu1-mesa:amd64=9.0.2-1.1`
+- `libglu1-mesa-dev:amd64=9.0.2-1.1`
+
+Licenses: (parsed from: `/usr/share/doc/libglu1-mesa/copyright`, `/usr/share/doc/libglu1-mesa-dev/copyright`)
+
+- `GPL-2`
+- `SGI-1.1`
+- `SGI-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libglu=9.0.2-1.1
+'http://deb.debian.org/debian/pool/main/libg/libglu/libglu_9.0.2-1.1.dsc' libglu_9.0.2-1.1.dsc 1881 SHA256:b36c23281cbc1c4c6371b81d991b3074ce28b880d46fe8a5747677495f7c55b2
+'http://deb.debian.org/debian/pool/main/libg/libglu/libglu_9.0.2.orig.tar.gz' libglu_9.0.2.orig.tar.gz 665822 SHA256:24effdfb952453cc00e275e1c82ca9787506aba0282145fff054498e60e19a65
+'http://deb.debian.org/debian/pool/main/libg/libglu/libglu_9.0.2-1.1.diff.gz' libglu_9.0.2-1.1.diff.gz 14674 SHA256:75d227b8cd8357f4d8891720a01a3606974bedd3187a09b4a321ff866a42b325
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libglu/9.0.2-1.1/ (for browsing the source)
+- https://sources.debian.net/src/libglu/9.0.2-1.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libglu/9.0.2-1.1/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libglvnd=1.6.0-1`
 
 Binary Packages:
 
 - `libegl1:amd64=1.6.0-1`
+- `libgl-dev:amd64=1.6.0-1`
 - `libgl1:amd64=1.6.0-1`
 - `libgles2:amd64=1.6.0-1`
 - `libglvnd0:amd64=1.6.0-1`
+- `libglx-dev:amd64=1.6.0-1`
 - `libglx0:amd64=1.6.0-1`
+- `libopengl-dev:amd64=1.6.0-1`
+- `libopengl0:amd64=1.6.0-1`
 
-Licenses: (parsed from: `/usr/share/doc/libegl1/copyright`, `/usr/share/doc/libgl1/copyright`, `/usr/share/doc/libgles2/copyright`, `/usr/share/doc/libglvnd0/copyright`, `/usr/share/doc/libglx0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libegl1/copyright`, `/usr/share/doc/libgl-dev/copyright`, `/usr/share/doc/libgl1/copyright`, `/usr/share/doc/libgles2/copyright`, `/usr/share/doc/libglvnd0/copyright`, `/usr/share/doc/libglx-dev/copyright`, `/usr/share/doc/libglx0/copyright`, `/usr/share/doc/libopengl-dev/copyright`, `/usr/share/doc/libopengl0/copyright`)
 
 - `Apache-2.0`
 - `BSD-1-clause`
@@ -8718,12 +8750,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/wayland/1.21.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/wayland/1.21.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `webkit2gtk=2.44.1-1~deb12u1`
+### `dpkg` source package: `webkit2gtk=2.44.2-1~deb12u1`
 
 Binary Packages:
 
-- `libjavascriptcoregtk-4.0-18:amd64=2.44.1-1~deb12u1`
-- `libwebkit2gtk-4.0-37:amd64=2.44.1-1~deb12u1`
+- `libjavascriptcoregtk-4.0-18:amd64=2.44.2-1~deb12u1`
+- `libwebkit2gtk-4.0-37:amd64=2.44.2-1~deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.0-18/copyright`, `/usr/share/doc/libwebkit2gtk-4.0-37/copyright`)
 
@@ -8761,18 +8793,18 @@ Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.0-18/copyright`, 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris webkit2gtk=2.44.1-1~deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.44.1-1%7edeb12u1.dsc' webkit2gtk_2.44.1-1~deb12u1.dsc 5118 SHA256:794e7e6dec60439bac97495b8952b5a0acf17e38c707149b9da89fb7a8b2dfe7
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.44.1.orig.tar.xz' webkit2gtk_2.44.1.orig.tar.xz 36280696 SHA256:425b1459b0f04d0600c78d1abb5e7edfa3c060a420f8b231e9a6a2d5d29c5561
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.44.1.orig.tar.xz.asc' webkit2gtk_2.44.1.orig.tar.xz.asc 195 SHA256:f87130ba3fed23197f1cadcc1e470bcf0ed17ad42501b64b8c6cabb598e339cb
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.44.1-1%7edeb12u1.debian.tar.xz' webkit2gtk_2.44.1-1~deb12u1.debian.tar.xz 87260 SHA256:41cc861198f03f0d7c38a9f6e1888db5035a2d38b5fb21d47f1cd29a6f064d92
+$ apt-get source -qq --print-uris webkit2gtk=2.44.2-1~deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.44.2-1%7edeb12u1.dsc' webkit2gtk_2.44.2-1~deb12u1.dsc 5118 SHA256:dcca64110811709ced785ae8ec884734954944d82ed99e49919d8e71db2376e8
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.44.2.orig.tar.xz' webkit2gtk_2.44.2.orig.tar.xz 36289060 SHA256:523f42c8ff24832add17631f6eaafe8f9303afe316ef1a7e1844b952a7f7521b
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.44.2.orig.tar.xz.asc' webkit2gtk_2.44.2.orig.tar.xz.asc 833 SHA256:0e7c2a4b21cd45f3913db8c23b95d7f5db70bafa399316d6059008eec5de1f51
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.44.2-1%7edeb12u1.debian.tar.xz' webkit2gtk_2.44.2-1~deb12u1.debian.tar.xz 88772 SHA256:970a39f0c748aadadc8e964905530bee0b0cbd2de91da9faab489bf004f12ef2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/webkit2gtk/2.44.1-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/webkit2gtk/2.44.1-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/webkit2gtk/2.44.1-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/webkit2gtk/2.44.2-1~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/webkit2gtk/2.44.2-1~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/webkit2gtk/2.44.2-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21.3-1`
 
@@ -8831,10 +8863,15 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libwxbase3.2-1:amd64=3.2.2+dfsg-2`
+- `libwxgtk-gl3.2-1:amd64=3.2.2+dfsg-2`
 - `libwxgtk-webview3.2-1:amd64=3.2.2+dfsg-2`
+- `libwxgtk-webview3.2-dev:amd64=3.2.2+dfsg-2`
 - `libwxgtk3.2-1:amd64=3.2.2+dfsg-2`
+- `libwxgtk3.2-dev:amd64=3.2.2+dfsg-2`
+- `wx-common=3.2.2+dfsg-2`
+- `wx3.2-headers=3.2.2+dfsg-2`
 
-Licenses: (parsed from: `/usr/share/doc/libwxbase3.2-1/copyright`, `/usr/share/doc/libwxgtk-webview3.2-1/copyright`, `/usr/share/doc/libwxgtk3.2-1/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libwxbase3.2-1/copyright`, `/usr/share/doc/libwxgtk-gl3.2-1/copyright`, `/usr/share/doc/libwxgtk-webview3.2-1/copyright`, `/usr/share/doc/libwxgtk-webview3.2-dev/copyright`, `/usr/share/doc/libwxgtk3.2-1/copyright`, `/usr/share/doc/libwxgtk3.2-dev/copyright`, `/usr/share/doc/wx-common/copyright`, `/usr/share/doc/wx3.2-headers/copyright`)
 
 - `(GPL-2+ and/or GPL-3+) with Libtool exception`
 - `BSD-2-clause`
