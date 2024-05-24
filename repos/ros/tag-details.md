@@ -7435,7 +7435,7 @@ CMD ["bash"]
 ## `ros:rolling`
 
 ```console
-$ docker pull ros@sha256:bdb7718f2185d3d9cf54712c617e0ad82d2f02ae15ccb90f56d0598c242cd9d3
+$ docker pull ros@sha256:6db5e39e98d876243d7f3498191e3c94e06d31192657e70c2d426749987fc6bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7446,14 +7446,14 @@ $ docker pull ros@sha256:bdb7718f2185d3d9cf54712c617e0ad82d2f02ae15ccb90f56d0598
 ### `ros:rolling` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:ca7ada2bcd35ac04deb8cdda8b2f971321533b3f9e2bbd0b9f8d33005b8f625d
+$ docker pull ros@sha256:e9abb5783131b9944bb30f3bf77814bc7215506d0b69c22ab23580107a59426d
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **299.7 MB (299704572 bytes)**  
+-	Total Size: **302.1 MB (302115842 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ccfc1148c7c9ae20e4e5a5292c3a1e63673b55903ecd6b8af28ea6a9472466f`
+-	Image ID: `sha256:1186d494b6a39e4ca32a14a08a99e937943a2d5cba14b76e35bfbfdce2b1dc67`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -7484,22 +7484,22 @@ ENV LANG=C.UTF-8
 ENV LC_ALL=C.UTF-8
 # Thu, 02 May 2024 04:17:14 GMT
 ENV ROS_DISTRO=rolling
-# Thu, 02 May 2024 04:17:58 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.10.0-3*     && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:22 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.11.0-1*     && rm -rf /var/lib/apt/lists/*
+# Fri, 24 May 2024 21:34:24 GMT
 COPY file:ec5b16a0e777d7d7d041a72ffc817bf5f7b375662afa0c404f3ca36fad1afb90 in / 
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:24 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:24 GMT
 CMD ["bash"]
-# Thu, 02 May 2024 04:18:27 GMT
+# Fri, 24 May 2024 21:35:08 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     build-essential     git     python3-colcon-common-extensions     python3-colcon-mixin     python3-rosdep     python3-vcstool     && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 04:18:33 GMT
+# Fri, 24 May 2024 21:35:12 GMT
 RUN rosdep init &&   rosdep update --rosdistro $ROS_DISTRO
-# Thu, 02 May 2024 04:18:38 GMT
+# Fri, 24 May 2024 21:35:17 GMT
 RUN colcon mixin add default       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml &&     colcon mixin update &&     colcon metadata add default       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml &&     colcon metadata update
-# Thu, 02 May 2024 04:18:53 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-base=0.10.0-3*     && rm -rf /var/lib/apt/lists/*
+# Fri, 24 May 2024 21:35:45 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-base=0.11.0-1*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -7523,29 +7523,29 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 		Last Modified: Thu, 02 May 2024 04:29:42 GMT  
 		Size: 272.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2e484ef4424e4b62b917fb7a6d4980f231d1685459e628d5080f9091c5b2456`  
-		Last Modified: Thu, 02 May 2024 04:30:00 GMT  
-		Size: 122.4 MB (122415848 bytes)  
+	-	`sha256:85106c03d3ddc3385408b7c37cd8222141a83aba79b86de526e777de6451996f`  
+		Last Modified: Fri, 24 May 2024 21:39:02 GMT  
+		Size: 124.8 MB (124817026 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f79989973bd9f0a6fde631f5c045521fd10a6645a57328a68993f0ed4cc2e375`  
-		Last Modified: Thu, 02 May 2024 04:29:42 GMT  
-		Size: 195.0 B  
+	-	`sha256:f23c173b29a00075fea4ff0384195c1b2f433920a2791c5de0a5734608221f99`  
+		Last Modified: Fri, 24 May 2024 21:38:43 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b11bf6acf43f7c5e6841d0732bd150769a2d936ce4044ae9775dba0e155ef6bf`  
-		Last Modified: Thu, 02 May 2024 04:30:25 GMT  
-		Size: 114.3 MB (114305622 bytes)  
+	-	`sha256:45ccd436aff1797542d785fe2d21548bbdbd33bfa9de21a9a4e07709515de564`  
+		Last Modified: Fri, 24 May 2024 21:39:25 GMT  
+		Size: 114.3 MB (114313028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40758d223f42f271f3eb830670bf4c2b9cc898dcd5aa35864500eb72eb98f145`  
-		Last Modified: Thu, 02 May 2024 04:30:09 GMT  
-		Size: 308.7 KB (308746 bytes)  
+	-	`sha256:9311ed60be103591ef6803f1c0d07f49e5654402d542e34de9bb76b78b840e43`  
+		Last Modified: Fri, 24 May 2024 21:39:10 GMT  
+		Size: 311.1 KB (311084 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ace9d99d6167521400d39dda9c24528cd8e174cab8b7f2e0cbba82f5dec2bd6c`  
-		Last Modified: Thu, 02 May 2024 04:30:09 GMT  
-		Size: 2.5 KB (2505 bytes)  
+	-	`sha256:4da4b7a314399a6d8f2aa03ba296793df4ac9a320dcb6b14ea8a94854338d715`  
+		Last Modified: Fri, 24 May 2024 21:39:10 GMT  
+		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58a01497548475d2118d2fcb5a002afea5fd119e767be8c1a5dcf178d08253a7`  
-		Last Modified: Thu, 02 May 2024 04:30:13 GMT  
-		Size: 27.7 MB (27665794 bytes)  
+	-	`sha256:7079b7225bc737db75abdd31d0ebb0eda29aeea1151692ce63045bdda8101503`  
+		Last Modified: Fri, 24 May 2024 21:39:14 GMT  
+		Size: 27.7 MB (27666160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:rolling` - linux; arm64 variant v8
@@ -7656,7 +7656,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 ## `ros:rolling-perception`
 
 ```console
-$ docker pull ros@sha256:5ffdb1911b2b032d7f32de3205256d596c2ff38d4c3f1e077532429b22d93aa1
+$ docker pull ros@sha256:51cedc6bff81c040259342f779a31e8be6b15c407b0cafafe76bd404c778c396
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7667,14 +7667,14 @@ $ docker pull ros@sha256:5ffdb1911b2b032d7f32de3205256d596c2ff38d4c3f1e077532429
 ### `ros:rolling-perception` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:2fd908b6968ab02b550c08277571782fd59a95cd3adcf34c520ee72630e5f71f
+$ docker pull ros@sha256:3619813fbf6a9ece0be81f1d792029f43f0f4ebb65ba1cb9cb137fb165a5703e
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **623.7 MB (623726098 bytes)**  
+-	Total Size: **626.2 MB (626154819 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b05f377cc57d20fa9ba0d63876a81ad982669c1bd2b7e2d6da4c48787992f764`
+-	Image ID: `sha256:761f6479de3d09f62cee5db9cba33af8a4afb4aad6444661983ed0780f3bc4ac`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -7705,24 +7705,24 @@ ENV LANG=C.UTF-8
 ENV LC_ALL=C.UTF-8
 # Thu, 02 May 2024 04:17:14 GMT
 ENV ROS_DISTRO=rolling
-# Thu, 02 May 2024 04:17:58 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.10.0-3*     && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:22 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.11.0-1*     && rm -rf /var/lib/apt/lists/*
+# Fri, 24 May 2024 21:34:24 GMT
 COPY file:ec5b16a0e777d7d7d041a72ffc817bf5f7b375662afa0c404f3ca36fad1afb90 in / 
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:24 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:24 GMT
 CMD ["bash"]
-# Thu, 02 May 2024 04:18:27 GMT
+# Fri, 24 May 2024 21:35:08 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     build-essential     git     python3-colcon-common-extensions     python3-colcon-mixin     python3-rosdep     python3-vcstool     && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 04:18:33 GMT
+# Fri, 24 May 2024 21:35:12 GMT
 RUN rosdep init &&   rosdep update --rosdistro $ROS_DISTRO
-# Thu, 02 May 2024 04:18:38 GMT
+# Fri, 24 May 2024 21:35:17 GMT
 RUN colcon mixin add default       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml &&     colcon mixin update &&     colcon metadata add default       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml &&     colcon metadata update
-# Thu, 02 May 2024 04:18:53 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-base=0.10.0-3*     && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 04:19:46 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-perception=0.10.0-3*     && rm -rf /var/lib/apt/lists/*
+# Fri, 24 May 2024 21:35:45 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-base=0.11.0-1*     && rm -rf /var/lib/apt/lists/*
+# Fri, 24 May 2024 21:37:53 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-perception=0.11.0-1*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -7746,33 +7746,33 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 		Last Modified: Thu, 02 May 2024 04:29:42 GMT  
 		Size: 272.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2e484ef4424e4b62b917fb7a6d4980f231d1685459e628d5080f9091c5b2456`  
-		Last Modified: Thu, 02 May 2024 04:30:00 GMT  
-		Size: 122.4 MB (122415848 bytes)  
+	-	`sha256:85106c03d3ddc3385408b7c37cd8222141a83aba79b86de526e777de6451996f`  
+		Last Modified: Fri, 24 May 2024 21:39:02 GMT  
+		Size: 124.8 MB (124817026 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f79989973bd9f0a6fde631f5c045521fd10a6645a57328a68993f0ed4cc2e375`  
-		Last Modified: Thu, 02 May 2024 04:29:42 GMT  
-		Size: 195.0 B  
+	-	`sha256:f23c173b29a00075fea4ff0384195c1b2f433920a2791c5de0a5734608221f99`  
+		Last Modified: Fri, 24 May 2024 21:38:43 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b11bf6acf43f7c5e6841d0732bd150769a2d936ce4044ae9775dba0e155ef6bf`  
-		Last Modified: Thu, 02 May 2024 04:30:25 GMT  
-		Size: 114.3 MB (114305622 bytes)  
+	-	`sha256:45ccd436aff1797542d785fe2d21548bbdbd33bfa9de21a9a4e07709515de564`  
+		Last Modified: Fri, 24 May 2024 21:39:25 GMT  
+		Size: 114.3 MB (114313028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40758d223f42f271f3eb830670bf4c2b9cc898dcd5aa35864500eb72eb98f145`  
-		Last Modified: Thu, 02 May 2024 04:30:09 GMT  
-		Size: 308.7 KB (308746 bytes)  
+	-	`sha256:9311ed60be103591ef6803f1c0d07f49e5654402d542e34de9bb76b78b840e43`  
+		Last Modified: Fri, 24 May 2024 21:39:10 GMT  
+		Size: 311.1 KB (311084 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ace9d99d6167521400d39dda9c24528cd8e174cab8b7f2e0cbba82f5dec2bd6c`  
-		Last Modified: Thu, 02 May 2024 04:30:09 GMT  
-		Size: 2.5 KB (2505 bytes)  
+	-	`sha256:4da4b7a314399a6d8f2aa03ba296793df4ac9a320dcb6b14ea8a94854338d715`  
+		Last Modified: Fri, 24 May 2024 21:39:10 GMT  
+		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58a01497548475d2118d2fcb5a002afea5fd119e767be8c1a5dcf178d08253a7`  
-		Last Modified: Thu, 02 May 2024 04:30:13 GMT  
-		Size: 27.7 MB (27665794 bytes)  
+	-	`sha256:7079b7225bc737db75abdd31d0ebb0eda29aeea1151692ce63045bdda8101503`  
+		Last Modified: Fri, 24 May 2024 21:39:14 GMT  
+		Size: 27.7 MB (27666160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0aae60b44cf3b98a9f8dfba35800d853a8b3646d165d3a978faec747b29a1c9`  
-		Last Modified: Thu, 02 May 2024 04:31:20 GMT  
-		Size: 324.0 MB (324021526 bytes)  
+	-	`sha256:7c9451ac84327c4e39e3d330b9ba0250b07cd5758ed340c8c97e2ff1551fa46f`  
+		Last Modified: Fri, 24 May 2024 21:40:18 GMT  
+		Size: 324.0 MB (324038977 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:rolling-perception` - linux; arm64 variant v8
@@ -7889,7 +7889,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 ## `ros:rolling-perception-noble`
 
 ```console
-$ docker pull ros@sha256:5ffdb1911b2b032d7f32de3205256d596c2ff38d4c3f1e077532429b22d93aa1
+$ docker pull ros@sha256:51cedc6bff81c040259342f779a31e8be6b15c407b0cafafe76bd404c778c396
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7900,14 +7900,14 @@ $ docker pull ros@sha256:5ffdb1911b2b032d7f32de3205256d596c2ff38d4c3f1e077532429
 ### `ros:rolling-perception-noble` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:2fd908b6968ab02b550c08277571782fd59a95cd3adcf34c520ee72630e5f71f
+$ docker pull ros@sha256:3619813fbf6a9ece0be81f1d792029f43f0f4ebb65ba1cb9cb137fb165a5703e
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **623.7 MB (623726098 bytes)**  
+-	Total Size: **626.2 MB (626154819 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b05f377cc57d20fa9ba0d63876a81ad982669c1bd2b7e2d6da4c48787992f764`
+-	Image ID: `sha256:761f6479de3d09f62cee5db9cba33af8a4afb4aad6444661983ed0780f3bc4ac`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -7938,24 +7938,24 @@ ENV LANG=C.UTF-8
 ENV LC_ALL=C.UTF-8
 # Thu, 02 May 2024 04:17:14 GMT
 ENV ROS_DISTRO=rolling
-# Thu, 02 May 2024 04:17:58 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.10.0-3*     && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:22 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.11.0-1*     && rm -rf /var/lib/apt/lists/*
+# Fri, 24 May 2024 21:34:24 GMT
 COPY file:ec5b16a0e777d7d7d041a72ffc817bf5f7b375662afa0c404f3ca36fad1afb90 in / 
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:24 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:24 GMT
 CMD ["bash"]
-# Thu, 02 May 2024 04:18:27 GMT
+# Fri, 24 May 2024 21:35:08 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     build-essential     git     python3-colcon-common-extensions     python3-colcon-mixin     python3-rosdep     python3-vcstool     && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 04:18:33 GMT
+# Fri, 24 May 2024 21:35:12 GMT
 RUN rosdep init &&   rosdep update --rosdistro $ROS_DISTRO
-# Thu, 02 May 2024 04:18:38 GMT
+# Fri, 24 May 2024 21:35:17 GMT
 RUN colcon mixin add default       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml &&     colcon mixin update &&     colcon metadata add default       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml &&     colcon metadata update
-# Thu, 02 May 2024 04:18:53 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-base=0.10.0-3*     && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 04:19:46 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-perception=0.10.0-3*     && rm -rf /var/lib/apt/lists/*
+# Fri, 24 May 2024 21:35:45 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-base=0.11.0-1*     && rm -rf /var/lib/apt/lists/*
+# Fri, 24 May 2024 21:37:53 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-perception=0.11.0-1*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -7979,33 +7979,33 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 		Last Modified: Thu, 02 May 2024 04:29:42 GMT  
 		Size: 272.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2e484ef4424e4b62b917fb7a6d4980f231d1685459e628d5080f9091c5b2456`  
-		Last Modified: Thu, 02 May 2024 04:30:00 GMT  
-		Size: 122.4 MB (122415848 bytes)  
+	-	`sha256:85106c03d3ddc3385408b7c37cd8222141a83aba79b86de526e777de6451996f`  
+		Last Modified: Fri, 24 May 2024 21:39:02 GMT  
+		Size: 124.8 MB (124817026 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f79989973bd9f0a6fde631f5c045521fd10a6645a57328a68993f0ed4cc2e375`  
-		Last Modified: Thu, 02 May 2024 04:29:42 GMT  
-		Size: 195.0 B  
+	-	`sha256:f23c173b29a00075fea4ff0384195c1b2f433920a2791c5de0a5734608221f99`  
+		Last Modified: Fri, 24 May 2024 21:38:43 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b11bf6acf43f7c5e6841d0732bd150769a2d936ce4044ae9775dba0e155ef6bf`  
-		Last Modified: Thu, 02 May 2024 04:30:25 GMT  
-		Size: 114.3 MB (114305622 bytes)  
+	-	`sha256:45ccd436aff1797542d785fe2d21548bbdbd33bfa9de21a9a4e07709515de564`  
+		Last Modified: Fri, 24 May 2024 21:39:25 GMT  
+		Size: 114.3 MB (114313028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40758d223f42f271f3eb830670bf4c2b9cc898dcd5aa35864500eb72eb98f145`  
-		Last Modified: Thu, 02 May 2024 04:30:09 GMT  
-		Size: 308.7 KB (308746 bytes)  
+	-	`sha256:9311ed60be103591ef6803f1c0d07f49e5654402d542e34de9bb76b78b840e43`  
+		Last Modified: Fri, 24 May 2024 21:39:10 GMT  
+		Size: 311.1 KB (311084 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ace9d99d6167521400d39dda9c24528cd8e174cab8b7f2e0cbba82f5dec2bd6c`  
-		Last Modified: Thu, 02 May 2024 04:30:09 GMT  
-		Size: 2.5 KB (2505 bytes)  
+	-	`sha256:4da4b7a314399a6d8f2aa03ba296793df4ac9a320dcb6b14ea8a94854338d715`  
+		Last Modified: Fri, 24 May 2024 21:39:10 GMT  
+		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58a01497548475d2118d2fcb5a002afea5fd119e767be8c1a5dcf178d08253a7`  
-		Last Modified: Thu, 02 May 2024 04:30:13 GMT  
-		Size: 27.7 MB (27665794 bytes)  
+	-	`sha256:7079b7225bc737db75abdd31d0ebb0eda29aeea1151692ce63045bdda8101503`  
+		Last Modified: Fri, 24 May 2024 21:39:14 GMT  
+		Size: 27.7 MB (27666160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0aae60b44cf3b98a9f8dfba35800d853a8b3646d165d3a978faec747b29a1c9`  
-		Last Modified: Thu, 02 May 2024 04:31:20 GMT  
-		Size: 324.0 MB (324021526 bytes)  
+	-	`sha256:7c9451ac84327c4e39e3d330b9ba0250b07cd5758ed340c8c97e2ff1551fa46f`  
+		Last Modified: Fri, 24 May 2024 21:40:18 GMT  
+		Size: 324.0 MB (324038977 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:rolling-perception-noble` - linux; arm64 variant v8
@@ -8122,7 +8122,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 ## `ros:rolling-ros-base`
 
 ```console
-$ docker pull ros@sha256:bdb7718f2185d3d9cf54712c617e0ad82d2f02ae15ccb90f56d0598c242cd9d3
+$ docker pull ros@sha256:6db5e39e98d876243d7f3498191e3c94e06d31192657e70c2d426749987fc6bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8133,14 +8133,14 @@ $ docker pull ros@sha256:bdb7718f2185d3d9cf54712c617e0ad82d2f02ae15ccb90f56d0598
 ### `ros:rolling-ros-base` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:ca7ada2bcd35ac04deb8cdda8b2f971321533b3f9e2bbd0b9f8d33005b8f625d
+$ docker pull ros@sha256:e9abb5783131b9944bb30f3bf77814bc7215506d0b69c22ab23580107a59426d
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **299.7 MB (299704572 bytes)**  
+-	Total Size: **302.1 MB (302115842 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ccfc1148c7c9ae20e4e5a5292c3a1e63673b55903ecd6b8af28ea6a9472466f`
+-	Image ID: `sha256:1186d494b6a39e4ca32a14a08a99e937943a2d5cba14b76e35bfbfdce2b1dc67`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -8171,22 +8171,22 @@ ENV LANG=C.UTF-8
 ENV LC_ALL=C.UTF-8
 # Thu, 02 May 2024 04:17:14 GMT
 ENV ROS_DISTRO=rolling
-# Thu, 02 May 2024 04:17:58 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.10.0-3*     && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:22 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.11.0-1*     && rm -rf /var/lib/apt/lists/*
+# Fri, 24 May 2024 21:34:24 GMT
 COPY file:ec5b16a0e777d7d7d041a72ffc817bf5f7b375662afa0c404f3ca36fad1afb90 in / 
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:24 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:24 GMT
 CMD ["bash"]
-# Thu, 02 May 2024 04:18:27 GMT
+# Fri, 24 May 2024 21:35:08 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     build-essential     git     python3-colcon-common-extensions     python3-colcon-mixin     python3-rosdep     python3-vcstool     && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 04:18:33 GMT
+# Fri, 24 May 2024 21:35:12 GMT
 RUN rosdep init &&   rosdep update --rosdistro $ROS_DISTRO
-# Thu, 02 May 2024 04:18:38 GMT
+# Fri, 24 May 2024 21:35:17 GMT
 RUN colcon mixin add default       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml &&     colcon mixin update &&     colcon metadata add default       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml &&     colcon metadata update
-# Thu, 02 May 2024 04:18:53 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-base=0.10.0-3*     && rm -rf /var/lib/apt/lists/*
+# Fri, 24 May 2024 21:35:45 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-base=0.11.0-1*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -8210,29 +8210,29 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 		Last Modified: Thu, 02 May 2024 04:29:42 GMT  
 		Size: 272.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2e484ef4424e4b62b917fb7a6d4980f231d1685459e628d5080f9091c5b2456`  
-		Last Modified: Thu, 02 May 2024 04:30:00 GMT  
-		Size: 122.4 MB (122415848 bytes)  
+	-	`sha256:85106c03d3ddc3385408b7c37cd8222141a83aba79b86de526e777de6451996f`  
+		Last Modified: Fri, 24 May 2024 21:39:02 GMT  
+		Size: 124.8 MB (124817026 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f79989973bd9f0a6fde631f5c045521fd10a6645a57328a68993f0ed4cc2e375`  
-		Last Modified: Thu, 02 May 2024 04:29:42 GMT  
-		Size: 195.0 B  
+	-	`sha256:f23c173b29a00075fea4ff0384195c1b2f433920a2791c5de0a5734608221f99`  
+		Last Modified: Fri, 24 May 2024 21:38:43 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b11bf6acf43f7c5e6841d0732bd150769a2d936ce4044ae9775dba0e155ef6bf`  
-		Last Modified: Thu, 02 May 2024 04:30:25 GMT  
-		Size: 114.3 MB (114305622 bytes)  
+	-	`sha256:45ccd436aff1797542d785fe2d21548bbdbd33bfa9de21a9a4e07709515de564`  
+		Last Modified: Fri, 24 May 2024 21:39:25 GMT  
+		Size: 114.3 MB (114313028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40758d223f42f271f3eb830670bf4c2b9cc898dcd5aa35864500eb72eb98f145`  
-		Last Modified: Thu, 02 May 2024 04:30:09 GMT  
-		Size: 308.7 KB (308746 bytes)  
+	-	`sha256:9311ed60be103591ef6803f1c0d07f49e5654402d542e34de9bb76b78b840e43`  
+		Last Modified: Fri, 24 May 2024 21:39:10 GMT  
+		Size: 311.1 KB (311084 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ace9d99d6167521400d39dda9c24528cd8e174cab8b7f2e0cbba82f5dec2bd6c`  
-		Last Modified: Thu, 02 May 2024 04:30:09 GMT  
-		Size: 2.5 KB (2505 bytes)  
+	-	`sha256:4da4b7a314399a6d8f2aa03ba296793df4ac9a320dcb6b14ea8a94854338d715`  
+		Last Modified: Fri, 24 May 2024 21:39:10 GMT  
+		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58a01497548475d2118d2fcb5a002afea5fd119e767be8c1a5dcf178d08253a7`  
-		Last Modified: Thu, 02 May 2024 04:30:13 GMT  
-		Size: 27.7 MB (27665794 bytes)  
+	-	`sha256:7079b7225bc737db75abdd31d0ebb0eda29aeea1151692ce63045bdda8101503`  
+		Last Modified: Fri, 24 May 2024 21:39:14 GMT  
+		Size: 27.7 MB (27666160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:rolling-ros-base` - linux; arm64 variant v8
@@ -8343,7 +8343,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 ## `ros:rolling-ros-base-noble`
 
 ```console
-$ docker pull ros@sha256:bdb7718f2185d3d9cf54712c617e0ad82d2f02ae15ccb90f56d0598c242cd9d3
+$ docker pull ros@sha256:6db5e39e98d876243d7f3498191e3c94e06d31192657e70c2d426749987fc6bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8354,14 +8354,14 @@ $ docker pull ros@sha256:bdb7718f2185d3d9cf54712c617e0ad82d2f02ae15ccb90f56d0598
 ### `ros:rolling-ros-base-noble` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:ca7ada2bcd35ac04deb8cdda8b2f971321533b3f9e2bbd0b9f8d33005b8f625d
+$ docker pull ros@sha256:e9abb5783131b9944bb30f3bf77814bc7215506d0b69c22ab23580107a59426d
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **299.7 MB (299704572 bytes)**  
+-	Total Size: **302.1 MB (302115842 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ccfc1148c7c9ae20e4e5a5292c3a1e63673b55903ecd6b8af28ea6a9472466f`
+-	Image ID: `sha256:1186d494b6a39e4ca32a14a08a99e937943a2d5cba14b76e35bfbfdce2b1dc67`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -8392,22 +8392,22 @@ ENV LANG=C.UTF-8
 ENV LC_ALL=C.UTF-8
 # Thu, 02 May 2024 04:17:14 GMT
 ENV ROS_DISTRO=rolling
-# Thu, 02 May 2024 04:17:58 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.10.0-3*     && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:22 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.11.0-1*     && rm -rf /var/lib/apt/lists/*
+# Fri, 24 May 2024 21:34:24 GMT
 COPY file:ec5b16a0e777d7d7d041a72ffc817bf5f7b375662afa0c404f3ca36fad1afb90 in / 
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:24 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:24 GMT
 CMD ["bash"]
-# Thu, 02 May 2024 04:18:27 GMT
+# Fri, 24 May 2024 21:35:08 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     build-essential     git     python3-colcon-common-extensions     python3-colcon-mixin     python3-rosdep     python3-vcstool     && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 04:18:33 GMT
+# Fri, 24 May 2024 21:35:12 GMT
 RUN rosdep init &&   rosdep update --rosdistro $ROS_DISTRO
-# Thu, 02 May 2024 04:18:38 GMT
+# Fri, 24 May 2024 21:35:17 GMT
 RUN colcon mixin add default       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml &&     colcon mixin update &&     colcon metadata add default       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml &&     colcon metadata update
-# Thu, 02 May 2024 04:18:53 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-base=0.10.0-3*     && rm -rf /var/lib/apt/lists/*
+# Fri, 24 May 2024 21:35:45 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-base=0.11.0-1*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -8431,29 +8431,29 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 		Last Modified: Thu, 02 May 2024 04:29:42 GMT  
 		Size: 272.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2e484ef4424e4b62b917fb7a6d4980f231d1685459e628d5080f9091c5b2456`  
-		Last Modified: Thu, 02 May 2024 04:30:00 GMT  
-		Size: 122.4 MB (122415848 bytes)  
+	-	`sha256:85106c03d3ddc3385408b7c37cd8222141a83aba79b86de526e777de6451996f`  
+		Last Modified: Fri, 24 May 2024 21:39:02 GMT  
+		Size: 124.8 MB (124817026 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f79989973bd9f0a6fde631f5c045521fd10a6645a57328a68993f0ed4cc2e375`  
-		Last Modified: Thu, 02 May 2024 04:29:42 GMT  
-		Size: 195.0 B  
+	-	`sha256:f23c173b29a00075fea4ff0384195c1b2f433920a2791c5de0a5734608221f99`  
+		Last Modified: Fri, 24 May 2024 21:38:43 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b11bf6acf43f7c5e6841d0732bd150769a2d936ce4044ae9775dba0e155ef6bf`  
-		Last Modified: Thu, 02 May 2024 04:30:25 GMT  
-		Size: 114.3 MB (114305622 bytes)  
+	-	`sha256:45ccd436aff1797542d785fe2d21548bbdbd33bfa9de21a9a4e07709515de564`  
+		Last Modified: Fri, 24 May 2024 21:39:25 GMT  
+		Size: 114.3 MB (114313028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40758d223f42f271f3eb830670bf4c2b9cc898dcd5aa35864500eb72eb98f145`  
-		Last Modified: Thu, 02 May 2024 04:30:09 GMT  
-		Size: 308.7 KB (308746 bytes)  
+	-	`sha256:9311ed60be103591ef6803f1c0d07f49e5654402d542e34de9bb76b78b840e43`  
+		Last Modified: Fri, 24 May 2024 21:39:10 GMT  
+		Size: 311.1 KB (311084 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ace9d99d6167521400d39dda9c24528cd8e174cab8b7f2e0cbba82f5dec2bd6c`  
-		Last Modified: Thu, 02 May 2024 04:30:09 GMT  
-		Size: 2.5 KB (2505 bytes)  
+	-	`sha256:4da4b7a314399a6d8f2aa03ba296793df4ac9a320dcb6b14ea8a94854338d715`  
+		Last Modified: Fri, 24 May 2024 21:39:10 GMT  
+		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58a01497548475d2118d2fcb5a002afea5fd119e767be8c1a5dcf178d08253a7`  
-		Last Modified: Thu, 02 May 2024 04:30:13 GMT  
-		Size: 27.7 MB (27665794 bytes)  
+	-	`sha256:7079b7225bc737db75abdd31d0ebb0eda29aeea1151692ce63045bdda8101503`  
+		Last Modified: Fri, 24 May 2024 21:39:14 GMT  
+		Size: 27.7 MB (27666160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:rolling-ros-base-noble` - linux; arm64 variant v8
@@ -8564,7 +8564,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 ## `ros:rolling-ros-core`
 
 ```console
-$ docker pull ros@sha256:f640feb3e48b78363a1ff58a6a06e7e7e8f8f27d951d0abae9583582a7b02948
+$ docker pull ros@sha256:f6ecb5307e788905afdcb71f48285b524d12377e58ab50168bb60d304b546daa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8575,14 +8575,14 @@ $ docker pull ros@sha256:f640feb3e48b78363a1ff58a6a06e7e7e8f8f27d951d0abae958358
 ### `ros:rolling-ros-core` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:0cc87a2bd720fad610afd06b19590363ab09b49a59995be6dc4571ef733cd08c
+$ docker pull ros@sha256:b15467c2f996f925952cc2a6d65b228faa6bdc38278f06cbc8a0199ce7ae07de
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.4 MB (157421905 bytes)**  
+-	Total Size: **159.8 MB (159823084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7844ff02f7456078390c5fa5a2164e294575cf4beb15838d82b22823e970178`
+-	Image ID: `sha256:cfbafa2931e716ef5e0b0d9a55e2155ad15e48014c0dd905c4e1c3e667291f64`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -8613,13 +8613,13 @@ ENV LANG=C.UTF-8
 ENV LC_ALL=C.UTF-8
 # Thu, 02 May 2024 04:17:14 GMT
 ENV ROS_DISTRO=rolling
-# Thu, 02 May 2024 04:17:58 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.10.0-3*     && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:22 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.11.0-1*     && rm -rf /var/lib/apt/lists/*
+# Fri, 24 May 2024 21:34:24 GMT
 COPY file:ec5b16a0e777d7d7d041a72ffc817bf5f7b375662afa0c404f3ca36fad1afb90 in / 
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:24 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:24 GMT
 CMD ["bash"]
 ```
 
@@ -8644,13 +8644,13 @@ CMD ["bash"]
 		Last Modified: Thu, 02 May 2024 04:29:42 GMT  
 		Size: 272.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2e484ef4424e4b62b917fb7a6d4980f231d1685459e628d5080f9091c5b2456`  
-		Last Modified: Thu, 02 May 2024 04:30:00 GMT  
-		Size: 122.4 MB (122415848 bytes)  
+	-	`sha256:85106c03d3ddc3385408b7c37cd8222141a83aba79b86de526e777de6451996f`  
+		Last Modified: Fri, 24 May 2024 21:39:02 GMT  
+		Size: 124.8 MB (124817026 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f79989973bd9f0a6fde631f5c045521fd10a6645a57328a68993f0ed4cc2e375`  
-		Last Modified: Thu, 02 May 2024 04:29:42 GMT  
-		Size: 195.0 B  
+	-	`sha256:f23c173b29a00075fea4ff0384195c1b2f433920a2791c5de0a5734608221f99`  
+		Last Modified: Fri, 24 May 2024 21:38:43 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:rolling-ros-core` - linux; arm64 variant v8
@@ -8737,7 +8737,7 @@ CMD ["bash"]
 ## `ros:rolling-ros-core-noble`
 
 ```console
-$ docker pull ros@sha256:f640feb3e48b78363a1ff58a6a06e7e7e8f8f27d951d0abae9583582a7b02948
+$ docker pull ros@sha256:f6ecb5307e788905afdcb71f48285b524d12377e58ab50168bb60d304b546daa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8748,14 +8748,14 @@ $ docker pull ros@sha256:f640feb3e48b78363a1ff58a6a06e7e7e8f8f27d951d0abae958358
 ### `ros:rolling-ros-core-noble` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:0cc87a2bd720fad610afd06b19590363ab09b49a59995be6dc4571ef733cd08c
+$ docker pull ros@sha256:b15467c2f996f925952cc2a6d65b228faa6bdc38278f06cbc8a0199ce7ae07de
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.4 MB (157421905 bytes)**  
+-	Total Size: **159.8 MB (159823084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7844ff02f7456078390c5fa5a2164e294575cf4beb15838d82b22823e970178`
+-	Image ID: `sha256:cfbafa2931e716ef5e0b0d9a55e2155ad15e48014c0dd905c4e1c3e667291f64`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -8786,13 +8786,13 @@ ENV LANG=C.UTF-8
 ENV LC_ALL=C.UTF-8
 # Thu, 02 May 2024 04:17:14 GMT
 ENV ROS_DISTRO=rolling
-# Thu, 02 May 2024 04:17:58 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.10.0-3*     && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:22 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.11.0-1*     && rm -rf /var/lib/apt/lists/*
+# Fri, 24 May 2024 21:34:24 GMT
 COPY file:ec5b16a0e777d7d7d041a72ffc817bf5f7b375662afa0c404f3ca36fad1afb90 in / 
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:24 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 02 May 2024 04:18:00 GMT
+# Fri, 24 May 2024 21:34:24 GMT
 CMD ["bash"]
 ```
 
@@ -8817,13 +8817,13 @@ CMD ["bash"]
 		Last Modified: Thu, 02 May 2024 04:29:42 GMT  
 		Size: 272.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2e484ef4424e4b62b917fb7a6d4980f231d1685459e628d5080f9091c5b2456`  
-		Last Modified: Thu, 02 May 2024 04:30:00 GMT  
-		Size: 122.4 MB (122415848 bytes)  
+	-	`sha256:85106c03d3ddc3385408b7c37cd8222141a83aba79b86de526e777de6451996f`  
+		Last Modified: Fri, 24 May 2024 21:39:02 GMT  
+		Size: 124.8 MB (124817026 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f79989973bd9f0a6fde631f5c045521fd10a6645a57328a68993f0ed4cc2e375`  
-		Last Modified: Thu, 02 May 2024 04:29:42 GMT  
-		Size: 195.0 B  
+	-	`sha256:f23c173b29a00075fea4ff0384195c1b2f433920a2791c5de0a5734608221f99`  
+		Last Modified: Fri, 24 May 2024 21:38:43 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:rolling-ros-core-noble` - linux; arm64 variant v8
