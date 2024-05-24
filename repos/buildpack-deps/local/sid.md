@@ -2576,20 +2576,13 @@ Licenses: (parsed from: `/usr/share/doc/libedit2/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libedit=3.1-20230828-1
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20230828-1.dsc' libedit_3.1-20230828-1.dsc 2267 SHA256:568783d99f719055b4b4705d85be7349578d32eb73ad9da6347691bf7bd5f298
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20230828.orig.tar.gz' libedit_3.1-20230828.orig.tar.gz 534072 SHA256:4ee8182b6e569290e7d1f44f0f78dac8716b35f656b76528f699c69c98814dad
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20230828-1.debian.tar.xz' libedit_3.1-20230828-1.debian.tar.xz 16624 SHA256:8d94a472a1ddee433c61c2801405164780085044d1432c949666355abed9362d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libedit/3.1-20230828-1/
 
-- https://sources.debian.net/src/libedit/3.1-20230828-1/ (for browsing the source)
-- https://sources.debian.net/src/libedit/3.1-20230828-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libedit/3.1-20230828-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `liberror-perl=0.17029-2`
 
@@ -3367,21 +3360,13 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 
 - `BSD3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh2=1.11.0-4.1
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.0-4.1.dsc' libssh2_1.11.0-4.1.dsc 2325 SHA256:147d8c4c1fe77227b39a5bd1a935ce5f99743931e6a866bcfd701a837f56b30a
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.0.orig.tar.gz' libssh2_1.11.0.orig.tar.gz 1053562 SHA256:3736161e41e2693324deb38c26cfdc3efe6209d634ba4258db1cecff6a5ad461
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.0.orig.tar.gz.asc' libssh2_1.11.0.orig.tar.gz.asc 488 SHA256:b6a32c85a3f9b6f30f2b3595ba034b48a8508ee9c94708ef811f58fd7adfcdee
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.0-4.1.debian.tar.xz' libssh2_1.11.0-4.1.debian.tar.xz 14080 SHA256:1db23351388b7479e546ef3760b48e0f77f4bf87fb8c2c48e87b477582ec91b7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libssh2/1.11.0-4.1/
 
-- https://sources.debian.net/src/libssh2/1.11.0-4.1/ (for browsing the source)
-- https://sources.debian.net/src/libssh2/1.11.0-4.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libssh2/1.11.0-4.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.19.0-3`
 
