@@ -1,7 +1,7 @@
 ## `ros:jazzy-ros-core-noble`
 
 ```console
-$ docker pull ros@sha256:c00b3b07efee3e56755b1864033bf26959dc63c026d40593bde4b72636b19e32
+$ docker pull ros@sha256:dbd591134451cd9c368cc08bcd1a9b76a4d95a7c63afd53dc3ae88863cbec35c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull ros@sha256:c00b3b07efee3e56755b1864033bf26959dc63c026d40593bde4b72
 ### `ros:jazzy-ros-core-noble` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:800debf9ceb3e118aed6d8aba3801cbef9d8dabcc365626ced58208059d23111
+$ docker pull ros@sha256:d94d2a74cc5497c159365a466622d525a0ce46edbd6ae7c2466c7b2562e8fef1
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.4 MB (157418551 bytes)**  
+-	Total Size: **159.8 MB (159824177 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb66abbea53e0c4818814c10912c24d3f2904f1640ca21b18a31d7b7a4381019`
+-	Image ID: `sha256:fa02b7fcb92d5f10282c2e7f66d6fe4c018bc62b80c5b5afef5c304e4acdc921`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -40,23 +40,23 @@ CMD ["/bin/bash"]
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/*
 # Thu, 02 May 2024 04:08:57 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 04:08:58 GMT
-RUN set -eux;        key='C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654';        export GNUPGHOME="$(mktemp -d)";        gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key";        mkdir -p /usr/share/keyrings;        gpg --batch --export "$key" > /usr/share/keyrings/ros2-testing-archive-keyring.gpg;        gpgconf --kill all;        rm -rf "$GNUPGHOME"
-# Thu, 02 May 2024 04:08:59 GMT
-RUN echo "deb [ signed-by=/usr/share/keyrings/ros2-testing-archive-keyring.gpg ] http://packages.ros.org/ros2-testing/ubuntu noble main" > /etc/apt/sources.list.d/ros2-testing.list
-# Thu, 02 May 2024 04:08:59 GMT
+# Thu, 02 May 2024 04:17:13 GMT
+RUN set -eux;        key='C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654';        export GNUPGHOME="$(mktemp -d)";        gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key";        mkdir -p /usr/share/keyrings;        gpg --batch --export "$key" > /usr/share/keyrings/ros2-latest-archive-keyring.gpg;        gpgconf --kill all;        rm -rf "$GNUPGHOME"
+# Thu, 02 May 2024 04:17:14 GMT
+RUN echo "deb [ signed-by=/usr/share/keyrings/ros2-latest-archive-keyring.gpg ] http://packages.ros.org/ros2/ubuntu noble main" > /etc/apt/sources.list.d/ros2-latest.list
+# Thu, 02 May 2024 04:17:14 GMT
 ENV LANG=C.UTF-8
-# Thu, 02 May 2024 04:08:59 GMT
+# Thu, 02 May 2024 04:17:14 GMT
 ENV LC_ALL=C.UTF-8
-# Thu, 02 May 2024 04:08:59 GMT
+# Fri, 24 May 2024 00:50:47 GMT
 ENV ROS_DISTRO=jazzy
-# Thu, 02 May 2024 04:10:45 GMT
+# Fri, 24 May 2024 00:52:23 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-jazzy-ros-core=0.11.0-1*     && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 04:10:47 GMT
+# Fri, 24 May 2024 00:52:25 GMT
 COPY file:ec5b16a0e777d7d7d041a72ffc817bf5f7b375662afa0c404f3ca36fad1afb90 in / 
-# Thu, 02 May 2024 04:10:47 GMT
+# Fri, 24 May 2024 00:52:25 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 02 May 2024 04:10:47 GMT
+# Fri, 24 May 2024 00:52:25 GMT
 CMD ["bash"]
 ```
 
@@ -73,34 +73,34 @@ CMD ["bash"]
 		Last Modified: Thu, 02 May 2024 04:27:57 GMT  
 		Size: 4.6 MB (4617562 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f222a4f0f0d169710bf5be1624344cef1bc1c8b5d4e9ba80a78da2f7d7512e3`  
-		Last Modified: Thu, 02 May 2024 04:27:56 GMT  
+	-	`sha256:739f6c812b379d4de9914ffcc55c356485f1907555705bd50fdf0629e37742e9`  
+		Last Modified: Thu, 02 May 2024 04:29:42 GMT  
 		Size: 2.0 KB (2021 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:892340976301cbeedb196f219d6d5d61e94afd0cedef6b4ac759a17a79cc2cbf`  
-		Last Modified: Thu, 02 May 2024 04:27:56 GMT  
-		Size: 269.0 B  
+	-	`sha256:c78533fe08fdd62d113279815db4b7a14ab1686b1f85f09290bc47b27da4004e`  
+		Last Modified: Thu, 02 May 2024 04:29:42 GMT  
+		Size: 272.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6df8a6e27e79b2f137d619d477df5cc91bbfd654469743995198ed0a7e601164`  
-		Last Modified: Thu, 02 May 2024 04:28:14 GMT  
-		Size: 122.4 MB (122412498 bytes)  
+	-	`sha256:55164a1d20560b2ddf50794087c404c33f1f5aba7b4692b56e05bf7e787727e9`  
+		Last Modified: Fri, 24 May 2024 00:59:12 GMT  
+		Size: 124.8 MB (124818119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd0a77993a63310ae001b3fc1bff701bbc23f008a2925d9d275cf18fb4521dab`  
-		Last Modified: Thu, 02 May 2024 04:27:56 GMT  
-		Size: 194.0 B  
+	-	`sha256:bb9069c48a70ab1176dafef8ed3f1a3c7bc5e0f555f8a0604ed3c71c343c6f50`  
+		Last Modified: Fri, 24 May 2024 00:58:53 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:jazzy-ros-core-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:95eb8627f16d2149a4525b8bc4b911dc89f744237aaab52e7b762eecded7d760
+$ docker pull ros@sha256:fe4140542afd1130e2ce0636ef8659110722b54eae1c4a01860e570533db3abf
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.6 MB (151561394 bytes)**  
+-	Total Size: **153.8 MB (153793792 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6386b0fe348479ebb979313bc045e77679071e62253acf0ff17d5ef0e9879f8a`
+-	Image ID: `sha256:48cd740e828406e4057cfb26574e4fbecdef26bd237a2317922d5e2083f2325c`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -121,23 +121,23 @@ CMD ["/bin/bash"]
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/*
 # Thu, 02 May 2024 02:11:42 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 02:11:43 GMT
-RUN set -eux;        key='C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654';        export GNUPGHOME="$(mktemp -d)";        gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key";        mkdir -p /usr/share/keyrings;        gpg --batch --export "$key" > /usr/share/keyrings/ros2-testing-archive-keyring.gpg;        gpgconf --kill all;        rm -rf "$GNUPGHOME"
-# Thu, 02 May 2024 02:11:44 GMT
-RUN echo "deb [ signed-by=/usr/share/keyrings/ros2-testing-archive-keyring.gpg ] http://packages.ros.org/ros2-testing/ubuntu noble main" > /etc/apt/sources.list.d/ros2-testing.list
-# Thu, 02 May 2024 02:11:44 GMT
+# Thu, 02 May 2024 02:23:03 GMT
+RUN set -eux;        key='C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654';        export GNUPGHOME="$(mktemp -d)";        gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key";        mkdir -p /usr/share/keyrings;        gpg --batch --export "$key" > /usr/share/keyrings/ros2-latest-archive-keyring.gpg;        gpgconf --kill all;        rm -rf "$GNUPGHOME"
+# Thu, 02 May 2024 02:23:04 GMT
+RUN echo "deb [ signed-by=/usr/share/keyrings/ros2-latest-archive-keyring.gpg ] http://packages.ros.org/ros2/ubuntu noble main" > /etc/apt/sources.list.d/ros2-latest.list
+# Thu, 02 May 2024 02:23:04 GMT
 ENV LANG=C.UTF-8
-# Thu, 02 May 2024 02:11:44 GMT
+# Thu, 02 May 2024 02:23:04 GMT
 ENV LC_ALL=C.UTF-8
-# Thu, 02 May 2024 02:11:44 GMT
+# Fri, 24 May 2024 01:05:39 GMT
 ENV ROS_DISTRO=jazzy
-# Thu, 02 May 2024 02:13:50 GMT
+# Fri, 24 May 2024 01:07:37 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-jazzy-ros-core=0.11.0-1*     && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 02:13:53 GMT
+# Fri, 24 May 2024 01:07:40 GMT
 COPY file:ec5b16a0e777d7d7d041a72ffc817bf5f7b375662afa0c404f3ca36fad1afb90 in / 
-# Thu, 02 May 2024 02:13:53 GMT
+# Fri, 24 May 2024 01:07:40 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 02 May 2024 02:13:53 GMT
+# Fri, 24 May 2024 01:07:41 GMT
 CMD ["bash"]
 ```
 
@@ -154,19 +154,19 @@ CMD ["bash"]
 		Last Modified: Thu, 02 May 2024 02:33:09 GMT  
 		Size: 4.6 MB (4611814 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb1530a98afb6ca6b735ba21a703b8ab482443c6984b4b5dd57136c4a1245e8f`  
-		Last Modified: Thu, 02 May 2024 02:33:08 GMT  
-		Size: 2.0 KB (2020 bytes)  
+	-	`sha256:6931defe7f57cf3da1981f2afca9fe611d4b03bf445f980fdc842c4d965bf247`  
+		Last Modified: Thu, 02 May 2024 02:34:50 GMT  
+		Size: 2.0 KB (2021 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97b38a3ce2b2fd6079fcf853bc1533d0de85fbcf48949e9b3ee31f9b40f03e59`  
-		Last Modified: Thu, 02 May 2024 02:33:08 GMT  
-		Size: 274.0 B  
+	-	`sha256:5315899036e815d56227da46abcb970890f5f1c1388a96cdf9d489dd96e5d058`  
+		Last Modified: Thu, 02 May 2024 02:34:50 GMT  
+		Size: 270.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e82b0c960739bc7a727ac975dffda488d4ba93e271c18d3600c4be19c237167`  
-		Last Modified: Thu, 02 May 2024 02:33:32 GMT  
-		Size: 117.2 MB (117224625 bytes)  
+	-	`sha256:0141a49b3e805ba91547642bc9811564e0c44e7380c198e9fe12fd131322ebea`  
+		Last Modified: Fri, 24 May 2024 01:15:49 GMT  
+		Size: 119.5 MB (119457025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1cff6639496fa69ef9e6bfd477bcec2737b680972d8f76ea9d277e11eb8f1b48`  
-		Last Modified: Thu, 02 May 2024 02:33:08 GMT  
-		Size: 196.0 B  
+	-	`sha256:5b13531948b1b0049cfd52836e87118bf8b05d8a3852f052b1a18ea633ba4053`  
+		Last Modified: Fri, 24 May 2024 01:15:35 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
