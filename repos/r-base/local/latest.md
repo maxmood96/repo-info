@@ -2019,15 +2019,13 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 
 - `BSD3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh2=1.11.0-4.1
-'http://http.debian.net/debian/pool/main/libs/libssh2/libssh2_1.11.0-4.1.dsc' libssh2_1.11.0-4.1.dsc 2325 SHA256:147d8c4c1fe77227b39a5bd1a935ce5f99743931e6a866bcfd701a837f56b30a
-'http://http.debian.net/debian/pool/main/libs/libssh2/libssh2_1.11.0.orig.tar.gz' libssh2_1.11.0.orig.tar.gz 1053562 SHA256:3736161e41e2693324deb38c26cfdc3efe6209d634ba4258db1cecff6a5ad461
-'http://http.debian.net/debian/pool/main/libs/libssh2/libssh2_1.11.0.orig.tar.gz.asc' libssh2_1.11.0.orig.tar.gz.asc 488 SHA256:b6a32c85a3f9b6f30f2b3595ba034b48a8508ee9c94708ef811f58fd7adfcdee
-'http://http.debian.net/debian/pool/main/libs/libssh2/libssh2_1.11.0-4.1.debian.tar.xz' libssh2_1.11.0-4.1.debian.tar.xz 14080 SHA256:1db23351388b7479e546ef3760b48e0f77f4bf87fb8c2c48e87b477582ec91b7
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libssh2/1.11.0-4.1/
+
 
 ### `dpkg` source package: `libtasn1-6=4.19.0-3`
 
