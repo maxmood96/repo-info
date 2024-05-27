@@ -1,10 +1,10 @@
-# `neo4j:5.19.0-enterprise-ubi8`
+# `neo4j:5.20.0-enterprise-ubi8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:39ae32533ac43845337108943452af4ea00c706fb0f9212c36bd4d219ed1b511`
-- Created: `2024-04-12T11:14:18Z`
-- Virtual Size: ~ 927.15 Mb  
+- Image ID: `sha256:63ebecf032a1afdd7c69638e3bd6f5475c2dc66cccc1633611705237f7e2f0ae`
+- Created: `2024-05-23T10:12:20Z`
+- Virtual Size: ~ 950.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -13,13 +13,13 @@
   - `PATH=/var/lib/neo4j/bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
   - `JAVA_HOME=/usr`
-  - `NEO4J_SHA256=6dc5af32f8e01f1cb8f8618d1314d91713172db14f53c695b77ca733ff504356`
-  - `NEO4J_TARBALL=neo4j-enterprise-5.19.0-unix.tar.gz`
+  - `NEO4J_SHA256=ba4c6236f822138f9e9034bbf50bfca98d3bf794add0731aa49841127c7aea1e`
+  - `NEO4J_TARBALL=neo4j-enterprise-5.20.0-unix.tar.gz`
   - `NEO4J_EDITION=enterprise`
   - `NEO4J_HOME=/var/lib/neo4j`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-05-07T07:59:42`
+  - `build-date=2024-05-14T17:55:48`
   - `com.redhat.component=ubi8-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -31,13 +31,13 @@
   - `io.openshift.tags=minimal rhel8`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi8-minimal`
-  - `release=1161.1715068733`
+  - `release=896`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 8.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8-minimal/images/8.9-1161.1715068733`
-  - `vcs-ref=7e7670a8c8c9a3be83beaa2787f3703b404d4a1d`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8-minimal/images/8.10-896`
+  - `vcs-ref=7357243bfe6a2392090af428c41ba6d13fe68590`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
-  - `version=8.9`
+  - `version=8.10`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -47,7 +47,7 @@ Licenses (from `rpm --query`): OFL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `acl-2.2.53-1.el8.x86_64`
+### `rpm` package: `acl-2.2.53-3.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
@@ -65,7 +65,7 @@ Licenses (from `rpm --query`): LGPLv3+ or CC-BY-SA
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `alsa-lib-1.2.9-1.el8.x86_64`
+### `rpm` package: `alsa-lib-1.2.10-2.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -89,13 +89,13 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `audit-libs-3.0.7-5.el8.x86_64`
+### `rpm` package: `audit-libs-3.1.2-1.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `avahi-libs-0.7-21.el8_9.1.x86_64`
+### `rpm` package: `avahi-libs-0.7-27.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -107,7 +107,7 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `bash-4.4.20-4.el8_6.x86_64`
+### `rpm` package: `bash-4.4.20-5.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
@@ -197,13 +197,13 @@ Licenses (from `rpm --query`): GPLv2+ and LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `cups-libs-2.2.6-54.el8_9.x86_64`
+### `rpm` package: `cups-libs-2.2.6-57.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2 and zlib
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `curl-7.61.1-33.el8_9.5.x86_64`
+### `rpm` package: `curl-7.61.1-34.el8.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -263,13 +263,13 @@ Licenses (from `rpm --query`): Bitstream Vera and Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `device-mapper-1.02.181-13.el8_9.x86_64`
+### `rpm` package: `device-mapper-1.02.181-14.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `device-mapper-libs-1.02.181-13.el8_9.x86_64`
+### `rpm` package: `device-mapper-libs-1.02.181-14.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2
 
@@ -281,49 +281,49 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `dnf-4.7.0-19.el8.noarch`
+### `rpm` package: `dnf-4.7.0-20.el8.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `dnf-data-4.7.0-19.el8.noarch`
+### `rpm` package: `dnf-data-4.7.0-20.el8.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `elfutils-debuginfod-client-0.189-3.el8.x86_64`
+### `rpm` package: `elfutils-debuginfod-client-0.190-2.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and (GPLv2+ or LGPLv3+)
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `elfutils-default-yama-scope-0.189-3.el8.noarch`
+### `rpm` package: `elfutils-default-yama-scope-0.190-2.el8.noarch`
 
 Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `elfutils-libelf-0.189-3.el8.x86_64`
+### `rpm` package: `elfutils-libelf-0.190-2.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `elfutils-libs-0.189-3.el8.x86_64`
+### `rpm` package: `elfutils-libs-0.190-2.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `expat-2.2.5-11.el8_9.1.x86_64`
+### `rpm` package: `expat-2.2.5-13.el8_10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `file-libs-5.33-25.el8.x86_64`
+### `rpm` package: `file-libs-5.33-26.el8.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
@@ -335,7 +335,7 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `findutils-4.6.0-21.el8.x86_64`
+### `rpm` package: `findutils-4.6.0-22.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
@@ -401,31 +401,43 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glib2-2.56.4-161.el8.x86_64`
+### `rpm` package: `glib2-2.56.4-162.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-2.28-236.el8_9.13.x86_64`
+### `rpm` package: `glibc-2.28-251.el8_10.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-common-2.28-236.el8_9.13.x86_64`
+### `rpm` package: `glibc-common-2.28-251.el8_10.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-minimal-langpack-2.28-236.el8_9.13.x86_64`
+### `rpm` package: `glibc-gconv-extra-2.28-251.el8_10.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `gmp-6.1.2-10.el8.x86_64`
+### `rpm` package: `glibc-langpack-en-2.28-251.el8_10.1.x86_64`
+
+Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+
+### `rpm` package: `glibc-minimal-langpack-2.28-251.el8_10.1.x86_64`
+
+Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+
+### `rpm` package: `gmp-6.1.2-11.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv3+ or GPLv2+
 
@@ -461,7 +473,7 @@ Licenses (from `rpm --query`): pubkey
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `gpgme-1.13.1-11.el8.x86_64`
+### `rpm` package: `gpgme-1.13.1-12.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and GPLv3+
 
@@ -503,7 +515,7 @@ Licenses (from `rpm --query`): GPLv3+ and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `harfbuzz-1.7.5-3.el8.x86_64`
+### `rpm` package: `harfbuzz-1.7.5-4.el8.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -563,7 +575,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `jq-1.6-7.el8.x86_64`
+### `rpm` package: `jq-1.6-8.el8.x86_64`
 
 Licenses (from `rpm --query`): MIT and ASL 2.0 and CC-BY and GPLv3
 
@@ -587,13 +599,13 @@ Licenses (from `rpm --query`): GPLv2+ and LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `kmod-libs-25-19.el8.x86_64`
+### `rpm` package: `kmod-libs-25-20.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `krb5-libs-1.18.2-26.el8_9.x86_64`
+### `rpm` package: `krb5-libs-1.18.2-27.el8_10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -611,13 +623,13 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libX11-1.6.8-6.el8.x86_64`
+### `rpm` package: `libX11-1.6.8-8.el8.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libX11-common-1.6.8-6.el8.noarch`
+### `rpm` package: `libX11-common-1.6.8-8.el8.noarch`
 
 Licenses (from `rpm --query`): MIT
 
@@ -695,7 +707,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libacl-2.2.53-1.el8.x86_64`
+### `rpm` package: `libacl-2.2.53-3.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -719,7 +731,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libblkid-2.32.1-44.el8_9.1.x86_64`
+### `rpm` package: `libblkid-2.32.1-46.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -749,7 +761,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libcurl-7.61.1-33.el8_9.5.x86_64`
+### `rpm` package: `libcurl-7.61.1-34.el8.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -773,7 +785,7 @@ Licenses (from `rpm --query`): BSD and LGPLv2 and Sleepycat
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libdnf-0.63.0-17.el8_9.x86_64`
+### `rpm` package: `libdnf-0.63.0-19.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -791,7 +803,7 @@ Licenses (from `rpm --query`): BSD and ISC
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libfdisk-2.32.1-44.el8_9.1.x86_64`
+### `rpm` package: `libfdisk-2.32.1-46.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -809,7 +821,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libgcc-8.5.0-20.el8.x86_64`
+### `rpm` package: `libgcc-8.5.0-22.el8_10.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
@@ -869,7 +881,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libmount-2.32.1-44.el8_9.1.x86_64`
+### `rpm` package: `libmount-2.32.1-46.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -923,7 +935,7 @@ Licenses (from `rpm --query`): BSD or GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `librepo-1.14.2-4.el8.x86_64`
+### `rpm` package: `librepo-1.14.2-5.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -971,7 +983,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libsmartcols-2.32.1-44.el8_9.1.x86_64`
+### `rpm` package: `libsmartcols-2.32.1-46.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -983,25 +995,25 @@ Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libsoup-2.62.3-4.el8.x86_64`
+### `rpm` package: `libsoup-2.62.3-5.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libssh-0.9.6-13.el8_9.x86_64`
+### `rpm` package: `libssh-0.9.6-14.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libssh-config-0.9.6-13.el8_9.noarch`
+### `rpm` package: `libssh-config-0.9.6-14.el8.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libstdc++-8.5.0-20.el8.x86_64`
+### `rpm` package: `libstdc++-8.5.0-22.el8_10.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
@@ -1019,13 +1031,13 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libtiff-4.0.9-29.el8_8.x86_64`
+### `rpm` package: `libtiff-4.0.9-31.el8.x86_64`
 
 Licenses (from `rpm --query`): libtiff
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libtirpc-1.1.4-8.el8.x86_64`
+### `rpm` package: `libtirpc-1.1.4-10.el8.x86_64`
 
 Licenses (from `rpm --query`): SISSL and BSD
 
@@ -1049,7 +1061,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libuuid-2.32.1-44.el8_9.1.x86_64`
+### `rpm` package: `libuuid-2.32.1-46.el8.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
@@ -1181,37 +1193,37 @@ Licenses (from `rpm --query`): MPLv2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `nss-3.90.0-6.el8_9.x86_64`
+### `rpm` package: `nss-3.90.0-7.el8_10.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `nss-softokn-3.90.0-6.el8_9.x86_64`
+### `rpm` package: `nss-softokn-3.90.0-7.el8_10.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `nss-softokn-freebl-3.90.0-6.el8_9.x86_64`
+### `rpm` package: `nss-softokn-freebl-3.90.0-7.el8_10.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `nss-sysinit-3.90.0-6.el8_9.x86_64`
+### `rpm` package: `nss-sysinit-3.90.0-7.el8_10.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `nss-util-3.90.0-6.el8_9.x86_64`
+### `rpm` package: `nss-util-3.90.0-7.el8_10.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `oniguruma-6.8.2-2.1.el8_9.x86_64`
+### `rpm` package: `oniguruma-6.8.2-3.el8.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
@@ -1229,19 +1241,19 @@ Licenses (from `rpm --query`): OpenSSL and ASL 2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `p11-kit-0.23.22-1.el8.x86_64`
+### `rpm` package: `p11-kit-0.23.22-2.el8.x86_64`
 
-Licenses (from `rpm --query`): BSD
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `p11-kit-trust-0.23.22-1.el8.x86_64`
-
-Licenses (from `rpm --query`): BSD
+Licenses (from `rpm --query`): BSD-3-Clause
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `pam-1.3.1-27.el8.x86_64`
+### `rpm` package: `p11-kit-trust-0.23.22-2.el8.x86_64`
+
+Licenses (from `rpm --query`): BSD-3-Clause
+
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+
+### `rpm` package: `pam-1.3.1-33.el8.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
@@ -1265,7 +1277,7 @@ Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `pixman-0.38.4-3.el8_9.x86_64`
+### `rpm` package: `pixman-0.38.4-4.el8.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -1289,13 +1301,13 @@ Licenses (from `rpm --query`): ISC
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `platform-python-3.6.8-56.el8_9.3.x86_64`
+### `rpm` package: `platform-python-3.6.8-59.el8.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `platform-python-pip-9.0.3-23.el8_9.1.noarch`
+### `rpm` package: `platform-python-pip-9.0.3-24.el8.noarch`
 
 Licenses (from `rpm --query`): MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0 or BSD)
 
@@ -1325,19 +1337,19 @@ Licenses (from `rpm --query`): MPLv2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-dnf-4.7.0-19.el8.noarch`
+### `rpm` package: `python3-dnf-4.7.0-20.el8.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-gpg-1.13.1-11.el8.x86_64`
+### `rpm` package: `python3-gpg-1.13.1-12.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-hawkey-0.63.0-17.el8_9.x86_64`
+### `rpm` package: `python3-hawkey-0.63.0-19.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -1349,25 +1361,25 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-libdnf-0.63.0-17.el8_9.x86_64`
+### `rpm` package: `python3-libdnf-0.63.0-19.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-libs-3.6.8-56.el8_9.3.x86_64`
+### `rpm` package: `python3-libs-3.6.8-59.el8.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-pip-wheel-9.0.3-23.el8_9.1.noarch`
+### `rpm` package: `python3-pip-wheel-9.0.3-24.el8.noarch`
 
 Licenses (from `rpm --query`): MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0 or BSD)
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-rpm-4.14.3-28.el8_9.x86_64`
+### `rpm` package: `python3-rpm-4.14.3-31.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
@@ -1391,7 +1403,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `redhat-release-8.9-0.1.el8.x86_64`
+### `rpm` package: `redhat-release-8.10-0.2.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
@@ -1409,19 +1421,19 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rpm-4.14.3-28.el8_9.x86_64`
+### `rpm` package: `rpm-4.14.3-31.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rpm-build-libs-4.14.3-28.el8_9.x86_64`
+### `rpm` package: `rpm-build-libs-4.14.3-31.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rpm-libs-4.14.3-28.el8_9.x86_64`
+### `rpm` package: `rpm-libs-4.14.3-31.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
@@ -1439,13 +1451,13 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `shadow-utils-4.6-19.el8.x86_64`
+### `rpm` package: `shadow-utils-4.6-22.el8.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `shared-mime-info-1.9-3.el8.x86_64`
+### `rpm` package: `shared-mime-info-1.9-4.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
@@ -1457,19 +1469,19 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-239-78.el8.x86_64`
+### `rpm` package: `systemd-239-82.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-libs-239-78.el8.x86_64`
+### `rpm` package: `systemd-libs-239-82.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-pam-239-78.el8.x86_64`
+### `rpm` package: `systemd-pam-239-82.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
@@ -1481,7 +1493,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `tpm2-tss-2.3.2-5.el8.x86_64`
+### `rpm` package: `tpm2-tss-2.3.2-6.el8.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
@@ -1511,7 +1523,7 @@ Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `util-linux-2.32.1-44.el8_9.1.x86_64`
+### `rpm` package: `util-linux-2.32.1-46.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2 and GPLv2+ and LGPLv2+ and BSD with advertising and Public Domain
 
