@@ -1,7 +1,7 @@
 ## `maven:3-eclipse-temurin-8-alpine`
 
 ```console
-$ docker pull maven@sha256:afe299920069f13e349f462e25b7f4fde87ae3a8f1afc918e7364c824262d2c8
+$ docker pull maven@sha256:13d46b3298cacd36b82a71d9e86998806d6f476974c6af221082823f4c72009a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,13 +11,13 @@ $ docker pull maven@sha256:afe299920069f13e349f462e25b7f4fde87ae3a8f1afc918e7364
 ### `maven:3-eclipse-temurin-8-alpine` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:43be4d758bdb2fa0301a7fefb323ba9af179d95feb421ed8bf4fbca95a189506
+$ docker pull maven@sha256:b95c50d0c7b12aac2213a19e1bc75a71775fec612ebe1012c67f2bb623192698
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **125.6 MB (125584050 bytes)**  
+-	Total Size: **125.8 MB (125751680 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3bd01e11f77f29aa29a014caa3b3ff9f1340c11be255e134a5f6967cb1234e58`
+-	Image ID: `sha256:a8e210757c0b06501207423781bfd3f6b03868dda93c4fbd4d35952652c82c53`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -44,27 +44,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 18 Dec 2023 19:11:15 GMT
+# Mon, 27 May 2024 15:57:48 GMT
 RUN apk add --no-cache bash procps curl tar # buildkit
-# Mon, 18 Dec 2023 19:11:15 GMT
+# Mon, 27 May 2024 15:57:48 GMT
+LABEL org.opencontainers.image.title=Apache Maven
+# Mon, 27 May 2024 15:57:48 GMT
+LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
+# Mon, 27 May 2024 15:57:48 GMT
+LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
+# Mon, 27 May 2024 15:57:48 GMT
+LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+# Mon, 27 May 2024 15:57:48 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 18 Dec 2023 19:11:15 GMT
+# Mon, 27 May 2024 15:57:48 GMT
 COPY /usr/share/maven /usr/share/maven # buildkit
-# Mon, 18 Dec 2023 19:11:15 GMT
+# Mon, 27 May 2024 15:57:48 GMT
 COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Mon, 18 Dec 2023 19:11:15 GMT
+# Mon, 27 May 2024 15:57:48 GMT
 COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
-# Mon, 18 Dec 2023 19:11:15 GMT
+# Mon, 27 May 2024 15:57:48 GMT
 RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Mon, 18 Dec 2023 19:11:15 GMT
-ARG MAVEN_VERSION=3.9.6
-# Mon, 18 Dec 2023 19:11:15 GMT
+# Mon, 27 May 2024 15:57:48 GMT
+ARG MAVEN_VERSION=3.9.7
+# Mon, 27 May 2024 15:57:48 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 18 Dec 2023 19:11:15 GMT
+# Mon, 27 May 2024 15:57:48 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 18 Dec 2023 19:11:15 GMT
+# Mon, 27 May 2024 15:57:48 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 18 Dec 2023 19:11:15 GMT
+# Mon, 27 May 2024 15:57:48 GMT
 CMD ["mvn"]
 ```
 
@@ -89,23 +97,23 @@ CMD ["mvn"]
 		Last Modified: Wed, 24 Apr 2024 19:06:36 GMT  
 		Size: 716.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99fd209f7879eadf411e5ddc9150a2b39c0589fd7796851d42b23d4d78e60cf8`  
-		Last Modified: Wed, 24 Apr 2024 22:06:33 GMT  
-		Size: 2.6 MB (2634949 bytes)  
+	-	`sha256:a472a30d251f4e92852b54b151c15e8f0182e1665ab9f356627aa9575bb83926`  
+		Last Modified: Tue, 28 May 2024 19:52:41 GMT  
+		Size: 2.6 MB (2634956 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1af9525da1d6925480ec11a71966229b4034fd28c93442c511f333297f9a967c`  
-		Last Modified: Wed, 24 Apr 2024 22:06:33 GMT  
-		Size: 9.5 MB (9479951 bytes)  
+	-	`sha256:6aa70bae6e163ecff47484a2a5cbe6fb9cb38c4be76ce3b87fc77c67240dbd28`  
+		Last Modified: Tue, 28 May 2024 19:52:41 GMT  
+		Size: 9.6 MB (9647572 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b74b3babcafa84cc481ffb26a62d0df30e06aeab66f60dd4c966abc7401d533e`  
-		Last Modified: Wed, 24 Apr 2024 22:06:32 GMT  
-		Size: 857.0 B  
+	-	`sha256:b338c0a842cd84d8b70361eed0d7de7ee43bdc3826ff494d2ffd7cc6a843f2f8`  
+		Last Modified: Tue, 28 May 2024 19:52:40 GMT  
+		Size: 858.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:157b1f8ece23f8357a41203f258b624161e53075274146b5236084460c5120f0`  
-		Last Modified: Wed, 24 Apr 2024 22:06:32 GMT  
+	-	`sha256:e5a2c14a31bd26e703e8eda59770ca513ffae2742b59da62d7c8c32eebffc911`  
+		Last Modified: Tue, 28 May 2024 19:52:40 GMT  
 		Size: 356.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f09d84dc33bc7f4b5c4ad5c944c92eec0916b280de1795aba1cc34bfda544fd8`  
-		Last Modified: Wed, 24 Apr 2024 22:06:32 GMT  
-		Size: 164.0 B  
+	-	`sha256:be772610cd4d7de6160f52f04cc05dd31c7c5792653d0d7fbb2e0cc8e384edba`  
+		Last Modified: Tue, 28 May 2024 19:52:40 GMT  
+		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
