@@ -305,20 +305,13 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.12-6
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.12-6.dsc' dash_0.5.12-6.dsc 1520 SHA256:dfca9cb9a537d09c190baa9fb15848ecaa55f301843779f26260b1429cd72746
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.12.orig.tar.gz' dash_0.5.12.orig.tar.gz 246054 SHA256:6a474ac46e8b0b32916c4c60df694c82058d3297d8b385b74508030ca4a8f28a
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.12-6.debian.tar.xz' dash_0.5.12-6.debian.tar.xz 39116 SHA256:155173292d95943d2c737c0f7f4733bb6b39244522f810ee4a64f7be0f4865ab
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dash/0.5.12-6/
 
-- https://sources.debian.net/src/dash/0.5.12-6/ (for browsing the source)
-- https://sources.debian.net/src/dash/0.5.12-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dash/0.5.12-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg2-7`
 
@@ -1677,20 +1670,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=255.5-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.5-1.dsc' systemd_255.5-1.dsc 7440 SHA256:0908a32c19f0d20bd0c56d25fbcc1e59a6097db85e96596a37e050727ef5cc6a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.5.orig.tar.gz' systemd_255.5.orig.tar.gz 14976055 SHA256:95e419f0bd80fde9f169533e070348beb94073d9a58daf505d719ed3ebfd2411
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.5-1.debian.tar.xz' systemd_255.5-1.debian.tar.xz 173312 SHA256:9c0ab524133a7ddc3d413300b1a2ec47a370d15365802fe598a0595d41a9d940
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/255.5-1/
 
-- https://sources.debian.net/src/systemd/255.5-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/255.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/255.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.09-1`
 
