@@ -443,20 +443,13 @@ Licenses: (parsed from: `/usr/share/doc/libboost-python1.83.0/copyright`)
 - `Spencer`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris boost1.83=1.83.0-2.1
-'http://deb.debian.org/debian/pool/main/b/boost1.83/boost1.83_1.83.0-2.1.dsc' boost1.83_1.83.0-2.1.dsc 8794 SHA256:797fd7cff07357c35453a62a6248503b58793d13d43f23f3786aa6fbc7766433
-'http://deb.debian.org/debian/pool/main/b/boost1.83/boost1.83_1.83.0.orig.tar.xz' boost1.83_1.83.0.orig.tar.xz 77376520 SHA256:404df4b4072fc7f2d4483d4fc2d61ff6f554dd80c9a812652684d5952e881c91
-'http://deb.debian.org/debian/pool/main/b/boost1.83/boost1.83_1.83.0-2.1.debian.tar.xz' boost1.83_1.83.0-2.1.debian.tar.xz 378536 SHA256:f3b49bb049deb1f597d8a3062997b88df56a4033dd841c84d957061859e01dd7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/boost1.83/1.83.0-2.1/
 
-- https://sources.debian.net/src/boost1.83/1.83.0-2.1/ (for browsing the source)
-- https://sources.debian.net/src/boost1.83/1.83.0-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/boost1.83/1.83.0-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `brotli=1.1.0-2`
 
@@ -746,21 +739,13 @@ Licenses: (parsed from: `/usr/share/doc/libdav1d7/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dav1d=1.4.1-1
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.4.1-1.dsc' dav1d_1.4.1-1.dsc 2287 SHA256:f1a7dcd94711feedd268ac8b35c834d4cf6a4435c3a13fab07a7eafd1047a959
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.4.1.orig.tar.xz' dav1d_1.4.1.orig.tar.xz 948044 SHA256:8d407dd5fe7986413c937b14e67f36aebd06e1fa5cfec679d10e548476f2d5f8
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.4.1.orig.tar.xz.asc' dav1d_1.4.1.orig.tar.xz.asc 195 SHA256:030272d427ee6736b80172800e0f0686606623b0bd9f420d52136da04583685f
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.4.1-1.debian.tar.xz' dav1d_1.4.1-1.debian.tar.xz 8408 SHA256:b7439fdd087ab12e2e5344e41e74ad7fe84500552b9f9461832015bb28d16357
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dav1d/1.4.1-1/
 
-- https://sources.debian.net/src/dav1d/1.4.1-1/ (for browsing the source)
-- https://sources.debian.net/src/dav1d/1.4.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dav1d/1.4.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db-defaults=5.3.3`
 
@@ -3726,20 +3711,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3.dsc' libxml2_2.9.14+dfsg-1.3.dsc 3078 SHA256:e0e234b80e36389ec771edb6df0adde03f56ba5ad9b41f2d739de56a70850b68
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3.debian.tar.xz' libxml2_2.9.14+dfsg-1.3.debian.tar.xz 35076 SHA256:138dbd0f7c116058ae3306ee0ad3a2fed9754645a129784aff0a69fcf63e53e6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.9.14+dfsg-1.3/
 
-- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.14+dfsg-1.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1.1`
 
