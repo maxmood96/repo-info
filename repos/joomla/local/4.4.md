@@ -1,10 +1,10 @@
-# `joomla:4.4.4`
+# `joomla:4.4.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:045ea16f78182faf197e5aa1c16be260d7825b6e8b72311c49d9590342c36627`
-- Created: `2024-05-14T18:31:52.127560442Z`
-- Virtual Size: ~ 756.72 Mb  
+- Image ID: `sha256:9e46b97cc83500ba12e46c17bf1f9c763e71efb9b0bb5409bb7d31796e97e7dc`
+- Created: `2024-05-28T23:56:17.431905612Z`
+- Virtual Size: ~ 756.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -24,8 +24,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.28.tar.xz.asc`
   - `PHP_SHA256=95d0b2e9466108fd750dab5c30a09e5c67f5ad2cb3b1ffb3625a038a755ad080`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=4.4.4`
-  - `JOOMLA_SHA512=782469e12a7e6ceb719e4fca5e839d1bd5e475b2b3a932a4262ecc51b2585e94dede017021b5075b2e36c2687b27a82350064b5cc74fb27761987cff55e8637f`
+  - `JOOMLA_VERSION=4.4.5`
+  - `JOOMLA_SHA512=3bf2067d1f6faa8f36e023bcec2fc0fe1f307209feceb159f1bbe5f5618d9eede06bc23cc7610a7350c48d25d835280d81c1530a92e24f8fb989845fdbf39084`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -1445,14 +1445,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.23-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.23-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ghostscript=10.0.0~dfsg-11+deb12u3`
+### `dpkg` source package: `ghostscript=10.0.0~dfsg-11+deb12u4`
 
 Binary Packages:
 
-- `ghostscript=10.0.0~dfsg-11+deb12u3`
-- `libgs-common=10.0.0~dfsg-11+deb12u3`
-- `libgs10:amd64=10.0.0~dfsg-11+deb12u3`
-- `libgs10-common=10.0.0~dfsg-11+deb12u3`
+- `ghostscript=10.0.0~dfsg-11+deb12u4`
+- `libgs-common=10.0.0~dfsg-11+deb12u4`
+- `libgs10:amd64=10.0.0~dfsg-11+deb12u4`
+- `libgs10-common=10.0.0~dfsg-11+deb12u4`
 
 Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/libgs-common/copyright`, `/usr/share/doc/libgs10/copyright`, `/usr/share/doc/libgs10-common/copyright`)
 
@@ -1489,17 +1489,17 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ghostscript=10.0.0~dfsg-11+deb12u3
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u3.dsc' ghostscript_10.0.0~dfsg-11+deb12u3.dsc 3019 SHA256:6da9e8abb548615fe5f7e25c73a065e7dd6bf7a3ad0dd14233ec88b633736dbc
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg.orig.tar.xz' ghostscript_10.0.0~dfsg.orig.tar.xz 26688456 SHA256:67a288151fd88f0d44e165429c48cc85d69b3e4d3765c95e60839a094bfb8df3
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u3.debian.tar.xz' ghostscript_10.0.0~dfsg-11+deb12u3.debian.tar.xz 88540 SHA256:f320ac1c9fbe78d7251c7c727000afdd93f8b91d27b90151e34fee2539014eec
+$ apt-get source -qq --print-uris ghostscript=10.0.0~dfsg-11+deb12u4
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u4.dsc' ghostscript_10.0.0~dfsg-11+deb12u4.dsc 3019 SHA256:e026b4b48ad6054b5a415423b96285996d29911c2f223fe87270e056df3699cc
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg.orig.tar.xz' ghostscript_10.0.0~dfsg.orig.tar.xz 26688456 SHA256:67a288151fd88f0d44e165429c48cc85d69b3e4d3765c95e60839a094bfb8df3
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u4.debian.tar.xz' ghostscript_10.0.0~dfsg-11+deb12u4.debian.tar.xz 91408 SHA256:a85238f34446c9be57b0cadb051556ee7cffdaca411c7ab0873351574976359d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u3/ (for browsing the source)
-- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ghostscript/10.0.0~dfsg-11+deb12u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u4/ (for browsing the source)
+- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ghostscript/10.0.0~dfsg-11+deb12u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.74.6-2+deb12u2`
 
