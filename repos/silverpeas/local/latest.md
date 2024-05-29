@@ -1,9 +1,9 @@
-# `silverpeas:6.3.4`
+# `silverpeas:6.3.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a3d35eb92c9d9711dd0bcc6cb6818450f52278a2fb9924a48228e680313ee3ba`
-- Created: `2024-05-02T03:40:59.635342137Z`
+- Image ID: `sha256:f2c76c8e00b27d36c2b367e1aacac4f664e3e5d59d7551e10569b213e75171ea`
+- Created: `2024-05-28T20:14:10.908873756Z`
 - Virtual Size: ~ 3.13 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,19 +14,20 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US.UTF-8`
   - `LC_ALL=en_US.UTF-8`
+  - `PING_ON=1`
   - `JAVA_HOME=/docker-java-home`
   - `SILVERPEAS_HOME=/opt/silverpeas`
   - `JBOSS_HOME=/opt/wildfly`
-  - `SILVERPEAS_VERSION=6.3.4`
+  - `SILVERPEAS_VERSION=6.3.5`
   - `WILDFLY_VERSION=26.1.1`
 - Labels:
   - `build=1`
-  - `description=Image to install and to run Silverpeas 6.3.4`
-  - `name=Silverpeas 6.3.4`
+  - `description=Image to install and to run Silverpeas 6.3.5`
+  - `name=Silverpeas 6.3.5`
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`
   - `vendor=Silverpeas`
-  - `version=6.3.4`
+  - `version=6.3.5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1964,12 +1965,12 @@ $ apt-get source -qq --print-uris glib-networking=2.64.2-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib-networking/glib-networking_2.64.2-1ubuntu0.1.debian.tar.xz' glib-networking_2.64.2-1ubuntu0.1.debian.tar.xz 13028 SHA512:b1c2c41667ce96d3823f1d327ea75d23623a043b6bf200322094b5eaf7aa988f8075c170582d94fb5fcdc86266801b0e229c60a631bc869b6a97796da88c7906
 ```
 
-### `dpkg` source package: `glib2.0=2.64.6-1~ubuntu20.04.6`
+### `dpkg` source package: `glib2.0=2.64.6-1~ubuntu20.04.7`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.64.6-1~ubuntu20.04.6`
-- `libglib2.0-data=2.64.6-1~ubuntu20.04.6`
+- `libglib2.0-0:amd64=2.64.6-1~ubuntu20.04.7`
+- `libglib2.0-data=2.64.6-1~ubuntu20.04.7`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-data/copyright`)
 
@@ -1977,9 +1978,14 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glib2.0=2.64.6-1~ubuntu20.04.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.6-1%7eubuntu20.04.7.dsc' glib2.0_2.64.6-1~ubuntu20.04.7.dsc 3338 SHA512:6696868a96d4adb41cd7b7016677d757958e23af6406fe5d63a4baad557716b906f1bad19190bf6addde67edd1d58163faa4db883e7f1b6350a62b3aee1f5985
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.6.orig.tar.xz' glib2.0_2.64.6.orig.tar.xz 4781576 SHA512:5cd82c4d9b143e7aa130c24e25fb9def06dd915ef8ad8ed3883931bf5cddecf69c2e669ef6aa1d910484ede75b671e7c48a4f3fe50aa78955bff57b04f0cf958
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.6-1%7eubuntu20.04.7.debian.tar.xz' glib2.0_2.64.6-1~ubuntu20.04.7.debian.tar.xz 148828 SHA512:8359a21721d202c294ab0f2eb94e3971231b80546982d25f47850afe7a0cd1c6632b3aa736adb66ce5a9af08e4f8d3da768f44695659577bbcbd42526601bd7e
+```
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.15`
 
@@ -5180,52 +5186,52 @@ $ apt-get source -qq --print-uris libraw1394=2.1.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw1394/libraw1394_2.1.2-1.debian.tar.xz' libraw1394_2.1.2-1.debian.tar.xz 8760 SHA256:5cee0e0049d820a8e4e5d3dbd94fb2c3d7b782ec09134c6c714ed523829dc1c3
 ```
 
-### `dpkg` source package: `libreoffice=1:6.4.7-0ubuntu0.20.04.9`
+### `dpkg` source package: `libreoffice=1:6.4.7-0ubuntu0.20.04.10`
 
 Binary Packages:
 
-- `fonts-opensymbol=2:102.11+LibO6.4.7-0ubuntu0.20.04.9`
-- `libjuh-java=1:6.4.7-0ubuntu0.20.04.9`
-- `libjurt-java=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-base=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-base-core=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-base-drivers=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-calc=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-common=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-core=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-draw=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-gnome=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-gtk3=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-impress=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-java-common=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-math=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-nlpsolver=0.9+LibO6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-report-builder=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-report-builder-bin=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-script-provider-bsh=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-script-provider-js=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-script-provider-python=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-sdbc-firebird=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-sdbc-hsqldb=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-sdbc-mysql=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-sdbc-postgresql=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-style-colibre=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-style-elementary=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-style-tango=1:6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-wiki-publisher=1.2.0+LibO6.4.7-0ubuntu0.20.04.9`
-- `libreoffice-writer=1:6.4.7-0ubuntu0.20.04.9`
-- `libridl-java=1:6.4.7-0ubuntu0.20.04.9`
-- `libuno-cppu3=1:6.4.7-0ubuntu0.20.04.9`
-- `libuno-cppuhelpergcc3-3=1:6.4.7-0ubuntu0.20.04.9`
-- `libuno-purpenvhelpergcc3-3=1:6.4.7-0ubuntu0.20.04.9`
-- `libuno-sal3=1:6.4.7-0ubuntu0.20.04.9`
-- `libuno-salhelpergcc3-3=1:6.4.7-0ubuntu0.20.04.9`
-- `libunoil-java=1:6.4.7-0ubuntu0.20.04.9`
-- `libunoloader-java=1:6.4.7-0ubuntu0.20.04.9`
-- `python3-uno=1:6.4.7-0ubuntu0.20.04.9`
-- `uno-libs-private=1:6.4.7-0ubuntu0.20.04.9`
-- `ure=1:6.4.7-0ubuntu0.20.04.9`
+- `fonts-opensymbol=2:102.11+LibO6.4.7-0ubuntu0.20.04.10`
+- `libjuh-java=1:6.4.7-0ubuntu0.20.04.10`
+- `libjurt-java=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-base=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-base-core=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-base-drivers=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-calc=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-common=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-core=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-draw=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-gnome=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-gtk3=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-impress=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-java-common=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-math=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-nlpsolver=0.9+LibO6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-report-builder=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-report-builder-bin=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-script-provider-bsh=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-script-provider-js=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-script-provider-python=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-sdbc-firebird=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-sdbc-hsqldb=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-sdbc-mysql=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-sdbc-postgresql=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-style-colibre=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-style-elementary=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-style-tango=1:6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-wiki-publisher=1.2.0+LibO6.4.7-0ubuntu0.20.04.10`
+- `libreoffice-writer=1:6.4.7-0ubuntu0.20.04.10`
+- `libridl-java=1:6.4.7-0ubuntu0.20.04.10`
+- `libuno-cppu3=1:6.4.7-0ubuntu0.20.04.10`
+- `libuno-cppuhelpergcc3-3=1:6.4.7-0ubuntu0.20.04.10`
+- `libuno-purpenvhelpergcc3-3=1:6.4.7-0ubuntu0.20.04.10`
+- `libuno-sal3=1:6.4.7-0ubuntu0.20.04.10`
+- `libuno-salhelpergcc3-3=1:6.4.7-0ubuntu0.20.04.10`
+- `libunoil-java=1:6.4.7-0ubuntu0.20.04.10`
+- `libunoloader-java=1:6.4.7-0ubuntu0.20.04.10`
+- `python3-uno=1:6.4.7-0ubuntu0.20.04.10`
+- `uno-libs-private=1:6.4.7-0ubuntu0.20.04.10`
+- `ure=1:6.4.7-0ubuntu0.20.04.10`
 
 Licenses: (parsed from: `/usr/share/doc/fonts-opensymbol/copyright`, `/usr/share/doc/libjuh-java/copyright`, `/usr/share/doc/libjurt-java/copyright`, `/usr/share/doc/libreoffice/copyright`, `/usr/share/doc/libreoffice-base/copyright`, `/usr/share/doc/libreoffice-base-core/copyright`, `/usr/share/doc/libreoffice-base-drivers/copyright`, `/usr/share/doc/libreoffice-calc/copyright`, `/usr/share/doc/libreoffice-common/copyright`, `/usr/share/doc/libreoffice-core/copyright`, `/usr/share/doc/libreoffice-draw/copyright`, `/usr/share/doc/libreoffice-gnome/copyright`, `/usr/share/doc/libreoffice-gtk3/copyright`, `/usr/share/doc/libreoffice-impress/copyright`, `/usr/share/doc/libreoffice-java-common/copyright`, `/usr/share/doc/libreoffice-math/copyright`, `/usr/share/doc/libreoffice-nlpsolver/copyright`, `/usr/share/doc/libreoffice-report-builder/copyright`, `/usr/share/doc/libreoffice-report-builder-bin/copyright`, `/usr/share/doc/libreoffice-script-provider-bsh/copyright`, `/usr/share/doc/libreoffice-script-provider-js/copyright`, `/usr/share/doc/libreoffice-script-provider-python/copyright`, `/usr/share/doc/libreoffice-sdbc-firebird/copyright`, `/usr/share/doc/libreoffice-sdbc-hsqldb/copyright`, `/usr/share/doc/libreoffice-sdbc-mysql/copyright`, `/usr/share/doc/libreoffice-sdbc-postgresql/copyright`, `/usr/share/doc/libreoffice-style-colibre/copyright`, `/usr/share/doc/libreoffice-style-elementary/copyright`, `/usr/share/doc/libreoffice-style-tango/copyright`, `/usr/share/doc/libreoffice-wiki-publisher/copyright`, `/usr/share/doc/libreoffice-writer/copyright`, `/usr/share/doc/libridl-java/copyright`, `/usr/share/doc/libuno-cppu3/copyright`, `/usr/share/doc/libuno-cppuhelpergcc3-3/copyright`, `/usr/share/doc/libuno-purpenvhelpergcc3-3/copyright`, `/usr/share/doc/libuno-sal3/copyright`, `/usr/share/doc/libuno-salhelpergcc3-3/copyright`, `/usr/share/doc/libunoil-java/copyright`, `/usr/share/doc/libunoloader-java/copyright`, `/usr/share/doc/python3-uno/copyright`, `/usr/share/doc/uno-libs-private/copyright`, `/usr/share/doc/ure/copyright`)
 
@@ -5248,13 +5254,13 @@ Licenses: (parsed from: `/usr/share/doc/fonts-opensymbol/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libreoffice=1:6.4.7-0ubuntu0.20.04.9
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7-0ubuntu0.20.04.9.dsc' libreoffice_6.4.7-0ubuntu0.20.04.9.dsc 30509 SHA512:43e8bc465ca513638081528a32050caf1813c610ccee7dbede7caff19e7c28a3cdacb371da404d486df0635bd30087ba3e527657f713637b3877d1c0c0a64ac0
+$ apt-get source -qq --print-uris libreoffice=1:6.4.7-0ubuntu0.20.04.10
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7-0ubuntu0.20.04.10.dsc' libreoffice_6.4.7-0ubuntu0.20.04.10.dsc 30513 SHA512:0134d4c901d089ac057c3bfd5c96493715eae9446df629454a5a43c1ab8134c3d4fcbff69c7a5cfbe67212c9f39c190b2412b877550ae3fd5cafce16d87c659a
 'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig-helpcontent2.tar.xz' libreoffice_6.4.7.orig-helpcontent2.tar.xz 88073752 SHA512:3d6459cd4eab764d1fc15eb6edd6c1b16272f51869de1e9379328e81e03adb146d73c2acaf147d13b8ccc9a99721e023d404a0cf2f99a05264cc5536604828da
 'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig-tarballs.tar.xz' libreoffice_6.4.7.orig-tarballs.tar.xz 200916520 SHA512:10dc6e7b0521dff9aea57859312bb9802e1671f52d97f0f3fb7e030e779f778842088160ee14f446a8cc457d67b21b683c90c94bf0aa797ff890b2dea344f5ab
 'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig-translations.tar.xz' libreoffice_6.4.7.orig-translations.tar.xz 179847328 SHA512:6496ce816b136504c9511aeac5e881f329360e144ea48f28e9b56720ed727719339703431e0e0cee931d721c0e2b308366f0a3af771ebc980952c410f400c1cd
 'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig.tar.xz' libreoffice_6.4.7.orig.tar.xz 211530416 SHA512:a0ee0c0e617b33655dce0fbb14e2af12c3d810a3a9631d4b2204a75c8ac64c8797ab52735b799d078e1fff5a14d188ee850c239dab7bce4035a7ca704d6caa97
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7-0ubuntu0.20.04.9.debian.tar.xz' libreoffice_6.4.7-0ubuntu0.20.04.9.debian.tar.xz 2436488 SHA512:379cfd885f7b31c83b8f266b4c75334f910975ca2c2640c165fa9068328232dacb3a19f407d0975dca2a8e96b6684620cfaa97b854d6094130d1f29f52476e5d
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7-0ubuntu0.20.04.10.debian.tar.xz' libreoffice_6.4.7-0ubuntu0.20.04.10.debian.tar.xz 2436768 SHA512:e15d852fa47636268cb1f283b47ff8128ebb73d1c2303bff60e669272743dccfc4ea90b47f51f8b309ee6795d018e5f82dd5d4836942cb5f60050d0bf40597a0
 ```
 
 ### `dpkg` source package: `librest=0.8.1-1`
