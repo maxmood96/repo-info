@@ -1,10 +1,10 @@
-# `maven:3.9.6-amazoncorretto-11`
+# `maven:3.9.7-amazoncorretto-11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8c34c546a39761b4d39de9254f30ddbb9e0c621b0718a8e567a93c701712153f`
-- Created: `2023-12-18T19:11:15Z`
-- Virtual Size: ~ 826.04 Mb  
+- Image ID: `sha256:10bc0d9d906fe5db6c2a06d34b0cf589e8085d62325d3372605f94bad1892f58`
+- Created: `2024-05-27T15:57:48Z`
+- Virtual Size: ~ 826.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -15,6 +15,11 @@
   - `JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
+- Labels:
+  - `org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.`
+  - `org.opencontainers.image.source=https://github.com/carlossg/docker-maven`
+  - `org.opencontainers.image.title=Apache Maven`
+  - `org.opencontainers.image.url=https://github.com/carlossg/docker-maven`
 
 ## `rpm` (`.rpm`-based packages)
 

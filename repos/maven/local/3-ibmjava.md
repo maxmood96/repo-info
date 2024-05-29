@@ -1,10 +1,10 @@
-# `maven:3.9.6-ibmjava-8`
+# `maven:3.9.7-ibmjava-8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:432ac2aafa9c92ef13f1f46ce80d50230285782302ee2936f0c3b9600817a3d9`
-- Created: `2023-12-18T19:11:15Z`
-- Virtual Size: ~ 347.91 Mb  
+- Image ID: `sha256:87d62a80ca787fed3bcbd9446ef5d0c4d50b10a785f7303fd1a6177d6ce5432e`
+- Created: `2024-05-27T15:57:48Z`
+- Virtual Size: ~ 348.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -17,7 +17,11 @@
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 - Labels:
+  - `org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.`
   - `org.opencontainers.image.ref.name=ubuntu`
+  - `org.opencontainers.image.source=https://github.com/carlossg/docker-maven`
+  - `org.opencontainers.image.title=Apache Maven`
+  - `org.opencontainers.image.url=https://github.com/carlossg/docker-maven`
   - `org.opencontainers.image.version=22.04`
 
 ## `dpkg` (`.deb`-based packages)

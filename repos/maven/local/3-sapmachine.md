@@ -1,10 +1,10 @@
-# `maven:3.9.6-sapmachine-21`
+# `maven:3.9.7-sapmachine-21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b663cc299f816791022edaf2d24b32db1defef46984d4070dbbb02503bff7198`
-- Created: `2023-12-18T19:11:15Z`
-- Virtual Size: ~ 537.55 Mb  
+- Image ID: `sha256:c90e731dd3e73dfebf4d2903980fe40b10a2e559957f109acf9f24e804adfc20`
+- Created: `2024-05-27T15:57:48Z`
+- Virtual Size: ~ 544.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -15,5 +15,9 @@
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 - Labels:
+  - `org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.`
   - `org.opencontainers.image.ref.name=ubuntu`
+  - `org.opencontainers.image.source=https://github.com/carlossg/docker-maven`
+  - `org.opencontainers.image.title=Apache Maven`
+  - `org.opencontainers.image.url=https://github.com/carlossg/docker-maven`
   - `org.opencontainers.image.version=24.04`
