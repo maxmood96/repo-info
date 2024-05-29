@@ -1401,20 +1401,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris kernsmooth=2.23-22-1
-'http://deb.debian.org/debian/pool/main/k/kernsmooth/kernsmooth_2.23-22-1.dsc' kernsmooth_2.23-22-1.dsc 1891 SHA256:c11f3b845695cd9df646afeb82796e2bbea1cf6b7846757df46d899731cb7708
-'http://deb.debian.org/debian/pool/main/k/kernsmooth/kernsmooth_2.23-22.orig.tar.gz' kernsmooth_2.23-22.orig.tar.gz 25996 SHA256:76e044904606cab79c9edf4eae3ad63ac9d91a2962b44e063075b4b40e8574e9
-'http://deb.debian.org/debian/pool/main/k/kernsmooth/kernsmooth_2.23-22-1.debian.tar.xz' kernsmooth_2.23-22-1.debian.tar.xz 3456 SHA256:025a39f51d6b9c9c06dfdca32d6f675f01d20756097b16e78ac3ae82d9e70400
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/kernsmooth/2.23-22-1/
 
-- https://sources.debian.net/src/kernsmooth/2.23-22-1/ (for browsing the source)
-- https://sources.debian.net/src/kernsmooth/2.23-22-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/kernsmooth/2.23-22-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.6.3-3`
 
@@ -3135,10 +3128,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris rmatrix=1.7-0-2
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.7-0-2.dsc' rmatrix_1.7-0-2.dsc 1860 SHA256:595388b92735cff2ff3f4301ff663ef13d143a9c80eead186b7a27a7fe99e39c
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.7-0.orig.tar.gz' rmatrix_1.7-0.orig.tar.gz 2471290 SHA256:fb97bba0df370222eb4f7e2da2e94dd01053b5e054b1c51829ff9a6efc08ad37
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.7-0-2.debian.tar.xz' rmatrix_1.7-0-2.debian.tar.xz 5996 SHA256:e8694adda7406b5426245edaf8eca0d0751f5a21916830134bd7c0988f514207
+'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-0-2.dsc' rmatrix_1.7-0-2.dsc 1860 SHA256:595388b92735cff2ff3f4301ff663ef13d143a9c80eead186b7a27a7fe99e39c
+'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-0.orig.tar.gz' rmatrix_1.7-0.orig.tar.gz 2471290 SHA256:fb97bba0df370222eb4f7e2da2e94dd01053b5e054b1c51829ff9a6efc08ad37
+'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-0-2.debian.tar.xz' rmatrix_1.7-0-2.debian.tar.xz 5996 SHA256:e8694adda7406b5426245edaf8eca0d0751f5a21916830134bd7c0988f514207
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/rmatrix/1.7-0-2/ (for browsing the source)
+- https://sources.debian.net/src/rmatrix/1.7-0-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rmatrix/1.7-0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpart=4.1.23-1`
 
@@ -3320,20 +3319,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=255.5-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.5-1.dsc' systemd_255.5-1.dsc 7440 SHA256:0908a32c19f0d20bd0c56d25fbcc1e59a6097db85e96596a37e050727ef5cc6a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.5.orig.tar.gz' systemd_255.5.orig.tar.gz 14976055 SHA256:95e419f0bd80fde9f169533e070348beb94073d9a58daf505d719ed3ebfd2411
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_255.5-1.debian.tar.xz' systemd_255.5-1.debian.tar.xz 173312 SHA256:9c0ab524133a7ddc3d413300b1a2ec47a370d15365802fe598a0595d41a9d940
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/255.5-1/
 
-- https://sources.debian.net/src/systemd/255.5-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/255.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/255.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.09-1`
 
