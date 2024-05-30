@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:65eab5d95b581d3a0a06923c10172a6d48f0d87c89be8e60dc49fd703f6d1229`
-- Created: `2024-04-25T19:31:23.104527586Z`
-- Virtual Size: ~ 322.73 Mb  
+- Image ID: `sha256:1c3f3468fb8838236fe13f5c9a14faa8b024c84a9a2d37a9d85baa8b507fd624`
+- Created: `2024-05-28T15:17:11Z`
+- Virtual Size: ~ 322.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -278,16 +278,16 @@ FTL OR GPL-2.0-or-later
 ### `apk` package: `git`
 
 ```console
-git-2.43.0-r0 description:
+git-2.43.4-r0 description:
 Distributed version control system
 
-git-2.43.0-r0 webpage:
+git-2.43.4-r0 webpage:
 https://www.git-scm.com/
 
-git-2.43.0-r0 installed size:
-6056 KiB
+git-2.43.4-r0 installed size:
+6068 KiB
 
-git-2.43.0-r0 license:
+git-2.43.4-r0 license:
 GPL-2.0-only
 
 ```

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6aba875a97608357fb9b7665c3241327a5b57d4bd118a5f678445edcd42a3359`
-- Created: `2024-05-02T05:36:05.851189594Z`
-- Virtual Size: ~ 539.65 Mb  
+- Image ID: `sha256:d6b1124e145414b777a2b7a8e868516b29f7ccb7e4ecb23d4bebf765c8c77e2c`
+- Created: `2024-05-28T15:17:11Z`
+- Virtual Size: ~ 538.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -669,12 +669,12 @@ $ apt-get source -qq --print-uris gdbm=1.18.1-5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.18.1-5.debian.tar.xz' gdbm_1.18.1-5.debian.tar.xz 16348 SHA256:3c1a0e05b40a97ee51ce77c736c72c37738ba31b2720111d3bc99175a2c3a3ed
 ```
 
-### `dpkg` source package: `git=1:2.25.1-1ubuntu3.11`
+### `dpkg` source package: `git=1:2.25.1-1ubuntu3.12`
 
 Binary Packages:
 
-- `git=1:2.25.1-1ubuntu3.11`
-- `git-man=1:2.25.1-1ubuntu3.11`
+- `git=1:2.25.1-1ubuntu3.12`
+- `git-man=1:2.25.1-1ubuntu3.12`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -700,10 +700,10 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu3.11
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.11.dsc' git_2.25.1-1ubuntu3.11.dsc 2966 SHA512:7d3c3378a2417cf4e32133786a654abdd7a2dfeaf6bbe1533b15aee6446960c8f04752b8458c93f1638ce85156194b952c0c9e6b233f163a4e3d10490f7975b1
+$ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu3.12
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.12.dsc' git_2.25.1-1ubuntu3.12.dsc 2966 SHA512:e05855d12532e12ae26353b9790858bcde3d8906f97291b0f742042870a4b7c3b4a0edb328e2771fbf2eae992788b190751008974aef7ae2df38d45a16a536bb
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1.orig.tar.xz' git_2.25.1.orig.tar.xz 5875548 SHA512:15241143acfd8542d85d2709ac3c80dbd6e8d5234438f70c4f33cc71a2bdec3e32938df7f6351e2746d570b021d3bd0b70474ea4beec0c51d1fc45f9c287b344
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.11.debian.tar.xz' git_2.25.1-1ubuntu3.11.debian.tar.xz 708608 SHA512:f761df90be2d25b8bbdcbec0fa781bf2b20e954350eb15a1a210408876ac7e90ca4b7643b00c074cd4ce7b286494b0bfb71f4586024e01c026737cb290165ba9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.12.debian.tar.xz' git_2.25.1-1ubuntu3.12.debian.tar.xz 713156 SHA512:ff693a583cd3288be10f7a0b8a5cd678720962eca29fb25c2e45e0503e1bc973966e00ff311abb40db871da799f626e4bb88c1e4dd6cb47c494fdf69774d42a4
 ```
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.15`
@@ -719,14 +719,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.15
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.15.dsc' glibc_2.31-0ubuntu9.15.dsc 9552 SHA512:bc2abf554ad00e2cc853f3e0045ab42a7035973ac151d11105caddec834daf1a7614fafe3a63f6e15b0a70c193f46c848c7c9d84fe6b11b08e317a124ebf7242
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.15.debian.tar.xz' glibc_2.31-0ubuntu9.15.debian.tar.xz 886588 SHA512:fd7a6e2eadcf18086b44bfa19334cb2664e3bdf6282951c0c45b20f81a87e37c549485875c6de3d4c4c03ac81b18af5734d9708bb2036592055cc6824787d4fe
-```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4ubuntu0.1`
 
