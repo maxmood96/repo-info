@@ -1,7 +1,7 @@
 ## `friendica:dev-fpm-alpine`
 
 ```console
-$ docker pull friendica@sha256:612463cfb35901b8277b736d2e121063249ac7f559accd268c2382407e4733e6
+$ docker pull friendica@sha256:9ffd9c33246ee57cc8f0ab23e33a52a558e861d98e15ee9fd4339e0cae32dce5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -186,339 +186,339 @@ CMD ["php-fpm"]
 ### `friendica:dev-fpm-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull friendica@sha256:be37b980d410d3b21e20eef3add601d50e97410aaabc7c27a2a37f793c30063f
+$ docker pull friendica@sha256:ee356d8fe9d4f1c62ae75b400a8499c8f00afaa682ac3873c06a1445646dd2ac
 ```
 
--	Docker Version: 20.10.23
+-	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.0 MB (54012828 bytes)**  
+-	Total Size: **52.1 MB (52109832 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df71def09e1a2a439c843051cd1b1f48ca99ac603f21a966384d57f1825f7a89`
+-	Image ID: `sha256:15e8d38b3d41d072520b792b6b30db208a93bf78aaaa059119d8e968cc6bccde`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Fri, 26 Jan 2024 23:49:17 GMT
-ADD file:99cc37cba14ac64dc4652e46dc671888a0265f90992faa05c32d32e21f89c147 in / 
-# Fri, 26 Jan 2024 23:49:17 GMT
+# Wed, 22 May 2024 17:56:54 GMT
+ADD file:5103c8a26cd2dfa76f84be7e1886df206b2131d04cf3079dfd1b6385cc796428 in / 
+# Wed, 22 May 2024 17:56:55 GMT
 CMD ["/bin/sh"]
-# Fri, 15 Mar 2024 23:49:29 GMT
+# Wed, 29 May 2024 21:50:41 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
-# Fri, 15 Mar 2024 23:49:30 GMT
+# Wed, 29 May 2024 21:50:43 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz
-# Fri, 15 Mar 2024 23:49:31 GMT
+# Wed, 29 May 2024 21:50:44 GMT
 RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data
-# Fri, 15 Mar 2024 23:49:31 GMT
+# Wed, 29 May 2024 21:50:44 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Fri, 15 Mar 2024 23:49:32 GMT
+# Wed, 29 May 2024 21:50:45 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html
-# Fri, 15 Mar 2024 23:49:32 GMT
+# Wed, 29 May 2024 21:50:45 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 15 Mar 2024 23:49:33 GMT
+# Wed, 29 May 2024 21:50:45 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 15 Mar 2024 23:49:33 GMT
+# Wed, 29 May 2024 21:50:45 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Sat, 16 Mar 2024 00:39:10 GMT
+# Wed, 29 May 2024 22:36:16 GMT
 ENV GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD
-# Fri, 12 Apr 2024 17:49:46 GMT
+# Wed, 29 May 2024 22:36:17 GMT
 ENV PHP_VERSION=8.1.28
-# Fri, 12 Apr 2024 17:49:46 GMT
+# Wed, 29 May 2024 22:36:17 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.1.28.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.1.28.tar.xz.asc
-# Fri, 12 Apr 2024 17:49:46 GMT
+# Wed, 29 May 2024 22:36:17 GMT
 ENV PHP_SHA256=95d0b2e9466108fd750dab5c30a09e5c67f5ad2cb3b1ffb3625a038a755ad080
-# Fri, 12 Apr 2024 17:49:54 GMT
+# Wed, 29 May 2024 22:36:24 GMT
 RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apk del --no-network .fetch-deps
-# Fri, 12 Apr 2024 17:49:54 GMT
+# Wed, 29 May 2024 22:36:24 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Fri, 12 Apr 2024 17:55:15 GMT
+# Wed, 29 May 2024 22:42:38 GMT
 RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 's390x-linux-musl' && echo '--without-pcre-jit') 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Fri, 12 Apr 2024 17:55:15 GMT
+# Wed, 29 May 2024 22:42:39 GMT
 COPY multi:869bde9dbeae74886a05c9e2107b3e3b4877116db8c6d9adbaff2719f9fb5262 in /usr/local/bin/ 
-# Fri, 12 Apr 2024 17:55:16 GMT
+# Wed, 29 May 2024 22:42:40 GMT
 RUN docker-php-ext-enable sodium
-# Fri, 12 Apr 2024 17:55:17 GMT
+# Wed, 29 May 2024 22:42:40 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 12 Apr 2024 17:55:17 GMT
+# Wed, 29 May 2024 22:42:40 GMT
 WORKDIR /var/www/html
-# Fri, 12 Apr 2024 17:55:17 GMT
+# Wed, 29 May 2024 22:42:41 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini"
-# Fri, 12 Apr 2024 17:55:17 GMT
+# Wed, 29 May 2024 22:42:41 GMT
 STOPSIGNAL SIGQUIT
-# Fri, 12 Apr 2024 17:55:17 GMT
+# Wed, 29 May 2024 22:42:41 GMT
 EXPOSE 9000
-# Fri, 12 Apr 2024 17:55:17 GMT
+# Wed, 29 May 2024 22:42:42 GMT
 CMD ["php-fpm"]
-# Fri, 12 Apr 2024 18:34:14 GMT
+# Wed, 29 May 2024 23:26:26 GMT
 RUN set -ex;     apk add --no-cache         rsync         imagemagick         msmtp         shadow         tini;
-# Fri, 12 Apr 2024 18:34:15 GMT
+# Wed, 29 May 2024 23:26:26 GMT
 ENV GOSU_VERSION=1.14
-# Fri, 12 Apr 2024 18:34:19 GMT
+# Wed, 29 May 2024 23:26:31 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 12 Apr 2024 18:36:20 GMT
+# Wed, 29 May 2024 23:28:43 GMT
 RUN set -ex;         apk add --no-cache --virtual .build-deps         mariadb-client         bash         $PHPIZE_DEPS         libpng-dev         libjpeg-turbo-dev         imagemagick-dev         libtool         libmemcached-dev         cyrus-sasl-dev         libjpeg-turbo-dev         freetype-dev         libwebp-dev         librsvg         pcre-dev         libzip-dev         icu-dev         openldap-dev         gmp-dev     ;         docker-php-ext-configure gd         --with-freetype         --with-jpeg         --with-webp     ;         docker-php-ext-install -j "$(nproc)"         pdo_mysql         exif         gd         zip         opcache         pcntl         ldap         gmp         intl     ;         pecl install APCu-5.1.23;     pecl install memcached-3.2.0RC2;     pecl install redis-6.0.2;     pecl install imagick-3.7.0;         docker-php-ext-enable         apcu         memcached         redis         imagick     ;         runDeps="$(         scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions             | tr ',' '\n'             | sort -u             | awk 'system("[ -e /usr/local/lib" $1 " ]") == 0 { next } { print "so:" $1 }'     )";     apk add --no-network --virtual .friendica-phpext-rundeps $runDeps;     apk del --no-network .build-deps;
-# Fri, 12 Apr 2024 18:36:20 GMT
+# Wed, 29 May 2024 23:28:44 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Fri, 12 Apr 2024 18:36:20 GMT
+# Wed, 29 May 2024 23:28:44 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Fri, 12 Apr 2024 18:36:21 GMT
+# Wed, 29 May 2024 23:28:44 GMT
 RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;     ln -s /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
-# Fri, 12 Apr 2024 18:36:21 GMT
+# Wed, 29 May 2024 23:28:45 GMT
 VOLUME [/var/www/html]
-# Fri, 12 Apr 2024 18:36:21 GMT
+# Wed, 29 May 2024 23:28:45 GMT
 ENV FRIENDICA_SYSLOG_FLAGS=39
-# Fri, 12 Apr 2024 18:37:18 GMT
+# Wed, 29 May 2024 23:29:38 GMT
 ENV FRIENDICA_VERSION=2024.06-dev
-# Fri, 12 Apr 2024 18:37:18 GMT
+# Wed, 29 May 2024 23:29:38 GMT
 ENV FRIENDICA_ADDONS=2024.06-dev
-# Fri, 12 Apr 2024 18:37:20 GMT
+# Wed, 29 May 2024 23:29:40 GMT
 RUN set -ex;      apk add --no-cache --virtual .fetch-deps             gnupg         ;
-# Fri, 12 Apr 2024 18:37:20 GMT
+# Wed, 29 May 2024 23:29:41 GMT
 COPY multi:25ccf1ddc0e0285a533455c8e856fafdfe193ac37a4c3c06069260e518fe72d7 in / 
-# Fri, 12 Apr 2024 18:37:20 GMT
+# Wed, 29 May 2024 23:29:41 GMT
 COPY multi:201dba5df7e408009a8882797a28095a47753a2db673a80c99e898e88501c42e in /usr/src/friendica/config/ 
-# Fri, 12 Apr 2024 18:37:21 GMT
+# Wed, 29 May 2024 23:29:41 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Fri, 12 Apr 2024 18:37:21 GMT
+# Wed, 29 May 2024 23:29:41 GMT
 CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:0dc2e6c0f9ded2daeca96bbf270526d182d2f4267f5c7610c222c05cad6f6b96`  
-		Last Modified: Fri, 26 Jan 2024 23:49:40 GMT  
-		Size: 3.2 MB (3165396 bytes)  
+	-	`sha256:b0da55d51ed2f4a2e9c4e3ca1e420bac26a1a37098e2f1437841049c51df7320`  
+		Last Modified: Wed, 22 May 2024 17:57:17 GMT  
+		Size: 3.4 MB (3365055 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59be61bd2ba9f18af71b96c422917e0014880c902aa3ccb7f8257383b11b69ac`  
-		Last Modified: Sat, 16 Mar 2024 01:01:12 GMT  
-		Size: 2.8 MB (2764506 bytes)  
+	-	`sha256:22fbde2bc87fb1211abfaa9d742eb1626779b6e008e3910fc9e86d002d2c18b4`  
+		Last Modified: Wed, 29 May 2024 22:46:54 GMT  
+		Size: 3.3 MB (3256537 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b95722804161331c4c8c5fb5c67c2930e7f200746da0b87efc2cc1ca230b2bdf`  
-		Last Modified: Sat, 16 Mar 2024 01:01:11 GMT  
-		Size: 1.3 KB (1264 bytes)  
+	-	`sha256:2d3d57f281c14652f66f7ed738a118a66f8f9fe01923de337160db44abde6c2e`  
+		Last Modified: Wed, 29 May 2024 22:46:53 GMT  
+		Size: 970.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9405a5b710e6142fb5b24b32edc3d286164167c9a50bc8d571a93dba40d73564`  
-		Last Modified: Sat, 16 Mar 2024 01:01:10 GMT  
-		Size: 269.0 B  
+	-	`sha256:4df4f95681943fb2de91ae5af31702772ccab2891b4971de5a53ad5b5f06489e`  
+		Last Modified: Wed, 29 May 2024 22:46:53 GMT  
+		Size: 268.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5034c6f9da9305107a064e6bdf80a15b98ea6c47864f2ce5c91d731df9fee519`  
-		Last Modified: Fri, 12 Apr 2024 18:07:00 GMT  
-		Size: 11.9 MB (11869622 bytes)  
+	-	`sha256:9ddc98bce9a74e4be210faf44c118f3c247e76960ca78657b6ff426283c6bda9`  
+		Last Modified: Wed, 29 May 2024 22:51:34 GMT  
+		Size: 11.9 MB (11869726 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1c27ca81a7217577c09886a1f8033a02914efe84b73118225cb93dd8462fe75`  
-		Last Modified: Fri, 12 Apr 2024 18:06:59 GMT  
-		Size: 497.0 B  
+	-	`sha256:64c3dcd7caa70e9fc61ff7509b2bc0d109756a094031f0bef7c0f61c06b0af9e`  
+		Last Modified: Wed, 29 May 2024 22:51:33 GMT  
+		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9189fc2f4fcbc57d66fc8114b49971a2577b5996916caf779dbfe33fcec89e3a`  
-		Last Modified: Fri, 12 Apr 2024 18:07:27 GMT  
-		Size: 13.7 MB (13697196 bytes)  
+	-	`sha256:eb9f3cf73dc2015dde84570b953fbc46316d2a9042cf8302de0f08915763715d`  
+		Last Modified: Wed, 29 May 2024 22:52:02 GMT  
+		Size: 11.4 MB (11437519 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c1eb20e02ff9bf6880405f523a0e0cb741c6fa64fb4c07be49c4cc0b3e05cc1`  
-		Last Modified: Fri, 12 Apr 2024 18:07:24 GMT  
-		Size: 2.4 KB (2449 bytes)  
+	-	`sha256:c3c16da7b13a412b00ce71415e38c05a85a73842910758eb9af6a76984bce6c8`  
+		Last Modified: Wed, 29 May 2024 22:51:59 GMT  
+		Size: 2.4 KB (2447 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66d9507dba589cb27dd41a62850ff32b92b220c943d290e9f499fc091fd3e720`  
-		Last Modified: Fri, 12 Apr 2024 18:07:24 GMT  
-		Size: 19.2 KB (19151 bytes)  
+	-	`sha256:284ce5a8cbf5ab24cfd34f080667447510bff7e4c0b544f09dcd225419cf7cf8`  
+		Last Modified: Wed, 29 May 2024 22:52:00 GMT  
+		Size: 19.5 KB (19488 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f8ecaaf68f5acfe4c7486a6629e4ab0b0efa2be45237aa3c58831fb0181e22a`  
-		Last Modified: Fri, 12 Apr 2024 18:07:24 GMT  
-		Size: 8.9 KB (8881 bytes)  
+	-	`sha256:4e69d3c613505cd420d788fba77ceef66d831ebe1981bc52ff6b9c60121e111c`  
+		Last Modified: Wed, 29 May 2024 22:52:00 GMT  
+		Size: 8.9 KB (8877 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88a9efa45aee81159d03a0404930edb089559e311d4d6c57ba16f54ed884c81b`  
-		Last Modified: Fri, 12 Apr 2024 18:37:33 GMT  
-		Size: 8.5 MB (8544218 bytes)  
+	-	`sha256:f72750ad191db5da567aacd86d006582087008089cd6d7a2d4cc97b5222c1860`  
+		Last Modified: Wed, 29 May 2024 23:29:54 GMT  
+		Size: 8.2 MB (8204047 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:314e77f0ad3420e328ecc8157eb72288c5234386a92587aa8d7ada6a1dd7153f`  
-		Last Modified: Fri, 12 Apr 2024 18:37:32 GMT  
-		Size: 931.2 KB (931195 bytes)  
+	-	`sha256:6e8735b5e77d0f23ec5bd64e514396dad151cfa1e9b6b7d1945a423699f0ecb1`  
+		Last Modified: Wed, 29 May 2024 23:29:53 GMT  
+		Size: 931.5 KB (931526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d949bb78899fb30f74df3aa9a5e21c73389b078e596d3a8b576849bf39ac7fe`  
-		Last Modified: Fri, 12 Apr 2024 18:37:32 GMT  
-		Size: 8.7 MB (8720614 bytes)  
+	-	`sha256:c2cd9cdd8c3df48c7473d21cc2b60d89bd9eb230a22dc58d7c08f571054f4e82`  
+		Last Modified: Wed, 29 May 2024 23:29:52 GMT  
+		Size: 8.7 MB (8719901 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdb5a337ef6b378839d206fb93dd5a7718633d8ec6d7e6479b838cd2c87eb583`  
-		Last Modified: Fri, 12 Apr 2024 18:37:30 GMT  
-		Size: 677.0 B  
+	-	`sha256:3349f478824c27dd9e7b4fd24db6cf19682c45e528659509c51f4d09694920b5`  
+		Last Modified: Wed, 29 May 2024 23:29:50 GMT  
+		Size: 675.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6ed6134b168984ecfc8d569d03a6cc3ce5be934f13341e9873e26dcb75e86fc`  
-		Last Modified: Fri, 12 Apr 2024 18:38:03 GMT  
-		Size: 4.3 MB (4282128 bytes)  
+	-	`sha256:8943c0c35a1034a425885c412397c55f474fcc64259ccb198843025e03045e9c`  
+		Last Modified: Wed, 29 May 2024 23:30:36 GMT  
+		Size: 4.3 MB (4287540 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99faee65431466b4f88523e73c0a555052c2b6724cac5be1494e968046a9f6bf`  
-		Last Modified: Fri, 12 Apr 2024 18:38:02 GMT  
-		Size: 3.8 KB (3818 bytes)  
+	-	`sha256:46917f1d9fa1c6552825d811ec665dd1f41ab1d127e7f3a68d3424719b576cc8`  
+		Last Modified: Wed, 29 May 2024 23:30:35 GMT  
+		Size: 3.8 KB (3817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:357ad5c8ec56102a40247a9d6fb30f1f77c5fd8dd42e32d8dfd0dc56d1bff695`  
-		Last Modified: Fri, 12 Apr 2024 18:38:02 GMT  
-		Size: 947.0 B  
+	-	`sha256:9cbeeeef2898a159ce0337d7be61f343fef84c0611a1cef61550c2f2dbb63fcb`  
+		Last Modified: Wed, 29 May 2024 23:30:35 GMT  
+		Size: 946.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `friendica:dev-fpm-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull friendica@sha256:a0590243ab115ae450d5a3e95b9ad4aa866ffc037f96f0c5f8425363dcb5537e
+$ docker pull friendica@sha256:5a906b46731edaa7c68b6052cc9c534c82b0904239a0d5d523d61ca4e3ee8ac3
 ```
 
--	Docker Version: 20.10.23
+-	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.6 MB (51565662 bytes)**  
+-	Total Size: **49.8 MB (49790927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49448d95bb97af2a204a3b618f8dc067c3dbee1f448edfcf772690b3c9b2e3b2`
+-	Image ID: `sha256:62c016e2d5d1f741a35bac66b8899999ffff4241f43a8955ab364ac30be96cfb`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Sat, 27 Jan 2024 00:14:54 GMT
-ADD file:dca2a738b46ed78f0ccd7e23ba4d4729528feaa423a0ff0ac5c3512bf43b6fae in / 
-# Sat, 27 Jan 2024 00:14:54 GMT
+# Wed, 22 May 2024 18:07:12 GMT
+ADD file:d6a90589cd9e92525c68e44f296baf2a57e5bda9e32ed5f7d45d6ad9a6595e26 in / 
+# Wed, 22 May 2024 18:07:12 GMT
 CMD ["/bin/sh"]
-# Sat, 16 Mar 2024 09:01:12 GMT
+# Wed, 29 May 2024 22:44:05 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
-# Sat, 16 Mar 2024 09:01:14 GMT
+# Wed, 29 May 2024 22:44:07 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz
-# Sat, 16 Mar 2024 09:01:15 GMT
+# Wed, 29 May 2024 22:44:08 GMT
 RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data
-# Sat, 16 Mar 2024 09:01:15 GMT
+# Wed, 29 May 2024 22:44:08 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Sat, 16 Mar 2024 09:01:15 GMT
+# Wed, 29 May 2024 22:44:09 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html
-# Sat, 16 Mar 2024 09:01:15 GMT
+# Wed, 29 May 2024 22:44:09 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Sat, 16 Mar 2024 09:01:16 GMT
+# Wed, 29 May 2024 22:44:09 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Sat, 16 Mar 2024 09:01:16 GMT
+# Wed, 29 May 2024 22:44:09 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Sat, 16 Mar 2024 10:16:35 GMT
+# Wed, 29 May 2024 23:23:53 GMT
 ENV GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD
-# Fri, 12 Apr 2024 18:24:49 GMT
+# Wed, 29 May 2024 23:23:53 GMT
 ENV PHP_VERSION=8.1.28
-# Fri, 12 Apr 2024 18:24:49 GMT
+# Wed, 29 May 2024 23:23:53 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.1.28.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.1.28.tar.xz.asc
-# Fri, 12 Apr 2024 18:24:50 GMT
+# Wed, 29 May 2024 23:23:54 GMT
 ENV PHP_SHA256=95d0b2e9466108fd750dab5c30a09e5c67f5ad2cb3b1ffb3625a038a755ad080
-# Fri, 12 Apr 2024 18:24:57 GMT
+# Wed, 29 May 2024 23:24:01 GMT
 RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apk del --no-network .fetch-deps
-# Fri, 12 Apr 2024 18:24:57 GMT
+# Wed, 29 May 2024 23:24:01 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Fri, 12 Apr 2024 18:30:09 GMT
+# Wed, 29 May 2024 23:29:21 GMT
 RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 's390x-linux-musl' && echo '--without-pcre-jit') 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Fri, 12 Apr 2024 18:30:09 GMT
+# Wed, 29 May 2024 23:29:21 GMT
 COPY multi:869bde9dbeae74886a05c9e2107b3e3b4877116db8c6d9adbaff2719f9fb5262 in /usr/local/bin/ 
-# Fri, 12 Apr 2024 18:30:10 GMT
+# Wed, 29 May 2024 23:29:22 GMT
 RUN docker-php-ext-enable sodium
-# Fri, 12 Apr 2024 18:30:11 GMT
+# Wed, 29 May 2024 23:29:22 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 12 Apr 2024 18:30:11 GMT
+# Wed, 29 May 2024 23:29:22 GMT
 WORKDIR /var/www/html
-# Fri, 12 Apr 2024 18:30:11 GMT
+# Wed, 29 May 2024 23:29:23 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini"
-# Fri, 12 Apr 2024 18:30:11 GMT
+# Wed, 29 May 2024 23:29:23 GMT
 STOPSIGNAL SIGQUIT
-# Fri, 12 Apr 2024 18:30:11 GMT
+# Wed, 29 May 2024 23:29:23 GMT
 EXPOSE 9000
-# Fri, 12 Apr 2024 18:30:12 GMT
+# Wed, 29 May 2024 23:29:23 GMT
 CMD ["php-fpm"]
-# Fri, 12 Apr 2024 19:57:35 GMT
+# Thu, 30 May 2024 00:08:43 GMT
 RUN set -ex;     apk add --no-cache         rsync         imagemagick         msmtp         shadow         tini;
-# Fri, 12 Apr 2024 19:57:35 GMT
+# Thu, 30 May 2024 00:08:43 GMT
 ENV GOSU_VERSION=1.14
-# Fri, 12 Apr 2024 19:57:39 GMT
+# Thu, 30 May 2024 00:08:48 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 12 Apr 2024 19:59:31 GMT
+# Thu, 30 May 2024 00:10:48 GMT
 RUN set -ex;         apk add --no-cache --virtual .build-deps         mariadb-client         bash         $PHPIZE_DEPS         libpng-dev         libjpeg-turbo-dev         imagemagick-dev         libtool         libmemcached-dev         cyrus-sasl-dev         libjpeg-turbo-dev         freetype-dev         libwebp-dev         librsvg         pcre-dev         libzip-dev         icu-dev         openldap-dev         gmp-dev     ;         docker-php-ext-configure gd         --with-freetype         --with-jpeg         --with-webp     ;         docker-php-ext-install -j "$(nproc)"         pdo_mysql         exif         gd         zip         opcache         pcntl         ldap         gmp         intl     ;         pecl install APCu-5.1.23;     pecl install memcached-3.2.0RC2;     pecl install redis-6.0.2;     pecl install imagick-3.7.0;         docker-php-ext-enable         apcu         memcached         redis         imagick     ;         runDeps="$(         scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions             | tr ',' '\n'             | sort -u             | awk 'system("[ -e /usr/local/lib" $1 " ]") == 0 { next } { print "so:" $1 }'     )";     apk add --no-network --virtual .friendica-phpext-rundeps $runDeps;     apk del --no-network .build-deps;
-# Fri, 12 Apr 2024 19:59:31 GMT
+# Thu, 30 May 2024 00:10:48 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Fri, 12 Apr 2024 19:59:31 GMT
+# Thu, 30 May 2024 00:10:48 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Fri, 12 Apr 2024 19:59:32 GMT
+# Thu, 30 May 2024 00:10:49 GMT
 RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;     ln -s /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
-# Fri, 12 Apr 2024 19:59:32 GMT
+# Thu, 30 May 2024 00:10:49 GMT
 VOLUME [/var/www/html]
-# Fri, 12 Apr 2024 19:59:32 GMT
+# Thu, 30 May 2024 00:10:49 GMT
 ENV FRIENDICA_SYSLOG_FLAGS=39
-# Fri, 12 Apr 2024 20:01:38 GMT
+# Thu, 30 May 2024 00:11:47 GMT
 ENV FRIENDICA_VERSION=2024.06-dev
-# Fri, 12 Apr 2024 20:01:38 GMT
+# Thu, 30 May 2024 00:11:48 GMT
 ENV FRIENDICA_ADDONS=2024.06-dev
-# Fri, 12 Apr 2024 20:01:40 GMT
+# Thu, 30 May 2024 00:11:49 GMT
 RUN set -ex;      apk add --no-cache --virtual .fetch-deps             gnupg         ;
-# Fri, 12 Apr 2024 20:01:40 GMT
+# Thu, 30 May 2024 00:11:50 GMT
 COPY multi:25ccf1ddc0e0285a533455c8e856fafdfe193ac37a4c3c06069260e518fe72d7 in / 
-# Fri, 12 Apr 2024 20:01:40 GMT
+# Thu, 30 May 2024 00:11:50 GMT
 COPY multi:201dba5df7e408009a8882797a28095a47753a2db673a80c99e898e88501c42e in /usr/src/friendica/config/ 
-# Fri, 12 Apr 2024 20:01:40 GMT
+# Thu, 30 May 2024 00:11:50 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Fri, 12 Apr 2024 20:01:40 GMT
+# Thu, 30 May 2024 00:11:50 GMT
 CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:fda0ff469afd28d9cfbb946e8e0a3c911c591a2691bea62be9187e45a1c50549`  
-		Last Modified: Sat, 27 Jan 2024 00:15:27 GMT  
-		Size: 2.9 MB (2918899 bytes)  
+	-	`sha256:8b416cac0b22b1e77fbe2d8d5f2f70f44878497f7c24dd739d8e56b317931303`  
+		Last Modified: Wed, 22 May 2024 18:07:30 GMT  
+		Size: 3.1 MB (3094035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c24a3155a604085efaa4c70bd2859739b6141d4fd0670fa3e15fd67cab1a2154`  
-		Last Modified: Sat, 16 Mar 2024 11:00:26 GMT  
-		Size: 2.6 MB (2612666 bytes)  
+	-	`sha256:b726d2ea6325cbe2918171017f17d1d12ab778e5c1d68d663b22b061790803e5`  
+		Last Modified: Wed, 29 May 2024 23:37:27 GMT  
+		Size: 3.1 MB (3069336 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b91bbcf35c6eddf26fa13dc8c811f2ac147d03bba1af2fa37c43084f218a04ca`  
-		Last Modified: Sat, 16 Mar 2024 11:00:25 GMT  
-		Size: 1.3 KB (1263 bytes)  
+	-	`sha256:2825cd15ae946086782a856b1d53fadaac330d395b11caf35413766a5903ab25`  
+		Last Modified: Wed, 29 May 2024 23:37:26 GMT  
+		Size: 970.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4eb37d0aeb5ad8612608d36edcbe0f65f4004674effbc82dceac7fda7895b9f1`  
-		Last Modified: Sat, 16 Mar 2024 11:00:25 GMT  
+	-	`sha256:47ea0ff5951f7688d6fc2e3212eae4ff67224a3150942bba64e271e0e6878353`  
+		Last Modified: Wed, 29 May 2024 23:37:25 GMT  
 		Size: 268.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:645e4a8997581f064e40a092b1f97de70a7a9f57b3bf1d4a4c430177fb767dea`  
-		Last Modified: Fri, 12 Apr 2024 18:45:28 GMT  
-		Size: 11.9 MB (11869615 bytes)  
+	-	`sha256:c72494e0a66e023c855b8a1241b3f02427c24c104864a235cd91038767715db8`  
+		Last Modified: Wed, 29 May 2024 23:42:37 GMT  
+		Size: 11.9 MB (11869727 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9edae6f6f93611acc17c6b24b9054cb83089e809d49269d899608b4bd648bdc`  
-		Last Modified: Fri, 12 Apr 2024 18:45:27 GMT  
+	-	`sha256:2567d4f732bb6069ff5df571bcd9781c9ac858e70dd25802ffebdf3515ca1de1`  
+		Last Modified: Wed, 29 May 2024 23:42:36 GMT  
 		Size: 497.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c5245bc5573b6512f6def68969d1f5ee4ba39c0cde1372c4e4454da02985e8d`  
-		Last Modified: Fri, 12 Apr 2024 18:45:54 GMT  
-		Size: 12.8 MB (12828719 bytes)  
+	-	`sha256:f133a9fdc4474af2e03135524f667b0a961d0fb0b3244db0135434764c52b0ec`  
+		Last Modified: Wed, 29 May 2024 23:43:03 GMT  
+		Size: 10.7 MB (10722925 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9b1623ca404696c74f1e89e47e60489bdefd499923665f5410e5e03ec03698`  
-		Last Modified: Fri, 12 Apr 2024 18:45:52 GMT  
-		Size: 2.5 KB (2451 bytes)  
+	-	`sha256:de15751bf47569b8648560b22f00c40de5fb789217969c939a3dd6633b55280e`  
+		Last Modified: Wed, 29 May 2024 23:43:01 GMT  
+		Size: 2.5 KB (2450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b3b2b9940e852cca3391e2d29a4a4363e0cf6a2fc66233021143ad8892bb4f7`  
-		Last Modified: Fri, 12 Apr 2024 18:45:51 GMT  
-		Size: 19.1 KB (19112 bytes)  
+	-	`sha256:f977f7a0befadeff066c38a4d293a337c13ce63848a3487f007d44cd1c54616d`  
+		Last Modified: Wed, 29 May 2024 23:43:01 GMT  
+		Size: 19.5 KB (19484 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:789c742fece3a4eb0315506527ed4fc6c5931e4d8980089bd0b5728575c48fb5`  
-		Last Modified: Fri, 12 Apr 2024 18:45:51 GMT  
-		Size: 8.9 KB (8878 bytes)  
+	-	`sha256:939556d6ee83319149cb489475d20216a2d27deb64f6a74c6033ce6fc3b8260b`  
+		Last Modified: Wed, 29 May 2024 23:43:01 GMT  
+		Size: 8.9 KB (8881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2924a772c9129347cc06f2e64b8d87d570998a174e1f720fc6d46eb99bf9a88d`  
-		Last Modified: Fri, 12 Apr 2024 20:02:33 GMT  
-		Size: 7.9 MB (7872364 bytes)  
+	-	`sha256:94bad7cff376832d7894547fde57c2f543aa045a58377c23c26aa0b984ef22fd`  
+		Last Modified: Thu, 30 May 2024 00:12:22 GMT  
+		Size: 7.6 MB (7562471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e168df811906fa0e7f26e8d87d2474e00b180eca9378af38cfc184c816bfcc5`  
-		Last Modified: Fri, 12 Apr 2024 20:02:33 GMT  
-		Size: 931.2 KB (931162 bytes)  
+	-	`sha256:758ae92164adf095a7266b7f070d1afebbac88dd37a2a433195724a328235d94`  
+		Last Modified: Thu, 30 May 2024 00:12:20 GMT  
+		Size: 931.5 KB (931498 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cffa030be295ea3405978483ffe020e2512f342f3ed91daa72c92709e8bd2e0`  
-		Last Modified: Fri, 12 Apr 2024 20:02:32 GMT  
-		Size: 8.6 MB (8605508 bytes)  
+	-	`sha256:ce8c9b86b85d3423009cddd04a19c68f86ae3d7142a0542d6469d5a8347b1cf3`  
+		Last Modified: Thu, 30 May 2024 00:12:20 GMT  
+		Size: 8.6 MB (8605762 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31482e230758922b7bae7df39392c8ae2727b30ccedeeee0abe4bb41ab006d5c`  
-		Last Modified: Fri, 12 Apr 2024 20:02:30 GMT  
+	-	`sha256:1b1d5f2b3f977ed6573bab4267a74454c71aba8784f7e974f41b27a0ef26942e`  
+		Last Modified: Thu, 30 May 2024 00:12:18 GMT  
 		Size: 676.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59a2dbf98dac3677786d718d1e3f8557a823106d398972c09e2af3ee7468401c`  
-		Last Modified: Fri, 12 Apr 2024 20:04:24 GMT  
-		Size: 3.9 MB (3888821 bytes)  
+	-	`sha256:78260312f9015a5f59906d75a6457e5027d04e4390a25042c71e42aab2872a8b`  
+		Last Modified: Thu, 30 May 2024 00:13:00 GMT  
+		Size: 3.9 MB (3897183 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1083f700b19ed624c84a7bc81473252b190ca7b519661a56fd20d1eb68baedd5`  
-		Last Modified: Fri, 12 Apr 2024 20:04:23 GMT  
+	-	`sha256:9feddcf2c304aa5115029052720062d781553474512e99ad93d8126f95d3fb2b`  
+		Last Modified: Thu, 30 May 2024 00:13:00 GMT  
 		Size: 3.8 KB (3818 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29c2d458d5c353212bd2b40d17d31ec0c8b6bcc511f1ca3f37677f120c1e34e3`  
-		Last Modified: Fri, 12 Apr 2024 20:04:23 GMT  
-		Size: 945.0 B  
+	-	`sha256:00d14407b11146f6804492ec484b2d824117e7285a1764917fcd1e9c90523984`  
+		Last Modified: Thu, 30 May 2024 00:12:59 GMT  
+		Size: 946.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `friendica:dev-fpm-alpine` - linux; arm64 variant v8
