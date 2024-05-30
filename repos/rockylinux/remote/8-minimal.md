@@ -1,14 +1,15 @@
 ## `rockylinux:8-minimal`
 
 ```console
-$ docker pull rockylinux@sha256:47be70dfb00212575b8b6e8d8af40650dc06d4b8a462e483ced37c42b851eea1
+$ docker pull rockylinux@sha256:c584db6d77f40a71ab2364b55be18c154b8e92ba48189e2d82ba0aef64ffee32
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 3
+-	Platforms: 4
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm64 variant v8
+	-	unknown; unknown
 
 ### `rockylinux:8-minimal` - linux; amd64
 
@@ -62,25 +63,48 @@ $ docker pull rockylinux@sha256:3088b78d1583f032b826e623f559a9fca744bbb405490160
 ### `rockylinux:8-minimal` - linux; arm64 variant v8
 
 ```console
-$ docker pull rockylinux@sha256:46c797fad395827bf7d861a3c1c5b87c4e737ea1b6df13da58ee7a3478065bc5
+$ docker pull rockylinux@sha256:dacf3bece96fb40edabfb9412674969c411cbe28a19bb7a60da12e0b5cf4a662
 ```
 
--	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.5 MB (35490915 bytes)**  
+-	Total Size: **35.5 MB (35491291 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:810c6ce4de14146a1ad8dba4413907e640bc295f6e9a943bb907c02f07d315f1`
+-	Image ID: `sha256:41d587ba457747ebdd327c8179a5a8ccff19e3c46453cbdbd12d0c43be9d640d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 30 Nov 2023 22:42:42 GMT
-ADD file:4061ed467118585fda9a1a7f0c13a1a0bb0ffe1614d9269c66d6105654f2a958 in / 
-# Thu, 30 Nov 2023 22:42:42 GMT
+# Fri, 24 Nov 2023 18:28:42 GMT
+ADD layer.tar.xz / # buildkit
+# Fri, 24 Nov 2023 18:28:42 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:b91461bac92bff06e3f56cbbef793714f2200c5c589465e42066fa28d34fb9a6`  
-		Last Modified: Thu, 30 Nov 2023 22:43:55 GMT  
-		Size: 35.5 MB (35490915 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9fce7f2b19bbb14963a2473ccdb12aa957656e7312f722f2f357baf65efb3744`  
+		Last Modified: Thu, 30 May 2024 02:36:34 GMT  
+		Size: 35.5 MB (35491291 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `rockylinux:8-minimal` - unknown; unknown
+
+```console
+$ docker pull rockylinux@sha256:dd4ea4c62bda83fc005f97034a643b20a00c01c5ee32918fd873320314c754cc
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.9 MB (1945636 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:516b75fb6620e5bce822463d25694f1df15a05dd5a6878ab5e0c46b7aba42178`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:91606631ac907a02f37797320cc003f99711b93e5143f063a38ca6eda9e3e264`  
+		Last Modified: Thu, 30 May 2024 02:36:32 GMT  
+		Size: 1.9 MB (1940202 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:25cf362f5530255f2ce41a3d98f8c41a72e290e734e05764b1a8bee984ae1faa`  
+		Last Modified: Thu, 30 May 2024 02:36:32 GMT  
+		Size: 5.4 KB (5434 bytes)  
+		MIME: application/vnd.in-toto+json
