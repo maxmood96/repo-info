@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:969d1153f15363e78bb0de242e7f3dc3fff961ad33865029edee274e011234d7`
+- Image ID: `sha256:d8e97f47ff28f7b87c10b925d19f4d1f9e509a3c1624fbac65cc332134f4b702`
 - Created: `2024-05-23T10:12:20Z`
-- Virtual Size: ~ 689.77 Mb  
+- Virtual Size: ~ 661.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `NEO4J_HOME=/var/lib/neo4j`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-05-14T17:55:48`
+  - `build-date=2024-05-23T20:59:38`
   - `com.redhat.component=ubi8-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -31,9 +31,9 @@
   - `io.openshift.tags=minimal rhel8`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi8-minimal`
-  - `release=896`
+  - `release=896.1716497715`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 8.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8-minimal/images/8.10-896`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8-minimal/images/8.10-896.1716497715`
   - `vcs-ref=7357243bfe6a2392090af428c41ba6d13fe68590`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -383,13 +383,13 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `gdk-pixbuf2-2.36.12-5.el8.x86_64`
+### `rpm` package: `gdk-pixbuf2-2.36.12-6.el8_10.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `gdk-pixbuf2-modules-2.36.12-5.el8.x86_64`
+### `rpm` package: `gdk-pixbuf2-modules-2.36.12-6.el8_10.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -407,31 +407,19 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-2.28-251.el8_10.1.x86_64`
+### `rpm` package: `glibc-2.28-251.el8_10.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-common-2.28-251.el8_10.1.x86_64`
+### `rpm` package: `glibc-common-2.28-251.el8_10.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-gconv-extra-2.28-251.el8_10.1.x86_64`
-
-Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `glibc-langpack-en-2.28-251.el8_10.1.x86_64`
-
-Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `glibc-minimal-langpack-2.28-251.el8_10.1.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.28-251.el8_10.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
@@ -1301,7 +1289,7 @@ Licenses (from `rpm --query`): ISC
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `platform-python-3.6.8-59.el8.x86_64`
+### `rpm` package: `platform-python-3.6.8-62.el8_10.x86_64`
 
 Licenses (from `rpm --query`): Python
 
@@ -1367,7 +1355,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-libs-3.6.8-59.el8.x86_64`
+### `rpm` package: `python3-libs-3.6.8-62.el8_10.x86_64`
 
 Licenses (from `rpm --query`): Python
 
