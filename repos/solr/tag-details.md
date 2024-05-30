@@ -11869,11 +11869,21 @@ $ docker pull solr@sha256:29dadad9abb4a9f532961b548c1917ad102af01fb5c258d928a136
 
 ## `solr:9.6.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull solr@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `solr:9.6.1-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull solr@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `solr:latest`
 
