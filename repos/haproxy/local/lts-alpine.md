@@ -1,19 +1,19 @@
-# `haproxy:2.8.9-alpine`
+# `haproxy:3.0.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d372316687f8e772efcefd469677dc700b42ce2b786952e6f0e67a48529d9869`
-- Created: `2024-05-22T23:39:55Z`
-- Virtual Size: ~ 25.69 Mb  
+- Image ID: `sha256:6e2cb60a390a2b8b322deb6361e4db1ce11ee04e4481d8ffa1d409fa25d888b9`
+- Created: `2024-05-29T17:13:26Z`
+- Virtual Size: ~ 27.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["haproxy","-f","/usr/local/etc/haproxy/haproxy.cfg"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `HAPROXY_VERSION=2.8.9`
-  - `HAPROXY_URL=https://www.haproxy.org/download/2.8/src/haproxy-2.8.9.tar.gz`
-  - `HAPROXY_SHA256=7a821478f36f847607f51a51e80f4f890c37af4811d60438e7f63783f67592ff`
+  - `HAPROXY_VERSION=3.0.0`
+  - `HAPROXY_URL=https://www.haproxy.org/download/3.0/src/haproxy-3.0.0.tar.gz`
+  - `HAPROXY_SHA256=5aad97416216d2cd9dd212eb674839c40cd387f60fbc4b13d7ea3f1e5664a814`
 
 ## `apk` (`.apk`-based packages)
 
@@ -187,19 +187,19 @@ Apache-2.0
 
 ```
 
-### `apk` package: `lua5.3-libs`
+### `apk` package: `lua5.4-libs`
 
 ```console
-lua5.3-libs-5.3.6-r6 description:
+lua5.4-libs-5.4.6-r1 description:
 Lua dynamic library runtime
 
-lua5.3-libs-5.3.6-r6 webpage:
+lua5.4-libs-5.4.6-r1 webpage:
 https://www.lua.org/
 
-lua5.3-libs-5.3.6-r6 installed size:
-208 KiB
+lua5.4-libs-5.4.6-r1 installed size:
+236 KiB
 
-lua5.3-libs-5.3.6-r6 license:
+lua5.4-libs-5.4.6-r1 license:
 MIT
 
 ```
