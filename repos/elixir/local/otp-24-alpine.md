@@ -1,10 +1,10 @@
-# `elixir:1.16.2-otp-24-alpine`
+# `elixir:1.16.3-otp-24-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e07900ecb33d313677699abc9d9e08a2c9d53f2769538bc60bfce484a2e95662`
-- Created: `2024-03-11T18:49:41Z`
-- Virtual Size: ~ 90.15 Mb  
+- Image ID: `sha256:8af3774ab1c2aca7a354a0d789fe07403c2eb581f795212b6545f8a1ad49dbf7`
+- Created: `2024-05-26T04:39:18Z`
+- Virtual Size: ~ 90.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `OTP_VERSION=24.3.4.17`
   - `REBAR3_VERSION=3.23.0`
-  - `ELIXIR_VERSION=v1.16.2`
+  - `ELIXIR_VERSION=v1.16.3`
   - `LANG=C.UTF-8`
 - Labels:
   - `org.opencontainers.image.version=24.3.4.17`
@@ -175,16 +175,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.12-r5 description:
+libcrypto3-3.0.13-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.0.12-r5 webpage:
+libcrypto3-3.0.13-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.12-r5 installed size:
-4120 KiB
+libcrypto3-3.0.13-r0 installed size:
+4128 KiB
 
-libcrypto3-3.0.12-r5 license:
+libcrypto3-3.0.13-r0 license:
 Apache-2.0
 
 ```
@@ -226,16 +226,16 @@ GPL-2.0-only AND LGPL-2.1-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.12-r5 description:
+libssl3-3.0.13-r0 description:
 SSL shared libraries
 
-libssl3-3.0.12-r5 webpage:
+libssl3-3.0.13-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.12-r5 installed size:
+libssl3-3.0.13-r0 installed size:
 608 KiB
 
-libssl3-3.0.12-r5 license:
+libssl3-3.0.13-r0 license:
 Apache-2.0
 
 ```
