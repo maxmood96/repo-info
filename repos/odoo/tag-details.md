@@ -4,10 +4,13 @@
 
 -	[`odoo:15`](#odoo15)
 -	[`odoo:15.0`](#odoo150)
+-	[`odoo:15.0-20240522`](#odoo150-20240522)
 -	[`odoo:16`](#odoo16)
 -	[`odoo:16.0`](#odoo160)
+-	[`odoo:16.0-20240522`](#odoo160-20240522)
 -	[`odoo:17`](#odoo17)
 -	[`odoo:17.0`](#odoo170)
+-	[`odoo:17.0-20240522`](#odoo170-20240522)
 -	[`odoo:latest`](#odoolatest)
 
 ## `odoo:15`
@@ -281,6 +284,10 @@ $ docker pull odoo@sha256:d51245dafbcca643bef7ac4b4e6e1cda9a8b4f09701cad30c05403
 		Last Modified: Wed, 29 May 2024 20:01:22 GMT  
 		Size: 24.3 KB (24274 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `odoo:15.0-20240522`
+
+**does not exist** (yet?)
 
 ## `odoo:16`
 
@@ -1091,6 +1098,10 @@ $ docker pull odoo@sha256:7d71c1032c465d02503f4af1311fdddb919672e579d88261ee682b
 		Last Modified: Wed, 29 May 2024 20:37:08 GMT  
 		Size: 26.2 KB (26228 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `odoo:16.0-20240522`
+
+**does not exist** (yet?)
 
 ## `odoo:17`
 
@@ -1949,6 +1960,10 @@ $ docker pull odoo@sha256:b7898e5ae60c55e5fda5148bf636cfcc902fc5cda1e59080a9ab29
 		Last Modified: Wed, 29 May 2024 20:29:50 GMT  
 		Size: 26.6 KB (26568 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `odoo:17.0-20240522`
+
+**does not exist** (yet?)
 
 ## `odoo:latest`
 
