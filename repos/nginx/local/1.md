@@ -1,20 +1,20 @@
-# `nginx:1.25.5`
+# `nginx:1.27.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e784f4560448b14a66f55c26e1b4dad2c2877cc73d001b7cd0b18e24a700a070`
-- Created: `2024-05-03T19:49:21Z`
-- Virtual Size: ~ 187.66 Mb  
+- Image ID: `sha256:4f67c83422ec747235357c04556616234e66fc3fa39cb4f40b2d4441ddd8f100`
+- Created: `2024-05-29T23:55:01Z`
+- Virtual Size: ~ 187.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.25.5`
+  - `NGINX_VERSION=1.27.0`
   - `NJS_VERSION=0.8.4`
-  - `NJS_RELEASE=3~bookworm`
-  - `PKG_RELEASE=1~bookworm`
+  - `NJS_RELEASE=2~bookworm`
+  - `PKG_RELEASE=2~bookworm`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
 
@@ -2604,11 +2604,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp2/1.52.0-1+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp2/1.52.0-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-geoip=1.25.5-1~bookworm`
+### `dpkg` source package: `nginx-module-geoip=1.27.0-2~bookworm`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.25.5-1~bookworm`
+- `nginx-module-geoip=1.27.0-2~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2618,11 +2618,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.25.5-1~bookworm`
+### `dpkg` source package: `nginx-module-image-filter=1.27.0-2~bookworm`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.25.5-1~bookworm`
+- `nginx-module-image-filter=1.27.0-2~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2632,11 +2632,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.25.5+0.8.4-3~bookworm`
+### `dpkg` source package: `nginx-module-njs=1.27.0+0.8.4-2~bookworm`
 
 Binary Packages:
 
-- `nginx-module-njs=1.25.5+0.8.4-3~bookworm`
+- `nginx-module-njs=1.27.0+0.8.4-2~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2646,11 +2646,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.25.5-1~bookworm`
+### `dpkg` source package: `nginx-module-xslt=1.27.0-2~bookworm`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.25.5-1~bookworm`
+- `nginx-module-xslt=1.27.0-2~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2660,11 +2660,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.25.5-1~bookworm`
+### `dpkg` source package: `nginx=1.27.0-2~bookworm`
 
 Binary Packages:
 
-- `nginx=1.25.5-1~bookworm`
+- `nginx=1.27.0-2~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.

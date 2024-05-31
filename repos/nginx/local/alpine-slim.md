@@ -1,18 +1,18 @@
-# `nginx:1.25.5-alpine-slim`
+# `nginx:1.27.0-alpine-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7d065ef312e2d0ce2599a1936214f7c21f5c122541439630621eae142d3e8cbe`
-- Created: `2024-05-03T19:49:21Z`
-- Virtual Size: ~ 17.07 Mb  
+- Image ID: `sha256:df7e0f9c4d6a556a3001a0293f9c77a8b76a1715cea5176d22687cf8881fdf21`
+- Created: `2024-05-29T23:55:01Z`
+- Virtual Size: ~ 17.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.25.5`
-  - `PKG_RELEASE=1`
+  - `NGINX_VERSION=1.27.0`
+  - `PKG_RELEASE=2`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
 
@@ -157,16 +157,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r6 description:
+libcrypto3-3.1.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r6 webpage:
+libcrypto3-3.1.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r6 installed size:
-4500 KiB
+libcrypto3-3.1.5-r0 installed size:
+4512 KiB
 
-libcrypto3-3.1.4-r6 license:
+libcrypto3-3.1.5-r0 license:
 Apache-2.0
 
 ```
@@ -191,16 +191,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r6 description:
+libssl3-3.1.5-r0 description:
 SSL shared libraries
 
-libssl3-3.1.4-r6 webpage:
+libssl3-3.1.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r6 installed size:
+libssl3-3.1.5-r0 installed size:
 548 KiB
 
-libssl3-3.1.4-r6 license:
+libssl3-3.1.5-r0 license:
 Apache-2.0
 
 ```
@@ -242,16 +242,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.25.5-r1 description:
+nginx-1.27.0-r2 description:
 High performance web server
 
-nginx-1.25.5-r1 webpage:
+nginx-1.27.0-r2 webpage:
 https://nginx.org/
 
-nginx-1.25.5-r1 installed size:
+nginx-1.27.0-r2 installed size:
 2720 KiB
 
-nginx-1.25.5-r1 license:
+nginx-1.27.0-r2 license:
 2-clause BSD-like license
 
 ```

@@ -1,20 +1,20 @@
-# `nginx:1.25.5-alpine`
+# `nginx:1.27.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:501d84f5d06487ff81e506134dc922ed4fd2080d5521eb5b6ee4054fa17d15c4`
-- Created: `2024-05-03T19:49:21Z`
-- Virtual Size: ~ 48.30 Mb  
+- Image ID: `sha256:70ea0d8cc5300acde42073a2fbc0d28964ddb6e3c31263d92589c2320c3ccba4`
+- Created: `2024-05-29T23:55:01Z`
+- Virtual Size: ~ 48.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.25.5`
-  - `PKG_RELEASE=1`
+  - `NGINX_VERSION=1.27.0`
+  - `PKG_RELEASE=2`
   - `NJS_VERSION=0.8.4`
-  - `NJS_RELEASE=3`
+  - `NJS_RELEASE=2`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
 
@@ -346,16 +346,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r6 description:
+libcrypto3-3.1.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r6 webpage:
+libcrypto3-3.1.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r6 installed size:
-4500 KiB
+libcrypto3-3.1.5-r0 installed size:
+4512 KiB
 
-libcrypto3-3.1.4-r6 license:
+libcrypto3-3.1.5-r0 license:
 Apache-2.0
 
 ```
@@ -635,16 +635,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r6 description:
+libssl3-3.1.5-r0 description:
 SSL shared libraries
 
-libssl3-3.1.4-r6 webpage:
+libssl3-3.1.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r6 installed size:
+libssl3-3.1.5-r0 installed size:
 548 KiB
 
-libssl3-3.1.4-r6 license:
+libssl3-3.1.5-r0 license:
 Apache-2.0
 
 ```
@@ -788,16 +788,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.11.7-r0 description:
+libxml2-2.11.8-r0 description:
 XML parsing library, version 2
 
-libxml2-2.11.7-r0 webpage:
+libxml2-2.11.8-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.11.7-r0 installed size:
+libxml2-2.11.8-r0 installed size:
 1092 KiB
 
-libxml2-2.11.7-r0 license:
+libxml2-2.11.8-r0 license:
 MIT
 
 ```
@@ -924,16 +924,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.25.5-r1 description:
+nginx-1.27.0-r2 description:
 High performance web server
 
-nginx-1.25.5-r1 webpage:
+nginx-1.27.0-r2 webpage:
 https://nginx.org/
 
-nginx-1.25.5-r1 installed size:
+nginx-1.27.0-r2 installed size:
 2720 KiB
 
-nginx-1.25.5-r1 license:
+nginx-1.27.0-r2 license:
 2-clause BSD-like license
 
 ```
@@ -941,16 +941,16 @@ nginx-1.25.5-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.25.5-r1 description:
+nginx-module-geoip-1.27.0-r2 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.25.5-r1 webpage:
+nginx-module-geoip-1.27.0-r2 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.25.5-r1 installed size:
+nginx-module-geoip-1.27.0-r2 installed size:
 100 KiB
 
-nginx-module-geoip-1.25.5-r1 license:
+nginx-module-geoip-1.27.0-r2 license:
 2-clause BSD-like license
 
 ```
@@ -958,16 +958,16 @@ nginx-module-geoip-1.25.5-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.25.5-r1 description:
+nginx-module-image-filter-1.27.0-r2 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.25.5-r1 webpage:
+nginx-module-image-filter-1.27.0-r2 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.25.5-r1 installed size:
+nginx-module-image-filter-1.27.0-r2 installed size:
 84 KiB
 
-nginx-module-image-filter-1.25.5-r1 license:
+nginx-module-image-filter-1.27.0-r2 license:
 2-clause BSD-like license
 
 ```
@@ -975,16 +975,16 @@ nginx-module-image-filter-1.25.5-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.25.5.0.8.4-r3 description:
+nginx-module-njs-1.27.0.0.8.4-r2 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.25.5.0.8.4-r3 webpage:
+nginx-module-njs-1.27.0.0.8.4-r2 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.25.5.0.8.4-r3 installed size:
+nginx-module-njs-1.27.0.0.8.4-r2 installed size:
 4756 KiB
 
-nginx-module-njs-1.25.5.0.8.4-r3 license:
+nginx-module-njs-1.27.0.0.8.4-r2 license:
 2-clause BSD-like license
 
 ```
@@ -992,16 +992,16 @@ nginx-module-njs-1.25.5.0.8.4-r3 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.25.5-r1 description:
+nginx-module-xslt-1.27.0-r2 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.25.5-r1 webpage:
+nginx-module-xslt-1.27.0-r2 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.25.5-r1 installed size:
+nginx-module-xslt-1.27.0-r2 installed size:
 84 KiB
 
-nginx-module-xslt-1.25.5-r1 license:
+nginx-module-xslt-1.27.0-r2 license:
 2-clause BSD-like license
 
 ```
