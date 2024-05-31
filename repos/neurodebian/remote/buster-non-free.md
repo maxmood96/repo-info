@@ -1,14 +1,15 @@
 ## `neurodebian:buster-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:be4953019b6ee43ea50441909322f9d39f8644c89f1b6dc2051f1d099e2c1acd
+$ docker pull neurodebian@sha256:afc8b3335d916afeae7db67b7b15a0929030baff5a369d2f0ba2de71de83494b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 5
+-	Platforms: 6
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm64 variant v8
+	-	unknown; unknown
 	-	linux; 386
 	-	unknown; unknown
 
@@ -94,58 +95,81 @@ $ docker pull neurodebian@sha256:ee6ec2e169249fac98fe23df8d0c1eb252e19df7a7ff3b3
 ### `neurodebian:buster-non-free` - linux; arm64 variant v8
 
 ```console
-$ docker pull neurodebian@sha256:668a1461cc0b84c5391f14d0268d4d2c12c2bf8637d0c71a6fe0446a08f6468f
+$ docker pull neurodebian@sha256:c88056a47dc5318043679e57676a23e583df1c718e7983a3b57d31f2e4a093f8
 ```
 
--	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **60.3 MB (60265155 bytes)**  
+-	Total Size: **59.9 MB (59872893 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7df9eda00b4503cc8186123eb2f4a60bf7d1bcb154e6968ab9b9682bdc7b15d4`
+-	Image ID: `sha256:024422e05673ba9016411a9080801a2e926b1283e23186b85469a2b625cf8fbb`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 14 May 2024 00:40:02 GMT
+# Thu, 02 Feb 2023 17:48:33 GMT
 ADD file:da8c3a2d966487a4e1bc0646a771d18df585d75dc24f095a1aaa762ce0841747 in / 
-# Tue, 14 May 2024 00:40:02 GMT
+# Thu, 02 Feb 2023 17:48:33 GMT
 CMD ["bash"]
-# Tue, 14 May 2024 03:15:23 GMT
-RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 14 May 2024 03:15:25 GMT
-RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver keyserver.ubuntu.com --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Tue, 14 May 2024 03:15:25 GMT
-RUN { 	echo 'deb http://neuro.debian.net/debian buster main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel buster main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Tue, 14 May 2024 03:15:28 GMT
-RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 14 May 2024 03:15:32 GMT
-RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.d/debian.sources || srcs=/etc/apt/sources.list; sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list $srcs
+# Thu, 02 Feb 2023 17:48:33 GMT
+RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 02 Feb 2023 17:48:33 GMT
+RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver keyserver.ubuntu.com --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian # buildkit
+# Thu, 02 Feb 2023 17:48:33 GMT
+RUN { 	echo 'deb http://neuro.debian.net/debian buster main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel buster main'; } > /etc/apt/sources.list.d/neurodebian.sources.list # buildkit
+# Thu, 02 Feb 2023 17:48:33 GMT
+RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 02 Feb 2023 17:48:33 GMT
+RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.d/debian.sources || srcs=/etc/apt/sources.list; sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list $srcs # buildkit
 ```
 
 -	Layers:
 	-	`sha256:0a8090f4fec79fd213192f5f5c31c70546878a20b6c7ca023ff9001fb788f828`  
 		Last Modified: Tue, 14 May 2024 00:43:49 GMT  
 		Size: 49.5 MB (49453094 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:021d53e4d1b38dab81765ab5c87ffae5865728fe2af3d740910b5e4356ce5ef3`  
-		Last Modified: Tue, 14 May 2024 03:17:00 GMT  
-		Size: 10.5 MB (10510419 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7dd61102fec171a48f90ec815ae0d011ce78eac3532a5ce45eba516a07a2fa35`  
-		Last Modified: Tue, 14 May 2024 03:16:59 GMT  
-		Size: 1.8 KB (1766 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eca33e2727ac03ec34dd319999888eeeb7615d86fc266f20935f39f014a12f66`  
-		Last Modified: Tue, 14 May 2024 03:16:58 GMT  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:94fd9c59acf204c0d81aff8b7e5da56cc3b76c258fa40d482df9e225cd533596`  
+		Last Modified: Fri, 31 May 2024 14:42:04 GMT  
+		Size: 10.3 MB (10313209 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:81cc3300b9846c0e9c7dba482c8c981db848d2eeb56f74c62c65a1debee89e29`  
+		Last Modified: Fri, 31 May 2024 14:42:03 GMT  
+		Size: 1.7 KB (1740 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d60fd2e75c963791cd3b0929bb3c01c7671ec64f140a3ac83cf1212b4a5b5c4b`  
+		Last Modified: Fri, 31 May 2024 14:42:03 GMT  
 		Size: 243.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5bf7b60f52eb25315db443d7e9b5aa560d8972332470f7db6917306c18ba341e`  
-		Last Modified: Tue, 14 May 2024 03:16:59 GMT  
-		Size: 299.3 KB (299277 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38c5a44e791c44dbdc6c6714bc1d610b43c0c124595840f421f4ec14753bd1a9`  
-		Last Modified: Tue, 14 May 2024 03:17:07 GMT  
-		Size: 356.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2e238e2f4604a403218d3037f6bf35bb3d8d7e071f2dba1a6a88fbe012a1abb1`  
+		Last Modified: Fri, 31 May 2024 14:42:04 GMT  
+		Size: 104.2 KB (104250 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:22b85b4e240f80a499a71af86f86bb3a75a46bc47a84a841fdc6cec3b6fb75e4`  
+		Last Modified: Fri, 31 May 2024 14:42:51 GMT  
+		Size: 357.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `neurodebian:buster-non-free` - unknown; unknown
+
+```console
+$ docker pull neurodebian@sha256:60e9beea383de0d520744c632f02662cfb2ea54b541ff3608e4cd6c258ed5daf
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **4.2 MB (4230997 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7c823c4fb2948cba2750dda96dbc5bd93d2fd769c9b0aa6c4fb1a87091d8bfe5`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:c502212cb34e8b56ae978bc283f847c2d4d457e1f762d554516348d43afbceef`  
+		Last Modified: Fri, 31 May 2024 14:42:51 GMT  
+		Size: 4.2 MB (4215284 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:78431dc615efd921d0ece65d407291dd8c193f19e87e47543b1a2e182523b064`  
+		Last Modified: Fri, 31 May 2024 14:42:51 GMT  
+		Size: 15.7 KB (15713 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ### `neurodebian:buster-non-free` - linux; 386
 
