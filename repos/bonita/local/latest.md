@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9b9f5448fa5015f8437eba2d74276cadcd10e449aeca92e0ce67c260f2e52995`
-- Created: `2024-03-16T08:53:29.745627465Z`
-- Virtual Size: ~ 334.50 Mb  
+- Image ID: `sha256:7e9e910f067414221442bae5ee460987386b7ddafec2881c1429142350e92db5`
+- Created: `2023-11-16T12:46:16Z`
+- Virtual Size: ~ 334.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/files/startup.sh"]`
@@ -191,16 +191,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20230506-r0 description:
+ca-certificates-20240226-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20230506-r0 webpage:
+ca-certificates-20240226-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20230506-r0 installed size:
-688 KiB
+ca-certificates-20240226-r0 installed size:
+712 KiB
 
-ca-certificates-20230506-r0 license:
+ca-certificates-20240226-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -276,16 +276,16 @@ GPL-3.0-or-later
 ### `apk` package: `giflib`
 
 ```console
-giflib-5.2.1-r4 description:
+giflib-5.2.2-r0 description:
 A library for reading and writing GIF images
 
-giflib-5.2.1-r4 webpage:
+giflib-5.2.2-r0 webpage:
 https://sourceforge.net/projects/giflib/
 
-giflib-5.2.1-r4 installed size:
-52 KiB
+giflib-5.2.2-r0 installed size:
+48 KiB
 
-giflib-5.2.1-r4 license:
+giflib-5.2.2-r0 license:
 MIT
 
 ```
@@ -412,16 +412,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.3-r0 description:
+gnutls-3.8.4-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.3-r0 webpage:
+gnutls-3.8.4-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.3-r0 installed size:
-1868 KiB
+gnutls-3.8.4-r0 installed size:
+1892 KiB
 
-gnutls-3.8.3-r0 license:
+gnutls-3.8.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1160,16 +1160,16 @@ LGPL-2.0-or-later
 ### `apk` package: `openjdk11-jre`
 
 ```console
-openjdk11-jre-11.0.22_p7-r0 description:
+openjdk11-jre-11.0.23_p9-r0 description:
 Oracle OpenJDK 11 (JRE)
 
-openjdk11-jre-11.0.22_p7-r0 webpage:
+openjdk11-jre-11.0.23_p9-r0 webpage:
 https://github.com/openjdk/jdk11u
 
-openjdk11-jre-11.0.22_p7-r0 installed size:
-2796 KiB
+openjdk11-jre-11.0.23_p9-r0 installed size:
+2892 KiB
 
-openjdk11-jre-11.0.22_p7-r0 license:
+openjdk11-jre-11.0.23_p9-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
@@ -1177,16 +1177,16 @@ GPL-2.0-with-classpath-exception
 ### `apk` package: `openjdk11-jre-headless`
 
 ```console
-openjdk11-jre-headless-11.0.22_p7-r0 description:
+openjdk11-jre-headless-11.0.23_p9-r0 description:
 Oracle OpenJDK 11 (JRE headless)
 
-openjdk11-jre-headless-11.0.22_p7-r0 webpage:
+openjdk11-jre-headless-11.0.23_p9-r0 webpage:
 https://github.com/openjdk/jdk11u
 
-openjdk11-jre-headless-11.0.22_p7-r0 installed size:
+openjdk11-jre-headless-11.0.23_p9-r0 installed size:
 151 MiB
 
-openjdk11-jre-headless-11.0.22_p7-r0 license:
+openjdk11-jre-headless-11.0.23_p9-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
