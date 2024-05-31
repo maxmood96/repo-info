@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:226a853426c1d4b6bd2f86d099a28d4c4db35b9d83d9a7021c549f5386248a11`
-- Created: `2023-06-02T01:34:53.174851857Z`
-- Virtual Size: ~ 75.02 Mb  
+- Image ID: `sha256:ad09230fe8daacf1f1a34dc9035a37fbae4351949aa366e5f398789759a0b839`
+- Created: `2023-02-02T17:48:33Z`
+- Virtual Size: ~ 74.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1102,11 +1102,11 @@ $ apt-get source -qq --print-uris nettle=3.4.1-0ubuntu0.18.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.4.1-0ubuntu0.18.04.1.debian.tar.xz' nettle_3.4.1-0ubuntu0.18.04.1.debian.tar.xz 27048 SHA512:424581749cb4e4f30343f788b9a26a2ced0f734b2a8faddc93f27317ff45e071f8f47d845e93d2d3eb5374390f29a868b1020858cc7890107916ec60991c1203
 ```
 
-### `dpkg` source package: `neurodebian=0.41.2~nd18.04+1`
+### `dpkg` source package: `neurodebian=0.42.1~nd18.04+1`
 
 Binary Packages:
 
-- `neurodebian-freeze=0.41.2~nd18.04+1`
+- `neurodebian-freeze=0.42.1~nd18.04+1`
 
 Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 
@@ -1115,9 +1115,13 @@ Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris neurodebian=0.42.1~nd18.04+1
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.42.1%7end18.04%2b1.dsc' neurodebian_0.42.1~nd18.04+1.dsc 1516 SHA256:9cb1c076f40ba58f8f867163d5a29ddd0186b112c8b3664af1022d6d1c810cb0
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.42.1%7end18.04%2b1.tar.xz' neurodebian_0.42.1~nd18.04+1.tar.xz 8321224 SHA256:8445ecf83c3ef0af7bddb380cc92ad54627fce2b09c5d24d1e0d0007b2f0ff05
+```
 
 ### `dpkg` source package: `npth=1.5-3`
 
