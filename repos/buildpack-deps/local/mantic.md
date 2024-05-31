@@ -1242,15 +1242,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.38-1ubuntu6.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38-1ubuntu6.2.dsc' glibc_2.38-1ubuntu6.2.dsc 9492 SHA512:f32de087164901e60a02ff41e115cd624068d0c92145e6d34727013ede1418a502714006f62b100ebd7fc97a9bf9779c72d8bcac84e390f34c029995b778337b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38.orig.tar.xz' glibc_2.38.orig.tar.xz 18913712 SHA512:a6dd5e42dcd63d58e2820c783522c8c895890b6e8c8e6c83b025553de0cc77cdf227e7044e431ead98c89c68a9ce4dd63509b47e647775fb2075f011849c1900
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38.orig.tar.xz.asc' glibc_2.38.orig.tar.xz.asc 833 SHA512:32248467450f4530f8e84c03ea78d8293946e1b1def853eff9fb2cb51106e66cc3b024a254f3c2fabd2634f8192bd14e7df00c317f4230860d702c4d9ec7a01e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38-1ubuntu6.2.debian.tar.xz' glibc_2.38-1ubuntu6.2.debian.tar.xz 462200 SHA512:1950f44c26a1254995a034005b37e5648ad18c7e9d4f340945d910369f44339c081a1f69e167e095379abca6ebacf52b093793d22fb15c9d76ec9f2ec9326841
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu4`
 
@@ -3955,14 +3949,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-15=15.6-0ubuntu0.23.10.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-15/postgresql-15_15.6-0ubuntu0.23.10.1.dsc' postgresql-15_15.6-0ubuntu0.23.10.1.dsc 4107 SHA512:409708aa9da8a08c031d3467218645e3637f9044f6dc6e29e5d9e7d0510f5a81bd0394604cfd645c1ba183a0a527274b96bfa7a193af71b197160c5d8d4756cd
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-15/postgresql-15_15.6.orig.tar.gz' postgresql-15_15.6.orig.tar.gz 30299236 SHA512:a92f7731f76771413fcaa979d6e8ccf568adfb2b8db6880cfdff309f1fe3795028e702d9e46b27487197d19b216cf2c62ddf97d5a56210a92f71fef929b6be42
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-15/postgresql-15_15.6-0ubuntu0.23.10.1.debian.tar.xz' postgresql-15_15.6-0ubuntu0.23.10.1.debian.tar.xz 27272 SHA512:b99845e5bcd1e69d7d4940714a9c26020244c37baef0b4162a7615793dc2f8d83022de17de0443e0f5c4f655cd0b684a1fd556f318715d3c73a8365b887caf5c
-```
 
 ### `dpkg` source package: `procps=2:4.0.3-1ubuntu1.23.10.1`
 

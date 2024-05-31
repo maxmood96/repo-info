@@ -443,20 +443,13 @@ Licenses: (parsed from: `/usr/share/doc/libboost-python1.83.0/copyright`)
 - `Spencer`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris boost1.83=1.83.0-2.1
-'http://deb.debian.org/debian/pool/main/b/boost1.83/boost1.83_1.83.0-2.1.dsc' boost1.83_1.83.0-2.1.dsc 8794 SHA256:797fd7cff07357c35453a62a6248503b58793d13d43f23f3786aa6fbc7766433
-'http://deb.debian.org/debian/pool/main/b/boost1.83/boost1.83_1.83.0.orig.tar.xz' boost1.83_1.83.0.orig.tar.xz 77376520 SHA256:404df4b4072fc7f2d4483d4fc2d61ff6f554dd80c9a812652684d5952e881c91
-'http://deb.debian.org/debian/pool/main/b/boost1.83/boost1.83_1.83.0-2.1.debian.tar.xz' boost1.83_1.83.0-2.1.debian.tar.xz 378536 SHA256:f3b49bb049deb1f597d8a3062997b88df56a4033dd841c84d957061859e01dd7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/boost1.83/1.83.0-2.1/
 
-- https://sources.debian.net/src/boost1.83/1.83.0-2.1/ (for browsing the source)
-- https://sources.debian.net/src/boost1.83/1.83.0-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/boost1.83/1.83.0-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `brotli=1.1.0-2`
 
