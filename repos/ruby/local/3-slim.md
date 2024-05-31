@@ -1,19 +1,19 @@
-# `ruby:3.3.1-slim-bookworm`
+# `ruby:3.3.2-slim-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b84d0e24b7b3a3369f69c519d2afea3926e7f8310ab6f6aa778a4a3a14499aa`
-- Created: `2024-04-23T15:14:18Z`
-- Virtual Size: ~ 180.48 Mb  
+- Image ID: `sha256:5a86bd551d4670b80418f8e355ee2429185d3ab430a0182cc25550dcad9a6dea`
+- Created: `2024-05-30T05:03:18Z`
+- Virtual Size: ~ 180.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.3.1`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.1.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=0686941a3ec395a15ae2a852487b2a88e5fb8a5518e188df00d8d1bb71a6349b`
+  - `RUBY_VERSION=3.3.2`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.2.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=b5e8a8ed4a47cdd9a3358b5bdd998c37bd9e971ca63766a37d5ae5933fdb69f1`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
