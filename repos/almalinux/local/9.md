@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ce0e333432494fd17367f2d5aa1e361fc16259a03151f3f1e0843c90f695dc1a`
-- Created: `2024-05-06T18:31:37.669562335Z`
-- Virtual Size: ~ 184.96 Mb  
+- Image ID: `sha256:ac7ec6259981906060844582e873ea43f41c6045fdbd8969d22bb6f0ec044219`
+- Created: `2024-05-30T19:50:15.027118165Z`
+- Virtual Size: ~ 185.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -398,37 +398,37 @@ $ dnf --quiet download --source --url glib2-2.68.4-14.el9
 http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/glib2-2.68.4-14.el9.src.rpm
 ```
 
-### `rpm` package: `glibc-2.34-100.el9.x86_64`
+### `rpm` package: `glibc-2.34-100.el9_4.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.34-100.el9
-http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/glibc-2.34-100.el9.src.rpm
+$ dnf --quiet download --source --url glibc-2.34-100.el9_4.2
+http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/glibc-2.34-100.el9_4.2.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.34-100.el9.x86_64`
+### `rpm` package: `glibc-common-2.34-100.el9_4.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.34-100.el9
-http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/glibc-2.34-100.el9.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.34-100.el9_4.2
+http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/glibc-2.34-100.el9_4.2.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.34-100.el9.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-100.el9_4.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-100.el9
-http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/glibc-2.34-100.el9.src.rpm
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-100.el9_4.2
+http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/glibc-2.34-100.el9_4.2.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.2.0-13.el9.x86_64`
