@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:230457226d5194b1323ed612b3b4c1b5221a65849d58967bf613f58ddd16cb03`
+- Image ID: `sha256:2649fbd7b3008d05485e12a0b7773f3cec94d0e5943d91164c47c4516b536e02`
 - Created: `2024-03-26T13:57:15Z`
-- Virtual Size: ~ 915.06 Mb  
+- Virtual Size: ~ 915.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.3.1`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.1.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=0686941a3ec395a15ae2a852487b2a88e5fb8a5518e188df00d8d1bb71a6349b`
+  - `RUBY_VERSION=3.3.2`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.2.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=b5e8a8ed4a47cdd9a3358b5bdd998c37bd9e971ca63766a37d5ae5933fdb69f1`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
