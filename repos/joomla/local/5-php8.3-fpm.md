@@ -1,10 +1,10 @@
-# `joomla:4.4.5-php8.2-fpm`
+# `joomla:5.1.1-php8.3-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9072609fd90ea9ff1b191225e26aca398c8f1c83e8334d51e124a193aca554a8`
-- Created: `2024-05-31T19:36:18.578866447Z`
-- Virtual Size: ~ 747.49 Mb  
+- Image ID: `sha256:5317f38763167124e73d22fe13e83ee2f7dc5b080f878bdc566c7ee003fe3c6c`
+- Created: `2024-05-31T19:19:49.638892637Z`
+- Virtual Size: ~ 752.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -16,14 +16,14 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.19`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.19.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.19.tar.xz.asc`
-  - `PHP_SHA256=aecd63f3ebea6768997f5c4fccd98acbf897762ed5fc25300e846197a9485c13`
+  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
+  - `PHP_VERSION=8.3.7`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.7.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.7.tar.xz.asc`
+  - `PHP_SHA256=d53433c1ca6b2c8741afa7c524272e6806c1e895e5912a058494fea89988570a`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=4.4.5`
-  - `JOOMLA_SHA512=3bf2067d1f6faa8f36e023bcec2fc0fe1f307209feceb159f1bbe5f5618d9eede06bc23cc7610a7350c48d25d835280d81c1530a92e24f8fb989845fdbf39084`
+  - `JOOMLA_VERSION=5.1.1`
+  - `JOOMLA_SHA512=e99aa94b5b455eeb3f3ce1fc330c83fda3d1ac1688e269351355692171705a1f7947005f62375345a62166cee46840bd8090b541301768466fc4e603bafa4c7b`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -3283,8 +3283,9 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libzstd1:amd64=1.5.4+dfsg2-5`
+- `zstd=1.5.4+dfsg2-5`
 
-Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`, `/usr/share/doc/zstd/copyright`)
 
 - `BSD-3-clause`
 - `Expat`
