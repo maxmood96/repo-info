@@ -2000,14 +2000,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.15
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.15.dsc' glibc_2.31-0ubuntu9.15.dsc 9552 SHA512:bc2abf554ad00e2cc853f3e0045ab42a7035973ac151d11105caddec834daf1a7614fafe3a63f6e15b0a70c193f46c848c7c9d84fe6b11b08e317a124ebf7242
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.15.debian.tar.xz' glibc_2.31-0ubuntu9.15.debian.tar.xz 886588 SHA512:fd7a6e2eadcf18086b44bfa19334cb2664e3bdf6282951c0c45b20f81a87e37c549485875c6de3d4c4c03ac81b18af5734d9708bb2036592055cc6824787d4fe
-```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4ubuntu0.1`
 
@@ -2306,14 +2301,9 @@ Licenses: (parsed from: `/usr/share/doc/gstreamer1.0-gl/copyright`, `/usr/share/
 - `LGPL-2+`
 - `MIT/X11 (BSD like) LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gst-plugins-base1.0=1.16.3-0ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.16.3-0ubuntu1.2.dsc' gst-plugins-base1.0_1.16.3-0ubuntu1.2.dsc 4152 SHA512:a4a45b450eaaf334e8d3a358f7257f4d0b265695953847c55374c379b616add727bb692e470cf47e981fc18ae34b49492792d1b6cff1715bf1a9c3054b8ad2a3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.16.3.orig.tar.xz' gst-plugins-base1.0_1.16.3.orig.tar.xz 3953616 SHA512:d44d4da9cb27a6b8e59cb3f0714cc71809c0f14b42ef8d4a2dddbb940efbcb9634a40596d3cdc7391016f6e758005c14aabe1f8f30bb597a57d85c2d94045e75
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.16.3-0ubuntu1.2.debian.tar.xz' gst-plugins-base1.0_1.16.3-0ubuntu1.2.debian.tar.xz 47776 SHA512:df211d461adfeeb115706a4239355f4093f5cb05d6a58f56f5b113c89edf4a16b42d2a191e07e9d582213dce5cd2b0338cb75686ea290f43c2f4c0034d9882f9
-```
 
 ### `dpkg` source package: `gst-plugins-good1.0=1.16.3-0ubuntu1.2`
 
@@ -9001,9 +8991,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris vim=2:8.1.2269-1ubuntu5.22
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269-1ubuntu5.22.dsc' vim_8.1.2269-1ubuntu5.22.dsc 2769 SHA512:445de2e9030ac00d7dcb56f7d3d92d770b3587a617e12992b7deece773ddb6d54b7089253acb2a65c68defe530501d10eeb255897f8946d578aab55889fa896b
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269.orig.tar.gz' vim_8.1.2269.orig.tar.gz 14590233 SHA512:5194817a5665e08816e87e3b10219e19510ca87c5c377ddc0a50aa84ffd4d7391badad3e993f83802d6da5e9da8834635c1acbdd4a909e75b4947f99f13c1746
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269-1ubuntu5.22.debian.tar.xz' vim_8.1.2269-1ubuntu5.22.debian.tar.xz 263608 SHA512:5f01e12325595be174f3a3f38d8b40e26686ee0032a76d6c26f880ac616dd4e7a4fd5456c1cb94762420b803142347d213e30200b85caeeaa89976f021ad3992
+'http://security.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269-1ubuntu5.22.dsc' vim_8.1.2269-1ubuntu5.22.dsc 2769 SHA512:445de2e9030ac00d7dcb56f7d3d92d770b3587a617e12992b7deece773ddb6d54b7089253acb2a65c68defe530501d10eeb255897f8946d578aab55889fa896b
+'http://security.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269.orig.tar.gz' vim_8.1.2269.orig.tar.gz 14590233 SHA512:5194817a5665e08816e87e3b10219e19510ca87c5c377ddc0a50aa84ffd4d7391badad3e993f83802d6da5e9da8834635c1acbdd4a909e75b4947f99f13c1746
+'http://security.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269-1ubuntu5.22.debian.tar.xz' vim_8.1.2269-1ubuntu5.22.debian.tar.xz 263608 SHA512:5f01e12325595be174f3a3f38d8b40e26686ee0032a76d6c26f880ac616dd4e7a4fd5456c1cb94762420b803142347d213e30200b85caeeaa89976f021ad3992
 ```
 
 ### `dpkg` source package: `vulkan-loader=1.2.131.2-1`
