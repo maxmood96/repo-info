@@ -1,4 +1,4 @@
-# `odoo:17.0`
+# `odoo:17.0-20240522`
 
 ## Docker Metadata
 
