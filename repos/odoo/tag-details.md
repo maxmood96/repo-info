@@ -287,7 +287,12 @@ $ docker pull odoo@sha256:d51245dafbcca643bef7ac4b4e6e1cda9a8b4f09701cad30c05403
 
 ## `odoo:15.0-20240603`
 
-**does not exist** (yet?)
+```console
+$ docker pull odoo@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `odoo:16`
 
@@ -1101,7 +1106,12 @@ $ docker pull odoo@sha256:7d71c1032c465d02503f4af1311fdddb919672e579d88261ee682b
 
 ## `odoo:16.0-20240603`
 
-**does not exist** (yet?)
+```console
+$ docker pull odoo@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `odoo:17`
 
@@ -1963,7 +1973,12 @@ $ docker pull odoo@sha256:b7898e5ae60c55e5fda5148bf636cfcc902fc5cda1e59080a9ab29
 
 ## `odoo:17.0-20240603`
 
-**does not exist** (yet?)
+```console
+$ docker pull odoo@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `odoo:latest`
 
