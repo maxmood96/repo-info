@@ -415,11 +415,21 @@ $ docker pull chronograf@sha256:d9169b4cb482ee5951ad4ecd2517a3d1409300a9dbb434cf
 
 ## `chronograf:1.10.5`
 
-**does not exist** (yet?)
+```console
+$ docker pull chronograf@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `chronograf:1.10.5-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull chronograf@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `chronograf:1.7`
 
