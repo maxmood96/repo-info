@@ -1,10 +1,10 @@
-# `gradle:8.7.0-jdk11`
+# `gradle:8.8.0-jdk11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e662567ace699a254117229ff8523a33ce563e4aba339941330af5b60ab2668d`
-- Created: `2024-03-23T20:25:42Z`
-- Virtual Size: ~ 699.99 Mb  
+- Image ID: `sha256:834cc668b3992085c29f7fddbf6202ab28582e8da9de8ff04b497b9a790967d7`
+- Created: `2024-06-01T15:03:05Z`
+- Virtual Size: ~ 704.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.23+9`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.7`
+  - `GRADLE_VERSION=8.8`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -804,12 +804,12 @@ $ apt-get source -qq --print-uris git-lfs=3.0.2-1ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.0.2-1ubuntu0.2.debian.tar.xz' git-lfs_3.0.2-1ubuntu0.2.debian.tar.xz 4396 SHA512:bc66c729b750190ab5e7251e364316b04c0eeece203b2824a7d6b6244dcb326e3fae315fd68d27083845f2e1aa35874586a4412bdbac221aabcd105969b8f4c4
 ```
 
-### `dpkg` source package: `git=1:2.34.1-1ubuntu1.10`
+### `dpkg` source package: `git=1:2.34.1-1ubuntu1.11`
 
 Binary Packages:
 
-- `git=1:2.34.1-1ubuntu1.10`
-- `git-man=1:2.34.1-1ubuntu1.10`
+- `git=1:2.34.1-1ubuntu1.11`
+- `git-man=1:2.34.1-1ubuntu1.11`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -831,9 +831,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.34.1-1ubuntu1.11
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.11.dsc' git_2.34.1-1ubuntu1.11.dsc 2931 SHA512:3742379ec0a10479921ff574f71e0b42e79bfd291616596d15287c748b81b7857a302965c71fc47dad79a20f617c99ad5b334b6d7f450f270efaf4b4a85d979c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1.orig.tar.xz' git_2.34.1.orig.tar.xz 6623760 SHA512:a1a8e9e6f64b1da25508fbd2f783564dcdbe181fb5ff1ebab3bdac6db6094e18acc334479a1abf22ac17ce4f733cc3e10a664db9ab234cd523735a3f027b42db
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.11.debian.tar.xz' git_2.34.1-1ubuntu1.11.debian.tar.xz 765504 SHA512:8a81dc61e3535d27396e6e172a8c1dea640cb9c571ca57bb81a764ac21d6c31f1929349c7025305c6dd58ab4cd2ba801a36961ee8a5762d64c5049c8851c2fa6
+```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.7`
 

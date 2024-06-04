@@ -1,10 +1,10 @@
-# `gradle:8.7.0-jdk17-graal`
+# `gradle:8.8.0-jdk17-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:425cd99da9fbc83296e4f717ada6ec9425afa5f280d987dae4bfe1aa97b8df08`
-- Created: `2024-03-23T20:25:42Z`
-- Virtual Size: ~ 1.15 Gb  
+- Image ID: `sha256:ae580ef0838e20d8c7fe4860f3e20185ba21de1c9feb460fc096c1012887dc0b`
+- Created: `2024-06-01T15:03:05Z`
+- Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -13,7 +13,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=17.0.9`
-  - `GRADLE_VERSION=8.7`
+  - `GRADLE_VERSION=8.8`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -881,12 +881,12 @@ $ apt-get source -qq --print-uris git-lfs=3.0.2-1ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.0.2-1ubuntu0.2.debian.tar.xz' git-lfs_3.0.2-1ubuntu0.2.debian.tar.xz 4396 SHA512:bc66c729b750190ab5e7251e364316b04c0eeece203b2824a7d6b6244dcb326e3fae315fd68d27083845f2e1aa35874586a4412bdbac221aabcd105969b8f4c4
 ```
 
-### `dpkg` source package: `git=1:2.34.1-1ubuntu1.10`
+### `dpkg` source package: `git=1:2.34.1-1ubuntu1.11`
 
 Binary Packages:
 
-- `git=1:2.34.1-1ubuntu1.10`
-- `git-man=1:2.34.1-1ubuntu1.10`
+- `git=1:2.34.1-1ubuntu1.11`
+- `git-man=1:2.34.1-1ubuntu1.11`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -908,21 +908,22 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.34.1-1ubuntu1.11
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.11.dsc' git_2.34.1-1ubuntu1.11.dsc 2931 SHA512:3742379ec0a10479921ff574f71e0b42e79bfd291616596d15287c748b81b7857a302965c71fc47dad79a20f617c99ad5b334b6d7f450f270efaf4b4a85d979c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1.orig.tar.xz' git_2.34.1.orig.tar.xz 6623760 SHA512:a1a8e9e6f64b1da25508fbd2f783564dcdbe181fb5ff1ebab3bdac6db6094e18acc334479a1abf22ac17ce4f733cc3e10a664db9ab234cd523735a3f027b42db
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.11.debian.tar.xz' git_2.34.1-1ubuntu1.11.debian.tar.xz 765504 SHA512:8a81dc61e3535d27396e6e172a8c1dea640cb9c571ca57bb81a764ac21d6c31f1929349c7025305c6dd58ab4cd2ba801a36961ee8a5762d64c5049c8851c2fa6
+```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.7`
 
 Binary Packages:
 
 - `libc-bin=2.35-0ubuntu3.7`
-- `libc-dev-bin=2.35-0ubuntu3.7`
-- `libc6:amd64=2.35-0ubuntu3.7`
-- `libc6-dev:amd64=2.35-0ubuntu3.7`
-- `locales=2.35-0ubuntu3.7`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
 
 - `GFDL-1.3`
 - `GPL-2`
@@ -931,6 +932,31 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `glibc=2.35-0ubuntu3.8`
+
+Binary Packages:
+
+- `libc-dev-bin=2.35-0ubuntu3.8`
+- `libc6:amd64=2.35-0ubuntu3.8`
+- `libc6-dev:amd64=2.35-0ubuntu3.8`
+- `locales=2.35-0ubuntu3.8`
+
+Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/locales/copyright`)
+
+- `GFDL-1.3`
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.8.dsc' glibc_2.35-0ubuntu3.8.dsc 8917 SHA512:65d4e9f4ff2556677cf3b723560d89d889754f7c49af563e25e7bd1e7e1b211c4008e149d1b889a626d19b0a001050fd84ffe05f3ede4a6b03fd759e2c60c3b9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.8.debian.tar.xz' glibc_2.35-0ubuntu3.8.debian.tar.xz 937424 SHA512:4bd814571a66097dd9bf9c87c62ca9ea9e29b3a9c193be6b7a1dc25cf672641addce7c100e95e86d6fb4e4ee6f88eb847e6766285b60c6953587789d05f48abd
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
