@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3d1555afe7dcf25961b6c9253c4680d8b30996d8dbe4c3a5e4a1dcf8416830a6`
-- Created: `2024-05-09T22:30:23.651281855Z`
-- Virtual Size: ~ 112.27 Mb  
+- Image ID: `sha256:0d5935a76167978392e5e79231c67f7ce5e5987f5bfbeda57f60ec40182f64ae`
+- Created: `2024-06-01T00:48:09.311779986Z`
+- Virtual Size: ~ 112.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -197,40 +197,40 @@ https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/gl
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/glib2-2.68.4-14.el9.src.rpm
 ```
 
-### `rpm` package: `glibc-2.34-100.0.1.el9.x86_64`
+### `rpm` package: `glibc-2.34-100.0.1.el9_4.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.34-100.0.1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/glibc-2.34-100.0.1.el9.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/glibc-2.34-100.0.1.el9.src.rpm
+$ dnf --quiet download --source --url glibc-2.34-100.0.1.el9_4.2
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/glibc-2.34-100.0.1.el9_4.2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/glibc-2.34-100.0.1.el9_4.2.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.34-100.0.1.el9.x86_64`
+### `rpm` package: `glibc-common-2.34-100.0.1.el9_4.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.34-100.0.1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/glibc-2.34-100.0.1.el9.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/glibc-2.34-100.0.1.el9.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.34-100.0.1.el9_4.2
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/glibc-2.34-100.0.1.el9_4.2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/glibc-2.34-100.0.1.el9_4.2.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.34-100.0.1.el9.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-100.0.1.el9_4.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-100.0.1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/glibc-2.34-100.0.1.el9.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/glibc-2.34-100.0.1.el9.src.rpm
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-100.0.1.el9_4.2
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/glibc-2.34-100.0.1.el9_4.2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/glibc-2.34-100.0.1.el9_4.2.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.2.0-13.el9.x86_64`
