@@ -1,7 +1,7 @@
 ## `ghost:alpine`
 
 ```console
-$ docker pull ghost@sha256:3a3274ab124a9e3268e5628ca28db286f38e5baf77ecfb4c4a1e0fbf5372a2a7
+$ docker pull ghost@sha256:41e8e7415f00325af15c4b74c78c9fad72f6aa5fb8909400f1bfbd7af7ca73f5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -404,13 +404,13 @@ $ docker pull ghost@sha256:ba20d2e717129a0ebd6630522440cc57f50c8691d794ea5f29706
 ### `ghost:alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull ghost@sha256:8a5b9690904d63c997d2cd2f0c7f7d15adb4201e5d214446b22307b407019f47
+$ docker pull ghost@sha256:3c1327afca429459b34f44b9aedd036f97fa3f33a020346ecee3fcb9cd8f8186
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **179.2 MB (179220017 bytes)**  
+-	Total Size: **178.2 MB (178221446 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0721d8ea774f145b08fb709597b873a8d4da27ee104ecd6afd284cbf7611576`
+-	Image ID: `sha256:dedc554bc8b439af552bf4bc04e5efa90752df322a26f30119946f6dcfe0323e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -433,35 +433,35 @@ COPY file:4d192565a7220e135cab6c77fbc1c73211b69f3d9fb37e62857b2c6eb9363d51 in /u
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Tue, 21 May 2024 18:51:51 GMT
 CMD ["node"]
-# Mon, 27 May 2024 08:19:12 GMT
+# Fri, 31 May 2024 20:19:14 GMT
 RUN apk add --no-cache 'su-exec>=0.2' # buildkit
-# Mon, 27 May 2024 08:19:12 GMT
+# Fri, 31 May 2024 20:19:14 GMT
 RUN apk add --no-cache 		bash # buildkit
-# Mon, 27 May 2024 08:19:12 GMT
+# Fri, 31 May 2024 20:19:14 GMT
 ENV NODE_ENV=production
-# Mon, 27 May 2024 08:19:12 GMT
+# Fri, 31 May 2024 20:19:14 GMT
 ENV GHOST_CLI_VERSION=1.26.0
-# Mon, 27 May 2024 08:19:12 GMT
+# Fri, 31 May 2024 20:19:14 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Mon, 27 May 2024 08:19:12 GMT
+# Fri, 31 May 2024 20:19:14 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Mon, 27 May 2024 08:19:12 GMT
+# Fri, 31 May 2024 20:19:14 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Mon, 27 May 2024 08:19:12 GMT
-ENV GHOST_VERSION=5.82.12
-# Mon, 27 May 2024 08:19:12 GMT
+# Fri, 31 May 2024 20:19:14 GMT
+ENV GHOST_VERSION=5.83.0
+# Fri, 31 May 2024 20:19:14 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		apkDel=; 		installCmd='su-exec node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		virtual='.build-deps-ghost'; 		apkDel="$apkDel $virtual"; 		apk add --no-cache --virtual "$virtual" g++ linux-headers make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	su-exec node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	su-exec node ghost config paths.contentPath "$GHOST_CONTENT"; 		su-exec node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='su-exec node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			virtualPackages='g++ make python3'; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.12.1 in Alpine 3.15 is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 			virtual=".build-deps-${package%%@*}"; 			apkDel="$apkDel $virtual"; 			apk add --no-cache --virtual "$virtual" $virtualPackages; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$apkDel" ]; then 		apk del --no-network $apkDel; 	fi; 		su-exec node yarn cache clean; 	su-exec node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
-# Mon, 27 May 2024 08:19:12 GMT
+# Fri, 31 May 2024 20:19:14 GMT
 WORKDIR /var/lib/ghost
-# Mon, 27 May 2024 08:19:12 GMT
+# Fri, 31 May 2024 20:19:14 GMT
 VOLUME [/var/lib/ghost/content]
-# Mon, 27 May 2024 08:19:12 GMT
+# Fri, 31 May 2024 20:19:14 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Mon, 27 May 2024 08:19:12 GMT
+# Fri, 31 May 2024 20:19:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 27 May 2024 08:19:12 GMT
+# Fri, 31 May 2024 20:19:14 GMT
 EXPOSE map[2368/tcp:{}]
-# Mon, 27 May 2024 08:19:12 GMT
+# Fri, 31 May 2024 20:19:14 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -482,51 +482,51 @@ CMD ["node" "current/index.js"]
 		Last Modified: Tue, 21 May 2024 18:57:28 GMT  
 		Size: 450.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36117ac0d1976b21ea227d445084c7c28f166698a3c85646335f8b8c53ac4ceb`  
-		Last Modified: Thu, 30 May 2024 08:49:12 GMT  
+	-	`sha256:128b43ecd31dec22959a98fd227cdb4ba8bd030acc0af08dff75e7cb720bc51d`  
+		Last Modified: Tue, 04 Jun 2024 01:36:05 GMT  
 		Size: 11.7 KB (11679 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b3ca0ce6c2c38a49729eb9cc2fb2bd53d457c6bdd2d538f5198b36d28ab58f8`  
-		Last Modified: Thu, 30 May 2024 08:49:13 GMT  
-		Size: 852.9 KB (852861 bytes)  
+	-	`sha256:09766a2af8a62dcb294d11b33867faf95f2ba2b3e4b3a9934d75f1823415ade6`  
+		Last Modified: Tue, 04 Jun 2024 01:36:05 GMT  
+		Size: 852.9 KB (852859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e00571476e47d8afcb5a353f04833efef01970bf180cf7ec814674ce41e7de24`  
-		Last Modified: Thu, 30 May 2024 08:49:13 GMT  
-		Size: 11.0 MB (11037297 bytes)  
+	-	`sha256:61c50c66aa6c59b7d60d45f030b9cf503ead8300a619e0b2c3430d21af8d8b58`  
+		Last Modified: Tue, 04 Jun 2024 01:36:06 GMT  
+		Size: 11.0 MB (11037837 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81c9214fe66d450b586e3340453aea39823db2e4a2e5024c35b550d7d9aaa970`  
-		Last Modified: Thu, 30 May 2024 08:49:15 GMT  
-		Size: 123.1 MB (123051055 bytes)  
+	-	`sha256:13749c9f2790a66e9b07bae1e97e5b42234b946fbb76908df111dc93259d2a9b`  
+		Last Modified: Tue, 04 Jun 2024 01:36:09 GMT  
+		Size: 122.1 MB (122051945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:857af5e81b96f70884ce1537a9cc84da890e50a182c8b857d28d47049257b0e2`  
-		Last Modified: Thu, 30 May 2024 08:49:14 GMT  
-		Size: 547.0 B  
+	-	`sha256:4fbb4301d035275de1107af2fe4f99feed6ed66fe75f07780249cda5b4219ec8`  
+		Last Modified: Tue, 04 Jun 2024 01:36:06 GMT  
+		Size: 548.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:alpine` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:ba6fa9ee0244cfbaea72861633fa05f66043b61719312243b897ee476c089c28
+$ docker pull ghost@sha256:cd6032e812c0485a3725cc9af3f6a823a0353f0797b26107c7d53bd66fab2fd0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2875894 bytes)**  
+-	Total Size: **2.8 MB (2845064 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:46f30ba96ef8ccb56467a3096a57990d452a34576ece53d1f0adb1f312f9797a`
+-	Image ID: `sha256:d9f0b75f846d63bfb087982f6248fddc7aef84cf4cf0d9a0afb5bf644e41bfaa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:832e8201548c7a61898d59a667d15dcb3d32bbdf9f87f7efdd34f05d7d6ef788`  
-		Last Modified: Thu, 30 May 2024 08:49:12 GMT  
-		Size: 2.8 MB (2849058 bytes)  
+	-	`sha256:2e36a715b134d6a769610bb1e30e25e1e403b90929bc8d2a0ac3699d2a2a6285`  
+		Last Modified: Tue, 04 Jun 2024 01:36:05 GMT  
+		Size: 2.8 MB (2818231 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ae5c972483ef51a4bb4a7028d0e688f44234596cbae428be169dbc890391028b`  
-		Last Modified: Thu, 30 May 2024 08:49:12 GMT  
-		Size: 26.8 KB (26836 bytes)  
+	-	`sha256:5ea1ec18ff6b1493d4549c79abd8246fbe258a1c709b7250f29abf8a1318e6bf`  
+		Last Modified: Tue, 04 Jun 2024 01:36:05 GMT  
+		Size: 26.8 KB (26833 bytes)  
 		MIME: application/vnd.in-toto+json
