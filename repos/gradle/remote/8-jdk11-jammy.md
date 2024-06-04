@@ -1,7 +1,7 @@
 ## `gradle:8-jdk11-jammy`
 
 ```console
-$ docker pull gradle@sha256:9f582c7002dddccf4915a896b8d8e313b208afbba09ba679919c5689f017e3cf
+$ docker pull gradle@sha256:b7db929c8c8d536561b547bb79c0a3f1c194e5c6c960a691e31cbb861c521744
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -160,74 +160,74 @@ $ docker pull gradle@sha256:1e00af44554acfdbf34c716782a542b4f9310317490837933f7d
 ### `gradle:8-jdk11-jammy` - linux; arm variant v7
 
 ```console
-$ docker pull gradle@sha256:9779b62d9455ced2966247112bc05c3711a2165849f1c1e430a98efe738b55c3
+$ docker pull gradle@sha256:85318214a9102b191153dac587a72a4596d036690c20f5526a61cb2dbb4755b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **366.2 MB (366166622 bytes)**  
+-	Total Size: **370.0 MB (369991576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:67461da6ae7b11f9468fae272caf559c1331cb1d976f1509dacb1dc5e62e1e9b`
+-	Image ID: `sha256:d1747f2df51cb56dec432f7be901bde935db0f81330c44acf30f6ca84fdd5699`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Sat, 27 Apr 2024 14:35:06 GMT
 ARG RELEASE
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Sat, 27 Apr 2024 14:35:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Sat, 27 Apr 2024 14:35:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Sat, 27 Apr 2024 14:35:06 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Sat, 27 Apr 2024 14:35:17 GMT
 ADD file:ab2e95a123b006ac900aaaf0d1858b88941c8d319f47e41733db6f0f5fe98b87 in / 
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Sat, 27 Apr 2024 14:35:18 GMT
 CMD ["/bin/bash"]
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_VERSION=jdk-11.0.23+9
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e00476a7be3c4adfa9b3d55d30768967fd246a8352e518894e183fa444d4d3ce';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.23_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='23e47ea7a3015be3240f21185fd902adebdcf76530757c9b482c7eb5bd3417c2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jdk_x64_linux_hotspot_11.0.23_9.tar.gz';          ;;        armhf|arm)          ESUM='8077edc07a57d846c3d11286a7caf05ed6ca6d6c1234bf0e03611f18e187f075';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jdk_arm_linux_hotspot_11.0.23_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='f56068bb64c6bf858894f75c2bc261f54db32932422eb07527f36ae40046e9a0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.23_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='cf06c3e41acfaeda77112ac04f5a711cafe9fa9ac04dff758696fe7e8d66a0ea';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Tue, 23 Apr 2024 20:51:38 GMT
 CMD ["jshell"]
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Sat, 01 Jun 2024 15:03:05 GMT
 CMD ["gradle"]
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Sat, 01 Jun 2024 15:03:05 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Sat, 01 Jun 2024 15:03:05 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle     && chmod --recursive o+rwx /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln --symbolic /home/gradle/.gradle /root/.gradle # buildkit
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Sat, 01 Jun 2024 15:03:05 GMT
 VOLUME [/home/gradle/.gradle]
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Sat, 01 Jun 2024 15:03:05 GMT
 WORKDIR /home/gradle
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Sat, 01 Jun 2024 15:03:05 GMT
 RUN set -o errexit -o nounset     && apt-get update     && apt-get install --yes --no-install-recommends         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm --recursive --force /var/lib/apt/lists/*         && echo "Testing VCSes"     && which bzr     && which git     && which git-lfs     && which hg     && which svn # buildkit
-# Sat, 23 Mar 2024 20:25:42 GMT
-ENV GRADLE_VERSION=8.7
-# Sat, 23 Mar 2024 20:25:42 GMT
-ARG GRADLE_DOWNLOAD_SHA256=544c35d6bd849ae8a5ed0bcea39ba677dc40f49df7d1835561582da2009b961d
-# Sat, 23 Mar 2024 20:25:42 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=544c35d6bd849ae8a5ed0bcea39ba677dc40f49df7d1835561582da2009b961d
+# Sat, 01 Jun 2024 15:03:05 GMT
+ENV GRADLE_VERSION=8.8
+# Sat, 01 Jun 2024 15:03:05 GMT
+ARG GRADLE_DOWNLOAD_SHA256=a4b4158601f8636cdeeab09bd76afb640030bb5b144aafe261a5e8af027dc612
+# Sat, 01 Jun 2024 15:03:05 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=a4b4158601f8636cdeeab09bd76afb640030bb5b144aafe261a5e8af027dc612
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking Gradle download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle # buildkit
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Sat, 01 Jun 2024 15:03:05 GMT
 USER gradle
-# Sat, 23 Mar 2024 20:25:42 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=544c35d6bd849ae8a5ed0bcea39ba677dc40f49df7d1835561582da2009b961d
+# Sat, 01 Jun 2024 15:03:05 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=a4b4158601f8636cdeeab09bd76afb640030bb5b144aafe261a5e8af027dc612
 RUN set -o errexit -o nounset     && echo "Testing Gradle installation"     && gradle --version # buildkit
-# Sat, 23 Mar 2024 20:25:42 GMT
+# Sat, 01 Jun 2024 15:03:05 GMT
 USER root
 ```
 
@@ -252,49 +252,49 @@ USER root
 		Last Modified: Thu, 02 May 2024 01:29:08 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24ab3f91763669ea10007a63e434ce2f8800e879892f02a10d7bfafe95d4faf3`  
-		Last Modified: Fri, 17 May 2024 02:26:04 GMT  
+	-	`sha256:d4e8982f7f9070ca66fc96d8abc7171e32db79844dd8aef8c94f471ef2773835`  
+		Last Modified: Mon, 03 Jun 2024 19:52:21 GMT  
 		Size: 4.3 KB (4298 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70aac7a1415c6b4237d513caa6bac21ac29f9061979cf55d3c5224c88a681ce1`  
-		Last Modified: Fri, 17 May 2024 02:26:08 GMT  
-		Size: 53.9 MB (53884968 bytes)  
+	-	`sha256:72f785092ed3cd14be593e48172bc8a9c916cf90b0fe1d8d29e6231546b78394`  
+		Last Modified: Mon, 03 Jun 2024 19:52:23 GMT  
+		Size: 53.9 MB (53888388 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4cd7dd51d2bb698686ad1436a7b396d9c20ff10a25755fdadf46102e31f6d041`  
-		Last Modified: Fri, 17 May 2024 02:26:09 GMT  
-		Size: 134.2 MB (134210006 bytes)  
+	-	`sha256:ce99d6d0bfa853a3bf1afacd87f31b36d3697d959d1b04f54d01385022da0391`  
+		Last Modified: Mon, 03 Jun 2024 19:52:25 GMT  
+		Size: 138.1 MB (138062555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9932556f88f4cd1c6fe7f736226fcd98e8ce3aa22e3ec33ef6f29ecee224c233`  
-		Last Modified: Fri, 17 May 2024 02:26:05 GMT  
-		Size: 31.3 KB (31305 bytes)  
+	-	`sha256:1d10139bd8e51690ea845972cd065a14099039d8110d8f95bf36c1f4c0e1d786`  
+		Last Modified: Mon, 03 Jun 2024 19:52:21 GMT  
+		Size: 290.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:8-jdk11-jammy` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:d66284c0e237cc3c83deaae957ba61c7feaee02b0a634db61617dfb3ae1be454
+$ docker pull gradle@sha256:8be2996e9f0a42ad834acace269ae3bf92bc6a6687ea5ae15a88b7e4afb5f618
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.0 MB (6996843 bytes)**  
+-	Total Size: **7.0 MB (6999292 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e414ae7b107306935034da799f3a9ab91d79b6cbe1665353870b392748b1031`
+-	Image ID: `sha256:f43cf36461e1da12396e7512e23f5a16505d9ca142aacfb16e727c01de41e195`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fd9bb5c0d915ff980fbc37e982b2a3a6ec82adfc95ea68f34d057d6ea3e5dcd2`  
-		Last Modified: Fri, 17 May 2024 02:26:05 GMT  
-		Size: 7.0 MB (6973874 bytes)  
+	-	`sha256:07622df147f8bd66704388b48f7bad9fa2978c7c7d05e87dd5575895391aeb82`  
+		Last Modified: Mon, 03 Jun 2024 19:52:22 GMT  
+		Size: 7.0 MB (6976325 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9221ae67ac903b4e76285382a0122097896bab9eaf006842374832dd064c5c36`  
-		Last Modified: Fri, 17 May 2024 02:26:04 GMT  
-		Size: 23.0 KB (22969 bytes)  
+	-	`sha256:a70b0d82f14919ce5a1eb63e137a55119314a4d1f3c09016296e52f016e96a32`  
+		Last Modified: Mon, 03 Jun 2024 19:52:21 GMT  
+		Size: 23.0 KB (22967 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gradle:8-jdk11-jammy` - linux; arm64 variant v8
