@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f2c76c8e00b27d36c2b367e1aacac4f664e3e5d59d7551e10569b213e75171ea`
-- Created: `2024-05-28T20:14:10.908873756Z`
+- Image ID: `sha256:22b396df20749b65ffb6254842e04ba93e00c718e3517c8775e08972d0540c00`
+- Created: `2024-06-05T05:13:41.898327075Z`
 - Virtual Size: ~ 3.13 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1866,14 +1866,9 @@ Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MPL-1.1-or-LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.40.0+dfsg-3ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0%2bdfsg-3ubuntu0.4.dsc' gdk-pixbuf_2.40.0+dfsg-3ubuntu0.4.dsc 3062 SHA512:d3492c156f517e8c54c9136bbcd9a8caa3e6a34e9947150e0201dbc8b40d7dc8090ec777fcbf752ef5da275e321328b4470a04d43ef79f83adf95bfecde6a6d3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0%2bdfsg.orig.tar.xz' gdk-pixbuf_2.40.0+dfsg.orig.tar.xz 5626144 SHA512:bb8a9d1837bffdc5f50307dba1a1e6f1ac015e6e670ea6cae6d0bc997afa106ff0d928cb847d76848c480a06e1ad3945274b4913eaa4d9a8074797fc82bb7c1f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0%2bdfsg-3ubuntu0.4.debian.tar.xz' gdk-pixbuf_2.40.0+dfsg-3ubuntu0.4.debian.tar.xz 21108 SHA512:77c5f1b213dcead327039f121ed6334aef33e73370489d496de4381921c29447bdd425a6fdb286a24f675dca95f45eecf354e791a8fc74ff628bf6e356393fb1
-```
 
 ### `dpkg` source package: `ghostscript=9.50~dfsg-5ubuntu4.11`
 
@@ -1987,22 +1982,27 @@ $ apt-get source -qq --print-uris glib2.0=2.64.6-1~ubuntu20.04.7
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.6-1%7eubuntu20.04.7.debian.tar.xz' glib2.0_2.64.6-1~ubuntu20.04.7.debian.tar.xz 148828 SHA512:8359a21721d202c294ab0f2eb94e3971231b80546982d25f47850afe7a0cd1c6632b3aa736adb66ce5a9af08e4f8d3da768f44695659577bbcbd42526601bd7e
 ```
 
-### `dpkg` source package: `glibc=2.31-0ubuntu9.15`
+### `dpkg` source package: `glibc=2.31-0ubuntu9.16`
 
 Binary Packages:
 
-- `libc-bin=2.31-0ubuntu9.15`
-- `libc6:amd64=2.31-0ubuntu9.15`
-- `locales=2.31-0ubuntu9.15`
+- `libc-bin=2.31-0ubuntu9.16`
+- `libc6:amd64=2.31-0ubuntu9.16`
+- `locales=2.31-0ubuntu9.16`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.16
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.16.dsc' glibc_2.31-0ubuntu9.16.dsc 9585 SHA512:30e3507d4fe12a3fbd7c00b8ba3f051288f06502c204e9fe6a027be38587a61be8344d4875685cdf7920e54f811a945605aa1a8c11a068c2c71dba8892832d75
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.16.debian.tar.xz' glibc_2.31-0ubuntu9.16.debian.tar.xz 890412 SHA512:663f45bed9dd4829df3ff958c0daf0acf367270c39efa039694c18d17d459e02c4cb5ed1bbd2a290545d7ea29f2ac24ad9a7af3ef9537fa4901879b8899d70bb
+```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4ubuntu0.1`
 
@@ -2283,14 +2283,14 @@ $ apt-get source -qq --print-uris gsfonts=1:8.11+urwcyr1.0.7~pre44-4.4
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/gsfonts/gsfonts_8.11%2burwcyr1.0.7%7epre44-4.4.diff.gz' gsfonts_8.11+urwcyr1.0.7~pre44-4.4.diff.gz 6940 SHA256:b3343e4a90dbf5c7bb59df4a335f76d7877e2e6814d3f68f9988343f227db626
 ```
 
-### `dpkg` source package: `gst-plugins-base1.0=1.16.3-0ubuntu1.2`
+### `dpkg` source package: `gst-plugins-base1.0=1.16.3-0ubuntu1.3`
 
 Binary Packages:
 
-- `gstreamer1.0-gl:amd64=1.16.3-0ubuntu1.2`
-- `gstreamer1.0-plugins-base:amd64=1.16.3-0ubuntu1.2`
-- `libgstreamer-gl1.0-0:amd64=1.16.3-0ubuntu1.2`
-- `libgstreamer-plugins-base1.0-0:amd64=1.16.3-0ubuntu1.2`
+- `gstreamer1.0-gl:amd64=1.16.3-0ubuntu1.3`
+- `gstreamer1.0-plugins-base:amd64=1.16.3-0ubuntu1.3`
+- `libgstreamer-gl1.0-0:amd64=1.16.3-0ubuntu1.3`
+- `libgstreamer-plugins-base1.0-0:amd64=1.16.3-0ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/gstreamer1.0-gl/copyright`, `/usr/share/doc/gstreamer1.0-plugins-base/copyright`, `/usr/share/doc/libgstreamer-gl1.0-0/copyright`, `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright`)
 
@@ -2301,9 +2301,14 @@ Licenses: (parsed from: `/usr/share/doc/gstreamer1.0-gl/copyright`, `/usr/share/
 - `LGPL-2+`
 - `MIT/X11 (BSD like) LGPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gst-plugins-base1.0=1.16.3-0ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.16.3-0ubuntu1.3.dsc' gst-plugins-base1.0_1.16.3-0ubuntu1.3.dsc 4152 SHA512:6a59f06cd293e211a298ba9f173f11564f97150d513eb76dd2b0bb80f4d9b01923e499a37f234917600da0c041428277ff57ec07fc3b586625e8664c472a3b9f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.16.3.orig.tar.xz' gst-plugins-base1.0_1.16.3.orig.tar.xz 3953616 SHA512:d44d4da9cb27a6b8e59cb3f0714cc71809c0f14b42ef8d4a2dddbb940efbcb9634a40596d3cdc7391016f6e758005c14aabe1f8f30bb597a57d85c2d94045e75
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.16.3-0ubuntu1.3.debian.tar.xz' gst-plugins-base1.0_1.16.3-0ubuntu1.3.debian.tar.xz 48408 SHA512:27c8382c06e3ed313531cd2c588d03a0641f46eae25040fd49ab94a43027a5d9e245cb0662e0f65d4d58ed2c83f7800bdddab690b8b88b768b81dc1e91812aba
+```
 
 ### `dpkg` source package: `gst-plugins-good1.0=1.16.3-0ubuntu1.2`
 
@@ -8952,14 +8957,14 @@ $ apt-get source -qq --print-uris util-linux=2.34-0.1ubuntu9.6
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34-0.1ubuntu9.6.debian.tar.xz' util-linux_2.34-0.1ubuntu9.6.debian.tar.xz 102952 SHA512:94a75311c3aa74a62d76c372b8d15285c6e574f65d8de668d430a658f6ebc1d171683a40d855140e62901776b8de306a88790396a4c8ac8bfb81128f0ef2d198
 ```
 
-### `dpkg` source package: `vim=2:8.1.2269-1ubuntu5.22`
+### `dpkg` source package: `vim=2:8.1.2269-1ubuntu5.23`
 
 Binary Packages:
 
-- `vim=2:8.1.2269-1ubuntu5.22`
-- `vim-common=2:8.1.2269-1ubuntu5.22`
-- `vim-runtime=2:8.1.2269-1ubuntu5.22`
-- `xxd=2:8.1.2269-1ubuntu5.22`
+- `vim=2:8.1.2269-1ubuntu5.23`
+- `vim-common=2:8.1.2269-1ubuntu5.23`
+- `vim-runtime=2:8.1.2269-1ubuntu5.23`
+- `xxd=2:8.1.2269-1ubuntu5.23`
 
 Licenses: (parsed from: `/usr/share/doc/vim/copyright`, `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/vim-runtime/copyright`, `/usr/share/doc/xxd/copyright`)
 
@@ -8990,10 +8995,10 @@ Licenses: (parsed from: `/usr/share/doc/vim/copyright`, `/usr/share/doc/vim-comm
 Source:
 
 ```console
-$ apt-get source -qq --print-uris vim=2:8.1.2269-1ubuntu5.22
-'http://security.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269-1ubuntu5.22.dsc' vim_8.1.2269-1ubuntu5.22.dsc 2769 SHA512:445de2e9030ac00d7dcb56f7d3d92d770b3587a617e12992b7deece773ddb6d54b7089253acb2a65c68defe530501d10eeb255897f8946d578aab55889fa896b
-'http://security.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269.orig.tar.gz' vim_8.1.2269.orig.tar.gz 14590233 SHA512:5194817a5665e08816e87e3b10219e19510ca87c5c377ddc0a50aa84ffd4d7391badad3e993f83802d6da5e9da8834635c1acbdd4a909e75b4947f99f13c1746
-'http://security.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269-1ubuntu5.22.debian.tar.xz' vim_8.1.2269-1ubuntu5.22.debian.tar.xz 263608 SHA512:5f01e12325595be174f3a3f38d8b40e26686ee0032a76d6c26f880ac616dd4e7a4fd5456c1cb94762420b803142347d213e30200b85caeeaa89976f021ad3992
+$ apt-get source -qq --print-uris vim=2:8.1.2269-1ubuntu5.23
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269-1ubuntu5.23.dsc' vim_8.1.2269-1ubuntu5.23.dsc 2903 SHA512:6088bcd2a84ccd87484c1d09081de736f984307453bcf461da062287942bd3ad018d0bea8dcb0658dd82a9d56483f91e81611bf75950e660c5f03830da45883b
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269.orig.tar.gz' vim_8.1.2269.orig.tar.gz 14590233 SHA512:5194817a5665e08816e87e3b10219e19510ca87c5c377ddc0a50aa84ffd4d7391badad3e993f83802d6da5e9da8834635c1acbdd4a909e75b4947f99f13c1746
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269-1ubuntu5.23.debian.tar.xz' vim_8.1.2269-1ubuntu5.23.debian.tar.xz 263624 SHA512:d1fd379ec076339d6f646e8f5d34b7e37ceac6f3d3b63dd34f2318cfc31e2c6f464a93b5dbaf7229f6bcb441212f0d190c650cf60b10d4626421a823b6cd5b90
 ```
 
 ### `dpkg` source package: `vulkan-loader=1.2.131.2-1`
