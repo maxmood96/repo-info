@@ -1,7 +1,7 @@
 ## `golang:nanoserver-ltsc2022`
 
 ```console
-$ docker pull golang@sha256:d37a42ad2020806ebbfaa62f729198c53a15adc5b9e1d35e80e7542897e498cd
+$ docker pull golang@sha256:08fb710ab1f56fd09bbfee3d3d23ee871016e6315bfeb8572f9be77837145652
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,37 +11,37 @@ $ docker pull golang@sha256:d37a42ad2020806ebbfaa62f729198c53a15adc5b9e1d35e80e7
 ### `golang:nanoserver-ltsc2022` - windows version 10.0.20348.2461; amd64
 
 ```console
-$ docker pull golang@sha256:52130fac6fad632b8c50ed7b1e59a77a1ed5847c08c1b89085e6bc0ae2563c50
+$ docker pull golang@sha256:7226ddd2cbd6e9471711e0529760925592b5868b998b5487f55895ee35023014
 ```
 
 -	Docker Version: 24.0.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.9 MB (191946083 bytes)**  
+-	Total Size: **192.0 MB (191958199 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:abf8c8da01ff01f21b160512b1483ac969d09863988815076acaac8a513ab971`
+-	Image ID: `sha256:267ad4bac0b3f8b0ac67c8136455bf2e400e5a27ec3190a98dd52104725621bf`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["cmd","\/S","\/C"]`
 
 ```dockerfile
 # Fri, 10 May 2024 20:16:48 GMT
 RUN Apply image 10.0.20348.2461
-# Wed, 15 May 2024 23:55:56 GMT
+# Tue, 04 Jun 2024 20:49:40 GMT
 SHELL [cmd /S /C]
-# Wed, 15 May 2024 23:55:56 GMT
+# Tue, 04 Jun 2024 20:49:40 GMT
 ENV GOPATH=C:\go
-# Wed, 15 May 2024 23:55:57 GMT
+# Tue, 04 Jun 2024 20:49:41 GMT
 USER ContainerAdministrator
-# Wed, 15 May 2024 23:56:43 GMT
+# Tue, 04 Jun 2024 20:49:57 GMT
 RUN setx /m PATH "%GOPATH%\bin;C:\Program Files\Go\bin;%PATH%"
-# Wed, 15 May 2024 23:56:44 GMT
+# Tue, 04 Jun 2024 20:49:57 GMT
 USER ContainerUser
-# Wed, 15 May 2024 23:56:44 GMT
-ENV GOLANG_VERSION=1.22.3
-# Thu, 16 May 2024 00:01:10 GMT
-COPY dir:4d079461b01f7018cdefcf75d79e42082e4956562e5247e8be7d5083d6b6044d in C:\Program Files\Go 
-# Thu, 16 May 2024 00:01:16 GMT
+# Tue, 04 Jun 2024 20:49:58 GMT
+ENV GOLANG_VERSION=1.22.4
+# Tue, 04 Jun 2024 20:51:17 GMT
+COPY dir:5740e62168801895135af54bbf9a0c0e6996b1c9f19a0a4d6d32e83e842d4de4 in C:\Program Files\Go 
+# Tue, 04 Jun 2024 20:51:21 GMT
 RUN go version
-# Thu, 16 May 2024 00:01:17 GMT
+# Tue, 04 Jun 2024 20:51:22 GMT
 WORKDIR C:\go
 ```
 
@@ -50,39 +50,39 @@ WORKDIR C:\go
 		Last Modified: Tue, 14 May 2024 17:22:15 GMT  
 		Size: 120.4 MB (120425316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ed1906e7197cc929c6ea0fd44d7d10a72e3cf42e3e14a42499c28f358e4316d`  
-		Last Modified: Thu, 16 May 2024 00:01:21 GMT  
-		Size: 1.1 KB (1107 bytes)  
+	-	`sha256:89d1cdfb89364ef99f3d1f29beda7b7f44b743a40954ce95c425a11a233e78fe`  
+		Last Modified: Tue, 04 Jun 2024 20:51:26 GMT  
+		Size: 1.0 KB (1046 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:905d2af9acd05b3bf39369155941437f1fe8d750919a6c394622494cbf50e07f`  
-		Last Modified: Thu, 16 May 2024 00:01:21 GMT  
-		Size: 1.0 KB (1043 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:465ff97c930c96e5c9a4d9a8c6bce5a71836e0a7e3f580d4d6250bb3c38bd394`  
-		Last Modified: Thu, 16 May 2024 00:01:21 GMT  
-		Size: 1.0 KB (1034 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03fa79c65d198f9990979658a6e624c09a9f40c4ee5b8342914054bb4636b986`  
-		Last Modified: Thu, 16 May 2024 00:01:21 GMT  
-		Size: 88.5 KB (88502 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3ee5c43dd3ed848fc507f260902be1b1913bf0a20e578e2c7202b20ed78741f`  
-		Last Modified: Thu, 16 May 2024 00:01:20 GMT  
-		Size: 1.0 KB (1045 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45c1a549cb5b8dc074b79aa38d7ae67b4187b362f660a1592167a7eee8c9fe41`  
-		Last Modified: Thu, 16 May 2024 00:01:19 GMT  
+	-	`sha256:5b42220b3a9edabd5b0f079aa4c850c2941d24d67eff73c7fbf173742215a986`  
+		Last Modified: Tue, 04 Jun 2024 20:51:26 GMT  
 		Size: 1.0 KB (1038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3264cb308c90f7d151d879b299394b2092e6af0ace5cf77c0ab14cf06f4747cc`  
-		Last Modified: Thu, 16 May 2024 00:01:30 GMT  
-		Size: 71.3 MB (71341314 bytes)  
+	-	`sha256:1a0448ca4c3adb542d98120e63e0e4f9f500a23c3c90619e42cd9f85be1fa240`  
+		Last Modified: Tue, 04 Jun 2024 20:51:26 GMT  
+		Size: 1.0 KB (1041 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e914df7174cb037371854a9ffa7453f58676113d40982412bb0cc1dd4ca9a9f5`  
-		Last Modified: Thu, 16 May 2024 00:01:19 GMT  
-		Size: 84.4 KB (84440 bytes)  
+	-	`sha256:aabf5f164d9b2cf6ad14644d958d8b27f15befb932412d2363392bca2c30cd8d`  
+		Last Modified: Tue, 04 Jun 2024 20:51:26 GMT  
+		Size: 84.6 KB (84551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d10caa57fda89392a23524c95ffbf5cd460b34f36ea4dac8add77405fc2b90a6`  
-		Last Modified: Thu, 16 May 2024 00:01:20 GMT  
+	-	`sha256:1621ec1d7d8c6ca2e3eb82e8da82e2361d92d191be9c73fcbaf75464c9e0a111`  
+		Last Modified: Tue, 04 Jun 2024 20:51:25 GMT  
+		Size: 1.0 KB (1038 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f05cf36a3f9a283a2e69ee8a74741140aee96d86bb1b789f05e4939e9905b106`  
+		Last Modified: Tue, 04 Jun 2024 20:51:25 GMT  
+		Size: 1.0 KB (1040 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fa4ccb7d3bd0306b3df2ef0f041996b19edb63d0b09621a268e7522f8e2000ce`  
+		Last Modified: Tue, 04 Jun 2024 20:51:35 GMT  
+		Size: 71.4 MB (71354155 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a45a678a8e738e0fb3008b4ea50327a3b987066ffbc42e1699514cceb6d8a96e`  
+		Last Modified: Tue, 04 Jun 2024 20:51:25 GMT  
+		Size: 87.7 KB (87730 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4f580edbcf3fecf6c19d762bd5dc62a41618e10aa7939cfb4f92f2c73eaa0619`  
+		Last Modified: Tue, 04 Jun 2024 20:51:25 GMT  
 		Size: 1.2 KB (1244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
