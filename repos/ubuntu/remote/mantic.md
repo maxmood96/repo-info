@@ -1,7 +1,7 @@
 ## `ubuntu:mantic`
 
 ```console
-$ docker pull ubuntu@sha256:04f8e2f61d65d5f65cae9f9f88dda1c4bf72abd45de33cfb1ceda768b537ce6d
+$ docker pull ubuntu@sha256:fd7fe639db24c4e005643921beea92bc449aac4f4d40d60cd9ad9ab6456aec01
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -49,35 +49,35 @@ CMD ["/bin/bash"]
 ### `ubuntu:mantic` - linux; arm variant v7
 
 ```console
-$ docker pull ubuntu@sha256:76e4b6173670f4ecc21ea3264690d8c7bafd9863bd7cd2ce0f1bc4987f61bdab
+$ docker pull ubuntu@sha256:1b6bcf792688b1785446e313362693c258430e5f2868d9f6b7369fa545410ce4
 ```
 
 -	Docker Version: 24.0.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.9 MB (24888998 bytes)**  
+-	Total Size: **24.9 MB (24889640 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9fe1df8338a7972be9f896df29e704342b3ebb3e8396f4d57844f40d2997a60`
+-	Image ID: `sha256:3794c41d97830edf2fb23a4bf73adb8402fd53da962e372711d294b4a0228cba`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 29 Apr 2024 16:05:53 GMT
+# Thu, 30 May 2024 04:35:52 GMT
 ARG RELEASE
-# Mon, 29 Apr 2024 16:05:53 GMT
+# Thu, 30 May 2024 04:35:52 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 29 Apr 2024 16:05:53 GMT
+# Thu, 30 May 2024 04:35:52 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 29 Apr 2024 16:05:53 GMT
+# Thu, 30 May 2024 04:35:52 GMT
 LABEL org.opencontainers.image.version=23.10
-# Mon, 29 Apr 2024 16:05:59 GMT
-ADD file:36a9fb96170feb2e8bb6dfda0793b5f7069593502c61024a6ed3d84eb01afdaf in / 
-# Mon, 29 Apr 2024 16:05:59 GMT
+# Thu, 30 May 2024 04:35:58 GMT
+ADD file:5aa23d80e542b577797d50ebc7e42a4293a8387e071f3acf47dd1c4232e3463b in / 
+# Thu, 30 May 2024 04:35:59 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:f0fe43babe382dda04daea3eee6f3cad8ebf71da7df35af926aeaa07b253b2d8`  
-		Last Modified: Mon, 29 Apr 2024 16:18:55 GMT  
-		Size: 24.9 MB (24888998 bytes)  
+	-	`sha256:02bc623595c9855bd7f40991602742e9c62515b4c2d290f04f6bb9cbc72f4eb6`  
+		Last Modified: Thu, 30 May 2024 04:52:52 GMT  
+		Size: 24.9 MB (24889640 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:mantic` - linux; arm64 variant v8
