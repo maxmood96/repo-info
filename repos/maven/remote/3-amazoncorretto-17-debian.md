@@ -1,7 +1,7 @@
 ## `maven:3-amazoncorretto-17-debian`
 
 ```console
-$ docker pull maven@sha256:e6d892a2b3181c29c69e24786b3b5321f1227b2147a5480837f9bdb9f563a912
+$ docker pull maven@sha256:3e8fbda74a22a9f679113145a19a4c732299891d11e2e7bbf1596dbb58721bfd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -90,13 +90,13 @@ CMD ["mvn"]
 ### `maven:3-amazoncorretto-17-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:0e25b7cefa82ea390b45516f9828c1da038fca445ed926b34a88884ccf9ad290
+$ docker pull maven@sha256:844e9f79b2ecc949ee38251a065aa824aae9ce8922d32574c617a07df86399dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **235.2 MB (235201190 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:41b697e18e141e597e39485dac1859b407c27d20572f1665e6a62ada07bedf26`
+-	Image ID: `sha256:154d0d70ec0fea7ffdc9cafef5aa1298baca0eb41e074ce2aca9a3f4669b6a4c`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
