@@ -1,7 +1,7 @@
 ## `xwiki:stable-postgres`
 
 ```console
-$ docker pull xwiki@sha256:aef6e12ff06f498de99c6041d4f1c38dedc8d736bd6d9c4230a5ce9cc31e9199
+$ docker pull xwiki@sha256:cb9899aa87cbce5a940f45e57a0c61a716f184ca52e73f85e8607965a4001cc7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -230,28 +230,28 @@ $ docker pull xwiki@sha256:9859a32d3670682b116d52e8515e0a319b1d835f76bfea7b9199d
 ### `xwiki:stable-postgres` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:46fb84a775442dfc4bcbb7818b949f1de74964bab443fb6caebf2298eb7849b7
+$ docker pull xwiki@sha256:c9a0f880187a09aff9b835d18ae992ceb0db1c1addfeee6849f670a01f0a1747
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **570.3 MB (570322158 bytes)**  
+-	Total Size: **570.3 MB (570326598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:745af6cac661e0b9362ce59afc76d0f6565dbe5fcac760c70cc6338c83c72698`
+-	Image ID: `sha256:50478a250bf3a42eee585b97bcd238810a25ee18842ad69484e218eef202873c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
 ```dockerfile
-# Sat, 27 Apr 2024 14:32:22 GMT
+# Thu, 30 May 2024 07:53:53 GMT
 ARG RELEASE
-# Sat, 27 Apr 2024 14:32:22 GMT
+# Thu, 30 May 2024 07:53:53 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sat, 27 Apr 2024 14:32:22 GMT
+# Thu, 30 May 2024 07:53:53 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sat, 27 Apr 2024 14:32:23 GMT
+# Thu, 30 May 2024 07:53:53 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sat, 27 Apr 2024 14:32:33 GMT
-ADD file:18035d0a8c59e3306bad4219c71a52b03397fc8f231baf7f676287c73024d85c in / 
-# Sat, 27 Apr 2024 14:32:33 GMT
+# Thu, 30 May 2024 07:53:53 GMT
+ADD file:5f73ea0f53302f1771b6d2cb5650f715247ad02d80e986d67b2d55c22712f1ca in / 
+# Thu, 30 May 2024 07:53:53 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -271,37 +271,37 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 02 May 2024 07:35:19 GMT
+# Thu, 30 May 2024 07:53:53 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 02 May 2024 07:35:19 GMT
+# Thu, 30 May 2024 07:53:53 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 May 2024 07:35:19 GMT
+# Thu, 30 May 2024 07:53:53 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 02 May 2024 07:35:19 GMT
+# Thu, 30 May 2024 07:53:53 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 02 May 2024 07:35:19 GMT
+# Thu, 30 May 2024 07:53:53 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 02 May 2024 07:35:19 GMT
+# Thu, 30 May 2024 07:53:53 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 02 May 2024 07:37:25 GMT
+# Thu, 30 May 2024 07:53:53 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 02 May 2024 07:37:25 GMT
+# Thu, 30 May 2024 07:53:53 GMT
 ENV TOMCAT_MAJOR=9
-# Tue, 07 May 2024 23:20:59 GMT
+# Thu, 30 May 2024 07:53:53 GMT
 ENV TOMCAT_VERSION=9.0.89
-# Tue, 07 May 2024 23:20:59 GMT
+# Thu, 30 May 2024 07:53:53 GMT
 ENV TOMCAT_SHA512=aaa2851bdc7a2476b6793e95174965c1c861531f161d8a138e87f8532b1af4d4b3d92dd1ae890614a692e5f13fb2e6946a1ada888f21e9d7db1964616b4181f0
-# Tue, 07 May 2024 23:20:59 GMT
-COPY dir:b8a94ec840bab9d4d850a6a7ef270cb19e9c1b32145a4e7e11b2f30927118e58 in /usr/local/tomcat 
-# Tue, 07 May 2024 23:21:03 GMT
+# Thu, 30 May 2024 07:53:53 GMT
+COPY dir:58ad55bab575cab028cf8b426107fdedda2ac4d0f3638bd518c64d50c26f920e in /usr/local/tomcat 
+# Thu, 30 May 2024 07:53:53 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
-# Tue, 07 May 2024 23:21:04 GMT
+# Thu, 30 May 2024 07:53:53 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Tue, 07 May 2024 23:21:04 GMT
+# Thu, 30 May 2024 07:53:53 GMT
 EXPOSE 8080
-# Tue, 07 May 2024 23:21:04 GMT
+# Thu, 30 May 2024 07:53:53 GMT
 ENTRYPOINT []
-# Tue, 07 May 2024 23:21:04 GMT
+# Thu, 30 May 2024 07:53:53 GMT
 CMD ["catalina.sh" "run"]
 # Thu, 30 May 2024 07:53:53 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
@@ -354,91 +354,91 @@ CMD ["xwiki"]
 ```
 
 -	Layers:
-	-	`sha256:9b076355b79badd38bc5732aebeb48133934a0adae078e4a6bf52c7d9d7a4a82`  
-		Last Modified: Sun, 28 Apr 2024 01:56:19 GMT  
-		Size: 28.4 MB (28401184 bytes)  
+	-	`sha256:2741160b46783cff15aad1d825ac5be29d819aaa773f4270d133fb57683fbbd0`  
+		Last Modified: Mon, 03 Jun 2024 13:49:15 GMT  
+		Size: 28.4 MB (28402306 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d2472ac6840da0115175cae8b0be8d1b8c2b6b74acb5fc6bf185b0c9333b8a3`  
-		Last Modified: Thu, 02 May 2024 04:17:28 GMT  
-		Size: 12.8 MB (12847034 bytes)  
+	-	`sha256:1bd918abfec0657ade8aeeffe2722e92948e13fa403fd238ae22b1a9881e9402`  
+		Last Modified: Wed, 05 Jun 2024 04:55:01 GMT  
+		Size: 12.8 MB (12847839 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1725094f1f7082f023c1a047ec828bf8229f9aa4b95de8dfcf3433a5664a8625`  
-		Last Modified: Thu, 02 May 2024 04:20:25 GMT  
-		Size: 46.7 MB (46716197 bytes)  
+	-	`sha256:aa963c04773e39efb3eb3c080a80fe1bccbf8410a480f24229a7a06fc307c532`  
+		Last Modified: Wed, 05 Jun 2024 04:57:44 GMT  
+		Size: 46.7 MB (46716398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e995ccba802f11ec98d823c76df9fc769ae179b10b0a6b239f526dcd74f907aa`  
-		Last Modified: Thu, 02 May 2024 04:20:20 GMT  
-		Size: 158.0 B  
+	-	`sha256:382cfd76d96df44a0a5e200f1841a3fc8d1bdbfa5fb655a2f2795bc3b4e16ec3`  
+		Last Modified: Wed, 05 Jun 2024 04:57:38 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68d7fbbe7faa2fd420d969dafb00e3a6a0cc66074e4786e50e8c8b4f22e7f754`  
-		Last Modified: Thu, 02 May 2024 04:20:20 GMT  
-		Size: 731.0 B  
+	-	`sha256:f0792dc21c67221e401d3c4b78ebea1705a045fbcc6461558ac50bfbe911989a`  
+		Last Modified: Wed, 05 Jun 2024 04:57:38 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9666217ba41c0c5a6f7ace07c942c84f4762d6f14221dbbc651bc4aef8b0243d`  
-		Last Modified: Thu, 02 May 2024 07:45:00 GMT  
-		Size: 170.0 B  
+	-	`sha256:63d9376e25e5ba92936ed244a6a17f40e0e94193fe0dc8f60206086fbde34bd1`  
+		Last Modified: Wed, 05 Jun 2024 07:34:27 GMT  
+		Size: 138.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa318c02521aad75976eebafc1a135480719bf32cfe1e85c91c43535a1f2c137`  
-		Last Modified: Tue, 07 May 2024 23:30:38 GMT  
-		Size: 12.4 MB (12444605 bytes)  
+	-	`sha256:5691ecc99a8f77b5bbea731a32ed78a6cc766bfe44b2e3f4eeab129e2f2daf83`  
+		Last Modified: Wed, 05 Jun 2024 07:37:16 GMT  
+		Size: 12.4 MB (12444380 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e69e325416c906528142046036d641c4f764ca42dbb203daf7aac42870591e7`  
-		Last Modified: Tue, 07 May 2024 23:30:37 GMT  
-		Size: 455.6 KB (455595 bytes)  
+	-	`sha256:3f1b63586cd37b618e234ed2a73da7b1c927b4c63791efcfdb630d22109cdedb`  
+		Last Modified: Wed, 05 Jun 2024 07:37:15 GMT  
+		Size: 456.8 KB (456815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:152c8d2caff2bed2338c1b405f807e72d6ab820ac3cedd1e6440ae4dc6c8ab34`  
-		Last Modified: Tue, 07 May 2024 23:30:36 GMT  
-		Size: 131.0 B  
+	-	`sha256:f0da359c1a7d5b25cd7c2be940e7d189a81733ec484209e3da051054b173bde3`  
+		Last Modified: Wed, 05 Jun 2024 07:37:15 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a8633695b838aae24e198ace66aa3fccfe663d8b19102c33445fb8e956f4ede`  
-		Last Modified: Wed, 29 May 2024 04:08:51 GMT  
-		Size: 174.4 MB (174425058 bytes)  
+	-	`sha256:345a9caf50392be2f1c84bb828ce40eafb06b52ebe676aba3304eda51483d4e6`  
+		Last Modified: Wed, 05 Jun 2024 18:24:27 GMT  
+		Size: 174.4 MB (174426356 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12a21c03186bae1bdc3a7bfef4f10c4a37732a12e5f8da132d1502dfcdc8bfd4`  
-		Last Modified: Thu, 30 May 2024 22:37:31 GMT  
-		Size: 294.0 MB (294006552 bytes)  
+	-	`sha256:5cd638a3734fec63efdc8021efe11821183ab640ce2b93b762e3fe579a383a76`  
+		Last Modified: Wed, 05 Jun 2024 18:24:30 GMT  
+		Size: 294.0 MB (294006598 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7cefa4625403953598ecb58ca6ba580542af36a2358042e9403e08eb8a5f1f9`  
-		Last Modified: Thu, 30 May 2024 22:37:25 GMT  
-		Size: 1.0 MB (1011979 bytes)  
+	-	`sha256:aca9b8721a7d9111dbff0a27d5d849d7dbd6ffce80a3318aeb88dc04410042c3`  
+		Last Modified: Wed, 05 Jun 2024 18:24:23 GMT  
+		Size: 1.0 MB (1011977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e85538b2938db001ca1729ad1297376c9ca2dde327904e82011cd2c83d1144c6`  
-		Last Modified: Thu, 30 May 2024 22:37:24 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:f83d52071b5cbe70a502bc9394e1cdf07d065754c2ff555308df4b323470f2cb`  
+		Last Modified: Wed, 05 Jun 2024 18:24:22 GMT  
+		Size: 1.3 KB (1345 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a4a75ad9eecd61c24df483e81c4861afc9a1888a76b6c9821502edce1115a27`  
-		Last Modified: Thu, 30 May 2024 22:37:24 GMT  
-		Size: 2.5 KB (2462 bytes)  
+	-	`sha256:307e9523582ecce94f4e65cef1405e07fa83296b365a685c3672b1e33824bb76`  
+		Last Modified: Wed, 05 Jun 2024 18:24:23 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26b1b1a11d50eb595416cbedd034e45bf35379c44a24db0a0bf67ebb75120dd8`  
-		Last Modified: Thu, 30 May 2024 22:37:25 GMT  
+	-	`sha256:9de7d723f0bd0ecb2d418c6722210c0bcbb2e09f1076a4f808527f70a313124a`  
+		Last Modified: Wed, 05 Jun 2024 18:24:24 GMT  
 		Size: 6.5 KB (6521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74161da10a0a7348204833fef39238a7ed8bf3d586cb79e843427a0842b4c6da`  
-		Last Modified: Thu, 30 May 2024 22:37:25 GMT  
-		Size: 2.4 KB (2437 bytes)  
+	-	`sha256:bdd4ed0ee778c8b25876c6534a40fa0efb26f86ce134c92885eb7e0af51adf4b`  
+		Last Modified: Wed, 05 Jun 2024 18:24:25 GMT  
+		Size: 2.4 KB (2439 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:stable-postgres` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:d447364de29d120a6270b11fb6e237a8785d82fe47495dfb48ecaf174c36daf9
+$ docker pull xwiki@sha256:cd3d55b2155531fb462b536021f5d89f97849330cc5cb809d5eedbf0d74cb740
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.9 MB (8935486 bytes)**  
+-	Total Size: **8.9 MB (8935485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86a85911d22e50707582916fc3e0d681a4c0722aa40df6aebe1675b43cca1767`
+-	Image ID: `sha256:5a69f612085e27189cf567bcbb58aff7014fde8c648be14a05b10a12ef0e8a7c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5fdb4574b3f6819aa550928f44a8ace22d760b8b35d507e01e04f237a27f3496`  
-		Last Modified: Thu, 30 May 2024 22:37:24 GMT  
-		Size: 8.9 MB (8894831 bytes)  
+	-	`sha256:066cdf2eab37be0505908d3b58008d7b82b8770835e8715929b04083000280ed`  
+		Last Modified: Wed, 05 Jun 2024 18:24:23 GMT  
+		Size: 8.9 MB (8894830 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f3db5e698b09a18e12223e6b83e703257dfad545c65e12643ac888fd5b35177a`  
-		Last Modified: Thu, 30 May 2024 22:37:24 GMT  
+	-	`sha256:174b0450e6d715842b19299b6095e48573da6cef5c49b16ab4d62abb12842959`  
+		Last Modified: Wed, 05 Jun 2024 18:24:22 GMT  
 		Size: 40.7 KB (40655 bytes)  
 		MIME: application/vnd.in-toto+json
