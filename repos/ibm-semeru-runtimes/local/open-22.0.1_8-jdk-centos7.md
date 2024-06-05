@@ -1,10 +1,10 @@
-# `ibm-semeru-runtimes:open-8u402-b06-jdk-centos7`
+# `ibm-semeru-runtimes:open-22.0.1_8-jdk-centos7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3114147a37e1b4d95abfb38a20f6348ed6620f098553f377aede1ae6fab54a1e`
-- Created: `2024-02-14T20:52:05.237309014Z`
-- Virtual Size: ~ 487.48 Mb  
+- Image ID: `sha256:fd117489844de3410c688de4de9e88e9ae7bc776da3f96dcd7afb6c8c89f7953`
+- Created: `2024-06-05T00:51:10.214049067Z`
+- Virtual Size: ~ 646.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u402-b06_openj9-0.43.0`
+  - `JAVA_VERSION=jdk-22.0.1+8_openj9-0.45.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
 - Labels:
@@ -117,15 +117,15 @@ $ dnf --quiet download --source --url bzip2-libs-1.0.6-13.el7
 http://vault.centos.org/centos/7/os/Source/SPackages/bzip2-1.0.6-13.el7.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2020.2.41-70.0.el7_8.noarch`
+### `rpm` package: `ca-certificates-2023.2.60_v7.0.306-72.el7_9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ca-certificates-2020.2.41-70.0.el7_8.noarch
-http://vault.centos.org/centos/7/os/Source/SPackages/ca-certificates-2020.2.41-70.0.el7_8.src.rpm
+$ dnf --quiet download --source --url ca-certificates-2023.2.60_v7.0.306-72.el7_9.noarch
+http://vault.centos.org/centos/7/updates/Source/SPackages/ca-certificates-2023.2.60_v7.0.306-72.el7_9.src.rpm
 ```
 
 ### `rpm` package: `centos-release-7-9.2009.0.el7.centos.x86_64`
@@ -205,15 +205,15 @@ $ dnf --quiet download --source --url cryptsetup-libs-2.0.3-6.el7
 http://vault.centos.org/centos/7/os/Source/SPackages/cryptsetup-2.0.3-6.el7.src.rpm
 ```
 
-### `rpm` package: `curl-7.29.0-59.el7_9.1.x86_64`
+### `rpm` package: `curl-7.29.0-59.el7_9.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url curl-7.29.0-59.el7_9.1
-http://vault.centos.org/centos/7/updates/Source/SPackages/curl-7.29.0-59.el7_9.1.src.rpm
+$ dnf --quiet download --source --url curl-7.29.0-59.el7_9.2
+http://vault.centos.org/centos/7/updates/Source/SPackages/curl-7.29.0-59.el7_9.2.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.26-23.el7.x86_64`
@@ -574,15 +574,15 @@ $ dnf --quiet download --source --url grep-2.20-3.el7
 http://vault.centos.org/centos/7/os/Source/SPackages/grep-2.20-3.el7.src.rpm
 ```
 
-### `rpm` package: `gzip-1.5-10.el7.x86_64`
+### `rpm` package: `gzip-1.5-11.el7_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gzip-1.5-10.el7
-http://vault.centos.org/centos/7/os/Source/SPackages/gzip-1.5-10.el7.src.rpm
+$ dnf --quiet download --source --url gzip-1.5-11.el7_9
+http://vault.centos.org/centos/7/updates/Source/SPackages/gzip-1.5-11.el7_9.src.rpm
 ```
 
 ### `rpm` package: `hardlink-1.0-19.el7.x86_64`
@@ -773,15 +773,15 @@ $ dnf --quiet download --source --url libcom_err-1.42.9-19.el7
 http://vault.centos.org/centos/7/os/Source/SPackages/e2fsprogs-1.42.9-19.el7.src.rpm
 ```
 
-### `rpm` package: `libcurl-7.29.0-59.el7_9.1.x86_64`
+### `rpm` package: `libcurl-7.29.0-59.el7_9.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcurl-7.29.0-59.el7_9.1
-http://vault.centos.org/centos/7/updates/Source/SPackages/curl-7.29.0-59.el7_9.1.src.rpm
+$ dnf --quiet download --source --url libcurl-7.29.0-59.el7_9.2
+http://vault.centos.org/centos/7/updates/Source/SPackages/curl-7.29.0-59.el7_9.2.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.21-25.el7.x86_64`
@@ -1204,26 +1204,26 @@ $ dnf --quiet download --source --url openldap-2.4.44-22.el7
 http://vault.centos.org/centos/7/os/Source/SPackages/openldap-2.4.44-22.el7.src.rpm
 ```
 
-### `rpm` package: `openssl-1.0.2k-21.el7_9.x86_64`
+### `rpm` package: `openssl-1.0.2k-26.el7_9.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-1.0.2k-21.el7_9
-http://vault.centos.org/centos/7/updates/Source/SPackages/openssl-1.0.2k-21.el7_9.src.rpm
+$ dnf --quiet download --source --url openssl-1.0.2k-26.el7_9
+http://vault.centos.org/centos/7/updates/Source/SPackages/openssl-1.0.2k-26.el7_9.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-1.0.2k-21.el7_9.x86_64`
+### `rpm` package: `openssl-libs-1.0.2k-26.el7_9.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-libs-1.0.2k-21.el7_9
-http://vault.centos.org/centos/7/updates/Source/SPackages/openssl-1.0.2k-21.el7_9.src.rpm
+$ dnf --quiet download --source --url openssl-libs-1.0.2k-26.el7_9
+http://vault.centos.org/centos/7/updates/Source/SPackages/openssl-1.0.2k-26.el7_9.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-0.23.5-3.el7.x86_64`
@@ -1622,15 +1622,15 @@ $ dnf --quiet download --source --url tar-1.26-35.el7
 http://vault.centos.org/centos/7/os/Source/SPackages/tar-1.26-35.el7.src.rpm
 ```
 
-### `rpm` package: `tzdata-2021a-1.el7.noarch`
+### `rpm` package: `tzdata-2024a-1.el7.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2021a-1.el7.noarch
-http://vault.centos.org/centos/7/updates/Source/SPackages/tzdata-2021a-1.el7.src.rpm
+$ dnf --quiet download --source --url tzdata-2024a-1.el7.noarch
+http://vault.centos.org/centos/7/updates/Source/SPackages/tzdata-2024a-1.el7.src.rpm
 ```
 
 ### `rpm` package: `ustr-1.0.4-16.el7.x86_64`
