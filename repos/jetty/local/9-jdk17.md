@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e77d89cdecba31c3476da328967304577a428c8fde42a341aa258c665f770227`
-- Created: `2024-05-02T06:11:52.151438587Z`
+- Image ID: `sha256:5cf5aa318f9fb58fac13116b23506fa82f64258aa8867bff73e7d75e7fb0cde7`
+- Created: `2024-06-05T08:34:35.907038246Z`
 - Virtual Size: ~ 424.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -648,22 +648,27 @@ $ apt-get source -qq --print-uris gcc-10=10.5.0-1ubuntu1~20.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.5.0-1ubuntu1%7e20.04.debian.tar.xz' gcc-10_10.5.0-1ubuntu1~20.04.debian.tar.xz 5953836 SHA512:d68b8b10628bec39c370c9af1baa39bd76f3fb885d765b2d449435981ab772443187cba3bcb629e69a4a7c4b1e890babc4ea9ed8a3a3eb9a8e7e1e76abb8b526
 ```
 
-### `dpkg` source package: `glibc=2.31-0ubuntu9.15`
+### `dpkg` source package: `glibc=2.31-0ubuntu9.16`
 
 Binary Packages:
 
-- `libc-bin=2.31-0ubuntu9.15`
-- `libc6:amd64=2.31-0ubuntu9.15`
-- `locales=2.31-0ubuntu9.15`
+- `libc-bin=2.31-0ubuntu9.16`
+- `libc6:amd64=2.31-0ubuntu9.16`
+- `locales=2.31-0ubuntu9.16`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.16
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.16.dsc' glibc_2.31-0ubuntu9.16.dsc 9585 SHA512:30e3507d4fe12a3fbd7c00b8ba3f051288f06502c204e9fe6a027be38587a61be8344d4875685cdf7920e54f811a945605aa1a8c11a068c2c71dba8892832d75
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.16.debian.tar.xz' glibc_2.31-0ubuntu9.16.debian.tar.xz 890412 SHA512:663f45bed9dd4829df3ff958c0daf0acf367270c39efa039694c18d17d459e02c4cb5ed1bbd2a290545d7ea29f2ac24ad9a7af3ef9537fa4901879b8899d70bb
+```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4ubuntu0.1`
 
