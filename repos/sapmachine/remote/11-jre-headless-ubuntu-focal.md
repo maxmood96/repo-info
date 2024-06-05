@@ -1,7 +1,7 @@
 ## `sapmachine:11-jre-headless-ubuntu-focal`
 
 ```console
-$ docker pull sapmachine@sha256:eeded4e068d00bd1474e70439a3bc7dfaa3644cbde3296de90b9d09494c3d65e
+$ docker pull sapmachine@sha256:08639b5c82a91517d2467b0725c8fbd8936f8bf4b3551242bbbb95e37f54b40b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,89 +13,89 @@ $ docker pull sapmachine@sha256:eeded4e068d00bd1474e70439a3bc7dfaa3644cbde3296de
 ### `sapmachine:11-jre-headless-ubuntu-focal` - linux; amd64
 
 ```console
-$ docker pull sapmachine@sha256:b64819d9b73b8088fc7112c19907c626bf14ea52e8102ec1feb58a1fc3c19808
+$ docker pull sapmachine@sha256:aaaf7a92af82a45e4be2a99add94a17e13449fb64647065d3f6b7a558a00484e
 ```
 
--	Docker Version: 20.10.23
+-	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.9 MB (76871572 bytes)**  
+-	Total Size: **76.9 MB (76871539 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:834c21e3ccd50d2d87a6b9912799f244ccb839e5cc9b6810f31a89b3aa2f4417`
+-	Image ID: `sha256:27793e07104441553f9d246195a655376a9fed37150c4b44c083f47c95b3e13f`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Sat, 27 Apr 2024 14:03:39 GMT
+# Mon, 03 Jun 2024 17:10:41 GMT
 ARG RELEASE
-# Sat, 27 Apr 2024 14:03:39 GMT
+# Mon, 03 Jun 2024 17:10:41 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sat, 27 Apr 2024 14:03:39 GMT
+# Mon, 03 Jun 2024 17:10:41 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sat, 27 Apr 2024 14:03:39 GMT
+# Mon, 03 Jun 2024 17:10:41 GMT
 LABEL org.opencontainers.image.version=20.04
-# Sat, 27 Apr 2024 14:03:41 GMT
-ADD file:e5742fae181dc02a419e48d202fdd6a561b79ccbe7d3415e15e3d2c12e444a2a in / 
-# Sat, 27 Apr 2024 14:03:41 GMT
+# Mon, 03 Jun 2024 17:10:43 GMT
+ADD file:e7cff353f027ecf0a2cb1cdd51714de3b083a11a0d965f104489f9a7e6925056 in / 
+# Mon, 03 Jun 2024 17:10:43 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2024 22:34:36 GMT
+# Wed, 05 Jun 2024 07:04:20 GMT
 RUN apt-get update     && apt-get -y --no-install-recommends install ca-certificates gnupg     && export GNUPGHOME="$(mktemp -d)"     && gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/sapmachine.gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys CACB9FE09150307D1D22D82962754C3B3ABCFE23     && chmod 644 /etc/apt/trusted.gpg.d/sapmachine.gpg     && echo "deb http://dist.sapmachine.io/debian/$(dpkg --print-architecture)/ ./" > /etc/apt/sources.list.d/sapmachine.list     && apt-get update     && apt-get -y --no-install-recommends install sapmachine-11-jre-headless=11.0.23     && apt-get remove -y --purge --autoremove ca-certificates gnupg     && rm -rf "$GNUPGHOME" /var/lib/apt/lists/*
-# Wed, 15 May 2024 22:34:36 GMT
+# Wed, 05 Jun 2024 07:04:21 GMT
 ENV JAVA_HOME=/usr/lib/jvm/sapmachine-11
-# Wed, 15 May 2024 22:34:36 GMT
+# Wed, 05 Jun 2024 07:04:21 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:c83baea2d576c50e5cabbc3c34a47fbbbbd18a9230362ba713d603c9686181fb`  
-		Last Modified: Sat, 27 Apr 2024 19:03:26 GMT  
-		Size: 28.6 MB (28584299 bytes)  
+	-	`sha256:560c024910bebac6b404791af28ebd48a8289303b8377d17b67ffdfe52754f2a`  
+		Last Modified: Mon, 03 Jun 2024 18:06:06 GMT  
+		Size: 28.6 MB (28584223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b51f212446d572edb057a530f545332274c661a87cd398bfa000ce0028dea3c`  
-		Last Modified: Wed, 15 May 2024 22:40:21 GMT  
-		Size: 48.3 MB (48287273 bytes)  
+	-	`sha256:4f366225e4d9e7a7913ef4b93020b73f38ed319ef8aa7e2e33382b9241b56db2`  
+		Last Modified: Wed, 05 Jun 2024 07:28:37 GMT  
+		Size: 48.3 MB (48287316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `sapmachine:11-jre-headless-ubuntu-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull sapmachine@sha256:a909db83dbad6494fae629aacbbab605d22ac3054f2040eefcdcbf1164dc04be
+$ docker pull sapmachine@sha256:8d2c7408afbc320506d1791fa496c66abf6d491233c95720c8be1cf07446da8b
 ```
 
--	Docker Version: 20.10.23
+-	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.8 MB (74819644 bytes)**  
+-	Total Size: **74.8 MB (74818076 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:778fd30537b3dd47cee2aeb33874725b753130426a288178ade5379f07dbb0eb`
+-	Image ID: `sha256:ff5a2d63f021ee748cd4f4eb89f4f3f68e46dca56857a80721e0099510f5b5c9`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Sat, 27 Apr 2024 14:42:15 GMT
+# Mon, 03 Jun 2024 16:52:57 GMT
 ARG RELEASE
-# Sat, 27 Apr 2024 14:42:15 GMT
+# Mon, 03 Jun 2024 16:52:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sat, 27 Apr 2024 14:42:15 GMT
+# Mon, 03 Jun 2024 16:52:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sat, 27 Apr 2024 14:42:15 GMT
+# Mon, 03 Jun 2024 16:52:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Sat, 27 Apr 2024 14:42:24 GMT
-ADD file:d1a4a31f5a3aea1e130c7e173da2ed506ba19e91be74ab9700d398774d0ace22 in / 
-# Sat, 27 Apr 2024 14:42:24 GMT
+# Mon, 03 Jun 2024 16:52:59 GMT
+ADD file:6d8cc056ee741f09a6c7d965d8e2027d80ed2eccbfb0312593ce52d9256db437 in / 
+# Mon, 03 Jun 2024 16:52:59 GMT
 CMD ["/bin/bash"]
-# Wed, 15 May 2024 22:57:10 GMT
+# Wed, 05 Jun 2024 06:45:58 GMT
 RUN apt-get update     && apt-get -y --no-install-recommends install ca-certificates gnupg     && export GNUPGHOME="$(mktemp -d)"     && gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/sapmachine.gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys CACB9FE09150307D1D22D82962754C3B3ABCFE23     && chmod 644 /etc/apt/trusted.gpg.d/sapmachine.gpg     && echo "deb http://dist.sapmachine.io/debian/$(dpkg --print-architecture)/ ./" > /etc/apt/sources.list.d/sapmachine.list     && apt-get update     && apt-get -y --no-install-recommends install sapmachine-11-jre-headless=11.0.23     && apt-get remove -y --purge --autoremove ca-certificates gnupg     && rm -rf "$GNUPGHOME" /var/lib/apt/lists/*
-# Wed, 15 May 2024 22:57:11 GMT
+# Wed, 05 Jun 2024 06:45:58 GMT
 ENV JAVA_HOME=/usr/lib/jvm/sapmachine-11
-# Wed, 15 May 2024 22:57:11 GMT
+# Wed, 05 Jun 2024 06:45:58 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:83049506c6eb6b11ef1a8774b3486a01a1804f7d13bd230b44788bc63248282d`  
-		Last Modified: Mon, 29 Apr 2024 19:12:05 GMT  
-		Size: 27.2 MB (27206145 bytes)  
+	-	`sha256:8cddf7b9c8a772efac198a7ae8bdfe15df2e065bb85f15cb8a223f6b3a2dbf9c`  
+		Last Modified: Tue, 04 Jun 2024 16:08:03 GMT  
+		Size: 27.2 MB (27205244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a236a1a1692898d46bc7a98a0a1de3397537682386f8ce077a9052d6eba084ee`  
-		Last Modified: Wed, 15 May 2024 23:03:06 GMT  
-		Size: 47.6 MB (47613499 bytes)  
+	-	`sha256:e32a74976773fcde9bb9e86e6564f25b46c69d130caf2d44e4469f2961696d94`  
+		Last Modified: Wed, 05 Jun 2024 07:08:03 GMT  
+		Size: 47.6 MB (47612832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `sapmachine:11-jre-headless-ubuntu-focal` - linux; ppc64le
