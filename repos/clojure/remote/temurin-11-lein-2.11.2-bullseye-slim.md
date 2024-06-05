@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-lein-2.11.2-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:cd267ebb9fb2de134ec986cb82d51d78c1378d8c923af7c4336c6412ef9615cb
+$ docker pull clojure@sha256:559e2ab29caf724784771396f86b4aa42609a8f6f3e32ee73884ee4377df2ccf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull clojure@sha256:cd267ebb9fb2de134ec986cb82d51d78c1378d8c923af7c4336
 ### `clojure:temurin-11-lein-2.11.2-bullseye-slim` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:cf1810e43851011355ccf48a772b555e9f0d723124808832e59a7a4b90b5940e
+$ docker pull clojure@sha256:12cfa8028edebd04fa227c18a85d6afdc4db19934428cab9526fa2bd72bb2836
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **196.2 MB (196196138 bytes)**  
+-	Total Size: **196.2 MB (196196457 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:61c1cf4c4ebbef33aa97dc7810bcdbfce957ee002343547df4013f70403e9aeb`
+-	Image ID: `sha256:e4ce7c574130e7f9647270521d847cf31511755e61fab31f131dd0b33b8a6257`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -57,44 +57,44 @@ CMD ["lein" "repl"]
 		Last Modified: Tue, 14 May 2024 01:33:11 GMT  
 		Size: 31.4 MB (31433931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0051e37ea87f46ec9a23ca18770dc1145a5bc3b7c4162bca01ec3cd4bd4a31ce`  
-		Last Modified: Wed, 29 May 2024 19:57:07 GMT  
-		Size: 145.5 MB (145504827 bytes)  
+	-	`sha256:199889205b89716ffee2cadaf2f6c05ac735567ceeb83bd73c1a85b06f4a95db`  
+		Last Modified: Wed, 05 Jun 2024 06:10:45 GMT  
+		Size: 145.5 MB (145505222 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39b113c200ed30cff36894fb09a48d588ef8dbc44390458a37df0601f0688866`  
-		Last Modified: Wed, 29 May 2024 19:57:03 GMT  
-		Size: 14.9 MB (14859295 bytes)  
+	-	`sha256:ffe2fa83e6ea960954eab93dbb36a62528aafebfefc7f3c1856d6d69c0b00d70`  
+		Last Modified: Wed, 05 Jun 2024 06:10:42 GMT  
+		Size: 14.9 MB (14859255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58a75cd3bc423bd1a0f05050b8c8b22bfef386445256772d019e11273f24917b`  
-		Last Modified: Wed, 29 May 2024 19:57:01 GMT  
-		Size: 4.4 MB (4398053 bytes)  
+	-	`sha256:8160ad673e509cedc566f21a1631ce1a651f82c60f21e6a1baaae37c294f89ed`  
+		Last Modified: Wed, 05 Jun 2024 06:10:42 GMT  
+		Size: 4.4 MB (4398017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-2.11.2-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:54a64caf95baebfea7b9782bfbf4136ac4e0abe76acbf2e428bd2b90516f72b9
+$ docker pull clojure@sha256:06aede4fa2eece08e6a123b901110015c1e0e9632908673e65baf5cd38021fd6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2708534 bytes)**  
+-	Total Size: **2.7 MB (2708543 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24c0c1b80ee392ac3e2c435e4faadda475853d62604b005ae30edf8b06ad2fff`
+-	Image ID: `sha256:3c50611718e357457fa3a1e030ad3a39f2bec614eb5f4c2db8e1c837cd233b4a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:525610c370c3630b52b5600b78cf304b7de08780ae8abfebca4b5ba8010f5621`  
-		Last Modified: Wed, 29 May 2024 19:57:03 GMT  
-		Size: 2.7 MB (2692501 bytes)  
+	-	`sha256:a0b938bfd6eeb61d68b9e804d6575814ebcd3d6493590feb4405d6ac1aa2702f`  
+		Last Modified: Wed, 05 Jun 2024 06:10:42 GMT  
+		Size: 2.7 MB (2692510 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eea0fe3feb86e7718afcbbaa33a769fc4fd2a5536e0de5afcc36664dbab56f5a`  
-		Last Modified: Wed, 29 May 2024 19:57:02 GMT  
+	-	`sha256:e2dc90048e06d04a1145b1ecc4a24542e0dde032d0712839bdca69d92d8d544c`  
+		Last Modified: Wed, 05 Jun 2024 06:10:41 GMT  
 		Size: 16.0 KB (16033 bytes)  
 		MIME: application/vnd.in-toto+json
 
