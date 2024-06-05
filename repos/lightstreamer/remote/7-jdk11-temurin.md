@@ -1,7 +1,7 @@
 ## `lightstreamer:7-jdk11-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:f06471ae4962818eee2babf67867d2ddff005bb9b194eb689c8ac2c00fb8594a
+$ docker pull lightstreamer@sha256:4f6db8ad3178fd91541eb68cca0f1ea0aefd16b07348933bb1846f89e62daf53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -115,29 +115,29 @@ CMD ["./LS.sh" "run"]
 ### `lightstreamer:7-jdk11-temurin` - linux; arm64 variant v8
 
 ```console
-$ docker pull lightstreamer@sha256:9e33891f4b2f4dfc454ef35c0ba4c63af94130b36595400049166c590af313c7
+$ docker pull lightstreamer@sha256:4c8836eabf17d2859ce256167493de41621d134c810b14140fdcf217408df2b3
 ```
 
--	Docker Version: 20.10.23
+-	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **247.0 MB (246958196 bytes)**  
+-	Total Size: **247.0 MB (246961107 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:228681c40e8845473713917b5cce6816128b5076923ff2650c9b58bc2eb5d4b3`
+-	Image ID: `sha256:c0a495e234545478817b8e807827e94a56d91dd52dd9a2d75494b8abe23e5467`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Sat, 27 Apr 2024 14:32:22 GMT
+# Mon, 03 Jun 2024 10:30:07 GMT
 ARG RELEASE
-# Sat, 27 Apr 2024 14:32:22 GMT
+# Mon, 03 Jun 2024 10:30:07 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sat, 27 Apr 2024 14:32:22 GMT
+# Mon, 03 Jun 2024 10:30:07 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sat, 27 Apr 2024 14:32:23 GMT
+# Mon, 03 Jun 2024 10:30:07 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sat, 27 Apr 2024 14:32:33 GMT
-ADD file:18035d0a8c59e3306bad4219c71a52b03397fc8f231baf7f676287c73024d85c in / 
-# Sat, 27 Apr 2024 14:32:33 GMT
+# Mon, 03 Jun 2024 10:30:11 GMT
+ADD file:5f73ea0f53302f1771b6d2cb5650f715247ad02d80e986d67b2d55c22712f1ca in / 
+# Mon, 03 Jun 2024 10:30:12 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -159,58 +159,58 @@ COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 CMD ["jshell"]
-# Thu, 02 May 2024 07:06:17 GMT
+# Wed, 05 Jun 2024 09:16:57 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Thu, 02 May 2024 07:06:22 GMT
+# Wed, 05 Jun 2024 09:17:01 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Thu, 02 May 2024 07:06:23 GMT
+# Wed, 05 Jun 2024 09:17:03 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Thu, 02 May 2024 07:07:16 GMT
+# Wed, 05 Jun 2024 09:18:15 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.2
-# Thu, 02 May 2024 07:07:16 GMT
+# Wed, 05 Jun 2024 09:18:15 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.2/Lightstreamer-7.4.2.tar.gz
-# Thu, 02 May 2024 07:07:19 GMT
+# Wed, 05 Jun 2024 09:18:17 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Thu, 02 May 2024 07:07:19 GMT
+# Wed, 05 Jun 2024 09:18:17 GMT
 USER lightstreamer
-# Thu, 02 May 2024 07:07:19 GMT
+# Wed, 05 Jun 2024 09:18:17 GMT
 EXPOSE 8080
-# Thu, 02 May 2024 07:07:19 GMT
+# Wed, 05 Jun 2024 09:18:18 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Thu, 02 May 2024 07:07:19 GMT
+# Wed, 05 Jun 2024 09:18:18 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b076355b79badd38bc5732aebeb48133934a0adae078e4a6bf52c7d9d7a4a82`  
-		Last Modified: Sun, 28 Apr 2024 01:56:19 GMT  
-		Size: 28.4 MB (28401184 bytes)  
+	-	`sha256:2741160b46783cff15aad1d825ac5be29d819aaa773f4270d133fb57683fbbd0`  
+		Last Modified: Mon, 03 Jun 2024 13:49:15 GMT  
+		Size: 28.4 MB (28402306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d2472ac6840da0115175cae8b0be8d1b8c2b6b74acb5fc6bf185b0c9333b8a3`  
-		Last Modified: Thu, 02 May 2024 04:17:28 GMT  
-		Size: 12.8 MB (12847034 bytes)  
+	-	`sha256:1bd918abfec0657ade8aeeffe2722e92948e13fa403fd238ae22b1a9881e9402`  
+		Last Modified: Wed, 05 Jun 2024 04:55:01 GMT  
+		Size: 12.8 MB (12847839 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57e0e8dbe77354ae4322c793be6d479bf2968d7a89c33a1fa305f402462eba8d`  
-		Last Modified: Thu, 02 May 2024 04:18:41 GMT  
-		Size: 142.3 MB (142311142 bytes)  
+	-	`sha256:21492b0787d10be373783b9d71c914459399e0e6770a672139652d9bb5953aaa`  
+		Last Modified: Wed, 05 Jun 2024 04:56:08 GMT  
+		Size: 142.3 MB (142310916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26c2698f9483bfc599181902f9f470180ac5c9df9afa0cefb3e0b6561ed506b2`  
-		Last Modified: Thu, 02 May 2024 04:18:32 GMT  
-		Size: 175.0 B  
+	-	`sha256:9e3f21965791662327c4b2950438f7be57d818e4d74fc73a8f16edfb5bf294b3`  
+		Last Modified: Wed, 05 Jun 2024 04:55:59 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1600df7cb3218474629c2527afa2b3ee549558a582701c372c017e56f6529c3c`  
-		Last Modified: Thu, 02 May 2024 04:18:32 GMT  
-		Size: 731.0 B  
+	-	`sha256:e09f4206c277a3b830ae606dc69cb37addbad55b33c97fbf0af4ca823841b68d`  
+		Last Modified: Wed, 05 Jun 2024 04:55:59 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e4c0593187e1e52d152e9416596f53ccb637b33badba3d90221b8e7cf250af9`  
-		Last Modified: Thu, 02 May 2024 07:08:57 GMT  
-		Size: 3.6 MB (3573127 bytes)  
+	-	`sha256:e61611d09b965886d59ea61f24c7048798d7e7d3e52d79cd6401d5a6ad959e68`  
+		Last Modified: Wed, 05 Jun 2024 09:20:03 GMT  
+		Size: 3.6 MB (3574371 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de0cf6e32a47e2405bf95d2d11d653b066d66ad3b9ea0f8cce1603f85009377e`  
-		Last Modified: Thu, 02 May 2024 07:08:57 GMT  
-		Size: 2.4 KB (2400 bytes)  
+	-	`sha256:b2622fecfbb8875c798be2c538838e51cfb3fa2e909fd16c7e2b4688e7ede3cb`  
+		Last Modified: Wed, 05 Jun 2024 09:20:03 GMT  
+		Size: 2.4 KB (2363 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:835b8836ad7efb3a6226cea1f3c36a83a61012b423a61c289f3776c61f9e0c36`  
-		Last Modified: Thu, 02 May 2024 07:11:42 GMT  
-		Size: 59.8 MB (59822403 bytes)  
+	-	`sha256:5382cd0413f5c69d078718e0e34d10ce31f495e47cd0b484386ad9004c1d9ffb`  
+		Last Modified: Wed, 05 Jun 2024 09:22:30 GMT  
+		Size: 59.8 MB (59822404 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
