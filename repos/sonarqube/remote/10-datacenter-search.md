@@ -1,7 +1,7 @@
 ## `sonarqube:10-datacenter-search`
 
 ```console
-$ docker pull sonarqube@sha256:bd0e7d641f7e819adac7b977b3b3c8d25697945ee17624a4ab9e5ad219b27ce0
+$ docker pull sonarqube@sha256:9a167b408b2834b3a11cd61aef8a85721fa077924adb522a783b01b6f4874104
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,28 +14,28 @@ $ docker pull sonarqube@sha256:bd0e7d641f7e819adac7b977b3b3c8d25697945ee17624a4a
 ### `sonarqube:10-datacenter-search` - linux; amd64
 
 ```console
-$ docker pull sonarqube@sha256:8c82dc8617b7236d52c7e5551e621ec12af70314fc60f62eebfc4f1b96dccc66
+$ docker pull sonarqube@sha256:d3e380e4ffe0536456ef51038c6a0201349b8dc3466e09a9a5f4b31f03039c6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **683.3 MB (683287594 bytes)**  
+-	Total Size: **683.3 MB (683286460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab67f65eecf6d02a9962843587cc9f0c1373c7c4a789c480d3bc6464332d5a75`
+-	Image ID: `sha256:f4217a7a92244802a7df71d1fe500378a996b7cf77437a25e5e5d76cdb5f3df2`
 -	Entrypoint: `["\/opt\/sonarqube\/docker\/run.sh"]`
 -	Default Command: `["\/opt\/sonarqube\/docker\/sonar.sh"]`
 
 ```dockerfile
-# Sat, 27 Apr 2024 13:18:35 GMT
+# Tue, 30 Apr 2024 09:04:46 GMT
 ARG RELEASE
-# Sat, 27 Apr 2024 13:18:35 GMT
+# Tue, 30 Apr 2024 09:04:46 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sat, 27 Apr 2024 13:18:35 GMT
+# Tue, 30 Apr 2024 09:04:46 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sat, 27 Apr 2024 13:18:35 GMT
+# Tue, 30 Apr 2024 09:04:46 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sat, 27 Apr 2024 13:18:37 GMT
-ADD file:a5d32dc2ab15ff0d7dbd72af26e361eb1f3e87a0d29ec3a1ceab24ad7b3e6ba9 in / 
-# Sat, 27 Apr 2024 13:18:37 GMT
+# Tue, 30 Apr 2024 09:04:46 GMT
+ADD file:89847d76d242dea90ede05e9e1e13a1ff4400a65eafbe2d6e31e086c93893580 in / 
+# Tue, 30 Apr 2024 09:04:46 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -85,33 +85,33 @@ CMD ["/opt/sonarqube/docker/sonar.sh"]
 ```
 
 -	Layers:
-	-	`sha256:4a023cab5400feb5c1ab725beb8345ddb0e3200314004b56677a5eee2e8c86cf`  
-		Last Modified: Sat, 27 Apr 2024 20:07:18 GMT  
-		Size: 30.4 MB (30439649 bytes)  
+	-	`sha256:2ec76a50fe7c8d5db9ec25590b9217e14e3920513c6e7b5be55db72a16b55f7c`  
+		Last Modified: Fri, 31 May 2024 03:03:19 GMT  
+		Size: 30.4 MB (30439283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dce394e5c05f6275f1a3d93ef078caadf4c6e88066e708ffa5cea964ded0c3c2`  
-		Last Modified: Thu, 02 May 2024 01:15:30 GMT  
-		Size: 12.9 MB (12905606 bytes)  
+	-	`sha256:fab7f202453ac8b8def634e399240ab2bd7247e2f125fbddd2dbaaa8fa4ce555`  
+		Last Modified: Wed, 05 Jun 2024 04:58:06 GMT  
+		Size: 12.9 MB (12904817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e026920ea2a9fd70b5b270aaa34672572276e0d92b9da71ce0b58a571ade52c5`  
-		Last Modified: Thu, 02 May 2024 01:18:52 GMT  
-		Size: 47.3 MB (47256136 bytes)  
+	-	`sha256:ee59ca42def8dda96caccd58b671902e65195492ee8e5daa263e1e948033adc3`  
+		Last Modified: Wed, 05 Jun 2024 05:01:21 GMT  
+		Size: 47.3 MB (47256057 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70d0df997d9c75c7ce45795a94101aa9b3c64050bf0b5c2ef92ecb36cfa36cdf`  
-		Last Modified: Thu, 02 May 2024 01:18:46 GMT  
+	-	`sha256:2ce2282f972ff7152adb0a2c757ddd63cf0c38d489c7d7952d7aa88ab1804bc5`  
+		Last Modified: Wed, 05 Jun 2024 05:01:15 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c863a9ccf459944a17dfde7fb73751761675f48f9812eff6de4bc2a9aefbb151`  
-		Last Modified: Thu, 02 May 2024 01:18:46 GMT  
-		Size: 734.0 B  
+	-	`sha256:d2a9e456ba828f8cfc067a64b3717c10e4c0709fc1f0b95e5a5efd3ee816e643`  
+		Last Modified: Wed, 05 Jun 2024 05:01:15 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:576bcc19bc36bc50b49a03795144468bf405053fc37d78703508536dc842132f`  
-		Last Modified: Thu, 02 May 2024 01:52:13 GMT  
-		Size: 592.7 MB (592684448 bytes)  
+	-	`sha256:00fcaf1a6874298532577e9e7a1118578cbe379b20552a60450f365fa8ee8482`  
+		Last Modified: Wed, 05 Jun 2024 06:13:08 GMT  
+		Size: 592.7 MB (592684546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01f31a77a5af8305c6e20eafe5dcc7bec5634c332cbf581b1a43e1ae3bab7851`  
-		Last Modified: Thu, 02 May 2024 01:52:04 GMT  
-		Size: 830.0 B  
+	-	`sha256:3b045fd1d7a9f0ae79a68b6eca5135910e641298b921dd9ffffe9cbaffc726fe`  
+		Last Modified: Wed, 05 Jun 2024 06:12:54 GMT  
+		Size: 833.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -121,25 +121,25 @@ CMD ["/opt/sonarqube/docker/sonar.sh"]
 ### `sonarqube:10-datacenter-search` - unknown; unknown
 
 ```console
-$ docker pull sonarqube@sha256:7354424190640b5e9d681c8119833738e87f0d88ae2ce29a686379cac0daafcd
+$ docker pull sonarqube@sha256:be982fa1454a1cfca10375a72a060230f5216d4f223605d5300bd38666778cb2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.4 MB (4403328 bytes)**  
+-	Total Size: **4.4 MB (4402502 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:61db2ec86610cf25429db73d39956d726063de46b08c1c2b956a2db4de5276a5`
+-	Image ID: `sha256:d610b0fcc18951c49afba0a1abdbdbe616cd1d259c6b785416bcae9e4d87ba0d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca85ed9001b2d8cecc5890cf28ba7e71a982c498c6d6e023f522e7d0cabaf582`  
-		Last Modified: Thu, 02 May 2024 01:52:04 GMT  
-		Size: 4.4 MB (4384184 bytes)  
+	-	`sha256:c914ff81e601c559c2432a077b753d8a6eb3f724a41914c213029ccdadd2dacb`  
+		Last Modified: Wed, 05 Jun 2024 06:12:55 GMT  
+		Size: 4.4 MB (4384175 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c6991fb4f69840db4be24f73d81800caeb54e706e421c73a52171ce8ce4a5cac`  
-		Last Modified: Thu, 02 May 2024 01:52:04 GMT  
-		Size: 19.1 KB (19144 bytes)  
+	-	`sha256:8fcabbf81ef4ab3a64755f39c9c8a647d74e5e167debb81b92937190a10d7e0b`  
+		Last Modified: Wed, 05 Jun 2024 06:12:54 GMT  
+		Size: 18.3 KB (18327 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `sonarqube:10-datacenter-search` - linux; arm64 variant v8
