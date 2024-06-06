@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3a66677f1b021bf20bb0bd4536b94be25ae8564bb88782ceb1f5315ff2c33e8c`
-- Created: `2024-05-23T02:33:46.644113966Z`
-- Virtual Size: ~ 537.27 Mb  
+- Image ID: `sha256:5dd2e0a3c0afd55e67e8d76a2a94aece000268995d74e7a4d9e7f0e87fa79cdd`
+- Created: `2024-06-06T05:45:04.42182281Z`
+- Virtual Size: ~ 537.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -301,16 +301,16 @@ GPL-3.0-or-later
 ### `apk` package: `git`
 
 ```console
-git-2.45.1-r0 description:
+git-2.45.2-r0 description:
 Distributed version control system
 
-git-2.45.1-r0 webpage:
+git-2.45.2-r0 webpage:
 https://www.git-scm.com/
 
-git-2.45.1-r0 installed size:
-6480 KiB
+git-2.45.2-r0 installed size:
+6468 KiB
 
-git-2.45.1-r0 license:
+git-2.45.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -318,16 +318,16 @@ GPL-2.0-only
 ### `apk` package: `git-init-template`
 
 ```console
-git-init-template-2.45.1-r0 description:
+git-init-template-2.45.2-r0 description:
 Git init template directory
 
-git-init-template-2.45.1-r0 webpage:
+git-init-template-2.45.2-r0 webpage:
 https://www.git-scm.com/
 
-git-init-template-2.45.1-r0 installed size:
+git-init-template-2.45.2-r0 installed size:
 96 KiB
 
-git-init-template-2.45.1-r0 license:
+git-init-template-2.45.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -386,16 +386,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.1.32-r1 description:
+imagemagick-7.1.1.32-r2 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.1.32-r1 webpage:
+imagemagick-7.1.1.32-r2 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.1.32-r1 installed size:
-4356 KiB
+imagemagick-7.1.1.32-r2 installed size:
+4340 KiB
 
-imagemagick-7.1.1.32-r1 license:
+imagemagick-7.1.1.32-r2 license:
 ImageMagick
 
 ```
@@ -403,16 +403,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.1.32-r1 description:
+imagemagick-libs-7.1.1.32-r2 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.1.32-r1 webpage:
+imagemagick-libs-7.1.1.32-r2 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.1.32-r1 installed size:
+imagemagick-libs-7.1.1.32-r2 installed size:
 4168 KiB
 
-imagemagick-libs-7.1.1.32-r1 license:
+imagemagick-libs-7.1.1.32-r2 license:
 ImageMagick
 
 ```
