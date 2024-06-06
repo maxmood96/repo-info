@@ -1,16 +1,16 @@
-# `docker:26.1.3-dind-rootless`
+# `docker:26.1.4-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f6ce8bb15b8c6f875055ce8ee8ed72d1d4d223e71c31021b11045ba1533d4b42`
-- Created: `2024-05-16T16:36:41Z`
-- Virtual Size: ~ 416.21 Mb  
+- Image ID: `sha256:83cd7c00afdbfe9faa016e1226c441f7979f6c3343ef237de3de83e861a9e7cf`
+- Created: `2024-06-05T18:50:46Z`
+- Virtual Size: ~ 416.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=26.1.3`
+  - `DOCKER_VERSION=26.1.4`
   - `DOCKER_BUILDX_VERSION=0.14.1`
   - `DOCKER_COMPOSE_VERSION=2.27.1`
   - `DOCKER_TLS_CERTDIR=/certs`
@@ -344,16 +344,16 @@ GPL-2.0-only AND LGPL-2.1-only
 ### `apk` package: `git`
 
 ```console
-git-2.45.1-r0 description:
+git-2.45.2-r0 description:
 Distributed version control system
 
-git-2.45.1-r0 webpage:
+git-2.45.2-r0 webpage:
 https://www.git-scm.com/
 
-git-2.45.1-r0 installed size:
-6480 KiB
+git-2.45.2-r0 installed size:
+6468 KiB
 
-git-2.45.1-r0 license:
+git-2.45.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -361,16 +361,16 @@ GPL-2.0-only
 ### `apk` package: `git-init-template`
 
 ```console
-git-init-template-2.45.1-r0 description:
+git-init-template-2.45.2-r0 description:
 Git init template directory
 
-git-init-template-2.45.1-r0 webpage:
+git-init-template-2.45.2-r0 webpage:
 https://www.git-scm.com/
 
-git-init-template-2.45.1-r0 installed size:
+git-init-template-2.45.2-r0 installed size:
 96 KiB
 
-git-init-template-2.45.1-r0 license:
+git-init-template-2.45.2-r0 license:
 GPL-2.0-only
 
 ```
