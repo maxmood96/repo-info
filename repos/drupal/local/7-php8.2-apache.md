@@ -1,10 +1,10 @@
-# `drupal:7.100-php8.2-apache-bookworm`
+# `drupal:7.101-php8.2-apache-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:121a593e628f2c95b920fc1b33d493eff6f3beeff532d1c6e984697d9d25164e`
-- Created: `2024-04-05T21:55:18Z`
-- Virtual Size: ~ 521.63 Mb  
+- Image ID: `sha256:b7ecaa5af7a9db8b50223ee17202602b843730da6a4234ebd2ca61e9f1649b63`
+- Created: `2024-06-05T22:17:43Z`
+- Virtual Size: ~ 521.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -23,9 +23,9 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.2.19.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.19.tar.xz.asc`
   - `PHP_SHA256=aecd63f3ebea6768997f5c4fccd98acbf897762ed5fc25300e846197a9485c13`
-  - `DRUPAL_VERSION=7.100`
-  - `DRUPAL_URL=https://ftp.drupal.org/files/projects/drupal-7.100.tar.gz`
-  - `DRUPAL_MD5=e1e0963944555bee14bf54af5467192a`
+  - `DRUPAL_VERSION=7.101`
+  - `DRUPAL_URL=https://ftp.drupal.org/files/projects/drupal-7.101.tar.gz`
+  - `DRUPAL_MD5=ddcd8cb4e885ae865a3d1a8b06707a67`
 
 ## `dpkg` (`.deb`-based packages)
 

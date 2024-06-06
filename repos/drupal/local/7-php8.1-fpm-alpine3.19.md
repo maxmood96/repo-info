@@ -1,10 +1,10 @@
-# `drupal:7.100-php8.1-fpm-alpine3.19`
+# `drupal:7.101-php8.1-fpm-alpine3.19`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d64a8483eaf50f8f1814604da6ecc56e0e11d3a57f7027c35ec0a21909905740`
-- Created: `2024-03-06T16:28:12Z`
-- Virtual Size: ~ 102.43 Mb  
+- Image ID: `sha256:9823a0ba9561935b2d44a7f8f1ce7e1582d22ba14d6d87677a9aacd6ccb3ce12`
+- Created: `2024-06-05T22:17:43Z`
+- Virtual Size: ~ 101.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,9 +21,9 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.1.28.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.28.tar.xz.asc`
   - `PHP_SHA256=95d0b2e9466108fd750dab5c30a09e5c67f5ad2cb3b1ffb3625a038a755ad080`
-  - `DRUPAL_VERSION=7.100`
-  - `DRUPAL_URL=https://ftp.drupal.org/files/projects/drupal-7.100.tar.gz`
-  - `DRUPAL_MD5=e1e0963944555bee14bf54af5467192a`
+  - `DRUPAL_VERSION=7.101`
+  - `DRUPAL_URL=https://ftp.drupal.org/files/projects/drupal-7.101.tar.gz`
+  - `DRUPAL_MD5=ddcd8cb4e885ae865a3d1a8b06707a67`
 
 ## `apk` (`.apk`-based packages)
 
@@ -183,16 +183,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20230506-r0 description:
+ca-certificates-20240226-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20230506-r0 webpage:
+ca-certificates-20240226-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20230506-r0 installed size:
-688 KiB
+ca-certificates-20240226-r0 installed size:
+712 KiB
 
-ca-certificates-20230506-r0 license:
+ca-certificates-20240226-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -319,16 +319,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r6 description:
+libcrypto3-3.1.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r6 webpage:
+libcrypto3-3.1.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r6 installed size:
-4500 KiB
+libcrypto3-3.1.5-r0 installed size:
+4512 KiB
 
-libcrypto3-3.1.4-r6 license:
+libcrypto3-3.1.5-r0 license:
 Apache-2.0
 
 ```
@@ -438,16 +438,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-16.2-r0 description:
+libpq-16.3-r0 description:
 PostgreSQL client library
 
-libpq-16.2-r0 webpage:
+libpq-16.3-r0 webpage:
 https://www.postgresql.org/
 
-libpq-16.2-r0 installed size:
+libpq-16.3-r0 installed size:
 328 KiB
 
-libpq-16.2-r0 license:
+libpq-16.3-r0 license:
 PostgreSQL
 
 ```
@@ -489,16 +489,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r6 description:
+libssl3-3.1.5-r0 description:
 SSL shared libraries
 
-libssl3-3.1.4-r6 webpage:
+libssl3-3.1.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r6 installed size:
+libssl3-3.1.5-r0 installed size:
 548 KiB
 
-libssl3-3.1.4-r6 license:
+libssl3-3.1.5-r0 license:
 Apache-2.0
 
 ```
@@ -540,16 +540,16 @@ BSD-3-Clause
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.11.7-r0 description:
+libxml2-2.11.8-r0 description:
 XML parsing library, version 2
 
-libxml2-2.11.7-r0 webpage:
+libxml2-2.11.8-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.11.7-r0 installed size:
+libxml2-2.11.8-r0 installed size:
 1092 KiB
 
-libxml2-2.11.7-r0 license:
+libxml2-2.11.8-r0 license:
 MIT
 
 ```
@@ -659,16 +659,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r6 description:
+openssl-3.1.5-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r6 webpage:
+openssl-3.1.5-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r6 installed size:
+openssl-3.1.5-r0 installed size:
 732 KiB
 
-openssl-3.1.4-r6 license:
+openssl-3.1.5-r0 license:
 Apache-2.0
 
 ```
