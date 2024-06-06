@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a3b1154af7c13b366ca478cc6007056bff190331d2be89c49538c8eb0325433d`
-- Created: `2024-05-09T18:31:12Z`
-- Virtual Size: ~ 244.09 Mb  
+- Image ID: `sha256:b84c1196166faefecdc6ae092fd2b65d3f5d784784b43462fa2ffaf315c2fab4`
+- Created: `2024-05-31T13:43:40Z`
+- Virtual Size: ~ 244.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -295,16 +295,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r6 description:
+libcrypto3-3.1.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r6 webpage:
+libcrypto3-3.1.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r6 installed size:
-4500 KiB
+libcrypto3-3.1.5-r0 installed size:
+4512 KiB
 
-libcrypto3-3.1.4-r6 license:
+libcrypto3-3.1.5-r0 license:
 Apache-2.0
 
 ```
@@ -448,16 +448,16 @@ custom
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r6 description:
+libssl3-3.1.5-r0 description:
 SSL shared libraries
 
-libssl3-3.1.4-r6 webpage:
+libssl3-3.1.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r6 installed size:
+libssl3-3.1.5-r0 installed size:
 548 KiB
 
-libssl3-3.1.4-r6 license:
+libssl3-3.1.5-r0 license:
 Apache-2.0
 
 ```
@@ -516,16 +516,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.11.7-r0 description:
+libxml2-2.11.8-r0 description:
 XML parsing library, version 2
 
-libxml2-2.11.7-r0 webpage:
+libxml2-2.11.8-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.11.7-r0 installed size:
+libxml2-2.11.8-r0 installed size:
 1092 KiB
 
-libxml2-2.11.7-r0 license:
+libxml2-2.11.8-r0 license:
 MIT
 
 ```

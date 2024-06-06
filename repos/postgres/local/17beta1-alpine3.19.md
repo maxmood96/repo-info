@@ -1,10 +1,10 @@
-# `postgres:12.19-alpine3.19`
+# `postgres:17beta1-alpine3.19`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7646bd9ad1b990daa37d4d1dd3eb4fe25563cd2a88b93989d034ad968374e911`
+- Image ID: `sha256:9bad7b7c9696e9515f102b31e02dc6e73059a9a31550dccca0025d7737d44811`
 - Created: `2024-05-31T13:43:40Z`
-- Virtual Size: ~ 238.97 Mb  
+- Virtual Size: ~ 250.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.utf8`
-  - `PG_MAJOR=12`
-  - `PG_VERSION=12.19`
-  - `PG_SHA256=617e3de52c22e822f4f57d01d5b2240503e198a9eccaf598a851109bd18e6fbb`
+  - `PG_MAJOR=17`
+  - `PG_VERSION=17beta1`
+  - `PG_SHA256=089e8854fecd0ca1ec5cd8b29526938f9ef5e91cc331f5d6e118d13468f08f50`
   - `DOCKER_PG_LLVM_DEPS=llvm15-dev 		clang15`
   - `PGDATA=/var/lib/postgresql/data`
 
@@ -561,6 +561,23 @@ llvm15-libs-15.0.7-r12 installed size:
 
 llvm15-libs-15.0.7-r12 license:
 Apache-2.0
+
+```
+
+### `apk` package: `lz4-libs`
+
+```console
+lz4-libs-1.9.4-r5 description:
+LZ4 is lossless compression algorithm with fast decoder @ multiple GB/s per core. (libraries)
+
+lz4-libs-1.9.4-r5 webpage:
+https://github.com/lz4/lz4
+
+lz4-libs-1.9.4-r5 installed size:
+144 KiB
+
+lz4-libs-1.9.4-r5 license:
+BSD-2-Clause AND GPL-2.0-only
 
 ```
 
