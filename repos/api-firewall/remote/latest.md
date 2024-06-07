@@ -1,7 +1,7 @@
 ## `api-firewall:latest`
 
 ```console
-$ docker pull api-firewall@sha256:0864ed9b1e5a58ad791e45a7058639bb75ae53215b412b9373d236fc79f268c3
+$ docker pull api-firewall@sha256:544e29204dd910f84dd1dd95010dc3b091e97b4d8fb31061bcf2e7d21d237095
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -127,56 +127,56 @@ CMD ["api-firewall"]
 ### `api-firewall:latest` - linux; 386
 
 ```console
-$ docker pull api-firewall@sha256:44034f065c29ccb89c7e4815834bc6a23ffac601bf3c9b12937f28699a8f2932
+$ docker pull api-firewall@sha256:da85a4f946822fdb11e02a26ed6ac7401b6d11a52c7efc7572f05e39ce1ee2bc
 ```
 
--	Docker Version: 20.10.23
+-	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.6 MB (12600818 bytes)**  
+-	Total Size: **12.8 MB (12844234 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c1d6c3aab6191d22bed77ec8756f60a76a2efa2114e9e33d57c13966d7d661a`
+-	Image ID: `sha256:0cd25c8d67d2b0da24246ce910da3818ac21960acea953462f6a3cde75f4021f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["api-firewall"]`
 
 ```dockerfile
-# Sat, 27 Jan 2024 00:38:23 GMT
-ADD file:947294f5c09da3491734668abe74ce7c80f0034ae27d570578242b03ab6876a7 in / 
-# Sat, 27 Jan 2024 00:38:23 GMT
+# Sat, 27 Jan 2024 00:38:19 GMT
+ADD file:50130ffc87b68d2889c28269d2783e37c42087ce4793108222ad53ed22443a90 in / 
+# Sat, 27 Jan 2024 00:38:19 GMT
 CMD ["/bin/sh"]
-# Fri, 15 Mar 2024 23:52:59 GMT
+# Fri, 07 Jun 2024 04:16:42 GMT
 ENV APIFW_PATH=/opt/api-firewall
-# Fri, 15 Mar 2024 23:52:59 GMT
+# Fri, 07 Jun 2024 04:16:42 GMT
 ENV PATH=/opt/api-firewall:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 Mar 2024 23:52:59 GMT
+# Fri, 07 Jun 2024 04:16:43 GMT
 RUN set -eux;     adduser -u 1000 -H -h /opt -D -s /bin/sh api-firewall
-# Wed, 17 Apr 2024 16:57:32 GMT
-ENV APIFIREWALL_VERSION=v0.7.2
-# Wed, 17 Apr 2024 16:57:34 GMT
-RUN set -eux;         apk add --no-cache wget;         arch="$(apk --print-arch)";     case "$arch" in         'x86_64')             url="https://github.com/wallarm/api-firewall/releases/download/${APIFIREWALL_VERSION}/api-firewall-amd64-musl.tar.gz";             sha256='d37f804498472459ac9e974093d767fb3944c46e6db325a98917b249e063dff0';             ;;         'aarch64')             url="https://github.com/wallarm/api-firewall/releases/download/${APIFIREWALL_VERSION}/api-firewall-arm64-musl.tar.gz";             sha256='23a202516b26219e250b2adb1e7a905795e91003dadd6209c72ca9c737085481';             ;;         'x86')             url="https://github.com/wallarm/api-firewall/releases/download/${APIFIREWALL_VERSION}/api-firewall-386-musl.tar.gz";             sha256='8b3a5b335c4fb6d14ff159875178826dd4e80a10ec3de26ca42ab1ed30123536';             ;;         *)             echo >&2 "error: current architecture ($arch) does not have a corresponding API-Firewall binary release";             exit 1;             ;;     esac;         wget -O api-firewall.tar.gz "$url";     echo "$sha256 *api-firewall.tar.gz" | sha256sum -c;         mkdir -p "$APIFW_PATH";     tar -xzf api-firewall.tar.gz -C "$APIFW_PATH" --strip-components 1;     rm api-firewall.tar.gz;         chmod 755 $APIFW_PATH/api-firewall;         api-firewall -v
-# Wed, 17 Apr 2024 16:57:35 GMT
+# Fri, 07 Jun 2024 04:16:43 GMT
+ENV APIFIREWALL_VERSION=v0.7.3
+# Fri, 07 Jun 2024 04:16:46 GMT
+RUN set -eux;         apk add --no-cache wget;         arch="$(apk --print-arch)";     case "$arch" in         'x86_64')             url="https://github.com/wallarm/api-firewall/releases/download/${APIFIREWALL_VERSION}/api-firewall-amd64-musl.tar.gz";             sha256='a381991ff6b0da037a6a1ab0226f2f5cec2d44732fd7c5eb03076da0d46178aa';             ;;         'aarch64')             url="https://github.com/wallarm/api-firewall/releases/download/${APIFIREWALL_VERSION}/api-firewall-arm64-musl.tar.gz";             sha256='c31ce1b8be28825fd2668206a22970d26d0a7cc958e4ed7aa4cfcbf9865e15e2';             ;;         'x86')             url="https://github.com/wallarm/api-firewall/releases/download/${APIFIREWALL_VERSION}/api-firewall-386-musl.tar.gz";             sha256='ac32e358d85015b7aec8ec402d2834927950068b6b2ccbd9279f420c79db2f00';             ;;         *)             echo >&2 "error: current architecture ($arch) does not have a corresponding API-Firewall binary release";             exit 1;             ;;     esac;         wget -O api-firewall.tar.gz "$url";     echo "$sha256 *api-firewall.tar.gz" | sha256sum -c;         mkdir -p "$APIFW_PATH";     tar -xzf api-firewall.tar.gz -C "$APIFW_PATH" --strip-components 1;     rm api-firewall.tar.gz;         chmod 755 $APIFW_PATH/api-firewall;         api-firewall -v
+# Fri, 07 Jun 2024 04:16:46 GMT
 COPY file:d278e8d8f9cc8e98b02127f87703b4379a8a938a57e107aac5dd34c716907f87 in /opt/api-firewall/ 
-# Wed, 17 Apr 2024 16:57:35 GMT
+# Fri, 07 Jun 2024 04:16:46 GMT
 USER api-firewall
-# Wed, 17 Apr 2024 16:57:35 GMT
+# Fri, 07 Jun 2024 04:16:46 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Apr 2024 16:57:35 GMT
+# Fri, 07 Jun 2024 04:16:47 GMT
 CMD ["api-firewall"]
 ```
 
 -	Layers:
-	-	`sha256:282e237e8e01cf628ae91590e0a44bcf58df98bbe01e9e62dadf2e94cd6301a0`  
-		Last Modified: Sat, 27 Jan 2024 00:38:59 GMT  
-		Size: 3.2 MB (3239065 bytes)  
+	-	`sha256:4a0759b5afbffdc507fbb4e32b3a139063c3a5c0829f811973850447f98830ae`  
+		Last Modified: Sat, 27 Jan 2024 00:38:47 GMT  
+		Size: 3.2 MB (3244089 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9b16feb1c089d261f25d668bc94fb450ae9faaf09472431fb07eaa76ff9fb84`  
-		Last Modified: Fri, 15 Mar 2024 23:53:10 GMT  
-		Size: 1.2 KB (1204 bytes)  
+	-	`sha256:5e0549eecaf147a5575e45bca307ad40e276656411fd95b9f83cc1c6b4c7d3de`  
+		Last Modified: Fri, 07 Jun 2024 04:16:55 GMT  
+		Size: 1.2 KB (1202 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66d59d88d4f1f263566209360673e06457c8b2ac183a93217acbfeec21fe3840`  
-		Last Modified: Wed, 17 Apr 2024 16:57:53 GMT  
-		Size: 9.4 MB (9360193 bytes)  
+	-	`sha256:9290829fce02a28f61b45a13ff9c38d7985d540f9c6c2fc84f14f09e85a6b0d7`  
+		Last Modified: Fri, 07 Jun 2024 04:16:57 GMT  
+		Size: 9.6 MB (9598588 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43679e87d99bf6649bee777299b0405c2fea2af549d7d89ee84d703eedc74944`  
-		Last Modified: Wed, 17 Apr 2024 16:57:51 GMT  
-		Size: 356.0 B  
+	-	`sha256:2d7bad942485f4ed8ac4574cfb8ca9dedcd68ed84c4410f72bc868563d7ff4c7`  
+		Last Modified: Fri, 07 Jun 2024 04:16:55 GMT  
+		Size: 355.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
