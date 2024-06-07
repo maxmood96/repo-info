@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a32f73a324a2d0e72a305f33619431bbfaba72840c70d6bec3f65f6e1cde8f6e`
-- Created: `2024-06-03T03:28:41Z`
-- Virtual Size: ~ 246.24 Mb  
+- Image ID: `sha256:bc3f961c4f24ff3d6807109abaf339559fca4aeefcdd80ab09b6da52af7daa2a`
+- Created: `2024-06-04T22:12:59Z`
+- Virtual Size: ~ 246.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.22.3`
+  - `GOLANG_VERSION=1.22.4`
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
   - `XCADDY_VERSION=v0.4.2`
@@ -193,16 +193,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `git`
 
 ```console
-git-2.45.1-r0 description:
+git-2.45.2-r0 description:
 Distributed version control system
 
-git-2.45.1-r0 webpage:
+git-2.45.2-r0 webpage:
 https://www.git-scm.com/
 
-git-2.45.1-r0 installed size:
-6480 KiB
+git-2.45.2-r0 installed size:
+6468 KiB
 
-git-2.45.1-r0 license:
+git-2.45.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -210,16 +210,16 @@ GPL-2.0-only
 ### `apk` package: `git-init-template`
 
 ```console
-git-init-template-2.45.1-r0 description:
+git-init-template-2.45.2-r0 description:
 Git init template directory
 
-git-init-template-2.45.1-r0 webpage:
+git-init-template-2.45.2-r0 webpage:
 https://www.git-scm.com/
 
-git-init-template-2.45.1-r0 installed size:
+git-init-template-2.45.2-r0 installed size:
 96 KiB
 
-git-init-template-2.45.1-r0 license:
+git-init-template-2.45.2-r0 license:
 GPL-2.0-only
 
 ```
