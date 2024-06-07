@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:804500f8c179d8acd90b7a8ac182045dd16d1a2a8852e33f39f2ca8d75bb8a07`
-- Created: `2024-05-02T02:06:19.56610492Z`
-- Virtual Size: ~ 789.50 Mb  
+- Image ID: `sha256:f52f4321c594152af94c764f0cd48892290fa8ad5dfb752ac7af9b9c0d411d9d`
+- Created: `2024-06-05T04:41:34.717554341Z`
+- Virtual Size: ~ 789.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1141,12 +1141,12 @@ $ apt-get source -qq --print-uris gdk-pixbuf=2.42.10+dfsg-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg-1build1.debian.tar.xz' gdk-pixbuf_2.42.10+dfsg-1build1.debian.tar.xz 21016 SHA512:285257ef6e98fa1347d1389b61573fee10b7e3466a34d7369a9b25cc19040108287c9142ed6205d4d409338110c47fba96dab478f068210472299ddb8e849b0c
 ```
 
-### `dpkg` source package: `git=1:2.40.1-1ubuntu1`
+### `dpkg` source package: `git=1:2.40.1-1ubuntu1.1`
 
 Binary Packages:
 
-- `git=1:2.40.1-1ubuntu1`
-- `git-man=1:2.40.1-1ubuntu1`
+- `git=1:2.40.1-1ubuntu1.1`
+- `git-man=1:2.40.1-1ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1173,21 +1173,21 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git=1:2.40.1-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.40.1-1ubuntu1.dsc' git_2.40.1-1ubuntu1.dsc 2956 SHA512:8c085686790fa7b97b02888083fdaaec376b8a48795531436e7986c913c2949bc98c1e564a09a7e23961bf401b7aabafbe854e4cd9b7ef4dc5d8b05498cdc780
+$ apt-get source -qq --print-uris git=1:2.40.1-1ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.40.1-1ubuntu1.1.dsc' git_2.40.1-1ubuntu1.1.dsc 2927 SHA512:60b41b4eb929949bc5d1f405e03b915e77e5e182e0ae93cafc16717823c7df14ed74fc51c9af8897c8bba407e1a930f882eaa366570c265e7872ad78f2b002f7
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.40.1.orig.tar.xz' git_2.40.1.orig.tar.xz 7185260 SHA512:9ab41c64c6e666c314683bc4925535e037d43f947b8d327ff7d0379ac12899f4effcc2fe4e47b1ce652ad7140aa4f01f3b99f9cc0cf854cfeface1a5d3e1893e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.40.1-1ubuntu1.debian.tar.xz' git_2.40.1-1ubuntu1.debian.tar.xz 748944 SHA512:52938786bea5817afeed2fcd6f45f35f5567936823de1254670c1379d094f6514b16a5cd02ec67c1e68bad89ceb6b52030533aa063b9c966af32f18fa1409196
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.40.1-1ubuntu1.1.debian.tar.xz' git_2.40.1-1ubuntu1.1.debian.tar.xz 756220 SHA512:d3105d95eedecaf1b1d8255d9a89c9a14f590d8fd390efa2dba395c9315665431a453e58f6bfea37136ca54eeabec79726ac6787695abf6f3e3f3b8ca0a48266
 ```
 
-### `dpkg` source package: `glib2.0=2.78.0-2`
+### `dpkg` source package: `glib2.0=2.78.0-2ubuntu0.1`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.78.0-2`
-- `libglib2.0-bin=2.78.0-2`
-- `libglib2.0-data=2.78.0-2`
-- `libglib2.0-dev:amd64=2.78.0-2`
-- `libglib2.0-dev-bin=2.78.0-2`
+- `libglib2.0-0:amd64=2.78.0-2ubuntu0.1`
+- `libglib2.0-bin=2.78.0-2ubuntu0.1`
+- `libglib2.0-data=2.78.0-2ubuntu0.1`
+- `libglib2.0-dev:amd64=2.78.0-2ubuntu0.1`
+- `libglib2.0-dev-bin=2.78.0-2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-bin/copyright`, `/usr/share/doc/libglib2.0-data/copyright`, `/usr/share/doc/libglib2.0-dev/copyright`, `/usr/share/doc/libglib2.0-dev-bin/copyright`)
 
@@ -1220,21 +1220,21 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glib2.0=2.78.0-2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.78.0-2.dsc' glib2.0_2.78.0-2.dsc 3684 SHA512:f37193e9763f96fa2cc3c7a754445d1adfdf216be63407ccd0a36f280745bd666eefeb10f557c712faa8ca7f94e0c5be0b3189201160deac54d61dc8773c6cfe
+$ apt-get source -qq --print-uris glib2.0=2.78.0-2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.78.0-2ubuntu0.1.dsc' glib2.0_2.78.0-2ubuntu0.1.dsc 3685 SHA512:b98783e69e841902e3d7ed6faa80cd7d79755b514771f07a23dea097ae178fe51621f25a1abb84f6b733bab379e08b56630daa1bbeaa3cc9944574230830b398
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.78.0.orig-unicode-data.tar.xz' glib2.0_2.78.0.orig-unicode-data.tar.xz 266184 SHA512:c818eae7b8df69b69abc2c59870eaad7488e3266afb5055b851fcbdd9dd96d9808787881631a8d840487acb3b40c18691b6c58d3df4735fa6eab41a5aa1295ff
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.78.0.orig.tar.xz' glib2.0_2.78.0.orig.tar.xz 5327096 SHA512:3d06890002f4b13f831c83fbb70cfce529f9750e30888619e4d6277116be15d106379a03143412cf4b2a289c0cbdbbc299ecf17284fbffc06c791ecf7556c765
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.78.0-2.debian.tar.xz' glib2.0_2.78.0-2.debian.tar.xz 202588 SHA512:36155efbd8cc7513267d901f0e5df56d9b22d20a0f91c37041de05b61b8391aca989ca7eabf5ec26fabb096856fbdeb41f25b6543d84cf8dbb3912fd31e39e69
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.78.0-2ubuntu0.1.debian.tar.xz' glib2.0_2.78.0-2ubuntu0.1.debian.tar.xz 220888 SHA512:8778abcf769bf585702a9708c1303655e782d7c0fba2ed1ced2924738fd6e517be6bba62db00bed1d1a664d37c5691898b9102b59cad96cb0acfcc0ae04ffbf1
 ```
 
-### `dpkg` source package: `glibc=2.38-1ubuntu6.2`
+### `dpkg` source package: `glibc=2.38-1ubuntu6.3`
 
 Binary Packages:
 
-- `libc-bin=2.38-1ubuntu6.2`
-- `libc-dev-bin=2.38-1ubuntu6.2`
-- `libc6:amd64=2.38-1ubuntu6.2`
-- `libc6-dev:amd64=2.38-1ubuntu6.2`
+- `libc-bin=2.38-1ubuntu6.3`
+- `libc-dev-bin=2.38-1ubuntu6.3`
+- `libc6:amd64=2.38-1ubuntu6.3`
+- `libc6-dev:amd64=2.38-1ubuntu6.3`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
@@ -1242,9 +1242,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.38-1ubuntu6.3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38-1ubuntu6.3.dsc' glibc_2.38-1ubuntu6.3.dsc 9525 SHA512:344e712b809f055f8c188bb136d0c273a6623e066ed31ab519204edf4bd230365381b5b57b40d99ebe2e88234bda81bac64c95c7f5a2a24f4211faa5772f8a3e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38.orig.tar.xz' glibc_2.38.orig.tar.xz 18913712 SHA512:a6dd5e42dcd63d58e2820c783522c8c895890b6e8c8e6c83b025553de0cc77cdf227e7044e431ead98c89c68a9ce4dd63509b47e647775fb2075f011849c1900
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38.orig.tar.xz.asc' glibc_2.38.orig.tar.xz.asc 833 SHA512:32248467450f4530f8e84c03ea78d8293946e1b1def853eff9fb2cb51106e66cc3b024a254f3c2fabd2634f8192bd14e7df00c317f4230860d702c4d9ec7a01e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38-1ubuntu6.3.debian.tar.xz' glibc_2.38-1ubuntu6.3.debian.tar.xz 466432 SHA512:def9295039770739f035d66aaaacda4fc57f4029aa3b06f95226ca697ca8dd7a21a73e7bdf49625d34057897f3b1a2a8369a74de47f8deb79ac797fdb855c7e4
+```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu4`
 
@@ -1968,11 +1974,11 @@ $ apt-get source -qq --print-uris libdatrie=0.2.13-2
 'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdatrie/libdatrie_0.2.13-2.debian.tar.xz' libdatrie_0.2.13-2.debian.tar.xz 9604 SHA512:032040b6f9da493b7bbc4437eb16dce9dbbf10d0d9381fbc4ec6c636e5cccaf52b14e77739d227b58fc5ba54911c2cea7f679bada7ed93acb048bd996d4ce3d9
 ```
 
-### `dpkg` source package: `libde265=1.0.12-2ubuntu0.1`
+### `dpkg` source package: `libde265=1.0.12-2ubuntu0.2`
 
 Binary Packages:
 
-- `libde265-0:amd64=1.0.12-2ubuntu0.1`
+- `libde265-0:amd64=1.0.12-2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 
@@ -1984,9 +1990,14 @@ Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 - `other-1`
 - `public-domain-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libde265=1.0.12-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libde265/libde265_1.0.12-2ubuntu0.2.dsc' libde265_1.0.12-2ubuntu0.2.dsc 2372 SHA512:2d832cf1515ca6ad502ceffd5567616707ac4d52695ce384c7d3844a9ec423a55ed536bee080892d7a7ed5cb26d5b8eacb0b35828873ec53d3a72e94b9ae2437
+'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libde265/libde265_1.0.12.orig.tar.gz' libde265_1.0.12.orig.tar.gz 846345 SHA512:2cd105f3ce15a075da758f5429670b78ec162217017d1057eb828d7bc45414d35f2a8ab3b2cd5f247320c361740f4ab92d2ce5a6d943feeb33dc28c273e1ed64
+'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libde265/libde265_1.0.12-2ubuntu0.2.debian.tar.xz' libde265_1.0.12-2ubuntu0.2.debian.tar.xz 138428 SHA512:677c4b380760e5c4e3a1ac0d790b3918099439c9cb1b2988a47eab741701c10e63945bbf5b193307982a4040996b87872614f77c7471642c2e8994f1277c3b62
+```
 
 ### `dpkg` source package: `libdeflate=1.18-1`
 
@@ -3134,11 +3145,11 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-1ubuntu2.debian.tar.xz' libzstd_1.5.5+dfsg2-1ubuntu2.debian.tar.xz 21400 SHA512:ea28ea8fb4eb2ccabb1d959c25dbdbc85b10467f18660c28d97687c3c8383458b70217182c4531da0e5838b91fb743defabf59a643466d12f2034aa373b2150f
 ```
 
-### `dpkg` source package: `linux=6.5.0-28.29`
+### `dpkg` source package: `linux=6.5.0-35.35`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.5.0-28.29`
+- `linux-libc-dev:amd64=6.5.0-35.35`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3927,12 +3938,12 @@ $ apt-get source -qq --print-uris pkgconf=1.8.1-2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pkgconf/pkgconf_1.8.1-2.debian.tar.xz' pkgconf_1.8.1-2.debian.tar.xz 15556 SHA512:b1f41553a2dbec8b25d46e6bb7aa55b948030a8557d9ad0435c1922ce7fb033fec80026653440ce03a04a99785edf6118eb7c62a5b92b460eade2f205b8a77da
 ```
 
-### `dpkg` source package: `postgresql-15=15.6-0ubuntu0.23.10.1`
+### `dpkg` source package: `postgresql-15=15.7-0ubuntu0.23.10.1`
 
 Binary Packages:
 
-- `libpq-dev=15.6-0ubuntu0.23.10.1`
-- `libpq5:amd64=15.6-0ubuntu0.23.10.1`
+- `libpq-dev=15.7-0ubuntu0.23.10.1`
+- `libpq5:amd64=15.7-0ubuntu0.23.10.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -3949,9 +3960,14 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-15=15.7-0ubuntu0.23.10.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-15/postgresql-15_15.7-0ubuntu0.23.10.1.dsc' postgresql-15_15.7-0ubuntu0.23.10.1.dsc 4107 SHA512:35db3785c94f50ce718d63e5ebde386dc11eef6172ae97c0b403cb5c6ebcea7c6512163fa5f649090d4186ecff604297ed8f678a22220a87a87ccf8cd7e7a307
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-15/postgresql-15_15.7.orig.tar.gz' postgresql-15_15.7.orig.tar.gz 30332323 SHA512:9af49913e7c3f3bbc2b49ca47badbcc21ea5bd885d6f4447de555c4b613785d181a4345027e46c847b27a4614689696329ef556935600d0e00404b2a4413deff
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-15/postgresql-15_15.7-0ubuntu0.23.10.1.debian.tar.xz' postgresql-15_15.7-0ubuntu0.23.10.1.debian.tar.xz 27964 SHA512:167a2e3bbbc199e3472ec86b66b9cf54d2f35aefc24daaf79b0d5960e9bea9d3130842ee92096a5b5cc5a171d77bc7d04a6dbfaefd14ffc679f04f92fc500b1d
+```
 
 ### `dpkg` source package: `procps=2:4.0.3-1ubuntu1.23.10.1`
 

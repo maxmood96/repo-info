@@ -881,21 +881,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.5-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.5-2.dsc' gnutls28_3.8.5-2.dsc 3268 SHA256:ff96a5441cb3e65cfff2dcde9995ea2dec71eab45abc0fe3c595679867a2ef93
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.5.orig.tar.xz' gnutls28_3.8.5.orig.tar.xz 6491504 SHA256:66269a2cfe0e1c2dabec87bdbbd8ab656f396edd9a40dd006978e003cfa52bfc
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.5.orig.tar.xz.asc' gnutls28_3.8.5.orig.tar.xz.asc 228 SHA256:d02c2bc3b994b3fc81f76663a0570c156f9dd299a2151f04fd3429eca6569f52
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.5-2.debian.tar.xz' gnutls28_3.8.5-2.debian.tar.xz 79356 SHA256:5a29cdcec8bc2cee41a179041063f0df762f6f43c83757f1e8c290f0606088de
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.5-2/
 
-- https://sources.debian.net/src/gnutls28/3.8.5-2/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.11-4`
 
@@ -2018,21 +2010,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.38.2-4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2-4.dsc' perl_5.38.2-4.dsc 2938 SHA256:7b4c34022cff761f405cede9ab380fa00808eee11bed711f8cbba2a974fe571e
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA256:4d1b34cc058f9963cb89785ecc040d57f6d7725cd83329cfa4ef8b27566454d2
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA256:d91115e90b896520e83d4de6b52f8254ef2b70a8d545ffab33200ea9f1cf29e8
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2-4.debian.tar.xz' perl_5.38.2-4.debian.tar.xz 165884 SHA256:74afd09ea72e33ad2655b2aad97f68d55e231289f90f6e7633f85dc8e051435a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.38.2-4/
 
-- https://sources.debian.net/src/perl/5.38.2-4/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.38.2-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.38.2-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.2.1-3`
 
@@ -2225,21 +2209,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.45.3-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.45.3-1.dsc' sqlite3_3.45.3-1.dsc 2486 SHA256:80c06ba1ee47728733c6ab89b1fcf8dc4e402362e90ac60c7a97e7fb964c1c76
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.45.3.orig-www.tar.xz' sqlite3_3.45.3.orig-www.tar.xz 5704308 SHA256:622cf40363da63edffc16e59ef549f1ae86a5898b2b81f4b8786f13e1040571e
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.45.3.orig.tar.xz' sqlite3_3.45.3.orig.tar.xz 8264648 SHA256:ddf94bc3cf326ad66e7313f110d79600433070aba7a68a1b9a49096a210a80df
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.45.3-1.debian.tar.xz' sqlite3_3.45.3-1.debian.tar.xz 30360 SHA256:806fff10598e20961f3ef719509143901246808297baa6cd042cdf9952dcc1cb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.45.3-1/
 
-- https://sources.debian.net/src/sqlite3/3.45.3-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.45.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.45.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=255.5-1`
 

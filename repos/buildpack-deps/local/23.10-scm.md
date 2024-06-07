@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3040c9c01a0950ab5034711356b474bf3e84c8de87f367263fe4ddd07ec472c4`
-- Created: `2024-05-02T02:03:09.897277169Z`
-- Virtual Size: ~ 232.05 Mb  
+- Image ID: `sha256:f5dfb289c2b2e169763b6524ce729573508c902bb6de42094621683a77c16840`
+- Created: `2024-06-05T04:38:26.798223653Z`
+- Virtual Size: ~ 232.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -699,12 +699,12 @@ $ apt-get source -qq --print-uris gdbm=1.23-3
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.23-3.debian.tar.xz' gdbm_1.23-3.debian.tar.xz 18552 SHA512:bf4f6cc7fba1a2d1eb8aecbb373fdcbd6244040964def34c5559c2643ec02b2acb25f0ff7107336553b3e2abf9ceaf73453e1990988efd951f63c47e67ae4ac6
 ```
 
-### `dpkg` source package: `git=1:2.40.1-1ubuntu1`
+### `dpkg` source package: `git=1:2.40.1-1ubuntu1.1`
 
 Binary Packages:
 
-- `git=1:2.40.1-1ubuntu1`
-- `git-man=1:2.40.1-1ubuntu1`
+- `git=1:2.40.1-1ubuntu1.1`
+- `git-man=1:2.40.1-1ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -731,18 +731,18 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git=1:2.40.1-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.40.1-1ubuntu1.dsc' git_2.40.1-1ubuntu1.dsc 2956 SHA512:8c085686790fa7b97b02888083fdaaec376b8a48795531436e7986c913c2949bc98c1e564a09a7e23961bf401b7aabafbe854e4cd9b7ef4dc5d8b05498cdc780
+$ apt-get source -qq --print-uris git=1:2.40.1-1ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.40.1-1ubuntu1.1.dsc' git_2.40.1-1ubuntu1.1.dsc 2927 SHA512:60b41b4eb929949bc5d1f405e03b915e77e5e182e0ae93cafc16717823c7df14ed74fc51c9af8897c8bba407e1a930f882eaa366570c265e7872ad78f2b002f7
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.40.1.orig.tar.xz' git_2.40.1.orig.tar.xz 7185260 SHA512:9ab41c64c6e666c314683bc4925535e037d43f947b8d327ff7d0379ac12899f4effcc2fe4e47b1ce652ad7140aa4f01f3b99f9cc0cf854cfeface1a5d3e1893e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.40.1-1ubuntu1.debian.tar.xz' git_2.40.1-1ubuntu1.debian.tar.xz 748944 SHA512:52938786bea5817afeed2fcd6f45f35f5567936823de1254670c1379d094f6514b16a5cd02ec67c1e68bad89ceb6b52030533aa063b9c966af32f18fa1409196
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.40.1-1ubuntu1.1.debian.tar.xz' git_2.40.1-1ubuntu1.1.debian.tar.xz 756220 SHA512:d3105d95eedecaf1b1d8255d9a89c9a14f590d8fd390efa2dba395c9315665431a453e58f6bfea37136ca54eeabec79726ac6787695abf6f3e3f3b8ca0a48266
 ```
 
-### `dpkg` source package: `glibc=2.38-1ubuntu6.2`
+### `dpkg` source package: `glibc=2.38-1ubuntu6.3`
 
 Binary Packages:
 
-- `libc-bin=2.38-1ubuntu6.2`
-- `libc6:amd64=2.38-1ubuntu6.2`
+- `libc-bin=2.38-1ubuntu6.3`
+- `libc6:amd64=2.38-1ubuntu6.3`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -750,9 +750,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.38-1ubuntu6.3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38-1ubuntu6.3.dsc' glibc_2.38-1ubuntu6.3.dsc 9525 SHA512:344e712b809f055f8c188bb136d0c273a6623e066ed31ab519204edf4bd230365381b5b57b40d99ebe2e88234bda81bac64c95c7f5a2a24f4211faa5772f8a3e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38.orig.tar.xz' glibc_2.38.orig.tar.xz 18913712 SHA512:a6dd5e42dcd63d58e2820c783522c8c895890b6e8c8e6c83b025553de0cc77cdf227e7044e431ead98c89c68a9ce4dd63509b47e647775fb2075f011849c1900
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38.orig.tar.xz.asc' glibc_2.38.orig.tar.xz.asc 833 SHA512:32248467450f4530f8e84c03ea78d8293946e1b1def853eff9fb2cb51106e66cc3b024a254f3c2fabd2634f8192bd14e7df00c317f4230860d702c4d9ec7a01e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.38-1ubuntu6.3.debian.tar.xz' glibc_2.38-1ubuntu6.3.debian.tar.xz 466432 SHA512:def9295039770739f035d66aaaacda4fc57f4029aa3b06f95226ca697ca8dd7a21a73e7bdf49625d34057897f3b1a2a8369a74de47f8deb79ac797fdb855c7e4
+```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu4`
 

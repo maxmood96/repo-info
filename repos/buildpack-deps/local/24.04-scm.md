@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c9fb010e9d8362e64239fc46b0f1845b95190c39c075a5f62eb5ea602f4ac12e`
-- Created: `2024-05-22T23:37:05.010341555Z`
-- Virtual Size: ~ 251.03 Mb  
+- Image ID: `sha256:3a1585bd8d7b4034b37684810605e00e7ec1c968ba75ef062091feea7e066930`
+- Created: `2024-06-05T04:43:06.00385545Z`
+- Virtual Size: ~ 251.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -570,12 +570,12 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4t64/copyright`, `/usr/sha
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `git=1:2.43.0-1ubuntu7`
+### `dpkg` source package: `git=1:2.43.0-1ubuntu7.1`
 
 Binary Packages:
 
-- `git=1:2.43.0-1ubuntu7`
-- `git-man=1:2.43.0-1ubuntu7`
+- `git=1:2.43.0-1ubuntu7.1`
+- `git-man=1:2.43.0-1ubuntu7.1`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -603,12 +603,12 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `glibc=2.39-0ubuntu8.1`
+### `dpkg` source package: `glibc=2.39-0ubuntu8.2`
 
 Binary Packages:
 
-- `libc-bin=2.39-0ubuntu8.1`
-- `libc6:amd64=2.39-0ubuntu8.1`
+- `libc-bin=2.39-0ubuntu8.2`
+- `libc6:amd64=2.39-0ubuntu8.2`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -1454,12 +1454,12 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.1`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.0.13-0ubuntu3`
-- `openssl=3.0.13-0ubuntu3`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.1`
+- `openssl=3.0.13-0ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -1918,11 +1918,11 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `tzdata=2024a-2ubuntu1`
+### `dpkg` source package: `tzdata=2024a-3ubuntu1.1`
 
 Binary Packages:
 
-- `tzdata=2024a-2ubuntu1`
+- `tzdata=2024a-3ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 

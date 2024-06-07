@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c6d194d1899bcef2cddaa91e9c500662fda2fdd9bd2efa273dc4888907f6f324`
-- Created: `2024-05-22T23:40:12.153900444Z`
-- Virtual Size: ~ 815.19 Mb  
+- Image ID: `sha256:a4e4aeef9b47b481ea5ac3f679eaa9d4b0478067b672521cce966285f2c424a2`
+- Created: `2024-06-05T04:46:26.915145416Z`
+- Virtual Size: ~ 815.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -977,12 +977,12 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `git=1:2.43.0-1ubuntu7`
+### `dpkg` source package: `git=1:2.43.0-1ubuntu7.1`
 
 Binary Packages:
 
-- `git=1:2.43.0-1ubuntu7`
-- `git-man=1:2.43.0-1ubuntu7`
+- `git=1:2.43.0-1ubuntu7.1`
+- `git-man=1:2.43.0-1ubuntu7.1`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1055,14 +1055,14 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-glib-2.0/copyright`, `/usr/share/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `glibc=2.39-0ubuntu8.1`
+### `dpkg` source package: `glibc=2.39-0ubuntu8.2`
 
 Binary Packages:
 
-- `libc-bin=2.39-0ubuntu8.1`
-- `libc-dev-bin=2.39-0ubuntu8.1`
-- `libc6:amd64=2.39-0ubuntu8.1`
-- `libc6-dev:amd64=2.39-0ubuntu8.1`
+- `libc-bin=2.39-0ubuntu8.2`
+- `libc-dev-bin=2.39-0ubuntu8.2`
+- `libc6:amd64=2.39-0ubuntu8.2`
+- `libc6-dev:amd64=2.39-0ubuntu8.2`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
@@ -2548,11 +2548,11 @@ Licenses: (parsed from: `/usr/share/doc/libzstd-dev/copyright`, `/usr/share/doc/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `linux=6.8.0-31.31`
+### `dpkg` source package: `linux=6.8.0-35.35`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-31.31`
+- `linux-libc-dev:amd64=6.8.0-35.35`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2990,13 +2990,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.1`
 
 Binary Packages:
 
-- `libssl-dev:amd64=3.0.13-0ubuntu3`
-- `libssl3t64:amd64=3.0.13-0ubuntu3`
-- `openssl=3.0.13-0ubuntu3`
+- `libssl-dev:amd64=3.0.13-0ubuntu3.1`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.1`
+- `openssl=3.0.13-0ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -3220,12 +3220,12 @@ Licenses: (parsed from: `/usr/share/doc/libpkgconf3/copyright`, `/usr/share/doc/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `postgresql-16=16.2-1ubuntu4`
+### `dpkg` source package: `postgresql-16=16.3-0ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `libpq-dev=16.2-1ubuntu4`
-- `libpq5:amd64=16.2-1ubuntu4`
+- `libpq-dev=16.3-0ubuntu0.24.04.1`
+- `libpq5:amd64=16.3-0ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -3677,11 +3677,11 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `tzdata=2024a-2ubuntu1`
+### `dpkg` source package: `tzdata=2024a-3ubuntu1.1`
 
 Binary Packages:
 
-- `tzdata=2024a-2ubuntu1`
+- `tzdata=2024a-3ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 

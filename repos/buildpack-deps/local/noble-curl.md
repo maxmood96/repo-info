@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4b2f9c984fc3fe28b7f925bf53d5fb763199bbe2d520448ef4a2004034f9d9e8`
-- Created: `2024-05-22T23:36:23.277462235Z`
-- Virtual Size: ~ 111.59 Mb  
+- Image ID: `sha256:fcbeab00184d80f11b993746c2f754e7409eb90af725db353ef314480890deeb`
+- Created: `2024-06-05T04:42:18.892054086Z`
+- Virtual Size: ~ 111.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -508,12 +508,12 @@ Licenses: (parsed from: `/usr/share/doc/gcc-14-base/copyright`, `/usr/share/doc/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `glibc=2.39-0ubuntu8.1`
+### `dpkg` source package: `glibc=2.39-0ubuntu8.2`
 
 Binary Packages:
 
-- `libc-bin=2.39-0ubuntu8.1`
-- `libc6:amd64=2.39-0ubuntu8.1`
+- `libc-bin=2.39-0ubuntu8.2`
+- `libc6:amd64=2.39-0ubuntu8.2`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -1211,12 +1211,12 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.1`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.0.13-0ubuntu3`
-- `openssl=3.0.13-0ubuntu3`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.1`
+- `openssl=3.0.13-0ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -1576,11 +1576,11 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `tzdata=2024a-2ubuntu1`
+### `dpkg` source package: `tzdata=2024a-3ubuntu1.1`
 
 Binary Packages:
 
-- `tzdata=2024a-2ubuntu1`
+- `tzdata=2024a-3ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
