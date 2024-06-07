@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9b21a42e40237524fc18c525ac74d9f95ed6253580c93e8c385c41ada7b33119`
-- Created: `2024-05-07T22:27:08.670217423Z`
-- Virtual Size: ~ 720.76 Mb  
+- Image ID: `sha256:e826db183786c011fbd75633e97de28f880783eaf48a1d565e0ab7590934dd3c`
+- Created: `2024-06-05T12:07:10.645598473Z`
+- Virtual Size: ~ 720.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -693,13 +693,13 @@ $ apt-get source -qq --print-uris gdbm=1.23-1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.23-1.debian.tar.xz' gdbm_1.23-1.debian.tar.xz 18484 SHA512:e7ca0a608da94e5b5bc5949e27b794c87e032202eb09359ad55f6c1a7a6e895f01126781a4e0fbfdb8fef3de7c4a312b9d5a653aaf55ce8c5afbceb945945253
 ```
 
-### `dpkg` source package: `glibc=2.35-0ubuntu3.7`
+### `dpkg` source package: `glibc=2.35-0ubuntu3.8`
 
 Binary Packages:
 
-- `libc-bin=2.35-0ubuntu3.7`
-- `libc6:amd64=2.35-0ubuntu3.7`
-- `locales=2.35-0ubuntu3.7`
+- `libc-bin=2.35-0ubuntu3.8`
+- `libc6:amd64=2.35-0ubuntu3.8`
+- `locales=2.35-0ubuntu3.8`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
@@ -707,9 +707,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.8.dsc' glibc_2.35-0ubuntu3.8.dsc 8917 SHA512:65d4e9f4ff2556677cf3b723560d89d889754f7c49af563e25e7bd1e7e1b211c4008e149d1b889a626d19b0a001050fd84ffe05f3ede4a6b03fd759e2c60c3b9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.8.debian.tar.xz' glibc_2.35-0ubuntu3.8.debian.tar.xz 937424 SHA512:4bd814571a66097dd9bf9c87c62ca9ea9e29b3a9c193be6b7a1dc25cf672641addce7c100e95e86d6fb4e4ee6f88eb847e6766285b60c6953587789d05f48abd
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -1698,12 +1704,12 @@ $ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.3.debian.tar.xz' perl_5.34.0-3ubuntu1.3.debian.tar.xz 194972 SHA512:2e59cdae22e90953cd91fd2c3f1c5b30ed92afc3b696d577719a8919d475fe52152fa2c7090d9a5f889e0816e847124e9457e0cd0dba206551303bd82297cad1
 ```
 
-### `dpkg` source package: `postgresql-14=14.11-0ubuntu0.22.04.1`
+### `dpkg` source package: `postgresql-14=14.12-0ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `libpq5:amd64=14.11-0ubuntu0.22.04.1`
-- `postgresql-client-14=14.11-0ubuntu0.22.04.1`
+- `libpq5:amd64=14.12-0ubuntu0.22.04.1`
+- `postgresql-client-14=14.12-0ubuntu0.22.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-client-14/copyright`)
 
@@ -1723,9 +1729,14 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `nagaysau-ishii`
 - `rijndael`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-14=14.12-0ubuntu0.22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.12-0ubuntu0.22.04.1.dsc' postgresql-14_14.12-0ubuntu0.22.04.1.dsc 3864 SHA512:3f86274e487b4a160d2e8bb43fae484305de137801f5db81659f11e556eda288aba5f89751724ecce436eaf45f960d06953f57f8c826ffc94051a0fffcd2c1a2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.12.orig.tar.gz' postgresql-14_14.12.orig.tar.gz 29266783 SHA512:467626e12ab8c91f82e3275bb129ece5e242ea9d77118fe3e482bbf3f79aa819ef15f96e0226bbd85a3fa010d54b906b8036394ea378a33dec9cac61c48090cc
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.12-0ubuntu0.22.04.1.debian.tar.xz' postgresql-14_14.12-0ubuntu0.22.04.1.debian.tar.xz 28348 SHA512:19d57c24799b6e7b4ee85bc0ff2ec1cb1aea9c4543d9d45af4c409604ef344b5774af899eaed943dab5f2a5eaab84bfcf5555f0341ccac78ce714319dea71243
+```
 
 ### `dpkg` source package: `postgresql-common=238`
 
