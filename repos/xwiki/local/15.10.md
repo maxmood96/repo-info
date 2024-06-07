@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f94444ed727fc13a5d30baca18cf7108dbf3b22baae5fa19c297403b974be154`
+- Image ID: `sha256:3ce092516e51794fde9194b4f50ebfb8a2bf3a2adcd6333cd5ec5434b443eb83`
 - Created: `2024-05-27T13:30:04Z`
 - Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
@@ -915,13 +915,13 @@ $ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu2.3
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.3.debian.tar.xz' glib2.0_2.72.4-0ubuntu2.3.debian.tar.xz 146736 SHA512:0c94042cdadf2ead450f5bc97e06fd503e4954488d423f08280a050098d3a7a4203640f7e677d2d567d5d44b73ec94d297d77ffb8d3452bb947b78c87c9d8221
 ```
 
-### `dpkg` source package: `glibc=2.35-0ubuntu3.7`
+### `dpkg` source package: `glibc=2.35-0ubuntu3.8`
 
 Binary Packages:
 
-- `libc-bin=2.35-0ubuntu3.7`
-- `libc6:amd64=2.35-0ubuntu3.7`
-- `locales=2.35-0ubuntu3.7`
+- `libc-bin=2.35-0ubuntu3.8`
+- `libc6:amd64=2.35-0ubuntu3.8`
+- `locales=2.35-0ubuntu3.8`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
@@ -929,9 +929,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.8.dsc' glibc_2.35-0ubuntu3.8.dsc 8917 SHA512:65d4e9f4ff2556677cf3b723560d89d889754f7c49af563e25e7bd1e7e1b211c4008e149d1b889a626d19b0a001050fd84ffe05f3ede4a6b03fd759e2c60c3b9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.8.debian.tar.xz' glibc_2.35-0ubuntu3.8.debian.tar.xz 937424 SHA512:4bd814571a66097dd9bf9c87c62ca9ea9e29b3a9c193be6b7a1dc25cf672641addce7c100e95e86d6fb4e4ee6f88eb847e6766285b60c6953587789d05f48abd
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -1106,11 +1112,11 @@ $ apt-get source -qq --print-uris grep=3.7-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.7-1build1.debian.tar.xz' grep_3.7-1build1.debian.tar.xz 18184 SHA512:cbefc3635a0b0acc33d8a052d3ca7d583adbd1bcfc384559076b5e4f5508b4a8301b0dd54a029aecbab925a6f916c99a2d5bebe0a6936fe5ffeb5a07a0d9a917
 ```
 
-### `dpkg` source package: `gst-plugins-base1.0=1.20.1-1ubuntu0.1`
+### `dpkg` source package: `gst-plugins-base1.0=1.20.1-1ubuntu0.2`
 
 Binary Packages:
 
-- `libgstreamer-plugins-base1.0-0:amd64=1.20.1-1ubuntu0.1`
+- `libgstreamer-plugins-base1.0-0:amd64=1.20.1-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright`)
 
@@ -1121,9 +1127,14 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright
 - `LGPL-2+`
 - `MIT/X11 (BSD like) LGPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gst-plugins-base1.0=1.20.1-1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1-1ubuntu0.2.dsc' gst-plugins-base1.0_1.20.1-1ubuntu0.2.dsc 3796 SHA512:3fe509406d9037ea60532876281b91ec9effce507f45e36e3b50d40a1283a0c89a36e82c69d17de253e3c31e4d5f3b217b69074151c1164fcaffea1119140b28
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1.orig.tar.xz' gst-plugins-base1.0_1.20.1.orig.tar.xz 3290068 SHA512:679a0eee1973fa9612e2e24978e2c2d9d8fdc5732e1699b4a87712881f1549d0811719a13ff4fe77b91322ca4425c39623b371703f6b3a36fb7238b977d3e541
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1-1ubuntu0.2.debian.tar.xz' gst-plugins-base1.0_1.20.1-1ubuntu0.2.debian.tar.xz 45856 SHA512:d449ce097ffabf9e5008a9033aac41fc0be0c80d635e49edbcb52731ac6c57699d59f6cd867e95d9d58119434f08f3965505976b70b8360a69b1bd3641af2908
+```
 
 ### `dpkg` source package: `gstreamer1.0=1.20.3-0ubuntu1`
 

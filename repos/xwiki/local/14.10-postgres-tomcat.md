@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5219b0b86d1f1597804fad012f75dc86d145c2974bc408fd351e72c23f6972c5`
+- Image ID: `sha256:5d352cb710c12568dd153e56c00a5fa68761b1ccdcb610eac4fc03e4f44939c7`
 - Created: `2024-02-13T09:10:03Z`
 - Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
@@ -889,11 +889,11 @@ $ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.debian.tar.xz 575908 SHA512:d1bf37d9af699430d3b107d0966194b20aef22654337efdb99971b270609785020dd1f04ce6a0f3f3eb0dbad704b46e9d9e5dfa6a497e98c78a867f5bc290038
 ```
 
-### `dpkg` source package: `glib2.0=2.72.4-0ubuntu2.2`
+### `dpkg` source package: `glib2.0=2.72.4-0ubuntu2.3`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.72.4-0ubuntu2.2`
+- `libglib2.0-0:amd64=2.72.4-0ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
@@ -901,17 +901,22 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 - `GPL-2+`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.3.dsc' glib2.0_2.72.4-0ubuntu2.3.dsc 3670 SHA512:bea1f5359cdfc0cf6403812b87263221523a54e50726fa7a2232e08f0eda35e3e23c6b98d1a978bfe141fc9a50732a335e5f7570489dafd042038f4ed2534f1e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4.orig.tar.xz' glib2.0_2.72.4.orig.tar.xz 4884256 SHA512:b4e2e0985e2184ee9656c4f1b4e15d8d1264f3d23d31349bc43d92e8432cffa48e1685c40517efb08dc5b57b8285acf65f2747deeb50e50d9cacec7160e7edf8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.3.debian.tar.xz' glib2.0_2.72.4-0ubuntu2.3.debian.tar.xz 146736 SHA512:0c94042cdadf2ead450f5bc97e06fd503e4954488d423f08280a050098d3a7a4203640f7e677d2d567d5d44b73ec94d297d77ffb8d3452bb947b78c87c9d8221
+```
 
-### `dpkg` source package: `glibc=2.35-0ubuntu3.7`
+### `dpkg` source package: `glibc=2.35-0ubuntu3.8`
 
 Binary Packages:
 
-- `libc-bin=2.35-0ubuntu3.7`
-- `libc6:amd64=2.35-0ubuntu3.7`
-- `locales=2.35-0ubuntu3.7`
+- `libc-bin=2.35-0ubuntu3.8`
+- `libc6:amd64=2.35-0ubuntu3.8`
+- `locales=2.35-0ubuntu3.8`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
@@ -919,9 +924,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.8.dsc' glibc_2.35-0ubuntu3.8.dsc 8917 SHA512:65d4e9f4ff2556677cf3b723560d89d889754f7c49af563e25e7bd1e7e1b211c4008e149d1b889a626d19b0a001050fd84ffe05f3ede4a6b03fd759e2c60c3b9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.8.debian.tar.xz' glibc_2.35-0ubuntu3.8.debian.tar.xz 937424 SHA512:4bd814571a66097dd9bf9c87c62ca9ea9e29b3a9c193be6b7a1dc25cf672641addce7c100e95e86d6fb4e4ee6f88eb847e6766285b60c6953587789d05f48abd
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -1096,11 +1107,11 @@ $ apt-get source -qq --print-uris grep=3.7-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.7-1build1.debian.tar.xz' grep_3.7-1build1.debian.tar.xz 18184 SHA512:cbefc3635a0b0acc33d8a052d3ca7d583adbd1bcfc384559076b5e4f5508b4a8301b0dd54a029aecbab925a6f916c99a2d5bebe0a6936fe5ffeb5a07a0d9a917
 ```
 
-### `dpkg` source package: `gst-plugins-base1.0=1.20.1-1ubuntu0.1`
+### `dpkg` source package: `gst-plugins-base1.0=1.20.1-1ubuntu0.2`
 
 Binary Packages:
 
-- `libgstreamer-plugins-base1.0-0:amd64=1.20.1-1ubuntu0.1`
+- `libgstreamer-plugins-base1.0-0:amd64=1.20.1-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright`)
 
@@ -1111,9 +1122,14 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright
 - `LGPL-2+`
 - `MIT/X11 (BSD like) LGPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gst-plugins-base1.0=1.20.1-1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1-1ubuntu0.2.dsc' gst-plugins-base1.0_1.20.1-1ubuntu0.2.dsc 3796 SHA512:3fe509406d9037ea60532876281b91ec9effce507f45e36e3b50d40a1283a0c89a36e82c69d17de253e3c31e4d5f3b217b69074151c1164fcaffea1119140b28
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1.orig.tar.xz' gst-plugins-base1.0_1.20.1.orig.tar.xz 3290068 SHA512:679a0eee1973fa9612e2e24978e2c2d9d8fdc5732e1699b4a87712881f1549d0811719a13ff4fe77b91322ca4425c39623b371703f6b3a36fb7238b977d3e541
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1-1ubuntu0.2.debian.tar.xz' gst-plugins-base1.0_1.20.1-1ubuntu0.2.debian.tar.xz 45856 SHA512:d449ce097ffabf9e5008a9033aac41fc0be0c80d635e49edbcb52731ac6c57699d59f6cd867e95d9d58119434f08f3965505976b70b8360a69b1bd3641af2908
+```
 
 ### `dpkg` source package: `gstreamer1.0=1.20.3-0ubuntu1`
 
@@ -2123,32 +2139,32 @@ $ apt-get source -qq --print-uris libpsl=0.21.0-1.2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.21.0-1.2build2.debian.tar.xz' libpsl_0.21.0-1.2build2.debian.tar.xz 12896 SHA512:9d8c7130bee8c521e4f1ab1e13edfe2ed2fec538bda9133662d4120e8f5303595e6f27f466f30b07e61b94e138dd2787e17af91b8cc29275b5b4d2e098133eee
 ```
 
-### `dpkg` source package: `libreoffice=1:7.3.7-0ubuntu0.22.04.4`
+### `dpkg` source package: `libreoffice=1:7.3.7-0ubuntu0.22.04.5`
 
 Binary Packages:
 
-- `fonts-opensymbol=2:102.12+LibO7.3.7-0ubuntu0.22.04.4`
-- `libreoffice=1:7.3.7-0ubuntu0.22.04.4`
-- `libreoffice-base=1:7.3.7-0ubuntu0.22.04.4`
-- `libreoffice-base-core=1:7.3.7-0ubuntu0.22.04.4`
-- `libreoffice-base-drivers=1:7.3.7-0ubuntu0.22.04.4`
-- `libreoffice-calc=1:7.3.7-0ubuntu0.22.04.4`
-- `libreoffice-common=1:7.3.7-0ubuntu0.22.04.4`
-- `libreoffice-core=1:7.3.7-0ubuntu0.22.04.4`
-- `libreoffice-draw=1:7.3.7-0ubuntu0.22.04.4`
-- `libreoffice-impress=1:7.3.7-0ubuntu0.22.04.4`
-- `libreoffice-math=1:7.3.7-0ubuntu0.22.04.4`
-- `libreoffice-report-builder-bin=1:7.3.7-0ubuntu0.22.04.4`
-- `libreoffice-style-colibre=1:7.3.7-0ubuntu0.22.04.4`
-- `libreoffice-writer=1:7.3.7-0ubuntu0.22.04.4`
-- `libuno-cppu3=1:7.3.7-0ubuntu0.22.04.4`
-- `libuno-cppuhelpergcc3-3=1:7.3.7-0ubuntu0.22.04.4`
-- `libuno-purpenvhelpergcc3-3=1:7.3.7-0ubuntu0.22.04.4`
-- `libuno-sal3=1:7.3.7-0ubuntu0.22.04.4`
-- `libuno-salhelpergcc3-3=1:7.3.7-0ubuntu0.22.04.4`
-- `python3-uno=1:7.3.7-0ubuntu0.22.04.4`
-- `uno-libs-private=1:7.3.7-0ubuntu0.22.04.4`
-- `ure=1:7.3.7-0ubuntu0.22.04.4`
+- `fonts-opensymbol=2:102.12+LibO7.3.7-0ubuntu0.22.04.5`
+- `libreoffice=1:7.3.7-0ubuntu0.22.04.5`
+- `libreoffice-base=1:7.3.7-0ubuntu0.22.04.5`
+- `libreoffice-base-core=1:7.3.7-0ubuntu0.22.04.5`
+- `libreoffice-base-drivers=1:7.3.7-0ubuntu0.22.04.5`
+- `libreoffice-calc=1:7.3.7-0ubuntu0.22.04.5`
+- `libreoffice-common=1:7.3.7-0ubuntu0.22.04.5`
+- `libreoffice-core=1:7.3.7-0ubuntu0.22.04.5`
+- `libreoffice-draw=1:7.3.7-0ubuntu0.22.04.5`
+- `libreoffice-impress=1:7.3.7-0ubuntu0.22.04.5`
+- `libreoffice-math=1:7.3.7-0ubuntu0.22.04.5`
+- `libreoffice-report-builder-bin=1:7.3.7-0ubuntu0.22.04.5`
+- `libreoffice-style-colibre=1:7.3.7-0ubuntu0.22.04.5`
+- `libreoffice-writer=1:7.3.7-0ubuntu0.22.04.5`
+- `libuno-cppu3=1:7.3.7-0ubuntu0.22.04.5`
+- `libuno-cppuhelpergcc3-3=1:7.3.7-0ubuntu0.22.04.5`
+- `libuno-purpenvhelpergcc3-3=1:7.3.7-0ubuntu0.22.04.5`
+- `libuno-sal3=1:7.3.7-0ubuntu0.22.04.5`
+- `libuno-salhelpergcc3-3=1:7.3.7-0ubuntu0.22.04.5`
+- `python3-uno=1:7.3.7-0ubuntu0.22.04.5`
+- `uno-libs-private=1:7.3.7-0ubuntu0.22.04.5`
+- `ure=1:7.3.7-0ubuntu0.22.04.5`
 
 Licenses: (parsed from: `/usr/share/doc/fonts-opensymbol/copyright`, `/usr/share/doc/libreoffice/copyright`, `/usr/share/doc/libreoffice-base/copyright`, `/usr/share/doc/libreoffice-base-core/copyright`, `/usr/share/doc/libreoffice-base-drivers/copyright`, `/usr/share/doc/libreoffice-calc/copyright`, `/usr/share/doc/libreoffice-common/copyright`, `/usr/share/doc/libreoffice-core/copyright`, `/usr/share/doc/libreoffice-draw/copyright`, `/usr/share/doc/libreoffice-impress/copyright`, `/usr/share/doc/libreoffice-math/copyright`, `/usr/share/doc/libreoffice-report-builder-bin/copyright`, `/usr/share/doc/libreoffice-style-colibre/copyright`, `/usr/share/doc/libreoffice-writer/copyright`, `/usr/share/doc/libuno-cppu3/copyright`, `/usr/share/doc/libuno-cppuhelpergcc3-3/copyright`, `/usr/share/doc/libuno-purpenvhelpergcc3-3/copyright`, `/usr/share/doc/libuno-sal3/copyright`, `/usr/share/doc/libuno-salhelpergcc3-3/copyright`, `/usr/share/doc/python3-uno/copyright`, `/usr/share/doc/uno-libs-private/copyright`, `/usr/share/doc/ure/copyright`)
 
@@ -2169,9 +2185,19 @@ Licenses: (parsed from: `/usr/share/doc/fonts-opensymbol/copyright`, `/usr/share
 - `MPL_2.0`
 - `other`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libreoffice=1:7.3.7-0ubuntu0.22.04.5
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7-0ubuntu0.22.04.5.dsc' libreoffice_7.3.7-0ubuntu0.22.04.5.dsc 25782 SHA512:44ed547f68422b8a6848c9829e34fcba156b1f201bf05f883af2c819dacc637bdad5c207629179f49b7a410d97ee081e227c4456e9385f18c91cc1bd441d2aa4
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig-helpcontent2.tar.xz' libreoffice_7.3.7.orig-helpcontent2.tar.xz 112067652 SHA512:5f29783b6483824a61c700ad7516a97e69373498ca7dcbe0e24229246d2bd0fb24a2c9e555107af21b9eed35c504f0b65c4e5b5a2aadb79de1a4fa8b21e2bc98
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig-tarballs.tar.xz' libreoffice_7.3.7.orig-tarballs.tar.xz 324661956 SHA512:d13cc4817a4fb298049f0306599cf25dee5906a920871c5ef58cdea9019e49580587b51c8af29946eea2d9720ca5f66ee9e2bc8a67ff7d2b1b8377bc02930521
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig-translations.tar.xz' libreoffice_7.3.7.orig-translations.tar.xz 208926792 SHA512:d9895f425c7d5928915858af4d560db0b6380477b87add69c103789b4eff3b169360164609c480b9b5591a69f4130b4c77a0741b00b839126d7ce03cbcd4a6f9
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig-yaru.tar.xz' libreoffice_7.3.7.orig-yaru.tar.xz 19257660 SHA512:a3bb9e04992224dba3f0a1a2edcf59a06b1c6dfaf71ef8de1fff87f7f6ade96a4557f171f374bc29e661765ef56d2f72e41c574b983d0fa9c3e3acf84439ba03
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig.tar.xz' libreoffice_7.3.7.orig.tar.xz 256653492 SHA512:f7b6279f5ef9f5ad8290d2bdf4fd54f8df7775a21094ba762dbd9299effab31d4f2c6dff9f4b3d9c5673596931df1d16b195474b547007bfc9a396c47e5e181c
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig.tar.xz.asc' libreoffice_7.3.7.orig.tar.xz.asc 833 SHA512:d3cf63b93c397cdf5ecee84b4e544855f5783092fc1e06e6cf798a4a2c908ae389e0111b40828adbeab3f878db1e831ebd0daa50597bc0ff4b27be7b8acdd089
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7-0ubuntu0.22.04.5.debian.tar.xz' libreoffice_7.3.7-0ubuntu0.22.04.5.debian.tar.xz 2408368 SHA512:096ddc7df54df5dd802af4b7493f867eddc61c46f9f4ee9e8cfb96aeae3581c2ad4906bbc2b1a69616e412e17e15f70d06967af415695b880cfac282cd2bb911
+```
 
 ### `dpkg` source package: `librevenge=0.0.4-6ubuntu7`
 
@@ -3347,11 +3373,11 @@ $ apt-get source -qq --print-uris pixman=0.40.0-1ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.40.0-1ubuntu0.22.04.1.diff.gz' pixman_0.40.0-1ubuntu0.22.04.1.diff.gz 327740 SHA512:68949ad2589a7ae9fbe217a3d7fc58894d5a1b4bc6e219840b8620141fa2240b44e6a393bf847bfd18f5fcab2c6c6f143273936b076c29e1f979052b1275cb8e
 ```
 
-### `dpkg` source package: `poppler=22.02.0-2ubuntu0.3`
+### `dpkg` source package: `poppler=22.02.0-2ubuntu0.4`
 
 Binary Packages:
 
-- `libpoppler118:amd64=22.02.0-2ubuntu0.3`
+- `libpoppler118:amd64=22.02.0-2ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler118/copyright`)
 
@@ -3362,10 +3388,10 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler118/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.3
-'http://security.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.3.dsc' poppler_22.02.0-2ubuntu0.3.dsc 3230 SHA512:78fcf2ace95c4b8707f61b2349a4d713574ed7ec20914730f7d57f996c29db8f948e838cce18cc0ec08cf904b18b2fb3e20face50234e2d35c441021832b0a1b
-'http://security.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
-'http://security.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.3.debian.tar.xz' poppler_22.02.0-2ubuntu0.3.debian.tar.xz 41588 SHA512:8e2bf94939f6a74db240f3fe2cc6788c6943c09eed69b9d53d0541937b0cca9e123e07942b60a9771edfd571d4f2630469a1297d338eceb88a1e9e6739dd9e6f
+$ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.4.dsc' poppler_22.02.0-2ubuntu0.4.dsc 3393 SHA512:c9f03d294ea673ac41dc990c1ee674b1778c5ce13ac2391cdb861de8bcbef7286a9df60cfbd3e8fad090a9fc2626a3696fbe70ef408b5d5fb484f6f8c7746bd2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.4.debian.tar.xz' poppler_22.02.0-2ubuntu0.4.debian.tar.xz 42228 SHA512:8d9aa85ff7355b198c37e9a8cadd51303ef8596e3bc5509b153807a6fdbb64d60230083e162f4b0a1cec34ef7497c572447b7f7289f0de98d1c3b13238edff70
 ```
 
 ### `dpkg` source package: `procps=2:3.3.17-6ubuntu2.1`
