@@ -1,10 +1,10 @@
-# `php:8.3.7-zts-alpine3.19`
+# `php:8.3.8-zts-alpine3.19`
 
 ## Docker Metadata
 
-- Image ID: `sha256:62a106e097c27802d9b27bdbd9387e755d2597d9c686d82ed6542b741211d452`
-- Created: `2024-05-10T22:08:37.4029398Z`
-- Virtual Size: ~ 127.22 Mb  
+- Image ID: `sha256:983eb1456feeaea61d36dcb8df86a8104690b68d4d72ef0acf29aac70c18d3c1`
+- Created: `2024-06-06T20:16:46.057122237Z`
+- Virtual Size: ~ 126.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.7`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.7.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.7.tar.xz.asc`
-  - `PHP_SHA256=d53433c1ca6b2c8741afa7c524272e6806c1e895e5912a058494fea89988570a`
+  - `PHP_VERSION=8.3.8`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.8.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.8.tar.xz.asc`
+  - `PHP_SHA256=aea358b56186f943c2bbd350c9005b9359133d47e954cfc561385319ae5bb8d7`
 
 ## `apk` (`.apk`-based packages)
 
@@ -180,16 +180,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20230506-r0 description:
+ca-certificates-20240226-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20230506-r0 webpage:
+ca-certificates-20240226-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20230506-r0 installed size:
-688 KiB
+ca-certificates-20240226-r0 installed size:
+712 KiB
 
-ca-certificates-20230506-r0 license:
+ca-certificates-20240226-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -282,16 +282,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.4-r6 description:
+libcrypto3-3.1.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.4-r6 webpage:
+libcrypto3-3.1.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.4-r6 installed size:
-4500 KiB
+libcrypto3-3.1.5-r0 installed size:
+4512 KiB
 
-libcrypto3-3.1.4-r6 license:
+libcrypto3-3.1.5-r0 license:
 Apache-2.0
 
 ```
@@ -384,16 +384,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.4-r6 description:
+libssl3-3.1.5-r0 description:
 SSL shared libraries
 
-libssl3-3.1.4-r6 webpage:
+libssl3-3.1.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.4-r6 installed size:
+libssl3-3.1.5-r0 installed size:
 548 KiB
 
-libssl3-3.1.4-r6 license:
+libssl3-3.1.5-r0 license:
 Apache-2.0
 
 ```
@@ -418,16 +418,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.11.7-r0 description:
+libxml2-2.11.8-r0 description:
 XML parsing library, version 2
 
-libxml2-2.11.7-r0 webpage:
+libxml2-2.11.8-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.11.7-r0 installed size:
+libxml2-2.11.8-r0 installed size:
 1092 KiB
 
-libxml2-2.11.7-r0 license:
+libxml2-2.11.8-r0 license:
 MIT
 
 ```
@@ -520,16 +520,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.4-r6 description:
+openssl-3.1.5-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.4-r6 webpage:
+openssl-3.1.5-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.1.4-r6 installed size:
+openssl-3.1.5-r0 installed size:
 732 KiB
 
-openssl-3.1.4-r6 license:
+openssl-3.1.5-r0 license:
 Apache-2.0
 
 ```
