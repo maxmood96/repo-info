@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:24ca9625c6e1c07bb4d75129fe79438206fd9403404137a389cec91b52c88119`
+- Image ID: `sha256:30ba14d1e81020b08e8c1277ab9c18902c170db5567fcb69b3760053a0196cfb`
 - Created: `2024-01-18T04:04:59Z`
-- Virtual Size: ~ 638.69 Mb  
+- Virtual Size: ~ 638.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -784,12 +784,12 @@ $ apt-get source -qq --print-uris git-lfs=2.9.2-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_2.9.2-1.debian.tar.xz' git-lfs_2.9.2-1.debian.tar.xz 4112 SHA256:342408ebd4c5d2270f7ee16a8183761dd0015ded0d3fef36b6c5c34fcc32cff2
 ```
 
-### `dpkg` source package: `git=1:2.25.1-1ubuntu3.11`
+### `dpkg` source package: `git=1:2.25.1-1ubuntu3.12`
 
 Binary Packages:
 
-- `git=1:2.25.1-1ubuntu3.11`
-- `git-man=1:2.25.1-1ubuntu3.11`
+- `git=1:2.25.1-1ubuntu3.12`
+- `git-man=1:2.25.1-1ubuntu3.12`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -812,26 +812,36 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu3.12
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.12.dsc' git_2.25.1-1ubuntu3.12.dsc 2966 SHA512:e05855d12532e12ae26353b9790858bcde3d8906f97291b0f742042870a4b7c3b4a0edb328e2771fbf2eae992788b190751008974aef7ae2df38d45a16a536bb
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1.orig.tar.xz' git_2.25.1.orig.tar.xz 5875548 SHA512:15241143acfd8542d85d2709ac3c80dbd6e8d5234438f70c4f33cc71a2bdec3e32938df7f6351e2746d570b021d3bd0b70474ea4beec0c51d1fc45f9c287b344
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.12.debian.tar.xz' git_2.25.1-1ubuntu3.12.debian.tar.xz 713156 SHA512:ff693a583cd3288be10f7a0b8a5cd678720962eca29fb25c2e45e0503e1bc973966e00ff311abb40db871da799f626e4bb88c1e4dd6cb47c494fdf69774d42a4
+```
 
-### `dpkg` source package: `glibc=2.31-0ubuntu9.15`
+### `dpkg` source package: `glibc=2.31-0ubuntu9.16`
 
 Binary Packages:
 
-- `libc-bin=2.31-0ubuntu9.15`
-- `libc6:amd64=2.31-0ubuntu9.15`
-- `locales=2.31-0ubuntu9.15`
+- `libc-bin=2.31-0ubuntu9.16`
+- `libc6:amd64=2.31-0ubuntu9.16`
+- `locales=2.31-0ubuntu9.16`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.16
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.16.dsc' glibc_2.31-0ubuntu9.16.dsc 9585 SHA512:30e3507d4fe12a3fbd7c00b8ba3f051288f06502c204e9fe6a027be38587a61be8344d4875685cdf7920e54f811a945605aa1a8c11a068c2c71dba8892832d75
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.16.debian.tar.xz' glibc_2.31-0ubuntu9.16.debian.tar.xz 890412 SHA512:663f45bed9dd4829df3ff958c0daf0acf367270c39efa039694c18d17d459e02c4cb5ed1bbd2a290545d7ea29f2ac24ad9a7af3ef9537fa4901879b8899d70bb
+```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4ubuntu0.1`
 

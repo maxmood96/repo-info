@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:09e9549a594670efe8c92a35bceb0d9cb61b89848669d19b4fdad65b77c2e07b`
+- Image ID: `sha256:24324d71bf05df5c0a37de57e6dd999a23f664367bc9df2ef4c10bd9d3caa3d1`
 - Created: `2024-06-01T15:03:05Z`
-- Virtual Size: ~ 1.88 Gb  
+- Virtual Size: ~ 1.86 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -918,32 +918,17 @@ $ apt-get source -qq --print-uris git=1:2.34.1-1ubuntu1.11
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.11.debian.tar.xz' git_2.34.1-1ubuntu1.11.debian.tar.xz 765504 SHA512:8a81dc61e3535d27396e6e172a8c1dea640cb9c571ca57bb81a764ac21d6c31f1929349c7025305c6dd58ab4cd2ba801a36961ee8a5762d64c5049c8851c2fa6
 ```
 
-### `dpkg` source package: `glibc=2.35-0ubuntu3.7`
-
-Binary Packages:
-
-- `libc-bin=2.35-0ubuntu3.7`
-
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
-
-- `GFDL-1.3`
-- `GPL-2`
-- `LGPL-2.1`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.8`
 
 Binary Packages:
 
+- `libc-bin=2.35-0ubuntu3.8`
 - `libc-dev-bin=2.35-0ubuntu3.8`
 - `libc6:amd64=2.35-0ubuntu3.8`
 - `libc6-dev:amd64=2.35-0ubuntu3.8`
 - `locales=2.35-0ubuntu3.8`
 
-Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GFDL-1.3`
 - `GPL-2`
@@ -1787,14 +1772,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.15.0-107.117
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-107.117.dsc' linux_5.15.0-107.117.dsc 7755 SHA512:54269e3991b7e984f31b75d9dc8d7e44b5a72efec38f05f0b9a747a91725b8abf3ec88640e58f9d60683231b663febf9627648d200fe8c19702b245c205c8bb5
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-107.117.diff.gz' linux_5.15.0-107.117.diff.gz 9571027 SHA512:ff89b73feed4846b01e043ad2409902ca8c5db6c86d1e3065b9deece50874c6d2aa47b3559c9023414889400731c1045d186ec9fcd0edcff65fd7fa629f07580
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
 
