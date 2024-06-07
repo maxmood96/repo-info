@@ -1,8 +1,138 @@
 ## `swift:fedora39`
 
 ```console
-$ docker pull swift@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull swift@sha256:f5e296ce778d3b31042cfc62f8ecc1ff7a535874093cf8aff4539b1ce8261880
 ```
 
--	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 2
+	-	linux; amd64
+	-	linux; arm64 variant v8
+
+### `swift:fedora39` - linux; amd64
+
+```console
+$ docker pull swift@sha256:8390d2b580d1d68af9979b9ae80f75cbefc2d6d774af465abe27f103a219250e
+```
+
+-	Docker Version: 23.0.11
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.1 GB (1139159033 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:928542c1716662587be4f6f4ac9eb8f72de6e918b0c2844b462e17c25b194757`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Thu, 01 Apr 2021 17:59:37 GMT
+LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
+# Mon, 13 Mar 2023 21:20:05 GMT
+ENV DISTTAG=f39container FGC=f39 FBR=f39
+# Mon, 22 Apr 2024 18:26:09 GMT
+ADD file:0a4ce37f1f68b8e66d48d903931e84626c1e1f914f3c4b36a03d8028d11a49db in / 
+# Mon, 22 Apr 2024 18:26:10 GMT
+CMD ["/bin/bash"]
+# Fri, 07 Jun 2024 04:12:30 GMT
+LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
+# Fri, 07 Jun 2024 04:12:30 GMT
+LABEL description=Docker Container for the Swift programming language
+# Fri, 07 Jun 2024 04:13:26 GMT
+RUN yum -y install   binutils   gcc   git   unzip   libcurl-devel   libedit-devel   libicu-devel   sqlite-devel   libuuid-devel   libxml2-devel   python3-devel
+# Fri, 07 Jun 2024 04:13:28 GMT
+ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
+# Fri, 07 Jun 2024 04:13:28 GMT
+ARG SWIFT_PLATFORM=fedora39
+# Fri, 07 Jun 2024 04:13:28 GMT
+ARG SWIFT_BRANCH=swift-5.10.1-release
+# Fri, 07 Jun 2024 04:13:28 GMT
+ARG SWIFT_VERSION=swift-5.10.1-RELEASE
+# Fri, 07 Jun 2024 04:13:28 GMT
+ARG SWIFT_WEBROOT=https://download.swift.org
+# Fri, 07 Jun 2024 04:13:29 GMT
+ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=fedora39 SWIFT_BRANCH=swift-5.10.1-release SWIFT_VERSION=swift-5.10.1-RELEASE SWIFT_WEBROOT=https://download.swift.org
+# Fri, 07 Jun 2024 04:14:07 GMT
+RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH_NAME##*-}" in         'x86_64')             OS_ARCH_SUFFIX='';             ;;         'aarch64')             OS_ARCH_SUFFIX='-aarch64';             ;;         *) echo >&2 "error: unsupported architecture: '$ARCH_NAME'"; exit 1 ;;     esac;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)$OS_ARCH_SUFFIX"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && echo $SWIFT_BIN_URL     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver keyserver.ubuntu.com --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz
+# Fri, 07 Jun 2024 04:14:11 GMT
+RUN swift --version
+```
+
+-	Layers:
+	-	`sha256:137963121e370752342e769f362b03097609225e3ab36a2e489546aa6eb7ad09`  
+		Last Modified: Mon, 22 Apr 2024 18:27:09 GMT  
+		Size: 64.7 MB (64660672 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b584d32179b8b8e81786a960e02fd7b153395cb830dda69156f13915d8fa89b8`  
+		Last Modified: Fri, 07 Jun 2024 04:37:31 GMT  
+		Size: 353.8 MB (353805314 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3fde78a55dfc4e6f18ba4fbc4b3d029e50897bbe33ff567e73ba40d41ba4ed0f`  
+		Last Modified: Fri, 07 Jun 2024 04:38:38 GMT  
+		Size: 720.7 MB (720692871 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0ae84a4f617a9bb3f348f0ba39e7441fe20e25ef8b3c69a6f26b917a91bdef07`  
+		Last Modified: Fri, 07 Jun 2024 04:37:00 GMT  
+		Size: 176.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `swift:fedora39` - linux; arm64 variant v8
+
+```console
+$ docker pull swift@sha256:f356e3689aedadfbb23290fb79167878ab4673823b6f416b78dbc380d7b4e463
+```
+
+-	Docker Version: 23.0.11
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.0 GB (1017343165 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d0e51e6c67d2f6d89cd8f11da5978903bb092c5367b03182733a13a308335ada`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Thu, 03 Nov 2022 19:58:13 GMT
+LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
+# Mon, 13 Mar 2023 20:39:50 GMT
+ENV DISTTAG=f39container FGC=f39 FBR=f39
+# Mon, 22 Apr 2024 17:40:07 GMT
+ADD file:95cfb02bd93b25bcbe27281ad9d77e7f3351ade6bab85ce9b6160d74235b29a8 in / 
+# Mon, 22 Apr 2024 17:40:09 GMT
+CMD ["/bin/bash"]
+# Fri, 07 Jun 2024 03:39:07 GMT
+LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
+# Fri, 07 Jun 2024 03:39:07 GMT
+LABEL description=Docker Container for the Swift programming language
+# Fri, 07 Jun 2024 03:51:38 GMT
+RUN yum -y install   binutils   gcc   git   unzip   libcurl-devel   libedit-devel   libicu-devel   sqlite-devel   libuuid-devel   libxml2-devel   python3-devel
+# Fri, 07 Jun 2024 03:51:42 GMT
+ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
+# Fri, 07 Jun 2024 03:51:42 GMT
+ARG SWIFT_PLATFORM=fedora39
+# Fri, 07 Jun 2024 03:51:42 GMT
+ARG SWIFT_BRANCH=swift-5.10.1-release
+# Fri, 07 Jun 2024 03:51:42 GMT
+ARG SWIFT_VERSION=swift-5.10.1-RELEASE
+# Fri, 07 Jun 2024 03:51:43 GMT
+ARG SWIFT_WEBROOT=https://download.swift.org
+# Fri, 07 Jun 2024 03:51:43 GMT
+ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=fedora39 SWIFT_BRANCH=swift-5.10.1-release SWIFT_VERSION=swift-5.10.1-RELEASE SWIFT_WEBROOT=https://download.swift.org
+# Fri, 07 Jun 2024 03:52:29 GMT
+RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH_NAME##*-}" in         'x86_64')             OS_ARCH_SUFFIX='';             ;;         'aarch64')             OS_ARCH_SUFFIX='-aarch64';             ;;         *) echo >&2 "error: unsupported architecture: '$ARCH_NAME'"; exit 1 ;;     esac;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)$OS_ARCH_SUFFIX"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && echo $SWIFT_BIN_URL     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver keyserver.ubuntu.com --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz
+# Fri, 07 Jun 2024 03:52:42 GMT
+RUN swift --version
+```
+
+-	Layers:
+	-	`sha256:22bb2152dc6386a1d2269ed00e37f29db25a6003edd92e1e785aace8b93f657c`  
+		Last Modified: Mon, 22 Apr 2024 17:41:02 GMT  
+		Size: 63.3 MB (63332208 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7926c843cb485ace41c41024443ea353c591f1566a888364faf317827a1262c4`  
+		Last Modified: Fri, 07 Jun 2024 04:08:18 GMT  
+		Size: 336.6 MB (336565406 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5e1ab81a3ed7dfcd9fd66cca45393ab864b1340282056308cc57a984a23bc0a2`  
+		Last Modified: Fri, 07 Jun 2024 04:08:58 GMT  
+		Size: 617.4 MB (617445375 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0d146c4108b2d367365676112e20d7e851adc078732196534575ec4905a6282e`  
+		Last Modified: Fri, 07 Jun 2024 04:07:56 GMT  
+		Size: 176.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

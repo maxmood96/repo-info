@@ -1,7 +1,7 @@
 ## `swift:centos7-slim`
 
 ```console
-$ docker pull swift@sha256:892993d7f20c790be3116f5d013b4bc0591e9e8819b9c70359d4bc677977109a
+$ docker pull swift@sha256:1bf93592eee26817a99019e6e469cca03bf27127eb9d481dd390df1bf0889510
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull swift@sha256:892993d7f20c790be3116f5d013b4bc0591e9e8819b9c70359d4b
 ### `swift:centos7-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:1a46ba2e6305a8417ee908fb761f5ae3e7eded649eff844b8a59294c7a62a5cc
+$ docker pull swift@sha256:f9fe9913aa3c76f9ebc6bcb81aba3dcbe8b1ff107f5bf49285fb11e1847fe0fe
 ```
 
--	Docker Version: 20.10.23
+-	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **116.7 MB (116743084 bytes)**  
+-	Total Size: **116.7 MB (116743124 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9bd2893e5238afa0b6d5d30cf21037b1250685e1b16b392d20501a749194876f`
+-	Image ID: `sha256:65950182cf5fe9788ffad052653a75bd493a020d1f0abccbe905495192d1db98`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -28,23 +28,23 @@ ADD file:b3ebbe8bd304723d43b7b44a6d990cd657b63d93d6a2a9293983a30bfc1dfa53 in /
 LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20201113 org.opencontainers.image.title=CentOS Base Image org.opencontainers.image.vendor=CentOS org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.created=2020-11-13 00:00:00+00:00
 # Wed, 15 Sep 2021 18:20:23 GMT
 CMD ["/bin/bash"]
-# Thu, 28 Oct 2021 23:56:50 GMT
+# Fri, 07 Jun 2024 04:16:52 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Thu, 28 Oct 2021 23:56:50 GMT
+# Fri, 07 Jun 2024 04:16:52 GMT
 LABEL description=Docker Container for the Swift programming language
-# Thu, 28 Oct 2021 23:58:58 GMT
+# Fri, 07 Jun 2024 04:19:46 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Thu, 28 Oct 2021 23:58:58 GMT
+# Fri, 07 Jun 2024 04:19:46 GMT
 ARG SWIFT_PLATFORM=centos7
-# Wed, 06 Mar 2024 21:04:44 GMT
-ARG SWIFT_BRANCH=swift-5.10-release
-# Wed, 06 Mar 2024 21:04:45 GMT
-ARG SWIFT_VERSION=swift-5.10-RELEASE
-# Wed, 06 Mar 2024 21:04:45 GMT
+# Fri, 07 Jun 2024 04:19:46 GMT
+ARG SWIFT_BRANCH=swift-5.10.1-release
+# Fri, 07 Jun 2024 04:19:46 GMT
+ARG SWIFT_VERSION=swift-5.10.1-RELEASE
+# Fri, 07 Jun 2024 04:19:47 GMT
 ARG SWIFT_WEBROOT=https://download.swift.org
-# Wed, 06 Mar 2024 21:04:45 GMT
-ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=centos7 SWIFT_BRANCH=swift-5.10-release SWIFT_VERSION=swift-5.10-RELEASE SWIFT_WEBROOT=https://download.swift.org
-# Wed, 06 Mar 2024 21:05:12 GMT
+# Fri, 07 Jun 2024 04:19:47 GMT
+ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=centos7 SWIFT_BRANCH=swift-5.10.1-release SWIFT_VERSION=swift-5.10.1-RELEASE SWIFT_WEBROOT=https://download.swift.org
+# Fri, 07 Jun 2024 04:20:17 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver keyserver.ubuntu.com --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1         $SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX/usr/lib/swift/linux         $SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX/usr/libexec/swift/linux     && chmod -R o+r /usr/lib/swift /usr/libexec/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz
 ```
 
@@ -53,7 +53,7 @@ RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFOR
 		Last Modified: Sat, 14 Nov 2020 00:21:39 GMT  
 		Size: 76.1 MB (76097157 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9aee98548f1db59109c1a84eef730a5016c33bb0fa2126ff426ffbe9aeb67624`  
-		Last Modified: Wed, 06 Mar 2024 21:18:37 GMT  
-		Size: 40.6 MB (40645927 bytes)  
+	-	`sha256:58d219c7ae40bf4e95e449d84f90b53c5c2f160cdc3a391f3c45b6c5fb3dd72a`  
+		Last Modified: Fri, 07 Jun 2024 04:42:36 GMT  
+		Size: 40.6 MB (40645967 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
