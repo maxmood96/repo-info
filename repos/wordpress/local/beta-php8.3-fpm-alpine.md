@@ -1,10 +1,10 @@
-# `wordpress:beta-6.5.4-RC1-php8.3-fpm-alpine`
+# `wordpress:beta-6.6-beta1-php8.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cb967cf324b1b8e95d3be34a2f89887798af3397da6a975ea44db4f01b221a73`
-- Created: `2024-05-30T19:03:11Z`
-- Virtual Size: ~ 257.31 Mb  
+- Image ID: `sha256:799fb293254b24697c1f67b5bf457c6d4c2726455e3873d340d0f410e8619b13`
+- Created: `2024-06-04T19:03:12Z`
+- Virtual Size: ~ 257.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.7`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.7.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.7.tar.xz.asc`
-  - `PHP_SHA256=d53433c1ca6b2c8741afa7c524272e6806c1e895e5912a058494fea89988570a`
+  - `PHP_VERSION=8.3.8`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.8.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.8.tar.xz.asc`
+  - `PHP_SHA256=aea358b56186f943c2bbd350c9005b9359133d47e954cfc561385319ae5bb8d7`
 
 ## `apk` (`.apk`-based packages)
 
@@ -452,16 +452,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.1.32-r1 description:
+imagemagick-7.1.1.32-r2 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.1.32-r1 webpage:
+imagemagick-7.1.1.32-r2 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.1.32-r1 installed size:
-4356 KiB
+imagemagick-7.1.1.32-r2 installed size:
+4340 KiB
 
-imagemagick-7.1.1.32-r1 license:
+imagemagick-7.1.1.32-r2 license:
 ImageMagick
 
 ```
@@ -469,16 +469,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.1.32-r1 description:
+imagemagick-jpeg-7.1.1.32-r2 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.1.32-r1 webpage:
+imagemagick-jpeg-7.1.1.32-r2 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.1.32-r1 installed size:
+imagemagick-jpeg-7.1.1.32-r2 installed size:
 84 KiB
 
-imagemagick-jpeg-7.1.1.32-r1 license:
+imagemagick-jpeg-7.1.1.32-r2 license:
 ImageMagick
 
 ```
@@ -486,16 +486,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.1.32-r1 description:
+imagemagick-libs-7.1.1.32-r2 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.1.32-r1 webpage:
+imagemagick-libs-7.1.1.32-r2 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.1.32-r1 installed size:
+imagemagick-libs-7.1.1.32-r2 installed size:
 4168 KiB
 
-imagemagick-libs-7.1.1.32-r1 license:
+imagemagick-libs-7.1.1.32-r2 license:
 ImageMagick
 
 ```
@@ -503,16 +503,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.1.32-r1 description:
+imagemagick-pdf-7.1.1.32-r2 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.1.32-r1 webpage:
+imagemagick-pdf-7.1.1.32-r2 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.1.32-r1 installed size:
+imagemagick-pdf-7.1.1.32-r2 installed size:
 156 KiB
 
-imagemagick-pdf-7.1.1.32-r1 license:
+imagemagick-pdf-7.1.1.32-r2 license:
 ImageMagick
 
 ```
@@ -520,16 +520,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.1.32-r1 description:
+imagemagick-tiff-7.1.1.32-r2 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.1.32-r1 webpage:
+imagemagick-tiff-7.1.1.32-r2 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.1.32-r1 installed size:
+imagemagick-tiff-7.1.1.32-r2 installed size:
 144 KiB
 
-imagemagick-tiff-7.1.1.32-r1 license:
+imagemagick-tiff-7.1.1.32-r2 license:
 ImageMagick
 
 ```
@@ -537,16 +537,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.1.32-r1 description:
+imagemagick-webp-7.1.1.32-r2 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.1.32-r1 webpage:
+imagemagick-webp-7.1.1.32-r2 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.1.32-r1 installed size:
+imagemagick-webp-7.1.1.32-r2 installed size:
 56 KiB
 
-imagemagick-webp-7.1.1.32-r1 license:
+imagemagick-webp-7.1.1.32-r2 license:
 ImageMagick
 
 ```

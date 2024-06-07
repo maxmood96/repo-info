@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:60f0e5a27b4cae208fbd0e3ac74fe2d8f3d1935abaa7b4af56dd9396eb98c34d`
+- Image ID: `sha256:8755c4d59f130234a89762d2404f8d93fc5957cbba7c8d21b01b80aef57a2fdd`
 - Created: `2024-03-11T23:23:48Z`
-- Virtual Size: ~ 210.12 Mb  
+- Virtual Size: ~ 210.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.28`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.28.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.28.tar.xz.asc`
-  - `PHP_SHA256=95d0b2e9466108fd750dab5c30a09e5c67f5ad2cb3b1ffb3625a038a755ad080`
+  - `PHP_VERSION=8.1.29`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.29.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.29.tar.xz.asc`
+  - `PHP_SHA256=288884af60581d4284baba2ace9ca6d646f72facbd3e3c2dd2acc7fe6f903536`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.10.0`
   - `WORDPRESS_CLI_SHA512=c243265be520cd906f6dac767b56bb4e7dae9b6308db32b7e45ed8adbacad97bce987fd69b019d25478f394f0082404a0f44a93416f5e4d943cb32fd08f1feac`
@@ -353,16 +353,16 @@ ICU
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.1.32-r1 description:
+imagemagick-libs-7.1.1.32-r2 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.1.32-r1 webpage:
+imagemagick-libs-7.1.1.32-r2 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.1.32-r1 installed size:
+imagemagick-libs-7.1.1.32-r2 installed size:
 4168 KiB
 
-imagemagick-libs-7.1.1.32-r1 license:
+imagemagick-libs-7.1.1.32-r2 license:
 ImageMagick
 
 ```
