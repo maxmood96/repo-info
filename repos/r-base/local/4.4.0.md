@@ -133,9 +133,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris base-files=13.2
-'http://http.debian.net/debian/pool/main/b/base-files/base-files_13.2.dsc' base-files_13.2.dsc 1101 SHA256:61fe2e331fff0bea1c9645f4f0c6ed95fd39840581859fb5325f1ecf6e650e30
-'http://http.debian.net/debian/pool/main/b/base-files/base-files_13.2.tar.xz' base-files_13.2.tar.xz 66928 SHA256:8319e3ca08917d6e219e620a4607a4f2ebda89c315f7d12694746ee6c5275471
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.2.dsc' base-files_13.2.dsc 1101 SHA256:61fe2e331fff0bea1c9645f4f0c6ed95fd39840581859fb5325f1ecf6e650e30
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.2.tar.xz' base-files_13.2.tar.xz 66928 SHA256:8319e3ca08917d6e219e620a4607a4f2ebda89c315f7d12694746ee6c5275471
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/base-files/13.2/ (for browsing the source)
+- https://sources.debian.net/src/base-files/13.2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/13.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.3`
 
@@ -180,9 +186,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bash=5.2.21-2
-'http://http.debian.net/debian/pool/main/b/bash/bash_5.2.21-2.dsc' bash_5.2.21-2.dsc 2295 SHA256:134867cb0fb5bd81fcb3b90cf9e54db4eb8fa6c4ef65bfc6fe6d4c2a0703a8af
+'http://http.debian.net/debian/pool/main/b/bash/bash_5.2.21-2.1.dsc' bash_5.2.21-2.1.dsc 2278 SHA256:97801c8f716396cd88cf8b69da3b6ea70f2b3ef6f9415df40e836d373feba536
 'http://http.debian.net/debian/pool/main/b/bash/bash_5.2.21.orig.tar.xz' bash_5.2.21.orig.tar.xz 5598816 SHA256:ec21ab4efd6bd7a6e2802fbda622b81bfc43a8095d721234d4bf075797683014
-'http://http.debian.net/debian/pool/main/b/bash/bash_5.2.21-2.debian.tar.xz' bash_5.2.21-2.debian.tar.xz 87876 SHA256:419795e70b50d57effe7b993cbdf47ea57d5a59de9eb8a30b46a1a6057381344
+'http://http.debian.net/debian/pool/main/b/bash/bash_5.2.21-2.1.debian.tar.xz' bash_5.2.21-2.1.debian.tar.xz 87940 SHA256:7452fd5408bd8415eee5e561a83d318972a584f10911818f8a8dd30e4f5acacd
 ```
 
 ### `dpkg` source package: `binutils=2.42-4`
@@ -586,9 +592,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris debianutils=5.17
-'http://http.debian.net/debian/pool/main/d/debianutils/debianutils_5.17.dsc' debianutils_5.17.dsc 1631 SHA256:4ba4ecda8885ab0f45ef878d7bc62882c6673f74b1636109878e5c9ff5f0f88e
-'http://http.debian.net/debian/pool/main/d/debianutils/debianutils_5.17.tar.xz' debianutils_5.17.tar.xz 80356 SHA256:367654878388f532cd8a897fe64766e2d57ae4c60da1d4d8f20dcdf2fb0cbde8
+'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.17.dsc' debianutils_5.17.dsc 1631 SHA256:4ba4ecda8885ab0f45ef878d7bc62882c6673f74b1636109878e5c9ff5f0f88e
+'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.17.tar.xz' debianutils_5.17.tar.xz 80356 SHA256:367654878388f532cd8a897fe64766e2d57ae4c60da1d4d8f20dcdf2fb0cbde8
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/debianutils/5.17/ (for browsing the source)
+- https://sources.debian.net/src/debianutils/5.17/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/debianutils/5.17/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.10-1`
 
@@ -1137,21 +1149,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.5-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.5-2.dsc' gnutls28_3.8.5-2.dsc 3268 SHA256:ff96a5441cb3e65cfff2dcde9995ea2dec71eab45abc0fe3c595679867a2ef93
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.5.orig.tar.xz' gnutls28_3.8.5.orig.tar.xz 6491504 SHA256:66269a2cfe0e1c2dabec87bdbbd8ab656f396edd9a40dd006978e003cfa52bfc
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.5.orig.tar.xz.asc' gnutls28_3.8.5.orig.tar.xz.asc 228 SHA256:d02c2bc3b994b3fc81f76663a0570c156f9dd299a2151f04fd3429eca6569f52
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.5-2.debian.tar.xz' gnutls28_3.8.5-2.debian.tar.xz 79356 SHA256:5a29cdcec8bc2cee41a179041063f0df762f6f43c83757f1e8c290f0606088de
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.5-2/
 
-- https://sources.debian.net/src/gnutls28/3.8.5-2/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-2`
 
@@ -2631,10 +2635,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nlme=3.1.164-1
-'http://http.debian.net/debian/pool/main/n/nlme/nlme_3.1.164-1.dsc' nlme_3.1.164-1.dsc 1840 SHA256:6e140f5d3d3a2f92de29c303a65e0144c97f2cbc298d5615fbc7a8845f2f7743
-'http://http.debian.net/debian/pool/main/n/nlme/nlme_3.1.164.orig.tar.gz' nlme_3.1.164.orig.tar.gz 836832 SHA256:79a5a020ce7037b83ee6c28336e35a1310058c13fc59f7fcb11eca0bc9bdd4e8
-'http://http.debian.net/debian/pool/main/n/nlme/nlme_3.1.164-1.debian.tar.xz' nlme_3.1.164-1.debian.tar.xz 7328 SHA256:31701dc6c1f5578910cf342309eb7bac2c983527f38d3cab84a9318c3b87a3d7
+'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.164-1.dsc' nlme_3.1.164-1.dsc 1840 SHA256:6e140f5d3d3a2f92de29c303a65e0144c97f2cbc298d5615fbc7a8845f2f7743
+'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.164.orig.tar.gz' nlme_3.1.164.orig.tar.gz 836832 SHA256:79a5a020ce7037b83ee6c28336e35a1310058c13fc59f7fcb11eca0bc9bdd4e8
+'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.164-1.debian.tar.xz' nlme_3.1.164-1.debian.tar.xz 7328 SHA256:31701dc6c1f5578910cf342309eb7bac2c983527f38d3cab84a9318c3b87a3d7
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/nlme/3.1.164-1/ (for browsing the source)
+- https://sources.debian.net/src/nlme/3.1.164-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nlme/3.1.164-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openblas=0.3.27+ds-2`
 
@@ -2905,21 +2915,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.38t64/copyright`, `/usr/share/d
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.38.2-4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2-4.dsc' perl_5.38.2-4.dsc 2938 SHA256:7b4c34022cff761f405cede9ab380fa00808eee11bed711f8cbba2a974fe571e
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA256:4d1b34cc058f9963cb89785ecc040d57f6d7725cd83329cfa4ef8b27566454d2
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA256:d91115e90b896520e83d4de6b52f8254ef2b70a8d545ffab33200ea9f1cf29e8
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.38.2-4.debian.tar.xz' perl_5.38.2-4.debian.tar.xz 165884 SHA256:74afd09ea72e33ad2655b2aad97f68d55e231289f90f6e7633f85dc8e051435a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.38.2-4/
 
-- https://sources.debian.net/src/perl/5.38.2-4/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.38.2-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.38.2-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pixman=0.42.2-1`
 
@@ -3274,20 +3276,13 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-4
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-4.dsc' shadow_4.13+dfsg1-4.dsc 2428 SHA256:c805045a571b1a93e88fb65239c112dc39657bb08461efd7a575fbdea6dbe445
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1.orig.tar.xz' shadow_4.13+dfsg1.orig.tar.xz 1811752 SHA256:a8bb3a2aceff1cbe39d0f50687dcc1d7e7be0516a9d954d8e2eedb93f5906207
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-4.debian.tar.xz' shadow_4.13+dfsg1-4.debian.tar.xz 82380 SHA256:baca35100bd6c1e54fa8b6653361eede47a0bc586bd91c88dcc9c7d08d47e8b7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-4/
 
-- https://sources.debian.net/src/shadow/1:4.13+dfsg1-4/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.13+dfsg1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `survival=3.6-4-1`
 
@@ -3299,14 +3294,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-survival/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris survival=3.6-4-1
-'http://http.debian.net/debian/pool/main/s/survival/survival_3.6-4-1.dsc' survival_3.6-4-1.dsc 1861 SHA256:2b6cebba1f287a7727fa937a7fa2b15da202c8967d049f8814609e2191fcf61e
-'http://http.debian.net/debian/pool/main/s/survival/survival_3.6-4.orig.tar.gz' survival_3.6-4.orig.tar.gz 6717744 SHA256:2ef8aa244781d4ec3844812b4341934b2a51d0e988f9a8ea0561b27fa9c6eefe
-'http://http.debian.net/debian/pool/main/s/survival/survival_3.6-4-1.debian.tar.xz' survival_3.6-4-1.debian.tar.xz 6348 SHA256:0859420deb674dcc711dbee8af8301258cccd90dc1ea48f4846d508268747ede
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/survival/3.6-4-1/
+
 
 ### `dpkg` source package: `systemd=255.5-1`
 
