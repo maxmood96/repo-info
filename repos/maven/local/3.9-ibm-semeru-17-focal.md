@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:88de0f0472f89e4d920d76f6c962240a0f99c1ef444cf10c4798e192921d2945`
+- Image ID: `sha256:9f73379d147d9fa66595cc9b941bdf668a944f61a4444c7a167bca12bff4f3e4`
 - Created: `2024-05-27T15:57:48Z`
-- Virtual Size: ~ 587.99 Mb  
+- Virtual Size: ~ 588.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.10+7_openj9-0.43.0`
+  - `JAVA_VERSION=jdk-17.0.11+9_openj9-0.44.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
   - `MAVEN_HOME=/usr/share/maven`
@@ -686,22 +686,27 @@ $ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu3.12
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.12.debian.tar.xz' git_2.25.1-1ubuntu3.12.debian.tar.xz 713156 SHA512:ff693a583cd3288be10f7a0b8a5cd678720962eca29fb25c2e45e0503e1bc973966e00ff311abb40db871da799f626e4bb88c1e4dd6cb47c494fdf69774d42a4
 ```
 
-### `dpkg` source package: `glibc=2.31-0ubuntu9.14`
+### `dpkg` source package: `glibc=2.31-0ubuntu9.16`
 
 Binary Packages:
 
-- `libc-bin=2.31-0ubuntu9.14`
-- `libc6:amd64=2.31-0ubuntu9.14`
-- `locales=2.31-0ubuntu9.14`
+- `libc-bin=2.31-0ubuntu9.16`
+- `libc6:amd64=2.31-0ubuntu9.16`
+- `locales=2.31-0ubuntu9.16`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.16
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.16.dsc' glibc_2.31-0ubuntu9.16.dsc 9585 SHA512:30e3507d4fe12a3fbd7c00b8ba3f051288f06502c204e9fe6a027be38587a61be8344d4875685cdf7920e54f811a945605aa1a8c11a068c2c71dba8892832d75
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.16.debian.tar.xz' glibc_2.31-0ubuntu9.16.debian.tar.xz 890412 SHA512:663f45bed9dd4829df3ff958c0daf0acf367270c39efa039694c18d17d459e02c4cb5ed1bbd2a290545d7ea29f2ac24ad9a7af3ef9537fa4901879b8899d70bb
+```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4ubuntu0.1`
 
@@ -756,11 +761,11 @@ $ apt-get source -qq --print-uris gnupg2=2.2.19-3ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.19-3ubuntu2.2.debian.tar.xz' gnupg2_2.2.19-3ubuntu2.2.debian.tar.xz 66132 SHA512:799684fb92e2c3c1016f0f0df6b4febb1e23b4c448768657358e2203120957d1329a5b4f0b417c659fe3bec414473e59f43ab6c0976b25439121d2b33a1ffe00
 ```
 
-### `dpkg` source package: `gnutls28=3.6.13-2ubuntu1.10`
+### `dpkg` source package: `gnutls28=3.6.13-2ubuntu1.11`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.6.13-2ubuntu1.10`
+- `libgnutls30:amd64=3.6.13-2ubuntu1.11`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -778,9 +783,15 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls28=3.6.13-2ubuntu1.11
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.11.dsc' gnutls28_3.6.13-2ubuntu1.11.dsc 3598 SHA512:b89f65658e49d01f08ec1a062bf15489c8d4b4ff9dc46aa079afefbbfa514a13edbb81eb4d22d224d5b64663290fa49dfad1af3da0829f918551b542ad8d2a58
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz' gnutls28_3.6.13.orig.tar.xz 5958956 SHA512:23581952cb72c9a34f378c002bb62413d5a1243b74b48ad8dc49eaea4020d33c550f8dc1dd374cf7fbfa4187b0ca1c5698c8a0430398268a8b8a863f8633305c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz.asc' gnutls28_3.6.13.orig.tar.xz.asc 667 SHA512:b343a8ace6a5c81c0c44b2cb65d8e83dfe5963c9bab04d9131fa8fd03cdf0c6f990d720af8767084e01bf5f7a7dbd0f048aefe68c3b6f1dc1ea1899d567a72f7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.11.debian.tar.xz' gnutls28_3.6.13-2ubuntu1.11.debian.tar.xz 79324 SHA512:b626c9fe40fa6edd9b98925519db26bfb1cb63dd384ac1013d00412dd11ab42466b83ad2a852a96554ac2b29260cf808e2d4f747e0c959714dfd1435063526e7
+```
 
 ### `dpkg` source package: `grep=3.4-1`
 
@@ -1425,11 +1436,11 @@ $ apt-get source -qq --print-uris nettle=3.5.1+really3.5.1-2ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.5.1%2breally3.5.1-2ubuntu0.2.debian.tar.xz' nettle_3.5.1+really3.5.1-2ubuntu0.2.debian.tar.xz 27228 SHA512:389c303e679b6b6714f824f22bc8675c1ea4bdab0108b69e9514613109573d01592e3f80bf9a144866a159a9a09fa0f3218d62b9f6978bdfe5e95a18bcfe3a88
 ```
 
-### `dpkg` source package: `nghttp2=1.40.0-1ubuntu0.2`
+### `dpkg` source package: `nghttp2=1.40.0-1ubuntu0.3`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.40.0-1ubuntu0.2`
+- `libnghttp2-14:amd64=1.40.0-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -1441,9 +1452,14 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nghttp2=1.40.0-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0-1ubuntu0.3.dsc' nghttp2_1.40.0-1ubuntu0.3.dsc 2679 SHA512:23dc554f410fa4a99a06515040490c3e2cf1200dc0ccea05499ff10eecf5434899732b6f9344a6090e7c48b0b29771acb63745b44e11a76def1e2cc2c939efc0
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0.orig.tar.bz2' nghttp2_1.40.0.orig.tar.bz2 1937537 SHA512:bc3f6dd8ccc3c6891b61206eeb2a74019b2559b4d75409e022c1a9ad0745d50cf8db7ca8e076993ab04a17f87455dc38159bf085bd844366dac82506e44656a0
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.40.0-1ubuntu0.3.debian.tar.xz' nghttp2_1.40.0-1ubuntu0.3.debian.tar.xz 22112 SHA512:d7c1a1efdf9e7413475ba156b3ed21bf931bd494a1a404003a31ddd104ad403d9935b7655c8d650ff2ce67e4d8b6598ab9f8e757993d72dd6dbd776bac40d9af
+```
 
 ### `dpkg` source package: `openldap=2.4.49+dfsg-2ubuntu1.10`
 
