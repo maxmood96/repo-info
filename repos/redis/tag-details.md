@@ -28369,35 +28369,75 @@ $ docker pull redis@sha256:ffdce772bc371bc4ee545cb821ac7ebacc77b4544271d5b6c9868
 
 ## `redis:7.4-rc`
 
-**does not exist** (yet?)
+```console
+$ docker pull redis@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `redis:7.4-rc-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull redis@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `redis:7.4-rc-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull redis@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `redis:7.4-rc-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull redis@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `redis:7.4-rc1`
 
-**does not exist** (yet?)
+```console
+$ docker pull redis@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `redis:7.4-rc1-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull redis@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `redis:7.4-rc1-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull redis@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `redis:7.4-rc1-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull redis@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `redis:alpine`
 
