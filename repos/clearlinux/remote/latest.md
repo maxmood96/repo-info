@@ -1,7 +1,7 @@
 ## `clearlinux:latest`
 
 ```console
-$ docker pull clearlinux@sha256:68cfba7bf2ce144862faa0a9ee86bbb913d254f6b59afd0d6b8c2bd0e4586380
+$ docker pull clearlinux@sha256:cf5bb8bbc9726fec462ef2e63b661bb3b7e84bb74c79828da844e45cb68d0f7b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,33 +11,33 @@ $ docker pull clearlinux@sha256:68cfba7bf2ce144862faa0a9ee86bbb913d254f6b59afd0d
 ### `clearlinux:latest` - linux; amd64
 
 ```console
-$ docker pull clearlinux@sha256:1eab04ea3339fccb706fc75209137f943d6357284d54f4be18107ab37658c98b
+$ docker pull clearlinux@sha256:141e9b6fd6665173fa73261c30d49c8276dc00a5c3737e69d6398e10a70c12cb
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.3 MB (69300831 bytes)**  
+-	Total Size: **69.5 MB (69484354 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92ee1f7d0922c2806bccdc8d21aa82559e11b2e5d50dfe95000ba4ee975e93ff`
+-	Image ID: `sha256:279adab5b6833aee7089d9e6c7f80ba9fee42f068fd01b6336a08feeab3edfce`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Tue, 28 May 2024 19:38:39 GMT
 MAINTAINER William Douglas <william.douglas@intel.com>
-# Mon, 03 Jun 2024 18:46:14 GMT
-ADD file:0ef1ed0c077a35b0bbb31562f07b749d50ed21870db34d23a8e25bd67cb97d34 in / 
-# Mon, 03 Jun 2024 18:46:15 GMT
+# Mon, 10 Jun 2024 19:58:58 GMT
+ADD file:5a573e0f5139ecd18c2fd23f5b5c9823a21d101d4f9a10bf5633fd2527fd9994 in / 
+# Mon, 10 Jun 2024 19:58:59 GMT
 RUN cd /etc &&     grep root /usr/share/defaults/etc/passwd > /etc/passwd &&     grep root /usr/share/defaults/etc/group > /etc/group &&     echo 'root:!:::::::' > /etc/shadow
-# Mon, 03 Jun 2024 18:46:16 GMT
+# Mon, 10 Jun 2024 19:58:59 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:796333ca3902a0c41d7fb57adddf67a684d30f882ed2a2e6445271273f6d2ca5`  
-		Last Modified: Mon, 03 Jun 2024 18:46:33 GMT  
-		Size: 69.3 MB (69300618 bytes)  
+	-	`sha256:c1cea996e584973aa2245a8078e88132b11e65c524544aa53911d7c5177e2ff8`  
+		Last Modified: Mon, 10 Jun 2024 19:59:17 GMT  
+		Size: 69.5 MB (69484140 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf50ace99a00c03f1e25b59da889c0e5eac02049f617c263b34d6976e1ce6b3a`  
-		Last Modified: Mon, 03 Jun 2024 18:46:24 GMT  
-		Size: 213.0 B  
+	-	`sha256:8f67ad38bd318019cc8434735cd901809b41f7c9f80bb0e02ab51b3617bdf04f`  
+		Last Modified: Mon, 10 Jun 2024 19:59:09 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
