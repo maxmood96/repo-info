@@ -6014,14 +6014,9 @@ Licenses: (parsed from: `/usr/share/doc/libvpx6/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libvpx=1.8.2-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.8.2-1ubuntu0.2.dsc' libvpx_1.8.2-1ubuntu0.2.dsc 2362 SHA512:a059dd9069ceb91185d7d16b7997e41fca5df6a1783c365ef36d3328f3ee2c643b504b1d942f1174ff18a297c9df9d62ceef23c631199876fc2f4e843daa75e7
-'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.8.2.orig.tar.gz' libvpx_1.8.2.orig.tar.gz 5312988 SHA512:da2ab0775a28ddd78654bbe46886e833d4ef7ba91867fc1427dceced735b6177eff06b24f204c075c50c3a5cadc5be6a1fb213c44df189218a543b52554f3a38
-'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.8.2-1ubuntu0.2.debian.tar.xz' libvpx_1.8.2-1ubuntu0.2.debian.tar.xz 13556 SHA512:94b136d656514396b0bd2aefde387e8f903c6ec2c6f6d08cd7b2d9d4407fe919d45cf279a5a72dfeb47c9fa828cc93b4230f7472238976918bc08c14d2f2b90e
-```
 
 ### `dpkg` source package: `libwebp=0.6.1-2ubuntu0.20.04.3`
 
@@ -7590,14 +7585,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-lts=11.0.22+7-0ubuntu2~20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.22%2b7-0ubuntu2%7e20.04.1.dsc' openjdk-lts_11.0.22+7-0ubuntu2~20.04.1.dsc 4786 SHA512:a4c281dc4fbd94ae25d448d8769aae263deb46371dca641c6ac39405a54f2cda97cca48f41914fafe16a51f26502dd48ebea8f09bf47821524bc46f439cf536c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.22%2b7.orig.tar.xz' openjdk-lts_11.0.22+7.orig.tar.xz 71418528 SHA512:392612fab51eba8663fb923275cb9d790e712a52b8140cf0c940c563451fa0e04c569b6ab99b2bce69b56b656531b9b38a2b7effa257f992b7e63b26998e927e
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.22%2b7-0ubuntu2%7e20.04.1.debian.tar.xz' openjdk-lts_11.0.22+7-0ubuntu2~20.04.1.debian.tar.xz 169584 SHA512:3b47fd72ba2a862459192b641a339c1775cb92a659110bea31f032a0d89f7b2cac00ce63a105ba1664164e155d38eaad51f5622eea6597e9c86540d0f76bddb2
-```
 
 ### `dpkg` source package: `openjpeg2=2.3.1-1ubuntu4.20.04.1`
 
