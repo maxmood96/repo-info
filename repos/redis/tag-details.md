@@ -34,6 +34,14 @@
 -	[`redis:7.2.5-alpine`](#redis725-alpine)
 -	[`redis:7.2.5-alpine3.20`](#redis725-alpine320)
 -	[`redis:7.2.5-bookworm`](#redis725-bookworm)
+-	[`redis:7.4-rc`](#redis74-rc)
+-	[`redis:7.4-rc-alpine`](#redis74-rc-alpine)
+-	[`redis:7.4-rc-alpine3.20`](#redis74-rc-alpine320)
+-	[`redis:7.4-rc-bookworm`](#redis74-rc-bookworm)
+-	[`redis:7.4-rc1`](#redis74-rc1)
+-	[`redis:7.4-rc1-alpine`](#redis74-rc1-alpine)
+-	[`redis:7.4-rc1-alpine3.20`](#redis74-rc1-alpine320)
+-	[`redis:7.4-rc1-bookworm`](#redis74-rc1-bookworm)
 -	[`redis:alpine`](#redisalpine)
 -	[`redis:alpine3.20`](#redisalpine320)
 -	[`redis:bookworm`](#redisbookworm)
@@ -28358,6 +28366,38 @@ $ docker pull redis@sha256:ffdce772bc371bc4ee545cb821ac7ebacc77b4544271d5b6c9868
 		Last Modified: Fri, 24 May 2024 02:08:31 GMT  
 		Size: 36.1 KB (36083 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `redis:7.4-rc`
+
+**does not exist** (yet?)
+
+## `redis:7.4-rc-alpine`
+
+**does not exist** (yet?)
+
+## `redis:7.4-rc-alpine3.20`
+
+**does not exist** (yet?)
+
+## `redis:7.4-rc-bookworm`
+
+**does not exist** (yet?)
+
+## `redis:7.4-rc1`
+
+**does not exist** (yet?)
+
+## `redis:7.4-rc1-alpine`
+
+**does not exist** (yet?)
+
+## `redis:7.4-rc1-alpine3.20`
+
+**does not exist** (yet?)
+
+## `redis:7.4-rc1-bookworm`
+
+**does not exist** (yet?)
 
 ## `redis:alpine`
 
