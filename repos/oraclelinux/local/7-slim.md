@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6f2c035f79e456b291359fbae42b7de303ca968386575c6b33871b7e31753d78`
-- Created: `2024-06-01T00:49:06.442201765Z`
-- Virtual Size: ~ 137.61 Mb  
+- Image ID: `sha256:2e357a675a805ce181efb0cb84cd5fd795907dadaa186eb32c306938879053d7`
+- Created: `2024-06-08T00:24:05.936591336Z`
+- Virtual Size: ~ 137.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -68,15 +68,15 @@ $ dnf --quiet download --source --url ca-certificates-2023.2.60_v7.0.306-72.el7_
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/ca-certificates-2023.2.60_v7.0.306-72.el7_9.src.rpm
 ```
 
-### `rpm` package: `chkconfig-1.7.6-1.el7.x86_64`
+### `rpm` package: `chkconfig-1.7.6-1.0.1.el7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url chkconfig-1.7.6-1.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/chkconfig-1.7.6-1.el7.src.rpm
+$ dnf --quiet download --source --url chkconfig-1.7.6-1.0.1.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/chkconfig-1.7.6-1.0.1.el7.src.rpm
 ```
 
 ### `rpm` package: `coreutils-8.22-24.0.1.el7_9.2.x86_64`
@@ -222,26 +222,26 @@ $ dnf --quiet download --source --url glib2-2.56.1-9.el7_9
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/glib2-2.56.1-9.el7_9.src.rpm
 ```
 
-### `rpm` package: `glibc-2.17-326.0.9.el7_9.x86_64`
+### `rpm` package: `glibc-2.17-326.0.9.el7_9.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.17-326.0.9.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/glibc-2.17-326.0.9.el7_9.src.rpm
+$ dnf --quiet download --source --url glibc-2.17-326.0.9.el7_9.3
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/glibc-2.17-326.0.9.el7_9.3.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.17-326.0.9.el7_9.x86_64`
+### `rpm` package: `glibc-common-2.17-326.0.9.el7_9.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.17-326.0.9.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/glibc-2.17-326.0.9.el7_9.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.17-326.0.9.el7_9.3
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/glibc-2.17-326.0.9.el7_9.3.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.0.0-15.el7.x86_64`
@@ -993,48 +993,48 @@ $ dnf --quiet download --source --url redhat-release-server-7.9-6.0.1.el7_9
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/redhat-release-server-7.9-6.0.1.el7_9.src.rpm
 ```
 
-### `rpm` package: `rpm-4.11.3-48.el7_9.x86_64`
+### `rpm` package: `rpm-4.11.3-48.0.3.el7_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-4.11.3-48.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/rpm-4.11.3-48.el7_9.src.rpm
+$ dnf --quiet download --source --url rpm-4.11.3-48.0.3.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/rpm-4.11.3-48.0.3.el7_9.src.rpm
 ```
 
-### `rpm` package: `rpm-build-libs-4.11.3-48.el7_9.x86_64`
+### `rpm` package: `rpm-build-libs-4.11.3-48.0.3.el7_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-build-libs-4.11.3-48.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/rpm-4.11.3-48.el7_9.src.rpm
+$ dnf --quiet download --source --url rpm-build-libs-4.11.3-48.0.3.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/rpm-4.11.3-48.0.3.el7_9.src.rpm
 ```
 
-### `rpm` package: `rpm-libs-4.11.3-48.el7_9.x86_64`
+### `rpm` package: `rpm-libs-4.11.3-48.0.3.el7_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-libs-4.11.3-48.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/rpm-4.11.3-48.el7_9.src.rpm
+$ dnf --quiet download --source --url rpm-libs-4.11.3-48.0.3.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/rpm-4.11.3-48.0.3.el7_9.src.rpm
 ```
 
-### `rpm` package: `rpm-python-4.11.3-48.el7_9.x86_64`
+### `rpm` package: `rpm-python-4.11.3-48.0.3.el7_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-python-4.11.3-48.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/rpm-4.11.3-48.el7_9.src.rpm
+$ dnf --quiet download --source --url rpm-python-4.11.3-48.0.3.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/rpm-4.11.3-48.0.3.el7_9.src.rpm
 ```
 
 ### `rpm` package: `sed-4.2.2-7.el7.x86_64`
