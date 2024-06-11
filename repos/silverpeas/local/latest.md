@@ -8781,14 +8781,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.1.0+git191117-2ubuntu0.20.04.12
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0%2bgit191117-2ubuntu0.20.04.12.dsc' tiff_4.1.0+git191117-2ubuntu0.20.04.12.dsc 2081 SHA512:8a2989d826d69be1342422466914af4948fff3e7a151a7697e13c7ef2b95ba096716f9302cbadefe78068c56c560c2fd77d1e89f3f0baa48d05eb51e33075712
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0%2bgit191117.orig.tar.xz' tiff_4.1.0+git191117.orig.tar.xz 1533524 SHA512:25b4bc4522fc2e7f3ca6857b87acd4481d8643566b1120c755020afc8b48949238ee2078bc43dd3ba7407eaa4e36b1b712d7056f101ddaf60f94dab8607870b8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0%2bgit191117-2ubuntu0.20.04.12.debian.tar.xz' tiff_4.1.0+git191117-2ubuntu0.20.04.12.debian.tar.xz 52284 SHA512:7ec918ec0d0b002fcc2608a0467fd07a34266c018a2a947aa19e11018f5bf18b0f27dbde5929af00eb887e3ea36d9801e023ebf22f60edb4fa7f2851c0a0de2f
-```
 
 ### `dpkg` source package: `twolame=0.4.0-2`
 
