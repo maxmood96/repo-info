@@ -1,13 +1,13 @@
-# `perl:5.38.2-buster`
+# `perl:5.40.0-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:96733cd90a5c71f31428f2955c787f08e0172a1b707f739050ac466e21fb8f91`
-- Created: `2024-04-29T09:51:00Z`
-- Virtual Size: ~ 865.19 Mb  
+- Image ID: `sha256:bc8cdb970c082f27e46eec21c20882c7af458ee62588d065b47fe27fea4b3cae`
+- Created: `2024-06-10T03:33:39Z`
+- Virtual Size: ~ 866.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["perl5.38.2","-de0"]`
+- Command: `["perl5.40.0","-de0"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 
