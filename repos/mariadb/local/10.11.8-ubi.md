@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d9d34ab4649c076ab84c540d0cc168dbb90fccca553a5eb684696159925792a5`
+- Image ID: `sha256:35e607500b5fb22b6b0de728e70419f79548d6eaa1666fb8ed645f3dcd59fc09`
 - Created: `2024-05-30T23:03:04Z`
-- Virtual Size: ~ 460.92 Mb  
+- Virtual Size: ~ 460.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `GOSU_VERSION=1.17`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-05-23T13:47:36`
+  - `build-date=2024-05-30T13:14:08`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=MariaDB Database for relational SQL`
@@ -39,7 +39,7 @@
   - `org.opencontainers.image.version=10.11.8`
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-949.1716471857`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-949.1717074713`
   - `vcs-ref=4b4efbdd5a311b6a9c56319e756ca58c10a2b4de`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
@@ -181,7 +181,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-7.el9.noarch
-http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/e/epel-release-9-7.el9.src.rpm
+https://mirror.servaxnet.com/epel/9/Everything/source/tree/Packages/e/epel-release-9-7.el9.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
@@ -336,7 +336,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+https://mirror.servaxnet.com/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -1193,7 +1193,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+https://mirror.servaxnet.com/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -1204,7 +1204,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+https://mirror.servaxnet.com/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
