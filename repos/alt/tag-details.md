@@ -4,6 +4,7 @@
 
 -	[`alt:latest`](#altlatest)
 -	[`alt:p10`](#altp10)
+-	[`alt:p11`](#altp11)
 -	[`alt:sisyphus`](#altsisyphus)
 
 ## `alt:latest`
@@ -233,6 +234,15 @@ CMD ["/bin/bash"]
 		Last Modified: Mon, 06 May 2024 18:48:57 GMT  
 		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `alt:p11`
+
+```console
+$ docker pull alt@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `alt:sisyphus`
 
