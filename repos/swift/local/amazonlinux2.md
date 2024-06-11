@@ -1,10 +1,10 @@
-# `swift:5.10.0-amazonlinux2`
+# `swift:5.10.1-amazonlinux2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:466169e1bcdc342b056b77c5426581fae937f12fd2116b67a2e7148d0a7ee2ff`
-- Created: `2024-06-05T01:19:24.18413685Z`
-- Virtual Size: ~ 2.94 Gb  
+- Image ID: `sha256:f73457e7d5d380318e37e3f11dcbb750260d2d2a1daf47aa9b288794c9b9e2a6`
+- Created: `2024-06-07T04:15:47.40939235Z`
+- Virtual Size: ~ 2.95 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561`
   - `SWIFT_PLATFORM=amazonlinux2`
-  - `SWIFT_BRANCH=swift-5.10-release`
-  - `SWIFT_VERSION=swift-5.10-RELEASE`
+  - `SWIFT_BRANCH=swift-5.10.1-release`
+  - `SWIFT_VERSION=swift-5.10.1-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -632,6 +632,17 @@ $ dnf --quiet download --source --url keyutils-libs-1.5.8-3.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/67585b47b62c70ae77daee3b245b054335179698fcddaed642373dcb2754dd1b/../../../../../blobstore/1579dc52bd90d64e68d663da4dfa4462afa9df1cfbef30d47b64add0dd12210e/keyutils-1.5.8-3.amzn2.0.2.src.rpm
 ```
 
+### `rpm` package: `keyutils-libs-devel-1.5.8-3.amzn2.0.2.x86_64`
+
+Licenses (from `rpm --query`): GPLv2+ and LGPLv2+
+
+Source:
+
+```console
+$ dnf --quiet download --source --url keyutils-libs-devel-1.5.8-3.amzn2.0.2
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/67585b47b62c70ae77daee3b245b054335179698fcddaed642373dcb2754dd1b/../../../../../blobstore/1579dc52bd90d64e68d663da4dfa4462afa9df1cfbef30d47b64add0dd12210e/keyutils-1.5.8-3.amzn2.0.2.src.rpm
+```
+
 ### `rpm` package: `kmod-25-3.amzn2.0.2.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
@@ -652,6 +663,17 @@ Source:
 ```console
 $ dnf --quiet download --source --url kmod-libs-25-3.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/67585b47b62c70ae77daee3b245b054335179698fcddaed642373dcb2754dd1b/../../../../../blobstore/690f912ad75fa60f2abd7ca91f023009aee784746cce582f74578c80d73059c7/kmod-25-3.amzn2.0.2.src.rpm
+```
+
+### `rpm` package: `krb5-devel-1.15.1-55.amzn2.2.7.x86_64`
+
+Licenses (from `rpm --query`): MIT
+
+Source:
+
+```console
+$ dnf --quiet download --source --url krb5-devel-1.15.1-55.amzn2.2.7
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/67585b47b62c70ae77daee3b245b054335179698fcddaed642373dcb2754dd1b/../../../../../blobstore/f22f689fbeaad4f6b37274704da0803edf79e2a77c4d381389fe16bfb9af8ed6/krb5-1.15.1-55.amzn2.2.7.src.rpm
 ```
 
 ### `rpm` package: `krb5-libs-1.15.1-55.amzn2.2.7.x86_64`
@@ -772,6 +794,17 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libcom_err-1.42.9-19.amzn2.0.1
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/67585b47b62c70ae77daee3b245b054335179698fcddaed642373dcb2754dd1b/../../../../../blobstore/cdaf4c4c0124e55017cfd1c72a24450c9b0652ba3dab8a3dc9b49c120d634f76/e2fsprogs-1.42.9-19.amzn2.0.1.src.rpm
+```
+
+### `rpm` package: `libcom_err-devel-1.42.9-19.amzn2.0.1.x86_64`
+
+Licenses (from `rpm --query`): MIT
+
+Source:
+
+```console
+$ dnf --quiet download --source --url libcom_err-devel-1.42.9-19.amzn2.0.1
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/67585b47b62c70ae77daee3b245b054335179698fcddaed642373dcb2754dd1b/../../../../../blobstore/cdaf4c4c0124e55017cfd1c72a24450c9b0652ba3dab8a3dc9b49c120d634f76/e2fsprogs-1.42.9-19.amzn2.0.1.src.rpm
 ```
 
@@ -940,6 +973,17 @@ $ dnf --quiet download --source --url libitm-7.3.1-17.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/67585b47b62c70ae77daee3b245b054335179698fcddaed642373dcb2754dd1b/../../../../../blobstore/a2b874b1e83eb065848df3e26205c7e903eb46b4c4f40adf7a6a68a1af38698f/gcc-7.3.1-17.amzn2.src.rpm
 ```
 
+### `rpm` package: `libkadm5-1.15.1-55.amzn2.2.7.x86_64`
+
+Licenses (from `rpm --query`): MIT
+
+Source:
+
+```console
+$ dnf --quiet download --source --url libkadm5-1.15.1-55.amzn2.2.7
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/67585b47b62c70ae77daee3b245b054335179698fcddaed642373dcb2754dd1b/../../../../../blobstore/f22f689fbeaad4f6b37274704da0803edf79e2a77c4d381389fe16bfb9af8ed6/krb5-1.15.1-55.amzn2.2.7.src.rpm
+```
+
 ### `rpm` package: `libmetalink-0.1.3-13.amzn2.x86_64`
 
 Licenses (from `rpm --query`): MIT
@@ -1050,6 +1094,17 @@ $ dnf --quiet download --source --url libselinux-2.5-12.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/67585b47b62c70ae77daee3b245b054335179698fcddaed642373dcb2754dd1b/../../../../../blobstore/0be2744b0f89765b31cecb119ca520449eb8cf48cd7355824f7ca4e0873deec3/libselinux-2.5-12.amzn2.0.2.src.rpm
 ```
 
+### `rpm` package: `libselinux-devel-2.5-12.amzn2.0.2.x86_64`
+
+Licenses (from `rpm --query`): Public Domain
+
+Source:
+
+```console
+$ dnf --quiet download --source --url libselinux-devel-2.5-12.amzn2.0.2
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/67585b47b62c70ae77daee3b245b054335179698fcddaed642373dcb2754dd1b/../../../../../blobstore/0be2744b0f89765b31cecb119ca520449eb8cf48cd7355824f7ca4e0873deec3/libselinux-2.5-12.amzn2.0.2.src.rpm
+```
+
 ### `rpm` package: `libsemanage-2.5-11.amzn2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
@@ -1069,6 +1124,17 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libsepol-2.5-10.amzn2.0.1
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/67585b47b62c70ae77daee3b245b054335179698fcddaed642373dcb2754dd1b/../../../../../blobstore/2b2a8764b4294026c35f8247282865f2631c8ec45d35349bb2bfc1017a97b958/libsepol-2.5-10.amzn2.0.1.src.rpm
+```
+
+### `rpm` package: `libsepol-devel-2.5-10.amzn2.0.1.x86_64`
+
+Licenses (from `rpm --query`): LGPLv2+
+
+Source:
+
+```console
+$ dnf --quiet download --source --url libsepol-devel-2.5-10.amzn2.0.1
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/67585b47b62c70ae77daee3b245b054335179698fcddaed642373dcb2754dd1b/../../../../../blobstore/2b2a8764b4294026c35f8247282865f2631c8ec45d35349bb2bfc1017a97b958/libsepol-2.5-10.amzn2.0.1.src.rpm
 ```
 
@@ -1157,6 +1223,17 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libverto-0.2.5-4.amzn2.0.2
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/67585b47b62c70ae77daee3b245b054335179698fcddaed642373dcb2754dd1b/../../../../../blobstore/23eb8faf40e93c9ecbfeccc868d2e42b65bde82f92e1af0b0e9e17c387f1b049/libverto-0.2.5-4.amzn2.0.2.src.rpm
+```
+
+### `rpm` package: `libverto-devel-0.2.5-4.amzn2.0.2.x86_64`
+
+Licenses (from `rpm --query`): MIT
+
+Source:
+
+```console
+$ dnf --quiet download --source --url libverto-devel-0.2.5-4.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/67585b47b62c70ae77daee3b245b054335179698fcddaed642373dcb2754dd1b/../../../../../blobstore/23eb8faf40e93c9ecbfeccc868d2e42b65bde82f92e1af0b0e9e17c387f1b049/libverto-0.2.5-4.amzn2.0.2.src.rpm
 ```
 
@@ -1369,6 +1446,17 @@ $ dnf --quiet download --source --url openssh-clients-7.4p1-22.amzn2.0.7
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/67585b47b62c70ae77daee3b245b054335179698fcddaed642373dcb2754dd1b/../../../../../blobstore/e135e7a48d208112ec04c02bfb99cebde5a4277b8cc04acca7253aee182c4c79/openssh-7.4p1-22.amzn2.0.7.src.rpm
 ```
 
+### `rpm` package: `openssl-devel-1.0.2k-24.amzn2.0.12.x86_64`
+
+Licenses (from `rpm --query`): OpenSSL
+
+Source:
+
+```console
+$ dnf --quiet download --source --url openssl-devel-1.0.2k-24.amzn2.0.12
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/67585b47b62c70ae77daee3b245b054335179698fcddaed642373dcb2754dd1b/../../../../../blobstore/c70b7f1baafad16ad0d7c31311c2f855d91fdc33d66956d07d8eb71564655b28/openssl-1.0.2k-24.amzn2.0.12.src.rpm
+```
+
 ### `rpm` package: `openssl-libs-1.0.2k-24.amzn2.0.12.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
@@ -1421,6 +1509,17 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pcre-8.32-17.amzn2.0.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/67585b47b62c70ae77daee3b245b054335179698fcddaed642373dcb2754dd1b/../../../../../blobstore/b2470976412c846cbcbb44775d2a4ec2e44564585fd3b25c125432f0befabc30/pcre-8.32-17.amzn2.0.3.src.rpm
+```
+
+### `rpm` package: `pcre-devel-8.32-17.amzn2.0.3.x86_64`
+
+Licenses (from `rpm --query`): BSD
+
+Source:
+
+```console
+$ dnf --quiet download --source --url pcre-devel-8.32-17.amzn2.0.3
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/67585b47b62c70ae77daee3b245b054335179698fcddaed642373dcb2754dd1b/../../../../../blobstore/b2470976412c846cbcbb44775d2a4ec2e44564585fd3b25c125432f0befabc30/pcre-8.32-17.amzn2.0.3.src.rpm
 ```
 

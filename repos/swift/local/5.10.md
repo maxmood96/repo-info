@@ -1,9 +1,9 @@
-# `swift:5.10.0`
+# `swift:5.10.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a9da8e656ebad94d15317f80cb1cc216eb1c718a94fc0dde45c4c903f15be768`
-- Created: `2024-06-05T01:13:39.041563597Z`
+- Image ID: `sha256:dea8a12cbbc1d7471ccaf6224b17ffa68723f04652df8114a4143527d3857233`
+- Created: `2024-06-07T03:52:14.292618875Z`
 - Virtual Size: ~ 2.63 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561`
   - `SWIFT_PLATFORM=ubuntu22.04`
-  - `SWIFT_BRANCH=swift-5.10-release`
-  - `SWIFT_VERSION=swift-5.10-RELEASE`
+  - `SWIFT_BRANCH=swift-5.10.1-release`
+  - `SWIFT_VERSION=swift-5.10.1-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -2045,14 +2045,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.15.0-107.117
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-107.117.dsc' linux_5.15.0-107.117.dsc 7755 SHA512:54269e3991b7e984f31b75d9dc8d7e44b5a72efec38f05f0b9a747a91725b8abf3ec88640e58f9d60683231b663febf9627648d200fe8c19702b245c205c8bb5
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-107.117.diff.gz' linux_5.15.0-107.117.diff.gz 9571027 SHA512:ff89b73feed4846b01e043ad2409902ca8c5db6c86d1e3065b9deece50874c6d2aa47b3559c9023414889400731c1045d186ec9fcd0edcff65fd7fa629f07580
-```
 
 ### `dpkg` source package: `llvm-toolchain-13=1:13.0.1-2ubuntu2.2`
 

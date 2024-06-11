@@ -1,10 +1,10 @@
-# `swift:5.10.0-centos7`
+# `swift:5.10.1-centos7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:83e56f1e0f33933887e3ccceebda692925d5db102e6dcaff210e7465dddfc4b8`
-- Created: `2024-03-06T21:04:37.442031321Z`
-- Virtual Size: ~ 3.66 Gb  
+- Image ID: `sha256:110f16c369cc6b267febb9328f5162d2daf5f8d9a9a533862c5d9f245c01b597`
+- Created: `2024-06-07T04:19:33.262603023Z`
+- Virtual Size: ~ 3.80 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561`
   - `SWIFT_PLATFORM=centos7`
-  - `SWIFT_BRANCH=swift-5.10-release`
-  - `SWIFT_VERSION=swift-5.10-RELEASE`
+  - `SWIFT_BRANCH=swift-5.10.1-release`
+  - `SWIFT_VERSION=swift-5.10.1-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -295,15 +295,15 @@ $ dnf --quiet download --source --url cryptsetup-libs-2.0.3-6.el7
 http://vault.centos.org/centos/7/os/Source/SPackages/cryptsetup-2.0.3-6.el7.src.rpm
 ```
 
-### `rpm` package: `curl-7.29.0-59.el7_9.1.x86_64`
+### `rpm` package: `curl-7.29.0-59.el7_9.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url curl-7.29.0-59.el7_9.1
-http://vault.centos.org/centos/7/updates/Source/SPackages/curl-7.29.0-59.el7_9.1.src.rpm
+$ dnf --quiet download --source --url curl-7.29.0-59.el7_9.2
+http://vault.centos.org/centos/7/updates/Source/SPackages/curl-7.29.0-59.el7_9.2.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.26-23.el7.x86_64`
@@ -845,15 +845,15 @@ $ dnf --quiet download --source --url geoipupdate-2.5.0-1.el7
 http://vault.centos.org/centos/7/os/Source/SPackages/geoipupdate-2.5.0-1.el7.src.rpm
 ```
 
-### `rpm` package: `git-1.8.3.1-23.el7_8.x86_64`
+### `rpm` package: `git-1.8.3.1-25.el7_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url git-1.8.3.1-23.el7_8
-http://vault.centos.org/centos/7/os/Source/SPackages/git-1.8.3.1-23.el7_8.src.rpm
+$ dnf --quiet download --source --url git-1.8.3.1-25.el7_9
+http://vault.centos.org/centos/7/updates/Source/SPackages/git-1.8.3.1-25.el7_9.src.rpm
 ```
 
 ### `rpm` package: `glib2-2.56.1-7.el7.x86_64`
@@ -1066,26 +1066,26 @@ $ dnf --quiet download --source --url json-c-0.11-4.el7_0
 http://vault.centos.org/centos/7/os/Source/SPackages/json-c-0.11-4.el7_0.src.rpm
 ```
 
-### `rpm` package: `kernel-debug-devel-3.10.0-1160.108.1.el7.x86_64`
+### `rpm` package: `kernel-debug-devel-3.10.0-1160.118.1.el7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url kernel-debug-devel-3.10.0-1160.108.1.el7
-http://vault.centos.org/centos/7/updates/Source/SPackages/kernel-3.10.0-1160.108.1.el7.src.rpm
+$ dnf --quiet download --source --url kernel-debug-devel-3.10.0-1160.118.1.el7
+http://vault.centos.org/centos/7/updates/Source/SPackages/kernel-3.10.0-1160.118.1.el7.src.rpm
 ```
 
-### `rpm` package: `kernel-headers-3.10.0-1160.76.1.el7.x86_64`
+### `rpm` package: `kernel-headers-3.10.0-1160.118.1.el7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url kernel-headers-3.10.0-1160.76.1.el7
-http://vault.centos.org/centos/7/updates/Source/SPackages/kernel-3.10.0-1160.76.1.el7.src.rpm
+$ dnf --quiet download --source --url kernel-headers-3.10.0-1160.118.1.el7
+http://vault.centos.org/centos/7/updates/Source/SPackages/kernel-3.10.0-1160.118.1.el7.src.rpm
 ```
 
 ### `rpm` package: `keyutils-libs-1.5.8-3.el7.x86_64`
@@ -1243,26 +1243,26 @@ $ dnf --quiet download --source --url libcom_err-1.42.9-19.el7
 http://vault.centos.org/centos/7/os/Source/SPackages/e2fsprogs-1.42.9-19.el7.src.rpm
 ```
 
-### `rpm` package: `libcurl-7.29.0-59.el7_9.1.x86_64`
+### `rpm` package: `libcurl-7.29.0-59.el7_9.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcurl-7.29.0-59.el7_9.1
-http://vault.centos.org/centos/7/updates/Source/SPackages/curl-7.29.0-59.el7_9.1.src.rpm
+$ dnf --quiet download --source --url libcurl-7.29.0-59.el7_9.2
+http://vault.centos.org/centos/7/updates/Source/SPackages/curl-7.29.0-59.el7_9.2.src.rpm
 ```
 
-### `rpm` package: `libcurl-devel-7.29.0-59.el7_9.1.x86_64`
+### `rpm` package: `libcurl-devel-7.29.0-59.el7_9.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcurl-devel-7.29.0-59.el7_9.1
-http://vault.centos.org/centos/7/updates/Source/SPackages/curl-7.29.0-59.el7_9.1.src.rpm
+$ dnf --quiet download --source --url libcurl-devel-7.29.0-59.el7_9.2
+http://vault.centos.org/centos/7/updates/Source/SPackages/curl-7.29.0-59.el7_9.2.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.21-25.el7.x86_64`
@@ -1870,26 +1870,26 @@ $ dnf --quiet download --source --url openldap-2.4.44-22.el7
 http://vault.centos.org/centos/7/os/Source/SPackages/openldap-2.4.44-22.el7.src.rpm
 ```
 
-### `rpm` package: `openssh-7.4p1-22.el7_9.x86_64`
+### `rpm` package: `openssh-7.4p1-23.el7_9.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssh-7.4p1-22.el7_9
-http://vault.centos.org/centos/7/updates/Source/SPackages/openssh-7.4p1-22.el7_9.src.rpm
+$ dnf --quiet download --source --url openssh-7.4p1-23.el7_9
+http://vault.centos.org/centos/7/updates/Source/SPackages/openssh-7.4p1-23.el7_9.src.rpm
 ```
 
-### `rpm` package: `openssh-clients-7.4p1-22.el7_9.x86_64`
+### `rpm` package: `openssh-clients-7.4p1-23.el7_9.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssh-clients-7.4p1-22.el7_9
-http://vault.centos.org/centos/7/updates/Source/SPackages/openssh-7.4p1-22.el7_9.src.rpm
+$ dnf --quiet download --source --url openssh-clients-7.4p1-23.el7_9
+http://vault.centos.org/centos/7/updates/Source/SPackages/openssh-7.4p1-23.el7_9.src.rpm
 ```
 
 ### `rpm` package: `openssl-libs-1.0.2k-19.el7.x86_64`
@@ -2057,15 +2057,15 @@ $ dnf --quiet download --source --url perl-Getopt-Long-2.40-3.el7.noarch
 http://vault.centos.org/centos/7/os/Source/SPackages/perl-Getopt-Long-2.40-3.el7.src.rpm
 ```
 
-### `rpm` package: `perl-Git-1.8.3.1-23.el7_8.noarch`
+### `rpm` package: `perl-Git-1.8.3.1-25.el7_9.noarch`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url perl-Git-1.8.3.1-23.el7_8.noarch
-http://vault.centos.org/centos/7/os/Source/SPackages/git-1.8.3.1-23.el7_8.src.rpm
+$ dnf --quiet download --source --url perl-Git-1.8.3.1-25.el7_9.noarch
+http://vault.centos.org/centos/7/updates/Source/SPackages/git-1.8.3.1-25.el7_9.src.rpm
 ```
 
 ### `rpm` package: `perl-HTTP-Tiny-0.033-3.el7.noarch`
@@ -2486,26 +2486,26 @@ $ dnf --quiet download --source --url python-urlgrabber-3.10-10.el7.noarch
 http://vault.centos.org/centos/7/os/Source/SPackages/python-urlgrabber-3.10-10.el7.src.rpm
 ```
 
-### `rpm` package: `python3-3.6.8-18.el7.x86_64`
+### `rpm` package: `python3-3.6.8-21.el7_9.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-3.6.8-18.el7
-http://vault.centos.org/centos/7/updates/Source/SPackages/python3-3.6.8-18.el7.src.rpm
+$ dnf --quiet download --source --url python3-3.6.8-21.el7_9
+http://vault.centos.org/centos/7/updates/Source/SPackages/python3-3.6.8-21.el7_9.src.rpm
 ```
 
-### `rpm` package: `python3-libs-3.6.8-18.el7.x86_64`
+### `rpm` package: `python3-libs-3.6.8-21.el7_9.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-libs-3.6.8-18.el7
-http://vault.centos.org/centos/7/updates/Source/SPackages/python3-3.6.8-18.el7.src.rpm
+$ dnf --quiet download --source --url python3-libs-3.6.8-21.el7_9
+http://vault.centos.org/centos/7/updates/Source/SPackages/python3-3.6.8-21.el7_9.src.rpm
 ```
 
 ### `rpm` package: `python3-pip-9.0.3-8.el7.noarch`
@@ -2618,15 +2618,15 @@ $ dnf --quiet download --source --url rpm-python-4.11.3-45.el7
 http://vault.centos.org/centos/7/os/Source/SPackages/rpm-4.11.3-45.el7.src.rpm
 ```
 
-### `rpm` package: `rsync-3.1.2-11.el7_9.x86_64`
+### `rpm` package: `rsync-3.1.2-12.el7_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rsync-3.1.2-11.el7_9
-http://vault.centos.org/centos/7/updates/Source/SPackages/rsync-3.1.2-11.el7_9.src.rpm
+$ dnf --quiet download --source --url rsync-3.1.2-12.el7_9
+http://vault.centos.org/centos/7/updates/Source/SPackages/rsync-3.1.2-12.el7_9.src.rpm
 ```
 
 ### `rpm` package: `scl-utils-20130529-19.el7.x86_64`
@@ -2904,24 +2904,24 @@ $ dnf --quiet download --source --url zip-3.0-11.el7
 http://vault.centos.org/centos/7/os/Source/SPackages/zip-3.0-11.el7.src.rpm
 ```
 
-### `rpm` package: `zlib-1.2.7-20.el7_9.x86_64`
+### `rpm` package: `zlib-1.2.7-21.el7_9.x86_64`
 
 Licenses (from `rpm --query`): zlib and Boost
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url zlib-1.2.7-20.el7_9
-http://vault.centos.org/centos/7/updates/Source/SPackages/zlib-1.2.7-20.el7_9.src.rpm
+$ dnf --quiet download --source --url zlib-1.2.7-21.el7_9
+http://vault.centos.org/centos/7/updates/Source/SPackages/zlib-1.2.7-21.el7_9.src.rpm
 ```
 
-### `rpm` package: `zlib-devel-1.2.7-20.el7_9.x86_64`
+### `rpm` package: `zlib-devel-1.2.7-21.el7_9.x86_64`
 
 Licenses (from `rpm --query`): zlib and Boost
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url zlib-devel-1.2.7-20.el7_9
-http://vault.centos.org/centos/7/updates/Source/SPackages/zlib-1.2.7-20.el7_9.src.rpm
+$ dnf --quiet download --source --url zlib-devel-1.2.7-21.el7_9
+http://vault.centos.org/centos/7/updates/Source/SPackages/zlib-1.2.7-21.el7_9.src.rpm
 ```
