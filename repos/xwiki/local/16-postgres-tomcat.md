@@ -3784,15 +3784,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.3.0-6ubuntu0.8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.8.dsc' tiff_4.3.0-6ubuntu0.8.dsc 2228 SHA512:b21074fa3a79a8dce1be018b811af0dcc6832ccf9ec95ff7ad3bf18dafe2677ca9b7569a4ac263faa851359bda96ed27e4df5f51ef5c9e67a63df1467793944c
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz' tiff_4.3.0.orig.tar.gz 2808254 SHA512:e04a4a6c542e58a174c1e9516af3908acf1d3d3e1096648c5514f4963f73e7af27387a76b0fbabe43cf867a18874088f963796a7cd6e45deb998692e3e235493
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz.asc' tiff_4.3.0.orig.tar.gz.asc 488 SHA512:115a4c5714b52d0fbea800c494d83c8a96b70b2c9ce84a8df03205d9afc517faa17963f5f9508c013d7d3e2be6675b84b594a771a829406473234c4bd85e469e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.8.debian.tar.xz' tiff_4.3.0-6ubuntu0.8.debian.tar.xz 49896 SHA512:0e8f2ad9d38fbbb10f7352cf377eb1722031f07265339a803583867ecb474554d0433fded9dbc5bd5a53ffd20b58a3dbcba982e2a228bf2b86da77640569b489
-```
 
 ### `dpkg` source package: `tzdata=2024a-0ubuntu0.22.04`
 
