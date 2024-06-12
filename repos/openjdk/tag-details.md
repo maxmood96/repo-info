@@ -86,6 +86,90 @@
 -	[`openjdk:23-windowsservercore`](#openjdk23-windowsservercore)
 -	[`openjdk:23-windowsservercore-1809`](#openjdk23-windowsservercore-1809)
 -	[`openjdk:23-windowsservercore-ltsc2022`](#openjdk23-windowsservercore-ltsc2022)
+-	[`openjdk:24`](#openjdk24)
+-	[`openjdk:24-bookworm`](#openjdk24-bookworm)
+-	[`openjdk:24-bullseye`](#openjdk24-bullseye)
+-	[`openjdk:24-ea`](#openjdk24-ea)
+-	[`openjdk:24-ea-1`](#openjdk24-ea-1)
+-	[`openjdk:24-ea-1-bookworm`](#openjdk24-ea-1-bookworm)
+-	[`openjdk:24-ea-1-bullseye`](#openjdk24-ea-1-bullseye)
+-	[`openjdk:24-ea-1-jdk`](#openjdk24-ea-1-jdk)
+-	[`openjdk:24-ea-1-jdk-bookworm`](#openjdk24-ea-1-jdk-bookworm)
+-	[`openjdk:24-ea-1-jdk-bullseye`](#openjdk24-ea-1-jdk-bullseye)
+-	[`openjdk:24-ea-1-jdk-nanoserver`](#openjdk24-ea-1-jdk-nanoserver)
+-	[`openjdk:24-ea-1-jdk-nanoserver-1809`](#openjdk24-ea-1-jdk-nanoserver-1809)
+-	[`openjdk:24-ea-1-jdk-oracle`](#openjdk24-ea-1-jdk-oracle)
+-	[`openjdk:24-ea-1-jdk-oraclelinux8`](#openjdk24-ea-1-jdk-oraclelinux8)
+-	[`openjdk:24-ea-1-jdk-oraclelinux9`](#openjdk24-ea-1-jdk-oraclelinux9)
+-	[`openjdk:24-ea-1-jdk-slim`](#openjdk24-ea-1-jdk-slim)
+-	[`openjdk:24-ea-1-jdk-slim-bookworm`](#openjdk24-ea-1-jdk-slim-bookworm)
+-	[`openjdk:24-ea-1-jdk-slim-bullseye`](#openjdk24-ea-1-jdk-slim-bullseye)
+-	[`openjdk:24-ea-1-jdk-windowsservercore`](#openjdk24-ea-1-jdk-windowsservercore)
+-	[`openjdk:24-ea-1-jdk-windowsservercore-1809`](#openjdk24-ea-1-jdk-windowsservercore-1809)
+-	[`openjdk:24-ea-1-jdk-windowsservercore-ltsc2022`](#openjdk24-ea-1-jdk-windowsservercore-ltsc2022)
+-	[`openjdk:24-ea-1-nanoserver`](#openjdk24-ea-1-nanoserver)
+-	[`openjdk:24-ea-1-nanoserver-1809`](#openjdk24-ea-1-nanoserver-1809)
+-	[`openjdk:24-ea-1-oracle`](#openjdk24-ea-1-oracle)
+-	[`openjdk:24-ea-1-oraclelinux8`](#openjdk24-ea-1-oraclelinux8)
+-	[`openjdk:24-ea-1-oraclelinux9`](#openjdk24-ea-1-oraclelinux9)
+-	[`openjdk:24-ea-1-slim`](#openjdk24-ea-1-slim)
+-	[`openjdk:24-ea-1-slim-bookworm`](#openjdk24-ea-1-slim-bookworm)
+-	[`openjdk:24-ea-1-slim-bullseye`](#openjdk24-ea-1-slim-bullseye)
+-	[`openjdk:24-ea-1-windowsservercore`](#openjdk24-ea-1-windowsservercore)
+-	[`openjdk:24-ea-1-windowsservercore-1809`](#openjdk24-ea-1-windowsservercore-1809)
+-	[`openjdk:24-ea-1-windowsservercore-ltsc2022`](#openjdk24-ea-1-windowsservercore-ltsc2022)
+-	[`openjdk:24-ea-bookworm`](#openjdk24-ea-bookworm)
+-	[`openjdk:24-ea-bullseye`](#openjdk24-ea-bullseye)
+-	[`openjdk:24-ea-jdk`](#openjdk24-ea-jdk)
+-	[`openjdk:24-ea-jdk-bookworm`](#openjdk24-ea-jdk-bookworm)
+-	[`openjdk:24-ea-jdk-bullseye`](#openjdk24-ea-jdk-bullseye)
+-	[`openjdk:24-ea-jdk-nanoserver`](#openjdk24-ea-jdk-nanoserver)
+-	[`openjdk:24-ea-jdk-nanoserver-1809`](#openjdk24-ea-jdk-nanoserver-1809)
+-	[`openjdk:24-ea-jdk-oracle`](#openjdk24-ea-jdk-oracle)
+-	[`openjdk:24-ea-jdk-oraclelinux8`](#openjdk24-ea-jdk-oraclelinux8)
+-	[`openjdk:24-ea-jdk-oraclelinux9`](#openjdk24-ea-jdk-oraclelinux9)
+-	[`openjdk:24-ea-jdk-slim`](#openjdk24-ea-jdk-slim)
+-	[`openjdk:24-ea-jdk-slim-bookworm`](#openjdk24-ea-jdk-slim-bookworm)
+-	[`openjdk:24-ea-jdk-slim-bullseye`](#openjdk24-ea-jdk-slim-bullseye)
+-	[`openjdk:24-ea-jdk-windowsservercore`](#openjdk24-ea-jdk-windowsservercore)
+-	[`openjdk:24-ea-jdk-windowsservercore-1809`](#openjdk24-ea-jdk-windowsservercore-1809)
+-	[`openjdk:24-ea-jdk-windowsservercore-ltsc2022`](#openjdk24-ea-jdk-windowsservercore-ltsc2022)
+-	[`openjdk:24-ea-nanoserver`](#openjdk24-ea-nanoserver)
+-	[`openjdk:24-ea-nanoserver-1809`](#openjdk24-ea-nanoserver-1809)
+-	[`openjdk:24-ea-oracle`](#openjdk24-ea-oracle)
+-	[`openjdk:24-ea-oraclelinux8`](#openjdk24-ea-oraclelinux8)
+-	[`openjdk:24-ea-oraclelinux9`](#openjdk24-ea-oraclelinux9)
+-	[`openjdk:24-ea-slim`](#openjdk24-ea-slim)
+-	[`openjdk:24-ea-slim-bookworm`](#openjdk24-ea-slim-bookworm)
+-	[`openjdk:24-ea-slim-bullseye`](#openjdk24-ea-slim-bullseye)
+-	[`openjdk:24-ea-windowsservercore`](#openjdk24-ea-windowsservercore)
+-	[`openjdk:24-ea-windowsservercore-1809`](#openjdk24-ea-windowsservercore-1809)
+-	[`openjdk:24-ea-windowsservercore-ltsc2022`](#openjdk24-ea-windowsservercore-ltsc2022)
+-	[`openjdk:24-jdk`](#openjdk24-jdk)
+-	[`openjdk:24-jdk-bookworm`](#openjdk24-jdk-bookworm)
+-	[`openjdk:24-jdk-bullseye`](#openjdk24-jdk-bullseye)
+-	[`openjdk:24-jdk-nanoserver`](#openjdk24-jdk-nanoserver)
+-	[`openjdk:24-jdk-nanoserver-1809`](#openjdk24-jdk-nanoserver-1809)
+-	[`openjdk:24-jdk-oracle`](#openjdk24-jdk-oracle)
+-	[`openjdk:24-jdk-oraclelinux8`](#openjdk24-jdk-oraclelinux8)
+-	[`openjdk:24-jdk-oraclelinux9`](#openjdk24-jdk-oraclelinux9)
+-	[`openjdk:24-jdk-slim`](#openjdk24-jdk-slim)
+-	[`openjdk:24-jdk-slim-bookworm`](#openjdk24-jdk-slim-bookworm)
+-	[`openjdk:24-jdk-slim-bullseye`](#openjdk24-jdk-slim-bullseye)
+-	[`openjdk:24-jdk-windowsservercore`](#openjdk24-jdk-windowsservercore)
+-	[`openjdk:24-jdk-windowsservercore-1809`](#openjdk24-jdk-windowsservercore-1809)
+-	[`openjdk:24-jdk-windowsservercore-ltsc2022`](#openjdk24-jdk-windowsservercore-ltsc2022)
+-	[`openjdk:24-nanoserver`](#openjdk24-nanoserver)
+-	[`openjdk:24-nanoserver-1809`](#openjdk24-nanoserver-1809)
+-	[`openjdk:24-oracle`](#openjdk24-oracle)
+-	[`openjdk:24-oraclelinux8`](#openjdk24-oraclelinux8)
+-	[`openjdk:24-oraclelinux9`](#openjdk24-oraclelinux9)
+-	[`openjdk:24-slim`](#openjdk24-slim)
+-	[`openjdk:24-slim-bookworm`](#openjdk24-slim-bookworm)
+-	[`openjdk:24-slim-bullseye`](#openjdk24-slim-bullseye)
+-	[`openjdk:24-windowsservercore`](#openjdk24-windowsservercore)
+-	[`openjdk:24-windowsservercore-1809`](#openjdk24-windowsservercore-1809)
+-	[`openjdk:24-windowsservercore-ltsc2022`](#openjdk24-windowsservercore-ltsc2022)
 
 ## `openjdk:23`
 
@@ -13070,3 +13154,759 @@ CMD ["jshell"]
 		Last Modified: Mon, 10 Jun 2024 22:33:37 GMT  
 		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:24`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-bookworm`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-bullseye`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-bookworm`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-bullseye`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-jdk`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-jdk-bookworm`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-jdk-bullseye`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-jdk-nanoserver`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-jdk-nanoserver-1809`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-jdk-oracle`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-jdk-oraclelinux8`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-jdk-oraclelinux9`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-jdk-slim`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-jdk-slim-bookworm`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-jdk-slim-bullseye`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-jdk-windowsservercore`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-jdk-windowsservercore-1809`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-jdk-windowsservercore-ltsc2022`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-nanoserver`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-nanoserver-1809`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-oracle`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-oraclelinux8`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-oraclelinux9`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-slim`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-slim-bookworm`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-slim-bullseye`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-windowsservercore`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-windowsservercore-1809`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-1-windowsservercore-ltsc2022`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-bookworm`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-bullseye`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-jdk`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-jdk-bookworm`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-jdk-bullseye`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-jdk-nanoserver`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-jdk-nanoserver-1809`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-jdk-oracle`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-jdk-oraclelinux8`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-jdk-oraclelinux9`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-jdk-slim`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-jdk-slim-bookworm`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-jdk-slim-bullseye`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-jdk-windowsservercore`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-jdk-windowsservercore-1809`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-jdk-windowsservercore-ltsc2022`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-nanoserver`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-nanoserver-1809`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-oracle`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-oraclelinux8`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-oraclelinux9`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-slim`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-slim-bookworm`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-slim-bullseye`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-windowsservercore`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-windowsservercore-1809`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-ea-windowsservercore-ltsc2022`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-jdk`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-jdk-bookworm`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-jdk-bullseye`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-jdk-nanoserver`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-jdk-nanoserver-1809`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-jdk-oracle`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-jdk-oraclelinux8`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-jdk-oraclelinux9`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-jdk-slim`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-jdk-slim-bookworm`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-jdk-slim-bullseye`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-jdk-windowsservercore`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-jdk-windowsservercore-1809`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-jdk-windowsservercore-ltsc2022`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-nanoserver`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-nanoserver-1809`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-oracle`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-oraclelinux8`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-oraclelinux9`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-slim`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-slim-bookworm`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-slim-bullseye`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-windowsservercore`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-windowsservercore-1809`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `openjdk:24-windowsservercore-ltsc2022`
+
+```console
+$ docker pull openjdk@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
