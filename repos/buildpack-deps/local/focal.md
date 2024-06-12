@@ -3076,15 +3076,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-8.0=8.0.36-0ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.36-0ubuntu0.20.04.1.dsc' mysql-8.0_8.0.36-0ubuntu0.20.04.1.dsc 3750 SHA512:450c881743c275295f078aea222ba209bbf04bf58b8a33089c5984f81358d6b60f74c4000a97c7af6a398d737532699783b9c40457dcc470ae5112e7ed314719
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.36.orig.tar.gz' mysql-8.0_8.0.36.orig.tar.gz 438154682 SHA512:a6c1c009a322b7e7aa2aa607573060414c847c77d48f44a24058ffb89673621f2ebbcc1a4448fa841a87ff721159cc8eaf44a57721c7dc233c130691c16a9d4a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.36.orig.tar.gz.asc' mysql-8.0_8.0.36.orig.tar.gz.asc 833 SHA512:96f0ea70ff9b52545706f15fdad8b3fe0997124953e7aaad01781e9b58e534af362c4a09a626cbf7c66d1667183e7182c9ce19dcdf87ce38e9bf2cf0070a337e
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.36-0ubuntu0.20.04.1.debian.tar.xz' mysql-8.0_8.0.36-0ubuntu0.20.04.1.debian.tar.xz 163764 SHA512:cb765b8819fd044821da9a37899df73fefd8f52ab855693a5f4fe5f5aae52855da5b1ff4407eea39769d09a06ff0af9373f1e306139c887d8b1c79da8aca1367
-```
 
 ### `dpkg` source package: `mysql-defaults=1.0.5ubuntu2`
 
@@ -4112,14 +4106,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.1.0+git191117-2ubuntu0.20.04.12
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0%2bgit191117-2ubuntu0.20.04.12.dsc' tiff_4.1.0+git191117-2ubuntu0.20.04.12.dsc 2081 SHA512:8a2989d826d69be1342422466914af4948fff3e7a151a7697e13c7ef2b95ba096716f9302cbadefe78068c56c560c2fd77d1e89f3f0baa48d05eb51e33075712
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0%2bgit191117.orig.tar.xz' tiff_4.1.0+git191117.orig.tar.xz 1533524 SHA512:25b4bc4522fc2e7f3ca6857b87acd4481d8643566b1120c755020afc8b48949238ee2078bc43dd3ba7407eaa4e36b1b712d7056f101ddaf60f94dab8607870b8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0%2bgit191117-2ubuntu0.20.04.12.debian.tar.xz' tiff_4.1.0+git191117-2ubuntu0.20.04.12.debian.tar.xz 52284 SHA512:7ec918ec0d0b002fcc2608a0467fd07a34266c018a2a947aa19e11018f5bf18b0f27dbde5929af00eb887e3ea36d9801e023ebf22f60edb4fa7f2851c0a0de2f
-```
 
 ### `dpkg` source package: `tzdata=2024a-0ubuntu0.20.04`
 

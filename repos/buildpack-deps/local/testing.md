@@ -862,19 +862,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.17
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.17.dsc' debianutils_5.17.dsc 1631 SHA256:4ba4ecda8885ab0f45ef878d7bc62882c6673f74b1636109878e5c9ff5f0f88e
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.17.tar.xz' debianutils_5.17.tar.xz 80356 SHA256:367654878388f532cd8a897fe64766e2d57ae4c60da1d4d8f20dcdf2fb0cbde8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/5.17/
 
-- https://sources.debian.net/src/debianutils/5.17/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/5.17/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/5.17/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.10-1`
 
@@ -5217,20 +5211,13 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-4
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-4.dsc' shadow_4.13+dfsg1-4.dsc 2428 SHA256:c805045a571b1a93e88fb65239c112dc39657bb08461efd7a575fbdea6dbe445
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1.orig.tar.xz' shadow_4.13+dfsg1.orig.tar.xz 1811752 SHA256:a8bb3a2aceff1cbe39d0f50687dcc1d7e7be0516a9d954d8e2eedb93f5906207
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-4.debian.tar.xz' shadow_4.13+dfsg1-4.debian.tar.xz 82380 SHA256:baca35100bd6c1e54fa8b6653361eede47a0bc586bd91c88dcc9c7d08d47e8b7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-4/
 
-- https://sources.debian.net/src/shadow/1:4.13+dfsg1-4/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.13+dfsg1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `shared-mime-info=2.4-4`
 
@@ -5330,20 +5317,13 @@ Licenses: (parsed from: `/usr/share/doc/libsysprof-capture-4-dev/copyright`)
 - `LGPL-3.0+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysprof=46.0-1
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_46.0-1.dsc' sysprof_46.0-1.dsc 2795 SHA256:df4fee4f263d7c4ea3b4522f91fd7879c6b07a606671dddd1b2273ad05c64f2d
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_46.0.orig.tar.xz' sysprof_46.0.orig.tar.xz 1170396 SHA256:73aa7e75ebab3e4e0946a05a723df7e6ee4249e3b9e884dba35500aba2a1d176
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_46.0-1.debian.tar.xz' sysprof_46.0-1.debian.tar.xz 16372 SHA256:ba102c83e7da52c763a53db51283fb0a36a94fcd57855bb41a11ba421aed80e7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysprof/46.0-1/
 
-- https://sources.debian.net/src/sysprof/46.0-1/ (for browsing the source)
-- https://sources.debian.net/src/sysprof/46.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysprof/46.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=255.5-1`
 

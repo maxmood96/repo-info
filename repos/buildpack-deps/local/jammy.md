@@ -3268,15 +3268,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-8.0=8.0.36-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.36-0ubuntu0.22.04.1.dsc' mysql-8.0_8.0.36-0ubuntu0.22.04.1.dsc 3821 SHA512:a15ce77db79af0cf3652aeea3161d006d1541b4985558151861720e5b6f22fa6c2d8227f6abb11f3540b8aca4b0275860ac198e44f931d4cb6a5f0bfff212164
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.36.orig.tar.gz' mysql-8.0_8.0.36.orig.tar.gz 438154682 SHA512:a6c1c009a322b7e7aa2aa607573060414c847c77d48f44a24058ffb89673621f2ebbcc1a4448fa841a87ff721159cc8eaf44a57721c7dc233c130691c16a9d4a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.36.orig.tar.gz.asc' mysql-8.0_8.0.36.orig.tar.gz.asc 833 SHA512:96f0ea70ff9b52545706f15fdad8b3fe0997124953e7aaad01781e9b58e534af362c4a09a626cbf7c66d1667183e7182c9ce19dcdf87ce38e9bf2cf0070a337e
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.36-0ubuntu0.22.04.1.debian.tar.xz' mysql-8.0_8.0.36-0ubuntu0.22.04.1.debian.tar.xz 162328 SHA512:43294daa984be09b4d16f40a867a28397a735731cb3999e3e35fd2ccf5cae8ee54923080ddacc3fa1eabe624ea9f8d9913d681d8671c551c5e7a4bd2a9507290
-```
 
 ### `dpkg` source package: `mysql-defaults=1.0.8`
 
@@ -4272,15 +4266,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.3.0-6ubuntu0.8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.8.dsc' tiff_4.3.0-6ubuntu0.8.dsc 2228 SHA512:b21074fa3a79a8dce1be018b811af0dcc6832ccf9ec95ff7ad3bf18dafe2677ca9b7569a4ac263faa851359bda96ed27e4df5f51ef5c9e67a63df1467793944c
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz' tiff_4.3.0.orig.tar.gz 2808254 SHA512:e04a4a6c542e58a174c1e9516af3908acf1d3d3e1096648c5514f4963f73e7af27387a76b0fbabe43cf867a18874088f963796a7cd6e45deb998692e3e235493
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz.asc' tiff_4.3.0.orig.tar.gz.asc 488 SHA512:115a4c5714b52d0fbea800c494d83c8a96b70b2c9ce84a8df03205d9afc517faa17963f5f9508c013d7d3e2be6675b84b594a771a829406473234c4bd85e469e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.8.debian.tar.xz' tiff_4.3.0-6ubuntu0.8.debian.tar.xz 49896 SHA512:0e8f2ad9d38fbbb10f7352cf377eb1722031f07265339a803583867ecb474554d0433fded9dbc5bd5a53ffd20b58a3dbcba982e2a228bf2b86da77640569b489
-```
 
 ### `dpkg` source package: `tzdata=2024a-0ubuntu0.22.04`
 

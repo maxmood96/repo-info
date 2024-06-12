@@ -131,20 +131,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:3.1.2-2.1
-'http://deb.debian.org/debian/pool/main/a/audit/audit_3.1.2-2.1.dsc' audit_3.1.2-2.1.dsc 2762 SHA256:da742208cdf29f867c2dac37075ae03b596f46b3e1534442e6197f2e91147db6
-'http://deb.debian.org/debian/pool/main/a/audit/audit_3.1.2.orig.tar.gz' audit_3.1.2.orig.tar.gz 1219860 SHA256:c0b1792d1f0a88c6f1828710509cbb987059fc68712c97669ca90eae103d287d
-'http://deb.debian.org/debian/pool/main/a/audit/audit_3.1.2-2.1.debian.tar.xz' audit_3.1.2-2.1.debian.tar.xz 18696 SHA256:9660ada28d07bed94d34a4d8a0446881d927e172cc386b92357afec064a4352c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/audit/1:3.1.2-2.1/
 
-- https://sources.debian.net/src/audit/1:3.1.2-2.1/ (for browsing the source)
-- https://sources.debian.net/src/audit/1:3.1.2-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/audit/1:3.1.2-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-files=13.2`
 
@@ -1762,20 +1755,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.61.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.61.0-1.dsc' nghttp2_1.61.0-1.dsc 2531 SHA256:74fe40cbd72b8e3df28f4a1d5d8e0353d7b66cb4205a357118e2169f9feaf9d1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.61.0.orig.tar.gz' nghttp2_1.61.0.orig.tar.gz 1067767 SHA256:5905df7984d04b7a6621ae591c410978b183af3900f923241138c953812f7dd4
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.61.0-1.debian.tar.xz' nghttp2_1.61.0-1.debian.tar.xz 38816 SHA256:37f3b491ec8559863b634eafbeebfabb58af4bed60d5c530d90b60e8227f4f34
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.61.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.61.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.61.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.61.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-3.1`
 
