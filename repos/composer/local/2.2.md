@@ -1,10 +1,10 @@
-# `composer:2.2.23`
+# `composer:2.2.24`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b32d5209956a55e3670b953353aef9bb1df5dd838e2a25a98ca72b24489a213c`
-- Created: `2024-02-08T14:56:30Z`
-- Virtual Size: ~ 188.12 Mb  
+- Image ID: `sha256:85e5fa46b8aff25e509429033c05716986cdcf4fe8022e6b7fecd1fd260e4c6d`
+- Created: `2024-06-11T08:09:22Z`
+- Virtual Size: ~ 195.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=aea358b56186f943c2bbd350c9005b9359133d47e954cfc561385319ae5bb8d7`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=2.2.23`
+  - `COMPOSER_VERSION=2.2.24`
 
 ## `apk` (`.apk`-based packages)
 
@@ -200,16 +200,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.36.1-r28 description:
+busybox-1.36.1-r29 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.36.1-r28 webpage:
+busybox-1.36.1-r29 webpage:
 https://busybox.net/
 
-busybox-1.36.1-r28 installed size:
+busybox-1.36.1-r29 installed size:
 908 KiB
 
-busybox-1.36.1-r28 license:
+busybox-1.36.1-r29 license:
 GPL-2.0-only
 
 ```
@@ -217,16 +217,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.36.1-r28 description:
+busybox-binsh-1.36.1-r29 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.36.1-r28 webpage:
+busybox-binsh-1.36.1-r29 webpage:
 https://busybox.net/
 
-busybox-binsh-1.36.1-r28 installed size:
+busybox-binsh-1.36.1-r29 installed size:
 8192 B
 
-busybox-binsh-1.36.1-r28 license:
+busybox-binsh-1.36.1-r29 license:
 GPL-2.0-only
 
 ```
@@ -489,16 +489,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.0-r2 description:
+libcrypto3-3.3.1-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.0-r2 webpage:
+libcrypto3-3.3.1-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.0-r2 installed size:
-4656 KiB
+libcrypto3-3.3.1-r0 installed size:
+4660 KiB
 
-libcrypto3-3.3.0-r2 license:
+libcrypto3-3.3.1-r0 license:
 Apache-2.0
 
 ```
@@ -693,16 +693,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.0-r2 description:
+libssl3-3.3.1-r0 description:
 SSL shared libraries
 
-libssl3-3.3.0-r2 webpage:
+libssl3-3.3.1-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.0-r2 installed size:
+libssl3-3.3.1-r0 installed size:
 796 KiB
 
-libssl3-3.3.0-r2 license:
+libssl3-3.3.1-r0 license:
 Apache-2.0
 
 ```
@@ -1016,16 +1016,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.0-r2 description:
+openssl-3.3.1-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.0-r2 webpage:
+openssl-3.3.1-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.3.0-r2 installed size:
+openssl-3.3.1-r0 installed size:
 784 KiB
 
-openssl-3.3.0-r2 license:
+openssl-3.3.1-r0 license:
 Apache-2.0
 
 ```
@@ -1220,16 +1220,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.36.1-r28 description:
+ssl_client-1.36.1-r29 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.36.1-r28 webpage:
+ssl_client-1.36.1-r29 webpage:
 https://busybox.net/
 
-ssl_client-1.36.1-r28 installed size:
+ssl_client-1.36.1-r29 installed size:
 28 KiB
 
-ssl_client-1.36.1-r28 license:
+ssl_client-1.36.1-r29 license:
 GPL-2.0-only
 
 ```
