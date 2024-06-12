@@ -1,10 +1,10 @@
-# `python:3.12.3-slim-bookworm`
+# `python:3.12.4-slim-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cf001c2f8af7214144935ae5b37c9e626ccf789117c10c1f691766d4658f1b1e`
-- Created: `2024-04-09T15:49:24Z`
-- Virtual Size: ~ 130.25 Mb  
+- Image ID: `sha256:faf6686d57dd22140a03308e5af4f0c962d8eb80e0f10deacd578a8193f4adcf`
+- Created: `2024-06-07T03:53:24Z`
+- Virtual Size: ~ 130.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.12.3`
+  - `PYTHON_VERSION=3.12.4`
   - `PYTHON_PIP_VERSION=24.0`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/dbf0c85f76fb6e1ab42aa672ffca6f0a675d9ee4/public/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=dfe9fd5c28dc98b5ac17979a953ea550cec37ae1b47a5116007395bfacff2ab9`
