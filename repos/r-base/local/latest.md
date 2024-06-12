@@ -588,19 +588,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.17
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.17.dsc' debianutils_5.17.dsc 1631 SHA256:4ba4ecda8885ab0f45ef878d7bc62882c6673f74b1636109878e5c9ff5f0f88e
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.17.tar.xz' debianutils_5.17.tar.xz 80356 SHA256:367654878388f532cd8a897fe64766e2d57ae4c60da1d4d8f20dcdf2fb0cbde8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/5.17/
 
-- https://sources.debian.net/src/debianutils/5.17/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/5.17/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/5.17/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.10-1`
 
@@ -994,15 +988,13 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4t64/copyright`, `/usr/sha
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdbm=1.23-5.1
-'http://http.debian.net/debian/pool/main/g/gdbm/gdbm_1.23-5.1.dsc' gdbm_1.23-5.1.dsc 2468 SHA256:98f52618e1029af96612fb80f787160980dc798f9b72bf5a67f8ce38e438ed81
-'http://http.debian.net/debian/pool/main/g/gdbm/gdbm_1.23.orig.tar.gz' gdbm_1.23.orig.tar.gz 1115854 SHA256:74b1081d21fff13ae4bd7c16e5d6e504a4c26f7cde1dca0d963a484174bbcacd
-'http://http.debian.net/debian/pool/main/g/gdbm/gdbm_1.23.orig.tar.gz.asc' gdbm_1.23.orig.tar.gz.asc 181 SHA256:64ebb68cc68e8915d62cb20ea40323c00b56051f844589ee0a52169fff34cecb
-'http://http.debian.net/debian/pool/main/g/gdbm/gdbm_1.23-5.1.debian.tar.xz' gdbm_1.23-5.1.debian.tar.xz 18428 SHA256:a9385932e03e1d678be57f02b905430dc5ef769db5c7c63d97b8c5c0b1a80712
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gdbm/1.23-5.1/
+
 
 ### `dpkg` source package: `glib2.0=2.80.2-2`
 
@@ -2615,10 +2607,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nghttp2=1.61.0-1
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.61.0-1.dsc' nghttp2_1.61.0-1.dsc 2531 SHA256:74fe40cbd72b8e3df28f4a1d5d8e0353d7b66cb4205a357118e2169f9feaf9d1
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.61.0.orig.tar.gz' nghttp2_1.61.0.orig.tar.gz 1067767 SHA256:5905df7984d04b7a6621ae591c410978b183af3900f923241138c953812f7dd4
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.61.0-1.debian.tar.xz' nghttp2_1.61.0-1.debian.tar.xz 38816 SHA256:37f3b491ec8559863b634eafbeebfabb58af4bed60d5c530d90b60e8227f4f34
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.61.0-1.dsc' nghttp2_1.61.0-1.dsc 2531 SHA256:74fe40cbd72b8e3df28f4a1d5d8e0353d7b66cb4205a357118e2169f9feaf9d1
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.61.0.orig.tar.gz' nghttp2_1.61.0.orig.tar.gz 1067767 SHA256:5905df7984d04b7a6621ae591c410978b183af3900f923241138c953812f7dd4
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.61.0-1.debian.tar.xz' nghttp2_1.61.0-1.debian.tar.xz 38816 SHA256:37f3b491ec8559863b634eafbeebfabb58af4bed60d5c530d90b60e8227f4f34
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/nghttp2/1.61.0-1/ (for browsing the source)
+- https://sources.debian.net/src/nghttp2/1.61.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nghttp2/1.61.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nlme=3.1.164-1`
 
@@ -2631,20 +2629,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-nlme/copyright`)
 - `GPL`
 - `GPL `
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nlme=3.1.164-1
-'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.164-1.dsc' nlme_3.1.164-1.dsc 1840 SHA256:6e140f5d3d3a2f92de29c303a65e0144c97f2cbc298d5615fbc7a8845f2f7743
-'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.164.orig.tar.gz' nlme_3.1.164.orig.tar.gz 836832 SHA256:79a5a020ce7037b83ee6c28336e35a1310058c13fc59f7fcb11eca0bc9bdd4e8
-'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.164-1.debian.tar.xz' nlme_3.1.164-1.debian.tar.xz 7328 SHA256:31701dc6c1f5578910cf342309eb7bac2c983527f38d3cab84a9318c3b87a3d7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nlme/3.1.164-1/
 
-- https://sources.debian.net/src/nlme/3.1.164-1/ (for browsing the source)
-- https://sources.debian.net/src/nlme/3.1.164-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nlme/3.1.164-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openblas=0.3.27+ds-2`
 
@@ -2827,10 +2818,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pango1.0=1.52.2+ds-1
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.52.2%2bds-1.dsc' pango1.0_1.52.2+ds-1.dsc 3514 SHA256:fadc502262c498495c881bd0c515548833782b0784bad10407f40ad665443db5
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.52.2%2bds.orig.tar.xz' pango1.0_1.52.2+ds.orig.tar.xz 1744736 SHA256:ec0b78654e43dbcec7d24a668560d1de3330af89c0c34a7c01f282f396dbdede
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.52.2%2bds-1.debian.tar.xz' pango1.0_1.52.2+ds-1.debian.tar.xz 41628 SHA256:d9584f264c93a1f2018d176db465298b5f3b088dc51fe0a68afec13d5e0f2697
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.52.2%2bds-1.dsc' pango1.0_1.52.2+ds-1.dsc 3514 SHA256:fadc502262c498495c881bd0c515548833782b0784bad10407f40ad665443db5
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.52.2%2bds.orig.tar.xz' pango1.0_1.52.2+ds.orig.tar.xz 1744736 SHA256:ec0b78654e43dbcec7d24a668560d1de3330af89c0c34a7c01f282f396dbdede
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.52.2%2bds-1.debian.tar.xz' pango1.0_1.52.2+ds-1.debian.tar.xz 41628 SHA256:d9584f264c93a1f2018d176db465298b5f3b088dc51fe0a68afec13d5e0f2697
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/pango1.0/1.52.2+ds-1/ (for browsing the source)
+- https://sources.debian.net/src/pango1.0/1.52.2+ds-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pango1.0/1.52.2+ds-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-7`
 
