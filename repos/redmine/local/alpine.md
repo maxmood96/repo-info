@@ -1,10 +1,10 @@
-# `redmine:5.1.2-alpine3.20`
+# `redmine:5.1.3-alpine3.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2b5f0f4cbe9c90d06f421fed7fb6148ea060e73f8942fccb3a3eaf3353bafb8d`
-- Created: `2024-05-29T20:43:51Z`
-- Virtual Size: ~ 412.17 Mb  
+- Image ID: `sha256:f8ce5fcb73873542ec1f37b9b190af7a3c5e79e8d24c75cd0c09c937421e99fb`
+- Created: `2024-06-12T02:38:54Z`
+- Virtual Size: ~ 417.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -20,9 +20,9 @@
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=5.1.2`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.2.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=26c0ca0a9aaee1ceb983825bf1266c99b0850bf013c178713f5a3b0080012123`
+  - `REDMINE_VERSION=5.1.3`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.3.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=8a22320fd9c940e6598f3ad5fb7a3933195c86068eee994ba6fcdc22c5cecb59`
   - `BUNDLE_FORCE_RUBY_PLATFORM=1`
 
 ## `apk` (`.apk`-based packages)
@@ -489,16 +489,16 @@ GPL-2.0-or-later
 ### `apk` package: `git`
 
 ```console
-git-2.45.1-r0 description:
+git-2.45.2-r0 description:
 Distributed version control system
 
-git-2.45.1-r0 webpage:
+git-2.45.2-r0 webpage:
 https://www.git-scm.com/
 
-git-2.45.1-r0 installed size:
-6480 KiB
+git-2.45.2-r0 installed size:
+6468 KiB
 
-git-2.45.1-r0 license:
+git-2.45.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -506,16 +506,16 @@ GPL-2.0-only
 ### `apk` package: `git-init-template`
 
 ```console
-git-init-template-2.45.1-r0 description:
+git-init-template-2.45.2-r0 description:
 Git init template directory
 
-git-init-template-2.45.1-r0 webpage:
+git-init-template-2.45.2-r0 webpage:
 https://www.git-scm.com/
 
-git-init-template-2.45.1-r0 installed size:
+git-init-template-2.45.2-r0 installed size:
 96 KiB
 
-git-init-template-2.45.1-r0 license:
+git-init-template-2.45.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -574,16 +574,16 @@ LGPL-2.1-or-later
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.1.32-r1 description:
+imagemagick-7.1.1.32-r2 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.1.32-r1 webpage:
+imagemagick-7.1.1.32-r2 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.1.32-r1 installed size:
-4356 KiB
+imagemagick-7.1.1.32-r2 installed size:
+4340 KiB
 
-imagemagick-7.1.1.32-r1 license:
+imagemagick-7.1.1.32-r2 license:
 ImageMagick
 
 ```
@@ -591,16 +591,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.1.32-r1 description:
+imagemagick-jpeg-7.1.1.32-r2 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.1.32-r1 webpage:
+imagemagick-jpeg-7.1.1.32-r2 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.1.32-r1 installed size:
+imagemagick-jpeg-7.1.1.32-r2 installed size:
 84 KiB
 
-imagemagick-jpeg-7.1.1.32-r1 license:
+imagemagick-jpeg-7.1.1.32-r2 license:
 ImageMagick
 
 ```
@@ -608,16 +608,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.1.32-r1 description:
+imagemagick-libs-7.1.1.32-r2 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.1.32-r1 webpage:
+imagemagick-libs-7.1.1.32-r2 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.1.32-r1 installed size:
+imagemagick-libs-7.1.1.32-r2 installed size:
 4168 KiB
 
-imagemagick-libs-7.1.1.32-r1 license:
+imagemagick-libs-7.1.1.32-r2 license:
 ImageMagick
 
 ```
@@ -625,16 +625,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.1.32-r1 description:
+imagemagick-pdf-7.1.1.32-r2 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.1.32-r1 webpage:
+imagemagick-pdf-7.1.1.32-r2 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.1.32-r1 installed size:
+imagemagick-pdf-7.1.1.32-r2 installed size:
 156 KiB
 
-imagemagick-pdf-7.1.1.32-r1 license:
+imagemagick-pdf-7.1.1.32-r2 license:
 ImageMagick
 
 ```
@@ -642,16 +642,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.1.32-r1 description:
+imagemagick-tiff-7.1.1.32-r2 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.1.32-r1 webpage:
+imagemagick-tiff-7.1.1.32-r2 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.1.32-r1 installed size:
+imagemagick-tiff-7.1.1.32-r2 installed size:
 144 KiB
 
-imagemagick-tiff-7.1.1.32-r1 license:
+imagemagick-tiff-7.1.1.32-r2 license:
 ImageMagick
 
 ```
@@ -659,16 +659,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.1.32-r1 description:
+imagemagick-webp-7.1.1.32-r2 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.1.32-r1 webpage:
+imagemagick-webp-7.1.1.32-r2 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.1.32-r1 installed size:
+imagemagick-webp-7.1.1.32-r2 installed size:
 56 KiB
 
-imagemagick-webp-7.1.1.32-r1 license:
+imagemagick-webp-7.1.1.32-r2 license:
 ImageMagick
 
 ```
@@ -744,16 +744,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.0-r2 description:
+libcrypto3-3.3.1-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.0-r2 webpage:
+libcrypto3-3.3.1-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.0-r2 installed size:
-4656 KiB
+libcrypto3-3.3.1-r0 installed size:
+4660 KiB
 
-libcrypto3-3.3.0-r2 license:
+libcrypto3-3.3.1-r0 license:
 Apache-2.0
 
 ```
@@ -1118,16 +1118,16 @@ BSD-3-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.0-r2 description:
+libssl3-3.3.1-r0 description:
 SSL shared libraries
 
-libssl3-3.3.0-r2 webpage:
+libssl3-3.3.1-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.0-r2 installed size:
+libssl3-3.3.1-r0 installed size:
 796 KiB
 
-libssl3-3.3.0-r2 license:
+libssl3-3.3.1-r0 license:
 Apache-2.0
 
 ```

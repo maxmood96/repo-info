@@ -1,9 +1,9 @@
-# `redmine:5.1.2-alpine3.19`
+# `redmine:5.1.3-alpine3.19`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7d66edb210b79db12f0ecbc3f4c051e67956c9736f37f9e57dd6f0eea6f1417`
-- Created: `2024-05-29T20:43:51Z`
+- Image ID: `sha256:15b5a9adc98acc3e2b26d96da8e9ab6051486971cea05869bdcfa6c72cd854a9`
+- Created: `2024-06-12T02:38:54Z`
 - Virtual Size: ~ 427.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -20,9 +20,9 @@
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=5.1.2`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.2.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=26c0ca0a9aaee1ceb983825bf1266c99b0850bf013c178713f5a3b0080012123`
+  - `REDMINE_VERSION=5.1.3`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.3.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=8a22320fd9c940e6598f3ad5fb7a3933195c86068eee994ba6fcdc22c5cecb59`
   - `BUNDLE_FORCE_RUBY_PLATFORM=1`
 
 ## `apk` (`.apk`-based packages)
