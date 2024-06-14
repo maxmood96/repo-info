@@ -1,9 +1,9 @@
-# `elixir:1.17.0-rc.1`
+# `elixir:1.17.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:14b5fef34e6f167f43c96373334678c373ae80f191ae0f827b0348e7e0ab58f3`
-- Created: `2024-06-09T21:32:55Z`
+- Image ID: `sha256:beac3480f1d73c5a5ac6c4d33f34839ec3779b36c5846cbed6526578747259d1`
+- Created: `2024-06-12T11:57:50Z`
 - Virtual Size: ~ 1.75 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `OTP_VERSION=27.0`
   - `REBAR3_VERSION=3.23.0`
   - `REBAR_VERSION=2.6.4`
-  - `ELIXIR_VERSION=v1.17.0-rc.1`
+  - `ELIXIR_VERSION=v1.17.0`
   - `LANG=C.UTF-8`
 - Labels:
   - `org.opencontainers.image.version=27.0`
@@ -2567,13 +2567,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gst-plugins-bad1.0/1.22.0-4+deb12u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gst-plugins-bad1.0/1.22.0-4+deb12u5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gst-plugins-base1.0=1.22.0-3+deb12u1`
+### `dpkg` source package: `gst-plugins-base1.0=1.22.0-3+deb12u2`
 
 Binary Packages:
 
-- `gstreamer1.0-plugins-base:amd64=1.22.0-3+deb12u1`
-- `libgstreamer-gl1.0-0:amd64=1.22.0-3+deb12u1`
-- `libgstreamer-plugins-base1.0-0:amd64=1.22.0-3+deb12u1`
+- `gstreamer1.0-plugins-base:amd64=1.22.0-3+deb12u2`
+- `libgstreamer-gl1.0-0:amd64=1.22.0-3+deb12u2`
+- `libgstreamer-plugins-base1.0-0:amd64=1.22.0-3+deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/gstreamer1.0-plugins-base/copyright`, `/usr/share/doc/libgstreamer-gl1.0-0/copyright`, `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright`)
 
@@ -2587,18 +2587,17 @@ Licenses: (parsed from: `/usr/share/doc/gstreamer1.0-plugins-base/copyright`, `/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gst-plugins-base1.0=1.22.0-3+deb12u1
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.22.0-3%2bdeb12u1.dsc' gst-plugins-base1.0_1.22.0-3+deb12u1.dsc 3995 SHA256:95c8892f24cf5d97d620099fb1417b6f18e272c54c47ee7e0e6b4b55eb771a47
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.22.0.orig.tar.xz' gst-plugins-base1.0_1.22.0.orig.tar.xz 2341248 SHA256:f53672294f3985d56355c8b1df8f6b49c8c8721106563e19f53be3507ff2229d
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.22.0.orig.tar.xz.asc' gst-plugins-base1.0_1.22.0.orig.tar.xz.asc 833 SHA256:73a6ec5620fe5de0afc24354b74fa6e1fdc261511c4e49ce6386df4dd0b426a8
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.22.0-3%2bdeb12u1.debian.tar.xz' gst-plugins-base1.0_1.22.0-3+deb12u1.debian.tar.xz 49764 SHA256:cf728f84bd41a3f499de991614b4e82959f9056fef8c7aa0bc995e0dba2d05bf
+$ apt-get source -qq --print-uris gst-plugins-base1.0=1.22.0-3+deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.22.0-3%2bdeb12u2.dsc' gst-plugins-base1.0_1.22.0-3+deb12u2.dsc 3867 SHA256:270caa4fa284bbd74748c18b6189b99b8ec548c3e63bdb5afe1308de8278d516
+'http://deb.debian.org/debian-security/pool/updates/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.22.0.orig.tar.xz' gst-plugins-base1.0_1.22.0.orig.tar.xz 2341248 SHA256:f53672294f3985d56355c8b1df8f6b49c8c8721106563e19f53be3507ff2229d
+'http://deb.debian.org/debian-security/pool/updates/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.22.0-3%2bdeb12u2.debian.tar.xz' gst-plugins-base1.0_1.22.0-3+deb12u2.debian.tar.xz 50684 SHA256:fca29c98155b995b91599841072e23693fb879e029068c4359098ba9a73d7413
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gst-plugins-base1.0/1.22.0-3+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/gst-plugins-base1.0/1.22.0-3+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gst-plugins-base1.0/1.22.0-3+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gst-plugins-base1.0/1.22.0-3+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/gst-plugins-base1.0/1.22.0-3+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gst-plugins-base1.0/1.22.0-3+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gst-plugins-good1.0=1.22.0-5+deb12u1`
 

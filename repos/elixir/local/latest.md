@@ -1,22 +1,22 @@
-# `elixir:1.16.3`
+# `elixir:1.17.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c2a0256ec5b45f8f8f0961c07e65c5597ceadf1554d5dcaf37ce95fc37e081aa`
-- Created: `2024-05-26T04:39:18Z`
-- Virtual Size: ~ 1.58 Gb  
+- Image ID: `sha256:beac3480f1d73c5a5ac6c4d33f34839ec3779b36c5846cbed6526578747259d1`
+- Created: `2024-06-12T11:57:50Z`
+- Virtual Size: ~ 1.75 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=26.2.5`
+  - `OTP_VERSION=27.0`
   - `REBAR3_VERSION=3.23.0`
   - `REBAR_VERSION=2.6.4`
-  - `ELIXIR_VERSION=v1.16.3`
+  - `ELIXIR_VERSION=v1.17.0`
   - `LANG=C.UTF-8`
 - Labels:
-  - `org.opencontainers.image.version=26.2.5`
+  - `org.opencontainers.image.version=27.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2567,13 +2567,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gst-plugins-bad1.0/1.22.0-4+deb12u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gst-plugins-bad1.0/1.22.0-4+deb12u5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gst-plugins-base1.0=1.22.0-3+deb12u1`
+### `dpkg` source package: `gst-plugins-base1.0=1.22.0-3+deb12u2`
 
 Binary Packages:
 
-- `gstreamer1.0-plugins-base:amd64=1.22.0-3+deb12u1`
-- `libgstreamer-gl1.0-0:amd64=1.22.0-3+deb12u1`
-- `libgstreamer-plugins-base1.0-0:amd64=1.22.0-3+deb12u1`
+- `gstreamer1.0-plugins-base:amd64=1.22.0-3+deb12u2`
+- `libgstreamer-gl1.0-0:amd64=1.22.0-3+deb12u2`
+- `libgstreamer-plugins-base1.0-0:amd64=1.22.0-3+deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/gstreamer1.0-plugins-base/copyright`, `/usr/share/doc/libgstreamer-gl1.0-0/copyright`, `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright`)
 
@@ -2587,18 +2587,17 @@ Licenses: (parsed from: `/usr/share/doc/gstreamer1.0-plugins-base/copyright`, `/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gst-plugins-base1.0=1.22.0-3+deb12u1
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.22.0-3%2bdeb12u1.dsc' gst-plugins-base1.0_1.22.0-3+deb12u1.dsc 3995 SHA256:95c8892f24cf5d97d620099fb1417b6f18e272c54c47ee7e0e6b4b55eb771a47
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.22.0.orig.tar.xz' gst-plugins-base1.0_1.22.0.orig.tar.xz 2341248 SHA256:f53672294f3985d56355c8b1df8f6b49c8c8721106563e19f53be3507ff2229d
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.22.0.orig.tar.xz.asc' gst-plugins-base1.0_1.22.0.orig.tar.xz.asc 833 SHA256:73a6ec5620fe5de0afc24354b74fa6e1fdc261511c4e49ce6386df4dd0b426a8
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.22.0-3%2bdeb12u1.debian.tar.xz' gst-plugins-base1.0_1.22.0-3+deb12u1.debian.tar.xz 49764 SHA256:cf728f84bd41a3f499de991614b4e82959f9056fef8c7aa0bc995e0dba2d05bf
+$ apt-get source -qq --print-uris gst-plugins-base1.0=1.22.0-3+deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.22.0-3%2bdeb12u2.dsc' gst-plugins-base1.0_1.22.0-3+deb12u2.dsc 3867 SHA256:270caa4fa284bbd74748c18b6189b99b8ec548c3e63bdb5afe1308de8278d516
+'http://deb.debian.org/debian-security/pool/updates/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.22.0.orig.tar.xz' gst-plugins-base1.0_1.22.0.orig.tar.xz 2341248 SHA256:f53672294f3985d56355c8b1df8f6b49c8c8721106563e19f53be3507ff2229d
+'http://deb.debian.org/debian-security/pool/updates/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.22.0-3%2bdeb12u2.debian.tar.xz' gst-plugins-base1.0_1.22.0-3+deb12u2.debian.tar.xz 50684 SHA256:fca29c98155b995b91599841072e23693fb879e029068c4359098ba9a73d7413
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gst-plugins-base1.0/1.22.0-3+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/gst-plugins-base1.0/1.22.0-3+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gst-plugins-base1.0/1.22.0-3+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gst-plugins-base1.0/1.22.0-3+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/gst-plugins-base1.0/1.22.0-3+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gst-plugins-base1.0/1.22.0-3+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gst-plugins-good1.0=1.22.0-5+deb12u1`
 
@@ -4171,17 +4170,49 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libgcrypt20/1.10.1-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libgcrypt20/1.10.1-3/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libglu=9.0.2-1.1`
+
+Binary Packages:
+
+- `libglu1-mesa:amd64=9.0.2-1.1`
+- `libglu1-mesa-dev:amd64=9.0.2-1.1`
+
+Licenses: (parsed from: `/usr/share/doc/libglu1-mesa/copyright`, `/usr/share/doc/libglu1-mesa-dev/copyright`)
+
+- `GPL-2`
+- `SGI-1.1`
+- `SGI-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libglu=9.0.2-1.1
+'http://deb.debian.org/debian/pool/main/libg/libglu/libglu_9.0.2-1.1.dsc' libglu_9.0.2-1.1.dsc 1881 SHA256:b36c23281cbc1c4c6371b81d991b3074ce28b880d46fe8a5747677495f7c55b2
+'http://deb.debian.org/debian/pool/main/libg/libglu/libglu_9.0.2.orig.tar.gz' libglu_9.0.2.orig.tar.gz 665822 SHA256:24effdfb952453cc00e275e1c82ca9787506aba0282145fff054498e60e19a65
+'http://deb.debian.org/debian/pool/main/libg/libglu/libglu_9.0.2-1.1.diff.gz' libglu_9.0.2-1.1.diff.gz 14674 SHA256:75d227b8cd8357f4d8891720a01a3606974bedd3187a09b4a321ff866a42b325
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libglu/9.0.2-1.1/ (for browsing the source)
+- https://sources.debian.net/src/libglu/9.0.2-1.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libglu/9.0.2-1.1/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libglvnd=1.6.0-1`
 
 Binary Packages:
 
 - `libegl1:amd64=1.6.0-1`
+- `libgl-dev:amd64=1.6.0-1`
 - `libgl1:amd64=1.6.0-1`
 - `libgles2:amd64=1.6.0-1`
 - `libglvnd0:amd64=1.6.0-1`
+- `libglx-dev:amd64=1.6.0-1`
 - `libglx0:amd64=1.6.0-1`
+- `libopengl-dev:amd64=1.6.0-1`
+- `libopengl0:amd64=1.6.0-1`
 
-Licenses: (parsed from: `/usr/share/doc/libegl1/copyright`, `/usr/share/doc/libgl1/copyright`, `/usr/share/doc/libgles2/copyright`, `/usr/share/doc/libglvnd0/copyright`, `/usr/share/doc/libglx0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libegl1/copyright`, `/usr/share/doc/libgl-dev/copyright`, `/usr/share/doc/libgl1/copyright`, `/usr/share/doc/libgles2/copyright`, `/usr/share/doc/libglvnd0/copyright`, `/usr/share/doc/libglx-dev/copyright`, `/usr/share/doc/libglx0/copyright`, `/usr/share/doc/libopengl-dev/copyright`, `/usr/share/doc/libopengl0/copyright`)
 
 - `Apache-2.0`
 - `BSD-1-clause`
@@ -8833,10 +8864,15 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libwxbase3.2-1:amd64=3.2.2+dfsg-2`
+- `libwxgtk-gl3.2-1:amd64=3.2.2+dfsg-2`
 - `libwxgtk-webview3.2-1:amd64=3.2.2+dfsg-2`
+- `libwxgtk-webview3.2-dev:amd64=3.2.2+dfsg-2`
 - `libwxgtk3.2-1:amd64=3.2.2+dfsg-2`
+- `libwxgtk3.2-dev:amd64=3.2.2+dfsg-2`
+- `wx-common=3.2.2+dfsg-2`
+- `wx3.2-headers=3.2.2+dfsg-2`
 
-Licenses: (parsed from: `/usr/share/doc/libwxbase3.2-1/copyright`, `/usr/share/doc/libwxgtk-webview3.2-1/copyright`, `/usr/share/doc/libwxgtk3.2-1/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libwxbase3.2-1/copyright`, `/usr/share/doc/libwxgtk-gl3.2-1/copyright`, `/usr/share/doc/libwxgtk-webview3.2-1/copyright`, `/usr/share/doc/libwxgtk-webview3.2-dev/copyright`, `/usr/share/doc/libwxgtk3.2-1/copyright`, `/usr/share/doc/libwxgtk3.2-dev/copyright`, `/usr/share/doc/wx-common/copyright`, `/usr/share/doc/wx3.2-headers/copyright`)
 
 - `(GPL-2+ and/or GPL-3+) with Libtool exception`
 - `BSD-2-clause`
