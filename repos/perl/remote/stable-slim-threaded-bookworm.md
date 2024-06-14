@@ -1,7 +1,7 @@
 ## `perl:stable-slim-threaded-bookworm`
 
 ```console
-$ docker pull perl@sha256:e553e23ddf848732520dfcc011ded5733d0cbf6217282b1a7b6ccf21c16fb86c
+$ docker pull perl@sha256:fe23a0f6632cbe7220c9a60f413c09f5d09dc5254c4ad8532fc3e2b8f9258fea
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -371,19 +371,19 @@ $ docker pull perl@sha256:16e544279df6f33b40b53346a4cefee5c9b94cec1c6d7d2b92d318
 ### `perl:stable-slim-threaded-bookworm` - linux; mips64le
 
 ```console
-$ docker pull perl@sha256:0fcf2806a068766022c139b18d217cd15d89bb01d46eb2f66c69a96cbe47d340
+$ docker pull perl@sha256:b2998b04bb77cee0dd2eb2766e0c955bfa2fe83fdc600c5d33685a3011345c29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.0 MB (55957859 bytes)**  
+-	Total Size: **56.0 MB (55958648 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fab40c25657f2c8e68c254732c9218e9ffe014f120655c647c06aa1114a68dd0`
+-	Image ID: `sha256:73ddc076505bcb960dfb4264c53b05132ae1ac4ec1d384643909a1641400b8f7`
 -	Default Command: `["perl5.40.0","-de0"]`
 
 ```dockerfile
-# Tue, 14 May 2024 01:11:07 GMT
-ADD file:a92da94a28279478b2eae11dcdcd2913fc06af02498a5515cc3f288668d74e43 in / 
-# Tue, 14 May 2024 01:11:12 GMT
+# Mon, 10 Jun 2024 03:33:39 GMT
+ADD file:7843ce82552ae9139a9fa1f09b2a1d74f36c493548aa1a5c10b828cb7e02cbe7 in / 
+# Mon, 10 Jun 2024 03:33:39 GMT
 CMD ["bash"]
 # Mon, 10 Jun 2024 03:33:39 GMT
 WORKDIR /usr/src/perl
@@ -396,41 +396,41 @@ CMD ["perl5.40.0" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:6ccc6628d3cdcda935b3b60cb54fa578d669965454d9cf39de3df9c1276132b7`  
-		Last Modified: Tue, 14 May 2024 01:22:19 GMT  
-		Size: 29.1 MB (29143688 bytes)  
+	-	`sha256:9c779e4f033b6f7eb9f6b2e62bbf866659c6eedcf2db024108a6e1d4b9cd8742`  
+		Last Modified: Thu, 13 Jun 2024 01:21:54 GMT  
+		Size: 29.1 MB (29143819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9185cbb7b86fbfd149e5d6f80cd828f341d1e65b0b14a01fcc728cd75ad214ce`  
-		Last Modified: Mon, 10 Jun 2024 22:24:07 GMT  
-		Size: 136.0 B  
+	-	`sha256:1fe21526bcd1b20e4f7b151893e13486dcf09e53dd2e6bed5e066f9438a2b306`  
+		Last Modified: Fri, 14 Jun 2024 02:29:38 GMT  
+		Size: 135.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ff0149a86f26348fcf5d66ed1b3e399840c1a99c9d9731b97298308e124f397`  
-		Last Modified: Tue, 11 Jun 2024 00:13:51 GMT  
-		Size: 26.8 MB (26813903 bytes)  
+	-	`sha256:74065f21d21f288669cd006862c2ec6c389c511db3acfc45bdc7dda47d49bfa5`  
+		Last Modified: Fri, 14 Jun 2024 03:54:00 GMT  
+		Size: 26.8 MB (26814562 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:535e14d1bf96b91927ed0cb8fbea895cfdc63774c2582ce8ff8559803f5b393e`  
-		Last Modified: Tue, 11 Jun 2024 00:13:48 GMT  
+	-	`sha256:9fd0ee5bc25c826b9dab83dec3d80305223d7fcf2cbac621b710c4391f14fedb`  
+		Last Modified: Fri, 14 Jun 2024 03:53:57 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `perl:stable-slim-threaded-bookworm` - unknown; unknown
 
 ```console
-$ docker pull perl@sha256:dc60e338a3ba4572ae7eeeb648a0409df73a13c7e1d69458e0a5e7de21d695b7
+$ docker pull perl@sha256:08993d9b039a8e6a73ad131ff5a56d627554879ea37099df13285d0863a25ca6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.9 KB (17869 bytes)**  
+-	Total Size: **17.9 KB (17868 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28287979ee3ce87ea3644f2227987e42ea4f895267a0fe2c9a56051ef829e968`
+-	Image ID: `sha256:040d72b1bc0f583f56dd46303f2a118b2e02563d40d230dd8d662408bb556d70`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c7a914f7b0e00e754f6833fc00848f206f16cf1ad1940fd9b9f6016f94e6480b`  
-		Last Modified: Tue, 11 Jun 2024 00:13:48 GMT  
-		Size: 17.9 KB (17869 bytes)  
+	-	`sha256:dfebb06f1c99130921ca617c927c27691e368e05903a04ebd37cff1b14480ac1`  
+		Last Modified: Fri, 14 Jun 2024 03:53:57 GMT  
+		Size: 17.9 KB (17868 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `perl:stable-slim-threaded-bookworm` - linux; ppc64le

@@ -1,7 +1,7 @@
 ## `perl:5-slim-threaded-bullseye`
 
 ```console
-$ docker pull perl@sha256:9dfe5e9d472bf1971c875a270f3a6862be890daf21b5793c440cac0e8213301d
+$ docker pull perl@sha256:f993b6821eab000a00662e5cc0554d1dd9fb38d2410b4c9abad340f9c2069c72
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -371,19 +371,19 @@ $ docker pull perl@sha256:70e645674ee8d473cdd4a29acfe73882377d85a1f92b59ad0597b8
 ### `perl:5-slim-threaded-bullseye` - linux; mips64le
 
 ```console
-$ docker pull perl@sha256:1de61f42f912ccb1d2a5a1531593f16a90c78b7d694ad994ee2059e77c542454
+$ docker pull perl@sha256:fd49f79d1d327c3ff9ad8bc400bbf12dbbd798690c9bf78313076d59a8352a3a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.3 MB (53282269 bytes)**  
+-	Total Size: **53.3 MB (53282881 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30eecdbc85436b17ec88544118b8fb64a601839af66e72da2f0074631d946cd1`
+-	Image ID: `sha256:f7b64b4176f7ec22f77bdff75aa45adfd3ecfed3dc14607352b50788955c94a4`
 -	Default Command: `["perl5.40.0","-de0"]`
 
 ```dockerfile
-# Tue, 14 May 2024 01:12:23 GMT
-ADD file:ec3acf4bc32b149c2b67d1b2c5f3a6d1f16fbae266ac16c115e1fca276b970e7 in / 
-# Tue, 14 May 2024 01:12:27 GMT
+# Mon, 10 Jun 2024 03:33:39 GMT
+ADD file:008c77755df91bc808f2edbc05df1da6419d984abea862dbf73f345500433eb9 in / 
+# Mon, 10 Jun 2024 03:33:39 GMT
 CMD ["bash"]
 # Mon, 10 Jun 2024 03:33:39 GMT
 WORKDIR /usr/src/perl
@@ -396,41 +396,41 @@ CMD ["perl5.40.0" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:38917083d8284ce1ec7533351600bab5d64f8295f3edc5dc651be130fb9a4bd4`  
-		Last Modified: Tue, 14 May 2024 01:23:44 GMT  
-		Size: 29.7 MB (29651870 bytes)  
+	-	`sha256:1b4876387959ae765d8f504e4352c8f85ce0ad5a78eee29be84300f85cfdf0a6`  
+		Last Modified: Thu, 13 Jun 2024 01:23:19 GMT  
+		Size: 29.7 MB (29651863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe483630a5cb8e6c8d1725076f5d5a8635310f06c789c5625ab06d20cbf74814`  
-		Last Modified: Mon, 10 Jun 2024 22:50:17 GMT  
-		Size: 136.0 B  
+	-	`sha256:231e8db700047f36f671e1b11f3632b9ba21d8a1606860c138cd9c366a329d06`  
+		Last Modified: Fri, 14 Jun 2024 04:22:26 GMT  
+		Size: 135.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82fab323897a2ba756484bf97ded828b53c6b022831d44cf30913fe250c65775`  
-		Last Modified: Tue, 11 Jun 2024 00:49:33 GMT  
-		Size: 23.6 MB (23630130 bytes)  
+	-	`sha256:d8a1004e72fc95b36a7a87f7dc838ca32823a7617043ea07ad37685089aa8587`  
+		Last Modified: Fri, 14 Jun 2024 04:22:29 GMT  
+		Size: 23.6 MB (23630751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4aec074e36b8c5d4bc78a6fc5f6cc10d9cb24c121542e0cd9bce16b799f3e5f7`  
-		Last Modified: Tue, 11 Jun 2024 00:49:29 GMT  
-		Size: 133.0 B  
+	-	`sha256:222085ac4cef2f72f600c9d4c3d7cba0ada868bb05d453753068ad9ab0592aca`  
+		Last Modified: Fri, 14 Jun 2024 04:22:26 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `perl:5-slim-threaded-bullseye` - unknown; unknown
 
 ```console
-$ docker pull perl@sha256:3056b62fc66e55aa3417e0fca9256bd729bcacbe5888e79ab0acb8c95ce9cb46
+$ docker pull perl@sha256:84814b8b8ac531408c4fcc0bbe99593aa89fc1d3ac276d14ac298f3ea9343d0a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.2 KB (16240 bytes)**  
+-	Total Size: **16.2 KB (16242 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1479f9bbe22e4e1c899874cbccb198e6e967738873977d3257a8dc0d9ba959b5`
+-	Image ID: `sha256:91e26235863355af0ad4e9d894cba1f018ce4bacfce4fce157739a0cf460acf9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f9fdc1423a01f2ceb41d42cfff19cc0511bf65bded26daf49bdefc5f5e157dae`  
-		Last Modified: Tue, 11 Jun 2024 00:49:30 GMT  
-		Size: 16.2 KB (16240 bytes)  
+	-	`sha256:3149c342d4c56376422c0f6957a476878938821321498504fc5a2916b851f7d9`  
+		Last Modified: Fri, 14 Jun 2024 04:22:26 GMT  
+		Size: 16.2 KB (16242 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `perl:5-slim-threaded-bullseye` - linux; ppc64le
