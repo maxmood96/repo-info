@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f4657c744306397d7f4c749eb5dde3b415d64825502f06f8d603d9cdc232be9`
-- Created: `2024-05-02T12:45:44Z`
-- Virtual Size: ~ 1.32 Gb  
+- Image ID: `sha256:9c69105a81b52acc72c04f540a3275e6811e681c158f1d48d3a4c24ac8cc1bb7`
+- Created: `2024-06-13T14:36:52Z`
+- Virtual Size: ~ 1.33 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.78.0`
+  - `RUST_VERSION=1.79.0`
 - Labels:
   - `org.opencontainers.image.source=https://github.com/rust-lang/docker-rust`
 
@@ -3686,11 +3686,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=5.10.216-1`
+### `dpkg` source package: `linux=5.10.218-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.10.216-1`
+- `linux-libc-dev:amd64=5.10.218-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3706,17 +3706,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.10.216-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.216-1.dsc' linux_5.10.216-1.dsc 205890 SHA256:9312e97d8f1466fab4dc79c41ff9215cfa2c3a076d9f48e811390751f71774a1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.216.orig.tar.xz' linux_5.10.216.orig.tar.xz 121950072 SHA256:f50af33438b28293d3e8ae44c1a8384f8d2cfe1c72c422ad63dde17475a42bda
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.216-1.debian.tar.xz' linux_5.10.216-1.debian.tar.xz 1669968 SHA256:9bdc441a265372906941349bc537c68eb2be8ae1838c17e8453c0cc73de271f1
+$ apt-get source -qq --print-uris linux=5.10.218-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.218-1.dsc' linux_5.10.218-1.dsc 205890 SHA256:fc0020c86209e345b13767cbb95be68760f821c4bac474b354ddbb52157e8a4b
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.218.orig.tar.xz' linux_5.10.218.orig.tar.xz 121946232 SHA256:f04ed0fa9bbfb5602b1c2227b993ae104bcdabb6803b69178129ad77b5191f3f
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.218-1.debian.tar.xz' linux_5.10.218-1.debian.tar.xz 1669672 SHA256:37e7dc1bd2c06052e23f7621e53d3f565f722b4f209bf01af71eacdc609cfbb5
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/5.10.216-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.216-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.216-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/5.10.218-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.10.218-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.10.218-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
