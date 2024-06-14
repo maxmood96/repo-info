@@ -1,7 +1,7 @@
 ## `perl:devel-slim-bullseye`
 
 ```console
-$ docker pull perl@sha256:7ff135c908595d82187732ab54a07b3ec169dc41731e34efba260a0e3e723ade
+$ docker pull perl@sha256:f5c83db7e9012aa9aba8575ca31608f57bbb3feb491a4e46b397e6467a12b3ba
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -371,19 +371,19 @@ $ docker pull perl@sha256:2808734d1750fec480d2b19b266ec44e77c7ef91ca2e1fa6384402
 ### `perl:devel-slim-bullseye` - linux; mips64le
 
 ```console
-$ docker pull perl@sha256:7cf5405aaeca9b0c0f55ffd837b1c3702d8efaa12359b979cfa87e0e260aed1e
+$ docker pull perl@sha256:8eea0917ff9f29a066a6ae4155bf056cbf88d909723246aa04eb997e1b5b788c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.2 MB (53202737 bytes)**  
+-	Total Size: **53.2 MB (53202897 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ae420c12a5ba1576ecdcd5b35c6f113373675bb13d50850373ce267e2dd3785`
+-	Image ID: `sha256:521586be1c075284e42ca4aa7972755dab735815aec9cc58e41bbd8d4d42f66c`
 -	Default Command: `["perl5.39.10","-de0"]`
 
 ```dockerfile
-# Tue, 14 May 2024 01:12:23 GMT
-ADD file:ec3acf4bc32b149c2b67d1b2c5f3a6d1f16fbae266ac16c115e1fca276b970e7 in / 
-# Tue, 14 May 2024 01:12:27 GMT
+# Mon, 10 Jun 2024 03:33:39 GMT
+ADD file:008c77755df91bc808f2edbc05df1da6419d984abea862dbf73f345500433eb9 in / 
+# Mon, 10 Jun 2024 03:33:39 GMT
 CMD ["bash"]
 # Mon, 10 Jun 2024 03:33:39 GMT
 WORKDIR /usr/src/perl
@@ -396,41 +396,41 @@ CMD ["perl5.39.10" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:38917083d8284ce1ec7533351600bab5d64f8295f3edc5dc651be130fb9a4bd4`  
-		Last Modified: Tue, 14 May 2024 01:23:44 GMT  
-		Size: 29.7 MB (29651870 bytes)  
+	-	`sha256:1b4876387959ae765d8f504e4352c8f85ce0ad5a78eee29be84300f85cfdf0a6`  
+		Last Modified: Thu, 13 Jun 2024 01:23:19 GMT  
+		Size: 29.7 MB (29651863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe483630a5cb8e6c8d1725076f5d5a8635310f06c789c5625ab06d20cbf74814`  
-		Last Modified: Mon, 10 Jun 2024 22:50:17 GMT  
-		Size: 136.0 B  
+	-	`sha256:9605350050a1fd497dc39a8e86fa4a97d3c72fdc523d049c05bd5a771ce63058`  
+		Last Modified: Fri, 14 Jun 2024 11:32:42 GMT  
+		Size: 134.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31d699e2a74ae49c5fe692dfa944f69aef726239671d4c6bdaa0f2277c6a6594`  
-		Last Modified: Tue, 11 Jun 2024 09:29:25 GMT  
-		Size: 23.6 MB (23550598 bytes)  
+	-	`sha256:7cc4fc841c0b2f64c2c353df4143af9fa980e7eecabffa31f71f8ab3ce67b0c6`  
+		Last Modified: Fri, 14 Jun 2024 13:15:24 GMT  
+		Size: 23.6 MB (23550768 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17824ead68375660851c1934998465097cc3f6d59460f6825e9268deb4fd832e`  
-		Last Modified: Tue, 11 Jun 2024 09:29:23 GMT  
-		Size: 133.0 B  
+	-	`sha256:0d76a968a98cc1667261c2588207d81512c4f0ad615ff93fb20b1bd415c15fc5`  
+		Last Modified: Fri, 14 Jun 2024 13:15:22 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `perl:devel-slim-bullseye` - unknown; unknown
 
 ```console
-$ docker pull perl@sha256:06c0bf8997078f5687364440184838193f04b009588fa1949296b47a981f6f37
+$ docker pull perl@sha256:b82d2b7dddc88259338824485ea47e8983a3ab8bf09b6f19e384e10ff213a26e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15549 bytes)**  
+-	Total Size: **15.6 KB (15551 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:59ba3f3681d1b577f404aae7f160bc3644d6134ca4d3d07343456153d34ae89e`
+-	Image ID: `sha256:4c85f677c2b9f72ecb32f529acef8817a20930da52d72ba63ad8ca1b9ec04aaf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:19adaba611e29a84a636f1dbd120a256cadb0cdc9fe24cb605aa4ffa3ff5657b`  
-		Last Modified: Tue, 11 Jun 2024 09:29:23 GMT  
-		Size: 15.5 KB (15549 bytes)  
+	-	`sha256:0a0468b6a2450c0e25e2ae178fa53188ce5d0f00fffd9dc5e15cb94b0d8ce0cc`  
+		Last Modified: Fri, 14 Jun 2024 13:15:22 GMT  
+		Size: 15.6 KB (15551 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `perl:devel-slim-bullseye` - linux; ppc64le
