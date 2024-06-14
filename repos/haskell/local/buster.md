@@ -1,15 +1,15 @@
-# `haskell:9.8.2-buster`
+# `haskell:9.10.1-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a0edd0904c8bdea328029676a7ae4ddc83914e55ffc948722d670bd8ea3b58be`
-- Created: `2024-05-14T14:51:04.394484982Z`
-- Virtual Size: ~ 3.76 Gb  
+- Image ID: `sha256:34c8635fbd931bef040062838d770d583257e100d7926c681d80c4644570e944`
+- Created: `2024-06-13T08:14:22.134999317Z`
+- Virtual Size: ~ 3.85 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["ghci"]`
 - Environment:
-  - `PATH=/root/.cabal/bin:/root/.local/bin:/opt/ghc/9.8.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/root/.cabal/bin:/root/.local/bin:/opt/ghc/9.10.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
 
 ## `dpkg` (`.deb`-based packages)
