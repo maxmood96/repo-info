@@ -1,7 +1,7 @@
 ## `erlang:25-slim`
 
 ```console
-$ docker pull erlang@sha256:fc074e87142cd698483dee35900ba745865971bacd6e9ed9329f444460eac12a
+$ docker pull erlang@sha256:18997e6a4a646bebe34b27be02f388fa5904890d568c500eeb07fcd33d712402
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -388,18 +388,18 @@ $ docker pull erlang@sha256:1c5414a2fe38f8a91840055882edce27f0e8cca765d77c700921
 ### `erlang:25-slim` - linux; ppc64le
 
 ```console
-$ docker pull erlang@sha256:8cc6b34257095630ace64f87922be9d8d2589d10019ecc4285ffe8435737386d
+$ docker pull erlang@sha256:649fbe16ffee42fdc356b2ab2696ffbfd20cd0b34b6cd6d53808d8467e4be779
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.5 MB (117493300 bytes)**  
+-	Total Size: **117.5 MB (117492383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bed9e7c50d85f40a4866f4c699a623f43f6e6315f6443a42f622021558b1bd78`
+-	Image ID: `sha256:70eae8cfd4b5f90133b6ee4d247aabccd2568734f1aea618b7a5c663d9c3b355`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Sat, 04 May 2024 12:59:04 GMT
-ADD file:4b54ed39e81b5ea585c47d145304cf7a54b08e7b1ac284a533f59d1a4768da9b in / 
+ADD file:32733696002797fb377d3d8094c21c0f41f25da6f371eb4a8ecb6fa5c3ef1048 in / 
 # Sat, 04 May 2024 12:59:04 GMT
 CMD ["bash"]
 # Sat, 04 May 2024 12:59:04 GMT
@@ -413,37 +413,37 @@ CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:d13e42d2790e01b63e6e5f051b276a525e360366071e8144b80a7a814c950f7a`  
-		Last Modified: Tue, 14 May 2024 01:24:27 GMT  
-		Size: 59.0 MB (58969434 bytes)  
+	-	`sha256:7afd12f588c414c122b8d3022d60effda2738a394347f5b3cbdebfe1420a8bf8`  
+		Last Modified: Thu, 13 Jun 2024 01:21:54 GMT  
+		Size: 59.0 MB (58968957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f6d2cc595fc0d9acea498a51671c170e8bcc84a160218707c7584913c2157d26`  
-		Last Modified: Thu, 30 May 2024 22:42:12 GMT  
-		Size: 58.5 MB (58523866 bytes)  
+	-	`sha256:20847ef587c13250a262cd4060e6a00feff1bc70e64f3f207a53752d2e822572`  
+		Last Modified: Thu, 13 Jun 2024 20:11:36 GMT  
+		Size: 58.5 MB (58523426 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:25-slim` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:618f859d26de0bd3ac54871804776217ef3ebef8a5c24306cca3cf2fec02e8ea
+$ docker pull erlang@sha256:1525fee93f3f442b7db82caaa9cb1ff107e018d898caef2f7fa05b22d4c3eb74
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.0 MB (3970265 bytes)**  
+-	Total Size: **4.0 MB (3970945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5acb6c86326af7fec52fc7bec6aebdf0d4ffed4661e8fb1a5777c2292d163b29`
+-	Image ID: `sha256:c399bf9672b2d1461b3e62d8ff2c13e93131cb780266ac26bba8f913ee15d257`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b87c53cf3ae39d5d77a3ddb125e1610d3beeb1584ef44dd0f949ea3d17a4d043`  
-		Last Modified: Thu, 30 May 2024 22:42:09 GMT  
-		Size: 4.0 MB (3956899 bytes)  
+	-	`sha256:2c4678f77011702a4aecc84863b74ec12dffa8fd93223e8713c18304836c7288`  
+		Last Modified: Thu, 13 Jun 2024 20:11:34 GMT  
+		Size: 4.0 MB (3957529 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:942299cd299edcb2cdbc3940d078dc6d5d41a78daa3f74ff56fceacffe624303`  
-		Last Modified: Thu, 30 May 2024 22:42:09 GMT  
-		Size: 13.4 KB (13366 bytes)  
+	-	`sha256:6ca9acbd13593e541fcac936b4e94f27220ba1878baa3538fb5b3bd9691cbb9b`  
+		Last Modified: Thu, 13 Jun 2024 20:11:34 GMT  
+		Size: 13.4 KB (13416 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `erlang:25-slim` - linux; s390x
