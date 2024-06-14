@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7171d86a40d924445c2f2090e640172f6473d50b29568e08744f6891d7f4071`
+- Image ID: `sha256:d83d80141fb9dd9462ab39ee817ab86e64d5534e6a569976190c50895689c59b`
 - Created: `2024-05-22T12:51:52Z`
 - Virtual Size: ~ 268.96 Mb  
   (total size of all layers on-disk)
@@ -1227,11 +1227,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/krb5/1.20.1-2+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/krb5/1.20.1-2+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libarchive=3.6.2-1`
+### `dpkg` source package: `libarchive=3.6.2-1+deb12u1`
 
 Binary Packages:
 
-- `libarchive13:amd64=3.6.2-1`
+- `libarchive13:amd64=3.6.2-1+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 
@@ -1249,18 +1249,18 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libarchive=3.6.2-1
-'http://deb.debian.org/debian/pool/main/liba/libarchive/libarchive_3.6.2-1.dsc' libarchive_3.6.2-1.dsc 2508 SHA256:624069589f3712fed4026f034edfb07bac141ab533c8bbfdf3a69dee124909af
-'http://deb.debian.org/debian/pool/main/liba/libarchive/libarchive_3.6.2.orig.tar.xz' libarchive_3.6.2.orig.tar.xz 5213196 SHA256:9e2c1b80d5fbe59b61308fdfab6c79b5021d7ff4ff2489fb12daf0a96a83551d
-'http://deb.debian.org/debian/pool/main/liba/libarchive/libarchive_3.6.2.orig.tar.xz.asc' libarchive_3.6.2.orig.tar.xz.asc 659 SHA256:c6f1cdc29571dd6b09d3776ae98404a81b2dbe970a2bd9dc0bd9ed183ca49b71
-'http://deb.debian.org/debian/pool/main/liba/libarchive/libarchive_3.6.2-1.debian.tar.xz' libarchive_3.6.2-1.debian.tar.xz 25264 SHA256:4947ff3435c9c55c27b79f1bef4808f083bdbcad7d5e54c59c7e41cf8188f386
+$ apt-get source -qq --print-uris libarchive=3.6.2-1+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/liba/libarchive/libarchive_3.6.2-1%2bdeb12u1.dsc' libarchive_3.6.2-1+deb12u1.dsc 2695 SHA256:48516b52965a717d939b65493b7b148b1620045e4c69e4ace2caa199f9ec6b8d
+'http://deb.debian.org/debian-security/pool/updates/main/liba/libarchive/libarchive_3.6.2.orig.tar.xz' libarchive_3.6.2.orig.tar.xz 5213196 SHA256:9e2c1b80d5fbe59b61308fdfab6c79b5021d7ff4ff2489fb12daf0a96a83551d
+'http://deb.debian.org/debian-security/pool/updates/main/liba/libarchive/libarchive_3.6.2.orig.tar.xz.asc' libarchive_3.6.2.orig.tar.xz.asc 659 SHA256:c6f1cdc29571dd6b09d3776ae98404a81b2dbe970a2bd9dc0bd9ed183ca49b71
+'http://deb.debian.org/debian-security/pool/updates/main/liba/libarchive/libarchive_3.6.2-1%2bdeb12u1.debian.tar.xz' libarchive_3.6.2-1+deb12u1.debian.tar.xz 26708 SHA256:41de35dcf0e1b69654ecdb43de18d3f8ba531340b45555a3e0ba2d822903623e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libarchive/3.6.2-1/ (for browsing the source)
-- https://sources.debian.net/src/libarchive/3.6.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libarchive/3.6.2-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libarchive/3.6.2-1+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/libarchive/3.6.2-1+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libarchive/3.6.2-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libbsd=0.11.7-2`
 
