@@ -1,7 +1,7 @@
 ## `julia:rc-bullseye`
 
 ```console
-$ docker pull julia@sha256:1f546aff5cd923c329d91f4d49f51aee2d17de5e460bb75aba66d55cdc20bff8
+$ docker pull julia@sha256:cc82ed0147bfae5b722e6f2a00b00c8f117cab5c961e1dd2c21e37bbf0a7273d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -98,20 +98,20 @@ $ docker pull julia@sha256:24578c6e3c7a833d75282e4364fe6b0debea8985c5d1066a83cab
 ### `julia:rc-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull julia@sha256:39d869dccc542f41de2fd31f2acf4c4c4a04f8c5a98c82c10852a3a46580a184
+$ docker pull julia@sha256:cbf419639bf49eae3aafb60bfd1f122c45e4fb2817545f6dd188f8affbcb1d1d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **283.1 MB (283095774 bytes)**  
+-	Total Size: **283.1 MB (283095943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40ab91833ea6f0407a4258bf5e32a5b6dd496ec66a77f998534eb01cd3f1e832`
+-	Image ID: `sha256:b8a87f370a6076a10885eee6fa18a58d607250825d4eddb8b7549f6c9b27cfb2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["julia"]`
 
 ```dockerfile
-# Tue, 14 May 2024 00:39:55 GMT
-ADD file:0465ea1f0e8a2ee3e0f770c3b7f8e4a2b8719c624b440cabe7d7ecbe87200e7b in / 
-# Tue, 14 May 2024 00:39:56 GMT
+# Wed, 29 May 2024 17:59:24 GMT
+ADD file:55edb70d595bba9782144ef15994a2ae5c40adeb65f6c3acd6570a0c148ffa96 in / 
+# Wed, 29 May 2024 17:59:24 GMT
 CMD ["bash"]
 # Wed, 29 May 2024 17:59:24 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 	; 	rm -rf /var/lib/apt/lists/* # buildkit
@@ -134,45 +134,45 @@ CMD ["julia"]
 ```
 
 -	Layers:
-	-	`sha256:3a0037c67e2f4632684ea787f751ddb0b6af2b86113ab3b6859744b6eaf77e2f`  
-		Last Modified: Tue, 14 May 2024 00:43:33 GMT  
-		Size: 30.1 MB (30086908 bytes)  
+	-	`sha256:ca4da1869379178993d4f7abc946f75e7515789ff7e15c7ccfedfc8e2bfeaf6d`  
+		Last Modified: Thu, 13 Jun 2024 00:43:54 GMT  
+		Size: 30.1 MB (30086973 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69f730fdf4762f907bb602a60a5c7437c3fdb7378dca6e8ed424ae0838e503b0`  
-		Last Modified: Thu, 30 May 2024 11:47:32 GMT  
-		Size: 2.2 MB (2210782 bytes)  
+	-	`sha256:96d9afea3b5dcd6ad873b75be34809049755bf189c270ab1e5bc0e35d4458518`  
+		Last Modified: Thu, 13 Jun 2024 19:21:27 GMT  
+		Size: 2.2 MB (2210839 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e869bf97452c74bb47494948180b0ea0a77bfbd4f880c88814bdc74ac9701661`  
-		Last Modified: Thu, 30 May 2024 11:47:38 GMT  
-		Size: 250.8 MB (250797710 bytes)  
+	-	`sha256:b027df77e39897844e778b1f8242d833500221b4e4ab929b19eb9910dd2a5cd6`  
+		Last Modified: Thu, 13 Jun 2024 19:21:32 GMT  
+		Size: 250.8 MB (250797755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a485606b5464716a680cd47b017c20d57ca387dc83966ecef87e2c7fe8da7c71`  
-		Last Modified: Thu, 30 May 2024 11:47:31 GMT  
-		Size: 374.0 B  
+	-	`sha256:5c60d14ebbd8002175925f7056f92e85f3e338a71573b79e8d275facabc9778f`  
+		Last Modified: Thu, 13 Jun 2024 19:21:27 GMT  
+		Size: 376.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `julia:rc-bullseye` - unknown; unknown
 
 ```console
-$ docker pull julia@sha256:60c2e8308a0a018a1384595f26d4b3635c440fa52dfc78da74346db7a0ac79f1
+$ docker pull julia@sha256:fd126d01fff89a3ffded02596176d3fb3cba1b7e722c64d3604834958addb074
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2697459 bytes)**  
+-	Total Size: **2.7 MB (2697509 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6273021e28ecf65f322735b98ec3e71252e7734b89516fa1a1b17bcc8e4ee05a`
+-	Image ID: `sha256:37cbfcec1491a48559acafe1f97cac5c53a2b74db96c32a821fb532cad996f2b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f808d5ccf932a8be6febc53425419adb33a0e5af35d404af51f64cbe9dc869f7`  
-		Last Modified: Thu, 30 May 2024 11:47:32 GMT  
-		Size: 2.7 MB (2680382 bytes)  
+	-	`sha256:709750c33d823ed1b456a6af939cfd89745b635d7d7f3c199f3e9baa65e0bd25`  
+		Last Modified: Thu, 13 Jun 2024 19:21:27 GMT  
+		Size: 2.7 MB (2680381 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f7d619efb761c7070a39a1bb4fcfd53fb585cd610bcdf0a733c319d638b5b91c`  
-		Last Modified: Thu, 30 May 2024 11:47:31 GMT  
-		Size: 17.1 KB (17077 bytes)  
+	-	`sha256:538857a43ee616d8ca58db20d9d1e8095e1163c00c6f2545f4dddaa603cd7c60`  
+		Last Modified: Thu, 13 Jun 2024 19:21:26 GMT  
+		Size: 17.1 KB (17128 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `julia:rc-bullseye` - linux; 386
