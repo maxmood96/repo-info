@@ -1,10 +1,10 @@
-# `debian:bookworm`
+# `debian:bookworm-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5027089adc4ce4ec3058d84ce51db1cd2f3eac5675e5aadfcf1f585f62fec9ed`
-- Created: `2024-05-14T01:27:51.549080671Z`
-- Virtual Size: ~ 116.56 Mb  
+- Image ID: `sha256:46a63b82e4145c5eb93ce87cb6b3e6eeb89a4318b848b8e44a2ea029ccfdc157`
+- Created: `2024-06-13T01:20:56.692823549Z`
+- Virtual Size: ~ 74.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
