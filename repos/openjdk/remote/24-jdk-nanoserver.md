@@ -1,7 +1,7 @@
 ## `openjdk:24-jdk-nanoserver`
 
 ```console
-$ docker pull openjdk@sha256:8e6313c1dea7a375d3f91b242edf19dba391e71d1e0a81f4fdfc7c39f748b1fe
+$ docker pull openjdk@sha256:b7dc86cc3492ed26c7122c2e52d488f33d86d0289516bd75ba250231b42464c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,37 +11,37 @@ $ docker pull openjdk@sha256:8e6313c1dea7a375d3f91b242edf19dba391e71d1e0a81f4fdf
 ### `openjdk:24-jdk-nanoserver` - windows version 10.0.17763.5936; amd64
 
 ```console
-$ docker pull openjdk@sha256:2a6ee6c3c94da25f537c08677485dde067bef207861b8fa0c6f44c7eb57247ce
+$ docker pull openjdk@sha256:b9edb80307468b6e71a01be5f4f699df977bc55c7d3f26a9d64f10e8c99c10bd
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **365.3 MB (365340296 bytes)**  
+-	Total Size: **365.4 MB (365408577 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5a6602a0fc213ace372a7d01c918a434e8224eeb03ae2cc84d638d0e42914c1`
+-	Image ID: `sha256:fcc694bba92fa506e9b140ead62ff3d82b99cbdec810e0debe846e72f380321a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["cmd","\/s","\/c"]`
 
 ```dockerfile
 # Fri, 07 Jun 2024 10:54:05 GMT
 RUN Apply image 10.0.17763.5936
-# Wed, 12 Jun 2024 19:14:46 GMT
+# Fri, 14 Jun 2024 02:09:16 GMT
 SHELL [cmd /s /c]
-# Wed, 12 Jun 2024 19:14:48 GMT
+# Fri, 14 Jun 2024 02:09:19 GMT
 ENV JAVA_HOME=C:\openjdk-24
-# Wed, 12 Jun 2024 19:14:48 GMT
+# Fri, 14 Jun 2024 02:09:20 GMT
 USER ContainerAdministrator
-# Wed, 12 Jun 2024 19:14:50 GMT
+# Fri, 14 Jun 2024 02:09:22 GMT
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH% 	&& setx /M PATH %JAVA_HOME%\bin;%PATH% 	&& echo Complete.
-# Wed, 12 Jun 2024 19:14:51 GMT
+# Fri, 14 Jun 2024 02:09:23 GMT
 USER ContainerUser
-# Wed, 12 Jun 2024 19:14:52 GMT
-ENV JAVA_VERSION=24-ea+1
-# Wed, 12 Jun 2024 19:14:59 GMT
-COPY dir:65f162ff11cc2a31de446754da8c804d9d59bb6267610365535eba662147bf29 in C:\openjdk-24 
-# Wed, 12 Jun 2024 19:15:04 GMT
+# Fri, 14 Jun 2024 02:09:24 GMT
+ENV JAVA_VERSION=24-ea+2
+# Fri, 14 Jun 2024 02:09:32 GMT
+COPY dir:fe077db189be93524d6534b91377d96635001989a5ab7b04a3674170104c88ed in C:\openjdk-24 
+# Fri, 14 Jun 2024 02:09:38 GMT
 RUN echo Verifying install ... 	&& echo   javac --version && javac --version 	&& echo   java --version && java --version 	&& echo Complete.
-# Wed, 12 Jun 2024 19:15:05 GMT
+# Fri, 14 Jun 2024 02:09:39 GMT
 CMD ["jshell"]
 ```
 
@@ -50,39 +50,39 @@ CMD ["jshell"]
 		Last Modified: Tue, 11 Jun 2024 20:35:02 GMT  
 		Size: 155.0 MB (155033193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9ec0b570a0fd546de3dc14648705badbd3c3bcd46b51427f8720fbbd26f0410`  
-		Last Modified: Wed, 12 Jun 2024 19:15:10 GMT  
-		Size: 1.0 KB (1043 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e16e463eda9e064f9580a6f4f333f6190f5a4c9cc67691e1ad08954b38d2eb4`  
-		Last Modified: Wed, 12 Jun 2024 19:15:09 GMT  
+	-	`sha256:34efdb562c5b7529d8d4592d3c92118ee90ae9e199789ee73ee3ebe626f6dbcb`  
+		Last Modified: Fri, 14 Jun 2024 02:09:46 GMT  
 		Size: 1.0 KB (1042 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a96d0d5607b280c266af7571b8c22fb511aec4716cfd02595df3f72557009fa`  
-		Last Modified: Wed, 12 Jun 2024 19:15:08 GMT  
-		Size: 1.0 KB (1033 bytes)  
+	-	`sha256:049b6396568b4d94101e8962396ab2a95d3fb63b54e64449c26546c2d803fb76`  
+		Last Modified: Fri, 14 Jun 2024 02:09:45 GMT  
+		Size: 1.0 KB (1047 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf0227e56f4aceef033f719693c55f55c041911375958775e07990b14e8254ec`  
-		Last Modified: Wed, 12 Jun 2024 19:15:08 GMT  
-		Size: 71.8 KB (71765 bytes)  
+	-	`sha256:169a0793ade90f4f76f9d18952d01a6fe608291c32ccc8eee81661e102e00c45`  
+		Last Modified: Fri, 14 Jun 2024 02:09:45 GMT  
+		Size: 1.0 KB (1039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05e5e4612e61bbe440b108012bb61e717533be12d54658df39aff27b679e98ba`  
-		Last Modified: Wed, 12 Jun 2024 19:15:07 GMT  
-		Size: 1.1 KB (1068 bytes)  
+	-	`sha256:89c4bf1f851fb215b1cda2441f8da944b2041395827d20dfd24a9f92011140db`  
+		Last Modified: Fri, 14 Jun 2024 02:09:45 GMT  
+		Size: 73.9 KB (73853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46c859d824870881affe873cb834d014f860e30b090d89d661996c41918cbed9`  
-		Last Modified: Wed, 12 Jun 2024 19:15:07 GMT  
-		Size: 1.0 KB (1045 bytes)  
+	-	`sha256:e362ebd3c48369a2a1da5acf059986f98869be9cf8e9593eb61f0722b1686264`  
+		Last Modified: Fri, 14 Jun 2024 02:09:43 GMT  
+		Size: 1.0 KB (1034 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9c0c5b822d7858f416d41c57747beb1dea26cb62f89162edcbe6e283dec08e9`  
-		Last Modified: Wed, 12 Jun 2024 19:15:21 GMT  
-		Size: 206.1 MB (206107289 bytes)  
+	-	`sha256:7685cb6cfa0667639363818a6f6d66a18b5ef9d01b7cd317da092ba7e03cf749`  
+		Last Modified: Fri, 14 Jun 2024 02:09:43 GMT  
+		Size: 1.0 KB (1039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f03b1e0bf074d9d77a89ea21b4db64248f6ea5ee12a64840bfc4957be426a23`  
-		Last Modified: Wed, 12 Jun 2024 19:15:08 GMT  
-		Size: 4.1 MB (4121777 bytes)  
+	-	`sha256:e3274f9f3a490eaf3002e0786eff3de80756c6173e9fd6f0a7b727d643a1bafb`  
+		Last Modified: Fri, 14 Jun 2024 02:09:55 GMT  
+		Size: 206.2 MB (206159302 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4518842e4a5ca7202caf5a82fee2e3b6134bd6e9e3c40091826f06f4fb82891e`  
-		Last Modified: Wed, 12 Jun 2024 19:15:07 GMT  
-		Size: 1.0 KB (1041 bytes)  
+	-	`sha256:e38fc5022a6723c53b69eb297b823ccd07912e02a23f21d8538c2092ec1dc933`  
+		Last Modified: Fri, 14 Jun 2024 02:09:44 GMT  
+		Size: 4.1 MB (4135988 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8bc98637ddec09ffd049cf53280f1535237b9797bf8d805318693d8714a93116`  
+		Last Modified: Fri, 14 Jun 2024 02:09:43 GMT  
+		Size: 1.0 KB (1040 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
