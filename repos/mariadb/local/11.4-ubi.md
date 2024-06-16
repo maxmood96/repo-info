@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:128b6f3192df146968b7522e4e81e6e19e1585ef3c8dde52be7a890c21e6fcf0`
-- Created: `2024-05-30T23:03:04Z`
+- Image ID: `sha256:946c0bdf441489f003738942aed22f4c69e8f3644b5fc0902244eebdb4ceb69f`
+- Created: `2024-06-11T02:37:24Z`
 - Virtual Size: ~ 461.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `GOSU_VERSION=1.17`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-05-30T13:14:08`
+  - `build-date=2024-06-06T00:53:59`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=MariaDB Database for relational SQL`
@@ -39,7 +39,7 @@
   - `org.opencontainers.image.version=11.4.2`
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-949.1717074713`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1134`
   - `vcs-ref=4b4efbdd5a311b6a9c56319e756ca58c10a2b4de`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
@@ -193,7 +193,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-7.el9.noarch
-https://epel.mirror.shastacoe.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-7.el9.src.rpm
+https://mirror.mci-1.serverforge.org/epel/9/Everything/source/tree/Packages/e/epel-release-9-7.el9.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
@@ -348,7 +348,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-https://epel.mirror.shastacoe.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+https://mirror.mci-1.serverforge.org/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -1205,7 +1205,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-https://epel.mirror.shastacoe.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+https://mirror.mci-1.serverforge.org/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -1216,7 +1216,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-https://epel.mirror.shastacoe.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+https://mirror.mci-1.serverforge.org/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
@@ -1273,7 +1273,7 @@ Licenses (from `rpm --query`): BSD and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `socat-1.7.4.1-5.el9.x86_64`
+### `rpm` package: `socat-1.7.4.1-5.el9_4.2.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
