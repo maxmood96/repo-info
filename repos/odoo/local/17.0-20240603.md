@@ -5653,15 +5653,9 @@ Licenses: (parsed from: `/usr/share/doc/libnode-dev/copyright`, `/usr/share/doc/
 - `curl`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nodejs=12.22.9~dfsg-1ubuntu3.5
-'http://archive.ubuntu.com/ubuntu/pool/universe/n/nodejs/nodejs_12.22.9%7edfsg-1ubuntu3.5.dsc' nodejs_12.22.9~dfsg-1ubuntu3.5.dsc 3545 SHA512:c9aa2828a1c3565ac74e4f1cffbf1bc3b08c30745b658273670166342f2d208e2797ad722f6ece50bc2e0bcc6bfbf59f47d55603cd962327af30fece40702346
-'http://archive.ubuntu.com/ubuntu/pool/universe/n/nodejs/nodejs_12.22.9%7edfsg.orig-types-node.tar.xz' nodejs_12.22.9~dfsg.orig-types-node.tar.xz 86416 SHA512:ff967a05831a1a43c3bcf96744007713b51c279ee1b2b77075f8476b5791e28cc212511dc64c34e6c7d516865fd7f3cd7150c1664e664ada4e7c64f8b40fbcfc
-'http://archive.ubuntu.com/ubuntu/pool/universe/n/nodejs/nodejs_12.22.9%7edfsg.orig.tar.xz' nodejs_12.22.9~dfsg.orig.tar.xz 19022540 SHA512:83002dbabb3228fd9b1b9777246b2b8aebb6ba7ead005c1c65124a5809fdde7d9d9aa47d907e9a6fdf452e0febfa4c6e521c5d62ae8d6100454ba57f16110eb7
-'http://archive.ubuntu.com/ubuntu/pool/universe/n/nodejs/nodejs_12.22.9%7edfsg-1ubuntu3.5.debian.tar.xz' nodejs_12.22.9~dfsg-1ubuntu3.5.debian.tar.xz 167068 SHA512:5efed3baa355f896e3604327e77f77ebcb2b7b87219702a74a01e9a5447dc55f954d410c134f3c612b1568c7100ac8533b61ffc145e19943fd651a700362c26f
-```
 
 ### `dpkg` source package: `npm=8.5.1~ds-1`
 
