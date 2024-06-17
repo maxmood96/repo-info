@@ -1,7 +1,7 @@
 ## `ubuntu:latest`
 
 ```console
-$ docker pull ubuntu@sha256:e3f92abc0967a6c19d0dfa2d55838833e947b9d74edbcb0113e48535ad4be12a
+$ docker pull ubuntu@sha256:d11b1797008f48495a888a087b273f6581daef886da9d0bda9023557eff4f070
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15,35 +15,35 @@ $ docker pull ubuntu@sha256:e3f92abc0967a6c19d0dfa2d55838833e947b9d74edbcb0113e4
 ### `ubuntu:latest` - linux; amd64
 
 ```console
-$ docker pull ubuntu@sha256:c279a739b31ead4ebc3e9ce04937eb8b612799b52c26133eb3b4a056d08c31a6
+$ docker pull ubuntu@sha256:c920ba4cfca05503764b785c16b76d43c83a6df8d1ab107e7e6610000d94315c
 ```
 
 -	Docker Version: 24.0.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.9 MB (28872332 bytes)**  
+-	Total Size: **29.7 MB (29705153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:17c0145030df106e60e5d99149d69810db23b869ff0d3c9d236279a5a7bbb6b3`
+-	Image ID: `sha256:35a88802559dd2077e584394471ddaa1a2c5bfd16893b829ea57619301eb3908`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 30 May 2024 06:04:00 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 30 May 2024 06:04:00 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 30 May 2024 06:04:00 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 30 May 2024 06:04:00 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 30 May 2024 06:04:02 GMT
-ADD file:7f5ee17de6aff2b67213e3ad424185b6eed94293669c5ab7cb155108c8df0e9e in / 
-# Thu, 30 May 2024 06:04:02 GMT
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:00d679a470c495ef7d52e70bcd7a008f4983530b67653e63e9d3cd27fade63d7`  
-		Last Modified: Thu, 30 May 2024 06:26:08 GMT  
-		Size: 28.9 MB (28872332 bytes)  
+	-	`sha256:9c704ecd0c694c4cbdd85e589ac8d1fc3fd8f890b7f3731769a5b169eb495809`  
+		Last Modified: Fri, 07 Jun 2024 12:11:26 GMT  
+		Size: 29.7 MB (29705153 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:latest` - linux; arm variant v7
@@ -117,35 +117,35 @@ CMD ["/bin/bash"]
 ### `ubuntu:latest` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:ae33d4f9381714cc1c716ccef9752aca7fcd52b5485620e8507eccd3f1a35b54
+$ docker pull ubuntu@sha256:a3b5c0d95b7ce708cd05f3d254e093f1b53ea1c699f1d5a0c76743e683c9eaa2
 ```
 
 -	Docker Version: 24.0.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.5 MB (33492344 bytes)**  
+-	Total Size: **34.5 MB (34506029 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:de4057f9f3b277758117225481bde62f58a2690edc984fe799daa1ae9b44f11f`
+-	Image ID: `sha256:f66e343649a1106ba7e8df5679410ec0497411fbdb4ba5c4c5da74da68e56f46`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 30 May 2024 06:03:19 GMT
+# Fri, 07 Jun 2024 12:00:24 GMT
 ARG RELEASE
-# Thu, 30 May 2024 06:03:19 GMT
+# Fri, 07 Jun 2024 12:00:24 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 30 May 2024 06:03:19 GMT
+# Fri, 07 Jun 2024 12:00:24 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 30 May 2024 06:03:19 GMT
+# Fri, 07 Jun 2024 12:00:24 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 30 May 2024 06:03:22 GMT
-ADD file:3d2d3a18d4f4a1567fc0564572f74e0601522492c4d8ca8614999dda64995e61 in / 
-# Thu, 30 May 2024 06:03:22 GMT
+# Fri, 07 Jun 2024 12:00:28 GMT
+ADD file:e767a66d1508f3628411abaff75d39ed1d6261596c668fa88252ed9a584e7fa4 in / 
+# Fri, 07 Jun 2024 12:00:29 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:059424863d1c38263ac74ee9c9b4b5d5df9febb81b7b0cd7ad14f5b351708678`  
-		Last Modified: Thu, 30 May 2024 06:26:26 GMT  
-		Size: 33.5 MB (33492344 bytes)  
+	-	`sha256:875c01bc1b3e6b966440b42d40365968bfdd742c762026b5739c5d1f493510d7`  
+		Last Modified: Fri, 07 Jun 2024 12:11:45 GMT  
+		Size: 34.5 MB (34506029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:latest` - linux; s390x
