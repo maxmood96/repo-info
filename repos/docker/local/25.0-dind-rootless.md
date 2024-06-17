@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:90c854419dca542c247d011baedd17b71d1404e387f4087807f84a85820471b8`
+- Image ID: `sha256:045055306cc3fbdd142cc5ae0c4867b9eec6b553cc733ae08692e06318d71cfa`
 - Created: `2024-03-19T21:53:23Z`
-- Virtual Size: ~ 409.59 Mb  
+- Virtual Size: ~ 415.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=25.0.5`
-  - `DOCKER_BUILDX_VERSION=0.14.1`
+  - `DOCKER_BUILDX_VERSION=0.15.0`
   - `DOCKER_COMPOSE_VERSION=2.27.1`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e`
@@ -344,16 +344,16 @@ GPL-2.0-only AND LGPL-2.1-only
 ### `apk` package: `git`
 
 ```console
-git-2.45.1-r0 description:
+git-2.45.2-r0 description:
 Distributed version control system
 
-git-2.45.1-r0 webpage:
+git-2.45.2-r0 webpage:
 https://www.git-scm.com/
 
-git-2.45.1-r0 installed size:
-6480 KiB
+git-2.45.2-r0 installed size:
+6468 KiB
 
-git-2.45.1-r0 license:
+git-2.45.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -361,16 +361,16 @@ GPL-2.0-only
 ### `apk` package: `git-init-template`
 
 ```console
-git-init-template-2.45.1-r0 description:
+git-init-template-2.45.2-r0 description:
 Git init template directory
 
-git-init-template-2.45.1-r0 webpage:
+git-init-template-2.45.2-r0 webpage:
 https://www.git-scm.com/
 
-git-init-template-2.45.1-r0 installed size:
+git-init-template-2.45.2-r0 installed size:
 96 KiB
 
-git-init-template-2.45.1-r0 license:
+git-init-template-2.45.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -616,16 +616,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.0-r2 description:
+libcrypto3-3.3.1-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.0-r2 webpage:
+libcrypto3-3.3.1-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.0-r2 installed size:
-4656 KiB
+libcrypto3-3.3.1-r0 installed size:
+4660 KiB
 
-libcrypto3-3.3.0-r2 license:
+libcrypto3-3.3.1-r0 license:
 Apache-2.0
 
 ```
@@ -871,16 +871,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.0-r2 description:
+libssl3-3.3.1-r0 description:
 SSL shared libraries
 
-libssl3-3.3.0-r2 webpage:
+libssl3-3.3.1-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.0-r2 installed size:
+libssl3-3.3.1-r0 installed size:
 796 KiB
 
-libssl3-3.3.0-r2 license:
+libssl3-3.3.1-r0 license:
 Apache-2.0
 
 ```
@@ -1143,16 +1143,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.0-r2 description:
+openssl-3.3.1-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.0-r2 webpage:
+openssl-3.3.1-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.3.0-r2 installed size:
+openssl-3.3.1-r0 installed size:
 784 KiB
 
-openssl-3.3.0-r2 license:
+openssl-3.3.1-r0 license:
 Apache-2.0
 
 ```
