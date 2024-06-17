@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a9402d2d507a909c72d6619baf370ba946feb54e0fdbb2b8fd6e74eb36b492f5`
-- Created: `2024-06-07T04:22:01.335667198Z`
-- Virtual Size: ~ 341.53 Mb  
+- Image ID: `sha256:91768e34c453ad91a1a24e8d2e883d32664042dce314731d6da6e9f9fda8bc71`
+- Created: `2024-06-13T19:00:37.005876166Z`
+- Virtual Size: ~ 341.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-05-30T13:14:06`
+  - `build-date=2024-06-06T00:48:40`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,9 +30,9 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=947.1717074712`
+  - `release=1123`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.4-947.1717074712`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.4-1123`
   - `vcs-ref=92a4a475241865d0d11bd861fb2b29fbd9b17df0`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -868,7 +868,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-idna-2.10-7.el9.noarch`
+### `rpm` package: `python3-idna-2.10-7.el9_4.1.noarch`
 
 Licenses (from `rpm --query`): BSD and Python and Unicode
 
