@@ -1,10 +1,10 @@
-# `gradle:8.8.0-jdk17`
+# `gradle:8.8.0-jdk22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:465a140e149f7bfc4b122fac38f767b79f0375a9bb54ad8811922d1d7dd782b5`
-- Created: `2024-06-01T15:03:05Z`
-- Virtual Size: ~ 718.89 Mb  
+- Image ID: `sha256:533861884d740cac96ce6d1e0b15d36fbebd4ae4c5eac4075415ac3a1940867b`
+- Created: `2024-06-16T03:23:28Z`
+- Virtual Size: ~ 742.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.11+9`
+  - `JAVA_VERSION=jdk-22.0.1+8`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=8.8`
 - Labels:
@@ -412,11 +412,9 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.2
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.16`
 - `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.16`
-- `libcurl4:amd64=7.81.0-1ubuntu1.16`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`

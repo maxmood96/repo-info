@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:24324d71bf05df5c0a37de57e6dd999a23f664367bc9df2ef4c10bd9d3caa3d1`
-- Created: `2024-06-01T15:03:05Z`
+- Image ID: `sha256:4ada8190ae1c179a4937a014575787bb85d75baa547396232dbde59e103fe40a`
+- Created: `2024-06-16T03:23:28Z`
 - Virtual Size: ~ 1.86 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1762,19 +1762,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-107.117`
+### `dpkg` source package: `linux=5.15.0-112.122`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-107.117`
+- `linux-libc-dev:amd64=5.15.0-112.122`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.15.0-112.122
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-112.122.dsc' linux_5.15.0-112.122.dsc 7800 SHA512:886ab18773dde51f7049fd562d69f300af6ed59d3856e4e532ccd480e6b7705568f9104e4388ff537672e09f131fd4584c5981a29db55c6da4169bf53a394d74
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-112.122.diff.gz' linux_5.15.0-112.122.diff.gz 9869883 SHA512:c96b0065eda27d5e13d5a4407e6c605a7eac766860e4c70faa5791e0ff4502e96d349530ff8f56c101d7a63a34c6ea76cd0b6d2906c221193959c9beddd3fbc6
+```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
 

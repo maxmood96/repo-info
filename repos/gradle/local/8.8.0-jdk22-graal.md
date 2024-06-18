@@ -1,22 +1,18 @@
-# `gradle:8.8.0-jdk17`
+# `gradle:8.8.0-jdk22-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:465a140e149f7bfc4b122fac38f767b79f0375a9bb54ad8811922d1d7dd782b5`
-- Created: `2024-06-01T15:03:05Z`
-- Virtual Size: ~ 718.89 Mb  
+- Image ID: `sha256:c34c51c9241d379092d6cdeff893650725b8831f04cb5c04634415e01653e7be`
+- Created: `2024-06-16T03:23:28Z`
+- Virtual Size: ~ 1.30 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/__cacert_entrypoint.sh"]`
 - Command: `["gradle"]`
 - Environment:
-  - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/opt/java/openjdk`
-  - `LANG=en_US.UTF-8`
-  - `LANGUAGE=en_US:en`
-  - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.11+9`
+  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GRADLE_HOME=/opt/gradle`
+  - `JAVA_HOME=/opt/java/graalvm`
+  - `JAVA_VERSION=22.0.1`
   - `GRADLE_VERSION=8.8`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -760,15 +756,51 @@ $ apt-get source -qq --print-uris freetype=2.11.1+dfsg-1ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.11.1%2bdfsg-1ubuntu0.2.debian.tar.xz' freetype_2.11.1+dfsg-1ubuntu0.2.debian.tar.xz 41920 SHA512:5ebb72c4c47997c74da26fe13b796a558f7b4e2075743a55ba6a0079cd30c713aac3499ddbb05f6cbf408d383028743b41d9839531c906bf41d5ad725c9d5b04
 ```
 
+### `dpkg` source package: `gcc-11=11.4.0-1ubuntu1~22.04`
+
+Binary Packages:
+
+- `cpp-11=11.4.0-1ubuntu1~22.04`
+- `gcc-11=11.4.0-1ubuntu1~22.04`
+- `gcc-11-base:amd64=11.4.0-1ubuntu1~22.04`
+- `libasan6:amd64=11.4.0-1ubuntu1~22.04`
+- `libgcc-11-dev:amd64=11.4.0-1ubuntu1~22.04`
+- `libtsan0:amd64=11.4.0-1ubuntu1~22.04`
+
+Licenses: (parsed from: `/usr/share/doc/cpp-11/copyright`, `/usr/share/doc/gcc-11/copyright`, `/usr/share/doc/gcc-11-base/copyright`, `/usr/share/doc/libasan6/copyright`, `/usr/share/doc/libgcc-11-dev/copyright`, `/usr/share/doc/libtsan0/copyright`)
+
+- `Artistic`
+- `GFDL-1.2`
+- `GPL`
+- `GPL-2`
+- `GPL-3`
+- `LGPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gcc-11=11.4.0-1ubuntu1~22.04
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11_11.4.0-1ubuntu1%7e22.04.dsc' gcc-11_11.4.0-1ubuntu1~22.04.dsc 22841 SHA512:c463147bafb00dad7d46fcf92a732be9c278e8ffc8e8bc4eca42f5e6f4f1cae3cfd710693315a60f3cd0215e65522a0dfb278099bfeb3f53faf7663a19c50e1f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11_11.4.0.orig.tar.gz' gcc-11_11.4.0.orig.tar.gz 86949353 SHA512:c6fd2066dd230c7b4d4db75bb414dca062eb7f0565c8ea531183a51abd75c229ac0badeb5a959a09fc1a35de4ce5282cdb8142fe356f567da1fa50b1525983a5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11_11.4.0-1ubuntu1%7e22.04.debian.tar.xz' gcc-11_11.4.0-1ubuntu1~22.04.debian.tar.xz 543736 SHA512:b9b308246cfa23294c3d65968e505e9d6cc74a428dbd37e761051ec2005388b226e4719ecfb21f9e74c90e29d95afce40c5b750832cb95f43ce8aa60bd6990c6
+```
+
 ### `dpkg` source package: `gcc-12=12.3.0-1ubuntu1~22.04`
 
 Binary Packages:
 
 - `gcc-12-base:amd64=12.3.0-1ubuntu1~22.04`
+- `libatomic1:amd64=12.3.0-1ubuntu1~22.04`
+- `libcc1-0:amd64=12.3.0-1ubuntu1~22.04`
 - `libgcc-s1:amd64=12.3.0-1ubuntu1~22.04`
+- `libgomp1:amd64=12.3.0-1ubuntu1~22.04`
+- `libitm1:amd64=12.3.0-1ubuntu1~22.04`
+- `liblsan0:amd64=12.3.0-1ubuntu1~22.04`
+- `libquadmath0:amd64=12.3.0-1ubuntu1~22.04`
 - `libstdc++6:amd64=12.3.0-1ubuntu1~22.04`
+- `libubsan1:amd64=12.3.0-1ubuntu1~22.04`
 
-Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libcc1-0/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libitm1/copyright`, `/usr/share/doc/liblsan0/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++6/copyright`, `/usr/share/doc/libubsan1/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`
@@ -784,6 +816,25 @@ $ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.dsc' gcc-12_12.3.0-1ubuntu1~22.04.dsc 27867 SHA512:68c0860bb1f453ad06334504034c575bed05512ef2a94599e8bbf57a25ed51dc9a429f4646848c8d98e0d4695f1319fac5d5ebbee3a0f8eecdb279b75936a875
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0.orig.tar.gz' gcc-12_12.3.0.orig.tar.gz 91555468 SHA512:a33ce506594e13cf96f0419e6d62b71f8906c87c69426218bf8679d281865f1b170bc2f7379216ae1d6ad9f6bdbf5819c34c65c7537fdb74179c27b0d4ab7b48
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.debian.tar.xz 575908 SHA512:d1bf37d9af699430d3b107d0966194b20aef22654337efdb99971b270609785020dd1f04ce6a0f3f3eb0dbad704b46e9d9e5dfa6a497e98c78a867f5bc290038
+```
+
+### `dpkg` source package: `gcc-defaults=1.193ubuntu1`
+
+Binary Packages:
+
+- `cpp=4:11.2.0-1ubuntu1`
+- `gcc=4:11.2.0-1ubuntu1`
+
+Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/gcc/copyright`)
+
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gcc-defaults=1.193ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.193ubuntu1.dsc' gcc-defaults_1.193ubuntu1.dsc 14438 SHA512:ac90c126ec51cce73c134d24517c1dfe378d214ad6ee5c3edc119fec33c52485dd880994b29e7b787b2eea1cf761564b721044c903bea7deae2edc9031d3d8ed
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.193ubuntu1.tar.xz' gcc-defaults_1.193ubuntu1.tar.xz 48128 SHA512:62cf8f5b9aa4b2200cb037d18556c532178e9698f8502b53dd5a71bc9dfdab7314bda56d5384974fa4f9c23c16567c26ee966b5c3562d819507579932fb983a3
 ```
 
 ### `dpkg` source package: `gdbm=1.23-1`
@@ -871,10 +922,12 @@ $ apt-get source -qq --print-uris git=1:2.34.1-1ubuntu1.11
 Binary Packages:
 
 - `libc-bin=2.35-0ubuntu3.8`
+- `libc-dev-bin=2.35-0ubuntu3.8`
 - `libc6:amd64=2.35-0ubuntu3.8`
+- `libc6-dev:amd64=2.35-0ubuntu3.8`
 - `locales=2.35-0ubuntu3.8`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GFDL-1.3`
 - `GPL-2`
@@ -1055,6 +1108,28 @@ Source:
 $ apt-get source -qq --print-uris init-system-helpers=1.62
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.62.dsc' init-system-helpers_1.62.dsc 1993 SHA512:f706cf5841877ccabe6f5a8e62d44ce5b312c09776d7fb7fd841f39c2d841b3f7f19bcb63cf94073f853165ae44def8f171a0abce658d05c76a48bf1e91697eb
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.62.tar.xz' init-system-helpers_1.62.tar.xz 42144 SHA512:d90f12e642d086bd0d560ece87d119079c164b90ddbb77b2f804979540095b655715febbc2a5b0d50d7f94434d1ff7c0f4044d5d5411916fbca8300f3f88da7f
+```
+
+### `dpkg` source package: `isl=0.24-2build1`
+
+Binary Packages:
+
+- `libisl23:amd64=0.24-2build1`
+
+Licenses: (parsed from: `/usr/share/doc/libisl23/copyright`)
+
+- `BSD-2-clause`
+- `LGPL-2`
+- `LGPL-2.1+`
+- `MIT`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris isl=0.24-2build1
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isl/isl_0.24-2build1.dsc' isl_0.24-2build1.dsc 1939 SHA512:508aaf010116caea8b9c61bb9c40a3979ed73cd09369b07747b43bed169988c415771c13395e46213f4c95f363f46e055e864723a3fb775fe9d2b5bb5bf45404
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isl/isl_0.24.orig.tar.xz' isl_0.24.orig.tar.xz 1930956 SHA512:ff6bdcff839e1cd473f2a0c1e4dd4a3612ec6fee4544ccbc62b530a7248db2cf93b4b99bf493a86ddf2aba00e768927265d5d411f92061ea85fd7929073428e8
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isl/isl_0.24-2build1.debian.tar.xz' isl_0.24-2build1.debian.tar.xz 26628 SHA512:8aafdd03adbe32b3eb6cb9468b676c20c02377c3b45947619258cfc1c682f4e9689945f9dbc6b42fd4c1289c563e7a7bba0af4f0a58b2c7ab94c7fdb3c6c9f5f
 ```
 
 ### `dpkg` source package: `keyutils=1.6.1-2ubuntu3`
@@ -1384,9 +1459,10 @@ $ apt-get source -qq --print-uris libmd=1.0.4-1build1
 
 Binary Packages:
 
+- `libnsl-dev:amd64=1.3.0-2build2`
 - `libnsl2:amd64=1.3.0-2build2`
 
-Licenses: (parsed from: `/usr/share/doc/libnsl2/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libnsl-dev/copyright`, `/usr/share/doc/libnsl2/copyright`)
 
 - `BSD-3-clause`
 - `GPL-2`
@@ -1591,9 +1667,10 @@ $ apt-get source -qq --print-uris libtasn1-6=4.18.0-4build1
 Binary Packages:
 
 - `libtirpc-common=1.3.2-2ubuntu0.1`
+- `libtirpc-dev:amd64=1.3.2-2ubuntu0.1`
 - `libtirpc3:amd64=1.3.2-2ubuntu0.1`
 
-Licenses: (parsed from: `/usr/share/doc/libtirpc-common/copyright`, `/usr/share/doc/libtirpc3/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libtirpc-common/copyright`, `/usr/share/doc/libtirpc-dev/copyright`, `/usr/share/doc/libtirpc3/copyright`)
 
 - `BSD-2-Clause`
 - `BSD-3-Clause`
@@ -1646,6 +1723,7 @@ $ apt-get source -qq --print-uris libunistring=1.0-1
 
 Binary Packages:
 
+- `libcrypt-dev:amd64=1:4.4.27-1`
 - `libcrypt1:amd64=1:4.4.27-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -1681,6 +1759,25 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.dsc' libzstd_1.4.8+dfsg-3build1.dsc 2398 SHA512:cdd444b0258f1effd998781dd058c8ab37fb8aabb10b94cc5741b0fd2c4c948085cd1b919533ded2f30c5a871c68a81dacef3c3d0640b8514d5d3a9d375647f6
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg.orig.tar.xz' libzstd_1.4.8+dfsg.orig.tar.xz 1331996 SHA512:07fabe431367eea4badae7b1e46ac73e0b33aad5b67361bc7b67d5f9aef249c51db5b560f1cf59233255cc49db341a8d8440fed87745026fca7a7c5c14448cd8
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
+```
+
+### `dpkg` source package: `linux=5.15.0-112.122`
+
+Binary Packages:
+
+- `linux-libc-dev:amd64=5.15.0-112.122`
+
+Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
+
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris linux=5.15.0-112.122
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-112.122.dsc' linux_5.15.0-112.122.dsc 7800 SHA512:886ab18773dde51f7049fd562d69f300af6ed59d3856e4e532ccd480e6b7705568f9104e4388ff537672e09f131fd4584c5981a29db55c6da4169bf53a394d74
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-112.122.diff.gz' linux_5.15.0-112.122.diff.gz 9869883 SHA512:c96b0065eda27d5e13d5a4407e6c605a7eac766860e4c70faa5791e0ff4502e96d349530ff8f56c101d7a63a34c6ea76cd0b6d2906c221193959c9beddd3fbc6
 ```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
@@ -1784,6 +1881,25 @@ $ apt-get source -qq --print-uris mercurial=6.1.1-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_6.1.1-1ubuntu1.debian.tar.xz' mercurial_6.1.1-1ubuntu1.debian.tar.xz 73384 SHA512:e290828e1940571de596e9f4b1cd57c69c0af05d99fd3c868bb7089db7d02e5a0f80943d2310ae858c9400a1c4de2abccde9f93dee3a2015cc712e6e08037d15
 ```
 
+### `dpkg` source package: `mpclib3=1.2.1-2build1`
+
+Binary Packages:
+
+- `libmpc3:amd64=1.2.1-2build1`
+
+Licenses: (parsed from: `/usr/share/doc/libmpc3/copyright`)
+
+- `LGPL-3`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris mpclib3=1.2.1-2build1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mpclib3/mpclib3_1.2.1-2build1.dsc' mpclib3_1.2.1-2build1.dsc 1984 SHA512:5aa91f39d40bebc1f9ae03506c17687b75ea88d8129baf3a47b6d3d4fe3aba7b1aec499e219b7357747069ea40b8f593b33165c62687a4cb2fcc5e8a21428ffc
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mpclib3/mpclib3_1.2.1.orig.tar.gz' mpclib3_1.2.1.orig.tar.gz 838731 SHA512:3279f813ab37f47fdcc800e4ac5f306417d07f539593ca715876e43e04896e1d5bceccfb288ef2908a3f24b760747d0dbd0392a24b9b341bc3e12082e5c836ee
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mpclib3/mpclib3_1.2.1-2build1.debian.tar.xz' mpclib3_1.2.1-2build1.debian.tar.xz 4576 SHA512:0317f40da1ee5a7ad5733760226ec6ba4cddf7c4fae32b91e771f40bdb1b8a116854cb1cde85566072ef0199d7fbf046ff20fd67ef2ddb655038cb2e19e58662
+```
+
 ### `dpkg` source package: `mpdecimal=2.5.1-2build2`
 
 Binary Packages:
@@ -1803,6 +1919,26 @@ $ apt-get source -qq --print-uris mpdecimal=2.5.1-2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpdecimal/mpdecimal_2.5.1-2build2.dsc' mpdecimal_2.5.1-2build2.dsc 2026 SHA512:2f930154a94b9b4090f18e848ea94d115304827e351abc9141ef8646b9937a0f93eb2517790b661b0569e22bb498497c03972233e1ace6bdd85c9fc6922e7e70
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpdecimal/mpdecimal_2.5.1.orig.tar.gz' mpdecimal_2.5.1.orig.tar.gz 2584021 SHA512:710cb5cb71dbcf3e170ca15869c148df0547b848400c6b6dd70c67d9961dbe1190af8fb4d1623bfb0ca2afe44f369a42e311ab5225ed89d4031cb49a3bd70f30
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpdecimal/mpdecimal_2.5.1-2build2.debian.tar.xz' mpdecimal_2.5.1-2build2.debian.tar.xz 6860 SHA512:261ab28a609fbcff2b9561f1b1e484500c5652e48bd0abc4f8c5df73b7e00333b80f1fe416c84800690d13d52d2af72d97503dcd0afa61073ee5610d62a52a02
+```
+
+### `dpkg` source package: `mpfr4=4.1.0-3build3`
+
+Binary Packages:
+
+- `libmpfr6:amd64=4.1.0-3build3`
+
+Licenses: (parsed from: `/usr/share/doc/libmpfr6/copyright`)
+
+- `GFDL-1.2`
+- `LGPL-3`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris mpfr4=4.1.0-3build3
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.1.0-3build3.dsc' mpfr4_4.1.0-3build3.dsc 2066 SHA512:60ea156f6c4a56320ecfb2fefb226b5083363710eacbdec48f36f77bd5265c91548ef28ba775a88c7e927314e5dd757de851001bc7697f863195510047eaf0a3
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.1.0.orig.tar.xz' mpfr4_4.1.0.orig.tar.xz 1525476 SHA512:1bd1c349741a6529dfa53af4f0da8d49254b164ece8a46928cdb13a99460285622d57fe6f68cef19c6727b3f9daa25ddb3d7d65c201c8f387e421c7f7bee6273
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.1.0-3build3.debian.tar.xz' mpfr4_4.1.0-3build3.debian.tar.xz 12580 SHA512:1126a59104a9556f7ebd622b050b52899bd92442673e6ecbb04e80bc873107b4b61a356373d14b1fff5681090b177e0d3a9a4f212b0f38c347d01ac408222bd0
 ```
 
 ### `dpkg` source package: `ncurses=6.3-2ubuntu0.1`
@@ -2275,6 +2411,35 @@ $ apt-get source -qq --print-uris readline=8.1.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.1.2-1.dsc' readline_8.1.2-1.dsc 2432 SHA512:3166229d2ac183a46455c7d8cf17ef1d509ca8651ffa7887f654d87bbe1d00a08f9a9f73f14e652ac067d89e5d1128998f8f09f6a1128c56049338ace65ed773
 'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.1.2.orig.tar.gz' readline_8.1.2.orig.tar.gz 2993073 SHA512:b512275c8aa8b3b3178366c6d681f867676fc1c881e375134a88e9c860a448535e04ca43df727817fd0048261e48203e88bd1c086e86572022d1d65fb0350e4d
 'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.1.2-1.debian.tar.xz' readline_8.1.2-1.debian.tar.xz 29292 SHA512:a64621c93975bc42ba171c9298c932f9515025513911e744183092e0ef9873db474c4ec27a21f310f40e7b970ba6300edb057552f7e90fc469897ffa2eb706f0
+```
+
+### `dpkg` source package: `rpcsvc-proto=1.4.2-0ubuntu6`
+
+Binary Packages:
+
+- `rpcsvc-proto=1.4.2-0ubuntu6`
+
+Licenses: (parsed from: `/usr/share/doc/rpcsvc-proto/copyright`)
+
+- `BSD-3-clause`
+- `GPL-2`
+- `GPL-2+-autoconf-exception`
+- `GPL-3`
+- `GPL-3+-autoconf-exception`
+- `MIT`
+- `permissive-autoconf-m4`
+- `permissive-autoconf-m4-no-warranty`
+- `permissive-configure`
+- `permissive-fsf`
+- `permissive-makefile-in`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris rpcsvc-proto=1.4.2-0ubuntu6
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rpcsvc-proto/rpcsvc-proto_1.4.2-0ubuntu6.dsc' rpcsvc-proto_1.4.2-0ubuntu6.dsc 2113 SHA512:df8458b423e2d3f8d6da5c6fc19be2ad4ae50d7513e3fa98656b05a734fdc26b2403984ea7da8a0cb5c270f63feae7c258e1f817a3f4a27ffb25107e25f43525
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rpcsvc-proto/rpcsvc-proto_1.4.2.orig.tar.xz' rpcsvc-proto_1.4.2.orig.tar.xz 171620 SHA512:631fbfc00af94c5d7def0759f27e97dc14d400b4468c906719ae18ecef74815730798c882d1aaa4f90359224e7b829019b786baddc3097905b54f940ca85a714
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rpcsvc-proto/rpcsvc-proto_1.4.2-0ubuntu6.debian.tar.xz' rpcsvc-proto_1.4.2-0ubuntu6.debian.tar.xz 4268 SHA512:b7ee77b3714b10471fa5be73655f6ce37bd8ca4bfdb07011ac3621723616e69a2323dea9c93ee9ac5d2e9fd0230347224eaa8ae556ec2f2d4b399ec250a5008c
 ```
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-2build4`
@@ -2751,8 +2916,9 @@ $ apt-get source -qq --print-uris xz-utils=5.2.5-2ubuntu1
 Binary Packages:
 
 - `zlib1g:amd64=1:1.2.11.dfsg-2ubuntu9.2`
+- `zlib1g-dev:amd64=1:1.2.11.dfsg-2ubuntu9.2`
 
-Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
+Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`, `/usr/share/doc/zlib1g-dev/copyright`)
 
 - `Zlib`
 
