@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a4e4aeef9b47b481ea5ac3f679eaa9d4b0478067b672521cce966285f2c424a2`
-- Created: `2024-06-05T04:46:26.915145416Z`
-- Virtual Size: ~ 815.57 Mb  
+- Image ID: `sha256:82247edddad280d6499bfa94389367908da72e47f5cbd48cc6b83cc0d20ada62`
+- Created: `2024-06-17T23:13:09.032849944Z`
+- Virtual Size: ~ 815.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -48,11 +48,11 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `aom=3.8.2-2build1`
+### `dpkg` source package: `aom=3.8.2-2ubuntu0.1`
 
 Binary Packages:
 
-- `libaom3:amd64=3.8.2-2build1`
+- `libaom3:amd64=3.8.2-2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libaom3/copyright`)
 
@@ -953,15 +953,15 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4t64/copyright`, `/usr/sha
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `gdk-pixbuf=2.42.10+dfsg-3ubuntu3`
+### `dpkg` source package: `gdk-pixbuf=2.42.10+dfsg-3ubuntu3.1`
 
 Binary Packages:
 
-- `gir1.2-gdkpixbuf-2.0:amd64=2.42.10+dfsg-3ubuntu3`
-- `libgdk-pixbuf-2.0-0:amd64=2.42.10+dfsg-3ubuntu3`
-- `libgdk-pixbuf-2.0-dev:amd64=2.42.10+dfsg-3ubuntu3`
-- `libgdk-pixbuf2.0-bin=2.42.10+dfsg-3ubuntu3`
-- `libgdk-pixbuf2.0-common=2.42.10+dfsg-3ubuntu3`
+- `gir1.2-gdkpixbuf-2.0:amd64=2.42.10+dfsg-3ubuntu3.1`
+- `libgdk-pixbuf-2.0-0:amd64=2.42.10+dfsg-3ubuntu3.1`
+- `libgdk-pixbuf-2.0-dev:amd64=2.42.10+dfsg-3ubuntu3.1`
+- `libgdk-pixbuf2.0-bin=2.42.10+dfsg-3ubuntu3.1`
+- `libgdk-pixbuf2.0-common=2.42.10+dfsg-3ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/share/doc/libgdk-pixbuf-2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf-2.0-dev/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-bin/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
@@ -2754,12 +2754,12 @@ Licenses: (parsed from: `/usr/share/doc/libmpfr6/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mysql-8.0=8.0.36-2ubuntu3`
+### `dpkg` source package: `mysql-8.0=8.0.37-0ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=8.0.36-2ubuntu3`
-- `libmysqlclient21:amd64=8.0.36-2ubuntu3`
+- `libmysqlclient-dev=8.0.37-0ubuntu0.24.04.1`
+- `libmysqlclient21:amd64=8.0.37-0ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient21/copyright`)
 
@@ -3034,14 +3034,14 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `pam=1.5.3-5ubuntu5`
+### `dpkg` source package: `pam=1.5.3-5ubuntu5.1`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.5.3-5ubuntu5`
-- `libpam-modules-bin=1.5.3-5ubuntu5`
-- `libpam-runtime=1.5.3-5ubuntu5`
-- `libpam0g:amd64=1.5.3-5ubuntu5`
+- `libpam-modules:amd64=1.5.3-5ubuntu5.1`
+- `libpam-modules-bin=1.5.3-5ubuntu5.1`
+- `libpam-runtime=1.5.3-5ubuntu5.1`
+- `libpam0g:amd64=1.5.3-5ubuntu5.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
@@ -3597,12 +3597,12 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8`
-- `libudev1:amd64=255.4-1ubuntu8`
+- `libsystemd0:amd64=255.4-1ubuntu8.1`
+- `libudev1:amd64=255.4-1ubuntu8.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -3661,13 +3661,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `tiff=4.5.1+git230720-4ubuntu2`
+### `dpkg` source package: `tiff=4.5.1+git230720-4ubuntu2.1`
 
 Binary Packages:
 
-- `libtiff-dev:amd64=4.5.1+git230720-4ubuntu2`
-- `libtiff6:amd64=4.5.1+git230720-4ubuntu2`
-- `libtiffxx6:amd64=4.5.1+git230720-4ubuntu2`
+- `libtiff-dev:amd64=4.5.1+git230720-4ubuntu2.1`
+- `libtiff6:amd64=4.5.1+git230720-4ubuntu2.1`
+- `libtiffxx6:amd64=4.5.1+git230720-4ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/libtiff6/copyright`, `/usr/share/doc/libtiffxx6/copyright`)
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fcbeab00184d80f11b993746c2f754e7409eb90af725db353ef314480890deeb`
-- Created: `2024-06-05T04:42:18.892054086Z`
-- Virtual Size: ~ 111.70 Mb  
+- Image ID: `sha256:4e6f3fa5f0d93261dc94b286df7d7a7a920500038b1696e30c5d8309dd8e6a4a`
+- Created: `2024-06-17T23:11:11.453996112Z`
+- Virtual Size: ~ 111.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1254,14 +1254,14 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `pam=1.5.3-5ubuntu5`
+### `dpkg` source package: `pam=1.5.3-5ubuntu5.1`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.5.3-5ubuntu5`
-- `libpam-modules-bin=1.5.3-5ubuntu5`
-- `libpam-runtime=1.5.3-5ubuntu5`
-- `libpam0g:amd64=1.5.3-5ubuntu5`
+- `libpam-modules:amd64=1.5.3-5ubuntu5.1`
+- `libpam-modules-bin=1.5.3-5ubuntu5.1`
+- `libpam-runtime=1.5.3-5ubuntu5.1`
+- `libpam0g:amd64=1.5.3-5ubuntu5.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
@@ -1512,12 +1512,12 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8`
-- `libudev1:amd64=255.4-1ubuntu8`
+- `libsystemd0:amd64=255.4-1ubuntu8.1`
+- `libudev1:amd64=255.4-1ubuntu8.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
