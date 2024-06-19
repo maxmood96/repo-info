@@ -1,10 +1,10 @@
-# `r-base:4.4.0`
+# `r-base:4.4.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1626bec51d3b177e576f0f5f4caa65ecb7a676a6e50a9b104a4147545259c93c`
-- Created: `2024-04-24T17:36:33Z`
-- Virtual Size: ~ 869.24 Mb  
+- Image ID: `sha256:f41a9fb76a7d3e889b89b50cb577544985fbf3ee8025acb0407c28e710503e57`
+- Created: `2024-06-16T13:02:54Z`
+- Virtual Size: ~ 846.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["R"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LC_ALL=en_US.UTF-8`
   - `LANG=en_US.UTF-8`
-  - `R_BASE_VERSION=4.4.0`
+  - `R_BASE_VERSION=4.4.1`
 - Labels:
   - `org.opencontainers.image.authors=Dirk Eddelbuettel <edd@debian.org>`
   - `org.opencontainers.image.licenses=GPL-2.0-or-later`
@@ -108,20 +108,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:3.1.2-2
-'http://deb.debian.org/debian/pool/main/a/audit/audit_3.1.2-2.dsc' audit_3.1.2-2.dsc 2403 SHA256:5abf7c25864df2c7c4cc29019e7f62eafb94b62594168d0f0531beca9c4f86b5
-'http://deb.debian.org/debian/pool/main/a/audit/audit_3.1.2.orig.tar.gz' audit_3.1.2.orig.tar.gz 1219860 SHA256:c0b1792d1f0a88c6f1828710509cbb987059fc68712c97669ca90eae103d287d
-'http://deb.debian.org/debian/pool/main/a/audit/audit_3.1.2-2.debian.tar.xz' audit_3.1.2-2.debian.tar.xz 18340 SHA256:a9dcaa337e5ab65d6ec86a7b251d2d64a8a3a43c81adc938897a7a3553faf5f5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/audit/1:3.1.2-2/
 
-- https://sources.debian.net/src/audit/1:3.1.2-2/ (for browsing the source)
-- https://sources.debian.net/src/audit/1:3.1.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/audit/1:3.1.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-files=13.2`
 
@@ -2971,14 +2964,14 @@ $ apt-get source -qq --print-uris pkgconf=1.8.1-3
 'http://http.debian.net/debian/pool/main/p/pkgconf/pkgconf_1.8.1-3.debian.tar.xz' pkgconf_1.8.1-3.debian.tar.xz 15852 SHA256:d1527b3fccaf4c63e50cef4057f64c13a4c30591995fb9e6a58f4f928338f095
 ```
 
-### `dpkg` source package: `r-base=4.4.0-2`
+### `dpkg` source package: `r-base=4.4.1-1`
 
 Binary Packages:
 
-- `r-base=4.4.0-2`
-- `r-base-core=4.4.0-2`
-- `r-base-dev=4.4.0-2`
-- `r-recommended=4.4.0-2`
+- `r-base=4.4.1-1`
+- `r-base-core=4.4.1-1`
+- `r-base-dev=4.4.1-1`
+- `r-recommended=4.4.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-base-core/copyright`, `/usr/share/doc/r-base-dev/copyright`, `/usr/share/doc/r-recommended/copyright`)
 
@@ -2992,17 +2985,11 @@ Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-bas
 Source:
 
 ```console
-$ apt-get source -qq --print-uris r-base=4.4.0-2
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.4.0-2.dsc' r-base_4.4.0-2.dsc 2939 SHA256:5c91853239315c6a84d283279da8a0cc4a8b78ca0df77dad819b4b8afd8ec73b
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.4.0.orig.tar.gz' r-base_4.4.0.orig.tar.gz 37335563 SHA256:ace4125f9b976d2c53bcc5fca30c75e30d4edc401584859cbadb080e72b5f030
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.4.0-2.debian.tar.xz' r-base_4.4.0-2.debian.tar.xz 99872 SHA256:d166c45874b90dc255bf259d1495f10e415763a968872f562579ae4af141a4bf
+$ apt-get source -qq --print-uris r-base=4.4.1-1
+'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.4.1-1.dsc' r-base_4.4.1-1.dsc 2939 SHA256:392708779e998676f415532c9dca25bfdea34b24bcc186d8a54d8538a9ff67ae
+'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.4.1.orig.tar.gz' r-base_4.4.1.orig.tar.gz 37353459 SHA256:b4cb675deaaeb7299d3b265d218cde43f192951ce5b89b7bb1a5148a36b2d94d
+'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.4.1-1.debian.tar.xz' r-base_4.4.1-1.debian.tar.xz 99948 SHA256:022ab8bf36e0c8148cf10298423b30f336c750a9d385652e1026726b07672c7e
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/r-base/4.4.0-2/ (for browsing the source)
-- https://sources.debian.net/src/r-base/4.4.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-base/4.4.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-class=7.3-22-2`
 
@@ -3043,11 +3030,11 @@ $ apt-get source -qq --print-uris r-cran-docopt=0.7.1-2
 'http://http.debian.net/debian/pool/main/r/r-cran-docopt/r-cran-docopt_0.7.1-2.debian.tar.xz' r-cran-docopt_0.7.1-2.debian.tar.xz 2472 SHA256:3358c9988254f326b3d2a351f3a75fd3c655d56de13e7f822cceaf39fb1f7fca
 ```
 
-### `dpkg` source package: `r-cran-mass=7.3-60.2-1`
+### `dpkg` source package: `r-cran-mass=7.3-61-1`
 
 Binary Packages:
 
-- `r-cran-mass=7.3-60.2-1`
+- `r-cran-mass=7.3-61-1`
 
 Licenses: (parsed from: `/usr/share/doc/r-cran-mass/copyright`)
 
@@ -3057,17 +3044,11 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-mass/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris r-cran-mass=7.3-60.2-1
-'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-60.2-1.dsc' r-cran-mass_7.3-60.2-1.dsc 1865 SHA256:37b36ee77699e345b0080de38b119e9b5005fa1ffb253aa6b07561f14dfc0537
-'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-60.2.orig.tar.gz' r-cran-mass_7.3-60.2.orig.tar.gz 511862 SHA256:bb9c6e6747fff6861076758f7db6d3740a6a9c03c12a5a76dc3f816857457e8e
-'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-60.2-1.debian.tar.xz' r-cran-mass_7.3-60.2-1.debian.tar.xz 6600 SHA256:7aad0f49bfaf05e7b80f7a85b2667946bd8d38600eccba504e3137a799c88988
+$ apt-get source -qq --print-uris r-cran-mass=7.3-61-1
+'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-61-1.dsc' r-cran-mass_7.3-61-1.dsc 1851 SHA256:a06aee48f3cc177c2a66acd60878ac75efdad0b4b69a8eef25c8cc6c5f52e9a6
+'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-61.orig.tar.gz' r-cran-mass_7.3-61.orig.tar.gz 509902 SHA256:3144c8bf579dd7b7c47c259728c27f53f53e294e7ed307da434dfd144e800a90
+'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-61-1.debian.tar.xz' r-cran-mass_7.3-61-1.debian.tar.xz 6616 SHA256:397bb8aa1ca89c4b93eea30ea7050c983821a84eff3256e09a12fddb4b17a03e
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/r-cran-mass/7.3-60.2-1/ (for browsing the source)
-- https://sources.debian.net/src/r-cran-mass/7.3-60.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-cran-mass/7.3-60.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-nnet=7.3-19-2`
 
@@ -3253,16 +3234,15 @@ $ apt-get source -qq --print-uris sed=4.9-2
 'http://http.debian.net/debian/pool/main/s/sed/sed_4.9-2.debian.tar.xz' sed_4.9-2.debian.tar.xz 62756 SHA256:549fa5cec6eb4fde8cc74ca263b8bf42f947ede677e39d2afeedf661da1d4e52
 ```
 
-### `dpkg` source package: `sensible-utils=0.0.22`
+### `dpkg` source package: `sensible-utils=0.0.23`
 
 Binary Packages:
 
-- `sensible-utils=0.0.22`
+- `sensible-utils=0.0.23`
 
 Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 
 - `All-permissive`
-- `BSD-2-clause`
 - `GPL-2`
 - `GPL-2+`
 - `configure`
@@ -3271,9 +3251,9 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.22
-'http://http.debian.net/debian/pool/main/s/sensible-utils/sensible-utils_0.0.22.dsc' sensible-utils_0.0.22.dsc 1737 SHA256:2a49b3be4b85b3f455f9c15c26f9bfb6c508496025a414f32649b16fe6326773
-'http://http.debian.net/debian/pool/main/s/sensible-utils/sensible-utils_0.0.22.tar.xz' sensible-utils_0.0.22.tar.xz 74412 SHA256:c744d604ad6e1f3c8b4831cd84d653cf86bf9867a856724bf3f4fceb2de215b5
+$ apt-get source -qq --print-uris sensible-utils=0.0.23
+'http://http.debian.net/debian/pool/main/s/sensible-utils/sensible-utils_0.0.23.dsc' sensible-utils_0.0.23.dsc 1743 SHA256:6b265b437ae5de65b70380d523c2aa686779834799b7db8d5aeca18b86a1895d
+'http://http.debian.net/debian/pool/main/s/sensible-utils/sensible-utils_0.0.23.tar.xz' sensible-utils_0.0.23.tar.xz 73464 SHA256:0de5526c06f7c41b2f3d68eba570d08ffc7c2883c567d9786eaf25d9e554d4d6
 ```
 
 ### `dpkg` source package: `shadow=1:4.13+dfsg1-5`
@@ -3365,10 +3345,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sysvinit=3.09-1
-'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_3.09-1.dsc' sysvinit_3.09-1.dsc 2347 SHA256:52ab503fb095bf8114fb17c4c8a28e4536ea37c69119672d5e94db0013b8c73f
-'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_3.09.orig.tar.gz' sysvinit_3.09.orig.tar.gz 514145 SHA256:991c5d0100165d7896dae9df6a69877311cdd5349e32f7fc6960859f5f60a6ce
-'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_3.09-1.debian.tar.xz' sysvinit_3.09-1.debian.tar.xz 120876 SHA256:f28ebfabc223fb522a5f1bb4720a6040e78e6eacca57d2e068084b55d6c44662
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.09-1.dsc' sysvinit_3.09-1.dsc 2347 SHA256:52ab503fb095bf8114fb17c4c8a28e4536ea37c69119672d5e94db0013b8c73f
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.09.orig.tar.gz' sysvinit_3.09.orig.tar.gz 514145 SHA256:991c5d0100165d7896dae9df6a69877311cdd5349e32f7fc6960859f5f60a6ce
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.09-1.debian.tar.xz' sysvinit_3.09-1.debian.tar.xz 120876 SHA256:f28ebfabc223fb522a5f1bb4720a6040e78e6eacca57d2e068084b55d6c44662
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/sysvinit/3.09-1/ (for browsing the source)
+- https://sources.debian.net/src/sysvinit/3.09-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sysvinit/3.09-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-3`
 
@@ -3753,39 +3739,39 @@ $ apt-get source -qq --print-uris xxhash=0.8.2-2
 'http://http.debian.net/debian/pool/main/x/xxhash/xxhash_0.8.2-2.debian.tar.xz' xxhash_0.8.2-2.debian.tar.xz 4920 SHA256:fcbdd52df60936173524743680f6d3c504b9a90553fe113cd0aa531faf4f2c4d
 ```
 
-### `dpkg` source package: `xz-utils=5.6.1+really5.4.5-1`
+### `dpkg` source package: `xz-utils=5.6.2-1`
 
 Binary Packages:
 
-- `liblzma-dev:amd64=5.6.1+really5.4.5-1`
-- `liblzma5:amd64=5.6.1+really5.4.5-1`
-- `xz-utils=5.6.1+really5.4.5-1`
+- `liblzma-dev:amd64=5.6.2-1`
+- `liblzma5:amd64=5.6.2-1`
+- `xz-utils=5.6.2-1`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma-dev/copyright`, `/usr/share/doc/liblzma5/copyright`, `/usr/share/doc/xz-utils/copyright`)
 
-- `Autoconf`
+- `0BSD`
+- `FSFUL`
+- `FSFULLR`
 - `GPL-2`
 - `GPL-2+`
 - `GPL-3`
-- `LGPL-2`
+- `GPL-3.0-or-later-WITH-Autoconf-exception-macro`
 - `LGPL-2.1`
 - `LGPL-2.1+`
 - `PD`
 - `PD-debian`
-- `config-h`
 - `noderivs`
 - `none`
-- `permissive-fsf`
 - `permissive-nowarranty`
-- `probably-PD`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris xz-utils=5.6.1+really5.4.5-1
-'http://http.debian.net/debian/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1.dsc' xz-utils_5.6.1+really5.4.5-1.dsc 2679 SHA256:7d7ab95b2004b949a083b66190ad8dc8272fae32e04888027a2a40976844207c
-'http://http.debian.net/debian/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5.orig.tar.xz' xz-utils_5.6.1+really5.4.5.orig.tar.xz 1680520 SHA256:da9dec6c12cf2ecf269c31ab65b5de18e8e52b96f35d5bcd08c12b43e6878803
-'http://http.debian.net/debian/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1.debian.tar.xz' xz-utils_5.6.1+really5.4.5-1.debian.tar.xz 27232 SHA256:0c54c44098e31a529c942faff69f8367cfdd5e80212139fca9b7ee40e7f86a45
+$ apt-get source -qq --print-uris xz-utils=5.6.2-1
+'http://http.debian.net/debian/pool/main/x/xz-utils/xz-utils_5.6.2-1.dsc' xz-utils_5.6.2-1.dsc 2694 SHA256:ec3beb78669834010236e697c573e4b7be7140e4fb3a8fadfa6c620a65a10073
+'http://http.debian.net/debian/pool/main/x/xz-utils/xz-utils_5.6.2.orig.tar.xz' xz-utils_5.6.2.orig.tar.xz 1307448 SHA256:a9db3bb3d64e248a0fae963f8fb6ba851a26ba1822e504dc0efd18a80c626caf
+'http://http.debian.net/debian/pool/main/x/xz-utils/xz-utils_5.6.2.orig.tar.xz.asc' xz-utils_5.6.2.orig.tar.xz.asc 833 SHA256:297c242cb55ae70242e8773ee8099c6561b9d8a49dab3b3cfccb33465c108e20
+'http://http.debian.net/debian/pool/main/x/xz-utils/xz-utils_5.6.2-1.debian.tar.xz' xz-utils_5.6.2-1.debian.tar.xz 24480 SHA256:eea65995e4347059bab18f948ee8ed3e281ddd39cfc6d3e868e559e350a5617e
 ```
 
 ### `dpkg` source package: `zip=3.0-13`
