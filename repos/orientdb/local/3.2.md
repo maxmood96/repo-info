@@ -1,9 +1,9 @@
-# `orientdb:3.2.30`
+# `orientdb:3.2.31`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c70e04a55c30b30a1f92c6f14cd0f382ac297cdca2c1a9f88db388b6296edfcf`
-- Created: `2024-06-05T10:51:56.21409717Z`
+- Image ID: `sha256:6e54f2cd9962190e062b25e34ad44754f35d170eb5b6811195e2257aa55eb6f4`
+- Created: `2024-06-18T19:20:30.208927017Z`
 - Virtual Size: ~ 422.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,10 +16,10 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk8u412-b08`
-  - `ORIENTDB_VERSION=3.2.30`
-  - `ORIENTDB_DOWNLOAD_MD5=5765da4a3bc10b1fdd4a458c348b3819`
-  - `ORIENTDB_DOWNLOAD_SHA1=9b502bd31299f2ae0eb92e511352961c4abfe7cb`
-  - `ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.30/orientdb-community-3.2.30.tar.gz`
+  - `ORIENTDB_VERSION=3.2.31`
+  - `ORIENTDB_DOWNLOAD_MD5=897d5b404f5565c9d57e1fdb3dd735d6`
+  - `ORIENTDB_DOWNLOAD_SHA1=02f09b9b74c5958b18097ead6e90d413dfd27e56`
+  - `ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.31/orientdb-community-3.2.31.tar.gz`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
