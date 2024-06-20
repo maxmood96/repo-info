@@ -2,15 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9bad7b7c9696e9515f102b31e02dc6e73059a9a31550dccca0025d7737d44811`
-- Created: `2024-05-31T13:43:40Z`
-- Virtual Size: ~ 250.63 Mb  
+- Image ID: `sha256:c8e4651ccf9613ccf98b90af072cbb784a27721b264fe03bd1e1e7522cac9451`
+- Created: `2024-06-03T20:57:56Z`
+- Virtual Size: ~ 253.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["postgres"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `GOSU_VERSION=1.17`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=17`
   - `PG_VERSION=17beta1`
@@ -697,23 +698,6 @@ ssl_client-1.36.1-r15 installed size:
 
 ssl_client-1.36.1-r15 license:
 GPL-2.0-only
-
-```
-
-### `apk` package: `su-exec`
-
-```console
-su-exec-0.2-r3 description:
-switch user and group id, setgroups and exec
-
-su-exec-0.2-r3 webpage:
-https://github.com/ncopa/su-exec
-
-su-exec-0.2-r3 installed size:
-24 KiB
-
-su-exec-0.2-r3 license:
-MIT
 
 ```
 

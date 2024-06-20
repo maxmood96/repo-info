@@ -2,15 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f76e70684c30ea526afdbb9099f609ea8945afdcf50e05d7358957b282ef1fe`
-- Created: `2024-05-31T13:43:40Z`
-- Virtual Size: ~ 238.80 Mb  
+- Image ID: `sha256:9b15ecbd78d6436b2caba01bb0c6d86abe60bdf6ec57d546c72f6261dc845237`
+- Created: `2024-06-03T20:57:56Z`
+- Virtual Size: ~ 246.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["postgres"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `GOSU_VERSION=1.17`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=14`
   - `PG_VERSION=14.12`
@@ -278,16 +279,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.0-r2 description:
+libcrypto3-3.3.1-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.0-r2 webpage:
+libcrypto3-3.3.1-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.0-r2 installed size:
-4656 KiB
+libcrypto3-3.3.1-r0 installed size:
+4660 KiB
 
-libcrypto3-3.3.0-r2 license:
+libcrypto3-3.3.1-r0 license:
 Apache-2.0
 
 ```
@@ -431,16 +432,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.0-r2 description:
+libssl3-3.3.1-r0 description:
 SSL shared libraries
 
-libssl3-3.3.0-r2 webpage:
+libssl3-3.3.1-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.0-r2 installed size:
+libssl3-3.3.1-r0 installed size:
 796 KiB
 
-libssl3-3.3.0-r2 license:
+libssl3-3.3.1-r0 license:
 Apache-2.0
 
 ```
@@ -680,23 +681,6 @@ ssl_client-1.36.1-r28 installed size:
 
 ssl_client-1.36.1-r28 license:
 GPL-2.0-only
-
-```
-
-### `apk` package: `su-exec`
-
-```console
-su-exec-0.2-r3 description:
-switch user and group id, setgroups and exec
-
-su-exec-0.2-r3 webpage:
-https://github.com/ncopa/su-exec
-
-su-exec-0.2-r3 installed size:
-24 KiB
-
-su-exec-0.2-r3 license:
-MIT
 
 ```
 
