@@ -42,7 +42,7 @@
 ## `caddy:2`
 
 ```console
-$ docker pull caddy@sha256:60199fbf2046892e0aa4b19c7d3adf71f530c36abc65728627422148a75b3475
+$ docker pull caddy@sha256:4b192bcff3499aa887e3a0e99cb1773f3502e72389e4bb1699cae4af2938f45e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -67,19 +67,19 @@ $ docker pull caddy@sha256:60199fbf2046892e0aa4b19c7d3adf71f530c36abc65728627422
 ### `caddy:2` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:1603d1801481ca6ab1f7e3438e03ad1713f89f6754c3261d6e49662de4a8b96f
+$ docker pull caddy@sha256:de7100f2dc60d933ba28a915c8d788f3ce89c7baf14c4b9c5a6fd67549bae7a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.6 MB (18625879 bytes)**  
+-	Total Size: **18.6 MB (18627619 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:870ea66f9a9ed220cbd24beefb19b2775b41077da6c87e2f5b66e8dcde113534`
+-	Image ID: `sha256:accd318080c538106641ab06f8383ef9979ad7919004ae6a55bced90f39c35f8`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 22 May 2024 18:18:11 GMT
-ADD file:e3abcdba177145039cfef1ad882f9f81a612a24c9f044b19f713b95454d2e3f6 in / 
-# Wed, 22 May 2024 18:18:12 GMT
+# Tue, 04 Jun 2024 22:12:59 GMT
+ADD file:33ebe56b967747a97dcec01bc2559962bee8823686c9739d26be060381bbb3ca in / 
+# Tue, 04 Jun 2024 22:12:59 GMT
 CMD ["/bin/sh"]
 # Tue, 04 Jun 2024 22:12:59 GMT
 RUN apk add --no-cache 	ca-certificates 	libcap 	mailcap # buildkit
@@ -124,21 +124,21 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f`  
-		Last Modified: Wed, 22 May 2024 18:18:35 GMT  
-		Size: 3.6 MB (3622094 bytes)  
+	-	`sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99`  
+		Last Modified: Thu, 20 Jun 2024 20:17:32 GMT  
+		Size: 3.6 MB (3623844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c0c17092266bbaf8de056d9c4315ae5e26b88a49d1bf2e2ed488c826bbc79e4`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 357.4 KB (357355 bytes)  
+	-	`sha256:09ada5eb3540e4dca0204132c9b0c5ea6593e286b86258eb74e181c7fac06ad5`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 357.4 KB (357359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed0d427b3a04b2050455705dcf60163fc468f049f08d83cc85150bc029e805da`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
+	-	`sha256:a7b78b6bd1c817222ea54d7f525925db43e6e215d5f92a0fb5b6e0962cfb1275`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
 		Size: 7.4 KB (7449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ea7e62d09d2d4cc58f1ce097c9404da4dcf0304c435e13cf52e318a17da75bc`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 14.6 MB (14638949 bytes)  
+	-	`sha256:14de6039f1505f64546cf32b38e20eb0d6dfc3ffcf73595f2507d061bfff021f`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 14.6 MB (14638935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -148,25 +148,25 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ### `caddy:2` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:96bbf115ce7bba6628635a9d0148cb90aabf5a6d18e3dd2472a817dacb6dcc2b
+$ docker pull caddy@sha256:9404ddc071773075e0c61ec7e45538d1e6d0270d0ce1357fd7f8458635ab090d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **281.8 KB (281795 bytes)**  
+-	Total Size: **281.8 KB (281845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eca5eb3a86421c8b21bc2fcb83358d677a6c671a7dea7db46fa05bf98b50d73a`
+-	Image ID: `sha256:51adcda97fe5558b194ecbcf85e9c6ac9c58ffc7b5d88a42a9fdc51d02ba88eb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:223a93663776c65c27839e195b96dc02a1d056bed7b8896d8a1ce2c234c52777`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 263.8 KB (263814 bytes)  
+	-	`sha256:712ae6b6ed31482d27bf508aa484f05932084eb22c6fe0b5f3aaca47b49a1c23`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 263.8 KB (263815 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:14051e501086236b5e20cb1a15da10779e394523513b51d65c4c9427d2f4aa3e`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 18.0 KB (17981 bytes)  
+	-	`sha256:4d4b5ec6e66c9725423e518b3656395df1065475086e7b7f33eb3de35fbb768a`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 18.0 KB (18030 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2` - linux; arm variant v6
@@ -1100,7 +1100,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ## `caddy:2-alpine`
 
 ```console
-$ docker pull caddy@sha256:a48e22edad925dc216fd27aa4f04ec49ebdad9b64c9e5a3f1826d0595ef2993c
+$ docker pull caddy@sha256:e3cf7d27f0b749d5e70967301d8e70d08fc285cb85a0ae1b3ccc66067d2ddf47
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1123,19 +1123,19 @@ $ docker pull caddy@sha256:a48e22edad925dc216fd27aa4f04ec49ebdad9b64c9e5a3f1826d
 ### `caddy:2-alpine` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:1603d1801481ca6ab1f7e3438e03ad1713f89f6754c3261d6e49662de4a8b96f
+$ docker pull caddy@sha256:de7100f2dc60d933ba28a915c8d788f3ce89c7baf14c4b9c5a6fd67549bae7a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.6 MB (18625879 bytes)**  
+-	Total Size: **18.6 MB (18627619 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:870ea66f9a9ed220cbd24beefb19b2775b41077da6c87e2f5b66e8dcde113534`
+-	Image ID: `sha256:accd318080c538106641ab06f8383ef9979ad7919004ae6a55bced90f39c35f8`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 22 May 2024 18:18:11 GMT
-ADD file:e3abcdba177145039cfef1ad882f9f81a612a24c9f044b19f713b95454d2e3f6 in / 
-# Wed, 22 May 2024 18:18:12 GMT
+# Tue, 04 Jun 2024 22:12:59 GMT
+ADD file:33ebe56b967747a97dcec01bc2559962bee8823686c9739d26be060381bbb3ca in / 
+# Tue, 04 Jun 2024 22:12:59 GMT
 CMD ["/bin/sh"]
 # Tue, 04 Jun 2024 22:12:59 GMT
 RUN apk add --no-cache 	ca-certificates 	libcap 	mailcap # buildkit
@@ -1180,21 +1180,21 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f`  
-		Last Modified: Wed, 22 May 2024 18:18:35 GMT  
-		Size: 3.6 MB (3622094 bytes)  
+	-	`sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99`  
+		Last Modified: Thu, 20 Jun 2024 20:17:32 GMT  
+		Size: 3.6 MB (3623844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c0c17092266bbaf8de056d9c4315ae5e26b88a49d1bf2e2ed488c826bbc79e4`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 357.4 KB (357355 bytes)  
+	-	`sha256:09ada5eb3540e4dca0204132c9b0c5ea6593e286b86258eb74e181c7fac06ad5`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 357.4 KB (357359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed0d427b3a04b2050455705dcf60163fc468f049f08d83cc85150bc029e805da`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
+	-	`sha256:a7b78b6bd1c817222ea54d7f525925db43e6e215d5f92a0fb5b6e0962cfb1275`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
 		Size: 7.4 KB (7449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ea7e62d09d2d4cc58f1ce097c9404da4dcf0304c435e13cf52e318a17da75bc`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 14.6 MB (14638949 bytes)  
+	-	`sha256:14de6039f1505f64546cf32b38e20eb0d6dfc3ffcf73595f2507d061bfff021f`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 14.6 MB (14638935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1204,25 +1204,25 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ### `caddy:2-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:96bbf115ce7bba6628635a9d0148cb90aabf5a6d18e3dd2472a817dacb6dcc2b
+$ docker pull caddy@sha256:9404ddc071773075e0c61ec7e45538d1e6d0270d0ce1357fd7f8458635ab090d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **281.8 KB (281795 bytes)**  
+-	Total Size: **281.8 KB (281845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eca5eb3a86421c8b21bc2fcb83358d677a6c671a7dea7db46fa05bf98b50d73a`
+-	Image ID: `sha256:51adcda97fe5558b194ecbcf85e9c6ac9c58ffc7b5d88a42a9fdc51d02ba88eb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:223a93663776c65c27839e195b96dc02a1d056bed7b8896d8a1ce2c234c52777`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 263.8 KB (263814 bytes)  
+	-	`sha256:712ae6b6ed31482d27bf508aa484f05932084eb22c6fe0b5f3aaca47b49a1c23`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 263.8 KB (263815 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:14051e501086236b5e20cb1a15da10779e394523513b51d65c4c9427d2f4aa3e`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 18.0 KB (17981 bytes)  
+	-	`sha256:4d4b5ec6e66c9725423e518b3656395df1065475086e7b7f33eb3de35fbb768a`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 18.0 KB (18030 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2-alpine` - linux; arm variant v6
@@ -1854,7 +1854,7 @@ $ docker pull caddy@sha256:25fc094160e64a8daf572a1ee5c588f8b597290a13fcf04bc2dd2
 ## `caddy:2-builder`
 
 ```console
-$ docker pull caddy@sha256:2c0c92e25b366bd8e612302512c99d03dec66eb3be55a3e9b187cab962770119
+$ docker pull caddy@sha256:dcd7aa31f3512617d0a801b1299ac40e677e3b8c13cf27ea05c32406c179f980
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1879,19 +1879,19 @@ $ docker pull caddy@sha256:2c0c92e25b366bd8e612302512c99d03dec66eb3be55a3e9b187c
 ### `caddy:2-builder` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:ccd3c6061c374d09d8bc1dc80d04a50c88009cc548ca6a585c753d5975806526
+$ docker pull caddy@sha256:877814c5abb44c85c2615cc705f8011e8188aa6a211da55986a6d038e23834b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.7 MB (80670786 bytes)**  
+-	Total Size: **80.7 MB (80672576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1314448ea5d0fe75f1bfd52dd204a6f56fd978feba1b2cd44715340824a122db`
+-	Image ID: `sha256:0fce6536f855029143fa4374ced1ec74a5f9d851de7eb2ac6ef0c40b64a2c0e0`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 22 May 2024 18:18:11 GMT
-ADD file:e3abcdba177145039cfef1ad882f9f81a612a24c9f044b19f713b95454d2e3f6 in / 
-# Wed, 22 May 2024 18:18:12 GMT
+# Tue, 04 Jun 2024 22:12:59 GMT
+ADD file:33ebe56b967747a97dcec01bc2559962bee8823686c9739d26be060381bbb3ca in / 
+# Tue, 04 Jun 2024 22:12:59 GMT
 CMD ["/bin/sh"]
 # Tue, 04 Jun 2024 22:12:59 GMT
 RUN apk add --no-cache ca-certificates # buildkit
@@ -1928,37 +1928,37 @@ WORKDIR /usr/bin
 ```
 
 -	Layers:
-	-	`sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f`  
-		Last Modified: Wed, 22 May 2024 18:18:35 GMT  
-		Size: 3.6 MB (3622094 bytes)  
+	-	`sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99`  
+		Last Modified: Thu, 20 Jun 2024 20:17:32 GMT  
+		Size: 3.6 MB (3623844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b732c871fea20cea9c9afe0ee6c127852025cd9f1119819121110f1838b304c`  
-		Last Modified: Fri, 14 Jun 2024 17:54:03 GMT  
-		Size: 292.4 KB (292416 bytes)  
+	-	`sha256:7728242c92e74edf5cfd2c7e300edc2756a81630e514f71f9330869e86280f0e`  
+		Last Modified: Thu, 20 Jun 2024 20:54:50 GMT  
+		Size: 292.4 KB (292423 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:060aaf7efd0676cdf56165fe26e63a047d7f3c483ab1043d530db9370e6c28e7`  
 		Last Modified: Fri, 14 Jun 2024 17:54:07 GMT  
 		Size: 69.3 MB (69345548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d1964877d6860798d7794738b2706190a440706bbffacdaea35594d1ddac0fc`  
-		Last Modified: Fri, 14 Jun 2024 17:54:03 GMT  
-		Size: 124.0 B  
+	-	`sha256:99f8e900f733a3e177aeba423378acb3315424c72b4d86836a7e71a7a1a4393a`  
+		Last Modified: Thu, 20 Jun 2024 20:54:50 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0246a9aa2a3b6406af961f68fc8cea4ae29580b9b554b907990039d5a4e094a`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 5.9 MB (5909464 bytes)  
+	-	`sha256:c54d6740a81ffc96171c19312eb197fdaf263a027a55b507e9f71f2896879936`  
+		Last Modified: Thu, 20 Jun 2024 21:55:40 GMT  
+		Size: 5.9 MB (5909488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69158900a3d2ea6aad90ccca00264c54a2217466093f2df0aa595846cb00c736`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 1.5 MB (1500674 bytes)  
+	-	`sha256:29e77eacc660a838d65f8fcf5a51e1da2bbf2416e82461d872302d4bf8ce27f1`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
+		Size: 1.5 MB (1500680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a8112a39240e6c91831ea07faac29f766e4319493bbdc44041c42744a613dd`  
-		Last Modified: Fri, 14 Jun 2024 18:54:46 GMT  
-		Size: 402.0 B  
+	-	`sha256:030fdae9f84a086a8da29d14de6701ee550a57a3a60b6b9fa5ca2ce2415c862c`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
+		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1968,24 +1968,24 @@ WORKDIR /usr/bin
 ### `caddy:2-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:cf70b5811e444fc608f30988a55a4ef79328cd3653e33fdd3da6b744999985ce
+$ docker pull caddy@sha256:0d32d244df1051d7a2add823911963fbbea810229195d72523c5d0657c2b1ed3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.5 KB (296526 bytes)**  
+-	Total Size: **296.5 KB (296527 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80b2258a12eea2b1d9925266bfd3c830fa0e49bfa707e4d25b77714decb963ad`
+-	Image ID: `sha256:6f078a0c725ab67ebc090568ca92af33423025bc05b9d27afadc86a6cfd48a51`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9ebf3aa6c038092a6e062cb5d5235a12e4caf03d6fed225fcd34e75157af8d14`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 276.5 KB (276457 bytes)  
+	-	`sha256:5fb8d35f8f2cfc19e0d28ae3e075165e8ae7f8b7b60ad7193daeeb2419c039ef`  
+		Last Modified: Thu, 20 Jun 2024 21:55:40 GMT  
+		Size: 276.5 KB (276458 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5a9572add926bd37f873cd2e92e205e9b7e1edeff975c30d08a40d67d4186fef`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
+	-	`sha256:bc6868f02b356d04d4a04c2f74b5f77f24a81474cdc0a656e7da4de1c0bae771`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
 		Size: 20.1 KB (20069 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2932,7 +2932,7 @@ WORKDIR C:\
 ## `caddy:2-builder-alpine`
 
 ```console
-$ docker pull caddy@sha256:ae1e0367c86a6adaf620ce70ad4a6b04b04c2f27f5d1ae3e75c17ce53591ff69
+$ docker pull caddy@sha256:9ac8f41aed823996bfe1253d43b9723fddf952f31c4d9022fe57ef0ded3e24f6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2955,19 +2955,19 @@ $ docker pull caddy@sha256:ae1e0367c86a6adaf620ce70ad4a6b04b04c2f27f5d1ae3e75c17
 ### `caddy:2-builder-alpine` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:ccd3c6061c374d09d8bc1dc80d04a50c88009cc548ca6a585c753d5975806526
+$ docker pull caddy@sha256:877814c5abb44c85c2615cc705f8011e8188aa6a211da55986a6d038e23834b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.7 MB (80670786 bytes)**  
+-	Total Size: **80.7 MB (80672576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1314448ea5d0fe75f1bfd52dd204a6f56fd978feba1b2cd44715340824a122db`
+-	Image ID: `sha256:0fce6536f855029143fa4374ced1ec74a5f9d851de7eb2ac6ef0c40b64a2c0e0`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 22 May 2024 18:18:11 GMT
-ADD file:e3abcdba177145039cfef1ad882f9f81a612a24c9f044b19f713b95454d2e3f6 in / 
-# Wed, 22 May 2024 18:18:12 GMT
+# Tue, 04 Jun 2024 22:12:59 GMT
+ADD file:33ebe56b967747a97dcec01bc2559962bee8823686c9739d26be060381bbb3ca in / 
+# Tue, 04 Jun 2024 22:12:59 GMT
 CMD ["/bin/sh"]
 # Tue, 04 Jun 2024 22:12:59 GMT
 RUN apk add --no-cache ca-certificates # buildkit
@@ -3004,37 +3004,37 @@ WORKDIR /usr/bin
 ```
 
 -	Layers:
-	-	`sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f`  
-		Last Modified: Wed, 22 May 2024 18:18:35 GMT  
-		Size: 3.6 MB (3622094 bytes)  
+	-	`sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99`  
+		Last Modified: Thu, 20 Jun 2024 20:17:32 GMT  
+		Size: 3.6 MB (3623844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b732c871fea20cea9c9afe0ee6c127852025cd9f1119819121110f1838b304c`  
-		Last Modified: Fri, 14 Jun 2024 17:54:03 GMT  
-		Size: 292.4 KB (292416 bytes)  
+	-	`sha256:7728242c92e74edf5cfd2c7e300edc2756a81630e514f71f9330869e86280f0e`  
+		Last Modified: Thu, 20 Jun 2024 20:54:50 GMT  
+		Size: 292.4 KB (292423 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:060aaf7efd0676cdf56165fe26e63a047d7f3c483ab1043d530db9370e6c28e7`  
 		Last Modified: Fri, 14 Jun 2024 17:54:07 GMT  
 		Size: 69.3 MB (69345548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d1964877d6860798d7794738b2706190a440706bbffacdaea35594d1ddac0fc`  
-		Last Modified: Fri, 14 Jun 2024 17:54:03 GMT  
-		Size: 124.0 B  
+	-	`sha256:99f8e900f733a3e177aeba423378acb3315424c72b4d86836a7e71a7a1a4393a`  
+		Last Modified: Thu, 20 Jun 2024 20:54:50 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0246a9aa2a3b6406af961f68fc8cea4ae29580b9b554b907990039d5a4e094a`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 5.9 MB (5909464 bytes)  
+	-	`sha256:c54d6740a81ffc96171c19312eb197fdaf263a027a55b507e9f71f2896879936`  
+		Last Modified: Thu, 20 Jun 2024 21:55:40 GMT  
+		Size: 5.9 MB (5909488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69158900a3d2ea6aad90ccca00264c54a2217466093f2df0aa595846cb00c736`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 1.5 MB (1500674 bytes)  
+	-	`sha256:29e77eacc660a838d65f8fcf5a51e1da2bbf2416e82461d872302d4bf8ce27f1`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
+		Size: 1.5 MB (1500680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a8112a39240e6c91831ea07faac29f766e4319493bbdc44041c42744a613dd`  
-		Last Modified: Fri, 14 Jun 2024 18:54:46 GMT  
-		Size: 402.0 B  
+	-	`sha256:030fdae9f84a086a8da29d14de6701ee550a57a3a60b6b9fa5ca2ce2415c862c`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
+		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -3044,24 +3044,24 @@ WORKDIR /usr/bin
 ### `caddy:2-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:cf70b5811e444fc608f30988a55a4ef79328cd3653e33fdd3da6b744999985ce
+$ docker pull caddy@sha256:0d32d244df1051d7a2add823911963fbbea810229195d72523c5d0657c2b1ed3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.5 KB (296526 bytes)**  
+-	Total Size: **296.5 KB (296527 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80b2258a12eea2b1d9925266bfd3c830fa0e49bfa707e4d25b77714decb963ad`
+-	Image ID: `sha256:6f078a0c725ab67ebc090568ca92af33423025bc05b9d27afadc86a6cfd48a51`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9ebf3aa6c038092a6e062cb5d5235a12e4caf03d6fed225fcd34e75157af8d14`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 276.5 KB (276457 bytes)  
+	-	`sha256:5fb8d35f8f2cfc19e0d28ae3e075165e8ae7f8b7b60ad7193daeeb2419c039ef`  
+		Last Modified: Thu, 20 Jun 2024 21:55:40 GMT  
+		Size: 276.5 KB (276458 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5a9572add926bd37f873cd2e92e205e9b7e1edeff975c30d08a40d67d4186fef`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
+	-	`sha256:bc6868f02b356d04d4a04c2f74b5f77f24a81474cdc0a656e7da4de1c0bae771`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
 		Size: 20.1 KB (20069 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4663,7 +4663,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ## `caddy:2.8`
 
 ```console
-$ docker pull caddy@sha256:60199fbf2046892e0aa4b19c7d3adf71f530c36abc65728627422148a75b3475
+$ docker pull caddy@sha256:4b192bcff3499aa887e3a0e99cb1773f3502e72389e4bb1699cae4af2938f45e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4688,19 +4688,19 @@ $ docker pull caddy@sha256:60199fbf2046892e0aa4b19c7d3adf71f530c36abc65728627422
 ### `caddy:2.8` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:1603d1801481ca6ab1f7e3438e03ad1713f89f6754c3261d6e49662de4a8b96f
+$ docker pull caddy@sha256:de7100f2dc60d933ba28a915c8d788f3ce89c7baf14c4b9c5a6fd67549bae7a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.6 MB (18625879 bytes)**  
+-	Total Size: **18.6 MB (18627619 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:870ea66f9a9ed220cbd24beefb19b2775b41077da6c87e2f5b66e8dcde113534`
+-	Image ID: `sha256:accd318080c538106641ab06f8383ef9979ad7919004ae6a55bced90f39c35f8`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 22 May 2024 18:18:11 GMT
-ADD file:e3abcdba177145039cfef1ad882f9f81a612a24c9f044b19f713b95454d2e3f6 in / 
-# Wed, 22 May 2024 18:18:12 GMT
+# Tue, 04 Jun 2024 22:12:59 GMT
+ADD file:33ebe56b967747a97dcec01bc2559962bee8823686c9739d26be060381bbb3ca in / 
+# Tue, 04 Jun 2024 22:12:59 GMT
 CMD ["/bin/sh"]
 # Tue, 04 Jun 2024 22:12:59 GMT
 RUN apk add --no-cache 	ca-certificates 	libcap 	mailcap # buildkit
@@ -4745,21 +4745,21 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f`  
-		Last Modified: Wed, 22 May 2024 18:18:35 GMT  
-		Size: 3.6 MB (3622094 bytes)  
+	-	`sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99`  
+		Last Modified: Thu, 20 Jun 2024 20:17:32 GMT  
+		Size: 3.6 MB (3623844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c0c17092266bbaf8de056d9c4315ae5e26b88a49d1bf2e2ed488c826bbc79e4`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 357.4 KB (357355 bytes)  
+	-	`sha256:09ada5eb3540e4dca0204132c9b0c5ea6593e286b86258eb74e181c7fac06ad5`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 357.4 KB (357359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed0d427b3a04b2050455705dcf60163fc468f049f08d83cc85150bc029e805da`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
+	-	`sha256:a7b78b6bd1c817222ea54d7f525925db43e6e215d5f92a0fb5b6e0962cfb1275`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
 		Size: 7.4 KB (7449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ea7e62d09d2d4cc58f1ce097c9404da4dcf0304c435e13cf52e318a17da75bc`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 14.6 MB (14638949 bytes)  
+	-	`sha256:14de6039f1505f64546cf32b38e20eb0d6dfc3ffcf73595f2507d061bfff021f`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 14.6 MB (14638935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -4769,25 +4769,25 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ### `caddy:2.8` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:96bbf115ce7bba6628635a9d0148cb90aabf5a6d18e3dd2472a817dacb6dcc2b
+$ docker pull caddy@sha256:9404ddc071773075e0c61ec7e45538d1e6d0270d0ce1357fd7f8458635ab090d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **281.8 KB (281795 bytes)**  
+-	Total Size: **281.8 KB (281845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eca5eb3a86421c8b21bc2fcb83358d677a6c671a7dea7db46fa05bf98b50d73a`
+-	Image ID: `sha256:51adcda97fe5558b194ecbcf85e9c6ac9c58ffc7b5d88a42a9fdc51d02ba88eb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:223a93663776c65c27839e195b96dc02a1d056bed7b8896d8a1ce2c234c52777`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 263.8 KB (263814 bytes)  
+	-	`sha256:712ae6b6ed31482d27bf508aa484f05932084eb22c6fe0b5f3aaca47b49a1c23`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 263.8 KB (263815 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:14051e501086236b5e20cb1a15da10779e394523513b51d65c4c9427d2f4aa3e`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 18.0 KB (17981 bytes)  
+	-	`sha256:4d4b5ec6e66c9725423e518b3656395df1065475086e7b7f33eb3de35fbb768a`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 18.0 KB (18030 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.8` - linux; arm variant v6
@@ -5721,7 +5721,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ## `caddy:2.8-alpine`
 
 ```console
-$ docker pull caddy@sha256:a48e22edad925dc216fd27aa4f04ec49ebdad9b64c9e5a3f1826d0595ef2993c
+$ docker pull caddy@sha256:e3cf7d27f0b749d5e70967301d8e70d08fc285cb85a0ae1b3ccc66067d2ddf47
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5744,19 +5744,19 @@ $ docker pull caddy@sha256:a48e22edad925dc216fd27aa4f04ec49ebdad9b64c9e5a3f1826d
 ### `caddy:2.8-alpine` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:1603d1801481ca6ab1f7e3438e03ad1713f89f6754c3261d6e49662de4a8b96f
+$ docker pull caddy@sha256:de7100f2dc60d933ba28a915c8d788f3ce89c7baf14c4b9c5a6fd67549bae7a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.6 MB (18625879 bytes)**  
+-	Total Size: **18.6 MB (18627619 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:870ea66f9a9ed220cbd24beefb19b2775b41077da6c87e2f5b66e8dcde113534`
+-	Image ID: `sha256:accd318080c538106641ab06f8383ef9979ad7919004ae6a55bced90f39c35f8`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 22 May 2024 18:18:11 GMT
-ADD file:e3abcdba177145039cfef1ad882f9f81a612a24c9f044b19f713b95454d2e3f6 in / 
-# Wed, 22 May 2024 18:18:12 GMT
+# Tue, 04 Jun 2024 22:12:59 GMT
+ADD file:33ebe56b967747a97dcec01bc2559962bee8823686c9739d26be060381bbb3ca in / 
+# Tue, 04 Jun 2024 22:12:59 GMT
 CMD ["/bin/sh"]
 # Tue, 04 Jun 2024 22:12:59 GMT
 RUN apk add --no-cache 	ca-certificates 	libcap 	mailcap # buildkit
@@ -5801,21 +5801,21 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f`  
-		Last Modified: Wed, 22 May 2024 18:18:35 GMT  
-		Size: 3.6 MB (3622094 bytes)  
+	-	`sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99`  
+		Last Modified: Thu, 20 Jun 2024 20:17:32 GMT  
+		Size: 3.6 MB (3623844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c0c17092266bbaf8de056d9c4315ae5e26b88a49d1bf2e2ed488c826bbc79e4`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 357.4 KB (357355 bytes)  
+	-	`sha256:09ada5eb3540e4dca0204132c9b0c5ea6593e286b86258eb74e181c7fac06ad5`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 357.4 KB (357359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed0d427b3a04b2050455705dcf60163fc468f049f08d83cc85150bc029e805da`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
+	-	`sha256:a7b78b6bd1c817222ea54d7f525925db43e6e215d5f92a0fb5b6e0962cfb1275`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
 		Size: 7.4 KB (7449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ea7e62d09d2d4cc58f1ce097c9404da4dcf0304c435e13cf52e318a17da75bc`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 14.6 MB (14638949 bytes)  
+	-	`sha256:14de6039f1505f64546cf32b38e20eb0d6dfc3ffcf73595f2507d061bfff021f`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 14.6 MB (14638935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -5825,25 +5825,25 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ### `caddy:2.8-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:96bbf115ce7bba6628635a9d0148cb90aabf5a6d18e3dd2472a817dacb6dcc2b
+$ docker pull caddy@sha256:9404ddc071773075e0c61ec7e45538d1e6d0270d0ce1357fd7f8458635ab090d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **281.8 KB (281795 bytes)**  
+-	Total Size: **281.8 KB (281845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eca5eb3a86421c8b21bc2fcb83358d677a6c671a7dea7db46fa05bf98b50d73a`
+-	Image ID: `sha256:51adcda97fe5558b194ecbcf85e9c6ac9c58ffc7b5d88a42a9fdc51d02ba88eb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:223a93663776c65c27839e195b96dc02a1d056bed7b8896d8a1ce2c234c52777`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 263.8 KB (263814 bytes)  
+	-	`sha256:712ae6b6ed31482d27bf508aa484f05932084eb22c6fe0b5f3aaca47b49a1c23`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 263.8 KB (263815 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:14051e501086236b5e20cb1a15da10779e394523513b51d65c4c9427d2f4aa3e`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 18.0 KB (17981 bytes)  
+	-	`sha256:4d4b5ec6e66c9725423e518b3656395df1065475086e7b7f33eb3de35fbb768a`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 18.0 KB (18030 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.8-alpine` - linux; arm variant v6
@@ -6475,7 +6475,7 @@ $ docker pull caddy@sha256:25fc094160e64a8daf572a1ee5c588f8b597290a13fcf04bc2dd2
 ## `caddy:2.8-builder`
 
 ```console
-$ docker pull caddy@sha256:2c0c92e25b366bd8e612302512c99d03dec66eb3be55a3e9b187cab962770119
+$ docker pull caddy@sha256:dcd7aa31f3512617d0a801b1299ac40e677e3b8c13cf27ea05c32406c179f980
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6500,19 +6500,19 @@ $ docker pull caddy@sha256:2c0c92e25b366bd8e612302512c99d03dec66eb3be55a3e9b187c
 ### `caddy:2.8-builder` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:ccd3c6061c374d09d8bc1dc80d04a50c88009cc548ca6a585c753d5975806526
+$ docker pull caddy@sha256:877814c5abb44c85c2615cc705f8011e8188aa6a211da55986a6d038e23834b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.7 MB (80670786 bytes)**  
+-	Total Size: **80.7 MB (80672576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1314448ea5d0fe75f1bfd52dd204a6f56fd978feba1b2cd44715340824a122db`
+-	Image ID: `sha256:0fce6536f855029143fa4374ced1ec74a5f9d851de7eb2ac6ef0c40b64a2c0e0`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 22 May 2024 18:18:11 GMT
-ADD file:e3abcdba177145039cfef1ad882f9f81a612a24c9f044b19f713b95454d2e3f6 in / 
-# Wed, 22 May 2024 18:18:12 GMT
+# Tue, 04 Jun 2024 22:12:59 GMT
+ADD file:33ebe56b967747a97dcec01bc2559962bee8823686c9739d26be060381bbb3ca in / 
+# Tue, 04 Jun 2024 22:12:59 GMT
 CMD ["/bin/sh"]
 # Tue, 04 Jun 2024 22:12:59 GMT
 RUN apk add --no-cache ca-certificates # buildkit
@@ -6549,37 +6549,37 @@ WORKDIR /usr/bin
 ```
 
 -	Layers:
-	-	`sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f`  
-		Last Modified: Wed, 22 May 2024 18:18:35 GMT  
-		Size: 3.6 MB (3622094 bytes)  
+	-	`sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99`  
+		Last Modified: Thu, 20 Jun 2024 20:17:32 GMT  
+		Size: 3.6 MB (3623844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b732c871fea20cea9c9afe0ee6c127852025cd9f1119819121110f1838b304c`  
-		Last Modified: Fri, 14 Jun 2024 17:54:03 GMT  
-		Size: 292.4 KB (292416 bytes)  
+	-	`sha256:7728242c92e74edf5cfd2c7e300edc2756a81630e514f71f9330869e86280f0e`  
+		Last Modified: Thu, 20 Jun 2024 20:54:50 GMT  
+		Size: 292.4 KB (292423 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:060aaf7efd0676cdf56165fe26e63a047d7f3c483ab1043d530db9370e6c28e7`  
 		Last Modified: Fri, 14 Jun 2024 17:54:07 GMT  
 		Size: 69.3 MB (69345548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d1964877d6860798d7794738b2706190a440706bbffacdaea35594d1ddac0fc`  
-		Last Modified: Fri, 14 Jun 2024 17:54:03 GMT  
-		Size: 124.0 B  
+	-	`sha256:99f8e900f733a3e177aeba423378acb3315424c72b4d86836a7e71a7a1a4393a`  
+		Last Modified: Thu, 20 Jun 2024 20:54:50 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0246a9aa2a3b6406af961f68fc8cea4ae29580b9b554b907990039d5a4e094a`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 5.9 MB (5909464 bytes)  
+	-	`sha256:c54d6740a81ffc96171c19312eb197fdaf263a027a55b507e9f71f2896879936`  
+		Last Modified: Thu, 20 Jun 2024 21:55:40 GMT  
+		Size: 5.9 MB (5909488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69158900a3d2ea6aad90ccca00264c54a2217466093f2df0aa595846cb00c736`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 1.5 MB (1500674 bytes)  
+	-	`sha256:29e77eacc660a838d65f8fcf5a51e1da2bbf2416e82461d872302d4bf8ce27f1`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
+		Size: 1.5 MB (1500680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a8112a39240e6c91831ea07faac29f766e4319493bbdc44041c42744a613dd`  
-		Last Modified: Fri, 14 Jun 2024 18:54:46 GMT  
-		Size: 402.0 B  
+	-	`sha256:030fdae9f84a086a8da29d14de6701ee550a57a3a60b6b9fa5ca2ce2415c862c`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
+		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -6589,24 +6589,24 @@ WORKDIR /usr/bin
 ### `caddy:2.8-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:cf70b5811e444fc608f30988a55a4ef79328cd3653e33fdd3da6b744999985ce
+$ docker pull caddy@sha256:0d32d244df1051d7a2add823911963fbbea810229195d72523c5d0657c2b1ed3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.5 KB (296526 bytes)**  
+-	Total Size: **296.5 KB (296527 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80b2258a12eea2b1d9925266bfd3c830fa0e49bfa707e4d25b77714decb963ad`
+-	Image ID: `sha256:6f078a0c725ab67ebc090568ca92af33423025bc05b9d27afadc86a6cfd48a51`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9ebf3aa6c038092a6e062cb5d5235a12e4caf03d6fed225fcd34e75157af8d14`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 276.5 KB (276457 bytes)  
+	-	`sha256:5fb8d35f8f2cfc19e0d28ae3e075165e8ae7f8b7b60ad7193daeeb2419c039ef`  
+		Last Modified: Thu, 20 Jun 2024 21:55:40 GMT  
+		Size: 276.5 KB (276458 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5a9572add926bd37f873cd2e92e205e9b7e1edeff975c30d08a40d67d4186fef`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
+	-	`sha256:bc6868f02b356d04d4a04c2f74b5f77f24a81474cdc0a656e7da4de1c0bae771`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
 		Size: 20.1 KB (20069 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7553,7 +7553,7 @@ WORKDIR C:\
 ## `caddy:2.8-builder-alpine`
 
 ```console
-$ docker pull caddy@sha256:ae1e0367c86a6adaf620ce70ad4a6b04b04c2f27f5d1ae3e75c17ce53591ff69
+$ docker pull caddy@sha256:9ac8f41aed823996bfe1253d43b9723fddf952f31c4d9022fe57ef0ded3e24f6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7576,19 +7576,19 @@ $ docker pull caddy@sha256:ae1e0367c86a6adaf620ce70ad4a6b04b04c2f27f5d1ae3e75c17
 ### `caddy:2.8-builder-alpine` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:ccd3c6061c374d09d8bc1dc80d04a50c88009cc548ca6a585c753d5975806526
+$ docker pull caddy@sha256:877814c5abb44c85c2615cc705f8011e8188aa6a211da55986a6d038e23834b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.7 MB (80670786 bytes)**  
+-	Total Size: **80.7 MB (80672576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1314448ea5d0fe75f1bfd52dd204a6f56fd978feba1b2cd44715340824a122db`
+-	Image ID: `sha256:0fce6536f855029143fa4374ced1ec74a5f9d851de7eb2ac6ef0c40b64a2c0e0`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 22 May 2024 18:18:11 GMT
-ADD file:e3abcdba177145039cfef1ad882f9f81a612a24c9f044b19f713b95454d2e3f6 in / 
-# Wed, 22 May 2024 18:18:12 GMT
+# Tue, 04 Jun 2024 22:12:59 GMT
+ADD file:33ebe56b967747a97dcec01bc2559962bee8823686c9739d26be060381bbb3ca in / 
+# Tue, 04 Jun 2024 22:12:59 GMT
 CMD ["/bin/sh"]
 # Tue, 04 Jun 2024 22:12:59 GMT
 RUN apk add --no-cache ca-certificates # buildkit
@@ -7625,37 +7625,37 @@ WORKDIR /usr/bin
 ```
 
 -	Layers:
-	-	`sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f`  
-		Last Modified: Wed, 22 May 2024 18:18:35 GMT  
-		Size: 3.6 MB (3622094 bytes)  
+	-	`sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99`  
+		Last Modified: Thu, 20 Jun 2024 20:17:32 GMT  
+		Size: 3.6 MB (3623844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b732c871fea20cea9c9afe0ee6c127852025cd9f1119819121110f1838b304c`  
-		Last Modified: Fri, 14 Jun 2024 17:54:03 GMT  
-		Size: 292.4 KB (292416 bytes)  
+	-	`sha256:7728242c92e74edf5cfd2c7e300edc2756a81630e514f71f9330869e86280f0e`  
+		Last Modified: Thu, 20 Jun 2024 20:54:50 GMT  
+		Size: 292.4 KB (292423 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:060aaf7efd0676cdf56165fe26e63a047d7f3c483ab1043d530db9370e6c28e7`  
 		Last Modified: Fri, 14 Jun 2024 17:54:07 GMT  
 		Size: 69.3 MB (69345548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d1964877d6860798d7794738b2706190a440706bbffacdaea35594d1ddac0fc`  
-		Last Modified: Fri, 14 Jun 2024 17:54:03 GMT  
-		Size: 124.0 B  
+	-	`sha256:99f8e900f733a3e177aeba423378acb3315424c72b4d86836a7e71a7a1a4393a`  
+		Last Modified: Thu, 20 Jun 2024 20:54:50 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0246a9aa2a3b6406af961f68fc8cea4ae29580b9b554b907990039d5a4e094a`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 5.9 MB (5909464 bytes)  
+	-	`sha256:c54d6740a81ffc96171c19312eb197fdaf263a027a55b507e9f71f2896879936`  
+		Last Modified: Thu, 20 Jun 2024 21:55:40 GMT  
+		Size: 5.9 MB (5909488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69158900a3d2ea6aad90ccca00264c54a2217466093f2df0aa595846cb00c736`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 1.5 MB (1500674 bytes)  
+	-	`sha256:29e77eacc660a838d65f8fcf5a51e1da2bbf2416e82461d872302d4bf8ce27f1`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
+		Size: 1.5 MB (1500680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a8112a39240e6c91831ea07faac29f766e4319493bbdc44041c42744a613dd`  
-		Last Modified: Fri, 14 Jun 2024 18:54:46 GMT  
-		Size: 402.0 B  
+	-	`sha256:030fdae9f84a086a8da29d14de6701ee550a57a3a60b6b9fa5ca2ce2415c862c`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
+		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -7665,24 +7665,24 @@ WORKDIR /usr/bin
 ### `caddy:2.8-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:cf70b5811e444fc608f30988a55a4ef79328cd3653e33fdd3da6b744999985ce
+$ docker pull caddy@sha256:0d32d244df1051d7a2add823911963fbbea810229195d72523c5d0657c2b1ed3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.5 KB (296526 bytes)**  
+-	Total Size: **296.5 KB (296527 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80b2258a12eea2b1d9925266bfd3c830fa0e49bfa707e4d25b77714decb963ad`
+-	Image ID: `sha256:6f078a0c725ab67ebc090568ca92af33423025bc05b9d27afadc86a6cfd48a51`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9ebf3aa6c038092a6e062cb5d5235a12e4caf03d6fed225fcd34e75157af8d14`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 276.5 KB (276457 bytes)  
+	-	`sha256:5fb8d35f8f2cfc19e0d28ae3e075165e8ae7f8b7b60ad7193daeeb2419c039ef`  
+		Last Modified: Thu, 20 Jun 2024 21:55:40 GMT  
+		Size: 276.5 KB (276458 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5a9572add926bd37f873cd2e92e205e9b7e1edeff975c30d08a40d67d4186fef`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
+	-	`sha256:bc6868f02b356d04d4a04c2f74b5f77f24a81474cdc0a656e7da4de1c0bae771`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
 		Size: 20.1 KB (20069 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9284,7 +9284,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ## `caddy:2.8.4`
 
 ```console
-$ docker pull caddy@sha256:60199fbf2046892e0aa4b19c7d3adf71f530c36abc65728627422148a75b3475
+$ docker pull caddy@sha256:4b192bcff3499aa887e3a0e99cb1773f3502e72389e4bb1699cae4af2938f45e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9309,19 +9309,19 @@ $ docker pull caddy@sha256:60199fbf2046892e0aa4b19c7d3adf71f530c36abc65728627422
 ### `caddy:2.8.4` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:1603d1801481ca6ab1f7e3438e03ad1713f89f6754c3261d6e49662de4a8b96f
+$ docker pull caddy@sha256:de7100f2dc60d933ba28a915c8d788f3ce89c7baf14c4b9c5a6fd67549bae7a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.6 MB (18625879 bytes)**  
+-	Total Size: **18.6 MB (18627619 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:870ea66f9a9ed220cbd24beefb19b2775b41077da6c87e2f5b66e8dcde113534`
+-	Image ID: `sha256:accd318080c538106641ab06f8383ef9979ad7919004ae6a55bced90f39c35f8`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 22 May 2024 18:18:11 GMT
-ADD file:e3abcdba177145039cfef1ad882f9f81a612a24c9f044b19f713b95454d2e3f6 in / 
-# Wed, 22 May 2024 18:18:12 GMT
+# Tue, 04 Jun 2024 22:12:59 GMT
+ADD file:33ebe56b967747a97dcec01bc2559962bee8823686c9739d26be060381bbb3ca in / 
+# Tue, 04 Jun 2024 22:12:59 GMT
 CMD ["/bin/sh"]
 # Tue, 04 Jun 2024 22:12:59 GMT
 RUN apk add --no-cache 	ca-certificates 	libcap 	mailcap # buildkit
@@ -9366,21 +9366,21 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f`  
-		Last Modified: Wed, 22 May 2024 18:18:35 GMT  
-		Size: 3.6 MB (3622094 bytes)  
+	-	`sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99`  
+		Last Modified: Thu, 20 Jun 2024 20:17:32 GMT  
+		Size: 3.6 MB (3623844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c0c17092266bbaf8de056d9c4315ae5e26b88a49d1bf2e2ed488c826bbc79e4`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 357.4 KB (357355 bytes)  
+	-	`sha256:09ada5eb3540e4dca0204132c9b0c5ea6593e286b86258eb74e181c7fac06ad5`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 357.4 KB (357359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed0d427b3a04b2050455705dcf60163fc468f049f08d83cc85150bc029e805da`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
+	-	`sha256:a7b78b6bd1c817222ea54d7f525925db43e6e215d5f92a0fb5b6e0962cfb1275`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
 		Size: 7.4 KB (7449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ea7e62d09d2d4cc58f1ce097c9404da4dcf0304c435e13cf52e318a17da75bc`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 14.6 MB (14638949 bytes)  
+	-	`sha256:14de6039f1505f64546cf32b38e20eb0d6dfc3ffcf73595f2507d061bfff021f`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 14.6 MB (14638935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -9390,25 +9390,25 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ### `caddy:2.8.4` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:96bbf115ce7bba6628635a9d0148cb90aabf5a6d18e3dd2472a817dacb6dcc2b
+$ docker pull caddy@sha256:9404ddc071773075e0c61ec7e45538d1e6d0270d0ce1357fd7f8458635ab090d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **281.8 KB (281795 bytes)**  
+-	Total Size: **281.8 KB (281845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eca5eb3a86421c8b21bc2fcb83358d677a6c671a7dea7db46fa05bf98b50d73a`
+-	Image ID: `sha256:51adcda97fe5558b194ecbcf85e9c6ac9c58ffc7b5d88a42a9fdc51d02ba88eb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:223a93663776c65c27839e195b96dc02a1d056bed7b8896d8a1ce2c234c52777`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 263.8 KB (263814 bytes)  
+	-	`sha256:712ae6b6ed31482d27bf508aa484f05932084eb22c6fe0b5f3aaca47b49a1c23`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 263.8 KB (263815 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:14051e501086236b5e20cb1a15da10779e394523513b51d65c4c9427d2f4aa3e`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 18.0 KB (17981 bytes)  
+	-	`sha256:4d4b5ec6e66c9725423e518b3656395df1065475086e7b7f33eb3de35fbb768a`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 18.0 KB (18030 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.8.4` - linux; arm variant v6
@@ -10342,7 +10342,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ## `caddy:2.8.4-alpine`
 
 ```console
-$ docker pull caddy@sha256:a48e22edad925dc216fd27aa4f04ec49ebdad9b64c9e5a3f1826d0595ef2993c
+$ docker pull caddy@sha256:e3cf7d27f0b749d5e70967301d8e70d08fc285cb85a0ae1b3ccc66067d2ddf47
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10365,19 +10365,19 @@ $ docker pull caddy@sha256:a48e22edad925dc216fd27aa4f04ec49ebdad9b64c9e5a3f1826d
 ### `caddy:2.8.4-alpine` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:1603d1801481ca6ab1f7e3438e03ad1713f89f6754c3261d6e49662de4a8b96f
+$ docker pull caddy@sha256:de7100f2dc60d933ba28a915c8d788f3ce89c7baf14c4b9c5a6fd67549bae7a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.6 MB (18625879 bytes)**  
+-	Total Size: **18.6 MB (18627619 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:870ea66f9a9ed220cbd24beefb19b2775b41077da6c87e2f5b66e8dcde113534`
+-	Image ID: `sha256:accd318080c538106641ab06f8383ef9979ad7919004ae6a55bced90f39c35f8`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 22 May 2024 18:18:11 GMT
-ADD file:e3abcdba177145039cfef1ad882f9f81a612a24c9f044b19f713b95454d2e3f6 in / 
-# Wed, 22 May 2024 18:18:12 GMT
+# Tue, 04 Jun 2024 22:12:59 GMT
+ADD file:33ebe56b967747a97dcec01bc2559962bee8823686c9739d26be060381bbb3ca in / 
+# Tue, 04 Jun 2024 22:12:59 GMT
 CMD ["/bin/sh"]
 # Tue, 04 Jun 2024 22:12:59 GMT
 RUN apk add --no-cache 	ca-certificates 	libcap 	mailcap # buildkit
@@ -10422,21 +10422,21 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f`  
-		Last Modified: Wed, 22 May 2024 18:18:35 GMT  
-		Size: 3.6 MB (3622094 bytes)  
+	-	`sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99`  
+		Last Modified: Thu, 20 Jun 2024 20:17:32 GMT  
+		Size: 3.6 MB (3623844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c0c17092266bbaf8de056d9c4315ae5e26b88a49d1bf2e2ed488c826bbc79e4`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 357.4 KB (357355 bytes)  
+	-	`sha256:09ada5eb3540e4dca0204132c9b0c5ea6593e286b86258eb74e181c7fac06ad5`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 357.4 KB (357359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed0d427b3a04b2050455705dcf60163fc468f049f08d83cc85150bc029e805da`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
+	-	`sha256:a7b78b6bd1c817222ea54d7f525925db43e6e215d5f92a0fb5b6e0962cfb1275`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
 		Size: 7.4 KB (7449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ea7e62d09d2d4cc58f1ce097c9404da4dcf0304c435e13cf52e318a17da75bc`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 14.6 MB (14638949 bytes)  
+	-	`sha256:14de6039f1505f64546cf32b38e20eb0d6dfc3ffcf73595f2507d061bfff021f`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 14.6 MB (14638935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -10446,25 +10446,25 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ### `caddy:2.8.4-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:96bbf115ce7bba6628635a9d0148cb90aabf5a6d18e3dd2472a817dacb6dcc2b
+$ docker pull caddy@sha256:9404ddc071773075e0c61ec7e45538d1e6d0270d0ce1357fd7f8458635ab090d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **281.8 KB (281795 bytes)**  
+-	Total Size: **281.8 KB (281845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eca5eb3a86421c8b21bc2fcb83358d677a6c671a7dea7db46fa05bf98b50d73a`
+-	Image ID: `sha256:51adcda97fe5558b194ecbcf85e9c6ac9c58ffc7b5d88a42a9fdc51d02ba88eb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:223a93663776c65c27839e195b96dc02a1d056bed7b8896d8a1ce2c234c52777`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 263.8 KB (263814 bytes)  
+	-	`sha256:712ae6b6ed31482d27bf508aa484f05932084eb22c6fe0b5f3aaca47b49a1c23`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 263.8 KB (263815 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:14051e501086236b5e20cb1a15da10779e394523513b51d65c4c9427d2f4aa3e`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 18.0 KB (17981 bytes)  
+	-	`sha256:4d4b5ec6e66c9725423e518b3656395df1065475086e7b7f33eb3de35fbb768a`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 18.0 KB (18030 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.8.4-alpine` - linux; arm variant v6
@@ -11096,7 +11096,7 @@ $ docker pull caddy@sha256:25fc094160e64a8daf572a1ee5c588f8b597290a13fcf04bc2dd2
 ## `caddy:2.8.4-builder`
 
 ```console
-$ docker pull caddy@sha256:2c0c92e25b366bd8e612302512c99d03dec66eb3be55a3e9b187cab962770119
+$ docker pull caddy@sha256:dcd7aa31f3512617d0a801b1299ac40e677e3b8c13cf27ea05c32406c179f980
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11121,19 +11121,19 @@ $ docker pull caddy@sha256:2c0c92e25b366bd8e612302512c99d03dec66eb3be55a3e9b187c
 ### `caddy:2.8.4-builder` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:ccd3c6061c374d09d8bc1dc80d04a50c88009cc548ca6a585c753d5975806526
+$ docker pull caddy@sha256:877814c5abb44c85c2615cc705f8011e8188aa6a211da55986a6d038e23834b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.7 MB (80670786 bytes)**  
+-	Total Size: **80.7 MB (80672576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1314448ea5d0fe75f1bfd52dd204a6f56fd978feba1b2cd44715340824a122db`
+-	Image ID: `sha256:0fce6536f855029143fa4374ced1ec74a5f9d851de7eb2ac6ef0c40b64a2c0e0`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 22 May 2024 18:18:11 GMT
-ADD file:e3abcdba177145039cfef1ad882f9f81a612a24c9f044b19f713b95454d2e3f6 in / 
-# Wed, 22 May 2024 18:18:12 GMT
+# Tue, 04 Jun 2024 22:12:59 GMT
+ADD file:33ebe56b967747a97dcec01bc2559962bee8823686c9739d26be060381bbb3ca in / 
+# Tue, 04 Jun 2024 22:12:59 GMT
 CMD ["/bin/sh"]
 # Tue, 04 Jun 2024 22:12:59 GMT
 RUN apk add --no-cache ca-certificates # buildkit
@@ -11170,37 +11170,37 @@ WORKDIR /usr/bin
 ```
 
 -	Layers:
-	-	`sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f`  
-		Last Modified: Wed, 22 May 2024 18:18:35 GMT  
-		Size: 3.6 MB (3622094 bytes)  
+	-	`sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99`  
+		Last Modified: Thu, 20 Jun 2024 20:17:32 GMT  
+		Size: 3.6 MB (3623844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b732c871fea20cea9c9afe0ee6c127852025cd9f1119819121110f1838b304c`  
-		Last Modified: Fri, 14 Jun 2024 17:54:03 GMT  
-		Size: 292.4 KB (292416 bytes)  
+	-	`sha256:7728242c92e74edf5cfd2c7e300edc2756a81630e514f71f9330869e86280f0e`  
+		Last Modified: Thu, 20 Jun 2024 20:54:50 GMT  
+		Size: 292.4 KB (292423 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:060aaf7efd0676cdf56165fe26e63a047d7f3c483ab1043d530db9370e6c28e7`  
 		Last Modified: Fri, 14 Jun 2024 17:54:07 GMT  
 		Size: 69.3 MB (69345548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d1964877d6860798d7794738b2706190a440706bbffacdaea35594d1ddac0fc`  
-		Last Modified: Fri, 14 Jun 2024 17:54:03 GMT  
-		Size: 124.0 B  
+	-	`sha256:99f8e900f733a3e177aeba423378acb3315424c72b4d86836a7e71a7a1a4393a`  
+		Last Modified: Thu, 20 Jun 2024 20:54:50 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0246a9aa2a3b6406af961f68fc8cea4ae29580b9b554b907990039d5a4e094a`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 5.9 MB (5909464 bytes)  
+	-	`sha256:c54d6740a81ffc96171c19312eb197fdaf263a027a55b507e9f71f2896879936`  
+		Last Modified: Thu, 20 Jun 2024 21:55:40 GMT  
+		Size: 5.9 MB (5909488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69158900a3d2ea6aad90ccca00264c54a2217466093f2df0aa595846cb00c736`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 1.5 MB (1500674 bytes)  
+	-	`sha256:29e77eacc660a838d65f8fcf5a51e1da2bbf2416e82461d872302d4bf8ce27f1`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
+		Size: 1.5 MB (1500680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a8112a39240e6c91831ea07faac29f766e4319493bbdc44041c42744a613dd`  
-		Last Modified: Fri, 14 Jun 2024 18:54:46 GMT  
-		Size: 402.0 B  
+	-	`sha256:030fdae9f84a086a8da29d14de6701ee550a57a3a60b6b9fa5ca2ce2415c862c`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
+		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -11210,24 +11210,24 @@ WORKDIR /usr/bin
 ### `caddy:2.8.4-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:cf70b5811e444fc608f30988a55a4ef79328cd3653e33fdd3da6b744999985ce
+$ docker pull caddy@sha256:0d32d244df1051d7a2add823911963fbbea810229195d72523c5d0657c2b1ed3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.5 KB (296526 bytes)**  
+-	Total Size: **296.5 KB (296527 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80b2258a12eea2b1d9925266bfd3c830fa0e49bfa707e4d25b77714decb963ad`
+-	Image ID: `sha256:6f078a0c725ab67ebc090568ca92af33423025bc05b9d27afadc86a6cfd48a51`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9ebf3aa6c038092a6e062cb5d5235a12e4caf03d6fed225fcd34e75157af8d14`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 276.5 KB (276457 bytes)  
+	-	`sha256:5fb8d35f8f2cfc19e0d28ae3e075165e8ae7f8b7b60ad7193daeeb2419c039ef`  
+		Last Modified: Thu, 20 Jun 2024 21:55:40 GMT  
+		Size: 276.5 KB (276458 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5a9572add926bd37f873cd2e92e205e9b7e1edeff975c30d08a40d67d4186fef`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
+	-	`sha256:bc6868f02b356d04d4a04c2f74b5f77f24a81474cdc0a656e7da4de1c0bae771`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
 		Size: 20.1 KB (20069 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12174,7 +12174,7 @@ WORKDIR C:\
 ## `caddy:2.8.4-builder-alpine`
 
 ```console
-$ docker pull caddy@sha256:ae1e0367c86a6adaf620ce70ad4a6b04b04c2f27f5d1ae3e75c17ce53591ff69
+$ docker pull caddy@sha256:9ac8f41aed823996bfe1253d43b9723fddf952f31c4d9022fe57ef0ded3e24f6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12197,19 +12197,19 @@ $ docker pull caddy@sha256:ae1e0367c86a6adaf620ce70ad4a6b04b04c2f27f5d1ae3e75c17
 ### `caddy:2.8.4-builder-alpine` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:ccd3c6061c374d09d8bc1dc80d04a50c88009cc548ca6a585c753d5975806526
+$ docker pull caddy@sha256:877814c5abb44c85c2615cc705f8011e8188aa6a211da55986a6d038e23834b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.7 MB (80670786 bytes)**  
+-	Total Size: **80.7 MB (80672576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1314448ea5d0fe75f1bfd52dd204a6f56fd978feba1b2cd44715340824a122db`
+-	Image ID: `sha256:0fce6536f855029143fa4374ced1ec74a5f9d851de7eb2ac6ef0c40b64a2c0e0`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 22 May 2024 18:18:11 GMT
-ADD file:e3abcdba177145039cfef1ad882f9f81a612a24c9f044b19f713b95454d2e3f6 in / 
-# Wed, 22 May 2024 18:18:12 GMT
+# Tue, 04 Jun 2024 22:12:59 GMT
+ADD file:33ebe56b967747a97dcec01bc2559962bee8823686c9739d26be060381bbb3ca in / 
+# Tue, 04 Jun 2024 22:12:59 GMT
 CMD ["/bin/sh"]
 # Tue, 04 Jun 2024 22:12:59 GMT
 RUN apk add --no-cache ca-certificates # buildkit
@@ -12246,37 +12246,37 @@ WORKDIR /usr/bin
 ```
 
 -	Layers:
-	-	`sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f`  
-		Last Modified: Wed, 22 May 2024 18:18:35 GMT  
-		Size: 3.6 MB (3622094 bytes)  
+	-	`sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99`  
+		Last Modified: Thu, 20 Jun 2024 20:17:32 GMT  
+		Size: 3.6 MB (3623844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b732c871fea20cea9c9afe0ee6c127852025cd9f1119819121110f1838b304c`  
-		Last Modified: Fri, 14 Jun 2024 17:54:03 GMT  
-		Size: 292.4 KB (292416 bytes)  
+	-	`sha256:7728242c92e74edf5cfd2c7e300edc2756a81630e514f71f9330869e86280f0e`  
+		Last Modified: Thu, 20 Jun 2024 20:54:50 GMT  
+		Size: 292.4 KB (292423 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:060aaf7efd0676cdf56165fe26e63a047d7f3c483ab1043d530db9370e6c28e7`  
 		Last Modified: Fri, 14 Jun 2024 17:54:07 GMT  
 		Size: 69.3 MB (69345548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d1964877d6860798d7794738b2706190a440706bbffacdaea35594d1ddac0fc`  
-		Last Modified: Fri, 14 Jun 2024 17:54:03 GMT  
-		Size: 124.0 B  
+	-	`sha256:99f8e900f733a3e177aeba423378acb3315424c72b4d86836a7e71a7a1a4393a`  
+		Last Modified: Thu, 20 Jun 2024 20:54:50 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0246a9aa2a3b6406af961f68fc8cea4ae29580b9b554b907990039d5a4e094a`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 5.9 MB (5909464 bytes)  
+	-	`sha256:c54d6740a81ffc96171c19312eb197fdaf263a027a55b507e9f71f2896879936`  
+		Last Modified: Thu, 20 Jun 2024 21:55:40 GMT  
+		Size: 5.9 MB (5909488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69158900a3d2ea6aad90ccca00264c54a2217466093f2df0aa595846cb00c736`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 1.5 MB (1500674 bytes)  
+	-	`sha256:29e77eacc660a838d65f8fcf5a51e1da2bbf2416e82461d872302d4bf8ce27f1`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
+		Size: 1.5 MB (1500680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a8112a39240e6c91831ea07faac29f766e4319493bbdc44041c42744a613dd`  
-		Last Modified: Fri, 14 Jun 2024 18:54:46 GMT  
-		Size: 402.0 B  
+	-	`sha256:030fdae9f84a086a8da29d14de6701ee550a57a3a60b6b9fa5ca2ce2415c862c`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
+		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -12286,24 +12286,24 @@ WORKDIR /usr/bin
 ### `caddy:2.8.4-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:cf70b5811e444fc608f30988a55a4ef79328cd3653e33fdd3da6b744999985ce
+$ docker pull caddy@sha256:0d32d244df1051d7a2add823911963fbbea810229195d72523c5d0657c2b1ed3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.5 KB (296526 bytes)**  
+-	Total Size: **296.5 KB (296527 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80b2258a12eea2b1d9925266bfd3c830fa0e49bfa707e4d25b77714decb963ad`
+-	Image ID: `sha256:6f078a0c725ab67ebc090568ca92af33423025bc05b9d27afadc86a6cfd48a51`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9ebf3aa6c038092a6e062cb5d5235a12e4caf03d6fed225fcd34e75157af8d14`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 276.5 KB (276457 bytes)  
+	-	`sha256:5fb8d35f8f2cfc19e0d28ae3e075165e8ae7f8b7b60ad7193daeeb2419c039ef`  
+		Last Modified: Thu, 20 Jun 2024 21:55:40 GMT  
+		Size: 276.5 KB (276458 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5a9572add926bd37f873cd2e92e205e9b7e1edeff975c30d08a40d67d4186fef`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
+	-	`sha256:bc6868f02b356d04d4a04c2f74b5f77f24a81474cdc0a656e7da4de1c0bae771`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
 		Size: 20.1 KB (20069 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13905,7 +13905,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ## `caddy:alpine`
 
 ```console
-$ docker pull caddy@sha256:a48e22edad925dc216fd27aa4f04ec49ebdad9b64c9e5a3f1826d0595ef2993c
+$ docker pull caddy@sha256:e3cf7d27f0b749d5e70967301d8e70d08fc285cb85a0ae1b3ccc66067d2ddf47
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13928,19 +13928,19 @@ $ docker pull caddy@sha256:a48e22edad925dc216fd27aa4f04ec49ebdad9b64c9e5a3f1826d
 ### `caddy:alpine` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:1603d1801481ca6ab1f7e3438e03ad1713f89f6754c3261d6e49662de4a8b96f
+$ docker pull caddy@sha256:de7100f2dc60d933ba28a915c8d788f3ce89c7baf14c4b9c5a6fd67549bae7a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.6 MB (18625879 bytes)**  
+-	Total Size: **18.6 MB (18627619 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:870ea66f9a9ed220cbd24beefb19b2775b41077da6c87e2f5b66e8dcde113534`
+-	Image ID: `sha256:accd318080c538106641ab06f8383ef9979ad7919004ae6a55bced90f39c35f8`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 22 May 2024 18:18:11 GMT
-ADD file:e3abcdba177145039cfef1ad882f9f81a612a24c9f044b19f713b95454d2e3f6 in / 
-# Wed, 22 May 2024 18:18:12 GMT
+# Tue, 04 Jun 2024 22:12:59 GMT
+ADD file:33ebe56b967747a97dcec01bc2559962bee8823686c9739d26be060381bbb3ca in / 
+# Tue, 04 Jun 2024 22:12:59 GMT
 CMD ["/bin/sh"]
 # Tue, 04 Jun 2024 22:12:59 GMT
 RUN apk add --no-cache 	ca-certificates 	libcap 	mailcap # buildkit
@@ -13985,21 +13985,21 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f`  
-		Last Modified: Wed, 22 May 2024 18:18:35 GMT  
-		Size: 3.6 MB (3622094 bytes)  
+	-	`sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99`  
+		Last Modified: Thu, 20 Jun 2024 20:17:32 GMT  
+		Size: 3.6 MB (3623844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c0c17092266bbaf8de056d9c4315ae5e26b88a49d1bf2e2ed488c826bbc79e4`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 357.4 KB (357355 bytes)  
+	-	`sha256:09ada5eb3540e4dca0204132c9b0c5ea6593e286b86258eb74e181c7fac06ad5`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 357.4 KB (357359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed0d427b3a04b2050455705dcf60163fc468f049f08d83cc85150bc029e805da`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
+	-	`sha256:a7b78b6bd1c817222ea54d7f525925db43e6e215d5f92a0fb5b6e0962cfb1275`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
 		Size: 7.4 KB (7449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ea7e62d09d2d4cc58f1ce097c9404da4dcf0304c435e13cf52e318a17da75bc`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 14.6 MB (14638949 bytes)  
+	-	`sha256:14de6039f1505f64546cf32b38e20eb0d6dfc3ffcf73595f2507d061bfff021f`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 14.6 MB (14638935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -14009,25 +14009,25 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ### `caddy:alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:96bbf115ce7bba6628635a9d0148cb90aabf5a6d18e3dd2472a817dacb6dcc2b
+$ docker pull caddy@sha256:9404ddc071773075e0c61ec7e45538d1e6d0270d0ce1357fd7f8458635ab090d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **281.8 KB (281795 bytes)**  
+-	Total Size: **281.8 KB (281845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eca5eb3a86421c8b21bc2fcb83358d677a6c671a7dea7db46fa05bf98b50d73a`
+-	Image ID: `sha256:51adcda97fe5558b194ecbcf85e9c6ac9c58ffc7b5d88a42a9fdc51d02ba88eb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:223a93663776c65c27839e195b96dc02a1d056bed7b8896d8a1ce2c234c52777`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 263.8 KB (263814 bytes)  
+	-	`sha256:712ae6b6ed31482d27bf508aa484f05932084eb22c6fe0b5f3aaca47b49a1c23`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 263.8 KB (263815 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:14051e501086236b5e20cb1a15da10779e394523513b51d65c4c9427d2f4aa3e`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 18.0 KB (17981 bytes)  
+	-	`sha256:4d4b5ec6e66c9725423e518b3656395df1065475086e7b7f33eb3de35fbb768a`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 18.0 KB (18030 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:alpine` - linux; arm variant v6
@@ -14659,7 +14659,7 @@ $ docker pull caddy@sha256:25fc094160e64a8daf572a1ee5c588f8b597290a13fcf04bc2dd2
 ## `caddy:builder`
 
 ```console
-$ docker pull caddy@sha256:2c0c92e25b366bd8e612302512c99d03dec66eb3be55a3e9b187cab962770119
+$ docker pull caddy@sha256:dcd7aa31f3512617d0a801b1299ac40e677e3b8c13cf27ea05c32406c179f980
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14684,19 +14684,19 @@ $ docker pull caddy@sha256:2c0c92e25b366bd8e612302512c99d03dec66eb3be55a3e9b187c
 ### `caddy:builder` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:ccd3c6061c374d09d8bc1dc80d04a50c88009cc548ca6a585c753d5975806526
+$ docker pull caddy@sha256:877814c5abb44c85c2615cc705f8011e8188aa6a211da55986a6d038e23834b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.7 MB (80670786 bytes)**  
+-	Total Size: **80.7 MB (80672576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1314448ea5d0fe75f1bfd52dd204a6f56fd978feba1b2cd44715340824a122db`
+-	Image ID: `sha256:0fce6536f855029143fa4374ced1ec74a5f9d851de7eb2ac6ef0c40b64a2c0e0`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 22 May 2024 18:18:11 GMT
-ADD file:e3abcdba177145039cfef1ad882f9f81a612a24c9f044b19f713b95454d2e3f6 in / 
-# Wed, 22 May 2024 18:18:12 GMT
+# Tue, 04 Jun 2024 22:12:59 GMT
+ADD file:33ebe56b967747a97dcec01bc2559962bee8823686c9739d26be060381bbb3ca in / 
+# Tue, 04 Jun 2024 22:12:59 GMT
 CMD ["/bin/sh"]
 # Tue, 04 Jun 2024 22:12:59 GMT
 RUN apk add --no-cache ca-certificates # buildkit
@@ -14733,37 +14733,37 @@ WORKDIR /usr/bin
 ```
 
 -	Layers:
-	-	`sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f`  
-		Last Modified: Wed, 22 May 2024 18:18:35 GMT  
-		Size: 3.6 MB (3622094 bytes)  
+	-	`sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99`  
+		Last Modified: Thu, 20 Jun 2024 20:17:32 GMT  
+		Size: 3.6 MB (3623844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b732c871fea20cea9c9afe0ee6c127852025cd9f1119819121110f1838b304c`  
-		Last Modified: Fri, 14 Jun 2024 17:54:03 GMT  
-		Size: 292.4 KB (292416 bytes)  
+	-	`sha256:7728242c92e74edf5cfd2c7e300edc2756a81630e514f71f9330869e86280f0e`  
+		Last Modified: Thu, 20 Jun 2024 20:54:50 GMT  
+		Size: 292.4 KB (292423 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:060aaf7efd0676cdf56165fe26e63a047d7f3c483ab1043d530db9370e6c28e7`  
 		Last Modified: Fri, 14 Jun 2024 17:54:07 GMT  
 		Size: 69.3 MB (69345548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d1964877d6860798d7794738b2706190a440706bbffacdaea35594d1ddac0fc`  
-		Last Modified: Fri, 14 Jun 2024 17:54:03 GMT  
-		Size: 124.0 B  
+	-	`sha256:99f8e900f733a3e177aeba423378acb3315424c72b4d86836a7e71a7a1a4393a`  
+		Last Modified: Thu, 20 Jun 2024 20:54:50 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0246a9aa2a3b6406af961f68fc8cea4ae29580b9b554b907990039d5a4e094a`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 5.9 MB (5909464 bytes)  
+	-	`sha256:c54d6740a81ffc96171c19312eb197fdaf263a027a55b507e9f71f2896879936`  
+		Last Modified: Thu, 20 Jun 2024 21:55:40 GMT  
+		Size: 5.9 MB (5909488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69158900a3d2ea6aad90ccca00264c54a2217466093f2df0aa595846cb00c736`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 1.5 MB (1500674 bytes)  
+	-	`sha256:29e77eacc660a838d65f8fcf5a51e1da2bbf2416e82461d872302d4bf8ce27f1`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
+		Size: 1.5 MB (1500680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a8112a39240e6c91831ea07faac29f766e4319493bbdc44041c42744a613dd`  
-		Last Modified: Fri, 14 Jun 2024 18:54:46 GMT  
-		Size: 402.0 B  
+	-	`sha256:030fdae9f84a086a8da29d14de6701ee550a57a3a60b6b9fa5ca2ce2415c862c`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
+		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -14773,24 +14773,24 @@ WORKDIR /usr/bin
 ### `caddy:builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:cf70b5811e444fc608f30988a55a4ef79328cd3653e33fdd3da6b744999985ce
+$ docker pull caddy@sha256:0d32d244df1051d7a2add823911963fbbea810229195d72523c5d0657c2b1ed3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.5 KB (296526 bytes)**  
+-	Total Size: **296.5 KB (296527 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80b2258a12eea2b1d9925266bfd3c830fa0e49bfa707e4d25b77714decb963ad`
+-	Image ID: `sha256:6f078a0c725ab67ebc090568ca92af33423025bc05b9d27afadc86a6cfd48a51`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9ebf3aa6c038092a6e062cb5d5235a12e4caf03d6fed225fcd34e75157af8d14`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 276.5 KB (276457 bytes)  
+	-	`sha256:5fb8d35f8f2cfc19e0d28ae3e075165e8ae7f8b7b60ad7193daeeb2419c039ef`  
+		Last Modified: Thu, 20 Jun 2024 21:55:40 GMT  
+		Size: 276.5 KB (276458 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5a9572add926bd37f873cd2e92e205e9b7e1edeff975c30d08a40d67d4186fef`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
+	-	`sha256:bc6868f02b356d04d4a04c2f74b5f77f24a81474cdc0a656e7da4de1c0bae771`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
 		Size: 20.1 KB (20069 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15737,7 +15737,7 @@ WORKDIR C:\
 ## `caddy:builder-alpine`
 
 ```console
-$ docker pull caddy@sha256:ae1e0367c86a6adaf620ce70ad4a6b04b04c2f27f5d1ae3e75c17ce53591ff69
+$ docker pull caddy@sha256:9ac8f41aed823996bfe1253d43b9723fddf952f31c4d9022fe57ef0ded3e24f6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15760,19 +15760,19 @@ $ docker pull caddy@sha256:ae1e0367c86a6adaf620ce70ad4a6b04b04c2f27f5d1ae3e75c17
 ### `caddy:builder-alpine` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:ccd3c6061c374d09d8bc1dc80d04a50c88009cc548ca6a585c753d5975806526
+$ docker pull caddy@sha256:877814c5abb44c85c2615cc705f8011e8188aa6a211da55986a6d038e23834b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.7 MB (80670786 bytes)**  
+-	Total Size: **80.7 MB (80672576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1314448ea5d0fe75f1bfd52dd204a6f56fd978feba1b2cd44715340824a122db`
+-	Image ID: `sha256:0fce6536f855029143fa4374ced1ec74a5f9d851de7eb2ac6ef0c40b64a2c0e0`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 22 May 2024 18:18:11 GMT
-ADD file:e3abcdba177145039cfef1ad882f9f81a612a24c9f044b19f713b95454d2e3f6 in / 
-# Wed, 22 May 2024 18:18:12 GMT
+# Tue, 04 Jun 2024 22:12:59 GMT
+ADD file:33ebe56b967747a97dcec01bc2559962bee8823686c9739d26be060381bbb3ca in / 
+# Tue, 04 Jun 2024 22:12:59 GMT
 CMD ["/bin/sh"]
 # Tue, 04 Jun 2024 22:12:59 GMT
 RUN apk add --no-cache ca-certificates # buildkit
@@ -15809,37 +15809,37 @@ WORKDIR /usr/bin
 ```
 
 -	Layers:
-	-	`sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f`  
-		Last Modified: Wed, 22 May 2024 18:18:35 GMT  
-		Size: 3.6 MB (3622094 bytes)  
+	-	`sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99`  
+		Last Modified: Thu, 20 Jun 2024 20:17:32 GMT  
+		Size: 3.6 MB (3623844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b732c871fea20cea9c9afe0ee6c127852025cd9f1119819121110f1838b304c`  
-		Last Modified: Fri, 14 Jun 2024 17:54:03 GMT  
-		Size: 292.4 KB (292416 bytes)  
+	-	`sha256:7728242c92e74edf5cfd2c7e300edc2756a81630e514f71f9330869e86280f0e`  
+		Last Modified: Thu, 20 Jun 2024 20:54:50 GMT  
+		Size: 292.4 KB (292423 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:060aaf7efd0676cdf56165fe26e63a047d7f3c483ab1043d530db9370e6c28e7`  
 		Last Modified: Fri, 14 Jun 2024 17:54:07 GMT  
 		Size: 69.3 MB (69345548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d1964877d6860798d7794738b2706190a440706bbffacdaea35594d1ddac0fc`  
-		Last Modified: Fri, 14 Jun 2024 17:54:03 GMT  
-		Size: 124.0 B  
+	-	`sha256:99f8e900f733a3e177aeba423378acb3315424c72b4d86836a7e71a7a1a4393a`  
+		Last Modified: Thu, 20 Jun 2024 20:54:50 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0246a9aa2a3b6406af961f68fc8cea4ae29580b9b554b907990039d5a4e094a`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 5.9 MB (5909464 bytes)  
+	-	`sha256:c54d6740a81ffc96171c19312eb197fdaf263a027a55b507e9f71f2896879936`  
+		Last Modified: Thu, 20 Jun 2024 21:55:40 GMT  
+		Size: 5.9 MB (5909488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69158900a3d2ea6aad90ccca00264c54a2217466093f2df0aa595846cb00c736`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 1.5 MB (1500674 bytes)  
+	-	`sha256:29e77eacc660a838d65f8fcf5a51e1da2bbf2416e82461d872302d4bf8ce27f1`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
+		Size: 1.5 MB (1500680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a8112a39240e6c91831ea07faac29f766e4319493bbdc44041c42744a613dd`  
-		Last Modified: Fri, 14 Jun 2024 18:54:46 GMT  
-		Size: 402.0 B  
+	-	`sha256:030fdae9f84a086a8da29d14de6701ee550a57a3a60b6b9fa5ca2ce2415c862c`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
+		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -15849,24 +15849,24 @@ WORKDIR /usr/bin
 ### `caddy:builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:cf70b5811e444fc608f30988a55a4ef79328cd3653e33fdd3da6b744999985ce
+$ docker pull caddy@sha256:0d32d244df1051d7a2add823911963fbbea810229195d72523c5d0657c2b1ed3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.5 KB (296526 bytes)**  
+-	Total Size: **296.5 KB (296527 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80b2258a12eea2b1d9925266bfd3c830fa0e49bfa707e4d25b77714decb963ad`
+-	Image ID: `sha256:6f078a0c725ab67ebc090568ca92af33423025bc05b9d27afadc86a6cfd48a51`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9ebf3aa6c038092a6e062cb5d5235a12e4caf03d6fed225fcd34e75157af8d14`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
-		Size: 276.5 KB (276457 bytes)  
+	-	`sha256:5fb8d35f8f2cfc19e0d28ae3e075165e8ae7f8b7b60ad7193daeeb2419c039ef`  
+		Last Modified: Thu, 20 Jun 2024 21:55:40 GMT  
+		Size: 276.5 KB (276458 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5a9572add926bd37f873cd2e92e205e9b7e1edeff975c30d08a40d67d4186fef`  
-		Last Modified: Fri, 14 Jun 2024 18:54:45 GMT  
+	-	`sha256:bc6868f02b356d04d4a04c2f74b5f77f24a81474cdc0a656e7da4de1c0bae771`  
+		Last Modified: Thu, 20 Jun 2024 21:55:39 GMT  
 		Size: 20.1 KB (20069 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16833,7 +16833,7 @@ WORKDIR C:\
 ## `caddy:latest`
 
 ```console
-$ docker pull caddy@sha256:60199fbf2046892e0aa4b19c7d3adf71f530c36abc65728627422148a75b3475
+$ docker pull caddy@sha256:4b192bcff3499aa887e3a0e99cb1773f3502e72389e4bb1699cae4af2938f45e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16858,19 +16858,19 @@ $ docker pull caddy@sha256:60199fbf2046892e0aa4b19c7d3adf71f530c36abc65728627422
 ### `caddy:latest` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:1603d1801481ca6ab1f7e3438e03ad1713f89f6754c3261d6e49662de4a8b96f
+$ docker pull caddy@sha256:de7100f2dc60d933ba28a915c8d788f3ce89c7baf14c4b9c5a6fd67549bae7a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.6 MB (18625879 bytes)**  
+-	Total Size: **18.6 MB (18627619 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:870ea66f9a9ed220cbd24beefb19b2775b41077da6c87e2f5b66e8dcde113534`
+-	Image ID: `sha256:accd318080c538106641ab06f8383ef9979ad7919004ae6a55bced90f39c35f8`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 22 May 2024 18:18:11 GMT
-ADD file:e3abcdba177145039cfef1ad882f9f81a612a24c9f044b19f713b95454d2e3f6 in / 
-# Wed, 22 May 2024 18:18:12 GMT
+# Tue, 04 Jun 2024 22:12:59 GMT
+ADD file:33ebe56b967747a97dcec01bc2559962bee8823686c9739d26be060381bbb3ca in / 
+# Tue, 04 Jun 2024 22:12:59 GMT
 CMD ["/bin/sh"]
 # Tue, 04 Jun 2024 22:12:59 GMT
 RUN apk add --no-cache 	ca-certificates 	libcap 	mailcap # buildkit
@@ -16915,21 +16915,21 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f`  
-		Last Modified: Wed, 22 May 2024 18:18:35 GMT  
-		Size: 3.6 MB (3622094 bytes)  
+	-	`sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99`  
+		Last Modified: Thu, 20 Jun 2024 20:17:32 GMT  
+		Size: 3.6 MB (3623844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c0c17092266bbaf8de056d9c4315ae5e26b88a49d1bf2e2ed488c826bbc79e4`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 357.4 KB (357355 bytes)  
+	-	`sha256:09ada5eb3540e4dca0204132c9b0c5ea6593e286b86258eb74e181c7fac06ad5`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 357.4 KB (357359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed0d427b3a04b2050455705dcf60163fc468f049f08d83cc85150bc029e805da`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
+	-	`sha256:a7b78b6bd1c817222ea54d7f525925db43e6e215d5f92a0fb5b6e0962cfb1275`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
 		Size: 7.4 KB (7449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ea7e62d09d2d4cc58f1ce097c9404da4dcf0304c435e13cf52e318a17da75bc`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 14.6 MB (14638949 bytes)  
+	-	`sha256:14de6039f1505f64546cf32b38e20eb0d6dfc3ffcf73595f2507d061bfff021f`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 14.6 MB (14638935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -16939,25 +16939,25 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ### `caddy:latest` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:96bbf115ce7bba6628635a9d0148cb90aabf5a6d18e3dd2472a817dacb6dcc2b
+$ docker pull caddy@sha256:9404ddc071773075e0c61ec7e45538d1e6d0270d0ce1357fd7f8458635ab090d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **281.8 KB (281795 bytes)**  
+-	Total Size: **281.8 KB (281845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eca5eb3a86421c8b21bc2fcb83358d677a6c671a7dea7db46fa05bf98b50d73a`
+-	Image ID: `sha256:51adcda97fe5558b194ecbcf85e9c6ac9c58ffc7b5d88a42a9fdc51d02ba88eb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:223a93663776c65c27839e195b96dc02a1d056bed7b8896d8a1ce2c234c52777`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 263.8 KB (263814 bytes)  
+	-	`sha256:712ae6b6ed31482d27bf508aa484f05932084eb22c6fe0b5f3aaca47b49a1c23`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 263.8 KB (263815 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:14051e501086236b5e20cb1a15da10779e394523513b51d65c4c9427d2f4aa3e`  
-		Last Modified: Wed, 05 Jun 2024 01:06:15 GMT  
-		Size: 18.0 KB (17981 bytes)  
+	-	`sha256:4d4b5ec6e66c9725423e518b3656395df1065475086e7b7f33eb3de35fbb768a`  
+		Last Modified: Thu, 20 Jun 2024 20:56:48 GMT  
+		Size: 18.0 KB (18030 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:latest` - linux; arm variant v6
