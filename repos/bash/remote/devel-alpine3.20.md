@@ -1,7 +1,7 @@
 ## `bash:devel-alpine3.20`
 
 ```console
-$ docker pull bash@sha256:4820514b5738d37c40c3ea65c5b024b9df0711ffc0598035344eda4af4a7b850
+$ docker pull bash@sha256:40dea40dbe6dc17ea6d8e7f865362130df3d1d2aa17643a0c8c4e97ab8f033c0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -512,20 +512,20 @@ $ docker pull bash@sha256:0564ed59472e79d993618ee8ffe1241b965de97f2310549ce20778
 ### `bash:devel-alpine3.20` - linux; s390x
 
 ```console
-$ docker pull bash@sha256:fecd30755c1798f6c006eb9441e0b32d4a84e101e5ef14d45a09e6d3e8be8eff
+$ docker pull bash@sha256:d5b7e94b09e602dfb466e84bfa3cd3b4f196038e00d5bba8a850e8357b1b98d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 MB (6455941 bytes)**  
+-	Total Size: **6.5 MB (6457457 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74ed1d57ecc2a46e3c3d53acc579c94641f15412d621e61615eb02e6295347d2`
+-	Image ID: `sha256:63f2b47349d9f175a78da4e6075246373c3bcdadd845eca5696b0795bfa53c79`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 22 May 2024 18:34:06 GMT
-ADD file:97335440b04aac71ca64b9c889e64d1da1913c788e108b6481155248fc670f8b in / 
-# Wed, 22 May 2024 18:34:07 GMT
+# Tue, 11 Jun 2024 04:34:48 GMT
+ADD file:23eeda2aa519e3b51e03f1ce8faeb8c4b597b4b31ec175cb09306147000967fc in / 
+# Tue, 11 Jun 2024 04:34:48 GMT
 CMD ["/bin/sh"]
 # Tue, 11 Jun 2024 04:34:48 GMT
 ENV _BASH_COMMIT=dbb48b978671394bcb33c9f34656a9aadf40a318
@@ -542,39 +542,39 @@ CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:3b8747b05489980f63da1d2b8e5a444c55777f69540394397b0bc1c76c3e41f2`  
-		Last Modified: Wed, 22 May 2024 18:34:48 GMT  
-		Size: 3.5 MB (3460340 bytes)  
+	-	`sha256:f9a77bce0ddc1b9251f410e8c69566b002f4e557ee68895b558671311b17fd91`  
+		Last Modified: Thu, 20 Jun 2024 17:43:02 GMT  
+		Size: 3.5 MB (3461856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0dcadccc943815cb377ed9af107a1777d778b52aaaa6c00660d2b4f5a8a6bc4c`  
-		Last Modified: Tue, 11 Jun 2024 23:53:51 GMT  
-		Size: 3.0 MB (2995261 bytes)  
+	-	`sha256:82a3d263f82648f38340576847274e4139f80d6c5a2a8e12979f43fd7c24f7ec`  
+		Last Modified: Fri, 21 Jun 2024 14:08:36 GMT  
+		Size: 3.0 MB (2995264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d27076911402a5795f48e2c3f08cfe0fac3cc84d67d223d75d7935a1c882be34`  
-		Last Modified: Tue, 11 Jun 2024 23:53:51 GMT  
-		Size: 340.0 B  
+	-	`sha256:a98402c978b2baa9d761b49d740b623ebda3d73efe6c1641d792b271ff05930c`  
+		Last Modified: Fri, 21 Jun 2024 14:08:36 GMT  
+		Size: 337.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bash:devel-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull bash@sha256:5e766be1766f2e87cec14d00a8c3350e76f86824237a416f21f64fcbe9df66e5
+$ docker pull bash@sha256:592e181bde503ad93733cc6af2145cf1f1e7649ad3171d9236fbfa2bb99ce371
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.6 KB (120616 bytes)**  
+-	Total Size: **120.6 KB (120618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5460d8a80fc0a06782abbab3dc9f4026b3e39c584e01b0a7e3334cd8e791a2d4`
+-	Image ID: `sha256:bcb330dc64641ca5ba7028e6297e319e1493faf98ab4d36b8f43c9423f69cb6d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ec82a9eb4bc3c1b12548d484d1f4e1fc90c73a2ff041792a13c2540c995a3457`  
-		Last Modified: Tue, 11 Jun 2024 23:53:51 GMT  
-		Size: 104.6 KB (104554 bytes)  
+	-	`sha256:89fb95fdf9fdce17fefcbb9a48e04c83801ae8330a6e90bfae1c42efcadd71af`  
+		Last Modified: Fri, 21 Jun 2024 14:08:36 GMT  
+		Size: 104.6 KB (104555 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:69b71f6d2a78c664a8728ff54d630b95cf233ea31a1239f10f76b79156d2e276`  
-		Last Modified: Tue, 11 Jun 2024 23:53:51 GMT  
-		Size: 16.1 KB (16062 bytes)  
+	-	`sha256:eea5364bded066e5afd9ce60dc236e3044a94711efe1e462eedfe2a0c83f793a`  
+		Last Modified: Fri, 21 Jun 2024 14:08:36 GMT  
+		Size: 16.1 KB (16063 bytes)  
 		MIME: application/vnd.in-toto+json
