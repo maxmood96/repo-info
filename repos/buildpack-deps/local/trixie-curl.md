@@ -81,19 +81,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.3.dsc' apt_2.9.3.dsc 2973 SHA256:07bed02105ed8aeb9351ea63309a5a033cffafc4bb38ea659f13c020b605346d
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.3.tar.xz' apt_2.9.3.tar.xz 2376088 SHA256:ed1d0195ca6e8d78dbba5389ec46fcfe0422badefbbdc7b51a46c909f6ba2d71
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.3/
 
-- https://sources.debian.net/src/apt/2.9.3/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-1`
 
@@ -716,21 +710,13 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris findutils=4.9.0-6
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.9.0-6.dsc' findutils_4.9.0-6.dsc 2281 SHA256:5f727588a0d9f477618c3759997cb077cc84017587e7652b840923bd206fa729
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.9.0.orig.tar.xz' findutils_4.9.0.orig.tar.xz 2046252 SHA256:a2bfb8c09d436770edc59f50fa483e785b161a3b7b9d547573cb08065fd462fe
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.9.0.orig.tar.xz.asc' findutils_4.9.0.orig.tar.xz.asc 488 SHA256:924c3719d066eda1b3e47175f8b83e90e9a23f0a639ebe7445621917b283c385
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.9.0-6.debian.tar.xz' findutils_4.9.0-6.debian.tar.xz 32948 SHA256:c9f8d299a978ee903e61b45a6b7efff6dd378b67449d7b7d0eb9d44fc7ecad11
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/findutils/4.9.0-6/
 
-- https://sources.debian.net/src/findutils/4.9.0-6/ (for browsing the source)
-- https://sources.debian.net/src/findutils/4.9.0-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/findutils/4.9.0-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-14=14-20240330-1`
 
@@ -1051,21 +1037,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.20.1-6
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-6.dsc' krb5_1.20.1-6.dsc 3360 SHA256:e61a19ad704e6457781a9a62605b0851183ca8fffe44426f8138120a2ffea689
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-6.debian.tar.xz' krb5_1.20.1-6.debian.tar.xz 104740 SHA256:b2e63f51edb711c9a4e1bf544e85194a1b3bc36812f48d4bcb78a01f2236200c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.20.1-6/
 
-- https://sources.debian.net/src/krb5/1.20.1-6/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.20.1-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.20.1-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.5.6-1`
 
@@ -1865,20 +1843,13 @@ Licenses: (parsed from: `/usr/share/doc/libldap-2.5-0/copyright`)
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.5.17+dfsg-1
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.17%2bdfsg-1.dsc' openldap_2.5.17+dfsg-1.dsc 3325 SHA256:2f132d3e5dfee758b1a62469d4e2cf7fe9c04f578b812a38d0ad14a4cefc0b8b
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.17%2bdfsg.orig.tar.xz' openldap_2.5.17+dfsg.orig.tar.xz 3683156 SHA256:48135fd55f59ee642d76a8d2f47719a3ef4b7bccaaf539802cbcacd5c51b9930
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.17%2bdfsg-1.debian.tar.xz' openldap_2.5.17+dfsg-1.debian.tar.xz 169736 SHA256:f4727c907b87fa72ffb049c8bd8ad93ffa8de3d9d16557735fd103b1d8297486
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.5.17+dfsg-1/
 
-- https://sources.debian.net/src/openldap/2.5.17+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.5.17+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.5.17+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.2.1-3`
 
@@ -2314,20 +2285,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.09-1
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.09-1.dsc' sysvinit_3.09-1.dsc 2347 SHA256:52ab503fb095bf8114fb17c4c8a28e4536ea37c69119672d5e94db0013b8c73f
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.09.orig.tar.gz' sysvinit_3.09.orig.tar.gz 514145 SHA256:991c5d0100165d7896dae9df6a69877311cdd5349e32f7fc6960859f5f60a6ce
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.09-1.debian.tar.xz' sysvinit_3.09-1.debian.tar.xz 120876 SHA256:f28ebfabc223fb522a5f1bb4720a6040e78e6eacca57d2e068084b55d6c44662
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.09-1/
 
-- https://sources.debian.net/src/sysvinit/3.09-1/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.09-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.09-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-3`
 

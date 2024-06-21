@@ -1065,21 +1065,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.20.1-6
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-6.dsc' krb5_1.20.1-6.dsc 3360 SHA256:e61a19ad704e6457781a9a62605b0851183ca8fffe44426f8138120a2ffea689
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-6.debian.tar.xz' krb5_1.20.1-6.debian.tar.xz 104740 SHA256:b2e63f51edb711c9a4e1bf544e85194a1b3bc36812f48d4bcb78a01f2236200c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.20.1-6/
 
-- https://sources.debian.net/src/krb5/1.20.1-6/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.20.1-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.20.1-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.5.6-1`
 
