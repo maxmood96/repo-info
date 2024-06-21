@@ -1,7 +1,7 @@
 ## `tomcat:jdk11-temurin-jammy`
 
 ```console
-$ docker pull tomcat@sha256:5ee63cb1943dc9d3525c76e6b745ddc0fd8c6c450f108cf6ba7c68c00b9aa364
+$ docker pull tomcat@sha256:3a21e09b8d36d1b816c54ec0cfc764905c253de679808af44082677acc3870c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -239,14 +239,14 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:jdk11-temurin-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull tomcat@sha256:becd49097168e82c575a9b69ec9f3993b7eca30e1e6e2dcb37643372c092b69d
+$ docker pull tomcat@sha256:5c2f5b64c08986861c5794eab2753936edb46e29b6c63d4b5ea4767ef345d7b4
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **196.9 MB (196877249 bytes)**  
+-	Total Size: **196.9 MB (196890418 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2dcb15e69f6d39d86e714adfce0946721ed01f56d0382f7e8c7930f5dd2734e3`
+-	Image ID: `sha256:8b227c2348589e649d290bfdf555ebbf5fff7a16aa1eed89881eeecc916e956c`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -298,19 +298,19 @@ ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
 ENV GPG_KEYS=5C3C5F3E314C866292F359A8F3AD5C94A67F707E A9C5DF4D22E99998D9875A5110C01C5A2F6059E7
 # Wed, 05 Jun 2024 07:20:33 GMT
 ENV TOMCAT_MAJOR=10
-# Wed, 05 Jun 2024 07:20:33 GMT
-ENV TOMCAT_VERSION=10.1.24
-# Wed, 05 Jun 2024 07:20:33 GMT
-ENV TOMCAT_SHA512=793802f5cbbc0c4f722d3c63b52323df7ca37846445c254edcaaa7702fd71cf72aa9506b2b2c59322b9635e25f69913aa1b223098d9b4f1426f5f5447dd78ff3
-# Wed, 05 Jun 2024 07:21:09 GMT
+# Fri, 21 Jun 2024 01:26:00 GMT
+ENV TOMCAT_VERSION=10.1.25
+# Fri, 21 Jun 2024 01:26:00 GMT
+ENV TOMCAT_SHA512=d7498e23e54425d728ed3481579dccc4fe3d720a4b6d491ce9a04f9d19647b60a398b76dbfec63a32f7ee98195b97231d34b6f850283f38a1acb9908d3015565
+# Fri, 21 Jun 2024 01:26:30 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://dlcdn.apache.org/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 1777 logs temp work; 		catalina.sh version
-# Wed, 05 Jun 2024 07:21:10 GMT
+# Fri, 21 Jun 2024 01:26:32 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Wed, 05 Jun 2024 07:21:10 GMT
+# Fri, 21 Jun 2024 01:26:32 GMT
 EXPOSE 8080
-# Wed, 05 Jun 2024 07:21:10 GMT
+# Fri, 21 Jun 2024 01:26:32 GMT
 ENTRYPOINT []
-# Wed, 05 Jun 2024 07:21:10 GMT
+# Fri, 21 Jun 2024 01:26:32 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -339,13 +339,13 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Wed, 05 Jun 2024 07:34:54 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3da5acc30e465567c20fa01f974c62491c19dc11c58a9f82afcc38e1b41c9a25`  
-		Last Modified: Wed, 05 Jun 2024 07:34:55 GMT  
-		Size: 13.3 MB (13315012 bytes)  
+	-	`sha256:66e8505e6ac9342cc173c1143ca3b2564a7b62c4e2cd2e068257d9d61c1b743f`  
+		Last Modified: Fri, 21 Jun 2024 01:37:59 GMT  
+		Size: 13.3 MB (13328180 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5c78fcf469bdbcbfe3c381384f6035b88fdd92b53cea292edf988a566e423e6`  
-		Last Modified: Wed, 05 Jun 2024 07:34:54 GMT  
-		Size: 129.0 B  
+	-	`sha256:05940ff10a09755115d81bbf379f2f734d2dacb0344ec5225316e9b3adba06e4`  
+		Last Modified: Fri, 21 Jun 2024 01:37:58 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `tomcat:jdk11-temurin-jammy` - linux; ppc64le
