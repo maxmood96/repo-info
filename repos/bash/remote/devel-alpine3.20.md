@@ -1,7 +1,7 @@
 ## `bash:devel-alpine3.20`
 
 ```console
-$ docker pull bash@sha256:70009d32df2688bbbb63f3788929758dd16ba6db0bede7c33ff681b802137b9b
+$ docker pull bash@sha256:acf94a8c49c7943f8d5c9a1372041e3c1a56f2f003173314adb5937a18fd0e44
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -162,20 +162,20 @@ $ docker pull bash@sha256:6ae12532b1177ac897b24b3c2c6ba431a97a38253aa38edb4cab6b
 ### `bash:devel-alpine3.20` - linux; arm variant v7
 
 ```console
-$ docker pull bash@sha256:ae6b61f9222e68e6635607ff052cd1068e912fff7286c570c50a88f556781307
+$ docker pull bash@sha256:375f46674da78bc5579abc1446636de0bb44b91fa65a44541a3277d08035fca3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5885366 bytes)**  
+-	Total Size: **5.9 MB (5886198 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f807739c353a09f24bbe5c75b8ff14e3beb2e58c54114fa25fb2400d655d97a3`
+-	Image ID: `sha256:097b044ac3d4f11380df3445547f959b7dc545945dcbca3baf580e8eff576c87`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 22 May 2024 18:07:12 GMT
-ADD file:d6a90589cd9e92525c68e44f296baf2a57e5bda9e32ed5f7d45d6ad9a6595e26 in / 
-# Wed, 22 May 2024 18:07:12 GMT
+# Tue, 11 Jun 2024 04:34:48 GMT
+ADD file:4d58f44e3cedeba6fad741c79bc5acab1a9f2a2f597c854dc3bb8b8595ebf3e1 in / 
+# Tue, 11 Jun 2024 04:34:48 GMT
 CMD ["/bin/sh"]
 # Tue, 11 Jun 2024 04:34:48 GMT
 ENV _BASH_COMMIT=dbb48b978671394bcb33c9f34656a9aadf40a318
@@ -192,41 +192,41 @@ CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:8b416cac0b22b1e77fbe2d8d5f2f70f44878497f7c24dd739d8e56b317931303`  
-		Last Modified: Wed, 22 May 2024 18:07:30 GMT  
-		Size: 3.1 MB (3094035 bytes)  
+	-	`sha256:3fb467f9cb36e54d3cb8806db734a6c640048f3dc270b506ec1f111640905b79`  
+		Last Modified: Thu, 20 Jun 2024 18:00:55 GMT  
+		Size: 3.1 MB (3094856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2381bbee14fd4b08fdde7fae5634f60e0e558544c84ec908889b2099c5c6e283`  
-		Last Modified: Tue, 11 Jun 2024 23:55:46 GMT  
-		Size: 2.8 MB (2790990 bytes)  
+	-	`sha256:af2c69dcd4bc39f316d1ab40c61529127ef2e6c8360a47ce601dc78225b46ab3`  
+		Last Modified: Thu, 20 Jun 2024 22:58:21 GMT  
+		Size: 2.8 MB (2791005 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:589f32bbfcf5ef1a78624cc24d1ae50dd53cf780eea243dcc4c9b3ccc2b5ab25`  
-		Last Modified: Tue, 11 Jun 2024 23:55:45 GMT  
-		Size: 341.0 B  
+	-	`sha256:0fb9e4cb4c4dfd5d3592705bb2f731fcaa8d646fd5baffefa088e93c09798473`  
+		Last Modified: Thu, 20 Jun 2024 22:58:21 GMT  
+		Size: 337.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bash:devel-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull bash@sha256:48c71a11c30975c52ddf7d4f6a96004f02756a54ce31290dda6c5df32b897c33
+$ docker pull bash@sha256:8df10bbd644fe41ab8a5a861e5a5f0e44152e3715c984a6aba488efe048f755d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **122.7 KB (122677 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1df87a80136ceb4849180c82477bdb228be42fbf19f9ee30f8eb0b59f6584d3d`
+-	Image ID: `sha256:a5d0391b882f8b94390c045c9705102678c0bb7daddb9c2cf26bcc0c04fbe8f5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:599c0781bc60cb080efb7c252d1ebce68f44395fd9faa713f3f62d921d5452cf`  
-		Last Modified: Tue, 11 Jun 2024 23:55:45 GMT  
-		Size: 106.5 KB (106544 bytes)  
+	-	`sha256:4d6c47de3aa443ec1ee33ce65db82b65b91906c15d15a50d57e30482656b9fc1`  
+		Last Modified: Thu, 20 Jun 2024 22:58:21 GMT  
+		Size: 106.5 KB (106545 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:03763175d20bf77fa1f22537c7300c1bfb4d709ce583374734f5b1953b27b2a7`  
-		Last Modified: Tue, 11 Jun 2024 23:55:45 GMT  
-		Size: 16.1 KB (16133 bytes)  
+	-	`sha256:648364e5cae59b37f94788dcac55bb286844c096de6a466d090e61652cc3c30a`  
+		Last Modified: Thu, 20 Jun 2024 22:58:21 GMT  
+		Size: 16.1 KB (16132 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `bash:devel-alpine3.20` - linux; arm64 variant v8
