@@ -1,10 +1,10 @@
-# `geonetwork:4.4.4`
+# `geonetwork:4.4.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4ee9da836586bfed6a56f4957e61ce2fc970122d55fa0134209a4e9190d613fa`
-- Created: `2024-06-05T12:09:06.886551609Z`
-- Virtual Size: ~ 805.23 Mb  
+- Image ID: `sha256:75c52a94cb99579e362fe9554483607ab8e7097ddc24710c387597d51434350d`
+- Created: `2024-06-18T18:21:49.911548327Z`
+- Virtual Size: ~ 805.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/geonetwork-entrypoint.sh"]`
@@ -27,8 +27,8 @@
   - `GN_CONFIG_PROPERTIES=-Dgeonetwork.dir=/catalogue-data         -Dgeonetwork.formatter.dir=/catalogue-data/data/formatter         -Dgeonetwork.schema.dir=/opt/geonetwork/WEB-INF/data/config/schema_plugins         -Dgeonetwork.indexConfig.dir=/opt/geonetwork/WEB-INF/data/config/index`
   - `JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true         -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC`
   - `GN_FILE=geonetwork.war`
-  - `GN_VERSION=4.4.4`
-  - `GN_DOWNLOAD_MD5=f2cd38d91dc0db4a126d0573b97e9103`
+  - `GN_VERSION=4.4.5`
+  - `GN_DOWNLOAD_MD5=a7b04339041e1e8217435dc6273ac3b8`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`
