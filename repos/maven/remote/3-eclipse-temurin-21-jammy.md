@@ -1,15 +1,16 @@
 ## `maven:3-eclipse-temurin-21-jammy`
 
 ```console
-$ docker pull maven@sha256:7933ec03a961d1a0dabb1b9bbbbfe5dbba1b368e83c076b647b6e8d7ae4bb41b
+$ docker pull maven@sha256:8184eba14e779eb22f88b4b0d8f195e98a024f87fd4a13ed7ac7724d8421778a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 5
+-	Platforms: 6
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
+	-	unknown; unknown
 	-	linux; s390x
 
 ### `maven:3-eclipse-temurin-21-jammy` - linux; amd64
@@ -279,28 +280,28 @@ CMD ["mvn"]
 ### `maven:3-eclipse-temurin-21-jammy` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:2296a8115d94b0874586d5a10143cb5c899946adeebff157bc22b9b18bc76294
+$ docker pull maven@sha256:a9f0e96e76af22ebcd31956bf4fcc899e67366c6316a85d9ecd15c7e378f1cd2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **244.8 MB (244803424 bytes)**  
+-	Total Size: **244.6 MB (244566079 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19cf24fcf766be5495636e43f2dfbae957d441cd51f26c2355d79742c6e2a443`
+-	Image ID: `sha256:5f6f8b0cd6343e945d28d2dd8d9385e44cc1dd0e4d5ea55a72875261cbc4b41d`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Mon, 27 May 2024 15:57:48 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Mon, 27 May 2024 15:57:48 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Mon, 27 May 2024 15:57:48 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Mon, 27 May 2024 15:57:48 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Mon, 27 May 2024 15:57:48 GMT
 ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Mon, 27 May 2024 15:57:48 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -358,43 +359,67 @@ CMD ["mvn"]
 	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
 		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
 		Size: 35.6 MB (35588332 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
 		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
 		Size: 18.7 MB (18722020 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75c92d2aa145456afbba43bfc69abd8ecc46509f62cd6054dbb48c4b94c5432a`  
 		Last Modified: Wed, 05 Jun 2024 04:03:58 GMT  
 		Size: 158.7 MB (158746522 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24ef0a309ae86e68873c20bac61b28a9ddd782551bf6735a72bf4fc87c9e2bd3`  
 		Last Modified: Wed, 05 Jun 2024 04:03:42 GMT  
 		Size: 175.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:045719a04d855761aed063bf4dbcf531153be61ee0bdeae425a4b9929ee3cc3f`  
 		Last Modified: Wed, 05 Jun 2024 04:03:42 GMT  
 		Size: 734.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1682fed33449d39d91047d041b255c79ebc93a1d050055e918c77d0fe6498954`  
-		Last Modified: Wed, 05 Jun 2024 08:12:24 GMT  
-		Size: 22.1 MB (22096754 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ffaf6b6be89d6e1ab1aacfd766ddf15f60955ae337b3bcd8af3240b762dcfba`  
-		Last Modified: Wed, 05 Jun 2024 08:12:20 GMT  
-		Size: 9.6 MB (9647516 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66d0ccf61d82f9f9207d109bf90bf9d6f32f19fd1e39031b7042deadaff976ab`  
-		Last Modified: Wed, 05 Jun 2024 08:12:19 GMT  
-		Size: 854.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c179a8ec04e204e9e45b5814aadf2b1db8e9fa29ebd2054ce14f72187d4cd86`  
-		Last Modified: Wed, 05 Jun 2024 08:12:19 GMT  
-		Size: 361.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ff62a7c6d140755b0655435a4a492e17241a298fd56c297d7ea8181bfe49e0a`  
-		Last Modified: Wed, 05 Jun 2024 08:12:19 GMT  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9d61834e9fb347933e71bc1bc22148a66942b2185aaa839d3c38a88c873b88d1`  
+		Last Modified: Fri, 21 Jun 2024 07:09:42 GMT  
+		Size: 21.9 MB (21859628 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0db82c44485dd967c52c8d8c4c430b0fd69d710a912c81294f97411d862f1733`  
+		Last Modified: Fri, 21 Jun 2024 07:09:41 GMT  
+		Size: 9.6 MB (9647625 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:46f1a7e72f38428ededbae740b275e190ce3ffd195bbf0c0eb370cf6fb0c3e8c`  
+		Last Modified: Fri, 21 Jun 2024 07:09:40 GMT  
+		Size: 855.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:62ae8ca2d4b545336643f2da85d8819e018b9d139fd7e6897a43aa9ea6180587`  
+		Last Modified: Fri, 21 Jun 2024 07:09:41 GMT  
 		Size: 156.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `maven:3-eclipse-temurin-21-jammy` - unknown; unknown
+
+```console
+$ docker pull maven@sha256:35b754edbbc6364412d7fec8c3e65bc160e960272be1cd632b57ca0fe3f692e2
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.1 MB (5080593 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:57b1843f0854324685ad231a758113f4a93039d2b9c0b1127b45cf37834d8536`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:8f6232f806c6b4018ac9dfca46aa509a13e246383d7fc27b83abfe106a65b432`  
+		Last Modified: Fri, 21 Jun 2024 07:10:14 GMT  
+		Size: 5.1 MB (5060915 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:5b276894ff786e85294a40dce7902989e4904b6f808a78104d96a5b53728133f`  
+		Last Modified: Fri, 21 Jun 2024 07:10:14 GMT  
+		Size: 19.7 KB (19678 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ### `maven:3-eclipse-temurin-21-jammy` - linux; s390x
 
