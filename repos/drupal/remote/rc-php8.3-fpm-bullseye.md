@@ -1,7 +1,7 @@
 ## `drupal:rc-php8.3-fpm-bullseye`
 
 ```console
-$ docker pull drupal@sha256:52e7d2a25745a115e1e67ea7b997b44375acafaf3dcfab8cc08871faa19cc0f0
+$ docker pull drupal@sha256:1da1d772227fe0befd2a56caf24fce89884aa5307f3a2cb9bbf1fa10d9736a44
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -334,25 +334,25 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 ### `drupal:rc-php8.3-fpm-bullseye` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:bdef487aed8d26c6dad5a1640b666f4046c22cc581bad7df67ceecc4901822db
+$ docker pull drupal@sha256:6efbd9585d97b4d0915edbaf07d783deb95321922f00bd0ae3749c0e86e1f4e3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6277904 bytes)**  
+-	Total Size: **6.3 MB (6278106 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f839ed5e991c30fc293a9c898b38df2181425c25a10c84a941d9c9b609b86fa`
+-	Image ID: `sha256:c462b48659098357a7c46aeb328813b4e9160789afff4eeba514f6d67e4b7980`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:809546906c4e37c5e591d5cdbcdb2c864fa1f52cfa085dbc876b4c241c546d5d`  
-		Last Modified: Fri, 14 Jun 2024 05:01:50 GMT  
-		Size: 6.2 MB (6245621 bytes)  
+	-	`sha256:017d48e8b839ca0ff12ee605f67490f3b3bca9148fa357b760e6296b26a269b9`  
+		Last Modified: Fri, 21 Jun 2024 12:28:39 GMT  
+		Size: 6.2 MB (6245622 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:04ce80fbb03e6a71ad5d6afc447c7741d5a0c0553e3e3e309f8e0cf1133a4eee`  
-		Last Modified: Fri, 14 Jun 2024 05:01:50 GMT  
-		Size: 32.3 KB (32283 bytes)  
+	-	`sha256:eb0bd250169e4a87aac6456a6188ab1d09d792a95bb30c77ddef54f0e7c6d00f`  
+		Last Modified: Fri, 21 Jun 2024 12:28:38 GMT  
+		Size: 32.5 KB (32484 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:rc-php8.3-fpm-bullseye` - linux; arm64 variant v8
