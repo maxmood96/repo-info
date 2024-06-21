@@ -1,7 +1,7 @@
 ## `python:alpine3.19`
 
 ```console
-$ docker pull python@sha256:2ffcd0dc25d2674e803f32118f38af63f5cddbce19af5ef2d3f1c390772cdc7f
+$ docker pull python@sha256:136f8301455dfd069c9e041a7ceaae3cb93c17b1a3ab83c8f8b80e1bf1979ef0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,19 +17,19 @@ $ docker pull python@sha256:2ffcd0dc25d2674e803f32118f38af63f5cddbce19af5ef2d3f1
 ### `python:alpine3.19` - linux; amd64
 
 ```console
-$ docker pull python@sha256:977e46e01459620b898f931c7398c9afcd9477ccfade78f2fba9fc5504582ae8
+$ docker pull python@sha256:d0b6fd0573665025fe5b9789f6f232fef3a8308cfa772b9d638760025d73c5db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **20.8 MB (20758552 bytes)**  
+-	Total Size: **18.6 MB (18582318 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ca3f001fcc6b0d7a493344a24ee1d417258605234b80dbf79ab17728bdc5be4`
+-	Image ID: `sha256:bd378b133c2e03240b396cc4305d03d95dd37aa51a12cc4ef38c8792b530e518`
 -	Default Command: `["python3"]`
 
 ```dockerfile
-# Sat, 27 Jan 2024 00:30:48 GMT
-ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / 
-# Sat, 27 Jan 2024 00:30:48 GMT
+# Thu, 20 Jun 2024 20:17:04 GMT
+ADD file:fb066571462e703f86645131b43d211ff8531ffac77ea394456bfe569a6f17fe in / 
+# Thu, 20 Jun 2024 20:17:04 GMT
 CMD ["/bin/sh"]
 # Wed, 12 Jun 2024 22:54:11 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -58,25 +58,25 @@ CMD ["python3"]
 ```
 
 -	Layers:
-	-	`sha256:4abcf20661432fb2d719aaf90656f55c287f8ca915dc1c92ec14ff61e67fbaf8`  
-		Last Modified: Sat, 27 Jan 2024 00:31:24 GMT  
-		Size: 3.4 MB (3408729 bytes)  
+	-	`sha256:b84a74cde5af5c5199bfc2ce2a8c8951a29a7716d17327e923f1a14c870a858b`  
+		Last Modified: Thu, 20 Jun 2024 20:17:43 GMT  
+		Size: 3.4 MB (3417332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2af1fffcf46dc391952d3c473bfccdb0a2e048ffa37aeb77bb8925b72f012258`  
-		Last Modified: Fri, 07 Jun 2024 20:16:26 GMT  
-		Size: 627.8 KB (627752 bytes)  
+	-	`sha256:4aeeab05301bcc727dd105fbf04bf4778685293eab6e8f8118ad1ffbe32406fd`  
+		Last Modified: Fri, 21 Jun 2024 00:33:00 GMT  
+		Size: 627.7 KB (627709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ead4ea22fb39bca0cb95d2768588f71e20d84901c4a0016ecf955e6f7845961a`  
-		Last Modified: Fri, 14 Jun 2024 20:14:39 GMT  
-		Size: 14.0 MB (13983986 bytes)  
+	-	`sha256:44afad65937479bc02e37d08767c3ea063b15b9b10cb9f10210ce48f1a38583d`  
+		Last Modified: Fri, 21 Jun 2024 00:33:02 GMT  
+		Size: 11.8 MB (11781879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3960c519d6dcd72c421dce9706d20700b2955d6bd7c6e737243a4df0b2ab7803`  
-		Last Modified: Fri, 14 Jun 2024 20:14:37 GMT  
-		Size: 240.0 B  
+	-	`sha256:d995a0a4dcde34e55bd15d544350f5dc9d8cefb20c366fe8dc3806308318b2d0`  
+		Last Modified: Fri, 21 Jun 2024 00:33:00 GMT  
+		Size: 241.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:669b962765cd1f321d039aab74154a24c2e775f915eeb7f8d604883afc4edf51`  
-		Last Modified: Fri, 14 Jun 2024 20:14:38 GMT  
-		Size: 2.7 MB (2737845 bytes)  
+	-	`sha256:f58c524e6f2c178fefe58e429ca770c51ad893e0c15481243318e08d0ec0dbcf`  
+		Last Modified: Fri, 21 Jun 2024 00:33:01 GMT  
+		Size: 2.8 MB (2755157 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:alpine3.19` - linux; arm variant v6
