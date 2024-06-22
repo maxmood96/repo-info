@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:85f72acd9e6e63b8732d58f2781ddbebd0027f2ba691e98e9604653fcee8ff69`
-- Created: `2024-06-05T10:54:03.671747945Z`
-- Virtual Size: ~ 386.85 Mb  
+- Image ID: `sha256:6a84908fc52d68980bc7c56fae850741d278a5204d403e41252c34d55f6548c8`
+- Created: `2024-06-21T21:20:11.782120503Z`
+- Virtual Size: ~ 387.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/liquibase/docker-entrypoint.sh"]`
