@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a6426b80a537115bd7143edf20b3f85f57eac939414372b1373c6947b23b64b4`
+- Image ID: `sha256:3813abd43a85d3a6f4c5045406d982fc57a54e6c3f74faf5d1aeca085c825e18`
 - Created: `2024-05-27T15:57:48Z`
-- Virtual Size: ~ 501.85 Mb  
+- Virtual Size: ~ 500.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -674,12 +674,12 @@ $ apt-get source -qq --print-uris gdbm=1.18.1-5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.18.1-5.debian.tar.xz' gdbm_1.18.1-5.debian.tar.xz 16348 SHA256:3c1a0e05b40a97ee51ce77c736c72c37738ba31b2720111d3bc99175a2c3a3ed
 ```
 
-### `dpkg` source package: `git=1:2.25.1-1ubuntu3.12`
+### `dpkg` source package: `git=1:2.25.1-1ubuntu3.13`
 
 Binary Packages:
 
-- `git=1:2.25.1-1ubuntu3.12`
-- `git-man=1:2.25.1-1ubuntu3.12`
+- `git=1:2.25.1-1ubuntu3.13`
+- `git-man=1:2.25.1-1ubuntu3.13`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -702,9 +702,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu3.13
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.13.dsc' git_2.25.1-1ubuntu3.13.dsc 2966 SHA512:bb0374e8bcc08f7485fcc00254d282fd8232fa67e9c2c365666d2c4b4f944850a1d98d8e821f97e31aeae3f4370184c4cb8bfe4175b64969600dc5596682d13b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1.orig.tar.xz' git_2.25.1.orig.tar.xz 5875548 SHA512:15241143acfd8542d85d2709ac3c80dbd6e8d5234438f70c4f33cc71a2bdec3e32938df7f6351e2746d570b021d3bd0b70474ea4beec0c51d1fc45f9c287b344
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.13.debian.tar.xz' git_2.25.1-1ubuntu3.13.debian.tar.xz 715152 SHA512:5cc26bdc58e2c04e3a98478668e64aae7a53ce52b59330553f9c965dc6ca11dd99efb6ed79733bdebfd067a34f02b33bbada919926bef31b7445cfbc0734eda8
+```
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.16`
 
