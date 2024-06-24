@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1232368bc5fb009bf99d29a7d413a37600c22cbede1cf80592a6c65cd6d2d3d3`
+- Image ID: `sha256:5602962904d97294c32f3e81fe330763763e75c03a1a55e653198821cd8ee6e2`
 - Created: `2024-06-06T10:04:54Z`
-- Virtual Size: ~ 181.87 Mb  
+- Virtual Size: ~ 175.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -131,16 +131,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.36.1-r28 description:
+busybox-1.36.1-r29 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.36.1-r28 webpage:
+busybox-1.36.1-r29 webpage:
 https://busybox.net/
 
-busybox-1.36.1-r28 installed size:
+busybox-1.36.1-r29 installed size:
 908 KiB
 
-busybox-1.36.1-r28 license:
+busybox-1.36.1-r29 license:
 GPL-2.0-only
 
 ```
@@ -148,16 +148,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.36.1-r28 description:
+busybox-binsh-1.36.1-r29 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.36.1-r28 webpage:
+busybox-binsh-1.36.1-r29 webpage:
 https://busybox.net/
 
-busybox-binsh-1.36.1-r28 installed size:
+busybox-binsh-1.36.1-r29 installed size:
 8192 B
 
-busybox-binsh-1.36.1-r28 license:
+busybox-binsh-1.36.1-r29 license:
 GPL-2.0-only
 
 ```
@@ -726,16 +726,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.36.1-r28 description:
+ssl_client-1.36.1-r29 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.36.1-r28 webpage:
+ssl_client-1.36.1-r29 webpage:
 https://busybox.net/
 
-ssl_client-1.36.1-r28 installed size:
+ssl_client-1.36.1-r29 installed size:
 28 KiB
 
-ssl_client-1.36.1-r28 license:
+ssl_client-1.36.1-r29 license:
 GPL-2.0-only
 
 ```
