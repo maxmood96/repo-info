@@ -1451,21 +1451,13 @@ Licenses: (parsed from: `/usr/share/doc/libfido2-1/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libfido2=1.14.0-1
-'http://deb.debian.org/debian/pool/main/libf/libfido2/libfido2_1.14.0-1.dsc' libfido2_1.14.0-1.dsc 2588 SHA256:326aba550d01ac6008f45007cb719d916be6a1ab527cc0988a7f8593fcc7c9bd
-'http://deb.debian.org/debian/pool/main/libf/libfido2/libfido2_1.14.0.orig.tar.gz' libfido2_1.14.0.orig.tar.gz 660289 SHA256:3601792e320032d428002c4cce8499a4c7b803319051a25a0c9f1f138ffee45a
-'http://deb.debian.org/debian/pool/main/libf/libfido2/libfido2_1.14.0.orig.tar.gz.asc' libfido2_1.14.0.orig.tar.gz.asc 228 SHA256:2c1e1c0ab6f3ea6590c69a73a0f524dc6b8b523915b071872f2b26ee97eba4a4
-'http://deb.debian.org/debian/pool/main/libf/libfido2/libfido2_1.14.0-1.debian.tar.xz' libfido2_1.14.0-1.debian.tar.xz 52896 SHA256:ab2cf6c932e0e83611a9afc886401a73962f792d672909ab33a6e28bff89e476
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libfido2/1.14.0-1/
 
-- https://sources.debian.net/src/libfido2/1.14.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libfido2/1.14.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libfido2/1.14.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgcrypt20=1.10.3-3`
 

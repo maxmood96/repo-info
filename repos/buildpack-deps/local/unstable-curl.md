@@ -1766,21 +1766,13 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed6t64/copyright`, `/usr/share/d
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nettle=3.9.1-2.2
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.9.1-2.2.dsc' nettle_3.9.1-2.2.dsc 2319 SHA256:170deeaaa8d5c3ab2a954daf7e83855c788c4ff2fdb2d8e5ca065be64b0a0001
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.9.1.orig.tar.gz' nettle_3.9.1.orig.tar.gz 2396741 SHA256:ccfeff981b0ca71bbd6fbcb054f407c60ffb644389a5be80d6716d5b550c6ce3
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.9.1.orig.tar.gz.asc' nettle_3.9.1.orig.tar.gz.asc 573 SHA256:9746017a1a7fe60aad4b929ea592bc6ac51e12ea7179f289944eb44828d958af
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.9.1-2.2.debian.tar.xz' nettle_3.9.1-2.2.debian.tar.xz 24732 SHA256:65c36cbca1bb22f05c900f64d39f8bf39d85639243b0e3b4887ef613deedaf72
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nettle/3.9.1-2.2/
 
-- https://sources.debian.net/src/nettle/3.9.1-2.2/ (for browsing the source)
-- https://sources.debian.net/src/nettle/3.9.1-2.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nettle/3.9.1-2.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nghttp2=1.62.1-1`
 
@@ -2228,20 +2220,13 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-5
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-5.dsc' shadow_4.13+dfsg1-5.dsc 2487 SHA256:55bd4f803b7ff62818ccf311770aa16c90cb82e915961e1803f1d66bc7a9c36b
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1.orig.tar.xz' shadow_4.13+dfsg1.orig.tar.xz 1811752 SHA256:a8bb3a2aceff1cbe39d0f50687dcc1d7e7be0516a9d954d8e2eedb93f5906207
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-5.debian.tar.xz' shadow_4.13+dfsg1-5.debian.tar.xz 82588 SHA256:5ddd5b1d7275475c6d48b10a3cd2dde8735de3e7edd76625a30fa7d450a09435
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-5/
 
-- https://sources.debian.net/src/shadow/1:4.13+dfsg1-5/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.13+dfsg1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sqlite3=3.46.0-1`
 
@@ -2438,20 +2423,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.40.1-8.1
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.1-8.1.dsc' util-linux_2.40.1-8.1.dsc 4903 SHA256:410dbcd0149a1b8a7958b6a7bbefd29959ec945c7fe79dd1bdd45d1232b0012b
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.1.orig.tar.xz' util-linux_2.40.1.orig.tar.xz 8823784 SHA256:59e676aa53ccb44b6c39f0ffe01a8fa274891c91bef1474752fad92461def24f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.1-8.1.debian.tar.xz' util-linux_2.40.1-8.1.debian.tar.xz 106404 SHA256:cc655553bd5fbf1bded145150d862d0cc60b4858755fad9d9180b0183bc51266
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.40.1-8.1/
 
-- https://sources.debian.net/src/util-linux/2.40.1-8.1/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.40.1-8.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.40.1-8.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.24.5-1`
 
