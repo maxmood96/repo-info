@@ -1,9 +1,9 @@
-# `wordpress:6.5.4-php8.1-fpm`
+# `wordpress:6.5.5-php8.1-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:66a5d854d6d5a735d2adb789e202dfc4a4b92fc98ee83de831f62c9617bd8557`
-- Created: `2024-06-06T01:09:56Z`
+- Image ID: `sha256:cf9a7e839cd21b5e2f06baf79cebd52ee73d46f1868237d6f72754c366016ea1`
+- Created: `2024-06-24T19:12:59Z`
 - Virtual Size: ~ 675.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
