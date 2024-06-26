@@ -38,6 +38,14 @@
 -	[`xwiki:16.4.0-mariadb-tomcat`](#xwiki1640-mariadb-tomcat)
 -	[`xwiki:16.4.0-mysql-tomcat`](#xwiki1640-mysql-tomcat)
 -	[`xwiki:16.4.0-postgres-tomcat`](#xwiki1640-postgres-tomcat)
+-	[`xwiki:16.5`](#xwiki165)
+-	[`xwiki:16.5-mariadb-tomcat`](#xwiki165-mariadb-tomcat)
+-	[`xwiki:16.5-mysql-tomcat`](#xwiki165-mysql-tomcat)
+-	[`xwiki:16.5-postgres-tomcat`](#xwiki165-postgres-tomcat)
+-	[`xwiki:16.5.0`](#xwiki1650)
+-	[`xwiki:16.5.0-mariadb-tomcat`](#xwiki1650-mariadb-tomcat)
+-	[`xwiki:16.5.0-mysql-tomcat`](#xwiki1650-mysql-tomcat)
+-	[`xwiki:16.5.0-postgres-tomcat`](#xwiki1650-postgres-tomcat)
 -	[`xwiki:latest`](#xwikilatest)
 -	[`xwiki:lts`](#xwikilts)
 -	[`xwiki:lts-mariadb`](#xwikilts-mariadb)
@@ -16016,6 +16024,38 @@ $ docker pull xwiki@sha256:303bd12ca1dae56ec3e99d4cfa1c376a1be8926b041a3f11f296f
 		Last Modified: Fri, 21 Jun 2024 12:03:41 GMT  
 		Size: 40.7 KB (40704 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `xwiki:16.5`
+
+**does not exist** (yet?)
+
+## `xwiki:16.5-mariadb-tomcat`
+
+**does not exist** (yet?)
+
+## `xwiki:16.5-mysql-tomcat`
+
+**does not exist** (yet?)
+
+## `xwiki:16.5-postgres-tomcat`
+
+**does not exist** (yet?)
+
+## `xwiki:16.5.0`
+
+**does not exist** (yet?)
+
+## `xwiki:16.5.0-mariadb-tomcat`
+
+**does not exist** (yet?)
+
+## `xwiki:16.5.0-mysql-tomcat`
+
+**does not exist** (yet?)
+
+## `xwiki:16.5.0-postgres-tomcat`
+
+**does not exist** (yet?)
 
 ## `xwiki:latest`
 
