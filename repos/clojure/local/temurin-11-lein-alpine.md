@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:47d29e0b6a40df917ec2f18fb92f5fea8ced252e765ef01a3253afbfbbce9ef7`
+- Image ID: `sha256:1f82dd004d6bfcbf7ea089cac1e674566dbe618335feedf095fe773aa5206f15`
 - Created: `2024-05-28T15:17:11Z`
-- Virtual Size: ~ 317.77 Mb  
+- Virtual Size: ~ 312.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -76,16 +76,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.0-r5 description:
+apk-tools-2.14.4-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.0-r5 webpage:
+apk-tools-2.14.4-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.0-r5 installed size:
-304 KiB
+apk-tools-2.14.4-r0 installed size:
+296 KiB
 
-apk-tools-2.14.0-r5 license:
+apk-tools-2.14.4-r0 license:
 GPL-2.0-only
 
 ```
@@ -127,16 +127,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.36.1-r15 description:
+busybox-1.36.1-r19 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.36.1-r15 webpage:
+busybox-1.36.1-r19 webpage:
 https://busybox.net/
 
-busybox-1.36.1-r15 installed size:
+busybox-1.36.1-r19 installed size:
 924 KiB
 
-busybox-1.36.1-r15 license:
+busybox-1.36.1-r19 license:
 GPL-2.0-only
 
 ```
@@ -144,16 +144,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.36.1-r15 description:
+busybox-binsh-1.36.1-r19 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.36.1-r15 webpage:
+busybox-binsh-1.36.1-r19 webpage:
 https://busybox.net/
 
-busybox-binsh-1.36.1-r15 installed size:
+busybox-binsh-1.36.1-r19 installed size:
 8192 B
 
-busybox-binsh-1.36.1-r15 license:
+busybox-binsh-1.36.1-r19 license:
 GPL-2.0-only
 
 ```
@@ -161,16 +161,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20230506-r0 description:
+ca-certificates-bundle-20240226-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20230506-r0 webpage:
+ca-certificates-bundle-20240226-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20230506-r0 installed size:
-232 KiB
+ca-certificates-bundle-20240226-r0 installed size:
+236 KiB
 
-ca-certificates-bundle-20230506-r0 license:
+ca-certificates-bundle-20240226-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -603,16 +603,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.36.1-r15 description:
+ssl_client-1.36.1-r19 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.36.1-r15 webpage:
+ssl_client-1.36.1-r19 webpage:
 https://busybox.net/
 
-ssl_client-1.36.1-r15 installed size:
+ssl_client-1.36.1-r19 installed size:
 28 KiB
 
-ssl_client-1.36.1-r15 license:
+ssl_client-1.36.1-r19 license:
 GPL-2.0-only
 
 ```
