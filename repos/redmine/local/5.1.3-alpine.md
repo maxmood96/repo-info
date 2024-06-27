@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7650d1214b6c0c0323d59a0f2b29def54b972f417a14ddf9dcebd2a7f7db8748`
-- Created: `2024-06-12T02:38:54Z`
-- Virtual Size: ~ 412.17 Mb  
+- Image ID: `sha256:4fdaf64c4909ccb3827b71727aa4737df6b20bd83502542cfe2a2779aa065ff0`
+- Created: `2024-06-18T22:07:17Z`
+- Virtual Size: ~ 414.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -18,6 +18,7 @@
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
+  - `GOSU_VERSION=1.17`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
   - `REDMINE_VERSION=5.1.3`
@@ -2047,23 +2048,6 @@ ssl_client-1.36.1-r29 installed size:
 
 ssl_client-1.36.1-r29 license:
 GPL-2.0-only
-
-```
-
-### `apk` package: `su-exec`
-
-```console
-su-exec-0.2-r3 description:
-switch user and group id, setgroups and exec
-
-su-exec-0.2-r3 webpage:
-https://github.com/ncopa/su-exec
-
-su-exec-0.2-r3 installed size:
-24 KiB
-
-su-exec-0.2-r3 license:
-MIT
 
 ```
 
