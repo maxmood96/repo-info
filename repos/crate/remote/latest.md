@@ -1,7 +1,7 @@
 ## `crate:latest`
 
 ```console
-$ docker pull crate@sha256:40bbe28ea61c0374ebc24893a7ff40481ce6829bfb71e7557d7bea2a6efcc343
+$ docker pull crate@sha256:e8cb3d422e56da9f57ac19ee58590bb280ec3319487f61ec7153712863c99c99
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,20 +14,20 @@ $ docker pull crate@sha256:40bbe28ea61c0374ebc24893a7ff40481ce6829bfb71e7557d7be
 ### `crate:latest` - linux; amd64
 
 ```console
-$ docker pull crate@sha256:c9e395861f0a229f26fa2826faa2832fd0d22fc2106d6482f877a5c32412df80
+$ docker pull crate@sha256:c35840dc6e0600da3b771705295ed4f0d9def7e9424dbc864475d5e19beb84a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **198.2 MB (198189181 bytes)**  
+-	Total Size: **209.1 MB (209130314 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7bb2770ca008a01438afd621ad1b9d2b8f01d55722b10d30b7f65d59ef7be03`
+-	Image ID: `sha256:32a79bce40a19f826bf75772ad62f81408222c4d901fb8dc78371d47965234bb`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Thu, 30 May 2024 19:50:14 GMT
-ADD file:3fdb1e1e084f9adfa9354cc0d55674aadefb914a2a647cf64108082e380046fa in / 
-# Thu, 30 May 2024 19:50:15 GMT
+# Thu, 30 May 2024 15:50:21 GMT
+ADD almalinux-9-default-amd64.tar.xz / # buildkit
+# Thu, 30 May 2024 15:50:21 GMT
 CMD ["/bin/bash"]
 # Wed, 12 Jun 2024 14:05:02 GMT
 RUN dnf install --nodocs --assumeyes gzip python3 shadow-utils tar     && dnf clean all     && rm -rf /var/cache/yum # buildkit
@@ -62,65 +62,65 @@ CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:5f50a3278457f7a74799b60cb44c68510152a5ae686ecab49052c4e5aba464e2`  
-		Last Modified: Thu, 30 May 2024 19:50:50 GMT  
-		Size: 68.6 MB (68578181 bytes)  
+	-	`sha256:587e68e1d836d406ed1bbaf40ce890c5e3a654e040152a61037390a552e5a3bd`  
+		Last Modified: Fri, 31 May 2024 02:02:51 GMT  
+		Size: 68.6 MB (68578765 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f282573885649262fb9b4e0b6c346329ea4892e45f55f7a903728bccda1ad69`  
-		Last Modified: Fri, 21 Jun 2024 01:02:53 GMT  
-		Size: 17.6 KB (17618 bytes)  
+	-	`sha256:48de1a802a714075efdf9e7ccf32dc2170a772c9e53645c4fabe080e01166d84`  
+		Last Modified: Thu, 27 Jun 2024 00:59:44 GMT  
+		Size: 11.0 MB (10958236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11c6ef00641b72c8b0ba8e11e671739fd4de83c992dacabc7a2215c2601d8148`  
-		Last Modified: Fri, 21 Jun 2024 01:02:55 GMT  
-		Size: 127.6 MB (127647869 bytes)  
+	-	`sha256:20b1500da74848cfb9484722ab12b24cf6a138bd0d98e9aed33c6950b37337bb`  
+		Last Modified: Thu, 27 Jun 2024 00:59:45 GMT  
+		Size: 127.6 MB (127647811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17fdefdb0f0bc3944bd0746bd7c5f979f71e15f119ef1644615ee1c62ee3f79a`  
-		Last Modified: Fri, 21 Jun 2024 01:02:53 GMT  
-		Size: 1.9 MB (1943632 bytes)  
+	-	`sha256:7d7fbd6a88e0b2a411ee1754d4bdb8487afc7b16e24a0a65a27de4ef3347e6b3`  
+		Last Modified: Thu, 27 Jun 2024 00:59:44 GMT  
+		Size: 1.9 MB (1943627 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca655399a56fd4ceed0e2e0c79fe2872f1199d2d12af6f721d50a90011166c71`  
-		Last Modified: Fri, 21 Jun 2024 01:02:54 GMT  
+	-	`sha256:0512a922d9745e1980f2fdb1678295bec6b5b7af4cecb69543bee608649585fd`  
+		Last Modified: Thu, 27 Jun 2024 00:59:43 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:614aaae0c614008391cdb5e00fa4ce6588f5f40a931faa94c4127481a3695699`  
-		Last Modified: Fri, 21 Jun 2024 01:02:54 GMT  
-		Size: 263.0 B  
+	-	`sha256:89ef7ba0531035cc4544826099a5800cf6bd00d1d7031537918740fa84db2eda`  
+		Last Modified: Thu, 27 Jun 2024 00:59:44 GMT  
+		Size: 260.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:827ed697249cd2fd2c2cfe9244283ce72e7f6529ef3629317df21ff8c968cacc`  
-		Last Modified: Fri, 21 Jun 2024 01:02:55 GMT  
-		Size: 954.0 B  
+	-	`sha256:90c6a5d76b49928c052a25fecd8558cab10a542e98457001ca39547569931fd3`  
+		Last Modified: Thu, 27 Jun 2024 00:59:44 GMT  
+		Size: 953.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbc07682a755e8fffd2a00ee15c9e84098d6505c3c641455b3e43d31980100ce`  
-		Last Modified: Fri, 21 Jun 2024 01:02:55 GMT  
-		Size: 506.0 B  
+	-	`sha256:4becb98df7d1350ace6d8d85b4b97309233846312bae9cba163dd753844f1efe`  
+		Last Modified: Thu, 27 Jun 2024 00:59:45 GMT  
+		Size: 504.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `crate:latest` - unknown; unknown
 
 ```console
-$ docker pull crate@sha256:b6044da2e80947ef83e55f3a8842a3348623ef869654c486ec33ed5d76337847
+$ docker pull crate@sha256:dfe1cde09a4d5a59cf13deaea4c1cf4d0ff8061e8abc75b4b9b1ec60aa4d7edf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (4970684 bytes)**  
+-	Total Size: **5.0 MB (4970901 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97beef97edc7cb022ecc82873a952ace090859cf2f08b79d5ebf95ef3c716cc9`
+-	Image ID: `sha256:d314bdd7f2751e8e358faf9d6bc66df0b9f30377674aae51c4ed9a860ea13b52`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:25b17f4a39298d3085a6860b1f9667c5f133f39fd1ce8485c619eaf27254f885`  
-		Last Modified: Fri, 21 Jun 2024 01:02:53 GMT  
-		Size: 4.9 MB (4947789 bytes)  
+	-	`sha256:08c3db401c900d356edf9f601785badda8f6ccb988ac7fe978eb502034eab375`  
+		Last Modified: Thu, 27 Jun 2024 00:59:43 GMT  
+		Size: 4.9 MB (4947813 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c67e01d8f2b2222864e81ce69baaaeac78fc6afe597b5cc8e033d281f2c4ebb0`  
-		Last Modified: Fri, 21 Jun 2024 01:02:53 GMT  
-		Size: 22.9 KB (22895 bytes)  
+	-	`sha256:6d912f09ae5dee3635af7e781e3d7cdfd93b4cfe337bd21f83298f2c923f112e`  
+		Last Modified: Thu, 27 Jun 2024 00:59:43 GMT  
+		Size: 23.1 KB (23088 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `crate:latest` - linux; arm64 variant v8
