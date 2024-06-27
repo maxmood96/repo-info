@@ -2159,14 +2159,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.5.0-41.41
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.5.0-41.41.dsc' linux_6.5.0-41.41.dsc 9241 SHA512:6251d8ff867ffa7b49b024b23000dbe8548aa07aab943f8ae2006d551767c0e108654b9ff8fe984d44c412548518c477468140bf36b75d9eeab9b9d2e04dbc43
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.5.0.orig.tar.gz' linux_6.5.0.orig.tar.gz 223513863 SHA512:efc66eef13698e7210b7dd30ac5f664f64b4b186e6061b322b369d3e27a46e35696f3ee441b12928211992867a06042beb3d31903e469e0bd78c13895afa853e
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.5.0-41.41.diff.gz' linux_6.5.0-41.41.diff.gz 3563521 SHA512:ecf7b5b943569df75b0271898ea30a61384ce7a78174f2d8801b06d2b4ee722261afc097f76679e194fe9ffe6d67491cc06608a22e6c1cce9a630a55ef0f917a
-```
 
 ### `dpkg` source package: `llvm-toolchain-13=1:13.0.1-13`
 
