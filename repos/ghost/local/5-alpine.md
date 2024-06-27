@@ -1,10 +1,10 @@
-# `ghost:5.85.2-alpine`
+# `ghost:5.86.2-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fee9a94d9473fea61ce402fc677a759aaf8d668c796b98ade3aa1c4c3925a4a8`
-- Created: `2024-06-20T02:19:13Z`
-- Virtual Size: ~ 518.04 Mb  
+- Image ID: `sha256:9a6dda437ce13dbbb8be17e79031883569ee79e78153e3e43c0551be1b86156a`
+- Created: `2024-06-24T02:19:13Z`
+- Virtual Size: ~ 550.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,11 +13,12 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NODE_VERSION=18.20.3`
   - `YARN_VERSION=1.22.19`
+  - `GOSU_VERSION=1.17`
   - `NODE_ENV=production`
   - `GHOST_CLI_VERSION=1.26.0`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
-  - `GHOST_VERSION=5.85.2`
+  - `GHOST_VERSION=5.86.2`
 
 ## `apk` (`.apk`-based packages)
 
@@ -358,23 +359,6 @@ ssl_client-1.36.1-r19 installed size:
 
 ssl_client-1.36.1-r19 license:
 GPL-2.0-only
-
-```
-
-### `apk` package: `su-exec`
-
-```console
-su-exec-0.2-r3 description:
-switch user and group id, setgroups and exec
-
-su-exec-0.2-r3 webpage:
-https://github.com/ncopa/su-exec
-
-su-exec-0.2-r3 installed size:
-24 KiB
-
-su-exec-0.2-r3 license:
-MIT
 
 ```
 
