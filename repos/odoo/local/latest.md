@@ -1,10 +1,10 @@
-# `odoo:17.0-20240603`
+# `odoo:17.0-20240624`
 
 ## Docker Metadata
 
-- Image ID: `sha256:13b8db6db108352002d9cebd5435588849bbad817639423ea7bbbb4191ab9695`
-- Created: `2024-06-03T08:31:02Z`
-- Virtual Size: ~ 1.84 Gb  
+- Image ID: `sha256:235da3d214253f268d5dc060455876137fee03194e9cdc27337e0bcee8f08d18`
+- Created: `2024-06-24T09:13:48Z`
+- Virtual Size: ~ 1.78 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -5612,13 +5612,13 @@ $ apt-get source -qq --print-uris node-yallist=4.0.0+~4.0.1-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/n/node-yallist/node-yallist_4.0.0%2b%7e4.0.1-1.debian.tar.xz' node-yallist_4.0.0+~4.0.1-1.debian.tar.xz 3392 SHA512:4471e895fe38898f3aa0168457053cc28247d05b37b919543d2ebe46b41d640bb6869ad2e3e276ba4111366d88aa237b352ad9b37c73cca6a2bbc0b57d950003
 ```
 
-### `dpkg` source package: `nodejs=12.22.9~dfsg-1ubuntu3.5`
+### `dpkg` source package: `nodejs=12.22.9~dfsg-1ubuntu3.6`
 
 Binary Packages:
 
-- `libnode-dev=12.22.9~dfsg-1ubuntu3.5`
-- `libnode72:amd64=12.22.9~dfsg-1ubuntu3.5`
-- `nodejs=12.22.9~dfsg-1ubuntu3.5`
+- `libnode-dev=12.22.9~dfsg-1ubuntu3.6`
+- `libnode72:amd64=12.22.9~dfsg-1ubuntu3.6`
+- `nodejs=12.22.9~dfsg-1ubuntu3.6`
 
 Licenses: (parsed from: `/usr/share/doc/libnode-dev/copyright`, `/usr/share/doc/libnode72/copyright`, `/usr/share/doc/nodejs/copyright`)
 
@@ -5653,9 +5653,15 @@ Licenses: (parsed from: `/usr/share/doc/libnode-dev/copyright`, `/usr/share/doc/
 - `curl`
 - `zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nodejs=12.22.9~dfsg-1ubuntu3.6
+'http://archive.ubuntu.com/ubuntu/pool/universe/n/nodejs/nodejs_12.22.9%7edfsg-1ubuntu3.6.dsc' nodejs_12.22.9~dfsg-1ubuntu3.6.dsc 3545 SHA512:28deffd24685e3e5272c5b4f33e50803511df1639ee2744b5dbe15a1e513bef545676d1f9535c673e21542287eb850a59bffff56cf9355d5823dbb7fa7415a51
+'http://archive.ubuntu.com/ubuntu/pool/universe/n/nodejs/nodejs_12.22.9%7edfsg.orig-types-node.tar.xz' nodejs_12.22.9~dfsg.orig-types-node.tar.xz 86416 SHA512:ff967a05831a1a43c3bcf96744007713b51c279ee1b2b77075f8476b5791e28cc212511dc64c34e6c7d516865fd7f3cd7150c1664e664ada4e7c64f8b40fbcfc
+'http://archive.ubuntu.com/ubuntu/pool/universe/n/nodejs/nodejs_12.22.9%7edfsg.orig.tar.xz' nodejs_12.22.9~dfsg.orig.tar.xz 19022540 SHA512:83002dbabb3228fd9b1b9777246b2b8aebb6ba7ead005c1c65124a5809fdde7d9d9aa47d907e9a6fdf452e0febfa4c6e521c5d62ae8d6100454ba57f16110eb7
+'http://archive.ubuntu.com/ubuntu/pool/universe/n/nodejs/nodejs_12.22.9%7edfsg-1ubuntu3.6.debian.tar.xz' nodejs_12.22.9~dfsg-1ubuntu3.6.debian.tar.xz 169660 SHA512:aa96bacab25f631b6f8c0b7a93fea90e81873a23249b18962b257f0187478b8e34be4aaccea082b0a53b6ae37d1538df80f1e68def8aa4a4159f74c7bfba4273
+```
 
 ### `dpkg` source package: `npm=8.5.1~ds-1`
 
@@ -5700,11 +5706,11 @@ $ apt-get source -qq --print-uris npth=1.6-3build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3build2.debian.tar.xz' npth_1.6-3build2.debian.tar.xz 10904 SHA512:426ab3ab9e27b3701d67cde0a4c4040aa9ccac22a0266321824487fe80a118ccd6860b6fa0fb5ca3c46dfa3c20053889fbb51a2e74618065b3aff059a0216c4c
 ```
 
-### `dpkg` source package: `odoo=17.0.20240603`
+### `dpkg` source package: `odoo=17.0.20240624`
 
 Binary Packages:
 
-- `odoo=17.0.20240603`
+- `odoo=17.0.20240624`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -5785,15 +5791,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.15
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.15.dsc' openssl_3.0.2-0ubuntu1.15.dsc 2783 SHA512:502d0cc169f34a690d69b0da0a9be4248e65e6c43dfb0284fb1b2ea572828c9621326e163903b9dec709794eea78e2855d588503e856183fe4a7e5aa028d8c56
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.15.debian.tar.xz' openssl_3.0.2-0ubuntu1.15.debian.tar.xz 250272 SHA512:13b3c8e49e7da86750ed179bfc4e1a580ee213826d667386ed1d49847fd92a2dda59843def73ac597b13edeadfe2dd94ffb9602f573275f08510aedb8f51bb97
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
@@ -7529,19 +7529,25 @@ $ apt-get source -qq --print-uris tar=1.34+dfsg-1ubuntu0.1.22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.04.2.debian.tar.xz' tar_1.34+dfsg-1ubuntu0.1.22.04.2.debian.tar.xz 20544 SHA512:9840407a1364154c831665c3f1739c80a84806567fe5ad27ee3ac70f4c18e27d7f2f9e0557b6e2a634ab39449a8fc95b96f1813f5c203df8ece5226a6afe8c7c
 ```
 
-### `dpkg` source package: `tiff=4.3.0-6ubuntu0.8`
+### `dpkg` source package: `tiff=4.3.0-6ubuntu0.9`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.3.0-6ubuntu0.8`
+- `libtiff5:amd64=4.3.0-6ubuntu0.9`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.3.0-6ubuntu0.9
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.9.dsc' tiff_4.3.0-6ubuntu0.9.dsc 2358 SHA512:8cca6d5dae6d178fe5e3c1667ff3630d3667bd5407c75786b88d3b5bf900b2810c47072c0750a54f1c675fa07814dd080d6a95b9afbb7305a8d985214621cdeb
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz' tiff_4.3.0.orig.tar.gz 2808254 SHA512:e04a4a6c542e58a174c1e9516af3908acf1d3d3e1096648c5514f4963f73e7af27387a76b0fbabe43cf867a18874088f963796a7cd6e45deb998692e3e235493
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz.asc' tiff_4.3.0.orig.tar.gz.asc 488 SHA512:115a4c5714b52d0fbea800c494d83c8a96b70b2c9ce84a8df03205d9afc517faa17963f5f9508c013d7d3e2be6675b84b594a771a829406473234c4bd85e469e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.9.debian.tar.xz' tiff_4.3.0-6ubuntu0.9.debian.tar.xz 50428 SHA512:73af6c8521ae13d6f75227971fb633ce4383eac09ffe153ce4bcc4bf30edd14489ff5b1c7970cd74e0143e61028a300c50d14a021a7dfd7d93b6b496a7b6396a
+```
 
 ### `dpkg` source package: `tzdata=2024a-0ubuntu0.22.04`
 
