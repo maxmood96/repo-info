@@ -367,9 +367,13 @@ Licenses: (parsed from: `/usr/share/doc/cli-common/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cli-common=0.10xamarin5+debian10b1
+'https://download.mono-project.com/repo/debian/pool/main/c/cli-common/cli-common_0.10xamarin5%2bdebian10b1.dsc' cli-common_0.10xamarin5+debian10b1.dsc 1078 SHA256:b9d02ae0f0742d312514247c9826eef25755e4bad97f4aadb270b2196ab53f31
+'https://download.mono-project.com/repo/debian/pool/main/c/cli-common/cli-common_0.10xamarin5%2bdebian10b1.tar.gz' cli-common_0.10xamarin5+debian10b1.tar.gz 285164 SHA256:2c6c672b7d59768b469880948dce228ba0055451f0d555586a4f8f8f5e381a1c
+```
 
 ### `dpkg` source package: `coreutils=8.30-3`
 
@@ -1441,9 +1445,14 @@ Licenses: (parsed from: `/usr/share/doc/mono-llvm-tools/copyright`)
 - `U-OF-I-BSD-LIKE`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mono-llvm=6.0+mono20190708165219-0xamarin2+debian10b1
+'https://download.mono-project.com/repo/debian/pool/main/m/mono-llvm/mono-llvm_6.0%2bmono20190708165219-0xamarin2%2bdebian10b1.dsc' mono-llvm_6.0+mono20190708165219-0xamarin2+debian10b1.dsc 1317 SHA256:b954b9769186fc3ae107f76fc35e176636e48d3faa0e108040c741ae2e96948f
+'https://download.mono-project.com/repo/debian/pool/main/m/mono-llvm/mono-llvm_6.0%2bmono20190708165219.orig.tar.gz' mono-llvm_6.0+mono20190708165219.orig.tar.gz 39075413 SHA256:8a71115ab848cdc8e52eebd1c514533f93f07828c35addfe54331c5784cce0aa
+'https://download.mono-project.com/repo/debian/pool/main/m/mono-llvm/mono-llvm_6.0%2bmono20190708165219-0xamarin2%2bdebian10b1.debian.tar.xz' mono-llvm_6.0+mono20190708165219-0xamarin2+debian10b1.debian.tar.xz 6076 SHA256:547af3657e92984d434e8611830025b5a51533bc5a84d439719bb6fd7a597f9d
+```
 
 ### `dpkg` source package: `mono=6.12.0.182-0xamarin1+debian10b1`
 
@@ -1487,9 +1496,14 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-mono/copyright`, `/usr/s
 - `other`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mono=6.12.0.182-0xamarin1+debian10b1
+'https://download.mono-project.com/repo/debian/pool/main/m/mono/mono_6.12.0.182-0xamarin1%2bdebian10b1.dsc' mono_6.12.0.182-0xamarin1+debian10b1.dsc 19001 SHA256:4561b9365746371208030a71da330b6f19464986f44c6fc9fb5b77a7b0e72ffe
+'https://download.mono-project.com/repo/debian/pool/main/m/mono/mono_6.12.0.182.orig.tar.xz' mono_6.12.0.182.orig.tar.xz 303230932 SHA256:57366a6ab4f3b5ecf111d48548031615b3a100db87c679fc006e8c8a4efd9424
+'https://download.mono-project.com/repo/debian/pool/main/m/mono/mono_6.12.0.182-0xamarin1%2bdebian10b1.debian.tar.xz' mono_6.12.0.182-0xamarin1+debian10b1.debian.tar.xz 163496 SHA256:8c7dc71d9820e43b888749fc7925a85e0f755f2821cb5d2d76aa47573bf16cf4
+```
 
 ### `dpkg` source package: `ncurses=6.1+20181013-2+deb10u5`
 
