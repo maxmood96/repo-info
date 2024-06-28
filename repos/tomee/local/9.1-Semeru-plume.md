@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:48b08d42c0af4b237a8b6c184d164c8b5f986964a947dd02e49b3477cd4eee20`
+- Image ID: `sha256:325572cf09f623dc9546710571238afca3690155d4eade60bcf242a37ef87b2b`
 - Created: `2024-04-16T02:54:00Z`
 - Virtual Size: ~ 378.77 Mb  
   (total size of all layers on-disk)
@@ -1559,15 +1559,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.15
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.15.dsc' openssl_3.0.2-0ubuntu1.15.dsc 2783 SHA512:502d0cc169f34a690d69b0da0a9be4248e65e6c43dfb0284fb1b2ea572828c9621326e163903b9dec709794eea78e2855d588503e856183fe4a7e5aa028d8c56
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.15.debian.tar.xz' openssl_3.0.2-0ubuntu1.15.debian.tar.xz 250272 SHA512:13b3c8e49e7da86750ed179bfc4e1a580ee213826d667386ed1d49847fd92a2dda59843def73ac597b13edeadfe2dd94ffb9602f573275f08510aedb8f51bb97
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
