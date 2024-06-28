@@ -1,9 +1,9 @@
-# `wordpress:beta-6.6-beta4-php8.3-fpm`
+# `wordpress:beta-6.6-RC1-php8.3-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e0f2241853b05d441b2183e280e82ac67dfd55afdeef25264191f2fa4d2ea9cb`
-- Created: `2024-06-24T19:03:12Z`
+- Image ID: `sha256:06b80cfdc029111a33d0ca3e5a7cf58dbc5fc0b84a5889a8213932a4a332ed4c`
+- Created: `2024-06-25T19:03:11Z`
 - Virtual Size: ~ 681.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
