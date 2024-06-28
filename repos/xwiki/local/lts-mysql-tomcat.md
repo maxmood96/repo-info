@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2487dad97a820c29b9e0b91d0b62aa646147cd09c79adfc2dab70444b9e6df9d`
-- Created: `2024-05-27T13:30:04Z`
+- Image ID: `sha256:0771b2809854eada879bf13258701fd3a706719f29eba6e8d3857e8c6784ca9c`
+- Created: `2024-06-27T13:08:28Z`
 - Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -23,14 +23,14 @@
   - `TOMCAT_MAJOR=9`
   - `TOMCAT_VERSION=9.0.90`
   - `TOMCAT_SHA512=e77b47d7ded86da81018d38c4f728f5f804c1a65bb941a138a7989b69c859031e88d113ccf4fc3a409062ee24511fa5ccf15dfad333f570838ee2a36dae23e19`
-  - `XWIKI_VERSION=15.10.10`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.10.10`
-  - `XWIKI_DOWNLOAD_SHA256=fda9b5b4c1f471dc47e8cf2cb72b7550dbe6d6772887201be94c522a13b6078e`
-  - `MYSQL_JDBC_VERSION=8.3.0`
-  - `MYSQL_JDBC_SHA256=94e7fa815370cdcefed915db7f53f88445fac110f8c3818392b992ec9ee6d295`
-  - `MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/8.3.0`
-  - `MYSQL_JDBC_ARTIFACT=mysql-connector-j-8.3.0.jar`
-  - `MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-8.3.0.jar`
+  - `XWIKI_VERSION=15.10.11`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.10.11`
+  - `XWIKI_DOWNLOAD_SHA256=b69de0d6ae0d2cdd10efcd1913065f750de62b5147f553bc6772e42cc66e2e2c`
+  - `MYSQL_JDBC_VERSION=8.4.0`
+  - `MYSQL_JDBC_SHA256=d77962877d010777cff997015da90ee689f0f4bb76848340e1488f2b83332af5`
+  - `MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/8.4.0`
+  - `MYSQL_JDBC_ARTIFACT=mysql-connector-j-8.4.0.jar`
+  - `MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-8.4.0.jar`
 - Labels:
   - `org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki`
@@ -445,11 +445,11 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.2.debian.tar.xz' coreutils_8.32-4.1ubuntu1.2.debian.tar.xz 44868 SHA512:7718e917f8f2c5c5574e73a079ea8fd3b32bc898f2e12168dc3711dfdd896e4727283011050b80f65e60994fca49da031d70901d453612132764dca7dec99543
 ```
 
-### `dpkg` source package: `cups=2.4.1op1-1ubuntu4.8`
+### `dpkg` source package: `cups=2.4.1op1-1ubuntu4.9`
 
 Binary Packages:
 
-- `libcups2:amd64=2.4.1op1-1ubuntu4.8`
+- `libcups2:amd64=2.4.1op1-1ubuntu4.9`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -460,9 +460,14 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `FSFUL`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cups=2.4.1op1-1ubuntu4.9
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.9.dsc' cups_2.4.1op1-1ubuntu4.9.dsc 3176 SHA512:c55ff999824c26ff1b7bf3b7a702a1b3c05ee5276beb6c1f84c2173ac017bb85c983b5796e82bb2ad8087e55077484abb74ca3eb728afeda841b0d7dfe6b4ce7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1.orig.tar.gz' cups_2.4.1op1.orig.tar.gz 8113914 SHA512:74e83728fcc3baf709176442b26711250fd4d4ede1e81e35b02a5607711067e28cd5a05d5bc3337953f6b2236c5a429b13f3a7f1218a08a2d3c30a8c9b0d96fd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.9.debian.tar.xz' cups_2.4.1op1-1ubuntu4.9.debian.tar.xz 359196 SHA512:f83c2b64d7fcdb1e6462b07353691c97a387075b7bda9961185418c66da23173fd40cfe9b8ada4ed4a3e2e5fd203c8491a96983116629a37173c1aeeff5949e0
+```
 
 ### `dpkg` source package: `curl=7.81.0-1ubuntu1.16`
 
@@ -3147,15 +3152,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.15
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.15.dsc' openssl_3.0.2-0ubuntu1.15.dsc 2783 SHA512:502d0cc169f34a690d69b0da0a9be4248e65e6c43dfb0284fb1b2ea572828c9621326e163903b9dec709794eea78e2855d588503e856183fe4a7e5aa028d8c56
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.15.debian.tar.xz' openssl_3.0.2-0ubuntu1.15.debian.tar.xz 250272 SHA512:13b3c8e49e7da86750ed179bfc4e1a580ee213826d667386ed1d49847fd92a2dda59843def73ac597b13edeadfe2dd94ffb9602f573275f08510aedb8f51bb97
-```
 
 ### `dpkg` source package: `orc=1:0.4.32-2`
 
