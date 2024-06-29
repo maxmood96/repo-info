@@ -219,19 +219,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=11.1+deb11u9
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_11.1%2bdeb11u9.dsc' base-files_11.1+deb11u9.dsc 1110 SHA256:f679b907facc3f809481c193ba68e8bf2ea2c183d2c36d3f8c04bb3482d83f98
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_11.1%2bdeb11u9.tar.xz' base-files_11.1+deb11u9.tar.xz 65652 SHA256:a97872e320eaa264a34e81250ff747c703654e325812f1841b714d229ade30a7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/11.1+deb11u9/
 
-- https://sources.debian.net/src/base-files/11.1+deb11u9/ (for browsing the source)
-- https://sources.debian.net/src/base-files/11.1+deb11u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/11.1+deb11u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.51`
 
@@ -802,9 +796,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glibc=2.31-13+deb11u10
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u10.dsc' glibc_2.31-13+deb11u10.dsc 8351 SHA256:44074406fbc83225b0c498b95cc8cd50b98be4007048082ba5b07e94f3735c6e
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u10.debian.tar.xz' glibc_2.31-13+deb11u10.debian.tar.xz 965724 SHA256:540a944da49803b9d8b5053a0390bc476688761168a1917ad1a22b6969182eaa
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-13%2bdeb11u10.dsc' glibc_2.31-13+deb11u10.dsc 8351 SHA256:44074406fbc83225b0c498b95cc8cd50b98be4007048082ba5b07e94f3735c6e
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-13%2bdeb11u10.debian.tar.xz' glibc_2.31-13+deb11u10.debian.tar.xz 965724 SHA256:540a944da49803b9d8b5053a0390bc476688761168a1917ad1a22b6969182eaa
 ```
 
 Other potentially useful URLs:
@@ -900,21 +894,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u4
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u4.dsc' gnutls28_3.7.1-5+deb11u4.dsc 3519 SHA256:fe12190b21d411f2028df335af346a0065e802ab9093c79edcaf7244d644c383
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz' gnutls28_3.7.1.orig.tar.xz 6038388 SHA256:3777d7963eca5e06eb315686163b7b3f5045e2baac5e54e038ace9835e5cac6f
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz.asc' gnutls28_3.7.1.orig.tar.xz.asc 854 SHA256:13a683b12602c169a7ad7827ab0e3f35c8fa1f98675d0073cf7d54a8cd635582
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u4.debian.tar.xz' gnutls28_3.7.1-5+deb11u4.debian.tar.xz 97368 SHA256:b9e12496d76db8f1fd95aa9467a7ef680e74fe0be1314e138aba83c737780d61
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u4/
 
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u4/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gpm=1.20.7-8`
 
@@ -2305,10 +2291,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris php7.4=7.4.33-1+deb11u5
-'http://deb.debian.org/debian-security/pool/updates/main/p/php7.4/php7.4_7.4.33-1%2bdeb11u5.dsc' php7.4_7.4.33-1+deb11u5.dsc 5825 SHA256:0f374b4b07791304f4b366a7526e69e0ba9d85d7a6612890b9d34be5193df269
-'http://deb.debian.org/debian-security/pool/updates/main/p/php7.4/php7.4_7.4.33.orig.tar.xz' php7.4_7.4.33.orig.tar.xz 10420144 SHA256:924846abf93bc613815c55dd3f5809377813ac62a9ec4eb3778675b82a27b927
-'http://deb.debian.org/debian-security/pool/updates/main/p/php7.4/php7.4_7.4.33.orig.tar.xz.asc' php7.4_7.4.33.orig.tar.xz.asc 833 SHA256:569a01c7c605a4571fdf7dfadfff4215cc4a63ea5d474c7ec92bd7b4fecfffcb
-'http://deb.debian.org/debian-security/pool/updates/main/p/php7.4/php7.4_7.4.33-1%2bdeb11u5.debian.tar.xz' php7.4_7.4.33-1+deb11u5.debian.tar.xz 86144 SHA256:21885cc1308575eb8661d1d58e8249b74254f3991ebf52b631863b09240c1c21
+'http://deb.debian.org/debian/pool/main/p/php7.4/php7.4_7.4.33-1%2bdeb11u5.dsc' php7.4_7.4.33-1+deb11u5.dsc 5825 SHA256:0f374b4b07791304f4b366a7526e69e0ba9d85d7a6612890b9d34be5193df269
+'http://deb.debian.org/debian/pool/main/p/php7.4/php7.4_7.4.33.orig.tar.xz' php7.4_7.4.33.orig.tar.xz 10420144 SHA256:924846abf93bc613815c55dd3f5809377813ac62a9ec4eb3778675b82a27b927
+'http://deb.debian.org/debian/pool/main/p/php7.4/php7.4_7.4.33.orig.tar.xz.asc' php7.4_7.4.33.orig.tar.xz.asc 833 SHA256:569a01c7c605a4571fdf7dfadfff4215cc4a63ea5d474c7ec92bd7b4fecfffcb
+'http://deb.debian.org/debian/pool/main/p/php7.4/php7.4_7.4.33-1%2bdeb11u5.debian.tar.xz' php7.4_7.4.33-1+deb11u5.debian.tar.xz 86144 SHA256:21885cc1308575eb8661d1d58e8249b74254f3991ebf52b631863b09240c1c21
 ```
 
 Other potentially useful URLs:
@@ -2720,9 +2706,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris util-linux=2.36.1-8+deb11u2
-'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.36.1-8%2bdeb11u2.dsc' util-linux_2.36.1-8+deb11u2.dsc 4306 SHA256:16cfb1bc4d0a52f5edf2c78b5e022bb1fc180f03b93a5094b5c420a0d8d4431a
-'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.36.1.orig.tar.xz' util-linux_2.36.1.orig.tar.xz 5231880 SHA256:09fac242172cd8ec27f0739d8d192402c69417617091d8c6e974841568f37eed
-'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.36.1-8%2bdeb11u2.debian.tar.xz' util-linux_2.36.1-8+deb11u2.debian.tar.xz 106524 SHA256:0b07fbb79e1dab3be2568295664af950a7c3e589ce7821febf2ab0a3ccbe4862
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1-8%2bdeb11u2.dsc' util-linux_2.36.1-8+deb11u2.dsc 4306 SHA256:16cfb1bc4d0a52f5edf2c78b5e022bb1fc180f03b93a5094b5c420a0d8d4431a
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1.orig.tar.xz' util-linux_2.36.1.orig.tar.xz 5231880 SHA256:09fac242172cd8ec27f0739d8d192402c69417617091d8c6e974841568f37eed
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1-8%2bdeb11u2.debian.tar.xz' util-linux_2.36.1-8+deb11u2.debian.tar.xz 106524 SHA256:0b07fbb79e1dab3be2568295664af950a7c3e589ce7821febf2ab0a3ccbe4862
 ```
 
 Other potentially useful URLs:
