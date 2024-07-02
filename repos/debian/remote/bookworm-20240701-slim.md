@@ -1,17 +1,45 @@
 ## `debian:bookworm-20240701-slim`
 
 ```console
-$ docker pull debian@sha256:e51c0bd5a0b523a08eb384d4470691bc8091f33040bd8a78c44ba5f739472b9b
+$ docker pull debian@sha256:f528891ab1aa484bf7233dbcc84f3c806c3e427571d75510a9d74bb5ec535b33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 6
+-	Platforms: 8
+	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
+	-	linux; mips64le
 	-	linux; ppc64le
 	-	linux; s390x
+
+### `debian:bookworm-20240701-slim` - linux; amd64
+
+```console
+$ docker pull debian@sha256:39868a6f452462b70cf720a8daff250c63e7342970e749059c105bf7c1e8eeaf
+```
+
+-	Docker Version: 23.0.11
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **29.1 MB (29126278 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3eeb141ea1a1cfa8592ff9a9492ab89abac93160faf22d13e959cafdb7e8294e`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Tue, 02 Jul 2024 01:25:02 GMT
+ADD file:b24689567a7c604de93e4ef1dc87c372514f692556744da43925c575b4f80df6 in / 
+# Tue, 02 Jul 2024 01:25:02 GMT
+CMD ["bash"]
+```
+
+-	Layers:
+	-	`sha256:f11c1adaa26e078479ccdd45312ea3b88476441b91be0ec898a7e07bfd05badc`  
+		Last Modified: Tue, 02 Jul 2024 01:28:49 GMT  
+		Size: 29.1 MB (29126278 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:bookworm-20240701-slim` - linux; arm variant v5
 
@@ -115,6 +143,32 @@ CMD ["bash"]
 	-	`sha256:b9519b4198cfa047c0958f7cde32a32d32c6ae3486aea1aefc60e08ecf59449b`  
 		Last Modified: Tue, 02 Jul 2024 00:42:41 GMT  
 		Size: 30.1 MB (30144275 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `debian:bookworm-20240701-slim` - linux; mips64le
+
+```console
+$ docker pull debian@sha256:19518838b221e1d8a936f46092d4dedde9e266d7f4e7efeeae4b966001076d8f
+```
+
+-	Docker Version: 23.0.11
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **29.1 MB (29124929 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7f2e391cfbc8ece5cecfd0ab6687037a3f0a3d5c7b87fb79efeb240c249b79ea`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Tue, 02 Jul 2024 01:18:23 GMT
+ADD file:9a0f0c8ed27f6f2bb89272036da4d44a63dcaf43fb03528dd2d970fbe64ccc92 in / 
+# Tue, 02 Jul 2024 01:18:27 GMT
+CMD ["bash"]
+```
+
+-	Layers:
+	-	`sha256:cbefe199012545da86e0f461f1964dea0c9bab400e37766ee5f32b967423cf0b`  
+		Last Modified: Tue, 02 Jul 2024 01:29:29 GMT  
+		Size: 29.1 MB (29124929 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:bookworm-20240701-slim` - linux; ppc64le
