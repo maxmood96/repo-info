@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:842b70c2f23de7b8f437f100518ae86b2370a0025cc25afbcb7cb897ad21611f`
+- Image ID: `sha256:7cdd7aa774f5c58524718618fca549e96c73ac2132d91efa5224240dda65abd5`
 - Created: `2024-02-13T09:10:03Z`
 - Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
@@ -445,11 +445,11 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.2.debian.tar.xz' coreutils_8.32-4.1ubuntu1.2.debian.tar.xz 44868 SHA512:7718e917f8f2c5c5574e73a079ea8fd3b32bc898f2e12168dc3711dfdd896e4727283011050b80f65e60994fca49da031d70901d453612132764dca7dec99543
 ```
 
-### `dpkg` source package: `cups=2.4.1op1-1ubuntu4.8`
+### `dpkg` source package: `cups=2.4.1op1-1ubuntu4.10`
 
 Binary Packages:
 
-- `libcups2:amd64=2.4.1op1-1ubuntu4.8`
+- `libcups2:amd64=2.4.1op1-1ubuntu4.10`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -460,9 +460,14 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `FSFUL`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cups=2.4.1op1-1ubuntu4.10
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.10.dsc' cups_2.4.1op1-1ubuntu4.10.dsc 3180 SHA512:099d5788cd0b8650d84f7cc74760cfc2e2d65a932b2a390af179b0861116f82002432dcf719468df521a78cbef6d66f768588fe331a62c4bf40c3380486e3659
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1.orig.tar.gz' cups_2.4.1op1.orig.tar.gz 8113914 SHA512:74e83728fcc3baf709176442b26711250fd4d4ede1e81e35b02a5607711067e28cd5a05d5bc3337953f6b2236c5a429b13f3a7f1218a08a2d3c30a8c9b0d96fd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.10.debian.tar.xz' cups_2.4.1op1-1ubuntu4.10.debian.tar.xz 359840 SHA512:9a5e7248e24f6f57f315a1e8a9e85281af1b05125ac08747112aeacb5a83f617450d1a75b9e07095ee3980f2b6df6dd9d4582c2182b0a9850b6118f8a9946aca
+```
 
 ### `dpkg` source package: `curl=7.81.0-1ubuntu1.16`
 
@@ -3137,10 +3142,9 @@ $ apt-get source -qq --print-uris openldap=2.5.17+dfsg-0ubuntu0.22.04.1
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.2-0ubuntu1.15`
 - `openssl=3.0.2-0ubuntu1.15`
 
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -3150,6 +3154,29 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.16`
+
+Binary Packages:
+
+- `libssl3:amd64=3.0.2-0ubuntu1.16`
+
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
+
+- `Apache-2.0`
+- `Artistic`
+- `GPL-1`
+- `GPL-1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.16
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.16.dsc' openssl_3.0.2-0ubuntu1.16.dsc 2422 SHA512:67194c2cbccc48be8fd3d81da7712a5815c13dee5af5b2597e9322159f25f0bfd8eebb78438948e8ec29d8b4171e6ad4b9bc3e5d4ff289d4952a8910a9fd9448
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.16.debian.tar.xz' openssl_3.0.2-0ubuntu1.16.debian.tar.xz 253388 SHA512:1eda93da47f41fda5d38c752dde9bc08204ab2a555dcd8ea4ce5257ac615229181b915bcf87730dd433567fdbdef45e38c4ed170b703f5aa08bb303b4ae61197
+```
 
 ### `dpkg` source package: `orc=1:0.4.32-2`
 
