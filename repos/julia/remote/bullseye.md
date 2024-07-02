@@ -1,7 +1,7 @@
 ## `julia:bullseye`
 
 ```console
-$ docker pull julia@sha256:6dbf44db71b9aedb593e3776d0aa6f67c76a6c6e8d68324f3a4319f4cd9e77d6
+$ docker pull julia@sha256:09816c11c8796059da57ea62ed69dd1609fc055d59cd3c242777f01b82b45d8c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -98,19 +98,19 @@ $ docker pull julia@sha256:af6b8d0a1c6e08bd8159bb08097f64c30f75723e875614934a24f
 ### `julia:bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull julia@sha256:0fa1587f1514efa60df23dce366d2a25bc1e0564cbae77c9cd254038ac63c6de
+$ docker pull julia@sha256:a2fb0cad7755b0f42b940895cec5dbcd01032af70830a8dc36020529664cafdf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **210.6 MB (210598961 bytes)**  
+-	Total Size: **210.8 MB (210785764 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23a9fe2694037256b1a8f795edc687bb9149ca31cb00a73dc15bd41a3d7c6043`
+-	Image ID: `sha256:4a17bae773f2868396726605037f81101e3c36fcd10ff2a70abf64608d9c26c8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["julia"]`
 
 ```dockerfile
 # Tue, 04 Jun 2024 23:59:16 GMT
-ADD file:55edb70d595bba9782144ef15994a2ae5c40adeb65f6c3acd6570a0c148ffa96 in / 
+ADD file:17d80cdc7d7b37786a32ac4e261c7d17cd4d80248ae39f9574ab5a6bf6a2707c in / 
 # Tue, 04 Jun 2024 23:59:16 GMT
 CMD ["bash"]
 # Tue, 04 Jun 2024 23:59:16 GMT
@@ -134,44 +134,44 @@ CMD ["julia"]
 ```
 
 -	Layers:
-	-	`sha256:ca4da1869379178993d4f7abc946f75e7515789ff7e15c7ccfedfc8e2bfeaf6d`  
-		Last Modified: Thu, 13 Jun 2024 00:43:54 GMT  
-		Size: 30.1 MB (30086973 bytes)  
+	-	`sha256:d13ad33c16eef01d20d5563bfb2ec4f25c0d12699b40cdab418e47b88d2f02e2`  
+		Last Modified: Tue, 02 Jul 2024 00:43:04 GMT  
+		Size: 30.1 MB (30069615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96d9afea3b5dcd6ad873b75be34809049755bf189c270ab1e5bc0e35d4458518`  
-		Last Modified: Thu, 13 Jun 2024 19:21:27 GMT  
-		Size: 2.2 MB (2210839 bytes)  
+	-	`sha256:b92d98b488a344d738b3aa093dccddd045a799ca29d31cd6a0b8f8675cec7d08`  
+		Last Modified: Tue, 02 Jul 2024 15:35:27 GMT  
+		Size: 2.4 MB (2415070 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd84ff59f7540299fe41695869e27e42b386e145ff9ae49aa6d5be597b7c6c0b`  
-		Last Modified: Thu, 13 Jun 2024 19:23:41 GMT  
-		Size: 178.3 MB (178300776 bytes)  
+	-	`sha256:ec497b16d70d2d355b2e15e1e1499fb9b4dadf3b5a42a2e9eb94deeaf2c171d7`  
+		Last Modified: Tue, 02 Jul 2024 15:37:48 GMT  
+		Size: 178.3 MB (178300708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:faf78b2ced919392195d870c35bc5f3f1fed591935265cb95b1ca7e2d5259f4e`  
-		Last Modified: Thu, 13 Jun 2024 19:23:37 GMT  
-		Size: 373.0 B  
+	-	`sha256:3967514081ed11849b0e1e2179c52aaf956e571232fa8947700aa4ec984fe031`  
+		Last Modified: Tue, 02 Jul 2024 15:37:44 GMT  
+		Size: 371.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `julia:bullseye` - unknown; unknown
 
 ```console
-$ docker pull julia@sha256:4dedd5ff081fb56810a5deb8b86b7ae77c190780098e88129f855401087dd813
+$ docker pull julia@sha256:e11fc5570934f5226eaa7fe186d3876deb66cdb3b023c72241b50e0b4470e4bc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2698006 bytes)**  
+-	Total Size: **2.7 MB (2698045 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d6bbe3fb75cb940527e1fb0c001568a1040dbe6863cd5c5e3c54028b77dd91ef`
+-	Image ID: `sha256:d8257a07498427246c07bce4680f1cefc537d8133e16458cda0564300378c365`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3187929cfac1d60d54f5ae8f0a8b16e184c85f48f8481e87b6285d4f2e1403ca`  
-		Last Modified: Thu, 13 Jun 2024 19:23:37 GMT  
-		Size: 2.7 MB (2680673 bytes)  
+	-	`sha256:9ddbdb1ea5df8933d5260bd093f429559c5850d02f17f61d6d065d686f3b83b1`  
+		Last Modified: Tue, 02 Jul 2024 15:37:45 GMT  
+		Size: 2.7 MB (2680712 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7b6d37414e50f55b4c67b7bd4d5440635cebdf52654dd68c013348fb296681b0`  
-		Last Modified: Thu, 13 Jun 2024 19:23:36 GMT  
+	-	`sha256:a9b5c9b7965eb5bc7d2bfb782df855cf7456aa6fedb5797bba567d44d6b09dd5`  
+		Last Modified: Tue, 02 Jul 2024 15:37:44 GMT  
 		Size: 17.3 KB (17333 bytes)  
 		MIME: application/vnd.in-toto+json
 
