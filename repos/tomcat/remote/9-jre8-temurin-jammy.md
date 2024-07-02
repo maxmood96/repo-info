@@ -1,7 +1,7 @@
 ## `tomcat:9-jre8-temurin-jammy`
 
 ```console
-$ docker pull tomcat@sha256:53c74330b767301663e3cb0b77211b3545e70788c787f455d607748508384588
+$ docker pull tomcat@sha256:b75147733ead9c6bbeb22f725f046f06a7d91e35f7c1c54348e522249c58b5b6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,27 +18,27 @@ $ docker pull tomcat@sha256:53c74330b767301663e3cb0b77211b3545e70788c787f455d607
 ### `tomcat:9-jre8-temurin-jammy` - linux; amd64
 
 ```console
-$ docker pull tomcat@sha256:45858d7930bd4523dd6ff8b2085a05cf0ba2b1d8c8c2415ad6b0e717d7ef559a
+$ docker pull tomcat@sha256:f4b970ec1800efe4d647bb034e421dde51b59bee1bc843a9b94f6f17ae351d76
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.6 MB (100634575 bytes)**  
+-	Total Size: **97.9 MB (97854131 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86404a97e447fb1a7552c10d57eacb4608eaba058699b1b5da71f169a1dea460`
+-	Image ID: `sha256:4eb4dc84ff2c5b6594c732338565a45e8e53b90582907bec9eb50d14c81c658a`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:32:23 GMT
+# Wed, 19 Jun 2024 14:03:42 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:32:23 GMT
+# Wed, 19 Jun 2024 14:03:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:32:23 GMT
+# Wed, 19 Jun 2024 14:03:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:32:23 GMT
+# Wed, 19 Jun 2024 14:03:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:32:25 GMT
-ADD file:89847d76d242dea90ede05e9e1e13a1ff4400a65eafbe2d6e31e086c93893580 in / 
-# Mon, 03 Jun 2024 10:32:26 GMT
+# Wed, 19 Jun 2024 14:03:42 GMT
+ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
+# Wed, 19 Jun 2024 14:03:42 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -93,41 +93,41 @@ CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:2ec76a50fe7c8d5db9ec25590b9217e14e3920513c6e7b5be55db72a16b55f7c`  
-		Last Modified: Fri, 31 May 2024 03:03:19 GMT  
-		Size: 30.4 MB (30439283 bytes)  
+	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
+		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
+		Size: 30.4 MB (30439866 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fab7f202453ac8b8def634e399240ab2bd7247e2f125fbddd2dbaaa8fa4ce555`  
-		Last Modified: Wed, 05 Jun 2024 04:58:06 GMT  
-		Size: 12.9 MB (12904817 bytes)  
+	-	`sha256:708ff3b02f8b7b7711302f65e71cb2abbb60946f996f61dec11ce5788fc08f11`  
+		Last Modified: Tue, 02 Jul 2024 06:00:37 GMT  
+		Size: 12.9 MB (12871067 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ad8a9774f3d336c4bef8be489ea3445a1aa69933f5ead6c4b42f80a1c4ef32f`  
-		Last Modified: Wed, 05 Jun 2024 04:58:44 GMT  
-		Size: 41.9 MB (41877280 bytes)  
+	-	`sha256:73db916d589454bffd52167383eac744cdefb345d6b6b0b6652d659dbcc9f628`  
+		Last Modified: Tue, 02 Jul 2024 06:00:59 GMT  
+		Size: 41.9 MB (41877311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e281aa36619348a9333b1030c5f8a40a41189d2e58ce2cfa09aca7c9ddf30b2`  
-		Last Modified: Wed, 05 Jun 2024 04:58:40 GMT  
+	-	`sha256:874e77af88e5fb8b839de4d00efda891820e4585806088daf1e762c7eeef7b18`  
+		Last Modified: Tue, 02 Jul 2024 06:00:54 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f93e3eea54631fb5cdaffe1eae4435563285c9db8c3ef0d73cb33662bc476488`  
-		Last Modified: Wed, 05 Jun 2024 04:58:40 GMT  
-		Size: 734.0 B  
+	-	`sha256:67aa025295fa0d97dbb44d5af5fc3f5128c922d2ed5b4f70450b9c19ed2cb26a`  
+		Last Modified: Tue, 02 Jul 2024 06:00:54 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76fdfd6e4540010482e3275cd18634bed842bd03f7b86c7b1d7651bec2d5fe37`  
-		Last Modified: Fri, 28 Jun 2024 21:59:49 GMT  
+	-	`sha256:95e7b7810b8886f818e9827b53f5743d0f5ee4f5e6b70fc60c5dc2d998d19f13`  
+		Last Modified: Tue, 02 Jul 2024 09:09:22 GMT  
 		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4adc983e746ccd08a713370caf3109aa9660a8f7bc568ae2527ec1b0c5c9c83d`  
-		Last Modified: Fri, 28 Jun 2024 21:59:50 GMT  
-		Size: 12.4 MB (12447018 bytes)  
+	-	`sha256:a265ffbdb02d2901af4a61b5d3fa7fda7c6ef62540cc60b4001ef9e817675e8b`  
+		Last Modified: Tue, 02 Jul 2024 09:09:23 GMT  
+		Size: 12.4 MB (12447022 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3a3b9428b2959e375098d3e2590ccd5c73e949dbbd5332376a318d28627688a`  
-		Last Modified: Fri, 28 Jun 2024 21:59:50 GMT  
-		Size: 3.0 MB (2965111 bytes)  
+	-	`sha256:0b98e82c1d427a870438bcae6e63e4fd87bfb0821112ceda83bf28b880ccabf0`  
+		Last Modified: Tue, 02 Jul 2024 09:09:23 GMT  
+		Size: 217.8 KB (217800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -137,25 +137,25 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:9-jre8-temurin-jammy` - unknown; unknown
 
 ```console
-$ docker pull tomcat@sha256:04d53c88f9562f197e42c706245407bf0c65cef33ed3597de38e5b2d548f52b4
+$ docker pull tomcat@sha256:ef6670122c62d1d8ede513b73afa93af7b9eda377738e7d65f4f1db4a871c24f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.5 MB (3541341 bytes)**  
+-	Total Size: **3.5 MB (3539598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69dc0c2a5c6f32a3292e3e3c203e452bf16b1c9407d33c59c72630e24e0315dd`
+-	Image ID: `sha256:0833ede9a8ac40b401153b649fdd0ce22dd51beeeb965d13484ac3d958277e6b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c521acac7e3061acbd6c494f902d9e4f520f1a985635f7bb7fc0c002c8f33d93`  
-		Last Modified: Fri, 28 Jun 2024 21:59:49 GMT  
-		Size: 3.5 MB (3517622 bytes)  
+	-	`sha256:0bbda83143bac53b4a8e0a69201d7ea6c84ff779e0d77b37abd0216540946b88`  
+		Last Modified: Tue, 02 Jul 2024 09:09:23 GMT  
+		Size: 3.5 MB (3515881 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f639d6b08ff951bb480f73e274187863495eb0ca2f3c67ff3ea815eda5e34bdf`  
-		Last Modified: Fri, 28 Jun 2024 21:59:49 GMT  
-		Size: 23.7 KB (23719 bytes)  
+	-	`sha256:ee261c2fa0ddf2c1d3c206de2786960153fee43c0f987ebbb03c247f7cf51b97`  
+		Last Modified: Tue, 02 Jul 2024 09:09:22 GMT  
+		Size: 23.7 KB (23717 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `tomcat:9-jre8-temurin-jammy` - linux; arm variant v7
