@@ -1,7 +1,7 @@
 ## `perl:slim-bullseye`
 
 ```console
-$ docker pull perl@sha256:214eecc42c7a5a93aa8e191c22922c4fc4a3e5e28f0def9fd4b04eb14cddc03f
+$ docker pull perl@sha256:6e47a54ecb86c1c9ceef037d3b0f5b2c538fb88c06e453e43fd4c6a549382800
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -436,18 +436,18 @@ $ docker pull perl@sha256:0ba8b0d86ec6c3b2690e626f55dfcf0c5f3aab21e56e77a3f0d8c2
 ### `perl:slim-bullseye` - linux; ppc64le
 
 ```console
-$ docker pull perl@sha256:d1ce4991e53aaf9802862d7d274d09365c0ad16940df45a1178022cd3606f164
+$ docker pull perl@sha256:063248f801046b452feb3fddeb830947a4aa95c26e1a08f9dc09203a3964fcee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **60.2 MB (60233965 bytes)**  
+-	Total Size: **60.4 MB (60425957 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69bbcef6e3d4e12f6b0f586e111e595ee267c46e0a18a2670a746a208bb059df`
+-	Image ID: `sha256:8f0d841707319b60c6e5e5c1437e50a191925b4959eabd4464c4c1916ff395a3`
 -	Default Command: `["perl5.40.0","-de0"]`
 
 ```dockerfile
 # Mon, 10 Jun 2024 03:33:39 GMT
-ADD file:a150537fc528657f8fa98f90c4629e38f111c3c3ef60bd40c28205959899c1a3 in / 
+ADD file:8fcbfde241e9377ada40ad73089516c86d20e018c99a8192ba63a50f0168b8b9 in / 
 # Mon, 10 Jun 2024 03:33:39 GMT
 CMD ["bash"]
 # Mon, 10 Jun 2024 03:33:39 GMT
@@ -461,44 +461,44 @@ CMD ["perl5.40.0" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:64741f366161eb41a5c86810e08ceabb9f4e4b69ac16c725aa2d48f19486e1be`  
-		Last Modified: Thu, 13 Jun 2024 01:22:19 GMT  
-		Size: 35.3 MB (35311302 bytes)  
+	-	`sha256:687d52b24394339ceb9470debd0e5f0d6b612ceb063cc228cbef23d23fb7f6a2`  
+		Last Modified: Tue, 02 Jul 2024 01:22:46 GMT  
+		Size: 35.3 MB (35299189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9487ed6caa49eccf6882b53c3a997df7895565e367ad4f42bb10a1813b2db795`  
-		Last Modified: Fri, 14 Jun 2024 01:41:53 GMT  
+	-	`sha256:f338afe8b7bcff70cf7ac67a6d0ed8d4a149c0bcb998daffb05f9240f9c9767f`  
+		Last Modified: Tue, 02 Jul 2024 12:18:26 GMT  
 		Size: 135.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a03c4406834fda74e147297404f3cac330cda4dab35e8dccb29fa16c3c1f0343`  
-		Last Modified: Fri, 14 Jun 2024 01:41:54 GMT  
-		Size: 24.9 MB (24922396 bytes)  
+	-	`sha256:f7b4523f808581c80e60f6a6c490fd521981fdcea6f5e35c8a08276b713432d0`  
+		Last Modified: Tue, 02 Jul 2024 12:18:27 GMT  
+		Size: 25.1 MB (25126502 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:807cd44fe7241d145c7b1e0b5334de0867bf7e9195392dbeb3669f43ceac2cbf`  
-		Last Modified: Fri, 14 Jun 2024 01:41:53 GMT  
-		Size: 132.0 B  
+	-	`sha256:1471d7a1252f8f6cd50e4b850d44ee1b64a874b291466b059a544f72efa0979f`  
+		Last Modified: Tue, 02 Jul 2024 12:18:26 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `perl:slim-bullseye` - unknown; unknown
 
 ```console
-$ docker pull perl@sha256:e854da998af4f26ae5f2f8c62c7063409b72055e7e724c37bd3cc4ec3d3af826
+$ docker pull perl@sha256:ba15a3915ac35be1724ae89702a9d3212da467f02787fd753230785f1c1f87c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.9 MB (3917995 bytes)**  
+-	Total Size: **3.9 MB (3917998 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:46044527181362ed3289b9d7448f7c7043f538753f515096fbd4d4bcc5ff9829`
+-	Image ID: `sha256:d55f6ab9397ba3a891e1c259ce3b88541798fee539cd642df5ccdeb1f9d00fc3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b6e8d706d3541d47ce738853f036daf7dbb9e088f4f253d939f655469332f2f`  
-		Last Modified: Fri, 14 Jun 2024 01:41:53 GMT  
-		Size: 3.9 MB (3901693 bytes)  
+	-	`sha256:010f87fdc47007fbaf3e15092ed9a3287f5956f3b24f281f9d309a7a5e468084`  
+		Last Modified: Tue, 02 Jul 2024 12:18:27 GMT  
+		Size: 3.9 MB (3901696 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a175014170faa15c756692b22a282e52e34d0badd1d8b8b903f831daa7057437`  
-		Last Modified: Fri, 14 Jun 2024 01:41:53 GMT  
+	-	`sha256:58447110c5da174ea9a0ebf7ef0665b3e2b8cd1d9ff89c74bb8bc9b630bde03f`  
+		Last Modified: Tue, 02 Jul 2024 12:18:26 GMT  
 		Size: 16.3 KB (16302 bytes)  
 		MIME: application/vnd.in-toto+json
 
