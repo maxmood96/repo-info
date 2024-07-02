@@ -6461,19 +6461,39 @@ $ docker pull httpd@sha256:8764976809c3dd3b7ab651dc0e436df06f314a93a5466366251b8
 
 ## `httpd:2.4.60`
 
-**does not exist** (yet?)
+```console
+$ docker pull httpd@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `httpd:2.4.60-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull httpd@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `httpd:2.4.60-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull httpd@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `httpd:2.4.60-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull httpd@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `httpd:alpine`
 
