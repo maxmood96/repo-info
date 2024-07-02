@@ -1,7 +1,7 @@
 ## `wordpress:php8.2-fpm`
 
 ```console
-$ docker pull wordpress@sha256:e602c07285854094fde0ff8edc6b7e863d6ca60d86391efa600b931cacf22521
+$ docker pull wordpress@sha256:54072b0acb9a1e33acb5363fede77f50402be114be1d012315095818a020ff3e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,66 +26,66 @@ $ docker pull wordpress@sha256:e602c07285854094fde0ff8edc6b7e863d6ca60d86391efa6
 ### `wordpress:php8.2-fpm` - linux; amd64
 
 ```console
-$ docker pull wordpress@sha256:a90ead2426a7f1be0810782e72da7b07fe59e0f81422bd5cbafcf750d3e58a08
+$ docker pull wordpress@sha256:9db8b5096696120d886c2c1bd73f15dec902229afe3ca2303de10f65da408275
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.0 MB (236959907 bytes)**  
+-	Total Size: **236.9 MB (236918066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9e4f91cfb96979735558a534cb2417ef414488fd281b30c6f97d2d1968c576c`
+-	Image ID: `sha256:221863b2b85f91abd18e6df99cafcccee543e7837a03d2807b05878c45fa66a7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Thu, 13 Jun 2024 01:20:56 GMT
-ADD file:5f9954090af042b377ea0d1d184faa64d2e9d4c946b6c3898d52aff47e764056 in / 
-# Thu, 13 Jun 2024 01:20:56 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
+ADD file:b24689567a7c604de93e4ef1dc87c372514f692556744da43925c575b4f80df6 in / 
+# Mon, 24 Jun 2024 19:12:59 GMT
 CMD ["bash"]
-# Thu, 13 Jun 2024 01:55:50 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php
-# Thu, 13 Jun 2024 01:55:51 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Thu, 13 Jun 2024 01:56:14 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 13 Jun 2024 01:56:15 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Thu, 13 Jun 2024 01:56:15 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html
-# Thu, 13 Jun 2024 01:56:15 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Thu, 13 Jun 2024 01:56:15 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Thu, 13 Jun 2024 01:56:15 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Thu, 13 Jun 2024 02:27:33 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Thu, 13 Jun 2024 02:27:33 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENV PHP_VERSION=8.2.20
-# Thu, 13 Jun 2024 02:27:33 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.2.20.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.20.tar.xz.asc
-# Thu, 13 Jun 2024 02:27:33 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENV PHP_SHA256=4474cc430febef6de7be958f2c37253e5524d5c5331a7e1765cd2d2234881e50
-# Thu, 13 Jun 2024 02:27:43 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Thu, 13 Jun 2024 02:27:44 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Thu, 13 Jun 2024 02:38:56 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 'riscv64-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Thu, 13 Jun 2024 02:38:57 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 COPY multi:869bde9dbeae74886a05c9e2107b3e3b4877116db8c6d9adbaff2719f9fb5262 in /usr/local/bin/ 
-# Thu, 13 Jun 2024 02:38:57 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 RUN docker-php-ext-enable sodium
-# Thu, 13 Jun 2024 02:38:58 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Thu, 13 Jun 2024 02:38:58 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 WORKDIR /var/www/html
-# Thu, 13 Jun 2024 02:38:58 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini"
-# Thu, 13 Jun 2024 02:38:58 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 STOPSIGNAL SIGQUIT
-# Thu, 13 Jun 2024 02:38:59 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 EXPOSE 9000
-# Thu, 13 Jun 2024 02:38:59 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 CMD ["php-fpm"]
 # Mon, 24 Jun 2024 19:12:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ghostscript 	; 	rm -rf /var/lib/apt/lists/* # buildkit
@@ -110,96 +110,96 @@ CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:2cc3ae149d28a36d28d4eefbae70aaa14a0c9eab588c3790f7979f310b893c44`  
-		Last Modified: Thu, 13 Jun 2024 01:25:30 GMT  
-		Size: 29.2 MB (29150430 bytes)  
+	-	`sha256:f11c1adaa26e078479ccdd45312ea3b88476441b91be0ec898a7e07bfd05badc`  
+		Last Modified: Tue, 02 Jul 2024 01:28:49 GMT  
+		Size: 29.1 MB (29126278 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01c187ab622ce6623bfc28e291735e4d79466116c66b38ea155d2e56e503980c`  
-		Last Modified: Thu, 13 Jun 2024 03:29:22 GMT  
-		Size: 224.0 B  
+	-	`sha256:91c1fd48de30b16f5766e6ac96a6fe3c0b3241c34c93fe82ddc8a8536729dd53`  
+		Last Modified: Tue, 02 Jul 2024 04:36:30 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4382a8829fff65dc205865ad03b19117fdcea939ac1f8d5ab37309ad641e4c3d`  
-		Last Modified: Thu, 13 Jun 2024 03:29:37 GMT  
-		Size: 104.4 MB (104357495 bytes)  
+	-	`sha256:c3b3bda7c6d1ae6620633030596609872e7f2b102e3f274f02c71ee92e136cb7`  
+		Last Modified: Tue, 02 Jul 2024 04:36:44 GMT  
+		Size: 104.3 MB (104349018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43046b340e345aef56c4f6f9a15ed3640207000305855ed512de8f87b1ac602b`  
-		Last Modified: Thu, 13 Jun 2024 03:29:22 GMT  
-		Size: 224.0 B  
+	-	`sha256:65a68eb681dd3cc5f145cf854bf049843298d6ee06c3259ddff5bf4793710a80`  
+		Last Modified: Tue, 02 Jul 2024 04:36:30 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbb4fe59d724c506086c7425394d8a5166320ca53c1876d18913a6f761f4b717`  
-		Last Modified: Thu, 13 Jun 2024 03:33:06 GMT  
-		Size: 12.4 MB (12413796 bytes)  
+	-	`sha256:1078863af50105d4f1122aad8d55e019ccd437801a738739a357b31c3b7279f1`  
+		Last Modified: Tue, 02 Jul 2024 04:44:12 GMT  
+		Size: 12.4 MB (12411736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d8d827eb2f34e36ecf2f76112de2d5502a3fc1490602ccddeeccfbb608fdd95`  
-		Last Modified: Thu, 13 Jun 2024 03:33:05 GMT  
-		Size: 491.0 B  
+	-	`sha256:cd9e8cd831bb384a01276778888964241f7c3116477dfabe77a1437f75f3f73b`  
+		Last Modified: Tue, 02 Jul 2024 04:44:11 GMT  
+		Size: 493.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:490930ca387b6d3eff02f84cad1e9bd78903b0e4dc9949e2de3d3ea0874cdeb2`  
-		Last Modified: Thu, 13 Jun 2024 03:33:49 GMT  
-		Size: 27.8 MB (27778712 bytes)  
+	-	`sha256:62f23963d99b186b7f3a781972bd50867d05094a9a66e8503b78283db64a28d6`  
+		Last Modified: Tue, 02 Jul 2024 04:44:53 GMT  
+		Size: 27.8 MB (27777322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f151000076c71bca01b1e060111d66a8197e2551e0bce76a35237441100d04c6`  
-		Last Modified: Thu, 13 Jun 2024 03:33:45 GMT  
-		Size: 2.4 KB (2449 bytes)  
+	-	`sha256:0384fa15ce8ee5bd0fce8ec4c0ef23025cad40ac3fb844c42022df9c9c94759f`  
+		Last Modified: Tue, 02 Jul 2024 04:44:49 GMT  
+		Size: 2.5 KB (2451 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3580aca10392fc198f6a100d095e7316d0d8e66c4c39c8014f8e8f63fe617c36`  
-		Last Modified: Thu, 13 Jun 2024 03:33:45 GMT  
-		Size: 247.0 B  
+	-	`sha256:c9cee881646d88b194de684ced4404223eea154150f51a6751e80f64e4d69d8d`  
+		Last Modified: Tue, 02 Jul 2024 04:44:49 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14a597ecc1c3ba0b6559e5abc2c5e934f4f2986889d6091c83a5bb8f1e4719ed`  
-		Last Modified: Thu, 13 Jun 2024 03:33:45 GMT  
-		Size: 9.2 KB (9183 bytes)  
+	-	`sha256:377abbba7cfdb92e46fb7c7c76f52436b86d397562ffa14bb32b255cbeee8155`  
+		Last Modified: Tue, 02 Jul 2024 04:44:49 GMT  
+		Size: 9.2 KB (9178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9aa8d5a81ae66809e74663d8ddeae927014d73fc09d7fbb2d087b52da1ce2231`  
-		Last Modified: Mon, 24 Jun 2024 22:58:07 GMT  
-		Size: 26.4 MB (26379823 bytes)  
+	-	`sha256:f0bf7680973f997538e9b0197a95b570baf6ea29d00706ae4cb6341916e69611`  
+		Last Modified: Tue, 02 Jul 2024 06:09:42 GMT  
+		Size: 26.4 MB (26374006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e37f72c4c7376aec0248a7e79805347ca76449478268a2f4ff2f9e063647058a`  
-		Last Modified: Mon, 24 Jun 2024 22:58:06 GMT  
-		Size: 12.3 MB (12334125 bytes)  
+	-	`sha256:501671d07224967c935114d211e9cc7752b90309a6ae525d54f6f4174be85faa`  
+		Last Modified: Tue, 02 Jul 2024 06:09:41 GMT  
+		Size: 12.3 MB (12334183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f37d36eee8a203249673fdcf9e9b382037a5ef1f1a6a4be4bf149fcd42c8aa9a`  
-		Last Modified: Mon, 24 Jun 2024 22:58:05 GMT  
+	-	`sha256:2535240440e9f4aa5bd342e25bf4761f522e9d5dbfa0729010e0e6651cf02260`  
+		Last Modified: Tue, 02 Jul 2024 06:09:41 GMT  
 		Size: 363.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53bbe19071f4a6c02564ccf0fc5894610adff8fadf1818b7e11acaaf0ebe09af`  
-		Last Modified: Mon, 24 Jun 2024 22:58:05 GMT  
-		Size: 396.0 B  
+	-	`sha256:403e152591364795a3ff8175fed2aedc19f60d6789f81401c88469a3926725d1`  
+		Last Modified: Tue, 02 Jul 2024 06:09:41 GMT  
+		Size: 395.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:520850d1aba7e47847e19609d70569743fdc912d2e4d9756af93cbe6d8394dac`  
-		Last Modified: Mon, 24 Jun 2024 22:58:08 GMT  
-		Size: 24.5 MB (24527871 bytes)  
+	-	`sha256:7d395d49d7fcf727bbe46f16af3d228b1f0c78d3860ee6052d34a8146fc4af15`  
+		Last Modified: Tue, 02 Jul 2024 06:09:42 GMT  
+		Size: 24.5 MB (24527865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb0601e323817ac8ed43f93acdbf31610b8ff3b0f50e5e9eeb1eace3cd41632d`  
-		Last Modified: Mon, 24 Jun 2024 22:58:06 GMT  
-		Size: 2.3 KB (2345 bytes)  
+	-	`sha256:eac005d9e7463ac0ca68a59ae7895604452ef47261daa28d090c15576aa378de`  
+		Last Modified: Tue, 02 Jul 2024 06:09:42 GMT  
+		Size: 2.4 KB (2351 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aef39f57a34e6e65b9f10004570fb8c1f7b574578effc39127dee7b5b2fdd65c`  
-		Last Modified: Mon, 24 Jun 2024 22:58:08 GMT  
-		Size: 1.7 KB (1733 bytes)  
+	-	`sha256:391893e1cdb587cd16e67fcdac321e573108f36341f46fcf23f6a15aee57a816`  
+		Last Modified: Tue, 02 Jul 2024 06:09:42 GMT  
+		Size: 1.7 KB (1730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `wordpress:php8.2-fpm` - unknown; unknown
 
 ```console
-$ docker pull wordpress@sha256:0658f48550be3163d834ea670e78aedea5479405539497241b71e18272497e0f
+$ docker pull wordpress@sha256:811b4a40e4b5ccdb1c7112825a8f5edf544ed4ce9a5b64d31ff47854a547268a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.5 MB (7500152 bytes)**  
+-	Total Size: **7.5 MB (7500248 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dca0713e988b14f2abffa1ef844cf17c678e89ce513c7e9ea8c08980e64813a5`
+-	Image ID: `sha256:9c0d1ecdb02dca6e95bc1dff8c1b6ba014244a9a30ca915141b977520842786b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:705cc506f67d99f1a147017a0cb7f0ba8b719fa0b71edceddc08bbf8ce5c2a26`  
-		Last Modified: Mon, 24 Jun 2024 22:58:06 GMT  
-		Size: 7.5 MB (7451890 bytes)  
+	-	`sha256:e70e7c997efc8d0fa8cc11fbf5e7919ce1af092bacc131e59fc39f5742ec469c`  
+		Last Modified: Tue, 02 Jul 2024 06:09:42 GMT  
+		Size: 7.5 MB (7451986 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c769e357f1df957353f680972599513434bcb5c460b4a9fdf4c87f7f827c588d`  
-		Last Modified: Mon, 24 Jun 2024 22:58:05 GMT  
+	-	`sha256:fb9555ef35eaae83d8a1995a8fc8a57848b0ad461a8496cbfd14c6548ed1a721`  
+		Last Modified: Tue, 02 Jul 2024 06:09:41 GMT  
 		Size: 48.3 KB (48262 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -746,66 +746,66 @@ $ docker pull wordpress@sha256:3ba9a9a442affdd063c15e50331587ff574f98a16116d9abb
 ### `wordpress:php8.2-fpm` - linux; 386
 
 ```console
-$ docker pull wordpress@sha256:98b8ac81fe17f4b70f91944c937e59308300b0b0df4ccd7e76acf6ae073786fd
+$ docker pull wordpress@sha256:1133e3e963c1fb025e484a57a7cf6bce1b4c6b57652d08040717268e14003c3b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.2 MB (235185774 bytes)**  
+-	Total Size: **235.1 MB (235149064 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6348ed96c59e39cbcff034a79f5c641053e4ffee69903bdf75f1b59c9deb8157`
+-	Image ID: `sha256:aa8fc42f003d662ecd2102c7eecf6b3dc8334171565bbeac991da446ba0d8e96`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Thu, 13 Jun 2024 00:38:56 GMT
-ADD file:d68e899424fb360eaf2a6f2f35e06dc87f5841c13cce853d3e0710f969583d10 in / 
-# Thu, 13 Jun 2024 00:38:56 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
+ADD file:833af11e99172b5d823c96481bc09ac63041d36ae1212658673bdc5b134499d7 in / 
+# Mon, 24 Jun 2024 19:12:59 GMT
 CMD ["bash"]
-# Thu, 13 Jun 2024 01:36:45 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php
-# Thu, 13 Jun 2024 01:36:45 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Thu, 13 Jun 2024 01:37:11 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 13 Jun 2024 01:37:13 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Thu, 13 Jun 2024 01:37:13 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html
-# Thu, 13 Jun 2024 01:37:14 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Thu, 13 Jun 2024 01:37:14 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Thu, 13 Jun 2024 01:37:14 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Thu, 13 Jun 2024 02:26:46 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Thu, 13 Jun 2024 02:26:46 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENV PHP_VERSION=8.2.20
-# Thu, 13 Jun 2024 02:26:46 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.2.20.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.20.tar.xz.asc
-# Thu, 13 Jun 2024 02:26:46 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENV PHP_SHA256=4474cc430febef6de7be958f2c37253e5524d5c5331a7e1765cd2d2234881e50
-# Thu, 13 Jun 2024 02:26:57 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Thu, 13 Jun 2024 02:26:57 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Thu, 13 Jun 2024 02:45:30 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 'riscv64-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Thu, 13 Jun 2024 02:45:31 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 COPY multi:869bde9dbeae74886a05c9e2107b3e3b4877116db8c6d9adbaff2719f9fb5262 in /usr/local/bin/ 
-# Thu, 13 Jun 2024 02:45:32 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 RUN docker-php-ext-enable sodium
-# Thu, 13 Jun 2024 02:45:32 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Thu, 13 Jun 2024 02:45:32 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 WORKDIR /var/www/html
-# Thu, 13 Jun 2024 02:45:33 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini"
-# Thu, 13 Jun 2024 02:45:33 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 STOPSIGNAL SIGQUIT
-# Thu, 13 Jun 2024 02:45:33 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 EXPOSE 9000
-# Thu, 13 Jun 2024 02:45:33 GMT
+# Mon, 24 Jun 2024 19:12:59 GMT
 CMD ["php-fpm"]
 # Mon, 24 Jun 2024 19:12:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ghostscript 	; 	rm -rf /var/lib/apt/lists/* # buildkit
@@ -830,96 +830,96 @@ CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:7adb06274fdba91ff3ec0873bc068b9a785bd5e3ff48e6f1d9e855048f1f0a66`  
-		Last Modified: Thu, 13 Jun 2024 00:43:23 GMT  
-		Size: 30.2 MB (30162659 bytes)  
+	-	`sha256:b9519b4198cfa047c0958f7cde32a32d32c6ae3486aea1aefc60e08ecf59449b`  
+		Last Modified: Tue, 02 Jul 2024 00:42:41 GMT  
+		Size: 30.1 MB (30144275 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d76ace1276b616f015691c4b1d534d40c29b3579fb65cd4a0df38618f20ee9e`  
-		Last Modified: Thu, 13 Jun 2024 04:01:50 GMT  
+	-	`sha256:6daa048202ff5a552b6eacd27b84297ac780821f0730574f9bb61ed3a6996e20`  
+		Last Modified: Tue, 02 Jul 2024 05:39:16 GMT  
+		Size: 224.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:26d876e28acd3b5f3038bdfb0fb8fe720824179dc347e25e6d745ae512376fa6`  
+		Last Modified: Tue, 02 Jul 2024 05:39:40 GMT  
+		Size: 101.5 MB (101516977 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7fe24ff1fc83352bac36eafb7daa5d32e7ea2232fe6fef612107fdbd1f81e7c8`  
+		Last Modified: Tue, 02 Jul 2024 05:39:16 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68b7d32b505b9097a9990b6dd91587bd7a6ec10d77a5addb12bb7820b08cfced`  
-		Last Modified: Thu, 13 Jun 2024 04:02:12 GMT  
-		Size: 101.5 MB (101522316 bytes)  
+	-	`sha256:50981c8f493d881d8c77a3151bded522d1e2cf5148375d3b5a93523f707665a7`  
+		Last Modified: Tue, 02 Jul 2024 05:48:07 GMT  
+		Size: 12.4 MB (12410783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd335d37e0f995d0ee634f9d252a649fa4d91ded3da32a9ef2e00e82de205e8d`  
-		Last Modified: Thu, 13 Jun 2024 04:01:49 GMT  
-		Size: 223.0 B  
+	-	`sha256:941100f43d508fd343288ea39e073f950771e47088126c1a5049df2041db8fcb`  
+		Last Modified: Tue, 02 Jul 2024 05:48:06 GMT  
+		Size: 490.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38eda29e4d47a4a9ad76d3018eb416e37ae0160b3c3c70143693cfcebbd7e860`  
-		Last Modified: Thu, 13 Jun 2024 04:06:08 GMT  
-		Size: 12.4 MB (12412909 bytes)  
+	-	`sha256:ff2c8c26bf6950e555c3a8877af0efa5486340d38cb790567d16ebdb9e36a403`  
+		Last Modified: Tue, 02 Jul 2024 05:48:53 GMT  
+		Size: 28.3 MB (28298524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97c732a84a4b5dcf1e957ca0ad5727c971bfaf65b725823d0bd583ddd8b0b89c`  
-		Last Modified: Thu, 13 Jun 2024 04:06:06 GMT  
-		Size: 492.0 B  
+	-	`sha256:ad3fac3c7a7695cb182486794037e48bd0579926f465ddaa3b33c043c7cbe143`  
+		Last Modified: Tue, 02 Jul 2024 05:48:47 GMT  
+		Size: 2.5 KB (2452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42483aaee5d522a9c03d5c8b8d36a8ad5d0e399380d69f946f362475b9d4b9f8`  
-		Last Modified: Thu, 13 Jun 2024 04:06:58 GMT  
-		Size: 28.3 MB (28300283 bytes)  
+	-	`sha256:ebd320aab04388b827a75113965b762d7e3aa6b023eb026748e33cd1d675b01f`  
+		Last Modified: Tue, 02 Jul 2024 05:48:47 GMT  
+		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0439b02fa01bddf9c2ae6cb9bee3d54bb1703bd4a08b156240b7116319d8a7c0`  
-		Last Modified: Thu, 13 Jun 2024 04:06:52 GMT  
-		Size: 2.5 KB (2454 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5cb74895490abf93c52985c56b61e5bd5d926086fa5c5ba32468eaca834adef9`  
-		Last Modified: Thu, 13 Jun 2024 04:06:52 GMT  
-		Size: 247.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:567942b9917514a4156a9c12523345db58fed9c0356b5f214d0b9178966c7211`  
-		Last Modified: Thu, 13 Jun 2024 04:06:52 GMT  
+	-	`sha256:f47368e37aa163f7ad2710a9f50094821d58a6e638fe61129c3baa9afa890219`  
+		Last Modified: Tue, 02 Jul 2024 05:48:47 GMT  
 		Size: 9.2 KB (9181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:774917843ee6905e8b414892353bbe95ef4c1f06c6c2573b1debc5a4bb5b46a5`  
-		Last Modified: Mon, 24 Jun 2024 22:58:03 GMT  
-		Size: 26.8 MB (26834599 bytes)  
+	-	`sha256:86f7b809b92d0ba245c9014a82777be5b2be9dea1b77de95480c2a4accc0e1aa`  
+		Last Modified: Tue, 02 Jul 2024 07:12:26 GMT  
+		Size: 26.8 MB (26825392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b212b181b01a9a47762125b19c1d539385c941ca75644b0a8d4c2da06aa2557f`  
-		Last Modified: Mon, 24 Jun 2024 22:58:02 GMT  
-		Size: 11.4 MB (11407476 bytes)  
+	-	`sha256:3e2f0ecc1e1881bbcdbdb1f700035282be87be1bd652048c3ad0ee649678cee4`  
+		Last Modified: Tue, 02 Jul 2024 07:12:25 GMT  
+		Size: 11.4 MB (11407590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc90de7ef3c3e8615f5476459a161df2d96bd5cff35e4970813c53c37e20a5f8`  
-		Last Modified: Mon, 24 Jun 2024 22:58:02 GMT  
-		Size: 364.0 B  
+	-	`sha256:e0448883c54536c2cbeceeb8ecc85c4b4c30dbcdb144dbd751e3acc0b5e63dc8`  
+		Last Modified: Tue, 02 Jul 2024 07:12:25 GMT  
+		Size: 360.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0df08791f3142bb97dc78b8b9172abc911c03ff1abf134160025359241edc66b`  
-		Last Modified: Mon, 24 Jun 2024 22:58:02 GMT  
-		Size: 396.0 B  
+	-	`sha256:656458f91229af441ead4c6af61c837859c23f433eb79aa04597fa65d027c155`  
+		Last Modified: Tue, 02 Jul 2024 07:12:25 GMT  
+		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da2de24df06015c6987afdf80df5f10fbafd3b9791a7360e759e8cbc3033e0cd`  
-		Last Modified: Mon, 24 Jun 2024 22:58:06 GMT  
-		Size: 24.5 MB (24527867 bytes)  
+	-	`sha256:173e58f148716462fbaa25617fb8d2be8afb9871ada7dde1cd89a48eef35b233`  
+		Last Modified: Tue, 02 Jul 2024 07:12:26 GMT  
+		Size: 24.5 MB (24527873 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c32be4667e465f1a4e94edd173390980b30f64dd3b2a995ff09caabc481a0a9`  
-		Last Modified: Mon, 24 Jun 2024 22:58:03 GMT  
+	-	`sha256:6c620d689b6b594d1c3e0fc49278c3efa0be0520c7403ee0d16fb76b575621f7`  
+		Last Modified: Tue, 02 Jul 2024 07:12:26 GMT  
 		Size: 2.4 KB (2350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5f10d57a52b60de2d5b397c903ab04a95302214a5fc8f6709c912ef2c1509e7`  
-		Last Modified: Mon, 24 Jun 2024 22:58:03 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:9683a0d805789c626bbb9b6fe6669831bf21eb8bedfd8ba92e74fbd1d1e5aa5d`  
+		Last Modified: Tue, 02 Jul 2024 07:12:26 GMT  
+		Size: 1.7 KB (1730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `wordpress:php8.2-fpm` - unknown; unknown
 
 ```console
-$ docker pull wordpress@sha256:39abb1b96c870605c327ba27eab513a11c31be44314856c13c83c8e72c90e1b4
+$ docker pull wordpress@sha256:cecadf5e9e9637b4fcc6015f7272cf5c1b184e927f5d345dfaf64f0af4fec4a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.5 MB (7480256 bytes)**  
+-	Total Size: **7.5 MB (7480352 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e034dea64f736b31d84742011676286c5631a026eae06c375258d75d5859835`
+-	Image ID: `sha256:b7aaec15137b75fe622c04a395838fc4dbaa9ca0aaa79fd6ed723776fb79e4ad`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:99369d6f1baaa156999d109825b4759e5e3180a4e34df8cdf45b8ef5752225d6`  
-		Last Modified: Mon, 24 Jun 2024 22:58:02 GMT  
-		Size: 7.4 MB (7432051 bytes)  
+	-	`sha256:9321f4b5ceb93807bf2b46d43c69502bfa69e90d46ed61c8c97a0c23fcac7470`  
+		Last Modified: Tue, 02 Jul 2024 07:12:25 GMT  
+		Size: 7.4 MB (7432147 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f909124941cd0fde15a66379f007080fc5ed747f21ea547fd541481869ec440a`  
-		Last Modified: Mon, 24 Jun 2024 22:58:02 GMT  
+	-	`sha256:d6897a5bbfdd3fd14a3d9673f497e859fc3c642ca3b972423f2f951cbb8124f1`  
+		Last Modified: Tue, 02 Jul 2024 07:12:25 GMT  
 		Size: 48.2 KB (48205 bytes)  
 		MIME: application/vnd.in-toto+json
 
