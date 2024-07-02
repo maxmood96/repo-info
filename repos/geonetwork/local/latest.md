@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:75c52a94cb99579e362fe9554483607ab8e7097ddc24710c387597d51434350d`
-- Created: `2024-06-18T18:21:49.911548327Z`
-- Virtual Size: ~ 805.76 Mb  
+- Image ID: `sha256:830528afbee6f9473e10fc06979d082a8889e6cbdc2acf0f0f7970192be89c85`
+- Created: `2024-06-18T10:58:54Z`
+- Virtual Size: ~ 803.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/geonetwork-entrypoint.sh"]`
