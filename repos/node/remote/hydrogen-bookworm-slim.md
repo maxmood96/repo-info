@@ -1,7 +1,7 @@
 ## `node:hydrogen-bookworm-slim`
 
 ```console
-$ docker pull node@sha256:5a305601e43fe481c5ad05b50c2b98a70c840d48c79c2a72264ae71a03d524ab
+$ docker pull node@sha256:b5f822b742908992a92bc5f593a6fa17756c0b780ced621ee07d3ab7b9b83347
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -184,19 +184,19 @@ $ docker pull node@sha256:009a47e4a07db755177805fc9ad528c5037c205990dcf049ee3498
 ### `node:hydrogen-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull node@sha256:0576b47152ba14850a1f176abace707a2aae2133f8ff84ebfa7a50e35065219c
+$ docker pull node@sha256:017cc7ee2098b1f72b4dc2111237113f164ae4d001c56fea75f4ad7bf9d557ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.1 MB (69126518 bytes)**  
+-	Total Size: **69.1 MB (69097104 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3944f86795ce28aa3a54deeb1044771b87dd45393acc09f274e71d61b3fd51a3`
+-	Image ID: `sha256:d1ad86176a1b21a64dd124deed84e6977e330bd599a0561ec430fa7993b18f22`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
 # Tue, 21 May 2024 13:48:08 GMT
-ADD file:5f17f77072bcd27aa8c4d09ef5117423b789c42445b6e6c13af711dfb2abd544 in / 
+ADD file:cbda549b25cd4337cd3ce345e3b66c0d3b43c247d7315906a028f98a56c41f1d in / 
 # Tue, 21 May 2024 13:48:08 GMT
 CMD ["bash"]
 # Tue, 21 May 2024 13:48:08 GMT
@@ -218,48 +218,48 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:559a764445207341cf1207d83ceb89f1e59e2b57e860b7a80a6df6447641832b`  
-		Last Modified: Thu, 13 Jun 2024 00:43:13 GMT  
-		Size: 29.2 MB (29179666 bytes)  
+	-	`sha256:ea235d1ccf77ca07a545b448996766dc3eca4b971b04ba39d50af69660b25751`  
+		Last Modified: Tue, 02 Jul 2024 00:42:25 GMT  
+		Size: 29.2 MB (29156563 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b278c63f43755efa363f5f0b25a4cff20fa1b3e26b0fb85639672bc1e2adfad3`  
-		Last Modified: Fri, 21 Jun 2024 08:42:10 GMT  
-		Size: 3.3 KB (3318 bytes)  
+	-	`sha256:503fd181343924f0ef1848277bc89363a955e321327f37ee49e7d46868a5e847`  
+		Last Modified: Tue, 02 Jul 2024 16:08:35 GMT  
+		Size: 3.3 KB (3306 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d298a4c83950ef63f075afa126ab1e57fa619d994539e5e8c8f40585deb1a2ac`  
-		Last Modified: Fri, 21 Jun 2024 10:52:52 GMT  
-		Size: 38.2 MB (38231223 bytes)  
+	-	`sha256:826d30f3c7bb67c093ca05666fc088f0dfa9f9b55814735dc156d3ff8b394eb3`  
+		Last Modified: Tue, 02 Jul 2024 16:16:38 GMT  
+		Size: 38.2 MB (38228503 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:622eccabba4a456ae545fb72106e6ab2ecdb26954ab40a4ecf2120f3298e7f80`  
-		Last Modified: Fri, 21 Jun 2024 10:52:50 GMT  
-		Size: 1.7 MB (1711860 bytes)  
+	-	`sha256:2377964c38d2cccd5ed899ddca7993cd9b1559ae703fb5fbf5986cc5f34ae663`  
+		Last Modified: Tue, 02 Jul 2024 16:16:37 GMT  
+		Size: 1.7 MB (1708282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9eccc72524633c3b2457eb461bc563192fcdfa99d086c7fd6cba6cec48a28721`  
-		Last Modified: Fri, 21 Jun 2024 10:52:50 GMT  
-		Size: 451.0 B  
+	-	`sha256:6403b9a683cb2a732f9c8ec80c943deac990e36061c5f64ccf24113ac44d30ad`  
+		Last Modified: Tue, 02 Jul 2024 16:16:37 GMT  
+		Size: 450.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:hydrogen-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:0f36b917e1f765844728b56c05ce2afc4d52954376e219a7bc33b4ad3e5432cc
+$ docker pull node@sha256:e9d45c85ef64f5296621781cbeba79d34ab6166467a717b58e90fb0f18e6d7b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2497904 bytes)**  
+-	Total Size: **2.5 MB (2497932 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a8185b7e6f96a9fc089272aa9f5c95ddcfee977cbbe8735a7f198a63427443e8`
+-	Image ID: `sha256:bbb5eaeee1a5241b894078b1dff920054700621f6c623141d66c92bdecae36a0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9ffcd35ae5d155064fa07bd7e7a78e2296039a050bb4a95b47281154ee3e213b`  
-		Last Modified: Fri, 21 Jun 2024 10:52:50 GMT  
-		Size: 2.5 MB (2470677 bytes)  
+	-	`sha256:08df31aab6df15a9f663431a78f2b70dd419af6dd45bbab864282f1238ab8e68`  
+		Last Modified: Tue, 02 Jul 2024 16:16:37 GMT  
+		Size: 2.5 MB (2470705 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8703a6d0afa58903b79489c9c170f38be1b0e312fd6c12f43fcf2035ccca1042`  
-		Last Modified: Fri, 21 Jun 2024 10:52:50 GMT  
+	-	`sha256:a98d3c28d5362cb037adaa3a74013fc8ac33fce40cecb3dbfb223a4d9fcadeb1`  
+		Last Modified: Tue, 02 Jul 2024 16:16:37 GMT  
 		Size: 27.2 KB (27227 bytes)  
 		MIME: application/vnd.in-toto+json
 
