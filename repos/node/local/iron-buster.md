@@ -1338,20 +1338,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.28-10+deb10u3
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.28-10%2bdeb10u3.dsc' glibc_2.28-10+deb10u3.dsc 8921 SHA256:731d162af297ab2f042e73b0910388a84214e48b68766ded409e6c391ca5e9c4
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.28.orig.tar.xz' glibc_2.28.orig.tar.xz 17061292 SHA256:53d3c1c7bff0fb25d4c7874bf13435dc44a71fd7dd5ffc9bfdcb513cdfc36854
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.28-10%2bdeb10u3.debian.tar.xz' glibc_2.28-10+deb10u3.debian.tar.xz 924552 SHA256:552ddba370dfe93ae9360b17ad4772b9f72b43223bf5e40a651797a2cbebadc2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.28-10+deb10u3/
 
-- https://sources.debian.net/src/glibc/2.28-10+deb10u3/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.28-10+deb10u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.28-10+deb10u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-4+deb10u1`
 
