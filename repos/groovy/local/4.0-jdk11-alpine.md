@@ -1,10 +1,10 @@
-# `groovy:4.0.20-jdk11-alpine`
+# `groovy:4.0.22-jdk11-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5f92c261358f2dad12d48d9e996a6e302c170fbd71133264d439fd5cf0982b8e`
-- Created: `2024-03-17T02:31:45Z`
-- Virtual Size: ~ 322.33 Mb  
+- Image ID: `sha256:a01e258cc0eb42da67bfad58558f4aabec4b085e81cb4cec7130651d7c6f9e2b`
+- Created: `2024-06-30T17:46:17Z`
+- Virtual Size: ~ 322.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.23+9`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=4.0.20`
+  - `GROOVY_VERSION=4.0.22`
 
 ## `apk` (`.apk`-based packages)
 
