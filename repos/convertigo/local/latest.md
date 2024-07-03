@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a7b38fb1a175e053cd70ea6a8d1de438e27717d80d2463fdb235810cb7cd15f6`
+- Image ID: `sha256:f9f32d3aa445c6a2dd4963dbc184d87d3189fb3b8cdbd0fdc05055cd81ccc579`
 - Created: `2024-06-06T08:12:00Z`
-- Virtual Size: ~ 624.54 Mb  
+- Virtual Size: ~ 617.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -1506,30 +1506,14 @@ $ apt-get source -qq --print-uris openldap=2.5.17+dfsg-0ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.17%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.17+dfsg-0ubuntu0.22.04.1.debian.tar.xz 172128 SHA512:0cc9210ff73f9dadf9a3cdbaf8abdaa36650c3611e889bc9e6b9cb637f6f5b25e23edc55d6f6cc910b6f08eb0795114d73472090dbf4c233d10432199f07836c
 ```
 
-### `dpkg` source package: `openssl=3.0.2-0ubuntu1.15`
-
-Binary Packages:
-
-- `openssl=3.0.2-0ubuntu1.15`
-
-Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
-
-- `Apache-2.0`
-- `Artistic`
-- `GPL-1`
-- `GPL-1+`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.16`
 
 Binary Packages:
 
 - `libssl3:amd64=3.0.2-0ubuntu1.16`
+- `openssl=3.0.2-0ubuntu1.16`
 
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
