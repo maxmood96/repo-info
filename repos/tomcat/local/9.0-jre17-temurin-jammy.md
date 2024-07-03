@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:24385c10c348398453ef267ae6ab946cc5773f88661c293b066ef5afc5ddfabc`
+- Image ID: `sha256:2f548dd1f135969f0eada4c42ad940d0c944076670ac654ae5375f5f7198f7ff`
 - Created: `2024-06-19T14:03:42Z`
-- Virtual Size: ~ 282.23 Mb  
+- Virtual Size: ~ 274.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -1493,30 +1493,14 @@ $ apt-get source -qq --print-uris openldap=2.5.17+dfsg-0ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.17%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.17+dfsg-0ubuntu0.22.04.1.debian.tar.xz 172128 SHA512:0cc9210ff73f9dadf9a3cdbaf8abdaa36650c3611e889bc9e6b9cb637f6f5b25e23edc55d6f6cc910b6f08eb0795114d73472090dbf4c233d10432199f07836c
 ```
 
-### `dpkg` source package: `openssl=3.0.2-0ubuntu1.15`
-
-Binary Packages:
-
-- `openssl=3.0.2-0ubuntu1.15`
-
-Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
-
-- `Apache-2.0`
-- `Artistic`
-- `GPL-1`
-- `GPL-1+`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.16`
 
 Binary Packages:
 
 - `libssl3:amd64=3.0.2-0ubuntu1.16`
+- `openssl=3.0.2-0ubuntu1.16`
 
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -1958,11 +1942,11 @@ $ apt-get source -qq --print-uris util-linux=2.37.2-4ubuntu3.4
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.4.debian.tar.xz' util-linux_2.37.2-4ubuntu3.4.debian.tar.xz 114096 SHA512:8e1a3832d116062881d7823baafcf574cc252490e7e25144efa34cfd65a35b590b454298507940399568716c0ccb9533b01f2c9665f92aa2082d91e5ca8e9c9c
 ```
 
-### `dpkg` source package: `wget=1.21.2-2ubuntu1`
+### `dpkg` source package: `wget=1.21.2-2ubuntu1.1`
 
 Binary Packages:
 
-- `wget=1.21.2-2ubuntu1`
+- `wget=1.21.2-2ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
@@ -1972,11 +1956,11 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wget=1.21.2-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2-2ubuntu1.dsc' wget_1.21.2-2ubuntu1.dsc 2243 SHA512:01295325ac2239ad7eebd86e395b6310bc42d04ef7b7722e9320db6f0a44e806009b4bf452c1006e18eb936696c92ac4ba15b55dedebb6e030620cfd7cbb1b60
+$ apt-get source -qq --print-uris wget=1.21.2-2ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2-2ubuntu1.1.dsc' wget_1.21.2-2ubuntu1.1.dsc 2251 SHA512:66aa1cecef80eacb8780fdec1ba9a237e36796a22cfc3fcf4b1b095d2dbd98852c4557e3084dd45022154b4c01d8c9e980dac9239a2e27c717a75413513f8171
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2.orig.tar.gz' wget_1.21.2.orig.tar.gz 5004576 SHA512:3e35f92604486ca459f26df97d392579f1d83a9254519e8ce249b410bacf70dddf716d6caa3b29fd4865163f60410b2b8ad1ca1f7bb3dbb2456386b7647b988d
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2.orig.tar.gz.asc' wget_1.21.2.orig.tar.gz.asc 833 SHA512:c5349ed20902d4e4d76e681b9e14370d5c1f07d1ba9e600a82af67ac24fe79051b3beabbe563e6967c429cc344ee1bc46aff57c1ab0eb2db8d70e907df49c953
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2-2ubuntu1.debian.tar.xz' wget_1.21.2-2ubuntu1.debian.tar.xz 64160 SHA512:2e99d242111afdfbfe409165702e553faed0193836d852465d5e8623d27aa2e6dd6f4c806d4f1b2e3c0f825ecd218ace3329b1e145be193a086af7a1b980528d
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2-2ubuntu1.1.debian.tar.xz' wget_1.21.2-2ubuntu1.1.debian.tar.xz 65124 SHA512:1351dc5b7271f9e5cbf85bc0bbfe36b1645b0dfa4de20940e1dc20c297b43b540c958e4908c54f6e3663fc0d1e6094c1dffb7609ca8baebb842659886f1bdf97
 ```
 
 ### `dpkg` source package: `xxhash=0.8.1-1`
