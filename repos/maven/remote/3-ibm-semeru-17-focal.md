@@ -1,7 +1,7 @@
 ## `maven:3-ibm-semeru-17-focal`
 
 ```console
-$ docker pull maven@sha256:d0603becb7f2481b5b98c9b6555ac510dbceabce237f02c38ba6a82b15d7defd
+$ docker pull maven@sha256:a7ecd6b9f42d51a74626019cb535c9ad88a998f2a3ec4b87bf1d8cf473e1e391
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -286,13 +286,13 @@ $ docker pull maven@sha256:d465db15eedf987e5a9b12c398c08876971f721ea6c3c25792fa5
 ### `maven:3-ibm-semeru-17-focal` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:fe951a03bf7dda414ae6658d4ae30c1b801c93d9293e4fccd06c7e8ea9445d77
+$ docker pull maven@sha256:fe321c0a26e40e67bfec42ff1d5247e0c9ed4cb42681dc5d7bc34712cd098ba9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **317.6 MB (317623424 bytes)**  
+-	Total Size: **317.6 MB (317623526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c342f1fad327bd0476f939db96ae532d4854a9f64453d7a4e1b0e5b640b4ea16`
+-	Image ID: `sha256:66d61178534d98392ff4df9504095b943258039587b4e0ee5dfb1b1207201868`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -372,49 +372,49 @@ CMD ["mvn"]
 		Last Modified: Tue, 25 Jun 2024 23:22:15 GMT  
 		Size: 4.9 MB (4929759 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:acd76be459e3d61c5643de1c0789ddcc1b48d20b2d18402bfa1ec53722f9ba43`  
-		Last Modified: Thu, 27 Jun 2024 19:07:22 GMT  
-		Size: 34.3 MB (34279172 bytes)  
+	-	`sha256:859a4a23d099319d389c6ac01d868868acd600943feeef56e71779f3d4f5363f`  
+		Last Modified: Wed, 03 Jul 2024 18:45:08 GMT  
+		Size: 34.3 MB (34279236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef3520f614a0fa6e0fa27974888c365ac98dd0869ec4160d6618b8bbdd6096f4`  
-		Last Modified: Thu, 27 Jun 2024 19:07:21 GMT  
-		Size: 9.2 MB (9161772 bytes)  
+	-	`sha256:8651ae5c94b011018e2d638368f4131f04e50292130113815b082f41a1ab0004`  
+		Last Modified: Wed, 03 Jul 2024 18:45:08 GMT  
+		Size: 9.2 MB (9161816 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f828744a82dca8251e241cdf50c0b9b9264eb40dcee4b4589a48bc499a43603a`  
-		Last Modified: Thu, 27 Jun 2024 19:07:20 GMT  
-		Size: 856.0 B  
+	-	`sha256:1bdb9869ae38a9510612cd9f143d75170fc4435930b4eac9ba4737dc87b45bd3`  
+		Last Modified: Wed, 03 Jul 2024 18:45:07 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59dc44eeaf99974e24f0c769cfbc36dee639c81d9f59101d6f3cca0e0380ca31`  
-		Last Modified: Thu, 27 Jun 2024 19:07:20 GMT  
+	-	`sha256:6d5e992a740d2514da3441287d7e3e2ed41e10e2b972cd720db87e3a7e4df667`  
+		Last Modified: Wed, 03 Jul 2024 18:45:07 GMT  
 		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-ibm-semeru-17-focal` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:e50bcab4380a9c02f9a8026b0b156542cd211eb0fbddec3fc1a82322bc3d6c51
+$ docker pull maven@sha256:5cef8644c2792707c070608d26d550ad4e47f87feac9d1900314b4a9a8edd315
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4865549 bytes)**  
+-	Total Size: **4.9 MB (4865551 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:db05b102b5c932b8cc406566ab21690eb2294c13024257fb905d90e87fbf3208`
+-	Image ID: `sha256:c8179976f05529181ec8fdd7cf952623196bc78056bdfb4107cee04364adc164`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bd1073cbbfcf331acab968bc2309796adbea6e0f8a23b99a1b9a0ad2880e12cf`  
-		Last Modified: Thu, 27 Jun 2024 19:07:20 GMT  
+	-	`sha256:027838238f049e7ce9526d00754e8f2eb3d69dfd547a261858938a3f15f166bb`  
+		Last Modified: Wed, 03 Jul 2024 18:45:07 GMT  
 		Size: 4.8 MB (4846449 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:12f5b3ebba1a94fab9ae1a1ea6144ceda886d85d2ba801a59ac9e9ebe0779735`  
-		Last Modified: Thu, 27 Jun 2024 19:07:20 GMT  
-		Size: 19.1 KB (19100 bytes)  
+	-	`sha256:8ae8eb0164cf071ae5442ffbc3b76516a22300f9cde5dfad812bb242a60daf9e`  
+		Last Modified: Wed, 03 Jul 2024 18:45:07 GMT  
+		Size: 19.1 KB (19102 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-ibm-semeru-17-focal` - linux; s390x
