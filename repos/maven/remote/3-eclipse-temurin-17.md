@@ -1,7 +1,7 @@
 ## `maven:3-eclipse-temurin-17`
 
 ```console
-$ docker pull maven@sha256:6ca4f2d4c7a8affa4a7cdec526dd2aa5d433ddd63f8ed3337a543408136b174e
+$ docker pull maven@sha256:0fb3ea831c0b867f2df8c29a311cbd848b7c01550b23f5f3c3f182c7f18a6e20
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -164,28 +164,28 @@ $ docker pull maven@sha256:37c1f5b6b3425ccc0afec306b0e72c2088300e3bba8e5ab15e5d2
 ### `maven:3-eclipse-temurin-17` - linux; arm variant v7
 
 ```console
-$ docker pull maven@sha256:8e8f72ee2a285619e07003ea3c354da121f58f65c48f05421567811639893610
+$ docker pull maven@sha256:8bc5564ae66a5e3d46c2a3ef3ec0e22b25f735ffb66a43d4ca80b7ccb5ff1fb4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.9 MB (218937709 bytes)**  
+-	Total Size: **218.9 MB (218912183 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc52a5485ed812977ae7b08987e739ce2ce1ba959b843f35459bb6d098128a53`
+-	Image ID: `sha256:58cbdc120d80626b3bf4ea5530727691349a960cc6ea437ebc0ba49f62e4e722`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 09:17:07 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 09:17:07 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 09:17:07 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 09:17:07 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 09:17:07 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 09:17:07 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -240,212 +240,212 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44f14f7a6f95edb27f3de5a7fd3021a3205d9299b18fcd630e06a8eba0c138e8`  
-		Last Modified: Thu, 27 Jun 2024 18:56:52 GMT  
-		Size: 22.1 MB (22071229 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b05c38ef351d4fb67a5333447ba31b421e881233af96efbceba62080c0e4630b`  
-		Last Modified: Thu, 27 Jun 2024 18:56:52 GMT  
-		Size: 9.2 MB (9161814 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:677cbab325c47207383fb8c0f5beae99f3475c479392c5de41074727a903bbe5`  
-		Last Modified: Thu, 27 Jun 2024 18:56:51 GMT  
-		Size: 857.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f349e8890f39e9d98adca7e641fa9bcaf0b6c44824526a15a9293632541d564`  
-		Last Modified: Thu, 27 Jun 2024 18:56:51 GMT  
-		Size: 157.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `maven:3-eclipse-temurin-17` - unknown; unknown
-
-```console
-$ docker pull maven@sha256:d4e52522cfd3d71dc2e5d6281e66c636f25df5def2d41000072d3eee0e6d2114
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (4966675 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4a8b7eac479aae11b592147830f92b9411961ba5572cc689f0d0805ee633c2a`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:254a50c5afc4adce0a541db74994f7b18943263109b84e956e4724bc1d150dea`  
-		Last Modified: Thu, 27 Jun 2024 18:56:51 GMT  
-		Size: 4.9 MB (4947022 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:83419ca290050e81a9ff9a74aefce1b97cbd6c55ab0658869e033260fba1f387`  
-		Last Modified: Thu, 27 Jun 2024 18:56:51 GMT  
-		Size: 19.7 KB (19653 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `maven:3-eclipse-temurin-17` - linux; arm64 variant v8
-
-```console
-$ docker pull maven@sha256:8584f1def8a593545450b72fee54085b0e7bf5ca857314f13d1169eafdc97f31
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **219.1 MB (219093638 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cad44c0b93bba215574ccb803cfcfa9c0f4fb7c9a8f06a79cd095c6b6065420`
--	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
--	Default Command: `["mvn"]`
-
-```dockerfile
-# Mon, 03 Jun 2024 10:30:07 GMT
-ARG RELEASE
-# Mon, 03 Jun 2024 10:30:07 GMT
-ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:30:07 GMT
-LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:30:07 GMT
-LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:30:11 GMT
-ADD file:5f73ea0f53302f1771b6d2cb5650f715247ad02d80e986d67b2d55c22712f1ca in / 
-# Mon, 03 Jun 2024 10:30:12 GMT
-CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='a900acf3ae56b000afc35468a083b6d6fd695abec87a8abdb02743d5c72f6d6d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='aa7fb6bb342319d227a838af5c363bfa1b4a670c209372f9e6585bd79da6220c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='9b5c375ed7ce654083c6c1137d8daadebaf8657650576115f0deafab00d0f1d7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='44bdd662c3b832cfe0b808362866b8d7a700dd60e6e39716dee97211d35c230f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='af3f33c14ed3e2fcd85a390575029fbf92a491f60cfdc274544ac8ad6532de47';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
-CMD ["jshell"]
-# Thu, 27 Jun 2024 09:17:07 GMT
-RUN apt-get update   && apt-get install -y ca-certificates curl git --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 27 Jun 2024 09:17:07 GMT
-LABEL org.opencontainers.image.title=Apache Maven
-# Thu, 27 Jun 2024 09:17:07 GMT
-LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
-# Thu, 27 Jun 2024 09:17:07 GMT
-LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
-# Thu, 27 Jun 2024 09:17:07 GMT
-LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
-# Thu, 27 Jun 2024 09:17:07 GMT
-ENV MAVEN_HOME=/usr/share/maven
-# Thu, 27 Jun 2024 09:17:07 GMT
-COPY /usr/share/maven /usr/share/maven # buildkit
-# Thu, 27 Jun 2024 09:17:07 GMT
-COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Thu, 27 Jun 2024 09:17:07 GMT
-COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
-# Thu, 27 Jun 2024 09:17:07 GMT
-RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Thu, 27 Jun 2024 09:17:07 GMT
-ARG MAVEN_VERSION=3.9.8
-# Thu, 27 Jun 2024 09:17:07 GMT
-ARG USER_HOME_DIR=/root
-# Thu, 27 Jun 2024 09:17:07 GMT
-ENV MAVEN_CONFIG=/root/.m2
-# Thu, 27 Jun 2024 09:17:07 GMT
-ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Thu, 27 Jun 2024 09:17:07 GMT
-CMD ["mvn"]
-```
-
--	Layers:
-	-	`sha256:2741160b46783cff15aad1d825ac5be29d819aaa773f4270d133fb57683fbbd0`  
-		Last Modified: Mon, 03 Jun 2024 13:49:15 GMT  
-		Size: 28.4 MB (28402306 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fcd5d7dbc0eb75f9bc71643e6dcfed8b6cef6295e5c7d5f5ba90aa14f0d9cc6f`  
-		Last Modified: Wed, 05 Jun 2024 04:57:07 GMT  
-		Size: 18.9 MB (18859083 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1398cf47b652b314c15a999a812a61f17fe942d81d04191d3d45d6ce2b2eda28`  
-		Last Modified: Wed, 05 Jun 2024 04:57:14 GMT  
-		Size: 143.9 MB (143896065 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e06ec5e75f9ec89d5ed374dbd73b32bb895a5449612015dcd41982831677ad7`  
-		Last Modified: Wed, 05 Jun 2024 04:57:05 GMT  
-		Size: 173.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e0a70e026c3ed5fb90e5ecd734c8b8356832ee8f09fca572444ed2008dc56cd9`  
-		Last Modified: Wed, 05 Jun 2024 04:57:05 GMT  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:56da42133a42a8f72878ba530485609813e7d177b27bb73157eaff40cc7ff0f7`  
-		Last Modified: Thu, 27 Jun 2024 19:01:27 GMT  
-		Size: 18.8 MB (18772426 bytes)  
+	-	`sha256:df1ae740af1299568af3eb0bc4b55a3cd849314b6fe93af68121ee2f6721a5d1`  
+		Last Modified: Wed, 03 Jul 2024 11:44:16 GMT  
+		Size: 22.1 MB (22070221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d40c9de7be25b53767fbcb365495b8c40cf73ea93506129b82220595c34278a`  
-		Last Modified: Thu, 27 Jun 2024 19:01:27 GMT  
-		Size: 9.2 MB (9161812 bytes)  
+	-	`sha256:100368ab38cdbbf5b3fbc5e16e664399ef5449cdba7229049a03d545545bd0a1`  
+		Last Modified: Wed, 03 Jul 2024 11:44:16 GMT  
+		Size: 9.2 MB (9161816 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52cb5cfa823916af9479085c604bf3e6a12ea59a5f8aab950aa2b798844bada2`  
-		Last Modified: Thu, 27 Jun 2024 19:01:26 GMT  
+	-	`sha256:0e567c5d5a597511bb16c726cc5b3096f0cf41c3762e88ee3be45fdb72004ead`  
+		Last Modified: Wed, 03 Jul 2024 11:44:15 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81998232bf9782105fac7cc9ddb9f6a46d68c03a0f3ff31aee2e02538d33fb49`  
-		Last Modified: Thu, 27 Jun 2024 19:01:27 GMT  
-		Size: 155.0 B  
+	-	`sha256:9272c9a3634f80cd40bb7791ee0f9d76698a838e20f2904276de722300db3267`  
+		Last Modified: Wed, 03 Jul 2024 11:44:15 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-eclipse-temurin-17` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:2863e2e4dbaec45828b476ea5a47ddd575d1da39381e6a3f331ad90345bece3f
+$ docker pull maven@sha256:1e3f9c9e2493db5c387d1aa4915d72f00c8c23da8a16153201fa19d0be8698a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5150635 bytes)**  
+-	Total Size: **5.0 MB (4966679 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b9e32d9fdab33feeabb1711b7146aabb6a14cf5d52be197a7b6de1c505951e9`
+-	Image ID: `sha256:b25d24c2d018f7ba0498a58a6eaec4f80bc90679238e4413ac543669c35e8c42`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cd3802cfa05c2d24dce99eb76d2dd6223c9e97d54f31f2f1cdf02bdc83e650a1`  
-		Last Modified: Thu, 27 Jun 2024 19:01:27 GMT  
-		Size: 5.1 MB (5130458 bytes)  
+	-	`sha256:57326d4f43b1b43acf38731e80617da0fa219d7929491477f8aaa4119528976e`  
+		Last Modified: Wed, 03 Jul 2024 11:44:15 GMT  
+		Size: 4.9 MB (4947026 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ec77fb5b243ec38cdd1103a02c1591b82165f740526fcf543e57919c5814f550`  
-		Last Modified: Thu, 27 Jun 2024 19:01:26 GMT  
+	-	`sha256:86143599609d534fdcc22f75cf51f142c52616afe5b110ef65fc55d7ec646f32`  
+		Last Modified: Wed, 03 Jul 2024 11:44:15 GMT  
+		Size: 19.7 KB (19653 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `maven:3-eclipse-temurin-17` - linux; arm64 variant v8
+
+```console
+$ docker pull maven@sha256:e32460f7103704b21ef7e223f90dc971a87840717f022527df34917f1393e20c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **219.1 MB (219059793 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a01254405adb1cade82661a90f2968cabf1ce5d48ebbe467cb91d75f2aeb16b9`
+-	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
+-	Default Command: `["mvn"]`
+
+```dockerfile
+# Thu, 27 Jun 2024 09:17:07 GMT
+ARG RELEASE
+# Thu, 27 Jun 2024 09:17:07 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Thu, 27 Jun 2024 09:17:07 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Thu, 27 Jun 2024 09:17:07 GMT
+LABEL org.opencontainers.image.version=22.04
+# Thu, 27 Jun 2024 09:17:07 GMT
+ADD file:2bed1fbf8253926f27dc275983c274712d836e9b6acdb1059d29c072d8f63a03 in / 
+# Thu, 27 Jun 2024 09:17:07 GMT
+CMD ["/bin/bash"]
+# Tue, 23 Apr 2024 20:51:38 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 23 Apr 2024 20:51:38 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 23 Apr 2024 20:51:38 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 23 Apr 2024 20:51:38 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 23 Apr 2024 20:51:38 GMT
+ENV JAVA_VERSION=jdk-17.0.11+9
+# Tue, 23 Apr 2024 20:51:38 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='a900acf3ae56b000afc35468a083b6d6fd695abec87a8abdb02743d5c72f6d6d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='aa7fb6bb342319d227a838af5c363bfa1b4a670c209372f9e6585bd79da6220c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='9b5c375ed7ce654083c6c1137d8daadebaf8657650576115f0deafab00d0f1d7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='44bdd662c3b832cfe0b808362866b8d7a700dd60e6e39716dee97211d35c230f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='af3f33c14ed3e2fcd85a390575029fbf92a491f60cfdc274544ac8ad6532de47';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 23 Apr 2024 20:51:38 GMT
+RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 23 Apr 2024 20:51:38 GMT
+COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 23 Apr 2024 20:51:38 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 23 Apr 2024 20:51:38 GMT
+CMD ["jshell"]
+# Thu, 27 Jun 2024 09:17:07 GMT
+RUN apt-get update   && apt-get install -y ca-certificates curl git --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 27 Jun 2024 09:17:07 GMT
+LABEL org.opencontainers.image.title=Apache Maven
+# Thu, 27 Jun 2024 09:17:07 GMT
+LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
+# Thu, 27 Jun 2024 09:17:07 GMT
+LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
+# Thu, 27 Jun 2024 09:17:07 GMT
+LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+# Thu, 27 Jun 2024 09:17:07 GMT
+ENV MAVEN_HOME=/usr/share/maven
+# Thu, 27 Jun 2024 09:17:07 GMT
+COPY /usr/share/maven /usr/share/maven # buildkit
+# Thu, 27 Jun 2024 09:17:07 GMT
+COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
+# Thu, 27 Jun 2024 09:17:07 GMT
+COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
+# Thu, 27 Jun 2024 09:17:07 GMT
+RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
+# Thu, 27 Jun 2024 09:17:07 GMT
+ARG MAVEN_VERSION=3.9.8
+# Thu, 27 Jun 2024 09:17:07 GMT
+ARG USER_HOME_DIR=/root
+# Thu, 27 Jun 2024 09:17:07 GMT
+ENV MAVEN_CONFIG=/root/.m2
+# Thu, 27 Jun 2024 09:17:07 GMT
+ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
+# Thu, 27 Jun 2024 09:17:07 GMT
+CMD ["mvn"]
+```
+
+-	Layers:
+	-	`sha256:24cfbc0d689f4d514c091713d28dff40b2e697cb854a24b2fae97f94b10bc383`  
+		Last Modified: Fri, 28 Jun 2024 02:10:56 GMT  
+		Size: 28.4 MB (28401129 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6672595a5d127b59ecf75423f0ef5367642a9d021fe56a7d618121f1c21d2fd7`  
+		Last Modified: Tue, 02 Jul 2024 04:35:30 GMT  
+		Size: 18.8 MB (18827827 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:638a571e250e0b6727a4546a623000d7eafe3f6e9549b1dffa345b8d8e137403`  
+		Last Modified: Tue, 02 Jul 2024 04:35:37 GMT  
+		Size: 143.9 MB (143896033 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:105dc80e2a1cd55f858a7d348f1bb09b574e8dec5d7bed22c775b25c002be186`  
+		Last Modified: Tue, 02 Jul 2024 04:35:27 GMT  
+		Size: 173.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c1c7e200a70e8ad8e4d8d9a9931b1a39bf118b5e2b23dd925e91e6313185cdcb`  
+		Last Modified: Tue, 02 Jul 2024 04:35:28 GMT  
+		Size: 733.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:943e039513db32ed71a85398282265b824041789a752fb1f2f8f50001ba3422b`  
+		Last Modified: Wed, 03 Jul 2024 10:22:41 GMT  
+		Size: 18.8 MB (18771084 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1bb92d78f5e72c0fd88586dc7d757ab1ea950ad793a2ee845b0b2c7e4d5f9230`  
+		Last Modified: Wed, 03 Jul 2024 10:22:41 GMT  
+		Size: 9.2 MB (9161772 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7409cad0fedc32828678fe8cd08b606d7a15a7e6b3ece8c23d4c597695157977`  
+		Last Modified: Wed, 03 Jul 2024 10:22:40 GMT  
+		Size: 853.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:72689d9276fb8fbb4ec9c307dfc5d0526e4b2bfca03a00dc6a8181d4eef0e3ea`  
+		Last Modified: Wed, 03 Jul 2024 10:22:41 GMT  
+		Size: 157.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `maven:3-eclipse-temurin-17` - unknown; unknown
+
+```console
+$ docker pull maven@sha256:c4f325edc3935aed74818545ad3a04f076c98bd853099ee4da926ecb7a18d512
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.2 MB (5150639 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:af4ccb91a8ce5a29a22db836ee787624fe533db55edd103974ccd815342ffa6d`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:92b4bdd2871fd3fbbbf55ca97819a6ccbed663d897906e9148357ab8a5bd5c7f`  
+		Last Modified: Wed, 03 Jul 2024 10:22:41 GMT  
+		Size: 5.1 MB (5130462 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:614949ab5667f20d2f48470886f6f25efe5e880114bfcfe9d663f83236f63273`  
+		Last Modified: Wed, 03 Jul 2024 10:22:40 GMT  
 		Size: 20.2 KB (20177 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -596,28 +596,28 @@ $ docker pull maven@sha256:d22eb06b752c4962cc5f90e77161751bbd0fe5bd2b3c2a5e971d9
 ### `maven:3-eclipse-temurin-17` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:03cd78dcc57515e1d659d90d6c8a1c13d20c7cd8219d6f4e78e4df6b40328077
+$ docker pull maven@sha256:3a90e52114d85a19553666c8a030075c8a213c6b0c9f4a03e0292e3f52a29bc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.4 MB (208384666 bytes)**  
+-	Total Size: **208.4 MB (208353743 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea63da07948e2920971909bbab6f4666ec54455281305a43e3fa70fe833329b4`
+-	Image ID: `sha256:23de56308516c88ea5d7a3a12ce1fc5bbab0863f1ee3b5636e70dfdefea528ee`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:29:44 GMT
+# Thu, 27 Jun 2024 09:17:07 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:29:44 GMT
+# Thu, 27 Jun 2024 09:17:07 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:29:44 GMT
+# Thu, 27 Jun 2024 09:17:07 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:29:44 GMT
+# Thu, 27 Jun 2024 09:17:07 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:29:47 GMT
-ADD file:4fb908f3bd908a7abc338d7e2006cb2c97aa7f83aca415f3b86c0ae86d61fed1 in / 
-# Mon, 03 Jun 2024 10:29:47 GMT
+# Thu, 27 Jun 2024 09:17:07 GMT
+ADD file:160bc105c5c70c3239daf08894bd8a2311ea04a965b30820eebf28573143f86b in / 
+# Thu, 27 Jun 2024 09:17:07 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -672,67 +672,67 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:0424de0056677a3a1d049300220cb3d875fb304aae1fa90f7b0292500716e5ed`  
-		Last Modified: Wed, 05 Jun 2024 03:12:35 GMT  
-		Size: 28.6 MB (28637399 bytes)  
+	-	`sha256:4870604a2dd3e1b2f1a9f9dc1f8d02b548d030f0680887506b32aaee40747aa4`  
+		Last Modified: Tue, 02 Jul 2024 03:47:54 GMT  
+		Size: 28.6 MB (28637470 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b04c46ec817e6a2a43d4ca0a0487d915cc9831867279ce9b11b41408d280205`  
-		Last Modified: Wed, 05 Jun 2024 03:13:39 GMT  
-		Size: 17.3 MB (17259370 bytes)  
+	-	`sha256:6e9f55c8213869dc6ac91ed348c68ae2ce3891d5094911e13674ee10e2440bb3`  
+		Last Modified: Tue, 02 Jul 2024 03:55:21 GMT  
+		Size: 17.2 MB (17228626 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e53bdafbde9a20650510fe076ebdd8b09082d938bf55e16c8d1f494841ad5267`  
-		Last Modified: Wed, 05 Jun 2024 03:13:47 GMT  
-		Size: 134.3 MB (134336433 bytes)  
+	-	`sha256:efad62b4e0a7da77b5fc338853a315db2d9fe1ab3c78140cf2265477c155cd1e`  
+		Last Modified: Tue, 02 Jul 2024 03:55:29 GMT  
+		Size: 134.3 MB (134336427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3d942fb5d7b27a11eb02473ae5bd8b12cc1c63e7692b7087aa3c596a01fc5df`  
-		Last Modified: Wed, 05 Jun 2024 03:13:37 GMT  
-		Size: 175.0 B  
+	-	`sha256:9cca1bd5f3562b734330c06906fd05464c229f780e968e1942adc587940ff9ed`  
+		Last Modified: Tue, 02 Jul 2024 03:55:19 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afde48d23b648eb745ea3c9e732f1e6a7d54f277d865d94a70a625e268238c59`  
-		Last Modified: Wed, 05 Jun 2024 03:13:37 GMT  
+	-	`sha256:d5bf3ed94e2020577d39cf539e198088e27b3318f3726e83655cf9fbe008d86c`  
+		Last Modified: Tue, 02 Jul 2024 03:55:18 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc0217b20882856f340a87e06ad8bf0fc881c26bbd72c090ebc2b53ab30271ba`  
-		Last Modified: Thu, 27 Jun 2024 18:56:44 GMT  
-		Size: 19.0 MB (18987711 bytes)  
+	-	`sha256:97a69260502d6811fff9c80502870c76fe89a2f09189b3abf50466efbcb349c4`  
+		Last Modified: Wed, 03 Jul 2024 10:33:22 GMT  
+		Size: 19.0 MB (18987461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15b4c2819c6f10afaa8e926f89a64abb4be7e6745a4b6e45332da47d9141a795`  
-		Last Modified: Thu, 27 Jun 2024 18:56:43 GMT  
-		Size: 9.2 MB (9161803 bytes)  
+	-	`sha256:8943d0779e915fad2cd7cb2c0664f5aac2c2b2d29466bd31f72e8586951c464a`  
+		Last Modified: Wed, 03 Jul 2024 10:33:21 GMT  
+		Size: 9.2 MB (9161813 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af8313b529f275c07f72c8dcdc22bbd21910c6c4048a6a8c68f50e0bd250dc0c`  
-		Last Modified: Thu, 27 Jun 2024 18:56:43 GMT  
-		Size: 854.0 B  
+	-	`sha256:b3c86c2e81c461cc8501cf110be7f37a904e896fb73111f610ecb959b15e8495`  
+		Last Modified: Wed, 03 Jul 2024 10:33:21 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45e7b1fe43e518c6324bc8c5379d8294b4fa2d2320f6d94f3aa332b5d1cc7319`  
-		Last Modified: Thu, 27 Jun 2024 18:56:43 GMT  
-		Size: 155.0 B  
+	-	`sha256:5c887181719b76fc0c365b50c8332c6d3cdd4f6651119073e82712f92ea8469b`  
+		Last Modified: Wed, 03 Jul 2024 10:33:21 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-eclipse-temurin-17` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:011bef6c223ff41974ede21973fa2a64992eda579d91ddcab9fe41fa453e839f
+$ docker pull maven@sha256:a7cb51e037f58260e7be0328abfbc987a7b17ce75157e6270766972b83b99f98
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (4975542 bytes)**  
+-	Total Size: **5.0 MB (4975546 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9989d3805767b56ce5d89a57caef132ae996b0a7b646c1c2e487b269ff47f72f`
+-	Image ID: `sha256:468ba49a2e4f74ef8bb8923f1400d83783f69c8aff453eab78e374706f2bd091`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:aa50d7fe35539ccd23f206ba22adf35012e4d13d2cf6ca98252102e01485bb4b`  
-		Last Modified: Thu, 27 Jun 2024 18:56:43 GMT  
-		Size: 5.0 MB (4955986 bytes)  
+	-	`sha256:f98d23a918a289fdcbc3d24ccb77f0514f50d8bff1251054093d4ba6a883e73b`  
+		Last Modified: Wed, 03 Jul 2024 10:33:21 GMT  
+		Size: 5.0 MB (4955990 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a1c08732bd33e646ffb2cf44a3eabe320efea69d0e5336a926dd0e6afb57e680`  
-		Last Modified: Thu, 27 Jun 2024 18:56:42 GMT  
+	-	`sha256:9d3f00bf5f5394f2b36f922c6b05cb3088e492dab6ae0af69739e48f2aa81186`  
+		Last Modified: Wed, 03 Jul 2024 10:33:21 GMT  
 		Size: 19.6 KB (19556 bytes)  
 		MIME: application/vnd.in-toto+json
