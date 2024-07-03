@@ -1,7 +1,7 @@
 ## `bash:devel`
 
 ```console
-$ docker pull bash@sha256:36e273f179ee70a1b31100e12d1da16e1a9b405c6b8a93b53642ae7c38f3c2f9
+$ docker pull bash@sha256:1b990c2bd0203a0475b880e3c9336b8d3fbd31e5edace4651b298e49b255d1c0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,13 +26,13 @@ $ docker pull bash@sha256:36e273f179ee70a1b31100e12d1da16e1a9b405c6b8a93b53642ae
 ### `bash:devel` - linux; amd64
 
 ```console
-$ docker pull bash@sha256:b5a39fc017b3ab45cef71a66ee1b7f4db30e3f1a7661bf1ef63fc13eaca0aa95
+$ docker pull bash@sha256:fc36745ef79d9742dd1d17ea50299a987171392c43a99880cba99f3f54a05a7e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 MB (6521197 bytes)**  
+-	Total Size: **6.5 MB (6521421 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2882f66a1ec02376f414136d100ae5a5865272c93ead2cd40d943d38faf560d3`
+-	Image ID: `sha256:aa3a67e9adb5757e98634d3379ff6e3dbb76c654f6853b980fb520cd45592d0c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -41,17 +41,17 @@ $ docker pull bash@sha256:b5a39fc017b3ab45cef71a66ee1b7f4db30e3f1a7661bf1ef63fc1
 ADD file:33ebe56b967747a97dcec01bc2559962bee8823686c9739d26be060381bbb3ca in / 
 # Thu, 20 Jun 2024 20:16:58 GMT
 CMD ["/bin/sh"]
-# Tue, 25 Jun 2024 04:18:11 GMT
-ENV _BASH_COMMIT=ad1f497a8477df4f3387adfb6a0f465980d2a292
-# Tue, 25 Jun 2024 04:18:11 GMT
-ENV _BASH_VERSION=devel-20240621
-# Tue, 25 Jun 2024 04:18:11 GMT
+# Tue, 02 Jul 2024 04:18:08 GMT
+ENV _BASH_COMMIT=5e28a1813ce7d08628c8df584ea36515091c6d9b
+# Tue, 02 Jul 2024 04:18:08 GMT
+ENV _BASH_VERSION=devel-20240628
+# Tue, 02 Jul 2024 04:18:08 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		ncurses-dev 		patch 		tar 	; 		wget -O bash.tar.gz "https://git.savannah.gnu.org/cgit/bash.git/snapshot/bash-$_BASH_COMMIT.tar.gz"; 		mkdir -p /usr/src/bash; 	tar 		--extract 		--file=bash.tar.gz 		--strip-components=1 		--directory=/usr/src/bash 	; 	rm bash.tar.gz; 		if [ -d bash-patches ]; then 		apk add --no-cache --virtual .patch-deps patch; 		for p in bash-patches/*; do 			patch 				--directory=/usr/src/bash 				--input="$(readlink -f "$p")" 				--strip=0 			; 			rm "$p"; 		done; 		rmdir bash-patches; 		apk del --no-network .patch-deps; 	fi; 		{ echo '#include <unistd.h>'; echo; cat /usr/src/bash/lib/sh/strscpy.c; } > /usr/src/bash/lib/sh/strscpy.c.new; 	mv /usr/src/bash/lib/sh/strscpy.c.new /usr/src/bash/lib/sh/strscpy.c; 		cd /usr/src/bash; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-readline 		--with-curses 		--without-bash-malloc 	|| { 		cat >&2 config.log; 		false; 	}; 	make -j "$(nproc)"; 	make install; 	cd /; 	rm -r /usr/src/bash; 		rm -rf 		/usr/local/share/doc/bash/*.html 		/usr/local/share/info 		/usr/local/share/locale 		/usr/local/share/man 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .bash-rundeps $runDeps; 	apk del --no-network .build-deps; 		[ "$(which bash)" = '/usr/local/bin/bash' ]; 	bash --version; 	bash -c 'help' > /dev/null # buildkit
-# Tue, 25 Jun 2024 04:18:11 GMT
+# Tue, 02 Jul 2024 04:18:08 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 25 Jun 2024 04:18:11 GMT
+# Tue, 02 Jul 2024 04:18:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 25 Jun 2024 04:18:11 GMT
+# Tue, 02 Jul 2024 04:18:08 GMT
 CMD ["bash"]
 ```
 
@@ -60,49 +60,49 @@ CMD ["bash"]
 		Last Modified: Thu, 20 Jun 2024 20:17:32 GMT  
 		Size: 3.6 MB (3623844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:56b33b841c1125ef3166f23ffcc086ea4d3413b84b3e191371c08a67bd400c54`  
-		Last Modified: Wed, 26 Jun 2024 02:50:23 GMT  
-		Size: 2.9 MB (2897017 bytes)  
+	-	`sha256:49cb14a59efd215b280bfef68a35a148f9e62af363f7b620ffeb5a276eb96236`  
+		Last Modified: Tue, 02 Jul 2024 22:06:53 GMT  
+		Size: 2.9 MB (2897244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee95b04f84d98b74f3963401b069fb53eaa94716ca0d269e67c0544fa3b276e8`  
-		Last Modified: Wed, 26 Jun 2024 02:50:23 GMT  
-		Size: 336.0 B  
+	-	`sha256:6d38e066e4e068ee458c3ae08d3693e71f44c4f4d884ba04b2c76b8a15bfa638`  
+		Last Modified: Tue, 02 Jul 2024 22:06:52 GMT  
+		Size: 333.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bash:devel` - unknown; unknown
 
 ```console
-$ docker pull bash@sha256:120e77641246f08a1d15c3d8fdeeba9a11d679dfe0d6162e17c0315007a44a19
+$ docker pull bash@sha256:91027eba83105746237f32cb117ec1e0ec4fc73838951a23b87c05c3b7d5c24a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.7 KB (122718 bytes)**  
+-	Total Size: **122.8 KB (122752 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:428d413f8466c196f992c5e46a209d96b32316b881d87ec168df52f5947e0cca`
+-	Image ID: `sha256:34619865d8030023067b5cb4913b968f21e99ca3945f128d24ba5f8b803d72c0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6380958804585350b87ab6ad367ea1eba0444b35d255fc7f9b23ba49d6079c90`  
-		Last Modified: Wed, 26 Jun 2024 02:50:23 GMT  
+	-	`sha256:8ec9325c0796bcb1fe87018d13985ab388dc2fa904aac3e2abe34938e2b5910f`  
+		Last Modified: Tue, 02 Jul 2024 22:06:53 GMT  
 		Size: 106.5 KB (106509 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:76ece586ded11461a9729f558660b245411153ed4033903fee27fe06f5a6b6ed`  
-		Last Modified: Wed, 26 Jun 2024 02:50:23 GMT  
-		Size: 16.2 KB (16209 bytes)  
+	-	`sha256:aaedc625382bdc9c6973268dd94f349e8460995314be183bea21d80b9d81605c`  
+		Last Modified: Tue, 02 Jul 2024 22:06:53 GMT  
+		Size: 16.2 KB (16243 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `bash:devel` - linux; arm variant v6
 
 ```console
-$ docker pull bash@sha256:65dd042dd2b31d19bc8a0df0d72657ce1261f928271274d1518630f78290e891
+$ docker pull bash@sha256:a70560c28302930fd06560e25c6062a89d363e90a04a0deb01a0a6b868e25648
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.2 MB (6213219 bytes)**  
+-	Total Size: **6.2 MB (6213317 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7d1b3067e8c64447fe333b48001726550f9beb694e2512d7be2560ffededd12`
+-	Image ID: `sha256:7f4efdf523555beb3f244d7b5ac51cfd8c85307d8411584a71a82d8dab91c4ba`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -111,17 +111,17 @@ $ docker pull bash@sha256:65dd042dd2b31d19bc8a0df0d72657ce1261f928271274d1518630
 ADD file:ef2635f09c1d2632408805d106fbc5d27fb307cb5f584bddc699b4b5ae577623 in / 
 # Thu, 20 Jun 2024 17:49:15 GMT
 CMD ["/bin/sh"]
-# Tue, 25 Jun 2024 04:18:11 GMT
-ENV _BASH_COMMIT=ad1f497a8477df4f3387adfb6a0f465980d2a292
-# Tue, 25 Jun 2024 04:18:11 GMT
-ENV _BASH_VERSION=devel-20240621
-# Tue, 25 Jun 2024 04:18:11 GMT
+# Tue, 02 Jul 2024 04:18:08 GMT
+ENV _BASH_COMMIT=5e28a1813ce7d08628c8df584ea36515091c6d9b
+# Tue, 02 Jul 2024 04:18:08 GMT
+ENV _BASH_VERSION=devel-20240628
+# Tue, 02 Jul 2024 04:18:08 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		ncurses-dev 		patch 		tar 	; 		wget -O bash.tar.gz "https://git.savannah.gnu.org/cgit/bash.git/snapshot/bash-$_BASH_COMMIT.tar.gz"; 		mkdir -p /usr/src/bash; 	tar 		--extract 		--file=bash.tar.gz 		--strip-components=1 		--directory=/usr/src/bash 	; 	rm bash.tar.gz; 		if [ -d bash-patches ]; then 		apk add --no-cache --virtual .patch-deps patch; 		for p in bash-patches/*; do 			patch 				--directory=/usr/src/bash 				--input="$(readlink -f "$p")" 				--strip=0 			; 			rm "$p"; 		done; 		rmdir bash-patches; 		apk del --no-network .patch-deps; 	fi; 		{ echo '#include <unistd.h>'; echo; cat /usr/src/bash/lib/sh/strscpy.c; } > /usr/src/bash/lib/sh/strscpy.c.new; 	mv /usr/src/bash/lib/sh/strscpy.c.new /usr/src/bash/lib/sh/strscpy.c; 		cd /usr/src/bash; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-readline 		--with-curses 		--without-bash-malloc 	|| { 		cat >&2 config.log; 		false; 	}; 	make -j "$(nproc)"; 	make install; 	cd /; 	rm -r /usr/src/bash; 		rm -rf 		/usr/local/share/doc/bash/*.html 		/usr/local/share/info 		/usr/local/share/locale 		/usr/local/share/man 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .bash-rundeps $runDeps; 	apk del --no-network .build-deps; 		[ "$(which bash)" = '/usr/local/bin/bash' ]; 	bash --version; 	bash -c 'help' > /dev/null # buildkit
-# Tue, 25 Jun 2024 04:18:11 GMT
+# Tue, 02 Jul 2024 04:18:08 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 25 Jun 2024 04:18:11 GMT
+# Tue, 02 Jul 2024 04:18:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 25 Jun 2024 04:18:11 GMT
+# Tue, 02 Jul 2024 04:18:08 GMT
 CMD ["bash"]
 ```
 
@@ -130,33 +130,33 @@ CMD ["bash"]
 		Last Modified: Thu, 20 Jun 2024 17:49:36 GMT  
 		Size: 3.4 MB (3367154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e348955d5ebbe782970a47efa9a9e7e8a3416d57d9684a0a1e78d9918c411053`  
-		Last Modified: Wed, 26 Jun 2024 03:50:26 GMT  
-		Size: 2.8 MB (2845726 bytes)  
+	-	`sha256:dd306395f3bc830122b8f97dee60baf69351e6670eb3961d51ca3fc57480da39`  
+		Last Modified: Tue, 02 Jul 2024 22:21:28 GMT  
+		Size: 2.8 MB (2845826 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:526ea359829187093baea9eb2ea6ed4f92283134d9a6c48227defec38d8f0f68`  
-		Last Modified: Wed, 26 Jun 2024 03:50:26 GMT  
-		Size: 339.0 B  
+	-	`sha256:fcbe2ddeb2dedc890f73009a53fa9b9c6bc94c4ffafbcc0fbac752ae4fee56c8`  
+		Last Modified: Tue, 02 Jul 2024 22:21:28 GMT  
+		Size: 337.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bash:devel` - unknown; unknown
 
 ```console
-$ docker pull bash@sha256:4e887f80b054edb628e97b38fc54451cbeb0f44f3fe3d87a7e10d10181607a9a
+$ docker pull bash@sha256:84267891afeccb64ac3850d50a2a525f1bc6acff338799533178fdeb73f04335
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.1 KB (16062 bytes)**  
+-	Total Size: **16.1 KB (16094 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:458fce47eb666fa9c5afea29849b5ca02eae724470f9da5cb630bf2080fcfcc4`
+-	Image ID: `sha256:7fd585784e70c2bc92d150d625e48e6db501031ed446502fe37a656e4e88ce02`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:95493097ed689018c8c98bdf184d8c948c77f0ee3549f1d45927c763f6d72927`  
-		Last Modified: Wed, 26 Jun 2024 03:50:26 GMT  
-		Size: 16.1 KB (16062 bytes)  
+	-	`sha256:419c7e66f62481161dacc2a8db3f94cfe7a38dd879509f3834d06c248e04b896`  
+		Last Modified: Tue, 02 Jul 2024 22:21:28 GMT  
+		Size: 16.1 KB (16094 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `bash:devel` - linux; arm variant v7
