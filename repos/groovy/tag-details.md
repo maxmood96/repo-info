@@ -60,7 +60,7 @@
 ## `groovy:4`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -213,28 +213,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:4` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -279,69 +279,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4` - linux; arm64 variant v8
@@ -481,28 +481,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:4` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -547,68 +547,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -880,7 +880,7 @@ $ docker pull groovy@sha256:2f47bbde1bcda1fd0e00ef2f8f8b029849cca8c04caa2af7a8ba
 ## `groovy:4-jammy`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1033,28 +1033,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:4-jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -1099,69 +1099,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4-jammy` - linux; arm64 variant v8
@@ -1301,28 +1301,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:4-jammy` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -1367,68 +1367,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1569,7 +1569,7 @@ $ docker pull groovy@sha256:b7b1cc5a876c9c25fabf5fd05ba6e5e4851cd8813fe035a3f8c3
 ## `groovy:4.0`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1722,28 +1722,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:4.0` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -1788,69 +1788,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0` - linux; arm64 variant v8
@@ -1990,28 +1990,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:4.0` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -2056,68 +2056,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2389,7 +2389,7 @@ $ docker pull groovy@sha256:2f47bbde1bcda1fd0e00ef2f8f8b029849cca8c04caa2af7a8ba
 ## `groovy:4.0-jammy`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2542,28 +2542,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:4.0-jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -2608,69 +2608,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0-jammy` - linux; arm64 variant v8
@@ -2810,28 +2810,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:4.0-jammy` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -2876,68 +2876,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3078,7 +3078,7 @@ $ docker pull groovy@sha256:b7b1cc5a876c9c25fabf5fd05ba6e5e4851cd8813fe035a3f8c3
 ## `groovy:4.0-jdk`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3231,28 +3231,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:4.0-jdk` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -3297,69 +3297,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0-jdk` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0-jdk` - linux; arm64 variant v8
@@ -3499,28 +3499,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:4.0-jdk` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -3565,68 +3565,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0-jdk` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3898,7 +3898,7 @@ $ docker pull groovy@sha256:2f47bbde1bcda1fd0e00ef2f8f8b029849cca8c04caa2af7a8ba
 ## `groovy:4.0-jdk-jammy`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4051,28 +4051,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:4.0-jdk-jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -4117,69 +4117,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0-jdk-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0-jdk-jammy` - linux; arm64 variant v8
@@ -4319,28 +4319,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:4.0-jdk-jammy` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -4385,68 +4385,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0-jdk-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4587,7 +4587,7 @@ $ docker pull groovy@sha256:b7b1cc5a876c9c25fabf5fd05ba6e5e4851cd8813fe035a3f8c3
 ## `groovy:4.0-jdk11`
 
 ```console
-$ docker pull groovy@sha256:8490d229e96b3843f2b311aa4384584ed0a40f1b09b8e1e6c83a58c1871b1387
+$ docker pull groovy@sha256:2533f5b37c28c6905da55db94eefc4fcdb503df75408d8569ce6ee075e7b6355
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4740,28 +4740,28 @@ $ docker pull groovy@sha256:145892900f3a837630464f234bce5a34547f7fedf5b482c9819d
 ### `groovy:4.0-jdk11` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:4f624b8b265815f6edee3e05a3b1558a603d4172c461fe32dea87ce79194a0a5
+$ docker pull groovy@sha256:f2c6e04358da4094b16e4f38cdddd72bb9c1277d2c490ad6e8f5c23080dce06d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **211.8 MB (211805657 bytes)**  
+-	Total Size: **211.5 MB (211499475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1b517cc1e34fedbbdc7f5d8fe05323d7462c7189703ccdb561cd692d1d22a2c`
+-	Image ID: `sha256:23e7a9f46e190b35d2f388942bd3104448fe6bda74432f3336f2f105c0744071`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -4806,69 +4806,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d2e7d8e2026f154f12e834d8b72426c2f71c8a555d373336fddba91616868b7`  
-		Last Modified: Wed, 05 Jun 2024 03:59:49 GMT  
-		Size: 12.5 MB (12493203 bytes)  
+	-	`sha256:7c3600b7820ccdab844af0b11c36a1aeadc460c5a3bc6a6fd0211a3fa9024fb1`  
+		Last Modified: Tue, 02 Jul 2024 04:32:24 GMT  
+		Size: 12.5 MB (12462968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:463ed2419e5a3d33f88d49daac8b666c92a96a76a7a61459c49c34fcd3e6a9f1`  
-		Last Modified: Wed, 05 Jun 2024 04:01:10 GMT  
-		Size: 138.0 MB (138004561 bytes)  
+	-	`sha256:f5683275978575be7df9d26c3ae87f4576b2d810ec10b569c7331167fb751a9c`  
+		Last Modified: Tue, 02 Jul 2024 04:33:37 GMT  
+		Size: 138.0 MB (138004562 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ece81701fa181139e9fcefd2eedd9d1736df1692a74f866d31a164d40a548e3`  
-		Last Modified: Wed, 05 Jun 2024 04:00:55 GMT  
-		Size: 176.0 B  
+	-	`sha256:ee4e9957dbca99a8013bcf78bffbe5eba97801c1181113196b1dc286d813cbf4`  
+		Last Modified: Tue, 02 Jul 2024 04:33:24 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ed363f50e5e6714fd4c28aa4be93d0aac96e086f7e2a3aa187353c0af702b20`  
-		Last Modified: Wed, 05 Jun 2024 04:00:55 GMT  
+	-	`sha256:f92e17a5667c973237880379e1fc188c1530f8dedf2dfadf57f47e2f73108901`  
+		Last Modified: Tue, 02 Jul 2024 04:33:24 GMT  
 		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9de937951398fcf5fce138c838e20917cc2693fb428a676c1d3cd456833e5828`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 4.3 KB (4322 bytes)  
+	-	`sha256:2532a70e36e60b23b5b5230b085f8c952f232242ab3bdb4ed87b9b4b3e6f9698`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 4.3 KB (4319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57ebd6ce6c87352c55add17fbc7b92843e7fbf1c2e9643fff64112d944230ffb`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 3.9 MB (3915651 bytes)  
+	-	`sha256:c6d00726f495c7a4ccac2d73c4b363fc3d9b415f4fbd0e362555334a3456eed9`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 3.6 MB (3640550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0450df761165aa02c92e3b16a83ccd3428457722232ae5c0079467511dfff879`  
-		Last Modified: Mon, 01 Jul 2024 23:56:11 GMT  
-		Size: 29.9 MB (29851952 bytes)  
+	-	`sha256:ca93992ab9ff30f09f1c32d12e04f410b7752cba26eacfaa3eff47714bd03219`  
+		Last Modified: Wed, 03 Jul 2024 02:41:29 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f1e0a4c14d78f526723017f53b36fca30647c7d7d5a7cd4e6d5bb638a7b0e95`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 139.0 B  
+	-	`sha256:5918511ba6a2336bf6f8e4d0360748d85d0e21783923cc7d0ddca87cf1ce0bdb`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0-jdk11` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:1dc787ee2c00abc71cd0f4963fef40d2795bbc869d9f3183ab94de0bf8ddd2dd
+$ docker pull groovy@sha256:e08d9ac40285489b0f2a93777d67ee01af52364bc8d92fbf833dd0bc536bf472
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3695726 bytes)**  
+-	Total Size: **3.7 MB (3695725 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fa71ff34119178db04738a283baa2c4918b9a529a7d666d9166a1a93f3f4d02`
+-	Image ID: `sha256:33f719d2e9f78666053946bf0c414100f6736e3fae160ba7a23f7b71864a3779`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b16c15d4796b27510bcb7dad3c04347e8a4ffe6c10828001d0b0b264d59fb82f`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
+	-	`sha256:66d455317a8bfae65654ce1954fb42c940eca7103ad84ff3b8bc648b5fb0dc80`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
 		Size: 3.7 MB (3670017 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:33bde50e0ccc9850be6255e563557968398afe4685d812d44a7223c53b1e895a`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 25.7 KB (25709 bytes)  
+	-	`sha256:2ac037cc3d39d9bd7b1c9d587d55cedef610ddbc5ce69d2a63e1f020bc72a787`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 25.7 KB (25708 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0-jdk11` - linux; arm64 variant v8
@@ -5008,28 +5008,28 @@ $ docker pull groovy@sha256:e71f7bf579dcc7f0bda6ace219b6d571328dccae0a59184cd547
 ### `groovy:4.0-jdk11` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:c3c390eb009bb96b1485ca1724fb3a6ba962510c0393fc504358ffeffa0a9189
+$ docker pull groovy@sha256:f1e6b1db78275f243bf3f42478ff5a756b8858195cfb66c0f4b93c510f218965
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **216.5 MB (216491066 bytes)**  
+-	Total Size: **216.1 MB (216079768 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:feac2439f6706fb174f2c6ff526bc7bc1af2b0d9bb668ff1160b3e0bfd8cc4b4`
+-	Image ID: `sha256:86e89a445adbf09572a0513eccfa4dc7e355f5b5d7ac211bfad8fc26cd8408ad`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -5074,68 +5074,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b82f84268a93862af92928dd1cc1dc31937bbffd50302e61f899397e5223399d`  
-		Last Modified: Wed, 05 Jun 2024 04:00:20 GMT  
-		Size: 13.8 MB (13766991 bytes)  
+	-	`sha256:4aea30364eff82eb5379f35c10575a54ece802a6af1763591c0a6a999d72c84c`  
+		Last Modified: Tue, 02 Jul 2024 05:04:14 GMT  
+		Size: 13.7 MB (13714876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40ab8ce3a4fcaeb41752f1fe6f96527d85961ebc21e210ec8b27f5cb4c68fa70`  
-		Last Modified: Wed, 05 Jun 2024 04:01:39 GMT  
-		Size: 132.7 MB (132718863 bytes)  
+	-	`sha256:9e3c3db8c3ce267302ab33698998e2969d08346da85f3c69446c98910f01e534`  
+		Last Modified: Tue, 02 Jul 2024 05:04:57 GMT  
+		Size: 132.7 MB (132718876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24b4e95798e15aea98fc366c58314c56c188e0316139bbcdaceed59a01cfadf6`  
-		Last Modified: Wed, 05 Jun 2024 04:01:26 GMT  
-		Size: 176.0 B  
+	-	`sha256:b2731f957d26e7380c16b0db866ae857ccea882ea104b9cadde90f6da05365bc`  
+		Last Modified: Tue, 02 Jul 2024 05:04:45 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf14d7106fd55e9cc3409e1c64c4aa3206131adb17d0f6f0e62227e2e2732070`  
-		Last Modified: Wed, 05 Jun 2024 04:01:26 GMT  
+	-	`sha256:34895e55ab2f8114aef706c3814ecaad2fb5146d3efb7b13533c5383c9527eb3`  
+		Last Modified: Tue, 02 Jul 2024 05:04:45 GMT  
 		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09d18e613e0ffc663afed300db99b3436783fa874590704d5b6fd6ca5169b0e4`  
-		Last Modified: Mon, 01 Jul 2024 23:56:19 GMT  
-		Size: 4.3 KB (4332 bytes)  
+	-	`sha256:8a79b3e2a40649e94bf270662488e17c6dffacfa001b53ab0ccfd12b870f371c`  
+		Last Modified: Wed, 03 Jul 2024 01:56:59 GMT  
+		Size: 4.3 KB (4335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb132cd3cffb7610907dc97c2cd4a9aa3bc0b9b571f115ea2c0e3c6558b65fb8`  
-		Last Modified: Mon, 01 Jul 2024 23:56:20 GMT  
-		Size: 4.6 MB (4559506 bytes)  
+	-	`sha256:65027438984676b3393eb393c639f5c9d11ecf095e4b832ce2cb33c1d4641b9f`  
+		Last Modified: Wed, 03 Jul 2024 01:57:00 GMT  
+		Size: 4.2 MB (4200322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42458ddfb4b0a3512da9e0d2dc9df283274d158bdc92f8139d7ed34e25847e00`  
-		Last Modified: Mon, 01 Jul 2024 23:56:21 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:6dce60ca3f12526f9c327dd5c81aad6b7c96c2e2fc08230d8b00ca60af68ff0b`  
+		Last Modified: Wed, 03 Jul 2024 01:57:01 GMT  
+		Size: 29.9 MB (29851962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df928c76abd344969eb21a2fafd95ca9fb6e15415d1d3a82549a3b5718cf257f`  
-		Last Modified: Mon, 01 Jul 2024 23:56:20 GMT  
+	-	`sha256:cf7b575fbd064b0613b3e0770ff487bbb84d4443c99d896f9c5fe5a7ecc92b67`  
+		Last Modified: Wed, 03 Jul 2024 01:56:59 GMT  
 		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0-jdk11` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:45c267892df446dd7d9b6046a186c537f61865cc68f9d2a659538698569eda9e
+$ docker pull groovy@sha256:e06df4221cc87a81bfaee5e9d0391d97cd4bc19793350a3d0ee31b81adf44ca5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.7 MB (3698816 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2578218355a2e744bc0b6d3583b1a2b408b96f4a2ac6514da9cd168ba8664c5d`
+-	Image ID: `sha256:54198f1e6bc2109de2c10ae724390564c6e7dd42c06b020de5d0ca3585f44023`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:169219fb679975fa87afd251a449909b7ab59a0969ec8dccbe187b975d8cf681`  
-		Last Modified: Mon, 01 Jul 2024 23:56:20 GMT  
+	-	`sha256:7c3d50e629c15ff35788c9521ae6525e04016f186120d5cc34c169130e9f9266`  
+		Last Modified: Wed, 03 Jul 2024 01:57:00 GMT  
 		Size: 3.7 MB (3673176 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7e284272afee0636e708b83c34a12c0967233008e69383f0cd3c89a78ff1dddb`  
-		Last Modified: Mon, 01 Jul 2024 23:56:19 GMT  
+	-	`sha256:41a095739b250ca0eb86e41f364209b04c78c7cb7fb8b40d075994b298ff3a4b`  
+		Last Modified: Wed, 03 Jul 2024 01:56:59 GMT  
 		Size: 25.6 KB (25640 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5407,7 +5407,7 @@ $ docker pull groovy@sha256:29a6e11782a1367487a9029a15fa46f2730f8d6a2c903e7487e8
 ## `groovy:4.0-jdk11-jammy`
 
 ```console
-$ docker pull groovy@sha256:8490d229e96b3843f2b311aa4384584ed0a40f1b09b8e1e6c83a58c1871b1387
+$ docker pull groovy@sha256:2533f5b37c28c6905da55db94eefc4fcdb503df75408d8569ce6ee075e7b6355
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5560,28 +5560,28 @@ $ docker pull groovy@sha256:145892900f3a837630464f234bce5a34547f7fedf5b482c9819d
 ### `groovy:4.0-jdk11-jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:4f624b8b265815f6edee3e05a3b1558a603d4172c461fe32dea87ce79194a0a5
+$ docker pull groovy@sha256:f2c6e04358da4094b16e4f38cdddd72bb9c1277d2c490ad6e8f5c23080dce06d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **211.8 MB (211805657 bytes)**  
+-	Total Size: **211.5 MB (211499475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1b517cc1e34fedbbdc7f5d8fe05323d7462c7189703ccdb561cd692d1d22a2c`
+-	Image ID: `sha256:23e7a9f46e190b35d2f388942bd3104448fe6bda74432f3336f2f105c0744071`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -5626,69 +5626,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d2e7d8e2026f154f12e834d8b72426c2f71c8a555d373336fddba91616868b7`  
-		Last Modified: Wed, 05 Jun 2024 03:59:49 GMT  
-		Size: 12.5 MB (12493203 bytes)  
+	-	`sha256:7c3600b7820ccdab844af0b11c36a1aeadc460c5a3bc6a6fd0211a3fa9024fb1`  
+		Last Modified: Tue, 02 Jul 2024 04:32:24 GMT  
+		Size: 12.5 MB (12462968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:463ed2419e5a3d33f88d49daac8b666c92a96a76a7a61459c49c34fcd3e6a9f1`  
-		Last Modified: Wed, 05 Jun 2024 04:01:10 GMT  
-		Size: 138.0 MB (138004561 bytes)  
+	-	`sha256:f5683275978575be7df9d26c3ae87f4576b2d810ec10b569c7331167fb751a9c`  
+		Last Modified: Tue, 02 Jul 2024 04:33:37 GMT  
+		Size: 138.0 MB (138004562 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ece81701fa181139e9fcefd2eedd9d1736df1692a74f866d31a164d40a548e3`  
-		Last Modified: Wed, 05 Jun 2024 04:00:55 GMT  
-		Size: 176.0 B  
+	-	`sha256:ee4e9957dbca99a8013bcf78bffbe5eba97801c1181113196b1dc286d813cbf4`  
+		Last Modified: Tue, 02 Jul 2024 04:33:24 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ed363f50e5e6714fd4c28aa4be93d0aac96e086f7e2a3aa187353c0af702b20`  
-		Last Modified: Wed, 05 Jun 2024 04:00:55 GMT  
+	-	`sha256:f92e17a5667c973237880379e1fc188c1530f8dedf2dfadf57f47e2f73108901`  
+		Last Modified: Tue, 02 Jul 2024 04:33:24 GMT  
 		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9de937951398fcf5fce138c838e20917cc2693fb428a676c1d3cd456833e5828`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 4.3 KB (4322 bytes)  
+	-	`sha256:2532a70e36e60b23b5b5230b085f8c952f232242ab3bdb4ed87b9b4b3e6f9698`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 4.3 KB (4319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57ebd6ce6c87352c55add17fbc7b92843e7fbf1c2e9643fff64112d944230ffb`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 3.9 MB (3915651 bytes)  
+	-	`sha256:c6d00726f495c7a4ccac2d73c4b363fc3d9b415f4fbd0e362555334a3456eed9`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 3.6 MB (3640550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0450df761165aa02c92e3b16a83ccd3428457722232ae5c0079467511dfff879`  
-		Last Modified: Mon, 01 Jul 2024 23:56:11 GMT  
-		Size: 29.9 MB (29851952 bytes)  
+	-	`sha256:ca93992ab9ff30f09f1c32d12e04f410b7752cba26eacfaa3eff47714bd03219`  
+		Last Modified: Wed, 03 Jul 2024 02:41:29 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f1e0a4c14d78f526723017f53b36fca30647c7d7d5a7cd4e6d5bb638a7b0e95`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 139.0 B  
+	-	`sha256:5918511ba6a2336bf6f8e4d0360748d85d0e21783923cc7d0ddca87cf1ce0bdb`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0-jdk11-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:1dc787ee2c00abc71cd0f4963fef40d2795bbc869d9f3183ab94de0bf8ddd2dd
+$ docker pull groovy@sha256:e08d9ac40285489b0f2a93777d67ee01af52364bc8d92fbf833dd0bc536bf472
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3695726 bytes)**  
+-	Total Size: **3.7 MB (3695725 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fa71ff34119178db04738a283baa2c4918b9a529a7d666d9166a1a93f3f4d02`
+-	Image ID: `sha256:33f719d2e9f78666053946bf0c414100f6736e3fae160ba7a23f7b71864a3779`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b16c15d4796b27510bcb7dad3c04347e8a4ffe6c10828001d0b0b264d59fb82f`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
+	-	`sha256:66d455317a8bfae65654ce1954fb42c940eca7103ad84ff3b8bc648b5fb0dc80`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
 		Size: 3.7 MB (3670017 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:33bde50e0ccc9850be6255e563557968398afe4685d812d44a7223c53b1e895a`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 25.7 KB (25709 bytes)  
+	-	`sha256:2ac037cc3d39d9bd7b1c9d587d55cedef610ddbc5ce69d2a63e1f020bc72a787`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 25.7 KB (25708 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0-jdk11-jammy` - linux; arm64 variant v8
@@ -5828,28 +5828,28 @@ $ docker pull groovy@sha256:e71f7bf579dcc7f0bda6ace219b6d571328dccae0a59184cd547
 ### `groovy:4.0-jdk11-jammy` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:c3c390eb009bb96b1485ca1724fb3a6ba962510c0393fc504358ffeffa0a9189
+$ docker pull groovy@sha256:f1e6b1db78275f243bf3f42478ff5a756b8858195cfb66c0f4b93c510f218965
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **216.5 MB (216491066 bytes)**  
+-	Total Size: **216.1 MB (216079768 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:feac2439f6706fb174f2c6ff526bc7bc1af2b0d9bb668ff1160b3e0bfd8cc4b4`
+-	Image ID: `sha256:86e89a445adbf09572a0513eccfa4dc7e355f5b5d7ac211bfad8fc26cd8408ad`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -5894,68 +5894,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b82f84268a93862af92928dd1cc1dc31937bbffd50302e61f899397e5223399d`  
-		Last Modified: Wed, 05 Jun 2024 04:00:20 GMT  
-		Size: 13.8 MB (13766991 bytes)  
+	-	`sha256:4aea30364eff82eb5379f35c10575a54ece802a6af1763591c0a6a999d72c84c`  
+		Last Modified: Tue, 02 Jul 2024 05:04:14 GMT  
+		Size: 13.7 MB (13714876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40ab8ce3a4fcaeb41752f1fe6f96527d85961ebc21e210ec8b27f5cb4c68fa70`  
-		Last Modified: Wed, 05 Jun 2024 04:01:39 GMT  
-		Size: 132.7 MB (132718863 bytes)  
+	-	`sha256:9e3c3db8c3ce267302ab33698998e2969d08346da85f3c69446c98910f01e534`  
+		Last Modified: Tue, 02 Jul 2024 05:04:57 GMT  
+		Size: 132.7 MB (132718876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24b4e95798e15aea98fc366c58314c56c188e0316139bbcdaceed59a01cfadf6`  
-		Last Modified: Wed, 05 Jun 2024 04:01:26 GMT  
-		Size: 176.0 B  
+	-	`sha256:b2731f957d26e7380c16b0db866ae857ccea882ea104b9cadde90f6da05365bc`  
+		Last Modified: Tue, 02 Jul 2024 05:04:45 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf14d7106fd55e9cc3409e1c64c4aa3206131adb17d0f6f0e62227e2e2732070`  
-		Last Modified: Wed, 05 Jun 2024 04:01:26 GMT  
+	-	`sha256:34895e55ab2f8114aef706c3814ecaad2fb5146d3efb7b13533c5383c9527eb3`  
+		Last Modified: Tue, 02 Jul 2024 05:04:45 GMT  
 		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09d18e613e0ffc663afed300db99b3436783fa874590704d5b6fd6ca5169b0e4`  
-		Last Modified: Mon, 01 Jul 2024 23:56:19 GMT  
-		Size: 4.3 KB (4332 bytes)  
+	-	`sha256:8a79b3e2a40649e94bf270662488e17c6dffacfa001b53ab0ccfd12b870f371c`  
+		Last Modified: Wed, 03 Jul 2024 01:56:59 GMT  
+		Size: 4.3 KB (4335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb132cd3cffb7610907dc97c2cd4a9aa3bc0b9b571f115ea2c0e3c6558b65fb8`  
-		Last Modified: Mon, 01 Jul 2024 23:56:20 GMT  
-		Size: 4.6 MB (4559506 bytes)  
+	-	`sha256:65027438984676b3393eb393c639f5c9d11ecf095e4b832ce2cb33c1d4641b9f`  
+		Last Modified: Wed, 03 Jul 2024 01:57:00 GMT  
+		Size: 4.2 MB (4200322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42458ddfb4b0a3512da9e0d2dc9df283274d158bdc92f8139d7ed34e25847e00`  
-		Last Modified: Mon, 01 Jul 2024 23:56:21 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:6dce60ca3f12526f9c327dd5c81aad6b7c96c2e2fc08230d8b00ca60af68ff0b`  
+		Last Modified: Wed, 03 Jul 2024 01:57:01 GMT  
+		Size: 29.9 MB (29851962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df928c76abd344969eb21a2fafd95ca9fb6e15415d1d3a82549a3b5718cf257f`  
-		Last Modified: Mon, 01 Jul 2024 23:56:20 GMT  
+	-	`sha256:cf7b575fbd064b0613b3e0770ff487bbb84d4443c99d896f9c5fe5a7ecc92b67`  
+		Last Modified: Wed, 03 Jul 2024 01:56:59 GMT  
 		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0-jdk11-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:45c267892df446dd7d9b6046a186c537f61865cc68f9d2a659538698569eda9e
+$ docker pull groovy@sha256:e06df4221cc87a81bfaee5e9d0391d97cd4bc19793350a3d0ee31b81adf44ca5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.7 MB (3698816 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2578218355a2e744bc0b6d3583b1a2b408b96f4a2ac6514da9cd168ba8664c5d`
+-	Image ID: `sha256:54198f1e6bc2109de2c10ae724390564c6e7dd42c06b020de5d0ca3585f44023`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:169219fb679975fa87afd251a449909b7ab59a0969ec8dccbe187b975d8cf681`  
-		Last Modified: Mon, 01 Jul 2024 23:56:20 GMT  
+	-	`sha256:7c3d50e629c15ff35788c9521ae6525e04016f186120d5cc34c169130e9f9266`  
+		Last Modified: Wed, 03 Jul 2024 01:57:00 GMT  
 		Size: 3.7 MB (3673176 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7e284272afee0636e708b83c34a12c0967233008e69383f0cd3c89a78ff1dddb`  
-		Last Modified: Mon, 01 Jul 2024 23:56:19 GMT  
+	-	`sha256:41a095739b250ca0eb86e41f364209b04c78c7cb7fb8b40d075994b298ff3a4b`  
+		Last Modified: Wed, 03 Jul 2024 01:56:59 GMT  
 		Size: 25.6 KB (25640 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6096,7 +6096,7 @@ $ docker pull groovy@sha256:f0e8356ae0b55f682e9121b1592e582ef4fc42c87bb4026d1572
 ## `groovy:4.0-jdk17`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6249,28 +6249,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:4.0-jdk17` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -6315,69 +6315,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0-jdk17` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0-jdk17` - linux; arm64 variant v8
@@ -6517,28 +6517,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:4.0-jdk17` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -6583,68 +6583,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0-jdk17` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6916,7 +6916,7 @@ $ docker pull groovy@sha256:2f47bbde1bcda1fd0e00ef2f8f8b029849cca8c04caa2af7a8ba
 ## `groovy:4.0-jdk17-jammy`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7069,28 +7069,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:4.0-jdk17-jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -7135,69 +7135,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0-jdk17-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0-jdk17-jammy` - linux; arm64 variant v8
@@ -7337,28 +7337,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:4.0-jdk17-jammy` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -7403,68 +7403,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0-jdk17-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8420,7 +8420,7 @@ $ docker pull groovy@sha256:daff42efd1818b1a39e6647e569d6fc08505b9b901f16a4e499a
 ## `groovy:4.0-jdk8`
 
 ```console
-$ docker pull groovy@sha256:047c993a770b7b3c08385c52a95bf9e682161703a9fc07498e588ac2a9b4f98a
+$ docker pull groovy@sha256:33e753b07ba5cbea160b49243022ca20a3fc57227bfa1754ed3f71e153f79624
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8569,28 +8569,28 @@ $ docker pull groovy@sha256:1f811aaf8f9030486db33c1df3fd5b6ec7c43c6cca4deb2c0371
 ### `groovy:4.0-jdk8` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:6fda91c419c47bc010332f3f18b1abfdb310f048b65f4cfc7e1c96c1378ba8e3
+$ docker pull groovy@sha256:439082c6940e9bddd0e2077000f061b853bdb005b233029558c063a8a0a8a490
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **173.0 MB (173029232 bytes)**  
+-	Total Size: **172.7 MB (172721472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6404ab3df9bc33210338dcc96c94d5f917c6b6f1297aa7d13eb489364bbaba3`
+-	Image ID: `sha256:9cc4930f2c4c60659321f9aa06d8237c8230256f128946e9bc93ad8a4d563723`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -8633,69 +8633,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d2e7d8e2026f154f12e834d8b72426c2f71c8a555d373336fddba91616868b7`  
-		Last Modified: Wed, 05 Jun 2024 03:59:49 GMT  
-		Size: 12.5 MB (12493203 bytes)  
+	-	`sha256:7c3600b7820ccdab844af0b11c36a1aeadc460c5a3bc6a6fd0211a3fa9024fb1`  
+		Last Modified: Tue, 02 Jul 2024 04:32:24 GMT  
+		Size: 12.5 MB (12462968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95298bffd1c0ebd593eeb6754e0f5e5ba9ca25454af388f78cd657152f59cd01`  
-		Last Modified: Wed, 05 Jun 2024 03:59:55 GMT  
-		Size: 99.2 MB (99228750 bytes)  
+	-	`sha256:ab96ab5089efb8387a3b08075cfe11b114399a6489afd8cb83ceddc16d6798ac`  
+		Last Modified: Tue, 02 Jul 2024 04:32:31 GMT  
+		Size: 99.2 MB (99228023 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d783cd2973ac4c20fae7efd4d2e605cff4de71ba08f4110510a1e7d7dc0239b5`  
-		Last Modified: Wed, 05 Jun 2024 03:59:46 GMT  
+	-	`sha256:af866480c7ff18491aba2f2ebea87553ba5c884826ec3578d09af689bd4ffe4c`  
+		Last Modified: Tue, 02 Jul 2024 04:32:22 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:160d32d80ad9bff0aadc9f16c0712d2e20cc58ddf491fba50571fccb3d0d77f9`  
-		Last Modified: Wed, 05 Jun 2024 03:59:46 GMT  
-		Size: 734.0 B  
+	-	`sha256:18de864e1d2126d8d641940b568e4a4e05973ffeeef968d7f99a2e2ca4057517`  
+		Last Modified: Tue, 02 Jul 2024 04:32:22 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f6ff6b045ee9fe87bc79e628b0378fa7497d14a0ba7ac7f39e92ef4c80b189e`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 4.3 KB (4317 bytes)  
+	-	`sha256:8afbaba44bf4d76f9744829cfc5ed17bbe7753d6f4ad9b5edb948bc53842ca98`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
+		Size: 4.3 KB (4315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e88404a9d19795b7597a2653c52389f876fa53f3ec9cdcb15375c8e30e51ddff`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 3.9 MB (3915090 bytes)  
+	-	`sha256:d25dfa755fa357ce135b6e6f242a1128720be01913650ccefe3d3eafe6a2045c`  
+		Last Modified: Wed, 03 Jul 2024 02:40:42 GMT  
+		Size: 3.6 MB (3639177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a884372d5cac8b6fcf3ecfe7d57650b01bf22329d0f666e663ac600608396a1d`  
-		Last Modified: Mon, 01 Jul 2024 23:55:21 GMT  
-		Size: 29.9 MB (29851952 bytes)  
+	-	`sha256:3e32b05233d72ed5f04d9391b056c628fe0e7717596148b040ba81e0bc27a0d3`  
+		Last Modified: Wed, 03 Jul 2024 02:40:43 GMT  
+		Size: 29.9 MB (29851949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f8cbfb7d554d8b96fbac34f556442118f8d77459e0559ed04d4251cf78d0cd9`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 139.0 B  
+	-	`sha256:86a35f1d7458173d37cbd0459012462d06ec1c38b1ea5ee38f40d578acca0fe7`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0-jdk8` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:daf6eaa06bde9c9bd0bc6440cc4880b5ff3b9daee1e5a2c89c4f29e426458007
+$ docker pull groovy@sha256:3fb6361cf541d019aee467d25e1e497720f1875f9519f33bc738a5608b45c34d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3719009 bytes)**  
+-	Total Size: **3.7 MB (3719008 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:deb64ad64435e56fc0ee01b5a364d0ed2c4b9bc8d0cd5df4604cb49853c02185`
+-	Image ID: `sha256:5b157bb75db904315f62528c45eaa5405173b742ff3da5fd895ea873e1c094a1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bee767df638cca4f0bd69f41b2d09ac4efefa6307778c1b320b227f018edc58e`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
+	-	`sha256:e9d7c62711b8f8a972eab5c89ddb8e983716ca8d921ad824e4e60fa36c4951d2`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
 		Size: 3.7 MB (3693998 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8fccdc8855bbe7610cae766f564b6a4349cdad325e6b68ca833d09104cf09cec`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 25.0 KB (25011 bytes)  
+	-	`sha256:491ab3a2ad92444f64b22230d9b585e224ee7601259f4d83067d6823a5653ba5`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
+		Size: 25.0 KB (25010 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0-jdk8` - linux; arm64 variant v8
@@ -8833,28 +8833,28 @@ $ docker pull groovy@sha256:4012cc0481c93c7092a4d14834ad60736892e375ae9f92ae11b4
 ### `groovy:4.0-jdk8` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:4719a676dff0aecd1794a291fb06eb14661d57103cf31a54d5e3dcb504d3eef2
+$ docker pull groovy@sha256:2fe2ff0fb009dc81fd1161fccc2339225b3700d06fa3021a6b1d8f75bc39d546
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.8 MB (184841917 bytes)**  
+-	Total Size: **184.4 MB (184431009 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9fe886bd7080a1858a2d63097d8a03c4c5a0fcd8cfa696bfdc2894aa183a1f3`
+-	Image ID: `sha256:bb6b396dce8180f4e5bf05e25beab396f1b9631d7699de5fc40489f3bb1c6316`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -8897,75 +8897,75 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b82f84268a93862af92928dd1cc1dc31937bbffd50302e61f899397e5223399d`  
-		Last Modified: Wed, 05 Jun 2024 04:00:20 GMT  
-		Size: 13.8 MB (13766991 bytes)  
+	-	`sha256:4aea30364eff82eb5379f35c10575a54ece802a6af1763591c0a6a999d72c84c`  
+		Last Modified: Tue, 02 Jul 2024 05:04:14 GMT  
+		Size: 13.7 MB (13714876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b96f8afb54eaa4d0d1271da3f9226622e5393ff92e4b765aec30aa1fcaca113a`  
-		Last Modified: Wed, 05 Jun 2024 04:00:24 GMT  
-		Size: 101.1 MB (101071129 bytes)  
+	-	`sha256:5e381362c15b6f2494c8dc0d6a49beef7efc7bbf6ef1d3525b485ba3969369d6`  
+		Last Modified: Tue, 02 Jul 2024 05:04:20 GMT  
+		Size: 101.1 MB (101071152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59900ccb04bc654c9922cbd79216a4488310d9308aea4ecffd1d72e4eddee950`  
-		Last Modified: Wed, 05 Jun 2024 04:00:15 GMT  
+	-	`sha256:9b4281d6414726ffc097764a21c03524fe8ed573c02d19bd3c56d0826936af97`  
+		Last Modified: Tue, 02 Jul 2024 05:04:10 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc837f7bedc9361e014f8f1c0bd2abf18e18798493eeee096794e977342e60d7`  
-		Last Modified: Wed, 05 Jun 2024 04:00:15 GMT  
+	-	`sha256:ee11783fbc96e3c2e66f3c1814d9e8373cf19165f9c928ff6cbb681bb165bc69`  
+		Last Modified: Tue, 02 Jul 2024 05:04:10 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33a32b866dbcceb3ca7a7793f59b8e6e521abc7648e740e5055f759138e44285`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
-		Size: 4.3 KB (4338 bytes)  
+	-	`sha256:a66b8a51b6daaca0c8b1cfa6820f332fdb1211d8d593d93d5913743fc9b35073`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
+		Size: 4.3 KB (4329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd234369889c8e9bb193eed85179850365252ea6d4df0e4560f9bca3734f3b7d`  
-		Last Modified: Mon, 01 Jul 2024 23:55:29 GMT  
-		Size: 4.6 MB (4558147 bytes)  
+	-	`sha256:b47b212ba6db540082ae7d3ae4c0125725dd864842670e3565260495c8a56b09`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
+		Size: 4.2 MB (4199348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04e9c53fa6f4024da1af2779c3ed6b63910dd3d82de474f405f58c6a8d931ff1`  
-		Last Modified: Mon, 01 Jul 2024 23:55:29 GMT  
-		Size: 29.9 MB (29851950 bytes)  
+	-	`sha256:8f3506bd6d57158e663b770eb650f3140c231a0503be01e2929d546c81d7a743`  
+		Last Modified: Wed, 03 Jul 2024 01:56:07 GMT  
+		Size: 29.9 MB (29851951 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9babbac3d8795e283d89e87d27969a901f6aaf838ed3e3f7ddf802c775741320`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
-		Size: 137.0 B  
+	-	`sha256:087722e3e035fccaec73e8cc8b896f404246cbf740bb4194f921b0b59aca010c`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0-jdk8` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:4eb043290dd724c22839b470d29aaefc883805f840facfc8370832264e1317b3
+$ docker pull groovy@sha256:efa87448931b64edc3abfe93367fd03f54619bf935a6834af854ef5fa593e1b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.7 MB (3719643 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a3164c61c65e947511afd2fa60e0e242e4aff72fae308e32be170f6d9fd2e45d`
+-	Image ID: `sha256:0b8acbb6c65398c3aa1c43ae71d4cf274891482fc46ab21f25d747eabbc5d0fa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b8db97371945247c13fc425d1f38b646225e199018453f01694870fc5445330d`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
+	-	`sha256:84bdc76ddf93da8ad2943bdbc97e40c9821e325952abbaa098a8dacf49a14ed2`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
 		Size: 3.7 MB (3694695 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:892bb4b1da19e451bd27b465c8ef195dfe4bf4447f7e52a51b24fd34d7cc3b51`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
+	-	`sha256:58cb65626a5625609ec7caaa3f39f88b1c308ade0b0da55e266d7c1837df8d52`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
 		Size: 24.9 KB (24948 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `groovy:4.0-jdk8-jammy`
 
 ```console
-$ docker pull groovy@sha256:047c993a770b7b3c08385c52a95bf9e682161703a9fc07498e588ac2a9b4f98a
+$ docker pull groovy@sha256:33e753b07ba5cbea160b49243022ca20a3fc57227bfa1754ed3f71e153f79624
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9114,28 +9114,28 @@ $ docker pull groovy@sha256:1f811aaf8f9030486db33c1df3fd5b6ec7c43c6cca4deb2c0371
 ### `groovy:4.0-jdk8-jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:6fda91c419c47bc010332f3f18b1abfdb310f048b65f4cfc7e1c96c1378ba8e3
+$ docker pull groovy@sha256:439082c6940e9bddd0e2077000f061b853bdb005b233029558c063a8a0a8a490
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **173.0 MB (173029232 bytes)**  
+-	Total Size: **172.7 MB (172721472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6404ab3df9bc33210338dcc96c94d5f917c6b6f1297aa7d13eb489364bbaba3`
+-	Image ID: `sha256:9cc4930f2c4c60659321f9aa06d8237c8230256f128946e9bc93ad8a4d563723`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -9178,69 +9178,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d2e7d8e2026f154f12e834d8b72426c2f71c8a555d373336fddba91616868b7`  
-		Last Modified: Wed, 05 Jun 2024 03:59:49 GMT  
-		Size: 12.5 MB (12493203 bytes)  
+	-	`sha256:7c3600b7820ccdab844af0b11c36a1aeadc460c5a3bc6a6fd0211a3fa9024fb1`  
+		Last Modified: Tue, 02 Jul 2024 04:32:24 GMT  
+		Size: 12.5 MB (12462968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95298bffd1c0ebd593eeb6754e0f5e5ba9ca25454af388f78cd657152f59cd01`  
-		Last Modified: Wed, 05 Jun 2024 03:59:55 GMT  
-		Size: 99.2 MB (99228750 bytes)  
+	-	`sha256:ab96ab5089efb8387a3b08075cfe11b114399a6489afd8cb83ceddc16d6798ac`  
+		Last Modified: Tue, 02 Jul 2024 04:32:31 GMT  
+		Size: 99.2 MB (99228023 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d783cd2973ac4c20fae7efd4d2e605cff4de71ba08f4110510a1e7d7dc0239b5`  
-		Last Modified: Wed, 05 Jun 2024 03:59:46 GMT  
+	-	`sha256:af866480c7ff18491aba2f2ebea87553ba5c884826ec3578d09af689bd4ffe4c`  
+		Last Modified: Tue, 02 Jul 2024 04:32:22 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:160d32d80ad9bff0aadc9f16c0712d2e20cc58ddf491fba50571fccb3d0d77f9`  
-		Last Modified: Wed, 05 Jun 2024 03:59:46 GMT  
-		Size: 734.0 B  
+	-	`sha256:18de864e1d2126d8d641940b568e4a4e05973ffeeef968d7f99a2e2ca4057517`  
+		Last Modified: Tue, 02 Jul 2024 04:32:22 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f6ff6b045ee9fe87bc79e628b0378fa7497d14a0ba7ac7f39e92ef4c80b189e`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 4.3 KB (4317 bytes)  
+	-	`sha256:8afbaba44bf4d76f9744829cfc5ed17bbe7753d6f4ad9b5edb948bc53842ca98`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
+		Size: 4.3 KB (4315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e88404a9d19795b7597a2653c52389f876fa53f3ec9cdcb15375c8e30e51ddff`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 3.9 MB (3915090 bytes)  
+	-	`sha256:d25dfa755fa357ce135b6e6f242a1128720be01913650ccefe3d3eafe6a2045c`  
+		Last Modified: Wed, 03 Jul 2024 02:40:42 GMT  
+		Size: 3.6 MB (3639177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a884372d5cac8b6fcf3ecfe7d57650b01bf22329d0f666e663ac600608396a1d`  
-		Last Modified: Mon, 01 Jul 2024 23:55:21 GMT  
-		Size: 29.9 MB (29851952 bytes)  
+	-	`sha256:3e32b05233d72ed5f04d9391b056c628fe0e7717596148b040ba81e0bc27a0d3`  
+		Last Modified: Wed, 03 Jul 2024 02:40:43 GMT  
+		Size: 29.9 MB (29851949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f8cbfb7d554d8b96fbac34f556442118f8d77459e0559ed04d4251cf78d0cd9`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 139.0 B  
+	-	`sha256:86a35f1d7458173d37cbd0459012462d06ec1c38b1ea5ee38f40d578acca0fe7`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0-jdk8-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:daf6eaa06bde9c9bd0bc6440cc4880b5ff3b9daee1e5a2c89c4f29e426458007
+$ docker pull groovy@sha256:3fb6361cf541d019aee467d25e1e497720f1875f9519f33bc738a5608b45c34d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3719009 bytes)**  
+-	Total Size: **3.7 MB (3719008 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:deb64ad64435e56fc0ee01b5a364d0ed2c4b9bc8d0cd5df4604cb49853c02185`
+-	Image ID: `sha256:5b157bb75db904315f62528c45eaa5405173b742ff3da5fd895ea873e1c094a1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bee767df638cca4f0bd69f41b2d09ac4efefa6307778c1b320b227f018edc58e`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
+	-	`sha256:e9d7c62711b8f8a972eab5c89ddb8e983716ca8d921ad824e4e60fa36c4951d2`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
 		Size: 3.7 MB (3693998 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8fccdc8855bbe7610cae766f564b6a4349cdad325e6b68ca833d09104cf09cec`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 25.0 KB (25011 bytes)  
+	-	`sha256:491ab3a2ad92444f64b22230d9b585e224ee7601259f4d83067d6823a5653ba5`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
+		Size: 25.0 KB (25010 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0-jdk8-jammy` - linux; arm64 variant v8
@@ -9378,28 +9378,28 @@ $ docker pull groovy@sha256:4012cc0481c93c7092a4d14834ad60736892e375ae9f92ae11b4
 ### `groovy:4.0-jdk8-jammy` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:4719a676dff0aecd1794a291fb06eb14661d57103cf31a54d5e3dcb504d3eef2
+$ docker pull groovy@sha256:2fe2ff0fb009dc81fd1161fccc2339225b3700d06fa3021a6b1d8f75bc39d546
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.8 MB (184841917 bytes)**  
+-	Total Size: **184.4 MB (184431009 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9fe886bd7080a1858a2d63097d8a03c4c5a0fcd8cfa696bfdc2894aa183a1f3`
+-	Image ID: `sha256:bb6b396dce8180f4e5bf05e25beab396f1b9631d7699de5fc40489f3bb1c6316`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -9442,75 +9442,75 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b82f84268a93862af92928dd1cc1dc31937bbffd50302e61f899397e5223399d`  
-		Last Modified: Wed, 05 Jun 2024 04:00:20 GMT  
-		Size: 13.8 MB (13766991 bytes)  
+	-	`sha256:4aea30364eff82eb5379f35c10575a54ece802a6af1763591c0a6a999d72c84c`  
+		Last Modified: Tue, 02 Jul 2024 05:04:14 GMT  
+		Size: 13.7 MB (13714876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b96f8afb54eaa4d0d1271da3f9226622e5393ff92e4b765aec30aa1fcaca113a`  
-		Last Modified: Wed, 05 Jun 2024 04:00:24 GMT  
-		Size: 101.1 MB (101071129 bytes)  
+	-	`sha256:5e381362c15b6f2494c8dc0d6a49beef7efc7bbf6ef1d3525b485ba3969369d6`  
+		Last Modified: Tue, 02 Jul 2024 05:04:20 GMT  
+		Size: 101.1 MB (101071152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59900ccb04bc654c9922cbd79216a4488310d9308aea4ecffd1d72e4eddee950`  
-		Last Modified: Wed, 05 Jun 2024 04:00:15 GMT  
+	-	`sha256:9b4281d6414726ffc097764a21c03524fe8ed573c02d19bd3c56d0826936af97`  
+		Last Modified: Tue, 02 Jul 2024 05:04:10 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc837f7bedc9361e014f8f1c0bd2abf18e18798493eeee096794e977342e60d7`  
-		Last Modified: Wed, 05 Jun 2024 04:00:15 GMT  
+	-	`sha256:ee11783fbc96e3c2e66f3c1814d9e8373cf19165f9c928ff6cbb681bb165bc69`  
+		Last Modified: Tue, 02 Jul 2024 05:04:10 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33a32b866dbcceb3ca7a7793f59b8e6e521abc7648e740e5055f759138e44285`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
-		Size: 4.3 KB (4338 bytes)  
+	-	`sha256:a66b8a51b6daaca0c8b1cfa6820f332fdb1211d8d593d93d5913743fc9b35073`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
+		Size: 4.3 KB (4329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd234369889c8e9bb193eed85179850365252ea6d4df0e4560f9bca3734f3b7d`  
-		Last Modified: Mon, 01 Jul 2024 23:55:29 GMT  
-		Size: 4.6 MB (4558147 bytes)  
+	-	`sha256:b47b212ba6db540082ae7d3ae4c0125725dd864842670e3565260495c8a56b09`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
+		Size: 4.2 MB (4199348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04e9c53fa6f4024da1af2779c3ed6b63910dd3d82de474f405f58c6a8d931ff1`  
-		Last Modified: Mon, 01 Jul 2024 23:55:29 GMT  
-		Size: 29.9 MB (29851950 bytes)  
+	-	`sha256:8f3506bd6d57158e663b770eb650f3140c231a0503be01e2929d546c81d7a743`  
+		Last Modified: Wed, 03 Jul 2024 01:56:07 GMT  
+		Size: 29.9 MB (29851951 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9babbac3d8795e283d89e87d27969a901f6aaf838ed3e3f7ddf802c775741320`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
-		Size: 137.0 B  
+	-	`sha256:087722e3e035fccaec73e8cc8b896f404246cbf740bb4194f921b0b59aca010c`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0-jdk8-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:4eb043290dd724c22839b470d29aaefc883805f840facfc8370832264e1317b3
+$ docker pull groovy@sha256:efa87448931b64edc3abfe93367fd03f54619bf935a6834af854ef5fa593e1b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.7 MB (3719643 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a3164c61c65e947511afd2fa60e0e242e4aff72fae308e32be170f6d9fd2e45d`
+-	Image ID: `sha256:0b8acbb6c65398c3aa1c43ae71d4cf274891482fc46ab21f25d747eabbc5d0fa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b8db97371945247c13fc425d1f38b646225e199018453f01694870fc5445330d`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
+	-	`sha256:84bdc76ddf93da8ad2943bdbc97e40c9821e325952abbaa098a8dacf49a14ed2`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
 		Size: 3.7 MB (3694695 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:892bb4b1da19e451bd27b465c8ef195dfe4bf4447f7e52a51b24fd34d7cc3b51`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
+	-	`sha256:58cb65626a5625609ec7caaa3f39f88b1c308ade0b0da55e266d7c1837df8d52`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
 		Size: 24.9 KB (24948 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `groovy:4.0.22`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9663,28 +9663,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:4.0.22` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -9729,69 +9729,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0.22` - linux; arm64 variant v8
@@ -9931,28 +9931,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:4.0.22` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -9997,68 +9997,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10330,7 +10330,7 @@ $ docker pull groovy@sha256:2f47bbde1bcda1fd0e00ef2f8f8b029849cca8c04caa2af7a8ba
 ## `groovy:4.0.22-jammy`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10483,28 +10483,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:4.0.22-jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -10549,69 +10549,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0.22-jammy` - linux; arm64 variant v8
@@ -10751,28 +10751,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:4.0.22-jammy` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -10817,68 +10817,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11019,7 +11019,7 @@ $ docker pull groovy@sha256:b7b1cc5a876c9c25fabf5fd05ba6e5e4851cd8813fe035a3f8c3
 ## `groovy:4.0.22-jdk`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11172,28 +11172,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:4.0.22-jdk` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -11238,69 +11238,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22-jdk` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0.22-jdk` - linux; arm64 variant v8
@@ -11440,28 +11440,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:4.0.22-jdk` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -11506,68 +11506,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22-jdk` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11839,7 +11839,7 @@ $ docker pull groovy@sha256:2f47bbde1bcda1fd0e00ef2f8f8b029849cca8c04caa2af7a8ba
 ## `groovy:4.0.22-jdk-jammy`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11992,28 +11992,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:4.0.22-jdk-jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -12058,69 +12058,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22-jdk-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0.22-jdk-jammy` - linux; arm64 variant v8
@@ -12260,28 +12260,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:4.0.22-jdk-jammy` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -12326,68 +12326,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22-jdk-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12528,7 +12528,7 @@ $ docker pull groovy@sha256:b7b1cc5a876c9c25fabf5fd05ba6e5e4851cd8813fe035a3f8c3
 ## `groovy:4.0.22-jdk11`
 
 ```console
-$ docker pull groovy@sha256:8490d229e96b3843f2b311aa4384584ed0a40f1b09b8e1e6c83a58c1871b1387
+$ docker pull groovy@sha256:2533f5b37c28c6905da55db94eefc4fcdb503df75408d8569ce6ee075e7b6355
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12681,28 +12681,28 @@ $ docker pull groovy@sha256:145892900f3a837630464f234bce5a34547f7fedf5b482c9819d
 ### `groovy:4.0.22-jdk11` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:4f624b8b265815f6edee3e05a3b1558a603d4172c461fe32dea87ce79194a0a5
+$ docker pull groovy@sha256:f2c6e04358da4094b16e4f38cdddd72bb9c1277d2c490ad6e8f5c23080dce06d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **211.8 MB (211805657 bytes)**  
+-	Total Size: **211.5 MB (211499475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1b517cc1e34fedbbdc7f5d8fe05323d7462c7189703ccdb561cd692d1d22a2c`
+-	Image ID: `sha256:23e7a9f46e190b35d2f388942bd3104448fe6bda74432f3336f2f105c0744071`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -12747,69 +12747,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d2e7d8e2026f154f12e834d8b72426c2f71c8a555d373336fddba91616868b7`  
-		Last Modified: Wed, 05 Jun 2024 03:59:49 GMT  
-		Size: 12.5 MB (12493203 bytes)  
+	-	`sha256:7c3600b7820ccdab844af0b11c36a1aeadc460c5a3bc6a6fd0211a3fa9024fb1`  
+		Last Modified: Tue, 02 Jul 2024 04:32:24 GMT  
+		Size: 12.5 MB (12462968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:463ed2419e5a3d33f88d49daac8b666c92a96a76a7a61459c49c34fcd3e6a9f1`  
-		Last Modified: Wed, 05 Jun 2024 04:01:10 GMT  
-		Size: 138.0 MB (138004561 bytes)  
+	-	`sha256:f5683275978575be7df9d26c3ae87f4576b2d810ec10b569c7331167fb751a9c`  
+		Last Modified: Tue, 02 Jul 2024 04:33:37 GMT  
+		Size: 138.0 MB (138004562 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ece81701fa181139e9fcefd2eedd9d1736df1692a74f866d31a164d40a548e3`  
-		Last Modified: Wed, 05 Jun 2024 04:00:55 GMT  
-		Size: 176.0 B  
+	-	`sha256:ee4e9957dbca99a8013bcf78bffbe5eba97801c1181113196b1dc286d813cbf4`  
+		Last Modified: Tue, 02 Jul 2024 04:33:24 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ed363f50e5e6714fd4c28aa4be93d0aac96e086f7e2a3aa187353c0af702b20`  
-		Last Modified: Wed, 05 Jun 2024 04:00:55 GMT  
+	-	`sha256:f92e17a5667c973237880379e1fc188c1530f8dedf2dfadf57f47e2f73108901`  
+		Last Modified: Tue, 02 Jul 2024 04:33:24 GMT  
 		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9de937951398fcf5fce138c838e20917cc2693fb428a676c1d3cd456833e5828`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 4.3 KB (4322 bytes)  
+	-	`sha256:2532a70e36e60b23b5b5230b085f8c952f232242ab3bdb4ed87b9b4b3e6f9698`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 4.3 KB (4319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57ebd6ce6c87352c55add17fbc7b92843e7fbf1c2e9643fff64112d944230ffb`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 3.9 MB (3915651 bytes)  
+	-	`sha256:c6d00726f495c7a4ccac2d73c4b363fc3d9b415f4fbd0e362555334a3456eed9`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 3.6 MB (3640550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0450df761165aa02c92e3b16a83ccd3428457722232ae5c0079467511dfff879`  
-		Last Modified: Mon, 01 Jul 2024 23:56:11 GMT  
-		Size: 29.9 MB (29851952 bytes)  
+	-	`sha256:ca93992ab9ff30f09f1c32d12e04f410b7752cba26eacfaa3eff47714bd03219`  
+		Last Modified: Wed, 03 Jul 2024 02:41:29 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f1e0a4c14d78f526723017f53b36fca30647c7d7d5a7cd4e6d5bb638a7b0e95`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 139.0 B  
+	-	`sha256:5918511ba6a2336bf6f8e4d0360748d85d0e21783923cc7d0ddca87cf1ce0bdb`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22-jdk11` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:1dc787ee2c00abc71cd0f4963fef40d2795bbc869d9f3183ab94de0bf8ddd2dd
+$ docker pull groovy@sha256:e08d9ac40285489b0f2a93777d67ee01af52364bc8d92fbf833dd0bc536bf472
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3695726 bytes)**  
+-	Total Size: **3.7 MB (3695725 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fa71ff34119178db04738a283baa2c4918b9a529a7d666d9166a1a93f3f4d02`
+-	Image ID: `sha256:33f719d2e9f78666053946bf0c414100f6736e3fae160ba7a23f7b71864a3779`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b16c15d4796b27510bcb7dad3c04347e8a4ffe6c10828001d0b0b264d59fb82f`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
+	-	`sha256:66d455317a8bfae65654ce1954fb42c940eca7103ad84ff3b8bc648b5fb0dc80`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
 		Size: 3.7 MB (3670017 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:33bde50e0ccc9850be6255e563557968398afe4685d812d44a7223c53b1e895a`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 25.7 KB (25709 bytes)  
+	-	`sha256:2ac037cc3d39d9bd7b1c9d587d55cedef610ddbc5ce69d2a63e1f020bc72a787`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 25.7 KB (25708 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0.22-jdk11` - linux; arm64 variant v8
@@ -12949,28 +12949,28 @@ $ docker pull groovy@sha256:e71f7bf579dcc7f0bda6ace219b6d571328dccae0a59184cd547
 ### `groovy:4.0.22-jdk11` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:c3c390eb009bb96b1485ca1724fb3a6ba962510c0393fc504358ffeffa0a9189
+$ docker pull groovy@sha256:f1e6b1db78275f243bf3f42478ff5a756b8858195cfb66c0f4b93c510f218965
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **216.5 MB (216491066 bytes)**  
+-	Total Size: **216.1 MB (216079768 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:feac2439f6706fb174f2c6ff526bc7bc1af2b0d9bb668ff1160b3e0bfd8cc4b4`
+-	Image ID: `sha256:86e89a445adbf09572a0513eccfa4dc7e355f5b5d7ac211bfad8fc26cd8408ad`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -13015,68 +13015,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b82f84268a93862af92928dd1cc1dc31937bbffd50302e61f899397e5223399d`  
-		Last Modified: Wed, 05 Jun 2024 04:00:20 GMT  
-		Size: 13.8 MB (13766991 bytes)  
+	-	`sha256:4aea30364eff82eb5379f35c10575a54ece802a6af1763591c0a6a999d72c84c`  
+		Last Modified: Tue, 02 Jul 2024 05:04:14 GMT  
+		Size: 13.7 MB (13714876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40ab8ce3a4fcaeb41752f1fe6f96527d85961ebc21e210ec8b27f5cb4c68fa70`  
-		Last Modified: Wed, 05 Jun 2024 04:01:39 GMT  
-		Size: 132.7 MB (132718863 bytes)  
+	-	`sha256:9e3c3db8c3ce267302ab33698998e2969d08346da85f3c69446c98910f01e534`  
+		Last Modified: Tue, 02 Jul 2024 05:04:57 GMT  
+		Size: 132.7 MB (132718876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24b4e95798e15aea98fc366c58314c56c188e0316139bbcdaceed59a01cfadf6`  
-		Last Modified: Wed, 05 Jun 2024 04:01:26 GMT  
-		Size: 176.0 B  
+	-	`sha256:b2731f957d26e7380c16b0db866ae857ccea882ea104b9cadde90f6da05365bc`  
+		Last Modified: Tue, 02 Jul 2024 05:04:45 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf14d7106fd55e9cc3409e1c64c4aa3206131adb17d0f6f0e62227e2e2732070`  
-		Last Modified: Wed, 05 Jun 2024 04:01:26 GMT  
+	-	`sha256:34895e55ab2f8114aef706c3814ecaad2fb5146d3efb7b13533c5383c9527eb3`  
+		Last Modified: Tue, 02 Jul 2024 05:04:45 GMT  
 		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09d18e613e0ffc663afed300db99b3436783fa874590704d5b6fd6ca5169b0e4`  
-		Last Modified: Mon, 01 Jul 2024 23:56:19 GMT  
-		Size: 4.3 KB (4332 bytes)  
+	-	`sha256:8a79b3e2a40649e94bf270662488e17c6dffacfa001b53ab0ccfd12b870f371c`  
+		Last Modified: Wed, 03 Jul 2024 01:56:59 GMT  
+		Size: 4.3 KB (4335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb132cd3cffb7610907dc97c2cd4a9aa3bc0b9b571f115ea2c0e3c6558b65fb8`  
-		Last Modified: Mon, 01 Jul 2024 23:56:20 GMT  
-		Size: 4.6 MB (4559506 bytes)  
+	-	`sha256:65027438984676b3393eb393c639f5c9d11ecf095e4b832ce2cb33c1d4641b9f`  
+		Last Modified: Wed, 03 Jul 2024 01:57:00 GMT  
+		Size: 4.2 MB (4200322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42458ddfb4b0a3512da9e0d2dc9df283274d158bdc92f8139d7ed34e25847e00`  
-		Last Modified: Mon, 01 Jul 2024 23:56:21 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:6dce60ca3f12526f9c327dd5c81aad6b7c96c2e2fc08230d8b00ca60af68ff0b`  
+		Last Modified: Wed, 03 Jul 2024 01:57:01 GMT  
+		Size: 29.9 MB (29851962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df928c76abd344969eb21a2fafd95ca9fb6e15415d1d3a82549a3b5718cf257f`  
-		Last Modified: Mon, 01 Jul 2024 23:56:20 GMT  
+	-	`sha256:cf7b575fbd064b0613b3e0770ff487bbb84d4443c99d896f9c5fe5a7ecc92b67`  
+		Last Modified: Wed, 03 Jul 2024 01:56:59 GMT  
 		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22-jdk11` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:45c267892df446dd7d9b6046a186c537f61865cc68f9d2a659538698569eda9e
+$ docker pull groovy@sha256:e06df4221cc87a81bfaee5e9d0391d97cd4bc19793350a3d0ee31b81adf44ca5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.7 MB (3698816 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2578218355a2e744bc0b6d3583b1a2b408b96f4a2ac6514da9cd168ba8664c5d`
+-	Image ID: `sha256:54198f1e6bc2109de2c10ae724390564c6e7dd42c06b020de5d0ca3585f44023`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:169219fb679975fa87afd251a449909b7ab59a0969ec8dccbe187b975d8cf681`  
-		Last Modified: Mon, 01 Jul 2024 23:56:20 GMT  
+	-	`sha256:7c3d50e629c15ff35788c9521ae6525e04016f186120d5cc34c169130e9f9266`  
+		Last Modified: Wed, 03 Jul 2024 01:57:00 GMT  
 		Size: 3.7 MB (3673176 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7e284272afee0636e708b83c34a12c0967233008e69383f0cd3c89a78ff1dddb`  
-		Last Modified: Mon, 01 Jul 2024 23:56:19 GMT  
+	-	`sha256:41a095739b250ca0eb86e41f364209b04c78c7cb7fb8b40d075994b298ff3a4b`  
+		Last Modified: Wed, 03 Jul 2024 01:56:59 GMT  
 		Size: 25.6 KB (25640 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13348,7 +13348,7 @@ $ docker pull groovy@sha256:29a6e11782a1367487a9029a15fa46f2730f8d6a2c903e7487e8
 ## `groovy:4.0.22-jdk11-jammy`
 
 ```console
-$ docker pull groovy@sha256:8490d229e96b3843f2b311aa4384584ed0a40f1b09b8e1e6c83a58c1871b1387
+$ docker pull groovy@sha256:2533f5b37c28c6905da55db94eefc4fcdb503df75408d8569ce6ee075e7b6355
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13501,28 +13501,28 @@ $ docker pull groovy@sha256:145892900f3a837630464f234bce5a34547f7fedf5b482c9819d
 ### `groovy:4.0.22-jdk11-jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:4f624b8b265815f6edee3e05a3b1558a603d4172c461fe32dea87ce79194a0a5
+$ docker pull groovy@sha256:f2c6e04358da4094b16e4f38cdddd72bb9c1277d2c490ad6e8f5c23080dce06d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **211.8 MB (211805657 bytes)**  
+-	Total Size: **211.5 MB (211499475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1b517cc1e34fedbbdc7f5d8fe05323d7462c7189703ccdb561cd692d1d22a2c`
+-	Image ID: `sha256:23e7a9f46e190b35d2f388942bd3104448fe6bda74432f3336f2f105c0744071`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -13567,69 +13567,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d2e7d8e2026f154f12e834d8b72426c2f71c8a555d373336fddba91616868b7`  
-		Last Modified: Wed, 05 Jun 2024 03:59:49 GMT  
-		Size: 12.5 MB (12493203 bytes)  
+	-	`sha256:7c3600b7820ccdab844af0b11c36a1aeadc460c5a3bc6a6fd0211a3fa9024fb1`  
+		Last Modified: Tue, 02 Jul 2024 04:32:24 GMT  
+		Size: 12.5 MB (12462968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:463ed2419e5a3d33f88d49daac8b666c92a96a76a7a61459c49c34fcd3e6a9f1`  
-		Last Modified: Wed, 05 Jun 2024 04:01:10 GMT  
-		Size: 138.0 MB (138004561 bytes)  
+	-	`sha256:f5683275978575be7df9d26c3ae87f4576b2d810ec10b569c7331167fb751a9c`  
+		Last Modified: Tue, 02 Jul 2024 04:33:37 GMT  
+		Size: 138.0 MB (138004562 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ece81701fa181139e9fcefd2eedd9d1736df1692a74f866d31a164d40a548e3`  
-		Last Modified: Wed, 05 Jun 2024 04:00:55 GMT  
-		Size: 176.0 B  
+	-	`sha256:ee4e9957dbca99a8013bcf78bffbe5eba97801c1181113196b1dc286d813cbf4`  
+		Last Modified: Tue, 02 Jul 2024 04:33:24 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ed363f50e5e6714fd4c28aa4be93d0aac96e086f7e2a3aa187353c0af702b20`  
-		Last Modified: Wed, 05 Jun 2024 04:00:55 GMT  
+	-	`sha256:f92e17a5667c973237880379e1fc188c1530f8dedf2dfadf57f47e2f73108901`  
+		Last Modified: Tue, 02 Jul 2024 04:33:24 GMT  
 		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9de937951398fcf5fce138c838e20917cc2693fb428a676c1d3cd456833e5828`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 4.3 KB (4322 bytes)  
+	-	`sha256:2532a70e36e60b23b5b5230b085f8c952f232242ab3bdb4ed87b9b4b3e6f9698`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 4.3 KB (4319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57ebd6ce6c87352c55add17fbc7b92843e7fbf1c2e9643fff64112d944230ffb`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 3.9 MB (3915651 bytes)  
+	-	`sha256:c6d00726f495c7a4ccac2d73c4b363fc3d9b415f4fbd0e362555334a3456eed9`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 3.6 MB (3640550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0450df761165aa02c92e3b16a83ccd3428457722232ae5c0079467511dfff879`  
-		Last Modified: Mon, 01 Jul 2024 23:56:11 GMT  
-		Size: 29.9 MB (29851952 bytes)  
+	-	`sha256:ca93992ab9ff30f09f1c32d12e04f410b7752cba26eacfaa3eff47714bd03219`  
+		Last Modified: Wed, 03 Jul 2024 02:41:29 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f1e0a4c14d78f526723017f53b36fca30647c7d7d5a7cd4e6d5bb638a7b0e95`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 139.0 B  
+	-	`sha256:5918511ba6a2336bf6f8e4d0360748d85d0e21783923cc7d0ddca87cf1ce0bdb`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22-jdk11-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:1dc787ee2c00abc71cd0f4963fef40d2795bbc869d9f3183ab94de0bf8ddd2dd
+$ docker pull groovy@sha256:e08d9ac40285489b0f2a93777d67ee01af52364bc8d92fbf833dd0bc536bf472
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3695726 bytes)**  
+-	Total Size: **3.7 MB (3695725 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fa71ff34119178db04738a283baa2c4918b9a529a7d666d9166a1a93f3f4d02`
+-	Image ID: `sha256:33f719d2e9f78666053946bf0c414100f6736e3fae160ba7a23f7b71864a3779`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b16c15d4796b27510bcb7dad3c04347e8a4ffe6c10828001d0b0b264d59fb82f`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
+	-	`sha256:66d455317a8bfae65654ce1954fb42c940eca7103ad84ff3b8bc648b5fb0dc80`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
 		Size: 3.7 MB (3670017 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:33bde50e0ccc9850be6255e563557968398afe4685d812d44a7223c53b1e895a`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 25.7 KB (25709 bytes)  
+	-	`sha256:2ac037cc3d39d9bd7b1c9d587d55cedef610ddbc5ce69d2a63e1f020bc72a787`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 25.7 KB (25708 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0.22-jdk11-jammy` - linux; arm64 variant v8
@@ -13769,28 +13769,28 @@ $ docker pull groovy@sha256:e71f7bf579dcc7f0bda6ace219b6d571328dccae0a59184cd547
 ### `groovy:4.0.22-jdk11-jammy` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:c3c390eb009bb96b1485ca1724fb3a6ba962510c0393fc504358ffeffa0a9189
+$ docker pull groovy@sha256:f1e6b1db78275f243bf3f42478ff5a756b8858195cfb66c0f4b93c510f218965
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **216.5 MB (216491066 bytes)**  
+-	Total Size: **216.1 MB (216079768 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:feac2439f6706fb174f2c6ff526bc7bc1af2b0d9bb668ff1160b3e0bfd8cc4b4`
+-	Image ID: `sha256:86e89a445adbf09572a0513eccfa4dc7e355f5b5d7ac211bfad8fc26cd8408ad`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -13835,68 +13835,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b82f84268a93862af92928dd1cc1dc31937bbffd50302e61f899397e5223399d`  
-		Last Modified: Wed, 05 Jun 2024 04:00:20 GMT  
-		Size: 13.8 MB (13766991 bytes)  
+	-	`sha256:4aea30364eff82eb5379f35c10575a54ece802a6af1763591c0a6a999d72c84c`  
+		Last Modified: Tue, 02 Jul 2024 05:04:14 GMT  
+		Size: 13.7 MB (13714876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40ab8ce3a4fcaeb41752f1fe6f96527d85961ebc21e210ec8b27f5cb4c68fa70`  
-		Last Modified: Wed, 05 Jun 2024 04:01:39 GMT  
-		Size: 132.7 MB (132718863 bytes)  
+	-	`sha256:9e3c3db8c3ce267302ab33698998e2969d08346da85f3c69446c98910f01e534`  
+		Last Modified: Tue, 02 Jul 2024 05:04:57 GMT  
+		Size: 132.7 MB (132718876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24b4e95798e15aea98fc366c58314c56c188e0316139bbcdaceed59a01cfadf6`  
-		Last Modified: Wed, 05 Jun 2024 04:01:26 GMT  
-		Size: 176.0 B  
+	-	`sha256:b2731f957d26e7380c16b0db866ae857ccea882ea104b9cadde90f6da05365bc`  
+		Last Modified: Tue, 02 Jul 2024 05:04:45 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf14d7106fd55e9cc3409e1c64c4aa3206131adb17d0f6f0e62227e2e2732070`  
-		Last Modified: Wed, 05 Jun 2024 04:01:26 GMT  
+	-	`sha256:34895e55ab2f8114aef706c3814ecaad2fb5146d3efb7b13533c5383c9527eb3`  
+		Last Modified: Tue, 02 Jul 2024 05:04:45 GMT  
 		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09d18e613e0ffc663afed300db99b3436783fa874590704d5b6fd6ca5169b0e4`  
-		Last Modified: Mon, 01 Jul 2024 23:56:19 GMT  
-		Size: 4.3 KB (4332 bytes)  
+	-	`sha256:8a79b3e2a40649e94bf270662488e17c6dffacfa001b53ab0ccfd12b870f371c`  
+		Last Modified: Wed, 03 Jul 2024 01:56:59 GMT  
+		Size: 4.3 KB (4335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb132cd3cffb7610907dc97c2cd4a9aa3bc0b9b571f115ea2c0e3c6558b65fb8`  
-		Last Modified: Mon, 01 Jul 2024 23:56:20 GMT  
-		Size: 4.6 MB (4559506 bytes)  
+	-	`sha256:65027438984676b3393eb393c639f5c9d11ecf095e4b832ce2cb33c1d4641b9f`  
+		Last Modified: Wed, 03 Jul 2024 01:57:00 GMT  
+		Size: 4.2 MB (4200322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42458ddfb4b0a3512da9e0d2dc9df283274d158bdc92f8139d7ed34e25847e00`  
-		Last Modified: Mon, 01 Jul 2024 23:56:21 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:6dce60ca3f12526f9c327dd5c81aad6b7c96c2e2fc08230d8b00ca60af68ff0b`  
+		Last Modified: Wed, 03 Jul 2024 01:57:01 GMT  
+		Size: 29.9 MB (29851962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df928c76abd344969eb21a2fafd95ca9fb6e15415d1d3a82549a3b5718cf257f`  
-		Last Modified: Mon, 01 Jul 2024 23:56:20 GMT  
+	-	`sha256:cf7b575fbd064b0613b3e0770ff487bbb84d4443c99d896f9c5fe5a7ecc92b67`  
+		Last Modified: Wed, 03 Jul 2024 01:56:59 GMT  
 		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22-jdk11-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:45c267892df446dd7d9b6046a186c537f61865cc68f9d2a659538698569eda9e
+$ docker pull groovy@sha256:e06df4221cc87a81bfaee5e9d0391d97cd4bc19793350a3d0ee31b81adf44ca5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.7 MB (3698816 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2578218355a2e744bc0b6d3583b1a2b408b96f4a2ac6514da9cd168ba8664c5d`
+-	Image ID: `sha256:54198f1e6bc2109de2c10ae724390564c6e7dd42c06b020de5d0ca3585f44023`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:169219fb679975fa87afd251a449909b7ab59a0969ec8dccbe187b975d8cf681`  
-		Last Modified: Mon, 01 Jul 2024 23:56:20 GMT  
+	-	`sha256:7c3d50e629c15ff35788c9521ae6525e04016f186120d5cc34c169130e9f9266`  
+		Last Modified: Wed, 03 Jul 2024 01:57:00 GMT  
 		Size: 3.7 MB (3673176 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7e284272afee0636e708b83c34a12c0967233008e69383f0cd3c89a78ff1dddb`  
-		Last Modified: Mon, 01 Jul 2024 23:56:19 GMT  
+	-	`sha256:41a095739b250ca0eb86e41f364209b04c78c7cb7fb8b40d075994b298ff3a4b`  
+		Last Modified: Wed, 03 Jul 2024 01:56:59 GMT  
 		Size: 25.6 KB (25640 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14037,7 +14037,7 @@ $ docker pull groovy@sha256:f0e8356ae0b55f682e9121b1592e582ef4fc42c87bb4026d1572
 ## `groovy:4.0.22-jdk17`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14190,28 +14190,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:4.0.22-jdk17` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -14256,69 +14256,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22-jdk17` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0.22-jdk17` - linux; arm64 variant v8
@@ -14458,28 +14458,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:4.0.22-jdk17` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -14524,68 +14524,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22-jdk17` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14857,7 +14857,7 @@ $ docker pull groovy@sha256:2f47bbde1bcda1fd0e00ef2f8f8b029849cca8c04caa2af7a8ba
 ## `groovy:4.0.22-jdk17-jammy`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15010,28 +15010,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:4.0.22-jdk17-jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -15076,69 +15076,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22-jdk17-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0.22-jdk17-jammy` - linux; arm64 variant v8
@@ -15278,28 +15278,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:4.0.22-jdk17-jammy` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -15344,68 +15344,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22-jdk17-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16361,7 +16361,7 @@ $ docker pull groovy@sha256:daff42efd1818b1a39e6647e569d6fc08505b9b901f16a4e499a
 ## `groovy:4.0.22-jdk8`
 
 ```console
-$ docker pull groovy@sha256:047c993a770b7b3c08385c52a95bf9e682161703a9fc07498e588ac2a9b4f98a
+$ docker pull groovy@sha256:33e753b07ba5cbea160b49243022ca20a3fc57227bfa1754ed3f71e153f79624
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16510,28 +16510,28 @@ $ docker pull groovy@sha256:1f811aaf8f9030486db33c1df3fd5b6ec7c43c6cca4deb2c0371
 ### `groovy:4.0.22-jdk8` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:6fda91c419c47bc010332f3f18b1abfdb310f048b65f4cfc7e1c96c1378ba8e3
+$ docker pull groovy@sha256:439082c6940e9bddd0e2077000f061b853bdb005b233029558c063a8a0a8a490
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **173.0 MB (173029232 bytes)**  
+-	Total Size: **172.7 MB (172721472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6404ab3df9bc33210338dcc96c94d5f917c6b6f1297aa7d13eb489364bbaba3`
+-	Image ID: `sha256:9cc4930f2c4c60659321f9aa06d8237c8230256f128946e9bc93ad8a4d563723`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -16574,69 +16574,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d2e7d8e2026f154f12e834d8b72426c2f71c8a555d373336fddba91616868b7`  
-		Last Modified: Wed, 05 Jun 2024 03:59:49 GMT  
-		Size: 12.5 MB (12493203 bytes)  
+	-	`sha256:7c3600b7820ccdab844af0b11c36a1aeadc460c5a3bc6a6fd0211a3fa9024fb1`  
+		Last Modified: Tue, 02 Jul 2024 04:32:24 GMT  
+		Size: 12.5 MB (12462968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95298bffd1c0ebd593eeb6754e0f5e5ba9ca25454af388f78cd657152f59cd01`  
-		Last Modified: Wed, 05 Jun 2024 03:59:55 GMT  
-		Size: 99.2 MB (99228750 bytes)  
+	-	`sha256:ab96ab5089efb8387a3b08075cfe11b114399a6489afd8cb83ceddc16d6798ac`  
+		Last Modified: Tue, 02 Jul 2024 04:32:31 GMT  
+		Size: 99.2 MB (99228023 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d783cd2973ac4c20fae7efd4d2e605cff4de71ba08f4110510a1e7d7dc0239b5`  
-		Last Modified: Wed, 05 Jun 2024 03:59:46 GMT  
+	-	`sha256:af866480c7ff18491aba2f2ebea87553ba5c884826ec3578d09af689bd4ffe4c`  
+		Last Modified: Tue, 02 Jul 2024 04:32:22 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:160d32d80ad9bff0aadc9f16c0712d2e20cc58ddf491fba50571fccb3d0d77f9`  
-		Last Modified: Wed, 05 Jun 2024 03:59:46 GMT  
-		Size: 734.0 B  
+	-	`sha256:18de864e1d2126d8d641940b568e4a4e05973ffeeef968d7f99a2e2ca4057517`  
+		Last Modified: Tue, 02 Jul 2024 04:32:22 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f6ff6b045ee9fe87bc79e628b0378fa7497d14a0ba7ac7f39e92ef4c80b189e`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 4.3 KB (4317 bytes)  
+	-	`sha256:8afbaba44bf4d76f9744829cfc5ed17bbe7753d6f4ad9b5edb948bc53842ca98`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
+		Size: 4.3 KB (4315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e88404a9d19795b7597a2653c52389f876fa53f3ec9cdcb15375c8e30e51ddff`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 3.9 MB (3915090 bytes)  
+	-	`sha256:d25dfa755fa357ce135b6e6f242a1128720be01913650ccefe3d3eafe6a2045c`  
+		Last Modified: Wed, 03 Jul 2024 02:40:42 GMT  
+		Size: 3.6 MB (3639177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a884372d5cac8b6fcf3ecfe7d57650b01bf22329d0f666e663ac600608396a1d`  
-		Last Modified: Mon, 01 Jul 2024 23:55:21 GMT  
-		Size: 29.9 MB (29851952 bytes)  
+	-	`sha256:3e32b05233d72ed5f04d9391b056c628fe0e7717596148b040ba81e0bc27a0d3`  
+		Last Modified: Wed, 03 Jul 2024 02:40:43 GMT  
+		Size: 29.9 MB (29851949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f8cbfb7d554d8b96fbac34f556442118f8d77459e0559ed04d4251cf78d0cd9`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 139.0 B  
+	-	`sha256:86a35f1d7458173d37cbd0459012462d06ec1c38b1ea5ee38f40d578acca0fe7`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22-jdk8` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:daf6eaa06bde9c9bd0bc6440cc4880b5ff3b9daee1e5a2c89c4f29e426458007
+$ docker pull groovy@sha256:3fb6361cf541d019aee467d25e1e497720f1875f9519f33bc738a5608b45c34d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3719009 bytes)**  
+-	Total Size: **3.7 MB (3719008 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:deb64ad64435e56fc0ee01b5a364d0ed2c4b9bc8d0cd5df4604cb49853c02185`
+-	Image ID: `sha256:5b157bb75db904315f62528c45eaa5405173b742ff3da5fd895ea873e1c094a1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bee767df638cca4f0bd69f41b2d09ac4efefa6307778c1b320b227f018edc58e`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
+	-	`sha256:e9d7c62711b8f8a972eab5c89ddb8e983716ca8d921ad824e4e60fa36c4951d2`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
 		Size: 3.7 MB (3693998 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8fccdc8855bbe7610cae766f564b6a4349cdad325e6b68ca833d09104cf09cec`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 25.0 KB (25011 bytes)  
+	-	`sha256:491ab3a2ad92444f64b22230d9b585e224ee7601259f4d83067d6823a5653ba5`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
+		Size: 25.0 KB (25010 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0.22-jdk8` - linux; arm64 variant v8
@@ -16774,28 +16774,28 @@ $ docker pull groovy@sha256:4012cc0481c93c7092a4d14834ad60736892e375ae9f92ae11b4
 ### `groovy:4.0.22-jdk8` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:4719a676dff0aecd1794a291fb06eb14661d57103cf31a54d5e3dcb504d3eef2
+$ docker pull groovy@sha256:2fe2ff0fb009dc81fd1161fccc2339225b3700d06fa3021a6b1d8f75bc39d546
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.8 MB (184841917 bytes)**  
+-	Total Size: **184.4 MB (184431009 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9fe886bd7080a1858a2d63097d8a03c4c5a0fcd8cfa696bfdc2894aa183a1f3`
+-	Image ID: `sha256:bb6b396dce8180f4e5bf05e25beab396f1b9631d7699de5fc40489f3bb1c6316`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -16838,75 +16838,75 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b82f84268a93862af92928dd1cc1dc31937bbffd50302e61f899397e5223399d`  
-		Last Modified: Wed, 05 Jun 2024 04:00:20 GMT  
-		Size: 13.8 MB (13766991 bytes)  
+	-	`sha256:4aea30364eff82eb5379f35c10575a54ece802a6af1763591c0a6a999d72c84c`  
+		Last Modified: Tue, 02 Jul 2024 05:04:14 GMT  
+		Size: 13.7 MB (13714876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b96f8afb54eaa4d0d1271da3f9226622e5393ff92e4b765aec30aa1fcaca113a`  
-		Last Modified: Wed, 05 Jun 2024 04:00:24 GMT  
-		Size: 101.1 MB (101071129 bytes)  
+	-	`sha256:5e381362c15b6f2494c8dc0d6a49beef7efc7bbf6ef1d3525b485ba3969369d6`  
+		Last Modified: Tue, 02 Jul 2024 05:04:20 GMT  
+		Size: 101.1 MB (101071152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59900ccb04bc654c9922cbd79216a4488310d9308aea4ecffd1d72e4eddee950`  
-		Last Modified: Wed, 05 Jun 2024 04:00:15 GMT  
+	-	`sha256:9b4281d6414726ffc097764a21c03524fe8ed573c02d19bd3c56d0826936af97`  
+		Last Modified: Tue, 02 Jul 2024 05:04:10 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc837f7bedc9361e014f8f1c0bd2abf18e18798493eeee096794e977342e60d7`  
-		Last Modified: Wed, 05 Jun 2024 04:00:15 GMT  
+	-	`sha256:ee11783fbc96e3c2e66f3c1814d9e8373cf19165f9c928ff6cbb681bb165bc69`  
+		Last Modified: Tue, 02 Jul 2024 05:04:10 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33a32b866dbcceb3ca7a7793f59b8e6e521abc7648e740e5055f759138e44285`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
-		Size: 4.3 KB (4338 bytes)  
+	-	`sha256:a66b8a51b6daaca0c8b1cfa6820f332fdb1211d8d593d93d5913743fc9b35073`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
+		Size: 4.3 KB (4329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd234369889c8e9bb193eed85179850365252ea6d4df0e4560f9bca3734f3b7d`  
-		Last Modified: Mon, 01 Jul 2024 23:55:29 GMT  
-		Size: 4.6 MB (4558147 bytes)  
+	-	`sha256:b47b212ba6db540082ae7d3ae4c0125725dd864842670e3565260495c8a56b09`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
+		Size: 4.2 MB (4199348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04e9c53fa6f4024da1af2779c3ed6b63910dd3d82de474f405f58c6a8d931ff1`  
-		Last Modified: Mon, 01 Jul 2024 23:55:29 GMT  
-		Size: 29.9 MB (29851950 bytes)  
+	-	`sha256:8f3506bd6d57158e663b770eb650f3140c231a0503be01e2929d546c81d7a743`  
+		Last Modified: Wed, 03 Jul 2024 01:56:07 GMT  
+		Size: 29.9 MB (29851951 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9babbac3d8795e283d89e87d27969a901f6aaf838ed3e3f7ddf802c775741320`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
-		Size: 137.0 B  
+	-	`sha256:087722e3e035fccaec73e8cc8b896f404246cbf740bb4194f921b0b59aca010c`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22-jdk8` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:4eb043290dd724c22839b470d29aaefc883805f840facfc8370832264e1317b3
+$ docker pull groovy@sha256:efa87448931b64edc3abfe93367fd03f54619bf935a6834af854ef5fa593e1b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.7 MB (3719643 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a3164c61c65e947511afd2fa60e0e242e4aff72fae308e32be170f6d9fd2e45d`
+-	Image ID: `sha256:0b8acbb6c65398c3aa1c43ae71d4cf274891482fc46ab21f25d747eabbc5d0fa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b8db97371945247c13fc425d1f38b646225e199018453f01694870fc5445330d`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
+	-	`sha256:84bdc76ddf93da8ad2943bdbc97e40c9821e325952abbaa098a8dacf49a14ed2`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
 		Size: 3.7 MB (3694695 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:892bb4b1da19e451bd27b465c8ef195dfe4bf4447f7e52a51b24fd34d7cc3b51`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
+	-	`sha256:58cb65626a5625609ec7caaa3f39f88b1c308ade0b0da55e266d7c1837df8d52`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
 		Size: 24.9 KB (24948 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `groovy:4.0.22-jdk8-jammy`
 
 ```console
-$ docker pull groovy@sha256:047c993a770b7b3c08385c52a95bf9e682161703a9fc07498e588ac2a9b4f98a
+$ docker pull groovy@sha256:33e753b07ba5cbea160b49243022ca20a3fc57227bfa1754ed3f71e153f79624
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17055,28 +17055,28 @@ $ docker pull groovy@sha256:1f811aaf8f9030486db33c1df3fd5b6ec7c43c6cca4deb2c0371
 ### `groovy:4.0.22-jdk8-jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:6fda91c419c47bc010332f3f18b1abfdb310f048b65f4cfc7e1c96c1378ba8e3
+$ docker pull groovy@sha256:439082c6940e9bddd0e2077000f061b853bdb005b233029558c063a8a0a8a490
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **173.0 MB (173029232 bytes)**  
+-	Total Size: **172.7 MB (172721472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6404ab3df9bc33210338dcc96c94d5f917c6b6f1297aa7d13eb489364bbaba3`
+-	Image ID: `sha256:9cc4930f2c4c60659321f9aa06d8237c8230256f128946e9bc93ad8a4d563723`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -17119,69 +17119,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d2e7d8e2026f154f12e834d8b72426c2f71c8a555d373336fddba91616868b7`  
-		Last Modified: Wed, 05 Jun 2024 03:59:49 GMT  
-		Size: 12.5 MB (12493203 bytes)  
+	-	`sha256:7c3600b7820ccdab844af0b11c36a1aeadc460c5a3bc6a6fd0211a3fa9024fb1`  
+		Last Modified: Tue, 02 Jul 2024 04:32:24 GMT  
+		Size: 12.5 MB (12462968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95298bffd1c0ebd593eeb6754e0f5e5ba9ca25454af388f78cd657152f59cd01`  
-		Last Modified: Wed, 05 Jun 2024 03:59:55 GMT  
-		Size: 99.2 MB (99228750 bytes)  
+	-	`sha256:ab96ab5089efb8387a3b08075cfe11b114399a6489afd8cb83ceddc16d6798ac`  
+		Last Modified: Tue, 02 Jul 2024 04:32:31 GMT  
+		Size: 99.2 MB (99228023 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d783cd2973ac4c20fae7efd4d2e605cff4de71ba08f4110510a1e7d7dc0239b5`  
-		Last Modified: Wed, 05 Jun 2024 03:59:46 GMT  
+	-	`sha256:af866480c7ff18491aba2f2ebea87553ba5c884826ec3578d09af689bd4ffe4c`  
+		Last Modified: Tue, 02 Jul 2024 04:32:22 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:160d32d80ad9bff0aadc9f16c0712d2e20cc58ddf491fba50571fccb3d0d77f9`  
-		Last Modified: Wed, 05 Jun 2024 03:59:46 GMT  
-		Size: 734.0 B  
+	-	`sha256:18de864e1d2126d8d641940b568e4a4e05973ffeeef968d7f99a2e2ca4057517`  
+		Last Modified: Tue, 02 Jul 2024 04:32:22 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f6ff6b045ee9fe87bc79e628b0378fa7497d14a0ba7ac7f39e92ef4c80b189e`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 4.3 KB (4317 bytes)  
+	-	`sha256:8afbaba44bf4d76f9744829cfc5ed17bbe7753d6f4ad9b5edb948bc53842ca98`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
+		Size: 4.3 KB (4315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e88404a9d19795b7597a2653c52389f876fa53f3ec9cdcb15375c8e30e51ddff`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 3.9 MB (3915090 bytes)  
+	-	`sha256:d25dfa755fa357ce135b6e6f242a1128720be01913650ccefe3d3eafe6a2045c`  
+		Last Modified: Wed, 03 Jul 2024 02:40:42 GMT  
+		Size: 3.6 MB (3639177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a884372d5cac8b6fcf3ecfe7d57650b01bf22329d0f666e663ac600608396a1d`  
-		Last Modified: Mon, 01 Jul 2024 23:55:21 GMT  
-		Size: 29.9 MB (29851952 bytes)  
+	-	`sha256:3e32b05233d72ed5f04d9391b056c628fe0e7717596148b040ba81e0bc27a0d3`  
+		Last Modified: Wed, 03 Jul 2024 02:40:43 GMT  
+		Size: 29.9 MB (29851949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f8cbfb7d554d8b96fbac34f556442118f8d77459e0559ed04d4251cf78d0cd9`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 139.0 B  
+	-	`sha256:86a35f1d7458173d37cbd0459012462d06ec1c38b1ea5ee38f40d578acca0fe7`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22-jdk8-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:daf6eaa06bde9c9bd0bc6440cc4880b5ff3b9daee1e5a2c89c4f29e426458007
+$ docker pull groovy@sha256:3fb6361cf541d019aee467d25e1e497720f1875f9519f33bc738a5608b45c34d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3719009 bytes)**  
+-	Total Size: **3.7 MB (3719008 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:deb64ad64435e56fc0ee01b5a364d0ed2c4b9bc8d0cd5df4604cb49853c02185`
+-	Image ID: `sha256:5b157bb75db904315f62528c45eaa5405173b742ff3da5fd895ea873e1c094a1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bee767df638cca4f0bd69f41b2d09ac4efefa6307778c1b320b227f018edc58e`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
+	-	`sha256:e9d7c62711b8f8a972eab5c89ddb8e983716ca8d921ad824e4e60fa36c4951d2`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
 		Size: 3.7 MB (3693998 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8fccdc8855bbe7610cae766f564b6a4349cdad325e6b68ca833d09104cf09cec`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 25.0 KB (25011 bytes)  
+	-	`sha256:491ab3a2ad92444f64b22230d9b585e224ee7601259f4d83067d6823a5653ba5`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
+		Size: 25.0 KB (25010 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:4.0.22-jdk8-jammy` - linux; arm64 variant v8
@@ -17319,28 +17319,28 @@ $ docker pull groovy@sha256:4012cc0481c93c7092a4d14834ad60736892e375ae9f92ae11b4
 ### `groovy:4.0.22-jdk8-jammy` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:4719a676dff0aecd1794a291fb06eb14661d57103cf31a54d5e3dcb504d3eef2
+$ docker pull groovy@sha256:2fe2ff0fb009dc81fd1161fccc2339225b3700d06fa3021a6b1d8f75bc39d546
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.8 MB (184841917 bytes)**  
+-	Total Size: **184.4 MB (184431009 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9fe886bd7080a1858a2d63097d8a03c4c5a0fcd8cfa696bfdc2894aa183a1f3`
+-	Image ID: `sha256:bb6b396dce8180f4e5bf05e25beab396f1b9631d7699de5fc40489f3bb1c6316`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -17383,68 +17383,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b82f84268a93862af92928dd1cc1dc31937bbffd50302e61f899397e5223399d`  
-		Last Modified: Wed, 05 Jun 2024 04:00:20 GMT  
-		Size: 13.8 MB (13766991 bytes)  
+	-	`sha256:4aea30364eff82eb5379f35c10575a54ece802a6af1763591c0a6a999d72c84c`  
+		Last Modified: Tue, 02 Jul 2024 05:04:14 GMT  
+		Size: 13.7 MB (13714876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b96f8afb54eaa4d0d1271da3f9226622e5393ff92e4b765aec30aa1fcaca113a`  
-		Last Modified: Wed, 05 Jun 2024 04:00:24 GMT  
-		Size: 101.1 MB (101071129 bytes)  
+	-	`sha256:5e381362c15b6f2494c8dc0d6a49beef7efc7bbf6ef1d3525b485ba3969369d6`  
+		Last Modified: Tue, 02 Jul 2024 05:04:20 GMT  
+		Size: 101.1 MB (101071152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59900ccb04bc654c9922cbd79216a4488310d9308aea4ecffd1d72e4eddee950`  
-		Last Modified: Wed, 05 Jun 2024 04:00:15 GMT  
+	-	`sha256:9b4281d6414726ffc097764a21c03524fe8ed573c02d19bd3c56d0826936af97`  
+		Last Modified: Tue, 02 Jul 2024 05:04:10 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc837f7bedc9361e014f8f1c0bd2abf18e18798493eeee096794e977342e60d7`  
-		Last Modified: Wed, 05 Jun 2024 04:00:15 GMT  
+	-	`sha256:ee11783fbc96e3c2e66f3c1814d9e8373cf19165f9c928ff6cbb681bb165bc69`  
+		Last Modified: Tue, 02 Jul 2024 05:04:10 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33a32b866dbcceb3ca7a7793f59b8e6e521abc7648e740e5055f759138e44285`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
-		Size: 4.3 KB (4338 bytes)  
+	-	`sha256:a66b8a51b6daaca0c8b1cfa6820f332fdb1211d8d593d93d5913743fc9b35073`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
+		Size: 4.3 KB (4329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd234369889c8e9bb193eed85179850365252ea6d4df0e4560f9bca3734f3b7d`  
-		Last Modified: Mon, 01 Jul 2024 23:55:29 GMT  
-		Size: 4.6 MB (4558147 bytes)  
+	-	`sha256:b47b212ba6db540082ae7d3ae4c0125725dd864842670e3565260495c8a56b09`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
+		Size: 4.2 MB (4199348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04e9c53fa6f4024da1af2779c3ed6b63910dd3d82de474f405f58c6a8d931ff1`  
-		Last Modified: Mon, 01 Jul 2024 23:55:29 GMT  
-		Size: 29.9 MB (29851950 bytes)  
+	-	`sha256:8f3506bd6d57158e663b770eb650f3140c231a0503be01e2929d546c81d7a743`  
+		Last Modified: Wed, 03 Jul 2024 01:56:07 GMT  
+		Size: 29.9 MB (29851951 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9babbac3d8795e283d89e87d27969a901f6aaf838ed3e3f7ddf802c775741320`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
-		Size: 137.0 B  
+	-	`sha256:087722e3e035fccaec73e8cc8b896f404246cbf740bb4194f921b0b59aca010c`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:4.0.22-jdk8-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:4eb043290dd724c22839b470d29aaefc883805f840facfc8370832264e1317b3
+$ docker pull groovy@sha256:efa87448931b64edc3abfe93367fd03f54619bf935a6834af854ef5fa593e1b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.7 MB (3719643 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a3164c61c65e947511afd2fa60e0e242e4aff72fae308e32be170f6d9fd2e45d`
+-	Image ID: `sha256:0b8acbb6c65398c3aa1c43ae71d4cf274891482fc46ab21f25d747eabbc5d0fa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b8db97371945247c13fc425d1f38b646225e199018453f01694870fc5445330d`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
+	-	`sha256:84bdc76ddf93da8ad2943bdbc97e40c9821e325952abbaa098a8dacf49a14ed2`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
 		Size: 3.7 MB (3694695 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:892bb4b1da19e451bd27b465c8ef195dfe4bf4447f7e52a51b24fd34d7cc3b51`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
+	-	`sha256:58cb65626a5625609ec7caaa3f39f88b1c308ade0b0da55e266d7c1837df8d52`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
 		Size: 24.9 KB (24948 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17582,7 +17582,7 @@ $ docker pull groovy@sha256:2f47bbde1bcda1fd0e00ef2f8f8b029849cca8c04caa2af7a8ba
 ## `groovy:jammy`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17735,28 +17735,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -17801,69 +17801,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:jammy` - linux; arm64 variant v8
@@ -18003,28 +18003,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:jammy` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -18069,68 +18069,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18271,7 +18271,7 @@ $ docker pull groovy@sha256:b7b1cc5a876c9c25fabf5fd05ba6e5e4851cd8813fe035a3f8c3
 ## `groovy:jdk`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18424,28 +18424,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:jdk` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -18490,69 +18490,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jdk` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:jdk` - linux; arm64 variant v8
@@ -18692,28 +18692,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:jdk` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -18758,68 +18758,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jdk` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19091,7 +19091,7 @@ $ docker pull groovy@sha256:2f47bbde1bcda1fd0e00ef2f8f8b029849cca8c04caa2af7a8ba
 ## `groovy:jdk-jammy`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19244,28 +19244,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:jdk-jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -19310,69 +19310,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jdk-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:jdk-jammy` - linux; arm64 variant v8
@@ -19512,28 +19512,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:jdk-jammy` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -19578,68 +19578,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jdk-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19780,7 +19780,7 @@ $ docker pull groovy@sha256:b7b1cc5a876c9c25fabf5fd05ba6e5e4851cd8813fe035a3f8c3
 ## `groovy:jdk11`
 
 ```console
-$ docker pull groovy@sha256:8490d229e96b3843f2b311aa4384584ed0a40f1b09b8e1e6c83a58c1871b1387
+$ docker pull groovy@sha256:2533f5b37c28c6905da55db94eefc4fcdb503df75408d8569ce6ee075e7b6355
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19933,28 +19933,28 @@ $ docker pull groovy@sha256:145892900f3a837630464f234bce5a34547f7fedf5b482c9819d
 ### `groovy:jdk11` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:4f624b8b265815f6edee3e05a3b1558a603d4172c461fe32dea87ce79194a0a5
+$ docker pull groovy@sha256:f2c6e04358da4094b16e4f38cdddd72bb9c1277d2c490ad6e8f5c23080dce06d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **211.8 MB (211805657 bytes)**  
+-	Total Size: **211.5 MB (211499475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1b517cc1e34fedbbdc7f5d8fe05323d7462c7189703ccdb561cd692d1d22a2c`
+-	Image ID: `sha256:23e7a9f46e190b35d2f388942bd3104448fe6bda74432f3336f2f105c0744071`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -19999,69 +19999,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d2e7d8e2026f154f12e834d8b72426c2f71c8a555d373336fddba91616868b7`  
-		Last Modified: Wed, 05 Jun 2024 03:59:49 GMT  
-		Size: 12.5 MB (12493203 bytes)  
+	-	`sha256:7c3600b7820ccdab844af0b11c36a1aeadc460c5a3bc6a6fd0211a3fa9024fb1`  
+		Last Modified: Tue, 02 Jul 2024 04:32:24 GMT  
+		Size: 12.5 MB (12462968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:463ed2419e5a3d33f88d49daac8b666c92a96a76a7a61459c49c34fcd3e6a9f1`  
-		Last Modified: Wed, 05 Jun 2024 04:01:10 GMT  
-		Size: 138.0 MB (138004561 bytes)  
+	-	`sha256:f5683275978575be7df9d26c3ae87f4576b2d810ec10b569c7331167fb751a9c`  
+		Last Modified: Tue, 02 Jul 2024 04:33:37 GMT  
+		Size: 138.0 MB (138004562 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ece81701fa181139e9fcefd2eedd9d1736df1692a74f866d31a164d40a548e3`  
-		Last Modified: Wed, 05 Jun 2024 04:00:55 GMT  
-		Size: 176.0 B  
+	-	`sha256:ee4e9957dbca99a8013bcf78bffbe5eba97801c1181113196b1dc286d813cbf4`  
+		Last Modified: Tue, 02 Jul 2024 04:33:24 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ed363f50e5e6714fd4c28aa4be93d0aac96e086f7e2a3aa187353c0af702b20`  
-		Last Modified: Wed, 05 Jun 2024 04:00:55 GMT  
+	-	`sha256:f92e17a5667c973237880379e1fc188c1530f8dedf2dfadf57f47e2f73108901`  
+		Last Modified: Tue, 02 Jul 2024 04:33:24 GMT  
 		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9de937951398fcf5fce138c838e20917cc2693fb428a676c1d3cd456833e5828`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 4.3 KB (4322 bytes)  
+	-	`sha256:2532a70e36e60b23b5b5230b085f8c952f232242ab3bdb4ed87b9b4b3e6f9698`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 4.3 KB (4319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57ebd6ce6c87352c55add17fbc7b92843e7fbf1c2e9643fff64112d944230ffb`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 3.9 MB (3915651 bytes)  
+	-	`sha256:c6d00726f495c7a4ccac2d73c4b363fc3d9b415f4fbd0e362555334a3456eed9`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 3.6 MB (3640550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0450df761165aa02c92e3b16a83ccd3428457722232ae5c0079467511dfff879`  
-		Last Modified: Mon, 01 Jul 2024 23:56:11 GMT  
-		Size: 29.9 MB (29851952 bytes)  
+	-	`sha256:ca93992ab9ff30f09f1c32d12e04f410b7752cba26eacfaa3eff47714bd03219`  
+		Last Modified: Wed, 03 Jul 2024 02:41:29 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f1e0a4c14d78f526723017f53b36fca30647c7d7d5a7cd4e6d5bb638a7b0e95`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 139.0 B  
+	-	`sha256:5918511ba6a2336bf6f8e4d0360748d85d0e21783923cc7d0ddca87cf1ce0bdb`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jdk11` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:1dc787ee2c00abc71cd0f4963fef40d2795bbc869d9f3183ab94de0bf8ddd2dd
+$ docker pull groovy@sha256:e08d9ac40285489b0f2a93777d67ee01af52364bc8d92fbf833dd0bc536bf472
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3695726 bytes)**  
+-	Total Size: **3.7 MB (3695725 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fa71ff34119178db04738a283baa2c4918b9a529a7d666d9166a1a93f3f4d02`
+-	Image ID: `sha256:33f719d2e9f78666053946bf0c414100f6736e3fae160ba7a23f7b71864a3779`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b16c15d4796b27510bcb7dad3c04347e8a4ffe6c10828001d0b0b264d59fb82f`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
+	-	`sha256:66d455317a8bfae65654ce1954fb42c940eca7103ad84ff3b8bc648b5fb0dc80`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
 		Size: 3.7 MB (3670017 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:33bde50e0ccc9850be6255e563557968398afe4685d812d44a7223c53b1e895a`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 25.7 KB (25709 bytes)  
+	-	`sha256:2ac037cc3d39d9bd7b1c9d587d55cedef610ddbc5ce69d2a63e1f020bc72a787`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 25.7 KB (25708 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:jdk11` - linux; arm64 variant v8
@@ -20201,28 +20201,28 @@ $ docker pull groovy@sha256:e71f7bf579dcc7f0bda6ace219b6d571328dccae0a59184cd547
 ### `groovy:jdk11` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:c3c390eb009bb96b1485ca1724fb3a6ba962510c0393fc504358ffeffa0a9189
+$ docker pull groovy@sha256:f1e6b1db78275f243bf3f42478ff5a756b8858195cfb66c0f4b93c510f218965
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **216.5 MB (216491066 bytes)**  
+-	Total Size: **216.1 MB (216079768 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:feac2439f6706fb174f2c6ff526bc7bc1af2b0d9bb668ff1160b3e0bfd8cc4b4`
+-	Image ID: `sha256:86e89a445adbf09572a0513eccfa4dc7e355f5b5d7ac211bfad8fc26cd8408ad`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -20267,68 +20267,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b82f84268a93862af92928dd1cc1dc31937bbffd50302e61f899397e5223399d`  
-		Last Modified: Wed, 05 Jun 2024 04:00:20 GMT  
-		Size: 13.8 MB (13766991 bytes)  
+	-	`sha256:4aea30364eff82eb5379f35c10575a54ece802a6af1763591c0a6a999d72c84c`  
+		Last Modified: Tue, 02 Jul 2024 05:04:14 GMT  
+		Size: 13.7 MB (13714876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40ab8ce3a4fcaeb41752f1fe6f96527d85961ebc21e210ec8b27f5cb4c68fa70`  
-		Last Modified: Wed, 05 Jun 2024 04:01:39 GMT  
-		Size: 132.7 MB (132718863 bytes)  
+	-	`sha256:9e3c3db8c3ce267302ab33698998e2969d08346da85f3c69446c98910f01e534`  
+		Last Modified: Tue, 02 Jul 2024 05:04:57 GMT  
+		Size: 132.7 MB (132718876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24b4e95798e15aea98fc366c58314c56c188e0316139bbcdaceed59a01cfadf6`  
-		Last Modified: Wed, 05 Jun 2024 04:01:26 GMT  
-		Size: 176.0 B  
+	-	`sha256:b2731f957d26e7380c16b0db866ae857ccea882ea104b9cadde90f6da05365bc`  
+		Last Modified: Tue, 02 Jul 2024 05:04:45 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf14d7106fd55e9cc3409e1c64c4aa3206131adb17d0f6f0e62227e2e2732070`  
-		Last Modified: Wed, 05 Jun 2024 04:01:26 GMT  
+	-	`sha256:34895e55ab2f8114aef706c3814ecaad2fb5146d3efb7b13533c5383c9527eb3`  
+		Last Modified: Tue, 02 Jul 2024 05:04:45 GMT  
 		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09d18e613e0ffc663afed300db99b3436783fa874590704d5b6fd6ca5169b0e4`  
-		Last Modified: Mon, 01 Jul 2024 23:56:19 GMT  
-		Size: 4.3 KB (4332 bytes)  
+	-	`sha256:8a79b3e2a40649e94bf270662488e17c6dffacfa001b53ab0ccfd12b870f371c`  
+		Last Modified: Wed, 03 Jul 2024 01:56:59 GMT  
+		Size: 4.3 KB (4335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb132cd3cffb7610907dc97c2cd4a9aa3bc0b9b571f115ea2c0e3c6558b65fb8`  
-		Last Modified: Mon, 01 Jul 2024 23:56:20 GMT  
-		Size: 4.6 MB (4559506 bytes)  
+	-	`sha256:65027438984676b3393eb393c639f5c9d11ecf095e4b832ce2cb33c1d4641b9f`  
+		Last Modified: Wed, 03 Jul 2024 01:57:00 GMT  
+		Size: 4.2 MB (4200322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42458ddfb4b0a3512da9e0d2dc9df283274d158bdc92f8139d7ed34e25847e00`  
-		Last Modified: Mon, 01 Jul 2024 23:56:21 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:6dce60ca3f12526f9c327dd5c81aad6b7c96c2e2fc08230d8b00ca60af68ff0b`  
+		Last Modified: Wed, 03 Jul 2024 01:57:01 GMT  
+		Size: 29.9 MB (29851962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df928c76abd344969eb21a2fafd95ca9fb6e15415d1d3a82549a3b5718cf257f`  
-		Last Modified: Mon, 01 Jul 2024 23:56:20 GMT  
+	-	`sha256:cf7b575fbd064b0613b3e0770ff487bbb84d4443c99d896f9c5fe5a7ecc92b67`  
+		Last Modified: Wed, 03 Jul 2024 01:56:59 GMT  
 		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jdk11` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:45c267892df446dd7d9b6046a186c537f61865cc68f9d2a659538698569eda9e
+$ docker pull groovy@sha256:e06df4221cc87a81bfaee5e9d0391d97cd4bc19793350a3d0ee31b81adf44ca5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.7 MB (3698816 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2578218355a2e744bc0b6d3583b1a2b408b96f4a2ac6514da9cd168ba8664c5d`
+-	Image ID: `sha256:54198f1e6bc2109de2c10ae724390564c6e7dd42c06b020de5d0ca3585f44023`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:169219fb679975fa87afd251a449909b7ab59a0969ec8dccbe187b975d8cf681`  
-		Last Modified: Mon, 01 Jul 2024 23:56:20 GMT  
+	-	`sha256:7c3d50e629c15ff35788c9521ae6525e04016f186120d5cc34c169130e9f9266`  
+		Last Modified: Wed, 03 Jul 2024 01:57:00 GMT  
 		Size: 3.7 MB (3673176 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7e284272afee0636e708b83c34a12c0967233008e69383f0cd3c89a78ff1dddb`  
-		Last Modified: Mon, 01 Jul 2024 23:56:19 GMT  
+	-	`sha256:41a095739b250ca0eb86e41f364209b04c78c7cb7fb8b40d075994b298ff3a4b`  
+		Last Modified: Wed, 03 Jul 2024 01:56:59 GMT  
 		Size: 25.6 KB (25640 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20600,7 +20600,7 @@ $ docker pull groovy@sha256:29a6e11782a1367487a9029a15fa46f2730f8d6a2c903e7487e8
 ## `groovy:jdk11-jammy`
 
 ```console
-$ docker pull groovy@sha256:8490d229e96b3843f2b311aa4384584ed0a40f1b09b8e1e6c83a58c1871b1387
+$ docker pull groovy@sha256:2533f5b37c28c6905da55db94eefc4fcdb503df75408d8569ce6ee075e7b6355
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20753,28 +20753,28 @@ $ docker pull groovy@sha256:145892900f3a837630464f234bce5a34547f7fedf5b482c9819d
 ### `groovy:jdk11-jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:4f624b8b265815f6edee3e05a3b1558a603d4172c461fe32dea87ce79194a0a5
+$ docker pull groovy@sha256:f2c6e04358da4094b16e4f38cdddd72bb9c1277d2c490ad6e8f5c23080dce06d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **211.8 MB (211805657 bytes)**  
+-	Total Size: **211.5 MB (211499475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1b517cc1e34fedbbdc7f5d8fe05323d7462c7189703ccdb561cd692d1d22a2c`
+-	Image ID: `sha256:23e7a9f46e190b35d2f388942bd3104448fe6bda74432f3336f2f105c0744071`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -20819,69 +20819,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d2e7d8e2026f154f12e834d8b72426c2f71c8a555d373336fddba91616868b7`  
-		Last Modified: Wed, 05 Jun 2024 03:59:49 GMT  
-		Size: 12.5 MB (12493203 bytes)  
+	-	`sha256:7c3600b7820ccdab844af0b11c36a1aeadc460c5a3bc6a6fd0211a3fa9024fb1`  
+		Last Modified: Tue, 02 Jul 2024 04:32:24 GMT  
+		Size: 12.5 MB (12462968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:463ed2419e5a3d33f88d49daac8b666c92a96a76a7a61459c49c34fcd3e6a9f1`  
-		Last Modified: Wed, 05 Jun 2024 04:01:10 GMT  
-		Size: 138.0 MB (138004561 bytes)  
+	-	`sha256:f5683275978575be7df9d26c3ae87f4576b2d810ec10b569c7331167fb751a9c`  
+		Last Modified: Tue, 02 Jul 2024 04:33:37 GMT  
+		Size: 138.0 MB (138004562 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ece81701fa181139e9fcefd2eedd9d1736df1692a74f866d31a164d40a548e3`  
-		Last Modified: Wed, 05 Jun 2024 04:00:55 GMT  
-		Size: 176.0 B  
+	-	`sha256:ee4e9957dbca99a8013bcf78bffbe5eba97801c1181113196b1dc286d813cbf4`  
+		Last Modified: Tue, 02 Jul 2024 04:33:24 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ed363f50e5e6714fd4c28aa4be93d0aac96e086f7e2a3aa187353c0af702b20`  
-		Last Modified: Wed, 05 Jun 2024 04:00:55 GMT  
+	-	`sha256:f92e17a5667c973237880379e1fc188c1530f8dedf2dfadf57f47e2f73108901`  
+		Last Modified: Tue, 02 Jul 2024 04:33:24 GMT  
 		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9de937951398fcf5fce138c838e20917cc2693fb428a676c1d3cd456833e5828`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 4.3 KB (4322 bytes)  
+	-	`sha256:2532a70e36e60b23b5b5230b085f8c952f232242ab3bdb4ed87b9b4b3e6f9698`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 4.3 KB (4319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57ebd6ce6c87352c55add17fbc7b92843e7fbf1c2e9643fff64112d944230ffb`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 3.9 MB (3915651 bytes)  
+	-	`sha256:c6d00726f495c7a4ccac2d73c4b363fc3d9b415f4fbd0e362555334a3456eed9`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 3.6 MB (3640550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0450df761165aa02c92e3b16a83ccd3428457722232ae5c0079467511dfff879`  
-		Last Modified: Mon, 01 Jul 2024 23:56:11 GMT  
-		Size: 29.9 MB (29851952 bytes)  
+	-	`sha256:ca93992ab9ff30f09f1c32d12e04f410b7752cba26eacfaa3eff47714bd03219`  
+		Last Modified: Wed, 03 Jul 2024 02:41:29 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f1e0a4c14d78f526723017f53b36fca30647c7d7d5a7cd4e6d5bb638a7b0e95`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 139.0 B  
+	-	`sha256:5918511ba6a2336bf6f8e4d0360748d85d0e21783923cc7d0ddca87cf1ce0bdb`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jdk11-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:1dc787ee2c00abc71cd0f4963fef40d2795bbc869d9f3183ab94de0bf8ddd2dd
+$ docker pull groovy@sha256:e08d9ac40285489b0f2a93777d67ee01af52364bc8d92fbf833dd0bc536bf472
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3695726 bytes)**  
+-	Total Size: **3.7 MB (3695725 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fa71ff34119178db04738a283baa2c4918b9a529a7d666d9166a1a93f3f4d02`
+-	Image ID: `sha256:33f719d2e9f78666053946bf0c414100f6736e3fae160ba7a23f7b71864a3779`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b16c15d4796b27510bcb7dad3c04347e8a4ffe6c10828001d0b0b264d59fb82f`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
+	-	`sha256:66d455317a8bfae65654ce1954fb42c940eca7103ad84ff3b8bc648b5fb0dc80`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
 		Size: 3.7 MB (3670017 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:33bde50e0ccc9850be6255e563557968398afe4685d812d44a7223c53b1e895a`  
-		Last Modified: Mon, 01 Jul 2024 23:56:10 GMT  
-		Size: 25.7 KB (25709 bytes)  
+	-	`sha256:2ac037cc3d39d9bd7b1c9d587d55cedef610ddbc5ce69d2a63e1f020bc72a787`  
+		Last Modified: Wed, 03 Jul 2024 02:41:28 GMT  
+		Size: 25.7 KB (25708 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:jdk11-jammy` - linux; arm64 variant v8
@@ -21021,28 +21021,28 @@ $ docker pull groovy@sha256:e71f7bf579dcc7f0bda6ace219b6d571328dccae0a59184cd547
 ### `groovy:jdk11-jammy` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:c3c390eb009bb96b1485ca1724fb3a6ba962510c0393fc504358ffeffa0a9189
+$ docker pull groovy@sha256:f1e6b1db78275f243bf3f42478ff5a756b8858195cfb66c0f4b93c510f218965
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **216.5 MB (216491066 bytes)**  
+-	Total Size: **216.1 MB (216079768 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:feac2439f6706fb174f2c6ff526bc7bc1af2b0d9bb668ff1160b3e0bfd8cc4b4`
+-	Image ID: `sha256:86e89a445adbf09572a0513eccfa4dc7e355f5b5d7ac211bfad8fc26cd8408ad`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -21087,68 +21087,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b82f84268a93862af92928dd1cc1dc31937bbffd50302e61f899397e5223399d`  
-		Last Modified: Wed, 05 Jun 2024 04:00:20 GMT  
-		Size: 13.8 MB (13766991 bytes)  
+	-	`sha256:4aea30364eff82eb5379f35c10575a54ece802a6af1763591c0a6a999d72c84c`  
+		Last Modified: Tue, 02 Jul 2024 05:04:14 GMT  
+		Size: 13.7 MB (13714876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40ab8ce3a4fcaeb41752f1fe6f96527d85961ebc21e210ec8b27f5cb4c68fa70`  
-		Last Modified: Wed, 05 Jun 2024 04:01:39 GMT  
-		Size: 132.7 MB (132718863 bytes)  
+	-	`sha256:9e3c3db8c3ce267302ab33698998e2969d08346da85f3c69446c98910f01e534`  
+		Last Modified: Tue, 02 Jul 2024 05:04:57 GMT  
+		Size: 132.7 MB (132718876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24b4e95798e15aea98fc366c58314c56c188e0316139bbcdaceed59a01cfadf6`  
-		Last Modified: Wed, 05 Jun 2024 04:01:26 GMT  
-		Size: 176.0 B  
+	-	`sha256:b2731f957d26e7380c16b0db866ae857ccea882ea104b9cadde90f6da05365bc`  
+		Last Modified: Tue, 02 Jul 2024 05:04:45 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf14d7106fd55e9cc3409e1c64c4aa3206131adb17d0f6f0e62227e2e2732070`  
-		Last Modified: Wed, 05 Jun 2024 04:01:26 GMT  
+	-	`sha256:34895e55ab2f8114aef706c3814ecaad2fb5146d3efb7b13533c5383c9527eb3`  
+		Last Modified: Tue, 02 Jul 2024 05:04:45 GMT  
 		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09d18e613e0ffc663afed300db99b3436783fa874590704d5b6fd6ca5169b0e4`  
-		Last Modified: Mon, 01 Jul 2024 23:56:19 GMT  
-		Size: 4.3 KB (4332 bytes)  
+	-	`sha256:8a79b3e2a40649e94bf270662488e17c6dffacfa001b53ab0ccfd12b870f371c`  
+		Last Modified: Wed, 03 Jul 2024 01:56:59 GMT  
+		Size: 4.3 KB (4335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb132cd3cffb7610907dc97c2cd4a9aa3bc0b9b571f115ea2c0e3c6558b65fb8`  
-		Last Modified: Mon, 01 Jul 2024 23:56:20 GMT  
-		Size: 4.6 MB (4559506 bytes)  
+	-	`sha256:65027438984676b3393eb393c639f5c9d11ecf095e4b832ce2cb33c1d4641b9f`  
+		Last Modified: Wed, 03 Jul 2024 01:57:00 GMT  
+		Size: 4.2 MB (4200322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42458ddfb4b0a3512da9e0d2dc9df283274d158bdc92f8139d7ed34e25847e00`  
-		Last Modified: Mon, 01 Jul 2024 23:56:21 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:6dce60ca3f12526f9c327dd5c81aad6b7c96c2e2fc08230d8b00ca60af68ff0b`  
+		Last Modified: Wed, 03 Jul 2024 01:57:01 GMT  
+		Size: 29.9 MB (29851962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df928c76abd344969eb21a2fafd95ca9fb6e15415d1d3a82549a3b5718cf257f`  
-		Last Modified: Mon, 01 Jul 2024 23:56:20 GMT  
+	-	`sha256:cf7b575fbd064b0613b3e0770ff487bbb84d4443c99d896f9c5fe5a7ecc92b67`  
+		Last Modified: Wed, 03 Jul 2024 01:56:59 GMT  
 		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jdk11-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:45c267892df446dd7d9b6046a186c537f61865cc68f9d2a659538698569eda9e
+$ docker pull groovy@sha256:e06df4221cc87a81bfaee5e9d0391d97cd4bc19793350a3d0ee31b81adf44ca5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.7 MB (3698816 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2578218355a2e744bc0b6d3583b1a2b408b96f4a2ac6514da9cd168ba8664c5d`
+-	Image ID: `sha256:54198f1e6bc2109de2c10ae724390564c6e7dd42c06b020de5d0ca3585f44023`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:169219fb679975fa87afd251a449909b7ab59a0969ec8dccbe187b975d8cf681`  
-		Last Modified: Mon, 01 Jul 2024 23:56:20 GMT  
+	-	`sha256:7c3d50e629c15ff35788c9521ae6525e04016f186120d5cc34c169130e9f9266`  
+		Last Modified: Wed, 03 Jul 2024 01:57:00 GMT  
 		Size: 3.7 MB (3673176 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7e284272afee0636e708b83c34a12c0967233008e69383f0cd3c89a78ff1dddb`  
-		Last Modified: Mon, 01 Jul 2024 23:56:19 GMT  
+	-	`sha256:41a095739b250ca0eb86e41f364209b04c78c7cb7fb8b40d075994b298ff3a4b`  
+		Last Modified: Wed, 03 Jul 2024 01:56:59 GMT  
 		Size: 25.6 KB (25640 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21289,7 +21289,7 @@ $ docker pull groovy@sha256:f0e8356ae0b55f682e9121b1592e582ef4fc42c87bb4026d1572
 ## `groovy:jdk17`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21442,28 +21442,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:jdk17` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -21508,69 +21508,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jdk17` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:jdk17` - linux; arm64 variant v8
@@ -21710,28 +21710,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:jdk17` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -21776,68 +21776,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jdk17` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -22109,7 +22109,7 @@ $ docker pull groovy@sha256:2f47bbde1bcda1fd0e00ef2f8f8b029849cca8c04caa2af7a8ba
 ## `groovy:jdk17-jammy`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22262,28 +22262,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:jdk17-jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -22328,69 +22328,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jdk17-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:jdk17-jammy` - linux; arm64 variant v8
@@ -22530,28 +22530,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:jdk17-jammy` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -22596,68 +22596,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jdk17-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -23613,7 +23613,7 @@ $ docker pull groovy@sha256:daff42efd1818b1a39e6647e569d6fc08505b9b901f16a4e499a
 ## `groovy:jdk8`
 
 ```console
-$ docker pull groovy@sha256:047c993a770b7b3c08385c52a95bf9e682161703a9fc07498e588ac2a9b4f98a
+$ docker pull groovy@sha256:33e753b07ba5cbea160b49243022ca20a3fc57227bfa1754ed3f71e153f79624
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23762,28 +23762,28 @@ $ docker pull groovy@sha256:1f811aaf8f9030486db33c1df3fd5b6ec7c43c6cca4deb2c0371
 ### `groovy:jdk8` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:6fda91c419c47bc010332f3f18b1abfdb310f048b65f4cfc7e1c96c1378ba8e3
+$ docker pull groovy@sha256:439082c6940e9bddd0e2077000f061b853bdb005b233029558c063a8a0a8a490
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **173.0 MB (173029232 bytes)**  
+-	Total Size: **172.7 MB (172721472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6404ab3df9bc33210338dcc96c94d5f917c6b6f1297aa7d13eb489364bbaba3`
+-	Image ID: `sha256:9cc4930f2c4c60659321f9aa06d8237c8230256f128946e9bc93ad8a4d563723`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -23826,69 +23826,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d2e7d8e2026f154f12e834d8b72426c2f71c8a555d373336fddba91616868b7`  
-		Last Modified: Wed, 05 Jun 2024 03:59:49 GMT  
-		Size: 12.5 MB (12493203 bytes)  
+	-	`sha256:7c3600b7820ccdab844af0b11c36a1aeadc460c5a3bc6a6fd0211a3fa9024fb1`  
+		Last Modified: Tue, 02 Jul 2024 04:32:24 GMT  
+		Size: 12.5 MB (12462968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95298bffd1c0ebd593eeb6754e0f5e5ba9ca25454af388f78cd657152f59cd01`  
-		Last Modified: Wed, 05 Jun 2024 03:59:55 GMT  
-		Size: 99.2 MB (99228750 bytes)  
+	-	`sha256:ab96ab5089efb8387a3b08075cfe11b114399a6489afd8cb83ceddc16d6798ac`  
+		Last Modified: Tue, 02 Jul 2024 04:32:31 GMT  
+		Size: 99.2 MB (99228023 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d783cd2973ac4c20fae7efd4d2e605cff4de71ba08f4110510a1e7d7dc0239b5`  
-		Last Modified: Wed, 05 Jun 2024 03:59:46 GMT  
+	-	`sha256:af866480c7ff18491aba2f2ebea87553ba5c884826ec3578d09af689bd4ffe4c`  
+		Last Modified: Tue, 02 Jul 2024 04:32:22 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:160d32d80ad9bff0aadc9f16c0712d2e20cc58ddf491fba50571fccb3d0d77f9`  
-		Last Modified: Wed, 05 Jun 2024 03:59:46 GMT  
-		Size: 734.0 B  
+	-	`sha256:18de864e1d2126d8d641940b568e4a4e05973ffeeef968d7f99a2e2ca4057517`  
+		Last Modified: Tue, 02 Jul 2024 04:32:22 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f6ff6b045ee9fe87bc79e628b0378fa7497d14a0ba7ac7f39e92ef4c80b189e`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 4.3 KB (4317 bytes)  
+	-	`sha256:8afbaba44bf4d76f9744829cfc5ed17bbe7753d6f4ad9b5edb948bc53842ca98`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
+		Size: 4.3 KB (4315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e88404a9d19795b7597a2653c52389f876fa53f3ec9cdcb15375c8e30e51ddff`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 3.9 MB (3915090 bytes)  
+	-	`sha256:d25dfa755fa357ce135b6e6f242a1128720be01913650ccefe3d3eafe6a2045c`  
+		Last Modified: Wed, 03 Jul 2024 02:40:42 GMT  
+		Size: 3.6 MB (3639177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a884372d5cac8b6fcf3ecfe7d57650b01bf22329d0f666e663ac600608396a1d`  
-		Last Modified: Mon, 01 Jul 2024 23:55:21 GMT  
-		Size: 29.9 MB (29851952 bytes)  
+	-	`sha256:3e32b05233d72ed5f04d9391b056c628fe0e7717596148b040ba81e0bc27a0d3`  
+		Last Modified: Wed, 03 Jul 2024 02:40:43 GMT  
+		Size: 29.9 MB (29851949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f8cbfb7d554d8b96fbac34f556442118f8d77459e0559ed04d4251cf78d0cd9`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 139.0 B  
+	-	`sha256:86a35f1d7458173d37cbd0459012462d06ec1c38b1ea5ee38f40d578acca0fe7`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jdk8` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:daf6eaa06bde9c9bd0bc6440cc4880b5ff3b9daee1e5a2c89c4f29e426458007
+$ docker pull groovy@sha256:3fb6361cf541d019aee467d25e1e497720f1875f9519f33bc738a5608b45c34d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3719009 bytes)**  
+-	Total Size: **3.7 MB (3719008 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:deb64ad64435e56fc0ee01b5a364d0ed2c4b9bc8d0cd5df4604cb49853c02185`
+-	Image ID: `sha256:5b157bb75db904315f62528c45eaa5405173b742ff3da5fd895ea873e1c094a1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bee767df638cca4f0bd69f41b2d09ac4efefa6307778c1b320b227f018edc58e`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
+	-	`sha256:e9d7c62711b8f8a972eab5c89ddb8e983716ca8d921ad824e4e60fa36c4951d2`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
 		Size: 3.7 MB (3693998 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8fccdc8855bbe7610cae766f564b6a4349cdad325e6b68ca833d09104cf09cec`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 25.0 KB (25011 bytes)  
+	-	`sha256:491ab3a2ad92444f64b22230d9b585e224ee7601259f4d83067d6823a5653ba5`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
+		Size: 25.0 KB (25010 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:jdk8` - linux; arm64 variant v8
@@ -24026,28 +24026,28 @@ $ docker pull groovy@sha256:4012cc0481c93c7092a4d14834ad60736892e375ae9f92ae11b4
 ### `groovy:jdk8` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:4719a676dff0aecd1794a291fb06eb14661d57103cf31a54d5e3dcb504d3eef2
+$ docker pull groovy@sha256:2fe2ff0fb009dc81fd1161fccc2339225b3700d06fa3021a6b1d8f75bc39d546
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.8 MB (184841917 bytes)**  
+-	Total Size: **184.4 MB (184431009 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9fe886bd7080a1858a2d63097d8a03c4c5a0fcd8cfa696bfdc2894aa183a1f3`
+-	Image ID: `sha256:bb6b396dce8180f4e5bf05e25beab396f1b9631d7699de5fc40489f3bb1c6316`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -24090,75 +24090,75 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b82f84268a93862af92928dd1cc1dc31937bbffd50302e61f899397e5223399d`  
-		Last Modified: Wed, 05 Jun 2024 04:00:20 GMT  
-		Size: 13.8 MB (13766991 bytes)  
+	-	`sha256:4aea30364eff82eb5379f35c10575a54ece802a6af1763591c0a6a999d72c84c`  
+		Last Modified: Tue, 02 Jul 2024 05:04:14 GMT  
+		Size: 13.7 MB (13714876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b96f8afb54eaa4d0d1271da3f9226622e5393ff92e4b765aec30aa1fcaca113a`  
-		Last Modified: Wed, 05 Jun 2024 04:00:24 GMT  
-		Size: 101.1 MB (101071129 bytes)  
+	-	`sha256:5e381362c15b6f2494c8dc0d6a49beef7efc7bbf6ef1d3525b485ba3969369d6`  
+		Last Modified: Tue, 02 Jul 2024 05:04:20 GMT  
+		Size: 101.1 MB (101071152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59900ccb04bc654c9922cbd79216a4488310d9308aea4ecffd1d72e4eddee950`  
-		Last Modified: Wed, 05 Jun 2024 04:00:15 GMT  
+	-	`sha256:9b4281d6414726ffc097764a21c03524fe8ed573c02d19bd3c56d0826936af97`  
+		Last Modified: Tue, 02 Jul 2024 05:04:10 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc837f7bedc9361e014f8f1c0bd2abf18e18798493eeee096794e977342e60d7`  
-		Last Modified: Wed, 05 Jun 2024 04:00:15 GMT  
+	-	`sha256:ee11783fbc96e3c2e66f3c1814d9e8373cf19165f9c928ff6cbb681bb165bc69`  
+		Last Modified: Tue, 02 Jul 2024 05:04:10 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33a32b866dbcceb3ca7a7793f59b8e6e521abc7648e740e5055f759138e44285`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
-		Size: 4.3 KB (4338 bytes)  
+	-	`sha256:a66b8a51b6daaca0c8b1cfa6820f332fdb1211d8d593d93d5913743fc9b35073`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
+		Size: 4.3 KB (4329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd234369889c8e9bb193eed85179850365252ea6d4df0e4560f9bca3734f3b7d`  
-		Last Modified: Mon, 01 Jul 2024 23:55:29 GMT  
-		Size: 4.6 MB (4558147 bytes)  
+	-	`sha256:b47b212ba6db540082ae7d3ae4c0125725dd864842670e3565260495c8a56b09`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
+		Size: 4.2 MB (4199348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04e9c53fa6f4024da1af2779c3ed6b63910dd3d82de474f405f58c6a8d931ff1`  
-		Last Modified: Mon, 01 Jul 2024 23:55:29 GMT  
-		Size: 29.9 MB (29851950 bytes)  
+	-	`sha256:8f3506bd6d57158e663b770eb650f3140c231a0503be01e2929d546c81d7a743`  
+		Last Modified: Wed, 03 Jul 2024 01:56:07 GMT  
+		Size: 29.9 MB (29851951 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9babbac3d8795e283d89e87d27969a901f6aaf838ed3e3f7ddf802c775741320`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
-		Size: 137.0 B  
+	-	`sha256:087722e3e035fccaec73e8cc8b896f404246cbf740bb4194f921b0b59aca010c`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jdk8` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:4eb043290dd724c22839b470d29aaefc883805f840facfc8370832264e1317b3
+$ docker pull groovy@sha256:efa87448931b64edc3abfe93367fd03f54619bf935a6834af854ef5fa593e1b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.7 MB (3719643 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a3164c61c65e947511afd2fa60e0e242e4aff72fae308e32be170f6d9fd2e45d`
+-	Image ID: `sha256:0b8acbb6c65398c3aa1c43ae71d4cf274891482fc46ab21f25d747eabbc5d0fa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b8db97371945247c13fc425d1f38b646225e199018453f01694870fc5445330d`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
+	-	`sha256:84bdc76ddf93da8ad2943bdbc97e40c9821e325952abbaa098a8dacf49a14ed2`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
 		Size: 3.7 MB (3694695 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:892bb4b1da19e451bd27b465c8ef195dfe4bf4447f7e52a51b24fd34d7cc3b51`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
+	-	`sha256:58cb65626a5625609ec7caaa3f39f88b1c308ade0b0da55e266d7c1837df8d52`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
 		Size: 24.9 KB (24948 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `groovy:jdk8-jammy`
 
 ```console
-$ docker pull groovy@sha256:047c993a770b7b3c08385c52a95bf9e682161703a9fc07498e588ac2a9b4f98a
+$ docker pull groovy@sha256:33e753b07ba5cbea160b49243022ca20a3fc57227bfa1754ed3f71e153f79624
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24307,28 +24307,28 @@ $ docker pull groovy@sha256:1f811aaf8f9030486db33c1df3fd5b6ec7c43c6cca4deb2c0371
 ### `groovy:jdk8-jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:6fda91c419c47bc010332f3f18b1abfdb310f048b65f4cfc7e1c96c1378ba8e3
+$ docker pull groovy@sha256:439082c6940e9bddd0e2077000f061b853bdb005b233029558c063a8a0a8a490
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **173.0 MB (173029232 bytes)**  
+-	Total Size: **172.7 MB (172721472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6404ab3df9bc33210338dcc96c94d5f917c6b6f1297aa7d13eb489364bbaba3`
+-	Image ID: `sha256:9cc4930f2c4c60659321f9aa06d8237c8230256f128946e9bc93ad8a4d563723`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -24371,69 +24371,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d2e7d8e2026f154f12e834d8b72426c2f71c8a555d373336fddba91616868b7`  
-		Last Modified: Wed, 05 Jun 2024 03:59:49 GMT  
-		Size: 12.5 MB (12493203 bytes)  
+	-	`sha256:7c3600b7820ccdab844af0b11c36a1aeadc460c5a3bc6a6fd0211a3fa9024fb1`  
+		Last Modified: Tue, 02 Jul 2024 04:32:24 GMT  
+		Size: 12.5 MB (12462968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95298bffd1c0ebd593eeb6754e0f5e5ba9ca25454af388f78cd657152f59cd01`  
-		Last Modified: Wed, 05 Jun 2024 03:59:55 GMT  
-		Size: 99.2 MB (99228750 bytes)  
+	-	`sha256:ab96ab5089efb8387a3b08075cfe11b114399a6489afd8cb83ceddc16d6798ac`  
+		Last Modified: Tue, 02 Jul 2024 04:32:31 GMT  
+		Size: 99.2 MB (99228023 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d783cd2973ac4c20fae7efd4d2e605cff4de71ba08f4110510a1e7d7dc0239b5`  
-		Last Modified: Wed, 05 Jun 2024 03:59:46 GMT  
+	-	`sha256:af866480c7ff18491aba2f2ebea87553ba5c884826ec3578d09af689bd4ffe4c`  
+		Last Modified: Tue, 02 Jul 2024 04:32:22 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:160d32d80ad9bff0aadc9f16c0712d2e20cc58ddf491fba50571fccb3d0d77f9`  
-		Last Modified: Wed, 05 Jun 2024 03:59:46 GMT  
-		Size: 734.0 B  
+	-	`sha256:18de864e1d2126d8d641940b568e4a4e05973ffeeef968d7f99a2e2ca4057517`  
+		Last Modified: Tue, 02 Jul 2024 04:32:22 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f6ff6b045ee9fe87bc79e628b0378fa7497d14a0ba7ac7f39e92ef4c80b189e`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 4.3 KB (4317 bytes)  
+	-	`sha256:8afbaba44bf4d76f9744829cfc5ed17bbe7753d6f4ad9b5edb948bc53842ca98`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
+		Size: 4.3 KB (4315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e88404a9d19795b7597a2653c52389f876fa53f3ec9cdcb15375c8e30e51ddff`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 3.9 MB (3915090 bytes)  
+	-	`sha256:d25dfa755fa357ce135b6e6f242a1128720be01913650ccefe3d3eafe6a2045c`  
+		Last Modified: Wed, 03 Jul 2024 02:40:42 GMT  
+		Size: 3.6 MB (3639177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a884372d5cac8b6fcf3ecfe7d57650b01bf22329d0f666e663ac600608396a1d`  
-		Last Modified: Mon, 01 Jul 2024 23:55:21 GMT  
-		Size: 29.9 MB (29851952 bytes)  
+	-	`sha256:3e32b05233d72ed5f04d9391b056c628fe0e7717596148b040ba81e0bc27a0d3`  
+		Last Modified: Wed, 03 Jul 2024 02:40:43 GMT  
+		Size: 29.9 MB (29851949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f8cbfb7d554d8b96fbac34f556442118f8d77459e0559ed04d4251cf78d0cd9`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 139.0 B  
+	-	`sha256:86a35f1d7458173d37cbd0459012462d06ec1c38b1ea5ee38f40d578acca0fe7`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jdk8-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:daf6eaa06bde9c9bd0bc6440cc4880b5ff3b9daee1e5a2c89c4f29e426458007
+$ docker pull groovy@sha256:3fb6361cf541d019aee467d25e1e497720f1875f9519f33bc738a5608b45c34d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3719009 bytes)**  
+-	Total Size: **3.7 MB (3719008 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:deb64ad64435e56fc0ee01b5a364d0ed2c4b9bc8d0cd5df4604cb49853c02185`
+-	Image ID: `sha256:5b157bb75db904315f62528c45eaa5405173b742ff3da5fd895ea873e1c094a1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bee767df638cca4f0bd69f41b2d09ac4efefa6307778c1b320b227f018edc58e`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
+	-	`sha256:e9d7c62711b8f8a972eab5c89ddb8e983716ca8d921ad824e4e60fa36c4951d2`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
 		Size: 3.7 MB (3693998 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8fccdc8855bbe7610cae766f564b6a4349cdad325e6b68ca833d09104cf09cec`  
-		Last Modified: Mon, 01 Jul 2024 23:55:20 GMT  
-		Size: 25.0 KB (25011 bytes)  
+	-	`sha256:491ab3a2ad92444f64b22230d9b585e224ee7601259f4d83067d6823a5653ba5`  
+		Last Modified: Wed, 03 Jul 2024 02:40:41 GMT  
+		Size: 25.0 KB (25010 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:jdk8-jammy` - linux; arm64 variant v8
@@ -24571,28 +24571,28 @@ $ docker pull groovy@sha256:4012cc0481c93c7092a4d14834ad60736892e375ae9f92ae11b4
 ### `groovy:jdk8-jammy` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:4719a676dff0aecd1794a291fb06eb14661d57103cf31a54d5e3dcb504d3eef2
+$ docker pull groovy@sha256:2fe2ff0fb009dc81fd1161fccc2339225b3700d06fa3021a6b1d8f75bc39d546
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.8 MB (184841917 bytes)**  
+-	Total Size: **184.4 MB (184431009 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9fe886bd7080a1858a2d63097d8a03c4c5a0fcd8cfa696bfdc2894aa183a1f3`
+-	Image ID: `sha256:bb6b396dce8180f4e5bf05e25beab396f1b9631d7699de5fc40489f3bb1c6316`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -24635,75 +24635,75 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b82f84268a93862af92928dd1cc1dc31937bbffd50302e61f899397e5223399d`  
-		Last Modified: Wed, 05 Jun 2024 04:00:20 GMT  
-		Size: 13.8 MB (13766991 bytes)  
+	-	`sha256:4aea30364eff82eb5379f35c10575a54ece802a6af1763591c0a6a999d72c84c`  
+		Last Modified: Tue, 02 Jul 2024 05:04:14 GMT  
+		Size: 13.7 MB (13714876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b96f8afb54eaa4d0d1271da3f9226622e5393ff92e4b765aec30aa1fcaca113a`  
-		Last Modified: Wed, 05 Jun 2024 04:00:24 GMT  
-		Size: 101.1 MB (101071129 bytes)  
+	-	`sha256:5e381362c15b6f2494c8dc0d6a49beef7efc7bbf6ef1d3525b485ba3969369d6`  
+		Last Modified: Tue, 02 Jul 2024 05:04:20 GMT  
+		Size: 101.1 MB (101071152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59900ccb04bc654c9922cbd79216a4488310d9308aea4ecffd1d72e4eddee950`  
-		Last Modified: Wed, 05 Jun 2024 04:00:15 GMT  
+	-	`sha256:9b4281d6414726ffc097764a21c03524fe8ed573c02d19bd3c56d0826936af97`  
+		Last Modified: Tue, 02 Jul 2024 05:04:10 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc837f7bedc9361e014f8f1c0bd2abf18e18798493eeee096794e977342e60d7`  
-		Last Modified: Wed, 05 Jun 2024 04:00:15 GMT  
+	-	`sha256:ee11783fbc96e3c2e66f3c1814d9e8373cf19165f9c928ff6cbb681bb165bc69`  
+		Last Modified: Tue, 02 Jul 2024 05:04:10 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33a32b866dbcceb3ca7a7793f59b8e6e521abc7648e740e5055f759138e44285`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
-		Size: 4.3 KB (4338 bytes)  
+	-	`sha256:a66b8a51b6daaca0c8b1cfa6820f332fdb1211d8d593d93d5913743fc9b35073`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
+		Size: 4.3 KB (4329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd234369889c8e9bb193eed85179850365252ea6d4df0e4560f9bca3734f3b7d`  
-		Last Modified: Mon, 01 Jul 2024 23:55:29 GMT  
-		Size: 4.6 MB (4558147 bytes)  
+	-	`sha256:b47b212ba6db540082ae7d3ae4c0125725dd864842670e3565260495c8a56b09`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
+		Size: 4.2 MB (4199348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04e9c53fa6f4024da1af2779c3ed6b63910dd3d82de474f405f58c6a8d931ff1`  
-		Last Modified: Mon, 01 Jul 2024 23:55:29 GMT  
-		Size: 29.9 MB (29851950 bytes)  
+	-	`sha256:8f3506bd6d57158e663b770eb650f3140c231a0503be01e2929d546c81d7a743`  
+		Last Modified: Wed, 03 Jul 2024 01:56:07 GMT  
+		Size: 29.9 MB (29851951 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9babbac3d8795e283d89e87d27969a901f6aaf838ed3e3f7ddf802c775741320`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
-		Size: 137.0 B  
+	-	`sha256:087722e3e035fccaec73e8cc8b896f404246cbf740bb4194f921b0b59aca010c`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jdk8-jammy` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:4eb043290dd724c22839b470d29aaefc883805f840facfc8370832264e1317b3
+$ docker pull groovy@sha256:efa87448931b64edc3abfe93367fd03f54619bf935a6834af854ef5fa593e1b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.7 MB (3719643 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a3164c61c65e947511afd2fa60e0e242e4aff72fae308e32be170f6d9fd2e45d`
+-	Image ID: `sha256:0b8acbb6c65398c3aa1c43ae71d4cf274891482fc46ab21f25d747eabbc5d0fa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b8db97371945247c13fc425d1f38b646225e199018453f01694870fc5445330d`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
+	-	`sha256:84bdc76ddf93da8ad2943bdbc97e40c9821e325952abbaa098a8dacf49a14ed2`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
 		Size: 3.7 MB (3694695 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:892bb4b1da19e451bd27b465c8ef195dfe4bf4447f7e52a51b24fd34d7cc3b51`  
-		Last Modified: Mon, 01 Jul 2024 23:55:28 GMT  
+	-	`sha256:58cb65626a5625609ec7caaa3f39f88b1c308ade0b0da55e266d7c1837df8d52`  
+		Last Modified: Wed, 03 Jul 2024 01:56:06 GMT  
 		Size: 24.9 KB (24948 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `groovy:latest`
 
 ```console
-$ docker pull groovy@sha256:1ac86b53573af987dbfec81683a54ed2a95ddaf03fb3fec3bbefb6cde13e914c
+$ docker pull groovy@sha256:69c3c41fe8b854c256d0316c45f1367d2b62368da97826238166f3d76f188428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24856,28 +24856,28 @@ $ docker pull groovy@sha256:f44464ed24fbb528a35cf6010f69a173af5d0bbc36ffc07bd492
 ### `groovy:latest` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:61432d28acd8395360c295cf21bf541b367c729a9cc29de7d96557c369698824
+$ docker pull groovy@sha256:83f39ecea778c93b3706f98510f7a3134be036571eb2d6702bb2cc6871600201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.5 MB (221477642 bytes)**  
+-	Total Size: **221.2 MB (221178560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884245399d2b4f9c8ab25454285df3c1f55a290777930018c38b4dd6844981e4`
+-	Image ID: `sha256:b16bbcc6ce594718e94c213ecf610a8f4728174069e5a68ba95f63f8994892c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:36:14 GMT
+# Thu, 27 Jun 2024 19:33:13 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:36:23 GMT
-ADD file:76d606bb5f897ff3ffe149c5d3d049c7ace15da77a61a7df4e558eceebd8d2bd in / 
-# Mon, 03 Jun 2024 10:36:24 GMT
+# Thu, 27 Jun 2024 19:33:16 GMT
+ADD file:967120bb21c0fbaf9bf6c8fcb7b292d31ec4812e538714e8beb0a6e013eae873 in / 
+# Thu, 27 Jun 2024 19:33:16 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -24922,69 +24922,69 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:bb2b4ba5ac52e5e8a83a1f8dc3c79ed1f5409e3bc349a8c36b2cd4b9d3f6cb23`  
-		Last Modified: Tue, 04 Jun 2024 01:38:51 GMT  
-		Size: 27.5 MB (27534888 bytes)  
+	-	`sha256:e180e7b68e21ed1490bb8293a3e848136812456d07f1be0783ef04f773a97867`  
+		Last Modified: Fri, 28 Jun 2024 02:10:28 GMT  
+		Size: 27.5 MB (27534011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8437ec41aa58662737f55f9b8113ffbf0970e08792586413197c289856ed6a7f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:13 GMT  
-		Size: 17.6 MB (17589786 bytes)  
+	-	`sha256:777e98b510d7a1f36fb542679eb732eb399a183bb5a8369603edbd9536408058`  
+		Last Modified: Tue, 02 Jul 2024 04:34:04 GMT  
+		Size: 17.6 MB (17566124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febc86426ce602e96ae4f75e9fc39481018a326db48c70308966865f7cdeb60d`  
-		Last Modified: Wed, 05 Jun 2024 04:02:23 GMT  
-		Size: 142.6 MB (142578037 bytes)  
+	-	`sha256:51070068a9bfac3d24246e89511d118c9f55e0bead50c6f1c072430f9b70f57e`  
+		Last Modified: Tue, 02 Jul 2024 04:34:14 GMT  
+		Size: 142.6 MB (142578061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbdfd9f96c9b22fa29e9eb1146207896d2f3fdb79bebe2e6b8f480007be6f51`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:2dc1079469376b53fef1edca16d304ee0b5c98ff429c0695c0669a729a4b317b`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fdbb24f25556c5784811f4921bd9e9b5e655af9e63d60014bcc781454f773f`  
-		Last Modified: Wed, 05 Jun 2024 04:02:10 GMT  
-		Size: 733.0 B  
+	-	`sha256:051f223486bb03134f3fcf7de029b06e9ce5dca21838063eed2e8a5d823da8d0`  
+		Last Modified: Tue, 02 Jul 2024 04:34:01 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41e65b054878617534b381a298e9cd354425eddb65e5ced8323a59b649a5ebef`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:25998aa9c681876e43ec18f5f468451787489089ace107ea236a67696444704a`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4028e18a53bf8bfa70e2d4b1cc5657c7c0f1c295144c5d408d93cc5c197e457a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
-		Size: 3.9 MB (3917583 bytes)  
+	-	`sha256:9a03973643a74a552cababa308f422a59063763beed059099fdf20f4d996ee02`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 3.6 MB (3643009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ea9f313b48cee459931c4a2c4b953d1793aafe467b57f0edc7e0e7efad1c269`  
-		Last Modified: Mon, 01 Jul 2024 23:57:03 GMT  
-		Size: 29.9 MB (29851948 bytes)  
+	-	`sha256:85eb80f028f78aafe8129e5769ba219742d883b7744434a96d35ec6d33aa51b4`  
+		Last Modified: Wed, 03 Jul 2024 02:42:16 GMT  
+		Size: 29.9 MB (29851959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43e0029e9533e334ec512d44f6f33456daa1e43f1476107f0bb9062e655c5bc4`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 138.0 B  
+	-	`sha256:5e04186e4209b441a5b6b1b8faa6f899f2956c6dc2e7feb747f4b6dc1cdbed30`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:latest` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:11c1d3269fc51fa18a8ef11c897232ee3b2d4495407f200c539463371f2db1aa
+$ docker pull groovy@sha256:83e06bfa0cf74fb9d519fc4d3d49d575f0e6578e2c1d950cc9358d9313884071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3778696 bytes)**  
+-	Total Size: **3.8 MB (3778695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bd24d4815f6ab784dce6631ef246c0cb437210d83527cb48c4f272a0f971853`
+-	Image ID: `sha256:eda661268a407867f2d37d78f46125e9c471849d488dc739864879ca7cbf1e12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44561afb6f7319c2422fe3b4f04da0c4a7bbe20bdf956ef87d767d771fc531d8`  
-		Last Modified: Mon, 01 Jul 2024 23:57:02 GMT  
+	-	`sha256:a1698f7f697c872c19d464ef0e5bb22aa2dd794db2601b274c84a2568713f844`  
+		Last Modified: Wed, 03 Jul 2024 02:42:15 GMT  
 		Size: 3.7 MB (3748658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7643866694885ec1ec81415e04037ec39d1bbc5cf058b3f913c3cd330f46d11`  
-		Last Modified: Mon, 01 Jul 2024 23:57:01 GMT  
-		Size: 30.0 KB (30038 bytes)  
+	-	`sha256:13cac53db11b148805586047f6205e3caae059d3ec1f231a45cdca0f2fa92d5f`  
+		Last Modified: Wed, 03 Jul 2024 02:42:14 GMT  
+		Size: 30.0 KB (30037 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:latest` - linux; arm64 variant v8
@@ -25124,28 +25124,28 @@ $ docker pull groovy@sha256:3b5a2bfecbd2e1e04e6eb8b572a030fe30a773843891e06f617f
 ### `groovy:latest` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:2dabe8d882aecb55ab5d6f0ab6a65c893be50b4d392d7b7eaf4bf96ccd4b9c6d
+$ docker pull groovy@sha256:3f38b030adcd9e56f58e6e50381ca7208e838059996eeb5adc3a9dc787f919d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.5 MB (233523185 bytes)**  
+-	Total Size: **233.1 MB (233119795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4577404891892212c672b7186d7f33fcaff7814909b8278b8eac6f4dc39be4f`
+-	Image ID: `sha256:bd70c7c3e07d008f987a061ae04a48ec557b8ef310de67144f1e381160792a9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 10:34:18 GMT
+# Thu, 27 Jun 2024 19:22:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 03 Jun 2024 10:34:22 GMT
-ADD file:a220ef67c41f76acc5934568443ce6faeaeba3de0ab529ab7b3b3172122c9adb in / 
-# Mon, 03 Jun 2024 10:34:22 GMT
+# Thu, 27 Jun 2024 19:23:03 GMT
+ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
+# Thu, 27 Jun 2024 19:23:03 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Apr 2024 20:51:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -25190,68 +25190,68 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:391f04f7f495cb5fc20be69876c8638cb8f316a2cddac5d48d77ca39244e6dea`  
-		Last Modified: Wed, 05 Jun 2024 03:48:14 GMT  
-		Size: 35.6 MB (35588332 bytes)  
+	-	`sha256:8abbcd57d9001f5aade9e7c1c7cf47fea659efa1b67f1bf51c65e0f66569df0d`  
+		Last Modified: Tue, 02 Jul 2024 02:09:14 GMT  
+		Size: 35.6 MB (35588321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5071b706d3bd7ec8e211755f3aac7b7183e30aa4f50d72c97b830028c346d4af`  
-		Last Modified: Wed, 05 Jun 2024 04:02:49 GMT  
-		Size: 18.7 MB (18722020 bytes)  
+	-	`sha256:54d0f78e904f4544baf84ab4237b64acaee05f4a6bb2c1e1d728eb822c963ba2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:28 GMT  
+		Size: 18.7 MB (18676840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1658ce6a09dc3e1f29ff12cc424df525f941f95bac688d068775e36e344ab82e`  
-		Last Modified: Wed, 05 Jun 2024 04:02:58 GMT  
-		Size: 144.8 MB (144793374 bytes)  
+	-	`sha256:5278452e7cfa36942659a2980fa909daffcc53565f1b1d5470fd5c31ff0937bd`  
+		Last Modified: Tue, 02 Jul 2024 05:05:37 GMT  
+		Size: 144.8 MB (144794264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17b797f2971266e3c5addcb5ee4d0d01a5b4d633502c29950bb643775f7527c0`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 175.0 B  
+	-	`sha256:41886c976389a4513fc702094c3368f0b57868bcad04508ee39bf12119149cb2`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637066a03fba580770ae878d8129316e16f0697486dfa9741b5751b05e316576`  
-		Last Modified: Wed, 05 Jun 2024 04:02:44 GMT  
-		Size: 731.0 B  
+	-	`sha256:0f549d1e1c7d86a066c876e790bd674699b53769b71fca73039dac6fcc986c70`  
+		Last Modified: Tue, 02 Jul 2024 05:05:23 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3a33c2bcc6299eb5a2badbffbc8cfd9abeb47d406cc34073f532441a2554783`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
-		Size: 4.3 KB (4334 bytes)  
+	-	`sha256:6670aeb728084e8c7f7139d6e1735a40256e3f28046ca3d0067ee8d508b0899e`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.3 KB (4328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:190306186777c52075e1c9b6208c365df4016419cf3bf981500313ecb9db1384`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 4.6 MB (4562086 bytes)  
+	-	`sha256:ea48b15130784c0289ba92251dff1c4964116630b9671c03001145edeb788920`  
+		Last Modified: Wed, 03 Jul 2024 01:57:56 GMT  
+		Size: 4.2 MB (4202974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08b37b680be36ab26390350b4f2c9792e6aa650d8065168e8b338a3fde37c684`  
-		Last Modified: Mon, 01 Jul 2024 23:57:19 GMT  
-		Size: 29.9 MB (29851964 bytes)  
+	-	`sha256:f2a76f9a2428288e730d2c7bd17327f1c6f6836d01408f5ec60643d724cdab02`  
+		Last Modified: Wed, 03 Jul 2024 01:57:57 GMT  
+		Size: 29.9 MB (29851989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d84f05ccf56c1f45c1f0b762ca187b80644d7371f94d676818d3c4afaf2bd036`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
-		Size: 137.0 B  
+	-	`sha256:8a8f0099116d28f3f7429a0a1d374d1bfd006890dbbeb5fe26579fa91887a8d6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:latest` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:6a92ce675f7b6976d7d7414ff0ff5949e5aa1c76358db86b51b61b7132016a0c
+$ docker pull groovy@sha256:9b3b5db07c7692462d1dce2e59d19ede3ffe4554ead96dd19da551bab648ddea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3888397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df5041695924596afc37cbe3b561521a4f1317a4d035e49c717ae6853de60f85`
+-	Image ID: `sha256:2bf22fbde9d5f8184c3fea5b3c9dfa9d18024964d36fc59b30f78f7e10a7d9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9f18e3e9672b618920aa79c550c2860b5bb92d34adcd391e70208ad96fcca0a`  
-		Last Modified: Mon, 01 Jul 2024 23:57:18 GMT  
+	-	`sha256:594bcada5ed07e3a6698d640638a98ee436b8f1766e52e07de1326acfbb986a6`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 3.9 MB (3858455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f9f69ce3b1b59ada83be2aa55e3bf14c824594790e27aa3f47da24c69f96d997`  
-		Last Modified: Mon, 01 Jul 2024 23:57:17 GMT  
+	-	`sha256:0f5b13cdbc6e72e83bd6699cb701462bbd585a6ea904609d8f24feaea2b21381`  
+		Last Modified: Wed, 03 Jul 2024 01:57:55 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
