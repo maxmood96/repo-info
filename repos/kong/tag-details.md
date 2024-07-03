@@ -4,8 +4,10 @@
 
 -	[`kong:2`](#kong2)
 -	[`kong:2.8`](#kong28)
+-	[`kong:2.8-alpine`](#kong28-alpine)
 -	[`kong:2.8-ubuntu`](#kong28-ubuntu)
 -	[`kong:2.8.5`](#kong285)
+-	[`kong:2.8.5-alpine`](#kong285-alpine)
 -	[`kong:2.8.5-ubuntu`](#kong285-ubuntu)
 -	[`kong:3`](#kong3)
 -	[`kong:3.4`](#kong34)
@@ -255,6 +257,10 @@ $ docker pull kong@sha256:23a81e0836f93ae3f5a1cd252b4828386fcf5d7f6c83645a80923b
 		Size: 15.1 KB (15096 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `kong:2.8-alpine`
+
+**does not exist** (yet?)
+
 ## `kong:2.8-ubuntu`
 
 ```console
@@ -482,6 +488,10 @@ $ docker pull kong@sha256:23a81e0836f93ae3f5a1cd252b4828386fcf5d7f6c83645a80923b
 		Last Modified: Tue, 02 Jul 2024 03:04:09 GMT  
 		Size: 15.1 KB (15096 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `kong:2.8.5-alpine`
+
+**does not exist** (yet?)
 
 ## `kong:2.8.5-ubuntu`
 
