@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f6d3dd2de505d7752d3c1eaf46298e94753d3447a5423aacb66c4856862e20a8`
-- Created: `2024-06-13T03:38:37.261899054Z`
-- Virtual Size: ~ 250.28 Mb  
+- Image ID: `sha256:17b4a63db34258ca6af0f56fcd13e485f38764b0959c6119d1cbda4a1e920532`
+- Created: `2024-07-02T04:49:30.692715006Z`
+- Virtual Size: ~ 250.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh"]`
@@ -209,23 +209,29 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/audit/1:3.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/audit/1:3.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=11.1+deb11u9`
+### `dpkg` source package: `base-files=11.1+deb11u10`
 
 Binary Packages:
 
-- `base-files=11.1+deb11u9`
+- `base-files=11.1+deb11u10`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris base-files=11.1+deb11u10
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_11.1%2bdeb11u10.dsc' base-files_11.1+deb11u10.dsc 1114 SHA256:3fdaeb4de11924355688ce4c2ed18a51d5cb39ce6493caf0d49fd1e8fe129e9c
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_11.1%2bdeb11u10.tar.xz' base-files_11.1+deb11u10.tar.xz 65644 SHA256:6e997e7b2f862246227d505b9a5b9752afb4b5d80c5c2b2e74d8da04d5092d37
+```
 
-- http://snapshot.debian.org/package/base-files/11.1+deb11u9/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/base-files/11.1+deb11u10/ (for browsing the source)
+- https://sources.debian.net/src/base-files/11.1+deb11u10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/11.1+deb11u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.51`
 
@@ -872,11 +878,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.2.27-2+deb11u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.2.27-2+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.7.1-5+deb11u4`
+### `dpkg` source package: `gnutls28=3.7.1-5+deb11u5`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.7.1-5+deb11u4`
+- `libgnutls30:amd64=3.7.1-5+deb11u5`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -894,13 +900,21 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u5
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u5.dsc' gnutls28_3.7.1-5+deb11u5.dsc 3522 SHA256:2d36c3fefd269c3f92d6a1f6bbb752e6e9585410dc8bb834a723eaf693cb0082
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz' gnutls28_3.7.1.orig.tar.xz 6038388 SHA256:3777d7963eca5e06eb315686163b7b3f5045e2baac5e54e038ace9835e5cac6f
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz.asc' gnutls28_3.7.1.orig.tar.xz.asc 854 SHA256:13a683b12602c169a7ad7827ab0e3f35c8fa1f98675d0073cf7d54a8cd635582
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u5.debian.tar.xz' gnutls28_3.7.1-5+deb11u5.debian.tar.xz 100560 SHA256:b50f57600d68d03fe88f116db6a103647d4f361c7f1909c23ce75cf4454567ec
+```
 
-- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u5/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gpm=1.20.7-8`
 
@@ -2303,11 +2317,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/php7.4/7.4.33-1+deb11u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/php7.4/7.4.33-1+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-13=13.14-0+deb11u1`
+### `dpkg` source package: `postgresql-13=13.15-0+deb11u1`
 
 Binary Packages:
 
-- `libpq5:amd64=13.14-0+deb11u1`
+- `libpq5:amd64=13.15-0+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -2330,17 +2344,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-13=13.14-0+deb11u1
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.14-0%2bdeb11u1.dsc' postgresql-13_13.14-0+deb11u1.dsc 3703 SHA256:50ce2b604ada87ca68f2206d9968aa55dc4e5e4733daeee8734471c4a43bb860
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.14.orig.tar.bz2' postgresql-13_13.14.orig.tar.bz2 21584146 SHA256:b8df078551898960bd500dc5d38a177e9905376df81fe7f2b660a1407fa6a5ed
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.14-0%2bdeb11u1.debian.tar.xz' postgresql-13_13.14-0+deb11u1.debian.tar.xz 34724 SHA256:801200e90899fd6f9468f4c16f9cbc9fa56588e0f2cd751f953fb494f8589472
+$ apt-get source -qq --print-uris postgresql-13=13.15-0+deb11u1
+'http://deb.debian.org/debian/pool/main/p/postgresql-13/postgresql-13_13.15-0%2bdeb11u1.dsc' postgresql-13_13.15-0+deb11u1.dsc 3703 SHA256:246fc226d3fac56eff8da2569c1a9d70c705109429c83d6b73d88f27618e6f3d
+'http://deb.debian.org/debian/pool/main/p/postgresql-13/postgresql-13_13.15.orig.tar.bz2' postgresql-13_13.15.orig.tar.bz2 21597871 SHA256:42edd415446d33b8c242be76d1ad057531b2264b2e86939339b7075c6e4ec925
+'http://deb.debian.org/debian/pool/main/p/postgresql-13/postgresql-13_13.15-0%2bdeb11u1.debian.tar.xz' postgresql-13_13.15-0+deb11u1.debian.tar.xz 34748 SHA256:9f37ed66e054d96bdc4d41f602418e102585981f82ac17faae307cd97e036ee0
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-13/13.14-0+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-13/13.14-0+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-13/13.14-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-13/13.15-0+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-13/13.15-0+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-13/13.15-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.17-5`
 
@@ -2506,12 +2520,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sqlite3/3.34.1-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sqlite3/3.34.1-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=247.3-7+deb11u4`
+### `dpkg` source package: `systemd=247.3-7+deb11u5`
 
 Binary Packages:
 
-- `libsystemd0:amd64=247.3-7+deb11u4`
-- `libudev1:amd64=247.3-7+deb11u4`
+- `libsystemd0:amd64=247.3-7+deb11u5`
+- `libudev1:amd64=247.3-7+deb11u5`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2527,17 +2541,17 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=247.3-7+deb11u4
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.3-7%2bdeb11u4.dsc' systemd_247.3-7+deb11u4.dsc 5224 SHA256:7d1b87217b355b62b454728be911c7a9ecf9f9c8e33155e8c0a499b57a86f649
+$ apt-get source -qq --print-uris systemd=247.3-7+deb11u5
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.3-7%2bdeb11u5.dsc' systemd_247.3-7+deb11u5.dsc 5224 SHA256:18a681d10c1b2974fe3093595a9b3fbe6f540769c0c07bf5b1c62fc8552dfa3d
 'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.3.orig.tar.gz' systemd_247.3.orig.tar.gz 9895385 SHA256:2869986e219a8dfc96cc0dffac66e0c13bb70a89e16b85a3948876c146cfa3e0
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.3-7%2bdeb11u4.debian.tar.xz' systemd_247.3-7+deb11u4.debian.tar.xz 196116 SHA256:d1641185f547643cc2788606f209c57a9d66bd9f646564959a2680a7da1e2234
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.3-7%2bdeb11u5.debian.tar.xz' systemd_247.3-7+deb11u5.debian.tar.xz 197568 SHA256:8b1b2960e1714249255a84141832b6b41a40e42cf63c3ba876688e2cf2bc2269
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/247.3-7+deb11u4/ (for browsing the source)
-- https://sources.debian.net/src/systemd/247.3-7+deb11u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/247.3-7+deb11u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/systemd/247.3-7+deb11u5/ (for browsing the source)
+- https://sources.debian.net/src/systemd/247.3-7+deb11u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/247.3-7+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.96-7+deb11u1`
 
