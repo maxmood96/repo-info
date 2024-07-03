@@ -1,9 +1,9 @@
-# `silverpeas:6.4`
+# `silverpeas:6.4.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:30994531debd1ced645d71db2652bbed0e61e733d027995d63f11a81011ddcd9`
-- Created: `2024-06-24T23:29:51.652408017Z`
+- Image ID: `sha256:979f38a471110fedab8b072de0965d3350816816a082e7c407f02136f0fa4332`
+- Created: `2024-06-26T19:42:08.183383572Z`
 - Virtual Size: ~ 2.85 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,16 +18,16 @@
   - `JAVA_HOME=/docker-java-home`
   - `SILVERPEAS_HOME=/opt/silverpeas`
   - `JBOSS_HOME=/opt/wildfly`
-  - `SILVERPEAS_VERSION=6.4`
+  - `SILVERPEAS_VERSION=6.4.1`
   - `WILDFLY_VERSION=26.1.3`
 - Labels:
   - `build=1`
-  - `description=Image to install and to run Silverpeas 6.4`
-  - `name=Silverpeas 6.4`
+  - `description=Image to install and to run Silverpeas 6.4.1`
+  - `name=Silverpeas 6.4.1`
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
   - `vendor=Silverpeas`
-  - `version=6.4`
+  - `version=6.4.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -564,14 +564,9 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `FSFUL`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.4.1op1-1ubuntu4.9
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.9.dsc' cups_2.4.1op1-1ubuntu4.9.dsc 3176 SHA512:c55ff999824c26ff1b7bf3b7a702a1b3c05ee5276beb6c1f84c2173ac017bb85c983b5796e82bb2ad8087e55077484abb74ca3eb728afeda841b0d7dfe6b4ce7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1.orig.tar.gz' cups_2.4.1op1.orig.tar.gz 8113914 SHA512:74e83728fcc3baf709176442b26711250fd4d4ede1e81e35b02a5607711067e28cd5a05d5bc3337953f6b2236c5a429b13f3a7f1218a08a2d3c30a8c9b0d96fd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.9.debian.tar.xz' cups_2.4.1op1-1ubuntu4.9.debian.tar.xz 359196 SHA512:f83c2b64d7fcdb1e6462b07353691c97a387075b7bda9961185418c66da23173fd40cfe9b8ada4ed4a3e2e5fd203c8491a96983116629a37173c1aeeff5949e0
-```
 
 ### `dpkg` source package: `curl=7.81.0-1ubuntu1.16`
 
@@ -5324,15 +5319,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.15
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.15.dsc' openssl_3.0.2-0ubuntu1.15.dsc 2783 SHA512:502d0cc169f34a690d69b0da0a9be4248e65e6c43dfb0284fb1b2ea572828c9621326e163903b9dec709794eea78e2855d588503e856183fe4a7e5aa028d8c56
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.15.debian.tar.xz' openssl_3.0.2-0ubuntu1.15.debian.tar.xz 250272 SHA512:13b3c8e49e7da86750ed179bfc4e1a580ee213826d667386ed1d49847fd92a2dda59843def73ac597b13edeadfe2dd94ffb9602f573275f08510aedb8f51bb97
-```
 
 ### `dpkg` source package: `opus=1.3.1-0.1build2`
 
