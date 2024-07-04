@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0512f3c14f6e92f281f107f2da528e3861a8452f305ee195713098ce8593320d`
-- Created: `2024-06-24T17:07:41Z`
-- Virtual Size: ~ 170.81 Mb  
+- Image ID: `sha256:2f56f114b72b1f5795da59b8cd608255a0a47e48c2a17b6f4f655b7776569e22`
+- Created: `2024-07-01T21:37:08Z`
+- Virtual Size: ~ 182.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -86,6 +86,23 @@ GPL-2.0-only
 
 ```
 
+### `apk` package: `brotli-libs`
+
+```console
+brotli-libs-1.1.0-r2 description:
+Generic lossless compressor (libraries)
+
+brotli-libs-1.1.0-r2 webpage:
+https://github.com/google/brotli
+
+brotli-libs-1.1.0-r2 installed size:
+932 KiB
+
+brotli-libs-1.1.0-r2 license:
+MIT
+
+```
+
 ### `apk` package: `busybox`
 
 ```console
@@ -117,6 +134,23 @@ busybox-binsh-1.36.1-r29 installed size:
 
 busybox-binsh-1.36.1-r29 license:
 GPL-2.0-only
+
+```
+
+### `apk` package: `c-ares`
+
+```console
+c-ares-1.28.1-r0 description:
+Asynchronous DNS/names resolver library
+
+c-ares-1.28.1-r0 webpage:
+https://c-ares.org/
+
+c-ares-1.28.1-r0 installed size:
+156 KiB
+
+c-ares-1.28.1-r0 license:
+MIT
 
 ```
 
@@ -154,6 +188,40 @@ MPL-2.0 AND MIT
 
 ```
 
+### `apk` package: `git`
+
+```console
+git-2.45.2-r0 description:
+Distributed version control system
+
+git-2.45.2-r0 webpage:
+https://www.git-scm.com/
+
+git-2.45.2-r0 installed size:
+6468 KiB
+
+git-2.45.2-r0 license:
+GPL-2.0-only
+
+```
+
+### `apk` package: `git-init-template`
+
+```console
+git-init-template-2.45.2-r0 description:
+Git init template directory
+
+git-init-template-2.45.2-r0 webpage:
+https://www.git-scm.com/
+
+git-init-template-2.45.2-r0 installed size:
+96 KiB
+
+git-init-template-2.45.2-r0 license:
+GPL-2.0-only
+
+```
+
 ### `apk` package: `libcrypto3`
 
 ```console
@@ -168,6 +236,23 @@ libcrypto3-3.3.1-r0 installed size:
 
 libcrypto3-3.3.1-r0 license:
 Apache-2.0
+
+```
+
+### `apk` package: `libcurl`
+
+```console
+libcurl-8.8.0-r0 description:
+The multiprotocol file transfer library
+
+libcurl-8.8.0-r0 webpage:
+https://curl.se/
+
+libcurl-8.8.0-r0 installed size:
+620 KiB
+
+libcurl-8.8.0-r0 license:
+curl
 
 ```
 
@@ -188,6 +273,40 @@ BSD-3-Clause
 
 ```
 
+### `apk` package: `libexpat`
+
+```console
+libexpat-2.6.2-r0 description:
+XML Parser library written in C (libraries)
+
+libexpat-2.6.2-r0 webpage:
+https://libexpat.github.io/
+
+libexpat-2.6.2-r0 installed size:
+144 KiB
+
+libexpat-2.6.2-r0 license:
+MIT
+
+```
+
+### `apk` package: `libidn2`
+
+```console
+libidn2-2.3.7-r0 description:
+Encode/Decode library for internationalized domain names
+
+libidn2-2.3.7-r0 webpage:
+https://www.gnu.org/software/libidn#libidn2
+
+libidn2-2.3.7-r0 installed size:
+208 KiB
+
+libidn2-2.3.7-r0 license:
+GPL-2.0-or-later OR LGPL-3.0-or-later
+
+```
+
 ### `apk` package: `libncursesw`
 
 ```console
@@ -205,6 +324,23 @@ X11
 
 ```
 
+### `apk` package: `libpsl`
+
+```console
+libpsl-0.21.5-r1 description:
+C library for the Publix Suffix List
+
+libpsl-0.21.5-r1 webpage:
+https://rockdaboot.github.io/libpsl
+
+libpsl-0.21.5-r1 installed size:
+88 KiB
+
+libpsl-0.21.5-r1 license:
+MIT
+
+```
+
 ### `apk` package: `libssl3`
 
 ```console
@@ -219,6 +355,23 @@ libssl3-3.3.1-r0 installed size:
 
 libssl3-3.3.1-r0 license:
 Apache-2.0
+
+```
+
+### `apk` package: `libunistring`
+
+```console
+libunistring-1.2-r0 description:
+Library for manipulating Unicode strings and C strings
+
+libunistring-1.2-r0 webpage:
+https://www.gnu.org/software/libunistring/
+
+libunistring-1.2-r0 installed size:
+1692 KiB
+
+libunistring-1.2-r0 license:
+GPL-2.0-or-later OR LGPL-3.0-or-later
 
 ```
 
@@ -273,19 +426,36 @@ X11
 
 ```
 
+### `apk` package: `nghttp2-libs`
+
+```console
+nghttp2-libs-1.62.1-r0 description:
+HTTP/2 C client, server and proxy (libraries)
+
+nghttp2-libs-1.62.1-r0 webpage:
+https://nghttp2.org
+
+nghttp2-libs-1.62.1-r0 installed size:
+152 KiB
+
+nghttp2-libs-1.62.1-r0 license:
+MIT
+
+```
+
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-9.7_p1-r3 description:
+openssh-client-common-9.7_p1-r4 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-9.7_p1-r3 webpage:
+openssh-client-common-9.7_p1-r4 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-9.7_p1-r3 installed size:
+openssh-client-common-9.7_p1-r4 installed size:
 2544 KiB
 
-openssh-client-common-9.7_p1-r3 license:
+openssh-client-common-9.7_p1-r4 license:
 SSH-OpenSSH
 
 ```
@@ -293,16 +463,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-9.7_p1-r3 description:
+openssh-client-default-9.7_p1-r4 description:
 OpenBSD's SSH client
 
-openssh-client-default-9.7_p1-r3 webpage:
+openssh-client-default-9.7_p1-r4 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-9.7_p1-r3 installed size:
+openssh-client-default-9.7_p1-r4 installed size:
 800 KiB
 
-openssh-client-default-9.7_p1-r3 license:
+openssh-client-default-9.7_p1-r4 license:
 SSH-OpenSSH
 
 ```
@@ -310,17 +480,34 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-9.7_p1-r3 description:
+openssh-keygen-9.7_p1-r4 description:
 ssh helper program for generating keys
 
-openssh-keygen-9.7_p1-r3 webpage:
+openssh-keygen-9.7_p1-r4 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-9.7_p1-r3 installed size:
+openssh-keygen-9.7_p1-r4 installed size:
 484 KiB
 
-openssh-keygen-9.7_p1-r3 license:
+openssh-keygen-9.7_p1-r4 license:
 SSH-OpenSSH
+
+```
+
+### `apk` package: `pcre2`
+
+```console
+pcre2-10.43-r0 description:
+Perl-compatible regular expression library
+
+pcre2-10.43-r0 webpage:
+https://pcre.org/
+
+pcre2-10.43-r0 installed size:
+708 KiB
+
+pcre2-10.43-r0 license:
+BSD-3-Clause
 
 ```
 
@@ -372,5 +559,22 @@ zlib-1.3.1-r1 installed size:
 
 zlib-1.3.1-r1 license:
 Zlib
+
+```
+
+### `apk` package: `zstd-libs`
+
+```console
+zstd-libs-1.5.6-r0 description:
+Zstandard - Fast real-time compression algorithm (libraries)
+
+zstd-libs-1.5.6-r0 webpage:
+https://www.zstd.net/
+
+zstd-libs-1.5.6-r0 installed size:
+716 KiB
+
+zstd-libs-1.5.6-r0 license:
+BSD-3-Clause OR GPL-2.0-or-later
 
 ```
