@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cf533464ace361c21c35582c48304195aeceb1bad08012123ac3919082eef290`
+- Image ID: `sha256:ba023ee7a779a92149f5817cbe47239eab8e78ce2a941644e3736ae6e814a903`
 - Created: `2024-06-28T22:01:16Z`
 - Virtual Size: ~ 729.42 Mb  
   (total size of all layers on-disk)
@@ -1463,30 +1463,14 @@ $ apt-get source -qq --print-uris openldap=2.5.17+dfsg-0ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.17%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.17+dfsg-0ubuntu0.22.04.1.debian.tar.xz 172128 SHA512:0cc9210ff73f9dadf9a3cdbaf8abdaa36650c3611e889bc9e6b9cb637f6f5b25e23edc55d6f6cc910b6f08eb0795114d73472090dbf4c233d10432199f07836c
 ```
 
-### `dpkg` source package: `openssl=3.0.2-0ubuntu1.15`
-
-Binary Packages:
-
-- `libssl3:amd64=3.0.2-0ubuntu1.15`
-
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
-
-- `Apache-2.0`
-- `Artistic`
-- `GPL-1`
-- `GPL-1+`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.16`
 
 Binary Packages:
 
+- `libssl3:amd64=3.0.2-0ubuntu1.16`
 - `openssl=3.0.2-0ubuntu1.16`
 
-Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
