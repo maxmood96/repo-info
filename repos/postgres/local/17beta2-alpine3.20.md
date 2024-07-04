@@ -1,10 +1,10 @@
-# `postgres:17beta1-alpine3.20`
+# `postgres:17beta2-alpine3.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b9b140475ce333e129b1aa6fc09d048749ae5cc993179a30d887f5b725c24fe5`
-- Created: `2024-06-03T20:57:56Z`
-- Virtual Size: ~ 247.93 Mb  
+- Image ID: `sha256:40f5f4e688fd21d817b67d2a0849f4bd4aa741b7711c255f185d89aa7dc3dc1a`
+- Created: `2024-07-02T00:03:06Z`
+- Virtual Size: ~ 253.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,8 +14,8 @@
   - `GOSU_VERSION=1.17`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=17`
-  - `PG_VERSION=17beta1`
-  - `PG_SHA256=089e8854fecd0ca1ec5cd8b29526938f9ef5e91cc331f5d6e118d13468f08f50`
+  - `PG_VERSION=17beta2`
+  - `PG_SHA256=157af3af2cbc40364990835f518aea0711703e1c48f204b54dfd49b46cd8716c`
   - `DOCKER_PG_LLVM_DEPS=llvm15-dev 		clang15`
   - `PGDATA=/var/lib/postgresql/data`
 
@@ -245,16 +245,16 @@ MIT
 ### `apk` package: `krb5-libs`
 
 ```console
-krb5-libs-1.21.2-r0 description:
+krb5-libs-1.21.3-r0 description:
 The shared libraries used by Kerberos 5
 
-krb5-libs-1.21.2-r0 webpage:
+krb5-libs-1.21.3-r0 webpage:
 https://web.mit.edu/kerberos/www/
 
-krb5-libs-1.21.2-r0 installed size:
+krb5-libs-1.21.3-r0 installed size:
 1828 KiB
 
-krb5-libs-1.21.2-r0 license:
+krb5-libs-1.21.3-r0 license:
 MIT
 
 ```
@@ -279,16 +279,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r0 description:
+libcrypto3-3.3.1-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r0 webpage:
+libcrypto3-3.3.1-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r0 installed size:
+libcrypto3-3.3.1-r1 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r0 license:
+libcrypto3-3.3.1-r1 license:
 Apache-2.0
 
 ```
@@ -432,16 +432,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r0 description:
+libssl3-3.3.1-r1 description:
 SSL shared libraries
 
-libssl3-3.3.1-r0 webpage:
+libssl3-3.3.1-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r0 installed size:
+libssl3-3.3.1-r1 installed size:
 796 KiB
 
-libssl3-3.3.1-r0 license:
+libssl3-3.3.1-r1 license:
 Apache-2.0
 
 ```
