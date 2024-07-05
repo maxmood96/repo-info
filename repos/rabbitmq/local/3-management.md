@@ -1,10 +1,10 @@
-# `rabbitmq:3.13.3-management`
+# `rabbitmq:3.13.4-management`
 
 ## Docker Metadata
 
-- Image ID: `sha256:af0d8f578c2c25ac83add30624c131714314e153f2b6994be7b081031ef9db21`
+- Image ID: `sha256:84c25f504c92c9b5011b3e86971991d8c435d370fd0bb0f3310595351c161144`
 - Created: `2024-02-22T21:58:15Z`
-- Virtual Size: ~ 250.64 Mb  
+- Virtual Size: ~ 250.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `ERLANG_INSTALL_PATH_PREFIX=/opt/erlang`
   - `OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
-  - `RABBITMQ_VERSION=3.13.3`
+  - `RABBITMQ_VERSION=3.13.4`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `HOME=/var/lib/rabbitmq`
@@ -1685,10 +1685,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tzdata=2024a-0ubuntu0.22.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.22.04.dsc' tzdata_2024a-0ubuntu0.22.04.dsc 2501 SHA512:57335ca6d99dec93396415077b2f5cbe986ef1a445d48548f639c2a6c1367235bb6f34864b08a546bde3d6f84b14c325392ebefedefa075cb5b7777251eed10f
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA512:1f09f1b2327cc9e1afc7e9045e83ee3377918dafe1bee2f282b6991828d03b3c70a4d3a17f9207dfb1361bb25bc214a8922a756e84fa114e9ba476226db57236
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA512:a06ddc95002f2dcd3c071d020a74bc98aae2cbf56a502718f9bc08e90e0075b17aaaa653ceecd49a1133cdadfc43134365043f827b19c7dad68050dbda6ba77e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.22.04.debian.tar.xz' tzdata_2024a-0ubuntu0.22.04.debian.tar.xz 175440 SHA512:5c1a4676b33b72e8f9dd7416bdf1c38c2f4dd59d8db96551135a86044075603cf94aba38fcb4346cb6ba08b8899c405eeb98bac65a4144c1dd9130878b8d3c82
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.22.04.dsc' tzdata_2024a-0ubuntu0.22.04.dsc 2501 SHA512:57335ca6d99dec93396415077b2f5cbe986ef1a445d48548f639c2a6c1367235bb6f34864b08a546bde3d6f84b14c325392ebefedefa075cb5b7777251eed10f
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA512:1f09f1b2327cc9e1afc7e9045e83ee3377918dafe1bee2f282b6991828d03b3c70a4d3a17f9207dfb1361bb25bc214a8922a756e84fa114e9ba476226db57236
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA512:a06ddc95002f2dcd3c071d020a74bc98aae2cbf56a502718f9bc08e90e0075b17aaaa653ceecd49a1133cdadfc43134365043f827b19c7dad68050dbda6ba77e
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.22.04.debian.tar.xz' tzdata_2024a-0ubuntu0.22.04.debian.tar.xz 175440 SHA512:5c1a4676b33b72e8f9dd7416bdf1c38c2f4dd59d8db96551135a86044075603cf94aba38fcb4346cb6ba08b8899c405eeb98bac65a4144c1dd9130878b8d3c82
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
