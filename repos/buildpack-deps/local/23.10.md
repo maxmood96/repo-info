@@ -4408,10 +4408,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tzdata=2024a-0ubuntu0.23.10
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.23.10.dsc' tzdata_2024a-0ubuntu0.23.10.dsc 2699 SHA512:70a875967a528f6f53115308263028c924ba237ac60df25123d429100516578e3a3aa5c6b2769ad3a00b7e2c853af89053fdab2dc48702cf14986120cc3a81a3
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA512:1f09f1b2327cc9e1afc7e9045e83ee3377918dafe1bee2f282b6991828d03b3c70a4d3a17f9207dfb1361bb25bc214a8922a756e84fa114e9ba476226db57236
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA512:a06ddc95002f2dcd3c071d020a74bc98aae2cbf56a502718f9bc08e90e0075b17aaaa653ceecd49a1133cdadfc43134365043f827b19c7dad68050dbda6ba77e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.23.10.debian.tar.xz' tzdata_2024a-0ubuntu0.23.10.debian.tar.xz 183208 SHA512:a121e2ff4ba3ded0a9a3f1a6933228095a909579e2c6ad6658448fa75a0627677529bcae1e2092e8142ac0abf5cd3d183b5c31a3e8d8bb3f880699f52757a522
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.23.10.dsc' tzdata_2024a-0ubuntu0.23.10.dsc 2699 SHA512:70a875967a528f6f53115308263028c924ba237ac60df25123d429100516578e3a3aa5c6b2769ad3a00b7e2c853af89053fdab2dc48702cf14986120cc3a81a3
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA512:1f09f1b2327cc9e1afc7e9045e83ee3377918dafe1bee2f282b6991828d03b3c70a4d3a17f9207dfb1361bb25bc214a8922a756e84fa114e9ba476226db57236
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA512:a06ddc95002f2dcd3c071d020a74bc98aae2cbf56a502718f9bc08e90e0075b17aaaa653ceecd49a1133cdadfc43134365043f827b19c7dad68050dbda6ba77e
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.23.10.debian.tar.xz' tzdata_2024a-0ubuntu0.23.10.debian.tar.xz 183208 SHA512:a121e2ff4ba3ded0a9a3f1a6933228095a909579e2c6ad6658448fa75a0627677529bcae1e2092e8142ac0abf5cd3d183b5c31a3e8d8bb3f880699f52757a522
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
