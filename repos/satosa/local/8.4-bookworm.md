@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8520a4ce0657b7248897ee4015833afa5c1e3d6ddca2bd521ef582861ccab1c6`
+- Image ID: `sha256:6eb989a75b26b62896e98d84b538923ce1f51868d59b961e6da58203c7d036da`
 - Created: `2023-12-19T14:40:43Z`
 - Virtual Size: ~ 246.43 Mb  
   (total size of all layers on-disk)
@@ -15,8 +15,8 @@
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
   - `PYTHON_VERSION=3.12.4`
   - `PYTHON_PIP_VERSION=24.0`
-  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/dbf0c85f76fb6e1ab42aa672ffca6f0a675d9ee4/public/get-pip.py`
-  - `PYTHON_GET_PIP_SHA256=dfe9fd5c28dc98b5ac17979a953ea550cec37ae1b47a5116007395bfacff2ab9`
+  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/ac00c61f60b2df101b7cdf90ed319b625ac93b42/public/get-pip.py`
+  - `PYTHON_GET_PIP_SHA256=0f8bb2652c0b0965f268312f49ec21e772d421d381af4324beea66b8acf2635c`
   - `SATOSA_VERSION=8.4.0`
 
 ## `dpkg` (`.deb`-based packages)
