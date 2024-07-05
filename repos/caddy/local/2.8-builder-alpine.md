@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0fce6536f855029143fa4374ced1ec74a5f9d851de7eb2ac6ef0c40b64a2c0e0`
+- Image ID: `sha256:1b9aecc90e5bc9530f62b774f11ddc476555954dab6eaec2fecc3768ad2a66c1`
 - Created: `2024-06-04T22:12:59Z`
-- Virtual Size: ~ 246.24 Mb  
+- Virtual Size: ~ 246.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.22.4`
+  - `GOLANG_VERSION=1.22.5`
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
   - `XCADDY_VERSION=v0.4.2`
@@ -329,16 +329,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.7.1-r0 description:
+libcurl-8.8.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.7.1-r0 webpage:
+libcurl-8.8.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.7.1-r0 installed size:
-604 KiB
+libcurl-8.8.0-r0 installed size:
+620 KiB
 
-libcurl-8.7.1-r0 license:
+libcurl-8.8.0-r0 license:
 curl
 
 ```
@@ -465,16 +465,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.62.0-r0 description:
+nghttp2-libs-1.62.1-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.62.0-r0 webpage:
+nghttp2-libs-1.62.1-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.62.0-r0 installed size:
+nghttp2-libs-1.62.1-r0 installed size:
 152 KiB
 
-nghttp2-libs-1.62.0-r0 license:
+nghttp2-libs-1.62.1-r0 license:
 MIT
 
 ```
