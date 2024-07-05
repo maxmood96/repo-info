@@ -1,17 +1,17 @@
-# `znc:1.9.0`
+# `znc:1.9.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6c2ad5a36af7b7bf30356a370fbbb96b1eddab5b41080dc1601b6e8ba5b567a4`
-- Created: `2024-06-21T02:42:03.813777492Z`
-- Virtual Size: ~ 449.56 Mb  
+- Image ID: `sha256:a09ced1c4aa8abf3507139fa9915ff24c8561a6a20e1fac4926280062b2526e4`
+- Created: `2024-07-03T16:34:27.054845946Z`
+- Virtual Size: ~ 454.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GPG_KEY=D5823CACB477191CAC0075555AE420CC0209989E`
-  - `ZNC_VERSION=1.9.0`
+  - `ZNC_VERSION=1.9.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1191,16 +1191,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.5-r0 description:
+libcrypto3-3.1.6-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.5-r0 webpage:
+libcrypto3-3.1.6-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.5-r0 installed size:
+libcrypto3-3.1.6-r0 installed size:
 4512 KiB
 
-libcrypto3-3.1.5-r0 license:
+libcrypto3-3.1.6-r0 license:
 Apache-2.0
 
 ```
@@ -1344,16 +1344,16 @@ custom
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.5-r0 description:
+libssl3-3.1.6-r0 description:
 SSL shared libraries
 
-libssl3-3.1.5-r0 webpage:
+libssl3-3.1.6-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.5-r0 installed size:
+libssl3-3.1.6-r0 installed size:
 548 KiB
 
-libssl3-3.1.5-r0 license:
+libssl3-3.1.6-r0 license:
 Apache-2.0
 
 ```
@@ -1582,16 +1582,16 @@ MIT
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.5-r0 description:
+openssl-3.1.6-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.5-r0 webpage:
+openssl-3.1.6-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.1.5-r0 installed size:
+openssl-3.1.6-r0 installed size:
 732 KiB
 
-openssl-3.1.5-r0 license:
+openssl-3.1.6-r0 license:
 Apache-2.0
 
 ```
@@ -1599,16 +1599,16 @@ Apache-2.0
 ### `apk` package: `openssl-dev`
 
 ```console
-openssl-dev-3.1.5-r0 description:
+openssl-dev-3.1.6-r0 description:
 Toolkit for Transport Layer Security (TLS) (development files)
 
-openssl-dev-3.1.5-r0 webpage:
+openssl-dev-3.1.6-r0 webpage:
 https://www.openssl.org/
 
-openssl-dev-3.1.5-r0 installed size:
-2232 KiB
+openssl-dev-3.1.6-r0 installed size:
+2236 KiB
 
-openssl-dev-3.1.5-r0 license:
+openssl-dev-3.1.6-r0 license:
 Apache-2.0
 
 ```
@@ -1769,16 +1769,16 @@ rhash-libs-1.4.4-r0 license:
 ### `apk` package: `runtime-dependencies`
 
 ```console
-runtime-dependencies-20240621.023703 description:
+runtime-dependencies-20240703.162941 description:
 virtual meta package
 
-runtime-dependencies-20240621.023703 webpage:
+runtime-dependencies-20240703.162941 webpage:
 
 
-runtime-dependencies-20240621.023703 installed size:
+runtime-dependencies-20240703.162941 installed size:
 0 B
 
-runtime-dependencies-20240621.023703 license:
+runtime-dependencies-20240703.162941 license:
 
 
 ```
