@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6b1f8860a15471de31c24051dbaaddbd2633bfb998c18ce8822472f6dc70890b`
+- Image ID: `sha256:654b14768b1074c431681a41cd78a10b38879f06ab06dfb1933570cb67422382`
 - Created: `2024-03-26T13:57:15Z`
-- Virtual Size: ~ 512.24 Mb  
+- Virtual Size: ~ 514.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.8`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.8.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.8.tar.xz.asc`
-  - `PHP_SHA256=aea358b56186f943c2bbd350c9005b9359133d47e954cfc561385319ae5bb8d7`
+  - `PHP_VERSION=8.3.9`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.9.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.9.tar.xz.asc`
+  - `PHP_SHA256=bf4d7b8ea60a356064f88485278bd6f941a230ec16f0fc401574ce1445ad6c77`
 - Labels:
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
   - `org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images`
@@ -1285,14 +1285,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/keyutils/1.6.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/keyutils/1.6.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `krb5=1.18.3-6+deb11u4`
+### `dpkg` source package: `krb5=1.18.3-6+deb11u5`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.18.3-6+deb11u4`
-- `libk5crypto3:amd64=1.18.3-6+deb11u4`
-- `libkrb5-3:amd64=1.18.3-6+deb11u4`
-- `libkrb5support0:amd64=1.18.3-6+deb11u4`
+- `libgssapi-krb5-2:amd64=1.18.3-6+deb11u5`
+- `libk5crypto3:amd64=1.18.3-6+deb11u5`
+- `libkrb5-3:amd64=1.18.3-6+deb11u5`
+- `libkrb5support0:amd64=1.18.3-6+deb11u5`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1301,18 +1301,18 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.18.3-6+deb11u4
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3-6%2bdeb11u4.dsc' krb5_1.18.3-6+deb11u4.dsc 3209 SHA256:6d1de6649c399ac6bb3a8d151cffbae93c4d17fafdeec5c4ae26300e5c8b5109
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3.orig.tar.gz' krb5_1.18.3.orig.tar.gz 8715312 SHA256:e61783c292b5efd9afb45c555a80dd267ac67eebabca42185362bee6c4fbd719
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3.orig.tar.gz.asc' krb5_1.18.3.orig.tar.gz.asc 833 SHA256:ded19808ba7320ad0bb3ddfb5202845b2ff36a50613af7832f78dd3cb4437419
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3-6%2bdeb11u4.debian.tar.xz' krb5_1.18.3-6+deb11u4.debian.tar.xz 109444 SHA256:9b6c8045949d6b1a108a6756ca8bf6490c5c975b30eb43c287406489e9250196
+$ apt-get source -qq --print-uris krb5=1.18.3-6+deb11u5
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u5.dsc' krb5_1.18.3-6+deb11u5.dsc 3209 SHA256:36c3edb6deb63df00b02fa00c3352139a0b51f30c9f20da8041f06818f771445
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz' krb5_1.18.3.orig.tar.gz 8715312 SHA256:e61783c292b5efd9afb45c555a80dd267ac67eebabca42185362bee6c4fbd719
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz.asc' krb5_1.18.3.orig.tar.gz.asc 833 SHA256:ded19808ba7320ad0bb3ddfb5202845b2ff36a50613af7832f78dd3cb4437419
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u5.debian.tar.xz' krb5_1.18.3-6+deb11u5.debian.tar.xz 114964 SHA256:6ba4b7db260cfdefb743a10b0a6a113c2302f1000812095563c5607ba9e0201a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/krb5/1.18.3-6+deb11u4/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.18.3-6+deb11u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/krb5/1.18.3-6+deb11u5/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.18.3-6+deb11u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2.2`
 
