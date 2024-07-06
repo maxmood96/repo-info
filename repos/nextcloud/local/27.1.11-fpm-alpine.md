@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f025381a08e8df3b734bb8ae34fbf49f99233ca3eaa41b8b3884ffbab39a8756`
-- Created: `2024-06-26T19:23:34.314223309Z`
-- Virtual Size: ~ 721.11 Mb  
+- Image ID: `sha256:61e796ddb463903ab7cfb8f27a682bc32f0dfb4f5ae432638b5630d9ed1bee9f`
+- Created: `2024-07-03T16:24:01.176100731Z`
+- Virtual Size: ~ 850.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -78,6 +78,23 @@ MIT
 
 ```
 
+### `apk` package: `aom-libs`
+
+```console
+aom-libs-3.9.0-r0 description:
+Alliance for Open Media (AOM) AV1 codec SDK (libraries)
+
+aom-libs-3.9.0-r0 webpage:
+https://aomedia.org/
+
+aom-libs-3.9.0-r0 installed size:
+7396 KiB
+
+aom-libs-3.9.0-r0 license:
+BSD-2-Clause AND custom
+
+```
+
 ### `apk` package: `apk-tools`
 
 ```console
@@ -109,6 +126,23 @@ argon2-libs-20190702-r5 installed size:
 
 argon2-libs-20190702-r5 license:
 Apache-2.0 OR CC0-1.0
+
+```
+
+### `apk` package: `avahi-libs`
+
+```console
+avahi-libs-0.8-r17 description:
+Libraries for avahi run-time use
+
+avahi-libs-0.8-r17 webpage:
+https://www.avahi.org/
+
+avahi-libs-0.8-r17 installed size:
+120 KiB
+
+avahi-libs-0.8-r17 license:
+LGPL-2.1-or-later
 
 ```
 
@@ -214,6 +248,57 @@ MPL-2.0 AND MIT
 
 ```
 
+### `apk` package: `cairo`
+
+```console
+cairo-1.18.0-r0 description:
+A vector graphics library
+
+cairo-1.18.0-r0 webpage:
+https://cairographics.org/
+
+cairo-1.18.0-r0 installed size:
+1076 KiB
+
+cairo-1.18.0-r0 license:
+LGPL-2.1-or-later OR MPL-1.1
+
+```
+
+### `apk` package: `cairo-gobject`
+
+```console
+cairo-gobject-1.18.0-r0 description:
+A vector graphics library (gobject bindings)
+
+cairo-gobject-1.18.0-r0 webpage:
+https://cairographics.org/
+
+cairo-gobject-1.18.0-r0 installed size:
+44 KiB
+
+cairo-gobject-1.18.0-r0 license:
+LGPL-2.1-or-later OR MPL-1.1
+
+```
+
+### `apk` package: `cups-libs`
+
+```console
+cups-libs-2.4.9-r0 description:
+CUPS libraries
+
+cups-libs-2.4.9-r0 webpage:
+https://github.com/OpenPrinting/cups/
+
+cups-libs-2.4.9-r0 installed size:
+576 KiB
+
+cups-libs-2.4.9-r0 license:
+Apache-2.0
+
+```
+
 ### `apk` package: `curl`
 
 ```console
@@ -228,6 +313,23 @@ curl-8.7.1-r0 installed size:
 
 curl-8.7.1-r0 license:
 curl
+
+```
+
+### `apk` package: `dbus-libs`
+
+```console
+dbus-libs-1.14.10-r1 description:
+D-BUS access libraries
+
+dbus-libs-1.14.10-r1 webpage:
+https://www.freedesktop.org/Software/dbus
+
+dbus-libs-1.14.10-r1 installed size:
+288 KiB
+
+dbus-libs-1.14.10-r1 license:
+AFL-2.1 OR GPL-2.0-or-later
 
 ```
 
@@ -282,6 +384,23 @@ FTL OR GPL-2.0-or-later
 
 ```
 
+### `apk` package: `fribidi`
+
+```console
+fribidi-1.0.15-r0 description:
+Free Implementation of the Unicode Bidirectional Algorithm
+
+fribidi-1.0.15-r0 webpage:
+https://github.com/fribidi/fribidi
+
+fribidi-1.0.15-r0 installed size:
+156 KiB
+
+fribidi-1.0.15-r0 license:
+LGPL-2.1-or-later
+
+```
+
 ### `apk` package: `gdbm`
 
 ```console
@@ -296,6 +415,57 @@ gdbm-1.23-r1 installed size:
 
 gdbm-1.23-r1 license:
 GPL-3.0-or-later
+
+```
+
+### `apk` package: `gdk-pixbuf`
+
+```console
+gdk-pixbuf-2.42.11-r1 description:
+GTK+ image loading library
+
+gdk-pixbuf-2.42.11-r1 webpage:
+https://wiki.gnome.org/Projects/GdkPixbuf
+
+gdk-pixbuf-2.42.11-r1 installed size:
+516 KiB
+
+gdk-pixbuf-2.42.11-r1 license:
+LGPL-2.1-or-later
+
+```
+
+### `apk` package: `ghostscript`
+
+```console
+ghostscript-10.02.1-r0 description:
+Interpreter for the PostScript language and for PDF
+
+ghostscript-10.02.1-r0 webpage:
+https://ghostscript.com/
+
+ghostscript-10.02.1-r0 installed size:
+63 MiB
+
+ghostscript-10.02.1-r0 license:
+AGPL-3.0-or-later
+
+```
+
+### `apk` package: `glib`
+
+```console
+glib-2.80.2-r0 description:
+Common C routines used by Gtk+ and other libs
+
+glib-2.80.2-r0 webpage:
+https://developer.gnome.org/glib/
+
+glib-2.80.2-r0 installed size:
+5216 KiB
+
+glib-2.80.2-r0 license:
+LGPL-2.1-or-later
 
 ```
 
@@ -330,6 +500,57 @@ gnu-libiconv-libs-1.17-r2 installed size:
 
 gnu-libiconv-libs-1.17-r2 license:
 LGPL-2.1-or-later
+
+```
+
+### `apk` package: `gnutls`
+
+```console
+gnutls-3.8.5-r0 description:
+TLS protocol implementation
+
+gnutls-3.8.5-r0 webpage:
+https://www.gnutls.org/
+
+gnutls-3.8.5-r0 installed size:
+1876 KiB
+
+gnutls-3.8.5-r0 license:
+LGPL-2.1-or-later
+
+```
+
+### `apk` package: `graphite2`
+
+```console
+graphite2-1.3.14-r6 description:
+reimplementation of the SIL Graphite text processing engine
+
+graphite2-1.3.14-r6 webpage:
+https://graphite.sil.org/
+
+graphite2-1.3.14-r6 installed size:
+136 KiB
+
+graphite2-1.3.14-r6 license:
+LGPL-2.1-or-later OR MPL-1.1
+
+```
+
+### `apk` package: `harfbuzz`
+
+```console
+harfbuzz-8.5.0-r0 description:
+Text shaping library
+
+harfbuzz-8.5.0-r0 webpage:
+https://harfbuzz.github.io/
+
+harfbuzz-8.5.0-r0 installed size:
+1248 KiB
+
+harfbuzz-8.5.0-r0 license:
+MIT
 
 ```
 
@@ -384,6 +605,23 @@ ImageMagick
 
 ```
 
+### `apk` package: `imagemagick-heic`
+
+```console
+imagemagick-heic-7.1.1.32-r2 description:
+Collection of tools and libraries for many image formats (HEIC support modules)
+
+imagemagick-heic-7.1.1.32-r2 webpage:
+https://imagemagick.org/
+
+imagemagick-heic-7.1.1.32-r2 installed size:
+60 KiB
+
+imagemagick-heic-7.1.1.32-r2 license:
+ImageMagick
+
+```
+
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
@@ -418,6 +656,91 @@ ImageMagick
 
 ```
 
+### `apk` package: `imagemagick-pango`
+
+```console
+imagemagick-pango-7.1.1.32-r2 description:
+Collection of tools and libraries for many image formats (pango support modules)
+
+imagemagick-pango-7.1.1.32-r2 webpage:
+https://imagemagick.org/
+
+imagemagick-pango-7.1.1.32-r2 installed size:
+52 KiB
+
+imagemagick-pango-7.1.1.32-r2 license:
+ImageMagick
+
+```
+
+### `apk` package: `imagemagick-pdf`
+
+```console
+imagemagick-pdf-7.1.1.32-r2 description:
+Collection of tools and libraries for many image formats (PDF support modules)
+
+imagemagick-pdf-7.1.1.32-r2 webpage:
+https://imagemagick.org/
+
+imagemagick-pdf-7.1.1.32-r2 installed size:
+156 KiB
+
+imagemagick-pdf-7.1.1.32-r2 license:
+ImageMagick
+
+```
+
+### `apk` package: `imagemagick-raw`
+
+```console
+imagemagick-raw-7.1.1.32-r2 description:
+Collection of tools and libraries for many image formats (RAW support modules)
+
+imagemagick-raw-7.1.1.32-r2 webpage:
+https://imagemagick.org/
+
+imagemagick-raw-7.1.1.32-r2 installed size:
+52 KiB
+
+imagemagick-raw-7.1.1.32-r2 license:
+ImageMagick
+
+```
+
+### `apk` package: `imagemagick-svg`
+
+```console
+imagemagick-svg-7.1.1.32-r2 description:
+Collection of tools and libraries for many image formats (SVG support modules)
+
+imagemagick-svg-7.1.1.32-r2 webpage:
+https://imagemagick.org/
+
+imagemagick-svg-7.1.1.32-r2 installed size:
+112 KiB
+
+imagemagick-svg-7.1.1.32-r2 license:
+ImageMagick
+
+```
+
+### `apk` package: `imagemagick-tiff`
+
+```console
+imagemagick-tiff-7.1.1.32-r2 description:
+Collection of tools and libraries for many image formats (TIFF support modules)
+
+imagemagick-tiff-7.1.1.32-r2 webpage:
+https://imagemagick.org/
+
+imagemagick-tiff-7.1.1.32-r2 installed size:
+144 KiB
+
+imagemagick-tiff-7.1.1.32-r2 license:
+ImageMagick
+
+```
+
 ### `apk` package: `imagemagick-webp`
 
 ```console
@@ -432,6 +755,23 @@ imagemagick-webp-7.1.1.32-r2 installed size:
 
 imagemagick-webp-7.1.1.32-r2 license:
 ImageMagick
+
+```
+
+### `apk` package: `jbig2dec`
+
+```console
+jbig2dec-0.20-r0 description:
+JBIG2 image compression format decoder
+
+jbig2dec-0.20-r0 webpage:
+https://jbig2dec.com/
+
+jbig2dec-0.20-r0 installed size:
+148 KiB
+
+jbig2dec-0.20-r0 license:
+AGPL-3.0-or-later
 
 ```
 
@@ -466,6 +806,23 @@ libacl-2.3.2-r0 installed size:
 
 libacl-2.3.2-r0 license:
 LGPL-2.1-or-later AND GPL-2.0-or-later
+
+```
+
+### `apk` package: `libblkid`
+
+```console
+libblkid-2.40.1-r1 description:
+Block device identification library from util-linux
+
+libblkid-2.40.1-r1 webpage:
+https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+
+libblkid-2.40.1-r1 installed size:
+200 KiB
+
+libblkid-2.40.1-r1 license:
+LGPL-2.1-or-later
 
 ```
 
@@ -506,16 +863,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r0 description:
+libcrypto3-3.3.1-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r0 webpage:
+libcrypto3-3.3.1-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r0 installed size:
+libcrypto3-3.3.1-r1 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r0 license:
+libcrypto3-3.3.1-r1 license:
 Apache-2.0
 
 ```
@@ -537,6 +894,40 @@ curl
 
 ```
 
+### `apk` package: `libde265`
+
+```console
+libde265-1.0.15-r0 description:
+Open h.265 video codec implementation
+
+libde265-1.0.15-r0 webpage:
+https://github.com/strukturag/libde265
+
+libde265-1.0.15-r0 installed size:
+456 KiB
+
+libde265-1.0.15-r0 license:
+LGPL-3.0-or-later
+
+```
+
+### `apk` package: `libeconf`
+
+```console
+libeconf-0.6.3-r0 description:
+Enhanced Config File Parser
+
+libeconf-0.6.3-r0 webpage:
+https://github.com/openSUSE/libeconf
+
+libeconf-0.6.3-r0 installed size:
+92 KiB
+
+libeconf-0.6.3-r0 license:
+MIT
+
+```
+
 ### `apk` package: `libexpat`
 
 ```console
@@ -550,6 +941,23 @@ libexpat-2.6.2-r0 installed size:
 144 KiB
 
 libexpat-2.6.2-r0 license:
+MIT
+
+```
+
+### `apk` package: `libffi`
+
+```console
+libffi-3.4.6-r0 description:
+portable, high level programming interface to various calling conventions.
+
+libffi-3.4.6-r0 webpage:
+https://sourceware.org/libffi/
+
+libffi-3.4.6-r0 installed size:
+52 KiB
+
+libffi-3.4.6-r0 license:
 MIT
 
 ```
@@ -588,6 +996,23 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
+### `apk` package: `libheif`
+
+```console
+libheif-1.17.6-r1 description:
+ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+
+libheif-1.17.6-r1 webpage:
+https://www.libde265.org/
+
+libheif-1.17.6-r1 installed size:
+732 KiB
+
+libheif-1.17.6-r1 license:
+LGPL-3.0-or-later
+
+```
+
 ### `apk` package: `libidn2`
 
 ```console
@@ -602,6 +1027,23 @@ libidn2-2.3.7-r0 installed size:
 
 libidn2-2.3.7-r0 license:
 GPL-2.0-or-later OR LGPL-3.0-or-later
+
+```
+
+### `apk` package: `libintl`
+
+```console
+libintl-0.22.5-r0 description:
+GNU gettext runtime library
+
+libintl-0.22.5-r0 webpage:
+https://www.gnu.org/software/gettext/gettext.html
+
+libintl-0.22.5-r0 installed size:
+80 KiB
+
+libintl-0.22.5-r0 license:
+LGPL-2.1-or-later
 
 ```
 
@@ -690,6 +1132,23 @@ BSD-3-Clause
 
 ```
 
+### `apk` package: `libmount`
+
+```console
+libmount-2.40.1-r1 description:
+Block device identification library from util-linux
+
+libmount-2.40.1-r1 webpage:
+https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+
+libmount-2.40.1-r1 installed size:
+272 KiB
+
+libmount-2.40.1-r1 license:
+LGPL-2.1-or-later
+
+```
+
 ### `apk` package: `libncursesw`
 
 ```console
@@ -758,6 +1217,40 @@ MIT
 
 ```
 
+### `apk` package: `libraw`
+
+```console
+libraw-0.21.2-r0 description:
+Library for reading RAW files obtained from digital photo cameras
+
+libraw-0.21.2-r0 webpage:
+https://www.libraw.org/
+
+libraw-0.21.2-r0 installed size:
+2440 KiB
+
+libraw-0.21.2-r0 license:
+CDDL-1.0 OR LGPL-2.1-only
+
+```
+
+### `apk` package: `librsvg`
+
+```console
+librsvg-2.58.0-r0 description:
+SAX-based renderer for SVG files into a GdkPixbuf
+
+librsvg-2.58.0-r0 webpage:
+https://wiki.gnome.org/Projects/LibRsvg
+
+librsvg-2.58.0-r0 installed size:
+4644 KiB
+
+librsvg-2.58.0-r0 license:
+LGPL-2.1-or-later
+
+```
+
 ### `apk` package: `libsasl`
 
 ```console
@@ -812,16 +1305,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r0 description:
+libssl3-3.3.1-r1 description:
 SSL shared libraries
 
-libssl3-3.3.1-r0 webpage:
+libssl3-3.3.1-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r0 installed size:
+libssl3-3.3.1-r1 installed size:
 796 KiB
 
-libssl3-3.3.1-r0 license:
+libssl3-3.3.1-r1 license:
 Apache-2.0
 
 ```
@@ -840,6 +1333,23 @@ libstdc++-13.2.1_git20240309-r0 installed size:
 
 libstdc++-13.2.1_git20240309-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
+
+```
+
+### `apk` package: `libtasn1`
+
+```console
+libtasn1-4.19.0-r2 description:
+The ASN.1 library used in GNUTLS
+
+libtasn1-4.19.0-r2 webpage:
+https://www.gnu.org/software/gnutls/
+
+libtasn1-4.19.0-r2 installed size:
+80 KiB
+
+libtasn1-4.19.0-r2 license:
+LGPL-2.1-or-later
 
 ```
 
@@ -996,6 +1506,23 @@ MIT
 
 ```
 
+### `apk` package: `libxft`
+
+```console
+libxft-2.3.8-r3 description:
+FreeType-based font drawing library for X
+
+libxft-2.3.8-r3 webpage:
+https://xorg.freedesktop.org/
+
+libxft-2.3.8-r3 installed size:
+96 KiB
+
+libxft-2.3.8-r3 license:
+MIT
+
+```
+
 ### `apk` package: `libxml2`
 
 ```console
@@ -1009,6 +1536,23 @@ libxml2-2.12.7-r0 installed size:
 1088 KiB
 
 libxml2-2.12.7-r0 license:
+MIT
+
+```
+
+### `apk` package: `libxrender`
+
+```console
+libxrender-0.9.11-r5 description:
+X Rendering Extension client library
+
+libxrender-0.9.11-r5 webpage:
+https://xorg.freedesktop.org/
+
+libxrender-0.9.11-r5 installed size:
+56 KiB
+
+libxrender-0.9.11-r5 license:
 MIT
 
 ```
@@ -1115,6 +1659,23 @@ X11
 
 ```
 
+### `apk` package: `nettle`
+
+```console
+nettle-3.9.1-r0 description:
+Low-level cryptographic library
+
+nettle-3.9.1-r0 webpage:
+https://www.lysator.liu.se/~nisse/nettle/
+
+nettle-3.9.1-r0 installed size:
+592 KiB
+
+nettle-3.9.1-r0 license:
+GPL-2.0-or-later OR LGPL-3.0-or-later
+
+```
+
 ### `apk` package: `nghttp2-libs`
 
 ```console
@@ -1129,6 +1690,23 @@ nghttp2-libs-1.62.0-r0 installed size:
 
 nghttp2-libs-1.62.0-r0 license:
 MIT
+
+```
+
+### `apk` package: `numactl`
+
+```console
+numactl-2.0.18-r0 description:
+Simple NUMA policy support
+
+numactl-2.0.18-r0 webpage:
+https://github.com/numactl/numactl
+
+numactl-2.0.18-r0 installed size:
+60 KiB
+
+numactl-2.0.18-r0 license:
+LGPL-2.1-only
 
 ```
 
@@ -1152,17 +1730,102 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.1-r0 description:
+openssl-3.3.1-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.1-r0 webpage:
+openssl-3.3.1-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.3.1-r0 installed size:
+openssl-3.3.1-r1 installed size:
 784 KiB
 
-openssl-3.3.1-r0 license:
+openssl-3.3.1-r1 license:
 Apache-2.0
+
+```
+
+### `apk` package: `p11-kit`
+
+```console
+p11-kit-0.25.3-r0 description:
+Library for loading and sharing PKCS#11 modules
+
+p11-kit-0.25.3-r0 webpage:
+https://p11-glue.freedesktop.org/
+
+p11-kit-0.25.3-r0 installed size:
+1400 KiB
+
+p11-kit-0.25.3-r0 license:
+BSD-3-Clause
+
+```
+
+### `apk` package: `pango`
+
+```console
+pango-1.52.2-r0 description:
+library for layout and rendering of text
+
+pango-1.52.2-r0 webpage:
+https://www.pango.org/
+
+pango-1.52.2-r0 installed size:
+636 KiB
+
+pango-1.52.2-r0 license:
+LGPL-2.1-or-later
+
+```
+
+### `apk` package: `pcre2`
+
+```console
+pcre2-10.43-r0 description:
+Perl-compatible regular expression library
+
+pcre2-10.43-r0 webpage:
+https://pcre.org/
+
+pcre2-10.43-r0 installed size:
+708 KiB
+
+pcre2-10.43-r0 license:
+BSD-3-Clause
+
+```
+
+### `apk` package: `pixman`
+
+```console
+pixman-0.43.2-r0 description:
+Low-level pixel manipulation library
+
+pixman-0.43.2-r0 webpage:
+https://gitlab.freedesktop.org/pixman
+
+pixman-0.43.2-r0 installed size:
+580 KiB
+
+pixman-0.43.2-r0 license:
+MIT
+
+```
+
+### `apk` package: `pkgconf`
+
+```console
+pkgconf-2.2.0-r0 description:
+development framework configuration tools
+
+pkgconf-2.2.0-r0 webpage:
+https://gitea.treehouse.systems/ariadne/pkgconf
+
+pkgconf-2.2.0-r0 installed size:
+160 KiB
+
+pkgconf-2.2.0-r0 license:
+ISC
 
 ```
 
@@ -1234,6 +1897,23 @@ GPL-2.0-only
 
 ```
 
+### `apk` package: `shared-mime-info`
+
+```console
+shared-mime-info-2.4-r0 description:
+Freedesktop.org Shared MIME Info
+
+shared-mime-info-2.4-r0 webpage:
+https://freedesktop.org/Software/shared-mime-info
+
+shared-mime-info-2.4-r0 installed size:
+2532 KiB
+
+shared-mime-info-2.4-r0 license:
+GPL-2.0-or-later
+
+```
+
 ### `apk` package: `sqlite-libs`
 
 ```console
@@ -1282,6 +1962,40 @@ tar-1.35-r2 installed size:
 
 tar-1.35-r2 license:
 GPL-3.0-or-later
+
+```
+
+### `apk` package: `tiff`
+
+```console
+tiff-4.6.0t-r0 description:
+Provides support for the Tag Image File Format or TIFF
+
+tiff-4.6.0t-r0 webpage:
+https://gitlab.com/libtiff/libtiff
+
+tiff-4.6.0t-r0 installed size:
+460 KiB
+
+tiff-4.6.0t-r0 license:
+libtiff
+
+```
+
+### `apk` package: `x265-libs`
+
+```console
+x265-libs-3.6-r0 description:
+Open Source H265/HEVC video encoder (libraries)
+
+x265-libs-3.6-r0 webpage:
+https://www.videolan.org/developers/x265.html
+
+x265-libs-3.6-r0 installed size:
+18 MiB
+
+x265-libs-3.6-r0 license:
+GPL-2.0-or-later
 
 ```
 
