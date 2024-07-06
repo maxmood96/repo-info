@@ -1,16 +1,17 @@
 ## `ros:noetic-ros-core-focal`
 
 ```console
-$ docker pull ros@sha256:156756671f825f68c7936c2241f26278029474ca7989f774decb7cffc4656586
+$ docker pull ros@sha256:bb2c27546ffaceaedf35032d109681609ffee38a730447199bb25a3b8fce1f63
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 5
+-	Platforms: 6
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v7
 	-	unknown; unknown
 	-	linux; arm64 variant v8
+	-	unknown; unknown
 
 ### `ros:noetic-ros-core-focal` - linux; amd64
 
@@ -223,80 +224,103 @@ $ docker pull ros@sha256:c1132cde1a4e65edac3fbf8d6cbfd9c2814405c2ae229ab62eca34b
 ### `ros:noetic-ros-core-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:3b3f3091c2a307515fe9cfeb70961bf8b51fb50d2271a0124d1794c9200d83d3
+$ docker pull ros@sha256:4891e9ac85286d67fa60e23429caf580bef0b59e7048bc65be8af86af0c2235f
 ```
 
--	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.3 MB (205342947 bytes)**  
+-	Total Size: **203.9 MB (203917394 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dbcdda2db64e31d27975630f071ef7c4c16c8bc08ced9807c40f62a51ed8d41e`
+-	Image ID: `sha256:2cf70e4644d91a744fb7e7669238e976ea6281756c2b837b5ffe042fc03acdd7`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 16:52:57 GMT
+# Tue, 19 Dec 2023 09:23:55 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 16:52:57 GMT
+# Tue, 19 Dec 2023 09:23:55 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 16:52:57 GMT
+# Tue, 19 Dec 2023 09:23:55 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 16:52:57 GMT
+# Tue, 19 Dec 2023 09:23:55 GMT
 LABEL org.opencontainers.image.version=20.04
-# Mon, 03 Jun 2024 16:52:59 GMT
+# Tue, 19 Dec 2023 09:23:55 GMT
 ADD file:6d8cc056ee741f09a6c7d965d8e2027d80ed2eccbfb0312593ce52d9256db437 in / 
-# Mon, 03 Jun 2024 16:52:59 GMT
+# Tue, 19 Dec 2023 09:23:55 GMT
 CMD ["/bin/bash"]
-# Wed, 05 Jun 2024 04:59:59 GMT
-RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jun 2024 05:00:06 GMT
-RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jun 2024 05:00:11 GMT
-RUN set -eux;        key='C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654';        export GNUPGHOME="$(mktemp -d)";        gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key";        mkdir -p /usr/share/keyrings;        gpg --batch --export "$key" > /usr/share/keyrings/ros1-latest-archive-keyring.gpg;        gpgconf --kill all;        rm -rf "$GNUPGHOME"
-# Wed, 05 Jun 2024 05:00:11 GMT
-RUN echo "deb [ signed-by=/usr/share/keyrings/ros1-latest-archive-keyring.gpg ] http://packages.ros.org/ros/ubuntu focal main" > /etc/apt/sources.list.d/ros1-latest.list
-# Wed, 05 Jun 2024 05:00:11 GMT
+# Tue, 19 Dec 2023 09:23:55 GMT
+RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 19 Dec 2023 09:23:55 GMT
+RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 19 Dec 2023 09:23:55 GMT
+RUN set -eux;        key='C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654';        export GNUPGHOME="$(mktemp -d)";        gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key";        mkdir -p /usr/share/keyrings;        gpg --batch --export "$key" > /usr/share/keyrings/ros1-latest-archive-keyring.gpg;        gpgconf --kill all;        rm -rf "$GNUPGHOME" # buildkit
+# Tue, 19 Dec 2023 09:23:55 GMT
+RUN echo "deb [ signed-by=/usr/share/keyrings/ros1-latest-archive-keyring.gpg ] http://packages.ros.org/ros/ubuntu focal main" > /etc/apt/sources.list.d/ros1-latest.list # buildkit
+# Tue, 19 Dec 2023 09:23:55 GMT
 ENV LANG=C.UTF-8
-# Wed, 05 Jun 2024 05:00:11 GMT
+# Tue, 19 Dec 2023 09:23:55 GMT
 ENV LC_ALL=C.UTF-8
-# Wed, 05 Jun 2024 05:00:11 GMT
+# Tue, 19 Dec 2023 09:23:55 GMT
 ENV ROS_DISTRO=noetic
-# Wed, 05 Jun 2024 05:02:36 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-ros-core=1.5.0-1*     && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jun 2024 05:02:41 GMT
-COPY file:b48a3fff5008212a0bcdc238d0e8be930aa89d2336e357e1f628c98db523efeb in / 
-# Wed, 05 Jun 2024 05:02:42 GMT
+# Tue, 19 Dec 2023 09:23:55 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-ros-core=1.5.0-1*     && rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 19 Dec 2023 09:23:55 GMT
+COPY ./ros_entrypoint.sh / # buildkit
+# Tue, 19 Dec 2023 09:23:55 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 05 Jun 2024 05:02:42 GMT
+# Tue, 19 Dec 2023 09:23:55 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:8cddf7b9c8a772efac198a7ae8bdfe15df2e065bb85f15cb8a223f6b3a2dbf9c`  
-		Last Modified: Tue, 04 Jun 2024 16:08:03 GMT  
-		Size: 27.2 MB (27205244 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a1ee698c21fd64dc89cbdfed5321d109a9525aeebaf898cfde7ecb7f55d0a90`  
-		Last Modified: Wed, 05 Jun 2024 05:48:06 GMT  
-		Size: 1.2 MB (1198556 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67daca712e09cc6c6e34fb19421e400b0bc9bbf913a3b29ecd56e64e21014a0d`  
-		Last Modified: Wed, 05 Jun 2024 05:48:04 GMT  
-		Size: 5.5 MB (5531978 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07e8be46bf9534062563fa783cb360be4fc65686aca38b1df2586b3954e11b35`  
-		Last Modified: Wed, 05 Jun 2024 05:48:03 GMT  
-		Size: 2.0 KB (2024 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1801d6616a2cd0f216d69bf6a76decd240fdeace1a5bd5a21e5c5ef31ee01f44`  
-		Last Modified: Wed, 05 Jun 2024 05:48:03 GMT  
-		Size: 272.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8701d0e1bacd603262a548b1ca107c7eb378d56b7538d2fe69af7743dfc1fa14`  
-		Last Modified: Wed, 05 Jun 2024 05:48:38 GMT  
-		Size: 171.4 MB (171404678 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe24a94caf00c45eb7e226d915071a9521a262a141c8006164fac3f907a66583`  
-		Last Modified: Wed, 05 Jun 2024 05:48:03 GMT  
-		Size: 195.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f02209be4ee528c246399de81af4552e52adb005a8a499815607b6b0d42746bf`  
+		Last Modified: Mon, 03 Jun 2024 17:19:48 GMT  
+		Size: 26.0 MB (25974217 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b673e4e44515715664ff9b2a5adb09e1648eff1a4b4ab899b7f6e8c0fd752044`  
+		Last Modified: Fri, 05 Jul 2024 20:38:40 GMT  
+		Size: 1.2 MB (1198574 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:68d43d7d1a5f54ed2b85024e0d77f531ab91aa86aaabf9295f8868e2b8b3fcc3`  
+		Last Modified: Fri, 05 Jul 2024 20:38:41 GMT  
+		Size: 5.3 MB (5341923 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b51eeb6a70063854832d2bd61b77b12d2874732b9b97a8ef4fea5ed42ea7afbe`  
+		Last Modified: Fri, 05 Jul 2024 20:38:40 GMT  
+		Size: 2.0 KB (2003 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7e8394cfb37cac04ee2395560d7f228818c20a645b59d5d90d402e4872be51f0`  
+		Last Modified: Fri, 05 Jul 2024 20:38:40 GMT  
+		Size: 273.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:299cb0f1714f02b1afbd480f617ed5188ebcc116920b7ad55e0aa5f62072fcd3`  
+		Last Modified: Fri, 05 Jul 2024 20:38:45 GMT  
+		Size: 171.4 MB (171400210 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:110f7aa3b966ba0823727bca51b3aa86fcc3a7526a20d5eedc1ea559c07a277c`  
+		Last Modified: Fri, 05 Jul 2024 20:38:41 GMT  
+		Size: 194.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `ros:noetic-ros-core-focal` - unknown; unknown
+
+```console
+$ docker pull ros@sha256:4ffd2ab2f683956820683381f9e094b48e276271828ad347768c485d992fb20a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **26.0 MB (25967781 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:bb5f09abbb8987af0b1beaed63dc6ef031d6aea7e2bb932da5303ad013e3d734`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:46cfdb55b1cb8056196f38f00b6bdb2cd6ddca9d4bf1f1024a5b4ad98b0143b5`  
+		Last Modified: Fri, 05 Jul 2024 20:38:41 GMT  
+		Size: 26.0 MB (25951381 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:32529b11112ef1946822e96f4f553d0a4d6d10b870e5c501c8320db8e84deb3d`  
+		Last Modified: Fri, 05 Jul 2024 20:38:40 GMT  
+		Size: 16.4 KB (16400 bytes)  
+		MIME: application/vnd.in-toto+json
