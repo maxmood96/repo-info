@@ -81,19 +81,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.5
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.5.dsc' apt_2.9.5.dsc 2973 SHA256:8761e88ee47f543220888323175396a565dc3099fd9e9baa95ec457c17eac8a6
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.5.tar.xz' apt_2.9.5.tar.xz 2382184 SHA256:6d2b2d4cffbd8313a11e73bc3c86f8ff95bc5e0def7359efac3033f563051894
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.5/
 
-- https://sources.debian.net/src/apt/2.9.5/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-1`
 
@@ -189,19 +183,13 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.6.3
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.3.dsc' base-passwd_3.6.3.dsc 1762 SHA256:bac1a87f919fd8ab28480cc1fd8126b2068a577faf4223f8a2be6baf328d313e
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.3.tar.xz' base-passwd_3.6.3.tar.xz 58284 SHA256:83575327d8318a419caf2d543341215c046044073d1afec2acc0ac4d8095ff39
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-passwd/3.6.3/
 
-- https://sources.debian.net/src/base-passwd/3.6.3/ (for browsing the source)
-- https://sources.debian.net/src/base-passwd/3.6.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-passwd/3.6.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bash=5.2.21-2.1`
 
@@ -488,19 +476,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.19
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.19.dsc' debianutils_5.19.dsc 1289 SHA256:1b24cad834ba55af65e126c131d596ff5bc45e4110f4f76d72fa60383348fcaa
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.19.tar.xz' debianutils_5.19.tar.xz 106276 SHA256:1f5552d3f7ecc811a37ba3a70a446bd988fdce64813a475f4038646d126b2019
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/5.19/
 
-- https://sources.debian.net/src/debianutils/5.19/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/5.19/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/5.19/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.10-1`
 
@@ -818,21 +800,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.5-4
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.5-4.dsc' gnutls28_3.8.5-4.dsc 3268 SHA256:8ba2fe4ce2d1c687348c2599ad81c8997f60495a419309e5dc8f286d3239de6b
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.5.orig.tar.xz' gnutls28_3.8.5.orig.tar.xz 6491504 SHA256:66269a2cfe0e1c2dabec87bdbbd8ab656f396edd9a40dd006978e003cfa52bfc
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.5.orig.tar.xz.asc' gnutls28_3.8.5.orig.tar.xz.asc 228 SHA256:d02c2bc3b994b3fc81f76663a0570c156f9dd299a2151f04fd3429eca6569f52
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.5-4.debian.tar.xz' gnutls28_3.8.5-4.debian.tar.xz 79316 SHA256:7bff2fddab7985d78f0c9881b8e6d4cd82632d98e0dc1c1517ff72a1a3b27b1b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.5-4/
 
-- https://sources.debian.net/src/gnutls28/3.8.5-4/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.5-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.5-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.11-4`
 
@@ -1195,21 +1169,13 @@ Licenses: (parsed from: `/usr/share/doc/libksba8/copyright`)
 - `GPL-3`
 - `LGPL-2.1-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libksba=1.6.6-1
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.6-1.dsc' libksba_1.6.6-1.dsc 2482 SHA256:2af17fecd955cc7b9d73c6b6179dbc6dcd30f56353070d67258f910987dab6fb
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.6.orig.tar.bz2' libksba_1.6.6.orig.tar.bz2 708510 SHA256:5dec033d211559338838c0c4957c73dfdc3ee86f73977d6279640c9cd08ce6a4
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.6.orig.tar.bz2.asc' libksba_1.6.6.orig.tar.bz2.asc 228 SHA256:09d3c401810fa97d7f8f09ce53a1d788894c220ff7ff52af48e4255477f029ea
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.6-1.debian.tar.xz' libksba_1.6.6-1.debian.tar.xz 14740 SHA256:152cc66cbcd7daa36a8a782d90ece18eca376f667135847f165c9589c8703b5e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libksba/1.6.6-1/
 
-- https://sources.debian.net/src/libksba/1.6.6-1/ (for browsing the source)
-- https://sources.debian.net/src/libksba/1.6.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libksba/1.6.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libmd=1.1.0-2`
 
@@ -2041,20 +2007,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=256.1-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.1-2.dsc' systemd_256.1-2.dsc 8094 SHA256:3d26da59b10c86055a6d5f00e86eec8801ff3a339644f1a7d340791e2f142110
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.1.orig.tar.gz' systemd_256.1.orig.tar.gz 15643508 SHA256:9c9243209e5b1bf429fc213ade6111a95769531a3a741bdf01c8a5dbeeab9f8a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.1-2.debian.tar.xz' systemd_256.1-2.debian.tar.xz 170600 SHA256:8c24fe98b93bb26b5fdf2a25054afa511069e01d5297bad4f5c5f30d2dd377df
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/256.1-2/
 
-- https://sources.debian.net/src/systemd/256.1-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/256.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/256.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.09-2`
 
@@ -2269,21 +2228,13 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 - `none`
 - `permissive-nowarranty`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.6.2-1
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.6.2-1.dsc' xz-utils_5.6.2-1.dsc 2694 SHA256:ec3beb78669834010236e697c573e4b7be7140e4fb3a8fadfa6c620a65a10073
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.6.2.orig.tar.xz' xz-utils_5.6.2.orig.tar.xz 1307448 SHA256:a9db3bb3d64e248a0fae963f8fb6ba851a26ba1822e504dc0efd18a80c626caf
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.6.2.orig.tar.xz.asc' xz-utils_5.6.2.orig.tar.xz.asc 833 SHA256:297c242cb55ae70242e8773ee8099c6561b9d8a49dab3b3cfccb33465c108e20
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.6.2-1.debian.tar.xz' xz-utils_5.6.2-1.debian.tar.xz 24480 SHA256:eea65995e4347059bab18f948ee8ed3e281ddd39cfc6d3e868e559e350a5617e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/xz-utils/5.6.2-1/
 
-- https://sources.debian.net/src/xz-utils/5.6.2-1/ (for browsing the source)
-- https://sources.debian.net/src/xz-utils/5.6.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xz-utils/5.6.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.1-1`
 
