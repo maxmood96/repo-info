@@ -1,10 +1,10 @@
-# `lightstreamer:7.4.2-jdk8-temurin`
+# `lightstreamer:7.4.4-jdk8-temurin`
 
 ## Docker Metadata
 
-- Image ID: `sha256:75140413610acaf5456c3cfea9fa605a938b51c13186f76000ea4b221486dbdf`
-- Created: `2024-07-02T08:56:14.47334872Z`
-- Virtual Size: ~ 395.51 Mb  
+- Image ID: `sha256:3ef318c13891a61101baf9de4bc86edbaa2d6f0d343fd3442fb5240dd3ef3f2e`
+- Created: `2024-07-09T19:20:25.781583937Z`
+- Virtual Size: ~ 395.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,8 +16,8 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk8u412-b08`
-  - `LIGHTSTREAMER_VERSION=7.4.2`
-  - `LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.2/Lightstreamer-7.4.2.tar.gz`
+  - `LIGHTSTREAMER_VERSION=7.4.4`
+  - `LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.4/Lightstreamer-7.4.4.tar.gz`
 - Labels:
   - `maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>`
   - `org.opencontainers.image.ref.name=ubuntu`
