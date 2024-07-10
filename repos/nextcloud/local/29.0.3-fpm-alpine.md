@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:318e68a6c366706026f9c0edb478ecbf0b4e9add6f7071730684faa224f00241`
-- Created: `2024-07-03T16:26:19.433040658Z`
-- Virtual Size: ~ 900.99 Mb  
+- Image ID: `sha256:9f86afa5ba5ebc456900143b241880cdbd5e5db58f2bc7e99113604859ead92f`
+- Created: `2024-07-06T04:49:57.149611141Z`
+- Virtual Size: ~ 902.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.20`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.20.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.20.tar.xz.asc`
-  - `PHP_SHA256=4474cc430febef6de7be958f2c37253e5524d5c5331a7e1765cd2d2234881e50`
+  - `PHP_VERSION=8.2.21`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.21.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.21.tar.xz.asc`
+  - `PHP_SHA256=8cc44d51bb2506399ec176f70fe110f0c9e1f7d852a5303a2cd1403402199707`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `NEXTCLOUD_VERSION=29.0.3`
@@ -302,16 +302,16 @@ Apache-2.0
 ### `apk` package: `curl`
 
 ```console
-curl-8.7.1-r0 description:
+curl-8.8.0-r0 description:
 URL retrival utility and library
 
-curl-8.7.1-r0 webpage:
+curl-8.8.0-r0 webpage:
 https://curl.se/
 
-curl-8.7.1-r0 installed size:
+curl-8.8.0-r0 installed size:
 244 KiB
 
-curl-8.7.1-r0 license:
+curl-8.8.0-r0 license:
 curl
 
 ```
@@ -880,16 +880,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.7.1-r0 description:
+libcurl-8.8.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.7.1-r0 webpage:
+libcurl-8.8.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.7.1-r0 installed size:
-604 KiB
+libcurl-8.8.0-r0 installed size:
+620 KiB
 
-libcurl-8.7.1-r0 license:
+libcurl-8.8.0-r0 license:
 curl
 
 ```
@@ -1679,16 +1679,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.62.0-r0 description:
+nghttp2-libs-1.62.1-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.62.0-r0 webpage:
+nghttp2-libs-1.62.1-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.62.0-r0 installed size:
+nghttp2-libs-1.62.1-r0 installed size:
 152 KiB
 
-nghttp2-libs-1.62.0-r0 license:
+nghttp2-libs-1.62.1-r0 license:
 MIT
 
 ```
