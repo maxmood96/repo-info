@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:175173ea11f136ec2e738bd3f8c8b664695f90ea56948e8358ba0d296c0dfc25`
-- Created: `2024-07-02T09:14:27.556012351Z`
+- Image ID: `sha256:2bc5f939e97671c9f05d1ea03af679266f73bd1d4a515862800ba72217cf9993`
+- Created: `2024-02-29T01:49:01Z`
 - Virtual Size: ~ 1.01 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2955,14 +2955,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.3.dsc' python3.10_3.10.12-1~22.04.3.dsc 3715 SHA512:15a6ba4e2315bc61bf08c81b7eb70ac1a26a967c6929648bd641f8451eff994b4ead860e4e6c7d2b1fc944615100c58f670c04a1624e17ff3b05e5605fe5ffaf
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.3.debian.tar.xz' python3.10_3.10.12-1~22.04.3.debian.tar.xz 221980 SHA512:7a7d89449ba4f5e55fad05a856d40e790e868e07873cc6287b1a215aec7081c17d19b1d58b64e771cb42810c93f5210a1f426a0d5cc24687b5d135fdfb084c72
-```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
