@@ -2910,58 +2910,58 @@ $ docker pull docker@sha256:7b02df60d1210ee490ea7afa59abbe82f20f73e8fccaa1f133bb
 ## `docker:24-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:15fe56d3ef8c7206002cc421b25f8a9bec21c81b75bd0e3e8cfaf3a3d326ea38
+$ docker pull docker@sha256:25b1d16736fea7ee2c9f923b0035bd2d61c2d4a9d9e2b8c56aca90d974f2b3eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 2
-	-	windows version 10.0.20348.2529; amd64
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.20348.2582; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:24-windowsservercore` - windows version 10.0.20348.2529; amd64
+### `docker:24-windowsservercore` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:de5819a7043391c1670b7820e7f73b4467473430a771fc41874b58e3bd8646c8
+$ docker pull docker@sha256:194d12f34321533455e0a6d8a307878155028bc2df5ad04d7de5f6ecfbdcf934
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2174765817 bytes)**  
+-	Total Size: **2.2 GB (2196140640 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2428f9f31268ab96a54ba57a500d0717c5955dcc631c8d00022a42a92b849bc5`
+-	Image ID: `sha256:aa10114b2705d48a8f2cec5e9bc26de5f056dc9c97dc4e59a3e80fddf37064f9`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Mon, 24 Jun 2024 23:04:17 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:10:45 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:04:28 GMT
+# Wed, 10 Jul 2024 17:10:59 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:04:29 GMT
+# Wed, 10 Jul 2024 17:11:00 GMT
 ENV DOCKER_VERSION=24.0.9
-# Mon, 24 Jun 2024 23:04:29 GMT
+# Wed, 10 Jul 2024 17:11:00 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-24.0.9.zip
-# Mon, 24 Jun 2024 23:04:40 GMT
+# Wed, 10 Jul 2024 17:11:10 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:41 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:04:42 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:04:42 GMT
+# Wed, 10 Jul 2024 17:11:12 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:04:50 GMT
+# Wed, 10 Jul 2024 17:11:19 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:50 GMT
+# Wed, 10 Jul 2024 17:11:20 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:04:51 GMT
+# Wed, 10 Jul 2024 17:11:20 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:04:51 GMT
+# Wed, 10 Jul 2024 17:11:21 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:04:58 GMT
+# Wed, 10 Jul 2024 17:11:28 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -2970,107 +2970,107 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46cdb728dcade1dfbb676d3f0090151f8864d45dc5edfd440973e4201569c004`  
-		Last Modified: Mon, 24 Jun 2024 23:05:04 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:ee3c4b7ad49e7c0623aa04428aa4e0cfce5aa8df80bbd3b49fd0fe35772d1134`  
+		Last Modified: Wed, 10 Jul 2024 17:11:34 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88ade9300c560496f7cdc001733b25672fba5a72cfa28f7d40d40ed32e42bb31`  
-		Last Modified: Mon, 24 Jun 2024 23:05:04 GMT  
-		Size: 357.3 KB (357310 bytes)  
+	-	`sha256:c007cd1296eb5606fc7aa95ade902bfbf2fe4c352cf66175087f396d1a32eb0d`  
+		Last Modified: Wed, 10 Jul 2024 17:11:34 GMT  
+		Size: 346.5 KB (346469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f5598c7c67e5743dcccb2febebb3a7a078448e14c5d66a05f9d81c24865b6a2`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 1.3 KB (1349 bytes)  
+	-	`sha256:b1e1d8b83cfb736d84179ae7ad5c0cb30982dbc81f189277d87c2fd84bc0d74a`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c7de294b472fc750b91c6b174f48324e25807fab0e125131338ba8a165dd313`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 1.3 KB (1322 bytes)  
+	-	`sha256:e1b5a6c765fadf1f188de56bdb51d7af113f665887f6ddea8864c7746e44f93d`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7249afeb10738bf998e72dfba31114a694917fdf7d67ee6930c90fe44738154`  
-		Last Modified: Mon, 24 Jun 2024 23:05:04 GMT  
-		Size: 17.5 MB (17530747 bytes)  
+	-	`sha256:e7b85fb709381b059ef276748a5727d8d0430e75e26d9e5c99b9defdd7c61a47`  
+		Last Modified: Wed, 10 Jul 2024 17:11:34 GMT  
+		Size: 17.5 MB (17521531 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c3afd34133f98dd5c41a0859989380dca73900367816d670d78f6134072e5f3`  
-		Last Modified: Mon, 24 Jun 2024 23:05:02 GMT  
-		Size: 1.4 KB (1362 bytes)  
+	-	`sha256:b1919c236acb977862332233810135d3878cb193cab09e0582ef5fb343eb5fb0`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42b2f9c43f74baaf7ae1c94f165992b9be2526711cd16cf9e04284a2e21b3d31`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.4 KB (1361 bytes)  
+	-	`sha256:307fcda4072a477c22e954a9ddaa0fe363682c5b105db7a827ff3c3caa39bf38`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1afa0a248cb4795107a2a5112bb0265368f0ebf642d7a431e5a80c37be85a500`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:3a3016d0d8be49d4bae8cc99773e449d3b8bfe9d6ce30f5a4a7763abeff5e3f2`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:069a7c40693eaf70d60567c11dd437320228f4645a3fa3176a68b50343066078`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 19.0 MB (19019671 bytes)  
+	-	`sha256:f636d5f3c2dc3f2cdb3d47746a0ad21862297aea193b488ae16ef7c25e60d38c`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
+		Size: 19.0 MB (19012878 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3242c30af80657f271922492f5097b46434e4804b1534eecdf03ac5de1caebb3`  
-		Last Modified: Mon, 24 Jun 2024 23:05:00 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:c89d770bf26a1728c3c86856e0c777e473e40eb95c36f4fd4d8d176d35f4faa8`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31dd49a32bac222630a515e11961ff52414366486e9ea18936af24b09a5c5ca6`  
-		Last Modified: Mon, 24 Jun 2024 23:05:00 GMT  
-		Size: 1.3 KB (1312 bytes)  
+	-	`sha256:4543a3fa5f708fc8997f9483ffc015da5346c4734125051e363f500fd7e717a1`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b078be3138bb88d303a34f4a898097450a98e14e54ff98403d3b8a9ede27382`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:eb926a22d5dd469272ecb98acdefd7a13360dabd639108371ea76a5c0341a7b9`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4af3a2dd20536be42541b68b3340e15b9e561521d909f4bc70fd556eda387b77`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 19.7 MB (19655913 bytes)  
+	-	`sha256:b45d3046eb21d9405953e3664bf6d9fdf7c40a159c31c8767f5134149bd315d7`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
+		Size: 19.6 MB (19647872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `docker:24-windowsservercore` - windows version 10.0.17763.5936; amd64
+### `docker:24-windowsservercore` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:a585f2ea7fd8eae8c9ab25681d1340f89a4f1a49d4eee94252f52587bc49ee8b
+$ docker pull docker@sha256:485cb698e1ad4b7fc56dc3483bdad4de3b54c35b2c76f25602e85487df96b8c2
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2277402926 bytes)**  
+-	Total Size: **2.3 GB (2295196482 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:560fbabc5df55163c1dd3bef0e43389328a0dc6e66411b4b81541f4f7c05ddc3`
+-	Image ID: `sha256:8594b0a04ec1045a09a553aab3ade24e0b23062f7c24d24075382bd8f2850b2b`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Mon, 24 Jun 2024 23:09:31 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:01:46 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:10:30 GMT
+# Wed, 10 Jul 2024 17:02:11 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:10:30 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 ENV DOCKER_VERSION=24.0.9
-# Mon, 24 Jun 2024 23:10:31 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-24.0.9.zip
-# Mon, 24 Jun 2024 23:10:56 GMT
+# Wed, 10 Jul 2024 17:02:38 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:10:57 GMT
+# Wed, 10 Jul 2024 17:02:39 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:10:57 GMT
+# Wed, 10 Jul 2024 17:02:40 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:10:58 GMT
+# Wed, 10 Jul 2024 17:02:40 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:11:18 GMT
+# Wed, 10 Jul 2024 17:03:05 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:11:19 GMT
+# Wed, 10 Jul 2024 17:03:06 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:11:20 GMT
+# Wed, 10 Jul 2024 17:03:06 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:11:20 GMT
+# Wed, 10 Jul 2024 17:03:07 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:11:41 GMT
+# Wed, 10 Jul 2024 17:03:32 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -3079,117 +3079,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aba539cbac6220e1e579bc52d723270dea2ed5bbc3af1422f1ac5d5f6ba7250e`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 1.3 KB (1274 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93251a246412f2d9a6ffca7de8330e2622bad6531b3808b871dcb69d7c64788d`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 492.3 KB (492251 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51c12a46f1198c30a4f99b63b57d0324f571b95bf8bae50e9d6edd03903601ff`  
-		Last Modified: Mon, 24 Jun 2024 23:11:45 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:035fe447c0d1ce8785ee0c1f80c82730d5db02efe5ea3297c7cb25b5553bb0e5`  
-		Last Modified: Mon, 24 Jun 2024 23:11:45 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8398c082f11273741bac43059742e7b6c3f5618a1b4ca5ea4bed5389f12012b7`  
-		Last Modified: Mon, 24 Jun 2024 23:11:47 GMT  
-		Size: 17.5 MB (17537369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f230be8915be76860cb11d4b8de220ff15bb3f6ce9514c94ab62834391b1e3e`  
-		Last Modified: Mon, 24 Jun 2024 23:11:44 GMT  
+	-	`sha256:791880e316d70246454593cfb05bd68dd2b77e6314d6fea7f35f6dad3a0ddf06`  
+		Last Modified: Wed, 10 Jul 2024 17:03:42 GMT  
 		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6473e70dba137279d3463de34ddaba4f40cddf2e46e37a3bde593f09643df13`  
-		Last Modified: Mon, 24 Jun 2024 23:11:44 GMT  
+	-	`sha256:39060024e553e3b771f4ae8c5729be08eef5d1e9e179512536b06b2cec67c659`  
+		Last Modified: Wed, 10 Jul 2024 17:03:41 GMT  
+		Size: 497.6 KB (497607 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4af4b5600671a6a579764200ff5ce1c86d5236afc958a6fb24bbed73dc5329d`  
+		Last Modified: Wed, 10 Jul 2024 17:03:40 GMT  
 		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5c00e09ca625fd0ba78b5e6f916fcf9588c706f01a780314adb88d7dd7f1f62`  
-		Last Modified: Mon, 24 Jun 2024 23:11:44 GMT  
+	-	`sha256:031447ffc974f2f40a662d082efb2196781fa5783c94db6500a2d69f5e894928`  
+		Last Modified: Wed, 10 Jul 2024 17:03:40 GMT  
+		Size: 1.3 KB (1295 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ff5a77c1d9a37711acc39ca2289bcf1918b4295d63e4f6d988295e325bf0611f`  
+		Last Modified: Wed, 10 Jul 2024 17:03:41 GMT  
+		Size: 17.5 MB (17548425 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7d752c363ad08143099fb43b393a940d72c64d74e92c3545519f5c99c69c869b`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 1.3 KB (1294 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a7da6681708cd02dc91f2aa1b0b2de39cea762f790aed674e65ba8eee4732f4e`  
+		Last Modified: Wed, 10 Jul 2024 17:03:37 GMT  
+		Size: 1.3 KB (1336 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4ad5abde98946a576a0279d6eb89e8347ffd448116981b56521c1066bbe7702`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f957a7ea90b60df6bbf7a0b999b5fc6150ef533b75014236daedab58b0236f3f`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 19.0 MB (19037539 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0f270231c0e4fca77d7c2246773c61fd44b008a5ffdf8d6652a78533cb5a8594`  
+		Last Modified: Wed, 10 Jul 2024 17:03:36 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3c8c741dcbb9892b592b6f6f89127067f5c2225b3b50943d4902bd94fdde9d8e`  
+		Last Modified: Wed, 10 Jul 2024 17:03:36 GMT  
 		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63c060c2c413f3d93a8cd8a9bae102d628e9b9cc5ad1231d53f2f0f0523247ba`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 19.0 MB (19026088 bytes)  
+	-	`sha256:677dfd1d1cf0664dc6eb47e9f9acf9c1960c26b398750d103759956f94775708`  
+		Last Modified: Wed, 10 Jul 2024 17:03:36 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a277ff30850d6b17053b5d65f9ef61b8053a5fcf7e220e87e6d930aa6b8c9f4f`  
-		Last Modified: Mon, 24 Jun 2024 23:11:43 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11dc89acae7fc8f1a0422d2f5487e481019a37526378e6a2c5335b5a72f9672d`  
-		Last Modified: Mon, 24 Jun 2024 23:11:43 GMT  
-		Size: 1.3 KB (1303 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0b3ee53a3776ab5834682145454a5ac346bdffbe1e98b8461e73c37931309e0`  
-		Last Modified: Mon, 24 Jun 2024 23:11:43 GMT  
-		Size: 1.3 KB (1304 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bb29dd799d383cb9a5adb58064d5882d420a42941f7582d8704d012e6e360a`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 19.7 MB (19654400 bytes)  
+	-	`sha256:9204510faa3c94fc400f42a25ffd526701c3ebded8971bac54dc8c8d2893fb40`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 19.7 MB (19671826 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:24-windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:751b2f8096c4850d0547d7d680981afccecea6f62cce91e9ae323da6c49738a0
+$ docker pull docker@sha256:d6fe41f7c27b1f582e8a05b5a3b7dc8113f50401ef36823e56a8d327bea49573
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:24-windowsservercore-1809` - windows version 10.0.17763.5936; amd64
+### `docker:24-windowsservercore-1809` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:a585f2ea7fd8eae8c9ab25681d1340f89a4f1a49d4eee94252f52587bc49ee8b
+$ docker pull docker@sha256:485cb698e1ad4b7fc56dc3483bdad4de3b54c35b2c76f25602e85487df96b8c2
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2277402926 bytes)**  
+-	Total Size: **2.3 GB (2295196482 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:560fbabc5df55163c1dd3bef0e43389328a0dc6e66411b4b81541f4f7c05ddc3`
+-	Image ID: `sha256:8594b0a04ec1045a09a553aab3ade24e0b23062f7c24d24075382bd8f2850b2b`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Mon, 24 Jun 2024 23:09:31 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:01:46 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:10:30 GMT
+# Wed, 10 Jul 2024 17:02:11 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:10:30 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 ENV DOCKER_VERSION=24.0.9
-# Mon, 24 Jun 2024 23:10:31 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-24.0.9.zip
-# Mon, 24 Jun 2024 23:10:56 GMT
+# Wed, 10 Jul 2024 17:02:38 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:10:57 GMT
+# Wed, 10 Jul 2024 17:02:39 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:10:57 GMT
+# Wed, 10 Jul 2024 17:02:40 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:10:58 GMT
+# Wed, 10 Jul 2024 17:02:40 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:11:18 GMT
+# Wed, 10 Jul 2024 17:03:05 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:11:19 GMT
+# Wed, 10 Jul 2024 17:03:06 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:11:20 GMT
+# Wed, 10 Jul 2024 17:03:06 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:11:20 GMT
+# Wed, 10 Jul 2024 17:03:07 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:11:41 GMT
+# Wed, 10 Jul 2024 17:03:32 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -3198,117 +3198,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aba539cbac6220e1e579bc52d723270dea2ed5bbc3af1422f1ac5d5f6ba7250e`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 1.3 KB (1274 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93251a246412f2d9a6ffca7de8330e2622bad6531b3808b871dcb69d7c64788d`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 492.3 KB (492251 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51c12a46f1198c30a4f99b63b57d0324f571b95bf8bae50e9d6edd03903601ff`  
-		Last Modified: Mon, 24 Jun 2024 23:11:45 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:035fe447c0d1ce8785ee0c1f80c82730d5db02efe5ea3297c7cb25b5553bb0e5`  
-		Last Modified: Mon, 24 Jun 2024 23:11:45 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8398c082f11273741bac43059742e7b6c3f5618a1b4ca5ea4bed5389f12012b7`  
-		Last Modified: Mon, 24 Jun 2024 23:11:47 GMT  
-		Size: 17.5 MB (17537369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f230be8915be76860cb11d4b8de220ff15bb3f6ce9514c94ab62834391b1e3e`  
-		Last Modified: Mon, 24 Jun 2024 23:11:44 GMT  
+	-	`sha256:791880e316d70246454593cfb05bd68dd2b77e6314d6fea7f35f6dad3a0ddf06`  
+		Last Modified: Wed, 10 Jul 2024 17:03:42 GMT  
 		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6473e70dba137279d3463de34ddaba4f40cddf2e46e37a3bde593f09643df13`  
-		Last Modified: Mon, 24 Jun 2024 23:11:44 GMT  
+	-	`sha256:39060024e553e3b771f4ae8c5729be08eef5d1e9e179512536b06b2cec67c659`  
+		Last Modified: Wed, 10 Jul 2024 17:03:41 GMT  
+		Size: 497.6 KB (497607 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4af4b5600671a6a579764200ff5ce1c86d5236afc958a6fb24bbed73dc5329d`  
+		Last Modified: Wed, 10 Jul 2024 17:03:40 GMT  
 		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5c00e09ca625fd0ba78b5e6f916fcf9588c706f01a780314adb88d7dd7f1f62`  
-		Last Modified: Mon, 24 Jun 2024 23:11:44 GMT  
+	-	`sha256:031447ffc974f2f40a662d082efb2196781fa5783c94db6500a2d69f5e894928`  
+		Last Modified: Wed, 10 Jul 2024 17:03:40 GMT  
+		Size: 1.3 KB (1295 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ff5a77c1d9a37711acc39ca2289bcf1918b4295d63e4f6d988295e325bf0611f`  
+		Last Modified: Wed, 10 Jul 2024 17:03:41 GMT  
+		Size: 17.5 MB (17548425 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7d752c363ad08143099fb43b393a940d72c64d74e92c3545519f5c99c69c869b`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 1.3 KB (1294 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a7da6681708cd02dc91f2aa1b0b2de39cea762f790aed674e65ba8eee4732f4e`  
+		Last Modified: Wed, 10 Jul 2024 17:03:37 GMT  
+		Size: 1.3 KB (1336 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4ad5abde98946a576a0279d6eb89e8347ffd448116981b56521c1066bbe7702`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f957a7ea90b60df6bbf7a0b999b5fc6150ef533b75014236daedab58b0236f3f`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 19.0 MB (19037539 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0f270231c0e4fca77d7c2246773c61fd44b008a5ffdf8d6652a78533cb5a8594`  
+		Last Modified: Wed, 10 Jul 2024 17:03:36 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3c8c741dcbb9892b592b6f6f89127067f5c2225b3b50943d4902bd94fdde9d8e`  
+		Last Modified: Wed, 10 Jul 2024 17:03:36 GMT  
 		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63c060c2c413f3d93a8cd8a9bae102d628e9b9cc5ad1231d53f2f0f0523247ba`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 19.0 MB (19026088 bytes)  
+	-	`sha256:677dfd1d1cf0664dc6eb47e9f9acf9c1960c26b398750d103759956f94775708`  
+		Last Modified: Wed, 10 Jul 2024 17:03:36 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a277ff30850d6b17053b5d65f9ef61b8053a5fcf7e220e87e6d930aa6b8c9f4f`  
-		Last Modified: Mon, 24 Jun 2024 23:11:43 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11dc89acae7fc8f1a0422d2f5487e481019a37526378e6a2c5335b5a72f9672d`  
-		Last Modified: Mon, 24 Jun 2024 23:11:43 GMT  
-		Size: 1.3 KB (1303 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0b3ee53a3776ab5834682145454a5ac346bdffbe1e98b8461e73c37931309e0`  
-		Last Modified: Mon, 24 Jun 2024 23:11:43 GMT  
-		Size: 1.3 KB (1304 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bb29dd799d383cb9a5adb58064d5882d420a42941f7582d8704d012e6e360a`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 19.7 MB (19654400 bytes)  
+	-	`sha256:9204510faa3c94fc400f42a25ffd526701c3ebded8971bac54dc8c8d2893fb40`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 19.7 MB (19671826 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:24-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull docker@sha256:0ace73fe07970f074d2faa55b2d0d4f6230d8c658ce2cb497bd1ebe21bf7008c
+$ docker pull docker@sha256:df32cce3267009db1f9304ee9010d4c4f8d331f8bef0ae5a7f94c460076504ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.2529; amd64
+	-	windows version 10.0.20348.2582; amd64
 
-### `docker:24-windowsservercore-ltsc2022` - windows version 10.0.20348.2529; amd64
+### `docker:24-windowsservercore-ltsc2022` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:de5819a7043391c1670b7820e7f73b4467473430a771fc41874b58e3bd8646c8
+$ docker pull docker@sha256:194d12f34321533455e0a6d8a307878155028bc2df5ad04d7de5f6ecfbdcf934
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2174765817 bytes)**  
+-	Total Size: **2.2 GB (2196140640 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2428f9f31268ab96a54ba57a500d0717c5955dcc631c8d00022a42a92b849bc5`
+-	Image ID: `sha256:aa10114b2705d48a8f2cec5e9bc26de5f056dc9c97dc4e59a3e80fddf37064f9`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Mon, 24 Jun 2024 23:04:17 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:10:45 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:04:28 GMT
+# Wed, 10 Jul 2024 17:10:59 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:04:29 GMT
+# Wed, 10 Jul 2024 17:11:00 GMT
 ENV DOCKER_VERSION=24.0.9
-# Mon, 24 Jun 2024 23:04:29 GMT
+# Wed, 10 Jul 2024 17:11:00 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-24.0.9.zip
-# Mon, 24 Jun 2024 23:04:40 GMT
+# Wed, 10 Jul 2024 17:11:10 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:41 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:04:42 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:04:42 GMT
+# Wed, 10 Jul 2024 17:11:12 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:04:50 GMT
+# Wed, 10 Jul 2024 17:11:19 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:50 GMT
+# Wed, 10 Jul 2024 17:11:20 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:04:51 GMT
+# Wed, 10 Jul 2024 17:11:20 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:04:51 GMT
+# Wed, 10 Jul 2024 17:11:21 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:04:58 GMT
+# Wed, 10 Jul 2024 17:11:28 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -3317,61 +3317,61 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46cdb728dcade1dfbb676d3f0090151f8864d45dc5edfd440973e4201569c004`  
-		Last Modified: Mon, 24 Jun 2024 23:05:04 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:ee3c4b7ad49e7c0623aa04428aa4e0cfce5aa8df80bbd3b49fd0fe35772d1134`  
+		Last Modified: Wed, 10 Jul 2024 17:11:34 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88ade9300c560496f7cdc001733b25672fba5a72cfa28f7d40d40ed32e42bb31`  
-		Last Modified: Mon, 24 Jun 2024 23:05:04 GMT  
-		Size: 357.3 KB (357310 bytes)  
+	-	`sha256:c007cd1296eb5606fc7aa95ade902bfbf2fe4c352cf66175087f396d1a32eb0d`  
+		Last Modified: Wed, 10 Jul 2024 17:11:34 GMT  
+		Size: 346.5 KB (346469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f5598c7c67e5743dcccb2febebb3a7a078448e14c5d66a05f9d81c24865b6a2`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 1.3 KB (1349 bytes)  
+	-	`sha256:b1e1d8b83cfb736d84179ae7ad5c0cb30982dbc81f189277d87c2fd84bc0d74a`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c7de294b472fc750b91c6b174f48324e25807fab0e125131338ba8a165dd313`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 1.3 KB (1322 bytes)  
+	-	`sha256:e1b5a6c765fadf1f188de56bdb51d7af113f665887f6ddea8864c7746e44f93d`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7249afeb10738bf998e72dfba31114a694917fdf7d67ee6930c90fe44738154`  
-		Last Modified: Mon, 24 Jun 2024 23:05:04 GMT  
-		Size: 17.5 MB (17530747 bytes)  
+	-	`sha256:e7b85fb709381b059ef276748a5727d8d0430e75e26d9e5c99b9defdd7c61a47`  
+		Last Modified: Wed, 10 Jul 2024 17:11:34 GMT  
+		Size: 17.5 MB (17521531 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c3afd34133f98dd5c41a0859989380dca73900367816d670d78f6134072e5f3`  
-		Last Modified: Mon, 24 Jun 2024 23:05:02 GMT  
-		Size: 1.4 KB (1362 bytes)  
+	-	`sha256:b1919c236acb977862332233810135d3878cb193cab09e0582ef5fb343eb5fb0`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42b2f9c43f74baaf7ae1c94f165992b9be2526711cd16cf9e04284a2e21b3d31`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.4 KB (1361 bytes)  
+	-	`sha256:307fcda4072a477c22e954a9ddaa0fe363682c5b105db7a827ff3c3caa39bf38`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1afa0a248cb4795107a2a5112bb0265368f0ebf642d7a431e5a80c37be85a500`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:3a3016d0d8be49d4bae8cc99773e449d3b8bfe9d6ce30f5a4a7763abeff5e3f2`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:069a7c40693eaf70d60567c11dd437320228f4645a3fa3176a68b50343066078`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 19.0 MB (19019671 bytes)  
+	-	`sha256:f636d5f3c2dc3f2cdb3d47746a0ad21862297aea193b488ae16ef7c25e60d38c`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
+		Size: 19.0 MB (19012878 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3242c30af80657f271922492f5097b46434e4804b1534eecdf03ac5de1caebb3`  
-		Last Modified: Mon, 24 Jun 2024 23:05:00 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:c89d770bf26a1728c3c86856e0c777e473e40eb95c36f4fd4d8d176d35f4faa8`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31dd49a32bac222630a515e11961ff52414366486e9ea18936af24b09a5c5ca6`  
-		Last Modified: Mon, 24 Jun 2024 23:05:00 GMT  
-		Size: 1.3 KB (1312 bytes)  
+	-	`sha256:4543a3fa5f708fc8997f9483ffc015da5346c4734125051e363f500fd7e717a1`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b078be3138bb88d303a34f4a898097450a98e14e54ff98403d3b8a9ede27382`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:eb926a22d5dd469272ecb98acdefd7a13360dabd639108371ea76a5c0341a7b9`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4af3a2dd20536be42541b68b3340e15b9e561521d909f4bc70fd556eda387b77`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 19.7 MB (19655913 bytes)  
+	-	`sha256:b45d3046eb21d9405953e3664bf6d9fdf7c40a159c31c8767f5134149bd315d7`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
+		Size: 19.6 MB (19647872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:24.0`
@@ -6172,58 +6172,58 @@ $ docker pull docker@sha256:7b02df60d1210ee490ea7afa59abbe82f20f73e8fccaa1f133bb
 ## `docker:24.0-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:15fe56d3ef8c7206002cc421b25f8a9bec21c81b75bd0e3e8cfaf3a3d326ea38
+$ docker pull docker@sha256:25b1d16736fea7ee2c9f923b0035bd2d61c2d4a9d9e2b8c56aca90d974f2b3eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 2
-	-	windows version 10.0.20348.2529; amd64
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.20348.2582; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:24.0-windowsservercore` - windows version 10.0.20348.2529; amd64
+### `docker:24.0-windowsservercore` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:de5819a7043391c1670b7820e7f73b4467473430a771fc41874b58e3bd8646c8
+$ docker pull docker@sha256:194d12f34321533455e0a6d8a307878155028bc2df5ad04d7de5f6ecfbdcf934
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2174765817 bytes)**  
+-	Total Size: **2.2 GB (2196140640 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2428f9f31268ab96a54ba57a500d0717c5955dcc631c8d00022a42a92b849bc5`
+-	Image ID: `sha256:aa10114b2705d48a8f2cec5e9bc26de5f056dc9c97dc4e59a3e80fddf37064f9`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Mon, 24 Jun 2024 23:04:17 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:10:45 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:04:28 GMT
+# Wed, 10 Jul 2024 17:10:59 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:04:29 GMT
+# Wed, 10 Jul 2024 17:11:00 GMT
 ENV DOCKER_VERSION=24.0.9
-# Mon, 24 Jun 2024 23:04:29 GMT
+# Wed, 10 Jul 2024 17:11:00 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-24.0.9.zip
-# Mon, 24 Jun 2024 23:04:40 GMT
+# Wed, 10 Jul 2024 17:11:10 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:41 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:04:42 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:04:42 GMT
+# Wed, 10 Jul 2024 17:11:12 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:04:50 GMT
+# Wed, 10 Jul 2024 17:11:19 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:50 GMT
+# Wed, 10 Jul 2024 17:11:20 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:04:51 GMT
+# Wed, 10 Jul 2024 17:11:20 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:04:51 GMT
+# Wed, 10 Jul 2024 17:11:21 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:04:58 GMT
+# Wed, 10 Jul 2024 17:11:28 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -6232,107 +6232,107 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46cdb728dcade1dfbb676d3f0090151f8864d45dc5edfd440973e4201569c004`  
-		Last Modified: Mon, 24 Jun 2024 23:05:04 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:ee3c4b7ad49e7c0623aa04428aa4e0cfce5aa8df80bbd3b49fd0fe35772d1134`  
+		Last Modified: Wed, 10 Jul 2024 17:11:34 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88ade9300c560496f7cdc001733b25672fba5a72cfa28f7d40d40ed32e42bb31`  
-		Last Modified: Mon, 24 Jun 2024 23:05:04 GMT  
-		Size: 357.3 KB (357310 bytes)  
+	-	`sha256:c007cd1296eb5606fc7aa95ade902bfbf2fe4c352cf66175087f396d1a32eb0d`  
+		Last Modified: Wed, 10 Jul 2024 17:11:34 GMT  
+		Size: 346.5 KB (346469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f5598c7c67e5743dcccb2febebb3a7a078448e14c5d66a05f9d81c24865b6a2`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 1.3 KB (1349 bytes)  
+	-	`sha256:b1e1d8b83cfb736d84179ae7ad5c0cb30982dbc81f189277d87c2fd84bc0d74a`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c7de294b472fc750b91c6b174f48324e25807fab0e125131338ba8a165dd313`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 1.3 KB (1322 bytes)  
+	-	`sha256:e1b5a6c765fadf1f188de56bdb51d7af113f665887f6ddea8864c7746e44f93d`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7249afeb10738bf998e72dfba31114a694917fdf7d67ee6930c90fe44738154`  
-		Last Modified: Mon, 24 Jun 2024 23:05:04 GMT  
-		Size: 17.5 MB (17530747 bytes)  
+	-	`sha256:e7b85fb709381b059ef276748a5727d8d0430e75e26d9e5c99b9defdd7c61a47`  
+		Last Modified: Wed, 10 Jul 2024 17:11:34 GMT  
+		Size: 17.5 MB (17521531 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c3afd34133f98dd5c41a0859989380dca73900367816d670d78f6134072e5f3`  
-		Last Modified: Mon, 24 Jun 2024 23:05:02 GMT  
-		Size: 1.4 KB (1362 bytes)  
+	-	`sha256:b1919c236acb977862332233810135d3878cb193cab09e0582ef5fb343eb5fb0`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42b2f9c43f74baaf7ae1c94f165992b9be2526711cd16cf9e04284a2e21b3d31`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.4 KB (1361 bytes)  
+	-	`sha256:307fcda4072a477c22e954a9ddaa0fe363682c5b105db7a827ff3c3caa39bf38`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1afa0a248cb4795107a2a5112bb0265368f0ebf642d7a431e5a80c37be85a500`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:3a3016d0d8be49d4bae8cc99773e449d3b8bfe9d6ce30f5a4a7763abeff5e3f2`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:069a7c40693eaf70d60567c11dd437320228f4645a3fa3176a68b50343066078`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 19.0 MB (19019671 bytes)  
+	-	`sha256:f636d5f3c2dc3f2cdb3d47746a0ad21862297aea193b488ae16ef7c25e60d38c`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
+		Size: 19.0 MB (19012878 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3242c30af80657f271922492f5097b46434e4804b1534eecdf03ac5de1caebb3`  
-		Last Modified: Mon, 24 Jun 2024 23:05:00 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:c89d770bf26a1728c3c86856e0c777e473e40eb95c36f4fd4d8d176d35f4faa8`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31dd49a32bac222630a515e11961ff52414366486e9ea18936af24b09a5c5ca6`  
-		Last Modified: Mon, 24 Jun 2024 23:05:00 GMT  
-		Size: 1.3 KB (1312 bytes)  
+	-	`sha256:4543a3fa5f708fc8997f9483ffc015da5346c4734125051e363f500fd7e717a1`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b078be3138bb88d303a34f4a898097450a98e14e54ff98403d3b8a9ede27382`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:eb926a22d5dd469272ecb98acdefd7a13360dabd639108371ea76a5c0341a7b9`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4af3a2dd20536be42541b68b3340e15b9e561521d909f4bc70fd556eda387b77`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 19.7 MB (19655913 bytes)  
+	-	`sha256:b45d3046eb21d9405953e3664bf6d9fdf7c40a159c31c8767f5134149bd315d7`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
+		Size: 19.6 MB (19647872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `docker:24.0-windowsservercore` - windows version 10.0.17763.5936; amd64
+### `docker:24.0-windowsservercore` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:a585f2ea7fd8eae8c9ab25681d1340f89a4f1a49d4eee94252f52587bc49ee8b
+$ docker pull docker@sha256:485cb698e1ad4b7fc56dc3483bdad4de3b54c35b2c76f25602e85487df96b8c2
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2277402926 bytes)**  
+-	Total Size: **2.3 GB (2295196482 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:560fbabc5df55163c1dd3bef0e43389328a0dc6e66411b4b81541f4f7c05ddc3`
+-	Image ID: `sha256:8594b0a04ec1045a09a553aab3ade24e0b23062f7c24d24075382bd8f2850b2b`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Mon, 24 Jun 2024 23:09:31 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:01:46 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:10:30 GMT
+# Wed, 10 Jul 2024 17:02:11 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:10:30 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 ENV DOCKER_VERSION=24.0.9
-# Mon, 24 Jun 2024 23:10:31 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-24.0.9.zip
-# Mon, 24 Jun 2024 23:10:56 GMT
+# Wed, 10 Jul 2024 17:02:38 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:10:57 GMT
+# Wed, 10 Jul 2024 17:02:39 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:10:57 GMT
+# Wed, 10 Jul 2024 17:02:40 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:10:58 GMT
+# Wed, 10 Jul 2024 17:02:40 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:11:18 GMT
+# Wed, 10 Jul 2024 17:03:05 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:11:19 GMT
+# Wed, 10 Jul 2024 17:03:06 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:11:20 GMT
+# Wed, 10 Jul 2024 17:03:06 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:11:20 GMT
+# Wed, 10 Jul 2024 17:03:07 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:11:41 GMT
+# Wed, 10 Jul 2024 17:03:32 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -6341,117 +6341,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aba539cbac6220e1e579bc52d723270dea2ed5bbc3af1422f1ac5d5f6ba7250e`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 1.3 KB (1274 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93251a246412f2d9a6ffca7de8330e2622bad6531b3808b871dcb69d7c64788d`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 492.3 KB (492251 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51c12a46f1198c30a4f99b63b57d0324f571b95bf8bae50e9d6edd03903601ff`  
-		Last Modified: Mon, 24 Jun 2024 23:11:45 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:035fe447c0d1ce8785ee0c1f80c82730d5db02efe5ea3297c7cb25b5553bb0e5`  
-		Last Modified: Mon, 24 Jun 2024 23:11:45 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8398c082f11273741bac43059742e7b6c3f5618a1b4ca5ea4bed5389f12012b7`  
-		Last Modified: Mon, 24 Jun 2024 23:11:47 GMT  
-		Size: 17.5 MB (17537369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f230be8915be76860cb11d4b8de220ff15bb3f6ce9514c94ab62834391b1e3e`  
-		Last Modified: Mon, 24 Jun 2024 23:11:44 GMT  
+	-	`sha256:791880e316d70246454593cfb05bd68dd2b77e6314d6fea7f35f6dad3a0ddf06`  
+		Last Modified: Wed, 10 Jul 2024 17:03:42 GMT  
 		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6473e70dba137279d3463de34ddaba4f40cddf2e46e37a3bde593f09643df13`  
-		Last Modified: Mon, 24 Jun 2024 23:11:44 GMT  
+	-	`sha256:39060024e553e3b771f4ae8c5729be08eef5d1e9e179512536b06b2cec67c659`  
+		Last Modified: Wed, 10 Jul 2024 17:03:41 GMT  
+		Size: 497.6 KB (497607 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4af4b5600671a6a579764200ff5ce1c86d5236afc958a6fb24bbed73dc5329d`  
+		Last Modified: Wed, 10 Jul 2024 17:03:40 GMT  
 		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5c00e09ca625fd0ba78b5e6f916fcf9588c706f01a780314adb88d7dd7f1f62`  
-		Last Modified: Mon, 24 Jun 2024 23:11:44 GMT  
+	-	`sha256:031447ffc974f2f40a662d082efb2196781fa5783c94db6500a2d69f5e894928`  
+		Last Modified: Wed, 10 Jul 2024 17:03:40 GMT  
+		Size: 1.3 KB (1295 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ff5a77c1d9a37711acc39ca2289bcf1918b4295d63e4f6d988295e325bf0611f`  
+		Last Modified: Wed, 10 Jul 2024 17:03:41 GMT  
+		Size: 17.5 MB (17548425 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7d752c363ad08143099fb43b393a940d72c64d74e92c3545519f5c99c69c869b`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 1.3 KB (1294 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a7da6681708cd02dc91f2aa1b0b2de39cea762f790aed674e65ba8eee4732f4e`  
+		Last Modified: Wed, 10 Jul 2024 17:03:37 GMT  
+		Size: 1.3 KB (1336 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4ad5abde98946a576a0279d6eb89e8347ffd448116981b56521c1066bbe7702`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f957a7ea90b60df6bbf7a0b999b5fc6150ef533b75014236daedab58b0236f3f`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 19.0 MB (19037539 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0f270231c0e4fca77d7c2246773c61fd44b008a5ffdf8d6652a78533cb5a8594`  
+		Last Modified: Wed, 10 Jul 2024 17:03:36 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3c8c741dcbb9892b592b6f6f89127067f5c2225b3b50943d4902bd94fdde9d8e`  
+		Last Modified: Wed, 10 Jul 2024 17:03:36 GMT  
 		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63c060c2c413f3d93a8cd8a9bae102d628e9b9cc5ad1231d53f2f0f0523247ba`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 19.0 MB (19026088 bytes)  
+	-	`sha256:677dfd1d1cf0664dc6eb47e9f9acf9c1960c26b398750d103759956f94775708`  
+		Last Modified: Wed, 10 Jul 2024 17:03:36 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a277ff30850d6b17053b5d65f9ef61b8053a5fcf7e220e87e6d930aa6b8c9f4f`  
-		Last Modified: Mon, 24 Jun 2024 23:11:43 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11dc89acae7fc8f1a0422d2f5487e481019a37526378e6a2c5335b5a72f9672d`  
-		Last Modified: Mon, 24 Jun 2024 23:11:43 GMT  
-		Size: 1.3 KB (1303 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0b3ee53a3776ab5834682145454a5ac346bdffbe1e98b8461e73c37931309e0`  
-		Last Modified: Mon, 24 Jun 2024 23:11:43 GMT  
-		Size: 1.3 KB (1304 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bb29dd799d383cb9a5adb58064d5882d420a42941f7582d8704d012e6e360a`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 19.7 MB (19654400 bytes)  
+	-	`sha256:9204510faa3c94fc400f42a25ffd526701c3ebded8971bac54dc8c8d2893fb40`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 19.7 MB (19671826 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:24.0-windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:751b2f8096c4850d0547d7d680981afccecea6f62cce91e9ae323da6c49738a0
+$ docker pull docker@sha256:d6fe41f7c27b1f582e8a05b5a3b7dc8113f50401ef36823e56a8d327bea49573
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:24.0-windowsservercore-1809` - windows version 10.0.17763.5936; amd64
+### `docker:24.0-windowsservercore-1809` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:a585f2ea7fd8eae8c9ab25681d1340f89a4f1a49d4eee94252f52587bc49ee8b
+$ docker pull docker@sha256:485cb698e1ad4b7fc56dc3483bdad4de3b54c35b2c76f25602e85487df96b8c2
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2277402926 bytes)**  
+-	Total Size: **2.3 GB (2295196482 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:560fbabc5df55163c1dd3bef0e43389328a0dc6e66411b4b81541f4f7c05ddc3`
+-	Image ID: `sha256:8594b0a04ec1045a09a553aab3ade24e0b23062f7c24d24075382bd8f2850b2b`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Mon, 24 Jun 2024 23:09:31 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:01:46 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:10:30 GMT
+# Wed, 10 Jul 2024 17:02:11 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:10:30 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 ENV DOCKER_VERSION=24.0.9
-# Mon, 24 Jun 2024 23:10:31 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-24.0.9.zip
-# Mon, 24 Jun 2024 23:10:56 GMT
+# Wed, 10 Jul 2024 17:02:38 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:10:57 GMT
+# Wed, 10 Jul 2024 17:02:39 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:10:57 GMT
+# Wed, 10 Jul 2024 17:02:40 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:10:58 GMT
+# Wed, 10 Jul 2024 17:02:40 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:11:18 GMT
+# Wed, 10 Jul 2024 17:03:05 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:11:19 GMT
+# Wed, 10 Jul 2024 17:03:06 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:11:20 GMT
+# Wed, 10 Jul 2024 17:03:06 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:11:20 GMT
+# Wed, 10 Jul 2024 17:03:07 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:11:41 GMT
+# Wed, 10 Jul 2024 17:03:32 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -6460,117 +6460,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aba539cbac6220e1e579bc52d723270dea2ed5bbc3af1422f1ac5d5f6ba7250e`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 1.3 KB (1274 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93251a246412f2d9a6ffca7de8330e2622bad6531b3808b871dcb69d7c64788d`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 492.3 KB (492251 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51c12a46f1198c30a4f99b63b57d0324f571b95bf8bae50e9d6edd03903601ff`  
-		Last Modified: Mon, 24 Jun 2024 23:11:45 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:035fe447c0d1ce8785ee0c1f80c82730d5db02efe5ea3297c7cb25b5553bb0e5`  
-		Last Modified: Mon, 24 Jun 2024 23:11:45 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8398c082f11273741bac43059742e7b6c3f5618a1b4ca5ea4bed5389f12012b7`  
-		Last Modified: Mon, 24 Jun 2024 23:11:47 GMT  
-		Size: 17.5 MB (17537369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f230be8915be76860cb11d4b8de220ff15bb3f6ce9514c94ab62834391b1e3e`  
-		Last Modified: Mon, 24 Jun 2024 23:11:44 GMT  
+	-	`sha256:791880e316d70246454593cfb05bd68dd2b77e6314d6fea7f35f6dad3a0ddf06`  
+		Last Modified: Wed, 10 Jul 2024 17:03:42 GMT  
 		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6473e70dba137279d3463de34ddaba4f40cddf2e46e37a3bde593f09643df13`  
-		Last Modified: Mon, 24 Jun 2024 23:11:44 GMT  
+	-	`sha256:39060024e553e3b771f4ae8c5729be08eef5d1e9e179512536b06b2cec67c659`  
+		Last Modified: Wed, 10 Jul 2024 17:03:41 GMT  
+		Size: 497.6 KB (497607 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4af4b5600671a6a579764200ff5ce1c86d5236afc958a6fb24bbed73dc5329d`  
+		Last Modified: Wed, 10 Jul 2024 17:03:40 GMT  
 		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5c00e09ca625fd0ba78b5e6f916fcf9588c706f01a780314adb88d7dd7f1f62`  
-		Last Modified: Mon, 24 Jun 2024 23:11:44 GMT  
+	-	`sha256:031447ffc974f2f40a662d082efb2196781fa5783c94db6500a2d69f5e894928`  
+		Last Modified: Wed, 10 Jul 2024 17:03:40 GMT  
+		Size: 1.3 KB (1295 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ff5a77c1d9a37711acc39ca2289bcf1918b4295d63e4f6d988295e325bf0611f`  
+		Last Modified: Wed, 10 Jul 2024 17:03:41 GMT  
+		Size: 17.5 MB (17548425 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7d752c363ad08143099fb43b393a940d72c64d74e92c3545519f5c99c69c869b`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 1.3 KB (1294 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a7da6681708cd02dc91f2aa1b0b2de39cea762f790aed674e65ba8eee4732f4e`  
+		Last Modified: Wed, 10 Jul 2024 17:03:37 GMT  
+		Size: 1.3 KB (1336 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4ad5abde98946a576a0279d6eb89e8347ffd448116981b56521c1066bbe7702`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f957a7ea90b60df6bbf7a0b999b5fc6150ef533b75014236daedab58b0236f3f`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 19.0 MB (19037539 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0f270231c0e4fca77d7c2246773c61fd44b008a5ffdf8d6652a78533cb5a8594`  
+		Last Modified: Wed, 10 Jul 2024 17:03:36 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3c8c741dcbb9892b592b6f6f89127067f5c2225b3b50943d4902bd94fdde9d8e`  
+		Last Modified: Wed, 10 Jul 2024 17:03:36 GMT  
 		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63c060c2c413f3d93a8cd8a9bae102d628e9b9cc5ad1231d53f2f0f0523247ba`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 19.0 MB (19026088 bytes)  
+	-	`sha256:677dfd1d1cf0664dc6eb47e9f9acf9c1960c26b398750d103759956f94775708`  
+		Last Modified: Wed, 10 Jul 2024 17:03:36 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a277ff30850d6b17053b5d65f9ef61b8053a5fcf7e220e87e6d930aa6b8c9f4f`  
-		Last Modified: Mon, 24 Jun 2024 23:11:43 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11dc89acae7fc8f1a0422d2f5487e481019a37526378e6a2c5335b5a72f9672d`  
-		Last Modified: Mon, 24 Jun 2024 23:11:43 GMT  
-		Size: 1.3 KB (1303 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0b3ee53a3776ab5834682145454a5ac346bdffbe1e98b8461e73c37931309e0`  
-		Last Modified: Mon, 24 Jun 2024 23:11:43 GMT  
-		Size: 1.3 KB (1304 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bb29dd799d383cb9a5adb58064d5882d420a42941f7582d8704d012e6e360a`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 19.7 MB (19654400 bytes)  
+	-	`sha256:9204510faa3c94fc400f42a25ffd526701c3ebded8971bac54dc8c8d2893fb40`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 19.7 MB (19671826 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:24.0-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull docker@sha256:0ace73fe07970f074d2faa55b2d0d4f6230d8c658ce2cb497bd1ebe21bf7008c
+$ docker pull docker@sha256:df32cce3267009db1f9304ee9010d4c4f8d331f8bef0ae5a7f94c460076504ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.2529; amd64
+	-	windows version 10.0.20348.2582; amd64
 
-### `docker:24.0-windowsservercore-ltsc2022` - windows version 10.0.20348.2529; amd64
+### `docker:24.0-windowsservercore-ltsc2022` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:de5819a7043391c1670b7820e7f73b4467473430a771fc41874b58e3bd8646c8
+$ docker pull docker@sha256:194d12f34321533455e0a6d8a307878155028bc2df5ad04d7de5f6ecfbdcf934
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2174765817 bytes)**  
+-	Total Size: **2.2 GB (2196140640 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2428f9f31268ab96a54ba57a500d0717c5955dcc631c8d00022a42a92b849bc5`
+-	Image ID: `sha256:aa10114b2705d48a8f2cec5e9bc26de5f056dc9c97dc4e59a3e80fddf37064f9`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Mon, 24 Jun 2024 23:04:17 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:10:45 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:04:28 GMT
+# Wed, 10 Jul 2024 17:10:59 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:04:29 GMT
+# Wed, 10 Jul 2024 17:11:00 GMT
 ENV DOCKER_VERSION=24.0.9
-# Mon, 24 Jun 2024 23:04:29 GMT
+# Wed, 10 Jul 2024 17:11:00 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-24.0.9.zip
-# Mon, 24 Jun 2024 23:04:40 GMT
+# Wed, 10 Jul 2024 17:11:10 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:41 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:04:42 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:04:42 GMT
+# Wed, 10 Jul 2024 17:11:12 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:04:50 GMT
+# Wed, 10 Jul 2024 17:11:19 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:50 GMT
+# Wed, 10 Jul 2024 17:11:20 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:04:51 GMT
+# Wed, 10 Jul 2024 17:11:20 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:04:51 GMT
+# Wed, 10 Jul 2024 17:11:21 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:04:58 GMT
+# Wed, 10 Jul 2024 17:11:28 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -6579,61 +6579,61 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46cdb728dcade1dfbb676d3f0090151f8864d45dc5edfd440973e4201569c004`  
-		Last Modified: Mon, 24 Jun 2024 23:05:04 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:ee3c4b7ad49e7c0623aa04428aa4e0cfce5aa8df80bbd3b49fd0fe35772d1134`  
+		Last Modified: Wed, 10 Jul 2024 17:11:34 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88ade9300c560496f7cdc001733b25672fba5a72cfa28f7d40d40ed32e42bb31`  
-		Last Modified: Mon, 24 Jun 2024 23:05:04 GMT  
-		Size: 357.3 KB (357310 bytes)  
+	-	`sha256:c007cd1296eb5606fc7aa95ade902bfbf2fe4c352cf66175087f396d1a32eb0d`  
+		Last Modified: Wed, 10 Jul 2024 17:11:34 GMT  
+		Size: 346.5 KB (346469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f5598c7c67e5743dcccb2febebb3a7a078448e14c5d66a05f9d81c24865b6a2`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 1.3 KB (1349 bytes)  
+	-	`sha256:b1e1d8b83cfb736d84179ae7ad5c0cb30982dbc81f189277d87c2fd84bc0d74a`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c7de294b472fc750b91c6b174f48324e25807fab0e125131338ba8a165dd313`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 1.3 KB (1322 bytes)  
+	-	`sha256:e1b5a6c765fadf1f188de56bdb51d7af113f665887f6ddea8864c7746e44f93d`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7249afeb10738bf998e72dfba31114a694917fdf7d67ee6930c90fe44738154`  
-		Last Modified: Mon, 24 Jun 2024 23:05:04 GMT  
-		Size: 17.5 MB (17530747 bytes)  
+	-	`sha256:e7b85fb709381b059ef276748a5727d8d0430e75e26d9e5c99b9defdd7c61a47`  
+		Last Modified: Wed, 10 Jul 2024 17:11:34 GMT  
+		Size: 17.5 MB (17521531 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c3afd34133f98dd5c41a0859989380dca73900367816d670d78f6134072e5f3`  
-		Last Modified: Mon, 24 Jun 2024 23:05:02 GMT  
-		Size: 1.4 KB (1362 bytes)  
+	-	`sha256:b1919c236acb977862332233810135d3878cb193cab09e0582ef5fb343eb5fb0`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42b2f9c43f74baaf7ae1c94f165992b9be2526711cd16cf9e04284a2e21b3d31`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.4 KB (1361 bytes)  
+	-	`sha256:307fcda4072a477c22e954a9ddaa0fe363682c5b105db7a827ff3c3caa39bf38`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1afa0a248cb4795107a2a5112bb0265368f0ebf642d7a431e5a80c37be85a500`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:3a3016d0d8be49d4bae8cc99773e449d3b8bfe9d6ce30f5a4a7763abeff5e3f2`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:069a7c40693eaf70d60567c11dd437320228f4645a3fa3176a68b50343066078`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 19.0 MB (19019671 bytes)  
+	-	`sha256:f636d5f3c2dc3f2cdb3d47746a0ad21862297aea193b488ae16ef7c25e60d38c`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
+		Size: 19.0 MB (19012878 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3242c30af80657f271922492f5097b46434e4804b1534eecdf03ac5de1caebb3`  
-		Last Modified: Mon, 24 Jun 2024 23:05:00 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:c89d770bf26a1728c3c86856e0c777e473e40eb95c36f4fd4d8d176d35f4faa8`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31dd49a32bac222630a515e11961ff52414366486e9ea18936af24b09a5c5ca6`  
-		Last Modified: Mon, 24 Jun 2024 23:05:00 GMT  
-		Size: 1.3 KB (1312 bytes)  
+	-	`sha256:4543a3fa5f708fc8997f9483ffc015da5346c4734125051e363f500fd7e717a1`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b078be3138bb88d303a34f4a898097450a98e14e54ff98403d3b8a9ede27382`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:eb926a22d5dd469272ecb98acdefd7a13360dabd639108371ea76a5c0341a7b9`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4af3a2dd20536be42541b68b3340e15b9e561521d909f4bc70fd556eda387b77`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 19.7 MB (19655913 bytes)  
+	-	`sha256:b45d3046eb21d9405953e3664bf6d9fdf7c40a159c31c8767f5134149bd315d7`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
+		Size: 19.6 MB (19647872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:24.0.9`
@@ -11189,58 +11189,58 @@ $ docker pull docker@sha256:7b02df60d1210ee490ea7afa59abbe82f20f73e8fccaa1f133bb
 ## `docker:24.0.9-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:15fe56d3ef8c7206002cc421b25f8a9bec21c81b75bd0e3e8cfaf3a3d326ea38
+$ docker pull docker@sha256:25b1d16736fea7ee2c9f923b0035bd2d61c2d4a9d9e2b8c56aca90d974f2b3eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 2
-	-	windows version 10.0.20348.2529; amd64
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.20348.2582; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:24.0.9-windowsservercore` - windows version 10.0.20348.2529; amd64
+### `docker:24.0.9-windowsservercore` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:de5819a7043391c1670b7820e7f73b4467473430a771fc41874b58e3bd8646c8
+$ docker pull docker@sha256:194d12f34321533455e0a6d8a307878155028bc2df5ad04d7de5f6ecfbdcf934
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2174765817 bytes)**  
+-	Total Size: **2.2 GB (2196140640 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2428f9f31268ab96a54ba57a500d0717c5955dcc631c8d00022a42a92b849bc5`
+-	Image ID: `sha256:aa10114b2705d48a8f2cec5e9bc26de5f056dc9c97dc4e59a3e80fddf37064f9`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Mon, 24 Jun 2024 23:04:17 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:10:45 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:04:28 GMT
+# Wed, 10 Jul 2024 17:10:59 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:04:29 GMT
+# Wed, 10 Jul 2024 17:11:00 GMT
 ENV DOCKER_VERSION=24.0.9
-# Mon, 24 Jun 2024 23:04:29 GMT
+# Wed, 10 Jul 2024 17:11:00 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-24.0.9.zip
-# Mon, 24 Jun 2024 23:04:40 GMT
+# Wed, 10 Jul 2024 17:11:10 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:41 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:04:42 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:04:42 GMT
+# Wed, 10 Jul 2024 17:11:12 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:04:50 GMT
+# Wed, 10 Jul 2024 17:11:19 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:50 GMT
+# Wed, 10 Jul 2024 17:11:20 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:04:51 GMT
+# Wed, 10 Jul 2024 17:11:20 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:04:51 GMT
+# Wed, 10 Jul 2024 17:11:21 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:04:58 GMT
+# Wed, 10 Jul 2024 17:11:28 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -11249,107 +11249,107 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46cdb728dcade1dfbb676d3f0090151f8864d45dc5edfd440973e4201569c004`  
-		Last Modified: Mon, 24 Jun 2024 23:05:04 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:ee3c4b7ad49e7c0623aa04428aa4e0cfce5aa8df80bbd3b49fd0fe35772d1134`  
+		Last Modified: Wed, 10 Jul 2024 17:11:34 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88ade9300c560496f7cdc001733b25672fba5a72cfa28f7d40d40ed32e42bb31`  
-		Last Modified: Mon, 24 Jun 2024 23:05:04 GMT  
-		Size: 357.3 KB (357310 bytes)  
+	-	`sha256:c007cd1296eb5606fc7aa95ade902bfbf2fe4c352cf66175087f396d1a32eb0d`  
+		Last Modified: Wed, 10 Jul 2024 17:11:34 GMT  
+		Size: 346.5 KB (346469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f5598c7c67e5743dcccb2febebb3a7a078448e14c5d66a05f9d81c24865b6a2`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 1.3 KB (1349 bytes)  
+	-	`sha256:b1e1d8b83cfb736d84179ae7ad5c0cb30982dbc81f189277d87c2fd84bc0d74a`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c7de294b472fc750b91c6b174f48324e25807fab0e125131338ba8a165dd313`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 1.3 KB (1322 bytes)  
+	-	`sha256:e1b5a6c765fadf1f188de56bdb51d7af113f665887f6ddea8864c7746e44f93d`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7249afeb10738bf998e72dfba31114a694917fdf7d67ee6930c90fe44738154`  
-		Last Modified: Mon, 24 Jun 2024 23:05:04 GMT  
-		Size: 17.5 MB (17530747 bytes)  
+	-	`sha256:e7b85fb709381b059ef276748a5727d8d0430e75e26d9e5c99b9defdd7c61a47`  
+		Last Modified: Wed, 10 Jul 2024 17:11:34 GMT  
+		Size: 17.5 MB (17521531 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c3afd34133f98dd5c41a0859989380dca73900367816d670d78f6134072e5f3`  
-		Last Modified: Mon, 24 Jun 2024 23:05:02 GMT  
-		Size: 1.4 KB (1362 bytes)  
+	-	`sha256:b1919c236acb977862332233810135d3878cb193cab09e0582ef5fb343eb5fb0`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42b2f9c43f74baaf7ae1c94f165992b9be2526711cd16cf9e04284a2e21b3d31`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.4 KB (1361 bytes)  
+	-	`sha256:307fcda4072a477c22e954a9ddaa0fe363682c5b105db7a827ff3c3caa39bf38`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1afa0a248cb4795107a2a5112bb0265368f0ebf642d7a431e5a80c37be85a500`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:3a3016d0d8be49d4bae8cc99773e449d3b8bfe9d6ce30f5a4a7763abeff5e3f2`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:069a7c40693eaf70d60567c11dd437320228f4645a3fa3176a68b50343066078`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 19.0 MB (19019671 bytes)  
+	-	`sha256:f636d5f3c2dc3f2cdb3d47746a0ad21862297aea193b488ae16ef7c25e60d38c`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
+		Size: 19.0 MB (19012878 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3242c30af80657f271922492f5097b46434e4804b1534eecdf03ac5de1caebb3`  
-		Last Modified: Mon, 24 Jun 2024 23:05:00 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:c89d770bf26a1728c3c86856e0c777e473e40eb95c36f4fd4d8d176d35f4faa8`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31dd49a32bac222630a515e11961ff52414366486e9ea18936af24b09a5c5ca6`  
-		Last Modified: Mon, 24 Jun 2024 23:05:00 GMT  
-		Size: 1.3 KB (1312 bytes)  
+	-	`sha256:4543a3fa5f708fc8997f9483ffc015da5346c4734125051e363f500fd7e717a1`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b078be3138bb88d303a34f4a898097450a98e14e54ff98403d3b8a9ede27382`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:eb926a22d5dd469272ecb98acdefd7a13360dabd639108371ea76a5c0341a7b9`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4af3a2dd20536be42541b68b3340e15b9e561521d909f4bc70fd556eda387b77`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 19.7 MB (19655913 bytes)  
+	-	`sha256:b45d3046eb21d9405953e3664bf6d9fdf7c40a159c31c8767f5134149bd315d7`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
+		Size: 19.6 MB (19647872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `docker:24.0.9-windowsservercore` - windows version 10.0.17763.5936; amd64
+### `docker:24.0.9-windowsservercore` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:a585f2ea7fd8eae8c9ab25681d1340f89a4f1a49d4eee94252f52587bc49ee8b
+$ docker pull docker@sha256:485cb698e1ad4b7fc56dc3483bdad4de3b54c35b2c76f25602e85487df96b8c2
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2277402926 bytes)**  
+-	Total Size: **2.3 GB (2295196482 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:560fbabc5df55163c1dd3bef0e43389328a0dc6e66411b4b81541f4f7c05ddc3`
+-	Image ID: `sha256:8594b0a04ec1045a09a553aab3ade24e0b23062f7c24d24075382bd8f2850b2b`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Mon, 24 Jun 2024 23:09:31 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:01:46 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:10:30 GMT
+# Wed, 10 Jul 2024 17:02:11 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:10:30 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 ENV DOCKER_VERSION=24.0.9
-# Mon, 24 Jun 2024 23:10:31 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-24.0.9.zip
-# Mon, 24 Jun 2024 23:10:56 GMT
+# Wed, 10 Jul 2024 17:02:38 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:10:57 GMT
+# Wed, 10 Jul 2024 17:02:39 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:10:57 GMT
+# Wed, 10 Jul 2024 17:02:40 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:10:58 GMT
+# Wed, 10 Jul 2024 17:02:40 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:11:18 GMT
+# Wed, 10 Jul 2024 17:03:05 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:11:19 GMT
+# Wed, 10 Jul 2024 17:03:06 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:11:20 GMT
+# Wed, 10 Jul 2024 17:03:06 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:11:20 GMT
+# Wed, 10 Jul 2024 17:03:07 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:11:41 GMT
+# Wed, 10 Jul 2024 17:03:32 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -11358,117 +11358,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aba539cbac6220e1e579bc52d723270dea2ed5bbc3af1422f1ac5d5f6ba7250e`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 1.3 KB (1274 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93251a246412f2d9a6ffca7de8330e2622bad6531b3808b871dcb69d7c64788d`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 492.3 KB (492251 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51c12a46f1198c30a4f99b63b57d0324f571b95bf8bae50e9d6edd03903601ff`  
-		Last Modified: Mon, 24 Jun 2024 23:11:45 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:035fe447c0d1ce8785ee0c1f80c82730d5db02efe5ea3297c7cb25b5553bb0e5`  
-		Last Modified: Mon, 24 Jun 2024 23:11:45 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8398c082f11273741bac43059742e7b6c3f5618a1b4ca5ea4bed5389f12012b7`  
-		Last Modified: Mon, 24 Jun 2024 23:11:47 GMT  
-		Size: 17.5 MB (17537369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f230be8915be76860cb11d4b8de220ff15bb3f6ce9514c94ab62834391b1e3e`  
-		Last Modified: Mon, 24 Jun 2024 23:11:44 GMT  
+	-	`sha256:791880e316d70246454593cfb05bd68dd2b77e6314d6fea7f35f6dad3a0ddf06`  
+		Last Modified: Wed, 10 Jul 2024 17:03:42 GMT  
 		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6473e70dba137279d3463de34ddaba4f40cddf2e46e37a3bde593f09643df13`  
-		Last Modified: Mon, 24 Jun 2024 23:11:44 GMT  
+	-	`sha256:39060024e553e3b771f4ae8c5729be08eef5d1e9e179512536b06b2cec67c659`  
+		Last Modified: Wed, 10 Jul 2024 17:03:41 GMT  
+		Size: 497.6 KB (497607 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4af4b5600671a6a579764200ff5ce1c86d5236afc958a6fb24bbed73dc5329d`  
+		Last Modified: Wed, 10 Jul 2024 17:03:40 GMT  
 		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5c00e09ca625fd0ba78b5e6f916fcf9588c706f01a780314adb88d7dd7f1f62`  
-		Last Modified: Mon, 24 Jun 2024 23:11:44 GMT  
+	-	`sha256:031447ffc974f2f40a662d082efb2196781fa5783c94db6500a2d69f5e894928`  
+		Last Modified: Wed, 10 Jul 2024 17:03:40 GMT  
+		Size: 1.3 KB (1295 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ff5a77c1d9a37711acc39ca2289bcf1918b4295d63e4f6d988295e325bf0611f`  
+		Last Modified: Wed, 10 Jul 2024 17:03:41 GMT  
+		Size: 17.5 MB (17548425 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7d752c363ad08143099fb43b393a940d72c64d74e92c3545519f5c99c69c869b`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 1.3 KB (1294 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a7da6681708cd02dc91f2aa1b0b2de39cea762f790aed674e65ba8eee4732f4e`  
+		Last Modified: Wed, 10 Jul 2024 17:03:37 GMT  
+		Size: 1.3 KB (1336 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4ad5abde98946a576a0279d6eb89e8347ffd448116981b56521c1066bbe7702`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f957a7ea90b60df6bbf7a0b999b5fc6150ef533b75014236daedab58b0236f3f`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 19.0 MB (19037539 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0f270231c0e4fca77d7c2246773c61fd44b008a5ffdf8d6652a78533cb5a8594`  
+		Last Modified: Wed, 10 Jul 2024 17:03:36 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3c8c741dcbb9892b592b6f6f89127067f5c2225b3b50943d4902bd94fdde9d8e`  
+		Last Modified: Wed, 10 Jul 2024 17:03:36 GMT  
 		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63c060c2c413f3d93a8cd8a9bae102d628e9b9cc5ad1231d53f2f0f0523247ba`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 19.0 MB (19026088 bytes)  
+	-	`sha256:677dfd1d1cf0664dc6eb47e9f9acf9c1960c26b398750d103759956f94775708`  
+		Last Modified: Wed, 10 Jul 2024 17:03:36 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a277ff30850d6b17053b5d65f9ef61b8053a5fcf7e220e87e6d930aa6b8c9f4f`  
-		Last Modified: Mon, 24 Jun 2024 23:11:43 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11dc89acae7fc8f1a0422d2f5487e481019a37526378e6a2c5335b5a72f9672d`  
-		Last Modified: Mon, 24 Jun 2024 23:11:43 GMT  
-		Size: 1.3 KB (1303 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0b3ee53a3776ab5834682145454a5ac346bdffbe1e98b8461e73c37931309e0`  
-		Last Modified: Mon, 24 Jun 2024 23:11:43 GMT  
-		Size: 1.3 KB (1304 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bb29dd799d383cb9a5adb58064d5882d420a42941f7582d8704d012e6e360a`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 19.7 MB (19654400 bytes)  
+	-	`sha256:9204510faa3c94fc400f42a25ffd526701c3ebded8971bac54dc8c8d2893fb40`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 19.7 MB (19671826 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:24.0.9-windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:751b2f8096c4850d0547d7d680981afccecea6f62cce91e9ae323da6c49738a0
+$ docker pull docker@sha256:d6fe41f7c27b1f582e8a05b5a3b7dc8113f50401ef36823e56a8d327bea49573
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:24.0.9-windowsservercore-1809` - windows version 10.0.17763.5936; amd64
+### `docker:24.0.9-windowsservercore-1809` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:a585f2ea7fd8eae8c9ab25681d1340f89a4f1a49d4eee94252f52587bc49ee8b
+$ docker pull docker@sha256:485cb698e1ad4b7fc56dc3483bdad4de3b54c35b2c76f25602e85487df96b8c2
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2277402926 bytes)**  
+-	Total Size: **2.3 GB (2295196482 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:560fbabc5df55163c1dd3bef0e43389328a0dc6e66411b4b81541f4f7c05ddc3`
+-	Image ID: `sha256:8594b0a04ec1045a09a553aab3ade24e0b23062f7c24d24075382bd8f2850b2b`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Mon, 24 Jun 2024 23:09:31 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:01:46 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:10:30 GMT
+# Wed, 10 Jul 2024 17:02:11 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:10:30 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 ENV DOCKER_VERSION=24.0.9
-# Mon, 24 Jun 2024 23:10:31 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-24.0.9.zip
-# Mon, 24 Jun 2024 23:10:56 GMT
+# Wed, 10 Jul 2024 17:02:38 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:10:57 GMT
+# Wed, 10 Jul 2024 17:02:39 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:10:57 GMT
+# Wed, 10 Jul 2024 17:02:40 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:10:58 GMT
+# Wed, 10 Jul 2024 17:02:40 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:11:18 GMT
+# Wed, 10 Jul 2024 17:03:05 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:11:19 GMT
+# Wed, 10 Jul 2024 17:03:06 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:11:20 GMT
+# Wed, 10 Jul 2024 17:03:06 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:11:20 GMT
+# Wed, 10 Jul 2024 17:03:07 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:11:41 GMT
+# Wed, 10 Jul 2024 17:03:32 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -11477,117 +11477,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aba539cbac6220e1e579bc52d723270dea2ed5bbc3af1422f1ac5d5f6ba7250e`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 1.3 KB (1274 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93251a246412f2d9a6ffca7de8330e2622bad6531b3808b871dcb69d7c64788d`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 492.3 KB (492251 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51c12a46f1198c30a4f99b63b57d0324f571b95bf8bae50e9d6edd03903601ff`  
-		Last Modified: Mon, 24 Jun 2024 23:11:45 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:035fe447c0d1ce8785ee0c1f80c82730d5db02efe5ea3297c7cb25b5553bb0e5`  
-		Last Modified: Mon, 24 Jun 2024 23:11:45 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8398c082f11273741bac43059742e7b6c3f5618a1b4ca5ea4bed5389f12012b7`  
-		Last Modified: Mon, 24 Jun 2024 23:11:47 GMT  
-		Size: 17.5 MB (17537369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f230be8915be76860cb11d4b8de220ff15bb3f6ce9514c94ab62834391b1e3e`  
-		Last Modified: Mon, 24 Jun 2024 23:11:44 GMT  
+	-	`sha256:791880e316d70246454593cfb05bd68dd2b77e6314d6fea7f35f6dad3a0ddf06`  
+		Last Modified: Wed, 10 Jul 2024 17:03:42 GMT  
 		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6473e70dba137279d3463de34ddaba4f40cddf2e46e37a3bde593f09643df13`  
-		Last Modified: Mon, 24 Jun 2024 23:11:44 GMT  
+	-	`sha256:39060024e553e3b771f4ae8c5729be08eef5d1e9e179512536b06b2cec67c659`  
+		Last Modified: Wed, 10 Jul 2024 17:03:41 GMT  
+		Size: 497.6 KB (497607 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4af4b5600671a6a579764200ff5ce1c86d5236afc958a6fb24bbed73dc5329d`  
+		Last Modified: Wed, 10 Jul 2024 17:03:40 GMT  
 		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5c00e09ca625fd0ba78b5e6f916fcf9588c706f01a780314adb88d7dd7f1f62`  
-		Last Modified: Mon, 24 Jun 2024 23:11:44 GMT  
+	-	`sha256:031447ffc974f2f40a662d082efb2196781fa5783c94db6500a2d69f5e894928`  
+		Last Modified: Wed, 10 Jul 2024 17:03:40 GMT  
+		Size: 1.3 KB (1295 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ff5a77c1d9a37711acc39ca2289bcf1918b4295d63e4f6d988295e325bf0611f`  
+		Last Modified: Wed, 10 Jul 2024 17:03:41 GMT  
+		Size: 17.5 MB (17548425 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7d752c363ad08143099fb43b393a940d72c64d74e92c3545519f5c99c69c869b`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 1.3 KB (1294 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a7da6681708cd02dc91f2aa1b0b2de39cea762f790aed674e65ba8eee4732f4e`  
+		Last Modified: Wed, 10 Jul 2024 17:03:37 GMT  
+		Size: 1.3 KB (1336 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4ad5abde98946a576a0279d6eb89e8347ffd448116981b56521c1066bbe7702`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f957a7ea90b60df6bbf7a0b999b5fc6150ef533b75014236daedab58b0236f3f`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 19.0 MB (19037539 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0f270231c0e4fca77d7c2246773c61fd44b008a5ffdf8d6652a78533cb5a8594`  
+		Last Modified: Wed, 10 Jul 2024 17:03:36 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3c8c741dcbb9892b592b6f6f89127067f5c2225b3b50943d4902bd94fdde9d8e`  
+		Last Modified: Wed, 10 Jul 2024 17:03:36 GMT  
 		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63c060c2c413f3d93a8cd8a9bae102d628e9b9cc5ad1231d53f2f0f0523247ba`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 19.0 MB (19026088 bytes)  
+	-	`sha256:677dfd1d1cf0664dc6eb47e9f9acf9c1960c26b398750d103759956f94775708`  
+		Last Modified: Wed, 10 Jul 2024 17:03:36 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a277ff30850d6b17053b5d65f9ef61b8053a5fcf7e220e87e6d930aa6b8c9f4f`  
-		Last Modified: Mon, 24 Jun 2024 23:11:43 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11dc89acae7fc8f1a0422d2f5487e481019a37526378e6a2c5335b5a72f9672d`  
-		Last Modified: Mon, 24 Jun 2024 23:11:43 GMT  
-		Size: 1.3 KB (1303 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0b3ee53a3776ab5834682145454a5ac346bdffbe1e98b8461e73c37931309e0`  
-		Last Modified: Mon, 24 Jun 2024 23:11:43 GMT  
-		Size: 1.3 KB (1304 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bb29dd799d383cb9a5adb58064d5882d420a42941f7582d8704d012e6e360a`  
-		Last Modified: Mon, 24 Jun 2024 23:11:46 GMT  
-		Size: 19.7 MB (19654400 bytes)  
+	-	`sha256:9204510faa3c94fc400f42a25ffd526701c3ebded8971bac54dc8c8d2893fb40`  
+		Last Modified: Wed, 10 Jul 2024 17:03:38 GMT  
+		Size: 19.7 MB (19671826 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:24.0.9-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull docker@sha256:0ace73fe07970f074d2faa55b2d0d4f6230d8c658ce2cb497bd1ebe21bf7008c
+$ docker pull docker@sha256:df32cce3267009db1f9304ee9010d4c4f8d331f8bef0ae5a7f94c460076504ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.2529; amd64
+	-	windows version 10.0.20348.2582; amd64
 
-### `docker:24.0.9-windowsservercore-ltsc2022` - windows version 10.0.20348.2529; amd64
+### `docker:24.0.9-windowsservercore-ltsc2022` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:de5819a7043391c1670b7820e7f73b4467473430a771fc41874b58e3bd8646c8
+$ docker pull docker@sha256:194d12f34321533455e0a6d8a307878155028bc2df5ad04d7de5f6ecfbdcf934
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2174765817 bytes)**  
+-	Total Size: **2.2 GB (2196140640 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2428f9f31268ab96a54ba57a500d0717c5955dcc631c8d00022a42a92b849bc5`
+-	Image ID: `sha256:aa10114b2705d48a8f2cec5e9bc26de5f056dc9c97dc4e59a3e80fddf37064f9`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Mon, 24 Jun 2024 23:04:17 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:10:45 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:04:28 GMT
+# Wed, 10 Jul 2024 17:10:59 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:04:29 GMT
+# Wed, 10 Jul 2024 17:11:00 GMT
 ENV DOCKER_VERSION=24.0.9
-# Mon, 24 Jun 2024 23:04:29 GMT
+# Wed, 10 Jul 2024 17:11:00 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-24.0.9.zip
-# Mon, 24 Jun 2024 23:04:40 GMT
+# Wed, 10 Jul 2024 17:11:10 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:41 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:04:42 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:04:42 GMT
+# Wed, 10 Jul 2024 17:11:12 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:04:50 GMT
+# Wed, 10 Jul 2024 17:11:19 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:50 GMT
+# Wed, 10 Jul 2024 17:11:20 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:04:51 GMT
+# Wed, 10 Jul 2024 17:11:20 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:04:51 GMT
+# Wed, 10 Jul 2024 17:11:21 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:04:58 GMT
+# Wed, 10 Jul 2024 17:11:28 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -11596,61 +11596,61 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46cdb728dcade1dfbb676d3f0090151f8864d45dc5edfd440973e4201569c004`  
-		Last Modified: Mon, 24 Jun 2024 23:05:04 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:ee3c4b7ad49e7c0623aa04428aa4e0cfce5aa8df80bbd3b49fd0fe35772d1134`  
+		Last Modified: Wed, 10 Jul 2024 17:11:34 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88ade9300c560496f7cdc001733b25672fba5a72cfa28f7d40d40ed32e42bb31`  
-		Last Modified: Mon, 24 Jun 2024 23:05:04 GMT  
-		Size: 357.3 KB (357310 bytes)  
+	-	`sha256:c007cd1296eb5606fc7aa95ade902bfbf2fe4c352cf66175087f396d1a32eb0d`  
+		Last Modified: Wed, 10 Jul 2024 17:11:34 GMT  
+		Size: 346.5 KB (346469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f5598c7c67e5743dcccb2febebb3a7a078448e14c5d66a05f9d81c24865b6a2`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 1.3 KB (1349 bytes)  
+	-	`sha256:b1e1d8b83cfb736d84179ae7ad5c0cb30982dbc81f189277d87c2fd84bc0d74a`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c7de294b472fc750b91c6b174f48324e25807fab0e125131338ba8a165dd313`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 1.3 KB (1322 bytes)  
+	-	`sha256:e1b5a6c765fadf1f188de56bdb51d7af113f665887f6ddea8864c7746e44f93d`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7249afeb10738bf998e72dfba31114a694917fdf7d67ee6930c90fe44738154`  
-		Last Modified: Mon, 24 Jun 2024 23:05:04 GMT  
-		Size: 17.5 MB (17530747 bytes)  
+	-	`sha256:e7b85fb709381b059ef276748a5727d8d0430e75e26d9e5c99b9defdd7c61a47`  
+		Last Modified: Wed, 10 Jul 2024 17:11:34 GMT  
+		Size: 17.5 MB (17521531 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c3afd34133f98dd5c41a0859989380dca73900367816d670d78f6134072e5f3`  
-		Last Modified: Mon, 24 Jun 2024 23:05:02 GMT  
-		Size: 1.4 KB (1362 bytes)  
+	-	`sha256:b1919c236acb977862332233810135d3878cb193cab09e0582ef5fb343eb5fb0`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42b2f9c43f74baaf7ae1c94f165992b9be2526711cd16cf9e04284a2e21b3d31`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.4 KB (1361 bytes)  
+	-	`sha256:307fcda4072a477c22e954a9ddaa0fe363682c5b105db7a827ff3c3caa39bf38`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1afa0a248cb4795107a2a5112bb0265368f0ebf642d7a431e5a80c37be85a500`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:3a3016d0d8be49d4bae8cc99773e449d3b8bfe9d6ce30f5a4a7763abeff5e3f2`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:069a7c40693eaf70d60567c11dd437320228f4645a3fa3176a68b50343066078`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 19.0 MB (19019671 bytes)  
+	-	`sha256:f636d5f3c2dc3f2cdb3d47746a0ad21862297aea193b488ae16ef7c25e60d38c`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
+		Size: 19.0 MB (19012878 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3242c30af80657f271922492f5097b46434e4804b1534eecdf03ac5de1caebb3`  
-		Last Modified: Mon, 24 Jun 2024 23:05:00 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:c89d770bf26a1728c3c86856e0c777e473e40eb95c36f4fd4d8d176d35f4faa8`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31dd49a32bac222630a515e11961ff52414366486e9ea18936af24b09a5c5ca6`  
-		Last Modified: Mon, 24 Jun 2024 23:05:00 GMT  
-		Size: 1.3 KB (1312 bytes)  
+	-	`sha256:4543a3fa5f708fc8997f9483ffc015da5346c4734125051e363f500fd7e717a1`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b078be3138bb88d303a34f4a898097450a98e14e54ff98403d3b8a9ede27382`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:eb926a22d5dd469272ecb98acdefd7a13360dabd639108371ea76a5c0341a7b9`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4af3a2dd20536be42541b68b3340e15b9e561521d909f4bc70fd556eda387b77`  
-		Last Modified: Mon, 24 Jun 2024 23:05:03 GMT  
-		Size: 19.7 MB (19655913 bytes)  
+	-	`sha256:b45d3046eb21d9405953e3664bf6d9fdf7c40a159c31c8767f5134149bd315d7`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
+		Size: 19.6 MB (19647872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:25`
@@ -14451,58 +14451,58 @@ $ docker pull docker@sha256:07ddce089784adb365fb0ab471f0d97743664f697ea10ce4b904
 ## `docker:25-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:1a522e5f311d5b646fb8ad6fc342f15f91e35393eaf31f8959c7c8ff1a138023
+$ docker pull docker@sha256:4741c9428e7579ef19a31e64e42849a22bcaefe5b7316b51f3a6df43c76f9399
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 2
-	-	windows version 10.0.20348.2529; amd64
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.20348.2582; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:25-windowsservercore` - windows version 10.0.20348.2529; amd64
+### `docker:25-windowsservercore` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:2c29af40935aceba1595595e0c769263b62ad37ba0358c6b5186f087bc547044
+$ docker pull docker@sha256:02b56e44bc5be5b485dcb428fa1adec821c3f1b1c503bc34dd82bf480e3c87cf
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2175300721 bytes)**  
+-	Total Size: **2.2 GB (2196759748 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ba278b991fe45b7289d5b00c26089137c6e610adba4493c1fdd0a3dfa291fb8`
+-	Image ID: `sha256:2af019b5eefecc9079376df2126b8ab8c213fbd9dbaf5c6382ec29df4d893c15`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Mon, 24 Jun 2024 23:04:18 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:10:45 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:04:28 GMT
+# Wed, 10 Jul 2024 17:10:59 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:04:28 GMT
+# Wed, 10 Jul 2024 17:10:59 GMT
 ENV DOCKER_VERSION=25.0.5
-# Mon, 24 Jun 2024 23:04:29 GMT
+# Wed, 10 Jul 2024 17:11:00 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-25.0.5.zip
-# Mon, 24 Jun 2024 23:04:38 GMT
+# Wed, 10 Jul 2024 17:11:09 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:39 GMT
+# Wed, 10 Jul 2024 17:11:10 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:04:40 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:04:40 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:04:47 GMT
+# Wed, 10 Jul 2024 17:11:18 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:48 GMT
+# Wed, 10 Jul 2024 17:11:19 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:04:48 GMT
+# Wed, 10 Jul 2024 17:11:19 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:04:49 GMT
+# Wed, 10 Jul 2024 17:11:20 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:04:56 GMT
+# Wed, 10 Jul 2024 17:11:26 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -14511,107 +14511,107 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3748d42dc0e5259e67f82a2e11b61aa77aa393a19b2f172078a7f272c2678e76`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1285 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c30ea1e085b1dd25cd3facc0b222560cdf92e785685d1458f995bae82375feea`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 355.9 KB (355917 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29dc88a06260288066e46ac8e15402dcb7992135e540bc8dec6fe138c4f54cfe`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1314 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11ed3cb69009b8c11287759962e5e9b436a48cedbb3bc56852765079dd941882`  
-		Last Modified: Mon, 24 Jun 2024 23:05:00 GMT  
-		Size: 1.3 KB (1290 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0221a2ea52e64ec05b3b5f6d0fd8e17b7dbf4c7a7e548464287cb371028d6086`  
-		Last Modified: Mon, 24 Jun 2024 23:05:02 GMT  
-		Size: 18.1 MB (18067951 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a10fc01583dcfc23bede2bcf44eac90c52a2ad64b6a1b6c04ec51bc781c92535`  
-		Last Modified: Mon, 24 Jun 2024 23:04:59 GMT  
+	-	`sha256:c3b74f68c4938e7ff57f6604e0e030c3c28800b5e0ef9e081a466b4825bceb04`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
 		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:609dc5121209c90648e892c6dce4acad1b7f646c375101a6bac734b223142f46`  
-		Last Modified: Mon, 24 Jun 2024 23:04:59 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:7a1644c48be4224d3dff2313824bc1eaa610fe24b342f7ff05788d19ce8024a2`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 366.0 KB (366002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e9b45da6e6af1bbb804402127960c0b7c2b8bb9f0d16aea4d656a0af3b77197`  
-		Last Modified: Mon, 24 Jun 2024 23:04:59 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:a27110530f5b4f051e95bd1fc39e0e5eb4f33d77ecbc3fd3aa5b181ad67a400e`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ca3e53a83f8a3187e7281d3605224911126df2ccadd5664dc6f3d4c340793e2`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 19.0 MB (19019407 bytes)  
+	-	`sha256:59aa5c734bc33836cfa13e6f9f052773f2b929e5b212958a965c36eea6ad4bac`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b07db5ca5025f5a215342fefe5986db1cbc82b12d2398360a3e96514602e2cf9`  
-		Last Modified: Mon, 24 Jun 2024 23:04:58 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:7786834cd4249b55f5994f4e534bce08c9b1fd39503acfe5ded65c1a678cb1b4`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 18.1 MB (18081324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f1f64ce6eb82d2501b880eb3216ca97e3012653fc950610d036cb0c110d7525`  
-		Last Modified: Mon, 24 Jun 2024 23:04:58 GMT  
+	-	`sha256:ec5ff667b4d8c7fca58e1648e22d58d09853918e24c33ced1e2a7db0ca7fad63`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:641b1371c1374dbfe7ab9a0a59bf49f63c5172de0b85940a191c146b0913c819`  
-		Last Modified: Mon, 24 Jun 2024 23:04:58 GMT  
-		Size: 1.3 KB (1296 bytes)  
+	-	`sha256:1099e6bd49626840a02e96dd68221957bb288fd70dc928b691c7836d25c3f6d6`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12aec8503f2b3c62234ed5811f1140ab032cfdc9427d7f4a6f09ed2cddfed6f3`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 19.7 MB (19655548 bytes)  
+	-	`sha256:f89156bf3fb91988bfb3abb98a012739cd552b5d372a18cf12db5cca9c72d681`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a1fc8f38452598d7e9f6cd14dfe954f6fc1cc456f25ad08be0bc35db210d9be7`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 19.0 MB (19033191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:25fe4efa2a4983dab58d221f9cd007de1e68b620e5c0ce6fc908f16b6bb490e8`  
+		Last Modified: Wed, 10 Jul 2024 17:11:29 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2c9991607cf91454884f0104af1f2dd4270b89eaf4bbec9bf07d21f74be38656`  
+		Last Modified: Wed, 10 Jul 2024 17:11:29 GMT  
+		Size: 1.3 KB (1289 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5ae2f63cea90617d6bee30f02be94cbaefff424098717a6912c4ec6e11614830`  
+		Last Modified: Wed, 10 Jul 2024 17:11:29 GMT  
+		Size: 1.3 KB (1281 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1f6ef700d84b18c701b905ab7136d5252b095d549c8de05d61dbd443623c2428`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 19.7 MB (19667324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `docker:25-windowsservercore` - windows version 10.0.17763.5936; amd64
+### `docker:25-windowsservercore` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:d129b6325908ffe268d4c631460e118897b8c6f138c75969ef1b351c8672939c
+$ docker pull docker@sha256:7675d6f0057bfdae1ddc60d534479636005599aea7959fb655cd1271a625fd60
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2277898303 bytes)**  
+-	Total Size: **2.3 GB (2295776383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f651bd10571fd06e5df6ec1eda12c9d8481342bc30ecb49be9f8d04de10366a`
+-	Image ID: `sha256:141e04e3f39bbbb315397aed3db4533392b74e0ceb860578a1ed509e790880f7`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Mon, 24 Jun 2024 23:01:20 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:26:54 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:01:47 GMT
+# Wed, 10 Jul 2024 17:28:30 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:01:48 GMT
+# Wed, 10 Jul 2024 17:28:31 GMT
 ENV DOCKER_VERSION=25.0.5
-# Mon, 24 Jun 2024 23:01:49 GMT
+# Wed, 10 Jul 2024 17:28:32 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-25.0.5.zip
-# Mon, 24 Jun 2024 23:02:10 GMT
+# Wed, 10 Jul 2024 17:29:00 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:11 GMT
+# Wed, 10 Jul 2024 17:29:01 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:02:11 GMT
+# Wed, 10 Jul 2024 17:29:01 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:02:12 GMT
+# Wed, 10 Jul 2024 17:29:02 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:02:33 GMT
+# Wed, 10 Jul 2024 17:29:27 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:33 GMT
+# Wed, 10 Jul 2024 17:29:29 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:02:34 GMT
+# Wed, 10 Jul 2024 17:29:29 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:02:34 GMT
+# Wed, 10 Jul 2024 17:29:30 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:02:55 GMT
+# Wed, 10 Jul 2024 17:29:54 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -14620,117 +14620,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86d318046e9bd440ea0ec9aa57ed990f601c21029c08febd870293f2ee967158`  
-		Last Modified: Mon, 24 Jun 2024 23:03:05 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:6e8f66fd22cdc8f3e3bfe3a847647973e79cc34369e8bee7c69523dbc0112dcf`  
+		Last Modified: Wed, 10 Jul 2024 17:30:06 GMT  
+		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80b6a96970d573ec6e9760a86cdc0a456dd6479574267f796ad43b792da32578`  
-		Last Modified: Mon, 24 Jun 2024 23:03:06 GMT  
-		Size: 481.5 KB (481492 bytes)  
+	-	`sha256:93c7fc8a462e2b6f38eb274fac3eb308131772dbc09518f7b79997167155edfe`  
+		Last Modified: Wed, 10 Jul 2024 17:30:05 GMT  
+		Size: 508.8 KB (508764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:495347e01dc603993c293020dfa6d661537b6cdbbec59f694b0d333d62ecd4d2`  
-		Last Modified: Mon, 24 Jun 2024 23:03:03 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21addd8bbb3c944e698a3c36527388b6ae41214fc6868a10b6eb31b503ebfe5e`  
-		Last Modified: Mon, 24 Jun 2024 23:03:03 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8520bffd5bd95254b22f2d3f5e6128851cdf49b89b4da1d0fd9edab4ca3d4964`  
-		Last Modified: Mon, 24 Jun 2024 23:03:05 GMT  
-		Size: 18.1 MB (18064503 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc09ff4cb1d375668d4c2e7a754eab22acd24a771a2610a0f98c0ff8c4dddeed`  
-		Last Modified: Mon, 24 Jun 2024 23:03:01 GMT  
+	-	`sha256:aec2fdb374d819425578056e973ff63ab24fe14b6ba377fe8ed89a4d008a55d8`  
+		Last Modified: Wed, 10 Jul 2024 17:30:04 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2998ec6e21ca6b19d5f95b35549574d844a66f0d3f16816d1bb3a32e34f98c7b`  
-		Last Modified: Mon, 24 Jun 2024 23:03:01 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:bf25cdf1e191d05e385398bd7e9e19f56b39c7293e516eaee73fa978a2c924f1`  
+		Last Modified: Wed, 10 Jul 2024 17:30:03 GMT  
+		Size: 1.3 KB (1305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fdd9aefd1b57666cc641e153d39b2ada8775b61ae32897a539f585c82278ec1`  
-		Last Modified: Mon, 24 Jun 2024 23:03:01 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:c4fc2bef58f81a34b232d166796cb7e544780ddd2662007a6aa5ae3ce88f5db2`  
+		Last Modified: Wed, 10 Jul 2024 17:30:05 GMT  
+		Size: 18.1 MB (18097888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71d2bd0fd170580a775f6ba04acdd55bab9fdcf6faac0c4f44b6e0b3d47309da`  
-		Last Modified: Mon, 24 Jun 2024 23:03:03 GMT  
-		Size: 19.0 MB (19015838 bytes)  
+	-	`sha256:880f0114cf26515a1f57187b2ebe52512b79f55de515e792892e055d255832c9`  
+		Last Modified: Wed, 10 Jul 2024 17:30:00 GMT  
+		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0251f15d108b52c6d86f976a7df10e9942230c2a9a246dc76cbf6dff16dac39`  
-		Last Modified: Mon, 24 Jun 2024 23:02:59 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:32dc6dbad2aae3ade89ad9b4fdaae1c4ff05ceb09a1f19fea0acaa3174efe76c`  
+		Last Modified: Wed, 10 Jul 2024 17:30:01 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36db4b9f4a5405193f29309425270265a175f5e11a80e35e4165b86069dd71cb`  
-		Last Modified: Mon, 24 Jun 2024 23:02:59 GMT  
-		Size: 1.3 KB (1302 bytes)  
+	-	`sha256:5b2d6791a7062a05ffdb7cddfc00b3bc970a48cb197f03c1472e60e32953abb4`  
+		Last Modified: Wed, 10 Jul 2024 17:30:00 GMT  
+		Size: 1.3 KB (1304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecfc5cacb05fa2d800e08dbe7e5e6d9c38bdefd6e2aa2226e5a0a468507ace40`  
-		Last Modified: Mon, 24 Jun 2024 23:02:59 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:71f3d161e348ac0623b3f4ffa87675a6229b57e00e6212438de67e67ab3f72ba`  
+		Last Modified: Wed, 10 Jul 2024 17:30:06 GMT  
+		Size: 19.0 MB (19047543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09c7b53da34a5b0befcc9d5790a2ada6eec7216121aff924dd1c7ac3d8891fb1`  
-		Last Modified: Mon, 24 Jun 2024 23:03:02 GMT  
-		Size: 19.6 MB (19643630 bytes)  
+	-	`sha256:4005b74d7caf94ce8aee5956ee03c53742e5c5c5c638c3db6708e183fd613277`  
+		Last Modified: Wed, 10 Jul 2024 17:29:58 GMT  
+		Size: 1.3 KB (1327 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:012569641b4a166a91ca17d2b91f10305c188b72f2bac87f5f80014763ebc656`  
+		Last Modified: Wed, 10 Jul 2024 17:29:59 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1e7d9dd27270c9a0acc020a8d8cb0e7f784a473b9052d6b4fbeb137b369b5af2`  
+		Last Modified: Wed, 10 Jul 2024 17:29:59 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8c625853f49d1b25c131e0faf0115aee786e9ebbeecb59806a5829c49cdcc363`  
+		Last Modified: Wed, 10 Jul 2024 17:30:02 GMT  
+		Size: 19.7 MB (19681065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:25-windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:6281bba9a9508f97847970535aace5e7b342fe395e32522c316f60c70e66547f
+$ docker pull docker@sha256:edc8cbda944d7eeb78a46409ca4afd3b92438619db259af3c80800df00f835a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:25-windowsservercore-1809` - windows version 10.0.17763.5936; amd64
+### `docker:25-windowsservercore-1809` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:d129b6325908ffe268d4c631460e118897b8c6f138c75969ef1b351c8672939c
+$ docker pull docker@sha256:7675d6f0057bfdae1ddc60d534479636005599aea7959fb655cd1271a625fd60
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2277898303 bytes)**  
+-	Total Size: **2.3 GB (2295776383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f651bd10571fd06e5df6ec1eda12c9d8481342bc30ecb49be9f8d04de10366a`
+-	Image ID: `sha256:141e04e3f39bbbb315397aed3db4533392b74e0ceb860578a1ed509e790880f7`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Mon, 24 Jun 2024 23:01:20 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:26:54 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:01:47 GMT
+# Wed, 10 Jul 2024 17:28:30 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:01:48 GMT
+# Wed, 10 Jul 2024 17:28:31 GMT
 ENV DOCKER_VERSION=25.0.5
-# Mon, 24 Jun 2024 23:01:49 GMT
+# Wed, 10 Jul 2024 17:28:32 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-25.0.5.zip
-# Mon, 24 Jun 2024 23:02:10 GMT
+# Wed, 10 Jul 2024 17:29:00 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:11 GMT
+# Wed, 10 Jul 2024 17:29:01 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:02:11 GMT
+# Wed, 10 Jul 2024 17:29:01 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:02:12 GMT
+# Wed, 10 Jul 2024 17:29:02 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:02:33 GMT
+# Wed, 10 Jul 2024 17:29:27 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:33 GMT
+# Wed, 10 Jul 2024 17:29:29 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:02:34 GMT
+# Wed, 10 Jul 2024 17:29:29 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:02:34 GMT
+# Wed, 10 Jul 2024 17:29:30 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:02:55 GMT
+# Wed, 10 Jul 2024 17:29:54 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -14739,117 +14739,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86d318046e9bd440ea0ec9aa57ed990f601c21029c08febd870293f2ee967158`  
-		Last Modified: Mon, 24 Jun 2024 23:03:05 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:6e8f66fd22cdc8f3e3bfe3a847647973e79cc34369e8bee7c69523dbc0112dcf`  
+		Last Modified: Wed, 10 Jul 2024 17:30:06 GMT  
+		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80b6a96970d573ec6e9760a86cdc0a456dd6479574267f796ad43b792da32578`  
-		Last Modified: Mon, 24 Jun 2024 23:03:06 GMT  
-		Size: 481.5 KB (481492 bytes)  
+	-	`sha256:93c7fc8a462e2b6f38eb274fac3eb308131772dbc09518f7b79997167155edfe`  
+		Last Modified: Wed, 10 Jul 2024 17:30:05 GMT  
+		Size: 508.8 KB (508764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:495347e01dc603993c293020dfa6d661537b6cdbbec59f694b0d333d62ecd4d2`  
-		Last Modified: Mon, 24 Jun 2024 23:03:03 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21addd8bbb3c944e698a3c36527388b6ae41214fc6868a10b6eb31b503ebfe5e`  
-		Last Modified: Mon, 24 Jun 2024 23:03:03 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8520bffd5bd95254b22f2d3f5e6128851cdf49b89b4da1d0fd9edab4ca3d4964`  
-		Last Modified: Mon, 24 Jun 2024 23:03:05 GMT  
-		Size: 18.1 MB (18064503 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc09ff4cb1d375668d4c2e7a754eab22acd24a771a2610a0f98c0ff8c4dddeed`  
-		Last Modified: Mon, 24 Jun 2024 23:03:01 GMT  
+	-	`sha256:aec2fdb374d819425578056e973ff63ab24fe14b6ba377fe8ed89a4d008a55d8`  
+		Last Modified: Wed, 10 Jul 2024 17:30:04 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2998ec6e21ca6b19d5f95b35549574d844a66f0d3f16816d1bb3a32e34f98c7b`  
-		Last Modified: Mon, 24 Jun 2024 23:03:01 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:bf25cdf1e191d05e385398bd7e9e19f56b39c7293e516eaee73fa978a2c924f1`  
+		Last Modified: Wed, 10 Jul 2024 17:30:03 GMT  
+		Size: 1.3 KB (1305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fdd9aefd1b57666cc641e153d39b2ada8775b61ae32897a539f585c82278ec1`  
-		Last Modified: Mon, 24 Jun 2024 23:03:01 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:c4fc2bef58f81a34b232d166796cb7e544780ddd2662007a6aa5ae3ce88f5db2`  
+		Last Modified: Wed, 10 Jul 2024 17:30:05 GMT  
+		Size: 18.1 MB (18097888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71d2bd0fd170580a775f6ba04acdd55bab9fdcf6faac0c4f44b6e0b3d47309da`  
-		Last Modified: Mon, 24 Jun 2024 23:03:03 GMT  
-		Size: 19.0 MB (19015838 bytes)  
+	-	`sha256:880f0114cf26515a1f57187b2ebe52512b79f55de515e792892e055d255832c9`  
+		Last Modified: Wed, 10 Jul 2024 17:30:00 GMT  
+		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0251f15d108b52c6d86f976a7df10e9942230c2a9a246dc76cbf6dff16dac39`  
-		Last Modified: Mon, 24 Jun 2024 23:02:59 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:32dc6dbad2aae3ade89ad9b4fdaae1c4ff05ceb09a1f19fea0acaa3174efe76c`  
+		Last Modified: Wed, 10 Jul 2024 17:30:01 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36db4b9f4a5405193f29309425270265a175f5e11a80e35e4165b86069dd71cb`  
-		Last Modified: Mon, 24 Jun 2024 23:02:59 GMT  
-		Size: 1.3 KB (1302 bytes)  
+	-	`sha256:5b2d6791a7062a05ffdb7cddfc00b3bc970a48cb197f03c1472e60e32953abb4`  
+		Last Modified: Wed, 10 Jul 2024 17:30:00 GMT  
+		Size: 1.3 KB (1304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecfc5cacb05fa2d800e08dbe7e5e6d9c38bdefd6e2aa2226e5a0a468507ace40`  
-		Last Modified: Mon, 24 Jun 2024 23:02:59 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:71f3d161e348ac0623b3f4ffa87675a6229b57e00e6212438de67e67ab3f72ba`  
+		Last Modified: Wed, 10 Jul 2024 17:30:06 GMT  
+		Size: 19.0 MB (19047543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09c7b53da34a5b0befcc9d5790a2ada6eec7216121aff924dd1c7ac3d8891fb1`  
-		Last Modified: Mon, 24 Jun 2024 23:03:02 GMT  
-		Size: 19.6 MB (19643630 bytes)  
+	-	`sha256:4005b74d7caf94ce8aee5956ee03c53742e5c5c5c638c3db6708e183fd613277`  
+		Last Modified: Wed, 10 Jul 2024 17:29:58 GMT  
+		Size: 1.3 KB (1327 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:012569641b4a166a91ca17d2b91f10305c188b72f2bac87f5f80014763ebc656`  
+		Last Modified: Wed, 10 Jul 2024 17:29:59 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1e7d9dd27270c9a0acc020a8d8cb0e7f784a473b9052d6b4fbeb137b369b5af2`  
+		Last Modified: Wed, 10 Jul 2024 17:29:59 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8c625853f49d1b25c131e0faf0115aee786e9ebbeecb59806a5829c49cdcc363`  
+		Last Modified: Wed, 10 Jul 2024 17:30:02 GMT  
+		Size: 19.7 MB (19681065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:25-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull docker@sha256:7f25799fddf9629a40a9f0a141e9cc57a194213891d9052a70d58e98fb0b8033
+$ docker pull docker@sha256:326191784f336686f7b1c1369983ea703d3619f6effee2ca65196d28feda5abe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.2529; amd64
+	-	windows version 10.0.20348.2582; amd64
 
-### `docker:25-windowsservercore-ltsc2022` - windows version 10.0.20348.2529; amd64
+### `docker:25-windowsservercore-ltsc2022` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:2c29af40935aceba1595595e0c769263b62ad37ba0358c6b5186f087bc547044
+$ docker pull docker@sha256:02b56e44bc5be5b485dcb428fa1adec821c3f1b1c503bc34dd82bf480e3c87cf
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2175300721 bytes)**  
+-	Total Size: **2.2 GB (2196759748 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ba278b991fe45b7289d5b00c26089137c6e610adba4493c1fdd0a3dfa291fb8`
+-	Image ID: `sha256:2af019b5eefecc9079376df2126b8ab8c213fbd9dbaf5c6382ec29df4d893c15`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Mon, 24 Jun 2024 23:04:18 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:10:45 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:04:28 GMT
+# Wed, 10 Jul 2024 17:10:59 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:04:28 GMT
+# Wed, 10 Jul 2024 17:10:59 GMT
 ENV DOCKER_VERSION=25.0.5
-# Mon, 24 Jun 2024 23:04:29 GMT
+# Wed, 10 Jul 2024 17:11:00 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-25.0.5.zip
-# Mon, 24 Jun 2024 23:04:38 GMT
+# Wed, 10 Jul 2024 17:11:09 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:39 GMT
+# Wed, 10 Jul 2024 17:11:10 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:04:40 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:04:40 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:04:47 GMT
+# Wed, 10 Jul 2024 17:11:18 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:48 GMT
+# Wed, 10 Jul 2024 17:11:19 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:04:48 GMT
+# Wed, 10 Jul 2024 17:11:19 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:04:49 GMT
+# Wed, 10 Jul 2024 17:11:20 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:04:56 GMT
+# Wed, 10 Jul 2024 17:11:26 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -14858,61 +14858,61 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3748d42dc0e5259e67f82a2e11b61aa77aa393a19b2f172078a7f272c2678e76`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1285 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c30ea1e085b1dd25cd3facc0b222560cdf92e785685d1458f995bae82375feea`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 355.9 KB (355917 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29dc88a06260288066e46ac8e15402dcb7992135e540bc8dec6fe138c4f54cfe`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1314 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11ed3cb69009b8c11287759962e5e9b436a48cedbb3bc56852765079dd941882`  
-		Last Modified: Mon, 24 Jun 2024 23:05:00 GMT  
-		Size: 1.3 KB (1290 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0221a2ea52e64ec05b3b5f6d0fd8e17b7dbf4c7a7e548464287cb371028d6086`  
-		Last Modified: Mon, 24 Jun 2024 23:05:02 GMT  
-		Size: 18.1 MB (18067951 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a10fc01583dcfc23bede2bcf44eac90c52a2ad64b6a1b6c04ec51bc781c92535`  
-		Last Modified: Mon, 24 Jun 2024 23:04:59 GMT  
+	-	`sha256:c3b74f68c4938e7ff57f6604e0e030c3c28800b5e0ef9e081a466b4825bceb04`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
 		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:609dc5121209c90648e892c6dce4acad1b7f646c375101a6bac734b223142f46`  
-		Last Modified: Mon, 24 Jun 2024 23:04:59 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:7a1644c48be4224d3dff2313824bc1eaa610fe24b342f7ff05788d19ce8024a2`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 366.0 KB (366002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e9b45da6e6af1bbb804402127960c0b7c2b8bb9f0d16aea4d656a0af3b77197`  
-		Last Modified: Mon, 24 Jun 2024 23:04:59 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:a27110530f5b4f051e95bd1fc39e0e5eb4f33d77ecbc3fd3aa5b181ad67a400e`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ca3e53a83f8a3187e7281d3605224911126df2ccadd5664dc6f3d4c340793e2`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 19.0 MB (19019407 bytes)  
+	-	`sha256:59aa5c734bc33836cfa13e6f9f052773f2b929e5b212958a965c36eea6ad4bac`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b07db5ca5025f5a215342fefe5986db1cbc82b12d2398360a3e96514602e2cf9`  
-		Last Modified: Mon, 24 Jun 2024 23:04:58 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:7786834cd4249b55f5994f4e534bce08c9b1fd39503acfe5ded65c1a678cb1b4`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 18.1 MB (18081324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f1f64ce6eb82d2501b880eb3216ca97e3012653fc950610d036cb0c110d7525`  
-		Last Modified: Mon, 24 Jun 2024 23:04:58 GMT  
+	-	`sha256:ec5ff667b4d8c7fca58e1648e22d58d09853918e24c33ced1e2a7db0ca7fad63`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:641b1371c1374dbfe7ab9a0a59bf49f63c5172de0b85940a191c146b0913c819`  
-		Last Modified: Mon, 24 Jun 2024 23:04:58 GMT  
-		Size: 1.3 KB (1296 bytes)  
+	-	`sha256:1099e6bd49626840a02e96dd68221957bb288fd70dc928b691c7836d25c3f6d6`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12aec8503f2b3c62234ed5811f1140ab032cfdc9427d7f4a6f09ed2cddfed6f3`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 19.7 MB (19655548 bytes)  
+	-	`sha256:f89156bf3fb91988bfb3abb98a012739cd552b5d372a18cf12db5cca9c72d681`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a1fc8f38452598d7e9f6cd14dfe954f6fc1cc456f25ad08be0bc35db210d9be7`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 19.0 MB (19033191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:25fe4efa2a4983dab58d221f9cd007de1e68b620e5c0ce6fc908f16b6bb490e8`  
+		Last Modified: Wed, 10 Jul 2024 17:11:29 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2c9991607cf91454884f0104af1f2dd4270b89eaf4bbec9bf07d21f74be38656`  
+		Last Modified: Wed, 10 Jul 2024 17:11:29 GMT  
+		Size: 1.3 KB (1289 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5ae2f63cea90617d6bee30f02be94cbaefff424098717a6912c4ec6e11614830`  
+		Last Modified: Wed, 10 Jul 2024 17:11:29 GMT  
+		Size: 1.3 KB (1281 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1f6ef700d84b18c701b905ab7136d5252b095d549c8de05d61dbd443623c2428`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 19.7 MB (19667324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:25.0`
@@ -17713,58 +17713,58 @@ $ docker pull docker@sha256:07ddce089784adb365fb0ab471f0d97743664f697ea10ce4b904
 ## `docker:25.0-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:1a522e5f311d5b646fb8ad6fc342f15f91e35393eaf31f8959c7c8ff1a138023
+$ docker pull docker@sha256:4741c9428e7579ef19a31e64e42849a22bcaefe5b7316b51f3a6df43c76f9399
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 2
-	-	windows version 10.0.20348.2529; amd64
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.20348.2582; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:25.0-windowsservercore` - windows version 10.0.20348.2529; amd64
+### `docker:25.0-windowsservercore` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:2c29af40935aceba1595595e0c769263b62ad37ba0358c6b5186f087bc547044
+$ docker pull docker@sha256:02b56e44bc5be5b485dcb428fa1adec821c3f1b1c503bc34dd82bf480e3c87cf
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2175300721 bytes)**  
+-	Total Size: **2.2 GB (2196759748 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ba278b991fe45b7289d5b00c26089137c6e610adba4493c1fdd0a3dfa291fb8`
+-	Image ID: `sha256:2af019b5eefecc9079376df2126b8ab8c213fbd9dbaf5c6382ec29df4d893c15`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Mon, 24 Jun 2024 23:04:18 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:10:45 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:04:28 GMT
+# Wed, 10 Jul 2024 17:10:59 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:04:28 GMT
+# Wed, 10 Jul 2024 17:10:59 GMT
 ENV DOCKER_VERSION=25.0.5
-# Mon, 24 Jun 2024 23:04:29 GMT
+# Wed, 10 Jul 2024 17:11:00 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-25.0.5.zip
-# Mon, 24 Jun 2024 23:04:38 GMT
+# Wed, 10 Jul 2024 17:11:09 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:39 GMT
+# Wed, 10 Jul 2024 17:11:10 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:04:40 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:04:40 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:04:47 GMT
+# Wed, 10 Jul 2024 17:11:18 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:48 GMT
+# Wed, 10 Jul 2024 17:11:19 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:04:48 GMT
+# Wed, 10 Jul 2024 17:11:19 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:04:49 GMT
+# Wed, 10 Jul 2024 17:11:20 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:04:56 GMT
+# Wed, 10 Jul 2024 17:11:26 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -17773,107 +17773,107 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3748d42dc0e5259e67f82a2e11b61aa77aa393a19b2f172078a7f272c2678e76`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1285 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c30ea1e085b1dd25cd3facc0b222560cdf92e785685d1458f995bae82375feea`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 355.9 KB (355917 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29dc88a06260288066e46ac8e15402dcb7992135e540bc8dec6fe138c4f54cfe`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1314 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11ed3cb69009b8c11287759962e5e9b436a48cedbb3bc56852765079dd941882`  
-		Last Modified: Mon, 24 Jun 2024 23:05:00 GMT  
-		Size: 1.3 KB (1290 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0221a2ea52e64ec05b3b5f6d0fd8e17b7dbf4c7a7e548464287cb371028d6086`  
-		Last Modified: Mon, 24 Jun 2024 23:05:02 GMT  
-		Size: 18.1 MB (18067951 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a10fc01583dcfc23bede2bcf44eac90c52a2ad64b6a1b6c04ec51bc781c92535`  
-		Last Modified: Mon, 24 Jun 2024 23:04:59 GMT  
+	-	`sha256:c3b74f68c4938e7ff57f6604e0e030c3c28800b5e0ef9e081a466b4825bceb04`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
 		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:609dc5121209c90648e892c6dce4acad1b7f646c375101a6bac734b223142f46`  
-		Last Modified: Mon, 24 Jun 2024 23:04:59 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:7a1644c48be4224d3dff2313824bc1eaa610fe24b342f7ff05788d19ce8024a2`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 366.0 KB (366002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e9b45da6e6af1bbb804402127960c0b7c2b8bb9f0d16aea4d656a0af3b77197`  
-		Last Modified: Mon, 24 Jun 2024 23:04:59 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:a27110530f5b4f051e95bd1fc39e0e5eb4f33d77ecbc3fd3aa5b181ad67a400e`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ca3e53a83f8a3187e7281d3605224911126df2ccadd5664dc6f3d4c340793e2`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 19.0 MB (19019407 bytes)  
+	-	`sha256:59aa5c734bc33836cfa13e6f9f052773f2b929e5b212958a965c36eea6ad4bac`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b07db5ca5025f5a215342fefe5986db1cbc82b12d2398360a3e96514602e2cf9`  
-		Last Modified: Mon, 24 Jun 2024 23:04:58 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:7786834cd4249b55f5994f4e534bce08c9b1fd39503acfe5ded65c1a678cb1b4`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 18.1 MB (18081324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f1f64ce6eb82d2501b880eb3216ca97e3012653fc950610d036cb0c110d7525`  
-		Last Modified: Mon, 24 Jun 2024 23:04:58 GMT  
+	-	`sha256:ec5ff667b4d8c7fca58e1648e22d58d09853918e24c33ced1e2a7db0ca7fad63`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:641b1371c1374dbfe7ab9a0a59bf49f63c5172de0b85940a191c146b0913c819`  
-		Last Modified: Mon, 24 Jun 2024 23:04:58 GMT  
-		Size: 1.3 KB (1296 bytes)  
+	-	`sha256:1099e6bd49626840a02e96dd68221957bb288fd70dc928b691c7836d25c3f6d6`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12aec8503f2b3c62234ed5811f1140ab032cfdc9427d7f4a6f09ed2cddfed6f3`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 19.7 MB (19655548 bytes)  
+	-	`sha256:f89156bf3fb91988bfb3abb98a012739cd552b5d372a18cf12db5cca9c72d681`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a1fc8f38452598d7e9f6cd14dfe954f6fc1cc456f25ad08be0bc35db210d9be7`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 19.0 MB (19033191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:25fe4efa2a4983dab58d221f9cd007de1e68b620e5c0ce6fc908f16b6bb490e8`  
+		Last Modified: Wed, 10 Jul 2024 17:11:29 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2c9991607cf91454884f0104af1f2dd4270b89eaf4bbec9bf07d21f74be38656`  
+		Last Modified: Wed, 10 Jul 2024 17:11:29 GMT  
+		Size: 1.3 KB (1289 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5ae2f63cea90617d6bee30f02be94cbaefff424098717a6912c4ec6e11614830`  
+		Last Modified: Wed, 10 Jul 2024 17:11:29 GMT  
+		Size: 1.3 KB (1281 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1f6ef700d84b18c701b905ab7136d5252b095d549c8de05d61dbd443623c2428`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 19.7 MB (19667324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `docker:25.0-windowsservercore` - windows version 10.0.17763.5936; amd64
+### `docker:25.0-windowsservercore` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:d129b6325908ffe268d4c631460e118897b8c6f138c75969ef1b351c8672939c
+$ docker pull docker@sha256:7675d6f0057bfdae1ddc60d534479636005599aea7959fb655cd1271a625fd60
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2277898303 bytes)**  
+-	Total Size: **2.3 GB (2295776383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f651bd10571fd06e5df6ec1eda12c9d8481342bc30ecb49be9f8d04de10366a`
+-	Image ID: `sha256:141e04e3f39bbbb315397aed3db4533392b74e0ceb860578a1ed509e790880f7`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Mon, 24 Jun 2024 23:01:20 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:26:54 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:01:47 GMT
+# Wed, 10 Jul 2024 17:28:30 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:01:48 GMT
+# Wed, 10 Jul 2024 17:28:31 GMT
 ENV DOCKER_VERSION=25.0.5
-# Mon, 24 Jun 2024 23:01:49 GMT
+# Wed, 10 Jul 2024 17:28:32 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-25.0.5.zip
-# Mon, 24 Jun 2024 23:02:10 GMT
+# Wed, 10 Jul 2024 17:29:00 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:11 GMT
+# Wed, 10 Jul 2024 17:29:01 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:02:11 GMT
+# Wed, 10 Jul 2024 17:29:01 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:02:12 GMT
+# Wed, 10 Jul 2024 17:29:02 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:02:33 GMT
+# Wed, 10 Jul 2024 17:29:27 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:33 GMT
+# Wed, 10 Jul 2024 17:29:29 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:02:34 GMT
+# Wed, 10 Jul 2024 17:29:29 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:02:34 GMT
+# Wed, 10 Jul 2024 17:29:30 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:02:55 GMT
+# Wed, 10 Jul 2024 17:29:54 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -17882,117 +17882,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86d318046e9bd440ea0ec9aa57ed990f601c21029c08febd870293f2ee967158`  
-		Last Modified: Mon, 24 Jun 2024 23:03:05 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:6e8f66fd22cdc8f3e3bfe3a847647973e79cc34369e8bee7c69523dbc0112dcf`  
+		Last Modified: Wed, 10 Jul 2024 17:30:06 GMT  
+		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80b6a96970d573ec6e9760a86cdc0a456dd6479574267f796ad43b792da32578`  
-		Last Modified: Mon, 24 Jun 2024 23:03:06 GMT  
-		Size: 481.5 KB (481492 bytes)  
+	-	`sha256:93c7fc8a462e2b6f38eb274fac3eb308131772dbc09518f7b79997167155edfe`  
+		Last Modified: Wed, 10 Jul 2024 17:30:05 GMT  
+		Size: 508.8 KB (508764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:495347e01dc603993c293020dfa6d661537b6cdbbec59f694b0d333d62ecd4d2`  
-		Last Modified: Mon, 24 Jun 2024 23:03:03 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21addd8bbb3c944e698a3c36527388b6ae41214fc6868a10b6eb31b503ebfe5e`  
-		Last Modified: Mon, 24 Jun 2024 23:03:03 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8520bffd5bd95254b22f2d3f5e6128851cdf49b89b4da1d0fd9edab4ca3d4964`  
-		Last Modified: Mon, 24 Jun 2024 23:03:05 GMT  
-		Size: 18.1 MB (18064503 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc09ff4cb1d375668d4c2e7a754eab22acd24a771a2610a0f98c0ff8c4dddeed`  
-		Last Modified: Mon, 24 Jun 2024 23:03:01 GMT  
+	-	`sha256:aec2fdb374d819425578056e973ff63ab24fe14b6ba377fe8ed89a4d008a55d8`  
+		Last Modified: Wed, 10 Jul 2024 17:30:04 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2998ec6e21ca6b19d5f95b35549574d844a66f0d3f16816d1bb3a32e34f98c7b`  
-		Last Modified: Mon, 24 Jun 2024 23:03:01 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:bf25cdf1e191d05e385398bd7e9e19f56b39c7293e516eaee73fa978a2c924f1`  
+		Last Modified: Wed, 10 Jul 2024 17:30:03 GMT  
+		Size: 1.3 KB (1305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fdd9aefd1b57666cc641e153d39b2ada8775b61ae32897a539f585c82278ec1`  
-		Last Modified: Mon, 24 Jun 2024 23:03:01 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:c4fc2bef58f81a34b232d166796cb7e544780ddd2662007a6aa5ae3ce88f5db2`  
+		Last Modified: Wed, 10 Jul 2024 17:30:05 GMT  
+		Size: 18.1 MB (18097888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71d2bd0fd170580a775f6ba04acdd55bab9fdcf6faac0c4f44b6e0b3d47309da`  
-		Last Modified: Mon, 24 Jun 2024 23:03:03 GMT  
-		Size: 19.0 MB (19015838 bytes)  
+	-	`sha256:880f0114cf26515a1f57187b2ebe52512b79f55de515e792892e055d255832c9`  
+		Last Modified: Wed, 10 Jul 2024 17:30:00 GMT  
+		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0251f15d108b52c6d86f976a7df10e9942230c2a9a246dc76cbf6dff16dac39`  
-		Last Modified: Mon, 24 Jun 2024 23:02:59 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:32dc6dbad2aae3ade89ad9b4fdaae1c4ff05ceb09a1f19fea0acaa3174efe76c`  
+		Last Modified: Wed, 10 Jul 2024 17:30:01 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36db4b9f4a5405193f29309425270265a175f5e11a80e35e4165b86069dd71cb`  
-		Last Modified: Mon, 24 Jun 2024 23:02:59 GMT  
-		Size: 1.3 KB (1302 bytes)  
+	-	`sha256:5b2d6791a7062a05ffdb7cddfc00b3bc970a48cb197f03c1472e60e32953abb4`  
+		Last Modified: Wed, 10 Jul 2024 17:30:00 GMT  
+		Size: 1.3 KB (1304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecfc5cacb05fa2d800e08dbe7e5e6d9c38bdefd6e2aa2226e5a0a468507ace40`  
-		Last Modified: Mon, 24 Jun 2024 23:02:59 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:71f3d161e348ac0623b3f4ffa87675a6229b57e00e6212438de67e67ab3f72ba`  
+		Last Modified: Wed, 10 Jul 2024 17:30:06 GMT  
+		Size: 19.0 MB (19047543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09c7b53da34a5b0befcc9d5790a2ada6eec7216121aff924dd1c7ac3d8891fb1`  
-		Last Modified: Mon, 24 Jun 2024 23:03:02 GMT  
-		Size: 19.6 MB (19643630 bytes)  
+	-	`sha256:4005b74d7caf94ce8aee5956ee03c53742e5c5c5c638c3db6708e183fd613277`  
+		Last Modified: Wed, 10 Jul 2024 17:29:58 GMT  
+		Size: 1.3 KB (1327 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:012569641b4a166a91ca17d2b91f10305c188b72f2bac87f5f80014763ebc656`  
+		Last Modified: Wed, 10 Jul 2024 17:29:59 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1e7d9dd27270c9a0acc020a8d8cb0e7f784a473b9052d6b4fbeb137b369b5af2`  
+		Last Modified: Wed, 10 Jul 2024 17:29:59 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8c625853f49d1b25c131e0faf0115aee786e9ebbeecb59806a5829c49cdcc363`  
+		Last Modified: Wed, 10 Jul 2024 17:30:02 GMT  
+		Size: 19.7 MB (19681065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:25.0-windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:6281bba9a9508f97847970535aace5e7b342fe395e32522c316f60c70e66547f
+$ docker pull docker@sha256:edc8cbda944d7eeb78a46409ca4afd3b92438619db259af3c80800df00f835a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:25.0-windowsservercore-1809` - windows version 10.0.17763.5936; amd64
+### `docker:25.0-windowsservercore-1809` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:d129b6325908ffe268d4c631460e118897b8c6f138c75969ef1b351c8672939c
+$ docker pull docker@sha256:7675d6f0057bfdae1ddc60d534479636005599aea7959fb655cd1271a625fd60
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2277898303 bytes)**  
+-	Total Size: **2.3 GB (2295776383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f651bd10571fd06e5df6ec1eda12c9d8481342bc30ecb49be9f8d04de10366a`
+-	Image ID: `sha256:141e04e3f39bbbb315397aed3db4533392b74e0ceb860578a1ed509e790880f7`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Mon, 24 Jun 2024 23:01:20 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:26:54 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:01:47 GMT
+# Wed, 10 Jul 2024 17:28:30 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:01:48 GMT
+# Wed, 10 Jul 2024 17:28:31 GMT
 ENV DOCKER_VERSION=25.0.5
-# Mon, 24 Jun 2024 23:01:49 GMT
+# Wed, 10 Jul 2024 17:28:32 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-25.0.5.zip
-# Mon, 24 Jun 2024 23:02:10 GMT
+# Wed, 10 Jul 2024 17:29:00 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:11 GMT
+# Wed, 10 Jul 2024 17:29:01 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:02:11 GMT
+# Wed, 10 Jul 2024 17:29:01 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:02:12 GMT
+# Wed, 10 Jul 2024 17:29:02 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:02:33 GMT
+# Wed, 10 Jul 2024 17:29:27 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:33 GMT
+# Wed, 10 Jul 2024 17:29:29 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:02:34 GMT
+# Wed, 10 Jul 2024 17:29:29 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:02:34 GMT
+# Wed, 10 Jul 2024 17:29:30 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:02:55 GMT
+# Wed, 10 Jul 2024 17:29:54 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -18001,117 +18001,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86d318046e9bd440ea0ec9aa57ed990f601c21029c08febd870293f2ee967158`  
-		Last Modified: Mon, 24 Jun 2024 23:03:05 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:6e8f66fd22cdc8f3e3bfe3a847647973e79cc34369e8bee7c69523dbc0112dcf`  
+		Last Modified: Wed, 10 Jul 2024 17:30:06 GMT  
+		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80b6a96970d573ec6e9760a86cdc0a456dd6479574267f796ad43b792da32578`  
-		Last Modified: Mon, 24 Jun 2024 23:03:06 GMT  
-		Size: 481.5 KB (481492 bytes)  
+	-	`sha256:93c7fc8a462e2b6f38eb274fac3eb308131772dbc09518f7b79997167155edfe`  
+		Last Modified: Wed, 10 Jul 2024 17:30:05 GMT  
+		Size: 508.8 KB (508764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:495347e01dc603993c293020dfa6d661537b6cdbbec59f694b0d333d62ecd4d2`  
-		Last Modified: Mon, 24 Jun 2024 23:03:03 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21addd8bbb3c944e698a3c36527388b6ae41214fc6868a10b6eb31b503ebfe5e`  
-		Last Modified: Mon, 24 Jun 2024 23:03:03 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8520bffd5bd95254b22f2d3f5e6128851cdf49b89b4da1d0fd9edab4ca3d4964`  
-		Last Modified: Mon, 24 Jun 2024 23:03:05 GMT  
-		Size: 18.1 MB (18064503 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc09ff4cb1d375668d4c2e7a754eab22acd24a771a2610a0f98c0ff8c4dddeed`  
-		Last Modified: Mon, 24 Jun 2024 23:03:01 GMT  
+	-	`sha256:aec2fdb374d819425578056e973ff63ab24fe14b6ba377fe8ed89a4d008a55d8`  
+		Last Modified: Wed, 10 Jul 2024 17:30:04 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2998ec6e21ca6b19d5f95b35549574d844a66f0d3f16816d1bb3a32e34f98c7b`  
-		Last Modified: Mon, 24 Jun 2024 23:03:01 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:bf25cdf1e191d05e385398bd7e9e19f56b39c7293e516eaee73fa978a2c924f1`  
+		Last Modified: Wed, 10 Jul 2024 17:30:03 GMT  
+		Size: 1.3 KB (1305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fdd9aefd1b57666cc641e153d39b2ada8775b61ae32897a539f585c82278ec1`  
-		Last Modified: Mon, 24 Jun 2024 23:03:01 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:c4fc2bef58f81a34b232d166796cb7e544780ddd2662007a6aa5ae3ce88f5db2`  
+		Last Modified: Wed, 10 Jul 2024 17:30:05 GMT  
+		Size: 18.1 MB (18097888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71d2bd0fd170580a775f6ba04acdd55bab9fdcf6faac0c4f44b6e0b3d47309da`  
-		Last Modified: Mon, 24 Jun 2024 23:03:03 GMT  
-		Size: 19.0 MB (19015838 bytes)  
+	-	`sha256:880f0114cf26515a1f57187b2ebe52512b79f55de515e792892e055d255832c9`  
+		Last Modified: Wed, 10 Jul 2024 17:30:00 GMT  
+		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0251f15d108b52c6d86f976a7df10e9942230c2a9a246dc76cbf6dff16dac39`  
-		Last Modified: Mon, 24 Jun 2024 23:02:59 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:32dc6dbad2aae3ade89ad9b4fdaae1c4ff05ceb09a1f19fea0acaa3174efe76c`  
+		Last Modified: Wed, 10 Jul 2024 17:30:01 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36db4b9f4a5405193f29309425270265a175f5e11a80e35e4165b86069dd71cb`  
-		Last Modified: Mon, 24 Jun 2024 23:02:59 GMT  
-		Size: 1.3 KB (1302 bytes)  
+	-	`sha256:5b2d6791a7062a05ffdb7cddfc00b3bc970a48cb197f03c1472e60e32953abb4`  
+		Last Modified: Wed, 10 Jul 2024 17:30:00 GMT  
+		Size: 1.3 KB (1304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecfc5cacb05fa2d800e08dbe7e5e6d9c38bdefd6e2aa2226e5a0a468507ace40`  
-		Last Modified: Mon, 24 Jun 2024 23:02:59 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:71f3d161e348ac0623b3f4ffa87675a6229b57e00e6212438de67e67ab3f72ba`  
+		Last Modified: Wed, 10 Jul 2024 17:30:06 GMT  
+		Size: 19.0 MB (19047543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09c7b53da34a5b0befcc9d5790a2ada6eec7216121aff924dd1c7ac3d8891fb1`  
-		Last Modified: Mon, 24 Jun 2024 23:03:02 GMT  
-		Size: 19.6 MB (19643630 bytes)  
+	-	`sha256:4005b74d7caf94ce8aee5956ee03c53742e5c5c5c638c3db6708e183fd613277`  
+		Last Modified: Wed, 10 Jul 2024 17:29:58 GMT  
+		Size: 1.3 KB (1327 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:012569641b4a166a91ca17d2b91f10305c188b72f2bac87f5f80014763ebc656`  
+		Last Modified: Wed, 10 Jul 2024 17:29:59 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1e7d9dd27270c9a0acc020a8d8cb0e7f784a473b9052d6b4fbeb137b369b5af2`  
+		Last Modified: Wed, 10 Jul 2024 17:29:59 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8c625853f49d1b25c131e0faf0115aee786e9ebbeecb59806a5829c49cdcc363`  
+		Last Modified: Wed, 10 Jul 2024 17:30:02 GMT  
+		Size: 19.7 MB (19681065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:25.0-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull docker@sha256:7f25799fddf9629a40a9f0a141e9cc57a194213891d9052a70d58e98fb0b8033
+$ docker pull docker@sha256:326191784f336686f7b1c1369983ea703d3619f6effee2ca65196d28feda5abe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.2529; amd64
+	-	windows version 10.0.20348.2582; amd64
 
-### `docker:25.0-windowsservercore-ltsc2022` - windows version 10.0.20348.2529; amd64
+### `docker:25.0-windowsservercore-ltsc2022` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:2c29af40935aceba1595595e0c769263b62ad37ba0358c6b5186f087bc547044
+$ docker pull docker@sha256:02b56e44bc5be5b485dcb428fa1adec821c3f1b1c503bc34dd82bf480e3c87cf
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2175300721 bytes)**  
+-	Total Size: **2.2 GB (2196759748 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ba278b991fe45b7289d5b00c26089137c6e610adba4493c1fdd0a3dfa291fb8`
+-	Image ID: `sha256:2af019b5eefecc9079376df2126b8ab8c213fbd9dbaf5c6382ec29df4d893c15`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Mon, 24 Jun 2024 23:04:18 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:10:45 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:04:28 GMT
+# Wed, 10 Jul 2024 17:10:59 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:04:28 GMT
+# Wed, 10 Jul 2024 17:10:59 GMT
 ENV DOCKER_VERSION=25.0.5
-# Mon, 24 Jun 2024 23:04:29 GMT
+# Wed, 10 Jul 2024 17:11:00 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-25.0.5.zip
-# Mon, 24 Jun 2024 23:04:38 GMT
+# Wed, 10 Jul 2024 17:11:09 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:39 GMT
+# Wed, 10 Jul 2024 17:11:10 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:04:40 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:04:40 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:04:47 GMT
+# Wed, 10 Jul 2024 17:11:18 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:48 GMT
+# Wed, 10 Jul 2024 17:11:19 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:04:48 GMT
+# Wed, 10 Jul 2024 17:11:19 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:04:49 GMT
+# Wed, 10 Jul 2024 17:11:20 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:04:56 GMT
+# Wed, 10 Jul 2024 17:11:26 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -18120,61 +18120,61 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3748d42dc0e5259e67f82a2e11b61aa77aa393a19b2f172078a7f272c2678e76`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1285 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c30ea1e085b1dd25cd3facc0b222560cdf92e785685d1458f995bae82375feea`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 355.9 KB (355917 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29dc88a06260288066e46ac8e15402dcb7992135e540bc8dec6fe138c4f54cfe`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1314 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11ed3cb69009b8c11287759962e5e9b436a48cedbb3bc56852765079dd941882`  
-		Last Modified: Mon, 24 Jun 2024 23:05:00 GMT  
-		Size: 1.3 KB (1290 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0221a2ea52e64ec05b3b5f6d0fd8e17b7dbf4c7a7e548464287cb371028d6086`  
-		Last Modified: Mon, 24 Jun 2024 23:05:02 GMT  
-		Size: 18.1 MB (18067951 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a10fc01583dcfc23bede2bcf44eac90c52a2ad64b6a1b6c04ec51bc781c92535`  
-		Last Modified: Mon, 24 Jun 2024 23:04:59 GMT  
+	-	`sha256:c3b74f68c4938e7ff57f6604e0e030c3c28800b5e0ef9e081a466b4825bceb04`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
 		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:609dc5121209c90648e892c6dce4acad1b7f646c375101a6bac734b223142f46`  
-		Last Modified: Mon, 24 Jun 2024 23:04:59 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:7a1644c48be4224d3dff2313824bc1eaa610fe24b342f7ff05788d19ce8024a2`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 366.0 KB (366002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e9b45da6e6af1bbb804402127960c0b7c2b8bb9f0d16aea4d656a0af3b77197`  
-		Last Modified: Mon, 24 Jun 2024 23:04:59 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:a27110530f5b4f051e95bd1fc39e0e5eb4f33d77ecbc3fd3aa5b181ad67a400e`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ca3e53a83f8a3187e7281d3605224911126df2ccadd5664dc6f3d4c340793e2`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 19.0 MB (19019407 bytes)  
+	-	`sha256:59aa5c734bc33836cfa13e6f9f052773f2b929e5b212958a965c36eea6ad4bac`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b07db5ca5025f5a215342fefe5986db1cbc82b12d2398360a3e96514602e2cf9`  
-		Last Modified: Mon, 24 Jun 2024 23:04:58 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:7786834cd4249b55f5994f4e534bce08c9b1fd39503acfe5ded65c1a678cb1b4`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 18.1 MB (18081324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f1f64ce6eb82d2501b880eb3216ca97e3012653fc950610d036cb0c110d7525`  
-		Last Modified: Mon, 24 Jun 2024 23:04:58 GMT  
+	-	`sha256:ec5ff667b4d8c7fca58e1648e22d58d09853918e24c33ced1e2a7db0ca7fad63`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:641b1371c1374dbfe7ab9a0a59bf49f63c5172de0b85940a191c146b0913c819`  
-		Last Modified: Mon, 24 Jun 2024 23:04:58 GMT  
-		Size: 1.3 KB (1296 bytes)  
+	-	`sha256:1099e6bd49626840a02e96dd68221957bb288fd70dc928b691c7836d25c3f6d6`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12aec8503f2b3c62234ed5811f1140ab032cfdc9427d7f4a6f09ed2cddfed6f3`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 19.7 MB (19655548 bytes)  
+	-	`sha256:f89156bf3fb91988bfb3abb98a012739cd552b5d372a18cf12db5cca9c72d681`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a1fc8f38452598d7e9f6cd14dfe954f6fc1cc456f25ad08be0bc35db210d9be7`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 19.0 MB (19033191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:25fe4efa2a4983dab58d221f9cd007de1e68b620e5c0ce6fc908f16b6bb490e8`  
+		Last Modified: Wed, 10 Jul 2024 17:11:29 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2c9991607cf91454884f0104af1f2dd4270b89eaf4bbec9bf07d21f74be38656`  
+		Last Modified: Wed, 10 Jul 2024 17:11:29 GMT  
+		Size: 1.3 KB (1289 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5ae2f63cea90617d6bee30f02be94cbaefff424098717a6912c4ec6e11614830`  
+		Last Modified: Wed, 10 Jul 2024 17:11:29 GMT  
+		Size: 1.3 KB (1281 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1f6ef700d84b18c701b905ab7136d5252b095d549c8de05d61dbd443623c2428`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 19.7 MB (19667324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:25.0.5`
@@ -22730,58 +22730,58 @@ $ docker pull docker@sha256:07ddce089784adb365fb0ab471f0d97743664f697ea10ce4b904
 ## `docker:25.0.5-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:1a522e5f311d5b646fb8ad6fc342f15f91e35393eaf31f8959c7c8ff1a138023
+$ docker pull docker@sha256:4741c9428e7579ef19a31e64e42849a22bcaefe5b7316b51f3a6df43c76f9399
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 2
-	-	windows version 10.0.20348.2529; amd64
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.20348.2582; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:25.0.5-windowsservercore` - windows version 10.0.20348.2529; amd64
+### `docker:25.0.5-windowsservercore` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:2c29af40935aceba1595595e0c769263b62ad37ba0358c6b5186f087bc547044
+$ docker pull docker@sha256:02b56e44bc5be5b485dcb428fa1adec821c3f1b1c503bc34dd82bf480e3c87cf
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2175300721 bytes)**  
+-	Total Size: **2.2 GB (2196759748 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ba278b991fe45b7289d5b00c26089137c6e610adba4493c1fdd0a3dfa291fb8`
+-	Image ID: `sha256:2af019b5eefecc9079376df2126b8ab8c213fbd9dbaf5c6382ec29df4d893c15`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Mon, 24 Jun 2024 23:04:18 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:10:45 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:04:28 GMT
+# Wed, 10 Jul 2024 17:10:59 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:04:28 GMT
+# Wed, 10 Jul 2024 17:10:59 GMT
 ENV DOCKER_VERSION=25.0.5
-# Mon, 24 Jun 2024 23:04:29 GMT
+# Wed, 10 Jul 2024 17:11:00 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-25.0.5.zip
-# Mon, 24 Jun 2024 23:04:38 GMT
+# Wed, 10 Jul 2024 17:11:09 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:39 GMT
+# Wed, 10 Jul 2024 17:11:10 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:04:40 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:04:40 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:04:47 GMT
+# Wed, 10 Jul 2024 17:11:18 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:48 GMT
+# Wed, 10 Jul 2024 17:11:19 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:04:48 GMT
+# Wed, 10 Jul 2024 17:11:19 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:04:49 GMT
+# Wed, 10 Jul 2024 17:11:20 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:04:56 GMT
+# Wed, 10 Jul 2024 17:11:26 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -22790,107 +22790,107 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3748d42dc0e5259e67f82a2e11b61aa77aa393a19b2f172078a7f272c2678e76`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1285 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c30ea1e085b1dd25cd3facc0b222560cdf92e785685d1458f995bae82375feea`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 355.9 KB (355917 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29dc88a06260288066e46ac8e15402dcb7992135e540bc8dec6fe138c4f54cfe`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1314 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11ed3cb69009b8c11287759962e5e9b436a48cedbb3bc56852765079dd941882`  
-		Last Modified: Mon, 24 Jun 2024 23:05:00 GMT  
-		Size: 1.3 KB (1290 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0221a2ea52e64ec05b3b5f6d0fd8e17b7dbf4c7a7e548464287cb371028d6086`  
-		Last Modified: Mon, 24 Jun 2024 23:05:02 GMT  
-		Size: 18.1 MB (18067951 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a10fc01583dcfc23bede2bcf44eac90c52a2ad64b6a1b6c04ec51bc781c92535`  
-		Last Modified: Mon, 24 Jun 2024 23:04:59 GMT  
+	-	`sha256:c3b74f68c4938e7ff57f6604e0e030c3c28800b5e0ef9e081a466b4825bceb04`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
 		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:609dc5121209c90648e892c6dce4acad1b7f646c375101a6bac734b223142f46`  
-		Last Modified: Mon, 24 Jun 2024 23:04:59 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:7a1644c48be4224d3dff2313824bc1eaa610fe24b342f7ff05788d19ce8024a2`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 366.0 KB (366002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e9b45da6e6af1bbb804402127960c0b7c2b8bb9f0d16aea4d656a0af3b77197`  
-		Last Modified: Mon, 24 Jun 2024 23:04:59 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:a27110530f5b4f051e95bd1fc39e0e5eb4f33d77ecbc3fd3aa5b181ad67a400e`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ca3e53a83f8a3187e7281d3605224911126df2ccadd5664dc6f3d4c340793e2`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 19.0 MB (19019407 bytes)  
+	-	`sha256:59aa5c734bc33836cfa13e6f9f052773f2b929e5b212958a965c36eea6ad4bac`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b07db5ca5025f5a215342fefe5986db1cbc82b12d2398360a3e96514602e2cf9`  
-		Last Modified: Mon, 24 Jun 2024 23:04:58 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:7786834cd4249b55f5994f4e534bce08c9b1fd39503acfe5ded65c1a678cb1b4`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 18.1 MB (18081324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f1f64ce6eb82d2501b880eb3216ca97e3012653fc950610d036cb0c110d7525`  
-		Last Modified: Mon, 24 Jun 2024 23:04:58 GMT  
+	-	`sha256:ec5ff667b4d8c7fca58e1648e22d58d09853918e24c33ced1e2a7db0ca7fad63`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:641b1371c1374dbfe7ab9a0a59bf49f63c5172de0b85940a191c146b0913c819`  
-		Last Modified: Mon, 24 Jun 2024 23:04:58 GMT  
-		Size: 1.3 KB (1296 bytes)  
+	-	`sha256:1099e6bd49626840a02e96dd68221957bb288fd70dc928b691c7836d25c3f6d6`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12aec8503f2b3c62234ed5811f1140ab032cfdc9427d7f4a6f09ed2cddfed6f3`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 19.7 MB (19655548 bytes)  
+	-	`sha256:f89156bf3fb91988bfb3abb98a012739cd552b5d372a18cf12db5cca9c72d681`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a1fc8f38452598d7e9f6cd14dfe954f6fc1cc456f25ad08be0bc35db210d9be7`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 19.0 MB (19033191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:25fe4efa2a4983dab58d221f9cd007de1e68b620e5c0ce6fc908f16b6bb490e8`  
+		Last Modified: Wed, 10 Jul 2024 17:11:29 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2c9991607cf91454884f0104af1f2dd4270b89eaf4bbec9bf07d21f74be38656`  
+		Last Modified: Wed, 10 Jul 2024 17:11:29 GMT  
+		Size: 1.3 KB (1289 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5ae2f63cea90617d6bee30f02be94cbaefff424098717a6912c4ec6e11614830`  
+		Last Modified: Wed, 10 Jul 2024 17:11:29 GMT  
+		Size: 1.3 KB (1281 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1f6ef700d84b18c701b905ab7136d5252b095d549c8de05d61dbd443623c2428`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 19.7 MB (19667324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `docker:25.0.5-windowsservercore` - windows version 10.0.17763.5936; amd64
+### `docker:25.0.5-windowsservercore` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:d129b6325908ffe268d4c631460e118897b8c6f138c75969ef1b351c8672939c
+$ docker pull docker@sha256:7675d6f0057bfdae1ddc60d534479636005599aea7959fb655cd1271a625fd60
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2277898303 bytes)**  
+-	Total Size: **2.3 GB (2295776383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f651bd10571fd06e5df6ec1eda12c9d8481342bc30ecb49be9f8d04de10366a`
+-	Image ID: `sha256:141e04e3f39bbbb315397aed3db4533392b74e0ceb860578a1ed509e790880f7`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Mon, 24 Jun 2024 23:01:20 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:26:54 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:01:47 GMT
+# Wed, 10 Jul 2024 17:28:30 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:01:48 GMT
+# Wed, 10 Jul 2024 17:28:31 GMT
 ENV DOCKER_VERSION=25.0.5
-# Mon, 24 Jun 2024 23:01:49 GMT
+# Wed, 10 Jul 2024 17:28:32 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-25.0.5.zip
-# Mon, 24 Jun 2024 23:02:10 GMT
+# Wed, 10 Jul 2024 17:29:00 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:11 GMT
+# Wed, 10 Jul 2024 17:29:01 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:02:11 GMT
+# Wed, 10 Jul 2024 17:29:01 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:02:12 GMT
+# Wed, 10 Jul 2024 17:29:02 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:02:33 GMT
+# Wed, 10 Jul 2024 17:29:27 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:33 GMT
+# Wed, 10 Jul 2024 17:29:29 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:02:34 GMT
+# Wed, 10 Jul 2024 17:29:29 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:02:34 GMT
+# Wed, 10 Jul 2024 17:29:30 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:02:55 GMT
+# Wed, 10 Jul 2024 17:29:54 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -22899,117 +22899,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86d318046e9bd440ea0ec9aa57ed990f601c21029c08febd870293f2ee967158`  
-		Last Modified: Mon, 24 Jun 2024 23:03:05 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:6e8f66fd22cdc8f3e3bfe3a847647973e79cc34369e8bee7c69523dbc0112dcf`  
+		Last Modified: Wed, 10 Jul 2024 17:30:06 GMT  
+		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80b6a96970d573ec6e9760a86cdc0a456dd6479574267f796ad43b792da32578`  
-		Last Modified: Mon, 24 Jun 2024 23:03:06 GMT  
-		Size: 481.5 KB (481492 bytes)  
+	-	`sha256:93c7fc8a462e2b6f38eb274fac3eb308131772dbc09518f7b79997167155edfe`  
+		Last Modified: Wed, 10 Jul 2024 17:30:05 GMT  
+		Size: 508.8 KB (508764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:495347e01dc603993c293020dfa6d661537b6cdbbec59f694b0d333d62ecd4d2`  
-		Last Modified: Mon, 24 Jun 2024 23:03:03 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21addd8bbb3c944e698a3c36527388b6ae41214fc6868a10b6eb31b503ebfe5e`  
-		Last Modified: Mon, 24 Jun 2024 23:03:03 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8520bffd5bd95254b22f2d3f5e6128851cdf49b89b4da1d0fd9edab4ca3d4964`  
-		Last Modified: Mon, 24 Jun 2024 23:03:05 GMT  
-		Size: 18.1 MB (18064503 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc09ff4cb1d375668d4c2e7a754eab22acd24a771a2610a0f98c0ff8c4dddeed`  
-		Last Modified: Mon, 24 Jun 2024 23:03:01 GMT  
+	-	`sha256:aec2fdb374d819425578056e973ff63ab24fe14b6ba377fe8ed89a4d008a55d8`  
+		Last Modified: Wed, 10 Jul 2024 17:30:04 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2998ec6e21ca6b19d5f95b35549574d844a66f0d3f16816d1bb3a32e34f98c7b`  
-		Last Modified: Mon, 24 Jun 2024 23:03:01 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:bf25cdf1e191d05e385398bd7e9e19f56b39c7293e516eaee73fa978a2c924f1`  
+		Last Modified: Wed, 10 Jul 2024 17:30:03 GMT  
+		Size: 1.3 KB (1305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fdd9aefd1b57666cc641e153d39b2ada8775b61ae32897a539f585c82278ec1`  
-		Last Modified: Mon, 24 Jun 2024 23:03:01 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:c4fc2bef58f81a34b232d166796cb7e544780ddd2662007a6aa5ae3ce88f5db2`  
+		Last Modified: Wed, 10 Jul 2024 17:30:05 GMT  
+		Size: 18.1 MB (18097888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71d2bd0fd170580a775f6ba04acdd55bab9fdcf6faac0c4f44b6e0b3d47309da`  
-		Last Modified: Mon, 24 Jun 2024 23:03:03 GMT  
-		Size: 19.0 MB (19015838 bytes)  
+	-	`sha256:880f0114cf26515a1f57187b2ebe52512b79f55de515e792892e055d255832c9`  
+		Last Modified: Wed, 10 Jul 2024 17:30:00 GMT  
+		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0251f15d108b52c6d86f976a7df10e9942230c2a9a246dc76cbf6dff16dac39`  
-		Last Modified: Mon, 24 Jun 2024 23:02:59 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:32dc6dbad2aae3ade89ad9b4fdaae1c4ff05ceb09a1f19fea0acaa3174efe76c`  
+		Last Modified: Wed, 10 Jul 2024 17:30:01 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36db4b9f4a5405193f29309425270265a175f5e11a80e35e4165b86069dd71cb`  
-		Last Modified: Mon, 24 Jun 2024 23:02:59 GMT  
-		Size: 1.3 KB (1302 bytes)  
+	-	`sha256:5b2d6791a7062a05ffdb7cddfc00b3bc970a48cb197f03c1472e60e32953abb4`  
+		Last Modified: Wed, 10 Jul 2024 17:30:00 GMT  
+		Size: 1.3 KB (1304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecfc5cacb05fa2d800e08dbe7e5e6d9c38bdefd6e2aa2226e5a0a468507ace40`  
-		Last Modified: Mon, 24 Jun 2024 23:02:59 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:71f3d161e348ac0623b3f4ffa87675a6229b57e00e6212438de67e67ab3f72ba`  
+		Last Modified: Wed, 10 Jul 2024 17:30:06 GMT  
+		Size: 19.0 MB (19047543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09c7b53da34a5b0befcc9d5790a2ada6eec7216121aff924dd1c7ac3d8891fb1`  
-		Last Modified: Mon, 24 Jun 2024 23:03:02 GMT  
-		Size: 19.6 MB (19643630 bytes)  
+	-	`sha256:4005b74d7caf94ce8aee5956ee03c53742e5c5c5c638c3db6708e183fd613277`  
+		Last Modified: Wed, 10 Jul 2024 17:29:58 GMT  
+		Size: 1.3 KB (1327 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:012569641b4a166a91ca17d2b91f10305c188b72f2bac87f5f80014763ebc656`  
+		Last Modified: Wed, 10 Jul 2024 17:29:59 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1e7d9dd27270c9a0acc020a8d8cb0e7f784a473b9052d6b4fbeb137b369b5af2`  
+		Last Modified: Wed, 10 Jul 2024 17:29:59 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8c625853f49d1b25c131e0faf0115aee786e9ebbeecb59806a5829c49cdcc363`  
+		Last Modified: Wed, 10 Jul 2024 17:30:02 GMT  
+		Size: 19.7 MB (19681065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:25.0.5-windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:6281bba9a9508f97847970535aace5e7b342fe395e32522c316f60c70e66547f
+$ docker pull docker@sha256:edc8cbda944d7eeb78a46409ca4afd3b92438619db259af3c80800df00f835a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:25.0.5-windowsservercore-1809` - windows version 10.0.17763.5936; amd64
+### `docker:25.0.5-windowsservercore-1809` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:d129b6325908ffe268d4c631460e118897b8c6f138c75969ef1b351c8672939c
+$ docker pull docker@sha256:7675d6f0057bfdae1ddc60d534479636005599aea7959fb655cd1271a625fd60
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2277898303 bytes)**  
+-	Total Size: **2.3 GB (2295776383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f651bd10571fd06e5df6ec1eda12c9d8481342bc30ecb49be9f8d04de10366a`
+-	Image ID: `sha256:141e04e3f39bbbb315397aed3db4533392b74e0ceb860578a1ed509e790880f7`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Mon, 24 Jun 2024 23:01:20 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:26:54 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:01:47 GMT
+# Wed, 10 Jul 2024 17:28:30 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:01:48 GMT
+# Wed, 10 Jul 2024 17:28:31 GMT
 ENV DOCKER_VERSION=25.0.5
-# Mon, 24 Jun 2024 23:01:49 GMT
+# Wed, 10 Jul 2024 17:28:32 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-25.0.5.zip
-# Mon, 24 Jun 2024 23:02:10 GMT
+# Wed, 10 Jul 2024 17:29:00 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:11 GMT
+# Wed, 10 Jul 2024 17:29:01 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:02:11 GMT
+# Wed, 10 Jul 2024 17:29:01 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:02:12 GMT
+# Wed, 10 Jul 2024 17:29:02 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:02:33 GMT
+# Wed, 10 Jul 2024 17:29:27 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:33 GMT
+# Wed, 10 Jul 2024 17:29:29 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:02:34 GMT
+# Wed, 10 Jul 2024 17:29:29 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:02:34 GMT
+# Wed, 10 Jul 2024 17:29:30 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:02:55 GMT
+# Wed, 10 Jul 2024 17:29:54 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -23018,117 +23018,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86d318046e9bd440ea0ec9aa57ed990f601c21029c08febd870293f2ee967158`  
-		Last Modified: Mon, 24 Jun 2024 23:03:05 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:6e8f66fd22cdc8f3e3bfe3a847647973e79cc34369e8bee7c69523dbc0112dcf`  
+		Last Modified: Wed, 10 Jul 2024 17:30:06 GMT  
+		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80b6a96970d573ec6e9760a86cdc0a456dd6479574267f796ad43b792da32578`  
-		Last Modified: Mon, 24 Jun 2024 23:03:06 GMT  
-		Size: 481.5 KB (481492 bytes)  
+	-	`sha256:93c7fc8a462e2b6f38eb274fac3eb308131772dbc09518f7b79997167155edfe`  
+		Last Modified: Wed, 10 Jul 2024 17:30:05 GMT  
+		Size: 508.8 KB (508764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:495347e01dc603993c293020dfa6d661537b6cdbbec59f694b0d333d62ecd4d2`  
-		Last Modified: Mon, 24 Jun 2024 23:03:03 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21addd8bbb3c944e698a3c36527388b6ae41214fc6868a10b6eb31b503ebfe5e`  
-		Last Modified: Mon, 24 Jun 2024 23:03:03 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8520bffd5bd95254b22f2d3f5e6128851cdf49b89b4da1d0fd9edab4ca3d4964`  
-		Last Modified: Mon, 24 Jun 2024 23:03:05 GMT  
-		Size: 18.1 MB (18064503 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc09ff4cb1d375668d4c2e7a754eab22acd24a771a2610a0f98c0ff8c4dddeed`  
-		Last Modified: Mon, 24 Jun 2024 23:03:01 GMT  
+	-	`sha256:aec2fdb374d819425578056e973ff63ab24fe14b6ba377fe8ed89a4d008a55d8`  
+		Last Modified: Wed, 10 Jul 2024 17:30:04 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2998ec6e21ca6b19d5f95b35549574d844a66f0d3f16816d1bb3a32e34f98c7b`  
-		Last Modified: Mon, 24 Jun 2024 23:03:01 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:bf25cdf1e191d05e385398bd7e9e19f56b39c7293e516eaee73fa978a2c924f1`  
+		Last Modified: Wed, 10 Jul 2024 17:30:03 GMT  
+		Size: 1.3 KB (1305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fdd9aefd1b57666cc641e153d39b2ada8775b61ae32897a539f585c82278ec1`  
-		Last Modified: Mon, 24 Jun 2024 23:03:01 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:c4fc2bef58f81a34b232d166796cb7e544780ddd2662007a6aa5ae3ce88f5db2`  
+		Last Modified: Wed, 10 Jul 2024 17:30:05 GMT  
+		Size: 18.1 MB (18097888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71d2bd0fd170580a775f6ba04acdd55bab9fdcf6faac0c4f44b6e0b3d47309da`  
-		Last Modified: Mon, 24 Jun 2024 23:03:03 GMT  
-		Size: 19.0 MB (19015838 bytes)  
+	-	`sha256:880f0114cf26515a1f57187b2ebe52512b79f55de515e792892e055d255832c9`  
+		Last Modified: Wed, 10 Jul 2024 17:30:00 GMT  
+		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0251f15d108b52c6d86f976a7df10e9942230c2a9a246dc76cbf6dff16dac39`  
-		Last Modified: Mon, 24 Jun 2024 23:02:59 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:32dc6dbad2aae3ade89ad9b4fdaae1c4ff05ceb09a1f19fea0acaa3174efe76c`  
+		Last Modified: Wed, 10 Jul 2024 17:30:01 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36db4b9f4a5405193f29309425270265a175f5e11a80e35e4165b86069dd71cb`  
-		Last Modified: Mon, 24 Jun 2024 23:02:59 GMT  
-		Size: 1.3 KB (1302 bytes)  
+	-	`sha256:5b2d6791a7062a05ffdb7cddfc00b3bc970a48cb197f03c1472e60e32953abb4`  
+		Last Modified: Wed, 10 Jul 2024 17:30:00 GMT  
+		Size: 1.3 KB (1304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecfc5cacb05fa2d800e08dbe7e5e6d9c38bdefd6e2aa2226e5a0a468507ace40`  
-		Last Modified: Mon, 24 Jun 2024 23:02:59 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:71f3d161e348ac0623b3f4ffa87675a6229b57e00e6212438de67e67ab3f72ba`  
+		Last Modified: Wed, 10 Jul 2024 17:30:06 GMT  
+		Size: 19.0 MB (19047543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09c7b53da34a5b0befcc9d5790a2ada6eec7216121aff924dd1c7ac3d8891fb1`  
-		Last Modified: Mon, 24 Jun 2024 23:03:02 GMT  
-		Size: 19.6 MB (19643630 bytes)  
+	-	`sha256:4005b74d7caf94ce8aee5956ee03c53742e5c5c5c638c3db6708e183fd613277`  
+		Last Modified: Wed, 10 Jul 2024 17:29:58 GMT  
+		Size: 1.3 KB (1327 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:012569641b4a166a91ca17d2b91f10305c188b72f2bac87f5f80014763ebc656`  
+		Last Modified: Wed, 10 Jul 2024 17:29:59 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1e7d9dd27270c9a0acc020a8d8cb0e7f784a473b9052d6b4fbeb137b369b5af2`  
+		Last Modified: Wed, 10 Jul 2024 17:29:59 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8c625853f49d1b25c131e0faf0115aee786e9ebbeecb59806a5829c49cdcc363`  
+		Last Modified: Wed, 10 Jul 2024 17:30:02 GMT  
+		Size: 19.7 MB (19681065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:25.0.5-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull docker@sha256:7f25799fddf9629a40a9f0a141e9cc57a194213891d9052a70d58e98fb0b8033
+$ docker pull docker@sha256:326191784f336686f7b1c1369983ea703d3619f6effee2ca65196d28feda5abe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.2529; amd64
+	-	windows version 10.0.20348.2582; amd64
 
-### `docker:25.0.5-windowsservercore-ltsc2022` - windows version 10.0.20348.2529; amd64
+### `docker:25.0.5-windowsservercore-ltsc2022` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:2c29af40935aceba1595595e0c769263b62ad37ba0358c6b5186f087bc547044
+$ docker pull docker@sha256:02b56e44bc5be5b485dcb428fa1adec821c3f1b1c503bc34dd82bf480e3c87cf
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2175300721 bytes)**  
+-	Total Size: **2.2 GB (2196759748 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ba278b991fe45b7289d5b00c26089137c6e610adba4493c1fdd0a3dfa291fb8`
+-	Image ID: `sha256:2af019b5eefecc9079376df2126b8ab8c213fbd9dbaf5c6382ec29df4d893c15`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Mon, 24 Jun 2024 23:04:18 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:10:45 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:04:28 GMT
+# Wed, 10 Jul 2024 17:10:59 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:04:28 GMT
+# Wed, 10 Jul 2024 17:10:59 GMT
 ENV DOCKER_VERSION=25.0.5
-# Mon, 24 Jun 2024 23:04:29 GMT
+# Wed, 10 Jul 2024 17:11:00 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-25.0.5.zip
-# Mon, 24 Jun 2024 23:04:38 GMT
+# Wed, 10 Jul 2024 17:11:09 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:39 GMT
+# Wed, 10 Jul 2024 17:11:10 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:04:40 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:04:40 GMT
+# Wed, 10 Jul 2024 17:11:11 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:04:47 GMT
+# Wed, 10 Jul 2024 17:11:18 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:04:48 GMT
+# Wed, 10 Jul 2024 17:11:19 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:04:48 GMT
+# Wed, 10 Jul 2024 17:11:19 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:04:49 GMT
+# Wed, 10 Jul 2024 17:11:20 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:04:56 GMT
+# Wed, 10 Jul 2024 17:11:26 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -23137,61 +23137,61 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3748d42dc0e5259e67f82a2e11b61aa77aa393a19b2f172078a7f272c2678e76`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1285 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c30ea1e085b1dd25cd3facc0b222560cdf92e785685d1458f995bae82375feea`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 355.9 KB (355917 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29dc88a06260288066e46ac8e15402dcb7992135e540bc8dec6fe138c4f54cfe`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 1.3 KB (1314 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11ed3cb69009b8c11287759962e5e9b436a48cedbb3bc56852765079dd941882`  
-		Last Modified: Mon, 24 Jun 2024 23:05:00 GMT  
-		Size: 1.3 KB (1290 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0221a2ea52e64ec05b3b5f6d0fd8e17b7dbf4c7a7e548464287cb371028d6086`  
-		Last Modified: Mon, 24 Jun 2024 23:05:02 GMT  
-		Size: 18.1 MB (18067951 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a10fc01583dcfc23bede2bcf44eac90c52a2ad64b6a1b6c04ec51bc781c92535`  
-		Last Modified: Mon, 24 Jun 2024 23:04:59 GMT  
+	-	`sha256:c3b74f68c4938e7ff57f6604e0e030c3c28800b5e0ef9e081a466b4825bceb04`  
+		Last Modified: Wed, 10 Jul 2024 17:11:33 GMT  
 		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:609dc5121209c90648e892c6dce4acad1b7f646c375101a6bac734b223142f46`  
-		Last Modified: Mon, 24 Jun 2024 23:04:59 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:7a1644c48be4224d3dff2313824bc1eaa610fe24b342f7ff05788d19ce8024a2`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 366.0 KB (366002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e9b45da6e6af1bbb804402127960c0b7c2b8bb9f0d16aea4d656a0af3b77197`  
-		Last Modified: Mon, 24 Jun 2024 23:04:59 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:a27110530f5b4f051e95bd1fc39e0e5eb4f33d77ecbc3fd3aa5b181ad67a400e`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ca3e53a83f8a3187e7281d3605224911126df2ccadd5664dc6f3d4c340793e2`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 19.0 MB (19019407 bytes)  
+	-	`sha256:59aa5c734bc33836cfa13e6f9f052773f2b929e5b212958a965c36eea6ad4bac`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b07db5ca5025f5a215342fefe5986db1cbc82b12d2398360a3e96514602e2cf9`  
-		Last Modified: Mon, 24 Jun 2024 23:04:58 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:7786834cd4249b55f5994f4e534bce08c9b1fd39503acfe5ded65c1a678cb1b4`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 18.1 MB (18081324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f1f64ce6eb82d2501b880eb3216ca97e3012653fc950610d036cb0c110d7525`  
-		Last Modified: Mon, 24 Jun 2024 23:04:58 GMT  
+	-	`sha256:ec5ff667b4d8c7fca58e1648e22d58d09853918e24c33ced1e2a7db0ca7fad63`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:641b1371c1374dbfe7ab9a0a59bf49f63c5172de0b85940a191c146b0913c819`  
-		Last Modified: Mon, 24 Jun 2024 23:04:58 GMT  
-		Size: 1.3 KB (1296 bytes)  
+	-	`sha256:1099e6bd49626840a02e96dd68221957bb288fd70dc928b691c7836d25c3f6d6`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12aec8503f2b3c62234ed5811f1140ab032cfdc9427d7f4a6f09ed2cddfed6f3`  
-		Last Modified: Mon, 24 Jun 2024 23:05:01 GMT  
-		Size: 19.7 MB (19655548 bytes)  
+	-	`sha256:f89156bf3fb91988bfb3abb98a012739cd552b5d372a18cf12db5cca9c72d681`  
+		Last Modified: Wed, 10 Jul 2024 17:11:30 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a1fc8f38452598d7e9f6cd14dfe954f6fc1cc456f25ad08be0bc35db210d9be7`  
+		Last Modified: Wed, 10 Jul 2024 17:11:32 GMT  
+		Size: 19.0 MB (19033191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:25fe4efa2a4983dab58d221f9cd007de1e68b620e5c0ce6fc908f16b6bb490e8`  
+		Last Modified: Wed, 10 Jul 2024 17:11:29 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2c9991607cf91454884f0104af1f2dd4270b89eaf4bbec9bf07d21f74be38656`  
+		Last Modified: Wed, 10 Jul 2024 17:11:29 GMT  
+		Size: 1.3 KB (1289 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5ae2f63cea90617d6bee30f02be94cbaefff424098717a6912c4ec6e11614830`  
+		Last Modified: Wed, 10 Jul 2024 17:11:29 GMT  
+		Size: 1.3 KB (1281 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1f6ef700d84b18c701b905ab7136d5252b095d549c8de05d61dbd443623c2428`  
+		Last Modified: Wed, 10 Jul 2024 17:11:31 GMT  
+		Size: 19.7 MB (19667324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:26`
@@ -25347,58 +25347,58 @@ $ docker pull docker@sha256:ba659ab9650959b9accf58efdbebc01571003d01fc85415d3c47
 ## `docker:26-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:dff45b33543d8eff75dce2d151ccf047ced8e6a6b48fdef7425c86d9cb601f70
+$ docker pull docker@sha256:bd532ff6afdcff8431be93a45bd7518f8b326a19e48ccf3192c510f64bc81ff6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 2
-	-	windows version 10.0.20348.2529; amd64
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.20348.2582; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:26-windowsservercore` - windows version 10.0.20348.2529; amd64
+### `docker:26-windowsservercore` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:83a06bbcb87bde57bf89aad73c8f350a09a1310d69ff4fa30464c56d83912118
+$ docker pull docker@sha256:b89d44be89b2488dba364d15498369cbb475000e9d8e0fdb2eb02191df834d47
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2176449391 bytes)**  
+-	Total Size: **2.2 GB (2197895630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efedf6e6257f1f89bdddb0ef0fed0ee30ebde2875c74ac12d71aaa48b8a1d75d`
+-	Image ID: `sha256:aebcbfdbeda281beefd8baae520390d230143ea48f1dcfff98afefe97c1774f7`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Mon, 24 Jun 2024 23:01:49 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:06:54 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:01:56 GMT
+# Wed, 10 Jul 2024 17:07:05 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:01:56 GMT
+# Wed, 10 Jul 2024 17:07:05 GMT
 ENV DOCKER_VERSION=26.1.4
-# Mon, 24 Jun 2024 23:01:57 GMT
+# Wed, 10 Jul 2024 17:07:06 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-26.1.4.zip
-# Mon, 24 Jun 2024 23:02:06 GMT
+# Wed, 10 Jul 2024 17:07:16 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:06 GMT
+# Wed, 10 Jul 2024 17:07:17 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:02:07 GMT
+# Wed, 10 Jul 2024 17:07:18 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:02:08 GMT
+# Wed, 10 Jul 2024 17:07:18 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:02:14 GMT
+# Wed, 10 Jul 2024 17:07:26 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:15 GMT
+# Wed, 10 Jul 2024 17:07:26 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:02:15 GMT
+# Wed, 10 Jul 2024 17:07:27 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:02:16 GMT
+# Wed, 10 Jul 2024 17:07:27 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:02:23 GMT
+# Wed, 10 Jul 2024 17:07:35 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -25407,107 +25407,107 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:246e482b6e23771fa41b6a97ddf58d6b8e2c45211e1524cfb7eccfa0fd9ce1d4`  
-		Last Modified: Mon, 24 Jun 2024 23:02:29 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:f2d9d3de1058a39678546ae37fcf1bae84d4f9ef46e987a8aae464067a2110da`  
+		Last Modified: Wed, 10 Jul 2024 17:07:43 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82da0fca8cfb8c4aeedf6a91d0e065be220a4ce837dfa4d404f9f4f5e540c7e4`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 345.9 KB (345885 bytes)  
+	-	`sha256:70fc228473c5a99761b4df8a8a2d6480491d148eb2b6226712c02b57c441b8a3`  
+		Last Modified: Wed, 10 Jul 2024 17:07:44 GMT  
+		Size: 353.7 KB (353690 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:068d6a51b1a127e2fd7469da3666cdd3c1affe6d4e2f69a80bab48d114954cae`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:8ffd5f477c1b8d5d76f9614eb3cd5ec902b1ac1f8be64cabef4f2ac67972a1e3`  
+		Last Modified: Wed, 10 Jul 2024 17:07:42 GMT  
+		Size: 1.3 KB (1278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c6768c61d278aef37aa33785426450619cc28d80ccd049018f0785c299db14e`  
-		Last Modified: Mon, 24 Jun 2024 23:02:27 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:5544bd81947c008123c95c311e73bce204fb5a324352243ca07c226e292a2ad1`  
+		Last Modified: Wed, 10 Jul 2024 17:07:42 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2617e1912221cf413d04d7299580b0daea3c0825fee7b5d9fad6a9a44f1a5454`  
-		Last Modified: Mon, 24 Jun 2024 23:02:29 GMT  
-		Size: 19.2 MB (19241807 bytes)  
+	-	`sha256:84b536eb8933d9e23be6e81c349259217c0ff0ac4c811cfaf0f0ff1d1e6c21b0`  
+		Last Modified: Wed, 10 Jul 2024 17:07:44 GMT  
+		Size: 19.3 MB (19250069 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d31372f6eb1e0c4455e4bad9bc6a40935b8576f56647573811f728f66716b29`  
-		Last Modified: Mon, 24 Jun 2024 23:02:26 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:85acd654f2e15df5e3b3d86e685a7df672c9d69ed5fada7fc0a67b055a4eed35`  
+		Last Modified: Wed, 10 Jul 2024 17:07:40 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27164582d8240a6b1c5b712d95806fdb59df86cf8a1bb194e96fb5e1f3a1676c`  
-		Last Modified: Mon, 24 Jun 2024 23:02:26 GMT  
-		Size: 1.4 KB (1354 bytes)  
+	-	`sha256:51b63cd5a9085fd35a77eba7cbd17d34168b84095f058c4c166ff437454290c8`  
+		Last Modified: Wed, 10 Jul 2024 17:07:40 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:619a32541eaeb8b9af553b64aae13f0a963563ba072449138c4b112a2300eaf0`  
-		Last Modified: Mon, 24 Jun 2024 23:02:26 GMT  
-		Size: 1.4 KB (1352 bytes)  
+	-	`sha256:b050385ea469075e8ac3cd0c01f59b05237fe243752b4af0ba748c499f7c7214`  
+		Last Modified: Wed, 10 Jul 2024 17:07:40 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a67541314ab9c624da2df20937b0861ab7987c9b9d59af61e9ee17921078e13`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 19.0 MB (19012054 bytes)  
+	-	`sha256:7e7223c9cd26ba7de1b396ce8f876f3778a2c9a9742172142b43c200cca0e015`  
+		Last Modified: Wed, 10 Jul 2024 17:07:41 GMT  
+		Size: 19.0 MB (19022171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:303765272afa63b6e978553f603ccc8143fedc46a75c558e0fc2083d5d17d334`  
-		Last Modified: Mon, 24 Jun 2024 23:02:25 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:03f8e9a2edc1e7c0274a5901135c476d5c8aa0e7fdb984c81763b69cc7e2c4c5`  
+		Last Modified: Wed, 10 Jul 2024 17:07:39 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d6e97d4bbb0d07c480be5888d63631d5e2be9ad351c44720e781473cddd384`  
-		Last Modified: Mon, 24 Jun 2024 23:02:25 GMT  
-		Size: 1.3 KB (1281 bytes)  
+	-	`sha256:cebb7aee2d0caeef03e8450dd9e72a42e73bd3afa18044f08f21c60a9cf0a981`  
+		Last Modified: Wed, 10 Jul 2024 17:07:39 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:983542ae2a8cf1dd1fe4c7e09db1444d8ede7e730e2eab3e7c92f12f3d135a71`  
-		Last Modified: Mon, 24 Jun 2024 23:02:25 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:99935b0862983b7826842674ae5c56f9c1e932efbd1a676637a7df28557caa00`  
+		Last Modified: Wed, 10 Jul 2024 17:07:39 GMT  
+		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1690f9793edbd076b9cfb65e446be51744ed4e88575f5212285d2665e5276985`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 19.6 MB (19647600 bytes)  
+	-	`sha256:918a1533887acb04a5fac682ef1eee07f51aff7be62fc5a0aa9be26002311e70`  
+		Last Modified: Wed, 10 Jul 2024 17:07:41 GMT  
+		Size: 19.7 MB (19657816 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `docker:26-windowsservercore` - windows version 10.0.17763.5936; amd64
+### `docker:26-windowsservercore` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:41921d264b5b04d35d50c3a3492d0a3a5ebc101a1f9dff8e6f90c76797bf800d
+$ docker pull docker@sha256:5f8eb7c8ff3aa120ef55a83421e4a4d80081dec17bde460742aec3a0fa95d91f
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2279121755 bytes)**  
+-	Total Size: **2.3 GB (2296923804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25f13baff77946e3af6222314262c8d1e0d51fe061552747e96ebcde4732c1af`
+-	Image ID: `sha256:c7f0435a43fb69272cfb8fbad3c8db40083615c73fb32ab4417c9ee8478816aa`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Mon, 24 Jun 2024 23:04:14 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:01:32 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:05:02 GMT
+# Wed, 10 Jul 2024 17:01:56 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:05:02 GMT
+# Wed, 10 Jul 2024 17:01:56 GMT
 ENV DOCKER_VERSION=26.1.4
-# Mon, 24 Jun 2024 23:05:03 GMT
+# Wed, 10 Jul 2024 17:01:57 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-26.1.4.zip
-# Mon, 24 Jun 2024 23:05:25 GMT
+# Wed, 10 Jul 2024 17:02:21 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:05:26 GMT
+# Wed, 10 Jul 2024 17:02:22 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:05:27 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:05:27 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:05:49 GMT
+# Wed, 10 Jul 2024 17:02:47 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:05:51 GMT
+# Wed, 10 Jul 2024 17:02:48 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:05:51 GMT
+# Wed, 10 Jul 2024 17:02:48 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:05:52 GMT
+# Wed, 10 Jul 2024 17:02:49 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:06:12 GMT
+# Wed, 10 Jul 2024 17:03:13 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -25516,117 +25516,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a40379a0adf6bfe74bf2d1faad31692106a353984473d2961801ef2f2e177ff6`  
-		Last Modified: Mon, 24 Jun 2024 23:06:22 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:e4f82ef930fbe23983fac10fc287c432b782bbe5b03de8e1cd30abbbd80f0e06`  
+		Last Modified: Wed, 10 Jul 2024 17:03:22 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b04c33a0439dd0d3cca5028a2b5ffbd1af9e8a9b44034074e065bf9c292d4aa`  
-		Last Modified: Mon, 24 Jun 2024 23:06:22 GMT  
-		Size: 492.7 KB (492727 bytes)  
+	-	`sha256:f45f05fa334d06fbf92e593603026e51f24208b7e3ba2a335ad891536296f11d`  
+		Last Modified: Wed, 10 Jul 2024 17:03:23 GMT  
+		Size: 500.1 KB (500070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf6147c61c494cc3abe5e338eacb6770532235bf272bdafa2b56e83d1be562fa`  
-		Last Modified: Mon, 24 Jun 2024 23:06:20 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:2886b71e604d6866ab0bc9700d40d4613bf5e4cdfa26f14dc492a5e8f4cc09f1`  
+		Last Modified: Wed, 10 Jul 2024 17:03:21 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0365cc6fab04ee72a29ab1eebb2f4035012c5f3606163467b80a13a28ce6ee42`  
-		Last Modified: Mon, 24 Jun 2024 23:06:20 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:32b56007a1fbf3fcabcd87c28b37ed04912520a60fbe0861e4c77a125ba69771`  
+		Last Modified: Wed, 10 Jul 2024 17:03:21 GMT  
+		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a529c9f0f444af2d65677d36ba1dae2b585db4a04f09ddcbecc7457ceade7b8`  
-		Last Modified: Mon, 24 Jun 2024 23:06:22 GMT  
-		Size: 19.3 MB (19256816 bytes)  
+	-	`sha256:4e73ffb753bb8ea6156e318b4119a0f7cdf5d8474d13df5b6c364a37c1ca660e`  
+		Last Modified: Wed, 10 Jul 2024 17:03:23 GMT  
+		Size: 19.3 MB (19271472 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e77d3aecb67e763a9283802a8054014db9aa415a6032f4c092ad4552cb0481fa`  
-		Last Modified: Mon, 24 Jun 2024 23:06:19 GMT  
-		Size: 1.4 KB (1358 bytes)  
+	-	`sha256:038cb09c357c4db505e98093ecd6e516de11d6b78762a80f0fe7ecc02074b453`  
+		Last Modified: Wed, 10 Jul 2024 17:03:19 GMT  
+		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3a6936325f8e845d151be50e905a33111b4fde24565688755ec0a7e267bda8a`  
-		Last Modified: Mon, 24 Jun 2024 23:06:18 GMT  
-		Size: 1.3 KB (1328 bytes)  
+	-	`sha256:df00f3a5458c76868abed8221a979aed7683c6e39fe4157763b7d54efa944835`  
+		Last Modified: Wed, 10 Jul 2024 17:03:19 GMT  
+		Size: 1.3 KB (1306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cd475b893d76c371982d4cfa0726c19375590607f7a631a4b7c757da15eb585`  
-		Last Modified: Mon, 24 Jun 2024 23:06:18 GMT  
-		Size: 1.4 KB (1396 bytes)  
+	-	`sha256:33918051f07ea9f57a0cfe51ce9867e1654852651fdbb622b3112081a67bc681`  
+		Last Modified: Wed, 10 Jul 2024 17:03:19 GMT  
+		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:331c2b5baebc00e98cbec6f32ae0a9b95559f3fe6a8eee11109f3d9ff5e7e416`  
-		Last Modified: Mon, 24 Jun 2024 23:06:19 GMT  
-		Size: 19.0 MB (19026027 bytes)  
+	-	`sha256:3eadb85ca23a2715eb906027226953bf312a815e4495bfe71e9f44ad7553418c`  
+		Last Modified: Wed, 10 Jul 2024 17:03:20 GMT  
+		Size: 19.0 MB (19039245 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:397591a2f39e13eb06c51a0d19f91eee12253e8ce3cc1d7734ef1f15e255a8a6`  
-		Last Modified: Mon, 24 Jun 2024 23:06:17 GMT  
-		Size: 1.3 KB (1304 bytes)  
+	-	`sha256:3ddf47804879343f048850d8e9aff2f091f5877538bafae25955df88da61a873`  
+		Last Modified: Wed, 10 Jul 2024 17:03:17 GMT  
+		Size: 1.3 KB (1308 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:773797d09d210c06d18d194a837acb7442d872062f9a2cfec3e321ffc810a6b4`  
-		Last Modified: Mon, 24 Jun 2024 23:06:16 GMT  
-		Size: 1.3 KB (1303 bytes)  
+	-	`sha256:f379e4c9c142e1b3d484acdd4fffa6bf9681c14345d3b277efa7a8655cf7874d`  
+		Last Modified: Wed, 10 Jul 2024 17:03:18 GMT  
+		Size: 1.3 KB (1338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f58ffccc082b48227749e4fd76577f7550bac019ace57c7c90dd9a397c75b6e`  
-		Last Modified: Mon, 24 Jun 2024 23:06:17 GMT  
-		Size: 1.3 KB (1302 bytes)  
+	-	`sha256:0b6e4b2dd50efc29bbb358cf7ced0aa50ec1ef1bd24a86c936a43f2a9f14b083`  
+		Last Modified: Wed, 10 Jul 2024 17:03:17 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ed95ee23b804c23e92254b88999bb06ee9cb804d66be6a4a39d98fa407b9ddb`  
-		Last Modified: Mon, 24 Jun 2024 23:06:19 GMT  
-		Size: 19.7 MB (19653144 bytes)  
+	-	`sha256:68e4932a73c15c0ad41425fa39de6c0c2b05507d9a39d4994ae20e0e79e1da01`  
+		Last Modified: Wed, 10 Jul 2024 17:03:20 GMT  
+		Size: 19.7 MB (19671903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:26-windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:6b55cec4c76012a164f03bb0af2599679b1c75c4ec56c73e04d8fbe6ebc8c9ab
+$ docker pull docker@sha256:f9b52a048af6a47f0e0ff04f40e4d37daeb052f084daef891109734b09837fbf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:26-windowsservercore-1809` - windows version 10.0.17763.5936; amd64
+### `docker:26-windowsservercore-1809` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:41921d264b5b04d35d50c3a3492d0a3a5ebc101a1f9dff8e6f90c76797bf800d
+$ docker pull docker@sha256:5f8eb7c8ff3aa120ef55a83421e4a4d80081dec17bde460742aec3a0fa95d91f
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2279121755 bytes)**  
+-	Total Size: **2.3 GB (2296923804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25f13baff77946e3af6222314262c8d1e0d51fe061552747e96ebcde4732c1af`
+-	Image ID: `sha256:c7f0435a43fb69272cfb8fbad3c8db40083615c73fb32ab4417c9ee8478816aa`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Mon, 24 Jun 2024 23:04:14 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:01:32 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:05:02 GMT
+# Wed, 10 Jul 2024 17:01:56 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:05:02 GMT
+# Wed, 10 Jul 2024 17:01:56 GMT
 ENV DOCKER_VERSION=26.1.4
-# Mon, 24 Jun 2024 23:05:03 GMT
+# Wed, 10 Jul 2024 17:01:57 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-26.1.4.zip
-# Mon, 24 Jun 2024 23:05:25 GMT
+# Wed, 10 Jul 2024 17:02:21 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:05:26 GMT
+# Wed, 10 Jul 2024 17:02:22 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:05:27 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:05:27 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:05:49 GMT
+# Wed, 10 Jul 2024 17:02:47 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:05:51 GMT
+# Wed, 10 Jul 2024 17:02:48 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:05:51 GMT
+# Wed, 10 Jul 2024 17:02:48 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:05:52 GMT
+# Wed, 10 Jul 2024 17:02:49 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:06:12 GMT
+# Wed, 10 Jul 2024 17:03:13 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -25635,117 +25635,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a40379a0adf6bfe74bf2d1faad31692106a353984473d2961801ef2f2e177ff6`  
-		Last Modified: Mon, 24 Jun 2024 23:06:22 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:e4f82ef930fbe23983fac10fc287c432b782bbe5b03de8e1cd30abbbd80f0e06`  
+		Last Modified: Wed, 10 Jul 2024 17:03:22 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b04c33a0439dd0d3cca5028a2b5ffbd1af9e8a9b44034074e065bf9c292d4aa`  
-		Last Modified: Mon, 24 Jun 2024 23:06:22 GMT  
-		Size: 492.7 KB (492727 bytes)  
+	-	`sha256:f45f05fa334d06fbf92e593603026e51f24208b7e3ba2a335ad891536296f11d`  
+		Last Modified: Wed, 10 Jul 2024 17:03:23 GMT  
+		Size: 500.1 KB (500070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf6147c61c494cc3abe5e338eacb6770532235bf272bdafa2b56e83d1be562fa`  
-		Last Modified: Mon, 24 Jun 2024 23:06:20 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:2886b71e604d6866ab0bc9700d40d4613bf5e4cdfa26f14dc492a5e8f4cc09f1`  
+		Last Modified: Wed, 10 Jul 2024 17:03:21 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0365cc6fab04ee72a29ab1eebb2f4035012c5f3606163467b80a13a28ce6ee42`  
-		Last Modified: Mon, 24 Jun 2024 23:06:20 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:32b56007a1fbf3fcabcd87c28b37ed04912520a60fbe0861e4c77a125ba69771`  
+		Last Modified: Wed, 10 Jul 2024 17:03:21 GMT  
+		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a529c9f0f444af2d65677d36ba1dae2b585db4a04f09ddcbecc7457ceade7b8`  
-		Last Modified: Mon, 24 Jun 2024 23:06:22 GMT  
-		Size: 19.3 MB (19256816 bytes)  
+	-	`sha256:4e73ffb753bb8ea6156e318b4119a0f7cdf5d8474d13df5b6c364a37c1ca660e`  
+		Last Modified: Wed, 10 Jul 2024 17:03:23 GMT  
+		Size: 19.3 MB (19271472 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e77d3aecb67e763a9283802a8054014db9aa415a6032f4c092ad4552cb0481fa`  
-		Last Modified: Mon, 24 Jun 2024 23:06:19 GMT  
-		Size: 1.4 KB (1358 bytes)  
+	-	`sha256:038cb09c357c4db505e98093ecd6e516de11d6b78762a80f0fe7ecc02074b453`  
+		Last Modified: Wed, 10 Jul 2024 17:03:19 GMT  
+		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3a6936325f8e845d151be50e905a33111b4fde24565688755ec0a7e267bda8a`  
-		Last Modified: Mon, 24 Jun 2024 23:06:18 GMT  
-		Size: 1.3 KB (1328 bytes)  
+	-	`sha256:df00f3a5458c76868abed8221a979aed7683c6e39fe4157763b7d54efa944835`  
+		Last Modified: Wed, 10 Jul 2024 17:03:19 GMT  
+		Size: 1.3 KB (1306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cd475b893d76c371982d4cfa0726c19375590607f7a631a4b7c757da15eb585`  
-		Last Modified: Mon, 24 Jun 2024 23:06:18 GMT  
-		Size: 1.4 KB (1396 bytes)  
+	-	`sha256:33918051f07ea9f57a0cfe51ce9867e1654852651fdbb622b3112081a67bc681`  
+		Last Modified: Wed, 10 Jul 2024 17:03:19 GMT  
+		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:331c2b5baebc00e98cbec6f32ae0a9b95559f3fe6a8eee11109f3d9ff5e7e416`  
-		Last Modified: Mon, 24 Jun 2024 23:06:19 GMT  
-		Size: 19.0 MB (19026027 bytes)  
+	-	`sha256:3eadb85ca23a2715eb906027226953bf312a815e4495bfe71e9f44ad7553418c`  
+		Last Modified: Wed, 10 Jul 2024 17:03:20 GMT  
+		Size: 19.0 MB (19039245 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:397591a2f39e13eb06c51a0d19f91eee12253e8ce3cc1d7734ef1f15e255a8a6`  
-		Last Modified: Mon, 24 Jun 2024 23:06:17 GMT  
-		Size: 1.3 KB (1304 bytes)  
+	-	`sha256:3ddf47804879343f048850d8e9aff2f091f5877538bafae25955df88da61a873`  
+		Last Modified: Wed, 10 Jul 2024 17:03:17 GMT  
+		Size: 1.3 KB (1308 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:773797d09d210c06d18d194a837acb7442d872062f9a2cfec3e321ffc810a6b4`  
-		Last Modified: Mon, 24 Jun 2024 23:06:16 GMT  
-		Size: 1.3 KB (1303 bytes)  
+	-	`sha256:f379e4c9c142e1b3d484acdd4fffa6bf9681c14345d3b277efa7a8655cf7874d`  
+		Last Modified: Wed, 10 Jul 2024 17:03:18 GMT  
+		Size: 1.3 KB (1338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f58ffccc082b48227749e4fd76577f7550bac019ace57c7c90dd9a397c75b6e`  
-		Last Modified: Mon, 24 Jun 2024 23:06:17 GMT  
-		Size: 1.3 KB (1302 bytes)  
+	-	`sha256:0b6e4b2dd50efc29bbb358cf7ced0aa50ec1ef1bd24a86c936a43f2a9f14b083`  
+		Last Modified: Wed, 10 Jul 2024 17:03:17 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ed95ee23b804c23e92254b88999bb06ee9cb804d66be6a4a39d98fa407b9ddb`  
-		Last Modified: Mon, 24 Jun 2024 23:06:19 GMT  
-		Size: 19.7 MB (19653144 bytes)  
+	-	`sha256:68e4932a73c15c0ad41425fa39de6c0c2b05507d9a39d4994ae20e0e79e1da01`  
+		Last Modified: Wed, 10 Jul 2024 17:03:20 GMT  
+		Size: 19.7 MB (19671903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:26-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull docker@sha256:6bf82563a92527086103fa207c44adcac510de21b9d7ce4234565118a1010364
+$ docker pull docker@sha256:187cc83e2bb2dc1b58c43c8dab68182794f659981794519c32c000aa7bcdb27f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.2529; amd64
+	-	windows version 10.0.20348.2582; amd64
 
-### `docker:26-windowsservercore-ltsc2022` - windows version 10.0.20348.2529; amd64
+### `docker:26-windowsservercore-ltsc2022` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:83a06bbcb87bde57bf89aad73c8f350a09a1310d69ff4fa30464c56d83912118
+$ docker pull docker@sha256:b89d44be89b2488dba364d15498369cbb475000e9d8e0fdb2eb02191df834d47
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2176449391 bytes)**  
+-	Total Size: **2.2 GB (2197895630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efedf6e6257f1f89bdddb0ef0fed0ee30ebde2875c74ac12d71aaa48b8a1d75d`
+-	Image ID: `sha256:aebcbfdbeda281beefd8baae520390d230143ea48f1dcfff98afefe97c1774f7`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Mon, 24 Jun 2024 23:01:49 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:06:54 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:01:56 GMT
+# Wed, 10 Jul 2024 17:07:05 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:01:56 GMT
+# Wed, 10 Jul 2024 17:07:05 GMT
 ENV DOCKER_VERSION=26.1.4
-# Mon, 24 Jun 2024 23:01:57 GMT
+# Wed, 10 Jul 2024 17:07:06 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-26.1.4.zip
-# Mon, 24 Jun 2024 23:02:06 GMT
+# Wed, 10 Jul 2024 17:07:16 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:06 GMT
+# Wed, 10 Jul 2024 17:07:17 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:02:07 GMT
+# Wed, 10 Jul 2024 17:07:18 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:02:08 GMT
+# Wed, 10 Jul 2024 17:07:18 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:02:14 GMT
+# Wed, 10 Jul 2024 17:07:26 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:15 GMT
+# Wed, 10 Jul 2024 17:07:26 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:02:15 GMT
+# Wed, 10 Jul 2024 17:07:27 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:02:16 GMT
+# Wed, 10 Jul 2024 17:07:27 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:02:23 GMT
+# Wed, 10 Jul 2024 17:07:35 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -25754,61 +25754,61 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:246e482b6e23771fa41b6a97ddf58d6b8e2c45211e1524cfb7eccfa0fd9ce1d4`  
-		Last Modified: Mon, 24 Jun 2024 23:02:29 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:f2d9d3de1058a39678546ae37fcf1bae84d4f9ef46e987a8aae464067a2110da`  
+		Last Modified: Wed, 10 Jul 2024 17:07:43 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82da0fca8cfb8c4aeedf6a91d0e065be220a4ce837dfa4d404f9f4f5e540c7e4`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 345.9 KB (345885 bytes)  
+	-	`sha256:70fc228473c5a99761b4df8a8a2d6480491d148eb2b6226712c02b57c441b8a3`  
+		Last Modified: Wed, 10 Jul 2024 17:07:44 GMT  
+		Size: 353.7 KB (353690 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:068d6a51b1a127e2fd7469da3666cdd3c1affe6d4e2f69a80bab48d114954cae`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:8ffd5f477c1b8d5d76f9614eb3cd5ec902b1ac1f8be64cabef4f2ac67972a1e3`  
+		Last Modified: Wed, 10 Jul 2024 17:07:42 GMT  
+		Size: 1.3 KB (1278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c6768c61d278aef37aa33785426450619cc28d80ccd049018f0785c299db14e`  
-		Last Modified: Mon, 24 Jun 2024 23:02:27 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:5544bd81947c008123c95c311e73bce204fb5a324352243ca07c226e292a2ad1`  
+		Last Modified: Wed, 10 Jul 2024 17:07:42 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2617e1912221cf413d04d7299580b0daea3c0825fee7b5d9fad6a9a44f1a5454`  
-		Last Modified: Mon, 24 Jun 2024 23:02:29 GMT  
-		Size: 19.2 MB (19241807 bytes)  
+	-	`sha256:84b536eb8933d9e23be6e81c349259217c0ff0ac4c811cfaf0f0ff1d1e6c21b0`  
+		Last Modified: Wed, 10 Jul 2024 17:07:44 GMT  
+		Size: 19.3 MB (19250069 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d31372f6eb1e0c4455e4bad9bc6a40935b8576f56647573811f728f66716b29`  
-		Last Modified: Mon, 24 Jun 2024 23:02:26 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:85acd654f2e15df5e3b3d86e685a7df672c9d69ed5fada7fc0a67b055a4eed35`  
+		Last Modified: Wed, 10 Jul 2024 17:07:40 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27164582d8240a6b1c5b712d95806fdb59df86cf8a1bb194e96fb5e1f3a1676c`  
-		Last Modified: Mon, 24 Jun 2024 23:02:26 GMT  
-		Size: 1.4 KB (1354 bytes)  
+	-	`sha256:51b63cd5a9085fd35a77eba7cbd17d34168b84095f058c4c166ff437454290c8`  
+		Last Modified: Wed, 10 Jul 2024 17:07:40 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:619a32541eaeb8b9af553b64aae13f0a963563ba072449138c4b112a2300eaf0`  
-		Last Modified: Mon, 24 Jun 2024 23:02:26 GMT  
-		Size: 1.4 KB (1352 bytes)  
+	-	`sha256:b050385ea469075e8ac3cd0c01f59b05237fe243752b4af0ba748c499f7c7214`  
+		Last Modified: Wed, 10 Jul 2024 17:07:40 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a67541314ab9c624da2df20937b0861ab7987c9b9d59af61e9ee17921078e13`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 19.0 MB (19012054 bytes)  
+	-	`sha256:7e7223c9cd26ba7de1b396ce8f876f3778a2c9a9742172142b43c200cca0e015`  
+		Last Modified: Wed, 10 Jul 2024 17:07:41 GMT  
+		Size: 19.0 MB (19022171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:303765272afa63b6e978553f603ccc8143fedc46a75c558e0fc2083d5d17d334`  
-		Last Modified: Mon, 24 Jun 2024 23:02:25 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:03f8e9a2edc1e7c0274a5901135c476d5c8aa0e7fdb984c81763b69cc7e2c4c5`  
+		Last Modified: Wed, 10 Jul 2024 17:07:39 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d6e97d4bbb0d07c480be5888d63631d5e2be9ad351c44720e781473cddd384`  
-		Last Modified: Mon, 24 Jun 2024 23:02:25 GMT  
-		Size: 1.3 KB (1281 bytes)  
+	-	`sha256:cebb7aee2d0caeef03e8450dd9e72a42e73bd3afa18044f08f21c60a9cf0a981`  
+		Last Modified: Wed, 10 Jul 2024 17:07:39 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:983542ae2a8cf1dd1fe4c7e09db1444d8ede7e730e2eab3e7c92f12f3d135a71`  
-		Last Modified: Mon, 24 Jun 2024 23:02:25 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:99935b0862983b7826842674ae5c56f9c1e932efbd1a676637a7df28557caa00`  
+		Last Modified: Wed, 10 Jul 2024 17:07:39 GMT  
+		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1690f9793edbd076b9cfb65e446be51744ed4e88575f5212285d2665e5276985`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 19.6 MB (19647600 bytes)  
+	-	`sha256:918a1533887acb04a5fac682ef1eee07f51aff7be62fc5a0aa9be26002311e70`  
+		Last Modified: Wed, 10 Jul 2024 17:07:41 GMT  
+		Size: 19.7 MB (19657816 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:26.1`
@@ -27964,58 +27964,58 @@ $ docker pull docker@sha256:ba659ab9650959b9accf58efdbebc01571003d01fc85415d3c47
 ## `docker:26.1-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:dff45b33543d8eff75dce2d151ccf047ced8e6a6b48fdef7425c86d9cb601f70
+$ docker pull docker@sha256:bd532ff6afdcff8431be93a45bd7518f8b326a19e48ccf3192c510f64bc81ff6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 2
-	-	windows version 10.0.20348.2529; amd64
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.20348.2582; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:26.1-windowsservercore` - windows version 10.0.20348.2529; amd64
+### `docker:26.1-windowsservercore` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:83a06bbcb87bde57bf89aad73c8f350a09a1310d69ff4fa30464c56d83912118
+$ docker pull docker@sha256:b89d44be89b2488dba364d15498369cbb475000e9d8e0fdb2eb02191df834d47
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2176449391 bytes)**  
+-	Total Size: **2.2 GB (2197895630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efedf6e6257f1f89bdddb0ef0fed0ee30ebde2875c74ac12d71aaa48b8a1d75d`
+-	Image ID: `sha256:aebcbfdbeda281beefd8baae520390d230143ea48f1dcfff98afefe97c1774f7`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Mon, 24 Jun 2024 23:01:49 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:06:54 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:01:56 GMT
+# Wed, 10 Jul 2024 17:07:05 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:01:56 GMT
+# Wed, 10 Jul 2024 17:07:05 GMT
 ENV DOCKER_VERSION=26.1.4
-# Mon, 24 Jun 2024 23:01:57 GMT
+# Wed, 10 Jul 2024 17:07:06 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-26.1.4.zip
-# Mon, 24 Jun 2024 23:02:06 GMT
+# Wed, 10 Jul 2024 17:07:16 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:06 GMT
+# Wed, 10 Jul 2024 17:07:17 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:02:07 GMT
+# Wed, 10 Jul 2024 17:07:18 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:02:08 GMT
+# Wed, 10 Jul 2024 17:07:18 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:02:14 GMT
+# Wed, 10 Jul 2024 17:07:26 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:15 GMT
+# Wed, 10 Jul 2024 17:07:26 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:02:15 GMT
+# Wed, 10 Jul 2024 17:07:27 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:02:16 GMT
+# Wed, 10 Jul 2024 17:07:27 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:02:23 GMT
+# Wed, 10 Jul 2024 17:07:35 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -28024,107 +28024,107 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:246e482b6e23771fa41b6a97ddf58d6b8e2c45211e1524cfb7eccfa0fd9ce1d4`  
-		Last Modified: Mon, 24 Jun 2024 23:02:29 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:f2d9d3de1058a39678546ae37fcf1bae84d4f9ef46e987a8aae464067a2110da`  
+		Last Modified: Wed, 10 Jul 2024 17:07:43 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82da0fca8cfb8c4aeedf6a91d0e065be220a4ce837dfa4d404f9f4f5e540c7e4`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 345.9 KB (345885 bytes)  
+	-	`sha256:70fc228473c5a99761b4df8a8a2d6480491d148eb2b6226712c02b57c441b8a3`  
+		Last Modified: Wed, 10 Jul 2024 17:07:44 GMT  
+		Size: 353.7 KB (353690 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:068d6a51b1a127e2fd7469da3666cdd3c1affe6d4e2f69a80bab48d114954cae`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:8ffd5f477c1b8d5d76f9614eb3cd5ec902b1ac1f8be64cabef4f2ac67972a1e3`  
+		Last Modified: Wed, 10 Jul 2024 17:07:42 GMT  
+		Size: 1.3 KB (1278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c6768c61d278aef37aa33785426450619cc28d80ccd049018f0785c299db14e`  
-		Last Modified: Mon, 24 Jun 2024 23:02:27 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:5544bd81947c008123c95c311e73bce204fb5a324352243ca07c226e292a2ad1`  
+		Last Modified: Wed, 10 Jul 2024 17:07:42 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2617e1912221cf413d04d7299580b0daea3c0825fee7b5d9fad6a9a44f1a5454`  
-		Last Modified: Mon, 24 Jun 2024 23:02:29 GMT  
-		Size: 19.2 MB (19241807 bytes)  
+	-	`sha256:84b536eb8933d9e23be6e81c349259217c0ff0ac4c811cfaf0f0ff1d1e6c21b0`  
+		Last Modified: Wed, 10 Jul 2024 17:07:44 GMT  
+		Size: 19.3 MB (19250069 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d31372f6eb1e0c4455e4bad9bc6a40935b8576f56647573811f728f66716b29`  
-		Last Modified: Mon, 24 Jun 2024 23:02:26 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:85acd654f2e15df5e3b3d86e685a7df672c9d69ed5fada7fc0a67b055a4eed35`  
+		Last Modified: Wed, 10 Jul 2024 17:07:40 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27164582d8240a6b1c5b712d95806fdb59df86cf8a1bb194e96fb5e1f3a1676c`  
-		Last Modified: Mon, 24 Jun 2024 23:02:26 GMT  
-		Size: 1.4 KB (1354 bytes)  
+	-	`sha256:51b63cd5a9085fd35a77eba7cbd17d34168b84095f058c4c166ff437454290c8`  
+		Last Modified: Wed, 10 Jul 2024 17:07:40 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:619a32541eaeb8b9af553b64aae13f0a963563ba072449138c4b112a2300eaf0`  
-		Last Modified: Mon, 24 Jun 2024 23:02:26 GMT  
-		Size: 1.4 KB (1352 bytes)  
+	-	`sha256:b050385ea469075e8ac3cd0c01f59b05237fe243752b4af0ba748c499f7c7214`  
+		Last Modified: Wed, 10 Jul 2024 17:07:40 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a67541314ab9c624da2df20937b0861ab7987c9b9d59af61e9ee17921078e13`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 19.0 MB (19012054 bytes)  
+	-	`sha256:7e7223c9cd26ba7de1b396ce8f876f3778a2c9a9742172142b43c200cca0e015`  
+		Last Modified: Wed, 10 Jul 2024 17:07:41 GMT  
+		Size: 19.0 MB (19022171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:303765272afa63b6e978553f603ccc8143fedc46a75c558e0fc2083d5d17d334`  
-		Last Modified: Mon, 24 Jun 2024 23:02:25 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:03f8e9a2edc1e7c0274a5901135c476d5c8aa0e7fdb984c81763b69cc7e2c4c5`  
+		Last Modified: Wed, 10 Jul 2024 17:07:39 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d6e97d4bbb0d07c480be5888d63631d5e2be9ad351c44720e781473cddd384`  
-		Last Modified: Mon, 24 Jun 2024 23:02:25 GMT  
-		Size: 1.3 KB (1281 bytes)  
+	-	`sha256:cebb7aee2d0caeef03e8450dd9e72a42e73bd3afa18044f08f21c60a9cf0a981`  
+		Last Modified: Wed, 10 Jul 2024 17:07:39 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:983542ae2a8cf1dd1fe4c7e09db1444d8ede7e730e2eab3e7c92f12f3d135a71`  
-		Last Modified: Mon, 24 Jun 2024 23:02:25 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:99935b0862983b7826842674ae5c56f9c1e932efbd1a676637a7df28557caa00`  
+		Last Modified: Wed, 10 Jul 2024 17:07:39 GMT  
+		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1690f9793edbd076b9cfb65e446be51744ed4e88575f5212285d2665e5276985`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 19.6 MB (19647600 bytes)  
+	-	`sha256:918a1533887acb04a5fac682ef1eee07f51aff7be62fc5a0aa9be26002311e70`  
+		Last Modified: Wed, 10 Jul 2024 17:07:41 GMT  
+		Size: 19.7 MB (19657816 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `docker:26.1-windowsservercore` - windows version 10.0.17763.5936; amd64
+### `docker:26.1-windowsservercore` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:41921d264b5b04d35d50c3a3492d0a3a5ebc101a1f9dff8e6f90c76797bf800d
+$ docker pull docker@sha256:5f8eb7c8ff3aa120ef55a83421e4a4d80081dec17bde460742aec3a0fa95d91f
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2279121755 bytes)**  
+-	Total Size: **2.3 GB (2296923804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25f13baff77946e3af6222314262c8d1e0d51fe061552747e96ebcde4732c1af`
+-	Image ID: `sha256:c7f0435a43fb69272cfb8fbad3c8db40083615c73fb32ab4417c9ee8478816aa`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Mon, 24 Jun 2024 23:04:14 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:01:32 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:05:02 GMT
+# Wed, 10 Jul 2024 17:01:56 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:05:02 GMT
+# Wed, 10 Jul 2024 17:01:56 GMT
 ENV DOCKER_VERSION=26.1.4
-# Mon, 24 Jun 2024 23:05:03 GMT
+# Wed, 10 Jul 2024 17:01:57 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-26.1.4.zip
-# Mon, 24 Jun 2024 23:05:25 GMT
+# Wed, 10 Jul 2024 17:02:21 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:05:26 GMT
+# Wed, 10 Jul 2024 17:02:22 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:05:27 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:05:27 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:05:49 GMT
+# Wed, 10 Jul 2024 17:02:47 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:05:51 GMT
+# Wed, 10 Jul 2024 17:02:48 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:05:51 GMT
+# Wed, 10 Jul 2024 17:02:48 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:05:52 GMT
+# Wed, 10 Jul 2024 17:02:49 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:06:12 GMT
+# Wed, 10 Jul 2024 17:03:13 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -28133,117 +28133,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a40379a0adf6bfe74bf2d1faad31692106a353984473d2961801ef2f2e177ff6`  
-		Last Modified: Mon, 24 Jun 2024 23:06:22 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:e4f82ef930fbe23983fac10fc287c432b782bbe5b03de8e1cd30abbbd80f0e06`  
+		Last Modified: Wed, 10 Jul 2024 17:03:22 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b04c33a0439dd0d3cca5028a2b5ffbd1af9e8a9b44034074e065bf9c292d4aa`  
-		Last Modified: Mon, 24 Jun 2024 23:06:22 GMT  
-		Size: 492.7 KB (492727 bytes)  
+	-	`sha256:f45f05fa334d06fbf92e593603026e51f24208b7e3ba2a335ad891536296f11d`  
+		Last Modified: Wed, 10 Jul 2024 17:03:23 GMT  
+		Size: 500.1 KB (500070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf6147c61c494cc3abe5e338eacb6770532235bf272bdafa2b56e83d1be562fa`  
-		Last Modified: Mon, 24 Jun 2024 23:06:20 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:2886b71e604d6866ab0bc9700d40d4613bf5e4cdfa26f14dc492a5e8f4cc09f1`  
+		Last Modified: Wed, 10 Jul 2024 17:03:21 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0365cc6fab04ee72a29ab1eebb2f4035012c5f3606163467b80a13a28ce6ee42`  
-		Last Modified: Mon, 24 Jun 2024 23:06:20 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:32b56007a1fbf3fcabcd87c28b37ed04912520a60fbe0861e4c77a125ba69771`  
+		Last Modified: Wed, 10 Jul 2024 17:03:21 GMT  
+		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a529c9f0f444af2d65677d36ba1dae2b585db4a04f09ddcbecc7457ceade7b8`  
-		Last Modified: Mon, 24 Jun 2024 23:06:22 GMT  
-		Size: 19.3 MB (19256816 bytes)  
+	-	`sha256:4e73ffb753bb8ea6156e318b4119a0f7cdf5d8474d13df5b6c364a37c1ca660e`  
+		Last Modified: Wed, 10 Jul 2024 17:03:23 GMT  
+		Size: 19.3 MB (19271472 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e77d3aecb67e763a9283802a8054014db9aa415a6032f4c092ad4552cb0481fa`  
-		Last Modified: Mon, 24 Jun 2024 23:06:19 GMT  
-		Size: 1.4 KB (1358 bytes)  
+	-	`sha256:038cb09c357c4db505e98093ecd6e516de11d6b78762a80f0fe7ecc02074b453`  
+		Last Modified: Wed, 10 Jul 2024 17:03:19 GMT  
+		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3a6936325f8e845d151be50e905a33111b4fde24565688755ec0a7e267bda8a`  
-		Last Modified: Mon, 24 Jun 2024 23:06:18 GMT  
-		Size: 1.3 KB (1328 bytes)  
+	-	`sha256:df00f3a5458c76868abed8221a979aed7683c6e39fe4157763b7d54efa944835`  
+		Last Modified: Wed, 10 Jul 2024 17:03:19 GMT  
+		Size: 1.3 KB (1306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cd475b893d76c371982d4cfa0726c19375590607f7a631a4b7c757da15eb585`  
-		Last Modified: Mon, 24 Jun 2024 23:06:18 GMT  
-		Size: 1.4 KB (1396 bytes)  
+	-	`sha256:33918051f07ea9f57a0cfe51ce9867e1654852651fdbb622b3112081a67bc681`  
+		Last Modified: Wed, 10 Jul 2024 17:03:19 GMT  
+		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:331c2b5baebc00e98cbec6f32ae0a9b95559f3fe6a8eee11109f3d9ff5e7e416`  
-		Last Modified: Mon, 24 Jun 2024 23:06:19 GMT  
-		Size: 19.0 MB (19026027 bytes)  
+	-	`sha256:3eadb85ca23a2715eb906027226953bf312a815e4495bfe71e9f44ad7553418c`  
+		Last Modified: Wed, 10 Jul 2024 17:03:20 GMT  
+		Size: 19.0 MB (19039245 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:397591a2f39e13eb06c51a0d19f91eee12253e8ce3cc1d7734ef1f15e255a8a6`  
-		Last Modified: Mon, 24 Jun 2024 23:06:17 GMT  
-		Size: 1.3 KB (1304 bytes)  
+	-	`sha256:3ddf47804879343f048850d8e9aff2f091f5877538bafae25955df88da61a873`  
+		Last Modified: Wed, 10 Jul 2024 17:03:17 GMT  
+		Size: 1.3 KB (1308 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:773797d09d210c06d18d194a837acb7442d872062f9a2cfec3e321ffc810a6b4`  
-		Last Modified: Mon, 24 Jun 2024 23:06:16 GMT  
-		Size: 1.3 KB (1303 bytes)  
+	-	`sha256:f379e4c9c142e1b3d484acdd4fffa6bf9681c14345d3b277efa7a8655cf7874d`  
+		Last Modified: Wed, 10 Jul 2024 17:03:18 GMT  
+		Size: 1.3 KB (1338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f58ffccc082b48227749e4fd76577f7550bac019ace57c7c90dd9a397c75b6e`  
-		Last Modified: Mon, 24 Jun 2024 23:06:17 GMT  
-		Size: 1.3 KB (1302 bytes)  
+	-	`sha256:0b6e4b2dd50efc29bbb358cf7ced0aa50ec1ef1bd24a86c936a43f2a9f14b083`  
+		Last Modified: Wed, 10 Jul 2024 17:03:17 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ed95ee23b804c23e92254b88999bb06ee9cb804d66be6a4a39d98fa407b9ddb`  
-		Last Modified: Mon, 24 Jun 2024 23:06:19 GMT  
-		Size: 19.7 MB (19653144 bytes)  
+	-	`sha256:68e4932a73c15c0ad41425fa39de6c0c2b05507d9a39d4994ae20e0e79e1da01`  
+		Last Modified: Wed, 10 Jul 2024 17:03:20 GMT  
+		Size: 19.7 MB (19671903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:26.1-windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:6b55cec4c76012a164f03bb0af2599679b1c75c4ec56c73e04d8fbe6ebc8c9ab
+$ docker pull docker@sha256:f9b52a048af6a47f0e0ff04f40e4d37daeb052f084daef891109734b09837fbf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:26.1-windowsservercore-1809` - windows version 10.0.17763.5936; amd64
+### `docker:26.1-windowsservercore-1809` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:41921d264b5b04d35d50c3a3492d0a3a5ebc101a1f9dff8e6f90c76797bf800d
+$ docker pull docker@sha256:5f8eb7c8ff3aa120ef55a83421e4a4d80081dec17bde460742aec3a0fa95d91f
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2279121755 bytes)**  
+-	Total Size: **2.3 GB (2296923804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25f13baff77946e3af6222314262c8d1e0d51fe061552747e96ebcde4732c1af`
+-	Image ID: `sha256:c7f0435a43fb69272cfb8fbad3c8db40083615c73fb32ab4417c9ee8478816aa`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Mon, 24 Jun 2024 23:04:14 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:01:32 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:05:02 GMT
+# Wed, 10 Jul 2024 17:01:56 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:05:02 GMT
+# Wed, 10 Jul 2024 17:01:56 GMT
 ENV DOCKER_VERSION=26.1.4
-# Mon, 24 Jun 2024 23:05:03 GMT
+# Wed, 10 Jul 2024 17:01:57 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-26.1.4.zip
-# Mon, 24 Jun 2024 23:05:25 GMT
+# Wed, 10 Jul 2024 17:02:21 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:05:26 GMT
+# Wed, 10 Jul 2024 17:02:22 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:05:27 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:05:27 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:05:49 GMT
+# Wed, 10 Jul 2024 17:02:47 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:05:51 GMT
+# Wed, 10 Jul 2024 17:02:48 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:05:51 GMT
+# Wed, 10 Jul 2024 17:02:48 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:05:52 GMT
+# Wed, 10 Jul 2024 17:02:49 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:06:12 GMT
+# Wed, 10 Jul 2024 17:03:13 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -28252,117 +28252,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a40379a0adf6bfe74bf2d1faad31692106a353984473d2961801ef2f2e177ff6`  
-		Last Modified: Mon, 24 Jun 2024 23:06:22 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:e4f82ef930fbe23983fac10fc287c432b782bbe5b03de8e1cd30abbbd80f0e06`  
+		Last Modified: Wed, 10 Jul 2024 17:03:22 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b04c33a0439dd0d3cca5028a2b5ffbd1af9e8a9b44034074e065bf9c292d4aa`  
-		Last Modified: Mon, 24 Jun 2024 23:06:22 GMT  
-		Size: 492.7 KB (492727 bytes)  
+	-	`sha256:f45f05fa334d06fbf92e593603026e51f24208b7e3ba2a335ad891536296f11d`  
+		Last Modified: Wed, 10 Jul 2024 17:03:23 GMT  
+		Size: 500.1 KB (500070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf6147c61c494cc3abe5e338eacb6770532235bf272bdafa2b56e83d1be562fa`  
-		Last Modified: Mon, 24 Jun 2024 23:06:20 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:2886b71e604d6866ab0bc9700d40d4613bf5e4cdfa26f14dc492a5e8f4cc09f1`  
+		Last Modified: Wed, 10 Jul 2024 17:03:21 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0365cc6fab04ee72a29ab1eebb2f4035012c5f3606163467b80a13a28ce6ee42`  
-		Last Modified: Mon, 24 Jun 2024 23:06:20 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:32b56007a1fbf3fcabcd87c28b37ed04912520a60fbe0861e4c77a125ba69771`  
+		Last Modified: Wed, 10 Jul 2024 17:03:21 GMT  
+		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a529c9f0f444af2d65677d36ba1dae2b585db4a04f09ddcbecc7457ceade7b8`  
-		Last Modified: Mon, 24 Jun 2024 23:06:22 GMT  
-		Size: 19.3 MB (19256816 bytes)  
+	-	`sha256:4e73ffb753bb8ea6156e318b4119a0f7cdf5d8474d13df5b6c364a37c1ca660e`  
+		Last Modified: Wed, 10 Jul 2024 17:03:23 GMT  
+		Size: 19.3 MB (19271472 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e77d3aecb67e763a9283802a8054014db9aa415a6032f4c092ad4552cb0481fa`  
-		Last Modified: Mon, 24 Jun 2024 23:06:19 GMT  
-		Size: 1.4 KB (1358 bytes)  
+	-	`sha256:038cb09c357c4db505e98093ecd6e516de11d6b78762a80f0fe7ecc02074b453`  
+		Last Modified: Wed, 10 Jul 2024 17:03:19 GMT  
+		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3a6936325f8e845d151be50e905a33111b4fde24565688755ec0a7e267bda8a`  
-		Last Modified: Mon, 24 Jun 2024 23:06:18 GMT  
-		Size: 1.3 KB (1328 bytes)  
+	-	`sha256:df00f3a5458c76868abed8221a979aed7683c6e39fe4157763b7d54efa944835`  
+		Last Modified: Wed, 10 Jul 2024 17:03:19 GMT  
+		Size: 1.3 KB (1306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cd475b893d76c371982d4cfa0726c19375590607f7a631a4b7c757da15eb585`  
-		Last Modified: Mon, 24 Jun 2024 23:06:18 GMT  
-		Size: 1.4 KB (1396 bytes)  
+	-	`sha256:33918051f07ea9f57a0cfe51ce9867e1654852651fdbb622b3112081a67bc681`  
+		Last Modified: Wed, 10 Jul 2024 17:03:19 GMT  
+		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:331c2b5baebc00e98cbec6f32ae0a9b95559f3fe6a8eee11109f3d9ff5e7e416`  
-		Last Modified: Mon, 24 Jun 2024 23:06:19 GMT  
-		Size: 19.0 MB (19026027 bytes)  
+	-	`sha256:3eadb85ca23a2715eb906027226953bf312a815e4495bfe71e9f44ad7553418c`  
+		Last Modified: Wed, 10 Jul 2024 17:03:20 GMT  
+		Size: 19.0 MB (19039245 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:397591a2f39e13eb06c51a0d19f91eee12253e8ce3cc1d7734ef1f15e255a8a6`  
-		Last Modified: Mon, 24 Jun 2024 23:06:17 GMT  
-		Size: 1.3 KB (1304 bytes)  
+	-	`sha256:3ddf47804879343f048850d8e9aff2f091f5877538bafae25955df88da61a873`  
+		Last Modified: Wed, 10 Jul 2024 17:03:17 GMT  
+		Size: 1.3 KB (1308 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:773797d09d210c06d18d194a837acb7442d872062f9a2cfec3e321ffc810a6b4`  
-		Last Modified: Mon, 24 Jun 2024 23:06:16 GMT  
-		Size: 1.3 KB (1303 bytes)  
+	-	`sha256:f379e4c9c142e1b3d484acdd4fffa6bf9681c14345d3b277efa7a8655cf7874d`  
+		Last Modified: Wed, 10 Jul 2024 17:03:18 GMT  
+		Size: 1.3 KB (1338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f58ffccc082b48227749e4fd76577f7550bac019ace57c7c90dd9a397c75b6e`  
-		Last Modified: Mon, 24 Jun 2024 23:06:17 GMT  
-		Size: 1.3 KB (1302 bytes)  
+	-	`sha256:0b6e4b2dd50efc29bbb358cf7ced0aa50ec1ef1bd24a86c936a43f2a9f14b083`  
+		Last Modified: Wed, 10 Jul 2024 17:03:17 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ed95ee23b804c23e92254b88999bb06ee9cb804d66be6a4a39d98fa407b9ddb`  
-		Last Modified: Mon, 24 Jun 2024 23:06:19 GMT  
-		Size: 19.7 MB (19653144 bytes)  
+	-	`sha256:68e4932a73c15c0ad41425fa39de6c0c2b05507d9a39d4994ae20e0e79e1da01`  
+		Last Modified: Wed, 10 Jul 2024 17:03:20 GMT  
+		Size: 19.7 MB (19671903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:26.1-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull docker@sha256:6bf82563a92527086103fa207c44adcac510de21b9d7ce4234565118a1010364
+$ docker pull docker@sha256:187cc83e2bb2dc1b58c43c8dab68182794f659981794519c32c000aa7bcdb27f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.2529; amd64
+	-	windows version 10.0.20348.2582; amd64
 
-### `docker:26.1-windowsservercore-ltsc2022` - windows version 10.0.20348.2529; amd64
+### `docker:26.1-windowsservercore-ltsc2022` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:83a06bbcb87bde57bf89aad73c8f350a09a1310d69ff4fa30464c56d83912118
+$ docker pull docker@sha256:b89d44be89b2488dba364d15498369cbb475000e9d8e0fdb2eb02191df834d47
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2176449391 bytes)**  
+-	Total Size: **2.2 GB (2197895630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efedf6e6257f1f89bdddb0ef0fed0ee30ebde2875c74ac12d71aaa48b8a1d75d`
+-	Image ID: `sha256:aebcbfdbeda281beefd8baae520390d230143ea48f1dcfff98afefe97c1774f7`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Mon, 24 Jun 2024 23:01:49 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:06:54 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:01:56 GMT
+# Wed, 10 Jul 2024 17:07:05 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:01:56 GMT
+# Wed, 10 Jul 2024 17:07:05 GMT
 ENV DOCKER_VERSION=26.1.4
-# Mon, 24 Jun 2024 23:01:57 GMT
+# Wed, 10 Jul 2024 17:07:06 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-26.1.4.zip
-# Mon, 24 Jun 2024 23:02:06 GMT
+# Wed, 10 Jul 2024 17:07:16 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:06 GMT
+# Wed, 10 Jul 2024 17:07:17 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:02:07 GMT
+# Wed, 10 Jul 2024 17:07:18 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:02:08 GMT
+# Wed, 10 Jul 2024 17:07:18 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:02:14 GMT
+# Wed, 10 Jul 2024 17:07:26 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:15 GMT
+# Wed, 10 Jul 2024 17:07:26 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:02:15 GMT
+# Wed, 10 Jul 2024 17:07:27 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:02:16 GMT
+# Wed, 10 Jul 2024 17:07:27 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:02:23 GMT
+# Wed, 10 Jul 2024 17:07:35 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -28371,61 +28371,61 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:246e482b6e23771fa41b6a97ddf58d6b8e2c45211e1524cfb7eccfa0fd9ce1d4`  
-		Last Modified: Mon, 24 Jun 2024 23:02:29 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:f2d9d3de1058a39678546ae37fcf1bae84d4f9ef46e987a8aae464067a2110da`  
+		Last Modified: Wed, 10 Jul 2024 17:07:43 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82da0fca8cfb8c4aeedf6a91d0e065be220a4ce837dfa4d404f9f4f5e540c7e4`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 345.9 KB (345885 bytes)  
+	-	`sha256:70fc228473c5a99761b4df8a8a2d6480491d148eb2b6226712c02b57c441b8a3`  
+		Last Modified: Wed, 10 Jul 2024 17:07:44 GMT  
+		Size: 353.7 KB (353690 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:068d6a51b1a127e2fd7469da3666cdd3c1affe6d4e2f69a80bab48d114954cae`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:8ffd5f477c1b8d5d76f9614eb3cd5ec902b1ac1f8be64cabef4f2ac67972a1e3`  
+		Last Modified: Wed, 10 Jul 2024 17:07:42 GMT  
+		Size: 1.3 KB (1278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c6768c61d278aef37aa33785426450619cc28d80ccd049018f0785c299db14e`  
-		Last Modified: Mon, 24 Jun 2024 23:02:27 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:5544bd81947c008123c95c311e73bce204fb5a324352243ca07c226e292a2ad1`  
+		Last Modified: Wed, 10 Jul 2024 17:07:42 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2617e1912221cf413d04d7299580b0daea3c0825fee7b5d9fad6a9a44f1a5454`  
-		Last Modified: Mon, 24 Jun 2024 23:02:29 GMT  
-		Size: 19.2 MB (19241807 bytes)  
+	-	`sha256:84b536eb8933d9e23be6e81c349259217c0ff0ac4c811cfaf0f0ff1d1e6c21b0`  
+		Last Modified: Wed, 10 Jul 2024 17:07:44 GMT  
+		Size: 19.3 MB (19250069 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d31372f6eb1e0c4455e4bad9bc6a40935b8576f56647573811f728f66716b29`  
-		Last Modified: Mon, 24 Jun 2024 23:02:26 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:85acd654f2e15df5e3b3d86e685a7df672c9d69ed5fada7fc0a67b055a4eed35`  
+		Last Modified: Wed, 10 Jul 2024 17:07:40 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27164582d8240a6b1c5b712d95806fdb59df86cf8a1bb194e96fb5e1f3a1676c`  
-		Last Modified: Mon, 24 Jun 2024 23:02:26 GMT  
-		Size: 1.4 KB (1354 bytes)  
+	-	`sha256:51b63cd5a9085fd35a77eba7cbd17d34168b84095f058c4c166ff437454290c8`  
+		Last Modified: Wed, 10 Jul 2024 17:07:40 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:619a32541eaeb8b9af553b64aae13f0a963563ba072449138c4b112a2300eaf0`  
-		Last Modified: Mon, 24 Jun 2024 23:02:26 GMT  
-		Size: 1.4 KB (1352 bytes)  
+	-	`sha256:b050385ea469075e8ac3cd0c01f59b05237fe243752b4af0ba748c499f7c7214`  
+		Last Modified: Wed, 10 Jul 2024 17:07:40 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a67541314ab9c624da2df20937b0861ab7987c9b9d59af61e9ee17921078e13`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 19.0 MB (19012054 bytes)  
+	-	`sha256:7e7223c9cd26ba7de1b396ce8f876f3778a2c9a9742172142b43c200cca0e015`  
+		Last Modified: Wed, 10 Jul 2024 17:07:41 GMT  
+		Size: 19.0 MB (19022171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:303765272afa63b6e978553f603ccc8143fedc46a75c558e0fc2083d5d17d334`  
-		Last Modified: Mon, 24 Jun 2024 23:02:25 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:03f8e9a2edc1e7c0274a5901135c476d5c8aa0e7fdb984c81763b69cc7e2c4c5`  
+		Last Modified: Wed, 10 Jul 2024 17:07:39 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d6e97d4bbb0d07c480be5888d63631d5e2be9ad351c44720e781473cddd384`  
-		Last Modified: Mon, 24 Jun 2024 23:02:25 GMT  
-		Size: 1.3 KB (1281 bytes)  
+	-	`sha256:cebb7aee2d0caeef03e8450dd9e72a42e73bd3afa18044f08f21c60a9cf0a981`  
+		Last Modified: Wed, 10 Jul 2024 17:07:39 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:983542ae2a8cf1dd1fe4c7e09db1444d8ede7e730e2eab3e7c92f12f3d135a71`  
-		Last Modified: Mon, 24 Jun 2024 23:02:25 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:99935b0862983b7826842674ae5c56f9c1e932efbd1a676637a7df28557caa00`  
+		Last Modified: Wed, 10 Jul 2024 17:07:39 GMT  
+		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1690f9793edbd076b9cfb65e446be51744ed4e88575f5212285d2665e5276985`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 19.6 MB (19647600 bytes)  
+	-	`sha256:918a1533887acb04a5fac682ef1eee07f51aff7be62fc5a0aa9be26002311e70`  
+		Last Modified: Wed, 10 Jul 2024 17:07:41 GMT  
+		Size: 19.7 MB (19657816 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:26.1.4`
@@ -32336,58 +32336,58 @@ $ docker pull docker@sha256:ba659ab9650959b9accf58efdbebc01571003d01fc85415d3c47
 ## `docker:26.1.4-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:dff45b33543d8eff75dce2d151ccf047ced8e6a6b48fdef7425c86d9cb601f70
+$ docker pull docker@sha256:bd532ff6afdcff8431be93a45bd7518f8b326a19e48ccf3192c510f64bc81ff6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 2
-	-	windows version 10.0.20348.2529; amd64
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.20348.2582; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:26.1.4-windowsservercore` - windows version 10.0.20348.2529; amd64
+### `docker:26.1.4-windowsservercore` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:83a06bbcb87bde57bf89aad73c8f350a09a1310d69ff4fa30464c56d83912118
+$ docker pull docker@sha256:b89d44be89b2488dba364d15498369cbb475000e9d8e0fdb2eb02191df834d47
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2176449391 bytes)**  
+-	Total Size: **2.2 GB (2197895630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efedf6e6257f1f89bdddb0ef0fed0ee30ebde2875c74ac12d71aaa48b8a1d75d`
+-	Image ID: `sha256:aebcbfdbeda281beefd8baae520390d230143ea48f1dcfff98afefe97c1774f7`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Mon, 24 Jun 2024 23:01:49 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:06:54 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:01:56 GMT
+# Wed, 10 Jul 2024 17:07:05 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:01:56 GMT
+# Wed, 10 Jul 2024 17:07:05 GMT
 ENV DOCKER_VERSION=26.1.4
-# Mon, 24 Jun 2024 23:01:57 GMT
+# Wed, 10 Jul 2024 17:07:06 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-26.1.4.zip
-# Mon, 24 Jun 2024 23:02:06 GMT
+# Wed, 10 Jul 2024 17:07:16 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:06 GMT
+# Wed, 10 Jul 2024 17:07:17 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:02:07 GMT
+# Wed, 10 Jul 2024 17:07:18 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:02:08 GMT
+# Wed, 10 Jul 2024 17:07:18 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:02:14 GMT
+# Wed, 10 Jul 2024 17:07:26 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:15 GMT
+# Wed, 10 Jul 2024 17:07:26 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:02:15 GMT
+# Wed, 10 Jul 2024 17:07:27 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:02:16 GMT
+# Wed, 10 Jul 2024 17:07:27 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:02:23 GMT
+# Wed, 10 Jul 2024 17:07:35 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -32396,107 +32396,107 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:246e482b6e23771fa41b6a97ddf58d6b8e2c45211e1524cfb7eccfa0fd9ce1d4`  
-		Last Modified: Mon, 24 Jun 2024 23:02:29 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:f2d9d3de1058a39678546ae37fcf1bae84d4f9ef46e987a8aae464067a2110da`  
+		Last Modified: Wed, 10 Jul 2024 17:07:43 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82da0fca8cfb8c4aeedf6a91d0e065be220a4ce837dfa4d404f9f4f5e540c7e4`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 345.9 KB (345885 bytes)  
+	-	`sha256:70fc228473c5a99761b4df8a8a2d6480491d148eb2b6226712c02b57c441b8a3`  
+		Last Modified: Wed, 10 Jul 2024 17:07:44 GMT  
+		Size: 353.7 KB (353690 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:068d6a51b1a127e2fd7469da3666cdd3c1affe6d4e2f69a80bab48d114954cae`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:8ffd5f477c1b8d5d76f9614eb3cd5ec902b1ac1f8be64cabef4f2ac67972a1e3`  
+		Last Modified: Wed, 10 Jul 2024 17:07:42 GMT  
+		Size: 1.3 KB (1278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c6768c61d278aef37aa33785426450619cc28d80ccd049018f0785c299db14e`  
-		Last Modified: Mon, 24 Jun 2024 23:02:27 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:5544bd81947c008123c95c311e73bce204fb5a324352243ca07c226e292a2ad1`  
+		Last Modified: Wed, 10 Jul 2024 17:07:42 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2617e1912221cf413d04d7299580b0daea3c0825fee7b5d9fad6a9a44f1a5454`  
-		Last Modified: Mon, 24 Jun 2024 23:02:29 GMT  
-		Size: 19.2 MB (19241807 bytes)  
+	-	`sha256:84b536eb8933d9e23be6e81c349259217c0ff0ac4c811cfaf0f0ff1d1e6c21b0`  
+		Last Modified: Wed, 10 Jul 2024 17:07:44 GMT  
+		Size: 19.3 MB (19250069 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d31372f6eb1e0c4455e4bad9bc6a40935b8576f56647573811f728f66716b29`  
-		Last Modified: Mon, 24 Jun 2024 23:02:26 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:85acd654f2e15df5e3b3d86e685a7df672c9d69ed5fada7fc0a67b055a4eed35`  
+		Last Modified: Wed, 10 Jul 2024 17:07:40 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27164582d8240a6b1c5b712d95806fdb59df86cf8a1bb194e96fb5e1f3a1676c`  
-		Last Modified: Mon, 24 Jun 2024 23:02:26 GMT  
-		Size: 1.4 KB (1354 bytes)  
+	-	`sha256:51b63cd5a9085fd35a77eba7cbd17d34168b84095f058c4c166ff437454290c8`  
+		Last Modified: Wed, 10 Jul 2024 17:07:40 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:619a32541eaeb8b9af553b64aae13f0a963563ba072449138c4b112a2300eaf0`  
-		Last Modified: Mon, 24 Jun 2024 23:02:26 GMT  
-		Size: 1.4 KB (1352 bytes)  
+	-	`sha256:b050385ea469075e8ac3cd0c01f59b05237fe243752b4af0ba748c499f7c7214`  
+		Last Modified: Wed, 10 Jul 2024 17:07:40 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a67541314ab9c624da2df20937b0861ab7987c9b9d59af61e9ee17921078e13`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 19.0 MB (19012054 bytes)  
+	-	`sha256:7e7223c9cd26ba7de1b396ce8f876f3778a2c9a9742172142b43c200cca0e015`  
+		Last Modified: Wed, 10 Jul 2024 17:07:41 GMT  
+		Size: 19.0 MB (19022171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:303765272afa63b6e978553f603ccc8143fedc46a75c558e0fc2083d5d17d334`  
-		Last Modified: Mon, 24 Jun 2024 23:02:25 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:03f8e9a2edc1e7c0274a5901135c476d5c8aa0e7fdb984c81763b69cc7e2c4c5`  
+		Last Modified: Wed, 10 Jul 2024 17:07:39 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d6e97d4bbb0d07c480be5888d63631d5e2be9ad351c44720e781473cddd384`  
-		Last Modified: Mon, 24 Jun 2024 23:02:25 GMT  
-		Size: 1.3 KB (1281 bytes)  
+	-	`sha256:cebb7aee2d0caeef03e8450dd9e72a42e73bd3afa18044f08f21c60a9cf0a981`  
+		Last Modified: Wed, 10 Jul 2024 17:07:39 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:983542ae2a8cf1dd1fe4c7e09db1444d8ede7e730e2eab3e7c92f12f3d135a71`  
-		Last Modified: Mon, 24 Jun 2024 23:02:25 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:99935b0862983b7826842674ae5c56f9c1e932efbd1a676637a7df28557caa00`  
+		Last Modified: Wed, 10 Jul 2024 17:07:39 GMT  
+		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1690f9793edbd076b9cfb65e446be51744ed4e88575f5212285d2665e5276985`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 19.6 MB (19647600 bytes)  
+	-	`sha256:918a1533887acb04a5fac682ef1eee07f51aff7be62fc5a0aa9be26002311e70`  
+		Last Modified: Wed, 10 Jul 2024 17:07:41 GMT  
+		Size: 19.7 MB (19657816 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `docker:26.1.4-windowsservercore` - windows version 10.0.17763.5936; amd64
+### `docker:26.1.4-windowsservercore` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:41921d264b5b04d35d50c3a3492d0a3a5ebc101a1f9dff8e6f90c76797bf800d
+$ docker pull docker@sha256:5f8eb7c8ff3aa120ef55a83421e4a4d80081dec17bde460742aec3a0fa95d91f
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2279121755 bytes)**  
+-	Total Size: **2.3 GB (2296923804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25f13baff77946e3af6222314262c8d1e0d51fe061552747e96ebcde4732c1af`
+-	Image ID: `sha256:c7f0435a43fb69272cfb8fbad3c8db40083615c73fb32ab4417c9ee8478816aa`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Mon, 24 Jun 2024 23:04:14 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:01:32 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:05:02 GMT
+# Wed, 10 Jul 2024 17:01:56 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:05:02 GMT
+# Wed, 10 Jul 2024 17:01:56 GMT
 ENV DOCKER_VERSION=26.1.4
-# Mon, 24 Jun 2024 23:05:03 GMT
+# Wed, 10 Jul 2024 17:01:57 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-26.1.4.zip
-# Mon, 24 Jun 2024 23:05:25 GMT
+# Wed, 10 Jul 2024 17:02:21 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:05:26 GMT
+# Wed, 10 Jul 2024 17:02:22 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:05:27 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:05:27 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:05:49 GMT
+# Wed, 10 Jul 2024 17:02:47 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:05:51 GMT
+# Wed, 10 Jul 2024 17:02:48 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:05:51 GMT
+# Wed, 10 Jul 2024 17:02:48 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:05:52 GMT
+# Wed, 10 Jul 2024 17:02:49 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:06:12 GMT
+# Wed, 10 Jul 2024 17:03:13 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -32505,117 +32505,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a40379a0adf6bfe74bf2d1faad31692106a353984473d2961801ef2f2e177ff6`  
-		Last Modified: Mon, 24 Jun 2024 23:06:22 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:e4f82ef930fbe23983fac10fc287c432b782bbe5b03de8e1cd30abbbd80f0e06`  
+		Last Modified: Wed, 10 Jul 2024 17:03:22 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b04c33a0439dd0d3cca5028a2b5ffbd1af9e8a9b44034074e065bf9c292d4aa`  
-		Last Modified: Mon, 24 Jun 2024 23:06:22 GMT  
-		Size: 492.7 KB (492727 bytes)  
+	-	`sha256:f45f05fa334d06fbf92e593603026e51f24208b7e3ba2a335ad891536296f11d`  
+		Last Modified: Wed, 10 Jul 2024 17:03:23 GMT  
+		Size: 500.1 KB (500070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf6147c61c494cc3abe5e338eacb6770532235bf272bdafa2b56e83d1be562fa`  
-		Last Modified: Mon, 24 Jun 2024 23:06:20 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:2886b71e604d6866ab0bc9700d40d4613bf5e4cdfa26f14dc492a5e8f4cc09f1`  
+		Last Modified: Wed, 10 Jul 2024 17:03:21 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0365cc6fab04ee72a29ab1eebb2f4035012c5f3606163467b80a13a28ce6ee42`  
-		Last Modified: Mon, 24 Jun 2024 23:06:20 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:32b56007a1fbf3fcabcd87c28b37ed04912520a60fbe0861e4c77a125ba69771`  
+		Last Modified: Wed, 10 Jul 2024 17:03:21 GMT  
+		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a529c9f0f444af2d65677d36ba1dae2b585db4a04f09ddcbecc7457ceade7b8`  
-		Last Modified: Mon, 24 Jun 2024 23:06:22 GMT  
-		Size: 19.3 MB (19256816 bytes)  
+	-	`sha256:4e73ffb753bb8ea6156e318b4119a0f7cdf5d8474d13df5b6c364a37c1ca660e`  
+		Last Modified: Wed, 10 Jul 2024 17:03:23 GMT  
+		Size: 19.3 MB (19271472 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e77d3aecb67e763a9283802a8054014db9aa415a6032f4c092ad4552cb0481fa`  
-		Last Modified: Mon, 24 Jun 2024 23:06:19 GMT  
-		Size: 1.4 KB (1358 bytes)  
+	-	`sha256:038cb09c357c4db505e98093ecd6e516de11d6b78762a80f0fe7ecc02074b453`  
+		Last Modified: Wed, 10 Jul 2024 17:03:19 GMT  
+		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3a6936325f8e845d151be50e905a33111b4fde24565688755ec0a7e267bda8a`  
-		Last Modified: Mon, 24 Jun 2024 23:06:18 GMT  
-		Size: 1.3 KB (1328 bytes)  
+	-	`sha256:df00f3a5458c76868abed8221a979aed7683c6e39fe4157763b7d54efa944835`  
+		Last Modified: Wed, 10 Jul 2024 17:03:19 GMT  
+		Size: 1.3 KB (1306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cd475b893d76c371982d4cfa0726c19375590607f7a631a4b7c757da15eb585`  
-		Last Modified: Mon, 24 Jun 2024 23:06:18 GMT  
-		Size: 1.4 KB (1396 bytes)  
+	-	`sha256:33918051f07ea9f57a0cfe51ce9867e1654852651fdbb622b3112081a67bc681`  
+		Last Modified: Wed, 10 Jul 2024 17:03:19 GMT  
+		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:331c2b5baebc00e98cbec6f32ae0a9b95559f3fe6a8eee11109f3d9ff5e7e416`  
-		Last Modified: Mon, 24 Jun 2024 23:06:19 GMT  
-		Size: 19.0 MB (19026027 bytes)  
+	-	`sha256:3eadb85ca23a2715eb906027226953bf312a815e4495bfe71e9f44ad7553418c`  
+		Last Modified: Wed, 10 Jul 2024 17:03:20 GMT  
+		Size: 19.0 MB (19039245 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:397591a2f39e13eb06c51a0d19f91eee12253e8ce3cc1d7734ef1f15e255a8a6`  
-		Last Modified: Mon, 24 Jun 2024 23:06:17 GMT  
-		Size: 1.3 KB (1304 bytes)  
+	-	`sha256:3ddf47804879343f048850d8e9aff2f091f5877538bafae25955df88da61a873`  
+		Last Modified: Wed, 10 Jul 2024 17:03:17 GMT  
+		Size: 1.3 KB (1308 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:773797d09d210c06d18d194a837acb7442d872062f9a2cfec3e321ffc810a6b4`  
-		Last Modified: Mon, 24 Jun 2024 23:06:16 GMT  
-		Size: 1.3 KB (1303 bytes)  
+	-	`sha256:f379e4c9c142e1b3d484acdd4fffa6bf9681c14345d3b277efa7a8655cf7874d`  
+		Last Modified: Wed, 10 Jul 2024 17:03:18 GMT  
+		Size: 1.3 KB (1338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f58ffccc082b48227749e4fd76577f7550bac019ace57c7c90dd9a397c75b6e`  
-		Last Modified: Mon, 24 Jun 2024 23:06:17 GMT  
-		Size: 1.3 KB (1302 bytes)  
+	-	`sha256:0b6e4b2dd50efc29bbb358cf7ced0aa50ec1ef1bd24a86c936a43f2a9f14b083`  
+		Last Modified: Wed, 10 Jul 2024 17:03:17 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ed95ee23b804c23e92254b88999bb06ee9cb804d66be6a4a39d98fa407b9ddb`  
-		Last Modified: Mon, 24 Jun 2024 23:06:19 GMT  
-		Size: 19.7 MB (19653144 bytes)  
+	-	`sha256:68e4932a73c15c0ad41425fa39de6c0c2b05507d9a39d4994ae20e0e79e1da01`  
+		Last Modified: Wed, 10 Jul 2024 17:03:20 GMT  
+		Size: 19.7 MB (19671903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:26.1.4-windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:6b55cec4c76012a164f03bb0af2599679b1c75c4ec56c73e04d8fbe6ebc8c9ab
+$ docker pull docker@sha256:f9b52a048af6a47f0e0ff04f40e4d37daeb052f084daef891109734b09837fbf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:26.1.4-windowsservercore-1809` - windows version 10.0.17763.5936; amd64
+### `docker:26.1.4-windowsservercore-1809` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:41921d264b5b04d35d50c3a3492d0a3a5ebc101a1f9dff8e6f90c76797bf800d
+$ docker pull docker@sha256:5f8eb7c8ff3aa120ef55a83421e4a4d80081dec17bde460742aec3a0fa95d91f
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2279121755 bytes)**  
+-	Total Size: **2.3 GB (2296923804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25f13baff77946e3af6222314262c8d1e0d51fe061552747e96ebcde4732c1af`
+-	Image ID: `sha256:c7f0435a43fb69272cfb8fbad3c8db40083615c73fb32ab4417c9ee8478816aa`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Mon, 24 Jun 2024 23:04:14 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:01:32 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:05:02 GMT
+# Wed, 10 Jul 2024 17:01:56 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:05:02 GMT
+# Wed, 10 Jul 2024 17:01:56 GMT
 ENV DOCKER_VERSION=26.1.4
-# Mon, 24 Jun 2024 23:05:03 GMT
+# Wed, 10 Jul 2024 17:01:57 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-26.1.4.zip
-# Mon, 24 Jun 2024 23:05:25 GMT
+# Wed, 10 Jul 2024 17:02:21 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:05:26 GMT
+# Wed, 10 Jul 2024 17:02:22 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:05:27 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:05:27 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:05:49 GMT
+# Wed, 10 Jul 2024 17:02:47 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:05:51 GMT
+# Wed, 10 Jul 2024 17:02:48 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:05:51 GMT
+# Wed, 10 Jul 2024 17:02:48 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:05:52 GMT
+# Wed, 10 Jul 2024 17:02:49 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:06:12 GMT
+# Wed, 10 Jul 2024 17:03:13 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -32624,117 +32624,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a40379a0adf6bfe74bf2d1faad31692106a353984473d2961801ef2f2e177ff6`  
-		Last Modified: Mon, 24 Jun 2024 23:06:22 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:e4f82ef930fbe23983fac10fc287c432b782bbe5b03de8e1cd30abbbd80f0e06`  
+		Last Modified: Wed, 10 Jul 2024 17:03:22 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b04c33a0439dd0d3cca5028a2b5ffbd1af9e8a9b44034074e065bf9c292d4aa`  
-		Last Modified: Mon, 24 Jun 2024 23:06:22 GMT  
-		Size: 492.7 KB (492727 bytes)  
+	-	`sha256:f45f05fa334d06fbf92e593603026e51f24208b7e3ba2a335ad891536296f11d`  
+		Last Modified: Wed, 10 Jul 2024 17:03:23 GMT  
+		Size: 500.1 KB (500070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf6147c61c494cc3abe5e338eacb6770532235bf272bdafa2b56e83d1be562fa`  
-		Last Modified: Mon, 24 Jun 2024 23:06:20 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:2886b71e604d6866ab0bc9700d40d4613bf5e4cdfa26f14dc492a5e8f4cc09f1`  
+		Last Modified: Wed, 10 Jul 2024 17:03:21 GMT  
+		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0365cc6fab04ee72a29ab1eebb2f4035012c5f3606163467b80a13a28ce6ee42`  
-		Last Modified: Mon, 24 Jun 2024 23:06:20 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:32b56007a1fbf3fcabcd87c28b37ed04912520a60fbe0861e4c77a125ba69771`  
+		Last Modified: Wed, 10 Jul 2024 17:03:21 GMT  
+		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a529c9f0f444af2d65677d36ba1dae2b585db4a04f09ddcbecc7457ceade7b8`  
-		Last Modified: Mon, 24 Jun 2024 23:06:22 GMT  
-		Size: 19.3 MB (19256816 bytes)  
+	-	`sha256:4e73ffb753bb8ea6156e318b4119a0f7cdf5d8474d13df5b6c364a37c1ca660e`  
+		Last Modified: Wed, 10 Jul 2024 17:03:23 GMT  
+		Size: 19.3 MB (19271472 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e77d3aecb67e763a9283802a8054014db9aa415a6032f4c092ad4552cb0481fa`  
-		Last Modified: Mon, 24 Jun 2024 23:06:19 GMT  
-		Size: 1.4 KB (1358 bytes)  
+	-	`sha256:038cb09c357c4db505e98093ecd6e516de11d6b78762a80f0fe7ecc02074b453`  
+		Last Modified: Wed, 10 Jul 2024 17:03:19 GMT  
+		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3a6936325f8e845d151be50e905a33111b4fde24565688755ec0a7e267bda8a`  
-		Last Modified: Mon, 24 Jun 2024 23:06:18 GMT  
-		Size: 1.3 KB (1328 bytes)  
+	-	`sha256:df00f3a5458c76868abed8221a979aed7683c6e39fe4157763b7d54efa944835`  
+		Last Modified: Wed, 10 Jul 2024 17:03:19 GMT  
+		Size: 1.3 KB (1306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cd475b893d76c371982d4cfa0726c19375590607f7a631a4b7c757da15eb585`  
-		Last Modified: Mon, 24 Jun 2024 23:06:18 GMT  
-		Size: 1.4 KB (1396 bytes)  
+	-	`sha256:33918051f07ea9f57a0cfe51ce9867e1654852651fdbb622b3112081a67bc681`  
+		Last Modified: Wed, 10 Jul 2024 17:03:19 GMT  
+		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:331c2b5baebc00e98cbec6f32ae0a9b95559f3fe6a8eee11109f3d9ff5e7e416`  
-		Last Modified: Mon, 24 Jun 2024 23:06:19 GMT  
-		Size: 19.0 MB (19026027 bytes)  
+	-	`sha256:3eadb85ca23a2715eb906027226953bf312a815e4495bfe71e9f44ad7553418c`  
+		Last Modified: Wed, 10 Jul 2024 17:03:20 GMT  
+		Size: 19.0 MB (19039245 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:397591a2f39e13eb06c51a0d19f91eee12253e8ce3cc1d7734ef1f15e255a8a6`  
-		Last Modified: Mon, 24 Jun 2024 23:06:17 GMT  
-		Size: 1.3 KB (1304 bytes)  
+	-	`sha256:3ddf47804879343f048850d8e9aff2f091f5877538bafae25955df88da61a873`  
+		Last Modified: Wed, 10 Jul 2024 17:03:17 GMT  
+		Size: 1.3 KB (1308 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:773797d09d210c06d18d194a837acb7442d872062f9a2cfec3e321ffc810a6b4`  
-		Last Modified: Mon, 24 Jun 2024 23:06:16 GMT  
-		Size: 1.3 KB (1303 bytes)  
+	-	`sha256:f379e4c9c142e1b3d484acdd4fffa6bf9681c14345d3b277efa7a8655cf7874d`  
+		Last Modified: Wed, 10 Jul 2024 17:03:18 GMT  
+		Size: 1.3 KB (1338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f58ffccc082b48227749e4fd76577f7550bac019ace57c7c90dd9a397c75b6e`  
-		Last Modified: Mon, 24 Jun 2024 23:06:17 GMT  
-		Size: 1.3 KB (1302 bytes)  
+	-	`sha256:0b6e4b2dd50efc29bbb358cf7ced0aa50ec1ef1bd24a86c936a43f2a9f14b083`  
+		Last Modified: Wed, 10 Jul 2024 17:03:17 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ed95ee23b804c23e92254b88999bb06ee9cb804d66be6a4a39d98fa407b9ddb`  
-		Last Modified: Mon, 24 Jun 2024 23:06:19 GMT  
-		Size: 19.7 MB (19653144 bytes)  
+	-	`sha256:68e4932a73c15c0ad41425fa39de6c0c2b05507d9a39d4994ae20e0e79e1da01`  
+		Last Modified: Wed, 10 Jul 2024 17:03:20 GMT  
+		Size: 19.7 MB (19671903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:26.1.4-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull docker@sha256:6bf82563a92527086103fa207c44adcac510de21b9d7ce4234565118a1010364
+$ docker pull docker@sha256:187cc83e2bb2dc1b58c43c8dab68182794f659981794519c32c000aa7bcdb27f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.2529; amd64
+	-	windows version 10.0.20348.2582; amd64
 
-### `docker:26.1.4-windowsservercore-ltsc2022` - windows version 10.0.20348.2529; amd64
+### `docker:26.1.4-windowsservercore-ltsc2022` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:83a06bbcb87bde57bf89aad73c8f350a09a1310d69ff4fa30464c56d83912118
+$ docker pull docker@sha256:b89d44be89b2488dba364d15498369cbb475000e9d8e0fdb2eb02191df834d47
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2176449391 bytes)**  
+-	Total Size: **2.2 GB (2197895630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efedf6e6257f1f89bdddb0ef0fed0ee30ebde2875c74ac12d71aaa48b8a1d75d`
+-	Image ID: `sha256:aebcbfdbeda281beefd8baae520390d230143ea48f1dcfff98afefe97c1774f7`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Mon, 24 Jun 2024 23:01:49 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:06:54 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 24 Jun 2024 23:01:56 GMT
+# Wed, 10 Jul 2024 17:07:05 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Mon, 24 Jun 2024 23:01:56 GMT
+# Wed, 10 Jul 2024 17:07:05 GMT
 ENV DOCKER_VERSION=26.1.4
-# Mon, 24 Jun 2024 23:01:57 GMT
+# Wed, 10 Jul 2024 17:07:06 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-26.1.4.zip
-# Mon, 24 Jun 2024 23:02:06 GMT
+# Wed, 10 Jul 2024 17:07:16 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:06 GMT
+# Wed, 10 Jul 2024 17:07:17 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Mon, 24 Jun 2024 23:02:07 GMT
+# Wed, 10 Jul 2024 17:07:18 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Mon, 24 Jun 2024 23:02:08 GMT
+# Wed, 10 Jul 2024 17:07:18 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Mon, 24 Jun 2024 23:02:14 GMT
+# Wed, 10 Jul 2024 17:07:26 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Mon, 24 Jun 2024 23:02:15 GMT
+# Wed, 10 Jul 2024 17:07:26 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Mon, 24 Jun 2024 23:02:15 GMT
+# Wed, 10 Jul 2024 17:07:27 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Mon, 24 Jun 2024 23:02:16 GMT
+# Wed, 10 Jul 2024 17:07:27 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Mon, 24 Jun 2024 23:02:23 GMT
+# Wed, 10 Jul 2024 17:07:35 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -32743,61 +32743,61 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:246e482b6e23771fa41b6a97ddf58d6b8e2c45211e1524cfb7eccfa0fd9ce1d4`  
-		Last Modified: Mon, 24 Jun 2024 23:02:29 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:f2d9d3de1058a39678546ae37fcf1bae84d4f9ef46e987a8aae464067a2110da`  
+		Last Modified: Wed, 10 Jul 2024 17:07:43 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82da0fca8cfb8c4aeedf6a91d0e065be220a4ce837dfa4d404f9f4f5e540c7e4`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 345.9 KB (345885 bytes)  
+	-	`sha256:70fc228473c5a99761b4df8a8a2d6480491d148eb2b6226712c02b57c441b8a3`  
+		Last Modified: Wed, 10 Jul 2024 17:07:44 GMT  
+		Size: 353.7 KB (353690 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:068d6a51b1a127e2fd7469da3666cdd3c1affe6d4e2f69a80bab48d114954cae`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:8ffd5f477c1b8d5d76f9614eb3cd5ec902b1ac1f8be64cabef4f2ac67972a1e3`  
+		Last Modified: Wed, 10 Jul 2024 17:07:42 GMT  
+		Size: 1.3 KB (1278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c6768c61d278aef37aa33785426450619cc28d80ccd049018f0785c299db14e`  
-		Last Modified: Mon, 24 Jun 2024 23:02:27 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:5544bd81947c008123c95c311e73bce204fb5a324352243ca07c226e292a2ad1`  
+		Last Modified: Wed, 10 Jul 2024 17:07:42 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2617e1912221cf413d04d7299580b0daea3c0825fee7b5d9fad6a9a44f1a5454`  
-		Last Modified: Mon, 24 Jun 2024 23:02:29 GMT  
-		Size: 19.2 MB (19241807 bytes)  
+	-	`sha256:84b536eb8933d9e23be6e81c349259217c0ff0ac4c811cfaf0f0ff1d1e6c21b0`  
+		Last Modified: Wed, 10 Jul 2024 17:07:44 GMT  
+		Size: 19.3 MB (19250069 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d31372f6eb1e0c4455e4bad9bc6a40935b8576f56647573811f728f66716b29`  
-		Last Modified: Mon, 24 Jun 2024 23:02:26 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:85acd654f2e15df5e3b3d86e685a7df672c9d69ed5fada7fc0a67b055a4eed35`  
+		Last Modified: Wed, 10 Jul 2024 17:07:40 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27164582d8240a6b1c5b712d95806fdb59df86cf8a1bb194e96fb5e1f3a1676c`  
-		Last Modified: Mon, 24 Jun 2024 23:02:26 GMT  
-		Size: 1.4 KB (1354 bytes)  
+	-	`sha256:51b63cd5a9085fd35a77eba7cbd17d34168b84095f058c4c166ff437454290c8`  
+		Last Modified: Wed, 10 Jul 2024 17:07:40 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:619a32541eaeb8b9af553b64aae13f0a963563ba072449138c4b112a2300eaf0`  
-		Last Modified: Mon, 24 Jun 2024 23:02:26 GMT  
-		Size: 1.4 KB (1352 bytes)  
+	-	`sha256:b050385ea469075e8ac3cd0c01f59b05237fe243752b4af0ba748c499f7c7214`  
+		Last Modified: Wed, 10 Jul 2024 17:07:40 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a67541314ab9c624da2df20937b0861ab7987c9b9d59af61e9ee17921078e13`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 19.0 MB (19012054 bytes)  
+	-	`sha256:7e7223c9cd26ba7de1b396ce8f876f3778a2c9a9742172142b43c200cca0e015`  
+		Last Modified: Wed, 10 Jul 2024 17:07:41 GMT  
+		Size: 19.0 MB (19022171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:303765272afa63b6e978553f603ccc8143fedc46a75c558e0fc2083d5d17d334`  
-		Last Modified: Mon, 24 Jun 2024 23:02:25 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:03f8e9a2edc1e7c0274a5901135c476d5c8aa0e7fdb984c81763b69cc7e2c4c5`  
+		Last Modified: Wed, 10 Jul 2024 17:07:39 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d6e97d4bbb0d07c480be5888d63631d5e2be9ad351c44720e781473cddd384`  
-		Last Modified: Mon, 24 Jun 2024 23:02:25 GMT  
-		Size: 1.3 KB (1281 bytes)  
+	-	`sha256:cebb7aee2d0caeef03e8450dd9e72a42e73bd3afa18044f08f21c60a9cf0a981`  
+		Last Modified: Wed, 10 Jul 2024 17:07:39 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:983542ae2a8cf1dd1fe4c7e09db1444d8ede7e730e2eab3e7c92f12f3d135a71`  
-		Last Modified: Mon, 24 Jun 2024 23:02:25 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:99935b0862983b7826842674ae5c56f9c1e932efbd1a676637a7df28557caa00`  
+		Last Modified: Wed, 10 Jul 2024 17:07:39 GMT  
+		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1690f9793edbd076b9cfb65e446be51744ed4e88575f5212285d2665e5276985`  
-		Last Modified: Mon, 24 Jun 2024 23:02:28 GMT  
-		Size: 19.6 MB (19647600 bytes)  
+	-	`sha256:918a1533887acb04a5fac682ef1eee07f51aff7be62fc5a0aa9be26002311e70`  
+		Last Modified: Wed, 10 Jul 2024 17:07:41 GMT  
+		Size: 19.7 MB (19657816 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27`
@@ -34953,58 +34953,58 @@ $ docker pull docker@sha256:a2742279ddd60c420bf7eebf9e71c7a117253fc3802d06608d99
 ## `docker:27-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:e7327bda8f419f94d9e7b8f96e60009d196190bf34e2eb1e0ce46617cb5ce9ae
+$ docker pull docker@sha256:08066ae23d24f3d2aa39e59269a87267d32b348aac68773a70575db09cf68221
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 2
-	-	windows version 10.0.20348.2529; amd64
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.20348.2582; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:27-windowsservercore` - windows version 10.0.20348.2529; amd64
+### `docker:27-windowsservercore` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:386223997bcd45bc3900c73f723f972d9acd82d397dd32439c9d9b8779b01bd0
+$ docker pull docker@sha256:f5ecdc6510964fa3a4ff6b21c188367012e0ed1689be95670e07dbf3435c750e
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2176463119 bytes)**  
+-	Total Size: **2.2 GB (2197911420 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33eae8894e487ca61eb33dccf81effb91f53113f0d82c7030c2a7444c6231659`
+-	Image ID: `sha256:9ac96538face1733ab273d5400b1a58dce159f509531cc3a7d6879a7af73affc`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Tue, 02 Jul 2024 00:56:56 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:01:42 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 02 Jul 2024 00:57:14 GMT
+# Wed, 10 Jul 2024 17:01:50 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 02 Jul 2024 00:57:15 GMT
+# Wed, 10 Jul 2024 17:01:51 GMT
 ENV DOCKER_VERSION=27.0.3
-# Tue, 02 Jul 2024 00:57:15 GMT
+# Wed, 10 Jul 2024 17:01:52 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.0.3.zip
-# Tue, 02 Jul 2024 00:57:25 GMT
+# Wed, 10 Jul 2024 17:02:01 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:57:26 GMT
+# Wed, 10 Jul 2024 17:02:02 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Tue, 02 Jul 2024 00:57:27 GMT
+# Wed, 10 Jul 2024 17:02:03 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Tue, 02 Jul 2024 00:57:27 GMT
+# Wed, 10 Jul 2024 17:02:04 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Tue, 02 Jul 2024 00:57:36 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:57:36 GMT
+# Wed, 10 Jul 2024 17:02:13 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Tue, 02 Jul 2024 00:57:37 GMT
+# Wed, 10 Jul 2024 17:02:14 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Tue, 02 Jul 2024 00:57:37 GMT
+# Wed, 10 Jul 2024 17:02:15 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Tue, 02 Jul 2024 00:57:45 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -35013,107 +35013,107 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb72fa6f17dfe9cd6454fb6dccdf6ca8fd19c212ede13b12c0ae062eff682f00`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
+	-	`sha256:79a30fcdf9311de4c7cab2f1871f5b9cb625ecc7fcac1fda704adb33b6449c22`  
+		Last Modified: Wed, 10 Jul 2024 17:02:32 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a273a3e16cdcbc368ec91a5e2f3312dfa27d3c5bbbd6bdbf4b48418c6254c81`  
+		Last Modified: Wed, 10 Jul 2024 17:02:33 GMT  
+		Size: 354.6 KB (354552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b0f2b7321d5d56e8f6f37a3c3b2c1cb0c9d4de0e5ac1d834f538b3efd9837f72`  
+		Last Modified: Wed, 10 Jul 2024 17:02:32 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:591b238929736a7300bb23fc793f3422ca4db1c36d13aec6bd23679968f5f7a4`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
-		Size: 345.9 KB (345918 bytes)  
+	-	`sha256:b5fff2931a36670575c423c26ca7c52c646e0644d2374cc790faa289ceb1ef6b`  
+		Last Modified: Wed, 10 Jul 2024 17:02:31 GMT  
+		Size: 1.3 KB (1278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16014478e439a58518a38275671775c8a4954d9760b3a9bbebcdd57b8e2bdde0`  
-		Last Modified: Tue, 02 Jul 2024 00:57:53 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:1f6eeb4162b6af921ae11ed56bf841bc6cc52e9d638fabb3d46ba4ec48d04880`  
+		Last Modified: Wed, 10 Jul 2024 17:02:33 GMT  
+		Size: 19.3 MB (19264049 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c3dc8c45fe3b5babaaaecec22050ef89d5373c83c39a7ba825a6c1c45f65b75`  
-		Last Modified: Tue, 02 Jul 2024 00:57:53 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:52be9ce30e243fe26aaf84fa24d0baf6e1f70d0971af3bd2ec74dce3d17f43c3`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53ebcdce69c445046638fd14aebf746d380ac04ce47f12a75d2fe4497d68b2d8`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
-		Size: 19.3 MB (19255478 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d58621a7b6be7445776140df24b5f8ada14acd0c9a3829d5ed64a68e864b03d`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
+	-	`sha256:4b6aa1554654a3e500036fff639b1fd12f710e6370164a77099dbfe17eacd16f`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85a615bbba8193c315e67683a98737824112f08d79977d516cd10865815a41ec`  
-		Last Modified: Tue, 02 Jul 2024 00:57:51 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:505ab9ca775847275429f9250d55749e77558b9dc896f71fa3be94a269404543`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c33d7c351bb144e09dec014c82f8fe44e6ac8230a962c1981f24bd89f990dbd1`  
-		Last Modified: Tue, 02 Jul 2024 00:57:51 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:f8413fdb9df0bec1c10dfeed6e6f92c339252e8d82646fee8026be8ff60731b2`  
+		Last Modified: Wed, 10 Jul 2024 17:02:30 GMT  
+		Size: 19.0 MB (19022429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b282a2ce5d6e772e4d9c63b5e6e779005176aa6526c5db9eda06c98461676007`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
-		Size: 19.0 MB (19012372 bytes)  
+	-	`sha256:28a247c24d9934e05dd177383de206220d5c8a44ec4bd060d1b37cafacead440`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:732dfbb736368c7fe17a9c9de6828f6df1c38b274b3b7bed07da9bee6e949989`  
-		Last Modified: Tue, 02 Jul 2024 00:57:49 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:83afe3ac7813d122258e195989633f3c9aede43ad31eed9a176730526b868322`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9be92b0ac83eff3339d03e5ad0058911360ae9d21d17d0b233211c01715df53a`  
-		Last Modified: Tue, 02 Jul 2024 00:57:50 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:e33fc95857bf974dba31f9c665e427d77069c553324b60750f3fff0029a19c57`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbeb8fb03ab79ed8c37fb237ee93477a3ff05e8175bf768431d4ddb5058a2086`  
-		Last Modified: Tue, 02 Jul 2024 00:57:49 GMT  
-		Size: 1.3 KB (1287 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b25ec1f39df1d91b09b4fd2766030fdef0f29911749b781eff8de43d032a333`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
-		Size: 19.6 MB (19647506 bytes)  
+	-	`sha256:6c8caa9ec49ebfe2fb1a8cc25cd0afd11687bc5e82e49e3fcf5c0513097b6e17`  
+		Last Modified: Wed, 10 Jul 2024 17:02:30 GMT  
+		Size: 19.7 MB (19658506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `docker:27-windowsservercore` - windows version 10.0.17763.5936; amd64
+### `docker:27-windowsservercore` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:de583fca5903824418764496f4b3d23a32743447c812574b7c2187b6e597943d
+$ docker pull docker@sha256:81fee02516524b785b21d867afffdf5f38fa26b5781e5d801b0232f64dcb9438
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2279270318 bytes)**  
+-	Total Size: **2.3 GB (2296973890 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e8d17fe0e905412571b8c991d350d8ec207e6fbcc357137d647eeb975bcb810`
+-	Image ID: `sha256:d03879f2b3f2adfd712e0f090904d25ad51ebe916abc9b64b8809507c13d22f0`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Tue, 02 Jul 2024 00:56:56 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:12:19 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 02 Jul 2024 00:57:58 GMT
+# Wed, 10 Jul 2024 17:13:22 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 02 Jul 2024 00:57:58 GMT
+# Wed, 10 Jul 2024 17:13:23 GMT
 ENV DOCKER_VERSION=27.0.3
-# Tue, 02 Jul 2024 00:57:59 GMT
+# Wed, 10 Jul 2024 17:13:24 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.0.3.zip
-# Tue, 02 Jul 2024 00:58:25 GMT
+# Wed, 10 Jul 2024 17:13:49 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:58:26 GMT
+# Wed, 10 Jul 2024 17:13:50 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Tue, 02 Jul 2024 00:58:27 GMT
+# Wed, 10 Jul 2024 17:13:50 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Tue, 02 Jul 2024 00:58:27 GMT
+# Wed, 10 Jul 2024 17:13:51 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Tue, 02 Jul 2024 00:58:53 GMT
+# Wed, 10 Jul 2024 17:14:14 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:58:54 GMT
+# Wed, 10 Jul 2024 17:14:15 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Tue, 02 Jul 2024 00:58:54 GMT
+# Wed, 10 Jul 2024 17:14:15 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Tue, 02 Jul 2024 00:58:55 GMT
+# Wed, 10 Jul 2024 17:14:16 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Tue, 02 Jul 2024 00:59:21 GMT
+# Wed, 10 Jul 2024 17:14:39 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -35122,117 +35122,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3648e6774bf46a9570bbba378b813fe331d77e66794c67902533f033b386728e`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 1.3 KB (1299 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04e3fcc6425991dc3ce2445421b81212fb560bf82676f44aff7da17c49d47334`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 520.2 KB (520190 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8f3c0de4a441d13b67c7760d3d5964ae2a802a783ea1c33abe17ae803f105ae`  
-		Last Modified: Tue, 02 Jul 2024 00:59:29 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dec26b725989766448acd89453f905f1de1518029bf71abdf4803f36cd84643d`  
-		Last Modified: Tue, 02 Jul 2024 00:59:28 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e7e003b86bfd7f0b7560ef36ecbfc36ff7e261ec42b881dd2c77b342a47d95f`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 19.3 MB (19306268 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8d273972d44fcdaf4a62d5ba6f75b7dfb129b6a5634e795d5e53dd4af1e8d50`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1299 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47a23fbd9e8a5b8f3c5aaca6c9f4fe9898ad5c65969c8fd927159155c77b48bf`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a33926f7fa4801cf9081a1007897725e622157b1eb31f11d623afceeade55a5`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a822a40a60c40e379ab50a488875bc36d4586634087977a5816e69a5a422a50b`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 19.1 MB (19058739 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb1fb193ed6f352bda7f667cdff053767018b6df0cd23bc0029741f6b64e41db`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
+	-	`sha256:9daf6a0d4634983cbba9f1298aa7f0c36963d33f76db8b4be34a19c33df482d8`  
+		Last Modified: Wed, 10 Jul 2024 17:14:46 GMT  
 		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf2d5334344610097bb8a4357b1d726019275b762d0f99b3062984d32c01ef48`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
+	-	`sha256:904ec5e759c075126667b3921f67d7106e5d2aa84ac442d2a00c810e4a50b8e0`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 509.3 KB (509332 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3837bd999192e4296fa1231424254e5b6ded2c406bb7c723b95e997da663ccb`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:529d0daab006e2e9c881c4ddde55fc5ef54685398b0111ac6f964f5c86499abb`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5889a3bae7b69493b6d13d40dabe4f02e1522f59dbb225ca3a70b9cf256997c5`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 19.3 MB (19294011 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dd9eafc6ff06db1d1f18c0fcfc8015552e7d908ab84b174d6aec165af44eb13a`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1475a6c6bc70b770326361808bfc373c55fe283aa59fed6344fd458549085a58`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:492e2ce963f4a7a34b7ea74ddc5053e235983106a28df668201ba496787cfafc`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
+		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68fe81dc3136381a8ec2c380d5e1c828c7fcba447c55c88de44ebd93b07a1cf5`  
-		Last Modified: Tue, 02 Jul 2024 00:59:28 GMT  
-		Size: 19.7 MB (19692275 bytes)  
+	-	`sha256:7cc0322b1360306f1becf3aea6fb636b0a5241fb7203dcb4e3d24fe9b926b3b0`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a0ec0bb9ba5e7def18e1740bd1de692816c5d5f5289e67750502f6349dc98b35`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 19.0 MB (19048007 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ebadb2f0453f24501d9920a8c1dcfce027ce2df593b897fd1771e70846d2344a`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f36683a6dda5ec67fddde028cdf187ad7f85acf1c9391650c266253f2e8f405c`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1297 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:128a6acb472b5e30428150344923385c9ad6187bc8f45673e059cdb964071724`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3d09237d45b4901b444e3b25bdf2e663e5ec499a7b268c08d473e638eac67325`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 19.7 MB (19681467 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27-windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:7e5b86108008d2277460f0b97a6c50c2ec7cf3e3c4b3915186f031346fb391da
+$ docker pull docker@sha256:4761c9bf9600f9d112d5bee248ae50fa8b8ed285669680ebebb5f3a8b59fb4d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:27-windowsservercore-1809` - windows version 10.0.17763.5936; amd64
+### `docker:27-windowsservercore-1809` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:de583fca5903824418764496f4b3d23a32743447c812574b7c2187b6e597943d
+$ docker pull docker@sha256:81fee02516524b785b21d867afffdf5f38fa26b5781e5d801b0232f64dcb9438
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2279270318 bytes)**  
+-	Total Size: **2.3 GB (2296973890 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e8d17fe0e905412571b8c991d350d8ec207e6fbcc357137d647eeb975bcb810`
+-	Image ID: `sha256:d03879f2b3f2adfd712e0f090904d25ad51ebe916abc9b64b8809507c13d22f0`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Tue, 02 Jul 2024 00:56:56 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:12:19 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 02 Jul 2024 00:57:58 GMT
+# Wed, 10 Jul 2024 17:13:22 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 02 Jul 2024 00:57:58 GMT
+# Wed, 10 Jul 2024 17:13:23 GMT
 ENV DOCKER_VERSION=27.0.3
-# Tue, 02 Jul 2024 00:57:59 GMT
+# Wed, 10 Jul 2024 17:13:24 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.0.3.zip
-# Tue, 02 Jul 2024 00:58:25 GMT
+# Wed, 10 Jul 2024 17:13:49 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:58:26 GMT
+# Wed, 10 Jul 2024 17:13:50 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Tue, 02 Jul 2024 00:58:27 GMT
+# Wed, 10 Jul 2024 17:13:50 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Tue, 02 Jul 2024 00:58:27 GMT
+# Wed, 10 Jul 2024 17:13:51 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Tue, 02 Jul 2024 00:58:53 GMT
+# Wed, 10 Jul 2024 17:14:14 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:58:54 GMT
+# Wed, 10 Jul 2024 17:14:15 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Tue, 02 Jul 2024 00:58:54 GMT
+# Wed, 10 Jul 2024 17:14:15 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Tue, 02 Jul 2024 00:58:55 GMT
+# Wed, 10 Jul 2024 17:14:16 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Tue, 02 Jul 2024 00:59:21 GMT
+# Wed, 10 Jul 2024 17:14:39 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -35241,117 +35241,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3648e6774bf46a9570bbba378b813fe331d77e66794c67902533f033b386728e`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 1.3 KB (1299 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04e3fcc6425991dc3ce2445421b81212fb560bf82676f44aff7da17c49d47334`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 520.2 KB (520190 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8f3c0de4a441d13b67c7760d3d5964ae2a802a783ea1c33abe17ae803f105ae`  
-		Last Modified: Tue, 02 Jul 2024 00:59:29 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dec26b725989766448acd89453f905f1de1518029bf71abdf4803f36cd84643d`  
-		Last Modified: Tue, 02 Jul 2024 00:59:28 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e7e003b86bfd7f0b7560ef36ecbfc36ff7e261ec42b881dd2c77b342a47d95f`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 19.3 MB (19306268 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8d273972d44fcdaf4a62d5ba6f75b7dfb129b6a5634e795d5e53dd4af1e8d50`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1299 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47a23fbd9e8a5b8f3c5aaca6c9f4fe9898ad5c65969c8fd927159155c77b48bf`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a33926f7fa4801cf9081a1007897725e622157b1eb31f11d623afceeade55a5`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a822a40a60c40e379ab50a488875bc36d4586634087977a5816e69a5a422a50b`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 19.1 MB (19058739 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb1fb193ed6f352bda7f667cdff053767018b6df0cd23bc0029741f6b64e41db`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
+	-	`sha256:9daf6a0d4634983cbba9f1298aa7f0c36963d33f76db8b4be34a19c33df482d8`  
+		Last Modified: Wed, 10 Jul 2024 17:14:46 GMT  
 		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf2d5334344610097bb8a4357b1d726019275b762d0f99b3062984d32c01ef48`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
+	-	`sha256:904ec5e759c075126667b3921f67d7106e5d2aa84ac442d2a00c810e4a50b8e0`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 509.3 KB (509332 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3837bd999192e4296fa1231424254e5b6ded2c406bb7c723b95e997da663ccb`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:529d0daab006e2e9c881c4ddde55fc5ef54685398b0111ac6f964f5c86499abb`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5889a3bae7b69493b6d13d40dabe4f02e1522f59dbb225ca3a70b9cf256997c5`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 19.3 MB (19294011 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dd9eafc6ff06db1d1f18c0fcfc8015552e7d908ab84b174d6aec165af44eb13a`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1475a6c6bc70b770326361808bfc373c55fe283aa59fed6344fd458549085a58`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:492e2ce963f4a7a34b7ea74ddc5053e235983106a28df668201ba496787cfafc`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
+		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68fe81dc3136381a8ec2c380d5e1c828c7fcba447c55c88de44ebd93b07a1cf5`  
-		Last Modified: Tue, 02 Jul 2024 00:59:28 GMT  
-		Size: 19.7 MB (19692275 bytes)  
+	-	`sha256:7cc0322b1360306f1becf3aea6fb636b0a5241fb7203dcb4e3d24fe9b926b3b0`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a0ec0bb9ba5e7def18e1740bd1de692816c5d5f5289e67750502f6349dc98b35`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 19.0 MB (19048007 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ebadb2f0453f24501d9920a8c1dcfce027ce2df593b897fd1771e70846d2344a`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f36683a6dda5ec67fddde028cdf187ad7f85acf1c9391650c266253f2e8f405c`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1297 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:128a6acb472b5e30428150344923385c9ad6187bc8f45673e059cdb964071724`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3d09237d45b4901b444e3b25bdf2e663e5ec499a7b268c08d473e638eac67325`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 19.7 MB (19681467 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull docker@sha256:db0bfd3a516588b0264a2e917d8ffc5747a8fd92f7071c31936950dc134bffdd
+$ docker pull docker@sha256:52b2dfe13e34f89bfd254e19394a78a8ee56358374b575b38526f1f658fbba33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.2529; amd64
+	-	windows version 10.0.20348.2582; amd64
 
-### `docker:27-windowsservercore-ltsc2022` - windows version 10.0.20348.2529; amd64
+### `docker:27-windowsservercore-ltsc2022` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:386223997bcd45bc3900c73f723f972d9acd82d397dd32439c9d9b8779b01bd0
+$ docker pull docker@sha256:f5ecdc6510964fa3a4ff6b21c188367012e0ed1689be95670e07dbf3435c750e
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2176463119 bytes)**  
+-	Total Size: **2.2 GB (2197911420 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33eae8894e487ca61eb33dccf81effb91f53113f0d82c7030c2a7444c6231659`
+-	Image ID: `sha256:9ac96538face1733ab273d5400b1a58dce159f509531cc3a7d6879a7af73affc`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Tue, 02 Jul 2024 00:56:56 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:01:42 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 02 Jul 2024 00:57:14 GMT
+# Wed, 10 Jul 2024 17:01:50 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 02 Jul 2024 00:57:15 GMT
+# Wed, 10 Jul 2024 17:01:51 GMT
 ENV DOCKER_VERSION=27.0.3
-# Tue, 02 Jul 2024 00:57:15 GMT
+# Wed, 10 Jul 2024 17:01:52 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.0.3.zip
-# Tue, 02 Jul 2024 00:57:25 GMT
+# Wed, 10 Jul 2024 17:02:01 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:57:26 GMT
+# Wed, 10 Jul 2024 17:02:02 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Tue, 02 Jul 2024 00:57:27 GMT
+# Wed, 10 Jul 2024 17:02:03 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Tue, 02 Jul 2024 00:57:27 GMT
+# Wed, 10 Jul 2024 17:02:04 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Tue, 02 Jul 2024 00:57:36 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:57:36 GMT
+# Wed, 10 Jul 2024 17:02:13 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Tue, 02 Jul 2024 00:57:37 GMT
+# Wed, 10 Jul 2024 17:02:14 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Tue, 02 Jul 2024 00:57:37 GMT
+# Wed, 10 Jul 2024 17:02:15 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Tue, 02 Jul 2024 00:57:45 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -35360,61 +35360,61 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb72fa6f17dfe9cd6454fb6dccdf6ca8fd19c212ede13b12c0ae062eff682f00`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
+	-	`sha256:79a30fcdf9311de4c7cab2f1871f5b9cb625ecc7fcac1fda704adb33b6449c22`  
+		Last Modified: Wed, 10 Jul 2024 17:02:32 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a273a3e16cdcbc368ec91a5e2f3312dfa27d3c5bbbd6bdbf4b48418c6254c81`  
+		Last Modified: Wed, 10 Jul 2024 17:02:33 GMT  
+		Size: 354.6 KB (354552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b0f2b7321d5d56e8f6f37a3c3b2c1cb0c9d4de0e5ac1d834f538b3efd9837f72`  
+		Last Modified: Wed, 10 Jul 2024 17:02:32 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:591b238929736a7300bb23fc793f3422ca4db1c36d13aec6bd23679968f5f7a4`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
-		Size: 345.9 KB (345918 bytes)  
+	-	`sha256:b5fff2931a36670575c423c26ca7c52c646e0644d2374cc790faa289ceb1ef6b`  
+		Last Modified: Wed, 10 Jul 2024 17:02:31 GMT  
+		Size: 1.3 KB (1278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16014478e439a58518a38275671775c8a4954d9760b3a9bbebcdd57b8e2bdde0`  
-		Last Modified: Tue, 02 Jul 2024 00:57:53 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:1f6eeb4162b6af921ae11ed56bf841bc6cc52e9d638fabb3d46ba4ec48d04880`  
+		Last Modified: Wed, 10 Jul 2024 17:02:33 GMT  
+		Size: 19.3 MB (19264049 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c3dc8c45fe3b5babaaaecec22050ef89d5373c83c39a7ba825a6c1c45f65b75`  
-		Last Modified: Tue, 02 Jul 2024 00:57:53 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:52be9ce30e243fe26aaf84fa24d0baf6e1f70d0971af3bd2ec74dce3d17f43c3`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53ebcdce69c445046638fd14aebf746d380ac04ce47f12a75d2fe4497d68b2d8`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
-		Size: 19.3 MB (19255478 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d58621a7b6be7445776140df24b5f8ada14acd0c9a3829d5ed64a68e864b03d`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
+	-	`sha256:4b6aa1554654a3e500036fff639b1fd12f710e6370164a77099dbfe17eacd16f`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85a615bbba8193c315e67683a98737824112f08d79977d516cd10865815a41ec`  
-		Last Modified: Tue, 02 Jul 2024 00:57:51 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:505ab9ca775847275429f9250d55749e77558b9dc896f71fa3be94a269404543`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c33d7c351bb144e09dec014c82f8fe44e6ac8230a962c1981f24bd89f990dbd1`  
-		Last Modified: Tue, 02 Jul 2024 00:57:51 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:f8413fdb9df0bec1c10dfeed6e6f92c339252e8d82646fee8026be8ff60731b2`  
+		Last Modified: Wed, 10 Jul 2024 17:02:30 GMT  
+		Size: 19.0 MB (19022429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b282a2ce5d6e772e4d9c63b5e6e779005176aa6526c5db9eda06c98461676007`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
-		Size: 19.0 MB (19012372 bytes)  
+	-	`sha256:28a247c24d9934e05dd177383de206220d5c8a44ec4bd060d1b37cafacead440`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:732dfbb736368c7fe17a9c9de6828f6df1c38b274b3b7bed07da9bee6e949989`  
-		Last Modified: Tue, 02 Jul 2024 00:57:49 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:83afe3ac7813d122258e195989633f3c9aede43ad31eed9a176730526b868322`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9be92b0ac83eff3339d03e5ad0058911360ae9d21d17d0b233211c01715df53a`  
-		Last Modified: Tue, 02 Jul 2024 00:57:50 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:e33fc95857bf974dba31f9c665e427d77069c553324b60750f3fff0029a19c57`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbeb8fb03ab79ed8c37fb237ee93477a3ff05e8175bf768431d4ddb5058a2086`  
-		Last Modified: Tue, 02 Jul 2024 00:57:49 GMT  
-		Size: 1.3 KB (1287 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b25ec1f39df1d91b09b4fd2766030fdef0f29911749b781eff8de43d032a333`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
-		Size: 19.6 MB (19647506 bytes)  
+	-	`sha256:6c8caa9ec49ebfe2fb1a8cc25cd0afd11687bc5e82e49e3fcf5c0513097b6e17`  
+		Last Modified: Wed, 10 Jul 2024 17:02:30 GMT  
+		Size: 19.7 MB (19658506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27.0`
@@ -37570,58 +37570,58 @@ $ docker pull docker@sha256:a2742279ddd60c420bf7eebf9e71c7a117253fc3802d06608d99
 ## `docker:27.0-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:e7327bda8f419f94d9e7b8f96e60009d196190bf34e2eb1e0ce46617cb5ce9ae
+$ docker pull docker@sha256:08066ae23d24f3d2aa39e59269a87267d32b348aac68773a70575db09cf68221
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 2
-	-	windows version 10.0.20348.2529; amd64
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.20348.2582; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:27.0-windowsservercore` - windows version 10.0.20348.2529; amd64
+### `docker:27.0-windowsservercore` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:386223997bcd45bc3900c73f723f972d9acd82d397dd32439c9d9b8779b01bd0
+$ docker pull docker@sha256:f5ecdc6510964fa3a4ff6b21c188367012e0ed1689be95670e07dbf3435c750e
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2176463119 bytes)**  
+-	Total Size: **2.2 GB (2197911420 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33eae8894e487ca61eb33dccf81effb91f53113f0d82c7030c2a7444c6231659`
+-	Image ID: `sha256:9ac96538face1733ab273d5400b1a58dce159f509531cc3a7d6879a7af73affc`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Tue, 02 Jul 2024 00:56:56 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:01:42 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 02 Jul 2024 00:57:14 GMT
+# Wed, 10 Jul 2024 17:01:50 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 02 Jul 2024 00:57:15 GMT
+# Wed, 10 Jul 2024 17:01:51 GMT
 ENV DOCKER_VERSION=27.0.3
-# Tue, 02 Jul 2024 00:57:15 GMT
+# Wed, 10 Jul 2024 17:01:52 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.0.3.zip
-# Tue, 02 Jul 2024 00:57:25 GMT
+# Wed, 10 Jul 2024 17:02:01 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:57:26 GMT
+# Wed, 10 Jul 2024 17:02:02 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Tue, 02 Jul 2024 00:57:27 GMT
+# Wed, 10 Jul 2024 17:02:03 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Tue, 02 Jul 2024 00:57:27 GMT
+# Wed, 10 Jul 2024 17:02:04 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Tue, 02 Jul 2024 00:57:36 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:57:36 GMT
+# Wed, 10 Jul 2024 17:02:13 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Tue, 02 Jul 2024 00:57:37 GMT
+# Wed, 10 Jul 2024 17:02:14 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Tue, 02 Jul 2024 00:57:37 GMT
+# Wed, 10 Jul 2024 17:02:15 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Tue, 02 Jul 2024 00:57:45 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -37630,107 +37630,107 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb72fa6f17dfe9cd6454fb6dccdf6ca8fd19c212ede13b12c0ae062eff682f00`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
+	-	`sha256:79a30fcdf9311de4c7cab2f1871f5b9cb625ecc7fcac1fda704adb33b6449c22`  
+		Last Modified: Wed, 10 Jul 2024 17:02:32 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a273a3e16cdcbc368ec91a5e2f3312dfa27d3c5bbbd6bdbf4b48418c6254c81`  
+		Last Modified: Wed, 10 Jul 2024 17:02:33 GMT  
+		Size: 354.6 KB (354552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b0f2b7321d5d56e8f6f37a3c3b2c1cb0c9d4de0e5ac1d834f538b3efd9837f72`  
+		Last Modified: Wed, 10 Jul 2024 17:02:32 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:591b238929736a7300bb23fc793f3422ca4db1c36d13aec6bd23679968f5f7a4`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
-		Size: 345.9 KB (345918 bytes)  
+	-	`sha256:b5fff2931a36670575c423c26ca7c52c646e0644d2374cc790faa289ceb1ef6b`  
+		Last Modified: Wed, 10 Jul 2024 17:02:31 GMT  
+		Size: 1.3 KB (1278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16014478e439a58518a38275671775c8a4954d9760b3a9bbebcdd57b8e2bdde0`  
-		Last Modified: Tue, 02 Jul 2024 00:57:53 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:1f6eeb4162b6af921ae11ed56bf841bc6cc52e9d638fabb3d46ba4ec48d04880`  
+		Last Modified: Wed, 10 Jul 2024 17:02:33 GMT  
+		Size: 19.3 MB (19264049 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c3dc8c45fe3b5babaaaecec22050ef89d5373c83c39a7ba825a6c1c45f65b75`  
-		Last Modified: Tue, 02 Jul 2024 00:57:53 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:52be9ce30e243fe26aaf84fa24d0baf6e1f70d0971af3bd2ec74dce3d17f43c3`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53ebcdce69c445046638fd14aebf746d380ac04ce47f12a75d2fe4497d68b2d8`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
-		Size: 19.3 MB (19255478 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d58621a7b6be7445776140df24b5f8ada14acd0c9a3829d5ed64a68e864b03d`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
+	-	`sha256:4b6aa1554654a3e500036fff639b1fd12f710e6370164a77099dbfe17eacd16f`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85a615bbba8193c315e67683a98737824112f08d79977d516cd10865815a41ec`  
-		Last Modified: Tue, 02 Jul 2024 00:57:51 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:505ab9ca775847275429f9250d55749e77558b9dc896f71fa3be94a269404543`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c33d7c351bb144e09dec014c82f8fe44e6ac8230a962c1981f24bd89f990dbd1`  
-		Last Modified: Tue, 02 Jul 2024 00:57:51 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:f8413fdb9df0bec1c10dfeed6e6f92c339252e8d82646fee8026be8ff60731b2`  
+		Last Modified: Wed, 10 Jul 2024 17:02:30 GMT  
+		Size: 19.0 MB (19022429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b282a2ce5d6e772e4d9c63b5e6e779005176aa6526c5db9eda06c98461676007`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
-		Size: 19.0 MB (19012372 bytes)  
+	-	`sha256:28a247c24d9934e05dd177383de206220d5c8a44ec4bd060d1b37cafacead440`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:732dfbb736368c7fe17a9c9de6828f6df1c38b274b3b7bed07da9bee6e949989`  
-		Last Modified: Tue, 02 Jul 2024 00:57:49 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:83afe3ac7813d122258e195989633f3c9aede43ad31eed9a176730526b868322`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9be92b0ac83eff3339d03e5ad0058911360ae9d21d17d0b233211c01715df53a`  
-		Last Modified: Tue, 02 Jul 2024 00:57:50 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:e33fc95857bf974dba31f9c665e427d77069c553324b60750f3fff0029a19c57`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbeb8fb03ab79ed8c37fb237ee93477a3ff05e8175bf768431d4ddb5058a2086`  
-		Last Modified: Tue, 02 Jul 2024 00:57:49 GMT  
-		Size: 1.3 KB (1287 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b25ec1f39df1d91b09b4fd2766030fdef0f29911749b781eff8de43d032a333`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
-		Size: 19.6 MB (19647506 bytes)  
+	-	`sha256:6c8caa9ec49ebfe2fb1a8cc25cd0afd11687bc5e82e49e3fcf5c0513097b6e17`  
+		Last Modified: Wed, 10 Jul 2024 17:02:30 GMT  
+		Size: 19.7 MB (19658506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `docker:27.0-windowsservercore` - windows version 10.0.17763.5936; amd64
+### `docker:27.0-windowsservercore` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:de583fca5903824418764496f4b3d23a32743447c812574b7c2187b6e597943d
+$ docker pull docker@sha256:81fee02516524b785b21d867afffdf5f38fa26b5781e5d801b0232f64dcb9438
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2279270318 bytes)**  
+-	Total Size: **2.3 GB (2296973890 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e8d17fe0e905412571b8c991d350d8ec207e6fbcc357137d647eeb975bcb810`
+-	Image ID: `sha256:d03879f2b3f2adfd712e0f090904d25ad51ebe916abc9b64b8809507c13d22f0`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Tue, 02 Jul 2024 00:56:56 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:12:19 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 02 Jul 2024 00:57:58 GMT
+# Wed, 10 Jul 2024 17:13:22 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 02 Jul 2024 00:57:58 GMT
+# Wed, 10 Jul 2024 17:13:23 GMT
 ENV DOCKER_VERSION=27.0.3
-# Tue, 02 Jul 2024 00:57:59 GMT
+# Wed, 10 Jul 2024 17:13:24 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.0.3.zip
-# Tue, 02 Jul 2024 00:58:25 GMT
+# Wed, 10 Jul 2024 17:13:49 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:58:26 GMT
+# Wed, 10 Jul 2024 17:13:50 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Tue, 02 Jul 2024 00:58:27 GMT
+# Wed, 10 Jul 2024 17:13:50 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Tue, 02 Jul 2024 00:58:27 GMT
+# Wed, 10 Jul 2024 17:13:51 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Tue, 02 Jul 2024 00:58:53 GMT
+# Wed, 10 Jul 2024 17:14:14 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:58:54 GMT
+# Wed, 10 Jul 2024 17:14:15 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Tue, 02 Jul 2024 00:58:54 GMT
+# Wed, 10 Jul 2024 17:14:15 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Tue, 02 Jul 2024 00:58:55 GMT
+# Wed, 10 Jul 2024 17:14:16 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Tue, 02 Jul 2024 00:59:21 GMT
+# Wed, 10 Jul 2024 17:14:39 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -37739,117 +37739,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3648e6774bf46a9570bbba378b813fe331d77e66794c67902533f033b386728e`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 1.3 KB (1299 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04e3fcc6425991dc3ce2445421b81212fb560bf82676f44aff7da17c49d47334`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 520.2 KB (520190 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8f3c0de4a441d13b67c7760d3d5964ae2a802a783ea1c33abe17ae803f105ae`  
-		Last Modified: Tue, 02 Jul 2024 00:59:29 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dec26b725989766448acd89453f905f1de1518029bf71abdf4803f36cd84643d`  
-		Last Modified: Tue, 02 Jul 2024 00:59:28 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e7e003b86bfd7f0b7560ef36ecbfc36ff7e261ec42b881dd2c77b342a47d95f`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 19.3 MB (19306268 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8d273972d44fcdaf4a62d5ba6f75b7dfb129b6a5634e795d5e53dd4af1e8d50`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1299 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47a23fbd9e8a5b8f3c5aaca6c9f4fe9898ad5c65969c8fd927159155c77b48bf`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a33926f7fa4801cf9081a1007897725e622157b1eb31f11d623afceeade55a5`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a822a40a60c40e379ab50a488875bc36d4586634087977a5816e69a5a422a50b`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 19.1 MB (19058739 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb1fb193ed6f352bda7f667cdff053767018b6df0cd23bc0029741f6b64e41db`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
+	-	`sha256:9daf6a0d4634983cbba9f1298aa7f0c36963d33f76db8b4be34a19c33df482d8`  
+		Last Modified: Wed, 10 Jul 2024 17:14:46 GMT  
 		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf2d5334344610097bb8a4357b1d726019275b762d0f99b3062984d32c01ef48`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
+	-	`sha256:904ec5e759c075126667b3921f67d7106e5d2aa84ac442d2a00c810e4a50b8e0`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 509.3 KB (509332 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3837bd999192e4296fa1231424254e5b6ded2c406bb7c723b95e997da663ccb`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:529d0daab006e2e9c881c4ddde55fc5ef54685398b0111ac6f964f5c86499abb`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5889a3bae7b69493b6d13d40dabe4f02e1522f59dbb225ca3a70b9cf256997c5`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 19.3 MB (19294011 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dd9eafc6ff06db1d1f18c0fcfc8015552e7d908ab84b174d6aec165af44eb13a`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1475a6c6bc70b770326361808bfc373c55fe283aa59fed6344fd458549085a58`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:492e2ce963f4a7a34b7ea74ddc5053e235983106a28df668201ba496787cfafc`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
+		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68fe81dc3136381a8ec2c380d5e1c828c7fcba447c55c88de44ebd93b07a1cf5`  
-		Last Modified: Tue, 02 Jul 2024 00:59:28 GMT  
-		Size: 19.7 MB (19692275 bytes)  
+	-	`sha256:7cc0322b1360306f1becf3aea6fb636b0a5241fb7203dcb4e3d24fe9b926b3b0`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a0ec0bb9ba5e7def18e1740bd1de692816c5d5f5289e67750502f6349dc98b35`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 19.0 MB (19048007 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ebadb2f0453f24501d9920a8c1dcfce027ce2df593b897fd1771e70846d2344a`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f36683a6dda5ec67fddde028cdf187ad7f85acf1c9391650c266253f2e8f405c`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1297 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:128a6acb472b5e30428150344923385c9ad6187bc8f45673e059cdb964071724`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3d09237d45b4901b444e3b25bdf2e663e5ec499a7b268c08d473e638eac67325`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 19.7 MB (19681467 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27.0-windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:7e5b86108008d2277460f0b97a6c50c2ec7cf3e3c4b3915186f031346fb391da
+$ docker pull docker@sha256:4761c9bf9600f9d112d5bee248ae50fa8b8ed285669680ebebb5f3a8b59fb4d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:27.0-windowsservercore-1809` - windows version 10.0.17763.5936; amd64
+### `docker:27.0-windowsservercore-1809` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:de583fca5903824418764496f4b3d23a32743447c812574b7c2187b6e597943d
+$ docker pull docker@sha256:81fee02516524b785b21d867afffdf5f38fa26b5781e5d801b0232f64dcb9438
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2279270318 bytes)**  
+-	Total Size: **2.3 GB (2296973890 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e8d17fe0e905412571b8c991d350d8ec207e6fbcc357137d647eeb975bcb810`
+-	Image ID: `sha256:d03879f2b3f2adfd712e0f090904d25ad51ebe916abc9b64b8809507c13d22f0`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Tue, 02 Jul 2024 00:56:56 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:12:19 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 02 Jul 2024 00:57:58 GMT
+# Wed, 10 Jul 2024 17:13:22 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 02 Jul 2024 00:57:58 GMT
+# Wed, 10 Jul 2024 17:13:23 GMT
 ENV DOCKER_VERSION=27.0.3
-# Tue, 02 Jul 2024 00:57:59 GMT
+# Wed, 10 Jul 2024 17:13:24 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.0.3.zip
-# Tue, 02 Jul 2024 00:58:25 GMT
+# Wed, 10 Jul 2024 17:13:49 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:58:26 GMT
+# Wed, 10 Jul 2024 17:13:50 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Tue, 02 Jul 2024 00:58:27 GMT
+# Wed, 10 Jul 2024 17:13:50 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Tue, 02 Jul 2024 00:58:27 GMT
+# Wed, 10 Jul 2024 17:13:51 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Tue, 02 Jul 2024 00:58:53 GMT
+# Wed, 10 Jul 2024 17:14:14 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:58:54 GMT
+# Wed, 10 Jul 2024 17:14:15 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Tue, 02 Jul 2024 00:58:54 GMT
+# Wed, 10 Jul 2024 17:14:15 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Tue, 02 Jul 2024 00:58:55 GMT
+# Wed, 10 Jul 2024 17:14:16 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Tue, 02 Jul 2024 00:59:21 GMT
+# Wed, 10 Jul 2024 17:14:39 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -37858,117 +37858,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3648e6774bf46a9570bbba378b813fe331d77e66794c67902533f033b386728e`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 1.3 KB (1299 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04e3fcc6425991dc3ce2445421b81212fb560bf82676f44aff7da17c49d47334`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 520.2 KB (520190 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8f3c0de4a441d13b67c7760d3d5964ae2a802a783ea1c33abe17ae803f105ae`  
-		Last Modified: Tue, 02 Jul 2024 00:59:29 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dec26b725989766448acd89453f905f1de1518029bf71abdf4803f36cd84643d`  
-		Last Modified: Tue, 02 Jul 2024 00:59:28 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e7e003b86bfd7f0b7560ef36ecbfc36ff7e261ec42b881dd2c77b342a47d95f`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 19.3 MB (19306268 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8d273972d44fcdaf4a62d5ba6f75b7dfb129b6a5634e795d5e53dd4af1e8d50`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1299 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47a23fbd9e8a5b8f3c5aaca6c9f4fe9898ad5c65969c8fd927159155c77b48bf`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a33926f7fa4801cf9081a1007897725e622157b1eb31f11d623afceeade55a5`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a822a40a60c40e379ab50a488875bc36d4586634087977a5816e69a5a422a50b`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 19.1 MB (19058739 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb1fb193ed6f352bda7f667cdff053767018b6df0cd23bc0029741f6b64e41db`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
+	-	`sha256:9daf6a0d4634983cbba9f1298aa7f0c36963d33f76db8b4be34a19c33df482d8`  
+		Last Modified: Wed, 10 Jul 2024 17:14:46 GMT  
 		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf2d5334344610097bb8a4357b1d726019275b762d0f99b3062984d32c01ef48`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
+	-	`sha256:904ec5e759c075126667b3921f67d7106e5d2aa84ac442d2a00c810e4a50b8e0`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 509.3 KB (509332 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3837bd999192e4296fa1231424254e5b6ded2c406bb7c723b95e997da663ccb`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:529d0daab006e2e9c881c4ddde55fc5ef54685398b0111ac6f964f5c86499abb`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5889a3bae7b69493b6d13d40dabe4f02e1522f59dbb225ca3a70b9cf256997c5`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 19.3 MB (19294011 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dd9eafc6ff06db1d1f18c0fcfc8015552e7d908ab84b174d6aec165af44eb13a`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1475a6c6bc70b770326361808bfc373c55fe283aa59fed6344fd458549085a58`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:492e2ce963f4a7a34b7ea74ddc5053e235983106a28df668201ba496787cfafc`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
+		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68fe81dc3136381a8ec2c380d5e1c828c7fcba447c55c88de44ebd93b07a1cf5`  
-		Last Modified: Tue, 02 Jul 2024 00:59:28 GMT  
-		Size: 19.7 MB (19692275 bytes)  
+	-	`sha256:7cc0322b1360306f1becf3aea6fb636b0a5241fb7203dcb4e3d24fe9b926b3b0`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a0ec0bb9ba5e7def18e1740bd1de692816c5d5f5289e67750502f6349dc98b35`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 19.0 MB (19048007 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ebadb2f0453f24501d9920a8c1dcfce027ce2df593b897fd1771e70846d2344a`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f36683a6dda5ec67fddde028cdf187ad7f85acf1c9391650c266253f2e8f405c`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1297 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:128a6acb472b5e30428150344923385c9ad6187bc8f45673e059cdb964071724`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3d09237d45b4901b444e3b25bdf2e663e5ec499a7b268c08d473e638eac67325`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 19.7 MB (19681467 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27.0-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull docker@sha256:db0bfd3a516588b0264a2e917d8ffc5747a8fd92f7071c31936950dc134bffdd
+$ docker pull docker@sha256:52b2dfe13e34f89bfd254e19394a78a8ee56358374b575b38526f1f658fbba33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.2529; amd64
+	-	windows version 10.0.20348.2582; amd64
 
-### `docker:27.0-windowsservercore-ltsc2022` - windows version 10.0.20348.2529; amd64
+### `docker:27.0-windowsservercore-ltsc2022` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:386223997bcd45bc3900c73f723f972d9acd82d397dd32439c9d9b8779b01bd0
+$ docker pull docker@sha256:f5ecdc6510964fa3a4ff6b21c188367012e0ed1689be95670e07dbf3435c750e
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2176463119 bytes)**  
+-	Total Size: **2.2 GB (2197911420 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33eae8894e487ca61eb33dccf81effb91f53113f0d82c7030c2a7444c6231659`
+-	Image ID: `sha256:9ac96538face1733ab273d5400b1a58dce159f509531cc3a7d6879a7af73affc`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Tue, 02 Jul 2024 00:56:56 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:01:42 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 02 Jul 2024 00:57:14 GMT
+# Wed, 10 Jul 2024 17:01:50 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 02 Jul 2024 00:57:15 GMT
+# Wed, 10 Jul 2024 17:01:51 GMT
 ENV DOCKER_VERSION=27.0.3
-# Tue, 02 Jul 2024 00:57:15 GMT
+# Wed, 10 Jul 2024 17:01:52 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.0.3.zip
-# Tue, 02 Jul 2024 00:57:25 GMT
+# Wed, 10 Jul 2024 17:02:01 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:57:26 GMT
+# Wed, 10 Jul 2024 17:02:02 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Tue, 02 Jul 2024 00:57:27 GMT
+# Wed, 10 Jul 2024 17:02:03 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Tue, 02 Jul 2024 00:57:27 GMT
+# Wed, 10 Jul 2024 17:02:04 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Tue, 02 Jul 2024 00:57:36 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:57:36 GMT
+# Wed, 10 Jul 2024 17:02:13 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Tue, 02 Jul 2024 00:57:37 GMT
+# Wed, 10 Jul 2024 17:02:14 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Tue, 02 Jul 2024 00:57:37 GMT
+# Wed, 10 Jul 2024 17:02:15 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Tue, 02 Jul 2024 00:57:45 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -37977,61 +37977,61 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb72fa6f17dfe9cd6454fb6dccdf6ca8fd19c212ede13b12c0ae062eff682f00`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
+	-	`sha256:79a30fcdf9311de4c7cab2f1871f5b9cb625ecc7fcac1fda704adb33b6449c22`  
+		Last Modified: Wed, 10 Jul 2024 17:02:32 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a273a3e16cdcbc368ec91a5e2f3312dfa27d3c5bbbd6bdbf4b48418c6254c81`  
+		Last Modified: Wed, 10 Jul 2024 17:02:33 GMT  
+		Size: 354.6 KB (354552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b0f2b7321d5d56e8f6f37a3c3b2c1cb0c9d4de0e5ac1d834f538b3efd9837f72`  
+		Last Modified: Wed, 10 Jul 2024 17:02:32 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:591b238929736a7300bb23fc793f3422ca4db1c36d13aec6bd23679968f5f7a4`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
-		Size: 345.9 KB (345918 bytes)  
+	-	`sha256:b5fff2931a36670575c423c26ca7c52c646e0644d2374cc790faa289ceb1ef6b`  
+		Last Modified: Wed, 10 Jul 2024 17:02:31 GMT  
+		Size: 1.3 KB (1278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16014478e439a58518a38275671775c8a4954d9760b3a9bbebcdd57b8e2bdde0`  
-		Last Modified: Tue, 02 Jul 2024 00:57:53 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:1f6eeb4162b6af921ae11ed56bf841bc6cc52e9d638fabb3d46ba4ec48d04880`  
+		Last Modified: Wed, 10 Jul 2024 17:02:33 GMT  
+		Size: 19.3 MB (19264049 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c3dc8c45fe3b5babaaaecec22050ef89d5373c83c39a7ba825a6c1c45f65b75`  
-		Last Modified: Tue, 02 Jul 2024 00:57:53 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:52be9ce30e243fe26aaf84fa24d0baf6e1f70d0971af3bd2ec74dce3d17f43c3`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53ebcdce69c445046638fd14aebf746d380ac04ce47f12a75d2fe4497d68b2d8`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
-		Size: 19.3 MB (19255478 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d58621a7b6be7445776140df24b5f8ada14acd0c9a3829d5ed64a68e864b03d`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
+	-	`sha256:4b6aa1554654a3e500036fff639b1fd12f710e6370164a77099dbfe17eacd16f`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85a615bbba8193c315e67683a98737824112f08d79977d516cd10865815a41ec`  
-		Last Modified: Tue, 02 Jul 2024 00:57:51 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:505ab9ca775847275429f9250d55749e77558b9dc896f71fa3be94a269404543`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c33d7c351bb144e09dec014c82f8fe44e6ac8230a962c1981f24bd89f990dbd1`  
-		Last Modified: Tue, 02 Jul 2024 00:57:51 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:f8413fdb9df0bec1c10dfeed6e6f92c339252e8d82646fee8026be8ff60731b2`  
+		Last Modified: Wed, 10 Jul 2024 17:02:30 GMT  
+		Size: 19.0 MB (19022429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b282a2ce5d6e772e4d9c63b5e6e779005176aa6526c5db9eda06c98461676007`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
-		Size: 19.0 MB (19012372 bytes)  
+	-	`sha256:28a247c24d9934e05dd177383de206220d5c8a44ec4bd060d1b37cafacead440`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:732dfbb736368c7fe17a9c9de6828f6df1c38b274b3b7bed07da9bee6e949989`  
-		Last Modified: Tue, 02 Jul 2024 00:57:49 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:83afe3ac7813d122258e195989633f3c9aede43ad31eed9a176730526b868322`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9be92b0ac83eff3339d03e5ad0058911360ae9d21d17d0b233211c01715df53a`  
-		Last Modified: Tue, 02 Jul 2024 00:57:50 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:e33fc95857bf974dba31f9c665e427d77069c553324b60750f3fff0029a19c57`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbeb8fb03ab79ed8c37fb237ee93477a3ff05e8175bf768431d4ddb5058a2086`  
-		Last Modified: Tue, 02 Jul 2024 00:57:49 GMT  
-		Size: 1.3 KB (1287 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b25ec1f39df1d91b09b4fd2766030fdef0f29911749b781eff8de43d032a333`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
-		Size: 19.6 MB (19647506 bytes)  
+	-	`sha256:6c8caa9ec49ebfe2fb1a8cc25cd0afd11687bc5e82e49e3fcf5c0513097b6e17`  
+		Last Modified: Wed, 10 Jul 2024 17:02:30 GMT  
+		Size: 19.7 MB (19658506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27.0.3`
@@ -41942,58 +41942,58 @@ $ docker pull docker@sha256:a2742279ddd60c420bf7eebf9e71c7a117253fc3802d06608d99
 ## `docker:27.0.3-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:e7327bda8f419f94d9e7b8f96e60009d196190bf34e2eb1e0ce46617cb5ce9ae
+$ docker pull docker@sha256:08066ae23d24f3d2aa39e59269a87267d32b348aac68773a70575db09cf68221
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 2
-	-	windows version 10.0.20348.2529; amd64
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.20348.2582; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:27.0.3-windowsservercore` - windows version 10.0.20348.2529; amd64
+### `docker:27.0.3-windowsservercore` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:386223997bcd45bc3900c73f723f972d9acd82d397dd32439c9d9b8779b01bd0
+$ docker pull docker@sha256:f5ecdc6510964fa3a4ff6b21c188367012e0ed1689be95670e07dbf3435c750e
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2176463119 bytes)**  
+-	Total Size: **2.2 GB (2197911420 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33eae8894e487ca61eb33dccf81effb91f53113f0d82c7030c2a7444c6231659`
+-	Image ID: `sha256:9ac96538face1733ab273d5400b1a58dce159f509531cc3a7d6879a7af73affc`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Tue, 02 Jul 2024 00:56:56 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:01:42 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 02 Jul 2024 00:57:14 GMT
+# Wed, 10 Jul 2024 17:01:50 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 02 Jul 2024 00:57:15 GMT
+# Wed, 10 Jul 2024 17:01:51 GMT
 ENV DOCKER_VERSION=27.0.3
-# Tue, 02 Jul 2024 00:57:15 GMT
+# Wed, 10 Jul 2024 17:01:52 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.0.3.zip
-# Tue, 02 Jul 2024 00:57:25 GMT
+# Wed, 10 Jul 2024 17:02:01 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:57:26 GMT
+# Wed, 10 Jul 2024 17:02:02 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Tue, 02 Jul 2024 00:57:27 GMT
+# Wed, 10 Jul 2024 17:02:03 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Tue, 02 Jul 2024 00:57:27 GMT
+# Wed, 10 Jul 2024 17:02:04 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Tue, 02 Jul 2024 00:57:36 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:57:36 GMT
+# Wed, 10 Jul 2024 17:02:13 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Tue, 02 Jul 2024 00:57:37 GMT
+# Wed, 10 Jul 2024 17:02:14 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Tue, 02 Jul 2024 00:57:37 GMT
+# Wed, 10 Jul 2024 17:02:15 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Tue, 02 Jul 2024 00:57:45 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -42002,107 +42002,107 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb72fa6f17dfe9cd6454fb6dccdf6ca8fd19c212ede13b12c0ae062eff682f00`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
+	-	`sha256:79a30fcdf9311de4c7cab2f1871f5b9cb625ecc7fcac1fda704adb33b6449c22`  
+		Last Modified: Wed, 10 Jul 2024 17:02:32 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a273a3e16cdcbc368ec91a5e2f3312dfa27d3c5bbbd6bdbf4b48418c6254c81`  
+		Last Modified: Wed, 10 Jul 2024 17:02:33 GMT  
+		Size: 354.6 KB (354552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b0f2b7321d5d56e8f6f37a3c3b2c1cb0c9d4de0e5ac1d834f538b3efd9837f72`  
+		Last Modified: Wed, 10 Jul 2024 17:02:32 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:591b238929736a7300bb23fc793f3422ca4db1c36d13aec6bd23679968f5f7a4`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
-		Size: 345.9 KB (345918 bytes)  
+	-	`sha256:b5fff2931a36670575c423c26ca7c52c646e0644d2374cc790faa289ceb1ef6b`  
+		Last Modified: Wed, 10 Jul 2024 17:02:31 GMT  
+		Size: 1.3 KB (1278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16014478e439a58518a38275671775c8a4954d9760b3a9bbebcdd57b8e2bdde0`  
-		Last Modified: Tue, 02 Jul 2024 00:57:53 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:1f6eeb4162b6af921ae11ed56bf841bc6cc52e9d638fabb3d46ba4ec48d04880`  
+		Last Modified: Wed, 10 Jul 2024 17:02:33 GMT  
+		Size: 19.3 MB (19264049 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c3dc8c45fe3b5babaaaecec22050ef89d5373c83c39a7ba825a6c1c45f65b75`  
-		Last Modified: Tue, 02 Jul 2024 00:57:53 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:52be9ce30e243fe26aaf84fa24d0baf6e1f70d0971af3bd2ec74dce3d17f43c3`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53ebcdce69c445046638fd14aebf746d380ac04ce47f12a75d2fe4497d68b2d8`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
-		Size: 19.3 MB (19255478 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d58621a7b6be7445776140df24b5f8ada14acd0c9a3829d5ed64a68e864b03d`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
+	-	`sha256:4b6aa1554654a3e500036fff639b1fd12f710e6370164a77099dbfe17eacd16f`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85a615bbba8193c315e67683a98737824112f08d79977d516cd10865815a41ec`  
-		Last Modified: Tue, 02 Jul 2024 00:57:51 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:505ab9ca775847275429f9250d55749e77558b9dc896f71fa3be94a269404543`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c33d7c351bb144e09dec014c82f8fe44e6ac8230a962c1981f24bd89f990dbd1`  
-		Last Modified: Tue, 02 Jul 2024 00:57:51 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:f8413fdb9df0bec1c10dfeed6e6f92c339252e8d82646fee8026be8ff60731b2`  
+		Last Modified: Wed, 10 Jul 2024 17:02:30 GMT  
+		Size: 19.0 MB (19022429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b282a2ce5d6e772e4d9c63b5e6e779005176aa6526c5db9eda06c98461676007`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
-		Size: 19.0 MB (19012372 bytes)  
+	-	`sha256:28a247c24d9934e05dd177383de206220d5c8a44ec4bd060d1b37cafacead440`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:732dfbb736368c7fe17a9c9de6828f6df1c38b274b3b7bed07da9bee6e949989`  
-		Last Modified: Tue, 02 Jul 2024 00:57:49 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:83afe3ac7813d122258e195989633f3c9aede43ad31eed9a176730526b868322`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9be92b0ac83eff3339d03e5ad0058911360ae9d21d17d0b233211c01715df53a`  
-		Last Modified: Tue, 02 Jul 2024 00:57:50 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:e33fc95857bf974dba31f9c665e427d77069c553324b60750f3fff0029a19c57`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbeb8fb03ab79ed8c37fb237ee93477a3ff05e8175bf768431d4ddb5058a2086`  
-		Last Modified: Tue, 02 Jul 2024 00:57:49 GMT  
-		Size: 1.3 KB (1287 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b25ec1f39df1d91b09b4fd2766030fdef0f29911749b781eff8de43d032a333`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
-		Size: 19.6 MB (19647506 bytes)  
+	-	`sha256:6c8caa9ec49ebfe2fb1a8cc25cd0afd11687bc5e82e49e3fcf5c0513097b6e17`  
+		Last Modified: Wed, 10 Jul 2024 17:02:30 GMT  
+		Size: 19.7 MB (19658506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `docker:27.0.3-windowsservercore` - windows version 10.0.17763.5936; amd64
+### `docker:27.0.3-windowsservercore` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:de583fca5903824418764496f4b3d23a32743447c812574b7c2187b6e597943d
+$ docker pull docker@sha256:81fee02516524b785b21d867afffdf5f38fa26b5781e5d801b0232f64dcb9438
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2279270318 bytes)**  
+-	Total Size: **2.3 GB (2296973890 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e8d17fe0e905412571b8c991d350d8ec207e6fbcc357137d647eeb975bcb810`
+-	Image ID: `sha256:d03879f2b3f2adfd712e0f090904d25ad51ebe916abc9b64b8809507c13d22f0`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Tue, 02 Jul 2024 00:56:56 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:12:19 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 02 Jul 2024 00:57:58 GMT
+# Wed, 10 Jul 2024 17:13:22 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 02 Jul 2024 00:57:58 GMT
+# Wed, 10 Jul 2024 17:13:23 GMT
 ENV DOCKER_VERSION=27.0.3
-# Tue, 02 Jul 2024 00:57:59 GMT
+# Wed, 10 Jul 2024 17:13:24 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.0.3.zip
-# Tue, 02 Jul 2024 00:58:25 GMT
+# Wed, 10 Jul 2024 17:13:49 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:58:26 GMT
+# Wed, 10 Jul 2024 17:13:50 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Tue, 02 Jul 2024 00:58:27 GMT
+# Wed, 10 Jul 2024 17:13:50 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Tue, 02 Jul 2024 00:58:27 GMT
+# Wed, 10 Jul 2024 17:13:51 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Tue, 02 Jul 2024 00:58:53 GMT
+# Wed, 10 Jul 2024 17:14:14 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:58:54 GMT
+# Wed, 10 Jul 2024 17:14:15 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Tue, 02 Jul 2024 00:58:54 GMT
+# Wed, 10 Jul 2024 17:14:15 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Tue, 02 Jul 2024 00:58:55 GMT
+# Wed, 10 Jul 2024 17:14:16 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Tue, 02 Jul 2024 00:59:21 GMT
+# Wed, 10 Jul 2024 17:14:39 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -42111,117 +42111,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3648e6774bf46a9570bbba378b813fe331d77e66794c67902533f033b386728e`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 1.3 KB (1299 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04e3fcc6425991dc3ce2445421b81212fb560bf82676f44aff7da17c49d47334`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 520.2 KB (520190 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8f3c0de4a441d13b67c7760d3d5964ae2a802a783ea1c33abe17ae803f105ae`  
-		Last Modified: Tue, 02 Jul 2024 00:59:29 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dec26b725989766448acd89453f905f1de1518029bf71abdf4803f36cd84643d`  
-		Last Modified: Tue, 02 Jul 2024 00:59:28 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e7e003b86bfd7f0b7560ef36ecbfc36ff7e261ec42b881dd2c77b342a47d95f`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 19.3 MB (19306268 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8d273972d44fcdaf4a62d5ba6f75b7dfb129b6a5634e795d5e53dd4af1e8d50`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1299 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47a23fbd9e8a5b8f3c5aaca6c9f4fe9898ad5c65969c8fd927159155c77b48bf`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a33926f7fa4801cf9081a1007897725e622157b1eb31f11d623afceeade55a5`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a822a40a60c40e379ab50a488875bc36d4586634087977a5816e69a5a422a50b`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 19.1 MB (19058739 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb1fb193ed6f352bda7f667cdff053767018b6df0cd23bc0029741f6b64e41db`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
+	-	`sha256:9daf6a0d4634983cbba9f1298aa7f0c36963d33f76db8b4be34a19c33df482d8`  
+		Last Modified: Wed, 10 Jul 2024 17:14:46 GMT  
 		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf2d5334344610097bb8a4357b1d726019275b762d0f99b3062984d32c01ef48`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
+	-	`sha256:904ec5e759c075126667b3921f67d7106e5d2aa84ac442d2a00c810e4a50b8e0`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 509.3 KB (509332 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3837bd999192e4296fa1231424254e5b6ded2c406bb7c723b95e997da663ccb`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:529d0daab006e2e9c881c4ddde55fc5ef54685398b0111ac6f964f5c86499abb`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5889a3bae7b69493b6d13d40dabe4f02e1522f59dbb225ca3a70b9cf256997c5`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 19.3 MB (19294011 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dd9eafc6ff06db1d1f18c0fcfc8015552e7d908ab84b174d6aec165af44eb13a`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1475a6c6bc70b770326361808bfc373c55fe283aa59fed6344fd458549085a58`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:492e2ce963f4a7a34b7ea74ddc5053e235983106a28df668201ba496787cfafc`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
+		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68fe81dc3136381a8ec2c380d5e1c828c7fcba447c55c88de44ebd93b07a1cf5`  
-		Last Modified: Tue, 02 Jul 2024 00:59:28 GMT  
-		Size: 19.7 MB (19692275 bytes)  
+	-	`sha256:7cc0322b1360306f1becf3aea6fb636b0a5241fb7203dcb4e3d24fe9b926b3b0`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a0ec0bb9ba5e7def18e1740bd1de692816c5d5f5289e67750502f6349dc98b35`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 19.0 MB (19048007 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ebadb2f0453f24501d9920a8c1dcfce027ce2df593b897fd1771e70846d2344a`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f36683a6dda5ec67fddde028cdf187ad7f85acf1c9391650c266253f2e8f405c`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1297 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:128a6acb472b5e30428150344923385c9ad6187bc8f45673e059cdb964071724`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3d09237d45b4901b444e3b25bdf2e663e5ec499a7b268c08d473e638eac67325`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 19.7 MB (19681467 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27.0.3-windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:7e5b86108008d2277460f0b97a6c50c2ec7cf3e3c4b3915186f031346fb391da
+$ docker pull docker@sha256:4761c9bf9600f9d112d5bee248ae50fa8b8ed285669680ebebb5f3a8b59fb4d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:27.0.3-windowsservercore-1809` - windows version 10.0.17763.5936; amd64
+### `docker:27.0.3-windowsservercore-1809` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:de583fca5903824418764496f4b3d23a32743447c812574b7c2187b6e597943d
+$ docker pull docker@sha256:81fee02516524b785b21d867afffdf5f38fa26b5781e5d801b0232f64dcb9438
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2279270318 bytes)**  
+-	Total Size: **2.3 GB (2296973890 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e8d17fe0e905412571b8c991d350d8ec207e6fbcc357137d647eeb975bcb810`
+-	Image ID: `sha256:d03879f2b3f2adfd712e0f090904d25ad51ebe916abc9b64b8809507c13d22f0`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Tue, 02 Jul 2024 00:56:56 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:12:19 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 02 Jul 2024 00:57:58 GMT
+# Wed, 10 Jul 2024 17:13:22 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 02 Jul 2024 00:57:58 GMT
+# Wed, 10 Jul 2024 17:13:23 GMT
 ENV DOCKER_VERSION=27.0.3
-# Tue, 02 Jul 2024 00:57:59 GMT
+# Wed, 10 Jul 2024 17:13:24 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.0.3.zip
-# Tue, 02 Jul 2024 00:58:25 GMT
+# Wed, 10 Jul 2024 17:13:49 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:58:26 GMT
+# Wed, 10 Jul 2024 17:13:50 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Tue, 02 Jul 2024 00:58:27 GMT
+# Wed, 10 Jul 2024 17:13:50 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Tue, 02 Jul 2024 00:58:27 GMT
+# Wed, 10 Jul 2024 17:13:51 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Tue, 02 Jul 2024 00:58:53 GMT
+# Wed, 10 Jul 2024 17:14:14 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:58:54 GMT
+# Wed, 10 Jul 2024 17:14:15 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Tue, 02 Jul 2024 00:58:54 GMT
+# Wed, 10 Jul 2024 17:14:15 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Tue, 02 Jul 2024 00:58:55 GMT
+# Wed, 10 Jul 2024 17:14:16 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Tue, 02 Jul 2024 00:59:21 GMT
+# Wed, 10 Jul 2024 17:14:39 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -42230,117 +42230,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3648e6774bf46a9570bbba378b813fe331d77e66794c67902533f033b386728e`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 1.3 KB (1299 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04e3fcc6425991dc3ce2445421b81212fb560bf82676f44aff7da17c49d47334`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 520.2 KB (520190 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8f3c0de4a441d13b67c7760d3d5964ae2a802a783ea1c33abe17ae803f105ae`  
-		Last Modified: Tue, 02 Jul 2024 00:59:29 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dec26b725989766448acd89453f905f1de1518029bf71abdf4803f36cd84643d`  
-		Last Modified: Tue, 02 Jul 2024 00:59:28 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e7e003b86bfd7f0b7560ef36ecbfc36ff7e261ec42b881dd2c77b342a47d95f`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 19.3 MB (19306268 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8d273972d44fcdaf4a62d5ba6f75b7dfb129b6a5634e795d5e53dd4af1e8d50`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1299 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47a23fbd9e8a5b8f3c5aaca6c9f4fe9898ad5c65969c8fd927159155c77b48bf`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a33926f7fa4801cf9081a1007897725e622157b1eb31f11d623afceeade55a5`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a822a40a60c40e379ab50a488875bc36d4586634087977a5816e69a5a422a50b`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 19.1 MB (19058739 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb1fb193ed6f352bda7f667cdff053767018b6df0cd23bc0029741f6b64e41db`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
+	-	`sha256:9daf6a0d4634983cbba9f1298aa7f0c36963d33f76db8b4be34a19c33df482d8`  
+		Last Modified: Wed, 10 Jul 2024 17:14:46 GMT  
 		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf2d5334344610097bb8a4357b1d726019275b762d0f99b3062984d32c01ef48`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
+	-	`sha256:904ec5e759c075126667b3921f67d7106e5d2aa84ac442d2a00c810e4a50b8e0`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 509.3 KB (509332 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3837bd999192e4296fa1231424254e5b6ded2c406bb7c723b95e997da663ccb`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:529d0daab006e2e9c881c4ddde55fc5ef54685398b0111ac6f964f5c86499abb`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5889a3bae7b69493b6d13d40dabe4f02e1522f59dbb225ca3a70b9cf256997c5`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 19.3 MB (19294011 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dd9eafc6ff06db1d1f18c0fcfc8015552e7d908ab84b174d6aec165af44eb13a`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1475a6c6bc70b770326361808bfc373c55fe283aa59fed6344fd458549085a58`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:492e2ce963f4a7a34b7ea74ddc5053e235983106a28df668201ba496787cfafc`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
+		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68fe81dc3136381a8ec2c380d5e1c828c7fcba447c55c88de44ebd93b07a1cf5`  
-		Last Modified: Tue, 02 Jul 2024 00:59:28 GMT  
-		Size: 19.7 MB (19692275 bytes)  
+	-	`sha256:7cc0322b1360306f1becf3aea6fb636b0a5241fb7203dcb4e3d24fe9b926b3b0`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a0ec0bb9ba5e7def18e1740bd1de692816c5d5f5289e67750502f6349dc98b35`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 19.0 MB (19048007 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ebadb2f0453f24501d9920a8c1dcfce027ce2df593b897fd1771e70846d2344a`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f36683a6dda5ec67fddde028cdf187ad7f85acf1c9391650c266253f2e8f405c`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1297 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:128a6acb472b5e30428150344923385c9ad6187bc8f45673e059cdb964071724`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3d09237d45b4901b444e3b25bdf2e663e5ec499a7b268c08d473e638eac67325`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 19.7 MB (19681467 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27.0.3-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull docker@sha256:db0bfd3a516588b0264a2e917d8ffc5747a8fd92f7071c31936950dc134bffdd
+$ docker pull docker@sha256:52b2dfe13e34f89bfd254e19394a78a8ee56358374b575b38526f1f658fbba33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.2529; amd64
+	-	windows version 10.0.20348.2582; amd64
 
-### `docker:27.0.3-windowsservercore-ltsc2022` - windows version 10.0.20348.2529; amd64
+### `docker:27.0.3-windowsservercore-ltsc2022` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:386223997bcd45bc3900c73f723f972d9acd82d397dd32439c9d9b8779b01bd0
+$ docker pull docker@sha256:f5ecdc6510964fa3a4ff6b21c188367012e0ed1689be95670e07dbf3435c750e
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2176463119 bytes)**  
+-	Total Size: **2.2 GB (2197911420 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33eae8894e487ca61eb33dccf81effb91f53113f0d82c7030c2a7444c6231659`
+-	Image ID: `sha256:9ac96538face1733ab273d5400b1a58dce159f509531cc3a7d6879a7af73affc`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Tue, 02 Jul 2024 00:56:56 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:01:42 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 02 Jul 2024 00:57:14 GMT
+# Wed, 10 Jul 2024 17:01:50 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 02 Jul 2024 00:57:15 GMT
+# Wed, 10 Jul 2024 17:01:51 GMT
 ENV DOCKER_VERSION=27.0.3
-# Tue, 02 Jul 2024 00:57:15 GMT
+# Wed, 10 Jul 2024 17:01:52 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.0.3.zip
-# Tue, 02 Jul 2024 00:57:25 GMT
+# Wed, 10 Jul 2024 17:02:01 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:57:26 GMT
+# Wed, 10 Jul 2024 17:02:02 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Tue, 02 Jul 2024 00:57:27 GMT
+# Wed, 10 Jul 2024 17:02:03 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Tue, 02 Jul 2024 00:57:27 GMT
+# Wed, 10 Jul 2024 17:02:04 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Tue, 02 Jul 2024 00:57:36 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:57:36 GMT
+# Wed, 10 Jul 2024 17:02:13 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Tue, 02 Jul 2024 00:57:37 GMT
+# Wed, 10 Jul 2024 17:02:14 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Tue, 02 Jul 2024 00:57:37 GMT
+# Wed, 10 Jul 2024 17:02:15 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Tue, 02 Jul 2024 00:57:45 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -42349,61 +42349,61 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb72fa6f17dfe9cd6454fb6dccdf6ca8fd19c212ede13b12c0ae062eff682f00`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
+	-	`sha256:79a30fcdf9311de4c7cab2f1871f5b9cb625ecc7fcac1fda704adb33b6449c22`  
+		Last Modified: Wed, 10 Jul 2024 17:02:32 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a273a3e16cdcbc368ec91a5e2f3312dfa27d3c5bbbd6bdbf4b48418c6254c81`  
+		Last Modified: Wed, 10 Jul 2024 17:02:33 GMT  
+		Size: 354.6 KB (354552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b0f2b7321d5d56e8f6f37a3c3b2c1cb0c9d4de0e5ac1d834f538b3efd9837f72`  
+		Last Modified: Wed, 10 Jul 2024 17:02:32 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:591b238929736a7300bb23fc793f3422ca4db1c36d13aec6bd23679968f5f7a4`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
-		Size: 345.9 KB (345918 bytes)  
+	-	`sha256:b5fff2931a36670575c423c26ca7c52c646e0644d2374cc790faa289ceb1ef6b`  
+		Last Modified: Wed, 10 Jul 2024 17:02:31 GMT  
+		Size: 1.3 KB (1278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16014478e439a58518a38275671775c8a4954d9760b3a9bbebcdd57b8e2bdde0`  
-		Last Modified: Tue, 02 Jul 2024 00:57:53 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:1f6eeb4162b6af921ae11ed56bf841bc6cc52e9d638fabb3d46ba4ec48d04880`  
+		Last Modified: Wed, 10 Jul 2024 17:02:33 GMT  
+		Size: 19.3 MB (19264049 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c3dc8c45fe3b5babaaaecec22050ef89d5373c83c39a7ba825a6c1c45f65b75`  
-		Last Modified: Tue, 02 Jul 2024 00:57:53 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:52be9ce30e243fe26aaf84fa24d0baf6e1f70d0971af3bd2ec74dce3d17f43c3`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53ebcdce69c445046638fd14aebf746d380ac04ce47f12a75d2fe4497d68b2d8`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
-		Size: 19.3 MB (19255478 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d58621a7b6be7445776140df24b5f8ada14acd0c9a3829d5ed64a68e864b03d`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
+	-	`sha256:4b6aa1554654a3e500036fff639b1fd12f710e6370164a77099dbfe17eacd16f`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85a615bbba8193c315e67683a98737824112f08d79977d516cd10865815a41ec`  
-		Last Modified: Tue, 02 Jul 2024 00:57:51 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:505ab9ca775847275429f9250d55749e77558b9dc896f71fa3be94a269404543`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c33d7c351bb144e09dec014c82f8fe44e6ac8230a962c1981f24bd89f990dbd1`  
-		Last Modified: Tue, 02 Jul 2024 00:57:51 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:f8413fdb9df0bec1c10dfeed6e6f92c339252e8d82646fee8026be8ff60731b2`  
+		Last Modified: Wed, 10 Jul 2024 17:02:30 GMT  
+		Size: 19.0 MB (19022429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b282a2ce5d6e772e4d9c63b5e6e779005176aa6526c5db9eda06c98461676007`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
-		Size: 19.0 MB (19012372 bytes)  
+	-	`sha256:28a247c24d9934e05dd177383de206220d5c8a44ec4bd060d1b37cafacead440`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:732dfbb736368c7fe17a9c9de6828f6df1c38b274b3b7bed07da9bee6e949989`  
-		Last Modified: Tue, 02 Jul 2024 00:57:49 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:83afe3ac7813d122258e195989633f3c9aede43ad31eed9a176730526b868322`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9be92b0ac83eff3339d03e5ad0058911360ae9d21d17d0b233211c01715df53a`  
-		Last Modified: Tue, 02 Jul 2024 00:57:50 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:e33fc95857bf974dba31f9c665e427d77069c553324b60750f3fff0029a19c57`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbeb8fb03ab79ed8c37fb237ee93477a3ff05e8175bf768431d4ddb5058a2086`  
-		Last Modified: Tue, 02 Jul 2024 00:57:49 GMT  
-		Size: 1.3 KB (1287 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b25ec1f39df1d91b09b4fd2766030fdef0f29911749b781eff8de43d032a333`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
-		Size: 19.6 MB (19647506 bytes)  
+	-	`sha256:6c8caa9ec49ebfe2fb1a8cc25cd0afd11687bc5e82e49e3fcf5c0513097b6e17`  
+		Last Modified: Wed, 10 Jul 2024 17:02:30 GMT  
+		Size: 19.7 MB (19658506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:cli`
@@ -44559,58 +44559,58 @@ $ docker pull docker@sha256:ea0c6ca48f3d8224a78d6143e04c0922d5817faf7d82ffacee19
 ## `docker:windowsservercore`
 
 ```console
-$ docker pull docker@sha256:e7327bda8f419f94d9e7b8f96e60009d196190bf34e2eb1e0ce46617cb5ce9ae
+$ docker pull docker@sha256:08066ae23d24f3d2aa39e59269a87267d32b348aac68773a70575db09cf68221
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 2
-	-	windows version 10.0.20348.2529; amd64
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.20348.2582; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:windowsservercore` - windows version 10.0.20348.2529; amd64
+### `docker:windowsservercore` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:386223997bcd45bc3900c73f723f972d9acd82d397dd32439c9d9b8779b01bd0
+$ docker pull docker@sha256:f5ecdc6510964fa3a4ff6b21c188367012e0ed1689be95670e07dbf3435c750e
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2176463119 bytes)**  
+-	Total Size: **2.2 GB (2197911420 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33eae8894e487ca61eb33dccf81effb91f53113f0d82c7030c2a7444c6231659`
+-	Image ID: `sha256:9ac96538face1733ab273d5400b1a58dce159f509531cc3a7d6879a7af73affc`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Tue, 02 Jul 2024 00:56:56 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:01:42 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 02 Jul 2024 00:57:14 GMT
+# Wed, 10 Jul 2024 17:01:50 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 02 Jul 2024 00:57:15 GMT
+# Wed, 10 Jul 2024 17:01:51 GMT
 ENV DOCKER_VERSION=27.0.3
-# Tue, 02 Jul 2024 00:57:15 GMT
+# Wed, 10 Jul 2024 17:01:52 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.0.3.zip
-# Tue, 02 Jul 2024 00:57:25 GMT
+# Wed, 10 Jul 2024 17:02:01 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:57:26 GMT
+# Wed, 10 Jul 2024 17:02:02 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Tue, 02 Jul 2024 00:57:27 GMT
+# Wed, 10 Jul 2024 17:02:03 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Tue, 02 Jul 2024 00:57:27 GMT
+# Wed, 10 Jul 2024 17:02:04 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Tue, 02 Jul 2024 00:57:36 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:57:36 GMT
+# Wed, 10 Jul 2024 17:02:13 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Tue, 02 Jul 2024 00:57:37 GMT
+# Wed, 10 Jul 2024 17:02:14 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Tue, 02 Jul 2024 00:57:37 GMT
+# Wed, 10 Jul 2024 17:02:15 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Tue, 02 Jul 2024 00:57:45 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -44619,107 +44619,107 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb72fa6f17dfe9cd6454fb6dccdf6ca8fd19c212ede13b12c0ae062eff682f00`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
+	-	`sha256:79a30fcdf9311de4c7cab2f1871f5b9cb625ecc7fcac1fda704adb33b6449c22`  
+		Last Modified: Wed, 10 Jul 2024 17:02:32 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a273a3e16cdcbc368ec91a5e2f3312dfa27d3c5bbbd6bdbf4b48418c6254c81`  
+		Last Modified: Wed, 10 Jul 2024 17:02:33 GMT  
+		Size: 354.6 KB (354552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b0f2b7321d5d56e8f6f37a3c3b2c1cb0c9d4de0e5ac1d834f538b3efd9837f72`  
+		Last Modified: Wed, 10 Jul 2024 17:02:32 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:591b238929736a7300bb23fc793f3422ca4db1c36d13aec6bd23679968f5f7a4`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
-		Size: 345.9 KB (345918 bytes)  
+	-	`sha256:b5fff2931a36670575c423c26ca7c52c646e0644d2374cc790faa289ceb1ef6b`  
+		Last Modified: Wed, 10 Jul 2024 17:02:31 GMT  
+		Size: 1.3 KB (1278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16014478e439a58518a38275671775c8a4954d9760b3a9bbebcdd57b8e2bdde0`  
-		Last Modified: Tue, 02 Jul 2024 00:57:53 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:1f6eeb4162b6af921ae11ed56bf841bc6cc52e9d638fabb3d46ba4ec48d04880`  
+		Last Modified: Wed, 10 Jul 2024 17:02:33 GMT  
+		Size: 19.3 MB (19264049 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c3dc8c45fe3b5babaaaecec22050ef89d5373c83c39a7ba825a6c1c45f65b75`  
-		Last Modified: Tue, 02 Jul 2024 00:57:53 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:52be9ce30e243fe26aaf84fa24d0baf6e1f70d0971af3bd2ec74dce3d17f43c3`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53ebcdce69c445046638fd14aebf746d380ac04ce47f12a75d2fe4497d68b2d8`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
-		Size: 19.3 MB (19255478 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d58621a7b6be7445776140df24b5f8ada14acd0c9a3829d5ed64a68e864b03d`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
+	-	`sha256:4b6aa1554654a3e500036fff639b1fd12f710e6370164a77099dbfe17eacd16f`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85a615bbba8193c315e67683a98737824112f08d79977d516cd10865815a41ec`  
-		Last Modified: Tue, 02 Jul 2024 00:57:51 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:505ab9ca775847275429f9250d55749e77558b9dc896f71fa3be94a269404543`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c33d7c351bb144e09dec014c82f8fe44e6ac8230a962c1981f24bd89f990dbd1`  
-		Last Modified: Tue, 02 Jul 2024 00:57:51 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:f8413fdb9df0bec1c10dfeed6e6f92c339252e8d82646fee8026be8ff60731b2`  
+		Last Modified: Wed, 10 Jul 2024 17:02:30 GMT  
+		Size: 19.0 MB (19022429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b282a2ce5d6e772e4d9c63b5e6e779005176aa6526c5db9eda06c98461676007`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
-		Size: 19.0 MB (19012372 bytes)  
+	-	`sha256:28a247c24d9934e05dd177383de206220d5c8a44ec4bd060d1b37cafacead440`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:732dfbb736368c7fe17a9c9de6828f6df1c38b274b3b7bed07da9bee6e949989`  
-		Last Modified: Tue, 02 Jul 2024 00:57:49 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:83afe3ac7813d122258e195989633f3c9aede43ad31eed9a176730526b868322`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9be92b0ac83eff3339d03e5ad0058911360ae9d21d17d0b233211c01715df53a`  
-		Last Modified: Tue, 02 Jul 2024 00:57:50 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:e33fc95857bf974dba31f9c665e427d77069c553324b60750f3fff0029a19c57`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbeb8fb03ab79ed8c37fb237ee93477a3ff05e8175bf768431d4ddb5058a2086`  
-		Last Modified: Tue, 02 Jul 2024 00:57:49 GMT  
-		Size: 1.3 KB (1287 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b25ec1f39df1d91b09b4fd2766030fdef0f29911749b781eff8de43d032a333`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
-		Size: 19.6 MB (19647506 bytes)  
+	-	`sha256:6c8caa9ec49ebfe2fb1a8cc25cd0afd11687bc5e82e49e3fcf5c0513097b6e17`  
+		Last Modified: Wed, 10 Jul 2024 17:02:30 GMT  
+		Size: 19.7 MB (19658506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `docker:windowsservercore` - windows version 10.0.17763.5936; amd64
+### `docker:windowsservercore` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:de583fca5903824418764496f4b3d23a32743447c812574b7c2187b6e597943d
+$ docker pull docker@sha256:81fee02516524b785b21d867afffdf5f38fa26b5781e5d801b0232f64dcb9438
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2279270318 bytes)**  
+-	Total Size: **2.3 GB (2296973890 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e8d17fe0e905412571b8c991d350d8ec207e6fbcc357137d647eeb975bcb810`
+-	Image ID: `sha256:d03879f2b3f2adfd712e0f090904d25ad51ebe916abc9b64b8809507c13d22f0`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Tue, 02 Jul 2024 00:56:56 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:12:19 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 02 Jul 2024 00:57:58 GMT
+# Wed, 10 Jul 2024 17:13:22 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 02 Jul 2024 00:57:58 GMT
+# Wed, 10 Jul 2024 17:13:23 GMT
 ENV DOCKER_VERSION=27.0.3
-# Tue, 02 Jul 2024 00:57:59 GMT
+# Wed, 10 Jul 2024 17:13:24 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.0.3.zip
-# Tue, 02 Jul 2024 00:58:25 GMT
+# Wed, 10 Jul 2024 17:13:49 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:58:26 GMT
+# Wed, 10 Jul 2024 17:13:50 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Tue, 02 Jul 2024 00:58:27 GMT
+# Wed, 10 Jul 2024 17:13:50 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Tue, 02 Jul 2024 00:58:27 GMT
+# Wed, 10 Jul 2024 17:13:51 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Tue, 02 Jul 2024 00:58:53 GMT
+# Wed, 10 Jul 2024 17:14:14 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:58:54 GMT
+# Wed, 10 Jul 2024 17:14:15 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Tue, 02 Jul 2024 00:58:54 GMT
+# Wed, 10 Jul 2024 17:14:15 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Tue, 02 Jul 2024 00:58:55 GMT
+# Wed, 10 Jul 2024 17:14:16 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Tue, 02 Jul 2024 00:59:21 GMT
+# Wed, 10 Jul 2024 17:14:39 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -44728,117 +44728,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3648e6774bf46a9570bbba378b813fe331d77e66794c67902533f033b386728e`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 1.3 KB (1299 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04e3fcc6425991dc3ce2445421b81212fb560bf82676f44aff7da17c49d47334`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 520.2 KB (520190 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8f3c0de4a441d13b67c7760d3d5964ae2a802a783ea1c33abe17ae803f105ae`  
-		Last Modified: Tue, 02 Jul 2024 00:59:29 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dec26b725989766448acd89453f905f1de1518029bf71abdf4803f36cd84643d`  
-		Last Modified: Tue, 02 Jul 2024 00:59:28 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e7e003b86bfd7f0b7560ef36ecbfc36ff7e261ec42b881dd2c77b342a47d95f`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 19.3 MB (19306268 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8d273972d44fcdaf4a62d5ba6f75b7dfb129b6a5634e795d5e53dd4af1e8d50`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1299 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47a23fbd9e8a5b8f3c5aaca6c9f4fe9898ad5c65969c8fd927159155c77b48bf`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a33926f7fa4801cf9081a1007897725e622157b1eb31f11d623afceeade55a5`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a822a40a60c40e379ab50a488875bc36d4586634087977a5816e69a5a422a50b`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 19.1 MB (19058739 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb1fb193ed6f352bda7f667cdff053767018b6df0cd23bc0029741f6b64e41db`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
+	-	`sha256:9daf6a0d4634983cbba9f1298aa7f0c36963d33f76db8b4be34a19c33df482d8`  
+		Last Modified: Wed, 10 Jul 2024 17:14:46 GMT  
 		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf2d5334344610097bb8a4357b1d726019275b762d0f99b3062984d32c01ef48`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
+	-	`sha256:904ec5e759c075126667b3921f67d7106e5d2aa84ac442d2a00c810e4a50b8e0`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 509.3 KB (509332 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3837bd999192e4296fa1231424254e5b6ded2c406bb7c723b95e997da663ccb`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:529d0daab006e2e9c881c4ddde55fc5ef54685398b0111ac6f964f5c86499abb`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5889a3bae7b69493b6d13d40dabe4f02e1522f59dbb225ca3a70b9cf256997c5`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 19.3 MB (19294011 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dd9eafc6ff06db1d1f18c0fcfc8015552e7d908ab84b174d6aec165af44eb13a`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1475a6c6bc70b770326361808bfc373c55fe283aa59fed6344fd458549085a58`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:492e2ce963f4a7a34b7ea74ddc5053e235983106a28df668201ba496787cfafc`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
+		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68fe81dc3136381a8ec2c380d5e1c828c7fcba447c55c88de44ebd93b07a1cf5`  
-		Last Modified: Tue, 02 Jul 2024 00:59:28 GMT  
-		Size: 19.7 MB (19692275 bytes)  
+	-	`sha256:7cc0322b1360306f1becf3aea6fb636b0a5241fb7203dcb4e3d24fe9b926b3b0`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a0ec0bb9ba5e7def18e1740bd1de692816c5d5f5289e67750502f6349dc98b35`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 19.0 MB (19048007 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ebadb2f0453f24501d9920a8c1dcfce027ce2df593b897fd1771e70846d2344a`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f36683a6dda5ec67fddde028cdf187ad7f85acf1c9391650c266253f2e8f405c`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1297 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:128a6acb472b5e30428150344923385c9ad6187bc8f45673e059cdb964071724`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3d09237d45b4901b444e3b25bdf2e663e5ec499a7b268c08d473e638eac67325`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 19.7 MB (19681467 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:7e5b86108008d2277460f0b97a6c50c2ec7cf3e3c4b3915186f031346fb391da
+$ docker pull docker@sha256:4761c9bf9600f9d112d5bee248ae50fa8b8ed285669680ebebb5f3a8b59fb4d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.17763.5936; amd64
+	-	windows version 10.0.17763.6054; amd64
 
-### `docker:windowsservercore-1809` - windows version 10.0.17763.5936; amd64
+### `docker:windowsservercore-1809` - windows version 10.0.17763.6054; amd64
 
 ```console
-$ docker pull docker@sha256:de583fca5903824418764496f4b3d23a32743447c812574b7c2187b6e597943d
+$ docker pull docker@sha256:81fee02516524b785b21d867afffdf5f38fa26b5781e5d801b0232f64dcb9438
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2279270318 bytes)**  
+-	Total Size: **2.3 GB (2296973890 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e8d17fe0e905412571b8c991d350d8ec207e6fbcc357137d647eeb975bcb810`
+-	Image ID: `sha256:d03879f2b3f2adfd712e0f090904d25ad51ebe916abc9b64b8809507c13d22f0`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:58:24 GMT
 RUN Apply image 10.0.17763.4499
-# Fri, 07 Jun 2024 11:19:50 GMT
-RUN Install update 10.0.17763.5936
-# Tue, 02 Jul 2024 00:56:56 GMT
+# Wed, 03 Jul 2024 00:34:32 GMT
+RUN Install update 10.0.17763.6054
+# Wed, 10 Jul 2024 17:12:19 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 02 Jul 2024 00:57:58 GMT
+# Wed, 10 Jul 2024 17:13:22 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 02 Jul 2024 00:57:58 GMT
+# Wed, 10 Jul 2024 17:13:23 GMT
 ENV DOCKER_VERSION=27.0.3
-# Tue, 02 Jul 2024 00:57:59 GMT
+# Wed, 10 Jul 2024 17:13:24 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.0.3.zip
-# Tue, 02 Jul 2024 00:58:25 GMT
+# Wed, 10 Jul 2024 17:13:49 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:58:26 GMT
+# Wed, 10 Jul 2024 17:13:50 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Tue, 02 Jul 2024 00:58:27 GMT
+# Wed, 10 Jul 2024 17:13:50 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Tue, 02 Jul 2024 00:58:27 GMT
+# Wed, 10 Jul 2024 17:13:51 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Tue, 02 Jul 2024 00:58:53 GMT
+# Wed, 10 Jul 2024 17:14:14 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:58:54 GMT
+# Wed, 10 Jul 2024 17:14:15 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Tue, 02 Jul 2024 00:58:54 GMT
+# Wed, 10 Jul 2024 17:14:15 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Tue, 02 Jul 2024 00:58:55 GMT
+# Wed, 10 Jul 2024 17:14:16 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Tue, 02 Jul 2024 00:59:21 GMT
+# Wed, 10 Jul 2024 17:14:39 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -44847,117 +44847,117 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 18:25:35 GMT  
 		Size: 1.7 GB (1650620357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a5fd77f8cb6921d3e283f98213bf8c163d3502a75b4a8e4a809a15654f7d1a`  
-		Last Modified: Tue, 11 Jun 2024 17:22:31 GMT  
-		Size: 570.1 MB (570060810 bytes)  
+	-	`sha256:b5f98e7fe87492b83d7775a348ae0c94412b638ab5bba1a80b03c3a547708acd`  
+		Last Modified: Tue, 09 Jul 2024 17:23:28 GMT  
+		Size: 587.8 MB (587809033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3648e6774bf46a9570bbba378b813fe331d77e66794c67902533f033b386728e`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 1.3 KB (1299 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04e3fcc6425991dc3ce2445421b81212fb560bf82676f44aff7da17c49d47334`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 520.2 KB (520190 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8f3c0de4a441d13b67c7760d3d5964ae2a802a783ea1c33abe17ae803f105ae`  
-		Last Modified: Tue, 02 Jul 2024 00:59:29 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dec26b725989766448acd89453f905f1de1518029bf71abdf4803f36cd84643d`  
-		Last Modified: Tue, 02 Jul 2024 00:59:28 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e7e003b86bfd7f0b7560ef36ecbfc36ff7e261ec42b881dd2c77b342a47d95f`  
-		Last Modified: Tue, 02 Jul 2024 00:59:30 GMT  
-		Size: 19.3 MB (19306268 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8d273972d44fcdaf4a62d5ba6f75b7dfb129b6a5634e795d5e53dd4af1e8d50`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1299 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47a23fbd9e8a5b8f3c5aaca6c9f4fe9898ad5c65969c8fd927159155c77b48bf`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a33926f7fa4801cf9081a1007897725e622157b1eb31f11d623afceeade55a5`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a822a40a60c40e379ab50a488875bc36d4586634087977a5816e69a5a422a50b`  
-		Last Modified: Tue, 02 Jul 2024 00:59:27 GMT  
-		Size: 19.1 MB (19058739 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb1fb193ed6f352bda7f667cdff053767018b6df0cd23bc0029741f6b64e41db`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
+	-	`sha256:9daf6a0d4634983cbba9f1298aa7f0c36963d33f76db8b4be34a19c33df482d8`  
+		Last Modified: Wed, 10 Jul 2024 17:14:46 GMT  
 		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf2d5334344610097bb8a4357b1d726019275b762d0f99b3062984d32c01ef48`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
+	-	`sha256:904ec5e759c075126667b3921f67d7106e5d2aa84ac442d2a00c810e4a50b8e0`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 509.3 KB (509332 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e3837bd999192e4296fa1231424254e5b6ded2c406bb7c723b95e997da663ccb`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:529d0daab006e2e9c881c4ddde55fc5ef54685398b0111ac6f964f5c86499abb`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5889a3bae7b69493b6d13d40dabe4f02e1522f59dbb225ca3a70b9cf256997c5`  
+		Last Modified: Wed, 10 Jul 2024 17:14:45 GMT  
+		Size: 19.3 MB (19294011 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dd9eafc6ff06db1d1f18c0fcfc8015552e7d908ab84b174d6aec165af44eb13a`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1475a6c6bc70b770326361808bfc373c55fe283aa59fed6344fd458549085a58`  
-		Last Modified: Tue, 02 Jul 2024 00:59:25 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:492e2ce963f4a7a34b7ea74ddc5053e235983106a28df668201ba496787cfafc`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
+		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68fe81dc3136381a8ec2c380d5e1c828c7fcba447c55c88de44ebd93b07a1cf5`  
-		Last Modified: Tue, 02 Jul 2024 00:59:28 GMT  
-		Size: 19.7 MB (19692275 bytes)  
+	-	`sha256:7cc0322b1360306f1becf3aea6fb636b0a5241fb7203dcb4e3d24fe9b926b3b0`  
+		Last Modified: Wed, 10 Jul 2024 17:14:43 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a0ec0bb9ba5e7def18e1740bd1de692816c5d5f5289e67750502f6349dc98b35`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 19.0 MB (19048007 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ebadb2f0453f24501d9920a8c1dcfce027ce2df593b897fd1771e70846d2344a`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f36683a6dda5ec67fddde028cdf187ad7f85acf1c9391650c266253f2e8f405c`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1297 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:128a6acb472b5e30428150344923385c9ad6187bc8f45673e059cdb964071724`  
+		Last Modified: Wed, 10 Jul 2024 17:14:42 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3d09237d45b4901b444e3b25bdf2e663e5ec499a7b268c08d473e638eac67325`  
+		Last Modified: Wed, 10 Jul 2024 17:14:44 GMT  
+		Size: 19.7 MB (19681467 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:windowsservercore-ltsc2022`
 
 ```console
-$ docker pull docker@sha256:db0bfd3a516588b0264a2e917d8ffc5747a8fd92f7071c31936950dc134bffdd
+$ docker pull docker@sha256:52b2dfe13e34f89bfd254e19394a78a8ee56358374b575b38526f1f658fbba33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.2529; amd64
+	-	windows version 10.0.20348.2582; amd64
 
-### `docker:windowsservercore-ltsc2022` - windows version 10.0.20348.2529; amd64
+### `docker:windowsservercore-ltsc2022` - windows version 10.0.20348.2582; amd64
 
 ```console
-$ docker pull docker@sha256:386223997bcd45bc3900c73f723f972d9acd82d397dd32439c9d9b8779b01bd0
+$ docker pull docker@sha256:f5ecdc6510964fa3a4ff6b21c188367012e0ed1689be95670e07dbf3435c750e
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2176463119 bytes)**  
+-	Total Size: **2.2 GB (2197911420 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33eae8894e487ca61eb33dccf81effb91f53113f0d82c7030c2a7444c6231659`
+-	Image ID: `sha256:9ac96538face1733ab273d5400b1a58dce159f509531cc3a7d6879a7af73affc`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 08 Jun 2023 12:55:20 GMT
 RUN Apply image 10.0.20348.1787
-# Wed, 19 Jun 2024 19:58:05 GMT
-RUN Install update 10.0.20348.2529
-# Tue, 02 Jul 2024 00:56:56 GMT
+# Wed, 03 Jul 2024 10:07:02 GMT
+RUN Install update 10.0.20348.2582
+# Wed, 10 Jul 2024 17:01:42 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 02 Jul 2024 00:57:14 GMT
+# Wed, 10 Jul 2024 17:01:50 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 02 Jul 2024 00:57:15 GMT
+# Wed, 10 Jul 2024 17:01:51 GMT
 ENV DOCKER_VERSION=27.0.3
-# Tue, 02 Jul 2024 00:57:15 GMT
+# Wed, 10 Jul 2024 17:01:52 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.0.3.zip
-# Tue, 02 Jul 2024 00:57:25 GMT
+# Wed, 10 Jul 2024 17:02:01 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:57:26 GMT
+# Wed, 10 Jul 2024 17:02:02 GMT
 ENV DOCKER_BUILDX_VERSION=0.15.1
-# Tue, 02 Jul 2024 00:57:27 GMT
+# Wed, 10 Jul 2024 17:02:03 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.15.1/buildx-v0.15.1.windows-amd64.exe
-# Tue, 02 Jul 2024 00:57:27 GMT
+# Wed, 10 Jul 2024 17:02:04 GMT
 ENV DOCKER_BUILDX_SHA256=d28cff3df9fdbb37aa7434edb09d8befe5e90e5ef5887807569b694f25bebd33
-# Tue, 02 Jul 2024 00:57:36 GMT
+# Wed, 10 Jul 2024 17:02:12 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 02 Jul 2024 00:57:36 GMT
+# Wed, 10 Jul 2024 17:02:13 GMT
 ENV DOCKER_COMPOSE_VERSION=2.28.1
-# Tue, 02 Jul 2024 00:57:37 GMT
+# Wed, 10 Jul 2024 17:02:14 GMT
 ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-windows-x86_64.exe
-# Tue, 02 Jul 2024 00:57:37 GMT
+# Wed, 10 Jul 2024 17:02:15 GMT
 ENV DOCKER_COMPOSE_SHA256=7dbd8848d9b8dce489c4d2ce1bb4f4b7a3dccb07a08596ae98b85091e1645bcc
-# Tue, 02 Jul 2024 00:57:45 GMT
+# Wed, 10 Jul 2024 17:02:23 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -44966,59 +44966,59 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 13 Jun 2023 17:55:32 GMT  
 		Size: 1.4 GB (1388598786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb373ec9afdfc5f09b9380d981e0c61f9c7b48537b887135c7c66810086e705e`  
-		Last Modified: Fri, 21 Jun 2024 00:27:54 GMT  
-		Size: 729.6 MB (729591500 bytes)  
+	-	`sha256:5f0206d135152eb909f50159d6ca348a5aead199afacbafc000b770c1b0720f6`  
+		Last Modified: Tue, 09 Jul 2024 18:30:31 GMT  
+		Size: 751.0 MB (751001543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb72fa6f17dfe9cd6454fb6dccdf6ca8fd19c212ede13b12c0ae062eff682f00`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
+	-	`sha256:79a30fcdf9311de4c7cab2f1871f5b9cb625ecc7fcac1fda704adb33b6449c22`  
+		Last Modified: Wed, 10 Jul 2024 17:02:32 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a273a3e16cdcbc368ec91a5e2f3312dfa27d3c5bbbd6bdbf4b48418c6254c81`  
+		Last Modified: Wed, 10 Jul 2024 17:02:33 GMT  
+		Size: 354.6 KB (354552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b0f2b7321d5d56e8f6f37a3c3b2c1cb0c9d4de0e5ac1d834f538b3efd9837f72`  
+		Last Modified: Wed, 10 Jul 2024 17:02:32 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:591b238929736a7300bb23fc793f3422ca4db1c36d13aec6bd23679968f5f7a4`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
-		Size: 345.9 KB (345918 bytes)  
+	-	`sha256:b5fff2931a36670575c423c26ca7c52c646e0644d2374cc790faa289ceb1ef6b`  
+		Last Modified: Wed, 10 Jul 2024 17:02:31 GMT  
+		Size: 1.3 KB (1278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16014478e439a58518a38275671775c8a4954d9760b3a9bbebcdd57b8e2bdde0`  
-		Last Modified: Tue, 02 Jul 2024 00:57:53 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:1f6eeb4162b6af921ae11ed56bf841bc6cc52e9d638fabb3d46ba4ec48d04880`  
+		Last Modified: Wed, 10 Jul 2024 17:02:33 GMT  
+		Size: 19.3 MB (19264049 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c3dc8c45fe3b5babaaaecec22050ef89d5373c83c39a7ba825a6c1c45f65b75`  
-		Last Modified: Tue, 02 Jul 2024 00:57:53 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:52be9ce30e243fe26aaf84fa24d0baf6e1f70d0971af3bd2ec74dce3d17f43c3`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53ebcdce69c445046638fd14aebf746d380ac04ce47f12a75d2fe4497d68b2d8`  
-		Last Modified: Tue, 02 Jul 2024 00:57:55 GMT  
-		Size: 19.3 MB (19255478 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d58621a7b6be7445776140df24b5f8ada14acd0c9a3829d5ed64a68e864b03d`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
+	-	`sha256:4b6aa1554654a3e500036fff639b1fd12f710e6370164a77099dbfe17eacd16f`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85a615bbba8193c315e67683a98737824112f08d79977d516cd10865815a41ec`  
-		Last Modified: Tue, 02 Jul 2024 00:57:51 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:505ab9ca775847275429f9250d55749e77558b9dc896f71fa3be94a269404543`  
+		Last Modified: Wed, 10 Jul 2024 17:02:29 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c33d7c351bb144e09dec014c82f8fe44e6ac8230a962c1981f24bd89f990dbd1`  
-		Last Modified: Tue, 02 Jul 2024 00:57:51 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:f8413fdb9df0bec1c10dfeed6e6f92c339252e8d82646fee8026be8ff60731b2`  
+		Last Modified: Wed, 10 Jul 2024 17:02:30 GMT  
+		Size: 19.0 MB (19022429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b282a2ce5d6e772e4d9c63b5e6e779005176aa6526c5db9eda06c98461676007`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
-		Size: 19.0 MB (19012372 bytes)  
+	-	`sha256:28a247c24d9934e05dd177383de206220d5c8a44ec4bd060d1b37cafacead440`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:732dfbb736368c7fe17a9c9de6828f6df1c38b274b3b7bed07da9bee6e949989`  
-		Last Modified: Tue, 02 Jul 2024 00:57:49 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:83afe3ac7813d122258e195989633f3c9aede43ad31eed9a176730526b868322`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9be92b0ac83eff3339d03e5ad0058911360ae9d21d17d0b233211c01715df53a`  
-		Last Modified: Tue, 02 Jul 2024 00:57:50 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:e33fc95857bf974dba31f9c665e427d77069c553324b60750f3fff0029a19c57`  
+		Last Modified: Wed, 10 Jul 2024 17:02:27 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbeb8fb03ab79ed8c37fb237ee93477a3ff05e8175bf768431d4ddb5058a2086`  
-		Last Modified: Tue, 02 Jul 2024 00:57:49 GMT  
-		Size: 1.3 KB (1287 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b25ec1f39df1d91b09b4fd2766030fdef0f29911749b781eff8de43d032a333`  
-		Last Modified: Tue, 02 Jul 2024 00:57:52 GMT  
-		Size: 19.6 MB (19647506 bytes)  
+	-	`sha256:6c8caa9ec49ebfe2fb1a8cc25cd0afd11687bc5e82e49e3fcf5c0513097b6e17`  
+		Last Modified: Wed, 10 Jul 2024 17:02:30 GMT  
+		Size: 19.7 MB (19658506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
