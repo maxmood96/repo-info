@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:069e70a9a266b0020d592d3e1b079f54a29fbe5f125cd933247b2bb8589fb48e`
+- Image ID: `sha256:4471efaf7f8fd165ac6dc383bfcb3049ac583fba4994e61b799adb1d22c4de75`
 - Created: `2024-06-18T22:07:17Z`
-- Virtual Size: ~ 419.61 Mb  
+- Virtual Size: ~ 423.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -456,16 +456,16 @@ GPL-3.0-or-later
 ### `apk` package: `ghostscript`
 
 ```console
-ghostscript-10.02.1-r0 description:
+ghostscript-10.03.1-r0 description:
 Interpreter for the PostScript language and for PDF
 
-ghostscript-10.02.1-r0 webpage:
+ghostscript-10.03.1-r0 webpage:
 https://ghostscript.com/
 
-ghostscript-10.02.1-r0 installed size:
-63 MiB
+ghostscript-10.03.1-r0 installed size:
+61 MiB
 
-ghostscript-10.02.1-r0 license:
+ghostscript-10.03.1-r0 license:
 AGPL-3.0-or-later
 
 ```
@@ -745,16 +745,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.5-r0 description:
+libcrypto3-3.1.6-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.5-r0 webpage:
+libcrypto3-3.1.6-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.5-r0 installed size:
+libcrypto3-3.1.6-r0 installed size:
 4512 KiB
 
-libcrypto3-3.1.5-r0 license:
+libcrypto3-3.1.6-r0 license:
 Apache-2.0
 
 ```
@@ -1102,16 +1102,16 @@ BSD-3-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.5-r0 description:
+libssl3-3.1.6-r0 description:
 SSL shared libraries
 
-libssl3-3.1.5-r0 webpage:
+libssl3-3.1.6-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.5-r0 installed size:
+libssl3-3.1.6-r0 installed size:
 548 KiB
 
-libssl3-3.1.5-r0 license:
+libssl3-3.1.6-r0 license:
 Apache-2.0
 
 ```
@@ -1524,19 +1524,36 @@ MIT
 
 ```
 
+### `apk` package: `openjpeg`
+
+```console
+openjpeg-2.5.0-r3 description:
+Open-source implementation of JPEG2000 image codec
+
+openjpeg-2.5.0-r3 webpage:
+https://www.openjpeg.org/
+
+openjpeg-2.5.0-r3 installed size:
+316 KiB
+
+openjpeg-2.5.0-r3 license:
+BSD-2-Clause-NetBSD
+
+```
+
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-9.6_p1-r0 description:
+openssh-client-common-9.6_p1-r1 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-9.6_p1-r0 webpage:
+openssh-client-common-9.6_p1-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-9.6_p1-r0 installed size:
+openssh-client-common-9.6_p1-r1 installed size:
 2872 KiB
 
-openssh-client-common-9.6_p1-r0 license:
+openssh-client-common-9.6_p1-r1 license:
 SSH-OpenSSH
 
 ```
@@ -1544,16 +1561,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-9.6_p1-r0 description:
+openssh-client-default-9.6_p1-r1 description:
 OpenBSD's SSH client
 
-openssh-client-default-9.6_p1-r0 webpage:
+openssh-client-default-9.6_p1-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-9.6_p1-r0 installed size:
+openssh-client-default-9.6_p1-r1 installed size:
 916 KiB
 
-openssh-client-default-9.6_p1-r0 license:
+openssh-client-default-9.6_p1-r1 license:
 SSH-OpenSSH
 
 ```
@@ -1561,16 +1578,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-9.6_p1-r0 description:
+openssh-keygen-9.6_p1-r1 description:
 ssh helper program for generating keys
 
-openssh-keygen-9.6_p1-r0 webpage:
+openssh-keygen-9.6_p1-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-9.6_p1-r0 installed size:
+openssh-keygen-9.6_p1-r1 installed size:
 556 KiB
 
-openssh-keygen-9.6_p1-r0 license:
+openssh-keygen-9.6_p1-r1 license:
 SSH-OpenSSH
 
 ```

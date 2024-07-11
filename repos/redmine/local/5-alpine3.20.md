@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4fdaf64c4909ccb3827b71727aa4737df6b20bd83502542cfe2a2779aa065ff0`
+- Image ID: `sha256:2578b961b6483114aae09b2607852022321ff0e3ced7480c73ebca5f3b627193`
 - Created: `2024-06-18T22:07:17Z`
-- Virtual Size: ~ 414.99 Mb  
+- Virtual Size: ~ 419.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -286,16 +286,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20240226-r0 description:
+ca-certificates-20240705-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20240226-r0 webpage:
+ca-certificates-20240705-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20240226-r0 installed size:
+ca-certificates-20240705-r0 installed size:
 712 KiB
 
-ca-certificates-20240226-r0 license:
+ca-certificates-20240705-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -456,16 +456,16 @@ GPL-3.0-or-later
 ### `apk` package: `ghostscript`
 
 ```console
-ghostscript-10.02.1-r0 description:
+ghostscript-10.03.1-r0 description:
 Interpreter for the PostScript language and for PDF
 
-ghostscript-10.02.1-r0 webpage:
+ghostscript-10.03.1-r0 webpage:
 https://ghostscript.com/
 
-ghostscript-10.02.1-r0 installed size:
-63 MiB
+ghostscript-10.03.1-r0 installed size:
+61 MiB
 
-ghostscript-10.02.1-r0 license:
+ghostscript-10.03.1-r0 license:
 AGPL-3.0-or-later
 
 ```
@@ -745,16 +745,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r0 description:
+libcrypto3-3.3.1-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r0 webpage:
+libcrypto3-3.3.1-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r0 installed size:
+libcrypto3-3.3.1-r1 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r0 license:
+libcrypto3-3.3.1-r1 license:
 Apache-2.0
 
 ```
@@ -762,16 +762,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.7.1-r0 description:
+libcurl-8.8.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.7.1-r0 webpage:
+libcurl-8.8.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.7.1-r0 installed size:
-604 KiB
+libcurl-8.8.0-r0 installed size:
+620 KiB
 
-libcurl-8.7.1-r0 license:
+libcurl-8.8.0-r0 license:
 curl
 
 ```
@@ -1119,16 +1119,16 @@ BSD-3-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r0 description:
+libssl3-3.3.1-r1 description:
 SSL shared libraries
 
-libssl3-3.3.1-r0 webpage:
+libssl3-3.3.1-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r0 installed size:
+libssl3-3.3.1-r1 installed size:
 796 KiB
 
-libssl3-3.3.1-r0 license:
+libssl3-3.3.1-r1 license:
 Apache-2.0
 
 ```
@@ -1408,16 +1408,16 @@ LGPL-2.1-or-later
 ### `apk` package: `mercurial`
 
 ```console
-mercurial-6.7.3-r0 description:
+mercurial-6.7.4-r0 description:
 Scalable distributed SCM tool
 
-mercurial-6.7.3-r0 webpage:
+mercurial-6.7.4-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-6.7.3-r0 installed size:
+mercurial-6.7.4-r0 installed size:
 10 MiB
 
-mercurial-6.7.3-r0 license:
+mercurial-6.7.4-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1425,16 +1425,16 @@ GPL-2.0-or-later
 ### `apk` package: `mercurial-pyc`
 
 ```console
-mercurial-pyc-6.7.3-r0 description:
+mercurial-pyc-6.7.4-r0 description:
 Precompiled Python bytecode for mercurial
 
-mercurial-pyc-6.7.3-r0 webpage:
+mercurial-pyc-6.7.4-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-pyc-6.7.3-r0 installed size:
+mercurial-pyc-6.7.4-r0 installed size:
 10 MiB
 
-mercurial-pyc-6.7.3-r0 license:
+mercurial-pyc-6.7.4-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1527,33 +1527,50 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.62.0-r0 description:
+nghttp2-libs-1.62.1-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.62.0-r0 webpage:
+nghttp2-libs-1.62.1-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.62.0-r0 installed size:
+nghttp2-libs-1.62.1-r0 installed size:
 152 KiB
 
-nghttp2-libs-1.62.0-r0 license:
+nghttp2-libs-1.62.1-r0 license:
 MIT
+
+```
+
+### `apk` package: `openjpeg`
+
+```console
+openjpeg-2.5.2-r0 description:
+Open-source implementation of JPEG2000 image codec
+
+openjpeg-2.5.2-r0 webpage:
+https://www.openjpeg.org/
+
+openjpeg-2.5.2-r0 installed size:
+316 KiB
+
+openjpeg-2.5.2-r0 license:
+BSD-2-Clause
 
 ```
 
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-9.7_p1-r3 description:
+openssh-client-common-9.7_p1-r4 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-9.7_p1-r3 webpage:
+openssh-client-common-9.7_p1-r4 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-9.7_p1-r3 installed size:
+openssh-client-common-9.7_p1-r4 installed size:
 2544 KiB
 
-openssh-client-common-9.7_p1-r3 license:
+openssh-client-common-9.7_p1-r4 license:
 SSH-OpenSSH
 
 ```
@@ -1561,16 +1578,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-9.7_p1-r3 description:
+openssh-client-default-9.7_p1-r4 description:
 OpenBSD's SSH client
 
-openssh-client-default-9.7_p1-r3 webpage:
+openssh-client-default-9.7_p1-r4 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-9.7_p1-r3 installed size:
+openssh-client-default-9.7_p1-r4 installed size:
 800 KiB
 
-openssh-client-default-9.7_p1-r3 license:
+openssh-client-default-9.7_p1-r4 license:
 SSH-OpenSSH
 
 ```
@@ -1578,16 +1595,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-9.7_p1-r3 description:
+openssh-keygen-9.7_p1-r4 description:
 ssh helper program for generating keys
 
-openssh-keygen-9.7_p1-r3 webpage:
+openssh-keygen-9.7_p1-r4 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-9.7_p1-r3 installed size:
+openssh-keygen-9.7_p1-r4 installed size:
 484 KiB
 
-openssh-keygen-9.7_p1-r3 license:
+openssh-keygen-9.7_p1-r4 license:
 SSH-OpenSSH
 
 ```
