@@ -8,7 +8,7 @@
 -	[`amazonlinux:2018.03`](#amazonlinux201803)
 -	[`amazonlinux:2018.03.0.20231218.0`](#amazonlinux2018030202312180)
 -	[`amazonlinux:2023`](#amazonlinux2023)
--	[`amazonlinux:2023.5.20240701.0`](#amazonlinux20235202407010)
+-	[`amazonlinux:2023.5.20240708.0`](#amazonlinux20235202407080)
 -	[`amazonlinux:latest`](#amazonlinuxlatest)
 
 ## `amazonlinux:1`
@@ -308,68 +308,9 @@ CMD ["/bin/bash"]
 		Size: 51.4 MB (51407040 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `amazonlinux:2023.5.20240701.0`
+## `amazonlinux:2023.5.20240708.0`
 
-```console
-$ docker pull amazonlinux@sha256:d96fde261b48b15e22c28c2eb54d087d39bcc19af7963d86539f18eea16b283c
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
-	-	linux; amd64
-	-	linux; arm64 variant v8
-
-### `amazonlinux:2023.5.20240701.0` - linux; amd64
-
-```console
-$ docker pull amazonlinux@sha256:3980b5cf711b0fd6e4f4e1e056412a4e8557484b8f5419d4bc3999271b66738e
-```
-
--	Docker Version: 23.0.11
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.3 MB (52319623 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:77fc35bc2709e6d7eb97c08069c0da335574e6b59d8690c42d0d19684dbeb898`
--	Default Command: `["\/bin\/bash"]`
-
-```dockerfile
-# Thu, 04 Jul 2024 00:19:47 GMT
-COPY dir:1c9e0f4db95e1ae683b8f16b1ecfc5d8693ad4e5e379a2386e2870f38383c7d8 in / 
-# Thu, 04 Jul 2024 00:19:47 GMT
-CMD ["/bin/bash"]
-```
-
--	Layers:
-	-	`sha256:860904071dc658e37de73aa1556e7badfb13bef4747965ea3bd1049e8ff87dcd`  
-		Last Modified: Thu, 04 Jul 2024 00:20:13 GMT  
-		Size: 52.3 MB (52319623 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `amazonlinux:2023.5.20240701.0` - linux; arm64 variant v8
-
-```console
-$ docker pull amazonlinux@sha256:5f365af5126ef2e31270f78b150f8ec38debe09ddf0a1f7690cb673513012d38
-```
-
--	Docker Version: 23.0.11
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.4 MB (51407040 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6515002abecb938770d5d51013004d2ad2cb73ebff13fdf4edfb7392286106d7`
--	Default Command: `["\/bin\/bash"]`
-
-```dockerfile
-# Thu, 04 Jul 2024 00:39:25 GMT
-COPY dir:a2f5453af1f2210c7b49fadc5acdaaa335139ac35c64847d2f5879056f91a03d in / 
-# Thu, 04 Jul 2024 00:39:27 GMT
-CMD ["/bin/bash"]
-```
-
--	Layers:
-	-	`sha256:f95af119e05065dbdff89fbd219657362e32f7ec50d632e28754e75b5a13806e`  
-		Last Modified: Thu, 04 Jul 2024 00:39:44 GMT  
-		Size: 51.4 MB (51407040 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+**does not exist** (yet?)
 
 ## `amazonlinux:latest`
 
