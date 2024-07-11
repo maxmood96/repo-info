@@ -2288,14 +2288,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.8/copyright`, `/usr/share/doc
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.8=3.8.10-0ubuntu1~20.04.9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.9.dsc' python3.8_3.8.10-0ubuntu1~20.04.9.dsc 3545 SHA512:5cf2e72d0bbdd3a528cb47cf852e46d3cdfb49ceeb1bfae89664334d5643063553d0d02e283cb5b0aa8b71c67123f1a0b1251f6fc5a8ef98a53e9ebd35491a03
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10.orig.tar.xz' python3.8_3.8.10.orig.tar.xz 18433456 SHA512:0be69705483ff9692e12048a96180e586f9d84c8d53066629f7fb2389585eb75c0f3506bb8182936e322508f58b71f4d8c6dfebbab9049b31b49da11d3b98e80
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.9.debian.tar.xz' python3.8_3.8.10-0ubuntu1~20.04.9.debian.tar.xz 226504 SHA512:100546180e21a9d0a82b4da12c26caec1bc39ad7e24018fa0425fa48d8291efa2e9f9ec5eb1abb4ea2079963d1b6afc62d7dd1fc3ace40e6118275d9d47477cf
-```
 
 ### `dpkg` source package: `readline=8.0-4`
 
