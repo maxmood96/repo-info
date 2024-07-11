@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5552a7a1bed92b5f15621ccf589b7253f1c5625eab8b41fee930cde72a026ff2`
+- Image ID: `sha256:b2ebfd3a923e9107c9534a33491178f522bf24555cccdd9d7f92e638423d4000`
 - Created: `2024-03-08T19:22:05Z`
 - Virtual Size: ~ 182.59 Mb  
   (total size of all layers on-disk)
@@ -11,7 +11,7 @@
 - Command: `["mongo-express"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=18.20.3`
+  - `NODE_VERSION=18.20.4`
   - `YARN_VERSION=1.22.19`
   - `ME_CONFIG_MONGODB_URL=mongodb://mongo:27017`
   - `ME_CONFIG_MONGODB_ENABLE_ADMIN=true`
