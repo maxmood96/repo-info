@@ -268,4 +268,9 @@ $ docker pull elasticsearch@sha256:affe2795136e38798cb1f274382e01ae1f010bd9f6fd7
 
 ## `elasticsearch:8.14.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull elasticsearch@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
