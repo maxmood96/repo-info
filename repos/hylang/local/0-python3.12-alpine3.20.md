@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:44e7407c3f4944081a957f4787e21851ff9894c00113caf5b424a9f237b089d6`
+- Image ID: `sha256:25aaa5f70d6f6c5a0fc763189ea4afc9378a4c86e08b676c8bcbd046f265d1b0`
 - Created: `2024-05-25T09:33:51Z`
 - Virtual Size: ~ 71.43 Mb  
   (total size of all layers on-disk)
@@ -14,8 +14,8 @@
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
   - `PYTHON_VERSION=3.12.4`
   - `PYTHON_PIP_VERSION=24.0`
-  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/ac00c61f60b2df101b7cdf90ed319b625ac93b42/public/get-pip.py`
-  - `PYTHON_GET_PIP_SHA256=0f8bb2652c0b0965f268312f49ec21e772d421d381af4324beea66b8acf2635c`
+  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/e03e1607ad60522cf34a92e834138eb89f57667c/public/get-pip.py`
+  - `PYTHON_GET_PIP_SHA256=ee09098395e42eb1f82ef4acb231a767a6ae85504a9cf9983223df0a7cbd35d7`
   - `HY_VERSION=0.29.0`
   - `HYRULE_VERSION=0.6.0`
 
@@ -126,16 +126,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20240226-r0 description:
+ca-certificates-20240705-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20240226-r0 webpage:
+ca-certificates-20240705-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20240226-r0 installed size:
+ca-certificates-20240705-r0 installed size:
 712 KiB
 
-ca-certificates-20240226-r0 license:
+ca-certificates-20240705-r0 license:
 MPL-2.0 AND MIT
 
 ```
