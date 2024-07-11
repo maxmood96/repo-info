@@ -306,4 +306,9 @@ $ docker pull logstash@sha256:a04acf66ab71f28b29aa97a399ba6e3d7c63c459ddf0f156e3
 
 ## `logstash:8.14.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull logstash@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
