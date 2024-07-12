@@ -1450,21 +1450,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `customFSFUL`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.25.3-5
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.3-5.dsc' p11-kit_0.25.3-5.dsc 2535 SHA256:9f8496bc8a19fd077af7080db3d1d9324dbcc1bc9b62beea81940976bfd1dff7
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.3.orig.tar.xz' p11-kit_0.25.3.orig.tar.xz 991528 SHA256:d8ddce1bb7e898986f9d250ccae7c09ce14d82f1009046d202a0eb1b428b2adc
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.3.orig.tar.xz.asc' p11-kit_0.25.3.orig.tar.xz.asc 228 SHA256:91fb1fd7690b953eb32bf9ca52ae1b2466457539ac849468f1d236673b354860
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.3-5.debian.tar.xz' p11-kit_0.25.3-5.debian.tar.xz 27024 SHA256:d312f5794b2e303b04801815490be624a1c280787dddd3708d2f2e0cfcf4caeb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.25.3-5/
 
-- https://sources.debian.net/src/p11-kit/0.25.3-5/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.25.3-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.25.3-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.5.3-7`
 
@@ -1814,20 +1806,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.40.1-9
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.1-9.dsc' util-linux_2.40.1-9.dsc 4895 SHA256:6415df79704168a92e6d8b2429b944463a366851919dab1509c726de11137ede
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.1.orig.tar.xz' util-linux_2.40.1.orig.tar.xz 8823784 SHA256:59e676aa53ccb44b6c39f0ffe01a8fa274891c91bef1474752fad92461def24f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.1-9.debian.tar.xz' util-linux_2.40.1-9.debian.tar.xz 106464 SHA256:833173afa820e86765db1b8662d56318561afd7b4286bc7fcb6002f22a73f3fd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.40.1-9/
 
-- https://sources.debian.net/src/util-linux/2.40.1-9/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.40.1-9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.40.1-9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.2-2`
 
