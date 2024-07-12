@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d489cf7c69589a3bedfde0adf613af40abc5c50bd65b85ede0de8a3b1ee53580`
-- Created: `2024-06-06T16:24:41Z`
-- Virtual Size: ~ 198.01 Mb  
+- Image ID: `sha256:008b14abfc6921435c404d82df72a3f9f8d974e5ec3d4ebc8f5b1c034ea5f66f`
+- Created: `2024-07-11T20:47:57Z`
+- Virtual Size: ~ 211.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["influxd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `INFLUXDB_VERSION=2.7.6`
+  - `INFLUXDB_VERSION=2.7.7`
   - `INFLUX_CLI_VERSION=2.7.3`
   - `INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs`
   - `INFLUXD_INIT_PORT=9999`
@@ -176,16 +176,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20240226-r0 description:
+ca-certificates-20240705-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20240226-r0 webpage:
+ca-certificates-20240705-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20240226-r0 installed size:
+ca-certificates-20240705-r0 installed size:
 712 KiB
 
-ca-certificates-20240226-r0 license:
+ca-certificates-20240705-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -210,16 +210,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.7.1-r0 description:
+curl-8.8.0-r0 description:
 URL retrival utility and library
 
-curl-8.7.1-r0 webpage:
+curl-8.8.0-r0 webpage:
 https://curl.se/
 
-curl-8.7.1-r0 installed size:
+curl-8.8.0-r0 installed size:
 244 KiB
 
-curl-8.7.1-r0 license:
+curl-8.8.0-r0 license:
 curl
 
 ```
@@ -516,16 +516,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.7.1-r0 description:
+libcurl-8.8.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.7.1-r0 webpage:
+libcurl-8.8.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.7.1-r0 installed size:
-604 KiB
+libcurl-8.8.0-r0 installed size:
+620 KiB
 
-libcurl-8.7.1-r0 license:
+libcurl-8.8.0-r0 license:
 curl
 
 ```
@@ -805,16 +805,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.62.0-r0 description:
+nghttp2-libs-1.62.1-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.62.0-r0 webpage:
+nghttp2-libs-1.62.1-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.62.0-r0 installed size:
+nghttp2-libs-1.62.1-r0 installed size:
 152 KiB
 
-nghttp2-libs-1.62.0-r0 license:
+nghttp2-libs-1.62.1-r0 license:
 MIT
 
 ```
