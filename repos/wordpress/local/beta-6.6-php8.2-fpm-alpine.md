@@ -1,10 +1,10 @@
-# `wordpress:beta-6.6-RC2-fpm-alpine`
+# `wordpress:beta-6.6-RC3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d928d3b6e13a06510475d2d5523ea5bc2d41e2bd616dc5a71d6927313f7dbddc`
-- Created: `2024-07-02T19:03:11Z`
-- Virtual Size: ~ 260.63 Mb  
+- Image ID: `sha256:762a4ae7a3855c01bf4a4971c0bd8285b475df0a1a727e702e95852af24df8b7`
+- Created: `2024-07-09T19:03:11Z`
+- Virtual Size: ~ 259.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -350,16 +350,16 @@ FTL OR GPL-2.0-or-later
 ### `apk` package: `ghostscript`
 
 ```console
-ghostscript-10.02.1-r0 description:
+ghostscript-10.03.1-r0 description:
 Interpreter for the PostScript language and for PDF
 
-ghostscript-10.02.1-r0 webpage:
+ghostscript-10.03.1-r0 webpage:
 https://ghostscript.com/
 
-ghostscript-10.02.1-r0 installed size:
-63 MiB
+ghostscript-10.03.1-r0 installed size:
+61 MiB
 
-ghostscript-10.02.1-r0 license:
+ghostscript-10.03.1-r0 license:
 AGPL-3.0-or-later
 
 ```
@@ -1244,6 +1244,23 @@ oniguruma-6.9.9-r0 installed size:
 552 KiB
 
 oniguruma-6.9.9-r0 license:
+BSD-2-Clause
+
+```
+
+### `apk` package: `openjpeg`
+
+```console
+openjpeg-2.5.2-r0 description:
+Open-source implementation of JPEG2000 image codec
+
+openjpeg-2.5.2-r0 webpage:
+https://www.openjpeg.org/
+
+openjpeg-2.5.2-r0 installed size:
+316 KiB
+
+openjpeg-2.5.2-r0 license:
 BSD-2-Clause
 
 ```
