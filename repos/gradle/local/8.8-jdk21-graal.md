@@ -2033,14 +2033,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.5.17+dfsg-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.17%2bdfsg-0ubuntu0.22.04.1.dsc' openldap_2.5.17+dfsg-0ubuntu0.22.04.1.dsc 3319 SHA512:8ff313c49db0c10da873d958fac966d6d9b4da35ad6438ff714345cd5f350aed2d521a1b77448483cef4bcf4f1b370e2f9133bbec5e4aa971b68ac4172f04bc2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.17%2bdfsg.orig.tar.gz' openldap_2.5.17+dfsg.orig.tar.gz 5635462 SHA512:c8a6f779446f24368acc021e884c7b47e53d94e1caf48f5b7087b137df2a875e3681e535d2c98022a3457db5d73fa923ae187b22030676cf98487235a9228ca4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.17%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.17+dfsg-0ubuntu0.22.04.1.debian.tar.xz 172128 SHA512:0cc9210ff73f9dadf9a3cdbaf8abdaa36650c3611e889bc9e6b9cb637f6f5b25e23edc55d6f6cc910b6f08eb0795114d73472090dbf4c233d10432199f07836c
-```
 
 ### `dpkg` source package: `openssh=1:8.9p1-3ubuntu0.10`
 
@@ -2383,14 +2378,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.3.dsc' python3.10_3.10.12-1~22.04.3.dsc 3715 SHA512:15a6ba4e2315bc61bf08c81b7eb70ac1a26a967c6929648bd641f8451eff994b4ead860e4e6c7d2b1fc944615100c58f670c04a1624e17ff3b05e5605fe5ffaf
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.3.debian.tar.xz' python3.10_3.10.12-1~22.04.3.debian.tar.xz 221980 SHA512:7a7d89449ba4f5e55fad05a856d40e790e868e07873cc6287b1a215aec7081c17d19b1d58b64e771cb42810c93f5210a1f426a0d5cc24687b5d135fdfb084c72
-```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
