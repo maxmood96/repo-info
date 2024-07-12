@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:36d84f5948d07f0d0b1cb5c9cbbfba92669c5f25278fbe25d448611185940cb3`
-- Created: `2024-06-26T21:58:20Z`
+- Image ID: `sha256:8d6f9eba56c966c6704446f2be8d2aee9be3f447f107923523cf35446501ff52`
+- Created: `2024-07-07T23:32:36Z`
 - Virtual Size: ~ 129.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,8 +14,8 @@
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
   - `PYTHON_VERSION=3.12.4`
   - `PYTHON_PIP_VERSION=24.0`
-  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/ac00c61f60b2df101b7cdf90ed319b625ac93b42/public/get-pip.py`
-  - `PYTHON_GET_PIP_SHA256=0f8bb2652c0b0965f268312f49ec21e772d421d381af4324beea66b8acf2635c`
+  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/e03e1607ad60522cf34a92e834138eb89f57667c/public/get-pip.py`
+  - `PYTHON_GET_PIP_SHA256=ee09098395e42eb1f82ef4acb231a767a6ae85504a9cf9983223df0a7cbd35d7`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1006,14 +1006,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/keyutils/1.6.3-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/keyutils/1.6.3-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `krb5=1.20.1-2+deb12u1`
+### `dpkg` source package: `krb5=1.20.1-2+deb12u2`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.20.1-2+deb12u1`
-- `libk5crypto3:amd64=1.20.1-2+deb12u1`
-- `libkrb5-3:amd64=1.20.1-2+deb12u1`
-- `libkrb5support0:amd64=1.20.1-2+deb12u1`
+- `libgssapi-krb5-2:amd64=1.20.1-2+deb12u2`
+- `libk5crypto3:amd64=1.20.1-2+deb12u2`
+- `libkrb5-3:amd64=1.20.1-2+deb12u2`
+- `libkrb5support0:amd64=1.20.1-2+deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1022,18 +1022,18 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.20.1-2+deb12u1
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-2%2bdeb12u1.dsc' krb5_1.20.1-2+deb12u1.dsc 3203 SHA256:ca6cb23a7f082fbd18050b1a5b2b861d6914475a60e6e38e5e735bc35961f25f
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-2%2bdeb12u1.debian.tar.xz' krb5_1.20.1-2+deb12u1.debian.tar.xz 100220 SHA256:26ac804619c7b481ea51ea0966776e502ded73df63428d2298f20e3cec3d084a
+$ apt-get source -qq --print-uris krb5=1.20.1-2+deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1-2%2bdeb12u2.dsc' krb5_1.20.1-2+deb12u2.dsc 3203 SHA256:0ce7a4e69a947c0d21cc5226fe17f85f03b5011e96171aaeba91d3629fcf4dc2
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1-2%2bdeb12u2.debian.tar.xz' krb5_1.20.1-2+deb12u2.debian.tar.xz 105728 SHA256:06caf9ae0b57afd373e4a805820c1ceff519a5029566013a5c307f5439ab8364
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/krb5/1.20.1-2+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.20.1-2+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.20.1-2+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/krb5/1.20.1-2+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.20.1-2+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.20.1-2+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.8.3-1`
 
