@@ -1,9 +1,9 @@
-# `odoo:17.0-20240624`
+# `odoo:17.0-20240711`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2a971c8e390d48f0f07140fed96db96d7963441919c74380f64f633ad020756c`
-- Created: `2024-06-24T09:13:48Z`
+- Image ID: `sha256:a673383c2274db23312c28c3595cfea7e332782e8d6614ebecd921246996c52d`
+- Created: `2024-07-11T09:17:21Z`
 - Virtual Size: ~ 1.78 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -5706,11 +5706,11 @@ $ apt-get source -qq --print-uris npth=1.6-3build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3build2.debian.tar.xz' npth_1.6-3build2.debian.tar.xz 10904 SHA512:426ab3ab9e27b3701d67cde0a4c4040aa9ccac22a0266321824487fe80a118ccd6860b6fa0fb5ca3c46dfa3c20053889fbb51a2e74618065b3aff059a0216c4c
 ```
 
-### `dpkg` source package: `odoo=17.0.20240624`
+### `dpkg` source package: `odoo=17.0.20240711`
 
 Binary Packages:
 
-- `odoo=17.0.20240624`
+- `odoo=17.0.20240711`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -5757,11 +5757,11 @@ $ apt-get source -qq --print-uris openjpeg2=2.4.0-6
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openjpeg2/openjpeg2_2.4.0-6.debian.tar.xz' openjpeg2_2.4.0-6.debian.tar.xz 21124 SHA512:cdd8a1d29388d02c37612183fef2ff679133630871323894f46e7f4a56480118e1e03573b2eea2179ce0f92d6aca6a15ee8e9f382e036d7ff0cb0f1744f2df3e
 ```
 
-### `dpkg` source package: `openldap=2.5.17+dfsg-0ubuntu0.22.04.1`
+### `dpkg` source package: `openldap=2.5.18+dfsg-0ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `libldap-2.5-0:amd64=2.5.17+dfsg-0ubuntu0.22.04.1`
+- `libldap-2.5-0:amd64=2.5.18+dfsg-0ubuntu0.22.04.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5770,10 +5770,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.5.17+dfsg-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.17%2bdfsg-0ubuntu0.22.04.1.dsc' openldap_2.5.17+dfsg-0ubuntu0.22.04.1.dsc 3319 SHA512:8ff313c49db0c10da873d958fac966d6d9b4da35ad6438ff714345cd5f350aed2d521a1b77448483cef4bcf4f1b370e2f9133bbec5e4aa971b68ac4172f04bc2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.17%2bdfsg.orig.tar.gz' openldap_2.5.17+dfsg.orig.tar.gz 5635462 SHA512:c8a6f779446f24368acc021e884c7b47e53d94e1caf48f5b7087b137df2a875e3681e535d2c98022a3457db5d73fa923ae187b22030676cf98487235a9228ca4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.17%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.17+dfsg-0ubuntu0.22.04.1.debian.tar.xz 172128 SHA512:0cc9210ff73f9dadf9a3cdbaf8abdaa36650c3611e889bc9e6b9cb637f6f5b25e23edc55d6f6cc910b6f08eb0795114d73472090dbf4c233d10432199f07836c
+$ apt-get source -qq --print-uris openldap=2.5.18+dfsg-0ubuntu0.22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg-0ubuntu0.22.04.1.dsc' openldap_2.5.18+dfsg-0ubuntu0.22.04.1.dsc 3319 SHA512:082e2da7d0d1a897e6db4efab72b357280f9b77f2fb97ae499154cf07eff9780aa61fb962f9c1e1468110dc5c976ec025609e265676c807035834a5fc2a328b2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg.orig.tar.gz' openldap_2.5.18+dfsg.orig.tar.gz 5623023 SHA512:5f0f71c6711bc8e4b463832d2073d41d92886cdbe3c7a20bca54579c4df30d25de5f388165d975ace600073593502d73a5009ad00f135adc9f1270515fb4ff21
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.18+dfsg-0ubuntu0.22.04.1.debian.tar.xz 172192 SHA512:8b6f18666ab691ef63dd1190401521332b5da1c5016996040bbc4d1b38b13d2a2cdcff29640f8df08c78e50a432d4ed8224a9d9bf0f0e7e94b1b5d600dc38c06
 ```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.16`
@@ -7106,14 +7106,14 @@ $ apt-get source -qq --print-uris python3-stdlib-extensions=3.10.8-1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.10.8-1%7e22.04.debian.tar.xz' python3-stdlib-extensions_3.10.8-1~22.04.debian.tar.xz 25884 SHA512:214b4a62091181291a22ce1a2016e5b3d8f24f62f245494f82bd3a527b46886f1537f1e33fcde5261c81cb50d6d177cdeb899955d7da7c367511594ed99825ce
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.3`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.4`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.3`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.3`
-- `python3.10=3.10.12-1~22.04.3`
-- `python3.10-minimal=3.10.12-1~22.04.3`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.4`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.4`
+- `python3.10=3.10.12-1~22.04.4`
+- `python3.10-minimal=3.10.12-1~22.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -7135,9 +7135,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.4.dsc' python3.10_3.10.12-1~22.04.4.dsc 3711 SHA512:aaf2601274e1eb79c250b70b0a59e2f20f4d628f1ad2e446c0388f8ccc3909ed6a32253a18b4a3f4e5748a80b2fdfa5ced9be39cee8bdd359b4bab7852d6af4b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.4.debian.tar.xz' python3.10_3.10.12-1~22.04.4.debian.tar.xz 224844 SHA512:33834a36ec1982b088607ee66a95c42e9cbee7e873512865acf952bb208eb8c95b851e6092c650c30516bafb24433ace643912346080a4e81c14940046ca75f3
+```
 
 ### `dpkg` source package: `pyusb=1.2.1-1`
 
@@ -7550,11 +7555,11 @@ $ apt-get source -qq --print-uris tiff=4.3.0-6ubuntu0.9
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.9.debian.tar.xz' tiff_4.3.0-6ubuntu0.9.debian.tar.xz 50428 SHA512:73af6c8521ae13d6f75227971fb633ce4383eac09ffe153ce4bcc4bf30edd14489ff5b1c7970cd74e0143e61028a300c50d14a021a7dfd7d93b6b496a7b6396a
 ```
 
-### `dpkg` source package: `tzdata=2024a-0ubuntu0.22.04`
+### `dpkg` source package: `tzdata=2024a-0ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `tzdata=2024a-0ubuntu0.22.04`
+- `tzdata=2024a-0ubuntu0.22.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -7563,11 +7568,11 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2024a-0ubuntu0.22.04
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.22.04.dsc' tzdata_2024a-0ubuntu0.22.04.dsc 2501 SHA512:57335ca6d99dec93396415077b2f5cbe986ef1a445d48548f639c2a6c1367235bb6f34864b08a546bde3d6f84b14c325392ebefedefa075cb5b7777251eed10f
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA512:1f09f1b2327cc9e1afc7e9045e83ee3377918dafe1bee2f282b6991828d03b3c70a4d3a17f9207dfb1361bb25bc214a8922a756e84fa114e9ba476226db57236
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA512:a06ddc95002f2dcd3c071d020a74bc98aae2cbf56a502718f9bc08e90e0075b17aaaa653ceecd49a1133cdadfc43134365043f827b19c7dad68050dbda6ba77e
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.22.04.debian.tar.xz' tzdata_2024a-0ubuntu0.22.04.debian.tar.xz 175440 SHA512:5c1a4676b33b72e8f9dd7416bdf1c38c2f4dd59d8db96551135a86044075603cf94aba38fcb4346cb6ba08b8899c405eeb98bac65a4144c1dd9130878b8d3c82
+$ apt-get source -qq --print-uris tzdata=2024a-0ubuntu0.22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.22.04.1.dsc' tzdata_2024a-0ubuntu0.22.04.1.dsc 2541 SHA512:c0cda33e23d340414e2cd079ec35caa8986601f9f97bcb055ccfaee154fb8667588a18d6e21f1719090799aa034960548df63a046669287e15af281aaba2b151
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA512:1f09f1b2327cc9e1afc7e9045e83ee3377918dafe1bee2f282b6991828d03b3c70a4d3a17f9207dfb1361bb25bc214a8922a756e84fa114e9ba476226db57236
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA512:a06ddc95002f2dcd3c071d020a74bc98aae2cbf56a502718f9bc08e90e0075b17aaaa653ceecd49a1133cdadfc43134365043f827b19c7dad68050dbda6ba77e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2024a-0ubuntu0.22.04.1.debian.tar.xz 178960 SHA512:98899e7a78ddfce0f3af0c1239422b9547b3c33ca08ab5e82266e51cc69e1169e012f3ad78b1fc84ca491847ea2bcda25619f7b06df410d0f02c9e7ef746a2ec
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
