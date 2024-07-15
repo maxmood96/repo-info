@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:343a1425cab200b0f0952986cf88a612441b1e5bdcbd987ec3abcef0783f6c55`
-- Created: `2024-07-01T21:37:08Z`
-- Virtual Size: ~ 179.04 Mb  
+- Image ID: `sha256:45836278b128efb65055419217e10ddde2bca4dfd2ebab638886da0e57c89701`
+- Created: `2024-07-11T23:04:20Z`
+- Virtual Size: ~ 179.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=24.0.9`
-  - `DOCKER_BUILDX_VERSION=0.15.1`
+  - `DOCKER_BUILDX_VERSION=0.16.0`
   - `DOCKER_COMPOSE_VERSION=2.28.1`
   - `DOCKER_TLS_CERTDIR=/certs`
 
@@ -157,16 +157,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20240226-r0 description:
+ca-certificates-20240705-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20240226-r0 webpage:
+ca-certificates-20240705-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20240226-r0 installed size:
+ca-certificates-20240705-r0 installed size:
 712 KiB
 
-ca-certificates-20240226-r0 license:
+ca-certificates-20240705-r0 license:
 MPL-2.0 AND MIT
 
 ```
