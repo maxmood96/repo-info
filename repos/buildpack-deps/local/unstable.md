@@ -1000,20 +1000,13 @@ Licenses: (parsed from: `/usr/share/doc/libelf1t64/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.191-1
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.191-1.dsc' elfutils_0.191-1.dsc 3271 SHA256:fd47fd02746b16e94816ccd93f122bc7ed538006cdf0e0287bb6a898074b64b5
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.191.orig.tar.bz2' elfutils_0.191.orig.tar.bz2 9310088 SHA256:df76db71366d1d708365fc7a6c60ca48398f14367eb2b8954efc8897147ad871
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.191-1.debian.tar.xz' elfutils_0.191-1.debian.tar.xz 44336 SHA256:6d9b49304b2602beebf694a967dc37fbd21068ddcbb064b9df30ca4903e83c62
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/elfutils/0.191-1/
 
-- https://sources.debian.net/src/elfutils/0.191-1/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.191-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.191-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.6.2-1`
 
@@ -2763,20 +2756,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 - `LGPL-3+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.17.6-3
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.17.6-3.dsc' libheif_1.17.6-3.dsc 3406 SHA256:919794ff91024cb4657a5cbf4cb0425ee8225154ac04e4e17fd34e00cd61def2
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.17.6.orig.tar.gz' libheif_1.17.6.orig.tar.gz 1433302 SHA256:8390baf4913eda0a183e132cec62b875fb2ef507ced5ddddc98dfd2f17780aee
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.17.6-3.debian.tar.xz' libheif_1.17.6-3.debian.tar.xz 10684 SHA256:fd0feb972824ff4e11e11785a8167ca3bb7cd42b532016a52e97f600293903ea
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libheif/1.17.6-3/
 
-- https://sources.debian.net/src/libheif/1.17.6-3/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.17.6-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.17.6-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.0.10-1`
 
@@ -4368,20 +4354,13 @@ Licenses: (parsed from: `/usr/share/doc/libldap-2.5-0/copyright`)
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.5.18+dfsg-1
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.18%2bdfsg-1.dsc' openldap_2.5.18+dfsg-1.dsc 3312 SHA256:d7940efc01917c32136cb9ae5d1da3e5d8c48d8533b62b6730217df164568d15
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.18%2bdfsg.orig.tar.xz' openldap_2.5.18+dfsg.orig.tar.xz 3684372 SHA256:06c2f0ee591594ae28cfbde843a70b3e009b1f09d7f3110a1570236ac46a86b5
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.18%2bdfsg-1.debian.tar.xz' openldap_2.5.18+dfsg-1.debian.tar.xz 169684 SHA256:68c885332a046210894d1dbff31debcbe04c398ff67df84fa994d9e37c06476e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.5.18+dfsg-1/
 
-- https://sources.debian.net/src/openldap/2.5.18+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.5.18+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.5.18+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssh=1:9.7p1-7`
 
@@ -4881,20 +4860,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.12=3.12.4-1
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.4-1.dsc' python3.12_3.12.4-1.dsc 3178 SHA256:13e676c1f4df51761a275d6e7d980a24c0682f52226c021d5a779974880c4bef
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.4.orig.tar.xz' python3.12_3.12.4.orig.tar.xz 20659356 SHA256:f6d419a6d8743ab26700801b4908d26d97e8b986e14f95de31b32de2b0e79554
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.4-1.debian.tar.xz' python3.12_3.12.4-1.debian.tar.xz 212548 SHA256:6497b96fd3989555f22e33a89b09ff913f08da632211f63bbc9a278afd1c1e82
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.12/3.12.4-1/
 
-- https://sources.debian.net/src/python3.12/3.12.4-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.12/3.12.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.12/3.12.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-4`
 

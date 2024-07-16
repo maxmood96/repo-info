@@ -514,19 +514,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.86
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.86.dsc' debconf_1.5.86.dsc 2035 SHA256:2528e4ed5f0873d5c425953d68bf6164959bd3f7430e53bce2bb99adf0e4a83a
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.86.tar.xz' debconf_1.5.86.tar.xz 573944 SHA256:7128067f1144046a432784492c58839343768c15b32dc6fafbaa73200d3167d0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.86/
 
-- https://sources.debian.net/src/debconf/1.5.86/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.86/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.86/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2023.4`
 
@@ -1769,20 +1763,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.62.1-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.62.1-1.dsc' nghttp2_1.62.1-1.dsc 2531 SHA256:8b438c89243e143d2546c3eecda8ab813f4666ae681ea0e01b1ba1afae87556a
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.62.1.orig.tar.gz' nghttp2_1.62.1.orig.tar.gz 1066103 SHA256:73c8af772dd2b30cedc114d37291cf1485b0a7ce11833595fc2aec7b3ce3ba5c
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.62.1-1.debian.tar.xz' nghttp2_1.62.1-1.debian.tar.xz 38828 SHA256:f826f3e556cc0cb9673482e6ee0d96be8ddd6ef1e21655a74c633809ad463bed
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.62.1-1/
 
-- https://sources.debian.net/src/nghttp2/1.62.1-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.62.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.62.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-3.1`
 

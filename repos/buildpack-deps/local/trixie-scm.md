@@ -567,19 +567,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.86
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.86.dsc' debconf_1.5.86.dsc 2035 SHA256:2528e4ed5f0873d5c425953d68bf6164959bd3f7430e53bce2bb99adf0e4a83a
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.86.tar.xz' debconf_1.5.86.tar.xz 573944 SHA256:7128067f1144046a432784492c58839343768c15b32dc6fafbaa73200d3167d0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.86/
 
-- https://sources.debian.net/src/debconf/1.5.86/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.86/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.86/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2023.4`
 
@@ -2006,21 +2000,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=6.7.4-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.7.4-1.dsc' mercurial_6.7.4-1.dsc 2806 SHA256:e3a3baa285b96304af88f901ca3ff20ca0a67539217638cb81131ca49835c542
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.7.4.orig.tar.gz' mercurial_6.7.4.orig.tar.gz 8310726 SHA256:74708f873405c12272fec116c6dd52862e8ed11c10011c7e575f5ea81263ea5e
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.7.4.orig.tar.gz.asc' mercurial_6.7.4.orig.tar.gz.asc 659 SHA256:323a908848eab95733a3c87a11b5b93e67fe477d67c1c1f0774a902f18de22ab
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.7.4-1.debian.tar.xz' mercurial_6.7.4-1.debian.tar.xz 69492 SHA256:afbaf3d49e0ed5c8a85920e7acc5f8e9c778f293acddf579e40b36d3448c9a91
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/6.7.4-1/
 
-- https://sources.debian.net/src/mercurial/6.7.4-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/6.7.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/6.7.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.5-2`
 
@@ -2121,20 +2107,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.62.1-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.62.1-1.dsc' nghttp2_1.62.1-1.dsc 2531 SHA256:8b438c89243e143d2546c3eecda8ab813f4666ae681ea0e01b1ba1afae87556a
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.62.1.orig.tar.gz' nghttp2_1.62.1.orig.tar.gz 1066103 SHA256:73c8af772dd2b30cedc114d37291cf1485b0a7ce11833595fc2aec7b3ce3ba5c
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.62.1-1.debian.tar.xz' nghttp2_1.62.1-1.debian.tar.xz 38828 SHA256:f826f3e556cc0cb9673482e6ee0d96be8ddd6ef1e21655a74c633809ad463bed
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.62.1-1/
 
-- https://sources.debian.net/src/nghttp2/1.62.1-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.62.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.62.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-3.1`
 
@@ -2460,20 +2439,13 @@ Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:4.0.4-4
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4-4.dsc' procps_4.0.4-4.dsc 2136 SHA256:10cf12358793572a18c1a8d0cfa18c3349eadb68e7698fdc683c83a753b86fc6
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4.orig.tar.xz' procps_4.0.4.orig.tar.xz 1401540 SHA256:22870d6feb2478adb617ce4f09a787addaf2d260c5a8aa7b17d889a962c5e42e
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4-4.debian.tar.xz' procps_4.0.4-4.debian.tar.xz 30376 SHA256:2c97acdc30bb530dfac09a1606a6b0fe862506ed4dcffaf8654cd344c16f9670
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/procps/2:4.0.4-4/
 
-- https://sources.debian.net/src/procps/2:4.0.4-4/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:4.0.4-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:4.0.4-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.11.8-1`
 
