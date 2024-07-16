@@ -1,10 +1,10 @@
-# `openjdk:23-ea-30-jdk-oraclelinux9`
+# `openjdk:23-ea-31-jdk-oraclelinux9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2063cb0321e5ae7370182de25fd9d90580167ae79a1718b0891165d20d4116e0`
-- Created: `2024-07-06T00:48:12Z`
-- Virtual Size: ~ 568.63 Mb  
+- Image ID: `sha256:1bcef58001bb334b8b57224f43df6cf29e935c3dc4b1fc303aa7a87cd25f878b`
+- Created: `2024-07-12T06:48:10Z`
+- Virtual Size: ~ 568.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-23/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-23`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=23-ea+30`
+  - `JAVA_VERSION=23-ea+31`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -1375,16 +1375,16 @@ https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSourc
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/p11-kit-0.25.3-2.el9.src.rpm
 ```
 
-### `rpm` package: `pam-1.5.1-19.0.1.el9.x86_64`
+### `rpm` package: `pam-1.5.1-19.0.2.el9.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url pam-1.5.1-19.0.1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/pam-1.5.1-19.0.1.el9.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/pam-1.5.1-19.0.1.el9.src.rpm
+$ dnf --quiet download --source --url pam-1.5.1-19.0.2.el9
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/pam-1.5.1-19.0.2.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/pam-1.5.1-19.0.2.el9.src.rpm
 ```
 
 ### `rpm` package: `pcre-8.44-3.el9.3.x86_64`
@@ -1547,8 +1547,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url systemd-252-32.0.2.el9_4
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-32.0.2.el9_4.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-32.0.2.el9_4.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-32.0.2.el9_4.src.rpm
 ```
 
 ### `rpm` package: `systemd-libs-252-32.0.2.el9_4.x86_64`
@@ -1559,8 +1559,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url systemd-libs-252-32.0.2.el9_4
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-32.0.2.el9_4.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-32.0.2.el9_4.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-32.0.2.el9_4.src.rpm
 ```
 
 ### `rpm` package: `systemd-pam-252-32.0.2.el9_4.x86_64`
@@ -1571,8 +1571,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url systemd-pam-252-32.0.2.el9_4
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-32.0.2.el9_4.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-32.0.2.el9_4.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-32.0.2.el9_4.src.rpm
 ```
 
 ### `rpm` package: `systemd-rpm-macros-252-32.0.2.el9_4.noarch`
@@ -1583,8 +1583,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url systemd-rpm-macros-252-32.0.2.el9_4.noarch
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-32.0.2.el9_4.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-32.0.2.el9_4.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-32.0.2.el9_4.src.rpm
 ```
 
 ### `rpm` package: `tar-1.34-6.el9_1.x86_64`
