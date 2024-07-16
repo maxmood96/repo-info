@@ -1,10 +1,10 @@
-# `gradle:8.8.0-jdk11-alpine`
+# `gradle:8.9.0-jdk11-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b893feba8d425f8be14e55526d385f864dc76081992ddf08dd2971b0f2db1c44`
-- Created: `2024-06-16T03:23:28Z`
-- Virtual Size: ~ 533.69 Mb  
+- Image ID: `sha256:1fb4dfe9350cfee237782818b9d43dd4ec3dbc9a3aad0d4d3eb11c22103e8cd8`
+- Created: `2024-07-12T03:13:38Z`
+- Virtual Size: ~ 531.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.23+9`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.8`
+  - `GRADLE_VERSION=8.9`
 
 ## `apk` (`.apk`-based packages)
 
