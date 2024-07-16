@@ -1,10 +1,10 @@
-# `wordpress:beta-6.6-RC3-php8.3-fpm-alpine`
+# `wordpress:beta-6.6-RC4-php8.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1e9b4744aa7efa7924e6745afa584611575202c5d91b638e988999f5f53e6891`
-- Created: `2024-07-09T19:03:11Z`
-- Virtual Size: ~ 264.18 Mb  
+- Image ID: `sha256:3e56e0ed587055b902bfbeac7a479d9cdac9f057353b948116af8a54d100c81f`
+- Created: `2024-07-15T19:03:11Z`
+- Virtual Size: ~ 251.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,11 +16,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.9`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.9.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.9.tar.xz.asc`
-  - `PHP_SHA256=bf4d7b8ea60a356064f88485278bd6f941a230ec16f0fc401574ce1445ad6c77`
+  - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
+  - `PHP_VERSION=8.1.29`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.29.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.29.tar.xz.asc`
+  - `PHP_SHA256=288884af60581d4284baba2ace9ca6d646f72facbd3e3c2dd2acc7fe6f903536`
 
 ## `apk` (`.apk`-based packages)
 
@@ -265,16 +265,16 @@ Apache-2.0
 ### `apk` package: `curl`
 
 ```console
-curl-8.8.0-r0 description:
+curl-8.7.1-r0 description:
 URL retrival utility and library
 
-curl-8.8.0-r0 webpage:
+curl-8.7.1-r0 webpage:
 https://curl.se/
 
-curl-8.8.0-r0 installed size:
+curl-8.7.1-r0 installed size:
 244 KiB
 
-curl-8.8.0-r0 license:
+curl-8.7.1-r0 license:
 curl
 
 ```
@@ -639,16 +639,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r1 description:
+libcrypto3-3.3.1-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r1 webpage:
+libcrypto3-3.3.1-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r1 installed size:
+libcrypto3-3.3.1-r0 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r1 license:
+libcrypto3-3.3.1-r0 license:
 Apache-2.0
 
 ```
@@ -656,16 +656,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.8.0-r0 description:
+libcurl-8.7.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.8.0-r0 webpage:
+libcurl-8.7.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.8.0-r0 installed size:
-620 KiB
+libcurl-8.7.1-r0 installed size:
+604 KiB
 
-libcurl-8.8.0-r0 license:
+libcurl-8.7.1-r0 license:
 curl
 
 ```
@@ -911,16 +911,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r1 description:
+libssl3-3.3.1-r0 description:
 SSL shared libraries
 
-libssl3-3.3.1-r1 webpage:
+libssl3-3.3.1-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r1 installed size:
+libssl3-3.3.1-r0 installed size:
 796 KiB
 
-libssl3-3.3.1-r1 license:
+libssl3-3.3.1-r0 license:
 Apache-2.0
 
 ```
@@ -1217,16 +1217,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.62.1-r0 description:
+nghttp2-libs-1.62.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.62.1-r0 webpage:
+nghttp2-libs-1.62.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.62.1-r0 installed size:
+nghttp2-libs-1.62.0-r0 installed size:
 152 KiB
 
-nghttp2-libs-1.62.1-r0 license:
+nghttp2-libs-1.62.0-r0 license:
 MIT
 
 ```
@@ -1268,16 +1268,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.1-r1 description:
+openssl-3.3.1-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.1-r1 webpage:
+openssl-3.3.1-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.3.1-r1 installed size:
+openssl-3.3.1-r0 installed size:
 784 KiB
 
-openssl-3.3.1-r1 license:
+openssl-3.3.1-r0 license:
 Apache-2.0
 
 ```
