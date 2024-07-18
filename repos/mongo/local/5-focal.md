@@ -1,10 +1,10 @@
-# `mongo:5.0.27-focal`
+# `mongo:5.0.28-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:23a49b822de3e60f7fc33f80e93da52929c37579f8d041171ce2a0d6bf28ff07`
-- Created: `2024-06-06T22:01:15Z`
-- Virtual Size: ~ 738.07 Mb  
+- Image ID: `sha256:78f91de90a543a7462abb5eb5d2bccb70fa95b43bcd9ba632da1b7ffd35e0e71`
+- Created: `2024-07-15T16:01:13Z`
+- Virtual Size: ~ 737.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=5.0`
-  - `MONGO_VERSION=5.0.27`
+  - `MONGO_VERSION=5.0.28`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -1211,11 +1211,11 @@ $ apt-get source -qq --print-uris mawk=1.3.4.20200120-2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20200120-2.debian.tar.xz' mawk_1.3.4.20200120-2.debian.tar.xz 7504 SHA256:b772ed2f016b0286980c46cbc1f1f4ae62887ef2aa3dff6ef10cae638f923f26
 ```
 
-### `dpkg` source package: `mongodb-database-tools=100.9.4`
+### `dpkg` source package: `mongodb-database-tools=100.9.5`
 
 Binary Packages:
 
-- `mongodb-database-tools=100.9.4`
+- `mongodb-database-tools=100.9.5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1225,11 +1225,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-mongosh=2.2.6`
+### `dpkg` source package: `mongodb-mongosh=2.2.12`
 
 Binary Packages:
 
-- `mongodb-mongosh=2.2.6`
+- `mongodb-mongosh=2.2.12`
 
 Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 
@@ -1240,17 +1240,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=5.0.27`
+### `dpkg` source package: `mongodb-org=5.0.28`
 
 Binary Packages:
 
-- `mongodb-org=5.0.27`
-- `mongodb-org-database=5.0.27`
-- `mongodb-org-database-tools-extra=5.0.27`
-- `mongodb-org-mongos=5.0.27`
-- `mongodb-org-server=5.0.27`
-- `mongodb-org-shell=5.0.27`
-- `mongodb-org-tools=5.0.27`
+- `mongodb-org=5.0.28`
+- `mongodb-org-database=5.0.28`
+- `mongodb-org-database-tools-extra=5.0.28`
+- `mongodb-org-mongos=5.0.28`
+- `mongodb-org-server=5.0.28`
+- `mongodb-org-shell=5.0.28`
+- `mongodb-org-tools=5.0.28`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1746,11 +1746,11 @@ $ apt-get source -qq --print-uris tar=1.30+dfsg-7ubuntu0.20.04.4
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.4.debian.tar.xz' tar_1.30+dfsg-7ubuntu0.20.04.4.debian.tar.xz 24572 SHA512:942a7fb6e2edb7e50b26b1588219d0a99caf17ff1dfa1748449c3fa84ab8cf3e3e94bafb8334cc3b8397562d6a3ecd57bc0df2ddb2b90644a361fa63426d2982
 ```
 
-### `dpkg` source package: `tzdata=2024a-0ubuntu0.20.04`
+### `dpkg` source package: `tzdata=2024a-0ubuntu0.20.04.1`
 
 Binary Packages:
 
-- `tzdata=2024a-0ubuntu0.20.04`
+- `tzdata=2024a-0ubuntu0.20.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -1759,11 +1759,11 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2024a-0ubuntu0.20.04
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.20.04.dsc' tzdata_2024a-0ubuntu0.20.04.dsc 2516 SHA512:a15b25ae9dc2fbed32a7eb6f41b5036203117dd610d5a657eeb56d507dd985684978f0e3126919fa51a3c6cccc461ab5b4d78c1e1d185c4e95a149318215a32b
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA512:1f09f1b2327cc9e1afc7e9045e83ee3377918dafe1bee2f282b6991828d03b3c70a4d3a17f9207dfb1361bb25bc214a8922a756e84fa114e9ba476226db57236
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA512:a06ddc95002f2dcd3c071d020a74bc98aae2cbf56a502718f9bc08e90e0075b17aaaa653ceecd49a1133cdadfc43134365043f827b19c7dad68050dbda6ba77e
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.20.04.debian.tar.xz' tzdata_2024a-0ubuntu0.20.04.debian.tar.xz 170964 SHA512:d1d7386d828f1598632c8cc3bf7a8d6912f1783598d681ca97383e873afa095a51fc994e0cb6c1ed6a0ef6f8e1c619e2bc7679c060a74bc436c1646ff5f99c1c
+$ apt-get source -qq --print-uris tzdata=2024a-0ubuntu0.20.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.20.04.1.dsc' tzdata_2024a-0ubuntu0.20.04.1.dsc 2556 SHA512:9f71acf380cf4076da623666f5fd75a346a7ebc5c2cfe367dde2eb98454c8b8d14056bcbcd29d64ab3f51168f76243fc305cf55202a93ba791cdb1cf40802343
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA512:1f09f1b2327cc9e1afc7e9045e83ee3377918dafe1bee2f282b6991828d03b3c70a4d3a17f9207dfb1361bb25bc214a8922a756e84fa114e9ba476226db57236
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA512:a06ddc95002f2dcd3c071d020a74bc98aae2cbf56a502718f9bc08e90e0075b17aaaa653ceecd49a1133cdadfc43134365043f827b19c7dad68050dbda6ba77e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.20.04.1.debian.tar.xz' tzdata_2024a-0ubuntu0.20.04.1.debian.tar.xz 174204 SHA512:9a999fc4e28c0f18b2f095876b17316c7f8f2ce23eb83f6f0d0c082270075ec7184a0e5c217576eac14ef49251a5e3536490777175b70146fab72a4b30a25aa8
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
