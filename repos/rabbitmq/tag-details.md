@@ -22,6 +22,14 @@
 -	[`rabbitmq:3.13.4-alpine`](#rabbitmq3134-alpine)
 -	[`rabbitmq:3.13.4-management`](#rabbitmq3134-management)
 -	[`rabbitmq:3.13.4-management-alpine`](#rabbitmq3134-management-alpine)
+-	[`rabbitmq:4.0-rc`](#rabbitmq40-rc)
+-	[`rabbitmq:4.0-rc-alpine`](#rabbitmq40-rc-alpine)
+-	[`rabbitmq:4.0-rc-management`](#rabbitmq40-rc-management)
+-	[`rabbitmq:4.0-rc-management-alpine`](#rabbitmq40-rc-management-alpine)
+-	[`rabbitmq:4.0.0-beta.1`](#rabbitmq400-beta1)
+-	[`rabbitmq:4.0.0-beta.1-alpine`](#rabbitmq400-beta1-alpine)
+-	[`rabbitmq:4.0.0-beta.1-management`](#rabbitmq400-beta1-management)
+-	[`rabbitmq:4.0.0-beta.1-management-alpine`](#rabbitmq400-beta1-management-alpine)
 -	[`rabbitmq:alpine`](#rabbitmqalpine)
 -	[`rabbitmq:latest`](#rabbitmqlatest)
 -	[`rabbitmq:management`](#rabbitmqmanagement)
@@ -16946,6 +16954,38 @@ $ docker pull rabbitmq@sha256:ddfa40c8eb4a5048c89e7be1b0505b62273d891f3541d2675a
 		Last Modified: Wed, 10 Jul 2024 19:32:49 GMT  
 		Size: 11.2 KB (11208 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `rabbitmq:4.0-rc`
+
+**does not exist** (yet?)
+
+## `rabbitmq:4.0-rc-alpine`
+
+**does not exist** (yet?)
+
+## `rabbitmq:4.0-rc-management`
+
+**does not exist** (yet?)
+
+## `rabbitmq:4.0-rc-management-alpine`
+
+**does not exist** (yet?)
+
+## `rabbitmq:4.0.0-beta.1`
+
+**does not exist** (yet?)
+
+## `rabbitmq:4.0.0-beta.1-alpine`
+
+**does not exist** (yet?)
+
+## `rabbitmq:4.0.0-beta.1-management`
+
+**does not exist** (yet?)
+
+## `rabbitmq:4.0.0-beta.1-management-alpine`
+
+**does not exist** (yet?)
 
 ## `rabbitmq:alpine`
 
