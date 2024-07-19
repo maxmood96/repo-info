@@ -822,20 +822,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-14-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-14=14.1.0-2
-'http://deb.debian.org/debian/pool/main/g/gcc-14/gcc-14_14.1.0-2.dsc' gcc-14_14.1.0-2.dsc 46505 SHA256:be48330c2035629d8ba93a3c4ad9a04ed4086f9cfb43e0a2aa0eb20bbdd4f14f
-'http://deb.debian.org/debian/pool/main/g/gcc-14/gcc-14_14.1.0.orig.tar.gz' gcc-14_14.1.0.orig.tar.gz 94259732 SHA256:c5f6bb263e0b8ce27a0716b8bc9d61586079bcde0498a9ddda6db175fa8cd73a
-'http://deb.debian.org/debian/pool/main/g/gcc-14/gcc-14_14.1.0-2.debian.tar.xz' gcc-14_14.1.0-2.debian.tar.xz 3187936 SHA256:b9fd542e60da062a9bf49dc15158d39e5f02a20bcf7dcfc11fcae1d3f3e4ce2e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-14/14.1.0-2/
 
-- https://sources.debian.net/src/gcc-14/14.1.0-2/ (for browsing the source)
-- https://sources.debian.net/src/gcc-14/14.1.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-14/14.1.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.23-6`
 

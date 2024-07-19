@@ -1330,20 +1330,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-14-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-14=14.1.0-3
-'http://deb.debian.org/debian/pool/main/g/gcc-14/gcc-14_14.1.0-3.dsc' gcc-14_14.1.0-3.dsc 46482 SHA256:b2e1953313f5a7b974e6e4f4d1ddb8ab3776649cfdbd505e7e348b700a658c50
-'http://deb.debian.org/debian/pool/main/g/gcc-14/gcc-14_14.1.0.orig.tar.gz' gcc-14_14.1.0.orig.tar.gz 94259732 SHA256:c5f6bb263e0b8ce27a0716b8bc9d61586079bcde0498a9ddda6db175fa8cd73a
-'http://deb.debian.org/debian/pool/main/g/gcc-14/gcc-14_14.1.0-3.debian.tar.xz' gcc-14_14.1.0-3.debian.tar.xz 3202736 SHA256:ffd11d0f6c131c28bd16c97d2739b0372d6d0ce8ef05fc37f1f8fad772a9cd91
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-14/14.1.0-3/
 
-- https://sources.debian.net/src/gcc-14/14.1.0-3/ (for browsing the source)
-- https://sources.debian.net/src/gcc-14/14.1.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-14/14.1.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.214`
 
@@ -1526,21 +1519,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-glib-2.0/copyright`, `/usr/share/
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.80.3-1
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.80.3-1.dsc' glib2.0_2.80.3-1.dsc 4532 SHA256:d9ed818fab5ed3124c18b9eb9974788bc17660bfcbcc3eccd2af2c13a9308f03
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.80.3.orig-unicode-data.tar.xz' glib2.0_2.80.3.orig-unicode-data.tar.xz 263900 SHA256:f87fab5f2d5c59bcf801925d5bdf8c9cee85839d47f7ff820f053ec7b82b38cd
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.80.3.orig.tar.xz' glib2.0_2.80.3.orig.tar.xz 5542940 SHA256:3947a0eaddd0f3613d0230bb246d0c69e46142c19022f5c4b1b2e3cba236d417
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.80.3-1.debian.tar.xz' glib2.0_2.80.3-1.debian.tar.xz 132224 SHA256:100de1dbe8bbb6b9140fcbca206e9ed860b8fda71df145140d838d81d4fbdf4f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.80.3-1/
 
-- https://sources.debian.net/src/glib2.0/2.80.3-1/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.80.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.80.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.38-13`
 
@@ -4102,19 +4087,13 @@ Licenses: (parsed from: `/usr/share/doc/default-libmysqlclient-dev/copyright`, `
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-defaults=1.1.0
-'http://deb.debian.org/debian/pool/main/m/mysql-defaults/mysql-defaults_1.1.0.dsc' mysql-defaults_1.1.0.dsc 2279 SHA256:b93b3ec5deca87cf63da03b7c349b68ffd9cc78bb36ec967bae8015717c70111
-'http://deb.debian.org/debian/pool/main/m/mysql-defaults/mysql-defaults_1.1.0.tar.xz' mysql-defaults_1.1.0.tar.xz 7396 SHA256:093f1c30172ba5dbfb4c19a2dfe6d533bb207102232ae5f080eb0bc0476f02e6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mysql-defaults/1.1.0/
 
-- https://sources.debian.net/src/mysql-defaults/1.1.0/ (for browsing the source)
-- https://sources.debian.net/src/mysql-defaults/1.1.0/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mysql-defaults/1.1.0/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.5-2`
 
@@ -5566,8 +5545,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris xorg=1:7.7+23
-'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7%2b23.dsc' xorg_7.7+23.dsc 1975 SHA256:b06ef48b56736e0a0a48bcbc1afd2cf6dcd70959c2b52e195456a0392076469c
-'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7%2b23.tar.gz' xorg_7.7+23.tar.gz 287306 SHA256:8458b8798d7d6098cd5259abc447d6c7a371e20e641cac82cf635296a71f468e
+'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7%2b23.1.dsc' xorg_7.7+23.1.dsc 1983 SHA256:0d448530e9e3640a98bc3ac5840af8ab62f369bea0483eca9741d508987d19c1
+'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7%2b23.1.tar.gz' xorg_7.7+23.1.tar.gz 292366 SHA256:1620333d14424eadae77ef44ac702a65ef5b53c169c993181687ee1d198d538b
 ```
 
 Other potentially useful URLs:

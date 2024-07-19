@@ -992,20 +992,13 @@ Licenses: (parsed from: `/usr/share/doc/libelf1t64/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.191-1
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.191-1.dsc' elfutils_0.191-1.dsc 3271 SHA256:fd47fd02746b16e94816ccd93f122bc7ed538006cdf0e0287bb6a898074b64b5
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.191.orig.tar.bz2' elfutils_0.191.orig.tar.bz2 9310088 SHA256:df76db71366d1d708365fc7a6c60ca48398f14367eb2b8954efc8897147ad871
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.191-1.debian.tar.xz' elfutils_0.191-1.debian.tar.xz 44336 SHA256:6d9b49304b2602beebf694a967dc37fbd21068ddcbb064b9df30ca4903e83c62
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/elfutils/0.191-1/
 
-- https://sources.debian.net/src/elfutils/0.191-1/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.191-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.191-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.6.2-1`
 
