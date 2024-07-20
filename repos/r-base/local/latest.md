@@ -928,14 +928,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-14-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-14=14.1.0-3
-'http://http.debian.net/debian/pool/main/g/gcc-14/gcc-14_14.1.0-3.dsc' gcc-14_14.1.0-3.dsc 46482 SHA256:b2e1953313f5a7b974e6e4f4d1ddb8ab3776649cfdbd505e7e348b700a658c50
-'http://http.debian.net/debian/pool/main/g/gcc-14/gcc-14_14.1.0.orig.tar.gz' gcc-14_14.1.0.orig.tar.gz 94259732 SHA256:c5f6bb263e0b8ce27a0716b8bc9d61586079bcde0498a9ddda6db175fa8cd73a
-'http://http.debian.net/debian/pool/main/g/gcc-14/gcc-14_14.1.0-3.debian.tar.xz' gcc-14_14.1.0-3.debian.tar.xz 3202736 SHA256:ffd11d0f6c131c28bd16c97d2739b0372d6d0ce8ef05fc37f1f8fad772a9cd91
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gcc-14/14.1.0-3/
+
 
 ### `dpkg` source package: `gcc-defaults=1.214`
 
@@ -1021,15 +1020,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.80.3-1
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.80.3-1.dsc' glib2.0_2.80.3-1.dsc 4532 SHA256:d9ed818fab5ed3124c18b9eb9974788bc17660bfcbcc3eccd2af2c13a9308f03
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.80.3.orig-unicode-data.tar.xz' glib2.0_2.80.3.orig-unicode-data.tar.xz 263900 SHA256:f87fab5f2d5c59bcf801925d5bdf8c9cee85839d47f7ff820f053ec7b82b38cd
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.80.3.orig.tar.xz' glib2.0_2.80.3.orig.tar.xz 5542940 SHA256:3947a0eaddd0f3613d0230bb246d0c69e46142c19022f5c4b1b2e3cba236d417
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.80.3-1.debian.tar.xz' glib2.0_2.80.3-1.debian.tar.xz 132224 SHA256:100de1dbe8bbb6b9140fcbca206e9ed860b8fda71df145140d838d81d4fbdf4f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.80.3-1/
+
 
 ### `dpkg` source package: `glibc=2.38-13`
 
@@ -2686,20 +2683,13 @@ Licenses: (parsed from: `/usr/share/doc/libldap-2.5-0/copyright`)
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.5.18+dfsg-1
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.18%2bdfsg-1.dsc' openldap_2.5.18+dfsg-1.dsc 3312 SHA256:d7940efc01917c32136cb9ae5d1da3e5d8c48d8533b62b6730217df164568d15
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.18%2bdfsg.orig.tar.xz' openldap_2.5.18+dfsg.orig.tar.xz 3684372 SHA256:06c2f0ee591594ae28cfbde843a70b3e009b1f09d7f3110a1570236ac46a86b5
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.18%2bdfsg-1.debian.tar.xz' openldap_2.5.18+dfsg-1.debian.tar.xz 169684 SHA256:68c885332a046210894d1dbff31debcbe04c398ff67df84fa994d9e37c06476e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.5.18+dfsg-1/
 
-- https://sources.debian.net/src/openldap/2.5.18+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.5.18+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.5.18+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.2.2-1`
 
@@ -3701,9 +3691,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris xorg=1:7.7+23
-'http://http.debian.net/debian/pool/main/x/xorg/xorg_7.7%2b23.dsc' xorg_7.7+23.dsc 1975 SHA256:b06ef48b56736e0a0a48bcbc1afd2cf6dcd70959c2b52e195456a0392076469c
-'http://http.debian.net/debian/pool/main/x/xorg/xorg_7.7%2b23.tar.gz' xorg_7.7+23.tar.gz 287306 SHA256:8458b8798d7d6098cd5259abc447d6c7a371e20e641cac82cf635296a71f468e
+'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7%2b23.dsc' xorg_7.7+23.dsc 1975 SHA256:b06ef48b56736e0a0a48bcbc1afd2cf6dcd70959c2b52e195456a0392076469c
+'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7%2b23.tar.gz' xorg_7.7+23.tar.gz 287306 SHA256:8458b8798d7d6098cd5259abc447d6c7a371e20e641cac82cf635296a71f468e
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/xorg/1:7.7+23/ (for browsing the source)
+- https://sources.debian.net/src/xorg/1:7.7+23/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xorg/1:7.7+23/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.2-2`
 
