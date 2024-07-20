@@ -1,7 +1,7 @@
 ## `wordpress:beta-6.6-fpm-alpine`
 
 ```console
-$ docker pull wordpress@sha256:d570319edca1f7f81c2b2ea1ac6247980a76f9d8693c6d6ecfcf6dc5ff673b65
+$ docker pull wordpress@sha256:60827f4d528dd8231a9d931a16ff1e41de621b7c9dc01de741a12d2161f1f006
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -742,13 +742,13 @@ $ docker pull wordpress@sha256:2aace6815fc85d274c4efbf833e6bc034f4c8d0f42107423f
 ### `wordpress:beta-6.6-fpm-alpine` - linux; 386
 
 ```console
-$ docker pull wordpress@sha256:8d7ed0ebe4ea9841994dbf1672b6064124fe97ef74219830e2d4396bcdd6e2f3
+$ docker pull wordpress@sha256:ff314eb82f7dde9caf843235790420fafaecb956ea2bf96dc65e350c8bd692ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **91.7 MB (91694991 bytes)**  
+-	Total Size: **91.7 MB (91697107 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c94c2052c78c53bf94215c54ee6f6358506f43e3ceadc8eca6e0c055fd36ea70`
+-	Image ID: `sha256:f4eab6c83644fed26a294f1eb8606b494be5f9d5adbdc7e37ddc28597ce9076c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -803,25 +803,25 @@ STOPSIGNAL SIGQUIT
 EXPOSE 9000
 # Sat, 06 Jul 2024 03:08:20 GMT
 CMD ["php-fpm"]
-# Mon, 15 Jul 2024 19:03:11 GMT
+# Fri, 19 Jul 2024 01:03:11 GMT
 RUN set -eux; 	apk add --no-cache 		bash 		ghostscript 		imagemagick 	; # buildkit
-# Mon, 15 Jul 2024 19:03:11 GMT
+# Fri, 19 Jul 2024 01:03:11 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		freetype-dev 		icu-dev 		imagemagick-dev 		libjpeg-turbo-dev 		libpng-dev 		libwebp-dev 		libzip-dev 	; 		docker-php-ext-configure gd 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-install -j "$(nproc)" 		bcmath 		exif 		gd 		intl 		mysqli 		zip 	; 	curl -fL -o imagick.tgz 'https://pecl.php.net/get/imagick-3.7.0.tgz'; 	echo '5a364354109029d224bcbb2e82e15b248be9b641227f45e63425c06531792d3e *imagick.tgz' | sha256sum -c -; 	tar --extract --directory /tmp --file imagick.tgz imagick-3.7.0; 	grep '^//#endif$' /tmp/imagick-3.7.0/Imagick.stub.php; 	test "$(grep -c '^//#endif$' /tmp/imagick-3.7.0/Imagick.stub.php)" = '1'; 	sed -i -e 's!^//#endif$!#endif!' /tmp/imagick-3.7.0/Imagick.stub.php; 	grep '^//#endif$' /tmp/imagick-3.7.0/Imagick.stub.php && exit 1 || :; 	docker-php-ext-install /tmp/imagick-3.7.0; 	rm -rf imagick.tgz /tmp/imagick-3.7.0; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive "$extDir" 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .wordpress-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ] # buildkit
-# Mon, 15 Jul 2024 19:03:11 GMT
+# Fri, 19 Jul 2024 01:03:11 GMT
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Mon, 15 Jul 2024 19:03:11 GMT
+# Fri, 19 Jul 2024 01:03:11 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini # buildkit
-# Mon, 15 Jul 2024 19:03:11 GMT
-RUN set -eux; 	version='6.6-RC4'; 	sha1='604d1c89fbf721339d8a0f559b0ff7c4584074fa'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 1777 wp-content # buildkit
-# Mon, 15 Jul 2024 19:03:11 GMT
+# Fri, 19 Jul 2024 01:03:11 GMT
+RUN set -eux; 	version='6.6.1-RC1'; 	sha1='687e692d489c449a09a0dfb76a751aea5bec1f23'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 1777 wp-content # buildkit
+# Fri, 19 Jul 2024 01:03:11 GMT
 VOLUME [/var/www/html]
-# Mon, 15 Jul 2024 19:03:11 GMT
+# Fri, 19 Jul 2024 01:03:11 GMT
 COPY --chown=www-data:www-data wp-config-docker.php /usr/src/wordpress/ # buildkit
-# Mon, 15 Jul 2024 19:03:11 GMT
+# Fri, 19 Jul 2024 01:03:11 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 15 Jul 2024 19:03:11 GMT
+# Fri, 19 Jul 2024 01:03:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 15 Jul 2024 19:03:11 GMT
+# Fri, 19 Jul 2024 01:03:11 GMT
 CMD ["php-fpm"]
 ```
 
@@ -866,57 +866,57 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 06 Jul 2024 03:46:20 GMT  
 		Size: 9.2 KB (9180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1043a430e57cdd5ab3dbd1c842d0befb7c66ea5bed1fd9d0c96626e148e2225`  
-		Last Modified: Mon, 15 Jul 2024 21:57:44 GMT  
-		Size: 28.0 MB (27962957 bytes)  
+	-	`sha256:19140a086c331661b848537e82b24bc48bbcf43df4cdc67b3fdf2319a5b72fc4`  
+		Last Modified: Fri, 19 Jul 2024 19:01:17 GMT  
+		Size: 28.0 MB (27962956 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b38d0dd66e815b736b1cd842b4dc0ce9583873ea6b21e339ea4ebe85a56584e9`  
-		Last Modified: Mon, 15 Jul 2024 21:57:43 GMT  
-		Size: 3.9 MB (3923092 bytes)  
+	-	`sha256:8c57f83cc6d8a601919fa74c4a9089041e66a23da89e4fbab22f72b7f5df4fc8`  
+		Last Modified: Fri, 19 Jul 2024 19:01:16 GMT  
+		Size: 3.9 MB (3923093 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1296db532a66ff53887a0ffbbff10c86643d7a66dab26e461243a8b226e1916`  
-		Last Modified: Mon, 15 Jul 2024 21:57:43 GMT  
-		Size: 59.9 KB (59899 bytes)  
+	-	`sha256:ad07b511011057edfb35152b2a66b96cd92c0cd2f61a79e6312211f4e7297d20`  
+		Last Modified: Fri, 19 Jul 2024 19:01:16 GMT  
+		Size: 59.9 KB (59901 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da3e9ec35e6540194e68d0ffe9f91bef85377730ae3d0cc6c7e75c6362779e45`  
-		Last Modified: Mon, 15 Jul 2024 21:57:43 GMT  
-		Size: 391.0 B  
+	-	`sha256:d6131396051c45f6df26efbadb0d7f4f16ab4069fb9b33577e47704ae1870140`  
+		Last Modified: Fri, 19 Jul 2024 19:01:15 GMT  
+		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb0387e4618555a871fb1e9189526606ec7d6f2215e8d69194820d6d323ceb30`  
-		Last Modified: Mon, 15 Jul 2024 21:57:44 GMT  
-		Size: 24.5 MB (24460547 bytes)  
+	-	`sha256:1ae99b0b3ae9ef9d5c16a879f8393092907601a11a725aa7b4f3e708495b4b14`  
+		Last Modified: Fri, 19 Jul 2024 19:01:18 GMT  
+		Size: 24.5 MB (24462661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2beb3a597702107b37ca5e7e5dd5f33f858f63765193e07e5181df686c77cfc`  
-		Last Modified: Mon, 15 Jul 2024 21:57:44 GMT  
-		Size: 2.3 KB (2344 bytes)  
+	-	`sha256:86322ce86dd028eeaaa553a72bf931ec5954b5493504f0493319f399d018c46c`  
+		Last Modified: Fri, 19 Jul 2024 19:01:17 GMT  
+		Size: 2.3 KB (2346 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7802a754ab785d102ffbbf5d14c243c75bad3bdbcbeedcff0570b1ebc079165f`  
-		Last Modified: Mon, 15 Jul 2024 21:57:44 GMT  
-		Size: 1.7 KB (1724 bytes)  
+	-	`sha256:fce16bd2e932e3cb5af0ab16c6e8b37fffbdd518424b0ddfb6a110a8ff24f533`  
+		Last Modified: Fri, 19 Jul 2024 19:01:17 GMT  
+		Size: 1.7 KB (1725 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `wordpress:beta-6.6-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull wordpress@sha256:9f4b89af682c0a03dc3bd24dde819058e142789b2b1abcf9d27a480799b58c48
+$ docker pull wordpress@sha256:e514be38f57aa7a2087cf4850fdae4462cbd7258c6d5eb2704a2c1369196f106
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 MB (1079850 bytes)**  
+-	Total Size: **1.1 MB (1081215 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:54ae0e81cf4a1e5521b0daab1988707ab6cafadc20827bfaec1801e4c4d60584`
+-	Image ID: `sha256:789cd9368a9cc95bfa919ea53c30edde60b1a64f726387ea518641dbbbcbb2d1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4455c3e117582cbd2034f8039079220c8361f350f4ee209b5de28137dd3350c0`  
-		Last Modified: Mon, 15 Jul 2024 21:57:43 GMT  
-		Size: 1.0 MB (1031797 bytes)  
+	-	`sha256:8343e7961bcc71e8610acda453d6bd0d9e9693dc1f913290d2fefecb6b3cb9cf`  
+		Last Modified: Fri, 19 Jul 2024 19:01:16 GMT  
+		Size: 1.0 MB (1032477 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eaf559658190603a70e50763c91d11fa492a18b05b8f33210f81c5cda40a72f4`  
-		Last Modified: Mon, 15 Jul 2024 21:57:43 GMT  
-		Size: 48.1 KB (48053 bytes)  
+	-	`sha256:8c72f353c5946e03282ec7ee0f27dddfd79fdc2b589f6c8d794b931cd045cd97`  
+		Last Modified: Fri, 19 Jul 2024 19:01:15 GMT  
+		Size: 48.7 KB (48738 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `wordpress:beta-6.6-fpm-alpine` - linux; ppc64le
@@ -1102,13 +1102,13 @@ $ docker pull wordpress@sha256:2025e3d086942b76722a2fa1fdf1c46a94aea99d13b6f73ec
 ### `wordpress:beta-6.6-fpm-alpine` - linux; riscv64
 
 ```console
-$ docker pull wordpress@sha256:02a406910d9af101a7bce0f8493987289a7207223dcca28613659905ffec2d55
+$ docker pull wordpress@sha256:adb823090e2b8326b988f7cbf5315962eaf41f1da0cc18b650949563e6b78d9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.2 MB (90215995 bytes)**  
+-	Total Size: **90.2 MB (90218156 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:851243202f3a78f22bccb77b44a710a2a70267a4b9927c78a10783497e2fd5dd`
+-	Image ID: `sha256:75f574a58b8dcdb299610856510b41ad7c4d2347fa23205572ecce8248a13602`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1163,25 +1163,25 @@ STOPSIGNAL SIGQUIT
 EXPOSE 9000
 # Sat, 06 Jul 2024 05:15:21 GMT
 CMD ["php-fpm"]
-# Mon, 15 Jul 2024 19:03:11 GMT
+# Fri, 19 Jul 2024 01:03:11 GMT
 RUN set -eux; 	apk add --no-cache 		bash 		ghostscript 		imagemagick 	; # buildkit
-# Mon, 15 Jul 2024 19:03:11 GMT
+# Fri, 19 Jul 2024 01:03:11 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		freetype-dev 		icu-dev 		imagemagick-dev 		libjpeg-turbo-dev 		libpng-dev 		libwebp-dev 		libzip-dev 	; 		docker-php-ext-configure gd 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-install -j "$(nproc)" 		bcmath 		exif 		gd 		intl 		mysqli 		zip 	; 	curl -fL -o imagick.tgz 'https://pecl.php.net/get/imagick-3.7.0.tgz'; 	echo '5a364354109029d224bcbb2e82e15b248be9b641227f45e63425c06531792d3e *imagick.tgz' | sha256sum -c -; 	tar --extract --directory /tmp --file imagick.tgz imagick-3.7.0; 	grep '^//#endif$' /tmp/imagick-3.7.0/Imagick.stub.php; 	test "$(grep -c '^//#endif$' /tmp/imagick-3.7.0/Imagick.stub.php)" = '1'; 	sed -i -e 's!^//#endif$!#endif!' /tmp/imagick-3.7.0/Imagick.stub.php; 	grep '^//#endif$' /tmp/imagick-3.7.0/Imagick.stub.php && exit 1 || :; 	docker-php-ext-install /tmp/imagick-3.7.0; 	rm -rf imagick.tgz /tmp/imagick-3.7.0; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive "$extDir" 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .wordpress-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ] # buildkit
-# Mon, 15 Jul 2024 19:03:11 GMT
+# Fri, 19 Jul 2024 01:03:11 GMT
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Mon, 15 Jul 2024 19:03:11 GMT
+# Fri, 19 Jul 2024 01:03:11 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini # buildkit
-# Mon, 15 Jul 2024 19:03:11 GMT
-RUN set -eux; 	version='6.6-RC4'; 	sha1='604d1c89fbf721339d8a0f559b0ff7c4584074fa'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 1777 wp-content # buildkit
-# Mon, 15 Jul 2024 19:03:11 GMT
+# Fri, 19 Jul 2024 01:03:11 GMT
+RUN set -eux; 	version='6.6.1-RC1'; 	sha1='687e692d489c449a09a0dfb76a751aea5bec1f23'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 1777 wp-content # buildkit
+# Fri, 19 Jul 2024 01:03:11 GMT
 VOLUME [/var/www/html]
-# Mon, 15 Jul 2024 19:03:11 GMT
+# Fri, 19 Jul 2024 01:03:11 GMT
 COPY --chown=www-data:www-data wp-config-docker.php /usr/src/wordpress/ # buildkit
-# Mon, 15 Jul 2024 19:03:11 GMT
+# Fri, 19 Jul 2024 01:03:11 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 15 Jul 2024 19:03:11 GMT
+# Fri, 19 Jul 2024 01:03:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 15 Jul 2024 19:03:11 GMT
+# Fri, 19 Jul 2024 01:03:11 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1242,41 +1242,41 @@ CMD ["php-fpm"]
 		Last Modified: Mon, 15 Jul 2024 22:12:33 GMT  
 		Size: 394.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4551c5e863aae28d1bab38ca6fa912e811fd825893d8f76e644a005dea9c9260`  
-		Last Modified: Mon, 15 Jul 2024 22:12:38 GMT  
-		Size: 24.5 MB (24460564 bytes)  
+	-	`sha256:8ba135a8506b1fb6d52e6b677f0f64e7420cbd304fc088a7639e236e4351c5bc`  
+		Last Modified: Fri, 19 Jul 2024 19:26:09 GMT  
+		Size: 24.5 MB (24462718 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e73c76fb79cc708ba455babc2ab9f7807f58bb91a6ae5c5c86cd39811a8ec06e`  
-		Last Modified: Mon, 15 Jul 2024 22:12:34 GMT  
-		Size: 2.3 KB (2349 bytes)  
+	-	`sha256:3b4745fed4fe95e256daf289aab337eee1768606000fb70249978c154fced510`  
+		Last Modified: Fri, 19 Jul 2024 19:26:05 GMT  
+		Size: 2.4 KB (2353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0de5f636090d778a0b72ae9a597b2535afeab9b5152e321bc22c7cff0b3dc6ed`  
-		Last Modified: Mon, 15 Jul 2024 22:12:35 GMT  
-		Size: 1.7 KB (1729 bytes)  
+	-	`sha256:1f8f25544bb500334be1f7a7f66ab79cb7ff076558a50bcd349e8972df6a4915`  
+		Last Modified: Fri, 19 Jul 2024 19:26:05 GMT  
+		Size: 1.7 KB (1732 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `wordpress:beta-6.6-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull wordpress@sha256:ff830c5cf4f72f94d0ad6f5f1f253728c837fa5d1f0d9c1a420a6d64e7ddfdb8
+$ docker pull wordpress@sha256:53cc1e9899e66addc2be74fed2eba393ec85c6ad3353a8eca1c44ba9b6ac8bca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 MB (1078122 bytes)**  
+-	Total Size: **1.1 MB (1079532 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:751907db606ed4723bf15bdd8afc5af1c0b0a0d491e191ffc1c2996f6f20c52a`
+-	Image ID: `sha256:14f2c3ac9eb777507e0500dcdda5560ac213a19b586be906455699af2a9c9960`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:630abd04a87e4fb1fa5b38d41f9683bab36953a48baa4098154547191b5012b3`  
-		Last Modified: Mon, 15 Jul 2024 22:12:33 GMT  
-		Size: 1.0 MB (1029942 bytes)  
+	-	`sha256:688008eba68c92374d5aaf518f65273ae5eaf660ee1c30fef28e18eaf1dbdbae`  
+		Last Modified: Fri, 19 Jul 2024 19:26:04 GMT  
+		Size: 1.0 MB (1030644 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6951f080a0edc2408b9b9a2412791ce915c5fa242bcc97c1e99e95b57e31624`  
-		Last Modified: Mon, 15 Jul 2024 22:12:32 GMT  
-		Size: 48.2 KB (48180 bytes)  
+	-	`sha256:ec61b51e31af9e81d8d98d0f7231a0534445f08e826e52cb885b1b3d0c3684c1`  
+		Last Modified: Fri, 19 Jul 2024 19:26:04 GMT  
+		Size: 48.9 KB (48888 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `wordpress:beta-6.6-fpm-alpine` - linux; s390x
