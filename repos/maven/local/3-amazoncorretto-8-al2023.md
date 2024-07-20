@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b23128d75ba68e74b90f8c0616cafca6acd246d03cdd59719842543ba9be63e4`
+- Image ID: `sha256:7704dc3edd39a6ffcc81068cb2816f48b745f136919f5c54b19ec9e1e5984582`
 - Created: `2024-06-27T09:17:07Z`
-- Virtual Size: ~ 904.31 Mb  
+- Virtual Size: ~ 904.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -854,27 +854,17 @@ $ dnf --quiet download --source --url hwdata-0.353-1.amzn2023.0.3.noarch
 https://cdn.amazonlinux.com/al2023/core/guids/78a1f37d281a9c8eb5115c4f9b2f8306b103426d1c252c1a59e532225ea7a73b/SRPMS/../../../../blobstore/f2458f30a115e512817366ad4047e3f7bad6fbc3a34adb9a8d09393f80ccde00/hwdata-0.353-1.amzn2023.0.3.src.rpm
 ```
 
-### `rpm` package: `java-1.8.0-amazon-corretto-1.8.0_412.b08-1.amzn2023.x86_64`
+### `rpm` package: `java-1.8.0-amazon-corretto-1.8.0_422.b05-1.amzn2023.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib.
 
-Source:
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-```console
-$ dnf --quiet download --source --url java-1.8.0-amazon-corretto-1.8.0_412.b08-1.amzn2023
-https://cdn.amazonlinux.com/al2023/core/guids/78a1f37d281a9c8eb5115c4f9b2f8306b103426d1c252c1a59e532225ea7a73b/SRPMS/../../../../blobstore/4fe936c70cf3296f0b17e809008d9e3355e098b1e14331ee7370255be93f9a92/java-1.8.0-amazon-corretto-1.8.0_412.b08-1.amzn2023.src.rpm
-```
-
-### `rpm` package: `java-1.8.0-amazon-corretto-devel-1.8.0_412.b08-1.amzn2023.x86_64`
+### `rpm` package: `java-1.8.0-amazon-corretto-devel-1.8.0_422.b05-1.amzn2023.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib.
 
-Source:
-
-```console
-$ dnf --quiet download --source --url java-1.8.0-amazon-corretto-devel-1.8.0_412.b08-1.amzn2023
-https://cdn.amazonlinux.com/al2023/core/guids/78a1f37d281a9c8eb5115c4f9b2f8306b103426d1c252c1a59e532225ea7a73b/SRPMS/../../../../blobstore/4fe936c70cf3296f0b17e809008d9e3355e098b1e14331ee7370255be93f9a92/java-1.8.0-amazon-corretto-1.8.0_412.b08-1.amzn2023.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `javapackages-filesystem-6.0.0-7.amzn2023.0.6.noarch`
 
