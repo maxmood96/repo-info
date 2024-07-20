@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b642c3095fe6f2cda328e50daa3344a195a2a1f251f83218fca5ef028a1fb9b0`
+- Image ID: `sha256:27a1534131cc94445e8400211646b0689547bca510d3873dba8111e801db924f`
 - Created: `2024-07-08T08:03:40Z`
-- Virtual Size: ~ 382.80 Mb  
+- Virtual Size: ~ 382.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -408,7 +408,7 @@ $ dnf --quiet download --source --url info-5.1-5.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/b8e1cc7bdf6a6bce5dec75a062f5cbd2fd5b0c189c2011d599d78d198b20baf9/../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `java-1.8.0-amazon-corretto-devel-1.8.0_412.b08-1.x86_64`
+### `rpm` package: `java-1.8.0-amazon-corretto-devel-1.8.0_422.b05-1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib.
 
