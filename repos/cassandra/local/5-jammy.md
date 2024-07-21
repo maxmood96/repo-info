@@ -1,10 +1,10 @@
-# `cassandra:5.0-beta1`
+# `cassandra:5.0-rc1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:49741a32a922577da1da2e1dfbd4f58847b91e860185c655783a87d94013d7e6`
-- Created: `2024-03-20T22:45:06Z`
-- Virtual Size: ~ 385.38 Mb  
+- Image ID: `sha256:ecc597d876755b8677e9fb12438fdc45b83794dbbda19cc9d06ea20e8d025967`
+- Created: `2024-07-18T20:24:31Z`
+- Virtual Size: ~ 375.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -20,8 +20,8 @@
   - `CASSANDRA_HOME=/opt/cassandra`
   - `CASSANDRA_CONF=/etc/cassandra`
   - `GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55 	7464AAD9068241C50BA6A26232F35CB2F546D93E 	CEC5C50B9C629EF0F5AB2706650B72EB14CCD622`
-  - `CASSANDRA_VERSION=5.0-beta1`
-  - `CASSANDRA_SHA512=d67aa211858f090dca6ea2ac84ed405bd4791aaf493e3c8e5b24fd44e54aa3132eeca3f4e310d6d1aad1ca105515011d6e177d169a6e94af0a257ffc95b4f175`
+  - `CASSANDRA_VERSION=5.0-rc1`
+  - `CASSANDRA_SHA512=d964d937466876093c962f97735484644a1159dd4b39d8b03ff37a6c3265b063aacb434b76a8b06ffd34f821d78898b2d09dcf9cd02ce7d06d2b957f75ea24d6`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -1927,14 +1927,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.tar.gz' python3-defaults_3.10.6-1~22.04.tar.gz 145325 SHA512:4dce1fcadb47a3fbd72e489e78c6543aa4b35a0480eb4e10617b3afd223cdd244e97f79db55f2abf28367848658ae46a3cda895d3d9dcf21c530149207f080dd
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.3`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.4`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.3`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.3`
-- `python3.10=3.10.12-1~22.04.3`
-- `python3.10-minimal=3.10.12-1~22.04.3`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.4`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.4`
+- `python3.10=3.10.12-1~22.04.4`
+- `python3.10-minimal=3.10.12-1~22.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -1956,9 +1956,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.4.dsc' python3.10_3.10.12-1~22.04.4.dsc 3711 SHA512:aaf2601274e1eb79c250b70b0a59e2f20f4d628f1ad2e446c0388f8ccc3909ed6a32253a18b4a3f4e5748a80b2fdfa5ced9be39cee8bdd359b4bab7852d6af4b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.4.debian.tar.xz' python3.10_3.10.12-1~22.04.4.debian.tar.xz 224844 SHA512:33834a36ec1982b088607ee66a95c42e9cbee7e873512865acf952bb208eb8c95b851e6092c650c30516bafb24433ace643912346080a4e81c14940046ca75f3
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
