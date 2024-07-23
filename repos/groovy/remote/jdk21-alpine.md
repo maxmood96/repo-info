@@ -1,7 +1,7 @@
 ## `groovy:jdk21-alpine`
 
 ```console
-$ docker pull groovy@sha256:1eeafd97103eb87f4921bb4b4c962e8846375590039ff35e117d87435d4868cf
+$ docker pull groovy@sha256:380a6908435b51dd625efd5db39efcbadb0d3cb90bbcf825f09ced945fce0ad5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -134,40 +134,40 @@ $ docker pull groovy@sha256:bfc79c05c9d5c3b95eb0611cc09648fdbce2eb1993cdf7335250
 ### `groovy:jdk21-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull groovy@sha256:c3e295e6e352305cf1426ef63361e3c18892baae73e35846a23ac6b0f30fd466
+$ docker pull groovy@sha256:48f6736bcfffcc5eb22b8f35d6c291ed67d1fba40a68fa3bd4a1c6a364d39fd6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **203.3 MB (203333808 bytes)**  
+-	Total Size: **204.0 MB (204012927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:71c9fa57b980ed2b03db0e65b44400ef8513aa5ac169baad2d508a26aa6712a3`
+-	Image ID: `sha256:c00002948452f956950c0f71b724f916187e501fee9f5521bba060d737bd3120`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Thu, 20 Jun 2024 17:40:38 GMT
-ADD file:f5632bd5469a9b26f7ff1739bb0b5dd166613259104f7bf76d587a8a428debcc in / 
-# Thu, 20 Jun 2024 17:40:38 GMT
+# Sun, 30 Jun 2024 17:46:17 GMT
+ADD file:a71f7e9bc66668361f88637c724c44deeb2774ec268ff0a68bd99014c8a02a84 in / 
+# Sun, 30 Jun 2024 17:46:17 GMT
 CMD ["/bin/sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Sun, 30 Jun 2024 17:46:17 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Sun, 30 Jun 2024 17:46:17 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Sun, 30 Jun 2024 17:46:17 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Sun, 30 Jun 2024 17:46:17 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-21.0.3+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0f68a9122054149861f6ce9d1b1c176bbe30dd76b36b74c916ba897c12e9d970';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_aarch64_alpine-linux_hotspot_21.0.3_9.tar.gz';          ;;        amd64|x86_64)          ESUM='8e861638bf6b08c6d5837de6dc929930550928ec5fcc81b9fa7e8296afd0f9c0';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Sun, 30 Jun 2024 17:46:17 GMT
+ENV JAVA_VERSION=jdk-21.0.4+7
+# Sun, 30 Jun 2024 17:46:17 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          ESUM='849c6d5a62a1f3dc2a3d2d7be07ffda089d35b862f6160b2a288c0408c2d8be8';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_aarch64_alpine-linux_hotspot_21.0.4_7.tar.gz';          ;;        x86_64)          ESUM='8fa232fc9de5a861c1a6b0cbdc861d0b0a2bdbdd27da53d991802a460a7f0973';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Sun, 30 Jun 2024 17:46:17 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Sun, 30 Jun 2024 17:46:17 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Sun, 30 Jun 2024 17:46:17 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Sun, 30 Jun 2024 17:46:17 GMT
 CMD ["jshell"]
 # Sun, 30 Jun 2024 17:46:17 GMT
 CMD ["groovysh"]
@@ -190,63 +190,63 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:d4f2d2bd5ed999e04bfbfb910f14154b488ad32abf053954bff805f47fc3ad1e`  
-		Last Modified: Thu, 20 Jun 2024 17:41:12 GMT  
-		Size: 3.4 MB (3357202 bytes)  
+	-	`sha256:690e87867337b8441990047e169b892933e9006bdbcbed52ab7a356945477a4d`  
+		Last Modified: Mon, 22 Jul 2024 21:44:38 GMT  
+		Size: 4.1 MB (4086934 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6db88ea1e6a26d6517be6a6098be6964b10513b0bfdfea893bc9752c9c04b6e1`  
-		Last Modified: Thu, 20 Jun 2024 19:04:39 GMT  
-		Size: 13.4 MB (13425513 bytes)  
+	-	`sha256:7a966f22073e059f7f40825d33c5f5b14883597bbd313cc9566f6949f9549339`  
+		Last Modified: Tue, 23 Jul 2024 04:14:40 GMT  
+		Size: 13.3 MB (13301136 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66b0682e580b8b1aea7e2a977909ae9bbc90e100935552a7b6421a8e6dc7d1b6`  
-		Last Modified: Thu, 20 Jun 2024 19:04:48 GMT  
-		Size: 156.6 MB (156642191 bytes)  
+	-	`sha256:03beb0be73ef790fb48ba172c7044734c9f7413e5e8a6701d3e5f59b4d84754a`  
+		Last Modified: Tue, 23 Jul 2024 04:14:48 GMT  
+		Size: 156.7 MB (156728985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5483442b5e5e84e7ae2ea9fae5136bd6c4f733ea6148becc7c0957531e3cd47d`  
-		Last Modified: Thu, 20 Jun 2024 19:04:37 GMT  
-		Size: 159.0 B  
+	-	`sha256:b46b45c0f8ff6d70640017cf68d3fa3cf098ddf85e1f0293b12452b7bc15bd72`  
+		Last Modified: Tue, 23 Jul 2024 04:14:38 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:133900c1550c17ba4fc70c056a0119b660f80ef8f03f73d3a2cf42e890cb8136`  
-		Last Modified: Thu, 20 Jun 2024 19:04:37 GMT  
-		Size: 717.0 B  
+	-	`sha256:c6f48ebe7ce17adf2ecb7b03bf08601986a64619644900cd2669fcf9a8e0367e`  
+		Last Modified: Tue, 23 Jul 2024 04:14:38 GMT  
+		Size: 1.4 KB (1437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:27266c165915dccfec9f87f928bb4dd92e5b630830db8c79ccae9d3ae96e6376`  
-		Last Modified: Mon, 01 Jul 2024 23:57:51 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:a69f3a19aa9857798c223fab974fcc28300a06818bbbb425721bcc05a419eb8d`  
+		Last Modified: Tue, 23 Jul 2024 17:50:56 GMT  
+		Size: 1.0 KB (1040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64ad7712b7348a5dac7708ae7e7c6d80585a2b1db23a1e8007143f5b11aa6b39`  
-		Last Modified: Mon, 01 Jul 2024 23:57:52 GMT  
-		Size: 29.9 MB (29906526 bytes)  
+	-	`sha256:1f3cc737d26efe2cd4cb688d435c9c6d7ef3cb0125a640094579a5710051c258`  
+		Last Modified: Tue, 23 Jul 2024 17:50:58 GMT  
+		Size: 29.9 MB (29893067 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45be75961ecf0a3d5773d0d6270c0900ccb1e69b3b31a88656ba0aff837bf193`  
-		Last Modified: Mon, 01 Jul 2024 23:57:51 GMT  
+	-	`sha256:8725d7875781b0f16eadbe60dab0a83bfc67b9590d1f91bbccce44669fafca94`  
+		Last Modified: Tue, 23 Jul 2024 17:50:56 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jdk21-alpine` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:01591c7fab503627ab32ced5eb027572e6f90f983edf4cdc105b30c107c9a234
+$ docker pull groovy@sha256:d30ad5667b881f4c83b851ca4485d7fefa791d5e91238771bd3f2efe60a814b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.4 MB (1359318 bytes)**  
+-	Total Size: **1000.0 KB (1000007 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f351a5292bb590809766443db929646179f0adb895fbba4a6983a16d960394d`
+-	Image ID: `sha256:e746152609ae08588f4d2005cc6d8d3aa2d8634a2769e36da22075122f69743a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b31fbd329595b92fb85f1c877e2af97ee15f652c4168957ce69b545a1a48b6bd`  
-		Last Modified: Mon, 01 Jul 2024 23:57:51 GMT  
-		Size: 1.3 MB (1337040 bytes)  
+	-	`sha256:ea6c3f37abfb553d8f7ac5c62ce836942b48fcb4b1ed7ec7739cdc0e262727d4`  
+		Last Modified: Tue, 23 Jul 2024 17:50:57 GMT  
+		Size: 977.7 KB (977724 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a276b99d1d9494175856fa8245a4e6575d638bb093e60cccdcc36ae0e3c6fc43`  
-		Last Modified: Mon, 01 Jul 2024 23:57:50 GMT  
-		Size: 22.3 KB (22278 bytes)  
+	-	`sha256:914d3444a51fb9df97dce7d025a9ac56763fbb34e3bd28f67eccfa14d80387cd`  
+		Last Modified: Tue, 23 Jul 2024 17:50:56 GMT  
+		Size: 22.3 KB (22283 bytes)  
 		MIME: application/vnd.in-toto+json
