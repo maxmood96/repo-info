@@ -556,11 +556,21 @@ $ docker pull storm@sha256:cbbb20cd9360f9361bfd2f02b2cc856aac27e59df008ec8fc7593
 
 ## `storm:2.6.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull storm@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `storm:2.6.3-jre17`
 
-**does not exist** (yet?)
+```console
+$ docker pull storm@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `storm:latest`
 
