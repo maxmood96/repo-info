@@ -1,7 +1,7 @@
 ## `rethinkdb:bookworm-slim`
 
 ```console
-$ docker pull rethinkdb@sha256:97d9fb8de872e30a1a9114c3b9491a4c665bf118f63bbe023a93ba1cd861f40e
+$ docker pull rethinkdb@sha256:8a4b0d843ea766fe7a065bc261e9543b1dca88ce26bd4dc9b36456b9bd4395d4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,18 +16,18 @@ $ docker pull rethinkdb@sha256:97d9fb8de872e30a1a9114c3b9491a4c665bf118f63bbe023
 ### `rethinkdb:bookworm-slim` - linux; amd64
 
 ```console
-$ docker pull rethinkdb@sha256:d46194ae408e433a09b0ad64935707fd4d2f846a0f1fb39fed6a706a15a59ded
+$ docker pull rethinkdb@sha256:b03b73e4197d2085758a3de6ffa8b96b2c762977a57074d2b647d03a6525fe95
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.9 MB (48908392 bytes)**  
+-	Total Size: **48.9 MB (48909164 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:898bb84fcf05326892fcfd6db7e48a19975d11ebecfb42ddb7443aff8b425965`
+-	Image ID: `sha256:687979a0f67e726971e947a4f5713ab8983ae59a664df87b8fcfdfe7057c0f2a`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
 # Wed, 13 Dec 2023 22:17:20 GMT
-ADD file:b24689567a7c604de93e4ef1dc87c372514f692556744da43925c575b4f80df6 in / 
+ADD file:6c4730e7b12278bc7eb83b3b9d659437c92c42fc7ee70922ae8c4bebfb56a602 in / 
 # Wed, 13 Dec 2023 22:17:20 GMT
 CMD ["bash"]
 # Wed, 13 Dec 2023 22:17:20 GMT
@@ -49,48 +49,48 @@ EXPOSE map[28015/tcp:{} 29015/tcp:{} 8080/tcp:{}]
 ```
 
 -	Layers:
-	-	`sha256:f11c1adaa26e078479ccdd45312ea3b88476441b91be0ec898a7e07bfd05badc`  
-		Last Modified: Tue, 02 Jul 2024 01:28:49 GMT  
-		Size: 29.1 MB (29126278 bytes)  
+	-	`sha256:efc2b5ad9eec05befa54239d53feeae3569ccbef689aa5e5dbfc25da6c4df559`  
+		Last Modified: Tue, 23 Jul 2024 05:27:55 GMT  
+		Size: 29.1 MB (29126287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67e11538b21c9e2d9ecc355c43addc9a13f176bd157d594cbb79fe48b9df7a7e`  
-		Last Modified: Tue, 02 Jul 2024 03:26:13 GMT  
-		Size: 9.8 MB (9786535 bytes)  
+	-	`sha256:b14e32101e30c2e5120dc94feec5baf8794a155b620f500de222b32cf2e2cadb`  
+		Last Modified: Tue, 23 Jul 2024 07:16:11 GMT  
+		Size: 9.8 MB (9787378 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb65daa7e1b97965d06f434e1c660d22c523bdec7a69999626680057201cc5b2`  
-		Last Modified: Tue, 02 Jul 2024 03:26:12 GMT  
-		Size: 2.7 KB (2670 bytes)  
+	-	`sha256:8999edeec91d8564c1e8867090f7265aded1df664eb6e3a5a7f155ba241d67d6`  
+		Last Modified: Tue, 23 Jul 2024 07:16:11 GMT  
+		Size: 2.7 KB (2669 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84d93caa75dcc0a6337d79936b6408569234a5b28847836d4a5c2fe37e940c06`  
-		Last Modified: Tue, 02 Jul 2024 03:26:13 GMT  
-		Size: 10.0 MB (9992815 bytes)  
+	-	`sha256:e00c634f16aa8055968ca08a4e100aa71955d2e57f72104a53fd7cefe21d0fdd`  
+		Last Modified: Tue, 23 Jul 2024 07:16:11 GMT  
+		Size: 10.0 MB (9992736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:596ac91b69cbc57d5540e3004cc55a26baa1e99ce806c887a665dd57b7ac5237`  
-		Last Modified: Tue, 02 Jul 2024 03:26:12 GMT  
+	-	`sha256:ea2b5f04a602bd4a7a93cba5a1ed3ef87b9fa7d8dbd60c814a9923778a5792be`  
+		Last Modified: Tue, 23 Jul 2024 07:16:11 GMT  
 		Size: 94.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rethinkdb:bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull rethinkdb@sha256:02a0e1bcc1cfb40728d8cd87e3b7557b293373c6091cca4e3e55bd7fc8d97096
+$ docker pull rethinkdb@sha256:1544f46e95b4290dfa8fb5dc26bb577fecd6ec05a0561f37abe72502efecc8b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2600182 bytes)**  
+-	Total Size: **2.6 MB (2626436 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:347f8992b84b8c37b4173caf3494ff6eb33e8a9558a16e9bfb0f2f0cf7e21956`
+-	Image ID: `sha256:c16723af6771eba7c04c5b60a15d9654d50b8b70f69d24675d75a3457d47b80d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:18ac5c2510de93dbb3e2ea858b022cac72864cc49ede34da12e05f3c1e28723b`  
-		Last Modified: Tue, 02 Jul 2024 03:26:13 GMT  
-		Size: 2.6 MB (2586935 bytes)  
+	-	`sha256:7b5ebeb456e0f2d215ce9107cfbebe1808ebd6c6c1ff9b1e3cfe7ad87fc722be`  
+		Last Modified: Tue, 23 Jul 2024 07:16:11 GMT  
+		Size: 2.6 MB (2613189 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3d43f7465724b4effcbc5e1c15c96bf19f19887f65709a8e740d6a3859ebee4d`  
-		Last Modified: Tue, 02 Jul 2024 03:26:13 GMT  
+	-	`sha256:48cdb5208e1a224deb6700d664678ff207c92e153d0251e16367b995c6b97371`  
+		Last Modified: Tue, 23 Jul 2024 07:16:11 GMT  
 		Size: 13.2 KB (13247 bytes)  
 		MIME: application/vnd.in-toto+json
 
