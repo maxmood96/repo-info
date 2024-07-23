@@ -1168,7 +1168,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7`
 
 ```console
-$ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4c00f3cdf450328adeea
+$ docker pull lightstreamer@sha256:af0675c3b298fc5ba6b0d54b3d4559391ddbc095a294f5559f9ebc801c36be87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1179,104 +1179,104 @@ $ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4
 ### `lightstreamer:7` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:d4253d989f7926db27cfe519f3d94cae3e01bdda9cd74a9bfcca0e3f18fcceb7
+$ docker pull lightstreamer@sha256:804d1bcc97a2e0a5ea92a96183f1b0ad597e93281c1e4846b3f86135f25e850e
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.9 MB (269910807 bytes)**  
+-	Total Size: **272.5 MB (272510928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7163929bcbf4f1e37c90994d6ffa20fa63ded33633e7fb77c11d664dab4c4989`
+-	Image ID: `sha256:44604ef4deb24b8f6a76430f833fbda3586d41d3a9b6ada013441dee764a706b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-21.0.3+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7d3ab0e8eba95bd682cfda8041c6cb6fa21e09d0d9131316fd7c96c78969de31';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.3_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='fffa52c22d797b715a962e6c8d11ec7d79b90dd819b5bc51d62137ea4b22a340';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_x64_linux_hotspot_21.0.3_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='9a1079d7f0fc72951fdc9a0029e49a15f6ba114683aee626f882ee2c761f1d57';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.3_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='f57a078d417614e5d78c07c77a6d8a04701058cf692c8e2868d593582be92768';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
+ENV JAVA_VERSION=jdk-21.0.4+7
+# Mon, 22 Jul 2024 14:52:20 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='51fb4d03a4429c39d397d3a03a779077159317616550e4e71624c9843083e7b9';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.4_7.tar.gz';          ;;        arm64)          ESUM='d768eecddd7a515711659e02caef8516b7b7177fa34880a56398fd9822593a79';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='c208cd0fb90560644a90f928667d2f53bfe408c957a5e36206585ad874427761';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.4_7.tar.gz';          ;;        s390x)          ESUM='c900c8d64fab1e53274974fa4a4c736a5a3754485a5c56f4947281480773658a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:56:31 GMT
+# Tue, 23 Jul 2024 04:10:09 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:37 GMT
+# Tue, 23 Jul 2024 04:10:14 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:38 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.4
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.4/Lightstreamer-7.4.4.tar.gz
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:18 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 USER lightstreamer
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 EXPOSE 8080
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ec0d02fe6614e2b9257bb6c98ce0600f90c5456908c97de806e9c957321a8f1`  
-		Last Modified: Tue, 02 Jul 2024 06:02:42 GMT  
-		Size: 158.5 MB (158511791 bytes)  
+	-	`sha256:f561a59c51745f113da0b8d14a8a3e26e6e068ae45177caf2da7edfdf9a0f52f`  
+		Last Modified: Tue, 23 Jul 2024 01:10:22 GMT  
+		Size: 158.6 MB (158587297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0d053b8dd8bc02c6ecc527c86cf11615cdddfe5c05058f9aeceb20ed29596fd`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
+	-	`sha256:8fc851d1d586088490c3978839d308c2ecb7b3034d96538529d5b5fc8b419d3c`  
+		Last Modified: Tue, 23 Jul 2024 01:10:10 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b05b6f2f82698bbf2d7ba9eef538debf8e4566b9fcaa945aa32d717b5ad687ab`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
-		Size: 734.0 B  
+	-	`sha256:4a80b90d7bcc710a00162e38d8c67326714d1479444aaa3d5addf9e86e39dca8`  
+		Last Modified: Tue, 23 Jul 2024 01:10:09 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bf8c2a05e2d708459332b4b87a261ddc2a174fadca1c73dd85e20fbf28e219`  
-		Last Modified: Tue, 02 Jul 2024 09:00:53 GMT  
-		Size: 3.6 MB (3602340 bytes)  
+	-	`sha256:1e15ae9855f659fe4a5388771e26b9212bf3f612f7fd90e5679ba1695f19dced`  
+		Last Modified: Tue, 23 Jul 2024 04:11:41 GMT  
+		Size: 3.6 MB (3649383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24b6165c97f5c41747bc788570917a62ba444562ac5c45fc124ca56e641b02ce`  
-		Last Modified: Tue, 02 Jul 2024 09:00:52 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:de830fb155a8a60edb27f967c444d36fe436466a140b0808480f1f01a1d72ddd`  
+		Last Modified: Tue, 23 Jul 2024 04:11:40 GMT  
+		Size: 2.4 KB (2365 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b120dd1cc02b1a50b1bf8cc6d33bfe4afe31a6d54e3e19c62e3393807af8aa79`  
-		Last Modified: Tue, 09 Jul 2024 19:22:33 GMT  
-		Size: 59.9 MB (59938543 bytes)  
+	-	`sha256:00fa7563b80896cddcd01542c7cd36ed6522f73f1bef66e9e28ee57e878700df`  
+		Last Modified: Tue, 23 Jul 2024 04:11:43 GMT  
+		Size: 59.9 MB (59938547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7` - linux; arm64 variant v8
@@ -1819,7 +1819,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7-jdk17`
 
 ```console
-$ docker pull lightstreamer@sha256:a26e8b2e39d27727de877a6e886e716092636e27f5fc36659b9b3d144a2a1b37
+$ docker pull lightstreamer@sha256:98d5fdf9af783ce6ed42d190a88626cc1b67ed230d5622b55dab37363f15904d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1830,104 +1830,104 @@ $ docker pull lightstreamer@sha256:a26e8b2e39d27727de877a6e886e716092636e27f5fc3
 ### `lightstreamer:7-jdk17` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:4e41d8d4fd8365b10def381dde917145771edd486126da9b3384731059d3aab4
+$ docker pull lightstreamer@sha256:b8159a2fef10b71a9b0866a30fcb71f8b149595416cd60a2e5c7742968168156
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.5 MB (256500532 bytes)**  
+-	Total Size: **259.1 MB (259100982 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73c002b2d7db3fb6b2de7931f2463e89c4fa065265263434fdf7ffd750913a49`
+-	Image ID: `sha256:800afd3449547871c05c32eb563f502a0b0b2c12698976e4b54029a03f84e49e`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='a900acf3ae56b000afc35468a083b6d6fd695abec87a8abdb02743d5c72f6d6d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='aa7fb6bb342319d227a838af5c363bfa1b4a670c209372f9e6585bd79da6220c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='9b5c375ed7ce654083c6c1137d8daadebaf8657650576115f0deafab00d0f1d7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='44bdd662c3b832cfe0b808362866b8d7a700dd60e6e39716dee97211d35c230f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='af3f33c14ed3e2fcd85a390575029fbf92a491f60cfdc274544ac8ad6532de47';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
+ENV JAVA_VERSION=jdk-17.0.12+7
+# Mon, 22 Jul 2024 16:13:57 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9d4dd339bf7e6a9dcba8347661603b74c61ab2a5083ae67bf76da6285da8a778';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='8257de06bf37f0c8f19f8d542e2ab5a4e17db3ca5f29d041bd0b02ab265db021';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='ce7873ebf40ed0eb1089941ead4d3af79a205b1264f3162860d26ae957572b74';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='c97988e5a99b8ae0c47ba330b0883398c7433312db0051d8c5ff97911bae1605';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='e244947f4c9176bd559598874b6ecaafcabba19c7067271cebb78708c2e9d14f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:55:56 GMT
+# Tue, 23 Jul 2024 04:09:17 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:02 GMT
+# Tue, 23 Jul 2024 04:09:34 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 09 Jul 2024 19:20:35 GMT
+# Tue, 23 Jul 2024 04:09:57 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.4
-# Tue, 09 Jul 2024 19:20:36 GMT
+# Tue, 23 Jul 2024 04:09:57 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.4/Lightstreamer-7.4.4.tar.gz
-# Tue, 09 Jul 2024 19:20:38 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 USER lightstreamer
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 EXPOSE 8080
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fa5e31bd7af9c954088241c2cdf79c43218c05412c6e5c402e94fdb9c893356`  
-		Last Modified: Tue, 02 Jul 2024 06:02:02 GMT  
-		Size: 145.1 MB (145101581 bytes)  
+	-	`sha256:187e6e908261a007d8d2cf091569c6e9dc8c93ad7c8eb252441ba4ec0bcfc365`  
+		Last Modified: Tue, 23 Jul 2024 01:07:45 GMT  
+		Size: 145.2 MB (145177437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44a02a524682f0e809df64fab2aa2c6ebec3815ebbdac35943afed4c249e9f4d`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
+	-	`sha256:616beaf3a767d481c6c05f74d97576b03f28dd77f3b70be9c292d4d3ef85a44e`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2639b3ea106afb54aa110a0dafc50356e5da3e951c16f4690fcee54a39ae1c1f`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
-		Size: 734.0 B  
+	-	`sha256:aa2f08dd115d21ca16c6ee1b17ede5cdd5bf498db59fb16de047af827c132e92`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42bc816435ac73c1030fe9108276a95b3808b84ef919bdf9e7f74111bb2ec8b6`  
-		Last Modified: Tue, 02 Jul 2024 08:59:41 GMT  
-		Size: 3.6 MB (3602299 bytes)  
+	-	`sha256:e4ad1f9f569b207b86e809d674c444da01a766b34dc7ada8de73940e4b183f57`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 3.6 MB (3649285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc4ef579a1e117f06ce2b9a988e76699ce1ec742c112c95a0e0f8ed803a36ba`  
-		Last Modified: Tue, 02 Jul 2024 08:59:40 GMT  
-		Size: 2.4 KB (2363 bytes)  
+	-	`sha256:3ee1f98148c6a13de4322312bcd4d505e68d25748a815591220eae8f6ae95aa1`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 2.4 KB (2371 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bac5b39a0b132d65053162b82e58607aeff355030c8772a475a6e7fb8225fe4d`  
-		Last Modified: Tue, 09 Jul 2024 19:22:15 GMT  
-		Size: 59.9 MB (59938528 bytes)  
+	-	`sha256:ae11954536706cdc5f4483f9a2b28702f48fc8d141dc9a5915eccdc3a1ac303f`  
+		Last Modified: Tue, 23 Jul 2024 04:11:25 GMT  
+		Size: 59.9 MB (59938551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7-jdk17` - linux; arm64 variant v8
@@ -2036,7 +2036,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7-jdk17-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:a26e8b2e39d27727de877a6e886e716092636e27f5fc36659b9b3d144a2a1b37
+$ docker pull lightstreamer@sha256:98d5fdf9af783ce6ed42d190a88626cc1b67ed230d5622b55dab37363f15904d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2047,104 +2047,104 @@ $ docker pull lightstreamer@sha256:a26e8b2e39d27727de877a6e886e716092636e27f5fc3
 ### `lightstreamer:7-jdk17-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:4e41d8d4fd8365b10def381dde917145771edd486126da9b3384731059d3aab4
+$ docker pull lightstreamer@sha256:b8159a2fef10b71a9b0866a30fcb71f8b149595416cd60a2e5c7742968168156
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.5 MB (256500532 bytes)**  
+-	Total Size: **259.1 MB (259100982 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73c002b2d7db3fb6b2de7931f2463e89c4fa065265263434fdf7ffd750913a49`
+-	Image ID: `sha256:800afd3449547871c05c32eb563f502a0b0b2c12698976e4b54029a03f84e49e`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='a900acf3ae56b000afc35468a083b6d6fd695abec87a8abdb02743d5c72f6d6d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='aa7fb6bb342319d227a838af5c363bfa1b4a670c209372f9e6585bd79da6220c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='9b5c375ed7ce654083c6c1137d8daadebaf8657650576115f0deafab00d0f1d7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='44bdd662c3b832cfe0b808362866b8d7a700dd60e6e39716dee97211d35c230f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='af3f33c14ed3e2fcd85a390575029fbf92a491f60cfdc274544ac8ad6532de47';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
+ENV JAVA_VERSION=jdk-17.0.12+7
+# Mon, 22 Jul 2024 16:13:57 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9d4dd339bf7e6a9dcba8347661603b74c61ab2a5083ae67bf76da6285da8a778';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='8257de06bf37f0c8f19f8d542e2ab5a4e17db3ca5f29d041bd0b02ab265db021';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='ce7873ebf40ed0eb1089941ead4d3af79a205b1264f3162860d26ae957572b74';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='c97988e5a99b8ae0c47ba330b0883398c7433312db0051d8c5ff97911bae1605';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='e244947f4c9176bd559598874b6ecaafcabba19c7067271cebb78708c2e9d14f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:55:56 GMT
+# Tue, 23 Jul 2024 04:09:17 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:02 GMT
+# Tue, 23 Jul 2024 04:09:34 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 09 Jul 2024 19:20:35 GMT
+# Tue, 23 Jul 2024 04:09:57 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.4
-# Tue, 09 Jul 2024 19:20:36 GMT
+# Tue, 23 Jul 2024 04:09:57 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.4/Lightstreamer-7.4.4.tar.gz
-# Tue, 09 Jul 2024 19:20:38 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 USER lightstreamer
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 EXPOSE 8080
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fa5e31bd7af9c954088241c2cdf79c43218c05412c6e5c402e94fdb9c893356`  
-		Last Modified: Tue, 02 Jul 2024 06:02:02 GMT  
-		Size: 145.1 MB (145101581 bytes)  
+	-	`sha256:187e6e908261a007d8d2cf091569c6e9dc8c93ad7c8eb252441ba4ec0bcfc365`  
+		Last Modified: Tue, 23 Jul 2024 01:07:45 GMT  
+		Size: 145.2 MB (145177437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44a02a524682f0e809df64fab2aa2c6ebec3815ebbdac35943afed4c249e9f4d`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
+	-	`sha256:616beaf3a767d481c6c05f74d97576b03f28dd77f3b70be9c292d4d3ef85a44e`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2639b3ea106afb54aa110a0dafc50356e5da3e951c16f4690fcee54a39ae1c1f`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
-		Size: 734.0 B  
+	-	`sha256:aa2f08dd115d21ca16c6ee1b17ede5cdd5bf498db59fb16de047af827c132e92`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42bc816435ac73c1030fe9108276a95b3808b84ef919bdf9e7f74111bb2ec8b6`  
-		Last Modified: Tue, 02 Jul 2024 08:59:41 GMT  
-		Size: 3.6 MB (3602299 bytes)  
+	-	`sha256:e4ad1f9f569b207b86e809d674c444da01a766b34dc7ada8de73940e4b183f57`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 3.6 MB (3649285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc4ef579a1e117f06ce2b9a988e76699ce1ec742c112c95a0e0f8ed803a36ba`  
-		Last Modified: Tue, 02 Jul 2024 08:59:40 GMT  
-		Size: 2.4 KB (2363 bytes)  
+	-	`sha256:3ee1f98148c6a13de4322312bcd4d505e68d25748a815591220eae8f6ae95aa1`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 2.4 KB (2371 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bac5b39a0b132d65053162b82e58607aeff355030c8772a475a6e7fb8225fe4d`  
-		Last Modified: Tue, 09 Jul 2024 19:22:15 GMT  
-		Size: 59.9 MB (59938528 bytes)  
+	-	`sha256:ae11954536706cdc5f4483f9a2b28702f48fc8d141dc9a5915eccdc3a1ac303f`  
+		Last Modified: Tue, 23 Jul 2024 04:11:25 GMT  
+		Size: 59.9 MB (59938551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7-jdk17-temurin` - linux; arm64 variant v8
@@ -2253,7 +2253,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7-jdk21`
 
 ```console
-$ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4c00f3cdf450328adeea
+$ docker pull lightstreamer@sha256:af0675c3b298fc5ba6b0d54b3d4559391ddbc095a294f5559f9ebc801c36be87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2264,104 +2264,104 @@ $ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4
 ### `lightstreamer:7-jdk21` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:d4253d989f7926db27cfe519f3d94cae3e01bdda9cd74a9bfcca0e3f18fcceb7
+$ docker pull lightstreamer@sha256:804d1bcc97a2e0a5ea92a96183f1b0ad597e93281c1e4846b3f86135f25e850e
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.9 MB (269910807 bytes)**  
+-	Total Size: **272.5 MB (272510928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7163929bcbf4f1e37c90994d6ffa20fa63ded33633e7fb77c11d664dab4c4989`
+-	Image ID: `sha256:44604ef4deb24b8f6a76430f833fbda3586d41d3a9b6ada013441dee764a706b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-21.0.3+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7d3ab0e8eba95bd682cfda8041c6cb6fa21e09d0d9131316fd7c96c78969de31';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.3_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='fffa52c22d797b715a962e6c8d11ec7d79b90dd819b5bc51d62137ea4b22a340';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_x64_linux_hotspot_21.0.3_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='9a1079d7f0fc72951fdc9a0029e49a15f6ba114683aee626f882ee2c761f1d57';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.3_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='f57a078d417614e5d78c07c77a6d8a04701058cf692c8e2868d593582be92768';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
+ENV JAVA_VERSION=jdk-21.0.4+7
+# Mon, 22 Jul 2024 14:52:20 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='51fb4d03a4429c39d397d3a03a779077159317616550e4e71624c9843083e7b9';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.4_7.tar.gz';          ;;        arm64)          ESUM='d768eecddd7a515711659e02caef8516b7b7177fa34880a56398fd9822593a79';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='c208cd0fb90560644a90f928667d2f53bfe408c957a5e36206585ad874427761';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.4_7.tar.gz';          ;;        s390x)          ESUM='c900c8d64fab1e53274974fa4a4c736a5a3754485a5c56f4947281480773658a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:56:31 GMT
+# Tue, 23 Jul 2024 04:10:09 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:37 GMT
+# Tue, 23 Jul 2024 04:10:14 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:38 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.4
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.4/Lightstreamer-7.4.4.tar.gz
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:18 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 USER lightstreamer
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 EXPOSE 8080
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ec0d02fe6614e2b9257bb6c98ce0600f90c5456908c97de806e9c957321a8f1`  
-		Last Modified: Tue, 02 Jul 2024 06:02:42 GMT  
-		Size: 158.5 MB (158511791 bytes)  
+	-	`sha256:f561a59c51745f113da0b8d14a8a3e26e6e068ae45177caf2da7edfdf9a0f52f`  
+		Last Modified: Tue, 23 Jul 2024 01:10:22 GMT  
+		Size: 158.6 MB (158587297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0d053b8dd8bc02c6ecc527c86cf11615cdddfe5c05058f9aeceb20ed29596fd`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
+	-	`sha256:8fc851d1d586088490c3978839d308c2ecb7b3034d96538529d5b5fc8b419d3c`  
+		Last Modified: Tue, 23 Jul 2024 01:10:10 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b05b6f2f82698bbf2d7ba9eef538debf8e4566b9fcaa945aa32d717b5ad687ab`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
-		Size: 734.0 B  
+	-	`sha256:4a80b90d7bcc710a00162e38d8c67326714d1479444aaa3d5addf9e86e39dca8`  
+		Last Modified: Tue, 23 Jul 2024 01:10:09 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bf8c2a05e2d708459332b4b87a261ddc2a174fadca1c73dd85e20fbf28e219`  
-		Last Modified: Tue, 02 Jul 2024 09:00:53 GMT  
-		Size: 3.6 MB (3602340 bytes)  
+	-	`sha256:1e15ae9855f659fe4a5388771e26b9212bf3f612f7fd90e5679ba1695f19dced`  
+		Last Modified: Tue, 23 Jul 2024 04:11:41 GMT  
+		Size: 3.6 MB (3649383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24b6165c97f5c41747bc788570917a62ba444562ac5c45fc124ca56e641b02ce`  
-		Last Modified: Tue, 02 Jul 2024 09:00:52 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:de830fb155a8a60edb27f967c444d36fe436466a140b0808480f1f01a1d72ddd`  
+		Last Modified: Tue, 23 Jul 2024 04:11:40 GMT  
+		Size: 2.4 KB (2365 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b120dd1cc02b1a50b1bf8cc6d33bfe4afe31a6d54e3e19c62e3393807af8aa79`  
-		Last Modified: Tue, 09 Jul 2024 19:22:33 GMT  
-		Size: 59.9 MB (59938543 bytes)  
+	-	`sha256:00fa7563b80896cddcd01542c7cd36ed6522f73f1bef66e9e28ee57e878700df`  
+		Last Modified: Tue, 23 Jul 2024 04:11:43 GMT  
+		Size: 59.9 MB (59938547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7-jdk21` - linux; arm64 variant v8
@@ -2470,7 +2470,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7-jdk21-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4c00f3cdf450328adeea
+$ docker pull lightstreamer@sha256:af0675c3b298fc5ba6b0d54b3d4559391ddbc095a294f5559f9ebc801c36be87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2481,104 +2481,104 @@ $ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4
 ### `lightstreamer:7-jdk21-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:d4253d989f7926db27cfe519f3d94cae3e01bdda9cd74a9bfcca0e3f18fcceb7
+$ docker pull lightstreamer@sha256:804d1bcc97a2e0a5ea92a96183f1b0ad597e93281c1e4846b3f86135f25e850e
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.9 MB (269910807 bytes)**  
+-	Total Size: **272.5 MB (272510928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7163929bcbf4f1e37c90994d6ffa20fa63ded33633e7fb77c11d664dab4c4989`
+-	Image ID: `sha256:44604ef4deb24b8f6a76430f833fbda3586d41d3a9b6ada013441dee764a706b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-21.0.3+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7d3ab0e8eba95bd682cfda8041c6cb6fa21e09d0d9131316fd7c96c78969de31';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.3_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='fffa52c22d797b715a962e6c8d11ec7d79b90dd819b5bc51d62137ea4b22a340';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_x64_linux_hotspot_21.0.3_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='9a1079d7f0fc72951fdc9a0029e49a15f6ba114683aee626f882ee2c761f1d57';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.3_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='f57a078d417614e5d78c07c77a6d8a04701058cf692c8e2868d593582be92768';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
+ENV JAVA_VERSION=jdk-21.0.4+7
+# Mon, 22 Jul 2024 14:52:20 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='51fb4d03a4429c39d397d3a03a779077159317616550e4e71624c9843083e7b9';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.4_7.tar.gz';          ;;        arm64)          ESUM='d768eecddd7a515711659e02caef8516b7b7177fa34880a56398fd9822593a79';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='c208cd0fb90560644a90f928667d2f53bfe408c957a5e36206585ad874427761';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.4_7.tar.gz';          ;;        s390x)          ESUM='c900c8d64fab1e53274974fa4a4c736a5a3754485a5c56f4947281480773658a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:56:31 GMT
+# Tue, 23 Jul 2024 04:10:09 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:37 GMT
+# Tue, 23 Jul 2024 04:10:14 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:38 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.4
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.4/Lightstreamer-7.4.4.tar.gz
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:18 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 USER lightstreamer
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 EXPOSE 8080
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ec0d02fe6614e2b9257bb6c98ce0600f90c5456908c97de806e9c957321a8f1`  
-		Last Modified: Tue, 02 Jul 2024 06:02:42 GMT  
-		Size: 158.5 MB (158511791 bytes)  
+	-	`sha256:f561a59c51745f113da0b8d14a8a3e26e6e068ae45177caf2da7edfdf9a0f52f`  
+		Last Modified: Tue, 23 Jul 2024 01:10:22 GMT  
+		Size: 158.6 MB (158587297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0d053b8dd8bc02c6ecc527c86cf11615cdddfe5c05058f9aeceb20ed29596fd`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
+	-	`sha256:8fc851d1d586088490c3978839d308c2ecb7b3034d96538529d5b5fc8b419d3c`  
+		Last Modified: Tue, 23 Jul 2024 01:10:10 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b05b6f2f82698bbf2d7ba9eef538debf8e4566b9fcaa945aa32d717b5ad687ab`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
-		Size: 734.0 B  
+	-	`sha256:4a80b90d7bcc710a00162e38d8c67326714d1479444aaa3d5addf9e86e39dca8`  
+		Last Modified: Tue, 23 Jul 2024 01:10:09 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bf8c2a05e2d708459332b4b87a261ddc2a174fadca1c73dd85e20fbf28e219`  
-		Last Modified: Tue, 02 Jul 2024 09:00:53 GMT  
-		Size: 3.6 MB (3602340 bytes)  
+	-	`sha256:1e15ae9855f659fe4a5388771e26b9212bf3f612f7fd90e5679ba1695f19dced`  
+		Last Modified: Tue, 23 Jul 2024 04:11:41 GMT  
+		Size: 3.6 MB (3649383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24b6165c97f5c41747bc788570917a62ba444562ac5c45fc124ca56e641b02ce`  
-		Last Modified: Tue, 02 Jul 2024 09:00:52 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:de830fb155a8a60edb27f967c444d36fe436466a140b0808480f1f01a1d72ddd`  
+		Last Modified: Tue, 23 Jul 2024 04:11:40 GMT  
+		Size: 2.4 KB (2365 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b120dd1cc02b1a50b1bf8cc6d33bfe4afe31a6d54e3e19c62e3393807af8aa79`  
-		Last Modified: Tue, 09 Jul 2024 19:22:33 GMT  
-		Size: 59.9 MB (59938543 bytes)  
+	-	`sha256:00fa7563b80896cddcd01542c7cd36ed6522f73f1bef66e9e28ee57e878700df`  
+		Last Modified: Tue, 23 Jul 2024 04:11:43 GMT  
+		Size: 59.9 MB (59938547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7-jdk21-temurin` - linux; arm64 variant v8
@@ -9495,7 +9495,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.3`
 
 ```console
-$ docker pull lightstreamer@sha256:65219b8e88400cebf5355be0412b85e4593c25b0a4f3ba90eafe8208b6ef5671
+$ docker pull lightstreamer@sha256:8870eac0e19ce94575c98637ad4f5a7f09b2cfc676615e39b27248b7a119f15e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9506,104 +9506,104 @@ $ docker pull lightstreamer@sha256:65219b8e88400cebf5355be0412b85e4593c25b0a4f3b
 ### `lightstreamer:7.3` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:98f144166433b52f2d9b18d276c2c7ba3015b78dbfd407ee9eff3e739d9aacdc
+$ docker pull lightstreamer@sha256:dd46039b822a5efd6291eab5cf65148cb4604e7370ec8300f75b3fea57ee2bf6
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.4 MB (254407360 bytes)**  
+-	Total Size: **257.0 MB (257007771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05c3cf6806e9595a9609713533a9a48d0fafd6d574ece24f2870de04c0a696b3`
+-	Image ID: `sha256:10e5e695e595bef645486584a982ea0d6b6d5e4e623277b33032b0c8a0dd9a5f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='a900acf3ae56b000afc35468a083b6d6fd695abec87a8abdb02743d5c72f6d6d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='aa7fb6bb342319d227a838af5c363bfa1b4a670c209372f9e6585bd79da6220c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='9b5c375ed7ce654083c6c1137d8daadebaf8657650576115f0deafab00d0f1d7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='44bdd662c3b832cfe0b808362866b8d7a700dd60e6e39716dee97211d35c230f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='af3f33c14ed3e2fcd85a390575029fbf92a491f60cfdc274544ac8ad6532de47';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
+ENV JAVA_VERSION=jdk-17.0.12+7
+# Mon, 22 Jul 2024 16:13:57 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9d4dd339bf7e6a9dcba8347661603b74c61ab2a5083ae67bf76da6285da8a778';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='8257de06bf37f0c8f19f8d542e2ab5a4e17db3ca5f29d041bd0b02ab265db021';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='ce7873ebf40ed0eb1089941ead4d3af79a205b1264f3162860d26ae957572b74';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='c97988e5a99b8ae0c47ba330b0883398c7433312db0051d8c5ff97911bae1605';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='e244947f4c9176bd559598874b6ecaafcabba19c7067271cebb78708c2e9d14f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:55:56 GMT
+# Tue, 23 Jul 2024 04:09:17 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:02 GMT
+# Tue, 23 Jul 2024 04:09:34 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 ENV LIGHTSTREAMER_VERSION=7.3.3
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.3.3/Lightstreamer-7.3.3.tar.gz
-# Tue, 02 Jul 2024 08:56:06 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 USER lightstreamer
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 EXPOSE 8080
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fa5e31bd7af9c954088241c2cdf79c43218c05412c6e5c402e94fdb9c893356`  
-		Last Modified: Tue, 02 Jul 2024 06:02:02 GMT  
-		Size: 145.1 MB (145101581 bytes)  
+	-	`sha256:187e6e908261a007d8d2cf091569c6e9dc8c93ad7c8eb252441ba4ec0bcfc365`  
+		Last Modified: Tue, 23 Jul 2024 01:07:45 GMT  
+		Size: 145.2 MB (145177437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44a02a524682f0e809df64fab2aa2c6ebec3815ebbdac35943afed4c249e9f4d`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
+	-	`sha256:616beaf3a767d481c6c05f74d97576b03f28dd77f3b70be9c292d4d3ef85a44e`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2639b3ea106afb54aa110a0dafc50356e5da3e951c16f4690fcee54a39ae1c1f`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
-		Size: 734.0 B  
+	-	`sha256:aa2f08dd115d21ca16c6ee1b17ede5cdd5bf498db59fb16de047af827c132e92`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42bc816435ac73c1030fe9108276a95b3808b84ef919bdf9e7f74111bb2ec8b6`  
-		Last Modified: Tue, 02 Jul 2024 08:59:41 GMT  
-		Size: 3.6 MB (3602299 bytes)  
+	-	`sha256:e4ad1f9f569b207b86e809d674c444da01a766b34dc7ada8de73940e4b183f57`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 3.6 MB (3649285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc4ef579a1e117f06ce2b9a988e76699ce1ec742c112c95a0e0f8ed803a36ba`  
-		Last Modified: Tue, 02 Jul 2024 08:59:40 GMT  
-		Size: 2.4 KB (2363 bytes)  
+	-	`sha256:3ee1f98148c6a13de4322312bcd4d505e68d25748a815591220eae8f6ae95aa1`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 2.4 KB (2371 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60534e46a602710accf01dc850c09746ec8cec7f3e54229f6a422836b04f2d2c`  
-		Last Modified: Tue, 02 Jul 2024 08:59:43 GMT  
-		Size: 57.8 MB (57845356 bytes)  
+	-	`sha256:724ba9cd0fa53440718f1de02798306e7e922af1f8c04ee0f684241d8b38eba4`  
+		Last Modified: Tue, 23 Jul 2024 04:11:05 GMT  
+		Size: 57.8 MB (57845340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.3` - linux; arm64 variant v8
@@ -10146,7 +10146,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.3-jdk17`
 
 ```console
-$ docker pull lightstreamer@sha256:65219b8e88400cebf5355be0412b85e4593c25b0a4f3ba90eafe8208b6ef5671
+$ docker pull lightstreamer@sha256:8870eac0e19ce94575c98637ad4f5a7f09b2cfc676615e39b27248b7a119f15e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10157,104 +10157,104 @@ $ docker pull lightstreamer@sha256:65219b8e88400cebf5355be0412b85e4593c25b0a4f3b
 ### `lightstreamer:7.3-jdk17` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:98f144166433b52f2d9b18d276c2c7ba3015b78dbfd407ee9eff3e739d9aacdc
+$ docker pull lightstreamer@sha256:dd46039b822a5efd6291eab5cf65148cb4604e7370ec8300f75b3fea57ee2bf6
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.4 MB (254407360 bytes)**  
+-	Total Size: **257.0 MB (257007771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05c3cf6806e9595a9609713533a9a48d0fafd6d574ece24f2870de04c0a696b3`
+-	Image ID: `sha256:10e5e695e595bef645486584a982ea0d6b6d5e4e623277b33032b0c8a0dd9a5f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='a900acf3ae56b000afc35468a083b6d6fd695abec87a8abdb02743d5c72f6d6d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='aa7fb6bb342319d227a838af5c363bfa1b4a670c209372f9e6585bd79da6220c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='9b5c375ed7ce654083c6c1137d8daadebaf8657650576115f0deafab00d0f1d7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='44bdd662c3b832cfe0b808362866b8d7a700dd60e6e39716dee97211d35c230f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='af3f33c14ed3e2fcd85a390575029fbf92a491f60cfdc274544ac8ad6532de47';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
+ENV JAVA_VERSION=jdk-17.0.12+7
+# Mon, 22 Jul 2024 16:13:57 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9d4dd339bf7e6a9dcba8347661603b74c61ab2a5083ae67bf76da6285da8a778';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='8257de06bf37f0c8f19f8d542e2ab5a4e17db3ca5f29d041bd0b02ab265db021';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='ce7873ebf40ed0eb1089941ead4d3af79a205b1264f3162860d26ae957572b74';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='c97988e5a99b8ae0c47ba330b0883398c7433312db0051d8c5ff97911bae1605';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='e244947f4c9176bd559598874b6ecaafcabba19c7067271cebb78708c2e9d14f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:55:56 GMT
+# Tue, 23 Jul 2024 04:09:17 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:02 GMT
+# Tue, 23 Jul 2024 04:09:34 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 ENV LIGHTSTREAMER_VERSION=7.3.3
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.3.3/Lightstreamer-7.3.3.tar.gz
-# Tue, 02 Jul 2024 08:56:06 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 USER lightstreamer
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 EXPOSE 8080
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fa5e31bd7af9c954088241c2cdf79c43218c05412c6e5c402e94fdb9c893356`  
-		Last Modified: Tue, 02 Jul 2024 06:02:02 GMT  
-		Size: 145.1 MB (145101581 bytes)  
+	-	`sha256:187e6e908261a007d8d2cf091569c6e9dc8c93ad7c8eb252441ba4ec0bcfc365`  
+		Last Modified: Tue, 23 Jul 2024 01:07:45 GMT  
+		Size: 145.2 MB (145177437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44a02a524682f0e809df64fab2aa2c6ebec3815ebbdac35943afed4c249e9f4d`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
+	-	`sha256:616beaf3a767d481c6c05f74d97576b03f28dd77f3b70be9c292d4d3ef85a44e`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2639b3ea106afb54aa110a0dafc50356e5da3e951c16f4690fcee54a39ae1c1f`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
-		Size: 734.0 B  
+	-	`sha256:aa2f08dd115d21ca16c6ee1b17ede5cdd5bf498db59fb16de047af827c132e92`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42bc816435ac73c1030fe9108276a95b3808b84ef919bdf9e7f74111bb2ec8b6`  
-		Last Modified: Tue, 02 Jul 2024 08:59:41 GMT  
-		Size: 3.6 MB (3602299 bytes)  
+	-	`sha256:e4ad1f9f569b207b86e809d674c444da01a766b34dc7ada8de73940e4b183f57`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 3.6 MB (3649285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc4ef579a1e117f06ce2b9a988e76699ce1ec742c112c95a0e0f8ed803a36ba`  
-		Last Modified: Tue, 02 Jul 2024 08:59:40 GMT  
-		Size: 2.4 KB (2363 bytes)  
+	-	`sha256:3ee1f98148c6a13de4322312bcd4d505e68d25748a815591220eae8f6ae95aa1`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 2.4 KB (2371 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60534e46a602710accf01dc850c09746ec8cec7f3e54229f6a422836b04f2d2c`  
-		Last Modified: Tue, 02 Jul 2024 08:59:43 GMT  
-		Size: 57.8 MB (57845356 bytes)  
+	-	`sha256:724ba9cd0fa53440718f1de02798306e7e922af1f8c04ee0f684241d8b38eba4`  
+		Last Modified: Tue, 23 Jul 2024 04:11:05 GMT  
+		Size: 57.8 MB (57845340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.3-jdk17` - linux; arm64 variant v8
@@ -10363,7 +10363,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.3-jdk17-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:65219b8e88400cebf5355be0412b85e4593c25b0a4f3ba90eafe8208b6ef5671
+$ docker pull lightstreamer@sha256:8870eac0e19ce94575c98637ad4f5a7f09b2cfc676615e39b27248b7a119f15e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10374,104 +10374,104 @@ $ docker pull lightstreamer@sha256:65219b8e88400cebf5355be0412b85e4593c25b0a4f3b
 ### `lightstreamer:7.3-jdk17-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:98f144166433b52f2d9b18d276c2c7ba3015b78dbfd407ee9eff3e739d9aacdc
+$ docker pull lightstreamer@sha256:dd46039b822a5efd6291eab5cf65148cb4604e7370ec8300f75b3fea57ee2bf6
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.4 MB (254407360 bytes)**  
+-	Total Size: **257.0 MB (257007771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05c3cf6806e9595a9609713533a9a48d0fafd6d574ece24f2870de04c0a696b3`
+-	Image ID: `sha256:10e5e695e595bef645486584a982ea0d6b6d5e4e623277b33032b0c8a0dd9a5f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='a900acf3ae56b000afc35468a083b6d6fd695abec87a8abdb02743d5c72f6d6d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='aa7fb6bb342319d227a838af5c363bfa1b4a670c209372f9e6585bd79da6220c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='9b5c375ed7ce654083c6c1137d8daadebaf8657650576115f0deafab00d0f1d7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='44bdd662c3b832cfe0b808362866b8d7a700dd60e6e39716dee97211d35c230f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='af3f33c14ed3e2fcd85a390575029fbf92a491f60cfdc274544ac8ad6532de47';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
+ENV JAVA_VERSION=jdk-17.0.12+7
+# Mon, 22 Jul 2024 16:13:57 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9d4dd339bf7e6a9dcba8347661603b74c61ab2a5083ae67bf76da6285da8a778';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='8257de06bf37f0c8f19f8d542e2ab5a4e17db3ca5f29d041bd0b02ab265db021';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='ce7873ebf40ed0eb1089941ead4d3af79a205b1264f3162860d26ae957572b74';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='c97988e5a99b8ae0c47ba330b0883398c7433312db0051d8c5ff97911bae1605';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='e244947f4c9176bd559598874b6ecaafcabba19c7067271cebb78708c2e9d14f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:55:56 GMT
+# Tue, 23 Jul 2024 04:09:17 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:02 GMT
+# Tue, 23 Jul 2024 04:09:34 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 ENV LIGHTSTREAMER_VERSION=7.3.3
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.3.3/Lightstreamer-7.3.3.tar.gz
-# Tue, 02 Jul 2024 08:56:06 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 USER lightstreamer
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 EXPOSE 8080
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fa5e31bd7af9c954088241c2cdf79c43218c05412c6e5c402e94fdb9c893356`  
-		Last Modified: Tue, 02 Jul 2024 06:02:02 GMT  
-		Size: 145.1 MB (145101581 bytes)  
+	-	`sha256:187e6e908261a007d8d2cf091569c6e9dc8c93ad7c8eb252441ba4ec0bcfc365`  
+		Last Modified: Tue, 23 Jul 2024 01:07:45 GMT  
+		Size: 145.2 MB (145177437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44a02a524682f0e809df64fab2aa2c6ebec3815ebbdac35943afed4c249e9f4d`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
+	-	`sha256:616beaf3a767d481c6c05f74d97576b03f28dd77f3b70be9c292d4d3ef85a44e`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2639b3ea106afb54aa110a0dafc50356e5da3e951c16f4690fcee54a39ae1c1f`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
-		Size: 734.0 B  
+	-	`sha256:aa2f08dd115d21ca16c6ee1b17ede5cdd5bf498db59fb16de047af827c132e92`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42bc816435ac73c1030fe9108276a95b3808b84ef919bdf9e7f74111bb2ec8b6`  
-		Last Modified: Tue, 02 Jul 2024 08:59:41 GMT  
-		Size: 3.6 MB (3602299 bytes)  
+	-	`sha256:e4ad1f9f569b207b86e809d674c444da01a766b34dc7ada8de73940e4b183f57`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 3.6 MB (3649285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc4ef579a1e117f06ce2b9a988e76699ce1ec742c112c95a0e0f8ed803a36ba`  
-		Last Modified: Tue, 02 Jul 2024 08:59:40 GMT  
-		Size: 2.4 KB (2363 bytes)  
+	-	`sha256:3ee1f98148c6a13de4322312bcd4d505e68d25748a815591220eae8f6ae95aa1`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 2.4 KB (2371 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60534e46a602710accf01dc850c09746ec8cec7f3e54229f6a422836b04f2d2c`  
-		Last Modified: Tue, 02 Jul 2024 08:59:43 GMT  
-		Size: 57.8 MB (57845356 bytes)  
+	-	`sha256:724ba9cd0fa53440718f1de02798306e7e922af1f8c04ee0f684241d8b38eba4`  
+		Last Modified: Tue, 23 Jul 2024 04:11:05 GMT  
+		Size: 57.8 MB (57845340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.3-jdk17-temurin` - linux; arm64 variant v8
@@ -11006,7 +11006,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.3.3`
 
 ```console
-$ docker pull lightstreamer@sha256:65219b8e88400cebf5355be0412b85e4593c25b0a4f3ba90eafe8208b6ef5671
+$ docker pull lightstreamer@sha256:8870eac0e19ce94575c98637ad4f5a7f09b2cfc676615e39b27248b7a119f15e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11017,104 +11017,104 @@ $ docker pull lightstreamer@sha256:65219b8e88400cebf5355be0412b85e4593c25b0a4f3b
 ### `lightstreamer:7.3.3` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:98f144166433b52f2d9b18d276c2c7ba3015b78dbfd407ee9eff3e739d9aacdc
+$ docker pull lightstreamer@sha256:dd46039b822a5efd6291eab5cf65148cb4604e7370ec8300f75b3fea57ee2bf6
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.4 MB (254407360 bytes)**  
+-	Total Size: **257.0 MB (257007771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05c3cf6806e9595a9609713533a9a48d0fafd6d574ece24f2870de04c0a696b3`
+-	Image ID: `sha256:10e5e695e595bef645486584a982ea0d6b6d5e4e623277b33032b0c8a0dd9a5f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='a900acf3ae56b000afc35468a083b6d6fd695abec87a8abdb02743d5c72f6d6d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='aa7fb6bb342319d227a838af5c363bfa1b4a670c209372f9e6585bd79da6220c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='9b5c375ed7ce654083c6c1137d8daadebaf8657650576115f0deafab00d0f1d7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='44bdd662c3b832cfe0b808362866b8d7a700dd60e6e39716dee97211d35c230f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='af3f33c14ed3e2fcd85a390575029fbf92a491f60cfdc274544ac8ad6532de47';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
+ENV JAVA_VERSION=jdk-17.0.12+7
+# Mon, 22 Jul 2024 16:13:57 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9d4dd339bf7e6a9dcba8347661603b74c61ab2a5083ae67bf76da6285da8a778';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='8257de06bf37f0c8f19f8d542e2ab5a4e17db3ca5f29d041bd0b02ab265db021';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='ce7873ebf40ed0eb1089941ead4d3af79a205b1264f3162860d26ae957572b74';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='c97988e5a99b8ae0c47ba330b0883398c7433312db0051d8c5ff97911bae1605';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='e244947f4c9176bd559598874b6ecaafcabba19c7067271cebb78708c2e9d14f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:55:56 GMT
+# Tue, 23 Jul 2024 04:09:17 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:02 GMT
+# Tue, 23 Jul 2024 04:09:34 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 ENV LIGHTSTREAMER_VERSION=7.3.3
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.3.3/Lightstreamer-7.3.3.tar.gz
-# Tue, 02 Jul 2024 08:56:06 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 USER lightstreamer
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 EXPOSE 8080
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fa5e31bd7af9c954088241c2cdf79c43218c05412c6e5c402e94fdb9c893356`  
-		Last Modified: Tue, 02 Jul 2024 06:02:02 GMT  
-		Size: 145.1 MB (145101581 bytes)  
+	-	`sha256:187e6e908261a007d8d2cf091569c6e9dc8c93ad7c8eb252441ba4ec0bcfc365`  
+		Last Modified: Tue, 23 Jul 2024 01:07:45 GMT  
+		Size: 145.2 MB (145177437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44a02a524682f0e809df64fab2aa2c6ebec3815ebbdac35943afed4c249e9f4d`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
+	-	`sha256:616beaf3a767d481c6c05f74d97576b03f28dd77f3b70be9c292d4d3ef85a44e`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2639b3ea106afb54aa110a0dafc50356e5da3e951c16f4690fcee54a39ae1c1f`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
-		Size: 734.0 B  
+	-	`sha256:aa2f08dd115d21ca16c6ee1b17ede5cdd5bf498db59fb16de047af827c132e92`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42bc816435ac73c1030fe9108276a95b3808b84ef919bdf9e7f74111bb2ec8b6`  
-		Last Modified: Tue, 02 Jul 2024 08:59:41 GMT  
-		Size: 3.6 MB (3602299 bytes)  
+	-	`sha256:e4ad1f9f569b207b86e809d674c444da01a766b34dc7ada8de73940e4b183f57`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 3.6 MB (3649285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc4ef579a1e117f06ce2b9a988e76699ce1ec742c112c95a0e0f8ed803a36ba`  
-		Last Modified: Tue, 02 Jul 2024 08:59:40 GMT  
-		Size: 2.4 KB (2363 bytes)  
+	-	`sha256:3ee1f98148c6a13de4322312bcd4d505e68d25748a815591220eae8f6ae95aa1`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 2.4 KB (2371 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60534e46a602710accf01dc850c09746ec8cec7f3e54229f6a422836b04f2d2c`  
-		Last Modified: Tue, 02 Jul 2024 08:59:43 GMT  
-		Size: 57.8 MB (57845356 bytes)  
+	-	`sha256:724ba9cd0fa53440718f1de02798306e7e922af1f8c04ee0f684241d8b38eba4`  
+		Last Modified: Tue, 23 Jul 2024 04:11:05 GMT  
+		Size: 57.8 MB (57845340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.3.3` - linux; arm64 variant v8
@@ -11657,7 +11657,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.3.3-jdk17`
 
 ```console
-$ docker pull lightstreamer@sha256:65219b8e88400cebf5355be0412b85e4593c25b0a4f3ba90eafe8208b6ef5671
+$ docker pull lightstreamer@sha256:8870eac0e19ce94575c98637ad4f5a7f09b2cfc676615e39b27248b7a119f15e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11668,104 +11668,104 @@ $ docker pull lightstreamer@sha256:65219b8e88400cebf5355be0412b85e4593c25b0a4f3b
 ### `lightstreamer:7.3.3-jdk17` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:98f144166433b52f2d9b18d276c2c7ba3015b78dbfd407ee9eff3e739d9aacdc
+$ docker pull lightstreamer@sha256:dd46039b822a5efd6291eab5cf65148cb4604e7370ec8300f75b3fea57ee2bf6
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.4 MB (254407360 bytes)**  
+-	Total Size: **257.0 MB (257007771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05c3cf6806e9595a9609713533a9a48d0fafd6d574ece24f2870de04c0a696b3`
+-	Image ID: `sha256:10e5e695e595bef645486584a982ea0d6b6d5e4e623277b33032b0c8a0dd9a5f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='a900acf3ae56b000afc35468a083b6d6fd695abec87a8abdb02743d5c72f6d6d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='aa7fb6bb342319d227a838af5c363bfa1b4a670c209372f9e6585bd79da6220c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='9b5c375ed7ce654083c6c1137d8daadebaf8657650576115f0deafab00d0f1d7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='44bdd662c3b832cfe0b808362866b8d7a700dd60e6e39716dee97211d35c230f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='af3f33c14ed3e2fcd85a390575029fbf92a491f60cfdc274544ac8ad6532de47';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
+ENV JAVA_VERSION=jdk-17.0.12+7
+# Mon, 22 Jul 2024 16:13:57 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9d4dd339bf7e6a9dcba8347661603b74c61ab2a5083ae67bf76da6285da8a778';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='8257de06bf37f0c8f19f8d542e2ab5a4e17db3ca5f29d041bd0b02ab265db021';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='ce7873ebf40ed0eb1089941ead4d3af79a205b1264f3162860d26ae957572b74';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='c97988e5a99b8ae0c47ba330b0883398c7433312db0051d8c5ff97911bae1605';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='e244947f4c9176bd559598874b6ecaafcabba19c7067271cebb78708c2e9d14f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:55:56 GMT
+# Tue, 23 Jul 2024 04:09:17 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:02 GMT
+# Tue, 23 Jul 2024 04:09:34 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 ENV LIGHTSTREAMER_VERSION=7.3.3
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.3.3/Lightstreamer-7.3.3.tar.gz
-# Tue, 02 Jul 2024 08:56:06 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 USER lightstreamer
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 EXPOSE 8080
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fa5e31bd7af9c954088241c2cdf79c43218c05412c6e5c402e94fdb9c893356`  
-		Last Modified: Tue, 02 Jul 2024 06:02:02 GMT  
-		Size: 145.1 MB (145101581 bytes)  
+	-	`sha256:187e6e908261a007d8d2cf091569c6e9dc8c93ad7c8eb252441ba4ec0bcfc365`  
+		Last Modified: Tue, 23 Jul 2024 01:07:45 GMT  
+		Size: 145.2 MB (145177437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44a02a524682f0e809df64fab2aa2c6ebec3815ebbdac35943afed4c249e9f4d`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
+	-	`sha256:616beaf3a767d481c6c05f74d97576b03f28dd77f3b70be9c292d4d3ef85a44e`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2639b3ea106afb54aa110a0dafc50356e5da3e951c16f4690fcee54a39ae1c1f`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
-		Size: 734.0 B  
+	-	`sha256:aa2f08dd115d21ca16c6ee1b17ede5cdd5bf498db59fb16de047af827c132e92`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42bc816435ac73c1030fe9108276a95b3808b84ef919bdf9e7f74111bb2ec8b6`  
-		Last Modified: Tue, 02 Jul 2024 08:59:41 GMT  
-		Size: 3.6 MB (3602299 bytes)  
+	-	`sha256:e4ad1f9f569b207b86e809d674c444da01a766b34dc7ada8de73940e4b183f57`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 3.6 MB (3649285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc4ef579a1e117f06ce2b9a988e76699ce1ec742c112c95a0e0f8ed803a36ba`  
-		Last Modified: Tue, 02 Jul 2024 08:59:40 GMT  
-		Size: 2.4 KB (2363 bytes)  
+	-	`sha256:3ee1f98148c6a13de4322312bcd4d505e68d25748a815591220eae8f6ae95aa1`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 2.4 KB (2371 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60534e46a602710accf01dc850c09746ec8cec7f3e54229f6a422836b04f2d2c`  
-		Last Modified: Tue, 02 Jul 2024 08:59:43 GMT  
-		Size: 57.8 MB (57845356 bytes)  
+	-	`sha256:724ba9cd0fa53440718f1de02798306e7e922af1f8c04ee0f684241d8b38eba4`  
+		Last Modified: Tue, 23 Jul 2024 04:11:05 GMT  
+		Size: 57.8 MB (57845340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.3.3-jdk17` - linux; arm64 variant v8
@@ -11874,7 +11874,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.3.3-jdk17-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:65219b8e88400cebf5355be0412b85e4593c25b0a4f3ba90eafe8208b6ef5671
+$ docker pull lightstreamer@sha256:8870eac0e19ce94575c98637ad4f5a7f09b2cfc676615e39b27248b7a119f15e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11885,104 +11885,104 @@ $ docker pull lightstreamer@sha256:65219b8e88400cebf5355be0412b85e4593c25b0a4f3b
 ### `lightstreamer:7.3.3-jdk17-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:98f144166433b52f2d9b18d276c2c7ba3015b78dbfd407ee9eff3e739d9aacdc
+$ docker pull lightstreamer@sha256:dd46039b822a5efd6291eab5cf65148cb4604e7370ec8300f75b3fea57ee2bf6
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.4 MB (254407360 bytes)**  
+-	Total Size: **257.0 MB (257007771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05c3cf6806e9595a9609713533a9a48d0fafd6d574ece24f2870de04c0a696b3`
+-	Image ID: `sha256:10e5e695e595bef645486584a982ea0d6b6d5e4e623277b33032b0c8a0dd9a5f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='a900acf3ae56b000afc35468a083b6d6fd695abec87a8abdb02743d5c72f6d6d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='aa7fb6bb342319d227a838af5c363bfa1b4a670c209372f9e6585bd79da6220c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='9b5c375ed7ce654083c6c1137d8daadebaf8657650576115f0deafab00d0f1d7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='44bdd662c3b832cfe0b808362866b8d7a700dd60e6e39716dee97211d35c230f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='af3f33c14ed3e2fcd85a390575029fbf92a491f60cfdc274544ac8ad6532de47';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
+ENV JAVA_VERSION=jdk-17.0.12+7
+# Mon, 22 Jul 2024 16:13:57 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9d4dd339bf7e6a9dcba8347661603b74c61ab2a5083ae67bf76da6285da8a778';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='8257de06bf37f0c8f19f8d542e2ab5a4e17db3ca5f29d041bd0b02ab265db021';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='ce7873ebf40ed0eb1089941ead4d3af79a205b1264f3162860d26ae957572b74';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='c97988e5a99b8ae0c47ba330b0883398c7433312db0051d8c5ff97911bae1605';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='e244947f4c9176bd559598874b6ecaafcabba19c7067271cebb78708c2e9d14f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:55:56 GMT
+# Tue, 23 Jul 2024 04:09:17 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:02 GMT
+# Tue, 23 Jul 2024 04:09:34 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 ENV LIGHTSTREAMER_VERSION=7.3.3
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.3.3/Lightstreamer-7.3.3.tar.gz
-# Tue, 02 Jul 2024 08:56:06 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 USER lightstreamer
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 EXPOSE 8080
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 02 Jul 2024 08:56:07 GMT
+# Tue, 23 Jul 2024 04:09:44 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fa5e31bd7af9c954088241c2cdf79c43218c05412c6e5c402e94fdb9c893356`  
-		Last Modified: Tue, 02 Jul 2024 06:02:02 GMT  
-		Size: 145.1 MB (145101581 bytes)  
+	-	`sha256:187e6e908261a007d8d2cf091569c6e9dc8c93ad7c8eb252441ba4ec0bcfc365`  
+		Last Modified: Tue, 23 Jul 2024 01:07:45 GMT  
+		Size: 145.2 MB (145177437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44a02a524682f0e809df64fab2aa2c6ebec3815ebbdac35943afed4c249e9f4d`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
+	-	`sha256:616beaf3a767d481c6c05f74d97576b03f28dd77f3b70be9c292d4d3ef85a44e`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2639b3ea106afb54aa110a0dafc50356e5da3e951c16f4690fcee54a39ae1c1f`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
-		Size: 734.0 B  
+	-	`sha256:aa2f08dd115d21ca16c6ee1b17ede5cdd5bf498db59fb16de047af827c132e92`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42bc816435ac73c1030fe9108276a95b3808b84ef919bdf9e7f74111bb2ec8b6`  
-		Last Modified: Tue, 02 Jul 2024 08:59:41 GMT  
-		Size: 3.6 MB (3602299 bytes)  
+	-	`sha256:e4ad1f9f569b207b86e809d674c444da01a766b34dc7ada8de73940e4b183f57`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 3.6 MB (3649285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc4ef579a1e117f06ce2b9a988e76699ce1ec742c112c95a0e0f8ed803a36ba`  
-		Last Modified: Tue, 02 Jul 2024 08:59:40 GMT  
-		Size: 2.4 KB (2363 bytes)  
+	-	`sha256:3ee1f98148c6a13de4322312bcd4d505e68d25748a815591220eae8f6ae95aa1`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 2.4 KB (2371 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60534e46a602710accf01dc850c09746ec8cec7f3e54229f6a422836b04f2d2c`  
-		Last Modified: Tue, 02 Jul 2024 08:59:43 GMT  
-		Size: 57.8 MB (57845356 bytes)  
+	-	`sha256:724ba9cd0fa53440718f1de02798306e7e922af1f8c04ee0f684241d8b38eba4`  
+		Last Modified: Tue, 23 Jul 2024 04:11:05 GMT  
+		Size: 57.8 MB (57845340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.3.3-jdk17-temurin` - linux; arm64 variant v8
@@ -12517,7 +12517,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.4`
 
 ```console
-$ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4c00f3cdf450328adeea
+$ docker pull lightstreamer@sha256:af0675c3b298fc5ba6b0d54b3d4559391ddbc095a294f5559f9ebc801c36be87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12528,104 +12528,104 @@ $ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4
 ### `lightstreamer:7.4` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:d4253d989f7926db27cfe519f3d94cae3e01bdda9cd74a9bfcca0e3f18fcceb7
+$ docker pull lightstreamer@sha256:804d1bcc97a2e0a5ea92a96183f1b0ad597e93281c1e4846b3f86135f25e850e
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.9 MB (269910807 bytes)**  
+-	Total Size: **272.5 MB (272510928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7163929bcbf4f1e37c90994d6ffa20fa63ded33633e7fb77c11d664dab4c4989`
+-	Image ID: `sha256:44604ef4deb24b8f6a76430f833fbda3586d41d3a9b6ada013441dee764a706b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-21.0.3+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7d3ab0e8eba95bd682cfda8041c6cb6fa21e09d0d9131316fd7c96c78969de31';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.3_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='fffa52c22d797b715a962e6c8d11ec7d79b90dd819b5bc51d62137ea4b22a340';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_x64_linux_hotspot_21.0.3_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='9a1079d7f0fc72951fdc9a0029e49a15f6ba114683aee626f882ee2c761f1d57';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.3_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='f57a078d417614e5d78c07c77a6d8a04701058cf692c8e2868d593582be92768';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
+ENV JAVA_VERSION=jdk-21.0.4+7
+# Mon, 22 Jul 2024 14:52:20 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='51fb4d03a4429c39d397d3a03a779077159317616550e4e71624c9843083e7b9';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.4_7.tar.gz';          ;;        arm64)          ESUM='d768eecddd7a515711659e02caef8516b7b7177fa34880a56398fd9822593a79';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='c208cd0fb90560644a90f928667d2f53bfe408c957a5e36206585ad874427761';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.4_7.tar.gz';          ;;        s390x)          ESUM='c900c8d64fab1e53274974fa4a4c736a5a3754485a5c56f4947281480773658a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:56:31 GMT
+# Tue, 23 Jul 2024 04:10:09 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:37 GMT
+# Tue, 23 Jul 2024 04:10:14 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:38 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.4
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.4/Lightstreamer-7.4.4.tar.gz
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:18 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 USER lightstreamer
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 EXPOSE 8080
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ec0d02fe6614e2b9257bb6c98ce0600f90c5456908c97de806e9c957321a8f1`  
-		Last Modified: Tue, 02 Jul 2024 06:02:42 GMT  
-		Size: 158.5 MB (158511791 bytes)  
+	-	`sha256:f561a59c51745f113da0b8d14a8a3e26e6e068ae45177caf2da7edfdf9a0f52f`  
+		Last Modified: Tue, 23 Jul 2024 01:10:22 GMT  
+		Size: 158.6 MB (158587297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0d053b8dd8bc02c6ecc527c86cf11615cdddfe5c05058f9aeceb20ed29596fd`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
+	-	`sha256:8fc851d1d586088490c3978839d308c2ecb7b3034d96538529d5b5fc8b419d3c`  
+		Last Modified: Tue, 23 Jul 2024 01:10:10 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b05b6f2f82698bbf2d7ba9eef538debf8e4566b9fcaa945aa32d717b5ad687ab`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
-		Size: 734.0 B  
+	-	`sha256:4a80b90d7bcc710a00162e38d8c67326714d1479444aaa3d5addf9e86e39dca8`  
+		Last Modified: Tue, 23 Jul 2024 01:10:09 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bf8c2a05e2d708459332b4b87a261ddc2a174fadca1c73dd85e20fbf28e219`  
-		Last Modified: Tue, 02 Jul 2024 09:00:53 GMT  
-		Size: 3.6 MB (3602340 bytes)  
+	-	`sha256:1e15ae9855f659fe4a5388771e26b9212bf3f612f7fd90e5679ba1695f19dced`  
+		Last Modified: Tue, 23 Jul 2024 04:11:41 GMT  
+		Size: 3.6 MB (3649383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24b6165c97f5c41747bc788570917a62ba444562ac5c45fc124ca56e641b02ce`  
-		Last Modified: Tue, 02 Jul 2024 09:00:52 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:de830fb155a8a60edb27f967c444d36fe436466a140b0808480f1f01a1d72ddd`  
+		Last Modified: Tue, 23 Jul 2024 04:11:40 GMT  
+		Size: 2.4 KB (2365 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b120dd1cc02b1a50b1bf8cc6d33bfe4afe31a6d54e3e19c62e3393807af8aa79`  
-		Last Modified: Tue, 09 Jul 2024 19:22:33 GMT  
-		Size: 59.9 MB (59938543 bytes)  
+	-	`sha256:00fa7563b80896cddcd01542c7cd36ed6522f73f1bef66e9e28ee57e878700df`  
+		Last Modified: Tue, 23 Jul 2024 04:11:43 GMT  
+		Size: 59.9 MB (59938547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.4` - linux; arm64 variant v8
@@ -13168,7 +13168,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.4-jdk17`
 
 ```console
-$ docker pull lightstreamer@sha256:a26e8b2e39d27727de877a6e886e716092636e27f5fc36659b9b3d144a2a1b37
+$ docker pull lightstreamer@sha256:98d5fdf9af783ce6ed42d190a88626cc1b67ed230d5622b55dab37363f15904d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13179,104 +13179,104 @@ $ docker pull lightstreamer@sha256:a26e8b2e39d27727de877a6e886e716092636e27f5fc3
 ### `lightstreamer:7.4-jdk17` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:4e41d8d4fd8365b10def381dde917145771edd486126da9b3384731059d3aab4
+$ docker pull lightstreamer@sha256:b8159a2fef10b71a9b0866a30fcb71f8b149595416cd60a2e5c7742968168156
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.5 MB (256500532 bytes)**  
+-	Total Size: **259.1 MB (259100982 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73c002b2d7db3fb6b2de7931f2463e89c4fa065265263434fdf7ffd750913a49`
+-	Image ID: `sha256:800afd3449547871c05c32eb563f502a0b0b2c12698976e4b54029a03f84e49e`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='a900acf3ae56b000afc35468a083b6d6fd695abec87a8abdb02743d5c72f6d6d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='aa7fb6bb342319d227a838af5c363bfa1b4a670c209372f9e6585bd79da6220c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='9b5c375ed7ce654083c6c1137d8daadebaf8657650576115f0deafab00d0f1d7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='44bdd662c3b832cfe0b808362866b8d7a700dd60e6e39716dee97211d35c230f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='af3f33c14ed3e2fcd85a390575029fbf92a491f60cfdc274544ac8ad6532de47';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
+ENV JAVA_VERSION=jdk-17.0.12+7
+# Mon, 22 Jul 2024 16:13:57 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9d4dd339bf7e6a9dcba8347661603b74c61ab2a5083ae67bf76da6285da8a778';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='8257de06bf37f0c8f19f8d542e2ab5a4e17db3ca5f29d041bd0b02ab265db021';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='ce7873ebf40ed0eb1089941ead4d3af79a205b1264f3162860d26ae957572b74';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='c97988e5a99b8ae0c47ba330b0883398c7433312db0051d8c5ff97911bae1605';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='e244947f4c9176bd559598874b6ecaafcabba19c7067271cebb78708c2e9d14f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:55:56 GMT
+# Tue, 23 Jul 2024 04:09:17 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:02 GMT
+# Tue, 23 Jul 2024 04:09:34 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 09 Jul 2024 19:20:35 GMT
+# Tue, 23 Jul 2024 04:09:57 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.4
-# Tue, 09 Jul 2024 19:20:36 GMT
+# Tue, 23 Jul 2024 04:09:57 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.4/Lightstreamer-7.4.4.tar.gz
-# Tue, 09 Jul 2024 19:20:38 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 USER lightstreamer
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 EXPOSE 8080
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fa5e31bd7af9c954088241c2cdf79c43218c05412c6e5c402e94fdb9c893356`  
-		Last Modified: Tue, 02 Jul 2024 06:02:02 GMT  
-		Size: 145.1 MB (145101581 bytes)  
+	-	`sha256:187e6e908261a007d8d2cf091569c6e9dc8c93ad7c8eb252441ba4ec0bcfc365`  
+		Last Modified: Tue, 23 Jul 2024 01:07:45 GMT  
+		Size: 145.2 MB (145177437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44a02a524682f0e809df64fab2aa2c6ebec3815ebbdac35943afed4c249e9f4d`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
+	-	`sha256:616beaf3a767d481c6c05f74d97576b03f28dd77f3b70be9c292d4d3ef85a44e`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2639b3ea106afb54aa110a0dafc50356e5da3e951c16f4690fcee54a39ae1c1f`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
-		Size: 734.0 B  
+	-	`sha256:aa2f08dd115d21ca16c6ee1b17ede5cdd5bf498db59fb16de047af827c132e92`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42bc816435ac73c1030fe9108276a95b3808b84ef919bdf9e7f74111bb2ec8b6`  
-		Last Modified: Tue, 02 Jul 2024 08:59:41 GMT  
-		Size: 3.6 MB (3602299 bytes)  
+	-	`sha256:e4ad1f9f569b207b86e809d674c444da01a766b34dc7ada8de73940e4b183f57`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 3.6 MB (3649285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc4ef579a1e117f06ce2b9a988e76699ce1ec742c112c95a0e0f8ed803a36ba`  
-		Last Modified: Tue, 02 Jul 2024 08:59:40 GMT  
-		Size: 2.4 KB (2363 bytes)  
+	-	`sha256:3ee1f98148c6a13de4322312bcd4d505e68d25748a815591220eae8f6ae95aa1`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 2.4 KB (2371 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bac5b39a0b132d65053162b82e58607aeff355030c8772a475a6e7fb8225fe4d`  
-		Last Modified: Tue, 09 Jul 2024 19:22:15 GMT  
-		Size: 59.9 MB (59938528 bytes)  
+	-	`sha256:ae11954536706cdc5f4483f9a2b28702f48fc8d141dc9a5915eccdc3a1ac303f`  
+		Last Modified: Tue, 23 Jul 2024 04:11:25 GMT  
+		Size: 59.9 MB (59938551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.4-jdk17` - linux; arm64 variant v8
@@ -13385,7 +13385,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.4-jdk17-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:a26e8b2e39d27727de877a6e886e716092636e27f5fc36659b9b3d144a2a1b37
+$ docker pull lightstreamer@sha256:98d5fdf9af783ce6ed42d190a88626cc1b67ed230d5622b55dab37363f15904d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13396,104 +13396,104 @@ $ docker pull lightstreamer@sha256:a26e8b2e39d27727de877a6e886e716092636e27f5fc3
 ### `lightstreamer:7.4-jdk17-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:4e41d8d4fd8365b10def381dde917145771edd486126da9b3384731059d3aab4
+$ docker pull lightstreamer@sha256:b8159a2fef10b71a9b0866a30fcb71f8b149595416cd60a2e5c7742968168156
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.5 MB (256500532 bytes)**  
+-	Total Size: **259.1 MB (259100982 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73c002b2d7db3fb6b2de7931f2463e89c4fa065265263434fdf7ffd750913a49`
+-	Image ID: `sha256:800afd3449547871c05c32eb563f502a0b0b2c12698976e4b54029a03f84e49e`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='a900acf3ae56b000afc35468a083b6d6fd695abec87a8abdb02743d5c72f6d6d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='aa7fb6bb342319d227a838af5c363bfa1b4a670c209372f9e6585bd79da6220c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='9b5c375ed7ce654083c6c1137d8daadebaf8657650576115f0deafab00d0f1d7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='44bdd662c3b832cfe0b808362866b8d7a700dd60e6e39716dee97211d35c230f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='af3f33c14ed3e2fcd85a390575029fbf92a491f60cfdc274544ac8ad6532de47';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
+ENV JAVA_VERSION=jdk-17.0.12+7
+# Mon, 22 Jul 2024 16:13:57 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9d4dd339bf7e6a9dcba8347661603b74c61ab2a5083ae67bf76da6285da8a778';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='8257de06bf37f0c8f19f8d542e2ab5a4e17db3ca5f29d041bd0b02ab265db021';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='ce7873ebf40ed0eb1089941ead4d3af79a205b1264f3162860d26ae957572b74';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='c97988e5a99b8ae0c47ba330b0883398c7433312db0051d8c5ff97911bae1605';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='e244947f4c9176bd559598874b6ecaafcabba19c7067271cebb78708c2e9d14f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:55:56 GMT
+# Tue, 23 Jul 2024 04:09:17 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:02 GMT
+# Tue, 23 Jul 2024 04:09:34 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 09 Jul 2024 19:20:35 GMT
+# Tue, 23 Jul 2024 04:09:57 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.4
-# Tue, 09 Jul 2024 19:20:36 GMT
+# Tue, 23 Jul 2024 04:09:57 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.4/Lightstreamer-7.4.4.tar.gz
-# Tue, 09 Jul 2024 19:20:38 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 USER lightstreamer
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 EXPOSE 8080
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fa5e31bd7af9c954088241c2cdf79c43218c05412c6e5c402e94fdb9c893356`  
-		Last Modified: Tue, 02 Jul 2024 06:02:02 GMT  
-		Size: 145.1 MB (145101581 bytes)  
+	-	`sha256:187e6e908261a007d8d2cf091569c6e9dc8c93ad7c8eb252441ba4ec0bcfc365`  
+		Last Modified: Tue, 23 Jul 2024 01:07:45 GMT  
+		Size: 145.2 MB (145177437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44a02a524682f0e809df64fab2aa2c6ebec3815ebbdac35943afed4c249e9f4d`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
+	-	`sha256:616beaf3a767d481c6c05f74d97576b03f28dd77f3b70be9c292d4d3ef85a44e`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2639b3ea106afb54aa110a0dafc50356e5da3e951c16f4690fcee54a39ae1c1f`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
-		Size: 734.0 B  
+	-	`sha256:aa2f08dd115d21ca16c6ee1b17ede5cdd5bf498db59fb16de047af827c132e92`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42bc816435ac73c1030fe9108276a95b3808b84ef919bdf9e7f74111bb2ec8b6`  
-		Last Modified: Tue, 02 Jul 2024 08:59:41 GMT  
-		Size: 3.6 MB (3602299 bytes)  
+	-	`sha256:e4ad1f9f569b207b86e809d674c444da01a766b34dc7ada8de73940e4b183f57`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 3.6 MB (3649285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc4ef579a1e117f06ce2b9a988e76699ce1ec742c112c95a0e0f8ed803a36ba`  
-		Last Modified: Tue, 02 Jul 2024 08:59:40 GMT  
-		Size: 2.4 KB (2363 bytes)  
+	-	`sha256:3ee1f98148c6a13de4322312bcd4d505e68d25748a815591220eae8f6ae95aa1`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 2.4 KB (2371 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bac5b39a0b132d65053162b82e58607aeff355030c8772a475a6e7fb8225fe4d`  
-		Last Modified: Tue, 09 Jul 2024 19:22:15 GMT  
-		Size: 59.9 MB (59938528 bytes)  
+	-	`sha256:ae11954536706cdc5f4483f9a2b28702f48fc8d141dc9a5915eccdc3a1ac303f`  
+		Last Modified: Tue, 23 Jul 2024 04:11:25 GMT  
+		Size: 59.9 MB (59938551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.4-jdk17-temurin` - linux; arm64 variant v8
@@ -13602,7 +13602,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.4-jdk21`
 
 ```console
-$ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4c00f3cdf450328adeea
+$ docker pull lightstreamer@sha256:af0675c3b298fc5ba6b0d54b3d4559391ddbc095a294f5559f9ebc801c36be87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13613,104 +13613,104 @@ $ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4
 ### `lightstreamer:7.4-jdk21` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:d4253d989f7926db27cfe519f3d94cae3e01bdda9cd74a9bfcca0e3f18fcceb7
+$ docker pull lightstreamer@sha256:804d1bcc97a2e0a5ea92a96183f1b0ad597e93281c1e4846b3f86135f25e850e
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.9 MB (269910807 bytes)**  
+-	Total Size: **272.5 MB (272510928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7163929bcbf4f1e37c90994d6ffa20fa63ded33633e7fb77c11d664dab4c4989`
+-	Image ID: `sha256:44604ef4deb24b8f6a76430f833fbda3586d41d3a9b6ada013441dee764a706b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-21.0.3+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7d3ab0e8eba95bd682cfda8041c6cb6fa21e09d0d9131316fd7c96c78969de31';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.3_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='fffa52c22d797b715a962e6c8d11ec7d79b90dd819b5bc51d62137ea4b22a340';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_x64_linux_hotspot_21.0.3_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='9a1079d7f0fc72951fdc9a0029e49a15f6ba114683aee626f882ee2c761f1d57';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.3_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='f57a078d417614e5d78c07c77a6d8a04701058cf692c8e2868d593582be92768';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
+ENV JAVA_VERSION=jdk-21.0.4+7
+# Mon, 22 Jul 2024 14:52:20 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='51fb4d03a4429c39d397d3a03a779077159317616550e4e71624c9843083e7b9';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.4_7.tar.gz';          ;;        arm64)          ESUM='d768eecddd7a515711659e02caef8516b7b7177fa34880a56398fd9822593a79';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='c208cd0fb90560644a90f928667d2f53bfe408c957a5e36206585ad874427761';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.4_7.tar.gz';          ;;        s390x)          ESUM='c900c8d64fab1e53274974fa4a4c736a5a3754485a5c56f4947281480773658a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:56:31 GMT
+# Tue, 23 Jul 2024 04:10:09 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:37 GMT
+# Tue, 23 Jul 2024 04:10:14 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:38 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.4
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.4/Lightstreamer-7.4.4.tar.gz
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:18 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 USER lightstreamer
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 EXPOSE 8080
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ec0d02fe6614e2b9257bb6c98ce0600f90c5456908c97de806e9c957321a8f1`  
-		Last Modified: Tue, 02 Jul 2024 06:02:42 GMT  
-		Size: 158.5 MB (158511791 bytes)  
+	-	`sha256:f561a59c51745f113da0b8d14a8a3e26e6e068ae45177caf2da7edfdf9a0f52f`  
+		Last Modified: Tue, 23 Jul 2024 01:10:22 GMT  
+		Size: 158.6 MB (158587297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0d053b8dd8bc02c6ecc527c86cf11615cdddfe5c05058f9aeceb20ed29596fd`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
+	-	`sha256:8fc851d1d586088490c3978839d308c2ecb7b3034d96538529d5b5fc8b419d3c`  
+		Last Modified: Tue, 23 Jul 2024 01:10:10 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b05b6f2f82698bbf2d7ba9eef538debf8e4566b9fcaa945aa32d717b5ad687ab`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
-		Size: 734.0 B  
+	-	`sha256:4a80b90d7bcc710a00162e38d8c67326714d1479444aaa3d5addf9e86e39dca8`  
+		Last Modified: Tue, 23 Jul 2024 01:10:09 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bf8c2a05e2d708459332b4b87a261ddc2a174fadca1c73dd85e20fbf28e219`  
-		Last Modified: Tue, 02 Jul 2024 09:00:53 GMT  
-		Size: 3.6 MB (3602340 bytes)  
+	-	`sha256:1e15ae9855f659fe4a5388771e26b9212bf3f612f7fd90e5679ba1695f19dced`  
+		Last Modified: Tue, 23 Jul 2024 04:11:41 GMT  
+		Size: 3.6 MB (3649383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24b6165c97f5c41747bc788570917a62ba444562ac5c45fc124ca56e641b02ce`  
-		Last Modified: Tue, 02 Jul 2024 09:00:52 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:de830fb155a8a60edb27f967c444d36fe436466a140b0808480f1f01a1d72ddd`  
+		Last Modified: Tue, 23 Jul 2024 04:11:40 GMT  
+		Size: 2.4 KB (2365 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b120dd1cc02b1a50b1bf8cc6d33bfe4afe31a6d54e3e19c62e3393807af8aa79`  
-		Last Modified: Tue, 09 Jul 2024 19:22:33 GMT  
-		Size: 59.9 MB (59938543 bytes)  
+	-	`sha256:00fa7563b80896cddcd01542c7cd36ed6522f73f1bef66e9e28ee57e878700df`  
+		Last Modified: Tue, 23 Jul 2024 04:11:43 GMT  
+		Size: 59.9 MB (59938547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.4-jdk21` - linux; arm64 variant v8
@@ -13819,7 +13819,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.4-jdk21-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4c00f3cdf450328adeea
+$ docker pull lightstreamer@sha256:af0675c3b298fc5ba6b0d54b3d4559391ddbc095a294f5559f9ebc801c36be87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13830,104 +13830,104 @@ $ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4
 ### `lightstreamer:7.4-jdk21-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:d4253d989f7926db27cfe519f3d94cae3e01bdda9cd74a9bfcca0e3f18fcceb7
+$ docker pull lightstreamer@sha256:804d1bcc97a2e0a5ea92a96183f1b0ad597e93281c1e4846b3f86135f25e850e
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.9 MB (269910807 bytes)**  
+-	Total Size: **272.5 MB (272510928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7163929bcbf4f1e37c90994d6ffa20fa63ded33633e7fb77c11d664dab4c4989`
+-	Image ID: `sha256:44604ef4deb24b8f6a76430f833fbda3586d41d3a9b6ada013441dee764a706b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-21.0.3+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7d3ab0e8eba95bd682cfda8041c6cb6fa21e09d0d9131316fd7c96c78969de31';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.3_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='fffa52c22d797b715a962e6c8d11ec7d79b90dd819b5bc51d62137ea4b22a340';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_x64_linux_hotspot_21.0.3_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='9a1079d7f0fc72951fdc9a0029e49a15f6ba114683aee626f882ee2c761f1d57';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.3_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='f57a078d417614e5d78c07c77a6d8a04701058cf692c8e2868d593582be92768';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
+ENV JAVA_VERSION=jdk-21.0.4+7
+# Mon, 22 Jul 2024 14:52:20 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='51fb4d03a4429c39d397d3a03a779077159317616550e4e71624c9843083e7b9';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.4_7.tar.gz';          ;;        arm64)          ESUM='d768eecddd7a515711659e02caef8516b7b7177fa34880a56398fd9822593a79';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='c208cd0fb90560644a90f928667d2f53bfe408c957a5e36206585ad874427761';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.4_7.tar.gz';          ;;        s390x)          ESUM='c900c8d64fab1e53274974fa4a4c736a5a3754485a5c56f4947281480773658a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:56:31 GMT
+# Tue, 23 Jul 2024 04:10:09 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:37 GMT
+# Tue, 23 Jul 2024 04:10:14 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:38 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.4
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.4/Lightstreamer-7.4.4.tar.gz
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:18 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 USER lightstreamer
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 EXPOSE 8080
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ec0d02fe6614e2b9257bb6c98ce0600f90c5456908c97de806e9c957321a8f1`  
-		Last Modified: Tue, 02 Jul 2024 06:02:42 GMT  
-		Size: 158.5 MB (158511791 bytes)  
+	-	`sha256:f561a59c51745f113da0b8d14a8a3e26e6e068ae45177caf2da7edfdf9a0f52f`  
+		Last Modified: Tue, 23 Jul 2024 01:10:22 GMT  
+		Size: 158.6 MB (158587297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0d053b8dd8bc02c6ecc527c86cf11615cdddfe5c05058f9aeceb20ed29596fd`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
+	-	`sha256:8fc851d1d586088490c3978839d308c2ecb7b3034d96538529d5b5fc8b419d3c`  
+		Last Modified: Tue, 23 Jul 2024 01:10:10 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b05b6f2f82698bbf2d7ba9eef538debf8e4566b9fcaa945aa32d717b5ad687ab`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
-		Size: 734.0 B  
+	-	`sha256:4a80b90d7bcc710a00162e38d8c67326714d1479444aaa3d5addf9e86e39dca8`  
+		Last Modified: Tue, 23 Jul 2024 01:10:09 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bf8c2a05e2d708459332b4b87a261ddc2a174fadca1c73dd85e20fbf28e219`  
-		Last Modified: Tue, 02 Jul 2024 09:00:53 GMT  
-		Size: 3.6 MB (3602340 bytes)  
+	-	`sha256:1e15ae9855f659fe4a5388771e26b9212bf3f612f7fd90e5679ba1695f19dced`  
+		Last Modified: Tue, 23 Jul 2024 04:11:41 GMT  
+		Size: 3.6 MB (3649383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24b6165c97f5c41747bc788570917a62ba444562ac5c45fc124ca56e641b02ce`  
-		Last Modified: Tue, 02 Jul 2024 09:00:52 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:de830fb155a8a60edb27f967c444d36fe436466a140b0808480f1f01a1d72ddd`  
+		Last Modified: Tue, 23 Jul 2024 04:11:40 GMT  
+		Size: 2.4 KB (2365 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b120dd1cc02b1a50b1bf8cc6d33bfe4afe31a6d54e3e19c62e3393807af8aa79`  
-		Last Modified: Tue, 09 Jul 2024 19:22:33 GMT  
-		Size: 59.9 MB (59938543 bytes)  
+	-	`sha256:00fa7563b80896cddcd01542c7cd36ed6522f73f1bef66e9e28ee57e878700df`  
+		Last Modified: Tue, 23 Jul 2024 04:11:43 GMT  
+		Size: 59.9 MB (59938547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.4-jdk21-temurin` - linux; arm64 variant v8
@@ -14462,7 +14462,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.4.4`
 
 ```console
-$ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4c00f3cdf450328adeea
+$ docker pull lightstreamer@sha256:af0675c3b298fc5ba6b0d54b3d4559391ddbc095a294f5559f9ebc801c36be87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14473,104 +14473,104 @@ $ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4
 ### `lightstreamer:7.4.4` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:d4253d989f7926db27cfe519f3d94cae3e01bdda9cd74a9bfcca0e3f18fcceb7
+$ docker pull lightstreamer@sha256:804d1bcc97a2e0a5ea92a96183f1b0ad597e93281c1e4846b3f86135f25e850e
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.9 MB (269910807 bytes)**  
+-	Total Size: **272.5 MB (272510928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7163929bcbf4f1e37c90994d6ffa20fa63ded33633e7fb77c11d664dab4c4989`
+-	Image ID: `sha256:44604ef4deb24b8f6a76430f833fbda3586d41d3a9b6ada013441dee764a706b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-21.0.3+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7d3ab0e8eba95bd682cfda8041c6cb6fa21e09d0d9131316fd7c96c78969de31';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.3_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='fffa52c22d797b715a962e6c8d11ec7d79b90dd819b5bc51d62137ea4b22a340';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_x64_linux_hotspot_21.0.3_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='9a1079d7f0fc72951fdc9a0029e49a15f6ba114683aee626f882ee2c761f1d57';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.3_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='f57a078d417614e5d78c07c77a6d8a04701058cf692c8e2868d593582be92768';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
+ENV JAVA_VERSION=jdk-21.0.4+7
+# Mon, 22 Jul 2024 14:52:20 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='51fb4d03a4429c39d397d3a03a779077159317616550e4e71624c9843083e7b9';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.4_7.tar.gz';          ;;        arm64)          ESUM='d768eecddd7a515711659e02caef8516b7b7177fa34880a56398fd9822593a79';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='c208cd0fb90560644a90f928667d2f53bfe408c957a5e36206585ad874427761';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.4_7.tar.gz';          ;;        s390x)          ESUM='c900c8d64fab1e53274974fa4a4c736a5a3754485a5c56f4947281480773658a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:56:31 GMT
+# Tue, 23 Jul 2024 04:10:09 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:37 GMT
+# Tue, 23 Jul 2024 04:10:14 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:38 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.4
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.4/Lightstreamer-7.4.4.tar.gz
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:18 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 USER lightstreamer
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 EXPOSE 8080
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ec0d02fe6614e2b9257bb6c98ce0600f90c5456908c97de806e9c957321a8f1`  
-		Last Modified: Tue, 02 Jul 2024 06:02:42 GMT  
-		Size: 158.5 MB (158511791 bytes)  
+	-	`sha256:f561a59c51745f113da0b8d14a8a3e26e6e068ae45177caf2da7edfdf9a0f52f`  
+		Last Modified: Tue, 23 Jul 2024 01:10:22 GMT  
+		Size: 158.6 MB (158587297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0d053b8dd8bc02c6ecc527c86cf11615cdddfe5c05058f9aeceb20ed29596fd`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
+	-	`sha256:8fc851d1d586088490c3978839d308c2ecb7b3034d96538529d5b5fc8b419d3c`  
+		Last Modified: Tue, 23 Jul 2024 01:10:10 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b05b6f2f82698bbf2d7ba9eef538debf8e4566b9fcaa945aa32d717b5ad687ab`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
-		Size: 734.0 B  
+	-	`sha256:4a80b90d7bcc710a00162e38d8c67326714d1479444aaa3d5addf9e86e39dca8`  
+		Last Modified: Tue, 23 Jul 2024 01:10:09 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bf8c2a05e2d708459332b4b87a261ddc2a174fadca1c73dd85e20fbf28e219`  
-		Last Modified: Tue, 02 Jul 2024 09:00:53 GMT  
-		Size: 3.6 MB (3602340 bytes)  
+	-	`sha256:1e15ae9855f659fe4a5388771e26b9212bf3f612f7fd90e5679ba1695f19dced`  
+		Last Modified: Tue, 23 Jul 2024 04:11:41 GMT  
+		Size: 3.6 MB (3649383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24b6165c97f5c41747bc788570917a62ba444562ac5c45fc124ca56e641b02ce`  
-		Last Modified: Tue, 02 Jul 2024 09:00:52 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:de830fb155a8a60edb27f967c444d36fe436466a140b0808480f1f01a1d72ddd`  
+		Last Modified: Tue, 23 Jul 2024 04:11:40 GMT  
+		Size: 2.4 KB (2365 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b120dd1cc02b1a50b1bf8cc6d33bfe4afe31a6d54e3e19c62e3393807af8aa79`  
-		Last Modified: Tue, 09 Jul 2024 19:22:33 GMT  
-		Size: 59.9 MB (59938543 bytes)  
+	-	`sha256:00fa7563b80896cddcd01542c7cd36ed6522f73f1bef66e9e28ee57e878700df`  
+		Last Modified: Tue, 23 Jul 2024 04:11:43 GMT  
+		Size: 59.9 MB (59938547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.4.4` - linux; arm64 variant v8
@@ -15113,7 +15113,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.4.4-jdk17`
 
 ```console
-$ docker pull lightstreamer@sha256:a26e8b2e39d27727de877a6e886e716092636e27f5fc36659b9b3d144a2a1b37
+$ docker pull lightstreamer@sha256:98d5fdf9af783ce6ed42d190a88626cc1b67ed230d5622b55dab37363f15904d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15124,104 +15124,104 @@ $ docker pull lightstreamer@sha256:a26e8b2e39d27727de877a6e886e716092636e27f5fc3
 ### `lightstreamer:7.4.4-jdk17` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:4e41d8d4fd8365b10def381dde917145771edd486126da9b3384731059d3aab4
+$ docker pull lightstreamer@sha256:b8159a2fef10b71a9b0866a30fcb71f8b149595416cd60a2e5c7742968168156
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.5 MB (256500532 bytes)**  
+-	Total Size: **259.1 MB (259100982 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73c002b2d7db3fb6b2de7931f2463e89c4fa065265263434fdf7ffd750913a49`
+-	Image ID: `sha256:800afd3449547871c05c32eb563f502a0b0b2c12698976e4b54029a03f84e49e`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='a900acf3ae56b000afc35468a083b6d6fd695abec87a8abdb02743d5c72f6d6d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='aa7fb6bb342319d227a838af5c363bfa1b4a670c209372f9e6585bd79da6220c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='9b5c375ed7ce654083c6c1137d8daadebaf8657650576115f0deafab00d0f1d7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='44bdd662c3b832cfe0b808362866b8d7a700dd60e6e39716dee97211d35c230f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='af3f33c14ed3e2fcd85a390575029fbf92a491f60cfdc274544ac8ad6532de47';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
+ENV JAVA_VERSION=jdk-17.0.12+7
+# Mon, 22 Jul 2024 16:13:57 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9d4dd339bf7e6a9dcba8347661603b74c61ab2a5083ae67bf76da6285da8a778';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='8257de06bf37f0c8f19f8d542e2ab5a4e17db3ca5f29d041bd0b02ab265db021';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='ce7873ebf40ed0eb1089941ead4d3af79a205b1264f3162860d26ae957572b74';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='c97988e5a99b8ae0c47ba330b0883398c7433312db0051d8c5ff97911bae1605';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='e244947f4c9176bd559598874b6ecaafcabba19c7067271cebb78708c2e9d14f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:55:56 GMT
+# Tue, 23 Jul 2024 04:09:17 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:02 GMT
+# Tue, 23 Jul 2024 04:09:34 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 09 Jul 2024 19:20:35 GMT
+# Tue, 23 Jul 2024 04:09:57 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.4
-# Tue, 09 Jul 2024 19:20:36 GMT
+# Tue, 23 Jul 2024 04:09:57 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.4/Lightstreamer-7.4.4.tar.gz
-# Tue, 09 Jul 2024 19:20:38 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 USER lightstreamer
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 EXPOSE 8080
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fa5e31bd7af9c954088241c2cdf79c43218c05412c6e5c402e94fdb9c893356`  
-		Last Modified: Tue, 02 Jul 2024 06:02:02 GMT  
-		Size: 145.1 MB (145101581 bytes)  
+	-	`sha256:187e6e908261a007d8d2cf091569c6e9dc8c93ad7c8eb252441ba4ec0bcfc365`  
+		Last Modified: Tue, 23 Jul 2024 01:07:45 GMT  
+		Size: 145.2 MB (145177437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44a02a524682f0e809df64fab2aa2c6ebec3815ebbdac35943afed4c249e9f4d`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
+	-	`sha256:616beaf3a767d481c6c05f74d97576b03f28dd77f3b70be9c292d4d3ef85a44e`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2639b3ea106afb54aa110a0dafc50356e5da3e951c16f4690fcee54a39ae1c1f`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
-		Size: 734.0 B  
+	-	`sha256:aa2f08dd115d21ca16c6ee1b17ede5cdd5bf498db59fb16de047af827c132e92`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42bc816435ac73c1030fe9108276a95b3808b84ef919bdf9e7f74111bb2ec8b6`  
-		Last Modified: Tue, 02 Jul 2024 08:59:41 GMT  
-		Size: 3.6 MB (3602299 bytes)  
+	-	`sha256:e4ad1f9f569b207b86e809d674c444da01a766b34dc7ada8de73940e4b183f57`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 3.6 MB (3649285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc4ef579a1e117f06ce2b9a988e76699ce1ec742c112c95a0e0f8ed803a36ba`  
-		Last Modified: Tue, 02 Jul 2024 08:59:40 GMT  
-		Size: 2.4 KB (2363 bytes)  
+	-	`sha256:3ee1f98148c6a13de4322312bcd4d505e68d25748a815591220eae8f6ae95aa1`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 2.4 KB (2371 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bac5b39a0b132d65053162b82e58607aeff355030c8772a475a6e7fb8225fe4d`  
-		Last Modified: Tue, 09 Jul 2024 19:22:15 GMT  
-		Size: 59.9 MB (59938528 bytes)  
+	-	`sha256:ae11954536706cdc5f4483f9a2b28702f48fc8d141dc9a5915eccdc3a1ac303f`  
+		Last Modified: Tue, 23 Jul 2024 04:11:25 GMT  
+		Size: 59.9 MB (59938551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.4.4-jdk17` - linux; arm64 variant v8
@@ -15330,7 +15330,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.4.4-jdk17-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:a26e8b2e39d27727de877a6e886e716092636e27f5fc36659b9b3d144a2a1b37
+$ docker pull lightstreamer@sha256:98d5fdf9af783ce6ed42d190a88626cc1b67ed230d5622b55dab37363f15904d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15341,104 +15341,104 @@ $ docker pull lightstreamer@sha256:a26e8b2e39d27727de877a6e886e716092636e27f5fc3
 ### `lightstreamer:7.4.4-jdk17-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:4e41d8d4fd8365b10def381dde917145771edd486126da9b3384731059d3aab4
+$ docker pull lightstreamer@sha256:b8159a2fef10b71a9b0866a30fcb71f8b149595416cd60a2e5c7742968168156
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.5 MB (256500532 bytes)**  
+-	Total Size: **259.1 MB (259100982 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73c002b2d7db3fb6b2de7931f2463e89c4fa065265263434fdf7ffd750913a49`
+-	Image ID: `sha256:800afd3449547871c05c32eb563f502a0b0b2c12698976e4b54029a03f84e49e`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='a900acf3ae56b000afc35468a083b6d6fd695abec87a8abdb02743d5c72f6d6d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='aa7fb6bb342319d227a838af5c363bfa1b4a670c209372f9e6585bd79da6220c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='9b5c375ed7ce654083c6c1137d8daadebaf8657650576115f0deafab00d0f1d7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='44bdd662c3b832cfe0b808362866b8d7a700dd60e6e39716dee97211d35c230f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='af3f33c14ed3e2fcd85a390575029fbf92a491f60cfdc274544ac8ad6532de47';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
+ENV JAVA_VERSION=jdk-17.0.12+7
+# Mon, 22 Jul 2024 16:13:57 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9d4dd339bf7e6a9dcba8347661603b74c61ab2a5083ae67bf76da6285da8a778';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='8257de06bf37f0c8f19f8d542e2ab5a4e17db3ca5f29d041bd0b02ab265db021';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='ce7873ebf40ed0eb1089941ead4d3af79a205b1264f3162860d26ae957572b74';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='c97988e5a99b8ae0c47ba330b0883398c7433312db0051d8c5ff97911bae1605';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='e244947f4c9176bd559598874b6ecaafcabba19c7067271cebb78708c2e9d14f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 16:13:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 16:13:57 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:55:56 GMT
+# Tue, 23 Jul 2024 04:09:17 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:02 GMT
+# Tue, 23 Jul 2024 04:09:34 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:04 GMT
+# Tue, 23 Jul 2024 04:09:36 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 09 Jul 2024 19:20:35 GMT
+# Tue, 23 Jul 2024 04:09:57 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.4
-# Tue, 09 Jul 2024 19:20:36 GMT
+# Tue, 23 Jul 2024 04:09:57 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.4/Lightstreamer-7.4.4.tar.gz
-# Tue, 09 Jul 2024 19:20:38 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 USER lightstreamer
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 EXPOSE 8080
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 09 Jul 2024 19:20:39 GMT
+# Tue, 23 Jul 2024 04:10:04 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fa5e31bd7af9c954088241c2cdf79c43218c05412c6e5c402e94fdb9c893356`  
-		Last Modified: Tue, 02 Jul 2024 06:02:02 GMT  
-		Size: 145.1 MB (145101581 bytes)  
+	-	`sha256:187e6e908261a007d8d2cf091569c6e9dc8c93ad7c8eb252441ba4ec0bcfc365`  
+		Last Modified: Tue, 23 Jul 2024 01:07:45 GMT  
+		Size: 145.2 MB (145177437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44a02a524682f0e809df64fab2aa2c6ebec3815ebbdac35943afed4c249e9f4d`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
+	-	`sha256:616beaf3a767d481c6c05f74d97576b03f28dd77f3b70be9c292d4d3ef85a44e`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2639b3ea106afb54aa110a0dafc50356e5da3e951c16f4690fcee54a39ae1c1f`  
-		Last Modified: Tue, 02 Jul 2024 06:01:50 GMT  
-		Size: 734.0 B  
+	-	`sha256:aa2f08dd115d21ca16c6ee1b17ede5cdd5bf498db59fb16de047af827c132e92`  
+		Last Modified: Tue, 23 Jul 2024 01:07:33 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42bc816435ac73c1030fe9108276a95b3808b84ef919bdf9e7f74111bb2ec8b6`  
-		Last Modified: Tue, 02 Jul 2024 08:59:41 GMT  
-		Size: 3.6 MB (3602299 bytes)  
+	-	`sha256:e4ad1f9f569b207b86e809d674c444da01a766b34dc7ada8de73940e4b183f57`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 3.6 MB (3649285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc4ef579a1e117f06ce2b9a988e76699ce1ec742c112c95a0e0f8ed803a36ba`  
-		Last Modified: Tue, 02 Jul 2024 08:59:40 GMT  
-		Size: 2.4 KB (2363 bytes)  
+	-	`sha256:3ee1f98148c6a13de4322312bcd4d505e68d25748a815591220eae8f6ae95aa1`  
+		Last Modified: Tue, 23 Jul 2024 04:11:02 GMT  
+		Size: 2.4 KB (2371 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bac5b39a0b132d65053162b82e58607aeff355030c8772a475a6e7fb8225fe4d`  
-		Last Modified: Tue, 09 Jul 2024 19:22:15 GMT  
-		Size: 59.9 MB (59938528 bytes)  
+	-	`sha256:ae11954536706cdc5f4483f9a2b28702f48fc8d141dc9a5915eccdc3a1ac303f`  
+		Last Modified: Tue, 23 Jul 2024 04:11:25 GMT  
+		Size: 59.9 MB (59938551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.4.4-jdk17-temurin` - linux; arm64 variant v8
@@ -15547,7 +15547,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.4.4-jdk21`
 
 ```console
-$ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4c00f3cdf450328adeea
+$ docker pull lightstreamer@sha256:af0675c3b298fc5ba6b0d54b3d4559391ddbc095a294f5559f9ebc801c36be87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15558,104 +15558,104 @@ $ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4
 ### `lightstreamer:7.4.4-jdk21` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:d4253d989f7926db27cfe519f3d94cae3e01bdda9cd74a9bfcca0e3f18fcceb7
+$ docker pull lightstreamer@sha256:804d1bcc97a2e0a5ea92a96183f1b0ad597e93281c1e4846b3f86135f25e850e
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.9 MB (269910807 bytes)**  
+-	Total Size: **272.5 MB (272510928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7163929bcbf4f1e37c90994d6ffa20fa63ded33633e7fb77c11d664dab4c4989`
+-	Image ID: `sha256:44604ef4deb24b8f6a76430f833fbda3586d41d3a9b6ada013441dee764a706b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-21.0.3+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7d3ab0e8eba95bd682cfda8041c6cb6fa21e09d0d9131316fd7c96c78969de31';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.3_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='fffa52c22d797b715a962e6c8d11ec7d79b90dd819b5bc51d62137ea4b22a340';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_x64_linux_hotspot_21.0.3_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='9a1079d7f0fc72951fdc9a0029e49a15f6ba114683aee626f882ee2c761f1d57';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.3_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='f57a078d417614e5d78c07c77a6d8a04701058cf692c8e2868d593582be92768';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
+ENV JAVA_VERSION=jdk-21.0.4+7
+# Mon, 22 Jul 2024 14:52:20 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='51fb4d03a4429c39d397d3a03a779077159317616550e4e71624c9843083e7b9';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.4_7.tar.gz';          ;;        arm64)          ESUM='d768eecddd7a515711659e02caef8516b7b7177fa34880a56398fd9822593a79';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='c208cd0fb90560644a90f928667d2f53bfe408c957a5e36206585ad874427761';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.4_7.tar.gz';          ;;        s390x)          ESUM='c900c8d64fab1e53274974fa4a4c736a5a3754485a5c56f4947281480773658a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:56:31 GMT
+# Tue, 23 Jul 2024 04:10:09 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:37 GMT
+# Tue, 23 Jul 2024 04:10:14 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:38 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.4
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.4/Lightstreamer-7.4.4.tar.gz
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:18 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 USER lightstreamer
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 EXPOSE 8080
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ec0d02fe6614e2b9257bb6c98ce0600f90c5456908c97de806e9c957321a8f1`  
-		Last Modified: Tue, 02 Jul 2024 06:02:42 GMT  
-		Size: 158.5 MB (158511791 bytes)  
+	-	`sha256:f561a59c51745f113da0b8d14a8a3e26e6e068ae45177caf2da7edfdf9a0f52f`  
+		Last Modified: Tue, 23 Jul 2024 01:10:22 GMT  
+		Size: 158.6 MB (158587297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0d053b8dd8bc02c6ecc527c86cf11615cdddfe5c05058f9aeceb20ed29596fd`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
+	-	`sha256:8fc851d1d586088490c3978839d308c2ecb7b3034d96538529d5b5fc8b419d3c`  
+		Last Modified: Tue, 23 Jul 2024 01:10:10 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b05b6f2f82698bbf2d7ba9eef538debf8e4566b9fcaa945aa32d717b5ad687ab`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
-		Size: 734.0 B  
+	-	`sha256:4a80b90d7bcc710a00162e38d8c67326714d1479444aaa3d5addf9e86e39dca8`  
+		Last Modified: Tue, 23 Jul 2024 01:10:09 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bf8c2a05e2d708459332b4b87a261ddc2a174fadca1c73dd85e20fbf28e219`  
-		Last Modified: Tue, 02 Jul 2024 09:00:53 GMT  
-		Size: 3.6 MB (3602340 bytes)  
+	-	`sha256:1e15ae9855f659fe4a5388771e26b9212bf3f612f7fd90e5679ba1695f19dced`  
+		Last Modified: Tue, 23 Jul 2024 04:11:41 GMT  
+		Size: 3.6 MB (3649383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24b6165c97f5c41747bc788570917a62ba444562ac5c45fc124ca56e641b02ce`  
-		Last Modified: Tue, 02 Jul 2024 09:00:52 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:de830fb155a8a60edb27f967c444d36fe436466a140b0808480f1f01a1d72ddd`  
+		Last Modified: Tue, 23 Jul 2024 04:11:40 GMT  
+		Size: 2.4 KB (2365 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b120dd1cc02b1a50b1bf8cc6d33bfe4afe31a6d54e3e19c62e3393807af8aa79`  
-		Last Modified: Tue, 09 Jul 2024 19:22:33 GMT  
-		Size: 59.9 MB (59938543 bytes)  
+	-	`sha256:00fa7563b80896cddcd01542c7cd36ed6522f73f1bef66e9e28ee57e878700df`  
+		Last Modified: Tue, 23 Jul 2024 04:11:43 GMT  
+		Size: 59.9 MB (59938547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.4.4-jdk21` - linux; arm64 variant v8
@@ -15764,7 +15764,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.4.4-jdk21-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4c00f3cdf450328adeea
+$ docker pull lightstreamer@sha256:af0675c3b298fc5ba6b0d54b3d4559391ddbc095a294f5559f9ebc801c36be87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15775,104 +15775,104 @@ $ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4
 ### `lightstreamer:7.4.4-jdk21-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:d4253d989f7926db27cfe519f3d94cae3e01bdda9cd74a9bfcca0e3f18fcceb7
+$ docker pull lightstreamer@sha256:804d1bcc97a2e0a5ea92a96183f1b0ad597e93281c1e4846b3f86135f25e850e
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.9 MB (269910807 bytes)**  
+-	Total Size: **272.5 MB (272510928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7163929bcbf4f1e37c90994d6ffa20fa63ded33633e7fb77c11d664dab4c4989`
+-	Image ID: `sha256:44604ef4deb24b8f6a76430f833fbda3586d41d3a9b6ada013441dee764a706b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-21.0.3+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7d3ab0e8eba95bd682cfda8041c6cb6fa21e09d0d9131316fd7c96c78969de31';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.3_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='fffa52c22d797b715a962e6c8d11ec7d79b90dd819b5bc51d62137ea4b22a340';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_x64_linux_hotspot_21.0.3_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='9a1079d7f0fc72951fdc9a0029e49a15f6ba114683aee626f882ee2c761f1d57';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.3_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='f57a078d417614e5d78c07c77a6d8a04701058cf692c8e2868d593582be92768';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
+ENV JAVA_VERSION=jdk-21.0.4+7
+# Mon, 22 Jul 2024 14:52:20 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='51fb4d03a4429c39d397d3a03a779077159317616550e4e71624c9843083e7b9';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.4_7.tar.gz';          ;;        arm64)          ESUM='d768eecddd7a515711659e02caef8516b7b7177fa34880a56398fd9822593a79';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='c208cd0fb90560644a90f928667d2f53bfe408c957a5e36206585ad874427761';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.4_7.tar.gz';          ;;        s390x)          ESUM='c900c8d64fab1e53274974fa4a4c736a5a3754485a5c56f4947281480773658a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:56:31 GMT
+# Tue, 23 Jul 2024 04:10:09 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:37 GMT
+# Tue, 23 Jul 2024 04:10:14 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:38 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.4
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.4/Lightstreamer-7.4.4.tar.gz
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:18 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 USER lightstreamer
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 EXPOSE 8080
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ec0d02fe6614e2b9257bb6c98ce0600f90c5456908c97de806e9c957321a8f1`  
-		Last Modified: Tue, 02 Jul 2024 06:02:42 GMT  
-		Size: 158.5 MB (158511791 bytes)  
+	-	`sha256:f561a59c51745f113da0b8d14a8a3e26e6e068ae45177caf2da7edfdf9a0f52f`  
+		Last Modified: Tue, 23 Jul 2024 01:10:22 GMT  
+		Size: 158.6 MB (158587297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0d053b8dd8bc02c6ecc527c86cf11615cdddfe5c05058f9aeceb20ed29596fd`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
+	-	`sha256:8fc851d1d586088490c3978839d308c2ecb7b3034d96538529d5b5fc8b419d3c`  
+		Last Modified: Tue, 23 Jul 2024 01:10:10 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b05b6f2f82698bbf2d7ba9eef538debf8e4566b9fcaa945aa32d717b5ad687ab`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
-		Size: 734.0 B  
+	-	`sha256:4a80b90d7bcc710a00162e38d8c67326714d1479444aaa3d5addf9e86e39dca8`  
+		Last Modified: Tue, 23 Jul 2024 01:10:09 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bf8c2a05e2d708459332b4b87a261ddc2a174fadca1c73dd85e20fbf28e219`  
-		Last Modified: Tue, 02 Jul 2024 09:00:53 GMT  
-		Size: 3.6 MB (3602340 bytes)  
+	-	`sha256:1e15ae9855f659fe4a5388771e26b9212bf3f612f7fd90e5679ba1695f19dced`  
+		Last Modified: Tue, 23 Jul 2024 04:11:41 GMT  
+		Size: 3.6 MB (3649383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24b6165c97f5c41747bc788570917a62ba444562ac5c45fc124ca56e641b02ce`  
-		Last Modified: Tue, 02 Jul 2024 09:00:52 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:de830fb155a8a60edb27f967c444d36fe436466a140b0808480f1f01a1d72ddd`  
+		Last Modified: Tue, 23 Jul 2024 04:11:40 GMT  
+		Size: 2.4 KB (2365 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b120dd1cc02b1a50b1bf8cc6d33bfe4afe31a6d54e3e19c62e3393807af8aa79`  
-		Last Modified: Tue, 09 Jul 2024 19:22:33 GMT  
-		Size: 59.9 MB (59938543 bytes)  
+	-	`sha256:00fa7563b80896cddcd01542c7cd36ed6522f73f1bef66e9e28ee57e878700df`  
+		Last Modified: Tue, 23 Jul 2024 04:11:43 GMT  
+		Size: 59.9 MB (59938547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.4.4-jdk21-temurin` - linux; arm64 variant v8
@@ -16407,7 +16407,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:latest`
 
 ```console
-$ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4c00f3cdf450328adeea
+$ docker pull lightstreamer@sha256:af0675c3b298fc5ba6b0d54b3d4559391ddbc095a294f5559f9ebc801c36be87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16418,104 +16418,104 @@ $ docker pull lightstreamer@sha256:f6ebf75d9dccf6897f960d056b762dd39aa042c9c16a4
 ### `lightstreamer:latest` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:d4253d989f7926db27cfe519f3d94cae3e01bdda9cd74a9bfcca0e3f18fcceb7
+$ docker pull lightstreamer@sha256:804d1bcc97a2e0a5ea92a96183f1b0ad597e93281c1e4846b3f86135f25e850e
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.9 MB (269910807 bytes)**  
+-	Total Size: **272.5 MB (272510928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7163929bcbf4f1e37c90994d6ffa20fa63ded33633e7fb77c11d664dab4c4989`
+-	Image ID: `sha256:44604ef4deb24b8f6a76430f833fbda3586d41d3a9b6ada013441dee764a706b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Fri, 07 Jun 2024 12:00:06 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 07 Jun 2024 12:00:08 GMT
+ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
+# Fri, 07 Jun 2024 12:00:09 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-21.0.3+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7d3ab0e8eba95bd682cfda8041c6cb6fa21e09d0d9131316fd7c96c78969de31';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.3_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='fffa52c22d797b715a962e6c8d11ec7d79b90dd819b5bc51d62137ea4b22a340';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_x64_linux_hotspot_21.0.3_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='9a1079d7f0fc72951fdc9a0029e49a15f6ba114683aee626f882ee2c761f1d57';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.3_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='f57a078d417614e5d78c07c77a6d8a04701058cf692c8e2868d593582be92768';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
+ENV JAVA_VERSION=jdk-21.0.4+7
+# Mon, 22 Jul 2024 14:52:20 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='51fb4d03a4429c39d397d3a03a779077159317616550e4e71624c9843083e7b9';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.4_7.tar.gz';          ;;        arm64)          ESUM='d768eecddd7a515711659e02caef8516b7b7177fa34880a56398fd9822593a79';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='c208cd0fb90560644a90f928667d2f53bfe408c957a5e36206585ad874427761';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.4_7.tar.gz';          ;;        s390x)          ESUM='c900c8d64fab1e53274974fa4a4c736a5a3754485a5c56f4947281480773658a';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 22 Jul 2024 14:52:20 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 22 Jul 2024 14:52:20 GMT
 CMD ["jshell"]
-# Tue, 02 Jul 2024 08:56:31 GMT
+# Tue, 23 Jul 2024 04:10:09 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Tue, 02 Jul 2024 08:56:37 GMT
+# Tue, 23 Jul 2024 04:10:14 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 08:56:38 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.4
-# Tue, 09 Jul 2024 19:20:42 GMT
+# Tue, 23 Jul 2024 04:10:16 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.4/Lightstreamer-7.4.4.tar.gz
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:18 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 USER lightstreamer
-# Tue, 09 Jul 2024 19:20:45 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 EXPOSE 8080
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Tue, 09 Jul 2024 19:20:46 GMT
+# Tue, 23 Jul 2024 04:10:19 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9b857f539cb142c9aa2201a17bb8e1cd5cf12edd4a65adf5732fe9f4343964cf`  
-		Last Modified: Fri, 28 Jun 2024 01:17:21 GMT  
-		Size: 30.4 MB (30439866 bytes)  
+	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
+		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
+		Size: 30.6 MB (30566626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff50609e3ed14c7c3740b327b78aacfe1ea1ee52420196ee57d2b4319ae0936`  
-		Last Modified: Tue, 02 Jul 2024 06:01:53 GMT  
-		Size: 17.4 MB (17414986 bytes)  
+	-	`sha256:3e44a677d4d83c1d6ba203c24d85609638b21fc91ef60c5e4b2ad465fdca98b5`  
+		Last Modified: Tue, 23 Jul 2024 01:07:36 GMT  
+		Size: 19.8 MB (19765101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ec0d02fe6614e2b9257bb6c98ce0600f90c5456908c97de806e9c957321a8f1`  
-		Last Modified: Tue, 02 Jul 2024 06:02:42 GMT  
-		Size: 158.5 MB (158511791 bytes)  
+	-	`sha256:f561a59c51745f113da0b8d14a8a3e26e6e068ae45177caf2da7edfdf9a0f52f`  
+		Last Modified: Tue, 23 Jul 2024 01:10:22 GMT  
+		Size: 158.6 MB (158587297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0d053b8dd8bc02c6ecc527c86cf11615cdddfe5c05058f9aeceb20ed29596fd`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
+	-	`sha256:8fc851d1d586088490c3978839d308c2ecb7b3034d96538529d5b5fc8b419d3c`  
+		Last Modified: Tue, 23 Jul 2024 01:10:10 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b05b6f2f82698bbf2d7ba9eef538debf8e4566b9fcaa945aa32d717b5ad687ab`  
-		Last Modified: Tue, 02 Jul 2024 06:02:29 GMT  
-		Size: 734.0 B  
+	-	`sha256:4a80b90d7bcc710a00162e38d8c67326714d1479444aaa3d5addf9e86e39dca8`  
+		Last Modified: Tue, 23 Jul 2024 01:10:09 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bf8c2a05e2d708459332b4b87a261ddc2a174fadca1c73dd85e20fbf28e219`  
-		Last Modified: Tue, 02 Jul 2024 09:00:53 GMT  
-		Size: 3.6 MB (3602340 bytes)  
+	-	`sha256:1e15ae9855f659fe4a5388771e26b9212bf3f612f7fd90e5679ba1695f19dced`  
+		Last Modified: Tue, 23 Jul 2024 04:11:41 GMT  
+		Size: 3.6 MB (3649383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24b6165c97f5c41747bc788570917a62ba444562ac5c45fc124ca56e641b02ce`  
-		Last Modified: Tue, 02 Jul 2024 09:00:52 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:de830fb155a8a60edb27f967c444d36fe436466a140b0808480f1f01a1d72ddd`  
+		Last Modified: Tue, 23 Jul 2024 04:11:40 GMT  
+		Size: 2.4 KB (2365 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b120dd1cc02b1a50b1bf8cc6d33bfe4afe31a6d54e3e19c62e3393807af8aa79`  
-		Last Modified: Tue, 09 Jul 2024 19:22:33 GMT  
-		Size: 59.9 MB (59938543 bytes)  
+	-	`sha256:00fa7563b80896cddcd01542c7cd36ed6522f73f1bef66e9e28ee57e878700df`  
+		Last Modified: Tue, 23 Jul 2024 04:11:43 GMT  
+		Size: 59.9 MB (59938547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:latest` - linux; arm64 variant v8
