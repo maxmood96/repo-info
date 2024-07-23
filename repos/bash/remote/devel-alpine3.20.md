@@ -1,7 +1,7 @@
 ## `bash:devel-alpine3.20`
 
 ```console
-$ docker pull bash@sha256:715823839f7800815b1216ea69dd8992f12c1bdb5f313fda0e8aa27ecaa1502b
+$ docker pull bash@sha256:0d582f8c3d58717a1f5adc4877bb697084b018554d982e83f989ea03a902b621
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -372,20 +372,20 @@ $ docker pull bash@sha256:39a5b308d3a9bd94806b5c052ff258f50df5a502644b5bf280cf86
 ### `bash:devel-alpine3.20` - linux; ppc64le
 
 ```console
-$ docker pull bash@sha256:7150c29000c054337a266ef932fd69940feac55f5a2dc4fc905d8692eef06f84
+$ docker pull bash@sha256:65a19b1bbdddc38a6f1cebf9cdad92d96738e6553104216f35f7863c2d3d2224
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.7 MB (6741583 bytes)**  
+-	Total Size: **6.7 MB (6741488 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a72129d688b8a81919c2d8d48b808ad641afc44ed184c5d36faaa6208e2a810d`
+-	Image ID: `sha256:59b30f67e0ce77eef63a6377c518a1332c68ebdb275e18a4d3defc3203ecdc34`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 20 Jun 2024 18:18:21 GMT
-ADD file:c98fdd4075ec8eb66a469bd36f2d1369030638ad4b76778b5ad9c787b9f63c8b in / 
-# Thu, 20 Jun 2024 18:18:22 GMT
+# Tue, 16 Jul 2024 04:18:07 GMT
+ADD file:9fcad21b83b7efd6ef267ba714c3ef5a8d4d2064a0bdf528cbb17d0c3388f03f in / 
+# Tue, 16 Jul 2024 04:18:07 GMT
 CMD ["/bin/sh"]
 # Tue, 16 Jul 2024 04:18:07 GMT
 ENV _BASH_COMMIT=d3e86e66ce857a8dc02e3116fd98b6e5b34d6364
@@ -402,41 +402,41 @@ CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:b02dcd5eb44e382ea711bca074a007403db63dacf55f888b3a87214d1052dd50`  
-		Last Modified: Thu, 20 Jun 2024 18:18:55 GMT  
-		Size: 3.6 MB (3571699 bytes)  
+	-	`sha256:6e59b4988c495782a5b0c8f8d6698931851c16c5c0fc5ef09cbb0637ade56e36`  
+		Last Modified: Mon, 22 Jul 2024 21:26:52 GMT  
+		Size: 3.6 MB (3571555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33cc5bc0cc99be8020a49551f13aad72c662eab1f04ca03c97c57ef0c54cf604`  
-		Last Modified: Tue, 16 Jul 2024 21:58:28 GMT  
-		Size: 3.2 MB (3169550 bytes)  
+	-	`sha256:f7129a10ac29338c9e016c03d68d15081027c4ed37ecf81eb6e4637b9011d6ec`  
+		Last Modified: Tue, 23 Jul 2024 08:12:19 GMT  
+		Size: 3.2 MB (3169597 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6459b6aa8afe4e2882302299ab2026f63d2942f8b9d36a03cee2acee05d1bc9a`  
-		Last Modified: Tue, 16 Jul 2024 21:58:27 GMT  
-		Size: 334.0 B  
+	-	`sha256:4486620b8fdc0e7663342d2eab3018dbe493cf6b4fc78c722ea180b576063cf4`  
+		Last Modified: Tue, 23 Jul 2024 08:12:19 GMT  
+		Size: 336.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bash:devel-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull bash@sha256:551ef8cfe766cdf81c32f7309ef59475a85ca67b950e952592efdd669b2e7a44
+$ docker pull bash@sha256:d6aa418ccaeae5cd1c4c03b248d3e0c26536680e71f7be2df8b570f9b7ce1d69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **124.3 KB (124276 bytes)**  
+-	Total Size: **124.3 KB (124275 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76a7ee9f93c5357fde9ade6fa16c632e1432e233a6ba0723fa4060f70b2d6326`
+-	Image ID: `sha256:81a1144bfd0de7bdb33f68a0e3044ec48a3340bc4e63bd03e30826ae061229f4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:12ebc2ee047284b7956d225ebc12b71f95e3b9e2a655427489ebbbf63a0f564c`  
-		Last Modified: Tue, 16 Jul 2024 21:58:28 GMT  
+	-	`sha256:5f9c58e4cae9cfd0b7d29db0f95f832a1c2d9428cdc28053418d469d11d95bf5`  
+		Last Modified: Tue, 23 Jul 2024 08:12:19 GMT  
 		Size: 108.0 KB (107963 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:81a2039b5d629d5b5d7027acf8b92bc372fef06f4320111adf201ae43e28267d`  
-		Last Modified: Tue, 16 Jul 2024 21:58:27 GMT  
-		Size: 16.3 KB (16313 bytes)  
+	-	`sha256:5bbd197138d2a0c19a7c5c16bfddd0d101a73055ce3472fb9be27e5330edc6ab`  
+		Last Modified: Tue, 23 Jul 2024 08:12:19 GMT  
+		Size: 16.3 KB (16312 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `bash:devel-alpine3.20` - linux; riscv64
