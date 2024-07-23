@@ -1,13 +1,14 @@
 ## `debian:bullseye-20240722-slim`
 
 ```console
-$ docker pull debian@sha256:f51ba9828c7956f091c61967e45883a79e9d64b8f8a426ad12abd170d15151d7
+$ docker pull debian@sha256:9b2119db9c4a2ae63cb34cee144524c41b425194f0798a248119eca22a849519
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 6
+-	Platforms: 7
 	-	linux; arm variant v5
 	-	linux; arm variant v7
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; mips64le
 	-	linux; ppc64le
@@ -63,6 +64,32 @@ CMD ["bash"]
 	-	`sha256:3bb0926631c8b9a5d54f36b0d3d892657f4f0c7a3f602ea57899de583b045143`  
 		Last Modified: Tue, 23 Jul 2024 03:07:34 GMT  
 		Size: 26.6 MB (26589130 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `debian:bullseye-20240722-slim` - linux; arm64 variant v8
+
+```console
+$ docker pull debian@sha256:35c5df9d76f8781f90071c26e89573544d2ea214ba336ca716d0127329c4f4ec
+```
+
+-	Docker Version: 23.0.11
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **30.1 MB (30076083 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6e78b15c5a73dcfd93bac36bf2dcec83ad038359648fbdc56cef31258bf0586a`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Tue, 23 Jul 2024 04:18:06 GMT
+ADD file:3727dfc046704936a0b983a317eeb319ebd0fc5e9da310be06a0ca768df723ec in / 
+# Tue, 23 Jul 2024 04:18:07 GMT
+CMD ["bash"]
+```
+
+-	Layers:
+	-	`sha256:bd2a3a2ed82de858b38215fac995414b3a91eea4cfe087e5f853ec1faa989ba4`  
+		Last Modified: Tue, 23 Jul 2024 04:21:02 GMT  
+		Size: 30.1 MB (30076083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:bullseye-20240722-slim` - linux; 386

@@ -1,13 +1,14 @@
 ## `debian:experimental-20240722`
 
 ```console
-$ docker pull debian@sha256:166010295dc05c86de83f053ceb27c1718f2a2bea11d3bbb9770f9a2950a9cfd
+$ docker pull debian@sha256:86e3ef7cc3bab0cf651448a1c808d89d0d2f3e1c7895ed19645087fbff59c8c5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 6
+-	Platforms: 7
 	-	linux; arm variant v5
 	-	linux; arm variant v7
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; mips64le
 	-	linux; ppc64le
@@ -75,6 +76,38 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 	-	`sha256:a6238160ad98d408cf5d93c070c1abb58fe799d39fa958a4b8c9507ae8443e83`  
 		Last Modified: Tue, 23 Jul 2024 03:10:57 GMT  
 		Size: 221.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `debian:experimental-20240722` - linux; arm64 variant v8
+
+```console
+$ docker pull debian@sha256:cc8233f97e346299fd0b5e4a95b3ac23b58e944a26acf13700428e868ce55052
+```
+
+-	Docker Version: 23.0.11
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **53.1 MB (53060377 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cc59d4b24c8033ba30e55e1fc1d1b82f7d52538da9af930c43cf45129e3d8d05`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Tue, 23 Jul 2024 04:19:25 GMT
+ADD file:9fa6a655ab3ec4e7d724e281c9e04f714a95b476ed3a05448035e1b667376fee in / 
+# Tue, 23 Jul 2024 04:19:26 GMT
+CMD ["bash"]
+# Tue, 23 Jul 2024 04:19:34 GMT
+RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources.list.d/experimental.list
+```
+
+-	Layers:
+	-	`sha256:3f51dce0e93d803403e64d967ff4925d1cfa177072b9690e62a81375f76a2b39`  
+		Last Modified: Tue, 23 Jul 2024 04:24:36 GMT  
+		Size: 53.1 MB (53060157 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2d518cba4f44b1cc117e89221b6353cc64c50ae836290ec93cf72fbe66c89edb`  
+		Last Modified: Tue, 23 Jul 2024 04:24:54 GMT  
+		Size: 220.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:experimental-20240722` - linux; 386
