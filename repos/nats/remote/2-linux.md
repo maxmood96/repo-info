@@ -1,7 +1,7 @@
 ## `nats:2-linux`
 
 ```console
-$ docker pull nats@sha256:ccb5be55cd6cc353b034a9048ceb3f302ac53afbffa4339377eb82dcfa5023fa
+$ docker pull nats@sha256:5941297ee98027de144ea20d3ee38bbace69b1480d1e707ff477b3b52ab8d26c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -55,29 +55,29 @@ CMD ["--config" "nats-server.conf"]
 ### `nats:2-linux` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:c5e665dcc3dde36f6b7570096532764d0f0a28439acd95fe29580e5531c429bc
+$ docker pull nats@sha256:092436208a27c545ae0b2b2859f612afbc7890e9b89ccbbde3c0866da30b53aa
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5371328 bytes)**  
+-	Total Size: **5.4 MB (5371327 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ebf1ce6ec10382a3e98124a45cfa7e77026da925328b919eb9bfb06f97b74883`
+-	Image ID: `sha256:498e592af5917afd2910020fad9ff393c98518ad7f84064cb1e1ec2426351a95`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Wed, 17 Jul 2024 17:49:28 GMT
+# Mon, 22 Jul 2024 22:11:31 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Wed, 17 Jul 2024 17:49:28 GMT
+# Mon, 22 Jul 2024 22:11:32 GMT
 COPY file:54f31e2f71860b4d2dd32487d6cb87ca7f2314b08e1965804d728ee8a6cd49af in /nats-server 
-# Wed, 17 Jul 2024 17:49:28 GMT
+# Mon, 22 Jul 2024 22:11:32 GMT
 COPY file:2c51166f33066351f3cfe3734f884c41f36fb66575bdde453c5c93e819cfae35 in /nats-server.conf 
-# Wed, 17 Jul 2024 17:49:28 GMT
+# Mon, 22 Jul 2024 22:11:32 GMT
 EXPOSE 4222 6222 8222
-# Wed, 17 Jul 2024 17:49:28 GMT
+# Mon, 22 Jul 2024 22:11:32 GMT
 ENTRYPOINT ["/nats-server"]
-# Wed, 17 Jul 2024 17:49:29 GMT
+# Mon, 22 Jul 2024 22:11:32 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -86,9 +86,9 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Wed, 17 Jul 2024 17:50:10 GMT  
 		Size: 5.4 MB (5370819 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51df837d6a50c92d812718022a33b55e92450552f197f8196f69b20a9d08444c`  
-		Last Modified: Wed, 17 Jul 2024 17:50:09 GMT  
-		Size: 509.0 B  
+	-	`sha256:34b707802c49348b96615d9b883be3f8f4791712a0513eb2d1487fd973057b46`  
+		Last Modified: Mon, 22 Jul 2024 22:12:15 GMT  
+		Size: 508.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nats:2-linux` - linux; arm variant v7
