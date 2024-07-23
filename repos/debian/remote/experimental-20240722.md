@@ -1,13 +1,14 @@
 ## `debian:experimental-20240722`
 
 ```console
-$ docker pull debian@sha256:ed7342159e8ed6b470ee786e6e2c1d713826d35deb64b0cdb43db94db2e11c8b
+$ docker pull debian@sha256:166010295dc05c86de83f053ceb27c1718f2a2bea11d3bbb9770f9a2950a9cfd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 5
+-	Platforms: 6
 	-	linux; arm variant v5
 	-	linux; arm variant v7
+	-	linux; 386
 	-	linux; mips64le
 	-	linux; ppc64le
 	-	linux; s390x
@@ -74,6 +75,38 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 	-	`sha256:a6238160ad98d408cf5d93c070c1abb58fe799d39fa958a4b8c9507ae8443e83`  
 		Last Modified: Tue, 23 Jul 2024 03:10:57 GMT  
 		Size: 221.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `debian:experimental-20240722` - linux; 386
+
+```console
+$ docker pull debian@sha256:c2424388c3580beeedaf247520defe26f319d4379cc79bd9e8630d502a216a1d
+```
+
+-	Docker Version: 23.0.11
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **53.7 MB (53700973 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1898735fbc3e766f876603f725cffadd32a9832153991dce08644d5462e46c3a`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Tue, 23 Jul 2024 03:56:34 GMT
+ADD file:ad9e5eae5d24c2706270e7a1f61e4e68e564faddc2f20dde67423f28f9ce76d0 in / 
+# Tue, 23 Jul 2024 03:56:35 GMT
+CMD ["bash"]
+# Tue, 23 Jul 2024 03:56:47 GMT
+RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources.list.d/experimental.list
+```
+
+-	Layers:
+	-	`sha256:c27fd4786122906641795ab65420bb7a79788bfceeb6ae809a1ba696ca4ababf`  
+		Last Modified: Tue, 23 Jul 2024 04:01:53 GMT  
+		Size: 53.7 MB (53700753 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d4bcf5e7d21e30e7a3776518d527110f8e51790e00a9338279d2e260f3bdfa69`  
+		Last Modified: Tue, 23 Jul 2024 04:02:14 GMT  
+		Size: 220.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:experimental-20240722` - linux; mips64le

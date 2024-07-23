@@ -1,7 +1,7 @@
 ## `debian:trixie-backports`
 
 ```console
-$ docker pull debian@sha256:c609f70adab2464b916d1b9df3cd6ab56c383033c752ffe43dd8f6c266c26d2c
+$ docker pull debian@sha256:a331acc16117e81387fc1ff912bc2da1c91ea2171f1f2976816972fef61b7134
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -146,33 +146,33 @@ RUN echo 'deb http://deb.debian.org/debian trixie-backports main' > /etc/apt/sou
 ### `debian:trixie-backports` - linux; 386
 
 ```console
-$ docker pull debian@sha256:8ca2dd40324902c88422d62b26d7e88c887551e36260487e6936005ae5769b68
+$ docker pull debian@sha256:113a2d52edca8eb9a086b23574bafa33c02597a7ecc612b4adf00cf5a5a15ae9
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.3 MB (53333401 bytes)**  
+-	Total Size: **53.7 MB (53681472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:167f1bb48699bbbe54c19e6db162ff61f3a3344270dbf7fe11f26cf719cc0776`
+-	Image ID: `sha256:5ba4edc12c553a6a7fb3701f52d4e85b9d476d9518bbf7b4b92b284180d15e90`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 02 Jul 2024 00:40:52 GMT
-ADD file:2c79a29515e7dc495de2293d9b08d4b2ecee86e61c2d0adf1658f7b939d57c1c in / 
-# Tue, 02 Jul 2024 00:40:53 GMT
+# Tue, 23 Jul 2024 03:56:12 GMT
+ADD file:01a40f7b1e06135068b561ea73bceefb80384e78cf04f7afc30b29280b89be42 in / 
+# Tue, 23 Jul 2024 03:56:13 GMT
 CMD ["bash"]
-# Tue, 02 Jul 2024 00:40:57 GMT
+# Tue, 23 Jul 2024 03:56:16 GMT
 RUN echo 'deb http://deb.debian.org/debian trixie-backports main' > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:86c6de18cd170a5e610d31625f09596aeecc408fed7171fc8922ae0196331108`  
-		Last Modified: Tue, 02 Jul 2024 00:46:09 GMT  
-		Size: 53.3 MB (53333176 bytes)  
+	-	`sha256:603ccf6e4399370cd3c9b421529967f58d124fe253b75b4d92b2e58cf112fdbb`  
+		Last Modified: Tue, 23 Jul 2024 04:01:16 GMT  
+		Size: 53.7 MB (53681250 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:136a4650c9182de42a1ef5cad8a13649890363bf3553955334ea0fd17b11f3de`  
-		Last Modified: Tue, 02 Jul 2024 00:46:18 GMT  
-		Size: 225.0 B  
+	-	`sha256:a21b617a8653369afcbe6261e920cee6a69a6c51b9b27a05a2506fccee3f5b8c`  
+		Last Modified: Tue, 23 Jul 2024 04:01:24 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:trixie-backports` - linux; mips64le
