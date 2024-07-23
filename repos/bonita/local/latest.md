@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d7520ffdae86c19edfe2ada2c7f5dc871fef2e8f92968bb88548bec7174b7ae2`
+- Image ID: `sha256:cb166874fbd87049328e914cef544f602684f4e2dc5857acf8f2ca7d0eebdc40`
 - Created: `2024-07-08T07:08:41Z`
 - Virtual Size: ~ 336.19 Mb  
   (total size of all layers on-disk)
@@ -208,16 +208,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20240226-r0 description:
+ca-certificates-20240705-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20240226-r0 webpage:
+ca-certificates-20240705-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20240226-r0 installed size:
+ca-certificates-20240705-r0 installed size:
 712 KiB
 
-ca-certificates-20240226-r0 license:
+ca-certificates-20240705-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -225,16 +225,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20240226-r0 description:
+ca-certificates-bundle-20240705-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20240226-r0 webpage:
+ca-certificates-bundle-20240705-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20240226-r0 installed size:
+ca-certificates-bundle-20240705-r0 installed size:
 236 KiB
 
-ca-certificates-bundle-20240226-r0 license:
+ca-certificates-bundle-20240705-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -650,16 +650,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r0 description:
+libcrypto3-3.3.1-r3 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r0 webpage:
+libcrypto3-3.3.1-r3 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r0 installed size:
+libcrypto3-3.3.1-r3 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r0 license:
+libcrypto3-3.3.1-r3 license:
 Apache-2.0
 
 ```
@@ -888,16 +888,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r0 description:
+libssl3-3.3.1-r3 description:
 SSL shared libraries
 
-libssl3-3.3.1-r0 webpage:
+libssl3-3.3.1-r3 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r0 installed size:
+libssl3-3.3.1-r3 installed size:
 796 KiB
 
-libssl3-3.3.1-r0 license:
+libssl3-3.3.1-r3 license:
 Apache-2.0
 
 ```
@@ -1177,16 +1177,16 @@ LGPL-2.0-or-later
 ### `apk` package: `openjdk11-jre`
 
 ```console
-openjdk11-jre-11.0.23_p9-r0 description:
+openjdk11-jre-11.0.24_p8-r0 description:
 Oracle OpenJDK 11 (JRE)
 
-openjdk11-jre-11.0.23_p9-r0 webpage:
+openjdk11-jre-11.0.24_p8-r0 webpage:
 https://github.com/openjdk/jdk11u
 
-openjdk11-jre-11.0.23_p9-r0 installed size:
+openjdk11-jre-11.0.24_p8-r0 installed size:
 2908 KiB
 
-openjdk11-jre-11.0.23_p9-r0 license:
+openjdk11-jre-11.0.24_p8-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
@@ -1194,16 +1194,16 @@ GPL-2.0-with-classpath-exception
 ### `apk` package: `openjdk11-jre-headless`
 
 ```console
-openjdk11-jre-headless-11.0.23_p9-r0 description:
+openjdk11-jre-headless-11.0.24_p8-r0 description:
 Oracle OpenJDK 11 (JRE headless)
 
-openjdk11-jre-headless-11.0.23_p9-r0 webpage:
+openjdk11-jre-headless-11.0.24_p8-r0 webpage:
 https://github.com/openjdk/jdk11u
 
-openjdk11-jre-headless-11.0.23_p9-r0 installed size:
+openjdk11-jre-headless-11.0.24_p8-r0 installed size:
 152 MiB
 
-openjdk11-jre-headless-11.0.23_p9-r0 license:
+openjdk11-jre-headless-11.0.24_p8-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
