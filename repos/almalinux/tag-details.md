@@ -658,7 +658,12 @@ $ docker pull almalinux@sha256:8da65aef2211a5976f5081d7bb86a87f145fa49da3916d801
 
 ## `almalinux:8.10-20240723`
 
-**does not exist** (yet?)
+```console
+$ docker pull almalinux@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `almalinux:8.10-minimal`
 
@@ -875,7 +880,12 @@ $ docker pull almalinux@sha256:10b8625291b8a87d6aac520323ff2b5e272a342f26a7a454e
 
 ## `almalinux:8.10-minimal-20240723`
 
-**does not exist** (yet?)
+```console
+$ docker pull almalinux@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `almalinux:9`
 
@@ -1518,7 +1528,12 @@ $ docker pull almalinux@sha256:5279a17b2d679c389ee237e59db15c01aafd02b2495f1c0c0
 
 ## `almalinux:9.4-20240723`
 
-**does not exist** (yet?)
+```console
+$ docker pull almalinux@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `almalinux:9.4-minimal`
 
@@ -1735,7 +1750,12 @@ $ docker pull almalinux@sha256:92fa1dea73ed2770b3bb223628be8b542b2ac84e023a8ed9e
 
 ## `almalinux:9.4-minimal-20240723`
 
-**does not exist** (yet?)
+```console
+$ docker pull almalinux@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `almalinux:latest`
 
