@@ -1,7 +1,7 @@
 ## `ghost:5-alpine`
 
 ```console
-$ docker pull ghost@sha256:60fa026ca71286db5f42a9273267a291f0c3a305fffb147a635d7200b2c2049a
+$ docker pull ghost@sha256:5dc6c2ffda7d7843d9584c14fdb1b93a3c20d06c9baecc46804fc7e046d24268
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -156,20 +156,20 @@ $ docker pull ghost@sha256:f45d2e60eaecba397c4e4fb99c7a01ba27606b1a1bb9779e9f909
 ### `ghost:5-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull ghost@sha256:1c8b71a9d9570fe613382aa5d01502f08f40edd9e12c824541946d0f85b88662
+$ docker pull ghost@sha256:5ae93134003d153d2c857353739c01b64675c87cbe0b88917dd1aebb8a92d096
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **167.7 MB (167703157 bytes)**  
+-	Total Size: **167.7 MB (167702359 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c11eb1f0d94ef72de4f5225d1117c2c880770901abb3f15b8cb4f11de9d22d8e`
+-	Image ID: `sha256:2de9f9388f59d2d7925a53dce8f13c9381112fff2d0f7cee138cd240274bf272`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
 ```dockerfile
-# Thu, 20 Jun 2024 17:49:18 GMT
-ADD file:8a9a8699eda49e02bf479cd01e71af80d721e91898a1c053620f39f99069de0a in / 
-# Thu, 20 Jun 2024 17:49:18 GMT
+# Tue, 09 Jul 2024 05:33:43 GMT
+ADD file:f7bd0000dae58eecf5aaf17e8bc517f5e29ad6a7692506fbceef89d3b61327c5 in / 
+# Tue, 09 Jul 2024 05:33:43 GMT
 CMD ["/bin/sh"]
 # Tue, 09 Jul 2024 05:33:43 GMT
 ENV NODE_VERSION=18.20.4
@@ -222,69 +222,69 @@ CMD ["node" "current/index.js"]
 ```
 
 -	Layers:
-	-	`sha256:217d5fa2bafb793ad47d21c0abaeeca94f1d39763a4cd3d178069467c1c42712`  
-		Last Modified: Thu, 20 Jun 2024 17:49:48 GMT  
-		Size: 3.2 MB (3173908 bytes)  
+	-	`sha256:25b28a78657effc87fccb3820a41450134ddcdbea210294d5b989ee0f09c0563`  
+		Last Modified: Mon, 22 Jul 2024 21:49:53 GMT  
+		Size: 3.2 MB (3175673 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c5a4802d829a06217fb1a3f474ec5c0f143c80a75b0ab78f6a7bd19c933e8d5`  
-		Last Modified: Tue, 09 Jul 2024 21:13:23 GMT  
-		Size: 38.4 MB (38420136 bytes)  
+	-	`sha256:31faeeb6568eb2da580663e85950ac0b00527da619bb2537ca4c06db51033c4b`  
+		Last Modified: Tue, 23 Jul 2024 06:49:05 GMT  
+		Size: 38.4 MB (38420236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:198201e4d98312c9baee725a3812d6f2f8e05fbe135c4a05dc24a18759dd06b9`  
-		Last Modified: Tue, 09 Jul 2024 21:13:22 GMT  
-		Size: 1.4 MB (1382240 bytes)  
+	-	`sha256:4c1e3154e981db5c13ed905e8758cb01a65392f9a0fddec17cb0a5268c79c00a`  
+		Last Modified: Tue, 23 Jul 2024 06:49:04 GMT  
+		Size: 1.4 MB (1382242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8734e06764415eda7b4d899c39b1e7ffa8f7c10cca0cdc1dfd623841d99f9d5e`  
-		Last Modified: Tue, 09 Jul 2024 21:13:22 GMT  
-		Size: 446.0 B  
+	-	`sha256:c3d710ca75bd1b5c7448f0a5ae0ffe77eb30e3e18cbced8b2a3ac61359a20681`  
+		Last Modified: Tue, 23 Jul 2024 06:49:04 GMT  
+		Size: 445.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48b1925a35d359e6f3b839fe3917cfcd9f6fdf7285f4c37abb17a1bcd5d54f69`  
-		Last Modified: Mon, 22 Jul 2024 13:10:20 GMT  
-		Size: 767.9 KB (767850 bytes)  
+	-	`sha256:11171d2a6341dc9de83697171910a5dc436e8b18219ec10596344e8dfeb0bb4b`  
+		Last Modified: Tue, 23 Jul 2024 12:57:28 GMT  
+		Size: 767.8 KB (767848 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:569c3a3977b1af9bca050f7de70d93a9ad6ea05ca4002317c64059688f922ed4`  
-		Last Modified: Mon, 22 Jul 2024 13:10:20 GMT  
-		Size: 1.1 MB (1088916 bytes)  
+	-	`sha256:242a7be623426ddc0d2b73f369a83edd2738e69cddd40cf3b8bcfdd71b0a96c7`  
+		Last Modified: Tue, 23 Jul 2024 12:57:28 GMT  
+		Size: 1.1 MB (1088914 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:180ccde7ed255feab362f23213b074ff9bdb3fae0f4c78227c31f2b130d691f7`  
-		Last Modified: Mon, 22 Jul 2024 13:10:20 GMT  
-		Size: 171.0 B  
+	-	`sha256:13e4233fefd4d7d36c6591cc81cc4a713fa2737216ab5fc5c391342c65db2e79`  
+		Last Modified: Tue, 23 Jul 2024 12:57:28 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f68edcf77768f78c9482420b450babbbeacbd67a9c1c09d580ec6748fd0e9061`  
-		Last Modified: Mon, 22 Jul 2024 13:10:20 GMT  
-		Size: 10.8 MB (10838740 bytes)  
+	-	`sha256:56210ae4b49cb7c4405bb7959500c8aa91685648ebb66dc8a2f17badb77a5813`  
+		Last Modified: Tue, 23 Jul 2024 12:57:28 GMT  
+		Size: 10.8 MB (10838458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4787241acfce2cdc2637420f4dd592d4cfa1cdb004e8ff0f8d5024503412ef13`  
-		Last Modified: Mon, 22 Jul 2024 13:10:25 GMT  
-		Size: 112.0 MB (112030176 bytes)  
+	-	`sha256:2cdebf9fb9065b31d0024ea44b0403cd8b448c35e213d2bce5dbc6f0048d68bf`  
+		Last Modified: Tue, 23 Jul 2024 12:57:32 GMT  
+		Size: 112.0 MB (112027796 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3469cb5f36f7cd6138b4b4507ec42f620c891fef0e5673e848cf73927aad6373`  
-		Last Modified: Mon, 22 Jul 2024 13:10:21 GMT  
+	-	`sha256:6094418022d301adc8cb4c76ac61c3ff014903734a01a974f27394b358e3beb5`  
+		Last Modified: Tue, 23 Jul 2024 12:57:29 GMT  
 		Size: 542.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:5-alpine` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:eb1f3886835b8e854a136fe457e1a59bd0b12d18ac6e33df644b4036f46d6181
+$ docker pull ghost@sha256:a16339ecdd704ae4a935d4d5833698025c1766686606c9024cf85884ed720c07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.1 KB (32119 bytes)**  
+-	Total Size: **32.2 KB (32167 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8468cdc8e02e62c824df4dd84cbde9f78f3f474ae2d7e5e90fef611f0b51dfc5`
+-	Image ID: `sha256:caa21f3d9fb7ef30151bf7d41228307e7621fb29953652055ddd91938afc231d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0964bdeed1fbcde86a043dc00b917199ae606ec78ec88007d6b20ba275175acd`  
-		Last Modified: Mon, 22 Jul 2024 13:10:19 GMT  
-		Size: 32.1 KB (32119 bytes)  
+	-	`sha256:70282f035e37f9ae138c08f6bb481ef3432a66d3f9cf1c306375b1778170edea`  
+		Last Modified: Tue, 23 Jul 2024 12:57:27 GMT  
+		Size: 32.2 KB (32167 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ghost:5-alpine` - linux; arm variant v7
