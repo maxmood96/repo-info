@@ -1,7 +1,7 @@
 ## `unit:latest`
 
 ```console
-$ docker pull unit@sha256:bc9cfd6027dd235eefe5f76577a8302329765aa9db356bfebf7f9629f40e68ef
+$ docker pull unit@sha256:153e04225ec98da56419550278b06b412a763c203c385d14c1d2c76fe2deb8dc
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,19 +14,19 @@ $ docker pull unit@sha256:bc9cfd6027dd235eefe5f76577a8302329765aa9db356bfebf7f96
 ### `unit:latest` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:493e16589ea1c5ac5f2e0364898d495904938614d4ec92c5743b9579a8703faa
+$ docker pull unit@sha256:7cf72d9f56a81eb66051be0705889a5ecd5ae51e175418241276c09cb5ceb9a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.3 MB (40276181 bytes)**  
+-	Total Size: **40.3 MB (40282220 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73d0202a415c6c29a87ee8b6439f88360727521c10edd351668c9e560de02713`
+-	Image ID: `sha256:457f522feff0a5001f7c428d60b75c29e835ab9fd0d612e0ccc5c174ac3e11de`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
 # Tue, 26 Mar 2024 13:57:15 GMT
-ADD file:49759b7a74bac875e3619e20ed5a9521101c7729f601d90976d0755d30e97499 in / 
+ADD file:258da966e49fd81eb3befac4ebcc023feb92794e891d5c9ca9b61084c7a209d5 in / 
 # Tue, 26 Mar 2024 13:57:15 GMT
 CMD ["bash"]
 # Tue, 26 Mar 2024 13:57:15 GMT
@@ -60,41 +60,41 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:76956b537f14770ffd78afbe4f17016b2794c4b9b568325e8079089ea5c4e8cd`  
-		Last Modified: Tue, 02 Jul 2024 01:29:27 GMT  
-		Size: 31.4 MB (31422284 bytes)  
+	-	`sha256:5de87e84afeec60e41fb003112c283b04a73e50c8d579c88bd21d668fd688485`  
+		Last Modified: Tue, 23 Jul 2024 05:28:31 GMT  
+		Size: 31.4 MB (31428330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90d6432a478a0a378664007c392a03fca4b6a5ce2fe9b2310a240f321bfd01d0`  
-		Last Modified: Tue, 02 Jul 2024 03:16:10 GMT  
-		Size: 8.9 MB (8851183 bytes)  
+	-	`sha256:69496fa7a8774b59c2601e03ab053ec2e662a53dbf1c6513a1a9ca4dd1c632c1`  
+		Last Modified: Tue, 23 Jul 2024 07:29:13 GMT  
+		Size: 8.9 MB (8851181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dd48d7069a65da716b7bf81d0ce2a34c36d63d01ff0ee0198d7598edffebee9`  
-		Last Modified: Tue, 02 Jul 2024 03:16:10 GMT  
-		Size: 1.3 KB (1262 bytes)  
+	-	`sha256:336435d488c654610d223221bcd020fec8a68e29906fbf002359e33b660c9518`  
+		Last Modified: Tue, 23 Jul 2024 07:29:12 GMT  
+		Size: 1.3 KB (1258 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:687daa704b740c451f5c233f00c6b7bfb393b2196bae8c6fb28251dfa031c20d`  
-		Last Modified: Tue, 02 Jul 2024 03:16:10 GMT  
-		Size: 1.5 KB (1452 bytes)  
+	-	`sha256:54c567c203a94bbd5f8e874fadd47ff6b9a21bd1c15b0ec23446a6efd55d67c1`  
+		Last Modified: Tue, 23 Jul 2024 07:29:12 GMT  
+		Size: 1.5 KB (1451 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:latest` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:1e53dc3790d5e254f5fb78a81bb3c0742c097804a47c18810eaa6bb33441f8c3
+$ docker pull unit@sha256:d74b7ddb8c7c3f9fa9b4c66012c0f434f675339fadcaa11da9fe394c30230044
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **20.2 KB (20224 bytes)**  
+-	Total Size: **20.2 KB (20223 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1c6e0b1a83cbfa2e02a7fc2176ac2f9886d608da527125420def45eec053b66b`
+-	Image ID: `sha256:72cfd6e2660062346a7726c7daf426aa7396eaac7a53baa2b2fc10fd5045575f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:efb0628cf4e3d921d80cf6b9b0a801e20066faa7957cae62585ef43f9e461f40`  
-		Last Modified: Tue, 02 Jul 2024 03:16:10 GMT  
-		Size: 20.2 KB (20224 bytes)  
+	-	`sha256:5316219a733b9a5ae0d9d99b8cf4d808081f7ba36e17585cf66ed627ebe708ce`  
+		Last Modified: Tue, 23 Jul 2024 07:29:12 GMT  
+		Size: 20.2 KB (20223 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `unit:latest` - linux; arm64 variant v8
