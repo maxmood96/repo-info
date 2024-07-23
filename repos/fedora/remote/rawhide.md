@@ -1,7 +1,7 @@
 ## `fedora:rawhide`
 
 ```console
-$ docker pull fedora@sha256:c05bf79137835bf5c521c58f8252d6031780ae865a0379ab57f412e0ac6b42aa
+$ docker pull fedora@sha256:892b63610a0901710c3fcdd28d11e4a54c85308ef6ee137208be4278ab03b472
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,53 +18,53 @@ $ docker pull fedora@sha256:c05bf79137835bf5c521c58f8252d6031780ae865a0379ab57f4
 ### `fedora:rawhide` - linux; amd64
 
 ```console
-$ docker pull fedora@sha256:c037a87094660ceda037ee319b17f59559241d2a3580d1d0f414e72b0a8f3827
+$ docker pull fedora@sha256:815d788d6610a41d9ed4e1aeb1fed52fc4937a55253be144786f932c01cd45df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **57.0 MB (57015223 bytes)**  
+-	Total Size: **57.0 MB (57008946 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:054fecf167d118eced8e640364e4f4f5b206ddfb0908a5383f6f87f56a54ea5f`
+-	Image ID: `sha256:0a8e1899837eb991c4986bd6bff797b0cdf2e3f7983cda7babccd1e386d361d9`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 12 Jul 2024 12:51:07 GMT
+# Tue, 23 Jul 2024 11:54:28 GMT
 LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
-# Fri, 12 Jul 2024 12:51:07 GMT
+# Tue, 23 Jul 2024 11:54:28 GMT
 ENV DISTTAG=rawhidecontainer FGC=rawhide FBR=rawhide
-# Fri, 12 Jul 2024 12:51:07 GMT
+# Tue, 23 Jul 2024 11:54:28 GMT
 ADD layer.tar / # buildkit
-# Fri, 12 Jul 2024 12:51:07 GMT
+# Tue, 23 Jul 2024 11:54:28 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:fc4c4a8d01fd92758c4fcfee92e985abcd7c2b5f80a628e63d59f9e496491966`  
-		Last Modified: Fri, 12 Jul 2024 18:57:06 GMT  
-		Size: 57.0 MB (57015223 bytes)  
+	-	`sha256:6c5d449bd8afb0471f0a9c3fdd80dda5029dc6021fcc87259be582e783e8ccea`  
+		Last Modified: Tue, 23 Jul 2024 18:14:54 GMT  
+		Size: 57.0 MB (57008946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fedora:rawhide` - unknown; unknown
 
 ```console
-$ docker pull fedora@sha256:95b48140ec30ff03f12b6b295afc5d32c82a62b05cbdf9c99dc5cf561d25a01c
+$ docker pull fedora@sha256:05f8d8eb6266896728867e1309b82a485990e5018e0c6900e8e5d8b0615e2225
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2817211 bytes)**  
+-	Total Size: **2.8 MB (2833970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:de636e9ba9bb8c596dd8839d4dfa1b1afc9d1746685eea429a09da4c4b7f9c96`
+-	Image ID: `sha256:c358b4bbd8ec156234b40001c1dedf43793d31b46a615092da26086640edfba6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3f7d11b78883c41753cbb89c3ad39c065d4e5259dfae4e0ecc8569e8fdc09ddc`  
-		Last Modified: Fri, 12 Jul 2024 18:57:05 GMT  
-		Size: 2.8 MB (2811963 bytes)  
+	-	`sha256:77fa5dcbefc7de69b4f363046535c317b653c5b3d80bd5a1487ea7c36629d7b3`  
+		Last Modified: Tue, 23 Jul 2024 18:14:52 GMT  
+		Size: 2.8 MB (2828722 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e2929ca5bd4252516688539d1f1aa5f586bb311a8d8caaa9491b505d20312c5f`  
-		Last Modified: Fri, 12 Jul 2024 18:57:05 GMT  
+	-	`sha256:25c0586fd13e7be32c0a74c44a0e334c841287e4bbf70dc004c58005e387ff7d`  
+		Last Modified: Tue, 23 Jul 2024 18:14:51 GMT  
 		Size: 5.2 KB (5248 bytes)  
 		MIME: application/vnd.in-toto+json
 
