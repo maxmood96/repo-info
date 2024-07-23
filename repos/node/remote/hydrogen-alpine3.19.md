@@ -1,7 +1,7 @@
 ## `node:hydrogen-alpine3.19`
 
 ```console
-$ docker pull node@sha256:1aab4b7352ef9b1d402fb8d556b2aecd65568570b38760c7b143f72dea6f16f8
+$ docker pull node@sha256:97390f4c994a314c0b2ae9726d284b0ca41bf0c27c0c5940b5ff952c8da74fd0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -98,20 +98,20 @@ $ docker pull node@sha256:20c87e03c03f5c6697e38cca1cb6a224da0a12e2f38e9d56180ee5
 ### `node:hydrogen-alpine3.19` - linux; arm variant v6
 
 ```console
-$ docker pull node@sha256:4faf7d441f81c1b50cdb456cdee71b368e3c46a8f8bd9aba1044e63d429fd514
+$ docker pull node@sha256:95e4173f43aee722704f3090fb5f81c1b3fbd85724c130ad2345037194f677a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.0 MB (42976730 bytes)**  
+-	Total Size: **43.0 MB (42978596 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ba1df3747213330d1b3803576b99b4e105b6865f275a93a8959f2aef704e2fc`
+-	Image ID: `sha256:bbacba9d08009a584f060d3b941adff413722a6a346914a65e2c4a8e8a223e8e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
-# Thu, 20 Jun 2024 17:49:18 GMT
-ADD file:8a9a8699eda49e02bf479cd01e71af80d721e91898a1c053620f39f99069de0a in / 
-# Thu, 20 Jun 2024 17:49:18 GMT
+# Tue, 09 Jul 2024 05:33:43 GMT
+ADD file:f7bd0000dae58eecf5aaf17e8bc517f5e29ad6a7692506fbceef89d3b61327c5 in / 
+# Tue, 09 Jul 2024 05:33:43 GMT
 CMD ["/bin/sh"]
 # Tue, 09 Jul 2024 05:33:43 GMT
 ENV NODE_VERSION=18.20.4
@@ -130,41 +130,41 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:217d5fa2bafb793ad47d21c0abaeeca94f1d39763a4cd3d178069467c1c42712`  
-		Last Modified: Thu, 20 Jun 2024 17:49:48 GMT  
-		Size: 3.2 MB (3173908 bytes)  
+	-	`sha256:25b28a78657effc87fccb3820a41450134ddcdbea210294d5b989ee0f09c0563`  
+		Last Modified: Mon, 22 Jul 2024 21:49:53 GMT  
+		Size: 3.2 MB (3175673 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c5a4802d829a06217fb1a3f474ec5c0f143c80a75b0ab78f6a7bd19c933e8d5`  
-		Last Modified: Tue, 09 Jul 2024 21:13:23 GMT  
-		Size: 38.4 MB (38420136 bytes)  
+	-	`sha256:31faeeb6568eb2da580663e85950ac0b00527da619bb2537ca4c06db51033c4b`  
+		Last Modified: Tue, 23 Jul 2024 06:49:05 GMT  
+		Size: 38.4 MB (38420236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:198201e4d98312c9baee725a3812d6f2f8e05fbe135c4a05dc24a18759dd06b9`  
-		Last Modified: Tue, 09 Jul 2024 21:13:22 GMT  
-		Size: 1.4 MB (1382240 bytes)  
+	-	`sha256:4c1e3154e981db5c13ed905e8758cb01a65392f9a0fddec17cb0a5268c79c00a`  
+		Last Modified: Tue, 23 Jul 2024 06:49:04 GMT  
+		Size: 1.4 MB (1382242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8734e06764415eda7b4d899c39b1e7ffa8f7c10cca0cdc1dfd623841d99f9d5e`  
-		Last Modified: Tue, 09 Jul 2024 21:13:22 GMT  
-		Size: 446.0 B  
+	-	`sha256:c3d710ca75bd1b5c7448f0a5ae0ffe77eb30e3e18cbced8b2a3ac61359a20681`  
+		Last Modified: Tue, 23 Jul 2024 06:49:04 GMT  
+		Size: 445.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:hydrogen-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:4275d132013ed2c542a8c9641ea7a7affaa5fa89349a728f330420abb1487a19
+$ docker pull node@sha256:bef3f4a9deb4b92393e84dc7dcc0a9184db5fe008501d33d34da515d9ca26ee5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.8 KB (23757 bytes)**  
+-	Total Size: **23.8 KB (23756 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:307d2d2688d22c3709f4420c5d90c71c3776da1b9ee0d2f87c423815784a4ff2`
+-	Image ID: `sha256:796d5d3315f631b8fa8fb69bb9666aeff71e88954d64d9f30981cb9d5ab35f93`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6cf021309acd1dd8297d93bb449a9cc633ab1cce08009a5bab7d7ef78787b9f6`  
-		Last Modified: Tue, 09 Jul 2024 21:13:21 GMT  
-		Size: 23.8 KB (23757 bytes)  
+	-	`sha256:53ae0ddcf05929e73c383d69c401fbd2d3c5d17b7898226d662e86b651883e51`  
+		Last Modified: Tue, 23 Jul 2024 06:49:04 GMT  
+		Size: 23.8 KB (23756 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `node:hydrogen-alpine3.19` - linux; arm variant v7
