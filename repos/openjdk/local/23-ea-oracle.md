@@ -1,9 +1,9 @@
-# `openjdk:23-ea-31-jdk-oraclelinux9`
+# `openjdk:23-ea-33-jdk-oraclelinux9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1bcef58001bb334b8b57224f43df6cf29e935c3dc4b1fc303aa7a87cd25f878b`
-- Created: `2024-07-12T06:48:10Z`
+- Image ID: `sha256:447ec9a45a5221a2661848046e553b863243102b7055c4cead536e064489195e`
+- Created: `2024-07-20T00:48:11Z`
 - Virtual Size: ~ 568.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-23/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-23`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=23-ea+31`
+  - `JAVA_VERSION=23-ea+33`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -1653,8 +1653,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url xz-libs-5.2.5-8.el9_0
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/xz-5.2.5-8.el9_0.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/xz-5.2.5-8.el9_0.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/xz-5.2.5-8.el9_0.src.rpm
 ```
 
 ### `rpm` package: `zlib-1.2.11-40.el9.x86_64`
