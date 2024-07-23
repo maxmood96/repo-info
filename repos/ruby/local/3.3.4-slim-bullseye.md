@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:800fa37c9b271a224b29989c599b44b3c8b98e267c1a4002b660fef10502ebbe`
+- Image ID: `sha256:f694a106fa21af3755a938110465016a6a9f7eae859e4f419d4119762b64eae7`
 - Created: `2024-07-09T05:04:38Z`
 - Virtual Size: ~ 181.90 Mb  
   (total size of all layers on-disk)
@@ -906,14 +906,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/keyutils/1.6.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/keyutils/1.6.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `krb5=1.18.3-6+deb11u4`
+### `dpkg` source package: `krb5=1.18.3-6+deb11u5`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.18.3-6+deb11u4`
-- `libk5crypto3:amd64=1.18.3-6+deb11u4`
-- `libkrb5-3:amd64=1.18.3-6+deb11u4`
-- `libkrb5support0:amd64=1.18.3-6+deb11u4`
+- `libgssapi-krb5-2:amd64=1.18.3-6+deb11u5`
+- `libk5crypto3:amd64=1.18.3-6+deb11u5`
+- `libkrb5-3:amd64=1.18.3-6+deb11u5`
+- `libkrb5support0:amd64=1.18.3-6+deb11u5`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -922,18 +922,18 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.18.3-6+deb11u4
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3-6%2bdeb11u4.dsc' krb5_1.18.3-6+deb11u4.dsc 3209 SHA256:6d1de6649c399ac6bb3a8d151cffbae93c4d17fafdeec5c4ae26300e5c8b5109
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3.orig.tar.gz' krb5_1.18.3.orig.tar.gz 8715312 SHA256:e61783c292b5efd9afb45c555a80dd267ac67eebabca42185362bee6c4fbd719
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3.orig.tar.gz.asc' krb5_1.18.3.orig.tar.gz.asc 833 SHA256:ded19808ba7320ad0bb3ddfb5202845b2ff36a50613af7832f78dd3cb4437419
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3-6%2bdeb11u4.debian.tar.xz' krb5_1.18.3-6+deb11u4.debian.tar.xz 109444 SHA256:9b6c8045949d6b1a108a6756ca8bf6490c5c975b30eb43c287406489e9250196
+$ apt-get source -qq --print-uris krb5=1.18.3-6+deb11u5
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u5.dsc' krb5_1.18.3-6+deb11u5.dsc 3209 SHA256:36c3edb6deb63df00b02fa00c3352139a0b51f30c9f20da8041f06818f771445
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz' krb5_1.18.3.orig.tar.gz 8715312 SHA256:e61783c292b5efd9afb45c555a80dd267ac67eebabca42185362bee6c4fbd719
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz.asc' krb5_1.18.3.orig.tar.gz.asc 833 SHA256:ded19808ba7320ad0bb3ddfb5202845b2ff36a50613af7832f78dd3cb4437419
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u5.debian.tar.xz' krb5_1.18.3-6+deb11u5.debian.tar.xz 114964 SHA256:6ba4b7db260cfdefb743a10b0a6a113c2302f1000812095563c5607ba9e0201a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/krb5/1.18.3-6+deb11u4/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.18.3-6+deb11u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/krb5/1.18.3-6+deb11u5/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.18.3-6+deb11u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2.2`
 
@@ -1401,11 +1401,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=5.10.218-1`
+### `dpkg` source package: `linux=5.10.221-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.10.218-1`
+- `linux-libc-dev:amd64=5.10.221-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1421,17 +1421,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.10.218-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.218-1.dsc' linux_5.10.218-1.dsc 205890 SHA256:fc0020c86209e345b13767cbb95be68760f821c4bac474b354ddbb52157e8a4b
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.218.orig.tar.xz' linux_5.10.218.orig.tar.xz 121946232 SHA256:f04ed0fa9bbfb5602b1c2227b993ae104bcdabb6803b69178129ad77b5191f3f
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.218-1.debian.tar.xz' linux_5.10.218-1.debian.tar.xz 1669672 SHA256:37e7dc1bd2c06052e23f7621e53d3f565f722b4f209bf01af71eacdc609cfbb5
+$ apt-get source -qq --print-uris linux=5.10.221-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.221-1.dsc' linux_5.10.221-1.dsc 205890 SHA256:0e9977f54bf5faa8a69a56dbcd885a785737162dd61fd87c1e36d7be6f0bd9e6
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.221.orig.tar.xz' linux_5.10.221.orig.tar.xz 121977556 SHA256:29f4ee082ea4faf58f3a9acf9d904a0aacd9726043cbc78ec4a5c9fd089b9ba8
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.221-1.debian.tar.xz' linux_5.10.221-1.debian.tar.xz 1686628 SHA256:a478e6fd110db3c10e03ab2baae20cfc298824d755e4df20d16ed67805b5afc2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/5.10.218-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.218-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.218-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/5.10.221-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.10.221-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.10.221-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
