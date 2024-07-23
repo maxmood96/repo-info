@@ -1,7 +1,7 @@
 ## `golang:alpine3.20`
 
 ```console
-$ docker pull golang@sha256:8c9183f715b0b4eca05b8b3dbf59766aaedb41ec07477b132ee2891ac0110a07
+$ docker pull golang@sha256:0e90634e2a706a24f1176483f7315e019738d53a188b7a57c1f58426999bb0ee
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -334,19 +334,19 @@ $ docker pull golang@sha256:e2b397f26936052b9fa1137a4b06b1ff3867452f763ff85c5207
 ### `golang:alpine3.20` - linux; 386
 
 ```console
-$ docker pull golang@sha256:7fcb463c2b3e2e2860ed5119b7ddb1677eb8249ef597b7be29164ca9d4f717eb
+$ docker pull golang@sha256:44aa1724b760eb9383d4cb6ca3d49de010055b4e5aec3a87998722067d2d460d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.1 MB (71103867 bytes)**  
+-	Total Size: **71.1 MB (71100944 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b074aac9a5e9bb66a540e4e58452297e0d3202723bc0a839a50a84be64c802b`
+-	Image ID: `sha256:0c340faf6f2286377f61473070e6849d2cc4f59d0ec90490104b1a0048f54329`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Thu, 20 Jun 2024 17:38:24 GMT
-ADD file:cd0e8f9dc9e579bd0c884d2c92e4773391bd73d8302d6f4a9bca0796e7ff9a77 in / 
-# Thu, 20 Jun 2024 17:38:25 GMT
+# Tue, 02 Jul 2024 19:33:45 GMT
+ADD file:e5b77b9337c5f89df9a65f8c439736a6d79e68274100ab1a1d7d61359a9abf5d in / 
+# Tue, 02 Jul 2024 19:33:45 GMT
 CMD ["/bin/sh"]
 # Tue, 02 Jul 2024 19:33:45 GMT
 RUN apk add --no-cache ca-certificates # buildkit
@@ -367,21 +367,21 @@ WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:354eb832d25d95145569d0a3a573fb95b8350ee897d5b90a2f67ec1157706ec2`  
-		Last Modified: Thu, 20 Jun 2024 17:38:50 GMT  
-		Size: 3.5 MB (3469470 bytes)  
+	-	`sha256:2585500d54afa42a6b579f9ed6f62b49c5fb21c2653f79194342804bde8770fe`  
+		Last Modified: Mon, 22 Jul 2024 21:38:55 GMT  
+		Size: 3.5 MB (3468071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6245d43f1d67e6b89e6f5685ef00c1c58fb4c3f39df0f253ccc26cf13864d8a`  
-		Last Modified: Tue, 02 Jul 2024 22:06:17 GMT  
-		Size: 292.9 KB (292884 bytes)  
+	-	`sha256:af88ff8087e34707c247e7094f926cf1fd84b7a42e8b97f519f5236459c3805b`  
+		Last Modified: Mon, 22 Jul 2024 22:09:07 GMT  
+		Size: 291.4 KB (291359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:65b75921c461b2ae6d1ff16df768b5e8ff34e9b73cf9704174903aa4e8c76f79`  
 		Last Modified: Tue, 02 Jul 2024 22:06:19 GMT  
 		Size: 67.3 MB (67341356 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63babd30530b5fa597a6429cd4de7e6add7159163b3bebf14263797e5c62f21f`  
-		Last Modified: Tue, 02 Jul 2024 22:06:17 GMT  
-		Size: 125.0 B  
+	-	`sha256:124b36319e261606ed21756e8a70445c6f3b1dcbcd66c1650915ac7ed9540685`  
+		Last Modified: Mon, 22 Jul 2024 22:09:07 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -391,21 +391,21 @@ WORKDIR /go
 ### `golang:alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:b9cce3e56afbf25738f8b0eed8c290c71da1643632b322ddd9f0d2103c63a5bb
+$ docker pull golang@sha256:b0c3f60b8b0a45c2502262bdef5640d6fb79922067749e9f3a05334057ec19d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.6 KB (25570 bytes)**  
+-	Total Size: **25.6 KB (25571 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ebe42da2fff361d1392c2f9eb221de2106e988cdadd70e073f2149379ab9afa9`
+-	Image ID: `sha256:3e0fca1d3133bb282b1eb117a061e89ae37878fae8845d5aa7c14dbbe482f395`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f790078c638662471a35182b9bc18d20c09c17fedf9eae1ba677c757b2e61df4`  
-		Last Modified: Tue, 02 Jul 2024 22:06:17 GMT  
-		Size: 25.6 KB (25570 bytes)  
+	-	`sha256:7c2ffff52885e925a43d1e28f2d03dd12a0ffd9a844d7d52532a158a1e9d2a27`  
+		Last Modified: Mon, 22 Jul 2024 22:09:07 GMT  
+		Size: 25.6 KB (25571 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `golang:alpine3.20` - linux; ppc64le
