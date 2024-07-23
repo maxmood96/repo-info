@@ -1,7 +1,7 @@
 ## `buildpack-deps:bullseye-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:d5be17a3cc818ec1976a915fcda4a434486f0bb48cda4d20712e797c397fad55
+$ docker pull buildpack-deps@sha256:23ec434d35fd158825845b9d0b0e3108f21c7aa1bef4444082274392677b755e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18,39 +18,39 @@ $ docker pull buildpack-deps@sha256:d5be17a3cc818ec1976a915fcda4a434486f0bb48cda
 ### `buildpack-deps:bullseye-scm` - linux; amd64
 
 ```console
-$ docker pull buildpack-deps@sha256:2667097b245ebed9c19fab9536c9c95832453f7a966257795797179cd5d7d5eb
+$ docker pull buildpack-deps@sha256:69d36ad13ecffb8dd51412c7579dbecc4f17f661dd9fd8857c14875fa43c95c7
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **125.4 MB (125434171 bytes)**  
+-	Total Size: **125.4 MB (125437401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90a00380ff311262cece625a2d1d12ed8dfbff1a3382f5a283f6d78c71e9c92c`
+-	Image ID: `sha256:6cfdd900dd285a53a5afb08c6190630059edec24d4d75b3bc125b723de69ebcd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 02 Jul 2024 01:25:11 GMT
-ADD file:b8d066bbda2d783c3ca81ab100fc5e45550234b68fde96332f303f669256842e in / 
-# Tue, 02 Jul 2024 01:25:12 GMT
+# Tue, 23 Jul 2024 05:24:25 GMT
+ADD file:61c91b2a02e0d3deb2364da03241d137acf78345623ae188082e574b043032a0 in / 
+# Tue, 23 Jul 2024 05:24:25 GMT
 CMD ["bash"]
-# Tue, 02 Jul 2024 01:50:21 GMT
+# Tue, 23 Jul 2024 06:08:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 02 Jul 2024 01:50:41 GMT
+# Tue, 23 Jul 2024 06:08:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:c1c1a7d83fb1e16686c4e98df3d6f88b37beb4d65daae1ddd715f95d7ac4db5c`  
-		Last Modified: Tue, 02 Jul 2024 01:29:07 GMT  
-		Size: 55.1 MB (55081360 bytes)  
+	-	`sha256:73226dab8db5240a2ddbdbe2fb1f0949a911563a62a3d5de3c8669ae708e88de`  
+		Last Modified: Tue, 23 Jul 2024 05:28:11 GMT  
+		Size: 55.1 MB (55084578 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a305f523084f0a28b5daf532a5216d9be05d863c6bd3f5bd2969965eb7e9a27`  
-		Last Modified: Tue, 02 Jul 2024 02:01:21 GMT  
-		Size: 15.8 MB (15764174 bytes)  
+	-	`sha256:d53dfa00a586795de9dc9f5bc8ad4717b02a8c349b4bbc1f4600a926c5384f40`  
+		Last Modified: Tue, 23 Jul 2024 06:14:18 GMT  
+		Size: 15.8 MB (15764285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da238dd9d1f579bf4f3cd6589e3ab75747f8ea35be2bf50403f8f3fafa942eea`  
-		Last Modified: Tue, 02 Jul 2024 02:01:35 GMT  
-		Size: 54.6 MB (54588637 bytes)  
+	-	`sha256:bf8ed7043ae24342affc9e27ba2f362a3d02c164d6f2cc7b837f33b475f4ef54`  
+		Last Modified: Tue, 23 Jul 2024 06:14:32 GMT  
+		Size: 54.6 MB (54588538 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:bullseye-scm` - linux; arm variant v5
