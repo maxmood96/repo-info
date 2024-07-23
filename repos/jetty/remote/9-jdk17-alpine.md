@@ -1,7 +1,7 @@
 ## `jetty:9-jdk17-alpine`
 
 ```console
-$ docker pull jetty@sha256:73787cfeab4765d4db8054ef493e11e2b5a2af4597381a94ad97ab1645d8ee8e
+$ docker pull jetty@sha256:259a9190d1cee53ddf857f24def7635e44df85e6a13bf9034d508dd664b0b31d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,40 +12,40 @@ $ docker pull jetty@sha256:73787cfeab4765d4db8054ef493e11e2b5a2af4597381a94ad97a
 ### `jetty:9-jdk17-alpine` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:362e08dce686cc8f62c55801fe0ade42e2bd4fc053a3f63508572ae348417160
+$ docker pull jetty@sha256:cc49f345e411d1cd3a3cc64c789a7af7d07caf3194e5814c3d94d2a9f2984328
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **178.3 MB (178322867 bytes)**  
+-	Total Size: **178.6 MB (178556170 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62cf3e4adfe7fb185535e08fff998e2ca909d7fe56dfd42a8ac87a77ec148ddd`
+-	Image ID: `sha256:d0e72d7860a0d4b5b0b90f863c0cc192282328efc63100a1231ee85c2d08ec73`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Thu, 20 Jun 2024 20:17:04 GMT
-ADD file:fb066571462e703f86645131b43d211ff8531ffac77ea394456bfe569a6f17fe in / 
-# Thu, 20 Jun 2024 20:17:04 GMT
+# Mon, 08 Jul 2024 06:35:54 GMT
+ADD file:99093095d62d0421541d882f9ceeddb2981fe701ec0aa9d2c08480712d5fed21 in / 
+# Mon, 08 Jul 2024 06:35:54 GMT
 CMD ["/bin/sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 08 Jul 2024 06:35:54 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 08 Jul 2024 06:35:54 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 08 Jul 2024 06:35:54 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 08 Jul 2024 06:35:54 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata     ;     rm -rf /var/cache/apk/* # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
-# Tue, 23 Apr 2024 20:51:38 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='839326b5b4b3e4ac2edc3b685c8ab550f9b6d267eddf966323c801cb21e3e018';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 08 Jul 2024 06:35:54 GMT
+ENV JAVA_VERSION=jdk-17.0.12+7
+# Mon, 08 Jul 2024 06:35:54 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='6d274a292a717a6f8d00a3ed0695497405c5c634c27fec1692dd13784f6ff6fa';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Mon, 08 Jul 2024 06:35:54 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 08 Jul 2024 06:35:54 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 08 Jul 2024 06:35:54 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 23 Apr 2024 20:51:38 GMT
+# Mon, 08 Jul 2024 06:35:54 GMT
 CMD ["jshell"]
 # Mon, 08 Jul 2024 06:35:54 GMT
 ENV JETTY_VERSION=9.4.55.v20240627
@@ -78,59 +78,59 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:b84a74cde5af5c5199bfc2ce2a8c8951a29a7716d17327e923f1a14c870a858b`  
-		Last Modified: Thu, 20 Jun 2024 20:17:43 GMT  
-		Size: 3.4 MB (3417332 bytes)  
+	-	`sha256:c6a83fedfae6ed8a4f5f7cbb6a7b6f1c1ec3d86fea8cb9e5ba2e5e6673fde9f6`  
+		Last Modified: Mon, 22 Jul 2024 22:27:14 GMT  
+		Size: 3.6 MB (3622892 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60acd7138d3e0a8e35e097d75b62e0b1cfd99cdad83e29656157ec622e1c51e2`  
-		Last Modified: Mon, 24 Jun 2024 16:42:45 GMT  
-		Size: 13.1 MB (13142550 bytes)  
+	-	`sha256:8e118bbc909a65083d314d2da5fe1f703619cf9810828b0d739ed6962de633f2`  
+		Last Modified: Tue, 23 Jul 2024 01:06:33 GMT  
+		Size: 13.0 MB (13019343 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1b5e1235bfbe173503864b0745991f6acbc1cb3cc585db25db55cc975d8c4a2`  
-		Last Modified: Mon, 24 Jun 2024 16:42:55 GMT  
-		Size: 144.3 MB (144332006 bytes)  
+	-	`sha256:2f1ac76beb96a2904db02448518399d50e48e50a297defebe2826e9ee08b2160`  
+		Last Modified: Tue, 23 Jul 2024 01:06:42 GMT  
+		Size: 144.4 MB (144394579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b81b1cd3263773d4ffacbc48e3c623670d0f823ddab3860cd77eb3e012e2c02a`  
-		Last Modified: Mon, 24 Jun 2024 16:42:43 GMT  
-		Size: 159.0 B  
+	-	`sha256:345ef59aa5e3addd013e241224f605436ae9f06f01ba0f31f5fc941fd4431d62`  
+		Last Modified: Tue, 23 Jul 2024 01:06:31 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e48fadb2170d58cb6bea4140e5d4cad7173488b82a2763a9f56369fe59647a1b`  
-		Last Modified: Mon, 24 Jun 2024 16:42:43 GMT  
-		Size: 717.0 B  
+	-	`sha256:c934f25dfcf9de9f16e47a2fde109ba262dca0c1794676bc143cfc85e06b0035`  
+		Last Modified: Tue, 23 Jul 2024 01:06:31 GMT  
+		Size: 1.4 KB (1437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:796b83431733df6e63996c496d1881c288da0b964445514357859fd651bec78f`  
-		Last Modified: Mon, 08 Jul 2024 17:56:39 GMT  
-		Size: 17.4 MB (17428437 bytes)  
+	-	`sha256:7e69a84b8aafb113133ec6b9e24d47a324de88bacfdf2e81dd338d4bc3f38c10`  
+		Last Modified: Tue, 23 Jul 2024 02:01:57 GMT  
+		Size: 17.5 MB (17516095 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b37e334aad04397afc4da6f75c9bb7b7840fccebc2d96aa2b0d61c00cf5ab6aa`  
-		Last Modified: Mon, 08 Jul 2024 17:56:39 GMT  
+	-	`sha256:616f677fd8b3b5200819adaf75802651fb8f9c944d226d3fe01e7d70198dfb3f`  
+		Last Modified: Tue, 23 Jul 2024 02:01:56 GMT  
 		Size: 1.6 KB (1634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:9-jdk17-alpine` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:9ffc3b768adaa3eaaae2439488313f6062dbc849c1d3c149b697a02da7aafbd7
+$ docker pull jetty@sha256:6555d77ddabef4b2e32c2ab8180661fe35f61fd5fbb389da9f53914f16c6068e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.4 MB (1370017 bytes)**  
+-	Total Size: **1.0 MB (1018202 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:259ac08ff9e184e6df18cf861b6e6440edf931199d8d14f1bc7ec0073682068d`
+-	Image ID: `sha256:cc8cb775483d44642b00a1582234343b668beff617230d1920935cf408b8560a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca4e29405f57dc3fa9a16b37f7d95b19bc09a6f3c0993e09f5f3bf207be37269`  
-		Last Modified: Mon, 08 Jul 2024 17:56:39 GMT  
-		Size: 1.4 MB (1350051 bytes)  
+	-	`sha256:0ae1f89fde5f83e9ee50c1f811b756110c6756a49150edf4c94bb8a3fd433cfc`  
+		Last Modified: Tue, 23 Jul 2024 02:01:56 GMT  
+		Size: 998.2 KB (998232 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e7b0005508d9d5b64ddb530b1ed50f1a66153cbfbdc0e4af853466508db77476`  
-		Last Modified: Mon, 08 Jul 2024 17:56:38 GMT  
-		Size: 20.0 KB (19966 bytes)  
+	-	`sha256:a920a07417b8c48bb8821b8281b2cddcdb88ed9f398cc13c6df5150f9fc949a9`  
+		Last Modified: Tue, 23 Jul 2024 02:01:56 GMT  
+		Size: 20.0 KB (19970 bytes)  
 		MIME: application/vnd.in-toto+json
