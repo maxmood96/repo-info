@@ -201,14 +201,9 @@ Licenses: (parsed from: `/usr/share/doc/bind9-host/copyright`, `/usr/share/doc/b
 - `ISC`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bind9=1:9.16.48-0ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.16.48-0ubuntu0.20.04.1.dsc' bind9_9.16.48-0ubuntu0.20.04.1.dsc 2908 SHA512:1c3f5f0f207b1834352ea304d63cacc4bffe12234f689248b02692b86a7416974755ef0739c8a708893568eb6bd0dcdcfb6ee9ec2ff0ed99064191750c3c7d06
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.16.48.orig.tar.xz' bind9_9.16.48.orig.tar.xz 5131176 SHA512:83829a5045e2a29dd2b491d3ab72b545f5664023fcd4aa205a44dbb7bcc5c737b4466c0d73f124b8d88fd33c56776871a07dde1ba0530d43eec8e7304a08d353
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.16.48-0ubuntu0.20.04.1.debian.tar.xz' bind9_9.16.48-0ubuntu0.20.04.1.debian.tar.xz 68572 SHA512:6df07c333cbf72fadbea5d4a08b5277cc39f71ab69fbb6b64bdaa0539d5d853758890cc5fad3c4b612c2426d512671c7dab1cb2d95a952c7fc10ec0d1a52d6ad
-```
 
 ### `dpkg` source package: `binutils=2.34-6ubuntu1.9`
 
