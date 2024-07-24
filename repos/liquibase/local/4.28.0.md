@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ccb21ba47debc6f60cd1c4e056f8818d86c6e644badee93625a2f877af87cf1c`
-- Created: `2024-07-12T18:21:23.259780395Z`
-- Virtual Size: ~ 387.17 Mb  
+- Image ID: `sha256:be04c11ed5b730ed4bf9416c8007cf245300ffbf97b243513c606b61567cd733`
+- Created: `2024-07-23T04:05:35.460631861Z`
+- Virtual Size: ~ 387.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/liquibase/docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.11+9`
+  - `JAVA_VERSION=jdk-17.0.12+7`
   - `LIQUIBASE_HOME=/liquibase`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`

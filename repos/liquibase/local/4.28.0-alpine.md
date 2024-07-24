@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:afcf6ff2f06e94c3770f86d7bdd54cbb2563ac5fd52a56ddd6c3f6a006b4ade9`
-- Created: `2024-07-12T18:21:41.566804154Z`
-- Virtual Size: ~ 321.93 Mb  
+- Image ID: `sha256:d31a64f606e596ee42703d5b5e462332061b513968c762ffc85f67f7956d4de4`
+- Created: `2024-07-23T04:05:52.470615641Z`
+- Virtual Size: ~ 322.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/liquibase/docker-entrypoint.sh"]`
@@ -154,16 +154,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20240226-r0 description:
+ca-certificates-bundle-20240705-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20240226-r0 webpage:
+ca-certificates-bundle-20240705-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20240226-r0 installed size:
+ca-certificates-bundle-20240705-r0 installed size:
 236 KiB
 
-ca-certificates-bundle-20240226-r0 license:
+ca-certificates-bundle-20240705-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -205,16 +205,16 @@ GPL-2.0-or-later
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r0 description:
+libcrypto3-3.3.1-r3 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r0 webpage:
+libcrypto3-3.3.1-r3 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r0 installed size:
+libcrypto3-3.3.1-r3 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r0 license:
+libcrypto3-3.3.1-r3 license:
 Apache-2.0
 
 ```
@@ -256,16 +256,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r0 description:
+libssl3-3.3.1-r3 description:
 SSL shared libraries
 
-libssl3-3.3.1-r0 webpage:
+libssl3-3.3.1-r3 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r0 installed size:
+libssl3-3.3.1-r3 installed size:
 796 KiB
 
-libssl3-3.3.1-r0 license:
+libssl3-3.3.1-r3 license:
 Apache-2.0
 
 ```
@@ -341,16 +341,16 @@ X11
 ### `apk` package: `openjdk17-jre-headless`
 
 ```console
-openjdk17-jre-headless-17.0.11_p9-r0 description:
+openjdk17-jre-headless-17.0.12_p7-r0 description:
 Oracle OpenJDK 17 (JRE headless)
 
-openjdk17-jre-headless-17.0.11_p9-r0 webpage:
+openjdk17-jre-headless-17.0.12_p7-r0 webpage:
 https://github.com/openjdk/jdk17u
 
-openjdk17-jre-headless-17.0.11_p9-r0 installed size:
+openjdk17-jre-headless-17.0.12_p7-r0 installed size:
 171 MiB
 
-openjdk17-jre-headless-17.0.11_p9-r0 license:
+openjdk17-jre-headless-17.0.12_p7-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
