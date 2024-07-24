@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fabb95a9e4d18068c43e52623189843377c36779e43eaef32f182ac02f69c712`
+- Image ID: `sha256:afa87ecdf1148fbf562b60f0158647aec7bf609bf93f601b608080e29c987034`
 - Created: `2024-03-26T13:57:15Z`
-- Virtual Size: ~ 417.21 Mb  
+- Virtual Size: ~ 417.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.23+9`
+  - `JAVA_VERSION=jdk-11.0.24+8`
 - Labels:
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
   - `org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images`
