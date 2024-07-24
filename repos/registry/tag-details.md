@@ -11,7 +11,7 @@
 ## `registry:2`
 
 ```console
-$ docker pull registry@sha256:e00e7bbb9cd8322e2c4ea9ed4c996f5060a51486d90cbfd5aca7f3d8214eebe9
+$ docker pull registry@sha256:d8cbd10291d15e67b9897e1709fd32f50a7af2d28d8e4bed9c812f617382ee07
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -356,19 +356,19 @@ $ docker pull registry@sha256:9d21e22931ef6a158fce09ec809f6d3113742568dea3f0191c
 ### `registry:2` - linux; ppc64le
 
 ```console
-$ docker pull registry@sha256:34b23db1730dc6d1789a2b1008f63f935342029d09b04151ab15e57e0180d333
+$ docker pull registry@sha256:c7d8d25752c8e4022e43a1ce4920ad2db1cb82d84f6d4c3744d67079633ed8b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.3 MB (9343073 bytes)**  
+-	Total Size: **9.3 MB (9344668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2dbca443518974c4b51588a3218e1752518620993bab5857c54eb37cf649f9c`
+-	Image ID: `sha256:9c56f40ac1ee2eb23bb771e3941876ee6a2cfc52ed034364bcf420bc4b619602`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
 
 ```dockerfile
 # Mon, 02 Oct 2023 18:42:41 GMT
-ADD file:e0f257ed0b6b089b6a4fe2968065aa56ee04f7837fe7266dcd68be8d5242417b in / 
+ADD file:39fb75dfdfdb9dd435f3c590aab65b7ba2e1633e7fb84509706e3eeb59f2c5a5 in / 
 # Mon, 02 Oct 2023 18:42:41 GMT
 CMD ["/bin/sh"]
 # Mon, 02 Oct 2023 18:42:41 GMT
@@ -390,137 +390,137 @@ CMD ["/etc/docker/registry/config.yml"]
 ```
 
 -	Layers:
-	-	`sha256:e3dd182a4c3296a9689fa043379c0a4ce2b865024ca7344a169d5d4759a52548`  
-		Last Modified: Thu, 20 Jun 2024 18:19:16 GMT  
-		Size: 3.4 MB (3357033 bytes)  
+	-	`sha256:248e3c27daa6f506dd6946aadf071230265e194056aefeb63e0bcddc4087e672`  
+		Last Modified: Mon, 22 Jul 2024 21:27:13 GMT  
+		Size: 3.4 MB (3358632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca05e1ee509fa227e192e4093cc795b1da364e20113b227af25a6ba5b44f6c7f`  
-		Last Modified: Fri, 21 Jun 2024 02:54:56 GMT  
+	-	`sha256:e6394177c9e344ff7690a3cfa14d52f9dba6999735706b2641835fc6ee1222f7`  
+		Last Modified: Wed, 24 Jul 2024 10:26:00 GMT  
 		Size: 296.2 KB (296240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb69344abf7da1ba7c0a2428776f4e5c90ed5360eca15f3e1d3fc71009cce3a2`  
-		Last Modified: Fri, 21 Jun 2024 02:55:21 GMT  
+	-	`sha256:2b12f807ee69a6ccb35839d4d3b3f3a60db046615812d84922223a0252edbcba`  
+		Last Modified: Wed, 24 Jul 2024 10:26:00 GMT  
 		Size: 5.7 MB (5689215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f65a8d79d11f5c46636c8d091dcc04d0657f6a56b649c9e3f1bdd86c1aaaa685`  
-		Last Modified: Fri, 21 Jun 2024 02:55:20 GMT  
-		Size: 371.0 B  
+	-	`sha256:863361136815fcf688b3ea38ba06b28e4d77e8c1d75725e4917464963fb6d358`  
+		Last Modified: Wed, 24 Jul 2024 10:25:59 GMT  
+		Size: 368.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea81d7fc89a2d1d62b3852a262103ac050961ba68bab11e6f44c903f9d64539a`  
-		Last Modified: Fri, 21 Jun 2024 02:55:20 GMT  
-		Size: 214.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `registry:2` - unknown; unknown
-
-```console
-$ docker pull registry@sha256:a2aaa41f80e13ccb0c9bb3daf24924fb4386db87b15b0682d862786ace663c17
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.2 KB (187200 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fd018658d1a1175a6ac1588ca1d12266514afa77c28de3c8b8d0cc8c9aec5cbd`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:981b8bed9f3446bc21dfa71ccaf461123ed144207efbcc615923796c37d7f73d`  
-		Last Modified: Fri, 21 Jun 2024 02:55:20 GMT  
-		Size: 173.4 KB (173358 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:fcd7591901a1a1e922a8ab2e812e2feb3488a71b7026d4221de6d94f7f059b56`  
-		Last Modified: Fri, 21 Jun 2024 02:55:20 GMT  
-		Size: 13.8 KB (13842 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `registry:2` - linux; s390x
-
-```console
-$ docker pull registry@sha256:073d565951025666ab3cf8cb8a7e3b87f3edd831cc810dcb31b5f54ed9345831
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.7 MB (9682990 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95d284c81a1e4b1a06e770a9b301d90d12b65bdc0e494bf8a020705cee5e6e19`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
-
-```dockerfile
-# Mon, 02 Oct 2023 18:42:41 GMT
-ADD file:066d299d4861b197660e02b5eb126c42f2a11e586f49c463174acf5454e9244b in / 
-# Mon, 02 Oct 2023 18:42:41 GMT
-CMD ["/bin/sh"]
-# Mon, 02 Oct 2023 18:42:41 GMT
-RUN apk add --no-cache ca-certificates # buildkit
-# Mon, 02 Oct 2023 18:42:41 GMT
-RUN set -eux; 	version='2.8.3'; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  arch='amd64';   sha256='b1f750ecbe09f38e2143e22c61a25e3da2afe1510d9522859230b480e642ceff' ;; 		aarch64) arch='arm64';   sha256='7d2252eeeac97dd60fb9b36bebd15b95d7f947c4c82b8e0824cb55233ece9cd0' ;; 		armhf)   arch='armv6';   sha256='b00606466f976b6757268f1e7691918cbeca4af6fd4093a114b9186744ee8ef0' ;; 		armv7)   arch='armv7';   sha256='d3d7d958a7cc04159d43871261b1ed470ba72531d345fada311068962b967517' ;; 		ppc64le) arch='ppc64le'; sha256='9003659e5571bee89ee6d686057d02e9c0896d327276f268189922036e1ca84b' ;; 		s390x)   arch='s390x';   sha256='2c1347c73f881c320ff707055aecf649a888df39252e8bdc4fdfac7f59a383f1' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	wget -O registry.tar.gz "https://github.com/distribution/distribution/releases/download/v${version}/registry_${version}_linux_${arch}.tar.gz"; 	echo "$sha256 *registry.tar.gz" | sha256sum -c -; 	tar --extract --verbose --file registry.tar.gz --directory /bin/ registry; 	rm registry.tar.gz; 	registry --version # buildkit
-# Mon, 02 Oct 2023 18:42:41 GMT
-COPY ./config-example.yml /etc/docker/registry/config.yml # buildkit
-# Mon, 02 Oct 2023 18:42:41 GMT
-VOLUME [/var/lib/registry]
-# Mon, 02 Oct 2023 18:42:41 GMT
-EXPOSE map[5000/tcp:{}]
-# Mon, 02 Oct 2023 18:42:41 GMT
-COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Mon, 02 Oct 2023 18:42:41 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Mon, 02 Oct 2023 18:42:41 GMT
-CMD ["/etc/docker/registry/config.yml"]
-```
-
--	Layers:
-	-	`sha256:784fb6b11ccf355c65e296bcf7ef3623ff36c33ac16292b79440c32ec3699700`  
-		Last Modified: Thu, 20 Jun 2024 17:43:27 GMT  
-		Size: 3.2 MB (3228474 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:152a426eb93b7b93c73794517c84ef71d7dcc4719e45e3655858f9683fcb0633`  
-		Last Modified: Fri, 21 Jun 2024 05:39:43 GMT  
-		Size: 293.9 KB (293885 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12ae11a7490fe3ced24ccdbc59f281f831e48ddbb146bb7fa40fafbc1f3bfdac`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
-		Size: 6.2 MB (6160049 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9598ab3a7b8dd012bdec4ff075f9923d716b6689266552d93a0fc3e0f7a540ad`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
-		Size: 369.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a5653a2b64ae246042e6da1455594cad84e0f66e5791f41a8977b901969bcc8`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
+	-	`sha256:7132a55dbd15ab7d88188d6b73954b4f062acc8a19b01c7094fb0adc50e01951`  
+		Last Modified: Wed, 24 Jul 2024 10:26:00 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `registry:2` - unknown; unknown
 
 ```console
-$ docker pull registry@sha256:d8ec038648b94d846f00c0854cb0585aca2e0f8a27a4d3b8e5495fd32b8f1ae1
+$ docker pull registry@sha256:1c236b34d330ad833cb193f8b1c5ede23879528bcc9ba4137cf2f440c7a2da8e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.1 KB (187126 bytes)**  
+-	Total Size: **190.8 KB (190753 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:81185b8c3188e756c7114cc1de3a804ee71982ba148042bf21fcdde42a141033`
+-	Image ID: `sha256:8877ef6706805e44a0d640a743a6ce2c4918220460a3cbe5aaf64981c5766d7d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9f9a2b5f8d3d64fde595808b735b6608f04a83bc682d3e66835713dcc62c59a3`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
-		Size: 173.3 KB (173324 bytes)  
+	-	`sha256:aecef5d31e88f0c84ddac5e5f5a928abf8a1fbf8a4326d55dc292939fdc3dda6`  
+		Last Modified: Wed, 24 Jul 2024 10:26:00 GMT  
+		Size: 176.9 KB (176875 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bca581e0d26d0109b01af03a306769d95fc65edaec5b1bcc08d6edd0dc005591`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
-		Size: 13.8 KB (13802 bytes)  
+	-	`sha256:ef2fd6a7ec96db8e46171cf90ae5095d1d5dfefe00eab4b074ba8b50ff6c7232`  
+		Last Modified: Wed, 24 Jul 2024 10:25:59 GMT  
+		Size: 13.9 KB (13878 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `registry:2` - linux; s390x
+
+```console
+$ docker pull registry@sha256:d5ab0c6336d8ffd0d0256963a040f13a77e28c6eaf7cd6fc7a6bbfc8ceef6e3f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.7 MB (9684406 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2659cdacdb8c90c4b6b9f9f7ea5484be38ca34e0356811cd276eaab8d1f9e6d3`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
+
+```dockerfile
+# Mon, 02 Oct 2023 18:42:41 GMT
+ADD file:4289ff643f8649c055647843814da70f7ba2881d5fbdc6e3ece0c5b13f273fc9 in / 
+# Mon, 02 Oct 2023 18:42:41 GMT
+CMD ["/bin/sh"]
+# Mon, 02 Oct 2023 18:42:41 GMT
+RUN apk add --no-cache ca-certificates # buildkit
+# Mon, 02 Oct 2023 18:42:41 GMT
+RUN set -eux; 	version='2.8.3'; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  arch='amd64';   sha256='b1f750ecbe09f38e2143e22c61a25e3da2afe1510d9522859230b480e642ceff' ;; 		aarch64) arch='arm64';   sha256='7d2252eeeac97dd60fb9b36bebd15b95d7f947c4c82b8e0824cb55233ece9cd0' ;; 		armhf)   arch='armv6';   sha256='b00606466f976b6757268f1e7691918cbeca4af6fd4093a114b9186744ee8ef0' ;; 		armv7)   arch='armv7';   sha256='d3d7d958a7cc04159d43871261b1ed470ba72531d345fada311068962b967517' ;; 		ppc64le) arch='ppc64le'; sha256='9003659e5571bee89ee6d686057d02e9c0896d327276f268189922036e1ca84b' ;; 		s390x)   arch='s390x';   sha256='2c1347c73f881c320ff707055aecf649a888df39252e8bdc4fdfac7f59a383f1' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	wget -O registry.tar.gz "https://github.com/distribution/distribution/releases/download/v${version}/registry_${version}_linux_${arch}.tar.gz"; 	echo "$sha256 *registry.tar.gz" | sha256sum -c -; 	tar --extract --verbose --file registry.tar.gz --directory /bin/ registry; 	rm registry.tar.gz; 	registry --version # buildkit
+# Mon, 02 Oct 2023 18:42:41 GMT
+COPY ./config-example.yml /etc/docker/registry/config.yml # buildkit
+# Mon, 02 Oct 2023 18:42:41 GMT
+VOLUME [/var/lib/registry]
+# Mon, 02 Oct 2023 18:42:41 GMT
+EXPOSE map[5000/tcp:{}]
+# Mon, 02 Oct 2023 18:42:41 GMT
+COPY docker-entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 02 Oct 2023 18:42:41 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 02 Oct 2023 18:42:41 GMT
+CMD ["/etc/docker/registry/config.yml"]
+```
+
+-	Layers:
+	-	`sha256:ac5a7f502af5c00165b80407657a44a5d5f8b8b3f5f6a3c0ea73bcc6500f3466`  
+		Last Modified: Mon, 22 Jul 2024 21:51:22 GMT  
+		Size: 3.2 MB (3229892 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a4bb5ecb2ec65f9e45bd14592a8d7ee2b7ec69a0b59a1b9e3393ffd86bb10843`  
+		Last Modified: Wed, 24 Jul 2024 09:02:16 GMT  
+		Size: 293.9 KB (293882 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1d95d6f4f1abbbb9d16cdd882d4e5cde73f344996a618649f78f2da6853d8f5b`  
+		Last Modified: Wed, 24 Jul 2024 09:02:16 GMT  
+		Size: 6.2 MB (6160048 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b75f26bcb42d67d49f831ad985d4885407d7e4a5c12186a12bb7ec873526e5af`  
+		Last Modified: Wed, 24 Jul 2024 09:02:15 GMT  
+		Size: 370.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8ee220608527ae8863cacebaf4dbeafcb67643101fac836a2e60d0aa2dcfcb04`  
+		Last Modified: Wed, 24 Jul 2024 09:02:16 GMT  
+		Size: 214.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `registry:2` - unknown; unknown
+
+```console
+$ docker pull registry@sha256:4bb9af01b3fef7823571ba6ad5083b8d096db618114b014be09b7de33c6a3295
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **190.7 KB (190679 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a4878eb828b111bc6280975769caee92fdda38ddef227768f4f95e7e79069832`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:472ed8d71da851e2e9bc9da0f2335868e1638febb3f6c5e5393d2102b9323542`  
+		Last Modified: Wed, 24 Jul 2024 09:02:16 GMT  
+		Size: 176.8 KB (176841 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:cf47d9a4a6005592214bb2fd95b9df17d6264725f155cb2d7bd26620547f91ca`  
+		Last Modified: Wed, 24 Jul 2024 09:02:15 GMT  
+		Size: 13.8 KB (13838 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `registry:2.8`
 
 ```console
-$ docker pull registry@sha256:e00e7bbb9cd8322e2c4ea9ed4c996f5060a51486d90cbfd5aca7f3d8214eebe9
+$ docker pull registry@sha256:d8cbd10291d15e67b9897e1709fd32f50a7af2d28d8e4bed9c812f617382ee07
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -865,19 +865,19 @@ $ docker pull registry@sha256:9d21e22931ef6a158fce09ec809f6d3113742568dea3f0191c
 ### `registry:2.8` - linux; ppc64le
 
 ```console
-$ docker pull registry@sha256:34b23db1730dc6d1789a2b1008f63f935342029d09b04151ab15e57e0180d333
+$ docker pull registry@sha256:c7d8d25752c8e4022e43a1ce4920ad2db1cb82d84f6d4c3744d67079633ed8b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.3 MB (9343073 bytes)**  
+-	Total Size: **9.3 MB (9344668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2dbca443518974c4b51588a3218e1752518620993bab5857c54eb37cf649f9c`
+-	Image ID: `sha256:9c56f40ac1ee2eb23bb771e3941876ee6a2cfc52ed034364bcf420bc4b619602`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
 
 ```dockerfile
 # Mon, 02 Oct 2023 18:42:41 GMT
-ADD file:e0f257ed0b6b089b6a4fe2968065aa56ee04f7837fe7266dcd68be8d5242417b in / 
+ADD file:39fb75dfdfdb9dd435f3c590aab65b7ba2e1633e7fb84509706e3eeb59f2c5a5 in / 
 # Mon, 02 Oct 2023 18:42:41 GMT
 CMD ["/bin/sh"]
 # Mon, 02 Oct 2023 18:42:41 GMT
@@ -899,137 +899,137 @@ CMD ["/etc/docker/registry/config.yml"]
 ```
 
 -	Layers:
-	-	`sha256:e3dd182a4c3296a9689fa043379c0a4ce2b865024ca7344a169d5d4759a52548`  
-		Last Modified: Thu, 20 Jun 2024 18:19:16 GMT  
-		Size: 3.4 MB (3357033 bytes)  
+	-	`sha256:248e3c27daa6f506dd6946aadf071230265e194056aefeb63e0bcddc4087e672`  
+		Last Modified: Mon, 22 Jul 2024 21:27:13 GMT  
+		Size: 3.4 MB (3358632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca05e1ee509fa227e192e4093cc795b1da364e20113b227af25a6ba5b44f6c7f`  
-		Last Modified: Fri, 21 Jun 2024 02:54:56 GMT  
+	-	`sha256:e6394177c9e344ff7690a3cfa14d52f9dba6999735706b2641835fc6ee1222f7`  
+		Last Modified: Wed, 24 Jul 2024 10:26:00 GMT  
 		Size: 296.2 KB (296240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb69344abf7da1ba7c0a2428776f4e5c90ed5360eca15f3e1d3fc71009cce3a2`  
-		Last Modified: Fri, 21 Jun 2024 02:55:21 GMT  
+	-	`sha256:2b12f807ee69a6ccb35839d4d3b3f3a60db046615812d84922223a0252edbcba`  
+		Last Modified: Wed, 24 Jul 2024 10:26:00 GMT  
 		Size: 5.7 MB (5689215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f65a8d79d11f5c46636c8d091dcc04d0657f6a56b649c9e3f1bdd86c1aaaa685`  
-		Last Modified: Fri, 21 Jun 2024 02:55:20 GMT  
-		Size: 371.0 B  
+	-	`sha256:863361136815fcf688b3ea38ba06b28e4d77e8c1d75725e4917464963fb6d358`  
+		Last Modified: Wed, 24 Jul 2024 10:25:59 GMT  
+		Size: 368.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea81d7fc89a2d1d62b3852a262103ac050961ba68bab11e6f44c903f9d64539a`  
-		Last Modified: Fri, 21 Jun 2024 02:55:20 GMT  
-		Size: 214.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `registry:2.8` - unknown; unknown
-
-```console
-$ docker pull registry@sha256:a2aaa41f80e13ccb0c9bb3daf24924fb4386db87b15b0682d862786ace663c17
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.2 KB (187200 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fd018658d1a1175a6ac1588ca1d12266514afa77c28de3c8b8d0cc8c9aec5cbd`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:981b8bed9f3446bc21dfa71ccaf461123ed144207efbcc615923796c37d7f73d`  
-		Last Modified: Fri, 21 Jun 2024 02:55:20 GMT  
-		Size: 173.4 KB (173358 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:fcd7591901a1a1e922a8ab2e812e2feb3488a71b7026d4221de6d94f7f059b56`  
-		Last Modified: Fri, 21 Jun 2024 02:55:20 GMT  
-		Size: 13.8 KB (13842 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `registry:2.8` - linux; s390x
-
-```console
-$ docker pull registry@sha256:073d565951025666ab3cf8cb8a7e3b87f3edd831cc810dcb31b5f54ed9345831
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.7 MB (9682990 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95d284c81a1e4b1a06e770a9b301d90d12b65bdc0e494bf8a020705cee5e6e19`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
-
-```dockerfile
-# Mon, 02 Oct 2023 18:42:41 GMT
-ADD file:066d299d4861b197660e02b5eb126c42f2a11e586f49c463174acf5454e9244b in / 
-# Mon, 02 Oct 2023 18:42:41 GMT
-CMD ["/bin/sh"]
-# Mon, 02 Oct 2023 18:42:41 GMT
-RUN apk add --no-cache ca-certificates # buildkit
-# Mon, 02 Oct 2023 18:42:41 GMT
-RUN set -eux; 	version='2.8.3'; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  arch='amd64';   sha256='b1f750ecbe09f38e2143e22c61a25e3da2afe1510d9522859230b480e642ceff' ;; 		aarch64) arch='arm64';   sha256='7d2252eeeac97dd60fb9b36bebd15b95d7f947c4c82b8e0824cb55233ece9cd0' ;; 		armhf)   arch='armv6';   sha256='b00606466f976b6757268f1e7691918cbeca4af6fd4093a114b9186744ee8ef0' ;; 		armv7)   arch='armv7';   sha256='d3d7d958a7cc04159d43871261b1ed470ba72531d345fada311068962b967517' ;; 		ppc64le) arch='ppc64le'; sha256='9003659e5571bee89ee6d686057d02e9c0896d327276f268189922036e1ca84b' ;; 		s390x)   arch='s390x';   sha256='2c1347c73f881c320ff707055aecf649a888df39252e8bdc4fdfac7f59a383f1' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	wget -O registry.tar.gz "https://github.com/distribution/distribution/releases/download/v${version}/registry_${version}_linux_${arch}.tar.gz"; 	echo "$sha256 *registry.tar.gz" | sha256sum -c -; 	tar --extract --verbose --file registry.tar.gz --directory /bin/ registry; 	rm registry.tar.gz; 	registry --version # buildkit
-# Mon, 02 Oct 2023 18:42:41 GMT
-COPY ./config-example.yml /etc/docker/registry/config.yml # buildkit
-# Mon, 02 Oct 2023 18:42:41 GMT
-VOLUME [/var/lib/registry]
-# Mon, 02 Oct 2023 18:42:41 GMT
-EXPOSE map[5000/tcp:{}]
-# Mon, 02 Oct 2023 18:42:41 GMT
-COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Mon, 02 Oct 2023 18:42:41 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Mon, 02 Oct 2023 18:42:41 GMT
-CMD ["/etc/docker/registry/config.yml"]
-```
-
--	Layers:
-	-	`sha256:784fb6b11ccf355c65e296bcf7ef3623ff36c33ac16292b79440c32ec3699700`  
-		Last Modified: Thu, 20 Jun 2024 17:43:27 GMT  
-		Size: 3.2 MB (3228474 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:152a426eb93b7b93c73794517c84ef71d7dcc4719e45e3655858f9683fcb0633`  
-		Last Modified: Fri, 21 Jun 2024 05:39:43 GMT  
-		Size: 293.9 KB (293885 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12ae11a7490fe3ced24ccdbc59f281f831e48ddbb146bb7fa40fafbc1f3bfdac`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
-		Size: 6.2 MB (6160049 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9598ab3a7b8dd012bdec4ff075f9923d716b6689266552d93a0fc3e0f7a540ad`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
-		Size: 369.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a5653a2b64ae246042e6da1455594cad84e0f66e5791f41a8977b901969bcc8`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
+	-	`sha256:7132a55dbd15ab7d88188d6b73954b4f062acc8a19b01c7094fb0adc50e01951`  
+		Last Modified: Wed, 24 Jul 2024 10:26:00 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `registry:2.8` - unknown; unknown
 
 ```console
-$ docker pull registry@sha256:d8ec038648b94d846f00c0854cb0585aca2e0f8a27a4d3b8e5495fd32b8f1ae1
+$ docker pull registry@sha256:1c236b34d330ad833cb193f8b1c5ede23879528bcc9ba4137cf2f440c7a2da8e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.1 KB (187126 bytes)**  
+-	Total Size: **190.8 KB (190753 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:81185b8c3188e756c7114cc1de3a804ee71982ba148042bf21fcdde42a141033`
+-	Image ID: `sha256:8877ef6706805e44a0d640a743a6ce2c4918220460a3cbe5aaf64981c5766d7d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9f9a2b5f8d3d64fde595808b735b6608f04a83bc682d3e66835713dcc62c59a3`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
-		Size: 173.3 KB (173324 bytes)  
+	-	`sha256:aecef5d31e88f0c84ddac5e5f5a928abf8a1fbf8a4326d55dc292939fdc3dda6`  
+		Last Modified: Wed, 24 Jul 2024 10:26:00 GMT  
+		Size: 176.9 KB (176875 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bca581e0d26d0109b01af03a306769d95fc65edaec5b1bcc08d6edd0dc005591`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
-		Size: 13.8 KB (13802 bytes)  
+	-	`sha256:ef2fd6a7ec96db8e46171cf90ae5095d1d5dfefe00eab4b074ba8b50ff6c7232`  
+		Last Modified: Wed, 24 Jul 2024 10:25:59 GMT  
+		Size: 13.9 KB (13878 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `registry:2.8` - linux; s390x
+
+```console
+$ docker pull registry@sha256:d5ab0c6336d8ffd0d0256963a040f13a77e28c6eaf7cd6fc7a6bbfc8ceef6e3f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.7 MB (9684406 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2659cdacdb8c90c4b6b9f9f7ea5484be38ca34e0356811cd276eaab8d1f9e6d3`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
+
+```dockerfile
+# Mon, 02 Oct 2023 18:42:41 GMT
+ADD file:4289ff643f8649c055647843814da70f7ba2881d5fbdc6e3ece0c5b13f273fc9 in / 
+# Mon, 02 Oct 2023 18:42:41 GMT
+CMD ["/bin/sh"]
+# Mon, 02 Oct 2023 18:42:41 GMT
+RUN apk add --no-cache ca-certificates # buildkit
+# Mon, 02 Oct 2023 18:42:41 GMT
+RUN set -eux; 	version='2.8.3'; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  arch='amd64';   sha256='b1f750ecbe09f38e2143e22c61a25e3da2afe1510d9522859230b480e642ceff' ;; 		aarch64) arch='arm64';   sha256='7d2252eeeac97dd60fb9b36bebd15b95d7f947c4c82b8e0824cb55233ece9cd0' ;; 		armhf)   arch='armv6';   sha256='b00606466f976b6757268f1e7691918cbeca4af6fd4093a114b9186744ee8ef0' ;; 		armv7)   arch='armv7';   sha256='d3d7d958a7cc04159d43871261b1ed470ba72531d345fada311068962b967517' ;; 		ppc64le) arch='ppc64le'; sha256='9003659e5571bee89ee6d686057d02e9c0896d327276f268189922036e1ca84b' ;; 		s390x)   arch='s390x';   sha256='2c1347c73f881c320ff707055aecf649a888df39252e8bdc4fdfac7f59a383f1' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	wget -O registry.tar.gz "https://github.com/distribution/distribution/releases/download/v${version}/registry_${version}_linux_${arch}.tar.gz"; 	echo "$sha256 *registry.tar.gz" | sha256sum -c -; 	tar --extract --verbose --file registry.tar.gz --directory /bin/ registry; 	rm registry.tar.gz; 	registry --version # buildkit
+# Mon, 02 Oct 2023 18:42:41 GMT
+COPY ./config-example.yml /etc/docker/registry/config.yml # buildkit
+# Mon, 02 Oct 2023 18:42:41 GMT
+VOLUME [/var/lib/registry]
+# Mon, 02 Oct 2023 18:42:41 GMT
+EXPOSE map[5000/tcp:{}]
+# Mon, 02 Oct 2023 18:42:41 GMT
+COPY docker-entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 02 Oct 2023 18:42:41 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 02 Oct 2023 18:42:41 GMT
+CMD ["/etc/docker/registry/config.yml"]
+```
+
+-	Layers:
+	-	`sha256:ac5a7f502af5c00165b80407657a44a5d5f8b8b3f5f6a3c0ea73bcc6500f3466`  
+		Last Modified: Mon, 22 Jul 2024 21:51:22 GMT  
+		Size: 3.2 MB (3229892 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a4bb5ecb2ec65f9e45bd14592a8d7ee2b7ec69a0b59a1b9e3393ffd86bb10843`  
+		Last Modified: Wed, 24 Jul 2024 09:02:16 GMT  
+		Size: 293.9 KB (293882 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1d95d6f4f1abbbb9d16cdd882d4e5cde73f344996a618649f78f2da6853d8f5b`  
+		Last Modified: Wed, 24 Jul 2024 09:02:16 GMT  
+		Size: 6.2 MB (6160048 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b75f26bcb42d67d49f831ad985d4885407d7e4a5c12186a12bb7ec873526e5af`  
+		Last Modified: Wed, 24 Jul 2024 09:02:15 GMT  
+		Size: 370.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8ee220608527ae8863cacebaf4dbeafcb67643101fac836a2e60d0aa2dcfcb04`  
+		Last Modified: Wed, 24 Jul 2024 09:02:16 GMT  
+		Size: 214.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `registry:2.8` - unknown; unknown
+
+```console
+$ docker pull registry@sha256:4bb9af01b3fef7823571ba6ad5083b8d096db618114b014be09b7de33c6a3295
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **190.7 KB (190679 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a4878eb828b111bc6280975769caee92fdda38ddef227768f4f95e7e79069832`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:472ed8d71da851e2e9bc9da0f2335868e1638febb3f6c5e5393d2102b9323542`  
+		Last Modified: Wed, 24 Jul 2024 09:02:16 GMT  
+		Size: 176.8 KB (176841 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:cf47d9a4a6005592214bb2fd95b9df17d6264725f155cb2d7bd26620547f91ca`  
+		Last Modified: Wed, 24 Jul 2024 09:02:15 GMT  
+		Size: 13.8 KB (13838 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `registry:2.8.3`
 
 ```console
-$ docker pull registry@sha256:e00e7bbb9cd8322e2c4ea9ed4c996f5060a51486d90cbfd5aca7f3d8214eebe9
+$ docker pull registry@sha256:d8cbd10291d15e67b9897e1709fd32f50a7af2d28d8e4bed9c812f617382ee07
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1374,19 +1374,19 @@ $ docker pull registry@sha256:9d21e22931ef6a158fce09ec809f6d3113742568dea3f0191c
 ### `registry:2.8.3` - linux; ppc64le
 
 ```console
-$ docker pull registry@sha256:34b23db1730dc6d1789a2b1008f63f935342029d09b04151ab15e57e0180d333
+$ docker pull registry@sha256:c7d8d25752c8e4022e43a1ce4920ad2db1cb82d84f6d4c3744d67079633ed8b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.3 MB (9343073 bytes)**  
+-	Total Size: **9.3 MB (9344668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2dbca443518974c4b51588a3218e1752518620993bab5857c54eb37cf649f9c`
+-	Image ID: `sha256:9c56f40ac1ee2eb23bb771e3941876ee6a2cfc52ed034364bcf420bc4b619602`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
 
 ```dockerfile
 # Mon, 02 Oct 2023 18:42:41 GMT
-ADD file:e0f257ed0b6b089b6a4fe2968065aa56ee04f7837fe7266dcd68be8d5242417b in / 
+ADD file:39fb75dfdfdb9dd435f3c590aab65b7ba2e1633e7fb84509706e3eeb59f2c5a5 in / 
 # Mon, 02 Oct 2023 18:42:41 GMT
 CMD ["/bin/sh"]
 # Mon, 02 Oct 2023 18:42:41 GMT
@@ -1408,137 +1408,137 @@ CMD ["/etc/docker/registry/config.yml"]
 ```
 
 -	Layers:
-	-	`sha256:e3dd182a4c3296a9689fa043379c0a4ce2b865024ca7344a169d5d4759a52548`  
-		Last Modified: Thu, 20 Jun 2024 18:19:16 GMT  
-		Size: 3.4 MB (3357033 bytes)  
+	-	`sha256:248e3c27daa6f506dd6946aadf071230265e194056aefeb63e0bcddc4087e672`  
+		Last Modified: Mon, 22 Jul 2024 21:27:13 GMT  
+		Size: 3.4 MB (3358632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca05e1ee509fa227e192e4093cc795b1da364e20113b227af25a6ba5b44f6c7f`  
-		Last Modified: Fri, 21 Jun 2024 02:54:56 GMT  
+	-	`sha256:e6394177c9e344ff7690a3cfa14d52f9dba6999735706b2641835fc6ee1222f7`  
+		Last Modified: Wed, 24 Jul 2024 10:26:00 GMT  
 		Size: 296.2 KB (296240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb69344abf7da1ba7c0a2428776f4e5c90ed5360eca15f3e1d3fc71009cce3a2`  
-		Last Modified: Fri, 21 Jun 2024 02:55:21 GMT  
+	-	`sha256:2b12f807ee69a6ccb35839d4d3b3f3a60db046615812d84922223a0252edbcba`  
+		Last Modified: Wed, 24 Jul 2024 10:26:00 GMT  
 		Size: 5.7 MB (5689215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f65a8d79d11f5c46636c8d091dcc04d0657f6a56b649c9e3f1bdd86c1aaaa685`  
-		Last Modified: Fri, 21 Jun 2024 02:55:20 GMT  
-		Size: 371.0 B  
+	-	`sha256:863361136815fcf688b3ea38ba06b28e4d77e8c1d75725e4917464963fb6d358`  
+		Last Modified: Wed, 24 Jul 2024 10:25:59 GMT  
+		Size: 368.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea81d7fc89a2d1d62b3852a262103ac050961ba68bab11e6f44c903f9d64539a`  
-		Last Modified: Fri, 21 Jun 2024 02:55:20 GMT  
-		Size: 214.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `registry:2.8.3` - unknown; unknown
-
-```console
-$ docker pull registry@sha256:a2aaa41f80e13ccb0c9bb3daf24924fb4386db87b15b0682d862786ace663c17
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.2 KB (187200 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fd018658d1a1175a6ac1588ca1d12266514afa77c28de3c8b8d0cc8c9aec5cbd`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:981b8bed9f3446bc21dfa71ccaf461123ed144207efbcc615923796c37d7f73d`  
-		Last Modified: Fri, 21 Jun 2024 02:55:20 GMT  
-		Size: 173.4 KB (173358 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:fcd7591901a1a1e922a8ab2e812e2feb3488a71b7026d4221de6d94f7f059b56`  
-		Last Modified: Fri, 21 Jun 2024 02:55:20 GMT  
-		Size: 13.8 KB (13842 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `registry:2.8.3` - linux; s390x
-
-```console
-$ docker pull registry@sha256:073d565951025666ab3cf8cb8a7e3b87f3edd831cc810dcb31b5f54ed9345831
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.7 MB (9682990 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95d284c81a1e4b1a06e770a9b301d90d12b65bdc0e494bf8a020705cee5e6e19`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
-
-```dockerfile
-# Mon, 02 Oct 2023 18:42:41 GMT
-ADD file:066d299d4861b197660e02b5eb126c42f2a11e586f49c463174acf5454e9244b in / 
-# Mon, 02 Oct 2023 18:42:41 GMT
-CMD ["/bin/sh"]
-# Mon, 02 Oct 2023 18:42:41 GMT
-RUN apk add --no-cache ca-certificates # buildkit
-# Mon, 02 Oct 2023 18:42:41 GMT
-RUN set -eux; 	version='2.8.3'; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  arch='amd64';   sha256='b1f750ecbe09f38e2143e22c61a25e3da2afe1510d9522859230b480e642ceff' ;; 		aarch64) arch='arm64';   sha256='7d2252eeeac97dd60fb9b36bebd15b95d7f947c4c82b8e0824cb55233ece9cd0' ;; 		armhf)   arch='armv6';   sha256='b00606466f976b6757268f1e7691918cbeca4af6fd4093a114b9186744ee8ef0' ;; 		armv7)   arch='armv7';   sha256='d3d7d958a7cc04159d43871261b1ed470ba72531d345fada311068962b967517' ;; 		ppc64le) arch='ppc64le'; sha256='9003659e5571bee89ee6d686057d02e9c0896d327276f268189922036e1ca84b' ;; 		s390x)   arch='s390x';   sha256='2c1347c73f881c320ff707055aecf649a888df39252e8bdc4fdfac7f59a383f1' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	wget -O registry.tar.gz "https://github.com/distribution/distribution/releases/download/v${version}/registry_${version}_linux_${arch}.tar.gz"; 	echo "$sha256 *registry.tar.gz" | sha256sum -c -; 	tar --extract --verbose --file registry.tar.gz --directory /bin/ registry; 	rm registry.tar.gz; 	registry --version # buildkit
-# Mon, 02 Oct 2023 18:42:41 GMT
-COPY ./config-example.yml /etc/docker/registry/config.yml # buildkit
-# Mon, 02 Oct 2023 18:42:41 GMT
-VOLUME [/var/lib/registry]
-# Mon, 02 Oct 2023 18:42:41 GMT
-EXPOSE map[5000/tcp:{}]
-# Mon, 02 Oct 2023 18:42:41 GMT
-COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Mon, 02 Oct 2023 18:42:41 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Mon, 02 Oct 2023 18:42:41 GMT
-CMD ["/etc/docker/registry/config.yml"]
-```
-
--	Layers:
-	-	`sha256:784fb6b11ccf355c65e296bcf7ef3623ff36c33ac16292b79440c32ec3699700`  
-		Last Modified: Thu, 20 Jun 2024 17:43:27 GMT  
-		Size: 3.2 MB (3228474 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:152a426eb93b7b93c73794517c84ef71d7dcc4719e45e3655858f9683fcb0633`  
-		Last Modified: Fri, 21 Jun 2024 05:39:43 GMT  
-		Size: 293.9 KB (293885 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12ae11a7490fe3ced24ccdbc59f281f831e48ddbb146bb7fa40fafbc1f3bfdac`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
-		Size: 6.2 MB (6160049 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9598ab3a7b8dd012bdec4ff075f9923d716b6689266552d93a0fc3e0f7a540ad`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
-		Size: 369.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a5653a2b64ae246042e6da1455594cad84e0f66e5791f41a8977b901969bcc8`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
+	-	`sha256:7132a55dbd15ab7d88188d6b73954b4f062acc8a19b01c7094fb0adc50e01951`  
+		Last Modified: Wed, 24 Jul 2024 10:26:00 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `registry:2.8.3` - unknown; unknown
 
 ```console
-$ docker pull registry@sha256:d8ec038648b94d846f00c0854cb0585aca2e0f8a27a4d3b8e5495fd32b8f1ae1
+$ docker pull registry@sha256:1c236b34d330ad833cb193f8b1c5ede23879528bcc9ba4137cf2f440c7a2da8e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.1 KB (187126 bytes)**  
+-	Total Size: **190.8 KB (190753 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:81185b8c3188e756c7114cc1de3a804ee71982ba148042bf21fcdde42a141033`
+-	Image ID: `sha256:8877ef6706805e44a0d640a743a6ce2c4918220460a3cbe5aaf64981c5766d7d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9f9a2b5f8d3d64fde595808b735b6608f04a83bc682d3e66835713dcc62c59a3`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
-		Size: 173.3 KB (173324 bytes)  
+	-	`sha256:aecef5d31e88f0c84ddac5e5f5a928abf8a1fbf8a4326d55dc292939fdc3dda6`  
+		Last Modified: Wed, 24 Jul 2024 10:26:00 GMT  
+		Size: 176.9 KB (176875 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bca581e0d26d0109b01af03a306769d95fc65edaec5b1bcc08d6edd0dc005591`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
-		Size: 13.8 KB (13802 bytes)  
+	-	`sha256:ef2fd6a7ec96db8e46171cf90ae5095d1d5dfefe00eab4b074ba8b50ff6c7232`  
+		Last Modified: Wed, 24 Jul 2024 10:25:59 GMT  
+		Size: 13.9 KB (13878 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `registry:2.8.3` - linux; s390x
+
+```console
+$ docker pull registry@sha256:d5ab0c6336d8ffd0d0256963a040f13a77e28c6eaf7cd6fc7a6bbfc8ceef6e3f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.7 MB (9684406 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2659cdacdb8c90c4b6b9f9f7ea5484be38ca34e0356811cd276eaab8d1f9e6d3`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
+
+```dockerfile
+# Mon, 02 Oct 2023 18:42:41 GMT
+ADD file:4289ff643f8649c055647843814da70f7ba2881d5fbdc6e3ece0c5b13f273fc9 in / 
+# Mon, 02 Oct 2023 18:42:41 GMT
+CMD ["/bin/sh"]
+# Mon, 02 Oct 2023 18:42:41 GMT
+RUN apk add --no-cache ca-certificates # buildkit
+# Mon, 02 Oct 2023 18:42:41 GMT
+RUN set -eux; 	version='2.8.3'; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  arch='amd64';   sha256='b1f750ecbe09f38e2143e22c61a25e3da2afe1510d9522859230b480e642ceff' ;; 		aarch64) arch='arm64';   sha256='7d2252eeeac97dd60fb9b36bebd15b95d7f947c4c82b8e0824cb55233ece9cd0' ;; 		armhf)   arch='armv6';   sha256='b00606466f976b6757268f1e7691918cbeca4af6fd4093a114b9186744ee8ef0' ;; 		armv7)   arch='armv7';   sha256='d3d7d958a7cc04159d43871261b1ed470ba72531d345fada311068962b967517' ;; 		ppc64le) arch='ppc64le'; sha256='9003659e5571bee89ee6d686057d02e9c0896d327276f268189922036e1ca84b' ;; 		s390x)   arch='s390x';   sha256='2c1347c73f881c320ff707055aecf649a888df39252e8bdc4fdfac7f59a383f1' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	wget -O registry.tar.gz "https://github.com/distribution/distribution/releases/download/v${version}/registry_${version}_linux_${arch}.tar.gz"; 	echo "$sha256 *registry.tar.gz" | sha256sum -c -; 	tar --extract --verbose --file registry.tar.gz --directory /bin/ registry; 	rm registry.tar.gz; 	registry --version # buildkit
+# Mon, 02 Oct 2023 18:42:41 GMT
+COPY ./config-example.yml /etc/docker/registry/config.yml # buildkit
+# Mon, 02 Oct 2023 18:42:41 GMT
+VOLUME [/var/lib/registry]
+# Mon, 02 Oct 2023 18:42:41 GMT
+EXPOSE map[5000/tcp:{}]
+# Mon, 02 Oct 2023 18:42:41 GMT
+COPY docker-entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 02 Oct 2023 18:42:41 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 02 Oct 2023 18:42:41 GMT
+CMD ["/etc/docker/registry/config.yml"]
+```
+
+-	Layers:
+	-	`sha256:ac5a7f502af5c00165b80407657a44a5d5f8b8b3f5f6a3c0ea73bcc6500f3466`  
+		Last Modified: Mon, 22 Jul 2024 21:51:22 GMT  
+		Size: 3.2 MB (3229892 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a4bb5ecb2ec65f9e45bd14592a8d7ee2b7ec69a0b59a1b9e3393ffd86bb10843`  
+		Last Modified: Wed, 24 Jul 2024 09:02:16 GMT  
+		Size: 293.9 KB (293882 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1d95d6f4f1abbbb9d16cdd882d4e5cde73f344996a618649f78f2da6853d8f5b`  
+		Last Modified: Wed, 24 Jul 2024 09:02:16 GMT  
+		Size: 6.2 MB (6160048 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b75f26bcb42d67d49f831ad985d4885407d7e4a5c12186a12bb7ec873526e5af`  
+		Last Modified: Wed, 24 Jul 2024 09:02:15 GMT  
+		Size: 370.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8ee220608527ae8863cacebaf4dbeafcb67643101fac836a2e60d0aa2dcfcb04`  
+		Last Modified: Wed, 24 Jul 2024 09:02:16 GMT  
+		Size: 214.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `registry:2.8.3` - unknown; unknown
+
+```console
+$ docker pull registry@sha256:4bb9af01b3fef7823571ba6ad5083b8d096db618114b014be09b7de33c6a3295
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **190.7 KB (190679 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a4878eb828b111bc6280975769caee92fdda38ddef227768f4f95e7e79069832`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:472ed8d71da851e2e9bc9da0f2335868e1638febb3f6c5e5393d2102b9323542`  
+		Last Modified: Wed, 24 Jul 2024 09:02:16 GMT  
+		Size: 176.8 KB (176841 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:cf47d9a4a6005592214bb2fd95b9df17d6264725f155cb2d7bd26620547f91ca`  
+		Last Modified: Wed, 24 Jul 2024 09:02:15 GMT  
+		Size: 13.8 KB (13838 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `registry:3.0.0-beta.1`
 
 ```console
-$ docker pull registry@sha256:ca3da58e0fd43fae5967e8c7be50acf0f3a0fbde276d42793aaa659f64390271
+$ docker pull registry@sha256:3a67e0c7f7f79a9ba76c8b94d8f063dd253d0c9235b32a3f89f43032c025706e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1883,20 +1883,20 @@ $ docker pull registry@sha256:a210fa976f49aab3a116f7411f1617a4465dbb19f0b7173052
 ### `registry:3.0.0-beta.1` - linux; ppc64le
 
 ```console
-$ docker pull registry@sha256:f684b059e1bead536b10df00dfe7844f41913f7b270a4ce69d833b0b427a526f
+$ docker pull registry@sha256:88166ec28de0abdbcaa6883579c38add38a6fb13f2e1d3a3deaeb424312b6454
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.8 MB (13787210 bytes)**  
+-	Total Size: **13.8 MB (13787043 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:78c97c682f579291a27bd1a86d107c053f6fd39e50cbf9578da3eb09befdfe77`
+-	Image ID: `sha256:96cf5a598b7f818f28e41bc113585cc36fa645d12f89fe1724d680c958ab8aad`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/distribution\/config.yml"]`
 
 ```dockerfile
-# Thu, 20 Jun 2024 18:18:21 GMT
-ADD file:c98fdd4075ec8eb66a469bd36f2d1369030638ad4b76778b5ad9c787b9f63c8b in / 
-# Thu, 20 Jun 2024 18:18:22 GMT
+# Wed, 10 Jul 2024 13:39:47 GMT
+ADD file:9fcad21b83b7efd6ef267ba714c3ef5a8d4d2064a0bdf528cbb17d0c3388f03f in / 
+# Wed, 10 Jul 2024 13:39:47 GMT
 CMD ["/bin/sh"]
 # Wed, 10 Jul 2024 13:39:47 GMT
 RUN apk add --no-cache ca-certificates # buildkit
@@ -1917,68 +1917,68 @@ CMD ["/etc/distribution/config.yml"]
 ```
 
 -	Layers:
-	-	`sha256:b02dcd5eb44e382ea711bca074a007403db63dacf55f888b3a87214d1052dd50`  
-		Last Modified: Thu, 20 Jun 2024 18:18:55 GMT  
-		Size: 3.6 MB (3571699 bytes)  
+	-	`sha256:6e59b4988c495782a5b0c8f8d6698931851c16c5c0fc5ef09cbb0637ade56e36`  
+		Last Modified: Mon, 22 Jul 2024 21:26:52 GMT  
+		Size: 3.6 MB (3571555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68e9f5c2d70d1b2f0680099e2f2c23c65c26d42c697204adc40f230e96745643`  
-		Last Modified: Wed, 10 Jul 2024 16:57:35 GMT  
-		Size: 294.1 KB (294072 bytes)  
+	-	`sha256:384b08f89f73d5e051cad7d20970661bf17995762f12461f9064c3de2d58bab4`  
+		Last Modified: Wed, 24 Jul 2024 10:25:26 GMT  
+		Size: 294.0 KB (294038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9262d0cfcb4ba2645a1e45185a32b3b150e5a2a2cf28a28a41d7a3a5d3bb0cd4`  
-		Last Modified: Wed, 10 Jul 2024 16:57:36 GMT  
-		Size: 9.9 MB (9920830 bytes)  
+	-	`sha256:7acafdab49fec7f3283aec596802358ccfb6c37271c6fb715881042246d32195`  
+		Last Modified: Wed, 24 Jul 2024 10:25:26 GMT  
+		Size: 9.9 MB (9920840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e30baab779ca63098d3d098db5842361df51cbdee653735882c020479fe12d78`  
-		Last Modified: Wed, 10 Jul 2024 16:57:35 GMT  
-		Size: 395.0 B  
+	-	`sha256:329d09718afa7cfd45a993ef6ad07a8adc9f296aa0dc29492e5fecaecf512859`  
+		Last Modified: Wed, 24 Jul 2024 10:25:26 GMT  
+		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81042a1cc53e023a7477b063f5c455a4e4b73211d69c7438e56b89adfc84d6b8`  
-		Last Modified: Wed, 10 Jul 2024 16:57:35 GMT  
-		Size: 214.0 B  
+	-	`sha256:2c6e22bff46f2204bac3378bbfbffc93d2d3c96562cee2e7bcc25b2600baddf0`  
+		Last Modified: Wed, 24 Jul 2024 10:25:26 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `registry:3.0.0-beta.1` - unknown; unknown
 
 ```console
-$ docker pull registry@sha256:a8c46de488e08d8074582c1417d364dd937d1530e21a58e2dbccd75a90cd6586
+$ docker pull registry@sha256:1068234d470b503bd91553440b4b82f20962219f8aa604d8c7cf692dbc2d77b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **239.7 KB (239737 bytes)**  
+-	Total Size: **254.2 KB (254182 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3eea31203f4ee03a1b30cef0ec986f446983fbd8b7b8beba1417b0cba3dc2dad`
+-	Image ID: `sha256:81216abf6a39f7ea08f2a69a150f45bd0f5aab8640205ee725a4b10e2134ac03`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:84c3803f90fd67c6d37a74a70e65ff37a6477072ad7c3f6f1be6eddc4aa04315`  
-		Last Modified: Wed, 10 Jul 2024 16:57:35 GMT  
-		Size: 226.8 KB (226764 bytes)  
+	-	`sha256:cb30e4e4dff75ccb3b1aca9eb6f6289457486dfe4257001023c07c291700a66e`  
+		Last Modified: Wed, 24 Jul 2024 10:25:26 GMT  
+		Size: 241.2 KB (241209 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f8238ff952897a4d600f05363e6fa8e72152862794524ba5e34234bfc140fafa`  
-		Last Modified: Wed, 10 Jul 2024 16:57:35 GMT  
+	-	`sha256:1c5e4e93eb70cc07d83049850745acd086c2dfc06f2d5fa7d208e4011fa0b0be`  
+		Last Modified: Wed, 24 Jul 2024 10:25:26 GMT  
 		Size: 13.0 KB (12973 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `registry:3.0.0-beta.1` - linux; s390x
 
 ```console
-$ docker pull registry@sha256:9d21cb7d4f3b0745bc9d429efc108f95511c18b35ba3d9281dc4e6728e9a378f
+$ docker pull registry@sha256:aa0bd958a961ffe3ea6464963ed8aba0bf17974fd66404843bec514dfa213c5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.3 MB (14299817 bytes)**  
+-	Total Size: **14.3 MB (14298986 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e363f04a71f4dc7628ee7424a6ba50baf0d958a7ebc1cb2c6acb4bcc99c00c21`
+-	Image ID: `sha256:bc701c2d18ba2defd34eab8c090a57ae8a374e56ff09891a4d77f9d7efeb87fb`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/distribution\/config.yml"]`
 
 ```dockerfile
-# Thu, 20 Jun 2024 17:42:02 GMT
-ADD file:23eeda2aa519e3b51e03f1ce8faeb8c4b597b4b31ec175cb09306147000967fc in / 
-# Thu, 20 Jun 2024 17:42:03 GMT
+# Wed, 10 Jul 2024 13:39:47 GMT
+ADD file:63d382fb7a431c57868274a368a659bde32a60ae0cd05c8af34c3d6a57066a77 in / 
+# Wed, 10 Jul 2024 13:39:47 GMT
 CMD ["/bin/sh"]
 # Wed, 10 Jul 2024 13:39:47 GMT
 RUN apk add --no-cache ca-certificates # buildkit
@@ -1999,55 +1999,55 @@ CMD ["/etc/distribution/config.yml"]
 ```
 
 -	Layers:
-	-	`sha256:f9a77bce0ddc1b9251f410e8c69566b002f4e557ee68895b558671311b17fd91`  
-		Last Modified: Thu, 20 Jun 2024 17:43:02 GMT  
-		Size: 3.5 MB (3461856 bytes)  
+	-	`sha256:834c666d55eae0e308600077be061a01680e7cd02b579be887d9469075f0d943`  
+		Last Modified: Mon, 22 Jul 2024 21:51:06 GMT  
+		Size: 3.5 MB (3461066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cac331ec2d999ec11912d90cc951becc57cc0a546f147316d36d21a37047aa9a`  
-		Last Modified: Wed, 10 Jul 2024 16:57:37 GMT  
-		Size: 291.9 KB (291940 bytes)  
+	-	`sha256:7263efb22488e2d2371b2aacc27cd5d2b7c1ed3fd431d7a12f2126af60aaab21`  
+		Last Modified: Wed, 24 Jul 2024 09:01:32 GMT  
+		Size: 291.9 KB (291896 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee89d2d3636d09ffd8efdc1a3eba91901e776f7b5fd56e6f6f80970d6e6bc6e0`  
-		Last Modified: Wed, 10 Jul 2024 16:57:37 GMT  
-		Size: 10.5 MB (10545411 bytes)  
+	-	`sha256:46b51d34ab7c26bbd620b8ac3cbfe936f1538a16428ae27dc76bd57cf0341a8a`  
+		Last Modified: Wed, 24 Jul 2024 09:01:32 GMT  
+		Size: 10.5 MB (10545413 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34a6a23ff695d37fe311fe1d9640920b718788c7cade798f349cf7a586380f51`  
-		Last Modified: Wed, 10 Jul 2024 16:57:36 GMT  
-		Size: 396.0 B  
+	-	`sha256:c8b9975ca5f5a8eb58a04c62b85c088b0bbef8c6aa1dbe8164d3bea8b5c075dc`  
+		Last Modified: Wed, 24 Jul 2024 09:01:32 GMT  
+		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6499f296338e5dc9fd8d55a18a661465dfaf41d6f6dd3a1ed8cbf32fe59f92eb`  
-		Last Modified: Wed, 10 Jul 2024 16:57:37 GMT  
+	-	`sha256:e89c506587c4bda632fdb911e3a5b6037aa9d53b62f8fca076ecf92c0fa2974f`  
+		Last Modified: Wed, 24 Jul 2024 09:01:32 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `registry:3.0.0-beta.1` - unknown; unknown
 
 ```console
-$ docker pull registry@sha256:ec6c560950aae44f3cb6db5dcec3fb46f1858648b6b4f62b455b128f54087d2b
+$ docker pull registry@sha256:b77a66f46d02f69d11e3103cdb3b42def51959495c35488a6c2a796d23c6e0f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **239.7 KB (239688 bytes)**  
+-	Total Size: **254.1 KB (254133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb1d978dc9bd1abe043c0789c478f4e343795810fcca13ecec8191bf3db5933a`
+-	Image ID: `sha256:bf596fac8fcf369fa3d46500f97ed5bec85d2c4c2858864164fe7739aabb6e96`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9d6539c8b1c5c9b35d70a6f7896599e357d749037aaff50e044091ac86ed150a`  
-		Last Modified: Wed, 10 Jul 2024 16:57:37 GMT  
-		Size: 226.7 KB (226734 bytes)  
+	-	`sha256:550c5b9be78cee86f1db3f9f613bdaa587d8d02351057457d8d59c6f433e1ebd`  
+		Last Modified: Wed, 24 Jul 2024 09:01:32 GMT  
+		Size: 241.2 KB (241179 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f34ea5d18632b9019416c703f55d423d198d4f2c9464f1467a4259a844976687`  
-		Last Modified: Wed, 10 Jul 2024 16:57:36 GMT  
+	-	`sha256:86edded56ea2ba6114afcde005bbdf7b1a217120e31a0cd04f9e732fbf086a9b`  
+		Last Modified: Wed, 24 Jul 2024 09:01:31 GMT  
 		Size: 13.0 KB (12954 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `registry:latest`
 
 ```console
-$ docker pull registry@sha256:e00e7bbb9cd8322e2c4ea9ed4c996f5060a51486d90cbfd5aca7f3d8214eebe9
+$ docker pull registry@sha256:d8cbd10291d15e67b9897e1709fd32f50a7af2d28d8e4bed9c812f617382ee07
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2392,19 +2392,19 @@ $ docker pull registry@sha256:9d21e22931ef6a158fce09ec809f6d3113742568dea3f0191c
 ### `registry:latest` - linux; ppc64le
 
 ```console
-$ docker pull registry@sha256:34b23db1730dc6d1789a2b1008f63f935342029d09b04151ab15e57e0180d333
+$ docker pull registry@sha256:c7d8d25752c8e4022e43a1ce4920ad2db1cb82d84f6d4c3744d67079633ed8b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.3 MB (9343073 bytes)**  
+-	Total Size: **9.3 MB (9344668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2dbca443518974c4b51588a3218e1752518620993bab5857c54eb37cf649f9c`
+-	Image ID: `sha256:9c56f40ac1ee2eb23bb771e3941876ee6a2cfc52ed034364bcf420bc4b619602`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
 
 ```dockerfile
 # Mon, 02 Oct 2023 18:42:41 GMT
-ADD file:e0f257ed0b6b089b6a4fe2968065aa56ee04f7837fe7266dcd68be8d5242417b in / 
+ADD file:39fb75dfdfdb9dd435f3c590aab65b7ba2e1633e7fb84509706e3eeb59f2c5a5 in / 
 # Mon, 02 Oct 2023 18:42:41 GMT
 CMD ["/bin/sh"]
 # Mon, 02 Oct 2023 18:42:41 GMT
@@ -2426,129 +2426,129 @@ CMD ["/etc/docker/registry/config.yml"]
 ```
 
 -	Layers:
-	-	`sha256:e3dd182a4c3296a9689fa043379c0a4ce2b865024ca7344a169d5d4759a52548`  
-		Last Modified: Thu, 20 Jun 2024 18:19:16 GMT  
-		Size: 3.4 MB (3357033 bytes)  
+	-	`sha256:248e3c27daa6f506dd6946aadf071230265e194056aefeb63e0bcddc4087e672`  
+		Last Modified: Mon, 22 Jul 2024 21:27:13 GMT  
+		Size: 3.4 MB (3358632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca05e1ee509fa227e192e4093cc795b1da364e20113b227af25a6ba5b44f6c7f`  
-		Last Modified: Fri, 21 Jun 2024 02:54:56 GMT  
+	-	`sha256:e6394177c9e344ff7690a3cfa14d52f9dba6999735706b2641835fc6ee1222f7`  
+		Last Modified: Wed, 24 Jul 2024 10:26:00 GMT  
 		Size: 296.2 KB (296240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb69344abf7da1ba7c0a2428776f4e5c90ed5360eca15f3e1d3fc71009cce3a2`  
-		Last Modified: Fri, 21 Jun 2024 02:55:21 GMT  
+	-	`sha256:2b12f807ee69a6ccb35839d4d3b3f3a60db046615812d84922223a0252edbcba`  
+		Last Modified: Wed, 24 Jul 2024 10:26:00 GMT  
 		Size: 5.7 MB (5689215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f65a8d79d11f5c46636c8d091dcc04d0657f6a56b649c9e3f1bdd86c1aaaa685`  
-		Last Modified: Fri, 21 Jun 2024 02:55:20 GMT  
-		Size: 371.0 B  
+	-	`sha256:863361136815fcf688b3ea38ba06b28e4d77e8c1d75725e4917464963fb6d358`  
+		Last Modified: Wed, 24 Jul 2024 10:25:59 GMT  
+		Size: 368.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea81d7fc89a2d1d62b3852a262103ac050961ba68bab11e6f44c903f9d64539a`  
-		Last Modified: Fri, 21 Jun 2024 02:55:20 GMT  
-		Size: 214.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `registry:latest` - unknown; unknown
-
-```console
-$ docker pull registry@sha256:a2aaa41f80e13ccb0c9bb3daf24924fb4386db87b15b0682d862786ace663c17
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.2 KB (187200 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fd018658d1a1175a6ac1588ca1d12266514afa77c28de3c8b8d0cc8c9aec5cbd`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:981b8bed9f3446bc21dfa71ccaf461123ed144207efbcc615923796c37d7f73d`  
-		Last Modified: Fri, 21 Jun 2024 02:55:20 GMT  
-		Size: 173.4 KB (173358 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:fcd7591901a1a1e922a8ab2e812e2feb3488a71b7026d4221de6d94f7f059b56`  
-		Last Modified: Fri, 21 Jun 2024 02:55:20 GMT  
-		Size: 13.8 KB (13842 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `registry:latest` - linux; s390x
-
-```console
-$ docker pull registry@sha256:073d565951025666ab3cf8cb8a7e3b87f3edd831cc810dcb31b5f54ed9345831
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.7 MB (9682990 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95d284c81a1e4b1a06e770a9b301d90d12b65bdc0e494bf8a020705cee5e6e19`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
-
-```dockerfile
-# Mon, 02 Oct 2023 18:42:41 GMT
-ADD file:066d299d4861b197660e02b5eb126c42f2a11e586f49c463174acf5454e9244b in / 
-# Mon, 02 Oct 2023 18:42:41 GMT
-CMD ["/bin/sh"]
-# Mon, 02 Oct 2023 18:42:41 GMT
-RUN apk add --no-cache ca-certificates # buildkit
-# Mon, 02 Oct 2023 18:42:41 GMT
-RUN set -eux; 	version='2.8.3'; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  arch='amd64';   sha256='b1f750ecbe09f38e2143e22c61a25e3da2afe1510d9522859230b480e642ceff' ;; 		aarch64) arch='arm64';   sha256='7d2252eeeac97dd60fb9b36bebd15b95d7f947c4c82b8e0824cb55233ece9cd0' ;; 		armhf)   arch='armv6';   sha256='b00606466f976b6757268f1e7691918cbeca4af6fd4093a114b9186744ee8ef0' ;; 		armv7)   arch='armv7';   sha256='d3d7d958a7cc04159d43871261b1ed470ba72531d345fada311068962b967517' ;; 		ppc64le) arch='ppc64le'; sha256='9003659e5571bee89ee6d686057d02e9c0896d327276f268189922036e1ca84b' ;; 		s390x)   arch='s390x';   sha256='2c1347c73f881c320ff707055aecf649a888df39252e8bdc4fdfac7f59a383f1' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	wget -O registry.tar.gz "https://github.com/distribution/distribution/releases/download/v${version}/registry_${version}_linux_${arch}.tar.gz"; 	echo "$sha256 *registry.tar.gz" | sha256sum -c -; 	tar --extract --verbose --file registry.tar.gz --directory /bin/ registry; 	rm registry.tar.gz; 	registry --version # buildkit
-# Mon, 02 Oct 2023 18:42:41 GMT
-COPY ./config-example.yml /etc/docker/registry/config.yml # buildkit
-# Mon, 02 Oct 2023 18:42:41 GMT
-VOLUME [/var/lib/registry]
-# Mon, 02 Oct 2023 18:42:41 GMT
-EXPOSE map[5000/tcp:{}]
-# Mon, 02 Oct 2023 18:42:41 GMT
-COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Mon, 02 Oct 2023 18:42:41 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Mon, 02 Oct 2023 18:42:41 GMT
-CMD ["/etc/docker/registry/config.yml"]
-```
-
--	Layers:
-	-	`sha256:784fb6b11ccf355c65e296bcf7ef3623ff36c33ac16292b79440c32ec3699700`  
-		Last Modified: Thu, 20 Jun 2024 17:43:27 GMT  
-		Size: 3.2 MB (3228474 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:152a426eb93b7b93c73794517c84ef71d7dcc4719e45e3655858f9683fcb0633`  
-		Last Modified: Fri, 21 Jun 2024 05:39:43 GMT  
-		Size: 293.9 KB (293885 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12ae11a7490fe3ced24ccdbc59f281f831e48ddbb146bb7fa40fafbc1f3bfdac`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
-		Size: 6.2 MB (6160049 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9598ab3a7b8dd012bdec4ff075f9923d716b6689266552d93a0fc3e0f7a540ad`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
-		Size: 369.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a5653a2b64ae246042e6da1455594cad84e0f66e5791f41a8977b901969bcc8`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
+	-	`sha256:7132a55dbd15ab7d88188d6b73954b4f062acc8a19b01c7094fb0adc50e01951`  
+		Last Modified: Wed, 24 Jul 2024 10:26:00 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `registry:latest` - unknown; unknown
 
 ```console
-$ docker pull registry@sha256:d8ec038648b94d846f00c0854cb0585aca2e0f8a27a4d3b8e5495fd32b8f1ae1
+$ docker pull registry@sha256:1c236b34d330ad833cb193f8b1c5ede23879528bcc9ba4137cf2f440c7a2da8e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.1 KB (187126 bytes)**  
+-	Total Size: **190.8 KB (190753 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:81185b8c3188e756c7114cc1de3a804ee71982ba148042bf21fcdde42a141033`
+-	Image ID: `sha256:8877ef6706805e44a0d640a743a6ce2c4918220460a3cbe5aaf64981c5766d7d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9f9a2b5f8d3d64fde595808b735b6608f04a83bc682d3e66835713dcc62c59a3`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
-		Size: 173.3 KB (173324 bytes)  
+	-	`sha256:aecef5d31e88f0c84ddac5e5f5a928abf8a1fbf8a4326d55dc292939fdc3dda6`  
+		Last Modified: Wed, 24 Jul 2024 10:26:00 GMT  
+		Size: 176.9 KB (176875 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bca581e0d26d0109b01af03a306769d95fc65edaec5b1bcc08d6edd0dc005591`  
-		Last Modified: Fri, 21 Jun 2024 05:40:23 GMT  
-		Size: 13.8 KB (13802 bytes)  
+	-	`sha256:ef2fd6a7ec96db8e46171cf90ae5095d1d5dfefe00eab4b074ba8b50ff6c7232`  
+		Last Modified: Wed, 24 Jul 2024 10:25:59 GMT  
+		Size: 13.9 KB (13878 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `registry:latest` - linux; s390x
+
+```console
+$ docker pull registry@sha256:d5ab0c6336d8ffd0d0256963a040f13a77e28c6eaf7cd6fc7a6bbfc8ceef6e3f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.7 MB (9684406 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2659cdacdb8c90c4b6b9f9f7ea5484be38ca34e0356811cd276eaab8d1f9e6d3`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
+
+```dockerfile
+# Mon, 02 Oct 2023 18:42:41 GMT
+ADD file:4289ff643f8649c055647843814da70f7ba2881d5fbdc6e3ece0c5b13f273fc9 in / 
+# Mon, 02 Oct 2023 18:42:41 GMT
+CMD ["/bin/sh"]
+# Mon, 02 Oct 2023 18:42:41 GMT
+RUN apk add --no-cache ca-certificates # buildkit
+# Mon, 02 Oct 2023 18:42:41 GMT
+RUN set -eux; 	version='2.8.3'; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  arch='amd64';   sha256='b1f750ecbe09f38e2143e22c61a25e3da2afe1510d9522859230b480e642ceff' ;; 		aarch64) arch='arm64';   sha256='7d2252eeeac97dd60fb9b36bebd15b95d7f947c4c82b8e0824cb55233ece9cd0' ;; 		armhf)   arch='armv6';   sha256='b00606466f976b6757268f1e7691918cbeca4af6fd4093a114b9186744ee8ef0' ;; 		armv7)   arch='armv7';   sha256='d3d7d958a7cc04159d43871261b1ed470ba72531d345fada311068962b967517' ;; 		ppc64le) arch='ppc64le'; sha256='9003659e5571bee89ee6d686057d02e9c0896d327276f268189922036e1ca84b' ;; 		s390x)   arch='s390x';   sha256='2c1347c73f881c320ff707055aecf649a888df39252e8bdc4fdfac7f59a383f1' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	wget -O registry.tar.gz "https://github.com/distribution/distribution/releases/download/v${version}/registry_${version}_linux_${arch}.tar.gz"; 	echo "$sha256 *registry.tar.gz" | sha256sum -c -; 	tar --extract --verbose --file registry.tar.gz --directory /bin/ registry; 	rm registry.tar.gz; 	registry --version # buildkit
+# Mon, 02 Oct 2023 18:42:41 GMT
+COPY ./config-example.yml /etc/docker/registry/config.yml # buildkit
+# Mon, 02 Oct 2023 18:42:41 GMT
+VOLUME [/var/lib/registry]
+# Mon, 02 Oct 2023 18:42:41 GMT
+EXPOSE map[5000/tcp:{}]
+# Mon, 02 Oct 2023 18:42:41 GMT
+COPY docker-entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 02 Oct 2023 18:42:41 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 02 Oct 2023 18:42:41 GMT
+CMD ["/etc/docker/registry/config.yml"]
+```
+
+-	Layers:
+	-	`sha256:ac5a7f502af5c00165b80407657a44a5d5f8b8b3f5f6a3c0ea73bcc6500f3466`  
+		Last Modified: Mon, 22 Jul 2024 21:51:22 GMT  
+		Size: 3.2 MB (3229892 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a4bb5ecb2ec65f9e45bd14592a8d7ee2b7ec69a0b59a1b9e3393ffd86bb10843`  
+		Last Modified: Wed, 24 Jul 2024 09:02:16 GMT  
+		Size: 293.9 KB (293882 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1d95d6f4f1abbbb9d16cdd882d4e5cde73f344996a618649f78f2da6853d8f5b`  
+		Last Modified: Wed, 24 Jul 2024 09:02:16 GMT  
+		Size: 6.2 MB (6160048 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b75f26bcb42d67d49f831ad985d4885407d7e4a5c12186a12bb7ec873526e5af`  
+		Last Modified: Wed, 24 Jul 2024 09:02:15 GMT  
+		Size: 370.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8ee220608527ae8863cacebaf4dbeafcb67643101fac836a2e60d0aa2dcfcb04`  
+		Last Modified: Wed, 24 Jul 2024 09:02:16 GMT  
+		Size: 214.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `registry:latest` - unknown; unknown
+
+```console
+$ docker pull registry@sha256:4bb9af01b3fef7823571ba6ad5083b8d096db618114b014be09b7de33c6a3295
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **190.7 KB (190679 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a4878eb828b111bc6280975769caee92fdda38ddef227768f4f95e7e79069832`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:472ed8d71da851e2e9bc9da0f2335868e1638febb3f6c5e5393d2102b9323542`  
+		Last Modified: Wed, 24 Jul 2024 09:02:16 GMT  
+		Size: 176.8 KB (176841 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:cf47d9a4a6005592214bb2fd95b9df17d6264725f155cb2d7bd26620547f91ca`  
+		Last Modified: Wed, 24 Jul 2024 09:02:15 GMT  
+		Size: 13.8 KB (13838 bytes)  
 		MIME: application/vnd.in-toto+json
