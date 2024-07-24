@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4939e7db479365ecd85c65cdecc33c0f572dc2b3c692613442d1a32865459ef1`
-- Created: `2024-05-28T14:35:32Z`
+- Image ID: `sha256:3bcff67817a8f5744c4a4e39a88cbb4e67908b497254bc7f95a97d83ed999ceb`
+- Created: `2024-07-23T08:16:38Z`
 - Virtual Size: ~ 93.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -344,15 +344,15 @@ $ dnf --quiet download --source --url keyutils-libs-1.5.10-9.el8
 http://repo.almalinux.org/vault/8.10/BaseOS/Source/Packages/keyutils-1.5.10-9.el8.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.18.2-27.el8_10.x86_64`
+### `rpm` package: `krb5-libs-1.18.2-28.el8_10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.18.2-27.el8_10
-http://repo.almalinux.org/vault/8.10/BaseOS/Source/Packages/krb5-1.18.2-27.el8_10.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.18.2-28.el8_10
+http://repo.almalinux.org/vault/8.10/BaseOS/Source/Packages/krb5-1.18.2-28.el8_10.src.rpm
 ```
 
 ### `rpm` package: `langpacks-en-1.0-12.el8.noarch`
@@ -586,15 +586,15 @@ $ dnf --quiet download --source --url libmount-2.32.1-46.el8
 http://repo.almalinux.org/vault/8.10/BaseOS/Source/Packages/util-linux-2.32.1-46.el8.src.rpm
 ```
 
-### `rpm` package: `libnghttp2-1.33.0-5.el8_9.x86_64`
+### `rpm` package: `libnghttp2-1.33.0-6.el8_10.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libnghttp2-1.33.0-5.el8_9
-http://repo.almalinux.org/vault/8.10/BaseOS/Source/Packages/nghttp2-1.33.0-5.el8_9.src.rpm
+$ dnf --quiet download --source --url libnghttp2-1.33.0-6.el8_10.1
+http://repo.almalinux.org/vault/8.10/BaseOS/Source/Packages/nghttp2-1.33.0-6.el8_10.1.src.rpm
 ```
 
 ### `rpm` package: `libpeas-1.22.0-6.el8.x86_64`
@@ -784,15 +784,15 @@ $ dnf --quiet download --source --url libxcrypt-4.1.1-6.el8
 http://repo.almalinux.org/vault/8.10/BaseOS/Source/Packages/libxcrypt-4.1.1-6.el8.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.7-18.el8_9.x86_64`
+### `rpm` package: `libxml2-2.9.7-18.el8_10.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.7-18.el8_9
-http://repo.almalinux.org/vault/8.10/BaseOS/Source/Packages/libxml2-2.9.7-18.el8_9.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.7-18.el8_10.1
+http://repo.almalinux.org/vault/8.10/BaseOS/Source/Packages/libxml2-2.9.7-18.el8_10.1.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.1.7-5.el8.x86_64`
@@ -905,15 +905,15 @@ $ dnf --quiet download --source --url npth-1.5-4.el8
 http://repo.almalinux.org/vault/8.10/BaseOS/Source/Packages/npth-1.5-4.el8.src.rpm
 ```
 
-### `rpm` package: `openldap-2.4.46-18.el8.x86_64`
+### `rpm` package: `openldap-2.4.46-19.el8_10.x86_64`
 
 Licenses (from `rpm --query`): OpenLDAP
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openldap-2.4.46-18.el8
-http://repo.almalinux.org/vault/8.10/BaseOS/Source/Packages/openldap-2.4.46-18.el8.src.rpm
+$ dnf --quiet download --source --url openldap-2.4.46-19.el8_10
+http://repo.almalinux.org/vault/8.10/BaseOS/Source/Packages/openldap-2.4.46-19.el8_10.src.rpm
 ```
 
 ### `rpm` package: `openssl-libs-1.1.1k-12.el8_9.x86_64`
@@ -1070,15 +1070,15 @@ $ dnf --quiet download --source --url sqlite-libs-3.26.0-19.el8_9
 http://repo.almalinux.org/vault/8.10/BaseOS/Source/Packages/sqlite-3.26.0-19.el8_9.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-239-82.el8.x86_64`
+### `rpm` package: `systemd-libs-239-82.el8_10.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-libs-239-82.el8
-http://repo.almalinux.org/vault/8.10/BaseOS/Source/Packages/systemd-239-82.el8.src.rpm
+$ dnf --quiet download --source --url systemd-libs-239-82.el8_10.1
+http://repo.almalinux.org/vault/8.10/BaseOS/Source/Packages/systemd-239-82.el8_10.1.src.rpm
 ```
 
 ### `rpm` package: `tzdata-2024a-1.el8.noarch`

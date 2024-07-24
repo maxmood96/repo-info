@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:82abfd8bf58fda9093f9d71e600046d3748e9ac32cdb138918db624a1ef1e592`
-- Created: `2024-05-30T15:50:21Z`
+- Image ID: `sha256:cb7864c8286076d97b65a330d8a80021c44b47853f372aac58e26c098f573f3b`
+- Created: `2024-07-23T10:26:38Z`
 - Virtual Size: ~ 88.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -569,15 +569,15 @@ $ dnf --quiet download --source --url libmount-2.37.4-18.el9
 http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/util-linux-2.37.4-18.el9.src.rpm
 ```
 
-### `rpm` package: `libnghttp2-1.43.0-5.el9_3.1.x86_64`
+### `rpm` package: `libnghttp2-1.43.0-5.el9_4.3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libnghttp2-1.43.0-5.el9_3.1
-http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/nghttp2-1.43.0-5.el9_3.1.src.rpm
+$ dnf --quiet download --source --url libnghttp2-1.43.0-5.el9_4.3
+http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/nghttp2-1.43.0-5.el9_4.3.src.rpm
 ```
 
 ### `rpm` package: `libpeas-1.30.0-4.el9.x86_64`
