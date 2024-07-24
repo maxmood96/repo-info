@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-lein-2.11.2-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:934e381f94c2a2fd84b347a3267ad294c47c3800a16d043c3e582f8174eb1dc6
+$ docker pull clojure@sha256:942870ff4228040d107dd1fa9c42d3d10dbfdcf629d1d77ef5b049cea0593cbd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -101,13 +101,13 @@ $ docker pull clojure@sha256:83f6c3e06f46eaa95a4ded9547430deb5e99a1a4a0e4481cc8a
 ### `clojure:temurin-11-lein-2.11.2-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:6207dd0dda92906974f873bcd1b1749e1de2778664d75d1d5c9149d32f1be0cf
+$ docker pull clojure@sha256:cde8ab13ccacff073afe14957ae65b8666d74684def2ca0455bd8abd478519c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **227.0 MB (226954241 bytes)**  
+-	Total Size: **227.0 MB (227006479 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44f965d35f4df4933859bdc59d0b78932a3ecf4bd19620155083d515093429cb`
+-	Image ID: `sha256:899bc59d2f1d5fa982dd3ce1e1b1d187de3c80c4e935d4b62c0b1165995fc22a`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -144,43 +144,43 @@ CMD ["lein" "repl"]
 		Last Modified: Tue, 23 Jul 2024 04:20:29 GMT  
 		Size: 29.2 MB (29156571 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d55471a3be484fe97f862682ee638f4d91a474d190dd9e4273132f2eaab7d2ce`  
-		Last Modified: Tue, 23 Jul 2024 12:17:01 GMT  
-		Size: 142.3 MB (142304140 bytes)  
+	-	`sha256:0044c6bef07efe98365d4134f1e7365a1e3909e34e33fb33d8bfe3e8273ce26f`  
+		Last Modified: Wed, 24 Jul 2024 11:25:48 GMT  
+		Size: 142.4 MB (142356420 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18d4408d17aa4f4ad67ac1f14ea1e96b0791369a398375fadedd89b7e9f25c4a`  
-		Last Modified: Tue, 23 Jul 2024 12:17:00 GMT  
-		Size: 51.1 MB (51095453 bytes)  
+	-	`sha256:6eed84b012256e3a4a566a901cf7f68244cc4e60d7c0c5cc08ca48b8804f296a`  
+		Last Modified: Wed, 24 Jul 2024 11:25:46 GMT  
+		Size: 51.1 MB (51095423 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e06d995f1e904e9301662d2081ef7483a2d767dc29750a470e3b42144c8a60e8`  
-		Last Modified: Tue, 23 Jul 2024 12:16:59 GMT  
-		Size: 4.4 MB (4398045 bytes)  
+	-	`sha256:e4ba8314ac6c33b332eb509d23b69989b5c622168d55f2aab736c3edf9d5ee56`  
+		Last Modified: Wed, 24 Jul 2024 11:25:45 GMT  
+		Size: 4.4 MB (4398033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-2.11.2-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:335eabf0f55780df76af16552e2759d40f683765c3e9b3d904f200a97581f081
+$ docker pull clojure@sha256:f0bec19702514d3dd5a57c82f192c1790e6c18972c143232e0a8b8ddd1d54786
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4175954 bytes)**  
+-	Total Size: **4.2 MB (4175955 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74d568a802a8cb29696c65b89cfba9976752abf33327a397af513b848ed607d4`
+-	Image ID: `sha256:672950ba552c36ab5b667394db2f87a0fb1907df76c3e70372750174ca387600`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f58e0a4f972a061194a1c2ac86f350d42f7d7e731bdae0999ccbc09b063c33a8`  
-		Last Modified: Tue, 23 Jul 2024 12:16:58 GMT  
+	-	`sha256:ce4a05c77d57f72f12154b365c826ac6aa2b0060d1b935377f6fcf848d9ac688`  
+		Last Modified: Wed, 24 Jul 2024 11:25:45 GMT  
 		Size: 4.2 MB (4159335 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fadd1f23386677d7ed4546f85d3f90eaec5c1f7b7c2e499eddeba676f7caee74`  
-		Last Modified: Tue, 23 Jul 2024 12:16:58 GMT  
-		Size: 16.6 KB (16619 bytes)  
+	-	`sha256:1a75063341a35f6bcfd1ea20bb94d3a6d54665e0c2da15da0052a09f67fb3511`  
+		Last Modified: Wed, 24 Jul 2024 11:25:45 GMT  
+		Size: 16.6 KB (16620 bytes)  
 		MIME: application/vnd.in-toto+json
