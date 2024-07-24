@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-tools-deps-bullseye`
 
 ```console
-$ docker pull clojure@sha256:40f45e7d03f0c48d7509ed2ca75a3d1206be9c54ff6acc20909225e39a752e56
+$ docker pull clojure@sha256:c6d9275ee533c3c3d0368f3dfbe3ffa36a6b223d4447472020ba0f138f08a089
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull clojure@sha256:40f45e7d03f0c48d7509ed2ca75a3d1206be9c54ff6acc20909
 ### `clojure:temurin-11-tools-deps-bullseye` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:efca500041a69a539855d25d1bd1fbf64ac3ec5aade9e2546c817944978377c4
+$ docker pull clojure@sha256:6c80eaf02f83374ba8b953d2daf8fd6f2b0d74106c2f00c1e087381092bd5c52
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.6 MB (269611082 bytes)**  
+-	Total Size: **269.7 MB (269656824 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f39f615c6e028da8206ba507f092bd362fbac447646ae8a2624da3f9fe16f33`
+-	Image ID: `sha256:38298412c6b7ebf8186c834e62987a2876b474ca607d659b951e92703f00830b`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -51,45 +51,45 @@ CMD ["clj"]
 		Last Modified: Tue, 23 Jul 2024 05:28:11 GMT  
 		Size: 55.1 MB (55084578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b324da53b5a6f161fa594e8092d32509b56e69c61715d7e1d7b449e8cc54343`  
-		Last Modified: Tue, 23 Jul 2024 07:13:59 GMT  
-		Size: 145.5 MB (145504802 bytes)  
+	-	`sha256:6a903a3015649e8f9405e6cc4b08bbe3d472ca979bee2c788217254690aa898d`  
+		Last Modified: Wed, 24 Jul 2024 03:04:27 GMT  
+		Size: 145.6 MB (145550361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96ba967f2c705d423f493b1feb471bf241f282e1591100100c50f43e308bfa57`  
-		Last Modified: Tue, 23 Jul 2024 07:13:58 GMT  
-		Size: 69.0 MB (69021059 bytes)  
+	-	`sha256:2ac23098323c259f308d6ac814ab6304124da5b9675e1f9b9fd9b15f15950c15`  
+		Last Modified: Wed, 24 Jul 2024 03:04:26 GMT  
+		Size: 69.0 MB (69021240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b7881936f6bcfea1b931d4983cfa12614e3962ce07f0c17ed3d02280dc02d3b`  
-		Last Modified: Tue, 23 Jul 2024 07:13:56 GMT  
-		Size: 611.0 B  
+	-	`sha256:4b886664ce35cadc7b4a3b955d01401c996bbdc3ad75cfaa156b206fe29b0343`  
+		Last Modified: Wed, 24 Jul 2024 03:04:25 GMT  
+		Size: 613.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:e72d70f1bae5e57581dd226cbd37a6dcba630e42d57acd95538f4fea78a7b4a3
+$ docker pull clojure@sha256:10239c1fb0343782b713b6aec3e4a9b351429bd1a880baf0e5f01461a4eaa28c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.1 MB (7054207 bytes)**  
+-	Total Size: **7.1 MB (7054209 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:764a3604f4e56488a2e1d3916c4fd4ae3084823795aef0049f71f29efd5d0f3a`
+-	Image ID: `sha256:7e8c8e7bb35ef5187eb22e92a6ae6d2547d5f2cf6572711841008cee0619a0fe`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ffeab74b0190e6871736b786db18463fa804cd1b722682a65621467b7b8627b8`  
-		Last Modified: Tue, 23 Jul 2024 07:13:57 GMT  
+	-	`sha256:7447f0cec6f1555aa60dea3f5649f611b7c8b41434c04bed73b092a202deb877`  
+		Last Modified: Wed, 24 Jul 2024 03:04:25 GMT  
 		Size: 7.0 MB (7040344 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:205821d80d84c5acbdbf3d4a5461ff2dff8370e72175398d499ac7dd7fda1f38`  
-		Last Modified: Tue, 23 Jul 2024 07:13:56 GMT  
-		Size: 13.9 KB (13863 bytes)  
+	-	`sha256:ca432292488cb68722e4e2d3c1a945637d27d476a14edaa4b287aee920d3745a`  
+		Last Modified: Wed, 24 Jul 2024 03:04:25 GMT  
+		Size: 13.9 KB (13865 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-11-tools-deps-bullseye` - linux; arm64 variant v8
