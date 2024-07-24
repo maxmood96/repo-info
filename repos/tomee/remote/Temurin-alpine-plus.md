@@ -1,7 +1,7 @@
 ## `tomee:Temurin-alpine-plus`
 
 ```console
-$ docker pull tomee@sha256:d00ac83703095d2b7fefb1660b4e79b695de47bdcac282a3db36c09789eaa404
+$ docker pull tomee@sha256:1495cf624994063fd666b0e0ec00ca3e254bc862ff80996f7bbe2b50205cd23f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,123 +12,123 @@ $ docker pull tomee@sha256:d00ac83703095d2b7fefb1660b4e79b695de47bdcac282a3db36c
 ### `tomee:Temurin-alpine-plus` - linux; amd64
 
 ```console
-$ docker pull tomee@sha256:7251e7c9d9b45da5ec781009c5f06281a7a432628bb53d7cf31040e812383372
+$ docker pull tomee@sha256:0c7086f83e91dc40ebb82eb02b93b43a1af464070d2d143c5ae5d0c620920f24
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.3 MB (135306942 bytes)**  
+-	Total Size: **135.8 MB (135828466 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9ecef00760e69a7ec8a533d35320611e3533177203f114091a5c75bc53c2d06`
+-	Image ID: `sha256:77e1383a17aaf259db8f9977d0459192b448f3b1c6617d40bba14ea58bcea553`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Tue, 16 Apr 2024 02:54:00 GMT
-ADD file:c644b15c170e2ca46176a566910d40a21dce66518ed8fdfd34ebcf0e9dc90c55 in / 
-# Tue, 16 Apr 2024 02:54:00 GMT
+# Mon, 22 Jul 2024 22:26:43 GMT
+ADD file:99093095d62d0421541d882f9ceeddb2981fe701ec0aa9d2c08480712d5fed21 in / 
+# Mon, 22 Jul 2024 22:26:43 GMT
 CMD ["/bin/sh"]
-# Tue, 16 Apr 2024 02:54:00 GMT
+# Tue, 23 Jul 2024 17:08:23 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 16 Apr 2024 02:54:00 GMT
+# Tue, 23 Jul 2024 17:08:23 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 16 Apr 2024 02:54:00 GMT
+# Tue, 23 Jul 2024 17:08:23 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 16 Apr 2024 02:54:00 GMT
+# Tue, 23 Jul 2024 17:08:23 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata     ;     rm -rf /var/cache/apk/* # buildkit
-# Tue, 16 Apr 2024 02:54:00 GMT
-ENV JAVA_VERSION=jdk-11.0.23+9
-# Tue, 16 Apr 2024 02:54:00 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='6972a6251bc88d6fbb64a188557cf165f1c415ded550d2a280bbcbc4272caff1';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.23_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Tue, 16 Apr 2024 02:54:00 GMT
+# Tue, 23 Jul 2024 17:08:23 GMT
+ENV JAVA_VERSION=jdk-11.0.24+8
+# Tue, 23 Jul 2024 17:08:23 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='0ac795729cc11f47323a71713eac2a5b22d4615fd9b66c8766f964c03fb6e160';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.24_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Tue, 23 Jul 2024 17:08:23 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 16 Apr 2024 02:54:00 GMT
+# Tue, 23 Jul 2024 17:08:23 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 16 Apr 2024 02:54:00 GMT
+# Tue, 23 Jul 2024 17:08:23 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 16 Apr 2024 02:54:00 GMT
+# Tue, 23 Jul 2024 18:18:20 GMT
 ENV PATH=/usr/local/tomee/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 16 Apr 2024 02:54:00 GMT
+# Tue, 23 Jul 2024 18:18:20 GMT
 RUN mkdir -p /usr/local/tomee ~/.gnupg # buildkit
-# Tue, 16 Apr 2024 02:54:00 GMT
+# Tue, 23 Jul 2024 18:18:20 GMT
 WORKDIR /usr/local/tomee
-# Tue, 16 Apr 2024 02:54:00 GMT
+# Tue, 23 Jul 2024 18:18:20 GMT
 RUN apk add --no-cache gpg gpg-agent dirmngr curl   && rm -rf /var/cache/apk/* # buildkit
-# Tue, 16 Apr 2024 02:54:00 GMT
+# Tue, 23 Jul 2024 18:18:20 GMT
 RUN set -xe;   for key in   9056B710F1E332780DE7AF34CBAEBE39A46C4CA1   F067B8140F5DD80E1D3B5D92318242FE9A0B1183   223D3A74B068ECA354DC385CE126833F9CF64915   DBCCD103B8B24F86FFAAB025C8BB472CD297D428   7A2744A8A9AAF063C23EB7868EBE7DBE8D050EEF   B8B301E6105DF628076BD92C5483E55897ABD9B9   FAA603D58B1BA4EDF65896D0ED340E0E6D545F97   A57DAF81C1B69921F4BA8723A8DE0A4DB863A7C1   82D8419BA697F0E7FB85916EE91287822FDB81B1   B7574789F5018690043E6DD9C212662E12F3E1DD   C23A3F6F595EBD0F960270CC997C8F1A5BE6E4C1   678F2D98F1FD9643811639FB622B8F2D043F71D8   BDD0BBEB753192957EFC5F896A62FC8EF17D8FEF   D11DF12CC2CA4894BDE638B967C1227A2678363C   C92604B0DEC5C62CFF5801E73D4683C24EDC64D1   626C542EDA7C113814B77AF09C04914D63645D20   3948829384B269D333CC5B98358807C52B4B0E23   B83D15E72253ED1104EB4FBBDAB472F0E5B8A431   871638A21A7F2C38066471420306A354336B4F0D   ; do     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done # buildkit
-# Tue, 16 Apr 2024 02:54:00 GMT
+# Tue, 23 Jul 2024 18:18:20 GMT
 ENV TOMEE_VER=9.1.3
-# Tue, 16 Apr 2024 02:54:00 GMT
+# Tue, 23 Jul 2024 18:18:20 GMT
 ENV TOMEE_BUILD=plus
-# Tue, 16 Apr 2024 02:54:00 GMT
+# Tue, 23 Jul 2024 18:18:20 GMT
 RUN set -x   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.asc -o tomee.tar.gz.asc   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.sha512 -o tomee.tar.gz.sha512   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz -o apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && gpg --batch --verify tomee.tar.gz.asc apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && sed "s/\t/  /" tomee.tar.gz.sha512 | sha512sum -c -   && tar -zxf apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && mv apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}/* /usr/local/tomee   && rm apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && rm -Rf apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}   && rm bin/*.bat   && rm bin/*.exe   && rm bin/*.tar.gz*   && rm tomee.tar.gz.asc   && rm tomee.tar.gz* # buildkit
-# Tue, 16 Apr 2024 02:54:00 GMT
+# Tue, 23 Jul 2024 18:18:20 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 16 Apr 2024 02:54:00 GMT
+# Tue, 23 Jul 2024 18:18:20 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:46b060cc26202cf98e28414d790b5cabd67094bba50315a1ae2e9daf913fca4f`  
-		Last Modified: Mon, 22 Jul 2024 22:27:25 GMT  
-		Size: 3.4 MB (3419040 bytes)  
+	-	`sha256:c6a83fedfae6ed8a4f5f7cbb6a7b6f1c1ec3d86fea8cb9e5ba2e5e6673fde9f6`  
+		Last Modified: Mon, 22 Jul 2024 22:27:14 GMT  
+		Size: 3.6 MB (3622892 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f52f359cd8d0e18fe23ad96c88a4ed275ce3c28c031f134b2223544d799cb126`  
-		Last Modified: Tue, 23 Jul 2024 01:05:20 GMT  
-		Size: 8.5 MB (8537043 bytes)  
+	-	`sha256:0b502c76566e71337b4737a25ae762dd54193bc78dba7f7474ea005c07de9efc`  
+		Last Modified: Tue, 23 Jul 2024 01:08:16 GMT  
+		Size: 8.4 MB (8371901 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:091119e34d69cac2a35e30b98f0cfbff9a6d037d2d324a8abfb3d662ec8bb8bb`  
-		Last Modified: Tue, 23 Jul 2024 01:06:21 GMT  
-		Size: 43.6 MB (43550557 bytes)  
+	-	`sha256:96459704afe0ddbe1491ccad24db7451549547953a9cb7e0e996ab3904cf7879`  
+		Last Modified: Wed, 24 Jul 2024 01:28:02 GMT  
+		Size: 43.6 MB (43555926 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1ac9340cc093223cdecf60b7ded38bde7fdb00db2d76e13ae67a0c95eba63c7`  
-		Last Modified: Tue, 23 Jul 2024 01:06:15 GMT  
+	-	`sha256:cce255026249dd153358c4b5058a04f50f85acf5f25fab7a1b3f247050ac87b0`  
+		Last Modified: Wed, 24 Jul 2024 01:27:57 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72df56a50d57b12c2cb8bfc65308c13ae432b091371142723fae5104cba52438`  
-		Last Modified: Tue, 23 Jul 2024 01:06:15 GMT  
-		Size: 716.0 B  
+	-	`sha256:b0751cff5684aca5c936dc88136c0f72406ed64bbd6f0a9763af259c8769dcca`  
+		Last Modified: Wed, 24 Jul 2024 01:27:57 GMT  
+		Size: 1.4 KB (1437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fac1000ab7bd77c173c73d4ac615f134ecb17dc62607d999c536da723d6dff5`  
-		Last Modified: Tue, 23 Jul 2024 02:03:38 GMT  
-		Size: 169.0 B  
+	-	`sha256:0ef57b63fc963fac974a59e6aa2e474ccd8b60d541a246c85d79f1b4597d4099`  
+		Last Modified: Wed, 24 Jul 2024 02:03:57 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6be2d94298d27871a148f4e041d4aa8651432d9fadd328c4f4c211db90daa2`  
-		Last Modified: Tue, 23 Jul 2024 02:03:38 GMT  
-		Size: 6.2 MB (6248013 bytes)  
+	-	`sha256:33662f0b63a0b70d77aff1edeaa99ddd49d520fd756acf620592625f08dd5272`  
+		Last Modified: Wed, 24 Jul 2024 02:03:57 GMT  
+		Size: 6.7 MB (6724701 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c5857380b622f80b80307e431ed573206486dab562a425896ce6c1acd375f5bb`  
-		Last Modified: Tue, 23 Jul 2024 02:03:38 GMT  
-		Size: 69.2 KB (69244 bytes)  
+	-	`sha256:9cb84dbd558a7836e412b03e7dd62a5f12aa427a819e640d2616f351520ed3bf`  
+		Last Modified: Wed, 24 Jul 2024 02:03:57 GMT  
+		Size: 69.2 KB (69193 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e5003312c98627a732ca37883e5b6f798a8e49d0793faf7235b87d922a6af82`  
-		Last Modified: Tue, 23 Jul 2024 02:03:40 GMT  
-		Size: 73.5 MB (73481989 bytes)  
+	-	`sha256:4caf8f712ea3dd97c791b58e021bb793ae18ba56335bbc27dcbc07eb9d1d9d7a`  
+		Last Modified: Wed, 24 Jul 2024 02:03:58 GMT  
+		Size: 73.5 MB (73482074 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `tomee:Temurin-alpine-plus` - unknown; unknown
 
 ```console
-$ docker pull tomee@sha256:260e169c24fedcbd1d38ce1bc107d7b13f6ea431e251c230a96e746ee7a5e312
+$ docker pull tomee@sha256:0b3131afe36c735f3dcd734d68fd42d827c30cbfef64bfc3acfb5b4ae163d25c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.5 MB (1549222 bytes)**  
+-	Total Size: **1.2 MB (1176915 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7179a00b4cef532df4750dfa0f4df7fdb43c4b3b9a093f46960ad255b644853`
+-	Image ID: `sha256:f9135cd73c5fc4ba43d336edab107d415980f33d9a3b085925d3ede7a12977cf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7e7ceaee51d3aeed88d5b2c303c924e88bd8caba3e2db276ac25e0463f2072b5`  
-		Last Modified: Tue, 23 Jul 2024 02:03:38 GMT  
-		Size: 1.5 MB (1520519 bytes)  
+	-	`sha256:af90e7088d549f8eff861139e32d288b494c84ad96bf7b4e3317d9698610c8dd`  
+		Last Modified: Wed, 24 Jul 2024 02:03:57 GMT  
+		Size: 1.1 MB (1148206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:78b33a036d44186130f8fbdce8ae749296543d4a5eb549d6e09e097b03fce9bd`  
-		Last Modified: Tue, 23 Jul 2024 02:03:38 GMT  
-		Size: 28.7 KB (28703 bytes)  
+	-	`sha256:493ada2ae1df54455e18a6b89da86f70a339afbfe7e710930a0fbcffc83c842c`  
+		Last Modified: Wed, 24 Jul 2024 02:03:57 GMT  
+		Size: 28.7 KB (28709 bytes)  
 		MIME: application/vnd.in-toto+json
