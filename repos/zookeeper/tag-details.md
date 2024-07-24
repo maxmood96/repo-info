@@ -1183,7 +1183,7 @@ $ docker pull zookeeper@sha256:3c4f7263547fd423e0eaf68d0698c7b737c66457fb221c8f3
 ## `zookeeper:3.7-jre-17`
 
 ```console
-$ docker pull zookeeper@sha256:c898f4e76b92126ef1b4b699179c6dab4530dbaa0428252c3d43e41fe9cd2adb
+$ docker pull zookeeper@sha256:980a107ddba302d721ca178667831c3cc8d8b8045c8b2687041561b72c11e5b0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1623,13 +1623,13 @@ $ docker pull zookeeper@sha256:e210a66174a3edd94110139133c84bcd34b46f3b2a1372993
 ### `zookeeper:3.7-jre-17` - linux; s390x
 
 ```console
-$ docker pull zookeeper@sha256:5e686a702aa32ef89f1fca197ebe3d757a98beffe223fc13421278fdfa151537
+$ docker pull zookeeper@sha256:10757ae42c64212cd6b5ef8346f5edfdc0317677d89bdf255f63bb3637f91b8b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **103.8 MB (103808605 bytes)**  
+-	Total Size: **103.8 MB (103842878 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1990f5362dd1ac0a5ecf191a082c7fff5edc822fea0937dd3fae552fee369369`
+-	Image ID: `sha256:84fd1370baa23640ca4565d5146d4eba7c967899f83849f4a5a52c0a8f41c8a2`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -1655,9 +1655,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Mon, 16 Oct 2023 06:33:19 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 16 Oct 2023 06:33:19 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
+ENV JAVA_VERSION=jdk-17.0.12+7
 # Mon, 16 Oct 2023 06:33:19 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Mon, 16 Oct 2023 06:33:19 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 16 Oct 2023 06:33:19 GMT
@@ -1704,61 +1704,61 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Tue, 02 Jul 2024 03:54:48 GMT  
 		Size: 13.0 MB (12954922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e143ddbbbd26d9c01c98413ba531196dcc7140c1ec8308b5dcebf8f159bb199`  
-		Last Modified: Tue, 02 Jul 2024 03:55:45 GMT  
-		Size: 43.8 MB (43830806 bytes)  
+	-	`sha256:cc2daba858b3a1c053285ff07cbbbc4a61154a3259ca12a1050495c78b2f497f`  
+		Last Modified: Tue, 23 Jul 2024 02:43:54 GMT  
+		Size: 43.9 MB (43864232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce75fac2d557a16d779924919519ada01974a403b583da2903eff0f02e09fc48`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 159.0 B  
+	-	`sha256:da80df5ffcb165f8c3f70c45e38e83dd4b4b34c5f3787f6d3de600abd0725ad8`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72378e2f6e774945c663149a026ee53475bff2ed8057d8ecdd30044256231a7c`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 734.0 B  
+	-	`sha256:4b01ac1fbacd09287d7ec1b44f0eef560db9879af3d1b860cf95b131dc3ec2bc`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8536b406fe5f801e479be0630fbd3bb2dbfc8d8f53223fcae07a3f9dd06ac126`  
-		Last Modified: Tue, 02 Jul 2024 21:18:14 GMT  
-		Size: 1.8 KB (1793 bytes)  
+	-	`sha256:7717da0bc368c0657fe63f1510e3560dfbd583cd786fba9c6b6bc4d4e56e2b93`  
+		Last Modified: Wed, 24 Jul 2024 11:34:07 GMT  
+		Size: 1.8 KB (1796 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f7ab356b885db1f2d9d8fb941b27fb34dc778a6dd9e826b83759a93ec1fb2cb`  
-		Last Modified: Tue, 02 Jul 2024 21:18:15 GMT  
-		Size: 4.2 MB (4241981 bytes)  
+	-	`sha256:d5b137f4b9670f5bde1b4d34635cfa98fc0d829f1f6c4af3a1f3716984411a02`  
+		Last Modified: Wed, 24 Jul 2024 11:34:08 GMT  
+		Size: 4.2 MB (4242158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd5fbc8848ee9af027038c7b409ddb3937572c30027d2aadb08195952512a51`  
-		Last Modified: Tue, 02 Jul 2024 21:18:15 GMT  
-		Size: 14.1 MB (14139932 bytes)  
+	-	`sha256:5389f8370523f18575558c2bcf6f4e4e08167ff59142a9498c8363bfdc45b002`  
+		Last Modified: Wed, 24 Jul 2024 11:34:08 GMT  
+		Size: 14.1 MB (14139896 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2dd2c471082b2e62d9153ecea77074103062f4e78a864b8ca1f52d1dde583d2`  
-		Last Modified: Tue, 02 Jul 2024 21:18:14 GMT  
+	-	`sha256:c188bcbca33c781c22efd82efc037e209bea33d3500fd0039e8187b243db3550`  
+		Last Modified: Wed, 24 Jul 2024 11:34:07 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:3.7-jre-17` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:639f31c4a61fb825e30da740c3c0c9021f83b8de2156a4724f256119e770c390
+$ docker pull zookeeper@sha256:fd7633f02a07b5ccde8e61b0f1cba44e201f20a59629ddb991f085183afb6111
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3680285 bytes)**  
+-	Total Size: **3.7 MB (3715411 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:429a67c1c31a5678972d0a43442665de2ef9a31396419565bfc18343f98c4b89`
+-	Image ID: `sha256:e2900b2a799d35c582606d3f835d72e750d28291887dd339573539c9a7e8292f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5033a7c17d954ff843b88ac5fdb59b80d33bb1450327d7889322fb2810662d5d`  
-		Last Modified: Tue, 02 Jul 2024 21:18:15 GMT  
-		Size: 3.7 MB (3656601 bytes)  
+	-	`sha256:2c35f27f2959fa119e4885e49a35493f71804dd7d89e2ed8055a524584a187be`  
+		Last Modified: Wed, 24 Jul 2024 11:34:08 GMT  
+		Size: 3.7 MB (3691721 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8b86650d80dc923d62bdb4f3024546d8d5901b9335c1f19048290163023594e9`  
-		Last Modified: Tue, 02 Jul 2024 21:18:14 GMT  
-		Size: 23.7 KB (23684 bytes)  
+	-	`sha256:7f1e7405a77034a0c062a73271186ecbd97f93bbdfa7b630093add240ed3a5e4`  
+		Last Modified: Wed, 24 Jul 2024 11:34:07 GMT  
+		Size: 23.7 KB (23690 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `zookeeper:3.7.2`
@@ -2926,7 +2926,7 @@ $ docker pull zookeeper@sha256:3c4f7263547fd423e0eaf68d0698c7b737c66457fb221c8f3
 ## `zookeeper:3.7.2-jre-17`
 
 ```console
-$ docker pull zookeeper@sha256:c898f4e76b92126ef1b4b699179c6dab4530dbaa0428252c3d43e41fe9cd2adb
+$ docker pull zookeeper@sha256:980a107ddba302d721ca178667831c3cc8d8b8045c8b2687041561b72c11e5b0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3366,13 +3366,13 @@ $ docker pull zookeeper@sha256:e210a66174a3edd94110139133c84bcd34b46f3b2a1372993
 ### `zookeeper:3.7.2-jre-17` - linux; s390x
 
 ```console
-$ docker pull zookeeper@sha256:5e686a702aa32ef89f1fca197ebe3d757a98beffe223fc13421278fdfa151537
+$ docker pull zookeeper@sha256:10757ae42c64212cd6b5ef8346f5edfdc0317677d89bdf255f63bb3637f91b8b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **103.8 MB (103808605 bytes)**  
+-	Total Size: **103.8 MB (103842878 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1990f5362dd1ac0a5ecf191a082c7fff5edc822fea0937dd3fae552fee369369`
+-	Image ID: `sha256:84fd1370baa23640ca4565d5146d4eba7c967899f83849f4a5a52c0a8f41c8a2`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -3398,9 +3398,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Mon, 16 Oct 2023 06:33:19 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 16 Oct 2023 06:33:19 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
+ENV JAVA_VERSION=jdk-17.0.12+7
 # Mon, 16 Oct 2023 06:33:19 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Mon, 16 Oct 2023 06:33:19 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 16 Oct 2023 06:33:19 GMT
@@ -3447,67 +3447,67 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Tue, 02 Jul 2024 03:54:48 GMT  
 		Size: 13.0 MB (12954922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e143ddbbbd26d9c01c98413ba531196dcc7140c1ec8308b5dcebf8f159bb199`  
-		Last Modified: Tue, 02 Jul 2024 03:55:45 GMT  
-		Size: 43.8 MB (43830806 bytes)  
+	-	`sha256:cc2daba858b3a1c053285ff07cbbbc4a61154a3259ca12a1050495c78b2f497f`  
+		Last Modified: Tue, 23 Jul 2024 02:43:54 GMT  
+		Size: 43.9 MB (43864232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce75fac2d557a16d779924919519ada01974a403b583da2903eff0f02e09fc48`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 159.0 B  
+	-	`sha256:da80df5ffcb165f8c3f70c45e38e83dd4b4b34c5f3787f6d3de600abd0725ad8`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72378e2f6e774945c663149a026ee53475bff2ed8057d8ecdd30044256231a7c`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 734.0 B  
+	-	`sha256:4b01ac1fbacd09287d7ec1b44f0eef560db9879af3d1b860cf95b131dc3ec2bc`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8536b406fe5f801e479be0630fbd3bb2dbfc8d8f53223fcae07a3f9dd06ac126`  
-		Last Modified: Tue, 02 Jul 2024 21:18:14 GMT  
-		Size: 1.8 KB (1793 bytes)  
+	-	`sha256:7717da0bc368c0657fe63f1510e3560dfbd583cd786fba9c6b6bc4d4e56e2b93`  
+		Last Modified: Wed, 24 Jul 2024 11:34:07 GMT  
+		Size: 1.8 KB (1796 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f7ab356b885db1f2d9d8fb941b27fb34dc778a6dd9e826b83759a93ec1fb2cb`  
-		Last Modified: Tue, 02 Jul 2024 21:18:15 GMT  
-		Size: 4.2 MB (4241981 bytes)  
+	-	`sha256:d5b137f4b9670f5bde1b4d34635cfa98fc0d829f1f6c4af3a1f3716984411a02`  
+		Last Modified: Wed, 24 Jul 2024 11:34:08 GMT  
+		Size: 4.2 MB (4242158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd5fbc8848ee9af027038c7b409ddb3937572c30027d2aadb08195952512a51`  
-		Last Modified: Tue, 02 Jul 2024 21:18:15 GMT  
-		Size: 14.1 MB (14139932 bytes)  
+	-	`sha256:5389f8370523f18575558c2bcf6f4e4e08167ff59142a9498c8363bfdc45b002`  
+		Last Modified: Wed, 24 Jul 2024 11:34:08 GMT  
+		Size: 14.1 MB (14139896 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2dd2c471082b2e62d9153ecea77074103062f4e78a864b8ca1f52d1dde583d2`  
-		Last Modified: Tue, 02 Jul 2024 21:18:14 GMT  
+	-	`sha256:c188bcbca33c781c22efd82efc037e209bea33d3500fd0039e8187b243db3550`  
+		Last Modified: Wed, 24 Jul 2024 11:34:07 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:3.7.2-jre-17` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:639f31c4a61fb825e30da740c3c0c9021f83b8de2156a4724f256119e770c390
+$ docker pull zookeeper@sha256:fd7633f02a07b5ccde8e61b0f1cba44e201f20a59629ddb991f085183afb6111
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3680285 bytes)**  
+-	Total Size: **3.7 MB (3715411 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:429a67c1c31a5678972d0a43442665de2ef9a31396419565bfc18343f98c4b89`
+-	Image ID: `sha256:e2900b2a799d35c582606d3f835d72e750d28291887dd339573539c9a7e8292f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5033a7c17d954ff843b88ac5fdb59b80d33bb1450327d7889322fb2810662d5d`  
-		Last Modified: Tue, 02 Jul 2024 21:18:15 GMT  
-		Size: 3.7 MB (3656601 bytes)  
+	-	`sha256:2c35f27f2959fa119e4885e49a35493f71804dd7d89e2ed8055a524584a187be`  
+		Last Modified: Wed, 24 Jul 2024 11:34:08 GMT  
+		Size: 3.7 MB (3691721 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8b86650d80dc923d62bdb4f3024546d8d5901b9335c1f19048290163023594e9`  
-		Last Modified: Tue, 02 Jul 2024 21:18:14 GMT  
-		Size: 23.7 KB (23684 bytes)  
+	-	`sha256:7f1e7405a77034a0c062a73271186ecbd97f93bbdfa7b630093add240ed3a5e4`  
+		Last Modified: Wed, 24 Jul 2024 11:34:07 GMT  
+		Size: 23.7 KB (23690 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `zookeeper:3.8`
 
 ```console
-$ docker pull zookeeper@sha256:cf80b5a4c33f2fbe311ff8893e5e12490b00bf3a6760ea202c15472d18a9d25b
+$ docker pull zookeeper@sha256:b095a60a96d77430035a34798f86619b216a7dbb8fec785387defcbf59b4fbe8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3947,13 +3947,13 @@ $ docker pull zookeeper@sha256:115de2e48dff9d4e8d2abe8de762eea0927dfe0ca4c62c9c5
 ### `zookeeper:3.8` - linux; s390x
 
 ```console
-$ docker pull zookeeper@sha256:552ad83948e01446de7f81c94c1f3b58d102043a7d79ff50d56cc8bdcbe1511a
+$ docker pull zookeeper@sha256:cf56894dbf72454f8a0be338edb29dfd206f5721ba2c6d7320bffd97688a47b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **104.4 MB (104351373 bytes)**  
+-	Total Size: **104.4 MB (104385895 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7980eab7960063185e1814401961920b462dd740a8e91366696128b289418fb4`
+-	Image ID: `sha256:d5ffeb04788570e1518a58ec9af0085630ae620f5f5e3a33a5127eeeff1588b4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -3979,9 +3979,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Thu, 14 Mar 2024 05:00:02 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
+ENV JAVA_VERSION=jdk-17.0.12+7
 # Thu, 14 Mar 2024 05:00:02 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
@@ -4028,67 +4028,67 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Tue, 02 Jul 2024 03:54:48 GMT  
 		Size: 13.0 MB (12954922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e143ddbbbd26d9c01c98413ba531196dcc7140c1ec8308b5dcebf8f159bb199`  
-		Last Modified: Tue, 02 Jul 2024 03:55:45 GMT  
-		Size: 43.8 MB (43830806 bytes)  
+	-	`sha256:cc2daba858b3a1c053285ff07cbbbc4a61154a3259ca12a1050495c78b2f497f`  
+		Last Modified: Tue, 23 Jul 2024 02:43:54 GMT  
+		Size: 43.9 MB (43864232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce75fac2d557a16d779924919519ada01974a403b583da2903eff0f02e09fc48`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 159.0 B  
+	-	`sha256:da80df5ffcb165f8c3f70c45e38e83dd4b4b34c5f3787f6d3de600abd0725ad8`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72378e2f6e774945c663149a026ee53475bff2ed8057d8ecdd30044256231a7c`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 734.0 B  
+	-	`sha256:4b01ac1fbacd09287d7ec1b44f0eef560db9879af3d1b860cf95b131dc3ec2bc`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8536b406fe5f801e479be0630fbd3bb2dbfc8d8f53223fcae07a3f9dd06ac126`  
-		Last Modified: Tue, 02 Jul 2024 21:18:14 GMT  
-		Size: 1.8 KB (1793 bytes)  
+	-	`sha256:7717da0bc368c0657fe63f1510e3560dfbd583cd786fba9c6b6bc4d4e56e2b93`  
+		Last Modified: Wed, 24 Jul 2024 11:34:07 GMT  
+		Size: 1.8 KB (1796 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f7ab356b885db1f2d9d8fb941b27fb34dc778a6dd9e826b83759a93ec1fb2cb`  
-		Last Modified: Tue, 02 Jul 2024 21:18:15 GMT  
-		Size: 4.2 MB (4241981 bytes)  
+	-	`sha256:d5b137f4b9670f5bde1b4d34635cfa98fc0d829f1f6c4af3a1f3716984411a02`  
+		Last Modified: Wed, 24 Jul 2024 11:34:08 GMT  
+		Size: 4.2 MB (4242158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac93ee6c464c695eae1def3736eee60d964dfe7da4ed21d9fda909c86492658a`  
-		Last Modified: Tue, 02 Jul 2024 21:18:49 GMT  
-		Size: 14.7 MB (14682700 bytes)  
+	-	`sha256:faf0ee60d318691037008a73c75d07771e1631da1d4c48410f5ad286b77f2f0a`  
+		Last Modified: Wed, 24 Jul 2024 11:35:11 GMT  
+		Size: 14.7 MB (14682913 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58e676ff918452f0022706f8a02709c68632c0d769f1e4882c2e2190e728c9b7`  
-		Last Modified: Tue, 02 Jul 2024 21:18:49 GMT  
+	-	`sha256:71c5ac63b3c17e2104d6fcaaafe247481cd4647bdf0bd1b168aa3b88e29dfc4b`  
+		Last Modified: Wed, 24 Jul 2024 11:35:10 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:3.8` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:9576d7dad73bde99036d2a9210abd13abffa2f8a5ec1ff05745127731d822323
+$ docker pull zookeeper@sha256:4c168c852be27e61b759e3488ae02a3a3fc2178836b2eab1230ccb4d2ac366bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3682775 bytes)**  
+-	Total Size: **3.7 MB (3718044 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f21a303b91de4e87c8d5ca93ccb5390171d1c7826cabaa48a6290bb56b5db499`
+-	Image ID: `sha256:559d50aadab31ebced960c11d939725e053aa59c7d24b44df161f8288fbf9095`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62e19c5d2ed43d51831fa1cc10e8d69235e93a6213e4f7b78f818009cdbf6efc`  
-		Last Modified: Tue, 02 Jul 2024 21:18:49 GMT  
-		Size: 3.7 MB (3658491 bytes)  
+	-	`sha256:20d3ff4fb28cdc586abb2808db93356766bc7ce85cb8f331131ee53e76ab4082`  
+		Last Modified: Wed, 24 Jul 2024 11:35:10 GMT  
+		Size: 3.7 MB (3693754 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7f45eaeac81463eb07a19b4063b9e059a3df2f33f1bbabda1468d290231fa1c7`  
-		Last Modified: Tue, 02 Jul 2024 21:18:48 GMT  
-		Size: 24.3 KB (24284 bytes)  
+	-	`sha256:6afe6d29ac4863bfcc072566aa7fba841892185cae30068f5da0d5d72faa9de9`  
+		Last Modified: Wed, 24 Jul 2024 11:35:10 GMT  
+		Size: 24.3 KB (24290 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `zookeeper:3.8-jre-17`
 
 ```console
-$ docker pull zookeeper@sha256:cf80b5a4c33f2fbe311ff8893e5e12490b00bf3a6760ea202c15472d18a9d25b
+$ docker pull zookeeper@sha256:b095a60a96d77430035a34798f86619b216a7dbb8fec785387defcbf59b4fbe8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4528,13 +4528,13 @@ $ docker pull zookeeper@sha256:115de2e48dff9d4e8d2abe8de762eea0927dfe0ca4c62c9c5
 ### `zookeeper:3.8-jre-17` - linux; s390x
 
 ```console
-$ docker pull zookeeper@sha256:552ad83948e01446de7f81c94c1f3b58d102043a7d79ff50d56cc8bdcbe1511a
+$ docker pull zookeeper@sha256:cf56894dbf72454f8a0be338edb29dfd206f5721ba2c6d7320bffd97688a47b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **104.4 MB (104351373 bytes)**  
+-	Total Size: **104.4 MB (104385895 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7980eab7960063185e1814401961920b462dd740a8e91366696128b289418fb4`
+-	Image ID: `sha256:d5ffeb04788570e1518a58ec9af0085630ae620f5f5e3a33a5127eeeff1588b4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -4560,9 +4560,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Thu, 14 Mar 2024 05:00:02 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
+ENV JAVA_VERSION=jdk-17.0.12+7
 # Thu, 14 Mar 2024 05:00:02 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
@@ -4609,67 +4609,67 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Tue, 02 Jul 2024 03:54:48 GMT  
 		Size: 13.0 MB (12954922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e143ddbbbd26d9c01c98413ba531196dcc7140c1ec8308b5dcebf8f159bb199`  
-		Last Modified: Tue, 02 Jul 2024 03:55:45 GMT  
-		Size: 43.8 MB (43830806 bytes)  
+	-	`sha256:cc2daba858b3a1c053285ff07cbbbc4a61154a3259ca12a1050495c78b2f497f`  
+		Last Modified: Tue, 23 Jul 2024 02:43:54 GMT  
+		Size: 43.9 MB (43864232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce75fac2d557a16d779924919519ada01974a403b583da2903eff0f02e09fc48`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 159.0 B  
+	-	`sha256:da80df5ffcb165f8c3f70c45e38e83dd4b4b34c5f3787f6d3de600abd0725ad8`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72378e2f6e774945c663149a026ee53475bff2ed8057d8ecdd30044256231a7c`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 734.0 B  
+	-	`sha256:4b01ac1fbacd09287d7ec1b44f0eef560db9879af3d1b860cf95b131dc3ec2bc`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8536b406fe5f801e479be0630fbd3bb2dbfc8d8f53223fcae07a3f9dd06ac126`  
-		Last Modified: Tue, 02 Jul 2024 21:18:14 GMT  
-		Size: 1.8 KB (1793 bytes)  
+	-	`sha256:7717da0bc368c0657fe63f1510e3560dfbd583cd786fba9c6b6bc4d4e56e2b93`  
+		Last Modified: Wed, 24 Jul 2024 11:34:07 GMT  
+		Size: 1.8 KB (1796 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f7ab356b885db1f2d9d8fb941b27fb34dc778a6dd9e826b83759a93ec1fb2cb`  
-		Last Modified: Tue, 02 Jul 2024 21:18:15 GMT  
-		Size: 4.2 MB (4241981 bytes)  
+	-	`sha256:d5b137f4b9670f5bde1b4d34635cfa98fc0d829f1f6c4af3a1f3716984411a02`  
+		Last Modified: Wed, 24 Jul 2024 11:34:08 GMT  
+		Size: 4.2 MB (4242158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac93ee6c464c695eae1def3736eee60d964dfe7da4ed21d9fda909c86492658a`  
-		Last Modified: Tue, 02 Jul 2024 21:18:49 GMT  
-		Size: 14.7 MB (14682700 bytes)  
+	-	`sha256:faf0ee60d318691037008a73c75d07771e1631da1d4c48410f5ad286b77f2f0a`  
+		Last Modified: Wed, 24 Jul 2024 11:35:11 GMT  
+		Size: 14.7 MB (14682913 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58e676ff918452f0022706f8a02709c68632c0d769f1e4882c2e2190e728c9b7`  
-		Last Modified: Tue, 02 Jul 2024 21:18:49 GMT  
+	-	`sha256:71c5ac63b3c17e2104d6fcaaafe247481cd4647bdf0bd1b168aa3b88e29dfc4b`  
+		Last Modified: Wed, 24 Jul 2024 11:35:10 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:3.8-jre-17` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:9576d7dad73bde99036d2a9210abd13abffa2f8a5ec1ff05745127731d822323
+$ docker pull zookeeper@sha256:4c168c852be27e61b759e3488ae02a3a3fc2178836b2eab1230ccb4d2ac366bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3682775 bytes)**  
+-	Total Size: **3.7 MB (3718044 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f21a303b91de4e87c8d5ca93ccb5390171d1c7826cabaa48a6290bb56b5db499`
+-	Image ID: `sha256:559d50aadab31ebced960c11d939725e053aa59c7d24b44df161f8288fbf9095`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62e19c5d2ed43d51831fa1cc10e8d69235e93a6213e4f7b78f818009cdbf6efc`  
-		Last Modified: Tue, 02 Jul 2024 21:18:49 GMT  
-		Size: 3.7 MB (3658491 bytes)  
+	-	`sha256:20d3ff4fb28cdc586abb2808db93356766bc7ce85cb8f331131ee53e76ab4082`  
+		Last Modified: Wed, 24 Jul 2024 11:35:10 GMT  
+		Size: 3.7 MB (3693754 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7f45eaeac81463eb07a19b4063b9e059a3df2f33f1bbabda1468d290231fa1c7`  
-		Last Modified: Tue, 02 Jul 2024 21:18:48 GMT  
-		Size: 24.3 KB (24284 bytes)  
+	-	`sha256:6afe6d29ac4863bfcc072566aa7fba841892185cae30068f5da0d5d72faa9de9`  
+		Last Modified: Wed, 24 Jul 2024 11:35:10 GMT  
+		Size: 24.3 KB (24290 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `zookeeper:3.8.4`
 
 ```console
-$ docker pull zookeeper@sha256:cf80b5a4c33f2fbe311ff8893e5e12490b00bf3a6760ea202c15472d18a9d25b
+$ docker pull zookeeper@sha256:b095a60a96d77430035a34798f86619b216a7dbb8fec785387defcbf59b4fbe8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5109,13 +5109,13 @@ $ docker pull zookeeper@sha256:115de2e48dff9d4e8d2abe8de762eea0927dfe0ca4c62c9c5
 ### `zookeeper:3.8.4` - linux; s390x
 
 ```console
-$ docker pull zookeeper@sha256:552ad83948e01446de7f81c94c1f3b58d102043a7d79ff50d56cc8bdcbe1511a
+$ docker pull zookeeper@sha256:cf56894dbf72454f8a0be338edb29dfd206f5721ba2c6d7320bffd97688a47b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **104.4 MB (104351373 bytes)**  
+-	Total Size: **104.4 MB (104385895 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7980eab7960063185e1814401961920b462dd740a8e91366696128b289418fb4`
+-	Image ID: `sha256:d5ffeb04788570e1518a58ec9af0085630ae620f5f5e3a33a5127eeeff1588b4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -5141,9 +5141,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Thu, 14 Mar 2024 05:00:02 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
+ENV JAVA_VERSION=jdk-17.0.12+7
 # Thu, 14 Mar 2024 05:00:02 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
@@ -5190,67 +5190,67 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Tue, 02 Jul 2024 03:54:48 GMT  
 		Size: 13.0 MB (12954922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e143ddbbbd26d9c01c98413ba531196dcc7140c1ec8308b5dcebf8f159bb199`  
-		Last Modified: Tue, 02 Jul 2024 03:55:45 GMT  
-		Size: 43.8 MB (43830806 bytes)  
+	-	`sha256:cc2daba858b3a1c053285ff07cbbbc4a61154a3259ca12a1050495c78b2f497f`  
+		Last Modified: Tue, 23 Jul 2024 02:43:54 GMT  
+		Size: 43.9 MB (43864232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce75fac2d557a16d779924919519ada01974a403b583da2903eff0f02e09fc48`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 159.0 B  
+	-	`sha256:da80df5ffcb165f8c3f70c45e38e83dd4b4b34c5f3787f6d3de600abd0725ad8`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72378e2f6e774945c663149a026ee53475bff2ed8057d8ecdd30044256231a7c`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 734.0 B  
+	-	`sha256:4b01ac1fbacd09287d7ec1b44f0eef560db9879af3d1b860cf95b131dc3ec2bc`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8536b406fe5f801e479be0630fbd3bb2dbfc8d8f53223fcae07a3f9dd06ac126`  
-		Last Modified: Tue, 02 Jul 2024 21:18:14 GMT  
-		Size: 1.8 KB (1793 bytes)  
+	-	`sha256:7717da0bc368c0657fe63f1510e3560dfbd583cd786fba9c6b6bc4d4e56e2b93`  
+		Last Modified: Wed, 24 Jul 2024 11:34:07 GMT  
+		Size: 1.8 KB (1796 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f7ab356b885db1f2d9d8fb941b27fb34dc778a6dd9e826b83759a93ec1fb2cb`  
-		Last Modified: Tue, 02 Jul 2024 21:18:15 GMT  
-		Size: 4.2 MB (4241981 bytes)  
+	-	`sha256:d5b137f4b9670f5bde1b4d34635cfa98fc0d829f1f6c4af3a1f3716984411a02`  
+		Last Modified: Wed, 24 Jul 2024 11:34:08 GMT  
+		Size: 4.2 MB (4242158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac93ee6c464c695eae1def3736eee60d964dfe7da4ed21d9fda909c86492658a`  
-		Last Modified: Tue, 02 Jul 2024 21:18:49 GMT  
-		Size: 14.7 MB (14682700 bytes)  
+	-	`sha256:faf0ee60d318691037008a73c75d07771e1631da1d4c48410f5ad286b77f2f0a`  
+		Last Modified: Wed, 24 Jul 2024 11:35:11 GMT  
+		Size: 14.7 MB (14682913 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58e676ff918452f0022706f8a02709c68632c0d769f1e4882c2e2190e728c9b7`  
-		Last Modified: Tue, 02 Jul 2024 21:18:49 GMT  
+	-	`sha256:71c5ac63b3c17e2104d6fcaaafe247481cd4647bdf0bd1b168aa3b88e29dfc4b`  
+		Last Modified: Wed, 24 Jul 2024 11:35:10 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:3.8.4` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:9576d7dad73bde99036d2a9210abd13abffa2f8a5ec1ff05745127731d822323
+$ docker pull zookeeper@sha256:4c168c852be27e61b759e3488ae02a3a3fc2178836b2eab1230ccb4d2ac366bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3682775 bytes)**  
+-	Total Size: **3.7 MB (3718044 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f21a303b91de4e87c8d5ca93ccb5390171d1c7826cabaa48a6290bb56b5db499`
+-	Image ID: `sha256:559d50aadab31ebced960c11d939725e053aa59c7d24b44df161f8288fbf9095`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62e19c5d2ed43d51831fa1cc10e8d69235e93a6213e4f7b78f818009cdbf6efc`  
-		Last Modified: Tue, 02 Jul 2024 21:18:49 GMT  
-		Size: 3.7 MB (3658491 bytes)  
+	-	`sha256:20d3ff4fb28cdc586abb2808db93356766bc7ce85cb8f331131ee53e76ab4082`  
+		Last Modified: Wed, 24 Jul 2024 11:35:10 GMT  
+		Size: 3.7 MB (3693754 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7f45eaeac81463eb07a19b4063b9e059a3df2f33f1bbabda1468d290231fa1c7`  
-		Last Modified: Tue, 02 Jul 2024 21:18:48 GMT  
-		Size: 24.3 KB (24284 bytes)  
+	-	`sha256:6afe6d29ac4863bfcc072566aa7fba841892185cae30068f5da0d5d72faa9de9`  
+		Last Modified: Wed, 24 Jul 2024 11:35:10 GMT  
+		Size: 24.3 KB (24290 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `zookeeper:3.8.4-jre-17`
 
 ```console
-$ docker pull zookeeper@sha256:cf80b5a4c33f2fbe311ff8893e5e12490b00bf3a6760ea202c15472d18a9d25b
+$ docker pull zookeeper@sha256:b095a60a96d77430035a34798f86619b216a7dbb8fec785387defcbf59b4fbe8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5690,13 +5690,13 @@ $ docker pull zookeeper@sha256:115de2e48dff9d4e8d2abe8de762eea0927dfe0ca4c62c9c5
 ### `zookeeper:3.8.4-jre-17` - linux; s390x
 
 ```console
-$ docker pull zookeeper@sha256:552ad83948e01446de7f81c94c1f3b58d102043a7d79ff50d56cc8bdcbe1511a
+$ docker pull zookeeper@sha256:cf56894dbf72454f8a0be338edb29dfd206f5721ba2c6d7320bffd97688a47b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **104.4 MB (104351373 bytes)**  
+-	Total Size: **104.4 MB (104385895 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7980eab7960063185e1814401961920b462dd740a8e91366696128b289418fb4`
+-	Image ID: `sha256:d5ffeb04788570e1518a58ec9af0085630ae620f5f5e3a33a5127eeeff1588b4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -5722,9 +5722,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Thu, 14 Mar 2024 05:00:02 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
+ENV JAVA_VERSION=jdk-17.0.12+7
 # Thu, 14 Mar 2024 05:00:02 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
@@ -5771,67 +5771,67 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Tue, 02 Jul 2024 03:54:48 GMT  
 		Size: 13.0 MB (12954922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e143ddbbbd26d9c01c98413ba531196dcc7140c1ec8308b5dcebf8f159bb199`  
-		Last Modified: Tue, 02 Jul 2024 03:55:45 GMT  
-		Size: 43.8 MB (43830806 bytes)  
+	-	`sha256:cc2daba858b3a1c053285ff07cbbbc4a61154a3259ca12a1050495c78b2f497f`  
+		Last Modified: Tue, 23 Jul 2024 02:43:54 GMT  
+		Size: 43.9 MB (43864232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce75fac2d557a16d779924919519ada01974a403b583da2903eff0f02e09fc48`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 159.0 B  
+	-	`sha256:da80df5ffcb165f8c3f70c45e38e83dd4b4b34c5f3787f6d3de600abd0725ad8`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72378e2f6e774945c663149a026ee53475bff2ed8057d8ecdd30044256231a7c`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 734.0 B  
+	-	`sha256:4b01ac1fbacd09287d7ec1b44f0eef560db9879af3d1b860cf95b131dc3ec2bc`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8536b406fe5f801e479be0630fbd3bb2dbfc8d8f53223fcae07a3f9dd06ac126`  
-		Last Modified: Tue, 02 Jul 2024 21:18:14 GMT  
-		Size: 1.8 KB (1793 bytes)  
+	-	`sha256:7717da0bc368c0657fe63f1510e3560dfbd583cd786fba9c6b6bc4d4e56e2b93`  
+		Last Modified: Wed, 24 Jul 2024 11:34:07 GMT  
+		Size: 1.8 KB (1796 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f7ab356b885db1f2d9d8fb941b27fb34dc778a6dd9e826b83759a93ec1fb2cb`  
-		Last Modified: Tue, 02 Jul 2024 21:18:15 GMT  
-		Size: 4.2 MB (4241981 bytes)  
+	-	`sha256:d5b137f4b9670f5bde1b4d34635cfa98fc0d829f1f6c4af3a1f3716984411a02`  
+		Last Modified: Wed, 24 Jul 2024 11:34:08 GMT  
+		Size: 4.2 MB (4242158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac93ee6c464c695eae1def3736eee60d964dfe7da4ed21d9fda909c86492658a`  
-		Last Modified: Tue, 02 Jul 2024 21:18:49 GMT  
-		Size: 14.7 MB (14682700 bytes)  
+	-	`sha256:faf0ee60d318691037008a73c75d07771e1631da1d4c48410f5ad286b77f2f0a`  
+		Last Modified: Wed, 24 Jul 2024 11:35:11 GMT  
+		Size: 14.7 MB (14682913 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58e676ff918452f0022706f8a02709c68632c0d769f1e4882c2e2190e728c9b7`  
-		Last Modified: Tue, 02 Jul 2024 21:18:49 GMT  
+	-	`sha256:71c5ac63b3c17e2104d6fcaaafe247481cd4647bdf0bd1b168aa3b88e29dfc4b`  
+		Last Modified: Wed, 24 Jul 2024 11:35:10 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:3.8.4-jre-17` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:9576d7dad73bde99036d2a9210abd13abffa2f8a5ec1ff05745127731d822323
+$ docker pull zookeeper@sha256:4c168c852be27e61b759e3488ae02a3a3fc2178836b2eab1230ccb4d2ac366bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3682775 bytes)**  
+-	Total Size: **3.7 MB (3718044 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f21a303b91de4e87c8d5ca93ccb5390171d1c7826cabaa48a6290bb56b5db499`
+-	Image ID: `sha256:559d50aadab31ebced960c11d939725e053aa59c7d24b44df161f8288fbf9095`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62e19c5d2ed43d51831fa1cc10e8d69235e93a6213e4f7b78f818009cdbf6efc`  
-		Last Modified: Tue, 02 Jul 2024 21:18:49 GMT  
-		Size: 3.7 MB (3658491 bytes)  
+	-	`sha256:20d3ff4fb28cdc586abb2808db93356766bc7ce85cb8f331131ee53e76ab4082`  
+		Last Modified: Wed, 24 Jul 2024 11:35:10 GMT  
+		Size: 3.7 MB (3693754 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7f45eaeac81463eb07a19b4063b9e059a3df2f33f1bbabda1468d290231fa1c7`  
-		Last Modified: Tue, 02 Jul 2024 21:18:48 GMT  
-		Size: 24.3 KB (24284 bytes)  
+	-	`sha256:6afe6d29ac4863bfcc072566aa7fba841892185cae30068f5da0d5d72faa9de9`  
+		Last Modified: Wed, 24 Jul 2024 11:35:10 GMT  
+		Size: 24.3 KB (24290 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `zookeeper:3.9`
 
 ```console
-$ docker pull zookeeper@sha256:f02da27159043da49e54bf8ccf98a7ce36d66ff4cea556e2247849ced9c07afb
+$ docker pull zookeeper@sha256:1f96568f109ad8ead72e50efd61d22287bc4c35b3ca9becab7a28c3714196504
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6271,13 +6271,13 @@ $ docker pull zookeeper@sha256:31faf547c0d481b16a0abd89e41aa0d374f225414dd3129cd
 ### `zookeeper:3.9` - linux; s390x
 
 ```console
-$ docker pull zookeeper@sha256:f84a96953076c574925f5c42aef6e9d248443057c63769392c36e68e121cb579
+$ docker pull zookeeper@sha256:5acbfbfe26100a3142ace8b771efb7ffac19987ef38bf93d60e6149dd77a8902
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **110.0 MB (109968867 bytes)**  
+-	Total Size: **110.0 MB (110003099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cca83bd5dc9102e54d8082dd70860c77178bfb72c026dd0de6f5fb2b14c7635`
+-	Image ID: `sha256:57efb997b4724128cbb0f2abd757127d78d9c940e132247e8c5169cee585f801`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -6303,9 +6303,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Thu, 14 Mar 2024 05:00:02 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
+ENV JAVA_VERSION=jdk-17.0.12+7
 # Thu, 14 Mar 2024 05:00:02 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
@@ -6352,67 +6352,67 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Tue, 02 Jul 2024 03:54:48 GMT  
 		Size: 13.0 MB (12954922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e143ddbbbd26d9c01c98413ba531196dcc7140c1ec8308b5dcebf8f159bb199`  
-		Last Modified: Tue, 02 Jul 2024 03:55:45 GMT  
-		Size: 43.8 MB (43830806 bytes)  
+	-	`sha256:cc2daba858b3a1c053285ff07cbbbc4a61154a3259ca12a1050495c78b2f497f`  
+		Last Modified: Tue, 23 Jul 2024 02:43:54 GMT  
+		Size: 43.9 MB (43864232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce75fac2d557a16d779924919519ada01974a403b583da2903eff0f02e09fc48`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 159.0 B  
+	-	`sha256:da80df5ffcb165f8c3f70c45e38e83dd4b4b34c5f3787f6d3de600abd0725ad8`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72378e2f6e774945c663149a026ee53475bff2ed8057d8ecdd30044256231a7c`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 734.0 B  
+	-	`sha256:4b01ac1fbacd09287d7ec1b44f0eef560db9879af3d1b860cf95b131dc3ec2bc`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8536b406fe5f801e479be0630fbd3bb2dbfc8d8f53223fcae07a3f9dd06ac126`  
-		Last Modified: Tue, 02 Jul 2024 21:18:14 GMT  
-		Size: 1.8 KB (1793 bytes)  
+	-	`sha256:7717da0bc368c0657fe63f1510e3560dfbd583cd786fba9c6b6bc4d4e56e2b93`  
+		Last Modified: Wed, 24 Jul 2024 11:34:07 GMT  
+		Size: 1.8 KB (1796 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f7ab356b885db1f2d9d8fb941b27fb34dc778a6dd9e826b83759a93ec1fb2cb`  
-		Last Modified: Tue, 02 Jul 2024 21:18:15 GMT  
-		Size: 4.2 MB (4241981 bytes)  
+	-	`sha256:d5b137f4b9670f5bde1b4d34635cfa98fc0d829f1f6c4af3a1f3716984411a02`  
+		Last Modified: Wed, 24 Jul 2024 11:34:08 GMT  
+		Size: 4.2 MB (4242158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7263967a74c190b05b19ded161eac1423a6fbf9a550de7ac39c10c05a1705bfc`  
-		Last Modified: Tue, 02 Jul 2024 21:19:29 GMT  
-		Size: 20.3 MB (20300194 bytes)  
+	-	`sha256:7da70de0bce46d05a19f40ef8e03c5b9dc79b9add01975e779dd88e13e723ab5`  
+		Last Modified: Wed, 24 Jul 2024 11:36:11 GMT  
+		Size: 20.3 MB (20300117 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4aff85971ee94f718b79232c94283bdad11495f94d3c87e140913da133b07a81`  
-		Last Modified: Tue, 02 Jul 2024 21:19:28 GMT  
+	-	`sha256:d502a791e25b71f0c1c3ba25b68a656182befca96521050a795e41f120cb1171`  
+		Last Modified: Wed, 24 Jul 2024 11:36:10 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:3.9` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:a3f3c2b5f4df4192eb448f1d08290b789a56fb088c29083b089c509e194f0cc6
+$ docker pull zookeeper@sha256:b91c4daca511be52d4952bb9e9b67d94e165280b9d4eacc80e6d157f93dcbc1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3688948 bytes)**  
+-	Total Size: **3.7 MB (3724502 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c69a4d82ea0446f6ea0656b619d72f49de5508c5d7991991fb44bc679e85fa79`
+-	Image ID: `sha256:4ffd6d71722bd3e1deca4383a39c397c30aa72b16a0494e01fc7e8726775b5b9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e013de715b4e9d392ae4eef0d332ea0f22f869e3fe9724293bbeaf43daf743a1`  
-		Last Modified: Tue, 02 Jul 2024 21:19:29 GMT  
-		Size: 3.7 MB (3664360 bytes)  
+	-	`sha256:4822130366ac3e2b47adad5e7b6d42e2413c184a584ebe7eb857662006704912`  
+		Last Modified: Wed, 24 Jul 2024 11:36:10 GMT  
+		Size: 3.7 MB (3699909 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a1be03e4e316736d8dc53221c5d56ea8c70a43a640a30203492cfe5b2417bc23`  
-		Last Modified: Tue, 02 Jul 2024 21:19:28 GMT  
-		Size: 24.6 KB (24588 bytes)  
+	-	`sha256:82d7fea0e9d3619ec9660cd649a629677b19a96195bdc77af1ebb6891cf96cde`  
+		Last Modified: Wed, 24 Jul 2024 11:36:10 GMT  
+		Size: 24.6 KB (24593 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `zookeeper:3.9-jre-17`
 
 ```console
-$ docker pull zookeeper@sha256:f02da27159043da49e54bf8ccf98a7ce36d66ff4cea556e2247849ced9c07afb
+$ docker pull zookeeper@sha256:1f96568f109ad8ead72e50efd61d22287bc4c35b3ca9becab7a28c3714196504
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6852,13 +6852,13 @@ $ docker pull zookeeper@sha256:31faf547c0d481b16a0abd89e41aa0d374f225414dd3129cd
 ### `zookeeper:3.9-jre-17` - linux; s390x
 
 ```console
-$ docker pull zookeeper@sha256:f84a96953076c574925f5c42aef6e9d248443057c63769392c36e68e121cb579
+$ docker pull zookeeper@sha256:5acbfbfe26100a3142ace8b771efb7ffac19987ef38bf93d60e6149dd77a8902
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **110.0 MB (109968867 bytes)**  
+-	Total Size: **110.0 MB (110003099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cca83bd5dc9102e54d8082dd70860c77178bfb72c026dd0de6f5fb2b14c7635`
+-	Image ID: `sha256:57efb997b4724128cbb0f2abd757127d78d9c940e132247e8c5169cee585f801`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -6884,9 +6884,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Thu, 14 Mar 2024 05:00:02 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
+ENV JAVA_VERSION=jdk-17.0.12+7
 # Thu, 14 Mar 2024 05:00:02 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
@@ -6933,67 +6933,67 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Tue, 02 Jul 2024 03:54:48 GMT  
 		Size: 13.0 MB (12954922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e143ddbbbd26d9c01c98413ba531196dcc7140c1ec8308b5dcebf8f159bb199`  
-		Last Modified: Tue, 02 Jul 2024 03:55:45 GMT  
-		Size: 43.8 MB (43830806 bytes)  
+	-	`sha256:cc2daba858b3a1c053285ff07cbbbc4a61154a3259ca12a1050495c78b2f497f`  
+		Last Modified: Tue, 23 Jul 2024 02:43:54 GMT  
+		Size: 43.9 MB (43864232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce75fac2d557a16d779924919519ada01974a403b583da2903eff0f02e09fc48`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 159.0 B  
+	-	`sha256:da80df5ffcb165f8c3f70c45e38e83dd4b4b34c5f3787f6d3de600abd0725ad8`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72378e2f6e774945c663149a026ee53475bff2ed8057d8ecdd30044256231a7c`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 734.0 B  
+	-	`sha256:4b01ac1fbacd09287d7ec1b44f0eef560db9879af3d1b860cf95b131dc3ec2bc`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8536b406fe5f801e479be0630fbd3bb2dbfc8d8f53223fcae07a3f9dd06ac126`  
-		Last Modified: Tue, 02 Jul 2024 21:18:14 GMT  
-		Size: 1.8 KB (1793 bytes)  
+	-	`sha256:7717da0bc368c0657fe63f1510e3560dfbd583cd786fba9c6b6bc4d4e56e2b93`  
+		Last Modified: Wed, 24 Jul 2024 11:34:07 GMT  
+		Size: 1.8 KB (1796 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f7ab356b885db1f2d9d8fb941b27fb34dc778a6dd9e826b83759a93ec1fb2cb`  
-		Last Modified: Tue, 02 Jul 2024 21:18:15 GMT  
-		Size: 4.2 MB (4241981 bytes)  
+	-	`sha256:d5b137f4b9670f5bde1b4d34635cfa98fc0d829f1f6c4af3a1f3716984411a02`  
+		Last Modified: Wed, 24 Jul 2024 11:34:08 GMT  
+		Size: 4.2 MB (4242158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7263967a74c190b05b19ded161eac1423a6fbf9a550de7ac39c10c05a1705bfc`  
-		Last Modified: Tue, 02 Jul 2024 21:19:29 GMT  
-		Size: 20.3 MB (20300194 bytes)  
+	-	`sha256:7da70de0bce46d05a19f40ef8e03c5b9dc79b9add01975e779dd88e13e723ab5`  
+		Last Modified: Wed, 24 Jul 2024 11:36:11 GMT  
+		Size: 20.3 MB (20300117 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4aff85971ee94f718b79232c94283bdad11495f94d3c87e140913da133b07a81`  
-		Last Modified: Tue, 02 Jul 2024 21:19:28 GMT  
+	-	`sha256:d502a791e25b71f0c1c3ba25b68a656182befca96521050a795e41f120cb1171`  
+		Last Modified: Wed, 24 Jul 2024 11:36:10 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:3.9-jre-17` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:a3f3c2b5f4df4192eb448f1d08290b789a56fb088c29083b089c509e194f0cc6
+$ docker pull zookeeper@sha256:b91c4daca511be52d4952bb9e9b67d94e165280b9d4eacc80e6d157f93dcbc1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3688948 bytes)**  
+-	Total Size: **3.7 MB (3724502 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c69a4d82ea0446f6ea0656b619d72f49de5508c5d7991991fb44bc679e85fa79`
+-	Image ID: `sha256:4ffd6d71722bd3e1deca4383a39c397c30aa72b16a0494e01fc7e8726775b5b9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e013de715b4e9d392ae4eef0d332ea0f22f869e3fe9724293bbeaf43daf743a1`  
-		Last Modified: Tue, 02 Jul 2024 21:19:29 GMT  
-		Size: 3.7 MB (3664360 bytes)  
+	-	`sha256:4822130366ac3e2b47adad5e7b6d42e2413c184a584ebe7eb857662006704912`  
+		Last Modified: Wed, 24 Jul 2024 11:36:10 GMT  
+		Size: 3.7 MB (3699909 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a1be03e4e316736d8dc53221c5d56ea8c70a43a640a30203492cfe5b2417bc23`  
-		Last Modified: Tue, 02 Jul 2024 21:19:28 GMT  
-		Size: 24.6 KB (24588 bytes)  
+	-	`sha256:82d7fea0e9d3619ec9660cd649a629677b19a96195bdc77af1ebb6891cf96cde`  
+		Last Modified: Wed, 24 Jul 2024 11:36:10 GMT  
+		Size: 24.6 KB (24593 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `zookeeper:3.9.2`
 
 ```console
-$ docker pull zookeeper@sha256:f02da27159043da49e54bf8ccf98a7ce36d66ff4cea556e2247849ced9c07afb
+$ docker pull zookeeper@sha256:1f96568f109ad8ead72e50efd61d22287bc4c35b3ca9becab7a28c3714196504
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7433,13 +7433,13 @@ $ docker pull zookeeper@sha256:31faf547c0d481b16a0abd89e41aa0d374f225414dd3129cd
 ### `zookeeper:3.9.2` - linux; s390x
 
 ```console
-$ docker pull zookeeper@sha256:f84a96953076c574925f5c42aef6e9d248443057c63769392c36e68e121cb579
+$ docker pull zookeeper@sha256:5acbfbfe26100a3142ace8b771efb7ffac19987ef38bf93d60e6149dd77a8902
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **110.0 MB (109968867 bytes)**  
+-	Total Size: **110.0 MB (110003099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cca83bd5dc9102e54d8082dd70860c77178bfb72c026dd0de6f5fb2b14c7635`
+-	Image ID: `sha256:57efb997b4724128cbb0f2abd757127d78d9c940e132247e8c5169cee585f801`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -7465,9 +7465,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Thu, 14 Mar 2024 05:00:02 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
+ENV JAVA_VERSION=jdk-17.0.12+7
 # Thu, 14 Mar 2024 05:00:02 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
@@ -7514,67 +7514,67 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Tue, 02 Jul 2024 03:54:48 GMT  
 		Size: 13.0 MB (12954922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e143ddbbbd26d9c01c98413ba531196dcc7140c1ec8308b5dcebf8f159bb199`  
-		Last Modified: Tue, 02 Jul 2024 03:55:45 GMT  
-		Size: 43.8 MB (43830806 bytes)  
+	-	`sha256:cc2daba858b3a1c053285ff07cbbbc4a61154a3259ca12a1050495c78b2f497f`  
+		Last Modified: Tue, 23 Jul 2024 02:43:54 GMT  
+		Size: 43.9 MB (43864232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce75fac2d557a16d779924919519ada01974a403b583da2903eff0f02e09fc48`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 159.0 B  
+	-	`sha256:da80df5ffcb165f8c3f70c45e38e83dd4b4b34c5f3787f6d3de600abd0725ad8`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72378e2f6e774945c663149a026ee53475bff2ed8057d8ecdd30044256231a7c`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 734.0 B  
+	-	`sha256:4b01ac1fbacd09287d7ec1b44f0eef560db9879af3d1b860cf95b131dc3ec2bc`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8536b406fe5f801e479be0630fbd3bb2dbfc8d8f53223fcae07a3f9dd06ac126`  
-		Last Modified: Tue, 02 Jul 2024 21:18:14 GMT  
-		Size: 1.8 KB (1793 bytes)  
+	-	`sha256:7717da0bc368c0657fe63f1510e3560dfbd583cd786fba9c6b6bc4d4e56e2b93`  
+		Last Modified: Wed, 24 Jul 2024 11:34:07 GMT  
+		Size: 1.8 KB (1796 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f7ab356b885db1f2d9d8fb941b27fb34dc778a6dd9e826b83759a93ec1fb2cb`  
-		Last Modified: Tue, 02 Jul 2024 21:18:15 GMT  
-		Size: 4.2 MB (4241981 bytes)  
+	-	`sha256:d5b137f4b9670f5bde1b4d34635cfa98fc0d829f1f6c4af3a1f3716984411a02`  
+		Last Modified: Wed, 24 Jul 2024 11:34:08 GMT  
+		Size: 4.2 MB (4242158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7263967a74c190b05b19ded161eac1423a6fbf9a550de7ac39c10c05a1705bfc`  
-		Last Modified: Tue, 02 Jul 2024 21:19:29 GMT  
-		Size: 20.3 MB (20300194 bytes)  
+	-	`sha256:7da70de0bce46d05a19f40ef8e03c5b9dc79b9add01975e779dd88e13e723ab5`  
+		Last Modified: Wed, 24 Jul 2024 11:36:11 GMT  
+		Size: 20.3 MB (20300117 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4aff85971ee94f718b79232c94283bdad11495f94d3c87e140913da133b07a81`  
-		Last Modified: Tue, 02 Jul 2024 21:19:28 GMT  
+	-	`sha256:d502a791e25b71f0c1c3ba25b68a656182befca96521050a795e41f120cb1171`  
+		Last Modified: Wed, 24 Jul 2024 11:36:10 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:3.9.2` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:a3f3c2b5f4df4192eb448f1d08290b789a56fb088c29083b089c509e194f0cc6
+$ docker pull zookeeper@sha256:b91c4daca511be52d4952bb9e9b67d94e165280b9d4eacc80e6d157f93dcbc1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3688948 bytes)**  
+-	Total Size: **3.7 MB (3724502 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c69a4d82ea0446f6ea0656b619d72f49de5508c5d7991991fb44bc679e85fa79`
+-	Image ID: `sha256:4ffd6d71722bd3e1deca4383a39c397c30aa72b16a0494e01fc7e8726775b5b9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e013de715b4e9d392ae4eef0d332ea0f22f869e3fe9724293bbeaf43daf743a1`  
-		Last Modified: Tue, 02 Jul 2024 21:19:29 GMT  
-		Size: 3.7 MB (3664360 bytes)  
+	-	`sha256:4822130366ac3e2b47adad5e7b6d42e2413c184a584ebe7eb857662006704912`  
+		Last Modified: Wed, 24 Jul 2024 11:36:10 GMT  
+		Size: 3.7 MB (3699909 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a1be03e4e316736d8dc53221c5d56ea8c70a43a640a30203492cfe5b2417bc23`  
-		Last Modified: Tue, 02 Jul 2024 21:19:28 GMT  
-		Size: 24.6 KB (24588 bytes)  
+	-	`sha256:82d7fea0e9d3619ec9660cd649a629677b19a96195bdc77af1ebb6891cf96cde`  
+		Last Modified: Wed, 24 Jul 2024 11:36:10 GMT  
+		Size: 24.6 KB (24593 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `zookeeper:3.9.2-jre-17`
 
 ```console
-$ docker pull zookeeper@sha256:f02da27159043da49e54bf8ccf98a7ce36d66ff4cea556e2247849ced9c07afb
+$ docker pull zookeeper@sha256:1f96568f109ad8ead72e50efd61d22287bc4c35b3ca9becab7a28c3714196504
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8014,13 +8014,13 @@ $ docker pull zookeeper@sha256:31faf547c0d481b16a0abd89e41aa0d374f225414dd3129cd
 ### `zookeeper:3.9.2-jre-17` - linux; s390x
 
 ```console
-$ docker pull zookeeper@sha256:f84a96953076c574925f5c42aef6e9d248443057c63769392c36e68e121cb579
+$ docker pull zookeeper@sha256:5acbfbfe26100a3142ace8b771efb7ffac19987ef38bf93d60e6149dd77a8902
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **110.0 MB (109968867 bytes)**  
+-	Total Size: **110.0 MB (110003099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cca83bd5dc9102e54d8082dd70860c77178bfb72c026dd0de6f5fb2b14c7635`
+-	Image ID: `sha256:57efb997b4724128cbb0f2abd757127d78d9c940e132247e8c5169cee585f801`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -8046,9 +8046,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Thu, 14 Mar 2024 05:00:02 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
+ENV JAVA_VERSION=jdk-17.0.12+7
 # Thu, 14 Mar 2024 05:00:02 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
@@ -8095,67 +8095,67 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Tue, 02 Jul 2024 03:54:48 GMT  
 		Size: 13.0 MB (12954922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e143ddbbbd26d9c01c98413ba531196dcc7140c1ec8308b5dcebf8f159bb199`  
-		Last Modified: Tue, 02 Jul 2024 03:55:45 GMT  
-		Size: 43.8 MB (43830806 bytes)  
+	-	`sha256:cc2daba858b3a1c053285ff07cbbbc4a61154a3259ca12a1050495c78b2f497f`  
+		Last Modified: Tue, 23 Jul 2024 02:43:54 GMT  
+		Size: 43.9 MB (43864232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce75fac2d557a16d779924919519ada01974a403b583da2903eff0f02e09fc48`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 159.0 B  
+	-	`sha256:da80df5ffcb165f8c3f70c45e38e83dd4b4b34c5f3787f6d3de600abd0725ad8`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72378e2f6e774945c663149a026ee53475bff2ed8057d8ecdd30044256231a7c`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 734.0 B  
+	-	`sha256:4b01ac1fbacd09287d7ec1b44f0eef560db9879af3d1b860cf95b131dc3ec2bc`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8536b406fe5f801e479be0630fbd3bb2dbfc8d8f53223fcae07a3f9dd06ac126`  
-		Last Modified: Tue, 02 Jul 2024 21:18:14 GMT  
-		Size: 1.8 KB (1793 bytes)  
+	-	`sha256:7717da0bc368c0657fe63f1510e3560dfbd583cd786fba9c6b6bc4d4e56e2b93`  
+		Last Modified: Wed, 24 Jul 2024 11:34:07 GMT  
+		Size: 1.8 KB (1796 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f7ab356b885db1f2d9d8fb941b27fb34dc778a6dd9e826b83759a93ec1fb2cb`  
-		Last Modified: Tue, 02 Jul 2024 21:18:15 GMT  
-		Size: 4.2 MB (4241981 bytes)  
+	-	`sha256:d5b137f4b9670f5bde1b4d34635cfa98fc0d829f1f6c4af3a1f3716984411a02`  
+		Last Modified: Wed, 24 Jul 2024 11:34:08 GMT  
+		Size: 4.2 MB (4242158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7263967a74c190b05b19ded161eac1423a6fbf9a550de7ac39c10c05a1705bfc`  
-		Last Modified: Tue, 02 Jul 2024 21:19:29 GMT  
-		Size: 20.3 MB (20300194 bytes)  
+	-	`sha256:7da70de0bce46d05a19f40ef8e03c5b9dc79b9add01975e779dd88e13e723ab5`  
+		Last Modified: Wed, 24 Jul 2024 11:36:11 GMT  
+		Size: 20.3 MB (20300117 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4aff85971ee94f718b79232c94283bdad11495f94d3c87e140913da133b07a81`  
-		Last Modified: Tue, 02 Jul 2024 21:19:28 GMT  
+	-	`sha256:d502a791e25b71f0c1c3ba25b68a656182befca96521050a795e41f120cb1171`  
+		Last Modified: Wed, 24 Jul 2024 11:36:10 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:3.9.2-jre-17` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:a3f3c2b5f4df4192eb448f1d08290b789a56fb088c29083b089c509e194f0cc6
+$ docker pull zookeeper@sha256:b91c4daca511be52d4952bb9e9b67d94e165280b9d4eacc80e6d157f93dcbc1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3688948 bytes)**  
+-	Total Size: **3.7 MB (3724502 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c69a4d82ea0446f6ea0656b619d72f49de5508c5d7991991fb44bc679e85fa79`
+-	Image ID: `sha256:4ffd6d71722bd3e1deca4383a39c397c30aa72b16a0494e01fc7e8726775b5b9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e013de715b4e9d392ae4eef0d332ea0f22f869e3fe9724293bbeaf43daf743a1`  
-		Last Modified: Tue, 02 Jul 2024 21:19:29 GMT  
-		Size: 3.7 MB (3664360 bytes)  
+	-	`sha256:4822130366ac3e2b47adad5e7b6d42e2413c184a584ebe7eb857662006704912`  
+		Last Modified: Wed, 24 Jul 2024 11:36:10 GMT  
+		Size: 3.7 MB (3699909 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a1be03e4e316736d8dc53221c5d56ea8c70a43a640a30203492cfe5b2417bc23`  
-		Last Modified: Tue, 02 Jul 2024 21:19:28 GMT  
-		Size: 24.6 KB (24588 bytes)  
+	-	`sha256:82d7fea0e9d3619ec9660cd649a629677b19a96195bdc77af1ebb6891cf96cde`  
+		Last Modified: Wed, 24 Jul 2024 11:36:10 GMT  
+		Size: 24.6 KB (24593 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `zookeeper:latest`
 
 ```console
-$ docker pull zookeeper@sha256:f02da27159043da49e54bf8ccf98a7ce36d66ff4cea556e2247849ced9c07afb
+$ docker pull zookeeper@sha256:1f96568f109ad8ead72e50efd61d22287bc4c35b3ca9becab7a28c3714196504
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8595,13 +8595,13 @@ $ docker pull zookeeper@sha256:31faf547c0d481b16a0abd89e41aa0d374f225414dd3129cd
 ### `zookeeper:latest` - linux; s390x
 
 ```console
-$ docker pull zookeeper@sha256:f84a96953076c574925f5c42aef6e9d248443057c63769392c36e68e121cb579
+$ docker pull zookeeper@sha256:5acbfbfe26100a3142ace8b771efb7ffac19987ef38bf93d60e6149dd77a8902
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **110.0 MB (109968867 bytes)**  
+-	Total Size: **110.0 MB (110003099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cca83bd5dc9102e54d8082dd70860c77178bfb72c026dd0de6f5fb2b14c7635`
+-	Image ID: `sha256:57efb997b4724128cbb0f2abd757127d78d9c940e132247e8c5169cee585f801`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -8627,9 +8627,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Thu, 14 Mar 2024 05:00:02 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
-ENV JAVA_VERSION=jdk-17.0.11+9
+ENV JAVA_VERSION=jdk-17.0.12+7
 # Thu, 14 Mar 2024 05:00:02 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ccfa23c25790475c84df983cc5f729b94c04d9ea9863912deb15c6266782cf16';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.11_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bcb1b7b8ad68c93093f09b591b7cb17161d39891f7d29d33a586f5a328603707';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz';          ;;        armhf|arm)          ESUM='2e06401aa3aa7a825d73a6af8e9462449b1a86e7705b793dc8ec90423b602ee2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.11_9.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='884b5cb817e50010b4d0a3252afb6a80db18995af19bbd16a37348b2c37949bc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.11_9.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='67dd46352ba94f273579a04ef0756408b06db82b1b4ddf050045c226212f76fd';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.11_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Thu, 14 Mar 2024 05:00:02 GMT
@@ -8676,59 +8676,59 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Tue, 02 Jul 2024 03:54:48 GMT  
 		Size: 13.0 MB (12954922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e143ddbbbd26d9c01c98413ba531196dcc7140c1ec8308b5dcebf8f159bb199`  
-		Last Modified: Tue, 02 Jul 2024 03:55:45 GMT  
-		Size: 43.8 MB (43830806 bytes)  
+	-	`sha256:cc2daba858b3a1c053285ff07cbbbc4a61154a3259ca12a1050495c78b2f497f`  
+		Last Modified: Tue, 23 Jul 2024 02:43:54 GMT  
+		Size: 43.9 MB (43864232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce75fac2d557a16d779924919519ada01974a403b583da2903eff0f02e09fc48`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 159.0 B  
+	-	`sha256:da80df5ffcb165f8c3f70c45e38e83dd4b4b34c5f3787f6d3de600abd0725ad8`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72378e2f6e774945c663149a026ee53475bff2ed8057d8ecdd30044256231a7c`  
-		Last Modified: Tue, 02 Jul 2024 03:55:39 GMT  
-		Size: 734.0 B  
+	-	`sha256:4b01ac1fbacd09287d7ec1b44f0eef560db9879af3d1b860cf95b131dc3ec2bc`  
+		Last Modified: Tue, 23 Jul 2024 02:43:48 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8536b406fe5f801e479be0630fbd3bb2dbfc8d8f53223fcae07a3f9dd06ac126`  
-		Last Modified: Tue, 02 Jul 2024 21:18:14 GMT  
-		Size: 1.8 KB (1793 bytes)  
+	-	`sha256:7717da0bc368c0657fe63f1510e3560dfbd583cd786fba9c6b6bc4d4e56e2b93`  
+		Last Modified: Wed, 24 Jul 2024 11:34:07 GMT  
+		Size: 1.8 KB (1796 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f7ab356b885db1f2d9d8fb941b27fb34dc778a6dd9e826b83759a93ec1fb2cb`  
-		Last Modified: Tue, 02 Jul 2024 21:18:15 GMT  
-		Size: 4.2 MB (4241981 bytes)  
+	-	`sha256:d5b137f4b9670f5bde1b4d34635cfa98fc0d829f1f6c4af3a1f3716984411a02`  
+		Last Modified: Wed, 24 Jul 2024 11:34:08 GMT  
+		Size: 4.2 MB (4242158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7263967a74c190b05b19ded161eac1423a6fbf9a550de7ac39c10c05a1705bfc`  
-		Last Modified: Tue, 02 Jul 2024 21:19:29 GMT  
-		Size: 20.3 MB (20300194 bytes)  
+	-	`sha256:7da70de0bce46d05a19f40ef8e03c5b9dc79b9add01975e779dd88e13e723ab5`  
+		Last Modified: Wed, 24 Jul 2024 11:36:11 GMT  
+		Size: 20.3 MB (20300117 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4aff85971ee94f718b79232c94283bdad11495f94d3c87e140913da133b07a81`  
-		Last Modified: Tue, 02 Jul 2024 21:19:28 GMT  
+	-	`sha256:d502a791e25b71f0c1c3ba25b68a656182befca96521050a795e41f120cb1171`  
+		Last Modified: Wed, 24 Jul 2024 11:36:10 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `zookeeper:latest` - unknown; unknown
 
 ```console
-$ docker pull zookeeper@sha256:a3f3c2b5f4df4192eb448f1d08290b789a56fb088c29083b089c509e194f0cc6
+$ docker pull zookeeper@sha256:b91c4daca511be52d4952bb9e9b67d94e165280b9d4eacc80e6d157f93dcbc1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3688948 bytes)**  
+-	Total Size: **3.7 MB (3724502 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c69a4d82ea0446f6ea0656b619d72f49de5508c5d7991991fb44bc679e85fa79`
+-	Image ID: `sha256:4ffd6d71722bd3e1deca4383a39c397c30aa72b16a0494e01fc7e8726775b5b9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e013de715b4e9d392ae4eef0d332ea0f22f869e3fe9724293bbeaf43daf743a1`  
-		Last Modified: Tue, 02 Jul 2024 21:19:29 GMT  
-		Size: 3.7 MB (3664360 bytes)  
+	-	`sha256:4822130366ac3e2b47adad5e7b6d42e2413c184a584ebe7eb857662006704912`  
+		Last Modified: Wed, 24 Jul 2024 11:36:10 GMT  
+		Size: 3.7 MB (3699909 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a1be03e4e316736d8dc53221c5d56ea8c70a43a640a30203492cfe5b2417bc23`  
-		Last Modified: Tue, 02 Jul 2024 21:19:28 GMT  
-		Size: 24.6 KB (24588 bytes)  
+	-	`sha256:82d7fea0e9d3619ec9660cd649a629677b19a96195bdc77af1ebb6891cf96cde`  
+		Last Modified: Wed, 24 Jul 2024 11:36:10 GMT  
+		Size: 24.6 KB (24593 bytes)  
 		MIME: application/vnd.in-toto+json
