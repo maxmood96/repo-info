@@ -1,10 +1,10 @@
-# `nextcloud:29.0.3-fpm-alpine`
+# `nextcloud:29.0.4-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9f86afa5ba5ebc456900143b241880cdbd5e5db58f2bc7e99113604859ead92f`
-- Created: `2024-07-06T04:49:57.149611141Z`
-- Virtual Size: ~ 902.00 Mb  
+- Image ID: `sha256:7d8f773c05958ed81841be6763af9c2fd0ae31b68fc04dfc246a50c4cf0adfe1`
+- Created: `2024-07-23T04:55:35.190521192Z`
+- Virtual Size: ~ 886.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=8cc44d51bb2506399ec176f70fe110f0c9e1f7d852a5303a2cd1403402199707`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
-  - `NEXTCLOUD_VERSION=29.0.3`
+  - `NEXTCLOUD_VERSION=29.0.4`
 
 ## `apk` (`.apk`-based packages)
 
@@ -217,16 +217,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20240226-r0 description:
+ca-certificates-20240705-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20240226-r0 webpage:
+ca-certificates-20240705-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20240226-r0 installed size:
+ca-certificates-20240705-r0 installed size:
 712 KiB
 
-ca-certificates-20240226-r0 license:
+ca-certificates-20240705-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -234,16 +234,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20240226-r0 description:
+ca-certificates-bundle-20240705-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20240226-r0 webpage:
+ca-certificates-bundle-20240705-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20240226-r0 installed size:
+ca-certificates-bundle-20240705-r0 installed size:
 236 KiB
 
-ca-certificates-bundle-20240226-r0 license:
+ca-certificates-bundle-20240705-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -438,16 +438,16 @@ LGPL-2.1-or-later
 ### `apk` package: `ghostscript`
 
 ```console
-ghostscript-10.02.1-r0 description:
+ghostscript-10.03.1-r0 description:
 Interpreter for the PostScript language and for PDF
 
-ghostscript-10.02.1-r0 webpage:
+ghostscript-10.03.1-r0 webpage:
 https://ghostscript.com/
 
-ghostscript-10.02.1-r0 installed size:
-63 MiB
+ghostscript-10.03.1-r0 installed size:
+61 MiB
 
-ghostscript-10.02.1-r0 license:
+ghostscript-10.03.1-r0 license:
 AGPL-3.0-or-later
 
 ```
@@ -863,16 +863,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r1 description:
+libcrypto3-3.3.1-r3 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r1 webpage:
+libcrypto3-3.3.1-r3 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r1 installed size:
+libcrypto3-3.3.1-r3 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r1 license:
+libcrypto3-3.3.1-r3 license:
 Apache-2.0
 
 ```
@@ -1305,16 +1305,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r1 description:
+libssl3-3.3.1-r3 description:
 SSL shared libraries
 
-libssl3-3.3.1-r1 webpage:
+libssl3-3.3.1-r3 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r1 installed size:
+libssl3-3.3.1-r3 installed size:
 796 KiB
 
-libssl3-3.3.1-r1 license:
+libssl3-3.3.1-r3 license:
 Apache-2.0
 
 ```
@@ -1727,19 +1727,36 @@ BSD-2-Clause
 
 ```
 
+### `apk` package: `openjpeg`
+
+```console
+openjpeg-2.5.2-r0 description:
+Open-source implementation of JPEG2000 image codec
+
+openjpeg-2.5.2-r0 webpage:
+https://www.openjpeg.org/
+
+openjpeg-2.5.2-r0 installed size:
+316 KiB
+
+openjpeg-2.5.2-r0 license:
+BSD-2-Clause
+
+```
+
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.1-r1 description:
+openssl-3.3.1-r3 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.1-r1 webpage:
+openssl-3.3.1-r3 webpage:
 https://www.openssl.org/
 
-openssl-3.3.1-r1 installed size:
+openssl-3.3.1-r3 installed size:
 784 KiB
 
-openssl-3.3.1-r1 license:
+openssl-3.3.1-r3 license:
 Apache-2.0
 
 ```
