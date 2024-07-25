@@ -1,10 +1,10 @@
-# `eclipse-temurin:22.0.1_8-jdk-ubi9-minimal`
+# `eclipse-temurin:22.0.2_9-jdk-ubi9-minimal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:53841a226cc484dca9355439e27981c9b23d01de403762dcb63cce29cd81bdb9`
-- Created: `2024-04-23T20:51:38Z`
-- Virtual Size: ~ 475.54 Mb  
+- Image ID: `sha256:89c32cf05dd3273c00ac761d48412cbc4ac3e6beba6ad04e0dc4b317c759c37c`
+- Created: `2024-07-23T17:08:23Z`
+- Virtual Size: ~ 477.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,10 +16,10 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-22.0.1+8`
+  - `JAVA_VERSION=jdk-22.0.2+9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-06-06T00:53:59`
+  - `build-date=2024-07-18T15:52:43`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -31,10 +31,10 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
-  - `release=1134`
+  - `release=1194`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1134`
-  - `vcs-ref=4b4efbdd5a311b6a9c56319e756ca58c10a2b4de`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1194`
+  - `vcs-ref=94baa7760359088a42ad33dc22d329a5ee2c7209`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.4`
@@ -152,6 +152,12 @@ Licenses (from `rpm --query`): (GPLv2+ or AFL) and GPLv2+
 ### `rpm` package: `dejavu-sans-fonts-2.37-18.el9.noarch`
 
 Licenses (from `rpm --query`): Bitstream Vera and Public Domain
+
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+
+### `rpm` package: `diffutils-3.7-12.el9.x86_64`
+
+Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
@@ -575,6 +581,12 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
+### `rpm` package: `libselinux-utils-3.6-1.el9.x86_64`
+
+Licenses (from `rpm --query`): Public Domain
+
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+
 ### `rpm` package: `libsemanage-3.6-1.el9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
@@ -779,6 +791,12 @@ Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
+### `rpm` package: `policycoreutils-3.6-2.1.el9.x86_64`
+
+Licenses (from `rpm --query`): GPL-2.0-or-later
+
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+
 ### `rpm` package: `popt-1.18-8.el9.x86_64`
 
 Licenses (from `rpm --query`): MIT
@@ -845,25 +863,25 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-252-32.el9_4.x86_64`
+### `rpm` package: `systemd-252-32.el9_4.6.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-libs-252-32.el9_4.x86_64`
+### `rpm` package: `systemd-libs-252-32.el9_4.6.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-pam-252-32.el9_4.x86_64`
+### `rpm` package: `systemd-pam-252-32.el9_4.6.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-rpm-macros-252-32.el9_4.noarch`
+### `rpm` package: `systemd-rpm-macros-252-32.el9_4.6.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
