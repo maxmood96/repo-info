@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1a47e796830875f92eac9357613bebf2d766dd1488f126b4312b8c458e70b25f`
+- Image ID: `sha256:9863b5ad0105b2cd64af246e4adfb37b8a68e9db588e089a35974302edf3ea6e`
 - Created: `2024-06-11T02:37:24Z`
-- Virtual Size: ~ 460.74 Mb  
+- Virtual Size: ~ 460.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `GOSU_VERSION=1.17`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-06-06T00:53:59`
+  - `build-date=2024-07-18T15:52:43`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=MariaDB Database for relational SQL`
@@ -39,8 +39,8 @@
   - `org.opencontainers.image.version=10.11.8`
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1134`
-  - `vcs-ref=4b4efbdd5a311b6a9c56319e756ca58c10a2b4de`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1194`
+  - `vcs-ref=94baa7760359088a42ad33dc22d329a5ee2c7209`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=10.11.8`
@@ -181,7 +181,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-7.el9.noarch
-http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-7.el9.src.rpm
+rsync://ftp-nyc.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/e/epel-release-9-7.el9.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
@@ -336,7 +336,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+rsync://ftp-nyc.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -1193,7 +1193,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+rsync://ftp-nyc.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -1204,7 +1204,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+rsync://ftp-nyc.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
@@ -1273,7 +1273,7 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-libs-252-32.el9_4.x86_64`
+### `rpm` package: `systemd-libs-252-32.el9_4.6.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
