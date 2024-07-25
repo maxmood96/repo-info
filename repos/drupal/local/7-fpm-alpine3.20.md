@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:892043f7b3e358569ffdeff02510406f86436acce7e4eaca48b608f49dd059f8`
+- Image ID: `sha256:ecd8e1c272f18b6869f689c76d7528fe677d3ad845f23465705a1d01af76ef4b`
 - Created: `2024-06-05T22:17:43Z`
-- Virtual Size: ~ 96.85 Mb  
+- Virtual Size: ~ 96.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -183,16 +183,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20240226-r0 description:
+ca-certificates-20240705-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20240226-r0 webpage:
+ca-certificates-20240705-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20240226-r0 installed size:
+ca-certificates-20240705-r0 installed size:
 712 KiB
 
-ca-certificates-20240226-r0 license:
+ca-certificates-20240705-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -200,16 +200,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20240226-r0 description:
+ca-certificates-bundle-20240705-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20240226-r0 webpage:
+ca-certificates-bundle-20240705-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20240226-r0 installed size:
+ca-certificates-bundle-20240705-r0 installed size:
 236 KiB
 
-ca-certificates-bundle-20240226-r0 license:
+ca-certificates-bundle-20240705-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -217,16 +217,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.7.1-r0 description:
+curl-8.8.0-r0 description:
 URL retrival utility and library
 
-curl-8.7.1-r0 webpage:
+curl-8.8.0-r0 webpage:
 https://curl.se/
 
-curl-8.7.1-r0 installed size:
+curl-8.8.0-r0 installed size:
 244 KiB
 
-curl-8.7.1-r0 license:
+curl-8.8.0-r0 license:
 curl
 
 ```
@@ -302,16 +302,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r0 description:
+libcrypto3-3.3.1-r3 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r0 webpage:
+libcrypto3-3.3.1-r3 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r0 installed size:
+libcrypto3-3.3.1-r3 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r0 license:
+libcrypto3-3.3.1-r3 license:
 Apache-2.0
 
 ```
@@ -319,16 +319,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.7.1-r0 description:
+libcurl-8.8.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.7.1-r0 webpage:
+libcurl-8.8.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.7.1-r0 installed size:
-604 KiB
+libcurl-8.8.0-r0 installed size:
+620 KiB
 
-libcurl-8.7.1-r0 license:
+libcurl-8.8.0-r0 license:
 curl
 
 ```
@@ -489,16 +489,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r0 description:
+libssl3-3.3.1-r3 description:
 SSL shared libraries
 
-libssl3-3.3.1-r0 webpage:
+libssl3-3.3.1-r3 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r0 installed size:
+libssl3-3.3.1-r3 installed size:
 796 KiB
 
-libssl3-3.3.1-r0 license:
+libssl3-3.3.1-r3 license:
 Apache-2.0
 
 ```
@@ -625,16 +625,16 @@ X11
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.62.0-r0 description:
+nghttp2-libs-1.62.1-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.62.0-r0 webpage:
+nghttp2-libs-1.62.1-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.62.0-r0 installed size:
+nghttp2-libs-1.62.1-r0 installed size:
 152 KiB
 
-nghttp2-libs-1.62.0-r0 license:
+nghttp2-libs-1.62.1-r0 license:
 MIT
 
 ```
@@ -659,16 +659,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.1-r0 description:
+openssl-3.3.1-r3 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.1-r0 webpage:
+openssl-3.3.1-r3 webpage:
 https://www.openssl.org/
 
-openssl-3.3.1-r0 installed size:
+openssl-3.3.1-r3 installed size:
 784 KiB
 
-openssl-3.3.1-r0 license:
+openssl-3.3.1-r3 license:
 Apache-2.0
 
 ```
