@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fed40510a956d5629a211ee68272dd28ad5f6dc1f5b7b0cc99bccbfec4fcc7cc`
-- Created: `2024-05-28T15:17:11Z`
-- Virtual Size: ~ 552.56 Mb  
+- Image ID: `sha256:ada0b2b2a8a05eff36493121d3352432c682124c60d7572fa732bd4e7256e28e`
+- Created: `2024-07-20T21:06:39Z`
+- Virtual Size: ~ 552.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.11+9`
+  - `JAVA_VERSION=jdk-17.0.12+7`
   - `CLOJURE_VERSION=1.11.3.1456`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -695,12 +695,12 @@ $ apt-get source -qq --print-uris gdbm=1.18.1-5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.18.1-5.debian.tar.xz' gdbm_1.18.1-5.debian.tar.xz 16348 SHA256:3c1a0e05b40a97ee51ce77c736c72c37738ba31b2720111d3bc99175a2c3a3ed
 ```
 
-### `dpkg` source package: `git=1:2.25.1-1ubuntu3.12`
+### `dpkg` source package: `git=1:2.25.1-1ubuntu3.13`
 
 Binary Packages:
 
-- `git=1:2.25.1-1ubuntu3.12`
-- `git-man=1:2.25.1-1ubuntu3.12`
+- `git=1:2.25.1-1ubuntu3.13`
+- `git-man=1:2.25.1-1ubuntu3.13`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -723,9 +723,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu3.13
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.13.dsc' git_2.25.1-1ubuntu3.13.dsc 2966 SHA512:bb0374e8bcc08f7485fcc00254d282fd8232fa67e9c2c365666d2c4b4f944850a1d98d8e821f97e31aeae3f4370184c4cb8bfe4175b64969600dc5596682d13b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1.orig.tar.xz' git_2.25.1.orig.tar.xz 5875548 SHA512:15241143acfd8542d85d2709ac3c80dbd6e8d5234438f70c4f33cc71a2bdec3e32938df7f6351e2746d570b021d3bd0b70474ea4beec0c51d1fc45f9c287b344
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.13.debian.tar.xz' git_2.25.1-1ubuntu3.13.debian.tar.xz 715152 SHA512:5cc26bdc58e2c04e3a98478668e64aae7a53ce52b59330553f9c965dc6ca11dd99efb6ed79733bdebfd067a34f02b33bbada919926bef31b7445cfbc0734eda8
+```
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.16`
 
@@ -2076,14 +2081,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.8.2-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.8.2-0ubuntu2.tar.gz' python3-defaults_3.8.2-0ubuntu2.tar.gz 138226 SHA256:e4969a54306421ebfd195d0c064935db7c53f9f152d8abaae63da33819235e9a
 ```
 
-### `dpkg` source package: `python3.8=3.8.10-0ubuntu1~20.04.9`
+### `dpkg` source package: `python3.8=3.8.10-0ubuntu1~20.04.10`
 
 Binary Packages:
 
-- `libpython3.8-minimal:amd64=3.8.10-0ubuntu1~20.04.9`
-- `libpython3.8-stdlib:amd64=3.8.10-0ubuntu1~20.04.9`
-- `python3.8=3.8.10-0ubuntu1~20.04.9`
-- `python3.8-minimal=3.8.10-0ubuntu1~20.04.9`
+- `libpython3.8-minimal:amd64=3.8.10-0ubuntu1~20.04.10`
+- `libpython3.8-stdlib:amd64=3.8.10-0ubuntu1~20.04.10`
+- `python3.8=3.8.10-0ubuntu1~20.04.10`
+- `python3.8-minimal=3.8.10-0ubuntu1~20.04.10`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/share/doc/libpython3.8-stdlib/copyright`, `/usr/share/doc/python3.8/copyright`, `/usr/share/doc/python3.8-minimal/copyright`)
 
@@ -2105,9 +2110,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.8=3.8.10-0ubuntu1~20.04.10
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.10.dsc' python3.8_3.8.10-0ubuntu1~20.04.10.dsc 3545 SHA512:a826f14bc74e384f22b98a8f76e98f6c53c76e1306d835b8cc280deb2056928fe9c6d1478472a6cbaf3c1bce4f66dbbd1757644db515d75c9c73152b5671bc4c
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10.orig.tar.xz' python3.8_3.8.10.orig.tar.xz 18433456 SHA512:0be69705483ff9692e12048a96180e586f9d84c8d53066629f7fb2389585eb75c0f3506bb8182936e322508f58b71f4d8c6dfebbab9049b31b49da11d3b98e80
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.10.debian.tar.xz' python3.8_3.8.10-0ubuntu1~20.04.10.debian.tar.xz 229332 SHA512:74e27a0b46cedc7e932b7ebea1a3a10983f14884d333392cfe69a8e4288b5fe65c5db7cdb85e3cb842f823ade65900518f2fba8051fdcb934ffc76dcba1e5564
+```
 
 ### `dpkg` source package: `readline=8.0-4`
 

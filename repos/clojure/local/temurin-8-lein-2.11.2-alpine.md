@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:216b57ac2415ddfaea9abf7ce1c695d9b0a7602e19d0a37c2d4087f7e4e89238`
-- Created: `2024-05-28T15:17:11Z`
-- Virtual Size: ~ 250.34 Mb  
+- Image ID: `sha256:be61809020d307a87f2c90ab38ed5686a12363f94c0737918fe0dc45d342fdab`
+- Created: `2024-07-20T21:06:39Z`
+- Virtual Size: ~ 259.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -158,6 +158,40 @@ GPL-2.0-only
 
 ```
 
+### `apk` package: `c-ares`
+
+```console
+c-ares-1.27.0-r0 description:
+Asynchronous DNS/names resolver library
+
+c-ares-1.27.0-r0 webpage:
+https://c-ares.org/
+
+c-ares-1.27.0-r0 installed size:
+152 KiB
+
+c-ares-1.27.0-r0 license:
+MIT
+
+```
+
+### `apk` package: `ca-certificates`
+
+```console
+ca-certificates-20240226-r0 description:
+Common CA certificates PEM files from Mozilla
+
+ca-certificates-20240226-r0 webpage:
+https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
+
+ca-certificates-20240226-r0 installed size:
+712 KiB
+
+ca-certificates-20240226-r0 license:
+MPL-2.0 AND MIT
+
+```
+
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
@@ -243,6 +277,23 @@ FTL OR GPL-2.0-or-later
 
 ```
 
+### `apk` package: `git`
+
+```console
+git-2.43.4-r0 description:
+Distributed version control system
+
+git-2.43.4-r0 webpage:
+https://www.git-scm.com/
+
+git-2.43.4-r0 installed size:
+6068 KiB
+
+git-2.43.4-r0 license:
+GPL-2.0-only
+
+```
+
 ### `apk` package: `libbz2`
 
 ```console
@@ -280,17 +331,34 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.5-r0 description:
+libcrypto3-3.1.6-r2 description:
 Crypto library from openssl
 
-libcrypto3-3.1.5-r0 webpage:
+libcrypto3-3.1.6-r2 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.5-r0 installed size:
+libcrypto3-3.1.6-r2 installed size:
 4512 KiB
 
-libcrypto3-3.1.5-r0 license:
+libcrypto3-3.1.6-r2 license:
 Apache-2.0
+
+```
+
+### `apk` package: `libcurl`
+
+```console
+libcurl-8.5.0-r0 description:
+The multiprotocol file transfer library
+
+libcurl-8.5.0-r0 webpage:
+https://curl.se/
+
+libcurl-8.5.0-r0 installed size:
+580 KiB
+
+libcurl-8.5.0-r0 license:
+curl
 
 ```
 
@@ -342,6 +410,23 @@ libfontenc-1.1.7-r4 installed size:
 
 libfontenc-1.1.7-r4 license:
 MIT
+
+```
+
+### `apk` package: `libidn2`
+
+```console
+libidn2-2.3.4-r4 description:
+Encode/Decode library for internationalized domain names
+
+libidn2-2.3.4-r4 webpage:
+https://www.gnu.org/software/libidn#libidn2
+
+libidn2-2.3.4-r4 installed size:
+208 KiB
+
+libidn2-2.3.4-r4 license:
+GPL-2.0-or-later OR LGPL-3.0-or-later
 
 ```
 
@@ -399,16 +484,16 @@ Libpng
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.5-r0 description:
+libssl3-3.1.6-r2 description:
 SSL shared libraries
 
-libssl3-3.1.5-r0 webpage:
+libssl3-3.1.6-r2 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.5-r0 installed size:
+libssl3-3.1.6-r2 installed size:
 548 KiB
 
-libssl3-3.1.5-r0 license:
+libssl3-3.1.6-r2 license:
 Apache-2.0
 
 ```
@@ -427,6 +512,23 @@ libtasn1-4.19.0-r2 installed size:
 
 libtasn1-4.19.0-r2 license:
 LGPL-2.1-or-later
+
+```
+
+### `apk` package: `libunistring`
+
+```console
+libunistring-1.1-r2 description:
+Library for manipulating Unicode strings and C strings
+
+libunistring-1.1-r2 webpage:
+https://www.gnu.org/software/libunistring/
+
+libunistring-1.1-r2 installed size:
+1664 KiB
+
+libunistring-1.1-r2 license:
+GPL-2.0-or-later OR LGPL-3.0-or-later
 
 ```
 
@@ -532,6 +634,23 @@ X11
 
 ```
 
+### `apk` package: `nghttp2-libs`
+
+```console
+nghttp2-libs-1.58.0-r0 description:
+HTTP/2 C client, server and proxy (libraries)
+
+nghttp2-libs-1.58.0-r0 webpage:
+https://nghttp2.org
+
+nghttp2-libs-1.58.0-r0 installed size:
+152 KiB
+
+nghttp2-libs-1.58.0-r0 license:
+MIT
+
+```
+
 ### `apk` package: `p11-kit`
 
 ```console
@@ -562,6 +681,23 @@ p11-kit-trust-0.25.3-r0 installed size:
 364 KiB
 
 p11-kit-trust-0.25.3-r0 license:
+BSD-3-Clause
+
+```
+
+### `apk` package: `pcre2`
+
+```console
+pcre2-10.42-r2 description:
+Perl-compatible regular expression library
+
+pcre2-10.42-r2 webpage:
+https://pcre.org/
+
+pcre2-10.42-r2 installed size:
+692 KiB
+
+pcre2-10.42-r2 license:
 BSD-3-Clause
 
 ```

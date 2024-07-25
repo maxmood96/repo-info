@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b909750f2aea00b1db424f7706a45eaa74a04d38d910e9f5469204cd2bc751bb`
-- Created: `2024-05-28T15:17:11Z`
-- Virtual Size: ~ 552.50 Mb  
+- Image ID: `sha256:7fb134dea8535b83368c86216c3f9b795fa8c2554594c7a5ac6d18e6629eb510`
+- Created: `2024-07-20T21:06:39Z`
+- Virtual Size: ~ 552.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-22.0.1+8`
+  - `JAVA_VERSION=jdk-22.0.2+9`
   - `CLOJURE_VERSION=1.11.3.1456`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -1897,12 +1897,12 @@ $ apt-get source -qq --print-uris nghttp2=1.43.0-1ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.2.debian.tar.xz' nghttp2_1.43.0-1ubuntu0.2.debian.tar.xz 23788 SHA512:ebbbd0c00089e2b48feef151b00b952cfec456662f35d8dd68e886008cdb61bec788c5fa8bbd63614c18a2e06f187bf3112417e759a4f55a9c0db27511aa461a
 ```
 
-### `dpkg` source package: `openldap=2.5.17+dfsg-0ubuntu0.22.04.1`
+### `dpkg` source package: `openldap=2.5.18+dfsg-0ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `libldap-2.5-0:amd64=2.5.17+dfsg-0ubuntu0.22.04.1`
-- `libldap-common=2.5.17+dfsg-0ubuntu0.22.04.1`
+- `libldap-2.5-0:amd64=2.5.18+dfsg-0ubuntu0.22.04.1`
+- `libldap-common=2.5.18+dfsg-0ubuntu0.22.04.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2163,14 +2163,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.tar.gz' python3-defaults_3.10.6-1~22.04.tar.gz 145325 SHA512:4dce1fcadb47a3fbd72e489e78c6543aa4b35a0480eb4e10617b3afd223cdd244e97f79db55f2abf28367848658ae46a3cda895d3d9dcf21c530149207f080dd
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.3`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.4`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.3`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.3`
-- `python3.10=3.10.12-1~22.04.3`
-- `python3.10-minimal=3.10.12-1~22.04.3`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.4`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.4`
+- `python3.10=3.10.12-1~22.04.4`
+- `python3.10-minimal=3.10.12-1~22.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2192,9 +2192,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.4.dsc' python3.10_3.10.12-1~22.04.4.dsc 3711 SHA512:aaf2601274e1eb79c250b70b0a59e2f20f4d628f1ad2e446c0388f8ccc3909ed6a32253a18b4a3f4e5748a80b2fdfa5ced9be39cee8bdd359b4bab7852d6af4b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.4.debian.tar.xz' python3.10_3.10.12-1~22.04.4.debian.tar.xz 224844 SHA512:33834a36ec1982b088607ee66a95c42e9cbee7e873512865acf952bb208eb8c95b851e6092c650c30516bafb24433ace643912346080a4e81c14940046ca75f3
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
