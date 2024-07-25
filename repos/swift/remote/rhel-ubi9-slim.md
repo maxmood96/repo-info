@@ -1,7 +1,7 @@
 ## `swift:rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:76abd8c5f934e073503e70be5c2c2ffc656552987de071b98d2002f3d3ac3a94
+$ docker pull swift@sha256:9f327fec672ab8ca57505a24fcbe7067e7e26fe56a43cff84465328b4a62f954
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -130,24 +130,24 @@ $ docker pull swift@sha256:f587fb89c9f5e7ef80514e5976ec29a4ca0e66e1b9208eb5e9f12
 ### `swift:rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:976c0e9c03eb56f42b3686837c19de5c24b611cc5216971ceeb4bf2575222667
+$ docker pull swift@sha256:b03b26cf89e44940527f606ba7a634b16f0fba51c5ea38ead2c0e58cafa91908
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **121.6 MB (121607899 bytes)**  
+-	Total Size: **121.8 MB (121765584 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0906747f8805140d75a3906eb4da527d6635cf6b3e9a2066f51086a4e2ef646`
+-	Image ID: `sha256:7c1669ec44f2659ca5db2992d1e7580c2c693ebbe30fbb187b42fc9fb8091466`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Thu, 06 Jun 2024 15:11:32 GMT
-ADD file:335ed73bbd571a2d8d265acfbef89aef7685ebe43551753a631835d4fa4a5d82 in / 
+ADD file:6421efd001a2914c5535f9b35c895e111ae089cecaaca9d0e812c570c03a0888 in / 
 # Thu, 06 Jun 2024 15:11:32 GMT
 RUN mv -f /etc/yum.repos.d/ubi.repo /tmp || :
 # Thu, 06 Jun 2024 15:11:32 GMT
 ADD file:5b1f650e1376d79fa3a65df4a154ea5166def95154b52c1c1097dfd8fc7d58eb in /tmp/tls-ca-bundle.pem 
 # Thu, 06 Jun 2024 15:11:32 GMT
-ADD multi:061215fe5c3ae072bec6a393d07eed4e23cd262b9ac55be47f1423e9b7a0fa9b in /etc/yum.repos.d/ 
+ADD multi:39cf1126311f383f05bcdcfb2be4d277a3c28e8231fe3885ec63ceb2c04249b8 in /etc/yum.repos.d/ 
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL maintainer="Red Hat, Inc."
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -175,13 +175,15 @@ RUN rm -rf /var/log/*
 # Thu, 06 Jun 2024 15:11:32 GMT
 RUN mkdir -p /var/log/rhsm
 # Thu, 06 Jun 2024 15:11:32 GMT
-ADD file:e9817068e897613d5d39fa1542ce3521ea8895568929673880634bcde722f159 in /root/buildinfo/content_manifests/ubi9-container-9.4-1123.1719560047.json 
+LABEL release=1181
 # Thu, 06 Jun 2024 15:11:32 GMT
-ADD file:8af4e5c3d9f50568285a6bcdbaf84d8a90f0dbbf7c170224d357209637fb938f in /root/buildinfo/Dockerfile-ubi9-9.4-1123.1719560047 
+ADD file:32d24d55162f3b2e5cec5b52fb9756c98be529a5b377f0cf1e2927121efe2e8f in /root/buildinfo/content_manifests/ubi9-container-9.4-1181.json 
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL "release"="1123.1719560047" "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2024-06-28T07:36:05" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="92a4a475241865d0d11bd861fb2b29fbd9b17df0" "io.k8s.description"="The Universal Base Image is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.4-1123.1719560047"
+ADD file:4ff516e78e08e8a5d01a05e0581ed2a6a43d9668783ca33e115cd2e24bbb5618 in /root/buildinfo/Dockerfile-ubi9-9.4-1181 
 # Thu, 06 Jun 2024 15:11:32 GMT
-RUN rm -f '/etc/yum.repos.d/odcs-3231928-93eb2.repo' '/etc/yum.repos.d/rhel-9.4-compose-34ae9.repo'
+LABEL "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2024-07-18T15:47:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e309397d02fc53f7fa99db1371b8700eb49f268f" "io.k8s.description"="The Universal Base Image is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.4-1181"
+# Thu, 06 Jun 2024 15:11:32 GMT
+RUN rm -f '/etc/yum.repos.d/repo-05248.repo' '/etc/yum.repos.d/repo-09742.repo'
 # Thu, 06 Jun 2024 15:11:32 GMT
 RUN rm -f /tmp/tls-ca-bundle.pem
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -208,35 +210,35 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:42928cefe51f8d29dc26f18234bb712e5c35d72ca2a8c175b7e4147fcabe9805`  
-		Last Modified: Mon, 01 Jul 2024 12:07:19 GMT  
-		Size: 77.0 MB (77009884 bytes)  
+	-	`sha256:c6f5847a7d5ebb6d4fe76423af992ea0acefca3cbf204f5e1004116397e1f65e`  
+		Last Modified: Wed, 24 Jul 2024 00:08:36 GMT  
+		Size: 77.2 MB (77167574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8d33d33762e6b102cbfd4dc36b317363a517b9e950fc4a27574a87a4e2df540`  
-		Last Modified: Wed, 24 Jul 2024 09:19:06 GMT  
-		Size: 44.6 MB (44598015 bytes)  
+	-	`sha256:151e95316710f85bf3ba4d9aa0a265475bff22c87b5f5fd604681c8a694121a7`  
+		Last Modified: Wed, 24 Jul 2024 23:12:08 GMT  
+		Size: 44.6 MB (44598010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:9be404e58e1d2544c09d3de9269b0c9bdf4cdc0a00f0409963d75ae1e2c7ebcc
+$ docker pull swift@sha256:acbc477f0751327826e5efb41b9ccd860c929233bd28b5425b2551511340f982
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6290564 bytes)**  
+-	Total Size: **6.3 MB (6291237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cdfc64c84ccf0faaaf7ab2bbab1339cd2240ddffe9fc03f7635bf18ddc1ad743`
+-	Image ID: `sha256:2dc98900e5d105675e5123ee0affbe1adb254f7f0348bb6b0f8699e1e6373eff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d935db89e0983dcddf9b2735837559e9adef3b9026407951b30ce4e72191d4d6`  
-		Last Modified: Wed, 24 Jul 2024 09:19:05 GMT  
-		Size: 6.3 MB (6278756 bytes)  
+	-	`sha256:a8307819f43315996421090420a68557583c7d90b242078cb682012039572edc`  
+		Last Modified: Wed, 24 Jul 2024 23:12:07 GMT  
+		Size: 6.3 MB (6279428 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ace0ac1d603e8f7c4b2bb2f640a0a6c0684a86385c17199a549baa22c6f44f69`  
-		Last Modified: Wed, 24 Jul 2024 09:19:05 GMT  
-		Size: 11.8 KB (11808 bytes)  
+	-	`sha256:0dfa0a10acfb51306605a2d72c7868d0b89e5df9603a501b4c4bc55d27bdb614`  
+		Last Modified: Wed, 24 Jul 2024 23:12:06 GMT  
+		Size: 11.8 KB (11809 bytes)  
 		MIME: application/vnd.in-toto+json
