@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:31cf3b62f70d9403d435c4e579162600606be7e137d51dac2a3112cde3a563ce`
+- Image ID: `sha256:8c3f053e17f6f7965a73c3608810b71b0e4f15be7d1fadcae41e9250a7606202`
 - Created: `2024-06-03T20:57:56Z`
 - Virtual Size: ~ 237.66 Mb  
   (total size of all layers on-disk)
@@ -143,16 +143,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20240226-r0 description:
+ca-certificates-bundle-20240705-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20240226-r0 webpage:
+ca-certificates-bundle-20240705-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20240226-r0 installed size:
+ca-certificates-bundle-20240705-r0 installed size:
 236 KiB
 
-ca-certificates-bundle-20240226-r0 license:
+ca-certificates-bundle-20240705-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -245,16 +245,16 @@ MIT
 ### `apk` package: `krb5-libs`
 
 ```console
-krb5-libs-1.21.2-r0 description:
+krb5-libs-1.21.3-r0 description:
 The shared libraries used by Kerberos 5
 
-krb5-libs-1.21.2-r0 webpage:
+krb5-libs-1.21.3-r0 webpage:
 https://web.mit.edu/kerberos/www/
 
-krb5-libs-1.21.2-r0 installed size:
+krb5-libs-1.21.3-r0 installed size:
 1828 KiB
 
-krb5-libs-1.21.2-r0 license:
+krb5-libs-1.21.3-r0 license:
 MIT
 
 ```
@@ -279,16 +279,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r0 description:
+libcrypto3-3.3.1-r3 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r0 webpage:
+libcrypto3-3.3.1-r3 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r0 installed size:
+libcrypto3-3.3.1-r3 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r0 license:
+libcrypto3-3.3.1-r3 license:
 Apache-2.0
 
 ```
@@ -432,16 +432,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r0 description:
+libssl3-3.3.1-r3 description:
 SSL shared libraries
 
-libssl3-3.3.1-r0 webpage:
+libssl3-3.3.1-r3 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r0 installed size:
+libssl3-3.3.1-r3 installed size:
 796 KiB
 
-libssl3-3.3.1-r0 license:
+libssl3-3.3.1-r3 license:
 Apache-2.0
 
 ```

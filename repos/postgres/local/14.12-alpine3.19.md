@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6d0c7b25450432a3d685ec14dc12ac9f373c09fb56313f41a519c6ed2a85f916`
+- Image ID: `sha256:b96ff84c68750e28af436f5030de0d247349ca8a32f8ed3f65c63f38b9a7e703`
 - Created: `2024-06-03T20:57:56Z`
 - Virtual Size: ~ 241.62 Mb  
   (total size of all layers on-disk)
@@ -245,16 +245,16 @@ MIT
 ### `apk` package: `krb5-libs`
 
 ```console
-krb5-libs-1.21.2-r0 description:
+krb5-libs-1.21.3-r0 description:
 The shared libraries used by Kerberos 5
 
-krb5-libs-1.21.2-r0 webpage:
+krb5-libs-1.21.3-r0 webpage:
 https://web.mit.edu/kerberos/www/
 
-krb5-libs-1.21.2-r0 installed size:
+krb5-libs-1.21.3-r0 installed size:
 1824 KiB
 
-krb5-libs-1.21.2-r0 license:
+krb5-libs-1.21.3-r0 license:
 MIT
 
 ```
@@ -296,16 +296,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.5-r0 description:
+libcrypto3-3.1.6-r2 description:
 Crypto library from openssl
 
-libcrypto3-3.1.5-r0 webpage:
+libcrypto3-3.1.6-r2 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.5-r0 installed size:
+libcrypto3-3.1.6-r2 installed size:
 4512 KiB
 
-libcrypto3-3.1.5-r0 license:
+libcrypto3-3.1.6-r2 license:
 Apache-2.0
 
 ```
@@ -449,16 +449,16 @@ custom
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.5-r0 description:
+libssl3-3.1.6-r2 description:
 SSL shared libraries
 
-libssl3-3.1.5-r0 webpage:
+libssl3-3.1.6-r2 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.5-r0 installed size:
+libssl3-3.1.6-r2 installed size:
 548 KiB
 
-libssl3-3.1.5-r0 license:
+libssl3-3.1.6-r2 license:
 Apache-2.0
 
 ```
