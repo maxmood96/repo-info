@@ -1,10 +1,10 @@
-# `neo4j:5.21.2-enterprise-ubi9`
+# `neo4j:5.22.0-enterprise-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4ab4481e24bf6977ba53a2b13926da25ff0710fb5724bb6dec8bbd18c3ad5c32`
-- Created: `2024-07-09T09:34:40Z`
-- Virtual Size: ~ 903.65 Mb  
+- Image ID: `sha256:2ac7a3c3e8909c6781602dea2bc6366115de7a7d581c803f9f06c22c0bfb0ff8`
+- Created: `2024-07-23T13:55:16Z`
+- Virtual Size: ~ 903.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -12,13 +12,14 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `NEO4J_SHA256=9850004735377a931bafa0889f753ec5cf73cd6760b43971ab774024584241f1`
-  - `NEO4J_TARBALL=neo4j-enterprise-5.21.2-unix.tar.gz`
+  - `NEO4J_SHA256=458511394ae55681856acfe6e457dcc09fcdd2a26373a523cef9424adee871d8`
+  - `NEO4J_TARBALL=neo4j-enterprise-5.22.0-unix.tar.gz`
   - `NEO4J_EDITION=enterprise`
   - `NEO4J_HOME=/var/lib/neo4j`
+  - `LANG=C.UTF-8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-06-06T00:53:59`
+  - `build-date=2024-07-18T15:52:43`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -30,10 +31,10 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
-  - `release=1134`
+  - `release=1194`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1134`
-  - `vcs-ref=4b4efbdd5a311b6a9c56319e756ca58c10a2b4de`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1194`
+  - `vcs-ref=94baa7760359088a42ad33dc22d329a5ee2c7209`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.4`
@@ -148,7 +149,7 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `cups-libs-2.3.3op2-24.el9.x86_64`
+### `rpm` package: `cups-libs-2.3.3op2-27.el9_4.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2 and zlib
 
@@ -193,6 +194,12 @@ Licenses (from `rpm --query`): (GPLv2+ or AFL) and GPLv2+
 ### `rpm` package: `dejavu-sans-fonts-2.37-18.el9.noarch`
 
 Licenses (from `rpm --query`): Bitstream Vera and Public Domain
+
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+
+### `rpm` package: `diffutils-3.7-12.el9.x86_64`
+
+Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
@@ -364,7 +371,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `java-17-openjdk-headless-17.0.11.0.9-2.el9.x86_64`
+### `rpm` package: `java-17-openjdk-headless-17.0.12.0.7-2.el9.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA
 
@@ -394,7 +401,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `kernel-headers-5.14.0-427.24.1.el9_4.x86_64`
+### `rpm` package: `kernel-headers-5.14.0-427.26.1.el9_4.x86_64`
 
 Licenses (from `rpm --query`): ((GPL-2.0-only WITH Linux-syscall-note) OR BSD-2-Clause) AND ((GPL-2.0-only WITH Linux-syscall-note) OR BSD-3-Clause) AND ((GPL-2.0-only WITH Linux-syscall-note) OR CDDL-1.0) AND ((GPL-2.0-only WITH Linux-syscall-note) OR Linux-OpenIB) AND ((GPL-2.0-only WITH Linux-syscall-note) OR MIT) AND ((GPL-2.0-or-later WITH Linux-syscall-note) OR BSD-3-Clause) AND ((GPL-2.0-or-later WITH Linux-syscall-note) OR MIT) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-Clear AND GFDL-1.1-no-invariants-or-later AND GPL-1.0-or-later AND (GPL-1.0-or-later OR BSD-3-Clause) AND (GPL-1.0-or-later WITH Linux-syscall-note) AND GPL-2.0-only AND (GPL-2.0-only OR Apache-2.0) AND (GPL-2.0-only OR BSD-2-Clause) AND (GPL-2.0-only OR BSD-3-Clause) AND (GPL-2.0-only OR CDDL-1.0) AND (GPL-2.0-only OR GFDL-1.1-no-invariants-or-later) AND (GPL-2.0-only OR GFDL-1.2-no-invariants-only) AND (GPL-2.0-only WITH Linux-syscall-note) AND GPL-2.0-or-later AND (GPL-2.0-or-later OR BSD-2-Clause) AND (GPL-2.0-or-later OR BSD-3-Clause) AND (GPL-2.0-or-later OR CC-BY-4.0) AND (GPL-2.0-or-later WITH GCC-exception-2.0) AND (GPL-2.0-or-later WITH Linux-syscall-note) AND ISC AND LGPL-2.0-or-later AND (LGPL-2.0-or-later OR BSD-2-Clause) AND (LGPL-2.0-or-later WITH Linux-syscall-note) AND LGPL-2.1-only AND (LGPL-2.1-only OR BSD-2-Clause) AND (LGPL-2.1-only WITH Linux-syscall-note) AND LGPL-2.1-or-later AND (LGPL-2.1-or-later WITH Linux-syscall-note) AND (Linux-OpenIB OR GPL-2.0-only) AND (Linux-OpenIB OR GPL-2.0-only OR BSD-2-Clause) AND Linux-man-pages-copyleft AND MIT AND (MIT OR GPL-2.0-only) AND (MIT OR GPL-2.0-or-later) AND (MIT OR LGPL-2.1-only) AND (MPL-1.1 OR GPL-2.0-only) AND (X11 OR GPL-2.0-only) AND (X11 OR GPL-2.0-or-later) AND Zlib
 
@@ -664,6 +671,12 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
+### `rpm` package: `libselinux-utils-3.6-1.el9.x86_64`
+
+Licenses (from `rpm --query`): Public Domain
+
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+
 ### `rpm` package: `libsemanage-3.6-1.el9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
@@ -886,13 +899,13 @@ Licenses (from `rpm --query`): OLDAP-2.8
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssh-8.7p1-38.el9_4.1.x86_64`
+### `rpm` package: `openssh-8.7p1-38.el9_4.4.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssh-clients-8.7p1-38.el9_4.1.x86_64`
+### `rpm` package: `openssh-clients-8.7p1-38.el9_4.4.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
@@ -970,6 +983,12 @@ Licenses (from `rpm --query`): ISC
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
+### `rpm` package: `policycoreutils-3.6-2.1.el9.x86_64`
+
+Licenses (from `rpm --query`): GPL-2.0-or-later
+
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+
 ### `rpm` package: `popt-1.18-8.el9.x86_64`
 
 Licenses (from `rpm --query`): MIT
@@ -988,19 +1007,19 @@ Licenses (from `rpm --query`): MPLv2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python-unversioned-command-3.9.18-3.el9_4.1.noarch`
+### `rpm` package: `python-unversioned-command-3.9.18-3.el9_4.3.noarch`
 
 Licenses (from `rpm --query`): Python
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-3.9.18-3.el9_4.1.x86_64`
+### `rpm` package: `python3-3.9.18-3.el9_4.3.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-libs-3.9.18-3.el9_4.1.x86_64`
+### `rpm` package: `python3-libs-3.9.18-3.el9_4.3.x86_64`
 
 Licenses (from `rpm --query`): Python
 
@@ -1072,25 +1091,25 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-252-32.el9_4.x86_64`
+### `rpm` package: `systemd-252-32.el9_4.6.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-libs-252-32.el9_4.x86_64`
+### `rpm` package: `systemd-libs-252-32.el9_4.6.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-pam-252-32.el9_4.x86_64`
+### `rpm` package: `systemd-pam-252-32.el9_4.6.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-rpm-macros-252-32.el9_4.noarch`
+### `rpm` package: `systemd-rpm-macros-252-32.el9_4.6.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
