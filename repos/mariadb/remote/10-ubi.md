@@ -1,7 +1,7 @@
 ## `mariadb:10-ubi`
 
 ```console
-$ docker pull mariadb@sha256:e9febf9b1348a1850a0f673abb029c4973484e33bb31bbe934187f2c21d538e2
+$ docker pull mariadb@sha256:95f17f3c67219d003cb74c483c098708185dcd8c9029a56e73760f3207180d48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -176,62 +176,62 @@ $ docker pull mariadb@sha256:ca52d1f089f59130dac7ebb6ac1d82e5ba749495c90a258dd8c
 ### `mariadb:10-ubi` - linux; arm64 variant v8
 
 ```console
-$ docker pull mariadb@sha256:ad4657348b8ce0ae999461780030eb779072a79c20deba7bd6467eb072fd6be3
+$ docker pull mariadb@sha256:39a4c9a4f7301d33ff8c2498b80b9acc42233a15d84378ad58c9eeb816a294e8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.6 MB (141634145 bytes)**  
+-	Total Size: **141.6 MB (141588474 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:04652f0e42046304de76b7e394eb709fc19de052bf2bbad226379281f9d994c4`
+-	Image ID: `sha256:832f4e9b5e59b85874f463e6273ca42144e3ecb4612fc3c8fb2dcbb42c90334a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mariadbd"]`
 
 ```dockerfile
-# Thu, 06 Jun 2024 01:00:43 GMT
-ADD file:a0eabcdf2ab69cce7aa1eb328b862afe9d22c644fe1194679f30c6f67e244c6b in / 
-# Thu, 06 Jun 2024 01:00:44 GMT
+# Tue, 11 Jun 2024 02:37:24 GMT
+ADD file:f709fba0574079e9aa46a5b75f6fc5d799887bd4f82a7be2013a2e4437ff041f in / 
+# Tue, 11 Jun 2024 02:37:24 GMT
 RUN mv -f /etc/yum.repos.d/ubi.repo /tmp || :
-# Thu, 06 Jun 2024 01:00:44 GMT
+# Tue, 11 Jun 2024 02:37:24 GMT
 ADD file:5b1f650e1376d79fa3a65df4a154ea5166def95154b52c1c1097dfd8fc7d58eb in /tmp/tls-ca-bundle.pem 
-# Thu, 06 Jun 2024 01:00:44 GMT
-ADD multi:171eafe5d6538aeb2cf5cf9f6e8618f56eddbc2d8e3acf65107d17c6cc9c35de in /etc/yum.repos.d/ 
-# Thu, 06 Jun 2024 01:00:44 GMT
+# Tue, 11 Jun 2024 02:37:24 GMT
+ADD multi:39cf1126311f383f05bcdcfb2be4d277a3c28e8231fe3885ec63ceb2c04249b8 in /etc/yum.repos.d/ 
+# Tue, 11 Jun 2024 02:37:24 GMT
 LABEL maintainer="Red Hat, Inc."
-# Thu, 06 Jun 2024 01:00:44 GMT
+# Tue, 11 Jun 2024 02:37:24 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.4"
-# Thu, 06 Jun 2024 01:00:44 GMT
+# Tue, 11 Jun 2024 02:37:24 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Thu, 06 Jun 2024 01:00:44 GMT
+# Tue, 11 Jun 2024 02:37:24 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Thu, 06 Jun 2024 01:00:44 GMT
+# Tue, 11 Jun 2024 02:37:24 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Thu, 06 Jun 2024 01:00:44 GMT
+# Tue, 11 Jun 2024 02:37:24 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Thu, 06 Jun 2024 01:00:44 GMT
+# Tue, 11 Jun 2024 02:37:24 GMT
 LABEL io.openshift.expose-services=""
-# Thu, 06 Jun 2024 01:00:44 GMT
+# Tue, 11 Jun 2024 02:37:24 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Thu, 06 Jun 2024 01:00:44 GMT
+# Tue, 11 Jun 2024 02:37:24 GMT
 ENV container oci
-# Thu, 06 Jun 2024 01:00:44 GMT
+# Tue, 11 Jun 2024 02:37:24 GMT
 ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 06 Jun 2024 01:00:44 GMT
+# Tue, 11 Jun 2024 02:37:24 GMT
 CMD ["/bin/bash"]
-# Thu, 06 Jun 2024 01:00:45 GMT
+# Tue, 11 Jun 2024 02:37:24 GMT
 RUN rm -rf /var/log/*
-# Thu, 06 Jun 2024 01:00:45 GMT
-LABEL release=1134
-# Thu, 06 Jun 2024 01:00:45 GMT
-ADD file:889f44042d0c51b9eda12ed533aa1fb117a8ffcf209c0ad0a329baaa81eac425 in /root/buildinfo/content_manifests/ubi9-minimal-container-9.4-1134.json 
-# Thu, 06 Jun 2024 01:00:45 GMT
-ADD file:b6af28769ecb7942ba5cf7b0e1bbf054cd8a414727a87e4ff5ecb40886563b94 in /root/buildinfo/Dockerfile-ubi9-minimal-9.4-1134 
-# Thu, 06 Jun 2024 01:00:45 GMT
-LABEL "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2024-06-06T00:53:59" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="4b4efbdd5a311b6a9c56319e756ca58c10a2b4de" "io.k8s.description"="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1134"
-# Thu, 06 Jun 2024 01:00:47 GMT
-RUN rm -f '/etc/yum.repos.d/repo-d5140.repo' '/etc/yum.repos.d/repo-4f47a.repo'
-# Thu, 06 Jun 2024 01:00:48 GMT
+# Tue, 11 Jun 2024 02:37:24 GMT
+LABEL release=1194
+# Tue, 11 Jun 2024 02:37:24 GMT
+ADD file:c9f3c26999c1ebf7b158f6d526405f4f2a7761aeaf3986c120c5ba32f61b0820 in /root/buildinfo/content_manifests/ubi9-minimal-container-9.4-1194.json 
+# Tue, 11 Jun 2024 02:37:24 GMT
+ADD file:ba00fa3144a82bce8698247481dc2415535fa14e5557f1639e90fdfa9c65461d in /root/buildinfo/Dockerfile-ubi9-minimal-9.4-1194 
+# Tue, 11 Jun 2024 02:37:24 GMT
+LABEL "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2024-07-18T15:52:43" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="94baa7760359088a42ad33dc22d329a5ee2c7209" "io.k8s.description"="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1194"
+# Tue, 11 Jun 2024 02:37:24 GMT
+RUN rm -f '/etc/yum.repos.d/repo-05248.repo' '/etc/yum.repos.d/repo-09742.repo'
+# Tue, 11 Jun 2024 02:37:24 GMT
 RUN rm -f /tmp/tls-ca-bundle.pem
-# Thu, 06 Jun 2024 01:00:49 GMT
+# Tue, 11 Jun 2024 02:37:24 GMT
 RUN mv -fZ /tmp/ubi.repo /etc/yum.repos.d/ubi.repo || :
 # Tue, 11 Jun 2024 02:37:24 GMT
 RUN groupadd --gid 999 -r mysql && 	useradd -r -g mysql mysql --home-dir /var/lib/mysql --uid 999 # buildkit
@@ -270,64 +270,64 @@ CMD ["mariadbd"]
 ```
 
 -	Layers:
-	-	`sha256:12041dc61838218321383650a1641a04f91cba754a7465ce28de10da7d0af785`  
-		Last Modified: Thu, 13 Jun 2024 09:26:57 GMT  
-		Size: 37.1 MB (37118393 bytes)  
+	-	`sha256:63c76be6b13c3916a86a82fe30d0c63bde321c804abe11ea9f3bae73f5832bdf`  
+		Last Modified: Tue, 23 Jul 2024 23:20:54 GMT  
+		Size: 37.1 MB (37072383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24451cf0a25948990a22be75714322b70b28f6ab772a4c3c53daeb4cfa8d3e66`  
-		Last Modified: Fri, 14 Jun 2024 03:55:52 GMT  
-		Size: 880.0 B  
+	-	`sha256:6a80c17a00050830c2cb67972c6d8336c5fcd6f51499e4cb94e97b454917cd57`  
+		Last Modified: Wed, 24 Jul 2024 23:00:53 GMT  
+		Size: 885.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:717dd27e091e5c77a7f3e48f9c460fb2a15b4f8345aead930156dda527f85bae`  
-		Last Modified: Fri, 14 Jun 2024 03:55:52 GMT  
-		Size: 913.8 KB (913810 bytes)  
+	-	`sha256:29f9d689981fec0b12316bb46ef88644b103a588960c4adf8936492da2e0201b`  
+		Last Modified: Wed, 24 Jul 2024 23:00:54 GMT  
+		Size: 913.8 KB (913813 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba1816d48a438e2c58a327db7ad01e880791482d4617ca1e296cf469394f8196`  
-		Last Modified: Fri, 14 Jun 2024 03:58:07 GMT  
-		Size: 335.0 B  
+	-	`sha256:903a6d85e81247c3a9597847237c322bf6167d68a6d7ec822ae0f66a33439faa`  
+		Last Modified: Wed, 24 Jul 2024 23:03:05 GMT  
+		Size: 334.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6f202c0522c46d4ed6acdc157f8c3b36f3aa5fff377965317c39e3cc8c5cf0c`  
-		Last Modified: Fri, 14 Jun 2024 03:58:07 GMT  
-		Size: 314.0 B  
+	-	`sha256:ac8636efaead5ec6a2e1e81f0a8bafaaba78654efdf4e1dd2416f8237ebae707`  
+		Last Modified: Wed, 24 Jul 2024 23:03:05 GMT  
+		Size: 310.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b059a3a0756b8258d6e6cc73e414fbc46c8fc7758b462cba6e0a2a797415b9b`  
-		Last Modified: Fri, 14 Jun 2024 03:58:11 GMT  
-		Size: 103.6 MB (103588336 bytes)  
+	-	`sha256:733fe07200ac715e9e2b7cbde41e435eb7bc5463fb4172801ede4435792b57fc`  
+		Last Modified: Wed, 24 Jul 2024 23:03:08 GMT  
+		Size: 103.6 MB (103588676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:094af68ef2a04ac064553e928ab1522b97166ab4c0aa57f297ea9f61d5815320`  
-		Last Modified: Fri, 14 Jun 2024 03:58:07 GMT  
+	-	`sha256:aab05ac4513edb99ff76ee30a6f26617f5719cd217923baa513c2c60c8475621`  
+		Last Modified: Wed, 24 Jul 2024 23:03:05 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff5023511f0a635e8b6461840eefb0e33912dee02a37234e6355bbe5f9d0885c`  
-		Last Modified: Fri, 14 Jun 2024 03:58:08 GMT  
-		Size: 3.6 KB (3616 bytes)  
+	-	`sha256:b3aa8954e7739eb036659195453ed6c0ec77ce5584e76e1c0bd0db15e94c16d0`  
+		Last Modified: Wed, 24 Jul 2024 23:03:06 GMT  
+		Size: 3.6 KB (3615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2d77f10c90515b33982e5a90d38a7c32e9ce54165e089b2c443c76cc6b0b79b`  
-		Last Modified: Fri, 14 Jun 2024 03:58:08 GMT  
-		Size: 8.3 KB (8345 bytes)  
+	-	`sha256:51cb9244e9e3f9138c773da3851f34f9d956e62b1c27023521591f82b8360ad9`  
+		Last Modified: Wed, 24 Jul 2024 23:03:06 GMT  
+		Size: 8.3 KB (8342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mariadb:10-ubi` - unknown; unknown
 
 ```console
-$ docker pull mariadb@sha256:6c194fcc23e30b80b2d1f1ece3b1a9994d1dbf1574ec8a5acbda3d7fe0c60394
+$ docker pull mariadb@sha256:b1bec9573b21047abeb695b72cfa2724b15265353f010c95110d320a94d11c19
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.9 MB (3911525 bytes)**  
+-	Total Size: **3.9 MB (3948909 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50b1a90308b28f86656420e2ca28675ccea5923f11878c0df655ccab6e47d1d2`
+-	Image ID: `sha256:9b5090dc6ace3cf71814385e11ddfeb9714c9c2832214332d4225cdbb8e0cdf9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c954db90b74389500b704f69e04960edecf35e915a69760c7385fbcc5aac6d6c`  
-		Last Modified: Fri, 14 Jun 2024 03:58:08 GMT  
-		Size: 3.9 MB (3881172 bytes)  
+	-	`sha256:0d0423046f12013d93418d9fc85d91b774620e6f6afb8f014b73225bf9c93939`  
+		Last Modified: Wed, 24 Jul 2024 23:03:05 GMT  
+		Size: 3.9 MB (3918556 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bc4d46441fd5ced530e0149c0423fa3413faa9f8f0fe1810f9e5be5a1e3c26cf`  
-		Last Modified: Fri, 14 Jun 2024 03:58:07 GMT  
+	-	`sha256:9f6ef58b17d9654d8e380e6b6a0b317b2baf4294498adf169e4a2993972565a5`  
+		Last Modified: Wed, 24 Jul 2024 23:03:05 GMT  
 		Size: 30.4 KB (30353 bytes)  
 		MIME: application/vnd.in-toto+json
 
