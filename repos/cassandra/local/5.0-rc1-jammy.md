@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ecc597d876755b8677e9fb12438fdc45b83794dbbda19cc9d06ea20e8d025967`
+- Image ID: `sha256:90f8660a8a031674805efbdf55bedeba9dedf251a58029918351748ce6b3f91d`
 - Created: `2024-07-18T20:24:31Z`
-- Virtual Size: ~ 375.47 Mb  
+- Virtual Size: ~ 375.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.11+9`
+  - `JAVA_VERSION=jdk-17.0.12+7`
   - `GOSU_VERSION=1.17`
   - `CASSANDRA_HOME=/opt/cassandra`
   - `CASSANDRA_CONF=/etc/cassandra`
