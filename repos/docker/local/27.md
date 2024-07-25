@@ -1,18 +1,18 @@
-# `docker:27.0.3-dind`
+# `docker:27.1.1-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:023c1e5a395e5cf6647ec770a46402bf1238698b8b85a2bf4c583d724ab98b4c`
-- Created: `2024-07-01T11:04:46Z`
-- Virtual Size: ~ 366.99 Mb  
+- Image ID: `sha256:d80cf32f31df1de4aa9befc0bace4b006dd9ac4ae85b12c8e03075fda7ebe88e`
+- Created: `2024-07-23T22:56:51Z`
+- Virtual Size: ~ 361.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=27.0.3`
+  - `DOCKER_VERSION=27.1.1`
   - `DOCKER_BUILDX_VERSION=0.16.1`
-  - `DOCKER_COMPOSE_VERSION=2.29.0`
+  - `DOCKER_COMPOSE_VERSION=2.29.1`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e`
 
@@ -191,16 +191,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20240226-r0 description:
+ca-certificates-bundle-20240705-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20240226-r0 webpage:
+ca-certificates-bundle-20240705-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20240226-r0 installed size:
+ca-certificates-bundle-20240705-r0 installed size:
 236 KiB
 
-ca-certificates-bundle-20240226-r0 license:
+ca-certificates-bundle-20240705-r0 license:
 MPL-2.0 AND MIT
 
 ```
