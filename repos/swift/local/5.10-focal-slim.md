@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac2c1e903680bac5d89123d0ef00022751fd8f5c39140026b9af9b2b80201876`
-- Created: `2024-06-07T03:54:29.828589333Z`
-- Virtual Size: ~ 251.14 Mb  
+- Image ID: `sha256:7d39eb0126b6889b7ba404234f48241575d4bd0d5bd8a959d2e2456d7c2641af`
+- Created: `2024-06-06T15:11:32Z`
+- Virtual Size: ~ 250.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1670,11 +1670,11 @@ $ apt-get source -qq --print-uris tar=1.30+dfsg-7ubuntu0.20.04.4
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.4.debian.tar.xz' tar_1.30+dfsg-7ubuntu0.20.04.4.debian.tar.xz 24572 SHA512:942a7fb6e2edb7e50b26b1588219d0a99caf17ff1dfa1748449c3fa84ab8cf3e3e94bafb8334cc3b8397562d6a3ecd57bc0df2ddb2b90644a361fa63426d2982
 ```
 
-### `dpkg` source package: `tzdata=2024a-0ubuntu0.20.04`
+### `dpkg` source package: `tzdata=2024a-0ubuntu0.20.04.1`
 
 Binary Packages:
 
-- `tzdata=2024a-0ubuntu0.20.04`
+- `tzdata=2024a-0ubuntu0.20.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -1683,11 +1683,11 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2024a-0ubuntu0.20.04
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.20.04.dsc' tzdata_2024a-0ubuntu0.20.04.dsc 2516 SHA512:a15b25ae9dc2fbed32a7eb6f41b5036203117dd610d5a657eeb56d507dd985684978f0e3126919fa51a3c6cccc461ab5b4d78c1e1d185c4e95a149318215a32b
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA512:1f09f1b2327cc9e1afc7e9045e83ee3377918dafe1bee2f282b6991828d03b3c70a4d3a17f9207dfb1361bb25bc214a8922a756e84fa114e9ba476226db57236
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA512:a06ddc95002f2dcd3c071d020a74bc98aae2cbf56a502718f9bc08e90e0075b17aaaa653ceecd49a1133cdadfc43134365043f827b19c7dad68050dbda6ba77e
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.20.04.debian.tar.xz' tzdata_2024a-0ubuntu0.20.04.debian.tar.xz 170964 SHA512:d1d7386d828f1598632c8cc3bf7a8d6912f1783598d681ca97383e873afa095a51fc994e0cb6c1ed6a0ef6f8e1c619e2bc7679c060a74bc436c1646ff5f99c1c
+$ apt-get source -qq --print-uris tzdata=2024a-0ubuntu0.20.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.20.04.1.dsc' tzdata_2024a-0ubuntu0.20.04.1.dsc 2556 SHA512:9f71acf380cf4076da623666f5fd75a346a7ebc5c2cfe367dde2eb98454c8b8d14056bcbcd29d64ab3f51168f76243fc305cf55202a93ba791cdb1cf40802343
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA512:1f09f1b2327cc9e1afc7e9045e83ee3377918dafe1bee2f282b6991828d03b3c70a4d3a17f9207dfb1361bb25bc214a8922a756e84fa114e9ba476226db57236
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA512:a06ddc95002f2dcd3c071d020a74bc98aae2cbf56a502718f9bc08e90e0075b17aaaa653ceecd49a1133cdadfc43134365043f827b19c7dad68050dbda6ba77e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.20.04.1.debian.tar.xz' tzdata_2024a-0ubuntu0.20.04.1.debian.tar.xz 174204 SHA512:9a999fc4e28c0f18b2f095876b17316c7f8f2ce23eb83f6f0d0c082270075ec7184a0e5c217576eac14ef49251a5e3536490777175b70146fab72a4b30a25aa8
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5c790a42df645557c5b539c14dd946f71a3df2e821d8debf3cfb76c7ac004c54`
-- Created: `2024-07-02T00:53:45.173694075Z`
-- Virtual Size: ~ 341.70 Mb  
+- Image ID: `sha256:8bda0bddf982835e5be64ffcf476bd9d03816b5b304a37f974b7bbb5513e7f5b`
+- Created: `2024-06-06T15:11:32Z`
+- Virtual Size: ~ 341.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-06-28T07:36:05`
+  - `build-date=2024-07-18T15:47:19`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,10 +30,10 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=1123.1719560047`
+  - `release=1181`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.4-1123.1719560047`
-  - `vcs-ref=92a4a475241865d0d11bd861fb2b29fbd9b17df0`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.4-1181`
+  - `vcs-ref=e309397d02fc53f7fa99db1371b8700eb49f268f`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.4`
@@ -796,7 +796,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-3.9.18-3.el9_4.1.x86_64`
+### `rpm` package: `python3-3.9.18-3.el9_4.3.x86_64`
 
 Licenses (from `rpm --query`): Python
 
@@ -904,7 +904,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-libs-3.9.18-3.el9_4.1.x86_64`
+### `rpm` package: `python3-libs-3.9.18-3.el9_4.3.x86_64`
 
 Licenses (from `rpm --query`): Python
 
@@ -1048,25 +1048,25 @@ Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-252-32.el9_4.x86_64`
+### `rpm` package: `systemd-252-32.el9_4.6.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-libs-252-32.el9_4.x86_64`
+### `rpm` package: `systemd-libs-252-32.el9_4.6.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-pam-252-32.el9_4.x86_64`
+### `rpm` package: `systemd-pam-252-32.el9_4.6.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-rpm-macros-252-32.el9_4.noarch`
+### `rpm` package: `systemd-rpm-macros-252-32.el9_4.6.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
