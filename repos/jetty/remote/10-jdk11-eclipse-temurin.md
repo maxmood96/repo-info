@@ -1,7 +1,7 @@
 ## `jetty:10-jdk11-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:851297072a5d3d8e1030fa0b0e172faeafdbeebe9e18240b91437c72619a3812
+$ docker pull jetty@sha256:e98fb7d743153dacbf2a103082b3ccf890e099c0f46fdc207e05029b73564a05
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull jetty@sha256:851297072a5d3d8e1030fa0b0e172faeafdbeebe9e18240b91437
 ### `jetty:10-jdk11-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:9010d0f966274579d83a79f10bcf4779da0767a42f174b78e41ea103e19bb701
+$ docker pull jetty@sha256:e913ebfdb9ca42b7a0c8f8d35839f88315e1a150e71a3720fa7d889504f1cf25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **202.2 MB (202194008 bytes)**  
+-	Total Size: **202.2 MB (202194443 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc0e2324a3279b72d434253aa50e9008e8ddb779d31ceb23a4ca24f5c22cbdce`
+-	Image ID: `sha256:88f497b98b6680b75744c902a876c9c8984b1df8f35ae2372b8457c8c50b4fd6`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -54,7 +54,7 @@ RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System
 # Mon, 08 Jul 2024 06:35:54 GMT
 COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 08 Jul 2024 06:35:54 GMT
-ENTRYPOINT ["/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
 # Mon, 08 Jul 2024 06:35:54 GMT
 CMD ["jshell"]
 # Mon, 08 Jul 2024 06:35:54 GMT
@@ -104,45 +104,45 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Wed, 24 Jul 2024 01:26:34 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9227bb1ca7bf89904e9807e40195f8fa1cf174ef0b17fecd21a4662080d24fd`  
-		Last Modified: Wed, 24 Jul 2024 01:26:34 GMT  
-		Size: 1.4 KB (1436 bytes)  
+	-	`sha256:3259d4aad21fdb59205afd139d7cd63465836f6c003b7831821416d37f350771`  
+		Last Modified: Thu, 25 Jul 2024 17:28:14 GMT  
+		Size: 1.9 KB (1866 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddf2eeba7d06708fbbdeaa03268c80063c439a7c0de6b3a393f0d5e5884d1b9a`  
-		Last Modified: Wed, 24 Jul 2024 03:05:58 GMT  
-		Size: 11.1 MB (11127767 bytes)  
+	-	`sha256:f880d94865a9a3c70a87ebb2850b47d7cae663a047f487e2cd46af5b6100f566`  
+		Last Modified: Thu, 25 Jul 2024 19:07:16 GMT  
+		Size: 11.1 MB (11127772 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f739eb7d2b2b533bff4d8d8aff8a4b802f4e8360b3826c02673873093a9692a7`  
-		Last Modified: Wed, 24 Jul 2024 03:05:58 GMT  
+	-	`sha256:d736821837ae32e679d1e91a37172577d6a796895356dd153ff49d5427cfb779`  
+		Last Modified: Thu, 25 Jul 2024 19:07:04 GMT  
 		Size: 1.6 KB (1633 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:10-jdk11-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:4172b6f0eda165a2e91ba3173c99752d2ed787f4531d83ccd4daf2e63462d0ed
+$ docker pull jetty@sha256:d07aa2939f608a835b4861739794be5c3bc7078b8f07b69604e25232386c9f6f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3606031 bytes)**  
+-	Total Size: **3.6 MB (3606030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d8a32228d9dbc58891dcce632b45b7f50580318db8b559bdd5392e9f3b7606b`
+-	Image ID: `sha256:7f341a7e3eb7f19caa5bb9609a8553e4481940c894e3e31cbd7c71c3873719cc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:901c4c0f4128532ee194f774e3840b6f9e45ef118b2846aada84e279715982b7`  
-		Last Modified: Wed, 24 Jul 2024 03:05:58 GMT  
+	-	`sha256:e95a199058be368fde589d5164a56c83ea28451612d0e0e4fa05aea7dcd0b329`  
+		Last Modified: Thu, 25 Jul 2024 19:07:16 GMT  
 		Size: 3.6 MB (3584576 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a63ffc593bfbef52b1973956e42ae009315d4421f0f7d11da0956a27f1d4b5b0`  
-		Last Modified: Wed, 24 Jul 2024 03:05:57 GMT  
-		Size: 21.5 KB (21455 bytes)  
+	-	`sha256:2960f7e3da69e5dd488d242c401c00d72cc97999e8d2b30416eeafad24c0e895`  
+		Last Modified: Thu, 25 Jul 2024 19:07:16 GMT  
+		Size: 21.5 KB (21454 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:10-jdk11-eclipse-temurin` - linux; arm64 variant v8

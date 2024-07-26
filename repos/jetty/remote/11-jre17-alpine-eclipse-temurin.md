@@ -1,7 +1,7 @@
 ## `jetty:11-jre17-alpine-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:2355f47fe30879e1e9fa8d39e80f30995f44bf91d049967c3307440d56175682
+$ docker pull jetty@sha256:7e00f04851b3c1caaa3b8b4c81884efdb7723eec4ff3cf9d408e0c4f93c05474
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,13 +12,13 @@ $ docker pull jetty@sha256:2355f47fe30879e1e9fa8d39e80f30995f44bf91d049967c33074
 ### `jetty:11-jre17-alpine-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:c1680848e6e92e0b958efba48de01a3b622cc3a5589861e8432c5c7e20c5b926
+$ docker pull jetty@sha256:93c90e4dcc0e467772e417491708984a732aaf6829c5719373d6aaaea9e39738
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.2 MB (81167473 bytes)**  
+-	Total Size: **82.2 MB (82200379 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4578cf2cca174c01901c09bb68cac2d2490eec7e45a6b89c94f53ad8f895e1f9`
+-	Image ID: `sha256:599360573e16389689bc85252596a2638d02cf3b609dca1a680933661512ce2a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -34,7 +34,7 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 # Mon, 08 Jul 2024 06:35:54 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Mon, 08 Jul 2024 06:35:54 GMT
-RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata     ;     rm -rf /var/cache/apk/* # buildkit
+RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
 # Mon, 08 Jul 2024 06:35:54 GMT
 ENV JAVA_VERSION=jdk-17.0.12+7
 # Mon, 08 Jul 2024 06:35:54 GMT
@@ -80,55 +80,55 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Mon, 22 Jul 2024 22:27:14 GMT  
 		Size: 3.6 MB (3622892 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b502c76566e71337b4737a25ae762dd54193bc78dba7f7474ea005c07de9efc`  
-		Last Modified: Tue, 23 Jul 2024 01:08:16 GMT  
-		Size: 8.4 MB (8371901 bytes)  
+	-	`sha256:6dff7dc6fc2858af0a16833a15a63741d58d895a9d1a9a2de411e9921a0de0dd`  
+		Last Modified: Thu, 25 Jul 2024 17:25:18 GMT  
+		Size: 9.4 MB (9394889 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:470b7c21f90c416505c5901e5ae2dc4a6a315754d31af26e1d7d23764d79648f`  
-		Last Modified: Tue, 23 Jul 2024 01:08:21 GMT  
-		Size: 47.0 MB (46988362 bytes)  
+	-	`sha256:44f5650f3ff3cbac78a5ddc894de21bb232ed2cc7038ae6440a33d9fa494711f`  
+		Last Modified: Thu, 25 Jul 2024 17:30:24 GMT  
+		Size: 47.0 MB (46988407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:94fda088e83ffe4cb0dd87d2788cf604b5681474d8e4ffe7a92e24e0b992b0a9`  
-		Last Modified: Tue, 23 Jul 2024 01:08:15 GMT  
-		Size: 138.0 B  
+	-	`sha256:b25c44b9167a8f0d71bc58f67c439ac4e294f54780a414f8c7367136b652cd86`  
+		Last Modified: Thu, 25 Jul 2024 17:30:17 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7031008d0f5d9a0cf6c47471b6ba33130dc95daad90f22cf4837c5ea3d0687bc`  
-		Last Modified: Tue, 23 Jul 2024 01:08:15 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:5d6596ba099baa21107eeae01921800730fcc39c95a2220c8e13ec7ec356bf45`  
+		Last Modified: Thu, 25 Jul 2024 17:30:17 GMT  
+		Size: 1.9 KB (1866 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c01d2a75ab3d7ea9187e6640c17817db678f7c740e39330e32c11cb0553f1cf4`  
-		Last Modified: Tue, 23 Jul 2024 02:02:01 GMT  
-		Size: 22.2 MB (22181080 bytes)  
+	-	`sha256:f0b3e45f1ee5c4bd167e3ce040ed3042af4c5379c458afabf7de989ed5b1a7bd`  
+		Last Modified: Thu, 25 Jul 2024 19:03:42 GMT  
+		Size: 22.2 MB (22190519 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e8dffe23455205b06c5aa82cf8f0e7ce011234339fc4cfeae2f645ceb235124`  
-		Last Modified: Tue, 23 Jul 2024 02:02:00 GMT  
-		Size: 1.6 KB (1633 bytes)  
+	-	`sha256:5e5c690270184ac33515e8c766964171bde3ed4a0ee5a2cae576937ae9b0f6b0`  
+		Last Modified: Thu, 25 Jul 2024 19:03:39 GMT  
+		Size: 1.6 KB (1634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:11-jre17-alpine-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:f0972bf3b16958c4a68e0f68cb45a6b7d6a2ac647128f97beaf87e7e3574e183
+$ docker pull jetty@sha256:b832e74238f3097372336536fbebbbf905167c77c1a86b50103fce31f32d0da2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **936.5 KB (936507 bytes)**  
+-	Total Size: **955.0 KB (955027 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ae638ea611dfcfebdf87883d2bf904733963080e0727056d76290512fe753d1`
+-	Image ID: `sha256:8103c97816eb2a8221331f71e03ac88a84b60a8afce4bc68f16d26eeaa41b7e2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d8b9a6e408b80ea074e9321c67b371507f07a466edb9b3cd791e19278bb48b7b`  
-		Last Modified: Tue, 23 Jul 2024 02:02:01 GMT  
-		Size: 916.6 KB (916569 bytes)  
+	-	`sha256:94fb63274d376063e01e433c1a905b3c9ade797f2c6b851b454aee819a45582e`  
+		Last Modified: Thu, 25 Jul 2024 19:03:42 GMT  
+		Size: 935.1 KB (935089 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4428b4fea9af659d5c209b0fc74a1a13a79b8deaeea0caac4b3b0cc945e37e2d`  
-		Last Modified: Tue, 23 Jul 2024 02:02:01 GMT  
+	-	`sha256:68f51b08bc8ad46876f58658663ac20f12493bd07ad92ddb75dd40dbb79940d1`  
+		Last Modified: Thu, 25 Jul 2024 19:03:42 GMT  
 		Size: 19.9 KB (19938 bytes)  
 		MIME: application/vnd.in-toto+json
