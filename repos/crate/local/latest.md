@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8979ae1df34e7a15e1e0ff2d4eca52f0656fe65c706e3081dfaf0e6768b3d993`
+- Image ID: `sha256:83d02d94a2169e03eb50d192d0607ba87b16ddac5c62d3bf3e5137c8f5ebb858`
 - Created: `2024-07-10T14:21:21Z`
-- Virtual Size: ~ 470.01 Mb  
+- Virtual Size: ~ 434.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -591,15 +591,15 @@ $ dnf --quiet download --source --url krb5-libs-1.21.1-1.el9
 http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/krb5-1.21.1-1.el9.src.rpm
 ```
 
-### `rpm` package: `less-590-3.el9_3.x86_64`
+### `rpm` package: `less-590-4.el9_4.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ or BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url less-590-3.el9_3
-http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/less-590-3.el9_3.src.rpm
+$ dnf --quiet download --source --url less-590-4.el9_4
+http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/less-590-4.el9_4.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.3.1-4.el9.x86_64`
@@ -866,15 +866,15 @@ $ dnf --quiet download --source --url libmount-2.37.4-18.el9
 http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/util-linux-2.37.4-18.el9.src.rpm
 ```
 
-### `rpm` package: `libnghttp2-1.43.0-5.el9_3.1.x86_64`
+### `rpm` package: `libnghttp2-1.43.0-5.el9_4.3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libnghttp2-1.43.0-5.el9_3.1
-http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/nghttp2-1.43.0-5.el9_3.1.src.rpm
+$ dnf --quiet download --source --url libnghttp2-1.43.0-5.el9_4.3
+http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/nghttp2-1.43.0-5.el9_4.3.src.rpm
 ```
 
 ### `rpm` package: `libpwquality-1.4.4-8.el9.x86_64`
