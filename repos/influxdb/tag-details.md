@@ -4409,11 +4409,21 @@ $ docker pull influxdb@sha256:434b30874520707afca8b4fd88bb5d56d18635494cac2ba9a5
 
 ## `influxdb:2.7.8`
 
-**does not exist** (yet?)
+```console
+$ docker pull influxdb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `influxdb:2.7.8-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull influxdb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `influxdb:alpine`
 
