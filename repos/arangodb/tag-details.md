@@ -565,7 +565,12 @@ $ docker pull arangodb@sha256:a5e9a8d2576651b9ac5ff982c557533f1f363a9e7ddb3f3c3d
 
 ## `arangodb:3.12.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull arangodb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `arangodb:latest`
 
