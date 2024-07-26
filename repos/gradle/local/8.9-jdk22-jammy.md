@@ -2,12 +2,12 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a141620b76ce55a042eeff97c5ca10f0c5e22bec7fdd3c93b5642f5f34c7b51e`
+- Image ID: `sha256:8855964173a7a1b5da4541d71c84ed8539a4d5e8c83c5a8517bfd5351f93d25d`
 - Created: `2024-07-12T03:13:38Z`
-- Virtual Size: ~ 740.17 Mb  
+- Virtual Size: ~ 740.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/__cacert_entrypoint.sh"]`
+- Entrypoint: `["/bin/bash","/__cacert_entrypoint.sh"]`
 - Command: `["gradle"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-22.0.1+8`
+  - `JAVA_VERSION=jdk-22.0.2+9`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=8.9`
 - Labels:
@@ -1885,11 +1885,11 @@ $ apt-get source -qq --print-uris nghttp2=1.43.0-1ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.2.debian.tar.xz' nghttp2_1.43.0-1ubuntu0.2.debian.tar.xz 23788 SHA512:ebbbd0c00089e2b48feef151b00b952cfec456662f35d8dd68e886008cdb61bec788c5fa8bbd63614c18a2e06f187bf3112417e759a4f55a9c0db27511aa461a
 ```
 
-### `dpkg` source package: `openldap=2.5.18+dfsg-0ubuntu0.22.04.1`
+### `dpkg` source package: `openldap=2.5.18+dfsg-0ubuntu0.22.04.2`
 
 Binary Packages:
 
-- `libldap-2.5-0:amd64=2.5.18+dfsg-0ubuntu0.22.04.1`
+- `libldap-2.5-0:amd64=2.5.18+dfsg-0ubuntu0.22.04.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1898,10 +1898,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.5.18+dfsg-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg-0ubuntu0.22.04.1.dsc' openldap_2.5.18+dfsg-0ubuntu0.22.04.1.dsc 3319 SHA512:082e2da7d0d1a897e6db4efab72b357280f9b77f2fb97ae499154cf07eff9780aa61fb962f9c1e1468110dc5c976ec025609e265676c807035834a5fc2a328b2
+$ apt-get source -qq --print-uris openldap=2.5.18+dfsg-0ubuntu0.22.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg-0ubuntu0.22.04.2.dsc' openldap_2.5.18+dfsg-0ubuntu0.22.04.2.dsc 3319 SHA512:b487516e28201e7d879487ad9b6dab1eb1d5eb6a241394e5fc518fdbc1e0b29062d15df3b393dd7bf72113c389d482d26c6937a22e40a7d78c7c6f73bc19944c
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg.orig.tar.gz' openldap_2.5.18+dfsg.orig.tar.gz 5623023 SHA512:5f0f71c6711bc8e4b463832d2073d41d92886cdbe3c7a20bca54579c4df30d25de5f388165d975ace600073593502d73a5009ad00f135adc9f1270515fb4ff21
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.18+dfsg-0ubuntu0.22.04.1.debian.tar.xz 172192 SHA512:8b6f18666ab691ef63dd1190401521332b5da1c5016996040bbc4d1b38b13d2a2cdcff29640f8df08c78e50a432d4ed8224a9d9bf0f0e7e94b1b5d600dc38c06
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg-0ubuntu0.22.04.2.debian.tar.xz' openldap_2.5.18+dfsg-0ubuntu0.22.04.2.debian.tar.xz 172632 SHA512:f40e948a37ad373187b6007c033e6cbbd63775b1b424f62f9446a9f35b9b354d0c8a8ae3efe470d63e444af984bb2f28947ebc0521923cb50adc4ea2eba21843
 ```
 
 ### `dpkg` source package: `openssh=1:8.9p1-3ubuntu0.10`

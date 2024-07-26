@@ -2,12 +2,12 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:36fe1571b68743418926fb2792ae4ec25202a7139d4a692a4b625a1f445c6930`
+- Image ID: `sha256:c917b2ea58874afb8a93cdbc14181dfbd48bc6242d95df94e919f81eb677ac45`
 - Created: `2024-01-18T04:04:59Z`
 - Virtual Size: ~ 727.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/__cacert_entrypoint.sh"]`
+- Entrypoint: `["/bin/bash","/__cacert_entrypoint.sh"]`
 - Command: `["gradle"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
