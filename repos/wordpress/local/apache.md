@@ -1,10 +1,10 @@
-# `wordpress:6.6.0-apache`
+# `wordpress:6.6.1-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c199598cbb8d0bcf136f6b0d557efc59a6a3282431d4d76cc778abe31f28fbf5`
-- Created: `2024-07-16T19:06:40Z`
-- Virtual Size: ~ 685.66 Mb  
+- Image ID: `sha256:90d160fe6b42c6fb57910258d783c07ec908ea0109226aca86a9accf0b3d4195`
+- Created: `2024-07-23T19:30:08Z`
+- Virtual Size: ~ 685.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -110,14 +110,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/aom/3.6.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/aom/3.6.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apache2=2.4.59-1~deb12u1`
+### `dpkg` source package: `apache2=2.4.61-1~deb12u1`
 
 Binary Packages:
 
-- `apache2=2.4.59-1~deb12u1`
-- `apache2-bin=2.4.59-1~deb12u1`
-- `apache2-data=2.4.59-1~deb12u1`
-- `apache2-utils=2.4.59-1~deb12u1`
+- `apache2=2.4.61-1~deb12u1`
+- `apache2-bin=2.4.61-1~deb12u1`
+- `apache2-data=2.4.61-1~deb12u1`
+- `apache2-utils=2.4.61-1~deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apache2-bin/copyright`, `/usr/share/doc/apache2-data/copyright`, `/usr/share/doc/apache2-utils/copyright`)
 
@@ -140,18 +140,18 @@ Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apac
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apache2=2.4.59-1~deb12u1
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.59-1%7edeb12u1.dsc' apache2_2.4.59-1~deb12u1.dsc 3520 SHA256:7eb35073c03aac9d25b20ca453dd6627ec5089e7e7acdf292c874d3dd283df35
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.59.orig.tar.gz' apache2_2.4.59.orig.tar.gz 9843252 SHA256:e4ec4ce12c6c8f5a794dc2263d126cb1d6ef667f034c4678ec945d61286e8b0f
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.59.orig.tar.gz.asc' apache2_2.4.59.orig.tar.gz.asc 833 SHA256:0ad3f670b944ebf08c81544bc82fae9496e88d96840cd0612d8cdeaa073eb06d
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.59-1%7edeb12u1.debian.tar.xz' apache2_2.4.59-1~deb12u1.debian.tar.xz 820804 SHA256:89968e0d151fc1db6f826cff0985be8e8fad14516019719fe506e1d1c067ebdd
+$ apt-get source -qq --print-uris apache2=2.4.61-1~deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.61-1%7edeb12u1.dsc' apache2_2.4.61-1~deb12u1.dsc 3520 SHA256:315e801cb100d0d8155391c077e0756b85d64f7ebe260c897936c16c795d0a44
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.61.orig.tar.gz' apache2_2.4.61.orig.tar.gz 9857686 SHA256:ccdc02f78ebf615002dbcab19c8dd9e124b99207b6fed4eecce7562e64c647c9
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.61.orig.tar.gz.asc' apache2_2.4.61.orig.tar.gz.asc 833 SHA256:83a5d3832cc0ffe838efa1fe86dd759d8a7d733c97dd06a5fb820e4642c7fc1e
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.61-1%7edeb12u1.debian.tar.xz' apache2_2.4.61-1~deb12u1.debian.tar.xz 819888 SHA256:4c8228862e77cb29b84633a98cf61d58e9b8b692a67e41a09bcd5f226d5acfe9
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apache2/2.4.59-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/apache2/2.4.59-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apache2/2.4.59-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apache2/2.4.61-1~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/apache2/2.4.61-1~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apache2/2.4.61-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.3-1`
 
@@ -2002,14 +2002,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/keyutils/1.6.3-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/keyutils/1.6.3-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `krb5=1.20.1-2+deb12u1`
+### `dpkg` source package: `krb5=1.20.1-2+deb12u2`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.20.1-2+deb12u1`
-- `libk5crypto3:amd64=1.20.1-2+deb12u1`
-- `libkrb5-3:amd64=1.20.1-2+deb12u1`
-- `libkrb5support0:amd64=1.20.1-2+deb12u1`
+- `libgssapi-krb5-2:amd64=1.20.1-2+deb12u2`
+- `libk5crypto3:amd64=1.20.1-2+deb12u2`
+- `libkrb5-3:amd64=1.20.1-2+deb12u2`
+- `libkrb5support0:amd64=1.20.1-2+deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -2018,18 +2018,18 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.20.1-2+deb12u1
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-2%2bdeb12u1.dsc' krb5_1.20.1-2+deb12u1.dsc 3203 SHA256:ca6cb23a7f082fbd18050b1a5b2b861d6914475a60e6e38e5e735bc35961f25f
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-2%2bdeb12u1.debian.tar.xz' krb5_1.20.1-2+deb12u1.debian.tar.xz 100220 SHA256:26ac804619c7b481ea51ea0966776e502ded73df63428d2298f20e3cec3d084a
+$ apt-get source -qq --print-uris krb5=1.20.1-2+deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1-2%2bdeb12u2.dsc' krb5_1.20.1-2+deb12u2.dsc 3203 SHA256:0ce7a4e69a947c0d21cc5226fe17f85f03b5011e96171aaeba91d3629fcf4dc2
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1-2%2bdeb12u2.debian.tar.xz' krb5_1.20.1-2+deb12u2.debian.tar.xz 105728 SHA256:06caf9ae0b57afd373e4a805820c1ceff519a5029566013a5c307f5439ab8364
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/krb5/1.20.1-2+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.20.1-2+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.20.1-2+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/krb5/1.20.1-2+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.20.1-2+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.20.1-2+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lcms2=2.14-2`
 
@@ -3326,11 +3326,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.94-1`
+### `dpkg` source package: `linux=6.1.99-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.94-1`
+- `linux-libc-dev:amd64=6.1.99-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3345,17 +3345,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.94-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.94-1.dsc' linux_6.1.94-1.dsc 290924 SHA256:bef23558453c8ab51593b72c40be4dc4242cdc417c52cdbd967562c9aa505e57
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.94.orig.tar.xz' linux_6.1.94.orig.tar.xz 137623156 SHA256:dc4bff390c3f55616855c58b3c48fcb7e4e49c32edbce6d8314ff736ea15e54f
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.94-1.debian.tar.xz' linux_6.1.94-1.debian.tar.xz 1642972 SHA256:ca29cb7edbf2fd962afcae6b1d761a73f559b2de152b2b87b537cb21cecd2749
+$ apt-get source -qq --print-uris linux=6.1.99-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.99-1.dsc' linux_6.1.99-1.dsc 290924 SHA256:cb3249558c9c6e98cfb03d4996a6ea3275ab11a1c1a5c94e816303b80287089b
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.99.orig.tar.xz' linux_6.1.99.orig.tar.xz 137645468 SHA256:0ee7aff904270adaaa31cd90f9fb65ced34e8d0ea21400ffa8af9fe45be50f30
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.99-1.debian.tar.xz' linux_6.1.99-1.debian.tar.xz 1650024 SHA256:3afd223fff86c09324c0c9d22fad8d1ea7d3264627d4490fec6570faafb1a014
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.94-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.94-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.94-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.99-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.99-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.99-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lua5.3=5.3.6-2`
 
