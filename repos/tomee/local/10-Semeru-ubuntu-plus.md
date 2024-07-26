@@ -1,10 +1,10 @@
-# `tomee:10.0.0-M1-jre11-Semeru-ubuntu-plus`
+# `tomee:10.0.0-M2-jre17-Semeru-ubuntu-plus`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7d8e72c1380db0f573365584605f0b424341ecb98fa9bf42493f35f7d4113fcf`
-- Created: `2024-04-16T02:54:00Z`
-- Virtual Size: ~ 370.61 Mb  
+- Image ID: `sha256:82fe2b11dfa18399123f84677ecafa54735ddaa8f4a3dfe2b6a58240d35b01f8`
+- Created: `2024-07-23T18:18:20Z`
+- Virtual Size: ~ 374.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -13,10 +13,10 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.23+9_openj9-0.44.0`
+  - `JAVA_VERSION=jdk-17.0.11+9_openj9-0.44.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
-  - `TOMEE_VER=10.0.0-M1`
+  - `TOMEE_VER=10.0.0-M2`
   - `TOMEE_BUILD=plus`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -1536,14 +1536,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.5.18+dfsg-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg-0ubuntu0.22.04.1.dsc' openldap_2.5.18+dfsg-0ubuntu0.22.04.1.dsc 3319 SHA512:082e2da7d0d1a897e6db4efab72b357280f9b77f2fb97ae499154cf07eff9780aa61fb962f9c1e1468110dc5c976ec025609e265676c807035834a5fc2a328b2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg.orig.tar.gz' openldap_2.5.18+dfsg.orig.tar.gz 5623023 SHA512:5f0f71c6711bc8e4b463832d2073d41d92886cdbe3c7a20bca54579c4df30d25de5f388165d975ace600073593502d73a5009ad00f135adc9f1270515fb4ff21
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.18+dfsg-0ubuntu0.22.04.1.debian.tar.xz 172192 SHA512:8b6f18666ab691ef63dd1190401521332b5da1c5016996040bbc4d1b38b13d2a2cdcff29640f8df08c78e50a432d4ed8224a9d9bf0f0e7e94b1b5d600dc38c06
-```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.16`
 

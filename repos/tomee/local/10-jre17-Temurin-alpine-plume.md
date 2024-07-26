@@ -1,10 +1,10 @@
-# `tomee:10.0.0-M1-jre17-Temurin-alpine-plume`
+# `tomee:10.0.0-M2-jre17-Temurin-alpine-plume`
 
 ## Docker Metadata
 
-- Image ID: `sha256:822b86779eb38f468397a60ddb2f97bd4af03baa0f487026644425787c7d58b0`
-- Created: `2024-04-16T02:54:00Z`
-- Virtual Size: ~ 271.55 Mb  
+- Image ID: `sha256:b5401ee8bbd71ebd2b6deb1c88604836572fda1bcdc06d248910cf14b943c66a`
+- Created: `2024-07-23T18:18:20Z`
+- Virtual Size: ~ 275.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.12+7`
-  - `TOMEE_VER=10.0.0-M1`
+  - `TOMEE_VER=10.0.0-M2`
   - `TOMEE_BUILD=plume`
 
 ## `apk` (`.apk`-based packages)
@@ -191,19 +191,87 @@ MPL-2.0 AND MIT
 
 ```
 
+### `apk` package: `coreutils`
+
+```console
+coreutils-9.5-r1 description:
+The basic file, shell and text manipulation utilities
+
+coreutils-9.5-r1 webpage:
+https://www.gnu.org/software/coreutils/
+
+coreutils-9.5-r1 installed size:
+1036 KiB
+
+coreutils-9.5-r1 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `coreutils-env`
+
+```console
+coreutils-env-9.5-r1 description:
+The basic file, shell and text manipulation utilities
+
+coreutils-env-9.5-r1 webpage:
+https://www.gnu.org/software/coreutils/
+
+coreutils-env-9.5-r1 installed size:
+60 KiB
+
+coreutils-env-9.5-r1 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `coreutils-fmt`
+
+```console
+coreutils-fmt-9.5-r1 description:
+The basic file, shell and text manipulation utilities
+
+coreutils-fmt-9.5-r1 webpage:
+https://www.gnu.org/software/coreutils/
+
+coreutils-fmt-9.5-r1 installed size:
+56 KiB
+
+coreutils-fmt-9.5-r1 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `coreutils-sha512sum`
+
+```console
+coreutils-sha512sum-9.5-r1 description:
+The basic file, shell and text manipulation utilities
+
+coreutils-sha512sum-9.5-r1 webpage:
+https://www.gnu.org/software/coreutils/
+
+coreutils-sha512sum-9.5-r1 installed size:
+60 KiB
+
+coreutils-sha512sum-9.5-r1 license:
+GPL-3.0-or-later
+
+```
+
 ### `apk` package: `curl`
 
 ```console
-curl-8.8.0-r0 description:
+curl-8.9.0-r0 description:
 URL retrival utility and library
 
-curl-8.8.0-r0 webpage:
+curl-8.9.0-r0 webpage:
 https://curl.se/
 
-curl-8.8.0-r0 installed size:
-244 KiB
+curl-8.9.0-r0 installed size:
+248 KiB
 
-curl-8.8.0-r0 license:
+curl-8.9.0-r0 license:
 curl
 
 ```
@@ -412,6 +480,23 @@ GPL-3.0-or-later
 
 ```
 
+### `apk` package: `libacl`
+
+```console
+libacl-2.3.2-r0 description:
+Dynamic library for access control list support
+
+libacl-2.3.2-r0 webpage:
+https://savannah.nongnu.org/projects/acl
+
+libacl-2.3.2-r0 installed size:
+44 KiB
+
+libacl-2.3.2-r0 license:
+LGPL-2.1-or-later AND GPL-2.0-or-later
+
+```
+
 ### `apk` package: `libassuan`
 
 ```console
@@ -425,6 +510,23 @@ libassuan-2.5.7-r0 installed size:
 80 KiB
 
 libassuan-2.5.7-r0 license:
+LGPL-2.1-or-later
+
+```
+
+### `apk` package: `libattr`
+
+```console
+libattr-2.5.2-r0 description:
+utilities for managing filesystem extended attributes (libraries)
+
+libattr-2.5.2-r0 webpage:
+https://savannah.nongnu.org/projects/attr
+
+libattr-2.5.2-r0 installed size:
+32 KiB
+
+libattr-2.5.2-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -466,16 +568,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.8.0-r0 description:
+libcurl-8.9.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.8.0-r0 webpage:
+libcurl-8.9.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.8.0-r0 installed size:
-620 KiB
+libcurl-8.9.0-r0 installed size:
+628 KiB
 
-libcurl-8.8.0-r0 license:
+libcurl-8.9.0-r0 license:
 curl
 
 ```
@@ -905,6 +1007,23 @@ LGPL-2.0-or-later
 
 ```
 
+### `apk` package: `openssl`
+
+```console
+openssl-3.3.1-r3 description:
+Toolkit for Transport Layer Security (TLS)
+
+openssl-3.3.1-r3 webpage:
+https://www.openssl.org/
+
+openssl-3.3.1-r3 installed size:
+784 KiB
+
+openssl-3.3.1-r3 license:
+Apache-2.0
+
+```
+
 ### `apk` package: `p11-kit`
 
 ```console
@@ -973,6 +1092,23 @@ GPL-2.0-only
 
 ```
 
+### `apk` package: `skalibs`
+
+```console
+skalibs-2.14.1.1-r0 description:
+Set of general-purpose C programming libraries for skarnet.org software.
+
+skalibs-2.14.1.1-r0 webpage:
+https://skarnet.org/software/skalibs/
+
+skalibs-2.14.1.1-r0 installed size:
+192 KiB
+
+skalibs-2.14.1.1-r0 license:
+ISC
+
+```
+
 ### `apk` package: `sqlite-libs`
 
 ```console
@@ -1021,6 +1157,23 @@ tzdata-2024a-r1 installed size:
 
 tzdata-2024a-r1 license:
 Public-Domain
+
+```
+
+### `apk` package: `utmps-libs`
+
+```console
+utmps-libs-0.1.2.2-r1 description:
+A secure utmp/wtmp implementation (libraries)
+
+utmps-libs-0.1.2.2-r1 webpage:
+https://skarnet.org/software/utmps/
+
+utmps-libs-0.1.2.2-r1 installed size:
+24 KiB
+
+utmps-libs-0.1.2.2-r1 license:
+ISC
 
 ```
 
