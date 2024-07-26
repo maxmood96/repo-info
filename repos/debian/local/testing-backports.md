@@ -491,19 +491,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.22.7
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.7.dsc' dpkg_1.22.7.dsc 3140 SHA256:352013c812f04aa95a30e75d993a38b260ee23753e9f1419c7137f9b1680df76
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.7.tar.xz' dpkg_1.22.7.tar.xz 5690388 SHA256:2ca0c8e13be4bc14621245bb89438adaba61d3e517a9da17fa15a7e90c98826c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dpkg/1.22.7/
 
-- https://sources.debian.net/src/dpkg/1.22.7/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.22.7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.22.7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.47.1-1`
 
