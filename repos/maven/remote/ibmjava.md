@@ -1,7 +1,7 @@
 ## `maven:ibmjava`
 
 ```console
-$ docker pull maven@sha256:6270c7ed09ebb8d17bf5b77f9fca6a0ff17831bc431a122e13d63f4d5e263350
+$ docker pull maven@sha256:a2cd44cb175c220ce2eda89757b180fdb7090d44a8db17cb3249d8164c3daa44
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -244,24 +244,24 @@ CMD ["mvn"]
 ### `maven:ibmjava` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:d00012e745c3c719c19ee06ca3235cb650607b228822252845bce0170ecb5e3d
+$ docker pull maven@sha256:5e3d73f057d67718c9519fcc95b87a389e74642972ab5bbbf787b6e196b78ef7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.2 MB (2229589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da4bbe60e3747e9be6fee831939bdefbef9576a845fcafd4de931eaad258e008`
+-	Image ID: `sha256:9024e6c5f823deca0329240e840e8599f92a58a73816b6815e8b06c2c80a6548`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d2bbc9fcdb727d436c0a82159611752d705d5c840f4ea3268881af8886de3ee4`  
-		Last Modified: Thu, 25 Jul 2024 04:13:56 GMT  
+	-	`sha256:1e05846e19aafab4c7114b56a47e33a274587565116691e64b7f1d512cdd83b5`  
+		Last Modified: Thu, 25 Jul 2024 23:45:41 GMT  
 		Size: 2.2 MB (2210746 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ca6907070617c3f53e167483870a4a8838c6709ba441ff6d6922777e070ae7e3`  
-		Last Modified: Thu, 25 Jul 2024 04:13:56 GMT  
+	-	`sha256:11e4fee10e53c7f2d5aa4ccc32e0732a20886b9ea1813e0da975d1ce15f81bcf`  
+		Last Modified: Thu, 25 Jul 2024 23:45:41 GMT  
 		Size: 18.8 KB (18843 bytes)  
 		MIME: application/vnd.in-toto+json
 
