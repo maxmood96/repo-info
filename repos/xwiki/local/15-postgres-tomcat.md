@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:120a6eec7f6dff8554fe00a00015cd3b1b8b5ba6ccf8bc1634a007a059d2b2f7`
+- Image ID: `sha256:cfac222361d4b7d32efd3ee8057edd2330ad23f7b62f08b534274008f733189a`
 - Created: `2024-06-27T13:08:28Z`
 - Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
@@ -3373,11 +3373,11 @@ $ apt-get source -qq --print-uris pixman=0.40.0-1ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.40.0-1ubuntu0.22.04.1.diff.gz' pixman_0.40.0-1ubuntu0.22.04.1.diff.gz 327740 SHA512:68949ad2589a7ae9fbe217a3d7fc58894d5a1b4bc6e219840b8620141fa2240b44e6a393bf847bfd18f5fcab2c6c6f143273936b076c29e1f979052b1275cb8e
 ```
 
-### `dpkg` source package: `poppler=22.02.0-2ubuntu0.4`
+### `dpkg` source package: `poppler=22.02.0-2ubuntu0.5`
 
 Binary Packages:
 
-- `libpoppler118:amd64=22.02.0-2ubuntu0.4`
+- `libpoppler118:amd64=22.02.0-2ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler118/copyright`)
 
@@ -3388,10 +3388,10 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler118/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.4.dsc' poppler_22.02.0-2ubuntu0.4.dsc 3393 SHA512:c9f03d294ea673ac41dc990c1ee674b1778c5ce13ac2391cdb861de8bcbef7286a9df60cfbd3e8fad090a9fc2626a3696fbe70ef408b5d5fb484f6f8c7746bd2
+$ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.5.dsc' poppler_22.02.0-2ubuntu0.5.dsc 3360 SHA512:58c517ea6e50a4f6db87ffdc4dd862b8657e8f0e7bd518363de0d52305194d0761cba6f8ca20c59fe42b8a093fcffca08b5e115e86608dc935f82551eedc65ac
 'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.4.debian.tar.xz' poppler_22.02.0-2ubuntu0.4.debian.tar.xz 42228 SHA512:8d9aa85ff7355b198c37e9a8cadd51303ef8596e3bc5509b153807a6fdbb64d60230083e162f4b0a1cec34ef7497c572447b7f7289f0de98d1c3b13238edff70
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.5.debian.tar.xz' poppler_22.02.0-2ubuntu0.5.debian.tar.xz 43104 SHA512:22ccbd0100963856a716d32cf8830fc2e5f77f935e88a6c38e800430e857bbdc1e6c5c877ec16f77aca43445d2af237bfd7d50f155fc6e23ebe62ad906254c03
 ```
 
 ### `dpkg` source package: `procps=2:3.3.17-6ubuntu2.1`
