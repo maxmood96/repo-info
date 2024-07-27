@@ -1760,14 +1760,9 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.3ubuntu0.22.04.3.dsc' imagemagick_6.9.11.60+dfsg-1.3ubuntu0.22.04.3.dsc 5246 SHA512:2a94d731b33ed00918b9e76d21c460340b4fdb2efa06891801e79c32ce04c35f3bdfc1afb268c1cf31a26b2eeda100a50ba5b29bdb0bdab35476bc15d7377cb3
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA512:345a23eda96516fc7a213bd4a322bca4c8b690efe40ff7b498a448f8cedd7f0d600fae2cb6fff45bc995779a90d8c04b58288273eee97833ddebb4f9f2a3d14c
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.3ubuntu0.22.04.3.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.3ubuntu0.22.04.3.debian.tar.xz 248200 SHA512:b24ad1f31df77b76b786779ea2e6fc08516a3be65b62aabeea6f7fe700abae4ab1e76cc7d4f1293e479fb3b6eaad4b114e5656650de326b400a9624c8a71ecf3
-```
 
 ### `dpkg` source package: `init-system-helpers=1.62`
 
@@ -5654,14 +5649,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler118/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.4.dsc' poppler_22.02.0-2ubuntu0.4.dsc 3393 SHA512:c9f03d294ea673ac41dc990c1ee674b1778c5ce13ac2391cdb861de8bcbef7286a9df60cfbd3e8fad090a9fc2626a3696fbe70ef408b5d5fb484f6f8c7746bd2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.4.debian.tar.xz' poppler_22.02.0-2ubuntu0.4.debian.tar.xz 42228 SHA512:8d9aa85ff7355b198c37e9a8cadd51303ef8596e3bc5509b153807a6fdbb64d60230083e162f4b0a1cec34ef7497c572447b7f7289f0de98d1c3b13238edff70
-```
 
 ### `dpkg` source package: `procps=2:3.3.17-6ubuntu2.1`
 
