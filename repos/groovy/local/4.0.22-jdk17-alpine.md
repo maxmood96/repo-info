@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b7f0049811a315af1e07e45d7097db51170579eb6e01baedf04651a9a3d647c8`
+- Image ID: `sha256:4154b5c0a557fbf6d1103a2c490e32e546a31a6ab54eb7c77fa3422cef1c91c6`
 - Created: `2024-06-30T17:46:17Z`
-- Virtual Size: ~ 349.01 Mb  
+- Virtual Size: ~ 351.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -191,6 +191,74 @@ MPL-2.0 AND MIT
 
 ```
 
+### `apk` package: `coreutils`
+
+```console
+coreutils-9.5-r1 description:
+The basic file, shell and text manipulation utilities
+
+coreutils-9.5-r1 webpage:
+https://www.gnu.org/software/coreutils/
+
+coreutils-9.5-r1 installed size:
+1036 KiB
+
+coreutils-9.5-r1 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `coreutils-env`
+
+```console
+coreutils-env-9.5-r1 description:
+The basic file, shell and text manipulation utilities
+
+coreutils-env-9.5-r1 webpage:
+https://www.gnu.org/software/coreutils/
+
+coreutils-env-9.5-r1 installed size:
+60 KiB
+
+coreutils-env-9.5-r1 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `coreutils-fmt`
+
+```console
+coreutils-fmt-9.5-r1 description:
+The basic file, shell and text manipulation utilities
+
+coreutils-fmt-9.5-r1 webpage:
+https://www.gnu.org/software/coreutils/
+
+coreutils-fmt-9.5-r1 installed size:
+56 KiB
+
+coreutils-fmt-9.5-r1 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `coreutils-sha512sum`
+
+```console
+coreutils-sha512sum-9.5-r1 description:
+The basic file, shell and text manipulation utilities
+
+coreutils-sha512sum-9.5-r1 webpage:
+https://www.gnu.org/software/coreutils/
+
+coreutils-sha512sum-9.5-r1 installed size:
+60 KiB
+
+coreutils-sha512sum-9.5-r1 license:
+GPL-3.0-or-later
+
+```
+
 ### `apk` package: `encodings`
 
 ```console
@@ -273,6 +341,40 @@ jansson-2.14-r4 installed size:
 
 jansson-2.14-r4 license:
 MIT
+
+```
+
+### `apk` package: `libacl`
+
+```console
+libacl-2.3.2-r0 description:
+Dynamic library for access control list support
+
+libacl-2.3.2-r0 webpage:
+https://savannah.nongnu.org/projects/acl
+
+libacl-2.3.2-r0 installed size:
+44 KiB
+
+libacl-2.3.2-r0 license:
+LGPL-2.1-or-later AND GPL-2.0-or-later
+
+```
+
+### `apk` package: `libattr`
+
+```console
+libattr-2.5.2-r0 description:
+utilities for managing filesystem extended attributes (libraries)
+
+libattr-2.5.2-r0 webpage:
+https://savannah.nongnu.org/projects/attr
+
+libattr-2.5.2-r0 installed size:
+32 KiB
+
+libattr-2.5.2-r0 license:
+LGPL-2.1-or-later
 
 ```
 
@@ -548,6 +650,23 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
 
+### `apk` package: `openssl`
+
+```console
+openssl-3.3.1-r3 description:
+Toolkit for Transport Layer Security (TLS)
+
+openssl-3.3.1-r3 webpage:
+https://www.openssl.org/
+
+openssl-3.3.1-r3 installed size:
+784 KiB
+
+openssl-3.3.1-r3 license:
+Apache-2.0
+
+```
+
 ### `apk` package: `p11-kit`
 
 ```console
@@ -599,6 +718,23 @@ GPL-2.0-only
 
 ```
 
+### `apk` package: `skalibs`
+
+```console
+skalibs-2.14.1.1-r0 description:
+Set of general-purpose C programming libraries for skarnet.org software.
+
+skalibs-2.14.1.1-r0 webpage:
+https://skarnet.org/software/skalibs/
+
+skalibs-2.14.1.1-r0 installed size:
+192 KiB
+
+skalibs-2.14.1.1-r0 license:
+ISC
+
+```
+
 ### `apk` package: `ssl_client`
 
 ```console
@@ -630,6 +766,23 @@ tzdata-2024a-r1 installed size:
 
 tzdata-2024a-r1 license:
 Public-Domain
+
+```
+
+### `apk` package: `utmps-libs`
+
+```console
+utmps-libs-0.1.2.2-r1 description:
+A secure utmp/wtmp implementation (libraries)
+
+utmps-libs-0.1.2.2-r1 webpage:
+https://skarnet.org/software/utmps/
+
+utmps-libs-0.1.2.2-r1 installed size:
+24 KiB
+
+utmps-libs-0.1.2.2-r1 license:
+ISC
 
 ```
 
