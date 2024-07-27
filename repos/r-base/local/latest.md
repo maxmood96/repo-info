@@ -639,9 +639,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris dpkg=1.22.8
-'http://http.debian.net/debian/pool/main/d/dpkg/dpkg_1.22.8.dsc' dpkg_1.22.8.dsc 3140 SHA256:d6c8cff847bde4116243df7c783960c63b3ad0bd4f0df7def5efc80a5d4738f6
-'http://http.debian.net/debian/pool/main/d/dpkg/dpkg_1.22.8.tar.xz' dpkg_1.22.8.tar.xz 5690908 SHA256:b3c0631999d7b531b9c626d51829020c803f32fc60a490c8d42c904601914fbf
+'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.8.dsc' dpkg_1.22.8.dsc 3140 SHA256:d6c8cff847bde4116243df7c783960c63b3ad0bd4f0df7def5efc80a5d4738f6
+'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.8.tar.xz' dpkg_1.22.8.tar.xz 5690908 SHA256:b3c0631999d7b531b9c626d51829020c803f32fc60a490c8d42c904601914fbf
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/dpkg/1.22.8/ (for browsing the source)
+- https://sources.debian.net/src/dpkg/1.22.8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dpkg/1.22.8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.47.1-1`
 
@@ -862,10 +868,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris fribidi=1.0.13-3
-'http://http.debian.net/debian/pool/main/f/fribidi/fribidi_1.0.13-3.dsc' fribidi_1.0.13-3.dsc 2007 SHA256:05a44442861c66fa72d7764ff4c4ad4cf46114eb7fb53268b8c46bc3e3fa06b9
-'http://http.debian.net/debian/pool/main/f/fribidi/fribidi_1.0.13.orig.tar.xz' fribidi_1.0.13.orig.tar.xz 1170100 SHA256:7fa16c80c81bd622f7b198d31356da139cc318a63fc7761217af4130903f54a2
-'http://http.debian.net/debian/pool/main/f/fribidi/fribidi_1.0.13-3.debian.tar.xz' fribidi_1.0.13-3.debian.tar.xz 8848 SHA256:6e1e94396207a0acfbaa4dcbbb06ccc110fd9f285fd39ca313b5a8a3da9936fa
+'http://deb.debian.org/debian/pool/main/f/fribidi/fribidi_1.0.13-3.dsc' fribidi_1.0.13-3.dsc 2007 SHA256:05a44442861c66fa72d7764ff4c4ad4cf46114eb7fb53268b8c46bc3e3fa06b9
+'http://deb.debian.org/debian/pool/main/f/fribidi/fribidi_1.0.13.orig.tar.xz' fribidi_1.0.13.orig.tar.xz 1170100 SHA256:7fa16c80c81bd622f7b198d31356da139cc318a63fc7761217af4130903f54a2
+'http://deb.debian.org/debian/pool/main/f/fribidi/fribidi_1.0.13-3.debian.tar.xz' fribidi_1.0.13-3.debian.tar.xz 8848 SHA256:6e1e94396207a0acfbaa4dcbbb06ccc110fd9f285fd39ca313b5a8a3da9936fa
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/fribidi/1.0.13-3/ (for browsing the source)
+- https://sources.debian.net/src/fribidi/1.0.13-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/fribidi/1.0.13-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-13=13.3.0-3`
 
@@ -1054,14 +1066,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.39-5
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.39-5.dsc' glibc_2.39-5.dsc 7550 SHA256:a4457c0ee747e243d3c303dfa6c3b2319dee158661f53008914ba1fd5efcaf26
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.39.orig.tar.xz' glibc_2.39.orig.tar.xz 19076836 SHA256:207e5c93a158e5b45a2b42530660fe7717d4b45e00f96e58496389c2ef868157
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.39-5.debian.tar.xz' glibc_2.39-5.debian.tar.xz 451712 SHA256:16fa415e66f58f0a39798993c731362c895aeee791f237d6193dd02f37dbb7ab
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glibc/2.39-5/
+
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2`
 
@@ -2014,11 +2025,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libssh2=1.11.0-5
-'http://http.debian.net/debian/pool/main/libs/libssh2/libssh2_1.11.0-5.dsc' libssh2_1.11.0-5.dsc 2328 SHA256:388bb9edb0ea7b485f0c0da69728d9245d0b5727c2ffbd4a87397f95f50507da
-'http://http.debian.net/debian/pool/main/libs/libssh2/libssh2_1.11.0.orig.tar.gz' libssh2_1.11.0.orig.tar.gz 1053562 SHA256:3736161e41e2693324deb38c26cfdc3efe6209d634ba4258db1cecff6a5ad461
-'http://http.debian.net/debian/pool/main/libs/libssh2/libssh2_1.11.0.orig.tar.gz.asc' libssh2_1.11.0.orig.tar.gz.asc 488 SHA256:b6a32c85a3f9b6f30f2b3595ba034b48a8508ee9c94708ef811f58fd7adfcdee
-'http://http.debian.net/debian/pool/main/libs/libssh2/libssh2_1.11.0-5.debian.tar.xz' libssh2_1.11.0-5.debian.tar.xz 14488 SHA256:e80f042dd8348f70615ca7fee5ccbed9a095fe4880faec5f0888668b5f0b7517
+'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.0-5.dsc' libssh2_1.11.0-5.dsc 2328 SHA256:388bb9edb0ea7b485f0c0da69728d9245d0b5727c2ffbd4a87397f95f50507da
+'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.0.orig.tar.gz' libssh2_1.11.0.orig.tar.gz 1053562 SHA256:3736161e41e2693324deb38c26cfdc3efe6209d634ba4258db1cecff6a5ad461
+'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.0.orig.tar.gz.asc' libssh2_1.11.0.orig.tar.gz.asc 488 SHA256:b6a32c85a3f9b6f30f2b3595ba034b48a8508ee9c94708ef811f58fd7adfcdee
+'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.0-5.debian.tar.xz' libssh2_1.11.0-5.debian.tar.xz 14488 SHA256:e80f042dd8348f70615ca7fee5ccbed9a095fe4880faec5f0888668b5f0b7517
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libssh2/1.11.0-5/ (for browsing the source)
+- https://sources.debian.net/src/libssh2/1.11.0-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libssh2/1.11.0-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.19.0-3`
 
@@ -3326,10 +3343,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=256.2-1
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_256.2-1.dsc' systemd_256.2-1.dsc 8094 SHA256:d87947d5a0dbdd931d2f4b2e85524c948bdf65605428554c6b1770c5634fef21
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_256.2.orig.tar.gz' systemd_256.2.orig.tar.gz 15648609 SHA256:81ed336d36e48b1f31b876540f437755f33c7c389ba6e8efb8d3512129f0096d
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_256.2-1.debian.tar.xz' systemd_256.2-1.debian.tar.xz 170896 SHA256:96fa89e483c062f8ed506ac5f032066dd92edf66c3219f1ba72699bd4c6e92d9
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.2-1.dsc' systemd_256.2-1.dsc 8094 SHA256:d87947d5a0dbdd931d2f4b2e85524c948bdf65605428554c6b1770c5634fef21
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.2.orig.tar.gz' systemd_256.2.orig.tar.gz 15648609 SHA256:81ed336d36e48b1f31b876540f437755f33c7c389ba6e8efb8d3512129f0096d
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.2-1.debian.tar.xz' systemd_256.2-1.debian.tar.xz 170896 SHA256:96fa89e483c062f8ed506ac5f032066dd92edf66c3219f1ba72699bd4c6e92d9
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/systemd/256.2-1/ (for browsing the source)
+- https://sources.debian.net/src/systemd/256.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/256.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.09-2`
 
@@ -3789,10 +3812,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris zip=3.0-13
-'http://http.debian.net/debian/pool/main/z/zip/zip_3.0-13.dsc' zip_3.0-13.dsc 1336 SHA256:9fad1b5bda0c38a6811494159953a19dc42b9022b29b73ba51f30d2bb48445e6
-'http://http.debian.net/debian/pool/main/z/zip/zip_3.0.orig.tar.gz' zip_3.0.orig.tar.gz 1118845 SHA256:f0e8bb1f9b7eb0b01285495a2699df3a4b766784c1765a8f1aeedf63c0806369
-'http://http.debian.net/debian/pool/main/z/zip/zip_3.0-13.debian.tar.xz' zip_3.0-13.debian.tar.xz 8688 SHA256:4f5aca2d9f6021d2fd73f2fc16e9a392ab98673a940b44cf78fe38b8cdec1ab9
+'http://deb.debian.org/debian/pool/main/z/zip/zip_3.0-13.dsc' zip_3.0-13.dsc 1336 SHA256:9fad1b5bda0c38a6811494159953a19dc42b9022b29b73ba51f30d2bb48445e6
+'http://deb.debian.org/debian/pool/main/z/zip/zip_3.0.orig.tar.gz' zip_3.0.orig.tar.gz 1118845 SHA256:f0e8bb1f9b7eb0b01285495a2699df3a4b766784c1765a8f1aeedf63c0806369
+'http://deb.debian.org/debian/pool/main/z/zip/zip_3.0-13.debian.tar.xz' zip_3.0-13.debian.tar.xz 8688 SHA256:4f5aca2d9f6021d2fd73f2fc16e9a392ab98673a940b44cf78fe38b8cdec1ab9
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/zip/3.0-13/ (for browsing the source)
+- https://sources.debian.net/src/zip/3.0-13/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/zip/3.0-13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.1-1`
 
