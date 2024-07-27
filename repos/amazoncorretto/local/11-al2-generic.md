@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d617b4228b417d0b1cf68191cac47678228e137edbbc969fd1a1b6aba4fd405e`
+- Image ID: `sha256:502963265d97d9f69ca8dc5dc6ed30e15703d66b6dafc170ff6bd71608b7af49`
 - Created: `2024-07-16T22:56:42Z`
 - Virtual Size: ~ 450.36 Mb  
   (total size of all layers on-disk)
@@ -407,15 +407,15 @@ $ dnf --quiet download --source --url keyutils-libs-1.5.8-3.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f0459b3295cdf51899bdde8773f452fd32f9418e4558eb4104437e335c4a9bd4/../../../../../blobstore/1579dc52bd90d64e68d663da4dfa4462afa9df1cfbef30d47b64add0dd12210e/keyutils-1.5.8-3.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.15.1-55.amzn2.2.7.x86_64`
+### `rpm` package: `krb5-libs-1.15.1-55.amzn2.2.8.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.15.1-55.amzn2.2.7
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f0459b3295cdf51899bdde8773f452fd32f9418e4558eb4104437e335c4a9bd4/../../../../../blobstore/f22f689fbeaad4f6b37274704da0803edf79e2a77c4d381389fe16bfb9af8ed6/krb5-1.15.1-55.amzn2.2.7.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.15.1-55.amzn2.2.8
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f0459b3295cdf51899bdde8773f452fd32f9418e4558eb4104437e335c4a9bd4/../../../../../blobstore/1b2848f3a8c5ec186828477807bbd118989420cd7329f560e749c340c26350e0/krb5-1.15.1-55.amzn2.2.8.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.2.51-14.amzn2.x86_64`
