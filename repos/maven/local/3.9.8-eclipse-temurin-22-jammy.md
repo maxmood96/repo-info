@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2756a5c2a23c643c7660346ad49d0dca1fb6091fd6e979545b7b2cb202e76d49`
+- Image ID: `sha256:75fe476523c3558558b36c7b3f1006dd9025bece4a19808ea4e780be7f1c7c1e`
 - Created: `2024-06-27T09:17:07Z`
-- Virtual Size: ~ 504.34 Mb  
+- Virtual Size: ~ 504.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-22.0.1+8`
+  - `JAVA_VERSION=jdk-22.0.2+9`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 - Labels:
@@ -1564,19 +1564,24 @@ $ apt-get source -qq --print-uris nghttp2=1.43.0-1ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.2.debian.tar.xz' nghttp2_1.43.0-1ubuntu0.2.debian.tar.xz 23788 SHA512:ebbbd0c00089e2b48feef151b00b952cfec456662f35d8dd68e886008cdb61bec788c5fa8bbd63614c18a2e06f187bf3112417e759a4f55a9c0db27511aa461a
 ```
 
-### `dpkg` source package: `openldap=2.5.17+dfsg-0ubuntu0.22.04.1`
+### `dpkg` source package: `openldap=2.5.18+dfsg-0ubuntu0.22.04.2`
 
 Binary Packages:
 
-- `libldap-2.5-0:amd64=2.5.17+dfsg-0ubuntu0.22.04.1`
+- `libldap-2.5-0:amd64=2.5.18+dfsg-0ubuntu0.22.04.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.5.18+dfsg-0ubuntu0.22.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg-0ubuntu0.22.04.2.dsc' openldap_2.5.18+dfsg-0ubuntu0.22.04.2.dsc 3319 SHA512:b487516e28201e7d879487ad9b6dab1eb1d5eb6a241394e5fc518fdbc1e0b29062d15df3b393dd7bf72113c389d482d26c6937a22e40a7d78c7c6f73bc19944c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg.orig.tar.gz' openldap_2.5.18+dfsg.orig.tar.gz 5623023 SHA512:5f0f71c6711bc8e4b463832d2073d41d92886cdbe3c7a20bca54579c4df30d25de5f388165d975ace600073593502d73a5009ad00f135adc9f1270515fb4ff21
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg-0ubuntu0.22.04.2.debian.tar.xz' openldap_2.5.18+dfsg-0ubuntu0.22.04.2.debian.tar.xz 172632 SHA512:f40e948a37ad373187b6007c033e6cbbd63775b1b424f62f9446a9f35b9b354d0c8a8ae3efe470d63e444af984bb2f28947ebc0521923cb50adc4ea2eba21843
+```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.16`
 
