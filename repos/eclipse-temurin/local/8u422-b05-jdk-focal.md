@@ -1,20 +1,20 @@
-# `eclipse-temurin:8u412-b08-jdk-focal`
+# `eclipse-temurin:8u422-b05-jdk-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8c62009debaa20310939e86f406793101047105767838994dbfac0d9f196fc32`
-- Created: `2024-04-23T20:51:38Z`
-- Virtual Size: ~ 323.11 Mb  
+- Image ID: `sha256:216fc9d0a578f70de50c1ad6f51f8ba628e9d08bf5b68893abc4c6be9df0d16a`
+- Created: `2024-07-24T22:19:06Z`
+- Virtual Size: ~ 323.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/__cacert_entrypoint.sh"]`
+- Entrypoint: `["/bin/bash","/__cacert_entrypoint.sh"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u412-b08`
+  - `JAVA_VERSION=jdk8u422-b05`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`
