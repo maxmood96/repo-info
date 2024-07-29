@@ -2,12 +2,12 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:29b883425e2fb6db563f2ec2f2e38d2e6a99c757fa2da8ffa1615ef27f474f58`
+- Image ID: `sha256:b10403468445f28006145190c2ea4a78d687124b903e3c155eb92ac41624cc7e`
 - Created: `2024-07-02T17:37:28Z`
-- Virtual Size: ~ 303.68 Mb  
+- Virtual Size: ~ 303.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/__cacert_entrypoint.sh"]`
+- Entrypoint: `["/bin/bash","/__cacert_entrypoint.sh"]`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u412-b08`
+  - `JAVA_VERSION=jdk8u422-b05`
   - `JRUBY_VERSION=9.4.8.0`
   - `JRUBY_SHA256=347b6692bd9c91c480a45af25ce88d77be8b6e4ac4a77bc94870f2c5b54bc929`
   - `GEM_HOME=/usr/local/bundle`
@@ -1239,19 +1239,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4%2bdfsg-3ubuntu0.1.debian.tar.xz' libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz 17300 SHA512:0484891be5603d00bd57b799c708b9395fccbaa8c6c44f535377f6fa2c7ac22c01c8a3c1b45e1c1f3c30f19dc74d510626bf82067fcbfb53c39f1bcc2249affe
 ```
 
-### `dpkg` source package: `linux=5.4.0-187.207`
+### `dpkg` source package: `linux=5.4.0-190.210`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.4.0-187.207`
+- `linux-libc-dev:amd64=5.4.0-190.210`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.4.0-190.210
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-190.210.dsc' linux_5.4.0-190.210.dsc 7418 SHA512:bd1a00024ccb6f01921eaa674db665776bae9c1fc4899a177897bd7f9cb743a0795f886f30b3c531b2494778979e7496566c77581be7c02f7c79ab22a5872d6e
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-190.210.diff.gz' linux_5.4.0-190.210.diff.gz 9524671 SHA512:ba72c0defae87aef4244d5eb50aa093452184c16a914be15e73874d59a654c85bf8bca82de14fbce4ddbadd45d4a32f711ed158f101f6ae4e383e786c8afdef0
+```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 
