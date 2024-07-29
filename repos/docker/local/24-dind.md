@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:78d76abe9c48241f5d358813d3f43472e76eb7cf7f6c66f5f8687096be57c663`
+- Image ID: `sha256:e31dbb0fb5be21256b536b8650b8a7dc3dcf2f72167c8d486685e272df439e7a`
 - Created: `2024-06-19T00:17:01Z`
-- Virtual Size: ~ 350.26 Mb  
+- Virtual Size: ~ 350.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=24.0.9`
-  - `DOCKER_BUILDX_VERSION=0.16.1`
+  - `DOCKER_BUILDX_VERSION=0.16.2`
   - `DOCKER_COMPOSE_VERSION=2.29.1`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e`
@@ -480,16 +480,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.8.0-r0 description:
+libcurl-8.9.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.8.0-r0 webpage:
+libcurl-8.9.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.8.0-r0 installed size:
-620 KiB
+libcurl-8.9.0-r0 installed size:
+628 KiB
 
-libcurl-8.8.0-r0 license:
+libcurl-8.9.0-r0 license:
 curl
 
 ```
