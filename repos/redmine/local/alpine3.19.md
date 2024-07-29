@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:49ec4ef082a6480498c4dd2bf8e56aee83454d1737f337d8a8c0bab0d0b97125`
+- Image ID: `sha256:95c876104d3236dc1fff35550d555e1bd2480e086e85451b48640db3ee6eddf7`
 - Created: `2024-06-18T22:07:17Z`
-- Virtual Size: ~ 418.48 Mb  
+- Virtual Size: ~ 418.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.2.4`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.4.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=e7f1653d653232ec433472489a91afbc7433c9f760cc822defe7437c9d95791b`
+  - `RUBY_VERSION=3.2.5`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.5.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=7780d91130139406d39b29ed8fe16bba350d8fa00e510c76bef9b8ec1340903c`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -762,16 +762,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.5.0-r0 description:
+libcurl-8.9.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.5.0-r0 webpage:
+libcurl-8.9.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.5.0-r0 installed size:
-580 KiB
+libcurl-8.9.0-r0 installed size:
+628 KiB
 
-libcurl-8.5.0-r0 license:
+libcurl-8.9.0-r0 license:
 curl
 
 ```
