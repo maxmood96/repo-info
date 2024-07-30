@@ -1,9 +1,9 @@
-# `openjdk:23-ea-33-jdk-oraclelinux8`
+# `openjdk:23-ea-34-jdk-oraclelinux8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ca08f8abf83d23669284ca6e5c20d8f6122f57459bb65d8d0031ace9c1975a38`
-- Created: `2024-07-20T00:48:11Z`
+- Image ID: `sha256:5b84718008622a71e83cc9525562b82733847c63f229113b2c510b5d5a6fee5e`
+- Created: `2024-07-26T18:48:11Z`
 - Virtual Size: ~ 518.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-23/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-23`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=23-ea+33`
+  - `JAVA_VERSION=23-ea+34`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -928,8 +928,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libzstd-1.4.4-1.0.1.el8
-https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/zstd-1.4.4-1.0.1.el8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/zstd-1.4.4-1.0.1.el8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/zstd-1.4.4-1.0.1.el8.src.rpm
 ```
 
 ### `rpm` package: `lua-libs-5.3.4-12.el8.x86_64`
