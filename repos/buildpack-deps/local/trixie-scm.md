@@ -1217,21 +1217,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.21.2-1
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.2-1.dsc' krb5_1.21.2-1.dsc 3349 SHA256:8f80fad14f6601e2140e2e17cffdd82af02213147d7a97bb4d2fc9645b49a29a
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.2.orig.tar.gz' krb5_1.21.2.orig.tar.gz 8622513 SHA256:9560941a9d843c0243a71b17a7ac6fe31c7cebb5bce3983db79e52ae7e850491
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.2.orig.tar.gz.asc' krb5_1.21.2.orig.tar.gz.asc 833 SHA256:780b07aad5ac5449d1dd735dd42fd3325ec851b316d075a54a24f35d3e945190
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.2-1.debian.tar.xz' krb5_1.21.2-1.debian.tar.xz 105940 SHA256:2ca45ecfc20dd6c1ac3f4a1bb62544649b853e89d9d7a3a8238ad2f407258866
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.21.2-1/
 
-- https://sources.debian.net/src/krb5/1.21.2-1/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.21.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.21.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.5.6-1`
 
@@ -1804,21 +1796,13 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 - `BSD3`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh2=1.11.0-5
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.0-5.dsc' libssh2_1.11.0-5.dsc 2328 SHA256:388bb9edb0ea7b485f0c0da69728d9245d0b5727c2ffbd4a87397f95f50507da
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.0.orig.tar.gz' libssh2_1.11.0.orig.tar.gz 1053562 SHA256:3736161e41e2693324deb38c26cfdc3efe6209d634ba4258db1cecff6a5ad461
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.0.orig.tar.gz.asc' libssh2_1.11.0.orig.tar.gz.asc 488 SHA256:b6a32c85a3f9b6f30f2b3595ba034b48a8508ee9c94708ef811f58fd7adfcdee
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.0-5.debian.tar.xz' libssh2_1.11.0-5.debian.tar.xz 14488 SHA256:e80f042dd8348f70615ca7fee5ccbed9a095fe4880faec5f0888668b5f0b7517
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libssh2/1.11.0-5/
 
-- https://sources.debian.net/src/libssh2/1.11.0-5/ (for browsing the source)
-- https://sources.debian.net/src/libssh2/1.11.0-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libssh2/1.11.0-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.19.0-3`
 
@@ -1951,20 +1935,13 @@ Licenses: (parsed from: `/usr/share/doc/liblz4-1/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lz4=1.9.4-2
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.9.4-2.dsc' lz4_1.9.4-2.dsc 1891 SHA256:981c5eae455d61eb50ae995577adb9190ce8a8ef798f1fd1148ffafab8771dde
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.9.4.orig.tar.gz' lz4_1.9.4.orig.tar.gz 354063 SHA256:0b0e3aa07c8c063ddf40b082bdf7e37a1562bda40a0ff5272957f3e987e0e54b
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.9.4-2.debian.tar.xz' lz4_1.9.4-2.debian.tar.xz 8164 SHA256:a6fd6b4c5af5ccc84cf3ffc68256c9dcd586aaa3d319e71a4aa0acaa521c9f57
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lz4/1.9.4-2/
 
-- https://sources.debian.net/src/lz4/1.9.4-2/ (for browsing the source)
-- https://sources.debian.net/src/lz4/1.9.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lz4/1.9.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20240622-1`
 
@@ -2174,20 +2151,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp3-9/copyright`)
 - `GPL-3+ with Autoconf generic exception`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp3=1.3.0-2
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.3.0-2.dsc' nghttp3_1.3.0-2.dsc 1358 SHA256:5d98c683f6a7f73a8ab7d4dc710ed1cbeaf625b739b8095c228ecf6db08c067d
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.3.0.orig.tar.bz2' nghttp3_1.3.0.orig.tar.bz2 509028 SHA256:1f6bda74a888bfeb110a660a04b2ea25b756e0774d48143e34374af83d25e4a8
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.3.0-2.debian.tar.xz' nghttp3_1.3.0-2.debian.tar.xz 4480 SHA256:ad998300e0a533f3567025c5c78c09c58c761cee713c4a43ae307464e30255b1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp3/1.3.0-2/
 
-- https://sources.debian.net/src/nghttp3/1.3.0-2/ (for browsing the source)
-- https://sources.debian.net/src/nghttp3/1.3.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp3/1.3.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ngtcp2=1.5.0-2`
 
@@ -2209,20 +2179,13 @@ Licenses: (parsed from: `/usr/share/doc/libngtcp2-16/copyright`, `/usr/share/doc
 - `GPL-3+ with Autoconf generic exception`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ngtcp2=1.5.0-2
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.5.0-2.dsc' ngtcp2_1.5.0-2.dsc 1717 SHA256:8fae351f2445200fcaef8d01f34d43554f8b0b28477da4949f42bc98b1a4b74a
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.5.0.orig.tar.bz2' ngtcp2_1.5.0.orig.tar.bz2 816900 SHA256:756714bebeff1ad490699d39e3a28a21e0f5cfc32a085cc648cc5b9e1a8b5390
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.5.0-2.debian.tar.xz' ngtcp2_1.5.0-2.debian.tar.xz 6004 SHA256:93d39614a671c91e6008d60f37e7f59d39e6d2ee858f65666c02b1b9a1f0e97b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ngtcp2/1.5.0-2/
 
-- https://sources.debian.net/src/ngtcp2/1.5.0-2/ (for browsing the source)
-- https://sources.debian.net/src/ngtcp2/1.5.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ngtcp2/1.5.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-3.1`
 
@@ -2591,19 +2554,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.12.3-1
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.12.3-1.dsc' python3-defaults_3.12.3-1.dsc 2989 SHA256:dd404e6025075029e38afeaebc523766385361351581334824fd104998d32a11
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.12.3-1.tar.gz' python3-defaults_3.12.3-1.tar.gz 146827 SHA256:6506e9a57977018120bd899980f785ac539556269de854e849a0337e2ec87853
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.12.3-1/
 
-- https://sources.debian.net/src/python3-defaults/3.12.3-1/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.12.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.12.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.12=3.12.4-3`
 
@@ -2720,20 +2677,13 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=0.33.0-3
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_0.33.0-3.dsc' rust-sequoia-sq_0.33.0-3.dsc 3613 SHA256:75bd87bd1811a5675a7f00dc95e1210aaf8e0749032aec9375ea2a90f34eeb73
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_0.33.0.orig.tar.gz' rust-sequoia-sq_0.33.0.orig.tar.gz 388309 SHA256:23d13cc95cd149404f273474b214b3159b6ad9d2f8a30ac8fd87f834ddbbbf98
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_0.33.0-3.debian.tar.xz' rust-sequoia-sq_0.33.0-3.debian.tar.xz 5524 SHA256:ed658c2dda423555e3e3c90f203bf23ba33174549db07343cab57ce7b4cf2a59
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sq/0.33.0-3/
 
-- https://sources.debian.net/src/rust-sequoia-sq/0.33.0-3/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sq/0.33.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sq/0.33.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.9-2`
 
@@ -2930,20 +2880,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=256.2-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.2-1.dsc' systemd_256.2-1.dsc 8094 SHA256:d87947d5a0dbdd931d2f4b2e85524c948bdf65605428554c6b1770c5634fef21
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.2.orig.tar.gz' systemd_256.2.orig.tar.gz 15648609 SHA256:81ed336d36e48b1f31b876540f437755f33c7c389ba6e8efb8d3512129f0096d
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.2-1.debian.tar.xz' systemd_256.2-1.debian.tar.xz 170896 SHA256:96fa89e483c062f8ed506ac5f032066dd92edf66c3219f1ba72699bd4c6e92d9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/256.2-1/
 
-- https://sources.debian.net/src/systemd/256.2-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/256.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/256.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.09-2`
 
