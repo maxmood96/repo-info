@@ -1,10 +1,10 @@
-# `crate:5.7.3`
+# `crate:5.7.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:83d02d94a2169e03eb50d192d0607ba87b16ddac5c62d3bf3e5137c8f5ebb858`
-- Created: `2024-07-10T14:21:21Z`
-- Virtual Size: ~ 434.07 Mb  
+- Image ID: `sha256:de5f34d3fc7fb31e2c762614066f63b5e4941cbd8b9f87d58f860eb3140f09c6`
+- Created: `2024-07-26T07:51:44Z`
+- Virtual Size: ~ 470.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -14,13 +14,13 @@
   - `CRATE_HEAP_SIZE=512M`
 - Labels:
   - `maintainer=Crate.io <office@crate.io>`
-  - `org.opencontainers.image.created=2024-07-10T14:21:21.369800`
+  - `org.opencontainers.image.created=2024-07-26T07:51:44.117532`
   - `org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time.`
   - `org.opencontainers.image.source=https://github.com/crate/docker-crate`
   - `org.opencontainers.image.title=crate`
   - `org.opencontainers.image.url=https://crate.io/products/cratedb/`
   - `org.opencontainers.image.vendor=Crate.io`
-  - `org.opencontainers.image.version=5.7.3`
+  - `org.opencontainers.image.version=5.7.4`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -1284,15 +1284,15 @@ $ dnf --quiet download --source --url popt-1.18-8.el9
 http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/popt-1.18-8.el9.src.rpm
 ```
 
-### `rpm` package: `python3-3.9.18-3.el9_4.1.x86_64`
+### `rpm` package: `python3-3.9.18-3.el9_4.3.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-3.9.18-3.el9_4.1
-http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/python3.9-3.9.18-3.el9_4.1.src.rpm
+$ dnf --quiet download --source --url python3-3.9.18-3.el9_4.3
+http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/python3.9-3.9.18-3.el9_4.3.src.rpm
 ```
 
 ### `rpm` package: `python3-dnf-4.14.0-9.el9.alma.1.noarch`
@@ -1350,15 +1350,15 @@ $ dnf --quiet download --source --url python3-libdnf-0.69.0-8.el9.alma.1
 http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/libdnf-0.69.0-8.el9.alma.1.src.rpm
 ```
 
-### `rpm` package: `python3-libs-3.9.18-3.el9_4.1.x86_64`
+### `rpm` package: `python3-libs-3.9.18-3.el9_4.3.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-libs-3.9.18-3.el9_4.1
-http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/python3.9-3.9.18-3.el9_4.1.src.rpm
+$ dnf --quiet download --source --url python3-libs-3.9.18-3.el9_4.3
+http://repo.almalinux.org/vault/9.4/BaseOS/Source/Packages/python3.9-3.9.18-3.el9_4.3.src.rpm
 ```
 
 ### `rpm` package: `python3-pip-wheel-21.2.3-8.el9.noarch`
