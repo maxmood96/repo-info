@@ -8467,19 +8467,39 @@ $ docker pull gcc@sha256:625708f97057df574b680b0eb99b8b50802290f3a97b34b4377730b
 
 ## `gcc:14.2`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:14.2-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:14.2.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:14.2.0-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:bookworm`
 
