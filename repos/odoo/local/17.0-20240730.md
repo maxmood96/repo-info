@@ -1,9 +1,9 @@
-# `odoo:17.0-20240711`
+# `odoo:17.0-20240730`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a673383c2274db23312c28c3595cfea7e332782e8d6614ebecd921246996c52d`
-- Created: `2024-07-11T09:17:21Z`
+- Image ID: `sha256:75d65dac06b781c222698ff4ae95d0e331ecefc9c15e441d529b3f3db2b206ac`
+- Created: `2024-07-30T12:28:55Z`
 - Virtual Size: ~ 1.78 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1195,17 +1195,17 @@ $ apt-get source -qq --print-uris graphite2=1.3.14-1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.14-1build2.debian.tar.xz' graphite2_1.3.14-1build2.debian.tar.xz 12224 SHA512:7c69742dc115a123eaba93092ad67c06e43e8538c04269e05fa06cb12802b9f331f52161c3ff0ddd0520ccad6993c30102f149ac1694552594a3db5f1c07a209
 ```
 
-### `dpkg` source package: `graphviz=2.42.2-6`
+### `dpkg` source package: `graphviz=2.42.2-6ubuntu0.1`
 
 Binary Packages:
 
-- `graphviz=2.42.2-6`
-- `libcdt5:amd64=2.42.2-6`
-- `libcgraph6:amd64=2.42.2-6`
-- `libgvc6=2.42.2-6`
-- `libgvpr2:amd64=2.42.2-6`
-- `liblab-gamut1:amd64=2.42.2-6`
-- `libpathplan4:amd64=2.42.2-6`
+- `graphviz=2.42.2-6ubuntu0.1`
+- `libcdt5:amd64=2.42.2-6ubuntu0.1`
+- `libcgraph6:amd64=2.42.2-6ubuntu0.1`
+- `libgvc6=2.42.2-6ubuntu0.1`
+- `libgvpr2:amd64=2.42.2-6ubuntu0.1`
+- `liblab-gamut1:amd64=2.42.2-6ubuntu0.1`
+- `libpathplan4:amd64=2.42.2-6ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/graphviz/copyright`, `/usr/share/doc/libcdt5/copyright`, `/usr/share/doc/libcgraph6/copyright`, `/usr/share/doc/libgvc6/copyright`, `/usr/share/doc/libgvpr2/copyright`, `/usr/share/doc/liblab-gamut1/copyright`, `/usr/share/doc/libpathplan4/copyright`)
 
@@ -1217,10 +1217,10 @@ Licenses: (parsed from: `/usr/share/doc/graphviz/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris graphviz=2.42.2-6
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/graphviz/graphviz_2.42.2-6.dsc' graphviz_2.42.2-6.dsc 3141 SHA512:9fc31dcfc8562c38b324bb0fac752c757ed7d279e1c210b3bffc933473784a33c31e018163e9d489ddc33570966b550c633937808044d2c11114dfafe39fd374
+$ apt-get source -qq --print-uris graphviz=2.42.2-6ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/graphviz/graphviz_2.42.2-6ubuntu0.1.dsc' graphviz_2.42.2-6ubuntu0.1.dsc 3293 SHA512:15bdab56f043b81ffd0a6d6547b40ab9b09c10d392079b1a65c2fa5f16391fa2e3626d215293a7c9b126ce798faabc5b95a9eea5a1b7cc15a4ab6fb9e11c5675
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/graphviz/graphviz_2.42.2.orig.tar.bz2' graphviz_2.42.2.orig.tar.bz2 30740923 SHA512:7dab159539179df1febf4396d6bea2c071e0f311745941a07861d54b1db96a52f1328bee08148e099fa06ce5f1c9a9b6272ba60bb6147bf51b55de881a431fb3
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/graphviz/graphviz_2.42.2-6.debian.tar.xz' graphviz_2.42.2-6.debian.tar.xz 38616 SHA512:6bfa95120dc6ab3a7ecb214e6ab820b0648ce0b1a974491302d6ba5982a2d4725d32a7a56340d7e8dfd9cbea22596bdda913948a0097c7427edbc433224f8182
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/graphviz/graphviz_2.42.2-6ubuntu0.1.debian.tar.xz' graphviz_2.42.2-6ubuntu0.1.debian.tar.xz 38988 SHA512:937c0a00e72b9a7be4d1690f5aa406bf36ddf9bb848dade4a130c012278a95520614f01103971be226ed7ac4a4100b8d6f1c2489e09403fc8578f8e026ef928e
 ```
 
 ### `dpkg` source package: `grep=3.7-1build1`
@@ -5706,11 +5706,11 @@ $ apt-get source -qq --print-uris npth=1.6-3build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3build2.debian.tar.xz' npth_1.6-3build2.debian.tar.xz 10904 SHA512:426ab3ab9e27b3701d67cde0a4c4040aa9ccac22a0266321824487fe80a118ccd6860b6fa0fb5ca3c46dfa3c20053889fbb51a2e74618065b3aff059a0216c4c
 ```
 
-### `dpkg` source package: `odoo=17.0.20240711`
+### `dpkg` source package: `odoo=17.0.20240730`
 
 Binary Packages:
 
-- `odoo=17.0.20240711`
+- `odoo=17.0.20240730`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -5757,19 +5757,24 @@ $ apt-get source -qq --print-uris openjpeg2=2.4.0-6
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openjpeg2/openjpeg2_2.4.0-6.debian.tar.xz' openjpeg2_2.4.0-6.debian.tar.xz 21124 SHA512:cdd8a1d29388d02c37612183fef2ff679133630871323894f46e7f4a56480118e1e03573b2eea2179ce0f92d6aca6a15ee8e9f382e036d7ff0cb0f1744f2df3e
 ```
 
-### `dpkg` source package: `openldap=2.5.18+dfsg-0ubuntu0.22.04.1`
+### `dpkg` source package: `openldap=2.5.18+dfsg-0ubuntu0.22.04.2`
 
 Binary Packages:
 
-- `libldap-2.5-0:amd64=2.5.18+dfsg-0ubuntu0.22.04.1`
+- `libldap-2.5-0:amd64=2.5.18+dfsg-0ubuntu0.22.04.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.5.18+dfsg-0ubuntu0.22.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg-0ubuntu0.22.04.2.dsc' openldap_2.5.18+dfsg-0ubuntu0.22.04.2.dsc 3319 SHA512:b487516e28201e7d879487ad9b6dab1eb1d5eb6a241394e5fc518fdbc1e0b29062d15df3b393dd7bf72113c389d482d26c6937a22e40a7d78c7c6f73bc19944c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg.orig.tar.gz' openldap_2.5.18+dfsg.orig.tar.gz 5623023 SHA512:5f0f71c6711bc8e4b463832d2073d41d92886cdbe3c7a20bca54579c4df30d25de5f388165d975ace600073593502d73a5009ad00f135adc9f1270515fb4ff21
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg-0ubuntu0.22.04.2.debian.tar.xz' openldap_2.5.18+dfsg-0ubuntu0.22.04.2.debian.tar.xz 172632 SHA512:f40e948a37ad373187b6007c033e6cbbd63775b1b424f62f9446a9f35b9b354d0c8a8ae3efe470d63e444af984bb2f28947ebc0521923cb50adc4ea2eba21843
+```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.16`
 
@@ -5786,15 +5791,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.16
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.16.dsc' openssl_3.0.2-0ubuntu1.16.dsc 2422 SHA512:67194c2cbccc48be8fd3d81da7712a5815c13dee5af5b2597e9322159f25f0bfd8eebb78438948e8ec29d8b4171e6ad4b9bc3e5d4ff289d4952a8910a9fd9448
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.16.debian.tar.xz' openssl_3.0.2-0ubuntu1.16.debian.tar.xz 253388 SHA512:1eda93da47f41fda5d38c752dde9bc08204ab2a555dcd8ea4ce5257ac615229181b915bcf87730dd433567fdbdef45e38c4ed170b703f5aa08bb303b4ae61197
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
@@ -7101,14 +7100,14 @@ $ apt-get source -qq --print-uris python3-stdlib-extensions=3.10.8-1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.10.8-1%7e22.04.debian.tar.xz' python3-stdlib-extensions_3.10.8-1~22.04.debian.tar.xz 25884 SHA512:214b4a62091181291a22ce1a2016e5b3d8f24f62f245494f82bd3a527b46886f1537f1e33fcde5261c81cb50d6d177cdeb899955d7da7c367511594ed99825ce
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.4`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.5`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.4`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.4`
-- `python3.10=3.10.12-1~22.04.4`
-- `python3.10-minimal=3.10.12-1~22.04.4`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.5`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.5`
+- `python3.10=3.10.12-1~22.04.5`
+- `python3.10-minimal=3.10.12-1~22.04.5`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -7133,10 +7132,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.4.dsc' python3.10_3.10.12-1~22.04.4.dsc 3711 SHA512:aaf2601274e1eb79c250b70b0a59e2f20f4d628f1ad2e446c0388f8ccc3909ed6a32253a18b4a3f4e5748a80b2fdfa5ced9be39cee8bdd359b4bab7852d6af4b
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.5.dsc' python3.10_3.10.12-1~22.04.5.dsc 3674 SHA512:bfde4df2cad3b6d2aa38ad535052e8c17023ec04a10cf16dd9e42832b15846f6e0de3053474844a59af1a4d1a670248380b47558b2c0fc56edf0178d5488834b
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.4.debian.tar.xz' python3.10_3.10.12-1~22.04.4.debian.tar.xz 224844 SHA512:33834a36ec1982b088607ee66a95c42e9cbee7e873512865acf952bb208eb8c95b851e6092c650c30516bafb24433ace643912346080a4e81c14940046ca75f3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.5.debian.tar.xz' python3.10_3.10.12-1~22.04.5.debian.tar.xz 229192 SHA512:91dcad43721f8a816cb008c5e829a7213e45787f5662cf291faa43607268a7a79cf8766ea6a9b912ea580c30b683a439780ca957cb5c4b4f3aab9b72d7d15c26
 ```
 
 ### `dpkg` source package: `pyusb=1.2.1-1`
