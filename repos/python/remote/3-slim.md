@@ -1,7 +1,7 @@
 ## `python:3-slim`
 
 ```console
-$ docker pull python@sha256:1ef6f4d9c85f879bbda6d437048fc23ec4927452e90354bb754f26728a05021b
+$ docker pull python@sha256:bf20beb349a2762d6adccf370eaa4ff40bc367a4c7fe563110e08f0dbd7eaa2e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24,43 +24,43 @@ $ docker pull python@sha256:1ef6f4d9c85f879bbda6d437048fc23ec4927452e90354bb754f
 ### `python:3-slim` - linux; amd64
 
 ```console
-$ docker pull python@sha256:c71ca2135912cd281ad6dadf4c48694e7a9c232b9d6ea7be74b7cce39a5bdf63
+$ docker pull python@sha256:a074fac67aa01841fee592d00bae14d25dcaf98ef6e12a683ecceb7e0147e2d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.9 MB (48880283 bytes)**  
+-	Total Size: **48.9 MB (48877210 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97ce08fb53307b7bf870ce7782ae728f4df4057202e4c7955cf2ed4e29e8788c`
+-	Image ID: `sha256:c127439b2798d6872c53642bd6577046a30e818576250c329e55b124948dadf2`
 -	Default Command: `["python3"]`
 
 ```dockerfile
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Tue, 23 Jul 2024 05:24:15 GMT
 ADD file:6c4730e7b12278bc7eb83b3b9d659437c92c42fc7ee70922ae8c4bebfb56a602 in / 
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Tue, 23 Jul 2024 05:24:16 GMT
 CMD ["bash"]
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
 ENV LANG=C.UTF-8
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
 ENV GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
 ENV PYTHON_VERSION=3.12.4
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libdb-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-lto 		--with-system-expat 		--without-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="$(dpkg-buildflags --get CFLAGS)"; 	LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 		"PROFILE_TASK=${PROFILE_TASK:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		"PROFILE_TASK=${PROFILE_TASK:-}" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version # buildkit
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
 ENV PYTHON_PIP_VERSION=24.0
-# Sun, 07 Jul 2024 23:32:36 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/e03e1607ad60522cf34a92e834138eb89f57667c/public/get-pip.py
-# Sun, 07 Jul 2024 23:32:36 GMT
-ENV PYTHON_GET_PIP_SHA256=ee09098395e42eb1f82ef4acb231a767a6ae85504a9cf9983223df0a7cbd35d7
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
+ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66d8a0f637083e2c3ddffc0cb1e65ce126afb856/public/get-pip.py
+# Mon, 29 Jul 2024 06:49:02 GMT
+ENV PYTHON_GET_PIP_SHA256=6fb7b781206356f45ad79efbb19322caa6c2a5ad39092d0d44d0fec94117e118
+# Mon, 29 Jul 2024 06:49:02 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 	; 	rm -f get-pip.py; 		pip --version # buildkit
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
 CMD ["python3"]
 ```
 
@@ -69,44 +69,44 @@ CMD ["python3"]
 		Last Modified: Tue, 23 Jul 2024 05:27:55 GMT  
 		Size: 29.1 MB (29126287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62eefda23922d41fc3b3a7163a3bc02f2c4f9c0beb7f92180020aea901344ff0`  
-		Last Modified: Tue, 23 Jul 2024 07:26:16 GMT  
-		Size: 3.5 MB (3509915 bytes)  
+	-	`sha256:a21a42cb9734eb8bf959604f0175a3fb0ea93caea931d758b8b86b1acf2c6421`  
+		Last Modified: Fri, 02 Aug 2024 14:44:29 GMT  
+		Size: 3.5 MB (3509904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31a912153c27db4f66e5995208beb4acc4c6904409088e18652e48cc3643d929`  
-		Last Modified: Tue, 23 Jul 2024 07:26:17 GMT  
-		Size: 12.0 MB (12005555 bytes)  
+	-	`sha256:16661da94c6b59ad94d3beb260dc1a6510d6e92d524ab4894e25bb64596895a5`  
+		Last Modified: Fri, 02 Aug 2024 14:44:29 GMT  
+		Size: 12.0 MB (12005473 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9597e1b644c5bab62b370c13c75386d4ea1ebfd8ab9c17bf5a2807e5cfed3e58`  
-		Last Modified: Tue, 23 Jul 2024 07:26:16 GMT  
-		Size: 232.0 B  
+	-	`sha256:067dca495e7c95f1760cd6f1dfd09507f08d62418c9bdc96f63cc5f55c54d11a`  
+		Last Modified: Fri, 02 Aug 2024 14:44:28 GMT  
+		Size: 239.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2dc9bc0cbbd94719b8c4b62f458c7b16631e569c916365fed86d6599751977b`  
-		Last Modified: Tue, 23 Jul 2024 07:26:16 GMT  
-		Size: 4.2 MB (4238294 bytes)  
+	-	`sha256:3f5faab3df7809e6204d76de2ac979d120d0b82e1625e8f5b47fb80e7d670a37`  
+		Last Modified: Fri, 02 Aug 2024 14:44:29 GMT  
+		Size: 4.2 MB (4235307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `python:3-slim` - unknown; unknown
 
 ```console
-$ docker pull python@sha256:7c1962691df0c1cd8d885be1649231e84390e043c5548404bbb4b1ac7eebe19a
+$ docker pull python@sha256:81aec426faf240337c87c7a49ef1fd649417e29400ad93e2d98d3a7ad3e1dd1c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2517544 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c643b5067cd61dba5934a8926237dd39889e972d6eac094d2adc69444170ac8`
+-	Image ID: `sha256:a1b907eeffc5aaed1c5f3e0a39d2c39f2fdb47424be63955fef400ab73de0782`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ffc34b83708ba0113c20da14f565503623aa51bdd5a28979f4b649b357a3684f`  
-		Last Modified: Tue, 23 Jul 2024 07:26:16 GMT  
+	-	`sha256:f21b23e0f01759de202dad006dd056087cef5d41e71d3b4a4ba27757d827d8be`  
+		Last Modified: Fri, 02 Aug 2024 14:44:29 GMT  
 		Size: 2.5 MB (2490414 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0f9bd01b46745f341a31416c93da47b70fcb3042ec1c7946c264428a1052752a`  
-		Last Modified: Tue, 23 Jul 2024 07:26:16 GMT  
+	-	`sha256:9f6d26fe012707cb0efd1ef0717e1655b3259097af736a90b40e3cb38582f34a`  
+		Last Modified: Fri, 02 Aug 2024 14:44:28 GMT  
 		Size: 27.1 KB (27130 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -380,43 +380,43 @@ $ docker pull python@sha256:974b7ebe83f496b4e2753a9d689a16f88da58bb91dacbb75d936
 ### `python:3-slim` - linux; 386
 
 ```console
-$ docker pull python@sha256:f5d8c6eeb88e59a17879962320051c7c001981ad425e178679ba54f8ef6c4c77
+$ docker pull python@sha256:258a7bd1fa71c2ba72b2f529285cb9a0bfd3baa10eda3a37884e76143e99bb79
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.1 MB (50142873 bytes)**  
+-	Total Size: **50.1 MB (50139571 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd7223f79ba1b7908c7ecc7902d031dd3e5473f72068179b85553230e13bd8d1`
+-	Image ID: `sha256:7cbf59f33b3244c5c5ee16f251ccafadd4ef09f4c59b9de3c565b0eef55f2b57`
 -	Default Command: `["python3"]`
 
 ```dockerfile
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Tue, 23 Jul 2024 03:54:13 GMT
 ADD file:9b63a9d86a51a3d56d700d09e1152578d700ba4453d852325d8eb9896534f3ba in / 
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Tue, 23 Jul 2024 03:54:13 GMT
 CMD ["bash"]
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
 ENV LANG=C.UTF-8
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
 ENV GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
 ENV PYTHON_VERSION=3.12.4
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libdb-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-lto 		--with-system-expat 		--without-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="$(dpkg-buildflags --get CFLAGS)"; 	LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 		"PROFILE_TASK=${PROFILE_TASK:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		"PROFILE_TASK=${PROFILE_TASK:-}" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version # buildkit
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
 ENV PYTHON_PIP_VERSION=24.0
-# Sun, 07 Jul 2024 23:32:36 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/e03e1607ad60522cf34a92e834138eb89f57667c/public/get-pip.py
-# Sun, 07 Jul 2024 23:32:36 GMT
-ENV PYTHON_GET_PIP_SHA256=ee09098395e42eb1f82ef4acb231a767a6ae85504a9cf9983223df0a7cbd35d7
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
+ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66d8a0f637083e2c3ddffc0cb1e65ce126afb856/public/get-pip.py
+# Mon, 29 Jul 2024 06:49:02 GMT
+ENV PYTHON_GET_PIP_SHA256=6fb7b781206356f45ad79efbb19322caa6c2a5ad39092d0d44d0fec94117e118
+# Mon, 29 Jul 2024 06:49:02 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 	; 	rm -f get-pip.py; 		pip --version # buildkit
-# Sun, 07 Jul 2024 23:32:36 GMT
+# Mon, 29 Jul 2024 06:49:02 GMT
 CMD ["python3"]
 ```
 
@@ -425,44 +425,44 @@ CMD ["python3"]
 		Last Modified: Tue, 23 Jul 2024 03:57:51 GMT  
 		Size: 30.1 MB (30144309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea77663d9e2e35e97fc89d274d57f9fef01897d670cbee89c1588d464826de13`  
-		Last Modified: Tue, 23 Jul 2024 06:22:58 GMT  
-		Size: 3.5 MB (3507302 bytes)  
+	-	`sha256:336b9884f1c23a184f2397a7d8b896fc417adea2443efa3c7759a14edb9c85f1`  
+		Last Modified: Fri, 02 Aug 2024 14:46:19 GMT  
+		Size: 3.5 MB (3507301 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc5ac045cf62835ada237e31741e677cce106dd3638826819d5bcb49059ba593`  
-		Last Modified: Tue, 23 Jul 2024 06:22:58 GMT  
-		Size: 12.3 MB (12253260 bytes)  
+	-	`sha256:ebc58e882e8f600469d9b7adf9eb381c81b8178e6ba7fb3f6278fbfccc0174da`  
+		Last Modified: Fri, 02 Aug 2024 14:46:19 GMT  
+		Size: 12.3 MB (12252815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b8e531f6bea147e3c95fb35410a74fbf90f7ed6f97e9ccc12497cb3fcbe4ae2`  
-		Last Modified: Tue, 23 Jul 2024 06:22:58 GMT  
+	-	`sha256:e5ef5fb5f9e1b0a7ff492689cd5fe828e6508202a835619ed8e8092e56b6ce64`  
+		Last Modified: Fri, 02 Aug 2024 14:46:19 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f80c64d57c1f0a378718ce63eeca508e624a456c7c70836329cc4537f9e49594`  
-		Last Modified: Tue, 23 Jul 2024 06:22:58 GMT  
-		Size: 4.2 MB (4237769 bytes)  
+	-	`sha256:0b80691a6ae46c6433939c634e3604c4b7a07b8ef2911b5ce12831e299af37da`  
+		Last Modified: Fri, 02 Aug 2024 14:46:19 GMT  
+		Size: 4.2 MB (4234913 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `python:3-slim` - unknown; unknown
 
 ```console
-$ docker pull python@sha256:552ebc7ea7b941f4580cf710c02bb5afe25bfb0110052ca3633c5018652a8242
+$ docker pull python@sha256:2574ec21dfbf756193841a60ec85d087a1a2f34a7bdebc8b4e21c953fa4249c0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2514563 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:661dc3203a0a628d2835895aa8e9a8972d468e205a020b7305082d7bf36cc1da`
+-	Image ID: `sha256:2ba1106c07c365cc35a6a01a97e30b4a5a6897c269870046aa1fd4a80b5cabb4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a0d47bbf0bfb4d593c4fc4c010ea67a4cb4ea9997a58c098cacbbf02a5a5905c`  
-		Last Modified: Tue, 23 Jul 2024 06:22:58 GMT  
+	-	`sha256:ce3d9cecdf5644022a41cd433bddfbbe106ae4d25887e248432ca5c71cc753c8`  
+		Last Modified: Fri, 02 Aug 2024 14:46:19 GMT  
 		Size: 2.5 MB (2487488 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ba52617061370cbe533f40ec7b3e8b88ce802dc0e0e83144a21cde79ee9c5746`  
-		Last Modified: Tue, 23 Jul 2024 06:22:58 GMT  
+	-	`sha256:96f995db0bca3464cae9fbccce16d7a5c718b409bff942c30440d9790d924733`  
+		Last Modified: Fri, 02 Aug 2024 14:46:19 GMT  
 		Size: 27.1 KB (27075 bytes)  
 		MIME: application/vnd.in-toto+json
 
