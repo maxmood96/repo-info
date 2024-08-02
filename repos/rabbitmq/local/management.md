@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:64e24f99e4519ab0061ed6c27f160172b65b1a57e70131a767e8bad867b78327`
+- Image ID: `sha256:e42cf20fe44e3d8f5fb1c694891043b3254c08b1b066a3df65457c5a7923b79b`
 - Created: `2024-02-22T21:58:15Z`
-- Virtual Size: ~ 250.64 Mb  
+- Virtual Size: ~ 250.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1264,9 +1264,25 @@ $ apt-get source -qq --print-uris nettle=3.7.3-1build2
 Binary Packages:
 
 - `libssl3:amd64=3.0.2-0ubuntu1.16`
-- `openssl=3.0.2-0ubuntu1.16`
 
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
+
+- `Apache-2.0`
+- `Artistic`
+- `GPL-1`
+- `GPL-1+`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.17`
+
+Binary Packages:
+
+- `openssl=3.0.2-0ubuntu1.17`
+
+Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -1276,11 +1292,11 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.16
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.16.dsc' openssl_3.0.2-0ubuntu1.16.dsc 2422 SHA512:67194c2cbccc48be8fd3d81da7712a5815c13dee5af5b2597e9322159f25f0bfd8eebb78438948e8ec29d8b4171e6ad4b9bc3e5d4ff289d4952a8910a9fd9448
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.17
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.17.dsc' openssl_3.0.2-0ubuntu1.17.dsc 2730 SHA512:80f797dd70e2b4710fcdeb74aa211ad3df091b84fefaa1df2f7b6565c9451613332d337cc35d7977531d4c25069334dc22eedd22084a1ab5d5d647729d6a29d7
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.16.debian.tar.xz' openssl_3.0.2-0ubuntu1.16.debian.tar.xz 253388 SHA512:1eda93da47f41fda5d38c752dde9bc08204ab2a555dcd8ea4ce5257ac615229181b915bcf87730dd433567fdbdef45e38c4ed170b703f5aa08bb303b4ae61197
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.17.debian.tar.xz' openssl_3.0.2-0ubuntu1.17.debian.tar.xz 259832 SHA512:b294c87c9d8d734b8038aa1d29c611aa10854f9420d2441932e9c4269994885bdc4d84c412d3fa5c03cee8f5cac9ded11f477a198b35abf40ecb4452336976c4
 ```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
@@ -1461,14 +1477,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.tar.gz' python3-defaults_3.10.6-1~22.04.tar.gz 145325 SHA512:4dce1fcadb47a3fbd72e489e78c6543aa4b35a0480eb4e10617b3afd223cdd244e97f79db55f2abf28367848658ae46a3cda895d3d9dcf21c530149207f080dd
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.4`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.5`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.4`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.4`
-- `python3.10=3.10.12-1~22.04.4`
-- `python3.10-minimal=3.10.12-1~22.04.4`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.5`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.5`
+- `python3.10=3.10.12-1~22.04.5`
+- `python3.10-minimal=3.10.12-1~22.04.5`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -1490,9 +1506,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.5.dsc' python3.10_3.10.12-1~22.04.5.dsc 3674 SHA512:bfde4df2cad3b6d2aa38ad535052e8c17023ec04a10cf16dd9e42832b15846f6e0de3053474844a59af1a4d1a670248380b47558b2c0fc56edf0178d5488834b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.5.debian.tar.xz' python3.10_3.10.12-1~22.04.5.debian.tar.xz 229192 SHA512:91dcad43721f8a816cb008c5e829a7213e45787f5662cf291faa43607268a7a79cf8766ea6a9b912ea580c30b683a439780ca957cb5c4b4f3aab9b72d7d15c26
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
