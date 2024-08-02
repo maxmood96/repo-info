@@ -1,7 +1,7 @@
 ## `unit:python3.12`
 
 ```console
-$ docker pull unit@sha256:63acd6b78037d457ffdac89cb5c2596b9dd3821760b1724520b2e5e9276e5a45
+$ docker pull unit@sha256:98a6958197fbd2ec9c8e072873d032c8d79deb0413e96459a0c03388b71ee3b1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull unit@sha256:63acd6b78037d457ffdac89cb5c2596b9dd3821760b1724520b2e5
 ### `unit:python3.12` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:55a63d6214d834d349dfdb2cc21090d58b299108d2394999ac051cdcb9d56b68
+$ docker pull unit@sha256:246e47a8aa262a4625dde7772787973a24dd01a274726460670fb7956b658ccb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **363.1 MB (363128105 bytes)**  
+-	Total Size: **363.1 MB (363125332 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b156dd3f64a816cece28269c1bb3e2c4ce1bfc61df103da88541391b1546b68`
+-	Image ID: `sha256:b66d20b7bd259ff1379bd5e550608a50927785520fc81432838b69178d48f447`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -52,9 +52,9 @@ RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo 
 # Tue, 26 Mar 2024 13:57:15 GMT
 ENV PYTHON_PIP_VERSION=24.0
 # Tue, 26 Mar 2024 13:57:15 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/e03e1607ad60522cf34a92e834138eb89f57667c/public/get-pip.py
+ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66d8a0f637083e2c3ddffc0cb1e65ce126afb856/public/get-pip.py
 # Tue, 26 Mar 2024 13:57:15 GMT
-ENV PYTHON_GET_PIP_SHA256=ee09098395e42eb1f82ef4acb231a767a6ae85504a9cf9983223df0a7cbd35d7
+ENV PYTHON_GET_PIP_SHA256=6fb7b781206356f45ad79efbb19322caa6c2a5ad39092d0d44d0fec94117e118
 # Tue, 26 Mar 2024 13:57:15 GMT
 RUN set -eux; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 	; 	rm -f get-pip.py; 		pip --version # buildkit
 # Tue, 26 Mar 2024 13:57:15 GMT
@@ -106,53 +106,53 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 23 Jul 2024 06:15:02 GMT  
 		Size: 197.0 MB (197039174 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e18c3148a5d0e5651f52df3ac1b0d796c0a2dc2b271fc32867bf86d47237d86b`  
-		Last Modified: Tue, 23 Jul 2024 07:24:01 GMT  
-		Size: 6.1 MB (6050971 bytes)  
+	-	`sha256:58f4aba5a2f8b26442f3bc770fe7954357617381af452c4addce40e223990a8e`  
+		Last Modified: Fri, 02 Aug 2024 14:43:31 GMT  
+		Size: 6.1 MB (6051157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1298dface74c8a8495a4d761cb850a9a62ef7fa812706b42cf21dc9967fdfd78`  
-		Last Modified: Tue, 23 Jul 2024 07:24:02 GMT  
-		Size: 23.2 MB (23151967 bytes)  
+	-	`sha256:575bae77b1b8b42254668cf12f107c1c564eeeadc3a53482d0a2049f2056a704`  
+		Last Modified: Fri, 02 Aug 2024 14:43:32 GMT  
+		Size: 23.2 MB (23152057 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fb1a72c87189d64c3f0e37bafd49f4d0c3ae412944122655b6203e5d4a1f433`  
-		Last Modified: Tue, 23 Jul 2024 07:24:01 GMT  
-		Size: 231.0 B  
+	-	`sha256:b05e808465c4938707ede6dc35afb28e3da58a2ef41ded6b157c97b21a165869`  
+		Last Modified: Fri, 02 Aug 2024 14:43:31 GMT  
+		Size: 234.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34838b09760794713cd9a81bcd90224f5d53b803b710c753b1437bc335ab59ea`  
-		Last Modified: Tue, 23 Jul 2024 07:24:01 GMT  
-		Size: 4.2 MB (4160093 bytes)  
+	-	`sha256:e6a7eb7916a2221c07608853608e0e1f46b74d1ab334576ae14422bfecfabdb9`  
+		Last Modified: Fri, 02 Aug 2024 14:43:31 GMT  
+		Size: 4.2 MB (4156994 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6428cb8c7d6ad1a10915c6a42ce1edc1bbb9565cf6b7e5a1c2c7ce7aba3a540`  
-		Last Modified: Tue, 23 Jul 2024 08:14:05 GMT  
-		Size: 7.3 MB (7285555 bytes)  
+	-	`sha256:8b8c9287d44e61547c1488ab23e7f9724c0bb9194e0b357a5ff0b0f506431109`  
+		Last Modified: Fri, 02 Aug 2024 14:57:33 GMT  
+		Size: 7.3 MB (7285597 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37ab0edff00c5d61013941efb44b13364a219fdc36bddb5d2cb6f758bd5051ac`  
-		Last Modified: Tue, 23 Jul 2024 08:14:04 GMT  
-		Size: 1.3 KB (1262 bytes)  
+	-	`sha256:441e438c694abfb863c0a02be35df067a565f4df5acba8b134bc89ee7fdf6d1e`  
+		Last Modified: Fri, 02 Aug 2024 14:57:35 GMT  
+		Size: 1.3 KB (1263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c4ca3cf9ecdb0a7dbb1566e0ca21baf9b3d6be6e1cf242fe536284505fbabc1`  
-		Last Modified: Tue, 23 Jul 2024 08:14:04 GMT  
-		Size: 1.5 KB (1451 bytes)  
+	-	`sha256:d955a0a214111c65b8f358fce9af31cf1ef1f558858fa5ae7a53f40dc25c36d5`  
+		Last Modified: Fri, 02 Aug 2024 14:57:33 GMT  
+		Size: 1.5 KB (1455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:python3.12` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:246b7a9830b46ee02926e557632cb2f1b9f5345da5d7ab17361c9f496d88d8a4
+$ docker pull unit@sha256:df8fdacc91589105fe2c29735c952a2c420681d689bb6f61a4a0f0da638e571d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.7 KB (25724 bytes)**  
+-	Total Size: **25.7 KB (25723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33112c4e59a1f197c328831cf75246c2640d76c360764545b34b341d0bd9a0fb`
+-	Image ID: `sha256:4da3487889a035545b28271fd60013227b2dceaa4075bffb294e4721de8b99ef`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e87e14835698515e1f8e79592a1bc9dece0a9a86052f2b4b14bac98870475aad`  
-		Last Modified: Tue, 23 Jul 2024 08:14:04 GMT  
-		Size: 25.7 KB (25724 bytes)  
+	-	`sha256:9b562592e5a0104778b7d9ceaab3a131982a7839e7d9cda1f9635d4fa6cae7ea`  
+		Last Modified: Fri, 02 Aug 2024 14:57:35 GMT  
+		Size: 25.7 KB (25723 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `unit:python3.12` - linux; arm64 variant v8
