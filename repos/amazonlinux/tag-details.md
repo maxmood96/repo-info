@@ -526,7 +526,12 @@ $ docker pull amazonlinux@sha256:83b1d6c94e8d5378846a48ee86bce9da4995ecf10f457d1
 
 ## `amazonlinux:2023.5.20240730.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazonlinux@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazonlinux:latest`
 
