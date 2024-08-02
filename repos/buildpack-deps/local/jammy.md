@@ -3268,15 +3268,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-8.0=8.0.37-0ubuntu0.22.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.37-0ubuntu0.22.04.3.dsc' mysql-8.0_8.0.37-0ubuntu0.22.04.3.dsc 3821 SHA512:f62c5baf1aedea5ca8f75e853f0873816de2e346b7d3dce6395a6735154dd091ca258bacfc42cfb6e68aee8d1cf22d1657f947718ecd6508dfa2062b4e8900fc
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.37.orig.tar.gz' mysql-8.0_8.0.37.orig.tar.gz 445594692 SHA512:4c6033d4f96990d3f324f0d5733273425ddf7cc11660e110e0dc848da6cfa47b7565c1eb0b5d1e08878a0ea2c7d1eb85b400ccca28e5b4383f7e9216ba3e1660
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.37.orig.tar.gz.asc' mysql-8.0_8.0.37.orig.tar.gz.asc 833 SHA512:24d7f7ee642fdd6b1504404359995f0eba744fe50e0f89a1a430cb71a3073d4bc3c9e7da2b44f086ab309d03743a465679ded4051bab7b2e3ceee665e440a5b8
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.37-0ubuntu0.22.04.3.debian.tar.xz' mysql-8.0_8.0.37-0ubuntu0.22.04.3.debian.tar.xz 162460 SHA512:75476c6c2146291ce15b72531f2e0e970edb391dac9cd0ba1b17c71293c9a809e1ecc58ec073e22338e72fa4f406edf7224ac44f7fe7b25f5a13c57d1040ceff
-```
 
 ### `dpkg` source package: `mysql-defaults=1.0.8`
 
@@ -3545,15 +3539,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.16
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.16.dsc' openssl_3.0.2-0ubuntu1.16.dsc 2422 SHA512:67194c2cbccc48be8fd3d81da7712a5815c13dee5af5b2597e9322159f25f0bfd8eebb78438948e8ec29d8b4171e6ad4b9bc3e5d4ff289d4952a8910a9fd9448
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.16.debian.tar.xz' openssl_3.0.2-0ubuntu1.16.debian.tar.xz 253388 SHA512:1eda93da47f41fda5d38c752dde9bc08204ab2a555dcd8ea4ce5257ac615229181b915bcf87730dd433567fdbdef45e38c4ed170b703f5aa08bb303b4ae61197
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
