@@ -133,9 +133,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris base-files=13.3
-'http://http.debian.net/debian/pool/main/b/base-files/base-files_13.3.dsc' base-files_13.3.dsc 1446 SHA256:15fdde12769673f32e569bb3779f232b3bf3b8499ee723e8dd0aba4ddbc5eefd
-'http://http.debian.net/debian/pool/main/b/base-files/base-files_13.3.tar.xz' base-files_13.3.tar.xz 67712 SHA256:350d0abf2d3de4e5ea6a9b7bcdd8c97a1bfc222ef023f423373ee4fe331890ac
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.3.dsc' base-files_13.3.dsc 1446 SHA256:15fdde12769673f32e569bb3779f232b3bf3b8499ee723e8dd0aba4ddbc5eefd
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.3.tar.xz' base-files_13.3.tar.xz 67712 SHA256:350d0abf2d3de4e5ea6a9b7bcdd8c97a1bfc222ef023f423373ee4fe331890ac
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/base-files/13.3/ (for browsing the source)
+- https://sources.debian.net/src/base-files/13.3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/13.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.4`
 
@@ -1113,21 +1119,13 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.43-7
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.43-7.dsc' gnupg2_2.2.43-7.dsc 3229 SHA256:ab73fc545b0a3ba5b2462e43be72859b0c25a3a246e2007094544187d328adb0
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.43.orig.tar.bz2' gnupg2_2.2.43.orig.tar.bz2 7435426 SHA256:a3b34c40f455d93054d33cf4cf2a8ce41149d499eca2fbb759619de04822d453
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.43.orig.tar.bz2.asc' gnupg2_2.2.43.orig.tar.bz2.asc 228 SHA256:adb6964121fde1299f0db31fe7380812f4b6bb66f4eaabdc4ab5c79480e6b701
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.43-7.debian.tar.xz' gnupg2_2.2.43-7.debian.tar.xz 118300 SHA256:a8b718ba92e30e79a21fa62f0945c1f4ce14459a39b3a98cdbbfc550ea3f5925
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.43-7/
 
-- https://sources.debian.net/src/gnupg2/2.2.43-7/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.43-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.43-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.8.6-2`
 
