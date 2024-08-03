@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6d2a3fa93c6c915a62d65f27aa28e492025d07e9f79216edfe26740fa60b0299`
+- Image ID: `sha256:c0fd0a78d8d3c353d17f6d543d9041791bbfea028ed2cf1a539f98571b95de0f`
 - Created: `2024-03-26T13:57:15Z`
 - Virtual Size: ~ 940.22 Mb  
   (total size of all layers on-disk)
@@ -16,8 +16,8 @@
   - `PYTHON_VERSION=3.11.9`
   - `PYTHON_PIP_VERSION=24.0`
   - `PYTHON_SETUPTOOLS_VERSION=65.5.1`
-  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/e03e1607ad60522cf34a92e834138eb89f57667c/public/get-pip.py`
-  - `PYTHON_GET_PIP_SHA256=ee09098395e42eb1f82ef4acb231a767a6ae85504a9cf9983223df0a7cbd35d7`
+  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66d8a0f637083e2c3ddffc0cb1e65ce126afb856/public/get-pip.py`
+  - `PYTHON_GET_PIP_SHA256=6fb7b781206356f45ad79efbb19322caa6c2a5ad39092d0d44d0fec94117e118`
 - Labels:
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
   - `org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images`
