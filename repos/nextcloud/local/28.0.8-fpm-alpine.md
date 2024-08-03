@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f0a96993255791dfa1a2c1cd93ee54213854a388866ce953460f1ef0fe157244`
-- Created: `2024-07-23T04:54:28.518748139Z`
-- Virtual Size: ~ 841.40 Mb  
+- Image ID: `sha256:9ddfc7a5fc919fb7ef2efffd18001dfed82dfc9a73c06018b5733cd3c441641f`
+- Created: `2024-08-01T23:37:54.924306319Z`
+- Virtual Size: ~ 842.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.21`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.21.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.21.tar.xz.asc`
-  - `PHP_SHA256=8cc44d51bb2506399ec176f70fe110f0c9e1f7d852a5303a2cd1403402199707`
+  - `PHP_VERSION=8.2.22`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.22.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.22.tar.xz.asc`
+  - `PHP_SHA256=8566229bc88ad1f4aadc10700ab5fbcec81587c748999d985f11cf3b745462df`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `NEXTCLOUD_VERSION=28.0.8`
@@ -302,16 +302,16 @@ Apache-2.0
 ### `apk` package: `curl`
 
 ```console
-curl-8.8.0-r0 description:
+curl-8.9.0-r0 description:
 URL retrival utility and library
 
-curl-8.8.0-r0 webpage:
+curl-8.9.0-r0 webpage:
 https://curl.se/
 
-curl-8.8.0-r0 installed size:
-244 KiB
+curl-8.9.0-r0 installed size:
+248 KiB
 
-curl-8.8.0-r0 license:
+curl-8.9.0-r0 license:
 curl
 
 ```
@@ -880,16 +880,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.8.0-r0 description:
+libcurl-8.9.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.8.0-r0 webpage:
+libcurl-8.9.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.8.0-r0 installed size:
-620 KiB
+libcurl-8.9.0-r0 installed size:
+628 KiB
 
-libcurl-8.8.0-r0 license:
+libcurl-8.9.0-r0 license:
 curl
 
 ```
