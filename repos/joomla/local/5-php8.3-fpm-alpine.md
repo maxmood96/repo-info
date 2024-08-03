@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b812d0c8298aa96bf050cbbd74a58619c00da9c2ac7eec36f331546cd92fb9b1`
-- Created: `2024-07-29T17:24:28.743681158Z`
-- Virtual Size: ~ 273.35 Mb  
+- Image ID: `sha256:ec0fd5e58b08f76acd250aac03bf5f158e523299af5f25ee473ac60c37fbb415`
+- Created: `2024-08-01T21:01:23.559616155Z`
+- Virtual Size: ~ 274.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.9`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.9.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.9.tar.xz.asc`
-  - `PHP_SHA256=bf4d7b8ea60a356064f88485278bd6f941a230ec16f0fc401574ce1445ad6c77`
+  - `PHP_VERSION=8.3.10`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.10.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.10.tar.xz.asc`
+  - `PHP_SHA256=a0f2179d00931fe7631a12cbc3428f898ca3d99fe564260c115af381d2a1978d`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=5.1.2`
   - `JOOMLA_SHA512=d344506443b403fa662aa4e626e11a76d8666c938f52e497030d4b422205a1cdf21d4457d5943f68eea47e904067f8005b49a6d95432255e772809a3a471d1b0`
@@ -270,16 +270,16 @@ Apache-2.0
 ### `apk` package: `curl`
 
 ```console
-curl-8.8.0-r0 description:
+curl-8.9.0-r0 description:
 URL retrival utility and library
 
-curl-8.8.0-r0 webpage:
+curl-8.9.0-r0 webpage:
 https://curl.se/
 
-curl-8.8.0-r0 installed size:
-244 KiB
+curl-8.9.0-r0 installed size:
+248 KiB
 
-curl-8.8.0-r0 license:
+curl-8.9.0-r0 license:
 curl
 
 ```
@@ -678,16 +678,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.8.0-r0 description:
+libcurl-8.9.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.8.0-r0 webpage:
+libcurl-8.9.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.8.0-r0 installed size:
-620 KiB
+libcurl-8.9.0-r0 installed size:
+628 KiB
 
-libcurl-8.8.0-r0 license:
+libcurl-8.9.0-r0 license:
 curl
 
 ```
