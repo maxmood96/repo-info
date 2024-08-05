@@ -1,7 +1,7 @@
 ## `photon:latest`
 
 ```console
-$ docker pull photon@sha256:90aed35ed74e46fcd28fc8ced057013fdd489920f2d302a471bb2d4f6ab99a9f
+$ docker pull photon@sha256:afec26ed45d78aaf2bac192fcd141126b5ece43381b51ffc36eb5d994c323c0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -65,50 +65,50 @@ $ docker pull photon@sha256:da24c722b7258c404d1e5105f2ee36f90c3c57827348ae798863
 ### `photon:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull photon@sha256:1bcdbeabc78a98a49aa42800d7dac5f3406ebf1cff5b290716457f4a356749b9
+$ docker pull photon@sha256:27f2730a26973357290a294832e4e89a4336557088479f32fa820c667ef6d199
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.1 MB (15140676 bytes)**  
+-	Total Size: **15.1 MB (15140651 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c62ec47c6b171da4256409ee30dbe47d0f7c0cd374b37a1395a16d3f0e572eb`
+-	Image ID: `sha256:d4e32f83090e22ff0bf223f4f6a568aef7b6b602de98e68f0333aa34390fe5b8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sun, 28 Jul 2024 10:42:30 GMT
-ADD photon-rootfs-5.0-8cd84e090.aarch64.tar.gz / # buildkit
-# Sun, 28 Jul 2024 10:42:30 GMT
-LABEL name=Photon OS aarch64/5.0 Base Image vendor=VMware build-date=20240728
-# Sun, 28 Jul 2024 10:42:30 GMT
+# Sun, 04 Aug 2024 10:45:35 GMT
+ADD photon-rootfs-5.0-8ac51553c.aarch64.tar.gz / # buildkit
+# Sun, 04 Aug 2024 10:45:35 GMT
+LABEL name=Photon OS aarch64/5.0 Base Image vendor=VMware build-date=20240804
+# Sun, 04 Aug 2024 10:45:35 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:3f2859eb0024a84418a994bacde1cb6582f2f008e1c18c3ac6f41e3352893de9`  
-		Last Modified: Mon, 29 Jul 2024 19:11:08 GMT  
-		Size: 15.1 MB (15140676 bytes)  
+	-	`sha256:c562e71ba6a70e059d0f4f891ec79b5354ce8189127018ee0c5bef6453cee8ea`  
+		Last Modified: Mon, 05 Aug 2024 19:20:59 GMT  
+		Size: 15.1 MB (15140651 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `photon:latest` - unknown; unknown
 
 ```console
-$ docker pull photon@sha256:d62fd264e2a6d5fad9194d20838f323776413c266e2db671ed61bba5926c1158
+$ docker pull photon@sha256:a639707ad675ecf9e4009e00c5729aba6353549ffb428e284bf1aca258b9f70b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **351.4 KB (351437 bytes)**  
+-	Total Size: **351.4 KB (351434 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aecb636422aeed6be5cf0c07b29b57f831969db01f2634037ef419876ce68477`
+-	Image ID: `sha256:3b82b5bc1aa06a615d70d746f73626af25044f7852ac9ec2a444115c04aab664`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d3bfb218310a9fb717c31bd2dc02e8840993207ede7b3568134582e65cc1fe50`  
-		Last Modified: Mon, 29 Jul 2024 19:11:08 GMT  
+	-	`sha256:aae469873a51aa81352c72827edd5b38339ca8fa7ca75f6d22e849beb08f7969`  
+		Last Modified: Mon, 05 Aug 2024 19:20:58 GMT  
 		Size: 345.9 KB (345865 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:068eaef2116455ef8a2639129fa0e8ac3dbc0824ba6dbc0e5860d52b25f9e043`  
-		Last Modified: Mon, 29 Jul 2024 19:11:08 GMT  
-		Size: 5.6 KB (5572 bytes)  
+	-	`sha256:465ea2e7b8e9b0372162b797b08085198a998e2ce0f2da85d9b1ed881ea0acc9`  
+		Last Modified: Mon, 05 Aug 2024 19:20:58 GMT  
+		Size: 5.6 KB (5569 bytes)  
 		MIME: application/vnd.in-toto+json
