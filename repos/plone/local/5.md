@@ -1,10 +1,10 @@
-# `plone:5.2.13-python38`
+# `plone:5.2.14-python38`
 
 ## Docker Metadata
 
-- Image ID: `sha256:decdbb24347764c54212470735cf6a9830da141724b1f8086077a672e3cf3777`
-- Created: `2023-08-29T09:20:20Z`
-- Virtual Size: ~ 796.43 Mb  
+- Image ID: `sha256:2192c7a6258f4b0d28ccc1c6eb436ecb72ee5416062abd3bc71ea43e3a4a0de1`
+- Created: `2024-07-31T10:13:39Z`
+- Virtual Size: ~ 796.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -16,16 +16,16 @@
   - `PYTHON_VERSION=3.8.19`
   - `PYTHON_PIP_VERSION=23.0.1`
   - `PYTHON_SETUPTOOLS_VERSION=57.5.0`
-  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/e03e1607ad60522cf34a92e834138eb89f57667c/public/get-pip.py`
-  - `PYTHON_GET_PIP_SHA256=ee09098395e42eb1f82ef4acb231a767a6ae85504a9cf9983223df0a7cbd35d7`
+  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66d8a0f637083e2c3ddffc0cb1e65ce126afb856/public/get-pip.py`
+  - `PYTHON_GET_PIP_SHA256=6fb7b781206356f45ad79efbb19322caa6c2a5ad39092d0d44d0fec94117e118`
   - `PIP=22.2.2`
   - `ZC_BUILDOUT=3.0.1`
   - `SETUPTOOLS=65.7.0`
   - `WHEEL=0.38.4`
   - `PLONE_MAJOR=5.2`
-  - `PLONE_VERSION=5.2.13`
-  - `PLONE_VERSION_RELEASE=Plone-5.2.13-UnifiedInstaller-1.0`
-  - `PLONE_MD5=12c037fae9413385149e8677f8457b84`
+  - `PLONE_VERSION=5.2.14`
+  - `PLONE_VERSION_RELEASE=Plone-5.2.14-UnifiedInstaller-1.0`
+  - `PLONE_MD5=e8e1f774f069026319be3038631e0734`
 
 ## `dpkg` (`.deb`-based packages)
 
