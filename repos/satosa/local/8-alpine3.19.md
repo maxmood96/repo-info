@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1b6a5bc746c1f6f4cab52e7ed4d3d839cb3bf8e87dd9d0148c386c50d03924bb`
+- Image ID: `sha256:9c11c1a5788b5e17adf1665ef071c515e374e58b23188eefc68dc382ccf70e88`
 - Created: `2023-12-19T17:24:54Z`
 - Virtual Size: ~ 136.90 Mb  
   (total size of all layers on-disk)
@@ -15,8 +15,8 @@
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
   - `PYTHON_VERSION=3.12.4`
   - `PYTHON_PIP_VERSION=24.0`
-  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/e03e1607ad60522cf34a92e834138eb89f57667c/public/get-pip.py`
-  - `PYTHON_GET_PIP_SHA256=ee09098395e42eb1f82ef4acb231a767a6ae85504a9cf9983223df0a7cbd35d7`
+  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66d8a0f637083e2c3ddffc0cb1e65ce126afb856/public/get-pip.py`
+  - `PYTHON_GET_PIP_SHA256=6fb7b781206356f45ad79efbb19322caa6c2a5ad39092d0d44d0fec94117e118`
   - `SATOSA_VERSION=8.4.0`
 
 ## `apk` (`.apk`-based packages)
@@ -789,16 +789,16 @@ Public-Domain
 ### `apk` package: `xmlsec`
 
 ```console
-xmlsec-1.3.2-r0 description:
+xmlsec-1.3.5-r0 description:
 C based implementation for XML Signature Syntax and Processing and XML Encryption Syntax and Processing
 
-xmlsec-1.3.2-r0 webpage:
+xmlsec-1.3.5-r0 webpage:
 https://github.com/lsh123/xmlsec/
 
-xmlsec-1.3.2-r0 installed size:
-1108 KiB
+xmlsec-1.3.5-r0 installed size:
+1104 KiB
 
-xmlsec-1.3.2-r0 license:
+xmlsec-1.3.5-r0 license:
 MIT
 
 ```
