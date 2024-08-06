@@ -133,19 +133,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.6
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.6.dsc' apt_2.9.6.dsc 2973 SHA256:565635c91e5728ec1da49b03b21ff24abc953927150dbe551cc73791cabc8d3e
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.6.tar.xz' apt_2.9.6.tar.xz 2382804 SHA256:79aa55e5705cfd69a9312b1ff23d7b58e53232ee22b64d16a333f3ae62660dd7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.6/
 
-- https://sources.debian.net/src/apt/2.9.6/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-1`
 
@@ -4464,21 +4458,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.7p1-7
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.7p1-7.dsc' openssh_9.7p1-7.dsc 3313 SHA256:57b57095c0f0d88382e197342af0053b3a72a84e07a870185fa2121921c42f40
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.7p1.orig.tar.gz' openssh_9.7p1.orig.tar.gz 1848766 SHA256:490426f766d82a2763fcacd8d83ea3d70798750c7bd2aff2e57dc5660f773ffd
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.7p1.orig.tar.gz.asc' openssh_9.7p1.orig.tar.gz.asc 833 SHA256:9cee21fd45be07747fa82cd799e4cd8d14203165834d6fc7ccbcf60718901489
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.7p1-7.debian.tar.xz' openssh_9.7p1-7.debian.tar.xz 194568 SHA256:1942bc397ec6bdef7968b870322c1c3886c8e0f0e57bfe5e63eaaa8b0b0ae5c6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:9.7p1-7/
 
-- https://sources.debian.net/src/openssh/1:9.7p1-7/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:9.7p1-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:9.7p1-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.2.2-1`
 
@@ -5641,21 +5627,13 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.24.5-1
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.24.5-1.dsc' wget_1.24.5-1.dsc 2164 SHA256:a57683a782a4770122636ca29463466891656aa56fc5cf23dc1665e8a2136c12
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.24.5.orig.tar.gz' wget_1.24.5.orig.tar.gz 5182521 SHA256:fa2dc35bab5184ecbc46a9ef83def2aaaa3f4c9f3c97d4bd19dcb07d4da637de
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.24.5.orig.tar.gz.asc' wget_1.24.5.orig.tar.gz.asc 854 SHA256:2991bfab0481793d3587d5e94531d1f48297877e1d1ff88d0bc03f1b0fb19fe5
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.24.5-1.debian.tar.xz' wget_1.24.5-1.debian.tar.xz 60756 SHA256:6be23ded05bdd87e0cb566794c830ce5ff46bf75ab7d31b36d91129b0f0d2d1c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/wget/1.24.5-1/
 
-- https://sources.debian.net/src/wget/1.24.5-1/ (for browsing the source)
-- https://sources.debian.net/src/wget/1.24.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wget/1.24.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xorg-sgml-doctools=1:1.11-1.1`
 
