@@ -33979,11 +33979,21 @@ $ docker pull bash@sha256:3c2ca21f01a1b7d0e6ace8b60da2f4f780f20a44e220f69c36228f
 
 ## `bash:devel-20240730`
 
-**does not exist** (yet?)
+```console
+$ docker pull bash@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `bash:devel-20240730-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull bash@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `bash:devel-alpine3.20`
 
