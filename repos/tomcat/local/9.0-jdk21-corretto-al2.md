@@ -1,10 +1,10 @@
-# `tomcat:9.0.91-jdk21-corretto-al2`
+# `tomcat:9.0.93-jdk21-corretto-al2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:feca1cef2c31820297c4108850341d16b6aabdfc8d3ef03236ef0049047a421e`
-- Created: `2024-07-08T08:03:40Z`
-- Virtual Size: ~ 525.53 Mb  
+- Image ID: `sha256:100cf4fa94a90970343a5471f0e83632514e80dd4e5105e2df1be60a81e59f98`
+- Created: `2024-08-06T08:03:42Z`
+- Virtual Size: ~ 526.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -17,8 +17,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.91`
-  - `TOMCAT_SHA512=b22054c9141782232a693765d23d944f0f50774af17dd8968331e020b425e71459b5877a7ba8c2121246a5ce47e6b6a31c3f4215ef133e942da45b49cb534948`
+  - `TOMCAT_VERSION=9.0.93`
+  - `TOMCAT_SHA512=3069924eb7041ccc0f2aeceb7d8626793a1a073a5b739a840d7974a18ebeb26cc3374cc5f4a3ffc74d3b019c0cb33e3d1fe96296e6663ac75a73c1171811726d`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -909,16 +909,11 @@ $ dnf --quiet download --source --url openssl-libs-1.0.2k-24.amzn2.0.12
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f0459b3295cdf51899bdde8773f452fd32f9418e4558eb4104437e335c4a9bd4/../../../../../blobstore/c70b7f1baafad16ad0d7c31311c2f855d91fdc33d66956d07d8eb71564655b28/openssl-1.0.2k-24.amzn2.0.12.src.rpm
 ```
 
-### `rpm` package: `openssl11-libs-1.1.1g-12.amzn2.0.21.x86_64`
+### `rpm` package: `openssl11-libs-1.1.1g-12.amzn2.0.22.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL and ASL 2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url openssl11-libs-1.1.1g-12.amzn2.0.21
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f0459b3295cdf51899bdde8773f452fd32f9418e4558eb4104437e335c4a9bd4/../../../../../blobstore/16e676de78d03d5631f58d780809ddc5e2f7ff6ec2c68db25c916771eba92508/openssl11-1.1.1g-12.amzn2.0.21.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `openssl11-pkcs11-0.4.10-6.amzn2.0.1.x86_64`
 
