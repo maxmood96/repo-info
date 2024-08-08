@@ -2,11 +2,16 @@
 
 # Tags of `eggdrop`
 
+-	[`eggdrop:1.10.0rc1`](#eggdrop1100rc1)
 -	[`eggdrop:1.9`](#eggdrop19)
 -	[`eggdrop:1.9.5`](#eggdrop195)
 -	[`eggdrop:develop`](#eggdropdevelop)
 -	[`eggdrop:latest`](#eggdroplatest)
 -	[`eggdrop:stable`](#eggdropstable)
+
+## `eggdrop:1.10.0rc1`
+
+**does not exist** (yet?)
 
 ## `eggdrop:1.9`
 
