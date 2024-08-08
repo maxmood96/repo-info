@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a64ece0e809ef3a1702fb3284e666a36b831ad3c09e62597f266b6af82ccd4a3`
-- Created: `2024-07-20T21:06:39Z`
-- Virtual Size: ~ 513.41 Mb  
+- Image ID: `sha256:22f32b52fd3a3428b1d0cf3dc4fd41c20d0cd4a5f1cf68b58fac7858a3ae63d7`
+- Created: `2024-08-07T18:04:12Z`
+- Virtual Size: ~ 514.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/bin/bash","/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.24+8`
-  - `CLOJURE_VERSION=1.11.3.1456`
+  - `CLOJURE_VERSION=1.11.4.1474`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -282,13 +282,13 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.2.debian.tar.xz' coreutils_8.32-4.1ubuntu1.2.debian.tar.xz 44868 SHA512:7718e917f8f2c5c5574e73a079ea8fd3b32bc898f2e12168dc3711dfdd896e4727283011050b80f65e60994fca49da031d70901d453612132764dca7dec99543
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.16`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.17`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.16`
-- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.16`
-- `libcurl4:amd64=7.81.0-1ubuntu1.16`
+- `curl=7.81.0-1ubuntu1.17`
+- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.17`
+- `libcurl4:amd64=7.81.0-1ubuntu1.17`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -302,11 +302,11 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.16
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.16.dsc' curl_7.81.0-1ubuntu1.16.dsc 3143 SHA512:2bd2da2215732d792fe614d83b4f208e6d51bd91c4e6a687f4ebcd25341d1e272e22d901a7a79b3ffc52d52bcdf7b3341de12bb104910a2a994f10c3b60dbdc6
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.17
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.17.dsc' curl_7.81.0-1ubuntu1.17.dsc 3143 SHA512:e9bb4fb4381bc146330bd166226253268927c03e3f31cfb133021d780956434f071b967484cb08a394d919ba543e8a86429647886c8cfb3f528c0014e903bf37
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.16.debian.tar.xz' curl_7.81.0-1ubuntu1.16.debian.tar.xz 74060 SHA512:2ab57a71c69b2cf91a5b4170e0b46cbef2000ffecad24b0edda02c9c1fe9cde41016746ff0f799a17cb3c25fb155777ee3ce133ef2162ba2db733e6fac734231
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.17.debian.tar.xz' curl_7.81.0-1ubuntu1.17.debian.tar.xz 76336 SHA512:e9684d47b6552df4a34d025c159f64247b88f5e5d85549250ff6d458b9c0e0cfbf67474240fcd16b3bc654e662a88e7a9b4333e74b5eeea9930b82eb69c78eda
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
@@ -2129,14 +2129,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.tar.gz' python3-defaults_3.10.6-1~22.04.tar.gz 145325 SHA512:4dce1fcadb47a3fbd72e489e78c6543aa4b35a0480eb4e10617b3afd223cdd244e97f79db55f2abf28367848658ae46a3cda895d3d9dcf21c530149207f080dd
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.4`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.5`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.4`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.4`
-- `python3.10=3.10.12-1~22.04.4`
-- `python3.10-minimal=3.10.12-1~22.04.4`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.5`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.5`
+- `python3.10=3.10.12-1~22.04.5`
+- `python3.10-minimal=3.10.12-1~22.04.5`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2158,9 +2158,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.5.dsc' python3.10_3.10.12-1~22.04.5.dsc 3674 SHA512:bfde4df2cad3b6d2aa38ad535052e8c17023ec04a10cf16dd9e42832b15846f6e0de3053474844a59af1a4d1a670248380b47558b2c0fc56edf0178d5488834b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.5.debian.tar.xz' python3.10_3.10.12-1~22.04.5.debian.tar.xz 229192 SHA512:91dcad43721f8a816cb008c5e829a7213e45787f5662cf291faa43607268a7a79cf8766ea6a9b912ea580c30b683a439780ca957cb5c4b4f3aab9b72d7d15c26
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
