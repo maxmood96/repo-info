@@ -794,14 +794,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.19.2-2ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.3.dsc' krb5_1.19.2-2ubuntu0.3.dsc 3356 SHA512:924ae89c4c515c01416856d0ef4f3ff50e6258bfb922ec7d2d7b9c1af5d07af092ba07ae5f74a48859e2a0bcb507e572dd55c3ba5221ec37e264bfa7f9c4f800
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2.orig.tar.gz' krb5_1.19.2.orig.tar.gz 8741053 SHA512:b90d6ed0e1e8a87eb5cb2c36d88b823a6a6caabf85e5d419adb8a930f7eea09a5f8491464e7e454cca7ba88be09d19415962fe0036ad2e31fc584f9fc0bbd470
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.3.debian.tar.xz' krb5_1.19.2-2ubuntu0.3.debian.tar.xz 108848 SHA512:368d8da9d03856e93341fe25483e3108f12b661dc00176ec0c42c40a73bf55f62f1f97724b1e811b9f15e2cf4aa6b43fde44d5b00ef9c2729fef1ed717538d3f
-```
 
 ### `dpkg` source package: `libbsd=0.11.5-1`
 
