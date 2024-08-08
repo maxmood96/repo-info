@@ -3125,11 +3125,21 @@ $ docker pull geonetwork@sha256:251fb17cf9c58fddcf555e481e498be15f6bfa0e5376fc73
 
 ## `geonetwork:3.12.12`
 
-**does not exist** (yet?)
+```console
+$ docker pull geonetwork@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `geonetwork:3.12.12-postgres`
 
-**does not exist** (yet?)
+```console
+$ docker pull geonetwork@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `geonetwork:4`
 
