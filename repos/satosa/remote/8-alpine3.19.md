@@ -1,7 +1,7 @@
 ## `satosa:8-alpine3.19`
 
 ```console
-$ docker pull satosa@sha256:de9b3f867c5cd3bec4f85edd33b31f9c73c07512e1f7be43a144225456070558
+$ docker pull satosa@sha256:dfa1cd30f3af4211e0b0ce6bf653254d1ba62ba41e2bd275d29b10664f1572a9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20,13 +20,13 @@ $ docker pull satosa@sha256:de9b3f867c5cd3bec4f85edd33b31f9c73c07512e1f7be43a144
 ### `satosa:8-alpine3.19` - linux; amd64
 
 ```console
-$ docker pull satosa@sha256:100c0a8a9e8e0708f5a9f5c716bf5bd6c0b4326e86ac22c222d2889fd6ac9baf
+$ docker pull satosa@sha256:009f863b605b46b979abeff4fa55a37cf71c6b5e1ad603797df306268509172f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.2 MB (48161846 bytes)**  
+-	Total Size: **47.1 MB (47141348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c11c1a5788b5e17adf1665ef071c515e374e58b23188eefc68dc382ccf70e88`
+-	Image ID: `sha256:de6ed02397ffb8c076721dbd8b0084ed71f8de3d0c9b398cbb322f69fe500d01`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["gunicorn","-b0.0.0.0:8080","satosa.wsgi:app"]`
 
@@ -44,13 +44,13 @@ RUN set -eux; 	apk add --no-cache 		ca-certificates 		tzdata 	; # buildkit
 # Tue, 19 Dec 2023 17:24:54 GMT
 ENV GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305
 # Tue, 19 Dec 2023 17:24:54 GMT
-ENV PYTHON_VERSION=3.12.4
+ENV PYTHON_VERSION=3.12.5
 # Tue, 19 Dec 2023 17:24:54 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gnupg 		tar 		xz 				bluez-dev 		bzip2-dev 		dpkg-dev dpkg 		expat-dev 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz-dev 		zlib-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		$(test "$gnuArch" != 'riscv64-linux-musl' && echo '--enable-optimizations') 		--enable-option-checking=fatal 		--enable-shared 		--with-lto 		--with-system-expat 		--without-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 		"PROFILE_TASK=${PROFILE_TASK:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		"PROFILE_TASK=${PROFILE_TASK:-}" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-network --virtual .python-rundeps 	; 	apk del --no-network .build-deps; 		python3 --version # buildkit
 # Tue, 19 Dec 2023 17:24:54 GMT
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
 # Tue, 19 Dec 2023 17:24:54 GMT
-ENV PYTHON_PIP_VERSION=24.0
+ENV PYTHON_PIP_VERSION=24.2
 # Tue, 19 Dec 2023 17:24:54 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66d8a0f637083e2c3ddffc0cb1e65ce126afb856/public/get-pip.py
 # Tue, 19 Dec 2023 17:24:54 GMT
@@ -86,77 +86,77 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 		Last Modified: Mon, 22 Jul 2024 22:27:25 GMT  
 		Size: 3.4 MB (3419040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a2292d8bb49e24492b5e580ca64242f3b285ebb8bf28842f9b24ba298d69366`  
-		Last Modified: Fri, 02 Aug 2024 14:50:33 GMT  
-		Size: 627.9 KB (627912 bytes)  
+	-	`sha256:9dc2b46ad828e0962791d6af813a5db09bf60b5690cd9e51cc9358e1e8bb76a0`  
+		Last Modified: Wed, 07 Aug 2024 19:19:34 GMT  
+		Size: 627.9 KB (627926 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:502d311e9e2fbe35b91e478e1a8eb9fa949bddd75b81914abec5cae2bf5e9261`  
-		Last Modified: Fri, 02 Aug 2024 14:50:33 GMT  
-		Size: 11.8 MB (11780296 bytes)  
+	-	`sha256:5fde06aff96143e5cd2140f3dfde1469df7b8624b939d05ca601e87303463637`  
+		Last Modified: Wed, 07 Aug 2024 19:19:34 GMT  
+		Size: 11.5 MB (11500227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da3fa4dc1f12a3a95574fa7c6ce08b267a72522e89738a39b2dde7a8df439e35`  
-		Last Modified: Fri, 02 Aug 2024 14:50:33 GMT  
-		Size: 227.0 B  
+	-	`sha256:14e3eb33eb7c14b8907935639558c8317d3e4df73a79e3068fab73669bdd7713`  
+		Last Modified: Wed, 07 Aug 2024 19:19:33 GMT  
+		Size: 230.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2356efa394a16be351fd4b44cdc00c698334025c726e362667865edc0fe91a93`  
-		Last Modified: Fri, 02 Aug 2024 14:50:33 GMT  
-		Size: 4.2 MB (4156751 bytes)  
+	-	`sha256:5bf5c3a2145e46b6eb099920424611c208bdd8cc5730acced63ea5c17ee0644e`  
+		Last Modified: Wed, 07 Aug 2024 19:19:34 GMT  
+		Size: 3.9 MB (3905413 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d380f425af47acf676e1b865135b4613351e5521605b571991cebfa280711a93`  
-		Last Modified: Fri, 02 Aug 2024 15:13:02 GMT  
-		Size: 7.9 MB (7888755 bytes)  
+	-	`sha256:370ca545970ff7eaabf7d3158c88c30db9faa3dbc2336884c6c972e7544072bc`  
+		Last Modified: Wed, 07 Aug 2024 19:54:27 GMT  
+		Size: 7.4 MB (7415262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922bcfbc7c985a74a58a8775afe8a450bc243ce40f9eb4f6d90675e702664e19`  
-		Last Modified: Fri, 02 Aug 2024 15:13:03 GMT  
-		Size: 20.3 MB (20276776 bytes)  
+	-	`sha256:87ef81cd85a71e09f70a5c55ee1054c89289a8c3573db858bbc5ea05fc06fb75`  
+		Last Modified: Wed, 07 Aug 2024 19:54:27 GMT  
+		Size: 20.3 MB (20261160 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17293967e1ac185084247be24c5af39ec1bae913269531e085c01216d7044635`  
-		Last Modified: Fri, 02 Aug 2024 15:13:01 GMT  
-		Size: 9.9 KB (9921 bytes)  
+	-	`sha256:b07279b57e5ecd411750e5e07b3dc7b04d6748048e809b04a5c248572c5a7e64`  
+		Last Modified: Wed, 07 Aug 2024 19:54:26 GMT  
+		Size: 9.9 KB (9919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0b51f718feb1158147b20da2659ea7a793cbfd3389a01fe477ff0bfa6a000ab`  
-		Last Modified: Fri, 02 Aug 2024 15:13:02 GMT  
-		Size: 2.1 KB (2136 bytes)  
+	-	`sha256:2867991d9bb334d3ca53c891a41fae5c05be8fc6b202c95c6d1b83bdfc648976`  
+		Last Modified: Wed, 07 Aug 2024 19:54:26 GMT  
+		Size: 2.1 KB (2139 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `satosa:8-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull satosa@sha256:8cac8b16051781d2d95bb0813b96ea4e866ee8a277b78db0168bc4438324676b
+$ docker pull satosa@sha256:496b2cfd0340ec66611c6012fb81085fe58bbad9912808909be767e345dd256c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 MB (1234296 bytes)**  
+-	Total Size: **1.2 MB (1234792 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ce9559b9fc6487dbc8f1ebdb71440b833db153f6c455bde82eed18ac3fdd59a`
+-	Image ID: `sha256:d9eefcd9956c54fb2b0b2730d17d902ad613f5f11f0326ee68d8c320f67db81b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3e24a6e41d0ac42ed660dbec4f9ee7add5ff3d48fdd8f5fc743ebfbb19a46fc1`  
-		Last Modified: Fri, 02 Aug 2024 15:13:02 GMT  
-		Size: 1.2 MB (1210119 bytes)  
+	-	`sha256:89d4d527cd648758928db56f66eadecba0c729e7e524bae24e844601ca237844`  
+		Last Modified: Wed, 07 Aug 2024 19:54:26 GMT  
+		Size: 1.2 MB (1210614 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0b9b56f1f5e393d421727fd6c2ee8fa344098fbf06eda4a23ee2a9e08cd535c8`  
-		Last Modified: Fri, 02 Aug 2024 15:13:01 GMT  
-		Size: 24.2 KB (24177 bytes)  
+	-	`sha256:ebb604dd400ce613e4e968191435a017bf03ea2074d67a5f13cb15f8e5d4d82c`  
+		Last Modified: Wed, 07 Aug 2024 19:54:26 GMT  
+		Size: 24.2 KB (24178 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `satosa:8-alpine3.19` - linux; arm variant v7
 
 ```console
-$ docker pull satosa@sha256:14c638b4b8a399c24a740ea6b0bf012d07e6e2ead8f0f5dc846a5c9dbf4ac529
+$ docker pull satosa@sha256:c96bf16fdd0e95b6339733bb3c877b4a451736f2dc7351332679017f933bd07e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **158.1 MB (158104987 bytes)**  
+-	Total Size: **72.5 MB (72505502 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:027dbc6240ccdc1df9304bc57dbbde8c39bde7c76d90e0c5570c19e3fbeb0887`
+-	Image ID: `sha256:dec05d3b013e03e9bdd4d317920f2f49de7d45acab870ec5d589f1dba569fbf7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["gunicorn","-b0.0.0.0:8080","satosa.wsgi:app"]`
 
@@ -174,13 +174,13 @@ RUN set -eux; 	apk add --no-cache 		ca-certificates 		tzdata 	; # buildkit
 # Tue, 19 Dec 2023 17:24:54 GMT
 ENV GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305
 # Tue, 19 Dec 2023 17:24:54 GMT
-ENV PYTHON_VERSION=3.12.4
+ENV PYTHON_VERSION=3.12.5
 # Tue, 19 Dec 2023 17:24:54 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gnupg 		tar 		xz 				bluez-dev 		bzip2-dev 		dpkg-dev dpkg 		expat-dev 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz-dev 		zlib-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		$(test "$gnuArch" != 'riscv64-linux-musl' && echo '--enable-optimizations') 		--enable-option-checking=fatal 		--enable-shared 		--with-lto 		--with-system-expat 		--without-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 		"PROFILE_TASK=${PROFILE_TASK:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		"PROFILE_TASK=${PROFILE_TASK:-}" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-network --virtual .python-rundeps 	; 	apk del --no-network .build-deps; 		python3 --version # buildkit
 # Tue, 19 Dec 2023 17:24:54 GMT
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
 # Tue, 19 Dec 2023 17:24:54 GMT
-ENV PYTHON_PIP_VERSION=24.0
+ENV PYTHON_PIP_VERSION=24.2
 # Tue, 19 Dec 2023 17:24:54 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66d8a0f637083e2c3ddffc0cb1e65ce126afb856/public/get-pip.py
 # Tue, 19 Dec 2023 17:24:54 GMT
@@ -220,73 +220,73 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 		Last Modified: Wed, 24 Jul 2024 10:02:21 GMT  
 		Size: 628.0 KB (627989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7b7636a311d73460783ec08c578f6a6a10a6a3df0e3016e464369ad7467db5a`  
-		Last Modified: Wed, 24 Jul 2024 10:02:22 GMT  
-		Size: 10.9 MB (10938981 bytes)  
+	-	`sha256:06edd34be8b9ba5da915d801b435bfb90ed4c553da299b2edb6293bbef6cd86a`  
+		Last Modified: Wed, 07 Aug 2024 22:21:25 GMT  
+		Size: 10.7 MB (10656411 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:56c974cd6e05e22cc76de3c52804f5e16c9a0258b0630e2059caa7a74e2791c8`  
-		Last Modified: Wed, 24 Jul 2024 10:02:21 GMT  
-		Size: 229.0 B  
+	-	`sha256:164f482cec3d411bf812c97570ac5c9cd9745c2358cb78bd766f07f01038b63c`  
+		Last Modified: Wed, 07 Aug 2024 22:21:24 GMT  
+		Size: 230.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d06069daac06fa3b381ee23fd4dab45418de133314bbbd3cb312de2c4452eee9`  
-		Last Modified: Thu, 01 Aug 2024 21:34:19 GMT  
-		Size: 4.2 MB (4156758 bytes)  
+	-	`sha256:ecee501b601dddee87afed9b147f88b7094b58968932e2db8f4642c70c29835f`  
+		Last Modified: Wed, 07 Aug 2024 22:21:25 GMT  
+		Size: 3.9 MB (3905246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:357ee8d101d45554f46976f40875dae8a9afb5d3de99cc9cf183df3fb5e39488`  
-		Last Modified: Fri, 02 Aug 2024 02:04:09 GMT  
-		Size: 11.0 MB (10965724 bytes)  
+	-	`sha256:dc06c684d481d22904b45fda4d41a7fe0a3ed6420e6d1442455fb15c94e21502`  
+		Last Modified: Wed, 07 Aug 2024 22:54:31 GMT  
+		Size: 10.6 MB (10587333 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37d9ffdedbf2df884a39e1f9952fa7fd061751f7e8a55306e6bcf77cd4d12836`  
-		Last Modified: Fri, 02 Aug 2024 02:04:12 GMT  
-		Size: 128.5 MB (128476102 bytes)  
+	-	`sha256:56b7a7c7d0fde6e73e91a88b54dfba806b125f4cdf4b137130090a861dfe8b5d`  
+		Last Modified: Wed, 07 Aug 2024 22:54:32 GMT  
+		Size: 43.8 MB (43789098 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bef7434363521e10af18c3e9d672f77201bfdd650d7180273b6c8cc56c3ad5c`  
-		Last Modified: Fri, 02 Aug 2024 02:04:08 GMT  
-		Size: 9.9 KB (9923 bytes)  
+	-	`sha256:8865d7f948cb9b4e271f079948336106a5e6261a68b4ad7ef24a91d5f50b8548`  
+		Last Modified: Wed, 07 Aug 2024 22:54:31 GMT  
+		Size: 9.9 KB (9919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e592363452b4b947c50216581b48b04fcd942ba405c033759f9e6161dbafb57`  
-		Last Modified: Fri, 02 Aug 2024 02:04:08 GMT  
-		Size: 2.1 KB (2144 bytes)  
+	-	`sha256:4a6f7cb057080e18262cc51e567458dc52a364a853254dfce2a68cf785cfff43`  
+		Last Modified: Wed, 07 Aug 2024 22:54:31 GMT  
+		Size: 2.1 KB (2139 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `satosa:8-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull satosa@sha256:88db576b84945179d7c772461895a733ffac7645e4be88d8c8ef5b83fd54e17b
+$ docker pull satosa@sha256:bad05668ece01e519f2962880fefc498abb71a45e08c4d0f01cb92c0f888a65d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 MB (1237408 bytes)**  
+-	Total Size: **1.2 MB (1237899 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05f0e74fdb594b40f14c3ea90492d6d6886b94a0ac32968bc4b2565b832f3d11`
+-	Image ID: `sha256:a8e7600f21460bbe6c01b74bcfa036c773081115e657d0657c7e4eceea8d9d2d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4432ab000b43119fa164d7ea019590a44b03325f56f1157be790f9ccd0421f9d`  
-		Last Modified: Fri, 02 Aug 2024 02:04:08 GMT  
-		Size: 1.2 MB (1213051 bytes)  
+	-	`sha256:f48a31cd8dfeda687b959c2ab3fc80f2bea6c8b45f96af22d54a68561df86653`  
+		Last Modified: Wed, 07 Aug 2024 22:54:30 GMT  
+		Size: 1.2 MB (1213546 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e9c8a0297b5ca3ef6433f12845c78fc855b7f2dc6503ff67a00de46b3cf1f48`  
-		Last Modified: Fri, 02 Aug 2024 02:04:08 GMT  
-		Size: 24.4 KB (24357 bytes)  
+	-	`sha256:e88743dae485e023406ce53cfb40ed9c40311580d799b672464015b58075f6fd`  
+		Last Modified: Wed, 07 Aug 2024 22:54:30 GMT  
+		Size: 24.4 KB (24353 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `satosa:8-alpine3.19` - linux; arm64 variant v8
 
 ```console
-$ docker pull satosa@sha256:0339a90b959567bbafe6e01c8515945c035007a16139d57a862720a50212a006
+$ docker pull satosa@sha256:838aa507437825c7da9db24d5ab197adca5e16b435d0769f81cfec93d6367d4e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.0 MB (51039834 bytes)**  
+-	Total Size: **46.8 MB (46752206 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6eb615a4dbcf452ec770a13a455b5eeb8ea639a988a5aefdbf3e738b635fcab8`
+-	Image ID: `sha256:167b4dc81fa8e46404707bdeedd1ea9922353f9d504b9959f0f10e0fceb76384`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["gunicorn","-b0.0.0.0:8080","satosa.wsgi:app"]`
 
@@ -304,13 +304,13 @@ RUN set -eux; 	apk add --no-cache 		ca-certificates 		tzdata 	; # buildkit
 # Tue, 19 Dec 2023 17:24:54 GMT
 ENV GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305
 # Tue, 19 Dec 2023 17:24:54 GMT
-ENV PYTHON_VERSION=3.12.4
+ENV PYTHON_VERSION=3.12.5
 # Tue, 19 Dec 2023 17:24:54 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gnupg 		tar 		xz 				bluez-dev 		bzip2-dev 		dpkg-dev dpkg 		expat-dev 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz-dev 		zlib-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		$(test "$gnuArch" != 'riscv64-linux-musl' && echo '--enable-optimizations') 		--enable-option-checking=fatal 		--enable-shared 		--with-lto 		--with-system-expat 		--without-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 		"PROFILE_TASK=${PROFILE_TASK:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		"PROFILE_TASK=${PROFILE_TASK:-}" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-network --virtual .python-rundeps 	; 	apk del --no-network .build-deps; 		python3 --version # buildkit
 # Tue, 19 Dec 2023 17:24:54 GMT
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
 # Tue, 19 Dec 2023 17:24:54 GMT
-ENV PYTHON_PIP_VERSION=24.0
+ENV PYTHON_PIP_VERSION=24.2
 # Tue, 19 Dec 2023 17:24:54 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66d8a0f637083e2c3ddffc0cb1e65ce126afb856/public/get-pip.py
 # Tue, 19 Dec 2023 17:24:54 GMT
@@ -350,61 +350,61 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 		Last Modified: Thu, 01 Aug 2024 23:04:15 GMT  
 		Size: 630.3 KB (630342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ecb30d1cb58972365c3c1f49798d274e241974ed1db7b4985e31e36d55dc0c33`  
-		Last Modified: Thu, 01 Aug 2024 23:04:15 GMT  
-		Size: 11.8 MB (11847243 bytes)  
+	-	`sha256:586256174ab899e308c15bbdec1c221ec47328e1b13b3d9cd9b3f8b1c82d27b4`  
+		Last Modified: Wed, 07 Aug 2024 21:55:35 GMT  
+		Size: 11.6 MB (11565258 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24632d3b687419f8ad1659c69acabdfadabb881a74f42e89262810b89f00d538`  
-		Last Modified: Thu, 01 Aug 2024 23:04:15 GMT  
+	-	`sha256:c30bd55097abbe12b996fb5b624faef3f827154d4cb17ed485a7c9f4ca45a6be`  
+		Last Modified: Wed, 07 Aug 2024 21:55:34 GMT  
 		Size: 228.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1476dfe938af951289ca011d222597dce3dfa67e03c2b4400589ff9fa9d0d3c6`  
-		Last Modified: Thu, 01 Aug 2024 23:04:15 GMT  
-		Size: 4.2 MB (4156741 bytes)  
+	-	`sha256:6599546483219edaf78ef8c4d1dd43e6da3e6563d060bc0ee2b40f488e971463`  
+		Last Modified: Wed, 07 Aug 2024 21:55:35 GMT  
+		Size: 3.9 MB (3905255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29af09a6fb0e57c2c2361a28f35d7145d3fba9b7843fc8651afa4d12af753f9e`  
-		Last Modified: Fri, 02 Aug 2024 04:43:23 GMT  
-		Size: 11.2 MB (11235383 bytes)  
+	-	`sha256:c69927a5c197c47c42f733be4ac421a7efd14bc5a53e82ac0f861e39783ac377`  
+		Last Modified: Wed, 07 Aug 2024 22:49:27 GMT  
+		Size: 7.4 MB (7408574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3970c26b7808088bd2ceffae2e54db65ad1340733698d396ac64a1d44e1928b0`  
-		Last Modified: Fri, 02 Aug 2024 04:43:24 GMT  
-		Size: 19.8 MB (19799345 bytes)  
+	-	`sha256:388c1b47d0ec83d042712e293463917aec796ef6bb768e426fbbbbe78b2af096`  
+		Last Modified: Wed, 07 Aug 2024 22:49:27 GMT  
+		Size: 19.9 MB (19871996 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:098a56368a313de461666ef2af8b999dac8c2506400948ace5d6af13f6583093`  
-		Last Modified: Fri, 02 Aug 2024 04:43:23 GMT  
-		Size: 9.9 KB (9919 bytes)  
+	-	`sha256:cf1ac1cc3f1b82645349bd15b134f8a5e5ebd059dc32a7ea038fceada2898544`  
+		Last Modified: Wed, 07 Aug 2024 22:49:26 GMT  
+		Size: 9.9 KB (9921 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbb45618dcfff85f107a8b6f7ff26097bd316ebb89e30f840366c4cf4576c9ff`  
-		Last Modified: Fri, 02 Aug 2024 04:43:23 GMT  
-		Size: 2.1 KB (2143 bytes)  
+	-	`sha256:e035fb71b8944d6da3f8dbe306698f2c5bf6a024d48c5e5d3a4d16357c3df71d`  
+		Last Modified: Wed, 07 Aug 2024 22:49:27 GMT  
+		Size: 2.1 KB (2142 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `satosa:8-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull satosa@sha256:fa78e49e83209add17c64d3824f876fd7d78e68705d22cec575580d524fa68e0
+$ docker pull satosa@sha256:2c47ae10fd8c6ec21f066dadaf6571796a42c82bde8a3f4580f8331c392dc7f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 MB (1234875 bytes)**  
+-	Total Size: **1.2 MB (1235365 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:61a172dc54fa0b7b1a22f76ef539a69bf2297a88589799cdd048c651d81c821c`
+-	Image ID: `sha256:93560199a17c3b82b4ca4ba0228e4933cc1fb7059b3b45b70dc7be246c2fdf90`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e18d1a4925ac891d3bbb906e6fba4b2afa159edc7efac8547452f32cebae22f2`  
-		Last Modified: Fri, 02 Aug 2024 04:43:23 GMT  
-		Size: 1.2 MB (1210223 bytes)  
+	-	`sha256:0144ae4ab18b322e35e4c1c8b40802649fd0e7f2c5ee807c874d486e6ca18a5a`  
+		Last Modified: Wed, 07 Aug 2024 22:49:26 GMT  
+		Size: 1.2 MB (1210718 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:deee1ac3643e037811641fecd810bb7b33bf1f5587c3151bd16d202c0407cb8e`  
-		Last Modified: Fri, 02 Aug 2024 04:43:23 GMT  
-		Size: 24.7 KB (24652 bytes)  
+	-	`sha256:3c2e3350ab8d895cf0f978a0a7b9735ff67e85cf5990cd7b4a2d44b6288c9c92`  
+		Last Modified: Wed, 07 Aug 2024 22:49:26 GMT  
+		Size: 24.6 KB (24647 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `satosa:8-alpine3.19` - linux; 386
