@@ -1,10 +1,10 @@
-# `alpine:20240606`
+# `alpine:20240807`
 
 ## Docker Metadata
 
-- Image ID: `sha256:55617791c9de4f227b2b701123ab5d1a3ae1adc9fdbc817f1df15e258d7692ee`
-- Created: `2024-06-07T18:25:03.012115844Z`
-- Virtual Size: ~ 7.79 Mb  
+- Image ID: `sha256:9885b58a3a7b1ff4fab35044f8aed314c3b76d9bed1dee8b2d6b28cede8f1299`
+- Created: `2024-08-07T19:22:46.14850744Z`
+- Virtual Size: ~ 7.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -16,16 +16,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.6.5-r0 description:
+alpine-baselayout-3.6.6-r0 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.6.5-r0 webpage:
+alpine-baselayout-3.6.6-r0 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.6.5-r0 installed size:
-308 KiB
+alpine-baselayout-3.6.6-r0 installed size:
+300 KiB
 
-alpine-baselayout-3.6.5-r0 license:
+alpine-baselayout-3.6.6-r0 license:
 GPL-2.0-only
 
 ```
@@ -33,16 +33,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.6.5-r0 description:
+alpine-baselayout-data-3.6.6-r0 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.6.5-r0 webpage:
+alpine-baselayout-data-3.6.6-r0 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-data-3.6.5-r0 installed size:
+alpine-baselayout-data-3.6.6-r0 installed size:
 76 KiB
 
-alpine-baselayout-data-3.6.5-r0 license:
+alpine-baselayout-data-3.6.6-r0 license:
 GPL-2.0-only
 
 ```
@@ -67,16 +67,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.4-r0 description:
+apk-tools-2.14.4-r2 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.4-r0 webpage:
+apk-tools-2.14.4-r2 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.4-r0 installed size:
+apk-tools-2.14.4-r2 installed size:
 296 KiB
 
-apk-tools-2.14.4-r0 license:
+apk-tools-2.14.4-r2 license:
 GPL-2.0-only
 
 ```
@@ -84,16 +84,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.36.1-r29 description:
+busybox-1.36.1-r31 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.36.1-r29 webpage:
+busybox-1.36.1-r31 webpage:
 https://busybox.net/
 
-busybox-1.36.1-r29 installed size:
+busybox-1.36.1-r31 installed size:
 896 KiB
 
-busybox-1.36.1-r29 license:
+busybox-1.36.1-r31 license:
 GPL-2.0-only
 
 ```
@@ -101,16 +101,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.36.1-r29 description:
+busybox-binsh-1.36.1-r31 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.36.1-r29 webpage:
+busybox-binsh-1.36.1-r31 webpage:
 https://busybox.net/
 
-busybox-binsh-1.36.1-r29 installed size:
+busybox-binsh-1.36.1-r31 installed size:
 8192 B
 
-busybox-binsh-1.36.1-r29 license:
+busybox-binsh-1.36.1-r31 license:
 GPL-2.0-only
 
 ```
@@ -118,16 +118,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20240226-r0 description:
+ca-certificates-bundle-20240705-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20240226-r0 webpage:
+ca-certificates-bundle-20240705-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20240226-r0 installed size:
+ca-certificates-bundle-20240705-r0 installed size:
 236 KiB
 
-ca-certificates-bundle-20240226-r0 license:
+ca-certificates-bundle-20240705-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -135,16 +135,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.0-r2 description:
+libcrypto3-3.3.1-r3 description:
 Crypto library from openssl
 
-libcrypto3-3.3.0-r2 webpage:
+libcrypto3-3.3.1-r3 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.0-r2 installed size:
-4656 KiB
+libcrypto3-3.3.1-r3 installed size:
+4660 KiB
 
-libcrypto3-3.3.0-r2 license:
+libcrypto3-3.3.1-r3 license:
 Apache-2.0
 
 ```
@@ -152,16 +152,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.0-r2 description:
+libssl3-3.3.1-r3 description:
 SSL shared libraries
 
-libssl3-3.3.0-r2 webpage:
+libssl3-3.3.1-r3 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.0-r2 installed size:
+libssl3-3.3.1-r3 installed size:
 796 KiB
 
-libssl3-3.3.0-r2 license:
+libssl3-3.3.1-r3 license:
 Apache-2.0
 
 ```
@@ -220,16 +220,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.36.1-r29 description:
+ssl_client-1.36.1-r31 description:
 External ssl_client for busybox wget
 
-ssl_client-1.36.1-r29 webpage:
+ssl_client-1.36.1-r31 webpage:
 https://busybox.net/
 
-ssl_client-1.36.1-r29 installed size:
+ssl_client-1.36.1-r31 installed size:
 28 KiB
 
-ssl_client-1.36.1-r29 license:
+ssl_client-1.36.1-r31 license:
 GPL-2.0-only
 
 ```
