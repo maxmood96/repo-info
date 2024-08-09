@@ -633,20 +633,13 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `OpenLDAP`
 - `RSA-MD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg1-6
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-6.dsc' cyrus-sasl2_2.1.28+dfsg1-6.dsc 3224 SHA256:79223015bc6fa0655d5d56207bb4ee7c3ca37122f2d425d5f9dd066ced9cf67d
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg1.orig.tar.xz 794540 SHA256:e796a5d85d1a85e1b433d43504e467f9075c7ebc0b45730a3996cf11b1deada4
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-6.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg1-6.debian.tar.xz 98280 SHA256:8968db0ae6acd8f87a51bc2e57419b5055b9bb23cdf2f822a8496d0e9c32b2d1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg1-6/
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg1-6/ (for browsing the source)
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg1-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg1-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.12-9`
 
@@ -1382,21 +1375,13 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4t64/copyright`, `/usr/sha
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdbm=1.23-6
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.23-6.dsc' gdbm_1.23-6.dsc 2466 SHA256:fc3ea29c616ddf72a8d7cdc866de5ebad68192ac92bef70d574c13c892a9b1fd
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.23.orig.tar.gz' gdbm_1.23.orig.tar.gz 1115854 SHA256:74b1081d21fff13ae4bd7c16e5d6e504a4c26f7cde1dca0d963a484174bbcacd
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.23.orig.tar.gz.asc' gdbm_1.23.orig.tar.gz.asc 181 SHA256:64ebb68cc68e8915d62cb20ea40323c00b56051f844589ee0a52169fff34cecb
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.23-6.debian.tar.xz' gdbm_1.23-6.debian.tar.xz 17800 SHA256:778993a6bcc16780aa203e87e1fae64d9165d88616522f23094e7467672b7f36
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdbm/1.23-6/
 
-- https://sources.debian.net/src/gdbm/1.23-6/ (for browsing the source)
-- https://sources.debian.net/src/gdbm/1.23-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdbm/1.23-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdk-pixbuf=2.42.12+dfsg-1`
 
@@ -4822,20 +4807,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-16=16.3-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-16/postgresql-16_16.3-1.dsc' postgresql-16_16.3-1.dsc 4237 SHA256:e0e58b8ff4305155b99f510f95ed48bc163d7b686572e432e1074ae865e6ec21
-'http://deb.debian.org/debian/pool/main/p/postgresql-16/postgresql-16_16.3.orig.tar.bz2' postgresql-16_16.3.orig.tar.bz2 24737644 SHA256:331963d5d3dc4caf4216a049fa40b66d6bcb8c730615859411b9518764e60585
-'http://deb.debian.org/debian/pool/main/p/postgresql-16/postgresql-16_16.3-1.debian.tar.xz' postgresql-16_16.3-1.debian.tar.xz 31856 SHA256:fda53b9c8d539d0437b8ccd99b0b379bc5a068d87104b94150c0b9e538ee405f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-16/16.3-1/
 
-- https://sources.debian.net/src/postgresql-16/16.3-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-16/16.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-16/16.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.4-5`
 
@@ -4906,19 +4884,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.12.4-1
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.12.4-1.dsc' python3-defaults_3.12.4-1.dsc 2988 SHA256:b146253d3fffdf0a1bddc485aed8f2e1d83b501a376d7184587086e8907c7728
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.12.4-1.tar.gz' python3-defaults_3.12.4-1.tar.gz 146851 SHA256:5ed419073282df22cddeb50a44b36f5607104d52999b93525dcd3970ea9a478f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.12.4-1/
 
-- https://sources.debian.net/src/python3-defaults/3.12.4-1/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.12.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.12.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.12=3.12.4-3`
 
@@ -5352,20 +5324,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.09-2
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.09-2.dsc' sysvinit_3.09-2.dsc 2347 SHA256:5074f58c20f0eb7e4397964c1b0c6e235076ff951fcaf5918bad9235b2d65e87
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.09.orig.tar.gz' sysvinit_3.09.orig.tar.gz 514145 SHA256:991c5d0100165d7896dae9df6a69877311cdd5349e32f7fc6960859f5f60a6ce
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.09-2.debian.tar.xz' sysvinit_3.09-2.debian.tar.xz 121120 SHA256:35e587b8bf604e857037bf50d28be8169a25d3217f094b65baf98dd4c34719b0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.09-2/
 
-- https://sources.debian.net/src/sysvinit/3.09-2/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.09-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.09-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-3`
 

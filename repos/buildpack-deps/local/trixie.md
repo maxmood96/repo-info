@@ -77,21 +77,13 @@ Licenses: (parsed from: `/usr/share/doc/libaprutil1t64/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apr-util=1.6.3-2
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.3-2.dsc' apr-util_1.6.3-2.dsc 2790 SHA256:ec0980c33c48706d28ee3894c543f2f2fe4a6e0f4b7b233f6448205934b2079f
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.3.orig.tar.bz2' apr-util_1.6.3.orig.tar.bz2 432692 SHA256:a41076e3710746326c3945042994ad9a4fcac0ce0277dd8fea076fec3c9772b5
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.3.orig.tar.bz2.asc' apr-util_1.6.3.orig.tar.bz2.asc 833 SHA256:5fd08491a2cb35fdbf9fa93d753cfd25e59fe58a75a3f3ed62582ebf2a5b3a51
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.3-2.debian.tar.xz' apr-util_1.6.3-2.debian.tar.xz 341028 SHA256:5dd4abc7e74af270900b953523ee50ebc44bb794fba64a08111f3c1ac9942fb4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apr-util/1.6.3-2/
 
-- https://sources.debian.net/src/apr-util/1.6.3-2/ (for browsing the source)
-- https://sources.debian.net/src/apr-util/1.6.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apr-util/1.6.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr=1.7.2-3.2`
 
@@ -647,20 +639,13 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `OpenLDAP`
 - `RSA-MD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg1-6
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-6.dsc' cyrus-sasl2_2.1.28+dfsg1-6.dsc 3224 SHA256:79223015bc6fa0655d5d56207bb4ee7c3ca37122f2d425d5f9dd066ced9cf67d
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg1.orig.tar.xz 794540 SHA256:e796a5d85d1a85e1b433d43504e467f9075c7ebc0b45730a3996cf11b1deada4
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-6.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg1-6.debian.tar.xz 98280 SHA256:8968db0ae6acd8f87a51bc2e57419b5055b9bb23cdf2f822a8496d0e9c32b2d1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg1-6/
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg1-6/ (for browsing the source)
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg1-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg1-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.12-9`
 
