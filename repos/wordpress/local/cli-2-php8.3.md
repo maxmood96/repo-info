@@ -1,10 +1,10 @@
-# `wordpress:cli-2.10.0-php8.3`
+# `wordpress:cli-2.11.0-php8.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d71cfbf17ad5ab5c6e6f053f88767bb2a7c4b1fa6df0c3023dd951d989ff7b76`
-- Created: `2024-03-11T23:23:48Z`
-- Virtual Size: ~ 218.35 Mb  
+- Image ID: `sha256:639352be419d64de8e7d89aa43a3973039ccc3aba2ec75d79c493d1412fb9c15`
+- Created: `2024-08-08T07:03:14Z`
+- Virtual Size: ~ 218.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -22,8 +22,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.10.tar.xz.asc`
   - `PHP_SHA256=a0f2179d00931fe7631a12cbc3428f898ca3d99fe564260c115af381d2a1978d`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
-  - `WORDPRESS_CLI_VERSION=2.10.0`
-  - `WORDPRESS_CLI_SHA512=c243265be520cd906f6dac767b56bb4e7dae9b6308db32b7e45ed8adbacad97bce987fd69b019d25478f394f0082404a0f44a93416f5e4d943cb32fd08f1feac`
+  - `WORDPRESS_CLI_VERSION=2.11.0`
+  - `WORDPRESS_CLI_SHA512=adb12146bab8d829621efed41124dcd0012f9027f47e0228be7080296167566070e4a026a09c3989907840b21de94b7a35f3bfbd5f827c12f27c5803546d1bba`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1135,16 +1135,16 @@ GPL-3.0-or-later
 ### `apk` package: `xz`
 
 ```console
-xz-5.6.1-r3 description:
+xz-5.6.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.6.1-r3 webpage:
-https://xz.tukaani.org/xz-utils/
+xz-5.6.2-r0 webpage:
+https://tukaani.org/xz/
 
-xz-5.6.1-r3 installed size:
-180 KiB
+xz-5.6.2-r0 installed size:
+184 KiB
 
-xz-5.6.1-r3 license:
+xz-5.6.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -1152,16 +1152,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.1-r3 description:
+xz-libs-5.6.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.1-r3 webpage:
-https://xz.tukaani.org/xz-utils/
+xz-libs-5.6.2-r0 webpage:
+https://tukaani.org/xz/
 
-xz-libs-5.6.1-r3 installed size:
+xz-libs-5.6.2-r0 installed size:
 236 KiB
 
-xz-libs-5.6.1-r3 license:
+xz-libs-5.6.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
