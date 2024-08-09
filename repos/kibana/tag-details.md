@@ -332,4 +332,9 @@ $ docker pull kibana@sha256:716d39e3482f6681774ea7c4169fb5d82e56220966d017c97bf5
 
 ## `kibana:8.15.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull kibana@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
