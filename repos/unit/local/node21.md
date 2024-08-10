@@ -4726,20 +4726,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-13=13.14-0+deb11u1
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.14-0%2bdeb11u1.dsc' postgresql-13_13.14-0+deb11u1.dsc 3703 SHA256:50ce2b604ada87ca68f2206d9968aa55dc4e5e4733daeee8734471c4a43bb860
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.14.orig.tar.bz2' postgresql-13_13.14.orig.tar.bz2 21584146 SHA256:b8df078551898960bd500dc5d38a177e9905376df81fe7f2b660a1407fa6a5ed
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.14-0%2bdeb11u1.debian.tar.xz' postgresql-13_13.14-0+deb11u1.debian.tar.xz 34724 SHA256:801200e90899fd6f9468f4c16f9cbc9fa56588e0f2cd751f953fb494f8589472
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-13/13.14-0+deb11u1/
 
-- https://sources.debian.net/src/postgresql-13/13.14-0+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-13/13.14-0+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-13/13.14-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.17-5`
 
