@@ -2299,11 +2299,21 @@ $ docker pull telegraf@sha256:8adfe7a0653d26a53b31a4518d3fd9be05fc427cb70002f7a2
 
 ## `telegraf:1.31.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull telegraf@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `telegraf:1.31.3-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull telegraf@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `telegraf:alpine`
 
