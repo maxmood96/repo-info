@@ -1,10 +1,10 @@
-# `postgres:13.15-alpine3.20`
+# `postgres:13.16-alpine3.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8c3f053e17f6f7965a73c3608810b71b0e4f15be7d1fadcae41e9250a7606202`
-- Created: `2024-06-03T20:57:56Z`
-- Virtual Size: ~ 237.66 Mb  
+- Image ID: `sha256:51efd51de93c7647c8ce05971c55c87983e7d57f4b912d01202216667699c253`
+- Created: `2024-08-08T16:37:43Z`
+- Virtual Size: ~ 237.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,8 +14,8 @@
   - `GOSU_VERSION=1.17`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=13`
-  - `PG_VERSION=13.15`
-  - `PG_SHA256=42edd415446d33b8c242be76d1ad057531b2264b2e86939339b7075c6e4ec925`
+  - `PG_VERSION=13.16`
+  - `PG_SHA256=c9cbbb6129f02328204828066bb3785c00a85c8ca8fd329c2a8a53c1f5cd8865`
   - `DOCKER_PG_LLVM_DEPS=llvm15-dev 		clang15`
   - `PGDATA=/var/lib/postgresql/data`
 
@@ -687,16 +687,16 @@ Public-Domain
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.1-r3 description:
+xz-libs-5.6.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.1-r3 webpage:
-https://xz.tukaani.org/xz-utils/
+xz-libs-5.6.2-r0 webpage:
+https://tukaani.org/xz/
 
-xz-libs-5.6.1-r3 installed size:
+xz-libs-5.6.2-r0 installed size:
 236 KiB
 
-xz-libs-5.6.1-r3 license:
+xz-libs-5.6.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
