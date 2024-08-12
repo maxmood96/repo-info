@@ -127,7 +127,12 @@ $ docker pull photon@sha256:3672cf67f912b6d476daf3e8bec0f6b8276ab4f1fe3bbf2e49e1
 
 ## `photon:3.0-20240811`
 
-**does not exist** (yet?)
+```console
+$ docker pull photon@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `photon:4.0`
 
@@ -246,7 +251,12 @@ $ docker pull photon@sha256:ab08fc8afdf6f7b2b3c9e3dce7cb35f46aaa0c3be3be6135c68c
 
 ## `photon:4.0-20240811`
 
-**does not exist** (yet?)
+```console
+$ docker pull photon@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `photon:5.0`
 
@@ -365,7 +375,12 @@ $ docker pull photon@sha256:a639707ad675ecf9e4009e00c5729aba6353549ffb428e284bf1
 
 ## `photon:5.0-20240811`
 
-**does not exist** (yet?)
+```console
+$ docker pull photon@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `photon:latest`
 
