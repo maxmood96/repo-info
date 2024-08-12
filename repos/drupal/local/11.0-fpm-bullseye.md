@@ -1,9 +1,9 @@
-# `drupal:11.0.0-php8.3-fpm-bullseye`
+# `drupal:11.0.1-php8.3-fpm-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fd789eceda91a08d279c3b9f3a658dc56436d7f704e8bc424b09a1a88d11a191`
-- Created: `2024-08-07T17:40:31Z`
+- Image ID: `sha256:a407aabc14461dd6608bc4c90284d3beb018a61b325bac9e40562c319ef2ed08`
+- Created: `2024-08-08T09:27:22Z`
 - Virtual Size: ~ 544.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.3.10.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.10.tar.xz.asc`
   - `PHP_SHA256=a0f2179d00931fe7631a12cbc3428f898ca3d99fe564260c115af381d2a1978d`
-  - `DRUPAL_VERSION=11.0.0`
+  - `DRUPAL_VERSION=11.0.1`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `dpkg` (`.deb`-based packages)
