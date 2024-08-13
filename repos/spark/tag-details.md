@@ -42,35 +42,75 @@
 
 ## `spark:3.4.2`
 
-**does not exist** (yet?)
+```console
+$ docker pull spark@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `spark:3.4.2-python3`
 
-**does not exist** (yet?)
+```console
+$ docker pull spark@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `spark:3.4.2-r`
 
-**does not exist** (yet?)
+```console
+$ docker pull spark@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `spark:3.4.2-scala`
 
-**does not exist** (yet?)
+```console
+$ docker pull spark@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `spark:3.4.2-scala2.12-java11-python3-r-ubuntu`
 
-**does not exist** (yet?)
+```console
+$ docker pull spark@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `spark:3.4.2-scala2.12-java11-python3-ubuntu`
 
-**does not exist** (yet?)
+```console
+$ docker pull spark@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `spark:3.4.2-scala2.12-java11-r-ubuntu`
 
-**does not exist** (yet?)
+```console
+$ docker pull spark@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `spark:3.4.2-scala2.12-java11-ubuntu`
 
-**does not exist** (yet?)
+```console
+$ docker pull spark@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `spark:3.5.2`
 
