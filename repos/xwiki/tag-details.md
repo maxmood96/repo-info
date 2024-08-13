@@ -14503,19 +14503,39 @@ $ docker pull xwiki@sha256:52435c9413703198fdb83bc06f736563e66a6f9cade22cee23d4b
 
 ## `xwiki:16.4.2`
 
-**does not exist** (yet?)
+```console
+$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `xwiki:16.4.2-mariadb-tomcat`
 
-**does not exist** (yet?)
+```console
+$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `xwiki:16.4.2-mysql-tomcat`
 
-**does not exist** (yet?)
+```console
+$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `xwiki:16.4.2-postgres-tomcat`
 
-**does not exist** (yet?)
+```console
+$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `xwiki:16.6`
 
