@@ -1,7 +1,7 @@
 ## `rakudo-star:latest`
 
 ```console
-$ docker pull rakudo-star@sha256:f3c20614baf2d7489f4045434d4001966211914547015d9c336b51cbe7784419
+$ docker pull rakudo-star@sha256:00710e26ef40afb4c0f9285867a685dd30daee4bc6c1d745add940d2081bfad3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -72,59 +72,59 @@ CMD ["raku"]
 ### `rakudo-star:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull rakudo-star@sha256:48578dc3110bba492b0fdeded248294aacd59e40459ddc0700fe52b2cd1e831e
+$ docker pull rakudo-star@sha256:affee09deb348e5bd58ebdbb3aab3a2d567e3d3fa765461f9f7b0c792fa2596e
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **180.7 MB (180734979 bytes)**  
+-	Total Size: **180.8 MB (180794114 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:acfc58a28a23d295eea3d40a410729dd096788df2f3c56815631a323d75e0eb9`
+-	Image ID: `sha256:3b3ca8671cb1e451bb6c56666b005ee950e7900632f002bb5bf20550290ca2ac`
 -	Default Command: `["raku"]`
 
 ```dockerfile
-# Tue, 23 Jul 2024 04:17:40 GMT
-ADD file:9b83dbcd468d7cfbc9032be05a5a2c5fd57bd977997fb6c7794dfed2f5bc3bcc in / 
-# Tue, 23 Jul 2024 04:17:40 GMT
+# Tue, 13 Aug 2024 00:39:42 GMT
+ADD file:e81dd8b32e45ea6e761021a3e01b6efd339dd9248a2036dc4b51a2c1de560b4c in / 
+# Tue, 13 Aug 2024 00:39:43 GMT
 CMD ["bash"]
-# Tue, 23 Jul 2024 08:03:32 GMT
+# Tue, 13 Aug 2024 01:02:20 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 23 Jul 2024 08:03:46 GMT
+# Tue, 13 Aug 2024 01:02:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 23 Jul 2024 10:25:15 GMT
+# Tue, 13 Aug 2024 04:12:17 GMT
 MAINTAINER Rob Hoelz
-# Tue, 23 Jul 2024 10:25:15 GMT
+# Tue, 13 Aug 2024 04:12:18 GMT
 RUN groupadd -r raku && useradd -m -r -g raku raku
-# Tue, 23 Jul 2024 10:25:15 GMT
+# Tue, 13 Aug 2024 04:12:18 GMT
 ARG rakudo_version=2024.05-01
-# Tue, 23 Jul 2024 10:25:16 GMT
+# Tue, 13 Aug 2024 04:12:18 GMT
 ENV rakudo_version=2024.05-01
-# Tue, 23 Jul 2024 10:42:54 GMT
+# Tue, 13 Aug 2024 04:30:50 GMT
 RUN buildDeps='         gcc         libc6-dev         make     '         url="https://rakudo.org/dl/star/rakudo-star-${rakudo_version}.tar.gz"     keyfp="3E7E3C6EAF916676AC549285A2919382E961E2EE"     pubkeyurl="https://rakudo.org/keys/rakudo_github_automation-${keyfp}.asc"     tmpdir="$(mktemp -d)"     && set -eux     && export GNUPGHOME="$tmpdir/gnupg"     && mkdir $GNUPGHOME     && apt-get update     && apt-get install -y --no-install-recommends $buildDeps     && rm -rf /var/lib/apt/lists/*     && mkdir ${tmpdir}/rakudo         && curl -fsSL ${url}.asc -o ${tmpdir}/rakudo.tar.gz.asc     && curl -fsSL $url -o ${tmpdir}/rakudo.tar.gz     && curl -fsSL $pubkeyurl -o ${tmpdir}/key.asc         && gpg --batch --import ${tmpdir}/key.asc     && gpg --batch --export $keyfp > ${tmpdir}/${keyfp}.asc     && rm -rf $GNUPGHOME     && mkdir $GNUPGHOME     && gpg --batch --import ${tmpdir}/${keyfp}.asc     && gpg --batch --verify ${tmpdir}/rakudo.tar.gz.asc ${tmpdir}/rakudo.tar.gz         && tar xzf ${tmpdir}/rakudo.tar.gz --strip-components=1 -C ${tmpdir}/rakudo     && (         cd ${tmpdir}/rakudo         && bash bin/rstar install -p /usr     )     && rm -rf $tmpdir     && apt-get purge -y --auto-remove $buildDeps
-# Tue, 23 Jul 2024 10:42:55 GMT
+# Tue, 13 Aug 2024 04:30:51 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/core/bin:/usr/share/perl6/site/bin:/usr/share/perl6/vendor/bin
-# Tue, 23 Jul 2024 10:42:55 GMT
+# Tue, 13 Aug 2024 04:30:51 GMT
 CMD ["raku"]
 ```
 
 -	Layers:
-	-	`sha256:9c5ed83eaf5c33e6b2ceb5fe1b2b1300f9117a5dc5eae13b75f9f66dcce43a0f`  
-		Last Modified: Tue, 23 Jul 2024 04:20:09 GMT  
-		Size: 49.6 MB (49588442 bytes)  
+	-	`sha256:7b24851aa36de07cd94173b8e2052846573dacc3b241620d713254e647352394`  
+		Last Modified: Tue, 13 Aug 2024 00:42:24 GMT  
+		Size: 49.6 MB (49588592 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0df40ff8dff06855b2dff09ca815eb5044fdfb6861e4d23120e04f07ce113184`  
-		Last Modified: Tue, 23 Jul 2024 08:10:04 GMT  
-		Size: 23.6 MB (23592453 bytes)  
+	-	`sha256:1593650c75729f64218ae272e8ffff9da7bbba9599bd1815877da99a2651fd9b`  
+		Last Modified: Tue, 13 Aug 2024 01:09:17 GMT  
+		Size: 23.6 MB (23592427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e903e4e709d192e5547602a5978c79692063228a98585f33fb02d343bc15719`  
-		Last Modified: Tue, 23 Jul 2024 08:10:20 GMT  
-		Size: 64.0 MB (63994288 bytes)  
+	-	`sha256:275677961327bd0cf394699228e29d7caf27f171c627899a20ebc9eeb550e209`  
+		Last Modified: Tue, 13 Aug 2024 01:09:34 GMT  
+		Size: 64.0 MB (63994880 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1949e4f0ddaba6f319accaa0f95d479dc1c63129fb196b3939abc4f4ca70776`  
-		Last Modified: Tue, 23 Jul 2024 10:43:16 GMT  
-		Size: 3.3 KB (3260 bytes)  
+	-	`sha256:617ddac7c3aa7acce3c88c46b906b300930fdf3d5777f517736840890e0558e8`  
+		Last Modified: Tue, 13 Aug 2024 04:31:04 GMT  
+		Size: 3.3 KB (3261 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c65a5fda5f4bd3a62eafd228b7546525fe367a7feeacd67d541992e2593e6dfd`  
-		Last Modified: Tue, 23 Jul 2024 10:43:23 GMT  
-		Size: 43.6 MB (43556536 bytes)  
+	-	`sha256:866ee59cf13594b65df391220c650ac996bfaf221888516a69119fabe7c25f22`  
+		Last Modified: Tue, 13 Aug 2024 04:31:12 GMT  
+		Size: 43.6 MB (43614954 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
