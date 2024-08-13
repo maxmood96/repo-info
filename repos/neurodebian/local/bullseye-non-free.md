@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:86de54931fdb819e97959ffdc98c5b1d5c1d95609b179fc3ac1fc802d33a8945`
+- Image ID: `sha256:6cec37c6d3e31136d0c85bbcf9c097ffbd9779f27e708ee6c92d484ba1b1ccc5`
 - Created: `2024-06-21T21:57:43Z`
 - Virtual Size: ~ 143.50 Mb  
   (total size of all layers on-disk)
@@ -1606,11 +1606,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.7.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.7.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `neurodebian=0.42.1~nd110+1`
+### `dpkg` source package: `neurodebian=0.42.2~nd110+1`
 
 Binary Packages:
 
-- `neurodebian-freeze=0.42.1~nd110+1`
+- `neurodebian-freeze=0.42.2~nd110+1`
 
 Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 
@@ -1619,9 +1619,13 @@ Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris neurodebian=0.42.2~nd110+1
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.42.2%7end110%2b1.dsc' neurodebian_0.42.2~nd110+1.dsc 1508 SHA256:0f93ab20ae7952eaf54439c4cc8fbcc0da5a575e4f0dc56644ff204d586306d0
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.42.2%7end110%2b1.tar.xz' neurodebian_0.42.2~nd110+1.tar.xz 8321824 SHA256:783ec2faa2296731c08344d65f91c3dcbc475ba4d4c8daa953a1eef66b46cbe3
+```
 
 ### `dpkg` source package: `npth=1.6-3`
 
