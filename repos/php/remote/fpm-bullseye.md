@@ -1,7 +1,7 @@
 ## `php:fpm-bullseye`
 
 ```console
-$ docker pull php@sha256:2b7bf6536335b47a0daa936ff68574961371988d7889d4c19a5134e60242128c
+$ docker pull php@sha256:f84c1918b39a5e2df00c71abcd326fb76c3f75a719d17d5f4d43c6d31226bbf3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18,437 +18,437 @@ $ docker pull php@sha256:2b7bf6536335b47a0daa936ff68574961371988d7889d4c19a5134e
 ### `php:fpm-bullseye` - linux; amd64
 
 ```console
-$ docker pull php@sha256:f6d794b8fbf9612053a29142ef9b14806b8240823e107bab6a6afa6c2671f7d2
+$ docker pull php@sha256:e8bc7e393984ca27ef02919eeeeb148cb4695605b6bc2a22c3fb13770670d078
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **162.7 MB (162650319 bytes)**  
+-	Total Size: **162.7 MB (162651550 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c34a6d3c24c05a86a1ee4f8210cda47cd222efd092c71a01c83d08be30c2f412`
+-	Image ID: `sha256:46f5893e6b77af8d1d54aa40c893651574f12f0ce337e525e1e81799bc259558`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Tue, 23 Jul 2024 05:24:37 GMT
-ADD file:258da966e49fd81eb3befac4ebcc023feb92794e891d5c9ca9b61084c7a209d5 in / 
-# Tue, 23 Jul 2024 05:24:38 GMT
+# Tue, 13 Aug 2024 00:20:42 GMT
+ADD file:8b272f437a81ca538a72714301aab84c945a2ff3829fd205d401f488514d36a9 in / 
+# Tue, 13 Aug 2024 00:20:42 GMT
 CMD ["bash"]
-# Tue, 23 Jul 2024 06:55:08 GMT
+# Tue, 13 Aug 2024 01:11:59 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php
-# Tue, 23 Jul 2024 06:55:08 GMT
+# Tue, 13 Aug 2024 01:11:59 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 23 Jul 2024 06:55:27 GMT
+# Tue, 13 Aug 2024 01:12:15 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 23 Jul 2024 06:55:27 GMT
+# Tue, 13 Aug 2024 01:12:16 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 23 Jul 2024 06:55:28 GMT
+# Tue, 13 Aug 2024 01:12:16 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html
-# Tue, 23 Jul 2024 06:55:28 GMT
+# Tue, 13 Aug 2024 01:12:16 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 23 Jul 2024 06:55:28 GMT
+# Tue, 13 Aug 2024 01:12:16 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 23 Jul 2024 06:55:28 GMT
+# Tue, 13 Aug 2024 01:12:16 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 23 Jul 2024 07:24:50 GMT
+# Tue, 13 Aug 2024 01:41:42 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Thu, 01 Aug 2024 19:36:29 GMT
+# Tue, 13 Aug 2024 01:41:42 GMT
 ENV PHP_VERSION=8.3.10
-# Thu, 01 Aug 2024 19:36:29 GMT
+# Tue, 13 Aug 2024 01:41:42 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.10.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.10.tar.xz.asc
-# Thu, 01 Aug 2024 19:36:29 GMT
+# Tue, 13 Aug 2024 01:41:42 GMT
 ENV PHP_SHA256=a0f2179d00931fe7631a12cbc3428f898ca3d99fe564260c115af381d2a1978d
-# Thu, 01 Aug 2024 19:36:42 GMT
+# Tue, 13 Aug 2024 01:41:52 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Thu, 01 Aug 2024 19:36:42 GMT
+# Tue, 13 Aug 2024 01:41:52 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Thu, 01 Aug 2024 19:46:51 GMT
+# Tue, 13 Aug 2024 01:51:31 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Thu, 01 Aug 2024 19:46:52 GMT
+# Tue, 13 Aug 2024 01:51:31 GMT
 COPY multi:869bde9dbeae74886a05c9e2107b3e3b4877116db8c6d9adbaff2719f9fb5262 in /usr/local/bin/ 
-# Thu, 01 Aug 2024 19:46:52 GMT
+# Tue, 13 Aug 2024 01:51:32 GMT
 RUN docker-php-ext-enable sodium
-# Thu, 01 Aug 2024 19:46:53 GMT
+# Tue, 13 Aug 2024 01:51:32 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Thu, 01 Aug 2024 19:46:53 GMT
+# Tue, 13 Aug 2024 01:51:32 GMT
 WORKDIR /var/www/html
-# Thu, 01 Aug 2024 19:46:53 GMT
+# Tue, 13 Aug 2024 01:51:33 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini"
-# Thu, 01 Aug 2024 19:46:53 GMT
+# Tue, 13 Aug 2024 01:51:33 GMT
 STOPSIGNAL SIGQUIT
-# Thu, 01 Aug 2024 19:46:53 GMT
+# Tue, 13 Aug 2024 01:51:33 GMT
 EXPOSE 9000
-# Thu, 01 Aug 2024 19:46:54 GMT
+# Tue, 13 Aug 2024 01:51:33 GMT
 CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:5de87e84afeec60e41fb003112c283b04a73e50c8d579c88bd21d668fd688485`  
-		Last Modified: Tue, 23 Jul 2024 05:28:31 GMT  
-		Size: 31.4 MB (31428330 bytes)  
+	-	`sha256:82aabceedc2fbf89030cbb4ff98215b70d9ae35c780ade6c784d9b447b1109ed`  
+		Last Modified: Tue, 13 Aug 2024 00:24:25 GMT  
+		Size: 31.4 MB (31428287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2cda1c0dfa3d207c7345cdb409f0201d824fb91ca69bcfc25aefe89fe932ab69`  
-		Last Modified: Tue, 23 Jul 2024 09:37:03 GMT  
-		Size: 227.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e39638e336db23af0b7f959d4b99488f062382f53cc5790fcfdcf1a0ec5c3e4e`  
-		Last Modified: Tue, 23 Jul 2024 09:37:15 GMT  
-		Size: 91.6 MB (91646812 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03ec6db491a2507801e58c6651821fee426ae42f6ce0f8f5e3b949d68923ed33`  
-		Last Modified: Tue, 23 Jul 2024 09:37:03 GMT  
+	-	`sha256:69850db3b70130b8aeaf7110a636bd2b8c4a3a0d12cf989aed21752bfb6122c1`  
+		Last Modified: Tue, 13 Aug 2024 02:55:19 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92a9b7a9099635b36079b8401fc17d6665cb99f4df5a4dfbf141c699ff02351b`  
-		Last Modified: Thu, 01 Aug 2024 20:21:08 GMT  
-		Size: 12.8 MB (12803677 bytes)  
+	-	`sha256:039fb59cd47be93b0828b3e52cafa290c824ff61c15f5377dabca280768851ab`  
+		Last Modified: Tue, 13 Aug 2024 02:55:31 GMT  
+		Size: 91.6 MB (91648162 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1068ef1bffdb048b314431e9827b7376ea8e38fe6de3c9be9cd113a18c5a0ee7`  
-		Last Modified: Thu, 01 Aug 2024 20:21:07 GMT  
-		Size: 495.0 B  
+	-	`sha256:5ab96e11c087119245593e7395698c4b442821ef447a9384a5c0b75449a6dd9d`  
+		Last Modified: Tue, 13 Aug 2024 02:55:19 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40c19468f9abf73f1fc61577006d1922178136cf6852d6477aa0c197f1658cc0`  
-		Last Modified: Thu, 01 Aug 2024 20:21:50 GMT  
-		Size: 26.8 MB (26758671 bytes)  
+	-	`sha256:78beb65ea45356eeec3d9b8195e00b0cc7aafc9f8a0262b06b131105a2cb3cef`  
+		Last Modified: Tue, 13 Aug 2024 02:58:11 GMT  
+		Size: 12.8 MB (12803672 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1c81a454de2019f7bf4156b1a1aa766cdf00bacffee7c50999834ca242d1f7a`  
-		Last Modified: Thu, 01 Aug 2024 20:21:46 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:f21f500f0ee388f8121b4ae4a70ffc2310e28aef82e70ab21326a48bed88ea40`  
+		Last Modified: Tue, 13 Aug 2024 02:58:10 GMT  
+		Size: 491.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:952a0c6b55a6f8cfccf018a14653bf295d48adc56b2a4c61310c5186f2c90a6f`  
-		Last Modified: Thu, 01 Aug 2024 20:21:46 GMT  
-		Size: 248.0 B  
+	-	`sha256:5a1254680fee09d627250e845465a06c89d2e7e5c9ce7df679be9140eab538fb`  
+		Last Modified: Tue, 13 Aug 2024 02:58:52 GMT  
+		Size: 26.8 MB (26758610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ee0f1dfc084a60594e144cfeb6016a7153e2605ffaece25f59604fc7edb9eb1`  
-		Last Modified: Thu, 01 Aug 2024 20:21:46 GMT  
-		Size: 9.2 KB (9179 bytes)  
+	-	`sha256:f6b59b8f2ccdd8112b96305fd9e608be3314461bc74c45daa692d79f3001e157`  
+		Last Modified: Tue, 13 Aug 2024 02:58:48 GMT  
+		Size: 2.5 KB (2452 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4da30b35eeeb9d7ec0280c5f464fd4c3ff5eacd168deba51d59ab388c6c34464`  
+		Last Modified: Tue, 13 Aug 2024 02:58:48 GMT  
+		Size: 247.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f46a5d191a54cc002d55337ba08b4fd6ca499ba7926278abc88d74661e62fb9d`  
+		Last Modified: Tue, 13 Aug 2024 02:58:48 GMT  
+		Size: 9.2 KB (9180 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:fpm-bullseye` - linux; arm variant v5
 
 ```console
-$ docker pull php@sha256:2144b069afd8ac7f2406e0d838d50f55f9f738e77c37648898ec8d4e4b1f862d
+$ docker pull php@sha256:6d09a0d8d05f5942bf43f0c0879e10643852b8f5cb5bd63d87662ff208a71914
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **140.8 MB (140759530 bytes)**  
+-	Total Size: **140.8 MB (140759271 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b00c11f66e4fc28703672b7a400fd2046afe10ef3ec21ce38b2aaaefd3be2ab`
+-	Image ID: `sha256:cf15c6ebafdc2376fc04053653670d6a8e93e7f3c81730fb2ee309ab65dc4044`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Mon, 22 Jul 2024 23:57:24 GMT
-ADD file:56b9d2d0e0360f64ade3cbe073b446e10c8e6bd253b761c16b5f319a8103d181 in / 
-# Mon, 22 Jul 2024 23:57:26 GMT
+# Tue, 13 Aug 2024 00:55:46 GMT
+ADD file:1f55c970615c481e4eb3e6e0183f67e0ec5ae170e52fb8b39dedb5f312049a45 in / 
+# Tue, 13 Aug 2024 00:55:46 GMT
 CMD ["bash"]
-# Tue, 23 Jul 2024 00:49:14 GMT
+# Tue, 13 Aug 2024 01:51:05 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php
-# Tue, 23 Jul 2024 00:49:15 GMT
+# Tue, 13 Aug 2024 01:51:05 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 23 Jul 2024 00:49:41 GMT
+# Tue, 13 Aug 2024 01:51:33 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 23 Jul 2024 00:49:43 GMT
+# Tue, 13 Aug 2024 01:51:34 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 23 Jul 2024 00:49:43 GMT
+# Tue, 13 Aug 2024 01:51:35 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html
-# Tue, 23 Jul 2024 00:49:44 GMT
+# Tue, 13 Aug 2024 01:51:35 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 23 Jul 2024 00:49:44 GMT
+# Tue, 13 Aug 2024 01:51:35 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 23 Jul 2024 00:49:44 GMT
+# Tue, 13 Aug 2024 01:51:35 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 23 Jul 2024 01:21:04 GMT
+# Tue, 13 Aug 2024 02:19:41 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Thu, 01 Aug 2024 19:09:18 GMT
+# Tue, 13 Aug 2024 02:19:41 GMT
 ENV PHP_VERSION=8.3.10
-# Thu, 01 Aug 2024 19:09:18 GMT
+# Tue, 13 Aug 2024 02:19:41 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.10.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.10.tar.xz.asc
-# Thu, 01 Aug 2024 19:09:18 GMT
+# Tue, 13 Aug 2024 02:19:41 GMT
 ENV PHP_SHA256=a0f2179d00931fe7631a12cbc3428f898ca3d99fe564260c115af381d2a1978d
-# Thu, 01 Aug 2024 19:09:34 GMT
+# Tue, 13 Aug 2024 02:19:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Thu, 01 Aug 2024 19:09:35 GMT
+# Tue, 13 Aug 2024 02:19:55 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Thu, 01 Aug 2024 19:22:51 GMT
+# Tue, 13 Aug 2024 02:28:28 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Thu, 01 Aug 2024 19:22:52 GMT
+# Tue, 13 Aug 2024 02:28:28 GMT
 COPY multi:869bde9dbeae74886a05c9e2107b3e3b4877116db8c6d9adbaff2719f9fb5262 in /usr/local/bin/ 
-# Thu, 01 Aug 2024 19:22:53 GMT
+# Tue, 13 Aug 2024 02:28:29 GMT
 RUN docker-php-ext-enable sodium
-# Thu, 01 Aug 2024 19:22:53 GMT
+# Tue, 13 Aug 2024 02:28:29 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Thu, 01 Aug 2024 19:22:53 GMT
+# Tue, 13 Aug 2024 02:28:30 GMT
 WORKDIR /var/www/html
-# Thu, 01 Aug 2024 19:22:54 GMT
+# Tue, 13 Aug 2024 02:28:30 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini"
-# Thu, 01 Aug 2024 19:22:54 GMT
+# Tue, 13 Aug 2024 02:28:30 GMT
 STOPSIGNAL SIGQUIT
-# Thu, 01 Aug 2024 19:22:54 GMT
+# Tue, 13 Aug 2024 02:28:31 GMT
 EXPOSE 9000
-# Thu, 01 Aug 2024 19:22:55 GMT
+# Tue, 13 Aug 2024 02:28:31 GMT
 CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:5b04226d50f1c00a6c8950192ad70a2038016868ab6ffb162ad447e35e67a3cb`  
-		Last Modified: Tue, 23 Jul 2024 00:02:06 GMT  
-		Size: 28.9 MB (28930588 bytes)  
+	-	`sha256:bc0f52e2f49aece451adc1699e9c837efc588cc5ad1995df66ae64a51b79ca6e`  
+		Last Modified: Tue, 13 Aug 2024 00:59:09 GMT  
+		Size: 28.9 MB (28930569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff29590fc6cc0618217ac1ade01bd146cb8eaf7db4d4c2087f11e715ade61d03`  
-		Last Modified: Tue, 23 Jul 2024 03:21:49 GMT  
-		Size: 225.0 B  
+	-	`sha256:23275106111bd620c66e7d3c17c7ecfcb6ed25bf0fa48b1b3ee844e21b4cad14`  
+		Last Modified: Tue, 13 Aug 2024 03:29:14 GMT  
+		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:327a6798f6d865b9aa42eb483167e6e7978f93ac9c872e22ef7861cac98d6551`  
-		Last Modified: Tue, 23 Jul 2024 03:22:11 GMT  
-		Size: 73.7 MB (73698488 bytes)  
+	-	`sha256:9f3a3f53632a5bfbf5bc40d4a6747ab013bb1a50bab26022e80d75d63f5afd1a`  
+		Last Modified: Tue, 13 Aug 2024 03:29:28 GMT  
+		Size: 73.7 MB (73698508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8345be5cd3b9ed4c6d3e6b9046292e370e2a0dd8b4440774661c7fcaaded8550`  
-		Last Modified: Tue, 23 Jul 2024 03:21:48 GMT  
-		Size: 221.0 B  
+	-	`sha256:f064aad9421d873a304481777ccbe2d06177166d6136f1cd1baa8ee353d15289`  
+		Last Modified: Tue, 13 Aug 2024 03:29:14 GMT  
+		Size: 228.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9516deafc73976e7b2f73986b8f9ce617750e8ba4b6c650b5204778e2c01553d`  
-		Last Modified: Thu, 01 Aug 2024 19:32:34 GMT  
-		Size: 12.8 MB (12802137 bytes)  
+	-	`sha256:13748081c532670b9ca2bada0d47ce5fabe5e0205fabd669887739a910fad59f`  
+		Last Modified: Tue, 13 Aug 2024 03:32:16 GMT  
+		Size: 12.8 MB (12802073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a9cd79daa862ca6318db3fa826433c172eeed02adda293063d439c9e4098651`  
-		Last Modified: Thu, 01 Aug 2024 19:32:33 GMT  
+	-	`sha256:692d2ac45aad2a3cec1aa8cc42ab7bdea9bd355b3ba169051aabc6dbf7945b0c`  
+		Last Modified: Tue, 13 Aug 2024 03:32:15 GMT  
 		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee4942ce6478a201e0805a516632dc032122c9474beddc09ec33b5f62d262197`  
-		Last Modified: Thu, 01 Aug 2024 19:33:20 GMT  
-		Size: 25.3 MB (25315491 bytes)  
+	-	`sha256:7959ab52634bb2b4decce72a3f07fc1a15f218e65a455bc5cf2ac4037e167a74`  
+		Last Modified: Tue, 13 Aug 2024 03:32:59 GMT  
+		Size: 25.3 MB (25315290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddd27c3fe20738ec7af556748421172c09a40902379d46ace67224d6573f8762`  
-		Last Modified: Thu, 01 Aug 2024 19:33:16 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:0be8fd8bb59c78779a69e90d8bc107ecabd8a7ea317e52387fb0ea8487fb43b2`  
+		Last Modified: Tue, 13 Aug 2024 03:32:55 GMT  
+		Size: 2.5 KB (2452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0e7743e87a88abdbf246689d5e0c90c44d184c320c44fc0be9b00f7c05f0c33`  
-		Last Modified: Thu, 01 Aug 2024 19:33:16 GMT  
-		Size: 249.0 B  
+	-	`sha256:8e0342097954570ad99405b1458823b8dcb4759b1aff150f4c1692a1a0fcd680`  
+		Last Modified: Tue, 13 Aug 2024 03:32:55 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38c325a927f0b2d015b0d60b95d7ba7ecfcebc1c95db32db65da063c38c32cd8`  
-		Last Modified: Thu, 01 Aug 2024 19:33:16 GMT  
-		Size: 9.2 KB (9183 bytes)  
+	-	`sha256:23f6193c8acc5600102249b9795b8ef3278738d5f6326d0ec6e1ae71459f1906`  
+		Last Modified: Tue, 13 Aug 2024 03:32:55 GMT  
+		Size: 9.2 KB (9184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:fpm-bullseye` - linux; arm variant v7
 
 ```console
-$ docker pull php@sha256:a41d4ad2f63e5936b73f007e221ca232d2400f82378503f912953247b95a4802
+$ docker pull php@sha256:d6a7c68ba70b8964207ccbd3c93d02cc37bad40e2fac2b5db5118ce1a8042010
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **133.2 MB (133174455 bytes)**  
+-	Total Size: **133.2 MB (133174596 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb091bc00eca6bbf778879f49d5cc46818bd08b2be9bd832522eeedcdd04025b`
+-	Image ID: `sha256:6fd32d9ea322c84a2384fa3131dfd1930226dc9e540744bd8220794fd1ecc55d`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Tue, 23 Jul 2024 03:03:30 GMT
-ADD file:d164f59b51033ee0cb0d72ae8d9f514ca20ed5d7ba327608f8870c8bfd3d69e3 in / 
-# Tue, 23 Jul 2024 03:03:30 GMT
+# Tue, 13 Aug 2024 00:57:55 GMT
+ADD file:9f6a2e97ea42608bfeab22c77e01d6614f64a00a2be04ed1cff9909375d517a8 in / 
+# Tue, 13 Aug 2024 00:57:55 GMT
 CMD ["bash"]
-# Tue, 23 Jul 2024 04:53:13 GMT
+# Tue, 13 Aug 2024 01:55:23 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php
-# Tue, 23 Jul 2024 04:53:13 GMT
+# Tue, 13 Aug 2024 01:55:23 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 23 Jul 2024 04:53:49 GMT
+# Tue, 13 Aug 2024 01:55:43 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 23 Jul 2024 04:53:50 GMT
+# Tue, 13 Aug 2024 01:55:44 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 23 Jul 2024 04:53:53 GMT
+# Tue, 13 Aug 2024 01:55:44 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html
-# Tue, 23 Jul 2024 04:53:53 GMT
+# Tue, 13 Aug 2024 01:55:44 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 23 Jul 2024 04:53:53 GMT
+# Tue, 13 Aug 2024 01:55:44 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 23 Jul 2024 04:53:54 GMT
+# Tue, 13 Aug 2024 01:55:45 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 23 Jul 2024 05:39:35 GMT
+# Tue, 13 Aug 2024 02:20:58 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Thu, 01 Aug 2024 19:27:18 GMT
+# Tue, 13 Aug 2024 02:20:59 GMT
 ENV PHP_VERSION=8.3.10
-# Thu, 01 Aug 2024 19:27:18 GMT
+# Tue, 13 Aug 2024 02:20:59 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.10.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.10.tar.xz.asc
-# Thu, 01 Aug 2024 19:27:18 GMT
+# Tue, 13 Aug 2024 02:20:59 GMT
 ENV PHP_SHA256=a0f2179d00931fe7631a12cbc3428f898ca3d99fe564260c115af381d2a1978d
-# Thu, 01 Aug 2024 19:27:30 GMT
+# Tue, 13 Aug 2024 02:21:11 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Thu, 01 Aug 2024 19:27:30 GMT
+# Tue, 13 Aug 2024 02:21:11 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Thu, 01 Aug 2024 19:36:48 GMT
+# Tue, 13 Aug 2024 02:29:12 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Thu, 01 Aug 2024 19:36:49 GMT
+# Tue, 13 Aug 2024 02:29:13 GMT
 COPY multi:869bde9dbeae74886a05c9e2107b3e3b4877116db8c6d9adbaff2719f9fb5262 in /usr/local/bin/ 
-# Thu, 01 Aug 2024 19:36:51 GMT
+# Tue, 13 Aug 2024 02:29:14 GMT
 RUN docker-php-ext-enable sodium
-# Thu, 01 Aug 2024 19:36:51 GMT
+# Tue, 13 Aug 2024 02:29:14 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Thu, 01 Aug 2024 19:36:51 GMT
+# Tue, 13 Aug 2024 02:29:14 GMT
 WORKDIR /var/www/html
-# Thu, 01 Aug 2024 19:36:53 GMT
+# Tue, 13 Aug 2024 02:29:15 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini"
-# Thu, 01 Aug 2024 19:36:53 GMT
+# Tue, 13 Aug 2024 02:29:15 GMT
 STOPSIGNAL SIGQUIT
-# Thu, 01 Aug 2024 19:36:53 GMT
+# Tue, 13 Aug 2024 02:29:15 GMT
 EXPOSE 9000
-# Thu, 01 Aug 2024 19:36:54 GMT
+# Tue, 13 Aug 2024 02:29:15 GMT
 CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:3bb0926631c8b9a5d54f36b0d3d892657f4f0c7a3f602ea57899de583b045143`  
-		Last Modified: Tue, 23 Jul 2024 03:07:34 GMT  
-		Size: 26.6 MB (26589130 bytes)  
+	-	`sha256:1a1ab1e12ebdbe1b5383067049fc746bcb9b882bd309b8befaa11c47eed5d4dd`  
+		Last Modified: Tue, 13 Aug 2024 01:01:38 GMT  
+		Size: 26.6 MB (26589215 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d3c94b054af3824ad0d1125e76a629f6786b7bfc3ad1d0e93af25d62e248f51`  
-		Last Modified: Tue, 23 Jul 2024 08:34:56 GMT  
+	-	`sha256:2ca0bd50b6add203a04cce83db0f51d5e5463402046e477bc8700e85954c21a2`  
+		Last Modified: Tue, 13 Aug 2024 03:28:49 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a17d0ecf8b361c4d66e3bc3dff53f4f9f62d32b065a5fdc68175481bb4a87661`  
-		Last Modified: Tue, 23 Jul 2024 08:35:15 GMT  
-		Size: 69.3 MB (69326095 bytes)  
+	-	`sha256:1239937b881a56fc516feee78edd4251f169cd0186f9b89c8b5067ce7af9e70e`  
+		Last Modified: Tue, 13 Aug 2024 03:29:01 GMT  
+		Size: 69.3 MB (69326356 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd4b6ad425e76f14bb4592a99e66018b412e5c5b24b446dc98070c425d0d8565`  
-		Last Modified: Tue, 23 Jul 2024 08:34:56 GMT  
-		Size: 226.0 B  
+	-	`sha256:116d9f5cac66b3a4a74b6c06b6771c14979983e12b5b221e278560e41624e54f`  
+		Last Modified: Tue, 13 Aug 2024 03:28:49 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a9c22e13ffb0e8c5b7fd2c2a3694c4605edbb4c2fb8108f595bd0d210537727`  
-		Last Modified: Thu, 01 Aug 2024 20:07:22 GMT  
-		Size: 12.8 MB (12802179 bytes)  
+	-	`sha256:438d2741216f449b4c894571bd79fbaff4effd4990040a067f38f44326a9445d`  
+		Last Modified: Tue, 13 Aug 2024 03:31:48 GMT  
+		Size: 12.8 MB (12802092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b39bf8a2e54d31cb919e14e55405b8f4c1122e29b9e0049a1175f44c7565491`  
-		Last Modified: Thu, 01 Aug 2024 20:07:21 GMT  
-		Size: 494.0 B  
+	-	`sha256:0d01ec25e23a0f9c39abdb70107405096839f411449c249c83ea7090120b4894`  
+		Last Modified: Tue, 13 Aug 2024 03:31:47 GMT  
+		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:73aa28fb762454918849f503cc499e0cd11082eace0e2a8bd49adcc9ade1437c`  
-		Last Modified: Thu, 01 Aug 2024 20:08:12 GMT  
-		Size: 24.4 MB (24444218 bytes)  
+	-	`sha256:6311b738b8a5c42654aa960cc52a6036ea567ada8c0fe5ee024b3e12f2a7d3a4`  
+		Last Modified: Tue, 13 Aug 2024 03:32:30 GMT  
+		Size: 24.4 MB (24444122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9576578359cc06d0a87aa8aaf2f100c7250e512382380ebbc41814db95819b0`  
-		Last Modified: Thu, 01 Aug 2024 20:08:08 GMT  
-		Size: 2.5 KB (2454 bytes)  
+	-	`sha256:3fc71ab0af74fa682ab9c7b761243c62777fef016a6abcd8c58240c4a0897720`  
+		Last Modified: Tue, 13 Aug 2024 03:32:25 GMT  
+		Size: 2.5 KB (2450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7dad1421d8da6aaefff66c6cf48e2eac8cf478c4824c7ea5b675e571ff3f5983`  
-		Last Modified: Thu, 01 Aug 2024 20:08:08 GMT  
-		Size: 248.0 B  
+	-	`sha256:28a1c9ddd75d36f0fd97effc2419096f165b5a6fa68b875099ff9e2f176d2fd6`  
+		Last Modified: Tue, 13 Aug 2024 03:32:25 GMT  
+		Size: 243.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:560857dfc9aa5996b894576526eb4f37b3970af7f29966dd9941bd1f29eb20b2`  
-		Last Modified: Thu, 01 Aug 2024 20:08:08 GMT  
-		Size: 9.2 KB (9186 bytes)  
+	-	`sha256:22201c18e25b284cc54bf7107edf60a97f3939a29464a4e778f183655636d608`  
+		Last Modified: Tue, 13 Aug 2024 03:32:25 GMT  
+		Size: 9.2 KB (9177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:fpm-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull php@sha256:021a45fbccfc53f53a0ccf9c55bb74e1d52aaf1312dbbcd49d984c2b35946173
+$ docker pull php@sha256:378828308249e4a3181ee231260225bddfe5c2e6bc7428652ae5a929b1ec6b17
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.6 MB (156627310 bytes)**  
+-	Total Size: **156.6 MB (156627061 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3b2374c4c68d90051d54975d31487d84eabbb81cb899e0c73455d43b2ab5727`
+-	Image ID: `sha256:5e26e0c5c67dfb1130d672038be08b9a0c26de05c3b691610e45ed45a1300e1e`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Tue, 23 Jul 2024 04:18:06 GMT
-ADD file:3727dfc046704936a0b983a317eeb319ebd0fc5e9da310be06a0ca768df723ec in / 
-# Tue, 23 Jul 2024 04:18:07 GMT
+# Tue, 13 Aug 2024 00:40:06 GMT
+ADD file:525ed0be34230ce7681869b24f133a402b8bc0a4a64bc89e368b25ccca391579 in / 
+# Tue, 13 Aug 2024 00:40:06 GMT
 CMD ["bash"]
-# Tue, 23 Jul 2024 05:21:35 GMT
+# Tue, 13 Aug 2024 01:42:51 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php
-# Tue, 23 Jul 2024 05:21:35 GMT
+# Tue, 13 Aug 2024 01:42:51 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 23 Jul 2024 05:21:49 GMT
+# Tue, 13 Aug 2024 01:43:05 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 23 Jul 2024 05:21:50 GMT
+# Tue, 13 Aug 2024 01:43:07 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 23 Jul 2024 05:21:51 GMT
+# Tue, 13 Aug 2024 01:43:07 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html
-# Tue, 23 Jul 2024 05:21:51 GMT
+# Tue, 13 Aug 2024 01:43:07 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 23 Jul 2024 05:21:51 GMT
+# Tue, 13 Aug 2024 01:43:07 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 23 Jul 2024 05:21:51 GMT
+# Tue, 13 Aug 2024 01:43:07 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 23 Jul 2024 05:47:35 GMT
+# Tue, 13 Aug 2024 02:09:53 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Thu, 01 Aug 2024 19:04:14 GMT
+# Tue, 13 Aug 2024 02:09:53 GMT
 ENV PHP_VERSION=8.3.10
-# Thu, 01 Aug 2024 19:04:14 GMT
+# Tue, 13 Aug 2024 02:09:53 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.10.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.10.tar.xz.asc
-# Thu, 01 Aug 2024 19:04:14 GMT
+# Tue, 13 Aug 2024 02:09:53 GMT
 ENV PHP_SHA256=a0f2179d00931fe7631a12cbc3428f898ca3d99fe564260c115af381d2a1978d
-# Thu, 01 Aug 2024 19:04:23 GMT
+# Tue, 13 Aug 2024 02:10:03 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Thu, 01 Aug 2024 19:04:24 GMT
+# Tue, 13 Aug 2024 02:10:03 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Thu, 01 Aug 2024 19:13:37 GMT
+# Tue, 13 Aug 2024 02:19:41 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Thu, 01 Aug 2024 19:13:37 GMT
+# Tue, 13 Aug 2024 02:19:42 GMT
 COPY multi:869bde9dbeae74886a05c9e2107b3e3b4877116db8c6d9adbaff2719f9fb5262 in /usr/local/bin/ 
-# Thu, 01 Aug 2024 19:13:38 GMT
+# Tue, 13 Aug 2024 02:19:42 GMT
 RUN docker-php-ext-enable sodium
-# Thu, 01 Aug 2024 19:13:38 GMT
+# Tue, 13 Aug 2024 02:19:42 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Thu, 01 Aug 2024 19:13:38 GMT
+# Tue, 13 Aug 2024 02:19:42 GMT
 WORKDIR /var/www/html
-# Thu, 01 Aug 2024 19:13:39 GMT
+# Tue, 13 Aug 2024 02:19:43 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini"
-# Thu, 01 Aug 2024 19:13:39 GMT
+# Tue, 13 Aug 2024 02:19:43 GMT
 STOPSIGNAL SIGQUIT
-# Thu, 01 Aug 2024 19:13:39 GMT
+# Tue, 13 Aug 2024 02:19:43 GMT
 EXPOSE 9000
-# Thu, 01 Aug 2024 19:13:39 GMT
+# Tue, 13 Aug 2024 02:19:43 GMT
 CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:bd2a3a2ed82de858b38215fac995414b3a91eea4cfe087e5f853ec1faa989ba4`  
-		Last Modified: Tue, 23 Jul 2024 04:21:02 GMT  
-		Size: 30.1 MB (30076083 bytes)  
+	-	`sha256:3f559f8680cb633039b8f423453ed0a0797f65d0a9ac051861edb9ba7ac94711`  
+		Last Modified: Tue, 13 Aug 2024 00:43:24 GMT  
+		Size: 30.1 MB (30076087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d67ea1dc36cca3c8065f64bcab06c8190d7ea87c67754f4dfa5f58787cf63576`  
-		Last Modified: Tue, 23 Jul 2024 07:49:13 GMT  
-		Size: 226.0 B  
+	-	`sha256:846938673afa6ed085af09ad4ccbb625312dec40e36b11eedb477d3abde29ef7`  
+		Last Modified: Tue, 13 Aug 2024 03:19:37 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3b75061a10b60a63f9f01c424f5575d03426ba4335da9eb78c8fc778b1f20c0`  
-		Last Modified: Tue, 23 Jul 2024 07:49:24 GMT  
-		Size: 86.9 MB (86938666 bytes)  
+	-	`sha256:02e823885d04f730fdfc97178f2b37ca00d35fc1919407d009556e538238081e`  
+		Last Modified: Tue, 13 Aug 2024 03:19:46 GMT  
+		Size: 86.9 MB (86938636 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e53fca7938ec0579947ca273f587c83680d1e896c167aae176ac1100b0f40308`  
-		Last Modified: Tue, 23 Jul 2024 07:49:13 GMT  
-		Size: 224.0 B  
+	-	`sha256:6c7f731bad084a12237afdd94ac13172ff94c17b20a3eda87a09e0c47a5f84a4`  
+		Last Modified: Tue, 13 Aug 2024 03:19:36 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0326e80fb48b88e073627501183ce76c434b83885f0258f98eaeec394e909b86`  
-		Last Modified: Thu, 01 Aug 2024 19:48:29 GMT  
-		Size: 12.8 MB (12803028 bytes)  
+	-	`sha256:5185c7e115304d71da131a6c977cb382961243192810136205a761d45a712d80`  
+		Last Modified: Tue, 13 Aug 2024 03:22:30 GMT  
+		Size: 12.8 MB (12803000 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24c2de294fc655b25302a1c3fe4cc4b2d73ee72c96f70b28d965b2359fb71655`  
-		Last Modified: Thu, 01 Aug 2024 19:48:28 GMT  
-		Size: 493.0 B  
+	-	`sha256:11519cf100a3fd577332032d22b42bea53fe4e30b55e7a4d836736b39cc23039`  
+		Last Modified: Tue, 13 Aug 2024 03:22:29 GMT  
+		Size: 492.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e373694afd39dfe359df8b8b487a9fb1fc09631a4847e37e4f9c67fe1fff169`  
-		Last Modified: Thu, 01 Aug 2024 19:49:11 GMT  
-		Size: 26.8 MB (26796710 bytes)  
+	-	`sha256:a941df1a94260c1ae3f56ff01c6e414863faa3668d7cc9db68c6b88048dbdbbf`  
+		Last Modified: Tue, 13 Aug 2024 03:23:10 GMT  
+		Size: 26.8 MB (26796528 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e25a1d0697491d41be13f0e708d8c03ab8a1da9ddf2a48409ee7cc42aef27a59`  
-		Last Modified: Thu, 01 Aug 2024 19:49:08 GMT  
-		Size: 2.5 KB (2453 bytes)  
+	-	`sha256:eccd0b9f0c15dcb55a583d1939584317d8fecc84ec194f26a4be692747f640f2`  
+		Last Modified: Tue, 13 Aug 2024 03:23:07 GMT  
+		Size: 2.5 KB (2450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36331a2356a7da9a30a4e0febf38c062afb5966aa909cf8eed3b14325878907a`  
-		Last Modified: Thu, 01 Aug 2024 19:49:08 GMT  
+	-	`sha256:bc04bd7f8e7f5ead7dec360f69f658b5e102041bf82ead0bc85d88e1140c468f`  
+		Last Modified: Tue, 13 Aug 2024 03:23:07 GMT  
 		Size: 245.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93d8dd9c54b26f982f31d2de064514590b1f5497397d736edae1a17feaf3ac35`  
-		Last Modified: Thu, 01 Aug 2024 19:49:08 GMT  
-		Size: 9.2 KB (9182 bytes)  
+	-	`sha256:cb3f779ece1cc3ed8ba9642c38ea01e7648fc02f2f171728259a4c99a526dde4`  
+		Last Modified: Tue, 13 Aug 2024 03:23:07 GMT  
+		Size: 9.2 KB (9175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:fpm-bullseye` - linux; 386
@@ -672,217 +672,217 @@ CMD ["php-fpm"]
 ### `php:fpm-bullseye` - linux; ppc64le
 
 ```console
-$ docker pull php@sha256:7e601c1e84db385129755921e9841106ea60030a3def0abb61fda899fffdf606
+$ docker pull php@sha256:ac81a1f66f76b1b462e3cef47f8852e356abb4fde933d23752b93e3e26ec1993
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **162.6 MB (162605813 bytes)**  
+-	Total Size: **162.6 MB (162605233 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2469bfeff25742531facab4c1e0ccfb9d8568a8555d1f9ed6ae07d931785b8e0`
+-	Image ID: `sha256:7ff7ecb0c61ace6cc59e42c0b5c98586d0eda2321008af42b2f79a70f4df9a4f`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Tue, 23 Jul 2024 01:27:23 GMT
-ADD file:ea3c7c365051c72d1bebaf8f2b9d42a99d14186d8919b4371222e4f7a471fd0e in / 
-# Tue, 23 Jul 2024 01:27:25 GMT
+# Tue, 13 Aug 2024 00:22:31 GMT
+ADD file:715c22b2255eb123bfbede0885c3f36e9320dbf42add04a4424aa8b7c213146e in / 
+# Tue, 13 Aug 2024 00:22:33 GMT
 CMD ["bash"]
-# Tue, 23 Jul 2024 03:00:54 GMT
+# Tue, 13 Aug 2024 01:54:18 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php
-# Tue, 23 Jul 2024 03:00:55 GMT
+# Tue, 13 Aug 2024 01:54:18 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 23 Jul 2024 03:01:25 GMT
+# Tue, 13 Aug 2024 01:54:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 23 Jul 2024 03:01:30 GMT
+# Tue, 13 Aug 2024 01:54:59 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 23 Jul 2024 03:01:30 GMT
+# Tue, 13 Aug 2024 01:55:01 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html
-# Tue, 23 Jul 2024 03:01:31 GMT
+# Tue, 13 Aug 2024 01:55:02 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 23 Jul 2024 03:01:31 GMT
+# Tue, 13 Aug 2024 01:55:04 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 23 Jul 2024 03:01:31 GMT
+# Tue, 13 Aug 2024 01:55:06 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 23 Jul 2024 03:27:13 GMT
+# Tue, 13 Aug 2024 02:21:09 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Thu, 01 Aug 2024 19:38:37 GMT
+# Tue, 13 Aug 2024 02:21:10 GMT
 ENV PHP_VERSION=8.3.10
-# Thu, 01 Aug 2024 19:38:37 GMT
+# Tue, 13 Aug 2024 02:21:10 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.10.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.10.tar.xz.asc
-# Thu, 01 Aug 2024 19:38:38 GMT
+# Tue, 13 Aug 2024 02:21:10 GMT
 ENV PHP_SHA256=a0f2179d00931fe7631a12cbc3428f898ca3d99fe564260c115af381d2a1978d
-# Thu, 01 Aug 2024 19:39:00 GMT
+# Tue, 13 Aug 2024 02:21:27 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Thu, 01 Aug 2024 19:39:01 GMT
+# Tue, 13 Aug 2024 02:21:28 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Thu, 01 Aug 2024 19:48:12 GMT
+# Tue, 13 Aug 2024 02:30:01 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Thu, 01 Aug 2024 19:48:13 GMT
+# Tue, 13 Aug 2024 02:30:02 GMT
 COPY multi:869bde9dbeae74886a05c9e2107b3e3b4877116db8c6d9adbaff2719f9fb5262 in /usr/local/bin/ 
-# Thu, 01 Aug 2024 19:48:15 GMT
+# Tue, 13 Aug 2024 02:30:03 GMT
 RUN docker-php-ext-enable sodium
-# Thu, 01 Aug 2024 19:48:15 GMT
+# Tue, 13 Aug 2024 02:30:03 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Thu, 01 Aug 2024 19:48:16 GMT
+# Tue, 13 Aug 2024 02:30:04 GMT
 WORKDIR /var/www/html
-# Thu, 01 Aug 2024 19:48:18 GMT
+# Tue, 13 Aug 2024 02:30:05 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini"
-# Thu, 01 Aug 2024 19:48:19 GMT
+# Tue, 13 Aug 2024 02:30:05 GMT
 STOPSIGNAL SIGQUIT
-# Thu, 01 Aug 2024 19:48:19 GMT
+# Tue, 13 Aug 2024 02:30:06 GMT
 EXPOSE 9000
-# Thu, 01 Aug 2024 19:48:20 GMT
+# Tue, 13 Aug 2024 02:30:06 GMT
 CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:2c0db65e988f1b1fb39291776f39faf5f568126305c67c7c3ad8191e6d072781`  
-		Last Modified: Tue, 23 Jul 2024 01:31:54 GMT  
-		Size: 35.3 MB (35305203 bytes)  
+	-	`sha256:b900d36478638456315492fd30b0de0aeac56205b9198ff240ac61a39d17ba97`  
+		Last Modified: Tue, 13 Aug 2024 00:27:11 GMT  
+		Size: 35.3 MB (35305133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bca31eac2ed8ece3ba386852bb9e717d3bcf925dea98a3ff93f0e61a8c1f9d4c`  
-		Last Modified: Tue, 23 Jul 2024 05:19:27 GMT  
-		Size: 227.0 B  
+	-	`sha256:acccc6cd204dfdd1d7a4546e484b312ba783126fc54fc14547d272642342d2c2`  
+		Last Modified: Tue, 13 Aug 2024 03:24:58 GMT  
+		Size: 228.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0cc37531317a045ead4f6cebdea9df0e36db3670bedacaf80e8221773f2aa98`  
-		Last Modified: Tue, 23 Jul 2024 05:19:42 GMT  
-		Size: 86.7 MB (86651319 bytes)  
+	-	`sha256:a6905d94fdf281fc926213ed4a8898dee15c28b9c067f741d973779a7299b78d`  
+		Last Modified: Tue, 13 Aug 2024 03:25:13 GMT  
+		Size: 86.7 MB (86650811 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd4ba1d01ce6e77c2c36622a8a2a67c34e598bfd2f7d0447753e9ac4b7e9f051`  
-		Last Modified: Tue, 23 Jul 2024 05:19:27 GMT  
+	-	`sha256:f25e18c2f6556a0096abd2faed23b5a7239c8c0c64bd7005786e087f1915b8e8`  
+		Last Modified: Tue, 13 Aug 2024 03:24:58 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d835e75f9d9ddfa201cbbf22511ba2ecf1f025b0a1057e703cb4e1a68b2c90ea`  
-		Last Modified: Thu, 01 Aug 2024 20:14:27 GMT  
-		Size: 12.8 MB (12803576 bytes)  
+	-	`sha256:d371276b87289dd14a77407c60dd7b77c7a0349a1a89850504cf6eee533da3aa`  
+		Last Modified: Tue, 13 Aug 2024 03:28:09 GMT  
+		Size: 12.8 MB (12803579 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fd9f3e5e3a3cc1e615dc97180dbbc9266fdd16782ad9ae781e35132d393b8d6`  
-		Last Modified: Thu, 01 Aug 2024 20:14:26 GMT  
-		Size: 494.0 B  
+	-	`sha256:baaf76f5a53e519cf3e559f28bc57a9a5f73e52ade241c457119a67dba45746e`  
+		Last Modified: Tue, 13 Aug 2024 03:28:08 GMT  
+		Size: 492.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfcec6dc59ed265ee3a86f557e44d95db9eab99201be3f8c3b4fc7cf159d9823`  
-		Last Modified: Thu, 01 Aug 2024 20:15:09 GMT  
-		Size: 27.8 MB (27832884 bytes)  
+	-	`sha256:c1b9d9e410d7154bea63d6f273aac941624e04843a9f2743fb554d013758c26b`  
+		Last Modified: Tue, 13 Aug 2024 03:28:54 GMT  
+		Size: 27.8 MB (27832890 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63c688030290cd70a9095a4c562239a1c1b5e12e3ebfa4d21aee3372ac9539ea`  
-		Last Modified: Thu, 01 Aug 2024 20:15:04 GMT  
-		Size: 2.5 KB (2453 bytes)  
+	-	`sha256:37c9cc2f746ac5050d4f67d8c4d5fcb4579b1a8aea1462fb89f09ffa98dea88c`  
+		Last Modified: Tue, 13 Aug 2024 03:28:49 GMT  
+		Size: 2.4 KB (2449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d48dd94c605a8ae1a54ac5cec96415885bed7933a76d80c208768846ba55d0c4`  
-		Last Modified: Thu, 01 Aug 2024 20:15:04 GMT  
-		Size: 248.0 B  
+	-	`sha256:5aadaa8c65f5671123675d076a7467fbec30a9935cc18d7f78cacb0a4497bc50`  
+		Last Modified: Tue, 13 Aug 2024 03:28:49 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6be93bfdd447223551946bab00abccf42180feb47cf0a7d53457cc2abd4e3018`  
-		Last Modified: Thu, 01 Aug 2024 20:15:04 GMT  
-		Size: 9.2 KB (9186 bytes)  
+	-	`sha256:c08ed6e34fe051f2e45a020bda3c6c4dd1f5090802fe18902d1f6524fc8caa49`  
+		Last Modified: Tue, 13 Aug 2024 03:28:49 GMT  
+		Size: 9.2 KB (9182 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:fpm-bullseye` - linux; s390x
 
 ```console
-$ docker pull php@sha256:f792a9ff3642d0e3bd7a72531c2a3c2948d41190cfdbce5a2bf42270ee42cb8b
+$ docker pull php@sha256:27300f8c99aca95c3d2bab73f46a0fed8384e6dce738d1b55e4ce495710526f3
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **140.1 MB (140080477 bytes)**  
+-	Total Size: **140.1 MB (140080277 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e5ab25c21a154452b89b523b9557a93e0ac28714ee930f6e07c540c998430f2`
+-	Image ID: `sha256:cf1476a230fd4d73977de39d8ae89d129a82ea28801b82b207b2ea8857503a1d`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Tue, 23 Jul 2024 02:28:25 GMT
-ADD file:c9cf6ed72c109eb68384476670cda2086783dc0a2ea6379cb1a662b3c8509591 in / 
-# Tue, 23 Jul 2024 02:28:26 GMT
+# Tue, 13 Aug 2024 00:43:12 GMT
+ADD file:a473fc09ddb0d1045f7f330f3a48b9cfe65ff9ea65cfa5c8262a8a5be9d4db75 in / 
+# Tue, 13 Aug 2024 00:43:13 GMT
 CMD ["bash"]
-# Tue, 23 Jul 2024 03:55:27 GMT
+# Tue, 13 Aug 2024 01:56:39 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php
-# Tue, 23 Jul 2024 03:55:27 GMT
+# Tue, 13 Aug 2024 01:56:39 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 23 Jul 2024 03:55:43 GMT
+# Tue, 13 Aug 2024 01:56:53 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 23 Jul 2024 03:55:46 GMT
+# Tue, 13 Aug 2024 01:56:55 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 23 Jul 2024 03:55:46 GMT
+# Tue, 13 Aug 2024 01:56:56 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html
-# Tue, 23 Jul 2024 03:55:46 GMT
+# Tue, 13 Aug 2024 01:56:56 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 23 Jul 2024 03:55:47 GMT
+# Tue, 13 Aug 2024 01:56:56 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 23 Jul 2024 03:55:47 GMT
+# Tue, 13 Aug 2024 01:56:56 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 23 Jul 2024 04:23:31 GMT
+# Tue, 13 Aug 2024 02:19:46 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Fri, 02 Aug 2024 03:58:24 GMT
+# Tue, 13 Aug 2024 02:19:46 GMT
 ENV PHP_VERSION=8.3.10
-# Fri, 02 Aug 2024 03:58:25 GMT
+# Tue, 13 Aug 2024 02:19:47 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.10.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.10.tar.xz.asc
-# Fri, 02 Aug 2024 03:58:25 GMT
+# Tue, 13 Aug 2024 02:19:47 GMT
 ENV PHP_SHA256=a0f2179d00931fe7631a12cbc3428f898ca3d99fe564260c115af381d2a1978d
-# Fri, 02 Aug 2024 03:58:38 GMT
+# Tue, 13 Aug 2024 02:19:56 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Fri, 02 Aug 2024 03:58:39 GMT
+# Tue, 13 Aug 2024 02:19:56 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Fri, 02 Aug 2024 04:09:04 GMT
+# Tue, 13 Aug 2024 02:26:52 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Fri, 02 Aug 2024 04:09:06 GMT
+# Tue, 13 Aug 2024 02:26:53 GMT
 COPY multi:869bde9dbeae74886a05c9e2107b3e3b4877116db8c6d9adbaff2719f9fb5262 in /usr/local/bin/ 
-# Fri, 02 Aug 2024 04:09:08 GMT
+# Tue, 13 Aug 2024 02:26:54 GMT
 RUN docker-php-ext-enable sodium
-# Fri, 02 Aug 2024 04:09:08 GMT
+# Tue, 13 Aug 2024 02:26:54 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 02 Aug 2024 04:09:09 GMT
+# Tue, 13 Aug 2024 02:26:54 GMT
 WORKDIR /var/www/html
-# Fri, 02 Aug 2024 04:09:10 GMT
+# Tue, 13 Aug 2024 02:26:54 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini"
-# Fri, 02 Aug 2024 04:09:11 GMT
+# Tue, 13 Aug 2024 02:26:55 GMT
 STOPSIGNAL SIGQUIT
-# Fri, 02 Aug 2024 04:09:11 GMT
+# Tue, 13 Aug 2024 02:26:55 GMT
 EXPOSE 9000
-# Fri, 02 Aug 2024 04:09:12 GMT
+# Tue, 13 Aug 2024 02:26:55 GMT
 CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:de4a305fc1af45cc7ae97020dfe639e8990f6d00b7e0ef222c4cdd720f0fc373`  
-		Last Modified: Tue, 23 Jul 2024 02:33:12 GMT  
-		Size: 29.7 MB (29669018 bytes)  
+	-	`sha256:83ea1b2f9d26c88827c9a658387c782a21fca528fbf7418f1a4eaea9a9818bdf`  
+		Last Modified: Tue, 13 Aug 2024 00:47:58 GMT  
+		Size: 29.7 MB (29668965 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22411513c35b4d7e3982ebff737af5ba004bdc5d62984cd8c5b651160a59f7b3`  
-		Last Modified: Tue, 23 Jul 2024 06:12:40 GMT  
-		Size: 224.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4474f9a1587d965f5ae0942ea7a9dc137ca4173b9421c9982ea957672948cc09`  
-		Last Modified: Tue, 23 Jul 2024 06:12:51 GMT  
-		Size: 71.6 MB (71640364 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:388bed7a7890b32e00151d6716afc32f0c5bb7adea7e6ecf7448cce9d8d7c502`  
-		Last Modified: Tue, 23 Jul 2024 06:12:40 GMT  
+	-	`sha256:6baf63313ed972f545d2ef6635043a5369c06c343aa6f9181a5750981284cc2a`  
+		Last Modified: Tue, 13 Aug 2024 03:15:32 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7d442a1909b0303f50b115e619fc2d2c60e36670579f0eff83fe4275f0f09a3`  
-		Last Modified: Fri, 02 Aug 2024 05:40:03 GMT  
-		Size: 12.8 MB (12802591 bytes)  
+	-	`sha256:2793133b1f1013c3ed9a9f138b2142611614d8ae8dc41e05fe81ad30a877d888`  
+		Last Modified: Tue, 13 Aug 2024 03:15:42 GMT  
+		Size: 71.6 MB (71640589 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c598a995f3c374d70b8304c6fce027b2194e263cb27981a9c63d3f472c38fead`  
-		Last Modified: Fri, 02 Aug 2024 05:40:02 GMT  
+	-	`sha256:c12fdf4f5ddf9659dbcf26e5a15da976dbfcf3f06ae1d5c09048705d8aba4273`  
+		Last Modified: Tue, 13 Aug 2024 03:15:32 GMT  
+		Size: 225.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a7c84ccfffd76a0e7beed19acb002b0d2d2043e5b2e7ed38528a885c950655a4`  
+		Last Modified: Tue, 13 Aug 2024 03:17:46 GMT  
+		Size: 12.8 MB (12802555 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f37cb616d30c2680dd1655af2fe6a8c0476acd184af059d6958fdfc2143227fa`  
+		Last Modified: Tue, 13 Aug 2024 03:17:45 GMT  
 		Size: 492.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17bac0edbb3d5bfadacd2dfcf55b7b0d62cb61deb8b6d61469d951c1c16b93c5`  
-		Last Modified: Fri, 02 Aug 2024 05:40:39 GMT  
-		Size: 26.0 MB (25955674 bytes)  
+	-	`sha256:2ad74f454c8c82fd6f45eefd3910270e3ba29f4b0ef65685a38769049747a839`  
+		Last Modified: Tue, 13 Aug 2024 03:18:17 GMT  
+		Size: 26.0 MB (25955350 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a98d957c00f882d32fcc3b1a69b9ca27e27a672724c212b37d1ed635e3b81466`  
-		Last Modified: Fri, 02 Aug 2024 05:40:33 GMT  
-		Size: 2.5 KB (2454 bytes)  
+	-	`sha256:fa339e04a93ee97b264d28638fe8cf657d6063b9a07766ae686186d4512c9cd2`  
+		Last Modified: Tue, 13 Aug 2024 03:18:13 GMT  
+		Size: 2.5 KB (2450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:00c5594ff45dc4e5ce69271df5f6de343bfc4fba2239b08cb36a6d390f2c3097`  
-		Last Modified: Fri, 02 Aug 2024 05:40:33 GMT  
-		Size: 248.0 B  
+	-	`sha256:0d42401fe2a0503c27f2746ed4265109d3f31144cf9004f26a767851480d3340`  
+		Last Modified: Tue, 13 Aug 2024 03:18:13 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cb50d18744714253fbea1229f38ec87284bbead7877fee6af7d5b13345d140a`  
-		Last Modified: Fri, 02 Aug 2024 05:40:33 GMT  
-		Size: 9.2 KB (9186 bytes)  
+	-	`sha256:bbf3b64a270b5ea8017de96460b5671c5335d14a2d02fed9a18242940af26875`  
+		Last Modified: Tue, 13 Aug 2024 03:18:14 GMT  
+		Size: 9.2 KB (9179 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
