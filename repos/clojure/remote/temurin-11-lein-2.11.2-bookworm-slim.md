@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-lein-2.11.2-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:e024fe14e25d097d703f86877f26a3611bc6557669907545f3a8ec2efbc49f2a
+$ docker pull clojure@sha256:ddd0eab3aa1e69dffdb3db84decd6a09d19f02f6f8cca88d72e4c2e70b288433
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -101,86 +101,86 @@ $ docker pull clojure@sha256:59615ba12edf01954a9dbda389e1d7bedf66c54c8c0473702db
 ### `clojure:temurin-11-lein-2.11.2-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:568e721d6f1c56063d4328ffdf929c120e26ffea4b0fc648ee3e562e3defdceb
+$ docker pull clojure@sha256:76644c73341d1a60e128206e93c3fe26e2c14a8f3a9933f78426ffa97d607af1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **227.0 MB (227006455 bytes)**  
+-	Total Size: **227.0 MB (227006490 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69c2946ee1a7b6b38400ece607416dcd094aee43db7d34299b10dff833c9efec`
+-	Image ID: `sha256:9019d1bdea8eed97e526be5e05d7bb7005d59682f0ffa7cdb80544af18fc976b`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
-# Sat, 20 Jul 2024 21:06:39 GMT
-ADD file:9b9556e1f3168a82eb85577dc07d85b2e7c1a72c5c35a4003f00042dd27b4fa2 in / 
-# Sat, 20 Jul 2024 21:06:39 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
+ADD file:4aa9ddc52f046592777767c91a04b9490d98811bedb8980fca794d55bbad1a0f in / 
+# Wed, 07 Aug 2024 18:04:12 GMT
 CMD ["bash"]
-# Sat, 20 Jul 2024 21:06:39 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 20 Jul 2024 21:06:39 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Sat, 20 Jul 2024 21:06:39 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 20 Jul 2024 21:06:39 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
 ENV LEIN_VERSION=2.11.2
-# Sat, 20 Jul 2024 21:06:39 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Sat, 20 Jul 2024 21:06:39 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
 WORKDIR /tmp
-# Sat, 20 Jul 2024 21:06:39 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
 RUN set -eux; apt-get update && apt-get install -y git gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mkdir -p /root/.lein && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget # buildkit
-# Sat, 20 Jul 2024 21:06:39 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Sat, 20 Jul 2024 21:06:39 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
 ENV LEIN_ROOT=1
-# Sat, 20 Jul 2024 21:06:39 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.3"]])' > project.clj   && lein deps && rm project.clj # buildkit
-# Sat, 20 Jul 2024 21:06:39 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
 CMD ["lein" "repl"]
 ```
 
 -	Layers:
-	-	`sha256:262a5f25eec7a7daccd94a64695e41acca5262f481c3630ef31289616897aa40`  
-		Last Modified: Tue, 23 Jul 2024 04:20:29 GMT  
-		Size: 29.2 MB (29156571 bytes)  
+	-	`sha256:aa6fbc30c84e14e64571d3d7b547ea801dfca8a7bd74bd930b5ea5de3eb2f442`  
+		Last Modified: Tue, 13 Aug 2024 00:42:45 GMT  
+		Size: 29.2 MB (29156528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0044c6bef07efe98365d4134f1e7365a1e3909e34e33fb33d8bfe3e8273ce26f`  
-		Last Modified: Wed, 24 Jul 2024 11:25:48 GMT  
-		Size: 142.4 MB (142356420 bytes)  
+	-	`sha256:9081243a73eaf94f0cd0715594b5546508ad8c32bcc4ed002229f938f65f959b`  
+		Last Modified: Tue, 13 Aug 2024 06:23:44 GMT  
+		Size: 142.4 MB (142356408 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ac9ce04ebea1f7e986e88e2aa0ea2861e10d197814fef79d187322ba31a1fc7`  
-		Last Modified: Thu, 25 Jul 2024 19:19:45 GMT  
-		Size: 51.1 MB (51095395 bytes)  
+	-	`sha256:579d8b9e9ff98560d7720a9ef7625e7719c433133197aa19cd2c441460124ab4`  
+		Last Modified: Tue, 13 Aug 2024 06:23:42 GMT  
+		Size: 51.1 MB (51095422 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:633c56d1caae52c9afb0ed39b7bcc63175844873da0f68792eee661804b0ae5d`  
-		Last Modified: Thu, 25 Jul 2024 19:19:43 GMT  
-		Size: 4.4 MB (4398037 bytes)  
+	-	`sha256:69292a4b5b1c2c76dbc28d7da99715a01c1cf95f974c016f756fa2d5f4b059a9`  
+		Last Modified: Tue, 13 Aug 2024 06:23:41 GMT  
+		Size: 4.4 MB (4398100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-2.11.2-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:fa2f45c4b4394f75c4930ee5b2772f8fb088032c368c2954add4adde20330948
+$ docker pull clojure@sha256:9081f5a539ed24ff4896207dfa637ea0be61b4f13d3e4ae6d019f87b0eeb1924
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.2 MB (4175945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:795ec75eca7372072eca16b5f32c5d565911dbd247d9fd24a44899906b77f686`
+-	Image ID: `sha256:98ad111171b930d924ea9ec8d9a24f0667b33a5c05da77f43552e941a4ddcb58`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7cf8963f9ef3a1a47300d566e8bee6b20b4749bd66bb5abe562f470a3e845c9e`  
-		Last Modified: Thu, 25 Jul 2024 19:19:44 GMT  
+	-	`sha256:00aa204e5a7c4cfb0fe165ff46f2a146098f7e648c91fbc5ce8e1970236275c6`  
+		Last Modified: Tue, 13 Aug 2024 06:23:41 GMT  
 		Size: 4.2 MB (4159325 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3b84d888b140f6e08cc6746d288658e768c19693cb62a957587600536674b605`  
-		Last Modified: Thu, 25 Jul 2024 19:19:43 GMT  
+	-	`sha256:487cb163bcd717f73db3ecbee1fac2c8228551038213caea5f4d64e3dc9ac534`  
+		Last Modified: Tue, 13 Aug 2024 06:23:40 GMT  
 		Size: 16.6 KB (16620 bytes)  
 		MIME: application/vnd.in-toto+json
