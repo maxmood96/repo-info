@@ -1,19 +1,19 @@
-# `ibm-semeru-runtimes:open-11.0.23_9-jdk-focal`
+# `ibm-semeru-runtimes:open-11.0.24_8-jre-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0631d59eab7d1462e77281dfc05e90b1d4bd7c56d51d025fd95883dba8f7d154`
-- Created: `2024-07-11T09:08:13Z`
-- Virtual Size: ~ 489.75 Mb  
+- Image ID: `sha256:aa51fccd7ede050044e8bd8ffdac27a59660a7e801b37938c3e785fde36e88d6`
+- Created: `2024-08-12T02:58:45Z`
+- Virtual Size: ~ 285.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["jshell"]`
+- Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.23+9_openj9-0.44.0`
+  - `JAVA_VERSION=jdk-11.0.24+8_openj9-0.46.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
 - Labels:
@@ -281,12 +281,12 @@ $ apt-get source -qq --print-uris coreutils=8.30-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.30-3ubuntu2.debian.tar.xz' coreutils_8.30-3ubuntu2.debian.tar.xz 39636 SHA256:98204ef9d94e5c567880cd0245fdb7940eaf7592d6c6830c300ad117628b351f
 ```
 
-### `dpkg` source package: `curl=7.68.0-1ubuntu2.22`
+### `dpkg` source package: `curl=7.68.0-1ubuntu2.23`
 
 Binary Packages:
 
-- `curl=7.68.0-1ubuntu2.22`
-- `libcurl4:amd64=7.68.0-1ubuntu2.22`
+- `curl=7.68.0-1ubuntu2.23`
+- `libcurl4:amd64=7.68.0-1ubuntu2.23`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -297,9 +297,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.23
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.23.dsc' curl_7.68.0-1ubuntu2.23.dsc 2737 SHA512:e7cf7346e61013e645f2f7fb1b43147481f34826a12bfb1cdc1492c949731defb12b28e71445cbe288a19e4105b226554d4adf8f41afc31067f694bb65c9d1c6
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.23.debian.tar.xz' curl_7.68.0-1ubuntu2.23.debian.tar.xz 73088 SHA512:06a3da6eeffe263748bc739485245e97d3cb42fed85d807e08427b70e5235bf4dfd6a1ce66b37e784678237c45bedfcbfc68ad2217fa8df64dea3da33ee17f04
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
 
@@ -849,22 +854,27 @@ $ apt-get source -qq --print-uris keyutils=1.6-6ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6-6ubuntu1.1.debian.tar.xz' keyutils_1.6-6ubuntu1.1.debian.tar.xz 14556 SHA512:300ed4c9626de95616a7c799f14d4f8bf7dc0b765d1751d3c9d60f86b7c60801bfbb97bf26c5d0ab39e5e41d5f3021ca870748f9555433b0e6c4ba261f475c3b
 ```
 
-### `dpkg` source package: `krb5=1.17-6ubuntu4.4`
+### `dpkg` source package: `krb5=1.17-6ubuntu4.6`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.17-6ubuntu4.4`
-- `libk5crypto3:amd64=1.17-6ubuntu4.4`
-- `libkrb5-3:amd64=1.17-6ubuntu4.4`
-- `libkrb5support0:amd64=1.17-6ubuntu4.4`
+- `libgssapi-krb5-2:amd64=1.17-6ubuntu4.6`
+- `libk5crypto3:amd64=1.17-6ubuntu4.6`
+- `libkrb5-3:amd64=1.17-6ubuntu4.6`
+- `libkrb5support0:amd64=1.17-6ubuntu4.6`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris krb5=1.17-6ubuntu4.6
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.6.dsc' krb5_1.17-6ubuntu4.6.dsc 3463 SHA512:eb2282cfe5a45064c969f948796ce4e25c1d06b282564472db0907e404de8a823256756d143f9cb6e00b668596ecd4dff09f7e8b8b0ce905550cfcbb09ab56e9
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA512:7462a578b936bd17f155a362dbb5d388e157a80a096549028be6c55400b11361c7f8a28e424fd5674801873651df4e694d536cae66728b7ae5e840e532358c52
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.6.debian.tar.xz' krb5_1.17-6ubuntu4.6.debian.tar.xz 153768 SHA512:8eec13f0af105789b47c56ac1ed8fd81b5fb4d22c4ef3bb5b70476e10f095a22a78ae00df5d6d888373bea7a51163fb218507b93efafaa9e73fad9257d4aedeb
+```
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2.1build1`
 
@@ -1379,20 +1389,25 @@ $ apt-get source -qq --print-uris openldap=2.4.49+dfsg-2ubuntu1.10
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49%2bdfsg-2ubuntu1.10.debian.tar.xz' openldap_2.4.49+dfsg-2ubuntu1.10.debian.tar.xz 190520 SHA512:6782b86834c3643acd64ecf68643af47e030fded12ed90bf84c40072c63bdcd01ada54bdf0eb8ef54123c70d5b96dd447b498ed1a0e0c88efcd56126e2c9e646
 ```
 
-### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.22`
+### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.23`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1f-1ubuntu2.22`
-- `openssl=1.1.1f-1ubuntu2.22`
+- `libssl1.1:amd64=1.1.1f-1ubuntu2.23`
+- `openssl=1.1.1f-1ubuntu2.23`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.23
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.23.dsc' openssl_1.1.1f-1ubuntu2.23.dsc 2470 SHA512:1bfd51d22c5a2459f620e57999f3a5a086b8fe34992547f97956dcd9eb319853663063f5db573aa1a2e6b4a0d5e04a4a8315154ceb9e7bbd929e5cd0c50adf1b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.23.debian.tar.xz' openssl_1.1.1f-1ubuntu2.23.debian.tar.xz 263656 SHA512:a72d090f60df822e49987abd06d70011b71e18d22bdf5553252ee9151af85aa6c35409992259c3df3003cd356f60edf9529584cb194f8c085264e868109f0dae
+```
 
 ### `dpkg` source package: `p11-kit=0.23.20-1ubuntu0.1`
 
