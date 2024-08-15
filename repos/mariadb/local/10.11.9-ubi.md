@@ -1,10 +1,10 @@
-# `mariadb:10.11.8-ubi9`
+# `mariadb:10.11.9-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9863b5ad0105b2cd64af246e4adfb37b8a68e9db588e089a35974302edf3ea6e`
-- Created: `2024-06-11T02:37:24Z`
-- Virtual Size: ~ 460.72 Mb  
+- Image ID: `sha256:75834ffd86cf7729fa8c3c41d88e89aeb880767151fd59df82a53399b002d977`
+- Created: `2024-08-08T23:52:24Z`
+- Virtual Size: ~ 461.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,6 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
   - `GOSU_VERSION=1.17`
+  - `MARIADB_VERSION=10.11.9`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2024-07-18T15:52:43`
@@ -36,42 +37,42 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=10.11.8`
+  - `org.opencontainers.image.version=10.11.9`
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1194`
   - `vcs-ref=94baa7760359088a42ad33dc22d329a5ee2c7209`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
-  - `version=10.11.8`
+  - `version=10.11.9`
 
 ## `rpm` (`.rpm`-based packages)
 
-### `rpm` package: `MariaDB-backup-10.11.8-1.el9.x86_64`
+### `rpm` package: `MariaDB-backup-10.11.9-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-client-10.11.8-1.el9.x86_64`
+### `rpm` package: `MariaDB-client-10.11.9-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-common-10.11.8-1.el9.x86_64`
+### `rpm` package: `MariaDB-common-10.11.9-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-server-10.11.8-1.el9.x86_64`
+### `rpm` package: `MariaDB-server-10.11.9-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-shared-10.11.8-1.el9.x86_64`
+### `rpm` package: `MariaDB-shared-10.11.9-1.el9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2.1
 
@@ -181,7 +182,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-7.el9.noarch
-http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/e/epel-release-9-7.el9.src.rpm
+https://mirror.mci-1.serverforge.org/epel/9/Everything/source/tree/Packages/e/epel-release-9-7.el9.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
@@ -208,7 +209,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `galera-4-26.4.18-1.el9.x86_64`
+### `rpm` package: `galera-4-26.4.19-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0
 
@@ -336,7 +337,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+https://mirror.mci-1.serverforge.org/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -1193,7 +1194,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+https://mirror.mci-1.serverforge.org/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -1204,7 +1205,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+https://mirror.mci-1.serverforge.org/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
