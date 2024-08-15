@@ -1,10 +1,10 @@
-# `odoo:17.0-20240730`
+# `odoo:17.0-20240812`
 
 ## Docker Metadata
 
-- Image ID: `sha256:75d65dac06b781c222698ff4ae95d0e331ecefc9c15e441d529b3f3db2b206ac`
-- Created: `2024-07-30T12:28:55Z`
-- Virtual Size: ~ 1.78 Gb  
+- Image ID: `sha256:32c2ee66381b89397e9b67169cf3fe939ebd61981bfaadd1b5a3b2eb7b2e21b7`
+- Created: `2024-08-12T11:24:22Z`
+- Virtual Size: ~ 1.79 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -437,12 +437,12 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.2.debian.tar.xz' coreutils_8.32-4.1ubuntu1.2.debian.tar.xz 44868 SHA512:7718e917f8f2c5c5574e73a079ea8fd3b32bc898f2e12168dc3711dfdd896e4727283011050b80f65e60994fca49da031d70901d453612132764dca7dec99543
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.16`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.17`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.16`
-- `libcurl4:amd64=7.81.0-1ubuntu1.16`
+- `curl=7.81.0-1ubuntu1.17`
+- `libcurl4:amd64=7.81.0-1ubuntu1.17`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -453,9 +453,15 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.17
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.17.dsc' curl_7.81.0-1ubuntu1.17.dsc 3143 SHA512:e9bb4fb4381bc146330bd166226253268927c03e3f31cfb133021d780956434f071b967484cb08a394d919ba543e8a86429647886c8cfb3f528c0014e903bf37
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.17.debian.tar.xz' curl_7.81.0-1ubuntu1.17.debian.tar.xz 76336 SHA512:e9684d47b6552df4a34d025c159f64247b88f5e5d85549250ff6d458b9c0e0cfbf67474240fcd16b3bc654e662a88e7a9b4333e74b5eeea9930b82eb69c78eda
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -5695,11 +5701,11 @@ $ apt-get source -qq --print-uris npth=1.6-3build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3build2.debian.tar.xz' npth_1.6-3build2.debian.tar.xz 10904 SHA512:426ab3ab9e27b3701d67cde0a4c4040aa9ccac22a0266321824487fe80a118ccd6860b6fa0fb5ca3c46dfa3c20053889fbb51a2e74618065b3aff059a0216c4c
 ```
 
-### `dpkg` source package: `odoo=17.0.20240730`
+### `dpkg` source package: `odoo=17.0.20240812`
 
 Binary Packages:
 
-- `odoo=17.0.20240730`
+- `odoo=17.0.20240812`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -5765,13 +5771,13 @@ $ apt-get source -qq --print-uris openldap=2.5.18+dfsg-0ubuntu0.22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg-0ubuntu0.22.04.2.debian.tar.xz' openldap_2.5.18+dfsg-0ubuntu0.22.04.2.debian.tar.xz 172632 SHA512:f40e948a37ad373187b6007c033e6cbbd63775b1b424f62f9446a9f35b9b354d0c8a8ae3efe470d63e444af984bb2f28947ebc0521923cb50adc4ea2eba21843
 ```
 
-### `dpkg` source package: `openssl=3.0.2-0ubuntu1.16`
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.17`
 
 Binary Packages:
 
-- `libssl-dev:amd64=3.0.2-0ubuntu1.16`
-- `libssl3:amd64=3.0.2-0ubuntu1.16`
-- `openssl=3.0.2-0ubuntu1.16`
+- `libssl-dev:amd64=3.0.2-0ubuntu1.17`
+- `libssl3:amd64=3.0.2-0ubuntu1.17`
+- `openssl=3.0.2-0ubuntu1.17`
 
 Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -5780,9 +5786,15 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.17
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.17.dsc' openssl_3.0.2-0ubuntu1.17.dsc 2730 SHA512:80f797dd70e2b4710fcdeb74aa211ad3df091b84fefaa1df2f7b6565c9451613332d337cc35d7977531d4c25069334dc22eedd22084a1ab5d5d647729d6a29d7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.17.debian.tar.xz' openssl_3.0.2-0ubuntu1.17.debian.tar.xz 259832 SHA512:b294c87c9d8d734b8038aa1d29c611aa10854f9420d2441932e9c4269994885bdc4d84c412d3fa5c03cee8f5cac9ded11f477a198b35abf40ecb4452336976c4
+```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
@@ -6070,12 +6082,12 @@ $ apt-get source -qq --print-uris polib=1.1.1-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/polib/polib_1.1.1-1.debian.tar.xz' polib_1.1.1-1.debian.tar.xz 4592 SHA512:d3f45b5e76ee03bf707b537f6e59d90d824498de415ebf04b42817d680c482fa7febae9156c88438b825528deac7af54ab9f559dfad802909e45ee352d227c74
 ```
 
-### `dpkg` source package: `postgresql-16=16.3-1.pgdg22.04+1`
+### `dpkg` source package: `postgresql-16=16.4-1.pgdg22.04+1`
 
 Binary Packages:
 
-- `libpq5:amd64=16.3-1.pgdg22.04+1`
-- `postgresql-client-16=16.3-1.pgdg22.04+1`
+- `libpq5:amd64=16.4-1.pgdg22.04+1`
+- `postgresql-client-16=16.4-1.pgdg22.04+1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-client-16/copyright`)
 
@@ -6096,12 +6108,12 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `postgresql-common=261.pgdg22.04+1`
+### `dpkg` source package: `postgresql-common=262.pgdg22.04+1`
 
 Binary Packages:
 
-- `postgresql-client=16+261.pgdg22.04+1`
-- `postgresql-client-common=261.pgdg22.04+1`
+- `postgresql-client=16+262.pgdg22.04+1`
+- `postgresql-client-common=262.pgdg22.04+1`
 
 Licenses: (parsed from: `/usr/share/doc/postgresql-client/copyright`, `/usr/share/doc/postgresql-client-common/copyright`)
 
