@@ -647,21 +647,13 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris findutils=4.10.0-2
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.10.0-2.dsc' findutils_4.10.0-2.dsc 2291 SHA256:85ee961402f3b28edc080a130c3106c993e72adffd19fee5dd6e17e033d74891
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.10.0.orig.tar.xz' findutils_4.10.0.orig.tar.xz 2240712 SHA256:1387e0b67ff247d2abde998f90dfbf70c1491391a59ddfecb8ae698789f0a4f5
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.10.0.orig.tar.xz.asc' findutils_4.10.0.orig.tar.xz.asc 488 SHA256:7f53670eea6bd114e014571221eb652855c1129a3ed99f2a9257c2a313cc216f
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.10.0-2.debian.tar.xz' findutils_4.10.0-2.debian.tar.xz 33208 SHA256:7b2a72130847761b6acea3243004103c8a0518762688c7aecde000d3695f543f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/findutils/4.10.0-2/
 
-- https://sources.debian.net/src/findutils/4.10.0-2/ (for browsing the source)
-- https://sources.debian.net/src/findutils/4.10.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/findutils/4.10.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-14=14.2.0-1`
 
@@ -1174,21 +1166,13 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `LGPL-2.1+`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.49-2
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.49-2.dsc' libgpg-error_1.49-2.dsc 2896 SHA256:8638b6639998a745cb377f8011609d5ed0b211f72cd01e63573a058d71e29cea
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.49.orig.tar.bz2' libgpg-error_1.49.orig.tar.bz2 1081175 SHA256:8b79d54639dbf4abc08b5406fb2f37e669a2dec091dd024fb87dd367131c63a9
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.49.orig.tar.bz2.asc' libgpg-error_1.49.orig.tar.bz2.asc 228 SHA256:2b781c0b6cd865c28ec1006cf9fb4390303b2d52ffc7ed09bcb58a01348ef870
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.49-2.debian.tar.xz' libgpg-error_1.49-2.debian.tar.xz 18804 SHA256:c60d7a21430651e8f36474bdb585096dd4fd52dc403fb99dfa2a874068211282
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libgpg-error/1.49-2/
 
-- https://sources.debian.net/src/libgpg-error/1.49-2/ (for browsing the source)
-- https://sources.debian.net/src/libgpg-error/1.49-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgpg-error/1.49-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libidn2=2.3.7-2`
 
