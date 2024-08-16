@@ -1,10 +1,10 @@
-# `gradle:8.9.0-jdk21-alpine`
+# `gradle:8.10.0-jdk21-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4748a42fc82361ad69073c27ead09eaad8773c03beda9faca97ea15e30f98f4b`
-- Created: `2024-07-12T03:13:38Z`
-- Virtual Size: ~ 583.35 Mb  
+- Image ID: `sha256:36c405757bdc0e33aea3c216d72c9edef30494b3ed8a9a118119aafea2c2356c`
+- Created: `2024-08-15T06:00:50Z`
+- Virtual Size: ~ 584.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.4+7`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.9`
+  - `GRADLE_VERSION=8.10`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1316,16 +1316,16 @@ ISC
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.1-r3 description:
+xz-libs-5.6.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.1-r3 webpage:
-https://xz.tukaani.org/xz-utils/
+xz-libs-5.6.2-r0 webpage:
+https://tukaani.org/xz/
 
-xz-libs-5.6.1-r3 installed size:
+xz-libs-5.6.2-r0 installed size:
 236 KiB
 
-xz-libs-5.6.1-r3 license:
+xz-libs-5.6.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
