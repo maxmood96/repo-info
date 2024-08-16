@@ -1,20 +1,21 @@
-# `nginx:1.26.1-perl`
+# `nginx:1.26.2-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:dc2791f2dd60b383bbaad2708f63b04aa6877f96014e3f6a77e11ee912ebb6e5`
-- Created: `2024-05-29T23:55:01Z`
-- Virtual Size: ~ 235.61 Mb  
+- Image ID: `sha256:9d186acf3ba4f9468e731669ecb9d71ca7c2764b1959358e7edc9b18343f9b9a`
+- Created: `2024-08-14T21:31:12Z`
+- Virtual Size: ~ 235.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.26.1`
-  - `NJS_VERSION=0.8.4`
-  - `NJS_RELEASE=2~bookworm`
-  - `PKG_RELEASE=2~bookworm`
+  - `NGINX_VERSION=1.26.2`
+  - `NJS_VERSION=0.8.5`
+  - `NJS_RELEASE=1~bookworm`
+  - `PKG_RELEASE=1~bookworm`
+  - `DYNPKG_RELEASE=2~bookworm`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
 
@@ -2635,11 +2636,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp2/1.52.0-1+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp2/1.52.0-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-geoip=1.26.1-2~bookworm`
+### `dpkg` source package: `nginx-module-geoip=1.26.2-2~bookworm`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.26.1-2~bookworm`
+- `nginx-module-geoip=1.26.2-2~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2649,11 +2650,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.26.1-2~bookworm`
+### `dpkg` source package: `nginx-module-image-filter=1.26.2-2~bookworm`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.26.1-2~bookworm`
+- `nginx-module-image-filter=1.26.2-2~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2663,11 +2664,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.26.1+0.8.4-2~bookworm`
+### `dpkg` source package: `nginx-module-njs=1.26.2+0.8.5-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-njs=1.26.1+0.8.4-2~bookworm`
+- `nginx-module-njs=1.26.2+0.8.5-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2677,11 +2678,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-perl=1.26.1-2~bookworm`
+### `dpkg` source package: `nginx-module-perl=1.26.2-2~bookworm`
 
 Binary Packages:
 
-- `nginx-module-perl=1.26.1-2~bookworm`
+- `nginx-module-perl=1.26.2-2~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2691,11 +2692,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.26.1-2~bookworm`
+### `dpkg` source package: `nginx-module-xslt=1.26.2-2~bookworm`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.26.1-2~bookworm`
+- `nginx-module-xslt=1.26.2-2~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2705,11 +2706,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.26.1-2~bookworm`
+### `dpkg` source package: `nginx=1.26.2-1~bookworm`
 
 Binary Packages:
 
-- `nginx=1.26.1-2~bookworm`
+- `nginx=1.26.2-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
