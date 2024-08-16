@@ -1,9 +1,9 @@
-# `aerospike:ce-7.1.0.4`
+# `aerospike:ce-7.1.0.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac026d95dd87a39d3315e611b583d04dbc29fac5e7784cdab1a3881f57114005`
-- Created: `2024-07-25T02:10:16Z`
+- Image ID: `sha256:b550d047b07b229dcd596c1027481d8a90c679b1b599b05f50918945339aad53`
+- Created: `2024-08-14T06:09:32Z`
 - Virtual Size: ~ 202.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -20,7 +20,7 @@
   - `org.opencontainers.image.title=Aerospike Community Server`
   - `org.opencontainers.image.url=https://github.com/aerospike/aerospike-server.docker`
   - `org.opencontainers.image.vendor=Aerospike`
-  - `org.opencontainers.image.version=7.1.0.4`
+  - `org.opencontainers.image.version=7.1.0.5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -65,11 +65,11 @@ $ apt-get source -qq --print-uris adduser=3.118ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.118ubuntu5.tar.xz' adduser_3.118ubuntu5.tar.xz 222904 SHA512:ded568a5a3f5a5ac1acc2098e37160194f8c4622e90c7044d599286a321fe8fd701c8554a4517e4d72a6089b8e3b5592b92d46668032bda81de64cc736bf0a75
 ```
 
-### `dpkg` source package: `aerospike-server-community=7.1.0.4-1`
+### `dpkg` source package: `aerospike-server-community=7.1.0.5-1`
 
 Binary Packages:
 
-- `aerospike-server-community=7.1.0.4-1`
+- `aerospike-server-community=7.1.0.5-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.

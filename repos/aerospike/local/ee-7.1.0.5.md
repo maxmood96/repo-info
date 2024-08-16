@@ -1,9 +1,9 @@
-# `aerospike:ee-7.1.0.4`
+# `aerospike:ee-7.1.0.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6f8322daf9a5f13d6a7679e5255c62f1664a229b1a86576d493e746f98bcd389`
-- Created: `2024-07-25T02:10:16Z`
+- Image ID: `sha256:38c8cec6799d43a06882c22e3533286efdbd1f6332265ee3169d1fec65d5d2bc`
+- Created: `2024-08-14T06:09:32Z`
 - Virtual Size: ~ 210.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -20,7 +20,7 @@
   - `org.opencontainers.image.title=Aerospike Enterprise Server`
   - `org.opencontainers.image.url=https://github.com/aerospike/aerospike-server.docker`
   - `org.opencontainers.image.vendor=Aerospike`
-  - `org.opencontainers.image.version=7.1.0.4`
+  - `org.opencontainers.image.version=7.1.0.5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -65,11 +65,11 @@ $ apt-get source -qq --print-uris adduser=3.118ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.118ubuntu5.tar.xz' adduser_3.118ubuntu5.tar.xz 222904 SHA512:ded568a5a3f5a5ac1acc2098e37160194f8c4622e90c7044d599286a321fe8fd701c8554a4517e4d72a6089b8e3b5592b92d46668032bda81de64cc736bf0a75
 ```
 
-### `dpkg` source package: `aerospike-server-enterprise=7.1.0.4-1`
+### `dpkg` source package: `aerospike-server-enterprise=7.1.0.5-1`
 
 Binary Packages:
 
-- `aerospike-server-enterprise=7.1.0.4-1`
+- `aerospike-server-enterprise=7.1.0.5-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -277,11 +277,11 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.2.debian.tar.xz' coreutils_8.32-4.1ubuntu1.2.debian.tar.xz 44868 SHA512:7718e917f8f2c5c5574e73a079ea8fd3b32bc898f2e12168dc3711dfdd896e4727283011050b80f65e60994fca49da031d70901d453612132764dca7dec99543
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.16`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.17`
 
 Binary Packages:
 
-- `libcurl4:amd64=7.81.0-1ubuntu1.16`
+- `libcurl4:amd64=7.81.0-1ubuntu1.17`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 
@@ -292,9 +292,15 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.17
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.17.dsc' curl_7.81.0-1ubuntu1.17.dsc 3143 SHA512:e9bb4fb4381bc146330bd166226253268927c03e3f31cfb133021d780956434f071b967484cb08a394d919ba543e8a86429647886c8cfb3f528c0014e903bf37
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.17.debian.tar.xz' curl_7.81.0-1ubuntu1.17.debian.tar.xz 76336 SHA512:e9684d47b6552df4a34d025c159f64247b88f5e5d85549250ff6d458b9c0e0cfbf67474240fcd16b3bc654e662a88e7a9b4333e74b5eeea9930b82eb69c78eda
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
