@@ -1,15 +1,16 @@
 ## `ubuntu:latest`
 
 ```console
-$ docker pull ubuntu@sha256:2e863c44b718727c860746568e1d54afd13b2fa71b160f5cd9058fc436217b30
+$ docker pull ubuntu@sha256:79102cf4ac7f1f4031a0aa0cab3281f5112336eb75d7ed7725e825e1e0d6a317
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 5
+-	Platforms: 6
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
+	-	linux; riscv64
 	-	linux; s390x
 
 ### `ubuntu:latest` - linux; amd64
@@ -147,6 +148,32 @@ CMD ["/bin/bash"]
 		Last Modified: Fri, 07 Jun 2024 12:11:45 GMT  
 		Size: 34.5 MB (34506029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `ubuntu:latest` - linux; riscv64
+
+```console
+$ docker pull ubuntu@sha256:f31546bc71659c643837d57f09a161f04e866b59da4f418e064082a756c4c23a
+```
+
+-	Docker Version: 20.10.17
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **27.7 MB (27749556 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8b55084b9c02c8c6d013ed4b10f3e0c9306a50be9526ee8bf5870c8175554a72`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Fri, 09 Dec 2022 01:12:29 GMT
+ADD file:f46f460af5409f8fff839ed52d7332dff314cffbb59ee3f40e898ecb6bfa21f9 in / 
+# Fri, 09 Dec 2022 01:12:30 GMT
+CMD ["bash"]
+```
+
+-	Layers:
+	-	`sha256:7548465e3aa5fee0518ca5aefe07a54411b419ec670a320e18c9b8892b0afc0f`  
+		Last Modified: Fri, 09 Dec 2022 01:34:47 GMT  
+		Size: 27.7 MB (27749556 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:latest` - linux; s390x
 
