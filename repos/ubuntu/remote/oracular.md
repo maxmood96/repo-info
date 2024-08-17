@@ -1,7 +1,7 @@
 ## `ubuntu:oracular`
 
 ```console
-$ docker pull ubuntu@sha256:25895062172a2f39ae36da530f3db244b507d7ffb1c4dd42a3a487b5b446e996
+$ docker pull ubuntu@sha256:ec705e3704caa11dbe38b62469eee39fc7d2af812bb2ea2ba931790d8d972fed
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -118,35 +118,35 @@ CMD ["/bin/bash"]
 ### `ubuntu:oracular` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:ab0729c8fa6a0ab6a3eb07d31438b079e5823107c47b40bffdf8d6c23d5ea542
+$ docker pull ubuntu@sha256:5968260bcb13d88a91955cb0f3b3717e81cf63d3f5564fd0d485956a7f06d37e
 ```
 
 -	Docker Version: 24.0.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.5 MB (34468676 bytes)**  
+-	Total Size: **35.0 MB (34985755 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a867e4f4fc9ad515223d70da1936dc4715dfc470d5b12767ef2e5a0bc1cac43`
+-	Image ID: `sha256:e58bda9aa9d22428684e273a82adb85de1f555adb4bd580bbffcac6e78bc3c0e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 18 Jun 2024 10:39:06 GMT
+# Sun, 11 Aug 2024 15:39:31 GMT
 ARG RELEASE
-# Tue, 18 Jun 2024 10:39:06 GMT
+# Sun, 11 Aug 2024 15:39:31 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 18 Jun 2024 10:39:06 GMT
+# Sun, 11 Aug 2024 15:39:31 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 18 Jun 2024 10:39:06 GMT
+# Sun, 11 Aug 2024 15:39:31 GMT
 LABEL org.opencontainers.image.version=24.10
-# Tue, 18 Jun 2024 10:39:10 GMT
-ADD file:3a2687ed020c5070cf555af85025ee8ecf7891a467a2e7122bbeba895861d0b0 in / 
-# Tue, 18 Jun 2024 10:39:10 GMT
+# Sun, 11 Aug 2024 15:39:34 GMT
+ADD file:c995bac66bc8ed18a9e5e7591143905810e18f366ac82dd51470210c97712108 in / 
+# Sun, 11 Aug 2024 15:39:34 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:e5aa51133e1c5d213e45194cbadfbfe99c6a335d3391eb4068a9a4f71a4d9c68`  
-		Last Modified: Tue, 18 Jun 2024 12:06:07 GMT  
-		Size: 34.5 MB (34468676 bytes)  
+	-	`sha256:bd625c7f091deeffe9e3c544a32cb5fbee7a7134b96c2fb01a588adb4acdc03d`  
+		Last Modified: Sun, 11 Aug 2024 16:47:13 GMT  
+		Size: 35.0 MB (34985755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:oracular` - linux; riscv64
