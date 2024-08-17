@@ -1,7 +1,7 @@
 ## `jetty:10-jre21-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:e439066b0337fae744b700df3952b830f755696b2e79bc59601bd076f6329380
+$ docker pull jetty@sha256:5cdd1da865dabe3c4f9146d95baf789b5c0f6a23805192536fb0ad55862255f8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,28 +14,28 @@ $ docker pull jetty@sha256:e439066b0337fae744b700df3952b830f755696b2e79bc59601bd
 ### `jetty:10-jre21-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:0935b01fed3ba933a943ae526cf27d83fed51baf705eeac2f1f5014d1fdf35a1
+$ docker pull jetty@sha256:9b70886b7dc9c2682bd162dd7e76bde2c867eab60e522ce842445c7f5f3ef350
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **109.0 MB (109005429 bytes)**  
+-	Total Size: **109.0 MB (109007542 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a234a09de7bdd33366282978b6edd2c20d34ab1c77af940e5847784ce587fb5`
+-	Image ID: `sha256:1e97d8099048f8d5f619416a9b3f7fba1dd5b1a36950ad83e58896dbcf8097d2`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Fri, 07 Jun 2024 12:00:06 GMT
+# Mon, 08 Jul 2024 06:35:54 GMT
 ARG RELEASE
-# Fri, 07 Jun 2024 12:00:06 GMT
+# Mon, 08 Jul 2024 06:35:54 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 07 Jun 2024 12:00:06 GMT
+# Mon, 08 Jul 2024 06:35:54 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 07 Jun 2024 12:00:06 GMT
+# Mon, 08 Jul 2024 06:35:54 GMT
 LABEL org.opencontainers.image.version=24.04
-# Fri, 07 Jun 2024 12:00:08 GMT
-ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in / 
-# Fri, 07 Jun 2024 12:00:09 GMT
+# Mon, 08 Jul 2024 06:35:54 GMT
+ADD file:c2e78eb585ec4e503f14c4ea98f4962c998f5eb075749507953f85387742694b in / 
+# Mon, 08 Jul 2024 06:35:54 GMT
 CMD ["/bin/bash"]
 # Mon, 08 Jul 2024 06:35:54 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -86,60 +86,60 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:2b3981cac065674916a0b4e8d1b5d7eb49d9863a79ec47ba37336c70496ac8ab`  
-		Last Modified: Fri, 07 Jun 2024 20:58:31 GMT  
-		Size: 30.6 MB (30566626 bytes)  
+	-	`sha256:eb993dcd6942ffcb7633f2cb271bd4b0a275fc9bdc8f5100c5b4d24694cacf50`  
+		Last Modified: Fri, 02 Aug 2024 03:03:23 GMT  
+		Size: 30.6 MB (30567306 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f72f7ee7417d7dc1d181843bc32c8c5d47822e3ae0ac08aa7c72ac09055040c2`  
-		Last Modified: Tue, 23 Jul 2024 01:08:59 GMT  
-		Size: 13.8 MB (13765598 bytes)  
+	-	`sha256:62ad162d7203142bab0c47850dd2fcd205f950b3f9261ed4b68917cf906ca25a`  
+		Last Modified: Sat, 17 Aug 2024 01:10:20 GMT  
+		Size: 13.8 MB (13767059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:386143a8c92fc83ba6b2813a24309fb24b650e32f4dfe4358daeaa1be8eb149e`  
-		Last Modified: Tue, 23 Jul 2024 01:11:30 GMT  
-		Size: 53.5 MB (53513833 bytes)  
+	-	`sha256:e24d0924b40476c64423f22b1d9d1f066526bc2116af8956708c8799afbf8d87`  
+		Last Modified: Sat, 17 Aug 2024 01:14:55 GMT  
+		Size: 53.5 MB (53513864 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f70d790e3f2702a2ee302321245131fd72e1aa6860d5f1e7fb1240962f49556`  
-		Last Modified: Tue, 23 Jul 2024 01:11:23 GMT  
+	-	`sha256:0318899f8f2cd082820e6912bc8e582a5216b719466f5ff4f770fba1d1938c65`  
+		Last Modified: Sat, 17 Aug 2024 01:14:48 GMT  
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3852f97e3f4dafa63d7d915aebc171c3fb0f5bee16885e369ab6407baaaf8e4`  
-		Last Modified: Thu, 25 Jul 2024 17:32:03 GMT  
-		Size: 1.9 KB (1864 bytes)  
+	-	`sha256:ed30e299c39ae82b17d07b545b883cdf28726128a56772a823878a58d429fd97`  
+		Last Modified: Sat, 17 Aug 2024 01:14:48 GMT  
+		Size: 1.9 KB (1866 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d302a01a7ea0fea156dbcd3bad89520c9db754563b460242b05e7eda590aaa64`  
-		Last Modified: Thu, 25 Jul 2024 19:07:08 GMT  
-		Size: 11.2 MB (11155685 bytes)  
+	-	`sha256:53bcf910bae7ad7a7c8414c5a100adfdf5bbba61dbb8a551840a326e4fdc059f`  
+		Last Modified: Sat, 17 Aug 2024 02:03:39 GMT  
+		Size: 11.2 MB (11155623 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8f6479be1c86c39a6ddfb0d16b9555f6b444c836fca2460a1aba034e9f36778`  
-		Last Modified: Thu, 25 Jul 2024 19:07:01 GMT  
-		Size: 1.6 KB (1633 bytes)  
+	-	`sha256:a2e7c5d6d0fd9f22777cbe92b969153c79ba8c313ac089c3d4f09df553cfffe8`  
+		Last Modified: Sat, 17 Aug 2024 02:03:39 GMT  
+		Size: 1.6 KB (1634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:10-jre21-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:1000ebdfe517fe7cba967c266dc6d08e5f0df3baa3ac818ef9546f54989652c8
+$ docker pull jetty@sha256:2f829d3b364d38e9c63659730ad63950465d8e4893b58ea2a093a5326bcbbfc9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3056449 bytes)**  
+-	Total Size: **3.1 MB (3056469 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f8893cd896321461f98b38a885d1d2e648feb1177a68196d48ac2d45c8d31e6e`
+-	Image ID: `sha256:14bc7dc767950d3ea0f31ed68adb8b87b4ee67d5214e85bc9afbb714aeb4963f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:71a9220c7baa8b6cdf8002ce86c0f29560cf7decee232a73a50ebc1865359e45`  
-		Last Modified: Thu, 25 Jul 2024 19:07:08 GMT  
-		Size: 3.0 MB (3035031 bytes)  
+	-	`sha256:283483f4396c7112d57c5e5bdced74d39aa06f9e541ab7ba32c13022b3d657f8`  
+		Last Modified: Sat, 17 Aug 2024 02:03:38 GMT  
+		Size: 3.0 MB (3035051 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:97415a15b9f15cdf973341c948ddcfefb1a851c1eb77a7160c6baefa2fc30b71`  
-		Last Modified: Thu, 25 Jul 2024 19:07:07 GMT  
+	-	`sha256:d6016495168516b9c7b2fddca157c1afca299d27e5cb17ce7a4f13e401506bfe`  
+		Last Modified: Sat, 17 Aug 2024 02:03:38 GMT  
 		Size: 21.4 KB (21418 bytes)  
 		MIME: application/vnd.in-toto+json
 
