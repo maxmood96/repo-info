@@ -1639,7 +1639,7 @@ $ docker pull odoo@sha256:c1d8aa2e1b1bd2b78e6ae93e19a913b4f4b935ead17825800cdbac
 ## `odoo:17`
 
 ```console
-$ docker pull odoo@sha256:12c8f9d782059814e1f190727dcc72d8831e2a8ac9f7786cf45cd39fb629400a
+$ docker pull odoo@sha256:b3a25a96f7bf0f8d610cb1dcbcb8baa95b94055fcb6a53e32993c20019271f88
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1654,29 +1654,29 @@ $ docker pull odoo@sha256:12c8f9d782059814e1f190727dcc72d8831e2a8ac9f7786cf45cd3
 ### `odoo:17` - linux; amd64
 
 ```console
-$ docker pull odoo@sha256:1cdb1d7aca1b98368e71b0049f28ce27fd91cf33298decaa9b9ecbba07eb2b85
+$ docker pull odoo@sha256:7f7299bd1c385708c37707578e1635b5d5ca99bbc19e4e213cdf5e8b4dd4f20f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **597.7 MB (597670298 bytes)**  
+-	Total Size: **595.4 MB (595388513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32c2ee66381b89397e9b67169cf3fe939ebd61981bfaadd1b5a3b2eb7b2e21b7`
+-	Image ID: `sha256:3725e19640c5f7f2eefcd2d75d3d96681af6d1fc8997f453f069713b3c6abb79`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
+ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
+# Mon, 12 Aug 2024 11:24:22 GMT
 CMD ["/bin/bash"]
 # Mon, 12 Aug 2024 11:24:22 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
@@ -1728,93 +1728,93 @@ CMD ["odoo"]
 ```
 
 -	Layers:
-	-	`sha256:3713021b02770a720dea9b54c03d0ed83e03a2ef5dce2898c56a327fee9a8bca`  
-		Last Modified: Thu, 27 Jun 2024 20:18:28 GMT  
-		Size: 29.5 MB (29534055 bytes)  
+	-	`sha256:857cc8cb19c0f475256df4b7709003b77f101215ebf3693118e61aac6a5ea4ff`  
+		Last Modified: Tue, 13 Aug 2024 10:44:49 GMT  
+		Size: 29.5 MB (29536025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0b97d817b6db27c1928f6a42c844f3269e50bcf47aa9a9667fbd3db11e4ea23`  
-		Last Modified: Mon, 12 Aug 2024 16:58:46 GMT  
-		Size: 236.0 MB (236023122 bytes)  
+	-	`sha256:6fb1c9502ac2c40711e258fe5fbeff39b2234453f4a77db921c8afac023de003`  
+		Last Modified: Sat, 17 Aug 2024 02:04:28 GMT  
+		Size: 233.7 MB (233742043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:109966a444a61189e1008ec7f78e5a63a5c678477da9969e443cfa1b9f7a3e65`  
-		Last Modified: Mon, 12 Aug 2024 16:58:42 GMT  
-		Size: 2.3 MB (2315818 bytes)  
+	-	`sha256:b55de2e47752513c0598cd315998b95b62312aa64904c76761db0a6ee4f437f1`  
+		Last Modified: Sat, 17 Aug 2024 02:04:24 GMT  
+		Size: 2.3 MB (2315558 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ca1ceaafe360e7c2eb48ea21c069b10da0004f15050e6d6bf3513e239ba92b9`  
-		Last Modified: Mon, 12 Aug 2024 16:58:42 GMT  
-		Size: 464.9 KB (464945 bytes)  
+	-	`sha256:9c545b9834dc8d8529c069bec4ab73d9954855f1cd2130cd216305bb324dc758`  
+		Last Modified: Sat, 17 Aug 2024 02:04:24 GMT  
+		Size: 464.9 KB (464901 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ad698162b1a00c222756334da2c09ed0521109d7f1d19682b24687a5cc2ccd9`  
-		Last Modified: Mon, 12 Aug 2024 16:58:47 GMT  
-		Size: 329.3 MB (329329915 bytes)  
+	-	`sha256:79aa04d8f657ddc69e3ece87ee31d6629d1111e0d7be9eb8ed333f1451995d2f`  
+		Last Modified: Sat, 17 Aug 2024 02:04:29 GMT  
+		Size: 329.3 MB (329327550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b3e9b3139a88f6f6196e298706d83488100045f0ad3d5b18eb461bf62016b80`  
-		Last Modified: Mon, 12 Aug 2024 16:58:43 GMT  
-		Size: 707.0 B  
+	-	`sha256:776cd7a35f92c05f85fed1be7a4c1fb8f404909fad62b0b0628ee903f0318d3f`  
+		Last Modified: Sat, 17 Aug 2024 02:04:25 GMT  
+		Size: 702.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9ddffb8bab1cd6ec722d86b9d61ecb558070b9659aae04a696ecfb59fa5a98f`  
-		Last Modified: Mon, 12 Aug 2024 16:58:43 GMT  
-		Size: 557.0 B  
+	-	`sha256:7d84f059e26bf9f6c83edc58c115d454bfac38db7f3e7d21645e2f8e7327a5f6`  
+		Last Modified: Sat, 17 Aug 2024 02:04:25 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49a2220e858c2c55c070c7afa3c1ca37ae8e4de6c241c2dfd57be53a8ce55eb5`  
-		Last Modified: Mon, 12 Aug 2024 16:58:44 GMT  
-		Size: 597.0 B  
+	-	`sha256:ae9e3f8f364db6686278c509146b1499caeaecad92f3974f9e18f1a474ca0def`  
+		Last Modified: Sat, 17 Aug 2024 02:04:26 GMT  
+		Size: 596.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bfad5f8642fd09b5f672ed93047124ce16e7e75fa69faaab3aea896c1d15d3e4`  
-		Last Modified: Mon, 12 Aug 2024 16:58:44 GMT  
+	-	`sha256:c84b59bd1f30d7d8cf107b02839ebd44387671ef6c10f1fb874d82961a42ec7d`  
+		Last Modified: Sat, 17 Aug 2024 02:04:26 GMT  
 		Size: 582.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:17` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:f43accb3034516aaa7809b520f38f958e699343058c681b0842d5d4e75cfbca3
+$ docker pull odoo@sha256:4716eedc21bb20a98a55e6ac3bde958743f4d6dd75ff373d93153ba37a253c06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **39.0 MB (38983060 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:61843b187fb50f3ae2b98e2c0bffd2c4fa63ce03a19d3eb58a113cce9ada645c`
+-	Image ID: `sha256:23682b87ca37b1aa66ca9b79e72cec2f27bb09b55e176ddf115a1fe1f1747d2e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a686aa91b4c474c1be0d35c6b1b4628413bf45e032bbcd2b331c9bce613a0882`  
-		Last Modified: Mon, 12 Aug 2024 16:58:43 GMT  
+	-	`sha256:1fe58ba6648970bb5f6768bf108084286ccf278e114e3c8a56937f7415ea5631`  
+		Last Modified: Sat, 17 Aug 2024 02:04:25 GMT  
 		Size: 39.0 MB (38956185 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c053693c0db30b810560bc8d138c0481d82878a099c26767164165a09985b254`  
-		Last Modified: Mon, 12 Aug 2024 16:58:42 GMT  
+	-	`sha256:9ff81c4dad542bdb25fe981f3aeaae470af063740c0510fff90c0e8805e4c613`  
+		Last Modified: Sat, 17 Aug 2024 02:04:24 GMT  
 		Size: 26.9 KB (26875 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `odoo:17` - linux; arm64 variant v8
 
 ```console
-$ docker pull odoo@sha256:b5317e9266ab45927033437194845e0b71122406dc2fb45a467b92086f22b4f3
+$ docker pull odoo@sha256:993937852f8631f76d508ddc7e0c9505d9db58539779a64b10b202909cebef81
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **590.2 MB (590178176 bytes)**  
+-	Total Size: **590.2 MB (590183870 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a6b827f072ab1c262a98d2377909bc48f2e05b6817b5d883395464a5475e9cb`
+-	Image ID: `sha256:1d45a27d523bf248db2783a623b722a05f0487e6def9f37e7ba1ab1a526d2a62`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 19:23:22 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 19:23:22 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 19:23:22 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 19:23:22 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 19:23:26 GMT
-ADD file:2bed1fbf8253926f27dc275983c274712d836e9b6acdb1059d29c072d8f63a03 in / 
-# Thu, 27 Jun 2024 19:23:26 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
+ADD file:4126c5ecc7750c7d2beb8c08d15aea03d96910453b36d2fb2d41185fdca7b20f in / 
+# Mon, 12 Aug 2024 11:24:22 GMT
 CMD ["/bin/bash"]
 # Mon, 12 Aug 2024 11:24:22 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
@@ -1866,93 +1866,93 @@ CMD ["odoo"]
 ```
 
 -	Layers:
-	-	`sha256:4ce000a43472e4a2527834764b5044674760f1e2a766480798d03a93b51a0b39`  
-		Last Modified: Thu, 27 Jun 2024 20:18:34 GMT  
-		Size: 27.4 MB (27360025 bytes)  
+	-	`sha256:e63ce922f0229bde5aea9f366c46883dcd23747e7d2c541f16665f199dbf98b8`  
+		Last Modified: Tue, 13 Aug 2024 10:44:55 GMT  
+		Size: 27.4 MB (27358683 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c169fa3f48783fbeec78b2a931ddac75d618c1edb2d6ea4e2c6fe5f9730ab868`  
-		Last Modified: Tue, 30 Jul 2024 19:04:26 GMT  
-		Size: 231.1 MB (231116218 bytes)  
+	-	`sha256:e0a581f461c1fc23c9bf3611e1760531153dbb50f01c034b1498d291c26c8520`  
+		Last Modified: Sat, 17 Aug 2024 03:34:41 GMT  
+		Size: 231.1 MB (231116671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b04b57c1d87d80886aaedd13d353dde577429e740cfb574935ba1669b44b69aa`  
-		Last Modified: Tue, 30 Jul 2024 19:04:21 GMT  
-		Size: 2.3 MB (2306415 bytes)  
+	-	`sha256:92a3dc6c59fbe1745d030ced68224ef58f92023dc33fac4ff765aeebba99ff73`  
+		Last Modified: Sat, 17 Aug 2024 03:34:36 GMT  
+		Size: 2.3 MB (2307689 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2bcca78310f41f21f044796b20832ee3156e7de28ba2bbbe8e3a8fe835e409f`  
-		Last Modified: Tue, 30 Jul 2024 19:04:21 GMT  
-		Size: 464.4 KB (464370 bytes)  
+	-	`sha256:94117e1eaca32fa3fce3e976dac34e3841e8fa793c3ddc5bf63d01b8342742bb`  
+		Last Modified: Sat, 17 Aug 2024 03:34:36 GMT  
+		Size: 465.0 KB (465019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce6f99caa43ea3b02cbb493d6eb8c3bc046f48220f7dd7264469b61a2cd5c5f4`  
-		Last Modified: Mon, 12 Aug 2024 17:16:33 GMT  
-		Size: 328.9 MB (328928708 bytes)  
+	-	`sha256:e4b35065ccf4d91ef0f5b605cced722d37f0eddc353e93c16de74979c9e43b1e`  
+		Last Modified: Sat, 17 Aug 2024 03:34:43 GMT  
+		Size: 328.9 MB (328933372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e9f010333b1805242d7529c01feb8a9aba0260f3c759a82c848d47bc772c8b4`  
-		Last Modified: Mon, 12 Aug 2024 17:16:26 GMT  
-		Size: 704.0 B  
+	-	`sha256:16f926db0c771bbf79dfd7b79da7e1dc84286c7358bf6d7840c18b3c83542be8`  
+		Last Modified: Sat, 17 Aug 2024 03:34:37 GMT  
+		Size: 706.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0fb432b6d7099111ed941c5c26b5739ef0dcd2ff5758b15e3b1411dc2362996f`  
-		Last Modified: Mon, 12 Aug 2024 17:16:25 GMT  
-		Size: 555.0 B  
+	-	`sha256:bc28d83693f4855fdbee4e622965460139aa9eeb974bcd5aa1e0e1ce51437161`  
+		Last Modified: Sat, 17 Aug 2024 03:34:37 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:54d34c60c8d489331ab49bfc09f33ff4df4670b450fe7f1e9815a09f7926545d`  
-		Last Modified: Mon, 12 Aug 2024 17:16:25 GMT  
-		Size: 598.0 B  
+	-	`sha256:95c5c4441a4b9d91ebbc1fc412ea52f574628351aafb3f276aa02aaa5dd94524`  
+		Last Modified: Sat, 17 Aug 2024 03:34:38 GMT  
+		Size: 594.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c21a88d1c2047be4f9994e244b2880671cca9763c8705129630c8aedc1183e7`  
-		Last Modified: Mon, 12 Aug 2024 17:16:26 GMT  
-		Size: 583.0 B  
+	-	`sha256:16e58dd4413947cd48e434cc8afc93e651b09330a5b05a4508a2f9de652a6ecc`  
+		Last Modified: Sat, 17 Aug 2024 03:34:38 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:17` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:e77a5779b9910b208e131a70809823777f388a2ea9224652c27d3cf72ca4b86d
+$ docker pull odoo@sha256:c10a8ac7b06653b2fe16c211979470205568c51d9864170c69bfce759c44a8de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.0 MB (38989885 bytes)**  
+-	Total Size: **39.0 MB (38989886 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1664144f6b6039e92dbfb6853a2243c9cfc821d4508af5ad7ed346a85adbab4a`
+-	Image ID: `sha256:7a65e05834fda1c14bd0666e1787ae2787fac772af35fbeffe2afc108a64b1c0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b63132ba239d961c4e39ea18df18b773cc787e3fde3e0bd6d7b98b80b115d195`  
-		Last Modified: Mon, 12 Aug 2024 17:16:27 GMT  
+	-	`sha256:2f3b9c86829097e4e45d586a3a4cebd861d55d83ede3f764d8178ef5b40617cf`  
+		Last Modified: Sat, 17 Aug 2024 03:34:37 GMT  
 		Size: 39.0 MB (38962710 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2673e89d66bff4e99defe322064a148f7e8ca1a0599ae43edbbacbda91e9b844`  
-		Last Modified: Mon, 12 Aug 2024 17:16:25 GMT  
-		Size: 27.2 KB (27175 bytes)  
+	-	`sha256:c7b649b05b090f34f8146e19c8caa54dc225854a1656faff09015259a7a09c38`  
+		Last Modified: Sat, 17 Aug 2024 03:34:35 GMT  
+		Size: 27.2 KB (27176 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `odoo:17` - linux; ppc64le
 
 ```console
-$ docker pull odoo@sha256:5be0825b87874e8b2d2cc99f1f36c6cbedbcfa07ed894945a17e6c2f7fe588d6
+$ docker pull odoo@sha256:2a36c8f24159ac55a565f620f177601166cab0be476ea32991c332f5c4d12470
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **611.9 MB (611853700 bytes)**  
+-	Total Size: **611.9 MB (611855606 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f061e48975be4deb1f6a4d2faca3663c7aa095e97fddd112fc5c6e0e7efd110f`
+-	Image ID: `sha256:e9aa9e05453755e0714d785682599de5634536d61c290e29c980192ee3e7548b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 19:22:59 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 19:22:59 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 19:22:59 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 19:22:59 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 19:23:03 GMT
-ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
-# Thu, 27 Jun 2024 19:23:03 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
+ADD file:c9b0fd1ddcc2e70c763a44be7034882e75f36c79435448061c7785f0f01476db in / 
+# Mon, 12 Aug 2024 11:24:22 GMT
 CMD ["/bin/bash"]
 # Mon, 12 Aug 2024 11:24:22 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
@@ -2004,71 +2004,71 @@ CMD ["odoo"]
 ```
 
 -	Layers:
-	-	`sha256:dcb5d217f9f18d3486ceb1894319d66c6f49a84670fbf2ac2f4dd47935357bfc`  
-		Last Modified: Thu, 27 Jun 2024 20:18:46 GMT  
-		Size: 34.5 MB (34461081 bytes)  
+	-	`sha256:593b8356181268f4632d882f9f41d8b565910ac10009886043617c157fbfcae6`  
+		Last Modified: Tue, 13 Aug 2024 10:45:08 GMT  
+		Size: 34.5 MB (34464178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:750728ff278f8ee72bd1d43a21ffcd830b8460c31825944ca547211e693fea90`  
-		Last Modified: Tue, 30 Jul 2024 19:08:40 GMT  
-		Size: 243.3 MB (243278728 bytes)  
+	-	`sha256:649917932e48ae9826c365816bb9ed493a267201a69d663f38dce89f38379d0b`  
+		Last Modified: Sat, 17 Aug 2024 02:01:48 GMT  
+		Size: 243.3 MB (243276312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0144d2aa49c93b6e019b8c471462c462b926da64cb5e2cc1d18d711c14a5888`  
-		Last Modified: Tue, 30 Jul 2024 19:08:31 GMT  
-		Size: 2.6 MB (2590475 bytes)  
+	-	`sha256:4137abe0b20854df48c69fbcd577be8244ecbae68b833dded386e520f586a018`  
+		Last Modified: Sat, 17 Aug 2024 02:01:42 GMT  
+		Size: 2.6 MB (2592374 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:332f9f2f0f52ab9fd31f25e668515d8ab8c4b568e8b8cc5f7cdc1a48d588d970`  
-		Last Modified: Tue, 30 Jul 2024 19:08:31 GMT  
-		Size: 464.4 KB (464386 bytes)  
+	-	`sha256:3c2fa96facf5686ef0daba4666a3b8cf09d55e1e688fc8357e8fc048129db8f1`  
+		Last Modified: Sat, 17 Aug 2024 02:01:42 GMT  
+		Size: 464.9 KB (464920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdb27bfc9b48029d4ceee6fab8a8e952d84d859997351145e8faaa24cc3c8a06`  
-		Last Modified: Mon, 12 Aug 2024 17:26:16 GMT  
-		Size: 331.1 MB (331056587 bytes)  
+	-	`sha256:0a12b96f1bb63707348ac6c758d2bd1be3a7dad754de6e2ff3704e4bfc6e9701`  
+		Last Modified: Sat, 17 Aug 2024 02:01:50 GMT  
+		Size: 331.1 MB (331055383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69716c727479aca316bd1a3e19c41a9f6f5c921713b82889ff07b43ab2d17bab`  
-		Last Modified: Mon, 12 Aug 2024 17:26:04 GMT  
-		Size: 707.0 B  
+	-	`sha256:a5cb5d596d3809c291966009e9b24a80677ce6b51c46b5e79413c3d177623b6d`  
+		Last Modified: Sat, 17 Aug 2024 02:01:43 GMT  
+		Size: 706.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62d7d627f697b99ab9e266e4621c3d310eca7a08c8bf25a7b11b1b27bc0d0d75`  
-		Last Modified: Mon, 12 Aug 2024 17:26:04 GMT  
+	-	`sha256:d3186e7549d4d5a4ebb2e541bc0cc44d182179ca74c30f8e8ecd16adae72c35c`  
+		Last Modified: Sat, 17 Aug 2024 02:01:43 GMT  
 		Size: 555.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c070a6b546c1f54a69f751106ae9ef1a5e2e2e1556976047dc7269bb75ebf7a8`  
-		Last Modified: Mon, 12 Aug 2024 17:26:04 GMT  
+	-	`sha256:638018d448b5216a8debc54484dc10730a4af18ef0943e918e8350cbf4fba899`  
+		Last Modified: Sat, 17 Aug 2024 02:01:44 GMT  
 		Size: 598.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff0fce6a52eed5cae88b9bcad4c2c97a8d8563c8b9c54e5ea94535b78d9efb10`  
-		Last Modified: Mon, 12 Aug 2024 17:26:05 GMT  
-		Size: 583.0 B  
+	-	`sha256:a7e4775ce900135c2575c3012b1adfc15eddbd6036f8e8e91e7678fd6ebd106d`  
+		Last Modified: Sat, 17 Aug 2024 02:01:44 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:17` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:186b7720403b4368c19b9eceeec6a2480b6a0c8974c78a89b0fa313fdadce49f
+$ docker pull odoo@sha256:1a2a0ec2debb762dfe941ff9d72c37530bc8fcc5b134b5c12213973684721626
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **39.0 MB (38991429 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d4549de6f82227ccff2a41867fee8cd7459b4f1557b0b7a6a5f85eba75d8e66c`
+-	Image ID: `sha256:09f48b8d3307ffe4d254a1d06dd65d1281124df9a687d9c53369a8707a31f7ff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:052ecf79d8179ed602f4df5a85299720c81ebaab4c01973ea83c30cc4b8b655f`  
-		Last Modified: Mon, 12 Aug 2024 17:26:05 GMT  
+	-	`sha256:f9dc11b4af5cac8f2b07a770b2b6c426a39b3e512d3b8c1381214f3f15408444`  
+		Last Modified: Sat, 17 Aug 2024 02:01:44 GMT  
 		Size: 39.0 MB (38964498 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d99ce8bca182db4e4c6e543540f55fc4ac999622058c0c37d7d0320a4185ddf8`  
-		Last Modified: Mon, 12 Aug 2024 17:26:04 GMT  
+	-	`sha256:02c2da1e45d642bedd26f4899dfd005d90ad0e1f14e20e5953712c2e1e94c2fd`  
+		Last Modified: Sat, 17 Aug 2024 02:01:42 GMT  
 		Size: 26.9 KB (26931 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `odoo:17.0`
 
 ```console
-$ docker pull odoo@sha256:12c8f9d782059814e1f190727dcc72d8831e2a8ac9f7786cf45cd39fb629400a
+$ docker pull odoo@sha256:b3a25a96f7bf0f8d610cb1dcbcb8baa95b94055fcb6a53e32993c20019271f88
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2083,29 +2083,29 @@ $ docker pull odoo@sha256:12c8f9d782059814e1f190727dcc72d8831e2a8ac9f7786cf45cd3
 ### `odoo:17.0` - linux; amd64
 
 ```console
-$ docker pull odoo@sha256:1cdb1d7aca1b98368e71b0049f28ce27fd91cf33298decaa9b9ecbba07eb2b85
+$ docker pull odoo@sha256:7f7299bd1c385708c37707578e1635b5d5ca99bbc19e4e213cdf5e8b4dd4f20f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **597.7 MB (597670298 bytes)**  
+-	Total Size: **595.4 MB (595388513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32c2ee66381b89397e9b67169cf3fe939ebd61981bfaadd1b5a3b2eb7b2e21b7`
+-	Image ID: `sha256:3725e19640c5f7f2eefcd2d75d3d96681af6d1fc8997f453f069713b3c6abb79`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
+ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
+# Mon, 12 Aug 2024 11:24:22 GMT
 CMD ["/bin/bash"]
 # Mon, 12 Aug 2024 11:24:22 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
@@ -2157,93 +2157,93 @@ CMD ["odoo"]
 ```
 
 -	Layers:
-	-	`sha256:3713021b02770a720dea9b54c03d0ed83e03a2ef5dce2898c56a327fee9a8bca`  
-		Last Modified: Thu, 27 Jun 2024 20:18:28 GMT  
-		Size: 29.5 MB (29534055 bytes)  
+	-	`sha256:857cc8cb19c0f475256df4b7709003b77f101215ebf3693118e61aac6a5ea4ff`  
+		Last Modified: Tue, 13 Aug 2024 10:44:49 GMT  
+		Size: 29.5 MB (29536025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0b97d817b6db27c1928f6a42c844f3269e50bcf47aa9a9667fbd3db11e4ea23`  
-		Last Modified: Mon, 12 Aug 2024 16:58:46 GMT  
-		Size: 236.0 MB (236023122 bytes)  
+	-	`sha256:6fb1c9502ac2c40711e258fe5fbeff39b2234453f4a77db921c8afac023de003`  
+		Last Modified: Sat, 17 Aug 2024 02:04:28 GMT  
+		Size: 233.7 MB (233742043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:109966a444a61189e1008ec7f78e5a63a5c678477da9969e443cfa1b9f7a3e65`  
-		Last Modified: Mon, 12 Aug 2024 16:58:42 GMT  
-		Size: 2.3 MB (2315818 bytes)  
+	-	`sha256:b55de2e47752513c0598cd315998b95b62312aa64904c76761db0a6ee4f437f1`  
+		Last Modified: Sat, 17 Aug 2024 02:04:24 GMT  
+		Size: 2.3 MB (2315558 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ca1ceaafe360e7c2eb48ea21c069b10da0004f15050e6d6bf3513e239ba92b9`  
-		Last Modified: Mon, 12 Aug 2024 16:58:42 GMT  
-		Size: 464.9 KB (464945 bytes)  
+	-	`sha256:9c545b9834dc8d8529c069bec4ab73d9954855f1cd2130cd216305bb324dc758`  
+		Last Modified: Sat, 17 Aug 2024 02:04:24 GMT  
+		Size: 464.9 KB (464901 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ad698162b1a00c222756334da2c09ed0521109d7f1d19682b24687a5cc2ccd9`  
-		Last Modified: Mon, 12 Aug 2024 16:58:47 GMT  
-		Size: 329.3 MB (329329915 bytes)  
+	-	`sha256:79aa04d8f657ddc69e3ece87ee31d6629d1111e0d7be9eb8ed333f1451995d2f`  
+		Last Modified: Sat, 17 Aug 2024 02:04:29 GMT  
+		Size: 329.3 MB (329327550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b3e9b3139a88f6f6196e298706d83488100045f0ad3d5b18eb461bf62016b80`  
-		Last Modified: Mon, 12 Aug 2024 16:58:43 GMT  
-		Size: 707.0 B  
+	-	`sha256:776cd7a35f92c05f85fed1be7a4c1fb8f404909fad62b0b0628ee903f0318d3f`  
+		Last Modified: Sat, 17 Aug 2024 02:04:25 GMT  
+		Size: 702.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9ddffb8bab1cd6ec722d86b9d61ecb558070b9659aae04a696ecfb59fa5a98f`  
-		Last Modified: Mon, 12 Aug 2024 16:58:43 GMT  
-		Size: 557.0 B  
+	-	`sha256:7d84f059e26bf9f6c83edc58c115d454bfac38db7f3e7d21645e2f8e7327a5f6`  
+		Last Modified: Sat, 17 Aug 2024 02:04:25 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49a2220e858c2c55c070c7afa3c1ca37ae8e4de6c241c2dfd57be53a8ce55eb5`  
-		Last Modified: Mon, 12 Aug 2024 16:58:44 GMT  
-		Size: 597.0 B  
+	-	`sha256:ae9e3f8f364db6686278c509146b1499caeaecad92f3974f9e18f1a474ca0def`  
+		Last Modified: Sat, 17 Aug 2024 02:04:26 GMT  
+		Size: 596.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bfad5f8642fd09b5f672ed93047124ce16e7e75fa69faaab3aea896c1d15d3e4`  
-		Last Modified: Mon, 12 Aug 2024 16:58:44 GMT  
+	-	`sha256:c84b59bd1f30d7d8cf107b02839ebd44387671ef6c10f1fb874d82961a42ec7d`  
+		Last Modified: Sat, 17 Aug 2024 02:04:26 GMT  
 		Size: 582.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:17.0` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:f43accb3034516aaa7809b520f38f958e699343058c681b0842d5d4e75cfbca3
+$ docker pull odoo@sha256:4716eedc21bb20a98a55e6ac3bde958743f4d6dd75ff373d93153ba37a253c06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **39.0 MB (38983060 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:61843b187fb50f3ae2b98e2c0bffd2c4fa63ce03a19d3eb58a113cce9ada645c`
+-	Image ID: `sha256:23682b87ca37b1aa66ca9b79e72cec2f27bb09b55e176ddf115a1fe1f1747d2e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a686aa91b4c474c1be0d35c6b1b4628413bf45e032bbcd2b331c9bce613a0882`  
-		Last Modified: Mon, 12 Aug 2024 16:58:43 GMT  
+	-	`sha256:1fe58ba6648970bb5f6768bf108084286ccf278e114e3c8a56937f7415ea5631`  
+		Last Modified: Sat, 17 Aug 2024 02:04:25 GMT  
 		Size: 39.0 MB (38956185 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c053693c0db30b810560bc8d138c0481d82878a099c26767164165a09985b254`  
-		Last Modified: Mon, 12 Aug 2024 16:58:42 GMT  
+	-	`sha256:9ff81c4dad542bdb25fe981f3aeaae470af063740c0510fff90c0e8805e4c613`  
+		Last Modified: Sat, 17 Aug 2024 02:04:24 GMT  
 		Size: 26.9 KB (26875 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `odoo:17.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull odoo@sha256:b5317e9266ab45927033437194845e0b71122406dc2fb45a467b92086f22b4f3
+$ docker pull odoo@sha256:993937852f8631f76d508ddc7e0c9505d9db58539779a64b10b202909cebef81
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **590.2 MB (590178176 bytes)**  
+-	Total Size: **590.2 MB (590183870 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a6b827f072ab1c262a98d2377909bc48f2e05b6817b5d883395464a5475e9cb`
+-	Image ID: `sha256:1d45a27d523bf248db2783a623b722a05f0487e6def9f37e7ba1ab1a526d2a62`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 19:23:22 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 19:23:22 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 19:23:22 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 19:23:22 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 19:23:26 GMT
-ADD file:2bed1fbf8253926f27dc275983c274712d836e9b6acdb1059d29c072d8f63a03 in / 
-# Thu, 27 Jun 2024 19:23:26 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
+ADD file:4126c5ecc7750c7d2beb8c08d15aea03d96910453b36d2fb2d41185fdca7b20f in / 
+# Mon, 12 Aug 2024 11:24:22 GMT
 CMD ["/bin/bash"]
 # Mon, 12 Aug 2024 11:24:22 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
@@ -2295,93 +2295,93 @@ CMD ["odoo"]
 ```
 
 -	Layers:
-	-	`sha256:4ce000a43472e4a2527834764b5044674760f1e2a766480798d03a93b51a0b39`  
-		Last Modified: Thu, 27 Jun 2024 20:18:34 GMT  
-		Size: 27.4 MB (27360025 bytes)  
+	-	`sha256:e63ce922f0229bde5aea9f366c46883dcd23747e7d2c541f16665f199dbf98b8`  
+		Last Modified: Tue, 13 Aug 2024 10:44:55 GMT  
+		Size: 27.4 MB (27358683 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c169fa3f48783fbeec78b2a931ddac75d618c1edb2d6ea4e2c6fe5f9730ab868`  
-		Last Modified: Tue, 30 Jul 2024 19:04:26 GMT  
-		Size: 231.1 MB (231116218 bytes)  
+	-	`sha256:e0a581f461c1fc23c9bf3611e1760531153dbb50f01c034b1498d291c26c8520`  
+		Last Modified: Sat, 17 Aug 2024 03:34:41 GMT  
+		Size: 231.1 MB (231116671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b04b57c1d87d80886aaedd13d353dde577429e740cfb574935ba1669b44b69aa`  
-		Last Modified: Tue, 30 Jul 2024 19:04:21 GMT  
-		Size: 2.3 MB (2306415 bytes)  
+	-	`sha256:92a3dc6c59fbe1745d030ced68224ef58f92023dc33fac4ff765aeebba99ff73`  
+		Last Modified: Sat, 17 Aug 2024 03:34:36 GMT  
+		Size: 2.3 MB (2307689 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2bcca78310f41f21f044796b20832ee3156e7de28ba2bbbe8e3a8fe835e409f`  
-		Last Modified: Tue, 30 Jul 2024 19:04:21 GMT  
-		Size: 464.4 KB (464370 bytes)  
+	-	`sha256:94117e1eaca32fa3fce3e976dac34e3841e8fa793c3ddc5bf63d01b8342742bb`  
+		Last Modified: Sat, 17 Aug 2024 03:34:36 GMT  
+		Size: 465.0 KB (465019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce6f99caa43ea3b02cbb493d6eb8c3bc046f48220f7dd7264469b61a2cd5c5f4`  
-		Last Modified: Mon, 12 Aug 2024 17:16:33 GMT  
-		Size: 328.9 MB (328928708 bytes)  
+	-	`sha256:e4b35065ccf4d91ef0f5b605cced722d37f0eddc353e93c16de74979c9e43b1e`  
+		Last Modified: Sat, 17 Aug 2024 03:34:43 GMT  
+		Size: 328.9 MB (328933372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e9f010333b1805242d7529c01feb8a9aba0260f3c759a82c848d47bc772c8b4`  
-		Last Modified: Mon, 12 Aug 2024 17:16:26 GMT  
-		Size: 704.0 B  
+	-	`sha256:16f926db0c771bbf79dfd7b79da7e1dc84286c7358bf6d7840c18b3c83542be8`  
+		Last Modified: Sat, 17 Aug 2024 03:34:37 GMT  
+		Size: 706.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0fb432b6d7099111ed941c5c26b5739ef0dcd2ff5758b15e3b1411dc2362996f`  
-		Last Modified: Mon, 12 Aug 2024 17:16:25 GMT  
-		Size: 555.0 B  
+	-	`sha256:bc28d83693f4855fdbee4e622965460139aa9eeb974bcd5aa1e0e1ce51437161`  
+		Last Modified: Sat, 17 Aug 2024 03:34:37 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:54d34c60c8d489331ab49bfc09f33ff4df4670b450fe7f1e9815a09f7926545d`  
-		Last Modified: Mon, 12 Aug 2024 17:16:25 GMT  
-		Size: 598.0 B  
+	-	`sha256:95c5c4441a4b9d91ebbc1fc412ea52f574628351aafb3f276aa02aaa5dd94524`  
+		Last Modified: Sat, 17 Aug 2024 03:34:38 GMT  
+		Size: 594.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c21a88d1c2047be4f9994e244b2880671cca9763c8705129630c8aedc1183e7`  
-		Last Modified: Mon, 12 Aug 2024 17:16:26 GMT  
-		Size: 583.0 B  
+	-	`sha256:16e58dd4413947cd48e434cc8afc93e651b09330a5b05a4508a2f9de652a6ecc`  
+		Last Modified: Sat, 17 Aug 2024 03:34:38 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:17.0` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:e77a5779b9910b208e131a70809823777f388a2ea9224652c27d3cf72ca4b86d
+$ docker pull odoo@sha256:c10a8ac7b06653b2fe16c211979470205568c51d9864170c69bfce759c44a8de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.0 MB (38989885 bytes)**  
+-	Total Size: **39.0 MB (38989886 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1664144f6b6039e92dbfb6853a2243c9cfc821d4508af5ad7ed346a85adbab4a`
+-	Image ID: `sha256:7a65e05834fda1c14bd0666e1787ae2787fac772af35fbeffe2afc108a64b1c0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b63132ba239d961c4e39ea18df18b773cc787e3fde3e0bd6d7b98b80b115d195`  
-		Last Modified: Mon, 12 Aug 2024 17:16:27 GMT  
+	-	`sha256:2f3b9c86829097e4e45d586a3a4cebd861d55d83ede3f764d8178ef5b40617cf`  
+		Last Modified: Sat, 17 Aug 2024 03:34:37 GMT  
 		Size: 39.0 MB (38962710 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2673e89d66bff4e99defe322064a148f7e8ca1a0599ae43edbbacbda91e9b844`  
-		Last Modified: Mon, 12 Aug 2024 17:16:25 GMT  
-		Size: 27.2 KB (27175 bytes)  
+	-	`sha256:c7b649b05b090f34f8146e19c8caa54dc225854a1656faff09015259a7a09c38`  
+		Last Modified: Sat, 17 Aug 2024 03:34:35 GMT  
+		Size: 27.2 KB (27176 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `odoo:17.0` - linux; ppc64le
 
 ```console
-$ docker pull odoo@sha256:5be0825b87874e8b2d2cc99f1f36c6cbedbcfa07ed894945a17e6c2f7fe588d6
+$ docker pull odoo@sha256:2a36c8f24159ac55a565f620f177601166cab0be476ea32991c332f5c4d12470
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **611.9 MB (611853700 bytes)**  
+-	Total Size: **611.9 MB (611855606 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f061e48975be4deb1f6a4d2faca3663c7aa095e97fddd112fc5c6e0e7efd110f`
+-	Image ID: `sha256:e9aa9e05453755e0714d785682599de5634536d61c290e29c980192ee3e7548b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 19:22:59 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 19:22:59 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 19:22:59 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 19:22:59 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 19:23:03 GMT
-ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
-# Thu, 27 Jun 2024 19:23:03 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
+ADD file:c9b0fd1ddcc2e70c763a44be7034882e75f36c79435448061c7785f0f01476db in / 
+# Mon, 12 Aug 2024 11:24:22 GMT
 CMD ["/bin/bash"]
 # Mon, 12 Aug 2024 11:24:22 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
@@ -2433,71 +2433,71 @@ CMD ["odoo"]
 ```
 
 -	Layers:
-	-	`sha256:dcb5d217f9f18d3486ceb1894319d66c6f49a84670fbf2ac2f4dd47935357bfc`  
-		Last Modified: Thu, 27 Jun 2024 20:18:46 GMT  
-		Size: 34.5 MB (34461081 bytes)  
+	-	`sha256:593b8356181268f4632d882f9f41d8b565910ac10009886043617c157fbfcae6`  
+		Last Modified: Tue, 13 Aug 2024 10:45:08 GMT  
+		Size: 34.5 MB (34464178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:750728ff278f8ee72bd1d43a21ffcd830b8460c31825944ca547211e693fea90`  
-		Last Modified: Tue, 30 Jul 2024 19:08:40 GMT  
-		Size: 243.3 MB (243278728 bytes)  
+	-	`sha256:649917932e48ae9826c365816bb9ed493a267201a69d663f38dce89f38379d0b`  
+		Last Modified: Sat, 17 Aug 2024 02:01:48 GMT  
+		Size: 243.3 MB (243276312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0144d2aa49c93b6e019b8c471462c462b926da64cb5e2cc1d18d711c14a5888`  
-		Last Modified: Tue, 30 Jul 2024 19:08:31 GMT  
-		Size: 2.6 MB (2590475 bytes)  
+	-	`sha256:4137abe0b20854df48c69fbcd577be8244ecbae68b833dded386e520f586a018`  
+		Last Modified: Sat, 17 Aug 2024 02:01:42 GMT  
+		Size: 2.6 MB (2592374 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:332f9f2f0f52ab9fd31f25e668515d8ab8c4b568e8b8cc5f7cdc1a48d588d970`  
-		Last Modified: Tue, 30 Jul 2024 19:08:31 GMT  
-		Size: 464.4 KB (464386 bytes)  
+	-	`sha256:3c2fa96facf5686ef0daba4666a3b8cf09d55e1e688fc8357e8fc048129db8f1`  
+		Last Modified: Sat, 17 Aug 2024 02:01:42 GMT  
+		Size: 464.9 KB (464920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdb27bfc9b48029d4ceee6fab8a8e952d84d859997351145e8faaa24cc3c8a06`  
-		Last Modified: Mon, 12 Aug 2024 17:26:16 GMT  
-		Size: 331.1 MB (331056587 bytes)  
+	-	`sha256:0a12b96f1bb63707348ac6c758d2bd1be3a7dad754de6e2ff3704e4bfc6e9701`  
+		Last Modified: Sat, 17 Aug 2024 02:01:50 GMT  
+		Size: 331.1 MB (331055383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69716c727479aca316bd1a3e19c41a9f6f5c921713b82889ff07b43ab2d17bab`  
-		Last Modified: Mon, 12 Aug 2024 17:26:04 GMT  
-		Size: 707.0 B  
+	-	`sha256:a5cb5d596d3809c291966009e9b24a80677ce6b51c46b5e79413c3d177623b6d`  
+		Last Modified: Sat, 17 Aug 2024 02:01:43 GMT  
+		Size: 706.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62d7d627f697b99ab9e266e4621c3d310eca7a08c8bf25a7b11b1b27bc0d0d75`  
-		Last Modified: Mon, 12 Aug 2024 17:26:04 GMT  
+	-	`sha256:d3186e7549d4d5a4ebb2e541bc0cc44d182179ca74c30f8e8ecd16adae72c35c`  
+		Last Modified: Sat, 17 Aug 2024 02:01:43 GMT  
 		Size: 555.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c070a6b546c1f54a69f751106ae9ef1a5e2e2e1556976047dc7269bb75ebf7a8`  
-		Last Modified: Mon, 12 Aug 2024 17:26:04 GMT  
+	-	`sha256:638018d448b5216a8debc54484dc10730a4af18ef0943e918e8350cbf4fba899`  
+		Last Modified: Sat, 17 Aug 2024 02:01:44 GMT  
 		Size: 598.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff0fce6a52eed5cae88b9bcad4c2c97a8d8563c8b9c54e5ea94535b78d9efb10`  
-		Last Modified: Mon, 12 Aug 2024 17:26:05 GMT  
-		Size: 583.0 B  
+	-	`sha256:a7e4775ce900135c2575c3012b1adfc15eddbd6036f8e8e91e7678fd6ebd106d`  
+		Last Modified: Sat, 17 Aug 2024 02:01:44 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:17.0` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:186b7720403b4368c19b9eceeec6a2480b6a0c8974c78a89b0fa313fdadce49f
+$ docker pull odoo@sha256:1a2a0ec2debb762dfe941ff9d72c37530bc8fcc5b134b5c12213973684721626
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **39.0 MB (38991429 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d4549de6f82227ccff2a41867fee8cd7459b4f1557b0b7a6a5f85eba75d8e66c`
+-	Image ID: `sha256:09f48b8d3307ffe4d254a1d06dd65d1281124df9a687d9c53369a8707a31f7ff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:052ecf79d8179ed602f4df5a85299720c81ebaab4c01973ea83c30cc4b8b655f`  
-		Last Modified: Mon, 12 Aug 2024 17:26:05 GMT  
+	-	`sha256:f9dc11b4af5cac8f2b07a770b2b6c426a39b3e512d3b8c1381214f3f15408444`  
+		Last Modified: Sat, 17 Aug 2024 02:01:44 GMT  
 		Size: 39.0 MB (38964498 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d99ce8bca182db4e4c6e543540f55fc4ac999622058c0c37d7d0320a4185ddf8`  
-		Last Modified: Mon, 12 Aug 2024 17:26:04 GMT  
+	-	`sha256:02c2da1e45d642bedd26f4899dfd005d90ad0e1f14e20e5953712c2e1e94c2fd`  
+		Last Modified: Sat, 17 Aug 2024 02:01:42 GMT  
 		Size: 26.9 KB (26931 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `odoo:17.0-20240812`
 
 ```console
-$ docker pull odoo@sha256:12c8f9d782059814e1f190727dcc72d8831e2a8ac9f7786cf45cd39fb629400a
+$ docker pull odoo@sha256:b3a25a96f7bf0f8d610cb1dcbcb8baa95b94055fcb6a53e32993c20019271f88
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2512,29 +2512,29 @@ $ docker pull odoo@sha256:12c8f9d782059814e1f190727dcc72d8831e2a8ac9f7786cf45cd3
 ### `odoo:17.0-20240812` - linux; amd64
 
 ```console
-$ docker pull odoo@sha256:1cdb1d7aca1b98368e71b0049f28ce27fd91cf33298decaa9b9ecbba07eb2b85
+$ docker pull odoo@sha256:7f7299bd1c385708c37707578e1635b5d5ca99bbc19e4e213cdf5e8b4dd4f20f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **597.7 MB (597670298 bytes)**  
+-	Total Size: **595.4 MB (595388513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32c2ee66381b89397e9b67169cf3fe939ebd61981bfaadd1b5a3b2eb7b2e21b7`
+-	Image ID: `sha256:3725e19640c5f7f2eefcd2d75d3d96681af6d1fc8997f453f069713b3c6abb79`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
+ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
+# Mon, 12 Aug 2024 11:24:22 GMT
 CMD ["/bin/bash"]
 # Mon, 12 Aug 2024 11:24:22 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
@@ -2586,93 +2586,93 @@ CMD ["odoo"]
 ```
 
 -	Layers:
-	-	`sha256:3713021b02770a720dea9b54c03d0ed83e03a2ef5dce2898c56a327fee9a8bca`  
-		Last Modified: Thu, 27 Jun 2024 20:18:28 GMT  
-		Size: 29.5 MB (29534055 bytes)  
+	-	`sha256:857cc8cb19c0f475256df4b7709003b77f101215ebf3693118e61aac6a5ea4ff`  
+		Last Modified: Tue, 13 Aug 2024 10:44:49 GMT  
+		Size: 29.5 MB (29536025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0b97d817b6db27c1928f6a42c844f3269e50bcf47aa9a9667fbd3db11e4ea23`  
-		Last Modified: Mon, 12 Aug 2024 16:58:46 GMT  
-		Size: 236.0 MB (236023122 bytes)  
+	-	`sha256:6fb1c9502ac2c40711e258fe5fbeff39b2234453f4a77db921c8afac023de003`  
+		Last Modified: Sat, 17 Aug 2024 02:04:28 GMT  
+		Size: 233.7 MB (233742043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:109966a444a61189e1008ec7f78e5a63a5c678477da9969e443cfa1b9f7a3e65`  
-		Last Modified: Mon, 12 Aug 2024 16:58:42 GMT  
-		Size: 2.3 MB (2315818 bytes)  
+	-	`sha256:b55de2e47752513c0598cd315998b95b62312aa64904c76761db0a6ee4f437f1`  
+		Last Modified: Sat, 17 Aug 2024 02:04:24 GMT  
+		Size: 2.3 MB (2315558 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ca1ceaafe360e7c2eb48ea21c069b10da0004f15050e6d6bf3513e239ba92b9`  
-		Last Modified: Mon, 12 Aug 2024 16:58:42 GMT  
-		Size: 464.9 KB (464945 bytes)  
+	-	`sha256:9c545b9834dc8d8529c069bec4ab73d9954855f1cd2130cd216305bb324dc758`  
+		Last Modified: Sat, 17 Aug 2024 02:04:24 GMT  
+		Size: 464.9 KB (464901 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ad698162b1a00c222756334da2c09ed0521109d7f1d19682b24687a5cc2ccd9`  
-		Last Modified: Mon, 12 Aug 2024 16:58:47 GMT  
-		Size: 329.3 MB (329329915 bytes)  
+	-	`sha256:79aa04d8f657ddc69e3ece87ee31d6629d1111e0d7be9eb8ed333f1451995d2f`  
+		Last Modified: Sat, 17 Aug 2024 02:04:29 GMT  
+		Size: 329.3 MB (329327550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b3e9b3139a88f6f6196e298706d83488100045f0ad3d5b18eb461bf62016b80`  
-		Last Modified: Mon, 12 Aug 2024 16:58:43 GMT  
-		Size: 707.0 B  
+	-	`sha256:776cd7a35f92c05f85fed1be7a4c1fb8f404909fad62b0b0628ee903f0318d3f`  
+		Last Modified: Sat, 17 Aug 2024 02:04:25 GMT  
+		Size: 702.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9ddffb8bab1cd6ec722d86b9d61ecb558070b9659aae04a696ecfb59fa5a98f`  
-		Last Modified: Mon, 12 Aug 2024 16:58:43 GMT  
-		Size: 557.0 B  
+	-	`sha256:7d84f059e26bf9f6c83edc58c115d454bfac38db7f3e7d21645e2f8e7327a5f6`  
+		Last Modified: Sat, 17 Aug 2024 02:04:25 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49a2220e858c2c55c070c7afa3c1ca37ae8e4de6c241c2dfd57be53a8ce55eb5`  
-		Last Modified: Mon, 12 Aug 2024 16:58:44 GMT  
-		Size: 597.0 B  
+	-	`sha256:ae9e3f8f364db6686278c509146b1499caeaecad92f3974f9e18f1a474ca0def`  
+		Last Modified: Sat, 17 Aug 2024 02:04:26 GMT  
+		Size: 596.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bfad5f8642fd09b5f672ed93047124ce16e7e75fa69faaab3aea896c1d15d3e4`  
-		Last Modified: Mon, 12 Aug 2024 16:58:44 GMT  
+	-	`sha256:c84b59bd1f30d7d8cf107b02839ebd44387671ef6c10f1fb874d82961a42ec7d`  
+		Last Modified: Sat, 17 Aug 2024 02:04:26 GMT  
 		Size: 582.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:17.0-20240812` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:f43accb3034516aaa7809b520f38f958e699343058c681b0842d5d4e75cfbca3
+$ docker pull odoo@sha256:4716eedc21bb20a98a55e6ac3bde958743f4d6dd75ff373d93153ba37a253c06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **39.0 MB (38983060 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:61843b187fb50f3ae2b98e2c0bffd2c4fa63ce03a19d3eb58a113cce9ada645c`
+-	Image ID: `sha256:23682b87ca37b1aa66ca9b79e72cec2f27bb09b55e176ddf115a1fe1f1747d2e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a686aa91b4c474c1be0d35c6b1b4628413bf45e032bbcd2b331c9bce613a0882`  
-		Last Modified: Mon, 12 Aug 2024 16:58:43 GMT  
+	-	`sha256:1fe58ba6648970bb5f6768bf108084286ccf278e114e3c8a56937f7415ea5631`  
+		Last Modified: Sat, 17 Aug 2024 02:04:25 GMT  
 		Size: 39.0 MB (38956185 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c053693c0db30b810560bc8d138c0481d82878a099c26767164165a09985b254`  
-		Last Modified: Mon, 12 Aug 2024 16:58:42 GMT  
+	-	`sha256:9ff81c4dad542bdb25fe981f3aeaae470af063740c0510fff90c0e8805e4c613`  
+		Last Modified: Sat, 17 Aug 2024 02:04:24 GMT  
 		Size: 26.9 KB (26875 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `odoo:17.0-20240812` - linux; arm64 variant v8
 
 ```console
-$ docker pull odoo@sha256:b5317e9266ab45927033437194845e0b71122406dc2fb45a467b92086f22b4f3
+$ docker pull odoo@sha256:993937852f8631f76d508ddc7e0c9505d9db58539779a64b10b202909cebef81
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **590.2 MB (590178176 bytes)**  
+-	Total Size: **590.2 MB (590183870 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a6b827f072ab1c262a98d2377909bc48f2e05b6817b5d883395464a5475e9cb`
+-	Image ID: `sha256:1d45a27d523bf248db2783a623b722a05f0487e6def9f37e7ba1ab1a526d2a62`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 19:23:22 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 19:23:22 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 19:23:22 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 19:23:22 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 19:23:26 GMT
-ADD file:2bed1fbf8253926f27dc275983c274712d836e9b6acdb1059d29c072d8f63a03 in / 
-# Thu, 27 Jun 2024 19:23:26 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
+ADD file:4126c5ecc7750c7d2beb8c08d15aea03d96910453b36d2fb2d41185fdca7b20f in / 
+# Mon, 12 Aug 2024 11:24:22 GMT
 CMD ["/bin/bash"]
 # Mon, 12 Aug 2024 11:24:22 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
@@ -2724,93 +2724,93 @@ CMD ["odoo"]
 ```
 
 -	Layers:
-	-	`sha256:4ce000a43472e4a2527834764b5044674760f1e2a766480798d03a93b51a0b39`  
-		Last Modified: Thu, 27 Jun 2024 20:18:34 GMT  
-		Size: 27.4 MB (27360025 bytes)  
+	-	`sha256:e63ce922f0229bde5aea9f366c46883dcd23747e7d2c541f16665f199dbf98b8`  
+		Last Modified: Tue, 13 Aug 2024 10:44:55 GMT  
+		Size: 27.4 MB (27358683 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c169fa3f48783fbeec78b2a931ddac75d618c1edb2d6ea4e2c6fe5f9730ab868`  
-		Last Modified: Tue, 30 Jul 2024 19:04:26 GMT  
-		Size: 231.1 MB (231116218 bytes)  
+	-	`sha256:e0a581f461c1fc23c9bf3611e1760531153dbb50f01c034b1498d291c26c8520`  
+		Last Modified: Sat, 17 Aug 2024 03:34:41 GMT  
+		Size: 231.1 MB (231116671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b04b57c1d87d80886aaedd13d353dde577429e740cfb574935ba1669b44b69aa`  
-		Last Modified: Tue, 30 Jul 2024 19:04:21 GMT  
-		Size: 2.3 MB (2306415 bytes)  
+	-	`sha256:92a3dc6c59fbe1745d030ced68224ef58f92023dc33fac4ff765aeebba99ff73`  
+		Last Modified: Sat, 17 Aug 2024 03:34:36 GMT  
+		Size: 2.3 MB (2307689 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2bcca78310f41f21f044796b20832ee3156e7de28ba2bbbe8e3a8fe835e409f`  
-		Last Modified: Tue, 30 Jul 2024 19:04:21 GMT  
-		Size: 464.4 KB (464370 bytes)  
+	-	`sha256:94117e1eaca32fa3fce3e976dac34e3841e8fa793c3ddc5bf63d01b8342742bb`  
+		Last Modified: Sat, 17 Aug 2024 03:34:36 GMT  
+		Size: 465.0 KB (465019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce6f99caa43ea3b02cbb493d6eb8c3bc046f48220f7dd7264469b61a2cd5c5f4`  
-		Last Modified: Mon, 12 Aug 2024 17:16:33 GMT  
-		Size: 328.9 MB (328928708 bytes)  
+	-	`sha256:e4b35065ccf4d91ef0f5b605cced722d37f0eddc353e93c16de74979c9e43b1e`  
+		Last Modified: Sat, 17 Aug 2024 03:34:43 GMT  
+		Size: 328.9 MB (328933372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e9f010333b1805242d7529c01feb8a9aba0260f3c759a82c848d47bc772c8b4`  
-		Last Modified: Mon, 12 Aug 2024 17:16:26 GMT  
-		Size: 704.0 B  
+	-	`sha256:16f926db0c771bbf79dfd7b79da7e1dc84286c7358bf6d7840c18b3c83542be8`  
+		Last Modified: Sat, 17 Aug 2024 03:34:37 GMT  
+		Size: 706.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0fb432b6d7099111ed941c5c26b5739ef0dcd2ff5758b15e3b1411dc2362996f`  
-		Last Modified: Mon, 12 Aug 2024 17:16:25 GMT  
-		Size: 555.0 B  
+	-	`sha256:bc28d83693f4855fdbee4e622965460139aa9eeb974bcd5aa1e0e1ce51437161`  
+		Last Modified: Sat, 17 Aug 2024 03:34:37 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:54d34c60c8d489331ab49bfc09f33ff4df4670b450fe7f1e9815a09f7926545d`  
-		Last Modified: Mon, 12 Aug 2024 17:16:25 GMT  
-		Size: 598.0 B  
+	-	`sha256:95c5c4441a4b9d91ebbc1fc412ea52f574628351aafb3f276aa02aaa5dd94524`  
+		Last Modified: Sat, 17 Aug 2024 03:34:38 GMT  
+		Size: 594.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c21a88d1c2047be4f9994e244b2880671cca9763c8705129630c8aedc1183e7`  
-		Last Modified: Mon, 12 Aug 2024 17:16:26 GMT  
-		Size: 583.0 B  
+	-	`sha256:16e58dd4413947cd48e434cc8afc93e651b09330a5b05a4508a2f9de652a6ecc`  
+		Last Modified: Sat, 17 Aug 2024 03:34:38 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:17.0-20240812` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:e77a5779b9910b208e131a70809823777f388a2ea9224652c27d3cf72ca4b86d
+$ docker pull odoo@sha256:c10a8ac7b06653b2fe16c211979470205568c51d9864170c69bfce759c44a8de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.0 MB (38989885 bytes)**  
+-	Total Size: **39.0 MB (38989886 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1664144f6b6039e92dbfb6853a2243c9cfc821d4508af5ad7ed346a85adbab4a`
+-	Image ID: `sha256:7a65e05834fda1c14bd0666e1787ae2787fac772af35fbeffe2afc108a64b1c0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b63132ba239d961c4e39ea18df18b773cc787e3fde3e0bd6d7b98b80b115d195`  
-		Last Modified: Mon, 12 Aug 2024 17:16:27 GMT  
+	-	`sha256:2f3b9c86829097e4e45d586a3a4cebd861d55d83ede3f764d8178ef5b40617cf`  
+		Last Modified: Sat, 17 Aug 2024 03:34:37 GMT  
 		Size: 39.0 MB (38962710 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2673e89d66bff4e99defe322064a148f7e8ca1a0599ae43edbbacbda91e9b844`  
-		Last Modified: Mon, 12 Aug 2024 17:16:25 GMT  
-		Size: 27.2 KB (27175 bytes)  
+	-	`sha256:c7b649b05b090f34f8146e19c8caa54dc225854a1656faff09015259a7a09c38`  
+		Last Modified: Sat, 17 Aug 2024 03:34:35 GMT  
+		Size: 27.2 KB (27176 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `odoo:17.0-20240812` - linux; ppc64le
 
 ```console
-$ docker pull odoo@sha256:5be0825b87874e8b2d2cc99f1f36c6cbedbcfa07ed894945a17e6c2f7fe588d6
+$ docker pull odoo@sha256:2a36c8f24159ac55a565f620f177601166cab0be476ea32991c332f5c4d12470
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **611.9 MB (611853700 bytes)**  
+-	Total Size: **611.9 MB (611855606 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f061e48975be4deb1f6a4d2faca3663c7aa095e97fddd112fc5c6e0e7efd110f`
+-	Image ID: `sha256:e9aa9e05453755e0714d785682599de5634536d61c290e29c980192ee3e7548b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 19:22:59 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 19:22:59 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 19:22:59 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 19:22:59 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 19:23:03 GMT
-ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
-# Thu, 27 Jun 2024 19:23:03 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
+ADD file:c9b0fd1ddcc2e70c763a44be7034882e75f36c79435448061c7785f0f01476db in / 
+# Mon, 12 Aug 2024 11:24:22 GMT
 CMD ["/bin/bash"]
 # Mon, 12 Aug 2024 11:24:22 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
@@ -2862,71 +2862,71 @@ CMD ["odoo"]
 ```
 
 -	Layers:
-	-	`sha256:dcb5d217f9f18d3486ceb1894319d66c6f49a84670fbf2ac2f4dd47935357bfc`  
-		Last Modified: Thu, 27 Jun 2024 20:18:46 GMT  
-		Size: 34.5 MB (34461081 bytes)  
+	-	`sha256:593b8356181268f4632d882f9f41d8b565910ac10009886043617c157fbfcae6`  
+		Last Modified: Tue, 13 Aug 2024 10:45:08 GMT  
+		Size: 34.5 MB (34464178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:750728ff278f8ee72bd1d43a21ffcd830b8460c31825944ca547211e693fea90`  
-		Last Modified: Tue, 30 Jul 2024 19:08:40 GMT  
-		Size: 243.3 MB (243278728 bytes)  
+	-	`sha256:649917932e48ae9826c365816bb9ed493a267201a69d663f38dce89f38379d0b`  
+		Last Modified: Sat, 17 Aug 2024 02:01:48 GMT  
+		Size: 243.3 MB (243276312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0144d2aa49c93b6e019b8c471462c462b926da64cb5e2cc1d18d711c14a5888`  
-		Last Modified: Tue, 30 Jul 2024 19:08:31 GMT  
-		Size: 2.6 MB (2590475 bytes)  
+	-	`sha256:4137abe0b20854df48c69fbcd577be8244ecbae68b833dded386e520f586a018`  
+		Last Modified: Sat, 17 Aug 2024 02:01:42 GMT  
+		Size: 2.6 MB (2592374 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:332f9f2f0f52ab9fd31f25e668515d8ab8c4b568e8b8cc5f7cdc1a48d588d970`  
-		Last Modified: Tue, 30 Jul 2024 19:08:31 GMT  
-		Size: 464.4 KB (464386 bytes)  
+	-	`sha256:3c2fa96facf5686ef0daba4666a3b8cf09d55e1e688fc8357e8fc048129db8f1`  
+		Last Modified: Sat, 17 Aug 2024 02:01:42 GMT  
+		Size: 464.9 KB (464920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdb27bfc9b48029d4ceee6fab8a8e952d84d859997351145e8faaa24cc3c8a06`  
-		Last Modified: Mon, 12 Aug 2024 17:26:16 GMT  
-		Size: 331.1 MB (331056587 bytes)  
+	-	`sha256:0a12b96f1bb63707348ac6c758d2bd1be3a7dad754de6e2ff3704e4bfc6e9701`  
+		Last Modified: Sat, 17 Aug 2024 02:01:50 GMT  
+		Size: 331.1 MB (331055383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69716c727479aca316bd1a3e19c41a9f6f5c921713b82889ff07b43ab2d17bab`  
-		Last Modified: Mon, 12 Aug 2024 17:26:04 GMT  
-		Size: 707.0 B  
+	-	`sha256:a5cb5d596d3809c291966009e9b24a80677ce6b51c46b5e79413c3d177623b6d`  
+		Last Modified: Sat, 17 Aug 2024 02:01:43 GMT  
+		Size: 706.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62d7d627f697b99ab9e266e4621c3d310eca7a08c8bf25a7b11b1b27bc0d0d75`  
-		Last Modified: Mon, 12 Aug 2024 17:26:04 GMT  
+	-	`sha256:d3186e7549d4d5a4ebb2e541bc0cc44d182179ca74c30f8e8ecd16adae72c35c`  
+		Last Modified: Sat, 17 Aug 2024 02:01:43 GMT  
 		Size: 555.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c070a6b546c1f54a69f751106ae9ef1a5e2e2e1556976047dc7269bb75ebf7a8`  
-		Last Modified: Mon, 12 Aug 2024 17:26:04 GMT  
+	-	`sha256:638018d448b5216a8debc54484dc10730a4af18ef0943e918e8350cbf4fba899`  
+		Last Modified: Sat, 17 Aug 2024 02:01:44 GMT  
 		Size: 598.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff0fce6a52eed5cae88b9bcad4c2c97a8d8563c8b9c54e5ea94535b78d9efb10`  
-		Last Modified: Mon, 12 Aug 2024 17:26:05 GMT  
-		Size: 583.0 B  
+	-	`sha256:a7e4775ce900135c2575c3012b1adfc15eddbd6036f8e8e91e7678fd6ebd106d`  
+		Last Modified: Sat, 17 Aug 2024 02:01:44 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:17.0-20240812` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:186b7720403b4368c19b9eceeec6a2480b6a0c8974c78a89b0fa313fdadce49f
+$ docker pull odoo@sha256:1a2a0ec2debb762dfe941ff9d72c37530bc8fcc5b134b5c12213973684721626
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **39.0 MB (38991429 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d4549de6f82227ccff2a41867fee8cd7459b4f1557b0b7a6a5f85eba75d8e66c`
+-	Image ID: `sha256:09f48b8d3307ffe4d254a1d06dd65d1281124df9a687d9c53369a8707a31f7ff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:052ecf79d8179ed602f4df5a85299720c81ebaab4c01973ea83c30cc4b8b655f`  
-		Last Modified: Mon, 12 Aug 2024 17:26:05 GMT  
+	-	`sha256:f9dc11b4af5cac8f2b07a770b2b6c426a39b3e512d3b8c1381214f3f15408444`  
+		Last Modified: Sat, 17 Aug 2024 02:01:44 GMT  
 		Size: 39.0 MB (38964498 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d99ce8bca182db4e4c6e543540f55fc4ac999622058c0c37d7d0320a4185ddf8`  
-		Last Modified: Mon, 12 Aug 2024 17:26:04 GMT  
+	-	`sha256:02c2da1e45d642bedd26f4899dfd005d90ad0e1f14e20e5953712c2e1e94c2fd`  
+		Last Modified: Sat, 17 Aug 2024 02:01:42 GMT  
 		Size: 26.9 KB (26931 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `odoo:latest`
 
 ```console
-$ docker pull odoo@sha256:12c8f9d782059814e1f190727dcc72d8831e2a8ac9f7786cf45cd39fb629400a
+$ docker pull odoo@sha256:b3a25a96f7bf0f8d610cb1dcbcb8baa95b94055fcb6a53e32993c20019271f88
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2941,29 +2941,29 @@ $ docker pull odoo@sha256:12c8f9d782059814e1f190727dcc72d8831e2a8ac9f7786cf45cd3
 ### `odoo:latest` - linux; amd64
 
 ```console
-$ docker pull odoo@sha256:1cdb1d7aca1b98368e71b0049f28ce27fd91cf33298decaa9b9ecbba07eb2b85
+$ docker pull odoo@sha256:7f7299bd1c385708c37707578e1635b5d5ca99bbc19e4e213cdf5e8b4dd4f20f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **597.7 MB (597670298 bytes)**  
+-	Total Size: **595.4 MB (595388513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32c2ee66381b89397e9b67169cf3fe939ebd61981bfaadd1b5a3b2eb7b2e21b7`
+-	Image ID: `sha256:3725e19640c5f7f2eefcd2d75d3d96681af6d1fc8997f453f069713b3c6abb79`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
+ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
+# Mon, 12 Aug 2024 11:24:22 GMT
 CMD ["/bin/bash"]
 # Mon, 12 Aug 2024 11:24:22 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
@@ -3015,93 +3015,93 @@ CMD ["odoo"]
 ```
 
 -	Layers:
-	-	`sha256:3713021b02770a720dea9b54c03d0ed83e03a2ef5dce2898c56a327fee9a8bca`  
-		Last Modified: Thu, 27 Jun 2024 20:18:28 GMT  
-		Size: 29.5 MB (29534055 bytes)  
+	-	`sha256:857cc8cb19c0f475256df4b7709003b77f101215ebf3693118e61aac6a5ea4ff`  
+		Last Modified: Tue, 13 Aug 2024 10:44:49 GMT  
+		Size: 29.5 MB (29536025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0b97d817b6db27c1928f6a42c844f3269e50bcf47aa9a9667fbd3db11e4ea23`  
-		Last Modified: Mon, 12 Aug 2024 16:58:46 GMT  
-		Size: 236.0 MB (236023122 bytes)  
+	-	`sha256:6fb1c9502ac2c40711e258fe5fbeff39b2234453f4a77db921c8afac023de003`  
+		Last Modified: Sat, 17 Aug 2024 02:04:28 GMT  
+		Size: 233.7 MB (233742043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:109966a444a61189e1008ec7f78e5a63a5c678477da9969e443cfa1b9f7a3e65`  
-		Last Modified: Mon, 12 Aug 2024 16:58:42 GMT  
-		Size: 2.3 MB (2315818 bytes)  
+	-	`sha256:b55de2e47752513c0598cd315998b95b62312aa64904c76761db0a6ee4f437f1`  
+		Last Modified: Sat, 17 Aug 2024 02:04:24 GMT  
+		Size: 2.3 MB (2315558 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ca1ceaafe360e7c2eb48ea21c069b10da0004f15050e6d6bf3513e239ba92b9`  
-		Last Modified: Mon, 12 Aug 2024 16:58:42 GMT  
-		Size: 464.9 KB (464945 bytes)  
+	-	`sha256:9c545b9834dc8d8529c069bec4ab73d9954855f1cd2130cd216305bb324dc758`  
+		Last Modified: Sat, 17 Aug 2024 02:04:24 GMT  
+		Size: 464.9 KB (464901 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ad698162b1a00c222756334da2c09ed0521109d7f1d19682b24687a5cc2ccd9`  
-		Last Modified: Mon, 12 Aug 2024 16:58:47 GMT  
-		Size: 329.3 MB (329329915 bytes)  
+	-	`sha256:79aa04d8f657ddc69e3ece87ee31d6629d1111e0d7be9eb8ed333f1451995d2f`  
+		Last Modified: Sat, 17 Aug 2024 02:04:29 GMT  
+		Size: 329.3 MB (329327550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b3e9b3139a88f6f6196e298706d83488100045f0ad3d5b18eb461bf62016b80`  
-		Last Modified: Mon, 12 Aug 2024 16:58:43 GMT  
-		Size: 707.0 B  
+	-	`sha256:776cd7a35f92c05f85fed1be7a4c1fb8f404909fad62b0b0628ee903f0318d3f`  
+		Last Modified: Sat, 17 Aug 2024 02:04:25 GMT  
+		Size: 702.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9ddffb8bab1cd6ec722d86b9d61ecb558070b9659aae04a696ecfb59fa5a98f`  
-		Last Modified: Mon, 12 Aug 2024 16:58:43 GMT  
-		Size: 557.0 B  
+	-	`sha256:7d84f059e26bf9f6c83edc58c115d454bfac38db7f3e7d21645e2f8e7327a5f6`  
+		Last Modified: Sat, 17 Aug 2024 02:04:25 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49a2220e858c2c55c070c7afa3c1ca37ae8e4de6c241c2dfd57be53a8ce55eb5`  
-		Last Modified: Mon, 12 Aug 2024 16:58:44 GMT  
-		Size: 597.0 B  
+	-	`sha256:ae9e3f8f364db6686278c509146b1499caeaecad92f3974f9e18f1a474ca0def`  
+		Last Modified: Sat, 17 Aug 2024 02:04:26 GMT  
+		Size: 596.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bfad5f8642fd09b5f672ed93047124ce16e7e75fa69faaab3aea896c1d15d3e4`  
-		Last Modified: Mon, 12 Aug 2024 16:58:44 GMT  
+	-	`sha256:c84b59bd1f30d7d8cf107b02839ebd44387671ef6c10f1fb874d82961a42ec7d`  
+		Last Modified: Sat, 17 Aug 2024 02:04:26 GMT  
 		Size: 582.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:latest` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:f43accb3034516aaa7809b520f38f958e699343058c681b0842d5d4e75cfbca3
+$ docker pull odoo@sha256:4716eedc21bb20a98a55e6ac3bde958743f4d6dd75ff373d93153ba37a253c06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **39.0 MB (38983060 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:61843b187fb50f3ae2b98e2c0bffd2c4fa63ce03a19d3eb58a113cce9ada645c`
+-	Image ID: `sha256:23682b87ca37b1aa66ca9b79e72cec2f27bb09b55e176ddf115a1fe1f1747d2e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a686aa91b4c474c1be0d35c6b1b4628413bf45e032bbcd2b331c9bce613a0882`  
-		Last Modified: Mon, 12 Aug 2024 16:58:43 GMT  
+	-	`sha256:1fe58ba6648970bb5f6768bf108084286ccf278e114e3c8a56937f7415ea5631`  
+		Last Modified: Sat, 17 Aug 2024 02:04:25 GMT  
 		Size: 39.0 MB (38956185 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c053693c0db30b810560bc8d138c0481d82878a099c26767164165a09985b254`  
-		Last Modified: Mon, 12 Aug 2024 16:58:42 GMT  
+	-	`sha256:9ff81c4dad542bdb25fe981f3aeaae470af063740c0510fff90c0e8805e4c613`  
+		Last Modified: Sat, 17 Aug 2024 02:04:24 GMT  
 		Size: 26.9 KB (26875 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `odoo:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull odoo@sha256:b5317e9266ab45927033437194845e0b71122406dc2fb45a467b92086f22b4f3
+$ docker pull odoo@sha256:993937852f8631f76d508ddc7e0c9505d9db58539779a64b10b202909cebef81
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **590.2 MB (590178176 bytes)**  
+-	Total Size: **590.2 MB (590183870 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a6b827f072ab1c262a98d2377909bc48f2e05b6817b5d883395464a5475e9cb`
+-	Image ID: `sha256:1d45a27d523bf248db2783a623b722a05f0487e6def9f37e7ba1ab1a526d2a62`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 19:23:22 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 19:23:22 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 19:23:22 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 19:23:22 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 19:23:26 GMT
-ADD file:2bed1fbf8253926f27dc275983c274712d836e9b6acdb1059d29c072d8f63a03 in / 
-# Thu, 27 Jun 2024 19:23:26 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
+ADD file:4126c5ecc7750c7d2beb8c08d15aea03d96910453b36d2fb2d41185fdca7b20f in / 
+# Mon, 12 Aug 2024 11:24:22 GMT
 CMD ["/bin/bash"]
 # Mon, 12 Aug 2024 11:24:22 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
@@ -3153,93 +3153,93 @@ CMD ["odoo"]
 ```
 
 -	Layers:
-	-	`sha256:4ce000a43472e4a2527834764b5044674760f1e2a766480798d03a93b51a0b39`  
-		Last Modified: Thu, 27 Jun 2024 20:18:34 GMT  
-		Size: 27.4 MB (27360025 bytes)  
+	-	`sha256:e63ce922f0229bde5aea9f366c46883dcd23747e7d2c541f16665f199dbf98b8`  
+		Last Modified: Tue, 13 Aug 2024 10:44:55 GMT  
+		Size: 27.4 MB (27358683 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c169fa3f48783fbeec78b2a931ddac75d618c1edb2d6ea4e2c6fe5f9730ab868`  
-		Last Modified: Tue, 30 Jul 2024 19:04:26 GMT  
-		Size: 231.1 MB (231116218 bytes)  
+	-	`sha256:e0a581f461c1fc23c9bf3611e1760531153dbb50f01c034b1498d291c26c8520`  
+		Last Modified: Sat, 17 Aug 2024 03:34:41 GMT  
+		Size: 231.1 MB (231116671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b04b57c1d87d80886aaedd13d353dde577429e740cfb574935ba1669b44b69aa`  
-		Last Modified: Tue, 30 Jul 2024 19:04:21 GMT  
-		Size: 2.3 MB (2306415 bytes)  
+	-	`sha256:92a3dc6c59fbe1745d030ced68224ef58f92023dc33fac4ff765aeebba99ff73`  
+		Last Modified: Sat, 17 Aug 2024 03:34:36 GMT  
+		Size: 2.3 MB (2307689 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2bcca78310f41f21f044796b20832ee3156e7de28ba2bbbe8e3a8fe835e409f`  
-		Last Modified: Tue, 30 Jul 2024 19:04:21 GMT  
-		Size: 464.4 KB (464370 bytes)  
+	-	`sha256:94117e1eaca32fa3fce3e976dac34e3841e8fa793c3ddc5bf63d01b8342742bb`  
+		Last Modified: Sat, 17 Aug 2024 03:34:36 GMT  
+		Size: 465.0 KB (465019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce6f99caa43ea3b02cbb493d6eb8c3bc046f48220f7dd7264469b61a2cd5c5f4`  
-		Last Modified: Mon, 12 Aug 2024 17:16:33 GMT  
-		Size: 328.9 MB (328928708 bytes)  
+	-	`sha256:e4b35065ccf4d91ef0f5b605cced722d37f0eddc353e93c16de74979c9e43b1e`  
+		Last Modified: Sat, 17 Aug 2024 03:34:43 GMT  
+		Size: 328.9 MB (328933372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e9f010333b1805242d7529c01feb8a9aba0260f3c759a82c848d47bc772c8b4`  
-		Last Modified: Mon, 12 Aug 2024 17:16:26 GMT  
-		Size: 704.0 B  
+	-	`sha256:16f926db0c771bbf79dfd7b79da7e1dc84286c7358bf6d7840c18b3c83542be8`  
+		Last Modified: Sat, 17 Aug 2024 03:34:37 GMT  
+		Size: 706.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0fb432b6d7099111ed941c5c26b5739ef0dcd2ff5758b15e3b1411dc2362996f`  
-		Last Modified: Mon, 12 Aug 2024 17:16:25 GMT  
-		Size: 555.0 B  
+	-	`sha256:bc28d83693f4855fdbee4e622965460139aa9eeb974bcd5aa1e0e1ce51437161`  
+		Last Modified: Sat, 17 Aug 2024 03:34:37 GMT  
+		Size: 556.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:54d34c60c8d489331ab49bfc09f33ff4df4670b450fe7f1e9815a09f7926545d`  
-		Last Modified: Mon, 12 Aug 2024 17:16:25 GMT  
-		Size: 598.0 B  
+	-	`sha256:95c5c4441a4b9d91ebbc1fc412ea52f574628351aafb3f276aa02aaa5dd94524`  
+		Last Modified: Sat, 17 Aug 2024 03:34:38 GMT  
+		Size: 594.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c21a88d1c2047be4f9994e244b2880671cca9763c8705129630c8aedc1183e7`  
-		Last Modified: Mon, 12 Aug 2024 17:16:26 GMT  
-		Size: 583.0 B  
+	-	`sha256:16e58dd4413947cd48e434cc8afc93e651b09330a5b05a4508a2f9de652a6ecc`  
+		Last Modified: Sat, 17 Aug 2024 03:34:38 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:latest` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:e77a5779b9910b208e131a70809823777f388a2ea9224652c27d3cf72ca4b86d
+$ docker pull odoo@sha256:c10a8ac7b06653b2fe16c211979470205568c51d9864170c69bfce759c44a8de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.0 MB (38989885 bytes)**  
+-	Total Size: **39.0 MB (38989886 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1664144f6b6039e92dbfb6853a2243c9cfc821d4508af5ad7ed346a85adbab4a`
+-	Image ID: `sha256:7a65e05834fda1c14bd0666e1787ae2787fac772af35fbeffe2afc108a64b1c0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b63132ba239d961c4e39ea18df18b773cc787e3fde3e0bd6d7b98b80b115d195`  
-		Last Modified: Mon, 12 Aug 2024 17:16:27 GMT  
+	-	`sha256:2f3b9c86829097e4e45d586a3a4cebd861d55d83ede3f764d8178ef5b40617cf`  
+		Last Modified: Sat, 17 Aug 2024 03:34:37 GMT  
 		Size: 39.0 MB (38962710 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2673e89d66bff4e99defe322064a148f7e8ca1a0599ae43edbbacbda91e9b844`  
-		Last Modified: Mon, 12 Aug 2024 17:16:25 GMT  
-		Size: 27.2 KB (27175 bytes)  
+	-	`sha256:c7b649b05b090f34f8146e19c8caa54dc225854a1656faff09015259a7a09c38`  
+		Last Modified: Sat, 17 Aug 2024 03:34:35 GMT  
+		Size: 27.2 KB (27176 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `odoo:latest` - linux; ppc64le
 
 ```console
-$ docker pull odoo@sha256:5be0825b87874e8b2d2cc99f1f36c6cbedbcfa07ed894945a17e6c2f7fe588d6
+$ docker pull odoo@sha256:2a36c8f24159ac55a565f620f177601166cab0be476ea32991c332f5c4d12470
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **611.9 MB (611853700 bytes)**  
+-	Total Size: **611.9 MB (611855606 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f061e48975be4deb1f6a4d2faca3663c7aa095e97fddd112fc5c6e0e7efd110f`
+-	Image ID: `sha256:e9aa9e05453755e0714d785682599de5634536d61c290e29c980192ee3e7548b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["odoo"]`
 -	`SHELL`: `["\/bin\/bash","-xo","pipefail","-c"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 19:22:59 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 19:22:59 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 19:22:59 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 19:22:59 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 19:23:03 GMT
-ADD file:e2e1e840070a30a93a9141ddf77b416d95fb822ac1f550f7162a64e18e0ade5b in / 
-# Thu, 27 Jun 2024 19:23:03 GMT
+# Mon, 12 Aug 2024 11:24:22 GMT
+ADD file:c9b0fd1ddcc2e70c763a44be7034882e75f36c79435448061c7785f0f01476db in / 
+# Mon, 12 Aug 2024 11:24:22 GMT
 CMD ["/bin/bash"]
 # Mon, 12 Aug 2024 11:24:22 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
@@ -3291,63 +3291,63 @@ CMD ["odoo"]
 ```
 
 -	Layers:
-	-	`sha256:dcb5d217f9f18d3486ceb1894319d66c6f49a84670fbf2ac2f4dd47935357bfc`  
-		Last Modified: Thu, 27 Jun 2024 20:18:46 GMT  
-		Size: 34.5 MB (34461081 bytes)  
+	-	`sha256:593b8356181268f4632d882f9f41d8b565910ac10009886043617c157fbfcae6`  
+		Last Modified: Tue, 13 Aug 2024 10:45:08 GMT  
+		Size: 34.5 MB (34464178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:750728ff278f8ee72bd1d43a21ffcd830b8460c31825944ca547211e693fea90`  
-		Last Modified: Tue, 30 Jul 2024 19:08:40 GMT  
-		Size: 243.3 MB (243278728 bytes)  
+	-	`sha256:649917932e48ae9826c365816bb9ed493a267201a69d663f38dce89f38379d0b`  
+		Last Modified: Sat, 17 Aug 2024 02:01:48 GMT  
+		Size: 243.3 MB (243276312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0144d2aa49c93b6e019b8c471462c462b926da64cb5e2cc1d18d711c14a5888`  
-		Last Modified: Tue, 30 Jul 2024 19:08:31 GMT  
-		Size: 2.6 MB (2590475 bytes)  
+	-	`sha256:4137abe0b20854df48c69fbcd577be8244ecbae68b833dded386e520f586a018`  
+		Last Modified: Sat, 17 Aug 2024 02:01:42 GMT  
+		Size: 2.6 MB (2592374 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:332f9f2f0f52ab9fd31f25e668515d8ab8c4b568e8b8cc5f7cdc1a48d588d970`  
-		Last Modified: Tue, 30 Jul 2024 19:08:31 GMT  
-		Size: 464.4 KB (464386 bytes)  
+	-	`sha256:3c2fa96facf5686ef0daba4666a3b8cf09d55e1e688fc8357e8fc048129db8f1`  
+		Last Modified: Sat, 17 Aug 2024 02:01:42 GMT  
+		Size: 464.9 KB (464920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdb27bfc9b48029d4ceee6fab8a8e952d84d859997351145e8faaa24cc3c8a06`  
-		Last Modified: Mon, 12 Aug 2024 17:26:16 GMT  
-		Size: 331.1 MB (331056587 bytes)  
+	-	`sha256:0a12b96f1bb63707348ac6c758d2bd1be3a7dad754de6e2ff3704e4bfc6e9701`  
+		Last Modified: Sat, 17 Aug 2024 02:01:50 GMT  
+		Size: 331.1 MB (331055383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69716c727479aca316bd1a3e19c41a9f6f5c921713b82889ff07b43ab2d17bab`  
-		Last Modified: Mon, 12 Aug 2024 17:26:04 GMT  
-		Size: 707.0 B  
+	-	`sha256:a5cb5d596d3809c291966009e9b24a80677ce6b51c46b5e79413c3d177623b6d`  
+		Last Modified: Sat, 17 Aug 2024 02:01:43 GMT  
+		Size: 706.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62d7d627f697b99ab9e266e4621c3d310eca7a08c8bf25a7b11b1b27bc0d0d75`  
-		Last Modified: Mon, 12 Aug 2024 17:26:04 GMT  
+	-	`sha256:d3186e7549d4d5a4ebb2e541bc0cc44d182179ca74c30f8e8ecd16adae72c35c`  
+		Last Modified: Sat, 17 Aug 2024 02:01:43 GMT  
 		Size: 555.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c070a6b546c1f54a69f751106ae9ef1a5e2e2e1556976047dc7269bb75ebf7a8`  
-		Last Modified: Mon, 12 Aug 2024 17:26:04 GMT  
+	-	`sha256:638018d448b5216a8debc54484dc10730a4af18ef0943e918e8350cbf4fba899`  
+		Last Modified: Sat, 17 Aug 2024 02:01:44 GMT  
 		Size: 598.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff0fce6a52eed5cae88b9bcad4c2c97a8d8563c8b9c54e5ea94535b78d9efb10`  
-		Last Modified: Mon, 12 Aug 2024 17:26:05 GMT  
-		Size: 583.0 B  
+	-	`sha256:a7e4775ce900135c2575c3012b1adfc15eddbd6036f8e8e91e7678fd6ebd106d`  
+		Last Modified: Sat, 17 Aug 2024 02:01:44 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `odoo:latest` - unknown; unknown
 
 ```console
-$ docker pull odoo@sha256:186b7720403b4368c19b9eceeec6a2480b6a0c8974c78a89b0fa313fdadce49f
+$ docker pull odoo@sha256:1a2a0ec2debb762dfe941ff9d72c37530bc8fcc5b134b5c12213973684721626
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **39.0 MB (38991429 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d4549de6f82227ccff2a41867fee8cd7459b4f1557b0b7a6a5f85eba75d8e66c`
+-	Image ID: `sha256:09f48b8d3307ffe4d254a1d06dd65d1281124df9a687d9c53369a8707a31f7ff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:052ecf79d8179ed602f4df5a85299720c81ebaab4c01973ea83c30cc4b8b655f`  
-		Last Modified: Mon, 12 Aug 2024 17:26:05 GMT  
+	-	`sha256:f9dc11b4af5cac8f2b07a770b2b6c426a39b3e512d3b8c1381214f3f15408444`  
+		Last Modified: Sat, 17 Aug 2024 02:01:44 GMT  
 		Size: 39.0 MB (38964498 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d99ce8bca182db4e4c6e543540f55fc4ac999622058c0c37d7d0320a4185ddf8`  
-		Last Modified: Mon, 12 Aug 2024 17:26:04 GMT  
+	-	`sha256:02c2da1e45d642bedd26f4899dfd005d90ad0e1f14e20e5953712c2e1e94c2fd`  
+		Last Modified: Sat, 17 Aug 2024 02:01:42 GMT  
 		Size: 26.9 KB (26931 bytes)  
 		MIME: application/vnd.in-toto+json
