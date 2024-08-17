@@ -1,7 +1,7 @@
 ## `ibmjava:8-sfj`
 
 ```console
-$ docker pull ibmjava@sha256:af4910c8104b2993dc497fe75c7974b8d271a557be59edadae020fa85c3bef59
+$ docker pull ibmjava@sha256:40e63a260f2157e4d470318e71373622eb3408b68b6ef0d9894ad1963ff22c86
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,27 +16,27 @@ $ docker pull ibmjava@sha256:af4910c8104b2993dc497fe75c7974b8d271a557be59edadae0
 ### `ibmjava:8-sfj` - linux; amd64
 
 ```console
-$ docker pull ibmjava@sha256:51e52c510944da071b281454df91962099528cceb04a9237f59116445ed084ea
+$ docker pull ibmjava@sha256:7628d881ba0674509b2eefe88e4a6982f0aab75f1ef14e2c4717214096da9ccc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.8 MB (100797743 bytes)**  
+-	Total Size: **100.8 MB (100799732 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d62acc3dbeee9514cc0697939681f5fa1edf0702de53b5c79a5096cc769a71e`
+-	Image ID: `sha256:7296d5cbed60431bcc76d8e60c13892f788941c503ae38d611855de4905cbd2a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Tue, 13 Aug 2024 09:27:22 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Tue, 13 Aug 2024 09:27:22 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Tue, 13 Aug 2024 09:27:22 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Tue, 13 Aug 2024 09:27:22 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Tue, 13 Aug 2024 09:27:24 GMT
+ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
+# Tue, 13 Aug 2024 09:27:24 GMT
 CMD ["/bin/bash"]
 # Thu, 15 Aug 2024 07:06:00 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
@@ -51,41 +51,41 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ```
 
 -	Layers:
-	-	`sha256:3713021b02770a720dea9b54c03d0ed83e03a2ef5dce2898c56a327fee9a8bca`  
-		Last Modified: Thu, 27 Jun 2024 20:18:28 GMT  
-		Size: 29.5 MB (29534055 bytes)  
+	-	`sha256:857cc8cb19c0f475256df4b7709003b77f101215ebf3693118e61aac6a5ea4ff`  
+		Last Modified: Tue, 13 Aug 2024 10:44:49 GMT  
+		Size: 29.5 MB (29536025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5f762c3aa5f7bd9957cc6e7a5d97c7808fb2905b0183566b6e141bf65cc5212`  
-		Last Modified: Thu, 15 Aug 2024 17:59:00 GMT  
-		Size: 1.4 MB (1438244 bytes)  
+	-	`sha256:85062255c784806257f398c294ffa1fc1ece8f3807b331c552f8a5d9eb573ce1`  
+		Last Modified: Sat, 17 Aug 2024 02:05:00 GMT  
+		Size: 1.4 MB (1438268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2de647923e029983d9c2ae0295a588da74703d0f7e1ed3a1bbaefd095fc34d7`  
-		Last Modified: Thu, 15 Aug 2024 17:59:02 GMT  
-		Size: 69.8 MB (69825444 bytes)  
+	-	`sha256:72c6cd891e8619e69f9425f6a8dc3799f3e975f310d05624cbc3204333a3029a`  
+		Last Modified: Sat, 17 Aug 2024 02:05:02 GMT  
+		Size: 69.8 MB (69825439 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ibmjava:8-sfj` - unknown; unknown
 
 ```console
-$ docker pull ibmjava@sha256:6056de356b0a75ef8b429d050fa3f70aca362d8c92e83e407c8b13e43096262b
+$ docker pull ibmjava@sha256:600d3b9900a3fa6ef979cec3ef9cf488c05892b47b5ef62642347da940716620
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.0 MB (2027450 bytes)**  
+-	Total Size: **2.0 MB (2025563 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5772f05e8c5ff8ef4e03c1fee1f16346ed310e639ab211030472a1b284e1280`
+-	Image ID: `sha256:9814f00a2ae2e2e3aa3dcff207179f085b83c07e896209d7234e9cbc62aec232`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:42fad001fc654e00dd06916ae3ee7190c2b3df49ffc496849befc30dbe503fe0`  
-		Last Modified: Thu, 15 Aug 2024 17:59:00 GMT  
-		Size: 2.0 MB (2014524 bytes)  
+	-	`sha256:350233f3fd6d823d77744d27a5a0dbc0d9f07cf29771e1143ae70b0954ee0cff`  
+		Last Modified: Sat, 17 Aug 2024 02:05:00 GMT  
+		Size: 2.0 MB (2012636 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9eacfeb1ff9b1adb1601df78be43b0f78df517ef2ce13b2caf4dc25f3961da52`  
-		Last Modified: Thu, 15 Aug 2024 17:59:00 GMT  
-		Size: 12.9 KB (12926 bytes)  
+	-	`sha256:40349aee86e56f81bd22e7ceea2fbf8c6d34d77b149e5143d9520b589d57ee36`  
+		Last Modified: Sat, 17 Aug 2024 02:04:59 GMT  
+		Size: 12.9 KB (12927 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ibmjava:8-sfj` - linux; ppc64le
