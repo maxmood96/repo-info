@@ -1,7 +1,7 @@
 ## `clojure:temurin-8-lein-2.11.2-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:b226d713c578ec20af391599329ba25df049cf7b171347161cbf05ce835a4d46
+$ docker pull clojure@sha256:3798a08e3d0f6416748ea6dd9630fdee33fa58b1c836194158a48b4b1a7839f8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull clojure@sha256:b226d713c578ec20af391599329ba25df049cf7b171347161cb
 ### `clojure:temurin-8-lein-2.11.2-bookworm-slim` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:043e0c72130afc63ee068bd0cfcdbfea4822c03632a4e48f5fc5fdc32508e941
+$ docker pull clojure@sha256:7366b9fc8c0b1c0362de07ea79a58935d6bf0865ca17277f877f4b31120c20a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **188.4 MB (188357209 bytes)**  
+-	Total Size: **188.4 MB (188357080 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:232164e8cd74eb997c891c22d7ccc77ac7a509b40fc044d668af9e23da2507f1`
+-	Image ID: `sha256:a8ad81933e5b50d8cbb28ff58a19f5eeb25125ef19532ce157e226fbba2f88c3`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -57,45 +57,45 @@ CMD ["lein" "repl"]
 		Last Modified: Tue, 13 Aug 2024 00:23:48 GMT  
 		Size: 29.1 MB (29126232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cab8d83b4a87fbb8e2951e0a8c2fc084f2e95d029ca64f1cf95d72957dfba503`  
-		Last Modified: Tue, 13 Aug 2024 01:11:30 GMT  
-		Size: 103.6 MB (103611898 bytes)  
+	-	`sha256:abf90f70fe554576fda812392c6671fa6a188ad651df1c9c87449b5b688ddc17`  
+		Last Modified: Sat, 17 Aug 2024 01:59:24 GMT  
+		Size: 103.6 MB (103611899 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3797669c670a24e5dcf2898087dc2350d53102ec4b3b8e5109a99df1ec287f6d`  
-		Last Modified: Tue, 13 Aug 2024 01:11:29 GMT  
-		Size: 51.2 MB (51220967 bytes)  
+	-	`sha256:4cfc6f55df02f4cdee572c0d8e42d9307cf6905bdea695e8f454f8d48d42c65c`  
+		Last Modified: Sat, 17 Aug 2024 01:59:28 GMT  
+		Size: 51.2 MB (51220819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e888f5bd1ca845dc68b5e74efbb1da8690533cc94c620df7941eb3981d1f6773`  
-		Last Modified: Tue, 13 Aug 2024 01:11:29 GMT  
-		Size: 4.4 MB (4398080 bytes)  
+	-	`sha256:d3397ff7abba735a4aaa2d447da0de346142e5a6d8bbce270ba25f0745805ded`  
+		Last Modified: Sat, 17 Aug 2024 01:59:26 GMT  
+		Size: 4.4 MB (4398098 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-8-lein-2.11.2-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:351d7c56138b67fb233d365aaa9871e18ce56c97de3ff3998302707ebc636a68
+$ docker pull clojure@sha256:653f37ca0b838ffcdd93f7431575cc84bb446660197b70e5cb38b398d1c58b68
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4194583 bytes)**  
+-	Total Size: **4.2 MB (4194582 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba2c72eb2980cf2298c2fe900c8948aa81672c69e93e2ffb3e6137922a38bff3`
+-	Image ID: `sha256:4c89f426c9d1a0f89e29eceb4aaa010bf21190ca1d68ec51baa7c6d8b73d3f1e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f9ef8f6627e97aa2aad032b169c9a0a60972af74a3c5111c2e46ab67bc3d3eee`  
-		Last Modified: Tue, 13 Aug 2024 01:11:29 GMT  
+	-	`sha256:17773f15d2a0d44840d75a53a1c969f5742456765281a0651db67784433c41e6`  
+		Last Modified: Sat, 17 Aug 2024 01:59:26 GMT  
 		Size: 4.2 MB (4178502 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:704edfa3f825f0ad4b42d86d1d23e1a887783739e1813aaa831faed8e7d726d3`  
-		Last Modified: Tue, 13 Aug 2024 01:11:29 GMT  
-		Size: 16.1 KB (16081 bytes)  
+	-	`sha256:756919e01052f07973c2a721bae021da2e193e94237bc7653f763a9d8bd4c737`  
+		Last Modified: Sat, 17 Aug 2024 01:59:26 GMT  
+		Size: 16.1 KB (16080 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-8-lein-2.11.2-bookworm-slim` - linux; arm64 variant v8
