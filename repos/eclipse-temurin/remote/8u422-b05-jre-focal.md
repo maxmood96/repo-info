@@ -1,7 +1,7 @@
 ## `eclipse-temurin:8u422-b05-jre-focal`
 
 ```console
-$ docker pull eclipse-temurin@sha256:32bb5a86c9316d273133800c4c9e191cc4e84c98b40a7275c6f215d0579a7202
+$ docker pull eclipse-temurin@sha256:54b19bee39f776f11432d3f14bd93a432da1bd25a3f07894ae0fe86f806e59ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -81,27 +81,27 @@ ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
 ### `eclipse-temurin:8u422-b05-jre-focal` - linux; arm variant v7
 
 ```console
-$ docker pull eclipse-temurin@sha256:1e28da12195caee6ca62e7c578096059da628a0228f865330c3a514f070f679f
+$ docker pull eclipse-temurin@sha256:5ae7bfa271a7952a60f3887eca16fa41a5fafafd73edfe223f3bc06392c6a47e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **79.9 MB (79855773 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ec7a9e48b2e53dd10ae279424bba1d8cdb89fe3bb7c299d8860e0c8c2e6c21a`
+-	Image ID: `sha256:523b830e3f74d48e96886e7c2c3bfe1bf10fd2dd5535545c35cc64e5bb6923cf`
 -	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 16:44:23 GMT
+# Tue, 13 Aug 2024 09:29:35 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 16:44:23 GMT
+# Tue, 13 Aug 2024 09:29:35 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 16:44:23 GMT
+# Tue, 13 Aug 2024 09:29:35 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 16:44:23 GMT
+# Tue, 13 Aug 2024 09:29:35 GMT
 LABEL org.opencontainers.image.version=20.04
-# Mon, 03 Jun 2024 16:44:26 GMT
+# Tue, 13 Aug 2024 09:29:37 GMT
 ADD file:e8f5701e126fa109d02a19a62fdf05554cd10d627bb2a0a70238a8dc4ed63c77 in / 
-# Mon, 03 Jun 2024 16:44:26 GMT
+# Tue, 13 Aug 2024 09:29:38 GMT
 CMD ["/bin/bash"]
 # Wed, 24 Jul 2024 22:19:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -148,27 +148,27 @@ ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
 ### `eclipse-temurin:8u422-b05-jre-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:ed1675c0b40744b0d3c6f069a72d750368f994420e4232d884cca815713e2af8
+$ docker pull eclipse-temurin@sha256:b3623e0c477ea1e118c3883217b63762734d91e1091a6849cbb67697ef991228
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **84.8 MB (84842552 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94248a3c7446577057856ca443ee1d9ea5fd94a622691674cad10f14752ae67a`
+-	Image ID: `sha256:f54cf87f2ea9ab8f367f67b9da4f469ffe1db874367252f093f45674ad2e8542`
 -	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
-# Mon, 03 Jun 2024 16:52:57 GMT
+# Tue, 13 Aug 2024 09:27:56 GMT
 ARG RELEASE
-# Mon, 03 Jun 2024 16:52:57 GMT
+# Tue, 13 Aug 2024 09:27:56 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 03 Jun 2024 16:52:57 GMT
+# Tue, 13 Aug 2024 09:27:56 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 03 Jun 2024 16:52:57 GMT
+# Tue, 13 Aug 2024 09:27:56 GMT
 LABEL org.opencontainers.image.version=20.04
-# Mon, 03 Jun 2024 16:52:59 GMT
+# Tue, 13 Aug 2024 09:27:58 GMT
 ADD file:6d8cc056ee741f09a6c7d965d8e2027d80ed2eccbfb0312593ce52d9256db437 in / 
-# Mon, 03 Jun 2024 16:52:59 GMT
+# Tue, 13 Aug 2024 09:27:58 GMT
 CMD ["/bin/bash"]
 # Wed, 24 Jul 2024 22:19:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
