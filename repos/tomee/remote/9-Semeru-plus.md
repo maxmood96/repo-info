@@ -1,7 +1,7 @@
 ## `tomee:9-Semeru-plus`
 
 ```console
-$ docker pull tomee@sha256:b9b4e5f85a83240c3b2715a1289e9ddff7a0978e4ba1b229b52cedd4a3e80a6f
+$ docker pull tomee@sha256:d90556ec0a5f107e13fb7a7a10fe18771d85fba6249eb6a812eb5c4072121f92
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,27 +14,27 @@ $ docker pull tomee@sha256:b9b4e5f85a83240c3b2715a1289e9ddff7a0978e4ba1b229b52ce
 ### `tomee:9-Semeru-plus` - linux; amd64
 
 ```console
-$ docker pull tomee@sha256:bf318e61c1dbb33eb2672ad24126279692e12ac8a9c8cea4a34a7dfd6fc04eee
+$ docker pull tomee@sha256:3ffed78a4e2435f0d510821d09129ce52a9245c8399327db909d6e06a529e3f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.1 MB (174126929 bytes)**  
+-	Total Size: **174.1 MB (174075312 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eacb2fa57a8204a778b3dfe5724dd9578e7bdeb43c82814d81d6e43be8255a42`
+-	Image ID: `sha256:3fea8915b01449c567abc934664a527615aff282cded433f7c1d8a22abfe0b45`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Tue, 23 Jul 2024 18:18:20 GMT
 ARG RELEASE
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Tue, 23 Jul 2024 18:18:20 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Tue, 23 Jul 2024 18:18:20 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 27 Jun 2024 20:10:10 GMT
+# Tue, 23 Jul 2024 18:18:20 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 27 Jun 2024 20:10:12 GMT
-ADD file:d5da92199726e42da09a6f75a778befb607fe3f79e4afaf7ef5188329b26b386 in / 
-# Thu, 27 Jun 2024 20:10:12 GMT
+# Tue, 23 Jul 2024 18:18:20 GMT
+ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
+# Tue, 23 Jul 2024 18:18:20 GMT
 CMD ["/bin/bash"]
 # Tue, 23 Jul 2024 18:18:20 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
@@ -73,65 +73,65 @@ CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:3713021b02770a720dea9b54c03d0ed83e03a2ef5dce2898c56a327fee9a8bca`  
-		Last Modified: Thu, 27 Jun 2024 20:18:28 GMT  
-		Size: 29.5 MB (29534055 bytes)  
+	-	`sha256:857cc8cb19c0f475256df4b7709003b77f101215ebf3693118e61aac6a5ea4ff`  
+		Last Modified: Tue, 13 Aug 2024 10:44:49 GMT  
+		Size: 29.5 MB (29536025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49cee9ca828c62e3afeadc410eca3d4ee8a25f3416df0c510f36cb80f525da60`  
-		Last Modified: Mon, 12 Aug 2024 17:59:18 GMT  
-		Size: 12.2 MB (12156467 bytes)  
+	-	`sha256:bfcd90a499573e52cf60e93810c1590caa3f2ac3b9ea616ec1b55712f95540af`  
+		Last Modified: Sat, 17 Aug 2024 02:01:32 GMT  
+		Size: 12.2 MB (12156455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaf2282879d248ee453bdd65051fdd90db8a305ddd2baefddca877e3b0cd1dee`  
-		Last Modified: Mon, 12 Aug 2024 17:59:18 GMT  
-		Size: 52.0 MB (52021125 bytes)  
+	-	`sha256:a2fe7514e647a28a52a90167273544785299af1f3ed2cae76c22630038ba3ed3`  
+		Last Modified: Sat, 17 Aug 2024 02:01:33 GMT  
+		Size: 52.0 MB (52021137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:729a8573c77e572e08acc3dae0395893965a3bc53024b11674b5a1694e77b512`  
-		Last Modified: Mon, 12 Aug 2024 17:59:18 GMT  
-		Size: 4.5 MB (4507421 bytes)  
+	-	`sha256:b879743a576ad6bb24aa45cff94d9708bf67e30c878e65f883dbbd8b0be187a9`  
+		Last Modified: Sat, 17 Aug 2024 02:01:32 GMT  
+		Size: 4.5 MB (4453790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1cde9fbdab15cc96fe01a1526905dd72bb3a78887592f4ec75dfa74ab7fb9b82`  
-		Last Modified: Mon, 12 Aug 2024 18:54:01 GMT  
-		Size: 172.0 B  
+	-	`sha256:499191015f4e696e54f7fd99a53f134c4347fb3f5bce70afa1e4a3e41d796a29`  
+		Last Modified: Sat, 17 Aug 2024 04:07:06 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:534d299661928b1844eb0a85e812e0df2af0384a050f5a2416625f3048b42936`  
-		Last Modified: Mon, 12 Aug 2024 18:54:01 GMT  
-		Size: 2.4 MB (2356376 bytes)  
+	-	`sha256:f9e93ef95127bf57c21e6ca09f1810d2634e8a7dfd5ab004b1bd8b2ecb705253`  
+		Last Modified: Sat, 17 Aug 2024 04:07:06 GMT  
+		Size: 2.4 MB (2356434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d80a194be1bee997b00ce0e20d6e2f15d2c602eb80e18ef6ed8fcd6cb07a33da`  
-		Last Modified: Mon, 12 Aug 2024 18:54:01 GMT  
-		Size: 69.2 KB (69193 bytes)  
+	-	`sha256:9cb949c1e3bad4094f9b2307abd42c20804d41e0c35ea4b41e66fa7d21ce78c0`  
+		Last Modified: Sat, 17 Aug 2024 04:07:06 GMT  
+		Size: 69.2 KB (69186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f13e32398af2ff59b3b2b0752d2a2d869377b47354d74b24b9b1110022d7d5c4`  
-		Last Modified: Mon, 12 Aug 2024 18:54:02 GMT  
-		Size: 73.5 MB (73482088 bytes)  
+	-	`sha256:0e1ceb91d0a258a05315571c42305003ab0a8d0036e1ffa28aca4b1a93981f72`  
+		Last Modified: Sat, 17 Aug 2024 04:07:07 GMT  
+		Size: 73.5 MB (73482083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `tomee:9-Semeru-plus` - unknown; unknown
 
 ```console
-$ docker pull tomee@sha256:3b2fb086335c9e0b9659f0bf0e28632b2f136b1bfd1d1997850f20c1871652c8
+$ docker pull tomee@sha256:85a9c061834324781486d05feaf0fc82c0d0eb67d4b1bfc62c9b5a8b747e92e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.9 MB (3925565 bytes)**  
+-	Total Size: **3.9 MB (3923679 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:963550bd57c630e7b1ca1c3d2dcbc4696880bec2d4308a68cafa3fed79565f2d`
+-	Image ID: `sha256:f0093511f1c2e871e9cd14e7b6bbd48d555bef603f6fc8a8362de652de0581ef`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c88e97ba83da627b9b59d3c4c538e8ab11e2df2703df323a406572f52208d9cd`  
-		Last Modified: Mon, 12 Aug 2024 18:54:01 GMT  
-		Size: 3.9 MB (3896660 bytes)  
+	-	`sha256:768ef48ca4f6b81d4797199382a787bf26cc83ca9b1f61984198c0c807d26c5b`  
+		Last Modified: Sat, 17 Aug 2024 04:07:06 GMT  
+		Size: 3.9 MB (3894772 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9e020ada072709b952f64aefe4e021bf49b84975f21f1bdf77cf85b5e656e41c`  
-		Last Modified: Mon, 12 Aug 2024 18:54:01 GMT  
-		Size: 28.9 KB (28905 bytes)  
+	-	`sha256:886a7fdc9ade5ce9670818987abb3236b845e3c848eb3d1e16a3109eda2e7475`  
+		Last Modified: Sat, 17 Aug 2024 04:07:06 GMT  
+		Size: 28.9 KB (28907 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `tomee:9-Semeru-plus` - linux; arm64 variant v8
