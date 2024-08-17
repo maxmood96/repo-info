@@ -2501,11 +2501,21 @@ $ docker pull ghost@sha256:c029eb78873c3d3683149d15d21b9d0c96843deed2f92b423adc9
 
 ## `ghost:5.89.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull ghost@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ghost:5.89.3-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull ghost@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ghost:alpine`
 
