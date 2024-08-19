@@ -1,15 +1,16 @@
 ## `buildpack-deps:jammy-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:40b3c200fbf45204c8cb60e94f4c405a4a6c277d6fcff5dc697d3a304c2b6501
+$ docker pull buildpack-deps@sha256:c242ffa46c27b371efb4b111eaed8727cee311d28ecc9c7805e7fbc9612b2d4e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 5
+-	Platforms: 6
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
+	-	linux; riscv64
 	-	linux; s390x
 
 ### `buildpack-deps:jammy-curl` - linux; amd64
@@ -170,6 +171,44 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 	-	`sha256:3c3e29f857d015b0cbd97132074499724818f965d9a1d1390e861faf881b42a4`  
 		Last Modified: Sat, 17 Aug 2024 00:46:46 GMT  
 		Size: 8.2 MB (8190468 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `buildpack-deps:jammy-curl` - linux; riscv64
+
+```console
+$ docker pull buildpack-deps@sha256:d3093ff092954e3a16d01f961f2e1600db90768efd20689f52ad08cbd2502d36
+```
+
+-	Docker Version: 20.10.17
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **35.1 MB (35110971 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cac65ca13f259310812ea150a369fafa9da1cd6a5e2cf73cf744310f97e4ab12`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Fri, 09 Dec 2022 01:12:29 GMT
+ADD file:f46f460af5409f8fff839ed52d7332dff314cffbb59ee3f40e898ecb6bfa21f9 in / 
+# Fri, 09 Dec 2022 01:12:30 GMT
+CMD ["bash"]
+# Fri, 09 Dec 2022 02:13:11 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 09 Dec 2022 02:13:57 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+```
+
+-	Layers:
+	-	`sha256:7548465e3aa5fee0518ca5aefe07a54411b419ec670a320e18c9b8892b0afc0f`  
+		Last Modified: Fri, 09 Dec 2022 01:34:47 GMT  
+		Size: 27.7 MB (27749556 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9f8927aeeaaa8d5ffc5dab8012c7f15a3a566366abe9b6fbdfc891f78b44fb79`  
+		Last Modified: Fri, 09 Dec 2022 02:54:56 GMT  
+		Size: 3.6 MB (3582497 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0de721ca155ae5d45bbcf76f0384fdd2f108d0399f00fd1f25fdc7b8a1b2c826`  
+		Last Modified: Fri, 09 Dec 2022 02:54:55 GMT  
+		Size: 3.8 MB (3778918 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:jammy-curl` - linux; s390x
