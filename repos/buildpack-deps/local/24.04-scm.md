@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1145143d9069dbb8bdfdc88150b49b7e6a63b0813dab5fd0da1f1aded0f85620`
-- Created: `2024-06-17T23:11:33.611730886Z`
-- Virtual Size: ~ 251.28 Mb  
+- Image ID: `sha256:771021b2c4cdea239fa2c1a6e7d1f2f770e7838d65795ce316a09c8388984466`
+- Created: `2024-08-17T01:27:28.944173365Z`
+- Virtual Size: ~ 251.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -271,13 +271,13 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.1`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.2`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.1`
-- `libcurl3t64-gnutls:amd64=8.5.0-2ubuntu10.1`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.1`
+- `curl=8.5.0-2ubuntu10.2`
+- `libcurl3t64-gnutls:amd64=8.5.0-2ubuntu10.2`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.2`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3t64-gnutls/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -781,14 +781,14 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `krb5=1.20.1-6ubuntu2`
+### `dpkg` source package: `krb5=1.20.1-6ubuntu2.1`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2`
-- `libk5crypto3:amd64=1.20.1-6ubuntu2`
-- `libkrb5-3:amd64=1.20.1-6ubuntu2`
-- `libkrb5support0:amd64=1.20.1-6ubuntu2`
+- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.1`
+- `libk5crypto3:amd64=1.20.1-6ubuntu2.1`
+- `libkrb5-3:amd64=1.20.1-6ubuntu2.1`
+- `libkrb5support0:amd64=1.20.1-6ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1434,11 +1434,11 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13`
+### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13.4`
 
 Binary Packages:
 
-- `openssh-client=1:9.6p1-3ubuntu13`
+- `openssh-client=1:9.6p1-3ubuntu13.4`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1454,12 +1454,12 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3.1`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.2`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.0.13-0ubuntu3.1`
-- `openssl=3.0.13-0ubuntu3.1`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.2`
+- `openssl=3.0.13-0ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -1637,14 +1637,14 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3.12=3.12.3-1`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.1`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.3-1`
-- `libpython3.12-stdlib:amd64=3.12.3-1`
-- `python3.12=3.12.3-1`
-- `python3.12-minimal=3.12.3-1`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.1`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.1`
+- `python3.12=3.12.3-1ubuntu0.1`
+- `python3.12-minimal=3.12.3-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -1668,10 +1668,6 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/python3.12/3.12.3-1/
 
 
 ### `dpkg` source package: `readline=8.2-4build1`
@@ -1776,11 +1772,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/sensible-utils/0.0.22/
 
 
-### `dpkg` source package: `serf=1.3.10-1build2`
+### `dpkg` source package: `serf=1.3.10-1ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `libserf-1-1:amd64=1.3.10-1build2`
+- `libserf-1-1:amd64=1.3.10-1ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libserf-1-1/copyright`)
 
@@ -1854,12 +1850,12 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.1`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.2`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8.1`
-- `libudev1:amd64=255.4-1ubuntu8.1`
+- `libsystemd0:amd64=255.4-1ubuntu8.2`
+- `libudev1:amd64=255.4-1ubuntu8.2`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2015,11 +2011,11 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `wget=1.21.4-1ubuntu4`
+### `dpkg` source package: `wget=1.21.4-1ubuntu4.1`
 
 Binary Packages:
 
-- `wget=1.21.4-1ubuntu4`
+- `wget=1.21.4-1ubuntu4.1`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 

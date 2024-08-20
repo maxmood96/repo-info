@@ -81,19 +81,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.7
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.7.dsc' apt_2.9.7.dsc 2973 SHA256:01507aa067a54dc47c998e53728dcd999e1eeddbffeaea3daaef66a98b3e9779
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.7.tar.xz' apt_2.9.7.tar.xz 2385996 SHA256:cb99af6e1fe13d975c8d46c960af714d3bafdcfed8e151dd90a94695dd4ac15b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.7/
 
-- https://sources.debian.net/src/apt/2.9.7/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-1`
 
@@ -1627,20 +1621,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcrypt=1:4.4.36-4
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.36-4.dsc' libxcrypt_4.4.36-4.dsc 1563 SHA256:8509256bf6ddedebfaf14ad777541d225a6c956f590602f85f5639efc652bfef
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.36.orig.tar.xz' libxcrypt_4.4.36.orig.tar.xz 392732 SHA256:7b7abbc89f13f5194211aa6861ed954e4fa3a210a4cb64f7e13dc8cf413e7f2a
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.36-4.debian.tar.xz' libxcrypt_4.4.36-4.debian.tar.xz 8216 SHA256:e61d8a486e6a80a2e3d629296988f8ff2e4dfbef018ec7e94543b5918ca1f329
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxcrypt/1:4.4.36-4/
 
-- https://sources.debian.net/src/libxcrypt/1:4.4.36-4/ (for browsing the source)
-- https://sources.debian.net/src/libxcrypt/1:4.4.36-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxcrypt/1:4.4.36-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libzstd=1.5.6+dfsg-1`
 

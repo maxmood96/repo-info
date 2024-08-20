@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4e6f3fa5f0d93261dc94b286df7d7a7a920500038b1696e30c5d8309dd8e6a4a`
-- Created: `2024-06-17T23:11:11.453996112Z`
-- Virtual Size: ~ 111.72 Mb  
+- Image ID: `sha256:992a8debfe0bed9089eb69a260383021bce2ef2bc09ad4b816b99cf6b5c26572`
+- Created: `2024-08-17T01:26:52.436719883Z`
+- Virtual Size: ~ 111.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -243,12 +243,12 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.1`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.2`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.1`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.1`
+- `curl=8.5.0-2ubuntu10.2`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.2`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -686,14 +686,14 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `krb5=1.20.1-6ubuntu2`
+### `dpkg` source package: `krb5=1.20.1-6ubuntu2.1`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2`
-- `libk5crypto3:amd64=1.20.1-6ubuntu2`
-- `libkrb5-3:amd64=1.20.1-6ubuntu2`
-- `libkrb5support0:amd64=1.20.1-6ubuntu2`
+- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.1`
+- `libk5crypto3:amd64=1.20.1-6ubuntu2.1`
+- `libkrb5-3:amd64=1.20.1-6ubuntu2.1`
+- `libkrb5support0:amd64=1.20.1-6ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1211,12 +1211,12 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3.1`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.2`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.0.13-0ubuntu3.1`
-- `openssl=3.0.13-0ubuntu3.1`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.2`
+- `openssl=3.0.13-0ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -1512,12 +1512,12 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.1`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.2`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8.1`
-- `libudev1:amd64=255.4-1ubuntu8.1`
+- `libsystemd0:amd64=255.4-1ubuntu8.2`
+- `libudev1:amd64=255.4-1ubuntu8.2`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1640,11 +1640,11 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `wget=1.21.4-1ubuntu4`
+### `dpkg` source package: `wget=1.21.4-1ubuntu4.1`
 
 Binary Packages:
 
-- `wget=1.21.4-1ubuntu4`
+- `wget=1.21.4-1ubuntu4.1`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 

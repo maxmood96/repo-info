@@ -224,20 +224,13 @@ Licenses: (parsed from: `/usr/share/doc/autoconf/copyright`)
 - `permissive-without-disclaimer`
 - `permissive-without-notices-or-disclaimer`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris autoconf=2.71-3
-'http://deb.debian.org/debian/pool/main/a/autoconf/autoconf_2.71-3.dsc' autoconf_2.71-3.dsc 1988 SHA256:2230ca8950e9b1abeeba54844c9e8184891fa2474a101c25f5d125bdacb92ef2
-'http://deb.debian.org/debian/pool/main/a/autoconf/autoconf_2.71.orig.tar.gz' autoconf_2.71.orig.tar.gz 2003781 SHA256:431075ad0bf529ef13cb41e9042c542381103e80015686222b8a9d4abef42a1c
-'http://deb.debian.org/debian/pool/main/a/autoconf/autoconf_2.71-3.debian.tar.xz' autoconf_2.71-3.debian.tar.xz 23896 SHA256:3c12ade6e26e8ccacd8e35de3eb93a1fcf360b02364cbe4690b958a749daf4d7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/autoconf/2.71-3/
 
-- https://sources.debian.net/src/autoconf/2.71-3/ (for browsing the source)
-- https://sources.debian.net/src/autoconf/2.71-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/autoconf/2.71-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `automake-1.16=1:1.16.5-1.3`
 
@@ -366,20 +359,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 - `MIT-like`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.2.21-2.1
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.21-2.1.dsc' bash_5.2.21-2.1.dsc 2278 SHA256:97801c8f716396cd88cf8b69da3b6ea70f2b3ef6f9415df40e836d373feba536
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.21.orig.tar.xz' bash_5.2.21.orig.tar.xz 5598816 SHA256:ec21ab4efd6bd7a6e2802fbda622b81bfc43a8095d721234d4bf075797683014
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.21-2.1.debian.tar.xz' bash_5.2.21-2.1.debian.tar.xz 87940 SHA256:7452fd5408bd8415eee5e561a83d318972a584f10911818f8a8dd30e4f5acacd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/5.2.21-2.1/
 
-- https://sources.debian.net/src/bash/5.2.21-2.1/ (for browsing the source)
-- https://sources.debian.net/src/bash/5.2.21-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/5.2.21-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `binutils=2.43-2`
 
@@ -2344,20 +2330,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap-ng=0.8.5-1
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.5-1.dsc' libcap-ng_0.8.5-1.dsc 1638 SHA256:0b4a6e7ff74f5d888295bfab7f65f37255fb150e07bd8cedc0678c198b47bba0
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.5.orig.tar.gz' libcap-ng_0.8.5.orig.tar.gz 59265 SHA256:e4be07fdd234f10b866433f224d183626003c65634ed0552b02e654a380244c2
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.5-1.debian.tar.xz' libcap-ng_0.8.5-1.debian.tar.xz 7400 SHA256:17156cf9ef58de3e8c34a357c6afa47d54a42d2c185ffbd43fde7c4cf04937f1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcap-ng/0.8.5-1/
 
-- https://sources.debian.net/src/libcap-ng/0.8.5-1/ (for browsing the source)
-- https://sources.debian.net/src/libcap-ng/0.8.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcap-ng/0.8.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap2=1:2.66-5`
 
@@ -4031,21 +4010,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:11.4.2-4
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.4.2-4.dsc' mariadb_11.4.2-4.dsc 5632 SHA256:dac33e7519506e5786c902eedc87cf5f4f5e20c396f1245a69ea2f57931d6e30
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.4.2.orig.tar.gz' mariadb_11.4.2.orig.tar.gz 107373265 SHA256:8c600e38adb899316c1cb11c68b87979668f4fb9d858000e347e6d8b7abe51b0
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.4.2.orig.tar.gz.asc' mariadb_11.4.2.orig.tar.gz.asc 833 SHA256:d35fc7c4e63e402e1cdaac6a6cd7adf1f461834f5c34d4630515e6cd70c58a4f
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.4.2-4.debian.tar.xz' mariadb_11.4.2-4.debian.tar.xz 281052 SHA256:9bc15c9451dc9bcd8168ba254ed25b1511d3b519590768e6eecedc615f005c60
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb/1:11.4.2-4/
 
-- https://sources.debian.net/src/mariadb/1:11.4.2-4/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:11.4.2-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:11.4.2-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20240622-2`
 
@@ -5098,20 +5069,13 @@ Licenses: (parsed from: `/usr/share/doc/libreadline-dev/copyright`, `/usr/share/
 - `GPL-3+`
 - `ISC-no-attribution`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris readline=8.2-4
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.2-4.dsc' readline_8.2-4.dsc 2811 SHA256:c363fc6bc293a4bbb429e89f069eefbff99c754a6e41fcd1b967db6848ea321d
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.2.orig.tar.gz' readline_8.2.orig.tar.gz 3043952 SHA256:3feb7171f16a84ee82ca18a36d7b9be109a52c04f492a053331d7d1095007c35
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.2-4.debian.tar.xz' readline_8.2-4.debian.tar.xz 33700 SHA256:dcd6d20ed594b864fc8d964f4f3a76dfbfa22193c0fad6d095bfd3fadad4b8d9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/readline/8.2-4/
 
-- https://sources.debian.net/src/readline/8.2-4/ (for browsing the source)
-- https://sources.debian.net/src/readline/8.2-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/readline/8.2-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpcsvc-proto=1.4.3-1`
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:82247edddad280d6499bfa94389367908da72e47f5cbd48cc6b83cc0d20ada62`
-- Created: `2024-06-17T23:13:09.032849944Z`
-- Virtual Size: ~ 815.60 Mb  
+- Image ID: `sha256:2c54fa271c5fb3ca0e18e8011847ed2e9cd8c033b1b6ffc67eb41e9f18193a65`
+- Created: `2024-08-17T01:30:32.133698232Z`
+- Virtual Size: ~ 815.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -419,14 +419,14 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.1`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.2`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.1`
-- `libcurl3t64-gnutls:amd64=8.5.0-2ubuntu10.1`
-- `libcurl4-openssl-dev:amd64=8.5.0-2ubuntu10.1`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.1`
+- `curl=8.5.0-2ubuntu10.2`
+- `libcurl3t64-gnutls:amd64=8.5.0-2ubuntu10.2`
+- `libcurl4-openssl-dev:amd64=8.5.0-2ubuntu10.2`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.2`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3t64-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -1490,20 +1490,20 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `krb5=1.20.1-6ubuntu2`
+### `dpkg` source package: `krb5=1.20.1-6ubuntu2.1`
 
 Binary Packages:
 
-- `krb5-multidev:amd64=1.20.1-6ubuntu2`
-- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2`
-- `libgssrpc4t64:amd64=1.20.1-6ubuntu2`
-- `libk5crypto3:amd64=1.20.1-6ubuntu2`
-- `libkadm5clnt-mit12:amd64=1.20.1-6ubuntu2`
-- `libkadm5srv-mit12:amd64=1.20.1-6ubuntu2`
-- `libkdb5-10t64:amd64=1.20.1-6ubuntu2`
-- `libkrb5-3:amd64=1.20.1-6ubuntu2`
-- `libkrb5-dev:amd64=1.20.1-6ubuntu2`
-- `libkrb5support0:amd64=1.20.1-6ubuntu2`
+- `krb5-multidev:amd64=1.20.1-6ubuntu2.1`
+- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.1`
+- `libgssrpc4t64:amd64=1.20.1-6ubuntu2.1`
+- `libk5crypto3:amd64=1.20.1-6ubuntu2.1`
+- `libkadm5clnt-mit12:amd64=1.20.1-6ubuntu2.1`
+- `libkadm5srv-mit12:amd64=1.20.1-6ubuntu2.1`
+- `libkdb5-10t64:amd64=1.20.1-6ubuntu2.1`
+- `libkrb5-3:amd64=1.20.1-6ubuntu2.1`
+- `libkrb5-dev:amd64=1.20.1-6ubuntu2.1`
+- `libkrb5support0:amd64=1.20.1-6ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libgssrpc4t64/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkadm5clnt-mit12/copyright`, `/usr/share/doc/libkadm5srv-mit12/copyright`, `/usr/share/doc/libkdb5-10t64/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5-dev/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -2548,11 +2548,11 @@ Licenses: (parsed from: `/usr/share/doc/libzstd-dev/copyright`, `/usr/share/doc/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `linux=6.8.0-35.35`
+### `dpkg` source package: `linux=6.8.0-40.40`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-35.35`
+- `linux-libc-dev:amd64=6.8.0-40.40`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2754,12 +2754,12 @@ Licenses: (parsed from: `/usr/share/doc/libmpfr6/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mysql-8.0=8.0.37-0ubuntu0.24.04.1`
+### `dpkg` source package: `mysql-8.0=8.0.39-0ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=8.0.37-0ubuntu0.24.04.1`
-- `libmysqlclient21:amd64=8.0.37-0ubuntu0.24.04.1`
+- `libmysqlclient-dev=8.0.39-0ubuntu0.24.04.1`
+- `libmysqlclient21:amd64=8.0.39-0ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient21/copyright`)
 
@@ -2970,11 +2970,11 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13`
+### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13.4`
 
 Binary Packages:
 
-- `openssh-client=1:9.6p1-3ubuntu13`
+- `openssh-client=1:9.6p1-3ubuntu13.4`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -2990,13 +2990,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3.1`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.2`
 
 Binary Packages:
 
-- `libssl-dev:amd64=3.0.13-0ubuntu3.1`
-- `libssl3t64:amd64=3.0.13-0ubuntu3.1`
-- `openssl=3.0.13-0ubuntu3.1`
+- `libssl-dev:amd64=3.0.13-0ubuntu3.2`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.2`
+- `openssl=3.0.13-0ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -3320,14 +3320,14 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3.12=3.12.3-1`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.1`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.3-1`
-- `libpython3.12-stdlib:amd64=3.12.3-1`
-- `python3.12=3.12.3-1`
-- `python3.12-minimal=3.12.3-1`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.1`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.1`
+- `python3.12=3.12.3-1ubuntu0.1`
+- `python3.12-minimal=3.12.3-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -3351,10 +3351,6 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/python3.12/3.12.3-1/
 
 
 ### `dpkg` source package: `readline=8.2-4build1`
@@ -3484,11 +3480,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/sensible-utils/0.0.22/
 
 
-### `dpkg` source package: `serf=1.3.10-1build2`
+### `dpkg` source package: `serf=1.3.10-1ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `libserf-1-1:amd64=1.3.10-1build2`
+- `libserf-1-1:amd64=1.3.10-1ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libserf-1-1/copyright`)
 
@@ -3597,12 +3593,12 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.1`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.2`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8.1`
-- `libudev1:amd64=255.4-1ubuntu8.1`
+- `libsystemd0:amd64=255.4-1ubuntu8.2`
+- `libudev1:amd64=255.4-1ubuntu8.2`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -3791,11 +3787,11 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `wget=1.21.4-1ubuntu4`
+### `dpkg` source package: `wget=1.21.4-1ubuntu4.1`
 
 Binary Packages:
 
-- `wget=1.21.4-1ubuntu4`
+- `wget=1.21.4-1ubuntu4.1`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
