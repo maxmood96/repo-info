@@ -1,9 +1,9 @@
-# `friendica:2024.06-dev-apache`
+# `friendica:2024.09-dev-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:618819a26f3ab45de255c0779f47fd02f6f3bfd3f28870f7eba0fb358f639969`
-- Created: `2024-08-13T04:54:23.084193083Z`
+- Image ID: `sha256:cb12b8a647f64166a38cc3eaece7218f00e985ead995a0dece40f450067877e7`
+- Created: `2024-08-19T18:22:08.36556274Z`
 - Virtual Size: ~ 571.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -27,8 +27,8 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `FRIENDICA_SYSLOG_FLAGS=39`
-  - `FRIENDICA_VERSION=2024.06-dev`
-  - `FRIENDICA_ADDONS=2024.06-dev`
+  - `FRIENDICA_VERSION=2024.09-dev`
+  - `FRIENDICA_ADDONS=2024.09-dev`
 
 ## `dpkg` (`.deb`-based packages)
 
