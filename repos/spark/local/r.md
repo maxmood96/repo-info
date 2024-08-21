@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:702f65a141b330e96088588902655c932aad59fdb8def2e77791f3ad8cf32a05`
+- Image ID: `sha256:e6fe6ad6b4e563421b2f5befb0c02035413d25decfeb3369758ae24fc49b85d2`
 - Created: `2024-08-12T09:09:28Z`
 - Virtual Size: ~ 1.32 Gb  
   (total size of all layers on-disk)
@@ -3732,9 +3732,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=5.4.0-192.212
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-192.212.dsc' linux_5.4.0-192.212.dsc 7377 SHA512:1c30be8ccbd1ac4123bb199de7f78c015c90b73cb627e95379e80f60d29861e85a928270696887ec12054a8cf366dba9ddc770c3d545fafdb02c2968a3d95e4e
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-192.212.diff.gz' linux_5.4.0-192.212.diff.gz 9593118 SHA512:bb98980eabcc910c20c643a33c5ca9b89c462b57e67c5b5a2cd7ca0de9a99ab9438951d0cbe09299b2d48cbcadfcc6762b861c4375f919a8165ee962e7c3e262
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-192.212.dsc' linux_5.4.0-192.212.dsc 7377 SHA512:1c30be8ccbd1ac4123bb199de7f78c015c90b73cb627e95379e80f60d29861e85a928270696887ec12054a8cf366dba9ddc770c3d545fafdb02c2968a3d95e4e
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-192.212.diff.gz' linux_5.4.0-192.212.diff.gz 9593118 SHA512:bb98980eabcc910c20c643a33c5ca9b89c462b57e67c5b5a2cd7ca0de9a99ab9438951d0cbe09299b2d48cbcadfcc6762b861c4375f919a8165ee962e7c3e262
 ```
 
 ### `dpkg` source package: `llvm-toolchain-12=1:12.0.0-3ubuntu1~20.04.5`
