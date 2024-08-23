@@ -634,10 +634,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris e2fsprogs=1.46.5-2ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.1.dsc' e2fsprogs_1.46.5-2ubuntu1.1.dsc 3227 SHA512:938120c907dc1c40e3b1c65ca7840c309d8d9a9beef91aff5a5a1694643e411e41b9c352ccb35c5cb83b6a1ef68f7222e32c268ae48ea94bfd5cdfc9bdbd8f72
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5.orig.tar.gz' e2fsprogs_1.46.5.orig.tar.gz 9530158 SHA512:1a3496cb6ac575c7a5c523cc4eede39bc77c313a6d1fea2d303fc967792d75d94e42d7821e1a61b7513509320aae4a7170506decf5753ddbd1dda9d304cc392e
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5.orig.tar.gz.asc' e2fsprogs_1.46.5.orig.tar.gz.asc 488 SHA512:b288fa2418a85750673743cb58faf10537e2c79a5c2ec8b0d59435316f00006424195556ccf78fa023b67b05a29cd85bf9d96c14c166847d71a1d79b189c1d05
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.1.debian.tar.xz' e2fsprogs_1.46.5-2ubuntu1.1.debian.tar.xz 85972 SHA512:76a3ff1b2bfd26e464ccf7cd70a96eeb6a703a6d647fcaebc71d54e6cd9070339a5f0ac02322e181c45e4c7bd7ad4daf66079f193b1191eb9ff2a5f6275fa31f
+'http://security.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.1.dsc' e2fsprogs_1.46.5-2ubuntu1.1.dsc 3227 SHA512:938120c907dc1c40e3b1c65ca7840c309d8d9a9beef91aff5a5a1694643e411e41b9c352ccb35c5cb83b6a1ef68f7222e32c268ae48ea94bfd5cdfc9bdbd8f72
+'http://security.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5.orig.tar.gz' e2fsprogs_1.46.5.orig.tar.gz 9530158 SHA512:1a3496cb6ac575c7a5c523cc4eede39bc77c313a6d1fea2d303fc967792d75d94e42d7821e1a61b7513509320aae4a7170506decf5753ddbd1dda9d304cc392e
+'http://security.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5.orig.tar.gz.asc' e2fsprogs_1.46.5.orig.tar.gz.asc 488 SHA512:b288fa2418a85750673743cb58faf10537e2c79a5c2ec8b0d59435316f00006424195556ccf78fa023b67b05a29cd85bf9d96c14c166847d71a1d79b189c1d05
+'http://security.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.1.debian.tar.xz' e2fsprogs_1.46.5-2ubuntu1.1.debian.tar.xz 85972 SHA512:76a3ff1b2bfd26e464ccf7cd70a96eeb6a703a6d647fcaebc71d54e6cd9070339a5f0ac02322e181c45e4c7bd7ad4daf66079f193b1191eb9ff2a5f6275fa31f
 ```
 
 ### `dpkg` source package: `expat=2.4.7-1ubuntu0.3`
@@ -1771,14 +1771,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.15.0-118.128
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-118.128.dsc' linux_5.15.0-118.128.dsc 7758 SHA512:d5d764c80c3b99550d6845543093ef00a3f9d42c1bb12493107d9e90e97c284c003d758399334872bb677988e9dc249f1f2748037b077449e04eaee0223f154b
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-118.128.diff.gz' linux_5.15.0-118.128.diff.gz 10260555 SHA512:8d8382933be2583f1870b8e8724bae4b90c358cebb2a5cdc48a6a9c102b5f4e0f96a2ae8462b8b596ed97481863f199fbeac80c4fcd932b1816bf72307121b22
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
 
@@ -2350,8 +2345,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.dsc' python3-defaults_3.10.6-1~22.04.dsc 2968 SHA512:1bf2e1b114f7cce5068554c0fda5a165a03caea0621c08968f7e8ab59190060c25a1da78843e5a399475b774c8e1b7f8f8b73117b977fcfc26da72bbdf907f2a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.tar.gz' python3-defaults_3.10.6-1~22.04.tar.gz 145325 SHA512:4dce1fcadb47a3fbd72e489e78c6543aa4b35a0480eb4e10617b3afd223cdd244e97f79db55f2abf28367848658ae46a3cda895d3d9dcf21c530149207f080dd
+'http://security.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.dsc' python3-defaults_3.10.6-1~22.04.dsc 2968 SHA512:1bf2e1b114f7cce5068554c0fda5a165a03caea0621c08968f7e8ab59190060c25a1da78843e5a399475b774c8e1b7f8f8b73117b977fcfc26da72bbdf907f2a
+'http://security.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.tar.gz' python3-defaults_3.10.6-1~22.04.tar.gz 145325 SHA512:4dce1fcadb47a3fbd72e489e78c6543aa4b35a0480eb4e10617b3afd223cdd244e97f79db55f2abf28367848658ae46a3cda895d3d9dcf21c530149207f080dd
 ```
 
 ### `dpkg` source package: `python3.10=3.10.12-1~22.04.5`
