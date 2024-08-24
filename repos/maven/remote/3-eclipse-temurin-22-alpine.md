@@ -1,7 +1,7 @@
 ## `maven:3-eclipse-temurin-22-alpine`
 
 ```console
-$ docker pull maven@sha256:d0d9914ca24439746a9888c6b07b426344d585c94c75d63430c8df22ea5242a2
+$ docker pull maven@sha256:5fe0259fa112fb3c788263f7f52665149f660626139d2df4e7ce579f5d702c05
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull maven@sha256:d0d9914ca24439746a9888c6b07b426344d585c94c75d63430c8d
 ### `maven:3-eclipse-temurin-22-alpine` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:5f935f5377a9713d13646ef3aa52cb6545291ef62488de0bb09e6fcb0cf37dc5
+$ docker pull maven@sha256:5ae96f98f416eda607ffb10ff0ce67c9c4d5736ca32dd57174942cb751b81a18
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.8 MB (187766232 bytes)**  
+-	Total Size: **187.8 MB (187766483 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:069d9f3b1e76168d03cdda893de64b6ee802888c2f1405a40fe91f0bbfbb36a6`
+-	Image ID: `sha256:f1798e6761f8a54f183775c5dff61151ba7fd9bb75aea49760014eda6d172673`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -29,25 +29,25 @@ $ docker pull maven@sha256:5f935f5377a9713d13646ef3aa52cb6545291ef62488de0bb09e6
 ADD file:99093095d62d0421541d882f9ceeddb2981fe701ec0aa9d2c08480712d5fed21 in / 
 # Mon, 22 Jul 2024 22:26:43 GMT
 CMD ["/bin/sh"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Mon, 19 Aug 2024 08:57:28 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Mon, 19 Aug 2024 08:57:28 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Mon, 19 Aug 2024 08:57:28 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Mon, 19 Aug 2024 08:57:28 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Mon, 19 Aug 2024 08:57:28 GMT
 ENV JAVA_VERSION=jdk-22.0.2+9
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Mon, 19 Aug 2024 08:57:28 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          ESUM='8ac93a2d5a55aabbc0f7156c2f9032026e87c185689d628ef8a4184b6e9ab006';          BINARY_URL='https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.2%2B9/OpenJDK22U-jdk_aarch64_alpine-linux_hotspot_22.0.2_9.tar.gz';          ;;        x86_64)          ESUM='49f73414824b1a7c268a611225fa4d7ce5e25600201e0f1cd59f94d1040b5264';          BINARY_URL='https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.2%2B9/OpenJDK22U-jdk_x64_alpine-linux_hotspot_22.0.2_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Mon, 19 Aug 2024 08:57:28 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Mon, 19 Aug 2024 08:57:28 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Mon, 19 Aug 2024 08:57:28 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Mon, 19 Aug 2024 08:57:28 GMT
 CMD ["jshell"]
 # Mon, 19 Aug 2024 08:57:28 GMT
 RUN apk add --no-cache bash procps curl tar openssh-client # buildkit
@@ -98,52 +98,52 @@ CMD ["mvn"]
 		Last Modified: Thu, 25 Jul 2024 17:32:16 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de9e248093b0277fb9e5dfe6ad0812b20a011a6695e0acd438ed31d5a7db5eb2`  
-		Last Modified: Thu, 25 Jul 2024 17:32:16 GMT  
-		Size: 1.9 KB (1864 bytes)  
+	-	`sha256:2f932484dcb233af98a4145305e23f34804eec0bff5cd370e6fa009251fbf887`  
+		Last Modified: Fri, 23 Aug 2024 19:29:37 GMT  
+		Size: 2.1 KB (2107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13caa8d9c6b0985f31f886807a2ddb02b96836ea32fe8f234f8e5c2bdfec1e0e`  
-		Last Modified: Mon, 19 Aug 2024 18:59:40 GMT  
-		Size: 4.2 MB (4242640 bytes)  
+	-	`sha256:fe1eea400a90b1c9cbc9c13850a57c49f2d37fe78d47d832ccef0dcbdc09f85d`  
+		Last Modified: Fri, 23 Aug 2024 21:11:18 GMT  
+		Size: 4.2 MB (4242652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77b5271910b5da6e8dcab977e74b494272b61484e813295a1227a8902eb7f760`  
-		Last Modified: Mon, 19 Aug 2024 18:59:40 GMT  
-		Size: 9.2 MB (9170439 bytes)  
+	-	`sha256:dd7c40161012138f70431fddad46602c3d2e4d5cc5ab39c9239c08913ff1d902`  
+		Last Modified: Fri, 23 Aug 2024 21:11:20 GMT  
+		Size: 9.2 MB (9170436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8247aac31b9d4187f0fe503f23fd2c1db1adf01c5303453b82794d3fbb00dd7a`  
-		Last Modified: Mon, 19 Aug 2024 18:59:40 GMT  
+	-	`sha256:db6673a37933be1a31184b57c91f6da142b318a30a67652a1d75bedfa9559703`  
+		Last Modified: Fri, 23 Aug 2024 21:11:19 GMT  
 		Size: 859.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4112a00073eca6d025d44c5f290da1e7af8cc6fc55f05524994d868d072332c6`  
-		Last Modified: Mon, 19 Aug 2024 18:59:39 GMT  
-		Size: 155.0 B  
+	-	`sha256:48e0b7e4ab25aa4f2490147c2f441e6f5ce27749ce2987e633c46262bca3abe0`  
+		Last Modified: Fri, 23 Aug 2024 21:11:18 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-eclipse-temurin-22-alpine` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:0755f1923cffb909193ec1c59104ece96463284a040013938296a93af814907d
+$ docker pull maven@sha256:ce57e4ac5d3990944b296bae45850688c373602e80a6e1f42da1bd4068bf2bce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **994.8 KB (994824 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7907367c2073cdc65caca08f54aabf21888792352443c169da85c6c153886d5a`
+-	Image ID: `sha256:db58325cdae51277f83180c1dfcb7831f384ebd6d14cfd10f39ac2ec2502121c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:41a4494643d66603958806ca73c3c834d50a2fd19462f096c5020494e9dd6b08`  
-		Last Modified: Mon, 19 Aug 2024 18:59:39 GMT  
+	-	`sha256:f03005458e889ec684e7433a9b914cbe188750145ab76d809f8eb0411f30570c`  
+		Last Modified: Fri, 23 Aug 2024 21:11:19 GMT  
 		Size: 975.5 KB (975466 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cb0362c2062f609c21f4b75a9dcd28896794bad23313b475e233cc54c76e72f1`  
-		Last Modified: Mon, 19 Aug 2024 18:59:39 GMT  
+	-	`sha256:72456807aa74e7df2f31e267fe7633f69cfe8d06e24e22f57ef6a5fa7665bf71`  
+		Last Modified: Fri, 23 Aug 2024 21:11:19 GMT  
 		Size: 19.4 KB (19358 bytes)  
 		MIME: application/vnd.in-toto+json
 

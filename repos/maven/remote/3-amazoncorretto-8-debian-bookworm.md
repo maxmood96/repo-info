@@ -1,7 +1,7 @@
 ## `maven:3-amazoncorretto-8-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:2a080576d63b0b871be51518b65dba4888461cc11d43c3d65132320ae6ea1627
+$ docker pull maven@sha256:9058e34fead5018055572235e635e3e635ed76897df3fb1b8c1b338ace031162
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull maven@sha256:2a080576d63b0b871be51518b65dba4888461cc11d43c3d651323
 ### `maven:3-amazoncorretto-8-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:ea1a7e2ea06a3f22f16f416b4cc891b486162df68ceef0fa246a08f7112af899
+$ docker pull maven@sha256:d8fd79a7a087c6626de0d6fbaa8b9727d5ff2fd641c9addbbb9a141812ef0fb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.5 MB (164462379 bytes)**  
+-	Total Size: **164.5 MB (164462409 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:465a222cca258b6220e27fddcdb39fcf9bfba74a00615cdbf2e7e8b8518d883f`
+-	Image ID: `sha256:cad79ce049ee74a2942b6766a917ef15cd9d51c948ec53b70177ef12c7a574cc`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -68,49 +68,49 @@ CMD ["mvn"]
 		Last Modified: Tue, 13 Aug 2024 00:23:48 GMT  
 		Size: 29.1 MB (29126232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddff04266cfeb92316a40d2864cd0dc03a38c98ebe70ce925edddeb40f20138c`  
-		Last Modified: Mon, 19 Aug 2024 19:00:25 GMT  
-		Size: 126.2 MB (126164676 bytes)  
+	-	`sha256:b10b8572d50a9b11de400e35ceb40f824359a056f71def4a64af5d722d4cb94a`  
+		Last Modified: Fri, 23 Aug 2024 21:10:35 GMT  
+		Size: 126.2 MB (126164705 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8022b68c39e5880ab7e0170834ac61a4280dda5adccb5c7545654842bef6101`  
-		Last Modified: Mon, 19 Aug 2024 19:00:22 GMT  
+	-	`sha256:611b26f6352976773fb6b179cc7b6aa7634b542b74239b6b27d931dcf1f51de6`  
+		Last Modified: Fri, 23 Aug 2024 21:10:34 GMT  
 		Size: 9.2 MB (9170436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:346ba27419f715473984abe2d5b1f699ffc22cba2db62db0b4ff339e67160769`  
-		Last Modified: Mon, 19 Aug 2024 19:00:21 GMT  
-		Size: 848.0 B  
+	-	`sha256:808e002a07793e20d1af33601ef138125bf136ce9b0ab6debef57bddcf1df786`  
+		Last Modified: Fri, 23 Aug 2024 21:10:33 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:344ab3bc473e794a20fb7c942a8be404a0d8054908d604380a9800a38ad39d68`  
-		Last Modified: Mon, 19 Aug 2024 19:00:21 GMT  
-		Size: 155.0 B  
+	-	`sha256:6d91251fbfc9610ee438fd413aa8c6a81459d5c0e3fd57a098ea88ddd936a07d`  
+		Last Modified: Fri, 23 Aug 2024 21:10:34 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-8-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:d81f4c09d7ad0d0393560d53628eecb5112d5c2c26e17f3b5c75b06b608f0924
+$ docker pull maven@sha256:c0f42ab1d8bed18a1efed74bd33cebdf9ae4a8d3456bccd50bbf4772cff2e11b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2877733 bytes)**  
+-	Total Size: **2.9 MB (2877732 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d0d6d686973491c4d1e1784622e617b4c80bbdfe0d11bf87d3b10d76b9088c20`
+-	Image ID: `sha256:3f923519a10876a45a45a8eb9891b8317f5ba62c72ca6a0f91a130e35ca2579a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d5f281089bf1bb55343890d945f24ed58455423d81fde36d5e155aaa7372a4bd`  
-		Last Modified: Mon, 19 Aug 2024 19:00:21 GMT  
+	-	`sha256:3e360eaad1bb5d54746007f01302c5a64d79d0defb3311242609ec08dd016603`  
+		Last Modified: Fri, 23 Aug 2024 21:10:34 GMT  
 		Size: 2.9 MB (2859237 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2b1230c25d3d5ca4cc2ff836177cebe89c2ca7e1d8eee20ac05fa864e27c3904`  
-		Last Modified: Mon, 19 Aug 2024 19:00:21 GMT  
-		Size: 18.5 KB (18496 bytes)  
+	-	`sha256:59b96b25460b7413339457cedec153230ff65becba1bd7e981beb592930d78d2`  
+		Last Modified: Fri, 23 Aug 2024 21:10:33 GMT  
+		Size: 18.5 KB (18495 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-amazoncorretto-8-debian-bookworm` - linux; arm64 variant v8
