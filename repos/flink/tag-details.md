@@ -62,7 +62,7 @@
 ## `flink:1.18`
 
 ```console
-$ docker pull flink@sha256:1fd9fe4454d715a737fa8297362cf3e0e27224539de10aa47d14aa66630b69cd
+$ docker pull flink@sha256:ae287700350f75a6123ab680fd95fe94d808484f016dd96f01cbca033665992c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -75,13 +75,13 @@ $ docker pull flink@sha256:1fd9fe4454d715a737fa8297362cf3e0e27224539de10aa47d14a
 ### `flink:1.18` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:907a2a4d02ae3c2beb2a73fa367e60478051484304425be2da219e70cda1c885
+$ docker pull flink@sha256:6dcdd7647777eb2b00a0732e98963c2af1585bf312eb9dca8160065a3bbd2944
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.2 MB (577228289 bytes)**  
+-	Total Size: **577.2 MB (577228805 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d414773dce4f14c369bc641f2c1b1f220a85ee9f2b81db5d4a3745479246da0`
+-	Image ID: `sha256:b461cf0e3b2e68565685b73ef05b5402ab40a72eddf55d4c8ddfa2fe8dc95b06`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -113,9 +113,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -161,56 +161,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7dec3a0496245f97ea44253975fcc9f06cbf89ccc34d1fbc16c690a3cef9b1f`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 4.4 MB (4416728 bytes)  
+	-	`sha256:4430d5c4f6654fe59c22b5ee4eb5883af02963de43a36ff9e34579af2f43a055`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 4.4 MB (4416809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2802b0369c5e83f9d956a64f20d4345b60baab94773cbf3fd90e9443cfa87f9f`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:56fc2b3b0447213ff66e38c30a3945aa7a75a58caa8bb82bb9a1064e32b94f59`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d247a71c5f307b8760e9c9d52704a06f2f25aa7325bdbb2d9b88c0ae09d0fff6`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 4.6 KB (4591 bytes)  
+	-	`sha256:ea4884c7d8b33451b52d3c2980bf9b5d2a5297e3c9c963e9eba024938ff2d8c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa08788f1105ddb1108764ed9b4cad5e9bdc16de12a08a671d8708ae65214216`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:6750350f5979141e4006dfe8c3f9168032101e687886e1228f3a2d56479844df`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e95b6be062561ffb8400879ea0a1306df7ac10a899914a32fd7501a0dd262ca`  
-		Last Modified: Sat, 17 Aug 2024 02:02:04 GMT  
-		Size: 481.4 MB (481392215 bytes)  
+	-	`sha256:7572744eecfa392128f1fc0c4dc5d518b895bc7926b398df6e585ac391cceecc`  
+		Last Modified: Fri, 23 Aug 2024 20:06:46 GMT  
+		Size: 481.4 MB (481392403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a85fde9a57374bedaf50fc2a83822939c14e3bdd1985c818bac930b4e9149293`  
-		Last Modified: Sat, 17 Aug 2024 02:00:50 GMT  
-		Size: 2.1 KB (2110 bytes)  
+	-	`sha256:0f4cec42df9159a3cff18c7ebd70b5f0326efc406b8aeca8feae708ae8f22b81`  
+		Last Modified: Fri, 23 Aug 2024 20:06:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:2fda1fd796f1f897f45589012432f6c23e954be9e8bbe0a206ff1629da1afdf9
+$ docker pull flink@sha256:b7c5ede2f4ac648100ba19a04e756f6abadf9b999c9994fa4a06548d2e3bee91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3756822 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c15d74d7b4a05521be8e86f4b3c160ec7daf47626b49ba80678f89aac56d271`
+-	Image ID: `sha256:135103994f51225256150a218a88ae31c4dfe81782d96b58b324f5274665cd4f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:232a35428d89ff014de426a466a9a039b8affff2950514bbc7716af283de3d01`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:a8d37c1a0b03f6ae758b7f50f4e69390ff2319d8ed7c2b12de079fd820ba0eec`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 3.7 MB (3726824 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5ddeddb187e25dcb97137f84be1e33761b9de98033eebc3bd0103f1be4e81824`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:fc747d8607d79b44b4e96601d8926c73cb6bbe9fea67b14efdd5c7315244e6df`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 30.0 KB (29998 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -359,7 +359,7 @@ $ docker pull flink@sha256:9231cc7f9f12e54195c04283af9f0d66352c448a5f485c7cd98dc
 ## `flink:1.18-java11`
 
 ```console
-$ docker pull flink@sha256:1fd9fe4454d715a737fa8297362cf3e0e27224539de10aa47d14aa66630b69cd
+$ docker pull flink@sha256:ae287700350f75a6123ab680fd95fe94d808484f016dd96f01cbca033665992c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -372,13 +372,13 @@ $ docker pull flink@sha256:1fd9fe4454d715a737fa8297362cf3e0e27224539de10aa47d14a
 ### `flink:1.18-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:907a2a4d02ae3c2beb2a73fa367e60478051484304425be2da219e70cda1c885
+$ docker pull flink@sha256:6dcdd7647777eb2b00a0732e98963c2af1585bf312eb9dca8160065a3bbd2944
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.2 MB (577228289 bytes)**  
+-	Total Size: **577.2 MB (577228805 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d414773dce4f14c369bc641f2c1b1f220a85ee9f2b81db5d4a3745479246da0`
+-	Image ID: `sha256:b461cf0e3b2e68565685b73ef05b5402ab40a72eddf55d4c8ddfa2fe8dc95b06`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -410,9 +410,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -458,56 +458,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7dec3a0496245f97ea44253975fcc9f06cbf89ccc34d1fbc16c690a3cef9b1f`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 4.4 MB (4416728 bytes)  
+	-	`sha256:4430d5c4f6654fe59c22b5ee4eb5883af02963de43a36ff9e34579af2f43a055`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 4.4 MB (4416809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2802b0369c5e83f9d956a64f20d4345b60baab94773cbf3fd90e9443cfa87f9f`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:56fc2b3b0447213ff66e38c30a3945aa7a75a58caa8bb82bb9a1064e32b94f59`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d247a71c5f307b8760e9c9d52704a06f2f25aa7325bdbb2d9b88c0ae09d0fff6`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 4.6 KB (4591 bytes)  
+	-	`sha256:ea4884c7d8b33451b52d3c2980bf9b5d2a5297e3c9c963e9eba024938ff2d8c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa08788f1105ddb1108764ed9b4cad5e9bdc16de12a08a671d8708ae65214216`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:6750350f5979141e4006dfe8c3f9168032101e687886e1228f3a2d56479844df`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e95b6be062561ffb8400879ea0a1306df7ac10a899914a32fd7501a0dd262ca`  
-		Last Modified: Sat, 17 Aug 2024 02:02:04 GMT  
-		Size: 481.4 MB (481392215 bytes)  
+	-	`sha256:7572744eecfa392128f1fc0c4dc5d518b895bc7926b398df6e585ac391cceecc`  
+		Last Modified: Fri, 23 Aug 2024 20:06:46 GMT  
+		Size: 481.4 MB (481392403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a85fde9a57374bedaf50fc2a83822939c14e3bdd1985c818bac930b4e9149293`  
-		Last Modified: Sat, 17 Aug 2024 02:00:50 GMT  
-		Size: 2.1 KB (2110 bytes)  
+	-	`sha256:0f4cec42df9159a3cff18c7ebd70b5f0326efc406b8aeca8feae708ae8f22b81`  
+		Last Modified: Fri, 23 Aug 2024 20:06:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18-java11` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:2fda1fd796f1f897f45589012432f6c23e954be9e8bbe0a206ff1629da1afdf9
+$ docker pull flink@sha256:b7c5ede2f4ac648100ba19a04e756f6abadf9b999c9994fa4a06548d2e3bee91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3756822 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c15d74d7b4a05521be8e86f4b3c160ec7daf47626b49ba80678f89aac56d271`
+-	Image ID: `sha256:135103994f51225256150a218a88ae31c4dfe81782d96b58b324f5274665cd4f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:232a35428d89ff014de426a466a9a039b8affff2950514bbc7716af283de3d01`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:a8d37c1a0b03f6ae758b7f50f4e69390ff2319d8ed7c2b12de079fd820ba0eec`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 3.7 MB (3726824 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5ddeddb187e25dcb97137f84be1e33761b9de98033eebc3bd0103f1be4e81824`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:fc747d8607d79b44b4e96601d8926c73cb6bbe9fea67b14efdd5c7315244e6df`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 30.0 KB (29998 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -656,7 +656,7 @@ $ docker pull flink@sha256:9231cc7f9f12e54195c04283af9f0d66352c448a5f485c7cd98dc
 ## `flink:1.18-java17`
 
 ```console
-$ docker pull flink@sha256:8f2c5fce123919a22c430c3e0c51dc414db31ab315afe7edb0d27496f3ef9c01
+$ docker pull flink@sha256:85561bdd1abf1a7e14ba85395c9ad1eddc048d6c6345f1b0519f738a47ed20d9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -669,13 +669,13 @@ $ docker pull flink@sha256:8f2c5fce123919a22c430c3e0c51dc414db31ab315afe7edb0d27
 ### `flink:1.18-java17` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:26be302895565fdbd05e077c19fc96d7619135b61d1762e429b30a6b9aa4e0d6
+$ docker pull flink@sha256:c427f966ab8687ce69dc83b0250b9f7a3084d0aed429a63a94501b10dbe45fb9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.3 MB (577310236 bytes)**  
+-	Total Size: **577.3 MB (577310581 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af0dab0ac1100e589f81af5ecaa856fa4d2f93db07174a3d005e5d7faf56c7a2`
+-	Image ID: `sha256:ec4a6c74e4bd84ee1d8d3f31af5eff81e77218c949a5da1a4988a1c1f9e42ccf`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -707,9 +707,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -755,69 +755,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd24317609f1b5444d777c0434ab11020010745e5fa797d14158b433e7d085e`  
-		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:5161e45ecd8d096f978edcb483c5ed70580526e02a1f8155653ca1c6c192f097`  
+		Last Modified: Fri, 23 Aug 2024 19:27:49 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36ae612a02e1bf99e08c7d45babfc7571d5b21782351cc1bf7c5a154bba0b881`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
-		Size: 4.4 MB (4416784 bytes)  
+	-	`sha256:19d8e3f70899f152b8a2d330be533ff41489ab40822fcdc0543e33d3e0bdbfbf`  
+		Last Modified: Fri, 23 Aug 2024 20:08:01 GMT  
+		Size: 4.4 MB (4416769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2bdec5bc8bcc79fc4c2213553584d59ff0e1161eb8865698571de60c9f679b9`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:a6516d530c8c3c5e4abd8393edb7f3ff0e7c4a826f53d48933dbe848fac89a69`  
+		Last Modified: Fri, 23 Aug 2024 20:08:01 GMT  
+		Size: 900.5 KB (900496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9568fa987786bdc806485f8bc28dd8ab9e411c3008317c088ed72e0ea9c2f794`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
-		Size: 4.6 KB (4590 bytes)  
+	-	`sha256:f74280f41aad6a727774acab4795704b32e28405a44c8512fe581bed81ca4d9a`  
+		Last Modified: Fri, 23 Aug 2024 20:08:00 GMT  
+		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e580cc18dd3af980c26249847e69d5123bc8bf2c84877a053a65ff3e47b9814`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
+	-	`sha256:70407ec037fd53ffd275d3d9e8288d8f1586b87c75e31e0b072a205888fc79bd`  
+		Last Modified: Fri, 23 Aug 2024 20:08:01 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79b016bb6c22e7a738756201aa047263977884b9b09e0dd763d65fd0e2fc1345`  
-		Last Modified: Sat, 17 Aug 2024 02:00:58 GMT  
-		Size: 481.4 MB (481392315 bytes)  
+	-	`sha256:e9487bd72caabd8c053b2f35cccd4616e68cbb51cad5dcea6d4b45577c0d0853`  
+		Last Modified: Fri, 23 Aug 2024 20:08:12 GMT  
+		Size: 481.4 MB (481392428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a85fde9a57374bedaf50fc2a83822939c14e3bdd1985c818bac930b4e9149293`  
-		Last Modified: Sat, 17 Aug 2024 02:00:50 GMT  
-		Size: 2.1 KB (2110 bytes)  
+	-	`sha256:6d9ab3e026b23e22e38cd1e3cd0d170a5b2bee3c59c9de7d020f1335d91bb065`  
+		Last Modified: Fri, 23 Aug 2024 20:08:02 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:47966ac9b1faeadceb0576bbc9f213135c6c1b4b071dac35705b2fe936294b7b
+$ docker pull flink@sha256:d12f463bfbf43bb126a97978bec6d56dcc2d6341b3386184ad2ab5712f6d7457
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3754382 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96712dae2e444cf914eca77ea4b910993b9bd4a4a72320b26eb953b404f89299`
+-	Image ID: `sha256:efc929f6c6acc1a9cd0b33c9f24758a2e9d8fc2e2391c666b8b17181f196effd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3f16828304ee28bbddd1513702ca4a7bb68230d1379b42f068be2449cd2b0128`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
+	-	`sha256:ca0c69918225d0b4a3a416fdc686c07278b691ba8243c78a53803350bf39afe3`  
+		Last Modified: Fri, 23 Aug 2024 20:08:01 GMT  
 		Size: 3.7 MB (3725604 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f2b66903bf9d1ab6dc5feb39c8df3662ba373c6a428debb313ed84602a1caea9`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
+	-	`sha256:af662f53947662d8c7da79f132d88da6d7208218f364e508f1dbf96c518c2ab7`  
+		Last Modified: Fri, 23 Aug 2024 20:08:00 GMT  
 		Size: 28.8 KB (28778 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.18-java17` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:e0699c3e49e5aa75fcb05407b681ea5ad86d565085fbc8894aee3f00280b56d1
+$ docker pull flink@sha256:5562c21171bd1b9e02b2d233a6df2a5788eb99696b575692616a55210518ac97
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **574.5 MB (574458742 bytes)**  
+-	Total Size: **574.5 MB (574459034 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:29d4187d47068a708cfa8dff765dd5fe96d7a91a79a133d7d891b6ccd79ab074`
+-	Image ID: `sha256:c58e9fab0e03d533e1f71c1f2dcf5ab8c562282cad2e1d9a3f6c835a978a3b68`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -849,9 +849,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -897,63 +897,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:560407f77d279e68f72a6b12199439583872a1ea3f7441297485cd75f35c2820`  
-		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
-		Size: 1.9 KB (1867 bytes)  
+	-	`sha256:7525b10c4bd14139ded90d85ae282e53b2795402b1d01d327856dc57969f13e3`  
+		Last Modified: Fri, 23 Aug 2024 19:45:19 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ad449889b73484896ec212c8670510e4161d8083aa5ad002579b20df8504b78`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 4.3 MB (4265352 bytes)  
+	-	`sha256:b9f3272af01e149559a1d95590e2b0630a4501876558133e754ec3266f0f1377`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 4.3 MB (4265489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ca919b123f67c1b860be035235046bd79c58881886fd0d56ee2e52996b0b2ef`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 835.4 KB (835384 bytes)  
+	-	`sha256:c87f04576eb489737d425f233e0419d858cc5befc99a55366af6526106664e3a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e60394085bf17ddcd687577174c22b0e3c7f759fe451192576587479cb5688ed`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
-		Size: 4.6 KB (4632 bytes)  
+	-	`sha256:158086bb3241bb0ca922793682a9c395c7da3d34cb5318907e736de70f5d65f3`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
+		Size: 4.6 KB (4630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d7eb6c8c5988c288ebbc5d3db43ebc479789a982295108c19735fd40003c21d`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
+	-	`sha256:9dd0dc76ce70c3d51e1ce36025ca348c68c213ac04aebdb815ee046ae3deacea`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e0d85a3fdbff9424c1049f077572fa5ff0aad732fc2da2029dc32f019eb91968`  
-		Last Modified: Sat, 17 Aug 2024 07:00:03 GMT  
-		Size: 481.4 MB (481392421 bytes)  
+	-	`sha256:56f642d18d9d25c532d82d4a99bca9f7e89da7e0f198d351fbc6cacdf40a1786`  
+		Last Modified: Fri, 23 Aug 2024 22:24:07 GMT  
+		Size: 481.4 MB (481392339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95f1b556e5df1d79e84e1bf946f3d674b1d357373bad280a4a0b7730f205038e`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
+	-	`sha256:d87cd8d3acdb1a562fd45b5473c388c8033c04834e495cbe0522b594358131ed`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
 		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:edc0c0b339e49397e19e994ce06f77ee00a9de70fa5e7dc9062ee61d417477a5
+$ docker pull flink@sha256:513e2c9d770646e5e96bd892d53f88ee7c14224cd992de73167e486d9ddbb73d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3755001 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef9906ec09b2ccb085b1105620195cf566352be1505a10662c39bcfa21b96045`
+-	Image ID: `sha256:22728aecf714e43c50e3e664b6a95a1e70a0513034fda1a39a267ae84951a83b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c7cc7c0e47e274c8a29c71b245cf7112159c4d51a194262c5e3349a8e4ad1834`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
+	-	`sha256:061e21565c56fdc41fcdcc1407c3337fa30ea89bc50442466508f93a302733a1`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
 		Size: 3.7 MB (3725906 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ef7e269558b15c19aa1bcd04009d5d74426197dca0e9a5bc5a09a73350d80f73`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
+	-	`sha256:7ada5bb8372db654910c2325138803d2be3b345cd924c6ebf0a407f45300298c`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
 		Size: 29.1 KB (29095 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.18-java8`
 
 ```console
-$ docker pull flink@sha256:27d832d2468bd2eabb9068a5f095f747b583abd4a6928871d4d3c50bdfd5fc6d
+$ docker pull flink@sha256:376d4bc04a2863b4323850920971c97d8242533bd289822797c649b1fd8a333c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -966,13 +966,13 @@ $ docker pull flink@sha256:27d832d2468bd2eabb9068a5f095f747b583abd4a6928871d4d3c
 ### `flink:1.18-java8` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:2888d1796c58ca441e232e39036de8d67172792ad7aadea1e14fb102a30c4549
+$ docker pull flink@sha256:9bc03be664f8595fb74cde70b9851ab1959e0dcdc28db6dcac84687cd7526495
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **571.9 MB (571914711 bytes)**  
+-	Total Size: **571.9 MB (571914888 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccdf047c78f01babbde6a982f97a0f0bf58e106d18d8c86849028251165d525b`
+-	Image ID: `sha256:288162cd5fa3d49c3677c71603d662b7512427b28e79b954235a95ab09f0ff8e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -1004,9 +1004,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -1052,69 +1052,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63f0966d15e28d4f9d2446b285da398fbbc46c4fdd3e46d16dd24c27e54a7968`  
-		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:549fdae8215d87f93f320e0b858daecaf8ec8ca17d44c21986c5a17d9f682905`  
+		Last Modified: Fri, 23 Aug 2024 19:25:15 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f46465b11126c9283f2318ec010771ec7a3b951176c41dc4238d9d6a16db790`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
-		Size: 4.4 MB (4416725 bytes)  
+	-	`sha256:d28a700f55f29246df646e1087da1818f473f8d33ee71f0b87761f725da0c4bc`  
+		Last Modified: Fri, 23 Aug 2024 20:08:04 GMT  
+		Size: 4.4 MB (4416789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:868a72a488a2360e3b11dc3ae66109e99c043bc002fd5b70b88dd2d31b71b6cc`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:6307af0b1a544d9315377b12a920e021b3583b8c3a1886404f2a8bc16ffcaf77`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98595db57e98cd466cae34148b7e7ae7e578201425da5f8d1eecf5afdd9e6fd5`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
-		Size: 4.6 KB (4593 bytes)  
+	-	`sha256:edcdf3c270d42af4ccbb596ca093a97eeab316c34b02acddd21492d9e56e772e`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
+		Size: 4.6 KB (4591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7084fd3113570c5e1c65fc5d19413f2c118737d7dec2bcf1808c0174280d6c58`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
+	-	`sha256:f322e8387874c0fd2ae5bc461a3115620802b181815a9f6be70c623e52d462cc`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b823f8a137dec677151a674aafd620c81920e617768082cbe85e87d420822818`  
-		Last Modified: Sat, 17 Aug 2024 02:03:59 GMT  
-		Size: 481.4 MB (481392562 bytes)  
+	-	`sha256:079034c0001cccdaa3716e4e3e3cc3070e65fa50f989034b361f532c69a7d344`  
+		Last Modified: Fri, 23 Aug 2024 20:08:15 GMT  
+		Size: 481.4 MB (481392431 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28e49a7857495dd922d4560f55e80e81dffa0f698fc96ccee6469d28cce4d52c`  
-		Last Modified: Sat, 17 Aug 2024 02:03:52 GMT  
-		Size: 2.1 KB (2110 bytes)  
+	-	`sha256:0f4cec42df9159a3cff18c7ebd70b5f0326efc406b8aeca8feae708ae8f22b81`  
+		Last Modified: Fri, 23 Aug 2024 20:06:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:0797bb616b24c5cf5505edbdb7bd0e780230b38e397418535f4292002c6d8fed
+$ docker pull flink@sha256:8f8ebbe51a1fb3842b13cd411bba34fc69215ea873f5bb4cc1655960e7e9e18d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3774763 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:511c7cf878817d66dd8fba30fe165b0a8f1fcd911f3a304142c0063922ac80ad`
+-	Image ID: `sha256:fa3023b133052b7033b023aae86cfd945f8571c63c8e848409bd90ff1de775be`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c9d8252b965f4f51cfbce653a91188e681579f97ba31c9ff2c4646f0ccea3ca6`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
+	-	`sha256:d26a6b4c49714343f13103fb25cd3a80eee1aed9f7945aff333aa3f3fac76013`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
 		Size: 3.7 MB (3746004 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2dd76090c75c600674e483a360356f9e3df68579370e7e928eda334754ce71a0`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
+	-	`sha256:2607f493b39fa0e5848ba9282fb0482c9075abdedba11d7e7a3b273fcc4aeefe`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
 		Size: 28.8 KB (28759 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.18-java8` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:0bd620614aa9fb07ed05af0be39b0f592cfa261e1506275a9265294a0f8fe6cd
+$ docker pull flink@sha256:09d87539e58c21b5d926a691b42f4dd4ab1c34040712d750712e501ee943d972
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **568.6 MB (568569402 bytes)**  
+-	Total Size: **568.6 MB (568569741 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8af1112253a91a4343528121330369edbb919e4447629c396c37e247b1439827`
+-	Image ID: `sha256:8ed1553072656b26dee37a882eeac2275f87ab84c6b7893d1185fc9f026deb32`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -1146,9 +1146,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -1194,63 +1194,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b3a4248864654ce3e18048693bd49d77e323e35ce5e94fddc9a726a2faaeeb`  
-		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:db7acc9dfbf237a216b04a6b690009ad96051dd54ed79368fbd1e8306fbe4f05`  
+		Last Modified: Fri, 23 Aug 2024 19:43:12 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:810c5e271b495dd2f643060afb28946fb0c049eaed8479525f89c85fe41e8758`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 4.3 MB (4265413 bytes)  
+	-	`sha256:bcd5931f222e62a2780a370c553ddb4fc0e5ba856d0c4d1949908b6dd82987a9`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 4.3 MB (4265514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0018f9f96b94973046f70a5954b494f43d8753b53869d54a0df33933c063b3e9`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 835.4 KB (835383 bytes)  
+	-	`sha256:52a74542e3f8d53bdef5981075a820ad1cbd1065a63f8361ca7ab8f3e257d575`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99cb29992e45b7a34ac5e8b0e0339c519798d5c808901b16f09a7a67b1f4f5c2`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
-		Size: 4.6 KB (4629 bytes)  
+	-	`sha256:d36b7fb89958f36a1c2362201b077684fda1a6d1f04589ac0f1fc75a831e0885`  
+		Last Modified: Fri, 23 Aug 2024 22:22:24 GMT  
+		Size: 4.6 KB (4631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08885d8439729628e5325d5acefa1f035db0c1b04670ee89834be54a8ca316f6`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
+	-	`sha256:e00bcf9001f99cc7a47da971efb3dd2bc8c972ac09ae6a984a43eefa7d984043`  
+		Last Modified: Fri, 23 Aug 2024 22:22:24 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e00be838c66d0adec266aeae9e8e686da53d1513c873055e0743995a5575e689`  
-		Last Modified: Sat, 17 Aug 2024 06:58:24 GMT  
-		Size: 481.4 MB (481392521 bytes)  
+	-	`sha256:adf35189fc1fb92eb26a836302c1653b99144e64836d843b62804e099a1bb6c6`  
+		Last Modified: Fri, 23 Aug 2024 22:22:34 GMT  
+		Size: 481.4 MB (481392516 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:117471add07a06d48155a264993a45a63dc3880e87ea0b7c405a6e3284fbbd1b`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
+	-	`sha256:62ada84f5c683b93c9a06bcb4159957d3448c11def010d5c40c60052dc0a7780`  
+		Last Modified: Fri, 23 Aug 2024 22:22:24 GMT  
 		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:04b2e50095aec5e24bd2465758e8d885edb1cb3d7888d5414a54fa430bf17349
+$ docker pull flink@sha256:0f52e1a7bf7235de3d398ba9dfe7fdd5d89b79936dd2877202c6e2dd3bdaa6e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3775381 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86a33c22a39b73ec3cda4580aaab2c8fc456ca9d5c695cc3900d5c2a83270d7f`
+-	Image ID: `sha256:6fd8d1e4a7d4728b67538c4cb0a5274edd6b34b5ad074964e1d8f5d6050078ae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a0c76517e0cb512adb348133a59ae67a4e582fd17a7e62e9595a40c88453df0b`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
+	-	`sha256:8495bdeb319dfeb27ffa9dc6fd5eff5e0cc39264418b0bea09e5d0807f2490e4`  
+		Last Modified: Fri, 23 Aug 2024 22:22:24 GMT  
 		Size: 3.7 MB (3746306 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0c789cfb743585f31be616557f3cffb588574549c16062fac46dcea6bf3a2d94`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
+	-	`sha256:c99915302a6fbdc4646fe2e266ec8bcb764800d18cfd30439ae5c7b3087429c5`  
+		Last Modified: Fri, 23 Aug 2024 22:22:23 GMT  
 		Size: 29.1 KB (29075 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.18-scala_2.12`
 
 ```console
-$ docker pull flink@sha256:1fd9fe4454d715a737fa8297362cf3e0e27224539de10aa47d14aa66630b69cd
+$ docker pull flink@sha256:ae287700350f75a6123ab680fd95fe94d808484f016dd96f01cbca033665992c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1263,13 +1263,13 @@ $ docker pull flink@sha256:1fd9fe4454d715a737fa8297362cf3e0e27224539de10aa47d14a
 ### `flink:1.18-scala_2.12` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:907a2a4d02ae3c2beb2a73fa367e60478051484304425be2da219e70cda1c885
+$ docker pull flink@sha256:6dcdd7647777eb2b00a0732e98963c2af1585bf312eb9dca8160065a3bbd2944
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.2 MB (577228289 bytes)**  
+-	Total Size: **577.2 MB (577228805 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d414773dce4f14c369bc641f2c1b1f220a85ee9f2b81db5d4a3745479246da0`
+-	Image ID: `sha256:b461cf0e3b2e68565685b73ef05b5402ab40a72eddf55d4c8ddfa2fe8dc95b06`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -1301,9 +1301,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -1349,56 +1349,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7dec3a0496245f97ea44253975fcc9f06cbf89ccc34d1fbc16c690a3cef9b1f`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 4.4 MB (4416728 bytes)  
+	-	`sha256:4430d5c4f6654fe59c22b5ee4eb5883af02963de43a36ff9e34579af2f43a055`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 4.4 MB (4416809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2802b0369c5e83f9d956a64f20d4345b60baab94773cbf3fd90e9443cfa87f9f`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:56fc2b3b0447213ff66e38c30a3945aa7a75a58caa8bb82bb9a1064e32b94f59`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d247a71c5f307b8760e9c9d52704a06f2f25aa7325bdbb2d9b88c0ae09d0fff6`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 4.6 KB (4591 bytes)  
+	-	`sha256:ea4884c7d8b33451b52d3c2980bf9b5d2a5297e3c9c963e9eba024938ff2d8c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa08788f1105ddb1108764ed9b4cad5e9bdc16de12a08a671d8708ae65214216`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:6750350f5979141e4006dfe8c3f9168032101e687886e1228f3a2d56479844df`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e95b6be062561ffb8400879ea0a1306df7ac10a899914a32fd7501a0dd262ca`  
-		Last Modified: Sat, 17 Aug 2024 02:02:04 GMT  
-		Size: 481.4 MB (481392215 bytes)  
+	-	`sha256:7572744eecfa392128f1fc0c4dc5d518b895bc7926b398df6e585ac391cceecc`  
+		Last Modified: Fri, 23 Aug 2024 20:06:46 GMT  
+		Size: 481.4 MB (481392403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a85fde9a57374bedaf50fc2a83822939c14e3bdd1985c818bac930b4e9149293`  
-		Last Modified: Sat, 17 Aug 2024 02:00:50 GMT  
-		Size: 2.1 KB (2110 bytes)  
+	-	`sha256:0f4cec42df9159a3cff18c7ebd70b5f0326efc406b8aeca8feae708ae8f22b81`  
+		Last Modified: Fri, 23 Aug 2024 20:06:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18-scala_2.12` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:2fda1fd796f1f897f45589012432f6c23e954be9e8bbe0a206ff1629da1afdf9
+$ docker pull flink@sha256:b7c5ede2f4ac648100ba19a04e756f6abadf9b999c9994fa4a06548d2e3bee91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3756822 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c15d74d7b4a05521be8e86f4b3c160ec7daf47626b49ba80678f89aac56d271`
+-	Image ID: `sha256:135103994f51225256150a218a88ae31c4dfe81782d96b58b324f5274665cd4f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:232a35428d89ff014de426a466a9a039b8affff2950514bbc7716af283de3d01`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:a8d37c1a0b03f6ae758b7f50f4e69390ff2319d8ed7c2b12de079fd820ba0eec`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 3.7 MB (3726824 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5ddeddb187e25dcb97137f84be1e33761b9de98033eebc3bd0103f1be4e81824`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:fc747d8607d79b44b4e96601d8926c73cb6bbe9fea67b14efdd5c7315244e6df`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 30.0 KB (29998 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1547,7 +1547,7 @@ $ docker pull flink@sha256:9231cc7f9f12e54195c04283af9f0d66352c448a5f485c7cd98dc
 ## `flink:1.18-scala_2.12-java11`
 
 ```console
-$ docker pull flink@sha256:1fd9fe4454d715a737fa8297362cf3e0e27224539de10aa47d14aa66630b69cd
+$ docker pull flink@sha256:ae287700350f75a6123ab680fd95fe94d808484f016dd96f01cbca033665992c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1560,13 +1560,13 @@ $ docker pull flink@sha256:1fd9fe4454d715a737fa8297362cf3e0e27224539de10aa47d14a
 ### `flink:1.18-scala_2.12-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:907a2a4d02ae3c2beb2a73fa367e60478051484304425be2da219e70cda1c885
+$ docker pull flink@sha256:6dcdd7647777eb2b00a0732e98963c2af1585bf312eb9dca8160065a3bbd2944
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.2 MB (577228289 bytes)**  
+-	Total Size: **577.2 MB (577228805 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d414773dce4f14c369bc641f2c1b1f220a85ee9f2b81db5d4a3745479246da0`
+-	Image ID: `sha256:b461cf0e3b2e68565685b73ef05b5402ab40a72eddf55d4c8ddfa2fe8dc95b06`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -1598,9 +1598,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -1646,56 +1646,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7dec3a0496245f97ea44253975fcc9f06cbf89ccc34d1fbc16c690a3cef9b1f`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 4.4 MB (4416728 bytes)  
+	-	`sha256:4430d5c4f6654fe59c22b5ee4eb5883af02963de43a36ff9e34579af2f43a055`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 4.4 MB (4416809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2802b0369c5e83f9d956a64f20d4345b60baab94773cbf3fd90e9443cfa87f9f`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:56fc2b3b0447213ff66e38c30a3945aa7a75a58caa8bb82bb9a1064e32b94f59`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d247a71c5f307b8760e9c9d52704a06f2f25aa7325bdbb2d9b88c0ae09d0fff6`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 4.6 KB (4591 bytes)  
+	-	`sha256:ea4884c7d8b33451b52d3c2980bf9b5d2a5297e3c9c963e9eba024938ff2d8c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa08788f1105ddb1108764ed9b4cad5e9bdc16de12a08a671d8708ae65214216`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:6750350f5979141e4006dfe8c3f9168032101e687886e1228f3a2d56479844df`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e95b6be062561ffb8400879ea0a1306df7ac10a899914a32fd7501a0dd262ca`  
-		Last Modified: Sat, 17 Aug 2024 02:02:04 GMT  
-		Size: 481.4 MB (481392215 bytes)  
+	-	`sha256:7572744eecfa392128f1fc0c4dc5d518b895bc7926b398df6e585ac391cceecc`  
+		Last Modified: Fri, 23 Aug 2024 20:06:46 GMT  
+		Size: 481.4 MB (481392403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a85fde9a57374bedaf50fc2a83822939c14e3bdd1985c818bac930b4e9149293`  
-		Last Modified: Sat, 17 Aug 2024 02:00:50 GMT  
-		Size: 2.1 KB (2110 bytes)  
+	-	`sha256:0f4cec42df9159a3cff18c7ebd70b5f0326efc406b8aeca8feae708ae8f22b81`  
+		Last Modified: Fri, 23 Aug 2024 20:06:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18-scala_2.12-java11` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:2fda1fd796f1f897f45589012432f6c23e954be9e8bbe0a206ff1629da1afdf9
+$ docker pull flink@sha256:b7c5ede2f4ac648100ba19a04e756f6abadf9b999c9994fa4a06548d2e3bee91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3756822 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c15d74d7b4a05521be8e86f4b3c160ec7daf47626b49ba80678f89aac56d271`
+-	Image ID: `sha256:135103994f51225256150a218a88ae31c4dfe81782d96b58b324f5274665cd4f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:232a35428d89ff014de426a466a9a039b8affff2950514bbc7716af283de3d01`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:a8d37c1a0b03f6ae758b7f50f4e69390ff2319d8ed7c2b12de079fd820ba0eec`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 3.7 MB (3726824 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5ddeddb187e25dcb97137f84be1e33761b9de98033eebc3bd0103f1be4e81824`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:fc747d8607d79b44b4e96601d8926c73cb6bbe9fea67b14efdd5c7315244e6df`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 30.0 KB (29998 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1844,7 +1844,7 @@ $ docker pull flink@sha256:9231cc7f9f12e54195c04283af9f0d66352c448a5f485c7cd98dc
 ## `flink:1.18-scala_2.12-java17`
 
 ```console
-$ docker pull flink@sha256:8f2c5fce123919a22c430c3e0c51dc414db31ab315afe7edb0d27496f3ef9c01
+$ docker pull flink@sha256:85561bdd1abf1a7e14ba85395c9ad1eddc048d6c6345f1b0519f738a47ed20d9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1857,13 +1857,13 @@ $ docker pull flink@sha256:8f2c5fce123919a22c430c3e0c51dc414db31ab315afe7edb0d27
 ### `flink:1.18-scala_2.12-java17` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:26be302895565fdbd05e077c19fc96d7619135b61d1762e429b30a6b9aa4e0d6
+$ docker pull flink@sha256:c427f966ab8687ce69dc83b0250b9f7a3084d0aed429a63a94501b10dbe45fb9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.3 MB (577310236 bytes)**  
+-	Total Size: **577.3 MB (577310581 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af0dab0ac1100e589f81af5ecaa856fa4d2f93db07174a3d005e5d7faf56c7a2`
+-	Image ID: `sha256:ec4a6c74e4bd84ee1d8d3f31af5eff81e77218c949a5da1a4988a1c1f9e42ccf`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -1895,9 +1895,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -1943,69 +1943,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd24317609f1b5444d777c0434ab11020010745e5fa797d14158b433e7d085e`  
-		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:5161e45ecd8d096f978edcb483c5ed70580526e02a1f8155653ca1c6c192f097`  
+		Last Modified: Fri, 23 Aug 2024 19:27:49 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36ae612a02e1bf99e08c7d45babfc7571d5b21782351cc1bf7c5a154bba0b881`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
-		Size: 4.4 MB (4416784 bytes)  
+	-	`sha256:19d8e3f70899f152b8a2d330be533ff41489ab40822fcdc0543e33d3e0bdbfbf`  
+		Last Modified: Fri, 23 Aug 2024 20:08:01 GMT  
+		Size: 4.4 MB (4416769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2bdec5bc8bcc79fc4c2213553584d59ff0e1161eb8865698571de60c9f679b9`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:a6516d530c8c3c5e4abd8393edb7f3ff0e7c4a826f53d48933dbe848fac89a69`  
+		Last Modified: Fri, 23 Aug 2024 20:08:01 GMT  
+		Size: 900.5 KB (900496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9568fa987786bdc806485f8bc28dd8ab9e411c3008317c088ed72e0ea9c2f794`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
-		Size: 4.6 KB (4590 bytes)  
+	-	`sha256:f74280f41aad6a727774acab4795704b32e28405a44c8512fe581bed81ca4d9a`  
+		Last Modified: Fri, 23 Aug 2024 20:08:00 GMT  
+		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e580cc18dd3af980c26249847e69d5123bc8bf2c84877a053a65ff3e47b9814`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
+	-	`sha256:70407ec037fd53ffd275d3d9e8288d8f1586b87c75e31e0b072a205888fc79bd`  
+		Last Modified: Fri, 23 Aug 2024 20:08:01 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79b016bb6c22e7a738756201aa047263977884b9b09e0dd763d65fd0e2fc1345`  
-		Last Modified: Sat, 17 Aug 2024 02:00:58 GMT  
-		Size: 481.4 MB (481392315 bytes)  
+	-	`sha256:e9487bd72caabd8c053b2f35cccd4616e68cbb51cad5dcea6d4b45577c0d0853`  
+		Last Modified: Fri, 23 Aug 2024 20:08:12 GMT  
+		Size: 481.4 MB (481392428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a85fde9a57374bedaf50fc2a83822939c14e3bdd1985c818bac930b4e9149293`  
-		Last Modified: Sat, 17 Aug 2024 02:00:50 GMT  
-		Size: 2.1 KB (2110 bytes)  
+	-	`sha256:6d9ab3e026b23e22e38cd1e3cd0d170a5b2bee3c59c9de7d020f1335d91bb065`  
+		Last Modified: Fri, 23 Aug 2024 20:08:02 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18-scala_2.12-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:47966ac9b1faeadceb0576bbc9f213135c6c1b4b071dac35705b2fe936294b7b
+$ docker pull flink@sha256:d12f463bfbf43bb126a97978bec6d56dcc2d6341b3386184ad2ab5712f6d7457
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3754382 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96712dae2e444cf914eca77ea4b910993b9bd4a4a72320b26eb953b404f89299`
+-	Image ID: `sha256:efc929f6c6acc1a9cd0b33c9f24758a2e9d8fc2e2391c666b8b17181f196effd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3f16828304ee28bbddd1513702ca4a7bb68230d1379b42f068be2449cd2b0128`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
+	-	`sha256:ca0c69918225d0b4a3a416fdc686c07278b691ba8243c78a53803350bf39afe3`  
+		Last Modified: Fri, 23 Aug 2024 20:08:01 GMT  
 		Size: 3.7 MB (3725604 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f2b66903bf9d1ab6dc5feb39c8df3662ba373c6a428debb313ed84602a1caea9`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
+	-	`sha256:af662f53947662d8c7da79f132d88da6d7208218f364e508f1dbf96c518c2ab7`  
+		Last Modified: Fri, 23 Aug 2024 20:08:00 GMT  
 		Size: 28.8 KB (28778 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.18-scala_2.12-java17` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:e0699c3e49e5aa75fcb05407b681ea5ad86d565085fbc8894aee3f00280b56d1
+$ docker pull flink@sha256:5562c21171bd1b9e02b2d233a6df2a5788eb99696b575692616a55210518ac97
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **574.5 MB (574458742 bytes)**  
+-	Total Size: **574.5 MB (574459034 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:29d4187d47068a708cfa8dff765dd5fe96d7a91a79a133d7d891b6ccd79ab074`
+-	Image ID: `sha256:c58e9fab0e03d533e1f71c1f2dcf5ab8c562282cad2e1d9a3f6c835a978a3b68`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -2037,9 +2037,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -2085,63 +2085,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:560407f77d279e68f72a6b12199439583872a1ea3f7441297485cd75f35c2820`  
-		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
-		Size: 1.9 KB (1867 bytes)  
+	-	`sha256:7525b10c4bd14139ded90d85ae282e53b2795402b1d01d327856dc57969f13e3`  
+		Last Modified: Fri, 23 Aug 2024 19:45:19 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ad449889b73484896ec212c8670510e4161d8083aa5ad002579b20df8504b78`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 4.3 MB (4265352 bytes)  
+	-	`sha256:b9f3272af01e149559a1d95590e2b0630a4501876558133e754ec3266f0f1377`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 4.3 MB (4265489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ca919b123f67c1b860be035235046bd79c58881886fd0d56ee2e52996b0b2ef`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 835.4 KB (835384 bytes)  
+	-	`sha256:c87f04576eb489737d425f233e0419d858cc5befc99a55366af6526106664e3a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e60394085bf17ddcd687577174c22b0e3c7f759fe451192576587479cb5688ed`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
-		Size: 4.6 KB (4632 bytes)  
+	-	`sha256:158086bb3241bb0ca922793682a9c395c7da3d34cb5318907e736de70f5d65f3`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
+		Size: 4.6 KB (4630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d7eb6c8c5988c288ebbc5d3db43ebc479789a982295108c19735fd40003c21d`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
+	-	`sha256:9dd0dc76ce70c3d51e1ce36025ca348c68c213ac04aebdb815ee046ae3deacea`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e0d85a3fdbff9424c1049f077572fa5ff0aad732fc2da2029dc32f019eb91968`  
-		Last Modified: Sat, 17 Aug 2024 07:00:03 GMT  
-		Size: 481.4 MB (481392421 bytes)  
+	-	`sha256:56f642d18d9d25c532d82d4a99bca9f7e89da7e0f198d351fbc6cacdf40a1786`  
+		Last Modified: Fri, 23 Aug 2024 22:24:07 GMT  
+		Size: 481.4 MB (481392339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95f1b556e5df1d79e84e1bf946f3d674b1d357373bad280a4a0b7730f205038e`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
+	-	`sha256:d87cd8d3acdb1a562fd45b5473c388c8033c04834e495cbe0522b594358131ed`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
 		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18-scala_2.12-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:edc0c0b339e49397e19e994ce06f77ee00a9de70fa5e7dc9062ee61d417477a5
+$ docker pull flink@sha256:513e2c9d770646e5e96bd892d53f88ee7c14224cd992de73167e486d9ddbb73d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3755001 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef9906ec09b2ccb085b1105620195cf566352be1505a10662c39bcfa21b96045`
+-	Image ID: `sha256:22728aecf714e43c50e3e664b6a95a1e70a0513034fda1a39a267ae84951a83b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c7cc7c0e47e274c8a29c71b245cf7112159c4d51a194262c5e3349a8e4ad1834`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
+	-	`sha256:061e21565c56fdc41fcdcc1407c3337fa30ea89bc50442466508f93a302733a1`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
 		Size: 3.7 MB (3725906 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ef7e269558b15c19aa1bcd04009d5d74426197dca0e9a5bc5a09a73350d80f73`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
+	-	`sha256:7ada5bb8372db654910c2325138803d2be3b345cd924c6ebf0a407f45300298c`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
 		Size: 29.1 KB (29095 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.18-scala_2.12-java8`
 
 ```console
-$ docker pull flink@sha256:27d832d2468bd2eabb9068a5f095f747b583abd4a6928871d4d3c50bdfd5fc6d
+$ docker pull flink@sha256:376d4bc04a2863b4323850920971c97d8242533bd289822797c649b1fd8a333c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2154,13 +2154,13 @@ $ docker pull flink@sha256:27d832d2468bd2eabb9068a5f095f747b583abd4a6928871d4d3c
 ### `flink:1.18-scala_2.12-java8` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:2888d1796c58ca441e232e39036de8d67172792ad7aadea1e14fb102a30c4549
+$ docker pull flink@sha256:9bc03be664f8595fb74cde70b9851ab1959e0dcdc28db6dcac84687cd7526495
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **571.9 MB (571914711 bytes)**  
+-	Total Size: **571.9 MB (571914888 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccdf047c78f01babbde6a982f97a0f0bf58e106d18d8c86849028251165d525b`
+-	Image ID: `sha256:288162cd5fa3d49c3677c71603d662b7512427b28e79b954235a95ab09f0ff8e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -2192,9 +2192,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -2240,69 +2240,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63f0966d15e28d4f9d2446b285da398fbbc46c4fdd3e46d16dd24c27e54a7968`  
-		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:549fdae8215d87f93f320e0b858daecaf8ec8ca17d44c21986c5a17d9f682905`  
+		Last Modified: Fri, 23 Aug 2024 19:25:15 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f46465b11126c9283f2318ec010771ec7a3b951176c41dc4238d9d6a16db790`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
-		Size: 4.4 MB (4416725 bytes)  
+	-	`sha256:d28a700f55f29246df646e1087da1818f473f8d33ee71f0b87761f725da0c4bc`  
+		Last Modified: Fri, 23 Aug 2024 20:08:04 GMT  
+		Size: 4.4 MB (4416789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:868a72a488a2360e3b11dc3ae66109e99c043bc002fd5b70b88dd2d31b71b6cc`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:6307af0b1a544d9315377b12a920e021b3583b8c3a1886404f2a8bc16ffcaf77`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98595db57e98cd466cae34148b7e7ae7e578201425da5f8d1eecf5afdd9e6fd5`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
-		Size: 4.6 KB (4593 bytes)  
+	-	`sha256:edcdf3c270d42af4ccbb596ca093a97eeab316c34b02acddd21492d9e56e772e`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
+		Size: 4.6 KB (4591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7084fd3113570c5e1c65fc5d19413f2c118737d7dec2bcf1808c0174280d6c58`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
+	-	`sha256:f322e8387874c0fd2ae5bc461a3115620802b181815a9f6be70c623e52d462cc`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b823f8a137dec677151a674aafd620c81920e617768082cbe85e87d420822818`  
-		Last Modified: Sat, 17 Aug 2024 02:03:59 GMT  
-		Size: 481.4 MB (481392562 bytes)  
+	-	`sha256:079034c0001cccdaa3716e4e3e3cc3070e65fa50f989034b361f532c69a7d344`  
+		Last Modified: Fri, 23 Aug 2024 20:08:15 GMT  
+		Size: 481.4 MB (481392431 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28e49a7857495dd922d4560f55e80e81dffa0f698fc96ccee6469d28cce4d52c`  
-		Last Modified: Sat, 17 Aug 2024 02:03:52 GMT  
-		Size: 2.1 KB (2110 bytes)  
+	-	`sha256:0f4cec42df9159a3cff18c7ebd70b5f0326efc406b8aeca8feae708ae8f22b81`  
+		Last Modified: Fri, 23 Aug 2024 20:06:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18-scala_2.12-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:0797bb616b24c5cf5505edbdb7bd0e780230b38e397418535f4292002c6d8fed
+$ docker pull flink@sha256:8f8ebbe51a1fb3842b13cd411bba34fc69215ea873f5bb4cc1655960e7e9e18d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3774763 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:511c7cf878817d66dd8fba30fe165b0a8f1fcd911f3a304142c0063922ac80ad`
+-	Image ID: `sha256:fa3023b133052b7033b023aae86cfd945f8571c63c8e848409bd90ff1de775be`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c9d8252b965f4f51cfbce653a91188e681579f97ba31c9ff2c4646f0ccea3ca6`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
+	-	`sha256:d26a6b4c49714343f13103fb25cd3a80eee1aed9f7945aff333aa3f3fac76013`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
 		Size: 3.7 MB (3746004 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2dd76090c75c600674e483a360356f9e3df68579370e7e928eda334754ce71a0`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
+	-	`sha256:2607f493b39fa0e5848ba9282fb0482c9075abdedba11d7e7a3b273fcc4aeefe`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
 		Size: 28.8 KB (28759 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.18-scala_2.12-java8` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:0bd620614aa9fb07ed05af0be39b0f592cfa261e1506275a9265294a0f8fe6cd
+$ docker pull flink@sha256:09d87539e58c21b5d926a691b42f4dd4ab1c34040712d750712e501ee943d972
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **568.6 MB (568569402 bytes)**  
+-	Total Size: **568.6 MB (568569741 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8af1112253a91a4343528121330369edbb919e4447629c396c37e247b1439827`
+-	Image ID: `sha256:8ed1553072656b26dee37a882eeac2275f87ab84c6b7893d1185fc9f026deb32`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -2334,9 +2334,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -2382,63 +2382,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b3a4248864654ce3e18048693bd49d77e323e35ce5e94fddc9a726a2faaeeb`  
-		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:db7acc9dfbf237a216b04a6b690009ad96051dd54ed79368fbd1e8306fbe4f05`  
+		Last Modified: Fri, 23 Aug 2024 19:43:12 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:810c5e271b495dd2f643060afb28946fb0c049eaed8479525f89c85fe41e8758`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 4.3 MB (4265413 bytes)  
+	-	`sha256:bcd5931f222e62a2780a370c553ddb4fc0e5ba856d0c4d1949908b6dd82987a9`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 4.3 MB (4265514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0018f9f96b94973046f70a5954b494f43d8753b53869d54a0df33933c063b3e9`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 835.4 KB (835383 bytes)  
+	-	`sha256:52a74542e3f8d53bdef5981075a820ad1cbd1065a63f8361ca7ab8f3e257d575`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99cb29992e45b7a34ac5e8b0e0339c519798d5c808901b16f09a7a67b1f4f5c2`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
-		Size: 4.6 KB (4629 bytes)  
+	-	`sha256:d36b7fb89958f36a1c2362201b077684fda1a6d1f04589ac0f1fc75a831e0885`  
+		Last Modified: Fri, 23 Aug 2024 22:22:24 GMT  
+		Size: 4.6 KB (4631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08885d8439729628e5325d5acefa1f035db0c1b04670ee89834be54a8ca316f6`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
+	-	`sha256:e00bcf9001f99cc7a47da971efb3dd2bc8c972ac09ae6a984a43eefa7d984043`  
+		Last Modified: Fri, 23 Aug 2024 22:22:24 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e00be838c66d0adec266aeae9e8e686da53d1513c873055e0743995a5575e689`  
-		Last Modified: Sat, 17 Aug 2024 06:58:24 GMT  
-		Size: 481.4 MB (481392521 bytes)  
+	-	`sha256:adf35189fc1fb92eb26a836302c1653b99144e64836d843b62804e099a1bb6c6`  
+		Last Modified: Fri, 23 Aug 2024 22:22:34 GMT  
+		Size: 481.4 MB (481392516 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:117471add07a06d48155a264993a45a63dc3880e87ea0b7c405a6e3284fbbd1b`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
+	-	`sha256:62ada84f5c683b93c9a06bcb4159957d3448c11def010d5c40c60052dc0a7780`  
+		Last Modified: Fri, 23 Aug 2024 22:22:24 GMT  
 		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18-scala_2.12-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:04b2e50095aec5e24bd2465758e8d885edb1cb3d7888d5414a54fa430bf17349
+$ docker pull flink@sha256:0f52e1a7bf7235de3d398ba9dfe7fdd5d89b79936dd2877202c6e2dd3bdaa6e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3775381 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86a33c22a39b73ec3cda4580aaab2c8fc456ca9d5c695cc3900d5c2a83270d7f`
+-	Image ID: `sha256:6fd8d1e4a7d4728b67538c4cb0a5274edd6b34b5ad074964e1d8f5d6050078ae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a0c76517e0cb512adb348133a59ae67a4e582fd17a7e62e9595a40c88453df0b`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
+	-	`sha256:8495bdeb319dfeb27ffa9dc6fd5eff5e0cc39264418b0bea09e5d0807f2490e4`  
+		Last Modified: Fri, 23 Aug 2024 22:22:24 GMT  
 		Size: 3.7 MB (3746306 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0c789cfb743585f31be616557f3cffb588574549c16062fac46dcea6bf3a2d94`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
+	-	`sha256:c99915302a6fbdc4646fe2e266ec8bcb764800d18cfd30439ae5c7b3087429c5`  
+		Last Modified: Fri, 23 Aug 2024 22:22:23 GMT  
 		Size: 29.1 KB (29075 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.18.1`
 
 ```console
-$ docker pull flink@sha256:1fd9fe4454d715a737fa8297362cf3e0e27224539de10aa47d14aa66630b69cd
+$ docker pull flink@sha256:ae287700350f75a6123ab680fd95fe94d808484f016dd96f01cbca033665992c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2451,13 +2451,13 @@ $ docker pull flink@sha256:1fd9fe4454d715a737fa8297362cf3e0e27224539de10aa47d14a
 ### `flink:1.18.1` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:907a2a4d02ae3c2beb2a73fa367e60478051484304425be2da219e70cda1c885
+$ docker pull flink@sha256:6dcdd7647777eb2b00a0732e98963c2af1585bf312eb9dca8160065a3bbd2944
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.2 MB (577228289 bytes)**  
+-	Total Size: **577.2 MB (577228805 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d414773dce4f14c369bc641f2c1b1f220a85ee9f2b81db5d4a3745479246da0`
+-	Image ID: `sha256:b461cf0e3b2e68565685b73ef05b5402ab40a72eddf55d4c8ddfa2fe8dc95b06`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -2489,9 +2489,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -2537,56 +2537,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7dec3a0496245f97ea44253975fcc9f06cbf89ccc34d1fbc16c690a3cef9b1f`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 4.4 MB (4416728 bytes)  
+	-	`sha256:4430d5c4f6654fe59c22b5ee4eb5883af02963de43a36ff9e34579af2f43a055`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 4.4 MB (4416809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2802b0369c5e83f9d956a64f20d4345b60baab94773cbf3fd90e9443cfa87f9f`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:56fc2b3b0447213ff66e38c30a3945aa7a75a58caa8bb82bb9a1064e32b94f59`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d247a71c5f307b8760e9c9d52704a06f2f25aa7325bdbb2d9b88c0ae09d0fff6`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 4.6 KB (4591 bytes)  
+	-	`sha256:ea4884c7d8b33451b52d3c2980bf9b5d2a5297e3c9c963e9eba024938ff2d8c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa08788f1105ddb1108764ed9b4cad5e9bdc16de12a08a671d8708ae65214216`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:6750350f5979141e4006dfe8c3f9168032101e687886e1228f3a2d56479844df`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e95b6be062561ffb8400879ea0a1306df7ac10a899914a32fd7501a0dd262ca`  
-		Last Modified: Sat, 17 Aug 2024 02:02:04 GMT  
-		Size: 481.4 MB (481392215 bytes)  
+	-	`sha256:7572744eecfa392128f1fc0c4dc5d518b895bc7926b398df6e585ac391cceecc`  
+		Last Modified: Fri, 23 Aug 2024 20:06:46 GMT  
+		Size: 481.4 MB (481392403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a85fde9a57374bedaf50fc2a83822939c14e3bdd1985c818bac930b4e9149293`  
-		Last Modified: Sat, 17 Aug 2024 02:00:50 GMT  
-		Size: 2.1 KB (2110 bytes)  
+	-	`sha256:0f4cec42df9159a3cff18c7ebd70b5f0326efc406b8aeca8feae708ae8f22b81`  
+		Last Modified: Fri, 23 Aug 2024 20:06:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18.1` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:2fda1fd796f1f897f45589012432f6c23e954be9e8bbe0a206ff1629da1afdf9
+$ docker pull flink@sha256:b7c5ede2f4ac648100ba19a04e756f6abadf9b999c9994fa4a06548d2e3bee91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3756822 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c15d74d7b4a05521be8e86f4b3c160ec7daf47626b49ba80678f89aac56d271`
+-	Image ID: `sha256:135103994f51225256150a218a88ae31c4dfe81782d96b58b324f5274665cd4f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:232a35428d89ff014de426a466a9a039b8affff2950514bbc7716af283de3d01`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:a8d37c1a0b03f6ae758b7f50f4e69390ff2319d8ed7c2b12de079fd820ba0eec`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 3.7 MB (3726824 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5ddeddb187e25dcb97137f84be1e33761b9de98033eebc3bd0103f1be4e81824`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:fc747d8607d79b44b4e96601d8926c73cb6bbe9fea67b14efdd5c7315244e6df`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 30.0 KB (29998 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2735,7 +2735,7 @@ $ docker pull flink@sha256:9231cc7f9f12e54195c04283af9f0d66352c448a5f485c7cd98dc
 ## `flink:1.18.1-java11`
 
 ```console
-$ docker pull flink@sha256:1fd9fe4454d715a737fa8297362cf3e0e27224539de10aa47d14aa66630b69cd
+$ docker pull flink@sha256:ae287700350f75a6123ab680fd95fe94d808484f016dd96f01cbca033665992c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2748,13 +2748,13 @@ $ docker pull flink@sha256:1fd9fe4454d715a737fa8297362cf3e0e27224539de10aa47d14a
 ### `flink:1.18.1-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:907a2a4d02ae3c2beb2a73fa367e60478051484304425be2da219e70cda1c885
+$ docker pull flink@sha256:6dcdd7647777eb2b00a0732e98963c2af1585bf312eb9dca8160065a3bbd2944
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.2 MB (577228289 bytes)**  
+-	Total Size: **577.2 MB (577228805 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d414773dce4f14c369bc641f2c1b1f220a85ee9f2b81db5d4a3745479246da0`
+-	Image ID: `sha256:b461cf0e3b2e68565685b73ef05b5402ab40a72eddf55d4c8ddfa2fe8dc95b06`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -2786,9 +2786,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -2834,56 +2834,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7dec3a0496245f97ea44253975fcc9f06cbf89ccc34d1fbc16c690a3cef9b1f`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 4.4 MB (4416728 bytes)  
+	-	`sha256:4430d5c4f6654fe59c22b5ee4eb5883af02963de43a36ff9e34579af2f43a055`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 4.4 MB (4416809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2802b0369c5e83f9d956a64f20d4345b60baab94773cbf3fd90e9443cfa87f9f`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:56fc2b3b0447213ff66e38c30a3945aa7a75a58caa8bb82bb9a1064e32b94f59`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d247a71c5f307b8760e9c9d52704a06f2f25aa7325bdbb2d9b88c0ae09d0fff6`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 4.6 KB (4591 bytes)  
+	-	`sha256:ea4884c7d8b33451b52d3c2980bf9b5d2a5297e3c9c963e9eba024938ff2d8c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa08788f1105ddb1108764ed9b4cad5e9bdc16de12a08a671d8708ae65214216`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:6750350f5979141e4006dfe8c3f9168032101e687886e1228f3a2d56479844df`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e95b6be062561ffb8400879ea0a1306df7ac10a899914a32fd7501a0dd262ca`  
-		Last Modified: Sat, 17 Aug 2024 02:02:04 GMT  
-		Size: 481.4 MB (481392215 bytes)  
+	-	`sha256:7572744eecfa392128f1fc0c4dc5d518b895bc7926b398df6e585ac391cceecc`  
+		Last Modified: Fri, 23 Aug 2024 20:06:46 GMT  
+		Size: 481.4 MB (481392403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a85fde9a57374bedaf50fc2a83822939c14e3bdd1985c818bac930b4e9149293`  
-		Last Modified: Sat, 17 Aug 2024 02:00:50 GMT  
-		Size: 2.1 KB (2110 bytes)  
+	-	`sha256:0f4cec42df9159a3cff18c7ebd70b5f0326efc406b8aeca8feae708ae8f22b81`  
+		Last Modified: Fri, 23 Aug 2024 20:06:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18.1-java11` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:2fda1fd796f1f897f45589012432f6c23e954be9e8bbe0a206ff1629da1afdf9
+$ docker pull flink@sha256:b7c5ede2f4ac648100ba19a04e756f6abadf9b999c9994fa4a06548d2e3bee91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3756822 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c15d74d7b4a05521be8e86f4b3c160ec7daf47626b49ba80678f89aac56d271`
+-	Image ID: `sha256:135103994f51225256150a218a88ae31c4dfe81782d96b58b324f5274665cd4f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:232a35428d89ff014de426a466a9a039b8affff2950514bbc7716af283de3d01`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:a8d37c1a0b03f6ae758b7f50f4e69390ff2319d8ed7c2b12de079fd820ba0eec`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 3.7 MB (3726824 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5ddeddb187e25dcb97137f84be1e33761b9de98033eebc3bd0103f1be4e81824`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:fc747d8607d79b44b4e96601d8926c73cb6bbe9fea67b14efdd5c7315244e6df`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 30.0 KB (29998 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3032,7 +3032,7 @@ $ docker pull flink@sha256:9231cc7f9f12e54195c04283af9f0d66352c448a5f485c7cd98dc
 ## `flink:1.18.1-java17`
 
 ```console
-$ docker pull flink@sha256:8f2c5fce123919a22c430c3e0c51dc414db31ab315afe7edb0d27496f3ef9c01
+$ docker pull flink@sha256:85561bdd1abf1a7e14ba85395c9ad1eddc048d6c6345f1b0519f738a47ed20d9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3045,13 +3045,13 @@ $ docker pull flink@sha256:8f2c5fce123919a22c430c3e0c51dc414db31ab315afe7edb0d27
 ### `flink:1.18.1-java17` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:26be302895565fdbd05e077c19fc96d7619135b61d1762e429b30a6b9aa4e0d6
+$ docker pull flink@sha256:c427f966ab8687ce69dc83b0250b9f7a3084d0aed429a63a94501b10dbe45fb9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.3 MB (577310236 bytes)**  
+-	Total Size: **577.3 MB (577310581 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af0dab0ac1100e589f81af5ecaa856fa4d2f93db07174a3d005e5d7faf56c7a2`
+-	Image ID: `sha256:ec4a6c74e4bd84ee1d8d3f31af5eff81e77218c949a5da1a4988a1c1f9e42ccf`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -3083,9 +3083,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -3131,69 +3131,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd24317609f1b5444d777c0434ab11020010745e5fa797d14158b433e7d085e`  
-		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:5161e45ecd8d096f978edcb483c5ed70580526e02a1f8155653ca1c6c192f097`  
+		Last Modified: Fri, 23 Aug 2024 19:27:49 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36ae612a02e1bf99e08c7d45babfc7571d5b21782351cc1bf7c5a154bba0b881`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
-		Size: 4.4 MB (4416784 bytes)  
+	-	`sha256:19d8e3f70899f152b8a2d330be533ff41489ab40822fcdc0543e33d3e0bdbfbf`  
+		Last Modified: Fri, 23 Aug 2024 20:08:01 GMT  
+		Size: 4.4 MB (4416769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2bdec5bc8bcc79fc4c2213553584d59ff0e1161eb8865698571de60c9f679b9`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:a6516d530c8c3c5e4abd8393edb7f3ff0e7c4a826f53d48933dbe848fac89a69`  
+		Last Modified: Fri, 23 Aug 2024 20:08:01 GMT  
+		Size: 900.5 KB (900496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9568fa987786bdc806485f8bc28dd8ab9e411c3008317c088ed72e0ea9c2f794`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
-		Size: 4.6 KB (4590 bytes)  
+	-	`sha256:f74280f41aad6a727774acab4795704b32e28405a44c8512fe581bed81ca4d9a`  
+		Last Modified: Fri, 23 Aug 2024 20:08:00 GMT  
+		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e580cc18dd3af980c26249847e69d5123bc8bf2c84877a053a65ff3e47b9814`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
+	-	`sha256:70407ec037fd53ffd275d3d9e8288d8f1586b87c75e31e0b072a205888fc79bd`  
+		Last Modified: Fri, 23 Aug 2024 20:08:01 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79b016bb6c22e7a738756201aa047263977884b9b09e0dd763d65fd0e2fc1345`  
-		Last Modified: Sat, 17 Aug 2024 02:00:58 GMT  
-		Size: 481.4 MB (481392315 bytes)  
+	-	`sha256:e9487bd72caabd8c053b2f35cccd4616e68cbb51cad5dcea6d4b45577c0d0853`  
+		Last Modified: Fri, 23 Aug 2024 20:08:12 GMT  
+		Size: 481.4 MB (481392428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a85fde9a57374bedaf50fc2a83822939c14e3bdd1985c818bac930b4e9149293`  
-		Last Modified: Sat, 17 Aug 2024 02:00:50 GMT  
-		Size: 2.1 KB (2110 bytes)  
+	-	`sha256:6d9ab3e026b23e22e38cd1e3cd0d170a5b2bee3c59c9de7d020f1335d91bb065`  
+		Last Modified: Fri, 23 Aug 2024 20:08:02 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18.1-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:47966ac9b1faeadceb0576bbc9f213135c6c1b4b071dac35705b2fe936294b7b
+$ docker pull flink@sha256:d12f463bfbf43bb126a97978bec6d56dcc2d6341b3386184ad2ab5712f6d7457
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3754382 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96712dae2e444cf914eca77ea4b910993b9bd4a4a72320b26eb953b404f89299`
+-	Image ID: `sha256:efc929f6c6acc1a9cd0b33c9f24758a2e9d8fc2e2391c666b8b17181f196effd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3f16828304ee28bbddd1513702ca4a7bb68230d1379b42f068be2449cd2b0128`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
+	-	`sha256:ca0c69918225d0b4a3a416fdc686c07278b691ba8243c78a53803350bf39afe3`  
+		Last Modified: Fri, 23 Aug 2024 20:08:01 GMT  
 		Size: 3.7 MB (3725604 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f2b66903bf9d1ab6dc5feb39c8df3662ba373c6a428debb313ed84602a1caea9`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
+	-	`sha256:af662f53947662d8c7da79f132d88da6d7208218f364e508f1dbf96c518c2ab7`  
+		Last Modified: Fri, 23 Aug 2024 20:08:00 GMT  
 		Size: 28.8 KB (28778 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.18.1-java17` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:e0699c3e49e5aa75fcb05407b681ea5ad86d565085fbc8894aee3f00280b56d1
+$ docker pull flink@sha256:5562c21171bd1b9e02b2d233a6df2a5788eb99696b575692616a55210518ac97
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **574.5 MB (574458742 bytes)**  
+-	Total Size: **574.5 MB (574459034 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:29d4187d47068a708cfa8dff765dd5fe96d7a91a79a133d7d891b6ccd79ab074`
+-	Image ID: `sha256:c58e9fab0e03d533e1f71c1f2dcf5ab8c562282cad2e1d9a3f6c835a978a3b68`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -3225,9 +3225,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -3273,63 +3273,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:560407f77d279e68f72a6b12199439583872a1ea3f7441297485cd75f35c2820`  
-		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
-		Size: 1.9 KB (1867 bytes)  
+	-	`sha256:7525b10c4bd14139ded90d85ae282e53b2795402b1d01d327856dc57969f13e3`  
+		Last Modified: Fri, 23 Aug 2024 19:45:19 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ad449889b73484896ec212c8670510e4161d8083aa5ad002579b20df8504b78`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 4.3 MB (4265352 bytes)  
+	-	`sha256:b9f3272af01e149559a1d95590e2b0630a4501876558133e754ec3266f0f1377`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 4.3 MB (4265489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ca919b123f67c1b860be035235046bd79c58881886fd0d56ee2e52996b0b2ef`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 835.4 KB (835384 bytes)  
+	-	`sha256:c87f04576eb489737d425f233e0419d858cc5befc99a55366af6526106664e3a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e60394085bf17ddcd687577174c22b0e3c7f759fe451192576587479cb5688ed`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
-		Size: 4.6 KB (4632 bytes)  
+	-	`sha256:158086bb3241bb0ca922793682a9c395c7da3d34cb5318907e736de70f5d65f3`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
+		Size: 4.6 KB (4630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d7eb6c8c5988c288ebbc5d3db43ebc479789a982295108c19735fd40003c21d`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
+	-	`sha256:9dd0dc76ce70c3d51e1ce36025ca348c68c213ac04aebdb815ee046ae3deacea`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e0d85a3fdbff9424c1049f077572fa5ff0aad732fc2da2029dc32f019eb91968`  
-		Last Modified: Sat, 17 Aug 2024 07:00:03 GMT  
-		Size: 481.4 MB (481392421 bytes)  
+	-	`sha256:56f642d18d9d25c532d82d4a99bca9f7e89da7e0f198d351fbc6cacdf40a1786`  
+		Last Modified: Fri, 23 Aug 2024 22:24:07 GMT  
+		Size: 481.4 MB (481392339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95f1b556e5df1d79e84e1bf946f3d674b1d357373bad280a4a0b7730f205038e`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
+	-	`sha256:d87cd8d3acdb1a562fd45b5473c388c8033c04834e495cbe0522b594358131ed`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
 		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18.1-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:edc0c0b339e49397e19e994ce06f77ee00a9de70fa5e7dc9062ee61d417477a5
+$ docker pull flink@sha256:513e2c9d770646e5e96bd892d53f88ee7c14224cd992de73167e486d9ddbb73d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3755001 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef9906ec09b2ccb085b1105620195cf566352be1505a10662c39bcfa21b96045`
+-	Image ID: `sha256:22728aecf714e43c50e3e664b6a95a1e70a0513034fda1a39a267ae84951a83b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c7cc7c0e47e274c8a29c71b245cf7112159c4d51a194262c5e3349a8e4ad1834`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
+	-	`sha256:061e21565c56fdc41fcdcc1407c3337fa30ea89bc50442466508f93a302733a1`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
 		Size: 3.7 MB (3725906 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ef7e269558b15c19aa1bcd04009d5d74426197dca0e9a5bc5a09a73350d80f73`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
+	-	`sha256:7ada5bb8372db654910c2325138803d2be3b345cd924c6ebf0a407f45300298c`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
 		Size: 29.1 KB (29095 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.18.1-java8`
 
 ```console
-$ docker pull flink@sha256:27d832d2468bd2eabb9068a5f095f747b583abd4a6928871d4d3c50bdfd5fc6d
+$ docker pull flink@sha256:376d4bc04a2863b4323850920971c97d8242533bd289822797c649b1fd8a333c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3342,13 +3342,13 @@ $ docker pull flink@sha256:27d832d2468bd2eabb9068a5f095f747b583abd4a6928871d4d3c
 ### `flink:1.18.1-java8` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:2888d1796c58ca441e232e39036de8d67172792ad7aadea1e14fb102a30c4549
+$ docker pull flink@sha256:9bc03be664f8595fb74cde70b9851ab1959e0dcdc28db6dcac84687cd7526495
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **571.9 MB (571914711 bytes)**  
+-	Total Size: **571.9 MB (571914888 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccdf047c78f01babbde6a982f97a0f0bf58e106d18d8c86849028251165d525b`
+-	Image ID: `sha256:288162cd5fa3d49c3677c71603d662b7512427b28e79b954235a95ab09f0ff8e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -3380,9 +3380,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -3428,69 +3428,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63f0966d15e28d4f9d2446b285da398fbbc46c4fdd3e46d16dd24c27e54a7968`  
-		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:549fdae8215d87f93f320e0b858daecaf8ec8ca17d44c21986c5a17d9f682905`  
+		Last Modified: Fri, 23 Aug 2024 19:25:15 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f46465b11126c9283f2318ec010771ec7a3b951176c41dc4238d9d6a16db790`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
-		Size: 4.4 MB (4416725 bytes)  
+	-	`sha256:d28a700f55f29246df646e1087da1818f473f8d33ee71f0b87761f725da0c4bc`  
+		Last Modified: Fri, 23 Aug 2024 20:08:04 GMT  
+		Size: 4.4 MB (4416789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:868a72a488a2360e3b11dc3ae66109e99c043bc002fd5b70b88dd2d31b71b6cc`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:6307af0b1a544d9315377b12a920e021b3583b8c3a1886404f2a8bc16ffcaf77`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98595db57e98cd466cae34148b7e7ae7e578201425da5f8d1eecf5afdd9e6fd5`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
-		Size: 4.6 KB (4593 bytes)  
+	-	`sha256:edcdf3c270d42af4ccbb596ca093a97eeab316c34b02acddd21492d9e56e772e`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
+		Size: 4.6 KB (4591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7084fd3113570c5e1c65fc5d19413f2c118737d7dec2bcf1808c0174280d6c58`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
+	-	`sha256:f322e8387874c0fd2ae5bc461a3115620802b181815a9f6be70c623e52d462cc`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b823f8a137dec677151a674aafd620c81920e617768082cbe85e87d420822818`  
-		Last Modified: Sat, 17 Aug 2024 02:03:59 GMT  
-		Size: 481.4 MB (481392562 bytes)  
+	-	`sha256:079034c0001cccdaa3716e4e3e3cc3070e65fa50f989034b361f532c69a7d344`  
+		Last Modified: Fri, 23 Aug 2024 20:08:15 GMT  
+		Size: 481.4 MB (481392431 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28e49a7857495dd922d4560f55e80e81dffa0f698fc96ccee6469d28cce4d52c`  
-		Last Modified: Sat, 17 Aug 2024 02:03:52 GMT  
-		Size: 2.1 KB (2110 bytes)  
+	-	`sha256:0f4cec42df9159a3cff18c7ebd70b5f0326efc406b8aeca8feae708ae8f22b81`  
+		Last Modified: Fri, 23 Aug 2024 20:06:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18.1-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:0797bb616b24c5cf5505edbdb7bd0e780230b38e397418535f4292002c6d8fed
+$ docker pull flink@sha256:8f8ebbe51a1fb3842b13cd411bba34fc69215ea873f5bb4cc1655960e7e9e18d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3774763 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:511c7cf878817d66dd8fba30fe165b0a8f1fcd911f3a304142c0063922ac80ad`
+-	Image ID: `sha256:fa3023b133052b7033b023aae86cfd945f8571c63c8e848409bd90ff1de775be`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c9d8252b965f4f51cfbce653a91188e681579f97ba31c9ff2c4646f0ccea3ca6`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
+	-	`sha256:d26a6b4c49714343f13103fb25cd3a80eee1aed9f7945aff333aa3f3fac76013`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
 		Size: 3.7 MB (3746004 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2dd76090c75c600674e483a360356f9e3df68579370e7e928eda334754ce71a0`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
+	-	`sha256:2607f493b39fa0e5848ba9282fb0482c9075abdedba11d7e7a3b273fcc4aeefe`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
 		Size: 28.8 KB (28759 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.18.1-java8` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:0bd620614aa9fb07ed05af0be39b0f592cfa261e1506275a9265294a0f8fe6cd
+$ docker pull flink@sha256:09d87539e58c21b5d926a691b42f4dd4ab1c34040712d750712e501ee943d972
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **568.6 MB (568569402 bytes)**  
+-	Total Size: **568.6 MB (568569741 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8af1112253a91a4343528121330369edbb919e4447629c396c37e247b1439827`
+-	Image ID: `sha256:8ed1553072656b26dee37a882eeac2275f87ab84c6b7893d1185fc9f026deb32`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -3522,9 +3522,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -3570,63 +3570,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b3a4248864654ce3e18048693bd49d77e323e35ce5e94fddc9a726a2faaeeb`  
-		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:db7acc9dfbf237a216b04a6b690009ad96051dd54ed79368fbd1e8306fbe4f05`  
+		Last Modified: Fri, 23 Aug 2024 19:43:12 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:810c5e271b495dd2f643060afb28946fb0c049eaed8479525f89c85fe41e8758`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 4.3 MB (4265413 bytes)  
+	-	`sha256:bcd5931f222e62a2780a370c553ddb4fc0e5ba856d0c4d1949908b6dd82987a9`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 4.3 MB (4265514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0018f9f96b94973046f70a5954b494f43d8753b53869d54a0df33933c063b3e9`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 835.4 KB (835383 bytes)  
+	-	`sha256:52a74542e3f8d53bdef5981075a820ad1cbd1065a63f8361ca7ab8f3e257d575`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99cb29992e45b7a34ac5e8b0e0339c519798d5c808901b16f09a7a67b1f4f5c2`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
-		Size: 4.6 KB (4629 bytes)  
+	-	`sha256:d36b7fb89958f36a1c2362201b077684fda1a6d1f04589ac0f1fc75a831e0885`  
+		Last Modified: Fri, 23 Aug 2024 22:22:24 GMT  
+		Size: 4.6 KB (4631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08885d8439729628e5325d5acefa1f035db0c1b04670ee89834be54a8ca316f6`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
+	-	`sha256:e00bcf9001f99cc7a47da971efb3dd2bc8c972ac09ae6a984a43eefa7d984043`  
+		Last Modified: Fri, 23 Aug 2024 22:22:24 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e00be838c66d0adec266aeae9e8e686da53d1513c873055e0743995a5575e689`  
-		Last Modified: Sat, 17 Aug 2024 06:58:24 GMT  
-		Size: 481.4 MB (481392521 bytes)  
+	-	`sha256:adf35189fc1fb92eb26a836302c1653b99144e64836d843b62804e099a1bb6c6`  
+		Last Modified: Fri, 23 Aug 2024 22:22:34 GMT  
+		Size: 481.4 MB (481392516 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:117471add07a06d48155a264993a45a63dc3880e87ea0b7c405a6e3284fbbd1b`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
+	-	`sha256:62ada84f5c683b93c9a06bcb4159957d3448c11def010d5c40c60052dc0a7780`  
+		Last Modified: Fri, 23 Aug 2024 22:22:24 GMT  
 		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18.1-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:04b2e50095aec5e24bd2465758e8d885edb1cb3d7888d5414a54fa430bf17349
+$ docker pull flink@sha256:0f52e1a7bf7235de3d398ba9dfe7fdd5d89b79936dd2877202c6e2dd3bdaa6e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3775381 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86a33c22a39b73ec3cda4580aaab2c8fc456ca9d5c695cc3900d5c2a83270d7f`
+-	Image ID: `sha256:6fd8d1e4a7d4728b67538c4cb0a5274edd6b34b5ad074964e1d8f5d6050078ae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a0c76517e0cb512adb348133a59ae67a4e582fd17a7e62e9595a40c88453df0b`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
+	-	`sha256:8495bdeb319dfeb27ffa9dc6fd5eff5e0cc39264418b0bea09e5d0807f2490e4`  
+		Last Modified: Fri, 23 Aug 2024 22:22:24 GMT  
 		Size: 3.7 MB (3746306 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0c789cfb743585f31be616557f3cffb588574549c16062fac46dcea6bf3a2d94`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
+	-	`sha256:c99915302a6fbdc4646fe2e266ec8bcb764800d18cfd30439ae5c7b3087429c5`  
+		Last Modified: Fri, 23 Aug 2024 22:22:23 GMT  
 		Size: 29.1 KB (29075 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.18.1-scala_2.12`
 
 ```console
-$ docker pull flink@sha256:1fd9fe4454d715a737fa8297362cf3e0e27224539de10aa47d14aa66630b69cd
+$ docker pull flink@sha256:ae287700350f75a6123ab680fd95fe94d808484f016dd96f01cbca033665992c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3639,13 +3639,13 @@ $ docker pull flink@sha256:1fd9fe4454d715a737fa8297362cf3e0e27224539de10aa47d14a
 ### `flink:1.18.1-scala_2.12` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:907a2a4d02ae3c2beb2a73fa367e60478051484304425be2da219e70cda1c885
+$ docker pull flink@sha256:6dcdd7647777eb2b00a0732e98963c2af1585bf312eb9dca8160065a3bbd2944
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.2 MB (577228289 bytes)**  
+-	Total Size: **577.2 MB (577228805 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d414773dce4f14c369bc641f2c1b1f220a85ee9f2b81db5d4a3745479246da0`
+-	Image ID: `sha256:b461cf0e3b2e68565685b73ef05b5402ab40a72eddf55d4c8ddfa2fe8dc95b06`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -3677,9 +3677,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -3725,56 +3725,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7dec3a0496245f97ea44253975fcc9f06cbf89ccc34d1fbc16c690a3cef9b1f`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 4.4 MB (4416728 bytes)  
+	-	`sha256:4430d5c4f6654fe59c22b5ee4eb5883af02963de43a36ff9e34579af2f43a055`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 4.4 MB (4416809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2802b0369c5e83f9d956a64f20d4345b60baab94773cbf3fd90e9443cfa87f9f`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:56fc2b3b0447213ff66e38c30a3945aa7a75a58caa8bb82bb9a1064e32b94f59`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d247a71c5f307b8760e9c9d52704a06f2f25aa7325bdbb2d9b88c0ae09d0fff6`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 4.6 KB (4591 bytes)  
+	-	`sha256:ea4884c7d8b33451b52d3c2980bf9b5d2a5297e3c9c963e9eba024938ff2d8c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa08788f1105ddb1108764ed9b4cad5e9bdc16de12a08a671d8708ae65214216`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:6750350f5979141e4006dfe8c3f9168032101e687886e1228f3a2d56479844df`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e95b6be062561ffb8400879ea0a1306df7ac10a899914a32fd7501a0dd262ca`  
-		Last Modified: Sat, 17 Aug 2024 02:02:04 GMT  
-		Size: 481.4 MB (481392215 bytes)  
+	-	`sha256:7572744eecfa392128f1fc0c4dc5d518b895bc7926b398df6e585ac391cceecc`  
+		Last Modified: Fri, 23 Aug 2024 20:06:46 GMT  
+		Size: 481.4 MB (481392403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a85fde9a57374bedaf50fc2a83822939c14e3bdd1985c818bac930b4e9149293`  
-		Last Modified: Sat, 17 Aug 2024 02:00:50 GMT  
-		Size: 2.1 KB (2110 bytes)  
+	-	`sha256:0f4cec42df9159a3cff18c7ebd70b5f0326efc406b8aeca8feae708ae8f22b81`  
+		Last Modified: Fri, 23 Aug 2024 20:06:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18.1-scala_2.12` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:2fda1fd796f1f897f45589012432f6c23e954be9e8bbe0a206ff1629da1afdf9
+$ docker pull flink@sha256:b7c5ede2f4ac648100ba19a04e756f6abadf9b999c9994fa4a06548d2e3bee91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3756822 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c15d74d7b4a05521be8e86f4b3c160ec7daf47626b49ba80678f89aac56d271`
+-	Image ID: `sha256:135103994f51225256150a218a88ae31c4dfe81782d96b58b324f5274665cd4f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:232a35428d89ff014de426a466a9a039b8affff2950514bbc7716af283de3d01`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:a8d37c1a0b03f6ae758b7f50f4e69390ff2319d8ed7c2b12de079fd820ba0eec`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 3.7 MB (3726824 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5ddeddb187e25dcb97137f84be1e33761b9de98033eebc3bd0103f1be4e81824`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:fc747d8607d79b44b4e96601d8926c73cb6bbe9fea67b14efdd5c7315244e6df`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 30.0 KB (29998 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3923,7 +3923,7 @@ $ docker pull flink@sha256:9231cc7f9f12e54195c04283af9f0d66352c448a5f485c7cd98dc
 ## `flink:1.18.1-scala_2.12-java11`
 
 ```console
-$ docker pull flink@sha256:1fd9fe4454d715a737fa8297362cf3e0e27224539de10aa47d14aa66630b69cd
+$ docker pull flink@sha256:ae287700350f75a6123ab680fd95fe94d808484f016dd96f01cbca033665992c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3936,13 +3936,13 @@ $ docker pull flink@sha256:1fd9fe4454d715a737fa8297362cf3e0e27224539de10aa47d14a
 ### `flink:1.18.1-scala_2.12-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:907a2a4d02ae3c2beb2a73fa367e60478051484304425be2da219e70cda1c885
+$ docker pull flink@sha256:6dcdd7647777eb2b00a0732e98963c2af1585bf312eb9dca8160065a3bbd2944
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.2 MB (577228289 bytes)**  
+-	Total Size: **577.2 MB (577228805 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d414773dce4f14c369bc641f2c1b1f220a85ee9f2b81db5d4a3745479246da0`
+-	Image ID: `sha256:b461cf0e3b2e68565685b73ef05b5402ab40a72eddf55d4c8ddfa2fe8dc95b06`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -3974,9 +3974,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -4022,56 +4022,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7dec3a0496245f97ea44253975fcc9f06cbf89ccc34d1fbc16c690a3cef9b1f`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 4.4 MB (4416728 bytes)  
+	-	`sha256:4430d5c4f6654fe59c22b5ee4eb5883af02963de43a36ff9e34579af2f43a055`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 4.4 MB (4416809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2802b0369c5e83f9d956a64f20d4345b60baab94773cbf3fd90e9443cfa87f9f`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:56fc2b3b0447213ff66e38c30a3945aa7a75a58caa8bb82bb9a1064e32b94f59`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d247a71c5f307b8760e9c9d52704a06f2f25aa7325bdbb2d9b88c0ae09d0fff6`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
-		Size: 4.6 KB (4591 bytes)  
+	-	`sha256:ea4884c7d8b33451b52d3c2980bf9b5d2a5297e3c9c963e9eba024938ff2d8c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
+		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa08788f1105ddb1108764ed9b4cad5e9bdc16de12a08a671d8708ae65214216`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:6750350f5979141e4006dfe8c3f9168032101e687886e1228f3a2d56479844df`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e95b6be062561ffb8400879ea0a1306df7ac10a899914a32fd7501a0dd262ca`  
-		Last Modified: Sat, 17 Aug 2024 02:02:04 GMT  
-		Size: 481.4 MB (481392215 bytes)  
+	-	`sha256:7572744eecfa392128f1fc0c4dc5d518b895bc7926b398df6e585ac391cceecc`  
+		Last Modified: Fri, 23 Aug 2024 20:06:46 GMT  
+		Size: 481.4 MB (481392403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a85fde9a57374bedaf50fc2a83822939c14e3bdd1985c818bac930b4e9149293`  
-		Last Modified: Sat, 17 Aug 2024 02:00:50 GMT  
-		Size: 2.1 KB (2110 bytes)  
+	-	`sha256:0f4cec42df9159a3cff18c7ebd70b5f0326efc406b8aeca8feae708ae8f22b81`  
+		Last Modified: Fri, 23 Aug 2024 20:06:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18.1-scala_2.12-java11` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:2fda1fd796f1f897f45589012432f6c23e954be9e8bbe0a206ff1629da1afdf9
+$ docker pull flink@sha256:b7c5ede2f4ac648100ba19a04e756f6abadf9b999c9994fa4a06548d2e3bee91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3756822 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c15d74d7b4a05521be8e86f4b3c160ec7daf47626b49ba80678f89aac56d271`
+-	Image ID: `sha256:135103994f51225256150a218a88ae31c4dfe81782d96b58b324f5274665cd4f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:232a35428d89ff014de426a466a9a039b8affff2950514bbc7716af283de3d01`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:a8d37c1a0b03f6ae758b7f50f4e69390ff2319d8ed7c2b12de079fd820ba0eec`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 3.7 MB (3726824 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5ddeddb187e25dcb97137f84be1e33761b9de98033eebc3bd0103f1be4e81824`  
-		Last Modified: Sat, 17 Aug 2024 02:01:56 GMT  
+	-	`sha256:fc747d8607d79b44b4e96601d8926c73cb6bbe9fea67b14efdd5c7315244e6df`  
+		Last Modified: Fri, 23 Aug 2024 20:06:31 GMT  
 		Size: 30.0 KB (29998 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4220,7 +4220,7 @@ $ docker pull flink@sha256:9231cc7f9f12e54195c04283af9f0d66352c448a5f485c7cd98dc
 ## `flink:1.18.1-scala_2.12-java17`
 
 ```console
-$ docker pull flink@sha256:8f2c5fce123919a22c430c3e0c51dc414db31ab315afe7edb0d27496f3ef9c01
+$ docker pull flink@sha256:85561bdd1abf1a7e14ba85395c9ad1eddc048d6c6345f1b0519f738a47ed20d9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4233,13 +4233,13 @@ $ docker pull flink@sha256:8f2c5fce123919a22c430c3e0c51dc414db31ab315afe7edb0d27
 ### `flink:1.18.1-scala_2.12-java17` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:26be302895565fdbd05e077c19fc96d7619135b61d1762e429b30a6b9aa4e0d6
+$ docker pull flink@sha256:c427f966ab8687ce69dc83b0250b9f7a3084d0aed429a63a94501b10dbe45fb9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.3 MB (577310236 bytes)**  
+-	Total Size: **577.3 MB (577310581 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af0dab0ac1100e589f81af5ecaa856fa4d2f93db07174a3d005e5d7faf56c7a2`
+-	Image ID: `sha256:ec4a6c74e4bd84ee1d8d3f31af5eff81e77218c949a5da1a4988a1c1f9e42ccf`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -4271,9 +4271,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -4319,69 +4319,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd24317609f1b5444d777c0434ab11020010745e5fa797d14158b433e7d085e`  
-		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:5161e45ecd8d096f978edcb483c5ed70580526e02a1f8155653ca1c6c192f097`  
+		Last Modified: Fri, 23 Aug 2024 19:27:49 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36ae612a02e1bf99e08c7d45babfc7571d5b21782351cc1bf7c5a154bba0b881`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
-		Size: 4.4 MB (4416784 bytes)  
+	-	`sha256:19d8e3f70899f152b8a2d330be533ff41489ab40822fcdc0543e33d3e0bdbfbf`  
+		Last Modified: Fri, 23 Aug 2024 20:08:01 GMT  
+		Size: 4.4 MB (4416769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2bdec5bc8bcc79fc4c2213553584d59ff0e1161eb8865698571de60c9f679b9`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:a6516d530c8c3c5e4abd8393edb7f3ff0e7c4a826f53d48933dbe848fac89a69`  
+		Last Modified: Fri, 23 Aug 2024 20:08:01 GMT  
+		Size: 900.5 KB (900496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9568fa987786bdc806485f8bc28dd8ab9e411c3008317c088ed72e0ea9c2f794`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
-		Size: 4.6 KB (4590 bytes)  
+	-	`sha256:f74280f41aad6a727774acab4795704b32e28405a44c8512fe581bed81ca4d9a`  
+		Last Modified: Fri, 23 Aug 2024 20:08:00 GMT  
+		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e580cc18dd3af980c26249847e69d5123bc8bf2c84877a053a65ff3e47b9814`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
+	-	`sha256:70407ec037fd53ffd275d3d9e8288d8f1586b87c75e31e0b072a205888fc79bd`  
+		Last Modified: Fri, 23 Aug 2024 20:08:01 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79b016bb6c22e7a738756201aa047263977884b9b09e0dd763d65fd0e2fc1345`  
-		Last Modified: Sat, 17 Aug 2024 02:00:58 GMT  
-		Size: 481.4 MB (481392315 bytes)  
+	-	`sha256:e9487bd72caabd8c053b2f35cccd4616e68cbb51cad5dcea6d4b45577c0d0853`  
+		Last Modified: Fri, 23 Aug 2024 20:08:12 GMT  
+		Size: 481.4 MB (481392428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a85fde9a57374bedaf50fc2a83822939c14e3bdd1985c818bac930b4e9149293`  
-		Last Modified: Sat, 17 Aug 2024 02:00:50 GMT  
-		Size: 2.1 KB (2110 bytes)  
+	-	`sha256:6d9ab3e026b23e22e38cd1e3cd0d170a5b2bee3c59c9de7d020f1335d91bb065`  
+		Last Modified: Fri, 23 Aug 2024 20:08:02 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18.1-scala_2.12-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:47966ac9b1faeadceb0576bbc9f213135c6c1b4b071dac35705b2fe936294b7b
+$ docker pull flink@sha256:d12f463bfbf43bb126a97978bec6d56dcc2d6341b3386184ad2ab5712f6d7457
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3754382 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96712dae2e444cf914eca77ea4b910993b9bd4a4a72320b26eb953b404f89299`
+-	Image ID: `sha256:efc929f6c6acc1a9cd0b33c9f24758a2e9d8fc2e2391c666b8b17181f196effd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3f16828304ee28bbddd1513702ca4a7bb68230d1379b42f068be2449cd2b0128`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
+	-	`sha256:ca0c69918225d0b4a3a416fdc686c07278b691ba8243c78a53803350bf39afe3`  
+		Last Modified: Fri, 23 Aug 2024 20:08:01 GMT  
 		Size: 3.7 MB (3725604 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f2b66903bf9d1ab6dc5feb39c8df3662ba373c6a428debb313ed84602a1caea9`  
-		Last Modified: Sat, 17 Aug 2024 02:00:49 GMT  
+	-	`sha256:af662f53947662d8c7da79f132d88da6d7208218f364e508f1dbf96c518c2ab7`  
+		Last Modified: Fri, 23 Aug 2024 20:08:00 GMT  
 		Size: 28.8 KB (28778 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.18.1-scala_2.12-java17` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:e0699c3e49e5aa75fcb05407b681ea5ad86d565085fbc8894aee3f00280b56d1
+$ docker pull flink@sha256:5562c21171bd1b9e02b2d233a6df2a5788eb99696b575692616a55210518ac97
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **574.5 MB (574458742 bytes)**  
+-	Total Size: **574.5 MB (574459034 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:29d4187d47068a708cfa8dff765dd5fe96d7a91a79a133d7d891b6ccd79ab074`
+-	Image ID: `sha256:c58e9fab0e03d533e1f71c1f2dcf5ab8c562282cad2e1d9a3f6c835a978a3b68`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -4413,9 +4413,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -4461,63 +4461,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:560407f77d279e68f72a6b12199439583872a1ea3f7441297485cd75f35c2820`  
-		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
-		Size: 1.9 KB (1867 bytes)  
+	-	`sha256:7525b10c4bd14139ded90d85ae282e53b2795402b1d01d327856dc57969f13e3`  
+		Last Modified: Fri, 23 Aug 2024 19:45:19 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ad449889b73484896ec212c8670510e4161d8083aa5ad002579b20df8504b78`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 4.3 MB (4265352 bytes)  
+	-	`sha256:b9f3272af01e149559a1d95590e2b0630a4501876558133e754ec3266f0f1377`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 4.3 MB (4265489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ca919b123f67c1b860be035235046bd79c58881886fd0d56ee2e52996b0b2ef`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 835.4 KB (835384 bytes)  
+	-	`sha256:c87f04576eb489737d425f233e0419d858cc5befc99a55366af6526106664e3a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e60394085bf17ddcd687577174c22b0e3c7f759fe451192576587479cb5688ed`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
-		Size: 4.6 KB (4632 bytes)  
+	-	`sha256:158086bb3241bb0ca922793682a9c395c7da3d34cb5318907e736de70f5d65f3`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
+		Size: 4.6 KB (4630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d7eb6c8c5988c288ebbc5d3db43ebc479789a982295108c19735fd40003c21d`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
+	-	`sha256:9dd0dc76ce70c3d51e1ce36025ca348c68c213ac04aebdb815ee046ae3deacea`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e0d85a3fdbff9424c1049f077572fa5ff0aad732fc2da2029dc32f019eb91968`  
-		Last Modified: Sat, 17 Aug 2024 07:00:03 GMT  
-		Size: 481.4 MB (481392421 bytes)  
+	-	`sha256:56f642d18d9d25c532d82d4a99bca9f7e89da7e0f198d351fbc6cacdf40a1786`  
+		Last Modified: Fri, 23 Aug 2024 22:24:07 GMT  
+		Size: 481.4 MB (481392339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95f1b556e5df1d79e84e1bf946f3d674b1d357373bad280a4a0b7730f205038e`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
+	-	`sha256:d87cd8d3acdb1a562fd45b5473c388c8033c04834e495cbe0522b594358131ed`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
 		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18.1-scala_2.12-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:edc0c0b339e49397e19e994ce06f77ee00a9de70fa5e7dc9062ee61d417477a5
+$ docker pull flink@sha256:513e2c9d770646e5e96bd892d53f88ee7c14224cd992de73167e486d9ddbb73d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3755001 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef9906ec09b2ccb085b1105620195cf566352be1505a10662c39bcfa21b96045`
+-	Image ID: `sha256:22728aecf714e43c50e3e664b6a95a1e70a0513034fda1a39a267ae84951a83b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c7cc7c0e47e274c8a29c71b245cf7112159c4d51a194262c5e3349a8e4ad1834`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
+	-	`sha256:061e21565c56fdc41fcdcc1407c3337fa30ea89bc50442466508f93a302733a1`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
 		Size: 3.7 MB (3725906 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ef7e269558b15c19aa1bcd04009d5d74426197dca0e9a5bc5a09a73350d80f73`  
-		Last Modified: Sat, 17 Aug 2024 06:59:53 GMT  
+	-	`sha256:7ada5bb8372db654910c2325138803d2be3b345cd924c6ebf0a407f45300298c`  
+		Last Modified: Fri, 23 Aug 2024 22:23:57 GMT  
 		Size: 29.1 KB (29095 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.18.1-scala_2.12-java8`
 
 ```console
-$ docker pull flink@sha256:27d832d2468bd2eabb9068a5f095f747b583abd4a6928871d4d3c50bdfd5fc6d
+$ docker pull flink@sha256:376d4bc04a2863b4323850920971c97d8242533bd289822797c649b1fd8a333c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4530,13 +4530,13 @@ $ docker pull flink@sha256:27d832d2468bd2eabb9068a5f095f747b583abd4a6928871d4d3c
 ### `flink:1.18.1-scala_2.12-java8` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:2888d1796c58ca441e232e39036de8d67172792ad7aadea1e14fb102a30c4549
+$ docker pull flink@sha256:9bc03be664f8595fb74cde70b9851ab1959e0dcdc28db6dcac84687cd7526495
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **571.9 MB (571914711 bytes)**  
+-	Total Size: **571.9 MB (571914888 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccdf047c78f01babbde6a982f97a0f0bf58e106d18d8c86849028251165d525b`
+-	Image ID: `sha256:288162cd5fa3d49c3677c71603d662b7512427b28e79b954235a95ab09f0ff8e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -4568,9 +4568,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -4616,69 +4616,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63f0966d15e28d4f9d2446b285da398fbbc46c4fdd3e46d16dd24c27e54a7968`  
-		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:549fdae8215d87f93f320e0b858daecaf8ec8ca17d44c21986c5a17d9f682905`  
+		Last Modified: Fri, 23 Aug 2024 19:25:15 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f46465b11126c9283f2318ec010771ec7a3b951176c41dc4238d9d6a16db790`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
-		Size: 4.4 MB (4416725 bytes)  
+	-	`sha256:d28a700f55f29246df646e1087da1818f473f8d33ee71f0b87761f725da0c4bc`  
+		Last Modified: Fri, 23 Aug 2024 20:08:04 GMT  
+		Size: 4.4 MB (4416789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:868a72a488a2360e3b11dc3ae66109e99c043bc002fd5b70b88dd2d31b71b6cc`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:6307af0b1a544d9315377b12a920e021b3583b8c3a1886404f2a8bc16ffcaf77`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98595db57e98cd466cae34148b7e7ae7e578201425da5f8d1eecf5afdd9e6fd5`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
-		Size: 4.6 KB (4593 bytes)  
+	-	`sha256:edcdf3c270d42af4ccbb596ca093a97eeab316c34b02acddd21492d9e56e772e`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
+		Size: 4.6 KB (4591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7084fd3113570c5e1c65fc5d19413f2c118737d7dec2bcf1808c0174280d6c58`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
+	-	`sha256:f322e8387874c0fd2ae5bc461a3115620802b181815a9f6be70c623e52d462cc`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b823f8a137dec677151a674aafd620c81920e617768082cbe85e87d420822818`  
-		Last Modified: Sat, 17 Aug 2024 02:03:59 GMT  
-		Size: 481.4 MB (481392562 bytes)  
+	-	`sha256:079034c0001cccdaa3716e4e3e3cc3070e65fa50f989034b361f532c69a7d344`  
+		Last Modified: Fri, 23 Aug 2024 20:08:15 GMT  
+		Size: 481.4 MB (481392431 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28e49a7857495dd922d4560f55e80e81dffa0f698fc96ccee6469d28cce4d52c`  
-		Last Modified: Sat, 17 Aug 2024 02:03:52 GMT  
-		Size: 2.1 KB (2110 bytes)  
+	-	`sha256:0f4cec42df9159a3cff18c7ebd70b5f0326efc406b8aeca8feae708ae8f22b81`  
+		Last Modified: Fri, 23 Aug 2024 20:06:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18.1-scala_2.12-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:0797bb616b24c5cf5505edbdb7bd0e780230b38e397418535f4292002c6d8fed
+$ docker pull flink@sha256:8f8ebbe51a1fb3842b13cd411bba34fc69215ea873f5bb4cc1655960e7e9e18d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3774763 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:511c7cf878817d66dd8fba30fe165b0a8f1fcd911f3a304142c0063922ac80ad`
+-	Image ID: `sha256:fa3023b133052b7033b023aae86cfd945f8571c63c8e848409bd90ff1de775be`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c9d8252b965f4f51cfbce653a91188e681579f97ba31c9ff2c4646f0ccea3ca6`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
+	-	`sha256:d26a6b4c49714343f13103fb25cd3a80eee1aed9f7945aff333aa3f3fac76013`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
 		Size: 3.7 MB (3746004 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2dd76090c75c600674e483a360356f9e3df68579370e7e928eda334754ce71a0`  
-		Last Modified: Sat, 17 Aug 2024 02:03:51 GMT  
+	-	`sha256:2607f493b39fa0e5848ba9282fb0482c9075abdedba11d7e7a3b273fcc4aeefe`  
+		Last Modified: Fri, 23 Aug 2024 20:08:03 GMT  
 		Size: 28.8 KB (28759 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.18.1-scala_2.12-java8` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:0bd620614aa9fb07ed05af0be39b0f592cfa261e1506275a9265294a0f8fe6cd
+$ docker pull flink@sha256:09d87539e58c21b5d926a691b42f4dd4ab1c34040712d750712e501ee943d972
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **568.6 MB (568569402 bytes)**  
+-	Total Size: **568.6 MB (568569741 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8af1112253a91a4343528121330369edbb919e4447629c396c37e247b1439827`
+-	Image ID: `sha256:8ed1553072656b26dee37a882eeac2275f87ab84c6b7893d1185fc9f026deb32`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -4710,9 +4710,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 24 May 2024 10:52:42 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 24 May 2024 10:52:42 GMT
@@ -4758,63 +4758,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b3a4248864654ce3e18048693bd49d77e323e35ce5e94fddc9a726a2faaeeb`  
-		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:db7acc9dfbf237a216b04a6b690009ad96051dd54ed79368fbd1e8306fbe4f05`  
+		Last Modified: Fri, 23 Aug 2024 19:43:12 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:810c5e271b495dd2f643060afb28946fb0c049eaed8479525f89c85fe41e8758`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 4.3 MB (4265413 bytes)  
+	-	`sha256:bcd5931f222e62a2780a370c553ddb4fc0e5ba856d0c4d1949908b6dd82987a9`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 4.3 MB (4265514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0018f9f96b94973046f70a5954b494f43d8753b53869d54a0df33933c063b3e9`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 835.4 KB (835383 bytes)  
+	-	`sha256:52a74542e3f8d53bdef5981075a820ad1cbd1065a63f8361ca7ab8f3e257d575`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99cb29992e45b7a34ac5e8b0e0339c519798d5c808901b16f09a7a67b1f4f5c2`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
-		Size: 4.6 KB (4629 bytes)  
+	-	`sha256:d36b7fb89958f36a1c2362201b077684fda1a6d1f04589ac0f1fc75a831e0885`  
+		Last Modified: Fri, 23 Aug 2024 22:22:24 GMT  
+		Size: 4.6 KB (4631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08885d8439729628e5325d5acefa1f035db0c1b04670ee89834be54a8ca316f6`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
+	-	`sha256:e00bcf9001f99cc7a47da971efb3dd2bc8c972ac09ae6a984a43eefa7d984043`  
+		Last Modified: Fri, 23 Aug 2024 22:22:24 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e00be838c66d0adec266aeae9e8e686da53d1513c873055e0743995a5575e689`  
-		Last Modified: Sat, 17 Aug 2024 06:58:24 GMT  
-		Size: 481.4 MB (481392521 bytes)  
+	-	`sha256:adf35189fc1fb92eb26a836302c1653b99144e64836d843b62804e099a1bb6c6`  
+		Last Modified: Fri, 23 Aug 2024 22:22:34 GMT  
+		Size: 481.4 MB (481392516 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:117471add07a06d48155a264993a45a63dc3880e87ea0b7c405a6e3284fbbd1b`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
+	-	`sha256:62ada84f5c683b93c9a06bcb4159957d3448c11def010d5c40c60052dc0a7780`  
+		Last Modified: Fri, 23 Aug 2024 22:22:24 GMT  
 		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.18.1-scala_2.12-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:04b2e50095aec5e24bd2465758e8d885edb1cb3d7888d5414a54fa430bf17349
+$ docker pull flink@sha256:0f52e1a7bf7235de3d398ba9dfe7fdd5d89b79936dd2877202c6e2dd3bdaa6e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3775381 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86a33c22a39b73ec3cda4580aaab2c8fc456ca9d5c695cc3900d5c2a83270d7f`
+-	Image ID: `sha256:6fd8d1e4a7d4728b67538c4cb0a5274edd6b34b5ad074964e1d8f5d6050078ae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a0c76517e0cb512adb348133a59ae67a4e582fd17a7e62e9595a40c88453df0b`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
+	-	`sha256:8495bdeb319dfeb27ffa9dc6fd5eff5e0cc39264418b0bea09e5d0807f2490e4`  
+		Last Modified: Fri, 23 Aug 2024 22:22:24 GMT  
 		Size: 3.7 MB (3746306 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0c789cfb743585f31be616557f3cffb588574549c16062fac46dcea6bf3a2d94`  
-		Last Modified: Sat, 17 Aug 2024 06:58:14 GMT  
+	-	`sha256:c99915302a6fbdc4646fe2e266ec8bcb764800d18cfd30439ae5c7b3087429c5`  
+		Last Modified: Fri, 23 Aug 2024 22:22:23 GMT  
 		Size: 29.1 KB (29075 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.19`
 
 ```console
-$ docker pull flink@sha256:fdc4dc46bf5db57cd265c5367566a8dd284abe8b37fbb30488122cdaa98b78df
+$ docker pull flink@sha256:d555cd02249dcb65924b88f9f6a94c1370845a40e3ded8ac8e28161fe30193c2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4827,13 +4827,13 @@ $ docker pull flink@sha256:fdc4dc46bf5db57cd265c5367566a8dd284abe8b37fbb30488122
 ### `flink:1.19` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:a0875e1fa890b5b0e8c52c3576ec4156697c00f88387e2dc8d3a5f4052850685
+$ docker pull flink@sha256:cfcce58a889019b105b26430ed460784ce66a739b11825a84573de6a1600c12b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.0 MB (578999502 bytes)**  
+-	Total Size: **579.0 MB (578999674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80358783d907364dc8f02d132f72b2f90ca2e3a8dc7f39300111e41f518b6783`
+-	Image ID: `sha256:321a1496548d7eb39a782081ae6e63ccf2f4296a0acaabb1ddeeb744d2cdeb8f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -4865,9 +4865,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -4913,56 +4913,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c18218a39d75d55a9ad8b1d63c660e05d04761c285e7787390933dbd36fc7843`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
-		Size: 4.4 MB (4416750 bytes)  
+	-	`sha256:116882d1560497453e55d4e9fd88092838826cd1ccc960bf15d2891b78d3b36f`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 4.4 MB (4416838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c027a548f8c207c5c9bc570fb54d6f06dedaf4517b27e18f52a9467d30ff5e56`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:5a49a47896b791dd44371179626abebbf048dcc8df024a7346f5ed6baff9aaa4`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 900.5 KB (900496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdf57c669e48b9c67450a88da56a8a0c28100967aecbfaf328349a2e1b1b0d69`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ef54fe499d4b848d54044e86684004e2d879f8f295409f107686000e95fbaa6`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bd774dc1fbc5169c47be03fb910b7f38778154054f38ae6b75d5eb692e1925b`  
-		Last Modified: Sat, 17 Aug 2024 02:02:18 GMT  
-		Size: 483.2 MB (483163251 bytes)  
+	-	`sha256:bcfb939b004bc7de2a0c263777549a0f2661431afc18b2c790bbdc4f3ba54637`  
+		Last Modified: Fri, 23 Aug 2024 20:06:27 GMT  
+		Size: 483.2 MB (483163088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:571b2e476b1b0ba9477c2af84d09b9c4770e1ddac7e77b42c40c0f304fbb7b16`  
-		Last Modified: Sat, 17 Aug 2024 02:02:11 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:f1ed8949868f7ff2b0fd34676ddff75bb6b40e67a301e587c71d1846dec48238`  
+		Last Modified: Fri, 23 Aug 2024 20:06:21 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:43b5e7117f7c71c3b21e6f5654e50f2c7498fa57cbcdc4d0affd6b7b6569b047
+$ docker pull flink@sha256:281a3c747f212f0c0f88a5fc677f3736487f318f4280adb18647162886ad082b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3759576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:985ff58215f692841febf4482df4ddb55cf256253ddbe0fe8c2ce1949badf7fa`
+-	Image ID: `sha256:904c024f943bdf4c0ae91d7c032bccf19ce53bc2f77f48d2fd18f54d4d195ebb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d9ee07c0f10b72876a45ff24f22adceb557ba333446fbb0fb3b05bb6868be145`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:fa8e4beae92b60209dfdf4b31fd0395ceca96b0d883bf017204bd2904be5ae28`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
 		Size: 3.7 MB (3727994 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aa64cf2a2252efa5afb24d2ebdde254dd02fbf40d3a118122de76a17cca0b323`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:c8ea9a9becad8efb71912bd910dc0456b123c4be658eb39f722e826af5a36d86`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
 		Size: 31.6 KB (31582 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5111,7 +5111,7 @@ $ docker pull flink@sha256:dea1ab10a68916bed9934d5578b8ea38040ad568e26627b73f1b3
 ## `flink:1.19-java11`
 
 ```console
-$ docker pull flink@sha256:fdc4dc46bf5db57cd265c5367566a8dd284abe8b37fbb30488122cdaa98b78df
+$ docker pull flink@sha256:d555cd02249dcb65924b88f9f6a94c1370845a40e3ded8ac8e28161fe30193c2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5124,13 +5124,13 @@ $ docker pull flink@sha256:fdc4dc46bf5db57cd265c5367566a8dd284abe8b37fbb30488122
 ### `flink:1.19-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:a0875e1fa890b5b0e8c52c3576ec4156697c00f88387e2dc8d3a5f4052850685
+$ docker pull flink@sha256:cfcce58a889019b105b26430ed460784ce66a739b11825a84573de6a1600c12b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.0 MB (578999502 bytes)**  
+-	Total Size: **579.0 MB (578999674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80358783d907364dc8f02d132f72b2f90ca2e3a8dc7f39300111e41f518b6783`
+-	Image ID: `sha256:321a1496548d7eb39a782081ae6e63ccf2f4296a0acaabb1ddeeb744d2cdeb8f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -5162,9 +5162,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -5210,56 +5210,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c18218a39d75d55a9ad8b1d63c660e05d04761c285e7787390933dbd36fc7843`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
-		Size: 4.4 MB (4416750 bytes)  
+	-	`sha256:116882d1560497453e55d4e9fd88092838826cd1ccc960bf15d2891b78d3b36f`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 4.4 MB (4416838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c027a548f8c207c5c9bc570fb54d6f06dedaf4517b27e18f52a9467d30ff5e56`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:5a49a47896b791dd44371179626abebbf048dcc8df024a7346f5ed6baff9aaa4`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 900.5 KB (900496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdf57c669e48b9c67450a88da56a8a0c28100967aecbfaf328349a2e1b1b0d69`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ef54fe499d4b848d54044e86684004e2d879f8f295409f107686000e95fbaa6`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bd774dc1fbc5169c47be03fb910b7f38778154054f38ae6b75d5eb692e1925b`  
-		Last Modified: Sat, 17 Aug 2024 02:02:18 GMT  
-		Size: 483.2 MB (483163251 bytes)  
+	-	`sha256:bcfb939b004bc7de2a0c263777549a0f2661431afc18b2c790bbdc4f3ba54637`  
+		Last Modified: Fri, 23 Aug 2024 20:06:27 GMT  
+		Size: 483.2 MB (483163088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:571b2e476b1b0ba9477c2af84d09b9c4770e1ddac7e77b42c40c0f304fbb7b16`  
-		Last Modified: Sat, 17 Aug 2024 02:02:11 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:f1ed8949868f7ff2b0fd34676ddff75bb6b40e67a301e587c71d1846dec48238`  
+		Last Modified: Fri, 23 Aug 2024 20:06:21 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19-java11` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:43b5e7117f7c71c3b21e6f5654e50f2c7498fa57cbcdc4d0affd6b7b6569b047
+$ docker pull flink@sha256:281a3c747f212f0c0f88a5fc677f3736487f318f4280adb18647162886ad082b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3759576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:985ff58215f692841febf4482df4ddb55cf256253ddbe0fe8c2ce1949badf7fa`
+-	Image ID: `sha256:904c024f943bdf4c0ae91d7c032bccf19ce53bc2f77f48d2fd18f54d4d195ebb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d9ee07c0f10b72876a45ff24f22adceb557ba333446fbb0fb3b05bb6868be145`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:fa8e4beae92b60209dfdf4b31fd0395ceca96b0d883bf017204bd2904be5ae28`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
 		Size: 3.7 MB (3727994 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aa64cf2a2252efa5afb24d2ebdde254dd02fbf40d3a118122de76a17cca0b323`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:c8ea9a9becad8efb71912bd910dc0456b123c4be658eb39f722e826af5a36d86`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
 		Size: 31.6 KB (31582 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5408,7 +5408,7 @@ $ docker pull flink@sha256:dea1ab10a68916bed9934d5578b8ea38040ad568e26627b73f1b3
 ## `flink:1.19-java17`
 
 ```console
-$ docker pull flink@sha256:fc99fcba0d5700b4825fb9bace40c1812b42af489b5261df5e5751ded6e082fb
+$ docker pull flink@sha256:e7d4d15eb8a8a33e21f4a2dbedb3748220cf3931e40a732263450144d5df977b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5421,13 +5421,13 @@ $ docker pull flink@sha256:fc99fcba0d5700b4825fb9bace40c1812b42af489b5261df5e575
 ### `flink:1.19-java17` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:1f81ab7f6ea3be60e15990b8bce3c307d9356790bd091d1d6da32f1cc86f4ac8
+$ docker pull flink@sha256:a56ebe5b650cd4d7abdc01ba55a1e4db17fd7c75a52d93f15523f49eb58948ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.1 MB (579081162 bytes)**  
+-	Total Size: **579.1 MB (579081439 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5df2d6670146ce0bcc002045beb11c91ce73c497aaaf4bde8ef68fb603e72ba`
+-	Image ID: `sha256:88418c3fb0fa42432739df07fee063d8a326fca88857145f76415d90e7756a6c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -5459,9 +5459,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -5507,69 +5507,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd24317609f1b5444d777c0434ab11020010745e5fa797d14158b433e7d085e`  
-		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:5161e45ecd8d096f978edcb483c5ed70580526e02a1f8155653ca1c6c192f097`  
+		Last Modified: Fri, 23 Aug 2024 19:27:49 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dabcb24b0736af443308c2d4b117959aab676db1802357e7eda6bb79112724ed`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
-		Size: 4.4 MB (4416814 bytes)  
+	-	`sha256:5b77fdf2bbfdd91476f5efdd2ced01791b83412d30978a1c036fa8bd6447bd29`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
+		Size: 4.4 MB (4416774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e371bf9db245fe00dd137b6cff9b3a96c27fbbb4b450b8386566e7b94a97c60`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
-		Size: 900.5 KB (900497 bytes)  
+	-	`sha256:22013c9aee299e29ee9f8e7276adbc391fc022e0168c9557c7dbcaa5a0aad4d0`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
+		Size: 900.5 KB (900492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6664b2c1cc3bfa5502fd5835ce1f495eef34cc324eecdca42eb39a66bef03b15`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
-		Size: 4.6 KB (4592 bytes)  
+	-	`sha256:de4047f4af071771a2f4168ee1b75cb6d5ccab7bd477992e1c3f5e754a14d1a0`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
+		Size: 4.6 KB (4593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50dddbd288a869e3aff6d60f11a014b89f18b58d1580753e175b4dcf3f3ca6b3`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
-		Size: 115.0 B  
+	-	`sha256:a8786e6bd34b2dda9683c04b8154c40ca57a00b35e94690d23d8c39952fe8d32`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca629973511f84f73af655d9d1a91d666bcf20e4e98bd967694a62103b15ebe5`  
-		Last Modified: Sat, 17 Aug 2024 02:03:32 GMT  
-		Size: 483.2 MB (483163049 bytes)  
+	-	`sha256:ee8758a7756734a9ed4765dc5aec11ea96ccf9f817d5c7d4a3bd50e71e5c8a44`  
+		Last Modified: Fri, 23 Aug 2024 20:07:41 GMT  
+		Size: 483.2 MB (483163126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:fc2d66e5b11dfff70f6ebd5caf386db5c977beb06484373058ddedc6962e039b`  
+		Last Modified: Fri, 23 Aug 2024 20:07:32 GMT  
+		Size: 2.3 KB (2268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:464ef568f081eeae558322f91ec52b34e7715ac352d7bcbbb7788aed7f7cbf29
+$ docker pull flink@sha256:c38796fce8ab38ab1434bfb612027e39e4fd2044481211816b1615ef73942082
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3757136 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0889913ea9d39195b814a8d1608cd92a9dc3fc7b19628b3e81656bce58236978`
+-	Image ID: `sha256:b1d41b9053ced4b45bd934d2b28196af64314278e39506bf729c84597775b099`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:795f1fa6e6f7b73bd1cea4493efbeff5151fd080a9bb2a449cd6ed34c12953ad`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
+	-	`sha256:ff4326b988da03c8fb1b264e62e4d530c2d044259898817b4e4fe2dbbcc8ed98`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
 		Size: 3.7 MB (3726774 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:89fb3712f6cdb62cfc199cda56036f4cb7f97b66d77fde901f0b8a2065ca3b80`  
-		Last Modified: Sat, 17 Aug 2024 02:03:21 GMT  
+	-	`sha256:02ab4cb634547d140ec3122fa7d86a735266d024972afcd6633b78525e028391`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
 		Size: 30.4 KB (30362 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.19-java17` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:68067e1d56efd74c67e5656423fb7f7dcc762ddc6fe62ff3f60494ddd77c1a54
+$ docker pull flink@sha256:e3746ad2be548f0c5779b4a0946d4428fb667f951401c0170807e72ed348cdd4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **576.2 MB (576229555 bytes)**  
+-	Total Size: **576.2 MB (576229943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e64309e8f0f82cf7cb0531a953ee881d0af2149d3667975b5af1cb9a478571b`
+-	Image ID: `sha256:5cc0b10fa41d85a2009303adbbb32b4f9763ad3c4f6864f199db22a9c261a035`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -5601,9 +5601,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -5649,63 +5649,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:560407f77d279e68f72a6b12199439583872a1ea3f7441297485cd75f35c2820`  
-		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
-		Size: 1.9 KB (1867 bytes)  
+	-	`sha256:7525b10c4bd14139ded90d85ae282e53b2795402b1d01d327856dc57969f13e3`  
+		Last Modified: Fri, 23 Aug 2024 19:45:19 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ad449889b73484896ec212c8670510e4161d8083aa5ad002579b20df8504b78`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 4.3 MB (4265352 bytes)  
+	-	`sha256:b9f3272af01e149559a1d95590e2b0630a4501876558133e754ec3266f0f1377`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 4.3 MB (4265489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ca919b123f67c1b860be035235046bd79c58881886fd0d56ee2e52996b0b2ef`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 835.4 KB (835384 bytes)  
+	-	`sha256:c87f04576eb489737d425f233e0419d858cc5befc99a55366af6526106664e3a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af640d4f8527554d3e04bc8e91242ab675b885d9e75f0e4fce11b2fe5abc98d0`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
+	-	`sha256:672485f5ca0713a99f24530ca3b4ccdd2f4d27fb5da0eff44b5026ce0af2254a`  
+		Last Modified: Fri, 23 Aug 2024 22:16:03 GMT  
 		Size: 4.6 KB (4629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5191d223139cc82625d5731f61c5fc1b2a62a9e8ccba630488e3e9f01668a33`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
+	-	`sha256:a96c499565df5cd4d1fa202448be3440c50149aa1b7a30bbd8d67f281ffcfb7f`  
+		Last Modified: Fri, 23 Aug 2024 22:16:03 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d40d7eb002c6037f93e704208e64a23220fbb2050aaa743fabbf92e003280a61`  
-		Last Modified: Sat, 17 Aug 2024 06:53:50 GMT  
-		Size: 483.2 MB (483163078 bytes)  
+	-	`sha256:3c88311ca10003e24eeeb5658c89943d4038026225f20448d47e2d8541a7127e`  
+		Last Modified: Fri, 23 Aug 2024 22:16:13 GMT  
+		Size: 483.2 MB (483163090 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4d397ba5ee3395bdc35abb749c250c6d4c874cbe9485bb0aea50059dfdee4bb`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
+	-	`sha256:29dbe7df448c7cf44ebc37a127e48e0794368e70b9e81a5866d990b29099e8a7`  
+		Last Modified: Fri, 23 Aug 2024 22:16:03 GMT  
 		Size: 2.3 KB (2268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:8bdd4ac8bfcc68733eee9000e127f2dc38515b050a9069d758b8bd92047d94f1
+$ docker pull flink@sha256:5c7e705058f9c017520813ad913cf9d26353f87089f159783d7be6af91e91e35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3757754 bytes)**  
+-	Total Size: **3.8 MB (3757755 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a3b00d33d0b83a69d1774f8464858e79e95cd10cd9290c071eb2da90fb3a6dd6`
+-	Image ID: `sha256:56d251c23b80ee1b9e22000f64f7fd4f643633f62a05902a2bcc7b13385606af`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1fb8c8acb5531925d96d7636a3cf29f7c844ed42a9f1fc23ede690c1533c3605`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
+	-	`sha256:96b54ec3b2ba12e1ff15a314bea014fa82ebb72c7804a0c9da4c8d8937f01270`  
+		Last Modified: Fri, 23 Aug 2024 22:16:03 GMT  
 		Size: 3.7 MB (3727076 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:11663c0f0b065152d6c40314039e07cb3ce4afbba834c5f20ebfc34ae749381b`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
-		Size: 30.7 KB (30678 bytes)  
+	-	`sha256:3d862c42f5f1276f15aa63b36e91d963121755ee59c350a5586f2e1279b8d251`  
+		Last Modified: Fri, 23 Aug 2024 22:16:02 GMT  
+		Size: 30.7 KB (30679 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.19-java8`
 
 ```console
-$ docker pull flink@sha256:9deef412a5fb306a05cb43ff1c08f9c0d9d208b4836a2504ff6fd90be3f2c1c7
+$ docker pull flink@sha256:aa5ca7dcce78c6f8f6826b2646611272166b11da35ca50fb08e63b5b8ac90f75
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5718,13 +5718,13 @@ $ docker pull flink@sha256:9deef412a5fb306a05cb43ff1c08f9c0d9d208b4836a2504ff6fd
 ### `flink:1.19-java8` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:5420c302fbfd1a77d082cefb33226db5c2741e37e84b18b604f11240dec6dd79
+$ docker pull flink@sha256:62d72f5c5625d44e9e6efce67397409dd210d632dc51c0056ef139b0d36abdaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **573.7 MB (573685559 bytes)**  
+-	Total Size: **573.7 MB (573685735 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08770f9f7f90fbcb6266ff0498d0669b9dab28adbfd44c38ec9b573f071dfe43`
+-	Image ID: `sha256:06796e8751b8769ef1ef6b1a2c6266591f0bc8df009f5f79dd3f0c2497cf49f3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -5756,9 +5756,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -5804,69 +5804,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63f0966d15e28d4f9d2446b285da398fbbc46c4fdd3e46d16dd24c27e54a7968`  
-		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:549fdae8215d87f93f320e0b858daecaf8ec8ca17d44c21986c5a17d9f682905`  
+		Last Modified: Fri, 23 Aug 2024 19:25:15 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:220d5dc5fb15158e4a6af90effdd5b8dd6efd614bdd8c6e5ff76cb3524e51e48`  
-		Last Modified: Sat, 17 Aug 2024 02:01:14 GMT  
-		Size: 4.4 MB (4416731 bytes)  
+	-	`sha256:b60a58f3ffce611cea079a17fd6407d39dfe12fcdbc81dbf0b44b7c8975f257c`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
+		Size: 4.4 MB (4416809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1293a8581890e45ac30c625499130e468cb5349178d1e02f60c181e86329849`  
-		Last Modified: Sat, 17 Aug 2024 02:01:14 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:bb5e745fed31d7d1c330c11fb9db9309d622a3c4ab7bb3216b95e59873eb2b81`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
+		Size: 900.5 KB (900495 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3509644384c0d71b5d3818ffde26aa46816c86d1a385226439587e09a68b9571`  
-		Last Modified: Sat, 17 Aug 2024 02:01:13 GMT  
-		Size: 4.6 KB (4591 bytes)  
+	-	`sha256:2d3fd9c72bbd51bb066ce4feeaa5e0365333957282ccf887899cb81c3518b21a`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
+		Size: 4.6 KB (4593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb44f362597c6b00043d96956831d91e1f8239bb63a5b2d9dd0f6870d1364a88`  
-		Last Modified: Sat, 17 Aug 2024 02:01:13 GMT  
-		Size: 115.0 B  
+	-	`sha256:c30907ba05b3eb96a94369bedcb2de47d3776af22062bcb0acf36f350c3a4dfb`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ab07166b99ff5bde7b4fedc385b4a9a3aab1cb151826e7ee6a7a087178c0533`  
-		Last Modified: Sat, 17 Aug 2024 02:01:25 GMT  
-		Size: 483.2 MB (483163251 bytes)  
+	-	`sha256:414837c829cd6e77fc82ce6830d2700141a2a59c4c322471fa85819b86818f20`  
+		Last Modified: Fri, 23 Aug 2024 20:08:05 GMT  
+		Size: 483.2 MB (483163100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:7f3f9a72f8ec60a7b6c24668a383a7d0560f3da6995143effd074d5a0c84fe88`  
+		Last Modified: Fri, 23 Aug 2024 20:07:57 GMT  
+		Size: 2.3 KB (2268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:82e1938e0c5f281e83d0334136ada683cb925bd8bfedd92683fa3c4758189c6d
+$ docker pull flink@sha256:90ea4cc798bb1e25a62c8ee0a7296f4732695eab4b170610f844bba814ca1dda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3777517 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f41414d3d60c3c15e8a10f38b442d2ea76619f1e42c0924714cccd4899f1087`
+-	Image ID: `sha256:4d70d04ef5792f1c88f2ddb6bb8ac7664bec85f26efde823326504897a1e451f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b914a7d0e55b60244ea50df8ff7501960065d039383ccfad1f7d36c2fc3d9f28`  
-		Last Modified: Sat, 17 Aug 2024 02:01:14 GMT  
+	-	`sha256:b859f407441f170a47164df92e436ab92b690ae39e92c01c1c636adc0cf2e1c3`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
 		Size: 3.7 MB (3747174 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ea318dc928854b8590186b80da3f76ff4b60967feebdc04d626f4e2c507b4b45`  
-		Last Modified: Sat, 17 Aug 2024 02:01:13 GMT  
+	-	`sha256:bd7504a8a87c0eeb282c040bfc3bd14b3c491cb38168bd29b6f37871ae1edcdc`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
 		Size: 30.3 KB (30343 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.19-java8` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:c555a6987283da328dfcf52504f63a72073c85fa6f9a2f76328d8eb45e1098ff
+$ docker pull flink@sha256:5d12573fcffec68c44a8df194c69b7cf5b40d6bce3f7164deef6274f8fd7eb8c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **570.3 MB (570340167 bytes)**  
+-	Total Size: **570.3 MB (570340499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b4fae76d834c6a79410f10e61a3c0377c5490403d7a10c37e3fa0699c39d78d4`
+-	Image ID: `sha256:e75f34937b1103ed9358c8481c2579bbcae1ad4d4f7ede2dee57a719fba3bf95`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -5898,9 +5898,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -5946,63 +5946,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b3a4248864654ce3e18048693bd49d77e323e35ce5e94fddc9a726a2faaeeb`  
-		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:db7acc9dfbf237a216b04a6b690009ad96051dd54ed79368fbd1e8306fbe4f05`  
+		Last Modified: Fri, 23 Aug 2024 19:43:12 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:810c5e271b495dd2f643060afb28946fb0c049eaed8479525f89c85fe41e8758`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 4.3 MB (4265413 bytes)  
+	-	`sha256:bcd5931f222e62a2780a370c553ddb4fc0e5ba856d0c4d1949908b6dd82987a9`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 4.3 MB (4265514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0018f9f96b94973046f70a5954b494f43d8753b53869d54a0df33933c063b3e9`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 835.4 KB (835383 bytes)  
+	-	`sha256:52a74542e3f8d53bdef5981075a820ad1cbd1065a63f8361ca7ab8f3e257d575`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d28fad690cc91eafae91999987384aedef7d5c6d38640170a4495022fbe5fbf9`  
-		Last Modified: Sat, 17 Aug 2024 06:52:16 GMT  
-		Size: 4.6 KB (4631 bytes)  
+	-	`sha256:321a1c8ccdc72ce033f83441bd81595bd9033cf9541a5fe4e6d66f86e4180568`  
+		Last Modified: Fri, 23 Aug 2024 22:14:32 GMT  
+		Size: 4.6 KB (4627 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63a32cf4cf3b31c927f9a338fbce095baffea7cd1ba744f2c980490de78be927`  
-		Last Modified: Sat, 17 Aug 2024 06:52:16 GMT  
+	-	`sha256:0bb30a87b7c4a39348b21de43629baf02a4cbfd8435a1a47dc6c7e8fe37832ec`  
+		Last Modified: Fri, 23 Aug 2024 22:14:32 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:507314e2d77730ed7d72cfcc7aa4512d1bbf6faaedf30f7ea1a71240568d2354`  
-		Last Modified: Sat, 17 Aug 2024 06:52:26 GMT  
-		Size: 483.2 MB (483163126 bytes)  
+	-	`sha256:5ca57d0fe9dbcd62368d6cc091e8a1d7a0c1a0bf67ac4558ab5ed64e5ffb9ad8`  
+		Last Modified: Fri, 23 Aug 2024 22:14:44 GMT  
+		Size: 483.2 MB (483163120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d120c3d05deeea2fe580b066af67c83f2ed7235f48b87525e2c400f4b2b3716`  
-		Last Modified: Sat, 17 Aug 2024 06:52:17 GMT  
+	-	`sha256:8c7226b58df8c27dbe517ba333ec7fa97529eb29fac3824a6052f32e25d39e28`  
+		Last Modified: Fri, 23 Aug 2024 22:14:33 GMT  
 		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:7f1cff18ae9c8da59f30126813f2adfcb957f6ce151db747cc3d6063e4e11787
+$ docker pull flink@sha256:d9ee4dbd25d9a0424ae1e94e1279ffd956c63ddaff4a1a95992f3fcd54d706dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3778135 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ebab829e8e6cb4bbf75cba92e42bf8b307c72838daf67f126c5b8e4963196df7`
+-	Image ID: `sha256:d38759657463fc7975eee5b4d63c6723598331fcfbadf977e3dc9cf359c8f459`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2cd7659d7214aaf33ce8cfc26da248d28f7344ed7771797eb3e1d3f2ded168a1`  
-		Last Modified: Sat, 17 Aug 2024 06:52:17 GMT  
+	-	`sha256:24a48486809058325481852c27d0d34756f19ab57f5f2769b2c41ab5255525ef`  
+		Last Modified: Fri, 23 Aug 2024 22:14:32 GMT  
 		Size: 3.7 MB (3747476 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4fd11e54c475594141a8d3896cc7f7b266543e0f5f17ac6be97c635733e6d5b4`  
-		Last Modified: Sat, 17 Aug 2024 06:52:16 GMT  
+	-	`sha256:a1c3f789c7a97207d0972e07a6beca8d19fb9ec2fb1d776daac198c194ec835a`  
+		Last Modified: Fri, 23 Aug 2024 22:14:32 GMT  
 		Size: 30.7 KB (30659 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.19-scala_2.12`
 
 ```console
-$ docker pull flink@sha256:fdc4dc46bf5db57cd265c5367566a8dd284abe8b37fbb30488122cdaa98b78df
+$ docker pull flink@sha256:d555cd02249dcb65924b88f9f6a94c1370845a40e3ded8ac8e28161fe30193c2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6015,13 +6015,13 @@ $ docker pull flink@sha256:fdc4dc46bf5db57cd265c5367566a8dd284abe8b37fbb30488122
 ### `flink:1.19-scala_2.12` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:a0875e1fa890b5b0e8c52c3576ec4156697c00f88387e2dc8d3a5f4052850685
+$ docker pull flink@sha256:cfcce58a889019b105b26430ed460784ce66a739b11825a84573de6a1600c12b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.0 MB (578999502 bytes)**  
+-	Total Size: **579.0 MB (578999674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80358783d907364dc8f02d132f72b2f90ca2e3a8dc7f39300111e41f518b6783`
+-	Image ID: `sha256:321a1496548d7eb39a782081ae6e63ccf2f4296a0acaabb1ddeeb744d2cdeb8f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -6053,9 +6053,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -6101,56 +6101,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c18218a39d75d55a9ad8b1d63c660e05d04761c285e7787390933dbd36fc7843`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
-		Size: 4.4 MB (4416750 bytes)  
+	-	`sha256:116882d1560497453e55d4e9fd88092838826cd1ccc960bf15d2891b78d3b36f`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 4.4 MB (4416838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c027a548f8c207c5c9bc570fb54d6f06dedaf4517b27e18f52a9467d30ff5e56`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:5a49a47896b791dd44371179626abebbf048dcc8df024a7346f5ed6baff9aaa4`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 900.5 KB (900496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdf57c669e48b9c67450a88da56a8a0c28100967aecbfaf328349a2e1b1b0d69`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ef54fe499d4b848d54044e86684004e2d879f8f295409f107686000e95fbaa6`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bd774dc1fbc5169c47be03fb910b7f38778154054f38ae6b75d5eb692e1925b`  
-		Last Modified: Sat, 17 Aug 2024 02:02:18 GMT  
-		Size: 483.2 MB (483163251 bytes)  
+	-	`sha256:bcfb939b004bc7de2a0c263777549a0f2661431afc18b2c790bbdc4f3ba54637`  
+		Last Modified: Fri, 23 Aug 2024 20:06:27 GMT  
+		Size: 483.2 MB (483163088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:571b2e476b1b0ba9477c2af84d09b9c4770e1ddac7e77b42c40c0f304fbb7b16`  
-		Last Modified: Sat, 17 Aug 2024 02:02:11 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:f1ed8949868f7ff2b0fd34676ddff75bb6b40e67a301e587c71d1846dec48238`  
+		Last Modified: Fri, 23 Aug 2024 20:06:21 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19-scala_2.12` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:43b5e7117f7c71c3b21e6f5654e50f2c7498fa57cbcdc4d0affd6b7b6569b047
+$ docker pull flink@sha256:281a3c747f212f0c0f88a5fc677f3736487f318f4280adb18647162886ad082b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3759576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:985ff58215f692841febf4482df4ddb55cf256253ddbe0fe8c2ce1949badf7fa`
+-	Image ID: `sha256:904c024f943bdf4c0ae91d7c032bccf19ce53bc2f77f48d2fd18f54d4d195ebb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d9ee07c0f10b72876a45ff24f22adceb557ba333446fbb0fb3b05bb6868be145`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:fa8e4beae92b60209dfdf4b31fd0395ceca96b0d883bf017204bd2904be5ae28`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
 		Size: 3.7 MB (3727994 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aa64cf2a2252efa5afb24d2ebdde254dd02fbf40d3a118122de76a17cca0b323`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:c8ea9a9becad8efb71912bd910dc0456b123c4be658eb39f722e826af5a36d86`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
 		Size: 31.6 KB (31582 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6299,7 +6299,7 @@ $ docker pull flink@sha256:dea1ab10a68916bed9934d5578b8ea38040ad568e26627b73f1b3
 ## `flink:1.19-scala_2.12-java11`
 
 ```console
-$ docker pull flink@sha256:fdc4dc46bf5db57cd265c5367566a8dd284abe8b37fbb30488122cdaa98b78df
+$ docker pull flink@sha256:d555cd02249dcb65924b88f9f6a94c1370845a40e3ded8ac8e28161fe30193c2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6312,13 +6312,13 @@ $ docker pull flink@sha256:fdc4dc46bf5db57cd265c5367566a8dd284abe8b37fbb30488122
 ### `flink:1.19-scala_2.12-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:a0875e1fa890b5b0e8c52c3576ec4156697c00f88387e2dc8d3a5f4052850685
+$ docker pull flink@sha256:cfcce58a889019b105b26430ed460784ce66a739b11825a84573de6a1600c12b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.0 MB (578999502 bytes)**  
+-	Total Size: **579.0 MB (578999674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80358783d907364dc8f02d132f72b2f90ca2e3a8dc7f39300111e41f518b6783`
+-	Image ID: `sha256:321a1496548d7eb39a782081ae6e63ccf2f4296a0acaabb1ddeeb744d2cdeb8f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -6350,9 +6350,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -6398,56 +6398,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c18218a39d75d55a9ad8b1d63c660e05d04761c285e7787390933dbd36fc7843`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
-		Size: 4.4 MB (4416750 bytes)  
+	-	`sha256:116882d1560497453e55d4e9fd88092838826cd1ccc960bf15d2891b78d3b36f`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 4.4 MB (4416838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c027a548f8c207c5c9bc570fb54d6f06dedaf4517b27e18f52a9467d30ff5e56`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:5a49a47896b791dd44371179626abebbf048dcc8df024a7346f5ed6baff9aaa4`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 900.5 KB (900496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdf57c669e48b9c67450a88da56a8a0c28100967aecbfaf328349a2e1b1b0d69`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ef54fe499d4b848d54044e86684004e2d879f8f295409f107686000e95fbaa6`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bd774dc1fbc5169c47be03fb910b7f38778154054f38ae6b75d5eb692e1925b`  
-		Last Modified: Sat, 17 Aug 2024 02:02:18 GMT  
-		Size: 483.2 MB (483163251 bytes)  
+	-	`sha256:bcfb939b004bc7de2a0c263777549a0f2661431afc18b2c790bbdc4f3ba54637`  
+		Last Modified: Fri, 23 Aug 2024 20:06:27 GMT  
+		Size: 483.2 MB (483163088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:571b2e476b1b0ba9477c2af84d09b9c4770e1ddac7e77b42c40c0f304fbb7b16`  
-		Last Modified: Sat, 17 Aug 2024 02:02:11 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:f1ed8949868f7ff2b0fd34676ddff75bb6b40e67a301e587c71d1846dec48238`  
+		Last Modified: Fri, 23 Aug 2024 20:06:21 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19-scala_2.12-java11` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:43b5e7117f7c71c3b21e6f5654e50f2c7498fa57cbcdc4d0affd6b7b6569b047
+$ docker pull flink@sha256:281a3c747f212f0c0f88a5fc677f3736487f318f4280adb18647162886ad082b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3759576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:985ff58215f692841febf4482df4ddb55cf256253ddbe0fe8c2ce1949badf7fa`
+-	Image ID: `sha256:904c024f943bdf4c0ae91d7c032bccf19ce53bc2f77f48d2fd18f54d4d195ebb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d9ee07c0f10b72876a45ff24f22adceb557ba333446fbb0fb3b05bb6868be145`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:fa8e4beae92b60209dfdf4b31fd0395ceca96b0d883bf017204bd2904be5ae28`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
 		Size: 3.7 MB (3727994 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aa64cf2a2252efa5afb24d2ebdde254dd02fbf40d3a118122de76a17cca0b323`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:c8ea9a9becad8efb71912bd910dc0456b123c4be658eb39f722e826af5a36d86`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
 		Size: 31.6 KB (31582 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6596,7 +6596,7 @@ $ docker pull flink@sha256:dea1ab10a68916bed9934d5578b8ea38040ad568e26627b73f1b3
 ## `flink:1.19-scala_2.12-java17`
 
 ```console
-$ docker pull flink@sha256:fc99fcba0d5700b4825fb9bace40c1812b42af489b5261df5e5751ded6e082fb
+$ docker pull flink@sha256:e7d4d15eb8a8a33e21f4a2dbedb3748220cf3931e40a732263450144d5df977b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6609,13 +6609,13 @@ $ docker pull flink@sha256:fc99fcba0d5700b4825fb9bace40c1812b42af489b5261df5e575
 ### `flink:1.19-scala_2.12-java17` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:1f81ab7f6ea3be60e15990b8bce3c307d9356790bd091d1d6da32f1cc86f4ac8
+$ docker pull flink@sha256:a56ebe5b650cd4d7abdc01ba55a1e4db17fd7c75a52d93f15523f49eb58948ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.1 MB (579081162 bytes)**  
+-	Total Size: **579.1 MB (579081439 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5df2d6670146ce0bcc002045beb11c91ce73c497aaaf4bde8ef68fb603e72ba`
+-	Image ID: `sha256:88418c3fb0fa42432739df07fee063d8a326fca88857145f76415d90e7756a6c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -6647,9 +6647,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -6695,69 +6695,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd24317609f1b5444d777c0434ab11020010745e5fa797d14158b433e7d085e`  
-		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:5161e45ecd8d096f978edcb483c5ed70580526e02a1f8155653ca1c6c192f097`  
+		Last Modified: Fri, 23 Aug 2024 19:27:49 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dabcb24b0736af443308c2d4b117959aab676db1802357e7eda6bb79112724ed`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
-		Size: 4.4 MB (4416814 bytes)  
+	-	`sha256:5b77fdf2bbfdd91476f5efdd2ced01791b83412d30978a1c036fa8bd6447bd29`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
+		Size: 4.4 MB (4416774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e371bf9db245fe00dd137b6cff9b3a96c27fbbb4b450b8386566e7b94a97c60`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
-		Size: 900.5 KB (900497 bytes)  
+	-	`sha256:22013c9aee299e29ee9f8e7276adbc391fc022e0168c9557c7dbcaa5a0aad4d0`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
+		Size: 900.5 KB (900492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6664b2c1cc3bfa5502fd5835ce1f495eef34cc324eecdca42eb39a66bef03b15`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
-		Size: 4.6 KB (4592 bytes)  
+	-	`sha256:de4047f4af071771a2f4168ee1b75cb6d5ccab7bd477992e1c3f5e754a14d1a0`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
+		Size: 4.6 KB (4593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50dddbd288a869e3aff6d60f11a014b89f18b58d1580753e175b4dcf3f3ca6b3`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
-		Size: 115.0 B  
+	-	`sha256:a8786e6bd34b2dda9683c04b8154c40ca57a00b35e94690d23d8c39952fe8d32`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca629973511f84f73af655d9d1a91d666bcf20e4e98bd967694a62103b15ebe5`  
-		Last Modified: Sat, 17 Aug 2024 02:03:32 GMT  
-		Size: 483.2 MB (483163049 bytes)  
+	-	`sha256:ee8758a7756734a9ed4765dc5aec11ea96ccf9f817d5c7d4a3bd50e71e5c8a44`  
+		Last Modified: Fri, 23 Aug 2024 20:07:41 GMT  
+		Size: 483.2 MB (483163126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:fc2d66e5b11dfff70f6ebd5caf386db5c977beb06484373058ddedc6962e039b`  
+		Last Modified: Fri, 23 Aug 2024 20:07:32 GMT  
+		Size: 2.3 KB (2268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19-scala_2.12-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:464ef568f081eeae558322f91ec52b34e7715ac352d7bcbbb7788aed7f7cbf29
+$ docker pull flink@sha256:c38796fce8ab38ab1434bfb612027e39e4fd2044481211816b1615ef73942082
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3757136 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0889913ea9d39195b814a8d1608cd92a9dc3fc7b19628b3e81656bce58236978`
+-	Image ID: `sha256:b1d41b9053ced4b45bd934d2b28196af64314278e39506bf729c84597775b099`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:795f1fa6e6f7b73bd1cea4493efbeff5151fd080a9bb2a449cd6ed34c12953ad`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
+	-	`sha256:ff4326b988da03c8fb1b264e62e4d530c2d044259898817b4e4fe2dbbcc8ed98`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
 		Size: 3.7 MB (3726774 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:89fb3712f6cdb62cfc199cda56036f4cb7f97b66d77fde901f0b8a2065ca3b80`  
-		Last Modified: Sat, 17 Aug 2024 02:03:21 GMT  
+	-	`sha256:02ab4cb634547d140ec3122fa7d86a735266d024972afcd6633b78525e028391`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
 		Size: 30.4 KB (30362 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.19-scala_2.12-java17` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:68067e1d56efd74c67e5656423fb7f7dcc762ddc6fe62ff3f60494ddd77c1a54
+$ docker pull flink@sha256:e3746ad2be548f0c5779b4a0946d4428fb667f951401c0170807e72ed348cdd4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **576.2 MB (576229555 bytes)**  
+-	Total Size: **576.2 MB (576229943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e64309e8f0f82cf7cb0531a953ee881d0af2149d3667975b5af1cb9a478571b`
+-	Image ID: `sha256:5cc0b10fa41d85a2009303adbbb32b4f9763ad3c4f6864f199db22a9c261a035`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -6789,9 +6789,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -6837,63 +6837,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:560407f77d279e68f72a6b12199439583872a1ea3f7441297485cd75f35c2820`  
-		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
-		Size: 1.9 KB (1867 bytes)  
+	-	`sha256:7525b10c4bd14139ded90d85ae282e53b2795402b1d01d327856dc57969f13e3`  
+		Last Modified: Fri, 23 Aug 2024 19:45:19 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ad449889b73484896ec212c8670510e4161d8083aa5ad002579b20df8504b78`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 4.3 MB (4265352 bytes)  
+	-	`sha256:b9f3272af01e149559a1d95590e2b0630a4501876558133e754ec3266f0f1377`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 4.3 MB (4265489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ca919b123f67c1b860be035235046bd79c58881886fd0d56ee2e52996b0b2ef`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 835.4 KB (835384 bytes)  
+	-	`sha256:c87f04576eb489737d425f233e0419d858cc5befc99a55366af6526106664e3a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af640d4f8527554d3e04bc8e91242ab675b885d9e75f0e4fce11b2fe5abc98d0`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
+	-	`sha256:672485f5ca0713a99f24530ca3b4ccdd2f4d27fb5da0eff44b5026ce0af2254a`  
+		Last Modified: Fri, 23 Aug 2024 22:16:03 GMT  
 		Size: 4.6 KB (4629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5191d223139cc82625d5731f61c5fc1b2a62a9e8ccba630488e3e9f01668a33`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
+	-	`sha256:a96c499565df5cd4d1fa202448be3440c50149aa1b7a30bbd8d67f281ffcfb7f`  
+		Last Modified: Fri, 23 Aug 2024 22:16:03 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d40d7eb002c6037f93e704208e64a23220fbb2050aaa743fabbf92e003280a61`  
-		Last Modified: Sat, 17 Aug 2024 06:53:50 GMT  
-		Size: 483.2 MB (483163078 bytes)  
+	-	`sha256:3c88311ca10003e24eeeb5658c89943d4038026225f20448d47e2d8541a7127e`  
+		Last Modified: Fri, 23 Aug 2024 22:16:13 GMT  
+		Size: 483.2 MB (483163090 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4d397ba5ee3395bdc35abb749c250c6d4c874cbe9485bb0aea50059dfdee4bb`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
+	-	`sha256:29dbe7df448c7cf44ebc37a127e48e0794368e70b9e81a5866d990b29099e8a7`  
+		Last Modified: Fri, 23 Aug 2024 22:16:03 GMT  
 		Size: 2.3 KB (2268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19-scala_2.12-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:8bdd4ac8bfcc68733eee9000e127f2dc38515b050a9069d758b8bd92047d94f1
+$ docker pull flink@sha256:5c7e705058f9c017520813ad913cf9d26353f87089f159783d7be6af91e91e35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3757754 bytes)**  
+-	Total Size: **3.8 MB (3757755 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a3b00d33d0b83a69d1774f8464858e79e95cd10cd9290c071eb2da90fb3a6dd6`
+-	Image ID: `sha256:56d251c23b80ee1b9e22000f64f7fd4f643633f62a05902a2bcc7b13385606af`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1fb8c8acb5531925d96d7636a3cf29f7c844ed42a9f1fc23ede690c1533c3605`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
+	-	`sha256:96b54ec3b2ba12e1ff15a314bea014fa82ebb72c7804a0c9da4c8d8937f01270`  
+		Last Modified: Fri, 23 Aug 2024 22:16:03 GMT  
 		Size: 3.7 MB (3727076 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:11663c0f0b065152d6c40314039e07cb3ce4afbba834c5f20ebfc34ae749381b`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
-		Size: 30.7 KB (30678 bytes)  
+	-	`sha256:3d862c42f5f1276f15aa63b36e91d963121755ee59c350a5586f2e1279b8d251`  
+		Last Modified: Fri, 23 Aug 2024 22:16:02 GMT  
+		Size: 30.7 KB (30679 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.19-scala_2.12-java8`
 
 ```console
-$ docker pull flink@sha256:9deef412a5fb306a05cb43ff1c08f9c0d9d208b4836a2504ff6fd90be3f2c1c7
+$ docker pull flink@sha256:aa5ca7dcce78c6f8f6826b2646611272166b11da35ca50fb08e63b5b8ac90f75
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6906,13 +6906,13 @@ $ docker pull flink@sha256:9deef412a5fb306a05cb43ff1c08f9c0d9d208b4836a2504ff6fd
 ### `flink:1.19-scala_2.12-java8` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:5420c302fbfd1a77d082cefb33226db5c2741e37e84b18b604f11240dec6dd79
+$ docker pull flink@sha256:62d72f5c5625d44e9e6efce67397409dd210d632dc51c0056ef139b0d36abdaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **573.7 MB (573685559 bytes)**  
+-	Total Size: **573.7 MB (573685735 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08770f9f7f90fbcb6266ff0498d0669b9dab28adbfd44c38ec9b573f071dfe43`
+-	Image ID: `sha256:06796e8751b8769ef1ef6b1a2c6266591f0bc8df009f5f79dd3f0c2497cf49f3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -6944,9 +6944,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -6992,69 +6992,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63f0966d15e28d4f9d2446b285da398fbbc46c4fdd3e46d16dd24c27e54a7968`  
-		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:549fdae8215d87f93f320e0b858daecaf8ec8ca17d44c21986c5a17d9f682905`  
+		Last Modified: Fri, 23 Aug 2024 19:25:15 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:220d5dc5fb15158e4a6af90effdd5b8dd6efd614bdd8c6e5ff76cb3524e51e48`  
-		Last Modified: Sat, 17 Aug 2024 02:01:14 GMT  
-		Size: 4.4 MB (4416731 bytes)  
+	-	`sha256:b60a58f3ffce611cea079a17fd6407d39dfe12fcdbc81dbf0b44b7c8975f257c`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
+		Size: 4.4 MB (4416809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1293a8581890e45ac30c625499130e468cb5349178d1e02f60c181e86329849`  
-		Last Modified: Sat, 17 Aug 2024 02:01:14 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:bb5e745fed31d7d1c330c11fb9db9309d622a3c4ab7bb3216b95e59873eb2b81`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
+		Size: 900.5 KB (900495 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3509644384c0d71b5d3818ffde26aa46816c86d1a385226439587e09a68b9571`  
-		Last Modified: Sat, 17 Aug 2024 02:01:13 GMT  
-		Size: 4.6 KB (4591 bytes)  
+	-	`sha256:2d3fd9c72bbd51bb066ce4feeaa5e0365333957282ccf887899cb81c3518b21a`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
+		Size: 4.6 KB (4593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb44f362597c6b00043d96956831d91e1f8239bb63a5b2d9dd0f6870d1364a88`  
-		Last Modified: Sat, 17 Aug 2024 02:01:13 GMT  
-		Size: 115.0 B  
+	-	`sha256:c30907ba05b3eb96a94369bedcb2de47d3776af22062bcb0acf36f350c3a4dfb`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ab07166b99ff5bde7b4fedc385b4a9a3aab1cb151826e7ee6a7a087178c0533`  
-		Last Modified: Sat, 17 Aug 2024 02:01:25 GMT  
-		Size: 483.2 MB (483163251 bytes)  
+	-	`sha256:414837c829cd6e77fc82ce6830d2700141a2a59c4c322471fa85819b86818f20`  
+		Last Modified: Fri, 23 Aug 2024 20:08:05 GMT  
+		Size: 483.2 MB (483163100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:7f3f9a72f8ec60a7b6c24668a383a7d0560f3da6995143effd074d5a0c84fe88`  
+		Last Modified: Fri, 23 Aug 2024 20:07:57 GMT  
+		Size: 2.3 KB (2268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19-scala_2.12-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:82e1938e0c5f281e83d0334136ada683cb925bd8bfedd92683fa3c4758189c6d
+$ docker pull flink@sha256:90ea4cc798bb1e25a62c8ee0a7296f4732695eab4b170610f844bba814ca1dda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3777517 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f41414d3d60c3c15e8a10f38b442d2ea76619f1e42c0924714cccd4899f1087`
+-	Image ID: `sha256:4d70d04ef5792f1c88f2ddb6bb8ac7664bec85f26efde823326504897a1e451f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b914a7d0e55b60244ea50df8ff7501960065d039383ccfad1f7d36c2fc3d9f28`  
-		Last Modified: Sat, 17 Aug 2024 02:01:14 GMT  
+	-	`sha256:b859f407441f170a47164df92e436ab92b690ae39e92c01c1c636adc0cf2e1c3`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
 		Size: 3.7 MB (3747174 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ea318dc928854b8590186b80da3f76ff4b60967feebdc04d626f4e2c507b4b45`  
-		Last Modified: Sat, 17 Aug 2024 02:01:13 GMT  
+	-	`sha256:bd7504a8a87c0eeb282c040bfc3bd14b3c491cb38168bd29b6f37871ae1edcdc`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
 		Size: 30.3 KB (30343 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.19-scala_2.12-java8` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:c555a6987283da328dfcf52504f63a72073c85fa6f9a2f76328d8eb45e1098ff
+$ docker pull flink@sha256:5d12573fcffec68c44a8df194c69b7cf5b40d6bce3f7164deef6274f8fd7eb8c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **570.3 MB (570340167 bytes)**  
+-	Total Size: **570.3 MB (570340499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b4fae76d834c6a79410f10e61a3c0377c5490403d7a10c37e3fa0699c39d78d4`
+-	Image ID: `sha256:e75f34937b1103ed9358c8481c2579bbcae1ad4d4f7ede2dee57a719fba3bf95`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -7086,9 +7086,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -7134,63 +7134,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b3a4248864654ce3e18048693bd49d77e323e35ce5e94fddc9a726a2faaeeb`  
-		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:db7acc9dfbf237a216b04a6b690009ad96051dd54ed79368fbd1e8306fbe4f05`  
+		Last Modified: Fri, 23 Aug 2024 19:43:12 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:810c5e271b495dd2f643060afb28946fb0c049eaed8479525f89c85fe41e8758`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 4.3 MB (4265413 bytes)  
+	-	`sha256:bcd5931f222e62a2780a370c553ddb4fc0e5ba856d0c4d1949908b6dd82987a9`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 4.3 MB (4265514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0018f9f96b94973046f70a5954b494f43d8753b53869d54a0df33933c063b3e9`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 835.4 KB (835383 bytes)  
+	-	`sha256:52a74542e3f8d53bdef5981075a820ad1cbd1065a63f8361ca7ab8f3e257d575`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d28fad690cc91eafae91999987384aedef7d5c6d38640170a4495022fbe5fbf9`  
-		Last Modified: Sat, 17 Aug 2024 06:52:16 GMT  
-		Size: 4.6 KB (4631 bytes)  
+	-	`sha256:321a1c8ccdc72ce033f83441bd81595bd9033cf9541a5fe4e6d66f86e4180568`  
+		Last Modified: Fri, 23 Aug 2024 22:14:32 GMT  
+		Size: 4.6 KB (4627 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63a32cf4cf3b31c927f9a338fbce095baffea7cd1ba744f2c980490de78be927`  
-		Last Modified: Sat, 17 Aug 2024 06:52:16 GMT  
+	-	`sha256:0bb30a87b7c4a39348b21de43629baf02a4cbfd8435a1a47dc6c7e8fe37832ec`  
+		Last Modified: Fri, 23 Aug 2024 22:14:32 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:507314e2d77730ed7d72cfcc7aa4512d1bbf6faaedf30f7ea1a71240568d2354`  
-		Last Modified: Sat, 17 Aug 2024 06:52:26 GMT  
-		Size: 483.2 MB (483163126 bytes)  
+	-	`sha256:5ca57d0fe9dbcd62368d6cc091e8a1d7a0c1a0bf67ac4558ab5ed64e5ffb9ad8`  
+		Last Modified: Fri, 23 Aug 2024 22:14:44 GMT  
+		Size: 483.2 MB (483163120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d120c3d05deeea2fe580b066af67c83f2ed7235f48b87525e2c400f4b2b3716`  
-		Last Modified: Sat, 17 Aug 2024 06:52:17 GMT  
+	-	`sha256:8c7226b58df8c27dbe517ba333ec7fa97529eb29fac3824a6052f32e25d39e28`  
+		Last Modified: Fri, 23 Aug 2024 22:14:33 GMT  
 		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19-scala_2.12-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:7f1cff18ae9c8da59f30126813f2adfcb957f6ce151db747cc3d6063e4e11787
+$ docker pull flink@sha256:d9ee4dbd25d9a0424ae1e94e1279ffd956c63ddaff4a1a95992f3fcd54d706dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3778135 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ebab829e8e6cb4bbf75cba92e42bf8b307c72838daf67f126c5b8e4963196df7`
+-	Image ID: `sha256:d38759657463fc7975eee5b4d63c6723598331fcfbadf977e3dc9cf359c8f459`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2cd7659d7214aaf33ce8cfc26da248d28f7344ed7771797eb3e1d3f2ded168a1`  
-		Last Modified: Sat, 17 Aug 2024 06:52:17 GMT  
+	-	`sha256:24a48486809058325481852c27d0d34756f19ab57f5f2769b2c41ab5255525ef`  
+		Last Modified: Fri, 23 Aug 2024 22:14:32 GMT  
 		Size: 3.7 MB (3747476 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4fd11e54c475594141a8d3896cc7f7b266543e0f5f17ac6be97c635733e6d5b4`  
-		Last Modified: Sat, 17 Aug 2024 06:52:16 GMT  
+	-	`sha256:a1c3f789c7a97207d0972e07a6beca8d19fb9ec2fb1d776daac198c194ec835a`  
+		Last Modified: Fri, 23 Aug 2024 22:14:32 GMT  
 		Size: 30.7 KB (30659 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.19.1`
 
 ```console
-$ docker pull flink@sha256:fdc4dc46bf5db57cd265c5367566a8dd284abe8b37fbb30488122cdaa98b78df
+$ docker pull flink@sha256:d555cd02249dcb65924b88f9f6a94c1370845a40e3ded8ac8e28161fe30193c2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7203,13 +7203,13 @@ $ docker pull flink@sha256:fdc4dc46bf5db57cd265c5367566a8dd284abe8b37fbb30488122
 ### `flink:1.19.1` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:a0875e1fa890b5b0e8c52c3576ec4156697c00f88387e2dc8d3a5f4052850685
+$ docker pull flink@sha256:cfcce58a889019b105b26430ed460784ce66a739b11825a84573de6a1600c12b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.0 MB (578999502 bytes)**  
+-	Total Size: **579.0 MB (578999674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80358783d907364dc8f02d132f72b2f90ca2e3a8dc7f39300111e41f518b6783`
+-	Image ID: `sha256:321a1496548d7eb39a782081ae6e63ccf2f4296a0acaabb1ddeeb744d2cdeb8f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -7241,9 +7241,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -7289,56 +7289,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c18218a39d75d55a9ad8b1d63c660e05d04761c285e7787390933dbd36fc7843`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
-		Size: 4.4 MB (4416750 bytes)  
+	-	`sha256:116882d1560497453e55d4e9fd88092838826cd1ccc960bf15d2891b78d3b36f`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 4.4 MB (4416838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c027a548f8c207c5c9bc570fb54d6f06dedaf4517b27e18f52a9467d30ff5e56`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:5a49a47896b791dd44371179626abebbf048dcc8df024a7346f5ed6baff9aaa4`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 900.5 KB (900496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdf57c669e48b9c67450a88da56a8a0c28100967aecbfaf328349a2e1b1b0d69`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ef54fe499d4b848d54044e86684004e2d879f8f295409f107686000e95fbaa6`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bd774dc1fbc5169c47be03fb910b7f38778154054f38ae6b75d5eb692e1925b`  
-		Last Modified: Sat, 17 Aug 2024 02:02:18 GMT  
-		Size: 483.2 MB (483163251 bytes)  
+	-	`sha256:bcfb939b004bc7de2a0c263777549a0f2661431afc18b2c790bbdc4f3ba54637`  
+		Last Modified: Fri, 23 Aug 2024 20:06:27 GMT  
+		Size: 483.2 MB (483163088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:571b2e476b1b0ba9477c2af84d09b9c4770e1ddac7e77b42c40c0f304fbb7b16`  
-		Last Modified: Sat, 17 Aug 2024 02:02:11 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:f1ed8949868f7ff2b0fd34676ddff75bb6b40e67a301e587c71d1846dec48238`  
+		Last Modified: Fri, 23 Aug 2024 20:06:21 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19.1` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:43b5e7117f7c71c3b21e6f5654e50f2c7498fa57cbcdc4d0affd6b7b6569b047
+$ docker pull flink@sha256:281a3c747f212f0c0f88a5fc677f3736487f318f4280adb18647162886ad082b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3759576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:985ff58215f692841febf4482df4ddb55cf256253ddbe0fe8c2ce1949badf7fa`
+-	Image ID: `sha256:904c024f943bdf4c0ae91d7c032bccf19ce53bc2f77f48d2fd18f54d4d195ebb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d9ee07c0f10b72876a45ff24f22adceb557ba333446fbb0fb3b05bb6868be145`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:fa8e4beae92b60209dfdf4b31fd0395ceca96b0d883bf017204bd2904be5ae28`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
 		Size: 3.7 MB (3727994 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aa64cf2a2252efa5afb24d2ebdde254dd02fbf40d3a118122de76a17cca0b323`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:c8ea9a9becad8efb71912bd910dc0456b123c4be658eb39f722e826af5a36d86`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
 		Size: 31.6 KB (31582 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7487,7 +7487,7 @@ $ docker pull flink@sha256:dea1ab10a68916bed9934d5578b8ea38040ad568e26627b73f1b3
 ## `flink:1.19.1-java11`
 
 ```console
-$ docker pull flink@sha256:fdc4dc46bf5db57cd265c5367566a8dd284abe8b37fbb30488122cdaa98b78df
+$ docker pull flink@sha256:d555cd02249dcb65924b88f9f6a94c1370845a40e3ded8ac8e28161fe30193c2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7500,13 +7500,13 @@ $ docker pull flink@sha256:fdc4dc46bf5db57cd265c5367566a8dd284abe8b37fbb30488122
 ### `flink:1.19.1-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:a0875e1fa890b5b0e8c52c3576ec4156697c00f88387e2dc8d3a5f4052850685
+$ docker pull flink@sha256:cfcce58a889019b105b26430ed460784ce66a739b11825a84573de6a1600c12b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.0 MB (578999502 bytes)**  
+-	Total Size: **579.0 MB (578999674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80358783d907364dc8f02d132f72b2f90ca2e3a8dc7f39300111e41f518b6783`
+-	Image ID: `sha256:321a1496548d7eb39a782081ae6e63ccf2f4296a0acaabb1ddeeb744d2cdeb8f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -7538,9 +7538,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -7586,56 +7586,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c18218a39d75d55a9ad8b1d63c660e05d04761c285e7787390933dbd36fc7843`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
-		Size: 4.4 MB (4416750 bytes)  
+	-	`sha256:116882d1560497453e55d4e9fd88092838826cd1ccc960bf15d2891b78d3b36f`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 4.4 MB (4416838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c027a548f8c207c5c9bc570fb54d6f06dedaf4517b27e18f52a9467d30ff5e56`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:5a49a47896b791dd44371179626abebbf048dcc8df024a7346f5ed6baff9aaa4`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 900.5 KB (900496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdf57c669e48b9c67450a88da56a8a0c28100967aecbfaf328349a2e1b1b0d69`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ef54fe499d4b848d54044e86684004e2d879f8f295409f107686000e95fbaa6`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bd774dc1fbc5169c47be03fb910b7f38778154054f38ae6b75d5eb692e1925b`  
-		Last Modified: Sat, 17 Aug 2024 02:02:18 GMT  
-		Size: 483.2 MB (483163251 bytes)  
+	-	`sha256:bcfb939b004bc7de2a0c263777549a0f2661431afc18b2c790bbdc4f3ba54637`  
+		Last Modified: Fri, 23 Aug 2024 20:06:27 GMT  
+		Size: 483.2 MB (483163088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:571b2e476b1b0ba9477c2af84d09b9c4770e1ddac7e77b42c40c0f304fbb7b16`  
-		Last Modified: Sat, 17 Aug 2024 02:02:11 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:f1ed8949868f7ff2b0fd34676ddff75bb6b40e67a301e587c71d1846dec48238`  
+		Last Modified: Fri, 23 Aug 2024 20:06:21 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19.1-java11` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:43b5e7117f7c71c3b21e6f5654e50f2c7498fa57cbcdc4d0affd6b7b6569b047
+$ docker pull flink@sha256:281a3c747f212f0c0f88a5fc677f3736487f318f4280adb18647162886ad082b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3759576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:985ff58215f692841febf4482df4ddb55cf256253ddbe0fe8c2ce1949badf7fa`
+-	Image ID: `sha256:904c024f943bdf4c0ae91d7c032bccf19ce53bc2f77f48d2fd18f54d4d195ebb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d9ee07c0f10b72876a45ff24f22adceb557ba333446fbb0fb3b05bb6868be145`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:fa8e4beae92b60209dfdf4b31fd0395ceca96b0d883bf017204bd2904be5ae28`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
 		Size: 3.7 MB (3727994 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aa64cf2a2252efa5afb24d2ebdde254dd02fbf40d3a118122de76a17cca0b323`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:c8ea9a9becad8efb71912bd910dc0456b123c4be658eb39f722e826af5a36d86`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
 		Size: 31.6 KB (31582 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7784,7 +7784,7 @@ $ docker pull flink@sha256:dea1ab10a68916bed9934d5578b8ea38040ad568e26627b73f1b3
 ## `flink:1.19.1-java17`
 
 ```console
-$ docker pull flink@sha256:fc99fcba0d5700b4825fb9bace40c1812b42af489b5261df5e5751ded6e082fb
+$ docker pull flink@sha256:e7d4d15eb8a8a33e21f4a2dbedb3748220cf3931e40a732263450144d5df977b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7797,13 +7797,13 @@ $ docker pull flink@sha256:fc99fcba0d5700b4825fb9bace40c1812b42af489b5261df5e575
 ### `flink:1.19.1-java17` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:1f81ab7f6ea3be60e15990b8bce3c307d9356790bd091d1d6da32f1cc86f4ac8
+$ docker pull flink@sha256:a56ebe5b650cd4d7abdc01ba55a1e4db17fd7c75a52d93f15523f49eb58948ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.1 MB (579081162 bytes)**  
+-	Total Size: **579.1 MB (579081439 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5df2d6670146ce0bcc002045beb11c91ce73c497aaaf4bde8ef68fb603e72ba`
+-	Image ID: `sha256:88418c3fb0fa42432739df07fee063d8a326fca88857145f76415d90e7756a6c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -7835,9 +7835,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -7883,69 +7883,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd24317609f1b5444d777c0434ab11020010745e5fa797d14158b433e7d085e`  
-		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:5161e45ecd8d096f978edcb483c5ed70580526e02a1f8155653ca1c6c192f097`  
+		Last Modified: Fri, 23 Aug 2024 19:27:49 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dabcb24b0736af443308c2d4b117959aab676db1802357e7eda6bb79112724ed`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
-		Size: 4.4 MB (4416814 bytes)  
+	-	`sha256:5b77fdf2bbfdd91476f5efdd2ced01791b83412d30978a1c036fa8bd6447bd29`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
+		Size: 4.4 MB (4416774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e371bf9db245fe00dd137b6cff9b3a96c27fbbb4b450b8386566e7b94a97c60`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
-		Size: 900.5 KB (900497 bytes)  
+	-	`sha256:22013c9aee299e29ee9f8e7276adbc391fc022e0168c9557c7dbcaa5a0aad4d0`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
+		Size: 900.5 KB (900492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6664b2c1cc3bfa5502fd5835ce1f495eef34cc324eecdca42eb39a66bef03b15`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
-		Size: 4.6 KB (4592 bytes)  
+	-	`sha256:de4047f4af071771a2f4168ee1b75cb6d5ccab7bd477992e1c3f5e754a14d1a0`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
+		Size: 4.6 KB (4593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50dddbd288a869e3aff6d60f11a014b89f18b58d1580753e175b4dcf3f3ca6b3`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
-		Size: 115.0 B  
+	-	`sha256:a8786e6bd34b2dda9683c04b8154c40ca57a00b35e94690d23d8c39952fe8d32`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca629973511f84f73af655d9d1a91d666bcf20e4e98bd967694a62103b15ebe5`  
-		Last Modified: Sat, 17 Aug 2024 02:03:32 GMT  
-		Size: 483.2 MB (483163049 bytes)  
+	-	`sha256:ee8758a7756734a9ed4765dc5aec11ea96ccf9f817d5c7d4a3bd50e71e5c8a44`  
+		Last Modified: Fri, 23 Aug 2024 20:07:41 GMT  
+		Size: 483.2 MB (483163126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:fc2d66e5b11dfff70f6ebd5caf386db5c977beb06484373058ddedc6962e039b`  
+		Last Modified: Fri, 23 Aug 2024 20:07:32 GMT  
+		Size: 2.3 KB (2268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19.1-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:464ef568f081eeae558322f91ec52b34e7715ac352d7bcbbb7788aed7f7cbf29
+$ docker pull flink@sha256:c38796fce8ab38ab1434bfb612027e39e4fd2044481211816b1615ef73942082
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3757136 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0889913ea9d39195b814a8d1608cd92a9dc3fc7b19628b3e81656bce58236978`
+-	Image ID: `sha256:b1d41b9053ced4b45bd934d2b28196af64314278e39506bf729c84597775b099`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:795f1fa6e6f7b73bd1cea4493efbeff5151fd080a9bb2a449cd6ed34c12953ad`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
+	-	`sha256:ff4326b988da03c8fb1b264e62e4d530c2d044259898817b4e4fe2dbbcc8ed98`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
 		Size: 3.7 MB (3726774 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:89fb3712f6cdb62cfc199cda56036f4cb7f97b66d77fde901f0b8a2065ca3b80`  
-		Last Modified: Sat, 17 Aug 2024 02:03:21 GMT  
+	-	`sha256:02ab4cb634547d140ec3122fa7d86a735266d024972afcd6633b78525e028391`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
 		Size: 30.4 KB (30362 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.19.1-java17` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:68067e1d56efd74c67e5656423fb7f7dcc762ddc6fe62ff3f60494ddd77c1a54
+$ docker pull flink@sha256:e3746ad2be548f0c5779b4a0946d4428fb667f951401c0170807e72ed348cdd4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **576.2 MB (576229555 bytes)**  
+-	Total Size: **576.2 MB (576229943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e64309e8f0f82cf7cb0531a953ee881d0af2149d3667975b5af1cb9a478571b`
+-	Image ID: `sha256:5cc0b10fa41d85a2009303adbbb32b4f9763ad3c4f6864f199db22a9c261a035`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -7977,9 +7977,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -8025,63 +8025,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:560407f77d279e68f72a6b12199439583872a1ea3f7441297485cd75f35c2820`  
-		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
-		Size: 1.9 KB (1867 bytes)  
+	-	`sha256:7525b10c4bd14139ded90d85ae282e53b2795402b1d01d327856dc57969f13e3`  
+		Last Modified: Fri, 23 Aug 2024 19:45:19 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ad449889b73484896ec212c8670510e4161d8083aa5ad002579b20df8504b78`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 4.3 MB (4265352 bytes)  
+	-	`sha256:b9f3272af01e149559a1d95590e2b0630a4501876558133e754ec3266f0f1377`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 4.3 MB (4265489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ca919b123f67c1b860be035235046bd79c58881886fd0d56ee2e52996b0b2ef`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 835.4 KB (835384 bytes)  
+	-	`sha256:c87f04576eb489737d425f233e0419d858cc5befc99a55366af6526106664e3a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af640d4f8527554d3e04bc8e91242ab675b885d9e75f0e4fce11b2fe5abc98d0`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
+	-	`sha256:672485f5ca0713a99f24530ca3b4ccdd2f4d27fb5da0eff44b5026ce0af2254a`  
+		Last Modified: Fri, 23 Aug 2024 22:16:03 GMT  
 		Size: 4.6 KB (4629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5191d223139cc82625d5731f61c5fc1b2a62a9e8ccba630488e3e9f01668a33`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
+	-	`sha256:a96c499565df5cd4d1fa202448be3440c50149aa1b7a30bbd8d67f281ffcfb7f`  
+		Last Modified: Fri, 23 Aug 2024 22:16:03 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d40d7eb002c6037f93e704208e64a23220fbb2050aaa743fabbf92e003280a61`  
-		Last Modified: Sat, 17 Aug 2024 06:53:50 GMT  
-		Size: 483.2 MB (483163078 bytes)  
+	-	`sha256:3c88311ca10003e24eeeb5658c89943d4038026225f20448d47e2d8541a7127e`  
+		Last Modified: Fri, 23 Aug 2024 22:16:13 GMT  
+		Size: 483.2 MB (483163090 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4d397ba5ee3395bdc35abb749c250c6d4c874cbe9485bb0aea50059dfdee4bb`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
+	-	`sha256:29dbe7df448c7cf44ebc37a127e48e0794368e70b9e81a5866d990b29099e8a7`  
+		Last Modified: Fri, 23 Aug 2024 22:16:03 GMT  
 		Size: 2.3 KB (2268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19.1-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:8bdd4ac8bfcc68733eee9000e127f2dc38515b050a9069d758b8bd92047d94f1
+$ docker pull flink@sha256:5c7e705058f9c017520813ad913cf9d26353f87089f159783d7be6af91e91e35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3757754 bytes)**  
+-	Total Size: **3.8 MB (3757755 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a3b00d33d0b83a69d1774f8464858e79e95cd10cd9290c071eb2da90fb3a6dd6`
+-	Image ID: `sha256:56d251c23b80ee1b9e22000f64f7fd4f643633f62a05902a2bcc7b13385606af`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1fb8c8acb5531925d96d7636a3cf29f7c844ed42a9f1fc23ede690c1533c3605`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
+	-	`sha256:96b54ec3b2ba12e1ff15a314bea014fa82ebb72c7804a0c9da4c8d8937f01270`  
+		Last Modified: Fri, 23 Aug 2024 22:16:03 GMT  
 		Size: 3.7 MB (3727076 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:11663c0f0b065152d6c40314039e07cb3ce4afbba834c5f20ebfc34ae749381b`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
-		Size: 30.7 KB (30678 bytes)  
+	-	`sha256:3d862c42f5f1276f15aa63b36e91d963121755ee59c350a5586f2e1279b8d251`  
+		Last Modified: Fri, 23 Aug 2024 22:16:02 GMT  
+		Size: 30.7 KB (30679 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.19.1-java8`
 
 ```console
-$ docker pull flink@sha256:9deef412a5fb306a05cb43ff1c08f9c0d9d208b4836a2504ff6fd90be3f2c1c7
+$ docker pull flink@sha256:aa5ca7dcce78c6f8f6826b2646611272166b11da35ca50fb08e63b5b8ac90f75
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8094,13 +8094,13 @@ $ docker pull flink@sha256:9deef412a5fb306a05cb43ff1c08f9c0d9d208b4836a2504ff6fd
 ### `flink:1.19.1-java8` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:5420c302fbfd1a77d082cefb33226db5c2741e37e84b18b604f11240dec6dd79
+$ docker pull flink@sha256:62d72f5c5625d44e9e6efce67397409dd210d632dc51c0056ef139b0d36abdaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **573.7 MB (573685559 bytes)**  
+-	Total Size: **573.7 MB (573685735 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08770f9f7f90fbcb6266ff0498d0669b9dab28adbfd44c38ec9b573f071dfe43`
+-	Image ID: `sha256:06796e8751b8769ef1ef6b1a2c6266591f0bc8df009f5f79dd3f0c2497cf49f3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -8132,9 +8132,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -8180,69 +8180,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63f0966d15e28d4f9d2446b285da398fbbc46c4fdd3e46d16dd24c27e54a7968`  
-		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:549fdae8215d87f93f320e0b858daecaf8ec8ca17d44c21986c5a17d9f682905`  
+		Last Modified: Fri, 23 Aug 2024 19:25:15 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:220d5dc5fb15158e4a6af90effdd5b8dd6efd614bdd8c6e5ff76cb3524e51e48`  
-		Last Modified: Sat, 17 Aug 2024 02:01:14 GMT  
-		Size: 4.4 MB (4416731 bytes)  
+	-	`sha256:b60a58f3ffce611cea079a17fd6407d39dfe12fcdbc81dbf0b44b7c8975f257c`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
+		Size: 4.4 MB (4416809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1293a8581890e45ac30c625499130e468cb5349178d1e02f60c181e86329849`  
-		Last Modified: Sat, 17 Aug 2024 02:01:14 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:bb5e745fed31d7d1c330c11fb9db9309d622a3c4ab7bb3216b95e59873eb2b81`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
+		Size: 900.5 KB (900495 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3509644384c0d71b5d3818ffde26aa46816c86d1a385226439587e09a68b9571`  
-		Last Modified: Sat, 17 Aug 2024 02:01:13 GMT  
-		Size: 4.6 KB (4591 bytes)  
+	-	`sha256:2d3fd9c72bbd51bb066ce4feeaa5e0365333957282ccf887899cb81c3518b21a`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
+		Size: 4.6 KB (4593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb44f362597c6b00043d96956831d91e1f8239bb63a5b2d9dd0f6870d1364a88`  
-		Last Modified: Sat, 17 Aug 2024 02:01:13 GMT  
-		Size: 115.0 B  
+	-	`sha256:c30907ba05b3eb96a94369bedcb2de47d3776af22062bcb0acf36f350c3a4dfb`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ab07166b99ff5bde7b4fedc385b4a9a3aab1cb151826e7ee6a7a087178c0533`  
-		Last Modified: Sat, 17 Aug 2024 02:01:25 GMT  
-		Size: 483.2 MB (483163251 bytes)  
+	-	`sha256:414837c829cd6e77fc82ce6830d2700141a2a59c4c322471fa85819b86818f20`  
+		Last Modified: Fri, 23 Aug 2024 20:08:05 GMT  
+		Size: 483.2 MB (483163100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:7f3f9a72f8ec60a7b6c24668a383a7d0560f3da6995143effd074d5a0c84fe88`  
+		Last Modified: Fri, 23 Aug 2024 20:07:57 GMT  
+		Size: 2.3 KB (2268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19.1-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:82e1938e0c5f281e83d0334136ada683cb925bd8bfedd92683fa3c4758189c6d
+$ docker pull flink@sha256:90ea4cc798bb1e25a62c8ee0a7296f4732695eab4b170610f844bba814ca1dda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3777517 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f41414d3d60c3c15e8a10f38b442d2ea76619f1e42c0924714cccd4899f1087`
+-	Image ID: `sha256:4d70d04ef5792f1c88f2ddb6bb8ac7664bec85f26efde823326504897a1e451f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b914a7d0e55b60244ea50df8ff7501960065d039383ccfad1f7d36c2fc3d9f28`  
-		Last Modified: Sat, 17 Aug 2024 02:01:14 GMT  
+	-	`sha256:b859f407441f170a47164df92e436ab92b690ae39e92c01c1c636adc0cf2e1c3`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
 		Size: 3.7 MB (3747174 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ea318dc928854b8590186b80da3f76ff4b60967feebdc04d626f4e2c507b4b45`  
-		Last Modified: Sat, 17 Aug 2024 02:01:13 GMT  
+	-	`sha256:bd7504a8a87c0eeb282c040bfc3bd14b3c491cb38168bd29b6f37871ae1edcdc`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
 		Size: 30.3 KB (30343 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.19.1-java8` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:c555a6987283da328dfcf52504f63a72073c85fa6f9a2f76328d8eb45e1098ff
+$ docker pull flink@sha256:5d12573fcffec68c44a8df194c69b7cf5b40d6bce3f7164deef6274f8fd7eb8c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **570.3 MB (570340167 bytes)**  
+-	Total Size: **570.3 MB (570340499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b4fae76d834c6a79410f10e61a3c0377c5490403d7a10c37e3fa0699c39d78d4`
+-	Image ID: `sha256:e75f34937b1103ed9358c8481c2579bbcae1ad4d4f7ede2dee57a719fba3bf95`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -8274,9 +8274,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -8322,63 +8322,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b3a4248864654ce3e18048693bd49d77e323e35ce5e94fddc9a726a2faaeeb`  
-		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:db7acc9dfbf237a216b04a6b690009ad96051dd54ed79368fbd1e8306fbe4f05`  
+		Last Modified: Fri, 23 Aug 2024 19:43:12 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:810c5e271b495dd2f643060afb28946fb0c049eaed8479525f89c85fe41e8758`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 4.3 MB (4265413 bytes)  
+	-	`sha256:bcd5931f222e62a2780a370c553ddb4fc0e5ba856d0c4d1949908b6dd82987a9`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 4.3 MB (4265514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0018f9f96b94973046f70a5954b494f43d8753b53869d54a0df33933c063b3e9`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 835.4 KB (835383 bytes)  
+	-	`sha256:52a74542e3f8d53bdef5981075a820ad1cbd1065a63f8361ca7ab8f3e257d575`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d28fad690cc91eafae91999987384aedef7d5c6d38640170a4495022fbe5fbf9`  
-		Last Modified: Sat, 17 Aug 2024 06:52:16 GMT  
-		Size: 4.6 KB (4631 bytes)  
+	-	`sha256:321a1c8ccdc72ce033f83441bd81595bd9033cf9541a5fe4e6d66f86e4180568`  
+		Last Modified: Fri, 23 Aug 2024 22:14:32 GMT  
+		Size: 4.6 KB (4627 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63a32cf4cf3b31c927f9a338fbce095baffea7cd1ba744f2c980490de78be927`  
-		Last Modified: Sat, 17 Aug 2024 06:52:16 GMT  
+	-	`sha256:0bb30a87b7c4a39348b21de43629baf02a4cbfd8435a1a47dc6c7e8fe37832ec`  
+		Last Modified: Fri, 23 Aug 2024 22:14:32 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:507314e2d77730ed7d72cfcc7aa4512d1bbf6faaedf30f7ea1a71240568d2354`  
-		Last Modified: Sat, 17 Aug 2024 06:52:26 GMT  
-		Size: 483.2 MB (483163126 bytes)  
+	-	`sha256:5ca57d0fe9dbcd62368d6cc091e8a1d7a0c1a0bf67ac4558ab5ed64e5ffb9ad8`  
+		Last Modified: Fri, 23 Aug 2024 22:14:44 GMT  
+		Size: 483.2 MB (483163120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d120c3d05deeea2fe580b066af67c83f2ed7235f48b87525e2c400f4b2b3716`  
-		Last Modified: Sat, 17 Aug 2024 06:52:17 GMT  
+	-	`sha256:8c7226b58df8c27dbe517ba333ec7fa97529eb29fac3824a6052f32e25d39e28`  
+		Last Modified: Fri, 23 Aug 2024 22:14:33 GMT  
 		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19.1-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:7f1cff18ae9c8da59f30126813f2adfcb957f6ce151db747cc3d6063e4e11787
+$ docker pull flink@sha256:d9ee4dbd25d9a0424ae1e94e1279ffd956c63ddaff4a1a95992f3fcd54d706dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3778135 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ebab829e8e6cb4bbf75cba92e42bf8b307c72838daf67f126c5b8e4963196df7`
+-	Image ID: `sha256:d38759657463fc7975eee5b4d63c6723598331fcfbadf977e3dc9cf359c8f459`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2cd7659d7214aaf33ce8cfc26da248d28f7344ed7771797eb3e1d3f2ded168a1`  
-		Last Modified: Sat, 17 Aug 2024 06:52:17 GMT  
+	-	`sha256:24a48486809058325481852c27d0d34756f19ab57f5f2769b2c41ab5255525ef`  
+		Last Modified: Fri, 23 Aug 2024 22:14:32 GMT  
 		Size: 3.7 MB (3747476 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4fd11e54c475594141a8d3896cc7f7b266543e0f5f17ac6be97c635733e6d5b4`  
-		Last Modified: Sat, 17 Aug 2024 06:52:16 GMT  
+	-	`sha256:a1c3f789c7a97207d0972e07a6beca8d19fb9ec2fb1d776daac198c194ec835a`  
+		Last Modified: Fri, 23 Aug 2024 22:14:32 GMT  
 		Size: 30.7 KB (30659 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.19.1-scala_2.12`
 
 ```console
-$ docker pull flink@sha256:fdc4dc46bf5db57cd265c5367566a8dd284abe8b37fbb30488122cdaa98b78df
+$ docker pull flink@sha256:d555cd02249dcb65924b88f9f6a94c1370845a40e3ded8ac8e28161fe30193c2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8391,13 +8391,13 @@ $ docker pull flink@sha256:fdc4dc46bf5db57cd265c5367566a8dd284abe8b37fbb30488122
 ### `flink:1.19.1-scala_2.12` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:a0875e1fa890b5b0e8c52c3576ec4156697c00f88387e2dc8d3a5f4052850685
+$ docker pull flink@sha256:cfcce58a889019b105b26430ed460784ce66a739b11825a84573de6a1600c12b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.0 MB (578999502 bytes)**  
+-	Total Size: **579.0 MB (578999674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80358783d907364dc8f02d132f72b2f90ca2e3a8dc7f39300111e41f518b6783`
+-	Image ID: `sha256:321a1496548d7eb39a782081ae6e63ccf2f4296a0acaabb1ddeeb744d2cdeb8f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -8429,9 +8429,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -8477,56 +8477,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c18218a39d75d55a9ad8b1d63c660e05d04761c285e7787390933dbd36fc7843`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
-		Size: 4.4 MB (4416750 bytes)  
+	-	`sha256:116882d1560497453e55d4e9fd88092838826cd1ccc960bf15d2891b78d3b36f`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 4.4 MB (4416838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c027a548f8c207c5c9bc570fb54d6f06dedaf4517b27e18f52a9467d30ff5e56`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:5a49a47896b791dd44371179626abebbf048dcc8df024a7346f5ed6baff9aaa4`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 900.5 KB (900496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdf57c669e48b9c67450a88da56a8a0c28100967aecbfaf328349a2e1b1b0d69`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ef54fe499d4b848d54044e86684004e2d879f8f295409f107686000e95fbaa6`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bd774dc1fbc5169c47be03fb910b7f38778154054f38ae6b75d5eb692e1925b`  
-		Last Modified: Sat, 17 Aug 2024 02:02:18 GMT  
-		Size: 483.2 MB (483163251 bytes)  
+	-	`sha256:bcfb939b004bc7de2a0c263777549a0f2661431afc18b2c790bbdc4f3ba54637`  
+		Last Modified: Fri, 23 Aug 2024 20:06:27 GMT  
+		Size: 483.2 MB (483163088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:571b2e476b1b0ba9477c2af84d09b9c4770e1ddac7e77b42c40c0f304fbb7b16`  
-		Last Modified: Sat, 17 Aug 2024 02:02:11 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:f1ed8949868f7ff2b0fd34676ddff75bb6b40e67a301e587c71d1846dec48238`  
+		Last Modified: Fri, 23 Aug 2024 20:06:21 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19.1-scala_2.12` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:43b5e7117f7c71c3b21e6f5654e50f2c7498fa57cbcdc4d0affd6b7b6569b047
+$ docker pull flink@sha256:281a3c747f212f0c0f88a5fc677f3736487f318f4280adb18647162886ad082b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3759576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:985ff58215f692841febf4482df4ddb55cf256253ddbe0fe8c2ce1949badf7fa`
+-	Image ID: `sha256:904c024f943bdf4c0ae91d7c032bccf19ce53bc2f77f48d2fd18f54d4d195ebb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d9ee07c0f10b72876a45ff24f22adceb557ba333446fbb0fb3b05bb6868be145`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:fa8e4beae92b60209dfdf4b31fd0395ceca96b0d883bf017204bd2904be5ae28`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
 		Size: 3.7 MB (3727994 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aa64cf2a2252efa5afb24d2ebdde254dd02fbf40d3a118122de76a17cca0b323`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:c8ea9a9becad8efb71912bd910dc0456b123c4be658eb39f722e826af5a36d86`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
 		Size: 31.6 KB (31582 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8675,7 +8675,7 @@ $ docker pull flink@sha256:dea1ab10a68916bed9934d5578b8ea38040ad568e26627b73f1b3
 ## `flink:1.19.1-scala_2.12-java11`
 
 ```console
-$ docker pull flink@sha256:fdc4dc46bf5db57cd265c5367566a8dd284abe8b37fbb30488122cdaa98b78df
+$ docker pull flink@sha256:d555cd02249dcb65924b88f9f6a94c1370845a40e3ded8ac8e28161fe30193c2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8688,13 +8688,13 @@ $ docker pull flink@sha256:fdc4dc46bf5db57cd265c5367566a8dd284abe8b37fbb30488122
 ### `flink:1.19.1-scala_2.12-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:a0875e1fa890b5b0e8c52c3576ec4156697c00f88387e2dc8d3a5f4052850685
+$ docker pull flink@sha256:cfcce58a889019b105b26430ed460784ce66a739b11825a84573de6a1600c12b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.0 MB (578999502 bytes)**  
+-	Total Size: **579.0 MB (578999674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80358783d907364dc8f02d132f72b2f90ca2e3a8dc7f39300111e41f518b6783`
+-	Image ID: `sha256:321a1496548d7eb39a782081ae6e63ccf2f4296a0acaabb1ddeeb744d2cdeb8f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -8726,9 +8726,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -8774,56 +8774,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c18218a39d75d55a9ad8b1d63c660e05d04761c285e7787390933dbd36fc7843`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
-		Size: 4.4 MB (4416750 bytes)  
+	-	`sha256:116882d1560497453e55d4e9fd88092838826cd1ccc960bf15d2891b78d3b36f`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 4.4 MB (4416838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c027a548f8c207c5c9bc570fb54d6f06dedaf4517b27e18f52a9467d30ff5e56`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:5a49a47896b791dd44371179626abebbf048dcc8df024a7346f5ed6baff9aaa4`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 900.5 KB (900496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdf57c669e48b9c67450a88da56a8a0c28100967aecbfaf328349a2e1b1b0d69`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ef54fe499d4b848d54044e86684004e2d879f8f295409f107686000e95fbaa6`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bd774dc1fbc5169c47be03fb910b7f38778154054f38ae6b75d5eb692e1925b`  
-		Last Modified: Sat, 17 Aug 2024 02:02:18 GMT  
-		Size: 483.2 MB (483163251 bytes)  
+	-	`sha256:bcfb939b004bc7de2a0c263777549a0f2661431afc18b2c790bbdc4f3ba54637`  
+		Last Modified: Fri, 23 Aug 2024 20:06:27 GMT  
+		Size: 483.2 MB (483163088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:571b2e476b1b0ba9477c2af84d09b9c4770e1ddac7e77b42c40c0f304fbb7b16`  
-		Last Modified: Sat, 17 Aug 2024 02:02:11 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:f1ed8949868f7ff2b0fd34676ddff75bb6b40e67a301e587c71d1846dec48238`  
+		Last Modified: Fri, 23 Aug 2024 20:06:21 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19.1-scala_2.12-java11` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:43b5e7117f7c71c3b21e6f5654e50f2c7498fa57cbcdc4d0affd6b7b6569b047
+$ docker pull flink@sha256:281a3c747f212f0c0f88a5fc677f3736487f318f4280adb18647162886ad082b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3759576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:985ff58215f692841febf4482df4ddb55cf256253ddbe0fe8c2ce1949badf7fa`
+-	Image ID: `sha256:904c024f943bdf4c0ae91d7c032bccf19ce53bc2f77f48d2fd18f54d4d195ebb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d9ee07c0f10b72876a45ff24f22adceb557ba333446fbb0fb3b05bb6868be145`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:fa8e4beae92b60209dfdf4b31fd0395ceca96b0d883bf017204bd2904be5ae28`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
 		Size: 3.7 MB (3727994 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aa64cf2a2252efa5afb24d2ebdde254dd02fbf40d3a118122de76a17cca0b323`  
-		Last Modified: Sat, 17 Aug 2024 02:02:10 GMT  
+	-	`sha256:c8ea9a9becad8efb71912bd910dc0456b123c4be658eb39f722e826af5a36d86`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
 		Size: 31.6 KB (31582 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8972,7 +8972,7 @@ $ docker pull flink@sha256:dea1ab10a68916bed9934d5578b8ea38040ad568e26627b73f1b3
 ## `flink:1.19.1-scala_2.12-java17`
 
 ```console
-$ docker pull flink@sha256:fc99fcba0d5700b4825fb9bace40c1812b42af489b5261df5e5751ded6e082fb
+$ docker pull flink@sha256:e7d4d15eb8a8a33e21f4a2dbedb3748220cf3931e40a732263450144d5df977b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8985,13 +8985,13 @@ $ docker pull flink@sha256:fc99fcba0d5700b4825fb9bace40c1812b42af489b5261df5e575
 ### `flink:1.19.1-scala_2.12-java17` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:1f81ab7f6ea3be60e15990b8bce3c307d9356790bd091d1d6da32f1cc86f4ac8
+$ docker pull flink@sha256:a56ebe5b650cd4d7abdc01ba55a1e4db17fd7c75a52d93f15523f49eb58948ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.1 MB (579081162 bytes)**  
+-	Total Size: **579.1 MB (579081439 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5df2d6670146ce0bcc002045beb11c91ce73c497aaaf4bde8ef68fb603e72ba`
+-	Image ID: `sha256:88418c3fb0fa42432739df07fee063d8a326fca88857145f76415d90e7756a6c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -9023,9 +9023,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -9071,69 +9071,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd24317609f1b5444d777c0434ab11020010745e5fa797d14158b433e7d085e`  
-		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:5161e45ecd8d096f978edcb483c5ed70580526e02a1f8155653ca1c6c192f097`  
+		Last Modified: Fri, 23 Aug 2024 19:27:49 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dabcb24b0736af443308c2d4b117959aab676db1802357e7eda6bb79112724ed`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
-		Size: 4.4 MB (4416814 bytes)  
+	-	`sha256:5b77fdf2bbfdd91476f5efdd2ced01791b83412d30978a1c036fa8bd6447bd29`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
+		Size: 4.4 MB (4416774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e371bf9db245fe00dd137b6cff9b3a96c27fbbb4b450b8386566e7b94a97c60`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
-		Size: 900.5 KB (900497 bytes)  
+	-	`sha256:22013c9aee299e29ee9f8e7276adbc391fc022e0168c9557c7dbcaa5a0aad4d0`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
+		Size: 900.5 KB (900492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6664b2c1cc3bfa5502fd5835ce1f495eef34cc324eecdca42eb39a66bef03b15`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
-		Size: 4.6 KB (4592 bytes)  
+	-	`sha256:de4047f4af071771a2f4168ee1b75cb6d5ccab7bd477992e1c3f5e754a14d1a0`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
+		Size: 4.6 KB (4593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50dddbd288a869e3aff6d60f11a014b89f18b58d1580753e175b4dcf3f3ca6b3`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
-		Size: 115.0 B  
+	-	`sha256:a8786e6bd34b2dda9683c04b8154c40ca57a00b35e94690d23d8c39952fe8d32`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca629973511f84f73af655d9d1a91d666bcf20e4e98bd967694a62103b15ebe5`  
-		Last Modified: Sat, 17 Aug 2024 02:03:32 GMT  
-		Size: 483.2 MB (483163049 bytes)  
+	-	`sha256:ee8758a7756734a9ed4765dc5aec11ea96ccf9f817d5c7d4a3bd50e71e5c8a44`  
+		Last Modified: Fri, 23 Aug 2024 20:07:41 GMT  
+		Size: 483.2 MB (483163126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:fc2d66e5b11dfff70f6ebd5caf386db5c977beb06484373058ddedc6962e039b`  
+		Last Modified: Fri, 23 Aug 2024 20:07:32 GMT  
+		Size: 2.3 KB (2268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19.1-scala_2.12-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:464ef568f081eeae558322f91ec52b34e7715ac352d7bcbbb7788aed7f7cbf29
+$ docker pull flink@sha256:c38796fce8ab38ab1434bfb612027e39e4fd2044481211816b1615ef73942082
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3757136 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0889913ea9d39195b814a8d1608cd92a9dc3fc7b19628b3e81656bce58236978`
+-	Image ID: `sha256:b1d41b9053ced4b45bd934d2b28196af64314278e39506bf729c84597775b099`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:795f1fa6e6f7b73bd1cea4493efbeff5151fd080a9bb2a449cd6ed34c12953ad`  
-		Last Modified: Sat, 17 Aug 2024 02:03:20 GMT  
+	-	`sha256:ff4326b988da03c8fb1b264e62e4d530c2d044259898817b4e4fe2dbbcc8ed98`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
 		Size: 3.7 MB (3726774 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:89fb3712f6cdb62cfc199cda56036f4cb7f97b66d77fde901f0b8a2065ca3b80`  
-		Last Modified: Sat, 17 Aug 2024 02:03:21 GMT  
+	-	`sha256:02ab4cb634547d140ec3122fa7d86a735266d024972afcd6633b78525e028391`  
+		Last Modified: Fri, 23 Aug 2024 20:07:31 GMT  
 		Size: 30.4 KB (30362 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.19.1-scala_2.12-java17` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:68067e1d56efd74c67e5656423fb7f7dcc762ddc6fe62ff3f60494ddd77c1a54
+$ docker pull flink@sha256:e3746ad2be548f0c5779b4a0946d4428fb667f951401c0170807e72ed348cdd4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **576.2 MB (576229555 bytes)**  
+-	Total Size: **576.2 MB (576229943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e64309e8f0f82cf7cb0531a953ee881d0af2149d3667975b5af1cb9a478571b`
+-	Image ID: `sha256:5cc0b10fa41d85a2009303adbbb32b4f9763ad3c4f6864f199db22a9c261a035`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -9165,9 +9165,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -9213,63 +9213,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:560407f77d279e68f72a6b12199439583872a1ea3f7441297485cd75f35c2820`  
-		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
-		Size: 1.9 KB (1867 bytes)  
+	-	`sha256:7525b10c4bd14139ded90d85ae282e53b2795402b1d01d327856dc57969f13e3`  
+		Last Modified: Fri, 23 Aug 2024 19:45:19 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ad449889b73484896ec212c8670510e4161d8083aa5ad002579b20df8504b78`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 4.3 MB (4265352 bytes)  
+	-	`sha256:b9f3272af01e149559a1d95590e2b0630a4501876558133e754ec3266f0f1377`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 4.3 MB (4265489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ca919b123f67c1b860be035235046bd79c58881886fd0d56ee2e52996b0b2ef`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 835.4 KB (835384 bytes)  
+	-	`sha256:c87f04576eb489737d425f233e0419d858cc5befc99a55366af6526106664e3a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af640d4f8527554d3e04bc8e91242ab675b885d9e75f0e4fce11b2fe5abc98d0`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
+	-	`sha256:672485f5ca0713a99f24530ca3b4ccdd2f4d27fb5da0eff44b5026ce0af2254a`  
+		Last Modified: Fri, 23 Aug 2024 22:16:03 GMT  
 		Size: 4.6 KB (4629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5191d223139cc82625d5731f61c5fc1b2a62a9e8ccba630488e3e9f01668a33`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
+	-	`sha256:a96c499565df5cd4d1fa202448be3440c50149aa1b7a30bbd8d67f281ffcfb7f`  
+		Last Modified: Fri, 23 Aug 2024 22:16:03 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d40d7eb002c6037f93e704208e64a23220fbb2050aaa743fabbf92e003280a61`  
-		Last Modified: Sat, 17 Aug 2024 06:53:50 GMT  
-		Size: 483.2 MB (483163078 bytes)  
+	-	`sha256:3c88311ca10003e24eeeb5658c89943d4038026225f20448d47e2d8541a7127e`  
+		Last Modified: Fri, 23 Aug 2024 22:16:13 GMT  
+		Size: 483.2 MB (483163090 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4d397ba5ee3395bdc35abb749c250c6d4c874cbe9485bb0aea50059dfdee4bb`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
+	-	`sha256:29dbe7df448c7cf44ebc37a127e48e0794368e70b9e81a5866d990b29099e8a7`  
+		Last Modified: Fri, 23 Aug 2024 22:16:03 GMT  
 		Size: 2.3 KB (2268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19.1-scala_2.12-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:8bdd4ac8bfcc68733eee9000e127f2dc38515b050a9069d758b8bd92047d94f1
+$ docker pull flink@sha256:5c7e705058f9c017520813ad913cf9d26353f87089f159783d7be6af91e91e35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3757754 bytes)**  
+-	Total Size: **3.8 MB (3757755 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a3b00d33d0b83a69d1774f8464858e79e95cd10cd9290c071eb2da90fb3a6dd6`
+-	Image ID: `sha256:56d251c23b80ee1b9e22000f64f7fd4f643633f62a05902a2bcc7b13385606af`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1fb8c8acb5531925d96d7636a3cf29f7c844ed42a9f1fc23ede690c1533c3605`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
+	-	`sha256:96b54ec3b2ba12e1ff15a314bea014fa82ebb72c7804a0c9da4c8d8937f01270`  
+		Last Modified: Fri, 23 Aug 2024 22:16:03 GMT  
 		Size: 3.7 MB (3727076 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:11663c0f0b065152d6c40314039e07cb3ce4afbba834c5f20ebfc34ae749381b`  
-		Last Modified: Sat, 17 Aug 2024 06:53:40 GMT  
-		Size: 30.7 KB (30678 bytes)  
+	-	`sha256:3d862c42f5f1276f15aa63b36e91d963121755ee59c350a5586f2e1279b8d251`  
+		Last Modified: Fri, 23 Aug 2024 22:16:02 GMT  
+		Size: 30.7 KB (30679 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.19.1-scala_2.12-java8`
 
 ```console
-$ docker pull flink@sha256:9deef412a5fb306a05cb43ff1c08f9c0d9d208b4836a2504ff6fd90be3f2c1c7
+$ docker pull flink@sha256:aa5ca7dcce78c6f8f6826b2646611272166b11da35ca50fb08e63b5b8ac90f75
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9282,13 +9282,13 @@ $ docker pull flink@sha256:9deef412a5fb306a05cb43ff1c08f9c0d9d208b4836a2504ff6fd
 ### `flink:1.19.1-scala_2.12-java8` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:5420c302fbfd1a77d082cefb33226db5c2741e37e84b18b604f11240dec6dd79
+$ docker pull flink@sha256:62d72f5c5625d44e9e6efce67397409dd210d632dc51c0056ef139b0d36abdaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **573.7 MB (573685559 bytes)**  
+-	Total Size: **573.7 MB (573685735 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08770f9f7f90fbcb6266ff0498d0669b9dab28adbfd44c38ec9b573f071dfe43`
+-	Image ID: `sha256:06796e8751b8769ef1ef6b1a2c6266591f0bc8df009f5f79dd3f0c2497cf49f3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -9320,9 +9320,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -9368,69 +9368,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63f0966d15e28d4f9d2446b285da398fbbc46c4fdd3e46d16dd24c27e54a7968`  
-		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:549fdae8215d87f93f320e0b858daecaf8ec8ca17d44c21986c5a17d9f682905`  
+		Last Modified: Fri, 23 Aug 2024 19:25:15 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:220d5dc5fb15158e4a6af90effdd5b8dd6efd614bdd8c6e5ff76cb3524e51e48`  
-		Last Modified: Sat, 17 Aug 2024 02:01:14 GMT  
-		Size: 4.4 MB (4416731 bytes)  
+	-	`sha256:b60a58f3ffce611cea079a17fd6407d39dfe12fcdbc81dbf0b44b7c8975f257c`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
+		Size: 4.4 MB (4416809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1293a8581890e45ac30c625499130e468cb5349178d1e02f60c181e86329849`  
-		Last Modified: Sat, 17 Aug 2024 02:01:14 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:bb5e745fed31d7d1c330c11fb9db9309d622a3c4ab7bb3216b95e59873eb2b81`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
+		Size: 900.5 KB (900495 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3509644384c0d71b5d3818ffde26aa46816c86d1a385226439587e09a68b9571`  
-		Last Modified: Sat, 17 Aug 2024 02:01:13 GMT  
-		Size: 4.6 KB (4591 bytes)  
+	-	`sha256:2d3fd9c72bbd51bb066ce4feeaa5e0365333957282ccf887899cb81c3518b21a`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
+		Size: 4.6 KB (4593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb44f362597c6b00043d96956831d91e1f8239bb63a5b2d9dd0f6870d1364a88`  
-		Last Modified: Sat, 17 Aug 2024 02:01:13 GMT  
-		Size: 115.0 B  
+	-	`sha256:c30907ba05b3eb96a94369bedcb2de47d3776af22062bcb0acf36f350c3a4dfb`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ab07166b99ff5bde7b4fedc385b4a9a3aab1cb151826e7ee6a7a087178c0533`  
-		Last Modified: Sat, 17 Aug 2024 02:01:25 GMT  
-		Size: 483.2 MB (483163251 bytes)  
+	-	`sha256:414837c829cd6e77fc82ce6830d2700141a2a59c4c322471fa85819b86818f20`  
+		Last Modified: Fri, 23 Aug 2024 20:08:05 GMT  
+		Size: 483.2 MB (483163100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:7f3f9a72f8ec60a7b6c24668a383a7d0560f3da6995143effd074d5a0c84fe88`  
+		Last Modified: Fri, 23 Aug 2024 20:07:57 GMT  
+		Size: 2.3 KB (2268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19.1-scala_2.12-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:82e1938e0c5f281e83d0334136ada683cb925bd8bfedd92683fa3c4758189c6d
+$ docker pull flink@sha256:90ea4cc798bb1e25a62c8ee0a7296f4732695eab4b170610f844bba814ca1dda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3777517 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f41414d3d60c3c15e8a10f38b442d2ea76619f1e42c0924714cccd4899f1087`
+-	Image ID: `sha256:4d70d04ef5792f1c88f2ddb6bb8ac7664bec85f26efde823326504897a1e451f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b914a7d0e55b60244ea50df8ff7501960065d039383ccfad1f7d36c2fc3d9f28`  
-		Last Modified: Sat, 17 Aug 2024 02:01:14 GMT  
+	-	`sha256:b859f407441f170a47164df92e436ab92b690ae39e92c01c1c636adc0cf2e1c3`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
 		Size: 3.7 MB (3747174 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ea318dc928854b8590186b80da3f76ff4b60967feebdc04d626f4e2c507b4b45`  
-		Last Modified: Sat, 17 Aug 2024 02:01:13 GMT  
+	-	`sha256:bd7504a8a87c0eeb282c040bfc3bd14b3c491cb38168bd29b6f37871ae1edcdc`  
+		Last Modified: Fri, 23 Aug 2024 20:07:56 GMT  
 		Size: 30.3 KB (30343 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.19.1-scala_2.12-java8` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:c555a6987283da328dfcf52504f63a72073c85fa6f9a2f76328d8eb45e1098ff
+$ docker pull flink@sha256:5d12573fcffec68c44a8df194c69b7cf5b40d6bce3f7164deef6274f8fd7eb8c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **570.3 MB (570340167 bytes)**  
+-	Total Size: **570.3 MB (570340499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b4fae76d834c6a79410f10e61a3c0377c5490403d7a10c37e3fa0699c39d78d4`
+-	Image ID: `sha256:e75f34937b1103ed9358c8481c2579bbcae1ad4d4f7ede2dee57a719fba3bf95`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -9462,9 +9462,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 17 Jun 2024 19:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 17 Jun 2024 19:26:44 GMT
@@ -9510,63 +9510,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b3a4248864654ce3e18048693bd49d77e323e35ce5e94fddc9a726a2faaeeb`  
-		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:db7acc9dfbf237a216b04a6b690009ad96051dd54ed79368fbd1e8306fbe4f05`  
+		Last Modified: Fri, 23 Aug 2024 19:43:12 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:810c5e271b495dd2f643060afb28946fb0c049eaed8479525f89c85fe41e8758`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 4.3 MB (4265413 bytes)  
+	-	`sha256:bcd5931f222e62a2780a370c553ddb4fc0e5ba856d0c4d1949908b6dd82987a9`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 4.3 MB (4265514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0018f9f96b94973046f70a5954b494f43d8753b53869d54a0df33933c063b3e9`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 835.4 KB (835383 bytes)  
+	-	`sha256:52a74542e3f8d53bdef5981075a820ad1cbd1065a63f8361ca7ab8f3e257d575`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d28fad690cc91eafae91999987384aedef7d5c6d38640170a4495022fbe5fbf9`  
-		Last Modified: Sat, 17 Aug 2024 06:52:16 GMT  
-		Size: 4.6 KB (4631 bytes)  
+	-	`sha256:321a1c8ccdc72ce033f83441bd81595bd9033cf9541a5fe4e6d66f86e4180568`  
+		Last Modified: Fri, 23 Aug 2024 22:14:32 GMT  
+		Size: 4.6 KB (4627 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63a32cf4cf3b31c927f9a338fbce095baffea7cd1ba744f2c980490de78be927`  
-		Last Modified: Sat, 17 Aug 2024 06:52:16 GMT  
+	-	`sha256:0bb30a87b7c4a39348b21de43629baf02a4cbfd8435a1a47dc6c7e8fe37832ec`  
+		Last Modified: Fri, 23 Aug 2024 22:14:32 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:507314e2d77730ed7d72cfcc7aa4512d1bbf6faaedf30f7ea1a71240568d2354`  
-		Last Modified: Sat, 17 Aug 2024 06:52:26 GMT  
-		Size: 483.2 MB (483163126 bytes)  
+	-	`sha256:5ca57d0fe9dbcd62368d6cc091e8a1d7a0c1a0bf67ac4558ab5ed64e5ffb9ad8`  
+		Last Modified: Fri, 23 Aug 2024 22:14:44 GMT  
+		Size: 483.2 MB (483163120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d120c3d05deeea2fe580b066af67c83f2ed7235f48b87525e2c400f4b2b3716`  
-		Last Modified: Sat, 17 Aug 2024 06:52:17 GMT  
+	-	`sha256:8c7226b58df8c27dbe517ba333ec7fa97529eb29fac3824a6052f32e25d39e28`  
+		Last Modified: Fri, 23 Aug 2024 22:14:33 GMT  
 		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.19.1-scala_2.12-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:7f1cff18ae9c8da59f30126813f2adfcb957f6ce151db747cc3d6063e4e11787
+$ docker pull flink@sha256:d9ee4dbd25d9a0424ae1e94e1279ffd956c63ddaff4a1a95992f3fcd54d706dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3778135 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ebab829e8e6cb4bbf75cba92e42bf8b307c72838daf67f126c5b8e4963196df7`
+-	Image ID: `sha256:d38759657463fc7975eee5b4d63c6723598331fcfbadf977e3dc9cf359c8f459`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2cd7659d7214aaf33ce8cfc26da248d28f7344ed7771797eb3e1d3f2ded168a1`  
-		Last Modified: Sat, 17 Aug 2024 06:52:17 GMT  
+	-	`sha256:24a48486809058325481852c27d0d34756f19ab57f5f2769b2c41ab5255525ef`  
+		Last Modified: Fri, 23 Aug 2024 22:14:32 GMT  
 		Size: 3.7 MB (3747476 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4fd11e54c475594141a8d3896cc7f7b266543e0f5f17ac6be97c635733e6d5b4`  
-		Last Modified: Sat, 17 Aug 2024 06:52:16 GMT  
+	-	`sha256:a1c3f789c7a97207d0972e07a6beca8d19fb9ec2fb1d776daac198c194ec835a`  
+		Last Modified: Fri, 23 Aug 2024 22:14:32 GMT  
 		Size: 30.7 KB (30659 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.20`
 
 ```console
-$ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c65d0de9fd673
+$ docker pull flink@sha256:92b7a6faf2bd2fe0c95dd354b02cf98440afd8cb4b0252d6c553729d22b1bded
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9579,13 +9579,13 @@ $ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c6
 ### `flink:1.20` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:f71d1bc1abbd3941751436ec4982d9282ac423a8709b4498e096e7afc2edffd4
+$ docker pull flink@sha256:16b0e79d999499c7c4b991f121afec0fd80741676b33980b70c718c7db029518
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.5 MB (579493166 bytes)**  
+-	Total Size: **579.5 MB (579493300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e25c58974fb0f5e91a244fba355c1c8ec83dd39b82dae9a05457fdc089847d`
+-	Image ID: `sha256:19a46ae7563172b1df5381fcb78b8a8c5f48967c71525223ef8af3d59592b201`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -9602,24 +9602,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-11.0.24+8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='e0c1938093da3780e4494d366a4e6b75584dde8d46a19acea6691ae11df4cda5';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.24_8.tar.gz';          ;;        arm64)          ESUM='1fe97cdaad47d7d108f329c6e4560b46748ef7f2948a1027812ade0bbc2a3597';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.24_8.tar.gz';          ;;        armhf)          ESUM='bf893085627c6ec484e63aa1290276b23bcfee547459da6b0432ae9c5c1be22a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_arm_linux_hotspot_11.0.24_8.tar.gz';          ;;        ppc64el)          ESUM='8ee351314182df93fbad96139bb74b97814944d66197896e388404a1ecfa06b3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.24_8.tar.gz';          ;;        s390x)          ESUM='5b331f093bb03126334bbbc24f05f60681baeda461d860e4e2cdb693ee54e0ed';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_s390x_linux_hotspot_11.0.24_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -9665,56 +9665,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8fbf2d9773e7134f4a191df0ac42cf153da8dbe87afedfbb0f67d5178bd8f08`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 4.4 MB (4416741 bytes)  
+	-	`sha256:429468ac77e4cc6ab9194015ba23f1f93c8ae70f75cc3b3356ae55623758d9e1`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.4 MB (4416774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bfc3d001b9866304322cfddb3fd1ba55a880745727b4fd5bfa974b24171aef5`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:c392a87beaaa873cfbe06df28696a2c022b08c31c948e45dd44ae47f5898a86c`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab0b2bacf21acd0f75a93d46ebd839f323c5a3edf2eaab59d894ad44ca8c68db`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 4.6 KB (4589 bytes)  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35f982baf44566fcd83d14cb89963155a02a9c5aa93fcb64fbfee4071d35cd9c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c5d40a67a6487f84493f63557571e96c5be961856731da5cd17335ee97535c3`  
-		Last Modified: Sat, 17 Aug 2024 02:01:18 GMT  
-		Size: 483.7 MB (483656924 bytes)  
+	-	`sha256:fbb582e0bb4fd8569eeb05a61d95cc58f3a6fe1ce18ae3c5eb7db3f540cfa74a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:15 GMT  
+		Size: 483.7 MB (483656777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:3a1636493da1da0ec4fffa12711dfe9fe0ed4d8f45b10e4480cacd588e2b085b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:08 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:a80fa18c7f630e43e4a5a42983bcb885d2da3159e9d7fe496ee23554be1bcf69
+$ docker pull flink@sha256:e0ef0c6a768c75e1deb238df1fd1da44c5a53ebe09d77ba7b0818cad1eb4704e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3762004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c15561fb2d6692b128d47e8e4f18f672bd641f95107240f708a571af9e7ac89b`
+-	Image ID: `sha256:6c0f5e960eb8e5ad2d849d0cc345245ec51cbf373c7b367e72de18decd557602`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:985465f6bd9500f1155f78b2ba8415f85761ceffd9f43c23b1fdcd3490f43187`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:52b7e0e8d58ae9715e5211fc464de1af84cd634d292f4c7d0d8ae641cc1a0308`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 3.7 MB (3729208 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6cb44e0bf8c15fb2b0bcbe46be99ceda851fbbbd7e361cd4576b32fb5c225e03`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:29c16e8034fdd07e77afd5d74ca7b7b01d7046d74124ce1f9ab921389f56d6c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 32.8 KB (32796 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9863,7 +9863,7 @@ $ docker pull flink@sha256:83edcec63d210535a65d4a375aacbbd0f102344462a00730b4dc6
 ## `flink:1.20-java11`
 
 ```console
-$ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c65d0de9fd673
+$ docker pull flink@sha256:92b7a6faf2bd2fe0c95dd354b02cf98440afd8cb4b0252d6c553729d22b1bded
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9876,13 +9876,13 @@ $ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c6
 ### `flink:1.20-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:f71d1bc1abbd3941751436ec4982d9282ac423a8709b4498e096e7afc2edffd4
+$ docker pull flink@sha256:16b0e79d999499c7c4b991f121afec0fd80741676b33980b70c718c7db029518
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.5 MB (579493166 bytes)**  
+-	Total Size: **579.5 MB (579493300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e25c58974fb0f5e91a244fba355c1c8ec83dd39b82dae9a05457fdc089847d`
+-	Image ID: `sha256:19a46ae7563172b1df5381fcb78b8a8c5f48967c71525223ef8af3d59592b201`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -9899,24 +9899,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-11.0.24+8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='e0c1938093da3780e4494d366a4e6b75584dde8d46a19acea6691ae11df4cda5';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.24_8.tar.gz';          ;;        arm64)          ESUM='1fe97cdaad47d7d108f329c6e4560b46748ef7f2948a1027812ade0bbc2a3597';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.24_8.tar.gz';          ;;        armhf)          ESUM='bf893085627c6ec484e63aa1290276b23bcfee547459da6b0432ae9c5c1be22a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_arm_linux_hotspot_11.0.24_8.tar.gz';          ;;        ppc64el)          ESUM='8ee351314182df93fbad96139bb74b97814944d66197896e388404a1ecfa06b3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.24_8.tar.gz';          ;;        s390x)          ESUM='5b331f093bb03126334bbbc24f05f60681baeda461d860e4e2cdb693ee54e0ed';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_s390x_linux_hotspot_11.0.24_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -9962,56 +9962,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8fbf2d9773e7134f4a191df0ac42cf153da8dbe87afedfbb0f67d5178bd8f08`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 4.4 MB (4416741 bytes)  
+	-	`sha256:429468ac77e4cc6ab9194015ba23f1f93c8ae70f75cc3b3356ae55623758d9e1`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.4 MB (4416774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bfc3d001b9866304322cfddb3fd1ba55a880745727b4fd5bfa974b24171aef5`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:c392a87beaaa873cfbe06df28696a2c022b08c31c948e45dd44ae47f5898a86c`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab0b2bacf21acd0f75a93d46ebd839f323c5a3edf2eaab59d894ad44ca8c68db`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 4.6 KB (4589 bytes)  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35f982baf44566fcd83d14cb89963155a02a9c5aa93fcb64fbfee4071d35cd9c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c5d40a67a6487f84493f63557571e96c5be961856731da5cd17335ee97535c3`  
-		Last Modified: Sat, 17 Aug 2024 02:01:18 GMT  
-		Size: 483.7 MB (483656924 bytes)  
+	-	`sha256:fbb582e0bb4fd8569eeb05a61d95cc58f3a6fe1ce18ae3c5eb7db3f540cfa74a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:15 GMT  
+		Size: 483.7 MB (483656777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:3a1636493da1da0ec4fffa12711dfe9fe0ed4d8f45b10e4480cacd588e2b085b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:08 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20-java11` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:a80fa18c7f630e43e4a5a42983bcb885d2da3159e9d7fe496ee23554be1bcf69
+$ docker pull flink@sha256:e0ef0c6a768c75e1deb238df1fd1da44c5a53ebe09d77ba7b0818cad1eb4704e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3762004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c15561fb2d6692b128d47e8e4f18f672bd641f95107240f708a571af9e7ac89b`
+-	Image ID: `sha256:6c0f5e960eb8e5ad2d849d0cc345245ec51cbf373c7b367e72de18decd557602`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:985465f6bd9500f1155f78b2ba8415f85761ceffd9f43c23b1fdcd3490f43187`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:52b7e0e8d58ae9715e5211fc464de1af84cd634d292f4c7d0d8ae641cc1a0308`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 3.7 MB (3729208 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6cb44e0bf8c15fb2b0bcbe46be99ceda851fbbbd7e361cd4576b32fb5c225e03`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:29c16e8034fdd07e77afd5d74ca7b7b01d7046d74124ce1f9ab921389f56d6c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 32.8 KB (32796 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10160,7 +10160,7 @@ $ docker pull flink@sha256:83edcec63d210535a65d4a375aacbbd0f102344462a00730b4dc6
 ## `flink:1.20-java17`
 
 ```console
-$ docker pull flink@sha256:d90b7e5ecb86c63f76f2c3c5c91dd9d510984158a221a38d8854852b58dc8d93
+$ docker pull flink@sha256:327ff288bf934a0fa484db73df1e6dea3525b4cd724aa96961c0ecf98dbcb6cd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10173,13 +10173,13 @@ $ docker pull flink@sha256:d90b7e5ecb86c63f76f2c3c5c91dd9d510984158a221a38d88548
 ### `flink:1.20-java17` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:8ac3f1aa1c1a9a181ea27ca8547708602d60d0453e4906d4bf5f8dd4449b845f
+$ docker pull flink@sha256:851c595e4d63ff1b895464db582cb0ee146b320c2d4f2e6dae4d23feff05f68f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.6 MB (579574804 bytes)**  
+-	Total Size: **579.6 MB (579575072 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf951f15a52f77ab4b79a407b73f30a2c0ff237c68dc9ee72044cefdfa000f10`
+-	Image ID: `sha256:71dfbc5b199579cd3c6d3e635c59424b5e6a268447a30bc39665384bedddca80`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -10196,24 +10196,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-17.0.12+7
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -10259,69 +10259,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd24317609f1b5444d777c0434ab11020010745e5fa797d14158b433e7d085e`  
-		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:5161e45ecd8d096f978edcb483c5ed70580526e02a1f8155653ca1c6c192f097`  
+		Last Modified: Fri, 23 Aug 2024 19:27:49 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee39f6e13269ca8577495dc1d9334df2a3d057370e7eed97fcfb13cc67fc67ac`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 4.4 MB (4416739 bytes)  
+	-	`sha256:9a58127bf41eda5af8b1ac35f6540b1632da3f2c4f3e8ce28a9788ed09275402`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 4.4 MB (4416755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47f7588fe916030754493e7acabc148a674fe21d10211ddc298be595f0f952bb`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:44c46fd620084c3e72ab5d5e858919cb3eacba4b62d7b541ad02a746daf9ae18`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:292fc1fec4c0a0ba9c1517856a04c2c59727dc5b2a37de3f78727612e892da4e`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 4.6 KB (4589 bytes)  
+	-	`sha256:d98bf8ad18a26db56762926500c39e912621e5041c0fc4541801b26d2ea5f735`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26c4ccca98474cc71a9567488d96927af20f231611eb5bc872f2c87412649f13`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 115.0 B  
+	-	`sha256:1620e4df8c9708e2ddf761548a6bf7b2e49dce11af4faa9b42f5c230c34f2dad`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68f639f4ef1c1b7ebe2d5844c4975b0772bfe149ca7c0bba7cb0a877cfe8794c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:59 GMT  
-		Size: 483.7 MB (483656774 bytes)  
+	-	`sha256:8687c02ec33bfa750ee2e6adbe772f8126992a9c8b8bbcc04e5457c31483207d`  
+		Last Modified: Fri, 23 Aug 2024 20:07:34 GMT  
+		Size: 483.7 MB (483656775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5466ae04d68b2b15d42215a235951c32d11089499ed422ca8b711a0356193ad2`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:7b8fcd7deb1ba26a7743cbb84bb3a0be7f6b114758295266a15c52163e7352d9`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:115fbb6f2280952934d89a72d8f27a72b6772fc1c8a31525b81d0f09f188deb1
+$ docker pull flink@sha256:8c753aaea4674bccd50d723a5f8ff87ba8626c972d66f79ed0117c7d68bea34e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3758364 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e9d177b7c50cb2b5b61ae90707dd4cc4bfc67e853a95f1fc0a18df4efc6949b`
+-	Image ID: `sha256:b43ff88906fa8be120efb0f8cc825ae87123a00f6b3cee579a9c763ace76209d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b82b42b4f8257efc3bc88272dee142a1bc379f5959ad9e3c03edc00605d12c5`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
+	-	`sha256:4f56fc46a7a7e04650fac591da1b88d5f7cefea772f53a426a989512b943ba3c`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
 		Size: 3.7 MB (3727388 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8f391493fec6d2005ebac147c274963c25056f53aff5ba43651823719b4cff93`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
+	-	`sha256:6f149fe22bb3baa75ab608c48aa59ded89cb30cf8bf56ac8e715c5b2232a31e2`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
 		Size: 31.0 KB (30976 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.20-java17` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:3a82b38d4bdbdc83d5454777a44bfb0180fa7cb54bc72b9543b8348ce8f1d1cf
+$ docker pull flink@sha256:0a7a3e0db3e1d223b942a94e4f19c2337b3b3c3a1fec359d0769fb7860779a16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **576.7 MB (576723337 bytes)**  
+-	Total Size: **576.7 MB (576723772 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cdc4f55e01c2ad851ee6e4f650d402bce0ccb5805feac3366d7c58f888403ccf`
+-	Image ID: `sha256:ebbd8c3003acc7c10bdda5f573e905ade4c2253a6e650d15d7e59621c02006d4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -10338,24 +10338,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:4126c5ecc7750c7d2beb8c08d15aea03d96910453b36d2fb2d41185fdca7b20f in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-17.0.12+7
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -10401,63 +10401,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:560407f77d279e68f72a6b12199439583872a1ea3f7441297485cd75f35c2820`  
-		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
-		Size: 1.9 KB (1867 bytes)  
+	-	`sha256:7525b10c4bd14139ded90d85ae282e53b2795402b1d01d327856dc57969f13e3`  
+		Last Modified: Fri, 23 Aug 2024 19:45:19 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ad449889b73484896ec212c8670510e4161d8083aa5ad002579b20df8504b78`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 4.3 MB (4265352 bytes)  
+	-	`sha256:b9f3272af01e149559a1d95590e2b0630a4501876558133e754ec3266f0f1377`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 4.3 MB (4265489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ca919b123f67c1b860be035235046bd79c58881886fd0d56ee2e52996b0b2ef`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 835.4 KB (835384 bytes)  
+	-	`sha256:c87f04576eb489737d425f233e0419d858cc5befc99a55366af6526106664e3a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ac41456a710b87ab2f807d097fb5bd69188c6b61cfce3d2cc3085448c71965d`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:527793eb0fc027c673016def1601b0aab511e24e2c64665fc068bece0f8ce788`  
+		Last Modified: Fri, 23 Aug 2024 22:10:54 GMT  
 		Size: 4.6 KB (4628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4452b3787dd72415ceb5e1a4a1e0c1e74853d7598d2e2c146c874e6a54df5dfe`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:bd4d84a503d37746271a50e829f38973f511d5e5a39efd9983ca635521bb7e14`  
+		Last Modified: Fri, 23 Aug 2024 22:10:54 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8265632e541fad27b144d944b2105084df2fabbb31b01f9314e64639d5b55fd9`  
-		Last Modified: Sat, 17 Aug 2024 06:48:56 GMT  
-		Size: 483.7 MB (483656861 bytes)  
+	-	`sha256:dda728f3ef633d0d3b9bda5486e0b9227bd88ad5c0bcdf51acc9919a15016b68`  
+		Last Modified: Fri, 23 Aug 2024 22:11:05 GMT  
+		Size: 483.7 MB (483656921 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efacbdb8018981f0779444b5aeb881d79e2a3e81b6dc77767744e07d3baa53be`  
-		Last Modified: Sat, 17 Aug 2024 06:48:44 GMT  
-		Size: 2.3 KB (2268 bytes)  
+	-	`sha256:b4346620dc8ed1d27770bbdfd4727c9697d32566e4e7a19e8a79db59c49de90a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:c8125017148ecbc630fa389ddc90f83e3c4a3374bae84d8d86007a2688a4dc43
+$ docker pull flink@sha256:dab72f3669d47e41a9cb4e29e272efc04e6e05ac172b835acb3b7e424085e930
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3759031 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08028e3fdb7d768d1dcc30fc584d39c1a0537820cbd24407ad4bc7a1d5b2bcd3`
+-	Image ID: `sha256:2a24167c40bca1a437e833348a157bb96c0208f195da4f737621c5b28c03c7bd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:63ed04fba019c16bc5eec54caaf6a39472464d2d39fd4c6eadcabbd6df737470`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:662df83943ece9a277badcb5da9f6eb51f0d05738ffbd8487e7fc5d597a5e2d7`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
 		Size: 3.7 MB (3727714 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b3dbaee2b66280da28827727b31ad21dcd8f4cb8a27fa8dab116648f3381d7dd`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:2c78cd48ed972a49fc1583f48a74e6c5966d60afb49dd6e4d8b21e989b476a61`  
+		Last Modified: Fri, 23 Aug 2024 22:10:54 GMT  
 		Size: 31.3 KB (31317 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.20-java8`
 
 ```console
-$ docker pull flink@sha256:c84850f8adbbd05ce5ddea4f7bbb2b8b3bdf9750d3878fed3f48b1a96a09af90
+$ docker pull flink@sha256:c9c72dab124fc64f591d874e4ad8e234be19aea845c3b20ec0f05c781eaff4e8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10470,13 +10470,13 @@ $ docker pull flink@sha256:c84850f8adbbd05ce5ddea4f7bbb2b8b3bdf9750d3878fed3f48b
 ### `flink:1.20-java8` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:255a3ff1cf45ebd52f6380f91d4e8026d9dd6e891ce13d632391fec8c28764b0
+$ docker pull flink@sha256:603d214f00be6ade5e0e59d78f577d4262d880a66a25fc993764387f962f6c5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **574.2 MB (574179256 bytes)**  
+-	Total Size: **574.2 MB (574179298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3c29d2b4740cba08f0d2be8c8cafd718336b5b8dc3b873b3a60316be7906f68`
+-	Image ID: `sha256:eb4305d6e21915654debf974791833cecc93032b54d26438de695d420640e006`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -10493,24 +10493,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk8u422-b05
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0ac516cc1eadffb4cd3cfc9736a33d58ea6a396bf85729036c973482f7c063d9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_x64_linux_hotspot_8u422b05.tar.gz';          ;;        arm64)          ESUM='8fbefff2c578f73d95118d830347589ddc9aa84510200a5a5001901c2dea4810';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_aarch64_linux_hotspot_8u422b05.tar.gz';          ;;        armhf)          ESUM='13bdefdeae6f18bc9c87bba18c853b8b12c5442ce07ff0a3956ce28776d695ff';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_arm_linux_hotspot_8u422b05.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='2991edbedee448c0f1edf131beca84b415dac64ea97365b9bfd85bc2f39893bb';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_ppc64le_linux_hotspot_8u422b05.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -10556,69 +10556,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63f0966d15e28d4f9d2446b285da398fbbc46c4fdd3e46d16dd24c27e54a7968`  
-		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:549fdae8215d87f93f320e0b858daecaf8ec8ca17d44c21986c5a17d9f682905`  
+		Last Modified: Fri, 23 Aug 2024 19:25:15 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f485d49d4cd24754e10a78821a251d8518075ca9da3c732aea907ba588da498a`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
-		Size: 4.4 MB (4416740 bytes)  
+	-	`sha256:a4931f4270cbebb7692f52a3502408e07815bf0138d8250f98c7115b960c3c0f`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
+		Size: 4.4 MB (4416739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf6b83ae9dda98c33d3cc281b5e363ab602f42420e80a67f9542d92052a749d8`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
+	-	`sha256:ccdbd546fc2c89978be29a1d9c1fe8cc3644df5baf07f9d7a9d79322e00b8b3b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 900.5 KB (900496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e6a46f2822534938cbd214be0869fc8d17f5231fe5b62cd0b4e8de78a8ef242`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
+	-	`sha256:558ccb0f59c361ac3a793cdd2ef65c752f306da8c72e7d1f8024501fa504be13`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfc683dbcf86f8b6f867b1af883eca17b0d077c368641ea47a11bce6653137a1`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
-		Size: 115.0 B  
+	-	`sha256:a082f6951d708207f0b35b90d65085db1b20049ea6e3f8f0ef0c124268f2ecf8`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc824e041aaf1803edef4da913979204af8bf3ef6a18f7223a449d2232a1374e`  
-		Last Modified: Sat, 17 Aug 2024 02:04:58 GMT  
-		Size: 483.7 MB (483656934 bytes)  
+	-	`sha256:12b8b9af9a7eb216ecf66e9da07a353858165753a6f8358195022ee35870fc47`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 483.7 MB (483656734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd921bac6c06174ab7942bd847c59bef3652eb2185105c02ab798028da0409ad`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:3a1636493da1da0ec4fffa12711dfe9fe0ed4d8f45b10e4480cacd588e2b085b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:08 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:97ea0e4c4aa5301b5293f5fd975ba6b54eebf8b91ee3b85215bf1e813b7c02c3
+$ docker pull flink@sha256:2ef8bece855f30fbba5fdb59588fd2d708bdaf47137e722fd82a3dc87bbdc87b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3778737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:060d5de67490551cc49cc07d192a4e706878a8c61058c98bd224c85bd72e1cd3`
+-	Image ID: `sha256:001f757e82039bc032838a431deae51f1eced47978f2a85491d9fde4c028313b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:621331d37ecaf3b1d2f089bba4e2e83f2a52c088a25e16bdeaa65871d1f64c92`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
+	-	`sha256:50d61ae6d1c98200015b79276bfb2a77b52ed3e6013f10b9ef941cee00f948d5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 3.7 MB (3747784 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ecdcb1f4ac3ed0a07a1d06cddb3cd99b5952c6d571b18eb9271f3658153a1963`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
+	-	`sha256:198d3cce0aefcdf74a49a0fb8c58853ace01c28143dcb4be22bb0127abb2d579`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 31.0 KB (30953 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.20-java8` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:2d77a01d3d11b9f57f31c4ca95171c44a56457b65f59cf92cffd2d310c0c4726
+$ docker pull flink@sha256:5db1ae62067e110294d7a76f93993563159a5b5f8091092a9909e7a45f822708
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **570.8 MB (570833818 bytes)**  
+-	Total Size: **570.8 MB (570834159 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9132ec60baf23156cd15d032bf5780625814e8b1d3a3821e0b870837e9262f89`
+-	Image ID: `sha256:24e96f7e5b64ec0a24061e9ce4036e5892dfd5f38a986e6250fc36fa45290243`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -10635,24 +10635,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:4126c5ecc7750c7d2beb8c08d15aea03d96910453b36d2fb2d41185fdca7b20f in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk8u422-b05
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0ac516cc1eadffb4cd3cfc9736a33d58ea6a396bf85729036c973482f7c063d9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_x64_linux_hotspot_8u422b05.tar.gz';          ;;        arm64)          ESUM='8fbefff2c578f73d95118d830347589ddc9aa84510200a5a5001901c2dea4810';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_aarch64_linux_hotspot_8u422b05.tar.gz';          ;;        armhf)          ESUM='13bdefdeae6f18bc9c87bba18c853b8b12c5442ce07ff0a3956ce28776d695ff';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_arm_linux_hotspot_8u422b05.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='2991edbedee448c0f1edf131beca84b415dac64ea97365b9bfd85bc2f39893bb';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_ppc64le_linux_hotspot_8u422b05.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -10698,63 +10698,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b3a4248864654ce3e18048693bd49d77e323e35ce5e94fddc9a726a2faaeeb`  
-		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:db7acc9dfbf237a216b04a6b690009ad96051dd54ed79368fbd1e8306fbe4f05`  
+		Last Modified: Fri, 23 Aug 2024 19:43:12 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:810c5e271b495dd2f643060afb28946fb0c049eaed8479525f89c85fe41e8758`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 4.3 MB (4265413 bytes)  
+	-	`sha256:bcd5931f222e62a2780a370c553ddb4fc0e5ba856d0c4d1949908b6dd82987a9`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 4.3 MB (4265514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0018f9f96b94973046f70a5954b494f43d8753b53869d54a0df33933c063b3e9`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 835.4 KB (835383 bytes)  
+	-	`sha256:52a74542e3f8d53bdef5981075a820ad1cbd1065a63f8361ca7ab8f3e257d575`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70df9ce46f928dd0a17f031e1782f56fce7946d6d2d1a486b7fad210e334eb3f`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 4.6 KB (4630 bytes)  
+	-	`sha256:a12ad03876d184eb3bd45cbd1d0b0108052dc40bf3e00302f40f56c66264151c`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 4.6 KB (4631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eed5f8507b5d8c77ce95ec3da88a7105998d2a978ef93e8966ea615a7d98769f`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
+	-	`sha256:5ace7b531ab177a4f7222096a4840047094709a92b6ca52e537729440ff911cb`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b825ee33170c32587f5db69ae370b7592b4769d54ec52a86a18b8172a4a712e`  
-		Last Modified: Sat, 17 Aug 2024 06:45:51 GMT  
-		Size: 483.7 MB (483656777 bytes)  
+	-	`sha256:559979233acdb067fc89089045b106cd5ae8df3c7befa267ad0cb7d3d2f1b40a`  
+		Last Modified: Fri, 23 Aug 2024 22:09:16 GMT  
+		Size: 483.7 MB (483656776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91471169423ad95655a4a074da462c3016e6e4815aa0e6df9184f6499753609c`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 2.3 KB (2268 bytes)  
+	-	`sha256:95eb18edb6ea3113e20b4a9d33e1c93456d8617ef75494def7ef52e835110fd2`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:e33ceeb8a8863a0ca0ddea2949ea6469d06ab2cfebf1e73cf11d7a8cfa9fe96d
+$ docker pull flink@sha256:15a6c57b119d10fc6323dc592265908ac6900c9ecb4c834091b4e86f6b30f463
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3779403 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:127647621472bb5d67daf67a83e578eca063e6ebd549cbfc37d08130e7e3027b`
+-	Image ID: `sha256:f7089db1331b601b0523176e95acb1edbf362e5e0de24c80aabebf5f30287dae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f63d10a1035337c7f1c3cf73c11cd6f3fe9d0db0b08dee72f659d96de433adff`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
+	-	`sha256:d28e53e84fac226e44312c099fc1831413ae3a6ee904da63f456e0bf7c60ffdc`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
 		Size: 3.7 MB (3748110 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e32f24f932c4284100b47278606aeedb7687411a0dac6f5074489c822be25829`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
+	-	`sha256:6ab38a4dc7235815a9225c955b6fc007a4b3655249c57c32177caf3d028a2184`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
 		Size: 31.3 KB (31293 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.20-scala_2.12`
 
 ```console
-$ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c65d0de9fd673
+$ docker pull flink@sha256:92b7a6faf2bd2fe0c95dd354b02cf98440afd8cb4b0252d6c553729d22b1bded
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10767,13 +10767,13 @@ $ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c6
 ### `flink:1.20-scala_2.12` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:f71d1bc1abbd3941751436ec4982d9282ac423a8709b4498e096e7afc2edffd4
+$ docker pull flink@sha256:16b0e79d999499c7c4b991f121afec0fd80741676b33980b70c718c7db029518
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.5 MB (579493166 bytes)**  
+-	Total Size: **579.5 MB (579493300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e25c58974fb0f5e91a244fba355c1c8ec83dd39b82dae9a05457fdc089847d`
+-	Image ID: `sha256:19a46ae7563172b1df5381fcb78b8a8c5f48967c71525223ef8af3d59592b201`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -10790,24 +10790,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-11.0.24+8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='e0c1938093da3780e4494d366a4e6b75584dde8d46a19acea6691ae11df4cda5';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.24_8.tar.gz';          ;;        arm64)          ESUM='1fe97cdaad47d7d108f329c6e4560b46748ef7f2948a1027812ade0bbc2a3597';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.24_8.tar.gz';          ;;        armhf)          ESUM='bf893085627c6ec484e63aa1290276b23bcfee547459da6b0432ae9c5c1be22a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_arm_linux_hotspot_11.0.24_8.tar.gz';          ;;        ppc64el)          ESUM='8ee351314182df93fbad96139bb74b97814944d66197896e388404a1ecfa06b3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.24_8.tar.gz';          ;;        s390x)          ESUM='5b331f093bb03126334bbbc24f05f60681baeda461d860e4e2cdb693ee54e0ed';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_s390x_linux_hotspot_11.0.24_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -10853,56 +10853,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8fbf2d9773e7134f4a191df0ac42cf153da8dbe87afedfbb0f67d5178bd8f08`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 4.4 MB (4416741 bytes)  
+	-	`sha256:429468ac77e4cc6ab9194015ba23f1f93c8ae70f75cc3b3356ae55623758d9e1`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.4 MB (4416774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bfc3d001b9866304322cfddb3fd1ba55a880745727b4fd5bfa974b24171aef5`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:c392a87beaaa873cfbe06df28696a2c022b08c31c948e45dd44ae47f5898a86c`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab0b2bacf21acd0f75a93d46ebd839f323c5a3edf2eaab59d894ad44ca8c68db`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 4.6 KB (4589 bytes)  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35f982baf44566fcd83d14cb89963155a02a9c5aa93fcb64fbfee4071d35cd9c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c5d40a67a6487f84493f63557571e96c5be961856731da5cd17335ee97535c3`  
-		Last Modified: Sat, 17 Aug 2024 02:01:18 GMT  
-		Size: 483.7 MB (483656924 bytes)  
+	-	`sha256:fbb582e0bb4fd8569eeb05a61d95cc58f3a6fe1ce18ae3c5eb7db3f540cfa74a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:15 GMT  
+		Size: 483.7 MB (483656777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:3a1636493da1da0ec4fffa12711dfe9fe0ed4d8f45b10e4480cacd588e2b085b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:08 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20-scala_2.12` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:a80fa18c7f630e43e4a5a42983bcb885d2da3159e9d7fe496ee23554be1bcf69
+$ docker pull flink@sha256:e0ef0c6a768c75e1deb238df1fd1da44c5a53ebe09d77ba7b0818cad1eb4704e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3762004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c15561fb2d6692b128d47e8e4f18f672bd641f95107240f708a571af9e7ac89b`
+-	Image ID: `sha256:6c0f5e960eb8e5ad2d849d0cc345245ec51cbf373c7b367e72de18decd557602`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:985465f6bd9500f1155f78b2ba8415f85761ceffd9f43c23b1fdcd3490f43187`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:52b7e0e8d58ae9715e5211fc464de1af84cd634d292f4c7d0d8ae641cc1a0308`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 3.7 MB (3729208 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6cb44e0bf8c15fb2b0bcbe46be99ceda851fbbbd7e361cd4576b32fb5c225e03`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:29c16e8034fdd07e77afd5d74ca7b7b01d7046d74124ce1f9ab921389f56d6c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 32.8 KB (32796 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11051,7 +11051,7 @@ $ docker pull flink@sha256:83edcec63d210535a65d4a375aacbbd0f102344462a00730b4dc6
 ## `flink:1.20-scala_2.12-java11`
 
 ```console
-$ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c65d0de9fd673
+$ docker pull flink@sha256:92b7a6faf2bd2fe0c95dd354b02cf98440afd8cb4b0252d6c553729d22b1bded
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11064,13 +11064,13 @@ $ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c6
 ### `flink:1.20-scala_2.12-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:f71d1bc1abbd3941751436ec4982d9282ac423a8709b4498e096e7afc2edffd4
+$ docker pull flink@sha256:16b0e79d999499c7c4b991f121afec0fd80741676b33980b70c718c7db029518
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.5 MB (579493166 bytes)**  
+-	Total Size: **579.5 MB (579493300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e25c58974fb0f5e91a244fba355c1c8ec83dd39b82dae9a05457fdc089847d`
+-	Image ID: `sha256:19a46ae7563172b1df5381fcb78b8a8c5f48967c71525223ef8af3d59592b201`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -11087,24 +11087,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-11.0.24+8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='e0c1938093da3780e4494d366a4e6b75584dde8d46a19acea6691ae11df4cda5';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.24_8.tar.gz';          ;;        arm64)          ESUM='1fe97cdaad47d7d108f329c6e4560b46748ef7f2948a1027812ade0bbc2a3597';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.24_8.tar.gz';          ;;        armhf)          ESUM='bf893085627c6ec484e63aa1290276b23bcfee547459da6b0432ae9c5c1be22a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_arm_linux_hotspot_11.0.24_8.tar.gz';          ;;        ppc64el)          ESUM='8ee351314182df93fbad96139bb74b97814944d66197896e388404a1ecfa06b3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.24_8.tar.gz';          ;;        s390x)          ESUM='5b331f093bb03126334bbbc24f05f60681baeda461d860e4e2cdb693ee54e0ed';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_s390x_linux_hotspot_11.0.24_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -11150,56 +11150,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8fbf2d9773e7134f4a191df0ac42cf153da8dbe87afedfbb0f67d5178bd8f08`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 4.4 MB (4416741 bytes)  
+	-	`sha256:429468ac77e4cc6ab9194015ba23f1f93c8ae70f75cc3b3356ae55623758d9e1`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.4 MB (4416774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bfc3d001b9866304322cfddb3fd1ba55a880745727b4fd5bfa974b24171aef5`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:c392a87beaaa873cfbe06df28696a2c022b08c31c948e45dd44ae47f5898a86c`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab0b2bacf21acd0f75a93d46ebd839f323c5a3edf2eaab59d894ad44ca8c68db`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 4.6 KB (4589 bytes)  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35f982baf44566fcd83d14cb89963155a02a9c5aa93fcb64fbfee4071d35cd9c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c5d40a67a6487f84493f63557571e96c5be961856731da5cd17335ee97535c3`  
-		Last Modified: Sat, 17 Aug 2024 02:01:18 GMT  
-		Size: 483.7 MB (483656924 bytes)  
+	-	`sha256:fbb582e0bb4fd8569eeb05a61d95cc58f3a6fe1ce18ae3c5eb7db3f540cfa74a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:15 GMT  
+		Size: 483.7 MB (483656777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:3a1636493da1da0ec4fffa12711dfe9fe0ed4d8f45b10e4480cacd588e2b085b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:08 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20-scala_2.12-java11` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:a80fa18c7f630e43e4a5a42983bcb885d2da3159e9d7fe496ee23554be1bcf69
+$ docker pull flink@sha256:e0ef0c6a768c75e1deb238df1fd1da44c5a53ebe09d77ba7b0818cad1eb4704e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3762004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c15561fb2d6692b128d47e8e4f18f672bd641f95107240f708a571af9e7ac89b`
+-	Image ID: `sha256:6c0f5e960eb8e5ad2d849d0cc345245ec51cbf373c7b367e72de18decd557602`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:985465f6bd9500f1155f78b2ba8415f85761ceffd9f43c23b1fdcd3490f43187`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:52b7e0e8d58ae9715e5211fc464de1af84cd634d292f4c7d0d8ae641cc1a0308`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 3.7 MB (3729208 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6cb44e0bf8c15fb2b0bcbe46be99ceda851fbbbd7e361cd4576b32fb5c225e03`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:29c16e8034fdd07e77afd5d74ca7b7b01d7046d74124ce1f9ab921389f56d6c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 32.8 KB (32796 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11348,7 +11348,7 @@ $ docker pull flink@sha256:83edcec63d210535a65d4a375aacbbd0f102344462a00730b4dc6
 ## `flink:1.20-scala_2.12-java17`
 
 ```console
-$ docker pull flink@sha256:d90b7e5ecb86c63f76f2c3c5c91dd9d510984158a221a38d8854852b58dc8d93
+$ docker pull flink@sha256:327ff288bf934a0fa484db73df1e6dea3525b4cd724aa96961c0ecf98dbcb6cd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11361,13 +11361,13 @@ $ docker pull flink@sha256:d90b7e5ecb86c63f76f2c3c5c91dd9d510984158a221a38d88548
 ### `flink:1.20-scala_2.12-java17` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:8ac3f1aa1c1a9a181ea27ca8547708602d60d0453e4906d4bf5f8dd4449b845f
+$ docker pull flink@sha256:851c595e4d63ff1b895464db582cb0ee146b320c2d4f2e6dae4d23feff05f68f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.6 MB (579574804 bytes)**  
+-	Total Size: **579.6 MB (579575072 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf951f15a52f77ab4b79a407b73f30a2c0ff237c68dc9ee72044cefdfa000f10`
+-	Image ID: `sha256:71dfbc5b199579cd3c6d3e635c59424b5e6a268447a30bc39665384bedddca80`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -11384,24 +11384,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-17.0.12+7
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -11447,69 +11447,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd24317609f1b5444d777c0434ab11020010745e5fa797d14158b433e7d085e`  
-		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:5161e45ecd8d096f978edcb483c5ed70580526e02a1f8155653ca1c6c192f097`  
+		Last Modified: Fri, 23 Aug 2024 19:27:49 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee39f6e13269ca8577495dc1d9334df2a3d057370e7eed97fcfb13cc67fc67ac`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 4.4 MB (4416739 bytes)  
+	-	`sha256:9a58127bf41eda5af8b1ac35f6540b1632da3f2c4f3e8ce28a9788ed09275402`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 4.4 MB (4416755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47f7588fe916030754493e7acabc148a674fe21d10211ddc298be595f0f952bb`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:44c46fd620084c3e72ab5d5e858919cb3eacba4b62d7b541ad02a746daf9ae18`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:292fc1fec4c0a0ba9c1517856a04c2c59727dc5b2a37de3f78727612e892da4e`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 4.6 KB (4589 bytes)  
+	-	`sha256:d98bf8ad18a26db56762926500c39e912621e5041c0fc4541801b26d2ea5f735`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26c4ccca98474cc71a9567488d96927af20f231611eb5bc872f2c87412649f13`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 115.0 B  
+	-	`sha256:1620e4df8c9708e2ddf761548a6bf7b2e49dce11af4faa9b42f5c230c34f2dad`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68f639f4ef1c1b7ebe2d5844c4975b0772bfe149ca7c0bba7cb0a877cfe8794c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:59 GMT  
-		Size: 483.7 MB (483656774 bytes)  
+	-	`sha256:8687c02ec33bfa750ee2e6adbe772f8126992a9c8b8bbcc04e5457c31483207d`  
+		Last Modified: Fri, 23 Aug 2024 20:07:34 GMT  
+		Size: 483.7 MB (483656775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5466ae04d68b2b15d42215a235951c32d11089499ed422ca8b711a0356193ad2`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:7b8fcd7deb1ba26a7743cbb84bb3a0be7f6b114758295266a15c52163e7352d9`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20-scala_2.12-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:115fbb6f2280952934d89a72d8f27a72b6772fc1c8a31525b81d0f09f188deb1
+$ docker pull flink@sha256:8c753aaea4674bccd50d723a5f8ff87ba8626c972d66f79ed0117c7d68bea34e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3758364 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e9d177b7c50cb2b5b61ae90707dd4cc4bfc67e853a95f1fc0a18df4efc6949b`
+-	Image ID: `sha256:b43ff88906fa8be120efb0f8cc825ae87123a00f6b3cee579a9c763ace76209d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b82b42b4f8257efc3bc88272dee142a1bc379f5959ad9e3c03edc00605d12c5`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
+	-	`sha256:4f56fc46a7a7e04650fac591da1b88d5f7cefea772f53a426a989512b943ba3c`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
 		Size: 3.7 MB (3727388 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8f391493fec6d2005ebac147c274963c25056f53aff5ba43651823719b4cff93`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
+	-	`sha256:6f149fe22bb3baa75ab608c48aa59ded89cb30cf8bf56ac8e715c5b2232a31e2`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
 		Size: 31.0 KB (30976 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.20-scala_2.12-java17` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:3a82b38d4bdbdc83d5454777a44bfb0180fa7cb54bc72b9543b8348ce8f1d1cf
+$ docker pull flink@sha256:0a7a3e0db3e1d223b942a94e4f19c2337b3b3c3a1fec359d0769fb7860779a16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **576.7 MB (576723337 bytes)**  
+-	Total Size: **576.7 MB (576723772 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cdc4f55e01c2ad851ee6e4f650d402bce0ccb5805feac3366d7c58f888403ccf`
+-	Image ID: `sha256:ebbd8c3003acc7c10bdda5f573e905ade4c2253a6e650d15d7e59621c02006d4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -11526,24 +11526,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:4126c5ecc7750c7d2beb8c08d15aea03d96910453b36d2fb2d41185fdca7b20f in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-17.0.12+7
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -11589,63 +11589,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:560407f77d279e68f72a6b12199439583872a1ea3f7441297485cd75f35c2820`  
-		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
-		Size: 1.9 KB (1867 bytes)  
+	-	`sha256:7525b10c4bd14139ded90d85ae282e53b2795402b1d01d327856dc57969f13e3`  
+		Last Modified: Fri, 23 Aug 2024 19:45:19 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ad449889b73484896ec212c8670510e4161d8083aa5ad002579b20df8504b78`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 4.3 MB (4265352 bytes)  
+	-	`sha256:b9f3272af01e149559a1d95590e2b0630a4501876558133e754ec3266f0f1377`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 4.3 MB (4265489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ca919b123f67c1b860be035235046bd79c58881886fd0d56ee2e52996b0b2ef`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 835.4 KB (835384 bytes)  
+	-	`sha256:c87f04576eb489737d425f233e0419d858cc5befc99a55366af6526106664e3a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ac41456a710b87ab2f807d097fb5bd69188c6b61cfce3d2cc3085448c71965d`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:527793eb0fc027c673016def1601b0aab511e24e2c64665fc068bece0f8ce788`  
+		Last Modified: Fri, 23 Aug 2024 22:10:54 GMT  
 		Size: 4.6 KB (4628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4452b3787dd72415ceb5e1a4a1e0c1e74853d7598d2e2c146c874e6a54df5dfe`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:bd4d84a503d37746271a50e829f38973f511d5e5a39efd9983ca635521bb7e14`  
+		Last Modified: Fri, 23 Aug 2024 22:10:54 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8265632e541fad27b144d944b2105084df2fabbb31b01f9314e64639d5b55fd9`  
-		Last Modified: Sat, 17 Aug 2024 06:48:56 GMT  
-		Size: 483.7 MB (483656861 bytes)  
+	-	`sha256:dda728f3ef633d0d3b9bda5486e0b9227bd88ad5c0bcdf51acc9919a15016b68`  
+		Last Modified: Fri, 23 Aug 2024 22:11:05 GMT  
+		Size: 483.7 MB (483656921 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efacbdb8018981f0779444b5aeb881d79e2a3e81b6dc77767744e07d3baa53be`  
-		Last Modified: Sat, 17 Aug 2024 06:48:44 GMT  
-		Size: 2.3 KB (2268 bytes)  
+	-	`sha256:b4346620dc8ed1d27770bbdfd4727c9697d32566e4e7a19e8a79db59c49de90a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20-scala_2.12-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:c8125017148ecbc630fa389ddc90f83e3c4a3374bae84d8d86007a2688a4dc43
+$ docker pull flink@sha256:dab72f3669d47e41a9cb4e29e272efc04e6e05ac172b835acb3b7e424085e930
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3759031 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08028e3fdb7d768d1dcc30fc584d39c1a0537820cbd24407ad4bc7a1d5b2bcd3`
+-	Image ID: `sha256:2a24167c40bca1a437e833348a157bb96c0208f195da4f737621c5b28c03c7bd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:63ed04fba019c16bc5eec54caaf6a39472464d2d39fd4c6eadcabbd6df737470`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:662df83943ece9a277badcb5da9f6eb51f0d05738ffbd8487e7fc5d597a5e2d7`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
 		Size: 3.7 MB (3727714 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b3dbaee2b66280da28827727b31ad21dcd8f4cb8a27fa8dab116648f3381d7dd`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:2c78cd48ed972a49fc1583f48a74e6c5966d60afb49dd6e4d8b21e989b476a61`  
+		Last Modified: Fri, 23 Aug 2024 22:10:54 GMT  
 		Size: 31.3 KB (31317 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.20-scala_2.12-java8`
 
 ```console
-$ docker pull flink@sha256:c84850f8adbbd05ce5ddea4f7bbb2b8b3bdf9750d3878fed3f48b1a96a09af90
+$ docker pull flink@sha256:c9c72dab124fc64f591d874e4ad8e234be19aea845c3b20ec0f05c781eaff4e8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11658,13 +11658,13 @@ $ docker pull flink@sha256:c84850f8adbbd05ce5ddea4f7bbb2b8b3bdf9750d3878fed3f48b
 ### `flink:1.20-scala_2.12-java8` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:255a3ff1cf45ebd52f6380f91d4e8026d9dd6e891ce13d632391fec8c28764b0
+$ docker pull flink@sha256:603d214f00be6ade5e0e59d78f577d4262d880a66a25fc993764387f962f6c5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **574.2 MB (574179256 bytes)**  
+-	Total Size: **574.2 MB (574179298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3c29d2b4740cba08f0d2be8c8cafd718336b5b8dc3b873b3a60316be7906f68`
+-	Image ID: `sha256:eb4305d6e21915654debf974791833cecc93032b54d26438de695d420640e006`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -11681,24 +11681,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk8u422-b05
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0ac516cc1eadffb4cd3cfc9736a33d58ea6a396bf85729036c973482f7c063d9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_x64_linux_hotspot_8u422b05.tar.gz';          ;;        arm64)          ESUM='8fbefff2c578f73d95118d830347589ddc9aa84510200a5a5001901c2dea4810';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_aarch64_linux_hotspot_8u422b05.tar.gz';          ;;        armhf)          ESUM='13bdefdeae6f18bc9c87bba18c853b8b12c5442ce07ff0a3956ce28776d695ff';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_arm_linux_hotspot_8u422b05.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='2991edbedee448c0f1edf131beca84b415dac64ea97365b9bfd85bc2f39893bb';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_ppc64le_linux_hotspot_8u422b05.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -11744,69 +11744,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63f0966d15e28d4f9d2446b285da398fbbc46c4fdd3e46d16dd24c27e54a7968`  
-		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:549fdae8215d87f93f320e0b858daecaf8ec8ca17d44c21986c5a17d9f682905`  
+		Last Modified: Fri, 23 Aug 2024 19:25:15 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f485d49d4cd24754e10a78821a251d8518075ca9da3c732aea907ba588da498a`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
-		Size: 4.4 MB (4416740 bytes)  
+	-	`sha256:a4931f4270cbebb7692f52a3502408e07815bf0138d8250f98c7115b960c3c0f`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
+		Size: 4.4 MB (4416739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf6b83ae9dda98c33d3cc281b5e363ab602f42420e80a67f9542d92052a749d8`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
+	-	`sha256:ccdbd546fc2c89978be29a1d9c1fe8cc3644df5baf07f9d7a9d79322e00b8b3b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 900.5 KB (900496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e6a46f2822534938cbd214be0869fc8d17f5231fe5b62cd0b4e8de78a8ef242`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
+	-	`sha256:558ccb0f59c361ac3a793cdd2ef65c752f306da8c72e7d1f8024501fa504be13`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfc683dbcf86f8b6f867b1af883eca17b0d077c368641ea47a11bce6653137a1`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
-		Size: 115.0 B  
+	-	`sha256:a082f6951d708207f0b35b90d65085db1b20049ea6e3f8f0ef0c124268f2ecf8`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc824e041aaf1803edef4da913979204af8bf3ef6a18f7223a449d2232a1374e`  
-		Last Modified: Sat, 17 Aug 2024 02:04:58 GMT  
-		Size: 483.7 MB (483656934 bytes)  
+	-	`sha256:12b8b9af9a7eb216ecf66e9da07a353858165753a6f8358195022ee35870fc47`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 483.7 MB (483656734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd921bac6c06174ab7942bd847c59bef3652eb2185105c02ab798028da0409ad`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:3a1636493da1da0ec4fffa12711dfe9fe0ed4d8f45b10e4480cacd588e2b085b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:08 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20-scala_2.12-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:97ea0e4c4aa5301b5293f5fd975ba6b54eebf8b91ee3b85215bf1e813b7c02c3
+$ docker pull flink@sha256:2ef8bece855f30fbba5fdb59588fd2d708bdaf47137e722fd82a3dc87bbdc87b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3778737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:060d5de67490551cc49cc07d192a4e706878a8c61058c98bd224c85bd72e1cd3`
+-	Image ID: `sha256:001f757e82039bc032838a431deae51f1eced47978f2a85491d9fde4c028313b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:621331d37ecaf3b1d2f089bba4e2e83f2a52c088a25e16bdeaa65871d1f64c92`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
+	-	`sha256:50d61ae6d1c98200015b79276bfb2a77b52ed3e6013f10b9ef941cee00f948d5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 3.7 MB (3747784 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ecdcb1f4ac3ed0a07a1d06cddb3cd99b5952c6d571b18eb9271f3658153a1963`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
+	-	`sha256:198d3cce0aefcdf74a49a0fb8c58853ace01c28143dcb4be22bb0127abb2d579`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 31.0 KB (30953 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.20-scala_2.12-java8` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:2d77a01d3d11b9f57f31c4ca95171c44a56457b65f59cf92cffd2d310c0c4726
+$ docker pull flink@sha256:5db1ae62067e110294d7a76f93993563159a5b5f8091092a9909e7a45f822708
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **570.8 MB (570833818 bytes)**  
+-	Total Size: **570.8 MB (570834159 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9132ec60baf23156cd15d032bf5780625814e8b1d3a3821e0b870837e9262f89`
+-	Image ID: `sha256:24e96f7e5b64ec0a24061e9ce4036e5892dfd5f38a986e6250fc36fa45290243`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -11823,24 +11823,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:4126c5ecc7750c7d2beb8c08d15aea03d96910453b36d2fb2d41185fdca7b20f in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk8u422-b05
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0ac516cc1eadffb4cd3cfc9736a33d58ea6a396bf85729036c973482f7c063d9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_x64_linux_hotspot_8u422b05.tar.gz';          ;;        arm64)          ESUM='8fbefff2c578f73d95118d830347589ddc9aa84510200a5a5001901c2dea4810';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_aarch64_linux_hotspot_8u422b05.tar.gz';          ;;        armhf)          ESUM='13bdefdeae6f18bc9c87bba18c853b8b12c5442ce07ff0a3956ce28776d695ff';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_arm_linux_hotspot_8u422b05.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='2991edbedee448c0f1edf131beca84b415dac64ea97365b9bfd85bc2f39893bb';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_ppc64le_linux_hotspot_8u422b05.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -11886,63 +11886,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b3a4248864654ce3e18048693bd49d77e323e35ce5e94fddc9a726a2faaeeb`  
-		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:db7acc9dfbf237a216b04a6b690009ad96051dd54ed79368fbd1e8306fbe4f05`  
+		Last Modified: Fri, 23 Aug 2024 19:43:12 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:810c5e271b495dd2f643060afb28946fb0c049eaed8479525f89c85fe41e8758`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 4.3 MB (4265413 bytes)  
+	-	`sha256:bcd5931f222e62a2780a370c553ddb4fc0e5ba856d0c4d1949908b6dd82987a9`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 4.3 MB (4265514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0018f9f96b94973046f70a5954b494f43d8753b53869d54a0df33933c063b3e9`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 835.4 KB (835383 bytes)  
+	-	`sha256:52a74542e3f8d53bdef5981075a820ad1cbd1065a63f8361ca7ab8f3e257d575`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70df9ce46f928dd0a17f031e1782f56fce7946d6d2d1a486b7fad210e334eb3f`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 4.6 KB (4630 bytes)  
+	-	`sha256:a12ad03876d184eb3bd45cbd1d0b0108052dc40bf3e00302f40f56c66264151c`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 4.6 KB (4631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eed5f8507b5d8c77ce95ec3da88a7105998d2a978ef93e8966ea615a7d98769f`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
+	-	`sha256:5ace7b531ab177a4f7222096a4840047094709a92b6ca52e537729440ff911cb`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b825ee33170c32587f5db69ae370b7592b4769d54ec52a86a18b8172a4a712e`  
-		Last Modified: Sat, 17 Aug 2024 06:45:51 GMT  
-		Size: 483.7 MB (483656777 bytes)  
+	-	`sha256:559979233acdb067fc89089045b106cd5ae8df3c7befa267ad0cb7d3d2f1b40a`  
+		Last Modified: Fri, 23 Aug 2024 22:09:16 GMT  
+		Size: 483.7 MB (483656776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91471169423ad95655a4a074da462c3016e6e4815aa0e6df9184f6499753609c`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 2.3 KB (2268 bytes)  
+	-	`sha256:95eb18edb6ea3113e20b4a9d33e1c93456d8617ef75494def7ef52e835110fd2`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20-scala_2.12-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:e33ceeb8a8863a0ca0ddea2949ea6469d06ab2cfebf1e73cf11d7a8cfa9fe96d
+$ docker pull flink@sha256:15a6c57b119d10fc6323dc592265908ac6900c9ecb4c834091b4e86f6b30f463
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3779403 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:127647621472bb5d67daf67a83e578eca063e6ebd549cbfc37d08130e7e3027b`
+-	Image ID: `sha256:f7089db1331b601b0523176e95acb1edbf362e5e0de24c80aabebf5f30287dae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f63d10a1035337c7f1c3cf73c11cd6f3fe9d0db0b08dee72f659d96de433adff`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
+	-	`sha256:d28e53e84fac226e44312c099fc1831413ae3a6ee904da63f456e0bf7c60ffdc`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
 		Size: 3.7 MB (3748110 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e32f24f932c4284100b47278606aeedb7687411a0dac6f5074489c822be25829`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
+	-	`sha256:6ab38a4dc7235815a9225c955b6fc007a4b3655249c57c32177caf3d028a2184`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
 		Size: 31.3 KB (31293 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.20.0`
 
 ```console
-$ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c65d0de9fd673
+$ docker pull flink@sha256:92b7a6faf2bd2fe0c95dd354b02cf98440afd8cb4b0252d6c553729d22b1bded
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11955,13 +11955,13 @@ $ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c6
 ### `flink:1.20.0` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:f71d1bc1abbd3941751436ec4982d9282ac423a8709b4498e096e7afc2edffd4
+$ docker pull flink@sha256:16b0e79d999499c7c4b991f121afec0fd80741676b33980b70c718c7db029518
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.5 MB (579493166 bytes)**  
+-	Total Size: **579.5 MB (579493300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e25c58974fb0f5e91a244fba355c1c8ec83dd39b82dae9a05457fdc089847d`
+-	Image ID: `sha256:19a46ae7563172b1df5381fcb78b8a8c5f48967c71525223ef8af3d59592b201`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -11978,24 +11978,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-11.0.24+8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='e0c1938093da3780e4494d366a4e6b75584dde8d46a19acea6691ae11df4cda5';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.24_8.tar.gz';          ;;        arm64)          ESUM='1fe97cdaad47d7d108f329c6e4560b46748ef7f2948a1027812ade0bbc2a3597';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.24_8.tar.gz';          ;;        armhf)          ESUM='bf893085627c6ec484e63aa1290276b23bcfee547459da6b0432ae9c5c1be22a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_arm_linux_hotspot_11.0.24_8.tar.gz';          ;;        ppc64el)          ESUM='8ee351314182df93fbad96139bb74b97814944d66197896e388404a1ecfa06b3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.24_8.tar.gz';          ;;        s390x)          ESUM='5b331f093bb03126334bbbc24f05f60681baeda461d860e4e2cdb693ee54e0ed';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_s390x_linux_hotspot_11.0.24_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -12041,56 +12041,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8fbf2d9773e7134f4a191df0ac42cf153da8dbe87afedfbb0f67d5178bd8f08`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 4.4 MB (4416741 bytes)  
+	-	`sha256:429468ac77e4cc6ab9194015ba23f1f93c8ae70f75cc3b3356ae55623758d9e1`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.4 MB (4416774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bfc3d001b9866304322cfddb3fd1ba55a880745727b4fd5bfa974b24171aef5`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:c392a87beaaa873cfbe06df28696a2c022b08c31c948e45dd44ae47f5898a86c`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab0b2bacf21acd0f75a93d46ebd839f323c5a3edf2eaab59d894ad44ca8c68db`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 4.6 KB (4589 bytes)  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35f982baf44566fcd83d14cb89963155a02a9c5aa93fcb64fbfee4071d35cd9c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c5d40a67a6487f84493f63557571e96c5be961856731da5cd17335ee97535c3`  
-		Last Modified: Sat, 17 Aug 2024 02:01:18 GMT  
-		Size: 483.7 MB (483656924 bytes)  
+	-	`sha256:fbb582e0bb4fd8569eeb05a61d95cc58f3a6fe1ce18ae3c5eb7db3f540cfa74a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:15 GMT  
+		Size: 483.7 MB (483656777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:3a1636493da1da0ec4fffa12711dfe9fe0ed4d8f45b10e4480cacd588e2b085b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:08 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20.0` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:a80fa18c7f630e43e4a5a42983bcb885d2da3159e9d7fe496ee23554be1bcf69
+$ docker pull flink@sha256:e0ef0c6a768c75e1deb238df1fd1da44c5a53ebe09d77ba7b0818cad1eb4704e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3762004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c15561fb2d6692b128d47e8e4f18f672bd641f95107240f708a571af9e7ac89b`
+-	Image ID: `sha256:6c0f5e960eb8e5ad2d849d0cc345245ec51cbf373c7b367e72de18decd557602`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:985465f6bd9500f1155f78b2ba8415f85761ceffd9f43c23b1fdcd3490f43187`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:52b7e0e8d58ae9715e5211fc464de1af84cd634d292f4c7d0d8ae641cc1a0308`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 3.7 MB (3729208 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6cb44e0bf8c15fb2b0bcbe46be99ceda851fbbbd7e361cd4576b32fb5c225e03`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:29c16e8034fdd07e77afd5d74ca7b7b01d7046d74124ce1f9ab921389f56d6c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 32.8 KB (32796 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12239,7 +12239,7 @@ $ docker pull flink@sha256:83edcec63d210535a65d4a375aacbbd0f102344462a00730b4dc6
 ## `flink:1.20.0-java11`
 
 ```console
-$ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c65d0de9fd673
+$ docker pull flink@sha256:92b7a6faf2bd2fe0c95dd354b02cf98440afd8cb4b0252d6c553729d22b1bded
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12252,13 +12252,13 @@ $ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c6
 ### `flink:1.20.0-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:f71d1bc1abbd3941751436ec4982d9282ac423a8709b4498e096e7afc2edffd4
+$ docker pull flink@sha256:16b0e79d999499c7c4b991f121afec0fd80741676b33980b70c718c7db029518
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.5 MB (579493166 bytes)**  
+-	Total Size: **579.5 MB (579493300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e25c58974fb0f5e91a244fba355c1c8ec83dd39b82dae9a05457fdc089847d`
+-	Image ID: `sha256:19a46ae7563172b1df5381fcb78b8a8c5f48967c71525223ef8af3d59592b201`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -12275,24 +12275,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-11.0.24+8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='e0c1938093da3780e4494d366a4e6b75584dde8d46a19acea6691ae11df4cda5';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.24_8.tar.gz';          ;;        arm64)          ESUM='1fe97cdaad47d7d108f329c6e4560b46748ef7f2948a1027812ade0bbc2a3597';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.24_8.tar.gz';          ;;        armhf)          ESUM='bf893085627c6ec484e63aa1290276b23bcfee547459da6b0432ae9c5c1be22a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_arm_linux_hotspot_11.0.24_8.tar.gz';          ;;        ppc64el)          ESUM='8ee351314182df93fbad96139bb74b97814944d66197896e388404a1ecfa06b3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.24_8.tar.gz';          ;;        s390x)          ESUM='5b331f093bb03126334bbbc24f05f60681baeda461d860e4e2cdb693ee54e0ed';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_s390x_linux_hotspot_11.0.24_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -12338,56 +12338,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8fbf2d9773e7134f4a191df0ac42cf153da8dbe87afedfbb0f67d5178bd8f08`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 4.4 MB (4416741 bytes)  
+	-	`sha256:429468ac77e4cc6ab9194015ba23f1f93c8ae70f75cc3b3356ae55623758d9e1`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.4 MB (4416774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bfc3d001b9866304322cfddb3fd1ba55a880745727b4fd5bfa974b24171aef5`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:c392a87beaaa873cfbe06df28696a2c022b08c31c948e45dd44ae47f5898a86c`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab0b2bacf21acd0f75a93d46ebd839f323c5a3edf2eaab59d894ad44ca8c68db`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 4.6 KB (4589 bytes)  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35f982baf44566fcd83d14cb89963155a02a9c5aa93fcb64fbfee4071d35cd9c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c5d40a67a6487f84493f63557571e96c5be961856731da5cd17335ee97535c3`  
-		Last Modified: Sat, 17 Aug 2024 02:01:18 GMT  
-		Size: 483.7 MB (483656924 bytes)  
+	-	`sha256:fbb582e0bb4fd8569eeb05a61d95cc58f3a6fe1ce18ae3c5eb7db3f540cfa74a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:15 GMT  
+		Size: 483.7 MB (483656777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:3a1636493da1da0ec4fffa12711dfe9fe0ed4d8f45b10e4480cacd588e2b085b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:08 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20.0-java11` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:a80fa18c7f630e43e4a5a42983bcb885d2da3159e9d7fe496ee23554be1bcf69
+$ docker pull flink@sha256:e0ef0c6a768c75e1deb238df1fd1da44c5a53ebe09d77ba7b0818cad1eb4704e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3762004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c15561fb2d6692b128d47e8e4f18f672bd641f95107240f708a571af9e7ac89b`
+-	Image ID: `sha256:6c0f5e960eb8e5ad2d849d0cc345245ec51cbf373c7b367e72de18decd557602`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:985465f6bd9500f1155f78b2ba8415f85761ceffd9f43c23b1fdcd3490f43187`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:52b7e0e8d58ae9715e5211fc464de1af84cd634d292f4c7d0d8ae641cc1a0308`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 3.7 MB (3729208 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6cb44e0bf8c15fb2b0bcbe46be99ceda851fbbbd7e361cd4576b32fb5c225e03`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:29c16e8034fdd07e77afd5d74ca7b7b01d7046d74124ce1f9ab921389f56d6c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 32.8 KB (32796 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12536,7 +12536,7 @@ $ docker pull flink@sha256:83edcec63d210535a65d4a375aacbbd0f102344462a00730b4dc6
 ## `flink:1.20.0-java17`
 
 ```console
-$ docker pull flink@sha256:d90b7e5ecb86c63f76f2c3c5c91dd9d510984158a221a38d8854852b58dc8d93
+$ docker pull flink@sha256:327ff288bf934a0fa484db73df1e6dea3525b4cd724aa96961c0ecf98dbcb6cd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12549,13 +12549,13 @@ $ docker pull flink@sha256:d90b7e5ecb86c63f76f2c3c5c91dd9d510984158a221a38d88548
 ### `flink:1.20.0-java17` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:8ac3f1aa1c1a9a181ea27ca8547708602d60d0453e4906d4bf5f8dd4449b845f
+$ docker pull flink@sha256:851c595e4d63ff1b895464db582cb0ee146b320c2d4f2e6dae4d23feff05f68f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.6 MB (579574804 bytes)**  
+-	Total Size: **579.6 MB (579575072 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf951f15a52f77ab4b79a407b73f30a2c0ff237c68dc9ee72044cefdfa000f10`
+-	Image ID: `sha256:71dfbc5b199579cd3c6d3e635c59424b5e6a268447a30bc39665384bedddca80`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -12572,24 +12572,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-17.0.12+7
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -12635,69 +12635,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd24317609f1b5444d777c0434ab11020010745e5fa797d14158b433e7d085e`  
-		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:5161e45ecd8d096f978edcb483c5ed70580526e02a1f8155653ca1c6c192f097`  
+		Last Modified: Fri, 23 Aug 2024 19:27:49 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee39f6e13269ca8577495dc1d9334df2a3d057370e7eed97fcfb13cc67fc67ac`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 4.4 MB (4416739 bytes)  
+	-	`sha256:9a58127bf41eda5af8b1ac35f6540b1632da3f2c4f3e8ce28a9788ed09275402`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 4.4 MB (4416755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47f7588fe916030754493e7acabc148a674fe21d10211ddc298be595f0f952bb`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:44c46fd620084c3e72ab5d5e858919cb3eacba4b62d7b541ad02a746daf9ae18`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:292fc1fec4c0a0ba9c1517856a04c2c59727dc5b2a37de3f78727612e892da4e`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 4.6 KB (4589 bytes)  
+	-	`sha256:d98bf8ad18a26db56762926500c39e912621e5041c0fc4541801b26d2ea5f735`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26c4ccca98474cc71a9567488d96927af20f231611eb5bc872f2c87412649f13`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 115.0 B  
+	-	`sha256:1620e4df8c9708e2ddf761548a6bf7b2e49dce11af4faa9b42f5c230c34f2dad`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68f639f4ef1c1b7ebe2d5844c4975b0772bfe149ca7c0bba7cb0a877cfe8794c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:59 GMT  
-		Size: 483.7 MB (483656774 bytes)  
+	-	`sha256:8687c02ec33bfa750ee2e6adbe772f8126992a9c8b8bbcc04e5457c31483207d`  
+		Last Modified: Fri, 23 Aug 2024 20:07:34 GMT  
+		Size: 483.7 MB (483656775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5466ae04d68b2b15d42215a235951c32d11089499ed422ca8b711a0356193ad2`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:7b8fcd7deb1ba26a7743cbb84bb3a0be7f6b114758295266a15c52163e7352d9`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20.0-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:115fbb6f2280952934d89a72d8f27a72b6772fc1c8a31525b81d0f09f188deb1
+$ docker pull flink@sha256:8c753aaea4674bccd50d723a5f8ff87ba8626c972d66f79ed0117c7d68bea34e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3758364 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e9d177b7c50cb2b5b61ae90707dd4cc4bfc67e853a95f1fc0a18df4efc6949b`
+-	Image ID: `sha256:b43ff88906fa8be120efb0f8cc825ae87123a00f6b3cee579a9c763ace76209d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b82b42b4f8257efc3bc88272dee142a1bc379f5959ad9e3c03edc00605d12c5`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
+	-	`sha256:4f56fc46a7a7e04650fac591da1b88d5f7cefea772f53a426a989512b943ba3c`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
 		Size: 3.7 MB (3727388 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8f391493fec6d2005ebac147c274963c25056f53aff5ba43651823719b4cff93`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
+	-	`sha256:6f149fe22bb3baa75ab608c48aa59ded89cb30cf8bf56ac8e715c5b2232a31e2`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
 		Size: 31.0 KB (30976 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.20.0-java17` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:3a82b38d4bdbdc83d5454777a44bfb0180fa7cb54bc72b9543b8348ce8f1d1cf
+$ docker pull flink@sha256:0a7a3e0db3e1d223b942a94e4f19c2337b3b3c3a1fec359d0769fb7860779a16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **576.7 MB (576723337 bytes)**  
+-	Total Size: **576.7 MB (576723772 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cdc4f55e01c2ad851ee6e4f650d402bce0ccb5805feac3366d7c58f888403ccf`
+-	Image ID: `sha256:ebbd8c3003acc7c10bdda5f573e905ade4c2253a6e650d15d7e59621c02006d4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -12714,24 +12714,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:4126c5ecc7750c7d2beb8c08d15aea03d96910453b36d2fb2d41185fdca7b20f in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-17.0.12+7
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -12777,63 +12777,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:560407f77d279e68f72a6b12199439583872a1ea3f7441297485cd75f35c2820`  
-		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
-		Size: 1.9 KB (1867 bytes)  
+	-	`sha256:7525b10c4bd14139ded90d85ae282e53b2795402b1d01d327856dc57969f13e3`  
+		Last Modified: Fri, 23 Aug 2024 19:45:19 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ad449889b73484896ec212c8670510e4161d8083aa5ad002579b20df8504b78`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 4.3 MB (4265352 bytes)  
+	-	`sha256:b9f3272af01e149559a1d95590e2b0630a4501876558133e754ec3266f0f1377`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 4.3 MB (4265489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ca919b123f67c1b860be035235046bd79c58881886fd0d56ee2e52996b0b2ef`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 835.4 KB (835384 bytes)  
+	-	`sha256:c87f04576eb489737d425f233e0419d858cc5befc99a55366af6526106664e3a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ac41456a710b87ab2f807d097fb5bd69188c6b61cfce3d2cc3085448c71965d`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:527793eb0fc027c673016def1601b0aab511e24e2c64665fc068bece0f8ce788`  
+		Last Modified: Fri, 23 Aug 2024 22:10:54 GMT  
 		Size: 4.6 KB (4628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4452b3787dd72415ceb5e1a4a1e0c1e74853d7598d2e2c146c874e6a54df5dfe`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:bd4d84a503d37746271a50e829f38973f511d5e5a39efd9983ca635521bb7e14`  
+		Last Modified: Fri, 23 Aug 2024 22:10:54 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8265632e541fad27b144d944b2105084df2fabbb31b01f9314e64639d5b55fd9`  
-		Last Modified: Sat, 17 Aug 2024 06:48:56 GMT  
-		Size: 483.7 MB (483656861 bytes)  
+	-	`sha256:dda728f3ef633d0d3b9bda5486e0b9227bd88ad5c0bcdf51acc9919a15016b68`  
+		Last Modified: Fri, 23 Aug 2024 22:11:05 GMT  
+		Size: 483.7 MB (483656921 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efacbdb8018981f0779444b5aeb881d79e2a3e81b6dc77767744e07d3baa53be`  
-		Last Modified: Sat, 17 Aug 2024 06:48:44 GMT  
-		Size: 2.3 KB (2268 bytes)  
+	-	`sha256:b4346620dc8ed1d27770bbdfd4727c9697d32566e4e7a19e8a79db59c49de90a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20.0-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:c8125017148ecbc630fa389ddc90f83e3c4a3374bae84d8d86007a2688a4dc43
+$ docker pull flink@sha256:dab72f3669d47e41a9cb4e29e272efc04e6e05ac172b835acb3b7e424085e930
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3759031 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08028e3fdb7d768d1dcc30fc584d39c1a0537820cbd24407ad4bc7a1d5b2bcd3`
+-	Image ID: `sha256:2a24167c40bca1a437e833348a157bb96c0208f195da4f737621c5b28c03c7bd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:63ed04fba019c16bc5eec54caaf6a39472464d2d39fd4c6eadcabbd6df737470`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:662df83943ece9a277badcb5da9f6eb51f0d05738ffbd8487e7fc5d597a5e2d7`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
 		Size: 3.7 MB (3727714 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b3dbaee2b66280da28827727b31ad21dcd8f4cb8a27fa8dab116648f3381d7dd`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:2c78cd48ed972a49fc1583f48a74e6c5966d60afb49dd6e4d8b21e989b476a61`  
+		Last Modified: Fri, 23 Aug 2024 22:10:54 GMT  
 		Size: 31.3 KB (31317 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.20.0-java8`
 
 ```console
-$ docker pull flink@sha256:c84850f8adbbd05ce5ddea4f7bbb2b8b3bdf9750d3878fed3f48b1a96a09af90
+$ docker pull flink@sha256:c9c72dab124fc64f591d874e4ad8e234be19aea845c3b20ec0f05c781eaff4e8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12846,13 +12846,13 @@ $ docker pull flink@sha256:c84850f8adbbd05ce5ddea4f7bbb2b8b3bdf9750d3878fed3f48b
 ### `flink:1.20.0-java8` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:255a3ff1cf45ebd52f6380f91d4e8026d9dd6e891ce13d632391fec8c28764b0
+$ docker pull flink@sha256:603d214f00be6ade5e0e59d78f577d4262d880a66a25fc993764387f962f6c5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **574.2 MB (574179256 bytes)**  
+-	Total Size: **574.2 MB (574179298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3c29d2b4740cba08f0d2be8c8cafd718336b5b8dc3b873b3a60316be7906f68`
+-	Image ID: `sha256:eb4305d6e21915654debf974791833cecc93032b54d26438de695d420640e006`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -12869,24 +12869,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk8u422-b05
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0ac516cc1eadffb4cd3cfc9736a33d58ea6a396bf85729036c973482f7c063d9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_x64_linux_hotspot_8u422b05.tar.gz';          ;;        arm64)          ESUM='8fbefff2c578f73d95118d830347589ddc9aa84510200a5a5001901c2dea4810';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_aarch64_linux_hotspot_8u422b05.tar.gz';          ;;        armhf)          ESUM='13bdefdeae6f18bc9c87bba18c853b8b12c5442ce07ff0a3956ce28776d695ff';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_arm_linux_hotspot_8u422b05.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='2991edbedee448c0f1edf131beca84b415dac64ea97365b9bfd85bc2f39893bb';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_ppc64le_linux_hotspot_8u422b05.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -12932,69 +12932,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63f0966d15e28d4f9d2446b285da398fbbc46c4fdd3e46d16dd24c27e54a7968`  
-		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:549fdae8215d87f93f320e0b858daecaf8ec8ca17d44c21986c5a17d9f682905`  
+		Last Modified: Fri, 23 Aug 2024 19:25:15 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f485d49d4cd24754e10a78821a251d8518075ca9da3c732aea907ba588da498a`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
-		Size: 4.4 MB (4416740 bytes)  
+	-	`sha256:a4931f4270cbebb7692f52a3502408e07815bf0138d8250f98c7115b960c3c0f`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
+		Size: 4.4 MB (4416739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf6b83ae9dda98c33d3cc281b5e363ab602f42420e80a67f9542d92052a749d8`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
+	-	`sha256:ccdbd546fc2c89978be29a1d9c1fe8cc3644df5baf07f9d7a9d79322e00b8b3b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 900.5 KB (900496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e6a46f2822534938cbd214be0869fc8d17f5231fe5b62cd0b4e8de78a8ef242`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
+	-	`sha256:558ccb0f59c361ac3a793cdd2ef65c752f306da8c72e7d1f8024501fa504be13`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfc683dbcf86f8b6f867b1af883eca17b0d077c368641ea47a11bce6653137a1`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
-		Size: 115.0 B  
+	-	`sha256:a082f6951d708207f0b35b90d65085db1b20049ea6e3f8f0ef0c124268f2ecf8`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc824e041aaf1803edef4da913979204af8bf3ef6a18f7223a449d2232a1374e`  
-		Last Modified: Sat, 17 Aug 2024 02:04:58 GMT  
-		Size: 483.7 MB (483656934 bytes)  
+	-	`sha256:12b8b9af9a7eb216ecf66e9da07a353858165753a6f8358195022ee35870fc47`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 483.7 MB (483656734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd921bac6c06174ab7942bd847c59bef3652eb2185105c02ab798028da0409ad`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:3a1636493da1da0ec4fffa12711dfe9fe0ed4d8f45b10e4480cacd588e2b085b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:08 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20.0-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:97ea0e4c4aa5301b5293f5fd975ba6b54eebf8b91ee3b85215bf1e813b7c02c3
+$ docker pull flink@sha256:2ef8bece855f30fbba5fdb59588fd2d708bdaf47137e722fd82a3dc87bbdc87b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3778737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:060d5de67490551cc49cc07d192a4e706878a8c61058c98bd224c85bd72e1cd3`
+-	Image ID: `sha256:001f757e82039bc032838a431deae51f1eced47978f2a85491d9fde4c028313b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:621331d37ecaf3b1d2f089bba4e2e83f2a52c088a25e16bdeaa65871d1f64c92`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
+	-	`sha256:50d61ae6d1c98200015b79276bfb2a77b52ed3e6013f10b9ef941cee00f948d5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 3.7 MB (3747784 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ecdcb1f4ac3ed0a07a1d06cddb3cd99b5952c6d571b18eb9271f3658153a1963`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
+	-	`sha256:198d3cce0aefcdf74a49a0fb8c58853ace01c28143dcb4be22bb0127abb2d579`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 31.0 KB (30953 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.20.0-java8` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:2d77a01d3d11b9f57f31c4ca95171c44a56457b65f59cf92cffd2d310c0c4726
+$ docker pull flink@sha256:5db1ae62067e110294d7a76f93993563159a5b5f8091092a9909e7a45f822708
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **570.8 MB (570833818 bytes)**  
+-	Total Size: **570.8 MB (570834159 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9132ec60baf23156cd15d032bf5780625814e8b1d3a3821e0b870837e9262f89`
+-	Image ID: `sha256:24e96f7e5b64ec0a24061e9ce4036e5892dfd5f38a986e6250fc36fa45290243`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -13011,24 +13011,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:4126c5ecc7750c7d2beb8c08d15aea03d96910453b36d2fb2d41185fdca7b20f in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk8u422-b05
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0ac516cc1eadffb4cd3cfc9736a33d58ea6a396bf85729036c973482f7c063d9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_x64_linux_hotspot_8u422b05.tar.gz';          ;;        arm64)          ESUM='8fbefff2c578f73d95118d830347589ddc9aa84510200a5a5001901c2dea4810';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_aarch64_linux_hotspot_8u422b05.tar.gz';          ;;        armhf)          ESUM='13bdefdeae6f18bc9c87bba18c853b8b12c5442ce07ff0a3956ce28776d695ff';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_arm_linux_hotspot_8u422b05.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='2991edbedee448c0f1edf131beca84b415dac64ea97365b9bfd85bc2f39893bb';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_ppc64le_linux_hotspot_8u422b05.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -13074,63 +13074,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b3a4248864654ce3e18048693bd49d77e323e35ce5e94fddc9a726a2faaeeb`  
-		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:db7acc9dfbf237a216b04a6b690009ad96051dd54ed79368fbd1e8306fbe4f05`  
+		Last Modified: Fri, 23 Aug 2024 19:43:12 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:810c5e271b495dd2f643060afb28946fb0c049eaed8479525f89c85fe41e8758`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 4.3 MB (4265413 bytes)  
+	-	`sha256:bcd5931f222e62a2780a370c553ddb4fc0e5ba856d0c4d1949908b6dd82987a9`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 4.3 MB (4265514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0018f9f96b94973046f70a5954b494f43d8753b53869d54a0df33933c063b3e9`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 835.4 KB (835383 bytes)  
+	-	`sha256:52a74542e3f8d53bdef5981075a820ad1cbd1065a63f8361ca7ab8f3e257d575`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70df9ce46f928dd0a17f031e1782f56fce7946d6d2d1a486b7fad210e334eb3f`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 4.6 KB (4630 bytes)  
+	-	`sha256:a12ad03876d184eb3bd45cbd1d0b0108052dc40bf3e00302f40f56c66264151c`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 4.6 KB (4631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eed5f8507b5d8c77ce95ec3da88a7105998d2a978ef93e8966ea615a7d98769f`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
+	-	`sha256:5ace7b531ab177a4f7222096a4840047094709a92b6ca52e537729440ff911cb`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b825ee33170c32587f5db69ae370b7592b4769d54ec52a86a18b8172a4a712e`  
-		Last Modified: Sat, 17 Aug 2024 06:45:51 GMT  
-		Size: 483.7 MB (483656777 bytes)  
+	-	`sha256:559979233acdb067fc89089045b106cd5ae8df3c7befa267ad0cb7d3d2f1b40a`  
+		Last Modified: Fri, 23 Aug 2024 22:09:16 GMT  
+		Size: 483.7 MB (483656776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91471169423ad95655a4a074da462c3016e6e4815aa0e6df9184f6499753609c`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 2.3 KB (2268 bytes)  
+	-	`sha256:95eb18edb6ea3113e20b4a9d33e1c93456d8617ef75494def7ef52e835110fd2`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20.0-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:e33ceeb8a8863a0ca0ddea2949ea6469d06ab2cfebf1e73cf11d7a8cfa9fe96d
+$ docker pull flink@sha256:15a6c57b119d10fc6323dc592265908ac6900c9ecb4c834091b4e86f6b30f463
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3779403 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:127647621472bb5d67daf67a83e578eca063e6ebd549cbfc37d08130e7e3027b`
+-	Image ID: `sha256:f7089db1331b601b0523176e95acb1edbf362e5e0de24c80aabebf5f30287dae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f63d10a1035337c7f1c3cf73c11cd6f3fe9d0db0b08dee72f659d96de433adff`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
+	-	`sha256:d28e53e84fac226e44312c099fc1831413ae3a6ee904da63f456e0bf7c60ffdc`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
 		Size: 3.7 MB (3748110 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e32f24f932c4284100b47278606aeedb7687411a0dac6f5074489c822be25829`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
+	-	`sha256:6ab38a4dc7235815a9225c955b6fc007a4b3655249c57c32177caf3d028a2184`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
 		Size: 31.3 KB (31293 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.20.0-scala_2.12`
 
 ```console
-$ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c65d0de9fd673
+$ docker pull flink@sha256:92b7a6faf2bd2fe0c95dd354b02cf98440afd8cb4b0252d6c553729d22b1bded
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13143,13 +13143,13 @@ $ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c6
 ### `flink:1.20.0-scala_2.12` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:f71d1bc1abbd3941751436ec4982d9282ac423a8709b4498e096e7afc2edffd4
+$ docker pull flink@sha256:16b0e79d999499c7c4b991f121afec0fd80741676b33980b70c718c7db029518
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.5 MB (579493166 bytes)**  
+-	Total Size: **579.5 MB (579493300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e25c58974fb0f5e91a244fba355c1c8ec83dd39b82dae9a05457fdc089847d`
+-	Image ID: `sha256:19a46ae7563172b1df5381fcb78b8a8c5f48967c71525223ef8af3d59592b201`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -13166,24 +13166,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-11.0.24+8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='e0c1938093da3780e4494d366a4e6b75584dde8d46a19acea6691ae11df4cda5';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.24_8.tar.gz';          ;;        arm64)          ESUM='1fe97cdaad47d7d108f329c6e4560b46748ef7f2948a1027812ade0bbc2a3597';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.24_8.tar.gz';          ;;        armhf)          ESUM='bf893085627c6ec484e63aa1290276b23bcfee547459da6b0432ae9c5c1be22a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_arm_linux_hotspot_11.0.24_8.tar.gz';          ;;        ppc64el)          ESUM='8ee351314182df93fbad96139bb74b97814944d66197896e388404a1ecfa06b3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.24_8.tar.gz';          ;;        s390x)          ESUM='5b331f093bb03126334bbbc24f05f60681baeda461d860e4e2cdb693ee54e0ed';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_s390x_linux_hotspot_11.0.24_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -13229,56 +13229,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8fbf2d9773e7134f4a191df0ac42cf153da8dbe87afedfbb0f67d5178bd8f08`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 4.4 MB (4416741 bytes)  
+	-	`sha256:429468ac77e4cc6ab9194015ba23f1f93c8ae70f75cc3b3356ae55623758d9e1`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.4 MB (4416774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bfc3d001b9866304322cfddb3fd1ba55a880745727b4fd5bfa974b24171aef5`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:c392a87beaaa873cfbe06df28696a2c022b08c31c948e45dd44ae47f5898a86c`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab0b2bacf21acd0f75a93d46ebd839f323c5a3edf2eaab59d894ad44ca8c68db`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 4.6 KB (4589 bytes)  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35f982baf44566fcd83d14cb89963155a02a9c5aa93fcb64fbfee4071d35cd9c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c5d40a67a6487f84493f63557571e96c5be961856731da5cd17335ee97535c3`  
-		Last Modified: Sat, 17 Aug 2024 02:01:18 GMT  
-		Size: 483.7 MB (483656924 bytes)  
+	-	`sha256:fbb582e0bb4fd8569eeb05a61d95cc58f3a6fe1ce18ae3c5eb7db3f540cfa74a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:15 GMT  
+		Size: 483.7 MB (483656777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:3a1636493da1da0ec4fffa12711dfe9fe0ed4d8f45b10e4480cacd588e2b085b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:08 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20.0-scala_2.12` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:a80fa18c7f630e43e4a5a42983bcb885d2da3159e9d7fe496ee23554be1bcf69
+$ docker pull flink@sha256:e0ef0c6a768c75e1deb238df1fd1da44c5a53ebe09d77ba7b0818cad1eb4704e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3762004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c15561fb2d6692b128d47e8e4f18f672bd641f95107240f708a571af9e7ac89b`
+-	Image ID: `sha256:6c0f5e960eb8e5ad2d849d0cc345245ec51cbf373c7b367e72de18decd557602`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:985465f6bd9500f1155f78b2ba8415f85761ceffd9f43c23b1fdcd3490f43187`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:52b7e0e8d58ae9715e5211fc464de1af84cd634d292f4c7d0d8ae641cc1a0308`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 3.7 MB (3729208 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6cb44e0bf8c15fb2b0bcbe46be99ceda851fbbbd7e361cd4576b32fb5c225e03`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:29c16e8034fdd07e77afd5d74ca7b7b01d7046d74124ce1f9ab921389f56d6c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 32.8 KB (32796 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13427,7 +13427,7 @@ $ docker pull flink@sha256:83edcec63d210535a65d4a375aacbbd0f102344462a00730b4dc6
 ## `flink:1.20.0-scala_2.12-java11`
 
 ```console
-$ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c65d0de9fd673
+$ docker pull flink@sha256:92b7a6faf2bd2fe0c95dd354b02cf98440afd8cb4b0252d6c553729d22b1bded
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13440,13 +13440,13 @@ $ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c6
 ### `flink:1.20.0-scala_2.12-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:f71d1bc1abbd3941751436ec4982d9282ac423a8709b4498e096e7afc2edffd4
+$ docker pull flink@sha256:16b0e79d999499c7c4b991f121afec0fd80741676b33980b70c718c7db029518
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.5 MB (579493166 bytes)**  
+-	Total Size: **579.5 MB (579493300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e25c58974fb0f5e91a244fba355c1c8ec83dd39b82dae9a05457fdc089847d`
+-	Image ID: `sha256:19a46ae7563172b1df5381fcb78b8a8c5f48967c71525223ef8af3d59592b201`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -13463,24 +13463,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-11.0.24+8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='e0c1938093da3780e4494d366a4e6b75584dde8d46a19acea6691ae11df4cda5';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.24_8.tar.gz';          ;;        arm64)          ESUM='1fe97cdaad47d7d108f329c6e4560b46748ef7f2948a1027812ade0bbc2a3597';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.24_8.tar.gz';          ;;        armhf)          ESUM='bf893085627c6ec484e63aa1290276b23bcfee547459da6b0432ae9c5c1be22a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_arm_linux_hotspot_11.0.24_8.tar.gz';          ;;        ppc64el)          ESUM='8ee351314182df93fbad96139bb74b97814944d66197896e388404a1ecfa06b3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.24_8.tar.gz';          ;;        s390x)          ESUM='5b331f093bb03126334bbbc24f05f60681baeda461d860e4e2cdb693ee54e0ed';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_s390x_linux_hotspot_11.0.24_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -13526,56 +13526,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8fbf2d9773e7134f4a191df0ac42cf153da8dbe87afedfbb0f67d5178bd8f08`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 4.4 MB (4416741 bytes)  
+	-	`sha256:429468ac77e4cc6ab9194015ba23f1f93c8ae70f75cc3b3356ae55623758d9e1`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.4 MB (4416774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bfc3d001b9866304322cfddb3fd1ba55a880745727b4fd5bfa974b24171aef5`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:c392a87beaaa873cfbe06df28696a2c022b08c31c948e45dd44ae47f5898a86c`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab0b2bacf21acd0f75a93d46ebd839f323c5a3edf2eaab59d894ad44ca8c68db`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 4.6 KB (4589 bytes)  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35f982baf44566fcd83d14cb89963155a02a9c5aa93fcb64fbfee4071d35cd9c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c5d40a67a6487f84493f63557571e96c5be961856731da5cd17335ee97535c3`  
-		Last Modified: Sat, 17 Aug 2024 02:01:18 GMT  
-		Size: 483.7 MB (483656924 bytes)  
+	-	`sha256:fbb582e0bb4fd8569eeb05a61d95cc58f3a6fe1ce18ae3c5eb7db3f540cfa74a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:15 GMT  
+		Size: 483.7 MB (483656777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:3a1636493da1da0ec4fffa12711dfe9fe0ed4d8f45b10e4480cacd588e2b085b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:08 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20.0-scala_2.12-java11` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:a80fa18c7f630e43e4a5a42983bcb885d2da3159e9d7fe496ee23554be1bcf69
+$ docker pull flink@sha256:e0ef0c6a768c75e1deb238df1fd1da44c5a53ebe09d77ba7b0818cad1eb4704e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3762004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c15561fb2d6692b128d47e8e4f18f672bd641f95107240f708a571af9e7ac89b`
+-	Image ID: `sha256:6c0f5e960eb8e5ad2d849d0cc345245ec51cbf373c7b367e72de18decd557602`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:985465f6bd9500f1155f78b2ba8415f85761ceffd9f43c23b1fdcd3490f43187`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:52b7e0e8d58ae9715e5211fc464de1af84cd634d292f4c7d0d8ae641cc1a0308`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 3.7 MB (3729208 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6cb44e0bf8c15fb2b0bcbe46be99ceda851fbbbd7e361cd4576b32fb5c225e03`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:29c16e8034fdd07e77afd5d74ca7b7b01d7046d74124ce1f9ab921389f56d6c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 32.8 KB (32796 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13724,7 +13724,7 @@ $ docker pull flink@sha256:83edcec63d210535a65d4a375aacbbd0f102344462a00730b4dc6
 ## `flink:1.20.0-scala_2.12-java17`
 
 ```console
-$ docker pull flink@sha256:d90b7e5ecb86c63f76f2c3c5c91dd9d510984158a221a38d8854852b58dc8d93
+$ docker pull flink@sha256:327ff288bf934a0fa484db73df1e6dea3525b4cd724aa96961c0ecf98dbcb6cd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13737,13 +13737,13 @@ $ docker pull flink@sha256:d90b7e5ecb86c63f76f2c3c5c91dd9d510984158a221a38d88548
 ### `flink:1.20.0-scala_2.12-java17` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:8ac3f1aa1c1a9a181ea27ca8547708602d60d0453e4906d4bf5f8dd4449b845f
+$ docker pull flink@sha256:851c595e4d63ff1b895464db582cb0ee146b320c2d4f2e6dae4d23feff05f68f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.6 MB (579574804 bytes)**  
+-	Total Size: **579.6 MB (579575072 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf951f15a52f77ab4b79a407b73f30a2c0ff237c68dc9ee72044cefdfa000f10`
+-	Image ID: `sha256:71dfbc5b199579cd3c6d3e635c59424b5e6a268447a30bc39665384bedddca80`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -13760,24 +13760,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-17.0.12+7
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -13823,69 +13823,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd24317609f1b5444d777c0434ab11020010745e5fa797d14158b433e7d085e`  
-		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:5161e45ecd8d096f978edcb483c5ed70580526e02a1f8155653ca1c6c192f097`  
+		Last Modified: Fri, 23 Aug 2024 19:27:49 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee39f6e13269ca8577495dc1d9334df2a3d057370e7eed97fcfb13cc67fc67ac`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 4.4 MB (4416739 bytes)  
+	-	`sha256:9a58127bf41eda5af8b1ac35f6540b1632da3f2c4f3e8ce28a9788ed09275402`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 4.4 MB (4416755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47f7588fe916030754493e7acabc148a674fe21d10211ddc298be595f0f952bb`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:44c46fd620084c3e72ab5d5e858919cb3eacba4b62d7b541ad02a746daf9ae18`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:292fc1fec4c0a0ba9c1517856a04c2c59727dc5b2a37de3f78727612e892da4e`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 4.6 KB (4589 bytes)  
+	-	`sha256:d98bf8ad18a26db56762926500c39e912621e5041c0fc4541801b26d2ea5f735`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26c4ccca98474cc71a9567488d96927af20f231611eb5bc872f2c87412649f13`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 115.0 B  
+	-	`sha256:1620e4df8c9708e2ddf761548a6bf7b2e49dce11af4faa9b42f5c230c34f2dad`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68f639f4ef1c1b7ebe2d5844c4975b0772bfe149ca7c0bba7cb0a877cfe8794c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:59 GMT  
-		Size: 483.7 MB (483656774 bytes)  
+	-	`sha256:8687c02ec33bfa750ee2e6adbe772f8126992a9c8b8bbcc04e5457c31483207d`  
+		Last Modified: Fri, 23 Aug 2024 20:07:34 GMT  
+		Size: 483.7 MB (483656775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5466ae04d68b2b15d42215a235951c32d11089499ed422ca8b711a0356193ad2`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:7b8fcd7deb1ba26a7743cbb84bb3a0be7f6b114758295266a15c52163e7352d9`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20.0-scala_2.12-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:115fbb6f2280952934d89a72d8f27a72b6772fc1c8a31525b81d0f09f188deb1
+$ docker pull flink@sha256:8c753aaea4674bccd50d723a5f8ff87ba8626c972d66f79ed0117c7d68bea34e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3758364 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e9d177b7c50cb2b5b61ae90707dd4cc4bfc67e853a95f1fc0a18df4efc6949b`
+-	Image ID: `sha256:b43ff88906fa8be120efb0f8cc825ae87123a00f6b3cee579a9c763ace76209d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b82b42b4f8257efc3bc88272dee142a1bc379f5959ad9e3c03edc00605d12c5`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
+	-	`sha256:4f56fc46a7a7e04650fac591da1b88d5f7cefea772f53a426a989512b943ba3c`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
 		Size: 3.7 MB (3727388 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8f391493fec6d2005ebac147c274963c25056f53aff5ba43651823719b4cff93`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
+	-	`sha256:6f149fe22bb3baa75ab608c48aa59ded89cb30cf8bf56ac8e715c5b2232a31e2`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
 		Size: 31.0 KB (30976 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.20.0-scala_2.12-java17` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:3a82b38d4bdbdc83d5454777a44bfb0180fa7cb54bc72b9543b8348ce8f1d1cf
+$ docker pull flink@sha256:0a7a3e0db3e1d223b942a94e4f19c2337b3b3c3a1fec359d0769fb7860779a16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **576.7 MB (576723337 bytes)**  
+-	Total Size: **576.7 MB (576723772 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cdc4f55e01c2ad851ee6e4f650d402bce0ccb5805feac3366d7c58f888403ccf`
+-	Image ID: `sha256:ebbd8c3003acc7c10bdda5f573e905ade4c2253a6e650d15d7e59621c02006d4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -13902,24 +13902,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:4126c5ecc7750c7d2beb8c08d15aea03d96910453b36d2fb2d41185fdca7b20f in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-17.0.12+7
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -13965,63 +13965,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:560407f77d279e68f72a6b12199439583872a1ea3f7441297485cd75f35c2820`  
-		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
-		Size: 1.9 KB (1867 bytes)  
+	-	`sha256:7525b10c4bd14139ded90d85ae282e53b2795402b1d01d327856dc57969f13e3`  
+		Last Modified: Fri, 23 Aug 2024 19:45:19 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ad449889b73484896ec212c8670510e4161d8083aa5ad002579b20df8504b78`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 4.3 MB (4265352 bytes)  
+	-	`sha256:b9f3272af01e149559a1d95590e2b0630a4501876558133e754ec3266f0f1377`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 4.3 MB (4265489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ca919b123f67c1b860be035235046bd79c58881886fd0d56ee2e52996b0b2ef`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 835.4 KB (835384 bytes)  
+	-	`sha256:c87f04576eb489737d425f233e0419d858cc5befc99a55366af6526106664e3a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ac41456a710b87ab2f807d097fb5bd69188c6b61cfce3d2cc3085448c71965d`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:527793eb0fc027c673016def1601b0aab511e24e2c64665fc068bece0f8ce788`  
+		Last Modified: Fri, 23 Aug 2024 22:10:54 GMT  
 		Size: 4.6 KB (4628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4452b3787dd72415ceb5e1a4a1e0c1e74853d7598d2e2c146c874e6a54df5dfe`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:bd4d84a503d37746271a50e829f38973f511d5e5a39efd9983ca635521bb7e14`  
+		Last Modified: Fri, 23 Aug 2024 22:10:54 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8265632e541fad27b144d944b2105084df2fabbb31b01f9314e64639d5b55fd9`  
-		Last Modified: Sat, 17 Aug 2024 06:48:56 GMT  
-		Size: 483.7 MB (483656861 bytes)  
+	-	`sha256:dda728f3ef633d0d3b9bda5486e0b9227bd88ad5c0bcdf51acc9919a15016b68`  
+		Last Modified: Fri, 23 Aug 2024 22:11:05 GMT  
+		Size: 483.7 MB (483656921 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efacbdb8018981f0779444b5aeb881d79e2a3e81b6dc77767744e07d3baa53be`  
-		Last Modified: Sat, 17 Aug 2024 06:48:44 GMT  
-		Size: 2.3 KB (2268 bytes)  
+	-	`sha256:b4346620dc8ed1d27770bbdfd4727c9697d32566e4e7a19e8a79db59c49de90a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20.0-scala_2.12-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:c8125017148ecbc630fa389ddc90f83e3c4a3374bae84d8d86007a2688a4dc43
+$ docker pull flink@sha256:dab72f3669d47e41a9cb4e29e272efc04e6e05ac172b835acb3b7e424085e930
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3759031 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08028e3fdb7d768d1dcc30fc584d39c1a0537820cbd24407ad4bc7a1d5b2bcd3`
+-	Image ID: `sha256:2a24167c40bca1a437e833348a157bb96c0208f195da4f737621c5b28c03c7bd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:63ed04fba019c16bc5eec54caaf6a39472464d2d39fd4c6eadcabbd6df737470`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:662df83943ece9a277badcb5da9f6eb51f0d05738ffbd8487e7fc5d597a5e2d7`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
 		Size: 3.7 MB (3727714 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b3dbaee2b66280da28827727b31ad21dcd8f4cb8a27fa8dab116648f3381d7dd`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:2c78cd48ed972a49fc1583f48a74e6c5966d60afb49dd6e4d8b21e989b476a61`  
+		Last Modified: Fri, 23 Aug 2024 22:10:54 GMT  
 		Size: 31.3 KB (31317 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:1.20.0-scala_2.12-java8`
 
 ```console
-$ docker pull flink@sha256:c84850f8adbbd05ce5ddea4f7bbb2b8b3bdf9750d3878fed3f48b1a96a09af90
+$ docker pull flink@sha256:c9c72dab124fc64f591d874e4ad8e234be19aea845c3b20ec0f05c781eaff4e8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14034,13 +14034,13 @@ $ docker pull flink@sha256:c84850f8adbbd05ce5ddea4f7bbb2b8b3bdf9750d3878fed3f48b
 ### `flink:1.20.0-scala_2.12-java8` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:255a3ff1cf45ebd52f6380f91d4e8026d9dd6e891ce13d632391fec8c28764b0
+$ docker pull flink@sha256:603d214f00be6ade5e0e59d78f577d4262d880a66a25fc993764387f962f6c5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **574.2 MB (574179256 bytes)**  
+-	Total Size: **574.2 MB (574179298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3c29d2b4740cba08f0d2be8c8cafd718336b5b8dc3b873b3a60316be7906f68`
+-	Image ID: `sha256:eb4305d6e21915654debf974791833cecc93032b54d26438de695d420640e006`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -14057,24 +14057,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk8u422-b05
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0ac516cc1eadffb4cd3cfc9736a33d58ea6a396bf85729036c973482f7c063d9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_x64_linux_hotspot_8u422b05.tar.gz';          ;;        arm64)          ESUM='8fbefff2c578f73d95118d830347589ddc9aa84510200a5a5001901c2dea4810';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_aarch64_linux_hotspot_8u422b05.tar.gz';          ;;        armhf)          ESUM='13bdefdeae6f18bc9c87bba18c853b8b12c5442ce07ff0a3956ce28776d695ff';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_arm_linux_hotspot_8u422b05.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='2991edbedee448c0f1edf131beca84b415dac64ea97365b9bfd85bc2f39893bb';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_ppc64le_linux_hotspot_8u422b05.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -14120,69 +14120,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63f0966d15e28d4f9d2446b285da398fbbc46c4fdd3e46d16dd24c27e54a7968`  
-		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:549fdae8215d87f93f320e0b858daecaf8ec8ca17d44c21986c5a17d9f682905`  
+		Last Modified: Fri, 23 Aug 2024 19:25:15 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f485d49d4cd24754e10a78821a251d8518075ca9da3c732aea907ba588da498a`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
-		Size: 4.4 MB (4416740 bytes)  
+	-	`sha256:a4931f4270cbebb7692f52a3502408e07815bf0138d8250f98c7115b960c3c0f`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
+		Size: 4.4 MB (4416739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf6b83ae9dda98c33d3cc281b5e363ab602f42420e80a67f9542d92052a749d8`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
+	-	`sha256:ccdbd546fc2c89978be29a1d9c1fe8cc3644df5baf07f9d7a9d79322e00b8b3b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 900.5 KB (900496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e6a46f2822534938cbd214be0869fc8d17f5231fe5b62cd0b4e8de78a8ef242`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
+	-	`sha256:558ccb0f59c361ac3a793cdd2ef65c752f306da8c72e7d1f8024501fa504be13`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfc683dbcf86f8b6f867b1af883eca17b0d077c368641ea47a11bce6653137a1`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
-		Size: 115.0 B  
+	-	`sha256:a082f6951d708207f0b35b90d65085db1b20049ea6e3f8f0ef0c124268f2ecf8`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc824e041aaf1803edef4da913979204af8bf3ef6a18f7223a449d2232a1374e`  
-		Last Modified: Sat, 17 Aug 2024 02:04:58 GMT  
-		Size: 483.7 MB (483656934 bytes)  
+	-	`sha256:12b8b9af9a7eb216ecf66e9da07a353858165753a6f8358195022ee35870fc47`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 483.7 MB (483656734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd921bac6c06174ab7942bd847c59bef3652eb2185105c02ab798028da0409ad`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:3a1636493da1da0ec4fffa12711dfe9fe0ed4d8f45b10e4480cacd588e2b085b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:08 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20.0-scala_2.12-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:97ea0e4c4aa5301b5293f5fd975ba6b54eebf8b91ee3b85215bf1e813b7c02c3
+$ docker pull flink@sha256:2ef8bece855f30fbba5fdb59588fd2d708bdaf47137e722fd82a3dc87bbdc87b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3778737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:060d5de67490551cc49cc07d192a4e706878a8c61058c98bd224c85bd72e1cd3`
+-	Image ID: `sha256:001f757e82039bc032838a431deae51f1eced47978f2a85491d9fde4c028313b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:621331d37ecaf3b1d2f089bba4e2e83f2a52c088a25e16bdeaa65871d1f64c92`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
+	-	`sha256:50d61ae6d1c98200015b79276bfb2a77b52ed3e6013f10b9ef941cee00f948d5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 3.7 MB (3747784 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ecdcb1f4ac3ed0a07a1d06cddb3cd99b5952c6d571b18eb9271f3658153a1963`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
+	-	`sha256:198d3cce0aefcdf74a49a0fb8c58853ace01c28143dcb4be22bb0127abb2d579`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 31.0 KB (30953 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:1.20.0-scala_2.12-java8` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:2d77a01d3d11b9f57f31c4ca95171c44a56457b65f59cf92cffd2d310c0c4726
+$ docker pull flink@sha256:5db1ae62067e110294d7a76f93993563159a5b5f8091092a9909e7a45f822708
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **570.8 MB (570833818 bytes)**  
+-	Total Size: **570.8 MB (570834159 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9132ec60baf23156cd15d032bf5780625814e8b1d3a3821e0b870837e9262f89`
+-	Image ID: `sha256:24e96f7e5b64ec0a24061e9ce4036e5892dfd5f38a986e6250fc36fa45290243`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -14199,24 +14199,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:4126c5ecc7750c7d2beb8c08d15aea03d96910453b36d2fb2d41185fdca7b20f in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk8u422-b05
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0ac516cc1eadffb4cd3cfc9736a33d58ea6a396bf85729036c973482f7c063d9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_x64_linux_hotspot_8u422b05.tar.gz';          ;;        arm64)          ESUM='8fbefff2c578f73d95118d830347589ddc9aa84510200a5a5001901c2dea4810';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_aarch64_linux_hotspot_8u422b05.tar.gz';          ;;        armhf)          ESUM='13bdefdeae6f18bc9c87bba18c853b8b12c5442ce07ff0a3956ce28776d695ff';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_arm_linux_hotspot_8u422b05.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='2991edbedee448c0f1edf131beca84b415dac64ea97365b9bfd85bc2f39893bb';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_ppc64le_linux_hotspot_8u422b05.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -14262,63 +14262,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b3a4248864654ce3e18048693bd49d77e323e35ce5e94fddc9a726a2faaeeb`  
-		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:db7acc9dfbf237a216b04a6b690009ad96051dd54ed79368fbd1e8306fbe4f05`  
+		Last Modified: Fri, 23 Aug 2024 19:43:12 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:810c5e271b495dd2f643060afb28946fb0c049eaed8479525f89c85fe41e8758`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 4.3 MB (4265413 bytes)  
+	-	`sha256:bcd5931f222e62a2780a370c553ddb4fc0e5ba856d0c4d1949908b6dd82987a9`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 4.3 MB (4265514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0018f9f96b94973046f70a5954b494f43d8753b53869d54a0df33933c063b3e9`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 835.4 KB (835383 bytes)  
+	-	`sha256:52a74542e3f8d53bdef5981075a820ad1cbd1065a63f8361ca7ab8f3e257d575`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70df9ce46f928dd0a17f031e1782f56fce7946d6d2d1a486b7fad210e334eb3f`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 4.6 KB (4630 bytes)  
+	-	`sha256:a12ad03876d184eb3bd45cbd1d0b0108052dc40bf3e00302f40f56c66264151c`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 4.6 KB (4631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eed5f8507b5d8c77ce95ec3da88a7105998d2a978ef93e8966ea615a7d98769f`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
+	-	`sha256:5ace7b531ab177a4f7222096a4840047094709a92b6ca52e537729440ff911cb`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b825ee33170c32587f5db69ae370b7592b4769d54ec52a86a18b8172a4a712e`  
-		Last Modified: Sat, 17 Aug 2024 06:45:51 GMT  
-		Size: 483.7 MB (483656777 bytes)  
+	-	`sha256:559979233acdb067fc89089045b106cd5ae8df3c7befa267ad0cb7d3d2f1b40a`  
+		Last Modified: Fri, 23 Aug 2024 22:09:16 GMT  
+		Size: 483.7 MB (483656776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91471169423ad95655a4a074da462c3016e6e4815aa0e6df9184f6499753609c`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 2.3 KB (2268 bytes)  
+	-	`sha256:95eb18edb6ea3113e20b4a9d33e1c93456d8617ef75494def7ef52e835110fd2`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:1.20.0-scala_2.12-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:e33ceeb8a8863a0ca0ddea2949ea6469d06ab2cfebf1e73cf11d7a8cfa9fe96d
+$ docker pull flink@sha256:15a6c57b119d10fc6323dc592265908ac6900c9ecb4c834091b4e86f6b30f463
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3779403 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:127647621472bb5d67daf67a83e578eca063e6ebd549cbfc37d08130e7e3027b`
+-	Image ID: `sha256:f7089db1331b601b0523176e95acb1edbf362e5e0de24c80aabebf5f30287dae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f63d10a1035337c7f1c3cf73c11cd6f3fe9d0db0b08dee72f659d96de433adff`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
+	-	`sha256:d28e53e84fac226e44312c099fc1831413ae3a6ee904da63f456e0bf7c60ffdc`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
 		Size: 3.7 MB (3748110 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e32f24f932c4284100b47278606aeedb7687411a0dac6f5074489c822be25829`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
+	-	`sha256:6ab38a4dc7235815a9225c955b6fc007a4b3655249c57c32177caf3d028a2184`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
 		Size: 31.3 KB (31293 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:java11`
 
 ```console
-$ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c65d0de9fd673
+$ docker pull flink@sha256:92b7a6faf2bd2fe0c95dd354b02cf98440afd8cb4b0252d6c553729d22b1bded
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14331,13 +14331,13 @@ $ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c6
 ### `flink:java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:f71d1bc1abbd3941751436ec4982d9282ac423a8709b4498e096e7afc2edffd4
+$ docker pull flink@sha256:16b0e79d999499c7c4b991f121afec0fd80741676b33980b70c718c7db029518
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.5 MB (579493166 bytes)**  
+-	Total Size: **579.5 MB (579493300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e25c58974fb0f5e91a244fba355c1c8ec83dd39b82dae9a05457fdc089847d`
+-	Image ID: `sha256:19a46ae7563172b1df5381fcb78b8a8c5f48967c71525223ef8af3d59592b201`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -14354,24 +14354,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-11.0.24+8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='e0c1938093da3780e4494d366a4e6b75584dde8d46a19acea6691ae11df4cda5';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.24_8.tar.gz';          ;;        arm64)          ESUM='1fe97cdaad47d7d108f329c6e4560b46748ef7f2948a1027812ade0bbc2a3597';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.24_8.tar.gz';          ;;        armhf)          ESUM='bf893085627c6ec484e63aa1290276b23bcfee547459da6b0432ae9c5c1be22a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_arm_linux_hotspot_11.0.24_8.tar.gz';          ;;        ppc64el)          ESUM='8ee351314182df93fbad96139bb74b97814944d66197896e388404a1ecfa06b3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.24_8.tar.gz';          ;;        s390x)          ESUM='5b331f093bb03126334bbbc24f05f60681baeda461d860e4e2cdb693ee54e0ed';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_s390x_linux_hotspot_11.0.24_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -14417,56 +14417,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8fbf2d9773e7134f4a191df0ac42cf153da8dbe87afedfbb0f67d5178bd8f08`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 4.4 MB (4416741 bytes)  
+	-	`sha256:429468ac77e4cc6ab9194015ba23f1f93c8ae70f75cc3b3356ae55623758d9e1`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.4 MB (4416774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bfc3d001b9866304322cfddb3fd1ba55a880745727b4fd5bfa974b24171aef5`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:c392a87beaaa873cfbe06df28696a2c022b08c31c948e45dd44ae47f5898a86c`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab0b2bacf21acd0f75a93d46ebd839f323c5a3edf2eaab59d894ad44ca8c68db`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 4.6 KB (4589 bytes)  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35f982baf44566fcd83d14cb89963155a02a9c5aa93fcb64fbfee4071d35cd9c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c5d40a67a6487f84493f63557571e96c5be961856731da5cd17335ee97535c3`  
-		Last Modified: Sat, 17 Aug 2024 02:01:18 GMT  
-		Size: 483.7 MB (483656924 bytes)  
+	-	`sha256:fbb582e0bb4fd8569eeb05a61d95cc58f3a6fe1ce18ae3c5eb7db3f540cfa74a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:15 GMT  
+		Size: 483.7 MB (483656777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:3a1636493da1da0ec4fffa12711dfe9fe0ed4d8f45b10e4480cacd588e2b085b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:08 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:java11` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:a80fa18c7f630e43e4a5a42983bcb885d2da3159e9d7fe496ee23554be1bcf69
+$ docker pull flink@sha256:e0ef0c6a768c75e1deb238df1fd1da44c5a53ebe09d77ba7b0818cad1eb4704e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3762004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c15561fb2d6692b128d47e8e4f18f672bd641f95107240f708a571af9e7ac89b`
+-	Image ID: `sha256:6c0f5e960eb8e5ad2d849d0cc345245ec51cbf373c7b367e72de18decd557602`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:985465f6bd9500f1155f78b2ba8415f85761ceffd9f43c23b1fdcd3490f43187`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:52b7e0e8d58ae9715e5211fc464de1af84cd634d292f4c7d0d8ae641cc1a0308`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 3.7 MB (3729208 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6cb44e0bf8c15fb2b0bcbe46be99ceda851fbbbd7e361cd4576b32fb5c225e03`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:29c16e8034fdd07e77afd5d74ca7b7b01d7046d74124ce1f9ab921389f56d6c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 32.8 KB (32796 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14615,7 +14615,7 @@ $ docker pull flink@sha256:83edcec63d210535a65d4a375aacbbd0f102344462a00730b4dc6
 ## `flink:java17`
 
 ```console
-$ docker pull flink@sha256:d90b7e5ecb86c63f76f2c3c5c91dd9d510984158a221a38d8854852b58dc8d93
+$ docker pull flink@sha256:327ff288bf934a0fa484db73df1e6dea3525b4cd724aa96961c0ecf98dbcb6cd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14628,13 +14628,13 @@ $ docker pull flink@sha256:d90b7e5ecb86c63f76f2c3c5c91dd9d510984158a221a38d88548
 ### `flink:java17` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:8ac3f1aa1c1a9a181ea27ca8547708602d60d0453e4906d4bf5f8dd4449b845f
+$ docker pull flink@sha256:851c595e4d63ff1b895464db582cb0ee146b320c2d4f2e6dae4d23feff05f68f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.6 MB (579574804 bytes)**  
+-	Total Size: **579.6 MB (579575072 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf951f15a52f77ab4b79a407b73f30a2c0ff237c68dc9ee72044cefdfa000f10`
+-	Image ID: `sha256:71dfbc5b199579cd3c6d3e635c59424b5e6a268447a30bc39665384bedddca80`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -14651,24 +14651,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-17.0.12+7
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -14714,69 +14714,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd24317609f1b5444d777c0434ab11020010745e5fa797d14158b433e7d085e`  
-		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:5161e45ecd8d096f978edcb483c5ed70580526e02a1f8155653ca1c6c192f097`  
+		Last Modified: Fri, 23 Aug 2024 19:27:49 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee39f6e13269ca8577495dc1d9334df2a3d057370e7eed97fcfb13cc67fc67ac`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 4.4 MB (4416739 bytes)  
+	-	`sha256:9a58127bf41eda5af8b1ac35f6540b1632da3f2c4f3e8ce28a9788ed09275402`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 4.4 MB (4416755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47f7588fe916030754493e7acabc148a674fe21d10211ddc298be595f0f952bb`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:44c46fd620084c3e72ab5d5e858919cb3eacba4b62d7b541ad02a746daf9ae18`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:292fc1fec4c0a0ba9c1517856a04c2c59727dc5b2a37de3f78727612e892da4e`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 4.6 KB (4589 bytes)  
+	-	`sha256:d98bf8ad18a26db56762926500c39e912621e5041c0fc4541801b26d2ea5f735`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26c4ccca98474cc71a9567488d96927af20f231611eb5bc872f2c87412649f13`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 115.0 B  
+	-	`sha256:1620e4df8c9708e2ddf761548a6bf7b2e49dce11af4faa9b42f5c230c34f2dad`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68f639f4ef1c1b7ebe2d5844c4975b0772bfe149ca7c0bba7cb0a877cfe8794c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:59 GMT  
-		Size: 483.7 MB (483656774 bytes)  
+	-	`sha256:8687c02ec33bfa750ee2e6adbe772f8126992a9c8b8bbcc04e5457c31483207d`  
+		Last Modified: Fri, 23 Aug 2024 20:07:34 GMT  
+		Size: 483.7 MB (483656775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5466ae04d68b2b15d42215a235951c32d11089499ed422ca8b711a0356193ad2`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:7b8fcd7deb1ba26a7743cbb84bb3a0be7f6b114758295266a15c52163e7352d9`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:115fbb6f2280952934d89a72d8f27a72b6772fc1c8a31525b81d0f09f188deb1
+$ docker pull flink@sha256:8c753aaea4674bccd50d723a5f8ff87ba8626c972d66f79ed0117c7d68bea34e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3758364 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e9d177b7c50cb2b5b61ae90707dd4cc4bfc67e853a95f1fc0a18df4efc6949b`
+-	Image ID: `sha256:b43ff88906fa8be120efb0f8cc825ae87123a00f6b3cee579a9c763ace76209d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b82b42b4f8257efc3bc88272dee142a1bc379f5959ad9e3c03edc00605d12c5`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
+	-	`sha256:4f56fc46a7a7e04650fac591da1b88d5f7cefea772f53a426a989512b943ba3c`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
 		Size: 3.7 MB (3727388 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8f391493fec6d2005ebac147c274963c25056f53aff5ba43651823719b4cff93`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
+	-	`sha256:6f149fe22bb3baa75ab608c48aa59ded89cb30cf8bf56ac8e715c5b2232a31e2`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
 		Size: 31.0 KB (30976 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:java17` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:3a82b38d4bdbdc83d5454777a44bfb0180fa7cb54bc72b9543b8348ce8f1d1cf
+$ docker pull flink@sha256:0a7a3e0db3e1d223b942a94e4f19c2337b3b3c3a1fec359d0769fb7860779a16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **576.7 MB (576723337 bytes)**  
+-	Total Size: **576.7 MB (576723772 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cdc4f55e01c2ad851ee6e4f650d402bce0ccb5805feac3366d7c58f888403ccf`
+-	Image ID: `sha256:ebbd8c3003acc7c10bdda5f573e905ade4c2253a6e650d15d7e59621c02006d4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -14793,24 +14793,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:4126c5ecc7750c7d2beb8c08d15aea03d96910453b36d2fb2d41185fdca7b20f in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-17.0.12+7
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -14856,63 +14856,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:560407f77d279e68f72a6b12199439583872a1ea3f7441297485cd75f35c2820`  
-		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
-		Size: 1.9 KB (1867 bytes)  
+	-	`sha256:7525b10c4bd14139ded90d85ae282e53b2795402b1d01d327856dc57969f13e3`  
+		Last Modified: Fri, 23 Aug 2024 19:45:19 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ad449889b73484896ec212c8670510e4161d8083aa5ad002579b20df8504b78`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 4.3 MB (4265352 bytes)  
+	-	`sha256:b9f3272af01e149559a1d95590e2b0630a4501876558133e754ec3266f0f1377`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 4.3 MB (4265489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ca919b123f67c1b860be035235046bd79c58881886fd0d56ee2e52996b0b2ef`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 835.4 KB (835384 bytes)  
+	-	`sha256:c87f04576eb489737d425f233e0419d858cc5befc99a55366af6526106664e3a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ac41456a710b87ab2f807d097fb5bd69188c6b61cfce3d2cc3085448c71965d`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:527793eb0fc027c673016def1601b0aab511e24e2c64665fc068bece0f8ce788`  
+		Last Modified: Fri, 23 Aug 2024 22:10:54 GMT  
 		Size: 4.6 KB (4628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4452b3787dd72415ceb5e1a4a1e0c1e74853d7598d2e2c146c874e6a54df5dfe`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:bd4d84a503d37746271a50e829f38973f511d5e5a39efd9983ca635521bb7e14`  
+		Last Modified: Fri, 23 Aug 2024 22:10:54 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8265632e541fad27b144d944b2105084df2fabbb31b01f9314e64639d5b55fd9`  
-		Last Modified: Sat, 17 Aug 2024 06:48:56 GMT  
-		Size: 483.7 MB (483656861 bytes)  
+	-	`sha256:dda728f3ef633d0d3b9bda5486e0b9227bd88ad5c0bcdf51acc9919a15016b68`  
+		Last Modified: Fri, 23 Aug 2024 22:11:05 GMT  
+		Size: 483.7 MB (483656921 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efacbdb8018981f0779444b5aeb881d79e2a3e81b6dc77767744e07d3baa53be`  
-		Last Modified: Sat, 17 Aug 2024 06:48:44 GMT  
-		Size: 2.3 KB (2268 bytes)  
+	-	`sha256:b4346620dc8ed1d27770bbdfd4727c9697d32566e4e7a19e8a79db59c49de90a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:c8125017148ecbc630fa389ddc90f83e3c4a3374bae84d8d86007a2688a4dc43
+$ docker pull flink@sha256:dab72f3669d47e41a9cb4e29e272efc04e6e05ac172b835acb3b7e424085e930
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3759031 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08028e3fdb7d768d1dcc30fc584d39c1a0537820cbd24407ad4bc7a1d5b2bcd3`
+-	Image ID: `sha256:2a24167c40bca1a437e833348a157bb96c0208f195da4f737621c5b28c03c7bd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:63ed04fba019c16bc5eec54caaf6a39472464d2d39fd4c6eadcabbd6df737470`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:662df83943ece9a277badcb5da9f6eb51f0d05738ffbd8487e7fc5d597a5e2d7`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
 		Size: 3.7 MB (3727714 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b3dbaee2b66280da28827727b31ad21dcd8f4cb8a27fa8dab116648f3381d7dd`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:2c78cd48ed972a49fc1583f48a74e6c5966d60afb49dd6e4d8b21e989b476a61`  
+		Last Modified: Fri, 23 Aug 2024 22:10:54 GMT  
 		Size: 31.3 KB (31317 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:java8`
 
 ```console
-$ docker pull flink@sha256:c84850f8adbbd05ce5ddea4f7bbb2b8b3bdf9750d3878fed3f48b1a96a09af90
+$ docker pull flink@sha256:c9c72dab124fc64f591d874e4ad8e234be19aea845c3b20ec0f05c781eaff4e8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14925,13 +14925,13 @@ $ docker pull flink@sha256:c84850f8adbbd05ce5ddea4f7bbb2b8b3bdf9750d3878fed3f48b
 ### `flink:java8` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:255a3ff1cf45ebd52f6380f91d4e8026d9dd6e891ce13d632391fec8c28764b0
+$ docker pull flink@sha256:603d214f00be6ade5e0e59d78f577d4262d880a66a25fc993764387f962f6c5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **574.2 MB (574179256 bytes)**  
+-	Total Size: **574.2 MB (574179298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3c29d2b4740cba08f0d2be8c8cafd718336b5b8dc3b873b3a60316be7906f68`
+-	Image ID: `sha256:eb4305d6e21915654debf974791833cecc93032b54d26438de695d420640e006`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -14948,24 +14948,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk8u422-b05
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0ac516cc1eadffb4cd3cfc9736a33d58ea6a396bf85729036c973482f7c063d9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_x64_linux_hotspot_8u422b05.tar.gz';          ;;        arm64)          ESUM='8fbefff2c578f73d95118d830347589ddc9aa84510200a5a5001901c2dea4810';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_aarch64_linux_hotspot_8u422b05.tar.gz';          ;;        armhf)          ESUM='13bdefdeae6f18bc9c87bba18c853b8b12c5442ce07ff0a3956ce28776d695ff';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_arm_linux_hotspot_8u422b05.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='2991edbedee448c0f1edf131beca84b415dac64ea97365b9bfd85bc2f39893bb';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_ppc64le_linux_hotspot_8u422b05.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -15011,69 +15011,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63f0966d15e28d4f9d2446b285da398fbbc46c4fdd3e46d16dd24c27e54a7968`  
-		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:549fdae8215d87f93f320e0b858daecaf8ec8ca17d44c21986c5a17d9f682905`  
+		Last Modified: Fri, 23 Aug 2024 19:25:15 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f485d49d4cd24754e10a78821a251d8518075ca9da3c732aea907ba588da498a`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
-		Size: 4.4 MB (4416740 bytes)  
+	-	`sha256:a4931f4270cbebb7692f52a3502408e07815bf0138d8250f98c7115b960c3c0f`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
+		Size: 4.4 MB (4416739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf6b83ae9dda98c33d3cc281b5e363ab602f42420e80a67f9542d92052a749d8`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
+	-	`sha256:ccdbd546fc2c89978be29a1d9c1fe8cc3644df5baf07f9d7a9d79322e00b8b3b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 900.5 KB (900496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e6a46f2822534938cbd214be0869fc8d17f5231fe5b62cd0b4e8de78a8ef242`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
+	-	`sha256:558ccb0f59c361ac3a793cdd2ef65c752f306da8c72e7d1f8024501fa504be13`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfc683dbcf86f8b6f867b1af883eca17b0d077c368641ea47a11bce6653137a1`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
-		Size: 115.0 B  
+	-	`sha256:a082f6951d708207f0b35b90d65085db1b20049ea6e3f8f0ef0c124268f2ecf8`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc824e041aaf1803edef4da913979204af8bf3ef6a18f7223a449d2232a1374e`  
-		Last Modified: Sat, 17 Aug 2024 02:04:58 GMT  
-		Size: 483.7 MB (483656934 bytes)  
+	-	`sha256:12b8b9af9a7eb216ecf66e9da07a353858165753a6f8358195022ee35870fc47`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 483.7 MB (483656734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd921bac6c06174ab7942bd847c59bef3652eb2185105c02ab798028da0409ad`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:3a1636493da1da0ec4fffa12711dfe9fe0ed4d8f45b10e4480cacd588e2b085b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:08 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:97ea0e4c4aa5301b5293f5fd975ba6b54eebf8b91ee3b85215bf1e813b7c02c3
+$ docker pull flink@sha256:2ef8bece855f30fbba5fdb59588fd2d708bdaf47137e722fd82a3dc87bbdc87b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3778737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:060d5de67490551cc49cc07d192a4e706878a8c61058c98bd224c85bd72e1cd3`
+-	Image ID: `sha256:001f757e82039bc032838a431deae51f1eced47978f2a85491d9fde4c028313b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:621331d37ecaf3b1d2f089bba4e2e83f2a52c088a25e16bdeaa65871d1f64c92`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
+	-	`sha256:50d61ae6d1c98200015b79276bfb2a77b52ed3e6013f10b9ef941cee00f948d5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 3.7 MB (3747784 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ecdcb1f4ac3ed0a07a1d06cddb3cd99b5952c6d571b18eb9271f3658153a1963`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
+	-	`sha256:198d3cce0aefcdf74a49a0fb8c58853ace01c28143dcb4be22bb0127abb2d579`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 31.0 KB (30953 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:java8` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:2d77a01d3d11b9f57f31c4ca95171c44a56457b65f59cf92cffd2d310c0c4726
+$ docker pull flink@sha256:5db1ae62067e110294d7a76f93993563159a5b5f8091092a9909e7a45f822708
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **570.8 MB (570833818 bytes)**  
+-	Total Size: **570.8 MB (570834159 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9132ec60baf23156cd15d032bf5780625814e8b1d3a3821e0b870837e9262f89`
+-	Image ID: `sha256:24e96f7e5b64ec0a24061e9ce4036e5892dfd5f38a986e6250fc36fa45290243`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -15090,24 +15090,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:4126c5ecc7750c7d2beb8c08d15aea03d96910453b36d2fb2d41185fdca7b20f in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk8u422-b05
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0ac516cc1eadffb4cd3cfc9736a33d58ea6a396bf85729036c973482f7c063d9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_x64_linux_hotspot_8u422b05.tar.gz';          ;;        arm64)          ESUM='8fbefff2c578f73d95118d830347589ddc9aa84510200a5a5001901c2dea4810';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_aarch64_linux_hotspot_8u422b05.tar.gz';          ;;        armhf)          ESUM='13bdefdeae6f18bc9c87bba18c853b8b12c5442ce07ff0a3956ce28776d695ff';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_arm_linux_hotspot_8u422b05.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='2991edbedee448c0f1edf131beca84b415dac64ea97365b9bfd85bc2f39893bb';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_ppc64le_linux_hotspot_8u422b05.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -15153,63 +15153,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b3a4248864654ce3e18048693bd49d77e323e35ce5e94fddc9a726a2faaeeb`  
-		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:db7acc9dfbf237a216b04a6b690009ad96051dd54ed79368fbd1e8306fbe4f05`  
+		Last Modified: Fri, 23 Aug 2024 19:43:12 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:810c5e271b495dd2f643060afb28946fb0c049eaed8479525f89c85fe41e8758`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 4.3 MB (4265413 bytes)  
+	-	`sha256:bcd5931f222e62a2780a370c553ddb4fc0e5ba856d0c4d1949908b6dd82987a9`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 4.3 MB (4265514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0018f9f96b94973046f70a5954b494f43d8753b53869d54a0df33933c063b3e9`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 835.4 KB (835383 bytes)  
+	-	`sha256:52a74542e3f8d53bdef5981075a820ad1cbd1065a63f8361ca7ab8f3e257d575`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70df9ce46f928dd0a17f031e1782f56fce7946d6d2d1a486b7fad210e334eb3f`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 4.6 KB (4630 bytes)  
+	-	`sha256:a12ad03876d184eb3bd45cbd1d0b0108052dc40bf3e00302f40f56c66264151c`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 4.6 KB (4631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eed5f8507b5d8c77ce95ec3da88a7105998d2a978ef93e8966ea615a7d98769f`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
+	-	`sha256:5ace7b531ab177a4f7222096a4840047094709a92b6ca52e537729440ff911cb`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b825ee33170c32587f5db69ae370b7592b4769d54ec52a86a18b8172a4a712e`  
-		Last Modified: Sat, 17 Aug 2024 06:45:51 GMT  
-		Size: 483.7 MB (483656777 bytes)  
+	-	`sha256:559979233acdb067fc89089045b106cd5ae8df3c7befa267ad0cb7d3d2f1b40a`  
+		Last Modified: Fri, 23 Aug 2024 22:09:16 GMT  
+		Size: 483.7 MB (483656776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91471169423ad95655a4a074da462c3016e6e4815aa0e6df9184f6499753609c`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 2.3 KB (2268 bytes)  
+	-	`sha256:95eb18edb6ea3113e20b4a9d33e1c93456d8617ef75494def7ef52e835110fd2`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:e33ceeb8a8863a0ca0ddea2949ea6469d06ab2cfebf1e73cf11d7a8cfa9fe96d
+$ docker pull flink@sha256:15a6c57b119d10fc6323dc592265908ac6900c9ecb4c834091b4e86f6b30f463
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3779403 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:127647621472bb5d67daf67a83e578eca063e6ebd549cbfc37d08130e7e3027b`
+-	Image ID: `sha256:f7089db1331b601b0523176e95acb1edbf362e5e0de24c80aabebf5f30287dae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f63d10a1035337c7f1c3cf73c11cd6f3fe9d0db0b08dee72f659d96de433adff`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
+	-	`sha256:d28e53e84fac226e44312c099fc1831413ae3a6ee904da63f456e0bf7c60ffdc`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
 		Size: 3.7 MB (3748110 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e32f24f932c4284100b47278606aeedb7687411a0dac6f5074489c822be25829`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
+	-	`sha256:6ab38a4dc7235815a9225c955b6fc007a4b3655249c57c32177caf3d028a2184`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
 		Size: 31.3 KB (31293 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:latest`
 
 ```console
-$ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c65d0de9fd673
+$ docker pull flink@sha256:92b7a6faf2bd2fe0c95dd354b02cf98440afd8cb4b0252d6c553729d22b1bded
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15222,13 +15222,13 @@ $ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c6
 ### `flink:latest` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:f71d1bc1abbd3941751436ec4982d9282ac423a8709b4498e096e7afc2edffd4
+$ docker pull flink@sha256:16b0e79d999499c7c4b991f121afec0fd80741676b33980b70c718c7db029518
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.5 MB (579493166 bytes)**  
+-	Total Size: **579.5 MB (579493300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e25c58974fb0f5e91a244fba355c1c8ec83dd39b82dae9a05457fdc089847d`
+-	Image ID: `sha256:19a46ae7563172b1df5381fcb78b8a8c5f48967c71525223ef8af3d59592b201`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -15245,24 +15245,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-11.0.24+8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='e0c1938093da3780e4494d366a4e6b75584dde8d46a19acea6691ae11df4cda5';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.24_8.tar.gz';          ;;        arm64)          ESUM='1fe97cdaad47d7d108f329c6e4560b46748ef7f2948a1027812ade0bbc2a3597';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.24_8.tar.gz';          ;;        armhf)          ESUM='bf893085627c6ec484e63aa1290276b23bcfee547459da6b0432ae9c5c1be22a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_arm_linux_hotspot_11.0.24_8.tar.gz';          ;;        ppc64el)          ESUM='8ee351314182df93fbad96139bb74b97814944d66197896e388404a1ecfa06b3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.24_8.tar.gz';          ;;        s390x)          ESUM='5b331f093bb03126334bbbc24f05f60681baeda461d860e4e2cdb693ee54e0ed';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_s390x_linux_hotspot_11.0.24_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -15308,56 +15308,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8fbf2d9773e7134f4a191df0ac42cf153da8dbe87afedfbb0f67d5178bd8f08`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 4.4 MB (4416741 bytes)  
+	-	`sha256:429468ac77e4cc6ab9194015ba23f1f93c8ae70f75cc3b3356ae55623758d9e1`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.4 MB (4416774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bfc3d001b9866304322cfddb3fd1ba55a880745727b4fd5bfa974b24171aef5`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:c392a87beaaa873cfbe06df28696a2c022b08c31c948e45dd44ae47f5898a86c`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab0b2bacf21acd0f75a93d46ebd839f323c5a3edf2eaab59d894ad44ca8c68db`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 4.6 KB (4589 bytes)  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35f982baf44566fcd83d14cb89963155a02a9c5aa93fcb64fbfee4071d35cd9c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c5d40a67a6487f84493f63557571e96c5be961856731da5cd17335ee97535c3`  
-		Last Modified: Sat, 17 Aug 2024 02:01:18 GMT  
-		Size: 483.7 MB (483656924 bytes)  
+	-	`sha256:fbb582e0bb4fd8569eeb05a61d95cc58f3a6fe1ce18ae3c5eb7db3f540cfa74a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:15 GMT  
+		Size: 483.7 MB (483656777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:3a1636493da1da0ec4fffa12711dfe9fe0ed4d8f45b10e4480cacd588e2b085b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:08 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:latest` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:a80fa18c7f630e43e4a5a42983bcb885d2da3159e9d7fe496ee23554be1bcf69
+$ docker pull flink@sha256:e0ef0c6a768c75e1deb238df1fd1da44c5a53ebe09d77ba7b0818cad1eb4704e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3762004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c15561fb2d6692b128d47e8e4f18f672bd641f95107240f708a571af9e7ac89b`
+-	Image ID: `sha256:6c0f5e960eb8e5ad2d849d0cc345245ec51cbf373c7b367e72de18decd557602`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:985465f6bd9500f1155f78b2ba8415f85761ceffd9f43c23b1fdcd3490f43187`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:52b7e0e8d58ae9715e5211fc464de1af84cd634d292f4c7d0d8ae641cc1a0308`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 3.7 MB (3729208 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6cb44e0bf8c15fb2b0bcbe46be99ceda851fbbbd7e361cd4576b32fb5c225e03`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:29c16e8034fdd07e77afd5d74ca7b7b01d7046d74124ce1f9ab921389f56d6c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 32.8 KB (32796 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15506,7 +15506,7 @@ $ docker pull flink@sha256:83edcec63d210535a65d4a375aacbbd0f102344462a00730b4dc6
 ## `flink:scala_2.12`
 
 ```console
-$ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c65d0de9fd673
+$ docker pull flink@sha256:92b7a6faf2bd2fe0c95dd354b02cf98440afd8cb4b0252d6c553729d22b1bded
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15519,13 +15519,13 @@ $ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c6
 ### `flink:scala_2.12` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:f71d1bc1abbd3941751436ec4982d9282ac423a8709b4498e096e7afc2edffd4
+$ docker pull flink@sha256:16b0e79d999499c7c4b991f121afec0fd80741676b33980b70c718c7db029518
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.5 MB (579493166 bytes)**  
+-	Total Size: **579.5 MB (579493300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e25c58974fb0f5e91a244fba355c1c8ec83dd39b82dae9a05457fdc089847d`
+-	Image ID: `sha256:19a46ae7563172b1df5381fcb78b8a8c5f48967c71525223ef8af3d59592b201`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -15542,24 +15542,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-11.0.24+8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='e0c1938093da3780e4494d366a4e6b75584dde8d46a19acea6691ae11df4cda5';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.24_8.tar.gz';          ;;        arm64)          ESUM='1fe97cdaad47d7d108f329c6e4560b46748ef7f2948a1027812ade0bbc2a3597';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.24_8.tar.gz';          ;;        armhf)          ESUM='bf893085627c6ec484e63aa1290276b23bcfee547459da6b0432ae9c5c1be22a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_arm_linux_hotspot_11.0.24_8.tar.gz';          ;;        ppc64el)          ESUM='8ee351314182df93fbad96139bb74b97814944d66197896e388404a1ecfa06b3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.24_8.tar.gz';          ;;        s390x)          ESUM='5b331f093bb03126334bbbc24f05f60681baeda461d860e4e2cdb693ee54e0ed';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_s390x_linux_hotspot_11.0.24_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -15605,56 +15605,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8fbf2d9773e7134f4a191df0ac42cf153da8dbe87afedfbb0f67d5178bd8f08`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 4.4 MB (4416741 bytes)  
+	-	`sha256:429468ac77e4cc6ab9194015ba23f1f93c8ae70f75cc3b3356ae55623758d9e1`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.4 MB (4416774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bfc3d001b9866304322cfddb3fd1ba55a880745727b4fd5bfa974b24171aef5`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:c392a87beaaa873cfbe06df28696a2c022b08c31c948e45dd44ae47f5898a86c`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab0b2bacf21acd0f75a93d46ebd839f323c5a3edf2eaab59d894ad44ca8c68db`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 4.6 KB (4589 bytes)  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35f982baf44566fcd83d14cb89963155a02a9c5aa93fcb64fbfee4071d35cd9c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c5d40a67a6487f84493f63557571e96c5be961856731da5cd17335ee97535c3`  
-		Last Modified: Sat, 17 Aug 2024 02:01:18 GMT  
-		Size: 483.7 MB (483656924 bytes)  
+	-	`sha256:fbb582e0bb4fd8569eeb05a61d95cc58f3a6fe1ce18ae3c5eb7db3f540cfa74a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:15 GMT  
+		Size: 483.7 MB (483656777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:3a1636493da1da0ec4fffa12711dfe9fe0ed4d8f45b10e4480cacd588e2b085b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:08 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:scala_2.12` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:a80fa18c7f630e43e4a5a42983bcb885d2da3159e9d7fe496ee23554be1bcf69
+$ docker pull flink@sha256:e0ef0c6a768c75e1deb238df1fd1da44c5a53ebe09d77ba7b0818cad1eb4704e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3762004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c15561fb2d6692b128d47e8e4f18f672bd641f95107240f708a571af9e7ac89b`
+-	Image ID: `sha256:6c0f5e960eb8e5ad2d849d0cc345245ec51cbf373c7b367e72de18decd557602`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:985465f6bd9500f1155f78b2ba8415f85761ceffd9f43c23b1fdcd3490f43187`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:52b7e0e8d58ae9715e5211fc464de1af84cd634d292f4c7d0d8ae641cc1a0308`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 3.7 MB (3729208 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6cb44e0bf8c15fb2b0bcbe46be99ceda851fbbbd7e361cd4576b32fb5c225e03`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:29c16e8034fdd07e77afd5d74ca7b7b01d7046d74124ce1f9ab921389f56d6c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 32.8 KB (32796 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15803,7 +15803,7 @@ $ docker pull flink@sha256:83edcec63d210535a65d4a375aacbbd0f102344462a00730b4dc6
 ## `flink:scala_2.12-java11`
 
 ```console
-$ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c65d0de9fd673
+$ docker pull flink@sha256:92b7a6faf2bd2fe0c95dd354b02cf98440afd8cb4b0252d6c553729d22b1bded
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15816,13 +15816,13 @@ $ docker pull flink@sha256:41956c9d7b96f4765f00b6570d8674bd23f87e296df50fa5322c6
 ### `flink:scala_2.12-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:f71d1bc1abbd3941751436ec4982d9282ac423a8709b4498e096e7afc2edffd4
+$ docker pull flink@sha256:16b0e79d999499c7c4b991f121afec0fd80741676b33980b70c718c7db029518
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.5 MB (579493166 bytes)**  
+-	Total Size: **579.5 MB (579493300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e25c58974fb0f5e91a244fba355c1c8ec83dd39b82dae9a05457fdc089847d`
+-	Image ID: `sha256:19a46ae7563172b1df5381fcb78b8a8c5f48967c71525223ef8af3d59592b201`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -15839,24 +15839,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-11.0.24+8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='e0c1938093da3780e4494d366a4e6b75584dde8d46a19acea6691ae11df4cda5';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.24_8.tar.gz';          ;;        arm64)          ESUM='1fe97cdaad47d7d108f329c6e4560b46748ef7f2948a1027812ade0bbc2a3597';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.24_8.tar.gz';          ;;        armhf)          ESUM='bf893085627c6ec484e63aa1290276b23bcfee547459da6b0432ae9c5c1be22a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_arm_linux_hotspot_11.0.24_8.tar.gz';          ;;        ppc64el)          ESUM='8ee351314182df93fbad96139bb74b97814944d66197896e388404a1ecfa06b3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.24_8.tar.gz';          ;;        s390x)          ESUM='5b331f093bb03126334bbbc24f05f60681baeda461d860e4e2cdb693ee54e0ed';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_s390x_linux_hotspot_11.0.24_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -15902,56 +15902,56 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db8f4b62f2e68572eaac926164f20363d2538aab091cf56cf29b9e83ddba7d83`  
-		Last Modified: Sat, 17 Aug 2024 01:11:59 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:56c142282fae08f434334ed5f1bd8f2abe5c67c7c9c3611c0c18f80b49bb4ffc`  
+		Last Modified: Fri, 23 Aug 2024 19:26:26 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8fbf2d9773e7134f4a191df0ac42cf153da8dbe87afedfbb0f67d5178bd8f08`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 4.4 MB (4416741 bytes)  
+	-	`sha256:429468ac77e4cc6ab9194015ba23f1f93c8ae70f75cc3b3356ae55623758d9e1`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.4 MB (4416774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bfc3d001b9866304322cfddb3fd1ba55a880745727b4fd5bfa974b24171aef5`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 900.5 KB (900493 bytes)  
+	-	`sha256:c392a87beaaa873cfbe06df28696a2c022b08c31c948e45dd44ae47f5898a86c`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab0b2bacf21acd0f75a93d46ebd839f323c5a3edf2eaab59d894ad44ca8c68db`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
-		Size: 4.6 KB (4589 bytes)  
+	-	`sha256:f9dbdda9fdd9fe601b69517b2659f53d2969c84c51a3aaf576bd92226158d3c7`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
+		Size: 4.6 KB (4590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35f982baf44566fcd83d14cb89963155a02a9c5aa93fcb64fbfee4071d35cd9c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:79ba4b85d71ea7b71862262b131e1107105d3bb9e12da9a052fc1df25aa9734a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c5d40a67a6487f84493f63557571e96c5be961856731da5cd17335ee97535c3`  
-		Last Modified: Sat, 17 Aug 2024 02:01:18 GMT  
-		Size: 483.7 MB (483656924 bytes)  
+	-	`sha256:fbb582e0bb4fd8569eeb05a61d95cc58f3a6fe1ce18ae3c5eb7db3f540cfa74a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:15 GMT  
+		Size: 483.7 MB (483656777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:917a558cbbac89eec1acc648ecb96fcdb1e35c31430f7cd1964bf07a3c23d277`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:3a1636493da1da0ec4fffa12711dfe9fe0ed4d8f45b10e4480cacd588e2b085b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:08 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:scala_2.12-java11` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:a80fa18c7f630e43e4a5a42983bcb885d2da3159e9d7fe496ee23554be1bcf69
+$ docker pull flink@sha256:e0ef0c6a768c75e1deb238df1fd1da44c5a53ebe09d77ba7b0818cad1eb4704e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3762004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c15561fb2d6692b128d47e8e4f18f672bd641f95107240f708a571af9e7ac89b`
+-	Image ID: `sha256:6c0f5e960eb8e5ad2d849d0cc345245ec51cbf373c7b367e72de18decd557602`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:985465f6bd9500f1155f78b2ba8415f85761ceffd9f43c23b1fdcd3490f43187`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:52b7e0e8d58ae9715e5211fc464de1af84cd634d292f4c7d0d8ae641cc1a0308`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 3.7 MB (3729208 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6cb44e0bf8c15fb2b0bcbe46be99ceda851fbbbd7e361cd4576b32fb5c225e03`  
-		Last Modified: Sat, 17 Aug 2024 02:01:07 GMT  
+	-	`sha256:29c16e8034fdd07e77afd5d74ca7b7b01d7046d74124ce1f9ab921389f56d6c5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:07 GMT  
 		Size: 32.8 KB (32796 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16100,7 +16100,7 @@ $ docker pull flink@sha256:83edcec63d210535a65d4a375aacbbd0f102344462a00730b4dc6
 ## `flink:scala_2.12-java17`
 
 ```console
-$ docker pull flink@sha256:d90b7e5ecb86c63f76f2c3c5c91dd9d510984158a221a38d8854852b58dc8d93
+$ docker pull flink@sha256:327ff288bf934a0fa484db73df1e6dea3525b4cd724aa96961c0ecf98dbcb6cd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16113,13 +16113,13 @@ $ docker pull flink@sha256:d90b7e5ecb86c63f76f2c3c5c91dd9d510984158a221a38d88548
 ### `flink:scala_2.12-java17` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:8ac3f1aa1c1a9a181ea27ca8547708602d60d0453e4906d4bf5f8dd4449b845f
+$ docker pull flink@sha256:851c595e4d63ff1b895464db582cb0ee146b320c2d4f2e6dae4d23feff05f68f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **579.6 MB (579574804 bytes)**  
+-	Total Size: **579.6 MB (579575072 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf951f15a52f77ab4b79a407b73f30a2c0ff237c68dc9ee72044cefdfa000f10`
+-	Image ID: `sha256:71dfbc5b199579cd3c6d3e635c59424b5e6a268447a30bc39665384bedddca80`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -16136,24 +16136,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-17.0.12+7
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -16199,69 +16199,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cd24317609f1b5444d777c0434ab11020010745e5fa797d14158b433e7d085e`  
-		Last Modified: Sat, 17 Aug 2024 01:13:21 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:5161e45ecd8d096f978edcb483c5ed70580526e02a1f8155653ca1c6c192f097`  
+		Last Modified: Fri, 23 Aug 2024 19:27:49 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee39f6e13269ca8577495dc1d9334df2a3d057370e7eed97fcfb13cc67fc67ac`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 4.4 MB (4416739 bytes)  
+	-	`sha256:9a58127bf41eda5af8b1ac35f6540b1632da3f2c4f3e8ce28a9788ed09275402`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 4.4 MB (4416755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47f7588fe916030754493e7acabc148a674fe21d10211ddc298be595f0f952bb`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 900.5 KB (900492 bytes)  
+	-	`sha256:44c46fd620084c3e72ab5d5e858919cb3eacba4b62d7b541ad02a746daf9ae18`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 900.5 KB (900497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:292fc1fec4c0a0ba9c1517856a04c2c59727dc5b2a37de3f78727612e892da4e`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 4.6 KB (4589 bytes)  
+	-	`sha256:d98bf8ad18a26db56762926500c39e912621e5041c0fc4541801b26d2ea5f735`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26c4ccca98474cc71a9567488d96927af20f231611eb5bc872f2c87412649f13`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 115.0 B  
+	-	`sha256:1620e4df8c9708e2ddf761548a6bf7b2e49dce11af4faa9b42f5c230c34f2dad`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68f639f4ef1c1b7ebe2d5844c4975b0772bfe149ca7c0bba7cb0a877cfe8794c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:59 GMT  
-		Size: 483.7 MB (483656774 bytes)  
+	-	`sha256:8687c02ec33bfa750ee2e6adbe772f8126992a9c8b8bbcc04e5457c31483207d`  
+		Last Modified: Fri, 23 Aug 2024 20:07:34 GMT  
+		Size: 483.7 MB (483656775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5466ae04d68b2b15d42215a235951c32d11089499ed422ca8b711a0356193ad2`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:7b8fcd7deb1ba26a7743cbb84bb3a0be7f6b114758295266a15c52163e7352d9`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:scala_2.12-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:115fbb6f2280952934d89a72d8f27a72b6772fc1c8a31525b81d0f09f188deb1
+$ docker pull flink@sha256:8c753aaea4674bccd50d723a5f8ff87ba8626c972d66f79ed0117c7d68bea34e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3758364 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e9d177b7c50cb2b5b61ae90707dd4cc4bfc67e853a95f1fc0a18df4efc6949b`
+-	Image ID: `sha256:b43ff88906fa8be120efb0f8cc825ae87123a00f6b3cee579a9c763ace76209d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b82b42b4f8257efc3bc88272dee142a1bc379f5959ad9e3c03edc00605d12c5`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
+	-	`sha256:4f56fc46a7a7e04650fac591da1b88d5f7cefea772f53a426a989512b943ba3c`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
 		Size: 3.7 MB (3727388 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8f391493fec6d2005ebac147c274963c25056f53aff5ba43651823719b4cff93`  
-		Last Modified: Sat, 17 Aug 2024 02:01:53 GMT  
+	-	`sha256:6f149fe22bb3baa75ab608c48aa59ded89cb30cf8bf56ac8e715c5b2232a31e2`  
+		Last Modified: Fri, 23 Aug 2024 20:07:28 GMT  
 		Size: 31.0 KB (30976 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:scala_2.12-java17` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:3a82b38d4bdbdc83d5454777a44bfb0180fa7cb54bc72b9543b8348ce8f1d1cf
+$ docker pull flink@sha256:0a7a3e0db3e1d223b942a94e4f19c2337b3b3c3a1fec359d0769fb7860779a16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **576.7 MB (576723337 bytes)**  
+-	Total Size: **576.7 MB (576723772 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cdc4f55e01c2ad851ee6e4f650d402bce0ccb5805feac3366d7c58f888403ccf`
+-	Image ID: `sha256:ebbd8c3003acc7c10bdda5f573e905ade4c2253a6e650d15d7e59621c02006d4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -16278,24 +16278,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:4126c5ecc7750c7d2beb8c08d15aea03d96910453b36d2fb2d41185fdca7b20f in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk-17.0.12+7
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -16341,63 +16341,63 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:560407f77d279e68f72a6b12199439583872a1ea3f7441297485cd75f35c2820`  
-		Last Modified: Sat, 17 Aug 2024 01:36:08 GMT  
-		Size: 1.9 KB (1867 bytes)  
+	-	`sha256:7525b10c4bd14139ded90d85ae282e53b2795402b1d01d327856dc57969f13e3`  
+		Last Modified: Fri, 23 Aug 2024 19:45:19 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ad449889b73484896ec212c8670510e4161d8083aa5ad002579b20df8504b78`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 4.3 MB (4265352 bytes)  
+	-	`sha256:b9f3272af01e149559a1d95590e2b0630a4501876558133e754ec3266f0f1377`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 4.3 MB (4265489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ca919b123f67c1b860be035235046bd79c58881886fd0d56ee2e52996b0b2ef`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
-		Size: 835.4 KB (835384 bytes)  
+	-	`sha256:c87f04576eb489737d425f233e0419d858cc5befc99a55366af6526106664e3a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ac41456a710b87ab2f807d097fb5bd69188c6b61cfce3d2cc3085448c71965d`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:527793eb0fc027c673016def1601b0aab511e24e2c64665fc068bece0f8ce788`  
+		Last Modified: Fri, 23 Aug 2024 22:10:54 GMT  
 		Size: 4.6 KB (4628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4452b3787dd72415ceb5e1a4a1e0c1e74853d7598d2e2c146c874e6a54df5dfe`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:bd4d84a503d37746271a50e829f38973f511d5e5a39efd9983ca635521bb7e14`  
+		Last Modified: Fri, 23 Aug 2024 22:10:54 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8265632e541fad27b144d944b2105084df2fabbb31b01f9314e64639d5b55fd9`  
-		Last Modified: Sat, 17 Aug 2024 06:48:56 GMT  
-		Size: 483.7 MB (483656861 bytes)  
+	-	`sha256:dda728f3ef633d0d3b9bda5486e0b9227bd88ad5c0bcdf51acc9919a15016b68`  
+		Last Modified: Fri, 23 Aug 2024 22:11:05 GMT  
+		Size: 483.7 MB (483656921 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efacbdb8018981f0779444b5aeb881d79e2a3e81b6dc77767744e07d3baa53be`  
-		Last Modified: Sat, 17 Aug 2024 06:48:44 GMT  
-		Size: 2.3 KB (2268 bytes)  
+	-	`sha256:b4346620dc8ed1d27770bbdfd4727c9697d32566e4e7a19e8a79db59c49de90a`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:scala_2.12-java17` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:c8125017148ecbc630fa389ddc90f83e3c4a3374bae84d8d86007a2688a4dc43
+$ docker pull flink@sha256:dab72f3669d47e41a9cb4e29e272efc04e6e05ac172b835acb3b7e424085e930
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3759031 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08028e3fdb7d768d1dcc30fc584d39c1a0537820cbd24407ad4bc7a1d5b2bcd3`
+-	Image ID: `sha256:2a24167c40bca1a437e833348a157bb96c0208f195da4f737621c5b28c03c7bd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:63ed04fba019c16bc5eec54caaf6a39472464d2d39fd4c6eadcabbd6df737470`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:662df83943ece9a277badcb5da9f6eb51f0d05738ffbd8487e7fc5d597a5e2d7`  
+		Last Modified: Fri, 23 Aug 2024 22:10:55 GMT  
 		Size: 3.7 MB (3727714 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b3dbaee2b66280da28827727b31ad21dcd8f4cb8a27fa8dab116648f3381d7dd`  
-		Last Modified: Sat, 17 Aug 2024 06:48:43 GMT  
+	-	`sha256:2c78cd48ed972a49fc1583f48a74e6c5966d60afb49dd6e4d8b21e989b476a61`  
+		Last Modified: Fri, 23 Aug 2024 22:10:54 GMT  
 		Size: 31.3 KB (31317 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `flink:scala_2.12-java8`
 
 ```console
-$ docker pull flink@sha256:c84850f8adbbd05ce5ddea4f7bbb2b8b3bdf9750d3878fed3f48b1a96a09af90
+$ docker pull flink@sha256:c9c72dab124fc64f591d874e4ad8e234be19aea845c3b20ec0f05c781eaff4e8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16410,13 +16410,13 @@ $ docker pull flink@sha256:c84850f8adbbd05ce5ddea4f7bbb2b8b3bdf9750d3878fed3f48b
 ### `flink:scala_2.12-java8` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:255a3ff1cf45ebd52f6380f91d4e8026d9dd6e891ce13d632391fec8c28764b0
+$ docker pull flink@sha256:603d214f00be6ade5e0e59d78f577d4262d880a66a25fc993764387f962f6c5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **574.2 MB (574179256 bytes)**  
+-	Total Size: **574.2 MB (574179298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3c29d2b4740cba08f0d2be8c8cafd718336b5b8dc3b873b3a60316be7906f68`
+-	Image ID: `sha256:eb4305d6e21915654debf974791833cecc93032b54d26438de695d420640e006`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -16433,24 +16433,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:2f8a54a5efd080fb81efea702b4e3e07d946eec7563fb2281bd28950c10ec462 in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk8u422-b05
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0ac516cc1eadffb4cd3cfc9736a33d58ea6a396bf85729036c973482f7c063d9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_x64_linux_hotspot_8u422b05.tar.gz';          ;;        arm64)          ESUM='8fbefff2c578f73d95118d830347589ddc9aa84510200a5a5001901c2dea4810';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_aarch64_linux_hotspot_8u422b05.tar.gz';          ;;        armhf)          ESUM='13bdefdeae6f18bc9c87bba18c853b8b12c5442ce07ff0a3956ce28776d695ff';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_arm_linux_hotspot_8u422b05.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='2991edbedee448c0f1edf131beca84b415dac64ea97365b9bfd85bc2f39893bb';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_ppc64le_linux_hotspot_8u422b05.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -16496,69 +16496,69 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63f0966d15e28d4f9d2446b285da398fbbc46c4fdd3e46d16dd24c27e54a7968`  
-		Last Modified: Sat, 17 Aug 2024 01:10:40 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:549fdae8215d87f93f320e0b858daecaf8ec8ca17d44c21986c5a17d9f682905`  
+		Last Modified: Fri, 23 Aug 2024 19:25:15 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f485d49d4cd24754e10a78821a251d8518075ca9da3c732aea907ba588da498a`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
-		Size: 4.4 MB (4416740 bytes)  
+	-	`sha256:a4931f4270cbebb7692f52a3502408e07815bf0138d8250f98c7115b960c3c0f`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
+		Size: 4.4 MB (4416739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf6b83ae9dda98c33d3cc281b5e363ab602f42420e80a67f9542d92052a749d8`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
+	-	`sha256:ccdbd546fc2c89978be29a1d9c1fe8cc3644df5baf07f9d7a9d79322e00b8b3b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 900.5 KB (900496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e6a46f2822534938cbd214be0869fc8d17f5231fe5b62cd0b4e8de78a8ef242`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
+	-	`sha256:558ccb0f59c361ac3a793cdd2ef65c752f306da8c72e7d1f8024501fa504be13`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 4.6 KB (4592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfc683dbcf86f8b6f867b1af883eca17b0d077c368641ea47a11bce6653137a1`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
-		Size: 115.0 B  
+	-	`sha256:a082f6951d708207f0b35b90d65085db1b20049ea6e3f8f0ef0c124268f2ecf8`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc824e041aaf1803edef4da913979204af8bf3ef6a18f7223a449d2232a1374e`  
-		Last Modified: Sat, 17 Aug 2024 02:04:58 GMT  
-		Size: 483.7 MB (483656934 bytes)  
+	-	`sha256:12b8b9af9a7eb216ecf66e9da07a353858165753a6f8358195022ee35870fc47`  
+		Last Modified: Fri, 23 Aug 2024 20:06:20 GMT  
+		Size: 483.7 MB (483656734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd921bac6c06174ab7942bd847c59bef3652eb2185105c02ab798028da0409ad`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
-		Size: 2.3 KB (2266 bytes)  
+	-	`sha256:3a1636493da1da0ec4fffa12711dfe9fe0ed4d8f45b10e4480cacd588e2b085b`  
+		Last Modified: Fri, 23 Aug 2024 20:06:08 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:scala_2.12-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:97ea0e4c4aa5301b5293f5fd975ba6b54eebf8b91ee3b85215bf1e813b7c02c3
+$ docker pull flink@sha256:2ef8bece855f30fbba5fdb59588fd2d708bdaf47137e722fd82a3dc87bbdc87b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3778737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:060d5de67490551cc49cc07d192a4e706878a8c61058c98bd224c85bd72e1cd3`
+-	Image ID: `sha256:001f757e82039bc032838a431deae51f1eced47978f2a85491d9fde4c028313b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:621331d37ecaf3b1d2f089bba4e2e83f2a52c088a25e16bdeaa65871d1f64c92`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
+	-	`sha256:50d61ae6d1c98200015b79276bfb2a77b52ed3e6013f10b9ef941cee00f948d5`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 3.7 MB (3747784 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ecdcb1f4ac3ed0a07a1d06cddb3cd99b5952c6d571b18eb9271f3658153a1963`  
-		Last Modified: Sat, 17 Aug 2024 02:04:51 GMT  
+	-	`sha256:198d3cce0aefcdf74a49a0fb8c58853ace01c28143dcb4be22bb0127abb2d579`  
+		Last Modified: Fri, 23 Aug 2024 20:06:12 GMT  
 		Size: 31.0 KB (30953 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:scala_2.12-java8` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:2d77a01d3d11b9f57f31c4ca95171c44a56457b65f59cf92cffd2d310c0c4726
+$ docker pull flink@sha256:5db1ae62067e110294d7a76f93993563159a5b5f8091092a9909e7a45f822708
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **570.8 MB (570833818 bytes)**  
+-	Total Size: **570.8 MB (570834159 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9132ec60baf23156cd15d032bf5780625814e8b1d3a3821e0b870837e9262f89`
+-	Image ID: `sha256:24e96f7e5b64ec0a24061e9ce4036e5892dfd5f38a986e6250fc36fa45290243`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -16575,24 +16575,24 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:4126c5ecc7750c7d2beb8c08d15aea03d96910453b36d2fb2d41185fdca7b20f in / 
 # Thu, 01 Aug 2024 06:57:14 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 ENV JAVA_VERSION=jdk8u422-b05
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0ac516cc1eadffb4cd3cfc9736a33d58ea6a396bf85729036c973482f7c063d9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_x64_linux_hotspot_8u422b05.tar.gz';          ;;        arm64)          ESUM='8fbefff2c578f73d95118d830347589ddc9aa84510200a5a5001901c2dea4810';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_aarch64_linux_hotspot_8u422b05.tar.gz';          ;;        armhf)          ESUM='13bdefdeae6f18bc9c87bba18c853b8b12c5442ce07ff0a3956ce28776d695ff';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_arm_linux_hotspot_8u422b05.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='2991edbedee448c0f1edf131beca84b415dac64ea97365b9bfd85bc2f39893bb';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_ppc64le_linux_hotspot_8u422b05.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+# Thu, 01 Aug 2024 06:57:14 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 01 Aug 2024 06:57:14 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 01 Aug 2024 06:57:14 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 01 Aug 2024 06:57:14 GMT
@@ -16638,55 +16638,55 @@ CMD ["help"]
 		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7b3a4248864654ce3e18048693bd49d77e323e35ce5e94fddc9a726a2faaeeb`  
-		Last Modified: Sat, 17 Aug 2024 01:33:45 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:db7acc9dfbf237a216b04a6b690009ad96051dd54ed79368fbd1e8306fbe4f05`  
+		Last Modified: Fri, 23 Aug 2024 19:43:12 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:810c5e271b495dd2f643060afb28946fb0c049eaed8479525f89c85fe41e8758`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 4.3 MB (4265413 bytes)  
+	-	`sha256:bcd5931f222e62a2780a370c553ddb4fc0e5ba856d0c4d1949908b6dd82987a9`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 4.3 MB (4265514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0018f9f96b94973046f70a5954b494f43d8753b53869d54a0df33933c063b3e9`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 835.4 KB (835383 bytes)  
+	-	`sha256:52a74542e3f8d53bdef5981075a820ad1cbd1065a63f8361ca7ab8f3e257d575`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 835.4 KB (835382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70df9ce46f928dd0a17f031e1782f56fce7946d6d2d1a486b7fad210e334eb3f`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
-		Size: 4.6 KB (4630 bytes)  
+	-	`sha256:a12ad03876d184eb3bd45cbd1d0b0108052dc40bf3e00302f40f56c66264151c`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
+		Size: 4.6 KB (4631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eed5f8507b5d8c77ce95ec3da88a7105998d2a978ef93e8966ea615a7d98769f`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
+	-	`sha256:5ace7b531ab177a4f7222096a4840047094709a92b6ca52e537729440ff911cb`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b825ee33170c32587f5db69ae370b7592b4769d54ec52a86a18b8172a4a712e`  
-		Last Modified: Sat, 17 Aug 2024 06:45:51 GMT  
-		Size: 483.7 MB (483656777 bytes)  
+	-	`sha256:559979233acdb067fc89089045b106cd5ae8df3c7befa267ad0cb7d3d2f1b40a`  
+		Last Modified: Fri, 23 Aug 2024 22:09:16 GMT  
+		Size: 483.7 MB (483656776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91471169423ad95655a4a074da462c3016e6e4815aa0e6df9184f6499753609c`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
-		Size: 2.3 KB (2268 bytes)  
+	-	`sha256:95eb18edb6ea3113e20b4a9d33e1c93456d8617ef75494def7ef52e835110fd2`  
+		Last Modified: Fri, 23 Aug 2024 22:09:07 GMT  
+		Size: 2.3 KB (2267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:scala_2.12-java8` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:e33ceeb8a8863a0ca0ddea2949ea6469d06ab2cfebf1e73cf11d7a8cfa9fe96d
+$ docker pull flink@sha256:15a6c57b119d10fc6323dc592265908ac6900c9ecb4c834091b4e86f6b30f463
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3779403 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:127647621472bb5d67daf67a83e578eca063e6ebd549cbfc37d08130e7e3027b`
+-	Image ID: `sha256:f7089db1331b601b0523176e95acb1edbf362e5e0de24c80aabebf5f30287dae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f63d10a1035337c7f1c3cf73c11cd6f3fe9d0db0b08dee72f659d96de433adff`  
-		Last Modified: Sat, 17 Aug 2024 06:45:41 GMT  
+	-	`sha256:d28e53e84fac226e44312c099fc1831413ae3a6ee904da63f456e0bf7c60ffdc`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
 		Size: 3.7 MB (3748110 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e32f24f932c4284100b47278606aeedb7687411a0dac6f5074489c822be25829`  
-		Last Modified: Sat, 17 Aug 2024 06:45:40 GMT  
+	-	`sha256:6ab38a4dc7235815a9225c955b6fc007a4b3655249c57c32177caf3d028a2184`  
+		Last Modified: Fri, 23 Aug 2024 22:09:06 GMT  
 		Size: 31.3 KB (31293 bytes)  
 		MIME: application/vnd.in-toto+json
