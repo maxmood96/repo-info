@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-jammy`
 
 ```console
-$ docker pull clojure@sha256:d26586811b9131c69eac286a9fbc7890449d3275bde9d982f5cb724910fa18c7
+$ docker pull clojure@sha256:a5183ec758d632b3c7a89f3cee2903597f2ea9b96d80de26fbfcb4902fb70ae7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -130,14 +130,14 @@ $ docker pull clojure@sha256:d5b4e9e3408a92e7066c308239e42ec1f37b96b30519a5eee33
 ### `clojure:temurin-11-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:0a1c0b89fb9d2f799c8b0b7d57a0744e336684f42209e68cb07cd44bb22275c1
+$ docker pull clojure@sha256:23905019004eabaefe02e2708649a463a8f7c87b7ab76b5d772c7763bf6a66d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **234.9 MB (234947933 bytes)**  
+-	Total Size: **234.9 MB (234948238 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d6681c24d740094cd58058f85445b54b96a94bbc6a48896974576f659ad4a578`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:d3ca4bb960eae6829c4249326d72f03f746b98413ff3468e3977717c356d9eb3`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -153,25 +153,25 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:4126c5ecc7750c7d2beb8c08d15aea03d96910453b36d2fb2d41185fdca7b20f in / 
 # Wed, 07 Aug 2024 18:04:12 GMT
 CMD ["/bin/bash"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
 ENV JAVA_VERSION=jdk-11.0.24+8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e71a01563a5c7b9988a168b0c4ce720a6dff966b3c27bb29d1ded461ff71d0e';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.24_8.tar.gz';          ;;        arm64)          ESUM='04e21301fedc76841fb03929ac6cacfbbda30b5693acfd515a8f34d4a0cdeb28';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.24_8.tar.gz';          ;;        armhf)          ESUM='9d14a076d1440161ab4c9736644e8e9f4719eb8e9f44c03470640960c3cd5e00';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.24_8.tar.gz';          ;;        ppc64el)          ESUM='4dfdc498938a159c592a2f094576f09c94999e17327c1f5ff81794694992054d';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.24_8.tar.gz';          ;;        s390x)          ESUM='7f049af5d3ff8794d07da1c31752e18e204653930f1d422e2d42905c90c1c408';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.24_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Wed, 07 Aug 2024 18:04:12 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Wed, 07 Aug 2024 18:04:12 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Wed, 07 Aug 2024 18:04:12 GMT
 CMD ["jshell"]
 # Wed, 07 Aug 2024 18:04:12 GMT
 ENV CLOJURE_VERSION=1.11.4.1474
@@ -202,43 +202,43 @@ CMD ["clj"]
 		Last Modified: Sat, 17 Aug 2024 01:34:14 GMT  
 		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11078fc199d42f90b90755addf665eb18ec7cdd155f5e44f2163a757e7839672`  
-		Last Modified: Sat, 17 Aug 2024 01:34:14 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:cb23af7d44149e17e19ad297bbdebad5bd0149f50058d45ef27526fb8da47f7f`  
+		Last Modified: Fri, 23 Aug 2024 19:43:39 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef35f6aca0dc1a6c49c2d4b52984acdd3c0e8c08207ac9dce805a999266b3e3c`  
-		Last Modified: Sat, 17 Aug 2024 06:09:38 GMT  
-		Size: 51.4 MB (51374143 bytes)  
+	-	`sha256:e45f47e60c520c7eb2f20c7be530c1701d3bdc16f1ea6078e464194b3a0941f6`  
+		Last Modified: Fri, 23 Aug 2024 23:56:23 GMT  
+		Size: 51.4 MB (51374205 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f2cf7e84b3f289e46f02cb36d1e4fe87bfbfa8c503cbcfbc0718ec823607bfc`  
-		Last Modified: Sat, 17 Aug 2024 06:09:36 GMT  
-		Size: 613.0 B  
+	-	`sha256:d38228ca2bd7a920fa3ff2160f2ce61a2c744db32daadcba40c78cbec860728a`  
+		Last Modified: Fri, 23 Aug 2024 23:56:21 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c68259dc8822daa3172e945be5d3fac00960259d2dae8bf7a3b9acf925639414
+$ docker pull clojure@sha256:980879359d4163fd1b761325e0dd988501f9c671c6838312b5fa23ea0e3017c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 MB (5777520 bytes)**  
+-	Total Size: **5.8 MB (5777536 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d0a10e177e033536bf668c90ccdd6f40f476a7c9bdb9aeb57b911c62ee036d0`
+-	Image ID: `sha256:02e9ef366ac274ad751252603a89f8da1672985e6bc83bb7187abbe0d8f42b9a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a8d836b1741197e58d3d34d2b77db5a90a6348ea906ebb097cbf61542c32b56`  
-		Last Modified: Sat, 17 Aug 2024 06:09:36 GMT  
-		Size: 5.8 MB (5763043 bytes)  
+	-	`sha256:915d57eef0aa089e9a83a0f8fa0c77cb1bd7433fdcf73eaf41f0d945c657eb49`  
+		Last Modified: Fri, 23 Aug 2024 23:56:21 GMT  
+		Size: 5.8 MB (5763059 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:91dc995e3a44fa51e5d63abd7a6b152e544505328ce7a2ed886c463337e8120f`  
-		Last Modified: Sat, 17 Aug 2024 06:09:36 GMT  
+	-	`sha256:cf8e928f91c929449156a3c0aeb6b59bb9dffb608d204c00cbba8d7e45139d58`  
+		Last Modified: Fri, 23 Aug 2024 23:56:21 GMT  
 		Size: 14.5 KB (14477 bytes)  
 		MIME: application/vnd.in-toto+json
