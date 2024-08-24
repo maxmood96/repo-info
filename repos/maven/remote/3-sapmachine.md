@@ -1,7 +1,7 @@
 ## `maven:3-sapmachine`
 
 ```console
-$ docker pull maven@sha256:2caa6fe0e60c12b9bfba018df23eea3653e80ebeb361e5a637373266330c758b
+$ docker pull maven@sha256:3ea2ae3da9e343e3b596db0d8f77a60a671ce3bf116ff52b2cbe30560fa80ae2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -228,24 +228,24 @@ CMD ["mvn"]
 ### `maven:3-sapmachine` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:55ac8d1778ea3cc44fa60cfea1f4fd7da778e3baef2b500a03d63836c649e53c
+$ docker pull maven@sha256:082112d4c3aa7af95824942bbf8b12855dc65e83d6259d2badc84f8e57ba38bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.2 MB (4155182 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:55c9426b222fde8a5e25ce3189b1b2326a3e79c31ba01890dc5c11804a67d7ba`
+-	Image ID: `sha256:97baff656d459ee3c10ab7c6fcca5fb6c8f4409346374715e19b1d9762e6f40b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:394207a524f20f09d0ada4539ea2b9229882ece90e2d139a38457571110bee4d`  
-		Last Modified: Mon, 19 Aug 2024 19:32:43 GMT  
+	-	`sha256:17e6e2e0cba11d869b64554d1b0829b158095069f733eb09acac38bdda33c5b4`  
+		Last Modified: Sat, 24 Aug 2024 03:25:55 GMT  
 		Size: 4.1 MB (4136664 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:086b33ecebaa5921a4a92820b5a7fed79c8d3b7d048f0aa9cb5dddbbd906db22`  
-		Last Modified: Mon, 19 Aug 2024 19:32:43 GMT  
+	-	`sha256:419381ee1c4743a628c4ea48bb1e2772fe73111391f21138cffb05b85f4efa8d`  
+		Last Modified: Sat, 24 Aug 2024 03:25:54 GMT  
 		Size: 18.5 KB (18518 bytes)  
 		MIME: application/vnd.in-toto+json
 
