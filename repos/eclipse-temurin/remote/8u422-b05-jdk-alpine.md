@@ -1,7 +1,7 @@
 ## `eclipse-temurin:8u422-b05-jdk-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:67b922b96183c4f9a0b1f31ecefcc10ee0da93d1a2dd6536c6e60c16810499a7
+$ docker pull eclipse-temurin@sha256:167a28a959024744f970197095221fe57d7238e75c55891e3a7a2f3b8e1fbe16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,13 +11,13 @@ $ docker pull eclipse-temurin@sha256:67b922b96183c4f9a0b1f31ecefcc10ee0da93d1a2d
 ### `eclipse-temurin:8u422-b05-jdk-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:ef218d7b5f2e59c67e35078eafb5246358b90e5d18ed3a5888f17da6dd1dda02
+$ docker pull eclipse-temurin@sha256:cc9ed1bc0433f6de962a8d430a29c913d9414332b4ce80e2bfd3f6567b31b8cc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **114.6 MB (114569941 bytes)**  
+-	Total Size: **114.6 MB (114570205 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b00221845424206e4396d7e3bc58f4c408d63fb0ca2a2ec02cff8cc974e5411`
+-	Image ID: `sha256:2b666f2f78d9bcf2fd2b6cb13e0fdfc5f0d384a17d202fa329113526f649a561`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
@@ -25,23 +25,23 @@ $ docker pull eclipse-temurin@sha256:ef218d7b5f2e59c67e35078eafb5246358b90e5d18e
 ADD file:99093095d62d0421541d882f9ceeddb2981fe701ec0aa9d2c08480712d5fed21 in / 
 # Mon, 22 Jul 2024 22:26:43 GMT
 CMD ["/bin/sh"]
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_VERSION=jdk8u422-b05
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='525a7731331cad502b9293ccb4ac2b13e85516736e98a57cb27c2767005188e1';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u422b05.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 24 Jul 2024 22:19:06 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Thu, 22 Aug 2024 07:58:33 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
@@ -62,7 +62,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Last Modified: Thu, 25 Jul 2024 17:25:17 GMT  
 		Size: 140.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45a1378d08d0e053f92bfb6a1f51fbc17682f4f0af3d677eee8f380ad1e9f533`  
-		Last Modified: Thu, 25 Jul 2024 17:25:17 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:b196e5c22826b2e8a8b0eea7dc9ff9697a5aba3c119d627499ba7285ec46698d`  
+		Last Modified: Fri, 23 Aug 2024 19:24:23 GMT  
+		Size: 2.1 KB (2130 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
