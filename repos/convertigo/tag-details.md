@@ -9,7 +9,7 @@
 ## `convertigo:8.3`
 
 ```console
-$ docker pull convertigo@sha256:ff4078cd03ad40b1e62b4520d78feabeb1d331c121b9e3cf5b8fad5c4c464213
+$ docker pull convertigo@sha256:ead0898995a5119d106c54415435258c2da14d9715ee69502635ff1a12ba13e9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,13 +22,13 @@ $ docker pull convertigo@sha256:ff4078cd03ad40b1e62b4520d78feabeb1d331c121b9e3cf
 ### `convertigo:8.3` - linux; amd64
 
 ```console
-$ docker pull convertigo@sha256:215fcd17872165338bbec2bdddd51f73f9dad269cf5457cba26979c4827dfa9b
+$ docker pull convertigo@sha256:7317797cf7264f1779da21ba4930b5f3719c48e3282de924decc783e3127495b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **341.9 MB (341911934 bytes)**  
+-	Total Size: **341.9 MB (341912361 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd30acf106edff02611233abb195b42030cec4aba459775d599cc4bb2aca222f`
+-	Image ID: `sha256:359ddc6ef323bf3ecc39b958c21c26e1c39b0be9b522fc014f9aa151de52fd12`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
@@ -60,9 +60,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Thu, 06 Jun 2024 08:12:00 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Thu, 06 Jun 2024 08:12:00 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 06 Jun 2024 08:12:00 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 06 Jun 2024 08:12:00 GMT
 CMD ["jshell"]
 # Thu, 06 Jun 2024 08:12:00 GMT
@@ -152,21 +152,21 @@ CMD ["convertigo"]
 		Last Modified: Sat, 17 Aug 2024 01:13:50 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d374cf93eba985e32df69f0d66d0f96d62292e4de04a8adf60ea4ab943bf0a9f`  
-		Last Modified: Sat, 17 Aug 2024 01:13:50 GMT  
-		Size: 1.9 KB (1867 bytes)  
+	-	`sha256:345e90384d5ee5660e84765dd35dad15285b72490c36414bb649f3ffb9298c2d`  
+		Last Modified: Fri, 23 Aug 2024 19:28:22 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6087eb5636699345c2abc797e742c28e95d8c19952c8dde8cd5520acc4b4b466`  
-		Last Modified: Sat, 17 Aug 2024 02:04:18 GMT  
+	-	`sha256:05884942cc0db66cef1667245be59affddee8ee84fa8cf7ed245d5acd3150c0e`  
+		Last Modified: Fri, 23 Aug 2024 20:08:15 GMT  
 		Size: 138.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ed7029ebe409be931b7e1b1bf87095cdbe7252ecbda5acefe883c9954a707e6`  
-		Last Modified: Sat, 17 Aug 2024 02:04:19 GMT  
-		Size: 13.0 MB (13039724 bytes)  
+	-	`sha256:8c9d5183d9d1c02071c882a93498b25d9a38a97d781363c412c4dc90b3257c17`  
+		Last Modified: Fri, 23 Aug 2024 20:08:16 GMT  
+		Size: 13.0 MB (13039818 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -180,28 +180,28 @@ CMD ["convertigo"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbcfd780cd976b306ef521b0243bc33bfced54f96428c0430e92d563bf37cf3d`  
-		Last Modified: Sat, 17 Aug 2024 04:08:18 GMT  
-		Size: 5.7 MB (5653082 bytes)  
+	-	`sha256:efb7d65e8c6cd25aeffb0a62d0a689815254e9a9439d72b9ceb4dbc1d390c3aa`  
+		Last Modified: Fri, 23 Aug 2024 21:11:13 GMT  
+		Size: 5.7 MB (5653106 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e9ce3817028e2cff4cad5dde6ec8d078d255de16a3ef33b0cfc1c603fcc9432`  
-		Last Modified: Sat, 17 Aug 2024 04:08:17 GMT  
+	-	`sha256:9db04bff69fce82f5511676a7a4d163d5d9d910c9ebc5fcd74aeb4d357f76ae3`  
+		Last Modified: Fri, 23 Aug 2024 21:11:12 GMT  
 		Size: 4.5 KB (4468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e6682c573aa2517b0e4efde04fe1a986236c9060e522a7a99158e39aad1fe0d`  
-		Last Modified: Sat, 17 Aug 2024 04:08:17 GMT  
-		Size: 28.0 KB (27964 bytes)  
+	-	`sha256:d686f2e96a2ff4cdb265f51a7551c92979ad90c6dc16dfd68b90f68cd0d7667a`  
+		Last Modified: Fri, 23 Aug 2024 21:11:12 GMT  
+		Size: 28.0 KB (27965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e19c0b278b2815fde6a20af3cf200f1029fa7bfb42b8d460ec00a131d2f1463`  
-		Last Modified: Sat, 17 Aug 2024 04:08:26 GMT  
-		Size: 116.7 MB (116738470 bytes)  
+	-	`sha256:a358d036275b844bdab448f471c58cb197dc2e564fadd44622003c512c69be10`  
+		Last Modified: Fri, 23 Aug 2024 21:11:16 GMT  
+		Size: 116.7 MB (116738536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5db1b4ab8d61188329114356e8a7e95fd095fb97514ced717da63d74ebffb7e`  
-		Last Modified: Sat, 17 Aug 2024 04:08:18 GMT  
-		Size: 448.0 B  
+	-	`sha256:26cfe4be9425021b43ff0f6ddce355136627b5d27fd5bc5201bef4517c1f0990`  
+		Last Modified: Fri, 23 Aug 2024 21:11:13 GMT  
+		Size: 449.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2fb0d1e4cb329f65861093f3b1b026e2063cfc470bf4c607d37204dec66d323`  
-		Last Modified: Sat, 17 Aug 2024 04:08:18 GMT  
+	-	`sha256:660836d96aaeb1bb5929ac56c7ddef1bb452d9613e313abdbc30385eacecab6b`  
+		Last Modified: Fri, 23 Aug 2024 21:11:13 GMT  
 		Size: 2.2 KB (2243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -212,24 +212,24 @@ CMD ["convertigo"]
 ### `convertigo:8.3` - unknown; unknown
 
 ```console
-$ docker pull convertigo@sha256:ec7843a0a5bd331f4d79c728e5b2bde328ff785dd0c3648824126f1bf2739c59
+$ docker pull convertigo@sha256:7ec0ee74c5f136e0957fdaf7ea9f685faeb94c272872e28ce2c0eed4f2588119
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.0 MB (3992099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:048113176b54fff55582eac74c5a0c8bb5996560f8e41915223ff369bed151d2`
+-	Image ID: `sha256:9a483231b4c59dc8c71d66edde248b61b888c3fcf1b8b722f7945e578f97e4fe`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ff2a24aa7eedb9c04ba0cf057cddada21670810d1d406a7c5efa7d92895371fc`  
-		Last Modified: Sat, 17 Aug 2024 04:08:18 GMT  
+	-	`sha256:bde6feccef023275d56c2aafd2b39cee7a3f9c7a5ec389305e28e8b36db122a0`  
+		Last Modified: Fri, 23 Aug 2024 21:11:13 GMT  
 		Size: 3.9 MB (3946323 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:37a3bcb40a1004bdf765dcf9952661656cd442b0a1d07606eb45c7ab1baf56bc`  
-		Last Modified: Sat, 17 Aug 2024 04:08:17 GMT  
+	-	`sha256:83174b46c7064e8e2e134626ffedf25682a6ab11fa9f5dc6ce17bbeaa1b8b8ca`  
+		Last Modified: Fri, 23 Aug 2024 21:11:12 GMT  
 		Size: 45.8 KB (45776 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -450,7 +450,7 @@ $ docker pull convertigo@sha256:352e0adc42132044cecad28d8140d6995283a299289c1e6c
 ## `convertigo:8.3.0`
 
 ```console
-$ docker pull convertigo@sha256:ff4078cd03ad40b1e62b4520d78feabeb1d331c121b9e3cf5b8fad5c4c464213
+$ docker pull convertigo@sha256:ead0898995a5119d106c54415435258c2da14d9715ee69502635ff1a12ba13e9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -463,13 +463,13 @@ $ docker pull convertigo@sha256:ff4078cd03ad40b1e62b4520d78feabeb1d331c121b9e3cf
 ### `convertigo:8.3.0` - linux; amd64
 
 ```console
-$ docker pull convertigo@sha256:215fcd17872165338bbec2bdddd51f73f9dad269cf5457cba26979c4827dfa9b
+$ docker pull convertigo@sha256:7317797cf7264f1779da21ba4930b5f3719c48e3282de924decc783e3127495b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **341.9 MB (341911934 bytes)**  
+-	Total Size: **341.9 MB (341912361 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd30acf106edff02611233abb195b42030cec4aba459775d599cc4bb2aca222f`
+-	Image ID: `sha256:359ddc6ef323bf3ecc39b958c21c26e1c39b0be9b522fc014f9aa151de52fd12`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
@@ -501,9 +501,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Thu, 06 Jun 2024 08:12:00 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Thu, 06 Jun 2024 08:12:00 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 06 Jun 2024 08:12:00 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 06 Jun 2024 08:12:00 GMT
 CMD ["jshell"]
 # Thu, 06 Jun 2024 08:12:00 GMT
@@ -593,21 +593,21 @@ CMD ["convertigo"]
 		Last Modified: Sat, 17 Aug 2024 01:13:50 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d374cf93eba985e32df69f0d66d0f96d62292e4de04a8adf60ea4ab943bf0a9f`  
-		Last Modified: Sat, 17 Aug 2024 01:13:50 GMT  
-		Size: 1.9 KB (1867 bytes)  
+	-	`sha256:345e90384d5ee5660e84765dd35dad15285b72490c36414bb649f3ffb9298c2d`  
+		Last Modified: Fri, 23 Aug 2024 19:28:22 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6087eb5636699345c2abc797e742c28e95d8c19952c8dde8cd5520acc4b4b466`  
-		Last Modified: Sat, 17 Aug 2024 02:04:18 GMT  
+	-	`sha256:05884942cc0db66cef1667245be59affddee8ee84fa8cf7ed245d5acd3150c0e`  
+		Last Modified: Fri, 23 Aug 2024 20:08:15 GMT  
 		Size: 138.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ed7029ebe409be931b7e1b1bf87095cdbe7252ecbda5acefe883c9954a707e6`  
-		Last Modified: Sat, 17 Aug 2024 02:04:19 GMT  
-		Size: 13.0 MB (13039724 bytes)  
+	-	`sha256:8c9d5183d9d1c02071c882a93498b25d9a38a97d781363c412c4dc90b3257c17`  
+		Last Modified: Fri, 23 Aug 2024 20:08:16 GMT  
+		Size: 13.0 MB (13039818 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -621,28 +621,28 @@ CMD ["convertigo"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbcfd780cd976b306ef521b0243bc33bfced54f96428c0430e92d563bf37cf3d`  
-		Last Modified: Sat, 17 Aug 2024 04:08:18 GMT  
-		Size: 5.7 MB (5653082 bytes)  
+	-	`sha256:efb7d65e8c6cd25aeffb0a62d0a689815254e9a9439d72b9ceb4dbc1d390c3aa`  
+		Last Modified: Fri, 23 Aug 2024 21:11:13 GMT  
+		Size: 5.7 MB (5653106 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e9ce3817028e2cff4cad5dde6ec8d078d255de16a3ef33b0cfc1c603fcc9432`  
-		Last Modified: Sat, 17 Aug 2024 04:08:17 GMT  
+	-	`sha256:9db04bff69fce82f5511676a7a4d163d5d9d910c9ebc5fcd74aeb4d357f76ae3`  
+		Last Modified: Fri, 23 Aug 2024 21:11:12 GMT  
 		Size: 4.5 KB (4468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e6682c573aa2517b0e4efde04fe1a986236c9060e522a7a99158e39aad1fe0d`  
-		Last Modified: Sat, 17 Aug 2024 04:08:17 GMT  
-		Size: 28.0 KB (27964 bytes)  
+	-	`sha256:d686f2e96a2ff4cdb265f51a7551c92979ad90c6dc16dfd68b90f68cd0d7667a`  
+		Last Modified: Fri, 23 Aug 2024 21:11:12 GMT  
+		Size: 28.0 KB (27965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e19c0b278b2815fde6a20af3cf200f1029fa7bfb42b8d460ec00a131d2f1463`  
-		Last Modified: Sat, 17 Aug 2024 04:08:26 GMT  
-		Size: 116.7 MB (116738470 bytes)  
+	-	`sha256:a358d036275b844bdab448f471c58cb197dc2e564fadd44622003c512c69be10`  
+		Last Modified: Fri, 23 Aug 2024 21:11:16 GMT  
+		Size: 116.7 MB (116738536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5db1b4ab8d61188329114356e8a7e95fd095fb97514ced717da63d74ebffb7e`  
-		Last Modified: Sat, 17 Aug 2024 04:08:18 GMT  
-		Size: 448.0 B  
+	-	`sha256:26cfe4be9425021b43ff0f6ddce355136627b5d27fd5bc5201bef4517c1f0990`  
+		Last Modified: Fri, 23 Aug 2024 21:11:13 GMT  
+		Size: 449.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2fb0d1e4cb329f65861093f3b1b026e2063cfc470bf4c607d37204dec66d323`  
-		Last Modified: Sat, 17 Aug 2024 04:08:18 GMT  
+	-	`sha256:660836d96aaeb1bb5929ac56c7ddef1bb452d9613e313abdbc30385eacecab6b`  
+		Last Modified: Fri, 23 Aug 2024 21:11:13 GMT  
 		Size: 2.2 KB (2243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -653,24 +653,24 @@ CMD ["convertigo"]
 ### `convertigo:8.3.0` - unknown; unknown
 
 ```console
-$ docker pull convertigo@sha256:ec7843a0a5bd331f4d79c728e5b2bde328ff785dd0c3648824126f1bf2739c59
+$ docker pull convertigo@sha256:7ec0ee74c5f136e0957fdaf7ea9f685faeb94c272872e28ce2c0eed4f2588119
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.0 MB (3992099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:048113176b54fff55582eac74c5a0c8bb5996560f8e41915223ff369bed151d2`
+-	Image ID: `sha256:9a483231b4c59dc8c71d66edde248b61b888c3fcf1b8b722f7945e578f97e4fe`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ff2a24aa7eedb9c04ba0cf057cddada21670810d1d406a7c5efa7d92895371fc`  
-		Last Modified: Sat, 17 Aug 2024 04:08:18 GMT  
+	-	`sha256:bde6feccef023275d56c2aafd2b39cee7a3f9c7a5ec389305e28e8b36db122a0`  
+		Last Modified: Fri, 23 Aug 2024 21:11:13 GMT  
 		Size: 3.9 MB (3946323 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:37a3bcb40a1004bdf765dcf9952661656cd442b0a1d07606eb45c7ab1baf56bc`  
-		Last Modified: Sat, 17 Aug 2024 04:08:17 GMT  
+	-	`sha256:83174b46c7064e8e2e134626ffedf25682a6ab11fa9f5dc6ce17bbeaa1b8b8ca`  
+		Last Modified: Fri, 23 Aug 2024 21:11:12 GMT  
 		Size: 45.8 KB (45776 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -891,7 +891,7 @@ $ docker pull convertigo@sha256:352e0adc42132044cecad28d8140d6995283a299289c1e6c
 ## `convertigo:latest`
 
 ```console
-$ docker pull convertigo@sha256:ff4078cd03ad40b1e62b4520d78feabeb1d331c121b9e3cf5b8fad5c4c464213
+$ docker pull convertigo@sha256:ead0898995a5119d106c54415435258c2da14d9715ee69502635ff1a12ba13e9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -904,13 +904,13 @@ $ docker pull convertigo@sha256:ff4078cd03ad40b1e62b4520d78feabeb1d331c121b9e3cf
 ### `convertigo:latest` - linux; amd64
 
 ```console
-$ docker pull convertigo@sha256:215fcd17872165338bbec2bdddd51f73f9dad269cf5457cba26979c4827dfa9b
+$ docker pull convertigo@sha256:7317797cf7264f1779da21ba4930b5f3719c48e3282de924decc783e3127495b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **341.9 MB (341911934 bytes)**  
+-	Total Size: **341.9 MB (341912361 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd30acf106edff02611233abb195b42030cec4aba459775d599cc4bb2aca222f`
+-	Image ID: `sha256:359ddc6ef323bf3ecc39b958c21c26e1c39b0be9b522fc014f9aa151de52fd12`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
@@ -942,9 +942,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Thu, 06 Jun 2024 08:12:00 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Thu, 06 Jun 2024 08:12:00 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 06 Jun 2024 08:12:00 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 06 Jun 2024 08:12:00 GMT
 CMD ["jshell"]
 # Thu, 06 Jun 2024 08:12:00 GMT
@@ -1034,21 +1034,21 @@ CMD ["convertigo"]
 		Last Modified: Sat, 17 Aug 2024 01:13:50 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d374cf93eba985e32df69f0d66d0f96d62292e4de04a8adf60ea4ab943bf0a9f`  
-		Last Modified: Sat, 17 Aug 2024 01:13:50 GMT  
-		Size: 1.9 KB (1867 bytes)  
+	-	`sha256:345e90384d5ee5660e84765dd35dad15285b72490c36414bb649f3ffb9298c2d`  
+		Last Modified: Fri, 23 Aug 2024 19:28:22 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6087eb5636699345c2abc797e742c28e95d8c19952c8dde8cd5520acc4b4b466`  
-		Last Modified: Sat, 17 Aug 2024 02:04:18 GMT  
+	-	`sha256:05884942cc0db66cef1667245be59affddee8ee84fa8cf7ed245d5acd3150c0e`  
+		Last Modified: Fri, 23 Aug 2024 20:08:15 GMT  
 		Size: 138.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ed7029ebe409be931b7e1b1bf87095cdbe7252ecbda5acefe883c9954a707e6`  
-		Last Modified: Sat, 17 Aug 2024 02:04:19 GMT  
-		Size: 13.0 MB (13039724 bytes)  
+	-	`sha256:8c9d5183d9d1c02071c882a93498b25d9a38a97d781363c412c4dc90b3257c17`  
+		Last Modified: Fri, 23 Aug 2024 20:08:16 GMT  
+		Size: 13.0 MB (13039818 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1062,28 +1062,28 @@ CMD ["convertigo"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbcfd780cd976b306ef521b0243bc33bfced54f96428c0430e92d563bf37cf3d`  
-		Last Modified: Sat, 17 Aug 2024 04:08:18 GMT  
-		Size: 5.7 MB (5653082 bytes)  
+	-	`sha256:efb7d65e8c6cd25aeffb0a62d0a689815254e9a9439d72b9ceb4dbc1d390c3aa`  
+		Last Modified: Fri, 23 Aug 2024 21:11:13 GMT  
+		Size: 5.7 MB (5653106 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e9ce3817028e2cff4cad5dde6ec8d078d255de16a3ef33b0cfc1c603fcc9432`  
-		Last Modified: Sat, 17 Aug 2024 04:08:17 GMT  
+	-	`sha256:9db04bff69fce82f5511676a7a4d163d5d9d910c9ebc5fcd74aeb4d357f76ae3`  
+		Last Modified: Fri, 23 Aug 2024 21:11:12 GMT  
 		Size: 4.5 KB (4468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e6682c573aa2517b0e4efde04fe1a986236c9060e522a7a99158e39aad1fe0d`  
-		Last Modified: Sat, 17 Aug 2024 04:08:17 GMT  
-		Size: 28.0 KB (27964 bytes)  
+	-	`sha256:d686f2e96a2ff4cdb265f51a7551c92979ad90c6dc16dfd68b90f68cd0d7667a`  
+		Last Modified: Fri, 23 Aug 2024 21:11:12 GMT  
+		Size: 28.0 KB (27965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e19c0b278b2815fde6a20af3cf200f1029fa7bfb42b8d460ec00a131d2f1463`  
-		Last Modified: Sat, 17 Aug 2024 04:08:26 GMT  
-		Size: 116.7 MB (116738470 bytes)  
+	-	`sha256:a358d036275b844bdab448f471c58cb197dc2e564fadd44622003c512c69be10`  
+		Last Modified: Fri, 23 Aug 2024 21:11:16 GMT  
+		Size: 116.7 MB (116738536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5db1b4ab8d61188329114356e8a7e95fd095fb97514ced717da63d74ebffb7e`  
-		Last Modified: Sat, 17 Aug 2024 04:08:18 GMT  
-		Size: 448.0 B  
+	-	`sha256:26cfe4be9425021b43ff0f6ddce355136627b5d27fd5bc5201bef4517c1f0990`  
+		Last Modified: Fri, 23 Aug 2024 21:11:13 GMT  
+		Size: 449.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2fb0d1e4cb329f65861093f3b1b026e2063cfc470bf4c607d37204dec66d323`  
-		Last Modified: Sat, 17 Aug 2024 04:08:18 GMT  
+	-	`sha256:660836d96aaeb1bb5929ac56c7ddef1bb452d9613e313abdbc30385eacecab6b`  
+		Last Modified: Fri, 23 Aug 2024 21:11:13 GMT  
 		Size: 2.2 KB (2243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -1094,24 +1094,24 @@ CMD ["convertigo"]
 ### `convertigo:latest` - unknown; unknown
 
 ```console
-$ docker pull convertigo@sha256:ec7843a0a5bd331f4d79c728e5b2bde328ff785dd0c3648824126f1bf2739c59
+$ docker pull convertigo@sha256:7ec0ee74c5f136e0957fdaf7ea9f685faeb94c272872e28ce2c0eed4f2588119
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.0 MB (3992099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:048113176b54fff55582eac74c5a0c8bb5996560f8e41915223ff369bed151d2`
+-	Image ID: `sha256:9a483231b4c59dc8c71d66edde248b61b888c3fcf1b8b722f7945e578f97e4fe`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ff2a24aa7eedb9c04ba0cf057cddada21670810d1d406a7c5efa7d92895371fc`  
-		Last Modified: Sat, 17 Aug 2024 04:08:18 GMT  
+	-	`sha256:bde6feccef023275d56c2aafd2b39cee7a3f9c7a5ec389305e28e8b36db122a0`  
+		Last Modified: Fri, 23 Aug 2024 21:11:13 GMT  
 		Size: 3.9 MB (3946323 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:37a3bcb40a1004bdf765dcf9952661656cd442b0a1d07606eb45c7ab1baf56bc`  
-		Last Modified: Sat, 17 Aug 2024 04:08:17 GMT  
+	-	`sha256:83174b46c7064e8e2e134626ffedf25682a6ab11fa9f5dc6ce17bbeaa1b8b8ca`  
+		Last Modified: Fri, 23 Aug 2024 21:11:12 GMT  
 		Size: 45.8 KB (45776 bytes)  
 		MIME: application/vnd.in-toto+json
 
