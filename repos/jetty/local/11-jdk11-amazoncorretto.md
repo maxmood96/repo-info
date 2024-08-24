@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e2f8f8a708d676e1d8106931cf8045b1869eebf3922018586b54a99bcbbde4f8`
+- Image ID: `sha256:4b8e1c7d664823f3042f0135338060a1bb6f5056199bb4a525802dcf8390258d`
 - Created: `2024-07-08T06:35:54Z`
-- Virtual Size: ~ 484.52 Mb  
+- Virtual Size: ~ 484.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -77,15 +77,15 @@ $ dnf --quiet download --source --url bzip2-libs-1.0.6-13.amzn2.0.3
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/5eb7c8b4ed1b326f5e640d655f92f498451c8013b223ad5702abb108358ef0dc/bzip2-1.0.6-13.amzn2.0.3.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2023.2.64-1.amzn2.0.1.noarch`
+### `rpm` package: `ca-certificates-2023.2.68-1.amzn2.0.1.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ca-certificates-2023.2.64-1.amzn2.0.1.noarch
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/60739ca1e679ac9837797e6e6e78ca296faf21d1d9c2ad288f7539c8adc1793b/ca-certificates-2023.2.64-1.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url ca-certificates-2023.2.68-1.amzn2.0.1.noarch
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/e878865cbe45198bb2380a20d6016ecee2c8f9593e03c89eb8bcd037c54b53b4/ca-certificates-2023.2.68-1.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `chkconfig-1.7.4-1.amzn2.0.2.x86_64`
@@ -132,15 +132,15 @@ $ dnf --quiet download --source --url curl-8.3.0-1.amzn2.0.7
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/6960e828bd1d1b84705b13d60d95d6fcfa38f4a169c1b8463981c6169c49699d/curl-8.3.0-1.amzn2.0.7.src.rpm
 ```
 
-### `rpm` package: `cyrus-sasl-lib-2.1.26-24.amzn2.x86_64`
+### `rpm` package: `cyrus-sasl-lib-2.1.26-24.amzn2.0.1.x86_64`
 
 Licenses (from `rpm --query`): BSD with advertising
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url cyrus-sasl-lib-2.1.26-24.amzn2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/3d9de0f7ecb9ee20cf3eeccde9bd3f335ba6aa86b07f1fb45c6d7fdb7edf854a/cyrus-sasl-2.1.26-24.amzn2.src.rpm
+$ dnf --quiet download --source --url cyrus-sasl-lib-2.1.26-24.amzn2.0.1
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/35e086928aa7cd621793f2157824668862228d873c714508e5bbc13979cfe2f3/cyrus-sasl-2.1.26-24.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `dejavu-fonts-common-2.33-6.amzn2.noarch`
@@ -931,15 +931,15 @@ $ dnf --quiet download --source --url openldap-2.4.44-25.amzn2.0.7
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/db7da8ae89a175ef6835a375dec2b69b3eaecc676cb58b8dd9c1f8e769fb0fc2/openldap-2.4.44-25.amzn2.0.7.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-1.0.2k-24.amzn2.0.12.x86_64`
+### `rpm` package: `openssl-libs-1.0.2k-24.amzn2.0.13.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-libs-1.0.2k-24.amzn2.0.12
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/c70b7f1baafad16ad0d7c31311c2f855d91fdc33d66956d07d8eb71564655b28/openssl-1.0.2k-24.amzn2.0.12.src.rpm
+$ dnf --quiet download --source --url openssl-libs-1.0.2k-24.amzn2.0.13
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/85fb30af6480d6f939251b037e055e34e05a3d4759c2e118e576cfc23308c0cc/openssl-1.0.2k-24.amzn2.0.13.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-0.23.22-1.amzn2.0.1.x86_64`
@@ -1228,15 +1228,15 @@ $ dnf --quiet download --source --url system-release-2-16.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/1d86dd37090418630254dc852c55859e9033e342f87091b94c9448bcacdb7b2a/system-release-2-16.amzn2.src.rpm
 ```
 
-### `rpm` package: `tar-1.26-35.amzn2.0.3.x86_64`
+### `rpm` package: `tar-1.26-35.amzn2.0.4.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tar-1.26-35.amzn2.0.3
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/9347f37d4dc439045de8dbfb449ed3cfc87ce85e57782dd4684d30b53294d4c1/tar-1.26-35.amzn2.0.3.src.rpm
+$ dnf --quiet download --source --url tar-1.26-35.amzn2.0.4
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/3b8c768a35cd5e74262981801949409fe7f858b60551129dc34dd70ba7a6c92c/tar-1.26-35.amzn2.0.4.src.rpm
 ```
 
 ### `rpm` package: `tzdata-2024a-1.amzn2.0.1.noarch`
