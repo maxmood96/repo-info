@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ab22c625580ce618e88ecbc7c338bf24d68060caca333355302c26dd66ddbf58`
+- Image ID: `sha256:d6f201c82c943237fa48fce59878c783e9002c6dd41d7986218a5bafa9a78e00`
 - Created: `2024-08-19T08:57:28Z`
-- Virtual Size: ~ 932.16 Mb  
+- Virtual Size: ~ 934.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -89,15 +89,15 @@ $ dnf --quiet download --source --url bzip2-libs-1.0.6-13.amzn2.0.3
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/5eb7c8b4ed1b326f5e640d655f92f498451c8013b223ad5702abb108358ef0dc/bzip2-1.0.6-13.amzn2.0.3.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2023.2.64-1.amzn2.0.1.noarch`
+### `rpm` package: `ca-certificates-2023.2.68-1.amzn2.0.1.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ca-certificates-2023.2.64-1.amzn2.0.1.noarch
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/60739ca1e679ac9837797e6e6e78ca296faf21d1d9c2ad288f7539c8adc1793b/ca-certificates-2023.2.64-1.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url ca-certificates-2023.2.68-1.amzn2.0.1.noarch
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/e878865cbe45198bb2380a20d6016ecee2c8f9593e03c89eb8bcd037c54b53b4/ca-certificates-2023.2.68-1.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `chkconfig-1.7.4-1.amzn2.0.2.x86_64`
@@ -177,15 +177,15 @@ $ dnf --quiet download --source --url curl-8.3.0-1.amzn2.0.7
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/6960e828bd1d1b84705b13d60d95d6fcfa38f4a169c1b8463981c6169c49699d/curl-8.3.0-1.amzn2.0.7.src.rpm
 ```
 
-### `rpm` package: `cyrus-sasl-lib-2.1.26-24.amzn2.x86_64`
+### `rpm` package: `cyrus-sasl-lib-2.1.26-24.amzn2.0.1.x86_64`
 
 Licenses (from `rpm --query`): BSD with advertising
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url cyrus-sasl-lib-2.1.26-24.amzn2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/3d9de0f7ecb9ee20cf3eeccde9bd3f335ba6aa86b07f1fb45c6d7fdb7edf854a/cyrus-sasl-2.1.26-24.amzn2.src.rpm
+$ dnf --quiet download --source --url cyrus-sasl-lib-2.1.26-24.amzn2.0.1
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/35e086928aa7cd621793f2157824668862228d873c714508e5bbc13979cfe2f3/cyrus-sasl-2.1.26-24.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `dbus-1.10.24-7.amzn2.0.4.x86_64`
@@ -1174,15 +1174,15 @@ $ dnf --quiet download --source --url openssh-clients-7.4p1-22.amzn2.0.7
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/e135e7a48d208112ec04c02bfb99cebde5a4277b8cc04acca7253aee182c4c79/openssh-7.4p1-22.amzn2.0.7.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-1.0.2k-24.amzn2.0.12.x86_64`
+### `rpm` package: `openssl-libs-1.0.2k-24.amzn2.0.13.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-libs-1.0.2k-24.amzn2.0.12
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/c70b7f1baafad16ad0d7c31311c2f855d91fdc33d66956d07d8eb71564655b28/openssl-1.0.2k-24.amzn2.0.12.src.rpm
+$ dnf --quiet download --source --url openssl-libs-1.0.2k-24.amzn2.0.13
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/85fb30af6480d6f939251b037e055e34e05a3d4759c2e118e576cfc23308c0cc/openssl-1.0.2k-24.amzn2.0.13.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-0.23.22-1.amzn2.0.1.x86_64`
