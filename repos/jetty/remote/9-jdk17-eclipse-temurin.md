@@ -1,7 +1,7 @@
 ## `jetty:9-jdk17-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:478aa3619d39edbb48174a2216ffdc223d18610f9c283865a969341a6283ba68
+$ docker pull jetty@sha256:54fe9769a6edc9f74d7206882754cea0d54f47c13dd36103d81bbe854144296a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull jetty@sha256:478aa3619d39edbb48174a2216ffdc223d18610f9c283865a9693
 ### `jetty:9-jdk17-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:b8c4c80b16036ab74889157c7e169332efde8bd11e5ca14fab6618b32ee0ddf6
+$ docker pull jetty@sha256:2c229cba7bbe88e2653dfec5142e096d9c1a5f9b7324af713379c8d026e4d511
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.1 MB (205149237 bytes)**  
+-	Total Size: **205.1 MB (205149493 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:361672c1980359ed3fd6d374b82ba7801270b2f8f05b1fae5ccbaa1c383453b8`
+-	Image ID: `sha256:5d479ccba7ff6036fa5f4f8c4c3de0d993b03c2248e46a7e895d8c3d85e32a2d`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -52,9 +52,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 08 Jul 2024 06:35:54 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 08 Jul 2024 06:35:54 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 08 Jul 2024 06:35:54 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 08 Jul 2024 06:35:54 GMT
 CMD ["jshell"]
 # Mon, 08 Jul 2024 06:35:54 GMT
@@ -104,57 +104,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Tue, 23 Jul 2024 01:06:52 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:882e4ba000be777c910ad7df6cabe1541d8b700cac349c035f8f481cece9ff42`  
-		Last Modified: Thu, 25 Jul 2024 17:29:44 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:ef392037e06aafa4695d1001b88a5a52b9d9eea67a8cf2126beeaebaf33d24b4`  
+		Last Modified: Fri, 23 Aug 2024 19:26:53 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c128c83be2e0923c9bfd372e82f744fb23fe1117c66d3bb373484ed4d1210704`  
-		Last Modified: Sat, 17 Aug 2024 02:06:44 GMT  
-		Size: 10.7 MB (10710783 bytes)  
+	-	`sha256:9c94e9912d26441948b15e7ed504286b0688af2d6917df148de905f1150f04ed`  
+		Last Modified: Fri, 23 Aug 2024 20:04:01 GMT  
+		Size: 10.7 MB (10710795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91e2fdd4576f2783b7438269aac8bcdc2e193216cddb4303fbca95064afeea7c`  
-		Last Modified: Sat, 17 Aug 2024 02:06:44 GMT  
-		Size: 1.6 KB (1633 bytes)  
+	-	`sha256:48e687a770982b5f52656a25f272f697a02d7af9d222cbb7cd678fcc382b3239`  
+		Last Modified: Fri, 23 Aug 2024 20:03:54 GMT  
+		Size: 1.6 KB (1634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:9-jdk17-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:4afa799746caf4a95d4d560d5f8dc33ec3ff56ad2e627e3936ff64e3c9103aef
+$ docker pull jetty@sha256:0ad557f7e1baa7c2a6cc741f253265af416bc97ad5b0166547406a9a2d950d12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.7 MB (3748801 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e54871c69fcd93a3d8da1b3dafd93ea85923dcb5c2278945ccdcf85412b37d14`
+-	Image ID: `sha256:434fe18160ab32846ec3968a1ce6b6054bafa6db7b1daee645b20b07d785b424`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:abcbec41f5f311e382fc8c802f2909a3335623de1dfb9c71032d8923a88a80fd`  
-		Last Modified: Sat, 17 Aug 2024 02:06:44 GMT  
+	-	`sha256:8b55ce365c8fb8b14bfd3df9c98cd9698afd5a7f110e299a9fbc317902004e51`  
+		Last Modified: Fri, 23 Aug 2024 20:04:01 GMT  
 		Size: 3.7 MB (3727322 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a243471487084e1464f93d5a960ceafde38f1a0eef96d4f67aade9b48fbb6bb4`  
-		Last Modified: Sat, 17 Aug 2024 02:06:44 GMT  
+	-	`sha256:0efa1b88b69284aee867a4b59c6070f70257b6184af384df1d56cf7d275ba0b0`  
+		Last Modified: Fri, 23 Aug 2024 20:04:00 GMT  
 		Size: 21.5 KB (21479 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:9-jdk17-eclipse-temurin` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:b95c13d6a553375931023741455d46a33c1554642ac9d80ed35794f10d5131d5
+$ docker pull jetty@sha256:87eac329b018a07c2af65a01b37238a0465f7fc58ca1f5b77e99ce0255e0b81e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **203.3 MB (203257175 bytes)**  
+-	Total Size: **203.3 MB (203257415 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7bced480d4b25e1b6a65776d70b9d3aeda4dd29c4c51f67eb88c8c6c92d31c6c`
+-	Image ID: `sha256:50fd8b47b978180b674d553a4e3570cb38abedff025896ba71b2ff69377bdd83`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -186,9 +186,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Mon, 08 Jul 2024 06:35:54 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 08 Jul 2024 06:35:54 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 08 Jul 2024 06:35:54 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 08 Jul 2024 06:35:54 GMT
 CMD ["jshell"]
 # Mon, 08 Jul 2024 06:35:54 GMT
@@ -238,43 +238,43 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Tue, 23 Jul 2024 04:12:33 GMT  
 		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ccdcb7301dd518f5a07580bc653c44ecdbfc06a26ebc23e699e9da7b5a5213a`  
-		Last Modified: Thu, 25 Jul 2024 17:45:41 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:37ac5324d0374acc083f98dfb116395b5d4b00e109ef960660805724e06fc5d1`  
+		Last Modified: Fri, 23 Aug 2024 19:44:29 GMT  
+		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:384528cbd4a8b5be6b240de1590d4a854939de86cabd235391bc5bfbaba4fb89`  
-		Last Modified: Sat, 17 Aug 2024 09:24:13 GMT  
-		Size: 10.7 MB (10705640 bytes)  
+	-	`sha256:41963fbaa118bf783e96a72ffa9dfd568bb1f4f566752c0d200618cf527c1ae2`  
+		Last Modified: Fri, 23 Aug 2024 23:30:35 GMT  
+		Size: 10.7 MB (10705638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b399a265528a3aa004e1670c4d0ce467b74eeef8d6a2aa0b77eba1849458452`  
-		Last Modified: Sat, 17 Aug 2024 09:24:13 GMT  
+	-	`sha256:b139711c3669b31993745339b647a06f8e9640837a6db8c567eb5e1e9625f9c0`  
+		Last Modified: Fri, 23 Aug 2024 23:30:35 GMT  
 		Size: 1.6 KB (1634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:9-jdk17-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:bcb3b0205b8ae03f0eedf9c0efd51383957a05d0c0396ded3cefa9fdef264b61
+$ docker pull jetty@sha256:c0740d213e70f820ffeb6d512d3d6d4150e85a0ee8aeea304afabee5d08c5839
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3845355 bytes)**  
+-	Total Size: **3.8 MB (3845356 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ff97ae8fd5fc729d96e08630a65aadc68657a9ecc61b265f02dd94662a02158`
+-	Image ID: `sha256:d58016d7b8a828cda131f4325be767c579268617a568422f13388c7f5cd56f07`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6074fc74ea554ed68326dd7e670f5971d1d8a3f8889b19b7af18e7ed6d096068`  
-		Last Modified: Sat, 17 Aug 2024 09:24:13 GMT  
+	-	`sha256:dafd9e19a86f2c057437e1b9bca3e22fd92e29ac2a3cca02e7cb6c1d7ef930c2`  
+		Last Modified: Fri, 23 Aug 2024 23:30:35 GMT  
 		Size: 3.8 MB (3823536 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:574698508beb35e04d90c07b9e76ce4c6760efb9543a08a5b6b22de88645120b`  
-		Last Modified: Sat, 17 Aug 2024 09:24:13 GMT  
-		Size: 21.8 KB (21819 bytes)  
+	-	`sha256:cc5a3958c989bcd4c0105ac9cbe9b56ea1d312e4702525c74cb318bd1c6e84ac`  
+		Last Modified: Fri, 23 Aug 2024 23:30:34 GMT  
+		Size: 21.8 KB (21820 bytes)  
 		MIME: application/vnd.in-toto+json
