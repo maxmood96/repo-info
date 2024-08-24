@@ -1,7 +1,7 @@
 ## `tomee:9-jre11-Temurin-alpine-plume`
 
 ```console
-$ docker pull tomee@sha256:e5929e458aebdedd84921e684e7ec15364529fb61ed73ad8969673dc5f0df445
+$ docker pull tomee@sha256:f8c697ccf9acf1d790f745721e60e22cd16becd4a9b92e4c59207d9651989580
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,13 +12,13 @@ $ docker pull tomee@sha256:e5929e458aebdedd84921e684e7ec15364529fb61ed73ad896967
 ### `tomee:9-jre11-Temurin-alpine-plume` - linux; amd64
 
 ```console
-$ docker pull tomee@sha256:d74bd12c9e02079d4eb7e608d9ae44147021f497af867cba67b8a6afdce3a1fc
+$ docker pull tomee@sha256:de3090b2c7bcbc0818a6058470b27afa30261f9dbae63e47a006043af68069c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.3 MB (144343937 bytes)**  
+-	Total Size: **144.3 MB (144344071 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96de1c220e9cb17e24385b5dbd9a9b51569080eb25481bd14a74b04e099e7e44`
+-	Image ID: `sha256:96eb9f1ccf65d3cc17ee9e7111fe1e1974006bd0afe1147fc4a3909bd879c917`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -42,7 +42,7 @@ RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_6
 # Tue, 23 Jul 2024 18:18:20 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Tue, 23 Jul 2024 18:18:20 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 23 Jul 2024 18:18:20 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 23 Jul 2024 18:18:20 GMT
@@ -84,51 +84,51 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 25 Jul 2024 17:28:46 GMT  
 		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dabee84202d486cb813bb1655e65bfaa0607816e36aa61d673e89b51669e9d4f`  
-		Last Modified: Thu, 25 Jul 2024 17:28:46 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:5f840564be2d9c8f4dbf5c5ea41db3599f87569c4fb6b6f0153c6971593abd2f`  
+		Last Modified: Fri, 23 Aug 2024 19:26:13 GMT  
+		Size: 2.1 KB (2107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7df8b56d0ba2ea07dc2602fa4dd882332be3690d45135d5ab1e6374823a314a`  
-		Last Modified: Thu, 25 Jul 2024 19:06:11 GMT  
-		Size: 167.0 B  
+	-	`sha256:003cc43714744f0b8bef0ca4a7e97b140e9420a7a0504a030368b78de2d71643`  
+		Last Modified: Fri, 23 Aug 2024 20:06:17 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84782a8dba575c8ab7d710d83ac76d669a7b5561899510e31e6d0319f5c41db1`  
-		Last Modified: Thu, 25 Jul 2024 19:06:12 GMT  
-		Size: 6.7 MB (6739746 bytes)  
+	-	`sha256:dfa9567b99bfc640bd839937da3e517e95d5f1d81912d0a39c028ac0737bac56`  
+		Last Modified: Fri, 23 Aug 2024 20:06:17 GMT  
+		Size: 6.7 MB (6739690 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:929678851f115e55196e2e6b209b27d36101f8b1f51f1288e6776a1eb3511fbc`  
-		Last Modified: Thu, 25 Jul 2024 19:06:11 GMT  
-		Size: 69.2 KB (69218 bytes)  
+	-	`sha256:b9b2f70e40d6f46a73a9cdfd926b7e6cbe6093a30472acf81bc5bcaf81fede27`  
+		Last Modified: Fri, 23 Aug 2024 20:06:17 GMT  
+		Size: 69.2 KB (69209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c97864cc50616add84b2e6a0f735f92882c657fdace5ce4c334d22ef5f9d497e`  
-		Last Modified: Thu, 25 Jul 2024 19:06:13 GMT  
-		Size: 81.0 MB (80959000 bytes)  
+	-	`sha256:b639257999fbccde3e0481557217bd63657ec250264615b290ce5d80dfc6844a`  
+		Last Modified: Fri, 23 Aug 2024 20:06:18 GMT  
+		Size: 81.0 MB (80958952 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `tomee:9-jre11-Temurin-alpine-plume` - unknown; unknown
 
 ```console
-$ docker pull tomee@sha256:53c9518efbe0e677d7813eb68a0e9eb72652ab86b62e83a03669fccf9e9c2fd8
+$ docker pull tomee@sha256:b828819bb5d6049d6e26204c49fc3f28afe076a1b0b4b8b943c55ba3e44eea15
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 MB (1204880 bytes)**  
+-	Total Size: **1.2 MB (1204887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1f627e783946626e147cbeb2fc0a6ffc400dbf583b646fff939b37ce5fc0cc8`
+-	Image ID: `sha256:16c68f75d808000303f8f40d5b0f772db671f2a308b8980fcf12495025700f64`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e4d68d0499709a2a64ad62a3644ba727651d12dcabc5c8affd28b91a3e97ae6f`  
-		Last Modified: Thu, 25 Jul 2024 19:06:12 GMT  
-		Size: 1.2 MB (1176137 bytes)  
+	-	`sha256:edbc66d1e2d67c9f53ebc1cd7f94a078257b5d04508fb46e85f620d35c1064aa`  
+		Last Modified: Fri, 23 Aug 2024 20:06:17 GMT  
+		Size: 1.2 MB (1176144 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:86caceb19e563639e0633d14a4edabf4d065d35a05c22b664bc20d25066cf4e5`  
-		Last Modified: Thu, 25 Jul 2024 19:06:11 GMT  
+	-	`sha256:f6526de0edf19aa8f4978fa75de7ecf2650c22aa0ee125f998423c506e156164`  
+		Last Modified: Fri, 23 Aug 2024 20:06:17 GMT  
 		Size: 28.7 KB (28743 bytes)  
 		MIME: application/vnd.in-toto+json
