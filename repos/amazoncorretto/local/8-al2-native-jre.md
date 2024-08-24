@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d82a0ad5c65b1f51f5eb38baa2b721fc61efaf227da4398b984d77439a6fe62a`
+- Image ID: `sha256:8c5525d28b47a369583dbbda89443a7f8413a9bfa2791d0f7335458ca7f6b9be`
 - Created: `2024-07-16T22:56:42Z`
-- Virtual Size: ~ 441.86 Mb  
+- Virtual Size: ~ 441.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -114,15 +114,15 @@ $ dnf --quiet download --source --url bzip2-libs-1.0.6-13.amzn2.0.3
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/5eb7c8b4ed1b326f5e640d655f92f498451c8013b223ad5702abb108358ef0dc/bzip2-1.0.6-13.amzn2.0.3.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2023.2.64-1.amzn2.0.1.noarch`
+### `rpm` package: `ca-certificates-2023.2.68-1.amzn2.0.1.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ca-certificates-2023.2.64-1.amzn2.0.1.noarch
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/60739ca1e679ac9837797e6e6e78ca296faf21d1d9c2ad288f7539c8adc1793b/ca-certificates-2023.2.64-1.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url ca-certificates-2023.2.68-1.amzn2.0.1.noarch
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/e878865cbe45198bb2380a20d6016ecee2c8f9593e03c89eb8bcd037c54b53b4/ca-certificates-2023.2.68-1.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `cairo-1.15.12-4.amzn2.x86_64`
@@ -202,15 +202,15 @@ $ dnf --quiet download --source --url cryptsetup-libs-1.7.4-4.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/ad16b6f4596e77afa5ae62a92ff619786518ab11b2a6644d0ee53a146b10b021/cryptsetup-1.7.4-4.amzn2.src.rpm
 ```
 
-### `rpm` package: `cups-libs-1.6.3-51.amzn2.0.4.x86_64`
+### `rpm` package: `cups-libs-1.6.3-51.amzn2.0.5.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2 and zlib
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url cups-libs-1.6.3-51.amzn2.0.4
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/5ae8a0a8be5cabbd3cdf0547cbedabfbdf6ce8ba549ffdef06f3ec849004a8d1/cups-1.6.3-51.amzn2.0.4.src.rpm
+$ dnf --quiet download --source --url cups-libs-1.6.3-51.amzn2.0.5
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/53cce55a8befdbad1637be67e93ee2a243db784056ac4e78a72dc7c7c2c9d928/cups-1.6.3-51.amzn2.0.5.src.rpm
 ```
 
 ### `rpm` package: `curl-8.3.0-1.amzn2.0.7.x86_64`
@@ -224,15 +224,15 @@ $ dnf --quiet download --source --url curl-8.3.0-1.amzn2.0.7
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/6960e828bd1d1b84705b13d60d95d6fcfa38f4a169c1b8463981c6169c49699d/curl-8.3.0-1.amzn2.0.7.src.rpm
 ```
 
-### `rpm` package: `cyrus-sasl-lib-2.1.26-24.amzn2.x86_64`
+### `rpm` package: `cyrus-sasl-lib-2.1.26-24.amzn2.0.1.x86_64`
 
 Licenses (from `rpm --query`): BSD with advertising
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url cyrus-sasl-lib-2.1.26-24.amzn2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/3d9de0f7ecb9ee20cf3eeccde9bd3f335ba6aa86b07f1fb45c6d7fdb7edf854a/cyrus-sasl-2.1.26-24.amzn2.src.rpm
+$ dnf --quiet download --source --url cyrus-sasl-lib-2.1.26-24.amzn2.0.1
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/35e086928aa7cd621793f2157824668862228d873c714508e5bbc13979cfe2f3/cyrus-sasl-2.1.26-24.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `dbus-1.10.24-7.amzn2.0.4.x86_64`
@@ -637,26 +637,26 @@ $ dnf --quiet download --source --url grep-2.20-3.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/6a1fd83c54bc7f4701e6b979d8f5dcc9950e2b5116cbb1c27057f412bed54390/grep-2.20-3.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `gtk-update-icon-cache-3.22.30-3.amzn2.x86_64`
+### `rpm` package: `gtk-update-icon-cache-3.22.30-3.amzn2.0.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gtk-update-icon-cache-3.22.30-3.amzn2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/85dd92c206405b9b642485d96311dcec193ee9eb1e5b33341c27a010fbcef781/gtk3-3.22.30-3.amzn2.src.rpm
+$ dnf --quiet download --source --url gtk-update-icon-cache-3.22.30-3.amzn2.0.1
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/3f5a5b8940f6f762808856a44ae3ff53a027bb481dd63eba2b7f1b3c48fea4fb/gtk3-3.22.30-3.amzn2.0.1.src.rpm
 ```
 
-### `rpm` package: `gtk2-2.24.31-1.amzn2.0.2.x86_64`
+### `rpm` package: `gtk2-2.24.31-1.amzn2.0.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gtk2-2.24.31-1.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/d57404a6a9e54b6d1efcbf7fe3685fae8984f33e86b0f311002d2f8e72e94c96/gtk2-2.24.31-1.amzn2.0.2.src.rpm
+$ dnf --quiet download --source --url gtk2-2.24.31-1.amzn2.0.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/d24fd276a03c3aad174d952c522b1d5221b633e7dba41ca1d2bcc0713e7474f2/gtk2-2.24.31-1.amzn2.0.3.src.rpm
 ```
 
 ### `rpm` package: `gzip-1.5-10.amzn2.0.1.x86_64`
@@ -670,15 +670,15 @@ $ dnf --quiet download --source --url gzip-1.5-10.amzn2.0.1
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/073c2dbe9b6abb1bfeb13882372463c92385805502ccf659e093c5d4b2c3d62e/gzip-1.5-10.amzn2.0.1.src.rpm
 ```
 
-### `rpm` package: `harfbuzz-1.7.5-2.amzn2.0.1.x86_64`
+### `rpm` package: `harfbuzz-1.7.5-2.amzn2.0.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url harfbuzz-1.7.5-2.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/d63f44b980969adcfb00f7afac68a31fa737e1f46513f17122a42fd2bff8f8ca/harfbuzz-1.7.5-2.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url harfbuzz-1.7.5-2.amzn2.0.2
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/56851d7a0aedb4618681653d2726efb48ed50152830cd1e8e91fbeaa5dbb7849/harfbuzz-1.7.5-2.amzn2.0.2.src.rpm
 ```
 
 ### `rpm` package: `hicolor-icon-theme-0.12-7.amzn2.noarch`
@@ -1776,15 +1776,15 @@ $ dnf --quiet download --source --url openldap-2.4.44-25.amzn2.0.7
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/db7da8ae89a175ef6835a375dec2b69b3eaecc676cb58b8dd9c1f8e769fb0fc2/openldap-2.4.44-25.amzn2.0.7.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-1.0.2k-24.amzn2.0.12.x86_64`
+### `rpm` package: `openssl-libs-1.0.2k-24.amzn2.0.13.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-libs-1.0.2k-24.amzn2.0.12
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/c70b7f1baafad16ad0d7c31311c2f855d91fdc33d66956d07d8eb71564655b28/openssl-1.0.2k-24.amzn2.0.12.src.rpm
+$ dnf --quiet download --source --url openssl-libs-1.0.2k-24.amzn2.0.13
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/85fb30af6480d6f939251b037e055e34e05a3d4759c2e118e576cfc23308c0cc/openssl-1.0.2k-24.amzn2.0.13.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-0.23.22-1.amzn2.0.1.x86_64`
@@ -1963,15 +1963,15 @@ $ dnf --quiet download --source --url python-libs-2.7.18-1.amzn2.0.8
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/11b5c0cf1d5c44bcea2087305fa270e90335775160cf54bb95d03961a4932fb5/python-2.7.18-1.amzn2.0.8.src.rpm
 ```
 
-### `rpm` package: `python-lxml-3.2.1-4.amzn2.0.5.x86_64`
+### `rpm` package: `python-lxml-3.2.1-4.amzn2.0.6.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-lxml-3.2.1-4.amzn2.0.5
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/1a11e8891d849b8b722a63993576d5abc6fac41bf23c70f3cb8d5a0f59c60eda/python-lxml-3.2.1-4.amzn2.0.5.src.rpm
+$ dnf --quiet download --source --url python-lxml-3.2.1-4.amzn2.0.6
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/50aa709a2db3a27ac7afb777d0ee0ac6fffeac508c069ead90997be81a574e35/../../../../../blobstore/0a6aff266e39a3a5f60f3ddf6eb2a359082e9b2fc7df833a4abe0d2969fcd936/python-lxml-3.2.1-4.amzn2.0.6.src.rpm
 ```
 
 ### `rpm` package: `python-pycurl-7.19.0-19.amzn2.0.2.x86_64`
