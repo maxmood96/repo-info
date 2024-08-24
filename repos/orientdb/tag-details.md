@@ -15,7 +15,7 @@
 ## `orientdb:3.1`
 
 ```console
-$ docker pull orientdb@sha256:e4c4c5c8893302cccd0d69aa485e43e1d4928539523e3186f42d38ed5c95a20d
+$ docker pull orientdb@sha256:488169d3bc3ad2b4924b92d21eb7a6720556f7b661e8d1f06537c26f92edc7d8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,14 +26,14 @@ $ docker pull orientdb@sha256:e4c4c5c8893302cccd0d69aa485e43e1d4928539523e3186f4
 ### `orientdb:3.1` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:daa2e94f979783ccdd1a8e8eaea98362d3144e0644e166d79ee88a1afc00567d
+$ docker pull orientdb@sha256:f2e005f55dde53b1e270cd33651e430f449a0a2f2ba99d3f77ba23e7af8f27ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **201.0 MB (201033278 bytes)**  
+-	Total Size: **201.7 MB (201677232 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:604a576f0e32224c10e39f8baa108b8a455b174ce3607758c86d50f495134691`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:81f1f0b3fe3fb889ae4a9b31188e4254c7e248418c248280c20bc3a28e51e8fb`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -64,9 +64,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Thu, 15 Sep 2022 13:05:16 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Thu, 15 Sep 2022 13:05:16 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 15 Sep 2022 13:05:16 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 15 Sep 2022 13:05:16 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Thu, 15 Sep 2022 13:05:16 GMT
@@ -116,17 +116,17 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:10:17 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afc5f3fec6046d26f916c03e180f06f455266f8a1332a1857d9f8d8daa621bc9`  
-		Last Modified: Sat, 17 Aug 2024 01:10:17 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:908723dcdab8ae296afc2c91ee627dde55d2b71eaf2c977d43feaacc83836ad9`  
+		Last Modified: Fri, 23 Aug 2024 19:24:46 GMT  
+		Size: 2.1 KB (2130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:a454f72269d025ad6f4817241e9be1d9fbfa6dc87737ff92645b43810a20ada0`  
+		Last Modified: Fri, 23 Aug 2024 20:03:06 GMT  
+		Size: 643.7 KB (643738 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5839926088fe0842112b9b2edbd6cb50745cc566b4e3be86088504bb856434e`  
-		Last Modified: Sat, 17 Aug 2024 02:01:45 GMT  
-		Size: 53.1 MB (53081029 bytes)  
+	-	`sha256:33a35c3328ef87f1d155f3d38ad25f01471677e7ed7c27f856c2c5a79a385dd8`  
+		Last Modified: Fri, 23 Aug 2024 20:03:07 GMT  
+		Size: 53.1 MB (53081013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -136,31 +136,31 @@ CMD ["server.sh"]
 ### `orientdb:3.1` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:7ab421751e2cbf270724299ea2cbefe0a15a13959b5b4a207e20c7632660978e
+$ docker pull orientdb@sha256:4cdc5097bf23793a6202b02512f282c91883f1704cfbb3fbcabd70d798ad1a5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3036315 bytes)**  
+-	Total Size: **3.0 MB (3036323 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40ee60a8f414ab54d6efd59171b8be18020da3dc13796a6ef3ff1acc31fc4c0f`
+-	Image ID: `sha256:8797fae00ed087aa3e1dd12bc6bb52f524b4a46f9c4146565ee0e213e109a58e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:71b557825eefe15a66d3bf0fc3de22d3b82bc688c66f29b6f030c37c3cf79292`  
-		Last Modified: Sat, 17 Aug 2024 02:01:44 GMT  
-		Size: 3.0 MB (3022206 bytes)  
+	-	`sha256:cc586bbd26e62f6758f7fb605103484a57266b43b90bca36d73c06794da471b6`  
+		Last Modified: Fri, 23 Aug 2024 20:03:06 GMT  
+		Size: 3.0 MB (3022202 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:077a676ab2387b1363455888cd09c9e31ee06e32b38610eef98321b4e0880729`  
-		Last Modified: Sat, 17 Aug 2024 02:01:44 GMT  
-		Size: 14.1 KB (14109 bytes)  
+	-	`sha256:825a8f059c82153725376def2f9f7b77d90ac1947599543996036477e01b716e`  
+		Last Modified: Fri, 23 Aug 2024 20:03:06 GMT  
+		Size: 14.1 KB (14121 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `orientdb:3.1-tp3`
 
 ```console
-$ docker pull orientdb@sha256:4d9ab1d7ecf6ae59b0ec03cf194a031b22bf9592e3bfc9ce3fb795be676c1b92
+$ docker pull orientdb@sha256:b7df44d9d4e4003cb45034670bbace55beccc61ada245de56ade8af2248949a1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -171,14 +171,14 @@ $ docker pull orientdb@sha256:4d9ab1d7ecf6ae59b0ec03cf194a031b22bf9592e3bfc9ce3f
 ### `orientdb:3.1-tp3` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:e843700884a042e3fea8c4c0d8872fb0b219161eec9e7bde44a4057d735f9512
+$ docker pull orientdb@sha256:e0612f45fe774a564e3b9b5a3b90b58ae70de1f360b12255a71f9585054b546c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **224.0 MB (224040368 bytes)**  
+-	Total Size: **224.7 MB (224684293 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5158111f8420d42af563066e50b008c38cfa115c2bce161b4daabdac321e5731`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:1cc5fd5e581921cf52588f9ce7835410100cba4d05c0f0a1e27c097d63ffa157`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -209,9 +209,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Thu, 15 Sep 2022 13:05:16 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Thu, 15 Sep 2022 13:05:16 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 15 Sep 2022 13:05:16 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 15 Sep 2022 13:05:16 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Thu, 15 Sep 2022 13:05:16 GMT
@@ -265,21 +265,21 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:10:17 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afc5f3fec6046d26f916c03e180f06f455266f8a1332a1857d9f8d8daa621bc9`  
-		Last Modified: Sat, 17 Aug 2024 01:10:17 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:908723dcdab8ae296afc2c91ee627dde55d2b71eaf2c977d43feaacc83836ad9`  
+		Last Modified: Fri, 23 Aug 2024 19:24:46 GMT  
+		Size: 2.1 KB (2130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:f0975083cc47e85fa89b04d0aa69a4da2bb2a37414382ad04fb59d49913a1117`  
+		Last Modified: Fri, 23 Aug 2024 20:03:06 GMT  
+		Size: 643.7 KB (643721 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19cc06c8d992f20cd0bf5df80d855aa3bfa6fd50196e8e1f97c1ab65a76972a6`  
-		Last Modified: Sat, 17 Aug 2024 02:01:52 GMT  
-		Size: 76.1 MB (76086741 bytes)  
+	-	`sha256:2f41034b2d93425d5b6bff560512628f1a73f3fd18d3a093ac34c1fe0768c28f`  
+		Last Modified: Fri, 23 Aug 2024 20:03:07 GMT  
+		Size: 76.1 MB (76086719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f230c1edbbf3fe39d0357432c91500ef7ce17d826e560202989ef2af12eba447`  
-		Last Modified: Sat, 17 Aug 2024 02:01:51 GMT  
-		Size: 1.4 KB (1378 bytes)  
+	-	`sha256:fcaf52187a80164650078a03781ba2d3fd026439c238bccb371a0e7e1448655e`  
+		Last Modified: Fri, 23 Aug 2024 20:03:06 GMT  
+		Size: 1.4 KB (1372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -289,31 +289,31 @@ CMD ["server.sh"]
 ### `orientdb:3.1-tp3` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:4bf05b20c54f0446b1b4e98e9e51b7c933c2cd54e809979826f7775c34f0b84b
+$ docker pull orientdb@sha256:66e4cfc29aad40d5d4868101b96ce860b360f81658a11966662d13be2359611a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3096351 bytes)**  
+-	Total Size: **3.1 MB (3096371 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dade4d6788c0eb4c27213abd6b7a7dfa2802d1a102c791e4b40f4750a56d0e76`
+-	Image ID: `sha256:77936dd0968d2bc76bdcff88c3bbbbe43dd500b43e14ce506eebd91a1aa518c5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d9d2118886b5f1b5030e1d96b6be454412881100cfbc4182684b866f5a08c4a8`  
-		Last Modified: Sat, 17 Aug 2024 02:01:51 GMT  
-		Size: 3.1 MB (3079580 bytes)  
+	-	`sha256:d4027a5ab2a3f0424143507d1babe24a765e91b042e13cf4ee26c1aa36ec2575`  
+		Last Modified: Fri, 23 Aug 2024 20:03:06 GMT  
+		Size: 3.1 MB (3079584 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c2c3754b57318802ee75f535e37a98831c60a7832fcc2174a99805b1b76aca67`  
-		Last Modified: Sat, 17 Aug 2024 02:01:51 GMT  
-		Size: 16.8 KB (16771 bytes)  
+	-	`sha256:2f0efd2ca45b8c371ce9300a438ab4dee95ae934b7e018132f35ab487a1f5ef5`  
+		Last Modified: Fri, 23 Aug 2024 20:03:06 GMT  
+		Size: 16.8 KB (16787 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `orientdb:3.1.20`
 
 ```console
-$ docker pull orientdb@sha256:e4c4c5c8893302cccd0d69aa485e43e1d4928539523e3186f42d38ed5c95a20d
+$ docker pull orientdb@sha256:488169d3bc3ad2b4924b92d21eb7a6720556f7b661e8d1f06537c26f92edc7d8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -324,14 +324,14 @@ $ docker pull orientdb@sha256:e4c4c5c8893302cccd0d69aa485e43e1d4928539523e3186f4
 ### `orientdb:3.1.20` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:daa2e94f979783ccdd1a8e8eaea98362d3144e0644e166d79ee88a1afc00567d
+$ docker pull orientdb@sha256:f2e005f55dde53b1e270cd33651e430f449a0a2f2ba99d3f77ba23e7af8f27ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **201.0 MB (201033278 bytes)**  
+-	Total Size: **201.7 MB (201677232 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:604a576f0e32224c10e39f8baa108b8a455b174ce3607758c86d50f495134691`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:81f1f0b3fe3fb889ae4a9b31188e4254c7e248418c248280c20bc3a28e51e8fb`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -362,9 +362,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Thu, 15 Sep 2022 13:05:16 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Thu, 15 Sep 2022 13:05:16 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 15 Sep 2022 13:05:16 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 15 Sep 2022 13:05:16 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Thu, 15 Sep 2022 13:05:16 GMT
@@ -414,17 +414,17 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:10:17 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afc5f3fec6046d26f916c03e180f06f455266f8a1332a1857d9f8d8daa621bc9`  
-		Last Modified: Sat, 17 Aug 2024 01:10:17 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:908723dcdab8ae296afc2c91ee627dde55d2b71eaf2c977d43feaacc83836ad9`  
+		Last Modified: Fri, 23 Aug 2024 19:24:46 GMT  
+		Size: 2.1 KB (2130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:a454f72269d025ad6f4817241e9be1d9fbfa6dc87737ff92645b43810a20ada0`  
+		Last Modified: Fri, 23 Aug 2024 20:03:06 GMT  
+		Size: 643.7 KB (643738 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5839926088fe0842112b9b2edbd6cb50745cc566b4e3be86088504bb856434e`  
-		Last Modified: Sat, 17 Aug 2024 02:01:45 GMT  
-		Size: 53.1 MB (53081029 bytes)  
+	-	`sha256:33a35c3328ef87f1d155f3d38ad25f01471677e7ed7c27f856c2c5a79a385dd8`  
+		Last Modified: Fri, 23 Aug 2024 20:03:07 GMT  
+		Size: 53.1 MB (53081013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -434,31 +434,31 @@ CMD ["server.sh"]
 ### `orientdb:3.1.20` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:7ab421751e2cbf270724299ea2cbefe0a15a13959b5b4a207e20c7632660978e
+$ docker pull orientdb@sha256:4cdc5097bf23793a6202b02512f282c91883f1704cfbb3fbcabd70d798ad1a5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3036315 bytes)**  
+-	Total Size: **3.0 MB (3036323 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40ee60a8f414ab54d6efd59171b8be18020da3dc13796a6ef3ff1acc31fc4c0f`
+-	Image ID: `sha256:8797fae00ed087aa3e1dd12bc6bb52f524b4a46f9c4146565ee0e213e109a58e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:71b557825eefe15a66d3bf0fc3de22d3b82bc688c66f29b6f030c37c3cf79292`  
-		Last Modified: Sat, 17 Aug 2024 02:01:44 GMT  
-		Size: 3.0 MB (3022206 bytes)  
+	-	`sha256:cc586bbd26e62f6758f7fb605103484a57266b43b90bca36d73c06794da471b6`  
+		Last Modified: Fri, 23 Aug 2024 20:03:06 GMT  
+		Size: 3.0 MB (3022202 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:077a676ab2387b1363455888cd09c9e31ee06e32b38610eef98321b4e0880729`  
-		Last Modified: Sat, 17 Aug 2024 02:01:44 GMT  
-		Size: 14.1 KB (14109 bytes)  
+	-	`sha256:825a8f059c82153725376def2f9f7b77d90ac1947599543996036477e01b716e`  
+		Last Modified: Fri, 23 Aug 2024 20:03:06 GMT  
+		Size: 14.1 KB (14121 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `orientdb:3.1.20-tp3`
 
 ```console
-$ docker pull orientdb@sha256:4d9ab1d7ecf6ae59b0ec03cf194a031b22bf9592e3bfc9ce3fb795be676c1b92
+$ docker pull orientdb@sha256:b7df44d9d4e4003cb45034670bbace55beccc61ada245de56ade8af2248949a1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -469,14 +469,14 @@ $ docker pull orientdb@sha256:4d9ab1d7ecf6ae59b0ec03cf194a031b22bf9592e3bfc9ce3f
 ### `orientdb:3.1.20-tp3` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:e843700884a042e3fea8c4c0d8872fb0b219161eec9e7bde44a4057d735f9512
+$ docker pull orientdb@sha256:e0612f45fe774a564e3b9b5a3b90b58ae70de1f360b12255a71f9585054b546c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **224.0 MB (224040368 bytes)**  
+-	Total Size: **224.7 MB (224684293 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5158111f8420d42af563066e50b008c38cfa115c2bce161b4daabdac321e5731`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:1cc5fd5e581921cf52588f9ce7835410100cba4d05c0f0a1e27c097d63ffa157`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -507,9 +507,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Thu, 15 Sep 2022 13:05:16 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Thu, 15 Sep 2022 13:05:16 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 15 Sep 2022 13:05:16 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 15 Sep 2022 13:05:16 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Thu, 15 Sep 2022 13:05:16 GMT
@@ -563,21 +563,21 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:10:17 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afc5f3fec6046d26f916c03e180f06f455266f8a1332a1857d9f8d8daa621bc9`  
-		Last Modified: Sat, 17 Aug 2024 01:10:17 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:908723dcdab8ae296afc2c91ee627dde55d2b71eaf2c977d43feaacc83836ad9`  
+		Last Modified: Fri, 23 Aug 2024 19:24:46 GMT  
+		Size: 2.1 KB (2130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:f0975083cc47e85fa89b04d0aa69a4da2bb2a37414382ad04fb59d49913a1117`  
+		Last Modified: Fri, 23 Aug 2024 20:03:06 GMT  
+		Size: 643.7 KB (643721 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19cc06c8d992f20cd0bf5df80d855aa3bfa6fd50196e8e1f97c1ab65a76972a6`  
-		Last Modified: Sat, 17 Aug 2024 02:01:52 GMT  
-		Size: 76.1 MB (76086741 bytes)  
+	-	`sha256:2f41034b2d93425d5b6bff560512628f1a73f3fd18d3a093ac34c1fe0768c28f`  
+		Last Modified: Fri, 23 Aug 2024 20:03:07 GMT  
+		Size: 76.1 MB (76086719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f230c1edbbf3fe39d0357432c91500ef7ce17d826e560202989ef2af12eba447`  
-		Last Modified: Sat, 17 Aug 2024 02:01:51 GMT  
-		Size: 1.4 KB (1378 bytes)  
+	-	`sha256:fcaf52187a80164650078a03781ba2d3fd026439c238bccb371a0e7e1448655e`  
+		Last Modified: Fri, 23 Aug 2024 20:03:06 GMT  
+		Size: 1.4 KB (1372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -587,31 +587,31 @@ CMD ["server.sh"]
 ### `orientdb:3.1.20-tp3` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:4bf05b20c54f0446b1b4e98e9e51b7c933c2cd54e809979826f7775c34f0b84b
+$ docker pull orientdb@sha256:66e4cfc29aad40d5d4868101b96ce860b360f81658a11966662d13be2359611a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3096351 bytes)**  
+-	Total Size: **3.1 MB (3096371 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dade4d6788c0eb4c27213abd6b7a7dfa2802d1a102c791e4b40f4750a56d0e76`
+-	Image ID: `sha256:77936dd0968d2bc76bdcff88c3bbbbe43dd500b43e14ce506eebd91a1aa518c5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d9d2118886b5f1b5030e1d96b6be454412881100cfbc4182684b866f5a08c4a8`  
-		Last Modified: Sat, 17 Aug 2024 02:01:51 GMT  
-		Size: 3.1 MB (3079580 bytes)  
+	-	`sha256:d4027a5ab2a3f0424143507d1babe24a765e91b042e13cf4ee26c1aa36ec2575`  
+		Last Modified: Fri, 23 Aug 2024 20:03:06 GMT  
+		Size: 3.1 MB (3079584 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c2c3754b57318802ee75f535e37a98831c60a7832fcc2174a99805b1b76aca67`  
-		Last Modified: Sat, 17 Aug 2024 02:01:51 GMT  
-		Size: 16.8 KB (16771 bytes)  
+	-	`sha256:2f0efd2ca45b8c371ce9300a438ab4dee95ae934b7e018132f35ab487a1f5ef5`  
+		Last Modified: Fri, 23 Aug 2024 20:03:06 GMT  
+		Size: 16.8 KB (16787 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `orientdb:3.2`
 
 ```console
-$ docker pull orientdb@sha256:e74d1d15840e164e724ee4c0d6127d705cd6257f50394b94dd40f894610a97f0
+$ docker pull orientdb@sha256:0e5e6034f806b617aea9cb6c505febfc775326732e0a33183570e3c8891529f8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -626,14 +626,14 @@ $ docker pull orientdb@sha256:e74d1d15840e164e724ee4c0d6127d705cd6257f50394b94dd
 ### `orientdb:3.2` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:5e439f790b51e0fe9485311bf1828fcfc1d57d529ffe8cc60f8bee0dd7280d11
+$ docker pull orientdb@sha256:0942c6a94cc734eb6610fa18660d1260edf62d869f0d08211f43b917608a0e92
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **220.9 MB (220871799 bytes)**  
+-	Total Size: **221.5 MB (221515718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:741ee20170516ffd639ca7f286191ef76b84ccd5ccf192b549fc7f517fa24f8c`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:15be91951e83e6a8227e498c18c0543f5c25580e18c0ded70b3a30c2dd0b527e`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -664,9 +664,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Tue, 16 Jul 2024 16:57:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Jul 2024 16:57:57 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Tue, 16 Jul 2024 16:57:57 GMT
@@ -716,17 +716,17 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:10:17 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afc5f3fec6046d26f916c03e180f06f455266f8a1332a1857d9f8d8daa621bc9`  
-		Last Modified: Sat, 17 Aug 2024 01:10:17 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:908723dcdab8ae296afc2c91ee627dde55d2b71eaf2c977d43feaacc83836ad9`  
+		Last Modified: Fri, 23 Aug 2024 19:24:46 GMT  
+		Size: 2.1 KB (2130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:25dd6fccc7082fa915848b9798736b78ab709f3b488136f34bdf46a391122d48`  
+		Last Modified: Fri, 23 Aug 2024 20:03:16 GMT  
+		Size: 643.7 KB (643725 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce6fe340fba038f85a1e3179d1d537df405dce2c4fa7ff7aa04f0b8b5b70f421`  
-		Last Modified: Sat, 17 Aug 2024 02:05:33 GMT  
-		Size: 72.9 MB (72919550 bytes)  
+	-	`sha256:ded1051a96f5fd1d5acd1f8c3ad8fbff40a5fd3187dbd688da43bf01d2aa3f87`  
+		Last Modified: Fri, 23 Aug 2024 20:03:19 GMT  
+		Size: 72.9 MB (72919512 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -736,38 +736,38 @@ CMD ["server.sh"]
 ### `orientdb:3.2` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:0419714afae70242f59f19cd5706a60652e47ca3205c46c8c9259fa57704449c
+$ docker pull orientdb@sha256:f059202595671523f4e71b3f3f223d87b8693ead411e641a987f7685c00effe1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3044817 bytes)**  
+-	Total Size: **3.0 MB (3044828 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad2d1b210c03422ca1c3b4a6e783ba6f08cda04b2ca78df5e8265212443e0a56`
+-	Image ID: `sha256:15de7729e3a61a913f27700bfe55bc633c63e26ad0488fbf6cf37730077469f7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fbc361bd25d7d32c97ed323c59734f8932c21eeb53cbb83b85f6a76cb97f2460`  
-		Last Modified: Sat, 17 Aug 2024 02:05:30 GMT  
+	-	`sha256:d8fedefccf8886bafd8ebb508b23296014596f059ec66276937cbe8cbd84a2d9`  
+		Last Modified: Fri, 23 Aug 2024 20:03:16 GMT  
 		Size: 3.0 MB (3030406 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:245953049e7fb7ad8f5057a1061b57d50f72627205c7cc862ddfb710245e112a`  
-		Last Modified: Sat, 17 Aug 2024 02:05:30 GMT  
-		Size: 14.4 KB (14411 bytes)  
+	-	`sha256:fd809d4a406af4c1bf72b715c9c465fd7bd146bed431756c221227c4c4085129`  
+		Last Modified: Fri, 23 Aug 2024 20:03:16 GMT  
+		Size: 14.4 KB (14422 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:3.2` - linux; arm variant v7
 
 ```console
-$ docker pull orientdb@sha256:c46f3483fbe1b8b857a537773e8aeab4b1326d565095a31ea67031181b418664
+$ docker pull orientdb@sha256:4d13acf92a79765da5ac2a32b03aaf7c916cba0e5ef8856c176c74c2b900c998
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **213.0 MB (212968124 bytes)**  
+-	Total Size: **213.5 MB (213538271 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8fd311fa790f44b3a57f2af67e14ea0aa43adda42c63775e2d3186a92ae55097`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:253577ea216b7c9d0a5fb1911c767b1c1028f49e2de1dc7541e636ff630b40c5`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -798,9 +798,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Tue, 16 Jul 2024 16:57:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Jul 2024 16:57:57 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Tue, 16 Jul 2024 16:57:57 GMT
@@ -850,16 +850,16 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:36:10 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5b45a73dedc6ac57b88973dd794ed69ac2f20a32064454f4998e9bd9dadda6a`  
-		Last Modified: Sat, 17 Aug 2024 01:36:11 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:b611d2ff1d07aefe83c1a30b90580e162fed21b9ebe372a491cd6adec7f655a4`  
+		Last Modified: Fri, 23 Aug 2024 18:59:03 GMT  
+		Size: 2.1 KB (2130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:db752149988dbb0bca8c7f9ab95acf57b926b0f30e51fa29ea79f12934d9debc`  
+		Last Modified: Fri, 23 Aug 2024 20:31:50 GMT  
+		Size: 569.9 KB (569915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3862c536cdfb0bdc3b90686d4e0a3c3a5ae3912fce84544ed883d16af24466e`  
-		Last Modified: Sat, 17 Aug 2024 04:32:55 GMT  
+	-	`sha256:1a7552b71e5b008200b23f6a34126b7db351636d11655681c7ee478b4894d7d2`  
+		Last Modified: Fri, 23 Aug 2024 20:31:52 GMT  
 		Size: 72.9 MB (72919551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -870,38 +870,38 @@ CMD ["server.sh"]
 ### `orientdb:3.2` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:6752ffa5a914ee42eae1208c85eb8a7ae96e9d1d9aeefd0c0f40f936dc5fe46a
+$ docker pull orientdb@sha256:004b17eee16d421e8a903a8f0095fb9fececfd020a4e70892d1467fdb7cae746
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3047599 bytes)**  
+-	Total Size: **3.0 MB (3047611 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3439d7f0b22dbd9c709cf70ed37547763ce8b6aee1900e4c8fe5a5d72a2ce6c`
+-	Image ID: `sha256:6c780385913d0c53b1ea1cf4e1ee6753a02f3359f3c26b5a89da711b11b55d14`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:36fda9220fb86585173b08786e05baa9104b7f44f9938134d4aa19fca44bf1da`  
-		Last Modified: Sat, 17 Aug 2024 04:32:53 GMT  
+	-	`sha256:71f208d0557a8fb73065a434075a49593e44770e99a3ceb658824f3edd49fff6`  
+		Last Modified: Fri, 23 Aug 2024 20:31:50 GMT  
 		Size: 3.0 MB (3033117 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:60ecbc57376dbd42cd4ffd1a49f15f89e17cfcbd0bc15731f73ea8b22f0dd225`  
-		Last Modified: Sat, 17 Aug 2024 04:32:52 GMT  
-		Size: 14.5 KB (14482 bytes)  
+	-	`sha256:612ae5f8c566e3d8e58f4f2a868af3e703677c5cd62d07352424f8b1cfdc1f42`  
+		Last Modified: Fri, 23 Aug 2024 20:31:50 GMT  
+		Size: 14.5 KB (14494 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:3.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull orientdb@sha256:45b03ec00b9de36f8651e91c68c052eb028b41d87e0c0a1c559bff3ff41e0a25
+$ docker pull orientdb@sha256:db9668dd5521ff999911599e44645f8e60d9708d627a4932140c5887638197da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **219.4 MB (219360509 bytes)**  
+-	Total Size: **220.0 MB (219999602 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d35e36756b4885d5715e7a23da067500cd1fa6bc8e0a5f9bfa3cd577926cd745`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:07749479594ddf73ac4fed4d12ec202b93ea82d849ce014e19127617916c0416`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -932,9 +932,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Tue, 16 Jul 2024 16:57:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Jul 2024 16:57:57 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Tue, 16 Jul 2024 16:57:57 GMT
@@ -984,17 +984,17 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:33:25 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dd75ffbbc9e8eee9e198bb7d1025c93ea1d3b1669f3c950b9a5072d71f4e61c`  
-		Last Modified: Sat, 17 Aug 2024 01:33:24 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:ed8f01f034694f1dcbd5ebdbcf8074eb868fa7fd9c7c2f9df0ed44eae52141d4`  
+		Last Modified: Fri, 23 Aug 2024 19:42:46 GMT  
+		Size: 2.1 KB (2131 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:f1e9d9210fa7eebc88690f9767308e36b3818af754284ff053e6504949dcf159`  
+		Last Modified: Fri, 23 Aug 2024 22:53:16 GMT  
+		Size: 638.9 KB (638874 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c290b2ef321d7df70c8fa35e4cc4fdd4abba1b53423e8c67207dedae087be265`  
-		Last Modified: Sat, 17 Aug 2024 08:04:32 GMT  
-		Size: 72.9 MB (72919549 bytes)  
+	-	`sha256:0d9a58019699db8c2ab094e152b96e40d585f205710f7e9206d5077804500345`  
+		Last Modified: Fri, 23 Aug 2024 22:53:19 GMT  
+		Size: 72.9 MB (72919535 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1004,31 +1004,31 @@ CMD ["server.sh"]
 ### `orientdb:3.2` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:6450e654c96f0ca9fdf8745b80d2c2fbf9dfba6d5d8817c5ffac0987ca131bce
+$ docker pull orientdb@sha256:e6fe291c4aad740f676b535d14ad867fd18395cfb60c905817ca890f9ef1b121
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3046188 bytes)**  
+-	Total Size: **3.0 MB (3046200 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:99eff4976a6edd5b9b742562856a0fb099a3e74f4e3fa17de01a9eb257164a07`
+-	Image ID: `sha256:4b37cce08a8b8b148c9071218eca0b4e3deaa37f4c6174eb4575e748848bd762`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:063d20a56eb9a4b2c55d1d1b6abce56c8dbfd721691c7346ad859e563e25078c`  
-		Last Modified: Sat, 17 Aug 2024 08:04:30 GMT  
+	-	`sha256:19d856ab84c982927d99167f6150ed3d334730c480dda881225307dd507ef88e`  
+		Last Modified: Fri, 23 Aug 2024 22:53:17 GMT  
 		Size: 3.0 MB (3031479 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:83746e1b64aa1c82792c6726ea1f52c09c1c5b61350ce5be9f8244b19408703f`  
-		Last Modified: Sat, 17 Aug 2024 08:04:29 GMT  
-		Size: 14.7 KB (14709 bytes)  
+	-	`sha256:04f6b2712ca8ffe4f37b74ad2690023d358a74d46da1e4a1b2801115dea3734c`  
+		Last Modified: Fri, 23 Aug 2024 22:53:16 GMT  
+		Size: 14.7 KB (14721 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `orientdb:3.2-tp3`
 
 ```console
-$ docker pull orientdb@sha256:5d5a067fa3f6d788fc848d5fe2e08e54cdbf80416c662ac8cad8c1e18dc387ed
+$ docker pull orientdb@sha256:d363a42f6db26e198dc3993fcaae0e09dd9c31514d2b5cf1c10c5826b6f35390
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1043,14 +1043,14 @@ $ docker pull orientdb@sha256:5d5a067fa3f6d788fc848d5fe2e08e54cdbf80416c662ac8ca
 ### `orientdb:3.2-tp3` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:30aef6d3c339166575cccd243f2705a0216fd58dd0b5993e043faaa5d86dfbbd
+$ docker pull orientdb@sha256:ac3915a2888089cce0c481f3088e67999039aee240183eb4cc9d9c20f96efbb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.8 MB (252799413 bytes)**  
+-	Total Size: **253.4 MB (253443409 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1efde5c557d760c9bdaed27e86898094214be639c297fa16e58769009567324`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:a2447a15f5a31bdb374321dfca48e1d3887f063e6e0d92ae7d7da92dbeec4740`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -1081,9 +1081,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Tue, 16 Jul 2024 16:57:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Jul 2024 16:57:57 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Tue, 16 Jul 2024 16:57:57 GMT
@@ -1137,21 +1137,21 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:10:17 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afc5f3fec6046d26f916c03e180f06f455266f8a1332a1857d9f8d8daa621bc9`  
-		Last Modified: Sat, 17 Aug 2024 01:10:17 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:908723dcdab8ae296afc2c91ee627dde55d2b71eaf2c977d43feaacc83836ad9`  
+		Last Modified: Fri, 23 Aug 2024 19:24:46 GMT  
+		Size: 2.1 KB (2130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:392f9a1df9d460c2064e58604de6793bb7bfa5d0f6ee8e50934b6da60cc93be8`  
+		Last Modified: Fri, 23 Aug 2024 20:03:10 GMT  
+		Size: 643.7 KB (643726 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3a9086632f7c724a3e8b82618028527657e1fa59761d1d1e994a799de782a3e`  
-		Last Modified: Sat, 17 Aug 2024 02:01:57 GMT  
-		Size: 104.8 MB (104845844 bytes)  
+	-	`sha256:cf4c5bcb88a503a7ff1b2148d1bb2dcfdd09b95a01edc2d941428582d8cb7d3f`  
+		Last Modified: Fri, 23 Aug 2024 20:03:12 GMT  
+		Size: 104.8 MB (104845885 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c35606fc0d90dd261572ef06a09092c51e2fc8763a17930a42f13b381211c8f2`  
-		Last Modified: Sat, 17 Aug 2024 02:01:55 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:a3f55c65feb1f08838d6cb45a41c6fc963ab898d6057a1ec12a10428f097b824`  
+		Last Modified: Fri, 23 Aug 2024 20:03:10 GMT  
+		Size: 1.3 KB (1317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1161,38 +1161,38 @@ CMD ["server.sh"]
 ### `orientdb:3.2-tp3` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:5d67b44d658c7b3c728f325167884873697bdead150f7b1d2c6b8106776072f6
+$ docker pull orientdb@sha256:dceaea49b497f01dbb8859737395975fc47b67700ad197ae76f6a1f9112d214f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3170125 bytes)**  
+-	Total Size: **3.2 MB (3170141 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f2eb1bc44f69f1f48300d0a17f99fba385bccb923649b952ee72cc4dc96cbae`
+-	Image ID: `sha256:3bb4ea84bbe99ef38072d916989ac640c863152c2bcd0df5acfcc0544e8457a7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e42086bd87fe0a6d28dfe18e9655ba3c81bc05bec389631ce01c30cf7dd7383c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:55 GMT  
+	-	`sha256:4023227687a6062825cfe5581d2b340031676f026cfa2444f1f835a930a3e1d9`  
+		Last Modified: Fri, 23 Aug 2024 20:03:10 GMT  
 		Size: 3.2 MB (3153351 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a8cd8ebd3591a5773ead1ed3de8c986c08b517c195812c15eb6adb74a230a380`  
-		Last Modified: Sat, 17 Aug 2024 02:01:55 GMT  
-		Size: 16.8 KB (16774 bytes)  
+	-	`sha256:bc8552dcaf454ddde2d4179c45a9e46efeacbcbd0132dceed4070daad6642ea6`  
+		Last Modified: Fri, 23 Aug 2024 20:03:10 GMT  
+		Size: 16.8 KB (16790 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:3.2-tp3` - linux; arm variant v7
 
 ```console
-$ docker pull orientdb@sha256:6631d3e8c18b116081b2c9023ce530e9de05bc90486a638e9e20fbd7d230c6a8
+$ docker pull orientdb@sha256:223b2cd447cfce9e16ecd599a8e0a5456f1fafda5e762dd2c5f99e0ddfe90b65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **244.9 MB (244895766 bytes)**  
+-	Total Size: **245.5 MB (245465888 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a85a86ddc57081aaa6e6147abf8fc9ccbba2c5e056594f70e0d686d2559f8ff`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:35f67d03aadb0ab293bf9bfa5aa3dfb03159551539c979e2001c4a33bbb14521`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -1223,9 +1223,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Tue, 16 Jul 2024 16:57:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Jul 2024 16:57:57 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Tue, 16 Jul 2024 16:57:57 GMT
@@ -1279,21 +1279,21 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:36:10 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5b45a73dedc6ac57b88973dd794ed69ac2f20a32064454f4998e9bd9dadda6a`  
-		Last Modified: Sat, 17 Aug 2024 01:36:11 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:b611d2ff1d07aefe83c1a30b90580e162fed21b9ebe372a491cd6adec7f655a4`  
+		Last Modified: Fri, 23 Aug 2024 18:59:03 GMT  
+		Size: 2.1 KB (2130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:911e150cd376bd59107b95a726bd046d63d60a1d563f0855c69fe50df864b5ef`  
+		Last Modified: Fri, 23 Aug 2024 20:32:42 GMT  
+		Size: 569.9 KB (569884 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:943500ac4cb694ba61333a5dac17e0b3a3ebc6cd8a21e04d74c5111d581a6a0d`  
-		Last Modified: Sat, 17 Aug 2024 04:33:51 GMT  
-		Size: 104.8 MB (104845876 bytes)  
+	-	`sha256:ca2354e0f1c9cddb0fb8ec8690bbaeffb203e0ac0fb3975655ae59e32d43cc16`  
+		Last Modified: Fri, 23 Aug 2024 20:32:45 GMT  
+		Size: 104.8 MB (104845880 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03135270490426a7126cfd4d5ba003e2de306f41904c3351814d9a97ca2da239`  
-		Last Modified: Sat, 17 Aug 2024 04:33:48 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:317f5f332105f08961eaf54af6c9c8054d70ef5fd0468bc6c367dc7ac6629fad`  
+		Last Modified: Fri, 23 Aug 2024 20:32:42 GMT  
+		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1303,38 +1303,38 @@ CMD ["server.sh"]
 ### `orientdb:3.2-tp3` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:567e1597df058ff939afb70d6e9b6d8c64a903d78469ce8f8792f0b9915421be
+$ docker pull orientdb@sha256:e8e319b00b28aa33a552d8f210fbb6585824ba3f91845a46aaf807f3fe0734af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3172890 bytes)**  
+-	Total Size: **3.2 MB (3172906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc67a3e73ddb48f21240ffff1038dafcffd8d7ac923264fbc57db55b66f06e2e`
+-	Image ID: `sha256:86b1b7af61b4240f4651fec4bfb4745f687491c67bb7f5ec3bcfef444710f67d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3e690a2f65dade06707dca2233e5509bed67ebcb786bcbc4e6bb6b19c0582f1c`  
-		Last Modified: Sat, 17 Aug 2024 04:33:48 GMT  
+	-	`sha256:5bcecce1b8b4be4540fc079d466af76d2185237621c017878a11e0305739af42`  
+		Last Modified: Fri, 23 Aug 2024 20:32:42 GMT  
 		Size: 3.2 MB (3156054 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:32576ff67c2cb323e663381a231c3772b80281253a98613efe09f9a43d07b91b`  
-		Last Modified: Sat, 17 Aug 2024 04:33:48 GMT  
-		Size: 16.8 KB (16836 bytes)  
+	-	`sha256:13a8fdea0433f729715de730c44e762a4481945ac5750d0728f32441805b7350`  
+		Last Modified: Fri, 23 Aug 2024 20:32:42 GMT  
+		Size: 16.9 KB (16852 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:3.2-tp3` - linux; arm64 variant v8
 
 ```console
-$ docker pull orientdb@sha256:1bfa2f83428a4ce209579b0bf4e3f324fcbeb92fbfc69276b5c5750901f526d0
+$ docker pull orientdb@sha256:14a2915212aa2c410dce408da1412276b8146450eff8236a00aa8007abddf92c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.3 MB (251288100 bytes)**  
+-	Total Size: **251.9 MB (251927219 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad770bd5b443a600747a5e4fa60cd4e574a114349ed78baaaddd0bc9c151ac67`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:06104287a7f670c4603ba0c68e4b20d26f054e28aed5ec0311f6649bea531552`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -1365,9 +1365,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Tue, 16 Jul 2024 16:57:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Jul 2024 16:57:57 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Tue, 16 Jul 2024 16:57:57 GMT
@@ -1421,21 +1421,21 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:33:25 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dd75ffbbc9e8eee9e198bb7d1025c93ea1d3b1669f3c950b9a5072d71f4e61c`  
-		Last Modified: Sat, 17 Aug 2024 01:33:24 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:ed8f01f034694f1dcbd5ebdbcf8074eb868fa7fd9c7c2f9df0ed44eae52141d4`  
+		Last Modified: Fri, 23 Aug 2024 19:42:46 GMT  
+		Size: 2.1 KB (2131 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:2aa697e6e44771d906ee472f4df19bf206d406e42b42d1f52990469426578d00`  
+		Last Modified: Fri, 23 Aug 2024 22:53:58 GMT  
+		Size: 638.9 KB (638859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:606824d4fac046ecebaceaf149e5e57fb44f82a7df9407d37c0c9a0ecb51ff32`  
-		Last Modified: Sat, 17 Aug 2024 08:05:10 GMT  
-		Size: 104.8 MB (104845821 bytes)  
+	-	`sha256:3b0c4e69ada8326ec822053d692b7358402e065b8450a00d502bb5c63b2a00c1`  
+		Last Modified: Fri, 23 Aug 2024 22:54:01 GMT  
+		Size: 104.8 MB (104845847 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c20e7759d0d14486e75f30ad3f3bd20b2b5e7739dda687e3e334fd1d4c3ffa0e`  
-		Last Modified: Sat, 17 Aug 2024 08:05:07 GMT  
-		Size: 1.3 KB (1319 bytes)  
+	-	`sha256:de70ed113e340f39d72a4568dcd42ba52fa65d43cf3f3a9f2325e3cc7fd0ec1b`  
+		Last Modified: Fri, 23 Aug 2024 22:53:58 GMT  
+		Size: 1.3 KB (1320 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1445,31 +1445,31 @@ CMD ["server.sh"]
 ### `orientdb:3.2-tp3` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:b83711736b43c990e006d41fd4e638f299033a86a94eed4e33ef541fc315fac5
+$ docker pull orientdb@sha256:777bb944608b98992910d6e7d5e315322f7394bc8348077a6449a279544c3e11
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3171472 bytes)**  
+-	Total Size: **3.2 MB (3171487 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6cbca411adab8db70568814004c47cc499e07c820031bcc7816491256cc0e840`
+-	Image ID: `sha256:59b21f0809ec6170add1513bd73f3e36e2887137b4178a7483905414c6706150`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a4a3002fa6b0ccf18659ba665f239040305ec3d7a2072bd6dd79a553c0385c00`  
-		Last Modified: Sat, 17 Aug 2024 08:05:07 GMT  
+	-	`sha256:1278ac5c34934eaceda5f8f72bbbf7f88d462045d128847031634aed332c26b8`  
+		Last Modified: Fri, 23 Aug 2024 22:53:58 GMT  
 		Size: 3.2 MB (3154412 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eb7e3991cdf799450d6cb0dd31d5f1cf929123b9bd1ebe7b02e3b13949765ee9`  
-		Last Modified: Sat, 17 Aug 2024 08:05:07 GMT  
-		Size: 17.1 KB (17060 bytes)  
+	-	`sha256:85ce1f6a0375f11de60a5acb565d091bc67d05729243411d8fa4981f87af0589`  
+		Last Modified: Fri, 23 Aug 2024 22:53:58 GMT  
+		Size: 17.1 KB (17075 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `orientdb:3.2.32`
 
 ```console
-$ docker pull orientdb@sha256:e74d1d15840e164e724ee4c0d6127d705cd6257f50394b94dd40f894610a97f0
+$ docker pull orientdb@sha256:0e5e6034f806b617aea9cb6c505febfc775326732e0a33183570e3c8891529f8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1484,14 +1484,14 @@ $ docker pull orientdb@sha256:e74d1d15840e164e724ee4c0d6127d705cd6257f50394b94dd
 ### `orientdb:3.2.32` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:5e439f790b51e0fe9485311bf1828fcfc1d57d529ffe8cc60f8bee0dd7280d11
+$ docker pull orientdb@sha256:0942c6a94cc734eb6610fa18660d1260edf62d869f0d08211f43b917608a0e92
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **220.9 MB (220871799 bytes)**  
+-	Total Size: **221.5 MB (221515718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:741ee20170516ffd639ca7f286191ef76b84ccd5ccf192b549fc7f517fa24f8c`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:15be91951e83e6a8227e498c18c0543f5c25580e18c0ded70b3a30c2dd0b527e`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -1522,9 +1522,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Tue, 16 Jul 2024 16:57:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Jul 2024 16:57:57 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Tue, 16 Jul 2024 16:57:57 GMT
@@ -1574,17 +1574,17 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:10:17 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afc5f3fec6046d26f916c03e180f06f455266f8a1332a1857d9f8d8daa621bc9`  
-		Last Modified: Sat, 17 Aug 2024 01:10:17 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:908723dcdab8ae296afc2c91ee627dde55d2b71eaf2c977d43feaacc83836ad9`  
+		Last Modified: Fri, 23 Aug 2024 19:24:46 GMT  
+		Size: 2.1 KB (2130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:25dd6fccc7082fa915848b9798736b78ab709f3b488136f34bdf46a391122d48`  
+		Last Modified: Fri, 23 Aug 2024 20:03:16 GMT  
+		Size: 643.7 KB (643725 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce6fe340fba038f85a1e3179d1d537df405dce2c4fa7ff7aa04f0b8b5b70f421`  
-		Last Modified: Sat, 17 Aug 2024 02:05:33 GMT  
-		Size: 72.9 MB (72919550 bytes)  
+	-	`sha256:ded1051a96f5fd1d5acd1f8c3ad8fbff40a5fd3187dbd688da43bf01d2aa3f87`  
+		Last Modified: Fri, 23 Aug 2024 20:03:19 GMT  
+		Size: 72.9 MB (72919512 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1594,38 +1594,38 @@ CMD ["server.sh"]
 ### `orientdb:3.2.32` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:0419714afae70242f59f19cd5706a60652e47ca3205c46c8c9259fa57704449c
+$ docker pull orientdb@sha256:f059202595671523f4e71b3f3f223d87b8693ead411e641a987f7685c00effe1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3044817 bytes)**  
+-	Total Size: **3.0 MB (3044828 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad2d1b210c03422ca1c3b4a6e783ba6f08cda04b2ca78df5e8265212443e0a56`
+-	Image ID: `sha256:15de7729e3a61a913f27700bfe55bc633c63e26ad0488fbf6cf37730077469f7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fbc361bd25d7d32c97ed323c59734f8932c21eeb53cbb83b85f6a76cb97f2460`  
-		Last Modified: Sat, 17 Aug 2024 02:05:30 GMT  
+	-	`sha256:d8fedefccf8886bafd8ebb508b23296014596f059ec66276937cbe8cbd84a2d9`  
+		Last Modified: Fri, 23 Aug 2024 20:03:16 GMT  
 		Size: 3.0 MB (3030406 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:245953049e7fb7ad8f5057a1061b57d50f72627205c7cc862ddfb710245e112a`  
-		Last Modified: Sat, 17 Aug 2024 02:05:30 GMT  
-		Size: 14.4 KB (14411 bytes)  
+	-	`sha256:fd809d4a406af4c1bf72b715c9c465fd7bd146bed431756c221227c4c4085129`  
+		Last Modified: Fri, 23 Aug 2024 20:03:16 GMT  
+		Size: 14.4 KB (14422 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:3.2.32` - linux; arm variant v7
 
 ```console
-$ docker pull orientdb@sha256:c46f3483fbe1b8b857a537773e8aeab4b1326d565095a31ea67031181b418664
+$ docker pull orientdb@sha256:4d13acf92a79765da5ac2a32b03aaf7c916cba0e5ef8856c176c74c2b900c998
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **213.0 MB (212968124 bytes)**  
+-	Total Size: **213.5 MB (213538271 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8fd311fa790f44b3a57f2af67e14ea0aa43adda42c63775e2d3186a92ae55097`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:253577ea216b7c9d0a5fb1911c767b1c1028f49e2de1dc7541e636ff630b40c5`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -1656,9 +1656,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Tue, 16 Jul 2024 16:57:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Jul 2024 16:57:57 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Tue, 16 Jul 2024 16:57:57 GMT
@@ -1708,16 +1708,16 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:36:10 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5b45a73dedc6ac57b88973dd794ed69ac2f20a32064454f4998e9bd9dadda6a`  
-		Last Modified: Sat, 17 Aug 2024 01:36:11 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:b611d2ff1d07aefe83c1a30b90580e162fed21b9ebe372a491cd6adec7f655a4`  
+		Last Modified: Fri, 23 Aug 2024 18:59:03 GMT  
+		Size: 2.1 KB (2130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:db752149988dbb0bca8c7f9ab95acf57b926b0f30e51fa29ea79f12934d9debc`  
+		Last Modified: Fri, 23 Aug 2024 20:31:50 GMT  
+		Size: 569.9 KB (569915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3862c536cdfb0bdc3b90686d4e0a3c3a5ae3912fce84544ed883d16af24466e`  
-		Last Modified: Sat, 17 Aug 2024 04:32:55 GMT  
+	-	`sha256:1a7552b71e5b008200b23f6a34126b7db351636d11655681c7ee478b4894d7d2`  
+		Last Modified: Fri, 23 Aug 2024 20:31:52 GMT  
 		Size: 72.9 MB (72919551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -1728,38 +1728,38 @@ CMD ["server.sh"]
 ### `orientdb:3.2.32` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:6752ffa5a914ee42eae1208c85eb8a7ae96e9d1d9aeefd0c0f40f936dc5fe46a
+$ docker pull orientdb@sha256:004b17eee16d421e8a903a8f0095fb9fececfd020a4e70892d1467fdb7cae746
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3047599 bytes)**  
+-	Total Size: **3.0 MB (3047611 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3439d7f0b22dbd9c709cf70ed37547763ce8b6aee1900e4c8fe5a5d72a2ce6c`
+-	Image ID: `sha256:6c780385913d0c53b1ea1cf4e1ee6753a02f3359f3c26b5a89da711b11b55d14`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:36fda9220fb86585173b08786e05baa9104b7f44f9938134d4aa19fca44bf1da`  
-		Last Modified: Sat, 17 Aug 2024 04:32:53 GMT  
+	-	`sha256:71f208d0557a8fb73065a434075a49593e44770e99a3ceb658824f3edd49fff6`  
+		Last Modified: Fri, 23 Aug 2024 20:31:50 GMT  
 		Size: 3.0 MB (3033117 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:60ecbc57376dbd42cd4ffd1a49f15f89e17cfcbd0bc15731f73ea8b22f0dd225`  
-		Last Modified: Sat, 17 Aug 2024 04:32:52 GMT  
-		Size: 14.5 KB (14482 bytes)  
+	-	`sha256:612ae5f8c566e3d8e58f4f2a868af3e703677c5cd62d07352424f8b1cfdc1f42`  
+		Last Modified: Fri, 23 Aug 2024 20:31:50 GMT  
+		Size: 14.5 KB (14494 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:3.2.32` - linux; arm64 variant v8
 
 ```console
-$ docker pull orientdb@sha256:45b03ec00b9de36f8651e91c68c052eb028b41d87e0c0a1c559bff3ff41e0a25
+$ docker pull orientdb@sha256:db9668dd5521ff999911599e44645f8e60d9708d627a4932140c5887638197da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **219.4 MB (219360509 bytes)**  
+-	Total Size: **220.0 MB (219999602 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d35e36756b4885d5715e7a23da067500cd1fa6bc8e0a5f9bfa3cd577926cd745`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:07749479594ddf73ac4fed4d12ec202b93ea82d849ce014e19127617916c0416`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -1790,9 +1790,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Tue, 16 Jul 2024 16:57:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Jul 2024 16:57:57 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Tue, 16 Jul 2024 16:57:57 GMT
@@ -1842,17 +1842,17 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:33:25 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dd75ffbbc9e8eee9e198bb7d1025c93ea1d3b1669f3c950b9a5072d71f4e61c`  
-		Last Modified: Sat, 17 Aug 2024 01:33:24 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:ed8f01f034694f1dcbd5ebdbcf8074eb868fa7fd9c7c2f9df0ed44eae52141d4`  
+		Last Modified: Fri, 23 Aug 2024 19:42:46 GMT  
+		Size: 2.1 KB (2131 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:f1e9d9210fa7eebc88690f9767308e36b3818af754284ff053e6504949dcf159`  
+		Last Modified: Fri, 23 Aug 2024 22:53:16 GMT  
+		Size: 638.9 KB (638874 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c290b2ef321d7df70c8fa35e4cc4fdd4abba1b53423e8c67207dedae087be265`  
-		Last Modified: Sat, 17 Aug 2024 08:04:32 GMT  
-		Size: 72.9 MB (72919549 bytes)  
+	-	`sha256:0d9a58019699db8c2ab094e152b96e40d585f205710f7e9206d5077804500345`  
+		Last Modified: Fri, 23 Aug 2024 22:53:19 GMT  
+		Size: 72.9 MB (72919535 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1862,31 +1862,31 @@ CMD ["server.sh"]
 ### `orientdb:3.2.32` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:6450e654c96f0ca9fdf8745b80d2c2fbf9dfba6d5d8817c5ffac0987ca131bce
+$ docker pull orientdb@sha256:e6fe291c4aad740f676b535d14ad867fd18395cfb60c905817ca890f9ef1b121
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3046188 bytes)**  
+-	Total Size: **3.0 MB (3046200 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:99eff4976a6edd5b9b742562856a0fb099a3e74f4e3fa17de01a9eb257164a07`
+-	Image ID: `sha256:4b37cce08a8b8b148c9071218eca0b4e3deaa37f4c6174eb4575e748848bd762`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:063d20a56eb9a4b2c55d1d1b6abce56c8dbfd721691c7346ad859e563e25078c`  
-		Last Modified: Sat, 17 Aug 2024 08:04:30 GMT  
+	-	`sha256:19d856ab84c982927d99167f6150ed3d334730c480dda881225307dd507ef88e`  
+		Last Modified: Fri, 23 Aug 2024 22:53:17 GMT  
 		Size: 3.0 MB (3031479 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:83746e1b64aa1c82792c6726ea1f52c09c1c5b61350ce5be9f8244b19408703f`  
-		Last Modified: Sat, 17 Aug 2024 08:04:29 GMT  
-		Size: 14.7 KB (14709 bytes)  
+	-	`sha256:04f6b2712ca8ffe4f37b74ad2690023d358a74d46da1e4a1b2801115dea3734c`  
+		Last Modified: Fri, 23 Aug 2024 22:53:16 GMT  
+		Size: 14.7 KB (14721 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `orientdb:3.2.32-tp3`
 
 ```console
-$ docker pull orientdb@sha256:5d5a067fa3f6d788fc848d5fe2e08e54cdbf80416c662ac8cad8c1e18dc387ed
+$ docker pull orientdb@sha256:d363a42f6db26e198dc3993fcaae0e09dd9c31514d2b5cf1c10c5826b6f35390
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1901,14 +1901,14 @@ $ docker pull orientdb@sha256:5d5a067fa3f6d788fc848d5fe2e08e54cdbf80416c662ac8ca
 ### `orientdb:3.2.32-tp3` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:30aef6d3c339166575cccd243f2705a0216fd58dd0b5993e043faaa5d86dfbbd
+$ docker pull orientdb@sha256:ac3915a2888089cce0c481f3088e67999039aee240183eb4cc9d9c20f96efbb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.8 MB (252799413 bytes)**  
+-	Total Size: **253.4 MB (253443409 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1efde5c557d760c9bdaed27e86898094214be639c297fa16e58769009567324`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:a2447a15f5a31bdb374321dfca48e1d3887f063e6e0d92ae7d7da92dbeec4740`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -1939,9 +1939,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Tue, 16 Jul 2024 16:57:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Jul 2024 16:57:57 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Tue, 16 Jul 2024 16:57:57 GMT
@@ -1995,21 +1995,21 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:10:17 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afc5f3fec6046d26f916c03e180f06f455266f8a1332a1857d9f8d8daa621bc9`  
-		Last Modified: Sat, 17 Aug 2024 01:10:17 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:908723dcdab8ae296afc2c91ee627dde55d2b71eaf2c977d43feaacc83836ad9`  
+		Last Modified: Fri, 23 Aug 2024 19:24:46 GMT  
+		Size: 2.1 KB (2130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:392f9a1df9d460c2064e58604de6793bb7bfa5d0f6ee8e50934b6da60cc93be8`  
+		Last Modified: Fri, 23 Aug 2024 20:03:10 GMT  
+		Size: 643.7 KB (643726 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3a9086632f7c724a3e8b82618028527657e1fa59761d1d1e994a799de782a3e`  
-		Last Modified: Sat, 17 Aug 2024 02:01:57 GMT  
-		Size: 104.8 MB (104845844 bytes)  
+	-	`sha256:cf4c5bcb88a503a7ff1b2148d1bb2dcfdd09b95a01edc2d941428582d8cb7d3f`  
+		Last Modified: Fri, 23 Aug 2024 20:03:12 GMT  
+		Size: 104.8 MB (104845885 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c35606fc0d90dd261572ef06a09092c51e2fc8763a17930a42f13b381211c8f2`  
-		Last Modified: Sat, 17 Aug 2024 02:01:55 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:a3f55c65feb1f08838d6cb45a41c6fc963ab898d6057a1ec12a10428f097b824`  
+		Last Modified: Fri, 23 Aug 2024 20:03:10 GMT  
+		Size: 1.3 KB (1317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -2019,38 +2019,38 @@ CMD ["server.sh"]
 ### `orientdb:3.2.32-tp3` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:5d67b44d658c7b3c728f325167884873697bdead150f7b1d2c6b8106776072f6
+$ docker pull orientdb@sha256:dceaea49b497f01dbb8859737395975fc47b67700ad197ae76f6a1f9112d214f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3170125 bytes)**  
+-	Total Size: **3.2 MB (3170141 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f2eb1bc44f69f1f48300d0a17f99fba385bccb923649b952ee72cc4dc96cbae`
+-	Image ID: `sha256:3bb4ea84bbe99ef38072d916989ac640c863152c2bcd0df5acfcc0544e8457a7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e42086bd87fe0a6d28dfe18e9655ba3c81bc05bec389631ce01c30cf7dd7383c`  
-		Last Modified: Sat, 17 Aug 2024 02:01:55 GMT  
+	-	`sha256:4023227687a6062825cfe5581d2b340031676f026cfa2444f1f835a930a3e1d9`  
+		Last Modified: Fri, 23 Aug 2024 20:03:10 GMT  
 		Size: 3.2 MB (3153351 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a8cd8ebd3591a5773ead1ed3de8c986c08b517c195812c15eb6adb74a230a380`  
-		Last Modified: Sat, 17 Aug 2024 02:01:55 GMT  
-		Size: 16.8 KB (16774 bytes)  
+	-	`sha256:bc8552dcaf454ddde2d4179c45a9e46efeacbcbd0132dceed4070daad6642ea6`  
+		Last Modified: Fri, 23 Aug 2024 20:03:10 GMT  
+		Size: 16.8 KB (16790 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:3.2.32-tp3` - linux; arm variant v7
 
 ```console
-$ docker pull orientdb@sha256:6631d3e8c18b116081b2c9023ce530e9de05bc90486a638e9e20fbd7d230c6a8
+$ docker pull orientdb@sha256:223b2cd447cfce9e16ecd599a8e0a5456f1fafda5e762dd2c5f99e0ddfe90b65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **244.9 MB (244895766 bytes)**  
+-	Total Size: **245.5 MB (245465888 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a85a86ddc57081aaa6e6147abf8fc9ccbba2c5e056594f70e0d686d2559f8ff`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:35f67d03aadb0ab293bf9bfa5aa3dfb03159551539c979e2001c4a33bbb14521`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -2081,9 +2081,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Tue, 16 Jul 2024 16:57:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Jul 2024 16:57:57 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Tue, 16 Jul 2024 16:57:57 GMT
@@ -2137,21 +2137,21 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:36:10 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5b45a73dedc6ac57b88973dd794ed69ac2f20a32064454f4998e9bd9dadda6a`  
-		Last Modified: Sat, 17 Aug 2024 01:36:11 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:b611d2ff1d07aefe83c1a30b90580e162fed21b9ebe372a491cd6adec7f655a4`  
+		Last Modified: Fri, 23 Aug 2024 18:59:03 GMT  
+		Size: 2.1 KB (2130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:911e150cd376bd59107b95a726bd046d63d60a1d563f0855c69fe50df864b5ef`  
+		Last Modified: Fri, 23 Aug 2024 20:32:42 GMT  
+		Size: 569.9 KB (569884 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:943500ac4cb694ba61333a5dac17e0b3a3ebc6cd8a21e04d74c5111d581a6a0d`  
-		Last Modified: Sat, 17 Aug 2024 04:33:51 GMT  
-		Size: 104.8 MB (104845876 bytes)  
+	-	`sha256:ca2354e0f1c9cddb0fb8ec8690bbaeffb203e0ac0fb3975655ae59e32d43cc16`  
+		Last Modified: Fri, 23 Aug 2024 20:32:45 GMT  
+		Size: 104.8 MB (104845880 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03135270490426a7126cfd4d5ba003e2de306f41904c3351814d9a97ca2da239`  
-		Last Modified: Sat, 17 Aug 2024 04:33:48 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:317f5f332105f08961eaf54af6c9c8054d70ef5fd0468bc6c367dc7ac6629fad`  
+		Last Modified: Fri, 23 Aug 2024 20:32:42 GMT  
+		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -2161,38 +2161,38 @@ CMD ["server.sh"]
 ### `orientdb:3.2.32-tp3` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:567e1597df058ff939afb70d6e9b6d8c64a903d78469ce8f8792f0b9915421be
+$ docker pull orientdb@sha256:e8e319b00b28aa33a552d8f210fbb6585824ba3f91845a46aaf807f3fe0734af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3172890 bytes)**  
+-	Total Size: **3.2 MB (3172906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc67a3e73ddb48f21240ffff1038dafcffd8d7ac923264fbc57db55b66f06e2e`
+-	Image ID: `sha256:86b1b7af61b4240f4651fec4bfb4745f687491c67bb7f5ec3bcfef444710f67d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3e690a2f65dade06707dca2233e5509bed67ebcb786bcbc4e6bb6b19c0582f1c`  
-		Last Modified: Sat, 17 Aug 2024 04:33:48 GMT  
+	-	`sha256:5bcecce1b8b4be4540fc079d466af76d2185237621c017878a11e0305739af42`  
+		Last Modified: Fri, 23 Aug 2024 20:32:42 GMT  
 		Size: 3.2 MB (3156054 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:32576ff67c2cb323e663381a231c3772b80281253a98613efe09f9a43d07b91b`  
-		Last Modified: Sat, 17 Aug 2024 04:33:48 GMT  
-		Size: 16.8 KB (16836 bytes)  
+	-	`sha256:13a8fdea0433f729715de730c44e762a4481945ac5750d0728f32441805b7350`  
+		Last Modified: Fri, 23 Aug 2024 20:32:42 GMT  
+		Size: 16.9 KB (16852 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:3.2.32-tp3` - linux; arm64 variant v8
 
 ```console
-$ docker pull orientdb@sha256:1bfa2f83428a4ce209579b0bf4e3f324fcbeb92fbfc69276b5c5750901f526d0
+$ docker pull orientdb@sha256:14a2915212aa2c410dce408da1412276b8146450eff8236a00aa8007abddf92c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.3 MB (251288100 bytes)**  
+-	Total Size: **251.9 MB (251927219 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad770bd5b443a600747a5e4fa60cd4e574a114349ed78baaaddd0bc9c151ac67`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:06104287a7f670c4603ba0c68e4b20d26f054e28aed5ec0311f6649bea531552`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -2223,9 +2223,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Tue, 16 Jul 2024 16:57:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Jul 2024 16:57:57 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Tue, 16 Jul 2024 16:57:57 GMT
@@ -2279,21 +2279,21 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:33:25 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dd75ffbbc9e8eee9e198bb7d1025c93ea1d3b1669f3c950b9a5072d71f4e61c`  
-		Last Modified: Sat, 17 Aug 2024 01:33:24 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:ed8f01f034694f1dcbd5ebdbcf8074eb868fa7fd9c7c2f9df0ed44eae52141d4`  
+		Last Modified: Fri, 23 Aug 2024 19:42:46 GMT  
+		Size: 2.1 KB (2131 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:2aa697e6e44771d906ee472f4df19bf206d406e42b42d1f52990469426578d00`  
+		Last Modified: Fri, 23 Aug 2024 22:53:58 GMT  
+		Size: 638.9 KB (638859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:606824d4fac046ecebaceaf149e5e57fb44f82a7df9407d37c0c9a0ecb51ff32`  
-		Last Modified: Sat, 17 Aug 2024 08:05:10 GMT  
-		Size: 104.8 MB (104845821 bytes)  
+	-	`sha256:3b0c4e69ada8326ec822053d692b7358402e065b8450a00d502bb5c63b2a00c1`  
+		Last Modified: Fri, 23 Aug 2024 22:54:01 GMT  
+		Size: 104.8 MB (104845847 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c20e7759d0d14486e75f30ad3f3bd20b2b5e7739dda687e3e334fd1d4c3ffa0e`  
-		Last Modified: Sat, 17 Aug 2024 08:05:07 GMT  
-		Size: 1.3 KB (1319 bytes)  
+	-	`sha256:de70ed113e340f39d72a4568dcd42ba52fa65d43cf3f3a9f2325e3cc7fd0ec1b`  
+		Last Modified: Fri, 23 Aug 2024 22:53:58 GMT  
+		Size: 1.3 KB (1320 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -2303,31 +2303,31 @@ CMD ["server.sh"]
 ### `orientdb:3.2.32-tp3` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:b83711736b43c990e006d41fd4e638f299033a86a94eed4e33ef541fc315fac5
+$ docker pull orientdb@sha256:777bb944608b98992910d6e7d5e315322f7394bc8348077a6449a279544c3e11
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3171472 bytes)**  
+-	Total Size: **3.2 MB (3171487 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6cbca411adab8db70568814004c47cc499e07c820031bcc7816491256cc0e840`
+-	Image ID: `sha256:59b21f0809ec6170add1513bd73f3e36e2887137b4178a7483905414c6706150`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a4a3002fa6b0ccf18659ba665f239040305ec3d7a2072bd6dd79a553c0385c00`  
-		Last Modified: Sat, 17 Aug 2024 08:05:07 GMT  
+	-	`sha256:1278ac5c34934eaceda5f8f72bbbf7f88d462045d128847031634aed332c26b8`  
+		Last Modified: Fri, 23 Aug 2024 22:53:58 GMT  
 		Size: 3.2 MB (3154412 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eb7e3991cdf799450d6cb0dd31d5f1cf929123b9bd1ebe7b02e3b13949765ee9`  
-		Last Modified: Sat, 17 Aug 2024 08:05:07 GMT  
-		Size: 17.1 KB (17060 bytes)  
+	-	`sha256:85ce1f6a0375f11de60a5acb565d091bc67d05729243411d8fa4981f87af0589`  
+		Last Modified: Fri, 23 Aug 2024 22:53:58 GMT  
+		Size: 17.1 KB (17075 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `orientdb:latest`
 
 ```console
-$ docker pull orientdb@sha256:e74d1d15840e164e724ee4c0d6127d705cd6257f50394b94dd40f894610a97f0
+$ docker pull orientdb@sha256:0e5e6034f806b617aea9cb6c505febfc775326732e0a33183570e3c8891529f8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2342,14 +2342,14 @@ $ docker pull orientdb@sha256:e74d1d15840e164e724ee4c0d6127d705cd6257f50394b94dd
 ### `orientdb:latest` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:5e439f790b51e0fe9485311bf1828fcfc1d57d529ffe8cc60f8bee0dd7280d11
+$ docker pull orientdb@sha256:0942c6a94cc734eb6610fa18660d1260edf62d869f0d08211f43b917608a0e92
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **220.9 MB (220871799 bytes)**  
+-	Total Size: **221.5 MB (221515718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:741ee20170516ffd639ca7f286191ef76b84ccd5ccf192b549fc7f517fa24f8c`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:15be91951e83e6a8227e498c18c0543f5c25580e18c0ded70b3a30c2dd0b527e`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -2380,9 +2380,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Tue, 16 Jul 2024 16:57:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Jul 2024 16:57:57 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Tue, 16 Jul 2024 16:57:57 GMT
@@ -2432,17 +2432,17 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:10:17 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afc5f3fec6046d26f916c03e180f06f455266f8a1332a1857d9f8d8daa621bc9`  
-		Last Modified: Sat, 17 Aug 2024 01:10:17 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:908723dcdab8ae296afc2c91ee627dde55d2b71eaf2c977d43feaacc83836ad9`  
+		Last Modified: Fri, 23 Aug 2024 19:24:46 GMT  
+		Size: 2.1 KB (2130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:25dd6fccc7082fa915848b9798736b78ab709f3b488136f34bdf46a391122d48`  
+		Last Modified: Fri, 23 Aug 2024 20:03:16 GMT  
+		Size: 643.7 KB (643725 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce6fe340fba038f85a1e3179d1d537df405dce2c4fa7ff7aa04f0b8b5b70f421`  
-		Last Modified: Sat, 17 Aug 2024 02:05:33 GMT  
-		Size: 72.9 MB (72919550 bytes)  
+	-	`sha256:ded1051a96f5fd1d5acd1f8c3ad8fbff40a5fd3187dbd688da43bf01d2aa3f87`  
+		Last Modified: Fri, 23 Aug 2024 20:03:19 GMT  
+		Size: 72.9 MB (72919512 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -2452,38 +2452,38 @@ CMD ["server.sh"]
 ### `orientdb:latest` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:0419714afae70242f59f19cd5706a60652e47ca3205c46c8c9259fa57704449c
+$ docker pull orientdb@sha256:f059202595671523f4e71b3f3f223d87b8693ead411e641a987f7685c00effe1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3044817 bytes)**  
+-	Total Size: **3.0 MB (3044828 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad2d1b210c03422ca1c3b4a6e783ba6f08cda04b2ca78df5e8265212443e0a56`
+-	Image ID: `sha256:15de7729e3a61a913f27700bfe55bc633c63e26ad0488fbf6cf37730077469f7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fbc361bd25d7d32c97ed323c59734f8932c21eeb53cbb83b85f6a76cb97f2460`  
-		Last Modified: Sat, 17 Aug 2024 02:05:30 GMT  
+	-	`sha256:d8fedefccf8886bafd8ebb508b23296014596f059ec66276937cbe8cbd84a2d9`  
+		Last Modified: Fri, 23 Aug 2024 20:03:16 GMT  
 		Size: 3.0 MB (3030406 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:245953049e7fb7ad8f5057a1061b57d50f72627205c7cc862ddfb710245e112a`  
-		Last Modified: Sat, 17 Aug 2024 02:05:30 GMT  
-		Size: 14.4 KB (14411 bytes)  
+	-	`sha256:fd809d4a406af4c1bf72b715c9c465fd7bd146bed431756c221227c4c4085129`  
+		Last Modified: Fri, 23 Aug 2024 20:03:16 GMT  
+		Size: 14.4 KB (14422 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:latest` - linux; arm variant v7
 
 ```console
-$ docker pull orientdb@sha256:c46f3483fbe1b8b857a537773e8aeab4b1326d565095a31ea67031181b418664
+$ docker pull orientdb@sha256:4d13acf92a79765da5ac2a32b03aaf7c916cba0e5ef8856c176c74c2b900c998
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **213.0 MB (212968124 bytes)**  
+-	Total Size: **213.5 MB (213538271 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8fd311fa790f44b3a57f2af67e14ea0aa43adda42c63775e2d3186a92ae55097`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:253577ea216b7c9d0a5fb1911c767b1c1028f49e2de1dc7541e636ff630b40c5`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -2514,9 +2514,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Tue, 16 Jul 2024 16:57:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Jul 2024 16:57:57 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Tue, 16 Jul 2024 16:57:57 GMT
@@ -2566,16 +2566,16 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:36:10 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5b45a73dedc6ac57b88973dd794ed69ac2f20a32064454f4998e9bd9dadda6a`  
-		Last Modified: Sat, 17 Aug 2024 01:36:11 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:b611d2ff1d07aefe83c1a30b90580e162fed21b9ebe372a491cd6adec7f655a4`  
+		Last Modified: Fri, 23 Aug 2024 18:59:03 GMT  
+		Size: 2.1 KB (2130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:db752149988dbb0bca8c7f9ab95acf57b926b0f30e51fa29ea79f12934d9debc`  
+		Last Modified: Fri, 23 Aug 2024 20:31:50 GMT  
+		Size: 569.9 KB (569915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3862c536cdfb0bdc3b90686d4e0a3c3a5ae3912fce84544ed883d16af24466e`  
-		Last Modified: Sat, 17 Aug 2024 04:32:55 GMT  
+	-	`sha256:1a7552b71e5b008200b23f6a34126b7db351636d11655681c7ee478b4894d7d2`  
+		Last Modified: Fri, 23 Aug 2024 20:31:52 GMT  
 		Size: 72.9 MB (72919551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -2586,38 +2586,38 @@ CMD ["server.sh"]
 ### `orientdb:latest` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:6752ffa5a914ee42eae1208c85eb8a7ae96e9d1d9aeefd0c0f40f936dc5fe46a
+$ docker pull orientdb@sha256:004b17eee16d421e8a903a8f0095fb9fececfd020a4e70892d1467fdb7cae746
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3047599 bytes)**  
+-	Total Size: **3.0 MB (3047611 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3439d7f0b22dbd9c709cf70ed37547763ce8b6aee1900e4c8fe5a5d72a2ce6c`
+-	Image ID: `sha256:6c780385913d0c53b1ea1cf4e1ee6753a02f3359f3c26b5a89da711b11b55d14`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:36fda9220fb86585173b08786e05baa9104b7f44f9938134d4aa19fca44bf1da`  
-		Last Modified: Sat, 17 Aug 2024 04:32:53 GMT  
+	-	`sha256:71f208d0557a8fb73065a434075a49593e44770e99a3ceb658824f3edd49fff6`  
+		Last Modified: Fri, 23 Aug 2024 20:31:50 GMT  
 		Size: 3.0 MB (3033117 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:60ecbc57376dbd42cd4ffd1a49f15f89e17cfcbd0bc15731f73ea8b22f0dd225`  
-		Last Modified: Sat, 17 Aug 2024 04:32:52 GMT  
-		Size: 14.5 KB (14482 bytes)  
+	-	`sha256:612ae5f8c566e3d8e58f4f2a868af3e703677c5cd62d07352424f8b1cfdc1f42`  
+		Last Modified: Fri, 23 Aug 2024 20:31:50 GMT  
+		Size: 14.5 KB (14494 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull orientdb@sha256:45b03ec00b9de36f8651e91c68c052eb028b41d87e0c0a1c559bff3ff41e0a25
+$ docker pull orientdb@sha256:db9668dd5521ff999911599e44645f8e60d9708d627a4932140c5887638197da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **219.4 MB (219360509 bytes)**  
+-	Total Size: **220.0 MB (219999602 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d35e36756b4885d5715e7a23da067500cd1fa6bc8e0a5f9bfa3cd577926cd745`
--	Entrypoint: `["\/bin\/bash","\/__cacert_entrypoint.sh"]`
+-	Image ID: `sha256:07749479594ddf73ac4fed4d12ec202b93ea82d849ce014e19127617916c0416`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -2648,9 +2648,9 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 # Tue, 16 Jul 2024 16:57:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-COPY entrypoint.sh /__cacert_entrypoint.sh # buildkit
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 16 Jul 2024 16:57:57 GMT
-ENTRYPOINT ["/bin/bash" "/__cacert_entrypoint.sh"]
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 16 Jul 2024 16:57:57 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Tue, 16 Jul 2024 16:57:57 GMT
@@ -2700,17 +2700,17 @@ CMD ["server.sh"]
 		Last Modified: Sat, 17 Aug 2024 01:33:25 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dd75ffbbc9e8eee9e198bb7d1025c93ea1d3b1669f3c950b9a5072d71f4e61c`  
-		Last Modified: Sat, 17 Aug 2024 01:33:24 GMT  
-		Size: 1.9 KB (1866 bytes)  
+	-	`sha256:ed8f01f034694f1dcbd5ebdbcf8074eb868fa7fd9c7c2f9df0ed44eae52141d4`  
+		Last Modified: Fri, 23 Aug 2024 19:42:46 GMT  
+		Size: 2.1 KB (2131 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:f1e9d9210fa7eebc88690f9767308e36b3818af754284ff053e6504949dcf159`  
+		Last Modified: Fri, 23 Aug 2024 22:53:16 GMT  
+		Size: 638.9 KB (638874 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c290b2ef321d7df70c8fa35e4cc4fdd4abba1b53423e8c67207dedae087be265`  
-		Last Modified: Sat, 17 Aug 2024 08:04:32 GMT  
-		Size: 72.9 MB (72919549 bytes)  
+	-	`sha256:0d9a58019699db8c2ab094e152b96e40d585f205710f7e9206d5077804500345`  
+		Last Modified: Fri, 23 Aug 2024 22:53:19 GMT  
+		Size: 72.9 MB (72919535 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -2720,23 +2720,23 @@ CMD ["server.sh"]
 ### `orientdb:latest` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:6450e654c96f0ca9fdf8745b80d2c2fbf9dfba6d5d8817c5ffac0987ca131bce
+$ docker pull orientdb@sha256:e6fe291c4aad740f676b535d14ad867fd18395cfb60c905817ca890f9ef1b121
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3046188 bytes)**  
+-	Total Size: **3.0 MB (3046200 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:99eff4976a6edd5b9b742562856a0fb099a3e74f4e3fa17de01a9eb257164a07`
+-	Image ID: `sha256:4b37cce08a8b8b148c9071218eca0b4e3deaa37f4c6174eb4575e748848bd762`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:063d20a56eb9a4b2c55d1d1b6abce56c8dbfd721691c7346ad859e563e25078c`  
-		Last Modified: Sat, 17 Aug 2024 08:04:30 GMT  
+	-	`sha256:19d856ab84c982927d99167f6150ed3d334730c480dda881225307dd507ef88e`  
+		Last Modified: Fri, 23 Aug 2024 22:53:17 GMT  
 		Size: 3.0 MB (3031479 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:83746e1b64aa1c82792c6726ea1f52c09c1c5b61350ce5be9f8244b19408703f`  
-		Last Modified: Sat, 17 Aug 2024 08:04:29 GMT  
-		Size: 14.7 KB (14709 bytes)  
+	-	`sha256:04f6b2712ca8ffe4f37b74ad2690023d358a74d46da1e4a1b2801115dea3734c`  
+		Last Modified: Fri, 23 Aug 2024 22:53:16 GMT  
+		Size: 14.7 KB (14721 bytes)  
 		MIME: application/vnd.in-toto+json
