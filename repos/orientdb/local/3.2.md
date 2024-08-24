@@ -2,12 +2,12 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:741ee20170516ffd639ca7f286191ef76b84ccd5ccf192b549fc7f517fa24f8c`
+- Image ID: `sha256:15be91951e83e6a8227e498c18c0543f5c25580e18c0ded70b3a30c2dd0b527e`
 - Created: `2024-07-16T16:57:57Z`
-- Virtual Size: ~ 424.46 Mb  
+- Virtual Size: ~ 426.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/bin/bash","/__cacert_entrypoint.sh"]`
+- Entrypoint: `["/__cacert_entrypoint.sh"]`
 - Command: `["server.sh"]`
 - Environment:
   - `PATH=/orientdb/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
