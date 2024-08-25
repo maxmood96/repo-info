@@ -2,12 +2,12 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:51c9cb5fd89e012326f315f74fc22f3966c1d38d7533474f6adc6c780fd7e7d0`
-- Created: `2024-07-24T22:19:06Z`
+- Image ID: `sha256:f41f351ab5c08d192176061d26ee8f5854c8a3a2a662b36b28043a7cf7551ee0`
+- Created: `2024-08-22T07:58:33Z`
 - Virtual Size: ~ 224.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/bin/bash","/__cacert_entrypoint.sh"]`
+- Entrypoint: `["/__cacert_entrypoint.sh"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
