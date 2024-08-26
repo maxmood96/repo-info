@@ -5,6 +5,7 @@
 -	[`fedora:39`](#fedora39)
 -	[`fedora:40`](#fedora40)
 -	[`fedora:41`](#fedora41)
+-	[`fedora:42`](#fedora42)
 -	[`fedora:latest`](#fedoralatest)
 -	[`fedora:rawhide`](#fedorarawhide)
 
@@ -598,6 +599,10 @@ $ docker pull fedora@sha256:01e4063966d1e251ac06a94b5278dfc505a8f3fe6d1e9d06251b
 		Last Modified: Wed, 14 Aug 2024 18:01:02 GMT  
 		Size: 5.2 KB (5245 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `fedora:42`
+
+**does not exist** (yet?)
 
 ## `fedora:latest`
 
