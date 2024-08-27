@@ -359,20 +359,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 - `MIT-like`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.2.21-2.1
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.21-2.1.dsc' bash_5.2.21-2.1.dsc 2278 SHA256:97801c8f716396cd88cf8b69da3b6ea70f2b3ef6f9415df40e836d373feba536
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.21.orig.tar.xz' bash_5.2.21.orig.tar.xz 5598816 SHA256:ec21ab4efd6bd7a6e2802fbda622b81bfc43a8095d721234d4bf075797683014
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.21-2.1.debian.tar.xz' bash_5.2.21-2.1.debian.tar.xz 87940 SHA256:7452fd5408bd8415eee5e561a83d318972a584f10911818f8a8dd30e4f5acacd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/5.2.21-2.1/
 
-- https://sources.debian.net/src/bash/5.2.21-2.1/ (for browsing the source)
-- https://sources.debian.net/src/bash/5.2.21-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/5.2.21-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `binutils=2.43-2`
 
@@ -598,21 +591,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.8.0-4
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.8.0-4.dsc' curl_8.8.0-4.dsc 3225 SHA256:000f31064f1a81ee7ecb523cf7aff821211c5420985646dd21698f549f0b4bc6
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.8.0.orig.tar.gz' curl_8.8.0.orig.tar.gz 4152714 SHA256:77c0e1cd35ab5b45b659645a93b46d660224d0024f1185e8a95cdb27ae3d787d
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.8.0.orig.tar.gz.asc' curl_8.8.0.orig.tar.gz.asc 488 SHA256:200ce86394b29564df060eb6eaec7e5d107c214b30401ce920f294b3b9c107a6
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.8.0-4.debian.tar.xz' curl_8.8.0-4.debian.tar.xz 51216 SHA256:476e0b37498c1f2cfaba3e4605066e6c7e89ecd66a124f60a8dfdf85fd9ca1dc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.8.0-4/
 
-- https://sources.debian.net/src/curl/8.8.0-4/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.8.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.8.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-7`
 
@@ -1450,20 +1435,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.43.0-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.43.0-1.dsc' git_2.43.0-1.dsc 2825 SHA256:8917f913f47caeb31af3e5871ac679258fa677342db4cc3282a3ae64d6967321
-'http://deb.debian.org/debian/pool/main/g/git/git_2.43.0.orig.tar.xz' git_2.43.0.orig.tar.xz 7382996 SHA256:5446603e73d911781d259e565750dcd277a42836c8e392cac91cf137aa9b76ec
-'http://deb.debian.org/debian/pool/main/g/git/git_2.43.0-1.debian.tar.xz' git_2.43.0-1.debian.tar.xz 763384 SHA256:79c65d02aeb19fd1816830339cd48e861dc202332a2f605237a915b0819b7790
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.43.0-1/
 
-- https://sources.debian.net/src/git/1:2.43.0-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.43.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.43.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.81.1-3`
 
@@ -1836,20 +1814,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 - `UFL-1.0`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=8.3.0-2
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_8.3.0-2.dsc' harfbuzz_8.3.0-2.dsc 2892 SHA256:e4464683b4936fd977ee5b62c9a6786a9be4966d111dea6b9278922819816895
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_8.3.0.orig.tar.xz' harfbuzz_8.3.0.orig.tar.xz 19002808 SHA256:109501eaeb8bde3eadb25fab4164e993fbace29c3d775bcaa1c1e58e2f15f847
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_8.3.0-2.debian.tar.xz' harfbuzz_8.3.0-2.debian.tar.xz 19796 SHA256:36267a5c7d65ce26dee24491aa8d95af6afe860c9dc4f908d7d3a1d290f9a896
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/8.3.0-2/
 
-- https://sources.debian.net/src/harfbuzz/8.3.0-2/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/8.3.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/8.3.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hicolor-icon-theme=0.18-1`
 
@@ -2672,21 +2643,13 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.11.0-2
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.11.0-2.dsc' libgcrypt20_1.11.0-2.dsc 2819 SHA256:35ea254a40e96af7958d73e645d256233012e195dd3169dfe0a004d6432c7f24
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.11.0.orig.tar.bz2' libgcrypt20_1.11.0.orig.tar.bz2 4180345 SHA256:09120c9867ce7f2081d6aaa1775386b98c2f2f246135761aae47d81f58685b9c
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.11.0.orig.tar.bz2.asc' libgcrypt20_1.11.0.orig.tar.bz2.asc 228 SHA256:9fedf4f7bb80d5178d4e26ec2f03ba5fc44eddfc72c2e9966d7d619aeee3df2c
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.11.0-2.debian.tar.xz' libgcrypt20_1.11.0-2.debian.tar.xz 37376 SHA256:1b80362366cc39096720dbeee909cc298f621c7691ea3c7011ac52ff395c73d0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libgcrypt20/1.11.0-2/
 
-- https://sources.debian.net/src/libgcrypt20/1.11.0-2/ (for browsing the source)
-- https://sources.debian.net/src/libgcrypt20/1.11.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgcrypt20/1.11.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.49-2`
 
@@ -3127,21 +3090,13 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`, `/usr/share/doc/
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.5-2
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.5-2.dsc' libselinux_3.5-2.dsc 2662 SHA256:cd6baa8aebf37a88355291bf5cb11a311463479fed8a9f479043d1fc12de25cc
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.5.orig.tar.gz' libselinux_3.5.orig.tar.gz 211453 SHA256:9a3a3705ac13a2ccca2de6d652b6356fead10f36fb33115c185c5ccdf29eec19
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.5.orig.tar.gz.asc' libselinux_3.5.orig.tar.gz.asc 981 SHA256:fd37d441e0c08cabe9ac8f7815f52355bab2011549ec5792424fe18be9e1e015
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.5-2.debian.tar.xz' libselinux_3.5-2.debian.tar.xz 35992 SHA256:e385f14d9700187495a82e433b02b139aebe89c8ceccab5a21598dfef518b0de
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libselinux/3.5-2/
 
-- https://sources.debian.net/src/libselinux/3.5-2/ (for browsing the source)
-- https://sources.debian.net/src/libselinux/3.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libselinux/3.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsemanage=3.5-1`
 
@@ -3950,21 +3905,13 @@ Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 - `GPL-2.0-only`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mawk=1.3.4.20240622-2
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20240622-2.dsc' mawk_1.3.4.20240622-2.dsc 2969 SHA256:cc95afc29fa8e4406f42cd3887de7a10b9d70a84d70341d4e7c962438686db2f
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20240622.orig.tar.gz' mawk_1.3.4.20240622.orig.tar.gz 414190 SHA256:4e917e87a7a9fbaf76995784a4b0b5dc0dd954b977d0983030f78f6a07b1a765
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20240622.orig.tar.gz.asc' mawk_1.3.4.20240622.orig.tar.gz.asc 729 SHA256:1c66d8d18bf562d492a3b33a379c51ec80e111f8203a9546969fd7e436cb7041
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20240622-2.debian.tar.xz' mawk_1.3.4.20240622-2.debian.tar.xz 16136 SHA256:66d5c0f334acce8cd329f3807252d19c53b6b3cecbbf4d42d7c239f54f3ad296
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mawk/1.3.4.20240622-2/
 
-- https://sources.debian.net/src/mawk/1.3.4.20240622-2/ (for browsing the source)
-- https://sources.debian.net/src/mawk/1.3.4.20240622-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mawk/1.3.4.20240622-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `media-types=10.1.0`
 
@@ -4411,20 +4358,13 @@ Licenses: (parsed from: `/usr/share/doc/libldap-2.5-0/copyright`)
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.5.18+dfsg-2
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.18%2bdfsg-2.dsc' openldap_2.5.18+dfsg-2.dsc 3312 SHA256:0825ff7a10b669bce5b31199ec4a2dcf018080011a1c1020774cec734b465a45
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.18%2bdfsg.orig.tar.xz' openldap_2.5.18+dfsg.orig.tar.xz 3684372 SHA256:06c2f0ee591594ae28cfbde843a70b3e009b1f09d7f3110a1570236ac46a86b5
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.18%2bdfsg-2.debian.tar.xz' openldap_2.5.18+dfsg-2.debian.tar.xz 170128 SHA256:a3606da0c79d9f34a7cae36dac835ffd2ccdd4eda51eea1fdf6d209698fcfc13
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.5.18+dfsg-2/
 
-- https://sources.debian.net/src/openldap/2.5.18+dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.5.18+dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.5.18+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssh=1:9.8p1-2`
 
@@ -4442,21 +4382,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.8p1-2
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.8p1-2.dsc' openssh_9.8p1-2.dsc 3313 SHA256:4f1c305da97adb31c01de4a754c550aad50d83863f93044921f774e708cb0adb
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.8p1.orig.tar.gz' openssh_9.8p1.orig.tar.gz 1910393 SHA256:dd8bd002a379b5d499dfb050dd1fa9af8029e80461f4bb6c523c49973f5a39f3
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.8p1.orig.tar.gz.asc' openssh_9.8p1.orig.tar.gz.asc 833 SHA256:dbb65803565909f2c541db9b45385249cacbf021a0cd4189836bff5c3832d4b9
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.8p1-2.debian.tar.xz' openssh_9.8p1-2.debian.tar.xz 193024 SHA256:2e1d130228e3b1696dc1e8482daba720f387207a2e910ef539ed4e00d158a013
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:9.8p1-2/
 
-- https://sources.debian.net/src/openssh/1:9.8p1-2/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:9.8p1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:9.8p1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.2.2-1`
 
@@ -4473,21 +4405,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.2.2-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.2.2-1.dsc' openssl_3.2.2-1.dsc 2482 SHA256:0a8f3309b0119606f3fc23007401739504fa5505de98fc0d4c08a9cfc7b2d082
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.2.2.orig.tar.gz' openssl_3.2.2.orig.tar.gz 17744472 SHA256:197149c18d9e9f292c43f0400acaba12e5f52cacfe050f3d199277ea738ec2e7
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.2.2.orig.tar.gz.asc' openssl_3.2.2.orig.tar.gz.asc 833 SHA256:e236f8871cb18de290430e257dadd06732e7a4f8d8c6f8ffa6abb4686050ac51
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.2.2-1.debian.tar.xz' openssl_3.2.2-1.debian.tar.xz 66696 SHA256:ec28f43520ef7fa49f13581c0aaa39086c606874ed10c0e27c4cf75b3d75f9f6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.2.2-1/
 
-- https://sources.debian.net/src/openssl/3.2.2-1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.2.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.2.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.25.5-2`
 
@@ -4589,20 +4513,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.54.0+ds-1
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.54.0%2bds-1.dsc' pango1.0_1.54.0+ds-1.dsc 3514 SHA256:e29894677383fc7f080936665c98eda9fcc5de9bab9266911e18c28f1f90f2c5
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.54.0%2bds.orig.tar.xz' pango1.0_1.54.0+ds.orig.tar.xz 1745280 SHA256:2275f1160e492b442a7dfbaa10cf8aeaea83cea1ff0ee1eed9d88fa1e21aebe8
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.54.0%2bds-1.debian.tar.xz' pango1.0_1.54.0+ds-1.debian.tar.xz 43584 SHA256:99f63d649520792c5761757ab914c48b53be9fd747049ff516da7d8d257c86dc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.54.0+ds-1/
 
-- https://sources.debian.net/src/pango1.0/1.54.0+ds-1/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.54.0+ds-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.54.0+ds-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-7`
 
@@ -4946,20 +4863,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.12=3.12.4-3
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.4-3.dsc' python3.12_3.12.4-3.dsc 3761 SHA256:1da1d5ae9ee8e9e7b8476cb51e3a96d9ccf758e6cc37e6fdc96668fb40970ed2
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.4.orig.tar.xz' python3.12_3.12.4.orig.tar.xz 20659356 SHA256:f6d419a6d8743ab26700801b4908d26d97e8b986e14f95de31b32de2b0e79554
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.4-3.debian.tar.xz' python3.12_3.12.4-3.debian.tar.xz 293772 SHA256:1126e7f05d3e32cd59770ddd934a3462e1b1e8bc7e293e8b733298677db6c94d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.12/3.12.4-3/
 
-- https://sources.debian.net/src/python3.12/3.12.4-3/ (for browsing the source)
-- https://sources.debian.net/src/python3.12/3.12.4-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.12/3.12.4-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-4`
 
@@ -4979,20 +4889,13 @@ Licenses: (parsed from: `/usr/share/doc/libreadline-dev/copyright`, `/usr/share/
 - `GPL-3+`
 - `ISC-no-attribution`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris readline=8.2-4
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.2-4.dsc' readline_8.2-4.dsc 2811 SHA256:c363fc6bc293a4bbb429e89f069eefbff99c754a6e41fcd1b967db6848ea321d
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.2.orig.tar.gz' readline_8.2.orig.tar.gz 3043952 SHA256:3feb7171f16a84ee82ca18a36d7b9be109a52c04f492a053331d7d1095007c35
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.2-4.debian.tar.xz' readline_8.2-4.debian.tar.xz 33700 SHA256:dcd6d20ed594b864fc8d964f4f3a76dfbfa22193c0fad6d095bfd3fadad4b8d9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/readline/8.2-4/
 
-- https://sources.debian.net/src/readline/8.2-4/ (for browsing the source)
-- https://sources.debian.net/src/readline/8.2-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/readline/8.2-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpcsvc-proto=1.4.3-1`
 
