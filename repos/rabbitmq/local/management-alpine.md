@@ -1,10 +1,10 @@
-# `rabbitmq:3.13.6-management-alpine`
+# `rabbitmq:3.13.7-management-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5c6e0650e9598dc52ae12aee5b0c10c8e430c1d700ad7698d8d335a7003f295b`
+- Image ID: `sha256:1076874ab9eba5a256e2b1f53cad1a233e06b87da32dda134f140a7464ac7053`
 - Created: `2024-02-22T21:58:15Z`
-- Virtual Size: ~ 177.86 Mb  
+- Virtual Size: ~ 177.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `ERLANG_INSTALL_PATH_PREFIX=/opt/erlang`
   - `OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
-  - `RABBITMQ_VERSION=3.13.6`
+  - `RABBITMQ_VERSION=3.13.7`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `HOME=/var/lib/rabbitmq`
@@ -452,16 +452,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.3-r1 description:
+pyc-3.12.3-r2 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.3-r1 webpage:
+pyc-3.12.3-r2 webpage:
 https://www.python.org/
 
-pyc-3.12.3-r1 installed size:
+pyc-3.12.3-r2 installed size:
 4096 B
 
-pyc-3.12.3-r1 license:
+pyc-3.12.3-r2 license:
 PSF-2.0
 
 ```
@@ -469,16 +469,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.3-r1 description:
+python3-3.12.3-r2 description:
 High-level scripting language
 
-python3-3.12.3-r1 webpage:
+python3-3.12.3-r2 webpage:
 https://www.python.org/
 
-python3-3.12.3-r1 installed size:
+python3-3.12.3-r2 installed size:
 24 MiB
 
-python3-3.12.3-r1 license:
+python3-3.12.3-r2 license:
 PSF-2.0
 
 ```
@@ -486,16 +486,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.3-r1 description:
+python3-pyc-3.12.3-r2 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.3-r1 webpage:
+python3-pyc-3.12.3-r2 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.3-r1 installed size:
+python3-pyc-3.12.3-r2 installed size:
 4096 B
 
-python3-pyc-3.12.3-r1 license:
+python3-pyc-3.12.3-r2 license:
 PSF-2.0
 
 ```
@@ -503,16 +503,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.3-r1 description:
+python3-pycache-pyc0-3.12.3-r2 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.3-r1 webpage:
+python3-pycache-pyc0-3.12.3-r2 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.3-r1 installed size:
+python3-pycache-pyc0-3.12.3-r2 installed size:
 11 MiB
 
-python3-pycache-pyc0-3.12.3-r1 license:
+python3-pycache-pyc0-3.12.3-r2 license:
 PSF-2.0
 
 ```

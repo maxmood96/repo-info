@@ -1,10 +1,10 @@
-# `rabbitmq:3.13.6-management`
+# `rabbitmq:3.13.7-management`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7d0a5ed08a22d478e017506086bf2eba648be4d26d010fa1f8efa6d3fcc9297`
+- Image ID: `sha256:48aa08743c42bc73395496302294d8debe32228f2c9433c73a0c593a0c0500c0`
 - Created: `2024-02-22T21:58:15Z`
-- Virtual Size: ~ 250.65 Mb  
+- Virtual Size: ~ 250.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `ERLANG_INSTALL_PATH_PREFIX=/opt/erlang`
   - `OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
-  - `RABBITMQ_VERSION=3.13.6`
+  - `RABBITMQ_VERSION=3.13.7`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `HOME=/var/lib/rabbitmq`
@@ -1441,13 +1441,13 @@ $ apt-get source -qq --print-uris procps=2:3.3.17-6ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.1.debian.tar.xz' procps_3.3.17-6ubuntu2.1.debian.tar.xz 35488 SHA512:720a52d14be82aecd59e2456fbb19574c99cc5281660a36994ef4aa619c14bbec43fd30b5e949446e5db6b6bebf8003a5f173298fe8bf56ac949d61ad0225a79
 ```
 
-### `dpkg` source package: `python3-defaults=3.10.6-1~22.04`
+### `dpkg` source package: `python3-defaults=3.10.6-1~22.04.1`
 
 Binary Packages:
 
-- `libpython3-stdlib:amd64=3.10.6-1~22.04`
-- `python3=3.10.6-1~22.04`
-- `python3-minimal=3.10.6-1~22.04`
+- `libpython3-stdlib:amd64=3.10.6-1~22.04.1`
+- `python3=3.10.6-1~22.04.1`
+- `python3-minimal=3.10.6-1~22.04.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1456,9 +1456,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04
-'http://security.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.dsc' python3-defaults_3.10.6-1~22.04.dsc 2968 SHA512:1bf2e1b114f7cce5068554c0fda5a165a03caea0621c08968f7e8ab59190060c25a1da78843e5a399475b774c8e1b7f8f8b73117b977fcfc26da72bbdf907f2a
-'http://security.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.tar.gz' python3-defaults_3.10.6-1~22.04.tar.gz 145325 SHA512:4dce1fcadb47a3fbd72e489e78c6543aa4b35a0480eb4e10617b3afd223cdd244e97f79db55f2abf28367848658ae46a3cda895d3d9dcf21c530149207f080dd
+$ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.dsc' python3-defaults_3.10.6-1~22.04.1.dsc 2951 SHA512:ce4c67568f3b0fd6c8f8d2daa74351825f1595b69998dce13f82caa077729cdb83fc472a636a466e27dd1ae681035e2b11bd82f73fa33c10b400c017afd54c90
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.tar.gz' python3-defaults_3.10.6-1~22.04.1.tar.gz 145962 SHA512:c509a2a887e4b758fbfcb6173ff046a6f73bdfdde3bd89f77102a4d99c7219d8e1805b41541c6cf658fe9dd44da188e6af450d87236d863d29f06147fea26ea1
 ```
 
 ### `dpkg` source package: `python3.10=3.10.12-1~22.04.5`
