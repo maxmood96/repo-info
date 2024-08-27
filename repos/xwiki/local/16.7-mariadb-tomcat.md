@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4ff4f3194361d9f0b27d7c812c7293d9600b8bd72d20a71811dfb3f265724e7c`
-- Created: `2024-07-29T15:54:10Z`
-- Virtual Size: ~ 1.21 Gb  
+- Image ID: `sha256:f778bb28cda09ab403aab9315a73d41b72957db5cac964a54883f1e364848ca9`
+- Created: `2024-08-26T14:19:12Z`
+- Virtual Size: ~ 1.25 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -23,14 +23,14 @@
   - `TOMCAT_MAJOR=9`
   - `TOMCAT_VERSION=9.0.93`
   - `TOMCAT_SHA512=3069924eb7041ccc0f2aeceb7d8626793a1a073a5b739a840d7974a18ebeb26cc3374cc5f4a3ffc74d3b019c0cb33e3d1fe96296e6663ac75a73c1171811726d`
-  - `XWIKI_VERSION=16.6.0`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.6.0`
-  - `XWIKI_DOWNLOAD_SHA256=504e3fc3707d222d4a2be7c4e51e01242d4a7092380234d5076616d170390fe7`
-  - `MARIADB_JDBC_VERSION=3.4.0`
-  - `MARIADB_JDBC_SHA256=d83970dcda3198ca480e59b38e9e7055df09833e40d898c8ec5778a1e767f93b`
-  - `MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.4.0`
-  - `MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.4.0.jar`
-  - `MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.4.0.jar`
+  - `XWIKI_VERSION=16.7.0`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.7.0`
+  - `XWIKI_DOWNLOAD_SHA256=79f3a71d1dab6457179b7c3e780e85cc412797e3f6db845080721902377a1493`
+  - `MARIADB_JDBC_VERSION=3.4.1`
+  - `MARIADB_JDBC_SHA256=f60e4b282f1f4bdb74f0a26436ba7078a5e480b6f6702f6a7b45d9ba5e604a24`
+  - `MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.4.1`
+  - `MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.4.1.jar`
+  - `MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.4.1.jar`
 - Labels:
   - `org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki`
