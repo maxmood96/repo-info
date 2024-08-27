@@ -2,11 +2,11 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1055957849accfe0455588f743914bf0f8adb5b4531330c56d50ce826e6764af`
+- Image ID: `sha256:68e246c1b553a9c330cc29cfa6a8846af85e410abc993c2af6c22ef8584c7a43`
 - Created: `2024-08-23T06:08:20Z`
-- Virtual Size: ~ 134.01 Mb  
+- Virtual Size: ~ 190.00 Mb  
   (total size of all layers on-disk)
-- Arch: `linux`/`386`
+- Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["composer"]`
 - Environment:
@@ -37,7 +37,7 @@ File archiver with a high compression ratio
 https://7-zip.org/
 
 7zip-23.01-r0 installed size:
-1876 KiB
+1680 KiB
 
 7zip-23.01-r0 license:
 LGPL-2.0-only
@@ -105,7 +105,7 @@ apk-tools-2.14.4-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
 apk-tools-2.14.4-r0 installed size:
-288 KiB
+296 KiB
 
 apk-tools-2.14.4-r0 license:
 GPL-2.0-only
@@ -122,7 +122,7 @@ apr-1.7.4-r0 webpage:
 https://apr.apache.org/
 
 apr-1.7.4-r0 installed size:
-220 KiB
+216 KiB
 
 apr-1.7.4-r0 license:
 Apache-2.0
@@ -139,7 +139,7 @@ apr-util-1.6.3-r1 webpage:
 https://apr.apache.org/
 
 apr-util-1.6.3-r1 installed size:
-204 KiB
+196 KiB
 
 apr-util-1.6.3-r1 license:
 Apache-2.0
@@ -156,7 +156,7 @@ argon2-libs-20190702-r5 webpage:
 https://github.com/P-H-C/phc-winner-argon2
 
 argon2-libs-20190702-r5 installed size:
-60 KiB
+52 KiB
 
 argon2-libs-20190702-r5 license:
 Apache-2.0 OR CC0-1.0
@@ -173,7 +173,7 @@ bash-5.2.26-r0 webpage:
 https://www.gnu.org/software/bash/bash.html
 
 bash-5.2.26-r0 installed size:
-1384 KiB
+1364 KiB
 
 bash-5.2.26-r0 license:
 GPL-3.0-or-later
@@ -190,7 +190,7 @@ brotli-libs-1.1.0-r2 webpage:
 https://github.com/google/brotli
 
 brotli-libs-1.1.0-r2 installed size:
-936 KiB
+932 KiB
 
 brotli-libs-1.1.0-r2 license:
 MIT
@@ -207,7 +207,7 @@ busybox-1.36.1-r29 webpage:
 https://busybox.net/
 
 busybox-1.36.1-r29 installed size:
-920 KiB
+908 KiB
 
 busybox-1.36.1-r29 license:
 GPL-2.0-only
@@ -241,7 +241,7 @@ c-ares-1.28.1-r0 webpage:
 https://c-ares.org/
 
 c-ares-1.28.1-r0 installed size:
-160 KiB
+156 KiB
 
 c-ares-1.28.1-r0 license:
 MIT
@@ -258,7 +258,7 @@ ca-certificates-20240705-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
 ca-certificates-20240705-r0 installed size:
-716 KiB
+712 KiB
 
 ca-certificates-20240705-r0 license:
 MPL-2.0 AND MIT
@@ -292,7 +292,7 @@ coreutils-9.5-r1 webpage:
 https://www.gnu.org/software/coreutils/
 
 coreutils-9.5-r1 installed size:
-1092 KiB
+1036 KiB
 
 coreutils-9.5-r1 license:
 GPL-3.0-or-later
@@ -326,7 +326,7 @@ coreutils-fmt-9.5-r1 webpage:
 https://www.gnu.org/software/coreutils/
 
 coreutils-fmt-9.5-r1 installed size:
-52 KiB
+56 KiB
 
 coreutils-fmt-9.5-r1 license:
 GPL-3.0-or-later
@@ -343,7 +343,7 @@ coreutils-sha512sum-9.5-r1 webpage:
 https://www.gnu.org/software/coreutils/
 
 coreutils-sha512sum-9.5-r1 installed size:
-52 KiB
+60 KiB
 
 coreutils-sha512sum-9.5-r1 license:
 GPL-3.0-or-later
@@ -360,7 +360,7 @@ curl-8.9.0-r0 webpage:
 https://curl.se/
 
 curl-8.9.0-r0 installed size:
-244 KiB
+248 KiB
 
 curl-8.9.0-r0 license:
 curl
@@ -377,7 +377,7 @@ gdbm-1.23-r1 webpage:
 https://www.gnu.org/software/gdbm/
 
 gdbm-1.23-r1 installed size:
-88 KiB
+84 KiB
 
 gdbm-1.23-r1 license:
 GPL-3.0-or-later
@@ -394,7 +394,7 @@ git-2.45.2-r0 webpage:
 https://www.git-scm.com/
 
 git-2.45.2-r0 installed size:
-6432 KiB
+6468 KiB
 
 git-2.45.2-r0 license:
 GPL-2.0-only
@@ -428,7 +428,7 @@ gnu-libiconv-libs-1.17-r2 webpage:
 https://www.gnu.org/software/libiconv
 
 gnu-libiconv-libs-1.17-r2 installed size:
-1072 KiB
+1064 KiB
 
 gnu-libiconv-libs-1.17-r2 license:
 LGPL-2.1-or-later
@@ -462,7 +462,7 @@ libattr-2.5.2-r0 webpage:
 https://savannah.nongnu.org/projects/attr
 
 libattr-2.5.2-r0 installed size:
-28 KiB
+32 KiB
 
 libattr-2.5.2-r0 license:
 LGPL-2.1-or-later
@@ -496,7 +496,7 @@ libcrypto3-3.3.1-r3 webpage:
 https://www.openssl.org/
 
 libcrypto3-3.3.1-r3 installed size:
-3580 KiB
+4660 KiB
 
 libcrypto3-3.3.1-r3 license:
 Apache-2.0
@@ -530,7 +530,7 @@ libedit-20240517.3.1-r0 webpage:
 https://www.thrysoee.dk/editline
 
 libedit-20240517.3.1-r0 installed size:
-180 KiB
+188 KiB
 
 libedit-20240517.3.1-r0 license:
 BSD-3-Clause
@@ -554,6 +554,23 @@ MIT
 
 ```
 
+### `apk` package: `libffi`
+
+```console
+libffi-3.4.6-r0 description:
+portable, high level programming interface to various calling conventions.
+
+libffi-3.4.6-r0 webpage:
+https://sourceware.org/libffi/
+
+libffi-3.4.6-r0 installed size:
+52 KiB
+
+libffi-3.4.6-r0 license:
+MIT
+
+```
+
 ### `apk` package: `libgcc`
 
 ```console
@@ -564,7 +581,7 @@ libgcc-13.2.1_git20240309-r0 webpage:
 https://gcc.gnu.org
 
 libgcc-13.2.1_git20240309-r0 installed size:
-172 KiB
+152 KiB
 
 libgcc-13.2.1_git20240309-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
@@ -598,9 +615,26 @@ libncursesw-6.4_p20240420-r0 webpage:
 https://invisible-island.net/ncurses/
 
 libncursesw-6.4_p20240420-r0 installed size:
-340 KiB
+344 KiB
 
 libncursesw-6.4_p20240420-r0 license:
+X11
+
+```
+
+### `apk` package: `libpanelw`
+
+```console
+libpanelw-6.4_p20240420-r0 description:
+Console display library (libpanelw)
+
+libpanelw-6.4_p20240420-r0 webpage:
+https://invisible-island.net/ncurses/
+
+libpanelw-6.4_p20240420-r0 installed size:
+32 KiB
+
+libpanelw-6.4_p20240420-r0 license:
 X11
 
 ```
@@ -615,7 +649,7 @@ libpsl-0.21.5-r1 webpage:
 https://rockdaboot.github.io/libpsl
 
 libpsl-0.21.5-r1 installed size:
-84 KiB
+88 KiB
 
 libpsl-0.21.5-r1 license:
 MIT
@@ -632,7 +666,7 @@ libsasl-2.1.28-r6 webpage:
 https://www.cyrusimap.org/sasl/
 
 libsasl-2.1.28-r6 installed size:
-176 KiB
+192 KiB
 
 libsasl-2.1.28-r6 license:
 BSD-3-Clause-Attribution AND BSD-4-Clause
@@ -649,7 +683,7 @@ libsodium-1.0.19-r0 webpage:
 https://github.com/jedisct1/libsodium
 
 libsodium-1.0.19-r0 installed size:
-444 KiB
+348 KiB
 
 libsodium-1.0.19-r0 license:
 ISC
@@ -666,7 +700,7 @@ libssl3-3.3.1-r3 webpage:
 https://www.openssl.org/
 
 libssl3-3.3.1-r3 installed size:
-812 KiB
+796 KiB
 
 libssl3-3.3.1-r3 license:
 Apache-2.0
@@ -683,7 +717,7 @@ libstdc++-13.2.1_git20240309-r0 webpage:
 https://gcc.gnu.org
 
 libstdc++-13.2.1_git20240309-r0 installed size:
-2696 KiB
+2652 KiB
 
 libstdc++-13.2.1_git20240309-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
@@ -734,7 +768,7 @@ libxml2-2.12.7-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
 libxml2-2.12.7-r0 installed size:
-1060 KiB
+1088 KiB
 
 libxml2-2.12.7-r0 license:
 MIT
@@ -751,7 +785,7 @@ libzip-1.10.1-r0 webpage:
 https://libzip.org/
 
 libzip-1.10.1-r0 installed size:
-124 KiB
+112 KiB
 
 libzip-1.10.1-r0 license:
 BSD-3-Clause
@@ -768,7 +802,7 @@ lz4-libs-1.9.4-r5 webpage:
 https://github.com/lz4/lz4
 
 lz4-libs-1.9.4-r5 installed size:
-148 KiB
+144 KiB
 
 lz4-libs-1.9.4-r5 license:
 BSD-2-Clause AND GPL-2.0-only
@@ -785,10 +819,61 @@ make-4.4.1-r2 webpage:
 https://www.gnu.org/software/make
 
 make-4.4.1-r2 installed size:
-236 KiB
+244 KiB
 
 make-4.4.1-r2 license:
 GPL-3.0-or-later
+
+```
+
+### `apk` package: `mercurial`
+
+```console
+mercurial-6.7.4-r0 description:
+Scalable distributed SCM tool
+
+mercurial-6.7.4-r0 webpage:
+https://www.mercurial-scm.org/
+
+mercurial-6.7.4-r0 installed size:
+10 MiB
+
+mercurial-6.7.4-r0 license:
+GPL-2.0-or-later
+
+```
+
+### `apk` package: `mercurial-pyc`
+
+```console
+mercurial-pyc-6.7.4-r0 description:
+Precompiled Python bytecode for mercurial
+
+mercurial-pyc-6.7.4-r0 webpage:
+https://www.mercurial-scm.org/
+
+mercurial-pyc-6.7.4-r0 installed size:
+10 MiB
+
+mercurial-pyc-6.7.4-r0 license:
+GPL-2.0-or-later
+
+```
+
+### `apk` package: `mpdecimal`
+
+```console
+mpdecimal-4.0.0-r0 description:
+complete implementation of the General Decimal Arithmetic Specification
+
+mpdecimal-4.0.0-r0 webpage:
+https://www.bytereef.org/mpdecimal/index.html
+
+mpdecimal-4.0.0-r0 installed size:
+204 KiB
+
+mpdecimal-4.0.0-r0 license:
+BSD-2-Clause
 
 ```
 
@@ -802,7 +887,7 @@ musl-1.2.5-r0 webpage:
 https://musl.libc.org/
 
 musl-1.2.5-r0 installed size:
-660 KiB
+652 KiB
 
 musl-1.2.5-r0 license:
 MIT
@@ -819,7 +904,7 @@ musl-utils-1.2.5-r0 webpage:
 https://musl.libc.org/
 
 musl-utils-1.2.5-r0 installed size:
-116 KiB
+128 KiB
 
 musl-utils-1.2.5-r0 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
@@ -853,7 +938,7 @@ nghttp2-libs-1.62.1-r0 webpage:
 https://nghttp2.org
 
 nghttp2-libs-1.62.1-r0 installed size:
-156 KiB
+152 KiB
 
 nghttp2-libs-1.62.1-r0 license:
 MIT
@@ -870,7 +955,7 @@ oniguruma-6.9.9-r0 webpage:
 https://github.com/kkos/oniguruma
 
 oniguruma-6.9.9-r0 installed size:
-540 KiB
+552 KiB
 
 oniguruma-6.9.9-r0 license:
 BSD-2-Clause
@@ -887,7 +972,7 @@ openssh-client-common-9.7_p1-r4 webpage:
 https://www.openssh.com/portable.html
 
 openssh-client-common-9.7_p1-r4 installed size:
-2488 KiB
+2544 KiB
 
 openssh-client-common-9.7_p1-r4 license:
 SSH-OpenSSH
@@ -904,7 +989,7 @@ openssh-client-default-9.7_p1-r4 webpage:
 https://www.openssh.com/portable.html
 
 openssh-client-default-9.7_p1-r4 installed size:
-752 KiB
+800 KiB
 
 openssh-client-default-9.7_p1-r4 license:
 SSH-OpenSSH
@@ -921,7 +1006,7 @@ openssh-keygen-9.7_p1-r4 webpage:
 https://www.openssh.com/portable.html
 
 openssh-keygen-9.7_p1-r4 installed size:
-464 KiB
+484 KiB
 
 openssh-keygen-9.7_p1-r4 license:
 SSH-OpenSSH
@@ -938,7 +1023,7 @@ openssl-3.3.1-r3 webpage:
 https://www.openssl.org/
 
 openssl-3.3.1-r3 installed size:
-736 KiB
+784 KiB
 
 openssl-3.3.1-r3 license:
 Apache-2.0
@@ -955,7 +1040,7 @@ patch-2.7.6-r10 webpage:
 https://www.gnu.org/software/patch/patch.html
 
 patch-2.7.6-r10 installed size:
-196 KiB
+168 KiB
 
 patch-2.7.6-r10 license:
 GPL-3.0-or-later
@@ -972,10 +1057,78 @@ pcre2-10.43-r0 webpage:
 https://pcre.org/
 
 pcre2-10.43-r0 installed size:
-744 KiB
+708 KiB
 
 pcre2-10.43-r0 license:
 BSD-3-Clause
+
+```
+
+### `apk` package: `pyc`
+
+```console
+pyc-3.12.3-r2 description:
+Meta package for pulling in all -pyc packages
+
+pyc-3.12.3-r2 webpage:
+https://www.python.org/
+
+pyc-3.12.3-r2 installed size:
+4096 B
+
+pyc-3.12.3-r2 license:
+PSF-2.0
+
+```
+
+### `apk` package: `python3`
+
+```console
+python3-3.12.3-r2 description:
+High-level scripting language
+
+python3-3.12.3-r2 webpage:
+https://www.python.org/
+
+python3-3.12.3-r2 installed size:
+24 MiB
+
+python3-3.12.3-r2 license:
+PSF-2.0
+
+```
+
+### `apk` package: `python3-pyc`
+
+```console
+python3-pyc-3.12.3-r2 description:
+High-level scripting language (install .pyc cache files)
+
+python3-pyc-3.12.3-r2 webpage:
+https://www.python.org/
+
+python3-pyc-3.12.3-r2 installed size:
+4096 B
+
+python3-pyc-3.12.3-r2 license:
+PSF-2.0
+
+```
+
+### `apk` package: `python3-pycache-pyc0`
+
+```console
+python3-pycache-pyc0-3.12.3-r2 description:
+High-level scripting language (.pyc pycache files)
+
+python3-pycache-pyc0-3.12.3-r2 webpage:
+https://www.python.org/
+
+python3-pycache-pyc0-3.12.3-r2 installed size:
+11 MiB
+
+python3-pycache-pyc0-3.12.3-r2 license:
+PSF-2.0
 
 ```
 
@@ -989,7 +1142,7 @@ readline-8.2.10-r0 webpage:
 https://tiswww.cwru.edu/php/chet/readline/rltop.html
 
 readline-8.2.10-r0 installed size:
-268 KiB
+300 KiB
 
 readline-8.2.10-r0 license:
 GPL-3.0-or-later
@@ -1023,7 +1176,7 @@ serf-1.3.10-r0 webpage:
 https://serf.apache.org/
 
 serf-1.3.10-r0 installed size:
-128 KiB
+120 KiB
 
 serf-1.3.10-r0 license:
 Apache-2.0
@@ -1057,7 +1210,7 @@ sqlite-libs-3.45.3-r1 webpage:
 https://www.sqlite.org/
 
 sqlite-libs-3.45.3-r1 installed size:
-1560 KiB
+1428 KiB
 
 sqlite-libs-3.45.3-r1 license:
 blessing
@@ -1091,7 +1244,7 @@ subversion-1.14.3-r2 webpage:
 https://subversion.apache.org/
 
 subversion-1.14.3-r2 installed size:
-828 KiB
+980 KiB
 
 subversion-1.14.3-r2 license:
 Apache-2.0 AND BSD-2-Clause
@@ -1108,7 +1261,7 @@ subversion-libs-1.14.3-r2 webpage:
 https://subversion.apache.org/
 
 subversion-libs-1.14.3-r2 installed size:
-3256 KiB
+3536 KiB
 
 subversion-libs-1.14.3-r2 license:
 Apache-2.0 AND BSD-2-Clause
@@ -1125,7 +1278,7 @@ tar-1.35-r2 webpage:
 https://www.gnu.org/software/tar/
 
 tar-1.35-r2 installed size:
-420 KiB
+428 KiB
 
 tar-1.35-r2 license:
 GPL-3.0-or-later
@@ -1142,7 +1295,7 @@ tini-0.19.0-r3 webpage:
 https://github.com/krallin/tini
 
 tini-0.19.0-r3 installed size:
-32 KiB
+36 KiB
 
 tini-0.19.0-r3 license:
 MIT
@@ -1159,7 +1312,7 @@ unzip-6.0-r14 webpage:
 http://www.info-zip.org/UnZip.html
 
 unzip-6.0-r14 installed size:
-352 KiB
+328 KiB
 
 unzip-6.0-r14 license:
 custom
@@ -1193,7 +1346,7 @@ xz-5.6.2-r0 webpage:
 https://tukaani.org/xz/
 
 xz-5.6.2-r0 installed size:
-196 KiB
+184 KiB
 
 xz-5.6.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
@@ -1210,7 +1363,7 @@ xz-libs-5.6.2-r0 webpage:
 https://tukaani.org/xz/
 
 xz-libs-5.6.2-r0 installed size:
-256 KiB
+236 KiB
 
 xz-libs-5.6.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
@@ -1227,7 +1380,7 @@ zip-3.0-r12 webpage:
 http://www.info-zip.org/pub/infozip/Zip.html
 
 zip-3.0-r12 installed size:
-404 KiB
+388 KiB
 
 zip-3.0-r12 license:
 Info-ZIP
@@ -1261,7 +1414,7 @@ zstd-libs-1.5.6-r0 webpage:
 https://www.zstd.net/
 
 zstd-libs-1.5.6-r0 installed size:
-708 KiB
+716 KiB
 
 zstd-libs-1.5.6-r0 license:
 BSD-3-Clause OR GPL-2.0-or-later
