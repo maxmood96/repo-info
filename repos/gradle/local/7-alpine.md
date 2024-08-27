@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bce08356534145322232aaf090099d9a0852c0f9ac4ea95eb4a268256008b5d3`
+- Image ID: `sha256:762018a19fbda7c5b15d9ad370a13a503f7e55b9b96c8cf3f829156478fb9cf0`
 - Created: `2024-02-05T22:05:50Z`
 - Virtual Size: ~ 539.82 Mb  
   (total size of all layers on-disk)
@@ -1078,16 +1078,16 @@ BSD-3-Clause
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.3-r1 description:
+pyc-3.12.3-r2 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.3-r1 webpage:
+pyc-3.12.3-r2 webpage:
 https://www.python.org/
 
-pyc-3.12.3-r1 installed size:
+pyc-3.12.3-r2 installed size:
 4096 B
 
-pyc-3.12.3-r1 license:
+pyc-3.12.3-r2 license:
 PSF-2.0
 
 ```
@@ -1095,16 +1095,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.3-r1 description:
+python3-3.12.3-r2 description:
 High-level scripting language
 
-python3-3.12.3-r1 webpage:
+python3-3.12.3-r2 webpage:
 https://www.python.org/
 
-python3-3.12.3-r1 installed size:
+python3-3.12.3-r2 installed size:
 24 MiB
 
-python3-3.12.3-r1 license:
+python3-3.12.3-r2 license:
 PSF-2.0
 
 ```
@@ -1112,16 +1112,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.3-r1 description:
+python3-pyc-3.12.3-r2 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.3-r1 webpage:
+python3-pyc-3.12.3-r2 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.3-r1 installed size:
+python3-pyc-3.12.3-r2 installed size:
 4096 B
 
-python3-pyc-3.12.3-r1 license:
+python3-pyc-3.12.3-r2 license:
 PSF-2.0
 
 ```
@@ -1129,16 +1129,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.3-r1 description:
+python3-pycache-pyc0-3.12.3-r2 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.3-r1 webpage:
+python3-pycache-pyc0-3.12.3-r2 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.3-r1 installed size:
+python3-pycache-pyc0-3.12.3-r2 installed size:
 11 MiB
 
-python3-pycache-pyc0-3.12.3-r1 license:
+python3-pycache-pyc0-3.12.3-r2 license:
 PSF-2.0
 
 ```
@@ -1316,16 +1316,16 @@ ISC
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.1-r3 description:
+xz-libs-5.6.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.1-r3 webpage:
-https://xz.tukaani.org/xz-utils/
+xz-libs-5.6.2-r0 webpage:
+https://tukaani.org/xz/
 
-xz-libs-5.6.1-r3 installed size:
+xz-libs-5.6.2-r0 installed size:
 236 KiB
 
-xz-libs-5.6.1-r3 license:
+xz-libs-5.6.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
