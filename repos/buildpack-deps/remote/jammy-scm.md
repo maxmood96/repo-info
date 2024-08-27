@@ -1,7 +1,7 @@
 ## `buildpack-deps:jammy-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:c54ccb7d461b10a9f360ff1851c0139be628334456873c167c6c2634c5ace991
+$ docker pull buildpack-deps@sha256:c43e80c35315b693c7d14b4e9608895e28361237b35ac959ada11e533fc3660a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -200,45 +200,47 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 ### `buildpack-deps:jammy-scm` - linux; riscv64
 
 ```console
-$ docker pull buildpack-deps@sha256:a5ccff12b682b39e5f7dc28a461d3a6e0c97602ef355ee86a8f5d26fbacac710
+$ docker pull buildpack-deps@sha256:6e3db9770d82d45db88df1d36723ce265c7965fc8c6606eacd80eca91ba603e1
 ```
 
--	Docker Version: 20.10.17
+-	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.2 MB (77217783 bytes)**  
+-	Total Size: **77.1 MB (77122178 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b65796ba651e26d5caf8ea9ee7a7eb460743d2262f64952a1723cdf5006ad998`
--	Default Command: `["bash"]`
+-	Image ID: `sha256:b223cbdb8c5546ba9ed89b715ae297a96f33bb77038e2e6f8224802562fe354b`
+-	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 09 Dec 2022 01:12:29 GMT
-ADD file:f46f460af5409f8fff839ed52d7332dff314cffbb59ee3f40e898ecb6bfa21f9 in / 
-# Fri, 09 Dec 2022 01:12:30 GMT
-CMD ["bash"]
-# Fri, 09 Dec 2022 02:13:11 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 09 Dec 2022 02:13:57 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 09 Dec 2022 02:17:40 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Tue, 13 Aug 2024 09:46:18 GMT
+ARG RELEASE
+# Tue, 13 Aug 2024 09:46:18 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Tue, 13 Aug 2024 09:46:18 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Tue, 13 Aug 2024 09:46:18 GMT
+LABEL org.opencontainers.image.version=22.04
+# Tue, 13 Aug 2024 09:46:50 GMT
+ADD file:65730ebc4f5c87ad2819baf4578dff86ef70bfa877e40377f92374ad73967fb8 in / 
+# Tue, 13 Aug 2024 09:46:52 GMT
+CMD ["/bin/bash"]
+# Mon, 26 Aug 2024 23:24:29 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
+# Mon, 26 Aug 2024 23:26:40 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:7548465e3aa5fee0518ca5aefe07a54411b419ec670a320e18c9b8892b0afc0f`  
-		Last Modified: Fri, 09 Dec 2022 01:34:47 GMT  
-		Size: 27.7 MB (27749556 bytes)  
+	-	`sha256:294ed87c40f8cf1413b3239e9975c38b12851c23334c529e90fa3e66d8f9f7e4`  
+		Last Modified: Mon, 26 Aug 2024 23:46:16 GMT  
+		Size: 27.7 MB (27710015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f8927aeeaaa8d5ffc5dab8012c7f15a3a566366abe9b6fbdfc891f78b44fb79`  
-		Last Modified: Fri, 09 Dec 2022 02:54:56 GMT  
-		Size: 3.6 MB (3582497 bytes)  
+	-	`sha256:dbc9ace411d40322925822a30951a8290f84a11b834aff42c4227e9c888e6361`  
+		Last Modified: Mon, 26 Aug 2024 23:46:02 GMT  
+		Size: 7.1 MB (7100644 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0de721ca155ae5d45bbcf76f0384fdd2f108d0399f00fd1f25fdc7b8a1b2c826`  
-		Last Modified: Fri, 09 Dec 2022 02:54:55 GMT  
-		Size: 3.8 MB (3778918 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8486719ef5256a248340ac1e9bad7323c655f5c2557432c2512910ac60c0b7d4`  
-		Last Modified: Fri, 09 Dec 2022 02:57:16 GMT  
-		Size: 42.1 MB (42106812 bytes)  
+	-	`sha256:6ac83254f47c5a724e33abcf115362b29bfe72cd30c65493e9ac149d51093ee6`  
+		Last Modified: Mon, 26 Aug 2024 23:47:08 GMT  
+		Size: 42.3 MB (42311519 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:jammy-scm` - linux; s390x
