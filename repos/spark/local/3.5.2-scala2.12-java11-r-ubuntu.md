@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e6fe6ad6b4e563421b2f5befb0c02035413d25decfeb3369758ae24fc49b85d2`
+- Image ID: `sha256:3494cb4a757cea37aacef571e518d1e57cda57b7bb3186e7c215ae8616a4b364`
 - Created: `2024-08-12T09:09:28Z`
 - Virtual Size: ~ 1.32 Gb  
   (total size of all layers on-disk)
@@ -1484,18 +1484,18 @@ Licenses: (parsed from: `/usr/share/doc/libk5crypto3/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `krb5=1.17-6ubuntu4.6`
+### `dpkg` source package: `krb5=1.17-6ubuntu4.7`
 
 Binary Packages:
 
-- `krb5-user=1.17-6ubuntu4.6`
-- `libgssapi-krb5-2:amd64=1.17-6ubuntu4.6`
-- `libgssrpc4:amd64=1.17-6ubuntu4.6`
-- `libkadm5clnt-mit11:amd64=1.17-6ubuntu4.6`
-- `libkadm5srv-mit11:amd64=1.17-6ubuntu4.6`
-- `libkdb5-9:amd64=1.17-6ubuntu4.6`
-- `libkrb5-3:amd64=1.17-6ubuntu4.6`
-- `libkrb5support0:amd64=1.17-6ubuntu4.6`
+- `krb5-user=1.17-6ubuntu4.7`
+- `libgssapi-krb5-2:amd64=1.17-6ubuntu4.7`
+- `libgssrpc4:amd64=1.17-6ubuntu4.7`
+- `libkadm5clnt-mit11:amd64=1.17-6ubuntu4.7`
+- `libkadm5srv-mit11:amd64=1.17-6ubuntu4.7`
+- `libkdb5-9:amd64=1.17-6ubuntu4.7`
+- `libkrb5-3:amd64=1.17-6ubuntu4.7`
+- `libkrb5support0:amd64=1.17-6ubuntu4.7`
 
 Licenses: (parsed from: `/usr/share/doc/krb5-user/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libgssrpc4/copyright`, `/usr/share/doc/libkadm5clnt-mit11/copyright`, `/usr/share/doc/libkadm5srv-mit11/copyright`, `/usr/share/doc/libkdb5-9/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1504,10 +1504,10 @@ Licenses: (parsed from: `/usr/share/doc/krb5-user/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.17-6ubuntu4.6
-'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.6.dsc' krb5_1.17-6ubuntu4.6.dsc 3463 SHA512:eb2282cfe5a45064c969f948796ce4e25c1d06b282564472db0907e404de8a823256756d143f9cb6e00b668596ecd4dff09f7e8b8b0ce905550cfcbb09ab56e9
-'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA512:7462a578b936bd17f155a362dbb5d388e157a80a096549028be6c55400b11361c7f8a28e424fd5674801873651df4e694d536cae66728b7ae5e840e532358c52
-'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.6.debian.tar.xz' krb5_1.17-6ubuntu4.6.debian.tar.xz 153768 SHA512:8eec13f0af105789b47c56ac1ed8fd81b5fb4d22c4ef3bb5b70476e10f095a22a78ae00df5d6d888373bea7a51163fb218507b93efafaa9e73fad9257d4aedeb
+$ apt-get source -qq --print-uris krb5=1.17-6ubuntu4.7
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.7.dsc' krb5_1.17-6ubuntu4.7.dsc 3666 SHA512:5777de193825a997ecddb9058cb9e628d61797a7c2fd5d57c5daca99b016c710c6529a6e4c137f55b37252f75cb335cea719f7bfa19482fe5fed4672d2159150
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA512:7462a578b936bd17f155a362dbb5d388e157a80a096549028be6c55400b11361c7f8a28e424fd5674801873651df4e694d536cae66728b7ae5e840e532358c52
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.7.debian.tar.xz' krb5_1.17-6ubuntu4.7.debian.tar.xz 154240 SHA512:56524aa9f761809e1176de35be94cb5888afecb0a91e463cca7aafc880aff79850e22ff4360d691bf479d7e28f1a7dce9fc796bc45248c07af3e0c420e810d0a
 ```
 
 ### `dpkg` source package: `lapack=3.9.0-1build1`
@@ -3718,19 +3718,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4%2bdfsg-3ubuntu0.1.debian.tar.xz' libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz 17300 SHA512:0484891be5603d00bd57b799c708b9395fccbaa8c6c44f535377f6fa2c7ac22c01c8a3c1b45e1c1f3c30f19dc74d510626bf82067fcbfb53c39f1bcc2249affe
 ```
 
-### `dpkg` source package: `linux=5.4.0-192.212`
+### `dpkg` source package: `linux=5.4.0-193.213`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.4.0-192.212`
+- `linux-libc-dev:amd64=5.4.0-193.213`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.4.0-193.213
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-193.213.dsc' linux_5.4.0-193.213.dsc 7418 SHA512:b3b8d045a455d08f1b486656bcc852992dc9b7b5ff904039c444c06a3f4ec2de4394704c395f0ee3e6fcfdc056f8386e1591a22ad5c5be0064a8ccb92b42a833
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-193.213.diff.gz' linux_5.4.0-193.213.diff.gz 9599028 SHA512:784f43793ab9e6120a4a86ab4c0e5b069be810caf949e3199abda552c73b0ebfa7c47d1b787d5730119b5e1b92e3e13a8ea9c64342afd336af79b27fda5590cd
+```
 
 ### `dpkg` source package: `llvm-toolchain-12=1:12.0.0-3ubuntu1~20.04.5`
 

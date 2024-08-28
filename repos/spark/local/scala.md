@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bb8714d8d9b9478c3cc683af5627e65f8068f08f19d6b5785c2359067f13b67b`
+- Image ID: `sha256:ef43f7d25a6027742079734271680defa445d94faf1de1b169217f7076ec18d0`
 - Created: `2024-08-12T09:09:28Z`
 - Virtual Size: ~ 681.29 Mb  
   (total size of all layers on-disk)
@@ -980,18 +980,18 @@ Licenses: (parsed from: `/usr/share/doc/libk5crypto3/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `krb5=1.17-6ubuntu4.6`
+### `dpkg` source package: `krb5=1.17-6ubuntu4.7`
 
 Binary Packages:
 
-- `krb5-user=1.17-6ubuntu4.6`
-- `libgssapi-krb5-2:amd64=1.17-6ubuntu4.6`
-- `libgssrpc4:amd64=1.17-6ubuntu4.6`
-- `libkadm5clnt-mit11:amd64=1.17-6ubuntu4.6`
-- `libkadm5srv-mit11:amd64=1.17-6ubuntu4.6`
-- `libkdb5-9:amd64=1.17-6ubuntu4.6`
-- `libkrb5-3:amd64=1.17-6ubuntu4.6`
-- `libkrb5support0:amd64=1.17-6ubuntu4.6`
+- `krb5-user=1.17-6ubuntu4.7`
+- `libgssapi-krb5-2:amd64=1.17-6ubuntu4.7`
+- `libgssrpc4:amd64=1.17-6ubuntu4.7`
+- `libkadm5clnt-mit11:amd64=1.17-6ubuntu4.7`
+- `libkadm5srv-mit11:amd64=1.17-6ubuntu4.7`
+- `libkdb5-9:amd64=1.17-6ubuntu4.7`
+- `libkrb5-3:amd64=1.17-6ubuntu4.7`
+- `libkrb5support0:amd64=1.17-6ubuntu4.7`
 
 Licenses: (parsed from: `/usr/share/doc/krb5-user/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libgssrpc4/copyright`, `/usr/share/doc/libkadm5clnt-mit11/copyright`, `/usr/share/doc/libkadm5srv-mit11/copyright`, `/usr/share/doc/libkdb5-9/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1000,10 +1000,10 @@ Licenses: (parsed from: `/usr/share/doc/krb5-user/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.17-6ubuntu4.6
-'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.6.dsc' krb5_1.17-6ubuntu4.6.dsc 3463 SHA512:eb2282cfe5a45064c969f948796ce4e25c1d06b282564472db0907e404de8a823256756d143f9cb6e00b668596ecd4dff09f7e8b8b0ce905550cfcbb09ab56e9
-'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA512:7462a578b936bd17f155a362dbb5d388e157a80a096549028be6c55400b11361c7f8a28e424fd5674801873651df4e694d536cae66728b7ae5e840e532358c52
-'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.6.debian.tar.xz' krb5_1.17-6ubuntu4.6.debian.tar.xz 153768 SHA512:8eec13f0af105789b47c56ac1ed8fd81b5fb4d22c4ef3bb5b70476e10f095a22a78ae00df5d6d888373bea7a51163fb218507b93efafaa9e73fad9257d4aedeb
+$ apt-get source -qq --print-uris krb5=1.17-6ubuntu4.7
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.7.dsc' krb5_1.17-6ubuntu4.7.dsc 3666 SHA512:5777de193825a997ecddb9058cb9e628d61797a7c2fd5d57c5daca99b016c710c6529a6e4c137f55b37252f75cb335cea719f7bfa19482fe5fed4672d2159150
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA512:7462a578b936bd17f155a362dbb5d388e157a80a096549028be6c55400b11361c7f8a28e424fd5674801873651df4e694d536cae66728b7ae5e840e532358c52
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.7.debian.tar.xz' krb5_1.17-6ubuntu4.7.debian.tar.xz 154240 SHA512:56524aa9f761809e1176de35be94cb5888afecb0a91e463cca7aafc880aff79850e22ff4360d691bf479d7e28f1a7dce9fc796bc45248c07af3e0c420e810d0a
 ```
 
 ### `dpkg` source package: `libassuan=2.5.3-7ubuntu2`
