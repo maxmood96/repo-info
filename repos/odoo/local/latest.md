@@ -1,9 +1,9 @@
-# `odoo:17.0-20240819`
+# `odoo:17.0-20240826`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2b960ed8f0707ca1b4ffd8be8354f4df4c5c944fff02e0f1c383b609803f06cb`
-- Created: `2024-08-19T06:45:14Z`
+- Image ID: `sha256:dc5276d013373a314b125b07f1aad699a596e6b1e5f362ad1f71806382c2dbed`
+- Created: `2024-08-26T08:31:43Z`
 - Virtual Size: ~ 1.79 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -5706,11 +5706,11 @@ $ apt-get source -qq --print-uris npth=1.6-3build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3build2.debian.tar.xz' npth_1.6-3build2.debian.tar.xz 10904 SHA512:426ab3ab9e27b3701d67cde0a4c4040aa9ccac22a0266321824487fe80a118ccd6860b6fa0fb5ca3c46dfa3c20053889fbb51a2e74618065b3aff059a0216c4c
 ```
 
-### `dpkg` source package: `odoo=17.0.20240819`
+### `dpkg` source package: `odoo=17.0.20240826`
 
 Binary Packages:
 
-- `odoo=17.0.20240819`
+- `odoo=17.0.20240826`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -7066,13 +7066,13 @@ $ apt-get source -qq --print-uris python-zeep=4.1.0-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-zeep/python-zeep_4.1.0-1.debian.tar.xz' python-zeep_4.1.0-1.debian.tar.xz 11836 SHA512:0523bbcd686e6eab2eb0cdb29ba1b9403c33a9a8a48a7c17528ca6010c53e9fa4c8b5e236e449b1a4d17fc037fc3ac269676906b7bac11ab937cc4a37de65604
 ```
 
-### `dpkg` source package: `python3-defaults=3.10.6-1~22.04`
+### `dpkg` source package: `python3-defaults=3.10.6-1~22.04.1`
 
 Binary Packages:
 
-- `libpython3-stdlib:amd64=3.10.6-1~22.04`
-- `python3=3.10.6-1~22.04`
-- `python3-minimal=3.10.6-1~22.04`
+- `libpython3-stdlib:amd64=3.10.6-1~22.04.1`
+- `python3=3.10.6-1~22.04.1`
+- `python3-minimal=3.10.6-1~22.04.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7081,9 +7081,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04
-'http://security.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.dsc' python3-defaults_3.10.6-1~22.04.dsc 2968 SHA512:1bf2e1b114f7cce5068554c0fda5a165a03caea0621c08968f7e8ab59190060c25a1da78843e5a399475b774c8e1b7f8f8b73117b977fcfc26da72bbdf907f2a
-'http://security.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.tar.gz' python3-defaults_3.10.6-1~22.04.tar.gz 145325 SHA512:4dce1fcadb47a3fbd72e489e78c6543aa4b35a0480eb4e10617b3afd223cdd244e97f79db55f2abf28367848658ae46a3cda895d3d9dcf21c530149207f080dd
+$ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.dsc' python3-defaults_3.10.6-1~22.04.1.dsc 2951 SHA512:ce4c67568f3b0fd6c8f8d2daa74351825f1595b69998dce13f82caa077729cdb83fc472a636a466e27dd1ae681035e2b11bd82f73fa33c10b400c017afd54c90
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.tar.gz' python3-defaults_3.10.6-1~22.04.1.tar.gz 145962 SHA512:c509a2a887e4b758fbfcb6173ff046a6f73bdfdde3bd89f77102a4d99c7219d8e1805b41541c6cf658fe9dd44da188e6af450d87236d863d29f06147fea26ea1
 ```
 
 ### `dpkg` source package: `python3-stdlib-extensions=3.10.8-1~22.04`
