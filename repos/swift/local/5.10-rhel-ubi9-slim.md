@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8bda0bddf982835e5be64ffcf476bd9d03816b5b304a37f974b7bbb5513e7f5b`
+- Image ID: `sha256:539a21a7441c0f0344fa9f51711bbc4a421800677913f159f5e9bb040c73be55`
 - Created: `2024-06-06T15:11:32Z`
-- Virtual Size: ~ 341.95 Mb  
+- Virtual Size: ~ 341.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-07-18T15:47:19`
+  - `build-date=2024-08-19T03:00:40`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,9 +30,9 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=1181`
+  - `release=1181.1724035907`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.4-1181`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.4-1181.1724035907`
   - `vcs-ref=e309397d02fc53f7fa99db1371b8700eb49f268f`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -112,7 +112,7 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `curl-minimal-7.76.1-29.el9_4.x86_64`
+### `rpm` package: `curl-minimal-7.76.1-29.el9_4.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -436,7 +436,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libcurl-minimal-7.76.1-29.el9_4.x86_64`
+### `rpm` package: `libcurl-minimal-7.76.1-29.el9_4.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -934,13 +934,13 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-setuptools-53.0.0-12.el9.noarch`
+### `rpm` package: `python3-setuptools-53.0.0-12.el9_4.1.noarch`
 
 Licenses (from `rpm --query`): MIT and (BSD or ASL 2.0)
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-setuptools-wheel-53.0.0-12.el9.noarch`
+### `rpm` package: `python3-setuptools-wheel-53.0.0-12.el9_4.1.noarch`
 
 Licenses (from `rpm --query`): MIT and (BSD or ASL 2.0)
 
