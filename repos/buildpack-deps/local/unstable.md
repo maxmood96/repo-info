@@ -2728,20 +2728,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.18.1-1
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.18.1-1.dsc' libheif_1.18.1-1.dsc 3522 SHA256:2b6cc25a75e40990633529b1a03f95b8c31bb38bec719da20b5f0f0de8dd8083
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.18.1.orig.tar.gz' libheif_1.18.1.orig.tar.gz 1524386 SHA256:8702564b0f288707ea72b260b3bf4ba9bf7abfa7dac01353def3a86acd6bbb76
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.18.1-1.debian.tar.xz' libheif_1.18.1-1.debian.tar.xz 11088 SHA256:76b177fde5f9c2365048c6e441caa8e91298e52e3b487eb11bd4fef429e18c93
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libheif/1.18.1-1/
 
-- https://sources.debian.net/src/libheif/1.18.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.18.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.18.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.0.10-1`
 

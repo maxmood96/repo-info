@@ -2448,21 +2448,13 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pinentry=1.2.1-3
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.1-3.dsc' pinentry_1.2.1-3.dsc 3170 SHA256:679a692b8a34c68a9146869347a09164d952a4b79dd2daa6ca20a1caa6aed8e8
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.1.orig.tar.bz2' pinentry_1.2.1.orig.tar.bz2 547698 SHA256:457a185e5a85238fb945a955dc6352ab962dc8b48720b62fc9fa48c7540a4067
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.1.orig.tar.bz2.asc' pinentry_1.2.1.orig.tar.bz2.asc 390 SHA256:9f7d9c7509e4ff4161a043893d76183bd975230fcad671b643c90f78e500ba95
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.1-3.debian.tar.xz' pinentry_1.2.1-3.debian.tar.xz 18864 SHA256:7919390ebf6fdf2f8e4e05231bc1348edb119396d29d66718478775bb4c9a0ba
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pinentry/1.2.1-3/
 
-- https://sources.debian.net/src/pinentry/1.2.1-3/ (for browsing the source)
-- https://sources.debian.net/src/pinentry/1.2.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pinentry/1.2.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.4-5`
 
@@ -2726,20 +2718,13 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.15.3-2
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.15.3-2.dsc' shadow_4.15.3-2.dsc 2642 SHA256:590dd3eaec38bd6ab1ff06f44633ebd913c66f951004c4024ba2004bce32837c
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.15.3.orig.tar.xz' shadow_4.15.3.orig.tar.xz 2054548 SHA256:32303f204907eb0d6c32b7908414885be53a4caf00f149f54991ac3ce424652e
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.15.3-2.debian.tar.xz' shadow_4.15.3-2.debian.tar.xz 171112 SHA256:c1e568ca0bf83fc72c26e566e162a465480ec89e1c1f3d8d8ea865344295334e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.15.3-2/
 
-- https://sources.debian.net/src/shadow/1:4.15.3-2/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.15.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.15.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sqlite3=3.46.0-1`
 
@@ -3025,20 +3010,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.40.2-1
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2-1.dsc' util-linux_2.40.2-1.dsc 4895 SHA256:248acada7559476267ba3df897cf57c6fab8c36b8d4e0e358a407823982e20cc
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2.orig.tar.xz' util-linux_2.40.2.orig.tar.xz 8854820 SHA256:d78b37a66f5922d70edf3bdfb01a6b33d34ed3c3cafd6628203b2a2b67c8e8b3
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2-1.debian.tar.xz' util-linux_2.40.2-1.debian.tar.xz 107084 SHA256:96189569a03febed4118c89e3e8c58a2d094772db1f2913bedd885caf4b80a43
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.40.2-1/
 
-- https://sources.debian.net/src/util-linux/2.40.2-1/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.40.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.40.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.24.5-2`
 
