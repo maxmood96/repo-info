@@ -1,17 +1,17 @@
-# `pypy:2.7-7.3.16-slim`
+# `pypy:2.7-7.3.17-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f9174a19d12d3a0a44f28076cf80365bd9bd69a952827208423cd7ae55810e64`
-- Created: `2024-04-24T04:07:13Z`
-- Virtual Size: ~ 204.78 Mb  
+- Image ID: `sha256:e9e6ff0c8c70b450cee46ad43a45926468709f2f5885ffb8e1a8d134f58025ef`
+- Created: `2024-08-28T10:07:11Z`
+- Virtual Size: ~ 205.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy"]`
 - Environment:
   - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=7.3.16`
+  - `PYPY_VERSION=7.3.17`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d399b2d5218`
 
@@ -163,19 +163,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=11.1+deb11u10
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_11.1%2bdeb11u10.dsc' base-files_11.1+deb11u10.dsc 1114 SHA256:3fdaeb4de11924355688ce4c2ed18a51d5cb39ce6493caf0d49fd1e8fe129e9c
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_11.1%2bdeb11u10.tar.xz' base-files_11.1+deb11u10.tar.xz 65644 SHA256:6e997e7b2f862246227d505b9a5b9752afb4b5d80c5c2b2e74d8da04d5092d37
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/11.1+deb11u10/
 
-- https://sources.debian.net/src/base-files/11.1+deb11u10/ (for browsing the source)
-- https://sources.debian.net/src/base-files/11.1+deb11u10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/11.1+deb11u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.51`
 
@@ -650,9 +644,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glibc=2.31-13+deb11u10
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-13%2bdeb11u10.dsc' glibc_2.31-13+deb11u10.dsc 8351 SHA256:44074406fbc83225b0c498b95cc8cd50b98be4007048082ba5b07e94f3735c6e
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-13%2bdeb11u10.debian.tar.xz' glibc_2.31-13+deb11u10.debian.tar.xz 965724 SHA256:540a944da49803b9d8b5053a0390bc476688761168a1917ad1a22b6969182eaa
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u10.dsc' glibc_2.31-13+deb11u10.dsc 8351 SHA256:44074406fbc83225b0c498b95cc8cd50b98be4007048082ba5b07e94f3735c6e
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u10.debian.tar.xz' glibc_2.31-13+deb11u10.debian.tar.xz 965724 SHA256:540a944da49803b9d8b5053a0390bc476688761168a1917ad1a22b6969182eaa
 ```
 
 Other potentially useful URLs:
@@ -915,10 +909,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris krb5=1.18.3-6+deb11u5
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u5.dsc' krb5_1.18.3-6+deb11u5.dsc 3209 SHA256:36c3edb6deb63df00b02fa00c3352139a0b51f30c9f20da8041f06818f771445
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz' krb5_1.18.3.orig.tar.gz 8715312 SHA256:e61783c292b5efd9afb45c555a80dd267ac67eebabca42185362bee6c4fbd719
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz.asc' krb5_1.18.3.orig.tar.gz.asc 833 SHA256:ded19808ba7320ad0bb3ddfb5202845b2ff36a50613af7832f78dd3cb4437419
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u5.debian.tar.xz' krb5_1.18.3-6+deb11u5.debian.tar.xz 114964 SHA256:6ba4b7db260cfdefb743a10b0a6a113c2302f1000812095563c5607ba9e0201a
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3-6%2bdeb11u5.dsc' krb5_1.18.3-6+deb11u5.dsc 3209 SHA256:36c3edb6deb63df00b02fa00c3352139a0b51f30c9f20da8041f06818f771445
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3.orig.tar.gz' krb5_1.18.3.orig.tar.gz 8715312 SHA256:e61783c292b5efd9afb45c555a80dd267ac67eebabca42185362bee6c4fbd719
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3.orig.tar.gz.asc' krb5_1.18.3.orig.tar.gz.asc 833 SHA256:ded19808ba7320ad0bb3ddfb5202845b2ff36a50613af7832f78dd3cb4437419
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3-6%2bdeb11u5.debian.tar.xz' krb5_1.18.3-6+deb11u5.debian.tar.xz 114964 SHA256:6ba4b7db260cfdefb743a10b0a6a113c2302f1000812095563c5607ba9e0201a
 ```
 
 Other potentially useful URLs:
