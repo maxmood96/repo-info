@@ -1,10 +1,10 @@
-# `joomla:4.4.7-php8.2-fpm`
+# `joomla:4.4.8-php8.2-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:88fc5a74fb53ea2fbadcf599e20cc69117e051121eb9a4c63f7186440111fe2f`
-- Created: `2024-08-21T21:34:02.895763336Z`
-- Virtual Size: ~ 747.76 Mb  
+- Image ID: `sha256:0a382662057a15119d609e57ce8cc360098591d8031e4c3452e590a002a685b7`
+- Created: `2024-08-30T23:01:55.897717612Z`
+- Virtual Size: ~ 747.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,13 +17,13 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.22`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.22.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.22.tar.xz.asc`
-  - `PHP_SHA256=8566229bc88ad1f4aadc10700ab5fbcec81587c748999d985f11cf3b745462df`
+  - `PHP_VERSION=8.2.23`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.23.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.23.tar.xz.asc`
+  - `PHP_SHA256=81c5ae6ba44e262a076349ee54a2e468638a4571085d80bff37f6fd308e1d8d5`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=4.4.7`
-  - `JOOMLA_SHA512=25046be97aa2c127a2c48c267131b707d23ade00aa2833c4cf3661b5f8953d263eed2758e128744f86b833b4bb2ff910bbb2b4f37944cc81034c724a9ac8da0b`
+  - `JOOMLA_VERSION=4.4.8`
+  - `JOOMLA_SHA512=94e6dedcc24a8d9919f82046ea5cfbf425d58ee05dff6e35ac1a719fff8a82620696a0f40f211e9fbf4b19ec0a0f9ef97604faddf2c1a5e24bb87d2eaa8b82c6`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -83,11 +83,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.134/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.134/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `aom=3.6.0-1`
+### `dpkg` source package: `aom=3.6.0-1+deb12u1`
 
 Binary Packages:
 
-- `libaom3:amd64=3.6.0-1`
+- `libaom3:amd64=3.6.0-1+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libaom3/copyright`)
 
@@ -101,17 +101,17 @@ Licenses: (parsed from: `/usr/share/doc/libaom3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris aom=3.6.0-1
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.6.0-1.dsc' aom_3.6.0-1.dsc 2207 SHA256:0c3821ac951332661da78d59e81fa8e79decc7af5ba4f894e5370bf95cf46ea3
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.6.0.orig.tar.gz' aom_3.6.0.orig.tar.gz 5268170 SHA256:2ba213822cb1528b5558d6727125654e14d1b2d7505bd1fc8afa36c2e9e9f94a
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.6.0-1.debian.tar.xz' aom_3.6.0-1.debian.tar.xz 18348 SHA256:408cc4438867e7d082fb93b08c54164d3c097cca9b19e2d5eb48246b4d058ba0
+$ apt-get source -qq --print-uris aom=3.6.0-1+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/a/aom/aom_3.6.0-1%2bdeb12u1.dsc' aom_3.6.0-1+deb12u1.dsc 2239 SHA256:c3831171c8b8df404c28e9106067b3ae358ad2f2364bdebab79a4c50180f09d7
+'http://deb.debian.org/debian-security/pool/updates/main/a/aom/aom_3.6.0.orig.tar.gz' aom_3.6.0.orig.tar.gz 5268170 SHA256:2ba213822cb1528b5558d6727125654e14d1b2d7505bd1fc8afa36c2e9e9f94a
+'http://deb.debian.org/debian-security/pool/updates/main/a/aom/aom_3.6.0-1%2bdeb12u1.debian.tar.xz' aom_3.6.0-1+deb12u1.debian.tar.xz 20280 SHA256:37e3223aa36c3dfc39c85c66e018317cf9bbd2717f3de317432824ef485e1c1d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/aom/3.6.0-1/ (for browsing the source)
-- https://sources.debian.net/src/aom/3.6.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/aom/3.6.0-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/aom/3.6.0-1+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/aom/3.6.0-1+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/aom/3.6.0-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=2.6.1`
 
@@ -1346,14 +1346,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.23-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.23-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ghostscript=10.0.0~dfsg-11+deb12u4`
+### `dpkg` source package: `ghostscript=10.0.0~dfsg-11+deb12u5`
 
 Binary Packages:
 
-- `ghostscript=10.0.0~dfsg-11+deb12u4`
-- `libgs-common=10.0.0~dfsg-11+deb12u4`
-- `libgs10:amd64=10.0.0~dfsg-11+deb12u4`
-- `libgs10-common=10.0.0~dfsg-11+deb12u4`
+- `ghostscript=10.0.0~dfsg-11+deb12u5`
+- `libgs-common=10.0.0~dfsg-11+deb12u5`
+- `libgs10:amd64=10.0.0~dfsg-11+deb12u5`
+- `libgs10-common=10.0.0~dfsg-11+deb12u5`
 
 Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/libgs-common/copyright`, `/usr/share/doc/libgs10/copyright`, `/usr/share/doc/libgs10-common/copyright`)
 
@@ -1390,17 +1390,17 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ghostscript=10.0.0~dfsg-11+deb12u4
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u4.dsc' ghostscript_10.0.0~dfsg-11+deb12u4.dsc 3019 SHA256:e026b4b48ad6054b5a415423b96285996d29911c2f223fe87270e056df3699cc
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg.orig.tar.xz' ghostscript_10.0.0~dfsg.orig.tar.xz 26688456 SHA256:67a288151fd88f0d44e165429c48cc85d69b3e4d3765c95e60839a094bfb8df3
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u4.debian.tar.xz' ghostscript_10.0.0~dfsg-11+deb12u4.debian.tar.xz 91408 SHA256:a85238f34446c9be57b0cadb051556ee7cffdaca411c7ab0873351574976359d
+$ apt-get source -qq --print-uris ghostscript=10.0.0~dfsg-11+deb12u5
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u5.dsc' ghostscript_10.0.0~dfsg-11+deb12u5.dsc 3018 SHA256:b4d40810b9a50f3ea403f0c06e60faa912eca78e48ccc7ceeb526030e5bea178
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg.orig.tar.xz' ghostscript_10.0.0~dfsg.orig.tar.xz 26688456 SHA256:67a288151fd88f0d44e165429c48cc85d69b3e4d3765c95e60839a094bfb8df3
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u5.debian.tar.xz' ghostscript_10.0.0~dfsg-11+deb12u5.debian.tar.xz 96556 SHA256:39907790b3af47a77ec745c95c0aedd7795affd4ce9a186200bbbee69c1da1d2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u4/ (for browsing the source)
-- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ghostscript/10.0.0~dfsg-11+deb12u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u5/ (for browsing the source)
+- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ghostscript/10.0.0~dfsg-11+deb12u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.74.6-2+deb12u3`
 
@@ -4091,14 +4091,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python3-stdlib-extensions/3.11.2-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python3-stdlib-extensions/3.11.2-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python3.11=3.11.2-6+deb12u2`
+### `dpkg` source package: `python3.11=3.11.2-6+deb12u3`
 
 Binary Packages:
 
-- `libpython3.11-minimal:amd64=3.11.2-6+deb12u2`
-- `libpython3.11-stdlib:amd64=3.11.2-6+deb12u2`
-- `python3.11=3.11.2-6+deb12u2`
-- `python3.11-minimal=3.11.2-6+deb12u2`
+- `libpython3.11-minimal:amd64=3.11.2-6+deb12u3`
+- `libpython3.11-stdlib:amd64=3.11.2-6+deb12u3`
+- `python3.11=3.11.2-6+deb12u3`
+- `python3.11-minimal=3.11.2-6+deb12u3`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.11-minimal/copyright`, `/usr/share/doc/libpython3.11-stdlib/copyright`, `/usr/share/doc/python3.11/copyright`, `/usr/share/doc/python3.11-minimal/copyright`)
 
@@ -4123,17 +4123,17 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.11-minimal/copyright`, `/usr/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.11=3.11.2-6+deb12u2
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.2-6%2bdeb12u2.dsc' python3.11_3.11.2-6+deb12u2.dsc 3199 SHA256:b8e1d50382a30ad73843000389a3047e93ebe87b06a3afb53af4cdc30fd195f5
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.2.orig.tar.gz' python3.11_3.11.2.orig.tar.gz 26437858 SHA256:2411c74bda5bbcfcddaf4531f66d1adc73f247f529aee981b029513aefdbf849
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.2-6%2bdeb12u2.debian.tar.xz' python3.11_3.11.2-6+deb12u2.debian.tar.xz 226220 SHA256:b3f6ef17056fc1dd97cf5448f3ce2abd9624610d16f0ec81f0431cc7de700128
+$ apt-get source -qq --print-uris python3.11=3.11.2-6+deb12u3
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.11/python3.11_3.11.2-6%2bdeb12u3.dsc' python3.11_3.11.2-6+deb12u3.dsc 3643 SHA256:7e16a48aafc75f4554354482aa9d6e34500d44351d88d1d0d6adec240eeef8fc
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.11/python3.11_3.11.2.orig.tar.gz' python3.11_3.11.2.orig.tar.gz 26437858 SHA256:2411c74bda5bbcfcddaf4531f66d1adc73f247f529aee981b029513aefdbf849
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.11/python3.11_3.11.2-6%2bdeb12u3.debian.tar.xz' python3.11_3.11.2-6+deb12u3.debian.tar.xz 230596 SHA256:39f424bb3d6bbfc92409f299f75e1cda6934f7d93a5e4070a84e4914e9d3a184
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python3.11/3.11.2-6+deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/python3.11/3.11.2-6+deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.11/3.11.2-6+deb12u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python3.11/3.11.2-6+deb12u3/ (for browsing the source)
+- https://sources.debian.net/src/python3.11/3.11.2-6+deb12u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python3.11/3.11.2-6+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=3.0-2`
 
