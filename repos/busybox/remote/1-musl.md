@@ -1,17 +1,18 @@
 ## `busybox:1-musl`
 
 ```console
-$ docker pull busybox@sha256:fa6e7ee6a0bd94b0a8aff4ec83e8ac71084d0b0c39eb3780fa5c370e5e7791ce
+$ docker pull busybox@sha256:63a7d9acb2aa8a4c931e2297e31c7a0ac7aedcb62799398658b6e389fd79cab7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 11
+-	Platforms: 12
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
 	-	unknown; unknown
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
+	-	unknown; unknown
 	-	linux; 386
 	-	unknown; unknown
 	-	linux; ppc64le
@@ -130,25 +131,45 @@ RUN BusyBox 1.36.1 (musl), Alpine 3.20.0
 ### `busybox:1-musl` - linux; arm64 variant v8
 
 ```console
-$ docker pull busybox@sha256:a92b1f53f8912c7b1ecbe8c13f6182bd85812f38dbf1aaaaea46c76dae4910de
+$ docker pull busybox@sha256:3cb45b2ea885d1594b024e54eeece8dd313883d08bbb9d4f91533ab9a7f11b44
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **889.2 KB (889170 bytes)**  
+-	Total Size: **889.0 KB (888953 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:602f377556b8247830255452fe976778c89e613dcd13a7dbf1487f5b59e8c000`
+-	Image ID: `sha256:40cb22b651790b875254dae3ecefa4a710cf44fe2a1fc058ea5ebf74ba4d6d16`
 -	Default Command: `["sh"]`
 
 ```dockerfile
 # Thu, 18 May 2023 22:34:17 GMT
-RUN BusyBox 1.36.1 (musl), Alpine 3.20.0
+RUN BusyBox 1.36.1 (musl), Alpine 3.20.2
 ```
 
 -	Layers:
-	-	`sha256:376dd46564235cbee2411903332c1385d96f427f47765e5be993c13f24b85c5a`  
-		Last Modified: Mon, 03 Jun 2024 20:52:36 GMT  
-		Size: 889.2 KB (889170 bytes)  
+	-	`sha256:87cba9e5830febd06e9dc8232c842e87298d70f65e9081168cf156b6f9dea2b3`  
+		Last Modified: Sat, 31 Aug 2024 01:33:52 GMT  
+		Size: 889.0 KB (888953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `busybox:1-musl` - unknown; unknown
+
+```console
+$ docker pull busybox@sha256:c5a28329957dc884d3110e3b175684a723f3c22914178b286c8a3bc606512c88
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.9 KB (1911 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4fda389701c0d315f3ad0dc9fcee656d0fe3942da12c53288b4dad4a919723b8`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:1120923ae0d1848a15dc5126ef989a62ed835a7e5fb3bec1350ba472742265d3`  
+		Last Modified: Sat, 31 Aug 2024 01:33:52 GMT  
+		Size: 1.9 KB (1911 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ### `busybox:1-musl` - linux; 386
 
