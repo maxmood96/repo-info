@@ -2942,10 +2942,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris r-base=4.4.1-1
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.4.1-1.dsc' r-base_4.4.1-1.dsc 2939 SHA256:392708779e998676f415532c9dca25bfdea34b24bcc186d8a54d8538a9ff67ae
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.4.1.orig.tar.gz' r-base_4.4.1.orig.tar.gz 37353459 SHA256:b4cb675deaaeb7299d3b265d218cde43f192951ce5b89b7bb1a5148a36b2d94d
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.4.1-1.debian.tar.xz' r-base_4.4.1-1.debian.tar.xz 99948 SHA256:022ab8bf36e0c8148cf10298423b30f336c750a9d385652e1026726b07672c7e
+'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.4.1-1.dsc' r-base_4.4.1-1.dsc 2939 SHA256:392708779e998676f415532c9dca25bfdea34b24bcc186d8a54d8538a9ff67ae
+'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.4.1.orig.tar.gz' r-base_4.4.1.orig.tar.gz 37353459 SHA256:b4cb675deaaeb7299d3b265d218cde43f192951ce5b89b7bb1a5148a36b2d94d
+'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.4.1-1.debian.tar.xz' r-base_4.4.1-1.debian.tar.xz 99948 SHA256:022ab8bf36e0c8148cf10298423b30f336c750a9d385652e1026726b07672c7e
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/r-base/4.4.1-1/ (for browsing the source)
+- https://sources.debian.net/src/r-base/4.4.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/r-base/4.4.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-class=7.3-22-2`
 
@@ -3225,20 +3231,13 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.15.3-2
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.15.3-2.dsc' shadow_4.15.3-2.dsc 2642 SHA256:590dd3eaec38bd6ab1ff06f44633ebd913c66f951004c4024ba2004bce32837c
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.15.3.orig.tar.xz' shadow_4.15.3.orig.tar.xz 2054548 SHA256:32303f204907eb0d6c32b7908414885be53a4caf00f149f54991ac3ce424652e
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.15.3-2.debian.tar.xz' shadow_4.15.3-2.debian.tar.xz 171112 SHA256:c1e568ca0bf83fc72c26e566e162a465480ec89e1c1f3d8d8ea865344295334e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.15.3-2/
 
-- https://sources.debian.net/src/shadow/1:4.15.3-2/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.15.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.15.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `survival=3.7-0-1`
 
