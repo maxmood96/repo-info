@@ -1477,9 +1477,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glibc=2.31-13+deb11u10
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-13%2bdeb11u10.dsc' glibc_2.31-13+deb11u10.dsc 8351 SHA256:44074406fbc83225b0c498b95cc8cd50b98be4007048082ba5b07e94f3735c6e
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-13%2bdeb11u10.debian.tar.xz' glibc_2.31-13+deb11u10.debian.tar.xz 965724 SHA256:540a944da49803b9d8b5053a0390bc476688761168a1917ad1a22b6969182eaa
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u10.dsc' glibc_2.31-13+deb11u10.dsc 8351 SHA256:44074406fbc83225b0c498b95cc8cd50b98be4007048082ba5b07e94f3735c6e
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u10.debian.tar.xz' glibc_2.31-13+deb11u10.debian.tar.xz 965724 SHA256:540a944da49803b9d8b5053a0390bc476688761168a1917ad1a22b6969182eaa
 ```
 
 Other potentially useful URLs:
@@ -1899,9 +1899,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.3+deb11u3
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.3%2bdeb11u3.dsc' imagemagick_6.9.11.60+dfsg-1.3+deb11u3.dsc 5131 SHA256:c5c87b8bde9f0737ba3751d8dde5b7dede10019038690b03b11e331568cfa02e
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA256:472fb516df842ee9c819ed80099c188463b9e961303511c36ae24d0eaa8959c4
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.3%2bdeb11u3.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.3+deb11u3.debian.tar.xz 263996 SHA256:cb1f7ee1bd082f28b36b4db6a9eb9e5e04d92a5514e0aac14727f2378eb9a2ae
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.3%2bdeb11u3.dsc' imagemagick_6.9.11.60+dfsg-1.3+deb11u3.dsc 5131 SHA256:c5c87b8bde9f0737ba3751d8dde5b7dede10019038690b03b11e331568cfa02e
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA256:472fb516df842ee9c819ed80099c188463b9e961303511c36ae24d0eaa8959c4
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.3%2bdeb11u3.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.3+deb11u3.debian.tar.xz 263996 SHA256:cb1f7ee1bd082f28b36b4db6a9eb9e5e04d92a5514e0aac14727f2378eb9a2ae
 ```
 
 Other potentially useful URLs:
@@ -2038,21 +2038,13 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.18.3-6+deb11u4
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3-6%2bdeb11u4.dsc' krb5_1.18.3-6+deb11u4.dsc 3209 SHA256:6d1de6649c399ac6bb3a8d151cffbae93c4d17fafdeec5c4ae26300e5c8b5109
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3.orig.tar.gz' krb5_1.18.3.orig.tar.gz 8715312 SHA256:e61783c292b5efd9afb45c555a80dd267ac67eebabca42185362bee6c4fbd719
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3.orig.tar.gz.asc' krb5_1.18.3.orig.tar.gz.asc 833 SHA256:ded19808ba7320ad0bb3ddfb5202845b2ff36a50613af7832f78dd3cb4437419
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3-6%2bdeb11u4.debian.tar.xz' krb5_1.18.3-6+deb11u4.debian.tar.xz 109444 SHA256:9b6c8045949d6b1a108a6756ca8bf6490c5c975b30eb43c287406489e9250196
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u4/
 
-- https://sources.debian.net/src/krb5/1.18.3-6+deb11u4/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.18.3-6+deb11u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lcms2=2.12~rc1-2`
 
