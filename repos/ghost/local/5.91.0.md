@@ -1,10 +1,10 @@
-# `ghost:5.90.2`
+# `ghost:5.91.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:43457019e5ba6be6ebef8de1eaeb842c7e4f0d8eaad112c41607f418625dde8f`
-- Created: `2024-08-27T22:05:20Z`
-- Virtual Size: ~ 718.10 Mb  
+- Image ID: `sha256:a15d08379ac66dc014da7e7260c4d60f6cf1404325d11624717c26fba2081275`
+- Created: `2024-08-30T20:19:13Z`
+- Virtual Size: ~ 585.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `GHOST_CLI_VERSION=1.26.1`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
-  - `GHOST_VERSION=5.90.2`
+  - `GHOST_VERSION=5.91.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -171,19 +171,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12.4+deb12u6
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u6.dsc' base-files_12.4+deb12u6.dsc 1133 SHA256:7e7059826bd34e21b7f0fd3b78b2a2387e23a62c801ea5ee9f5dda82827ecbcd
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u6.tar.xz' base-files_12.4+deb12u6.tar.xz 66132 SHA256:1c837d1a661b11f3c8b386432ae86d87bd6126ef98e43570784d47fbecd6ad09
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/12.4+deb12u6/
 
-- https://sources.debian.net/src/base-files/12.4+deb12u6/ (for browsing the source)
-- https://sources.debian.net/src/base-files/12.4+deb12u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/12.4+deb12u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.1`
 
@@ -1698,20 +1692,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=252.26-1~deb12u2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.26-1%7edeb12u2.dsc' systemd_252.26-1~deb12u2.dsc 6618 SHA256:3d392278d93e03561f0875c61dbd83f05c4e1082ea6572fc13248f7cc8d2232a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.26.orig.tar.gz' systemd_252.26.orig.tar.gz 12128004 SHA256:050eae6163c810713d4f92e5ad607aeebcbd2946bbf8bfd8788f07f90e38e335
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.26-1%7edeb12u2.debian.tar.xz' systemd_252.26-1~deb12u2.debian.tar.xz 171184 SHA256:099d888066d506a9625bbc04cffbaa5cbe483d8cbe33e19cae5f8ea3c165f59c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/252.26-1~deb12u2/
 
-- https://sources.debian.net/src/systemd/252.26-1~deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/252.26-1~deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/252.26-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.06-4`
 
