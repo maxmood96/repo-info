@@ -342,19 +342,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12.4+deb12u6
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u6.dsc' base-files_12.4+deb12u6.dsc 1133 SHA256:7e7059826bd34e21b7f0fd3b78b2a2387e23a62c801ea5ee9f5dda82827ecbcd
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u6.tar.xz' base-files_12.4+deb12u6.tar.xz 66132 SHA256:1c837d1a661b11f3c8b386432ae86d87bd6126ef98e43570784d47fbecd6ad09
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/12.4+deb12u6/
 
-- https://sources.debian.net/src/base-files/12.4+deb12u6/ (for browsing the source)
-- https://sources.debian.net/src/base-files/12.4+deb12u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/12.4+deb12u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.1`
 
@@ -607,21 +601,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.88.1-10+deb12u6
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1-10%2bdeb12u6.dsc' curl_7.88.1-10+deb12u6.dsc 3252 SHA256:b99fda7743560442cd5cacc493f286b83dc8369b7b87691cae7927e90196cdc3
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1.orig.tar.gz' curl_7.88.1.orig.tar.gz 4343562 SHA256:cdb38b72e36bc5d33d5b8810f8018ece1baa29a8f215b4495e495ded82bbf3c7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1.orig.tar.gz.asc' curl_7.88.1.orig.tar.gz.asc 488 SHA256:7a5a55d7123149a1b357f298cf895bd0a601e3a2807005ef6c95f3752803485f
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1-10%2bdeb12u6.debian.tar.xz' curl_7.88.1-10+deb12u6.debian.tar.xz 68308 SHA256:8ab5134089702e4cebc5a3c93485ba9ed5d540146c69aadd025ccec7b0bd8718
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.88.1-10+deb12u6/
 
-- https://sources.debian.net/src/curl/7.88.1-10+deb12u6/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.88.1-10+deb12u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.88.1-10+deb12u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-10`
 
@@ -1535,10 +1521,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris krb5=1.20.1-2+deb12u2
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1-2%2bdeb12u2.dsc' krb5_1.20.1-2+deb12u2.dsc 3203 SHA256:0ce7a4e69a947c0d21cc5226fe17f85f03b5011e96171aaeba91d3629fcf4dc2
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1-2%2bdeb12u2.debian.tar.xz' krb5_1.20.1-2+deb12u2.debian.tar.xz 105728 SHA256:06caf9ae0b57afd373e4a805820c1ceff519a5029566013a5c307f5439ab8364
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-2%2bdeb12u2.dsc' krb5_1.20.1-2+deb12u2.dsc 3203 SHA256:0ce7a4e69a947c0d21cc5226fe17f85f03b5011e96171aaeba91d3629fcf4dc2
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-2%2bdeb12u2.debian.tar.xz' krb5_1.20.1-2+deb12u2.debian.tar.xz 105728 SHA256:06caf9ae0b57afd373e4a805820c1ceff519a5029566013a5c307f5439ab8364
 ```
 
 Other potentially useful URLs:
@@ -2712,21 +2698,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.13-1~deb12u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.13-1%7edeb12u1.dsc' openssl_3.0.13-1~deb12u1.dsc 2501 SHA256:a0d0583621b6650a7b0972b5857f0feeb98abb60272fc975c51a70ffeca3f0f0
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA256:88525753f79d3bec27d2fa7c66aa0b92b3aa9498dafd93d7cfa4b3780cdae313
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz.asc' openssl_3.0.13.orig.tar.gz.asc 833 SHA256:ab7d7aecc132ea07c56c5315a2b2d3ff2d02daf0eab0e1464f6245309391130a
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.13-1%7edeb12u1.debian.tar.xz' openssl_3.0.13-1~deb12u1.debian.tar.xz 69208 SHA256:36cdd056f863a01560d760df4a2ead07b3f93104355aefb3a25704a271e0fa6e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.0.13-1~deb12u1/
 
-- https://sources.debian.net/src/openssl/3.0.13-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.13-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.13-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
@@ -2966,9 +2944,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris postgresql-15=15.8-0+deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.8-0%2bdeb12u1.dsc' postgresql-15_15.8-0+deb12u1.dsc 3919 SHA256:79ec6c54824ad3653a75400593e9741fd69d2a6fa9bf73fa95785562ee25c3b0
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.8.orig.tar.bz2' postgresql-15_15.8.orig.tar.bz2 23119460 SHA256:4403515f9a69eeb3efebc98f30b8c696122bfdf895e92b3b23f5b8e769edcb6a
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.8-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.8-0+deb12u1.debian.tar.xz 26132 SHA256:7587beb629016891e3493f1458bbcc2d774012b82fb5cc40e55b53c248a9bb79
+'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.8-0%2bdeb12u1.dsc' postgresql-15_15.8-0+deb12u1.dsc 3919 SHA256:79ec6c54824ad3653a75400593e9741fd69d2a6fa9bf73fa95785562ee25c3b0
+'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.8.orig.tar.bz2' postgresql-15_15.8.orig.tar.bz2 23119460 SHA256:4403515f9a69eeb3efebc98f30b8c696122bfdf895e92b3b23f5b8e769edcb6a
+'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.8-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.8-0+deb12u1.debian.tar.xz 26132 SHA256:7587beb629016891e3493f1458bbcc2d774012b82fb5cc40e55b53c248a9bb79
 ```
 
 Other potentially useful URLs:
@@ -3240,20 +3218,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=252.26-1~deb12u2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.26-1%7edeb12u2.dsc' systemd_252.26-1~deb12u2.dsc 6618 SHA256:3d392278d93e03561f0875c61dbd83f05c4e1082ea6572fc13248f7cc8d2232a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.26.orig.tar.gz' systemd_252.26.orig.tar.gz 12128004 SHA256:050eae6163c810713d4f92e5ad607aeebcbd2946bbf8bfd8788f07f90e38e335
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.26-1%7edeb12u2.debian.tar.xz' systemd_252.26-1~deb12u2.debian.tar.xz 171184 SHA256:099d888066d506a9625bbc04cffbaa5cbe483d8cbe33e19cae5f8ea3c165f59c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/252.26-1~deb12u2/
 
-- https://sources.debian.net/src/systemd/252.26-1~deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/252.26-1~deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/252.26-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.06-4`
 
