@@ -17,6 +17,8 @@
 -	[`emqx:5.6.1`](#emqx561)
 -	[`emqx:5.7`](#emqx57)
 -	[`emqx:5.7.2`](#emqx572)
+-	[`emqx:5.8`](#emqx58)
+-	[`emqx:5.8.0`](#emqx580)
 -	[`emqx:latest`](#emqxlatest)
 
 ## `emqx:5`
@@ -2889,6 +2891,14 @@ $ docker pull emqx@sha256:3cb017ff7aad805427939a983555718d6216aca58e4a99279e845d
 		Last Modified: Tue, 13 Aug 2024 06:55:47 GMT  
 		Size: 12.6 KB (12607 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `emqx:5.8`
+
+**does not exist** (yet?)
+
+## `emqx:5.8.0`
+
+**does not exist** (yet?)
 
 ## `emqx:latest`
 
