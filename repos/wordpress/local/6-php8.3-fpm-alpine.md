@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f0755bc1d9b62268bc87c31e4a73bcc99488561a48fd5dc42ce6f80e670b058a`
+- Image ID: `sha256:36b5c3e4b5ba84faf08682fa46fccff52a68c50ed8140fdb30dcc077ad460c49`
 - Created: `2024-07-23T19:30:08Z`
-- Virtual Size: ~ 257.59 Mb  
+- Virtual Size: ~ 257.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.10`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.10.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.10.tar.xz.asc`
-  - `PHP_SHA256=a0f2179d00931fe7631a12cbc3428f898ca3d99fe564260c115af381d2a1978d`
+  - `PHP_VERSION=8.3.11`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.11.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.11.tar.xz.asc`
+  - `PHP_SHA256=b862b098a08ab9bf4b36ed12c7d0d9f65353656b36fb0e3c5344093aceb35802`
 
 ## `apk` (`.apk`-based packages)
 
@@ -265,16 +265,16 @@ Apache-2.0
 ### `apk` package: `curl`
 
 ```console
-curl-8.9.0-r0 description:
+curl-8.9.1-r1 description:
 URL retrival utility and library
 
-curl-8.9.0-r0 webpage:
+curl-8.9.1-r1 webpage:
 https://curl.se/
 
-curl-8.9.0-r0 installed size:
+curl-8.9.1-r1 installed size:
 248 KiB
 
-curl-8.9.0-r0 license:
+curl-8.9.1-r1 license:
 curl
 
 ```
@@ -656,16 +656,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.9.0-r0 description:
+libcurl-8.9.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.9.0-r0 webpage:
+libcurl-8.9.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.9.0-r0 installed size:
+libcurl-8.9.1-r1 installed size:
 628 KiB
 
-libcurl-8.9.0-r0 license:
+libcurl-8.9.1-r1 license:
 curl
 
 ```
@@ -1404,16 +1404,16 @@ libtiff
 ### `apk` package: `xz`
 
 ```console
-xz-5.6.1-r3 description:
+xz-5.6.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.6.1-r3 webpage:
-https://xz.tukaani.org/xz-utils/
+xz-5.6.2-r0 webpage:
+https://tukaani.org/xz/
 
-xz-5.6.1-r3 installed size:
-180 KiB
+xz-5.6.2-r0 installed size:
+184 KiB
 
-xz-5.6.1-r3 license:
+xz-5.6.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -1421,16 +1421,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.1-r3 description:
+xz-libs-5.6.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.1-r3 webpage:
-https://xz.tukaani.org/xz-utils/
+xz-libs-5.6.2-r0 webpage:
+https://tukaani.org/xz/
 
-xz-libs-5.6.1-r3 installed size:
+xz-libs-5.6.2-r0 installed size:
 236 KiB
 
-xz-libs-5.6.1-r3 license:
+xz-libs-5.6.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
