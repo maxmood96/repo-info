@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b6d9a7691e9814325ee1a1a611167897f5de5a06a70d80f2e5bf6673ae72ab7`
-- Created: `2024-08-01T23:55:25.278861752Z`
-- Virtual Size: ~ 242.79 Mb  
+- Image ID: `sha256:b1d4dfcaf000e3298f9d3be4842e3fe6ea40380cee20f54a7a037db5312c31bd`
+- Created: `2024-08-31T00:05:39.364566116Z`
+- Virtual Size: ~ 243.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.22`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.22.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.22.tar.xz.asc`
-  - `PHP_SHA256=8566229bc88ad1f4aadc10700ab5fbcec81587c748999d985f11cf3b745462df`
+  - `PHP_VERSION=8.2.23`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.23.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.23.tar.xz.asc`
+  - `PHP_SHA256=81c5ae6ba44e262a076349ee54a2e468638a4571085d80bff37f6fd308e1d8d5`
   - `PHP_OPCACHE_VALIDATE_TIMESTAMPS=0`
   - `PHP_OPCACHE_MAX_ACCELERATED_FILES=20000`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=192`
@@ -315,16 +315,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.9.0-r0 description:
+curl-8.9.1-r1 description:
 URL retrival utility and library
 
-curl-8.9.0-r0 webpage:
+curl-8.9.1-r1 webpage:
 https://curl.se/
 
-curl-8.9.0-r0 installed size:
+curl-8.9.1-r1 installed size:
 248 KiB
 
-curl-8.9.0-r0 license:
+curl-8.9.1-r1 license:
 curl
 
 ```
@@ -502,16 +502,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.9.0-r0 description:
+libcurl-8.9.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.9.0-r0 webpage:
+libcurl-8.9.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.9.0-r0 installed size:
+libcurl-8.9.1-r1 installed size:
 628 KiB
 
-libcurl-8.9.0-r0 license:
+libcurl-8.9.1-r1 license:
 curl
 
 ```
@@ -1029,16 +1029,16 @@ ISC
 ### `apk` package: `xz`
 
 ```console
-xz-5.6.1-r3 description:
+xz-5.6.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.6.1-r3 webpage:
-https://xz.tukaani.org/xz-utils/
+xz-5.6.2-r0 webpage:
+https://tukaani.org/xz/
 
-xz-5.6.1-r3 installed size:
-180 KiB
+xz-5.6.2-r0 installed size:
+184 KiB
 
-xz-5.6.1-r3 license:
+xz-5.6.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -1046,16 +1046,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.1-r3 description:
+xz-libs-5.6.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.1-r3 webpage:
-https://xz.tukaani.org/xz-utils/
+xz-libs-5.6.2-r0 webpage:
+https://tukaani.org/xz/
 
-xz-libs-5.6.1-r3 installed size:
+xz-libs-5.6.2-r0 installed size:
 236 KiB
 
-xz-libs-5.6.1-r3 license:
+xz-libs-5.6.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
