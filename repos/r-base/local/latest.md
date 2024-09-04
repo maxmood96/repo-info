@@ -717,14 +717,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.6.2-1
-'http://http.debian.net/debian/pool/main/e/expat/expat_2.6.2-1.dsc' expat_2.6.2-1.dsc 1964 SHA256:fbc41fccaa7d701b271bff810b65f49b3c78e1a0180d048bc947955cc4612446
-'http://http.debian.net/debian/pool/main/e/expat/expat_2.6.2.orig.tar.gz' expat_2.6.2.orig.tar.gz 8416128 SHA256:fbd032683370d761ba68dba2566d3280a154f5290634172d60a79b24d366d9dc
-'http://http.debian.net/debian/pool/main/e/expat/expat_2.6.2-1.debian.tar.xz' expat_2.6.2-1.debian.tar.xz 12920 SHA256:ace5f5235455778222d01a5df08a9dfa3a1a8e015fc11b9c1d18a7d73cfa26fa
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/expat/2.6.2-1/
+
 
 ### `dpkg` source package: `findutils=4.10.0-2`
 
@@ -1910,21 +1909,13 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=3.5-1
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.5-1.dsc' libsemanage_3.5-1.dsc 2644 SHA256:7415394f12030387ebca4ab7845830984b1ceb7ec3256d30a1733ba7f59d18c1
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.5.orig.tar.gz' libsemanage_3.5.orig.tar.gz 185060 SHA256:f53534e50247538280ed0d76c6ce81d8fb3939bd64cadb89da10dba42e40dd9c
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.5.orig.tar.gz.asc' libsemanage_3.5.orig.tar.gz.asc 981 SHA256:f9126c861c666f3308b60cea4405c5e686a056113ca3cbd0a5b0e4af7600c8f5
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.5-1.debian.tar.xz' libsemanage_3.5-1.debian.tar.xz 29956 SHA256:78b11321d014bd52e1fb67c38db5ec6518b0b566b58c6e35a18e894dacc24aee
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsemanage/3.5-1/
 
-- https://sources.debian.net/src/libsemanage/3.5-1/ (for browsing the source)
-- https://sources.debian.net/src/libsemanage/3.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsemanage/3.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsepol=3.7-1`
 
@@ -2573,14 +2564,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.62.1-2
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.62.1-2.dsc' nghttp2_1.62.1-2.dsc 2531 SHA256:5f457052ee3dad45dce4848fc5bc25106fd5e519972de5788b0841e07e31aee5
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.62.1.orig.tar.gz' nghttp2_1.62.1.orig.tar.gz 1066103 SHA256:73c8af772dd2b30cedc114d37291cf1485b0a7ce11833595fc2aec7b3ce3ba5c
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.62.1-2.debian.tar.xz' nghttp2_1.62.1-2.debian.tar.xz 38852 SHA256:82131a80852fcc53d378d4e3cb0e27d0b6044ac595d01806b807713942fbfcac
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/nghttp2/1.62.1-2/
+
 
 ### `dpkg` source package: `nlme=3.1.165-1`
 
@@ -2938,20 +2928,13 @@ Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-bas
 - `LGPL-2.1`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-base=4.4.1-1
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.4.1-1.dsc' r-base_4.4.1-1.dsc 2939 SHA256:392708779e998676f415532c9dca25bfdea34b24bcc186d8a54d8538a9ff67ae
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.4.1.orig.tar.gz' r-base_4.4.1.orig.tar.gz 37353459 SHA256:b4cb675deaaeb7299d3b265d218cde43f192951ce5b89b7bb1a5148a36b2d94d
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.4.1-1.debian.tar.xz' r-base_4.4.1-1.debian.tar.xz 99948 SHA256:022ab8bf36e0c8148cf10298423b30f336c750a9d385652e1026726b07672c7e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-base/4.4.1-1/
 
-- https://sources.debian.net/src/r-base/4.4.1-1/ (for browsing the source)
-- https://sources.debian.net/src/r-base/4.4.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-base/4.4.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-class=7.3-22-2`
 
