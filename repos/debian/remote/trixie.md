@@ -1,7 +1,7 @@
 ## `debian:trixie`
 
 ```console
-$ docker pull debian@sha256:0c75aed52e3a564e27c3aaba51b0a7e59ac21dd09abcb25f2fe0b9b37c8f7e01
+$ docker pull debian@sha256:36931a5047dc662937e4fa5d670b8b21f7c42c070df127628051e1d382e0fa59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -45,79 +45,79 @@ CMD ["bash"]
 ### `debian:trixie` - linux; arm variant v5
 
 ```console
-$ docker pull debian@sha256:1cbf3a6e5fc941cc013391712f3776dc7920980d146bc3eacca254f1a22afd7e
+$ docker pull debian@sha256:7ecd5e9deb5c9392fba9ce0a0ce8e7b5c7a93026ecdd65fe06ebe65df2641ecf
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.9 MB (49871614 bytes)**  
+-	Total Size: **50.1 MB (50107080 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3b1275d22ac940046fb8e67cc8ef40f631c7615002317c454ec29c882fc3e49`
+-	Image ID: `sha256:d61893120477618891597e1d3b8570670e90fff7140d908f85368a689a76e309`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 13 Aug 2024 00:56:57 GMT
-ADD file:368997aa7bc3d0c868f5058460057cbd845e2ba7a356c40f3a1573421e53e41d in / 
-# Tue, 13 Aug 2024 00:56:58 GMT
+# Wed, 04 Sep 2024 21:49:59 GMT
+ADD file:9818fa184cd3832d7a2e958d07cbdf6f16e481580a7abf2ca8cab41151573065 in / 
+# Wed, 04 Sep 2024 21:50:00 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:12ffeaa53d9595553187a53d5abdc0f1c023c82e8a57f8058812fe9bc5e86aef`  
-		Last Modified: Tue, 13 Aug 2024 01:01:44 GMT  
-		Size: 49.9 MB (49871614 bytes)  
+	-	`sha256:59aa270c3f603e92ab2ded83e0aa06f94cd27fb99cc5c9166b81e03b32d905a6`  
+		Last Modified: Wed, 04 Sep 2024 21:54:36 GMT  
+		Size: 50.1 MB (50107080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:trixie` - linux; arm variant v7
 
 ```console
-$ docker pull debian@sha256:b1e0f717306a62d3fa1792e61ef368c3f087acc2dcc65d3cb968692dc7159246
+$ docker pull debian@sha256:9aa9a4c7533e557ce15856b8f37f86079ca34c7ecca4fa44ab9fea74412288a4
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.4 MB (47364130 bytes)**  
+-	Total Size: **47.6 MB (47600373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea0aafe01941cb0b9fd535bed4d4de2b716f62044cf75b05b0ca8879054e625f`
+-	Image ID: `sha256:4f744fd5f3c2c7df1f9ab33f4d2f1b9cee86eff739dc18d79facae23c9e43e64`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 13 Aug 2024 00:59:15 GMT
-ADD file:99761e9b65792d17a2f1d115ea8ad35dbc2936acb0f636cbbbcf63ed20bf10c8 in / 
-# Tue, 13 Aug 2024 00:59:16 GMT
+# Wed, 04 Sep 2024 21:59:58 GMT
+ADD file:09cac9d3912a7a93696c655d21effc386d2cb7ff21832c28ce416cd006e647f3 in / 
+# Wed, 04 Sep 2024 21:59:59 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:8bfff960de1d4efc80e46f547c59070161e89055685b260aa43880326ecea728`  
-		Last Modified: Tue, 13 Aug 2024 01:03:57 GMT  
-		Size: 47.4 MB (47364130 bytes)  
+	-	`sha256:b4fae8e82872ebbe80a6660f7c8967b490f12720a699b611d1fc451d460e9c10`  
+		Last Modified: Wed, 04 Sep 2024 22:04:53 GMT  
+		Size: 47.6 MB (47600373 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull debian@sha256:f2fbb8e56b7ad8d5f1dc446d32c7f81d4d081bbc5257bf0a719b43d05b328869
+$ docker pull debian@sha256:a1ff2b99873304afe6d6d748ac9207dc98a0a748aa5f68abe6c844392eb91b4b
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.2 MB (53152442 bytes)**  
+-	Total Size: **53.6 MB (53594338 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cd5cf150cc5f15e7a355e5a23996cab8ae39a3a8e709eaa0e55a2810ba693bb`
+-	Image ID: `sha256:36b8995861b16d97ea7c8367db3a9c160907b8d446e3557c58e6f7c2c2fc2cc9`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 13 Aug 2024 00:41:11 GMT
-ADD file:44df8bf38e0a6481ddb1093ad0c25ca4508a15c2b5d1c0733757db62627a7413 in / 
-# Tue, 13 Aug 2024 00:41:12 GMT
+# Wed, 04 Sep 2024 21:41:11 GMT
+ADD file:0d3579de5c93cf19bff9f7634a0a159ccc6f879b5b3b127688adfdb71440fc3a in / 
+# Wed, 04 Sep 2024 21:41:12 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:8858b14d914bd710ce161898770a04753f6d66b911364becd105945179fc07fa`  
-		Last Modified: Tue, 13 Aug 2024 00:45:37 GMT  
-		Size: 53.2 MB (53152442 bytes)  
+	-	`sha256:6df7e1b9cec91c022805e35821c4d6cf9ec8f98fd36df834cd2b60410faffd11`  
+		Last Modified: Wed, 04 Sep 2024 21:45:14 GMT  
+		Size: 53.6 MB (53594338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:trixie` - linux; 386
@@ -227,25 +227,25 @@ CMD ["bash"]
 ### `debian:trixie` - linux; s390x
 
 ```console
-$ docker pull debian@sha256:b1f2309b8d5c880d950e3e8de1f4d0dacb9e3a509c048157626c46c2b45e4fdc
+$ docker pull debian@sha256:175166c5b361d29cfff9afec22fedb7ffb31ebb60774a1b7d2572b07c5f1f953
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.5 MB (52480914 bytes)**  
+-	Total Size: **52.7 MB (52746453 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9641b02c8319f93658361a45ea72d3c828fd0b84c6f3de1c05cccad29c6198f0`
+-	Image ID: `sha256:fa54469a406a399a6c6c54c6783fdf1ea56a2c982cbb0e2bc1c53e73ebcedb96`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 13 Aug 2024 00:45:25 GMT
-ADD file:44d3a49280c3105abcfd85839c96a9ede97d8553a9bf4a53c274041f1929ef4b in / 
-# Tue, 13 Aug 2024 00:45:28 GMT
+# Wed, 04 Sep 2024 21:45:38 GMT
+ADD file:d8c6bc2767ccd7e1cc72d27d8bcb6ae32ab902174ec47c087c8a760be26c991c in / 
+# Wed, 04 Sep 2024 21:45:40 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:3b50b414b30fa7e2898d8a041d2ca183b6d95dae25e656b8d6bec87a2fd533b9`  
-		Last Modified: Tue, 13 Aug 2024 00:49:42 GMT  
-		Size: 52.5 MB (52480914 bytes)  
+	-	`sha256:35e23b80cf3051c9b7be598388de687426f0b24d259df069449caf8431f56244`  
+		Last Modified: Wed, 04 Sep 2024 21:49:53 GMT  
+		Size: 52.7 MB (52746453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
