@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:acaea5f5a9dbc8a5b97d7f9593e5f396c0203fe14cffa4f5040c4993026e82d8`
+- Image ID: `sha256:cac5905ad3dc9f08eb50ad715660ec0a0e752b5c3ee6768791e4db0e7b4f278e`
 - Created: `2024-03-26T13:57:15Z`
-- Virtual Size: ~ 940.22 Mb  
+- Virtual Size: ~ 1.01 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -16,8 +16,8 @@
   - `PYTHON_VERSION=3.11.9`
   - `PYTHON_PIP_VERSION=24.0`
   - `PYTHON_SETUPTOOLS_VERSION=65.5.1`
-  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66d8a0f637083e2c3ddffc0cb1e65ce126afb856/public/get-pip.py`
-  - `PYTHON_GET_PIP_SHA256=6fb7b781206356f45ad79efbb19322caa6c2a5ad39092d0d44d0fec94117e118`
+  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/def4aec84b261b939137dd1c69eff0aabb4a7bf4/public/get-pip.py`
+  - `PYTHON_GET_PIP_SHA256=bc37786ec99618416cc0a0ca32833da447f4d91ab51d2c138dd15b7af21e8e9a`
 - Labels:
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
   - `org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images`
@@ -636,12 +636,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `curl=7.74.0-1.3+deb11u12`
 - `libcurl3-gnutls:amd64=7.74.0-1.3+deb11u12`
-- `libcurl4:amd64=7.74.0-1.3+deb11u12`
-- `libcurl4-openssl-dev:amd64=7.74.0-1.3+deb11u12`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -657,6 +654,38 @@ The source package *may* still be available for download from:
 
 - http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u12/
 
+
+### `dpkg` source package: `curl=7.74.0-1.3+deb11u13`
+
+Binary Packages:
+
+- `curl=7.74.0-1.3+deb11u13`
+- `libcurl4:amd64=7.74.0-1.3+deb11u13`
+- `libcurl4-openssl-dev:amd64=7.74.0-1.3+deb11u13`
+
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+- `other`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris curl=7.74.0-1.3+deb11u13
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.74.0-1.3%2bdeb11u13.dsc' curl_7.74.0-1.3+deb11u13.dsc 2740 SHA256:c24d188df313ef92753ab4d755cfda396095a1e374e65af70a60983bdc293e82
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.74.0.orig.tar.gz' curl_7.74.0.orig.tar.gz 4043409 SHA256:e56b3921eeb7a2951959c02db0912b5fcd5fdba5aca071da819e1accf338bbd7
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.74.0-1.3%2bdeb11u13.debian.tar.xz' curl_7.74.0-1.3+deb11u13.debian.tar.xz 76768 SHA256:30c92557142bb7d16b3a877e932d125d02142d6f7cc4984d92b0d4a015caea23
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u13/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u13/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2.1+deb11u1`
 
@@ -1420,10 +1449,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `git=1:2.30.2-1+deb11u2`
 - `git-man=1:2.30.2-1+deb11u2`
 
-Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
+Licenses: (parsed from: `/usr/share/doc/git-man/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -1457,6 +1485,47 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/git/1:2.30.2-1+deb11u2/ (for browsing the source)
 - https://sources.debian.net/src/git/1:2.30.2-1+deb11u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/git/1:2.30.2-1+deb11u2/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `git=1:2.30.2-1+deb11u3`
+
+Binary Packages:
+
+- `git=1:2.30.2-1+deb11u3`
+
+Licenses: (parsed from: `/usr/share/doc/git/copyright`)
+
+- `Apache-2.0`
+- `Artistic`
+- `Artistic-1`
+- `Boost`
+- `EDL-1.0`
+- `Expat`
+- `GPL`
+- `GPL-1+`
+- `GPL-2`
+- `GPL-2+`
+- `ISC`
+- `LGPL-2`
+- `LGPL-2+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+- `dlmalloc`
+- `mingw-runtime`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris git=1:2.30.2-1+deb11u3
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.30.2-1%2bdeb11u3.dsc' git_2.30.2-1+deb11u3.dsc 2907 SHA256:672900e73a5f7ddd1fad2b44db65046c863c3ffa76aecd4a430be370e99a6f5b
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.30.2.orig.tar.xz' git_2.30.2.orig.tar.xz 6329820 SHA256:41f7d90c71f9476cd387673fcb10ce09ccbed67332436a4cc58d7af32c355faa
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.30.2-1%2bdeb11u3.debian.tar.xz' git_2.30.2-1+deb11u3.debian.tar.xz 711960 SHA256:0cfa77116c7174aa5c7cf3ee243132e7d899e5129c791c12b5298e085f3cbe52
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/git/1:2.30.2-1+deb11u3/ (for browsing the source)
+- https://sources.debian.net/src/git/1:2.30.2-1+deb11u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/git/1:2.30.2-1+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.66.8-1+deb11u4`
 
@@ -1494,11 +1563,8 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libc-bin=2.31-13+deb11u10`
-- `libc-dev-bin=2.31-13+deb11u10`
-- `libc6:amd64=2.31-13+deb11u10`
-- `libc6-dev:amd64=2.31-13+deb11u10`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -1517,6 +1583,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/glibc/2.31-13+deb11u10/ (for browsing the source)
 - https://sources.debian.net/src/glibc/2.31-13+deb11u10/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/glibc/2.31-13+deb11u10/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `glibc=2.31-13+deb11u11`
+
+Binary Packages:
+
+- `libc-dev-bin=2.31-13+deb11u11`
+- `libc6:amd64=2.31-13+deb11u11`
+- `libc6-dev:amd64=2.31-13+deb11u11`
+
+Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.31-13+deb11u11
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-13%2bdeb11u11.dsc' glibc_2.31-13+deb11u11.dsc 8351 SHA256:eab21c7c387c0ebc54485974450b7ee0310ae7081f4cdb90b4591d6942e5c694
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-13%2bdeb11u11.debian.tar.xz' glibc_2.31-13+deb11u11.debian.tar.xz 966464 SHA256:ff78277778ddefe1eb44680cb19d2d4dff91891effc3b59da424ae61b0bcd482
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/glibc/2.31-13+deb11u11/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.31-13+deb11u11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.31-13+deb11u11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1+deb11u1`
 
