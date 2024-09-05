@@ -1,7 +1,7 @@
 ## `neurodebian:trixie`
 
 ```console
-$ docker pull neurodebian@sha256:ad5cf2ec554fc3e9f6ca5e5fdc32967ec9d7de6904228c0e455fc6dd9886c0a5
+$ docker pull neurodebian@sha256:5d3129afaf9a1323fe20f7229e24f8d783577c51d4a4efee558a2fde23f60936
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,18 +16,18 @@ $ docker pull neurodebian@sha256:ad5cf2ec554fc3e9f6ca5e5fdc32967ec9d7de6904228c0
 ### `neurodebian:trixie` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:6d762d79558c201d14a01e74573becee71d96b043ec7fea796724b17a3400d16
+$ docker pull neurodebian@sha256:a546d8ed9ffe1cf9bfaa5f41e6990494d4161f32f71c2912d6ff8a323fd891d0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **59.2 MB (59174533 bytes)**  
+-	Total Size: **59.5 MB (59491484 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c4eefa4d71d13b7db1bbdfeaa1758a185409923e4363e732bed24ecf61cdf648`
+-	Image ID: `sha256:5bf42119ac53bfcf848e5c69c4b517bd04ed962dfe730d51ec7ae87855959ee1`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Fri, 21 Jun 2024 21:57:43 GMT
-ADD file:a2a54a01545a139e680d47b64716d1b9faa13cfedbe015124f93c561b7c8cf6e in / 
+ADD file:ed4581bde732d71193f12e8501c7543059ca0c0c5f15f40c1028474d77fb7400 in / 
 # Fri, 21 Jun 2024 21:57:43 GMT
 CMD ["bash"]
 # Fri, 21 Jun 2024 21:57:43 GMT
@@ -41,48 +41,48 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 ```
 
 -	Layers:
-	-	`sha256:805956af4eee3ab822c97611cafc9a57a586c1386772c91babe5075c77f79efe`  
-		Last Modified: Tue, 13 Aug 2024 00:26:39 GMT  
-		Size: 52.8 MB (52841189 bytes)  
+	-	`sha256:2896aaf66dc1af0c9c081d65bb8e63535523af07f049f294d89f549ce0b8febd`  
+		Last Modified: Wed, 04 Sep 2024 22:37:07 GMT  
+		Size: 53.2 MB (53152948 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02f663abeab595413cca77c6f88a50322c4f80411702f17a711185b2c60333f2`  
-		Last Modified: Tue, 13 Aug 2024 01:11:52 GMT  
-		Size: 6.2 MB (6240830 bytes)  
+	-	`sha256:5cb4d57c723071fab9db60a4db2147e17aa66dc83d2eb2eaa6d6579487ee0405`  
+		Last Modified: Wed, 04 Sep 2024 23:10:42 GMT  
+		Size: 6.2 MB (6245441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c75ad9f7a649edb3af0b7b6cc8889cae322c6b55fa769f8f9b3d620286adeee7`  
-		Last Modified: Tue, 13 Aug 2024 01:11:52 GMT  
-		Size: 1.7 KB (1740 bytes)  
+	-	`sha256:de5983ad1294ee53f6d8da2393360eac5f051d3bc0b588717c0d4cd3e142217c`  
+		Last Modified: Wed, 04 Sep 2024 23:10:42 GMT  
+		Size: 1.7 KB (1742 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e06429724a765681651790d014b72d30be34a6ffa16992333196ce8b6362a509`  
-		Last Modified: Tue, 13 Aug 2024 01:11:52 GMT  
-		Size: 244.0 B  
+	-	`sha256:51f5e26a0664131c25e2eec527fbcf80640e1dc3a81b7a9f1070f1b76dbfc976`  
+		Last Modified: Wed, 04 Sep 2024 23:10:42 GMT  
+		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7641817998246bf51a0c4699044a33146c720f1df0e311b5d1b69b46516619cc`  
-		Last Modified: Tue, 13 Aug 2024 01:11:53 GMT  
-		Size: 90.5 KB (90530 bytes)  
+	-	`sha256:8f414c1a656a41c98a86a7e5ab714d0c744b0d0e057887321cef5c818745e553`  
+		Last Modified: Wed, 04 Sep 2024 23:10:43 GMT  
+		Size: 91.1 KB (91108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `neurodebian:trixie` - unknown; unknown
 
 ```console
-$ docker pull neurodebian@sha256:37505ae8aec723614f36f687b143b321cb7caa64244cf45e5965d1e762c5bfde
+$ docker pull neurodebian@sha256:90095457c2c3217e470366efd9f555dc4106a4f43a068b16fda1a15a50cfe397
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3573770 bytes)**  
+-	Total Size: **3.5 MB (3546729 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:268d333f155cec535e6ef7351dd94a389f6929eae109a64f9245b9a7c04f3763`
+-	Image ID: `sha256:1d1dd60de3b0104390f365e269fc3dc0c0f82664e1ce82ddb3bc0504bdf434f0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7867a6667f51720c1d78329fb4253fa850c05a4d44cbc8ed22fbcf1189cbc955`  
-		Last Modified: Tue, 13 Aug 2024 01:11:52 GMT  
-		Size: 3.6 MB (3560325 bytes)  
+	-	`sha256:f5d3bd20bfbe30fc6feb1760c58ab8f8348ba270666600d2970d9d6f00bf0e47`  
+		Last Modified: Wed, 04 Sep 2024 23:10:42 GMT  
+		Size: 3.5 MB (3533284 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8cc61e695b0ad6b83c0b832255d79ef2b109598a3fa1c29b83829c2b835647de`  
-		Last Modified: Tue, 13 Aug 2024 01:11:52 GMT  
+	-	`sha256:85f3317280d884cdafb352868dd83567052bbb80f73737cf10ca00dbbff1c8a0`  
+		Last Modified: Wed, 04 Sep 2024 23:10:42 GMT  
 		Size: 13.4 KB (13445 bytes)  
 		MIME: application/vnd.in-toto+json
 
