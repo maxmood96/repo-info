@@ -77,10 +77,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apparmor=3.0.4-2ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.3.dsc' apparmor_3.0.4-2ubuntu2.3.dsc 2927 SHA512:21a9f85a851b7acf376c33dc2908d5360d4159d2021f181d51dfba5e3fe2ca7d50af4caf0a86c57da3b7ce78be967b6235177bc3b881e75683697190774a880e
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.3build2.dsc' apparmor_3.0.4-2ubuntu2.3build2.dsc 3591 SHA512:d7898be06ec7ddff5d8abcaca42f28fc4f00ad37f5809a20ff8f29643ea9619097ed78ceda0255ce7191eafd231c6488b1af35d8dec405b00c5ada9ae4bad6d1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz' apparmor_3.0.4.orig.tar.gz 7796852 SHA512:1edd800771f46fab9bc5274842e64482b7fd4a5ba4de9855d621baf1d08c8236bfa7752dd9ab3dee095f8e0798129241a9aebf68ed1c994ae5597086a4a1a8ca
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz.asc' apparmor_3.0.4.orig.tar.gz.asc 870 SHA512:870d3037562ae003e642adcd244b74191e9108cebd18e6a925959e595b5a375e2dbfda686349e4cc980981cdd38239a099d3e32f1e824b4a9b477584c8d311a9
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.3.debian.tar.xz' apparmor_3.0.4-2ubuntu2.3.debian.tar.xz 120536 SHA512:e29f11cfa7e9433a467d1712e4f751286973a375fbaf040985f95c3c1c2fd32d2a820eb9f7418828df59bb77475699e0d2832f5d6b9b9016cb4ab11424bd8967
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.3build2.debian.tar.xz' apparmor_3.0.4-2ubuntu2.3build2.debian.tar.xz 120580 SHA512:fcc9fdcbb82edab1d398bf70b08ed19638ba390708e4ea9f0fed58c7b28e30a932227e3df6ec82656a268326ccd760b536b2eaa3bb681bddeea7b40ef4c1d756
 ```
 
 ### `dpkg` source package: `apt=2.4.12`
@@ -1701,15 +1701,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.17
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.17.dsc' openssl_3.0.2-0ubuntu1.17.dsc 2730 SHA512:80f797dd70e2b4710fcdeb74aa211ad3df091b84fefaa1df2f7b6565c9451613332d337cc35d7977531d4c25069334dc22eedd22084a1ab5d5d647729d6a29d7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.17.debian.tar.xz' openssl_3.0.2-0ubuntu1.17.debian.tar.xz 259832 SHA512:b294c87c9d8d734b8038aa1d29c611aa10854f9420d2441932e9c4269994885bdc4d84c412d3fa5c03cee8f5cac9ded11f477a198b35abf40ecb4452336976c4
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
