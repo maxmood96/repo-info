@@ -1,7 +1,7 @@
 ## `clojure:latest`
 
 ```console
-$ docker pull clojure@sha256:825ce9c40e57b07b562d24c68504e9207bb15f36c1a0ccd06e2b2f56ac7b51b0
+$ docker pull clojure@sha256:5c6edc0879c8067e2e059ad2a7fa7c8c8a48279338a9e9d9027e90624ea483b7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -130,19 +130,19 @@ $ docker pull clojure@sha256:b860725e25e5d634d8f7155c13348de61502d179480d37401ef
 ### `clojure:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:f65a98823695ae78cb6a02b0bbd64bb21fc3449a53cc5b3ffc69200a24face57
+$ docker pull clojure@sha256:56f4232e0f89778751c71091b16b96f06a2eebb48a7e37bb8cb2283411693340
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.4 MB (304444720 bytes)**  
+-	Total Size: **304.5 MB (304453312 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d914e39f4b2a03c80c653fa2ba1921b4abdf1a1a7317b53d6a82ede0a10cbc7`
+-	Image ID: `sha256:1dfd8d2a49bb28102fc5b74cc352f00e6385cebe606ad86ec71b83102f54bb7c`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
 # Wed, 07 Aug 2024 18:04:12 GMT
-ADD file:e81dd8b32e45ea6e761021a3e01b6efd339dd9248a2036dc4b51a2c1de560b4c in / 
+ADD file:7f28c8fde9feb67359cbf19f7d77d3f757490b5f586520257cf92d233b4bfaa4 in / 
 # Wed, 07 Aug 2024 18:04:12 GMT
 CMD ["bash"]
 # Wed, 07 Aug 2024 18:04:12 GMT
@@ -182,63 +182,63 @@ CMD ["-M" "--repl"]
 ```
 
 -	Layers:
-	-	`sha256:7b24851aa36de07cd94173b8e2052846573dacc3b241620d713254e647352394`  
-		Last Modified: Tue, 13 Aug 2024 00:42:24 GMT  
-		Size: 49.6 MB (49588592 bytes)  
+	-	`sha256:56c9b9253ff98351db158cb6789848656b8d54f411c0037347bf2358efb18f39`  
+		Last Modified: Wed, 04 Sep 2024 21:42:16 GMT  
+		Size: 49.6 MB (49585623 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:432a3dfe48f41ad044efed0a39ddc56c9ff96bfad23f28032c6b72e9206318e9`  
-		Last Modified: Sat, 17 Aug 2024 05:49:36 GMT  
-		Size: 156.7 MB (156746222 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66d21b9bfb0f49476d4075e8fc28ebe6171e52aaedb4359db625073aacd0350e`  
-		Last Modified: Sat, 17 Aug 2024 05:49:33 GMT  
-		Size: 61.7 MB (61674391 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65c5b004f4fb7adf4a102207e5b14c4c61644d8c55db59703565111cfd0d8d64`  
-		Last Modified: Sat, 17 Aug 2024 05:49:32 GMT  
-		Size: 4.4 MB (4398036 bytes)  
+	-	`sha256:309b46fa0b162a627a54ecab3826334bb069c39d9832f52c5f8bd1d7b58c992c`  
+		Last Modified: Thu, 05 Sep 2024 07:46:58 GMT  
+		Size: 156.7 MB (156746214 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7906c91a88f1f081fdef90c3e73201b6482c85f294770380793e5a594a9098b7`  
-		Last Modified: Sat, 17 Aug 2024 05:49:33 GMT  
-		Size: 32.0 MB (32036403 bytes)  
+	-	`sha256:323a0d1fc3ccf16811c08dece11ae9f72aa4f559a205cabfa90cca049e8ae663`  
+		Last Modified: Thu, 05 Sep 2024 07:46:53 GMT  
+		Size: 61.7 MB (61683406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8040614256ad4111cbcd2b56b1541c9c8de5dc646196123a9f09d9364c8c34ba`  
-		Last Modified: Sat, 17 Aug 2024 05:49:33 GMT  
+	-	`sha256:94b835bbbd68b7b030d5152503713568a15445fc04bcb85c0bdadbda444f3593`  
+		Last Modified: Thu, 05 Sep 2024 07:46:51 GMT  
+		Size: 4.4 MB (4398103 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3ee3d046357bc713f38f28d74bcf410bab0cfafd61564267413bcad83a53407a`  
+		Last Modified: Thu, 05 Sep 2024 07:46:53 GMT  
+		Size: 32.0 MB (32038890 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a0f553469dc5e0c46cac995cc7807aa2a0471f5ac37c24a079e7e22dedbc7905`  
+		Last Modified: Thu, 05 Sep 2024 07:46:53 GMT  
 		Size: 614.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6bd3b3230c9a443870f24686560e755cc01c3c7b7828b555aa174fc1b5749d31`  
-		Last Modified: Sat, 17 Aug 2024 05:49:34 GMT  
+	-	`sha256:faf99ae5d01ae3215675643a46bbb37918a3bdf2e0ac2d1321df082f2f979136`  
+		Last Modified: Thu, 05 Sep 2024 07:46:54 GMT  
 		Size: 398.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:latest` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:d18f2706f1e8b4fff000ed0b67bc652483474cefdd45afb6a6179a19d7e3224f
+$ docker pull clojure@sha256:99610e960e0447efd2f8a752714064355ff4222938ca28481d1c36d1de5078c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.1 MB (7099446 bytes)**  
+-	Total Size: **7.1 MB (7098831 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f80f145bb313c3d1e67a5e6ed7ead89aba8ea83e68de1bc4e15c85fe2e9bfd65`
+-	Image ID: `sha256:e2a2fca6dd98a1c17a73e747ddf226ca5f2cde840f3f9a33e76d5065914d4be4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0e77d50a4c00497151831e62fa1bcce9044c105ad8f2aafa8944465f442be25d`  
-		Last Modified: Fri, 23 Aug 2024 23:49:45 GMT  
-		Size: 7.1 MB (7073623 bytes)  
+	-	`sha256:48c24dd923fa621967ddac52f120b4325fbf94a88c9f70efa970fe9ed9b607d5`  
+		Last Modified: Thu, 05 Sep 2024 07:46:51 GMT  
+		Size: 7.1 MB (7073008 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:821bf6e00ecd84caf0ae08f6beaba1036c76f9e3e4a6987770ceb4f428a16ee4`  
-		Last Modified: Fri, 23 Aug 2024 23:49:44 GMT  
+	-	`sha256:3d9078154ce4d3dc3b9282b3d52466ec5e2be32e19d856025a15d626b8dfb6bd`  
+		Last Modified: Thu, 05 Sep 2024 07:46:51 GMT  
 		Size: 25.8 KB (25823 bytes)  
 		MIME: application/vnd.in-toto+json
