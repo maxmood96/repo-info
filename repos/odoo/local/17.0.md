@@ -1,9 +1,9 @@
-# `odoo:17.0-20240826`
+# `odoo:17.0-20240904`
 
 ## Docker Metadata
 
-- Image ID: `sha256:dc5276d013373a314b125b07f1aad699a596e6b1e5f362ad1f71806382c2dbed`
-- Created: `2024-08-26T08:31:43Z`
+- Image ID: `sha256:7c1fdd45a39697cd62cc6b23a33675db209577f35e71f0e94b1c3dc62cb3b15b`
+- Created: `2024-09-04T09:14:36Z`
 - Virtual Size: ~ 1.79 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -5706,11 +5706,11 @@ $ apt-get source -qq --print-uris npth=1.6-3build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3build2.debian.tar.xz' npth_1.6-3build2.debian.tar.xz 10904 SHA512:426ab3ab9e27b3701d67cde0a4c4040aa9ccac22a0266321824487fe80a118ccd6860b6fa0fb5ca3c46dfa3c20053889fbb51a2e74618065b3aff059a0216c4c
 ```
 
-### `dpkg` source package: `odoo=17.0.20240826`
+### `dpkg` source package: `odoo=17.0.20240904`
 
 Binary Packages:
 
-- `odoo=17.0.20240826`
+- `odoo=17.0.20240904`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -5776,13 +5776,13 @@ $ apt-get source -qq --print-uris openldap=2.5.18+dfsg-0ubuntu0.22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg-0ubuntu0.22.04.2.debian.tar.xz' openldap_2.5.18+dfsg-0ubuntu0.22.04.2.debian.tar.xz 172632 SHA512:f40e948a37ad373187b6007c033e6cbbd63775b1b424f62f9446a9f35b9b354d0c8a8ae3efe470d63e444af984bb2f28947ebc0521923cb50adc4ea2eba21843
 ```
 
-### `dpkg` source package: `openssl=3.0.2-0ubuntu1.17`
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.18`
 
 Binary Packages:
 
-- `libssl-dev:amd64=3.0.2-0ubuntu1.17`
-- `libssl3:amd64=3.0.2-0ubuntu1.17`
-- `openssl=3.0.2-0ubuntu1.17`
+- `libssl-dev:amd64=3.0.2-0ubuntu1.18`
+- `libssl3:amd64=3.0.2-0ubuntu1.18`
+- `openssl=3.0.2-0ubuntu1.18`
 
 Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -5794,11 +5794,11 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.17
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.17.dsc' openssl_3.0.2-0ubuntu1.17.dsc 2730 SHA512:80f797dd70e2b4710fcdeb74aa211ad3df091b84fefaa1df2f7b6565c9451613332d337cc35d7977531d4c25069334dc22eedd22084a1ab5d5d647729d6a29d7
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.18
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.18.dsc' openssl_3.0.2-0ubuntu1.18.dsc 2730 SHA512:063002f9a86d0ab1c1932ded24a4e3624294a560a937a3234d3f0523d19acb8f56be2fe4c452a10aa659250d6026a06ecc4988101e27b79a733833170ba2f651
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.17.debian.tar.xz' openssl_3.0.2-0ubuntu1.17.debian.tar.xz 259832 SHA512:b294c87c9d8d734b8038aa1d29c611aa10854f9420d2441932e9c4269994885bdc4d84c412d3fa5c03cee8f5cac9ded11f477a198b35abf40ecb4452336976c4
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.18.debian.tar.xz' openssl_3.0.2-0ubuntu1.18.debian.tar.xz 263268 SHA512:67e7d3d71428c12fccfeb354ffdbedacb867df025bd222cd4d3796ff37a630ba3adb541f03180aa57511c8c9e4330260f89141bced621dcafc89736c3d33f0b5
 ```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
