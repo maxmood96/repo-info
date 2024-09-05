@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:698b6bde4343aa7cea4aaedc0969356e3692cd046cd21554c264b01c498d7ff3`
-- Created: `2024-08-15T04:29:43Z`
-- Virtual Size: ~ 461.73 Mb  
+- Image ID: `sha256:ee24317525d7f31e9e5e9d82064b5c1361eedd1f0abdea312a311996019b1716`
+- Created: `2024-09-03T02:17:54Z`
+- Virtual Size: ~ 462.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=10.11.9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-07-18T15:52:43`
+  - `build-date=2024-08-27T13:56:46`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=MariaDB Database for relational SQL`
@@ -40,7 +40,7 @@
   - `org.opencontainers.image.version=10.11.9`
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1194`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1227`
   - `vcs-ref=94baa7760359088a42ad33dc22d329a5ee2c7209`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
@@ -114,9 +114,9 @@ Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `ca-certificates-2023.2.60_v7.0.306-90.1.el9_2.noarch`
+### `rpm` package: `ca-certificates-2024.2.69_v8.0.303-91.4.el9_4.noarch`
 
-Licenses (from `rpm --query`): Public Domain
+Licenses (from `rpm --query`): MIT AND GPL-2.0-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
@@ -144,7 +144,7 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `curl-minimal-7.76.1-29.el9_4.x86_64`
+### `rpm` package: `curl-minimal-7.76.1-29.el9_4.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -182,7 +182,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-7.el9.noarch
-http://mirror.nodesdirect.com/epel/9/Everything/source/tree/Packages/e/epel-release-9-7.el9.src.rpm
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/e/epel-release-9-7.el9.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
@@ -233,19 +233,19 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-2.34-100.el9_4.2.x86_64`
+### `rpm` package: `glibc-2.34-100.el9_4.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-common-2.34-100.el9_4.2.x86_64`
+### `rpm` package: `glibc-common-2.34-100.el9_4.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-minimal-langpack-2.34-100.el9_4.2.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-100.el9_4.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
@@ -337,7 +337,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-http://mirror.nodesdirect.com/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -358,7 +358,7 @@ Licenses (from `rpm --query`): GPLv2+ and LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `krb5-libs-1.21.1-1.el9.x86_64`
+### `rpm` package: `krb5-libs-1.21.1-2.el9_4.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -442,7 +442,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libcurl-minimal-7.76.1-29.el9_4.x86_64`
+### `rpm` package: `libcurl-minimal-7.76.1-29.el9_4.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -454,7 +454,7 @@ Licenses (from `rpm --query`): BSD and LGPLv2 and Sleepycat
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libdnf-0.69.0-8.el9.x86_64`
+### `rpm` package: `libdnf-0.69.0-8.el9_4.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -472,7 +472,7 @@ Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libevent-2.1.12-6.el9.x86_64`
+### `rpm` package: `libevent-2.1.12-8.el9_4.x86_64`
 
 Licenses (from `rpm --query`): BSD and ISC
 
@@ -514,7 +514,7 @@ Licenses (from `rpm --query`): (LGPLv3+ or GPLv2+) and GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libmnl-1.0.4-15.el9.x86_64`
+### `rpm` package: `libmnl-1.0.4-16.el9_4.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -1194,7 +1194,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-http://mirror.nodesdirect.com/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -1205,7 +1205,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-http://mirror.nodesdirect.com/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
@@ -1214,7 +1214,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `redhat-release-9.4-0.4.el9.x86_64`
+### `rpm` package: `redhat-release-9.4-0.5.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
@@ -1274,7 +1274,7 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-libs-252-32.el9_4.6.x86_64`
+### `rpm` package: `systemd-libs-252-32.el9_4.7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
