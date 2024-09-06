@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5957b9580288fa0e65a9eb75269a328910fe6d9e51cec2309a12e6f03dee45cc`
+- Image ID: `sha256:93539fc05ae90d1d22e12fc7e6853dc1f22753c8f71ee2757d78bc4d9ac7c894`
 - Created: `2024-08-30T09:24:08Z`
-- Virtual Size: ~ 181.12 Mb  
+- Virtual Size: ~ 181.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["perl5.40.0","-de0"]`
@@ -152,23 +152,29 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/audit/1:3.0.9-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/audit/1:3.0.9-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=12.4+deb12u6`
+### `dpkg` source package: `base-files=12.4+deb12u7`
 
 Binary Packages:
 
-- `base-files=12.4+deb12u6`
+- `base-files=12.4+deb12u7`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris base-files=12.4+deb12u7
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u7.dsc' base-files_12.4+deb12u7.dsc 1133 SHA256:7be32f82fb7c8d4ad2b60ad2b537418acb17fa4e54102556378715aa93abba1f
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u7.tar.xz' base-files_12.4+deb12u7.tar.xz 66144 SHA256:29b8a066b4b9ef89b6bbafac6dde266dfecfa14507d34d372598c448678bb037
+```
 
-- http://snapshot.debian.org/package/base-files/12.4+deb12u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/base-files/12.4+deb12u7/ (for browsing the source)
+- https://sources.debian.net/src/base-files/12.4+deb12u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/12.4+deb12u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.1`
 
@@ -671,14 +677,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-12/12.2.0-14/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-12/12.2.0-14/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.36-9+deb12u7`
+### `dpkg` source package: `glibc=2.36-9+deb12u8`
 
 Binary Packages:
 
-- `libc-bin=2.36-9+deb12u7`
-- `libc-dev-bin=2.36-9+deb12u7`
-- `libc6:amd64=2.36-9+deb12u7`
-- `libc6-dev:amd64=2.36-9+deb12u7`
+- `libc-bin=2.36-9+deb12u8`
+- `libc-dev-bin=2.36-9+deb12u8`
+- `libc6:amd64=2.36-9+deb12u8`
+- `libc6-dev:amd64=2.36-9+deb12u8`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
@@ -688,17 +694,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.36-9+deb12u7
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36-9%2bdeb12u7.dsc' glibc_2.36-9+deb12u7.dsc 9761 SHA256:b5e615ea887acb1f16c4fdc83bb50c6ca9d38cde038caa9fe87b26c03076b772
+$ apt-get source -qq --print-uris glibc=2.36-9+deb12u8
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36-9%2bdeb12u8.dsc' glibc_2.36-9+deb12u8.dsc 9761 SHA256:e70cecffe49d8e792f5744773a2d432b87a541aa19bec34bcca81f6af1c42341
 'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36.orig.tar.xz' glibc_2.36.orig.tar.xz 19363988 SHA256:a543c02070d46ccaf866957efd13f10c924daa74c86a90a0254db09a92a708ee
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36-9%2bdeb12u7.debian.tar.xz' glibc_2.36-9+deb12u7.debian.tar.xz 862848 SHA256:a9e0dcec7cd82c81d98f4d0652e9c576d5d4801ef8cfb8dfc06277a8977cb5ac
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36-9%2bdeb12u8.debian.tar.xz' glibc_2.36-9+deb12u8.debian.tar.xz 882628 SHA256:7717540a54107bf1afdd46bad9ada75f1770111b8d533f7412c487beebbfcaaf
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.36-9+deb12u7/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.36-9+deb12u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.36-9+deb12u7/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.36-9+deb12u8/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.36-9+deb12u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.36-9+deb12u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg1-1.1`
 
@@ -1486,11 +1492,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.99-1`
+### `dpkg` source package: `linux=6.1.106-3`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.99-1`
+- `linux-libc-dev:amd64=6.1.106-3`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1505,17 +1511,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.99-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.99-1.dsc' linux_6.1.99-1.dsc 290924 SHA256:cb3249558c9c6e98cfb03d4996a6ea3275ab11a1c1a5c94e816303b80287089b
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.99.orig.tar.xz' linux_6.1.99.orig.tar.xz 137645468 SHA256:0ee7aff904270adaaa31cd90f9fb65ced34e8d0ea21400ffa8af9fe45be50f30
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.99-1.debian.tar.xz' linux_6.1.99-1.debian.tar.xz 1650024 SHA256:3afd223fff86c09324c0c9d22fad8d1ea7d3264627d4490fec6570faafb1a014
+$ apt-get source -qq --print-uris linux=6.1.106-3
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.106-3.dsc' linux_6.1.106-3.dsc 290930 SHA256:991a5496320541a090dda8c6d97a34bd9f6f4bccfd6c42d4e0e7e6ba781f9641
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.106.orig.tar.xz' linux_6.1.106.orig.tar.xz 137654360 SHA256:e1e3b721db72464aba403b218ff20a256d06ba5686b03bf0d6282ad372dfb330
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.106-3.debian.tar.xz' linux_6.1.106-3.debian.tar.xz 1669432 SHA256:edd237e3c03d49b3c8e815c4fbeb8ac6ff32dc03cd13be4c8d9c1df7e6f1b141
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.99-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.99-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.99-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.106-3/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.106-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.106-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
@@ -1689,13 +1695,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.8.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.8.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.0.13-1~deb12u1`
+### `dpkg` source package: `openssl=3.0.14-1~deb12u2`
 
 Binary Packages:
 
-- `libssl-dev:amd64=3.0.13-1~deb12u1`
-- `libssl3:amd64=3.0.13-1~deb12u1`
-- `openssl=3.0.13-1~deb12u1`
+- `libssl-dev:amd64=3.0.14-1~deb12u2`
+- `libssl3:amd64=3.0.14-1~deb12u2`
+- `openssl=3.0.14-1~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -1704,13 +1710,21 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl=3.0.14-1~deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.14-1%7edeb12u2.dsc' openssl_3.0.14-1~deb12u2.dsc 2675 SHA256:bb61db5f2d9cba110cd2d8f60d989ee22aee86cf841eb7ff0f45e921e612d07b
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.14.orig.tar.gz' openssl_3.0.14.orig.tar.gz 15305497 SHA256:eeca035d4dd4e84fc25846d952da6297484afa0650a6f84c682e39df3a4123ca
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.14.orig.tar.gz.asc' openssl_3.0.14.orig.tar.gz.asc 833 SHA256:251c0453a8ea7716cb6ce6cf67f8ca4ae48fbed97a924167ef8f271dd387033b
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.14-1%7edeb12u2.debian.tar.xz' openssl_3.0.14-1~deb12u2.debian.tar.xz 73660 SHA256:6abcbe74e4e42dae11525435527b38e91911bba8f446a0c401e19d96e006f318
+```
 
-- http://snapshot.debian.org/package/openssl/3.0.13-1~deb12u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl/3.0.14-1~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.14-1~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.14-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
@@ -1963,12 +1977,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/shadow/1:4.13+dfsg1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=252.26-1~deb12u2`
+### `dpkg` source package: `systemd=252.30-1~deb12u2`
 
 Binary Packages:
 
-- `libsystemd0:amd64=252.26-1~deb12u2`
-- `libudev1:amd64=252.26-1~deb12u2`
+- `libsystemd0:amd64=252.30-1~deb12u2`
+- `libudev1:amd64=252.30-1~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1981,13 +1995,20 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris systemd=252.30-1~deb12u2
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.30-1%7edeb12u2.dsc' systemd_252.30-1~deb12u2.dsc 6618 SHA256:3cf201ecebcf54f8eb5b6e50ffb1856414d1517b4409b194f4a812a3ae285cac
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.30.orig.tar.gz' systemd_252.30.orig.tar.gz 12155187 SHA256:78da628671f5756d93e56917620df708ee502c45eb315055d57d1aefd1025277
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.30-1%7edeb12u2.debian.tar.xz' systemd_252.30-1~deb12u2.debian.tar.xz 171536 SHA256:000f5d7dba07d4472fc271d3d970ad4110ee2da6e9e16209be13c3a31b9b5dce
+```
 
-- http://snapshot.debian.org/package/systemd/252.26-1~deb12u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/systemd/252.30-1~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/systemd/252.30-1~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/252.30-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.06-4`
 
