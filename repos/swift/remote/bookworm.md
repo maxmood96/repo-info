@@ -1,7 +1,7 @@
 ## `swift:bookworm`
 
 ```console
-$ docker pull swift@sha256:1ebf1d91f1bcba41987b7f9486f8e3393d03634a2934e5b6a3b1ee7e39f9df98
+$ docker pull swift@sha256:d681581e983d873a1fc0ff179de8c0db6e04554803b29bca728d5aa3c1c747d3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -99,18 +99,18 @@ $ docker pull swift@sha256:fb6a863268c5684dae932b3a21d11f415c94662c77948400775e1
 ### `swift:bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:ed813627ff9d11d2205da17438fbc61567530d1fb159c2643e0c40b1984e3558
+$ docker pull swift@sha256:ee76ab8a653685c2e7b13639d9f144484b64fba80cc394790cd1d297699ccce2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **852.9 MB (852850822 bytes)**  
+-	Total Size: **852.9 MB (852860306 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0b04495c4b27da1e1e9d44cc9da85138447c66f850e0253043244a92939003e`
+-	Image ID: `sha256:f7e9bdcc22786faf4d28f6f5c4a0d56d76ee63038c9c417df4264b1c7879e0d4`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Thu, 06 Jun 2024 15:11:32 GMT
-ADD file:e81dd8b32e45ea6e761021a3e01b6efd339dd9248a2036dc4b51a2c1de560b4c in / 
+ADD file:7f28c8fde9feb67359cbf19f7d77d3f757490b5f586520257cf92d233b4bfaa4 in / 
 # Thu, 06 Jun 2024 15:11:32 GMT
 CMD ["bash"]
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -140,43 +140,43 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:7b24851aa36de07cd94173b8e2052846573dacc3b241620d713254e647352394`  
-		Last Modified: Tue, 13 Aug 2024 00:42:24 GMT  
-		Size: 49.6 MB (49588592 bytes)  
+	-	`sha256:56c9b9253ff98351db158cb6789848656b8d54f411c0037347bf2358efb18f39`  
+		Last Modified: Wed, 04 Sep 2024 21:42:16 GMT  
+		Size: 49.6 MB (49585623 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5475caaf56037cc163ef8d3a0a01a35b57cacd3f08d2244a13d4c6893532097c`  
-		Last Modified: Tue, 13 Aug 2024 11:51:28 GMT  
-		Size: 186.3 MB (186272747 bytes)  
+	-	`sha256:ff5c87eb735290c42c9622b641451af29871a45a32dfb9f020e09fbea77fd4a8`  
+		Last Modified: Thu, 05 Sep 2024 20:14:22 GMT  
+		Size: 186.3 MB (186285091 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f63472accb5b96cbd97394a6fa22acaa249a0f3b97b64bcdce9366b72509cc64`  
-		Last Modified: Tue, 13 Aug 2024 11:51:39 GMT  
-		Size: 617.0 MB (616989309 bytes)  
+	-	`sha256:67f72fa7f54b3bdca9d7d13aceb476659a83cb08cd9a10d583ffa92b6e179b1b`  
+		Last Modified: Thu, 05 Sep 2024 20:14:33 GMT  
+		Size: 617.0 MB (616989417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c4c350c32eac576b270dd7c95e5421c38def5f6f0ead4224e8ac36a2063e8ed`  
-		Last Modified: Tue, 13 Aug 2024 11:51:23 GMT  
-		Size: 174.0 B  
+	-	`sha256:d6f8f319f7aaefc6cc63187e9146078936c753c7095a0b9cb2ec7f3ab763d2cf`  
+		Last Modified: Thu, 05 Sep 2024 20:14:18 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:bookworm` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:27ea0edb18fbb1763b705c46cb1013372eac198ca340dbaf674d48775b506163
+$ docker pull swift@sha256:6c542991a0aa85659562682a9aa14f78541330c946d7698cc8c9ca202c2c6542
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10477371 bytes)**  
+-	Total Size: **10.5 MB (10476796 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0971fa00e1d6db5b62a88367d1addc9ec9a2f93b45224d80e5262aa20e6e3de`
+-	Image ID: `sha256:b2c7faaa81c9e1313a8853005a0ab7fb0b7ded7c3b7c7386f0b9f8f8ada2817a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:239314b86d565270b7271f54d31a3da384de32544843162eeab253e8070913c9`  
-		Last Modified: Tue, 13 Aug 2024 11:51:24 GMT  
-		Size: 10.5 MB (10461594 bytes)  
+	-	`sha256:6ba67bbfb497a590d1a74c44d839ea48cae71ddecb3bf8e77e33484d7244bb9d`  
+		Last Modified: Thu, 05 Sep 2024 20:14:19 GMT  
+		Size: 10.5 MB (10461019 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8fabe0b260b2e1a8418ebc295578923d000464bb27505e5147521972813def60`  
-		Last Modified: Tue, 13 Aug 2024 11:51:23 GMT  
+	-	`sha256:fc720792aaba13db544ff438932a1eaf928822239765db6f2bf876df2b7a7f62`  
+		Last Modified: Thu, 05 Sep 2024 20:14:18 GMT  
 		Size: 15.8 KB (15777 bytes)  
 		MIME: application/vnd.in-toto+json
