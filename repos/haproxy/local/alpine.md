@@ -1,19 +1,19 @@
-# `haproxy:3.0.3-alpine`
+# `haproxy:3.0.4-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2d8880a966f98fc8335a9c088f44dd66a1b72d6a007e2d45fcb26e0afbc41787`
-- Created: `2024-07-11T17:13:29Z`
-- Virtual Size: ~ 27.52 Mb  
+- Image ID: `sha256:aabaa62a378eb5e352f2cf144fd5dbe1ea327fbe3e5e8527cd4b36f84a54e891`
+- Created: `2024-09-03T17:15:58Z`
+- Virtual Size: ~ 33.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["haproxy","-f","/usr/local/etc/haproxy/haproxy.cfg"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `HAPROXY_VERSION=3.0.3`
-  - `HAPROXY_URL=https://www.haproxy.org/download/3.0/src/haproxy-3.0.3.tar.gz`
-  - `HAPROXY_SHA256=39a73c187a0b00d2602cb3ffca52d1b59d90f09032734fe8c03eb2e29a7d19df`
+  - `HAPROXY_VERSION=3.0.4`
+  - `HAPROXY_URL=https://www.haproxy.org/download/3.0/src/haproxy-3.0.4.tar.gz`
+  - `HAPROXY_SHA256=aabfd98ada721bbfb68f7805586ced0373fb4c8d73e18faa94055a16c2096936`
 
 ## `apk` (`.apk`-based packages)
 
@@ -156,16 +156,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r3 description:
+libcrypto3-3.3.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r3 webpage:
+libcrypto3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r3 installed size:
+libcrypto3-3.3.2-r0 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r3 license:
+libcrypto3-3.3.2-r0 license:
 Apache-2.0
 
 ```
@@ -173,16 +173,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r3 description:
+libssl3-3.3.2-r0 description:
 SSL shared libraries
 
-libssl3-3.3.1-r3 webpage:
+libssl3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r3 installed size:
+libssl3-3.3.2-r0 installed size:
 796 KiB
 
-libssl3-3.3.1-r3 license:
+libssl3-3.3.2-r0 license:
 Apache-2.0
 
 ```
