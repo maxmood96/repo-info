@@ -1,7 +1,7 @@
 ## `archlinux:multilib-devel-20240825.0.257728`
 
 ```console
-$ docker pull archlinux@sha256:787247c74479f2dadbd1a1a336e0c26d8312d54f884afc67b29bba5bde56e995
+$ docker pull archlinux@sha256:10912b44e838dd335ff9bcb38995c4807bbe8aa293623190afb3afd2716760de
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,13 +12,13 @@ $ docker pull archlinux@sha256:787247c74479f2dadbd1a1a336e0c26d8312d54f884afc67b
 ### `archlinux:multilib-devel-20240825.0.257728` - linux; amd64
 
 ```console
-$ docker pull archlinux@sha256:16d590427240779ff96610a996f2acc10041ee17d59c90dab981257e47bd0aac
+$ docker pull archlinux@sha256:eff11b75a9bc18500f7d71b4cce218dde3483a05a02139eb4b3efb31da889fbc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **321.6 MB (321627592 bytes)**  
+-	Total Size: **321.6 MB (321627596 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3cce18feb462cc0ce674952344569566b6d3b781192af2dede313cbb971424f9`
+-	Image ID: `sha256:44ae1e385fa3ca79af934bfcfd4bdd1273b8ec5152ea3953424dcd302074d874`
 -	Default Command: `["\/usr\/bin\/bash"]`
 
 ```dockerfile
@@ -57,31 +57,31 @@ CMD ["/usr/bin/bash"]
 		Last Modified: Mon, 26 Aug 2024 21:59:50 GMT  
 		Size: 321.6 MB (321617407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34176b4a87a58fee083b819f8974173ec092d49362333ea31c72a416a8627019`  
-		Last Modified: Mon, 26 Aug 2024 21:59:44 GMT  
-		Size: 10.2 KB (10185 bytes)  
+	-	`sha256:5e0ba7ee9a3b8b9b42fdce4d1f2c978a00e0c0a19a83a4e96752beb6e8a39cc7`  
+		Last Modified: Fri, 06 Sep 2024 23:16:19 GMT  
+		Size: 10.2 KB (10189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `archlinux:multilib-devel-20240825.0.257728` - unknown; unknown
 
 ```console
-$ docker pull archlinux@sha256:b00b1a08a255a55cefb94284cfddd986f1d06d995c83a826c7aa3aeea42ac9ac
+$ docker pull archlinux@sha256:0b811b6d24805858211a5c565f2d8f752a1fc3ece91eb130c201f60f3061855a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **12.1 MB (12097050 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4b3d81cb60807ca62152dc5bc418444bc5920f97fd9b43f54787f51762401a5`
+-	Image ID: `sha256:49213f8b851b3c29d88b3e8b302b4a1f776557358da20274d1242f17425e7fae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:84e929d0df5ed6d0a81c6ddd964836dcf541ba6592fe33e93831a489960b988d`  
-		Last Modified: Mon, 26 Aug 2024 21:59:44 GMT  
+	-	`sha256:4b24a7253625f628d2c7b94757fde4664420b577841f858c78d1a010852537ad`  
+		Last Modified: Fri, 06 Sep 2024 23:16:19 GMT  
 		Size: 12.1 MB (12085490 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:056aa45e388121c0566282711b40861fe85dfd388a0eb377497b49857547d658`  
-		Last Modified: Mon, 26 Aug 2024 21:59:44 GMT  
+	-	`sha256:3e51c63051759cef7e90e1c7694d3db27d97a990e39666f462e16456ab891d13`  
+		Last Modified: Fri, 06 Sep 2024 23:16:19 GMT  
 		Size: 11.6 KB (11560 bytes)  
 		MIME: application/vnd.in-toto+json
