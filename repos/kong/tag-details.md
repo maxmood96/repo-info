@@ -32,7 +32,7 @@
 ## `kong:2`
 
 ```console
-$ docker pull kong@sha256:1b11ad4918ba50907c13190764f6f7a75c79670c3707df788d8737d9f1f00d00
+$ docker pull kong@sha256:d6c3948889ccd6966101922d9733330ae01d83b91101e26b34c53b7bf07c6092
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -43,19 +43,19 @@ $ docker pull kong@sha256:1b11ad4918ba50907c13190764f6f7a75c79670c3707df788d8737
 ### `kong:2` - linux; amd64
 
 ```console
-$ docker pull kong@sha256:f77e315ece7d357b22649682d5e7101241dd9a891e028fc5a544b3c030bb86e4
+$ docker pull kong@sha256:8042875d99eef731d86a1d43229f7d01f1a37bcbf90bb202fa242be51584eddf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.4 MB (34431405 bytes)**  
+-	Total Size: **34.4 MB (34449235 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76c0926df0e445fb2dd1b011b6d3622770a467a44b510f7a390665e41795428d`
+-	Image ID: `sha256:7e114d25b9fb3bb4ec19c37cfc7bfec157fcfe532c34614d79210c62e95c4e3a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kong","docker-start"]`
 
 ```dockerfile
 # Mon, 01 Jul 2024 13:31:38 GMT
-ADD file:5851aef23205a072ef361dd412a73a39a1ada75e19a207a392bb7ec9b8556e11 in / 
+ADD file:5dd525c57625a3a84d57d435b3c255f417ad1722250faaf006c66b9090207f66 in / 
 # Mon, 01 Jul 2024 13:31:38 GMT
 CMD ["/bin/sh"]
 # Mon, 01 Jul 2024 13:31:38 GMT
@@ -94,51 +94,51 @@ CMD ["kong" "docker-start"]
 ```
 
 -	Layers:
-	-	`sha256:930bdd4d222e2e63c22bd9e88d29b3c5ddd3d8a9d8fb93cf8324f4e7b9577cfb`  
-		Last Modified: Mon, 22 Jul 2024 22:27:34 GMT  
-		Size: 3.4 MB (3415640 bytes)  
+	-	`sha256:1cc3d825d8b2468ef662a8b631220516f492e24232477209fe863836d2d2ed44`  
+		Last Modified: Fri, 06 Sep 2024 22:20:59 GMT  
+		Size: 3.4 MB (3416313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6478e70d1a6cc77c814a80bb443baca942b3be8714e04fbdcf86ef51fd06f3`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
-		Size: 131.0 B  
+	-	`sha256:39b27e0427027b5f41ad1f17b142e5bdbfa2a9a37dd66ca82d83a23eaad445aa`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc1f8a1ac4208fde766d5efc844ec6017d83d4d67ffee2dbe55ced8c45225507`  
-		Last Modified: Mon, 22 Jul 2024 23:05:37 GMT  
-		Size: 31.0 MB (31014751 bytes)  
+	-	`sha256:ea083cb9b3937ce360d13ff9f095a0bb5f51a765a27e1bb482c55902df9ca152`  
+		Last Modified: Fri, 06 Sep 2024 23:22:07 GMT  
+		Size: 31.0 MB (31031907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1725c39dfb8e020e4d59ac1f93c8f716b6acec568c1ba6983e3ff31928e0b0e8`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
+	-	`sha256:a24e4b3c21fc7ac6b52ddb324b1e2e2aeaab430370ead3c60cf91a42b33debcb`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
 		Size: 883.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `kong:2` - unknown; unknown
 
 ```console
-$ docker pull kong@sha256:ea4dbe0eaf8fd0d79e1ead08476a2ea9738a48651efafb9e31d9cf176f5f33e2
+$ docker pull kong@sha256:8cc51fe90809d8035f1fcf9882a30220cb7d34650b611cc6778a32f094102323
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 MB (1930044 bytes)**  
+-	Total Size: **1.9 MB (1930676 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f4f66fab37d024ec24f12ab7f2ebdb0365a373607c1fcfba90d08cf7bb756a66`
+-	Image ID: `sha256:6cb6fe1d34a7164aa58ad3712e761891fd26f651b7dbcd1fa12a48e38dab4e09`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9393888fa91b765f897e331a04c0594812dd1c6c04be8e21fff2ba6ce3453d92`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
-		Size: 1.9 MB (1916063 bytes)  
+	-	`sha256:3d462a1c0dc2841c3efe3324207050b9898eee85bdbf2aac67c96e9d00937fb2`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
+		Size: 1.9 MB (1916695 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a8c67a0d7d3d1ef72f7c0ab2cac723893cb1c8d19fc0530ce8bdd790dd856489`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
+	-	`sha256:d5769011123927a22a632b72d9d875b665c19f5559e1953db7315e8fd0680fc6`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
 		Size: 14.0 KB (13981 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `kong:2.8`
 
 ```console
-$ docker pull kong@sha256:1b11ad4918ba50907c13190764f6f7a75c79670c3707df788d8737d9f1f00d00
+$ docker pull kong@sha256:d6c3948889ccd6966101922d9733330ae01d83b91101e26b34c53b7bf07c6092
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -149,19 +149,19 @@ $ docker pull kong@sha256:1b11ad4918ba50907c13190764f6f7a75c79670c3707df788d8737
 ### `kong:2.8` - linux; amd64
 
 ```console
-$ docker pull kong@sha256:f77e315ece7d357b22649682d5e7101241dd9a891e028fc5a544b3c030bb86e4
+$ docker pull kong@sha256:8042875d99eef731d86a1d43229f7d01f1a37bcbf90bb202fa242be51584eddf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.4 MB (34431405 bytes)**  
+-	Total Size: **34.4 MB (34449235 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76c0926df0e445fb2dd1b011b6d3622770a467a44b510f7a390665e41795428d`
+-	Image ID: `sha256:7e114d25b9fb3bb4ec19c37cfc7bfec157fcfe532c34614d79210c62e95c4e3a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kong","docker-start"]`
 
 ```dockerfile
 # Mon, 01 Jul 2024 13:31:38 GMT
-ADD file:5851aef23205a072ef361dd412a73a39a1ada75e19a207a392bb7ec9b8556e11 in / 
+ADD file:5dd525c57625a3a84d57d435b3c255f417ad1722250faaf006c66b9090207f66 in / 
 # Mon, 01 Jul 2024 13:31:38 GMT
 CMD ["/bin/sh"]
 # Mon, 01 Jul 2024 13:31:38 GMT
@@ -200,51 +200,51 @@ CMD ["kong" "docker-start"]
 ```
 
 -	Layers:
-	-	`sha256:930bdd4d222e2e63c22bd9e88d29b3c5ddd3d8a9d8fb93cf8324f4e7b9577cfb`  
-		Last Modified: Mon, 22 Jul 2024 22:27:34 GMT  
-		Size: 3.4 MB (3415640 bytes)  
+	-	`sha256:1cc3d825d8b2468ef662a8b631220516f492e24232477209fe863836d2d2ed44`  
+		Last Modified: Fri, 06 Sep 2024 22:20:59 GMT  
+		Size: 3.4 MB (3416313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6478e70d1a6cc77c814a80bb443baca942b3be8714e04fbdcf86ef51fd06f3`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
-		Size: 131.0 B  
+	-	`sha256:39b27e0427027b5f41ad1f17b142e5bdbfa2a9a37dd66ca82d83a23eaad445aa`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc1f8a1ac4208fde766d5efc844ec6017d83d4d67ffee2dbe55ced8c45225507`  
-		Last Modified: Mon, 22 Jul 2024 23:05:37 GMT  
-		Size: 31.0 MB (31014751 bytes)  
+	-	`sha256:ea083cb9b3937ce360d13ff9f095a0bb5f51a765a27e1bb482c55902df9ca152`  
+		Last Modified: Fri, 06 Sep 2024 23:22:07 GMT  
+		Size: 31.0 MB (31031907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1725c39dfb8e020e4d59ac1f93c8f716b6acec568c1ba6983e3ff31928e0b0e8`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
+	-	`sha256:a24e4b3c21fc7ac6b52ddb324b1e2e2aeaab430370ead3c60cf91a42b33debcb`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
 		Size: 883.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `kong:2.8` - unknown; unknown
 
 ```console
-$ docker pull kong@sha256:ea4dbe0eaf8fd0d79e1ead08476a2ea9738a48651efafb9e31d9cf176f5f33e2
+$ docker pull kong@sha256:8cc51fe90809d8035f1fcf9882a30220cb7d34650b611cc6778a32f094102323
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 MB (1930044 bytes)**  
+-	Total Size: **1.9 MB (1930676 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f4f66fab37d024ec24f12ab7f2ebdb0365a373607c1fcfba90d08cf7bb756a66`
+-	Image ID: `sha256:6cb6fe1d34a7164aa58ad3712e761891fd26f651b7dbcd1fa12a48e38dab4e09`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9393888fa91b765f897e331a04c0594812dd1c6c04be8e21fff2ba6ce3453d92`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
-		Size: 1.9 MB (1916063 bytes)  
+	-	`sha256:3d462a1c0dc2841c3efe3324207050b9898eee85bdbf2aac67c96e9d00937fb2`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
+		Size: 1.9 MB (1916695 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a8c67a0d7d3d1ef72f7c0ab2cac723893cb1c8d19fc0530ce8bdd790dd856489`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
+	-	`sha256:d5769011123927a22a632b72d9d875b665c19f5559e1953db7315e8fd0680fc6`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
 		Size: 14.0 KB (13981 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `kong:2.8-alpine`
 
 ```console
-$ docker pull kong@sha256:1b11ad4918ba50907c13190764f6f7a75c79670c3707df788d8737d9f1f00d00
+$ docker pull kong@sha256:d6c3948889ccd6966101922d9733330ae01d83b91101e26b34c53b7bf07c6092
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -255,19 +255,19 @@ $ docker pull kong@sha256:1b11ad4918ba50907c13190764f6f7a75c79670c3707df788d8737
 ### `kong:2.8-alpine` - linux; amd64
 
 ```console
-$ docker pull kong@sha256:f77e315ece7d357b22649682d5e7101241dd9a891e028fc5a544b3c030bb86e4
+$ docker pull kong@sha256:8042875d99eef731d86a1d43229f7d01f1a37bcbf90bb202fa242be51584eddf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.4 MB (34431405 bytes)**  
+-	Total Size: **34.4 MB (34449235 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76c0926df0e445fb2dd1b011b6d3622770a467a44b510f7a390665e41795428d`
+-	Image ID: `sha256:7e114d25b9fb3bb4ec19c37cfc7bfec157fcfe532c34614d79210c62e95c4e3a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kong","docker-start"]`
 
 ```dockerfile
 # Mon, 01 Jul 2024 13:31:38 GMT
-ADD file:5851aef23205a072ef361dd412a73a39a1ada75e19a207a392bb7ec9b8556e11 in / 
+ADD file:5dd525c57625a3a84d57d435b3c255f417ad1722250faaf006c66b9090207f66 in / 
 # Mon, 01 Jul 2024 13:31:38 GMT
 CMD ["/bin/sh"]
 # Mon, 01 Jul 2024 13:31:38 GMT
@@ -306,44 +306,44 @@ CMD ["kong" "docker-start"]
 ```
 
 -	Layers:
-	-	`sha256:930bdd4d222e2e63c22bd9e88d29b3c5ddd3d8a9d8fb93cf8324f4e7b9577cfb`  
-		Last Modified: Mon, 22 Jul 2024 22:27:34 GMT  
-		Size: 3.4 MB (3415640 bytes)  
+	-	`sha256:1cc3d825d8b2468ef662a8b631220516f492e24232477209fe863836d2d2ed44`  
+		Last Modified: Fri, 06 Sep 2024 22:20:59 GMT  
+		Size: 3.4 MB (3416313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6478e70d1a6cc77c814a80bb443baca942b3be8714e04fbdcf86ef51fd06f3`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
-		Size: 131.0 B  
+	-	`sha256:39b27e0427027b5f41ad1f17b142e5bdbfa2a9a37dd66ca82d83a23eaad445aa`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc1f8a1ac4208fde766d5efc844ec6017d83d4d67ffee2dbe55ced8c45225507`  
-		Last Modified: Mon, 22 Jul 2024 23:05:37 GMT  
-		Size: 31.0 MB (31014751 bytes)  
+	-	`sha256:ea083cb9b3937ce360d13ff9f095a0bb5f51a765a27e1bb482c55902df9ca152`  
+		Last Modified: Fri, 06 Sep 2024 23:22:07 GMT  
+		Size: 31.0 MB (31031907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1725c39dfb8e020e4d59ac1f93c8f716b6acec568c1ba6983e3ff31928e0b0e8`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
+	-	`sha256:a24e4b3c21fc7ac6b52ddb324b1e2e2aeaab430370ead3c60cf91a42b33debcb`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
 		Size: 883.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `kong:2.8-alpine` - unknown; unknown
 
 ```console
-$ docker pull kong@sha256:ea4dbe0eaf8fd0d79e1ead08476a2ea9738a48651efafb9e31d9cf176f5f33e2
+$ docker pull kong@sha256:8cc51fe90809d8035f1fcf9882a30220cb7d34650b611cc6778a32f094102323
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 MB (1930044 bytes)**  
+-	Total Size: **1.9 MB (1930676 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f4f66fab37d024ec24f12ab7f2ebdb0365a373607c1fcfba90d08cf7bb756a66`
+-	Image ID: `sha256:6cb6fe1d34a7164aa58ad3712e761891fd26f651b7dbcd1fa12a48e38dab4e09`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9393888fa91b765f897e331a04c0594812dd1c6c04be8e21fff2ba6ce3453d92`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
-		Size: 1.9 MB (1916063 bytes)  
+	-	`sha256:3d462a1c0dc2841c3efe3324207050b9898eee85bdbf2aac67c96e9d00937fb2`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
+		Size: 1.9 MB (1916695 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a8c67a0d7d3d1ef72f7c0ab2cac723893cb1c8d19fc0530ce8bdd790dd856489`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
+	-	`sha256:d5769011123927a22a632b72d9d875b665c19f5559e1953db7315e8fd0680fc6`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
 		Size: 14.0 KB (13981 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -464,7 +464,7 @@ $ docker pull kong@sha256:d095dbf4fe3d4721e9d39057e006fbcb26f3cc9c5a73cb7441c442
 ## `kong:2.8.5`
 
 ```console
-$ docker pull kong@sha256:1b11ad4918ba50907c13190764f6f7a75c79670c3707df788d8737d9f1f00d00
+$ docker pull kong@sha256:d6c3948889ccd6966101922d9733330ae01d83b91101e26b34c53b7bf07c6092
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -475,19 +475,19 @@ $ docker pull kong@sha256:1b11ad4918ba50907c13190764f6f7a75c79670c3707df788d8737
 ### `kong:2.8.5` - linux; amd64
 
 ```console
-$ docker pull kong@sha256:f77e315ece7d357b22649682d5e7101241dd9a891e028fc5a544b3c030bb86e4
+$ docker pull kong@sha256:8042875d99eef731d86a1d43229f7d01f1a37bcbf90bb202fa242be51584eddf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.4 MB (34431405 bytes)**  
+-	Total Size: **34.4 MB (34449235 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76c0926df0e445fb2dd1b011b6d3622770a467a44b510f7a390665e41795428d`
+-	Image ID: `sha256:7e114d25b9fb3bb4ec19c37cfc7bfec157fcfe532c34614d79210c62e95c4e3a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kong","docker-start"]`
 
 ```dockerfile
 # Mon, 01 Jul 2024 13:31:38 GMT
-ADD file:5851aef23205a072ef361dd412a73a39a1ada75e19a207a392bb7ec9b8556e11 in / 
+ADD file:5dd525c57625a3a84d57d435b3c255f417ad1722250faaf006c66b9090207f66 in / 
 # Mon, 01 Jul 2024 13:31:38 GMT
 CMD ["/bin/sh"]
 # Mon, 01 Jul 2024 13:31:38 GMT
@@ -526,51 +526,51 @@ CMD ["kong" "docker-start"]
 ```
 
 -	Layers:
-	-	`sha256:930bdd4d222e2e63c22bd9e88d29b3c5ddd3d8a9d8fb93cf8324f4e7b9577cfb`  
-		Last Modified: Mon, 22 Jul 2024 22:27:34 GMT  
-		Size: 3.4 MB (3415640 bytes)  
+	-	`sha256:1cc3d825d8b2468ef662a8b631220516f492e24232477209fe863836d2d2ed44`  
+		Last Modified: Fri, 06 Sep 2024 22:20:59 GMT  
+		Size: 3.4 MB (3416313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6478e70d1a6cc77c814a80bb443baca942b3be8714e04fbdcf86ef51fd06f3`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
-		Size: 131.0 B  
+	-	`sha256:39b27e0427027b5f41ad1f17b142e5bdbfa2a9a37dd66ca82d83a23eaad445aa`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc1f8a1ac4208fde766d5efc844ec6017d83d4d67ffee2dbe55ced8c45225507`  
-		Last Modified: Mon, 22 Jul 2024 23:05:37 GMT  
-		Size: 31.0 MB (31014751 bytes)  
+	-	`sha256:ea083cb9b3937ce360d13ff9f095a0bb5f51a765a27e1bb482c55902df9ca152`  
+		Last Modified: Fri, 06 Sep 2024 23:22:07 GMT  
+		Size: 31.0 MB (31031907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1725c39dfb8e020e4d59ac1f93c8f716b6acec568c1ba6983e3ff31928e0b0e8`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
+	-	`sha256:a24e4b3c21fc7ac6b52ddb324b1e2e2aeaab430370ead3c60cf91a42b33debcb`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
 		Size: 883.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `kong:2.8.5` - unknown; unknown
 
 ```console
-$ docker pull kong@sha256:ea4dbe0eaf8fd0d79e1ead08476a2ea9738a48651efafb9e31d9cf176f5f33e2
+$ docker pull kong@sha256:8cc51fe90809d8035f1fcf9882a30220cb7d34650b611cc6778a32f094102323
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 MB (1930044 bytes)**  
+-	Total Size: **1.9 MB (1930676 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f4f66fab37d024ec24f12ab7f2ebdb0365a373607c1fcfba90d08cf7bb756a66`
+-	Image ID: `sha256:6cb6fe1d34a7164aa58ad3712e761891fd26f651b7dbcd1fa12a48e38dab4e09`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9393888fa91b765f897e331a04c0594812dd1c6c04be8e21fff2ba6ce3453d92`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
-		Size: 1.9 MB (1916063 bytes)  
+	-	`sha256:3d462a1c0dc2841c3efe3324207050b9898eee85bdbf2aac67c96e9d00937fb2`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
+		Size: 1.9 MB (1916695 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a8c67a0d7d3d1ef72f7c0ab2cac723893cb1c8d19fc0530ce8bdd790dd856489`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
+	-	`sha256:d5769011123927a22a632b72d9d875b665c19f5559e1953db7315e8fd0680fc6`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
 		Size: 14.0 KB (13981 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `kong:2.8.5-alpine`
 
 ```console
-$ docker pull kong@sha256:1b11ad4918ba50907c13190764f6f7a75c79670c3707df788d8737d9f1f00d00
+$ docker pull kong@sha256:d6c3948889ccd6966101922d9733330ae01d83b91101e26b34c53b7bf07c6092
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -581,19 +581,19 @@ $ docker pull kong@sha256:1b11ad4918ba50907c13190764f6f7a75c79670c3707df788d8737
 ### `kong:2.8.5-alpine` - linux; amd64
 
 ```console
-$ docker pull kong@sha256:f77e315ece7d357b22649682d5e7101241dd9a891e028fc5a544b3c030bb86e4
+$ docker pull kong@sha256:8042875d99eef731d86a1d43229f7d01f1a37bcbf90bb202fa242be51584eddf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.4 MB (34431405 bytes)**  
+-	Total Size: **34.4 MB (34449235 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76c0926df0e445fb2dd1b011b6d3622770a467a44b510f7a390665e41795428d`
+-	Image ID: `sha256:7e114d25b9fb3bb4ec19c37cfc7bfec157fcfe532c34614d79210c62e95c4e3a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kong","docker-start"]`
 
 ```dockerfile
 # Mon, 01 Jul 2024 13:31:38 GMT
-ADD file:5851aef23205a072ef361dd412a73a39a1ada75e19a207a392bb7ec9b8556e11 in / 
+ADD file:5dd525c57625a3a84d57d435b3c255f417ad1722250faaf006c66b9090207f66 in / 
 # Mon, 01 Jul 2024 13:31:38 GMT
 CMD ["/bin/sh"]
 # Mon, 01 Jul 2024 13:31:38 GMT
@@ -632,44 +632,44 @@ CMD ["kong" "docker-start"]
 ```
 
 -	Layers:
-	-	`sha256:930bdd4d222e2e63c22bd9e88d29b3c5ddd3d8a9d8fb93cf8324f4e7b9577cfb`  
-		Last Modified: Mon, 22 Jul 2024 22:27:34 GMT  
-		Size: 3.4 MB (3415640 bytes)  
+	-	`sha256:1cc3d825d8b2468ef662a8b631220516f492e24232477209fe863836d2d2ed44`  
+		Last Modified: Fri, 06 Sep 2024 22:20:59 GMT  
+		Size: 3.4 MB (3416313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6478e70d1a6cc77c814a80bb443baca942b3be8714e04fbdcf86ef51fd06f3`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
-		Size: 131.0 B  
+	-	`sha256:39b27e0427027b5f41ad1f17b142e5bdbfa2a9a37dd66ca82d83a23eaad445aa`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc1f8a1ac4208fde766d5efc844ec6017d83d4d67ffee2dbe55ced8c45225507`  
-		Last Modified: Mon, 22 Jul 2024 23:05:37 GMT  
-		Size: 31.0 MB (31014751 bytes)  
+	-	`sha256:ea083cb9b3937ce360d13ff9f095a0bb5f51a765a27e1bb482c55902df9ca152`  
+		Last Modified: Fri, 06 Sep 2024 23:22:07 GMT  
+		Size: 31.0 MB (31031907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1725c39dfb8e020e4d59ac1f93c8f716b6acec568c1ba6983e3ff31928e0b0e8`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
+	-	`sha256:a24e4b3c21fc7ac6b52ddb324b1e2e2aeaab430370ead3c60cf91a42b33debcb`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
 		Size: 883.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `kong:2.8.5-alpine` - unknown; unknown
 
 ```console
-$ docker pull kong@sha256:ea4dbe0eaf8fd0d79e1ead08476a2ea9738a48651efafb9e31d9cf176f5f33e2
+$ docker pull kong@sha256:8cc51fe90809d8035f1fcf9882a30220cb7d34650b611cc6778a32f094102323
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 MB (1930044 bytes)**  
+-	Total Size: **1.9 MB (1930676 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f4f66fab37d024ec24f12ab7f2ebdb0365a373607c1fcfba90d08cf7bb756a66`
+-	Image ID: `sha256:6cb6fe1d34a7164aa58ad3712e761891fd26f651b7dbcd1fa12a48e38dab4e09`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9393888fa91b765f897e331a04c0594812dd1c6c04be8e21fff2ba6ce3453d92`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
-		Size: 1.9 MB (1916063 bytes)  
+	-	`sha256:3d462a1c0dc2841c3efe3324207050b9898eee85bdbf2aac67c96e9d00937fb2`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
+		Size: 1.9 MB (1916695 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a8c67a0d7d3d1ef72f7c0ab2cac723893cb1c8d19fc0530ce8bdd790dd856489`  
-		Last Modified: Mon, 22 Jul 2024 23:05:36 GMT  
+	-	`sha256:d5769011123927a22a632b72d9d875b665c19f5559e1953db7315e8fd0680fc6`  
+		Last Modified: Fri, 06 Sep 2024 23:22:06 GMT  
 		Size: 14.0 KB (13981 bytes)  
 		MIME: application/vnd.in-toto+json
 
