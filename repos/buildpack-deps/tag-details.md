@@ -11,6 +11,9 @@
 -	[`buildpack-deps:24.04`](#buildpack-deps2404)
 -	[`buildpack-deps:24.04-curl`](#buildpack-deps2404-curl)
 -	[`buildpack-deps:24.04-scm`](#buildpack-deps2404-scm)
+-	[`buildpack-deps:24.10`](#buildpack-deps2410)
+-	[`buildpack-deps:24.10-curl`](#buildpack-deps2410-curl)
+-	[`buildpack-deps:24.10-scm`](#buildpack-deps2410-scm)
 -	[`buildpack-deps:bookworm`](#buildpack-depsbookworm)
 -	[`buildpack-deps:bookworm-curl`](#buildpack-depsbookworm-curl)
 -	[`buildpack-deps:bookworm-scm`](#buildpack-depsbookworm-scm)
@@ -31,6 +34,9 @@
 -	[`buildpack-deps:oldstable`](#buildpack-depsoldstable)
 -	[`buildpack-deps:oldstable-curl`](#buildpack-depsoldstable-curl)
 -	[`buildpack-deps:oldstable-scm`](#buildpack-depsoldstable-scm)
+-	[`buildpack-deps:oracular`](#buildpack-depsoracular)
+-	[`buildpack-deps:oracular-curl`](#buildpack-depsoracular-curl)
+-	[`buildpack-deps:oracular-scm`](#buildpack-depsoracular-scm)
 -	[`buildpack-deps:scm`](#buildpack-depsscm)
 -	[`buildpack-deps:sid`](#buildpack-depssid)
 -	[`buildpack-deps:sid-curl`](#buildpack-depssid-curl)
@@ -2566,6 +2572,18 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Last Modified: Sat, 17 Aug 2024 01:51:08 GMT  
 		Size: 47.1 MB (47114045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `buildpack-deps:24.10`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:24.10-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:24.10-scm`
+
+**does not exist** (yet?)
 
 ## `buildpack-deps:bookworm`
 
@@ -8616,6 +8634,18 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Last Modified: Thu, 05 Sep 2024 00:01:05 GMT  
 		Size: 54.1 MB (54075084 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `buildpack-deps:oracular`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:oracular-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:oracular-scm`
+
+**does not exist** (yet?)
 
 ## `buildpack-deps:scm`
 
