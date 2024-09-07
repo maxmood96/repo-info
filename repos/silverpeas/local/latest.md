@@ -2011,13 +2011,9 @@ Licenses: (parsed from: `/usr/share/doc/language-pack-en-base/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris language-pack-en-base=1:22.04+20240212
-'http://archive.ubuntu.com/ubuntu/pool/main/l/language-pack-en-base/language-pack-en-base_22.04%2b20240212.dsc' language-pack-en-base_22.04+20240212.dsc 1571 SHA512:024b2067694ca81d4cd138b7ed50257b82fd402f30ac8e2b9f2b66826ecf8094318dada4eea626655a9dba50425d4ebece67fea3469b4d76f12e4f4d1f31bc15
-'http://archive.ubuntu.com/ubuntu/pool/main/l/language-pack-en-base/language-pack-en-base_22.04%2b20240212.tar.xz' language-pack-en-base_22.04+20240212.tar.xz 1679364 SHA512:4b3051a575ecdcdd720258d2de1e46a78d4d7f7bd42162321c29ebc8fcc996808ff332f5cd612a04d118c991e73b0cc672a5a0d97a0769b285e748ff2b832e98
-```
 
 ### `dpkg` source package: `language-pack-en=1:22.04+20240212`
 
@@ -2029,13 +2025,9 @@ Licenses: (parsed from: `/usr/share/doc/language-pack-en/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris language-pack-en=1:22.04+20240212
-'http://archive.ubuntu.com/ubuntu/pool/main/l/language-pack-en/language-pack-en_22.04%2b20240212.dsc' language-pack-en_22.04+20240212.dsc 1532 SHA512:655380c9a815cc7873359d53cd59c917133c8d04a1043023c514f932d2a5aa11f1eb8fe533253e6a7f623be9b57fee529e6e9dac19e7eb52baaac79698469c56
-'http://archive.ubuntu.com/ubuntu/pool/main/l/language-pack-en/language-pack-en_22.04%2b20240212.tar.xz' language-pack-en_22.04+20240212.tar.xz 8060 SHA512:7b0bcdd489b61cdbe7bf91c5bf9b62b9c420b59de2ecf221906997317a62254f8ecfb150401d68d240d4718b1945d4739ff30001617fa6cdca2d3ac86cad6b00
-```
 
 ### `dpkg` source package: `language-pack-fr-base=1:22.04+20240212`
 
@@ -2047,13 +2039,9 @@ Licenses: (parsed from: `/usr/share/doc/language-pack-fr-base/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris language-pack-fr-base=1:22.04+20240212
-'http://archive.ubuntu.com/ubuntu/pool/main/l/language-pack-fr-base/language-pack-fr-base_22.04%2b20240212.dsc' language-pack-fr-base_22.04+20240212.dsc 1571 SHA512:d2f258a9d88764d4b4843be552a492d29ce144b85340b5474ea8174fb6dfaabe64f94a968b5f2affdf12b6d8815e1e1a3c1778cfa9e5bfa63cd917bb114ec08c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/language-pack-fr-base/language-pack-fr-base_22.04%2b20240212.tar.xz' language-pack-fr-base_22.04+20240212.tar.xz 3709636 SHA512:48c57e4d16909444da3de7c920e280c8bd56be0d5f58872c0a1645f71f564def29807ec5a072b1f739133083ef62e3c1b3bb8842063a8b56fbac4aaad445947b
-```
 
 ### `dpkg` source package: `language-pack-fr=1:22.04+20240212`
 
@@ -2065,13 +2053,9 @@ Licenses: (parsed from: `/usr/share/doc/language-pack-fr/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris language-pack-fr=1:22.04+20240212
-'http://archive.ubuntu.com/ubuntu/pool/main/l/language-pack-fr/language-pack-fr_22.04%2b20240212.dsc' language-pack-fr_22.04+20240212.dsc 1532 SHA512:1e74d02be777ef0966290808f0e68fecb766eee0af7a26c98f911ee94f5016ec00ec5aa38b2b7271cf62e2ddea3c8d9fb5906b6bc1c89e10800de12a85381fd4
-'http://archive.ubuntu.com/ubuntu/pool/main/l/language-pack-fr/language-pack-fr_22.04%2b20240212.tar.xz' language-pack-fr_22.04+20240212.tar.xz 8060 SHA512:9c8de92aa2eebb4e8098cb388313250d67eb6ba4ffdd71969de25e54db01dd5fdeabc87c22f12cc1c48c70351bfb49a5039e97323fa7957f4330238d6ea65401
-```
 
 ### `dpkg` source package: `lapack=3.10.0-2ubuntu1`
 
@@ -6490,14 +6474,9 @@ Licenses: (parsed from: `/usr/share/doc/vim/copyright`, `/usr/share/doc/vim-comm
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:8.2.3995-1ubuntu2.17
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.2.3995-1ubuntu2.17.dsc' vim_8.2.3995-1ubuntu2.17.dsc 3033 SHA512:eb73c2ec1100dd1a40886ddf18d922f2d1e26a07dd06aa8cedb8518d4deee35e02a2761174704ed725374ffbc1e179bf65727c9a61063c9b8b40b5836301f417
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.2.3995.orig.tar.xz' vim_8.2.3995.orig.tar.xz 10377164 SHA512:2326b3484858c92f55076bcd2336290cc292b35c9a8963e3b14e7140dd1fe36179fe8431d71b0121f8345dac3627c80cd016899aa6120f3354fa882144a28b07
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.2.3995-1ubuntu2.17.debian.tar.xz' vim_8.2.3995-1ubuntu2.17.debian.tar.xz 300724 SHA512:15af56f0d6196278f1e3b44b73af0f055b708c5bb8f7b3a65d87d76ca4e86a5caa892ec46339bb7109b2154a1b6fc5be5e2b01df26368a33bc52cd355bf431c7
-```
 
 ### `dpkg` source package: `wayland=1.20.0-1ubuntu0.1`
 
