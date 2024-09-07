@@ -1,7 +1,7 @@
 ## `eclipse-mosquitto:2-openssl`
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:ef4fe27be69b323744e89181c7095c5c1abbaa38c8c6727f9d930a9d4675ba2b
+$ docker pull eclipse-mosquitto@sha256:dab617e86af6b07e3212a98843f253648427a1a2cfc2f61d9c03805021caa8c9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -164,19 +164,19 @@ $ docker pull eclipse-mosquitto@sha256:bd73df708e744d4568d64a13e9e178e6827694555
 ### `eclipse-mosquitto:2-openssl` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:749b46719b5147bf4caec7119c5ebd3a82b7239ad6b7bf676acf533992ca2356
+$ docker pull eclipse-mosquitto@sha256:c0252b2cc7bb0c4899a32fbfbdd8375686bd73190d740c07c0e4c7b1671b1ab9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.1 MB (4083647 bytes)**  
+-	Total Size: **4.1 MB (4084483 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7715ae3d8b17de372215488eaacb5250acd4d68694fcf307afca9b4395ee795`
+-	Image ID: `sha256:ff797b114ac9c8e04e7922a2315e47e84b6aa795803f36c1bf4f16a827afc46c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["\/usr\/sbin\/mosquitto","-c","\/mosquitto\/config\/mosquitto.conf"]`
 
 ```dockerfile
 # Mon, 18 Sep 2023 21:32:22 GMT
-ADD file:4a10978248445fe045fc2859ce867988ab71bd2281ad7d88b62597252642a56b in / 
+ADD file:c2dbff469fced00345f9627d1efd892f94d53dbb31a6485fa9411b2fb1b4840f in / 
 # Mon, 18 Sep 2023 21:32:22 GMT
 CMD ["/bin/sh"]
 # Mon, 18 Sep 2023 21:32:22 GMT
@@ -198,40 +198,40 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ```
 
 -	Layers:
-	-	`sha256:4983c3fe2029a430985943e6d87b35248366efd28cee655acc3ebff5daf703fa`  
-		Last Modified: Mon, 22 Jul 2024 21:44:57 GMT  
-		Size: 3.3 MB (3339494 bytes)  
+	-	`sha256:720f3032cd1105e6311c8adee3ee0f3b6827bec2c48f1cfff486a347ad22f05c`  
+		Last Modified: Fri, 06 Sep 2024 22:44:58 GMT  
+		Size: 3.3 MB (3340347 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8620123aecb3fe261f9268cc5397fa49d06d9af0a07ae41a38161e8227076520`  
-		Last Modified: Tue, 23 Jul 2024 13:58:56 GMT  
-		Size: 743.8 KB (743784 bytes)  
+	-	`sha256:b25f25c98b2278f1d69312a87f36293265386ddfc81ee9b0a93bde618ceaf8ea`  
+		Last Modified: Sat, 07 Sep 2024 04:50:32 GMT  
+		Size: 743.8 KB (743767 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afefc64540d22ad906eb124e94d1006f87e21b7aed96cffbbedca609602554d4`  
-		Last Modified: Tue, 23 Jul 2024 13:58:56 GMT  
+	-	`sha256:b6f4093f95fcdcc3a7e420bdad5863b7e35441d99eb3ae4bef8978ae3e288aca`  
+		Last Modified: Sat, 07 Sep 2024 04:50:31 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-mosquitto:2-openssl` - unknown; unknown
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:b593205aa714de8eebef52941fa7de996f9c081a2994d5daeb5d73ad1d2c2319
+$ docker pull eclipse-mosquitto@sha256:048206bdbe293c091fc7a787b5f2a58311847ee4ca6ff0721131c0bd93043558
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **200.9 KB (200924 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19bf945ad86ebc794bb561244a77fb477b0803632e7b83fb339cf5ccd9986f0b`
+-	Image ID: `sha256:a5658789f271cae534de0f6f465b6fef01076a55f05bd26a48f40bb71fa80ec8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e06a00efbfae8d412a6bc19421b5b985121b66e87a626bef4e79cbb6100b26e3`  
-		Last Modified: Tue, 23 Jul 2024 13:58:56 GMT  
+	-	`sha256:9a507ac1eddbccf2c44aea90296519004eeda9d16904c8a4df660a480017900b`  
+		Last Modified: Sat, 07 Sep 2024 04:50:31 GMT  
 		Size: 179.0 KB (178974 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:34409f83afcffce4d27b25eab370dea86ec37e1e05092593ef6b80f77e2f5438`  
-		Last Modified: Tue, 23 Jul 2024 13:58:56 GMT  
+	-	`sha256:fbf2160898efa27e7f44b2af27a26acd8245ba4d0f5d307c4c32f0436f4cd871`  
+		Last Modified: Sat, 07 Sep 2024 04:50:31 GMT  
 		Size: 21.9 KB (21950 bytes)  
 		MIME: application/vnd.in-toto+json
 
