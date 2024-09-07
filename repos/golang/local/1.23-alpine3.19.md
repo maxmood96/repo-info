@@ -1,16 +1,16 @@
-# `golang:1.23.0-alpine3.19`
+# `golang:1.23.1-alpine3.19`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7513740d8b3ba5c66e89161f65db0399ad689ddd519c8c5276f520107bb080a1`
-- Created: `2024-08-13T17:10:31Z`
-- Virtual Size: ~ 244.98 Mb  
+- Image ID: `sha256:910bfff0c5e9f93f97c33358a92816b1508cb19754dc0aa232dcfc75637193e4`
+- Created: `2024-09-05T16:50:05Z`
+- Virtual Size: ~ 245.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.23.0`
+  - `GOLANG_VERSION=1.23.1`
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
 
@@ -172,16 +172,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.6-r2 description:
+libcrypto3-3.1.7-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.6-r2 webpage:
+libcrypto3-3.1.7-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.6-r2 installed size:
+libcrypto3-3.1.7-r0 installed size:
 4512 KiB
 
-libcrypto3-3.1.6-r2 license:
+libcrypto3-3.1.7-r0 license:
 Apache-2.0
 
 ```
@@ -189,16 +189,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.6-r2 description:
+libssl3-3.1.7-r0 description:
 SSL shared libraries
 
-libssl3-3.1.6-r2 webpage:
+libssl3-3.1.7-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.6-r2 installed size:
+libssl3-3.1.7-r0 installed size:
 548 KiB
 
-libssl3-3.1.6-r2 license:
+libssl3-3.1.7-r0 license:
 Apache-2.0
 
 ```
