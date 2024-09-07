@@ -1,15 +1,16 @@
 ## `buildpack-deps:oracular-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:08d142ab883a3ec4b5087af694735c30a4dad65c50fa3254d9145f20180fe239
+$ docker pull buildpack-deps@sha256:b9d425635b55508007dfba534c2f299d9210a784d2a06029ad2f6665c77570ea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 5
+-	Platforms: 6
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
+	-	linux; riscv64
 	-	linux; s390x
 
 ### `buildpack-deps:oracular-scm` - linux; amd64
@@ -194,6 +195,52 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 	-	`sha256:314fe13ab777163606b9145019d08931bba0381111e334bc7a164f67a035ed73`  
 		Last Modified: Sat, 07 Sep 2024 06:06:31 GMT  
 		Size: 52.2 MB (52185743 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `buildpack-deps:oracular-scm` - linux; riscv64
+
+```console
+$ docker pull buildpack-deps@sha256:35613709acc4ea8bcfcfa6d711b2271dff5b9e120bb8c0b6c6dac2f8c34db151
+```
+
+-	Docker Version: 23.0.11
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **106.0 MB (105976589 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7419577b50cc157b961183f2aaabbfe0f6b7a081e371798751ed9b9e2c1e3f3a`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Sun, 11 Aug 2024 15:53:15 GMT
+ARG RELEASE
+# Sun, 11 Aug 2024 15:53:15 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Sun, 11 Aug 2024 15:53:15 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Sun, 11 Aug 2024 15:53:16 GMT
+LABEL org.opencontainers.image.version=24.10
+# Sun, 11 Aug 2024 15:53:46 GMT
+ADD file:456f458279dbf8e3c880562bb6c249e83ce6b17f95c004e173c314809ef77c92 in / 
+# Sun, 11 Aug 2024 15:53:48 GMT
+CMD ["/bin/bash"]
+# Sat, 07 Sep 2024 14:21:55 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	apt-get dist-clean
+# Sat, 07 Sep 2024 14:24:43 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean
+```
+
+-	Layers:
+	-	`sha256:5e6ada0e2c161b5121d9519696516cf03e7fe74dd064fab2e287b03e1ea53c60`  
+		Last Modified: Tue, 20 Aug 2024 03:32:11 GMT  
+		Size: 32.5 MB (32490296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9b351c7c752d081674b0efaec97a401d9b590bfb4801154cd82ce0f93d6f53bc`  
+		Last Modified: Sat, 07 Sep 2024 14:34:21 GMT  
+		Size: 18.5 MB (18499571 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2241754e98cf7884cc7b38dc30666fa15dfe2c846239595a26f28fa0792b730c`  
+		Last Modified: Sat, 07 Sep 2024 14:35:33 GMT  
+		Size: 55.0 MB (54986722 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:oracular-scm` - linux; s390x
