@@ -85,9 +85,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apparmor=2.13.3-7ubuntu5.3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.13.3-7ubuntu5.3.dsc' apparmor_2.13.3-7ubuntu5.3.dsc 3322 SHA512:6392f20e716380807b54282a19ccbbadc33614cb3064c94fe63a874f46af208f4b668b50e1dc1152a10c9927d488a698c1b93300418c47682c781d3ddeedec83
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.13.3-7ubuntu5.3build2.dsc' apparmor_2.13.3-7ubuntu5.3build2.dsc 3346 SHA512:8808fe23c874962ef5e08da63f7db8d3bbb389cc6dc72c2824d1d29fda6546b837b22c251f9dc6f8d3f3bcbfc2b32a2ceeb05a5d0002cf69a6c9c9ec027ff65f
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.13.3.orig.tar.gz' apparmor_2.13.3.orig.tar.gz 7384974 SHA512:137b2bf026ec655b662e9c264d7d48d878db474a3f1cc5a38bfd7df2f85b682bddb77b091ab5595178231a0a262c9ae9cdd61409461cd889bdee156906ef1141
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.13.3-7ubuntu5.3.debian.tar.xz' apparmor_2.13.3-7ubuntu5.3.debian.tar.xz 148384 SHA512:004046501446a22080f7198e94371376eda184ac16f55f25d334fe915abdc4d0118fe72be0a6957595fa35c8efcccfb41b067cfa4351c8fede48ccc67128e692
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.13.3-7ubuntu5.3build2.debian.tar.xz' apparmor_2.13.3-7ubuntu5.3build2.debian.tar.xz 148476 SHA512:41417c789f1f77233aa8f493279f8e9d6487b75425e7aa6ca43a08b26fd678df7ab72cad66af3f631efc1d9df51cb9ad4a81ca2431e370d780eb4818933b3542
 ```
 
 ### `dpkg` source package: `apt=2.0.10`
