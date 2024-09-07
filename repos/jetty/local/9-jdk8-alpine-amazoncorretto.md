@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f8af37dc7a89dae2e86207a96d3b4e63205b0db5feeb5bc66a3e3a66773ff7d6`
+- Image ID: `sha256:1373b8804dda9bc1c945570ff165e70e782c1298698a798094b4fa7a0a365b36`
 - Created: `2024-07-08T06:35:54Z`
-- Virtual Size: ~ 237.79 Mb  
+- Virtual Size: ~ 237.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -229,16 +229,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.8.0-r0 description:
+curl-8.9.1-r1 description:
 URL retrival utility and library
 
-curl-8.8.0-r0 webpage:
+curl-8.9.1-r1 webpage:
 https://curl.se/
 
-curl-8.8.0-r0 installed size:
-244 KiB
+curl-8.9.1-r1 installed size:
+248 KiB
 
-curl-8.8.0-r0 license:
+curl-8.9.1-r1 license:
 curl
 
 ```
@@ -535,16 +535,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r3 description:
+libcrypto3-3.3.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r3 webpage:
+libcrypto3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r3 installed size:
+libcrypto3-3.3.2-r0 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r3 license:
+libcrypto3-3.3.2-r0 license:
 Apache-2.0
 
 ```
@@ -552,16 +552,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.8.0-r0 description:
+libcurl-8.9.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.8.0-r0 webpage:
+libcurl-8.9.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.8.0-r0 installed size:
-620 KiB
+libcurl-8.9.1-r1 installed size:
+628 KiB
 
-libcurl-8.8.0-r0 license:
+libcurl-8.9.1-r1 license:
 curl
 
 ```
@@ -722,16 +722,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r3 description:
+libssl3-3.3.2-r0 description:
 SSL shared libraries
 
-libssl3-3.3.1-r3 webpage:
+libssl3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r3 installed size:
+libssl3-3.3.2-r0 installed size:
 796 KiB
 
-libssl3-3.3.1-r3 license:
+libssl3-3.3.2-r0 license:
 Apache-2.0
 
 ```
