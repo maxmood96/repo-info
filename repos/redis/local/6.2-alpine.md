@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:36c1d3cfe18f4b12d4640576f7048068acbfc3625027b6bbb46bba0e31b11831`
+- Image ID: `sha256:7de0dedd123b8cb2b105ace4e8d00b8bba5ad7be39617dfa229acff315fe4fbf`
 - Created: `2024-05-22T23:17:59Z`
-- Virtual Size: ~ 30.07 Mb  
+- Virtual Size: ~ 30.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -140,16 +140,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r3 description:
+libcrypto3-3.3.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r3 webpage:
+libcrypto3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r3 installed size:
+libcrypto3-3.3.2-r0 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r3 license:
+libcrypto3-3.3.2-r0 license:
 Apache-2.0
 
 ```
@@ -157,16 +157,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r3 description:
+libssl3-3.3.2-r0 description:
 SSL shared libraries
 
-libssl3-3.3.1-r3 webpage:
+libssl3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r3 installed size:
+libssl3-3.3.2-r0 installed size:
 796 KiB
 
-libssl3-3.3.1-r3 license:
+libssl3-3.3.2-r0 license:
 Apache-2.0
 
 ```
@@ -242,16 +242,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2024a-r1 description:
+tzdata-2024b-r0 description:
 Timezone data
 
-tzdata-2024a-r1 webpage:
+tzdata-2024b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2024a-r1 installed size:
-1560 KiB
+tzdata-2024b-r0 installed size:
+1512 KiB
 
-tzdata-2024a-r1 license:
+tzdata-2024b-r0 license:
 Public-Domain
 
 ```
