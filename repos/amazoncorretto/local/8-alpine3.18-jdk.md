@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c403c0e785e22ca87c8930fd308b1e84854022d90738bd00d983c447b1ca6032`
+- Image ID: `sha256:a4c614a9aa4c39e645e33c4ea59bace64eb02c5c8f4f57319b5522cf4da9afe6`
 - Created: `2024-07-16T22:56:42Z`
 - Virtual Size: ~ 206.81 Mb  
   (total size of all layers on-disk)
@@ -205,16 +205,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.6-r0 description:
+libcrypto3-3.1.7-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.6-r0 webpage:
+libcrypto3-3.1.7-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.6-r0 installed size:
+libcrypto3-3.1.7-r0 installed size:
 4480 KiB
 
-libcrypto3-3.1.6-r0 license:
+libcrypto3-3.1.7-r0 license:
 Apache-2.0
 
 ```
@@ -222,16 +222,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.6-r0 description:
+libssl3-3.1.7-r0 description:
 SSL shared libraries
 
-libssl3-3.1.6-r0 webpage:
+libssl3-3.1.7-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.6-r0 installed size:
+libssl3-3.1.7-r0 installed size:
 552 KiB
 
-libssl3-3.1.6-r0 license:
+libssl3-3.1.7-r0 license:
 Apache-2.0
 
 ```
