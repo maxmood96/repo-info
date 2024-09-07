@@ -1,14 +1,15 @@
 ## `buildpack-deps:oracular-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:045c5c69bd764d7cc545a2127299e864591d6b4ff12214533d5897b979420a8c
+$ docker pull buildpack-deps@sha256:39b90933bb08b970f55f32ee3c41f4096d480439e0ce12b1fb603e2af2a78d2b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 4
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
+	-	linux; ppc64le
 	-	linux; s390x
 
 ### `buildpack-deps:oracular-curl` - linux; amd64
@@ -129,6 +130,46 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 	-	`sha256:12168fbcdb069935dfac3395cf822dcc16837e5f6b7f9c66bb10e5975d6ac3ea`  
 		Last Modified: Sat, 07 Sep 2024 04:25:43 GMT  
 		Size: 18.3 MB (18294539 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `buildpack-deps:oracular-curl` - linux; ppc64le
+
+```console
+$ docker pull buildpack-deps@sha256:ba80ab0b3f996f6fbb71e33d1334c69ab19a4fa8fcfe394326d235d7d3c08cf6
+```
+
+-	Docker Version: 23.0.11
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **56.5 MB (56493585 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:800ade7a21d3dff2b3db4ab70b9a99841ecf9079ea7767c88254303ce9809402`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Sun, 11 Aug 2024 15:39:31 GMT
+ARG RELEASE
+# Sun, 11 Aug 2024 15:39:31 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Sun, 11 Aug 2024 15:39:31 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Sun, 11 Aug 2024 15:39:31 GMT
+LABEL org.opencontainers.image.version=24.10
+# Sun, 11 Aug 2024 15:39:34 GMT
+ADD file:c995bac66bc8ed18a9e5e7591143905810e18f366ac82dd51470210c97712108 in / 
+# Sun, 11 Aug 2024 15:39:34 GMT
+CMD ["/bin/bash"]
+# Sat, 07 Sep 2024 05:58:41 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	apt-get dist-clean
+```
+
+-	Layers:
+	-	`sha256:e5263b57d12e15968f82be92102a4bc2eec746bcdb5e8f52265768241e5d8ad7`  
+		Last Modified: Sat, 07 Sep 2024 06:06:12 GMT  
+		Size: 36.1 MB (36122058 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:01ba2db1b506c462e2b35c8a62eeb6cb6de7fba291c922a3627ba9ee572d5d40`  
+		Last Modified: Sat, 07 Sep 2024 06:06:08 GMT  
+		Size: 20.4 MB (20371527 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:oracular-curl` - linux; s390x
