@@ -1,10 +1,10 @@
-# `cassandra:4.1.6`
+# `cassandra:5.0.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cf3a2a7b198be0691cf1d45da6187751b8a9e4cb8ac9000aff587825a02a97ad`
-- Created: `2024-08-19T14:24:25Z`
-- Virtual Size: ~ 354.05 Mb  
+- Image ID: `sha256:b032693265cb56ef0d123bea783d24f53fc92a09a7f7a16ffb34ef22e3f64903`
+- Created: `2024-09-05T20:24:30Z`
+- Virtual Size: ~ 375.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,13 +15,13 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.24+8`
+  - `JAVA_VERSION=jdk-17.0.12+7`
   - `GOSU_VERSION=1.17`
   - `CASSANDRA_HOME=/opt/cassandra`
   - `CASSANDRA_CONF=/etc/cassandra`
   - `GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55 	7464AAD9068241C50BA6A26232F35CB2F546D93E 	CEC5C50B9C629EF0F5AB2706650B72EB14CCD622`
-  - `CASSANDRA_VERSION=4.1.6`
-  - `CASSANDRA_SHA512=3bae2a75aefc139ceaa9beb4709f9ee533517937ae292aba0102788cbf08f94f503c707124beaf06e28eca20dacf00a729da326c178bda432adfac2cd32b91c6`
+  - `CASSANDRA_VERSION=5.0.0`
+  - `CASSANDRA_SHA512=cf91d9a5fe370a3b7eab9447852c491de1c17aca5a71c5ff06a672d210f8d6500d973f2d1827250b071ab5e7d6d5d58c0e79dcef5b134913b4a610674d6ae7ed`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -1742,15 +1742,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.17
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.17.dsc' openssl_3.0.2-0ubuntu1.17.dsc 2730 SHA512:80f797dd70e2b4710fcdeb74aa211ad3df091b84fefaa1df2f7b6565c9451613332d337cc35d7977531d4c25069334dc22eedd22084a1ab5d5d647729d6a29d7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.17.debian.tar.xz' openssl_3.0.2-0ubuntu1.17.debian.tar.xz 259832 SHA512:b294c87c9d8d734b8038aa1d29c611aa10854f9420d2441932e9c4269994885bdc4d84c412d3fa5c03cee8f5cac9ded11f477a198b35abf40ecb4452336976c4
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
