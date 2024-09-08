@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac021f8f020dfcbed16976b0ed81fe3f852294d5ed7e7e9ae848d9cd27ceccf4`
+- Image ID: `sha256:ee8718185e934cf00977ac16947769332a38a80ba94b1958d5134cc5096dddec`
 - Created: `2024-05-22T22:40:32Z`
 - Virtual Size: ~ 61.75 Mb  
   (total size of all layers on-disk)
@@ -155,16 +155,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `glib`
 
 ```console
-glib-2.80.2-r0 description:
+glib-2.80.4-r0 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.80.2-r0 webpage:
+glib-2.80.4-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.80.2-r0 installed size:
+glib-2.80.4-r0 installed size:
 5216 KiB
 
-glib-2.80.2-r0 license:
+glib-2.80.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -206,16 +206,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r3 description:
+libcrypto3-3.3.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r3 webpage:
+libcrypto3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r3 installed size:
+libcrypto3-3.3.2-r0 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r3 license:
+libcrypto3-3.3.2-r0 license:
 Apache-2.0
 
 ```
@@ -308,16 +308,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r3 description:
+libssl3-3.3.2-r0 description:
 SSL shared libraries
 
-libssl3-3.3.1-r3 webpage:
+libssl3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r3 installed size:
+libssl3-3.3.2-r0 installed size:
 796 KiB
 
-libssl3-3.3.1-r3 license:
+libssl3-3.3.2-r0 license:
 Apache-2.0
 
 ```
