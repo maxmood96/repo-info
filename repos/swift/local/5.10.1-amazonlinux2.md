@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0585fa6cb494f466205e73792dc4b42b3edcc3da4d02d73b218eaf7b6df6086e`
+- Image ID: `sha256:c5cdf69112e1f641fcee86a48df32aa4ca924fff08c6a8622b396e646b315ecf`
 - Created: `2024-06-06T15:11:32Z`
 - Virtual Size: ~ 2.96 Gb  
   (total size of all layers on-disk)
@@ -610,15 +610,15 @@ $ dnf --quiet download --source --url info-5.1-5.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f34c19b7719e597dee5e40475083f6b2d18fe3de0a85e79ca4279cd5058c80cd/../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `kernel-headers-4.14.350-266.564.amzn2.x86_64`
+### `rpm` package: `kernel-headers-4.14.352-267.564.amzn2.x86_64`
 
 Licenses (from `rpm --query`): GPLv2 and Redistributable, no modification permitted
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url kernel-headers-4.14.350-266.564.amzn2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f34c19b7719e597dee5e40475083f6b2d18fe3de0a85e79ca4279cd5058c80cd/../../../../../blobstore/79da7c783d22ebc569c354303d7cd52a753c6172602b841cd8f7bfc0efd9920e/kernel-4.14.350-266.564.amzn2.src.rpm
+$ dnf --quiet download --source --url kernel-headers-4.14.352-267.564.amzn2
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f34c19b7719e597dee5e40475083f6b2d18fe3de0a85e79ca4279cd5058c80cd/../../../../../blobstore/a8cf347db5e781006ec413ac2cac6d47da76b2aacff0d62ef1db9177f94b7a15/kernel-4.14.352-267.564.amzn2.src.rpm
 ```
 
 ### `rpm` package: `keyutils-libs-1.5.8-3.amzn2.0.2.x86_64`
