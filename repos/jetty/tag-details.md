@@ -14584,135 +14584,300 @@ $ docker pull jetty@sha256:c4eeca99710abf1698ef406357f14c00d00455b7856028e3784bf
 
 ## `jetty:10.0.23`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jdk11`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jdk11-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jdk11-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jdk11-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jdk11-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jdk11-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jdk17`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jdk17-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jdk17-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jdk17-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jdk17-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jdk17-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jdk21`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jdk21-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jdk21-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jdk21-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jdk21-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jdk21-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jre11`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jre11-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jre11-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jre11-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jre17`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jre17-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jre17-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jre17-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jre21`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jre21-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jre21-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:10.0.23-jre21-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11`
 
@@ -28890,135 +29055,300 @@ $ docker pull jetty@sha256:dc6ec4f90861c2bbddfae5acf5893f0e9ac951bb7cca44ab7f36c
 
 ## `jetty:11.0.23`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jdk11`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jdk11-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jdk11-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jdk11-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jdk11-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jdk11-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jdk17`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jdk17-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jdk17-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jdk17-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jdk17-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jdk17-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jdk21`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jdk21-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jdk21-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jdk21-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jdk21-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jdk21-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jre11`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jre11-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jre11-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jre11-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jre17`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jre17-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jre17-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jre17-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jre21`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jre21-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jre21-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:11.0.23-jre21-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12`
 
@@ -32359,19 +32689,39 @@ $ docker pull jetty@sha256:123043715f33908aeaa4166f7542761323283fb3329c9d25061c2
 
 ## `jetty:12-jdk22`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12-jdk22-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12-jdk22-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12-jdk22-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12-jre17`
 
@@ -37360,19 +37710,39 @@ $ docker pull jetty@sha256:123043715f33908aeaa4166f7542761323283fb3329c9d25061c2
 
 ## `jetty:12.0-jdk22`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0-jdk22-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0-jdk22-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0-jdk22-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0-jre17`
 
@@ -39024,111 +39394,246 @@ $ docker pull jetty@sha256:2f8781deb7dd6134c12390269932533ad9e8709c2883dd4d96efd
 
 ## `jetty:12.0.12`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jdk17`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jdk17-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jdk17-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jdk17-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jdk17-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jdk17-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jdk21`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jdk21-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jdk21-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jdk21-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jdk21-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jdk21-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jdk22`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jdk22-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jdk22-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jdk22-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jre17`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jre17-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jre17-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jre17-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jre21`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jre21-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jre21-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:12.0.12-jre21-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9`
 
@@ -56946,167 +57451,372 @@ $ docker pull jetty@sha256:67b3be70cad7b3d97f5c640ee6a10e9ceb797c249674bf4273512
 
 ## `jetty:9.4.56`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk11`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk11-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk11-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk11-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk11-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk11-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk17`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk17-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk17-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk17-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk17-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk17-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk21`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk21-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk21-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk21-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk21-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk21-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk8`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk8-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk8-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jdk8-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jre11`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jre11-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jre11-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jre11-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jre17`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jre17-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jre17-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jre17-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jre21`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jre21-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jre21-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jre21-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jre8`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jre8-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jre8-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:9.4.56-jre8-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `jetty:jdk17`
 
