@@ -1,10 +1,10 @@
-# `postgres:17beta3-alpine3.20`
+# `postgres:17rc1-alpine3.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:55f484da1e7bcb414fcaac4f10233ad9c3655e5b797bb7851badca2ee8abe298`
-- Created: `2024-08-08T17:34:59Z`
-- Virtual Size: ~ 247.97 Mb  
+- Image ID: `sha256:573bc0bab76e9e6fb9d0c6bf0da317875899992f5457d6bc72af34fa28c508be`
+- Created: `2024-09-05T13:44:37Z`
+- Virtual Size: ~ 247.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,8 +14,8 @@
   - `GOSU_VERSION=1.17`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=17`
-  - `PG_VERSION=17beta3`
-  - `PG_SHA256=010dfaff9fcca6afa2fd576eea89cdabcefc262aa0ba89a6845eaab4d4b08f71`
+  - `PG_VERSION=17rc1`
+  - `PG_SHA256=cef689e2de8c3d605d8406c065573b8d70859fc6f2a8d720b0d98a6d62ef16e8`
   - `DOCKER_PG_LLVM_DEPS=llvm15-dev 		clang15`
   - `PGDATA=/var/lib/postgresql/data`
 
@@ -279,16 +279,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r3 description:
+libcrypto3-3.3.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r3 webpage:
+libcrypto3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r3 installed size:
+libcrypto3-3.3.2-r0 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r3 license:
+libcrypto3-3.3.2-r0 license:
 Apache-2.0
 
 ```
@@ -432,16 +432,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r3 description:
+libssl3-3.3.2-r0 description:
 SSL shared libraries
 
-libssl3-3.3.1-r3 webpage:
+libssl3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r3 installed size:
+libssl3-3.3.2-r0 installed size:
 796 KiB
 
-libssl3-3.3.1-r3 license:
+libssl3-3.3.2-r0 license:
 Apache-2.0
 
 ```
@@ -687,16 +687,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2024a-r1 description:
+tzdata-2024b-r0 description:
 Timezone data
 
-tzdata-2024a-r1 webpage:
+tzdata-2024b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2024a-r1 installed size:
-1560 KiB
+tzdata-2024b-r0 installed size:
+1512 KiB
 
-tzdata-2024a-r1 license:
+tzdata-2024b-r0 license:
 Public-Domain
 
 ```
