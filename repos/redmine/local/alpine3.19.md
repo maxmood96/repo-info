@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:95c876104d3236dc1fff35550d555e1bd2480e086e85451b48640db3ee6eddf7`
+- Image ID: `sha256:44b9fb8c8e448b4262616fa8f16d1d22c6c5c4ee8488a9294a308d700ed3e9c0`
 - Created: `2024-06-18T22:07:17Z`
-- Virtual Size: ~ 418.09 Mb  
+- Virtual Size: ~ 418.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -99,16 +99,16 @@ GPL-2.0-only
 ### `apk` package: `apr`
 
 ```console
-apr-1.7.4-r0 description:
+apr-1.7.5-r0 description:
 The Apache Portable Runtime
 
-apr-1.7.4-r0 webpage:
+apr-1.7.5-r0 webpage:
 https://apr.apache.org/
 
-apr-1.7.4-r0 installed size:
+apr-1.7.5-r0 installed size:
 216 KiB
 
-apr-1.7.4-r0 license:
+apr-1.7.5-r0 license:
 Apache-2.0
 
 ```
@@ -745,16 +745,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.6-r2 description:
+libcrypto3-3.1.7-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.6-r2 webpage:
+libcrypto3-3.1.7-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.6-r2 installed size:
+libcrypto3-3.1.7-r0 installed size:
 4512 KiB
 
-libcrypto3-3.1.6-r2 license:
+libcrypto3-3.1.7-r0 license:
 Apache-2.0
 
 ```
@@ -796,16 +796,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.2-r0 description:
+libexpat-2.6.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.2-r0 webpage:
+libexpat-2.6.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.2-r0 installed size:
+libexpat-2.6.3-r0 installed size:
 144 KiB
 
-libexpat-2.6.2-r0 license:
+libexpat-2.6.3-r0 license:
 MIT
 
 ```
@@ -1102,16 +1102,16 @@ BSD-3-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.6-r2 description:
+libssl3-3.1.7-r0 description:
 SSL shared libraries
 
-libssl3-3.1.6-r2 webpage:
+libssl3-3.1.7-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.6-r2 installed size:
+libssl3-3.1.7-r0 installed size:
 548 KiB
 
-libssl3-3.1.6-r2 license:
+libssl3-3.1.7-r0 license:
 Apache-2.0
 
 ```
@@ -1867,16 +1867,16 @@ MIT
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.11.9-r0 description:
+pyc-3.11.9-r1 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.11.9-r0 webpage:
+pyc-3.11.9-r1 webpage:
 https://www.python.org/
 
-pyc-3.11.9-r0 installed size:
+pyc-3.11.9-r1 installed size:
 4096 B
 
-pyc-3.11.9-r0 license:
+pyc-3.11.9-r1 license:
 PSF-2.0
 
 ```
@@ -1884,16 +1884,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.11.9-r0 description:
+python3-3.11.9-r1 description:
 High-level scripting language
 
-python3-3.11.9-r0 webpage:
+python3-3.11.9-r1 webpage:
 https://www.python.org/
 
-python3-3.11.9-r0 installed size:
+python3-3.11.9-r1 installed size:
 24 MiB
 
-python3-3.11.9-r0 license:
+python3-3.11.9-r1 license:
 PSF-2.0
 
 ```
@@ -1901,16 +1901,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.11.9-r0 description:
+python3-pyc-3.11.9-r1 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.11.9-r0 webpage:
+python3-pyc-3.11.9-r1 webpage:
 https://www.python.org/
 
-python3-pyc-3.11.9-r0 installed size:
+python3-pyc-3.11.9-r1 installed size:
 4096 B
 
-python3-pyc-3.11.9-r0 license:
+python3-pyc-3.11.9-r1 license:
 PSF-2.0
 
 ```
@@ -1918,16 +1918,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.11.9-r0 description:
+python3-pycache-pyc0-3.11.9-r1 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.11.9-r0 webpage:
+python3-pycache-pyc0-3.11.9-r1 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.11.9-r0 installed size:
+python3-pycache-pyc0-3.11.9-r1 installed size:
 13 MiB
 
-python3-pycache-pyc0-3.11.9-r0 license:
+python3-pycache-pyc0-3.11.9-r1 license:
 PSF-2.0
 
 ```
