@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cea7d2834034c138fd179adb35b8ff47cc4a2374d7ad661b9e0122e31c913c74`
+- Image ID: `sha256:7fc1bebe8b9aa8384d5316f3f4ffe0752a0eb2c46173be9aace683a7dcd5472c`
 - Created: `2024-05-22T19:14:49Z`
 - Virtual Size: ~ 11.30 Mb  
   (total size of all layers on-disk)
@@ -140,16 +140,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r3 description:
+libcrypto3-3.3.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r3 webpage:
+libcrypto3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r3 installed size:
+libcrypto3-3.3.2-r0 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r3 license:
+libcrypto3-3.3.2-r0 license:
 Apache-2.0
 
 ```
@@ -174,16 +174,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r3 description:
+libssl3-3.3.2-r0 description:
 SSL shared libraries
 
-libssl3-3.3.1-r3 webpage:
+libssl3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r3 installed size:
+libssl3-3.3.2-r0 installed size:
 796 KiB
 
-libssl3-3.3.1-r3 license:
+libssl3-3.3.2-r0 license:
 Apache-2.0
 
 ```
