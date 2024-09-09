@@ -8123,19 +8123,39 @@ $ docker pull solr@sha256:e95e3f0f0e578cf685d7a37393db4feeeeef707cc0ea36bba9cd7e
 
 ## `solr:9.7`
 
-**does not exist** (yet?)
+```console
+$ docker pull solr@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `solr:9.7-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull solr@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `solr:9.7.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull solr@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `solr:9.7.0-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull solr@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `solr:latest`
 
