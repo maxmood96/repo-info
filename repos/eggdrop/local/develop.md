@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bd366d9d4db778c379ea933e0e590d80630a8e001e76042f5b775e94741d5054`
-- Created: `2024-08-08T20:21:56.312565812Z`
+- Image ID: `sha256:2bac9601bf3a0ea9df0d8cb4c39aab7d4f819ea81ccf60895582c6e9180da064`
+- Created: `2024-08-08T15:45:15Z`
 - Virtual Size: ~ 43.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -163,16 +163,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r3 description:
+libcrypto3-3.3.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r3 webpage:
+libcrypto3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r3 installed size:
+libcrypto3-3.3.2-r0 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r3 license:
+libcrypto3-3.3.2-r0 license:
 Apache-2.0
 
 ```
@@ -197,16 +197,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r3 description:
+libssl3-3.3.2-r0 description:
 SSL shared libraries
 
-libssl3-3.3.1-r3 webpage:
+libssl3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r3 installed size:
+libssl3-3.3.2-r0 installed size:
 796 KiB
 
-libssl3-3.3.1-r3 license:
+libssl3-3.3.2-r0 license:
 Apache-2.0
 
 ```
@@ -265,16 +265,16 @@ X11
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.1-r3 description:
+openssl-3.3.2-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.1-r3 webpage:
+openssl-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.3.1-r3 installed size:
+openssl-3.3.2-r0 installed size:
 784 KiB
 
-openssl-3.3.1-r3 license:
+openssl-3.3.2-r0 license:
 Apache-2.0
 
 ```
