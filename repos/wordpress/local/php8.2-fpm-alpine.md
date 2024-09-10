@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f850fd33c7f1fe2f001ba47c82cb2a1017a334ed378fd4d275787c677793e41f`
+- Image ID: `sha256:11d396d5cc3e4dffb5247be2d0f24573cd5bf69af305268c16a0ef8efd1c54d6`
 - Created: `2024-07-23T19:30:08Z`
-- Virtual Size: ~ 253.29 Mb  
+- Virtual Size: ~ 252.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -639,16 +639,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r3 description:
+libcrypto3-3.3.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r3 webpage:
+libcrypto3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r3 installed size:
+libcrypto3-3.3.2-r0 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r3 license:
+libcrypto3-3.3.2-r0 license:
 Apache-2.0
 
 ```
@@ -673,16 +673,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.2-r0 description:
+libexpat-2.6.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.2-r0 webpage:
+libexpat-2.6.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.2-r0 installed size:
+libexpat-2.6.3-r0 installed size:
 144 KiB
 
-libexpat-2.6.2-r0 license:
+libexpat-2.6.3-r0 license:
 MIT
 
 ```
@@ -911,16 +911,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r3 description:
+libssl3-3.3.2-r0 description:
 SSL shared libraries
 
-libssl3-3.3.1-r3 webpage:
+libssl3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r3 installed size:
+libssl3-3.3.2-r0 installed size:
 796 KiB
 
-libssl3-3.3.1-r3 license:
+libssl3-3.3.2-r0 license:
 Apache-2.0
 
 ```
@@ -1268,16 +1268,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.1-r3 description:
+openssl-3.3.2-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.1-r3 webpage:
+openssl-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.3.1-r3 installed size:
+openssl-3.3.2-r0 installed size:
 784 KiB
 
-openssl-3.3.1-r3 license:
+openssl-3.3.2-r0 license:
 Apache-2.0
 
 ```
