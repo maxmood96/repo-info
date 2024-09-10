@@ -1,7 +1,7 @@
 ## `jetty:12-jdk17-amazoncorretto`
 
 ```console
-$ docker pull jetty@sha256:e27eedac57e3bab3e5406886b86d28001d4921aa698983c2d031f845990226a1
+$ docker pull jetty@sha256:d0b717781f915e727edbe6f38f5aea098f1307f548914fcf21690b1569853f85
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -117,57 +117,57 @@ $ docker pull jetty@sha256:7619c05ccdf891386aae8d99f365efda7dab5f89795631d01f6ba
 ### `jetty:12-jdk17-amazoncorretto` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:7ed12a79dfa8bf53515ab4715d6c6bebe03cd1725ea05de6dafbc2e70abd2853
+$ docker pull jetty@sha256:979a7c41351fdbcd9927d09298a6e8eccdb4f8d03d8ca43e01a4f76efa952eaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.9 MB (255862928 bytes)**  
+-	Total Size: **256.0 MB (255960817 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f48d3693ab3888c29db167638da0ac29da8dad9517614da086a331052d40d30`
+-	Image ID: `sha256:d14c68647f8ca3ad1cc152be96d2faf7155b7893138b92ae5450b126df330005`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Tue, 16 Jul 2024 22:56:42 GMT
 COPY /rootfs/ / # buildkit
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Tue, 16 Jul 2024 22:56:42 GMT
 CMD ["/bin/bash"]
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Tue, 16 Jul 2024 22:56:42 GMT
 ARG version=17.0.12.7-1
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Tue, 16 Jul 2024 22:56:42 GMT
 # ARGS: version=17.0.12.7-1
 RUN set -eux     && export GNUPGHOME="$(mktemp -d)"     && curl -fL -o corretto.key https://yum.corretto.aws/corretto.key     && gpg --batch --import corretto.key     && gpg --batch --export --armor '6DC3636DAE534049C8B94623A122542AB04F24E3' > corretto.key     && rpm --import corretto.key     && rm -r "$GNUPGHOME" corretto.key     && curl -fL -o /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo     && grep -q '^gpgcheck=1' /etc/yum.repos.d/corretto.repo     && echo "priority=9" >> /etc/yum.repos.d/corretto.repo     && yum install -y java-17-amazon-corretto-devel-$version     && (find /usr/lib/jvm/java-17-amazon-corretto -name src.zip -delete || true)     && yum install -y fontconfig     && yum clean all # buildkit
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Tue, 16 Jul 2024 22:56:42 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Tue, 16 Jul 2024 22:56:42 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto
-# Mon, 08 Jul 2024 06:35:54 GMT
-ENV JETTY_VERSION=12.0.11
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
+ENV JETTY_VERSION=12.0.12
+# Mon, 09 Sep 2024 08:47:04 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 ENV TMPDIR=/tmp/jetty
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 08 Jul 2024 06:35:54 GMT
-ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.11/jetty-home-12.0.11.tar.gz
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
+ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.12/jetty-home-12.0.12.tar.gz
+# Mon, 09 Sep 2024 08:47:04 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ;     yum install -y shadow-utils tar xz gzip which && yum clean all ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 WORKDIR /var/lib/jetty
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 USER jetty
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 EXPOSE map[8080/tcp:{}]
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -180,39 +180,39 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sat, 07 Sep 2024 13:18:44 GMT  
 		Size: 150.9 MB (150864906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48a2375da25f74c1a14ca0f001f15942f5c76d8472348d9ae2678ca6b1ab8980`  
-		Last Modified: Sat, 07 Sep 2024 14:44:27 GMT  
-		Size: 40.4 MB (40410013 bytes)  
+	-	`sha256:eb1d5f564e9dd13a2565239cdd46b739bfc7b5ef1b6824372d5b4531dc66e45b`  
+		Last Modified: Tue, 10 Sep 2024 03:27:12 GMT  
+		Size: 40.5 MB (40507902 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b5f4e5b93db61373eb8f258d5f9db22f78c892a09ae67c9ebf0a787a6cffa54`  
-		Last Modified: Sat, 07 Sep 2024 14:44:25 GMT  
+	-	`sha256:b9d7f20257ecfd9726911aa0ed3a9158def6b58a4e41a05ab9be99184567f4f4`  
+		Last Modified: Tue, 10 Sep 2024 03:27:10 GMT  
 		Size: 1.6 KB (1634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12-jdk17-amazoncorretto` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:06ce603378ccb3fdc842613c62e94bf72a126c7aa721b7f8f52f61f98400c917
+$ docker pull jetty@sha256:86b6bdef82087533dcd585eacbac247f21e58186b56d58d91699f9a000a8150b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 MB (6044246 bytes)**  
+-	Total Size: **6.0 MB (6044244 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:527112bd7c128a65ae554a83c35bbc70c96ddc858aba4c71a2c28b8bb24aa907`
+-	Image ID: `sha256:f5e55f3efe62894b6ec7bf1fe69bd0d9ac537ac35c15eb24b18838606ea6ebf5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e8c099a9a7d4bc916aec0a8f9740d96fb5581fd18ee002b6f7353d7241963c42`  
-		Last Modified: Sat, 07 Sep 2024 14:44:26 GMT  
+	-	`sha256:3859c6db8444256f88d706306ecf06e487c0cbb11a6861884ca4b428378042ff`  
+		Last Modified: Tue, 10 Sep 2024 03:27:11 GMT  
 		Size: 6.0 MB (6026742 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aee01504f065747eaed5fadea6a67be70e94c1a886bbceeeb1550f01dd133336`  
-		Last Modified: Sat, 07 Sep 2024 14:44:25 GMT  
-		Size: 17.5 KB (17504 bytes)  
+	-	`sha256:2975304e9d0976f76bacc38ae15be0533d5a2cf432b5c3fc3d09b6f2c2aff2be`  
+		Last Modified: Tue, 10 Sep 2024 03:27:10 GMT  
+		Size: 17.5 KB (17502 bytes)  
 		MIME: application/vnd.in-toto+json

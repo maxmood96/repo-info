@@ -1,7 +1,7 @@
 ## `jetty:11-amazoncorretto`
 
 ```console
-$ docker pull jetty@sha256:2dddbc2d49b0d2b3b69ec925e5a10b9efcb8fb199709c756654f2590a2e565ac
+$ docker pull jetty@sha256:71ebe28d214e2f23c5b3466c0e17323849df1a4e51637604b29014e4e50bc2a2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -117,57 +117,57 @@ $ docker pull jetty@sha256:2521dd550c65c6fd78e60656978e6aef7f772da3730ee72706492
 ### `jetty:11-amazoncorretto` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:342262be1ef47ca3e82bebe2cb803fe5c74d8d2c77d29649b6bccf7097d10db5
+$ docker pull jetty@sha256:6960a0108ef8206d0c8aa008ba56c983ac891216557b9a63f47cbc439405fcc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.9 MB (248887844 bytes)**  
+-	Total Size: **248.9 MB (248894643 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5a5fe2a77e8883ab5ee66767a81c5806d36db21a348c3bf5a4e5ea48bb1a5d72`
+-	Image ID: `sha256:5220fe074a81137177e0e06bbf7ff8661fe05a29bf246559be3f0206c0c3fc4e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Tue, 16 Jul 2024 22:56:42 GMT
 COPY /rootfs/ / # buildkit
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Tue, 16 Jul 2024 22:56:42 GMT
 CMD ["/bin/bash"]
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Tue, 16 Jul 2024 22:56:42 GMT
 ARG version=21.0.4.7-1
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Tue, 16 Jul 2024 22:56:42 GMT
 # ARGS: version=21.0.4.7-1
 RUN set -eux     && export GNUPGHOME="$(mktemp -d)"     && curl -fL -o corretto.key https://yum.corretto.aws/corretto.key     && gpg --batch --import corretto.key     && gpg --batch --export --armor '6DC3636DAE534049C8B94623A122542AB04F24E3' > corretto.key     && rpm --import corretto.key     && rm -r "$GNUPGHOME" corretto.key     && curl -fL -o /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo     && grep -q '^gpgcheck=1' /etc/yum.repos.d/corretto.repo     && echo "priority=9" >> /etc/yum.repos.d/corretto.repo     && yum install -y java-21-amazon-corretto-devel-$version     && (find /usr/lib/jvm/java-21-amazon-corretto -name src.zip -delete || true)     && yum install -y fontconfig     && yum clean all # buildkit
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Tue, 16 Jul 2024 22:56:42 GMT
 ENV LANG=C.UTF-8
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Tue, 16 Jul 2024 22:56:42 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-21-amazon-corretto
-# Mon, 08 Jul 2024 06:35:54 GMT
-ENV JETTY_VERSION=11.0.22
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
+ENV JETTY_VERSION=11.0.23
+# Mon, 09 Sep 2024 08:47:04 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 ENV TMPDIR=/tmp/jetty
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 08 Jul 2024 06:35:54 GMT
-ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/11.0.22/jetty-home-11.0.22.tar.gz
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
+ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/11.0.23/jetty-home-11.0.23.tar.gz
+# Mon, 09 Sep 2024 08:47:04 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ;     yum install -y shadow-utils tar xz gzip which && yum clean all ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 WORKDIR /var/lib/jetty
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 USER jetty
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 EXPOSE map[8080/tcp:{}]
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 08 Jul 2024 06:35:54 GMT
+# Mon, 09 Sep 2024 08:47:04 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -180,39 +180,39 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sat, 07 Sep 2024 13:26:49 GMT  
 		Size: 163.8 MB (163820593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d053d7a73f19f4c6fdeb1f522bc835c37001cab5e3e6a475e7ea00e541b56768`  
-		Last Modified: Sat, 07 Sep 2024 14:45:39 GMT  
-		Size: 20.5 MB (20479242 bytes)  
+	-	`sha256:f0a09806c368f579d08d1610b9ceac6b31a2b8c4e3527869242cb9ab277f60c0`  
+		Last Modified: Tue, 10 Sep 2024 03:28:28 GMT  
+		Size: 20.5 MB (20486043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d17cf3e6edeffbcaa59647a0f33bbdc8b927344390d149e3f57d0875f3b3163d`  
-		Last Modified: Sat, 07 Sep 2024 14:45:38 GMT  
-		Size: 1.6 KB (1634 bytes)  
+	-	`sha256:e4e73829166244a4ea2aeca7660cd7da81bad6c06262c25f18ce480df2b2293b`  
+		Last Modified: Tue, 10 Sep 2024 03:28:27 GMT  
+		Size: 1.6 KB (1632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:11-amazoncorretto` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:05fba9607fc9dc63690bd209dee63174cd463e589d2aa6a857d51520bbb3cb3e
+$ docker pull jetty@sha256:c3b1f39b3acf400dffabe9b2240880b1d0c645730959d2c74844c59c52325a59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.9 MB (5936459 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf4a6da178be252aaabd36d9943f606b4a83f70ef60ab6df677f729638618393`
+-	Image ID: `sha256:4a7c834107f679d412fec087046b1e328ef154aa020befba298370f2fcee0b85`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:98bd42a6acaf171bca7644053c29688ea39599a5bd0c017b0addafd2271871cb`  
-		Last Modified: Sat, 07 Sep 2024 14:45:39 GMT  
+	-	`sha256:f293ca6ef103bb13743c9c706fe8c4c5c15af4cf749ae1525beb6680edab8193`  
+		Last Modified: Tue, 10 Sep 2024 03:28:27 GMT  
 		Size: 5.9 MB (5917951 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:79f1629239f7afecd4c6bdc788cef399ba716b19ffb10be8baf3737d260559c4`  
-		Last Modified: Sat, 07 Sep 2024 14:45:38 GMT  
+	-	`sha256:810d4cd91f1728fcd6241c45761ccf9d1b71b06454eb6857799dd79e05a5fb21`  
+		Last Modified: Tue, 10 Sep 2024 03:28:27 GMT  
 		Size: 18.5 KB (18508 bytes)  
 		MIME: application/vnd.in-toto+json
